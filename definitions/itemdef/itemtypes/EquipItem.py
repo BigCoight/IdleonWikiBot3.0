@@ -1,6 +1,9 @@
+from typing import Union
+
 from pydantic import validator
 
-from definitions.itemdef.itemtypes.ItemTypes import ClassType
+from definitions.Validators import validateInteger
+from definitions.itemdef.itemtypes.ItemTypes import ClassType, BagType
 from helpers.HelperFunctions import scientificToInt
 from definitions.itemdef.itemtypes.CommonItem import CommonItem
 
@@ -11,7 +14,7 @@ class EquipItem(CommonItem):
     is Equip
     """
     lvReqToEquip: int
-    Class: ClassType
+    Class: Union[BagType,ClassType]
     Speed: int
     Reach: int
     Weapon_Power: int
@@ -26,10 +29,10 @@ class EquipItem(CommonItem):
     UQ2val: int
     Upgrade_Slots_Left: int
 
-    @validator('Defence', "lvReqToEquip", pre = True)
-    def convertScientific(cls, v: str):
-        return scientificToInt(v)
+    _convertInts = validator("Defence", "lvReqToEquip", pre = True, allow_reuse = True)(validateInteger)
 
     @validator('Class', pre = True)
     def convertClass(cls, v: str):
+        if v in BagType:
+            return BagType(v)
         return ClassType(v.title())

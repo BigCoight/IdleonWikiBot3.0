@@ -29,19 +29,10 @@ class ItemRepository(Repository[CommonItem]):
         for i in range(0, len(itemData), 3):
             if data := re.findall(reData, itemData[i]):
                 itemName = itemData[i + 2]
-                print()
                 itemType = itemData[i + 1]
-                print(f"{itemName=}", f"{itemType=}")
-
-                # print(itemName)
                 items[itemName] = {}
                 item = items[itemName]
                 for atr, val in data:
                     item[atr] = formatStr(val, replaceUnderscores=True)
                 item["internalID"] = itemName
-                # print(scientificToStr(item["sellPrice"]))
-                item["sellPrice"] = scientificToInt(item["sellPrice"])
-                # print(item)
-                print(item)
                 cls.add(itemName, itemTypes[itemType].parse_obj(item))
-        items["Quest5"]["displayName"] = "Golden Jam (Quest)"

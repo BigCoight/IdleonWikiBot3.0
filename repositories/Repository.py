@@ -1,5 +1,5 @@
 
-from typing import Dict, Generic, Optional, TypeVar
+from typing import Dict, Generic, Optional, TypeVar, List
 from helpers.CodeReader import CodeReader
 
 from pydantic import BaseModel
@@ -9,14 +9,14 @@ T = TypeVar("T", bound=BaseModel)
 
 
 class Repository(Generic[T]):
-    section: str
+    sections: List[str]
     codeReader: CodeReader
     repository: Dict[str, T] = {}
 
     @ classmethod
-    def initialise(cls, codeReader: CodeReader, section: str) -> None:
+    def initialise(cls, codeReader: CodeReader, sections: List[str]) -> None:
         cls.codeReader = codeReader
-        cls.section = section
+        cls.sections = sections
         cls.generateRepo()
 
     @ classmethod
@@ -24,8 +24,8 @@ class Repository(Generic[T]):
         raise NotImplementedError
 
     @ classmethod
-    def getSection(cls) -> str:
-        currentSection = cls.codeReader.getSection(cls.section)
+    def getSection(cls, index: int = 0) -> str:
+        currentSection = cls.codeReader.getSection(cls.sections[index])
         assert currentSection is not None
         return currentSection
 

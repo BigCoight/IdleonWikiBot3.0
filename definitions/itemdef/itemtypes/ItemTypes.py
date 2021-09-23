@@ -1,7 +1,17 @@
-from enum import Enum
+from enum import Enum, EnumMeta
 
 
-class ClassType(str, Enum):
+class CheckIn(EnumMeta):
+    def __contains__(cls, item):
+        try:
+            cls(item)
+        except ValueError:
+            return False
+        else:
+            return True
+
+
+class ClassType(str, Enum, metaclass=CheckIn):
     """
     Contains all class types
     """
@@ -10,10 +20,24 @@ class ClassType(str, Enum):
     Warrior = "Warrior"
     Beginner = "Beginner"
     Archer = "Archer"
-    pass
 
 
-class TypeGen(str, Enum):
+class BagType(str, Enum, metaclass=CheckIn):
+    """
+    Contains all types of material bags
+    """
+    Foods = 'Foods'
+    Chopping = 'Chopping'
+    Warrior = 'Warrior'
+    bCraft = 'bCraft'
+    Critters = 'Critters'
+    Souls = 'Souls'
+    Bugs = 'Bugs'
+    Fishing = 'Fishing'
+    Mining = 'Mining'
+
+
+class TypeGen(str, Enum, metaclass=CheckIn):
     """
     Contains all current types
     """
@@ -65,3 +89,6 @@ class TypeGen(str, Enum):
     aFishingRod = 'aFishingRod'
     dCritters = 'dCritters'
     aError = 'aError'
+
+
+

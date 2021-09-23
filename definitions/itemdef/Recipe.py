@@ -2,13 +2,13 @@ from typing import List
 from pydantic import BaseModel
 
 
-class _Component(BaseModel):
-    name: str
-    amount: int
+class Component(BaseModel):
+    item: str
+    quantity: int
 
 
 class Recipe(BaseModel):
-    recipe: List[_Component]
+    recipe: List[Component]
     levelReqToCraft: int
     expGiven: int
     no: int

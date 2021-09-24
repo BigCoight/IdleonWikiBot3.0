@@ -15,8 +15,6 @@ class BuildingRepo(Repository[Building]):
 	def generateRepo(cls) -> None:
 		data = getFromSplitArray(cls.getSection())
 		for building in data:
-			print(building[1])
-			print(building[2:4])
 			costs = [
 				Component(item = building[4], quantity = building[6]),
 				Component(item = building[5], quantity = building[7])

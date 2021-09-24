@@ -1,7 +1,10 @@
 from repositories.AnvilRepo import AnvilRepo
 from repositories.BossDetailRepo import BossDetailRepo
+from repositories.BubbleRepo import BubbleRepo
 from repositories.BuildingRepo import BuildingRepo
 from repositories.CardRepo import CardRepo
+from repositories.CritterRepo import CritterRepo
+from repositories.DropTableRepo import DropTableRepo
 from repositories.FishingToolkitRepo import FishingToolkitRepo
 from repositories.ItemDetailRepo import ItemDetailRepo
 from helpers.CodeReader import CodeReader, IdelonReader
@@ -21,8 +24,10 @@ FishingToolkitRepo.initialise(codeReader)
 AnvilRepo.initialise(codeReader)
 BossDetailRepo.initialise(codeReader)
 BuildingRepo.initialise(codeReader)
-
-print(BuildingRepo.get("3D Printer"))
+BubbleRepo.initialise(codeReader)
+CritterRepo.initialise(codeReader)
+DropTableRepo.initialise(codeReader)
+print(BubbleRepo.get("A Pair Of Gems"))
 # print(CardRepository.repository)
 
 print(FishingToolkitRepo.get("Weight1"))

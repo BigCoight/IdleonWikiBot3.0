@@ -1,4 +1,6 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, validator
+
+from helpers.HelperFunctions import replaceUnderscores
 
 
 class FishingToolkit(BaseModel):
@@ -10,3 +12,5 @@ class FishingToolkit(BaseModel):
     fishingExp: int
     fishingSpeed: int
     fishingPower: int
+
+    _replaceUnderscores = validator("name", allow_reuse = True)(replaceUnderscores)

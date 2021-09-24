@@ -5,6 +5,7 @@ from abc import ABC
 
 from pydantic import BaseModel
 
+from helpers.JsonEncoder import CompactJSONEncoder
 
 T = TypeVar("T", bound=BaseModel)
 
@@ -20,6 +21,7 @@ class Repository(Generic[T], ABC):
         cls.codeReader = codeReader
         cls.sections = cls.getSections()
         cls.generateRepo()
+        cls.export()
 
     @classmethod
     def getSections(cls) -> List[str]:
@@ -46,3 +48,11 @@ class Repository(Generic[T], ABC):
     @classmethod
     def contains(cls, key: str) -> bool:
         return key in cls.repository
+
+    @classmethod
+    def export(cls) -> None:
+        toEncode = {key: val.dict() for key, val in cls.repository.items()}
+        name = cls.__name__
+        print(name)
+        with open(fr"./repositories/exported/{name}.json", mode = "w") as outfile:
+            outfile.write(CompactJSONEncoder(indent = 4).encode(toEncode))

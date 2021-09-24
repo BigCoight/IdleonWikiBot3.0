@@ -2,11 +2,11 @@ from typing import List
 from pydantic import BaseModel
 
 
-class _Vendor(BaseModel):
+class Vendor(BaseModel):
     vendor: str
     quantity: int
     no: int
 
 
 class Vendors(BaseModel):
-    Vendors: List[_Vendor]
+    vendors: List[Vendor]

@@ -1,10 +1,7 @@
 from typing import List
 from pydantic import BaseModel
 
-
-class Component(BaseModel):
-    item: str
-    quantity: int
+from definitions.common.Component import Component
 
 
 class Recipe(BaseModel):

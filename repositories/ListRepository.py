@@ -1,22 +1,17 @@
+from typing import TypeVar, Generic, List, Optional
 
-from typing import Dict, Generic, Optional, TypeVar, List
 from helpers.CodeReader import CodeReader
-from abc import ABC
 
-from pydantic import BaseModel
-
-
-T = TypeVar("T", bound=BaseModel)
+T = TypeVar("T")
 
 
-class Repository(Generic[T], ABC):
+class ListRepository(Generic[T]):
     sections: List[str]
     codeReader: CodeReader
-    repository: Dict[str, T]
+    repository: List[T] = []
 
     @ classmethod
     def initialise(cls, codeReader: CodeReader) -> None:
-        cls.repository = {}
         cls.codeReader = codeReader
         cls.sections = cls.getSections()
         cls.generateRepo()
@@ -36,13 +31,9 @@ class Repository(Generic[T], ABC):
         return currentSection
 
     @ classmethod
-    def get(cls, key: str) -> Optional[T]:
-        return cls.repository.get(key)
+    def get(cls, i: int) -> Optional[T]:
+        return cls.repository[i]
 
     @ classmethod
-    def add(cls, key: str, value: T) -> None:
-        cls.repository[key] = value
-
-    @classmethod
-    def contains(cls, key: str) -> bool:
-        return key in cls.repository
+    def add(cls, value: T) -> None:
+        cls.repository.append(value)

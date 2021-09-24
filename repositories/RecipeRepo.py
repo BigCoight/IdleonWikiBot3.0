@@ -1,5 +1,5 @@
 
-from typing import Dict, Type, Union
+from typing import Dict, Type, Union, List
 
 from definitions.itemdef.Recipe import Recipe, Component
 from repositories.Repository import Repository
@@ -7,16 +7,19 @@ from definitions.itemdef.itemtypes.CommonItem import CommonItem
 from definitions.itemdef.itemtypes.QuestItem import QuestItem
 from definitions.itemdef.itemtypes.EquipItem import EquipItem
 from definitions.itemdef.itemtypes.ConsumableItem import ConsumeableItem
-from helpers.HelperFunctions import formatStr, scientificToInt
+from helpers.HelperFunctions import formatStr, scientificToInt, wrap
 import re
 
 
-class RecipeRepository(Repository[Recipe]):
+class RecipeRepo(Repository[Recipe]):
+
+    @classmethod
+    def getSections(cls) -> List[str]:
+        return ["AnvilItems", "Recipes", "RecipeLevel"]
 
     @ classmethod
     def generateRepo(cls) -> None:
-        def wrap(v: str) -> str:
-            return f"[[{v}]]"
+
         reItems = r'"([a-zA-Z0-_ ]*)"\.'
         anvItemNameData = cls.getSection(0)
         anvItemNames = [x.split(" ") for x in re.findall(reItems, anvItemNameData)]

@@ -7,6 +7,6 @@ class FishingToolkit(BaseModel):
     depth2: int
     depth3: int
     depth4: int
-    fishExp: int
-    fishSpeed: int
-    fishPower: int
+    fishingExp: int
+    fishingSpeed: int
+    fishingPower: int

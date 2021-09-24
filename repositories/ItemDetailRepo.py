@@ -1,5 +1,5 @@
 
-from typing import Dict, Type, Union
+from typing import Dict, Type, Union, List
 from repositories.Repository import Repository
 from definitions.itemdef.itemtypes.CommonItem import CommonItem
 from definitions.itemdef.itemtypes.QuestItem import QuestItem
@@ -9,7 +9,11 @@ from helpers.HelperFunctions import formatStr, scientificToInt
 import re
 
 
-class ItemRepository(Repository[CommonItem]):
+class ItemDetailRepo(Repository[CommonItem]):
+
+    @classmethod
+    def getSections(cls) -> List[str]:
+        return ["Items"]
 
     @ classmethod
     def generateRepo(cls) -> None:

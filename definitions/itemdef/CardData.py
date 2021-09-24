@@ -1,10 +1,12 @@
+from typing import Union
+
 from pydantic import BaseModel
 
 
 class CardData(BaseModel):
+    cardID: str
     category: str
-    perTier: int
+    perTier: Union[int, float]
     effect: str
-    bonus: int
+    bonus: Union[int, float]
     order: int
-    title: str

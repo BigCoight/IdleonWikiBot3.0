@@ -1,10 +1,10 @@
 import re
+from typing import List
 
 from definitions.Bubble import Bubble
 from definitions.common.Component import Component
 from helpers.HelperFunctions import replaceUnderscores
 from repositories.Repository import Repository
-from typing import List
 
 
 class BubbleRepo(Repository[Bubble]):
@@ -36,7 +36,6 @@ class BubbleRepo(Repository[Bubble]):
 						bubbleReq.append(Component(item = bubData[i], quantity= -1))
 						continue
 					bubbleReq.append(Component(item = bubData[i], quantity= bubData[j]))
-				print(bubData[0])
 				cls.add(bubData[0], Bubble(
 					cauldron = bubbleNames[n],
 					x1 = bubData[1],

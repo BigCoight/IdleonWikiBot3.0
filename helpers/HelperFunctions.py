@@ -3,6 +3,15 @@ from typing import List
 
 
 def getFromSplitArray(v: str) -> List[List[str]]:
+    """
+    Converts a section into a list of strings based upon the exportation of an array represented as
+    "0 1 2 3 4 5 6 7 8 9".split(" ")
+    Args:
+        v:
+
+    Returns:
+
+    """
     section = formatStr(v, ["  ", "\n"])
     subSections = re.findall(
         r'"([ a-zA-Z0-_\'n()@,!$+{}%:.]*)"\.', section)
@@ -15,6 +24,19 @@ def getFromSplitArray(v: str) -> List[List[str]]:
         newList.append(internalList[:])
     return newList
 
+
+def getFromArrayArray(v: str) -> List[List[str]]:
+    """
+    Converts a string representation of a 2d array into an actual 2d array
+    Args:
+        v:
+
+    Returns:
+
+    """
+    section = formatStr(v, ["  ", "\n"])
+    subSections = section.split("],[")
+    return [strToArray(x) for x in subSections]
 
 def formatStr(val: str, remove: List[str] = [], replaceUnderscores: bool = False) -> str:
     """Formats the given string by first stripping the left and right, then removes all occurrences of all strings
@@ -63,7 +85,17 @@ def wrap(v: str) -> str:
     return f"[[{v}]]"
 
 
-def strToArray(v: str) -> List[any]:
+def strToArray(v: str) -> List[str]:
+    """
+    Converts a string reprisentation of a list to an actual python list
+    strToArray("[1,2,3,4]") = ["1", "2", "3", "4"]
+    Args:
+        v: [str] the string to convert
+
+    Returns:
+        the resulting list
+
+    """
     string = v.replace(",_", "&&&&")
     parts = formatStr(string, ["[", "]", '"', "return", ";", "\n", "{", "}"]).split(",")
     return [formatStr(x).replace("&&&&", ", ") for x in parts]

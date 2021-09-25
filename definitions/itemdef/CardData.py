@@ -1,12 +1,17 @@
-from typing import Union
+from pydantic import BaseModel, validator
 
-from pydantic import BaseModel
+from helpers.CustomTypes import Numeric
+from helpers.HelperFunctions import replaceUnderscores
 
 
 class CardData(BaseModel):
     cardID: str
     category: str
-    perTier: Union[int, float]
+    perTier: Numeric
     effect: str
-    bonus: Union[int, float]
+    bonus: Numeric
     order: int
+
+    @validator("effect", pre = True)
+    def repU(cls, v: str) -> str:
+        return replaceUnderscores(v)

@@ -3,9 +3,8 @@ from typing import Union
 from pydantic import validator
 
 from definitions.Validators import validateInteger
-from definitions.itemdef.itemtypes.ItemTypes import ClassType, BagType
-from helpers.HelperFunctions import scientificToInt
 from definitions.itemdef.itemtypes.CommonItem import CommonItem
+from definitions.itemdef.itemtypes.ItemTypes import ClassType, BagType
 
 
 class EquipItem(CommonItem):

@@ -1,8 +1,9 @@
+from typing import List
+
 from definitions.Building import Building
 from definitions.common.Component import Component
 from helpers.HelperFunctions import getFromSplitArray
 from repositories.Repository import Repository
-from typing import List
 
 
 class BuildingRepo(Repository[Building]):

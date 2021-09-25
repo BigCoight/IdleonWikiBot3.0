@@ -1,5 +1,5 @@
-from typing import List
 import re
+from typing import List
 
 from definitions.BossDetails import BossDetails, BossAttack
 from helpers.HelperFunctions import formatStr, wrap, strToArray

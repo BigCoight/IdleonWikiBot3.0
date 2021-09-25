@@ -1,8 +1,10 @@
 from pydantic import BaseModel
 
+from helpers.CustomTypes import Numeric
+
 
 class StatueData(BaseModel):
     name: str
     effect: str
-    _: int
-    bonus: int
+    dk: int
+    bonus: Numeric

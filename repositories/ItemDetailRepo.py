@@ -1,12 +1,13 @@
 
-from typing import Dict, Type, Union, List
-from repositories.Repository import Repository
-from definitions.itemdef.itemtypes.CommonItem import CommonItem
-from definitions.itemdef.itemtypes.QuestItem import QuestItem
-from definitions.itemdef.itemtypes.EquipItem import EquipItem
-from definitions.itemdef.itemtypes.ConsumableItem import ConsumeableItem
-from helpers.HelperFunctions import formatStr, scientificToInt
 import re
+from typing import Dict, Type, Union, List
+
+from definitions.itemdef.itemtypes.CommonItem import CommonItem
+from definitions.itemdef.itemtypes.ConsumableItem import ConsumeableItem
+from definitions.itemdef.itemtypes.EquipItem import EquipItem
+from definitions.itemdef.itemtypes.QuestItem import QuestItem
+from helpers.HelperFunctions import formatStr
+from repositories.Repository import Repository
 
 
 class ItemDetailRepo(Repository[CommonItem]):

@@ -1,8 +1,9 @@
-from typing import List, Tuple, Union
+from typing import List
 
 from pydantic import BaseModel
 
 from definitions.common.Component import Component
+from helpers.CustomTypes import Numeric
 
 
 class Building(BaseModel):
@@ -10,7 +11,7 @@ class Building(BaseModel):
 	bonus: str
 	lvlUpReq: List[Component]
 	maxLvl: int
-	costIncrement: List[Union[int, float]]
-	bonusInc: Union[int, float]
+	costIncrement: List[Numeric]
+	bonusInc: Numeric
 	misc: int
 

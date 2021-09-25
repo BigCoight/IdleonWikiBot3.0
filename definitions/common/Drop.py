@@ -1,5 +1,7 @@
 from pydantic import BaseModel
 
+from helpers.CustomTypes import Numeric
+
 
 class Drop(BaseModel):
 	"""
@@ -9,6 +11,6 @@ class Drop(BaseModel):
 		questLink: str
 	"""
 	item: str
-	quantity: int
+	quantity: Numeric
 	chance: float
 	questLink: str

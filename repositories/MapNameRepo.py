@@ -1,12 +1,12 @@
 import re
 from typing import List
 
+from definitions.MapName import MapName
 from helpers.HelperFunctions import formatStr
 from repositories.ListRepository import ListRepository
-from repositories.Repository import Repository
 
 
-class MapNameRepo(ListRepository[str]):
+class MapNameRepo(ListRepository[MapName]):
 
     @classmethod
     def getSections(cls) -> List[str]:
@@ -15,5 +15,5 @@ class MapNameRepo(ListRepository[str]):
     @ classmethod
     def generateRepo(cls) -> None:
         mapNames = re.findall(r'"([ a-zA-Z0-_\'\n]*)"\.', cls.getSection())[0].split(" ")
-        for v in mapNames:
-            cls.add(formatStr(v, replaceUnderscores = True))
+        for n, v in enumerate(mapNames):
+            cls.add(MapName(name = v, id = n))

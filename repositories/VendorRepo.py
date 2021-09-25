@@ -1,17 +1,11 @@
 
-from typing import Dict, Type, Union, List
+import re
+from typing import List
 
-from definitions.itemdef.CardData import CardData
-from definitions.itemdef.Recipe import Recipe, Component
 from definitions.itemdef.Vendors import Vendors, Vendor
+from helpers.HelperFunctions import replaceUnderscores
 from repositories.MapNameRepo import MapNameRepo
 from repositories.Repository import Repository
-from definitions.itemdef.itemtypes.CommonItem import CommonItem
-from definitions.itemdef.itemtypes.QuestItem import QuestItem
-from definitions.itemdef.itemtypes.EquipItem import EquipItem
-from definitions.itemdef.itemtypes.ConsumableItem import ConsumeableItem
-from helpers.HelperFunctions import formatStr, scientificToInt, wrap, strToArray, replaceUnderscores
-import re
 
 
 class VendorRepo(Repository[Vendors]):
@@ -34,7 +28,7 @@ class VendorRepo(Repository[Vendors]):
             else:
                 fixedShopQTY.append(shopQTYSs.split(" "))
         shopLocations = cls.getSection(2)
-        shopsLocations = [MapNameRepo.get(int(x)) for x in re.findall(
+        shopsLocations = [MapNameRepo.get(int(x)).name for x in re.findall(
             r"\[([a-zA-Z0-_ ,]*)]", shopLocations)[0].split(", ")]
         for i in range(len(shopsItems)):
             currentLocation = replaceUnderscores(shopsLocations[i])

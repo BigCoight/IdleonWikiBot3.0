@@ -1,10 +1,10 @@
 
-from typing import Dict, Generic, Optional, TypeVar, List
-from helpers.CodeReader import CodeReader
 from abc import ABC
+from typing import Dict, Generic, Optional, TypeVar, List
 
 from pydantic import BaseModel
 
+from helpers.CodeReader import CodeReader
 from helpers.JsonEncoder import CompactJSONEncoder
 
 T = TypeVar("T", bound=BaseModel)
@@ -53,6 +53,5 @@ class Repository(Generic[T], ABC):
     def export(cls) -> None:
         toEncode = {key: val.dict() for key, val in cls.repository.items()}
         name = cls.__name__
-        print(name)
         with open(fr"./repositories/exported/{name}.json", mode = "w") as outfile:
             outfile.write(CompactJSONEncoder(indent = 4).encode(toEncode))

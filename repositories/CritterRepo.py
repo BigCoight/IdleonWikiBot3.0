@@ -1,8 +1,9 @@
+from typing import List
+
 from definitions.Critter import Critter
 from helpers.HelperFunctions import getFromSplitArray
 from repositories.MapNameRepo import MapNameRepo
 from repositories.Repository import Repository
-from typing import List
 
 
 class CritterRepo(Repository[Critter]):
@@ -16,7 +17,7 @@ class CritterRepo(Repository[Critter]):
 		critters = getFromSplitArray(cls.getSection())
 		for critter in critters:
 			cls.add(critter[2], Critter(
-				location = MapNameRepo.get(int(critter[0])),
+				location = MapNameRepo.get(int(critter[0])).name,
 				baseExp = critter[5],
 				baseShinyRate = critter[6],
 				shiny = critter[2] + "A",

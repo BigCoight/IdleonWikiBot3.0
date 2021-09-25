@@ -1,7 +1,7 @@
-from definitions.Validators import validateInteger
-from helpers.HelperFunctions import scientificToInt
 from pydantic import BaseModel
 from pydantic.class_validators import validator
+
+from definitions.Validators import validateInteger
 from definitions.itemdef.itemtypes.ItemTypes import TypeGen
 
 

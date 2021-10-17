@@ -2,8 +2,7 @@ import re
 from typing import List
 
 from definitions.MapName import MapName
-from helpers.HelperFunctions import formatStr
-from repositories.ListRepository import ListRepository
+from repositories.master.ListRepository import ListRepository
 
 
 class MapNameRepo(ListRepository[MapName]):

@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from helpers.CustomTypes import Integer
 
 
 class Component(BaseModel):
@@ -7,5 +8,5 @@ class Component(BaseModel):
     quantity: int
     """
     item: str
-    quantity: int
+    quantity: Integer
 

@@ -1,0 +1,82 @@
+[
+    {
+        "effect": "+{ Base Damage",
+        "x1": 1,
+        "x2": 0,
+        "func": "add",
+        "type": "",
+        "lvlUpText": "+{ Dmg"
+    },
+    {
+        "effect": "+{ Base Defence",
+        "x1": -1,
+        "x2": 0,
+        "func": "add",
+        "type": "",
+        "lvlUpText": "+{ Def"
+    },
+    {
+        "effect": "+{% Total Accuracy",
+        "x1": 60,
+        "x2": 100,
+        "func": "decay",
+        "type": "",
+        "lvlUpText": "+{% Acc"
+    },
+    {
+        "effect": "+{% Mining EXP gain",
+        "x1": 60,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Min EXP"
+    },
+    {
+        "effect": "+{% Fishing EXP gain",
+        "x1": 60,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Fish EXP"
+    },
+    {
+        "effect": "+{% Sample Size",
+        "x1": 4,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Size"
+    },
+    {
+        "effect": "+{% AFK Gains Rate",
+        "x1": 4,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Rate"
+    },
+    {
+        "effect": "+{ Cap for all Liquids",
+        "x1": 25,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{ Cap"
+    },
+    {
+        "effect": "+{% Multikill per Tier",
+        "x1": 10,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Multikill"
+    },
+    {
+        "effect": "+{% Catching EXP gain",
+        "x1": 10,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Catch EXP"
+    }
+]

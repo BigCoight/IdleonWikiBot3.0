@@ -2,16 +2,16 @@ from typing import List
 
 from pydantic import BaseModel
 
-from helpers.CustomTypes import Numeric
+from helpers.CustomTypes import Numeric, Integer
 
 
 class Part(BaseModel):
 	item: str
-	base: int
+	base: Integer
 	increment: Numeric
 
 
 class PostOffice(BaseModel):
 	orders: List[Part]
-	coinRewards: List[int]
+	coinRewards: List[Integer]
 	rewards: List[Part]

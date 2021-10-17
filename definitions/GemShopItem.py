@@ -1,11 +1,13 @@
 from pydantic import BaseModel
 
+from helpers.CustomTypes import Integer
+
 
 class GemShopItem(BaseModel):
 	itemName: str
 	desc: str
-	cost: int
-	no: int
-	maxPurchases: int
-	qty: int
-	costIncrement: int
+	cost: Integer
+	no: Integer
+	maxPurchases: Integer
+	qty: Integer
+	costIncrement: Integer

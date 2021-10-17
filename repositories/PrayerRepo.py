@@ -2,10 +2,14 @@ from typing import List
 
 from definitions.Prayer import Prayer
 from helpers.HelperFunctions import getFromSplitArray, replaceUnderscores
-from repositories.Repository import Repository
+from repositories.master.Repository import Repository
 
 
 class PrayerRepo(Repository[Prayer]):
+
+	@classmethod
+	def parse(cls, value) -> Prayer:
+		return Prayer.parse_obj(value)
 
 	@classmethod
 	def getSections(cls) -> List[str]:

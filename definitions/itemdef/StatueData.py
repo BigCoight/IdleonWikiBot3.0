@@ -1,10 +1,15 @@
-from pydantic import BaseModel
+from definitions.master.IdleonModel import IdleonModel
+from helpers.CustomTypes import Numeric, Integer
 
-from helpers.CustomTypes import Numeric
 
+class StatueData(IdleonModel):
+	name: str
+	effect: str
+	dk: Integer
+	bonus: Numeric
 
-class StatueData(BaseModel):
-    name: str
-    effect: str
-    dk: int
-    bonus: Numeric
+	def writeWiki(self, newLine = True) -> str:
+		res = "{{Statuedata|"
+		res += f"{self.bonus}|{self.effect}"
+		res += "}}\n"
+		return res

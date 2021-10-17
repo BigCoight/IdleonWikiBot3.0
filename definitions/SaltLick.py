@@ -1,12 +1,12 @@
 from pydantic import BaseModel
 
-from helpers.CustomTypes import Numeric
+from helpers.CustomTypes import Numeric, Integer
 
 
 class SaltLick(BaseModel):
 	item: str
 	desc: str
-	baseCost: int
+	baseCost: Integer
 	increment: Numeric
 	baseBonus: Numeric
-	maxLevel: int
+	maxLevel: Integer

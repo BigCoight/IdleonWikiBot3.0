@@ -7,3 +7,5 @@ def validateInteger(v: str) -> int:
 	if not v.isnumeric():
 		return -1
 	return int(v)
+
+

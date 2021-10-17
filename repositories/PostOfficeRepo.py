@@ -3,10 +3,16 @@ from typing import List
 
 from definitions.PostOffice import PostOffice, Part
 from helpers.HelperFunctions import formatStr, wrap, strToArray
-from repositories.Repository import Repository
+from repositories.master.Repository import Repository
 
 
 class PostOfficeRepo(Repository[PostOffice]):
+
+
+	@classmethod
+	def parse(cls, value) -> PostOffice:
+		return PostOffice.parse_obj(value)
+
 
 	@classmethod
 	def getSections(cls) -> List[str]:

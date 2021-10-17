@@ -4,10 +4,14 @@ from typing import List
 from definitions.Bubble import Bubble
 from definitions.common.Component import Component
 from helpers.HelperFunctions import replaceUnderscores
-from repositories.Repository import Repository
+from repositories.master.Repository import Repository
 
 
 class BubbleRepo(Repository[Bubble]):
+
+	@classmethod
+	def parse(cls, value) -> Bubble:
+		return Bubble.parse_obj(value)
 
 	@classmethod
 	def getSections(cls) -> List[str]:

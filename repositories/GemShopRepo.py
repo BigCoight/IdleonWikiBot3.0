@@ -1,10 +1,14 @@
 from definitions.GemShopItem import GemShopItem
-from helpers.HelperFunctions import getFromArrayArray, getFromSplitArray
-from repositories.Repository import Repository
+from helpers.HelperFunctions import getFromSplitArray
+from repositories.master.Repository import Repository
 from typing import List
 
 
 class GemShopRepo(Repository[GemShopItem]):
+
+	@classmethod
+	def parse(cls, value) -> GemShopItem:
+		return GemShopItem.parse_obj(value)
 
 	@classmethod
 	def getSections(cls) -> List[str]:

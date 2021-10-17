@@ -1,17 +1,29 @@
-from pydantic import BaseModel, validator
+from typing import Dict, Union, Callable
 
-from helpers.CustomTypes import Numeric
+from pydantic import validator
+
+from definitions.master.IdleonModel import IdleonModel
+from helpers.CustomTypes import Numeric, Integer
 from helpers.HelperFunctions import replaceUnderscores
 
 
-class CardData(BaseModel):
-    cardID: str
-    category: str
-    perTier: Numeric
-    effect: str
-    bonus: Numeric
-    order: int
+class CardData(IdleonModel):
+	cardID: str
+	category: str
+	perTier: float
+	effect: str
+	bonus: Numeric
+	order: Integer
 
-    @validator("effect", pre = True)
-    def repU(cls, v: str) -> str:
-        return replaceUnderscores(v)
+	@validator("effect", pre = True)
+	def repU(cls, v: str) -> str:
+		return replaceUnderscores(v)
+
+	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
+		return {
+			"order": "order",
+			"category": "category",
+			"effect": "effect",
+			"bonus": "bonus",
+			"reqtier": "perTier"
+		}

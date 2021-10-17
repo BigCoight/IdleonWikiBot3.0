@@ -1,12 +1,14 @@
 from pydantic import BaseModel, validator
 
+from helpers.CustomTypes import Integer
+
 
 class Critter(BaseModel):
 	location: str
-	baseExp: int
+	baseExp: Integer
 	baseShinyRate: float
 	shiny: str
-	effForBonus: int
+	effForBonus: Integer
 
 	@validator("baseShinyRate", pre = True)
 	def _floatPercentage(cls, v: str) -> float:

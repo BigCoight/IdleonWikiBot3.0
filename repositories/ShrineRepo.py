@@ -1,10 +1,14 @@
 from definitions.Shrine import Shrine
 from helpers.HelperFunctions import getFromArrayArray, replaceUnderscores
-from repositories.Repository import Repository
+from repositories.master.Repository import Repository
 from typing import List
 
 
 class ShrineRepo(Repository[Shrine]):
+
+	@classmethod
+	def parse(cls, value) -> Shrine:
+		return Shrine.parse_obj(value)
 
 	@classmethod
 	def getSections(cls) -> List[str]:

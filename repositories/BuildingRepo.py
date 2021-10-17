@@ -3,10 +3,14 @@ from typing import List
 from definitions.Building import Building
 from definitions.common.Component import Component
 from helpers.HelperFunctions import getFromSplitArray
-from repositories.Repository import Repository
+from repositories.master.Repository import Repository
 
 
 class BuildingRepo(Repository[Building]):
+
+	@classmethod
+	def parse(cls, value) -> Building:
+		return Building.parse_obj(value)
 
 	@classmethod
 	def getSections(cls) -> List[str]:

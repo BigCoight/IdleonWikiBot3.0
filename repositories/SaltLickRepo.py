@@ -1,7 +1,6 @@
 from definitions.SaltLick import SaltLick
 from helpers.HelperFunctions import getFromSplitArray
-from repositories.ListRepository import ListRepository
-from repositories.Repository import Repository
+from repositories.master.ListRepository import ListRepository
 from typing import List
 
 

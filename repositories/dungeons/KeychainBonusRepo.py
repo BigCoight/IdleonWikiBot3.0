@@ -13,7 +13,6 @@ class KeychainBonusRepo(Repository[KeychainBonuses]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		print(cls.getSection() in [""])
 		data = getFromArrayArray(cls.getSection())
 		for item in data:
 			if not cls.contains(item[0]):

@@ -38,7 +38,7 @@ class CodeReader:
 		return self.sectionResults.get(sectionName)
 
 
-class IdelonReader:
+class IdleonReader:
 	def __init__(self, codeFile: str) -> None:
 		self.codeReader = CodeReader(codeFile)
 		self.readSections()

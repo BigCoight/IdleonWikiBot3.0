@@ -6,7 +6,8 @@ from typing import Dict, Generic, Optional, TypeVar, List, Set
 from pywikibot import Site, Page
 
 from definitions.master.IdleonModel import IdleonModel
-from helpers.CodeReader import CodeReader, IdelonReader
+from helpers.CodeReader import CodeReader, IdleonReader
+from helpers.HelperFunctions import camelCaseToTitle
 from helpers.JsonEncoder import CompactJSONEncoder
 
 T = TypeVar("T", bound = IdleonModel)
@@ -75,8 +76,8 @@ class Repository(Generic[T], ABC):
 
 		changes = {}
 		new = {}
-		cr1 = IdelonReader(v1).codeReader
-		cr2 = IdelonReader(v2).codeReader
+		cr1 = IdleonReader(v1).codeReader
+		cr2 = IdleonReader(v2).codeReader
 
 		cls.initialise(cr1)
 		repo1 = deepcopy(cls.repository)
@@ -88,11 +89,15 @@ class Repository(Generic[T], ABC):
 		sameItems = key1.intersection(key2)
 		newItems = key2 - key1
 		for sameItem in sameItems:
+			if cls._ignore(sameItem, repo2[sameItem]):
+				continue
 			modelChanges = repo1[sameItem].compare(repo2[sameItem], ignored)
 			if modelChanges:
 				changes[sameItem] = modelChanges
 
 		for newItem in newItems:
+			if cls._ignore(newItem, repo2[newItem]):
+				continue
 			new[newItem] = repo2[newItem].dict(exclude = set(ignored))
 
 		out = {
@@ -109,6 +114,27 @@ class Repository(Generic[T], ABC):
 
 	@classmethod
 	def writeChangesWiki(cls, differences):
+		res = ""
+		new = differences["new"]
+		changes = differences["changes"]
+		res += "<div class=\"GenericFlex\"><div class=\"GenericChild\">\n"
+		res += "==Changes==\n"
+		for item, change in changes.items():
+			res += cls._writeChangelogChange(item, change)
+
+		res += "</div><div class=\"GenericChild\">"
+		res += "==New==\n"
+
+		for item, change in new.items():
+			res += cls._writeChangelogNew(item, change)
+
+		res += "</div></div>"
+
+		with open(fr"./exported/wikitext/_changes/{cls.__name__}.txt", mode = 'w') as infile:
+			infile.write(res)
+
+	@classmethod
+	def _writeChangelogNew(cls, item, change) -> str:
 		def head(v: str) -> str:
 			return "{{patchnote/head|changed=" + v + "}}\n"
 
@@ -118,27 +144,56 @@ class Repository(Generic[T], ABC):
 		def patchnote(v: str, o, n) -> str:
 			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
 
-		res = ""
-		new = differences["new"]
-		changes = differences["changes"]
-		res += "__NOTOC__<div class=\"GenericFlex\"><div class=\"GenericChild\">\n"
-		res += "==Changes==\n"
-		for item, change in changes.items():
-			res += head(cls.getWikiName(item))
-			for v, d in change.items():
-				if isinstance(d, tuple):
-					o, n = d
-					res += patchnote(v, o, n)
-				elif isinstance(d, list):
-					res += bold(v)
-					for i, subC in enumerate(d):
-						o, n = subC
-						res += patchnote(str(i), o, n)
-					res += "|-\n|\n"
-			res += '|}\n'
+		res = head(cls.getWikiName(item))
+		for v, d in change.items():
+			if isinstance(d, list):
+				res += bold(camelCaseToTitle(v))
+				for i, subC in enumerate(d):
+					res += patchnote(str(i), " ", subC)
+				res += "|-\n|\n"
+			elif isinstance(d, dict):
+				res += bold(camelCaseToTitle(v))
+				for atr, subC in d.items():
+					res += patchnote(atr, " ", subC)
+				res += "|-\n|\n"
+			else:
+				if not d:
+					continue
+				res += patchnote(v, " ", d)
+		res += '|}\n'
+		return res
 
-		with open(fr"./exported/wikitext/_changes/{cls.__name__}.txt", mode = 'w') as infile:
-			infile.write(res)
+	@classmethod
+	def _writeChangelogChange(cls, item, change) -> str:
+		def head(v: str) -> str:
+			return "{{patchnote/head|changed=" + v + "}}\n"
+
+		def bold(v: str) -> str:
+			return "{{patchnote/bold|" + v + "}}\n"
+
+		def patchnote(v: str, o, n) -> str:
+			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
+
+		res = head(cls.getWikiName(item))
+		for v, d in change.items():
+			if isinstance(d, tuple):
+				o, n = d
+				res += patchnote(v, o, n)
+			elif isinstance(d, list):
+				res += bold(camelCaseToTitle(v))
+				for i, subC in enumerate(d):
+					o, n = subC
+					res += patchnote(str(i), o, n)
+				res += "|-\n|\n"
+			elif isinstance(d, dict):
+				res += bold(camelCaseToTitle(v))
+				for atr, subC in d.items():
+					o, n = subC
+					res += patchnote(atr, o, n)
+				res += "|-\n|\n"
+
+		res += '|}\n'
+		return res
 
 	@classmethod
 	def _wikitextLocation(cls):

@@ -1,5 +1,6 @@
 from definitions.collections.Enemy import Enemy
 from repositories.enemies.BossDetailRepo import BossDetailRepo
+from repositories.enemies.DropTableRepo import DropTableRepo
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
 from repositories.enemies.EnemyNavRepo import EnemyNavRepo
 from repositories.enemies.EnemyTableRepo import EnemyTableRepo
@@ -13,7 +14,16 @@ class EnemyRepo(Repository[Enemy]):
 	"""
 
 	@classmethod
+	def initDependencies(cls):
+		EnemyDetailsRepo.initialise(cls.codeReader)
+		EnemyNavRepo.initialise(cls.codeReader)
+		BossDetailRepo.initialise(cls.codeReader)
+		MapDataRepo.initialise(cls.codeReader)
+		DropTableRepo.initialise(cls.codeReader)
+
+	@classmethod
 	def generateRepo(cls) -> None:
+		cls.initDependencies()
 		for enemy, data in EnemyDetailsRepo.items():
 			cls.add(enemy, Enemy(
 				details = data,

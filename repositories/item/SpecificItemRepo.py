@@ -1,3 +1,5 @@
+from typing import Set
+
 from definitions.itemdef.initialtypes.ItemTypes import TypeGen
 from definitions.itemdef.specifictypes.ACItem import ACItem
 from definitions.itemdef.specifictypes.ArmourItem import ArmourItem
@@ -17,7 +19,13 @@ from definitions.itemdef.specifictypes.ToolItem import ToolItem
 from definitions.itemdef.specifictypes.WeaponItem import WeaponItem
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
 from definitions.itemdef.specifictypes.master.DescItem import DescItem
+from helpers.HelperFunctions import camelCaseToTitle
+from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
+from repositories.item.CardRepo import CardRepo
+from repositories.item.FishingToolkitRepo import FishingToolkitRepo
 from repositories.item.ItemDetailRepo import ItemDetailRepo
+from repositories.item.RecipeRepo import RecipeRepo
+from repositories.item.StatueRepo import StatueRepo
 from repositories.master.Repository import Repository
 
 
@@ -27,7 +35,17 @@ class SpecificItemRepo(Repository[BaseItem]):
 	"""
 
 	@classmethod
+	def initDependencies(cls):
+		ItemDetailRepo.initialise(cls.codeReader)
+		RecipeRepo.initialise(cls.codeReader)
+		CardRepo.initialise(cls.codeReader)
+		EnemyDetailsRepo.initialise(cls.codeReader)
+		StatueRepo.initialise(cls.codeReader)
+		FishingToolkitRepo.initialise(cls.codeReader)
+
+	@classmethod
 	def generateRepo(cls) -> None:
+		cls.initDependencies()
 		havntDone = set()
 		for name, item in ItemDetailRepo.items():
 			if item.typeGen in {TypeGen.dFish, TypeGen.dBugs, TypeGen.dCritters, TypeGen.dSouls, TypeGen.bCraft,
@@ -81,3 +99,126 @@ class SpecificItemRepo(Repository[BaseItem]):
 			return item.displayName
 		print(f"{name} not found in ItemRepo!!!")
 		return ""
+
+	@classmethod
+	def getWikiName(cls, name: str) -> str:
+		return cls.getDisplayName(name)
+
+	@classmethod
+	def compareVersions(cls, v1: str, v2: str, ignored: Set[str] = set()):
+		return super().compareVersions(v1, v2, {"category", "internalName", "typeGen"})
+
+	@classmethod
+	def _ignore(cls, name: str, data: BaseItem) -> bool:
+		if "Dung" in name:
+			return True
+		if name in {"EXP", "Blank", "LockedInvSpace", "COIN", "TalentBook1", "TalentBook2",
+		            "TalentBook3", "TalentBook4", "TalentBook5", "SmithingRecipes1", "SmithingRecipes2",
+		            "SmithingRecipes3", "SmithingRecipes4", "ExpSmith1", "Quest8", "EquipmentShirts8"}:
+			return True
+		if name[:3] == "Gem":
+			return True
+		if data.displayName in {"Filler", "FILLER", "Blank"}:
+			return True
+		return False
+
+	# Need to make this group by type
+	@classmethod
+	def writeChangesWiki(cls, differences):
+		def head(v: str) -> str:
+			return "{{patchnote/head|changed=" + v + "}}\n"
+
+		res = ""
+		new = differences["new"]
+		changes = differences["changes"]
+
+		changesOrdered = {}
+		for key in changes.keys():
+			cType = cls.get(key).Type
+			if cType not in changesOrdered:
+				changesOrdered[cType] = []
+			changesOrdered[cType].append(key)
+
+		newOrdered = {}
+		for key in new.keys():
+			cType = cls.get(key).Type
+			if cType not in newOrdered:
+				newOrdered[cType] = []
+			newOrdered[cType].append(key)
+
+		res += "<div class=\"GenericFlex\"><div class=\"GenericChild\">\n"
+		res += "==Changes==\n"
+		for typ, keys in changesOrdered.items():
+			res += head(typ)
+			for key in keys:
+				res += cls._writeChangelogChange(key, changes[key])
+			res += "|}\n\n"
+
+		res += "</div><div class=\"GenericChild\">\n"
+		res += "==New==\n"
+
+		for typ, keys in newOrdered.items():
+			res += head(typ)
+			for key in keys:
+				res += cls._writeChangelogNew(key, new[key])
+			res += "|}\n\n"
+
+		res += "</div></div>"
+
+		with open(fr"./exported/wikitext/_changes/{cls.__name__}.txt", mode = 'w') as infile:
+			infile.write(res)
+
+	@classmethod
+	def _writeChangelogNew(cls, item, change) -> str:
+		def head(v: str) -> str:
+			return "{{patchnote/item|" + v + "}}\n"
+
+		def bold(v: str) -> str:
+			return "{{patchnote/bold|" + v + "}}\n"
+
+		def patchnote(v: str, o, n) -> str:
+			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
+
+		res = head(cls.getWikiName(item))
+		for v, d in change.items():
+			if isinstance(d, list):
+				res += bold(camelCaseToTitle(v))
+				for i, subC in enumerate(d):
+					res += patchnote(str(i), " ", subC)
+			elif isinstance(d, dict):
+				res += bold(camelCaseToTitle(v))
+				for atr, subC in d.items():
+					res += patchnote(atr, " ", subC)
+			else:
+				if not d:
+					continue
+				res += patchnote(v, " ", d)
+		return res
+
+	@classmethod
+	def _writeChangelogChange(cls, item, change) -> str:
+		def head(v: str) -> str:
+			return "{{patchnote/item|" + v + "}}\n"
+
+		def bold(v: str) -> str:
+			return "{{patchnote/bold|" + v + "}}\n"
+
+		def patchnote(v: str, o, n) -> str:
+			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
+
+		res = head(cls.getWikiName(item))
+		for v, d in change.items():
+			if isinstance(d, tuple):
+				o, n = d
+				res += patchnote(v, o, n)
+			elif isinstance(d, list):
+				res += bold(camelCaseToTitle(v))
+				for i, subC in enumerate(d):
+					o, n = subC
+					res += patchnote(str(i), o, n)
+			elif isinstance(d, dict):
+				res += bold(camelCaseToTitle(v))
+				for atr, subC in d.items():
+					o, n = subC
+					res += patchnote(atr, o, n)
+		return res

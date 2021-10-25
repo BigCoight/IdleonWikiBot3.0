@@ -58,3 +58,7 @@ class ItemDetailRepo(Repository[CommonItem]):
 			return item.displayName
 		print(f"{name} not found in ItemRepo!!!")
 		return ""
+
+	@classmethod
+	def getWikiName(cls, name: str) -> str:
+		return cls.getDisplayName(name)

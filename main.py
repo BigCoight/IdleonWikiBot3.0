@@ -1,4 +1,4 @@
-from helpers.CodeReader import IdelonReader
+from helpers.CodeReader import IdleonReader
 from repositories.AchievementRepo import AchievementRepo
 from repositories.BubbleRepo import BubbleRepo
 from repositories.BuildingRepo import BuildingRepo
@@ -45,7 +45,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdelonReader("130")
+idleonReader = IdleonReader("130")
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
 EnemyDetailsRepo.initialise(codeReader)
@@ -98,3 +98,5 @@ WikiSourceRepo.initialise(codeReader)
 EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
+
+TalentTreeRepo.compareVersions("123b", "130")

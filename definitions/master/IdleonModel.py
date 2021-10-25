@@ -48,6 +48,8 @@ class IdleonModel(BaseModel):
 				diffs[key] = self._getDifList(d1[key], d2[key], ignored)
 				continue
 			diffs[key] = (d1[key], d2[key])
+		if not any(diffs.values()):
+			return {}
 		return diffs
 
 	def _getDifList(self, me, other, ignored: Set[str] = set()) -> List[any]:

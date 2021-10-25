@@ -32,3 +32,7 @@ class EnemyDetailsRepo(Repository[EnemyDetails]):
 			enemy["Type"] = enemy.get("Type").split(".")[1].title()
 
 			cls.add(intName, EnemyDetails.parse_obj(enemy))
+
+	@classmethod
+	def getWikiName(cls, name: str) -> str:
+		return cls.get(name).Name

@@ -88,8 +88,33 @@ def formatFloat(v: float) -> str:
 	return np.format_float_positional(v)
 
 
-def camelCaseSplitter(string):
+def camelCaseSplitter(string: str) -> List[str]:
+	"""
+	Splits a string base on camel case.
+	eg: camelCaseSplitter("helloThere") = ["hello", "There"]
+
+	Args:
+		string: The string to split on
+
+	Returns:
+		A list of strings split based on camel case
+
+	"""
 	return re.sub("([A-Z][a-z]+)", r" \1", re.sub("([A-Z]+)", r" \1", string)).split()
+
+
+def camelCaseToTitle(string: str) -> str:
+	"""
+	Converts Camel Case to a title
+	eg: camelCaseToTitle("helloThere") = "Hello There"
+	Args:
+		string: The string to conver
+
+	Returns:
+		The string as a title
+
+	"""
+	return " ".join(map(lambda x: x.title(), camelCaseSplitter(string)))
 
 
 def formatStr(val: str, remove: List[str] = [], replaceUnderscores: bool = False) -> str:

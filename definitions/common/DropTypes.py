@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import List
 
-from definitions.master.CollectionModel import CollectionModel
+from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Numeric
 from helpers.HelperFunctions import formatFloat, isTalent, isRecipe
 from repositories.item.ItemDetailRepo import ItemDetailRepo
@@ -10,17 +10,26 @@ from repositories.item.RecipeRepo import RecipeRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 
 
-class Drop(CollectionModel):
+class Drop(IdleonModel):
 	item: str
 	quantity: Numeric
 	chance: float
 	questLink: str
 
-	def wikiWriterKey(self):
+	def writeWiki(self, newLine = True) -> str:
 		res = self.writeDrop()
 		if self.questLink != "N/A":
 			res += f"|special={self.questLink}"
 		return res
+
+	def __str__(self) -> str:
+		res = f"{self.quantity}x " + "{{CraftReq|"
+		res += ItemDetailRepo.getDisplayName(self.item) + "}}"
+		res += f" {self.chance:g}"
+		return res
+
+	def shouldCompare(self) -> bool:
+		return False
 
 	def writeDrop(self) -> str:
 		raise NotImplementedError
@@ -52,6 +61,9 @@ class SubTableDrop(Drop):
 		res += f"{self.item}|{formatFloat(self.chance)}|{self.quantity}"
 		return res
 
+	def __str__(self) -> str:
+		return f"{self.quantity}x " + self.item + f" {self.chance:g}"
+
 
 class CardDrop(Drop):
 
@@ -68,6 +80,9 @@ class CoinDrop(Drop):
 		res += f"/coin|{formatFloat(self.chance)}|{self.quantity}"
 		return res
 
+	def __str__(self) -> str:
+		return f"{self.quantity}x " + "Coins" + f" {self.chance:g}"
+
 
 class TalentDrop(Drop):
 
@@ -80,6 +95,13 @@ class TalentDrop(Drop):
 		res += f"{talent}|{formatFloat(self.chance)}"
 		return res
 
+	def __str__(self) -> str:
+		qty = str(self.quantity)
+		no = int(qty[0])
+		index = int(qty[1: no + 1])
+		talent = TalentNameRepo.get(index).name
+		return f"{self.quantity}x " + f"{talent} Talent Book" + f" {self.chance:g}"
+
 
 class RecipeDrop(Drop):
 
@@ -90,6 +112,13 @@ class RecipeDrop(Drop):
 		res = "{{DropTable/recipe|"
 		res += f"{item}|{formatFloat(self.chance)}"
 		return res
+
+	def __str__(self) -> str:
+		tab = int(self.item[-1]) - 1
+		index = int(self.quantity) + 1
+		item = ItemDetailRepo.getDisplayName(RecipeRepo.getItemAtIndex(tab, index))
+		res = "{{CraftReq|" + item + "}}"
+		return f"{self.quantity}x " + f"{res} Recipe" + f" {self.chance:g}"
 
 
 class ItemDrop(Drop):

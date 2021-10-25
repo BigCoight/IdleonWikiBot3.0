@@ -19,6 +19,8 @@ class ListRepository(Generic[T]):
 		cls.repository = []
 		cls.codeReader = codeReader
 		cls.sections = cls.getSections()
+		if len(cls.sections) == 0 or (cls.getSection() in [""]):
+			return None
 		cls.generateRepo()
 		cls.export()
 
@@ -75,4 +77,3 @@ class ListRepository(Generic[T]):
 
 		with open(f"{cls.wikitextLocation()}/{cls.__name__}.txt", mode = 'w') as outfile:
 			outfile.write(res)
-

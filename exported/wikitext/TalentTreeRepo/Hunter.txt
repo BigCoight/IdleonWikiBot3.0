@@ -1,0 +1,114 @@
+{{Talent
+|name=360 Noscope
+|textArr=Deal (Table 1)% DMG split between all hit monsters. The more mobs hit, the less dmg done
+|form1=bigBase
+|x1=225
+|x2=3
+}}
+{{Talent
+|name=Bear Trap
+|textArr=Lay down (Table 1) bear traps that deal (Table 2)% dmg when a monster triggers it
+|form1=intervalAdd
+|x1=2
+|x2=30
+|form2=bigBase
+|y1=150
+|y2=2
+}}
+{{Talent
+|name=Uwu Rawrrr
+|textArr=When mobs die, their respawn time is (Table 1) seconds faster!
+|form1=decay
+|x1=55
+|x2=60
+}}
+{{Talent
+|name=Stop Right There
+|textArr=Immobilizes monsters within a (Table 1) pixel radius of you for (Table 2) seconds.
+|form1=bigBase
+|x1=150
+|x2=1.5
+|form2=intervalAdd
+|y1=4
+|y2=20
+}}
+{{Talent
+|name=Have Another... Again!
+|textArr=Basic Attacks have a (Table 1)% chance to fire 1 more arrow. Stacks with 'Have Another!'
+|form1=decay
+|x1=120
+|x2=40
+}}
+{{Talent
+|name=Looty Mc Shooty
+|textArr=+(Table 1)% Damage for every 50 items you've ever found on any of your players.
+|form1=decay
+|x1=36
+|x2=100
+}}
+{{Talent
+|name=Shoeful Of Obol
+|textArr=Obols give +(Table 1)% more AGI than what is listed
+|form1=decay
+|x1=135
+|x2=80
+}}
+{{Talent
+|name=Straightshot Statues
+|textArr='Speed', 'Anvil', and 'Bullseye' statues give +(Table 1)% more bonus
+|form1=decay
+|x1=100
+|x2=50
+}}
+{{Talent
+|name=Agi Again
+|textArr=+(Table 1) Max Talent Level for 'Quickness Boots'
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Visibility Vessels
+|textArr=Each Lv of 'Archer or Bust' Bubble raises max Lv of 'I See You', up to +(Table 1)
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Eagle Eye
+|textArr=Collect & set all traps, but only get (Table 1)% critters. (Table 2)% Exp is given to each player.
+|form1=decay
+|x1=140
+|x2=100
+|form2=decay
+|y1=130
+|y2=100
+}}
+{{Talent
+|name=Invasive Species
+|textArr=+(Table 1)% Trapping Efficiency per power of 10 Froge Critters in Storage
+|form1=decay
+|x1=30
+|x2=80
+}}
+{{Talent
+|name=Shroom Bait
+|textArr=+(Table 1)% Trapping Exp Gain. Doesn't affect EXP given to other players when in Eagle Eye.
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Reflective Eyesight
+|textArr=(Table 1)x Shiny Critter chance. Triggers again every 10 Trapping LVs
+|form1=decayMulti
+|x1=2
+|x2=100
+}}
+{{Talent
+|name=Previous Points
+|textArr=+(Table 1) Talent Points for the 'Archer' talent tab. But,what's wrong with these talents?
+|form1=add
+|x1=1
+|x2=0
+}}

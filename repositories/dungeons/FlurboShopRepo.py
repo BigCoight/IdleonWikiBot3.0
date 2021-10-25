@@ -16,9 +16,9 @@ class FlurboShopRepo(Repository[FlurboShop]):
 		data = getFromArrayArray(cls.getSection())
 		for item in data:
 			cls.add(item[0], FlurboShop(
+				intId = item[0],
 				cost = item[1],
 				noPurchases = item[2],
 				displayName = replaceUnderscores(item[3]),
 				description = replaceUnderscores(item[4])
 			))
-

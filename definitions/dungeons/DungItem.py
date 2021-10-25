@@ -13,6 +13,8 @@ class DungItem(IdleonModel):
 	lvlText: str
 	baseValue: float
 	maxLevel: Integer
+	achieve: str
+	world: str
 
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
 		return {
@@ -20,7 +22,9 @@ class DungItem(IdleonModel):
 			"desc": self.getDesc,
 			"increment": self.getLvlText,
 			"rarity": "rarity",
-			"maxlvl": "maxLevel"
+			"maxlvl": "maxLevel",
+			"achievement": "achieve",
+			"world": "world",
 		}
 
 	def writeWiki(self, newLine = True) -> str:

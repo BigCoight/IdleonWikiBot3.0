@@ -93,4 +93,5 @@ class IdelonReader:
 		self.codeReader.addSection("DungItems = function () {", "};", "DungItems")
 		self.codeReader.addSection("DungMobs = function () {", "};", "DungEnemies")
 		self.codeReader.addSection("DungKEYCHAINS = function () {", "};", "DungKeychain")
+		self.codeReader.addSection("UnlockinRNGitems = function () {", "};", "UnlockRNG")
 		self.codeReader.readCode()

@@ -56,4 +56,5 @@ class ItemDetailRepo(Repository[CommonItem]):
 	def getDisplayName(cls, name: str) -> str:
 		if item := cls.get(name):
 			return item.displayName
+		print(f"{name} not found in ItemRepo!!!")
 		return ""

@@ -18,6 +18,10 @@ class CardItem(BaseItem):
 		name = CardRepo.getName(item.internalID)
 		if not name:
 			dispName = "FILLER"
+		elif name == "Crystal1":
+			dispName = "Crystal Crabal Card"
+		elif name == "Crystal2":
+			dispName = "Crystal Cattle Card"
 		elif ItemDetailRepo.contains(name):
 			dispName = f"{ItemDetailRepo.getDisplayName(name)} Card"
 		else:

@@ -1,0 +1,120 @@
+{{Talent
+|name=Ice Shards
+|textArr=Your next basic attack deals (Table 1)% dmg 3 times, and freezes all nearby mobs
+|form1=bigBase
+|x1=70
+|x2=1
+}}
+{{Talent
+|name=Floor Is Lava
+|textArr=Summon (Table 1)x2 volcanos which erupt around you, dealing (Table 2)% dmg
+|form1=intervalAdd
+|x1=1
+|x2=40
+|form2=bigBase
+|y1=120
+|y2=1
+}}
+{{Talent
+|name=Tornado
+|textArr=Summon a tornado, which deals (Table 1)% dmg and disappears after (Table 2) seconds
+|form1=bigBase
+|x1=20
+|x2=0.3
+|form2=intervalAdd
+|y1=4
+|y2=20
+}}
+{{Talent
+|name=Speedy Book
+|textArr=Getting 4@kills in 4@sec activates 'Speedy Book' boosting attack rate by (Table 1)% for (Table 2) sec
+|form1=bigBase
+|x1=10
+|x2=0.2
+|form2=intervalAdd
+|y1=3
+|y2=15
+}}
+{{Talent
+|name=Mana Is Life
+|textArr=(Table 1)% of taken dmg is dealt to MP. Also passively boosts MP regen by +(Table 2)%
+|form1=bigBase
+|x1=25
+|x2=0.35
+|form2=bigBase
+|y1=15
+|y2=0.35
+}}
+{{Talent
+|name=Paperwork, Great...
+|textArr=+(Table 1)% Damage for every 10 Stamps in your collection. Oink Oink!
+|form1=decay
+|x1=70
+|x2=100
+}}
+{{Talent
+|name=Occult Obols
+|textArr=Obols give +(Table 1)% more WIS than what is listed
+|form1=decay
+|x1=135
+|x2=80
+}}
+{{Talent
+|name=Staring Statues
+|textArr='Exp', 'Lumberbob', and 'Beholder' statues give +(Table 1)% more bonus
+|form1=decay
+|x1=100
+|x2=50
+}}
+{{Talent
+|name=Wis Wumbo
+|textArr=+(Table 1) Max Talent Level for 'Book of the Wise'
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Fuscia Flasks
+|textArr=Each Lv of 'Mage is Best' Bubble raises max Lv of 'Overclocked Energy', up to +(Table 1)
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Charge Syphon
+|textArr=Steal charge from all your players, giving you (Table 1)% of it. +(Table 2)% Max Charge for 1 Min
+|form1=bigBase
+|x1=35
+|x2=0.3
+|form2=bigBase
+|y1=100
+|y2=10
+}}
+{{Talent
+|name=Sooouls
+|textArr=+(Table 1)% Worship Efficiency per power of 10 Forest Souls in your Storage Chest
+|form1=decay
+|x1=25
+|x2=70
+}}
+{{Talent
+|name=Bless Up
+|textArr=+(Table 1)% Worship EXP gain. Access the other totems faster!
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Nearby Outlet
+|textArr=(Table 1)x Charge rate. You know, for Worship... No, not for your phone.
+|form1=decayMulti
+|x1=1
+|x2=100
+}}
+{{Talent
+|name=Earlier Education
+|textArr=+(Table 1) Talent Points for the 'Mage' talent tab. What, these talent's aint good 'nuff for ya?
+|form1=add
+|x1=1
+|x2=0
+}}

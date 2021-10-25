@@ -1,7 +1,7 @@
 import re
 from typing import List
 
-from definitions.itemdef.Vendors import Vendors, Vendor
+from definitions.itemdef.Vendors import Vendors, Vendor, ItemVendors
 from helpers.HelperFunctions import replaceUnderscores
 from repositories.MapNameRepo import MapNameRepo
 from repositories.item.ItemDetailRepo import ItemDetailRepo
@@ -38,10 +38,20 @@ class VendorRepo(Repository[Vendors]):
 			for j in range(len(shopsItems[i])):
 				tempVendor = Vendor(
 					vendor = currentLocation,
+					item = shopsItems[i][j],
 					quantity = fixedShopQTY[i][j],
 					no = j,
 					purchasePrice = ItemDetailRepo.get(shopsItems[i][j]).sellPrice * 4)
-				if current := cls.get(shopsItems[i][j]):
-					current.vendors.append(tempVendor)
+				if current := cls.get(currentLocation):
+					current.items.append(tempVendor)
 					continue
-				cls.add(shopsItems[i][j], Vendors(vendors = [tempVendor]))
+				cls.add(currentLocation, Vendors(items = [tempVendor]))
+
+	@classmethod
+	def getVendorFromItem(cls, item: str) -> ItemVendors:
+		res = ItemVendors(vendors = [])
+		for _, items in cls.items():
+			for slot in items.items:
+				if slot.item == item:
+					res.vendors.append(slot)
+		return res if res.vendors else None

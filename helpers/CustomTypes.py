@@ -1,8 +1,5 @@
 from typing import Union
 
-import numpy as np
-from pydantic import BaseModel
-
 from definitions.Validators import validateInteger
 
 
@@ -15,7 +12,13 @@ class Integer(int):
 	def validate(cls, v):
 		if isinstance(v, int):
 			return v
-		return validateInteger(v)
+		try:
+			return validateInteger(v)
+		except ValueError:
+			try:
+				return float(v)
+			except ValueError:
+				return -1
+
 
 Numeric = Union[Integer, float]
-

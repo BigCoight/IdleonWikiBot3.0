@@ -3,7 +3,7 @@ from typing import Optional, List
 from definitions.itemdef.AnvilProduce import AnvilProduce
 from definitions.itemdef.Recipe import Recipe
 from definitions.itemdef.Sources import Sources
-from definitions.itemdef.Vendors import Vendors
+from definitions.itemdef.Vendors import ItemVendors
 from definitions.itemdef.initialtypes.ItemTypes import TypeGen
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
 from definitions.master.IdleonModel import IdleonModel
@@ -13,16 +13,16 @@ class Item(IdleonModel):
 	item: BaseItem
 	sources: Optional[Sources] = None
 	recipe: Optional[Recipe] = None
-	vendors: Optional[Vendors] = None
+	vendors: Optional[ItemVendors] = None
 	anvilProduction: Optional[AnvilProduce] = None
 
 	def writeWiki(self, newLine = True) -> str:
 		res = self.getCorrectHead()
 		res += self.item.writeWiki()
 		if self.recipe:
-			res += f"|sellprice={self.recipe.sellPrice}"
+			res += f"|sellprice={self.recipe.sellPrice}\n"
 		else:
-			res += f"|sellprice={self.item.sellPrice}"
+			res += f"|sellprice={self.item.sellPrice}\n"
 		if self.sources:
 			res += self.sources.writeWiki()
 		res += "}}\n"

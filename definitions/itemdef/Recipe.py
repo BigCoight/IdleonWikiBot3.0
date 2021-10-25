@@ -1,7 +1,5 @@
 from typing import List, Optional, Dict, Union, Callable
 
-from pydantic import BaseModel
-
 from definitions.common.Component import Component
 from definitions.common.Source import Source
 from definitions.master.IdleonModel import IdleonModel
@@ -9,7 +7,7 @@ from helpers.CustomTypes import Integer
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 
 
-class DetRecipeComponent(BaseModel):
+class DetRecipeComponent(IdleonModel):
 	indent: Integer
 	item: str
 	quantity: Integer

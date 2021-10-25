@@ -120,3 +120,7 @@ class RecipeRepo(Repository[Recipe]):
 		for component in recipe.detailedRecipe.detRecipeTotals:
 			sellPrice += ItemDetailRepo.get(component.item).sellPrice * component.quantity
 		recipe.sellPrice = sellPrice
+
+	@classmethod
+	def getWikiName(cls, name: str) -> str:
+		return ItemDetailRepo.getDisplayName(name)

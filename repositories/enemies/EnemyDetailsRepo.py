@@ -29,5 +29,6 @@ class EnemyDetailsRepo(Repository[EnemyDetails]):
 				enemy[atr.strip()] = val
 			if enemy.get("Name") == "Error":
 				continue
+			enemy["Type"] = enemy.get("Type").split(".")[1].title()
 
 			cls.add(intName, EnemyDetails.parse_obj(enemy))

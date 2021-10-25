@@ -1,33 +1,19 @@
 from typing import Dict, Union, Callable
 
 from definitions.itemdef.initialtypes.EquipItem import EquipItem
-from definitions.itemdef.initialtypes.ItemTypes import ClassType
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
+from definitions.itemdef.specifictypes.master.StatItem import StatItem
 from helpers.Constants import Constants
 from helpers.CustomTypes import Integer
 from helpers.HelperFunctions import camelCaseSplitter
 
 
-class ArmourItem(BaseItem):
-	lvReqToCraft: Integer
-	lvReqToEquip: Integer
-	Class: ClassType
+class ArmourItem(StatItem):
 	Skill: str
-	Weapon_Power: Integer
 	Skill_Power: Integer
-	STR: Integer
-	AGI: Integer
-	WIS: Integer
-	LUK: Integer
-	Defence: Integer
-	miscUp1: str
-	miscUp2: str
-	Upgrade_Slots_Left: Integer
 
 	@classmethod
 	def fromItemDetails(cls, item: EquipItem) -> BaseItem:
-		misc1 = f"{item.UQ1val}{item.UQ1txt.title()}"
-		misc2 = f"{item.UQ2val}{item.UQ2txt.title()}"
 		skill = cls.isSkill(item)
 		skillPower = 0
 		weaponPower = 0
@@ -52,8 +38,8 @@ class ArmourItem(BaseItem):
 			WIS = item.WIS,
 			LUK = item.LUK,
 			Defence = item.Defence,
-			miscUp1 = misc1,
-			miscUp2 = misc2,
+			miscUp1 = cls.getMisc1(item),
+			miscUp2 = cls.getMisc2(item),
 			Upgrade_Slots_Left = item.Upgrade_Slots_Left)
 
 	@classmethod
@@ -66,17 +52,7 @@ class ArmourItem(BaseItem):
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
 		base = super().intToWiki()
 		extra = {
-			"class": "Class",
-			"level": "lvReqToEquip",
 			"skill": "Skill",
-			"weaponpower": "Weapon_Power",
 			"skillpower": "Skill_Power",
-			"str": "STR",
-			"agi": "AGI",
-			"wis": "WIS",
-			"luck": "LUK",
-			"misc": "miscUp1",
-			"upgrade": "Upgrade_Slots_Left",
-			"defence": "Defence",
 		}
 		return {**base, **extra}

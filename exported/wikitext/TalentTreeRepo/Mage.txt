@@ -1,0 +1,114 @@
+{{Talent
+|name=Energy Bolt
+|textArr=Your next basic attack strikes the Targeted Enemy for (Table 1)% Damage
+|form1=bigBase
+|x1=160
+|x2=2
+}}
+{{Talent
+|name=Mini Fireball
+|textArr=Shoots a fireball that explodes on impact, dealing (Table 1)% damage
+|form1=bigBase
+|x1=120
+|x2=1
+}}
+{{Talent
+|name=Mana Overdrive
+|textArr=Increase max MP by (Table 1)%
+|form1=add
+|x1=0.5
+|x2=0.02
+}}
+{{Talent
+|name=Teleport
+|textArr=Move forward instantly by a distance of (Table 1) Pixels
+|form1=bigBase
+|x1=25
+|x2=1
+}}
+{{Talent
+|name=You'Re Next
+|textArr=Basic attacks have a (Table 1)% chance to Mark enemies, who then take (Table 2)% more damage
+|form1=decay
+|x1=110
+|x2=70
+|form2=bigBase
+|y1=25
+|y2=0.5
+}}
+{{Talent
+|name=Knowledge Is Power
+|textArr=The effect your WIS stat has on Damage is increased by (Table 1)%
+|form1=add
+|x1=1.5
+|x2=0
+}}
+{{Talent
+|name=Unt'Wis'Ted Robes
+|textArr=All Equipment gives (Table 1)% more WIS than what's listed
+|form1=add
+|x1=1.5
+|x2=0
+}}
+{{Talent
+|name=Power Overwhelming
+|textArr=The effect Weapon Power has on Damage Dealt is increased by (Table 1)%
+|form1=add
+|x1=1.2
+|x2=0
+}}
+{{Talent
+|name=Free Meal
+|textArr=(Table 1)% Chance for food to not be consumed when it otherwise would be
+|form1=decay
+|x1=53
+|x2=40
+}}
+{{Talent
+|name=Individual Insight
+|textArr=+(Table 1) base WIS
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Log On Logs
+|textArr=For (Table 1) Minutes, trees drop (Table 2)% more Logs than normal
+|form1=intervalAdd
+|x1=2
+|x2=10
+|form2=bigBase
+|y1=14
+|y2=1.86
+}}
+{{Talent
+|name=Leaf Thief
+|textArr=(Table 1)% Choppin Efficiency per power of 10 Grass Leaves in your Storage Chest.
+|form1=decay
+|x1=25
+|x2=70
+}}
+{{Talent
+|name=Deforesting All Doubt
+|textArr=The effect your WIS stat has on Choppin Efficiency is increased by (Table 1)%
+|form1=add
+|x1=0.75
+|x2=0
+}}
+{{Talent
+|name=Inner Peace
+|textArr=Increases Exp Gain for all Specialized Skills by (Table 1)%
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Choppin It Up Ez
+|textArr=+(Table 1)% Minigame Rewards, and +(Table 2)% Dmg per 25 Pts of your Minigame Highscore
+|form1=add
+|x1=1
+|x2=0
+|form2=decay
+|y1=5.7
+|y2=50
+}}

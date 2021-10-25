@@ -7,6 +7,7 @@ from definitions.itemdef.specifictypes.ChestItem import ChestItem
 from definitions.itemdef.specifictypes.FishingTKItem import FishingTKItem
 from definitions.itemdef.specifictypes.GoldenFoodItem import GoldenFoodItem
 from definitions.itemdef.specifictypes.InvBagItem import InvBagItem
+from definitions.itemdef.specifictypes.KeychainItem import KeychainItem
 from definitions.itemdef.specifictypes.ObolItem import ObolItem
 from definitions.itemdef.specifictypes.OreItem import OreItem
 from definitions.itemdef.specifictypes.StampItem import StampItem
@@ -36,7 +37,7 @@ class SpecificItemRepo(Repository[BaseItem]):
 				cls.add(name, BaseItem.fromItemDetails(item))
 			elif item.typeGen in {TypeGen.aHelmet, TypeGen.aPants, TypeGen.aShoes, TypeGen.aShirt,
 			                      TypeGen.aChatRingMTX, TypeGen.aTrophy, TypeGen.aPendant, TypeGen.aHelmetMTX,
-			                      TypeGen.aRing, TypeGen.aKeychain}:
+			                      TypeGen.aRing}:
 				cls.add(name, ArmourItem.fromItemDetails(item))
 			elif item.typeGen == TypeGen.aWeapon:
 				cls.add(name, WeaponItem.fromItemDetails(item))
@@ -68,6 +69,15 @@ class SpecificItemRepo(Repository[BaseItem]):
 				cls.add(name, FishingTKItem.fromItemDetails(item))
 			elif item.typeGen == TypeGen.dStone:
 				cls.add(name, StoneItem.fromItemDetails(item))
+			elif item.typeGen == TypeGen.aKeychain:
+				cls.add(name, KeychainItem.fromItemDetails(item))
 			else:
 				havntDone.add(item.typeGen.value)
 		print(havntDone)
+
+	@classmethod
+	def getDisplayName(cls, name: str) -> str:
+		if item := cls.get(name):
+			return item.displayName
+		print(f"{name} not found in ItemRepo!!!")
+		return ""

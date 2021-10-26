@@ -1,10 +1,9 @@
-from pydantic import BaseModel
-
+from definitions.master.IdleonModel import IdleonModel
 from definitions.questdef.QuestType import QuestType
 from helpers.CustomTypes import Integer
 
 
-class DialogueLine(BaseModel):
+class DialogueLine(IdleonModel):
 	Type: QuestType
 	DialogueText: str
 	NextIndex: Integer

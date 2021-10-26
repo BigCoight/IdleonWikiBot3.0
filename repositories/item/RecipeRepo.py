@@ -1,6 +1,6 @@
 import re
 from queue import Queue
-from typing import List
+from typing import List, Set
 
 from definitions.itemdef.Recipe import Recipe, Component, DetRecipeComponent, DetailedRecipe
 from helpers.CustomTypes import Integer
@@ -124,3 +124,11 @@ class RecipeRepo(Repository[Recipe]):
 	@classmethod
 	def getWikiName(cls, name: str) -> str:
 		return ItemDetailRepo.getDisplayName(name)
+
+	@classmethod
+	def _overrideDict(cls) -> Set[str]:
+		return {"recipe"}
+
+	@classmethod
+	def compareVersions(cls, v1: str, v2: str, ignored: Set[str] = set()):
+		return super().compareVersions(v1, v2, {"detailedRecipe", "recipeFrom", 'intID'})

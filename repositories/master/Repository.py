@@ -91,14 +91,13 @@ class Repository(Generic[T], ABC):
 		for sameItem in sameItems:
 			if cls._ignore(sameItem, repo2[sameItem]):
 				continue
-			modelChanges = repo1[sameItem].compare(repo2[sameItem], ignored)
-			if modelChanges:
+			if modelChanges := repo1[sameItem].compare(repo2[sameItem], ignored):
 				changes[sameItem] = modelChanges
 
 		for newItem in newItems:
 			if cls._ignore(newItem, repo2[newItem]):
 				continue
-			new[newItem] = repo2[newItem].dict(exclude = set(ignored))
+			new[newItem] = repo2[newItem].toDict(ignored)
 
 		out = {
 			"new": new,
@@ -113,6 +112,24 @@ class Repository(Generic[T], ABC):
 		cls.writeChangesWiki(out)
 
 	@classmethod
+	def _overrideDict(cls) -> Set[str]:
+		return set()
+
+	@classmethod
+	def _newChange(cls, data: T, ignored: Set[str] = set()) -> Dict[str, any]:
+		addAfter = cls._overrideDict()
+		for key, val in data.__dict__.items():
+			if isinstance(val, IdleonModel):
+				if key not in ignored:
+					if not val.shouldCompare():
+						addAfter.add(key)
+		temp = data.dict(exclude = ignored.union(addAfter))
+		for key in addAfter:
+			temp[key] = data.__dict__[key]
+
+		return temp
+
+	@classmethod
 	def writeChangesWiki(cls, differences):
 		res = ""
 		new = differences["new"]
@@ -122,7 +139,7 @@ class Repository(Generic[T], ABC):
 		for item, change in changes.items():
 			res += cls._writeChangelogChange(item, change)
 
-		res += "</div><div class=\"GenericChild\">"
+		res += "</div><div class=\"GenericChild\">\n"
 		res += "==New==\n"
 
 		for item, change in new.items():
@@ -150,12 +167,10 @@ class Repository(Generic[T], ABC):
 				res += bold(camelCaseToTitle(v))
 				for i, subC in enumerate(d):
 					res += patchnote(str(i), " ", subC)
-				res += "|-\n|\n"
 			elif isinstance(d, dict):
 				res += bold(camelCaseToTitle(v))
 				for atr, subC in d.items():
 					res += patchnote(atr, " ", subC)
-				res += "|-\n|\n"
 			else:
 				if not d:
 					continue
@@ -184,13 +199,12 @@ class Repository(Generic[T], ABC):
 				for i, subC in enumerate(d):
 					o, n = subC
 					res += patchnote(str(i), o, n)
-				res += "|-\n|\n"
 			elif isinstance(d, dict):
 				res += bold(camelCaseToTitle(v))
 				for atr, subC in d.items():
+					print(atr)
 					o, n = subC
 					res += patchnote(atr, o, n)
-				res += "|-\n|\n"
 
 		res += '|}\n'
 		return res

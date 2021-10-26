@@ -1,20 +1,6 @@
 {
     "new": {
-        "FillerMaterial": {
-            "intID": "FillerMaterial",
-            "recipe": [
-                {"item": "Copper", "quantity": 6},
-                {"item": "Copper", "quantity": 22}
-            ],
-            "levelReqToCraft": 1,
-            "expGiven": 1,
-            "no": 47,
-            "tab": 3,
-            "sellPrice": 84,
-            "recipeFrom": []
-        },
         "EquipmentHats64": {
-            "intID": "EquipmentHats64",
             "recipe": [
                 {"item": "DesertA3b", "quantity": 5},
                 {"item": "PureWater", "quantity": 20},
@@ -24,11 +10,17 @@
             "expGiven": 2000,
             "no": 45,
             "tab": 2,
-            "sellPrice": 4329,
-            "recipeFrom": []
+            "sellPrice": 4329
+        },
+        "FillerMaterial": {
+            "recipe": [{"item": "Copper", "quantity": 6}, {"item": "Copper", "quantity": 22}],
+            "levelReqToCraft": 1,
+            "expGiven": 1,
+            "no": 47,
+            "tab": 3,
+            "sellPrice": 84
         },
         "EquipmentHats67": {
-            "intID": "EquipmentHats67",
             "recipe": [
                 {"item": "TreeInterior2", "quantity": 25000},
                 {"item": "TreeInterior1b", "quantity": 15}
@@ -37,11 +29,9 @@
             "expGiven": 100,
             "no": 60,
             "tab": 1,
-            "sellPrice": 2251350,
-            "recipeFrom": []
+            "sellPrice": 2251350
         },
         "EquipmentHats66": {
-            "intID": "EquipmentHats66",
             "recipe": [
                 {"item": "Critter9", "quantity": 1000000},
                 {"item": "Critter9A", "quantity": 1},
@@ -51,18 +41,10 @@
             "expGiven": 500000,
             "no": 60,
             "tab": 3,
-            "sellPrice": 80001253,
-            "recipeFrom": []
+            "sellPrice": 80001253
         }
     },
     "changes": {
-        "EquipmentShoes9": {
-            "recipe": [
-                [{"item": "Grasslands3", "quantity": 30}, {"item": "Grasslands3", "quantity": 15}],
-                [{"item": "CopperBar", "quantity": 20}, {"item": "Leaf1", "quantity": 10}]
-            ],
-            "sellPrice": [430, 145]
-        },
         "EquipmentPants23": {"sellPrice": [10524, 8316]},
         "PeanutG": {
             "recipe": [
@@ -75,8 +57,25 @@
             "tab": [2, 1],
             "sellPrice": [84, 7750]
         },
-        "EquipmentPants15": {"sellPrice": [10985, 10065]},
+        "EquipmentSmithingTabs4": {"sellPrice": [897, 1377]},
+        "BulletB": {"sellPrice": [363, 455]},
+        "EquipmentPants22": {"sellPrice": [34955, 32195]},
+        "EquipmentShoes9": {
+            "recipe": [
+                [{"item": "Grasslands3", "quantity": 30}, {"item": "Grasslands3", "quantity": 15}],
+                [{"item": "CopperBar", "quantity": 20}, {"item": "Leaf1", "quantity": 10}]
+            ],
+            "sellPrice": [430, 145]
+        },
         "EquipmentPants18": {"sellPrice": [3008, 2272]},
+        "EquipmentPants1": {
+            "recipe": [
+                [{"item": "Grasslands2", "quantity": 20}, {"item": "Grasslands2", "quantity": 12}],
+                [{"item": "CopperBar", "quantity": 8}, {"item": "CopperBar", "quantity": 7}]
+            ],
+            "sellPrice": [201, 109]
+        },
+        "BadgeG3": {"sellPrice": [23520, 253500]},
         "Bullet": {
             "recipe": [
                 [{"item": "Copper", "quantity": 6}, {"item": "ForestTree", "quantity": 10}],
@@ -88,16 +87,6 @@
             "tab": [3, 2],
             "sellPrice": [84, 130]
         },
-        "EquipmentPants1": {
-            "recipe": [
-                [{"item": "Grasslands2", "quantity": 20}, {"item": "Grasslands2", "quantity": 12}],
-                [{"item": "CopperBar", "quantity": 8}, {"item": "CopperBar", "quantity": 7}]
-            ],
-            "sellPrice": [201, 109]
-        },
-        "BulletB": {"sellPrice": [363, 455]},
-        "EquipmentSmithingTabs4": {"sellPrice": [897, 1377]},
-        "EquipmentPants22": {"sellPrice": [34955, 32195]},
-        "BadgeG3": {"sellPrice": [23520, 253500]}
+        "EquipmentPants15": {"sellPrice": [10985, 10065]}
     }
 }

@@ -87,7 +87,7 @@ class SourceRepo(Repository[Sources]):
 	@classmethod
 	def addQuestRewards(cls):
 		for npc, data in NpcRepo.items():
-			for quest in data.quests:
+			for questN, quest in data.quests.items():
 				for reward in quest.Rewards:
 					if reward.item[:-1] == "SmithingRecipes":
 						cls.addToRecipeFrom(RecipeRepo.getFromComponent(reward), Source(

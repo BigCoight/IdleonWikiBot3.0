@@ -1,14 +1,12 @@
-from typing import List
+from typing import List, Dict
 
-from pydantic import BaseModel
-
+from definitions.master.IdleonModel import IdleonModel
 from definitions.questdef.DialogueLine import DialogueLine
 from definitions.questdef.NpcHead import NpcHead
 from definitions.questdef.Quest import Quest
 
 
-class Npc(BaseModel):
+class Npc(IdleonModel):
 	head: NpcHead
-	quests: List[Quest]
+	quests: Dict[str, Quest]
 	dialogue: List[DialogueLine]
-

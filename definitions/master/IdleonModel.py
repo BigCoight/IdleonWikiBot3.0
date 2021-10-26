@@ -22,6 +22,7 @@ class IdleonModel(BaseModel):
 					res += f"|{wiki}={atr()}"
 					if newLine:
 						res += "\n"
+		self.dict()
 
 		return res
 
@@ -30,6 +31,25 @@ class IdleonModel(BaseModel):
 
 	def writeAfter(self) -> List[IdleonModel]:
 		return []
+
+	def toDict(self, ignored: Set[str] = set()) -> Dict[str, any]:
+		firstIter = dict(self)
+		for atr, val in firstIter.items():
+			if isinstance(val, IdleonModel) and val.shouldCompare():
+				firstIter[atr] = val.toDict(ignored)
+			if isinstance(val, list):
+				if not val:
+					continue
+				elif isinstance(val[0], IdleonModel) and val[0].shouldCompare():
+					firstIter[atr] = [x.toDict(ignored) for x in val]
+			if isinstance(val, dict):
+				key = list(val.keys())[0]
+				if isinstance(val[key], IdleonModel) and val[key].shouldCompare():
+					firstIter[atr] = {k: v.toDict(ignored) for k, v in val.items()}
+
+		for ignore in ignored:
+			firstIter.pop(ignore, None)
+		return firstIter
 
 	def compare(self, other: IdleonModel, ignored: Set[str] = set()):
 		diffs = {}
@@ -44,8 +64,11 @@ class IdleonModel(BaseModel):
 			if isinstance(d1[key], IdleonModel) and d1[key].shouldCompare():
 				diffs[key] = d1[key].compare(d2[key], ignored)
 				continue
-			if isinstance(d1[key], List):
+			if isinstance(d1[key], list):
 				diffs[key] = self._getDifList(d1[key], d2[key], ignored)
+				continue
+			if isinstance(d1[key], dict):
+				diffs[key] = self._getDifDict(d1[key], d2[key], ignored)
 				continue
 			diffs[key] = (d1[key], d2[key])
 		if not any(diffs.values()):
@@ -87,3 +110,35 @@ class IdleonModel(BaseModel):
 				res.append((i, " "))
 
 		return res
+
+	def _getDifDict(self, me, other, ignored: Set[str] = set()) -> Dict[str, any]:
+		diffs = {}
+		keys1 = set(me.keys())
+		keys2 = set(other.keys())
+		sameItems = keys1.intersection(keys2)
+		newItems = keys2 - keys1
+		for key in sameItems:
+			if me[key] == other[key]:
+				continue
+			if key in ignored:
+				continue
+			if isinstance(me[key], IdleonModel) and me[key].shouldCompare():
+				diffs[key] = me[key].compare(other[key], ignored)
+				continue
+			if isinstance(me[key], list):
+				diffs[key] = self._getDifList(me[key], other[key], ignored)
+				continue
+			if isinstance(me[key], dict):
+				diffs[key] = self._getDifDict(me[key], other[key], ignored)
+				continue
+			diffs[key] = (me[key], other[key])
+
+		for key in newItems:
+			if isinstance(other[key], IdleonModel) and me[key].shouldCompare():
+				toAdd = other[key].dict()
+				diffs[key] = {}
+				for atr, val in toAdd.items():
+					diffs[key][atr] = (" ", val)
+				continue
+			diffs[key] = (" ", other[key])
+		return diffs

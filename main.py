@@ -99,4 +99,4 @@ EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
-TalentTreeRepo.compareVersions("123b", "130")
+NpcRepo.compareVersions("123b", "130", ignored = {"dialogue", "head", "QuestName", "CustomType"})

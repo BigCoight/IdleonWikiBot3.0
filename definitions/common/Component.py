@@ -1,10 +1,9 @@
-from pydantic import BaseModel
-
+from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Integer
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 
 
-class Component(BaseModel):
+class Component(IdleonModel):
 	"""
 	item: str
 	quantity: int
@@ -16,3 +15,6 @@ class Component(BaseModel):
 		res = f"{self.quantity}x" + "{{CraftReq|"
 		res += ItemDetailRepo.getDisplayName(self.item)
 		return res + "}}"
+
+	def shouldCompare(self) -> bool:
+		return False

@@ -1,7 +1,7 @@
 {
     "Beginner": {
-        "talents": [
-            {
+        "talents": {
+            "Health Booster": {
                 "name": "Health Booster",
                 "description": "Increases Max HP by {",
                 "x1": 1,
@@ -12,7 +12,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Hp"
             },
-            {
+            "Mana Booster": {
                 "name": "Mana Booster",
                 "description": "Increases Max MP by {",
                 "x1": 1,
@@ -23,7 +23,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Mp"
             },
-            {
+            "Star Player": {
                 "name": "Star Player",
                 "description": "Gives { Star Talent Points. Star Talents are found throughout the game!",
                 "x1": 1,
@@ -34,7 +34,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Star Talent Point"
             },
-            {
+            "Bucklered Up": {
                 "name": "Bucklered Up",
                 "description": "Increases Total Defense by +{%",
                 "x1": 40,
@@ -45,7 +45,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{% Total Def"
             },
-            {
+            "Sharpened Axe": {
                 "name": "Sharpened Axe",
                 "description": "Increases Base Weapon Power by {. This contributes to your total damage.",
                 "x1": 0.25,
@@ -56,7 +56,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{ Base Weapon Power"
             },
-            {
+            "Fist Of Rage": {
                 "name": "Fist Of Rage",
                 "description": "Increases your Base STR by { (STR boosts Max HP and Crit Damage)",
                 "x1": 1,
@@ -67,7 +67,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Str"
             },
-            {
+            "Quickness Boots": {
                 "name": "Quickness Boots",
                 "description": "Increases your Base AGI by { (AGI boosts Movement Speed and Crit Chance)",
                 "x1": 1,
@@ -78,7 +78,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Agi"
             },
-            {
+            "Book Of The Wise": {
                 "name": "Book Of The Wise",
                 "description": "Increases your Base WIS by { (WIS boosts Mana and Boss Damage)",
                 "x1": 1,
@@ -89,7 +89,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Wis"
             },
-            {
+            "Lucky Clover": {
                 "name": "Lucky Clover",
                 "description": "Increases your Base LUK by { (LUK boosts drop rate, EXP Gain, and other RNG)",
                 "x1": 1,
@@ -100,7 +100,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk"
             },
-            {
+            "Gilded Sword": {
                 "name": "Gilded Sword",
                 "description": "Boosts Damage dealt to all monsters by {%",
                 "x1": 1,
@@ -111,7 +111,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Happy Dude": {
                 "name": "Happy Dude",
                 "description": "Increases Exp Gain for all Skills by {%",
                 "x1": 1,
@@ -122,7 +122,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Exp Gain"
             },
-            {
+            "Knucklebuster": {
                 "name": "Knucklebuster",
                 "description": "Increases Critical Hit Damage by {%",
                 "x1": 30,
@@ -133,7 +133,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Critical Damage"
             },
-            {
+            "Feather Flight": {
                 "name": "Feather Flight",
                 "description": "Increases Movement Speed by {%",
                 "x1": 20,
@@ -144,7 +144,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Move Speed"
             },
-            {
+            "Extra Bags": {
                 "name": "Extra Bags",
                 "description": "Carry Capacity for materials is increased by {%",
                 "x1": 200,
@@ -155,7 +155,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Mat Carry Cap"
             },
-            {
+            "Sleepin' On The Job": {
                 "name": "Sleepin' On The Job",
                 "description": "AFK Gains Rate for Fighting is increased by {%",
                 "x1": 21,
@@ -166,11 +166,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate"
             }
-        ]
+        }
     },
     "Journeyman": {
-        "talents": [
-            {
+        "talents": {
+            "Indiana Attack": {
                 "name": "Indiana Attack",
                 "description": "Whip forward, dealing {% dmg and pulling in up to } monsters.",
                 "x1": 50,
@@ -181,7 +181,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} Mobs"
             },
-            {
+            "Breakin' The Bank": {
                 "name": "Breakin' The Bank",
                 "description": "Multiplies value of all coins on ground by {x.",
                 "x1": 0.6,
@@ -192,7 +192,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{X Multi"
             },
-            {
+            "Supernova Player": {
                 "name": "Supernova Player",
                 "description": "Gives { Star Talent Points.",
                 "x1": 1,
@@ -203,7 +203,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Star Talent Point"
             },
-            {
+            "Two Punch Man": {
                 "name": "Two Punch Man",
                 "description": "Regular punches do +{% more damage and also hit a 2nd time for }% damage",
                 "x1": 0.6,
@@ -214,7 +214,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +}% 2Nd Dmg"
             },
-            {
+            "Gimme Gimme": {
                 "name": "Gimme Gimme",
                 "description": "Monsters have a {% chance to drop 2x loot for } Minutes",
                 "x1": 80,
@@ -225,7 +225,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Chance & +} Minutes"
             },
-            {
+            "Lucky Hit": {
                 "name": "Lucky Hit",
                 "description": "LUK's effect on Damage is increased by {%",
                 "x1": 0.4,
@@ -236,7 +236,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect"
             },
-            {
+            "F'Luk'Ey Fabrics": {
                 "name": "F'Luk'Ey Fabrics",
                 "description": "All Equipment gives {% more LUK than what's listed",
                 "x1": 100,
@@ -247,7 +247,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% More Luk From Equips"
             },
-            {
+            "Chaching!": {
                 "name": "Chaching!",
                 "description": "Straight up cash, yo. +{% more to be exact.",
                 "x1": 50,
@@ -258,7 +258,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Mo Money"
             },
-            {
+            "Lucky Horseshoe": {
                 "name": "Lucky Horseshoe",
                 "description": "+{ base LUK",
                 "x1": 1,
@@ -269,7 +269,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk"
             },
-            {
+            "Curse Of Mr Looty Booty": {
                 "name": "Curse Of Mr Looty Booty",
                 "description": "+{% Drop rate, and -}% Total Damage. Cmon, do it! Or are u too scared?",
                 "x1": 70,
@@ -280,7 +280,7 @@
                 "funcY": "decay",
                 "lvlUpText": "+{% Drop & -}% Dmg"
             },
-            {
+            "Its Your Birthday!": {
                 "name": "Its Your Birthday!",
                 "description": "Drops some random reward. Has a {% chance to have no cooldown!",
                 "x1": 35,
@@ -291,7 +291,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Chance"
             },
-            {
+            "Cmon Out Crystals": {
                 "name": "Cmon Out Crystals",
                 "description": "+{% Crystal Mob spawn chance",
                 "x1": 300,
@@ -302,7 +302,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Spawn Chance"
             },
-            {
+            "Reroll Pls": {
                 "name": "Reroll Pls",
                 "description": "{% Chance to get a reroll on AFK rewards. Can trigger multiple times!",
                 "x1": 36,
@@ -313,7 +313,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Chance"
             },
-            {
+            "Cards Galore": {
                 "name": "Cards Galore",
                 "description": "+{% Card Drop Chance. As with all card drop bonuses, this affects AFK too.",
                 "x1": 50,
@@ -324,7 +324,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Card Drop Chance"
             },
-            {
+            "Rares Everywhere!": {
                 "name": "Rares Everywhere!",
                 "description": "Items in all Rare Drop Tables are {% more likely to drop!",
                 "x1": 30,
@@ -335,11 +335,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Rare Drop Table Items"
             }
-        ]
+        }
     },
     "Maestro": {
-        "talents": [
-            {
+        "talents": {
+            "Coin Toss": {
                 "name": "Coin Toss",
                 "description": "Throws a coin which deals {% Dmg. Damage also increases the more money you have",
                 "x1": 100,
@@ -350,7 +350,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Dmg"
             },
-            {
+            "Skillage Damage": {
                 "name": "Skillage Damage",
                 "description": "+{% DMG for every 5 levels of your lowest LV Skill",
                 "x1": 50,
@@ -361,7 +361,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Dmg"
             },
-            {
+            "Printer Go Brrr": {
                 "name": "Printer Go Brrr",
                 "description": "Print { Hours of printer samples instantly. }% chance to have no cooldown!",
                 "x1": 1,
@@ -372,7 +372,7 @@
                 "funcY": "decay",
                 "lvlUpText": "{ Hours & +}% No Cd Chance"
             },
-            {
+            "Triple Jab": {
                 "name": "Triple Jab",
                 "description": "Punches now hit a 3rd time for {% dmg. The other hits do +}% more Dmg",
                 "x1": 20,
@@ -383,7 +383,7 @@
                 "funcY": "add",
                 "lvlUpText": "+{% 3Rd Dmg & +} Other Dmg"
             },
-            {
+            "One Step Ahead": {
                 "name": "One Step Ahead",
                 "description": "Check-Mate!",
                 "x1": 1,
@@ -394,7 +394,7 @@
                 "funcY": "txt",
                 "lvlUpText": "Pawn To B{"
             },
-            {
+            "Lucky Charms": {
                 "name": "Lucky Charms",
                 "description": "LUK's effect on Class EXP Gain is increased by {%",
                 "x1": 1,
@@ -405,7 +405,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect"
             },
-            {
+            "Clever Clover Obols": {
                 "name": "Clever Clover Obols",
                 "description": "Obols give +{% more LUK than what's listed",
                 "x1": 60,
@@ -416,7 +416,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% More Luk From Obols"
             },
-            {
+            "Skilliest Statue": {
                 "name": "Skilliest Statue",
                 "description": "'EhExPee', 'Kapow', and 'Feasty' statues give {% higher bonuses",
                 "x1": 100,
@@ -427,7 +427,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses"
             },
-            {
+            "Bliss N Chips": {
                 "name": "Bliss N Chips",
                 "description": "+{ Max LV to 'Happy Dude', and +} Max LV to Lucky Horseshoe",
                 "x1": 2,
@@ -438,7 +438,7 @@
                 "funcY": "add",
                 "lvlUpText": "+{ Max Lv & +} Max Lv"
             },
-            {
+            "Colloquial Containers": {
                 "name": "Colloquial Containers",
                 "description": "Each Lv of 'Lotto Skills' Bubble raises max Lv of 'Sleepin On The Job' Talent, up to +{",
                 "x1": 1,
@@ -449,7 +449,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv For Sleep On Job"
             },
-            {
+            "Maestro Transfusion": {
                 "name": "Maestro Transfusion",
                 "description": "+{% Skill EXP Gain, and -}% Skill Efficiency. Affects all Skills.",
                 "x1": 2.5,
@@ -460,7 +460,7 @@
                 "funcY": "decay",
                 "lvlUpText": "+{% Exp Gain & -}% Efficiency"
             },
-            {
+            "Crystal Countdown": {
                 "name": "Crystal Countdown",
                 "description": "Killing a Crystal or Giant lowers REQ Exp of a random skill by 2%. Stacks up to {%.",
                 "x1": 100,
@@ -471,7 +471,7 @@
                 "funcY": "add",
                 "lvlUpText": "+{% Max Exp Reduction"
             },
-            {
+            "Left Hand Of Learning": {
                 "name": "Left Hand Of Learning",
                 "description": "+{% Skill EXP Gain for your other characters, if their Skill LV is lower than Maestro's.",
                 "x1": 200,
@@ -482,7 +482,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Skill Exp To Family"
             },
-            {
+            "Right Hand Of Action": {
                 "name": "Right Hand Of Action",
                 "description": "+{% Skill Efficiency for your other characters, if their Skill LV is lower than Maestro's.",
                 "x1": 150,
@@ -493,7 +493,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Skill Eff To Family"
             },
-            {
+            "Jman Was Better": {
                 "name": "Jman Was Better",
                 "description": "+{ Talent Points for the 'Journeyman' tab. Maestro not worth the wait, eh?",
                 "x1": 1,
@@ -504,13 +504,13 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Journeyman Point"
             }
-        ]
+        }
     },
-    "Virtuoso": {"talents": []},
-    "Infinilyte": {"talents": []},
+    "Virtuoso": {"talents": {}},
+    "Infinilyte": {"talents": {}},
     "Rage Basics": {
-        "talents": [
-            {
+        "talents": {
+            "Health Booster": {
                 "name": "Health Booster",
                 "description": "Increases Max HP by {",
                 "x1": 1,
@@ -521,7 +521,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Hp"
             },
-            {
+            "Mana Booster": {
                 "name": "Mana Booster",
                 "description": "Increases Max MP by {",
                 "x1": 1,
@@ -532,7 +532,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Mp"
             },
-            {
+            "Star Player": {
                 "name": "Star Player",
                 "description": "Gives { Star Talent Points. Star Talents are found throughout the game!",
                 "x1": 1,
@@ -543,7 +543,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Star Talent Point"
             },
-            {
+            "Bucklered Up": {
                 "name": "Bucklered Up",
                 "description": "Increases Total Defense by +{%",
                 "x1": 40,
@@ -554,7 +554,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{% Total Def"
             },
-            {
+            "Sharpened Axe": {
                 "name": "Sharpened Axe",
                 "description": "Increases Base Weapon Power by {. This contributes to your total damage.",
                 "x1": 0.25,
@@ -565,7 +565,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{ Base Weapon Power"
             },
-            {
+            "Fist Of Rage": {
                 "name": "Fist Of Rage",
                 "description": "Increases your Base STR by { (STR boosts Max HP and Crit Damage)",
                 "x1": 1,
@@ -576,7 +576,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Str"
             },
-            {
+            "Quickness Boots": {
                 "name": "Quickness Boots",
                 "description": "Increases your Base AGI by { (AGI boosts Movement Speed and Crit Chance)",
                 "x1": 1,
@@ -587,7 +587,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Agi"
             },
-            {
+            "Book Of The Wise": {
                 "name": "Book Of The Wise",
                 "description": "Increases your Base WIS by { (WIS boosts Mana and Boss Damage)",
                 "x1": 1,
@@ -598,7 +598,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Wis"
             },
-            {
+            "Lucky Clover": {
                 "name": "Lucky Clover",
                 "description": "Increases your Base LUK by { (LUK boosts drop rate, EXP Gain, and other RNG)",
                 "x1": 1,
@@ -609,7 +609,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk"
             },
-            {
+            "Gilded Sword": {
                 "name": "Gilded Sword",
                 "description": "Boosts Damage dealt to all monsters by {%",
                 "x1": 1,
@@ -620,7 +620,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Brute Efficiency": {
                 "name": "Brute Efficiency",
                 "description": "Increases the total efficiency of all specialized skills by {%",
                 "x1": 1,
@@ -631,7 +631,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency"
             },
-            {
+            "Meat Shank": {
                 "name": "Meat Shank",
                 "description": "Damage dealt is increased by {% for every power of 10 Max HP you have",
                 "x1": 100,
@@ -642,7 +642,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Critikill": {
                 "name": "Critikill",
                 "description": "Increases Critical Hit Damage by {%",
                 "x1": 52,
@@ -653,7 +653,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Critical Damage"
             },
-            {
+            "Idle Brawling": {
                 "name": "Idle Brawling",
                 "description": "AFK Gains Rate for Fighting is increased by {%",
                 "x1": 20,
@@ -664,7 +664,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate"
             },
-            {
+            "Idle Skilling": {
                 "name": "Idle Skilling",
                 "description": "AFK Gains Rate for all Specialized Skills is increased by {%",
                 "x1": 20,
@@ -675,11 +675,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate"
             }
-        ]
+        }
     },
     "Warrior": {
-        "talents": [
-            {
+        "talents": {
+            "Power Strike": {
                 "name": "Power Strike",
                 "description": "Slash forward dealing {% damage to up to 3 monsters",
                 "x1": 130,
@@ -690,7 +690,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Whirl": {
                 "name": "Whirl",
                 "description": "Swing your weapon around you dealing {% damage to up to } monsters",
                 "x1": 60,
@@ -701,7 +701,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Damage & +} Mobs Hit"
             },
-            {
+            "Health Overdrive": {
                 "name": "Health Overdrive",
                 "description": "Increase max HP by {%",
                 "x1": 0.5,
@@ -712,7 +712,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Hp"
             },
-            {
+            "Double Strike": {
                 "name": "Double Strike",
                 "description": "Basic Attacks with Warrior Weapons have a {% chance to hit twice",
                 "x1": 110,
@@ -723,7 +723,7 @@
                 "funcY": "txt",
                 "lvlUpText": "{% Double Hit Chance"
             },
-            {
+            "Firmly Grasp It": {
                 "name": "Firmly Grasp It",
                 "description": "Temporarily boosts base STR by { for } minutes",
                 "x1": 15,
@@ -734,7 +734,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{ Str & +} Mins"
             },
-            {
+            "Strength In Numbers": {
                 "name": "Strength In Numbers",
                 "description": "STR's effect on both Damage and HP is increased by {%",
                 "x1": 0.75,
@@ -745,7 +745,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect"
             },
-            {
+            "'Str'Ess Tested Garb": {
                 "name": "'Str'Ess Tested Garb",
                 "description": "All Equipment gives {% more STR than what's listed",
                 "x1": 200,
@@ -756,7 +756,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% More Str From Equips"
             },
-            {
+            "Carry A Big Stick": {
                 "name": "Carry A Big Stick",
                 "description": "The effect Weapon Power has on Damage Dealt is increased by {%",
                 "x1": 1,
@@ -767,7 +767,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Weapon Power Effect"
             },
-            {
+            "Absolute Unit": {
                 "name": "Absolute Unit",
                 "description": "+{ base STR",
                 "x1": 1,
@@ -778,7 +778,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Str"
             },
-            {
+            "Haungry For Gold": {
                 "name": "Haungry For Gold",
                 "description": "Golden Food bonuses are increased by {%",
                 "x1": 55,
@@ -789,7 +789,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Bonus"
             },
-            {
+            "Big Pick": {
                 "name": "Big Pick",
                 "description": "Swings forward and mines the rock with +{% bonus Mining Efficiency",
                 "x1": 150,
@@ -800,7 +800,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency"
             },
-            {
+            "Copper Collector": {
                 "name": "Copper Collector",
                 "description": "Mining Efficiency is increased by +{% for every power of 10 Copper Ore in Storage Chest.",
                 "x1": 20,
@@ -811,7 +811,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency"
             },
-            {
+            "Motherlode Miner": {
                 "name": "Motherlode Miner",
                 "description": "+{% base multi-ore drop chance. This can trigger up to 4 times in a row per swing.",
                 "x1": 20,
@@ -822,7 +822,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Multi-Ore Base Chance"
             },
-            {
+            "Tool Proficiency": {
                 "name": "Tool Proficiency",
                 "description": "Pickaxes give +{% more Mining Power than whats listed for every 10 Mining Lv you have",
                 "x1": 16,
@@ -833,7 +833,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Pow Per 10 Mining Lv"
             },
-            {
+            "Tempestuous Emotions": {
                 "name": "Tempestuous Emotions",
                 "description": "Increases Exp Gain for all Specialized Skills by {%",
                 "x1": 1,
@@ -844,11 +844,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Exp Gain"
             }
-        ]
+        }
     },
     "Barbarian": {
-        "talents": [
-            {
+        "talents": {
+            "Bear Swipe": {
                 "name": "Bear Swipe",
                 "description": "A big ol' bear claw swipes up to { monsters in front of you, dealing }% damage",
                 "x1": 3,
@@ -859,7 +859,7 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Mobs & +}% Dmg"
             },
-            {
+            "Axe Hurl": {
                 "name": "Axe Hurl",
                 "description": "Throws axe in a downward arc, which deals {% dmg to up to } monsters.",
                 "x1": 200,
@@ -870,7 +870,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} Mobs"
             },
-            {
+            "Mocking Shout": {
                 "name": "Mocking Shout",
                 "description": "Every 0.5 sec, monsters move toward you and heal for {% HP. Lasts for } seconds",
                 "x1": 1,
@@ -881,7 +881,7 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+1% Heal, +} Sec"
             },
-            {
+            "No Pain No Gain": {
                 "name": "No Pain No Gain",
                 "description": "Reduces max HP by {%, increases damage by }%. Also, you take double damage.",
                 "x1": 100,
@@ -892,7 +892,7 @@
                 "funcY": "decay",
                 "lvlUpText": "-{% Hp & +}% Damage"
             },
-            {
+            "Monster Decimator": {
                 "name": "Monster Decimator",
                 "description": "There is a {% chance for a monster kill to be counted for double for opening new portals.",
                 "x1": 100,
@@ -903,7 +903,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Double Count Chance"
             },
-            {
+            "Apocalypse Zow": {
                 "name": "Apocalypse Zow",
                 "description": "+{% Dmg for every monster you kill over 100,000 times. Counts } monster types",
                 "x1": 2,
@@ -914,7 +914,7 @@
                 "funcY": "add",
                 "lvlUpText": "+{% Dmg & +1 Mob Type"
             },
-            {
+            "Fistful Of Obol": {
                 "name": "Fistful Of Obol",
                 "description": "Obols give +{% more STR than what's listed",
                 "x1": 60,
@@ -925,7 +925,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% More Str From Obols"
             },
-            {
+            "Strongest Statues": {
                 "name": "Strongest Statues",
                 "description": "'Power', 'Mining', and 'Oceanman' statues give {% higher bonuses",
                 "x1": 100,
@@ -936,7 +936,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses"
             },
-            {
+            "Str Summore": {
                 "name": "Str Summore",
                 "description": "+{ Max Talent Level for 'Fist of Rage'",
                 "x1": 1,
@@ -947,7 +947,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv"
             },
-            {
+            "Beefy Bottles": {
                 "name": "Beefy Bottles",
                 "description": "Each Lv of 'Warriors Only' Bubble raises max Lv of 'CritiKill' Talent, up to +{",
                 "x1": 1,
@@ -958,18 +958,18 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv For Critikill Talent"
             },
-            {
+            "Worming Undercover": {
                 "name": "Worming Undercover",
-                "description": "{% chance",
-                "x1": -1,
-                "x2": -1,
-                "funcX": "9.3",
-                "y1": 0.7,
-                "y2": -1,
-                "funcY": "_",
-                "lvlUpText": ""
+                "description": "{% chance to wake the sleeper agent worm within the fish, letting you instantly catch",
+                "x1": 9.3,
+                "x2": 0.7,
+                "funcX": "bigBase",
+                "y1": 0,
+                "y2": 0,
+                "funcY": "txt",
+                "lvlUpText": "+1% Chance"
             },
-            {
+            "Bobbin' Bobbers": {
                 "name": "Bobbin' Bobbers",
                 "description": "+{% Minigame reward, and +1 Fishing Power per pt of your Highscore, up to +}",
                 "x1": 12,
@@ -980,7 +980,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Reward & +} Cap"
             },
-            {
+            "All Fish Diet": {
                 "name": "All Fish Diet",
                 "description": "+{% Fishing EXP, since like, fish is brain food and so it makes sense that... eh forget it.",
                 "x1": 1.5,
@@ -991,7 +991,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+1.5% Fishing Exp"
             },
-            {
+            "Catching Some Zzz'S": {
                 "name": "Catching Some Zzz'S",
                 "description": "+{% Away Gains for Fishing only. Just fishing. It totally doesn't boost anything else!",
                 "x1": 20,
@@ -1002,7 +1002,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Fishing Away Gains"
             },
-            {
+            "Back To Basics": {
                 "name": "Back To Basics",
                 "description": "+{ Talent Points for the 'Warrior' talent tab, and +10 dmg to these Talents' feelings!",
                 "x1": 1,
@@ -1013,11 +1013,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt"
             }
-        ]
+        }
     },
     "Squire": {
-        "talents": [
-            {
+        "talents": {
+            "Shockwave Slash": {
                 "name": "Shockwave Slash",
                 "description": "Slash forward, causing a shockwave which deals {% dmg to up to } enemies",
                 "x1": 175,
@@ -1028,7 +1028,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} Mobs Hit"
             },
-            {
+            "Daggerang": {
                 "name": "Daggerang",
                 "description": "Throw a dagger which comes right back to you, dealing {% Dmg to up to } mobs",
                 "x1": 200,
@@ -1039,7 +1039,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} Mobs Hit"
             },
-            {
+            "Bricky Skin": {
                 "name": "Bricky Skin",
                 "description": "Block {% of all damage. Also, passively gives +} base DEF at all times, even when not in use!",
                 "x1": 20,
@@ -1050,7 +1050,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Block, +} Base Def"
             },
-            {
+            "Mastery Up": {
                 "name": "Mastery Up",
                 "description": "+{% Mastery. This affects how big your minimum damage is compared to max damage!",
                 "x1": 18,
@@ -1061,7 +1061,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Mastery"
             },
-            {
+            "Balanced Spirit": {
                 "name": "Balanced Spirit",
                 "description": "Boosts Accuracy and DEF by +{%, but lowers damage by -}%",
                 "x1": 25,
@@ -1072,7 +1072,7 @@
                 "funcY": "decay",
                 "lvlUpText": "+{% Acc/Def, -}% Dmg"
             },
-            {
+            "Precision Power": {
                 "name": "Precision Power",
                 "description": "+{% Dmg per Refinery Rank if accuracy is 1.5x higher than needed for 100% hit chance",
                 "x1": 11,
@@ -1083,7 +1083,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Dmg If Acc Big"
             },
-            {
+            "Fistful Of Obol": {
                 "name": "Fistful Of Obol",
                 "description": "Obols give +{% more STR than what's listed",
                 "x1": 60,
@@ -1094,7 +1094,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% More Str From Obols"
             },
-            {
+            "Shieldiest Statues": {
                 "name": "Shieldiest Statues",
                 "description": "'Power', 'Mining', and 'Defence' statues give {% higher bonuses",
                 "x1": 100,
@@ -1105,7 +1105,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses"
             },
-            {
+            "Str Summore": {
                 "name": "Str Summore",
                 "description": "+{ Max Talent Level for 'Fist of Rage'",
                 "x1": 1,
@@ -1116,7 +1116,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv"
             },
-            {
+            "Blocky Bottles": {
                 "name": "Blocky Bottles",
                 "description": "Each Lv of 'Warriors Only' Bubble raises max Lv of 'Meat Shank' Talent, up to +{",
                 "x1": 1,
@@ -1127,7 +1127,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv For Meat Shank"
             },
-            {
+            "Refinery Throttle": {
                 "name": "Refinery Throttle",
                 "description": "Automatically trigger { Refinery Cycles. Still costs materials, though.",
                 "x1": 3,
@@ -1138,7 +1138,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Cycle Every 8 Lvs"
             },
-            {
+            "Redox Rates": {
                 "name": "Redox Rates",
                 "description": "+{% Build Speed per power of 10 Redox Salts in your Storage Chest",
                 "x1": 40,
@@ -1149,7 +1149,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Build Spd"
             },
-            {
+            "Sharper Saws": {
                 "name": "Sharper Saws",
                 "description": "+{% Construction EXP gain. More like Cogstruction am I right fellas?",
                 "x1": 1,
@@ -1160,7 +1160,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Construction Exp"
             },
-            {
+            "Super Samples": {
                 "name": "Super Samples",
                 "description": "+{% Sample Size when taking Samples for the 3d printer.",
                 "x1": 9,
@@ -1171,7 +1171,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Sample Size"
             },
-            {
+            "Back To Basics": {
                 "name": "Back To Basics",
                 "description": "+{ Talent Points for the 'Warrior' talent tab, and +10 dmg to these Talents' feelings!",
                 "x1": 1,
@@ -1182,16 +1182,16 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt"
             }
-        ]
+        }
     },
-    "Blood Berserker": {"talents": []},
-    "Death Bringer": {"talents": []},
-    "Divine Knight": {"talents": []},
-    "Royal Guardian": {"talents": []},
-    "Filler": {"talents": []},
+    "Blood Berserker": {"talents": {}},
+    "Death Bringer": {"talents": {}},
+    "Divine Knight": {"talents": {}},
+    "Royal Guardian": {"talents": {}},
+    "Filler": {"talents": {}},
     "Calm Basics": {
-        "talents": [
-            {
+        "talents": {
+            "Health Booster": {
                 "name": "Health Booster",
                 "description": "Increases Max HP by {",
                 "x1": 1,
@@ -1202,7 +1202,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Hp"
             },
-            {
+            "Mana Booster": {
                 "name": "Mana Booster",
                 "description": "Increases Max MP by {",
                 "x1": 1,
@@ -1213,7 +1213,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Mp"
             },
-            {
+            "Star Player": {
                 "name": "Star Player",
                 "description": "Gives { Star Talent Points. Star Talents are found throughout the game!",
                 "x1": 1,
@@ -1224,7 +1224,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Star Talent Point"
             },
-            {
+            "Bucklered Up": {
                 "name": "Bucklered Up",
                 "description": "Increases Total Defense by +{%",
                 "x1": 40,
@@ -1235,7 +1235,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{% Total Def"
             },
-            {
+            "Sharpened Axe": {
                 "name": "Sharpened Axe",
                 "description": "Increases Base Weapon Power by {. This contributes to your total damage.",
                 "x1": 0.25,
@@ -1246,7 +1246,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{ Base Weapon Power"
             },
-            {
+            "Fist Of Rage": {
                 "name": "Fist Of Rage",
                 "description": "Increases your Base STR by { (STR boosts Max HP and Crit Damage)",
                 "x1": 1,
@@ -1257,7 +1257,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Str"
             },
-            {
+            "Quickness Boots": {
                 "name": "Quickness Boots",
                 "description": "Increases your Base AGI by { (AGI boosts Movement Speed and Crit Chance)",
                 "x1": 1,
@@ -1268,7 +1268,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Agi"
             },
-            {
+            "Book Of The Wise": {
                 "name": "Book Of The Wise",
                 "description": "Increases your Base WIS by { (WIS boosts Mana and Boss Damage)",
                 "x1": 1,
@@ -1279,7 +1279,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Wis"
             },
-            {
+            "Lucky Clover": {
                 "name": "Lucky Clover",
                 "description": "Increases your Base LUK by { (LUK boosts drop rate, EXP Gain, and other RNG)",
                 "x1": 1,
@@ -1290,7 +1290,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk"
             },
-            {
+            "Gilded Sword": {
                 "name": "Gilded Sword",
                 "description": "Boosts Damage dealt to all monsters by {%",
                 "x1": 1,
@@ -1301,7 +1301,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Elusive Efficiency": {
                 "name": "Elusive Efficiency",
                 "description": "Increases the total efficiency of all specialized skills by {%",
                 "x1": 1,
@@ -1312,7 +1312,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency"
             },
-            {
+            "Featherweight": {
                 "name": "Featherweight",
                 "description": "Increases Movement Speed by {% so you can outrun those slowpoke Warriors and Mages",
                 "x1": 25,
@@ -1323,7 +1323,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Move Speed"
             },
-            {
+            "I See You": {
                 "name": "I See You",
                 "description": "Increases Critical Hit Chance by {%",
                 "x1": 27,
@@ -1334,7 +1334,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Crit Chance"
             },
-            {
+            "Idle Shooting": {
                 "name": "Idle Shooting",
                 "description": "AFK Gains Rate for Fighting is increased by {%",
                 "x1": 20,
@@ -1345,7 +1345,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate"
             },
-            {
+            "Broken Time": {
                 "name": "Broken Time",
                 "description": "Production Speed in all Town Skills is increased by {%",
                 "x1": 100,
@@ -1356,11 +1356,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Production Speed"
             }
-        ]
+        }
     },
     "Archer": {
-        "talents": [
-            {
+        "talents": {
+            "Piercing Arrow": {
                 "name": "Piercing Arrow",
                 "description": "Shoots an arrow that deals {% damage to up to } monsters",
                 "x1": 110,
@@ -1371,7 +1371,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Damage & +} Mobs Hit"
             },
-            {
+            "Kung Fu Kick": {
                 "name": "Kung Fu Kick",
                 "description": "Pushes back nearby monsters by { pixels while dealing }% damage",
                 "x1": 25,
@@ -1382,7 +1382,7 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Pixels & +}% Dmg"
             },
-            {
+            "Hema Overdrive": {
                 "name": "Hema Overdrive",
                 "description": "Increase max HP and max MP by {%",
                 "x1": 0.4,
@@ -1393,7 +1393,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Hp And Mp"
             },
-            {
+            "Strafe": {
                 "name": "Strafe",
                 "description": "Temporarily boosts Movement Speed by {% for } minutes",
                 "x1": 5,
@@ -1404,7 +1404,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Speed % +} Mins"
             },
-            {
+            "Have Another!": {
                 "name": "Have Another!",
                 "description": "Basic Attacks have a {% chance to fire 1 additional arrow",
                 "x1": 120,
@@ -1415,7 +1415,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Chance"
             },
-            {
+            "Veins Of The Infernal": {
                 "name": "Veins Of The Infernal",
                 "description": "Increases Damage Dealt by {% every 10 Smithing Levels",
                 "x1": 50,
@@ -1426,7 +1426,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Garb Of Un'Agi'Ng Quality": {
                 "name": "Garb Of Un'Agi'Ng Quality",
                 "description": "All Equipment gives {% more AGI than what's listed",
                 "x1": 1.5,
@@ -1437,7 +1437,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% More Agi From Equips"
             },
-            {
+            "High Polymer Limbs": {
                 "name": "High Polymer Limbs",
                 "description": "The effect Weapon Power has on Damage Dealt is increased by {%",
                 "x1": 1,
@@ -1448,7 +1448,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Weapon Power Effect"
             },
-            {
+            "Sanic Speed": {
                 "name": "Sanic Speed",
                 "description": "+{ base AGI",
                 "x1": 1,
@@ -1459,7 +1459,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Agi"
             },
-            {
+            "Robbinghood": {
                 "name": "Robbinghood",
                 "description": "Monster drop rarity increased by {%",
                 "x1": 40,
@@ -1470,7 +1470,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Rarity"
             },
-            {
+            "Smeltin' Erryday": {
                 "name": "Smeltin' Erryday",
                 "description": "Every kill has a {% chance to give } seconds of instant forge progress",
                 "x1": 50,
@@ -1481,7 +1481,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% For } Forge Secs"
             },
-            {
+            "Acme Anvil": {
                 "name": "Acme Anvil",
                 "description": "Get 1 Anvil Production Point, and also gain +{ extra pts every 10 Smithing Lvs",
                 "x1": 1,
@@ -1492,7 +1492,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Extra Pts"
             },
-            {
+            "Yea I Already Know": {
                 "name": "Yea I Already Know",
                 "description": "Start with {% exp per 250 AGI when you lv up any Specialized Skill. Caps at }%.",
                 "x1": 5,
@@ -1503,7 +1503,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Exp, And +}% Cap"
             },
-            {
+            "Godly Creation": {
                 "name": "Godly Creation",
                 "description": "{% chance to apply a special bonus to any equip crafted at the anvil.",
                 "x1": 50,
@@ -1514,7 +1514,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Chance"
             },
-            {
+            "Focused Soul": {
                 "name": "Focused Soul",
                 "description": "EXP Gain for all Specialized Skills is increased by {%",
                 "x1": 1,
@@ -1525,11 +1525,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Exp Gain In Spec Skills"
             }
-        ]
+        }
     },
     "Bowman": {
-        "talents": [
-            {
+        "talents": {
+            "Homing Arrows": {
                 "name": "Homing Arrows",
                 "description": "Fires { arrows into the air, which seek out nearby monsters and deal }% damage",
                 "x1": 2,
@@ -1540,7 +1540,7 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Arrow & +}% Damage"
             },
-            {
+            "Magic Shortbow": {
                 "name": "Magic Shortbow",
                 "description": "Magic shortbows fire at your target, and up to { nearby monsters, for }% damage",
                 "x1": 2,
@@ -1551,7 +1551,7 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Monsters & +}% Dmg"
             },
-            {
+            "Flax Instastring": {
                 "name": "Flax Instastring",
                 "description": "Basic attacks have a {% chance to spawn a Magic Shortbow.",
                 "x1": 40,
@@ -1562,7 +1562,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Trigger Chance"
             },
-            {
+            "Extendo Rangeo": {
                 "name": "Extendo Rangeo",
                 "description": "Attack range is increased by +{ Pixels, and +}% accuracy, for a few minutes",
                 "x1": 19.5,
@@ -1573,7 +1573,7 @@
                 "funcY": "decay",
                 "lvlUpText": "+{Px Range & +} Mins"
             },
-            {
+            "Woah, That Was Fast!": {
                 "name": "Woah, That Was Fast!",
                 "description": "All attack talent cooldowns are {% lower. No, not regular attacks lol",
                 "x1": 30,
@@ -1584,7 +1584,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Lower Cooldowns"
             },
-            {
+            "Speedna": {
                 "name": "Speedna",
                 "description": "+{% Damage for every 15% movement spd you have above 100%",
                 "x1": 60,
@@ -1595,7 +1595,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Shoeful Of Obol": {
                 "name": "Shoeful Of Obol",
                 "description": "Obols give +{% more AGI than what is listed",
                 "x1": 135,
@@ -1606,7 +1606,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% More Agi"
             },
-            {
+            "Shwifty Statues": {
                 "name": "Shwifty Statues",
                 "description": "'Speed', 'Anvil', and 'Ol Reliable' statues give +{% more bonus",
                 "x1": 100,
@@ -1617,7 +1617,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses"
             },
-            {
+            "Agi Again": {
                 "name": "Agi Again",
                 "description": "+{ Max Talent Level for 'Quickness Boots'",
                 "x1": 1,
@@ -1628,7 +1628,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv"
             },
-            {
+            "Velocity Vessels": {
                 "name": "Velocity Vessels",
                 "description": "Each Lv of 'Archer or Bust' Bubble raises max Lv of 'Featherweight', up to +{",
                 "x1": 1,
@@ -1639,7 +1639,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv Cap"
             },
-            {
+            "Teleki'Net'Ic Logs": {
                 "name": "Teleki'Net'Ic Logs",
                 "description": "+{% Catching Efficiency for every power of 10 Oak Logs in the storage chest",
                 "x1": 20,
@@ -1650,7 +1650,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency"
             },
-            {
+            "Briar Patch Runner": {
                 "name": "Briar Patch Runner",
                 "description": "AGI has a +{% larger effect on Catching Efficiency than normal",
                 "x1": 0.5,
@@ -1661,7 +1661,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect"
             },
-            {
+            "Bug Enthusiast": {
                 "name": "Bug Enthusiast",
                 "description": "+{% Catching EXP. You're one step closer to figuring out how butter can fly!",
                 "x1": 1.5,
@@ -1672,7 +1672,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Catching Exp"
             },
-            {
+            "Sunset On The Hives": {
                 "name": "Sunset On The Hives",
                 "description": "+{% Away Gain for Catching Hint:Useful for when you idle on catching!",
                 "x1": 20,
@@ -1683,7 +1683,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Away Gains"
             },
-            {
+            "Previous Points": {
                 "name": "Previous Points",
                 "description": "+{ Talent Points for the 'Archer' talent tab. But,what's wrong with these talents?",
                 "x1": 1,
@@ -1694,11 +1694,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt"
             }
-        ]
+        }
     },
     "Hunter": {
-        "talents": [
-            {
+        "talents": {
+            "360 Noscope": {
                 "name": "360 Noscope",
                 "description": "Deal {% DMG split between all hit monsters. The more mobs hit, the less dmg done",
                 "x1": 225,
@@ -1709,7 +1709,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Bear Trap": {
                 "name": "Bear Trap",
                 "description": "Lay down { bear traps that deal }% dmg when a monster triggers it",
                 "x1": 2,
@@ -1720,7 +1720,7 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Traps & +}% Dmg"
             },
-            {
+            "Uwu Rawrrr": {
                 "name": "Uwu Rawrrr",
                 "description": "When mobs die, their respawn time is { seconds faster!",
                 "x1": 55,
@@ -1731,7 +1731,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Seconds Faster"
             },
-            {
+            "Stop Right There": {
                 "name": "Stop Right There",
                 "description": "Immobilizes monsters within a { pixel radius of you for } seconds.",
                 "x1": 150,
@@ -1742,7 +1742,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{ Pixels & +} Sec"
             },
-            {
+            "Have Another... Again!": {
                 "name": "Have Another... Again!",
                 "description": "Basic Attacks have a {% chance to fire 1 more arrow. Stacks with 'Have Another!'",
                 "x1": 120,
@@ -1753,7 +1753,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Chance"
             },
-            {
+            "Looty Mc Shooty": {
                 "name": "Looty Mc Shooty",
                 "description": "+{% Damage for every 50 items you've ever found on any of your players.",
                 "x1": 36,
@@ -1764,7 +1764,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Shoeful Of Obol": {
                 "name": "Shoeful Of Obol",
                 "description": "Obols give +{% more AGI than what is listed",
                 "x1": 135,
@@ -1775,7 +1775,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% More Agi"
             },
-            {
+            "Straightshot Statues": {
                 "name": "Straightshot Statues",
                 "description": "'Speed', 'Anvil', and 'Bullseye' statues give +{% more bonus",
                 "x1": 100,
@@ -1786,7 +1786,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses"
             },
-            {
+            "Agi Again": {
                 "name": "Agi Again",
                 "description": "+{ Max Talent Level for 'Quickness Boots'",
                 "x1": 1,
@@ -1797,7 +1797,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv"
             },
-            {
+            "Visibility Vessels": {
                 "name": "Visibility Vessels",
                 "description": "Each Lv of 'Archer or Bust' Bubble raises max Lv of 'I See You', up to +{",
                 "x1": 1,
@@ -1808,7 +1808,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv For Icu"
             },
-            {
+            "Eagle Eye": {
                 "name": "Eagle Eye",
                 "description": "Collect & set all traps, but only get {% critters. }% Exp is given to each player.",
                 "x1": 140,
@@ -1819,7 +1819,7 @@
                 "funcY": "decay",
                 "lvlUpText": "+{% Critters & +}% Xp"
             },
-            {
+            "Invasive Species": {
                 "name": "Invasive Species",
                 "description": "+{% Trapping Efficiency per power of 10 Froge Critters in Storage",
                 "x1": 30,
@@ -1830,7 +1830,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Trap Efficiency"
             },
-            {
+            "Shroom Bait": {
                 "name": "Shroom Bait",
                 "description": "+{% Trapping Exp Gain. Doesn't affect EXP given to other players when in Eagle Eye.",
                 "x1": 1,
@@ -1841,7 +1841,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Trapping Exp"
             },
-            {
+            "Reflective Eyesight": {
                 "name": "Reflective Eyesight",
                 "description": "{x Shiny Critter chance. Triggers again every 10 Trapping LVs",
                 "x1": 2,
@@ -1852,7 +1852,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{X Shiny Chance"
             },
-            {
+            "Previous Points": {
                 "name": "Previous Points",
                 "description": "+{ Talent Points for the 'Archer' talent tab. But,what's wrong with these talents?",
                 "x1": 1,
@@ -1863,11 +1863,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt"
             }
-        ]
+        }
     },
     "Siege Breaker": {
-        "talents": [
-            {
+        "talents": {
+            "Ballista": {
                 "name": "Ballista",
                 "description": "Ballista bitch",
                 "x1": 400,
@@ -1878,14 +1878,14 @@
                 "funcY": "txt",
                 "lvlUpText": ""
             }
-        ]
+        }
     },
-    "Mayheim": {"talents": []},
-    "Wind Walker": {"talents": []},
-    "Beast Master": {"talents": []},
+    "Mayheim": {"talents": {}},
+    "Wind Walker": {"talents": {}},
+    "Beast Master": {"talents": {}},
     "Savvy Basics": {
-        "talents": [
-            {
+        "talents": {
+            "Health Booster": {
                 "name": "Health Booster",
                 "description": "Increases Max HP by {",
                 "x1": 1,
@@ -1896,7 +1896,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Hp"
             },
-            {
+            "Mana Booster": {
                 "name": "Mana Booster",
                 "description": "Increases Max MP by {",
                 "x1": 1,
@@ -1907,7 +1907,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Mp"
             },
-            {
+            "Star Player": {
                 "name": "Star Player",
                 "description": "Gives { Star Talent Points. Star Talents are found throughout the game!",
                 "x1": 1,
@@ -1918,7 +1918,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Star Talent Point"
             },
-            {
+            "Bucklered Up": {
                 "name": "Bucklered Up",
                 "description": "Increases Total Defense by +{%",
                 "x1": 40,
@@ -1929,7 +1929,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{% Total Def"
             },
-            {
+            "Sharpened Axe": {
                 "name": "Sharpened Axe",
                 "description": "Increases Base Weapon Power by {. This contributes to your total damage.",
                 "x1": 0.25,
@@ -1940,7 +1940,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{ Base Weapon Power"
             },
-            {
+            "Fist Of Rage": {
                 "name": "Fist Of Rage",
                 "description": "Increases your Base STR by { (STR boosts Max HP and Crit Damage)",
                 "x1": 1,
@@ -1951,7 +1951,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Str"
             },
-            {
+            "Quickness Boots": {
                 "name": "Quickness Boots",
                 "description": "Increases your Base AGI by { (AGI boosts Movement Speed and Crit Chance)",
                 "x1": 1,
@@ -1962,7 +1962,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Agi"
             },
-            {
+            "Book Of The Wise": {
                 "name": "Book Of The Wise",
                 "description": "Increases your Base WIS by { (WIS boosts Mana and Boss Damage)",
                 "x1": 1,
@@ -1973,7 +1973,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Wis"
             },
-            {
+            "Lucky Clover": {
                 "name": "Lucky Clover",
                 "description": "Increases your Base LUK by { (LUK boosts drop rate, EXP Gain, and other RNG)",
                 "x1": 1,
@@ -1984,7 +1984,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk"
             },
-            {
+            "Gilded Sword": {
                 "name": "Gilded Sword",
                 "description": "Boosts Damage dealt to all monsters by {%",
                 "x1": 1,
@@ -1995,7 +1995,7 @@
                 "funcY": "_",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Smart Efficiency": {
                 "name": "Smart Efficiency",
                 "description": "Increases the total efficiency of all specialized skills by {%",
                 "x1": 1,
@@ -2006,7 +2006,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency"
             },
-            {
+            "Overclocked Energy": {
                 "name": "Overclocked Energy",
                 "description": "Damage dealt is increased by {% for every power of 10 Max MP you have",
                 "x1": 150,
@@ -2017,7 +2017,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Farsight": {
                 "name": "Farsight",
                 "description": "Increases Crit Chance by {% and Crit Dmg by }%",
                 "x1": 17,
@@ -2028,7 +2028,7 @@
                 "funcY": "decay",
                 "lvlUpText": "+{% Chance, +}% Dmg"
             },
-            {
+            "Idle Casting": {
                 "name": "Idle Casting",
                 "description": "AFK Gains Rate for Fighting is increased by {%",
                 "x1": 20,
@@ -2039,7 +2039,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate"
             },
-            {
+            "Active Afk'Er": {
                 "name": "Active Afk'Er",
                 "description": "AFK Gains Rate for all Specialized Skills is increased by {%",
                 "x1": 20,
@@ -2050,11 +2050,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate"
             }
-        ]
+        }
     },
     "Mage": {
-        "talents": [
-            {
+        "talents": {
+            "Energy Bolt": {
                 "name": "Energy Bolt",
                 "description": "Your next basic attack strikes the Targeted Enemy for {% Damage",
                 "x1": 160,
@@ -2065,7 +2065,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Mini Fireball": {
                 "name": "Mini Fireball",
                 "description": "Shoots a fireball that explodes on impact, dealing {% damage",
                 "x1": 120,
@@ -2076,7 +2076,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Mana Overdrive": {
                 "name": "Mana Overdrive",
                 "description": "Increase max MP by {%",
                 "x1": 0.5,
@@ -2087,7 +2087,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Mp"
             },
-            {
+            "Teleport": {
                 "name": "Teleport",
                 "description": "Move forward instantly by a distance of { Pixels",
                 "x1": 25,
@@ -2098,7 +2098,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Pixel Moved"
             },
-            {
+            "You'Re Next": {
                 "name": "You'Re Next",
                 "description": "Basic attacks have a {% chance to Mark enemies, who then take }% more damage",
                 "x1": 110,
@@ -2109,7 +2109,7 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+{% Chance & +}% Dmg"
             },
-            {
+            "Knowledge Is Power": {
                 "name": "Knowledge Is Power",
                 "description": "The effect your WIS stat has on Damage is increased by {%",
                 "x1": 1.5,
@@ -2120,7 +2120,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect"
             },
-            {
+            "Unt'Wis'Ted Robes": {
                 "name": "Unt'Wis'Ted Robes",
                 "description": "All Equipment gives {% more WIS than what's listed",
                 "x1": 1.5,
@@ -2131,7 +2131,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% More Wis From Equips"
             },
-            {
+            "Power Overwhelming": {
                 "name": "Power Overwhelming",
                 "description": "The effect Weapon Power has on Damage Dealt is increased by {%",
                 "x1": 1.2,
@@ -2142,7 +2142,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Weapon Power Effect"
             },
-            {
+            "Free Meal": {
                 "name": "Free Meal",
                 "description": "{% Chance for food to not be consumed when it otherwise would be",
                 "x1": 53,
@@ -2153,7 +2153,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Non-Consume Chance"
             },
-            {
+            "Individual Insight": {
                 "name": "Individual Insight",
                 "description": "+{ base WIS",
                 "x1": 1,
@@ -2164,7 +2164,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Wis"
             },
-            {
+            "Log On Logs": {
                 "name": "Log On Logs",
                 "description": "For { Minutes, trees drop }% more Logs than normal",
                 "x1": 2,
@@ -2175,7 +2175,7 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Mins & +}% More Logs"
             },
-            {
+            "Leaf Thief": {
                 "name": "Leaf Thief",
                 "description": "{% Choppin Efficiency per power of 10 Grass Leaves in your Storage Chest.",
                 "x1": 25,
@@ -2186,7 +2186,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency"
             },
-            {
+            "Deforesting All Doubt": {
                 "name": "Deforesting All Doubt",
                 "description": "The effect your WIS stat has on Choppin Efficiency is increased by {%",
                 "x1": 0.75,
@@ -2197,7 +2197,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect"
             },
-            {
+            "Inner Peace": {
                 "name": "Inner Peace",
                 "description": "Increases Exp Gain for all Specialized Skills by {%",
                 "x1": 1,
@@ -2208,7 +2208,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Exp Gain"
             },
-            {
+            "Choppin It Up Ez": {
                 "name": "Choppin It Up Ez",
                 "description": "+{% Minigame Rewards, and +}% Dmg per 25 Pts of your Minigame Highscore",
                 "x1": 1,
@@ -2219,11 +2219,11 @@
                 "funcY": "decay",
                 "lvlUpText": "+{% Rewards & +}% Dmg"
             }
-        ]
+        }
     },
     "Wizard": {
-        "talents": [
-            {
+        "talents": {
+            "Ice Shards": {
                 "name": "Ice Shards",
                 "description": "Your next basic attack deals {% dmg 3 times, and freezes all nearby mobs",
                 "x1": 70,
@@ -2234,7 +2234,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Floor Is Lava": {
                 "name": "Floor Is Lava",
                 "description": "Summon {x2 volcanos which erupt around you, dealing }% dmg",
                 "x1": 1,
@@ -2245,7 +2245,7 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Volcano & +}% Dmg"
             },
-            {
+            "Tornado": {
                 "name": "Tornado",
                 "description": "Summon a tornado, which deals {% dmg and disappears after } seconds",
                 "x1": 20,
@@ -2256,7 +2256,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} Sec"
             },
-            {
+            "Speedy Book": {
                 "name": "Speedy Book",
                 "description": "Getting 4@kills in 4@sec activates 'Speedy Book' boosting attack rate by {% for } sec",
                 "x1": 10,
@@ -2267,7 +2267,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Rate & } Sec"
             },
-            {
+            "Mana Is Life": {
                 "name": "Mana Is Life",
                 "description": "{% of taken dmg is dealt to MP. Also passively boosts MP regen by +}%",
                 "x1": 25,
@@ -2278,7 +2278,7 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+{% Dmg & }% Mp Regen"
             },
-            {
+            "Paperwork, Great...": {
                 "name": "Paperwork, Great...",
                 "description": "+{% Damage for every 10 Stamps in your collection. Oink Oink!",
                 "x1": 70,
@@ -2289,7 +2289,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Occult Obols": {
                 "name": "Occult Obols",
                 "description": "Obols give +{% more WIS than what is listed",
                 "x1": 135,
@@ -2300,7 +2300,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% More Wis"
             },
-            {
+            "Staring Statues": {
                 "name": "Staring Statues",
                 "description": "'Exp', 'Lumberbob', and 'Beholder' statues give +{% more bonus",
                 "x1": 100,
@@ -2311,7 +2311,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses"
             },
-            {
+            "Wis Wumbo": {
                 "name": "Wis Wumbo",
                 "description": "+{ Max Talent Level for 'Book of the Wise'",
                 "x1": 1,
@@ -2322,7 +2322,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv"
             },
-            {
+            "Fuscia Flasks": {
                 "name": "Fuscia Flasks",
                 "description": "Each Lv of 'Mage is Best' Bubble raises max Lv of 'Overclocked Energy', up to +{",
                 "x1": 1,
@@ -2333,7 +2333,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv Cap"
             },
-            {
+            "Charge Syphon": {
                 "name": "Charge Syphon",
                 "description": "Steal charge from all your players, giving you {% of it. +}% Max Charge for 1 Min",
                 "x1": 35,
@@ -2344,7 +2344,7 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+{% Steal, +}% Temp Max"
             },
-            {
+            "Sooouls": {
                 "name": "Sooouls",
                 "description": "+{% Worship Efficiency per power of 10 Forest Souls in your Storage Chest",
                 "x1": 25,
@@ -2355,7 +2355,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Worship Eff."
             },
-            {
+            "Bless Up": {
                 "name": "Bless Up",
                 "description": "+{% Worship EXP gain. Access the other totems faster!",
                 "x1": 1,
@@ -2366,7 +2366,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Worship Exp"
             },
-            {
+            "Nearby Outlet": {
                 "name": "Nearby Outlet",
                 "description": "{x Charge rate. You know, for Worship... No, not for your phone.",
                 "x1": 1,
@@ -2377,7 +2377,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{X Charge Rate"
             },
-            {
+            "Earlier Education": {
                 "name": "Earlier Education",
                 "description": "+{ Talent Points for the 'Mage' talent tab. What, these talent's aint good 'nuff for ya?",
                 "x1": 1,
@@ -2388,11 +2388,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt"
             }
-        ]
+        }
     },
     "Shaman": {
-        "talents": [
-            {
+        "talents": {
+            "Crazy Concoctions": {
                 "name": "Crazy Concoctions",
                 "description": "Throws 1 of 4 potions, with a potency of {%",
                 "x1": 17,
@@ -2403,7 +2403,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Potency"
             },
-            {
+            "Auspicious Aura": {
                 "name": "Auspicious Aura",
                 "description": "Casts } aura which heals you and damages monsters. The strength of the aura is {%",
                 "x1": 10,
@@ -2414,7 +2414,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Strength & +} Auras"
             },
-            {
+            "Sizzling Skull": {
                 "name": "Sizzling Skull",
                 "description": "Fire a skull which bounces around dealing {% dmg to up to } monsters",
                 "x1": 125,
@@ -2425,7 +2425,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} More Mobs"
             },
-            {
+            "Tenteyecle": {
                 "name": "Tenteyecle",
                 "description": "Killing a monster has a {% chance to reduce attack cooldowns by } seconds",
                 "x1": 100,
@@ -2436,7 +2436,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Chance"
             },
-            {
+            "Instant Invincibility": {
                 "name": "Instant Invincibility",
                 "description": "When damaged, you will stay invincible for an additional +{ more seconds",
                 "x1": 5,
@@ -2447,7 +2447,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ More Seconds"
             },
-            {
+            "Virile Vials": {
                 "name": "Virile Vials",
                 "description": "+{% damage dealt for every alchemy vial upgraded to at least Green LV",
                 "x1": 12,
@@ -2458,7 +2458,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage"
             },
-            {
+            "Occult Obols": {
                 "name": "Occult Obols",
                 "description": "Obols give +{% more WIS than what is listed",
                 "x1": 135,
@@ -2469,7 +2469,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% More Wis"
             },
-            {
+            "Stupendous Statues": {
                 "name": "Stupendous Statues",
                 "description": "'Exp', 'Lumberbob', and 'Cauldron' statues give +{% more bonus",
                 "x1": 100,
@@ -2480,7 +2480,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses"
             },
-            {
+            "Wis Wumbo": {
                 "name": "Wis Wumbo",
                 "description": "+{ Max Talent Level for 'Book of the Wise'",
                 "x1": 1,
@@ -2491,7 +2491,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv"
             },
-            {
+            "Fantasia Flasks": {
                 "name": "Fantasia Flasks",
                 "description": "Each Lv of 'Mage is Best' Bubble raises max Lv of 'Farsight', up to +{",
                 "x1": 1,
@@ -2502,7 +2502,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv Cap"
             },
-            {
+            "Cranium Cooking": {
                 "name": "Cranium Cooking",
                 "description": "Killing a monster gives { seconds of instant alchemy progress. Lasts for } seconds",
                 "x1": 40,
@@ -2513,7 +2513,7 @@
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{ Progress & +} Time"
             },
-            {
+            "Busy Brewin'": {
                 "name": "Busy Brewin'",
                 "description": "Boosts brew speed by +{% for this character.",
                 "x1": 1,
@@ -2524,7 +2524,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Brew Effect"
             },
-            {
+            "Bubble Breakthrough": {
                 "name": "Bubble Breakthrough",
                 "description": "+{% Alchemy EXP. Also, +}% odds of New Bubble when brewing on this player",
                 "x1": 1,
@@ -2535,7 +2535,7 @@
                 "funcY": "add",
                 "lvlUpText": "+{% Exp & +}% Chance"
             },
-            {
+            "Sharing Some Smarts": {
                 "name": "Sharing Some Smarts",
                 "description": "All characters in the same cauldron as this one gain +{% more Alch EXP.",
                 "x1": 1,
@@ -2546,7 +2546,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Alch Exp"
             },
-            {
+            "Earlier Education": {
                 "name": "Earlier Education",
                 "description": "+{ Talent Points for the 'Mage' talent tab. What, these talent's aint good 'nuff for ya?",
                 "x1": 1,
@@ -2557,15 +2557,15 @@
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt"
             }
-        ]
+        }
     },
-    "Elemental Sorcerer": {"talents": []},
-    "Spiritual Monk": {"talents": []},
-    "Bubonic Conjuror": {"talents": []},
-    "Arcane Cultist": {"talents": []},
+    "Elemental Sorcerer": {"talents": {}},
+    "Spiritual Monk": {"talents": {}},
+    "Bubonic Conjuror": {"talents": {}},
+    "Arcane Cultist": {"talents": {}},
     "Special Talent 1": {
-        "talents": [
-            {
+        "talents": {
+            "Bored To Death": {
                 "name": "Bored To Death",
                 "description": "Reduces the Respawn Timer to { sec. This will boost AFK Survival Percent!",
                 "x1": 600,
@@ -2576,7 +2576,7 @@
                 "funcY": "txt",
                 "lvlUpText": "{ Sec Respawn"
             },
-            {
+            "Beginner Best Class": {
                 "name": "Beginner Best Class",
                 "description": "+1 Base Weapon Power every 10 Lvs of your best Beginner. Caps at +{.",
                 "x1": 1,
@@ -2587,7 +2587,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Weapon Pow Cap"
             },
-            {
+            "Studious Quester": {
                 "name": "Studious Quester",
                 "description": "Quests give +{% more exp than normal",
                 "x1": 120,
@@ -2598,7 +2598,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Quest Exp"
             },
-            {
+            "Quest Chungus": {
                 "name": "Quest Chungus",
                 "description": "Each Completed Quest gives +1 LUK. Total bonus caps at +{ LUK",
                 "x1": 4,
@@ -2609,7 +2609,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk Cap"
             },
-            {
+            "Crystals 4 Dayys": {
                 "name": "Crystals 4 Dayys",
                 "description": "Crystal Monsters have a +{% chance to spawn",
                 "x1": 174,
@@ -2620,7 +2620,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Spawn Rate"
             },
-            {
+            "Will Of The Eldest": {
                 "name": "Will Of The Eldest",
                 "description": "+1 All Stats for every 10 Levels of your highest leveled character. Caps at +{.",
                 "x1": 1,
@@ -2631,7 +2631,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{ All Stat Cap"
             },
-            {
+            "Tick Tock": {
                 "name": "Tick Tock",
                 "description": "+{% Away Gains Rate for both Fighting and Skills",
                 "x1": 8,
@@ -2642,7 +2642,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Away Gain Rate"
             },
-            {
+            "Stonks!": {
                 "name": "Stonks!",
                 "description": "Gives { Special Talent Points.",
                 "x1": 130,
@@ -2653,7 +2653,7 @@
                 "funcY": "txt",
                 "lvlUpText": "Even Stonkier!"
             },
-            {
+            "Roll Da Dice": {
                 "name": "Roll Da Dice",
                 "description": "Rolls a { sided dice. If it lands on a 1, you win a special Trophy!",
                 "x1": 10000,
@@ -2664,7 +2664,7 @@
                 "funcY": "txt",
                 "lvlUpText": "Dice Only Has { Sides"
             },
-            {
+            "Attacks On Simmer": {
                 "name": "Attacks On Simmer",
                 "description": "Attack moves boost your AFK gains +{% more than they normally do",
                 "x1": 40,
@@ -2675,7 +2675,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Attack Afk Effect"
             },
-            {
+            "Toilet Paper Postage": {
                 "name": "Toilet Paper Postage",
                 "description": "Stamps giving Skill Efficiency will give {x higher bonuses.",
                 "x1": 0.7,
@@ -2686,7 +2686,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{X Higher Bonus"
             },
-            {
+            "Exp Converter": {
                 "name": "Exp Converter",
                 "description": "{% of EXP earned in chosen Skill is turned to Class EXP. Assign to Attack to choose.",
                 "x1": 150,
@@ -2697,7 +2697,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Exp Converted"
             },
-            {
+            "Goblet Of Hemoglobin": {
                 "name": "Goblet Of Hemoglobin",
                 "description": "Killing a monster heals you by {%. This also counts for AFK, helping Survivability!",
                 "x1": 6,
@@ -2708,11 +2708,11 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Hp Regen Per Kill"
             }
-        ]
+        }
     },
     "Special Talent 2": {
-        "talents": [
-            {
+        "talents": {
+            "Just Exp": {
                 "name": "Just Exp",
                 "description": "+{% Class EXP",
                 "x1": 10,
@@ -2723,7 +2723,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Class Exp"
             },
-            {
+            "Frothy Malk": {
                 "name": "Frothy Malk",
                 "description": "Boost foods, like potions, give +{% higher bonuses than normal.",
                 "x1": 50,
@@ -2734,7 +2734,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Boost Food Effect"
             },
-            {
+            "Convert Better, Darnit!": {
                 "name": "Convert Better, Darnit!",
                 "description": "EXP Converter Talent gives {x more Class EXP every 5 LV of chosen skill",
                 "x1": 1.7,
@@ -2745,7 +2745,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{X More Class Exp"
             },
-            {
+            "Pulsation": {
                 "name": "Pulsation",
                 "description": "The rate at which you gain mana used to cast Attacks is boosted by +{%",
                 "x1": 75,
@@ -2756,7 +2756,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Mana Regen Rate"
             },
-            {
+            "Cardiovascular!": {
                 "name": "Cardiovascular!",
                 "description": "+{% additional card drop chance. It's multiplicative, so it always helps!",
                 "x1": 60,
@@ -2767,7 +2767,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Card Drop Chance"
             },
-            {
+            "Milkyway Candies": {
                 "name": "Milkyway Candies",
                 "description": "{% chance to get a Time Candy if AFK 30+ hrs. Longer AFK boosts candy quality",
                 "x1": 200,
@@ -2778,7 +2778,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Candy Drop"
             },
-            {
+            "Telekinetic Storage": {
                 "name": "Telekinetic Storage",
                 "description": "Deposits your items to storage, and destroys items on ground. PASSIVE: +{% Carry Cap",
                 "x1": 30,
@@ -2789,7 +2789,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Carry Cap"
             },
-            {
+            "Printer Sampling": {
                 "name": "Printer Sampling",
                 "description": "Cast to sample {% of your current AFK gains rate, which is used by the 3d Printer.",
                 "x1": 10,
@@ -2800,7 +2800,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Sampled"
             },
-            {
+            "Supersource": {
                 "name": "Supersource",
                 "description": "+{ Base Efficiency for all Skills. Mining, Choppin, Fishing, everything!",
                 "x1": 250,
@@ -2811,7 +2811,7 @@
                 "funcY": "txt",
                 "lvlUpText": ""
             },
-            {
+            "Action Frenzy": {
                 "name": "Action Frenzy",
                 "description": "+{% Speed for all Skills. Zoom zoom! Isn't that what you zoomers are all about?",
                 "x1": 60,
@@ -2822,7 +2822,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Skilling Speed"
             },
-            {
+            "Dungeonic Damage": {
                 "name": "Dungeonic Damage",
                 "description": "+{% damage for every power of 10 Dungeon Credits you've earned",
                 "x1": 15,
@@ -2833,7 +2833,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Dmg Per Pow 10 Creds"
             },
-            {
+            "Shrine Architect": {
                 "name": "Shrine Architect",
                 "description": "Cast this talent to place shrines. You also charge them +{% faster",
                 "x1": 50,
@@ -2844,7 +2844,7 @@
                 "funcY": "txt",
                 "lvlUpText": "+{% Charge Rate"
             },
-            {
+            "Mega Crit": {
                 "name": "Mega Crit",
                 "description": "+{% Crit chance. If over 100% crit chance, can Mega Crit for +}% more dmg.",
                 "x1": 20,
@@ -2855,9 +2855,9 @@
                 "funcY": "bigBase",
                 "lvlUpText": "+{% Chance &+}% Mega Dmg"
             }
-        ]
+        }
     },
-    "Special Talent 3": {"talents": []},
-    "Special Talent 4": {"talents": []},
-    "Special Talent 5": {"talents": []}
+    "Special Talent 3": {"talents": {}},
+    "Special Talent 4": {"talents": {}},
+    "Special Talent 5": {"talents": {}}
 }

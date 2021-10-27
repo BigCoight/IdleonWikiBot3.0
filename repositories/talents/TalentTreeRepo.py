@@ -1,9 +1,9 @@
 import re
+from typing import List
 
 from definitions.TalentTree import TalentTree, Talent
-from helpers.HelperFunctions import strToArray, formatStr, replaceUnderscores
+from helpers.HelperFunctions import strToArray, formatStr, replaceUnderscores, camelCaseToTitle
 from repositories.master.Repository import Repository
-from typing import List
 
 
 class TalentTreeRepo(Repository[TalentTree]):
@@ -50,8 +50,9 @@ class TalentTreeRepo(Repository[TalentTree]):
 					talentName, talentDesc = talentNames[skillI], talentDescriptions[skillI]
 					if talentName == "_" or talentDesc[0] == "_":
 						continue
-					talents.talents.append(Talent(
-						name = replaceUnderscores(talentName).title(),
+					fTalentName = replaceUnderscores(talentName).title()
+					talents.talents[fTalentName] = (Talent(
+						name = fTalentName,
 						description = replaceUnderscores(talentDesc[0]),
 						x1 = talentDesc[1],
 						x2 = talentDesc[2],
@@ -65,3 +66,71 @@ class TalentTreeRepo(Repository[TalentTree]):
 
 		doTalents(classNames[:41], 0, 15)
 		doTalents(specialTalents, 615, 13)
+
+	@classmethod
+	def _writeChangelogChange(cls, item, change) -> str:
+		def head(v: str) -> str:
+			return "{{patchnote/head|changed=" + v + "}}\n"
+
+		def bold(v: str) -> str:
+			return "{{patchnote/bold|" + v + "}}\n"
+
+		def patchnote(v: str, o, n) -> str:
+			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
+
+		res = head(cls.getWikiName(item))
+		for v, d in change.items():
+			if isinstance(d, tuple):
+				o, n = d
+				res += patchnote(v, o, n)
+			elif isinstance(d, list):
+				res += bold(camelCaseToTitle(v))
+				for i, subC in enumerate(d):
+					o, n = subC
+					res += patchnote(str(i), o, n)
+			elif isinstance(d, dict):
+				for quest, subC in d.items():
+					res += bold(camelCaseToTitle(quest))
+					for atr, val in subC.items():
+						o, n = val
+						res += patchnote(atr, o, n)
+
+		res += '|}\n'
+		return res
+
+	@classmethod
+	def _writeChangelogNew(cls, item, change) -> str:
+		def head(v: str) -> str:
+			return "{{patchnote/head|changed=" + v + "}}\n"
+
+		def bold(v: str) -> str:
+			return "{{patchnote/bold|" + v + "}}\n"
+
+		def italic(v: str) -> str:
+			return "{{patchnote/italic|" + v + "}}\n"
+
+		def patchnote(v: str, o, n) -> str:
+			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
+
+		res = head(cls.getWikiName(item))
+		for v, d in change.items():
+			if isinstance(d, list):
+				res += bold(camelCaseToTitle(v))
+				for i, subC in enumerate(d):
+					res += patchnote(str(i), " ", subC)
+			elif isinstance(d, dict):
+				for quest, subC in d.items():
+					res += bold(camelCaseToTitle(quest))
+					for atr, val in subC.items():
+						if isinstance(val, list):
+							res += italic(camelCaseToTitle(atr))
+							for n, subV in enumerate(val):
+								res += patchnote(str(n), " ", subV)
+							continue
+						res += patchnote(atr, " ", val)
+			else:
+				if not d:
+					continue
+				res += patchnote(v, " ", d)
+		res += '|}\n'
+		return res

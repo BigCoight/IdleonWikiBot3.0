@@ -99,4 +99,4 @@ EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
-NpcRepo.compareVersions("123b", "130", ignored = {"dialogue", "head", "QuestName", "CustomType"})
+VendorRepo.compareVersions("123b", "130")

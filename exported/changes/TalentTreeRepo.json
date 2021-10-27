@@ -1,128 +1,70 @@
 {
     "new": {},
     "changes": {
-        "Barbarian": {
-            "talents": [
-                {
-                    "description": [
-                        "{% chance to wake the sleeper agent worm within the fish, letting you instantly catch",
-                        "{% chance"
-                    ],
-                    "x1": [9.3, -1],
-                    "x2": [0.7, -1],
-                    "funcX": ["bigBase", "9.3"],
-                    "y1": [0, 0.7],
-                    "y2": [0, -1],
-                    "funcY": ["txt", "_"],
-                    "lvlUpText": ["+1% Chance", ""]
-                }
-            ]
-        },
         "Special Talent 2": {
-            "talents": [
-                {
-                    "name": ["Telekinetic Storage", "Milkyway Candies"],
-                    "description": [
-                        "Deposits your items to storage, and destroys items on ground. PASSIVE: +{% Carry Cap",
-                        "{% chance to get a Time Candy if AFK 30+ hrs. Longer AFK boosts candy quality"
-                    ],
-                    "x1": [30, 200],
-                    "x2": [60, 100],
-                    "lvlUpText": ["+{% Carry Cap", "+{% Candy Drop"]
-                },
-                {
-                    "name": ["Printer Sampling", "Telekinetic Storage"],
+            "talents": {
+                "Printer Sampling": {
                     "description": [
                         "Cast to sample {% of your current AFK gains, which is used by the 3d Printer.",
-                        "Deposits your items to storage, and destroys items on ground. PASSIVE: +{% Carry Cap"
-                    ],
-                    "x1": [10, 30],
-                    "x2": [0.075, 60],
-                    "funcX": ["bigBase", "decay"],
-                    "lvlUpText": ["+{% Afk Gains Sampled", "+{% Carry Cap"]
-                },
-                {
-                    "name": ["Shrine Architect", "Printer Sampling"],
-                    "description": [
-                        "Cast this talent to place shrines. You also charge them +{% faster",
                         "Cast to sample {% of your current AFK gains rate, which is used by the 3d Printer."
-                    ],
-                    "x1": [50, 10],
-                    "x2": [50, 0.075],
-                    "funcX": ["decay", "bigBase"],
-                    "lvlUpText": ["+{% Charge Rate", "+{% Afk Gains Sampled"]
+                    ]
                 },
-                [
-                    " ",
-                    {
-                        "name": "Supersource",
-                        "description": "+{ Base Efficiency for all Skills. Mining, Choppin, Fishing, everything!",
-                        "x1": 250,
-                        "x2": 100,
-                        "funcX": "decay",
-                        "y1": 0,
-                        "y2": 0,
-                        "funcY": "txt",
-                        "lvlUpText": ""
-                    }
-                ],
-                [
-                    " ",
-                    {
-                        "name": "Action Frenzy",
-                        "description": "+{% Speed for all Skills. Zoom zoom! Isn't that what you zoomers are all about?",
-                        "x1": 60,
-                        "x2": 100,
-                        "funcX": "decay",
-                        "y1": 0,
-                        "y2": 0,
-                        "funcY": "txt",
-                        "lvlUpText": "+{% Skilling Speed"
-                    }
-                ],
-                [
-                    " ",
-                    {
-                        "name": "Dungeonic Damage",
-                        "description": "+{% damage for every power of 10 Dungeon Credits you've earned",
-                        "x1": 15,
-                        "x2": 100,
-                        "funcX": "decay",
-                        "y1": 0,
-                        "y2": 0,
-                        "funcY": "txt",
-                        "lvlUpText": "+{% Dmg Per Pow 10 Creds"
-                    }
-                ],
-                [
-                    " ",
-                    {
-                        "name": "Shrine Architect",
-                        "description": "Cast this talent to place shrines. You also charge them +{% faster",
-                        "x1": 50,
-                        "x2": 50,
-                        "funcX": "decay",
-                        "y1": 0,
-                        "y2": 0,
-                        "funcY": "txt",
-                        "lvlUpText": "+{% Charge Rate"
-                    }
-                ],
-                [
-                    " ",
-                    {
-                        "name": "Mega Crit",
-                        "description": "+{% Crit chance. If over 100% crit chance, can Mega Crit for +}% more dmg.",
-                        "x1": 20,
-                        "x2": 100,
-                        "funcX": "decay",
-                        "y1": 200,
-                        "y2": 2,
-                        "funcY": "bigBase",
-                        "lvlUpText": "+{% Chance &+}% Mega Dmg"
-                    }
-                ]
-            ]
+                "Milkyway Candies": {
+                    "name": [" ", "Milkyway Candies"],
+                    "description": [" ", "{% chance to get a Time Candy if AFK 30+ hrs. Longer AFK boosts candy quality"],
+                    "x1": [" ", 200],
+                    "x2": [" ", 100],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", "+{% Candy Drop"]
+                },
+                "Mega Crit": {
+                    "name": [" ", "Mega Crit"],
+                    "description": [" ", "+{% Crit chance. If over 100% crit chance, can Mega Crit for +}% more dmg."],
+                    "x1": [" ", 20],
+                    "x2": [" ", 100],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 200],
+                    "y2": [" ", 2],
+                    "funcY": [" ", "bigBase"],
+                    "lvlUpText": [" ", "+{% Chance &+}% Mega Dmg"]
+                },
+                "Action Frenzy": {
+                    "name": [" ", "Action Frenzy"],
+                    "description": [" ", "+{% Speed for all Skills. Zoom zoom! Isn't that what you zoomers are all about?"],
+                    "x1": [" ", 60],
+                    "x2": [" ", 100],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", "+{% Skilling Speed"]
+                },
+                "Dungeonic Damage": {
+                    "name": [" ", "Dungeonic Damage"],
+                    "description": [" ", "+{% damage for every power of 10 Dungeon Credits you've earned"],
+                    "x1": [" ", 15],
+                    "x2": [" ", 100],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", "+{% Dmg Per Pow 10 Creds"]
+                },
+                "Supersource": {
+                    "name": [" ", "Supersource"],
+                    "description": [" ", "+{ Base Efficiency for all Skills. Mining, Choppin, Fishing, everything!"],
+                    "x1": [" ", 250],
+                    "x2": [" ", 100],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", ""]
+                }
+            }
         }
     }
 }

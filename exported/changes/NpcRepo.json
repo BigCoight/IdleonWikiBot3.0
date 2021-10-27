@@ -4,7 +4,7 @@
             "quests": {
                 "Plunderin Down Yonder": {
                     "Type": "Custom",
-                    "DialogueText": "Ya see that there crypt down yonder? Got mad loot in there but I don't have a walking animation so I'm stuck here... go get me somma that good stuff yea? @ QUEST:Play through Snakenhotep's dungeon!",
+                    "DialogueText": "Ya see that there crypt down yonder? Got mad loot in there but I don't have a walking animation so I'm stuck here... go get me somma that good stuff yea? <br> QUEST:Play through Snakenhotep's dungeon!",
                     "NextIndex": 4,
                     "ConsumeItems": false,
                     "InventorySpacesNeeded": 2,
@@ -32,7 +32,7 @@
             "quests": {
                 "Creating a Party!": {
                     "Type": "Custom",
-                    "DialogueText": "First create a party! Open your inventory and press the red button up top! Then to invite someone else double click on them and press the red party button in the popup! Badabing it's party time! @ QUEST:Do as the toad says.",
+                    "DialogueText": "First create a party! Open your inventory and press the red button up top! Then to invite someone else double click on them and press the red party button in the popup! Badabing it's party time! <br> QUEST:Do as the toad says.",
                     "NextIndex": 6,
                     "ConsumeItems": false,
                     "InventorySpacesNeeded": 1,
@@ -47,7 +47,7 @@
                 },
                 "Bigger Party Better Party!": {
                     "Type": "Custom",
-                    "DialogueText": "Why don't you invite a few more people to your party? Or join someone elses party! @ QUEST:Be in a party of 3. You can request to join someone elses party by doing what you do to invite while not being in a party yourself!",
+                    "DialogueText": "Why don't you invite a few more people to your party? Or join someone elses party! <br> QUEST:Be in a party of 3. You can request to join someone elses party by doing what you do to invite while not being in a party yourself!",
                     "NextIndex": 9,
                     "ConsumeItems": false,
                     "InventorySpacesNeeded": 2,
@@ -59,7 +59,7 @@
                 },
                 "Bother the Frogger!": {
                     "Type": "Custom",
-                    "DialogueText": "Ignore the trespassing signs the frog that lives there is just cranky... but a nice soup meal will cheer him up! @ QUEST:Go 'serve' Grandfrogger some Soup...",
+                    "DialogueText": "Ignore the trespassing signs the frog that lives there is just cranky... but a nice soup meal will cheer him up! <br> QUEST:Go 'serve' Grandfrogger some Soup...",
                     "NextIndex": 12,
                     "ConsumeItems": false,
                     "InventorySpacesNeeded": 2,
@@ -73,23 +73,23 @@
         }
     },
     "changes": {
-        "Hoggindaz": {
-            "quests": {
-                "Monke Tower Time!": {
-                    "DialogueText": [
-                        "Go to the totem in the Goblin Forest. You probably know it as 'that thing that I don't know what it does'. @ QUEST:Start a round of Tower Defence by going to the Goblin Map in World 1. Also equip that wax skull!",
-                        "Go to the totem in the Glublin Forest. You probably know it as 'that totem thing that I don't know what it is'. @ QUEST:Start a round of Tower Defence by going to the Goblin Map in World 1. Also equip that wax skull!"
-                    ]
-                }
-            }
-        },
         "Lord of the Hunt": {"quests": {"To Trap or not to Trap": {"ConsumeItems": [true, false]}}},
         "Snake Jar": {
             "quests": {
                 "A Noob, served Medium Rare!": {
                     "DialogueText": [
-                        "Go get me ssssomeone else to eat and make ssssure they're a total noob ssso I can ssswallow them whole! @ QUEST:Lure another player to Snakejar's platform and have them say 'Im a total noob'.",
-                        "Go get me ssssomeone else to eat and make ssssure they're a total noob ssso I can ssswallow them whole! @ QUEST:Lure another player to Snakejar's platform and have them say 'Hi'."
+                        "Go get me ssssomeone else to eat and make ssssure they're a total noob ssso I can ssswallow them whole! <br> QUEST:Lure another player to Snakejar's platform and have them say 'Im a total noob'.",
+                        "Go get me ssssomeone else to eat and make ssssure they're a total noob ssso I can ssswallow them whole! <br> QUEST:Lure another player to Snakejar's platform and have them say 'Hi'."
+                    ]
+                }
+            }
+        },
+        "Hoggindaz": {
+            "quests": {
+                "Monke Tower Time!": {
+                    "DialogueText": [
+                        "Go to the totem in the Goblin Forest. You probably know it as 'that thing that I don't know what it does'. <br> QUEST:Start a round of Tower Defence by going to the Goblin Map in World 1. Also equip that wax skull!",
+                        "Go to the totem in the Glublin Forest. You probably know it as 'that totem thing that I don't know what it is'. <br> QUEST:Start a round of Tower Defence by going to the Goblin Map in World 1. Also equip that wax skull!"
                     ]
                 }
             }

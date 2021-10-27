@@ -1,5 +1,5 @@
 import re
-from typing import List, Dict
+from typing import List, Dict, Set
 
 from definitions.common.Component import Component
 from definitions.common.CustomReq import CustomReq
@@ -41,7 +41,7 @@ class NpcRepo(Repository[Npc]):
 					if data := re.split(reQData, quests[j + 1]):
 						for k in range(1, len(data), 2):
 							atr = formatStr(data[k])
-							val = formatStr(data[k + 1], ['"', ",})", " })", ";"])
+							val = formatStr(data[k + 1], ['"', ",})", " })", ";"]).replace("@", "<br>")
 							val = strToArray(val) if "[" in val else formatStr(val, [","], replaceUnderscores = True)
 							temp[atr] = val
 					if qName := QuestNameRepo.get(f"{npcName}{j // 2}"):
@@ -168,3 +168,7 @@ class NpcRepo(Repository[Npc]):
 				res += patchnote(v, " ", d)
 		res += '|}\n'
 		return res
+
+	@classmethod
+	def compareVersions(cls, v1: str, v2: str, ignored: Set[str] = set()):
+		return super().compareVersions(v1, v2, ignored = {"dialogue", "head", "QuestName", "CustomType"})

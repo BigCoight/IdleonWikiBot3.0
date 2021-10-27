@@ -1,4 +1,4 @@
-from typing import List
+from typing import Dict
 
 from pydantic import validator
 
@@ -42,7 +42,7 @@ class Talent(IdleonModel):
 
 
 class TalentTree(IdleonModel):
-	talents: List[Talent]
+	talents: Dict[str, Talent]
 
 	def writeWiki(self, newLine = True) -> str:
-		return "\n".join(map(lambda x: x.writeWiki(), self.talents))
+		return "\n".join(map(lambda x: x.writeWiki(), self.talents.values()))

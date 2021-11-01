@@ -81,11 +81,21 @@ class Repository(Generic[T], ABC):
 		return True
 
 	@classmethod
-	def compareVersions(cls, v1: str, v2: str, ignored: Set[str] = set()):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
+		"""
+
+		Args:
+			v1: The version that is "Old"
+			v2: The version that is "New"
+			ignored: A set of attributes to ignore in the comparison
+
+		Returns:
+
+		"""
 		changes = {}
 		new = {}
-		cr1 = IdleonReader(v1).codeReader
-		cr2 = IdleonReader(v2).codeReader
+		cr1 = v1.codeReader
+		cr2 = v2.codeReader
 
 		cls.initialise(cr1)
 		repo1 = deepcopy(cls.repository)
@@ -117,10 +127,10 @@ class Repository(Generic[T], ABC):
 		with open(changeName, mode = "w") as outfile:
 			outfile.write(CompactJSONEncoder(indent = 4).encode(out))
 
-		cls.writeChangesWiki(out)
+		cls._writeChangesWiki(out)
 
 	@classmethod
-	def writeChangesWiki(cls, differences):
+	def _writeChangesWiki(cls, differences):
 		res = ""
 		new = differences["new"]
 		changes = differences["changes"]
@@ -218,6 +228,11 @@ class Repository(Generic[T], ABC):
 
 	@classmethod
 	def exportWikiSingle(cls) -> None:
+		"""
+
+		Exports the entire repo into one file
+
+		"""
 		cls._createWikiTextDir()
 		res = cls._extractWikiSingle()
 
@@ -233,6 +248,11 @@ class Repository(Generic[T], ABC):
 
 	@classmethod
 	def exportWikiMult(cls) -> None:
+		"""
+
+		Exports the entire repo into multiple files
+
+		"""
 		cls._createWikiTextDir()
 		for name, data in cls.items():
 			with open(f"{cls._wikitextLocation()}/{cls.getWikiName(name)}.txt", mode = 'w') as outfile:

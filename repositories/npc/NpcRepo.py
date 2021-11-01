@@ -7,6 +7,7 @@ from definitions.questdef.CustomQuest import CustomQuest
 from definitions.questdef.DialogueLine import DialogueLine
 from definitions.questdef.ItemQuest import ItemQuest
 from definitions.questdef.Npc import Npc
+from helpers.CodeReader import IdleonReader
 from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, camelCaseToTitle
 from repositories.master.Repository import Repository
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
@@ -170,5 +171,5 @@ class NpcRepo(Repository[Npc]):
 		return res
 
 	@classmethod
-	def compareVersions(cls, v1: str, v2: str, ignored: Set[str] = set()):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
 		return super().compareVersions(v1, v2, ignored = {"dialogue", "head", "QuestName", "CustomType"})

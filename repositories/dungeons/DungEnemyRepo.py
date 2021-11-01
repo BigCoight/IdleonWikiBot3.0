@@ -15,11 +15,11 @@ class DungEnemyRepo(Repository[DungEnemy]):
 	@classmethod
 	def generateRepo(cls) -> None:
 		reEnemies = r'.\.setReserved\("([a-zA-Z0-9_]*)", [a-zA-Z0-9_$]*\)'
-		reInner = fr'\[({reAll}*)\];'
+		reInner = fr'\[({reAll}*)\]'
 		dungEnemy = re.split(reEnemies, cls.getSection())
 		for i in range(0, len(dungEnemy) - 1, 2):
-			data = re.findall(reInner, dungEnemy[i])[0]
-			dungData = strToArray(data)
+			data = re.findall(reInner, dungEnemy[i])
+			dungData = strToArray(data[0])
 			cls.add(dungEnemy[i + 1], DungEnemy(
 				intName = dungEnemy[i + 1],
 				health = dungData[0],

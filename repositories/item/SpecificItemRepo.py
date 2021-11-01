@@ -19,6 +19,7 @@ from definitions.itemdef.specifictypes.ToolItem import ToolItem
 from definitions.itemdef.specifictypes.WeaponItem import WeaponItem
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
 from definitions.itemdef.specifictypes.master.DescItem import DescItem
+from helpers.CodeReader import IdleonReader
 from helpers.HelperFunctions import camelCaseToTitle
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
 from repositories.item.CardRepo import CardRepo
@@ -105,7 +106,7 @@ class SpecificItemRepo(Repository[BaseItem]):
 		return cls.getDisplayName(name)
 
 	@classmethod
-	def compareVersions(cls, v1: str, v2: str, ignored: Set[str] = set()):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
 		return super().compareVersions(v1, v2, {"category", "internalName", "typeGen"})
 
 	@classmethod
@@ -124,7 +125,7 @@ class SpecificItemRepo(Repository[BaseItem]):
 
 	# Need to make this group by type
 	@classmethod
-	def writeChangesWiki(cls, differences):
+	def _writeChangesWiki(cls, differences):
 		def head(v: str) -> str:
 			return "{{patchnote/head|changed=" + v + "}}\n"
 

@@ -47,7 +47,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("130")
+idleonReader = IdleonReader("steam130b", True)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
 EnemyDetailsRepo.initialise(codeReader)
@@ -103,4 +103,4 @@ EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
-ItemRepo.exportWikiMult()
+NpcRepo.compareVersions(IdleonReader("130"), IdleonReader("steam130b", True))

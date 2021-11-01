@@ -2725,7 +2725,7 @@
         "quests": {
             "Outta the Way Slimes": {
                 "Type": "Custom",
-                "DialogueText": "Thay do respawn very quick so you must do it fast! Remember to Forfeit the Quest using the Codex if you run out of time! <br> QUEST:Kill 12 Slimes before time runs out",
+                "DialogueText": "Thay do respawn very quick so you must do it fast! Remember to Forfeit the Quest using the Codex if you run out of time! <br> QUEST:Kill 10 Slimes before time runs out",
                 "NextIndex": 7,
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
@@ -2733,20 +2733,20 @@
                 "Rewards": [
                     {"item": "EquipmentStatues2", "quantity": 3},
                     {"item": "FoodPotGr2", "quantity": 25},
-                    {"item": "Experience0", "quantity": 1000}
+                    {"item": "Experience0", "quantity": 2000}
                 ],
                 "QuestName": "Stiltzcho1",
                 "Difficulty": 3,
                 "Name": "Outta the Way Slimes",
                 "CustomType": "Stiltzcho1",
                 "CustomArray": [
-                    {"desc": "Slimes Defeated", "finalV": 12, "type": "GreaterEqual", "startV": 0},
-                    {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 115}
+                    {"desc": "Slimes Defeated", "finalV": 10, "type": "GreaterEqual", "startV": 0},
+                    {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 140}
                 ]
             },
             "No Stone Unturned": {
                 "Type": "ItemsAndSpaceRequired",
-                "DialogueText": "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boas until you find a clue",
+                "DialogueText": "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boa Snakes until you find a clue",
                 "NextIndex": 12,
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
@@ -2760,7 +2760,7 @@
                 "Difficulty": 3,
                 "Name": "No Stone Unturned",
                 "ItemReq": [
-                    {"item": "Quest7", "quantity": 5}
+                    {"item": "Quest7", "quantity": 4}
                 ]
             },
             "Investigator by Day, Prankster by Night": {
@@ -2845,7 +2845,7 @@
         "dialogue": [
             {
                 "Type": "None",
-                "DialogueText": "Hallo! Welcome to tha Jungle. I am pleased to make your aquaintance!",
+                "DialogueText": "Hallo! Welcome to tha Jungle. I am pleased to make your aquaintance! <br> QUEST:Go complete Scripticus' quests until he asks you for Foreign Aid... ok this isn't really a quest but Stiltzcho wont wanna talk to you until you do that!",
                 "NextIndex": 0
             },
             {
@@ -4539,7 +4539,7 @@
             },
             "The Desert Dungeon Prequest": {
                 "Type": "ItemsAndSpaceRequired",
-                "DialogueText": "Door wont open? You gotta find yourself one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed so you can play the party dungeon!",
+                "DialogueText": "You can enter the dungeon with one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed a rare drop from actively fighting Mimics.",
                 "NextIndex": 21,
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
@@ -4629,7 +4629,7 @@
             },
             {
                 "Type": "None",
-                "DialogueText": "You see that weird door? That there's a Party Dungeon! I cant do it myself I'm retired from that sorta thing but it'd be perfect for you and your buddies!",
+                "DialogueText": "You see that weird crack over on the right? That there's a Party Dungeon! I cant do it myself I'm retired from that sorta thing but it'd be perfect for you and your buddies!",
                 "NextIndex": 19
             },
             {
@@ -4639,13 +4639,14 @@
             },
             {
                 "Type": "None",
-                "DialogueText": "Yep that's the seasme seed alright! Drop it at the door and go get some loot! <br> NOTE FROM DEVELOPER: The party dungeon isn't quite ready yet but I'm working on it right now! It'll be full of monsters that you'll actually fight WITH your friends as well as puzzles and other fun things!",
-                "NextIndex": 22
+                "DialogueText": "Yep that's the seasme seed alright! Drop it at the door and go get some loot! <br> ... what? Snakenhotep? What do you mean? Did that darn lava scoundrel replace MY dungeon with some darn snake??? Well shucks...",
+                "NextIndex": 23
             },
+            {"Type": "None", "DialogueText": "Huh...", "NextIndex": 17},
             {
                 "Type": "None",
-                "DialogueText": "Howdy partner! You best go get some more loot out in them desert maps!",
-                "NextIndex": 22
+                "DialogueText": "I still can't believe I don't got my own dungeon no more... man if I ever get my hands on that darn dev...",
+                "NextIndex": 23
             }
         ]
     },
@@ -7726,7 +7727,7 @@
         "dialogue": [
             {
                 "Type": "None",
-                "DialogueText": "The engraving on the side says 'High Power Hubble Telescope capable of over 500000x magnification...'",
+                "DialogueText": "Kaw KAW! Kaw KAW! 'The bird seems insistent on rebuilding the portal to World 4 as soon as possible'",
                 "NextIndex": 0
             }
         ]
@@ -8540,7 +8541,7 @@
             },
             "Perfect Progress Score": {
                 "Type": "Custom",
-                "DialogueText": "If you get 100% Progress by passing them rooms you'll awaken the boss... and you KNOW he finna have that loot on 'im! QUEST:Defeat Snakenhotep who will come out of hiding if you get 100% Progress.",
+                "DialogueText": "If you get 100% Progress by passing them rooms you'll awaken the boss... and you KNOW he finna have that loot on 'im! <br> QUEST:Defeat Snakenhotep who will come out of hiding if you get 100% Progress.",
                 "NextIndex": 7,
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
@@ -8550,11 +8551,30 @@
                     {"item": "DungCredits1", "quantity": 25}
                 ],
                 "QuestName": "Gangster Gus2",
-                "Difficulty": 1,
+                "Difficulty": 3,
                 "Name": "Perfect Progress Score",
                 "CustomType": "Gangster Gus2",
                 "CustomArray": [
                     {"desc": "Defeat Snakenhotep:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                ]
+            },
+            "Sanke Revival Denial": {
+                "Type": "Custom",
+                "DialogueText": "Nah man I ain't gon let this slide. You go on in there and defeat that big bad for real! <br> QUEST: Defeat Enraged Snakenhotep. I'll give you a hint... those skull rocks must be destroyed at all costs!",
+                "NextIndex": 12,
+                "ConsumeItems": false,
+                "InventorySpacesNeeded": 2,
+                "NoSpaceIndex": 11,
+                "Rewards": [
+                    {"item": "GemP16", "quantity": 3},
+                    {"item": "DungCredits1", "quantity": 25}
+                ],
+                "QuestName": "Gangster Gus3",
+                "Difficulty": 5,
+                "Name": "Sanke Revival Denial",
+                "CustomType": "Gangster Gus3",
+                "CustomArray": [
+                    {"desc": "Defeat Snakenhotep 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
                 ]
             }
         },
@@ -8581,13 +8601,212 @@
             },
             {
                 "Type": "None",
-                "DialogueText": "Mmm... you did well but your inventory is full! Clear some space so I can credit you!",
+                "DialogueText": "Aw man there we gooo! ... bruh empty your pockets ain't got no space for me to give you nothin!",
                 "NextIndex": 5
             },
             {
                 "Type": "None",
-                "DialogueText": "Mmm... you did well but your inventory is full! Clear some space so I can credit you!",
-                "NextIndex": 7
+                "DialogueText": "Ya got rid of 'im? They had it comin always sneerin' at me and tellin' me want to do.",
+                "NextIndex": 8
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Hold up... why are peeps still goin' in there? <br> 'Gus walks over and starts a dungeon run then comes storming back...'",
+                "NextIndex": 9
+            },
+            {
+                "Type": "None",
+                "DialogueText": "YO WHAT U TRYNA PULL BRO? That snake jerk is still alive and kickin' in there go see for yourself!",
+                "NextIndex": 10
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Aw man there we gooo! ... bruh empty your pockets ain't got no space for me to give you nothin!",
+                "NextIndex": 5
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Ya got rid of 'im? They had it comin always sneerin' at me and tellin' me want to do.",
+                "NextIndex": 8
+            }
+        ]
+    },
+    "Falloween Pumpkin": {
+        "head": null,
+        "quests": {
+            "The Spookyness": {
+                "Type": "Custom",
+                "DialogueText": "Falloween is meant to be scary and what's scarier than death right? Go kill some monsters! <br> QUEST:Defeat monsters without having AUTO turned on.",
+                "NextIndex": 5,
+                "ConsumeItems": false,
+                "InventorySpacesNeeded": 2,
+                "NoSpaceIndex": 4,
+                "Rewards": [
+                    {"item": "PremiumGem", "quantity": 40},
+                    {"item": "Timecandy8", "quantity": 4}
+                ],
+                "QuestName": "Falloween Pumpkin1",
+                "Difficulty": 1,
+                "Name": "The Spookyness",
+                "CustomType": "Falloween Pumpkin1",
+                "CustomArray": [
+                    {"desc": "Defeat monsters:", "finalV": 50, "type": "GreaterEqual", "startV": 0}
+                ]
+            },
+            "The Scaryness": {
+                "Type": "Custom",
+                "DialogueText": "Hmm that may have scared the monsters but you seem unfazed... how about you go play a party dungeon? I heard those things are a true nightmare! <br> QUEST:Play a party dungeon with a party of 4 or more people.",
+                "NextIndex": 8,
+                "ConsumeItems": false,
+                "InventorySpacesNeeded": 2,
+                "NoSpaceIndex": 7,
+                "Rewards": [
+                    {"item": "PremiumGem", "quantity": 50},
+                    {"item": "Timecandy8", "quantity": 5}
+                ],
+                "QuestName": "Falloween Pumpkin2",
+                "Difficulty": 3,
+                "Name": "The Scaryness",
+                "CustomType": "Falloween Pumpkin2",
+                "CustomArray": [
+                    {"desc": "Play a Party Dungeon:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                    {
+                        "desc": "Have 4 people in Party:",
+                        "finalV": 1,
+                        "type": "GreaterEqual",
+                        "startV": 0
+                    }
+                ]
+            },
+            "The Horroriness": {
+                "Type": "Custom",
+                "DialogueText": "Hmm still not scared eh? Well let's see if you can stomach the sheer terror of a RECYCLED QUEST! <br> QUEST:Defeat monsters without having AUTO turned on.",
+                "NextIndex": 11,
+                "ConsumeItems": false,
+                "InventorySpacesNeeded": 2,
+                "NoSpaceIndex": 10,
+                "Rewards": [
+                    {"item": "PremiumGem", "quantity": 50},
+                    {"item": "Timecandy8", "quantity": 5}
+                ],
+                "QuestName": "Falloween Pumpkin3",
+                "Difficulty": 5,
+                "Name": "The Horroriness",
+                "CustomType": "Falloween Pumpkin3",
+                "CustomArray": [
+                    {"desc": "Defeat Monsters:", "finalV": 300, "type": "GreaterEqual", "startV": 0}
+                ]
+            },
+            "The Booeyness": {
+                "Type": "Custom",
+                "DialogueText": "Ok ok you've got nerves of steel. Let's get back to scaring others then! <br> QUEST:Say 'boo' to 200 different people without closing the Game. If you do your counter will reset.",
+                "NextIndex": 14,
+                "ConsumeItems": false,
+                "InventorySpacesNeeded": 2,
+                "NoSpaceIndex": 13,
+                "Rewards": [
+                    {"item": "PremiumGem", "quantity": 60},
+                    {"item": "Timecandy8", "quantity": 6}
+                ],
+                "QuestName": "Falloween Pumpkin4",
+                "Difficulty": 7,
+                "Name": "The Booeyness",
+                "CustomType": "Falloween Pumpkin4",
+                "CustomArray": [
+                    {
+                        "desc": "Say 'Boo' to People:",
+                        "finalV": 200,
+                        "type": "GreaterEqual",
+                        "startV": 0
+                    }
+                ]
+            },
+            "The Afterparty": {
+                "Type": "Custom",
+                "DialogueText": "Well I've got one last trick for ya... and what a trick it is! After all what's scarier than having to socialize with others?? <br> QUEST: Defeat monsters with other party members around you.",
+                "NextIndex": 17,
+                "ConsumeItems": false,
+                "InventorySpacesNeeded": 2,
+                "NoSpaceIndex": 16,
+                "Rewards": [
+                    {"item": "PremiumGem", "quantity": 80},
+                    {"item": "Timecandy8", "quantity": 6}
+                ],
+                "QuestName": "Falloween Pumpkin5",
+                "Difficulty": 7,
+                "Name": "The Afterparty",
+                "CustomType": "Falloween Pumpkin5",
+                "CustomArray": [
+                    {
+                        "desc": "Defeat mobs in Party:",
+                        "finalV": 500,
+                        "type": "GreaterEqual",
+                        "startV": 0
+                    }
+                ]
+            }
+        },
+        "dialogue": [
+            {"Type": "None", "DialogueText": "Eee hehehehe!", "NextIndex": 1},
+            {
+                "Type": "None",
+                "DialogueText": "A jackolantern in November bet you weren't expecting that! Probably scared you right out of your chair or toilet for you phone users.",
+                "NextIndex": 2
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Falloween isn't actually an officially celebrated Idleon holiday but I figured hey what could be more terrifying than going against tradition? People really lose their marbles whenever you do that!",
+                "NextIndex": 3
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Full inventory! Talk about a scary predicament! Clear that up so I can treat you!",
+                "NextIndex": 3
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Hehehe perfect! I can already see the other NPC's giving you weird looks for taking part in Falloween oh how splendid!",
+                "NextIndex": 6
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Full inventory! Talk about a scary predicament! Clear that up so I can treat you!",
+                "NextIndex": 6
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Hehehe perfect! I can already see the other NPC's giving you weird looks for taking part in Falloween oh how splendid!",
+                "NextIndex": 9
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Full inventory! Talk about a scary predicament! Clear that up so I can treat you!",
+                "NextIndex": 9
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Hehehe perfect! I can already see the other NPC's giving you weird looks for taking part in Falloween oh how splendid!",
+                "NextIndex": 12
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Full inventory! Talk about a scary predicament! Clear that up so I can treat you!",
+                "NextIndex": 12
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Hehehe perfect! I can already see the other NPC's giving you weird looks for taking part in Falloween oh how splendid!",
+                "NextIndex": 15
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Full inventory! Talk about a scary predicament! Clear that up so I can treat you!",
+                "NextIndex": 15
+            },
+            {
+                "Type": "None",
+                "DialogueText": "Happy Falloween! I'll scare you good next time so ya better watch out!",
+                "NextIndex": 17
             }
         ]
     },

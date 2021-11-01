@@ -11,7 +11,8 @@ class Section:
 
 
 class CodeReader:
-	def __init__(self, version: str) -> None:
+	def __init__(self, version: str, steam: bool = False) -> None:
+		self.steam = steam
 		self.version = version
 		self.codeFile = f"./codefiles/idleon{version}.txt"
 		self.currentSection: Optional[Section] = None
@@ -24,13 +25,16 @@ class CodeReader:
 		Args:
 			start: The start of the block of code
 			sectionName: The name of the section
-			end: The end of the block of code, defaults to r""
+			end: The end of the block of code, defaults to ""
 
 		Returns:
 
 		"""
 		if end:
 			self.sections.append(Section(start, re.escape(end), sectionName))
+			return
+		if self.steam:
+			self.sections.append(Section(start, r"\}\),", sectionName))
 			return
 		self.sections.append(Section(start, r"\};", sectionName))
 
@@ -51,15 +55,21 @@ class CodeReader:
 
 
 class IdleonReader:
-	def __init__(self, codeFile: str) -> None:
-		self.codeReader = CodeReader(codeFile)
+	def __init__(self, codeFile: str, steam: bool = False) -> None:
+		self.steam = steam
+		self.codeReader = CodeReader(codeFile, steam)
 		self.readSections()
 
 	def readSections(self):
+		# I know this is a jank solution but it works.
+		if self.steam:
+			self.codeReader.addSection("scripts.MonsterDefinitions", "Enemies", "});")
+		else:
+			self.codeReader.addSection("scripts.MonsterDefinitions", "Enemies")
 		self.codeReader.addSection('__name__ = "scripts.ItemDefinitions"', "Items", "addNewItem = function")
 		self.codeReader.addSection('__name__ = "scripts.ItemDefinitions2"', "Items2", "addNewItem = function")
 		self.codeReader.addSection("dialogueDefs = new", "Quests", "finishDialogue")
-		self.codeReader.addSection("scripts.MonsterDefinitions", "Enemies")
+
 		self.codeReader.addSection("ItemToCraftNAME = function () {", "AnvilItems")
 		self.codeReader.addSection("ItemToCraftCostTYPE = function ()", "Recipes")
 		self.codeReader.addSection("ItemToCraftEXP = function ()", "RecipeLevel")

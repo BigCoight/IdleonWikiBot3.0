@@ -84,6 +84,38 @@
         }
     },
     "changes": {
+        "Stiltzcho": {
+            "quests": {
+                "Outta the Way Slimes": {
+                    "DialogueText": [
+                        "Thay do respawn very quick so you must do it fast! Remember to Forfeit the Quest using the Codex if you run out of time! <br> QUEST:Kill 12 Slimes before time runs out",
+                        "Thay do respawn very quick so you must do it fast! Remember to Forfeit the Quest using the Codex if you run out of time! <br> QUEST:Kill 10 Slimes before time runs out"
+                    ],
+                    "Rewards": [
+                        [{"item": "Experience0", "quantity": 1000}, {"item": "Experience0", "quantity": 2000}]
+                    ],
+                    "CustomArray": [
+                        [
+                            {"desc": "Slimes Defeated", "finalV": 12, "type": "GreaterEqual", "startV": 0},
+                            {"desc": "Slimes Defeated", "finalV": 10, "type": "GreaterEqual", "startV": 0}
+                        ],
+                        [
+                            {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 115},
+                            {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 140}
+                        ]
+                    ]
+                },
+                "No Stone Unturned": {
+                    "DialogueText": [
+                        "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boas until you find a clue",
+                        "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boa Snakes until you find a clue"
+                    ],
+                    "ItemReq": [
+                        [{"item": "Quest7", "quantity": 5}, {"item": "Quest7", "quantity": 4}]
+                    ]
+                }
+            }
+        },
         "Bandit Bob": {
             "quests": {
                 "The Desert Dungeon Prequest": {
@@ -122,38 +154,6 @@
                     "CustomType": [" ", "Gangster Gus3"],
                     "CustomArray": [
                         [" ", {"desc": "Defeat Snakenhotep 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
-                    ]
-                }
-            }
-        },
-        "Stiltzcho": {
-            "quests": {
-                "Outta the Way Slimes": {
-                    "DialogueText": [
-                        "Thay do respawn very quick so you must do it fast! Remember to Forfeit the Quest using the Codex if you run out of time! <br> QUEST:Kill 12 Slimes before time runs out",
-                        "Thay do respawn very quick so you must do it fast! Remember to Forfeit the Quest using the Codex if you run out of time! <br> QUEST:Kill 10 Slimes before time runs out"
-                    ],
-                    "Rewards": [
-                        [{"item": "Experience0", "quantity": 1000}, {"item": "Experience0", "quantity": 2000}]
-                    ],
-                    "CustomArray": [
-                        [
-                            {"desc": "Slimes Defeated", "finalV": 12, "type": "GreaterEqual", "startV": 0},
-                            {"desc": "Slimes Defeated", "finalV": 10, "type": "GreaterEqual", "startV": 0}
-                        ],
-                        [
-                            {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 115},
-                            {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 140}
-                        ]
-                    ]
-                },
-                "No Stone Unturned": {
-                    "DialogueText": [
-                        "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boas until you find a clue",
-                        "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boa Snakes until you find a clue"
-                    ],
-                    "ItemReq": [
-                        [{"item": "Quest7", "quantity": 5}, {"item": "Quest7", "quantity": 4}]
                     ]
                 }
             }

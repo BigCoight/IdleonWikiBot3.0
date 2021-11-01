@@ -4,6 +4,7 @@ from typing import TypeVar, Generic, List, Optional
 from pydantic import BaseModel
 
 from helpers.CodeReader import CodeReader
+from helpers.ColourPrinter import printGreen, printRed
 from helpers.JsonEncoder import CompactJSONEncoder
 
 T = TypeVar("T", bound = BaseModel)
@@ -20,10 +21,10 @@ class ListRepository(Generic[T]):
 		cls.codeReader = codeReader
 		cls.sections = cls.getSections()
 		if cls.sections and not cls.getSection():
-			print(f"Could not find {cls.__name__}'s Section")
+			printRed(f"Could not find {cls.__name__}'s Section")
 			return None
 		cls.generateRepo()
-		print(f"Generated {cls.__name__}'s repo with {len(cls.repository)} Items")
+		printGreen(f"Generated {cls.__name__}'s repo with {len(cls.repository)} Items")
 		cls.export()
 
 	@classmethod

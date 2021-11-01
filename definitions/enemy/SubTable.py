@@ -1,16 +1,14 @@
 from typing import List
 
-from pydantic import BaseModel
+from definitions.master.IdleonModel import IdleonModel
+from helpers.CustomTypes import Numeric
 
-from helpers.CustomTypes import Integer
 
-
-class SubTable(BaseModel):
+class SubTable(IdleonModel):
 	name: str
 	chance: float
-	quantity: Integer
+	quantity: Numeric
 
 
-class SubTables(BaseModel):
-	rare: List[SubTable]
-	mega: List[SubTable]
+class SubTables(IdleonModel):
+	sources: List[SubTable]

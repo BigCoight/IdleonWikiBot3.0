@@ -1,10 +1,10 @@
 import re
+from typing import List
 
 from definitions.enemy.MapData import MapData
 from helpers.Constants import Constants
 from repositories.MapNameRepo import MapNameRepo
 from repositories.master.Repository import Repository
-from typing import List
 
 
 class MapDataRepo(Repository[MapData]):
@@ -20,8 +20,10 @@ class MapDataRepo(Repository[MapData]):
 	def generateRepo(cls) -> None:
 		mapEnemies = re.findall(r'"([ a-zA-Z0-_\'\n]*)"\.', cls.getSection())[0].split(" ")
 		for n, v in enumerate(mapEnemies):
-			worldIndex = n//50
+			worldIndex = n // 50
 			if worldIndex > 3:
+				continue
+			if cls.contains(v):
 				continue
 			cls.add(v, MapData(
 				area = MapNameRepo.get(n).name,

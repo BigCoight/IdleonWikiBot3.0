@@ -1,31 +1,45 @@
 from definitions.collections.Item import Item
 from definitions.itemdef.initialtypes.ItemTypes import TypeGen
 from repositories.item.AnvilRepo import AnvilRepo
+from repositories.item.DetDropsRepo import DetDropsRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.item.VendorRepo import VendorRepo
+from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
 from repositories.item.sources.SourceRepo import SourceRepo
 from repositories.master.Repository import Repository
 
 
 class ItemRepo(Repository[Item]):
 	"""
-	Dependent on: SpecificItemRepo, SourceRepo, RecipeRepo, VendorRepo, AnvilRepo
+	Dependent on: SpecificItemRepo, SourceRepo, RecipeRepo, VendorRepo, AnvilRepo, DetDropsRepo
 	"""
 
 	@classmethod
+	def initDependencies(cls):
+		SpecificItemRepo.initialise(cls.codeReader)
+		SourceRepo.initialise(cls.codeReader)
+		RecipeRepo.initialise(cls.codeReader)
+		VendorRepo.initialise(cls.codeReader)
+		AnvilRepo.initialise(cls.codeReader)
+		DetDropsRepo.initialise(cls.codeReader)
+		ItemNoteRepo.initialise(cls.codeReader)
+
+	@classmethod
 	def generateRepo(cls) -> None:
+		cls.initDependencies()
 		for item, data in SpecificItemRepo.items():
 			if sources := SourceRepo.get(item):
 				if sources.recipeFrom:
 					RecipeRepo.get(item).recipeFrom = sources.recipeFrom
-
 			cls.add(item, Item(
 				item = SpecificItemRepo.get(item),
 				sources = SourceRepo.get(item),
+				notes = ItemNoteRepo.get(item),
 				recipe = RecipeRepo.get(item),
 				vendors = VendorRepo.getVendorFromItem(item),
-				anvilProduction = AnvilRepo.get(item)
+				anvilProduction = AnvilRepo.get(item),
+				detDrops = DetDropsRepo.get(item)
 			))
 
 	@classmethod

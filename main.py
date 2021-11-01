@@ -29,6 +29,7 @@ from repositories.enemies.SubTableRepo import SubTableRepo
 from repositories.item.AnvilRepo import AnvilRepo
 from repositories.item.CardRepo import CardRepo
 from repositories.item.CritterRepo import CritterRepo
+from repositories.item.DetDropsRepo import DetDropsRepo
 from repositories.item.FishingToolkitRepo import FishingToolkitRepo
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.RecipeRepo import RecipeRepo
@@ -37,6 +38,7 @@ from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.item.StatueRepo import StatueRepo
 from repositories.item.VendorRepo import VendorRepo
 from repositories.item.sources.CustomSourceRepo import CustomSourceRepo
+from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
 from repositories.item.sources.SourceRepo import SourceRepo
 from repositories.item.sources.WikiSourceRepo import WikiSourceRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
@@ -78,6 +80,7 @@ CritterRepo.initialise(codeReader)
 DropTableRepo.initialise(codeReader)
 EnemyTableRepo.initialise(codeReader)
 SubTableRepo.initialise(codeReader)
+DetDropsRepo.initialise(codeReader)
 PostOfficeRepo.initialise(codeReader)
 PrayerRepo.initialise(codeReader)
 RefineryCostRepo.initialise(codeReader)
@@ -95,8 +98,9 @@ TaskUnlocksRepo.initialise(codeReader)
 
 SourceRepo.initialise(codeReader)
 WikiSourceRepo.initialise(codeReader)
+ItemNoteRepo.initialise(codeReader)
 EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
-VendorRepo.compareVersions("123b", "130")
+ItemRepo.exportWikiMult()

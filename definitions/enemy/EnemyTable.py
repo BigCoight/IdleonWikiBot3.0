@@ -9,4 +9,4 @@ class EnemyTable(CollectionModel):
 	drops: List[Drop]
 
 	def wikiWriterKey(self) -> str:
-		return Constants.newLine.join([drop.wikiWriterKey() + "}}" for drop in self.drops])
+		return Constants.newLine.join([drop.writeWiki() + "}}" for drop in self.drops])

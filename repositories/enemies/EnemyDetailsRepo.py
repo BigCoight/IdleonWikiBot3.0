@@ -2,7 +2,7 @@ import re
 from typing import List
 
 from definitions.enemy.EnemyDetails import EnemyDetails
-from helpers.HelperFunctions import strToArray, formatStr
+from helpers.HelperFunctions import strToArray, formatStr, changeChestNames
 from repositories.master.Repository import Repository
 
 
@@ -25,6 +25,9 @@ class EnemyDetailsRepo(Repository[EnemyDetails]):
 			splitData = re.findall(reData, data)
 			enemy = {}
 			for atr, val in splitData:
+				if atr == "Name":
+					if "Chest" in val:
+						val = changeChestNames(intName, val)
 				val = strToArray(val) if "[" in val else formatStr(val, [","], replaceUnderscores = True)
 				enemy[atr.strip()] = val
 			if enemy.get("Name") == "Error":

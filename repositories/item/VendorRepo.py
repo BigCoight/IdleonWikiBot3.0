@@ -40,7 +40,7 @@ class VendorRepo(Repository[Vendors]):
 					vendor = currentLocation,
 					item = shopsItems[i][j],
 					quantity = fixedShopQTY[i][j],
-					no = j,
+					no = j + 1,
 					purchasePrice = ItemDetailRepo.get(shopsItems[i][j]).sellPrice * 4)
 				if current := cls.get(currentLocation):
 					current.items.append(tempVendor)

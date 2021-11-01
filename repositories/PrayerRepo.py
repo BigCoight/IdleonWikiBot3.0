@@ -27,7 +27,7 @@ class PrayerRepo(Repository[Prayer]):
 				x2 = prayer[4],
 				soul = f"Soul{int(prayer[8]) + 1}",
 				id = prayer[5],
-				mult = prayer[6],
+				costMult = prayer[6],
 				unlockZone = zones[int(prayer[8])],
 				unlockWave = prayer[7],
 			))

@@ -19,9 +19,11 @@ class ListRepository(Generic[T]):
 		cls.repository = []
 		cls.codeReader = codeReader
 		cls.sections = cls.getSections()
-		if len(cls.sections) == 0 or (cls.getSection() in [""]):
+		if cls.sections and not cls.getSection():
+			print(f"Could not find {cls.__name__}'s Section")
 			return None
 		cls.generateRepo()
+		print(f"Generated {cls.__name__}'s repo with {len(cls.repository)} Items")
 		cls.export()
 
 	@classmethod

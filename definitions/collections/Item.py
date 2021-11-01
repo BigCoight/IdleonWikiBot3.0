@@ -1,6 +1,8 @@
 from typing import Optional, List
 
+from definitions.common.Note import Note
 from definitions.itemdef.AnvilProduce import AnvilProduce
+from definitions.itemdef.DetDrops import DetDrops
 from definitions.itemdef.Recipe import Recipe
 from definitions.itemdef.Sources import Sources
 from definitions.itemdef.Vendors import ItemVendors
@@ -12,9 +14,11 @@ from definitions.master.IdleonModel import IdleonModel
 class Item(IdleonModel):
 	item: BaseItem
 	sources: Optional[Sources] = None
+	notes: Optional[Note] = None
 	recipe: Optional[Recipe] = None
 	vendors: Optional[ItemVendors] = None
 	anvilProduction: Optional[AnvilProduce] = None
+	detDrops: Optional[DetDrops] = None
 
 	def writeWiki(self, newLine = True) -> str:
 		res = self.getCorrectHead()
@@ -25,6 +29,8 @@ class Item(IdleonModel):
 			res += f"|sellprice={self.item.sellPrice}\n"
 		if self.sources:
 			res += self.sources.writeWiki()
+		if self.notes:
+			res += self.notes.writeWiki()
 		res += "}}\n"
 
 		toWrite = filter(lambda x: x, self.item.writeAfter() + self.writeAfter())
@@ -42,4 +48,4 @@ class Item(IdleonModel):
 		return "{{InfoItem\n"
 
 	def writeAfter(self) -> List[IdleonModel]:
-		return [self.recipe, self.vendors, self.anvilProduction]
+		return [self.recipe, self.vendors, self.anvilProduction, self.detDrops]

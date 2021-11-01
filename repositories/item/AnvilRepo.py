@@ -6,11 +6,6 @@ from repositories.master.Repository import Repository
 
 
 class AnvilRepo(Repository[AnvilProduce]):
-
-	@classmethod
-	def parse(cls, value) -> AnvilProduce:
-		return AnvilProduce.parse_obj(value)
-
 	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["Production"]

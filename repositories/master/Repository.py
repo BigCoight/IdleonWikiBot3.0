@@ -20,17 +20,26 @@ class Repository(Generic[T], ABC):
 
 	@classmethod
 	def initialise(cls, codeReader: CodeReader) -> None:
+		if cls.__dict__.get("codeReader"):
+			if cls.codeReader.version == codeReader.version:
+				return
 		cls.repository = {}
 		cls.codeReader = codeReader
 		cls.sections = cls.getSections()
 		if cls.sections and not cls.getSection():
+			print(f"Could not find {cls.__name__}'s Section")
 			return None
 		cls.generateRepo()
+		print(f"Generated {cls.__name__}'s repo with {len(cls.repository)} Items")
 		cls._export()
 
 	@classmethod
 	def getSections(cls) -> List[str]:
 		return []
+
+	@classmethod
+	def initDependencies(cls) -> None:
+		pass
 
 	@classmethod
 	def generateRepo(cls) -> None:
@@ -73,7 +82,6 @@ class Repository(Generic[T], ABC):
 
 	@classmethod
 	def compareVersions(cls, v1: str, v2: str, ignored: Set[str] = set()):
-
 		changes = {}
 		new = {}
 		cr1 = IdleonReader(v1).codeReader
@@ -110,24 +118,6 @@ class Repository(Generic[T], ABC):
 			outfile.write(CompactJSONEncoder(indent = 4).encode(out))
 
 		cls.writeChangesWiki(out)
-
-	@classmethod
-	def _overrideDict(cls) -> Set[str]:
-		return set()
-
-	@classmethod
-	def _newChange(cls, data: T, ignored: Set[str] = set()) -> Dict[str, any]:
-		addAfter = cls._overrideDict()
-		for key, val in data.__dict__.items():
-			if isinstance(val, IdleonModel):
-				if key not in ignored:
-					if not val.shouldCompare():
-						addAfter.add(key)
-		temp = data.dict(exclude = ignored.union(addAfter))
-		for key in addAfter:
-			temp[key] = data.__dict__[key]
-
-		return temp
 
 	@classmethod
 	def writeChangesWiki(cls, differences):
@@ -170,6 +160,10 @@ class Repository(Generic[T], ABC):
 			elif isinstance(d, dict):
 				res += bold(camelCaseToTitle(v))
 				for atr, subC in d.items():
+					if isinstance(subC, list):
+						for i, subV in enumerate(subC):
+							res += patchnote(str(i), " ", subV)
+						continue
 					res += patchnote(atr, " ", subC)
 			else:
 				if not d:
@@ -202,7 +196,11 @@ class Repository(Generic[T], ABC):
 			elif isinstance(d, dict):
 				res += bold(camelCaseToTitle(v))
 				for atr, subC in d.items():
-					print(atr)
+					if isinstance(subC, list):
+						for i, subV in enumerate(subC):
+							o, n = subV
+							res += patchnote(str(i), o, n)
+						continue
 					o, n = subC
 					res += patchnote(atr, o, n)
 

@@ -32,8 +32,8 @@ class ItemDetailRepo(Repository[CommonItem]):
 
 		reNames = r'.\.addNew([a-zA-Z0-9_]*)\("([a-zA-Z0-9_]*)", ..?.?\);'
 		reData = r'..\.setReserved\("([a-zA-Z0-9_]*)", ?"?([^\s"]*)"?\)'
-		for i in range(len(cls.getSections())):
-			itemText = formatStr(cls.getSection(i), ["\n", "  "])
+		for j in range(len(cls.getSections())):
+			itemText = formatStr(cls.getSection(j), ["\n", "  "])
 			itemData = re.split(reNames, itemText)
 			for i in range(0, len(itemData), 3):
 				if data := re.findall(reData, itemData[i]):
@@ -45,6 +45,7 @@ class ItemDetailRepo(Repository[CommonItem]):
 					item["internalID"] = itemName
 					item["Type"] = item["Type"].title()
 					cls.add(itemName, itemTypes[itemType].parse_obj(item))
+		cls.get("Quest5").displayName = "Golden Jam (Quest)"
 
 	@classmethod
 	def isItemOfTypeGen(cls, item: str, typeGen: TypeGen) -> bool:

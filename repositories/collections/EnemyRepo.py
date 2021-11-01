@@ -32,3 +32,7 @@ class EnemyRepo(Repository[Enemy]):
 				navigation = EnemyNavRepo.get(enemy),
 				bossData = BossDetailRepo.get(enemy),
 			))
+
+	@classmethod
+	def getWikiName(cls, name: str) -> str:
+		return cls.get(name).details.Name

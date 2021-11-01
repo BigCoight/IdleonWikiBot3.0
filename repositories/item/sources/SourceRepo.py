@@ -3,7 +3,7 @@ from definitions.itemdef.Sources import Sources
 from definitions.itemdef.initialtypes.ItemTypes import TypeGen
 from definitions.questdef.QuestType import QuestType
 from helpers.Constants import Constants
-from helpers.HelperFunctions import changeChestNames, isRecipe
+from helpers.HelperFunctions import isRecipe
 from repositories.GemShopRepo import GemShopRepo
 from repositories.PostOfficeRepo import PostOfficeRepo
 from repositories.TaskUnlocksRepo import TaskUnlocksRepo
@@ -12,6 +12,7 @@ from repositories.dungeons.KeychainBonusRepo import KeychainBonusRepo
 from repositories.enemies.DropTableRepo import DropTableRepo
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
 from repositories.enemies.EnemyTableRepo import EnemyTableRepo
+from repositories.item.AnvilRepo import AnvilRepo
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.RefineryCostRepo import RefineryCostRepo
@@ -41,6 +42,51 @@ class SourceRepo(Repository[Sources]):
 		cls.addQuestRewards()
 		cls.addTaskUnlocks()
 		cls.addGemShop()
+
+		for item, data in ItemDetailRepo.items():
+			if data.typeGen == TypeGen.bOre:
+				cls.addToSource(item, Source(
+					wikiName = "[[Mining]]",
+					txtName = "Mining"
+				))
+			elif data.typeGen == TypeGen.bBar:
+				cls.addToSource(item, Source(
+					wikiName = "[[Forging]]",
+					txtName = "Forging"
+				))
+			elif data.typeGen == TypeGen.bLog:
+				cls.addToSource(item, Source(
+					wikiName = "[[Choppin]]",
+					txtName = "Choppin"
+				))
+			elif data.typeGen == TypeGen.dFish:
+				cls.addToSource(item, Source(
+					wikiName = "[[Fishing]]",
+					txtName = "Fishing"
+				))
+			elif data.typeGen == TypeGen.dCritters:
+				cls.addToSource(item, Source(
+					wikiName = "[[Trapping]]",
+					txtName = "Trapping"
+				))
+			elif data.typeGen == TypeGen.dSouls:
+				cls.addToSource(item, Source(
+					wikiName = "[[Worship]]",
+					txtName = "Worship"
+				))
+			elif data.typeGen == TypeGen.dBugs:
+				cls.addToSource(item, Source(
+					wikiName = "[[Catching]]",
+					txtName = "Catching"
+				))
+
+		for item, _ in AnvilRepo.items():
+			if not ItemDetailRepo.contains(item):
+				continue
+			cls.addToSource(item, Source(
+				wikiName = "[[Smithing#Production items|Anvil Production]]",
+				txtName = "Anvil Production"
+			))
 
 		for item, _ in FlurboShopRepo.items():
 			if not ItemDetailRepo.contains(item):
@@ -157,8 +203,6 @@ class SourceRepo(Repository[Sources]):
 			if not EnemyDetailsRepo.contains(enemy):
 				continue
 			wikiName = EnemyDetailsRepo.get(enemy).Name
-			if enemy[:5] == "Chest":
-				wikiName = changeChestNames(enemy, wikiName)
 			for drop in drops.drops:
 				if drop.item[:-1] == "SmithingRecipes":
 					cls.addToRecipeFrom(RecipeRepo.getFromItemStr(drop.item, drop.quantity), Source(

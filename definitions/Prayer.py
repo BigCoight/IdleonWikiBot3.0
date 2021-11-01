@@ -1,17 +1,14 @@
-from pydantic import BaseModel
-
+from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Numeric, Integer
 
 
-class Prayer(BaseModel):
+class Prayer(IdleonModel):
 	id: Integer
 	bonus: str
 	curse: str
 	x1: Numeric
 	x2: Numeric
 	soul: str
-	mult: Integer
+	costMult: Integer
 	unlockZone: str
 	unlockWave: Integer
-
-

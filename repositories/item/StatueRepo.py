@@ -1,7 +1,8 @@
+from typing import List
+
 from definitions.itemdef.StatueData import StatueData
 from helpers.HelperFunctions import getFromArrayArray, replaceUnderscores
 from repositories.master.ListRepository import ListRepository
-from typing import List
 
 
 class StatueRepo(ListRepository[StatueData]):
@@ -15,8 +16,8 @@ class StatueRepo(ListRepository[StatueData]):
 		statues = getFromArrayArray(cls.getSection())
 		for statue in statues:
 			cls.add(StatueData(
-				name =replaceUnderscores(statue[0]).title(),
-				effect =replaceUnderscores(statue[1]).title(),
+				name = replaceUnderscores(statue[0]).title(),
+				effect = replaceUnderscores(statue[1]).title(),
 				dk = statue[2],
-				bonus =statue[3]
+				bonus = statue[3]
 			))

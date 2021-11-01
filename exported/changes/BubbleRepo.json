@@ -1,0 +1,26 @@
+{
+    "new": {
+        "Ball Pickle Jar": {
+            "cauldron": "Vials",
+            "x1": 25,
+            "x2": 0,
+            "func": "add",
+            "description": "+{% arcade ball gain rate, and those are balls blessed by Balljoepickle himself, so you know they're extra lucky!",
+            "requirements": [{"item": "BallJoePickle", "quantity": -1}, {"item": "Liquid1", "quantity": -1}]
+        }
+    },
+    "changes": {
+        "40-40 Purity": {
+            "description": [
+                "+{ Liquid Mercury max capacity. Thats the 3rd liquid type in Alchemy, btw.",
+                "+{ Trench Seawater max capacity. Thats the 3rd liquid type in Alchemy, btw."
+            ]
+        },
+        "Goosey Glug": {
+            "description": [
+                "You know, I was talking to the goose in that vial, and they just aren't ready to give you a bonus.",
+                "+{ base critter per trap. This is a sHONKingly good bonus, the only one of its kind!"
+            ]
+        }
+    }
+}

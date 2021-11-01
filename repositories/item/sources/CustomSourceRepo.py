@@ -4,10 +4,6 @@ from repositories.master.Repository import Repository
 
 
 class CustomSourceRepo(Repository[Sources]):
-	"""
-	Dependent On: DropTableRepo, EnemyDetailsRepo, PostOfficeRepo, GemShopRepo, EnemyTableRepo, ITemDetailRepo,
-	RecipeRepo, RefineryCostRepo, VendorRepo, FlurboShopRepo
-	"""
 
 	@classmethod
 	def excludeDefaults(cls) -> bool:
@@ -15,6 +11,67 @@ class CustomSourceRepo(Repository[Sources]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
+		sourceDict = {
+			"Giftmas Event": 'EquipmentHats42',
+			"Valenslimes Day Event": 'EquipmentHats51',
+			"Steam Launch Event": 'EquipmentHats55',
+			"Easter Event": 'EquipmentHats56',
+			"Summer Break Event": 'EquipmentHats63',
+			"Summer Bundle Gem Offer": 'Trophy14'
+		}
+
+		for source, item in sourceDict.items():
+			cls.addToSource(item, Source(
+				wikiName = source,
+				txtName = source
+			))
+
+		for item in ['ObolPinkChoppin', 'ObolSilverPop', 'ObolGoldPop', 'ObolSilverKill', 'ObolPlatinumTrapping',
+		             'ObolPinkTrapping', 'ObolPlatinumCons', 'ObolPinkCons', 'ObolPlatinumWorship', 'ObolPinkWorship']:
+			cls.addToSource(item, Source(
+				wikiName = "Obol Combining",
+				txtName = "Obol Combining"
+			))
+
+		for item in ['EquipmentRingsChat8', 'InvBag22', 'InvBag23', 'InvBag24', 'InvBag25', 'InvBag26',
+		             'InvStorage32', 'InvStorage33', 'InvStorage34', 'InvStorage35', 'InvStorage36', 'InvStorage37',
+		             'InvStorage38', 'InvStorage39', 'InvStorage40', 'InvStorage41', 'InvStorage42', 'EquipmentHats31',
+		             'EquipmentHats32', 'EquipmentHats33', 'EquipmentHats34', 'EquipmentHats36', 'EquipmentHats40',
+		             'EquipmentHats37', 'EquipmentHats45', 'EquipmentHats57', 'EquipmentHats62']:
+			cls.addToSource(item, Source(
+				wikiName = "[[Gem Shop]]",
+				txtName = "Gem Shop"
+			))
+
+		for item in ['BallJoePickle', 'StampC4', 'Gfoodcoupon', 'ItemsCoupon1', 'ItemsCoupon2', 'EquipmentHats65',
+		             'StampC5', 'StampC8']:
+			cls.addToSource(item, Source(
+				wikiName = "[[Arcade]]",
+				txtName = "Arcade"
+			))
+
+		for item in ['ObolGold0', 'ObolGold1', 'ObolGold2', 'ObolGoldDamage', 'ObolGoldMoney', 'ObolGoldMining',
+		             'ObolGoldChoppin', 'ObolGoldFishing', 'ObolGoldCatching', 'ObolGoldLuck', 'ObolGoldKill',
+		             'ObolGoldEXP', 'ObolSilverCard', 'ObolSilverDef', 'ObolGoldDef']:
+			cls.addToSource(item, Source(
+				wikiName = "[[Gem Shop#Quality Obol Stack|Quality Obol Stack]]",
+				txtName = "Quality Obol Stack"
+			))
+
+		for item in ['ObolGold0', 'ObolGold1', 'ObolGold2', 'ObolGoldDamage', 'ObolGoldMoney', 'ObolGoldMining',
+		             'ObolGoldChoppin', 'ObolGoldFishing', 'ObolGoldCatching', 'ObolGoldLuck', 'ObolGoldKill',
+		             'ObolGoldEXP', 'ObolGoldDef', 'ObolPlatinum0', 'ObolPlatinum1', 'ObolPlatinum2',
+		             'ObolPlatinum3', 'ObolPink0', 'ObolPink1', 'ObolPink2', 'ObolPink3', 'ObolPlatinumDamage',
+		             'ObolPinkDamage', 'ObolPlatinumMining', 'ObolPinkMining', 'ObolPlatinumChoppin',
+		             'ObolPlatinumFishing', 'ObolPinkFishing', 'ObolPlatinumCatching', 'ObolPinkCatching',
+		             'ObolPlatinumLuck', 'ObolPinkLuck', 'ObolPlatinumPop', 'ObolPinkPop', 'ObolPlatinumKill',
+		             'ObolPinkKill', 'ObolPlatinumEXP', 'ObolPinkEXP', 'ObolPlatinumCard', 'ObolPinkCard',
+		             'ObolPlatinumDef', 'ObolPinkDef', 'ObolGoldTrapping', 'ObolGoldCons', 'ObolGoldWorship']:
+			cls.addToSource(item, Source(
+				wikiName = "[[Gem Shop#Marvelous Obol Stack|Marvelous Obol Stack]]",
+				txtName = "Marvelous Obol Stack"
+			))
+
 		for item in ["EquipmentHats14", "EquipmentHats11", "EquipmentHats13", "EquipmentHats12"]:
 			cls.addToSource(item, Source(
 				wikiName = "Starter Hat",
@@ -78,6 +135,18 @@ class CustomSourceRepo(Repository[Sources]):
 				txtName = "Weak UPG Stone"
 			))
 
+		for item in ['Pearl3', 'Pearl2', 'Pearl1']:
+			cls.addToSource(item, Source(
+				wikiName = "[[Beach Oyster]]",
+				txtName = "Beach Oyster"
+			))
+
+		for item in ['StoneT1e', 'StoneHelm1b']:
+			cls.addToSource(item, Source(
+				wikiName = "[[Giftmas Box]]",
+				txtName = "Giftmas Box"
+			))
+
 		for item in ["CritterCard1", "CritterCard2", "CritterCard3",
 		             "CritterCard4", "CritterCard5", "CritterCard6", "CritterCard7"]:
 			cls.addToSource(item, Source(
@@ -96,6 +165,13 @@ class CustomSourceRepo(Repository[Sources]):
 			txtName = "Has a 1/1M chance to drop from active kills if the Blue Hedgehog is equipped."
 		))
 
+		cls.addToSource("Trophy8", Source(
+			wikiName = "The only way to obtain this is when the [[Gem Shop|Lava Supporter Pack]] is available, "
+			           "or from contests (discord, twitch, twitter)",
+			txtName = "The only way to obtain this is when the Lava Supporter Pack is available, "
+			          "or from contests (discord, twitch, twitter)"
+		))
+
 		cls.addToSource("Quest11", Source(
 			wikiName = "[[Tiki Chief#Three Strikes, you're Out!|Three Strikes, you're Out!]]",
 			txtName = "Tiki Chief: Three Strikes, you're Out!"
@@ -111,9 +187,59 @@ class CustomSourceRepo(Repository[Sources]):
 			txtName = "TP Pete"
 		))
 
+		cls.addToSource("Quest56", Source(
+			wikiName = "[[King Doot]]",
+			txtName = "King Doot"
+		))
+
 		cls.addToSource("NPCtoken10", Source(
 			wikiName = "[[Krunk]]",
 			txtName = "Krunk"
+		))
+
+		cls.addToSource("Quest2", Source(
+			wikiName = "[[Glumlee#Literally Burning your Money|Literally Burning your Money]]",
+			txtName = "Glumlee: Literally Burning your Money"
+		))
+
+		cls.addToSource("Quest38", Source(
+			wikiName = "[[Alchemy#Level up Gift|Level up Gift]]",
+			txtName = "Level up Gift"
+		))
+
+		cls.addToSource("Quest47", Source(
+			wikiName = "[[Cactolyte#Peanut De-Aging|Peanut De-Aging]]",
+			txtName = "Cactolyte: Peanut De-Aging"
+		))
+
+		cls.addToSource("PureWater2", Source(
+			wikiName = "[[Alchemy#Liquid Shop|Alchemy Liquid Shop]]",
+			txtName = "Alchemy Liquid Shop"
+		))
+
+		cls.addToSource("Trophy5", Source(
+			wikiName = "[[Special Talents#Special Talent Book Sources|Roll Da Dice]]",
+			txtName = "Roll Da Dice"
+		))
+
+		cls.addToSource("Trophy12", Source(
+			wikiName = "Catch the Megalodon in the [[Fishing]] minigame",
+			txtName = "Catch the Megalodon in the Fishing minigame"
+		))
+
+		cls.addToSource("Mayo", Source(
+			wikiName = "Dug at the end of the 'Treasure Hunt 1' quest from [[Walupiggy]]",
+			txtName = "Dug at the end of the 'Treasure Hunt 1' quest from Walupiggy"
+		))
+
+		cls.addToSource("Trash", Source(
+			wikiName = "Dug at the end of the 'Treasure Hunt 2' quest from [[Walupiggy]]",
+			txtName = "Dug at the end of the 'Treasure Hunt 2' quest from Walupiggy"
+		))
+
+		cls.addToSource("Trash2", Source(
+			wikiName = "Dug at the end of the 'Treasure Hunt 3' quest from [[Walupiggy]]",
+			txtName = "Dug at the end of the 'Treasure Hunt 3' quest from Walupiggy"
 		))
 
 		for item in ["BadgeG1", "BadgeG2", "BadgeG3", "NPCtoken1", "NPCtoken2", "NPCtoken3"]:
@@ -122,9 +248,54 @@ class CustomSourceRepo(Repository[Sources]):
 				txtName = "Scripticus: Champion of the Grasslands"
 			))
 
+		for item in ['BadgeD1', 'BadgeD2', 'BadgeD3', 'NPCtoken28', 'NPCtoken29', 'NPCtoken30']:
+			cls.addToRecipeFrom(item, Source(
+				wikiName = "[[Cowbo_Jones#The_New_Sheriff|The New Sheriff]]",
+				txtName = "Cowbo Jones: The_New_Sheriff"
+			))
+
+		for item in ['EquipmentHats52', 'EquipmentShirts26', 'EquipmentPants20', 'EquipmentShoes21',
+		             'EquipmentRings16']:
+			cls.addToRecipeFrom(item, Source(
+				wikiName = "[[Tasks/Yum_Yum_Desert#Merit_Shop|Yum Yum Desert Merit Shop]]",
+				txtName = "Yum Yum Desert Merit Shop"
+			))
+
+		for item in ['EquipmentHats22', 'EquipmentShirts18', 'EquipmentPants17', 'EquipmentShoes20',
+		             'EquipmentPendant17']:
+			cls.addToRecipeFrom(item, Source(
+				wikiName = "[[Tasks/Blunder_Hills#Merit_Shop|Blunder Hills Merit Shop]]",
+				txtName = "Blunder Hills Merit Shop"
+			))
+
 		cls.addToRecipeFrom("Peanut", Source(
 			wikiName = "[[Picnic Stowaway#Brunchin' with the Blobs|Brunchin' with the Blobs]]",
 			txtName = "Brunchin' with the Blobs"
+		))
+
+		cls.addToRecipeFrom("EquipmentShoes15", Source(
+			wikiName = "[[Colosseum#Dewdrop_Silver_Chest|W1 Colosseum first silver chest]]",
+			txtName = "W1 Colosseum first silver chest"
+		))
+
+		cls.addToQuestAss("Quest2", Source(
+			wikiName = "[[Scripticus#Certified Swinger, of Pickaxes of course!|Certified Swinger, of Pickaxes of course!]]",
+			txtName = "Scripticus: Certified Swinger, of Pickaxes of course!"
+		))
+
+		cls.addToQuestAss("Quest10", Source(
+			wikiName = "[[Picnic Stowaway#Afternoon Tea in a Jiffy|Afternoon Tea in a Jiffy]]",
+			txtName = "Picnic Stowaway: Afternoon Tea in a Jiffy"
+		))
+
+		cls.addToQuestAss("Quest11", Source(
+			wikiName = "[[Tiki Chief#Three Strikes, you're Out!|Three Strikes, you're Out!]]",
+			txtName = "Tiki Chief: Three Strikes, you're Out!"
+		))
+
+		cls.addToQuestAss("Quest47", Source(
+			wikiName = "[[Cactolyte#Peanut De-Aging|Peanut De-Aging]]",
+			txtName = "Cactolyte: Peanut De-Aging"
 		))
 
 	@classmethod

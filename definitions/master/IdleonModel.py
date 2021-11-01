@@ -135,9 +135,15 @@ class IdleonModel(BaseModel):
 
 		for key in newItems:
 			if isinstance(other[key], IdleonModel) and other[key].shouldCompare():
-				toAdd = other[key].dict()
+				toAdd = other[key].toDict()
 				diffs[key] = {}
 				for atr, val in toAdd.items():
+					if isinstance(val, list):
+						diffs[key][atr] = []
+						for elem in val:
+							print(elem)
+							diffs[key][atr].append((" ", elem))
+						continue
 					diffs[key][atr] = (" ", val)
 				continue
 			diffs[key] = (" ", other[key])

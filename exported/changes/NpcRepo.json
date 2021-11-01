@@ -84,6 +84,16 @@
         }
     },
     "changes": {
+        "Bandit Bob": {
+            "quests": {
+                "The Desert Dungeon Prequest": {
+                    "DialogueText": [
+                        "Door wont open? You gotta find yourself one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed so you can play the party dungeon!",
+                        "You can enter the dungeon with one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed a rare drop from actively fighting Mimics."
+                    ]
+                }
+            }
+        },
         "Gangster Gus": {
             "quests": {
                 "Perfect Progress Score": {
@@ -103,31 +113,15 @@
                     "InventorySpacesNeeded": [" ", 2],
                     "NoSpaceIndex": [" ", 11],
                     "Rewards": [
-                        " ",
-                        [
-                            {"item": "GemP16", "quantity": 3},
-                            {"item": "DungCredits1", "quantity": 25}
-                        ]
+                        [" ", {"item": "GemP16", "quantity": 3}],
+                        [" ", {"item": "DungCredits1", "quantity": 25}]
                     ],
                     "QuestName": [" ", "Gangster Gus3"],
                     "Difficulty": [" ", 5],
                     "Name": [" ", "Sanke Revival Denial"],
                     "CustomType": [" ", "Gangster Gus3"],
                     "CustomArray": [
-                        " ",
-                        [
-                            {"desc": "Defeat Snakenhotep 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                        ]
-                    ]
-                }
-            }
-        },
-        "Bandit Bob": {
-            "quests": {
-                "The Desert Dungeon Prequest": {
-                    "DialogueText": [
-                        "Door wont open? You gotta find yourself one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed so you can play the party dungeon!",
-                        "You can enter the dungeon with one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed a rare drop from actively fighting Mimics."
+                        [" ", {"desc": "Defeat Snakenhotep 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
                     ]
                 }
             }

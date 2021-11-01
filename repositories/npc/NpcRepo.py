@@ -113,6 +113,9 @@ class NpcRepo(Repository[Npc]):
 		def patchnote(v: str, o, n) -> str:
 			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
 
+		def italic(v: str) -> str:
+			return "{{patchnote/italic|" + v + "}}\n"
+
 		res = head(cls.getWikiName(item))
 		for v, d in change.items():
 			if isinstance(d, tuple):
@@ -127,6 +130,12 @@ class NpcRepo(Repository[Npc]):
 				for quest, subC in d.items():
 					res += bold(camelCaseToTitle(quest))
 					for atr, val in subC.items():
+						if isinstance(val, list):
+							res += italic(camelCaseToTitle(atr))
+							for i, subV in enumerate(val):
+								o, n = subV
+								res += patchnote(str(i), o, n)
+							continue
 						o, n = val
 						res += patchnote(atr, o, n)
 

@@ -1,5 +1,6 @@
 from helpers.CodeReader import IdleonReader
 from repositories.AchievementRepo import AchievementRepo
+from repositories.BribeRepo import BribeRepo
 from repositories.BubbleRepo import BubbleRepo
 from repositories.BuildingRepo import BuildingRepo
 from repositories.GemShopRepo import GemShopRepo
@@ -41,6 +42,7 @@ from repositories.item.sources.CustomSourceRepo import CustomSourceRepo
 from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
 from repositories.item.sources.SourceRepo import SourceRepo
 from repositories.item.sources.WikiSourceRepo import WikiSourceRepo
+from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.npc.QuestNameRepo import QuestNameRepo
@@ -67,6 +69,7 @@ DungTraitRepo.initialise(codeReader)
 DungPassivesRepo.initialise(codeReader)
 DungItemRepo.initialise(codeReader)
 DungEnemyRepo.initialise(codeReader)
+BribeRepo.initialise(codeReader)
 
 MapNameRepo.initialise(codeReader)
 MapDataRepo.initialise(codeReader)
@@ -94,6 +97,7 @@ TalentNameRepo.initialise(codeReader)
 QuestNameRepo.initialise(codeReader)
 NpcHeadRepo.initialise(codeReader)
 NpcRepo.initialise(codeReader)
+NpcNoteRepo.initialise(codeReader)
 TaskUnlocksRepo.initialise(codeReader)
 
 SourceRepo.initialise(codeReader)
@@ -103,4 +107,4 @@ EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
-NpcRepo.compareVersions(IdleonReader("130"), IdleonReader("steam130b", True))
+GemShopRepo.compareVersions(IdleonReader("130"), IdleonReader("steam130b", True))

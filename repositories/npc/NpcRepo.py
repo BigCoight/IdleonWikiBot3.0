@@ -3,10 +3,12 @@ from typing import List, Dict, Set
 
 from definitions.common.Component import Component
 from definitions.common.CustomReq import CustomReq
+from definitions.common.ExpType import ExpType
 from definitions.questdef.CustomQuest import CustomQuest
 from definitions.questdef.DialogueLine import DialogueLine
 from definitions.questdef.ItemQuest import ItemQuest
 from definitions.questdef.Npc import Npc
+from definitions.questdef.Quest import ExpReward, CoinReward
 from helpers.CodeReader import IdleonReader
 from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, camelCaseToTitle
 from repositories.master.Repository import Repository
@@ -33,7 +35,7 @@ class NpcRepo(Repository[Npc]):
 			if quests := re.split(reQuest, questData[i + 1]):
 				npcName = replaceUnderscores(questData[i])
 				currentNpc = Npc(
-					head = NpcHeadRepo.get(npcName),
+					head = NpcHeadRepo.getHead(npcName),
 					dialogue = [],
 					quests = {}
 				)
@@ -92,6 +94,17 @@ class NpcRepo(Repository[Npc]):
 		if rew := temp.get("Rewards"):
 			questRew = []
 			for k in range(0, len(rew), 2):
+				if "Experience" == rew[k][:10]:
+					questRew.append(ExpReward(
+						type = ExpType(int(rew[k][10:])),
+						amount = rew[k + 1]
+					))
+					continue
+				if "COIN" in rew[k]:
+					questRew.append(CoinReward(
+						coins = rew[k + 1],
+					))
+					continue
 				questRew.append(Component(
 					item = rew[k],
 					quantity = rew[k + 1]

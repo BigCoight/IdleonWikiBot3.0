@@ -11,3 +11,4 @@ class CustomQuest(Quest):
 	def getRequirements(self) -> List[CustomReq]:
 		return self.CustomArray
 
+

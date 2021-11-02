@@ -1,11 +1,10 @@
-from typing import Union
+from typing import Union, Callable, Dict
 
-from pydantic import BaseModel
+from definitions.master.IdleonModel import IdleonModel
+from helpers.CustomTypes import Integer
 
-from helpers.CustomTypes import Numeric, Integer
 
-
-class NpcHead(BaseModel):
+class NpcHead(IdleonModel):
 	location: str
 	world: str
 	noQuest: Integer
@@ -14,3 +13,21 @@ class NpcHead(BaseModel):
 	starSign: str
 	mothersMaidenName: str
 	notes: str
+
+	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
+		return {
+			"world": "world",
+			"location": "location",
+			"noquest": "noQuest",
+			"repeatable": "repeatable",
+			"birthweight": "birthWeight",
+			"starsign": "starSign",
+			"mmm": "mothersMaidenName",
+			"notes": "notes",
+		}
+
+	def writeWiki(self, newLine = True) -> str:
+		res = "{{npc\n"
+		res += super().writeWiki()
+		res += "}}"
+		return res

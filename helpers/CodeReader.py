@@ -114,4 +114,5 @@ class IdleonReader:
 		self.codeReader.addSection("DungMobs = function () {", "DungEnemies")
 		self.codeReader.addSection("DungKEYCHAINS = function () {", "DungKeychain")
 		self.codeReader.addSection("UnlockinRNGitems = function () {", "UnlockRNG")
+		self.codeReader.addSection("BribeDescriptions = function () {", "Bribes")
 		self.codeReader.readCode()

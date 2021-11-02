@@ -3,7 +3,7 @@
         "Falloween Pumpkin": {
             "quests": {
                 "The Spookyness": {
-                    "Type": "Custom",
+                    "Type": Custom,
                     "DialogueText": "Falloween is meant to be scary and what's scarier than death right? Go kill some monsters! <br> QUEST:Defeat monsters without having AUTO turned on.",
                     "NextIndex": 5,
                     "ConsumeItems": false,
@@ -15,7 +15,7 @@
                     "CustomArray": [{"desc": "Defeat monsters:", "finalV": 50, "type": "GreaterEqual", "startV": 0}]
                 },
                 "The Scaryness": {
-                    "Type": "Custom",
+                    "Type": Custom,
                     "DialogueText": "Hmm that may have scared the monsters but you seem unfazed... how about you go play a party dungeon? I heard those things are a true nightmare! <br> QUEST:Play a party dungeon with a party of 4 or more people.",
                     "NextIndex": 8,
                     "ConsumeItems": false,
@@ -35,7 +35,7 @@
                     ]
                 },
                 "The Horroriness": {
-                    "Type": "Custom",
+                    "Type": Custom,
                     "DialogueText": "Hmm still not scared eh? Well let's see if you can stomach the sheer terror of a RECYCLED QUEST! <br> QUEST:Defeat monsters without having AUTO turned on.",
                     "NextIndex": 11,
                     "ConsumeItems": false,
@@ -47,7 +47,7 @@
                     "CustomArray": [{"desc": "Defeat Monsters:", "finalV": 300, "type": "GreaterEqual", "startV": 0}]
                 },
                 "The Booeyness": {
-                    "Type": "Custom",
+                    "Type": Custom,
                     "DialogueText": "Ok ok you've got nerves of steel. Let's get back to scaring others then! <br> QUEST:Say 'boo' to 200 different people without closing the Game. If you do your counter will reset.",
                     "NextIndex": 14,
                     "ConsumeItems": false,
@@ -64,7 +64,7 @@
                     }]
                 },
                 "The Afterparty": {
-                    "Type": "Custom",
+                    "Type": Custom,
                     "DialogueText": "Well I've got one last trick for ya... and what a trick it is! After all what's scarier than having to socialize with others?? <br> QUEST: Defeat monsters with other party members around you.",
                     "NextIndex": 17,
                     "ConsumeItems": false,
@@ -84,6 +84,48 @@
         }
     },
     "changes": {
+        "Gangster Gus": {
+            "quests": {
+                "Perfect Progress Score": {
+                    "DialogueText": [
+                        "If you get 100% Progress by passing them rooms you'll awaken the boss... and you KNOW he finna have that loot on 'im! QUEST:Defeat Snakenhotep who will come out of hiding if you get 100% Progress.",
+                        "If you get 100% Progress by passing them rooms you'll awaken the boss... and you KNOW he finna have that loot on 'im! <br> QUEST:Defeat Snakenhotep who will come out of hiding if you get 100% Progress."
+                    ]
+                },
+                "Sanke Revival Denial": {
+                    "Type": [" ", Custom],
+                    "DialogueText": [
+                        " ",
+                        "Nah man I ain't gon let this slide. You go on in there and defeat that big bad for real! <br> QUEST: Defeat Enraged Snakenhotep. I'll give you a hint... those skull rocks must be destroyed at all costs!"
+                    ],
+                    "NextIndex": [" ", 12],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 11],
+                    "Rewards": [
+                        [" ", {"item": "GemP16", "quantity": 3}],
+                        [" ", {"item": "DungCredits1", "quantity": 25}]
+                    ],
+                    "QuestName": [" ", "Gangster Gus3"],
+                    "Difficulty": [" ", 5],
+                    "Name": [" ", "Sanke Revival Denial"],
+                    "CustomType": [" ", "Gangster Gus3"],
+                    "CustomArray": [
+                        [" ", {"desc": "Defeat Snakenhotep 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                }
+            }
+        },
+        "Bandit Bob": {
+            "quests": {
+                "The Desert Dungeon Prequest": {
+                    "DialogueText": [
+                        "Door wont open? You gotta find yourself one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed so you can play the party dungeon!",
+                        "You can enter the dungeon with one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed a rare drop from actively fighting Mimics."
+                    ]
+                }
+            }
+        },
         "Stiltzcho": {
             "quests": {
                 "Outta the Way Slimes": {
@@ -92,7 +134,10 @@
                         "Thay do respawn very quick so you must do it fast! Remember to Forfeit the Quest using the Codex if you run out of time! <br> QUEST:Kill 10 Slimes before time runs out"
                     ],
                     "Rewards": [
-                        [{"item": "Experience0", "quantity": 1000}, {"item": "Experience0", "quantity": 2000}]
+                        [
+                            {"type": Class, "amount": 1000},
+                            {"type": Class, "amount": 2000}
+                        ]
                     ],
                     "CustomArray": [
                         [
@@ -112,48 +157,6 @@
                     ],
                     "ItemReq": [
                         [{"item": "Quest7", "quantity": 5}, {"item": "Quest7", "quantity": 4}]
-                    ]
-                }
-            }
-        },
-        "Bandit Bob": {
-            "quests": {
-                "The Desert Dungeon Prequest": {
-                    "DialogueText": [
-                        "Door wont open? You gotta find yourself one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed so you can play the party dungeon!",
-                        "You can enter the dungeon with one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed a rare drop from actively fighting Mimics."
-                    ]
-                }
-            }
-        },
-        "Gangster Gus": {
-            "quests": {
-                "Perfect Progress Score": {
-                    "DialogueText": [
-                        "If you get 100% Progress by passing them rooms you'll awaken the boss... and you KNOW he finna have that loot on 'im! QUEST:Defeat Snakenhotep who will come out of hiding if you get 100% Progress.",
-                        "If you get 100% Progress by passing them rooms you'll awaken the boss... and you KNOW he finna have that loot on 'im! <br> QUEST:Defeat Snakenhotep who will come out of hiding if you get 100% Progress."
-                    ]
-                },
-                "Sanke Revival Denial": {
-                    "Type": [" ", "Custom"],
-                    "DialogueText": [
-                        " ",
-                        "Nah man I ain't gon let this slide. You go on in there and defeat that big bad for real! <br> QUEST: Defeat Enraged Snakenhotep. I'll give you a hint... those skull rocks must be destroyed at all costs!"
-                    ],
-                    "NextIndex": [" ", 12],
-                    "ConsumeItems": [" ", false],
-                    "InventorySpacesNeeded": [" ", 2],
-                    "NoSpaceIndex": [" ", 11],
-                    "Rewards": [
-                        [" ", {"item": "GemP16", "quantity": 3}],
-                        [" ", {"item": "DungCredits1", "quantity": 25}]
-                    ],
-                    "QuestName": [" ", "Gangster Gus3"],
-                    "Difficulty": [" ", 5],
-                    "Name": [" ", "Sanke Revival Denial"],
-                    "CustomType": [" ", "Gangster Gus3"],
-                    "CustomArray": [
-                        [" ", {"desc": "Defeat Snakenhotep 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
                     ]
                 }
             }

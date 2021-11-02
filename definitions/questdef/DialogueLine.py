@@ -7,3 +7,6 @@ class DialogueLine(IdleonModel):
 	Type: QuestType
 	DialogueText: str
 	NextIndex: Integer
+
+	def writeWiki(self, newLine = True) -> str:
+		return "{{dialogue/row|text=" + self.DialogueText + "}}\n"

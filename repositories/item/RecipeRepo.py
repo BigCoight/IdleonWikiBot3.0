@@ -3,6 +3,7 @@ from queue import Queue
 from typing import List, Set
 
 from definitions.itemdef.Recipe import Recipe, Component, DetRecipeComponent, DetailedRecipe
+from helpers.CodeReader import IdleonReader
 from helpers.CustomTypes import Integer
 from helpers.HelperFunctions import formatStr, wrap
 from repositories.item.ItemDetailRepo import ItemDetailRepo
@@ -130,5 +131,5 @@ class RecipeRepo(Repository[Recipe]):
 		return {"recipe"}
 
 	@classmethod
-	def compareVersions(cls, v1: str, v2: str, ignored: Set[str] = set()):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
 		return super().compareVersions(v1, v2, {"detailedRecipe", "recipeFrom", 'intID'})

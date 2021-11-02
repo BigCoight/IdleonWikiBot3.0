@@ -1,3 +1,4 @@
+from definitions.common.Component import Component
 from definitions.common.Source import Source
 from definitions.itemdef.Sources import Sources
 from definitions.itemdef.initialtypes.ItemTypes import TypeGen
@@ -135,6 +136,8 @@ class SourceRepo(Repository[Sources]):
 		for npc, data in NpcRepo.items():
 			for questN, quest in data.quests.items():
 				for reward in quest.Rewards:
+					if not isinstance(reward, Component):
+						continue
 					if reward.item[:-1] == "SmithingRecipes":
 						cls.addToRecipeFrom(RecipeRepo.getFromComponent(reward), Source(
 							txtName = f"{npc}: {quest.Name}",

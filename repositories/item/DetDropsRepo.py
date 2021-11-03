@@ -10,7 +10,15 @@ from repositories.master.Repository import Repository
 class DetDropsRepo(Repository[DetDrops]):
 
 	@classmethod
+	def initDependencies(cls) -> None:
+		DropTableRepo.initialise(cls.codeReader)
+		EnemyDetailsRepo.initialise(cls.codeReader)
+		EnemyTableRepo.initialise(cls.codeReader)
+		SubTableRepo.initialise(cls.codeReader)
+
+	@classmethod
 	def generateRepo(cls) -> None:
+		cls.initDependencies()
 		for table, drops in DropTableRepo.items():
 			if not SubTableRepo.contains(table):
 				continue

@@ -21,6 +21,7 @@ from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
 from definitions.itemdef.specifictypes.master.DescItem import DescItem
 from helpers.CodeReader import IdleonReader
 from helpers.HelperFunctions import camelCaseToTitle
+from repositories.dungeons.KeychainBonusRepo import KeychainBonusRepo
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
 from repositories.item.CardRepo import CardRepo
 from repositories.item.FishingToolkitRepo import FishingToolkitRepo
@@ -43,6 +44,7 @@ class SpecificItemRepo(Repository[BaseItem]):
 		EnemyDetailsRepo.initialise(cls.codeReader)
 		StatueRepo.initialise(cls.codeReader)
 		FishingToolkitRepo.initialise(cls.codeReader)
+		KeychainBonusRepo.initialise(cls.codeReader)
 
 	@classmethod
 	def generateRepo(cls) -> None:

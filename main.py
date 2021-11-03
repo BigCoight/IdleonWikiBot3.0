@@ -30,7 +30,6 @@ from repositories.item.VendorRepo import VendorRepo
 from repositories.item.sources.CustomSourceRepo import CustomSourceRepo
 from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
 from repositories.item.sources.SourceRepo import SourceRepo
-from repositories.item.sources.WikiSourceRepo import WikiSourceRepo
 from repositories.misc.AchievementRepo import AchievementRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
@@ -108,7 +107,6 @@ TaskUnlocksRepo.initialise(codeReader)
 PostOfficeUpgradesRepo.initialise(codeReader)
 
 SourceRepo.initialise(codeReader)
-WikiSourceRepo.initialise(codeReader)
 ItemNoteRepo.initialise(codeReader)
 EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)

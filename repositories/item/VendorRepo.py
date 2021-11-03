@@ -3,9 +3,9 @@ from typing import List
 
 from definitions.itemdef.Vendors import Vendors, Vendor, ItemVendors
 from helpers.HelperFunctions import replaceUnderscores
-from repositories.misc.MapNameRepo import MapNameRepo
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.master.Repository import Repository
+from repositories.misc.MapNameRepo import MapNameRepo
 
 
 class VendorRepo(Repository[Vendors]):
@@ -14,11 +14,17 @@ class VendorRepo(Repository[Vendors]):
 	"""
 
 	@classmethod
+	def initDependencies(cls) -> None:
+		MapNameRepo.initialise(cls.codeReader)
+		ItemDetailRepo.initialise(cls.codeReader)
+
+	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["ShopItems", "ShopQTY", "ShopLocations"]
 
 	@classmethod
 	def generateRepo(cls) -> None:
+		cls.initDependencies()
 		reElements = r'"([a-zA-Z0-_ ]*)"\.'
 		shopItemData = cls.getSection(0)
 		shopsItems = [x.split(" ") for x in re.findall(reElements, shopItemData)]

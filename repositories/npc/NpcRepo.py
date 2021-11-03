@@ -20,11 +20,17 @@ class NpcRepo(Repository[Npc]):
 	questToName: Dict[str, str] = {}
 
 	@classmethod
+	def initDependencies(cls) -> None:
+		NpcHeadRepo.initialise(cls.codeReader)
+		QuestNameRepo.initialise(cls.codeReader)
+
+	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["Quests"]
 
 	@classmethod
 	def generateRepo(cls) -> None:
+		cls.initDependencies()
 		reNpcs = r'..\.addDialogueFor\("([a-zA-Z0-9_]*)", [^\s"]*\)'
 		reQuest = r"\.addLine_([a-zA-Z]*)\({"
 		reQData = r" ?,?([a-zA-Z]*): "
@@ -57,7 +63,7 @@ class NpcRepo(Repository[Npc]):
 						cls.addCustomQuest(currentNpc, temp)
 					elif quests[j] == "ItemsAndSpaceRequired":
 						cls.addItemQuest(currentNpc, temp)
-					
+
 					currentNpc.dialogue.append(DialogueLine.parse_obj(temp))
 
 				cls.add(npcName, currentNpc)

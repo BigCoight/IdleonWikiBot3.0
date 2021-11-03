@@ -5,9 +5,6 @@ from definitions.itemdef.initialtypes.ItemTypes import TypeGen
 from definitions.questdef.QuestType import QuestType
 from helpers.Constants import Constants
 from helpers.HelperFunctions import isRecipe
-from repositories.misc.GemShopRepo import GemShopRepo
-from repositories.misc.world2.PostOfficeRepo import PostOfficeRepo
-from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
 from repositories.dungeons.FlurboShopRepo import FlurboShopRepo
 from repositories.dungeons.KeychainBonusRepo import KeychainBonusRepo
 from repositories.enemies.DropTableRepo import DropTableRepo
@@ -20,6 +17,9 @@ from repositories.item.RefineryCostRepo import RefineryCostRepo
 from repositories.item.VendorRepo import VendorRepo
 from repositories.item.sources.CustomSourceRepo import CustomSourceRepo
 from repositories.master.Repository import Repository
+from repositories.misc.GemShopRepo import GemShopRepo
+from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
+from repositories.misc.world2.PostOfficeRepo import PostOfficeRepo
 from repositories.npc.NpcRepo import NpcRepo
 
 
@@ -30,11 +30,30 @@ class SourceRepo(Repository[Sources]):
 	"""
 
 	@classmethod
+	def initDependencies(cls) -> None:
+		DropTableRepo.initialise(cls.codeReader)
+		EnemyDetailsRepo.initialise(cls.codeReader)
+		PostOfficeRepo.initialise(cls.codeReader)
+		GemShopRepo.initialise(cls.codeReader)
+		EnemyTableRepo.initialise(cls.codeReader)
+		ItemDetailRepo.initialise(cls.codeReader)
+		RecipeRepo.initialise(cls.codeReader)
+		RefineryCostRepo.initialise(cls.codeReader)
+		VendorRepo.initialise(cls.codeReader)
+		FlurboShopRepo.initialise(cls.codeReader)
+		KeychainBonusRepo.initialise(cls.codeReader)
+		NpcRepo.initialise(cls.codeReader)
+		AnvilRepo.initialise(cls.codeReader)
+		TaskUnlocksRepo.initialise(cls.codeReader)
+		CustomSourceRepo.initialise(cls.codeReader)
+
+	@classmethod
 	def excludeDefaults(cls) -> bool:
 		return True
 
 	@classmethod
 	def generateRepo(cls) -> None:
+		cls.initDependencies()
 		cls.addRecipes()
 		cls.addEnemyDroptables()
 		cls.addRefinery()

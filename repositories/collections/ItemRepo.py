@@ -1,5 +1,4 @@
 from definitions.collections.Item import Item
-from definitions.itemdef.initialtypes.ItemTypes import TypeGen
 from repositories.item.AnvilRepo import AnvilRepo
 from repositories.item.DetDropsRepo import DetDropsRepo
 from repositories.item.RecipeRepo import RecipeRepo
@@ -48,16 +47,13 @@ class ItemRepo(Repository[Item]):
 			return True
 		if name in {"EXP", "Blank", "LockedInvSpace", "COIN", "TalentBook1", "TalentBook2",
 		            "TalentBook3", "TalentBook4", "TalentBook5", "SmithingRecipes1", "SmithingRecipes2",
-		            "SmithingRecipes3", "SmithingRecipes4", "ExpSmith1", "Quest8", "EquipmentShirts8"}:
+		            "SmithingRecipes3", "SmithingRecipes4", "ExpSmith1", "Quest8", "EquipmentShirts8", "FoodHealth1d",
+		            "FoodHealth2d", "FoodHealth3d", "PremiumGem"}:
 			return True
 		if name[:3] == "Gem":
 			return True
 		if data.item.displayName in {"Filler", "FILLER", "Blank"}:
 			return True
-
-		if data.item.typeGen != TypeGen.aKeychain:
-			return True
-
 		return False
 
 	@classmethod

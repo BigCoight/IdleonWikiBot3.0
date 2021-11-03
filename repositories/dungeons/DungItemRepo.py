@@ -4,10 +4,10 @@ from definitions.dungeons.DungItem import DungItem
 from helpers.Constants import Constants
 from helpers.HelperFunctions import getFromSplitArray, getFromArrayArray
 from repositories.AchievementRepo import AchievementRepo
-from repositories.master.ListRepository import ListRepository
+from repositories.master.Repository import Repository
 
 
-class DungItemRepo(ListRepository[DungItem]):
+class DungItemRepo(Repository[DungItem]):
 	"""
 	Depends on AchievementRepo
 	"""
@@ -24,7 +24,7 @@ class DungItemRepo(ListRepository[DungItem]):
 		for n, item in enumerate(data):
 			worldIndex = int(achieveUn[n]) // 70
 			world = Constants.worlds[worldIndex]
-			cls.add(DungItem(
+			cls.add(item[0], DungItem(
 				name = item[0],
 				bonus = item[1],
 				increment = item[2],

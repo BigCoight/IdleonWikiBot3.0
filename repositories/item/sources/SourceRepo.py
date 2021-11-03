@@ -18,6 +18,7 @@ from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.RefineryCostRepo import RefineryCostRepo
 from repositories.item.VendorRepo import VendorRepo
+from repositories.item.sources.CustomSourceRepo import CustomSourceRepo
 from repositories.master.Repository import Repository
 from repositories.npc.NpcRepo import NpcRepo
 
@@ -43,7 +44,57 @@ class SourceRepo(Repository[Sources]):
 		cls.addQuestRewards()
 		cls.addTaskUnlocks()
 		cls.addGemShop()
+		cls.addSkilling()
+		cls.addAnvil()
+		cls.addFlurboShop()
+		cls.addKeychains()
 
+		for item, sources in CustomSourceRepo.items():
+			for source in sources.sources:
+				cls.addToSource(item, source)
+			for source in sources.recipeFrom:
+				cls.addToRecipeFrom(item, source)
+			for source in sources.questAss:
+				cls.addToQuestAss(item, source)
+
+	@classmethod
+	def addAnvil(cls):
+		for item, _ in AnvilRepo.items():
+			if not ItemDetailRepo.contains(item):
+				continue
+			cls.addToSource(item, Source(
+				wikiName = "[[Smithing#Production items|Anvil Production]]",
+				txtName = "Anvil Production"
+			))
+
+	@classmethod
+	def addFlurboShop(cls):
+		for item, _ in FlurboShopRepo.items():
+			if not ItemDetailRepo.contains(item):
+				continue
+			if "Key" == item[:3]:
+				continue
+			cls.addToSource(item, Source(
+				wikiName = "[[Dungeons#Flurbo Shop|Flurbo Shop]]",
+				txtName = "Flurbo Shop"
+			))
+
+	@classmethod
+	def addKeychains(cls):
+		for item, _ in KeychainBonusRepo.items():
+			if not ItemDetailRepo.contains(item):
+				continue
+			cls.addToSource(item, Source(
+				wikiName = "[[Dungeons#Flurbo Shop|Flurbo Shop]]",
+				txtName = "Flurbo Shop"
+			))
+			cls.addToSource(item, Source(
+				wikiName = "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
+				txtName = "Flurbo Shop"
+			))
+
+	@classmethod
+	def addSkilling(cls):
 		for item, data in ItemDetailRepo.items():
 			if data.typeGen == TypeGen.bOre:
 				cls.addToSource(item, Source(
@@ -81,34 +132,6 @@ class SourceRepo(Repository[Sources]):
 					txtName = "Catching"
 				))
 
-		for item, _ in AnvilRepo.items():
-			if not ItemDetailRepo.contains(item):
-				continue
-			cls.addToSource(item, Source(
-				wikiName = "[[Smithing#Production items|Anvil Production]]",
-				txtName = "Anvil Production"
-			))
-
-		for item, _ in FlurboShopRepo.items():
-			if not ItemDetailRepo.contains(item):
-				continue
-			cls.addToSource(item, Source(
-				wikiName = "[[Dungeons#Flurbo Shop|Flurbo Shop]]",
-				txtName = "Flurbo Shop"
-			))
-
-		for item, _ in KeychainBonusRepo.items():
-			if not ItemDetailRepo.contains(item):
-				continue
-			cls.addToSource(item, Source(
-				wikiName = "[[Dungeons#Flurbo Shop|Flurbo Shop]]",
-				txtName = "Flurbo Shop"
-			))
-			cls.addToSource(item, Source(
-				wikiName = "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
-				txtName = "Flurbo Shop"
-			))
-
 	@classmethod
 	def addGemShop(cls):
 		for item, _ in GemShopRepo.items():
@@ -130,6 +153,10 @@ class SourceRepo(Repository[Sources]):
 						wikiName = f"[[Tasks/Unlocks|Task Unlocks Tab {sec + 1}]]",
 						txtName = f"Task Unlocks Tab {sec + 1}"
 					))
+					cls.addToSource(item.item, Source(
+						wikiName = f"[[Tasks/Unlocks|Recipe from Task Unlocks Tab {sec + 1}]]",
+						txtName = f"Task Unlocks Tab {sec + 1}"
+					))
 
 	@classmethod
 	def addQuestRewards(cls):
@@ -142,6 +169,10 @@ class SourceRepo(Repository[Sources]):
 						cls.addToRecipeFrom(RecipeRepo.getFromComponent(reward), Source(
 							txtName = f"{npc}: {quest.Name}",
 							wikiName = f"[[{npc}#{quest.Name}|{quest.Name}]]"
+						))
+						cls.addToSource(RecipeRepo.getFromComponent(reward), Source(
+							txtName = f"{npc}: {quest.Name}",
+							wikiName = f"[[{npc}#{quest.Name}|Recipe from {quest.Name}]]"
 						))
 						continue
 					cls.addToSource(reward.item, Source(
@@ -165,6 +196,10 @@ class SourceRepo(Repository[Sources]):
 					cls.addToRecipeFrom(RecipeRepo.getFromItemStr(drop.item, drop.quantity), Source(
 						txtName = droptable,
 						wikiName = f"[[{droptable}]]"
+					))
+					cls.addToSource(RecipeRepo.getFromItemStr(drop.item, drop.quantity), Source(
+						txtName = droptable,
+						wikiName = f"[[{droptable}|Recipe from {droptable}]]"
 					))
 					continue
 				cls.addToSource(drop.item, Source(
@@ -206,11 +241,18 @@ class SourceRepo(Repository[Sources]):
 			if not EnemyDetailsRepo.contains(enemy):
 				continue
 			wikiName = EnemyDetailsRepo.get(enemy).Name
+			if "Chest" in wikiName:
+				col, name = wikiName.split(" ", 1)
+				wikiName = f"Colosseum/{col}#{name}|{col} {name}"
 			for drop in drops.drops:
 				if drop.item[:-1] == "SmithingRecipes":
 					cls.addToRecipeFrom(RecipeRepo.getFromItemStr(drop.item, drop.quantity), Source(
 						txtName = enemy,
 						wikiName = f"[[{wikiName}]]"
+					))
+					cls.addToSource(RecipeRepo.getFromItemStr(drop.item, drop.quantity), Source(
+						txtName = enemy,
+						wikiName = f"[[{wikiName}|Recipe from {wikiName}]]"
 					))
 					continue
 				cls.addToSource(drop.item, Source(

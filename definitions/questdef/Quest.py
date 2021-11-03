@@ -38,7 +38,6 @@ class Quest(DialogueLine):
 	Rewards: List[Union[ExpReward, CoinReward, Component]]
 	QuestName: str
 	Difficulty: Integer = 0
-	Name: str = ""
 
 	@validator("ConsumeItems", pre = True)
 	def convertStrBool(cls, v: str) -> bool:

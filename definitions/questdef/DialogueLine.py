@@ -7,6 +7,10 @@ class DialogueLine(IdleonModel):
 	Type: QuestType
 	DialogueText: str
 	NextIndex: Integer
+	Name: str = ""
 
 	def writeWiki(self, newLine = True) -> str:
-		return "{{dialogue/row|text=" + self.DialogueText + "}}\n"
+		res = "{{dialogue/row|text=" + self.DialogueText
+		if self.Name:
+			res += f"|quest={self.Name}"
+		return res + "}}\n"

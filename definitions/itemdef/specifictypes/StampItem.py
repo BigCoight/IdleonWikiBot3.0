@@ -33,6 +33,11 @@ class StampData(IdleonModel):
 		res += "}}"
 		return res
 
+	def getMaterial(self):
+		if ItemDetailRepo.contains(self.material):
+			return ItemDetailRepo.getDisplayName(self.material)
+		return self.material
+
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
 		return {
 			"stype": "effect",
@@ -40,7 +45,7 @@ class StampData(IdleonModel):
 			"x1": "x1",
 			"x2": "x2",
 			"i4": "upgradeInterval",
-			"material": "material",
+			"material": self.getMaterial,
 			"i6": "startV",
 			"i7": "mCostExp",
 			"i8": "startingCost",

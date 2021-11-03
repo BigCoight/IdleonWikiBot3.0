@@ -2,10 +2,10 @@ from typing import List
 
 from definitions.Bribe import Bribe
 from helpers.HelperFunctions import getFromSplitArray, replaceUnderscores
-from repositories.master.ListRepository import ListRepository
+from repositories.master.Repository import Repository
 
 
-class BribeRepo(ListRepository[Bribe]):
+class BribeRepo(Repository[Bribe]):
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -15,7 +15,7 @@ class BribeRepo(ListRepository[Bribe]):
 	def generateRepo(cls) -> None:
 		data = getFromSplitArray(cls.getSection())
 		for bribe in data:
-			cls.add(Bribe(
+			cls.add(replaceUnderscores(bribe[0]), Bribe(
 				name = replaceUnderscores(bribe[0]),
 				desc = replaceUnderscores(bribe[1]),
 				cost = bribe[2],

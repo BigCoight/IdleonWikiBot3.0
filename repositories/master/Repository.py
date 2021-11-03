@@ -1,6 +1,8 @@
+import difflib
 import os.path
 from abc import ABC
 from copy import deepcopy
+from enum import Enum
 from typing import Dict, Generic, Optional, TypeVar, List, Set
 
 from pywikibot import Site, Page
@@ -12,6 +14,12 @@ from helpers.HelperFunctions import camelCaseToTitle
 from helpers.JsonEncoder import CompactJSONEncoder
 
 T = TypeVar("T", bound = IdleonModel)
+
+
+class OldType(Enum):
+	New = 0
+	Changed = 1
+	Old = 2
 
 
 class Repository(Generic[T], ABC):
@@ -277,16 +285,19 @@ class Repository(Generic[T], ABC):
 			os.mkdir(cls._oldLocation())
 
 	@classmethod
-	def _isOld(cls, name: str, data: T) -> bool:
+	def _isOld(cls, name: str, data: T) -> OldType:
+		def onlyDelta(x: str) -> bool:
+			return x.startswith("+") or x.startswith("-")
+
 		if not os.path.isfile(f"{cls._oldLocation()}/{name}.txt"):
-			return False
+			return OldType.New
 		with open(f"{cls._oldLocation()}/{name}.txt", mode = 'r') as infile:
 			wiki = data.writeWiki()
 			old = infile.read()
 			if wiki == old:
-				return True
-			# print("".join(difflib.ndiff(wiki.splitlines(), old.splitlines())))
-			return False
+				return OldType.Old
+			print("\n".join(filter(onlyDelta, difflib.ndiff(old.splitlines(), wiki.splitlines()))))
+			return OldType.Changed
 
 	@classmethod
 	def _writeOld(cls, name: str, data: T) -> None:
@@ -317,15 +328,17 @@ class Repository(Generic[T], ABC):
 		wikiPage.save("Coights API 3.0")
 
 	@classmethod
-	def upload(cls) -> None:
+	def upload(cls, debug: bool) -> None:
 		cls._createOldDir()
 		website = Site()
 		for name, data in cls.items():
 			if cls._ignore(name, data):
 				continue
-			if cls._isOld(name, data):
+			if (oldStatus := cls._isOld(name, data)) == OldType.Old:
 				continue
-			print(f'New  {cls.getWikiName(name)}')
+			print(f'{oldStatus.name}  {cls.getWikiName(name)}')
+			if debug:
+				continue
 			cls._upload(website, cls.getWikiName(name), data.writeWiki())
 			cls._writeOld(name, data)
 

@@ -5,7 +5,9 @@ class Constants:
 	worldToCrystal = {"Blunder Hills": "Crystal0", "Yum Yum Desert": "Crystal1", "Frostbite Tundra": "Crystal2"}
 	ignoredEnemies = {"Error", "ForgeA", "ForgeB", "Bandit_Bob", "SoulCard1", "SoulCard2", "SoulCard3", "SoulCard4",
 	                  "SoulCard5", "SoulCard6", "CritterCard1", "CritterCard2", "CritterCard3", "CritterCard4",
-	                  "CritterCard5", "CritterCard6", "CritterCard7", "CritterCard8", "CritterCard9"}
+	                  "CritterCard5", "CritterCard6", "CritterCard7", "CritterCard8", "CritterCard9", "Boss3A",
+	                  "Boss3B", "Boss3C", "rockG", "frogG", "frogP", "frogNest", "frogD", "frogY", "frogR", "frogW",
+	                  "frogGR", "rockS", "target", "rocky", "totem", "cactus", "snakeZ"}
 	skillNames = ["Catching", "Fishing",
 	              "Choppin", "Mining", "Trapping", "Worship"]
 	toolSkills = {"aHatchet": "Choppin", "aFishingRod": "Fishing",

@@ -16,8 +16,8 @@ class GoldenFoodData(IdleonModel):
 
 	def writeWiki(self, newLine = True) -> str:
 		res = "{{gfoodbonus|"
-		res += f"{self.amount}|{self.effect}|"
-		res += "}}"
+		res += f"{self.amount}|{self.effect}"
+		res += "}}\n"
 		return res
 
 
@@ -26,7 +26,7 @@ class GoldenFoodItem(DescItem):
 
 	@classmethod
 	def fromItemDetails(cls, item: ConsumableItem) -> GoldenFoodItem:
-		effect = replaceUnderscores(item.desc_line1.split("_by")[0])
+		effect = replaceUnderscores(item.desc_line1 + " " + item.desc_line2)
 		return GoldenFoodItem(
 			internalName = item.internalID,
 			displayName = item.displayName,
@@ -42,8 +42,9 @@ class GoldenFoodItem(DescItem):
 
 	@classmethod
 	def getDesc(cls, item: Union[ConsumableItem, QuestItem]) -> str:
-		effect = replaceUnderscores(item.desc_line1.split("_by")[0])
-		return f"{effect}. {replaceUnderscores(item.desc_line3)}"
+		effect = replaceUnderscores(item.desc_line1 + " " + item.desc_line2)
+		desc = replaceUnderscores(effect.split(" by")[0])
+		return f"{desc}. {replaceUnderscores(item.desc_line3)}"
 
 	def writeAfter(self) -> List[IdleonModel]:
 		return [self.goldenFoodData]

@@ -47,7 +47,7 @@ class CompactJSONEncoder(json.JSONEncoder):
 		elif isinstance(o, BaseModel):
 			return self.encode(o.dict())
 		elif isinstance(o, Enum):
-			return o.name
+			return f'"{o.name}"'
 		elif isinstance(o, float):  # Use scientific notation for floats, where appropiate
 			return format(o, "g")
 		elif isinstance(o, str):  # escape newlines

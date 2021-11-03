@@ -37,6 +37,7 @@ class FileRepository(Repository[T]):
 
 	@classmethod
 	def shouldGetFromFile(cls) -> bool:
+		return True
 		if not os.path.isfile(cls._getFileName()):
 			return False
 		with open(cls._getFileName(), mode = "r") as infile:

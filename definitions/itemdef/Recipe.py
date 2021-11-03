@@ -50,12 +50,15 @@ class Recipe(IdleonModel):
 
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
 		return {
-			"anvtab": "tab",
+			"anvtab": self.getTab,
 			"craftnum": "no",
 			"levelreq": "levelReqToCraft",
 			"expgiven": "expGiven",
 			"recipefrom": self.getRecipeFrom
 		}
+
+	def getTab(self) -> str:
+		return f"Anvil Tab {self.tab}"
 
 	def writeRecipe(self) -> str:
 		res = ""

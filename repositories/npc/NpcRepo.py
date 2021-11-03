@@ -57,8 +57,8 @@ class NpcRepo(Repository[Npc]):
 						cls.addCustomQuest(currentNpc, temp)
 					elif quests[j] == "ItemsAndSpaceRequired":
 						cls.addItemQuest(currentNpc, temp)
-					else:
-						currentNpc.dialogue.append(DialogueLine.parse_obj(temp))
+					
+					currentNpc.dialogue.append(DialogueLine.parse_obj(temp))
 
 				cls.add(npcName, currentNpc)
 

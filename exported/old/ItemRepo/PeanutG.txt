@@ -1,22 +1,30 @@
 {{InfoItem
 |type=Golden Food
 |description=Increases Mining Efficiency. Golden foods are never consumed.
-|sellprice=84
-|source=[[Smithing]]
+|sellprice=7750
+|source=[[Smithing]], [[Rocklyte#How It's Made, Episode 7. The Super Peanut|Recipe from How It's Made, Episode 7. The Super Peanut]]
+|notes= 
 }}
-{{gfoodbonus|30|Increases Mining Efficiency|}}{{ForgeSlot
-|anvtab=2
-|craftnum=39
-|levelreq=1
-|expgiven=1
+{{gfoodbonus|30|Increases Mining Efficiency by [%.}}
+{{ForgeSlot
+|anvtab=Anvil Tab 1
+|craftnum=52
+|levelreq=18
+|expgiven=200
 |recipefrom=[[Rocklyte#How It's Made, Episode 7. The Super Peanut|How It's Made, Episode 7. The Super Peanut]]
-|resource1=Copper Ore|quantity1=6
-|resource2=Copper Ore|quantity2=22
+|resource1=Peanut|quantity1=100
+|resource2=Gold Bar|quantity2=50
 }}
 {{detrecipe/tab
 |reci=
-{{detrecipe|3|Copper Ore|6}}
-{{detrecipe|3|Copper Ore|22}}
+{{detrecipe|3|Peanut|100}}
+{{detrecipe|40|Hot Dog|200}}
+{{detrecipe|40|Copper Ore|100}}
+{{detrecipe|40|Bleach Logs|100}}
+{{detrecipe|3|Gold Bar|50}}
 |tot=
-{{detrecipe/totals|Copper Ore|28}}
+{{detrecipe/totals|Gold Bar|50}}
+{{detrecipe/totals|Hot Dog|200}}
+{{detrecipe/totals|Copper Ore|100}}
+{{detrecipe/totals|Bleach Logs|100}}
 }}

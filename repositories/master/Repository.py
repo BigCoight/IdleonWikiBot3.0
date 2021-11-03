@@ -9,7 +9,7 @@ from pywikibot import Site, Page
 
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CodeReader import CodeReader, IdleonReader
-from helpers.ColourPrinter import printGreen, printRed
+from helpers.ColourPrinter import printGreen, printRed, printYellow
 from helpers.HelperFunctions import camelCaseToTitle
 from helpers.JsonEncoder import CompactJSONEncoder
 
@@ -130,6 +130,8 @@ class Repository(Generic[T], ABC):
 			"new": new,
 			"changes": changes
 		}
+
+		printYellow(f"Compared {cls.__name__} with {len(new)} new items and {len(changes)} changes")
 
 		changeName = fr"./exported/changes/{cls.__name__}.json"
 

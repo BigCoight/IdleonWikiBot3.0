@@ -3,7 +3,7 @@ from typing import List
 
 from definitions.itemdef.Vendors import Vendors, Vendor, ItemVendors
 from helpers.HelperFunctions import replaceUnderscores
-from repositories.MapNameRepo import MapNameRepo
+from repositories.misc.MapNameRepo import MapNameRepo
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.master.Repository import Repository
 

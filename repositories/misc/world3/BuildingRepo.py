@@ -1,6 +1,6 @@
 from typing import List
 
-from definitions.Building import Building
+from definitions.misc.world3.Building import Building
 from definitions.common.Component import Component
 from helpers.HelperFunctions import getFromSplitArray
 from repositories.master.Repository import Repository
@@ -31,9 +31,9 @@ class BuildingRepo(Repository[Building]):
 				description = desc[0],
 				bonus = desc[1],
 				lvlUpReq = costs,
-				maxLvl =building[8],
+				maxLvl = building[8],
 				costIncrement = building[2:4],
-				bonusInc =building[9],
-				misc =building[10],
+				bonusInc = building[9],
+				misc = building[10],
 
 			))

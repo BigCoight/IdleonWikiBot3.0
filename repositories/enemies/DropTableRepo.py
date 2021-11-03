@@ -1,7 +1,7 @@
 import re
 from typing import List
 
-from definitions.DropTable import DropTable
+from definitions.enemy.DropTable import DropTable
 from definitions.common.DropTypes import Drop, ItemDrop
 from repositories.master.Repository import Repository
 

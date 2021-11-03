@@ -1,4 +1,4 @@
-from definitions.TaskUnlocks import TaskUnlocks, TaskUnlock
+from definitions.misc.TaskUnlocks import TaskUnlocks, TaskUnlock
 from helpers.HelperFunctions import getFrom4dArray
 from repositories.master.ListRepository import ListRepository
 from typing import List
@@ -23,12 +23,9 @@ class TaskUnlocksRepo(ListRepository[TaskUnlocks]):
 					if part[0] == "EquipmentHats1":
 						return
 					partUnlocks.append(TaskUnlock(
-						item =part[0],
-						tabNo =part[1],
-						recipNo =part[2]
+						item = part[0],
+						tabNo = part[1],
+						recipNo = part[2]
 					))
 				sectionUnlocks.unlocks.append(partUnlocks.copy())
 			cls.add(sectionUnlocks.copy())
-
-
-

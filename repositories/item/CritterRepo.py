@@ -1,8 +1,8 @@
 from typing import List
 
-from definitions.Critter import Critter
+from definitions.itemdef.Critter import Critter
 from helpers.HelperFunctions import getFromSplitArray
-from repositories.MapNameRepo import MapNameRepo
+from repositories.misc.MapNameRepo import MapNameRepo
 from repositories.master.Repository import Repository
 
 

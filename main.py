@@ -1,15 +1,4 @@
 from helpers.CodeReader import IdleonReader
-from repositories.AchievementRepo import AchievementRepo
-from repositories.BribeRepo import BribeRepo
-from repositories.BubbleRepo import BubbleRepo
-from repositories.BuildingRepo import BuildingRepo
-from repositories.GemShopRepo import GemShopRepo
-from repositories.MapNameRepo import MapNameRepo
-from repositories.PostOfficeRepo import PostOfficeRepo
-from repositories.PrayerRepo import PrayerRepo
-from repositories.SaltLickRepo import SaltLickRepo
-from repositories.ShrineRepo import ShrineRepo
-from repositories.TaskUnlocksRepo import TaskUnlocksRepo
 from repositories.arcade.ArcadeBonusRepo import ArcadeBonusRepo
 from repositories.collections.EnemyRepo import EnemyRepo
 from repositories.collections.ItemRepo import ItemRepo
@@ -42,6 +31,18 @@ from repositories.item.sources.CustomSourceRepo import CustomSourceRepo
 from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
 from repositories.item.sources.SourceRepo import SourceRepo
 from repositories.item.sources.WikiSourceRepo import WikiSourceRepo
+from repositories.misc.AchievementRepo import AchievementRepo
+from repositories.misc.GemShopRepo import GemShopRepo
+from repositories.misc.MapNameRepo import MapNameRepo
+from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
+from repositories.misc.world1.BribeRepo import BribeRepo
+from repositories.misc.world2.BubbleRepo import BubbleRepo
+from repositories.misc.world2.PostOfficeRepo import PostOfficeRepo
+from repositories.misc.world2.PostOfficeUpgradesRepo import PostOfficeUpgradesRepo
+from repositories.misc.world3.BuildingRepo import BuildingRepo
+from repositories.misc.world3.PrayerRepo import PrayerRepo
+from repositories.misc.world3.SaltLickRepo import SaltLickRepo
+from repositories.misc.world3.ShrineRepo import ShrineRepo
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
 from repositories.npc.NpcRepo import NpcRepo
@@ -100,6 +101,7 @@ NpcHeadRepo.initialise(codeReader)
 NpcRepo.initialise(codeReader)
 NpcNoteRepo.initialise(codeReader)
 TaskUnlocksRepo.initialise(codeReader)
+PostOfficeUpgradesRepo.initialise(codeReader)
 
 SourceRepo.initialise(codeReader)
 WikiSourceRepo.initialise(codeReader)
@@ -108,4 +110,4 @@ EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
-BribeRepo.compareVersions(IdleonReader("130"), IdleonReader("steam130b", True))
+PostOfficeUpgradesRepo.compareVersions(IdleonReader("130"), IdleonReader("steam130b", True))

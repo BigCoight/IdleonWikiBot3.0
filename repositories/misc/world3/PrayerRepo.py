@@ -1,6 +1,6 @@
 from typing import List
 
-from definitions.Prayer import Prayer
+from definitions.misc.world3.Prayer import Prayer
 from helpers.HelperFunctions import getFromSplitArray, replaceUnderscores
 from repositories.master.Repository import Repository
 

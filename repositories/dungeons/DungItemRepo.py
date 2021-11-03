@@ -3,7 +3,7 @@ from typing import List
 from definitions.dungeons.DungItem import DungItem
 from helpers.Constants import Constants
 from helpers.HelperFunctions import getFromSplitArray, getFromArrayArray
-from repositories.AchievementRepo import AchievementRepo
+from repositories.misc.AchievementRepo import AchievementRepo
 from repositories.master.Repository import Repository
 
 

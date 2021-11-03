@@ -5,9 +5,9 @@ from definitions.itemdef.initialtypes.ItemTypes import TypeGen
 from definitions.questdef.QuestType import QuestType
 from helpers.Constants import Constants
 from helpers.HelperFunctions import isRecipe
-from repositories.GemShopRepo import GemShopRepo
-from repositories.PostOfficeRepo import PostOfficeRepo
-from repositories.TaskUnlocksRepo import TaskUnlocksRepo
+from repositories.misc.GemShopRepo import GemShopRepo
+from repositories.misc.world2.PostOfficeRepo import PostOfficeRepo
+from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
 from repositories.dungeons.FlurboShopRepo import FlurboShopRepo
 from repositories.dungeons.KeychainBonusRepo import KeychainBonusRepo
 from repositories.enemies.DropTableRepo import DropTableRepo

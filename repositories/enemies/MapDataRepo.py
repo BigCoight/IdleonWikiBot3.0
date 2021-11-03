@@ -3,7 +3,7 @@ from typing import List
 
 from definitions.enemy.MapData import MapData
 from helpers.Constants import Constants
-from repositories.MapNameRepo import MapNameRepo
+from repositories.misc.MapNameRepo import MapNameRepo
 from repositories.master.Repository import Repository
 
 

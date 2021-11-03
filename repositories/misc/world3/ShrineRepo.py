@@ -1,4 +1,4 @@
-from definitions.Shrine import Shrine
+from definitions.misc.world3.Shrine import Shrine
 from helpers.HelperFunctions import getFromArrayArray, replaceUnderscores
 from repositories.master.Repository import Repository
 from typing import List

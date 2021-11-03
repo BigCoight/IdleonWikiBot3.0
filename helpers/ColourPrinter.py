@@ -7,3 +7,7 @@ def printGreen(txt: str) -> None:
 
 def printRed(txt: str) -> None:
 	print(Fore.RED + txt + Style.RESET_ALL)
+
+
+def printYellow(txt: str) -> None:
+	print(Fore.YELLOW + txt + Style.RESET_ALL)

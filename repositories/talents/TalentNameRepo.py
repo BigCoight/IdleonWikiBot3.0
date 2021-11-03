@@ -1,6 +1,6 @@
 import re
 
-from definitions.TalentName import TalentName
+from definitions.talents.TalentName import TalentName
 from helpers.HelperFunctions import replaceUnderscores
 from repositories.master.ListRepository import ListRepository
 from typing import List

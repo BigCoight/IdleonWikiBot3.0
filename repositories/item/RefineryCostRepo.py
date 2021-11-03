@@ -1,6 +1,6 @@
 from typing import List
 
-from definitions.RefineryCost import RefineryCost
+from definitions.misc.world3.RefineryCost import RefineryCost
 from definitions.common.Component import Component
 from helpers.HelperFunctions import getFromSplitArray
 from repositories.master.Repository import Repository

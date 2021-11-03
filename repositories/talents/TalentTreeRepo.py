@@ -1,7 +1,7 @@
 import re
 from typing import List
 
-from definitions.TalentTree import TalentTree, Talent
+from definitions.talents.TalentTree import TalentTree, Talent
 from helpers.HelperFunctions import strToArray, formatStr, replaceUnderscores, camelCaseToTitle
 from repositories.master.Repository import Repository
 

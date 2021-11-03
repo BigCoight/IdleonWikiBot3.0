@@ -1,4 +1,4 @@
-from definitions.SaltLick import SaltLick
+from definitions.misc.world3.SaltLick import SaltLick
 from helpers.HelperFunctions import getFromSplitArray
 from repositories.master.ListRepository import ListRepository
 from typing import List

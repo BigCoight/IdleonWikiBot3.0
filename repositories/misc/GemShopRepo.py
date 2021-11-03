@@ -1,4 +1,4 @@
-from definitions.GemShopItem import GemShopItem
+from definitions.misc.GemShopItem import GemShopItem
 from helpers.HelperFunctions import getFromSplitArray
 from repositories.master.Repository import Repository
 from typing import List
@@ -21,11 +21,11 @@ class GemShopRepo(Repository[GemShopItem]):
 			if item[3] == "GemCostNum":
 				continue
 			cls.add(item[0], GemShopItem(
-				itemName =item[1].title(),
-				desc =item[2],
-				cost =item[3],
-				no =item[4],
-				maxPurchases =item[5],
-				qty =item[6],
-				costIncrement =item[7]
+				itemName = item[1].title(),
+				desc = item[2],
+				cost = item[3],
+				no = item[4],
+				maxPurchases = item[5],
+				qty = item[6],
+				costIncrement = item[7]
 			))

@@ -1,7 +1,7 @@
 import re
 from typing import List
 
-from definitions.Bubble import Bubble
+from definitions.misc.world2.Bubble import Bubble
 from definitions.common.Component import Component
 from helpers.HelperFunctions import replaceUnderscores
 from repositories.master.Repository import Repository
@@ -20,7 +20,7 @@ class BubbleRepo(Repository[Bubble]):
 	@classmethod
 	def generateRepo(cls) -> None:
 		bubbleNames = ["Power Cauldron", "Quicc Cauldron", "High-IQ Cauldron", "Kazam Cauldron", "Vials",
-		                "Liquid Shop", "??"]
+		               "Liquid Shop", "??"]
 		bubbleData = cls.getSection().split("],")
 		reEverything = r'"([a-zA-Z0-9_ +{}\',.\-%!$:`?;\n\]\(\)]*)"\.'
 		for n, v in enumerate(bubbleData):
@@ -37,9 +37,9 @@ class BubbleRepo(Repository[Bubble]):
 					if bubData[i] == "Blank":
 						break
 					if len(bubData) < 14:
-						bubbleReq.append(Component(item = bubData[i], quantity= -1))
+						bubbleReq.append(Component(item = bubData[i], quantity = -1))
 						continue
-					bubbleReq.append(Component(item = bubData[i], quantity= bubData[j]))
+					bubbleReq.append(Component(item = bubData[i], quantity = bubData[j]))
 				cls.add(bubData[0], Bubble(
 					cauldron = bubbleNames[n],
 					x1 = bubData[1],
@@ -48,4 +48,3 @@ class BubbleRepo(Repository[Bubble]):
 					description = bubData[9],
 					requirements = bubbleReq.copy()
 				))
-

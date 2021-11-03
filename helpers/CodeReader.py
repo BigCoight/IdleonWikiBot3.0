@@ -69,7 +69,6 @@ class IdleonReader:
 		self.codeReader.addSection('__name__ = "scripts.ItemDefinitions"', "Items", "addNewItem = function")
 		self.codeReader.addSection('__name__ = "scripts.ItemDefinitions2"', "Items2", "addNewItem = function")
 		self.codeReader.addSection("dialogueDefs = new", "Quests", "finishDialogue")
-
 		self.codeReader.addSection("ItemToCraftNAME = function () {", "AnvilItems")
 		self.codeReader.addSection("ItemToCraftCostTYPE = function ()", "Recipes")
 		self.codeReader.addSection("ItemToCraftEXP = function ()", "RecipeLevel")
@@ -115,4 +114,5 @@ class IdleonReader:
 		self.codeReader.addSection("DungKEYCHAINS = function () {", "DungKeychain")
 		self.codeReader.addSection("UnlockinRNGitems = function () {", "UnlockRNG")
 		self.codeReader.addSection("BribeDescriptions = function () {", "Bribes")
+		self.codeReader.addSection("PostOffUpgradeInfo = function () {", "PostOfficeUpgrades")
 		self.codeReader.readCode()

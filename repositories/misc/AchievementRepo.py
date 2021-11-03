@@ -1,6 +1,6 @@
 from typing import List
 
-from definitions.Achievement import Achievement
+from definitions.misc.Achievement import Achievement
 from helpers.HelperFunctions import getFromArrayArray, replaceUnderscores
 from repositories.master.ListRepository import ListRepository
 

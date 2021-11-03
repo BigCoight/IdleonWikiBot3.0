@@ -1,6 +1,6 @@
 from typing import List
 
-from definitions.Bribe import Bribe
+from definitions.misc.world1.Bribe import Bribe
 from helpers.HelperFunctions import getFromSplitArray, replaceUnderscores
 from repositories.master.Repository import Repository
 

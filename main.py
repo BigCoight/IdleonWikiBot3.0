@@ -33,6 +33,7 @@ from repositories.item.sources.SourceRepo import SourceRepo
 from repositories.item.sources.WikiSourceRepo import WikiSourceRepo
 from repositories.misc.AchievementRepo import AchievementRepo
 from repositories.misc.GemShopRepo import GemShopRepo
+from repositories.misc.GuildBonusRepo import GuildBonusRepo
 from repositories.misc.MapNameRepo import MapNameRepo
 from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
@@ -71,7 +72,10 @@ DungTraitRepo.initialise(codeReader)
 DungPassivesRepo.initialise(codeReader)
 DungItemRepo.initialise(codeReader)
 DungEnemyRepo.initialise(codeReader)
+
+# Misc Repos
 BribeRepo.initialise(codeReader)
+GuildBonusRepo.initialise(codeReader)
 
 MapNameRepo.initialise(codeReader)
 MapDataRepo.initialise(codeReader)
@@ -109,5 +113,3 @@ ItemNoteRepo.initialise(codeReader)
 EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
-
-PostOfficeUpgradesRepo.compareVersions(IdleonReader("130"), IdleonReader("steam130b", True))

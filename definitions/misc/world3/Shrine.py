@@ -1,10 +1,11 @@
-from pydantic import BaseModel, validator
+from pydantic import validator
 
+from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Numeric, Integer
 from helpers.HelperFunctions import replaceUnderscores
 
 
-class Shrine(BaseModel):
+class Shrine(IdleonModel):
 	desc: str
 	baseBonus: Numeric
 	increment: Numeric

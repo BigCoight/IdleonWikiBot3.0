@@ -6,6 +6,13 @@ from pydantic import BaseModel
 
 
 class IdleonModel(BaseModel):
+	@classmethod
+	def fromList(cls, data: List[any]) -> IdleonModel:
+		keys = cls.__fields__.keys()
+		if len(keys) != len(data):
+			raise ValueError(f"Length of keys ({len(keys)}) does not match length of data ({len(data)})")
+		return cls.parse_obj({key: val for key, val in zip(keys, data)})
+
 	def shouldCompare(self) -> bool:
 		return True
 

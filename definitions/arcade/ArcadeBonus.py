@@ -1,9 +1,8 @@
-from pydantic import BaseModel
-
+from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Numeric
 
 
-class ArcadeBonus(BaseModel):
+class ArcadeBonus(IdleonModel):
 	effect: str
 	x1: Numeric
 	x2: Numeric

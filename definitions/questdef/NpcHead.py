@@ -9,6 +9,7 @@ class NpcHead(IdleonModel):
 	world: str
 	noQuest: Integer
 	repeatable: str
+	type: str
 	birthWeight: Union[float, Integer]
 	starSign: str
 	mothersMaidenName: str
@@ -19,6 +20,7 @@ class NpcHead(IdleonModel):
 			"world": "world",
 			"location": "location",
 			"noquest": "noQuest",
+			"npcType": "type",
 			"repeatable": "repeatable",
 			"birthweight": "birthWeight",
 			"starsign": "starSign",

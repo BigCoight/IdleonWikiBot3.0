@@ -111,3 +111,5 @@ ItemNoteRepo.initialise(codeReader)
 EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
+
+NpcRepo.exportWikiMult()

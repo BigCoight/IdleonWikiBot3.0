@@ -5,6 +5,7 @@ from pydantic import validator
 from definitions.common.Component import Component
 from definitions.common.CustomReq import CustomReq
 from definitions.common.ExpType import ExpType
+from definitions.common.Note import Note
 from definitions.master.IdleonModel import IdleonModel
 from definitions.questdef.DialogueLine import DialogueLine
 from helpers.CustomTypes import Integer
@@ -38,6 +39,7 @@ class Quest(DialogueLine):
 	Rewards: List[Union[ExpReward, CoinReward, Component]]
 	QuestName: str
 	Difficulty: Integer = 0
+	note: Note = Note(note = " ")
 
 	@validator("ConsumeItems", pre = True)
 	def convertStrBool(cls, v: str) -> bool:

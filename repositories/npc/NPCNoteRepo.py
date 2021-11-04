@@ -27,24 +27,36 @@ class NpcNoteRepo(FileRepository[NpcNote]):
 		questData = re.split(reNpcs, questText)
 		for i in range(1, len(questData), 2):
 			npcName = replaceUnderscores(questData[i])
-			cls.add(npcName, NpcNote(notes = []))
-			sources = cls.searchSource(website, npcName)
+			sources = cls.searchNotes(website, npcName)
 			if not sources:
 				continue
-			for note in sources:
-				cls.get(npcName).notes.append(Note(
-					note = re.escape(note).replace('"', "'").replace("}}", ""),
-				))
+			cls.add(npcName, NpcNote(notes = sources.copy()))
 
 	@classmethod
-	def searchSource(cls, website: Site, siteName: str) -> List[str]:
-		if siteName not in ["", " "]:
-			toSplit = "{{Quest/head}}"
-			page = Page(website, siteName)
-			splitText = page.text.split(toSplit)
-			if len(splitText) > 1:
-				searchText = page.text.split(toSplit)[1]
-				notes = re.findall(r"\|notes=(.*)", searchText)
-				return notes if notes else []
-			return []
-		return []
+	def searchNotes(cls, website: Site, siteName: str) -> Dict[str, Note]:
+		if siteName in ["", " "]:
+			return {}
+		toSplit = "{{Quest/head}}"
+		res = {}
+		page = Page(website, siteName)
+		splitText = page.text.split(toSplit)
+		if not len(splitText) > 1:
+			return {}
+		searchText = page.text.split(toSplit)[1]
+		justQuests = searchText.split("{{dialogue/head}}")[0]
+		quests = justQuests.split("\n}}")
+		for quest in quests:
+			matches = re.findall(r"\|name=(.*)|notes=(.*)", quest)
+			if not len(matches) == 2:
+				continue
+			res[matches[0][0]] = Note(note = matches[1][1])
+		return res
+
+	@classmethod
+	def getNote(cls, npc: str, qName: str) -> Note:
+		if not cls.contains(npc):
+			return Note(note = " ")
+		npcNotes = cls.get(npc).notes
+		if qName not in npcNotes:
+			return Note(note = " ")
+		return npcNotes[qName]

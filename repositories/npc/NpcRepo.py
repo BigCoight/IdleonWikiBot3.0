@@ -12,6 +12,7 @@ from definitions.questdef.Quest import ExpReward, CoinReward
 from helpers.CodeReader import IdleonReader
 from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, camelCaseToTitle
 from repositories.master.Repository import Repository
+from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
 from repositories.npc.QuestNameRepo import QuestNameRepo
 
@@ -23,6 +24,7 @@ class NpcRepo(Repository[Npc]):
 	def initDependencies(cls) -> None:
 		NpcHeadRepo.initialise(cls.codeReader)
 		QuestNameRepo.initialise(cls.codeReader)
+		NpcNoteRepo.initialise(cls.codeReader)
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -58,6 +60,7 @@ class NpcRepo(Repository[Npc]):
 						temp["Name"] = qName.name
 						if quests[j] != "None":
 							cls.questToName[temp["QuestName"]] = qName.name
+							temp["note"] = NpcNoteRepo.getNote(npcName, qName.name)
 					cls.formatRewards(temp)
 					if quests[j] == "Custom":
 						cls.addCustomQuest(currentNpc, temp)
@@ -79,6 +82,9 @@ class NpcRepo(Repository[Npc]):
 				quantity = quant
 			))
 		temp["ItemReq"] = itemReqs.copy()
+		questText = temp["DialogueText"].split("QUEST:")
+		if len(questText) > 1:
+			temp["DialogueText"] = questText[1]
 		currentNpc.quests[temp.get("Name", "Filler")] = (ItemQuest.parse_obj(temp))
 
 	@classmethod
@@ -93,6 +99,9 @@ class NpcRepo(Repository[Npc]):
 				startV = reqs[k + 3]
 			))
 		temp["CustomArray"] = customReqs.copy()
+		questText = temp["DialogueText"].split("QUEST:")
+		if len(questText) > 1:
+			temp["DialogueText"] = questText[1]
 		currentNpc.quests[temp.get("Name", "Filler")] = (CustomQuest.parse_obj(temp))
 
 	@classmethod

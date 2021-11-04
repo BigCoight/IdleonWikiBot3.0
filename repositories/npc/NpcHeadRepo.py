@@ -54,6 +54,7 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 			location = paresedHead.get("location", ""),
 			world = paresedHead.get("world", ""),
 			noQuest = paresedHead.get("noquest", 0),
+			type = paresedHead.get("npcType", ""),
 			repeatable = paresedHead.get("repeatable", ""),
 			birthWeight = paresedHead.get("birthweight", 0),
 			starSign = paresedHead.get("starsign", ""),
@@ -74,6 +75,7 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 			world = "Unknown",
 			noQuest = Integer(0),
 			repeatable = "Unknown",
+			type = "Unknown",
 			birthWeight = cls.doBirthweight(),
 			starSign = cls.doStarsign(),
 			mothersMaidenName = cls.doMMM(),
@@ -246,9 +248,3 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 	@classmethod
 	def doBirthweight(cls):
 		return randint(100, 1000) / 100
-
-
-
-
-
-

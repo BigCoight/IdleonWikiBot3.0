@@ -117,4 +117,5 @@ class IdleonReader:
 		self.codeReader.addSection("PostOffUpgradeInfo = function () {", "PostOfficeUpgrades")
 		self.codeReader.addSection("StarSigns = function () {", "StarSigns")
 		self.codeReader.addSection("SSignInfoUI = function () {", "SSignInfoUI")
+		self.codeReader.addSection("StarQuests = function () {", "Constellations")
 		self.codeReader.readCode()

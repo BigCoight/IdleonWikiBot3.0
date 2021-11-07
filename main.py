@@ -31,6 +31,7 @@ from repositories.item.sources.CustomSourceRepo import CustomSourceRepo
 from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
 from repositories.item.sources.SourceRepo import SourceRepo
 from repositories.misc.AchievementRepo import AchievementRepo
+from repositories.misc.ConstellationsRepo import ConstellationsRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
 from repositories.misc.MapNameRepo import MapNameRepo
@@ -76,9 +77,11 @@ DungEnemyRepo.initialise(codeReader)
 # Misc Repos
 BribeRepo.initialise(codeReader)
 GuildBonusRepo.initialise(codeReader)
+StarSignsRepo.initialise(codeReader)
 
 MapNameRepo.initialise(codeReader)
 MapDataRepo.initialise(codeReader)
+ConstellationsRepo.initialise(codeReader)
 
 VendorRepo.initialise(codeReader)
 AnvilRepo.initialise(codeReader)
@@ -106,7 +109,6 @@ NpcRepo.initialise(codeReader)
 NpcNoteRepo.initialise(codeReader)
 TaskUnlocksRepo.initialise(codeReader)
 PostOfficeUpgradesRepo.initialise(codeReader)
-StarSignsRepo.initialise(codeReader)
 
 SourceRepo.initialise(codeReader)
 ItemNoteRepo.initialise(codeReader)

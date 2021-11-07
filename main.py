@@ -34,6 +34,7 @@ from repositories.misc.AchievementRepo import AchievementRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
 from repositories.misc.MapNameRepo import MapNameRepo
+from repositories.misc.StarSignsRepo import StarSignsRepo
 from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
 from repositories.misc.world2.BubbleRepo import BubbleRepo
@@ -105,6 +106,7 @@ NpcRepo.initialise(codeReader)
 NpcNoteRepo.initialise(codeReader)
 TaskUnlocksRepo.initialise(codeReader)
 PostOfficeUpgradesRepo.initialise(codeReader)
+StarSignsRepo.initialise(codeReader)
 
 SourceRepo.initialise(codeReader)
 ItemNoteRepo.initialise(codeReader)

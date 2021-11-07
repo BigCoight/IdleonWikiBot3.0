@@ -115,4 +115,6 @@ class IdleonReader:
 		self.codeReader.addSection("UnlockinRNGitems = function () {", "UnlockRNG")
 		self.codeReader.addSection("BribeDescriptions = function () {", "Bribes")
 		self.codeReader.addSection("PostOffUpgradeInfo = function () {", "PostOfficeUpgrades")
+		self.codeReader.addSection("StarSigns = function () {", "StarSigns")
+		self.codeReader.addSection("SSignInfoUI = function () {", "SSignInfoUI")
 		self.codeReader.readCode()

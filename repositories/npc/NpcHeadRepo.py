@@ -5,6 +5,7 @@ from typing import List, Dict
 from pywikibot import Site, Page
 
 from definitions.questdef.NpcHead import NpcHead
+from helpers.Constants import Constants
 from helpers.CustomTypes import Integer
 from helpers.HelperFunctions import formatStr, replaceUnderscores
 from repositories.master.FileRepository import FileRepository
@@ -28,6 +29,7 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 		questData = re.split(reNpcs, questText)
 		for i in range(1, len(questData), 2):
 			npcName = replaceUnderscores(questData[i])
+			npcName = Constants.nameConflicts.get(npcName, npcName)
 			if head := cls.searchHead(website, npcName):
 				cls.add(npcName, cls.parseHead(head))
 				continue

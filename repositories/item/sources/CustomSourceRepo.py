@@ -11,6 +11,19 @@ class CustomSourceRepo(Repository[Sources]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
+		for item in ["Quest50", "CardsY11", "CardsY12", "StoneWeb", "StoneT1eb", "StoneAeB"]:
+			cls.addToSource(item, Source(
+				wikiName = "[[Summer Cooler]]",
+				txtName = "Summer Cooler"
+			))
+
+		for item in ["CardsY2", "CardsY0", "CardsY1", "FoodEvent2", "FoodEvent1", "FoodEvent3",
+		             "FoodEvent4"]:
+			cls.addToSource(item, Source(
+				wikiName = "[[Choco Box]]",
+				txtName = "Choco Box"
+			))
+
 		sourceDict = {
 			"Giftmas Event": 'EquipmentHats42',
 			"Valenslimes Day Event": 'EquipmentHats51',

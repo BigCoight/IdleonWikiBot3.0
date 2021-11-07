@@ -10,7 +10,7 @@ class GuildBonus(IdleonModel):
 	x1: Numeric
 	x2: Numeric
 	func: str
-	always50: Integer
+	maxLevel: Integer
 	reqIndex: Integer
 	reqLevel: Integer
 	gpBaseCost: Integer

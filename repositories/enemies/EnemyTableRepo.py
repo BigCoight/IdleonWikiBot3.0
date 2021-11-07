@@ -1,8 +1,8 @@
 import re
 from typing import List
 
-from definitions.enemy.DropTable import DropTable
 from definitions.common.DropTypes import Drop, ItemDrop
+from definitions.enemy.DropTable import DropTable
 from definitions.enemy.EnemyTable import EnemyTable
 from repositories.master.Repository import Repository
 
@@ -24,10 +24,11 @@ class EnemyTableRepo(Repository[EnemyTable]):
 		droptableData = cls.getSection()
 		droptables = re.split(reEnemies, droptableData)
 		for i in range(0, len(droptables) - 1, 2):
+			intName = droptables[i + 1]
 			drops = re.findall(reDrops, droptables[i])
 
 			drops = [Drop.arrayToDropType(drop) for drop in drops]
-			cls.add(droptables[i + 1], EnemyTable(drops = drops.copy()))
+			cls.add(intName, EnemyTable(drops = drops.copy()))
 		cls.insertMissing()
 
 	@classmethod

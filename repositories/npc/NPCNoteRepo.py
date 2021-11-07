@@ -5,6 +5,7 @@ from pywikibot import Site, Page
 
 from definitions.common.Note import Note
 from definitions.questdef.NpcNote import NpcNote
+from helpers.Constants import Constants
 from helpers.HelperFunctions import formatStr, replaceUnderscores
 from repositories.master.FileRepository import FileRepository
 
@@ -27,6 +28,7 @@ class NpcNoteRepo(FileRepository[NpcNote]):
 		questData = re.split(reNpcs, questText)
 		for i in range(1, len(questData), 2):
 			npcName = replaceUnderscores(questData[i])
+			npcName = Constants.nameConflicts.get(npcName, npcName)
 			sources = cls.searchNotes(website, npcName)
 			if not sources:
 				continue

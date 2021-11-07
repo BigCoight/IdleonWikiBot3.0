@@ -2,6 +2,7 @@ import re
 from typing import List
 
 from definitions.enemy.EnemyDetails import EnemyDetails
+from helpers.Constants import Constants
 from helpers.HelperFunctions import strToArray, formatStr, changeChestNames
 from repositories.master.Repository import Repository
 
@@ -28,6 +29,7 @@ class EnemyDetailsRepo(Repository[EnemyDetails]):
 				if atr == "Name":
 					if "Chest" in val:
 						val = changeChestNames(intName, val)
+					val = Constants.nameConflicts.get(val, val)
 				val = strToArray(val) if "[" in val else formatStr(val, [","], replaceUnderscores = True)
 				enemy[atr.strip()] = val
 			if enemy.get("Name") == "Error":

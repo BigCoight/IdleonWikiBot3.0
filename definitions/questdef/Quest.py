@@ -51,12 +51,17 @@ class Quest(DialogueLine):
 		raise NotImplementedError
 
 	def writeWiki(self, newLine = True) -> str:
+		questText = self.DialogueText.split("QUEST:")
+		q = self.DialogueText
+		if len(questText) > 1:
+			q = questText[1]
 		res = "{{Quest"
 		res += f"|name={self.Name}\n"
-		res += f"|text={self.DialogueText}\n"
+		res += f"|text={q}\n"
 		res += f"|difficulty={self.Difficulty}\n"
 		res += f"|requirements={', '.join(map(lambda x: str(x), self.getRequirements()))}\n"
 		res += f"|consumed={'Yes' if self.ConsumeItems else 'No'}\n"
 		res += f"|rewards={', '.join(map(lambda x: str(x), self.Rewards))}\n"
+		res += f"|notes={self.note.note}\n"
 		res += "}}\n"
 		return res

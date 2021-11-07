@@ -11,4 +11,4 @@ class Note(IdleonModel):
 
 	@validator("note")
 	def validateNote(cls, v: str) -> str:
-		return v.replace("}}", "").replace('"', "'")
+		return v.replace("}}\n", "").replace('"', "'")

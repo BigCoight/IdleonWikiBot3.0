@@ -10,6 +10,7 @@ from definitions.questdef.ItemQuest import ItemQuest
 from definitions.questdef.Npc import Npc
 from definitions.questdef.Quest import ExpReward, CoinReward
 from helpers.CodeReader import IdleonReader
+from helpers.Constants import Constants
 from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, camelCaseToTitle
 from repositories.master.Repository import Repository
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
@@ -42,6 +43,7 @@ class NpcRepo(Repository[Npc]):
 		for i in range(1, len(questData), 2):
 			if quests := re.split(reQuest, questData[i + 1]):
 				npcName = replaceUnderscores(questData[i])
+				npcName = Constants.nameConflicts.get(npcName, npcName)
 				currentNpc = Npc(
 					head = NpcHeadRepo.getHead(npcName),
 					dialogue = [],
@@ -82,9 +84,6 @@ class NpcRepo(Repository[Npc]):
 				quantity = quant
 			))
 		temp["ItemReq"] = itemReqs.copy()
-		questText = temp["DialogueText"].split("QUEST:")
-		if len(questText) > 1:
-			temp["DialogueText"] = questText[1]
 		currentNpc.quests[temp.get("Name", "Filler")] = (ItemQuest.parse_obj(temp))
 
 	@classmethod
@@ -99,9 +98,6 @@ class NpcRepo(Repository[Npc]):
 				startV = reqs[k + 3]
 			))
 		temp["CustomArray"] = customReqs.copy()
-		questText = temp["DialogueText"].split("QUEST:")
-		if len(questText) > 1:
-			temp["DialogueText"] = questText[1]
 		currentNpc.quests[temp.get("Name", "Filler")] = (CustomQuest.parse_obj(temp))
 
 	@classmethod

@@ -8,10 +8,10 @@ from definitions.questdef.CustomQuest import CustomQuest
 from definitions.questdef.DialogueLine import DialogueLine
 from definitions.questdef.ItemQuest import ItemQuest
 from definitions.questdef.Npc import Npc
-from definitions.questdef.Quest import ExpReward, CoinReward
+from definitions.questdef.Quest import ExpReward, CoinReward, RecipeReward, TalentReward
 from helpers.CodeReader import IdleonReader
 from helpers.Constants import Constants
-from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, camelCaseToTitle
+from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, camelCaseToTitle, isRecipe, isTalent
 from repositories.master.Repository import Repository
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
@@ -101,25 +101,39 @@ class NpcRepo(Repository[Npc]):
 
 	@classmethod
 	def formatRewards(cls, temp):
-		if rew := temp.get("Rewards"):
-			questRew = []
-			for k in range(0, len(rew), 2):
-				if "Experience" == rew[k][:10]:
-					questRew.append(ExpReward(
-						type = ExpType(int(rew[k][10:])),
-						amount = rew[k + 1]
-					))
-					continue
-				if "COIN" in rew[k]:
-					questRew.append(CoinReward(
-						coins = rew[k + 1],
-					))
-					continue
-				questRew.append(Component(
-					item = rew[k],
+		if "Rewards" not in temp:
+			return
+		rew = temp.get("Rewards")
+		questRew = []
+		for k in range(0, len(rew), 2):
+			if "Experience" == rew[k][:10]:
+				questRew.append(ExpReward(
+					type = ExpType(int(rew[k][10:])),
+					amount = rew[k + 1]
+				))
+				continue
+			if "COIN" in rew[k]:
+				questRew.append(CoinReward(
+					coins = rew[k + 1],
+				))
+				continue
+			if isRecipe(rew[k]):
+				questRew.append(RecipeReward(
+					recipe = rew[k],
 					quantity = rew[k + 1]
 				))
-			temp["Rewards"] = questRew.copy()
+				continue
+			if isTalent(rew[k]):
+				questRew.append(TalentReward(
+					talent = rew[k],
+					quantity = rew[k + 1]
+				))
+				continue
+			questRew.append(Component(
+				item = rew[k],
+				quantity = rew[k + 1]
+			))
+		temp["Rewards"] = questRew.copy()
 
 	@classmethod
 	def getQuestByName(cls, name: str) -> str:

@@ -9,6 +9,9 @@ from definitions.common.Note import Note
 from definitions.master.IdleonModel import IdleonModel
 from definitions.questdef.DialogueLine import DialogueLine
 from helpers.CustomTypes import Integer
+from repositories.item.ItemDetailRepo import ItemDetailRepo
+from repositories.item.RecipeRepo import RecipeRepo
+from repositories.talents.TalentNameRepo import TalentNameRepo
 
 
 class CoinReward(IdleonModel):
@@ -32,11 +35,40 @@ class ExpReward(IdleonModel):
 		return f"{self.amount}x {self.type.name} Experience"
 
 
+class RecipeReward(IdleonModel):
+	recipe: str
+	quantity: int
+
+	def shouldCompare(self) -> bool:
+		return False
+
+	def __str__(self):
+		tab = int(self.recipe[-1]) - 1
+		index = int(self.quantity) + 1
+		item = ItemDetailRepo.getDisplayName(RecipeRepo.getItemAtIndex(tab, index))
+		return f"{item} Recipe"
+
+
+class TalentReward(IdleonModel):
+	talent: str
+	quantity: str
+
+	def shouldCompare(self) -> bool:
+		return False
+
+	def __str__(self):
+		qty = str(self.quantity)
+		no = int(qty[0])
+		index = int(qty[1: no + 1])
+		talent = TalentNameRepo.get(index).name
+		return f"{talent} Talent Book"
+
+
 class Quest(DialogueLine):
 	ConsumeItems: bool
 	InventorySpacesNeeded: Integer
 	NoSpaceIndex: Integer
-	Rewards: List[Union[ExpReward, CoinReward, Component]]
+	Rewards: List[Union[ExpReward, CoinReward, Component, TalentReward, RecipeReward]]
 	QuestName: str
 	Difficulty: Integer = 0
 	note: Note = Note(note = " ")

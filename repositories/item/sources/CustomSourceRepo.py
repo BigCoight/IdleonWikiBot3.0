@@ -281,6 +281,11 @@ class CustomSourceRepo(Repository[Sources]):
 				txtName = "Blunder Hills Merit Shop"
 			))
 
+		cls.addToSource("Quest45", Source(
+			wikiName = "[[Mimic|Active Mimics (1/100)]]",
+			txtName = "Active Mimics (1/100)"
+		))
+
 		cls.addToRecipeFrom("Peanut", Source(
 			wikiName = "[[Picnic Stowaway#Brunchin' with the Blobs|Brunchin' with the Blobs]]",
 			txtName = "Brunchin' with the Blobs"

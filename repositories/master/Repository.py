@@ -38,6 +38,7 @@ class Repository(Generic[T], ABC):
 		if cls.sections and not cls.getSection():
 			printRed(f"Could not find {cls.__name__}'s Section")
 			return None
+		cls.initDependencies()
 		cls.generateRepo()
 		printGreen(f"Generated {cls.__name__}'s repo with {len(cls.repository)} Items")
 		cls._export()

@@ -26,7 +26,6 @@ class ItemRepo(Repository[Item]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		cls.initDependencies()
 		for item, data in SpecificItemRepo.items():
 			if sources := SourceRepo.get(item):
 				if sources.recipeFrom:

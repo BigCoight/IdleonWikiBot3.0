@@ -33,7 +33,6 @@ class NpcRepo(Repository[Npc]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		cls.initDependencies()
 		reNpcs = r'..\.addDialogueFor\("([a-zA-Z0-9_]*)", [^\s"]*\)'
 		reQuest = r"\.addLine_([a-zA-Z]*)\({"
 		reQData = r" ?,?([a-zA-Z]*): "

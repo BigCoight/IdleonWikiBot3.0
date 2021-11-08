@@ -53,7 +53,6 @@ class SourceRepo(Repository[Sources]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		cls.initDependencies()
 		cls.addRecipes()
 		cls.addEnemyDroptables()
 		cls.addRefinery()

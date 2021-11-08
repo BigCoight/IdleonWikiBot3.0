@@ -24,7 +24,6 @@ class VendorRepo(Repository[Vendors]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		cls.initDependencies()
 		reElements = r'"([a-zA-Z0-_ ]*)"\.'
 		shopItemData = cls.getSection(0)
 		shopsItems = [x.split(" ") for x in re.findall(reElements, shopItemData)]

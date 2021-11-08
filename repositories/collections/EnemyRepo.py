@@ -23,7 +23,6 @@ class EnemyRepo(Repository[Enemy]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		cls.initDependencies()
 		for enemy, data in EnemyDetailsRepo.items():
 			cls.add(enemy, Enemy(
 				details = data,

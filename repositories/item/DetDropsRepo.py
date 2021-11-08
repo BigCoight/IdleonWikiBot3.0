@@ -18,7 +18,6 @@ class DetDropsRepo(Repository[DetDrops]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		cls.initDependencies()
 		for table, drops in DropTableRepo.items():
 			if not SubTableRepo.contains(table):
 				continue

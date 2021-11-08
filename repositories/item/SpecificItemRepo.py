@@ -48,7 +48,6 @@ class SpecificItemRepo(Repository[BaseItem]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		cls.initDependencies()
 		havntDone = set()
 		for name, item in ItemDetailRepo.items():
 			if item.typeGen in {TypeGen.dFish, TypeGen.dBugs, TypeGen.dCritters, TypeGen.dSouls, TypeGen.bCraft,

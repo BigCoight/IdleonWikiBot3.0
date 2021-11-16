@@ -148,7 +148,6 @@ class IdleonModel(BaseModel):
 					if isinstance(val, list):
 						diffs[key][atr] = []
 						for elem in val:
-							print(elem)
 							diffs[key][atr].append((" ", elem))
 						continue
 					diffs[key][atr] = (" ", val)

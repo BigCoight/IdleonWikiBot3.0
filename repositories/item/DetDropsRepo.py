@@ -23,7 +23,7 @@ class DetDropsRepo(Repository[DetDrops]):
 				continue
 			for drop in drops.drops:
 				for source in SubTableRepo.get(table).sources:
-					if source.name in {"Boss3A", "Boss3B", "Boss3C"}:
+					if source.name in Constants.ignoredEnemies:
 						continue
 					if not EnemyDetailsRepo.contains(source.name):
 						continue

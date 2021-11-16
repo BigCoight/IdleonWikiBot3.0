@@ -6,10 +6,11 @@ from enum import Enum
 from typing import Dict, Generic, Optional, TypeVar, List, Set
 
 from pywikibot import Site, Page
+from rich.progress import track
 
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CodeReader import CodeReader, IdleonReader
-from helpers.ColourPrinter import printGreen, printRed, printYellow
+from helpers.ColourPrinter import printGreen, printRed, printYellow, printBlue
 from helpers.HelperFunctions import camelCaseToTitle
 from helpers.JsonEncoder import CompactJSONEncoder
 
@@ -293,13 +294,16 @@ class Repository(Generic[T], ABC):
 			return x.startswith("+") or x.startswith("-")
 
 		if not os.path.isfile(f"{cls._oldLocation()}/{name}.txt"):
+			printBlue(f'{OldType.New.name}:  {cls.getWikiName(name)}')
 			return OldType.New
 		with open(f"{cls._oldLocation()}/{name}.txt", mode = 'r') as infile:
 			wiki = data.writeWiki()
 			old = infile.read()
 			if wiki == old:
 				return OldType.Old
+			printBlue(f'{OldType.Changed.name}:  {cls.getWikiName(name)}')
 			print("\n".join(filter(onlyDelta, difflib.ndiff(old.splitlines(), wiki.splitlines()))))
+			print("")
 			return OldType.Changed
 
 	@classmethod
@@ -332,18 +336,22 @@ class Repository(Generic[T], ABC):
 
 	@classmethod
 	def upload(cls, debug: bool) -> None:
+		debugNum = 0
 		cls._createOldDir()
 		website = Site()
-		for name, data in cls.items():
+		for name, data in track(cls.items(), description = f"Uploading {cls.__name__}"):
 			if cls._ignore(name, data):
 				continue
 			if (oldStatus := cls._isOld(name, data)) == OldType.Old:
 				continue
-			print(f'{oldStatus.name}  {cls.getWikiName(name)}')
 			if debug:
+				debugNum += 1
 				continue
 			cls._upload(website, cls.getWikiName(name), data.writeWiki())
 			cls._writeOld(name, data)
+
+		if debug:
+			printYellow(f"{cls.__name__} has {debugNum} changes")
 
 	@classmethod
 	def _manualOld(cls):

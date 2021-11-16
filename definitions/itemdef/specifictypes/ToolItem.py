@@ -10,6 +10,7 @@ from helpers.CustomTypes import Integer
 class ToolItem(StatItem):
 	Skill: str
 	Skill_Power: Integer
+	Speed: Integer
 
 	@classmethod
 	def fromItemDetails(cls, item: EquipItem) -> BaseItem:
@@ -26,6 +27,7 @@ class ToolItem(StatItem):
 			Skill = skill,
 			Skill_Power = item.Weapon_Power,
 			Weapon_Power = 0,
+			Speed = item.Speed,
 			STR = item.STR,
 			AGI = item.AGI,
 			WIS = item.WIS,
@@ -47,5 +49,6 @@ class ToolItem(StatItem):
 		extra = {
 			"skill": "Skill",
 			"skillpower": "Skill_Power",
+			"speed": "Speed"
 		}
 		return {**base, **extra}

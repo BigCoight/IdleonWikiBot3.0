@@ -1,7 +1,7 @@
-from definitions.common.Component import Component
 from definitions.common.Source import Source
 from definitions.itemdef.Sources import Sources
 from definitions.itemdef.initialtypes.ItemTypes import TypeGen
+from definitions.questdef.Quest import CoinReward, ExpReward
 from definitions.questdef.QuestType import QuestType
 from helpers.Constants import Constants
 from helpers.HelperFunctions import isRecipe
@@ -181,7 +181,7 @@ class SourceRepo(Repository[Sources]):
 		for npc, data in NpcRepo.items():
 			for questN, quest in data.quests.items():
 				for reward in quest.Rewards:
-					if not isinstance(reward, Component):
+					if isinstance(reward, (CoinReward, ExpReward)):
 						continue
 					if reward.item[:-1] == "SmithingRecipes":
 						cls.addToRecipeFrom(RecipeRepo.getFromComponent(reward), Source(

@@ -36,21 +36,21 @@ class ExpReward(IdleonModel):
 
 
 class RecipeReward(IdleonModel):
-	recipe: str
+	item: str
 	quantity: int
 
 	def shouldCompare(self) -> bool:
 		return False
 
 	def __str__(self):
-		tab = int(self.recipe[-1]) - 1
+		tab = int(self.item[-1]) - 1
 		index = int(self.quantity) + 1
 		item = ItemDetailRepo.getDisplayName(RecipeRepo.getItemAtIndex(tab, index))
 		return f"{item} Recipe"
 
 
 class TalentReward(IdleonModel):
-	talent: str
+	item: str
 	quantity: str
 
 	def shouldCompare(self) -> bool:

@@ -53,6 +53,8 @@ class ItemRepo(Repository[Item]):
 			return True
 		if data.item.displayName in {"Filler", "FILLER", "Blank"}:
 			return True
+		if data.item.Type == "Dungeon Evaporate":
+			return True
 		return False
 
 	@classmethod

@@ -3,7 +3,7 @@ from typing import Dict
 from pydantic import validator
 
 from definitions.master.IdleonModel import IdleonModel
-from helpers.CustomTypes import Numeric
+from helpers.CustomTypes import Numeric, Integer
 
 
 class Talent(IdleonModel):
@@ -16,6 +16,7 @@ class Talent(IdleonModel):
 	y2: Numeric
 	funcY: str
 	lvlUpText: str
+	skillIndex: Integer
 
 	@validator("x1", "x2", "y1", "y2", pre = True)
 	def funcValidator(cls, v: str):

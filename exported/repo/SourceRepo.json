@@ -305,9 +305,18 @@
     },
     "EquipmentShirts2": {
         "sources": [
-            {"wikiName": "[[Smithing]]", "txtName": "Smithing"}
+            {"wikiName": "[[Smithing]]", "txtName": "Smithing"},
+            {
+                "wikiName": "[[Scripticus#The Smithing Grind|Recipe from The Smithing Grind]]",
+                "txtName": "Scripticus: The Smithing Grind"
+            }
         ],
-        "recipeFrom": [],
+        "recipeFrom": [
+            {
+                "wikiName": "[[Scripticus#The Smithing Grind|The Smithing Grind]]",
+                "txtName": "Scripticus: The Smithing Grind"
+            }
+        ],
         "questAss": []
     },
     "EquipmentPendant10": {
@@ -400,10 +409,18 @@
     "EquipmentShirts10": {
         "sources": [
             {"wikiName": "[[Smithing]]", "txtName": "Smithing"},
-            {"wikiName": "[[Glublin|Recipe from Glublin]]", "txtName": "goblinG"}
+            {"wikiName": "[[Glublin|Recipe from Glublin]]", "txtName": "goblinG"},
+            {
+                "wikiName": "[[Funguy#Videogame Highscores are COOL!|Recipe from Videogame Highscores are COOL!]]",
+                "txtName": "Funguy: Videogame Highscores are COOL!"
+            }
         ],
         "recipeFrom": [
-            {"wikiName": "[[Glublin]]", "txtName": "goblinG"}
+            {"wikiName": "[[Glublin]]", "txtName": "goblinG"},
+            {
+                "wikiName": "[[Funguy#Videogame Highscores are COOL!|Videogame Highscores are COOL!]]",
+                "txtName": "Funguy: Videogame Highscores are COOL!"
+            }
         ],
         "questAss": []
     },
@@ -484,9 +501,18 @@
     },
     "PeanutG": {
         "sources": [
-            {"wikiName": "[[Smithing]]", "txtName": "Smithing"}
+            {"wikiName": "[[Smithing]]", "txtName": "Smithing"},
+            {
+                "wikiName": "[[Rocklyte#How It's Made, Episode 7. The Super Peanut|Recipe from How It's Made, Episode 7. The Super Peanut]]",
+                "txtName": "Rocklyte: How It's Made, Episode 7. The Super Peanut"
+            }
         ],
-        "recipeFrom": [],
+        "recipeFrom": [
+            {
+                "wikiName": "[[Rocklyte#How It's Made, Episode 7. The Super Peanut|How It's Made, Episode 7. The Super Peanut]]",
+                "txtName": "Rocklyte: How It's Made, Episode 7. The Super Peanut"
+            }
+        ],
         "questAss": []
     },
     "InvBag102": {
@@ -2398,6 +2424,7 @@
             {"wikiName": "[[Green Mushroom]]", "txtName": "mushG"},
             {"wikiName": "[[Red Mushroom]]", "txtName": "mushR"},
             {"wikiName": "[[Wood Mushroom]]", "txtName": "mushW"},
+            {"wikiName": "[[Frog]]", "txtName": "frogG"},
             {"wikiName": "[[Bored Bean]]", "txtName": "beanG"},
             {"wikiName": "[[Slime]]", "txtName": "slimeG"},
             {"wikiName": "[[Baby Boa]]", "txtName": "snakeG"},
@@ -2414,7 +2441,6 @@
             {"wikiName": "[[Baba Yaga]]", "txtName": "babayaga"},
             {"wikiName": "[[Amarok]]", "txtName": "wolfA"},
             {"wikiName": "[[Chaotic Amarok]]", "txtName": "wolfB"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "wolfC"},
             {"wikiName": "[[Sandy Pot]]", "txtName": "jarSand"},
             {"wikiName": "[[Mimic]]", "txtName": "mimicA"},
             {"wikiName": "[[Crabcake]]", "txtName": "crabcake"},
@@ -2431,7 +2457,6 @@
             {"wikiName": "[[King Doot]]", "txtName": "babaMummy"},
             {"wikiName": "[[Efaunt]]", "txtName": "Boss2A"},
             {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Boss2B"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "Boss2C"},
             {"wikiName": "[[Sheepie]]", "txtName": "sheep"},
             {"wikiName": "[[Frost Flake]]", "txtName": "flake"},
             {"wikiName": "[[Sir Stache]]", "txtName": "stache"},
@@ -2628,6 +2653,34 @@
             {"wikiName": "[[Crystal Cattle]]", "txtName": "Crystal2"},
             {"wikiName": "[[SuperDropTable1]]", "txtName": "SuperDropTable1"},
             {"wikiName": "[[SuperDropTable1]]", "txtName": "SuperDropTable1"},
+            {
+                "wikiName": "[[Scripticus#The Bigger they are, the Bigger they Fall!|The Bigger they are, the Bigger they Fall!]]",
+                "txtName": "Scripticus: The Bigger they are, the Bigger they Fall!"
+            },
+            {
+                "wikiName": "[[Glumlee#The Impossible Task|The Impossible Task]]",
+                "txtName": "Glumlee: The Impossible Task"
+            },
+            {
+                "wikiName": "[[Picnic Stowaway#The Last Supper, at Least for Today!|The Last Supper, at Least for Today!]]",
+                "txtName": "Picnic Stowaway: The Last Supper, at Least for Today!"
+            },
+            {
+                "wikiName": "[[Rocklyte#Becoming the Best Beginner|Becoming the Best Beginner]]",
+                "txtName": "Rocklyte: Becoming the Best Beginner"
+            },
+            {
+                "wikiName": "[[Wellington#Puzzles and Math, a Winning Combination!|Puzzles and Math, a Winning Combination!]]",
+                "txtName": "Wellington: Puzzles and Math, a Winning Combination!"
+            },
+            {
+                "wikiName": "[[Hoggindaz#Constructing a Tower|Constructing a Tower]]",
+                "txtName": "Hoggindaz: Constructing a Tower"
+            },
+            {
+                "wikiName": "[[Hoggindaz#Taking Samples|Taking Samples]]",
+                "txtName": "Hoggindaz: Taking Samples"
+            },
             {"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Flurbo Shop"}
         ],
         "recipeFrom": [],
@@ -2638,11 +2691,11 @@
             {"wikiName": "[[Crystal Carrot]]", "txtName": "Crystal0"},
             {"wikiName": "[[Green Mushroom]]", "txtName": "mushG"},
             {"wikiName": "[[Red Mushroom]]", "txtName": "mushR"},
+            {"wikiName": "[[Frog]]", "txtName": "frogG"},
             {"wikiName": "[[Bored Bean]]", "txtName": "beanG"},
             {"wikiName": "[[Baba Yaga]]", "txtName": "babayaga"},
             {"wikiName": "[[Amarok]]", "txtName": "wolfA"},
             {"wikiName": "[[Chaotic Amarok]]", "txtName": "wolfB"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "wolfC"},
             {
                 "wikiName": "[[Colosseum/Dewdrop#Bronze Chest|Dewdrop Bronze Chest]]",
                 "txtName": "ChestA1"
@@ -2660,7 +2713,6 @@
             {"wikiName": "[[Baba Yaga]]", "txtName": "babayaga"},
             {"wikiName": "[[Amarok]]", "txtName": "wolfA"},
             {"wikiName": "[[Chaotic Amarok]]", "txtName": "wolfB"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "wolfC"},
             {
                 "wikiName": "[[Colosseum/Dewdrop#Silver Chest|Dewdrop Silver Chest]]",
                 "txtName": "ChestB1"
@@ -2679,7 +2731,6 @@
             {"wikiName": "[[Baba Yaga]]", "txtName": "babayaga"},
             {"wikiName": "[[Amarok]]", "txtName": "wolfA"},
             {"wikiName": "[[Chaotic Amarok]]", "txtName": "wolfB"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "wolfC"},
             {
                 "wikiName": "[[Colosseum/Dewdrop#Golden Chest|Dewdrop Golden Chest]]",
                 "txtName": "ChestC1"
@@ -2740,7 +2791,6 @@
             {"wikiName": "[[Crabcake]]", "txtName": "crabcake"},
             {"wikiName": "[[Biggie Hours]]", "txtName": "babaHour"},
             {"wikiName": "[[Efaunt]]", "txtName": "Boss2A"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "Boss2C"},
             {
                 "wikiName": "[[Colosseum/Sandstone#Bronze Chest|Sandstone Bronze Chest]]",
                 "txtName": "ChestA2"
@@ -2759,7 +2809,6 @@
             {"wikiName": "[[Mashed Potato]]", "txtName": "potato"},
             {"wikiName": "[[Efaunt]]", "txtName": "Boss2A"},
             {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Boss2B"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "Boss2C"},
             {
                 "wikiName": "[[Colosseum/Sandstone#Silver Chest|Sandstone Silver Chest]]",
                 "txtName": "ChestB2"
@@ -2777,7 +2826,6 @@
             {"wikiName": "[[Snelbie]]", "txtName": "snailZ"},
             {"wikiName": "[[Efaunt]]", "txtName": "Boss2A"},
             {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Boss2B"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "Boss2C"},
             {
                 "wikiName": "[[Colosseum/Sandstone#Golden Chest|Sandstone Golden Chest]]",
                 "txtName": "ChestC2"
@@ -3005,6 +3053,82 @@
             {"wikiName": "[[Wood Mushroom]]", "txtName": "mushW"},
             {"wikiName": "[[Walking Stick]]", "txtName": "branch"},
             {"wikiName": "[[Nutto]]", "txtName": "acorn"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "Grasslands2": {
+        "sources": [
+            {"wikiName": "[[Frog]]", "txtName": "frogG"},
+            {"wikiName": "[[Starfire]]", "txtName": "Starfire"},
+            {"wikiName": "[[Dreadlo]]", "txtName": "Dreadlo"},
+            {"wikiName": "[[Godshard]]", "txtName": "Godshard"},
+            {"wikiName": "[[Alien Tree]]", "txtName": "AlienTree"},
+            {"wikiName": "[[Fly Nest]]", "txtName": "BugNest1"},
+            {"wikiName": "[[Butterfly Bar]]", "txtName": "BugNest2"},
+            {"wikiName": "[[Sentient Bowl]]", "txtName": "BugNest3"},
+            {"wikiName": "[[Grocery Bag]]", "txtName": "BugNest4"},
+            {"wikiName": "[[Snowden]]", "txtName": "BugNest5"},
+            {"wikiName": "[[Icicle Nest]]", "txtName": "BugNest6"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "CardsA2": {
+        "sources": [
+            {"wikiName": "[[Frog]]", "txtName": "frogG"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "Quest3": {
+        "sources": [
+            {"wikiName": "[[Frog]]", "txtName": "frogG"}
+        ],
+        "recipeFrom": [],
+        "questAss": [
+            {
+                "wikiName": "[[Picnic Stowaway#Beating Up Frogs for some Sauce|Beating Up Frogs for some Sauce]]",
+                "txtName": "Picnic Stowaway: Beating Up Frogs for some Sauce"
+            }
+        ]
+    },
+    "Quest4": {
+        "sources": [
+            {"wikiName": "[[Frog]]", "txtName": "frogG"}
+        ],
+        "recipeFrom": [],
+        "questAss": [
+            {
+                "wikiName": "[[Picnic Stowaway#Beating Up Frogs for some Sauce|Beating Up Frogs for some Sauce]]",
+                "txtName": "Picnic Stowaway: Beating Up Frogs for some Sauce"
+            }
+        ]
+    },
+    "FoodPotMana1": {
+        "sources": [
+            {"wikiName": "[[Frog]]", "txtName": "frogG"},
+            {
+                "wikiName": "[[Vendors#Blunder Hills|Blunder Hills Vendors]]",
+                "txtName": "Blunder Hills Vendor"
+            },
+            {"wikiName": "[[DropTable1]]", "txtName": "DropTable1"},
+            {"wikiName": "[[DropTable3b]]", "txtName": "DropTable3b"},
+            {"wikiName": "[[DropTable3c]]", "txtName": "DropTable3c"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "EquipmentHats6": {
+        "sources": [
+            {"wikiName": "[[Frog]]", "txtName": "frogG"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "InvStorageF": {
+        "sources": [
+            {"wikiName": "[[Frog]]", "txtName": "frogG"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -3509,16 +3633,14 @@
     "Meatloaf": {
         "sources": [
             {"wikiName": "[[Amarok]]", "txtName": "wolfA"},
-            {"wikiName": "[[Chaotic Amarok]]", "txtName": "wolfB"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "wolfC"}
+            {"wikiName": "[[Chaotic Amarok]]", "txtName": "wolfB"}
         ],
         "recipeFrom": [],
         "questAss": []
     },
     "CardsZ2": {
         "sources": [
-            {"wikiName": "[[Amarok]]", "txtName": "wolfA"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "wolfC"}
+            {"wikiName": "[[Amarok]]", "txtName": "wolfA"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -3526,8 +3648,7 @@
     "EquipmentHats39": {
         "sources": [
             {"wikiName": "[[Amarok]]", "txtName": "wolfA"},
-            {"wikiName": "[[Chaotic Amarok]]", "txtName": "wolfB"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "wolfC"}
+            {"wikiName": "[[Chaotic Amarok]]", "txtName": "wolfB"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -3543,8 +3664,7 @@
     "Quest17": {
         "sources": [
             {"wikiName": "[[Amarok]]", "txtName": "wolfA"},
-            {"wikiName": "[[Chaotic Amarok]]", "txtName": "wolfB"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "wolfC"}
+            {"wikiName": "[[Chaotic Amarok]]", "txtName": "wolfB"}
         ],
         "recipeFrom": [],
         "questAss": [
@@ -3564,47 +3684,6 @@
     "Quest29": {
         "sources": [
             {"wikiName": "[[Chaotic Amarok]]", "txtName": "wolfB"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "StoneZ1": {
-        "sources": [
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "wolfC"},
-            {"wikiName": "[[Biggie Hours]]", "txtName": "babaHour"},
-            {"wikiName": "[[King Doot]]", "txtName": "babaMummy"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "Boss2C"},
-            {"wikiName": "[[SuperDropTable1]]", "txtName": "SuperDropTable1"},
-            {"wikiName": "[[SuperDropTable2]]", "txtName": "SuperDropTable2"},
-            {
-                "wikiName": "[[Bushlyte#A Peanut for your Thoughts|A Peanut for your Thoughts]]",
-                "txtName": "Bushlyte: A Peanut for your Thoughts"
-            },
-            {
-                "wikiName": "[[Bushlyte#Honk if you Love Peanuts!|Honk if you Love Peanuts!]]",
-                "txtName": "Bushlyte: Honk if you Love Peanuts!"
-            },
-            {
-                "wikiName": "[[Bushlyte#A Peanut Saved is a Peanut not Eaten!|A Peanut Saved is a Peanut not Eaten!]]",
-                "txtName": "Bushlyte: A Peanut Saved is a Peanut not Eaten!"
-            },
-            {
-                "wikiName": "[[Rocklyte#If Life Gives you Peanuts, make Shiny Peanuts!|If Life Gives you Peanuts, make Shiny Peanuts!]]",
-                "txtName": "Rocklyte: If Life Gives you Peanuts, make Shiny Peanuts!"
-            },
-            {
-                "wikiName": "[[Tiki Chief#Hotel? Tikivago. Sorry, couldn't Help It!|Hotel? Tikivago. Sorry, couldn't Help It!]]",
-                "txtName": "Tiki Chief: Hotel? Tikivago. Sorry, couldn't Help It!"
-            },
-            {
-                "wikiName": "[[Loominadi#Rhyming is Key!|Rhyming is Key!]]",
-                "txtName": "Loominadi: Rhyming is Key!"
-            },
-            {
-                "wikiName": "[[Loominadi#Uh, Something About Vials?|Uh, Something About Vials?]]",
-                "txtName": "Loominadi: Uh, Something About Vials?"
-            },
-            {"wikiName": "[[Alchemy#Level up Gift|Level up Gift]]", "txtName": "Level up Gift"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -3863,6 +3942,45 @@
     "Hgg": {
         "sources": [
             {"wikiName": "[[Biggie Hours]]", "txtName": "babaHour"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "StoneZ1": {
+        "sources": [
+            {"wikiName": "[[Biggie Hours]]", "txtName": "babaHour"},
+            {"wikiName": "[[King Doot]]", "txtName": "babaMummy"},
+            {"wikiName": "[[SuperDropTable1]]", "txtName": "SuperDropTable1"},
+            {"wikiName": "[[SuperDropTable2]]", "txtName": "SuperDropTable2"},
+            {
+                "wikiName": "[[Bushlyte#A Peanut for your Thoughts|A Peanut for your Thoughts]]",
+                "txtName": "Bushlyte: A Peanut for your Thoughts"
+            },
+            {
+                "wikiName": "[[Bushlyte#Honk if you Love Peanuts!|Honk if you Love Peanuts!]]",
+                "txtName": "Bushlyte: Honk if you Love Peanuts!"
+            },
+            {
+                "wikiName": "[[Bushlyte#A Peanut Saved is a Peanut not Eaten!|A Peanut Saved is a Peanut not Eaten!]]",
+                "txtName": "Bushlyte: A Peanut Saved is a Peanut not Eaten!"
+            },
+            {
+                "wikiName": "[[Rocklyte#If Life Gives you Peanuts, make Shiny Peanuts!|If Life Gives you Peanuts, make Shiny Peanuts!]]",
+                "txtName": "Rocklyte: If Life Gives you Peanuts, make Shiny Peanuts!"
+            },
+            {
+                "wikiName": "[[Tiki Chief#Hotel? Tikivago. Sorry, couldn't Help It!|Hotel? Tikivago. Sorry, couldn't Help It!]]",
+                "txtName": "Tiki Chief: Hotel? Tikivago. Sorry, couldn't Help It!"
+            },
+            {
+                "wikiName": "[[Loominadi#Rhyming is Key!|Rhyming is Key!]]",
+                "txtName": "Loominadi: Rhyming is Key!"
+            },
+            {
+                "wikiName": "[[Loominadi#Uh, Something About Vials?|Uh, Something About Vials?]]",
+                "txtName": "Loominadi: Uh, Something About Vials?"
+            },
+            {"wikiName": "[[Alchemy#Level up Gift|Level up Gift]]", "txtName": "Level up Gift"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -4231,7 +4349,6 @@
             {"wikiName": "[[King Doot]]", "txtName": "babaMummy"},
             {"wikiName": "[[Efaunt]]", "txtName": "Boss2A"},
             {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Boss2B"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "Boss2C"},
             {"wikiName": "[[DropTable8]]", "txtName": "DropTable8"}
         ],
         "recipeFrom": [],
@@ -4251,8 +4368,7 @@
     },
     "CardsZ3": {
         "sources": [
-            {"wikiName": "[[Efaunt]]", "txtName": "Boss2A"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "Boss2C"}
+            {"wikiName": "[[Efaunt]]", "txtName": "Boss2A"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -4260,8 +4376,7 @@
     "ObolEfauntA": {
         "sources": [
             {"wikiName": "[[Efaunt]]", "txtName": "Boss2A"},
-            {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Boss2B"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "Boss2C"}
+            {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Boss2B"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -4269,8 +4384,7 @@
     "EquipmentHats2": {
         "sources": [
             {"wikiName": "[[Efaunt]]", "txtName": "Boss2A"},
-            {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Boss2B"},
-            {"wikiName": "[[Nightmare Amarok]]", "txtName": "Boss2C"}
+            {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Boss2B"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -5582,22 +5696,6 @@
         "recipeFrom": [],
         "questAss": []
     },
-    "Grasslands2": {
-        "sources": [
-            {"wikiName": "[[Starfire]]", "txtName": "Starfire"},
-            {"wikiName": "[[Dreadlo]]", "txtName": "Dreadlo"},
-            {"wikiName": "[[Godshard]]", "txtName": "Godshard"},
-            {"wikiName": "[[Alien Tree]]", "txtName": "AlienTree"},
-            {"wikiName": "[[Fly Nest]]", "txtName": "BugNest1"},
-            {"wikiName": "[[Butterfly Bar]]", "txtName": "BugNest2"},
-            {"wikiName": "[[Sentient Bowl]]", "txtName": "BugNest3"},
-            {"wikiName": "[[Grocery Bag]]", "txtName": "BugNest4"},
-            {"wikiName": "[[Snowden]]", "txtName": "BugNest5"},
-            {"wikiName": "[[Icicle Nest]]", "txtName": "BugNest6"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
     "CardsC4": {
         "sources": [
             {"wikiName": "[[Oak Tree]]", "txtName": "OakTree"}
@@ -6044,19 +6142,6 @@
                 "wikiName": "[[Vendors#Blunder Hills|Blunder Hills Vendors]]",
                 "txtName": "Blunder Hills Vendor"
             }
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "FoodPotMana1": {
-        "sources": [
-            {
-                "wikiName": "[[Vendors#Blunder Hills|Blunder Hills Vendors]]",
-                "txtName": "Blunder Hills Vendor"
-            },
-            {"wikiName": "[[DropTable1]]", "txtName": "DropTable1"},
-            {"wikiName": "[[DropTable3b]]", "txtName": "DropTable3b"},
-            {"wikiName": "[[DropTable3c]]", "txtName": "DropTable3c"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -7885,26 +7970,6 @@
         ],
         "recipeFrom": [],
         "questAss": []
-    },
-    "Quest3": {
-        "sources": [],
-        "recipeFrom": [],
-        "questAss": [
-            {
-                "wikiName": "[[Picnic Stowaway#Beating Up Frogs for some Sauce|Beating Up Frogs for some Sauce]]",
-                "txtName": "Picnic Stowaway: Beating Up Frogs for some Sauce"
-            }
-        ]
-    },
-    "Quest4": {
-        "sources": [],
-        "recipeFrom": [],
-        "questAss": [
-            {
-                "wikiName": "[[Picnic Stowaway#Beating Up Frogs for some Sauce|Beating Up Frogs for some Sauce]]",
-                "txtName": "Picnic Stowaway: Beating Up Frogs for some Sauce"
-            }
-        ]
     },
     "StoneHelm6": {
         "sources": [

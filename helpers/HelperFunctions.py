@@ -175,9 +175,14 @@ def strToArray(v: str) -> List[str]:
 		the resulting list
 
 	"""
-	string = v.replace(",_", "&&&&")
+	string = v.replace(",_", "&&&&").replace(",0", "$$$$")
 	parts = formatStr(string, ["[", "]", '"', "return", ";", "\n", "{", "}"]).split(",")
-	return [formatStr(x).replace("&&&&", ", ") for x in parts if formatStr(x).replace("&&&&", ", ") != ""]
+	res = []
+	for x in parts:
+		formatted = formatStr(x).replace("&&&&", ", ").replace("$$$$", ",0")
+		if formatted:
+			res.append(formatted)
+	return res
 
 
 def changeChestNames(intName, name):

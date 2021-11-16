@@ -36,6 +36,7 @@ from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
 from repositories.misc.MapNameRepo import MapNameRepo
 from repositories.misc.StarSignsRepo import StarSignsRepo
+from repositories.misc.StorageOrderRepo import StorageOrderRepo
 from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
 from repositories.misc.world2.BubbleRepo import BubbleRepo
@@ -62,6 +63,7 @@ ItemDetailRepo.initialise(codeReader)
 StatueRepo.initialise(codeReader)
 FishingToolkitRepo.initialise(codeReader)
 KeychainBonusRepo.initialise(codeReader)
+StorageOrderRepo.initialise(codeReader)
 SpecificItemRepo.initialise(codeReader)
 
 # Arcade stuff
@@ -116,4 +118,4 @@ EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
-NpcRepo.upload(True)
+ItemRepo.upload(True)

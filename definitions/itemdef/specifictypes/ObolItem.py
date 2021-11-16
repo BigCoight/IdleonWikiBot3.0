@@ -2,29 +2,20 @@ from typing import Dict, Union, Callable
 
 from definitions.itemdef.initialtypes.EquipItem import EquipItem
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
+from definitions.itemdef.specifictypes.master.StatItem import StatItem
 from helpers.Constants import Constants
 from helpers.CustomTypes import Integer
 from helpers.HelperFunctions import camelCaseSplitter
 
 
-class ObolItem(BaseItem):
+class ObolItem(StatItem):
 	family: str
 	rarity: str
 	Skill: str
-	Weapon_Power: Integer
 	Skill_Power: Integer
-	STR: Integer
-	AGI: Integer
-	WIS: Integer
-	LUK: Integer
-	Defence: Integer
-	miscUp1: str
-	miscUp2: str
 
 	@classmethod
 	def fromItemDetails(cls, item: EquipItem) -> BaseItem:
-		misc1 = f"+{item.UQ1val} {item.UQ1txt.title()}"
-		misc2 = f"+{item.UQ2val} {item.UQ2txt.title()}"
 		skill = cls.isSkill(item)
 		skillPower = 0
 		weaponPower = 0
@@ -50,8 +41,12 @@ class ObolItem(BaseItem):
 			WIS = item.WIS,
 			LUK = item.LUK,
 			Defence = item.Defence,
-			miscUp1 = misc1,
-			miscUp2 = misc2,
+			miscUp1 = cls.getMisc1(item),
+			miscUp2 = cls.getMisc2(item),
+			lvReqToCraft = 0,
+			lvReqToEquip = 0,
+			Class = item.Class,
+			Upgrade_Slots_Left = 0,
 		)
 
 	@classmethod
@@ -86,14 +81,7 @@ class ObolItem(BaseItem):
 		base = super().intToWiki()
 		extra = {
 			"skill": "Skill",
-			"weaponpower": "Weapon_Power",
 			"skillpower": "Skill_Power",
-			"str": "STR",
-			"agi": "AGI",
-			"wis": "WIS",
-			"luck": "LUK",
-			"misc": "miscUp1",
-			"defence": "Defence",
 			"family": "family",
 			"rarity": "rarity"
 		}

@@ -29,6 +29,7 @@ from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.StatueRepo import StatueRepo
 from repositories.master.Repository import Repository
+from repositories.misc.StorageOrderRepo import StorageOrderRepo
 
 
 class SpecificItemRepo(Repository[BaseItem]):
@@ -45,6 +46,7 @@ class SpecificItemRepo(Repository[BaseItem]):
 		StatueRepo.initialise(cls.codeReader)
 		FishingToolkitRepo.initialise(cls.codeReader)
 		KeychainBonusRepo.initialise(cls.codeReader)
+		StorageOrderRepo.initialise(cls.codeReader)
 
 	@classmethod
 	def generateRepo(cls) -> None:

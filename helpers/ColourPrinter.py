@@ -11,3 +11,7 @@ def printRed(txt: str) -> None:
 
 def printYellow(txt: str) -> None:
 	print(Fore.YELLOW + txt + Style.RESET_ALL)
+
+
+def printBlue(txt: str) -> None:
+	print(Fore.BLUE + txt + Style.RESET_ALL)

@@ -119,13 +119,13 @@ class NpcRepo(Repository[Npc]):
 				continue
 			if isRecipe(rew[k]):
 				questRew.append(RecipeReward(
-					recipe = rew[k],
+					item = rew[k],
 					quantity = rew[k + 1]
 				))
 				continue
 			if isTalent(rew[k]):
 				questRew.append(TalentReward(
-					talent = rew[k],
+					item = rew[k],
 					quantity = rew[k + 1]
 				))
 				continue

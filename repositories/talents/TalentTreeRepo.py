@@ -60,7 +60,8 @@ class TalentTreeRepo(Repository[TalentTree]):
 						y1 = talentDesc[4],
 						y2 = talentDesc[5],
 						funcY = talentDesc[6],
-						lvlUpText = replaceUnderscores(talentDesc[7]).title()
+						lvlUpText = replaceUnderscores(talentDesc[7]).title(),
+						skillIndex = skillI
 					))
 				cls.add(replaceUnderscores(name).title(), talents)
 

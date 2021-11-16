@@ -12,6 +12,7 @@ from definitions.itemdef.specifictypes.InvBagItem import InvBagItem
 from definitions.itemdef.specifictypes.KeychainItem import KeychainItem
 from definitions.itemdef.specifictypes.ObolItem import ObolItem
 from definitions.itemdef.specifictypes.OreItem import OreItem
+from definitions.itemdef.specifictypes.SkullItem import SkullItem
 from definitions.itemdef.specifictypes.StampItem import StampItem
 from definitions.itemdef.specifictypes.StatueItem import StatueItem
 from definitions.itemdef.specifictypes.StoneItem import StoneItem
@@ -63,9 +64,10 @@ class SpecificItemRepo(Repository[BaseItem]):
 				cls.add(name, ArmourItem.fromItemDetails(item))
 			elif item.typeGen == TypeGen.aWeapon:
 				cls.add(name, WeaponItem.fromItemDetails(item))
-			elif item.typeGen in {TypeGen.aHatchet, TypeGen.aFishingRod, TypeGen.aBugNet, TypeGen.aPick, TypeGen.aTrap,
-			                      TypeGen.aSkull}:
+			elif item.typeGen in {TypeGen.aHatchet, TypeGen.aFishingRod, TypeGen.aBugNet, TypeGen.aPick, TypeGen.aTrap}:
 				cls.add(name, ToolItem.fromItemDetails(item))
+			elif item.typeGen == TypeGen.aSkull:
+				cls.add(name, SkullItem.fromItemDetails(item))
 			elif item.typeGen in {TypeGen.aObolCircle, TypeGen.aObolSquare, TypeGen.aObolSparkle, TypeGen.aObolHexagon}:
 				cls.add(name, ObolItem.fromItemDetails(item))
 			elif item.typeGen == TypeGen.aCarryBag:

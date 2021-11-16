@@ -2,6 +2,7 @@ from typing import Tuple, Union, Dict, Callable
 
 from pydantic import validator
 
+from definitions.enemy.EnemyType import EnemyType
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Integer
 
@@ -18,7 +19,7 @@ class EnemyDetails(IdleonModel):
 	RespawnTime: Integer
 	DeathFrame: Integer
 	MonsterHPTotal: Integer
-	Type: str
+	Type: EnemyType
 	SpecialType: str
 	ExpGiven: Integer
 	ExpType: Integer

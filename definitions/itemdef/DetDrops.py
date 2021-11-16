@@ -1,5 +1,6 @@
 from typing import List
 
+from definitions.enemy.EnemyType import EnemyType
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Numeric
 from helpers.HelperFunctions import formatFloat
@@ -13,9 +14,16 @@ class DetDrop(IdleonModel):
 
 	def writeWiki(self, newLine = True) -> str:
 		res = "{{detdrops|"
-		res += f"[[{EnemyDetailsRepo.get(self.source).Name}]]|{formatFloat(self.chance)}|{self.quantity}"
+		res += f"[[{self.detDropName()}]]|{formatFloat(self.chance)}|{self.quantity}"
 		res += "}}"
 		return res
+
+	def detDropName(self) -> str:
+		enemy = EnemyDetailsRepo.get(self.source)
+		enemName = enemy.Name
+		if enemy.Type == EnemyType.monsterType:
+			return enemName
+		return enemy.Type.detDropName()(enemName)
 
 
 class DetDrops(IdleonModel):

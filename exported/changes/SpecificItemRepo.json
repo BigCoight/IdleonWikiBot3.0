@@ -1,1103 +1,460 @@
 {
     "new": {
-        "CardsX6": {
-            "displayName": "Target Card",
+        "Chiz0": {
+            "displayName": "Chizoar Spike",
             "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X6",
-                "perTier": 2,
-                "effect": "+ Base Dungeon HP",
-                "bonus": 2,
-                "order": 9
-            }
+            "Type": "Monster Drop",
+            "description": "A spike from Chizoar's neck. It's ice cold, and sharp as a tack. "
         },
-        "CardsX15": {
-            "displayName": "Chromatium Frog Card",
+        "Chiz1": {
+            "displayName": "Chizoar Stalagmite",
             "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X15",
-                "perTier": 3,
-                "effect": "+% Dungeon Credits",
-                "bonus": 2.5,
-                "order": 5
-            }
+            "Type": "Monster Drop",
+            "description": "A spike from Chaotic Chizoar's neck. Despite it being made of ice, it burns at the touch due to its acidity. "
         },
-        "CardPack4": {
-            "displayName": "Dungeon Card Pack",
+        "Quest61": {
+            "displayName": "Bill Brr's Vote",
             "sellPrice": 1,
-            "Type": "Card Pack",
-            "description": "Hold down to open the pack! The cards drop on the ground, make sure to pick them up!! "
+            "Type": "Quest Item",
+            "description": "A slip of paper indicating that a Mr. Bill Brr doesn't intend to vote for any of these political puppets, but he left it blank so you filled it in for Hoggi. "
         },
-        "PalmTreeD": {
-            "displayName": "Palm Tree Log",
+        "Quest63": {
+            "displayName": "Shovel",
+            "sellPrice": 1,
+            "Type": "Dungeon Evaporate",
+            "description": "You shouldnt be seeing this... "
+        },
+        "Quest58": {
+            "displayName": "Refurbished Cog",
+            "sellPrice": 500000010,
+            "Type": "Quest Item",
+            "description": "Made from a Damaged Cog, which you can buy at the Town Shop! "
+        },
+        "Cashb": {
+            "displayName": "Ice Dollar",
+            "sellPrice": 1,
+            "Type": "Dungeon Item",
+            "description": "Cool! "
+        },
+        "Quest60": {
+            "displayName": "Yondergreens Vote",
+            "sellPrice": 1,
+            "Type": "Quest Item",
+            "description": "A slip of paper indicating that a Sir Yondergreen Von Timberbottom intends to vote for Mayor Hoggindaz "
+        },
+        "BadgeI2": {
+            "displayName": "Tundra Skills Completion Token",
+            "sellPrice": 25000,
+            "Type": "Quest Item",
+            "description": "Proof that you mastered the art of the Trapping, Construction, and Worship skills. "
+        },
+        "BadgeI1": {
+            "displayName": "Tundra NPC Completion Token",
+            "sellPrice": 30000,
+            "Type": "Quest Item",
+            "description": "Made up of all the tokens that you collected after completing an NPC's entire questline. "
+        },
+        "PlatD": {
+            "displayName": "Platinum Ore",
             "sellPrice": 100,
             "Type": "Dungeon Evaporate",
             "description": "You shouldnt be seeing this... "
         },
-        "EquipmentKeychain2": {
-            "displayName": "Red Sneaker Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 1,
-            "miscUp1": "+ [1,1.5,2] % Movement Speed",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
+        "NPCtoken33": {
+            "displayName": "Bellows Token",
+            "sellPrice": 4000,
+            "Type": "Quest Item",
+            "description": "Proof that you completed all of Bellows' quests! Hold down to add to your token bag, found in Storage Info. "
         },
-        "EquipmentKeychain7": {
-            "displayName": "Horn Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 1,
-            "miscUp1": "+ [2,4,6] Wis OR + [2,4,6] Luk",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
+        "NPCtoken36": {
+            "displayName": "Yondergreen Token",
+            "sellPrice": 4000,
+            "Type": "Quest Item",
+            "description": "Proof that you completed all of Yondergreen's quests! Hold down to add to your token bag, found in Storage Info. "
         },
-        "EquipmentRings18": {
-            "displayName": "The Emperor's Opal",
+        "Quest59": {
+            "displayName": "Shuvelle's Vote",
             "sellPrice": 1,
-            "Type": "Ring",
-            "lvReqToCraft": 55,
-            "lvReqToEquip": 150,
+            "Type": "Quest Item",
+            "description": "A slip of paper indicating that a Ms. Shuvelle La Deuge intends to vote for Mayor Hoggindaz "
+        },
+        "Timecandy9": {
+            "displayName": "Cosmic Time Candy",
+            "sellPrice": 1,
+            "Type": "Time Candy",
+            "description": "Hold down to get anywhere from 5 hours to 500 hours of AFK time! Gives 24 hrs on average. Odds are: 54% for 5-10hr, 25% for 10-25hr, 18% for 25-100 hr, 2.1% for 100-499hr, 0.4% for 500hr. "
+        },
+        "NPCtoken41": {
+            "displayName": "Hard FB Tundra NPC Token",
+            "sellPrice": 16000,
+            "Type": "Quest Item",
+            "description": "Made up of the tokens from all of the Tundra NPCs whose quests are hardest to complete. "
+        },
+        "NPCtoken39": {
+            "displayName": "Easy FB Tundra NPC Token",
+            "sellPrice": 2800,
+            "Type": "Quest Item",
+            "description": "Made up of the tokens from all of the Tundra NPCs whose quests are easiest to complete. "
+        },
+        "NPCtoken31": {
+            "displayName": "Lonely Hunter Token",
+            "sellPrice": 4000,
+            "Type": "Quest Item",
+            "description": "Proof that you completed all of the Lonely Hunter's quests! Hold down to add to your token bag, found in Storage Info. "
+        },
+        "CardsX18": {
+            "displayName": "Glaciaxus Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "X18",
+                "perTier": 2,
+                "effect": "+% Dungeon Card Chance",
+                "bonus": 15,
+                "order": 19
+            }
+        },
+        "BadgeI3": {
+            "displayName": "Tundra Misc Completion Token",
+            "sellPrice": 1,
+            "Type": "Quest Item",
+            "description": "Proof that you collected all the coolest and rarest items that Frostbite Tundra has to offer! "
+        },
+        "NPCtoken35": {
+            "displayName": "Shuvelle Token",
+            "sellPrice": 4000,
+            "Type": "Quest Item",
+            "description": "Proof that you completed all of Shuvelle's quests! Hold down to add to your token bag, found in Storage Info. "
+        },
+        "NPCtoken38": {
+            "displayName": "Crystalswine Token",
+            "sellPrice": 4000,
+            "Type": "Quest Item",
+            "description": "Proof that you completed all of Crystalswine's quests! Hold down to add to your token bag, found in Storage Info. "
+        },
+        "Trophy15": {
+            "displayName": "Frost Prince",
+            "sellPrice": 69,
+            "Type": "Trophy",
+            "lvReqToCraft": 1,
+            "lvReqToEquip": 1,
             "Class": "All",
-            "Weapon_Power": 8,
-            "STR": 30,
-            "AGI": 30,
-            "WIS": 30,
-            "LUK": 30,
-            "Defence": 8,
-            "miscUp1": "6% All Stats",
+            "Weapon_Power": 2,
+            "STR": 10,
+            "AGI": 10,
+            "WIS": 10,
+            "LUK": 10,
+            "Defence": 50,
+            "miscUp1": "8% Total Damage",
             "miscUp2": "00",
             "Upgrade_Slots_Left": 0,
             "Skill": "",
             "Skill_Power": 0
         },
-        "EquipmentKeychain19": {
-            "displayName": "Time Candy Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 1,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 10,
-            "miscUp1": "+ [2,3,5] % All Afk Gain",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentKeychain10": {
-            "displayName": "Cactus Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 3,
-            "miscUp1": "+ [1.5,2.5,3] % Total Damage",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "CardsX5": {
-            "displayName": "Forlorn Grandfrogger Card",
+        "CardsX19": {
+            "displayName": "Golden Glaciaxus Card",
             "sellPrice": 1,
             "Type": "Card",
             "cardData": {
-                "cardID": "X5",
+                "cardID": "X19",
                 "perTier": 1.5,
                 "effect": "+% Dungeon Credits",
-                "bonus": 5,
-                "order": 8
+                "bonus": 8,
+                "order": 20
             }
         },
-        "EquipmentRings19": {
-            "displayName": "Bejeweled Ring",
-            "sellPrice": 1,
-            "Type": "Ring",
-            "lvReqToCraft": 55,
-            "lvReqToEquip": 70,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 7,
-            "Defence": 4,
-            "miscUp1": "5% Xp From Monsters",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 3,
-            "Skill": "",
-            "Skill_Power": 0
+        "NPCtoken34": {
+            "displayName": "Snouts Token",
+            "sellPrice": 4000,
+            "Type": "Quest Item",
+            "description": "Proof that you completed all of Snouts' quests! Hold down to add to your token bag, found in Storage Info. "
         },
-        "EquipmentHats66": {
-            "displayName": "Honker Hat",
+        "NPCtoken37": {
+            "displayName": "Bill Brr Token",
+            "sellPrice": 4000,
+            "Type": "Quest Item",
+            "description": "Proof that you completed all of Bill Brr's quests! Hold down to add to your token bag, found in Storage Info. "
+        },
+        "CardsX20": {
+            "displayName": "Caustic Glaciaxus Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "X20",
+                "perTier": 1.5,
+                "effect": "+% Total Dungeon Dmg",
+                "bonus": 8,
+                "order": 21
+            }
+        },
+        "EquipmentHats68": {
+            "displayName": "Chizoar Helmet",
             "sellPrice": 1,
             "Type": "Helmet",
             "lvReqToCraft": 5,
-            "lvReqToEquip": 100,
+            "lvReqToEquip": 110,
             "Class": "All",
-            "Weapon_Power": 2,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
+            "Weapon_Power": 3,
+            "STR": 20,
+            "AGI": 20,
+            "WIS": 20,
             "LUK": 0,
             "Defence": 60,
-            "miscUp1": "20% Money",
+            "miscUp1": "15% Total Damage",
             "miscUp2": "00",
             "Upgrade_Slots_Left": 7,
             "Skill": "",
             "Skill_Power": 0
         },
-        "Gfoodcoupon": {
-            "displayName": "Gold Food Coupon",
-            "sellPrice": 1,
-            "Type": "Usable",
-            "description": "Hold down to receive a random golden food! "
-        },
-        "Quest55": {
-            "displayName": "Buried Treasure",
-            "sellPrice": 100,
-            "Type": "Dungeon Evaporate",
-            "description": "You shouldnt be seeing this... "
-        },
-        "EquipmentKeychain1": {
-            "displayName": "Leafy Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 1,
-            "miscUp1": "+ [2,3,5] Accuracy",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentPendant23": {
-            "displayName": "Persephones Bouquet",
-            "sellPrice": 1,
-            "Type": "Pendant",
-            "lvReqToCraft": 17,
-            "lvReqToEquip": 140,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 1,
-            "AGI": 1,
-            "WIS": 1,
-            "LUK": 3,
-            "Defence": 0,
-            "miscUp1": "15% Skill Afk Gain",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 0,
-            "Skill": "",
-            "Skill_Power": 0
-        },
-        "XPskill": {
-            "displayName": "Skill Experience",
-            "sellPrice": 1,
-            "Type": "Currency",
-            "description": "Bruh "
-        },
-        "EquipmentPendant20": {
-            "displayName": "Fishhead Pendant",
-            "sellPrice": 1,
-            "Type": "Pendant",
-            "lvReqToCraft": 17,
-            "lvReqToEquip": 40,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 3,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 0,
-            "miscUp1": "15% Fishing Xp Gain",
-            "miscUp2": "15Purple Depth",
-            "Upgrade_Slots_Left": 2,
-            "Skill": "",
-            "Skill_Power": 0
-        },
-        "EquipmentPendant22": {
-            "displayName": "Hallowed Tail Pendant",
-            "sellPrice": 1,
-            "Type": "Pendant",
-            "lvReqToCraft": 17,
-            "lvReqToEquip": 110,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 1,
-            "AGI": 1,
-            "WIS": 1,
-            "LUK": 3,
-            "Defence": 0,
-            "miscUp1": "30% Multikill",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 2,
-            "Skill": "",
-            "Skill_Power": 0
-        },
-        "Quest56": {
-            "displayName": "Dootophone",
-            "sellPrice": 1,
+        "NPCtoken40": {
+            "displayName": "Med FB Tundra NPC Token",
+            "sellPrice": 6000,
             "Type": "Quest Item",
-            "description": "Hold down on this vintage Dootophone to active all the obelisks on Doot's burial platform at once! "
+            "description": "Made up of the tokens from all of the Tundra NPCs whose quests are tough to complete. "
         },
-        "EquipmentKeychain4": {
-            "displayName": "8 Ball Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 1,
-            "miscUp1": "+ [3,6,10] % Card Drop Chance",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "CardsX8": {
-            "displayName": "Cactopunk Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X8",
-                "perTier": 2,
-                "effect": "+% Dungeon Boss Dmg",
-                "bonus": 3,
-                "order": 13
-            }
-        },
-        "EquipmentKeychain8": {
-            "displayName": "Rustic Key Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 3,
-            "miscUp1": "+ [1,2,4] % Defence",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentPendant19": {
-            "displayName": "Cedar Pendant",
+        "EquipmentPendant24": {
+            "displayName": "Chizoars Blankie",
             "sellPrice": 1,
             "Type": "Pendant",
             "lvReqToCraft": 17,
-            "lvReqToEquip": 20,
+            "lvReqToEquip": 100,
             "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 1,
-            "AGI": 1,
-            "WIS": 1,
-            "LUK": 3,
+            "Weapon_Power": 5,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
             "Defence": 0,
-            "miscUp1": "00",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 1,
+            "miscUp1": "15% Total Damage",
+            "miscUp2": "3% Mob Respawn",
+            "Upgrade_Slots_Left": 3,
             "Skill": "",
             "Skill_Power": 0
         },
-        "EquipmentKeychain0": {
-            "displayName": "Simple Key Chain",
+        "EquipmentShoes23": {
+            "displayName": "Chizoar Walkers",
             "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 1,
-            "miscUp1": "+ [1,2,5] Base Defence",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "ItemsCoupon2": {
-            "displayName": "Really Really Resource Coupon",
-            "sellPrice": 1,
-            "Type": "Usable",
-            "description": "Hold down, and a resource stack will drop on the floor! YOU MUST MANUALLY PICK UP THE RESOURCE ON THE GROUND "
-        },
-        "FoodHealth1d": {
-            "displayName": "Nomwich",
-            "sellPrice": 3,
-            "Type": "Dungeon Food",
-            "description": "Auto-Used when your health goes below 50%. Restores 20 HP. Has a 30 second Cooldown. "
-        },
-        "EquipmentKeychain14": {
-            "displayName": "Whatamelon Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 3,
-            "miscUp1": "+ [8,12,20] % Fishing Xp Gain",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentKeychain6": {
-            "displayName": "Dumbphone Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 1,
-            "miscUp1": "+ [2,4,6] Str OR + [2,4,6] Agi",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentKeychain21": {
-            "displayName": "Mmm Donut Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 1,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 10,
-            "miscUp1": "+ [2,4,6] % Wis OR + [2,4,6] % Luk",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "CardsX2": {
-            "displayName": "King Frog Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X2",
-                "perTier": 2,
-                "effect": "+ Base Dungeon Damage",
-                "bonus": 1.5,
-                "order": 3
-            }
-        },
-        "CardsX3": {
-            "displayName": "Grandfrogger Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X3",
-                "perTier": 1.5,
-                "effect": "% to start with RNG item",
-                "bonus": 15,
-                "order": 6
-            }
-        },
-        "EquipmentKeychain11": {
-            "displayName": "Relic Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 3,
-            "miscUp1": "+ [3,5,8] % Drop Chance",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentKeychain3": {
-            "displayName": "Wartooth Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 1,
-            "miscUp1": "+ [5,10,20] Base Damage",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "XP": {
-            "displayName": "Experience",
-            "sellPrice": 1,
-            "Type": "Currency",
-            "description": "Bruh "
-        },
-        "EquipmentKeychain22": {
-            "displayName": "Negative 7 Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 1,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 10,
-            "miscUp1": "+ [3,4,6] % Mob Respawn",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "ItemsCoupon1": {
-            "displayName": "Resource Coupon",
-            "sellPrice": 1,
-            "Type": "Usable",
-            "description": "Hold down, and a resource stack will drop on the floor! YOU MUST MANUALLY PICK UP THE RESOURCE ON THE GROUND "
-        },
-        "CardsX1": {
-            "displayName": "Globohopper Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X1",
-                "perTier": 2,
-                "effect": "+% Block Chance",
-                "bonus": 2,
-                "order": 2
-            }
-        },
-        "EquipmentKeychain20": {
-            "displayName": "Star Blobulyte Galaxy Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 1,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 10,
-            "miscUp1": "+ [3,4,7] % Total Damage",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentKeychain23": {
-            "displayName": "Diamond Honker",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 1,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 10,
-            "miscUp1": "+ [1,1.5,2] % All Skill Speed",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "CardsX14": {
-            "displayName": "Lava Slimer Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X14",
-                "perTier": 2,
-                "effect": "+% Dungeon Card Chance",
-                "bonus": 6,
-                "order": 4
-            }
-        },
-        "EquipmentKeychain12": {
-            "displayName": "Balloon Dog Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 3,
-            "miscUp1": "+ [3,4,6] % Basic Atk Speed",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentKeychain13": {
-            "displayName": "Frozen Tart Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 3,
-            "miscUp1": "+ [1.5,2.5,3] % Crit Chance",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "CardsX4": {
-            "displayName": "Rotting Grandfrogger Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X4",
-                "perTier": 1.5,
-                "effect": "+% Dungeon Flurbos",
-                "bonus": 4,
-                "order": 7
-            }
-        },
-        "LootDice": {
-            "displayName": "Loot Dice",
-            "sellPrice": 1,
-            "Type": "Currency",
-            "description": "You shouldn't be reading this... "
-        },
-        "BallJoePickle": {
-            "displayName": "BallJoePickle",
-            "sellPrice": 40000,
-            "Type": "Quest Item",
-            "description": "What have they done to ya BobJoe? "
-        },
-        "Timecandy8": {
-            "displayName": "Spooky Time Candy",
-            "sellPrice": 1,
-            "Type": "Time Candy",
-            "description": "Hold down to instantly get anywhere from 20 minutes to 12 hours of AFK time! "
-        },
-        "EquipmentHats64": {
-            "displayName": "Nuget Cake Fedora",
-            "sellPrice": 1,
-            "Type": "Helmet",
-            "lvReqToCraft": 5,
-            "lvReqToEquip": 40,
-            "Class": "All",
-            "Weapon_Power": 1,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 10,
-            "Defence": 0,
-            "miscUp1": "15% Multikill",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 6,
-            "Skill": "",
-            "Skill_Power": 0
-        },
-        "FoodHealth2d": {
-            "displayName": "Hotdog",
-            "sellPrice": 7,
-            "Type": "Dungeon Food",
-            "description": "Auto-Used when your health goes below 50%. Restores 20 HP. Has a 30 second Cooldown. "
-        },
-        "CardsX9": {
-            "displayName": "Beefie Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X9",
-                "perTier": 2,
-                "effect": "+% Dungeon Money",
-                "bonus": 6,
-                "order": 11
-            }
-        },
-        "EquipmentKeychain18": {
-            "displayName": "Sushi Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 1,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 10,
-            "miscUp1": "+ [2,4,6] % Str OR + [2,4,6] % Agi",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "CardsX10": {
-            "displayName": "Crescent Spud Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X10",
-                "perTier": 3,
-                "effect": "+% Dungeon MP regen",
-                "bonus": 5,
-                "order": 14
-            }
-        },
-        "CardsX0": {
-            "displayName": "Poisonic Frog Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X0",
-                "perTier": 1.5,
-                "effect": "+ Base Dungeon MP",
-                "bonus": 2,
-                "order": 1
-            }
-        },
-        "Quest52": {
-            "displayName": "Coin",
-            "sellPrice": 100,
-            "Type": "Dungeon Evaporate",
-            "description": "You shouldnt be seeing this... "
-        },
-        "Quest51": {
-            "displayName": "Skull Coin",
-            "sellPrice": 100,
-            "Type": "Dungeon Evaporate",
-            "description": "You shouldnt be seeing this... "
-        },
-        "EquipmentKeychain17": {
-            "displayName": "Gilded Key Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 1,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 10,
-            "miscUp1": "+ [3,5,8] % Defence",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentKeychain9": {
-            "displayName": "Taco Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 3,
-            "miscUp1": "+ [8,12,20] % Mining Xp Gain",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentRings22": {
-            "displayName": "Tenacity Ring",
-            "sellPrice": 1,
-            "Type": "Ring",
+            "Type": "Shoes",
             "lvReqToCraft": 55,
-            "lvReqToEquip": 120,
+            "lvReqToEquip": 95,
             "Class": "All",
-            "Weapon_Power": 6,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 0,
-            "miscUp1": "6% Total Damage",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 4,
-            "Skill": "",
-            "Skill_Power": 0
-        },
-        "Cash": {
-            "displayName": "Cash",
-            "sellPrice": 1,
-            "Type": "Dungeon Item",
-            "description": "Dolla dolla bills yall! The big G! The golden cheddar! The pasta! "
-        },
-        "EquipmentHats65": {
-            "displayName": "The Red Boaty",
-            "sellPrice": 1,
-            "Type": "Premium Helmet",
-            "lvReqToCraft": 5,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 1,
-            "STR": 6,
-            "AGI": 6,
-            "WIS": 6,
-            "LUK": 6,
-            "Defence": 0,
-            "miscUp1": "15% Xp From Monsters",
+            "Weapon_Power": 0,
+            "STR": 12,
+            "AGI": 12,
+            "WIS": 12,
+            "LUK": 12,
+            "Defence": 48,
+            "miscUp1": "10% Defence",
             "miscUp2": "00",
             "Upgrade_Slots_Left": 5,
             "Skill": "",
             "Skill_Power": 0
         },
-        "Quest54": {
-            "displayName": "Sand Pile",
+        "Tree7D": {
+            "displayName": "Wispy Tree Log",
             "sellPrice": 100,
             "Type": "Dungeon Evaporate",
             "description": "You shouldnt be seeing this... "
         },
-        "EquipmentRings21": {
-            "displayName": "Elf Twist Ring",
-            "sellPrice": 1,
-            "Type": "Ring",
-            "lvReqToCraft": 55,
-            "lvReqToEquip": 15,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 7,
-            "miscUp1": "00",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 2,
-            "Skill": "",
-            "Skill_Power": 0
-        },
-        "EquipmentPendant21": {
-            "displayName": "Deathly Cluster Pendant",
+        "EquipmentPendant25": {
+            "displayName": "Chizoars Caustic Scarf",
             "sellPrice": 1,
             "Type": "Pendant",
             "lvReqToCraft": 17,
-            "lvReqToEquip": 80,
+            "lvReqToEquip": 120,
             "Class": "All",
-            "Weapon_Power": 2,
+            "Weapon_Power": 7,
             "STR": 0,
             "AGI": 0,
             "WIS": 0,
             "LUK": 0,
             "Defence": 0,
-            "miscUp1": "10% Mob Respawn",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 2,
+            "miscUp1": "20% Total Damage",
+            "miscUp2": "5% Mob Respawn",
+            "Upgrade_Slots_Left": 4,
             "Skill": "",
             "Skill_Power": 0
         },
-        "EquipmentKeychain15": {
-            "displayName": "9 Ball Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 3,
-            "miscUp1": "+ [4,6,10] % Xp From Monsters",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentKeychain16": {
-            "displayName": "Pincer Hand Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 3,
-            "miscUp1": "+ [5,7,12] % Multikill",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "EquipmentRings20": {
-            "displayName": "Rex Ring",
-            "sellPrice": 1,
-            "Type": "Ring",
-            "lvReqToCraft": 55,
-            "lvReqToEquip": 40,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 2,
-            "AGI": 2,
-            "WIS": 2,
-            "LUK": 0,
-            "Defence": 2,
-            "miscUp1": "5% Skill Efficiency",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 2,
-            "Skill": "",
-            "Skill_Power": 0
-        },
-        "CardsX13": {
-            "displayName": "Inevitable Snakenhotep Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X13",
-                "perTier": 1.5,
-                "effect": "+% Dungeon Flurbos",
-                "bonus": 5,
-                "order": 17
-            }
-        },
-        "EquipmentKeychain24": {
-            "displayName": "BobGoldPickle",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 1,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 10,
-            "miscUp1": "+ [1,2.5,4] % All Stats",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
-        },
-        "CardsX12": {
-            "displayName": "Enraged Snakenhotep Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X12",
-                "perTier": 1.5,
-                "effect": "+% Total Dungeon Dmg",
-                "bonus": 5,
-                "order": 16
-            }
-        },
-        "SnowC5": {
-            "displayName": "Blood Bone",
-            "sellPrice": 700,
-            "Type": "Monster Drop",
-            "description": "Wait a minute, these are just regular bones pained red! Wait another minute, no, that's actual blood... ew. "
-        },
-        "CardsX7": {
-            "displayName": "Grumblo Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X7",
-                "perTier": 2,
-                "effect": "+% Dungeon Card Chance",
-                "bonus": 8,
-                "order": 10
-            }
-        },
-        "FoodHealth3d": {
-            "displayName": "Big Cake",
-            "sellPrice": 15,
-            "Type": "Dungeon Food",
-            "description": "Auto-Used when your health goes below 50%. Restores 20 HP. Has a 30 second Cooldown. "
-        },
-        "CardsX16": {
-            "displayName": "Lazlo Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X16",
-                "perTier": 2,
-                "effect": "+% RNG item rarity",
-                "bonus": 10,
-                "order": 12
-            }
-        },
-        "Quest53": {
-            "displayName": "Meat Cube",
+        "Fish1D": {
+            "displayName": "Goldfish",
             "sellPrice": 100,
             "Type": "Dungeon Evaporate",
             "description": "You shouldnt be seeing this... "
         },
-        "EquipmentKeychain5": {
-            "displayName": "Piggy Chain",
-            "sellPrice": 200,
-            "Type": "Keychain",
-            "lvReqToCraft": 1,
-            "lvReqToEquip": 1,
+        "ObolChizoarA": {
+            "displayName": "Frozen Obol of Chizoar's Rage",
+            "sellPrice": 20,
+            "Type": "Hexagon Obol",
+            "lvReqToCraft": 0,
+            "lvReqToEquip": 0,
             "Class": "All",
-            "Weapon_Power": 0,
+            "Weapon_Power": 4,
             "STR": 0,
             "AGI": 0,
             "WIS": 0,
             "LUK": 0,
-            "Defence": 1,
-            "miscUp1": "+ [4,7,10] % Money",
-            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
-            "Upgrade_Slots_Left": 0
+            "Defence": 2,
+            "miscUp1": "4% Total Damage",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "family": "Bosses",
+            "rarity": "Frozen",
+            "Skill": "",
+            "Skill_Power": 0
         },
-        "CardsX11": {
-            "displayName": "Snakenhotep Card",
+        "NPCtoken32": {
+            "displayName": "Hoggi Token",
+            "sellPrice": 4000,
+            "Type": "Quest Item",
+            "description": "Proof that you completed all of Hoggindaz's quests! Hold down to add to your token bag, found in Storage Info. "
+        },
+        "CardsX17": {
+            "displayName": "Ice Guard Card",
             "sellPrice": 1,
             "Type": "Card",
             "cardData": {
-                "cardID": "X11",
-                "perTier": 1.5,
-                "effect": "+% Dungeon Drop Rate",
-                "bonus": 4,
-                "order": 15
+                "cardID": "X17",
+                "perTier": 8,
+                "effect": "+% Dungeon MP regen",
+                "bonus": 8,
+                "order": 18
             }
         },
-        "EquipmentHats67": {
-            "displayName": "Acorn Topper",
+        "Fish3D": {
+            "displayName": "Jellyfish",
+            "sellPrice": 100,
+            "Type": "Dungeon Evaporate",
+            "description": "You shouldnt be seeing this... "
+        },
+        "Quest62": {
+            "displayName": "Signed Contract",
             "sellPrice": 1,
-            "Type": "Helmet",
-            "lvReqToCraft": 5,
-            "lvReqToEquip": 30,
+            "Type": "Quest Item",
+            "description": "It's the last will and testament of some penguin monster. Just pretend you signed it, ol' Yondergreen seems a little blind and probably wont notice. "
+        },
+        "Quest57": {
+            "displayName": "Damaged Cog",
+            "sellPrice": 500000000,
+            "Type": "Quest Item",
+            "description": "Hold down on this cog to turn it into a Refurbished Cog, IF you have a construction LV of 75{. "
+        },
+        "EquipmentRings23": {
+            "displayName": "Neutron Ice Ring",
+            "sellPrice": 1,
+            "Type": "Ring",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 95,
             "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 5,
-            "AGI": 5,
-            "WIS": 5,
+            "Weapon_Power": 3,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
             "LUK": 0,
-            "Defence": 30,
-            "miscUp1": "15% Skill Exp",
+            "Defence": 11,
+            "miscUp1": "4% Total Damage",
             "miscUp2": "00",
-            "Upgrade_Slots_Left": 4,
+            "Upgrade_Slots_Left": 2,
             "Skill": "",
             "Skill_Power": 0
         }
     },
     "changes": {
-        "FishingRod2": {"lvReqToEquip": [5, 4]},
-        "EquipmentRings11": {"lvReqToEquip": [30, 40], "Defence": [15, 12], "miscUp1": ["00", "4% Defence"]},
-        "EquipmentTools6": {"lvReqToEquip": [27, 25]},
-        "StampC4": {
-            "displayName": ["Blank", "Arcade Ball Stamp"],
-            "stampData": {
-                "effect": ["BaseDmg", "ArcadeBallz"],
-                "function": ["add", "decay"],
-                "x1": [30, 50],
-                "x2": [0, 100],
-                "startV": [25, 30],
-                "startingCost": [50, 1500],
-                "cCostExp": [1.3, 1.33]
-            }
-        },
-        "CardsE2": {"cardData": {"bonus": [8, 9]}},
-        "EquipmentToolsHatchet2": {"lvReqToEquip": [17, 15]},
-        "CatchingNet2": {"lvReqToEquip": [5, 4]},
-        "FishingRod3": {"lvReqToEquip": [10, 9]},
-        "EquipmentTools5": {"lvReqToEquip": [17, 15]},
-        "Quest45": {
+        "SnowB5": {
             "description": [
-                "The key to Bandit Bob's Party Dungeon! Not sure why a sesame seed opens a door out here in the desert though, seems weird. ",
-                "The key to Bandit Bob's Party Dungeon! No not that dungeon... you're thinking of Snakenhotep's Dungeon, this one's for Bandit Bob's dungeon. So yea, this is worthless. "
+                "If you have two of these together, please be careful what other objects you put near them, I need to keep this game age appropirate! ",
+                "If you have two of these together, please be careful what other objects you put near them, I need to keep this game age appropriate! "
             ]
         },
-        "Trophy10": {"AGI": [10, 20], "miscUp1": ["3% Agi", "5% Agi"]},
-        "ObolPinkCatching": {"displayName": ["Dementia Obol of Idk Yet", "Dementia Obol of Colossal Crawlies"]},
-        "CatchingNet4": {"displayName": ["Gilded Net", "Golden Net"]},
-        "CatchingNet3": {"lvReqToEquip": [10, 9]},
-        "StampC5": {
-            "displayName": ["Apple Stamp", "Gold Ball Stamp"],
+        "EquipmentShirts6": {
+            "displayName": ["Paralax Chest", "Chizoar Chestplate"],
+            "lvReqToEquip": [15, 105],
+            "Class": ["Warrior", "All"],
+            "Weapon_Power": [5, 0],
+            "STR": [3, 15],
+            "AGI": [3, 15],
+            "WIS": [0, 15],
+            "LUK": [3, 0],
+            "Defence": [0, 55],
+            "miscUp1": ["", "7% Mastery"],
+            "miscUp2": ["00", "3% Total Damage"],
+            "Upgrade_Slots_Left": [2, 6]
+        },
+        "Refinery5": {"description": ["It's red, and boring. ", "It's purple, and confusing. "]},
+        "StampA22": {
+            "displayName": ["FILLER", "Hermes Stamp"],
+            "sellPrice": [1, 10000],
+            "bonus": [" Base Defence", " STR"],
             "stampData": {
-                "effect": ["HFood", "GoldBallz"],
-                "function": ["add", "decay"],
-                "x1": [1, 40],
-                "x2": [0, 100],
-                "upgradeInterval": [5, 10],
-                "material": ["FoodHealth7", "Fish1"],
-                "mCostExp": [5.5, 6.5],
-                "startingCost": [200, 1000],
-                "cCostExp": [1.3, 1.33]
+                "effect": ["BaseDef", "BaseAGI"],
+                "x1": [30, 1],
+                "upgradeInterval": [10, 3],
+                "material": ["Copper", "Soul3"],
+                "startV": [25, 30],
+                "mCostExp": [6, 7],
+                "startingCost": [50, 10000],
+                "upgradeText": ["{} Base Defence", "{} STR"]
             }
         },
-        "StampC8": {
-            "displayName": ["Blank", "Ball Timer Stamp"],
-            "bonus": [" Base HP", "hr Max Claim Time"],
+        "TestObj16": {
+            "Weapon_Power": [50, 2000],
+            "STR": [3, 30000],
+            "AGI": [3, 30000],
+            "WIS": [0, 30000],
+            "LUK": [3, 30000]
+        },
+        "CardsX10": {"cardData": {"perTier": [3, 5]}},
+        "TrapBoxSet2": {"lvReqToEquip": [10, 5]},
+        "EquipmentPants9": {
+            "displayName": ["Crystallax Shins", "Chizoar Scaled Leggings"],
+            "lvReqToEquip": [15, 100],
+            "Class": ["Warrior", "All"],
+            "Weapon_Power": [5, 0],
+            "STR": [3, 13],
+            "AGI": [3, 13],
+            "WIS": [0, 13],
+            "LUK": [3, 0],
+            "Defence": [0, 52],
+            "miscUp1": ["", "11% Defence"],
+            "Upgrade_Slots_Left": [2, 6]
+        },
+        "TrapBoxSet3": {"lvReqToEquip": [20, 15]},
+        "EquipmentRings16": {"lvReqToEquip": [85, 80]},
+        "EquipmentWeapons1": {"Weapon_Power": [25, 32]},
+        "StampA25": {
+            "displayName": ["FILLER", "Avast Yar Stamp"],
+            "bonus": [" Base Defence", " Base Damage"],
             "stampData": {
-                "effect": ["BaseDmg", "ArcadeTimeMax"],
-                "function": ["add", "decay"],
-                "x1": [30, 12],
-                "x2": [0, 30],
+                "effect": ["BaseDef", "BaseDmg"],
+                "x1": [30, 6],
                 "upgradeInterval": [10, 5],
-                "material": ["Copper", "OakTree"],
-                "startV": [25, 100],
-                "mCostExp": [6, 15],
-                "startingCost": [50, 1000],
-                "cCostExp": [1.3, 1.32],
-                "upgradeText": ["{} Base HP", "{}hr Max Claim Time"]
+                "material": ["Copper", "Critter7"],
+                "startV": [25, 75],
+                "mCostExp": [6, 7],
+                "startingCost": [5000, 15000],
+                "cCostExp": [1.3, 1.33],
+                "upgradeText": ["{} Base Defence", "{} Base Damage"]
             }
         },
-        "EquipmentToolsHatchet3": {"lvReqToEquip": [5, 4]},
-        "Refinery6": {"displayName": ["Red Salt", "Nullo Salt"]},
-        "EquipmentToolsHatchet1": {"lvReqToEquip": [10, 8]},
-        "Refinery5": {"displayName": ["Red Salt", "Purple Salt"]},
-        "ObolPlatinumCatching": {"displayName": ["Platinum Obol of Idk Yet", "Platinum Obol of Ample Anthropods"]},
-        "EquipmentTools3": {"lvReqToEquip": [10, 8]},
-        "StampC13": {
-            "stampData": {
-                "startV": [25, 50],
-                "mCostExp": [6, 10],
-                "startingCost": [50, 2000],
-                "cCostExp": [1.3, 1.4]
-            }
+        "EquipmentHats65": {
+            "Weapon_Power": [1, 2],
+            "STR": [6, 1],
+            "AGI": [6, 1],
+            "WIS": [6, 1],
+            "LUK": [6, 1]
         },
-        "EquipmentTools2": {"lvReqToEquip": [5, 3]}
+        "Refinery6": {"description": ["It's red, and boring. ", "It's grey, and doesn't exist. "]},
+        "OilBarrel3": {
+            "description": [
+                "Increases chance to Not Use Up Ores by 3% for the Slot it's in. 60% chance to be consumed when a bar is forged. ",
+                "Increases Forging Speed by 30% for the Forge Slot it's in. 30% chance to be consumed when a bar is forged. "
+            ]
+        },
+        "EquipmentPendant19": {"miscUp1": ["", "13Accuracy"]},
+        "Trophy11": {"miscUp1": ["8% Boss Damage", "12% Boss Damage"]},
+        "EquipmentShoes21": {"lvReqToEquip": [75, 70]},
+        "StampC4": {
+            "bonus": [" Base HP", "% ball gain rate"],
+            "stampData": {"upgradeText": ["{} Base HP", "{}% ball gain rate"]}
+        }
     }
 }

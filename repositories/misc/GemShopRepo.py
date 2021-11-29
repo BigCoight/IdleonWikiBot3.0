@@ -1,7 +1,8 @@
+from typing import List
+
 from definitions.misc.GemShopItem import GemShopItem
 from helpers.HelperFunctions import getFromSplitArray
 from repositories.master.Repository import Repository
-from typing import List
 
 
 class GemShopRepo(Repository[GemShopItem]):
@@ -29,3 +30,7 @@ class GemShopRepo(Repository[GemShopItem]):
 				qty = item[6],
 				costIncrement = item[7]
 			))
+
+	@classmethod
+	def getWikiName(cls, name: str) -> str:
+		return cls.get(name).itemName

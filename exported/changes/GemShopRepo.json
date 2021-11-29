@@ -1,1 +1,19 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "Timecandy9": {
+            "itemName": "Cosmic Candy",
+            "desc": "Gives 1 Cosmic Time Candy, which can give up to 500 HOURS of AFK time! On average, it will give 24 hrs.",
+            "cost": 325,
+            "no": 54,
+            "maxPurchases": 100000,
+            "qty": 1,
+            "costIncrement": 0
+        }
+    },
+    "changes": {
+        "Timecandy1": {"maxPurchases": [4, 5]},
+        "Timecandy4": {"cost": [280, 270], "maxPurchases": [4, 5]},
+        "Timecandy3": {"cost": [160, 150], "maxPurchases": [4, 5]},
+        "Timecandy2": {"maxPurchases": [4, 5]}
+    }
+}

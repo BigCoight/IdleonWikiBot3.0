@@ -229,6 +229,10 @@
             {"source": "potatoB", "quantity": 69, "chance": 0.5},
             {"source": "snakeZ2", "quantity": 25000, "chance": 1},
             {"source": "snakeZ3", "quantity": 25000, "chance": 1},
+            {"source": "iceknight", "quantity": 69, "chance": 0.5},
+            {"source": "iceBossZ", "quantity": 69, "chance": 0.5},
+            {"source": "iceBossZ2", "quantity": 69, "chance": 0.5},
+            {"source": "iceBossZ3", "quantity": 69, "chance": 0.5},
             {"source": "Crystal0", "quantity": 1, "chance": 0.5},
             {"source": "Crystal1", "quantity": 1, "chance": 0.5},
             {"source": "Crystal2", "quantity": 1, "chance": 0.5},
@@ -2071,8 +2075,8 @@
     },
     "PremiumGem": {
         "sources": [
-            {"source": "babaHour", "quantity": 6, "chance": 0.4},
-            {"source": "babaMummy", "quantity": 6, "chance": 0.5},
+            {"source": "babaHour", "quantity": 4, "chance": 0.4},
+            {"source": "babaMummy", "quantity": 4, "chance": 0.5},
             {"source": "babaMummy", "quantity": 15, "chance": 0.75},
             {"source": "ChestA1", "quantity": 1, "chance": 0.05},
             {"source": "ChestB1", "quantity": 1, "chance": 0.12},
@@ -2096,26 +2100,26 @@
     },
     "Timecandy2": {
         "sources": [
-            {"source": "babaHour", "quantity": 1, "chance": 0.16},
-            {"source": "babaMummy", "quantity": 1, "chance": 0.2}
+            {"source": "babaHour", "quantity": 1, "chance": 0.128},
+            {"source": "babaMummy", "quantity": 1, "chance": 0.16}
         ]
     },
     "Timecandy3": {
         "sources": [
-            {"source": "babaHour", "quantity": 1, "chance": 0.06},
-            {"source": "babaMummy", "quantity": 1, "chance": 0.075}
+            {"source": "babaHour", "quantity": 1, "chance": 0.052},
+            {"source": "babaMummy", "quantity": 1, "chance": 0.065}
         ]
     },
     "Timecandy4": {
         "sources": [
-            {"source": "babaHour", "quantity": 1, "chance": 0.02},
-            {"source": "babaMummy", "quantity": 1, "chance": 0.025}
+            {"source": "babaHour", "quantity": 1, "chance": 0.014},
+            {"source": "babaMummy", "quantity": 1, "chance": 0.0175}
         ]
     },
     "Timecandy5": {
         "sources": [
-            {"source": "babaHour", "quantity": 1, "chance": 0.006},
-            {"source": "babaMummy", "quantity": 1, "chance": 0.0075}
+            {"source": "babaHour", "quantity": 1, "chance": 0.004},
+            {"source": "babaMummy", "quantity": 1, "chance": 0.005}
         ]
     },
     "Timecandy6": {
@@ -2672,7 +2676,14 @@
             {"source": "steakR", "quantity": 1, "chance": 0.018},
             {"source": "potatoB", "quantity": 1, "chance": 0.03},
             {"source": "snakeZ2", "quantity": 1, "chance": 0.8},
-            {"source": "snakeZ3", "quantity": 1, "chance": 0.8}
+            {"source": "snakeZ3", "quantity": 1, "chance": 0.8},
+            {"source": "iceknight", "quantity": 1, "chance": 0.2},
+            {"source": "iceBossZ", "quantity": 1, "chance": 0.8},
+            {"source": "iceBossZ", "quantity": 1, "chance": 0.8},
+            {"source": "iceBossZ2", "quantity": 1, "chance": 0.8},
+            {"source": "iceBossZ2", "quantity": 1, "chance": 0.8},
+            {"source": "iceBossZ3", "quantity": 1, "chance": 0.8},
+            {"source": "iceBossZ3", "quantity": 1, "chance": 0.8}
         ]
     },
     "DungCredits2": {
@@ -2682,7 +2693,11 @@
             {"source": "steakR", "quantity": 1, "chance": 0.0025},
             {"source": "potatoB", "quantity": 1, "chance": 0.005},
             {"source": "snakeZ2", "quantity": 1, "chance": 0.8},
-            {"source": "snakeZ3", "quantity": 1, "chance": 0.8}
+            {"source": "snakeZ3", "quantity": 1, "chance": 0.8},
+            {"source": "iceknight", "quantity": 1, "chance": 0.08},
+            {"source": "iceBossZ", "quantity": 1, "chance": 0.8},
+            {"source": "iceBossZ2", "quantity": 1, "chance": 0.8},
+            {"source": "iceBossZ3", "quantity": 1, "chance": 0.8}
         ]
     },
     "CardsA14": {"sources": [
@@ -3277,7 +3292,7 @@
         {"source": "Boss2A", "quantity": 1, "chance": 1}
     ]},
     "CardsZ3": {"sources": [
-        {"source": "Boss2A", "quantity": 1, "chance": 0.035}
+        {"source": "Boss2A", "quantity": 1, "chance": 0.025}
     ]},
     "ObolEfauntA": {
         "sources": [
@@ -3298,7 +3313,7 @@
         ]
     },
     "CardsZ7": {"sources": [
-        {"source": "Boss2B", "quantity": 1, "chance": 0.045}
+        {"source": "Boss2B", "quantity": 1, "chance": 0.016}
     ]},
     "EfauntDrop2": {"sources": [
         {"source": "Boss2B", "quantity": 1, "chance": 0.2}
@@ -3354,6 +3369,9 @@
     "CardsE14": {"sources": [
         {"source": "ram", "quantity": 1, "chance": 0.0001}
     ]},
+    "EquipmentRings23": {"sources": [
+        {"source": "ram", "quantity": 1, "chance": 1e-06}
+    ]},
     "SnowB1": {"sources": [
         {"source": "bloque", "quantity": 1, "chance": 0.16}
     ]},
@@ -3381,6 +3399,13 @@
     "InvBag110": {"sources": [
         {"source": "mamoth", "quantity": 1, "chance": 8e-06}
     ]},
+    "Quest63": {
+        "sources": [
+            {"source": "mamoth", "quantity": 1, "chance": 1},
+            {"source": "snowball", "quantity": 1, "chance": 1},
+            {"source": "thermostat", "quantity": 1, "chance": 1}
+        ]
+    },
     "SnowB5": {"sources": [
         {"source": "snowball", "quantity": 1, "chance": 0.16}
     ]},
@@ -3395,6 +3420,9 @@
     ]},
     "CardsE6": {"sources": [
         {"source": "penguin", "quantity": 1, "chance": 0.0001}
+    ]},
+    "Quest62": {"sources": [
+        {"source": "penguin", "quantity": 1, "chance": 0.02}
     ]},
     "SnowB4": {"sources": [
         {"source": "thermostat", "quantity": 1, "chance": 0.16}

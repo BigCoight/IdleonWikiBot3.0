@@ -142,7 +142,7 @@ class IdleonModel(BaseModel):
 
 		for key in newItems:
 			if isinstance(other[key], IdleonModel) and other[key].shouldCompare():
-				toAdd = other[key].toDict()
+				toAdd = other[key].toDict(ignored)
 				diffs[key] = {}
 				for atr, val in toAdd.items():
 					if isinstance(val, list):

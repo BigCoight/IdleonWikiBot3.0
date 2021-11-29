@@ -1,162 +1,793 @@
 {
-    "new": {
-        "Falloween Pumpkin": {
-            "quests": {
-                "The Spookyness": {
-                    "Type": Custom,
-                    "DialogueText": "Falloween is meant to be scary and what's scarier than death right? Go kill some monsters! <br> QUEST:Defeat monsters without having AUTO turned on.",
-                    "NextIndex": 5,
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "NoSpaceIndex": 4,
-                    "Rewards": [{"item": "PremiumGem", "quantity": 40}, {"item": "Timecandy8", "quantity": 4}],
-                    "Difficulty": 1,
-                    "Name": "The Spookyness",
-                    "CustomArray": [{"desc": "Defeat monsters:", "finalV": 50, "type": "GreaterEqual", "startV": 0}]
-                },
-                "The Scaryness": {
-                    "Type": Custom,
-                    "DialogueText": "Hmm that may have scared the monsters but you seem unfazed... how about you go play a party dungeon? I heard those things are a true nightmare! <br> QUEST:Play a party dungeon with a party of 4 or more people.",
-                    "NextIndex": 8,
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "NoSpaceIndex": 7,
-                    "Rewards": [{"item": "PremiumGem", "quantity": 50}, {"item": "Timecandy8", "quantity": 5}],
-                    "Difficulty": 3,
-                    "Name": "The Scaryness",
-                    "CustomArray": [
-                        {"desc": "Play a Party Dungeon:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
-                        {
-                            "desc": "Have 4 people in Party:",
-                            "finalV": 1,
-                            "type": "GreaterEqual",
-                            "startV": 0
-                        }
-                    ]
-                },
-                "The Horroriness": {
-                    "Type": Custom,
-                    "DialogueText": "Hmm still not scared eh? Well let's see if you can stomach the sheer terror of a RECYCLED QUEST! <br> QUEST:Defeat monsters without having AUTO turned on.",
-                    "NextIndex": 11,
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "NoSpaceIndex": 10,
-                    "Rewards": [{"item": "PremiumGem", "quantity": 50}, {"item": "Timecandy8", "quantity": 5}],
-                    "Difficulty": 5,
-                    "Name": "The Horroriness",
-                    "CustomArray": [{"desc": "Defeat Monsters:", "finalV": 300, "type": "GreaterEqual", "startV": 0}]
-                },
-                "The Booeyness": {
-                    "Type": Custom,
-                    "DialogueText": "Ok ok you've got nerves of steel. Let's get back to scaring others then! <br> QUEST:Say 'boo' to 200 different people without closing the Game. If you do your counter will reset.",
-                    "NextIndex": 14,
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "NoSpaceIndex": 13,
-                    "Rewards": [{"item": "PremiumGem", "quantity": 60}, {"item": "Timecandy8", "quantity": 6}],
-                    "Difficulty": 7,
-                    "Name": "The Booeyness",
-                    "CustomArray": [{
-                        "desc": "Say 'Boo' to People:",
-                        "finalV": 200,
-                        "type": "GreaterEqual",
-                        "startV": 0
-                    }]
-                },
-                "The Afterparty": {
-                    "Type": Custom,
-                    "DialogueText": "Well I've got one last trick for ya... and what a trick it is! After all what's scarier than having to socialize with others?? <br> QUEST: Defeat monsters with other party members around you.",
-                    "NextIndex": 17,
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "NoSpaceIndex": 16,
-                    "Rewards": [{"item": "PremiumGem", "quantity": 80}, {"item": "Timecandy8", "quantity": 6}],
-                    "Difficulty": 7,
-                    "Name": "The Afterparty",
-                    "CustomArray": [{
-                        "desc": "Defeat mobs in Party:",
-                        "finalV": 500,
-                        "type": "GreaterEqual",
-                        "startV": 0
-                    }]
-                }
-            }
-        }
-    },
+    "new": {},
     "changes": {
-        "Gangster Gus": {
+        "Yondergreen": {
             "quests": {
-                "Perfect Progress Score": {
-                    "DialogueText": [
-                        "If you get 100% Progress by passing them rooms you'll awaken the boss... and you KNOW he finna have that loot on 'im! QUEST:Defeat Snakenhotep who will come out of hiding if you get 100% Progress.",
-                        "If you get 100% Progress by passing them rooms you'll awaken the boss... and you KNOW he finna have that loot on 'im! <br> QUEST:Defeat Snakenhotep who will come out of hiding if you get 100% Progress."
-                    ]
-                },
-                "Sanke Revival Denial": {
-                    "Type": [" ", Custom],
+                "Economic Policy": {
+                    "Type": [" ", "Custom"],
                     "DialogueText": [
                         " ",
-                        "Nah man I ain't gon let this slide. You go on in there and defeat that big bad for real! <br> QUEST: Defeat Enraged Snakenhotep. I'll give you a hint... those skull rocks must be destroyed at all costs!"
+                        "Well I'd need to see your economic policy as well. <br> QUEST:Kill penguins until there are 75 coins on the ground but there CANT be any other types of items on the ground"
                     ],
-                    "NextIndex": [" ", 12],
+                    "NextIndex": [" ", 8],
+                    "Name": [" ", "Economic Policy"],
                     "ConsumeItems": [" ", false],
-                    "InventorySpacesNeeded": [" ", 2],
-                    "NoSpaceIndex": [" ", 11],
+                    "InventorySpacesNeeded": [" ", 3],
+                    "NoSpaceIndex": [" ", 7],
                     "Rewards": [
-                        [" ", {"item": "GemP16", "quantity": 3}],
-                        [" ", {"item": "DungCredits1", "quantity": 25}]
+                        [" ", {"item": "GemP16", "quantity": 1}]
                     ],
-                    "QuestName": [" ", "Gangster Gus3"],
-                    "Difficulty": [" ", 5],
-                    "Name": [" ", "Sanke Revival Denial"],
-                    "CustomType": [" ", "Gangster Gus3"],
+                    "Difficulty": [" ", 3],
                     "CustomArray": [
-                        [" ", {"desc": "Defeat Snakenhotep 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
-                    ]
-                }
-            }
-        },
-        "Bandit Bob": {
-            "quests": {
-                "The Desert Dungeon Prequest": {
-                    "DialogueText": [
-                        "Door wont open? You gotta find yourself one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed so you can play the party dungeon!",
-                        "You can enter the dungeon with one of them magic Sesame Seeds! They're a 1 in 100 drop from the mimics outside but only if you're actively farming! <br> QUEST:Go get a Sesame Seed a rare drop from actively fighting Mimics."
-                    ]
-                }
-            }
-        },
-        "Stiltzcho": {
-            "quests": {
-                "Outta the Way Slimes": {
-                    "DialogueText": [
-                        "Thay do respawn very quick so you must do it fast! Remember to Forfeit the Quest using the Codex if you run out of time! <br> QUEST:Kill 12 Slimes before time runs out",
-                        "Thay do respawn very quick so you must do it fast! Remember to Forfeit the Quest using the Codex if you run out of time! <br> QUEST:Kill 10 Slimes before time runs out"
-                    ],
-                    "Rewards": [
-                        [
-                            {"type": Class, "amount": 1000},
-                            {"type": Class, "amount": 2000}
-                        ]
-                    ],
-                    "CustomArray": [
-                        [
-                            {"desc": "Slimes Defeated", "finalV": 12, "type": "GreaterEqual", "startV": 0},
-                            {"desc": "Slimes Defeated", "finalV": 10, "type": "GreaterEqual", "startV": 0}
-                        ],
-                        [
-                            {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 115},
-                            {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 140}
-                        ]
+                        [" ", {"desc": "Coins on Ground:", "finalV": 75, "type": "GreaterEqual", "startV": 0}]
                     ]
                 },
-                "No Stone Unturned": {
+                "Keep Away Contract": {
+                    "Type": [" ", "Custom"],
                     "DialogueText": [
-                        "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boas until you find a clue",
-                        "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boa Snakes until you find a clue"
+                        " ",
+                        "Lonely Hunter needs a restraining order on... well everyone. I guess it's in the name right? <br> QUEST:Go idle at Flakes map for exactly 9 hours 33 minutes. You can be off by only a few minutes."
                     ],
+                    "NextIndex": [" ", 21],
+                    "Name": [" ", "Keep Away Contract"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 20],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy4", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 4],
+                    "CustomArray": [
+                        [" ", {"desc": "Idle with LH:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "No Snapping Contract": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "Please go see Snouts he wants his rope to be contractually obligated to not break on him... yea not the smartest pig around. <br> QUEST:Go idle at Stache map for exactly 4 hours 10 minutes. You can be off by only a few minutes."
+                    ],
+                    "NextIndex": [" ", 18],
+                    "Name": [" ", "No Snapping Contract"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 17],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy3", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 2],
+                    "CustomArray": [
+                        [" ", {"desc": "Idle with Snouts:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "Stance on Big Tech": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [" ", "So how about big tech then? <br> QUEST:Take a printer sample of at least 25 pens"],
+                    "NextIndex": [" ", 11],
+                    "Name": [" ", "Stance on Big Tech"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 3],
+                    "NoSpaceIndex": [" ", 10],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy3", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 4],
+                    "CustomArray": [
+                        [" ", {"desc": "Pen Sample Size:", "finalV": 20, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "Ad Solidarity Contract": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "Bill Brr wants some stronger advertiser contracts so they can't back out every time he makes an edgy joke. <br> QUEST:Go idle at Bop Boxes map for exactly 21 hours 51 minutes. You can be off by only a few minutes."
+                    ],
+                    "NextIndex": [" ", 24],
+                    "Name": [" ", "Ad Solidarity Contract"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 23],
+                    "Rewards": [
+                        [" ", {"item": "NPCtoken36", "quantity": 1}],
+                        [" ", {"item": "Timecandy5", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 7],
+                    "CustomArray": [
+                        [" ", {"desc": "Idle with Bill:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "Legislative Action": {
+                    "Type": [" ", "ItemsAndSpaceRequired"],
+                    "DialogueText": [
+                        " ",
+                        "Alright as a contract lawyer I have one more question. Do you have the guts to sign legislature into action? <br> QUEST:Collect contracts. They only drop from penguins you kill actively not while you're gone!"
+                    ],
+                    "NextIndex": [" ", 14],
+                    "Name": [" ", "Legislative Action"],
+                    "ConsumeItems": [" ", true],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 13],
+                    "Rewards": [
+                        [" ", {"item": "Quest60", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 5],
                     "ItemReq": [
-                        [{"item": "Quest7", "quantity": 5}, {"item": "Quest7", "quantity": 4}]
+                        [" ", {"item": "Quest62", "quantity": 4}]
+                    ]
+                },
+                "Infrastructure Plan": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "First how do you feel about the importance of infrastructure in the community?? <br> QUEST:Place Shrines in this map."
+                    ],
+                    "NextIndex": [" ", 5],
+                    "Name": [" ", "Infrastructure Plan"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 3],
+                    "NoSpaceIndex": [" ", 4],
+                    "Rewards": [
+                        [" ", {"item": "GemP16", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 2],
+                    "CustomArray": [
+                        [" ", {"desc": "Shrines Placed:", "finalV": 4, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                }
+            }
+        },
+        "Worldo": {
+            "quests": {
+                "Can't Guard if you're Dead!": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "But you gotta stop working for others and take them head one! Fight the power!! <br> QUEST:Defeat 12 Ice Guards in a single run."
+                    ],
+                    "NextIndex": [" ", 9],
+                    "Name": [" ", "Can't Guard if you're Dead!"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 8],
+                    "Rewards": [
+                        [" ", {"item": "CardPack4", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 4}]
+                    ],
+                    "Difficulty": [" ", 6],
+                    "CustomArray": [
+                        [" ", {"desc": "Guards Defeated:", "finalV": 12, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "Odd Jobs for Cold Hard Cash": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "Enter the basement through that cave to the left and try to make something of yourself! <br> QUEST:Complete 15 jobs in the Glacial Basement Dungeon. It's the task shown at the top."
+                    ],
+                    "NextIndex": [" ", 6],
+                    "Name": [" ", "Odd Jobs for Cold Hard Cash"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 5],
+                    "Rewards": [
+                        [" ", {"item": "CardPack4", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 3}]
+                    ],
+                    "Difficulty": [" ", 3],
+                    "CustomArray": [
+                        [" ", {"desc": "Jobs Completed:", "finalV": 15, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                }
+            }
+        },
+        "Bill Brr": {
+            "quests": {
+                "Hatin' on the Green One": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "Just a small thing really I just wanna see you defeat Chaotic Chizoar. No biggie right? <br> QUEST:Defeat C. Chizoar."
+                    ],
+                    "NextIndex": [" ", 23],
+                    "Name": [" ", "Hatin' on the Green One"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 22],
+                    "Rewards": [
+                        [" ", {"item": "NPCtoken37", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 8],
+                    "CustomArray": [
+                        [" ", {"desc": "C. Chizoar Killed:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "Have a Candy": {
+                    "Type": [" ", "ItemsAndSpaceRequired"],
+                    "DialogueText": [
+                        " ",
+                        "Jeez you're still here? Can't you tell I don't really wanna socialize with the likes of you? Eh whatever... got any candies on ya? QUEST:Give Bill some candy."
+                    ],
+                    "NextIndex": [" ", 17],
+                    "Name": [" ", "Have a Candy"],
+                    "ConsumeItems": [" ", true],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 16],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy3", "quantity": 3}]
+                    ],
+                    "Difficulty": [" ", 3],
+                    "ItemReq": [
+                        [" ", {"item": "Timecandy1", "quantity": 5}],
+                        [" ", {"item": "Timecandy2", "quantity": 2}]
+                    ]
+                },
+                "The Spores are a Bore": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "I'm gonna spawn a bunch of mobs and you gotta avoid hurting the Spores but kill the other ones. <br> QUEST:Do the thingy for this annoying ham slice."
+                    ],
+                    "NextIndex": [" ", 11],
+                    "Name": [" ", "The Spores are a Bore"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 10],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy2", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 3],
+                    "CustomArray": [
+                        [" ", {"desc": "Cryo Kills:", "finalV": 3, "type": "GreaterEqual", "startV": 0}],
+                        [" ", {"desc": "Spores Unharmed:", "finalV": 1, "type": "GreaterEqual", "startV": 1}]
+                    ]
+                },
+                "Duckin' and Shatterin'": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "You know what? You're an alright dude how about a little competition? See if you can take out 18 ice orbs while fighting Chizoar without getting hit. <br> QUEST:Do what he just said why do I have to say it over again?"
+                    ],
+                    "NextIndex": [" ", 20],
+                    "Name": [" ", "Duckin' and Shatterin'"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 19],
+                    "Rewards": [
+                        [" ", {"item": "GemP16", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 5],
+                    "CustomArray": [
+                        [" ", {"desc": "Orbs Shattered:", "finalV": 18, "type": "GreaterEqual", "startV": 0}],
+                        [" ", {"desc": "No Injury:", "finalV": 1, "type": "GreaterEqual", "startV": 1}]
+                    ]
+                },
+                "Fairly Odd Damage": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "Look buddy it's not all about you. How about you do somethin' for me first yea? Got any jokes anything real odd that might lighten my morning? <br> QUEST:Deal an 'odd' amount of damage 8 times in a row."
+                    ],
+                    "NextIndex": [" ", 4],
+                    "Name": [" ", "Fairly Odd Damage"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 3],
+                    "Rewards": [
+                        [" ", {"item": "ExpBalloon2", "quantity": 5}],
+                        [" ", {"item": "PremiumGem", "quantity": 3}]
+                    ],
+                    "Difficulty": [" ", 4],
+                    "CustomArray": [
+                        [" ", {"desc": "Odd Dmg in a Row:", "finalV": 8, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "Laughin' Amphibian": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "Maybe you need a bit of help? Here I hid one of my old jokes in this frog's loot table. Just kill it and read me the joke and you can have your vote. <br> QUEST:Defeat the Giga Frog with Bill's joke in it."
+                    ],
+                    "NextIndex": [" ", 7],
+                    "Name": [" ", "Laughin' Amphibian"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 6],
+                    "Rewards": [
+                        [" ", {"item": "GemP16", "quantity": 1}],
+                        [" ", {"item": "PremiumGem", "quantity": 4}]
+                    ],
+                    "Difficulty": [" ", 2],
+                    "CustomArray": [
+                        [" ", {"desc": "Frog Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "Coin Shenanigans": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "Pick up that coin. Just run over to it easy peasy! <br> QUEST:Pick up the coin by running over it."
+                    ],
+                    "NextIndex": [" ", 14],
+                    "Name": [" ", "Coin Shenanigans"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 13],
+                    "Rewards": [
+                        [" ", {"item": "Quest61", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 3],
+                    "CustomArray": [
+                        [" ", {"desc": "Coin Collected:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                }
+            }
+        },
+        "Snouts": {
+            "quests": {
+                "A Salty Fall": {
+                    "ItemReq": [
+                        [{"item": "Refinery1", "quantity": 50}, {"item": "Refinery1", "quantity": 30}]
+                    ]
+                },
+                "Gravity VS Salt": {
+                    "ItemReq": [
+                        [{"item": "Refinery2", "quantity": 75}, {"item": "Refinery2", "quantity": 50}]
+                    ]
+                },
+                "Mana Plox": {
+                    "Type": [" ", "ItemsAndSpaceRequired"],
+                    "DialogueText": [
+                        " ",
+                        "WAIT! I totally forgot I have a star talent that can shield me!! But I don't have enough mana to cast it... please get me some pots!!! <br> QUEST:Get the big circular mana potions for Snouts!"
+                    ],
+                    "NextIndex": [" ", 18],
+                    "Name": [" ", "Mana Plox"],
+                    "ConsumeItems": [" ", true],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 17],
+                    "Rewards": [
+                        [" ", {"item": "NPCtoken34", "quantity": 1}],
+                        [" ", {"item": "Timecandy3", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 5],
+                    "ItemReq": [
+                        [" ", {"item": "FoodPotMana3", "quantity": 250}]
+                    ]
+                }
+            }
+        },
+        "Hoggindaz": {
+            "quests": {
+                "Voter Recognition": {
+                    "Type": [" ", "ItemsAndSpaceRequired"],
+                    "DialogueText": [
+                        " ",
+                        "Hmm which voter should we target first? How about Shuvelle? She's out in the Mamooth map. She's a hardline ICE Party member and will surely declare her vote! <br> QUEST:Get Shuvelle's Vote for Hoggi."
+                    ],
+                    "NextIndex": [" ", 27],
+                    "Name": [" ", "Voter Recognition"],
+                    "ConsumeItems": [" ", true],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 26],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy2", "quantity": 3}]
+                    ],
+                    "Difficulty": [" ", 3],
+                    "ItemReq": [
+                        [" ", {"item": "Quest59", "quantity": 1}]
+                    ]
+                },
+                "Voter Appeasement": {
+                    "Type": [" ", "ItemsAndSpaceRequired"],
+                    "DialogueText": [
+                        " ",
+                        "Now then lets shift our focus to the '65 and over' demographic that's where all the donations come from! I bet Yondergreen would fit right in he was a contract lawyer after all! <br> QUEST:Get Yondergreen's Vote for Hoggi."
+                    ],
+                    "NextIndex": [" ", 30],
+                    "Name": [" ", "Voter Appeasement"],
+                    "ConsumeItems": [" ", true],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 29],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy3", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 5],
+                    "ItemReq": [
+                        [" ", {"item": "Quest60", "quantity": 1}]
+                    ]
+                },
+                "The Fresh Prince of the Tundra": {
+                    "Type": [" ", "ItemsAndSpaceRequired"],
+                    "DialogueText": [
+                        " ",
+                        "How would you like to be my prince? Prince's are a step below Mayors in this world but it's still a step up from whatever title you have no offence! <br> QUEST:Prove your worthiness as the Tundra's Frost Prince."
+                    ],
+                    "NextIndex": [" ", 41],
+                    "Name": [" ", "The Fresh Prince of the Tundra"],
+                    "ConsumeItems": [" ", true],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 40],
+                    "Rewards": [
+                        [" ", {"item": "Trophy15", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 1],
+                    "ItemReq": [
+                        [" ", {"item": "BadgeI1", "quantity": 1}],
+                        [" ", {"item": "BadgeI2", "quantity": 1}],
+                        [" ", {"item": "BadgeI3", "quantity": 1}]
+                    ]
+                },
+                "Voter Apathy": {
+                    "Type": [" ", "ItemsAndSpaceRequired"],
+                    "DialogueText": [
+                        " ",
+                        "So who is even left... uh oh. There's gotta be someone other than Bill right? No? Ugh I don't think that guy's ever voted for ANYONE but he's our only shot so lets get to it! <br> QUEST: Get Bill Brr's Vote for Hoggi."
+                    ],
+                    "NextIndex": [" ", 33],
+                    "Name": [" ", "Voter Apathy"],
+                    "ConsumeItems": [" ", true],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 32],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy4", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 6],
+                    "ItemReq": [
+                        [" ", {"item": "Quest61", "quantity": 1}]
+                    ]
+                },
+                "Chizoar No More": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "My first order as Mayor is for you to go defeat that world boss who invaded just before the election! Come to think of it why didn't I do that back then I was still mayor... QUEST:Defeat Chizoar the World 3 Boss."
+                    ],
+                    "NextIndex": [" ", 38],
+                    "Name": [" ", "Chizoar No More"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 3],
+                    "NoSpaceIndex": [" ", 37],
+                    "Rewards": [
+                        [" ", {"item": "NPCtoken32", "quantity": 1}],
+                        [" ", {"item": "ExpBalloon3", "quantity": 2}],
+                        [" ", {"item": "ExpBalloon2", "quantity": 4}]
+                    ],
+                    "Difficulty": [" ", 5],
+                    "CustomArray": [
+                        [" ", {"desc": "Chizoar Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                }
+            }
+        },
+        "Lonely Hunter": {
+            "quests": {
+                "Skeleton? Skelegone!": {
+                    "Rewards": [
+                        [{"item": "TixCol", "quantity": 1}, {"item": "TixCol", "quantity": 2}]
+                    ]
+                },
+                "Opening Chests": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "Ugh hang on. I forgot about the token. Look just break open some chests and you can have it. <br> QUEST:Break open chests in this colosseum."
+                    ],
+                    "NextIndex": [" ", 10],
+                    "Name": [" ", "Opening Chests"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 9],
+                    "Rewards": [
+                        [" ", {"item": "NPCtoken31", "quantity": 1}],
+                        [" ", {"item": "TixCol", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 4],
+                    "CustomArray": [
+                        [" ", {"desc": "Bronze Chests:", "finalV": 7, "type": "GreaterEqual", "startV": 0}],
+                        [" ", {"desc": "Silver Chests:", "finalV": 3, "type": "GreaterEqual", "startV": 0}],
+                        [" ", {"desc": "Gold Chests:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                }
+            }
+        },
+        "Crystalswine": {
+            "quests": {
+                "Melting the Snakes": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "The note continues: <br> 'You can have my Stamps too if you like just prove yourself first.' QUEST:Defeat all the Cryosnakes in this map before time runs out"
+                    ],
+                    "NextIndex": [" ", 8],
+                    "Name": [" ", "Melting the Snakes"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 3],
+                    "NoSpaceIndex": [" ", 7],
+                    "Rewards": [
+                        [" ", {"item": "StampA22", "quantity": 1}],
+                        [" ", {"item": "Timecandy2", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 4],
+                    "CustomArray": [
+                        [" ", {"desc": "Cryosnake:", "finalV": 20, "type": "GreaterEqual", "startV": 0}],
+                        [" ", {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 90}]
+                    ]
+                },
+                "Global Warming": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "The note continues: <br> 'Ok THAT was cool. If you take out all the monsters on every map from here to rams you can have my final stamp.' <br> Quest:Defeat every monster inbetween here and Dedotated Rams."
+                    ],
+                    "NextIndex": [" ", 14],
+                    "Name": [" ", "Global Warming"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 13],
+                    "Rewards": [
+                        [" ", {"item": "StampA25", "quantity": 1}],
+                        [" ", {"item": "Timecandy5", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 5}]
+                    ],
+                    "Difficulty": [" ", 7],
+                    "CustomArray": [
+                        [" ", {"desc": "Monsters Defeated:", "finalV": 168, "type": "GreaterEqual", "startV": 0}],
+                        [" ", {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 500}]
+                    ]
+                },
+                "Sunrunning to Chizoar": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "The note continues: <br> 'That was cool but not cool enough for another stamp. You can have my token instead if you do this...' <br> QUEST:Defeat every Cryosnake Bop Box and Neyeptune before time runs out."
+                    ],
+                    "NextIndex": [" ", 11],
+                    "Name": [" ", "Sunrunning to Chizoar"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 3],
+                    "NoSpaceIndex": [" ", 10],
+                    "Rewards": [
+                        [" ", {"item": "NPCtoken38", "quantity": 1}],
+                        [" ", {"item": "Timecandy3", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 3}]
+                    ],
+                    "Difficulty": [" ", 6],
+                    "CustomArray": [
+                        [" ", {"desc": "Monsters Defeated:", "finalV": 59, "type": "GreaterEqual", "startV": 0}],
+                        [" ", {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 240}]
+                    ]
+                }
+            }
+        },
+        "Bellows": {
+            "quests": {
+                "Optometric Hoarder": {
+                    "Type": [" ", "ItemsAndSpaceRequired"],
+                    "DialogueText": [
+                        " ",
+                        "Last thing... I want... <br> too see... a BUNCH of items... <br> All at once... <br> QUEST:Have a bunch of lenses in your inventory at once. They wont take them they just wants to see them."
+                    ],
+                    "NextIndex": [" ", 12],
+                    "Name": [" ", "Optometric Hoarder"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 11],
+                    "Rewards": [
+                        [" ", {"item": "NPCtoken33", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 6],
+                    "ItemReq": [
+                        [" ", {"item": "SnowC4a", "quantity": 4}],
+                        [" ", {"item": "SnowC4", "quantity": 14000}]
+                    ]
+                },
+                "Poking Some Eyes Out": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "Hi... please go kill... <br> all those eyeballs... thanks... <br> QUEST:Kill 50 Neyeptunes actively. No AFKing"
+                    ],
+                    "NextIndex": [" ", 3],
+                    "Name": [" ", "Poking Some Eyes Out"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 2],
+                    "Rewards": [
+                        [" ", {"item": "Key3", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 2],
+                    "CustomArray": [
+                        [" ", {"desc": "Neyeptunes Killed:", "finalV": 50, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "Veyebing": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "Ok then... how about... <br> we go big... or go home... <br> QUEST:Defeat a Giant Neyeptune monster. You must have Tachion of the Titan Prayer equipped to get Giant monsters to spawn."
+                    ],
+                    "NextIndex": [" ", 9],
+                    "Name": [" ", "Veyebing"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 8],
+                    "Rewards": [
+                        [" ", {"item": "Key3", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 4],
+                    "CustomArray": [
+                        [" ", {"desc": "Giant Eye's Killed:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "Eyexperience": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "I love exp... go get exp... <br> but like... a lot of it... <br> all at once... <br> QUEST:Get at least 3200 EXP from a single Neyeptune kill"
+                    ],
+                    "NextIndex": [" ", 6],
+                    "Name": [" ", "Eyexperience"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 5],
+                    "Rewards": [
+                        [" ", {"item": "Key3", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 5],
+                    "CustomArray": [
+                        [" ", {"desc": "Single Kill XP:", "finalV": 3200, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                }
+            }
+        },
+        "Shuvelle": {
+            "quests": {
+                "Diggy Diggy Hole!": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "The second hole is right next door at the Snowman man. Have the shovels drop right above the Worship Totem <br> QUEST:Kill Snowman and have shovels drop into the place right above the Totem."
+                    ],
+                    "NextIndex": [" ", 20],
+                    "Name": [" ", "Diggy Diggy Hole!"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 19],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy3", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 4],
+                    "CustomArray": [
+                        [" ", {"desc": "Shovels in Place:", "finalV": 15, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "Mayoral Sack Size": {
+                    "Type": [" ", "ItemsAndSpaceRequired"],
+                    "DialogueText": [
+                        " ",
+                        "Lucky skillfull... how about resourceful? No no my apologies I meant resource full! <br> QUEST:Have 8000 Mamooth tusks in your inventory at once. She won't take them from you don't worry."
+                    ],
+                    "NextIndex": [" ", 11],
+                    "Name": [" ", "Mayoral Sack Size"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 3],
+                    "NoSpaceIndex": [" ", 10],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy3", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 6],
+                    "ItemReq": [
+                        [" ", {"item": "SnowB2", "quantity": 8000}]
+                    ]
+                },
+                "Mayoral Luck": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "So first off as my mom always told me luck is the most important thing in this world. So are you lucky? <br> QUEST: Kill Mamooths and get lucky with tusk drops. If you fail you need to FORFEIT the quest in the codex."
+                    ],
+                    "NextIndex": [" ", 5],
+                    "Name": [" ", "Mayoral Luck"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 4],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy1", "quantity": 2}],
+                        [" ", {"item": "GemP16", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 3],
+                    "CustomArray": [
+                        [" ", {"desc": "Tusks Dropped:", "finalV": 6, "type": "GreaterEqual", "startV": 0}],
+                        [" ", {"desc": "Time Left:", "finalV": 1, "type": "GreaterEqual", "startV": 50}]
+                    ]
+                },
+                "Dig Diggily Diggy Dig Dig Hole!": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "The last hole they needed dug is on the edge of the frozen plane somewhere around the Thermisters. QUEST:Kill Thermisters and have shovels drop into the place right near the uh... hmm idk but you'll figure it out!."
+                    ],
+                    "NextIndex": [" ", 23],
+                    "Name": [" ", "Dig Diggily Diggy Dig Dig Hole!"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 22],
+                    "Rewards": [
+                        [" ", {"item": "NPCtoken35", "quantity": 1}],
+                        [" ", {"item": "Timecandy3", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 2}]
+                    ],
+                    "Difficulty": [" ", 5],
+                    "CustomArray": [
+                        [" ", {"desc": "Shovels in Place:", "finalV": 16, "type": "GreaterEqual", "startV": 0}]
+                    ]
+                },
+                "Mayoral Skill": {
+                    "Type": [" ", "ItemsAndSpaceRequired"],
+                    "DialogueText": [
+                        " ",
+                        "Of course there's more to leadership than just luck. I'm not sure you've learned the Digging Skill yet but how about Catching? QUEST: Bring some Mosquisnow Bugs to Shuvelle."
+                    ],
+                    "NextIndex": [" ", 8],
+                    "Name": [" ", "Mayoral Skill"],
+                    "ConsumeItems": [" ", true],
+                    "InventorySpacesNeeded": [" ", 3],
+                    "NoSpaceIndex": [" ", 7],
+                    "Rewards": [
+                        [" ", {"item": "GemP16", "quantity": 2}],
+                        [" ", {"item": "Bug3", "quantity": 2000}],
+                        [" ", {"item": "Fish3", "quantity": 2000}]
+                    ],
+                    "Difficulty": [" ", 4],
+                    "ItemReq": [
+                        [" ", {"item": "Bug5", "quantity": 200}]
+                    ]
+                },
+                "Mayoral Movie Taste": {
+                    "Type": [" ", "ItemsAndSpaceRequired"],
+                    "DialogueText": [
+                        " ",
+                        "Can you get me a DVD of that one movie the 'coming of age' one? I think I saw some mamooths with a copy ages ago... <br> QUEST:Get a DVD from mamooths which is a super rare drop."
+                    ],
+                    "NextIndex": [" ", 14],
+                    "Name": [" ", "Mayoral Movie Taste"],
+                    "ConsumeItems": [" ", true],
+                    "InventorySpacesNeeded": [" ", 1],
+                    "NoSpaceIndex": [" ", 13],
+                    "Rewards": [
+                        [" ", {"item": "Quest59", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 5],
+                    "ItemReq": [
+                        [" ", {"item": "SnowB2a", "quantity": 1}]
+                    ]
+                },
+                "Diggy Hole!": {
+                    "Type": [" ", "Custom"],
+                    "DialogueText": [
+                        " ",
+                        "I've got a client who needs some holes dug in various places... first one is just down there on the top left mamooth platform under the rope. <br> QUEST:Kill mamooths and have shovels drop into the place right under the rope."
+                    ],
+                    "NextIndex": [" ", 17],
+                    "Name": [" ", "Diggy Hole!"],
+                    "ConsumeItems": [" ", false],
+                    "InventorySpacesNeeded": [" ", 2],
+                    "NoSpaceIndex": [" ", 16],
+                    "Rewards": [
+                        [" ", {"item": "Timecandy2", "quantity": 1}],
+                        [" ", {"item": "GemP16", "quantity": 1}]
+                    ],
+                    "Difficulty": [" ", 3],
+                    "CustomArray": [
+                        [" ", {"desc": "Shovels in Place:", "finalV": 12, "type": "GreaterEqual", "startV": 0}]
                     ]
                 }
             }

@@ -94,5 +94,61 @@
             {"bonus": "LUK", "x1": 0.25, "x2": 0, "func": "add"},
             {"bonus": "% Crystal Mob Spawn", "x1": 65, "x2": 200, "func": "decay"}
         ]
+    },
+    "Deaths Storage Unit": {
+        "name": "Deaths Storage Unit",
+        "bonuses": [
+            {"bonus": "Weapon Power", "x1": 22, "x2": 200, "func": "decay"},
+            {"bonus": "% Basic Atk Speed", "x1": 15, "x2": 150, "func": "decay"},
+            {"bonus": "% Total Damage", "x1": 15, "x2": 200, "func": "decay"}
+        ]
+    },
+    "Utilitarian Capsule": {
+        "name": "Utilitarian Capsule",
+        "bonuses": [
+            {"bonus": "% Printer Sample Size", "x1": 5, "x2": 200, "func": "decay"},
+            {"bonus": "% Multikill per Tier", "x1": 15, "x2": 200, "func": "decay"},
+            {"bonus": "% Cash from Mobs", "x1": 39, "x2": 200, "func": "decay"}
+        ]
+    },
+    "Lazzzy Lootcrate": {
+        "name": "Lazzzy Lootcrate",
+        "bonuses": [
+            {"bonus": "% 2X AFK XP chance", "x1": 30, "x2": 200, "func": "decay"},
+            {"bonus": "% AFK exp if 36hr+", "x1": 35, "x2": 200, "func": "decay"},
+            {"bonus": "% AFK Cash if 36hr+", "x1": 35, "x2": 200, "func": "decay"}
+        ]
+    },
+    "Filler": {
+        "name": "Filler",
+        "bonuses": [
+            {"bonus": "Nothing", "x1": 50, "x2": 200, "func": "decay"},
+            {"bonus": "Nothing", "x1": 0.25, "x2": 0, "func": "add"},
+            {"bonus": "Nothing", "x1": 65, "x2": 200, "func": "decay"}
+        ]
+    },
+    "Trapping Lockbox": {
+        "name": "Trapping Lockbox",
+        "bonuses": [
+            {"bonus": "% Trapping Efficiency", "x1": 50, "x2": 200, "func": "decay"},
+            {"bonus": "% Trapping EXP", "x1": 50, "x2": 200, "func": "decay"},
+            {"bonus": "% Critters Trapped", "x1": 45, "x2": 200, "func": "decay"}
+        ]
+    },
+    "Construction Container": {
+        "name": "Construction Container",
+        "bonuses": [
+            {"bonus": "% Base Build Rate", "x1": 0.25, "x2": 0, "func": "add"},
+            {"bonus": "% Shrine Charge Rate", "x1": 75, "x2": 200, "func": "decay"},
+            {"bonus": "% Construction EXP", "x1": 0.5, "x2": 0, "func": "add"}
+        ]
+    },
+    "Crate of the Creator": {
+        "name": "Crate of the Creator",
+        "bonuses": [
+            {"bonus": "% Worship Efficiency", "x1": 50, "x2": 200, "func": "decay"},
+            {"bonus": "% Max Charge", "x1": 200, "x2": 200, "func": "decay"},
+            {"bonus": "Starting Worship Pts", "x1": 90, "x2": 200, "func": "decay"}
+        ]
     }
 }

@@ -1,885 +1,456 @@
 <div class="GenericFlex"><div class="GenericChild">
 ==Changes==
-{{patchnote/head|changed=Fishing Rod}}
-{{patchnote/item|Copper Fish Rod}}
-{{patchnote|lvReqToEquip|5|4}}
-{{patchnote/item|Iron Fishing Rod}}
-{{patchnote|lvReqToEquip|10|9}}
+{{patchnote/head|changed=Monster Drop}}
+{{patchnote/item|Snow Ball}}
+{{patchnote|description|If you have two of these together, please be careful what other objects you put near them, I need to keep this game age appropirate! |If you have two of these together, please be careful what other objects you put near them, I need to keep this game age appropriate! }}
 |}
 
-{{patchnote/head|changed=Ring}}
-{{patchnote/item|Defenders Dignity}}
-{{patchnote|lvReqToEquip|30|40}}
-{{patchnote|Defence|15|12}}
-{{patchnote|miscUp1|00|4% Defence}}
-|}
-
-{{patchnote/head|changed=Pickaxe}}
-{{patchnote/item|Platinum Pickaxe}}
-{{patchnote|lvReqToEquip|27|25}}
-{{patchnote/item|Gold Pickaxe}}
-{{patchnote|lvReqToEquip|17|15}}
-{{patchnote/item|Iron Pickaxe}}
-{{patchnote|lvReqToEquip|10|8}}
-{{patchnote/item|Copper Pickaxe}}
-{{patchnote|lvReqToEquip|5|3}}
-|}
-
-{{patchnote/head|changed=Misc Stamp}}
-{{patchnote/item|Arcade Ball Stamp}}
-{{patchnote|displayName|Blank|Arcade Ball Stamp}}
-{{patchnote/bold|Stamp Data}}
-{{patchnote|effect|BaseDmg|ArcadeBallz}}
-{{patchnote|function|add|decay}}
-{{patchnote|x1|30|50}}
-{{patchnote|x2|0|100}}
-{{patchnote|startV|25|30}}
-{{patchnote|startingCost|50|1500}}
-{{patchnote|cCostExp|1.3|1.33}}
-{{patchnote/item|Gold Ball Stamp}}
-{{patchnote|displayName|Apple Stamp|Gold Ball Stamp}}
-{{patchnote/bold|Stamp Data}}
-{{patchnote|effect|HFood|GoldBallz}}
-{{patchnote|function|add|decay}}
-{{patchnote|x1|1|40}}
-{{patchnote|x2|0|100}}
-{{patchnote|upgradeInterval|5|10}}
-{{patchnote|material|FoodHealth7|Fish1}}
-{{patchnote|mCostExp|5.5|6.5}}
-{{patchnote|startingCost|200|1000}}
-{{patchnote|cCostExp|1.3|1.33}}
-{{patchnote/item|Ball Timer Stamp}}
-{{patchnote|displayName|Blank|Ball Timer Stamp}}
-{{patchnote|bonus| Base HP|hr Max Claim Time}}
-{{patchnote/bold|Stamp Data}}
-{{patchnote|effect|BaseDmg|ArcadeTimeMax}}
-{{patchnote|function|add|decay}}
-{{patchnote|x1|30|12}}
-{{patchnote|x2|0|30}}
-{{patchnote|upgradeInterval|10|5}}
-{{patchnote|material|Copper|OakTree}}
-{{patchnote|startV|25|100}}
-{{patchnote|mCostExp|6|15}}
-{{patchnote|startingCost|50|1000}}
-{{patchnote|cCostExp|1.3|1.32}}
-{{patchnote|upgradeText|{} Base HP|{}hr Max Claim Time}}
-{{patchnote/item|Talent I Stamp}}
-{{patchnote/bold|Stamp Data}}
-{{patchnote|startV|25|50}}
-{{patchnote|mCostExp|6|10}}
-{{patchnote|startingCost|50|2000}}
-{{patchnote|cCostExp|1.3|1.4}}
-|}
-
-{{patchnote/head|changed=Card}}
-{{patchnote/item|Sir Stache Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|bonus|8|9}}
-|}
-
-{{patchnote/head|changed=Hatchet}}
-{{patchnote/item|Golden Axe}}
-{{patchnote|lvReqToEquip|17|15}}
-{{patchnote/item|Copper Chopper}}
-{{patchnote|lvReqToEquip|5|4}}
-{{patchnote/item|Iron Hatchet}}
-{{patchnote|lvReqToEquip|10|8}}
-|}
-
-{{patchnote/head|changed=Bug Catching Net}}
-{{patchnote/item|Copper Netted Net}}
-{{patchnote|lvReqToEquip|5|4}}
-{{patchnote/item|Golden Net}}
-{{patchnote|displayName|Gilded Net|Golden Net}}
-{{patchnote/item|Reinforced Net}}
-{{patchnote|lvReqToEquip|10|9}}
-|}
-
-{{patchnote/head|changed=Dungeon Key}}
-{{patchnote/item|Sesame Seed}}
-{{patchnote|description|The key to Bandit Bob's Party Dungeon! Not sure why a sesame seed opens a door out here in the desert though, seems weird. |The key to Bandit Bob's Party Dungeon! No not that dungeon... you're thinking of Snakenhotep's Dungeon, this one's for Bandit Bob's dungeon. So yea, this is worthless. }}
-|}
-
-{{patchnote/head|changed=Trophy}}
-{{patchnote/item|Critter Baron}}
-{{patchnote|AGI|10|20}}
-{{patchnote|miscUp1|3% Agi|5% Agi}}
-|}
-
-{{patchnote/head|changed=Sparkle Obol}}
-{{patchnote/item|Dementia Obol of Colossal Crawlies}}
-{{patchnote|displayName|Dementia Obol of Idk Yet|Dementia Obol of Colossal Crawlies}}
+{{patchnote/head|changed=Shirt}}
+{{patchnote/item|Chizoar Chestplate}}
+{{patchnote|displayName|Paralax Chest|Chizoar Chestplate}}
+{{patchnote|lvReqToEquip|15|105}}
+{{patchnote|Class|ClassType.Warrior|ClassType.All}}
+{{patchnote|Weapon_Power|5|0}}
+{{patchnote|STR|3|15}}
+{{patchnote|AGI|3|15}}
+{{patchnote|WIS|0|15}}
+{{patchnote|LUK|3|0}}
+{{patchnote|Defence|0|55}}
+{{patchnote|miscUp1||7% Mastery}}
+{{patchnote|miscUp2|00|3% Total Damage}}
+{{patchnote|Upgrade_Slots_Left|2|6}}
 |}
 
 {{patchnote/head|changed=Refinery Salts}}
-{{patchnote/item|Nullo Salt}}
-{{patchnote|displayName|Red Salt|Nullo Salt}}
 {{patchnote/item|Purple Salt}}
-{{patchnote|displayName|Red Salt|Purple Salt}}
+{{patchnote|description|It's red, and boring. |It's purple, and confusing. }}
+{{patchnote/item|Nullo Salt}}
+{{patchnote|description|It's red, and boring. |It's grey, and doesn't exist. }}
 |}
 
-{{patchnote/head|changed=Hexagon Obol}}
-{{patchnote/item|Platinum Obol of Ample Anthropods}}
-{{patchnote|displayName|Platinum Obol of Idk Yet|Platinum Obol of Ample Anthropods}}
-|}
-
-</div><div class="GenericChild">
-==New==
-{{patchnote/head|changed=Card}}
-{{patchnote/item|Target Card}}
-{{patchnote|displayName| |Target Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X6}}
-{{patchnote|perTier| |2.0}}
-{{patchnote|effect| |+ Base Dungeon HP}}
-{{patchnote|bonus| |2}}
-{{patchnote|order| |9}}
-{{patchnote/item|Chromatium Frog Card}}
-{{patchnote|displayName| |Chromatium Frog Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X15}}
-{{patchnote|perTier| |3.0}}
-{{patchnote|effect| |+% Dungeon Credits}}
-{{patchnote|bonus| |2.5}}
-{{patchnote|order| |5}}
-{{patchnote/item|Forlorn Grandfrogger Card}}
-{{patchnote|displayName| |Forlorn Grandfrogger Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X5}}
-{{patchnote|perTier| |1.5}}
-{{patchnote|effect| |+% Dungeon Credits}}
-{{patchnote|bonus| |5}}
-{{patchnote|order| |8}}
-{{patchnote/item|Cactopunk Card}}
-{{patchnote|displayName| |Cactopunk Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X8}}
-{{patchnote|perTier| |2.0}}
-{{patchnote|effect| |+% Dungeon Boss Dmg}}
-{{patchnote|bonus| |3}}
-{{patchnote|order| |13}}
-{{patchnote/item|King Frog Card}}
-{{patchnote|displayName| |King Frog Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X2}}
-{{patchnote|perTier| |2.0}}
-{{patchnote|effect| |+ Base Dungeon Damage}}
-{{patchnote|bonus| |1.5}}
-{{patchnote|order| |3}}
-{{patchnote/item|Grandfrogger Card}}
-{{patchnote|displayName| |Grandfrogger Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X3}}
-{{patchnote|perTier| |1.5}}
-{{patchnote|effect| |% to start with RNG item}}
-{{patchnote|bonus| |15}}
-{{patchnote|order| |6}}
-{{patchnote/item|Globohopper Card}}
-{{patchnote|displayName| |Globohopper Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X1}}
-{{patchnote|perTier| |2.0}}
-{{patchnote|effect| |+% Block Chance}}
-{{patchnote|bonus| |2}}
-{{patchnote|order| |2}}
-{{patchnote/item|Lava Slimer Card}}
-{{patchnote|displayName| |Lava Slimer Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X14}}
-{{patchnote|perTier| |2.0}}
-{{patchnote|effect| |+% Dungeon Card Chance}}
-{{patchnote|bonus| |6}}
-{{patchnote|order| |4}}
-{{patchnote/item|Rotting Grandfrogger Card}}
-{{patchnote|displayName| |Rotting Grandfrogger Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X4}}
-{{patchnote|perTier| |1.5}}
-{{patchnote|effect| |+% Dungeon Flurbos}}
-{{patchnote|bonus| |4}}
-{{patchnote|order| |7}}
-{{patchnote/item|Beefie Card}}
-{{patchnote|displayName| |Beefie Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X9}}
-{{patchnote|perTier| |2.0}}
-{{patchnote|effect| |+% Dungeon Money}}
-{{patchnote|bonus| |6}}
-{{patchnote|order| |11}}
-{{patchnote/item|Crescent Spud Card}}
-{{patchnote|displayName| |Crescent Spud Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X10}}
-{{patchnote|perTier| |3.0}}
-{{patchnote|effect| |+% Dungeon MP regen}}
-{{patchnote|bonus| |5}}
-{{patchnote|order| |14}}
-{{patchnote/item|Poisonic Frog Card}}
-{{patchnote|displayName| |Poisonic Frog Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X0}}
-{{patchnote|perTier| |1.5}}
-{{patchnote|effect| |+ Base Dungeon MP}}
-{{patchnote|bonus| |2}}
-{{patchnote|order| |1}}
-{{patchnote/item|Inevitable Snakenhotep Card}}
-{{patchnote|displayName| |Inevitable Snakenhotep Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X13}}
-{{patchnote|perTier| |1.5}}
-{{patchnote|effect| |+% Dungeon Flurbos}}
-{{patchnote|bonus| |5}}
-{{patchnote|order| |17}}
-{{patchnote/item|Enraged Snakenhotep Card}}
-{{patchnote|displayName| |Enraged Snakenhotep Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X12}}
-{{patchnote|perTier| |1.5}}
-{{patchnote|effect| |+% Total Dungeon Dmg}}
-{{patchnote|bonus| |5}}
-{{patchnote|order| |16}}
-{{patchnote/item|Grumblo Card}}
-{{patchnote|displayName| |Grumblo Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X7}}
-{{patchnote|perTier| |2.0}}
-{{patchnote|effect| |+% Dungeon Card Chance}}
-{{patchnote|bonus| |8}}
-{{patchnote|order| |10}}
-{{patchnote/item|Lazlo Card}}
-{{patchnote|displayName| |Lazlo Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X16}}
-{{patchnote|perTier| |2.0}}
-{{patchnote|effect| |+% RNG item rarity}}
-{{patchnote|bonus| |10}}
-{{patchnote|order| |12}}
-{{patchnote/item|Snakenhotep Card}}
-{{patchnote|displayName| |Snakenhotep Card}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card}}
-{{patchnote/bold|Card Data}}
-{{patchnote|cardID| |X11}}
-{{patchnote|perTier| |1.5}}
-{{patchnote|effect| |+% Dungeon Drop Rate}}
-{{patchnote|bonus| |4}}
-{{patchnote|order| |15}}
-|}
-
-{{patchnote/head|changed=Card Pack}}
-{{patchnote/item|Dungeon Card Pack}}
-{{patchnote|displayName| |Dungeon Card Pack}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Card Pack}}
-{{patchnote|description| |Hold down to open the pack! The cards drop on the ground, make sure to pick them up!! }}
-|}
-
-{{patchnote/head|changed=Dungeon Evaporate}}
-{{patchnote/item|Palm Tree Log}}
-{{patchnote|displayName| |Palm Tree Log}}
-{{patchnote|sellPrice| |100}}
-{{patchnote|Type| |Dungeon Evaporate}}
-{{patchnote|description| |You shouldnt be seeing this... }}
-{{patchnote/item|Buried Treasure}}
-{{patchnote|displayName| |Buried Treasure}}
-{{patchnote|sellPrice| |100}}
-{{patchnote|Type| |Dungeon Evaporate}}
-{{patchnote|description| |You shouldnt be seeing this... }}
-{{patchnote/item|Coin}}
-{{patchnote|displayName| |Coin}}
-{{patchnote|sellPrice| |100}}
-{{patchnote|Type| |Dungeon Evaporate}}
-{{patchnote|description| |You shouldnt be seeing this... }}
-{{patchnote/item|Skull Coin}}
-{{patchnote|displayName| |Skull Coin}}
-{{patchnote|sellPrice| |100}}
-{{patchnote|Type| |Dungeon Evaporate}}
-{{patchnote|description| |You shouldnt be seeing this... }}
-{{patchnote/item|Sand Pile}}
-{{patchnote|displayName| |Sand Pile}}
-{{patchnote|sellPrice| |100}}
-{{patchnote|Type| |Dungeon Evaporate}}
-{{patchnote|description| |You shouldnt be seeing this... }}
-{{patchnote/item|Meat Cube}}
-{{patchnote|displayName| |Meat Cube}}
-{{patchnote|sellPrice| |100}}
-{{patchnote|Type| |Dungeon Evaporate}}
-{{patchnote|description| |You shouldnt be seeing this... }}
-|}
-
-{{patchnote/head|changed=Keychain}}
-{{patchnote/item|Red Sneaker Chain}}
-{{patchnote|displayName| |Red Sneaker Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |1}}
-{{patchnote|miscUp1| |+ [1,1.5,2] % Movement Speed}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Horn Chain}}
-{{patchnote|displayName| |Horn Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |1}}
-{{patchnote|miscUp1| |+ [2,4,6] Wis OR + [2,4,6] Luk}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Time Candy Chain}}
-{{patchnote|displayName| |Time Candy Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |1}}
-{{patchnote|Defence| |10}}
-{{patchnote|miscUp1| |+ [2,3,5] % All Afk Gain}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Cactus Chain}}
-{{patchnote|displayName| |Cactus Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |3}}
-{{patchnote|miscUp1| |+ [1.5,2.5,3] % Total Damage}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Leafy Chain}}
-{{patchnote|displayName| |Leafy Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |1}}
-{{patchnote|miscUp1| |+ [2,3,5] Accuracy}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|8 Ball Chain}}
-{{patchnote|displayName| |8 Ball Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |1}}
-{{patchnote|miscUp1| |+ [3,6,10] % Card Drop Chance}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Rustic Key Chain}}
-{{patchnote|displayName| |Rustic Key Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |3}}
-{{patchnote|miscUp1| |+ [1,2,4] % Defence}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Simple Key Chain}}
-{{patchnote|displayName| |Simple Key Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |1}}
-{{patchnote|miscUp1| |+ [1,2,5] Base Defence}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Whatamelon Chain}}
-{{patchnote|displayName| |Whatamelon Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |3}}
-{{patchnote|miscUp1| |+ [8,12,20] % Fishing Xp Gain}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Dumbphone Chain}}
-{{patchnote|displayName| |Dumbphone Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |1}}
-{{patchnote|miscUp1| |+ [2,4,6] Str OR + [2,4,6] Agi}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Mmm Donut Chain}}
-{{patchnote|displayName| |Mmm Donut Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |1}}
-{{patchnote|Defence| |10}}
-{{patchnote|miscUp1| |+ [2,4,6] % Wis OR + [2,4,6] % Luk}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Relic Chain}}
-{{patchnote|displayName| |Relic Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |3}}
-{{patchnote|miscUp1| |+ [3,5,8] % Drop Chance}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Wartooth Chain}}
-{{patchnote|displayName| |Wartooth Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |1}}
-{{patchnote|miscUp1| |+ [5,10,20] Base Damage}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Negative 7 Chain}}
-{{patchnote|displayName| |Negative 7 Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |1}}
-{{patchnote|Defence| |10}}
-{{patchnote|miscUp1| |+ [3,4,6] % Mob Respawn}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Star Blobulyte Galaxy Chain}}
-{{patchnote|displayName| |Star Blobulyte Galaxy Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |1}}
-{{patchnote|Defence| |10}}
-{{patchnote|miscUp1| |+ [3,4,7] % Total Damage}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Diamond Honker}}
-{{patchnote|displayName| |Diamond Honker}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |1}}
-{{patchnote|Defence| |10}}
-{{patchnote|miscUp1| |+ [1,1.5,2] % All Skill Speed}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Balloon Dog Chain}}
-{{patchnote|displayName| |Balloon Dog Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |3}}
-{{patchnote|miscUp1| |+ [3,4,6] % Basic Atk Speed}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Frozen Tart Chain}}
-{{patchnote|displayName| |Frozen Tart Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |3}}
-{{patchnote|miscUp1| |+ [1.5,2.5,3] % Crit Chance}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Sushi Chain}}
-{{patchnote|displayName| |Sushi Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |1}}
-{{patchnote|Defence| |10}}
-{{patchnote|miscUp1| |+ [2,4,6] % Str OR + [2,4,6] % Agi}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Gilded Key Chain}}
-{{patchnote|displayName| |Gilded Key Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |1}}
-{{patchnote|Defence| |10}}
-{{patchnote|miscUp1| |+ [3,5,8] % Defence}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Taco Chain}}
-{{patchnote|displayName| |Taco Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |3}}
-{{patchnote|miscUp1| |+ [8,12,20] % Mining Xp Gain}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|9 Ball Chain}}
-{{patchnote|displayName| |9 Ball Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |3}}
-{{patchnote|miscUp1| |+ [4,6,10] % Xp From Monsters}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Pincer Hand Chain}}
-{{patchnote|displayName| |Pincer Hand Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |3}}
-{{patchnote|miscUp1| |+ [5,7,12] % Multikill}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|BobGoldPickle}}
-{{patchnote|displayName| |BobGoldPickle}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |1}}
-{{patchnote|Defence| |10}}
-{{patchnote|miscUp1| |+ [1,2.5,4] % All Stats}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-{{patchnote/item|Piggy Chain}}
-{{patchnote|displayName| |Piggy Chain}}
-{{patchnote|sellPrice| |200}}
-{{patchnote|Type| |Keychain}}
-{{patchnote|lvReqToCraft| |1}}
-{{patchnote|lvReqToEquip| |1}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |1}}
-{{patchnote|miscUp1| |+ [4,7,10] % Money}}
-{{patchnote|miscUp2| |[[Keychains#Misc 2 Rolling|Misc 2 Table]]}}
-|}
-
-{{patchnote/head|changed=Ring}}
-{{patchnote/item|The Emperor's Opal}}
-{{patchnote|displayName| |The Emperor's Opal}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Ring}}
-{{patchnote|lvReqToCraft| |55}}
-{{patchnote|lvReqToEquip| |150}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |8}}
-{{patchnote|STR| |30}}
-{{patchnote|AGI| |30}}
-{{patchnote|WIS| |30}}
-{{patchnote|LUK| |30}}
-{{patchnote|Defence| |8}}
-{{patchnote|miscUp1| |6% All Stats}}
-{{patchnote|miscUp2| |00}}
-{{patchnote/item|Bejeweled Ring}}
-{{patchnote|displayName| |Bejeweled Ring}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Ring}}
-{{patchnote|lvReqToCraft| |55}}
-{{patchnote|lvReqToEquip| |70}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|LUK| |7}}
-{{patchnote|Defence| |4}}
-{{patchnote|miscUp1| |5% Xp From Monsters}}
-{{patchnote|miscUp2| |00}}
-{{patchnote|Upgrade_Slots_Left| |3}}
-{{patchnote/item|Tenacity Ring}}
-{{patchnote|displayName| |Tenacity Ring}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Ring}}
-{{patchnote|lvReqToCraft| |55}}
-{{patchnote|lvReqToEquip| |120}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |6}}
-{{patchnote|miscUp1| |6% Total Damage}}
-{{patchnote|miscUp2| |00}}
-{{patchnote|Upgrade_Slots_Left| |4}}
-{{patchnote/item|Elf Twist Ring}}
-{{patchnote|displayName| |Elf Twist Ring}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Ring}}
-{{patchnote|lvReqToCraft| |55}}
-{{patchnote|lvReqToEquip| |15}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Defence| |7}}
-{{patchnote|miscUp1| |00}}
-{{patchnote|miscUp2| |00}}
-{{patchnote|Upgrade_Slots_Left| |2}}
-{{patchnote/item|Rex Ring}}
-{{patchnote|displayName| |Rex Ring}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Ring}}
-{{patchnote|lvReqToCraft| |55}}
-{{patchnote|lvReqToEquip| |40}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|STR| |2}}
-{{patchnote|AGI| |2}}
-{{patchnote|WIS| |2}}
-{{patchnote|Defence| |2}}
-{{patchnote|miscUp1| |5% Skill Efficiency}}
-{{patchnote|miscUp2| |00}}
-{{patchnote|Upgrade_Slots_Left| |2}}
+{{patchnote/head|changed=Combat Stamp}}
+{{patchnote/item|Hermes Stamp}}
+{{patchnote|displayName|FILLER|Hermes Stamp}}
+{{patchnote|sellPrice|1|10000}}
+{{patchnote|bonus| Base Defence| STR}}
+{{patchnote/bold|Stamp Data}}
+{{patchnote|effect|BaseDef|BaseAGI}}
+{{patchnote|x1|30|1}}
+{{patchnote|upgradeInterval|10|3}}
+{{patchnote|material|Copper|Soul3}}
+{{patchnote|startV|25|30}}
+{{patchnote|mCostExp|6|7}}
+{{patchnote|startingCost|50|10000}}
+{{patchnote|upgradeText|{} Base Defence|{} STR}}
+{{patchnote/item|Avast Yar Stamp}}
+{{patchnote|displayName|FILLER|Avast Yar Stamp}}
+{{patchnote|bonus| Base Defence| Base Damage}}
+{{patchnote/bold|Stamp Data}}
+{{patchnote|effect|BaseDef|BaseDmg}}
+{{patchnote|x1|30|6}}
+{{patchnote|upgradeInterval|10|5}}
+{{patchnote|material|Copper|Critter7}}
+{{patchnote|startV|25|75}}
+{{patchnote|mCostExp|6|7}}
+{{patchnote|startingCost|5000|15000}}
+{{patchnote|cCostExp|1.3|1.33}}
+{{patchnote|upgradeText|{} Base Defence|{} Base Damage}}
 |}
 
 {{patchnote/head|changed=Helmet}}
-{{patchnote/item|Honker Hat}}
-{{patchnote|displayName| |Honker Hat}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Helmet}}
-{{patchnote|lvReqToCraft| |5}}
-{{patchnote|lvReqToEquip| |100}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |2}}
-{{patchnote|Defence| |60}}
-{{patchnote|miscUp1| |20% Money}}
-{{patchnote|miscUp2| |00}}
-{{patchnote|Upgrade_Slots_Left| |7}}
-{{patchnote/item|Nuget Cake Fedora}}
-{{patchnote|displayName| |Nuget Cake Fedora}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Helmet}}
-{{patchnote|lvReqToCraft| |5}}
-{{patchnote|lvReqToEquip| |40}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |1}}
-{{patchnote|LUK| |10}}
-{{patchnote|miscUp1| |15% Multikill}}
-{{patchnote|miscUp2| |00}}
-{{patchnote|Upgrade_Slots_Left| |6}}
-{{patchnote/item|Acorn Topper}}
-{{patchnote|displayName| |Acorn Topper}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Helmet}}
-{{patchnote|lvReqToCraft| |5}}
-{{patchnote|lvReqToEquip| |30}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|STR| |5}}
-{{patchnote|AGI| |5}}
-{{patchnote|WIS| |5}}
-{{patchnote|Defence| |30}}
-{{patchnote|miscUp1| |15% Skill Exp}}
-{{patchnote|miscUp2| |00}}
-{{patchnote|Upgrade_Slots_Left| |4}}
+{{patchnote/item|Demon Horns}}
+{{patchnote|Weapon_Power|50|2000}}
+{{patchnote|STR|3|30000}}
+{{patchnote|AGI|3|30000}}
+{{patchnote|WIS|0|30000}}
+{{patchnote|LUK|3|30000}}
 |}
 
-{{patchnote/head|changed=Usable}}
-{{patchnote/item|Gold Food Coupon}}
-{{patchnote|displayName| |Gold Food Coupon}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Usable}}
-{{patchnote|description| |Hold down to receive a random golden food! }}
-{{patchnote/item|Really Really Resource Coupon}}
-{{patchnote|displayName| |Really Really Resource Coupon}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Usable}}
-{{patchnote|description| |Hold down, and a resource stack will drop on the floor! YOU MUST MANUALLY PICK UP THE RESOURCE ON THE GROUND }}
-{{patchnote/item|Resource Coupon}}
-{{patchnote|displayName| |Resource Coupon}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Usable}}
-{{patchnote|description| |Hold down, and a resource stack will drop on the floor! YOU MUST MANUALLY PICK UP THE RESOURCE ON THE GROUND }}
+{{patchnote/head|changed=Card}}
+{{patchnote/item|Crescent Spud Card}}
+{{patchnote/bold|Card Data}}
+{{patchnote|perTier|3.0|5.0}}
 |}
 
-{{patchnote/head|changed=Pendant}}
-{{patchnote/item|Persephones Bouquet}}
-{{patchnote|displayName| |Persephones Bouquet}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Pendant}}
-{{patchnote|lvReqToCraft| |17}}
-{{patchnote|lvReqToEquip| |140}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|STR| |1}}
-{{patchnote|AGI| |1}}
-{{patchnote|WIS| |1}}
-{{patchnote|LUK| |3}}
-{{patchnote|miscUp1| |15% Skill Afk Gain}}
-{{patchnote|miscUp2| |00}}
-{{patchnote/item|Fishhead Pendant}}
-{{patchnote|displayName| |Fishhead Pendant}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Pendant}}
-{{patchnote|lvReqToCraft| |17}}
-{{patchnote|lvReqToEquip| |40}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|STR| |3}}
-{{patchnote|miscUp1| |15% Fishing Xp Gain}}
-{{patchnote|miscUp2| |15Purple Depth}}
-{{patchnote|Upgrade_Slots_Left| |2}}
-{{patchnote/item|Hallowed Tail Pendant}}
-{{patchnote|displayName| |Hallowed Tail Pendant}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Pendant}}
-{{patchnote|lvReqToCraft| |17}}
-{{patchnote|lvReqToEquip| |110}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|STR| |1}}
-{{patchnote|AGI| |1}}
-{{patchnote|WIS| |1}}
-{{patchnote|LUK| |3}}
-{{patchnote|miscUp1| |30% Multikill}}
-{{patchnote|miscUp2| |00}}
-{{patchnote|Upgrade_Slots_Left| |2}}
-{{patchnote/item|Cedar Pendant}}
-{{patchnote|displayName| |Cedar Pendant}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Pendant}}
-{{patchnote|lvReqToCraft| |17}}
-{{patchnote|lvReqToEquip| |20}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|STR| |1}}
-{{patchnote|AGI| |1}}
-{{patchnote|WIS| |1}}
-{{patchnote|LUK| |3}}
-{{patchnote|miscUp1| |00}}
-{{patchnote|miscUp2| |00}}
-{{patchnote|Upgrade_Slots_Left| |1}}
-{{patchnote/item|Deathly Cluster Pendant}}
-{{patchnote|displayName| |Deathly Cluster Pendant}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Pendant}}
-{{patchnote|lvReqToCraft| |17}}
-{{patchnote|lvReqToEquip| |80}}
-{{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |2}}
-{{patchnote|miscUp1| |10% Mob Respawn}}
-{{patchnote|miscUp2| |00}}
-{{patchnote|Upgrade_Slots_Left| |2}}
+{{patchnote/head|changed=Trap Box Set}}
+{{patchnote/item|Silkskin Traps}}
+{{patchnote|lvReqToEquip|10|5}}
+{{patchnote/item|Wooden Traps}}
+{{patchnote|lvReqToEquip|20|15}}
 |}
 
-{{patchnote/head|changed=Currency}}
-{{patchnote/item|Skill Experience}}
-{{patchnote|displayName| |Skill Experience}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Currency}}
-{{patchnote|description| |Bruh }}
-{{patchnote/item|Experience}}
-{{patchnote|displayName| |Experience}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Currency}}
-{{patchnote|description| |Bruh }}
-{{patchnote/item|Loot Dice}}
-{{patchnote|displayName| |Loot Dice}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Currency}}
-{{patchnote|description| |You shouldn't be reading this... }}
+{{patchnote/head|changed=Pants}}
+{{patchnote/item|Chizoar Scaled Leggings}}
+{{patchnote|displayName|Crystallax Shins|Chizoar Scaled Leggings}}
+{{patchnote|lvReqToEquip|15|100}}
+{{patchnote|Class|ClassType.Warrior|ClassType.All}}
+{{patchnote|Weapon_Power|5|0}}
+{{patchnote|STR|3|13}}
+{{patchnote|AGI|3|13}}
+{{patchnote|WIS|0|13}}
+{{patchnote|LUK|3|0}}
+{{patchnote|Defence|0|52}}
+{{patchnote|miscUp1||11% Defence}}
+{{patchnote|Upgrade_Slots_Left|2|6}}
 |}
 
-{{patchnote/head|changed=Quest Item}}
-{{patchnote/item|Dootophone}}
-{{patchnote|displayName| |Dootophone}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Quest Item}}
-{{patchnote|description| |Hold down on this vintage Dootophone to active all the obelisks on Doot's burial platform at once! }}
-{{patchnote/item|BallJoePickle}}
-{{patchnote|displayName| |BallJoePickle}}
-{{patchnote|sellPrice| |40000}}
-{{patchnote|Type| |Quest Item}}
-{{patchnote|description| |What have they done to ya BobJoe? }}
+{{patchnote/head|changed=Ring}}
+{{patchnote/item|Efaunt Trunculus}}
+{{patchnote|lvReqToEquip|85|80}}
 |}
 
-{{patchnote/head|changed=Dungeon Food}}
-{{patchnote/item|Nomwich}}
-{{patchnote|displayName| |Nomwich}}
-{{patchnote|sellPrice| |3}}
-{{patchnote|Type| |Dungeon Food}}
-{{patchnote|description| |Auto-Used when your health goes below 50%. Restores 20 HP. Has a 30 second Cooldown. }}
-{{patchnote/item|Hotdog}}
-{{patchnote|displayName| |Hotdog}}
-{{patchnote|sellPrice| |7}}
-{{patchnote|Type| |Dungeon Food}}
-{{patchnote|description| |Auto-Used when your health goes below 50%. Restores 20 HP. Has a 30 second Cooldown. }}
-{{patchnote/item|Big Cake}}
-{{patchnote|displayName| |Big Cake}}
-{{patchnote|sellPrice| |15}}
-{{patchnote|Type| |Dungeon Food}}
-{{patchnote|description| |Auto-Used when your health goes below 50%. Restores 20 HP. Has a 30 second Cooldown. }}
-|}
-
-{{patchnote/head|changed=Time Candy}}
-{{patchnote/item|Spooky Time Candy}}
-{{patchnote|displayName| |Spooky Time Candy}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Time Candy}}
-{{patchnote|description| |Hold down to instantly get anywhere from 20 minutes to 12 hours of AFK time! }}
-|}
-
-{{patchnote/head|changed=Dungeon Item}}
-{{patchnote/item|Cash}}
-{{patchnote|displayName| |Cash}}
-{{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Dungeon Item}}
-{{patchnote|description| |Dolla dolla bills yall! The big G! The golden cheddar! The pasta! }}
+{{patchnote/head|changed=Spear}}
+{{patchnote/item|Iron Sword}}
+{{patchnote|Weapon_Power|25|32}}
 |}
 
 {{patchnote/head|changed=Premium Helmet}}
 {{patchnote/item|The Red Boaty}}
-{{patchnote|displayName| |The Red Boaty}}
+{{patchnote|Weapon_Power|1|2}}
+{{patchnote|STR|6|1}}
+{{patchnote|AGI|6|1}}
+{{patchnote|WIS|6|1}}
+{{patchnote|LUK|6|1}}
+|}
+
+{{patchnote/head|changed=Barrel}}
+{{patchnote/item|Radioactive Waste}}
+{{patchnote|description|Increases chance to Not Use Up Ores by 3% for the Slot it's in. 60% chance to be consumed when a bar is forged. |Increases Forging Speed by 30% for the Forge Slot it's in. 30% chance to be consumed when a bar is forged. }}
+|}
+
+{{patchnote/head|changed=Pendant}}
+{{patchnote/item|Cedar Pendant}}
+{{patchnote|miscUp1||13Accuracy}}
+|}
+
+{{patchnote/head|changed=Trophy}}
+{{patchnote/item|YumYum Sheriff}}
+{{patchnote|miscUp1|8% Boss Damage|12% Boss Damage}}
+|}
+
+{{patchnote/head|changed=Shoes}}
+{{patchnote/item|Efaunts Broken Ankles}}
+{{patchnote|lvReqToEquip|75|70}}
+|}
+
+{{patchnote/head|changed=Misc Stamp}}
+{{patchnote/item|Arcade Ball Stamp}}
+{{patchnote|bonus| Base HP|% ball gain rate}}
+{{patchnote/bold|Stamp Data}}
+{{patchnote|upgradeText|{} Base HP|{}% ball gain rate}}
+|}
+
+</div><div class="GenericChild">
+==New==
+{{patchnote/head|changed=Monster Drop}}
+{{patchnote/item|Chizoar Spike}}
+{{patchnote|displayName| |Chizoar Spike}}
 {{patchnote|sellPrice| |1}}
-{{patchnote|Type| |Premium Helmet}}
-{{patchnote|lvReqToCraft| |5}}
+{{patchnote|Type| |Monster Drop}}
+{{patchnote|description| |A spike from Chizoar's neck. It's ice cold, and sharp as a tack. }}
+{{patchnote/item|Chizoar Stalagmite}}
+{{patchnote|displayName| |Chizoar Stalagmite}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Monster Drop}}
+{{patchnote|description| |A spike from Chaotic Chizoar's neck. Despite it being made of ice, it burns at the touch due to its acidity. }}
+|}
+
+{{patchnote/head|changed=Quest Item}}
+{{patchnote/item|Bill Brr's Vote}}
+{{patchnote|displayName| |Bill Brr's Vote}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |A slip of paper indicating that a Mr. Bill Brr doesn't intend to vote for any of these political puppets, but he left it blank so you filled it in for Hoggi. }}
+{{patchnote/item|Refurbished Cog}}
+{{patchnote|displayName| |Refurbished Cog}}
+{{patchnote|sellPrice| |500000010}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Made from a Damaged Cog, which you can buy at the Town Shop! }}
+{{patchnote/item|Yondergreens Vote}}
+{{patchnote|displayName| |Yondergreens Vote}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |A slip of paper indicating that a Sir Yondergreen Von Timberbottom intends to vote for Mayor Hoggindaz }}
+{{patchnote/item|Tundra Skills Completion Token}}
+{{patchnote|displayName| |Tundra Skills Completion Token}}
+{{patchnote|sellPrice| |25000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Proof that you mastered the art of the Trapping, Construction, and Worship skills. }}
+{{patchnote/item|Tundra NPC Completion Token}}
+{{patchnote|displayName| |Tundra NPC Completion Token}}
+{{patchnote|sellPrice| |30000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Made up of all the tokens that you collected after completing an NPC's entire questline. }}
+{{patchnote/item|Bellows Token}}
+{{patchnote|displayName| |Bellows Token}}
+{{patchnote|sellPrice| |4000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Proof that you completed all of Bellows' quests! Hold down to add to your token bag, found in Storage Info. }}
+{{patchnote/item|Yondergreen Token}}
+{{patchnote|displayName| |Yondergreen Token}}
+{{patchnote|sellPrice| |4000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Proof that you completed all of Yondergreen's quests! Hold down to add to your token bag, found in Storage Info. }}
+{{patchnote/item|Shuvelle's Vote}}
+{{patchnote|displayName| |Shuvelle's Vote}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |A slip of paper indicating that a Ms. Shuvelle La Deuge intends to vote for Mayor Hoggindaz }}
+{{patchnote/item|Hard FB Tundra NPC Token}}
+{{patchnote|displayName| |Hard FB Tundra NPC Token}}
+{{patchnote|sellPrice| |16000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Made up of the tokens from all of the Tundra NPCs whose quests are hardest to complete. }}
+{{patchnote/item|Easy FB Tundra NPC Token}}
+{{patchnote|displayName| |Easy FB Tundra NPC Token}}
+{{patchnote|sellPrice| |2800}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Made up of the tokens from all of the Tundra NPCs whose quests are easiest to complete. }}
+{{patchnote/item|Lonely Hunter Token}}
+{{patchnote|displayName| |Lonely Hunter Token}}
+{{patchnote|sellPrice| |4000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Proof that you completed all of the Lonely Hunter's quests! Hold down to add to your token bag, found in Storage Info. }}
+{{patchnote/item|Tundra Misc Completion Token}}
+{{patchnote|displayName| |Tundra Misc Completion Token}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Proof that you collected all the coolest and rarest items that Frostbite Tundra has to offer! }}
+{{patchnote/item|Shuvelle Token}}
+{{patchnote|displayName| |Shuvelle Token}}
+{{patchnote|sellPrice| |4000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Proof that you completed all of Shuvelle's quests! Hold down to add to your token bag, found in Storage Info. }}
+{{patchnote/item|Crystalswine Token}}
+{{patchnote|displayName| |Crystalswine Token}}
+{{patchnote|sellPrice| |4000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Proof that you completed all of Crystalswine's quests! Hold down to add to your token bag, found in Storage Info. }}
+{{patchnote/item|Snouts Token}}
+{{patchnote|displayName| |Snouts Token}}
+{{patchnote|sellPrice| |4000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Proof that you completed all of Snouts' quests! Hold down to add to your token bag, found in Storage Info. }}
+{{patchnote/item|Bill Brr Token}}
+{{patchnote|displayName| |Bill Brr Token}}
+{{patchnote|sellPrice| |4000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Proof that you completed all of Bill Brr's quests! Hold down to add to your token bag, found in Storage Info. }}
+{{patchnote/item|Med FB Tundra NPC Token}}
+{{patchnote|displayName| |Med FB Tundra NPC Token}}
+{{patchnote|sellPrice| |6000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Made up of the tokens from all of the Tundra NPCs whose quests are tough to complete. }}
+{{patchnote/item|Hoggi Token}}
+{{patchnote|displayName| |Hoggi Token}}
+{{patchnote|sellPrice| |4000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Proof that you completed all of Hoggindaz's quests! Hold down to add to your token bag, found in Storage Info. }}
+{{patchnote/item|Signed Contract}}
+{{patchnote|displayName| |Signed Contract}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |It's the last will and testament of some penguin monster. Just pretend you signed it, ol' Yondergreen seems a little blind and probably wont notice. }}
+{{patchnote/item|Damaged Cog}}
+{{patchnote|displayName| |Damaged Cog}}
+{{patchnote|sellPrice| |500000000}}
+{{patchnote|Type| |Quest Item}}
+{{patchnote|description| |Hold down on this cog to turn it into a Refurbished Cog, IF you have a construction LV of 75{. }}
+|}
+
+{{patchnote/head|changed=Dungeon Evaporate}}
+{{patchnote/item|Shovel}}
+{{patchnote|displayName| |Shovel}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Dungeon Evaporate}}
+{{patchnote|description| |You shouldnt be seeing this... }}
+{{patchnote/item|Platinum Ore}}
+{{patchnote|displayName| |Platinum Ore}}
+{{patchnote|sellPrice| |100}}
+{{patchnote|Type| |Dungeon Evaporate}}
+{{patchnote|description| |You shouldnt be seeing this... }}
+{{patchnote/item|Wispy Tree Log}}
+{{patchnote|displayName| |Wispy Tree Log}}
+{{patchnote|sellPrice| |100}}
+{{patchnote|Type| |Dungeon Evaporate}}
+{{patchnote|description| |You shouldnt be seeing this... }}
+{{patchnote/item|Goldfish}}
+{{patchnote|displayName| |Goldfish}}
+{{patchnote|sellPrice| |100}}
+{{patchnote|Type| |Dungeon Evaporate}}
+{{patchnote|description| |You shouldnt be seeing this... }}
+{{patchnote/item|Jellyfish}}
+{{patchnote|displayName| |Jellyfish}}
+{{patchnote|sellPrice| |100}}
+{{patchnote|Type| |Dungeon Evaporate}}
+{{patchnote|description| |You shouldnt be seeing this... }}
+|}
+
+{{patchnote/head|changed=Dungeon Item}}
+{{patchnote/item|Ice Dollar}}
+{{patchnote|displayName| |Ice Dollar}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Dungeon Item}}
+{{patchnote|description| |Cool! }}
+|}
+
+{{patchnote/head|changed=Time Candy}}
+{{patchnote/item|Cosmic Time Candy}}
+{{patchnote|displayName| |Cosmic Time Candy}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Time Candy}}
+{{patchnote|description| |Hold down to get anywhere from 5 hours to 500 hours of AFK time! Gives 24 hrs on average. Odds are: 54% for 5-10hr, 25% for 10-25hr, 18% for 25-100 hr, 2.1% for 100-499hr, 0.4% for 500hr. }}
+|}
+
+{{patchnote/head|changed=Card}}
+{{patchnote/item|Glaciaxus Card}}
+{{patchnote|displayName| |Glaciaxus Card}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Card}}
+{{patchnote/bold|Card Data}}
+{{patchnote|cardID| |X18}}
+{{patchnote|perTier| |2.0}}
+{{patchnote|effect| |+% Dungeon Card Chance}}
+{{patchnote|bonus| |15}}
+{{patchnote|order| |19}}
+{{patchnote/item|Golden Glaciaxus Card}}
+{{patchnote|displayName| |Golden Glaciaxus Card}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Card}}
+{{patchnote/bold|Card Data}}
+{{patchnote|cardID| |X19}}
+{{patchnote|perTier| |1.5}}
+{{patchnote|effect| |+% Dungeon Credits}}
+{{patchnote|bonus| |8}}
+{{patchnote|order| |20}}
+{{patchnote/item|Caustic Glaciaxus Card}}
+{{patchnote|displayName| |Caustic Glaciaxus Card}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Card}}
+{{patchnote/bold|Card Data}}
+{{patchnote|cardID| |X20}}
+{{patchnote|perTier| |1.5}}
+{{patchnote|effect| |+% Total Dungeon Dmg}}
+{{patchnote|bonus| |8}}
+{{patchnote|order| |21}}
+{{patchnote/item|Ice Guard Card}}
+{{patchnote|displayName| |Ice Guard Card}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Card}}
+{{patchnote/bold|Card Data}}
+{{patchnote|cardID| |X17}}
+{{patchnote|perTier| |8.0}}
+{{patchnote|effect| |+% Dungeon MP regen}}
+{{patchnote|bonus| |8}}
+{{patchnote|order| |18}}
+|}
+
+{{patchnote/head|changed=Trophy}}
+{{patchnote/item|Frost Prince}}
+{{patchnote|displayName| |Frost Prince}}
+{{patchnote|sellPrice| |69}}
+{{patchnote|Type| |Trophy}}
+{{patchnote|lvReqToCraft| |1}}
 {{patchnote|lvReqToEquip| |1}}
 {{patchnote|Class| |ClassType.All}}
-{{patchnote|Weapon_Power| |1}}
-{{patchnote|STR| |6}}
-{{patchnote|AGI| |6}}
-{{patchnote|WIS| |6}}
-{{patchnote|LUK| |6}}
-{{patchnote|miscUp1| |15% Xp From Monsters}}
+{{patchnote|Weapon_Power| |2}}
+{{patchnote|STR| |10}}
+{{patchnote|AGI| |10}}
+{{patchnote|WIS| |10}}
+{{patchnote|LUK| |10}}
+{{patchnote|Defence| |50}}
+{{patchnote|miscUp1| |8% Total Damage}}
+{{patchnote|miscUp2| |00}}
+|}
+
+{{patchnote/head|changed=Helmet}}
+{{patchnote/item|Chizoar Helmet}}
+{{patchnote|displayName| |Chizoar Helmet}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Helmet}}
+{{patchnote|lvReqToCraft| |5}}
+{{patchnote|lvReqToEquip| |110}}
+{{patchnote|Class| |ClassType.All}}
+{{patchnote|Weapon_Power| |3}}
+{{patchnote|STR| |20}}
+{{patchnote|AGI| |20}}
+{{patchnote|WIS| |20}}
+{{patchnote|Defence| |60}}
+{{patchnote|miscUp1| |15% Total Damage}}
+{{patchnote|miscUp2| |00}}
+{{patchnote|Upgrade_Slots_Left| |7}}
+|}
+
+{{patchnote/head|changed=Pendant}}
+{{patchnote/item|Chizoars Blankie}}
+{{patchnote|displayName| |Chizoars Blankie}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Pendant}}
+{{patchnote|lvReqToCraft| |17}}
+{{patchnote|lvReqToEquip| |100}}
+{{patchnote|Class| |ClassType.All}}
+{{patchnote|Weapon_Power| |5}}
+{{patchnote|miscUp1| |15% Total Damage}}
+{{patchnote|miscUp2| |3% Mob Respawn}}
+{{patchnote|Upgrade_Slots_Left| |3}}
+{{patchnote/item|Chizoars Caustic Scarf}}
+{{patchnote|displayName| |Chizoars Caustic Scarf}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Pendant}}
+{{patchnote|lvReqToCraft| |17}}
+{{patchnote|lvReqToEquip| |120}}
+{{patchnote|Class| |ClassType.All}}
+{{patchnote|Weapon_Power| |7}}
+{{patchnote|miscUp1| |20% Total Damage}}
+{{patchnote|miscUp2| |5% Mob Respawn}}
+{{patchnote|Upgrade_Slots_Left| |4}}
+|}
+
+{{patchnote/head|changed=Shoes}}
+{{patchnote/item|Chizoar Walkers}}
+{{patchnote|displayName| |Chizoar Walkers}}
+{{patchnote|sellPrice| |200}}
+{{patchnote|Type| |Shoes}}
+{{patchnote|lvReqToCraft| |55}}
+{{patchnote|lvReqToEquip| |95}}
+{{patchnote|Class| |ClassType.All}}
+{{patchnote|STR| |12}}
+{{patchnote|AGI| |12}}
+{{patchnote|WIS| |12}}
+{{patchnote|LUK| |12}}
+{{patchnote|Defence| |48}}
+{{patchnote|miscUp1| |10% Defence}}
 {{patchnote|miscUp2| |00}}
 {{patchnote|Upgrade_Slots_Left| |5}}
 |}
 
-{{patchnote/head|changed=Monster Drop}}
-{{patchnote/item|Blood Bone}}
-{{patchnote|displayName| |Blood Bone}}
-{{patchnote|sellPrice| |700}}
-{{patchnote|Type| |Monster Drop}}
-{{patchnote|description| |Wait a minute, these are just regular bones pained red! Wait another minute, no, that's actual blood... ew. }}
+{{patchnote/head|changed=Hexagon Obol}}
+{{patchnote/item|Frozen Obol of Chizoar's Rage}}
+{{patchnote|displayName| |Frozen Obol of Chizoar's Rage}}
+{{patchnote|sellPrice| |20}}
+{{patchnote|Type| |Hexagon Obol}}
+{{patchnote|Class| |ClassType.All}}
+{{patchnote|Weapon_Power| |4}}
+{{patchnote|Defence| |2}}
+{{patchnote|miscUp1| |4% Total Damage}}
+{{patchnote|miscUp2| |00}}
+{{patchnote|family| |Bosses}}
+{{patchnote|rarity| |Frozen}}
+|}
+
+{{patchnote/head|changed=Ring}}
+{{patchnote/item|Neutron Ice Ring}}
+{{patchnote|displayName| |Neutron Ice Ring}}
+{{patchnote|sellPrice| |1}}
+{{patchnote|Type| |Ring}}
+{{patchnote|lvReqToCraft| |55}}
+{{patchnote|lvReqToEquip| |95}}
+{{patchnote|Class| |ClassType.All}}
+{{patchnote|Weapon_Power| |3}}
+{{patchnote|Defence| |11}}
+{{patchnote|miscUp1| |4% Total Damage}}
+{{patchnote|miscUp2| |00}}
+{{patchnote|Upgrade_Slots_Left| |2}}
 |}
 
 </div></div>

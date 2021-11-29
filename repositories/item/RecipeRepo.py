@@ -79,7 +79,7 @@ class RecipeRepo(Repository[Recipe]):
 				quantity = component.quantity
 			))
 			cRecipe = cls.get(component.item)
-			if cRecipe is None:
+			if cRecipe is None or cRecipe.intID == "FillerMaterial":
 				continue
 			if cRecipe.detailedRecipe is None:
 				cls.generateDetailedRecipe(cRecipe)
@@ -102,7 +102,7 @@ class RecipeRepo(Repository[Recipe]):
 		while not queue.empty():
 			cComponent = queue.get()
 			cRecipe = cls.get(cComponent.item)
-			if cRecipe is None:
+			if cRecipe is None or cRecipe.intID == "FillerMaterial":
 				total[cComponent.item] = total.get(cComponent.item, 0) + cComponent.quantity
 			else:
 				for subComponent in cRecipe.recipe:

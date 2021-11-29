@@ -162,7 +162,7 @@ class Repository(Generic[T], ABC):
 
 		with open(fr"./exported/wikitext/_changes/{cls.__name__}.txt", mode = 'w') as infile:
 			infile.write(res)
-
+			
 	@classmethod
 	def _writeChangelogNew(cls, item, change) -> str:
 		def head(v: str) -> str:

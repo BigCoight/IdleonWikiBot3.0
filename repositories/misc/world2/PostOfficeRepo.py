@@ -2,6 +2,7 @@ import re
 from typing import List
 
 from definitions.postoffice.PostOffice import PostOffice, Part
+from helpers.Constants import Constants
 from helpers.HelperFunctions import formatStr, wrap, strToArray
 from repositories.master.Repository import Repository
 
@@ -18,11 +19,10 @@ class PostOfficeRepo(Repository[PostOffice]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		postNames = ["Simple Shippin", "Plan-it Express", "Dudes Next Door"]
 		postData = formatStr(cls.getSection(), ["\n", "  "])
 		postOffices = [wrap(x) for x in re.split(r"],?],?],\[\[\[", postData)]
 		for j, postOffice in enumerate(postOffices):
-			if j >= len(postNames):
+			if j >= len(Constants.postNames):
 				break
 			category = [wrap(x) for x in re.split(r",?],?],\[\[", postOffice)]
 			parts = {"Orders": [], "Rewards": []}
@@ -39,7 +39,7 @@ class PostOfficeRepo(Repository[PostOffice]):
 						base = data[1],
 						increment = data[2],
 					))
-			cls.add(postNames[j], PostOffice(
+			cls.add(Constants.postNames[j], PostOffice(
 				orders = parts["Orders"].copy(),
 				coinRewards = coins.copy(),
 				rewards = parts["Rewards"].copy(),

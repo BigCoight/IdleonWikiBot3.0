@@ -135,12 +135,52 @@
         "intName": "BonusType",
         "amount": 4
     },
-    "Filler": {
-        "name": "Filler",
-        "desc": "+4 minimum Lv for all Talent Books from the library, so you get more of the goood stuff.",
-        "cost": 9156348,
+    "Photoshopped Dmg Range": {
+        "name": "Photoshopped Dmg Range",
+        "desc": "Boosts Total Damage by +2%.",
+        "cost": 100000000,
         "type": "pigbank",
-        "intName": "BonusType",
-        "amount": -1
+        "intName": "TotalDmg",
+        "amount": 2
+    },
+    "Glitched Acc Formula": {
+        "name": "Glitched Acc Formula",
+        "desc": "Boosts Total Accuracy by +2%",
+        "cost": 3e+08,
+        "type": "pigbank",
+        "intName": "TotalAcc",
+        "amount": 2
+    },
+    "Firewalled Defence": {
+        "name": "Firewalled Defence",
+        "desc": "Boosts Total Defence by +2%",
+        "cost": 7e+08,
+        "type": "pigbank",
+        "intName": "TotalDef",
+        "amount": 2
+    },
+    "Bottomless Bags": {
+        "name": "Bottomless Bags",
+        "desc": "Boosts Carry Capacity by +5%",
+        "cost": 1.2e+09,
+        "type": "pigbank",
+        "intName": "CarryCap",
+        "amount": 5
+    },
+    "AFKeylogging": {
+        "name": "AFKeylogging",
+        "desc": "Boosts Skill AFK Gains Rate by +2%.",
+        "cost": 2e+10,
+        "type": "afk",
+        "intName": "SkillAFK",
+        "amount": 2
+    },
+    "Guild GP Hack": {
+        "name": "Guild GP Hack",
+        "desc": "Logging in each day now contributes 30 GP to your guild, instead of 20.",
+        "cost": 2.5e+09,
+        "type": "afk",
+        "intName": "Guild2",
+        "amount": 10
     }
 }

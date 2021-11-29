@@ -18,16 +18,18 @@ class BossDetailRepo(Repository[BossDetails]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		bossIntNames = ["wolf", "Boss2", "Boss3"]
+		bossIntNames = ["wolf", "Boss2", "Boss3", "FILLER"]
 		tabs = ["health", "defence", "exp", "keys"]
 		letters = ["A", "B", "C"]
 
 		attackNames = [
 			["Fireball", "Stomp", "Rock Spikes", "Spike Traps", "Sword Swing", "Uppercut", "Rocketfist"],
 			["Hammer", "Scimitar", "Fire Column", "Purple Psionic Hoops", "Finger Gun", "Headpat", "Blue Psionic",
-				"Hoops", "Kick"],
+			 "Hoops", "Kick"],
 			["filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler",
-			    "filler", "filler", "filler"]
+			 "filler", "filler", "filler"],
+			["filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler",
+			 "filler", "filler", "filler"],
 		]
 
 		bossInformation = {}
@@ -52,11 +54,11 @@ class BossDetailRepo(Repository[BossDetails]):
 		for boss, detail in bossInformation.items():
 			attacks = []
 			for name, damage in detail.get("Attacks").items():
-				attacks.append(BossAttack(name=name, damage = damage))
+				attacks.append(BossAttack(name = name, damage = damage))
 			cls.add(boss, BossDetails(
 				health = detail["health"],
 				defence = detail["defence"],
 				exp = detail["exp"],
 				keys = detail["keys"],
-				attacks= attacks.copy(),
+				attacks = attacks.copy(),
 			))

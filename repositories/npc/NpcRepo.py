@@ -218,4 +218,4 @@ class NpcRepo(Repository[Npc]):
 
 	@classmethod
 	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
-		return super().compareVersions(v1, v2, ignored = {"dialogue", "head", "QuestName", "CustomType"})
+		return super().compareVersions(v1, v2, ignored = {"dialogue", "head", "QuestName", "CustomType", "note"})

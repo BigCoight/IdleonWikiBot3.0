@@ -118,7 +118,7 @@ EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
-ItemRepo.upload(False)
+NpcRepo.upload(True)
 
 # newV = IdleonReader("140", True)
 # oldV = IdleonReader("steam130b", True)

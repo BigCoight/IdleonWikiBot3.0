@@ -32,7 +32,7 @@ class CustomSourceRepo(Repository[Sources]):
 			))
 
 		for item in ["CardsX6", "CardsX7", "CardsX8", "CardsX9", "CardsX10", "CardsX11",
-		             "CardsX12", "CardsX13"]:
+		             "CardsX12", "CardsX13", "CardsX16"]:
 			cls.addToSource(item, Source(
 				wikiName = "[[Dungeons#Crypt of Snakenhotep|Crypt of Snakenhotep]]",
 				txtName = "Dungeons: Crypt of Snakenhotep"

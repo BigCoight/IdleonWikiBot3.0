@@ -66,6 +66,7 @@ class SourceRepo(Repository[Sources]):
 		cls.addAnvil()
 		cls.addFlurboShop()
 		cls.addKeychains()
+		cls.addDungeonItems()
 
 		for item, sources in CustomSourceRepo.items():
 			for source in sources.sources:
@@ -82,7 +83,7 @@ class SourceRepo(Repository[Sources]):
 				continue
 			cls.addToSource(item, Source(
 				wikiName = "[[Smithing#Production items|Anvil Production]]",
-				txtName = "Anvil Production"
+				txtName = "Smithing: Anvil Production"
 			))
 
 	@classmethod
@@ -94,7 +95,7 @@ class SourceRepo(Repository[Sources]):
 				continue
 			cls.addToSource(item, Source(
 				wikiName = "[[Dungeons#Flurbo Shop|Flurbo Shop]]",
-				txtName = "Flurbo Shop"
+				txtName = "Dungeons: Flurbo Shop"
 			))
 
 	@classmethod
@@ -104,11 +105,11 @@ class SourceRepo(Repository[Sources]):
 				continue
 			cls.addToSource(item, Source(
 				wikiName = "[[Dungeons#Flurbo Shop|Flurbo Shop]]",
-				txtName = "Flurbo Shop"
+				txtName = "Dungeons: Flurbo Shop"
 			))
 			cls.addToSource(item, Source(
 				wikiName = "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
-				txtName = "Flurbo Shop"
+				txtName = "Dungeons: Flurbo Shop"
 			))
 
 	@classmethod
@@ -239,7 +240,7 @@ class SourceRepo(Repository[Sources]):
 		for postOffice, detail in PostOfficeRepo.items():
 			for reward in detail.rewards:
 				cls.addToSource(reward.item, Source(
-					txtName = postOffice,
+					txtName = f"Post Office: {postOffice}",
 					wikiName = f"[[Post Office#{postOffice}|{postOffice}]]"
 				))
 
@@ -247,7 +248,7 @@ class SourceRepo(Repository[Sources]):
 	def addRefinery(cls):
 		for salt, _ in RefineryCostRepo.items():
 			cls.addToSource(salt, Source(
-				txtName = "Refinery",
+				txtName = "Construction: Refinery",
 				wikiName = "[[Construction#Refinery|Refinery]]"
 			))
 
@@ -265,18 +266,24 @@ class SourceRepo(Repository[Sources]):
 			for drop in drops.drops:
 				if drop.item[:-1] == "SmithingRecipes":
 					cls.addToRecipeFrom(RecipeRepo.getFromItemStr(drop.item, drop.quantity), Source(
-						txtName = enemy,
+						txtName = EnemyDetailsRepo.get(enemy).Name,
 						wikiName = f"[[{wikiName}]]"
 					))
 					cls.addToSource(RecipeRepo.getFromItemStr(drop.item, drop.quantity), Source(
-						txtName = enemy,
+						txtName = EnemyDetailsRepo.get(enemy).Name,
 						wikiName = f"[[{wikiName}|Recipe from {wikiName}]]"
 					))
 					continue
-				cls.addToSource(drop.item, Source(
-					txtName = enemy,
-					wikiName = f"[[{wikiName}]]"
-				))
+				if "Colosseum" in wikiName:
+					cls.addToSource(drop.item, Source(
+						txtName = f"Colosseum: {EnemyDetailsRepo.get(enemy).Name}",
+						wikiName = f"[[{wikiName}]]"
+					))
+				else:
+					cls.addToSource(drop.item, Source(
+						txtName = EnemyDetailsRepo.get(enemy).Name,
+						wikiName = f"[[{wikiName}]]"
+					))
 
 	@classmethod
 	def addRecipes(cls):
@@ -303,3 +310,14 @@ class SourceRepo(Repository[Sources]):
 		if not cls.contains(item):
 			cls.add(item, Sources())
 		cls.get(item).questAss.append(source)
+
+	@classmethod
+	def addDungeonItems(cls):
+		for item, data in ItemDetailRepo.items():
+			# Dung3Ice is the only item in the game that starts
+			# with 'Dung' but isn't a dungeon weapon.
+			if "Dung" in data.internalID and data.internalID != "Dung3Ice":
+				cls.addToSource(item, Source(
+					txtName = "Dungeons",
+					wikiName = f"[[Dungeons]]"
+				))

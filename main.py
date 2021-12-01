@@ -35,6 +35,7 @@ from repositories.misc.ConstellationsRepo import ConstellationsRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
 from repositories.misc.MapNameRepo import MapNameRepo
+from repositories.misc.MapPortalsRepo import MapPortalsRepo
 from repositories.misc.StarSignsRepo import StarSignsRepo
 from repositories.misc.StorageOrderRepo import StorageOrderRepo
 from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
@@ -83,6 +84,7 @@ StarSignsRepo.initialise(codeReader)
 
 MapNameRepo.initialise(codeReader)
 MapDataRepo.initialise(codeReader)
+MapPortalsRepo.initialise(codeReader)
 ConstellationsRepo.initialise(codeReader)
 
 VendorRepo.initialise(codeReader)

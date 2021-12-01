@@ -81,6 +81,7 @@ class IdleonReader:
 		self.codeReader.addSection("ShopLocations = function ()", "ShopLocations")
 		self.codeReader.addSection("MapDispName = function", "MapNames")
 		self.codeReader.addSection("MapAFKtarget = function ()", "MapEnemies")
+		self.codeReader.addSection("MapDetails = function ()", "MapPortals")
 		self.codeReader.addSection("PostOfficePossibleOrders = function ()", "PostOffice")
 		self.codeReader.addSection("FishToolkitInfo = function ()", "FishToolkit")
 		self.codeReader.addSection("AlchemyDescription = function", "Bubbles")

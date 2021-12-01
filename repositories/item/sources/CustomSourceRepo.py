@@ -24,6 +24,26 @@ class CustomSourceRepo(Repository[Sources]):
 				txtName = "Choco Box"
 			))
 
+		for item in ["CardsX0", "CardsX1", "CardsX2", "CardsX3", "CardsX4", "CardsX5",
+					 "CardsX15", "CardsX14"]:
+			cls.addToSource(item, Source(
+				wikiName = "[[Dungeons#Grandfrog's Gazebo|Grandfrog's Gazebo]]",
+				txtName = "Dungeons: Grandfrog's Gazebo"
+			))
+
+		for item in ["CardsX6", "CardsX7", "CardsX8", "CardsX9", "CardsX10", "CardsX11",
+		             "CardsX12", "CardsX13"]:
+			cls.addToSource(item, Source(
+				wikiName = "[[Dungeons#Crypt of Snakenhotep|Crypt of Snakenhotep]]",
+				txtName = "Dungeons: Crypt of Snakenhotep"
+			))
+
+		for item in ["CardsX17", "CardsX18", "CardsX19", "CardsX20"]:
+			cls.addToSource(item, Source(
+				wikiName = "[[Dungeons#Igloo's Basement|Igloo's Basement]]",
+				txtName = "Dungeons: Igloo's Basement"
+			))
+
 		sourceDict = {
 			"Giftmas Event": 'EquipmentHats42',
 			"Valenslimes Day Event": 'EquipmentHats51',
@@ -68,7 +88,7 @@ class CustomSourceRepo(Repository[Sources]):
 		             'ObolGoldEXP', 'ObolSilverCard', 'ObolSilverDef', 'ObolGoldDef']:
 			cls.addToSource(item, Source(
 				wikiName = "[[Gem Shop#Quality Obol Stack|Quality Obol Stack]]",
-				txtName = "Quality Obol Stack"
+				txtName = "Gem Shop: Quality Obol Stack"
 			))
 
 		for item in ['ObolGold0', 'ObolGold1', 'ObolGold2', 'ObolGoldDamage', 'ObolGoldMoney', 'ObolGoldMining',
@@ -82,7 +102,7 @@ class CustomSourceRepo(Repository[Sources]):
 		             'ObolPlatinumDef', 'ObolPinkDef', 'ObolGoldTrapping', 'ObolGoldCons', 'ObolGoldWorship']:
 			cls.addToSource(item, Source(
 				wikiName = "[[Gem Shop#Marvelous Obol Stack|Marvelous Obol Stack]]",
-				txtName = "Marvelous Obol Stack"
+				txtName = "Gem Shop: Marvelous Obol Stack"
 			))
 
 		for item in ["EquipmentHats14", "EquipmentHats11", "EquipmentHats13", "EquipmentHats12"]:
@@ -98,7 +118,7 @@ class CustomSourceRepo(Repository[Sources]):
 		             "EquipmentStatues5", "EquipmentStatues6", "EquipmentStatues7", "EquipmentStatues8"]:
 			cls.addToSource(item, Source(
 				wikiName = "[[Alchemy#Level up Gift|Level up Gift]]",
-				txtName = "Level up Gift"
+				txtName = "Alchemy: Level up Gift"
 			))
 
 		for item in ["Trophy9", "FoodPotYe3", "FoodPotYe2", "PremiumGem", "StoneA3b", "StoneW2", "StoneA2",
@@ -119,7 +139,7 @@ class CustomSourceRepo(Repository[Sources]):
 		             "ObolBronzeChoppin", "ObolBronzeDamage"]:
 			cls.addToSource(item, Source(
 				wikiName = "[[Alchemy#Liquid Shop|Mediocre Obols]]",
-				txtName = "Mediocre Obols"
+				txtName = "Alchemy: Mediocre Obols"
 			))
 
 		for item in ["ObolBronze0", "ObolBronze1", "ObolBronze2", "ObolBronze3", "ObolSilverDamage",
@@ -129,7 +149,7 @@ class CustomSourceRepo(Repository[Sources]):
 		             "ObolSilver2", "ObolSilver3"]:
 			cls.addToSource(item, Source(
 				wikiName = "[[Alchemy#Liquid Shop|Decent Obols]]",
-				txtName = "Decent Obols"
+				txtName = "Alchemy: Decent Obols"
 			))
 
 		for item in ["ObolSilverDamage", "ObolBronze0", "ObolBronze1", "ObolBronze2", "ObolBronzeCons",
@@ -139,13 +159,13 @@ class CustomSourceRepo(Repository[Sources]):
 		             "ObolSilver2", "ObolGold", "ObolGoldCard"]:
 			cls.addToSource(item, Source(
 				wikiName = "[[Alchemy#Liquid Shop|Grand Obols]]",
-				txtName = "Grand Obols"
+				txtName = "Alchemy: Grand Obols"
 			))
 
 		for item in ["StoneW1", "StoneA1", "StoneT1", "StoneHelm1", "StoneA1b"]:
 			cls.addToSource(item, Source(
 				wikiName = "[[Alchemy#Liquid Shop|Weak UPG Stone]]",
-				txtName = "Weak UPG Stone"
+				txtName = "Alchemy: Weak UPG Stone"
 			))
 
 		for item in ['Pearl3', 'Pearl2', 'Pearl1']:
@@ -192,7 +212,7 @@ class CustomSourceRepo(Repository[Sources]):
 
 		cls.addToSource("Quest26", Source(
 			wikiName = "[[Alchemy#Level up Gift|Level up Gift (however this item has no use anymore)]]",
-			txtName = "Level up Gift"
+			txtName = "Alchemy: Level up Gift"
 		))
 
 		cls.addToSource("NPCtoken15", Source(
@@ -217,7 +237,7 @@ class CustomSourceRepo(Repository[Sources]):
 
 		cls.addToSource("Quest38", Source(
 			wikiName = "[[Alchemy#Level up Gift|Level up Gift]]",
-			txtName = "Level up Gift"
+			txtName = "Alchemy: Level up Gift"
 		))
 
 		cls.addToSource("Quest47", Source(
@@ -227,7 +247,7 @@ class CustomSourceRepo(Repository[Sources]):
 
 		cls.addToSource("PureWater2", Source(
 			wikiName = "[[Alchemy#Liquid Shop|Alchemy Liquid Shop]]",
-			txtName = "Alchemy Liquid Shop"
+			txtName = "Alchemy: Liquid Shop"
 		))
 
 		cls.addToSource("Trophy5", Source(
@@ -264,7 +284,7 @@ class CustomSourceRepo(Repository[Sources]):
 		for item in ['BadgeD1', 'BadgeD2', 'BadgeD3', 'NPCtoken28', 'NPCtoken29', 'NPCtoken30']:
 			cls.addToRecipeFrom(item, Source(
 				wikiName = "[[Cowbo_Jones#The_New_Sheriff|The New Sheriff]]",
-				txtName = "Cowbo Jones: The_New_Sheriff"
+				txtName = "Cowbo Jones: The New Sheriff"
 			))
 
 		for item in ['EquipmentHats52', 'EquipmentShirts26', 'EquipmentPants20', 'EquipmentShoes21',
@@ -288,12 +308,12 @@ class CustomSourceRepo(Repository[Sources]):
 
 		cls.addToRecipeFrom("Peanut", Source(
 			wikiName = "[[Picnic Stowaway#Brunchin' with the Blobs|Brunchin' with the Blobs]]",
-			txtName = "Brunchin' with the Blobs"
+			txtName = "Picnic Stowaway: Brunchin' with the Blobs"
 		))
 
 		cls.addToRecipeFrom("EquipmentShoes15", Source(
 			wikiName = "[[Colosseum#Dewdrop_Silver_Chest|W1 Colosseum first silver chest]]",
-			txtName = "W1 Colosseum first silver chest"
+			txtName = "Colosseum: W1 Colosseum first silver chest"
 		))
 
 		cls.addToQuestAss("Quest2", Source(

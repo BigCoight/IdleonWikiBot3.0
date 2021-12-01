@@ -49,8 +49,12 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 	@classmethod
 	def parseHead(cls, head: str) -> NpcHead:
 		paresedHead = {}
-		parts = re.findall(r"(\w*)=(.*)", head)
-		for atr, val in parts:
+		parts = head.split("\n|")
+		for part in parts:
+			subpart = part.split("=", 1)
+			if len(subpart) < 2:
+				continue
+			atr, val = subpart
 			paresedHead[atr] = val
 		return NpcHead(
 			location = paresedHead.get("location", ""),
@@ -61,7 +65,7 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 			birthWeight = paresedHead.get("birthweight", 0),
 			starSign = paresedHead.get("starsign", ""),
 			mothersMaidenName = paresedHead.get("mmm", ""),
-			notes = paresedHead.get("notes", "").replace('"', r"'")
+			notes = paresedHead.get("notes", "").replace('"', r"'").replace("}}\n", "").replace("\n", "$NEWLINE$")
 		)
 
 	@classmethod

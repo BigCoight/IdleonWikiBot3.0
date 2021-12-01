@@ -1,11 +1,11 @@
 from typing import List
 
 from definitions.common.DropTypes import Drop
-from definitions.master.CollectionModel import CollectionModel
+from definitions.master.IdleonModel import IdleonModel
 from helpers.Constants import Constants
 
 
-class EnemyTable(CollectionModel):
+class EnemyTable(IdleonModel):
 	drops: List[Drop]
 
 	def wikiWriterKey(self) -> str:

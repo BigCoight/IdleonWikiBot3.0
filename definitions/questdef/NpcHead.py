@@ -25,7 +25,7 @@ class NpcHead(IdleonModel):
 			"birthweight": "birthWeight",
 			"starsign": "starSign",
 			"mmm": "mothersMaidenName",
-			"notes": "notes",
+			"notes": self.getNotes,
 		}
 
 	def writeWiki(self, newLine = True) -> str:
@@ -33,3 +33,6 @@ class NpcHead(IdleonModel):
 		res += super().writeWiki()
 		res += "}}"
 		return res
+
+	def getNotes(self) -> str:
+		return self.notes.replace("$NEWLINE$", "\n")

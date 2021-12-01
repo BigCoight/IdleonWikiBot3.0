@@ -1,16 +1,15 @@
 from typing import List
 
-from pydantic import BaseModel
-
+from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Integer
 
 
-class BossAttack(BaseModel):
+class BossAttack(IdleonModel):
 	name: str
 	damage: Integer
 
 
-class BossDetails(BaseModel):
+class BossDetails(IdleonModel):
 	health: Integer
 	defence: Integer
 	exp: Integer

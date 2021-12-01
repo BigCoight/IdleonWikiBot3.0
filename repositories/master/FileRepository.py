@@ -12,11 +12,10 @@ T = TypeVar("T", bound = BaseModel)
 
 
 class FileRepository(Repository[T]):
-	override: bool
 
 	@classmethod
-	def initialise(cls, codeReader: CodeReader) -> None:
-		cls.override = True
+	def initialise(cls, codeReader: CodeReader, update: bool = False) -> None:
+		cls.update = update
 		cls.repository = {}
 		cls.codeReader = codeReader
 		cls.sections = cls.getSections()
@@ -39,16 +38,9 @@ class FileRepository(Repository[T]):
 
 	@classmethod
 	def shouldGetFromFile(cls) -> bool:
-		if cls.override:
-			return True
 		if not os.path.isfile(cls._getFileName()):
 			return False
-		with open(cls._getFileName(), mode = "r") as infile:
-			data = json.load(infile)
-		if version := data.get("version"):
-			if version == cls.codeReader.version:
-				return True
-		return False
+		return not cls.update
 
 	@classmethod
 	def getFromFile(cls) -> None:

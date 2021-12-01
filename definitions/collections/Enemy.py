@@ -5,10 +5,10 @@ from definitions.enemy.EnemyDetails import EnemyDetails
 from definitions.enemy.EnemyNav import EnemyNav
 from definitions.enemy.EnemyTable import EnemyTable
 from definitions.enemy.MapData import MapData
-from definitions.master.CollectionModel import CollectionModel
+from definitions.master.IdleonModel import IdleonModel
 
 
-class Enemy(CollectionModel):
+class Enemy(IdleonModel):
 	details: EnemyDetails
 	drops: Optional[EnemyTable] = None
 	mapData: Optional[MapData] = None

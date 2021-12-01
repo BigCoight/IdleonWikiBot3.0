@@ -6,7 +6,7 @@
 |birthweight=7.48
 |starsign=Gemini
 |mmm=Ziegler
-|notes=[[Lonely Hunter]] is found in [[Worlds#Snowfield Outskirts|Snowfield Outskirts]], next to [[Colosseum/Chillsnap|Chillsnap Colosseum]].
+|notes=[[Lonely Hunter]] is found in [[Worlds#Snowfield Outskirts|Snowfield Outskirts]], next to [[Colosseum/Chillsnap|Chillsnap Colosseum]].$NEWLINE$$NEWLINE$Completing his quests gives the player the ability to talk to him once every day to obtain a {{CraftReq|Colosseum Ticket}}. He will hold tickets for you for up to 3 days. Having more characters complete his quests does not provide more daily tickets.$NEWLINE$
 }}
 {{Quest/head}}
 {{Quest|name=Leaf Him Alone!
@@ -15,22 +15,35 @@
 |requirements=200x{{CraftReq|Grass Leaf}}, 50x{{CraftReq|Twisty Leaf}}
 |consumed=Yes
 |rewards=5x{{CraftReq|Gem}}, 1x{{CraftReq|1 HR Time Candy}}
+|notes= 
 }}
 {{Quest|name=Skeleton? Skelegone!
 |text=Summon Skeletons by breaking the skull rock in the top right of the colosseum and destroy them!
 |difficulty=4
 |requirements=Xylobones Defeated: > 5
 |consumed=No
-|rewards=1x{{CraftReq|1 HR Time Candy}}, 1x{{CraftReq|Colosseum Ticket}}
+|rewards=1x{{CraftReq|1 HR Time Candy}}, 2x{{CraftReq|Colosseum Ticket}}
+|notes= 
+}}
+{{Quest|name=Opening Chests
+|text=Break open chests in this colosseum.
+|difficulty=4
+|requirements=Bronze Chests: > 7, Silver Chests: > 3, Gold Chests: > 1
+|consumed=No
+|rewards=1x{{CraftReq|Lonely Hunter Token}}, 2x{{CraftReq|Colosseum Ticket}}
+|notes= 
 }}
 |}
 {{dialogue/head}}
 {{dialogue/row|text=Ughh...}}
 {{dialogue/row|text=Was real nice before people started showing up all the time. I'm not like the other colosseum masters my tickets are my own.}}
-{{dialogue/row|text=Well you heard him!|quest=Leaf Him Alone!}}
+{{dialogue/row|text=Go on leave me alone. <br> QUEST:Well you heard him!|quest=Leaf Him Alone!}}
 {{dialogue/row|text=Inventory empty it.}}
 {{dialogue/row|text=What the... what are these for? Why did y-- oh. <br> Ugh.}}
-{{dialogue/row|text=Summon Skeletons by breaking the skull rock in the top right of the colosseum and destroy them!|quest=Skeleton? Skelegone!}}
+{{dialogue/row|text=I guess my tickets are a small price to pay to get rid of you. Defeat the Skeletons in the Colosseum and they're yours. <br> QUEST:Summon Skeletons by breaking the skull rock in the top right of the colosseum and destroy them!|quest=Skeleton? Skelegone!}}
+{{dialogue/row|text=Inventory Empty it}}
+{{dialogue/row|text=Alright you got your tickets now get outta here.}}
+{{dialogue/row|text=Ugh hang on. I forgot about the token. Look just break open some chests and you can have it. <br> QUEST:Break open chests in this colosseum.|quest=Opening Chests}}
 {{dialogue/row|text=Inventory Empty it}}
 {{dialogue/row|text=Alright you got your tickets now get outta here.}}
 |}

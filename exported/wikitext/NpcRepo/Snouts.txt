@@ -6,22 +6,24 @@
 |birthweight=5.93
 |starsign=Libra
 |mmm=Vanderpoel
-|notes=[[Snouts]] is hanging around in [[Worlds#The Stache Split|The Stache Split]].
+|notes=[[Snouts]] is hanging around in [[Worlds#The Stache Split|The Stache Split]].$NEWLINE$$NEWLINE$Like other piggy NPCs, his quests award stamps.$NEWLINE$
 }}
 {{Quest/head}}
 {{Quest|name=A Salty Fall
 |text=Get some Refinery Salts to make into a pile for Snouts to fall onto.
 |difficulty=4
-|requirements=50x{{CraftReq|Redox Salts}}
+|requirements=30x{{CraftReq|Redox Salts}}
 |consumed=Yes
 |rewards=1x{{CraftReq|Buckler Stamp}}
+|notes= 
 }}
 {{Quest|name=Gravity VS Salt
 |text=Get some Orange Refinery Salts hopefully they wont react with the snow.
 |difficulty=5
-|requirements=75x{{CraftReq|Explosive Salts}}
+|requirements=50x{{CraftReq|Explosive Salts}}
 |consumed=Yes
 |rewards=1x{{CraftReq|Feather Stamp}}, 1x{{CraftReq|Purp Froge Stamp}}
+|notes= 
 }}
 {{Quest|name=Big Ol Chonker
 |text=Defeat a giant monster. You need a Prayer for giants to spawn at all remember.
@@ -29,6 +31,15 @@
 |requirements=Defeat Giant Stache Mob: > 1
 |consumed=No
 |rewards=1x{{CraftReq|Talent III Stamp}}, 1x{{CraftReq|Biblio Stamp}}
+|notes=You must equip the [[Worship#Tachion_of_the_Titans|Tachion of the Titans]] Prayer to spawn Giant Monsters.
+}}
+{{Quest|name=Mana Plox
+|text=Get the big circular mana potions for Snouts!
+|difficulty=5
+|requirements=250x{{CraftReq|Decent Mana Potion}}
+|consumed=Yes
+|rewards=1x{{CraftReq|Snouts Token}}, 1x{{CraftReq|4 HR Time Candy}}
+|notes= 
 }}
 |}
 {{dialogue/head}}
@@ -37,15 +48,18 @@
 {{dialogue/row|text=But what if I swing THAT way...? 'sad oink noise'.}}
 {{dialogue/row|text=I'm stuck... oh hey!! Hey you!! Can you help me?}}
 {{dialogue/row|text=My survival guide said if I ever got stuck on a rope the FIRST thing I should do is see if I can just let go and fall on something soft!}}
-{{dialogue/row|text=Get some Refinery Salts to make into a pile for Snouts to fall onto.|quest=A Salty Fall}}
+{{dialogue/row|text=Hmm... that snow has rocks in it that's no good. Can you go get me something to land on? <br> QUEST:Get some Refinery Salts to make into a pile for Snouts to fall onto.|quest=A Salty Fall}}
 {{dialogue/row|text=Your inventory is full!}}
 {{dialogue/row|text=Oh no!!! The salts evaporating! It must be reacting with the snow or something ^}}
-{{dialogue/row|text=Get some Orange Refinery Salts hopefully they wont react with the snow.|quest=Gravity VS Salt}}
+{{dialogue/row|text=Do you have anything else I could land on? <br> QUEST:Get some Orange Refinery Salts hopefully they wont react with the snow.|quest=Gravity VS Salt}}
 {{dialogue/row|text=Your inventory is full!}}
 {{dialogue/row|text=AAAH!!! WHAT SALT WAS THAT? IT JUST EXPLODED!!! Are... are you ok? Youre just sleeping right?}}
 {{dialogue/row|text=Well I'm out of ideas... <br> ... <br> ... <br> Unless... no theres no way the rumors are true.}}
-{{dialogue/row|text=Defeat a giant monster. You need a Prayer for giants to spawn at all remember.|quest=Big Ol Chonker}}
+{{dialogue/row|text=Apparently theres a Prayer that summons GIANT monsters. Maybe if you manage to kill one on this map you can push its body under me as a cushion! <br> QUEST:Defeat a giant monster. You need a Prayer for giants to spawn at all remember.|quest=Big Ol Chonker}}
 {{dialogue/row|text=Your inventory is full!}}
-{{dialogue/row|text=What the..? It disappeared!! It just up and vanished a few seconds after it died! Where did it even go? <br> Welp guess that means just one thing...}}
+{{dialogue/row|text=What the..? It disappeared!! It just up and vanished a few seconds after it died! Where did it even go? Welp guess that means just one thing...}}
 {{dialogue/row|text=I'm stuck...}}
+{{dialogue/row|text=WAIT! I totally forgot I have a star talent that can shield me!! But I don't have enough mana to cast it... please get me some pots!!! <br> QUEST:Get the big circular mana potions for Snouts!|quest=Mana Plox}}
+{{dialogue/row|text=Your inventory is full!}}
+{{dialogue/row|text=Oh right mana potions don't actually give you mana they just make it recharge faster... guess I'll have to wait!}}
 |}

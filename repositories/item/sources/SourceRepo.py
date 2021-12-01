@@ -314,7 +314,9 @@ class SourceRepo(Repository[Sources]):
 	@classmethod
 	def addDungeonItems(cls):
 		for item, data in ItemDetailRepo.items():
-			if "Dung" in data.internalID:
+			# Dung3Ice is the only item in the game that starts
+			# with 'Dung' but isn't a dungeon weapon.
+			if "Dung" in data.internalID and data.internalID != "Dung3Ice":
 				cls.addToSource(item, Source(
 					txtName = "Dungeons",
 					wikiName = f"[[Dungeons]]"

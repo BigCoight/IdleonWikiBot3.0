@@ -17,7 +17,6 @@ class MapPortalsRepo(ListRepository[MapInfo]):
 		for n, v in enumerate(data[0]):
 			# Some maps only have one portal, and for some reason getFrom4dArray handles the array differently.
 			# So if we have an array of values, it's a multi portal map
-			print(v)
 			if len(v) > 1:
 				cls.add(MapInfo(id = n, portalRequirements = v[0]))
 			# Else it's a map with only one portal, so just get that value directly

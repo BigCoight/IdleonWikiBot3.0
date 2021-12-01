@@ -32,17 +32,27 @@ class CustomSourceRepo(Repository[Sources]):
 			))
 
 		for item in ["CardsX6", "CardsX7", "CardsX8", "CardsX9", "CardsX10", "CardsX11",
-		             "CardsX12", "CardsX13", "CardsX16"]:
+		             "CardsX12", "CardsX13", "CardsX16", "Quest51", "PalmTreeD", "Quest53", "Quest54", "Quest55"]:
 			cls.addToSource(item, Source(
 				wikiName = "[[Dungeons#Crypt of Snakenhotep|Crypt of Snakenhotep]]",
 				txtName = "Dungeons: Crypt of Snakenhotep"
 			))
 
-		for item in ["CardsX17", "CardsX18", "CardsX19", "CardsX20"]:
+		for item in ["CardsX17", "CardsX18", "CardsX19", "CardsX20", "Tree7D", "PlatD", "Fish1D", "Fish3D", "Cashb", "Dung3Ice"]:
 			cls.addToSource(item, Source(
 				wikiName = "[[Dungeons#Igloo's Basement|Igloo's Basement]]",
 				txtName = "Dungeons: Igloo's Basement"
 			))
+
+		cls.addToQuestAss("Quest52", Source(
+			wikiName = "[[Bill Brr#Coin Shenanigans|Coin Shenanigans]]",
+			txtName = "Bill Brr: Coin Shenanigans"
+		))
+
+		cls.addToQuestAss("Quest63", Source(
+			wikiName = "[[Shuvelle#Diggy Hole!|Diggy Hole!]]", 
+			txtName = "Shuvelle: Diggy Hole!",
+		))
 
 		sourceDict = {
 			"Giftmas Event": 'EquipmentHats42',

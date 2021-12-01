@@ -116,6 +116,8 @@ class SpecificItemRepo(Repository[BaseItem]):
 
 	@classmethod
 	def _ignore(cls, name: str, data: BaseItem) -> bool:
+		if "Dung" in name:
+			return True
 		if name in {"EXP", "Blank", "LockedInvSpace", "COIN", "TalentBook1", "TalentBook2",
 		            "TalentBook3", "TalentBook4", "TalentBook5", "SmithingRecipes1", "SmithingRecipes2",
 		            "SmithingRecipes3", "SmithingRecipes4", "ExpSmith1", "Quest8", "EquipmentShirts8"}:

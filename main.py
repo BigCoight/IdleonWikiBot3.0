@@ -120,8 +120,8 @@ EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
-ItemRepo.upload(True)
-# NpcRepo.exportWikiMult()
+# ItemRepo.upload(True)
+EnemyTableRepo.exportWikiMult()
 #
 # newV = IdleonReader("140", True)
 # oldV = IdleonReader("steam130b", True)

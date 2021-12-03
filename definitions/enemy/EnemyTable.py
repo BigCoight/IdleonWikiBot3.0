@@ -8,5 +8,5 @@ from helpers.Constants import Constants
 class EnemyTable(IdleonModel):
 	drops: List[Drop]
 
-	def wikiWriterKey(self) -> str:
+	def writeWiki(self, newLine = True) -> str:
 		return Constants.newLine.join([drop.writeWiki() + "}}" for drop in self.drops])

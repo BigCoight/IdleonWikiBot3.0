@@ -10,6 +10,6 @@ class Constellation(IdleonModel):
 	num1: Integer
 	num2: Integer
 	num3: Integer
-	num4: Integer
-	requirement: str
 	starChartPoints: Integer
+	requirement: str
+	type: Integer

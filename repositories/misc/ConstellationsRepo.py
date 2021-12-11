@@ -24,11 +24,37 @@ class ConstellationsRepo(Repository[Constellation]):
 		prefixes = ["A", "B", "C"]
 		# StarQuests
 		data = getFromSplitArray(cls.getSection())
+		fillterCount = 1 # used to handle multiple constellsations with the same name.
 		for n, const in enumerate(data):
 			if const[0] == '':
+				cls.add(f"Filler{fillterCount}", Constellation(
+					name = f"Filler",
+					area = "",
+					x = 0,
+					y = 0,
+					num1 = 0,
+					num2 = 0,
+					num3 = 0,
+					starChartPoints = 0,
+					requirement = "",
+					type = 0,
+				))
+				fillterCount += 1
 				continue
-			prefix = prefixes[n // 12]
+			
+			# If map id < 50, it's world 1
+			if int(const[0]) < 50:
+				prefix = "A"
+				number = 1 + n
+			# If map id > 50 but < 100, world 2
+			elif int(const[0]) < 100:
+				prefix = "B"
+				number = 1 + n - 12
+			# else world 3
+			else:
+				prefix = "C"
+				number = 1 + n - 23
 			mapName = MapNameRepo.get(int(const[0])).name
-			constName = f"{prefix}-{(n % 12) + 1}"
+			constName = f"{prefix}-{number}"
 			finalData = [constName, mapName, *const[1:]]
 			cls.add(constName, Constellation.fromList(finalData))

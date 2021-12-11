@@ -9,4 +9,5 @@ class EnemyTable(IdleonModel):
 	drops: List[Drop]
 
 	def writeWiki(self, newLine = True) -> str:
-		return Constants.newLine.join([drop.writeWiki() + "}}" for drop in self.drops])
+		res = Constants.newLine.join([drop.writeWiki() + "}}" for drop in self.drops])
+		return res

@@ -121,8 +121,8 @@ EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
 # ItemRepo.upload(True)
-EnemyTableRepo.exportWikiMult()
+EnemyRepo.exportWikiMult()
 #
 # newV = IdleonReader("140", True)
 # oldV = IdleonReader("steam130b", True)
-# EnemyRepo.compareVersions(oldV, newV)
+# DungEnemyRepo.compareVersions(oldV, newV)

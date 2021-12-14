@@ -121,8 +121,8 @@ EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
 # ItemRepo.upload(True)
-EnemyTableRepo.exportWikiMult()
+ItemRepo.upload(True)
 #
-# newV = IdleonReader("140", True)
-# oldV = IdleonReader("steam130b", True)
-# EnemyRepo.compareVersions(oldV, newV)
+# newV = IdleonReader("140b", True)
+# oldV = IdleonReader("140", True)
+# RecipeRepo.compareVersions(oldV, newV)

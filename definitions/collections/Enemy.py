@@ -15,11 +15,14 @@ class Enemy(IdleonModel):
 	navigation: Optional[EnemyNav] = None
 	bossData: Optional[BossDetails] = None
 
-	def wikiWriterKey(self) -> str:
+	def writeWiki(self, newLine = True) -> str:
 		res = "{{InfoEnemy\n"
-		res += self.details.wikiWriterKey()
-		res += self.mapData.wikiWriterKey() if self.mapData else ""
-		res += self.navigation.wikiWriterKey() if self.navigation else ""
+		res += self.details.writeWiki()
+		res += self.mapData.writeWiki() if self.mapData else ""
+		res += self.navigation.writeWiki() if self.navigation else ""
 		res += "|}\n"
-		res += self.drops.wikiWriterKey()
+		if self.drops:
+			res += self.drops.writeWiki()
+			res += "\n-->{{DropTable/head|Droptable for " + self.details.Name + "}}<!--\n"
+			res += "-->{{DropTable/display}}"
 		return res

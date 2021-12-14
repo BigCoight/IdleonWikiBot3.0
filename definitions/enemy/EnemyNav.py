@@ -1,7 +1,5 @@
 from typing import Optional, Dict, Union, Callable
 
-from pydantic import BaseModel
-
 from definitions.master.IdleonModel import IdleonModel
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
 
@@ -26,12 +24,13 @@ class EnemyNav(IdleonModel):
 
 	def getPrev(self):
 		if self.prev:
-			return EnemyDetailsRepo.get(self.prev).Name
+			return EnemyDetailsRepo.getWikiName(self.prev)
 		return ""
 
 	def getNext(self):
 		if self.next:
-			return EnemyDetailsRepo.get(self.next).Name
+			print(self.next)
+			return EnemyDetailsRepo.getWikiName(self.next)
 		return ""
 
 	def getHasCard(self):
@@ -42,6 +41,5 @@ class EnemyNav(IdleonModel):
 
 	def getCrystalname(self):
 		if self.crystalName:
-			return EnemyDetailsRepo.get(self.crystalName).Name
+			return EnemyDetailsRepo.getWikiName(self.crystalName)
 		return ""
-

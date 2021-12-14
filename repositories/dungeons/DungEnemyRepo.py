@@ -3,10 +3,15 @@ from typing import List
 
 from definitions.dungeons.DungEnemy import DungEnemy
 from helpers.HelperFunctions import reAll, strToArray
+from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
 from repositories.master.Repository import Repository
 
 
 class DungEnemyRepo(Repository[DungEnemy]):
+
+	@classmethod
+	def initDependencies(cls) -> None:
+		EnemyDetailsRepo.initialise(cls.codeReader)
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -31,3 +36,7 @@ class DungEnemyRepo(Repository[DungEnemy]):
 				itemDropChance = dungData[6],
 				cardDropChance = dungData[7],
 			))
+
+	@classmethod
+	def getWikiName(cls, name: str) -> str:
+		return EnemyDetailsRepo.getWikiName(name)

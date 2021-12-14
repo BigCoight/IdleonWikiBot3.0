@@ -39,4 +39,6 @@ class EnemyDetailsRepo(Repository[EnemyDetails]):
 
 	@classmethod
 	def getWikiName(cls, name: str) -> str:
+		if not cls.contains(name):
+			return name
 		return cls.get(name).Name

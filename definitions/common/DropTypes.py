@@ -77,7 +77,7 @@ class CoinDrop(Drop):
 
 	def writeDrop(self):
 		res = "{{DropTable"
-		res += f"/coin|{formatFloat(self.chance)}|{self.quantity}"
+		res += f"/coin|{self.quantity}|{formatFloat(self.chance)}"
 		return res
 
 	def __str__(self) -> str:

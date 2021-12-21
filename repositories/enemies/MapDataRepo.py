@@ -4,6 +4,7 @@ from typing import List
 from definitions.enemy.MapData import MapData
 from helpers.Constants import Constants
 from repositories.misc.MapNameRepo import MapNameRepo
+from repositories.misc.MapPortalsRepo import MapPortalsRepo
 from repositories.master.Repository import Repository
 
 
@@ -27,5 +28,7 @@ class MapDataRepo(Repository[MapData]):
 				continue
 			cls.add(v, MapData(
 				area = MapNameRepo.get(n).name,
-				world = Constants.worlds[worldIndex]
+				world = Constants.worlds[worldIndex],
+				id = MapNameRepo.get(n).id,
+				portalRequirements = MapPortalsRepo.get(n).portalRequirements
 			))

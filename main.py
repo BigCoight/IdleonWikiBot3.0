@@ -38,6 +38,8 @@ from repositories.misc.MapNameRepo import MapNameRepo
 from repositories.misc.MapPortalsRepo import MapPortalsRepo
 from repositories.misc.StarSignsRepo import StarSignsRepo
 from repositories.misc.StorageOrderRepo import StorageOrderRepo
+from repositories.misc.TaskDescriptionsRepo import TaskDescriptionRepo
+from repositories.misc.TaskShopDescRepo import TaskShopDescRepo
 from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
 from repositories.misc.world2.BubbleRepo import BubbleRepo
@@ -54,7 +56,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("140", True)
+idleonReader = IdleonReader("140b", False)
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
@@ -83,8 +85,8 @@ GuildBonusRepo.initialise(codeReader)
 StarSignsRepo.initialise(codeReader)
 
 MapNameRepo.initialise(codeReader)
-MapDataRepo.initialise(codeReader)
 MapPortalsRepo.initialise(codeReader)
+MapDataRepo.initialise(codeReader)
 ConstellationsRepo.initialise(codeReader)
 
 VendorRepo.initialise(codeReader)
@@ -112,6 +114,8 @@ NpcHeadRepo.initialise(codeReader)
 NpcRepo.initialise(codeReader)
 NpcNoteRepo.initialise(codeReader)
 TaskUnlocksRepo.initialise(codeReader)
+TaskDescriptionRepo.initialise(codeReader)
+TaskShopDescRepo.initialise(codeReader)
 PostOfficeUpgradesRepo.initialise(codeReader)
 
 SourceRepo.initialise(codeReader)
@@ -121,7 +125,6 @@ EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
 # ItemRepo.upload(True)
-ItemRepo.upload(True)
 #
 # newV = IdleonReader("140b", True)
 # oldV = IdleonReader("140", True)

@@ -93,6 +93,8 @@ class IdleonReader:
 		self.codeReader.addSection("StatueInfo = function () {", "StatueInfo")
 		self.codeReader.addSection("CardStuff = function ()", "CardInfo")
 		self.codeReader.addSection("TaskUnlocks = function ()", "TaskUnlocks")
+		self.codeReader.addSection("TaskDescriptions = function ()", "TaskDescriptions")
+		self.codeReader.addSection("TaskShopDesc = function ()", "TaskShopDesc")
 		self.codeReader.addSection("RefineryInfo = function ()", "RefineryCost")
 		self.codeReader.addSection("TowerInfo = function () {", "BuildingData")
 		self.codeReader.addSection("SaltLicks = function () {", "SaltLicks")

@@ -3,14 +3,15 @@ from typing import Optional
 from definitions.enemy.BossDetails import BossDetails
 from definitions.enemy.EnemyDetails import EnemyDetails
 from definitions.enemy.EnemyNav import EnemyNav
-from definitions.enemy.EnemyTable import EnemyTable
 from definitions.enemy.MapData import MapData
 from definitions.master.IdleonModel import IdleonModel
+from typing import List
+from definitions.common.DropTypes import Drop
 
 
 class Enemy(IdleonModel):
 	details: EnemyDetails
-	drops: Optional[EnemyTable] = None
+	drops: List[Drop] = None
 	mapData: Optional[MapData] = None
 	navigation: Optional[EnemyNav] = None
 	bossData: Optional[BossDetails] = None

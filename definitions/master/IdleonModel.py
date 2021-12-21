@@ -10,7 +10,9 @@ class IdleonModel(BaseModel):
 	def fromList(cls, data: List[any]) -> IdleonModel:
 		keys = cls.__fields__.keys()
 		if len(keys) != len(data):
-			raise ValueError(f"Length of keys ({len(keys)}) does not match length of data ({len(data)})")
+			raise ValueError(f"Error in creating {cls.__name__}:\n"
+			                 f" Length of object keys ({len(keys)}) does not match length of input data "
+			                 f"({len(data)})")
 		return cls.parse_obj({key: val for key, val in zip(keys, data)})
 
 	def shouldCompare(self) -> bool:

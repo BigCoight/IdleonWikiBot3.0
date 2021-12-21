@@ -54,7 +54,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("140", True)
+idleonReader = IdleonReader("140b", True)
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
@@ -121,8 +121,10 @@ EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
 # ItemRepo.upload(True)
-ItemRepo.upload(True)
+#ItemRepo.upload(True)
 #
 # newV = IdleonReader("140b", True)
 # oldV = IdleonReader("140", True)
+# ItemRepo.initialise(newV.codeReader)
+ItemRepo.upload(False)
 # RecipeRepo.compareVersions(oldV, newV)

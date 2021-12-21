@@ -17,6 +17,13 @@ class CustomSourceRepo(Repository[Sources]):
 				txtName = "Summer Cooler"
 			))
 
+		for item in ["CardsY14", "StoneT1e", "StoneHelm1b", "CardsY1", "CardsY2", "Pearl4", "FoodEvent8",
+		             "FoodEvent7", "FoodEvent6", "FoodEvent1"]:
+			cls.addToSource(item, Source(
+				wikiName = "[[2021 Giftmas Box]]",
+				txtName = "2021 Giftmas Box"
+			))
+
 		for item in ["CardsY2", "CardsY0", "CardsY1", "FoodEvent2", "FoodEvent1", "FoodEvent3",
 		             "FoodEvent4"]:
 			cls.addToSource(item, Source(
@@ -206,6 +213,11 @@ class CustomSourceRepo(Repository[Sources]):
 		cls.addToSource("EquipmentRings15", Source(
 			wikiName = "Has a 1/1M chance to drop from active kills if the Blue Hedgehog [[Star Signs|Starsign]] is equipped.",
 			txtName = "Has a 1/1M chance to drop from active kills if the Blue Hedgehog is equipped."
+		))
+
+		cls.addToSource("EquipmentHats69", Source(
+			wikiName = "[[Gem Shop|Limited time bundle]]",
+			txtName = "Gem Shop: Limited time bundle"
 		))
 
 		cls.addToSource("Trophy8", Source(

@@ -27,7 +27,7 @@
                 ],
                 "QuestName": "TP Pete1",
                 "Difficulty": 4,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "TP Pete1",
                 "CustomArray": [
                     {"desc": "Poops Defeated:", "finalV": 40, "type": "GreaterEqual", "startV": 0},
@@ -42,16 +42,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "StoneT2", "quantity": 2},
-                    {"item": "ExpBalloon1", "quantity": 2}
-                ],
+                "Rewards": [{"item": "StoneT2", "quantity": 2}, {"item": "ExpBalloon1", "quantity": 2}],
                 "QuestName": "TP Pete2",
                 "Difficulty": 3,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Quest14", "quantity": 50}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Quest14", "quantity": 50}]
             },
             "Fired for BS Reasons!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -67,10 +62,8 @@
                 ],
                 "QuestName": "TP Pete3",
                 "Difficulty": 5,
-                "note": {"note": "[[Job Application]] drops from [[Dr Defecaus]]"},
-                "ItemReq": [
-                    {"item": "JobApplication", "quantity": 1}
-                ]
+                "note": "[[Job Application]] drops from [[Dr Defecaus]]",
+                "ItemReq": [{"item": "JobApplication", "quantity": 1}]
             }
         },
         "dialogue": [
@@ -193,16 +186,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"type": "Class", "amount": 1337},
-                    {"coins": 1337}
-                ],
+                "Rewards": [{"type": "Class", "amount": 1337}, {"coins": 1337}],
                 "QuestName": "Secretkeeper1",
                 "Difficulty": 1,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Secretstone", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Secretstone", "quantity": 1}]
             }
         },
         "dialogue": [
@@ -371,11 +359,8 @@
                 ],
                 "QuestName": "Sprout1",
                 "Difficulty": 5,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "TreeInterior1", "quantity": 500},
-                    {"item": "Iron", "quantity": 1500}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "TreeInterior1", "quantity": 500}, {"item": "Iron", "quantity": 1500}]
             },
             "Justice Wears No Clothes": {
                 "Type": "Custom",
@@ -392,11 +377,9 @@
                 ],
                 "QuestName": "Sprout2",
                 "Difficulty": 4,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Sprout2",
-                "CustomArray": [
-                    {"desc": "Unclothed Kills:", "finalV": 30, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Unclothed Kills:", "finalV": 30, "type": "GreaterEqual", "startV": 0}]
             },
             "Shoe Shopping with Sprout": {
                 "Type": "ItemsAndSpaceRequired",
@@ -412,7 +395,7 @@
                 ],
                 "QuestName": "Sprout3",
                 "Difficulty": 3,
-                "note": {"note": ""},
+                "note": "",
                 "ItemReq": [
                     {"item": "EquipmentShoes15", "quantity": 2},
                     {"item": "EquipmentShoes7", "quantity": 2},
@@ -434,10 +417,8 @@
                 ],
                 "QuestName": "Sprout4",
                 "Difficulty": 7,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Quest15", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Quest15", "quantity": 1}]
             }
         },
         "dialogue": [
@@ -560,15 +541,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 2,
-                "Rewards": [
-                    {"item": "EquipmentStatues1", "quantity": 1}
-                ],
+                "Rewards": [{"item": "EquipmentStatues1", "quantity": 1}],
                 "QuestName": "Town Marble1",
                 "Difficulty": 3,
-                "note": {"note": "Purchase Sculpting Tools from the town shop. This quest is not account-wide."},
-                "ItemReq": [
-                    {"item": "SmithingHammerChisel", "quantity": 1}
-                ]
+                "note": "Purchase Sculpting Tools from the town shop. This quest is not account-wide.",
+                "ItemReq": [{"item": "SmithingHammerChisel", "quantity": 1}]
             }
         },
         "dialogue": [
@@ -619,15 +596,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 2,
-                "Rewards": [
-                    {"item": "ObolBronzeDamage", "quantity": 1}
-                ],
+                "Rewards": [{"item": "ObolBronzeDamage", "quantity": 1}],
                 "QuestName": "Obol Altar1",
                 "Difficulty": 6,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "BobJoePickle", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "BobJoePickle", "quantity": 1}]
             }
         },
         "dialogue": [
@@ -679,10 +652,8 @@
                 ],
                 "QuestName": "Woodsman1",
                 "Difficulty": 1,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "OakTree", "quantity": 10}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "OakTree", "quantity": 10}]
             },
             "A noob's 2nd first swing": {
                 "Type": "ItemsAndSpaceRequired",
@@ -692,16 +663,11 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "EquipmentToolsHatchet0", "quantity": 1},
-                    {"coins": 200}
-                ],
+                "Rewards": [{"item": "EquipmentToolsHatchet0", "quantity": 1}, {"coins": 200}],
                 "QuestName": "Woodsman2",
                 "Difficulty": 2,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "OakTree", "quantity": 100}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "OakTree", "quantity": 100}]
             },
             "It's Just a Plank, Bro!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -717,10 +683,8 @@
                 ],
                 "QuestName": "Woodsman3",
                 "Difficulty": 3,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "OakTree", "quantity": 1000}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "OakTree", "quantity": 1000}]
             },
             "Exotic Pranks... I mean Logs!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -730,16 +694,11 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 13,
-                "Rewards": [
-                    {"item": "NPCtoken5", "quantity": 1},
-                    {"type": "Choppin", "amount": 1000}
-                ],
+                "Rewards": [{"item": "NPCtoken5", "quantity": 1}, {"type": "Choppin", "amount": 1000}],
                 "QuestName": "Woodsman4",
                 "Difficulty": 5,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "ForestTree", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "ForestTree", "quantity": 1}]
             }
         },
         "dialogue": [
@@ -863,11 +822,9 @@
                 ],
                 "QuestName": "Scripticus2",
                 "Difficulty": 2,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Scripticus2",
-                "CustomArray": [
-                    {"desc": "Defeat Green Spores:", "finalV": 5, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Defeat Green Spores:", "finalV": 5, "type": "GreaterEqual", "startV": 0}]
             },
             "Gear Up, Gamer!": {
                 "Type": "Custom",
@@ -883,9 +840,7 @@
                 ],
                 "QuestName": "Scripticus3",
                 "Difficulty": 1,
-                "note": {
-                    "note": "If you've accidentally sold the {{CraftReq|Crimson String}}, you can reclaim it from the quest codex."
-                },
+                "note": "If you've accidentally sold the {{CraftReq|Crimson String}}, you can reclaim it from the quest codex.",
                 "CustomType": "Scripticus3",
                 "CustomArray": [
                     {"desc": "Craft Boxing Gloves:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -907,13 +862,9 @@
                 ],
                 "QuestName": "Scripticus4",
                 "Difficulty": 3,
-                "note": {
-                    "note": " Map 2 is the third Grasslands zone, [[Worlds#G3 - Froggy Fields|Froggy Fields]]."
-                },
+                "note": " Map 2 is the third Grasslands zone, [[Worlds#G3 - Froggy Fields|Froggy Fields]].",
                 "CustomType": "Scripticus4",
-                "CustomArray": [
-                    {"desc": "Discover map 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Discover map 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "The Choice is Yours!": {
                 "Type": "Custom",
@@ -923,17 +874,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 18,
-                "Rewards": [
-                    {"coins": 125},
-                    {"type": "Class", "amount": 20}
-                ],
+                "Rewards": [{"coins": 125}, {"type": "Class", "amount": 20}],
                 "QuestName": "Scripticus5",
                 "Difficulty": 1,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Scripticus5",
-                "CustomArray": [
-                    {"desc": "Spend Talent Points:", "finalV": 5, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Spend Talent Points:", "finalV": 5, "type": "GreaterEqual", "startV": 0}]
             },
             "Certified Swinger, of Pickaxes of course!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -950,10 +896,8 @@
                 ],
                 "QuestName": "Scripticus6",
                 "Difficulty": 3,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Quest1", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Quest1", "quantity": 1}]
             },
             "The Smithing Grind": {
                 "Type": "Custom",
@@ -970,9 +914,7 @@
                 ],
                 "QuestName": "Scripticus7",
                 "Difficulty": 2,
-                "note": {
-                    "note": "Crafting the required items before accepting the quest will not reward the player with completion progress."
-                },
+                "note": "Crafting the required items before accepting the quest will not reward the player with completion progress.",
                 "CustomType": "Scripticus7",
                 "CustomArray": [
                     {"desc": "Farmer Brim Crafted:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -994,12 +936,8 @@
                 ],
                 "QuestName": "Scripticus8",
                 "Difficulty": 4,
-                "note": {
-                    "note": "There are '''TWO''' {{CraftReq|Golden Jam}} items. You want the {{CraftReq|Golden Jam (Quest)}} item for this."
-                },
-                "ItemReq": [
-                    {"item": "Quest5", "quantity": 1}
-                ]
+                "note": "There are '''TWO''' {{CraftReq|Golden Jam}} items. You want the {{CraftReq|Golden Jam (Quest)}} item for this.",
+                "ItemReq": [{"item": "Quest5", "quantity": 1}]
             },
             "Seeking Foreign Aid": {
                 "Type": "ItemsAndSpaceRequired",
@@ -1016,10 +954,8 @@
                 ],
                 "QuestName": "Scripticus9",
                 "Difficulty": 5,
-                "note": {"note": "[[Stiltzcho]] rewards you with the report upon completing his first 3 quests."},
-                "ItemReq": [
-                    {"item": "Quest6", "quantity": 1}
-                ]
+                "note": "[[Stiltzcho]] rewards you with the report upon completing his first 3 quests.",
+                "ItemReq": [{"item": "Quest6", "quantity": 1}]
             },
             "What Lies at the Heart of the Forest": {
                 "Type": "Custom",
@@ -1036,13 +972,9 @@
                 ],
                 "QuestName": "Scripticus10",
                 "Difficulty": 2,
-                "note": {
-                    "note": "The 'Forest Camp' is the second area of the forest, where you can find the entrance to the [[Amarok]] boss fight."
-                },
+                "note": "The 'Forest Camp' is the second area of the forest, where you can find the entrance to the [[Amarok]] boss fight.",
                 "CustomType": "Scripticus10",
-                "CustomArray": [
-                    {"desc": "Forest Camp Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Forest Camp Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "The Bigger they are, the Bigger they Fall!": {
                 "Type": "Custom",
@@ -1059,9 +991,7 @@
                 ],
                 "QuestName": "Scripticus11",
                 "Difficulty": 3,
-                "note": {
-                    "note": "[[Amarok|The boss]] is located to the far right in [[Worlds#F2 - Encroaching Forest Villas|Encroaching Forest Villas]]. You need to complete [[Dog Bone (NPC)|Dog Bone]]'s quest to get the keys required to enter the [[Amarok|boss]] zone."
-                },
+                "note": "[[Amarok|The boss]] is located to the far right in [[Worlds#F2 - Encroaching Forest Villas|Encroaching Forest Villas]]. You need to complete [[Dog Bone (NPC)|Dog Bone]]'s quest to get the keys required to enter the [[Amarok|boss]] zone.",
                 "CustomType": "Scripticus11",
                 "CustomArray": [
                     {"desc": "Wolf Golem Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -1076,14 +1006,10 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 48,
-                "Rewards": [
-                    {"item": "Trophy6", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Trophy6", "quantity": 1}],
                 "QuestName": "Scripticus12",
                 "Difficulty": 9,
-                "note": {
-                    "note": "The Scripticus gives you all the 3 recipes for the tokens and also the 3 recipes which are needed to craft the [[Blunderhills NPC Completion Token]] ([[Easy Blunderhills NPC Token|Easy]], [[Med Blunderhills NPC Token|Med]], [[Hard Blunderhills NPC Token|Hard]])"
-                },
+                "note": "The Scripticus gives you all the 3 recipes for the tokens and also the 3 recipes which are needed to craft the [[Blunderhills NPC Completion Token]] ([[Easy Blunderhills NPC Token|Easy]], [[Med Blunderhills NPC Token|Med]], [[Hard Blunderhills NPC Token|Hard]])",
                 "ItemReq": [
                     {"item": "BadgeG1", "quantity": 1},
                     {"item": "BadgeG2", "quantity": 1},
@@ -1105,7 +1031,7 @@
                 ],
                 "QuestName": "Scripticus13",
                 "Difficulty": 2,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Scripticus13",
                 "CustomArray": [
                     {"desc": "2nd Character Created:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -1475,11 +1401,8 @@
                 ],
                 "QuestName": "Krunk1",
                 "Difficulty": 2,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Iron", "quantity": 200},
-                    {"item": "FoodPotMana1", "quantity": 50}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Iron", "quantity": 200}, {"item": "FoodPotMana1", "quantity": 50}]
             },
             "The Scientific Method, According to a Rock": {
                 "Type": "ItemsAndSpaceRequired",
@@ -1496,7 +1419,7 @@
                 ],
                 "QuestName": "Krunk2",
                 "Difficulty": 4,
-                "note": {"note": ""},
+                "note": "",
                 "ItemReq": [
                     {"item": "Gold", "quantity": 200},
                     {"item": "IronBar", "quantity": 100},
@@ -1517,9 +1440,7 @@
                 ],
                 "QuestName": "Krunk3",
                 "Difficulty": 5,
-                "note": {
-                    "note": "You unlock a bridge at the top of the screen next to the portal that connects directly to the gold ores."
-                },
+                "note": "You unlock a bridge at the top of the screen next to the portal that connects directly to the gold ores.",
                 "ItemReq": [
                     {"item": "BirchTree", "quantity": 1200},
                     {"item": "CraftMat5", "quantity": 300},
@@ -1647,16 +1568,11 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "OilBarrel4", "quantity": 1},
-                    {"type": "Mining", "amount": 10}
-                ],
+                "Rewards": [{"item": "OilBarrel4", "quantity": 1}, {"type": "Mining", "amount": 10}],
                 "QuestName": "Glumlee1",
                 "Difficulty": 1,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Copper", "quantity": 5}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Copper", "quantity": 5}]
             },
             "Learning to Smelt": {
                 "Type": "ItemsAndSpaceRequired",
@@ -1666,16 +1582,11 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 7,
-                "Rewards": [
-                    {"item": "OilBarrel1", "quantity": 10},
-                    {"type": "Mining", "amount": 20}
-                ],
+                "Rewards": [{"item": "OilBarrel1", "quantity": 10}, {"type": "Mining", "amount": 20}],
                 "QuestName": "Glumlee2",
                 "Difficulty": 2,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "CopperBar", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "CopperBar", "quantity": 1}]
             },
             "Literally Burning your Money": {
                 "Type": "Custom",
@@ -1692,11 +1603,9 @@
                 ],
                 "QuestName": "Glumlee3",
                 "Difficulty": 1,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Glumlee3",
-                "CustomArray": [
-                    {"desc": "Upgrades Bought:", "finalV": 3, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Upgrades Bought:", "finalV": 3, "type": "GreaterEqual", "startV": 0}]
             },
             "The Impossible Task": {
                 "Type": "ItemsAndSpaceRequired",
@@ -1712,10 +1621,8 @@
                 ],
                 "QuestName": "Glumlee4",
                 "Difficulty": 7,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Quest16", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Quest16", "quantity": 1}]
             },
             "He's Havin' a Bad Day": {
                 "Type": "ItemsAndSpaceRequired",
@@ -1725,16 +1632,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 25,
-                "Rewards": [
-                    {"item": "NPCtoken6", "quantity": 1},
-                    {"type": "Mining", "amount": 1000}
-                ],
+                "Rewards": [{"item": "NPCtoken6", "quantity": 1}, {"type": "Mining", "amount": 1000}],
                 "QuestName": "Glumlee5",
                 "Difficulty": 2,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Quest16", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Quest16", "quantity": 1}]
             }
         },
         "dialogue": [
@@ -1918,16 +1820,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "MaxCapBag6", "quantity": 1},
-                    {"coins": 300}
-                ],
+                "Rewards": [{"item": "MaxCapBag6", "quantity": 1}, {"coins": 300}],
                 "QuestName": "Picnic Stowaway1",
                 "Difficulty": 2,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "FoodHealth1", "quantity": 50}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "FoodHealth1", "quantity": 50}]
             },
             "Beating Up Frogs for some Sauce": {
                 "Type": "ItemsAndSpaceRequired",
@@ -1943,11 +1840,8 @@
                 ],
                 "QuestName": "Picnic Stowaway2",
                 "Difficulty": 3,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Quest3", "quantity": 3},
-                    {"item": "Quest4", "quantity": 3}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Quest3", "quantity": 3}, {"item": "Quest4", "quantity": 3}]
             },
             "Live-Action Entertainment": {
                 "Type": "Custom",
@@ -1964,11 +1858,9 @@
                 ],
                 "QuestName": "Picnic Stowaway3",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Picnic Stowaway3",
-                "CustomArray": [
-                    {"desc": "Mushrooms Defeated:", "finalV": 10, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Mushrooms Defeated:", "finalV": 10, "type": "GreaterEqual", "startV": 0}]
             },
             "The Most Important Meal of the Day": {
                 "Type": "ItemsAndSpaceRequired",
@@ -1978,17 +1870,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 22,
-                "Rewards": [
-                    {"item": "FoodG1", "quantity": 1},
-                    {"item": "FoodPotRe2", "quantity": 25}
-                ],
+                "Rewards": [{"item": "FoodG1", "quantity": 1}, {"item": "FoodPotRe2", "quantity": 25}],
                 "QuestName": "Picnic Stowaway4",
                 "Difficulty": 2,
-                "note": {"note": "Daily Quest"},
-                "ItemReq": [
-                    {"item": "Grasslands2", "quantity": 200},
-                    {"item": "Grasslands3", "quantity": 100}
-                ]
+                "note": "Daily Quest",
+                "ItemReq": [{"item": "Grasslands2", "quantity": 200}, {"item": "Grasslands3", "quantity": 100}]
             },
             "Brunchin' with the Blobs": {
                 "Type": "ItemsAndSpaceRequired",
@@ -2005,9 +1891,7 @@
                 ],
                 "QuestName": "Picnic Stowaway5",
                 "Difficulty": 3,
-                "note": {
-                    "note": "Daily Quest. The first time you start this quest, the recipe for the Peanut drops."
-                },
+                "note": "Daily Quest. The first time you start this quest, the recipe for the Peanut drops.",
                 "ItemReq": [
                     {"item": "Peanut", "quantity": 100},
                     {"item": "BirchTree", "quantity": 1500},
@@ -2029,9 +1913,7 @@
                 ],
                 "QuestName": "Picnic Stowaway6",
                 "Difficulty": 4,
-                "note": {
-                    "note": "Daily Quest. You must complete this quest for the 'Escapin' the 'Laws' daily [[Tasks|Task]]."
-                },
+                "note": "Daily Quest. You must complete this quest for the 'Escapin' the 'Laws' daily [[Tasks|Task]].",
                 "ItemReq": [
                     {"item": "OilBarrel1", "quantity": 200},
                     {"item": "IronBar", "quantity": 100},
@@ -2053,9 +1935,7 @@
                 ],
                 "QuestName": "Picnic Stowaway7",
                 "Difficulty": 4,
-                "note": {
-                    "note": "Daily Quest. There is a [[Sandy Pot]] at [[Carrotman|Carrotmen]]. Kill it, pick up the teacup and run back to Picnic Stowaway."
-                },
+                "note": "Daily Quest. There is a [[Sandy Pot]] at [[Carrotman|Carrotmen]]. Kill it, pick up the teacup and run back to Picnic Stowaway.",
                 "CustomType": "Picnic Stowaway7",
                 "CustomArray": [
                     {"desc": "Teacup Retrieved:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -2078,11 +1958,8 @@
                 ],
                 "QuestName": "Picnic Stowaway8",
                 "Difficulty": 5,
-                "note": {"note": "Daily Quest"},
-                "ItemReq": [
-                    {"item": "EquipmentHats18", "quantity": 1},
-                    {"item": "FoodHealth6", "quantity": 500}
-                ]
+                "note": "Daily Quest",
+                "ItemReq": [{"item": "EquipmentHats18", "quantity": 1}, {"item": "FoodHealth6", "quantity": 500}]
             },
             "The Last Supper, at Least for Today!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -2099,10 +1976,8 @@
                 ],
                 "QuestName": "Picnic Stowaway9",
                 "Difficulty": 5,
-                "note": {"note": "Daily Quest"},
-                "ItemReq": [
-                    {"item": "Meatloaf", "quantity": 1}
-                ]
+                "note": "Daily Quest",
+                "ItemReq": [{"item": "Meatloaf", "quantity": 1}]
             },
             "Don't Desert the Dessert": {
                 "Type": "ItemsAndSpaceRequired",
@@ -2119,10 +1994,8 @@
                 ],
                 "QuestName": "Picnic Stowaway10",
                 "Difficulty": 5,
-                "note": {"note": "Daily Quest. Nuget Cakes drop from [[Crabcake|Crabcakes]]"},
-                "ItemReq": [
-                    {"item": "DesertA3b", "quantity": 2}
-                ]
+                "note": "Daily Quest. Nuget Cakes drop from [[Crabcake|Crabcakes]]",
+                "ItemReq": [{"item": "DesertA3b", "quantity": 2}]
             },
             "A Midnight Snack": {
                 "Type": "ItemsAndSpaceRequired",
@@ -2139,10 +2012,8 @@
                 ],
                 "QuestName": "Picnic Stowaway11",
                 "Difficulty": 6,
-                "note": {"note": "Daily Quest"},
-                "ItemReq": [
-                    {"item": "MidnightCookie", "quantity": 2}
-                ]
+                "note": "Daily Quest",
+                "ItemReq": [{"item": "MidnightCookie", "quantity": 2}]
             },
             "King of Food": {
                 "Type": "ItemsAndSpaceRequired",
@@ -2152,15 +2023,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 48,
-                "Rewards": [
-                    {"item": "Trophy1", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Trophy1", "quantity": 1}],
                 "QuestName": "Picnic Stowaway12",
                 "Difficulty": 8,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Quest9", "quantity": 30}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Quest9", "quantity": 30}]
             }
         },
         "dialogue": [
@@ -2487,16 +2354,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"item": "StampA4", "quantity": 1},
-                    {"type": "Choppin", "amount": 100}
-                ],
+                "Rewards": [{"item": "StampA4", "quantity": 1}, {"type": "Choppin", "amount": 100}],
                 "QuestName": "Hamish1",
                 "Difficulty": 2,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "EquipmentToolsHatchet3", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "EquipmentToolsHatchet3", "quantity": 1}]
             },
             "Should We Tell Him?": {
                 "Type": "ItemsAndSpaceRequired",
@@ -2513,10 +2375,8 @@
                 ],
                 "QuestName": "Hamish2",
                 "Difficulty": 2,
-                "note": {"note": "Recipe drops from this NPC before quest."},
-                "ItemReq": [
-                    {"item": "EquipmentHats8", "quantity": 1}
-                ]
+                "note": "Recipe drops from this NPC before quest.",
+                "ItemReq": [{"item": "EquipmentHats8", "quantity": 1}]
             },
             "Slime for Storage": {
                 "Type": "ItemsAndSpaceRequired",
@@ -2532,10 +2392,8 @@
                 ],
                 "QuestName": "Hamish3",
                 "Difficulty": 4,
-                "note": {"note": "Requires level 7 choppin to start this quest."},
-                "ItemReq": [
-                    {"item": "Jungle1", "quantity": 50}
-                ]
+                "note": "Requires level 7 choppin to start this quest.",
+                "ItemReq": [{"item": "Jungle1", "quantity": 50}]
             }
         },
         "dialogue": [
@@ -2698,16 +2556,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"type": "Class", "amount": 150}
-                ],
+                "Rewards": [{"type": "Class", "amount": 150}],
                 "QuestName": "Mr Pigibank1",
                 "Difficulty": 2,
-                "note": {"note": " The Stamp Thief is Hamish found at the bottom right of the frogs area"},
+                "note": " The Stamp Thief is Hamish found at the bottom right of the frogs area",
                 "CustomType": "Mr Pigibank1",
-                "CustomArray": [
-                    {"desc": "Stamp Thief Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Stamp Thief Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -2806,17 +2660,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"coins": 500},
-                    {"item": "rtt0", "quantity": 5}
-                ],
+                "Rewards": [{"coins": 500}, {"item": "rtt0", "quantity": 5}],
                 "QuestName": "Promotheus1",
                 "Difficulty": 2,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Promotheus1",
-                "CustomArray": [
-                    {"desc": "Achieve Level 10:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Achieve Level 10:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Three Right Answers": {
                 "Type": "Custom",
@@ -2833,11 +2682,9 @@
                 ],
                 "QuestName": "Promotheus2",
                 "Difficulty": 1,
-                "note": {"note": "This quest can also be completed if you're a journeyman."},
+                "note": "This quest can also be completed if you're a journeyman.",
                 "CustomType": "Promotheus2",
-                "CustomArray": [
-                    {"desc": "Select a New Class:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Select a New Class:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Slovakian Scare": {
                 "Type": "Custom",
@@ -2854,13 +2701,9 @@
                 ],
                 "QuestName": "Promotheus3",
                 "Difficulty": 5,
-                "note": {
-                    "note": "[[Baba Yaga]] spawns at the top of each hour (xx:00) in the Birch Grove (portal just below Promotheus, next to the Birch Tree). See the [[Baba Yaga]] page for more information. "
-                },
+                "note": "[[Baba Yaga]] spawns at the top of each hour (xx:00) in the Birch Grove (portal just below Promotheus, next to the Birch Tree). See the [[Baba Yaga]] page for more information. ",
                 "CustomType": "Promotheus3",
-                "CustomArray": [
-                    {"desc": "House Monster Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "House Monster Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "The Witcher, but not Really": {
                 "Type": "Custom",
@@ -2870,19 +2713,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 21,
-                "Rewards": [
-                    {"item": "InvBag4", "quantity": 1},
-                    {"item": "ExpBalloon1", "quantity": 2}
-                ],
+                "Rewards": [{"item": "InvBag4", "quantity": 1}, {"item": "ExpBalloon1", "quantity": 2}],
                 "QuestName": "Promotheus4",
                 "Difficulty": 5,
-                "note": {
-                    "note": "[[Baba Yaga]] spawns at the top of each hour (xx:00) in the Birch Grove (portal just below Promotheus, next to the Birch Tree). See the [[Baba Yaga]] page for more information. "
-                },
+                "note": "[[Baba Yaga]] spawns at the top of each hour (xx:00) in the Birch Grove (portal just below Promotheus, next to the Birch Tree). See the [[Baba Yaga]] page for more information. ",
                 "CustomType": "Promotheus4",
-                "CustomArray": [
-                    {"desc": "Baba Yaga Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Baba Yaga Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -3059,18 +2895,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 2,
-                "Rewards": [
-                    {"item": "StoneZ1", "quantity": 1},
-                    {"coins": 777}
-                ],
+                "Rewards": [{"item": "StoneZ1", "quantity": 1}, {"coins": 777}],
                 "QuestName": "Bushlyte1",
                 "Difficulty": 1,
-                "note": {
-                    "note": "Get this quest by dropping a {{CraftReq|Peanut}} on the bush in Vegetable Patch."
-                },
-                "ItemReq": [
-                    {"item": "Peanut", "quantity": 50}
-                ]
+                "note": "Get this quest by dropping a {{CraftReq|Peanut}} on the bush in Vegetable Patch.",
+                "ItemReq": [{"item": "Peanut", "quantity": 50}]
             },
             "Honk if you Love Peanuts!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -3080,16 +2909,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 5,
-                "Rewards": [
-                    {"item": "StoneZ1", "quantity": 2},
-                    {"coins": 1500}
-                ],
+                "Rewards": [{"item": "StoneZ1", "quantity": 2}, {"coins": 1500}],
                 "QuestName": "Bushlyte2",
                 "Difficulty": 2,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Peanut", "quantity": 200}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Peanut", "quantity": 200}]
             },
             "A Peanut Saved is a Peanut not Eaten!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -3106,12 +2930,8 @@
                 ],
                 "QuestName": "Bushlyte3",
                 "Difficulty": 3,
-                "note": {
-                    "note": "Drop the {{CraftReq|Stone Peanut}} at the [[Rocklyte]] to start the final part of the questline."
-                },
-                "ItemReq": [
-                    {"item": "Peanut", "quantity": 400}
-                ]
+                "note": "Drop the {{CraftReq|Stone Peanut}} at the [[Rocklyte]] to start the final part of the questline.",
+                "ItemReq": [{"item": "Peanut", "quantity": 400}]
             }
         },
         "dialogue": [
@@ -3219,12 +3039,8 @@
                 ],
                 "QuestName": "Rocklyte1",
                 "Difficulty": 3,
-                "note": {
-                    "note": "Drop the {{CraftReq|Stone Peanut}} at the rock on the bottom right side of Froggy Fields"
-                },
-                "ItemReq": [
-                    {"item": "Peanut", "quantity": 500}
-                ]
+                "note": "Drop the {{CraftReq|Stone Peanut}} at the rock on the bottom right side of Froggy Fields",
+                "ItemReq": [{"item": "Peanut", "quantity": 500}]
             },
             "If Life Gives you Peanuts, make Shiny Peanuts!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -3234,16 +3050,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "StoneZ1", "quantity": 1},
-                    {"type": "Class", "amount": 5000}
-                ],
+                "Rewards": [{"item": "StoneZ1", "quantity": 1}, {"type": "Class", "amount": 5000}],
                 "QuestName": "Rocklyte2",
                 "Difficulty": 4,
-                "note": {"note": "This quest gives the recipe for Golden Peanut"},
-                "ItemReq": [
-                    {"item": "PeanutG", "quantity": 5}
-                ]
+                "note": "This quest gives the recipe for Golden Peanut",
+                "ItemReq": [{"item": "PeanutG", "quantity": 5}]
             },
             "Becoming the Best Beginner": {
                 "Type": "Custom",
@@ -3253,17 +3064,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 9,
-                "Rewards": [
-                    {"item": "Trophy3", "quantity": 1},
-                    {"item": "TalentBook1", "quantity": 361650}
-                ],
+                "Rewards": [{"item": "Trophy3", "quantity": 1}, {"item": "TalentBook1", "quantity": 361650}],
                 "QuestName": "Rocklyte3",
                 "Difficulty": 1,
-                "note": {"note": "This quest can only be completed by a beginner (no class chosen)"},
+                "note": "This quest can only be completed by a beginner (no class chosen)",
                 "CustomType": "Rocklyte3",
-                "CustomArray": [
-                    {"desc": "Become a Journeyman:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Become a Journeyman:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -3351,15 +3157,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 50},
-                    {"item": "Timecandy4", "quantity": 4}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 50}, {"item": "Timecandy4", "quantity": 4}],
                 "QuestName": "Cactolyte1",
                 "Difficulty": 4,
-                "note": {
-                    "note": "Get this quest by dropping a {{CraftReq|Bag o Nuts}} on the cactus in Djonnuttown."
-                },
+                "note": "Get this quest by dropping a {{CraftReq|Bag o Nuts}} on the cactus in Djonnuttown.",
                 "CustomType": "Cactolyte1",
                 "CustomArray": [
                     {"desc": "Mining Lv", "finalV": 32, "type": "GreaterEqual", "startV": 0},
@@ -3375,12 +3176,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 9,
-                "Rewards": [
-                    {"item": "Timecandy5", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Timecandy5", "quantity": 1}],
                 "QuestName": "Cactolyte2",
                 "Difficulty": 6,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Cactolyte2",
                 "CustomArray": [
                     {"desc": "Fishing Lv", "finalV": 23, "type": "GreaterEqual", "startV": 0},
@@ -3403,12 +3202,8 @@
                 ],
                 "QuestName": "Cactolyte3",
                 "Difficulty": 5,
-                "note": {
-                    "note": "You need at least 594 defense to take 0 damage from Biggie Hours. Defeating him outside the colosseum using Googley Eyes also grants quest completion."
-                },
-                "ItemReq": [
-                    {"item": "Quest48", "quantity": 1}
-                ]
+                "note": "You need at least 594 defense to take 0 damage from Biggie Hours. Defeating him outside the colosseum using Googley Eyes also grants quest completion.",
+                "ItemReq": [{"item": "Quest48", "quantity": 1}]
             },
             "Maestro! The Stro! Mman!": {
                 "Type": "Custom",
@@ -3418,16 +3213,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 16,
-                "Rewards": [
-                    {"item": "Trophy13", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Trophy13", "quantity": 1}],
                 "QuestName": "Cactolyte4",
                 "Difficulty": 1,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Cactolyte4",
-                "CustomArray": [
-                    {"desc": "Become a Maestro:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Become a Maestro:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -3569,7 +3360,7 @@
                 ],
                 "QuestName": "Stiltzcho1",
                 "Difficulty": 3,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Stiltzcho1",
                 "CustomArray": [
                     {"desc": "Slimes Defeated", "finalV": 10, "type": "GreaterEqual", "startV": 0},
@@ -3591,10 +3382,8 @@
                 ],
                 "QuestName": "Stiltzcho2",
                 "Difficulty": 3,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Quest7", "quantity": 4}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Quest7", "quantity": 4}]
             },
             "Investigator by Day, Prankster by Night": {
                 "Type": "ItemsAndSpaceRequired",
@@ -3611,11 +3400,8 @@
                 ],
                 "QuestName": "Stiltzcho3",
                 "Difficulty": 4,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Jungle3", "quantity": 2},
-                    {"item": "BirchTree", "quantity": 3}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Jungle3", "quantity": 2}, {"item": "BirchTree", "quantity": 3}]
             },
             "Time Crime Episode 1": {
                 "Type": "Custom",
@@ -3625,19 +3411,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 24,
-                "Rewards": [
-                    {"item": "Timecandy2", "quantity": 1},
-                    {"type": "Class", "amount": 4000}
-                ],
+                "Rewards": [{"item": "Timecandy2", "quantity": 1}, {"type": "Class", "amount": 4000}],
                 "QuestName": "Stiltzcho4",
                 "Difficulty": 2,
-                "note": {
-                    "note": "AFK at the [[Green Mushroom]] map for a total of 4 hours. The time spent AFK does not have to be all in one go."
-                },
+                "note": "AFK at the [[Green Mushroom]] map for a total of 4 hours. The time spent AFK does not have to be all in one go.",
                 "CustomType": "Stiltzcho4",
-                "CustomArray": [
-                    {"desc": "AFK at Spores:", "finalV": 14400, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "AFK at Spores:", "finalV": 14400, "type": "GreaterEqual", "startV": 0}]
             },
             "Time Crime Episode 2": {
                 "Type": "Custom",
@@ -3647,17 +3426,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 27,
-                "Rewards": [
-                    {"item": "Timecandy3", "quantity": 1},
-                    {"type": "Class", "amount": 4000}
-                ],
+                "Rewards": [{"item": "Timecandy3", "quantity": 1}, {"type": "Class", "amount": 4000}],
                 "QuestName": "Stiltzcho5",
                 "Difficulty": 2,
-                "note": {"note": "The time spent AFK does not have to be all in one go."},
+                "note": "The time spent AFK does not have to be all in one go.",
                 "CustomType": "Stiltzcho5",
-                "CustomArray": [
-                    {"desc": "AFK at Frogs:", "finalV": 28800, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "AFK at Frogs:", "finalV": 28800, "type": "GreaterEqual", "startV": 0}]
             },
             "Time Crime Season Finale": {
                 "Type": "Custom",
@@ -3674,11 +3448,9 @@
                 ],
                 "QuestName": "Stiltzcho6",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Stiltzcho6",
-                "CustomArray": [
-                    {"desc": "AFK at Slimes:", "finalV": 57600, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "AFK at Slimes:", "finalV": 57600, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -3923,7 +3695,7 @@
                 ],
                 "QuestName": "Funguy1",
                 "Difficulty": 3,
-                "note": {"note": "The [[Peanut]] recipe comes from [[Picnic Stowaway]]."},
+                "note": "The [[Peanut]] recipe comes from [[Picnic Stowaway]].",
                 "ItemReq": [
                     {"item": "Peanut", "quantity": 100},
                     {"item": "FoodHealth2", "quantity": 25},
@@ -3945,11 +3717,9 @@
                 ],
                 "QuestName": "Funguy2",
                 "Difficulty": 3,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Funguy2",
-                "CustomArray": [
-                    {"desc": "Choppin Score:", "finalV": 35, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Choppin Score:", "finalV": 35, "type": "GreaterEqual", "startV": 0}]
             },
             "Partycrastination": {
                 "Type": "ItemsAndSpaceRequired",
@@ -3965,10 +3735,8 @@
                 ],
                 "QuestName": "Funguy3",
                 "Difficulty": 6,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Quest21", "quantity": 250}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Quest21", "quantity": 250}]
             },
             "Party Crashin'": {
                 "Type": "Custom",
@@ -3985,9 +3753,7 @@
                 ],
                 "QuestName": "Funguy4",
                 "Difficulty": 4,
-                "note": {
-                    "note": "Kill the 35 spawned monsters. If you left the area before killing all 35 monsters, forfeit and re-accept the quest to spawn them again."
-                },
+                "note": "Kill the 35 spawned monsters. If you left the area before killing all 35 monsters, forfeit and re-accept the quest to spawn them again.",
                 "CustomType": "Funguy4",
                 "CustomArray": [
                     {"desc": "Meet New People:", "finalV": 35, "type": "GreaterEqual", "startV": 0},
@@ -4002,16 +3768,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 15,
-                "Rewards": [
-                    {"item": "NPCtoken9", "quantity": 1},
-                    {"item": "StoneW6", "quantity": 4}
-                ],
+                "Rewards": [{"item": "NPCtoken9", "quantity": 1}, {"item": "StoneW6", "quantity": 4}],
                 "QuestName": "Funguy5",
                 "Difficulty": 5,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "ToiletTree", "quantity": 10000}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "ToiletTree", "quantity": 10000}]
             }
         },
         "dialogue": [
@@ -4140,17 +3901,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "EquipmentStatues6", "quantity": 5},
-                    {"item": "FoodG1", "quantity": 3}
-                ],
+                "Rewards": [{"item": "EquipmentStatues6", "quantity": 5}, {"item": "FoodG1", "quantity": 3}],
                 "QuestName": "Tiki Chief1",
                 "Difficulty": 3,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Forest2", "quantity": 500},
-                    {"item": "CraftMat5", "quantity": 1000}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Forest2", "quantity": 500}, {"item": "CraftMat5", "quantity": 1000}]
             },
             "Three Strikes, you're Out!": {
                 "Type": "Custom",
@@ -4160,13 +3915,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 9,
-                "Rewards": [
-                    {"item": "StampC1", "quantity": 1},
-                    {"type": "Class", "amount": 7500}
-                ],
+                "Rewards": [{"item": "StampC1", "quantity": 1}, {"type": "Class", "amount": 7500}],
                 "QuestName": "Tiki Chief2",
                 "Difficulty": 3,
-                "note": {"note": "Drop the quest item in front of [[Krunk]], [[Funguy]] and [[Mr Pigibank]]"},
+                "note": "Drop the quest item in front of [[Krunk]], [[Funguy]] and [[Mr Pigibank]]",
                 "CustomType": "Tiki Chief2",
                 "CustomArray": [
                     {"desc": "Rich Guy Invited:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -4188,7 +3940,7 @@
                 ],
                 "QuestName": "Tiki Chief3",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Tiki Chief3",
                 "CustomArray": [
                     {"desc": "Goblins Defeated:", "finalV": 5000, "type": "GreaterEqual", "startV": 0},
@@ -4215,7 +3967,7 @@
                 ],
                 "QuestName": "Tiki Chief4",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Tiki Chief4",
                 "CustomArray": [
                     {"desc": "Boss Kills:", "finalV": 5, "type": "GreaterEqual", "startV": 0},
@@ -4355,15 +4107,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "Key1", "quantity": 3}
-                ],
+                "Rewards": [{"item": "Key1", "quantity": 3}],
                 "QuestName": "Dog Bone1",
                 "Difficulty": 2,
-                "note": {"note": "Complete this quest to earn daily keys."},
-                "ItemReq": [
-                    {"item": "Quest12", "quantity": 10}
-                ]
+                "note": "Complete this quest to earn daily keys.",
+                "ItemReq": [{"item": "Quest12", "quantity": 10}]
             },
             "Bow Wow going Dow..n!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -4373,16 +4121,11 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 15,
-                "Rewards": [
-                    {"item": "NPCtoken13", "quantity": 1},
-                    {"item": "Key1", "quantity": 5}
-                ],
+                "Rewards": [{"item": "NPCtoken13", "quantity": 1}, {"item": "Key1", "quantity": 5}],
                 "QuestName": "Dog Bone2",
                 "Difficulty": 3,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Quest17", "quantity": 25}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Quest17", "quantity": 25}]
             }
         },
         "dialogue": [
@@ -4517,16 +4260,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 2,
-                "Rewards": [
-                    {"item": "ExpBalloon1", "quantity": 2},
-                    {"coins": 2500}
-                ],
+                "Rewards": [{"item": "ExpBalloon1", "quantity": 2}, {"coins": 2500}],
                 "QuestName": "Builder Bird1",
                 "Difficulty": 4,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Crystal1", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Crystal1", "quantity": 1}]
             }
         },
         "dialogue": [
@@ -4566,16 +4304,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"item": "ExpBalloon2", "quantity": 3},
-                    {"coins": 250000}
-                ],
+                "Rewards": [{"item": "ExpBalloon2", "quantity": 3}, {"coins": 250000}],
                 "QuestName": "Constructor Crow1",
                 "Difficulty": 7,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Crystal2", "quantity": 1}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Crystal2", "quantity": 1}]
             }
         },
         "dialogue": [
@@ -4621,16 +4354,11 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 2},
-                    {"type": "Class", "amount": 2500}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 2}, {"type": "Class", "amount": 2500}],
                 "QuestName": "Papua Piggea1",
                 "Difficulty": 3,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "StampA8", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "StampA8", "quantity": 1}]
             },
             "Crystal Crime Stopper": {
                 "Type": "ItemsAndSpaceRequired",
@@ -4647,10 +4375,8 @@
                 ],
                 "QuestName": "Papua Piggea2",
                 "Difficulty": 4,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "StampC3", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "StampC3", "quantity": 1}]
             },
             "Stamp Collecting": {
                 "Type": "ItemsAndSpaceRequired",
@@ -4667,7 +4393,7 @@
                 ],
                 "QuestName": "Papua Piggea3",
                 "Difficulty": 6,
-                "note": {"note": ""},
+                "note": "",
                 "ItemReq": [
                     {"item": "StampA7", "quantity": 3},
                     {"item": "StampA3", "quantity": 5},
@@ -4689,11 +4415,9 @@
                 ],
                 "QuestName": "Papua Piggea4",
                 "Difficulty": 5,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Papua Piggea4",
-                "CustomArray": [
-                    {"desc": "Total Stamp Lv:", "finalV": 500, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Total Stamp Lv:", "finalV": 500, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -4823,7 +4547,7 @@
                 ],
                 "QuestName": "Desert Davey2",
                 "Difficulty": 4,
-                "note": {"note": ""},
+                "note": "",
                 "ItemReq": [
                     {"item": "TestObj7", "quantity": 1},
                     {"item": "EquipmentBows3", "quantity": 1},
@@ -4899,7 +4623,7 @@
                 ],
                 "QuestName": "Mutton1",
                 "Difficulty": 4,
-                "note": {"note": ""},
+                "note": "",
                 "ItemReq": [
                     {"item": "EquipmentHats5", "quantity": 1},
                     {"item": "EquipmentPants10", "quantity": 1},
@@ -4914,16 +4638,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 7,
-                "Rewards": [
-                    {"item": "StampA14", "quantity": 1},
-                    {"item": "Timecandy1", "quantity": 1}
-                ],
+                "Rewards": [{"item": "StampA14", "quantity": 1}, {"item": "Timecandy1", "quantity": 1}],
                 "QuestName": "Mutton2",
                 "Difficulty": 3,
-                "note": {"note": "Need level 21"},
-                "ItemReq": [
-                    {"item": "Quest22", "quantity": 300}
-                ]
+                "note": "Need level 21",
+                "ItemReq": [{"item": "Quest22", "quantity": 300}]
             },
             "Cross Platform Promotion": {
                 "Type": "ItemsAndSpaceRequired",
@@ -4933,17 +4652,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 10,
-                "Rewards": [
-                    {"item": "StampA16", "quantity": 1},
-                    {"item": "PremiumGem", "quantity": 3}
-                ],
+                "Rewards": [{"item": "StampA16", "quantity": 1}, {"item": "PremiumGem", "quantity": 3}],
                 "QuestName": "Mutton3",
                 "Difficulty": 5,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Quest22", "quantity": 5000},
-                    {"item": "Quest23", "quantity": 1000}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Quest22", "quantity": 5000}, {"item": "Quest23", "quantity": 1000}]
             },
             "7 Figure Followers": {
                 "Type": "ItemsAndSpaceRequired",
@@ -4960,7 +4673,7 @@
                 ],
                 "QuestName": "Mutton4",
                 "Difficulty": 8,
-                "note": {"note": ""},
+                "note": "",
                 "ItemReq": [
                     {"item": "Quest22", "quantity": 200000},
                     {"item": "Quest23", "quantity": 300000},
@@ -5095,11 +4808,8 @@
                 ],
                 "QuestName": "Speccius1",
                 "Difficulty": 3,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "FoodHealth6", "quantity": 130},
-                    {"item": "DesertA3", "quantity": 150}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "FoodHealth6", "quantity": 130}, {"item": "DesertA3", "quantity": 150}]
             },
             "Specialization Station": {
                 "Type": "Custom",
@@ -5109,16 +4819,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 8,
-                "Rewards": [
-                    {"coins": 10000}
-                ],
+                "Rewards": [{"coins": 10000}],
                 "QuestName": "Speccius2",
                 "Difficulty": 1,
-                "note": {"note": "This quest can also be completed if you're a journeyman."},
+                "note": "This quest can also be completed if you're a journeyman.",
                 "CustomType": "Speccius2",
-                "CustomArray": [
-                    {"desc": "Select a Sub Class:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Select a Sub Class:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -5243,16 +4949,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "StampB17", "quantity": 1},
-                    {"item": "Timecandy1", "quantity": 1}
-                ],
+                "Rewards": [{"item": "StampB17", "quantity": 1}, {"item": "Timecandy1", "quantity": 1}],
                 "QuestName": "Fishpaste971",
                 "Difficulty": 3,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Bug2", "quantity": 1500}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Bug2", "quantity": 1500}]
             },
             "Can you do the Can Can?": {
                 "Type": "Custom",
@@ -5269,11 +4970,9 @@
                 ],
                 "QuestName": "Fishpaste972",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Fishpaste972",
-                "CustomArray": [
-                    {"desc": "Cans In-a-row:", "finalV": 3, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Cans In-a-row:", "finalV": 3, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -5379,7 +5078,7 @@
                 ],
                 "QuestName": "Scubidew1",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "ItemReq": [
                     {"item": "Fish1", "quantity": 400},
                     {"item": "Fish2", "quantity": 100},
@@ -5394,15 +5093,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "Weight3", "quantity": 1},
-                    {"item": "StoneT2", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Weight3", "quantity": 1}, {"item": "StoneT2", "quantity": 2}],
                 "QuestName": "Scubidew2",
                 "Difficulty": 3,
-                "note": {
-                    "note": "A [[Barbarian]] with the Worming Undercover talent makes this quest easy. Non-Barbarians should equip Fishing boost food."
-                },
+                "note": "A [[Barbarian]] with the Worming Undercover talent makes this quest easy. Non-Barbarians should equip Fishing boost food.",
                 "CustomType": "Scubidew2",
                 "CustomArray": [
                     {"desc": "Fish Caught:", "finalV": 5, "type": "GreaterEqual", "startV": 0},
@@ -5423,10 +5117,8 @@
                 ],
                 "QuestName": "Scubidew3",
                 "Difficulty": 1,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Fish1", "quantity": 1}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Fish1", "quantity": 1}]
             }
         },
         "dialogue": [
@@ -5550,10 +5242,8 @@
                 ],
                 "QuestName": "Whattso1",
                 "Difficulty": 1,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Fish1", "quantity": 20}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Fish1", "quantity": 20}]
             },
             "The Whaley Hard Minigame": {
                 "Type": "Custom",
@@ -5570,11 +5260,9 @@
                 ],
                 "QuestName": "Whattso2",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Whattso2",
-                "CustomArray": [
-                    {"desc": "Fish Minigame Score:", "finalV": 10, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Fish Minigame Score:", "finalV": 10, "type": "GreaterEqual", "startV": 0}]
             },
             "Bobbin' Bobbers": {
                 "Type": "Custom",
@@ -5591,11 +5279,9 @@
                 ],
                 "QuestName": "Whattso3",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Whattso3",
-                "CustomArray": [
-                    {"desc": "Fishing Score Total:", "finalV": 50, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Fishing Score Total:", "finalV": 50, "type": "GreaterEqual", "startV": 0}]
             },
             "The Biggest Fish in the Sea...?": {
                 "Type": "Custom",
@@ -5612,11 +5298,9 @@
                 ],
                 "QuestName": "Whattso4",
                 "Difficulty": 6,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Whattso4",
-                "CustomArray": [
-                    {"desc": "Catch the Whale:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Catch the Whale:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -5703,10 +5387,8 @@
                 ],
                 "QuestName": "Postboy Pablob1",
                 "Difficulty": 6,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Quest13", "quantity": 5}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Quest13", "quantity": 5}]
             }
         },
         "dialogue": [
@@ -5788,10 +5470,8 @@
                 ],
                 "QuestName": "Bandit Bob1",
                 "Difficulty": 3,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Bullet", "quantity": 300}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Bullet", "quantity": 300}]
             },
             "Bob's Brand New Bandana": {
                 "Type": "ItemsAndSpaceRequired",
@@ -5807,10 +5487,8 @@
                 ],
                 "QuestName": "Bandit Bob2",
                 "Difficulty": 2,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "EquipmentHats9", "quantity": 1}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "EquipmentHats9", "quantity": 1}]
             },
             "Bringing Bob's Boxes": {
                 "Type": "Custom",
@@ -5820,22 +5498,17 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 15,
-                "Rewards": [
-                    {"item": "Quest20", "quantity": 1},
-                    {"item": "PremiumGem", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Quest20", "quantity": 1}, {"item": "PremiumGem", "quantity": 2}],
                 "QuestName": "Bandit Bob3",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Bandit Bob3",
-                "CustomArray": [
-                    {
-                        "desc": "Plan-It Express Orders:",
-                        "finalV": 2,
-                        "type": "GreaterEqual",
-                        "startV": 0
-                    }
-                ]
+                "CustomArray": [{
+                    "desc": "Plan-It Express Orders:",
+                    "finalV": 2,
+                    "type": "GreaterEqual",
+                    "startV": 0
+                }]
             },
             "The Desert Dungeon Prequest": {
                 "Type": "ItemsAndSpaceRequired",
@@ -5845,15 +5518,11 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 20,
-                "Rewards": [
-                    {"item": "NPCtoken16", "quantity": 1}
-                ],
+                "Rewards": [{"item": "NPCtoken16", "quantity": 1}],
                 "QuestName": "Bandit Bob4",
                 "Difficulty": 2,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Quest45", "quantity": 1}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Quest45", "quantity": 1}]
             }
         },
         "dialogue": [
@@ -6021,11 +5690,9 @@
                 ],
                 "QuestName": "Carpetiem1",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Carpetiem1",
-                "CustomArray": [
-                    {"desc": "Potato Kills:", "finalV": 750, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Potato Kills:", "finalV": 750, "type": "GreaterEqual", "startV": 0}]
             },
             "Old Timey Craftin'": {
                 "Type": "Custom",
@@ -6042,9 +5709,7 @@
                 ],
                 "QuestName": "Carpetiem2",
                 "Difficulty": 4,
-                "note": {
-                    "note": "Load up your inventory with the necessary materials before accepting the quest, then craft the bullets and turn the quest in. If you open your storage while the quest is active, forfeit and start over."
-                },
+                "note": "Load up your inventory with the necessary materials before accepting the quest, then craft the bullets and turn the quest in. If you open your storage while the quest is active, forfeit and start over.",
                 "CustomType": "Carpetiem2",
                 "CustomArray": [
                     {"desc": "Bullets Crafted:", "finalV": 225, "type": "GreaterEqual", "startV": 0},
@@ -6065,13 +5730,9 @@
                 ],
                 "QuestName": "Carpetiem3",
                 "Difficulty": 3,
-                "note": {
-                    "note": "Reclaim the [[Crimson String]] from your codex to craft a new pair of [[Boxing Gloves]]. Forfeit and start over if you need to respawn the monster."
-                },
+                "note": "Reclaim the [[Crimson String]] from your codex to craft a new pair of [[Boxing Gloves]]. Forfeit and start over if you need to respawn the monster.",
                 "CustomType": "Carpetiem3",
-                "CustomArray": [
-                    {"desc": "Epic KO:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Epic KO:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Helping 100 times over": {
                 "Type": "Custom",
@@ -6088,11 +5749,9 @@
                 ],
                 "QuestName": "Carpetiem4",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Carpetiem4",
-                "CustomArray": [
-                    {"desc": "Players spoken to:", "finalV": 30, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Players spoken to:", "finalV": 30, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -6239,14 +5898,10 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"item": "Timecandy1", "quantity": 8}
-                ],
+                "Rewards": [{"item": "Timecandy1", "quantity": 8}],
                 "QuestName": "Djonnut1",
                 "Difficulty": 4,
-                "note": {
-                    "note": "The recipe for Icing Ironbite comes from [[Tasks]]. Average Mana Potions are dropped by Forest monsters and [[Amarok]]."
-                },
+                "note": "The recipe for Icing Ironbite comes from [[Tasks]]. Average Mana Potions are dropped by Forest monsters and [[Amarok]].",
                 "ItemReq": [
                     {"item": "FoodPotMana2", "quantity": 200},
                     {"item": "FoodMining1", "quantity": 600},
@@ -6261,14 +5916,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "Key2", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Key2", "quantity": 2}],
                 "QuestName": "Djonnut2",
                 "Difficulty": 4,
-                "note": {
-                    "note": "Kill 10k [[Moonmoon|Moonmoons]] and gather 1 [[Ghost]] drop. Moonmoons killed/Ghosts collected before you start this quest do not count."
-                },
+                "note": "Kill 10k [[Moonmoon|Moonmoons]] and gather 1 [[Ghost]] drop. Moonmoons killed/Ghosts collected before you start this quest do not count.",
                 "CustomType": "Djonnut2",
                 "CustomArray": [
                     {"desc": "Moonmen Defeated:", "finalV": 10000, "type": "GreaterEqual", "startV": 0},
@@ -6283,13 +5934,10 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 14,
-                "Rewards": [
-                    {"item": "Key2", "quantity": 5},
-                    {"item": "NPCtoken25", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Key2", "quantity": 5}, {"item": "NPCtoken25", "quantity": 1}],
                 "QuestName": "Djonnut3",
                 "Difficulty": 4,
-                "note": {"note": "These are all monster drops from World 3."},
+                "note": "These are all monster drops from World 3.",
                 "ItemReq": [
                     {"item": "SnowA2", "quantity": 2500},
                     {"item": "SnowB1", "quantity": 2500},
@@ -6429,19 +6077,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 5,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 3},
-                    {"coins": 10000}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 3}, {"coins": 10000}],
                 "QuestName": "Goldric1",
                 "Difficulty": 2,
-                "note": {
-                    "note": "You need to have the [[Cowbo Jones]] quest 'Commence Criminal Crimes!' active in order to get this quest."
-                },
+                "note": "You need to have the [[Cowbo Jones]] quest 'Commence Criminal Crimes!' active in order to get this quest.",
                 "CustomType": "Goldric1",
-                "CustomArray": [
-                    {"desc": "Coins Collected:", "finalV": 15, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Coins Collected:", "finalV": 15, "type": "GreaterEqual", "startV": 0}]
             },
             "Hoopsies": {
                 "Type": "Custom",
@@ -6458,9 +6099,7 @@
                 ],
                 "QuestName": "Goldric2",
                 "Difficulty": 2,
-                "note": {
-                    "note": "'Hoopsies' refers to the [[Catching]] minigame. Completing either objective is enough to clear this quest."
-                },
+                "note": "'Hoopsies' refers to the [[Catching]] minigame. Completing either objective is enough to clear this quest.",
                 "CustomType": "Goldric2",
                 "CustomArray": [
                     {"desc": "Hoops In-A-Row:", "finalV": 15, "type": "GreaterEqual", "startV": 0},
@@ -6475,15 +6114,10 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 12,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 5},
-                    {"coins": 10000}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 5}, {"coins": 10000}],
                 "QuestName": "Goldric3",
                 "Difficulty": 3,
-                "note": {
-                    "note": "The paintings drop from [[Mimic|Mimics]], [[Mafioso|Mafiosos]] and [[Sand Castle|Sand Castles]]."
-                },
+                "note": "The paintings drop from [[Mimic|Mimics]], [[Mafioso|Mafiosos]] and [[Sand Castle|Sand Castles]].",
                 "ItemReq": [
                     {"item": "GoldricP1", "quantity": 200},
                     {"item": "GoldricP2", "quantity": 200},
@@ -6498,18 +6132,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 15,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 7},
-                    {"item": "StoneW6", "quantity": 2}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 7}, {"item": "StoneW6", "quantity": 2}],
                 "QuestName": "Goldric4",
                 "Difficulty": 5,
-                "note": {
-                    "note": "While you have this quest active and have the [[Alchemy#Level_up_Gift|Level Up Gift Alchemy Bubble]] equipped, [[Pre Crime Box|Pre Crime Boxes]] may drop. They don't do anything, you can safely sell them."
-                },
-                "ItemReq": [
-                    {"item": "Sewers1b", "quantity": 1}
-                ]
+                "note": "While you have this quest active and have the [[Alchemy#Level_up_Gift|Level Up Gift Alchemy Bubble]] equipped, [[Pre Crime Box|Pre Crime Boxes]] may drop. They don't do anything, you can safely sell them.",
+                "ItemReq": [{"item": "Sewers1b", "quantity": 1}]
             },
             "Dress to Impress": {
                 "Type": "Custom",
@@ -6526,11 +6153,9 @@
                 ],
                 "QuestName": "Goldric5",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Goldric5",
-                "CustomArray": [
-                    {"desc": "Wear All Gold", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Wear All Gold", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Dont lay a finger on my Sheepies!!!": {
                 "Type": "Custom",
@@ -6540,13 +6165,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 25,
-                "Rewards": [
-                    {"item": "NPCtoken21", "quantity": 1},
-                    {"item": "Timecandy5", "quantity": 1}
-                ],
+                "Rewards": [{"item": "NPCtoken21", "quantity": 1}, {"item": "Timecandy5", "quantity": 1}],
                 "QuestName": "Goldric6",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Goldric6",
                 "CustomArray": [
                     {"desc": "Defeat Sandcastles:", "finalV": 18, "type": "GreaterEqual", "startV": 0},
@@ -6762,16 +6384,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 25}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 25}],
                 "QuestName": "Meel1",
                 "Difficulty": 3,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Meel1",
-                "CustomArray": [
-                    {"desc": "Boops Bopped:", "finalV": 30, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Boops Bopped:", "finalV": 30, "type": "GreaterEqual", "startV": 0}]
             },
             "Waitin' for the Cards to Drop": {
                 "Type": "ItemsAndSpaceRequired",
@@ -6781,16 +6399,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 7,
-                "Rewards": [
-                    {"item": "EquipmentRings6", "quantity": 1},
-                    {"item": "StoneA3b", "quantity": 6}
-                ],
+                "Rewards": [{"item": "EquipmentRings6", "quantity": 1}, {"item": "StoneA3b", "quantity": 6}],
                 "QuestName": "Meel2",
                 "Difficulty": 7,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "Sewers3", "quantity": 777}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "Sewers3", "quantity": 777}]
             }
         },
         "dialogue": [
@@ -6894,16 +6507,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "StoneHelm6", "quantity": 3},
-                    {"item": "PremiumGem", "quantity": 6}
-                ],
+                "Rewards": [{"item": "StoneHelm6", "quantity": 3}, {"item": "PremiumGem", "quantity": 6}],
                 "QuestName": "Snake Jar1",
                 "Difficulty": 3,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "DesertA2", "quantity": 4200}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "DesertA2", "quantity": 4200}]
             },
             "Red Stuff Bad!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -6913,16 +6521,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 7,
-                "Rewards": [
-                    {"item": "InvStorage11", "quantity": 1},
-                    {"item": "Timecandy4", "quantity": 1}
-                ],
+                "Rewards": [{"item": "InvStorage11", "quantity": 1}, {"item": "Timecandy4", "quantity": 1}],
                 "QuestName": "Snake Jar2",
                 "Difficulty": 3,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "FoodPotRe1", "quantity": 8500}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "FoodPotRe1", "quantity": 8500}]
             },
             "PSA. You Are Being Eaten!": {
                 "Type": "Custom",
@@ -6939,7 +6542,7 @@
                 ],
                 "QuestName": "Snake Jar3",
                 "Difficulty": 4,
-                "note": {"note": "At 150 defense the damage is around 900 hp."},
+                "note": "At 150 defense the damage is around 900 hp.",
                 "CustomType": "Snake Jar3",
                 "CustomArray": [
                     {"desc": "Survive being Eaten:", "finalV": 4, "type": "GreaterEqual", "startV": 0},
@@ -6961,11 +6564,9 @@
                 ],
                 "QuestName": "Snake Jar4",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Snake Jar4",
-                "CustomArray": [
-                    {"desc": "Other players lured:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Other players lured:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -7088,10 +6689,8 @@
                 ],
                 "QuestName": "Loominadi1",
                 "Difficulty": 4,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Quest18", "quantity": 10}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Quest18", "quantity": 10}]
             },
             "Uh, Something About Vials?": {
                 "Type": "Custom",
@@ -7108,11 +6707,9 @@
                 ],
                 "QuestName": "Loominadi2",
                 "Difficulty": 5,
-                "note": {"note": "'Light Blue' means level 5."},
+                "note": "'Light Blue' means level 5.",
                 "CustomType": "Loominadi2",
-                "CustomArray": [
-                    {"desc": "Blue Alch Vials:", "finalV": 13, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Blue Alch Vials:", "finalV": 13, "type": "GreaterEqual", "startV": 0}]
             },
             "Journey to the Center of the Blundermines": {
                 "Type": "Custom",
@@ -7129,16 +6726,14 @@
                 ],
                 "QuestName": "Loominadi3",
                 "Difficulty": 5,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Loominadi3",
-                "CustomArray": [
-                    {
-                        "desc": "Reach Ol' Straightaway:",
-                        "finalV": 1,
-                        "type": "GreaterEqual",
-                        "startV": 0
-                    }
-                ]
+                "CustomArray": [{
+                    "desc": "Reach Ol' Straightaway:",
+                    "finalV": 1,
+                    "type": "GreaterEqual",
+                    "startV": 0
+                }]
             },
             "The Mummy of Mystery": {
                 "Type": "Custom",
@@ -7155,11 +6750,9 @@
                 ],
                 "QuestName": "Loominadi4",
                 "Difficulty": 7,
-                "note": {"note": "See [[King Doot]] for details on summoning this secret boss."},
+                "note": "See [[King Doot]] for details on summoning this secret boss.",
                 "CustomType": "Loominadi4",
-                "CustomArray": [
-                    {"desc": "Secret Boss Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Secret Boss Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -7294,13 +6887,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "StampB14", "quantity": 1},
-                    {"item": "StampA24", "quantity": 1}
-                ],
+                "Rewards": [{"item": "StampB14", "quantity": 1}, {"item": "StampA24", "quantity": 1}],
                 "QuestName": "Wellington1",
                 "Difficulty": 4,
-                "note": {"note": "See [[Secrets]] for more information."},
+                "note": "See [[Secrets]] for more information.",
                 "CustomType": "Wellington1",
                 "CustomArray": [
                     {"desc": "Platform 1 Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -7323,7 +6913,7 @@
                 ],
                 "QuestName": "Wellington2",
                 "Difficulty": 4,
-                "note": {"note": ""},
+                "note": "",
                 "ItemReq": [
                     {"item": "DesertC1", "quantity": 2500},
                     {"item": "DesertC2", "quantity": 2500},
@@ -7338,19 +6928,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 11,
-                "Rewards": [
-                    {"item": "StampC14", "quantity": 1},
-                    {"item": "ExpBalloon2", "quantity": 2}
-                ],
+                "Rewards": [{"item": "StampC14", "quantity": 1}, {"item": "ExpBalloon2", "quantity": 2}],
                 "QuestName": "Wellington3",
                 "Difficulty": 1,
-                "note": {
-                    "note": "It has to be typed exactly like Wellington says, cAsE sEnSiTiVe. If you're not using a US Keyboard layout, Shift+1 is how you must type the exclamation point. Requires level 70."
-                },
+                "note": "It has to be typed exactly like Wellington says, cAsE sEnSiTiVe. If you're not using a US Keyboard layout, Shift+1 is how you must type the exclamation point. Requires level 70.",
                 "CustomType": "Wellington3",
-                "CustomArray": [
-                    {"desc": "Up's Given:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Up's Given:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Puzzles and Math, a Winning Combination!": {
                 "Type": "Custom",
@@ -7367,13 +6950,9 @@
                 ],
                 "QuestName": "Wellington4",
                 "Difficulty": 5,
-                "note": {
-                    "note": "Number of drop, not the total quantity of item. Coins also count. Spaces do NOT count."
-                },
+                "note": "Number of drop, not the total quantity of item. Coins also count. Spaces do NOT count.",
                 "CustomType": "Wellington4",
-                "CustomArray": [
-                    {"desc": "Puzzle Complete:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Puzzle Complete:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -7508,16 +7087,11 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 1}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 1}],
                 "QuestName": "Dazey1",
                 "Difficulty": 5,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "ForestTree", "quantity": 1000},
-                    {"item": "Quest41", "quantity": 5}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "ForestTree", "quantity": 1000}, {"item": "Quest41", "quantity": 5}]
             },
             "Literally Physics": {
                 "Type": "ItemsAndSpaceRequired",
@@ -7527,13 +7101,10 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 10,
-                "Rewards": [
-                    {"item": "NPCtoken14", "quantity": 1},
-                    {"item": "ExpBalloon2", "quantity": 5}
-                ],
+                "Rewards": [{"item": "NPCtoken14", "quantity": 1}, {"item": "ExpBalloon2", "quantity": 5}],
                 "QuestName": "Dazey2",
                 "Difficulty": 4,
-                "note": {"note": "After completing this quest, Dazey will be replaced by Sprout."},
+                "note": "After completing this quest, Dazey will be replaced by Sprout.",
                 "ItemReq": [
                     {"item": "ForestTree", "quantity": 1000},
                     {"item": "Quest41", "quantity": 5},
@@ -7637,17 +7208,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 2,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 5},
-                    {"type": "Class", "amount": 9000}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 5}, {"type": "Class", "amount": 9000}],
                 "QuestName": "Cowbo Jones1",
                 "Difficulty": 1,
-                "note": {"note": "After 10 active kills, the quest auto-completes."},
+                "note": "After 10 active kills, the quest auto-completes.",
                 "CustomType": "Cowbo Jones1",
-                "CustomArray": [
-                    {"desc": "Kill Pots:", "finalV": 99999, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Kill Pots:", "finalV": 99999, "type": "GreaterEqual", "startV": 0}]
             },
             "The Hatless Howerhouse!": {
                 "Type": "Custom",
@@ -7664,11 +7230,9 @@
                 ],
                 "QuestName": "Cowbo Jones2",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Cowbo Jones2",
-                "CustomArray": [
-                    {"desc": "No-Hat Kill:", "finalV": 20, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "No-Hat Kill:", "finalV": 20, "type": "GreaterEqual", "startV": 0}]
             },
             "No Country for One Character": {
                 "Type": "Custom",
@@ -7678,17 +7242,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 8,
-                "Rewards": [
-                    {"item": "Timecandy1", "quantity": 3},
-                    {"type": "Class", "amount": 17500}
-                ],
+                "Rewards": [{"item": "Timecandy1", "quantity": 3}, {"type": "Class", "amount": 17500}],
                 "QuestName": "Cowbo Jones3",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Cowbo Jones3",
-                "CustomArray": [
-                    {"desc": "Characters Created:", "finalV": 4, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Characters Created:", "finalV": 4, "type": "GreaterEqual", "startV": 0}]
             },
             "Say Goodbye to your Dubloon!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -7705,10 +7264,8 @@
                 ],
                 "QuestName": "Cowbo Jones4",
                 "Difficulty": 2,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Quest19", "quantity": 1}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Quest19", "quantity": 1}]
             },
             "Alchemial Apprentice": {
                 "Type": "Custom",
@@ -7725,9 +7282,7 @@
                 ],
                 "QuestName": "Cowbo Jones5",
                 "Difficulty": 3,
-                "note": {
-                    "note": "Bubbles unlocked before you start this quest count, but the [[Distilled Water]] must be purchased while the quest is active."
-                },
+                "note": "Bubbles unlocked before you start this quest count, but the [[Distilled Water]] must be purchased while the quest is active.",
                 "CustomType": "Cowbo Jones5",
                 "CustomArray": [
                     {"desc": "Bubble Unlocked:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -7742,18 +7297,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 23,
-                "Rewards": [
-                    {"type": "Class", "amount": 10000}
-                ],
+                "Rewards": [{"type": "Class", "amount": 10000}],
                 "QuestName": "Cowbo Jones6",
                 "Difficulty": 2,
-                "note": {
-                    "note": "Vials unlocked before you start the quest count. See [[Alchemy#Vials|Alchemy Vials]] for a full list of unlockable Vials."
-                },
+                "note": "Vials unlocked before you start the quest count. See [[Alchemy#Vials|Alchemy Vials]] for a full list of unlockable Vials.",
                 "CustomType": "Cowbo Jones6",
-                "CustomArray": [
-                    {"desc": "Vials Unlocked:", "finalV": 2, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Vials Unlocked:", "finalV": 2, "type": "GreaterEqual", "startV": 0}]
             },
             "The Notorious B.O.B": {
                 "Type": "Custom",
@@ -7770,11 +7319,9 @@
                 ],
                 "QuestName": "Cowbo Jones7",
                 "Difficulty": 4,
-                "note": {"note": "The criminal is located through the portal below Mimics."},
+                "note": "The criminal is located through the portal below Mimics.",
                 "CustomType": "Cowbo Jones7",
-                "CustomArray": [
-                    {"desc": "Criminal Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Criminal Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Bake Him Away, Toys": {
                 "Type": "ItemsAndSpaceRequired",
@@ -7784,16 +7331,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 28,
-                "Rewards": [
-                    {"item": "InvBag5", "quantity": 1},
-                    {"type": "Class", "amount": 15000}
-                ],
+                "Rewards": [{"item": "InvBag5", "quantity": 1}, {"type": "Class", "amount": 15000}],
                 "QuestName": "Cowbo Jones8",
                 "Difficulty": 5,
-                "note": {"note": "You have to complete [[Bandit Bob|Bandit Bob's]] questline for this."},
-                "ItemReq": [
-                    {"item": "Quest20", "quantity": 1}
-                ]
+                "note": "You have to complete [[Bandit Bob|Bandit Bob's]] questline for this.",
+                "ItemReq": [{"item": "Quest20", "quantity": 1}]
             },
             "A Hat in Crime": {
                 "Type": "ItemsAndSpaceRequired",
@@ -7803,17 +7345,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 34,
-                "Rewards": [
-                    {"item": "EquipmentHats30", "quantity": 1},
-                    {"item": "StoneHelm6", "quantity": 1}
-                ],
+                "Rewards": [{"item": "EquipmentHats30", "quantity": 1}, {"item": "StoneHelm6", "quantity": 1}],
                 "QuestName": "Cowbo Jones9",
                 "Difficulty": 4,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "CraftMat9", "quantity": 100},
-                    {"item": "CraftMat5", "quantity": 750}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "CraftMat9", "quantity": 100}, {"item": "CraftMat5", "quantity": 750}]
             },
             "Commence Criminal Crimes!": {
                 "Type": "Custom",
@@ -7823,17 +7359,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 39,
-                "Rewards": [
-                    {"item": "InvBag6", "quantity": 1},
-                    {"type": "Class", "amount": 25000}
-                ],
+                "Rewards": [{"item": "InvBag6", "quantity": 1}, {"type": "Class", "amount": 25000}],
                 "QuestName": "Cowbo Jones10",
                 "Difficulty": 6,
-                "note": {"note": "You have to complete [[Goldric|Goldric's]] questline for this."},
+                "note": "You have to complete [[Goldric|Goldric's]] questline for this.",
                 "CustomType": "Cowbo Jones10",
-                "CustomArray": [
-                    {"desc": "Steal from Goldric:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Steal from Goldric:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "The Worst Trade Deal in History": {
                 "Type": "Custom",
@@ -7843,17 +7374,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 45,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 4},
-                    {"item": "ExpBalloon1", "quantity": 3}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 4}, {"item": "ExpBalloon1", "quantity": 3}],
                 "QuestName": "Cowbo Jones11",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Cowbo Jones11",
-                "CustomArray": [
-                    {"desc": "Resold Dubloons:", "finalV": 10, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Resold Dubloons:", "finalV": 10, "type": "GreaterEqual", "startV": 0}]
             },
             "Children? What'd they ever do for Me...": {
                 "Type": "Custom",
@@ -7863,17 +7389,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 48,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 6},
-                    {"item": "ExpBalloon2", "quantity": 1}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 6}, {"item": "ExpBalloon2", "quantity": 1}],
                 "QuestName": "Cowbo Jones12",
                 "Difficulty": 4,
-                "note": {"note": "Donate in the [[Alchemy]] Liquids Tab."},
+                "note": "Donate in the [[Alchemy]] Liquids Tab.",
                 "CustomType": "Cowbo Jones12",
-                "CustomArray": [
-                    {"desc": "Donations Made:", "finalV": 4, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Donations Made:", "finalV": 4, "type": "GreaterEqual", "startV": 0}]
             },
             "Oh No, not the Elderly!": {
                 "Type": "Custom",
@@ -7883,16 +7404,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 51,
-                "Rewards": [
-                    {"item": "InvBag8", "quantity": 1}
-                ],
+                "Rewards": [{"item": "InvBag8", "quantity": 1}],
                 "QuestName": "Cowbo Jones13",
                 "Difficulty": 6,
-                "note": {"note": "[[Carpetiem]] (in the [[Mashed Potato]] area) is the geezer you must help."},
+                "note": "[[Carpetiem]] (in the [[Mashed Potato]] area) is the geezer you must help.",
                 "CustomType": "Cowbo Jones13",
-                "CustomArray": [
-                    {"desc": "Geezers Helped:", "finalV": 100, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Geezers Helped:", "finalV": 100, "type": "GreaterEqual", "startV": 0}]
             },
             "Tomb Raid": {
                 "Type": "Custom",
@@ -7909,7 +7426,7 @@
                 ],
                 "QuestName": "Cowbo Jones14",
                 "Difficulty": 5,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Cowbo Jones14",
                 "CustomArray": [
                     {"desc": "Efaunt Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -7924,12 +7441,10 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 60,
-                "Rewards": [
-                    {"item": "Trophy11", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Trophy11", "quantity": 1}],
                 "QuestName": "Cowbo Jones15",
                 "Difficulty": 9,
-                "note": {"note": "All the required recipes are given at the start of this quest."},
+                "note": "All the required recipes are given at the start of this quest.",
                 "ItemReq": [
                     {"item": "BadgeD1", "quantity": 1},
                     {"item": "BadgeD2", "quantity": 1},
@@ -8328,17 +7843,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"item": "TixCol", "quantity": 1},
-                    {"type": "Class", "amount": 100}
-                ],
+                "Rewards": [{"item": "TixCol", "quantity": 1}, {"type": "Class", "amount": 100}],
                 "QuestName": "Typhoon1",
                 "Difficulty": 2,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Typhoon1",
-                "CustomArray": [
-                    {"desc": "Frogs Defeated:", "finalV": 7, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Frogs Defeated:", "finalV": 7, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -8401,13 +7911,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"item": "TixCol", "quantity": 1},
-                    {"type": "Class", "amount": 100}
-                ],
+                "Rewards": [{"item": "TixCol", "quantity": 1}, {"type": "Class", "amount": 100}],
                 "QuestName": "Centurion1",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Centurion1",
                 "CustomArray": [
                     {"desc": "Mimics Defeated:", "finalV": 21, "type": "GreaterEqual", "startV": 0},
@@ -8429,10 +7936,8 @@
                 ],
                 "QuestName": "Centurion2",
                 "Difficulty": 3,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "DesertB1", "quantity": 2500}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "DesertB1", "quantity": 2500}]
             },
             "High Scorer": {
                 "Type": "Custom",
@@ -8442,17 +7947,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 12,
-                "Rewards": [
-                    {"item": "Timecandy2", "quantity": 2},
-                    {"coins": 20000}
-                ],
+                "Rewards": [{"item": "Timecandy2", "quantity": 2}, {"coins": 20000}],
                 "QuestName": "Centurion3",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Centurion3",
-                "CustomArray": [
-                    {"desc": "Colosseum Score:", "finalV": 200000, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Colosseum Score:", "finalV": 200000, "type": "GreaterEqual", "startV": 0}]
             },
             "Colosseum Champ!": {
                 "Type": "Custom",
@@ -8469,7 +7969,7 @@
                 ],
                 "QuestName": "Centurion4",
                 "Difficulty": 5,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Centurion4",
                 "CustomArray": [
                     {"desc": "Waves Completed:", "finalV": 15, "type": "GreaterEqual", "startV": 0},
@@ -8491,7 +7991,7 @@
                 ],
                 "QuestName": "Centurion5",
                 "Difficulty": 6,
-                "note": {"note": "The numbers are how many seconds you must have remaining for each colosseum."},
+                "note": "The numbers are how many seconds you must have remaining for each colosseum.",
                 "CustomType": "Centurion5",
                 "CustomArray": [
                     {"desc": "1st Colosseum:", "finalV": 180, "type": "GreaterEqual", "startV": 0},
@@ -8658,13 +8158,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "StampB4", "quantity": 1},
-                    {"item": "StampB19", "quantity": 1}
-                ],
+                "Rewards": [{"item": "StampB4", "quantity": 1}, {"item": "StampB19", "quantity": 1}],
                 "QuestName": "XxX Cattleprod XxX1",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "XxX Cattleprod XxX1",
                 "CustomArray": [
                     {"desc": "Mafiosos Defeated:", "finalV": 15, "type": "GreaterEqual", "startV": 0},
@@ -8679,13 +8176,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 7,
-                "Rewards": [
-                    {"item": "StampC2", "quantity": 1},
-                    {"item": "StampB18", "quantity": 1}
-                ],
+                "Rewards": [{"item": "StampC2", "quantity": 1}, {"item": "StampB18", "quantity": 1}],
                 "QuestName": "XxX Cattleprod XxX2",
                 "Difficulty": 5,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "XxX Cattleprod XxX2",
                 "CustomArray": [
                     {"desc": "Mafiosos Defeated:", "finalV": 30, "type": "GreaterEqual", "startV": 0},
@@ -8706,13 +8200,10 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 12,
-                "Rewards": [
-                    {"item": "StampA28", "quantity": 1},
-                    {"coins": 20000}
-                ],
+                "Rewards": [{"item": "StampA28", "quantity": 1}, {"coins": 20000}],
                 "QuestName": "XxX Cattleprod XxX3",
                 "Difficulty": 5,
-                "note": {"note": " "},
+                "note": " ",
                 "ItemReq": [
                     {"item": "Quest32", "quantity": 1000},
                     {"item": "Quest33", "quantity": 1},
@@ -8834,12 +8325,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "Blank", "quantity": 0}
-                ],
+                "Rewards": [{"item": "Blank", "quantity": 0}],
                 "QuestName": "QuestNameFiller2                                                                   xh",
                 "Difficulty": 0,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "QuestNameFiller2",
                 "CustomArray": [
                     {
@@ -8901,11 +8390,9 @@
                 ],
                 "QuestName": "Giftmas Blobulyte1",
                 "Difficulty": 2,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Giftmas Blobulyte1",
-                "CustomArray": [
-                    {"desc": "Ghosts Defeated:", "finalV": 6, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Ghosts Defeated:", "finalV": 6, "type": "GreaterEqual", "startV": 0}]
             },
             "You Shouldn't Have! No, really.": {
                 "Type": "ItemsAndSpaceRequired",
@@ -8915,17 +8402,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 8,
-                "Rewards": [
-                    {"item": "Quest30", "quantity": 15},
-                    {"item": "PremiumGem", "quantity": 10}
-                ],
+                "Rewards": [{"item": "Quest30", "quantity": 15}, {"item": "PremiumGem", "quantity": 10}],
                 "QuestName": "Giftmas Blobulyte2",
                 "Difficulty": 2,
-                "note": {"note": ""},
-                "ItemReq": [
-                    {"item": "DesertA1b", "quantity": 1},
-                    {"item": "Quest19", "quantity": 1}
-                ]
+                "note": "",
+                "ItemReq": [{"item": "DesertA1b", "quantity": 1}, {"item": "Quest19", "quantity": 1}]
             },
             "Giftmas Time!": {
                 "Type": "Custom",
@@ -8935,16 +8416,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 12,
-                "Rewards": [
-                    {"item": "Quest64", "quantity": 6}
-                ],
+                "Rewards": [{"item": "Quest64", "quantity": 6}],
                 "QuestName": "Giftmas Blobulyte3",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Giftmas Blobulyte3",
-                "CustomArray": [
-                    {"desc": "Mobs Defeated:", "finalV": 100, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Mobs Defeated:", "finalV": 100, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -9062,13 +8539,9 @@
                 ],
                 "QuestName": "Telescope1",
                 "Difficulty": 2,
-                "note": {
-                    "note": " The constellation is on the same map as the telescope, you need to afk 1h in order to complete it"
-                },
+                "note": " The constellation is on the same map as the telescope, you need to afk 1h in order to complete it",
                 "CustomType": "Telescope1",
-                "CustomArray": [
-                    {"desc": "Constellation A-2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Constellation A-2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -9144,10 +8617,8 @@
                 ],
                 "QuestName": "Loveulyte1",
                 "Difficulty": 2,
-                "note": {"note": "All enemies can drop the letters. Daily quest"},
-                "ItemReq": [
-                    {"item": "Quest39", "quantity": 25}
-                ]
+                "note": "All enemies can drop the letters. Daily quest",
+                "ItemReq": [{"item": "Quest39", "quantity": 25}]
             },
             "Heartbreaker": {
                 "Type": "Custom",
@@ -9157,19 +8628,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "Quest40", "quantity": 15},
-                    {"item": "PremiumGem", "quantity": 10}
-                ],
+                "Rewards": [{"item": "Quest40", "quantity": 15}, {"item": "PremiumGem", "quantity": 10}],
                 "QuestName": "Loveulyte2",
                 "Difficulty": 4,
-                "note": {
-                    "note": "Consume 5 {{CraftReq|Lovey Dovey Letter}} to summon a [[Valentslime]]. Daily quest."
-                },
+                "note": "Consume 5 {{CraftReq|Lovey Dovey Letter}} to summon a [[Valentslime]]. Daily quest.",
                 "CustomType": "Loveulyte2",
-                "CustomArray": [
-                    {"desc": "Defeat Heart Slimes:", "finalV": 20, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Defeat Heart Slimes:", "finalV": 20, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -9250,17 +8714,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "Quest42", "quantity": 5},
-                    {"item": "PremiumGem", "quantity": 5}
-                ],
+                "Rewards": [{"item": "Quest42", "quantity": 5}, {"item": "PremiumGem", "quantity": 5}],
                 "QuestName": "Egggulyte1",
                 "Difficulty": 2,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Egggulyte1",
-                "CustomArray": [
-                    {"desc": "Find Egg Capsule:", "finalV": 5, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Find Egg Capsule:", "finalV": 5, "type": "GreaterEqual", "startV": 0}]
             },
             "I've Got a Golden Tickegg!": {
                 "Type": "Custom",
@@ -9270,17 +8729,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 8,
-                "Rewards": [
-                    {"item": "Quest42", "quantity": 7},
-                    {"item": "PremiumGem", "quantity": 5}
-                ],
+                "Rewards": [{"item": "Quest42", "quantity": 7}, {"item": "PremiumGem", "quantity": 5}],
                 "QuestName": "Egggulyte2",
                 "Difficulty": 4,
-                "note": {"note": ""},
+                "note": "",
                 "CustomType": "Egggulyte2",
-                "CustomArray": [
-                    {"desc": "Find New Gold Egg:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Find New Gold Egg:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -9374,10 +8828,8 @@
                 ],
                 "QuestName": "Iceland Irwin1",
                 "Difficulty": 4,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "SnowA2", "quantity": 250}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "SnowA2", "quantity": 250}]
             }
         },
         "dialogue": [
@@ -9434,12 +8886,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 3}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 3}],
                 "QuestName": "Hoggindaz1",
                 "Difficulty": 1,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Hoggindaz1",
                 "CustomArray": [
                     {"desc": "Refinery Turned On:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -9454,13 +8904,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 8,
-                "Rewards": [
-                    {"item": "Timecandy1", "quantity": 1},
-                    {"item": "PremiumGem", "quantity": 4}
-                ],
+                "Rewards": [{"item": "Timecandy1", "quantity": 1}, {"item": "PremiumGem", "quantity": 4}],
                 "QuestName": "Hoggindaz2",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Hoggindaz2",
                 "CustomArray": [
                     {"desc": "Buy Trap from Shop:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -9480,13 +8927,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 11,
-                "Rewards": [
-                    {"item": "TalentBook1", "quantity": 3635100},
-                    {"item": "PremiumGem", "quantity": 2}
-                ],
+                "Rewards": [{"item": "TalentBook1", "quantity": 3635100}, {"item": "PremiumGem", "quantity": 2}],
                 "QuestName": "Hoggindaz3",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Hoggindaz3",
                 "CustomArray": [
                     {"desc": "3D Printer Built:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -9502,13 +8946,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 16,
-                "Rewards": [
-                    {"item": "Timecandy1", "quantity": 1},
-                    {"item": "PremiumGem", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Timecandy1", "quantity": 1}, {"item": "PremiumGem", "quantity": 2}],
                 "QuestName": "Hoggindaz4",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Hoggindaz4",
                 "CustomArray": [
                     {
@@ -9528,17 +8969,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 20,
-                "Rewards": [
-                    {"item": "TalentBook1", "quantity": 3639100},
-                    {"item": "PremiumGem", "quantity": 2}
-                ],
+                "Rewards": [{"item": "TalentBook1", "quantity": 3639100}, {"item": "PremiumGem", "quantity": 2}],
                 "QuestName": "Hoggindaz5",
                 "Difficulty": 1,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Hoggindaz5",
-                "CustomArray": [
-                    {"desc": "Take Samples:", "finalV": 2, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Take Samples:", "finalV": 2, "type": "GreaterEqual", "startV": 0}]
             },
             "Voter Recognition": {
                 "Type": "ItemsAndSpaceRequired",
@@ -9548,15 +8984,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 26,
-                "Rewards": [
-                    {"item": "Timecandy2", "quantity": 3}
-                ],
+                "Rewards": [{"item": "Timecandy2", "quantity": 3}],
                 "QuestName": "Hoggindaz6",
                 "Difficulty": 3,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Quest59", "quantity": 1}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Quest59", "quantity": 1}]
             },
             "Voter Appeasement": {
                 "Type": "ItemsAndSpaceRequired",
@@ -9566,15 +8998,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 29,
-                "Rewards": [
-                    {"item": "Timecandy3", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Timecandy3", "quantity": 2}],
                 "QuestName": "Hoggindaz7",
                 "Difficulty": 5,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Quest60", "quantity": 1}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Quest60", "quantity": 1}]
             },
             "Voter Apathy": {
                 "Type": "ItemsAndSpaceRequired",
@@ -9584,15 +9012,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 32,
-                "Rewards": [
-                    {"item": "Timecandy4", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Timecandy4", "quantity": 1}],
                 "QuestName": "Hoggindaz8",
                 "Difficulty": 6,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Quest61", "quantity": 1}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Quest61", "quantity": 1}]
             },
             "Chizoar No More": {
                 "Type": "Custom",
@@ -9609,11 +9033,9 @@
                 ],
                 "QuestName": "Hoggindaz9",
                 "Difficulty": 5,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Hoggindaz9",
-                "CustomArray": [
-                    {"desc": "Chizoar Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Chizoar Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "The Fresh Prince of the Tundra": {
                 "Type": "ItemsAndSpaceRequired",
@@ -9623,12 +9045,10 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 40,
-                "Rewards": [
-                    {"item": "Trophy15", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Trophy15", "quantity": 1}],
                 "QuestName": "Hoggindaz10",
                 "Difficulty": 1,
-                "note": {"note": " "},
+                "note": " ",
                 "ItemReq": [
                     {"item": "BadgeI1", "quantity": 1},
                     {"item": "BadgeI2", "quantity": 1},
@@ -9912,17 +9332,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"item": "ExpBalloon2", "quantity": 5},
-                    {"item": "PremiumGem", "quantity": 3}
-                ],
+                "Rewards": [{"item": "ExpBalloon2", "quantity": 5}, {"item": "PremiumGem", "quantity": 3}],
                 "QuestName": "Bill Brr1",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Bill Brr1",
-                "CustomArray": [
-                    {"desc": "Odd Dmg in a Row:", "finalV": 8, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Odd Dmg in a Row:", "finalV": 8, "type": "GreaterEqual", "startV": 0}]
             },
             "Laughin' Amphibian": {
                 "Type": "Custom",
@@ -9932,17 +9347,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "GemP16", "quantity": 1},
-                    {"item": "PremiumGem", "quantity": 4}
-                ],
+                "Rewards": [{"item": "GemP16", "quantity": 1}, {"item": "PremiumGem", "quantity": 4}],
                 "QuestName": "Bill Brr2",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Bill Brr2",
-                "CustomArray": [
-                    {"desc": "Frog Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Frog Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "The Spores are a Bore": {
                 "Type": "Custom",
@@ -9952,12 +9362,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 10,
-                "Rewards": [
-                    {"item": "Timecandy2", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Timecandy2", "quantity": 2}],
                 "QuestName": "Bill Brr3",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Bill Brr3",
                 "CustomArray": [
                     {"desc": "Cryo Kills:", "finalV": 3, "type": "GreaterEqual", "startV": 0},
@@ -9972,17 +9380,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 13,
-                "Rewards": [
-                    {"item": "Quest61", "quantity": 1},
-                    {"item": "GemP16", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Quest61", "quantity": 1}, {"item": "GemP16", "quantity": 1}],
                 "QuestName": "Bill Brr4",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Bill Brr4",
-                "CustomArray": [
-                    {"desc": "Coin Collected:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Coin Collected:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Have a Candy": {
                 "Type": "ItemsAndSpaceRequired",
@@ -9992,16 +9395,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 16,
-                "Rewards": [
-                    {"item": "Timecandy3", "quantity": 3}
-                ],
+                "Rewards": [{"item": "Timecandy3", "quantity": 3}],
                 "QuestName": "Bill Brr5",
                 "Difficulty": 3,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Timecandy1", "quantity": 5},
-                    {"item": "Timecandy2", "quantity": 2}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Timecandy1", "quantity": 5}, {"item": "Timecandy2", "quantity": 2}]
             },
             "Duckin' and Shatterin'": {
                 "Type": "Custom",
@@ -10011,12 +9409,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 19,
-                "Rewards": [
-                    {"item": "GemP16", "quantity": 2}
-                ],
+                "Rewards": [{"item": "GemP16", "quantity": 2}],
                 "QuestName": "Bill Brr6",
                 "Difficulty": 5,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Bill Brr6",
                 "CustomArray": [
                     {"desc": "Orbs Shattered:", "finalV": 18, "type": "GreaterEqual", "startV": 0},
@@ -10031,17 +9427,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 22,
-                "Rewards": [
-                    {"item": "NPCtoken37", "quantity": 1},
-                    {"item": "GemP16", "quantity": 2}
-                ],
+                "Rewards": [{"item": "NPCtoken37", "quantity": 1}, {"item": "GemP16", "quantity": 2}],
                 "QuestName": "Bill Brr7",
                 "Difficulty": 8,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Bill Brr7",
-                "CustomArray": [
-                    {"desc": "C. Chizoar Killed:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "C. Chizoar Killed:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -10212,16 +9603,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 2,
-                "Rewards": [
-                    {"item": "Key3", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Key3", "quantity": 1}],
                 "QuestName": "Bellows1",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Bellows1",
-                "CustomArray": [
-                    {"desc": "Neyeptunes Killed:", "finalV": 50, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Neyeptunes Killed:", "finalV": 50, "type": "GreaterEqual", "startV": 0}]
             },
             "Eyexperience": {
                 "Type": "Custom",
@@ -10231,16 +9618,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 5,
-                "Rewards": [
-                    {"item": "Key3", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Key3", "quantity": 2}],
                 "QuestName": "Bellows2",
                 "Difficulty": 5,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Bellows2",
-                "CustomArray": [
-                    {"desc": "Single Kill XP:", "finalV": 3200, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Single Kill XP:", "finalV": 3200, "type": "GreaterEqual", "startV": 0}]
             },
             "Veyebing": {
                 "Type": "Custom",
@@ -10250,16 +9633,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 8,
-                "Rewards": [
-                    {"item": "Key3", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Key3", "quantity": 2}],
                 "QuestName": "Bellows3",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Bellows3",
-                "CustomArray": [
-                    {"desc": "Giant Eye's Killed:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Giant Eye's Killed:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Optometric Hoarder": {
                 "Type": "ItemsAndSpaceRequired",
@@ -10269,16 +9648,11 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 11,
-                "Rewards": [
-                    {"item": "NPCtoken33", "quantity": 1}
-                ],
+                "Rewards": [{"item": "NPCtoken33", "quantity": 1}],
                 "QuestName": "Bellows4",
                 "Difficulty": 6,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "SnowC4a", "quantity": 4},
-                    {"item": "SnowC4", "quantity": 14000}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "SnowC4a", "quantity": 4}, {"item": "SnowC4", "quantity": 14000}]
             }
         },
         "dialogue": [
@@ -10390,7 +9764,7 @@
                 ],
                 "QuestName": "Crystalswine4",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Crystalswine4",
                 "CustomArray": [
                     {"desc": "Cryosnake:", "finalV": 20, "type": "GreaterEqual", "startV": 0},
@@ -10412,7 +9786,7 @@
                 ],
                 "QuestName": "Crystalswine5",
                 "Difficulty": 6,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Crystalswine5",
                 "CustomArray": [
                     {"desc": "Monsters Defeated:", "finalV": 59, "type": "GreaterEqual", "startV": 0},
@@ -10434,7 +9808,7 @@
                 ],
                 "QuestName": "Crystalswine6",
                 "Difficulty": 7,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Crystalswine6",
                 "CustomArray": [
                     {"desc": "Monsters Defeated:", "finalV": 168, "type": "GreaterEqual", "startV": 0},
@@ -10556,16 +9930,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "GemP16", "quantity": 1}
-                ],
+                "Rewards": [{"item": "GemP16", "quantity": 1}],
                 "QuestName": "Yondergreen1",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Yondergreen1",
-                "CustomArray": [
-                    {"desc": "Shrines Placed:", "finalV": 4, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Shrines Placed:", "finalV": 4, "type": "GreaterEqual", "startV": 0}]
             },
             "Economic Policy": {
                 "Type": "Custom",
@@ -10575,16 +9945,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 7,
-                "Rewards": [
-                    {"item": "GemP16", "quantity": 1}
-                ],
+                "Rewards": [{"item": "GemP16", "quantity": 1}],
                 "QuestName": "Yondergreen2",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Yondergreen2",
-                "CustomArray": [
-                    {"desc": "Coins on Ground:", "finalV": 75, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Coins on Ground:", "finalV": 75, "type": "GreaterEqual", "startV": 0}]
             },
             "Stance on Big Tech": {
                 "Type": "Custom",
@@ -10594,16 +9960,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 10,
-                "Rewards": [
-                    {"item": "Timecandy3", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Timecandy3", "quantity": 1}],
                 "QuestName": "Yondergreen3",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Yondergreen3",
-                "CustomArray": [
-                    {"desc": "Pen Sample Size:", "finalV": 20, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Pen Sample Size:", "finalV": 20, "type": "GreaterEqual", "startV": 0}]
             },
             "Legislative Action": {
                 "Type": "ItemsAndSpaceRequired",
@@ -10613,16 +9975,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 13,
-                "Rewards": [
-                    {"item": "Quest60", "quantity": 1},
-                    {"item": "GemP16", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Quest60", "quantity": 1}, {"item": "GemP16", "quantity": 2}],
                 "QuestName": "Yondergreen4",
                 "Difficulty": 5,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Quest62", "quantity": 4}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Quest62", "quantity": 4}]
             },
             "No Snapping Contract": {
                 "Type": "Custom",
@@ -10632,17 +9989,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 17,
-                "Rewards": [
-                    {"item": "Timecandy3", "quantity": 1},
-                    {"item": "GemP16", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Timecandy3", "quantity": 1}, {"item": "GemP16", "quantity": 1}],
                 "QuestName": "Yondergreen5",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Yondergreen5",
-                "CustomArray": [
-                    {"desc": "Idle with Snouts:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Idle with Snouts:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Keep Away Contract": {
                 "Type": "Custom",
@@ -10652,17 +10004,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 20,
-                "Rewards": [
-                    {"item": "Timecandy4", "quantity": 1},
-                    {"item": "GemP16", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Timecandy4", "quantity": 1}, {"item": "GemP16", "quantity": 2}],
                 "QuestName": "Yondergreen6",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Yondergreen6",
-                "CustomArray": [
-                    {"desc": "Idle with LH:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Idle with LH:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Ad Solidarity Contract": {
                 "Type": "Custom",
@@ -10672,17 +10019,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 23,
-                "Rewards": [
-                    {"item": "NPCtoken36", "quantity": 1},
-                    {"item": "Timecandy5", "quantity": 1}
-                ],
+                "Rewards": [{"item": "NPCtoken36", "quantity": 1}, {"item": "Timecandy5", "quantity": 1}],
                 "QuestName": "Yondergreen7",
                 "Difficulty": 7,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Yondergreen7",
-                "CustomArray": [
-                    {"desc": "Idle with Bill:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Idle with Bill:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -10854,17 +10196,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 5,
-                "Rewards": [
-                    {"item": "CardPack4", "quantity": 1},
-                    {"item": "GemP16", "quantity": 3}
-                ],
+                "Rewards": [{"item": "CardPack4", "quantity": 1}, {"item": "GemP16", "quantity": 3}],
                 "QuestName": "Worldo1",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Worldo1",
-                "CustomArray": [
-                    {"desc": "Jobs Completed:", "finalV": 15, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Jobs Completed:", "finalV": 15, "type": "GreaterEqual", "startV": 0}]
             },
             "Can't Guard if you're Dead!": {
                 "Type": "Custom",
@@ -10874,17 +10211,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 8,
-                "Rewards": [
-                    {"item": "CardPack4", "quantity": 1},
-                    {"item": "GemP16", "quantity": 4}
-                ],
+                "Rewards": [{"item": "CardPack4", "quantity": 1}, {"item": "GemP16", "quantity": 4}],
                 "QuestName": "Worldo2",
                 "Difficulty": 6,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Worldo2",
-                "CustomArray": [
-                    {"desc": "Guards Defeated:", "finalV": 12, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Guards Defeated:", "finalV": 12, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -10971,13 +10303,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "Timecandy1", "quantity": 2},
-                    {"item": "GemP16", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Timecandy1", "quantity": 2}, {"item": "GemP16", "quantity": 1}],
                 "QuestName": "Shuvelle1",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Shuvelle1",
                 "CustomArray": [
                     {"desc": "Tusks Dropped:", "finalV": 6, "type": "GreaterEqual", "startV": 0},
@@ -10999,10 +10328,8 @@
                 ],
                 "QuestName": "Shuvelle2",
                 "Difficulty": 4,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Bug5", "quantity": 200}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Bug5", "quantity": 200}]
             },
             "Mayoral Sack Size": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11012,15 +10339,11 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 10,
-                "Rewards": [
-                    {"item": "Timecandy3", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Timecandy3", "quantity": 1}],
                 "QuestName": "Shuvelle3",
                 "Difficulty": 6,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "SnowB2", "quantity": 8000}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "SnowB2", "quantity": 8000}]
             },
             "Mayoral Movie Taste": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11030,16 +10353,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 13,
-                "Rewards": [
-                    {"item": "Quest59", "quantity": 1},
-                    {"item": "GemP16", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Quest59", "quantity": 1}, {"item": "GemP16", "quantity": 1}],
                 "QuestName": "Shuvelle4",
                 "Difficulty": 5,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "SnowB2a", "quantity": 1}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "SnowB2a", "quantity": 1}]
             },
             "Diggy Hole!": {
                 "Type": "Custom",
@@ -11049,17 +10367,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 16,
-                "Rewards": [
-                    {"item": "Timecandy2", "quantity": 1},
-                    {"item": "GemP16", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Timecandy2", "quantity": 1}, {"item": "GemP16", "quantity": 1}],
                 "QuestName": "Shuvelle5",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Shuvelle5",
-                "CustomArray": [
-                    {"desc": "Shovels in Place:", "finalV": 12, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Shovels in Place:", "finalV": 12, "type": "GreaterEqual", "startV": 0}]
             },
             "Diggy Diggy Hole!": {
                 "Type": "Custom",
@@ -11069,17 +10382,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 19,
-                "Rewards": [
-                    {"item": "Timecandy3", "quantity": 1},
-                    {"item": "GemP16", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Timecandy3", "quantity": 1}, {"item": "GemP16", "quantity": 2}],
                 "QuestName": "Shuvelle6",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Shuvelle6",
-                "CustomArray": [
-                    {"desc": "Shovels in Place:", "finalV": 15, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Shovels in Place:", "finalV": 15, "type": "GreaterEqual", "startV": 0}]
             },
             "Dig Diggily Diggy Dig Dig Hole!": {
                 "Type": "Custom",
@@ -11096,11 +10404,9 @@
                 ],
                 "QuestName": "Shuvelle7",
                 "Difficulty": 5,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Shuvelle7",
-                "CustomArray": [
-                    {"desc": "Shovels in Place:", "finalV": 16, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Shovels in Place:", "finalV": 16, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -11266,17 +10572,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 5},
-                    {"item": "Timecandy1", "quantity": 1}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 5}, {"item": "Timecandy1", "quantity": 1}],
                 "QuestName": "Lonely Hunter1",
                 "Difficulty": 3,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Leaf1", "quantity": 200},
-                    {"item": "Leaf2", "quantity": 50}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Leaf1", "quantity": 200}, {"item": "Leaf2", "quantity": 50}]
             },
             "Skeleton? Skelegone!": {
                 "Type": "Custom",
@@ -11286,17 +10586,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "Timecandy1", "quantity": 1},
-                    {"item": "TixCol", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Timecandy1", "quantity": 1}, {"item": "TixCol", "quantity": 2}],
                 "QuestName": "Lonely Hunter2",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Lonely Hunter2",
-                "CustomArray": [
-                    {"desc": "Xylobones Defeated:", "finalV": 5, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Xylobones Defeated:", "finalV": 5, "type": "GreaterEqual", "startV": 0}]
             },
             "Opening Chests": {
                 "Type": "Custom",
@@ -11306,13 +10601,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 9,
-                "Rewards": [
-                    {"item": "NPCtoken31", "quantity": 1},
-                    {"item": "TixCol", "quantity": 2}
-                ],
+                "Rewards": [{"item": "NPCtoken31", "quantity": 1}, {"item": "TixCol", "quantity": 2}],
                 "QuestName": "Lonely Hunter3",
                 "Difficulty": 4,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Lonely Hunter3",
                 "CustomArray": [
                     {"desc": "Bronze Chests:", "finalV": 7, "type": "GreaterEqual", "startV": 0},
@@ -11428,13 +10720,10 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "TrapBoxSet1", "quantity": 1},
-                    {"item": "Timecandy4", "quantity": 2}
-                ],
+                "Rewards": [{"item": "TrapBoxSet1", "quantity": 1}, {"item": "Timecandy4", "quantity": 2}],
                 "QuestName": "Lord of the Hunt1",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "ItemReq": [
                     {"item": "DesertC4", "quantity": 10},
                     {"item": "Jungle2", "quantity": 12},
@@ -11449,17 +10738,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 8,
-                "Rewards": [
-                    {"item": "ExpBalloon2", "quantity": 5},
-                    {"item": "Timecandy3", "quantity": 2}
-                ],
+                "Rewards": [{"item": "ExpBalloon2", "quantity": 5}, {"item": "Timecandy3", "quantity": 2}],
                 "QuestName": "Lord of the Hunt2",
                 "Difficulty": 2,
-                "note": {"note": " Located at Jungle Perimeter inn Blunder Hills"},
-                "ItemReq": [
-                    {"item": "Critter1", "quantity": 100},
-                    {"item": "Critter1A", "quantity": 1}
-                ]
+                "note": " Located at Jungle Perimeter inn Blunder Hills",
+                "ItemReq": [{"item": "Critter1", "quantity": 100}, {"item": "Critter1A", "quantity": 1}]
             },
             "Yet another Cartoon Reference": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11469,16 +10752,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 11,
-                "Rewards": [
-                    {"item": "Timecandy3", "quantity": 2}
-                ],
+                "Rewards": [{"item": "Timecandy3", "quantity": 2}],
                 "QuestName": "Lord of the Hunt3",
                 "Difficulty": 3,
-                "note": {"note": " Located at Salty Shores in Yum-Yum Desert"},
-                "ItemReq": [
-                    {"item": "Critter2", "quantity": 250},
-                    {"item": "Critter2A", "quantity": 1}
-                ]
+                "note": " Located at Salty Shores in Yum-Yum Desert",
+                "ItemReq": [{"item": "Critter2", "quantity": 250}, {"item": "Critter2A", "quantity": 1}]
             },
             "Small Stingers, Big Owie": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11488,17 +10766,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 14,
-                "Rewards": [
-                    {"item": "ExpBalloon3", "quantity": 2},
-                    {"item": "Timecandy3", "quantity": 2}
-                ],
+                "Rewards": [{"item": "ExpBalloon3", "quantity": 2}, {"item": "Timecandy3", "quantity": 2}],
                 "QuestName": "Lord of the Hunt4",
                 "Difficulty": 4,
-                "note": {"note": " Located at The Ring in Yum-Yum Desert"},
-                "ItemReq": [
-                    {"item": "Critter3", "quantity": 500},
-                    {"item": "Critter3A", "quantity": 2}
-                ]
+                "note": " Located at The Ring in Yum-Yum Desert",
+                "ItemReq": [{"item": "Critter3", "quantity": 500}, {"item": "Critter3A", "quantity": 2}]
             },
             "The Mouse n the Molerat": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11508,16 +10780,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 17,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 10}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 10}],
                 "QuestName": "Lord of the Hunt5",
                 "Difficulty": 4,
-                "note": {"note": "   Located at Rats Nest in Sewers in Blunder Hills"},
-                "ItemReq": [
-                    {"item": "Critter4", "quantity": 1000},
-                    {"item": "Critter4A", "quantity": 2}
-                ]
+                "note": "   Located at Rats Nest in Sewers in Blunder Hills",
+                "ItemReq": [{"item": "Critter4", "quantity": 1000}, {"item": "Critter4A", "quantity": 2}]
             },
             "Happy Tree Friend": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11527,16 +10794,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 20,
-                "Rewards": [
-                    {"item": "Timecandy4", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Timecandy4", "quantity": 1}],
                 "QuestName": "Lord of the Hunt6",
                 "Difficulty": 5,
-                "note": {"note": " Located at Hollowed Trunk in The Giant Tree in blunder Hills"},
-                "ItemReq": [
-                    {"item": "Critter5", "quantity": 1500},
-                    {"item": "Critter5A", "quantity": 3}
-                ]
+                "note": " Located at Hollowed Trunk in The Giant Tree in blunder Hills",
+                "ItemReq": [{"item": "Critter5", "quantity": 1500}, {"item": "Critter5A", "quantity": 3}]
             },
             "Noot Noot!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11546,17 +10808,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 23,
-                "Rewards": [
-                    {"item": "Timecandy4", "quantity": 1},
-                    {"item": "PremiumGem", "quantity": 10}
-                ],
+                "Rewards": [{"item": "Timecandy4", "quantity": 1}, {"item": "PremiumGem", "quantity": 10}],
                 "QuestName": "Lord of the Hunt7",
                 "Difficulty": 6,
-                "note": {"note": " Located at The Stashe Split in frostbite tundra"},
-                "ItemReq": [
-                    {"item": "Critter6", "quantity": 2500},
-                    {"item": "Critter6A", "quantity": 4}
-                ]
+                "note": " Located at The Stashe Split in frostbite tundra",
+                "ItemReq": [{"item": "Critter6", "quantity": 2500}, {"item": "Critter6A", "quantity": 4}]
             },
             "Bunny you Should Say That!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11566,16 +10822,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 26,
-                "Rewards": [
-                    {"item": "ResetCompletedS", "quantity": 1}
-                ],
+                "Rewards": [{"item": "ResetCompletedS", "quantity": 1}],
                 "QuestName": "Lord of the Hunt8",
                 "Difficulty": 7,
-                "note": {"note": " Located at Thermonuclear climb in Frostbite Tundra"},
-                "ItemReq": [
-                    {"item": "Critter7", "quantity": 4000},
-                    {"item": "Critter7A", "quantity": 6}
-                ]
+                "note": " Located at Thermonuclear climb in Frostbite Tundra",
+                "ItemReq": [{"item": "Critter7", "quantity": 4000}, {"item": "Critter7A", "quantity": 6}]
             },
             "Rollin' Thunder!": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11585,16 +10836,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 29,
-                "Rewards": [
-                    {"item": "ResetCompleted", "quantity": 4}
-                ],
+                "Rewards": [{"item": "ResetCompleted", "quantity": 4}],
                 "QuestName": "Lord of the Hunt9",
                 "Difficulty": 7,
-                "note": {"note": " Located at Efaunts tomb, the Boss Room Desert "},
-                "ItemReq": [
-                    {"item": "Critter8", "quantity": 8000},
-                    {"item": "Critter8A", "quantity": 10}
-                ]
+                "note": " Located at Efaunts tomb, the Boss Room Desert ",
+                "ItemReq": [{"item": "Critter8", "quantity": 8000}, {"item": "Critter8A", "quantity": 10}]
             },
             "Untitled Quest": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11604,17 +10850,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 32,
-                "Rewards": [
-                    {"item": "ResetBox", "quantity": 1},
-                    {"item": "Timecandy5", "quantity": 1}
-                ],
+                "Rewards": [{"item": "ResetBox", "quantity": 1}, {"item": "Timecandy5", "quantity": 1}],
                 "QuestName": "Lord of the Hunt10",
                 "Difficulty": 7,
-                "note": {"note": " Located at Wam Wonderland"},
-                "ItemReq": [
-                    {"item": "Critter9", "quantity": 65000},
-                    {"item": "Critter9A", "quantity": 1}
-                ]
+                "note": " Located at Wam Wonderland",
+                "ItemReq": [{"item": "Critter9", "quantity": 65000}, {"item": "Critter9A", "quantity": 1}]
             },
             "To Trap or not to Trap": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11624,12 +10864,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 36,
-                "Rewards": [
-                    {"item": "Trophy10", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Trophy10", "quantity": 1}],
                 "QuestName": "Lord of the Hunt11",
                 "Difficulty": 7,
-                "note": {"note": " "},
+                "note": " ",
                 "ItemReq": [
                     {"item": "Critter3A", "quantity": 500},
                     {"item": "Critter6A", "quantity": 250},
@@ -11889,15 +11127,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "StampA21", "quantity": 1}
-                ],
+                "Rewards": [{"item": "StampA21", "quantity": 1}],
                 "QuestName": "Snouts1",
                 "Difficulty": 4,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Refinery1", "quantity": 30}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Refinery1", "quantity": 30}]
             },
             "Gravity VS Salt": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11907,16 +11141,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 9,
-                "Rewards": [
-                    {"item": "StampA18", "quantity": 1},
-                    {"item": "StampB26", "quantity": 1}
-                ],
+                "Rewards": [{"item": "StampA18", "quantity": 1}, {"item": "StampB26", "quantity": 1}],
                 "QuestName": "Snouts2",
                 "Difficulty": 5,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "Refinery2", "quantity": 50}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "Refinery2", "quantity": 50}]
             },
             "Big Ol Chonker": {
                 "Type": "Custom",
@@ -11926,24 +11155,17 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 13,
-                "Rewards": [
-                    {"item": "StampC15", "quantity": 1},
-                    {"item": "StampC20", "quantity": 1}
-                ],
+                "Rewards": [{"item": "StampC15", "quantity": 1}, {"item": "StampC20", "quantity": 1}],
                 "QuestName": "Snouts3",
                 "Difficulty": 5,
-                "note": {
-                    "note": "You must equip the [[Worship#Tachion_of_the_Titans|Tachion of the Titans]] Prayer to spawn Giant Monsters."
-                },
+                "note": "You must equip the [[Worship#Tachion_of_the_Titans|Tachion of the Titans]] Prayer to spawn Giant Monsters.",
                 "CustomType": "Snouts3",
-                "CustomArray": [
-                    {
-                        "desc": "Defeat Giant Stache Mob:",
-                        "finalV": 1,
-                        "type": "GreaterEqual",
-                        "startV": 0
-                    }
-                ]
+                "CustomArray": [{
+                    "desc": "Defeat Giant Stache Mob:",
+                    "finalV": 1,
+                    "type": "GreaterEqual",
+                    "startV": 0
+                }]
             },
             "Mana Plox": {
                 "Type": "ItemsAndSpaceRequired",
@@ -11953,16 +11175,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 17,
-                "Rewards": [
-                    {"item": "NPCtoken34", "quantity": 1},
-                    {"item": "Timecandy3", "quantity": 1}
-                ],
+                "Rewards": [{"item": "NPCtoken34", "quantity": 1}, {"item": "Timecandy3", "quantity": 1}],
                 "QuestName": "Snouts4",
                 "Difficulty": 5,
-                "note": {"note": " "},
-                "ItemReq": [
-                    {"item": "FoodPotMana3", "quantity": 250}
-                ]
+                "note": " ",
+                "ItemReq": [{"item": "FoodPotMana3", "quantity": 250}]
             }
         },
         "dialogue": [
@@ -12093,17 +11310,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"item": "Quest49", "quantity": 20},
-                    {"item": "Quest50", "quantity": 10}
-                ],
+                "Rewards": [{"item": "Quest49", "quantity": 20}, {"item": "Quest50", "quantity": 10}],
                 "QuestName": "Coastiolyte1",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Coastiolyte1",
-                "CustomArray": [
-                    {"desc": "Open Summer Coolers:", "finalV": 12, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Open Summer Coolers:", "finalV": 12, "type": "GreaterEqual", "startV": 0}]
             },
             "Vibe Check": {
                 "Type": "Custom",
@@ -12113,13 +11325,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "Quest49", "quantity": 30},
-                    {"item": "Quest50", "quantity": 10}
-                ],
+                "Rewards": [{"item": "Quest49", "quantity": 30}, {"item": "Quest50", "quantity": 10}],
                 "QuestName": "Coastiolyte2",
                 "Difficulty": 2,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Coastiolyte2",
                 "CustomArray": [
                     {"desc": "Defeat Plasti Dougs:", "finalV": 12, "type": "GreaterEqual", "startV": 0},
@@ -12199,13 +11408,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 2,
-                "Rewards": [
-                    {"item": "Timecandy4", "quantity": 2},
-                    {"item": "Pearl4", "quantity": 5}
-                ],
+                "Rewards": [{"item": "Timecandy4", "quantity": 2}, {"item": "Pearl4", "quantity": 5}],
                 "QuestName": "Walupiggy1",
                 "Difficulty": 2,
-                "note": {"note": "[https://www.youtube.com/watch?v=9XXmfvCs9FY Treasure Hunt #1 Video]"},
+                "note": "[https://www.youtube.com/watch?v=9XXmfvCs9FY Treasure Hunt #1 Video]",
                 "CustomType": "Walupiggy1",
                 "CustomArray": [
                     {"desc": "Steps Completed:", "finalV": 6, "type": "GreaterEqual", "startV": 0},
@@ -12227,7 +11433,7 @@
                 ],
                 "QuestName": "Walupiggy2",
                 "Difficulty": 3,
-                "note": {"note": "[https://www.youtube.com/watch?v=R0xTfo3YedQ Treasure Hunt #2 Video]"},
+                "note": "[https://www.youtube.com/watch?v=R0xTfo3YedQ Treasure Hunt #2 Video]",
                 "CustomType": "Walupiggy2",
                 "CustomArray": [
                     {"desc": "Steps Completed:", "finalV": 7, "type": "GreaterEqual", "startV": 0},
@@ -12249,7 +11455,7 @@
                 ],
                 "QuestName": "Walupiggy3",
                 "Difficulty": 4,
-                "note": {"note": "[https://youtu.be/WYCo9kiJxug Treasure Hunt #3 Video]"},
+                "note": "[https://youtu.be/WYCo9kiJxug Treasure Hunt #3 Video]",
                 "CustomType": "Walupiggy3",
                 "CustomArray": [
                     {"desc": "Steps Completed:", "finalV": 8, "type": "GreaterEqual", "startV": 0},
@@ -12271,7 +11477,7 @@
                 ],
                 "QuestName": "Walupiggy4",
                 "Difficulty": 5,
-                "note": {"note": "[https://www.youtube.com/watch?v=33k5wVGUyII Treasure Hunt #4 Video]"},
+                "note": "[https://www.youtube.com/watch?v=33k5wVGUyII Treasure Hunt #4 Video]",
                 "CustomType": "Walupiggy4",
                 "CustomArray": [
                     {"desc": "Steps Completed:", "finalV": 8, "type": "GreaterEqual", "startV": 0},
@@ -12351,12 +11557,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 5,
-                "Rewards": [
-                    {"item": "DungCredits1", "quantity": 10}
-                ],
+                "Rewards": [{"item": "DungCredits1", "quantity": 10}],
                 "QuestName": "Toadstall1",
                 "Difficulty": 1,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Toadstall1",
                 "CustomArray": [
                     {"desc": "Create a Party:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -12371,17 +11575,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 8,
-                "Rewards": [
-                    {"item": "GemP16", "quantity": 2},
-                    {"item": "DungCredits1", "quantity": 15}
-                ],
+                "Rewards": [{"item": "GemP16", "quantity": 2}, {"item": "DungCredits1", "quantity": 15}],
                 "QuestName": "Toadstall2",
                 "Difficulty": 1,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Toadstall2",
-                "CustomArray": [
-                    {"desc": "Be in Party of 3:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Be in Party of 3:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Bother the Frogger!": {
                 "Type": "Custom",
@@ -12391,17 +11590,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 11,
-                "Rewards": [
-                    {"item": "GemP16", "quantity": 2},
-                    {"item": "DungCredits1", "quantity": 20}
-                ],
+                "Rewards": [{"item": "GemP16", "quantity": 2}, {"item": "DungCredits1", "quantity": 20}],
                 "QuestName": "Toadstall3",
                 "Difficulty": 1,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Toadstall3",
-                "CustomArray": [
-                    {"desc": "Defeat Grandfrogger:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Defeat Grandfrogger:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -12506,17 +11700,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"item": "GemP16", "quantity": 2},
-                    {"item": "DungCredits1", "quantity": 15}
-                ],
+                "Rewards": [{"item": "GemP16", "quantity": 2}, {"item": "DungCredits1", "quantity": 15}],
                 "QuestName": "Gangster Gus1",
                 "Difficulty": 1,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Gangster Gus1",
-                "CustomArray": [
-                    {"desc": "Dungeon Attempted:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Dungeon Attempted:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Perfect Progress Score": {
                 "Type": "Custom",
@@ -12526,17 +11715,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 6,
-                "Rewards": [
-                    {"item": "GemP16", "quantity": 3},
-                    {"item": "DungCredits1", "quantity": 25}
-                ],
+                "Rewards": [{"item": "GemP16", "quantity": 3}, {"item": "DungCredits1", "quantity": 25}],
                 "QuestName": "Gangster Gus2",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Gangster Gus2",
-                "CustomArray": [
-                    {"desc": "Defeat Snakenhotep:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Defeat Snakenhotep:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
             "Sanke Revival Denial": {
                 "Type": "Custom",
@@ -12546,17 +11730,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 11,
-                "Rewards": [
-                    {"item": "GemP16", "quantity": 3},
-                    {"item": "DungCredits1", "quantity": 25}
-                ],
+                "Rewards": [{"item": "GemP16", "quantity": 3}, {"item": "DungCredits1", "quantity": 25}],
                 "QuestName": "Gangster Gus3",
                 "Difficulty": 5,
-                "note": {"note": "Quest is bugged as of patch 1.30b "},
+                "note": "Quest is bugged as of patch 1.30b ",
                 "CustomType": "Gangster Gus3",
-                "CustomArray": [
-                    {"desc": "Defeat Snakenhotep 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Defeat Snakenhotep 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
         },
         "dialogue": [
@@ -12661,17 +11840,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 4,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 40},
-                    {"item": "Timecandy8", "quantity": 4}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 40}, {"item": "Timecandy8", "quantity": 4}],
                 "QuestName": "Falloween Pumpkin1",
                 "Difficulty": 1,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Falloween Pumpkin1",
-                "CustomArray": [
-                    {"desc": "Defeat monsters:", "finalV": 50, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Defeat monsters:", "finalV": 50, "type": "GreaterEqual", "startV": 0}]
             },
             "The Scaryness": {
                 "Type": "Custom",
@@ -12681,13 +11855,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 7,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 50},
-                    {"item": "Timecandy8", "quantity": 5}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 50}, {"item": "Timecandy8", "quantity": 5}],
                 "QuestName": "Falloween Pumpkin2",
                 "Difficulty": 3,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Falloween Pumpkin2",
                 "CustomArray": [
                     {"desc": "Play a Party Dungeon:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -12707,17 +11878,12 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 10,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 50},
-                    {"item": "Timecandy8", "quantity": 5}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 50}, {"item": "Timecandy8", "quantity": 5}],
                 "QuestName": "Falloween Pumpkin3",
                 "Difficulty": 5,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Falloween Pumpkin3",
-                "CustomArray": [
-                    {"desc": "Defeat Monsters:", "finalV": 300, "type": "GreaterEqual", "startV": 0}
-                ]
+                "CustomArray": [{"desc": "Defeat Monsters:", "finalV": 300, "type": "GreaterEqual", "startV": 0}]
             },
             "The Booeyness": {
                 "Type": "Custom",
@@ -12727,22 +11893,17 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 13,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 60},
-                    {"item": "Timecandy8", "quantity": 6}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 60}, {"item": "Timecandy8", "quantity": 6}],
                 "QuestName": "Falloween Pumpkin4",
                 "Difficulty": 7,
-                "note": {"note": " "},
+                "note": " ",
                 "CustomType": "Falloween Pumpkin4",
-                "CustomArray": [
-                    {
-                        "desc": "Say 'Boo' to People:",
-                        "finalV": 200,
-                        "type": "GreaterEqual",
-                        "startV": 0
-                    }
-                ]
+                "CustomArray": [{
+                    "desc": "Say 'Boo' to People:",
+                    "finalV": 200,
+                    "type": "GreaterEqual",
+                    "startV": 0
+                }]
             },
             "The Afterparty": {
                 "Type": "Custom",
@@ -12752,22 +11913,17 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 16,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 80},
-                    {"item": "Timecandy8", "quantity": 6}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 80}, {"item": "Timecandy8", "quantity": 6}],
                 "QuestName": "Falloween Pumpkin5",
                 "Difficulty": 7,
-                "note": {"note": "The event ended without this quest being completable."},
+                "note": "The event ended without this quest being completable.",
                 "CustomType": "Falloween Pumpkin5",
-                "CustomArray": [
-                    {
-                        "desc": "Defeat mobs in Party:",
-                        "finalV": 500,
-                        "type": "GreaterEqual",
-                        "startV": 0
-                    }
-                ]
+                "CustomArray": [{
+                    "desc": "Defeat mobs in Party:",
+                    "finalV": 500,
+                    "type": "GreaterEqual",
+                    "startV": 0
+                }]
             }
         },
         "dialogue": [

@@ -42,19 +42,31 @@ class IdleonModel(BaseModel):
 		return []
 
 	def toDict(self, ignored: Set[str] = set()) -> Dict[str, any]:
-		firstIter = dict(self)
-		for atr, val in firstIter.items():
+		firstIter = {}
+		for atr, val in self:
 			if isinstance(val, IdleonModel) and val.shouldCompare():
-				firstIter[atr] = val.toDict(ignored)
-			if isinstance(val, list):
+				subDict = val.toDict(ignored)
+				if not subDict:
+					firstIter[atr] = subDict
+					continue
+				if len(subDict.keys()) > 1:
+					firstIter[atr] = subDict
+					continue
+				key = list(subDict.keys())[0]
+				firstIter[atr] = subDict[key]
+				continue
+			if isinstance(val, list) and val:
 				if not val:
 					continue
-				elif isinstance(val[0], IdleonModel) and val[0].shouldCompare():
+				if isinstance(val[0], IdleonModel) and val[0].shouldCompare():
 					firstIter[atr] = [x.toDict(ignored) for x in val]
-			if isinstance(val, dict):
+					continue
+			if isinstance(val, dict) and val:
 				key = list(val.keys())[0]
 				if isinstance(val[key], IdleonModel) and val[key].shouldCompare():
 					firstIter[atr] = {k: v.toDict(ignored) for k, v in val.items()}
+					continue
+			firstIter[atr] = val
 
 		for ignore in ignored:
 			firstIter.pop(ignore, None)

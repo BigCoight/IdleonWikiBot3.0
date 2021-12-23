@@ -3,10 +3,11 @@ from typing import List
 from pydantic import BaseModel
 
 from definitions.common.Component import Component
+from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Numeric, Integer
 
 
-class Building(BaseModel):
+class Building(IdleonModel):
 	description: str
 	bonus: str
 	lvlUpReq: List[Component]

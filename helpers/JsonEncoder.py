@@ -4,6 +4,8 @@ from typing import Union
 
 from pydantic import BaseModel
 
+from definitions.master.IdleonModel import IdleonModel
+
 
 class CompactJSONEncoder(json.JSONEncoder):
 	"""A JSON Encoder that puts small containers on single lines."""
@@ -44,8 +46,8 @@ class CompactJSONEncoder(json.JSONEncoder):
 				return "{\n" + ",\n".join(output) + "\n" + self.indent_str + "}"
 			else:
 				return "{}"
-		elif isinstance(o, BaseModel):
-			return self.encode(o.dict())
+		elif isinstance(o, IdleonModel):
+			return self.encode(o.toDict())
 		elif isinstance(o, Enum):
 			return f'"{o.name}"'
 		elif isinstance(o, float):  # Use scientific notation for floats, where appropiate

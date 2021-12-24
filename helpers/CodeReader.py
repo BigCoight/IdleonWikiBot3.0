@@ -89,7 +89,7 @@ class IdleonReader:
 		self.codeReader.addSection("TalentIconNames = function ()", "TalentNames")
 		self.codeReader.addSection("TalentDescriptions = function ()", "TalentData")
 		self.codeReader.addSection("ClassNames = function ()", "ClassNames")
-		self.codeReader.addSection("atkMoveMap = new ", "ActiveSkill")
+		self.codeReader.addSection("atkMoveMap = new ", "ActiveSkill","(Vi.get = function () {")
 		self.codeReader.addSection("StatueInfo = function () {", "StatueInfo")
 		self.codeReader.addSection("CardStuff = function ()", "CardInfo")
 		self.codeReader.addSection("TaskUnlocks = function ()", "TaskUnlocks")

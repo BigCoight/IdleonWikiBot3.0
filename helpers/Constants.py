@@ -28,3 +28,4 @@ class Constants:
 	nameConflicts = {"Ghost": "Ghost (Event)", "Dog Bone": "Dog Bone (NPC)"}
 	postNames = ["Simple Shippin", "Plan-it Express", "Dudes Next Door", "Down Undelivery", "Alpine Suppliers",
 	             "Cosmic Carrier"]
+	stampTypes = ["Combat Stamp", "Skills Stamp", "Misc Stamp"]

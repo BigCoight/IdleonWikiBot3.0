@@ -7,9 +7,11 @@ from definitions.itemdef.initialtypes.QuestItem import QuestItem
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
 from definitions.itemdef.specifictypes.master.BonusItem import BonusItem
 from definitions.master.IdleonModel import IdleonModel
+from helpers.Constants import Constants
 from helpers.CustomTypes import Numeric, Integer
 from helpers.HelperFunctions import replaceUnderscores
 from repositories.item.ItemDetailRepo import ItemDetailRepo
+from repositories.item.StampDescriptionRepo import StampDescriptionRepo
 
 
 class StampData(IdleonModel):
@@ -57,10 +59,14 @@ class StampData(IdleonModel):
 
 
 class StampItem(BonusItem):
+
 	@classmethod
 	def getBonus(cls, item: Union[ConsumableItem, QuestItem]) -> str:
-		stampData = item.desc_line1.split(",")
-		return stampData[-2].split("{}")[1]
+		if item.displayName == "FILLER":
+			return "FILLER"
+		s, t = cls.stampType(item)
+		descs = StampDescriptionRepo.get(s)
+		return descs.descriptions[t-1]
 
 	@classmethod
 	def getDesc(cls, item: Union[ConsumableItem, QuestItem]) -> str:
@@ -99,13 +105,13 @@ class StampItem(BonusItem):
 
 	@classmethod
 	def stampType(cls, item: QuestItem) -> Tuple[str, int]:
-		stampTypes = ["Combat", "Skills", "Misc"]
+
 		ind = 0
 		id = str(item.ID)
 		if len(id) > 2:
 			ind = int(id[0])
 
-		return stampTypes[ind] + " Stamp", int(id[-2:]) + 1
+		return Constants.stampTypes[ind], int(id[-2:]) + 1
 
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
 		base = super().intToWiki()

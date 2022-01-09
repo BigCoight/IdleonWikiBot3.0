@@ -20,7 +20,7 @@ class Item(IdleonModel):
 	anvilProduction: Optional[AnvilProduce] = None
 	detDrops: Optional[DetDrops] = None
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = self.getCorrectHead()
 		res += self.item.writeWiki()
 		if self.recipe:

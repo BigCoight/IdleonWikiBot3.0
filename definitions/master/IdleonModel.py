@@ -18,14 +18,16 @@ class IdleonModel(BaseModel):
 	def shouldCompare(self) -> bool:
 		return True
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = ""
 		for wiki, atr in self.intToWiki().items():
 			if isinstance(atr, str):
-				if self.dict()[atr] and self.dict()[atr] not in {"00"}:
-					res += f"|{wiki}={self.dict()[atr]}"
-					if newLine:
-						res += "\n"
+				cVal = self.dict()[atr]
+				if (not cVal or cVal in {"00"}) and ignoreZero:
+					continue
+				res += f"|{wiki}={self.dict()[atr]}"
+				if newLine:
+					res += "\n"
 			else:
 				if atr():
 					res += f"|{wiki}={atr()}"

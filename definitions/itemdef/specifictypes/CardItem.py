@@ -38,7 +38,7 @@ class CardItem(BaseItem):
 			cardData = cardData,
 		)
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = super().writeWiki()
 		if self.cardData:
 			res += self.cardData.writeWiki()

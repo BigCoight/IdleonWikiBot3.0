@@ -27,7 +27,7 @@ class DungItem(IdleonModel):
 			"world": "world",
 		}
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{RNGItem"
 		res += super().writeWiki(False)
 		return res + "}}"

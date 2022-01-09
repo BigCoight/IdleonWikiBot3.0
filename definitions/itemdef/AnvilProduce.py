@@ -10,7 +10,7 @@ class AnvilProduce(IdleonModel):
 	levelReq: Integer
 	exp: Integer
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{ProductionSlot" + "\n"
 		res += super().writeWiki(False)
 		res += "}}"

@@ -17,7 +17,7 @@ class DetailedRecipe(IdleonModel):
 	detRecipe: List[DetRecipeComponent]
 	detRecipeTotals: List[Component] = []
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{detrecipe/tab\n|reci=\n"
 		for comp in self.detRecipe:
 			indent = 3 if comp.indent == 0 else comp.indent * 40
@@ -40,7 +40,7 @@ class Recipe(IdleonModel):
 	recipeFrom: List[Source] = []
 	detailedRecipe: Optional[DetailedRecipe] = None
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{ForgeSlot\n"
 		res += super().writeWiki()
 		res += self.writeRecipe()

@@ -28,7 +28,7 @@ class NpcHead(IdleonModel):
 			"notes": self.getNotes,
 		}
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{npc\n"
 		res += super().writeWiki()
 		res += "}}"

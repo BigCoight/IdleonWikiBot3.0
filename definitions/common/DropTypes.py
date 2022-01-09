@@ -16,7 +16,7 @@ class Drop(IdleonModel):
 	chance: float
 	questLink: str
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = self.writeDrop()
 		if self.questLink != "N/A":
 			res += f"|special={self.questLink}"

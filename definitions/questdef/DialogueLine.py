@@ -9,7 +9,7 @@ class DialogueLine(IdleonModel):
 	NextIndex: Integer
 	Name: str = ""
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{dialogue/row|text=" + self.DialogueText
 		if self.Name:
 			res += f"|quest={self.Name}"

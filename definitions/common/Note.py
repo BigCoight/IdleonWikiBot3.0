@@ -6,7 +6,7 @@ from definitions.master.IdleonModel import IdleonModel
 class Note(IdleonModel):
 	note: str
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		return "|notes=" + self.note + "\n"
 
 	@validator("note")

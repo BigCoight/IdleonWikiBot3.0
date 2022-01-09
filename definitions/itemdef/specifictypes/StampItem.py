@@ -29,10 +29,10 @@ class StampData(IdleonModel):
 	upgradeText: str
 	i12: Numeric
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{stampdata"
-		res += super().writeWiki(False)
-		res += "}}"
+		res += super().writeWiki(newLine = False, ignoreZero = False)
+		res += "}}\n"
 		return res
 
 	def getMaterial(self):

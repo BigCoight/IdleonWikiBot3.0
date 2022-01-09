@@ -26,7 +26,7 @@ class Talent(IdleonModel):
 			return 0
 		return v
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{Talent\n"
 		res += f"|name={self.name}\n"
 		res += f"|textArr={self.getDesc()}\n"
@@ -47,5 +47,5 @@ class Talent(IdleonModel):
 class TalentTree(IdleonModel):
 	talents: Dict[str, Talent]
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		return "\n".join(map(lambda x: x.writeWiki(), self.talents.values()))

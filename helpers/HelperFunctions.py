@@ -175,11 +175,11 @@ def strToArray(v: str) -> List[str]:
 		the resulting list
 
 	"""
-	string = v.replace(",_", "&&&&").replace(",0", "$$$$")
+	string = v.replace(",_", "&&&&").replace(",0", "$$$$").replace("{_", "****")
 	parts = formatStr(string, ["[", "]", '"', "return", ";", "\n", "{", "}"]).split(",")
 	res = []
 	for x in parts:
-		formatted = formatStr(x).replace("&&&&", ", ").replace("$$$$", ",0")
+		formatted = formatStr(x).replace("&&&&", ", ").replace("$$$$", ",0").replace("****", "{_")
 		if formatted:
 			res.append(formatted)
 	return res

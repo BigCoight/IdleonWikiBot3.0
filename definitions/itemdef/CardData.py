@@ -4,7 +4,7 @@ from pydantic import validator
 
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Numeric, Integer
-from helpers.HelperFunctions import replaceUnderscores
+from helpers.HelperFunctions import replaceUnderscores, formatStr
 
 
 class CardData(IdleonModel):
@@ -23,7 +23,10 @@ class CardData(IdleonModel):
 		return {
 			"order": "order",
 			"category": "category",
-			"effect": "effect",
+			"effect": self.getEffect,
 			"bonus": "bonus",
 			"reqtier": "perTier"
 		}
+
+	def getEffect(self) -> str:
+		return formatStr(self.effect, ["{", "}"])

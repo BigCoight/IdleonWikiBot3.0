@@ -9,7 +9,7 @@ from definitions.itemdef.specifictypes.master.BonusItem import BonusItem
 from definitions.master.IdleonModel import IdleonModel
 from helpers.Constants import Constants
 from helpers.CustomTypes import Numeric, Integer
-from helpers.HelperFunctions import replaceUnderscores
+from helpers.HelperFunctions import replaceUnderscores, formatStr
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.StampDescriptionRepo import StampDescriptionRepo
 
@@ -105,7 +105,6 @@ class StampItem(BonusItem):
 
 	@classmethod
 	def stampType(cls, item: QuestItem) -> Tuple[str, int]:
-
 		ind = 0
 		id = str(item.ID)
 		if len(id) > 2:
@@ -118,8 +117,12 @@ class StampItem(BonusItem):
 		extra = {
 			"number": "ID",
 			"material": self.getMaterial,
+			"bonus": self.getBonusWiki
 		}
 		return {**base, **extra}
+
+	def getBonusWiki(self) -> str:
+		return formatStr(self.bonus, ["{", "}"])
 
 	def writeAfter(self) -> List[IdleonModel]:
 		return [self.stampData]

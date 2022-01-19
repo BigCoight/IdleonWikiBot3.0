@@ -1,5 +1,5 @@
 from definitions.misc.TaskDescription import TaskDescription
-from helpers.HelperFunctions import getFromSplitArray, replaceUnderscores
+from helpers.HelperFunctions import getFromSplitArray
 from repositories.master.ListRepository import ListRepository
 from typing import List
 
@@ -34,3 +34,4 @@ class TaskDescriptionRepo(ListRepository[TaskDescription]):
 					descLine2 = section[4].replace("_", " "),
 					numbers = section[5:],
 				))
+				

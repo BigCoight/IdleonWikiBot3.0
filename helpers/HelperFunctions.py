@@ -5,10 +5,10 @@ import numpy as np
 
 from definitions.common.Source import Source
 
-reAll = r'[ a-zA-Z0-_\'n()@,!$+{/}%:.~\-&]'
+reAll = r'[ a-zA-Z0-_\'n()@,!$+{/}%:.~\-&\|]'
 
 
-def getFromSplitArray(v: str, underscores: bool = True) -> List[List[str]]:
+def getFromSplitArray(v: str, replaceUnderscores: bool = True) -> List[List[str]]:
 	"""
 	Converts a section into a list of strings based upon the exportation of an array represented as
 	"0 1 2 3 4 5 6 7 8 9".split(" ")
@@ -25,10 +25,7 @@ def getFromSplitArray(v: str, underscores: bool = True) -> List[List[str]]:
 	for subSection in subSections:
 		internalList = []
 		for i in range(len(subSection)):
-			if underscores:
-				internalList.append(replaceUnderscores(subSection[i]))
-			else:
-				internalList.append(subSection[i])
+			internalList.append(formatStr(subSection[i], replaceUnderscores=replaceUnderscores))
 		newList.append(internalList[:])
 	return newList
 

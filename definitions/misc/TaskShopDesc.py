@@ -1,10 +1,10 @@
 from typing import List
 
-from pydantic import BaseModel
+from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Integer
 
 
-class TaskShopDesc(BaseModel):
+class TaskShopDesc(IdleonModel):
 	descLine1: str
 	descLine2: str
 	number1: Integer

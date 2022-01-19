@@ -28,10 +28,9 @@ class EnemyRepo(Repository[Enemy]):
 	@classmethod
 	def generateRepo(cls) -> None:
 		for enemy, data in EnemyDetailsRepo.items():
-			drops = EnemyTableRepo.get(enemy)
 			cls.add(enemy, Enemy(
 				details = data,
-				drops = drops.drops if drops else [],
+				drops = EnemyTableRepo.get(enemy),
 				mapData = MapDataRepo.get(enemy),
 				navigation = EnemyNavRepo.get(enemy),
 				bossData = BossDetailRepo.get(enemy),

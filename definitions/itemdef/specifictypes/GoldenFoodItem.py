@@ -14,7 +14,7 @@ class GoldenFoodData(IdleonModel):
 	effect: str
 	amount: Integer
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{gfoodbonus|"
 		res += f"{self.amount}|{self.effect}"
 		res += "}}\n"

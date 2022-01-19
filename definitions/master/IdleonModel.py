@@ -10,20 +10,24 @@ class IdleonModel(BaseModel):
 	def fromList(cls, data: List[any]) -> IdleonModel:
 		keys = cls.__fields__.keys()
 		if len(keys) != len(data):
-			raise ValueError(f"Length of keys ({len(keys)}) does not match length of data ({len(data)})")
+			raise ValueError(f"Error in creating {cls.__name__}:\n"
+			                 f" Length of object keys ({len(keys)}) does not match length of input data "
+			                 f"({len(data)})")
 		return cls.parse_obj({key: val for key, val in zip(keys, data)})
 
 	def shouldCompare(self) -> bool:
 		return True
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = ""
 		for wiki, atr in self.intToWiki().items():
 			if isinstance(atr, str):
-				if self.dict()[atr] and self.dict()[atr] not in {"00"}:
-					res += f"|{wiki}={self.dict()[atr]}"
-					if newLine:
-						res += "\n"
+				cVal = self.dict()[atr]
+				if (not cVal or cVal in {"00"}) and ignoreZero:
+					continue
+				res += f"|{wiki}={self.dict()[atr]}"
+				if newLine:
+					res += "\n"
 			else:
 				if atr():
 					res += f"|{wiki}={atr()}"
@@ -40,19 +44,31 @@ class IdleonModel(BaseModel):
 		return []
 
 	def toDict(self, ignored: Set[str] = set()) -> Dict[str, any]:
-		firstIter = dict(self)
-		for atr, val in firstIter.items():
+		firstIter = {}
+		for atr, val in self:
 			if isinstance(val, IdleonModel) and val.shouldCompare():
-				firstIter[atr] = val.toDict(ignored)
-			if isinstance(val, list):
+				subDict = val.toDict(ignored)
+				if not subDict:
+					firstIter[atr] = subDict
+					continue
+				if len(subDict.keys()) > 1:
+					firstIter[atr] = subDict
+					continue
+				key = list(subDict.keys())[0]
+				firstIter[atr] = subDict[key]
+				continue
+			if isinstance(val, list) and val:
 				if not val:
 					continue
-				elif isinstance(val[0], IdleonModel) and val[0].shouldCompare():
+				if isinstance(val[0], IdleonModel) and val[0].shouldCompare():
 					firstIter[atr] = [x.toDict(ignored) for x in val]
-			if isinstance(val, dict):
+					continue
+			if isinstance(val, dict) and val:
 				key = list(val.keys())[0]
 				if isinstance(val[key], IdleonModel) and val[key].shouldCompare():
 					firstIter[atr] = {k: v.toDict(ignored) for k, v in val.items()}
+					continue
+			firstIter[atr] = val
 
 		for ignore in ignored:
 			firstIter.pop(ignore, None)

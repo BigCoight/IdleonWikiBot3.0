@@ -25,7 +25,7 @@ class FishingTKItem(DescItem):
 			description = cls.getDesc(item),
 			fishingToolkit = fishingToolkit)
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = super().writeWiki()
 		res += self.fishingToolkit.writeWiki()
 		return res

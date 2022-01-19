@@ -2,14 +2,16 @@ from typing import List
 
 from pydantic import BaseModel
 
+from definitions.master.IdleonModel import IdleonModel
 
-class TaskUnlock(BaseModel):
+
+class TaskUnlock(IdleonModel):
 	item: str
 	tabNo: int
 	recipNo: int
 
 
-class TaskUnlocks(BaseModel):
+class TaskUnlocks(IdleonModel):
 	unlocks: List[List[TaskUnlock]]
 
 

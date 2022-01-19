@@ -2,10 +2,11 @@ from typing import List
 
 from pydantic import BaseModel
 
+from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Numeric
 
 
-class DungPassive(BaseModel):
+class DungPassive(IdleonModel):
 	effect: str
 	x1: Numeric
 	x2: Numeric
@@ -14,5 +15,5 @@ class DungPassive(BaseModel):
 	lvlUpText: str
 
 
-class DungPassives(BaseModel):
+class DungPassives(IdleonModel):
 	passives: List[DungPassive]

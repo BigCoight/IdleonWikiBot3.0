@@ -10,7 +10,7 @@ class Sources(IdleonModel):
 	recipeFrom: List[Source] = []
 	questAss: List[Source] = []
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = ""
 		if self.questAss:
 			res += "|quest=" + ", ".join(map(wikiSource, self.questAss))

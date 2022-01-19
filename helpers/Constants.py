@@ -8,7 +8,7 @@ class Constants:
 	                  "CritterCard5", "CritterCard6", "CritterCard7", "CritterCard8", "CritterCard9",
 	                  "Boss3C", "rockG", "frogP", "frogNest", "frogD", "frogY", "frogR", "frogW",
 	                  "frogGR", "rockS", "target", "rocky", "totem", "cactus", "snakeZ", "SummerEvent1",
-	                  "EasterEvent1", "SummerEvent2", "xmasEvent2", "Boss2C", "wolfC", "Blank0ramaFiller"}
+	                  "EasterEvent1", "SummerEvent2", "xmasEvent2", "Boss2C", "wolfC", "Blank0ramaFiller", "xmasEvent3"}
 	skillNames = ["Catching", "Fishing",
 	              "Choppin", "Mining", "Trapping", "Worship"]
 	toolSkills = {"aHatchet": "Choppin", "aFishingRod": "Fishing",
@@ -28,3 +28,4 @@ class Constants:
 	nameConflicts = {"Ghost": "Ghost (Event)", "Dog Bone": "Dog Bone (NPC)"}
 	postNames = ["Simple Shippin", "Plan-it Express", "Dudes Next Door", "Down Undelivery", "Alpine Suppliers",
 	             "Cosmic Carrier"]
+	stampTypes = ["Combat Stamp", "Skills Stamp", "Misc Stamp"]

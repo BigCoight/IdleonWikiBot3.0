@@ -16,7 +16,7 @@ class Enemy(IdleonModel):
 	navigation: Optional[EnemyNav] = None
 	bossData: Optional[BossDetails] = None
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{InfoEnemy\n"
 		res += self.details.writeWiki()
 		res += self.mapData.writeWiki() if self.mapData else ""

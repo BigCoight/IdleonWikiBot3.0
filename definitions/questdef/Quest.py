@@ -82,7 +82,7 @@ class Quest(DialogueLine):
 	def getRequirements(self) -> Union[List[Component], List[CustomReq]]:
 		raise NotImplementedError
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		questText = self.DialogueText.split("QUEST:")
 		q = self.DialogueText
 		if len(questText) > 1:

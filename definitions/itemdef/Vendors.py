@@ -32,7 +32,7 @@ class Vendor(IdleonModel):
 class ItemVendors(IdleonModel):
 	vendors: List[Vendor]
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{Vendoritem/head}}" + "\n"
 		for vendor in self.vendors:
 			res += "{{Vendoritem" + vendor.writeWiki(False) + "}}" + "\n"

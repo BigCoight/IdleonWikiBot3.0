@@ -11,7 +11,7 @@ class Npc(IdleonModel):
 	quests: Dict[str, Quest]
 	dialogue: List[DialogueLine]
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = self.head.writeWiki()
 		res += "\n"
 		res += "{{Quest/head}}\n"

@@ -1,5 +1,7 @@
 from pydantic import BaseModel
 
+from definitions.master.IdleonModel import IdleonModel
 
-class DungTrait(BaseModel):
+
+class DungTrait(IdleonModel):
 	name: str

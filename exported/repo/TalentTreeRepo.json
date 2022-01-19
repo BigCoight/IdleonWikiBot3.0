@@ -11,7 +11,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Hp",
-                "skillIndex": 0
+                "skillIndex": 0,
+                "activeData": null
             },
             "Mana Booster": {
                 "name": "Mana Booster",
@@ -23,7 +24,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Mp",
-                "skillIndex": 1
+                "skillIndex": 1,
+                "activeData": null
             },
             "Star Player": {
                 "name": "Star Player",
@@ -35,7 +37,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Star Talent Point",
-                "skillIndex": 8
+                "skillIndex": 8,
+                "activeData": null
             },
             "Bucklered Up": {
                 "name": "Bucklered Up",
@@ -47,7 +50,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{% Total Def",
-                "skillIndex": 9
+                "skillIndex": 9,
+                "activeData": null
             },
             "Sharpened Axe": {
                 "name": "Sharpened Axe",
@@ -59,7 +63,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{ Base Weapon Power",
-                "skillIndex": 5
+                "skillIndex": 5,
+                "activeData": null
             },
             "Fist Of Rage": {
                 "name": "Fist Of Rage",
@@ -71,7 +76,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Str",
-                "skillIndex": 10
+                "skillIndex": 10,
+                "activeData": null
             },
             "Quickness Boots": {
                 "name": "Quickness Boots",
@@ -83,7 +89,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Agi",
-                "skillIndex": 11
+                "skillIndex": 11,
+                "activeData": null
             },
             "Book Of The Wise": {
                 "name": "Book Of The Wise",
@@ -95,7 +102,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Wis",
-                "skillIndex": 12
+                "skillIndex": 12,
+                "activeData": null
             },
             "Lucky Clover": {
                 "name": "Lucky Clover",
@@ -107,7 +115,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk",
-                "skillIndex": 13
+                "skillIndex": 13,
+                "activeData": null
             },
             "Gilded Sword": {
                 "name": "Gilded Sword",
@@ -119,7 +128,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 6
+                "skillIndex": 6,
+                "activeData": null
             },
             "Happy Dude": {
                 "name": "Happy Dude",
@@ -131,7 +141,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Exp Gain",
-                "skillIndex": 75
+                "skillIndex": 75,
+                "activeData": null
             },
             "Knucklebuster": {
                 "name": "Knucklebuster",
@@ -143,7 +154,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Critical Damage",
-                "skillIndex": 76
+                "skillIndex": 76,
+                "activeData": null
             },
             "Feather Flight": {
                 "name": "Feather Flight",
@@ -155,7 +167,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Move Speed",
-                "skillIndex": 77
+                "skillIndex": 77,
+                "activeData": null
             },
             "Extra Bags": {
                 "name": "Extra Bags",
@@ -167,7 +180,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Mat Carry Cap",
-                "skillIndex": 78
+                "skillIndex": 78,
+                "activeData": null
             },
             "Sleepin' On The Job": {
                 "name": "Sleepin' On The Job",
@@ -179,7 +193,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate",
-                "skillIndex": 79
+                "skillIndex": 79,
+                "activeData": null
             }
         }
     },
@@ -195,7 +210,19 @@
                 "y2": 30,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} Mobs",
-                "skillIndex": 15
+                "skillIndex": 15,
+                "activeData": {
+                    "K": 1.15,
+                    "D": 1.35,
+                    "s": 1.3,
+                    "cooldown": 12,
+                    "castTime": 1.4,
+                    "manaCost": 5,
+                    "inputReq": 0,
+                    "AFKrange": 90,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Breakin' The Bank": {
                 "name": "Breakin' The Bank",
@@ -207,7 +234,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{X Multi",
-                "skillIndex": 16
+                "skillIndex": 16,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 2000,
+                    "castTime": 0.45,
+                    "manaCost": 5,
+                    "inputReq": 0,
+                    "AFKrange": 125,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Supernova Player": {
                 "name": "Supernova Player",
@@ -219,7 +258,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Star Talent Point",
-                "skillIndex": 17
+                "skillIndex": 17,
+                "activeData": null
             },
             "Two Punch Man": {
                 "name": "Two Punch Man",
@@ -231,7 +271,8 @@
                 "y2": 3,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +}% 2Nd Dmg",
-                "skillIndex": 18
+                "skillIndex": 18,
+                "activeData": null
             },
             "Gimme Gimme": {
                 "name": "Gimme Gimme",
@@ -243,7 +284,19 @@
                 "y2": 20,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Chance & +} Minutes",
-                "skillIndex": 19
+                "skillIndex": 19,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 120,
+                    "castTime": 0.45,
+                    "manaCost": 5,
+                    "inputReq": 0,
+                    "AFKrange": 125,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Lucky Hit": {
                 "name": "Lucky Hit",
@@ -255,7 +308,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect",
-                "skillIndex": 20
+                "skillIndex": 20,
+                "activeData": null
             },
             "F'Luk'Ey Fabrics": {
                 "name": "F'Luk'Ey Fabrics",
@@ -267,7 +321,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% More Luk From Equips",
-                "skillIndex": 21
+                "skillIndex": 21,
+                "activeData": null
             },
             "Chaching!": {
                 "name": "Chaching!",
@@ -279,7 +334,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Mo Money",
-                "skillIndex": 22
+                "skillIndex": 22,
+                "activeData": null
             },
             "Lucky Horseshoe": {
                 "name": "Lucky Horseshoe",
@@ -291,7 +347,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk",
-                "skillIndex": 23
+                "skillIndex": 23,
+                "activeData": null
             },
             "Curse Of Mr Looty Booty": {
                 "name": "Curse Of Mr Looty Booty",
@@ -303,7 +360,8 @@
                 "y2": 100,
                 "funcY": "decay",
                 "lvlUpText": "+{% Drop & -}% Dmg",
-                "skillIndex": 24
+                "skillIndex": 24,
+                "activeData": null
             },
             "Its Your Birthday!": {
                 "name": "Its Your Birthday!",
@@ -315,7 +373,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Chance",
-                "skillIndex": 25
+                "skillIndex": 25,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 86000,
+                    "castTime": 0.45,
+                    "manaCost": 5,
+                    "inputReq": 0,
+                    "AFKrange": 125,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Cmon Out Crystals": {
                 "name": "Cmon Out Crystals",
@@ -327,7 +397,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Spawn Chance",
-                "skillIndex": 26
+                "skillIndex": 26,
+                "activeData": null
             },
             "Reroll Pls": {
                 "name": "Reroll Pls",
@@ -339,7 +410,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Chance",
-                "skillIndex": 27
+                "skillIndex": 27,
+                "activeData": null
             },
             "Cards Galore": {
                 "name": "Cards Galore",
@@ -351,7 +423,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Card Drop Chance",
-                "skillIndex": 28
+                "skillIndex": 28,
+                "activeData": null
             },
             "Rares Everywhere!": {
                 "name": "Rares Everywhere!",
@@ -363,7 +436,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Rare Drop Table Items",
-                "skillIndex": 29
+                "skillIndex": 29,
+                "activeData": null
             }
         }
     },
@@ -379,7 +453,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Dmg",
-                "skillIndex": 30
+                "skillIndex": 30,
+                "activeData": {
+                    "K": 1.2,
+                    "D": 1.3,
+                    "s": 1.3,
+                    "cooldown": 20,
+                    "castTime": 0.45,
+                    "manaCost": 5,
+                    "inputReq": 1,
+                    "AFKrange": 125,
+                    "AFKtype": "projectile",
+                    "AFKactivity": 0
+                }
             },
             "Skillage Damage": {
                 "name": "Skillage Damage",
@@ -391,7 +477,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Dmg",
-                "skillIndex": 31
+                "skillIndex": 31,
+                "activeData": null
             },
             "Printer Go Brrr": {
                 "name": "Printer Go Brrr",
@@ -403,7 +490,19 @@
                 "y2": 60,
                 "funcY": "decay",
                 "lvlUpText": "{ Hours & +}% No Cd Chance",
-                "skillIndex": 32
+                "skillIndex": 32,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 82000,
+                    "castTime": 0.45,
+                    "manaCost": 5,
+                    "inputReq": 0,
+                    "AFKrange": 125,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Triple Jab": {
                 "name": "Triple Jab",
@@ -415,7 +514,8 @@
                 "y2": 0,
                 "funcY": "add",
                 "lvlUpText": "+{% 3Rd Dmg & +} Other Dmg",
-                "skillIndex": 33
+                "skillIndex": 33,
+                "activeData": null
             },
             "One Step Ahead": {
                 "name": "One Step Ahead",
@@ -427,7 +527,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "Pawn To B{",
-                "skillIndex": 34
+                "skillIndex": 34,
+                "activeData": null
             },
             "Lucky Charms": {
                 "name": "Lucky Charms",
@@ -439,7 +540,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect",
-                "skillIndex": 35
+                "skillIndex": 35,
+                "activeData": null
             },
             "Clever Clover Obols": {
                 "name": "Clever Clover Obols",
@@ -451,7 +553,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% More Luk From Obols",
-                "skillIndex": 36
+                "skillIndex": 36,
+                "activeData": null
             },
             "Skilliest Statue": {
                 "name": "Skilliest Statue",
@@ -463,7 +566,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses",
-                "skillIndex": 37
+                "skillIndex": 37,
+                "activeData": null
             },
             "Bliss N Chips": {
                 "name": "Bliss N Chips",
@@ -475,7 +579,8 @@
                 "y2": 0,
                 "funcY": "add",
                 "lvlUpText": "+{ Max Lv & +} Max Lv",
-                "skillIndex": 38
+                "skillIndex": 38,
+                "activeData": null
             },
             "Colloquial Containers": {
                 "name": "Colloquial Containers",
@@ -487,7 +592,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv For Sleep On Job",
-                "skillIndex": 39
+                "skillIndex": 39,
+                "activeData": null
             },
             "Maestro Transfusion": {
                 "name": "Maestro Transfusion",
@@ -499,7 +605,19 @@
                 "y2": 100,
                 "funcY": "decay",
                 "lvlUpText": "+{% Exp Gain & -}% Efficiency",
-                "skillIndex": 40
+                "skillIndex": 40,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 120,
+                    "castTime": 0.45,
+                    "manaCost": 5,
+                    "inputReq": 0,
+                    "AFKrange": 125,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Crystal Countdown": {
                 "name": "Crystal Countdown",
@@ -511,7 +629,8 @@
                 "y2": 1,
                 "funcY": "add",
                 "lvlUpText": "+{% Max Exp Reduction",
-                "skillIndex": 41
+                "skillIndex": 41,
+                "activeData": null
             },
             "Left Hand Of Learning": {
                 "name": "Left Hand Of Learning",
@@ -523,7 +642,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Skill Exp To Family",
-                "skillIndex": 42
+                "skillIndex": 42,
+                "activeData": null
             },
             "Right Hand Of Action": {
                 "name": "Right Hand Of Action",
@@ -535,7 +655,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Skill Eff To Family",
-                "skillIndex": 43
+                "skillIndex": 43,
+                "activeData": null
             },
             "Jman Was Better": {
                 "name": "Jman Was Better",
@@ -547,7 +668,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Journeyman Point",
-                "skillIndex": 44
+                "skillIndex": 44,
+                "activeData": null
             }
         }
     },
@@ -565,7 +687,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Hp",
-                "skillIndex": 0
+                "skillIndex": 0,
+                "activeData": null
             },
             "Mana Booster": {
                 "name": "Mana Booster",
@@ -577,7 +700,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Mp",
-                "skillIndex": 1
+                "skillIndex": 1,
+                "activeData": null
             },
             "Star Player": {
                 "name": "Star Player",
@@ -589,7 +713,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Star Talent Point",
-                "skillIndex": 8
+                "skillIndex": 8,
+                "activeData": null
             },
             "Bucklered Up": {
                 "name": "Bucklered Up",
@@ -601,7 +726,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{% Total Def",
-                "skillIndex": 9
+                "skillIndex": 9,
+                "activeData": null
             },
             "Sharpened Axe": {
                 "name": "Sharpened Axe",
@@ -613,7 +739,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{ Base Weapon Power",
-                "skillIndex": 5
+                "skillIndex": 5,
+                "activeData": null
             },
             "Fist Of Rage": {
                 "name": "Fist Of Rage",
@@ -625,7 +752,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Str",
-                "skillIndex": 10
+                "skillIndex": 10,
+                "activeData": null
             },
             "Quickness Boots": {
                 "name": "Quickness Boots",
@@ -637,7 +765,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Agi",
-                "skillIndex": 11
+                "skillIndex": 11,
+                "activeData": null
             },
             "Book Of The Wise": {
                 "name": "Book Of The Wise",
@@ -649,7 +778,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Wis",
-                "skillIndex": 12
+                "skillIndex": 12,
+                "activeData": null
             },
             "Lucky Clover": {
                 "name": "Lucky Clover",
@@ -661,7 +791,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk",
-                "skillIndex": 13
+                "skillIndex": 13,
+                "activeData": null
             },
             "Gilded Sword": {
                 "name": "Gilded Sword",
@@ -673,7 +804,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 6
+                "skillIndex": 6,
+                "activeData": null
             },
             "Brute Efficiency": {
                 "name": "Brute Efficiency",
@@ -685,7 +817,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency",
-                "skillIndex": 85
+                "skillIndex": 85,
+                "activeData": null
             },
             "Meat Shank": {
                 "name": "Meat Shank",
@@ -697,7 +830,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 86
+                "skillIndex": 86,
+                "activeData": null
             },
             "Critikill": {
                 "name": "Critikill",
@@ -709,7 +843,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Critical Damage",
-                "skillIndex": 87
+                "skillIndex": 87,
+                "activeData": null
             },
             "Idle Brawling": {
                 "name": "Idle Brawling",
@@ -721,7 +856,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate",
-                "skillIndex": 88
+                "skillIndex": 88,
+                "activeData": null
             },
             "Idle Skilling": {
                 "name": "Idle Skilling",
@@ -733,7 +869,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate",
-                "skillIndex": 89
+                "skillIndex": 89,
+                "activeData": null
             }
         }
     },
@@ -749,7 +886,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 90
+                "skillIndex": 90,
+                "activeData": {
+                    "K": 1.1,
+                    "D": 1.17,
+                    "s": 1.1,
+                    "cooldown": 4,
+                    "castTime": 0.45,
+                    "manaCost": 5,
+                    "inputReq": 0,
+                    "AFKrange": 80,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Whirl": {
                 "name": "Whirl",
@@ -761,7 +910,19 @@
                 "y2": 24,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Damage & +} Mobs Hit",
-                "skillIndex": 91
+                "skillIndex": 91,
+                "activeData": {
+                    "K": 1.1,
+                    "D": 1.18,
+                    "s": 1.2,
+                    "cooldown": 6,
+                    "castTime": 0.45,
+                    "manaCost": 9,
+                    "inputReq": 0,
+                    "AFKrange": 45,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Health Overdrive": {
                 "name": "Health Overdrive",
@@ -773,7 +934,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Hp",
-                "skillIndex": 92
+                "skillIndex": 92,
+                "activeData": null
             },
             "Double Strike": {
                 "name": "Double Strike",
@@ -785,7 +947,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "{% Double Hit Chance",
-                "skillIndex": 93
+                "skillIndex": 93,
+                "activeData": null
             },
             "Firmly Grasp It": {
                 "name": "Firmly Grasp It",
@@ -797,7 +960,19 @@
                 "y2": 4,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{ Str & +} Mins",
-                "skillIndex": 94
+                "skillIndex": 94,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 30,
+                    "castTime": 1.5,
+                    "manaCost": 5,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": -1
+                }
             },
             "Strength In Numbers": {
                 "name": "Strength In Numbers",
@@ -809,7 +984,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect",
-                "skillIndex": 95
+                "skillIndex": 95,
+                "activeData": null
             },
             "'Str'Ess Tested Garb": {
                 "name": "'Str'Ess Tested Garb",
@@ -821,7 +997,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% More Str From Equips",
-                "skillIndex": 96
+                "skillIndex": 96,
+                "activeData": null
             },
             "Carry A Big Stick": {
                 "name": "Carry A Big Stick",
@@ -833,7 +1010,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Weapon Power Effect",
-                "skillIndex": 97
+                "skillIndex": 97,
+                "activeData": null
             },
             "Absolute Unit": {
                 "name": "Absolute Unit",
@@ -845,7 +1023,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Str",
-                "skillIndex": 98
+                "skillIndex": 98,
+                "activeData": null
             },
             "Haungry For Gold": {
                 "name": "Haungry For Gold",
@@ -857,7 +1036,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Bonus",
-                "skillIndex": 99
+                "skillIndex": 99,
+                "activeData": null
             },
             "Big Pick": {
                 "name": "Big Pick",
@@ -869,7 +1049,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency",
-                "skillIndex": 100
+                "skillIndex": 100,
+                "activeData": {
+                    "K": 1.05,
+                    "D": 1.4,
+                    "s": 1,
+                    "cooldown": 12,
+                    "castTime": 1.5,
+                    "manaCost": 10,
+                    "inputReq": 0,
+                    "AFKrange": 0,
+                    "AFKtype": "buff",
+                    "AFKactivity": 1
+                }
             },
             "Copper Collector": {
                 "name": "Copper Collector",
@@ -881,7 +1073,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency",
-                "skillIndex": 101
+                "skillIndex": 101,
+                "activeData": null
             },
             "Motherlode Miner": {
                 "name": "Motherlode Miner",
@@ -893,7 +1086,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Multi-Ore Base Chance",
-                "skillIndex": 102
+                "skillIndex": 102,
+                "activeData": null
             },
             "Tool Proficiency": {
                 "name": "Tool Proficiency",
@@ -905,7 +1099,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Pow Per 10 Mining Lv",
-                "skillIndex": 103
+                "skillIndex": 103,
+                "activeData": null
             },
             "Tempestuous Emotions": {
                 "name": "Tempestuous Emotions",
@@ -917,7 +1112,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Exp Gain",
-                "skillIndex": 104
+                "skillIndex": 104,
+                "activeData": null
             }
         }
     },
@@ -933,7 +1129,19 @@
                 "y2": 2,
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Mobs & +}% Dmg",
-                "skillIndex": 105
+                "skillIndex": 105,
+                "activeData": {
+                    "K": 1.1,
+                    "D": 1.25,
+                    "s": 1.2,
+                    "cooldown": 12,
+                    "castTime": 0.8,
+                    "manaCost": 15,
+                    "inputReq": 0,
+                    "AFKrange": 125,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Axe Hurl": {
                 "name": "Axe Hurl",
@@ -945,7 +1153,19 @@
                 "y2": 50,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} Mobs",
-                "skillIndex": 106
+                "skillIndex": 106,
+                "activeData": {
+                    "K": 1,
+                    "D": 1.25,
+                    "s": 1.1,
+                    "cooldown": 17,
+                    "castTime": 0.8,
+                    "manaCost": 15,
+                    "inputReq": 0,
+                    "AFKrange": 200,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Mocking Shout": {
                 "name": "Mocking Shout",
@@ -957,7 +1177,19 @@
                 "y2": 0.2,
                 "funcY": "bigBase",
                 "lvlUpText": "+1% Heal, +} Sec",
-                "skillIndex": 107
+                "skillIndex": 107,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1.1,
+                    "cooldown": 600,
+                    "castTime": 1.5,
+                    "manaCost": 15,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "No Pain No Gain": {
                 "name": "No Pain No Gain",
@@ -969,7 +1201,19 @@
                 "y2": 50,
                 "funcY": "decay",
                 "lvlUpText": "-{% Hp & +}% Damage",
-                "skillIndex": 108
+                "skillIndex": 108,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 30,
+                    "castTime": 1.5,
+                    "manaCost": 20,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Monster Decimator": {
                 "name": "Monster Decimator",
@@ -981,7 +1225,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Double Count Chance",
-                "skillIndex": 109
+                "skillIndex": 109,
+                "activeData": null
             },
             "Apocalypse Zow": {
                 "name": "Apocalypse Zow",
@@ -993,7 +1238,8 @@
                 "y2": 0,
                 "funcY": "add",
                 "lvlUpText": "+{% Dmg & +1 Mob Type",
-                "skillIndex": 110
+                "skillIndex": 110,
+                "activeData": null
             },
             "Fistful Of Obol": {
                 "name": "Fistful Of Obol",
@@ -1005,7 +1251,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% More Str From Obols",
-                "skillIndex": 111
+                "skillIndex": 111,
+                "activeData": null
             },
             "Strongest Statues": {
                 "name": "Strongest Statues",
@@ -1017,7 +1264,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses",
-                "skillIndex": 112
+                "skillIndex": 112,
+                "activeData": null
             },
             "Str Summore": {
                 "name": "Str Summore",
@@ -1029,7 +1277,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv",
-                "skillIndex": 81
+                "skillIndex": 81,
+                "activeData": null
             },
             "Beefy Bottles": {
                 "name": "Beefy Bottles",
@@ -1041,7 +1290,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv For Critikill Talent",
-                "skillIndex": 114
+                "skillIndex": 114,
+                "activeData": null
             },
             "Worming Undercover": {
                 "name": "Worming Undercover",
@@ -1053,7 +1303,19 @@
                 "y2": -1,
                 "funcY": "_",
                 "lvlUpText": "",
-                "skillIndex": 115
+                "skillIndex": 115,
+                "activeData": {
+                    "K": 1,
+                    "D": 1.4,
+                    "s": 1,
+                    "cooldown": 15,
+                    "castTime": 1.5,
+                    "manaCost": 15,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": 4
+                }
             },
             "Bobbin' Bobbers": {
                 "name": "Bobbin' Bobbers",
@@ -1065,7 +1327,8 @@
                 "y2": 3,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Reward & +} Cap",
-                "skillIndex": 116
+                "skillIndex": 116,
+                "activeData": null
             },
             "All Fish Diet": {
                 "name": "All Fish Diet",
@@ -1077,7 +1340,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1.5% Fishing Exp",
-                "skillIndex": 117
+                "skillIndex": 117,
+                "activeData": null
             },
             "Catching Some Zzz'S": {
                 "name": "Catching Some Zzz'S",
@@ -1089,7 +1353,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Fishing Away Gains",
-                "skillIndex": 118
+                "skillIndex": 118,
+                "activeData": null
             },
             "Back To Basics": {
                 "name": "Back To Basics",
@@ -1101,7 +1366,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt",
-                "skillIndex": 119
+                "skillIndex": 119,
+                "activeData": null
             }
         }
     },
@@ -1117,7 +1383,19 @@
                 "y2": 30,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} Mobs Hit",
-                "skillIndex": 120
+                "skillIndex": 120,
+                "activeData": {
+                    "K": 1,
+                    "D": 1.4,
+                    "s": 1,
+                    "cooldown": 14,
+                    "castTime": 1.8,
+                    "manaCost": 15,
+                    "inputReq": 0,
+                    "AFKrange": 150,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Daggerang": {
                 "name": "Daggerang",
@@ -1129,7 +1407,19 @@
                 "y2": 30,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} Mobs Hit",
-                "skillIndex": 121
+                "skillIndex": 121,
+                "activeData": {
+                    "K": 1,
+                    "D": 1.4,
+                    "s": 1,
+                    "cooldown": 16,
+                    "castTime": 0.8,
+                    "manaCost": 15,
+                    "inputReq": 0,
+                    "AFKrange": 150,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Bricky Skin": {
                 "name": "Bricky Skin",
@@ -1141,7 +1431,19 @@
                 "y2": 3,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Block, +} Base Def",
-                "skillIndex": 122
+                "skillIndex": 122,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 30,
+                    "castTime": 1,
+                    "manaCost": 20,
+                    "inputReq": 0,
+                    "AFKrange": 150,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Mastery Up": {
                 "name": "Mastery Up",
@@ -1153,7 +1455,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Mastery",
-                "skillIndex": 123
+                "skillIndex": 123,
+                "activeData": null
             },
             "Balanced Spirit": {
                 "name": "Balanced Spirit",
@@ -1165,7 +1468,19 @@
                 "y2": 40,
                 "funcY": "decay",
                 "lvlUpText": "+{% Acc/Def, -}% Dmg",
-                "skillIndex": 124
+                "skillIndex": 124,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 30,
+                    "castTime": 1,
+                    "manaCost": 15,
+                    "inputReq": 0,
+                    "AFKrange": 150,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Precision Power": {
                 "name": "Precision Power",
@@ -1177,7 +1492,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Dmg If Acc Big",
-                "skillIndex": 125
+                "skillIndex": 125,
+                "activeData": null
             },
             "Fistful Of Obol": {
                 "name": "Fistful Of Obol",
@@ -1189,7 +1505,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% More Str From Obols",
-                "skillIndex": 111
+                "skillIndex": 111,
+                "activeData": null
             },
             "Shieldiest Statues": {
                 "name": "Shieldiest Statues",
@@ -1201,7 +1518,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses",
-                "skillIndex": 127
+                "skillIndex": 127,
+                "activeData": null
             },
             "Str Summore": {
                 "name": "Str Summore",
@@ -1213,7 +1531,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv",
-                "skillIndex": 81
+                "skillIndex": 81,
+                "activeData": null
             },
             "Blocky Bottles": {
                 "name": "Blocky Bottles",
@@ -1225,7 +1544,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv For Meat Shank",
-                "skillIndex": 129
+                "skillIndex": 129,
+                "activeData": null
             },
             "Refinery Throttle": {
                 "name": "Refinery Throttle",
@@ -1237,7 +1557,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Cycle Every 8 Lvs",
-                "skillIndex": 130
+                "skillIndex": 130,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 72000,
+                    "castTime": 0.95,
+                    "manaCost": 10,
+                    "inputReq": 0,
+                    "AFKrange": 50,
+                    "AFKtype": "buff",
+                    "AFKactivity": -2
+                }
             },
             "Redox Rates": {
                 "name": "Redox Rates",
@@ -1249,7 +1581,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Build Spd",
-                "skillIndex": 131
+                "skillIndex": 131,
+                "activeData": null
             },
             "Sharper Saws": {
                 "name": "Sharper Saws",
@@ -1261,7 +1594,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Construction Exp",
-                "skillIndex": 132
+                "skillIndex": 132,
+                "activeData": null
             },
             "Super Samples": {
                 "name": "Super Samples",
@@ -1273,7 +1607,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Sample Size",
-                "skillIndex": 133
+                "skillIndex": 133,
+                "activeData": null
             },
             "Back To Basics": {
                 "name": "Back To Basics",
@@ -1285,7 +1620,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt",
-                "skillIndex": 119
+                "skillIndex": 119,
+                "activeData": null
             }
         }
     },
@@ -1306,7 +1642,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Hp",
-                "skillIndex": 0
+                "skillIndex": 0,
+                "activeData": null
             },
             "Mana Booster": {
                 "name": "Mana Booster",
@@ -1318,7 +1655,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Mp",
-                "skillIndex": 1
+                "skillIndex": 1,
+                "activeData": null
             },
             "Star Player": {
                 "name": "Star Player",
@@ -1330,7 +1668,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Star Talent Point",
-                "skillIndex": 8
+                "skillIndex": 8,
+                "activeData": null
             },
             "Bucklered Up": {
                 "name": "Bucklered Up",
@@ -1342,7 +1681,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{% Total Def",
-                "skillIndex": 9
+                "skillIndex": 9,
+                "activeData": null
             },
             "Sharpened Axe": {
                 "name": "Sharpened Axe",
@@ -1354,7 +1694,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{ Base Weapon Power",
-                "skillIndex": 5
+                "skillIndex": 5,
+                "activeData": null
             },
             "Fist Of Rage": {
                 "name": "Fist Of Rage",
@@ -1366,7 +1707,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Str",
-                "skillIndex": 10
+                "skillIndex": 10,
+                "activeData": null
             },
             "Quickness Boots": {
                 "name": "Quickness Boots",
@@ -1378,7 +1720,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Agi",
-                "skillIndex": 11
+                "skillIndex": 11,
+                "activeData": null
             },
             "Book Of The Wise": {
                 "name": "Book Of The Wise",
@@ -1390,7 +1733,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Wis",
-                "skillIndex": 12
+                "skillIndex": 12,
+                "activeData": null
             },
             "Lucky Clover": {
                 "name": "Lucky Clover",
@@ -1402,7 +1746,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk",
-                "skillIndex": 13
+                "skillIndex": 13,
+                "activeData": null
             },
             "Gilded Sword": {
                 "name": "Gilded Sword",
@@ -1414,7 +1759,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 6
+                "skillIndex": 6,
+                "activeData": null
             },
             "Elusive Efficiency": {
                 "name": "Elusive Efficiency",
@@ -1426,7 +1772,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency",
-                "skillIndex": 263
+                "skillIndex": 263,
+                "activeData": null
             },
             "Featherweight": {
                 "name": "Featherweight",
@@ -1438,7 +1785,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Move Speed",
-                "skillIndex": 266
+                "skillIndex": 266,
+                "activeData": null
             },
             "I See You": {
                 "name": "I See You",
@@ -1450,7 +1798,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Crit Chance",
-                "skillIndex": 267
+                "skillIndex": 267,
+                "activeData": null
             },
             "Idle Shooting": {
                 "name": "Idle Shooting",
@@ -1462,7 +1811,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate",
-                "skillIndex": 268
+                "skillIndex": 268,
+                "activeData": null
             },
             "Broken Time": {
                 "name": "Broken Time",
@@ -1474,7 +1824,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Production Speed",
-                "skillIndex": 269
+                "skillIndex": 269,
+                "activeData": null
             }
         }
     },
@@ -1490,7 +1841,19 @@
                 "y2": 40,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Damage & +} Mobs Hit",
-                "skillIndex": 270
+                "skillIndex": 270,
+                "activeData": {
+                    "K": 1.15,
+                    "D": 1.19,
+                    "s": 1.15,
+                    "cooldown": 15,
+                    "castTime": 0.45,
+                    "manaCost": 8,
+                    "inputReq": 0,
+                    "AFKrange": 300,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Kung Fu Kick": {
                 "name": "Kung Fu Kick",
@@ -1502,7 +1865,19 @@
                 "y2": 2,
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Pixels & +}% Dmg",
-                "skillIndex": 271
+                "skillIndex": 271,
+                "activeData": {
+                    "K": 1,
+                    "D": 1.15,
+                    "s": 1,
+                    "cooldown": 7,
+                    "castTime": 0.45,
+                    "manaCost": 4,
+                    "inputReq": 0,
+                    "AFKrange": 80,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Hema Overdrive": {
                 "name": "Hema Overdrive",
@@ -1514,7 +1889,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Hp And Mp",
-                "skillIndex": 272
+                "skillIndex": 272,
+                "activeData": null
             },
             "Strafe": {
                 "name": "Strafe",
@@ -1526,7 +1902,19 @@
                 "y2": 15,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Speed % +} Mins",
-                "skillIndex": 273
+                "skillIndex": 273,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1.2,
+                    "cooldown": 30,
+                    "castTime": 0.45,
+                    "manaCost": 5,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": -1
+                }
             },
             "Have Another!": {
                 "name": "Have Another!",
@@ -1538,7 +1926,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Chance",
-                "skillIndex": 274
+                "skillIndex": 274,
+                "activeData": null
             },
             "Veins Of The Infernal": {
                 "name": "Veins Of The Infernal",
@@ -1550,7 +1939,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 284
+                "skillIndex": 284,
+                "activeData": null
             },
             "Garb Of Un'Agi'Ng Quality": {
                 "name": "Garb Of Un'Agi'Ng Quality",
@@ -1562,7 +1952,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% More Agi From Equips",
-                "skillIndex": 276
+                "skillIndex": 276,
+                "activeData": null
             },
             "High Polymer Limbs": {
                 "name": "High Polymer Limbs",
@@ -1574,7 +1965,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Weapon Power Effect",
-                "skillIndex": 277
+                "skillIndex": 277,
+                "activeData": null
             },
             "Sanic Speed": {
                 "name": "Sanic Speed",
@@ -1586,7 +1978,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Agi",
-                "skillIndex": 278
+                "skillIndex": 278,
+                "activeData": null
             },
             "Robbinghood": {
                 "name": "Robbinghood",
@@ -1598,7 +1991,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Rarity",
-                "skillIndex": 279
+                "skillIndex": 279,
+                "activeData": null
             },
             "Smeltin' Erryday": {
                 "name": "Smeltin' Erryday",
@@ -1610,7 +2004,8 @@
                 "y2": 60,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% For } Forge Secs",
-                "skillIndex": 280
+                "skillIndex": 280,
+                "activeData": null
             },
             "Acme Anvil": {
                 "name": "Acme Anvil",
@@ -1622,7 +2017,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Extra Pts",
-                "skillIndex": 281
+                "skillIndex": 281,
+                "activeData": null
             },
             "Yea I Already Know": {
                 "name": "Yea I Already Know",
@@ -1634,7 +2030,8 @@
                 "y2": 10,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Exp, And +}% Cap",
-                "skillIndex": 282
+                "skillIndex": 282,
+                "activeData": null
             },
             "Godly Creation": {
                 "name": "Godly Creation",
@@ -1646,7 +2043,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Chance",
-                "skillIndex": 283
+                "skillIndex": 283,
+                "activeData": null
             },
             "Focused Soul": {
                 "name": "Focused Soul",
@@ -1658,7 +2056,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Exp Gain In Spec Skills",
-                "skillIndex": 265
+                "skillIndex": 265,
+                "activeData": null
             }
         }
     },
@@ -1674,7 +2073,19 @@
                 "y2": 3,
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Arrow & +}% Damage",
-                "skillIndex": 285
+                "skillIndex": 285,
+                "activeData": {
+                    "K": 1,
+                    "D": 1.25,
+                    "s": 1.1,
+                    "cooldown": 20,
+                    "castTime": 0.45,
+                    "manaCost": 28,
+                    "inputReq": 0,
+                    "AFKrange": 300,
+                    "AFKtype": "circle",
+                    "AFKactivity": 0
+                }
             },
             "Magic Shortbow": {
                 "name": "Magic Shortbow",
@@ -1686,7 +2097,19 @@
                 "y2": 3,
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Monsters & +}% Dmg",
-                "skillIndex": 286
+                "skillIndex": 286,
+                "activeData": {
+                    "K": 1.1,
+                    "D": 1.2,
+                    "s": 1.05,
+                    "cooldown": 7,
+                    "castTime": 0.45,
+                    "manaCost": 15,
+                    "inputReq": 0,
+                    "AFKrange": 100,
+                    "AFKtype": "target",
+                    "AFKactivity": 0
+                }
             },
             "Flax Instastring": {
                 "name": "Flax Instastring",
@@ -1698,7 +2121,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Trigger Chance",
-                "skillIndex": 287
+                "skillIndex": 287,
+                "activeData": null
             },
             "Extendo Rangeo": {
                 "name": "Extendo Rangeo",
@@ -1710,7 +2134,19 @@
                 "y2": 60,
                 "funcY": "decay",
                 "lvlUpText": "+{Px Range & +} Mins",
-                "skillIndex": 288
+                "skillIndex": 288,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 30,
+                    "castTime": 0.45,
+                    "manaCost": 10,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Woah, That Was Fast!": {
                 "name": "Woah, That Was Fast!",
@@ -1722,7 +2158,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Lower Cooldowns",
-                "skillIndex": 289
+                "skillIndex": 289,
+                "activeData": null
             },
             "Speedna": {
                 "name": "Speedna",
@@ -1734,7 +2171,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 290
+                "skillIndex": 290,
+                "activeData": null
             },
             "Shoeful Of Obol": {
                 "name": "Shoeful Of Obol",
@@ -1746,7 +2184,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% More Agi",
-                "skillIndex": 291
+                "skillIndex": 291,
+                "activeData": null
             },
             "Shwifty Statues": {
                 "name": "Shwifty Statues",
@@ -1758,7 +2197,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses",
-                "skillIndex": 292
+                "skillIndex": 292,
+                "activeData": null
             },
             "Agi Again": {
                 "name": "Agi Again",
@@ -1770,7 +2210,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv",
-                "skillIndex": 293
+                "skillIndex": 293,
+                "activeData": null
             },
             "Velocity Vessels": {
                 "name": "Velocity Vessels",
@@ -1782,7 +2223,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv Cap",
-                "skillIndex": 294
+                "skillIndex": 294,
+                "activeData": null
             },
             "Teleki'Net'Ic Logs": {
                 "name": "Teleki'Net'Ic Logs",
@@ -1794,7 +2236,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency",
-                "skillIndex": 295
+                "skillIndex": 295,
+                "activeData": null
             },
             "Briar Patch Runner": {
                 "name": "Briar Patch Runner",
@@ -1806,7 +2249,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect",
-                "skillIndex": 296
+                "skillIndex": 296,
+                "activeData": null
             },
             "Bug Enthusiast": {
                 "name": "Bug Enthusiast",
@@ -1818,7 +2262,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Catching Exp",
-                "skillIndex": 297
+                "skillIndex": 297,
+                "activeData": null
             },
             "Sunset On The Hives": {
                 "name": "Sunset On The Hives",
@@ -1830,7 +2275,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Away Gains",
-                "skillIndex": 298
+                "skillIndex": 298,
+                "activeData": null
             },
             "Previous Points": {
                 "name": "Previous Points",
@@ -1842,7 +2288,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt",
-                "skillIndex": 299
+                "skillIndex": 299,
+                "activeData": null
             }
         }
     },
@@ -1858,7 +2305,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 300
+                "skillIndex": 300,
+                "activeData": {
+                    "K": 1.2,
+                    "D": 1.3,
+                    "s": 1,
+                    "cooldown": 30,
+                    "castTime": 1.1,
+                    "manaCost": 25,
+                    "inputReq": 2,
+                    "AFKrange": 200,
+                    "AFKtype": "auto",
+                    "AFKactivity": 0
+                }
             },
             "Bear Trap": {
                 "name": "Bear Trap",
@@ -1870,7 +2329,19 @@
                 "y2": 2,
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Traps & +}% Dmg",
-                "skillIndex": 301
+                "skillIndex": 301,
+                "activeData": {
+                    "K": 1.2,
+                    "D": 1.15,
+                    "s": 1,
+                    "cooldown": 9,
+                    "castTime": 1.5,
+                    "manaCost": 30,
+                    "inputReq": 0,
+                    "AFKrange": 150,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Uwu Rawrrr": {
                 "name": "Uwu Rawrrr",
@@ -1882,7 +2353,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Seconds Faster",
-                "skillIndex": 302
+                "skillIndex": 302,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1.1,
+                    "cooldown": 120,
+                    "castTime": 1.5,
+                    "manaCost": 35,
+                    "inputReq": 0,
+                    "AFKrange": 150,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Stop Right There": {
                 "name": "Stop Right There",
@@ -1894,7 +2377,19 @@
                 "y2": 20,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{ Pixels & +} Sec",
-                "skillIndex": 303
+                "skillIndex": 303,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1.1,
+                    "cooldown": 60,
+                    "castTime": 1.5,
+                    "manaCost": 50,
+                    "inputReq": 0,
+                    "AFKrange": 150,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Have Another... Again!": {
                 "name": "Have Another... Again!",
@@ -1906,7 +2401,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Chance",
-                "skillIndex": 304
+                "skillIndex": 304,
+                "activeData": null
             },
             "Looty Mc Shooty": {
                 "name": "Looty Mc Shooty",
@@ -1918,7 +2414,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 305
+                "skillIndex": 305,
+                "activeData": null
             },
             "Shoeful Of Obol": {
                 "name": "Shoeful Of Obol",
@@ -1930,7 +2427,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% More Agi",
-                "skillIndex": 291
+                "skillIndex": 291,
+                "activeData": null
             },
             "Straightshot Statues": {
                 "name": "Straightshot Statues",
@@ -1942,7 +2440,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses",
-                "skillIndex": 307
+                "skillIndex": 307,
+                "activeData": null
             },
             "Agi Again": {
                 "name": "Agi Again",
@@ -1954,7 +2453,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv",
-                "skillIndex": 293
+                "skillIndex": 293,
+                "activeData": null
             },
             "Visibility Vessels": {
                 "name": "Visibility Vessels",
@@ -1966,7 +2466,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv For Icu",
-                "skillIndex": 309
+                "skillIndex": 309,
+                "activeData": null
             },
             "Eagle Eye": {
                 "name": "Eagle Eye",
@@ -1978,7 +2479,19 @@
                 "y2": 100,
                 "funcY": "decay",
                 "lvlUpText": "+{% Critters & +}% Xp",
-                "skillIndex": 310
+                "skillIndex": 310,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 6,
+                    "castTime": 0.95,
+                    "manaCost": 2,
+                    "inputReq": 0,
+                    "AFKrange": 50,
+                    "AFKtype": "buff",
+                    "AFKactivity": -2
+                }
             },
             "Invasive Species": {
                 "name": "Invasive Species",
@@ -1990,7 +2503,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Trap Efficiency",
-                "skillIndex": 311
+                "skillIndex": 311,
+                "activeData": null
             },
             "Shroom Bait": {
                 "name": "Shroom Bait",
@@ -2002,7 +2516,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Trapping Exp",
-                "skillIndex": 312
+                "skillIndex": 312,
+                "activeData": null
             },
             "Reflective Eyesight": {
                 "name": "Reflective Eyesight",
@@ -2014,7 +2529,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{X Shiny Chance",
-                "skillIndex": 313
+                "skillIndex": 313,
+                "activeData": null
             },
             "Previous Points": {
                 "name": "Previous Points",
@@ -2026,7 +2542,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt",
-                "skillIndex": 299
+                "skillIndex": 299,
+                "activeData": null
             }
         }
     },
@@ -2042,7 +2559,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "",
-                "skillIndex": 315
+                "skillIndex": 315,
+                "activeData": {
+                    "K": 1,
+                    "D": 1.4,
+                    "s": 1,
+                    "cooldown": 45,
+                    "castTime": 0.45,
+                    "manaCost": 500,
+                    "inputReq": 1,
+                    "AFKrange": 1,
+                    "AFKtype": "target",
+                    "AFKactivity": 0
+                }
             }
         }
     },
@@ -2061,7 +2590,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Hp",
-                "skillIndex": 0
+                "skillIndex": 0,
+                "activeData": null
             },
             "Mana Booster": {
                 "name": "Mana Booster",
@@ -2073,7 +2603,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Mp",
-                "skillIndex": 1
+                "skillIndex": 1,
+                "activeData": null
             },
             "Star Player": {
                 "name": "Star Player",
@@ -2085,7 +2616,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Star Talent Point",
-                "skillIndex": 8
+                "skillIndex": 8,
+                "activeData": null
             },
             "Bucklered Up": {
                 "name": "Bucklered Up",
@@ -2097,7 +2629,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{% Total Def",
-                "skillIndex": 9
+                "skillIndex": 9,
+                "activeData": null
             },
             "Sharpened Axe": {
                 "name": "Sharpened Axe",
@@ -2109,7 +2642,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{ Base Weapon Power",
-                "skillIndex": 5
+                "skillIndex": 5,
+                "activeData": null
             },
             "Fist Of Rage": {
                 "name": "Fist Of Rage",
@@ -2121,7 +2655,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Str",
-                "skillIndex": 10
+                "skillIndex": 10,
+                "activeData": null
             },
             "Quickness Boots": {
                 "name": "Quickness Boots",
@@ -2133,7 +2668,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Agi",
-                "skillIndex": 11
+                "skillIndex": 11,
+                "activeData": null
             },
             "Book Of The Wise": {
                 "name": "Book Of The Wise",
@@ -2145,7 +2681,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Wis",
-                "skillIndex": 12
+                "skillIndex": 12,
+                "activeData": null
             },
             "Lucky Clover": {
                 "name": "Lucky Clover",
@@ -2157,7 +2694,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk",
-                "skillIndex": 13
+                "skillIndex": 13,
+                "activeData": null
             },
             "Gilded Sword": {
                 "name": "Gilded Sword",
@@ -2169,7 +2707,8 @@
                 "y2": 0,
                 "funcY": "_",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 6
+                "skillIndex": 6,
+                "activeData": null
             },
             "Smart Efficiency": {
                 "name": "Smart Efficiency",
@@ -2181,7 +2720,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency",
-                "skillIndex": 445
+                "skillIndex": 445,
+                "activeData": null
             },
             "Overclocked Energy": {
                 "name": "Overclocked Energy",
@@ -2193,7 +2733,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 446
+                "skillIndex": 446,
+                "activeData": null
             },
             "Farsight": {
                 "name": "Farsight",
@@ -2205,7 +2746,8 @@
                 "y2": 45,
                 "funcY": "decay",
                 "lvlUpText": "+{% Chance, +}% Dmg",
-                "skillIndex": 447
+                "skillIndex": 447,
+                "activeData": null
             },
             "Idle Casting": {
                 "name": "Idle Casting",
@@ -2217,7 +2759,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate",
-                "skillIndex": 448
+                "skillIndex": 448,
+                "activeData": null
             },
             "Active Afk'Er": {
                 "name": "Active Afk'Er",
@@ -2229,7 +2772,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Rate",
-                "skillIndex": 449
+                "skillIndex": 449,
+                "activeData": null
             }
         }
     },
@@ -2245,7 +2789,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 450
+                "skillIndex": 450,
+                "activeData": {
+                    "K": 1,
+                    "D": 1.21,
+                    "s": 1,
+                    "cooldown": 8,
+                    "castTime": 1.1,
+                    "manaCost": 9,
+                    "inputReq": 2,
+                    "AFKrange": 1,
+                    "AFKtype": "auto",
+                    "AFKactivity": 0
+                }
             },
             "Mini Fireball": {
                 "name": "Mini Fireball",
@@ -2257,7 +2813,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 451
+                "skillIndex": 451,
+                "activeData": {
+                    "K": 1.05,
+                    "D": 1.2,
+                    "s": 1.1,
+                    "cooldown": 10,
+                    "castTime": 0.85,
+                    "manaCost": 12,
+                    "inputReq": 0,
+                    "AFKrange": 270,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Mana Overdrive": {
                 "name": "Mana Overdrive",
@@ -2269,7 +2837,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Mp",
-                "skillIndex": 452
+                "skillIndex": 452,
+                "activeData": null
             },
             "Teleport": {
                 "name": "Teleport",
@@ -2281,7 +2850,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Pixel Moved",
-                "skillIndex": 453
+                "skillIndex": 453,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1.2,
+                    "cooldown": 1,
+                    "castTime": 0.5,
+                    "manaCost": 5,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "auto",
+                    "AFKactivity": -1
+                }
             },
             "You'Re Next": {
                 "name": "You'Re Next",
@@ -2293,7 +2874,8 @@
                 "y2": 0.5,
                 "funcY": "bigBase",
                 "lvlUpText": "+{% Chance & +}% Dmg",
-                "skillIndex": 454
+                "skillIndex": 454,
+                "activeData": null
             },
             "Knowledge Is Power": {
                 "name": "Knowledge Is Power",
@@ -2305,7 +2887,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect",
-                "skillIndex": 455
+                "skillIndex": 455,
+                "activeData": null
             },
             "Unt'Wis'Ted Robes": {
                 "name": "Unt'Wis'Ted Robes",
@@ -2317,7 +2900,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% More Wis From Equips",
-                "skillIndex": 456
+                "skillIndex": 456,
+                "activeData": null
             },
             "Power Overwhelming": {
                 "name": "Power Overwhelming",
@@ -2329,7 +2913,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Weapon Power Effect",
-                "skillIndex": 457
+                "skillIndex": 457,
+                "activeData": null
             },
             "Free Meal": {
                 "name": "Free Meal",
@@ -2341,7 +2926,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Non-Consume Chance",
-                "skillIndex": 458
+                "skillIndex": 458,
+                "activeData": null
             },
             "Individual Insight": {
                 "name": "Individual Insight",
@@ -2353,7 +2939,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Wis",
-                "skillIndex": 459
+                "skillIndex": 459,
+                "activeData": null
             },
             "Log On Logs": {
                 "name": "Log On Logs",
@@ -2365,7 +2952,19 @@
                 "y2": 1.86,
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Mins & +}% More Logs",
-                "skillIndex": 460
+                "skillIndex": 460,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 30,
+                    "castTime": 0.95,
+                    "manaCost": 5,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": 3
+                }
             },
             "Leaf Thief": {
                 "name": "Leaf Thief",
@@ -2377,7 +2976,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Efficiency",
-                "skillIndex": 461
+                "skillIndex": 461,
+                "activeData": null
             },
             "Deforesting All Doubt": {
                 "name": "Deforesting All Doubt",
@@ -2389,7 +2989,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Effect",
-                "skillIndex": 462
+                "skillIndex": 462,
+                "activeData": null
             },
             "Inner Peace": {
                 "name": "Inner Peace",
@@ -2401,7 +3002,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Exp Gain",
-                "skillIndex": 464
+                "skillIndex": 464,
+                "activeData": null
             },
             "Choppin It Up Ez": {
                 "name": "Choppin It Up Ez",
@@ -2413,7 +3015,8 @@
                 "y2": 50,
                 "funcY": "decay",
                 "lvlUpText": "+{% Rewards & +}% Dmg",
-                "skillIndex": 463
+                "skillIndex": 463,
+                "activeData": null
             }
         }
     },
@@ -2429,7 +3032,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 465
+                "skillIndex": 465,
+                "activeData": {
+                    "K": 1.1,
+                    "D": 1.3,
+                    "s": 1,
+                    "cooldown": 10,
+                    "castTime": 1.2,
+                    "manaCost": 30,
+                    "inputReq": 2,
+                    "AFKrange": 200,
+                    "AFKtype": "auto",
+                    "AFKactivity": 0
+                }
             },
             "Floor Is Lava": {
                 "name": "Floor Is Lava",
@@ -2441,7 +3056,19 @@
                 "y2": 1,
                 "funcY": "bigBase",
                 "lvlUpText": "+{ Volcano & +}% Dmg",
-                "skillIndex": 466
+                "skillIndex": 466,
+                "activeData": {
+                    "K": 1.1,
+                    "D": 1.3,
+                    "s": 1.02,
+                    "cooldown": 13,
+                    "castTime": 0.95,
+                    "manaCost": 30,
+                    "inputReq": 0,
+                    "AFKrange": 150,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Tornado": {
                 "name": "Tornado",
@@ -2453,7 +3080,19 @@
                 "y2": 20,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} Sec",
-                "skillIndex": 467
+                "skillIndex": 467,
+                "activeData": {
+                    "K": 1.1,
+                    "D": 1.3,
+                    "s": 1.02,
+                    "cooldown": 25,
+                    "castTime": 0.95,
+                    "manaCost": 30,
+                    "inputReq": 0,
+                    "AFKrange": 150,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Speedy Book": {
                 "name": "Speedy Book",
@@ -2465,7 +3104,19 @@
                 "y2": 15,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Rate & } Sec",
-                "skillIndex": 468
+                "skillIndex": 468,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1.02,
+                    "cooldown": 2,
+                    "castTime": 0.95,
+                    "manaCost": 30,
+                    "inputReq": 0,
+                    "AFKrange": 0,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Mana Is Life": {
                 "name": "Mana Is Life",
@@ -2477,7 +3128,19 @@
                 "y2": 0.35,
                 "funcY": "bigBase",
                 "lvlUpText": "+{% Dmg & }% Mp Regen",
-                "skillIndex": 469
+                "skillIndex": 469,
+                "activeData": {
+                    "K": 1.1,
+                    "D": 1.3,
+                    "s": 1.02,
+                    "cooldown": 60,
+                    "castTime": 0.95,
+                    "manaCost": 30,
+                    "inputReq": 0,
+                    "AFKrange": 50,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Paperwork, Great...": {
                 "name": "Paperwork, Great...",
@@ -2489,7 +3152,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 470
+                "skillIndex": 470,
+                "activeData": null
             },
             "Occult Obols": {
                 "name": "Occult Obols",
@@ -2501,7 +3165,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% More Wis",
-                "skillIndex": 486
+                "skillIndex": 486,
+                "activeData": null
             },
             "Staring Statues": {
                 "name": "Staring Statues",
@@ -2513,7 +3178,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses",
-                "skillIndex": 472
+                "skillIndex": 472,
+                "activeData": null
             },
             "Wis Wumbo": {
                 "name": "Wis Wumbo",
@@ -2525,7 +3191,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv",
-                "skillIndex": 488
+                "skillIndex": 488,
+                "activeData": null
             },
             "Fuscia Flasks": {
                 "name": "Fuscia Flasks",
@@ -2537,7 +3204,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv Cap",
-                "skillIndex": 474
+                "skillIndex": 474,
+                "activeData": null
             },
             "Charge Syphon": {
                 "name": "Charge Syphon",
@@ -2549,7 +3217,19 @@
                 "y2": 10,
                 "funcY": "bigBase",
                 "lvlUpText": "+{% Steal, +}% Temp Max",
-                "skillIndex": 475
+                "skillIndex": 475,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 3600,
+                    "castTime": 0.95,
+                    "manaCost": 10,
+                    "inputReq": 0,
+                    "AFKrange": 50,
+                    "AFKtype": "buff",
+                    "AFKactivity": -2
+                }
             },
             "Sooouls": {
                 "name": "Sooouls",
@@ -2561,7 +3241,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Worship Eff.",
-                "skillIndex": 476
+                "skillIndex": 476,
+                "activeData": null
             },
             "Bless Up": {
                 "name": "Bless Up",
@@ -2573,7 +3254,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Worship Exp",
-                "skillIndex": 477
+                "skillIndex": 477,
+                "activeData": null
             },
             "Nearby Outlet": {
                 "name": "Nearby Outlet",
@@ -2585,7 +3267,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{X Charge Rate",
-                "skillIndex": 478
+                "skillIndex": 478,
+                "activeData": null
             },
             "Earlier Education": {
                 "name": "Earlier Education",
@@ -2597,7 +3280,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt",
-                "skillIndex": 494
+                "skillIndex": 494,
+                "activeData": null
             }
         }
     },
@@ -2613,7 +3297,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Potency",
-                "skillIndex": 480
+                "skillIndex": 480,
+                "activeData": {
+                    "K": 1.1,
+                    "D": 1.3,
+                    "s": 1.02,
+                    "cooldown": 23,
+                    "castTime": 0.95,
+                    "manaCost": 30,
+                    "inputReq": 1,
+                    "AFKrange": 50,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Auspicious Aura": {
                 "name": "Auspicious Aura",
@@ -2625,7 +3321,19 @@
                 "y2": 35,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Strength & +} Auras",
-                "skillIndex": 481
+                "skillIndex": 481,
+                "activeData": {
+                    "K": 1.05,
+                    "D": 1.21,
+                    "s": 1.1,
+                    "cooldown": 40,
+                    "castTime": 0.95,
+                    "manaCost": 60,
+                    "inputReq": 0,
+                    "AFKrange": 80,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Sizzling Skull": {
                 "name": "Sizzling Skull",
@@ -2637,7 +3345,19 @@
                 "y2": 20,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Dmg & +} More Mobs",
-                "skillIndex": 482
+                "skillIndex": 482,
+                "activeData": {
+                    "K": 1.05,
+                    "D": 1.21,
+                    "s": 1.1,
+                    "cooldown": 18,
+                    "castTime": 0.95,
+                    "manaCost": 60,
+                    "inputReq": 0,
+                    "AFKrange": 130,
+                    "AFKtype": "line",
+                    "AFKactivity": 0
+                }
             },
             "Tenteyecle": {
                 "name": "Tenteyecle",
@@ -2649,7 +3369,8 @@
                 "y2": 200,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{% Chance",
-                "skillIndex": 483
+                "skillIndex": 483,
+                "activeData": null
             },
             "Instant Invincibility": {
                 "name": "Instant Invincibility",
@@ -2661,7 +3382,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ More Seconds",
-                "skillIndex": 484
+                "skillIndex": 484,
+                "activeData": null
             },
             "Virile Vials": {
                 "name": "Virile Vials",
@@ -2673,7 +3395,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Damage",
-                "skillIndex": 485
+                "skillIndex": 485,
+                "activeData": null
             },
             "Occult Obols": {
                 "name": "Occult Obols",
@@ -2685,7 +3408,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% More Wis",
-                "skillIndex": 486
+                "skillIndex": 486,
+                "activeData": null
             },
             "Stupendous Statues": {
                 "name": "Stupendous Statues",
@@ -2697,7 +3421,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Higher Bonuses",
-                "skillIndex": 487
+                "skillIndex": 487,
+                "activeData": null
             },
             "Wis Wumbo": {
                 "name": "Wis Wumbo",
@@ -2709,7 +3434,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv",
-                "skillIndex": 488
+                "skillIndex": 488,
+                "activeData": null
             },
             "Fantasia Flasks": {
                 "name": "Fantasia Flasks",
@@ -2721,7 +3447,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Max Lv Cap",
-                "skillIndex": 489
+                "skillIndex": 489,
+                "activeData": null
             },
             "Cranium Cooking": {
                 "name": "Cranium Cooking",
@@ -2733,7 +3460,19 @@
                 "y2": 2,
                 "funcY": "intervalAdd",
                 "lvlUpText": "+{ Progress & +} Time",
-                "skillIndex": 490
+                "skillIndex": 490,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 80000,
+                    "castTime": 0.95,
+                    "manaCost": 100,
+                    "inputReq": 0,
+                    "AFKrange": 50,
+                    "AFKtype": "buff",
+                    "AFKactivity": 0
+                }
             },
             "Busy Brewin'": {
                 "name": "Busy Brewin'",
@@ -2745,7 +3484,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Brew Effect",
-                "skillIndex": 491
+                "skillIndex": 491,
+                "activeData": null
             },
             "Bubble Breakthrough": {
                 "name": "Bubble Breakthrough",
@@ -2757,7 +3497,8 @@
                 "y2": 0.02,
                 "funcY": "add",
                 "lvlUpText": "+{% Exp & +}% Chance",
-                "skillIndex": 492
+                "skillIndex": 492,
+                "activeData": null
             },
             "Sharing Some Smarts": {
                 "name": "Sharing Some Smarts",
@@ -2769,7 +3510,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Alch Exp",
-                "skillIndex": 493
+                "skillIndex": 493,
+                "activeData": null
             },
             "Earlier Education": {
                 "name": "Earlier Education",
@@ -2781,7 +3523,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+1 Talent Pt",
-                "skillIndex": 494
+                "skillIndex": 494,
+                "activeData": null
             }
         }
     },
@@ -2801,7 +3544,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "{ Sec Respawn",
-                "skillIndex": 615
+                "skillIndex": 615,
+                "activeData": null
             },
             "Beginner Best Class": {
                 "name": "Beginner Best Class",
@@ -2813,7 +3557,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Weapon Pow Cap",
-                "skillIndex": 616
+                "skillIndex": 616,
+                "activeData": null
             },
             "Studious Quester": {
                 "name": "Studious Quester",
@@ -2825,7 +3570,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Quest Exp",
-                "skillIndex": 617
+                "skillIndex": 617,
+                "activeData": null
             },
             "Quest Chungus": {
                 "name": "Quest Chungus",
@@ -2837,7 +3583,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ Luk Cap",
-                "skillIndex": 618
+                "skillIndex": 618,
+                "activeData": null
             },
             "Crystals 4 Dayys": {
                 "name": "Crystals 4 Dayys",
@@ -2849,7 +3596,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Spawn Rate",
-                "skillIndex": 619
+                "skillIndex": 619,
+                "activeData": null
             },
             "Will Of The Eldest": {
                 "name": "Will Of The Eldest",
@@ -2861,7 +3609,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{ All Stat Cap",
-                "skillIndex": 620
+                "skillIndex": 620,
+                "activeData": null
             },
             "Tick Tock": {
                 "name": "Tick Tock",
@@ -2873,7 +3622,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Away Gain Rate",
-                "skillIndex": 621
+                "skillIndex": 621,
+                "activeData": null
             },
             "Stonks!": {
                 "name": "Stonks!",
@@ -2885,7 +3635,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "Even Stonkier!",
-                "skillIndex": 622
+                "skillIndex": 622,
+                "activeData": null
             },
             "Roll Da Dice": {
                 "name": "Roll Da Dice",
@@ -2897,7 +3648,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "Dice Only Has { Sides",
-                "skillIndex": 623
+                "skillIndex": 623,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 200,
+                    "castTime": 0.5,
+                    "manaCost": 1,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": -1
+                }
             },
             "Attacks On Simmer": {
                 "name": "Attacks On Simmer",
@@ -2909,7 +3672,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Attack Afk Effect",
-                "skillIndex": 624
+                "skillIndex": 624,
+                "activeData": null
             },
             "Toilet Paper Postage": {
                 "name": "Toilet Paper Postage",
@@ -2921,7 +3685,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{X Higher Bonus",
-                "skillIndex": 625
+                "skillIndex": 625,
+                "activeData": null
             },
             "Exp Converter": {
                 "name": "Exp Converter",
@@ -2933,7 +3698,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Exp Converted",
-                "skillIndex": 626
+                "skillIndex": 626,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 3,
+                    "castTime": 0.1,
+                    "manaCost": 1,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": -2
+                }
             },
             "Goblet Of Hemoglobin": {
                 "name": "Goblet Of Hemoglobin",
@@ -2945,7 +3722,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Hp Regen Per Kill",
-                "skillIndex": 627
+                "skillIndex": 627,
+                "activeData": null
             }
         }
     },
@@ -2961,7 +3739,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Class Exp",
-                "skillIndex": 632
+                "skillIndex": 632,
+                "activeData": null
             },
             "Frothy Malk": {
                 "name": "Frothy Malk",
@@ -2973,7 +3752,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Boost Food Effect",
-                "skillIndex": 631
+                "skillIndex": 631,
+                "activeData": null
             },
             "Convert Better, Darnit!": {
                 "name": "Convert Better, Darnit!",
@@ -2985,7 +3765,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{X More Class Exp",
-                "skillIndex": 630
+                "skillIndex": 630,
+                "activeData": null
             },
             "Pulsation": {
                 "name": "Pulsation",
@@ -2997,7 +3778,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Mana Regen Rate",
-                "skillIndex": 629
+                "skillIndex": 629,
+                "activeData": null
             },
             "Cardiovascular!": {
                 "name": "Cardiovascular!",
@@ -3009,7 +3791,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Card Drop Chance",
-                "skillIndex": 628
+                "skillIndex": 628,
+                "activeData": null
             },
             "Milkyway Candies": {
                 "name": "Milkyway Candies",
@@ -3021,7 +3804,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Candy Drop",
-                "skillIndex": 633
+                "skillIndex": 633,
+                "activeData": null
             },
             "Telekinetic Storage": {
                 "name": "Telekinetic Storage",
@@ -3033,7 +3817,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Carry Cap",
-                "skillIndex": 634
+                "skillIndex": 634,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 1800,
+                    "castTime": 0.1,
+                    "manaCost": 1,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": -2
+                }
             },
             "Printer Sampling": {
                 "name": "Printer Sampling",
@@ -3045,7 +3841,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Afk Gains Sampled",
-                "skillIndex": 635
+                "skillIndex": 635,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 6,
+                    "castTime": 0.1,
+                    "manaCost": 1,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": -2
+                }
             },
             "Supersource": {
                 "name": "Supersource",
@@ -3057,7 +3865,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "",
-                "skillIndex": 636
+                "skillIndex": 636,
+                "activeData": null
             },
             "Action Frenzy": {
                 "name": "Action Frenzy",
@@ -3069,7 +3878,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Skilling Speed",
-                "skillIndex": 637
+                "skillIndex": 637,
+                "activeData": null
             },
             "Dungeonic Damage": {
                 "name": "Dungeonic Damage",
@@ -3081,7 +3891,8 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Dmg Per Pow 10 Creds",
-                "skillIndex": 638
+                "skillIndex": 638,
+                "activeData": null
             },
             "Shrine Architect": {
                 "name": "Shrine Architect",
@@ -3093,7 +3904,19 @@
                 "y2": 0,
                 "funcY": "txt",
                 "lvlUpText": "+{% Charge Rate",
-                "skillIndex": 639
+                "skillIndex": 639,
+                "activeData": {
+                    "K": 1,
+                    "D": 1,
+                    "s": 1,
+                    "cooldown": 6,
+                    "castTime": 0.1,
+                    "manaCost": 1,
+                    "inputReq": 0,
+                    "AFKrange": 1,
+                    "AFKtype": "buff",
+                    "AFKactivity": -2
+                }
             },
             "Mega Crit": {
                 "name": "Mega Crit",
@@ -3105,7 +3928,8 @@
                 "y2": 2,
                 "funcY": "bigBase",
                 "lvlUpText": "+{% Chance &+}% Dmg",
-                "skillIndex": 640
+                "skillIndex": 640,
+                "activeData": null
             }
         }
     },

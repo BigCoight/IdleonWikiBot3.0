@@ -12,7 +12,7 @@ class DetDrop(IdleonModel):
 	quantity: Numeric
 	chance: float
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{detdrops|"
 		res += f"[[{self.detDropName()}]]|{formatFloat(self.chance)}|{self.quantity}"
 		res += "}}"
@@ -29,7 +29,7 @@ class DetDrop(IdleonModel):
 class DetDrops(IdleonModel):
 	sources: List[DetDrop]
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{detdrops/head}}\n"
 		for detDrop in self.sources:
 			res += detDrop.writeWiki() + "\n"

@@ -4,17 +4,18 @@ from typing import List
 from definitions.talents.TalentTree import TalentTree, Talent
 from helpers.HelperFunctions import strToArray, formatStr, replaceUnderscores, camelCaseToTitle
 from repositories.master.Repository import Repository
+from repositories.talents.ActiveTalentRepo import ActiveTalentRepo
 
 
 class TalentTreeRepo(Repository[TalentTree]):
 
 	@classmethod
-	def parse(cls, value) -> TalentTree:
-		return TalentTree.parse_obj(value)
+	def initDependencies(cls) -> None:
+		ActiveTalentRepo.initialise(cls.codeReader)
 
 	@classmethod
 	def getSections(cls) -> List[str]:
-		return ["TalentOrder", "TalentNames", "TalentData", "ClassNames", "ActiveSkill"]
+		return ["TalentOrder", "TalentNames", "TalentData", "ClassNames"]
 
 	@classmethod
 	def generateRepo(cls) -> None:
@@ -28,17 +29,7 @@ class TalentTreeRepo(Repository[TalentTree]):
 		for n, i in enumerate([41, 42, 43, 44, 45], 1):
 			specialTalents.append(f"Special Talent {n}")
 
-		# Active skill information
-		activeDict = {}
-		activeData = cls.getSection(4)
-		activeDataSplit = re.split(
-			r'..\.addAtkMoveDef\("([a-zA-Z0-9_ +{}\',.\-%!$:`?;\n\]\(\)]*)"', activeData)[1:]
-		reData = r'([\w]*): ([\w."\-]*)'
-		for i in range(0, len(activeDataSplit) - 1, 2):
-			activeDict[activeDataSplit[i]] = {}
-			activeDetails = re.findall(reData, activeDataSplit[i + 1])
-			for atr, val in activeDetails:
-				activeDict[activeDataSplit[i]][atr] = formatStr(val, ['"'])
+
 
 		def doTalents(arr, off, mod):
 			for n, name in enumerate(arr):
@@ -61,7 +52,8 @@ class TalentTreeRepo(Repository[TalentTree]):
 						y2 = talentDesc[5],
 						funcY = talentDesc[6],
 						lvlUpText = replaceUnderscores(talentDesc[7]).title(),
-						skillIndex = skillI
+						skillIndex = skillI,
+						activeData = ActiveTalentRepo.get(fTalentName)
 					))
 				cls.add(replaceUnderscores(name).title(), talents)
 

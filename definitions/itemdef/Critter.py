@@ -1,9 +1,10 @@
 from pydantic import BaseModel, validator
 
+from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Integer
 
 
-class Critter(BaseModel):
+class Critter(IdleonModel):
 	location: str
 	baseExp: Integer
 	baseShinyRate: float

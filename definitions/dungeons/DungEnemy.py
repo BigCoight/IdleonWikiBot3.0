@@ -28,7 +28,7 @@ class DungEnemy(IdleonModel):
 			"coins": "coins",
 		}
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{DungeonEnemy"
 		return res + super().writeWiki(False) + "}}"
 

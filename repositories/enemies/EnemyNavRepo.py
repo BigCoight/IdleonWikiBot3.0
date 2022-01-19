@@ -9,6 +9,10 @@ from typing import List
 class EnemyNavRepo(Repository[EnemyNav]):
 
 	@classmethod
+	def initDependencies(cls) -> None:
+		CardRepo.initialise(cls.codeReader)
+
+	@classmethod
 	def generateRepo(cls) -> None:
 		for name, cardData in CardRepo.items():
 			if cardData.category not in Constants.navCategories:

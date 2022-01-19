@@ -5,7 +5,7 @@ import numpy as np
 
 from definitions.common.Source import Source
 
-reAll = r'[ |a-zA-Z0-_\'n()@,!$+{/}%:.~-]'
+reAll = r'[ a-zA-Z0-_\'n()@,!$+{/}%:.~\-&]'
 
 
 def getFromSplitArray(v: str, underscores: bool = True) -> List[List[str]]:
@@ -178,11 +178,11 @@ def strToArray(v: str) -> List[str]:
 		the resulting list
 
 	"""
-	string = v.replace(",_", "&&&&").replace(",0", "$$$$")
+	string = v.replace(",_", "&&&&").replace(",0", "$$$$").replace("{_", "****")
 	parts = formatStr(string, ["[", "]", '"', "return", ";", "\n", "{", "}"]).split(",")
 	res = []
 	for x in parts:
-		formatted = formatStr(x).replace("&&&&", ", ").replace("$$$$", ",0")
+		formatted = formatStr(x).replace("&&&&", ", ").replace("$$$$", ",0").replace("****", "{_")
 		if formatted:
 			res.append(formatted)
 	return res

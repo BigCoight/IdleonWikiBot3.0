@@ -25,6 +25,7 @@ from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.RefineryCostRepo import RefineryCostRepo
 from repositories.item.SpecificItemRepo import SpecificItemRepo
+from repositories.item.StampDescriptionRepo import StampDescriptionRepo
 from repositories.item.StatueRepo import StatueRepo
 from repositories.item.VendorRepo import VendorRepo
 from repositories.item.sources.CustomSourceRepo import CustomSourceRepo
@@ -56,7 +57,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("140b", False)
+idleonReader = IdleonReader("140b", True)
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
@@ -124,8 +125,13 @@ EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
-# ItemRepo.upload(True)
+StampDescriptionRepo.initialise(codeReader)
+
+ItemRepo.upload(True)
+#ItemRepo.upload(True)
 #
 # newV = IdleonReader("140b", True)
 # oldV = IdleonReader("140", True)
+# ItemRepo.initialise(newV.codeReader)
+#ItemRepo.upload(False)
 # RecipeRepo.compareVersions(oldV, newV)

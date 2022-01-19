@@ -8,7 +8,7 @@ class StatueData(IdleonModel):
 	dk: Integer
 	bonus: Numeric
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{Statuedata|"
 		res += f"{self.bonus}|{self.effect}"
 		res += "}}\n"

@@ -1,8 +1,9 @@
-from typing import Dict
+from typing import Dict, Optional
 
 from pydantic import validator
 
 from definitions.master.IdleonModel import IdleonModel
+from definitions.talents.ActiveTalent import ActiveTalent
 from helpers.CustomTypes import Numeric, Integer
 
 
@@ -17,6 +18,7 @@ class Talent(IdleonModel):
 	funcY: str
 	lvlUpText: str
 	skillIndex: Integer
+	activeData: Optional[ActiveTalent] = None
 
 	@validator("x1", "x2", "y1", "y2", pre = True)
 	def funcValidator(cls, v: str):
@@ -24,7 +26,7 @@ class Talent(IdleonModel):
 			return 0
 		return v
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = "{{Talent\n"
 		res += f"|name={self.name}\n"
 		res += f"|textArr={self.getDesc()}\n"
@@ -45,5 +47,5 @@ class Talent(IdleonModel):
 class TalentTree(IdleonModel):
 	talents: Dict[str, Talent]
 
-	def writeWiki(self, newLine = True) -> str:
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		return "\n".join(map(lambda x: x.writeWiki(), self.talents.values()))

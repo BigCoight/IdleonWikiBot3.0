@@ -39,6 +39,8 @@ from repositories.misc.MapNameRepo import MapNameRepo
 from repositories.misc.MapPortalsRepo import MapPortalsRepo
 from repositories.misc.StarSignsRepo import StarSignsRepo
 from repositories.misc.StorageOrderRepo import StorageOrderRepo
+from repositories.misc.TaskDescriptionsRepo import TaskDescriptionRepo
+from repositories.misc.TaskShopDescRepo import TaskShopDescRepo
 from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
 from repositories.misc.world2.BubbleRepo import BubbleRepo
@@ -84,8 +86,8 @@ GuildBonusRepo.initialise(codeReader)
 StarSignsRepo.initialise(codeReader)
 
 MapNameRepo.initialise(codeReader)
-MapDataRepo.initialise(codeReader)
 MapPortalsRepo.initialise(codeReader)
+MapDataRepo.initialise(codeReader)
 ConstellationsRepo.initialise(codeReader)
 
 VendorRepo.initialise(codeReader)
@@ -113,6 +115,8 @@ NpcHeadRepo.initialise(codeReader)
 NpcRepo.initialise(codeReader)
 NpcNoteRepo.initialise(codeReader)
 TaskUnlocksRepo.initialise(codeReader)
+TaskDescriptionRepo.initialise(codeReader)
+TaskShopDescRepo.initialise(codeReader)
 PostOfficeUpgradesRepo.initialise(codeReader)
 
 SourceRepo.initialise(codeReader)

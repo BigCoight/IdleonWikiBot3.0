@@ -5,10 +5,10 @@ import numpy as np
 
 from definitions.common.Source import Source
 
-reAll = r'[ a-zA-Z0-_\'n()@,!$+{/}%:.~\-&]'
+reAll = r'[ a-zA-Z0-_\'n()@,!$+{/}%:.~\-&\|]'
 
 
-def getFromSplitArray(v: str) -> List[List[str]]:
+def getFromSplitArray(v: str, replaceUnderscores: bool = True) -> List[List[str]]:
 	"""
 	Converts a section into a list of strings based upon the exportation of an array represented as
 	"0 1 2 3 4 5 6 7 8 9".split(" ")
@@ -19,13 +19,13 @@ def getFromSplitArray(v: str) -> List[List[str]]:
 
 	"""
 	section = formatStr(v, ["  ", "\n"])
-	subSections = re.findall(fr'"({reAll}*)"\.', section)
+	subSections = re.findall(fr'"({reAll}*)"\.split', section)
 	subSections = [x.split(" ") for x in subSections]
 	newList = []
 	for subSection in subSections:
 		internalList = []
 		for i in range(len(subSection)):
-			internalList.append(replaceUnderscores(subSection[i]))
+			internalList.append(formatStr(subSection[i], replaceUnderscores=replaceUnderscores))
 		newList.append(internalList[:])
 	return newList
 
@@ -175,11 +175,11 @@ def strToArray(v: str) -> List[str]:
 		the resulting list
 
 	"""
-	string = v.replace(",_", "&&&&").replace(",0", "$$$$").replace("{_", "****")
+	string = v.replace(",_", "&&&&").replace(",0", "$$$$").replace("{_", "****").replace("{%_", "####")
 	parts = formatStr(string, ["[", "]", '"', "return", ";", "\n", "{", "}"]).split(",")
 	res = []
 	for x in parts:
-		formatted = formatStr(x).replace("&&&&", ", ").replace("$$$$", ",0").replace("****", "{_")
+		formatted = formatStr(x).replace("&&&&", ", ").replace("$$$$", ",0").replace("****", "{_").replace("####", "{%_")
 		if formatted:
 			res.append(formatted)
 	return res

@@ -27,6 +27,7 @@ class Repository(Generic[T], ABC):
 	sections: List[str]
 	codeReader: CodeReader
 	repository: Dict[str, T]
+	listRepository: List[T]
 
 	@classmethod
 	def initialise(cls, codeReader: CodeReader) -> None:
@@ -34,6 +35,7 @@ class Repository(Generic[T], ABC):
 			if cls.codeReader.version == codeReader.version:
 				return
 		cls.repository = {}
+		cls.listRepository = []
 		cls.codeReader = codeReader
 		cls.sections = cls.getSections()
 		if cls.sections and not cls.getSection():
@@ -71,6 +73,10 @@ class Repository(Generic[T], ABC):
 		cls.repository[key] = value
 
 	@classmethod
+	def addList(cls, value: T) -> None:
+		cls.listRepository.append(value)
+
+	@classmethod
 	def contains(cls, key: str) -> bool:
 		return key in cls.repository
 
@@ -83,9 +89,17 @@ class Repository(Generic[T], ABC):
 		return fr"./exported/repo/{cls.__name__}.json"
 
 	@classmethod
+	def _getListFileName(cls) -> str:
+		return fr"./exported/lists/{cls.__name__}.json"
+
+	@classmethod
 	def _export(cls) -> None:
 		with open(cls._getFileName(), mode = "w") as outfile:
 			outfile.write(CompactJSONEncoder(indent = 4).encode(cls.repository))
+		if not cls.listRepository:
+			return
+		with open(cls._getListFileName(), mode = "w") as outfile:
+			outfile.write(CompactJSONEncoder(indent = 4).encode(cls.listRepository))
 
 	@classmethod
 	def excludeDefaults(cls) -> bool:

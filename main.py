@@ -123,7 +123,7 @@ ItemRepo.initialise(codeReader)
 
 StampDescriptionRepo.initialise(codeReader)
 
-ItemRepo.upload(True)
+ItemRepo.exportWikiMult()
 #ItemRepo.upload(True)
 #
 # newV = IdleonReader("140b", True)

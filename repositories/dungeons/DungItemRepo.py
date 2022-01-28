@@ -24,7 +24,7 @@ class DungItemRepo(Repository[DungItem]):
 		for n, item in enumerate(data):
 			worldIndex = int(achieveUn[n]) // 70
 			world = Constants.worlds[worldIndex]
-			cls.add(item[0], DungItem(
+			addition = DungItem(
 				name = item[0],
 				bonus = item[1],
 				increment = item[2],
@@ -35,7 +35,10 @@ class DungItemRepo(Repository[DungItem]):
 				maxLevel = item[7],
 				achieve = cls.getCorrespondingAchieve(int(achieveUn[n])),
 				world = world
-			))
+			)
+			cls.add(item[0], addition)
+			cls.addList(addition)
+
 
 	@classmethod
 	def getCorrespondingAchieve(cls, n):

@@ -25,15 +25,18 @@ class BuildingRepo(Repository[Building]):
 				Component(item = building[5], quantity = building[7])
 			]
 			desc = building[1].split("@ Current Bonuses: @")
-			if len(desc) < 2:
-				continue
-			cls.add(building[0], Building(
+			cBuilding = Building(
+				name = building[0],
 				description = desc[0],
-				bonus = desc[1],
+				bonus = "Filler" if len(desc) < 2 else desc[1],
 				lvlUpReq = costs,
 				maxLvl = building[8],
 				costIncrement = building[2:4],
 				bonusInc = building[9],
 				misc = building[10],
 
-			))
+			)
+			cls.addList(cBuilding)
+			if len(desc) < 2:
+				continue
+			cls.add(building[0], cBuilding)

@@ -17,6 +17,7 @@ class FileRepository(Repository[T]):
 	def initialise(cls, codeReader: CodeReader, update: bool = False) -> None:
 		cls.update = update
 		cls.repository = {}
+		cls.listRepository = []
 		cls.codeReader = codeReader
 		cls.sections = cls.getSections()
 		if cls.shouldGetFromFile():

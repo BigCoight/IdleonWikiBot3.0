@@ -8,6 +8,7 @@ from helpers.CustomTypes import Numeric, Integer
 
 
 class Building(IdleonModel):
+	name: str
 	description: str
 	bonus: str
 	lvlUpReq: List[Component]

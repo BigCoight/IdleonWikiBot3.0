@@ -1423,7 +1423,12 @@
             {"item": "Cutter", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
             {"item": "DropTable1", "quantity": 1, "chance": 0.003, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Spore Meadows", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Spore Meadows",
+            "world": "Blunder Hills",
+            "id": 1,
+            "portalRequirements": [20]
+        },
         "navigation": {
             "prev": null,
             "next": "mushR",
@@ -1466,7 +1471,12 @@
             {"item": "InvStorageF", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
             {"item": "DropTable1", "quantity": 1, "chance": 0.0038, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Froggy Fields", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Froggy Fields",
+            "world": "Blunder Hills",
+            "id": 2,
+            "portalRequirements": [70]
+        },
         "navigation": {
             "prev": "mushR",
             "next": "beanG",
@@ -1506,7 +1516,12 @@
             {"item": "EquipmentHats25", "quantity": 1, "chance": 3.5e-05, "questLink": "N/A"},
             {"item": "DropTable1", "quantity": 1, "chance": 0.0045, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Valley Of The Beans", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Valley Of The Beans",
+            "world": "Blunder Hills",
+            "id": 14,
+            "portalRequirements": [150, 1500]
+        },
         "navigation": {
             "prev": "frogG",
             "next": "slimeG",
@@ -1547,7 +1562,12 @@
             {"item": "SmithingRecipes1", "quantity": 47, "chance": 2e-05, "questLink": "N/A"},
             {"item": "DropTable2", "quantity": 1, "chance": 0.004, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Jungle Perimeter", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Jungle Perimeter",
+            "world": "Blunder Hills",
+            "id": 16,
+            "portalRequirements": [200, 3000]
+        },
         "navigation": {
             "prev": "beanG",
             "next": "snakeG",
@@ -1589,7 +1609,12 @@
             {"item": "InvBag100", "quantity": 1, "chance": 8e-05, "questLink": "N/A"},
             {"item": "DropTable2", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Winding Willows", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Winding Willows",
+            "world": "Blunder Hills",
+            "id": 19,
+            "portalRequirements": [250]
+        },
         "navigation": {
             "prev": "slimeG",
             "next": "carrotO",
@@ -1629,7 +1654,12 @@
             {"item": "EquipmentBows4", "quantity": 1, "chance": 4e-05, "questLink": "N/A"},
             {"item": "DropTable2", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Vegetable Patch", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Vegetable Patch",
+            "world": "Blunder Hills",
+            "id": 24,
+            "portalRequirements": [300, 2000]
+        },
         "navigation": {
             "prev": "snakeG",
             "next": "goblinG",
@@ -1669,7 +1699,12 @@
             {"item": "SmithingRecipes1", "quantity": 44, "chance": 3e-05, "questLink": "N/A"},
             {"item": "DropTable3", "quantity": 1, "chance": 0.004, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Forest Outskirts", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Forest Outskirts",
+            "world": "Blunder Hills",
+            "id": 26,
+            "portalRequirements": [350]
+        },
         "navigation": {
             "prev": "carrotO",
             "next": "plank",
@@ -1710,7 +1745,12 @@
             {"item": "EquipmentShirts19", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
             {"item": "DropTable3", "quantity": 1, "chance": 0.0045, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Encroaching Forest Villas", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Encroaching Forest Villas",
+            "world": "Blunder Hills",
+            "id": 27,
+            "portalRequirements": [30, 4200]
+        },
         "navigation": {
             "prev": "goblinG",
             "next": "frogBIG",
@@ -1752,7 +1792,12 @@
             {"item": "ObolBronzePop", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
             {"item": "DropTable3", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Tucked Away", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Tucked Away",
+            "world": "Blunder Hills",
+            "id": 28,
+            "portalRequirements": [0]
+        },
         "navigation": {
             "prev": "plank",
             "next": "poopSmall",
@@ -1792,7 +1837,12 @@
             {"item": "SmithingRecipes1", "quantity": 68, "chance": 0.0002, "questLink": "N/A"},
             {"item": "DropTable3c", "quantity": 1, "chance": 0.0057, "questLink": "N/A"}
         ],
-        "mapData": {"area": "The Base Of The Bark", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "The Base Of The Bark",
+            "world": "Blunder Hills",
+            "id": 13,
+            "portalRequirements": [2500, 50000]
+        },
         "navigation": {
             "prev": "ratB",
             "next": "acorn",
@@ -1830,7 +1880,12 @@
             {"item": "CardsA13", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
             {"item": "DropTable3c", "quantity": 1, "chance": 0.0065, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Hollowed Trunk", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Hollowed Trunk",
+            "world": "Blunder Hills",
+            "id": 18,
+            "portalRequirements": [5000]
+        },
         "navigation": {
             "prev": "branch",
             "next": "Crystal0",
@@ -1870,7 +1925,12 @@
             {"item": "DropTable3c", "quantity": 1, "chance": 0.007, "questLink": "N/A"},
             {"item": "DropTable5b", "quantity": 1, "chance": 0.002, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Where the Branches End", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Where the Branches End",
+            "world": "Blunder Hills",
+            "id": 31,
+            "portalRequirements": [0]
+        },
         "navigation": {
             "prev": "Crystal0",
             "next": null,
@@ -1913,7 +1973,12 @@
             {"item": "Quest22", "quantity": 1, "chance": 0.23, "questLink": "Mutton4"},
             {"item": "DropTable3b", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Poopy Sewers", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Poopy Sewers",
+            "world": "Blunder Hills",
+            "id": 8,
+            "portalRequirements": [20000]
+        },
         "navigation": {
             "prev": "frogBIG",
             "next": "ratB",
@@ -1954,7 +2019,12 @@
             {"item": "Quest23", "quantity": 1, "chance": 0.16, "questLink": "Mutton4"},
             {"item": "DropTable3b", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Rats Nest", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Rats Nest",
+            "world": "Blunder Hills",
+            "id": 15,
+            "portalRequirements": [35000]
+        },
         "navigation": {
             "prev": "poopSmall",
             "next": "branch",
@@ -1991,7 +2061,12 @@
             {"item": "Sewers3", "quantity": 1, "chance": 0.5, "questLink": "N/A"},
             {"item": "CardsA15", "quantity": 1, "chance": 0.0015, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Meel's Crypt", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Meel's Crypt",
+            "world": "Blunder Hills",
+            "id": 38,
+            "portalRequirements": [0]
+        },
         "navigation": {
             "prev": "poopBig",
             "next": "wolfA",
@@ -2112,7 +2187,12 @@
             {"item": "DesertA1b", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
             {"item": "DropTable6", "quantity": 1, "chance": 0.003, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Jar Bridge", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "Jar Bridge",
+            "world": "Yum Yum Desert",
+            "id": 51,
+            "portalRequirements": [250]
+        },
         "navigation": {
             "prev": null,
             "next": "mimicA",
@@ -2153,7 +2233,12 @@
             {"item": "SmithingRecipes2", "quantity": 16, "chance": 5e-06, "questLink": "N/A"},
             {"item": "DropTable6", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
         ],
-        "mapData": {"area": "The Mimic Hole", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "The Mimic Hole",
+            "world": "Yum Yum Desert",
+            "id": 52,
+            "portalRequirements": [600, 1000]
+        },
         "navigation": {
             "prev": "jarSand",
             "next": "crabcake",
@@ -2193,7 +2278,12 @@
             {"item": "SmithingRecipes2", "quantity": 41, "chance": 2.5e-05, "questLink": "N/A"},
             {"item": "DropTable6", "quantity": 1, "chance": 0.0036, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Dessert Dunes", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "Dessert Dunes",
+            "world": "Yum Yum Desert",
+            "id": 53,
+            "portalRequirements": [1000]
+        },
         "navigation": {
             "prev": "mimicA",
             "next": "coconut",
@@ -2233,7 +2323,12 @@
             {"item": "SmithingRecipes2", "quantity": 17, "chance": 2e-06, "questLink": "N/A"},
             {"item": "DropTable7", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
         ],
-        "mapData": {"area": "The Grandioso Canyon", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "The Grandioso Canyon",
+            "world": "Yum Yum Desert",
+            "id": 57,
+            "portalRequirements": [1200]
+        },
         "navigation": {
             "prev": "crabcake",
             "next": "sandcastle",
@@ -2272,7 +2367,12 @@
             {"item": "CardsB5", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
             {"item": "DropTable7", "quantity": 1, "chance": 0.0035, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Shifty Sandbox", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "Shifty Sandbox",
+            "world": "Yum Yum Desert",
+            "id": 58,
+            "portalRequirements": [1600]
+        },
         "navigation": {
             "prev": "coconut",
             "next": "pincermin",
@@ -2310,7 +2410,12 @@
             {"item": "CardsB6", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
             {"item": "DropTable7", "quantity": 1, "chance": 0.0037, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Pincer Plateau", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "Pincer Plateau",
+            "world": "Yum Yum Desert",
+            "id": 59,
+            "portalRequirements": [2000]
+        },
         "navigation": {
             "prev": "sandcastle",
             "next": "potato",
@@ -2348,7 +2453,12 @@
             {"item": "CardsB7", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
             {"item": "DropTable7", "quantity": 1, "chance": 0.0039, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Slamabam Straightaway", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "Slamabam Straightaway",
+            "world": "Yum Yum Desert",
+            "id": 60,
+            "portalRequirements": [2500, 0]
+        },
         "navigation": {
             "prev": "pincermin",
             "next": "steak",
@@ -2386,7 +2496,12 @@
             {"item": "CardsB8", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
             {"item": "DropTable8", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
         ],
-        "mapData": {"area": "The Ring", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "The Ring",
+            "world": "Yum Yum Desert",
+            "id": 62,
+            "portalRequirements": [3000]
+        },
         "navigation": {
             "prev": "potato",
             "next": "moonman",
@@ -2426,7 +2541,12 @@
             {"item": "Quest18", "quantity": 1, "chance": 0.0001, "questLink": "Loominadi1"},
             {"item": "DropTable8", "quantity": 1, "chance": 0.0035, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Up Up Down Down", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "Up Up Down Down",
+            "world": "Yum Yum Desert",
+            "id": 63,
+            "portalRequirements": [4000]
+        },
         "navigation": {
             "prev": "steak",
             "next": "sandgiant",
@@ -2465,7 +2585,12 @@
             {"item": "SmithingRecipes2", "quantity": 58, "chance": 1.7e-05, "questLink": "N/A"},
             {"item": "DropTable8", "quantity": 1, "chance": 0.0037, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Sands of Time", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "Sands of Time",
+            "world": "Yum Yum Desert",
+            "id": 64,
+            "portalRequirements": [5000]
+        },
         "navigation": {
             "prev": "moonman",
             "next": "snailZ",
@@ -2504,7 +2629,12 @@
             {"item": "EquipmentPendant14", "quantity": 1, "chance": 2e-06, "questLink": "N/A"},
             {"item": "DropTable8", "quantity": 1, "chance": 0.0039, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Djonnuttown", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "Djonnuttown",
+            "world": "Yum Yum Desert",
+            "id": 65,
+            "portalRequirements": [1]
+        },
         "navigation": {
             "prev": "sandgiant",
             "next": "shovelR",
@@ -2544,7 +2674,12 @@
             {"item": "StampB5", "quantity": 1, "chance": 8e-05, "questLink": "N/A"},
             {"item": "DropTable14", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Steep Sheep Ledge", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Steep Sheep Ledge",
+            "world": "Frostbite Tundra",
+            "id": 101,
+            "portalRequirements": [2000]
+        },
         "navigation": {
             "prev": null,
             "next": "flake",
@@ -2584,7 +2719,12 @@
             {"item": "SnowA2a", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
             {"item": "DropTable14", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Snowfield Outskirts", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Snowfield Outskirts",
+            "world": "Frostbite Tundra",
+            "id": 103,
+            "portalRequirements": [7500]
+        },
         "navigation": {
             "prev": "sheep",
             "next": "stache",
@@ -2624,7 +2764,12 @@
             {"item": "EquipmentStatues17", "quantity": 1, "chance": 0.0002, "questLink": "N/A"},
             {"item": "DropTable14", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
         ],
-        "mapData": {"area": "The Stache Split", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "The Stache Split",
+            "world": "Frostbite Tundra",
+            "id": 104,
+            "portalRequirements": [10000, 100000]
+        },
         "navigation": {
             "prev": "flake",
             "next": "bloque",
@@ -2663,7 +2808,12 @@
             {"item": "EquipmentRings23", "quantity": 1, "chance": 1e-06, "questLink": "N/A"},
             {"item": "DropTable16", "quantity": 1, "chance": 0.0034, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Wam Wonderland", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Wam Wonderland",
+            "world": "Frostbite Tundra",
+            "id": 116,
+            "portalRequirements": [250000]
+        },
         "navigation": {
             "prev": "eye",
             "next": "skele",
@@ -2703,7 +2853,12 @@
             {"item": "FoodPotMana3", "quantity": 1, "chance": 0.0025, "questLink": "N/A"},
             {"item": "DropTable15", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Refrigeration Station", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Refrigeration Station",
+            "world": "Frostbite Tundra",
+            "id": 105,
+            "portalRequirements": [12500]
+        },
         "navigation": {
             "prev": "stache",
             "next": "mamoth",
@@ -2744,7 +2899,12 @@
             {"item": "Quest63", "quantity": 1, "chance": 1, "questLink": "Shuvelle5"},
             {"item": "DropTable15", "quantity": 1, "chance": 0.0027, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Mamooooth Mountain", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Mamooooth Mountain",
+            "world": "Frostbite Tundra",
+            "id": 106,
+            "portalRequirements": [17500]
+        },
         "navigation": {
             "prev": "bloque",
             "next": "snowball",
@@ -2785,7 +2945,12 @@
             {"item": "Quest63", "quantity": 1, "chance": 1, "questLink": "Shuvelle6"},
             {"item": "DropTable15", "quantity": 1, "chance": 0.0029, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Rollin' Tundra", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Rollin' Tundra",
+            "world": "Frostbite Tundra",
+            "id": 107,
+            "portalRequirements": [22000]
+        },
         "navigation": {
             "prev": "mamoth",
             "next": "penguin",
@@ -2825,7 +2990,12 @@
             {"item": "Quest62", "quantity": 1, "chance": 0.02, "questLink": "Yondergreen4"},
             {"item": "DropTable15", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Signature Slopes", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Signature Slopes",
+            "world": "Frostbite Tundra",
+            "id": 108,
+            "portalRequirements": [30000]
+        },
         "navigation": {
             "prev": "snowball",
             "next": "thermostat",
@@ -2865,7 +3035,12 @@
             {"item": "Quest63", "quantity": 1, "chance": 1, "questLink": "Shuvelle7"},
             {"item": "DropTable15", "quantity": 1, "chance": 0.0033, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Thermonuclear Climb", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Thermonuclear Climb",
+            "world": "Frostbite Tundra",
+            "id": 109,
+            "portalRequirements": [35000]
+        },
         "navigation": {
             "prev": "penguin",
             "next": "glass",
@@ -2904,7 +3079,12 @@
             {"item": "EquipmentStatues17", "quantity": 1, "chance": 0.0003, "questLink": "N/A"},
             {"item": "DropTable16", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Waterlogged Entrance", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Waterlogged Entrance",
+            "world": "Frostbite Tundra",
+            "id": 110,
+            "portalRequirements": [45000]
+        },
         "navigation": {
             "prev": "thermostat",
             "next": "snakeB",
@@ -2943,7 +3123,12 @@
             {"item": "EquipmentStatues19", "quantity": 1, "chance": 0.0003, "questLink": "N/A"},
             {"item": "DropTable16", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Cryo Catacombs", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Cryo Catacombs",
+            "world": "Frostbite Tundra",
+            "id": 111,
+            "portalRequirements": [65000]
+        },
         "navigation": {
             "prev": "glass",
             "next": "speaker",
@@ -2982,7 +3167,12 @@
             {"item": "FoodHealth9", "quantity": 1, "chance": 0.007, "questLink": "N/A"},
             {"item": "DropTable16", "quantity": 1, "chance": 0.003, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Overpass of Sound", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Overpass of Sound",
+            "world": "Frostbite Tundra",
+            "id": 112,
+            "portalRequirements": [90000]
+        },
         "navigation": {
             "prev": "snakeB",
             "next": "eye",
@@ -3021,7 +3211,12 @@
             {"item": "SnowC4a", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
             {"item": "DropTable16", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Crystal Basecamp", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Crystal Basecamp",
+            "world": "Frostbite Tundra",
+            "id": 113,
+            "portalRequirements": [120000]
+        },
         "navigation": {
             "prev": "speaker",
             "next": "ram",
@@ -3086,7 +3281,12 @@
             {"item": "CardsA1", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
             {"item": "DropTable1", "quantity": 1, "chance": 0.0052, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Birch Enclave", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Birch Enclave",
+            "world": "Blunder Hills",
+            "id": 17,
+            "portalRequirements": [0]
+        },
         "navigation": {
             "prev": "mushG",
             "next": "frogG",
@@ -3198,7 +3398,12 @@
             {"item": "CardsE13", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
             {"item": "DropTable16", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Hell Hath Frozen Over", "world": "Frostbite Tundra"},
+        "mapData": {
+            "area": "Hell Hath Frozen Over",
+            "world": "Frostbite Tundra",
+            "id": 117,
+            "portalRequirements": [0]
+        },
         "navigation": {
             "prev": "skele",
             "next": "Crystal2",
@@ -4442,7 +4647,12 @@
             {"item": "CardsC1", "quantity": 1, "chance": 0.0002, "questLink": "N/A"},
             {"item": "DropTable4", "quantity": 1, "chance": 0.0065, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Tunnels Entrance", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Tunnels Entrance",
+            "world": "Blunder Hills",
+            "id": 6,
+            "portalRequirements": [10]
+        },
         "navigation": null,
         "bossData": null
     },
@@ -4473,7 +4683,12 @@
             {"item": "CardsC2", "quantity": 1, "chance": 0.00013, "questLink": "N/A"},
             {"item": "DropTable4", "quantity": 1, "chance": 0.007, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Freefall Caverns", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Freefall Caverns",
+            "world": "Blunder Hills",
+            "id": 7,
+            "portalRequirements": [25, 81]
+        },
         "navigation": null,
         "bossData": null
     },
@@ -4535,7 +4750,12 @@
             {"item": "CardsD2", "quantity": 1, "chance": 8e-05, "questLink": "N/A"},
             {"item": "DropTable4", "quantity": 1, "chance": 0.0077, "questLink": "N/A"}
         ],
-        "mapData": {"area": "The Ol' Straightaway", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "The Ol' Straightaway",
+            "world": "Blunder Hills",
+            "id": 10,
+            "portalRequirements": [40]
+        },
         "navigation": null,
         "bossData": null
     },
@@ -4597,7 +4817,12 @@
             {"item": "CardsD3", "quantity": 1, "chance": 6e-05, "questLink": "N/A"},
             {"item": "DropTable4", "quantity": 2, "chance": 0.009, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Echoing Egress", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Echoing Egress",
+            "world": "Blunder Hills",
+            "id": 11,
+            "portalRequirements": [50, 60]
+        },
         "navigation": null,
         "bossData": null
     },
@@ -4658,7 +4883,12 @@
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
             {"item": "Grasslands2", "quantity": 2, "chance": 0.4, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Slip Slidy Ledges", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Slip Slidy Ledges",
+            "world": "Blunder Hills",
+            "id": 12,
+            "portalRequirements": [60]
+        },
         "navigation": null,
         "bossData": null
     },
@@ -5057,7 +5287,12 @@
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
             {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Salty Shores", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "Salty Shores",
+            "world": "Yum Yum Desert",
+            "id": 54,
+            "portalRequirements": [15]
+        },
         "navigation": null,
         "bossData": null
     },
@@ -5420,7 +5655,12 @@
             {"item": "ButterBar", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
             {"item": "DropTable12", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
         ],
-        "mapData": {"area": "Bandit Bob's Hideout", "world": "Yum Yum Desert"},
+        "mapData": {
+            "area": "Bandit Bob's Hideout",
+            "world": "Yum Yum Desert",
+            "id": 67,
+            "portalRequirements": [0]
+        },
         "navigation": null,
         "bossData": null
     },
@@ -6543,7 +6783,12 @@
             "DefFor0": 0.22
         },
         "drops": null,
-        "mapData": {"area": "Blunder Hills", "world": "Blunder Hills"},
+        "mapData": {
+            "area": "Blunder Hills",
+            "world": "Blunder Hills",
+            "id": 0,
+            "portalRequirements": [1, 0]
+        },
         "navigation": null,
         "bossData": null
     }

@@ -128,8 +128,8 @@ ItemRepo.initialise(codeReader)
 StampDescriptionRepo.initialise(codeReader)
 
 ItemRepo.exportWikiMult()
-EnemyRepo.exportWikiMult()
-#ItemRepo.upload(True)
+#EnemyRepo.upload(True)
+ItemRepo.upload(True)
 #
 # newV = IdleonReader("140b", True)
 # oldV = IdleonReader("140", True)

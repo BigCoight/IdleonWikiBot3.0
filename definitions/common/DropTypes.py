@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import string
 from typing import List
 
 from definitions.master.IdleonModel import IdleonModel
@@ -7,6 +8,7 @@ from helpers.CustomTypes import Numeric
 from helpers.HelperFunctions import formatFloat, isTalent, isRecipe
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.RecipeRepo import RecipeRepo
+from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 
 
@@ -19,7 +21,10 @@ class Drop(IdleonModel):
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = self.writeDrop()
 		if self.questLink != "N/A":
-			res += f"|special={self.questLink}"
+			questName = NpcRepo.getQuestByName(self.questLink)
+			npcName = self.questLink.rstrip(string.digits)
+			displayed = f"[[{npcName}#{questName}|{npcName}]]"
+			res += f"|special=({displayed})"
 		return res
 
 	def __str__(self) -> str:
@@ -107,10 +112,10 @@ class RecipeDrop(Drop):
 
 	def writeDrop(self):
 		tab = int(self.item[-1]) - 1
-		index = int(self.quantity) + 1
+		index = int(self.quantity)
 		item = ItemDetailRepo.getDisplayName(RecipeRepo.getItemAtIndex(tab, index))
 		res = "{{DropTable/recipe|"
-		res += f"{item}|{formatFloat(self.chance)}"
+		res += f" {tab}|{item}|{formatFloat(self.chance)}"
 		return res
 
 	def __str__(self) -> str:

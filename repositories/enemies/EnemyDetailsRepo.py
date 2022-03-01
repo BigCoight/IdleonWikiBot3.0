@@ -35,6 +35,7 @@ class EnemyDetailsRepo(Repository[EnemyDetails]):
 			if enemy.get("Name") == "Error":
 				continue
 			enemy["Type"] = enemy.get("Type").split(".")[1].title()
+			enemy["AFKtype"] = enemy.get("AFKtype").title()
 			cls.add(intName, EnemyDetails.parse_obj(enemy))
 
 	@classmethod

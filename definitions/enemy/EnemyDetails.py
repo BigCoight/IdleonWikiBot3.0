@@ -2,6 +2,7 @@ from typing import Tuple, Union, Dict, Callable
 
 from pydantic import validator
 
+from definitions.enemy.AFKType import AFKType
 from definitions.enemy.EnemyType import EnemyType
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Integer
@@ -9,7 +10,7 @@ from helpers.CustomTypes import Integer
 
 class EnemyDetails(IdleonModel):
 	Name: str
-	AFKtype: str
+	AFKtype: AFKType
 	MonsterFace: Integer
 	MonsterOffsetX: Integer
 	MonsterOffsetY: Integer

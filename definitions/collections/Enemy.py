@@ -22,7 +22,6 @@ class Enemy(IdleonModel):
 		res += self.navigation.writeWiki() if self.navigation else ""
 		res += "|}\n"
 		if self.drops:
+			res += "{{DropTable/head|Droptable for " + self.details.Name + "}}\n"
 			res += self.drops.writeWiki()
-			res += "\n-->{{DropTable/head|Droptable for " + self.details.Name + "}}<!--\n"
-			res += "-->{{DropTable/display}}"
 		return res

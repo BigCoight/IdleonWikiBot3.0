@@ -371,7 +371,7 @@
         "cardID": "D3",
         "category": "Medium Resources",
         "perTier": 10,
-        "effect": "+{% Card Drop Chance",
+        "effect": "+{% Total Mining Efficiency",
         "bonus": 6,
         "order": 3
     },
@@ -603,8 +603,8 @@
         "cardID": "D4",
         "category": "Hard Resources",
         "perTier": 10,
-        "effect": "+{ Base LUK",
-        "bonus": 4,
+        "effect": "+{% Mining Speed",
+        "bonus": 5,
         "order": 1
     },
     "SoulCard3": {
@@ -694,6 +694,214 @@
         "effect": "+{% Catching Away Gains",
         "bonus": 2.5,
         "order": 12
+    },
+    "AlienTree": {
+        "cardID": "F13",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Total Choppin Efficiency",
+        "bonus": 8,
+        "order": 13
+    },
+    "Tree8": {
+        "cardID": "F12",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Choppin Speed",
+        "bonus": 7,
+        "order": 14
+    },
+    "Bug7": {
+        "cardID": "F14",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Total Catching Efficiency",
+        "bonus": 8,
+        "order": 15
+    },
+    "Bug8": {
+        "cardID": "F15",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Catching Speed",
+        "bonus": 4,
+        "order": 16
+    },
+    "Starfire": {
+        "cardID": "F16",
+        "category": "Hard Resources",
+        "perTier": 12,
+        "effect": "+{% Mining EXP",
+        "bonus": 8,
+        "order": 17
+    },
+    "CritterCard8": {
+        "cardID": "F17",
+        "category": "Hard Resources",
+        "perTier": 7,
+        "effect": "+{% Trapping Efficiency",
+        "bonus": 7,
+        "order": 18
+    },
+    "CritterCard9": {
+        "cardID": "F18",
+        "category": "Hard Resources",
+        "perTier": 9,
+        "effect": "+{% Trapping EXP",
+        "bonus": 8,
+        "order": 19
+    },
+    "CritterCard10": {
+        "cardID": "F19",
+        "category": "Hard Resources",
+        "perTier": 12,
+        "effect": "+{% Shiny Critter Chance",
+        "bonus": 8,
+        "order": 20
+    },
+    "Fish5": {
+        "cardID": "F20",
+        "category": "Hard Resources",
+        "perTier": 8,
+        "effect": "+{% Total Fishing Efficiency",
+        "bonus": 8,
+        "order": 21
+    },
+    "Fish6": {
+        "cardID": "F21",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Fishing Speed",
+        "bonus": 4,
+        "order": 22
+    },
+    "Fish7": {
+        "cardID": "F22",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Fishing EXP",
+        "bonus": 10,
+        "order": 23
+    },
+    "Fish8": {
+        "cardID": "F23",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Fishing Away Gains",
+        "bonus": 3,
+        "order": 24
+    },
+    "mushP": {
+        "cardID": "G1",
+        "category": "Hyperion Nebula",
+        "perTier": 15,
+        "effect": "+{% Money from Monsters",
+        "bonus": 8,
+        "order": 1
+    },
+    "w4a2": {
+        "cardID": "G2",
+        "category": "Hyperion Nebula",
+        "perTier": 17,
+        "effect": "+{% Breeding EXP (Passive)",
+        "bonus": 5,
+        "order": 2
+    },
+    "w4a3": {
+        "cardID": "G3",
+        "category": "Hyperion Nebula",
+        "perTier": 18,
+        "effect": "+{% Defence from Equipment",
+        "bonus": 4,
+        "order": 3
+    },
+    "demonP": {
+        "cardID": "G4",
+        "category": "Hyperion Nebula",
+        "perTier": 19,
+        "effect": "+{% Crystal Mob Spawn Chance",
+        "bonus": 15,
+        "order": 4
+    },
+    "w4b2": {
+        "cardID": "G6",
+        "category": "Hyperion Nebula",
+        "perTier": 20,
+        "effect": "+{ Star Talent Pts (Passive)",
+        "bonus": 5,
+        "order": 5
+    },
+    "w4b1": {
+        "cardID": "G5",
+        "category": "Hyperion Nebula",
+        "perTier": 21,
+        "effect": "+{ Base WIS",
+        "bonus": 12,
+        "order": 6
+    },
+    "w4b3": {
+        "cardID": "G7",
+        "category": "Hyperion Nebula",
+        "perTier": 22,
+        "effect": "+{% Lab EXP gain",
+        "bonus": 4,
+        "order": 7
+    },
+    "w4b4": {
+        "cardID": "G8",
+        "category": "Hyperion Nebula",
+        "perTier": 23,
+        "effect": "+{ Weapon Power",
+        "bonus": 2.5,
+        "order": 8
+    },
+    "w4b5": {
+        "cardID": "G9",
+        "category": "Hyperion Nebula",
+        "perTier": 24,
+        "effect": "+{ Base AGI",
+        "bonus": 12,
+        "order": 9
+    },
+    "w4c1": {
+        "cardID": "G10",
+        "category": "Hyperion Nebula",
+        "perTier": 26,
+        "effect": "+{% Multikill per tier",
+        "bonus": 1.5,
+        "order": 10
+    },
+    "w4c2": {
+        "cardID": "G11",
+        "category": "Hyperion Nebula",
+        "perTier": 27,
+        "effect": "+{ Base STR",
+        "bonus": 12,
+        "order": 11
+    },
+    "w4c3": {
+        "cardID": "G12",
+        "category": "Hyperion Nebula",
+        "perTier": 28,
+        "effect": "+{% Critical Chance (Passive)",
+        "bonus": 1.5,
+        "order": 12
+    },
+    "w4c4": {
+        "cardID": "G13",
+        "category": "Hyperion Nebula",
+        "perTier": 30,
+        "effect": "+{% All Stat",
+        "bonus": 0.5,
+        "order": 13
+    },
+    "Crystal3": {
+        "cardID": "G14",
+        "category": "Hyperion Nebula",
+        "perTier": 10,
+        "effect": "+px Line Width (Passive)",
+        "bonus": 2,
+        "order": 14
     },
     "frogP": {
         "cardID": "X0",
@@ -950,6 +1158,22 @@
         "effect": "+{% Shrine Effects",
         "bonus": 5,
         "order": 11
+    },
+    "Boss4A": {
+        "cardID": "Z10",
+        "category": "Bosses",
+        "perTier": 2,
+        "effect": "+{% Kitchen Speed (Passive)",
+        "bonus": 6,
+        "order": 12
+    },
+    "Boss4B": {
+        "cardID": "Z11",
+        "category": "Bosses",
+        "perTier": 2,
+        "effect": "+{% All Skill Efficiency",
+        "bonus": 10,
+        "order": 13
     },
     "ghost": {
         "cardID": "Y0",

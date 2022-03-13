@@ -1453,19 +1453,19 @@
     },
     "FillerMaterial": {
         "intID": "FillerMaterial",
-        "recipe": [{"item": "FillerMaterial", "quantity": 25}, {"item": "PureWater", "quantity": 5}],
-        "levelReqToCraft": 2,
-        "expGiven": 5,
+        "recipe": [{"item": "Copper", "quantity": 6}, {"item": "Copper", "quantity": 22}],
+        "levelReqToCraft": 111,
+        "expGiven": 1000000,
         "no": 64,
-        "tab": 3,
-        "sellPrice": 350,
+        "tab": 4,
+        "sellPrice": 84,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "FillerMaterial", "quantity": 25},
-                {"indent": 0, "item": "PureWater", "quantity": 5}
+                {"indent": 0, "item": "Copper", "quantity": 6},
+                {"indent": 0, "item": "Copper", "quantity": 22}
             ],
-            "detRecipeTotals": [{"item": "FillerMaterial", "quantity": 25}, {"item": "PureWater", "quantity": 5}]
+            "detRecipeTotals": [{"item": "Copper", "quantity": 28}]
         }
     },
     "EquipmentHats22": {
@@ -5174,7 +5174,7 @@
         "intID": "EquipmentWands7",
         "recipe": [
             {"item": "SnowC4a", "quantity": 4},
-            {"item": "Soul4", "quantity": 8000},
+            {"item": "Soul4", "quantity": 5000},
             {"item": "EquipmentWands3", "quantity": 3},
             {"item": "PureWater2", "quantity": 7}
         ],
@@ -5182,12 +5182,12 @@
         "expGiven": 450000,
         "no": 32,
         "tab": 3,
-        "sellPrice": 2285950,
+        "sellPrice": 2180950,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "SnowC4a", "quantity": 4},
-                {"indent": 0, "item": "Soul4", "quantity": 8000},
+                {"indent": 0, "item": "Soul4", "quantity": 5000},
                 {"indent": 0, "item": "EquipmentWands3", "quantity": 3},
                 {"indent": 1, "item": "SaharanFoal", "quantity": 30000},
                 {"indent": 1, "item": "EquipmentWands6", "quantity": 6},
@@ -5204,7 +5204,7 @@
             ],
             "detRecipeTotals": [
                 {"item": "SnowC4a", "quantity": 4},
-                {"item": "Soul4", "quantity": 8000},
+                {"item": "Soul4", "quantity": 5000},
                 {"item": "PureWater2", "quantity": 7},
                 {"item": "SaharanFoal", "quantity": 30000},
                 {"item": "Refinery1", "quantity": 450},
@@ -5597,7 +5597,7 @@
     "WorshipSkull5": {
         "intID": "WorshipSkull5",
         "recipe": [
-            {"item": "Soul4", "quantity": 12000},
+            {"item": "Soul4", "quantity": 8000},
             {"item": "WorshipSkull4", "quantity": 2},
             {"item": "PureWater2", "quantity": 5}
         ],
@@ -5605,11 +5605,11 @@
         "expGiven": 500000,
         "no": 43,
         "tab": 3,
-        "sellPrice": 763450,
+        "sellPrice": 623450,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "Soul4", "quantity": 12000},
+                {"indent": 0, "item": "Soul4", "quantity": 8000},
                 {"indent": 0, "item": "WorshipSkull4", "quantity": 2},
                 {"indent": 1, "item": "Soul3", "quantity": 14000},
                 {"indent": 1, "item": "Refinery1", "quantity": 100},
@@ -5619,7 +5619,7 @@
                 {"indent": 0, "item": "PureWater2", "quantity": 5}
             ],
             "detRecipeTotals": [
-                {"item": "Soul4", "quantity": 12000},
+                {"item": "Soul4", "quantity": 8000},
                 {"item": "PureWater2", "quantity": 5},
                 {"item": "Soul3", "quantity": 14000},
                 {"item": "Refinery1", "quantity": 200},
@@ -5773,29 +5773,29 @@
     "EquipmentSmithingTabs4": {
         "intID": "EquipmentSmithingTabs4",
         "recipe": [
-            {"item": "FillerMaterial", "quantity": 6},
-            {"item": "Soul4", "quantity": 22},
-            {"item": "Critter6A", "quantity": 1},
-            {"item": "Refinery3", "quantity": 1}
+            {"item": "VoidBar", "quantity": 1200},
+            {"item": "Soul4", "quantity": 7500},
+            {"item": "Critter6A", "quantity": 10},
+            {"item": "Refinery3", "quantity": 400}
         ],
         "levelReqToCraft": 50,
         "expGiven": 1500000,
         "no": 48,
         "tab": 3,
-        "sellPrice": 897,
+        "sellPrice": 7742530,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "FillerMaterial", "quantity": 6},
-                {"indent": 0, "item": "Soul4", "quantity": 22},
-                {"indent": 0, "item": "Critter6A", "quantity": 1},
-                {"indent": 0, "item": "Refinery3", "quantity": 1}
+                {"indent": 0, "item": "VoidBar", "quantity": 1200},
+                {"indent": 0, "item": "Soul4", "quantity": 7500},
+                {"indent": 0, "item": "Critter6A", "quantity": 10},
+                {"indent": 0, "item": "Refinery3", "quantity": 400}
             ],
             "detRecipeTotals": [
-                {"item": "FillerMaterial", "quantity": 6},
-                {"item": "Soul4", "quantity": 22},
-                {"item": "Critter6A", "quantity": 1},
-                {"item": "Refinery3", "quantity": 1}
+                {"item": "VoidBar", "quantity": 1200},
+                {"item": "Soul4", "quantity": 7500},
+                {"item": "Critter6A", "quantity": 10},
+                {"item": "Refinery3", "quantity": 400}
             ]
         }
     },
@@ -6272,7 +6272,7 @@
     "BadgeI2": {
         "intID": "BadgeI2",
         "recipe": [
-            {"item": "Soul4", "quantity": 15000},
+            {"item": "Soul4", "quantity": 12500},
             {"item": "Critter8A", "quantity": 4},
             {"item": "Quest58", "quantity": 1}
         ],
@@ -6280,16 +6280,16 @@
         "expGiven": 5,
         "no": 62,
         "tab": 3,
-        "sellPrice": 500525022,
+        "sellPrice": 500437522,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "Soul4", "quantity": 15000},
+                {"indent": 0, "item": "Soul4", "quantity": 12500},
                 {"indent": 0, "item": "Critter8A", "quantity": 4},
                 {"indent": 0, "item": "Quest58", "quantity": 1}
             ],
             "detRecipeTotals": [
-                {"item": "Soul4", "quantity": 15000},
+                {"item": "Soul4", "quantity": 12500},
                 {"item": "Critter8A", "quantity": 4},
                 {"item": "Quest58", "quantity": 1}
             ]
@@ -6647,6 +6647,2230 @@
                 {"item": "CraftMat5", "quantity": 6000},
                 {"item": "IronBar", "quantity": 1500},
                 {"item": "CopperBar", "quantity": 1800}
+            ]
+        }
+    },
+    "EquipmentHats70": {
+        "intID": "EquipmentHats70",
+        "recipe": [
+            {"item": "Fish5", "quantity": 80000},
+            {"item": "EquipmentHats54", "quantity": 1},
+            {"item": "LustreBar", "quantity": 2500}
+        ],
+        "levelReqToCraft": 50,
+        "expGiven": 1000000,
+        "no": 1,
+        "tab": 4,
+        "sellPrice": 40496250,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Fish5", "quantity": 80000},
+                {"indent": 0, "item": "EquipmentHats54", "quantity": 1},
+                {"indent": 1, "item": "Refinery3", "quantity": 500},
+                {"indent": 1, "item": "EquipmentHats53", "quantity": 2},
+                {"indent": 2, "item": "Critter1", "quantity": 10000},
+                {"indent": 2, "item": "EquipmentHats19", "quantity": 4},
+                {"indent": 3, "item": "Fish3", "quantity": 9000},
+                {"indent": 3, "item": "EquipmentHats18", "quantity": 16},
+                {"indent": 4, "item": "IronBar", "quantity": 2000},
+                {"indent": 4, "item": "Forest1", "quantity": 4800},
+                {"indent": 3, "item": "PlatBar", "quantity": 3000},
+                {"indent": 2, "item": "DementiaBar", "quantity": 600},
+                {"indent": 1, "item": "VoidBar", "quantity": 1000},
+                {"indent": 1, "item": "PureWater2", "quantity": 5},
+                {"indent": 0, "item": "LustreBar", "quantity": 2500}
+            ],
+            "detRecipeTotals": [
+                {"item": "Fish5", "quantity": 80000},
+                {"item": "LustreBar", "quantity": 2500},
+                {"item": "Refinery3", "quantity": 500},
+                {"item": "VoidBar", "quantity": 1000},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "Critter1", "quantity": 10000},
+                {"item": "DementiaBar", "quantity": 600},
+                {"item": "Fish3", "quantity": 9000},
+                {"item": "PlatBar", "quantity": 3000},
+                {"item": "IronBar", "quantity": 2000},
+                {"item": "Forest1", "quantity": 4800}
+            ]
+        }
+    },
+    "EquipmentShirts32": {
+        "intID": "EquipmentShirts32",
+        "recipe": [
+            {"item": "GalaxyA1", "quantity": 100000},
+            {"item": "EquipmentShirts27", "quantity": 1},
+            {"item": "LustreBar", "quantity": 1200}
+        ],
+        "levelReqToCraft": 51,
+        "expGiven": 1000000,
+        "no": 2,
+        "tab": 4,
+        "sellPrice": 65699200,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "GalaxyA1", "quantity": 100000},
+                {"indent": 0, "item": "EquipmentShirts27", "quantity": 1},
+                {"indent": 1, "item": "SnowC3", "quantity": 75000},
+                {"indent": 1, "item": "EquipmentShirts15", "quantity": 2},
+                {"indent": 2, "item": "Soul1", "quantity": 2000},
+                {"indent": 2, "item": "EquipmentShirts14", "quantity": 4},
+                {"indent": 3, "item": "DesertB4", "quantity": 20000},
+                {"indent": 3, "item": "EquipmentShirts12", "quantity": 20},
+                {"indent": 4, "item": "IronBar", "quantity": 3000},
+                {"indent": 4, "item": "JungleTree", "quantity": 12000},
+                {"indent": 3, "item": "PlatBar", "quantity": 4000},
+                {"indent": 2, "item": "DementiaBar", "quantity": 700},
+                {"indent": 1, "item": "VoidBar", "quantity": 500},
+                {"indent": 1, "item": "PureWater2", "quantity": 4},
+                {"indent": 0, "item": "LustreBar", "quantity": 1200}
+            ],
+            "detRecipeTotals": [
+                {"item": "GalaxyA1", "quantity": 100000},
+                {"item": "LustreBar", "quantity": 1200},
+                {"item": "SnowC3", "quantity": 75000},
+                {"item": "VoidBar", "quantity": 500},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "Soul1", "quantity": 2000},
+                {"item": "DementiaBar", "quantity": 700},
+                {"item": "DesertB4", "quantity": 20000},
+                {"item": "PlatBar", "quantity": 4000},
+                {"item": "IronBar", "quantity": 3000},
+                {"item": "JungleTree", "quantity": 12000}
+            ]
+        }
+    },
+    "EquipmentPants24": {
+        "intID": "EquipmentPants24",
+        "recipe": [
+            {"item": "CraftMat11", "quantity": 60000},
+            {"item": "EquipmentPants21", "quantity": 1},
+            {"item": "LustreBar", "quantity": 1600}
+        ],
+        "levelReqToCraft": 52,
+        "expGiven": 1000000,
+        "no": 3,
+        "tab": 4,
+        "sellPrice": 41495760,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "CraftMat11", "quantity": 60000},
+                {"indent": 0, "item": "EquipmentPants21", "quantity": 1},
+                {"indent": 1, "item": "Tree7", "quantity": 75000},
+                {"indent": 1, "item": "EquipmentPants6", "quantity": 2},
+                {"indent": 2, "item": "SnowA1", "quantity": 16000},
+                {"indent": 2, "item": "EquipmentPants5", "quantity": 4},
+                {"indent": 3, "item": "Bug3", "quantity": 20000},
+                {"indent": 3, "item": "EquipmentPants3", "quantity": 24},
+                {"indent": 4, "item": "IronBar", "quantity": 4080},
+                {"indent": 4, "item": "CraftMat6", "quantity": 5400},
+                {"indent": 3, "item": "PlatBar", "quantity": 5000},
+                {"indent": 2, "item": "DementiaBar", "quantity": 800},
+                {"indent": 1, "item": "VoidBar", "quantity": 650},
+                {"indent": 1, "item": "PureWater2", "quantity": 4},
+                {"indent": 0, "item": "LustreBar", "quantity": 1600}
+            ],
+            "detRecipeTotals": [
+                {"item": "CraftMat11", "quantity": 60000},
+                {"item": "LustreBar", "quantity": 1600},
+                {"item": "Tree7", "quantity": 75000},
+                {"item": "VoidBar", "quantity": 650},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "SnowA1", "quantity": 16000},
+                {"item": "DementiaBar", "quantity": 800},
+                {"item": "Bug3", "quantity": 20000},
+                {"item": "PlatBar", "quantity": 5000},
+                {"item": "IronBar", "quantity": 4080},
+                {"item": "CraftMat6", "quantity": 5400}
+            ]
+        }
+    },
+    "EquipmentShoes24": {
+        "intID": "EquipmentShoes24",
+        "recipe": [
+            {"item": "GalaxyA2", "quantity": 120000},
+            {"item": "EquipmentShoes22", "quantity": 1},
+            {"item": "LustreBar", "quantity": 2000}
+        ],
+        "levelReqToCraft": 53,
+        "expGiven": 1000000,
+        "no": 4,
+        "tab": 4,
+        "sellPrice": 48707600,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "GalaxyA2", "quantity": 120000},
+                {"indent": 0, "item": "EquipmentShoes22", "quantity": 1},
+                {"indent": 1, "item": "Bug6", "quantity": 60000},
+                {"indent": 1, "item": "EquipmentShoes5", "quantity": 2},
+                {"indent": 2, "item": "Critter1A", "quantity": 6},
+                {"indent": 2, "item": "EquipmentShoes4", "quantity": 2},
+                {"indent": 3, "item": "PalmTree", "quantity": 14000},
+                {"indent": 3, "item": "Fish3", "quantity": 6000},
+                {"indent": 3, "item": "EquipmentShoes3", "quantity": 6},
+                {"indent": 4, "item": "GoldBar", "quantity": 3600},
+                {"indent": 4, "item": "EquipmentShoes15", "quantity": 12},
+                {"indent": 5, "item": "CraftMat5", "quantity": 6000},
+                {"indent": 5, "item": "IronBar", "quantity": 1500},
+                {"indent": 5, "item": "EquipmentShoes1", "quantity": 24},
+                {"indent": 6, "item": "CopperBar", "quantity": 1800},
+                {"indent": 4, "item": "PureWater", "quantity": 24},
+                {"indent": 2, "item": "DementiaBar", "quantity": 1000},
+                {"indent": 1, "item": "VoidBar", "quantity": 725},
+                {"indent": 1, "item": "PureWater2", "quantity": 4},
+                {"indent": 0, "item": "LustreBar", "quantity": 2000}
+            ],
+            "detRecipeTotals": [
+                {"item": "GalaxyA2", "quantity": 120000},
+                {"item": "LustreBar", "quantity": 2000},
+                {"item": "Bug6", "quantity": 60000},
+                {"item": "VoidBar", "quantity": 725},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "Critter1A", "quantity": 6},
+                {"item": "DementiaBar", "quantity": 1000},
+                {"item": "PalmTree", "quantity": 14000},
+                {"item": "Fish3", "quantity": 6000},
+                {"item": "GoldBar", "quantity": 3600},
+                {"item": "PureWater", "quantity": 24},
+                {"item": "CraftMat5", "quantity": 6000},
+                {"item": "IronBar", "quantity": 1500},
+                {"item": "CopperBar", "quantity": 1800}
+            ]
+        }
+    },
+    "EquipmentPunching6": {
+        "intID": "EquipmentPunching6",
+        "recipe": [
+            {"item": "CraftMat12", "quantity": 50000},
+            {"item": "EquipmentPunching5", "quantity": 1},
+            {"item": "Refinery4", "quantity": 2000}
+        ],
+        "levelReqToCraft": 60,
+        "expGiven": 1000000,
+        "no": 5,
+        "tab": 4,
+        "sellPrice": 567500,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "CraftMat12", "quantity": 50000},
+                {"indent": 0, "item": "EquipmentPunching5", "quantity": 1},
+                {"indent": 1, "item": "SnowA2a", "quantity": 100},
+                {"indent": 1, "item": "Critter5A", "quantity": 50},
+                {"indent": 1, "item": "Quest36", "quantity": 10},
+                {"indent": 2, "item": "Quest37", "quantity": 10},
+                {"indent": 2, "item": "GoldBar", "quantity": 800},
+                {"indent": 2, "item": "DesertC2b", "quantity": 10},
+                {"indent": 1, "item": "PureWater2", "quantity": 15},
+                {"indent": 0, "item": "Refinery4", "quantity": 2000}
+            ],
+            "detRecipeTotals": [
+                {"item": "CraftMat12", "quantity": 50000},
+                {"item": "Refinery4", "quantity": 2000},
+                {"item": "SnowA2a", "quantity": 100},
+                {"item": "Critter5A", "quantity": 50},
+                {"item": "PureWater2", "quantity": 15},
+                {"item": "Quest37", "quantity": 10},
+                {"item": "GoldBar", "quantity": 800},
+                {"item": "DesertC2b", "quantity": 10}
+            ]
+        }
+    },
+    "EquipmentSword4": {
+        "intID": "EquipmentSword4",
+        "recipe": [
+            {"item": "AlienTree", "quantity": 90000},
+            {"item": "EquipmentSword3", "quantity": 1},
+            {"item": "Refinery4", "quantity": 500}
+        ],
+        "levelReqToCraft": 52,
+        "expGiven": 1000000,
+        "no": 6,
+        "tab": 4,
+        "sellPrice": 22431635,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "AlienTree", "quantity": 90000},
+                {"indent": 0, "item": "EquipmentSword3", "quantity": 1},
+                {"indent": 1, "item": "SnowC4a", "quantity": 10},
+                {"indent": 1, "item": "Critter6A", "quantity": 15},
+                {"indent": 1, "item": "EquipmentSword2", "quantity": 3},
+                {"indent": 2, "item": "SnowA2", "quantity": 75000},
+                {"indent": 2, "item": "EquipmentSword1", "quantity": 6},
+                {"indent": 3, "item": "DesertA3b", "quantity": 18},
+                {"indent": 3, "item": "CraftMat9", "quantity": 15000},
+                {"indent": 3, "item": "TestObj3", "quantity": 12},
+                {"indent": 4, "item": "ForestTree", "quantity": 15000},
+                {"indent": 4, "item": "TestObj7", "quantity": 24},
+                {"indent": 5, "item": "Jungle1", "quantity": 3000},
+                {"indent": 5, "item": "CraftMat6", "quantity": 3000},
+                {"indent": 4, "item": "PureWater", "quantity": 96},
+                {"indent": 2, "item": "Refinery1", "quantity": 450},
+                {"indent": 1, "item": "PureWater2", "quantity": 7},
+                {"indent": 0, "item": "Refinery4", "quantity": 500}
+            ],
+            "detRecipeTotals": [
+                {"item": "AlienTree", "quantity": 90000},
+                {"item": "Refinery4", "quantity": 500},
+                {"item": "SnowC4a", "quantity": 10},
+                {"item": "Critter6A", "quantity": 15},
+                {"item": "PureWater2", "quantity": 7},
+                {"item": "SnowA2", "quantity": 75000},
+                {"item": "Refinery1", "quantity": 450},
+                {"item": "DesertA3b", "quantity": 18},
+                {"item": "CraftMat9", "quantity": 15000},
+                {"item": "ForestTree", "quantity": 15000},
+                {"item": "PureWater", "quantity": 96},
+                {"item": "Jungle1", "quantity": 3000},
+                {"item": "CraftMat6", "quantity": 3000}
+            ]
+        }
+    },
+    "EquipmentBows9": {
+        "intID": "EquipmentBows9",
+        "recipe": [
+            {"item": "Fish5", "quantity": 110000},
+            {"item": "EquipmentBows8", "quantity": 1},
+            {"item": "Refinery4", "quantity": 500}
+        ],
+        "levelReqToCraft": 52,
+        "expGiven": 1000000,
+        "no": 7,
+        "tab": 4,
+        "sellPrice": 1333970,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Fish5", "quantity": 110000},
+                {"indent": 0, "item": "EquipmentBows8", "quantity": 1},
+                {"indent": 1, "item": "SnowC4a", "quantity": 4},
+                {"indent": 1, "item": "Refinery3", "quantity": 350},
+                {"indent": 1, "item": "EquipmentBows7", "quantity": 3},
+                {"indent": 2, "item": "Soul1", "quantity": 21000},
+                {"indent": 2, "item": "EquipmentBows6", "quantity": 6},
+                {"indent": 3, "item": "TreeInterior1b", "quantity": 18},
+                {"indent": 3, "item": "Fish4", "quantity": 8400},
+                {"indent": 3, "item": "EquipmentBows5", "quantity": 12},
+                {"indent": 4, "item": "GoldBar", "quantity": 3000},
+                {"indent": 4, "item": "EquipmentBows3", "quantity": 24},
+                {"indent": 5, "item": "Jungle1", "quantity": 3000},
+                {"indent": 5, "item": "BirchTree", "quantity": 6000},
+                {"indent": 4, "item": "PureWater", "quantity": 96},
+                {"indent": 2, "item": "Refinery1", "quantity": 450},
+                {"indent": 1, "item": "PureWater2", "quantity": 7},
+                {"indent": 0, "item": "Refinery4", "quantity": 500}
+            ],
+            "detRecipeTotals": [
+                {"item": "Fish5", "quantity": 110000},
+                {"item": "Refinery4", "quantity": 500},
+                {"item": "SnowC4a", "quantity": 4},
+                {"item": "Refinery3", "quantity": 350},
+                {"item": "PureWater2", "quantity": 7},
+                {"item": "Soul1", "quantity": 21000},
+                {"item": "Refinery1", "quantity": 450},
+                {"item": "TreeInterior1b", "quantity": 18},
+                {"item": "Fish4", "quantity": 8400},
+                {"item": "GoldBar", "quantity": 3000},
+                {"item": "PureWater", "quantity": 96},
+                {"item": "Jungle1", "quantity": 3000},
+                {"item": "BirchTree", "quantity": 6000}
+            ]
+        }
+    },
+    "EquipmentWands8": {
+        "intID": "EquipmentWands8",
+        "recipe": [
+            {"item": "Critter7", "quantity": 50000},
+            {"item": "EquipmentWands7", "quantity": 1},
+            {"item": "Refinery4", "quantity": 500}
+        ],
+        "levelReqToCraft": 52,
+        "expGiven": 1000000,
+        "no": 8,
+        "tab": 4,
+        "sellPrice": 4580950,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Critter7", "quantity": 50000},
+                {"indent": 0, "item": "EquipmentWands7", "quantity": 1},
+                {"indent": 1, "item": "SnowC4a", "quantity": 4},
+                {"indent": 1, "item": "Soul4", "quantity": 5000},
+                {"indent": 1, "item": "EquipmentWands3", "quantity": 3},
+                {"indent": 2, "item": "SaharanFoal", "quantity": 30000},
+                {"indent": 2, "item": "EquipmentWands6", "quantity": 6},
+                {"indent": 3, "item": "Sewers1b", "quantity": 18},
+                {"indent": 3, "item": "Bug4", "quantity": 24000},
+                {"indent": 3, "item": "EquipmentWands5", "quantity": 12},
+                {"indent": 4, "item": "CraftMat7", "quantity": 12000},
+                {"indent": 4, "item": "EquipmentWands2", "quantity": 24},
+                {"indent": 5, "item": "Jungle1", "quantity": 3000},
+                {"indent": 5, "item": "CopperBar", "quantity": 2400},
+                {"indent": 4, "item": "PureWater", "quantity": 96},
+                {"indent": 2, "item": "Refinery1", "quantity": 450},
+                {"indent": 1, "item": "PureWater2", "quantity": 7},
+                {"indent": 0, "item": "Refinery4", "quantity": 500}
+            ],
+            "detRecipeTotals": [
+                {"item": "Critter7", "quantity": 50000},
+                {"item": "Refinery4", "quantity": 500},
+                {"item": "SnowC4a", "quantity": 4},
+                {"item": "Soul4", "quantity": 5000},
+                {"item": "PureWater2", "quantity": 7},
+                {"item": "SaharanFoal", "quantity": 30000},
+                {"item": "Refinery1", "quantity": 450},
+                {"item": "Sewers1b", "quantity": 18},
+                {"item": "Bug4", "quantity": 24000},
+                {"item": "CraftMat7", "quantity": 12000},
+                {"item": "PureWater", "quantity": 96},
+                {"item": "Jungle1", "quantity": 3000},
+                {"item": "CopperBar", "quantity": 2400}
+            ]
+        }
+    },
+    "EquipmentTools8": {
+        "intID": "EquipmentTools8",
+        "recipe": [
+            {"item": "LustreBar", "quantity": 1000},
+            {"item": "EquipmentTools11", "quantity": 1},
+            {"item": "Refinery4", "quantity": 600}
+        ],
+        "levelReqToCraft": 52,
+        "expGiven": 1000000,
+        "no": 9,
+        "tab": 4,
+        "sellPrice": 32049170,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "LustreBar", "quantity": 1000},
+                {"indent": 0, "item": "EquipmentTools11", "quantity": 1},
+                {"indent": 1, "item": "VoidBar", "quantity": 400},
+                {"indent": 1, "item": "EquipmentTools7", "quantity": 2},
+                {"indent": 2, "item": "DementiaBar", "quantity": 550},
+                {"indent": 2, "item": "SnowA3", "quantity": 30000},
+                {"indent": 2, "item": "EquipmentTools6", "quantity": 4},
+                {"indent": 3, "item": "PlatBar", "quantity": 3200},
+                {"indent": 3, "item": "DesertB3", "quantity": 42000},
+                {"indent": 3, "item": "EquipmentTools5", "quantity": 8},
+                {"indent": 4, "item": "DesertA2", "quantity": 20000},
+                {"indent": 4, "item": "GoldBar", "quantity": 6400},
+                {"indent": 4, "item": "EquipmentTools3", "quantity": 8},
+                {"indent": 5, "item": "IronBar", "quantity": 560},
+                {"indent": 5, "item": "Jungle3", "quantity": 1200},
+                {"indent": 1, "item": "PureWater2", "quantity": 5},
+                {"indent": 0, "item": "Refinery4", "quantity": 600}
+            ],
+            "detRecipeTotals": [
+                {"item": "LustreBar", "quantity": 1000},
+                {"item": "Refinery4", "quantity": 600},
+                {"item": "VoidBar", "quantity": 400},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "DementiaBar", "quantity": 550},
+                {"item": "SnowA3", "quantity": 30000},
+                {"item": "PlatBar", "quantity": 3200},
+                {"item": "DesertB3", "quantity": 42000},
+                {"item": "DesertA2", "quantity": 20000},
+                {"item": "GoldBar", "quantity": 6400},
+                {"item": "IronBar", "quantity": 560},
+                {"item": "Jungle3", "quantity": 1200}
+            ]
+        }
+    },
+    "MaxCapBagMi7": {
+        "intID": "MaxCapBagMi7",
+        "recipe": [{"item": "Lustre", "quantity": 110000}, {"item": "Refinery4", "quantity": 400}],
+        "levelReqToCraft": 53,
+        "expGiven": 1000000,
+        "no": 10,
+        "tab": 4,
+        "sellPrice": 6640000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Lustre", "quantity": 110000},
+                {"indent": 0, "item": "Refinery4", "quantity": 400}
+            ],
+            "detRecipeTotals": [{"item": "Lustre", "quantity": 110000}, {"item": "Refinery4", "quantity": 400}]
+        }
+    },
+    "EquipmentToolsHatchet6": {
+        "intID": "EquipmentToolsHatchet6",
+        "recipe": [
+            {"item": "AlienTree", "quantity": 110000},
+            {"item": "EquipmentToolsHatchet7", "quantity": 1},
+            {"item": "Refinery4", "quantity": 600}
+        ],
+        "levelReqToCraft": 52,
+        "expGiven": 1000000,
+        "no": 11,
+        "tab": 4,
+        "sellPrice": 11789850,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "AlienTree", "quantity": 110000},
+                {"indent": 0, "item": "EquipmentToolsHatchet7", "quantity": 1},
+                {"indent": 1, "item": "Tree7", "quantity": 50000},
+                {"indent": 1, "item": "EquipmentToolsHatchet5", "quantity": 2},
+                {"indent": 2, "item": "SaharanFoal", "quantity": 30000},
+                {"indent": 2, "item": "Refinery1", "quantity": 100},
+                {"indent": 2, "item": "EquipmentToolsHatchet4", "quantity": 4},
+                {"indent": 3, "item": "PalmTree", "quantity": 26000},
+                {"indent": 3, "item": "CraftMat7", "quantity": 20000},
+                {"indent": 3, "item": "EquipmentToolsHatchet2", "quantity": 8},
+                {"indent": 4, "item": "Quest19", "quantity": 40},
+                {"indent": 4, "item": "DesertA3", "quantity": 16000},
+                {"indent": 4, "item": "EquipmentToolsHatchet1", "quantity": 8},
+                {"indent": 5, "item": "JungleTree", "quantity": 1600},
+                {"indent": 5, "item": "CraftMat6", "quantity": 800},
+                {"indent": 1, "item": "PureWater2", "quantity": 5},
+                {"indent": 0, "item": "Refinery4", "quantity": 600}
+            ],
+            "detRecipeTotals": [
+                {"item": "AlienTree", "quantity": 110000},
+                {"item": "Refinery4", "quantity": 600},
+                {"item": "Tree7", "quantity": 50000},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "SaharanFoal", "quantity": 30000},
+                {"item": "Refinery1", "quantity": 100},
+                {"item": "PalmTree", "quantity": 26000},
+                {"item": "CraftMat7", "quantity": 20000},
+                {"item": "Quest19", "quantity": 40},
+                {"item": "DesertA3", "quantity": 16000},
+                {"item": "JungleTree", "quantity": 1600},
+                {"item": "CraftMat6", "quantity": 800}
+            ]
+        }
+    },
+    "MaxCapBagT7": {
+        "intID": "MaxCapBagT7",
+        "recipe": [{"item": "AlienTree", "quantity": 110000}, {"item": "Refinery4", "quantity": 400}],
+        "levelReqToCraft": 53,
+        "expGiven": 1000000,
+        "no": 12,
+        "tab": 4,
+        "sellPrice": 6090000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "AlienTree", "quantity": 110000},
+                {"indent": 0, "item": "Refinery4", "quantity": 400}
+            ],
+            "detRecipeTotals": [{"item": "AlienTree", "quantity": 110000}, {"item": "Refinery4", "quantity": 400}]
+        }
+    },
+    "FishingRod8": {
+        "intID": "FishingRod8",
+        "recipe": [
+            {"item": "Fish5", "quantity": 90000},
+            {"item": "FishingRod7", "quantity": 1},
+            {"item": "Refinery4", "quantity": 750}
+        ],
+        "levelReqToCraft": 53,
+        "expGiven": 1000000,
+        "no": 13,
+        "tab": 4,
+        "sellPrice": 4041659,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Fish5", "quantity": 90000},
+                {"indent": 0, "item": "FishingRod7", "quantity": 1},
+                {"indent": 1, "item": "Refinery3", "quantity": 200},
+                {"indent": 1, "item": "Critter5A", "quantity": 3},
+                {"indent": 1, "item": "FishingRod6", "quantity": 2},
+                {"indent": 2, "item": "DementiaBar", "quantity": 600},
+                {"indent": 2, "item": "Refinery1", "quantity": 100},
+                {"indent": 2, "item": "FishingRod5", "quantity": 4},
+                {"indent": 3, "item": "Fish4", "quantity": 8000},
+                {"indent": 3, "item": "PlatBar", "quantity": 3200},
+                {"indent": 3, "item": "FishingRod4", "quantity": 8},
+                {"indent": 4, "item": "Fish2", "quantity": 20000},
+                {"indent": 4, "item": "CraftMat9", "quantity": 8000},
+                {"indent": 4, "item": "FishingRod3", "quantity": 16},
+                {"indent": 5, "item": "IronBar", "quantity": 4800},
+                {"indent": 5, "item": "Fish2", "quantity": 10400},
+                {"indent": 5, "item": "PureWater", "quantity": 48},
+                {"indent": 1, "item": "PureWater2", "quantity": 5},
+                {"indent": 0, "item": "Refinery4", "quantity": 750}
+            ],
+            "detRecipeTotals": [
+                {"item": "Fish5", "quantity": 90000},
+                {"item": "Refinery4", "quantity": 750},
+                {"item": "Refinery3", "quantity": 200},
+                {"item": "Critter5A", "quantity": 3},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "DementiaBar", "quantity": 600},
+                {"item": "Refinery1", "quantity": 100},
+                {"item": "Fish4", "quantity": 8000},
+                {"item": "PlatBar", "quantity": 3200},
+                {"item": "Fish2", "quantity": 30400},
+                {"item": "CraftMat9", "quantity": 8000},
+                {"item": "IronBar", "quantity": 4800},
+                {"item": "PureWater", "quantity": 48}
+            ]
+        }
+    },
+    "MaxCapBagFi7": {
+        "intID": "MaxCapBagFi7",
+        "recipe": [{"item": "Fish5", "quantity": 120000}, {"item": "Refinery4", "quantity": 500}],
+        "levelReqToCraft": 54,
+        "expGiven": 1000000,
+        "no": 14,
+        "tab": 4,
+        "sellPrice": 650000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Fish5", "quantity": 120000},
+                {"indent": 0, "item": "Refinery4", "quantity": 500}
+            ],
+            "detRecipeTotals": [{"item": "Fish5", "quantity": 120000}, {"item": "Refinery4", "quantity": 500}]
+        }
+    },
+    "CatchingNet8": {
+        "intID": "CatchingNet8",
+        "recipe": [
+            {"item": "Bug7", "quantity": 130000},
+            {"item": "CatchingNet7", "quantity": 1},
+            {"item": "Refinery4", "quantity": 750}
+        ],
+        "levelReqToCraft": 53,
+        "expGiven": 1000000,
+        "no": 15,
+        "tab": 4,
+        "sellPrice": 13518050,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Bug7", "quantity": 130000},
+                {"indent": 0, "item": "CatchingNet7", "quantity": 1},
+                {"indent": 1, "item": "Bug6", "quantity": 50000},
+                {"indent": 1, "item": "CatchingNet6", "quantity": 2},
+                {"indent": 2, "item": "Bug5", "quantity": 30000},
+                {"indent": 2, "item": "Refinery1", "quantity": 100},
+                {"indent": 2, "item": "CatchingNet5", "quantity": 4},
+                {"indent": 3, "item": "Bug4", "quantity": 28000},
+                {"indent": 3, "item": "Plat", "quantity": 12000},
+                {"indent": 3, "item": "CatchingNet4", "quantity": 8},
+                {"indent": 4, "item": "Quest19", "quantity": 40},
+                {"indent": 4, "item": "Bug2", "quantity": 20000},
+                {"indent": 4, "item": "CatchingNet3", "quantity": 16},
+                {"indent": 5, "item": "ForestTree", "quantity": 12800},
+                {"indent": 5, "item": "Bug2", "quantity": 13600},
+                {"indent": 5, "item": "PureWater", "quantity": 48},
+                {"indent": 1, "item": "PureWater2", "quantity": 5},
+                {"indent": 0, "item": "Refinery4", "quantity": 750}
+            ],
+            "detRecipeTotals": [
+                {"item": "Bug7", "quantity": 130000},
+                {"item": "Refinery4", "quantity": 750},
+                {"item": "Bug6", "quantity": 50000},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "Bug5", "quantity": 30000},
+                {"item": "Refinery1", "quantity": 100},
+                {"item": "Bug4", "quantity": 28000},
+                {"item": "Plat", "quantity": 12000},
+                {"item": "Quest19", "quantity": 40},
+                {"item": "Bug2", "quantity": 33600},
+                {"item": "ForestTree", "quantity": 12800},
+                {"item": "PureWater", "quantity": 48}
+            ]
+        }
+    },
+    "MaxCapBagB7": {
+        "intID": "MaxCapBagB7",
+        "recipe": [{"item": "Bug7", "quantity": 110000}, {"item": "Refinery4", "quantity": 500}],
+        "levelReqToCraft": 54,
+        "expGiven": 1000000,
+        "no": 16,
+        "tab": 4,
+        "sellPrice": 7750000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Bug7", "quantity": 110000},
+                {"indent": 0, "item": "Refinery4", "quantity": 500}
+            ],
+            "detRecipeTotals": [{"item": "Bug7", "quantity": 110000}, {"item": "Refinery4", "quantity": 500}]
+        }
+    },
+    "TrapBoxSet6": {
+        "intID": "TrapBoxSet6",
+        "recipe": [
+            {"item": "Critter8A", "quantity": 10},
+            {"item": "TrapBoxSet5", "quantity": 1},
+            {"item": "Refinery4", "quantity": 1000}
+        ],
+        "levelReqToCraft": 54,
+        "expGiven": 1000000,
+        "no": 17,
+        "tab": 4,
+        "sellPrice": 117313,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Critter8A", "quantity": 10},
+                {"indent": 0, "item": "TrapBoxSet5", "quantity": 1},
+                {"indent": 1, "item": "Critter6A", "quantity": 6},
+                {"indent": 1, "item": "TrapBoxSet4", "quantity": 1},
+                {"indent": 2, "item": "Critter4A", "quantity": 5},
+                {"indent": 2, "item": "Refinery1", "quantity": 50},
+                {"indent": 2, "item": "TrapBoxSet3", "quantity": 2},
+                {"indent": 3, "item": "Critter2A", "quantity": 4},
+                {"indent": 3, "item": "Refinery1", "quantity": 40},
+                {"indent": 1, "item": "PureWater2", "quantity": 5},
+                {"indent": 0, "item": "Refinery4", "quantity": 1000}
+            ],
+            "detRecipeTotals": [
+                {"item": "Critter8A", "quantity": 10},
+                {"item": "Refinery4", "quantity": 1000},
+                {"item": "Critter6A", "quantity": 6},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "Critter4A", "quantity": 5},
+                {"item": "Refinery1", "quantity": 90},
+                {"item": "Critter2A", "quantity": 4}
+            ]
+        }
+    },
+    "MaxCapBagTr6": {
+        "intID": "MaxCapBagTr6",
+        "recipe": [{"item": "Critter9", "quantity": 100000}, {"item": "Refinery4", "quantity": 1000}],
+        "levelReqToCraft": 55,
+        "expGiven": 1000000,
+        "no": 18,
+        "tab": 4,
+        "sellPrice": 8100000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Critter9", "quantity": 100000},
+                {"indent": 0, "item": "Refinery4", "quantity": 1000}
+            ],
+            "detRecipeTotals": [{"item": "Critter9", "quantity": 100000}, {"item": "Refinery4", "quantity": 1000}]
+        }
+    },
+    "WorshipSkull6": {
+        "intID": "WorshipSkull6",
+        "recipe": [
+            {"item": "Soul4", "quantity": 40000},
+            {"item": "WorshipSkull5", "quantity": 1},
+            {"item": "Refinery4", "quantity": 1000}
+        ],
+        "levelReqToCraft": 54,
+        "expGiven": 1000000,
+        "no": 19,
+        "tab": 4,
+        "sellPrice": 2123450,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Soul4", "quantity": 40000},
+                {"indent": 0, "item": "WorshipSkull5", "quantity": 1},
+                {"indent": 1, "item": "Soul4", "quantity": 8000},
+                {"indent": 1, "item": "WorshipSkull4", "quantity": 2},
+                {"indent": 2, "item": "Soul3", "quantity": 14000},
+                {"indent": 2, "item": "Refinery1", "quantity": 100},
+                {"indent": 2, "item": "WorshipSkull3", "quantity": 4},
+                {"indent": 3, "item": "Soul2", "quantity": 4800},
+                {"indent": 3, "item": "Refinery1", "quantity": 100},
+                {"indent": 1, "item": "PureWater2", "quantity": 5},
+                {"indent": 0, "item": "Refinery4", "quantity": 1000}
+            ],
+            "detRecipeTotals": [
+                {"item": "Soul4", "quantity": 48000},
+                {"item": "Refinery4", "quantity": 1000},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "Soul3", "quantity": 14000},
+                {"item": "Refinery1", "quantity": 200},
+                {"item": "Soul2", "quantity": 4800}
+            ]
+        }
+    },
+    "MaxCapBagS6": {
+        "intID": "MaxCapBagS6",
+        "recipe": [{"item": "Soul4", "quantity": 90000}, {"item": "Refinery4", "quantity": 1000}],
+        "levelReqToCraft": 55,
+        "expGiven": 1000000,
+        "no": 20,
+        "tab": 4,
+        "sellPrice": 3250000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Soul4", "quantity": 90000},
+                {"indent": 0, "item": "Refinery4", "quantity": 1000}
+            ],
+            "detRecipeTotals": [{"item": "Soul4", "quantity": 90000}, {"item": "Refinery4", "quantity": 1000}]
+        }
+    },
+    "EquipmentShoes26": {
+        "intID": "EquipmentShoes26",
+        "recipe": [
+            {"item": "Copper", "quantity": 300000},
+            {"item": "EquipmentShoes16", "quantity": 1},
+            {"item": "EquipmentShoes24", "quantity": 1}
+        ],
+        "levelReqToCraft": 56,
+        "expGiven": 1000000,
+        "no": 21,
+        "tab": 4,
+        "sellPrice": 49712250,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Copper", "quantity": 300000},
+                {"indent": 0, "item": "EquipmentShoes16", "quantity": 1},
+                {"indent": 1, "item": "EquipmentShoes3", "quantity": 1},
+                {"indent": 2, "item": "GoldBar", "quantity": 600},
+                {"indent": 2, "item": "EquipmentShoes15", "quantity": 2},
+                {"indent": 3, "item": "CraftMat5", "quantity": 1000},
+                {"indent": 3, "item": "IronBar", "quantity": 250},
+                {"indent": 3, "item": "EquipmentShoes1", "quantity": 4},
+                {"indent": 4, "item": "CopperBar", "quantity": 300},
+                {"indent": 2, "item": "PureWater", "quantity": 4},
+                {"indent": 1, "item": "PureWater", "quantity": 9},
+                {"indent": 1, "item": "Copper", "quantity": 1500},
+                {"indent": 1, "item": "Iron", "quantity": 1200},
+                {"indent": 0, "item": "EquipmentShoes24", "quantity": 1},
+                {"indent": 1, "item": "GalaxyA2", "quantity": 120000},
+                {"indent": 1, "item": "EquipmentShoes22", "quantity": 1},
+                {"indent": 2, "item": "Bug6", "quantity": 60000},
+                {"indent": 2, "item": "EquipmentShoes5", "quantity": 2},
+                {"indent": 3, "item": "Critter1A", "quantity": 6},
+                {"indent": 3, "item": "EquipmentShoes4", "quantity": 2},
+                {"indent": 4, "item": "PalmTree", "quantity": 14000},
+                {"indent": 4, "item": "Fish3", "quantity": 6000},
+                {"indent": 4, "item": "EquipmentShoes3", "quantity": 6},
+                {"indent": 5, "item": "GoldBar", "quantity": 3600},
+                {"indent": 5, "item": "EquipmentShoes15", "quantity": 12},
+                {"indent": 6, "item": "CraftMat5", "quantity": 6000},
+                {"indent": 6, "item": "IronBar", "quantity": 1500},
+                {"indent": 6, "item": "EquipmentShoes1", "quantity": 24},
+                {"indent": 7, "item": "CopperBar", "quantity": 1800},
+                {"indent": 5, "item": "PureWater", "quantity": 24},
+                {"indent": 3, "item": "DementiaBar", "quantity": 1000},
+                {"indent": 2, "item": "VoidBar", "quantity": 725},
+                {"indent": 2, "item": "PureWater2", "quantity": 4},
+                {"indent": 1, "item": "LustreBar", "quantity": 2000}
+            ],
+            "detRecipeTotals": [
+                {"item": "Copper", "quantity": 301500},
+                {"item": "PureWater", "quantity": 37},
+                {"item": "Iron", "quantity": 1200},
+                {"item": "GalaxyA2", "quantity": 120000},
+                {"item": "LustreBar", "quantity": 2000},
+                {"item": "GoldBar", "quantity": 4200},
+                {"item": "Bug6", "quantity": 60000},
+                {"item": "VoidBar", "quantity": 725},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "CraftMat5", "quantity": 7000},
+                {"item": "IronBar", "quantity": 1750},
+                {"item": "Critter1A", "quantity": 6},
+                {"item": "DementiaBar", "quantity": 1000},
+                {"item": "CopperBar", "quantity": 2100},
+                {"item": "PalmTree", "quantity": 14000},
+                {"item": "Fish3", "quantity": 6000}
+            ]
+        }
+    },
+    "EquipmentShoes27": {
+        "intID": "EquipmentShoes27",
+        "recipe": [
+            {"item": "OakTree", "quantity": 300000},
+            {"item": "EquipmentShoes17", "quantity": 1},
+            {"item": "EquipmentShoes24", "quantity": 1}
+        ],
+        "levelReqToCraft": 56,
+        "expGiven": 1000000,
+        "no": 22,
+        "tab": 4,
+        "sellPrice": 49418950,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "OakTree", "quantity": 300000},
+                {"indent": 0, "item": "EquipmentShoes17", "quantity": 1},
+                {"indent": 1, "item": "EquipmentShoes3", "quantity": 1},
+                {"indent": 2, "item": "GoldBar", "quantity": 600},
+                {"indent": 2, "item": "EquipmentShoes15", "quantity": 2},
+                {"indent": 3, "item": "CraftMat5", "quantity": 1000},
+                {"indent": 3, "item": "IronBar", "quantity": 250},
+                {"indent": 3, "item": "EquipmentShoes1", "quantity": 4},
+                {"indent": 4, "item": "CopperBar", "quantity": 300},
+                {"indent": 2, "item": "PureWater", "quantity": 4},
+                {"indent": 1, "item": "PureWater", "quantity": 9},
+                {"indent": 1, "item": "JungleTree", "quantity": 1600},
+                {"indent": 1, "item": "ForestTree", "quantity": 1000},
+                {"indent": 0, "item": "EquipmentShoes24", "quantity": 1},
+                {"indent": 1, "item": "GalaxyA2", "quantity": 120000},
+                {"indent": 1, "item": "EquipmentShoes22", "quantity": 1},
+                {"indent": 2, "item": "Bug6", "quantity": 60000},
+                {"indent": 2, "item": "EquipmentShoes5", "quantity": 2},
+                {"indent": 3, "item": "Critter1A", "quantity": 6},
+                {"indent": 3, "item": "EquipmentShoes4", "quantity": 2},
+                {"indent": 4, "item": "PalmTree", "quantity": 14000},
+                {"indent": 4, "item": "Fish3", "quantity": 6000},
+                {"indent": 4, "item": "EquipmentShoes3", "quantity": 6},
+                {"indent": 5, "item": "GoldBar", "quantity": 3600},
+                {"indent": 5, "item": "EquipmentShoes15", "quantity": 12},
+                {"indent": 6, "item": "CraftMat5", "quantity": 6000},
+                {"indent": 6, "item": "IronBar", "quantity": 1500},
+                {"indent": 6, "item": "EquipmentShoes1", "quantity": 24},
+                {"indent": 7, "item": "CopperBar", "quantity": 1800},
+                {"indent": 5, "item": "PureWater", "quantity": 24},
+                {"indent": 3, "item": "DementiaBar", "quantity": 1000},
+                {"indent": 2, "item": "VoidBar", "quantity": 725},
+                {"indent": 2, "item": "PureWater2", "quantity": 4},
+                {"indent": 1, "item": "LustreBar", "quantity": 2000}
+            ],
+            "detRecipeTotals": [
+                {"item": "OakTree", "quantity": 300000},
+                {"item": "PureWater", "quantity": 37},
+                {"item": "JungleTree", "quantity": 1600},
+                {"item": "ForestTree", "quantity": 1000},
+                {"item": "GalaxyA2", "quantity": 120000},
+                {"item": "LustreBar", "quantity": 2000},
+                {"item": "GoldBar", "quantity": 4200},
+                {"item": "Bug6", "quantity": 60000},
+                {"item": "VoidBar", "quantity": 725},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "CraftMat5", "quantity": 7000},
+                {"item": "IronBar", "quantity": 1750},
+                {"item": "Critter1A", "quantity": 6},
+                {"item": "DementiaBar", "quantity": 1000},
+                {"item": "CopperBar", "quantity": 2100},
+                {"item": "PalmTree", "quantity": 14000},
+                {"item": "Fish3", "quantity": 6000}
+            ]
+        }
+    },
+    "EquipmentShoes28": {
+        "intID": "EquipmentShoes28",
+        "recipe": [
+            {"item": "Fish1", "quantity": 300000},
+            {"item": "EquipmentShoes18", "quantity": 1},
+            {"item": "EquipmentShoes24", "quantity": 1}
+        ],
+        "levelReqToCraft": 56,
+        "expGiven": 1000000,
+        "no": 23,
+        "tab": 4,
+        "sellPrice": 50015350,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Fish1", "quantity": 300000},
+                {"indent": 0, "item": "EquipmentShoes18", "quantity": 1},
+                {"indent": 1, "item": "EquipmentShoes3", "quantity": 1},
+                {"indent": 2, "item": "GoldBar", "quantity": 600},
+                {"indent": 2, "item": "EquipmentShoes15", "quantity": 2},
+                {"indent": 3, "item": "CraftMat5", "quantity": 1000},
+                {"indent": 3, "item": "IronBar", "quantity": 250},
+                {"indent": 3, "item": "EquipmentShoes1", "quantity": 4},
+                {"indent": 4, "item": "CopperBar", "quantity": 300},
+                {"indent": 2, "item": "PureWater", "quantity": 4},
+                {"indent": 1, "item": "PureWater", "quantity": 9},
+                {"indent": 1, "item": "Fish1", "quantity": 1250},
+                {"indent": 1, "item": "Fish2", "quantity": 1000},
+                {"indent": 0, "item": "EquipmentShoes24", "quantity": 1},
+                {"indent": 1, "item": "GalaxyA2", "quantity": 120000},
+                {"indent": 1, "item": "EquipmentShoes22", "quantity": 1},
+                {"indent": 2, "item": "Bug6", "quantity": 60000},
+                {"indent": 2, "item": "EquipmentShoes5", "quantity": 2},
+                {"indent": 3, "item": "Critter1A", "quantity": 6},
+                {"indent": 3, "item": "EquipmentShoes4", "quantity": 2},
+                {"indent": 4, "item": "PalmTree", "quantity": 14000},
+                {"indent": 4, "item": "Fish3", "quantity": 6000},
+                {"indent": 4, "item": "EquipmentShoes3", "quantity": 6},
+                {"indent": 5, "item": "GoldBar", "quantity": 3600},
+                {"indent": 5, "item": "EquipmentShoes15", "quantity": 12},
+                {"indent": 6, "item": "CraftMat5", "quantity": 6000},
+                {"indent": 6, "item": "IronBar", "quantity": 1500},
+                {"indent": 6, "item": "EquipmentShoes1", "quantity": 24},
+                {"indent": 7, "item": "CopperBar", "quantity": 1800},
+                {"indent": 5, "item": "PureWater", "quantity": 24},
+                {"indent": 3, "item": "DementiaBar", "quantity": 1000},
+                {"indent": 2, "item": "VoidBar", "quantity": 725},
+                {"indent": 2, "item": "PureWater2", "quantity": 4},
+                {"indent": 1, "item": "LustreBar", "quantity": 2000}
+            ],
+            "detRecipeTotals": [
+                {"item": "Fish1", "quantity": 301250},
+                {"item": "PureWater", "quantity": 37},
+                {"item": "Fish2", "quantity": 1000},
+                {"item": "GalaxyA2", "quantity": 120000},
+                {"item": "LustreBar", "quantity": 2000},
+                {"item": "GoldBar", "quantity": 4200},
+                {"item": "Bug6", "quantity": 60000},
+                {"item": "VoidBar", "quantity": 725},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "CraftMat5", "quantity": 7000},
+                {"item": "IronBar", "quantity": 1750},
+                {"item": "Critter1A", "quantity": 6},
+                {"item": "DementiaBar", "quantity": 1000},
+                {"item": "CopperBar", "quantity": 2100},
+                {"item": "PalmTree", "quantity": 14000},
+                {"item": "Fish3", "quantity": 6000}
+            ]
+        }
+    },
+    "EquipmentShoes29": {
+        "intID": "EquipmentShoes29",
+        "recipe": [
+            {"item": "Bug1", "quantity": 300000},
+            {"item": "EquipmentShoes19", "quantity": 1},
+            {"item": "EquipmentShoes24", "quantity": 1}
+        ],
+        "levelReqToCraft": 56,
+        "expGiven": 1000000,
+        "no": 24,
+        "tab": 4,
+        "sellPrice": 49716600,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Bug1", "quantity": 300000},
+                {"indent": 0, "item": "EquipmentShoes19", "quantity": 1},
+                {"indent": 1, "item": "EquipmentShoes3", "quantity": 1},
+                {"indent": 2, "item": "GoldBar", "quantity": 600},
+                {"indent": 2, "item": "EquipmentShoes15", "quantity": 2},
+                {"indent": 3, "item": "CraftMat5", "quantity": 1000},
+                {"indent": 3, "item": "IronBar", "quantity": 250},
+                {"indent": 3, "item": "EquipmentShoes1", "quantity": 4},
+                {"indent": 4, "item": "CopperBar", "quantity": 300},
+                {"indent": 2, "item": "PureWater", "quantity": 4},
+                {"indent": 1, "item": "PureWater", "quantity": 9},
+                {"indent": 1, "item": "Bug1", "quantity": 2000},
+                {"indent": 1, "item": "Bug2", "quantity": 1250},
+                {"indent": 0, "item": "EquipmentShoes24", "quantity": 1},
+                {"indent": 1, "item": "GalaxyA2", "quantity": 120000},
+                {"indent": 1, "item": "EquipmentShoes22", "quantity": 1},
+                {"indent": 2, "item": "Bug6", "quantity": 60000},
+                {"indent": 2, "item": "EquipmentShoes5", "quantity": 2},
+                {"indent": 3, "item": "Critter1A", "quantity": 6},
+                {"indent": 3, "item": "EquipmentShoes4", "quantity": 2},
+                {"indent": 4, "item": "PalmTree", "quantity": 14000},
+                {"indent": 4, "item": "Fish3", "quantity": 6000},
+                {"indent": 4, "item": "EquipmentShoes3", "quantity": 6},
+                {"indent": 5, "item": "GoldBar", "quantity": 3600},
+                {"indent": 5, "item": "EquipmentShoes15", "quantity": 12},
+                {"indent": 6, "item": "CraftMat5", "quantity": 6000},
+                {"indent": 6, "item": "IronBar", "quantity": 1500},
+                {"indent": 6, "item": "EquipmentShoes1", "quantity": 24},
+                {"indent": 7, "item": "CopperBar", "quantity": 1800},
+                {"indent": 5, "item": "PureWater", "quantity": 24},
+                {"indent": 3, "item": "DementiaBar", "quantity": 1000},
+                {"indent": 2, "item": "VoidBar", "quantity": 725},
+                {"indent": 2, "item": "PureWater2", "quantity": 4},
+                {"indent": 1, "item": "LustreBar", "quantity": 2000}
+            ],
+            "detRecipeTotals": [
+                {"item": "Bug1", "quantity": 302000},
+                {"item": "PureWater", "quantity": 37},
+                {"item": "Bug2", "quantity": 1250},
+                {"item": "GalaxyA2", "quantity": 120000},
+                {"item": "LustreBar", "quantity": 2000},
+                {"item": "GoldBar", "quantity": 4200},
+                {"item": "Bug6", "quantity": 60000},
+                {"item": "VoidBar", "quantity": 725},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "CraftMat5", "quantity": 7000},
+                {"item": "IronBar", "quantity": 1750},
+                {"item": "Critter1A", "quantity": 6},
+                {"item": "DementiaBar", "quantity": 1000},
+                {"item": "CopperBar", "quantity": 2100},
+                {"item": "PalmTree", "quantity": 14000},
+                {"item": "Fish3", "quantity": 6000}
+            ]
+        }
+    },
+    "EquipmentShoes31": {
+        "intID": "EquipmentShoes31",
+        "recipe": [
+            {"item": "EquipmentShoes30", "quantity": 4},
+            {"item": "EquipmentShoes24", "quantity": 1}
+        ],
+        "levelReqToCraft": 55,
+        "expGiven": 1000000,
+        "no": 25,
+        "tab": 4,
+        "sellPrice": 48719600,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentShoes30", "quantity": 4},
+                {"indent": 0, "item": "EquipmentShoes24", "quantity": 1},
+                {"indent": 1, "item": "GalaxyA2", "quantity": 120000},
+                {"indent": 1, "item": "EquipmentShoes22", "quantity": 1},
+                {"indent": 2, "item": "Bug6", "quantity": 60000},
+                {"indent": 2, "item": "EquipmentShoes5", "quantity": 2},
+                {"indent": 3, "item": "Critter1A", "quantity": 6},
+                {"indent": 3, "item": "EquipmentShoes4", "quantity": 2},
+                {"indent": 4, "item": "PalmTree", "quantity": 14000},
+                {"indent": 4, "item": "Fish3", "quantity": 6000},
+                {"indent": 4, "item": "EquipmentShoes3", "quantity": 6},
+                {"indent": 5, "item": "GoldBar", "quantity": 3600},
+                {"indent": 5, "item": "EquipmentShoes15", "quantity": 12},
+                {"indent": 6, "item": "CraftMat5", "quantity": 6000},
+                {"indent": 6, "item": "IronBar", "quantity": 1500},
+                {"indent": 6, "item": "EquipmentShoes1", "quantity": 24},
+                {"indent": 7, "item": "CopperBar", "quantity": 1800},
+                {"indent": 5, "item": "PureWater", "quantity": 24},
+                {"indent": 3, "item": "DementiaBar", "quantity": 1000},
+                {"indent": 2, "item": "VoidBar", "quantity": 725},
+                {"indent": 2, "item": "PureWater2", "quantity": 4},
+                {"indent": 1, "item": "LustreBar", "quantity": 2000}
+            ],
+            "detRecipeTotals": [
+                {"item": "EquipmentShoes30", "quantity": 4},
+                {"item": "GalaxyA2", "quantity": 120000},
+                {"item": "LustreBar", "quantity": 2000},
+                {"item": "Bug6", "quantity": 60000},
+                {"item": "VoidBar", "quantity": 725},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "Critter1A", "quantity": 6},
+                {"item": "DementiaBar", "quantity": 1000},
+                {"item": "PalmTree", "quantity": 14000},
+                {"item": "Fish3", "quantity": 6000},
+                {"item": "GoldBar", "quantity": 3600},
+                {"item": "PureWater", "quantity": 24},
+                {"item": "CraftMat5", "quantity": 6000},
+                {"item": "IronBar", "quantity": 1500},
+                {"item": "CopperBar", "quantity": 1800}
+            ]
+        }
+    },
+    "EquipmentShoes33": {
+        "intID": "EquipmentShoes33",
+        "recipe": [
+            {"item": "EquipmentShoes32", "quantity": 4},
+            {"item": "EquipmentShoes24", "quantity": 1}
+        ],
+        "levelReqToCraft": 55,
+        "expGiven": 1000000,
+        "no": 26,
+        "tab": 4,
+        "sellPrice": 48719600,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentShoes32", "quantity": 4},
+                {"indent": 0, "item": "EquipmentShoes24", "quantity": 1},
+                {"indent": 1, "item": "GalaxyA2", "quantity": 120000},
+                {"indent": 1, "item": "EquipmentShoes22", "quantity": 1},
+                {"indent": 2, "item": "Bug6", "quantity": 60000},
+                {"indent": 2, "item": "EquipmentShoes5", "quantity": 2},
+                {"indent": 3, "item": "Critter1A", "quantity": 6},
+                {"indent": 3, "item": "EquipmentShoes4", "quantity": 2},
+                {"indent": 4, "item": "PalmTree", "quantity": 14000},
+                {"indent": 4, "item": "Fish3", "quantity": 6000},
+                {"indent": 4, "item": "EquipmentShoes3", "quantity": 6},
+                {"indent": 5, "item": "GoldBar", "quantity": 3600},
+                {"indent": 5, "item": "EquipmentShoes15", "quantity": 12},
+                {"indent": 6, "item": "CraftMat5", "quantity": 6000},
+                {"indent": 6, "item": "IronBar", "quantity": 1500},
+                {"indent": 6, "item": "EquipmentShoes1", "quantity": 24},
+                {"indent": 7, "item": "CopperBar", "quantity": 1800},
+                {"indent": 5, "item": "PureWater", "quantity": 24},
+                {"indent": 3, "item": "DementiaBar", "quantity": 1000},
+                {"indent": 2, "item": "VoidBar", "quantity": 725},
+                {"indent": 2, "item": "PureWater2", "quantity": 4},
+                {"indent": 1, "item": "LustreBar", "quantity": 2000}
+            ],
+            "detRecipeTotals": [
+                {"item": "EquipmentShoes32", "quantity": 4},
+                {"item": "GalaxyA2", "quantity": 120000},
+                {"item": "LustreBar", "quantity": 2000},
+                {"item": "Bug6", "quantity": 60000},
+                {"item": "VoidBar", "quantity": 725},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "Critter1A", "quantity": 6},
+                {"item": "DementiaBar", "quantity": 1000},
+                {"item": "PalmTree", "quantity": 14000},
+                {"item": "Fish3", "quantity": 6000},
+                {"item": "GoldBar", "quantity": 3600},
+                {"item": "PureWater", "quantity": 24},
+                {"item": "CraftMat5", "quantity": 6000},
+                {"item": "IronBar", "quantity": 1500},
+                {"item": "CopperBar", "quantity": 1800}
+            ]
+        }
+    },
+    "MaxCapBagF7": {
+        "intID": "MaxCapBagF7",
+        "recipe": [
+            {"item": "FoodHealth11", "quantity": 175000},
+            {"item": "Meatloaf", "quantity": 30},
+            {"item": "GalaxyA2b", "quantity": 10},
+            {"item": "Refinery4", "quantity": 1000}
+        ],
+        "levelReqToCraft": 58,
+        "expGiven": 1000000,
+        "no": 27,
+        "tab": 4,
+        "sellPrice": 54360500,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "FoodHealth11", "quantity": 175000},
+                {"indent": 0, "item": "Meatloaf", "quantity": 30},
+                {"indent": 0, "item": "GalaxyA2b", "quantity": 10},
+                {"indent": 0, "item": "Refinery4", "quantity": 1000}
+            ],
+            "detRecipeTotals": [
+                {"item": "FoodHealth11", "quantity": 175000},
+                {"item": "Meatloaf", "quantity": 30},
+                {"item": "GalaxyA2b", "quantity": 10},
+                {"item": "Refinery4", "quantity": 1000}
+            ]
+        }
+    },
+    "MaxCapBagM8": {
+        "intID": "MaxCapBagM8",
+        "recipe": [
+            {"item": "GalaxyA4", "quantity": 130000},
+            {"item": "GalaxyA2b", "quantity": 10},
+            {"item": "Refinery4", "quantity": 1000}
+        ],
+        "levelReqToCraft": 58,
+        "expGiven": 1000000,
+        "no": 28,
+        "tab": 4,
+        "sellPrice": 35851500,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "GalaxyA4", "quantity": 130000},
+                {"indent": 0, "item": "GalaxyA2b", "quantity": 10},
+                {"indent": 0, "item": "Refinery4", "quantity": 1000}
+            ],
+            "detRecipeTotals": [
+                {"item": "GalaxyA4", "quantity": 130000},
+                {"item": "GalaxyA2b", "quantity": 10},
+                {"item": "Refinery4", "quantity": 1000}
+            ]
+        }
+    },
+    "EquipmentHats71": {
+        "intID": "EquipmentHats71",
+        "recipe": [
+            {"item": "Critter10", "quantity": 600000},
+            {"item": "EquipmentHats70", "quantity": 1},
+            {"item": "StarfireBar", "quantity": 10000},
+            {"item": "Refinery6", "quantity": 800}
+        ],
+        "levelReqToCraft": 60,
+        "expGiven": 1000000,
+        "no": 29,
+        "tab": 4,
+        "sellPrice": 88586250,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Critter10", "quantity": 600000},
+                {"indent": 0, "item": "EquipmentHats70", "quantity": 1},
+                {"indent": 1, "item": "Fish5", "quantity": 80000},
+                {"indent": 1, "item": "EquipmentHats54", "quantity": 1},
+                {"indent": 2, "item": "Refinery3", "quantity": 500},
+                {"indent": 2, "item": "EquipmentHats53", "quantity": 2},
+                {"indent": 3, "item": "Critter1", "quantity": 10000},
+                {"indent": 3, "item": "EquipmentHats19", "quantity": 4},
+                {"indent": 4, "item": "Fish3", "quantity": 9000},
+                {"indent": 4, "item": "EquipmentHats18", "quantity": 16},
+                {"indent": 5, "item": "IronBar", "quantity": 2000},
+                {"indent": 5, "item": "Forest1", "quantity": 4800},
+                {"indent": 4, "item": "PlatBar", "quantity": 3000},
+                {"indent": 3, "item": "DementiaBar", "quantity": 600},
+                {"indent": 2, "item": "VoidBar", "quantity": 1000},
+                {"indent": 2, "item": "PureWater2", "quantity": 5},
+                {"indent": 1, "item": "LustreBar", "quantity": 2500},
+                {"indent": 0, "item": "StarfireBar", "quantity": 10000},
+                {"indent": 0, "item": "Refinery6", "quantity": 800}
+            ],
+            "detRecipeTotals": [
+                {"item": "Critter10", "quantity": 600000},
+                {"item": "StarfireBar", "quantity": 10000},
+                {"item": "Refinery6", "quantity": 800},
+                {"item": "Fish5", "quantity": 80000},
+                {"item": "LustreBar", "quantity": 2500},
+                {"item": "Refinery3", "quantity": 500},
+                {"item": "VoidBar", "quantity": 1000},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "Critter1", "quantity": 10000},
+                {"item": "DementiaBar", "quantity": 600},
+                {"item": "Fish3", "quantity": 9000},
+                {"item": "PlatBar", "quantity": 3000},
+                {"item": "IronBar", "quantity": 2000},
+                {"item": "Forest1", "quantity": 4800}
+            ]
+        }
+    },
+    "EquipmentShirts33": {
+        "intID": "EquipmentShirts33",
+        "recipe": [
+            {"item": "Tree8", "quantity": 400000},
+            {"item": "EquipmentShirts32", "quantity": 1},
+            {"item": "StarfireBar", "quantity": 2500},
+            {"item": "Refinery6", "quantity": 400}
+        ],
+        "levelReqToCraft": 61,
+        "expGiven": 1000000,
+        "no": 30,
+        "tab": 4,
+        "sellPrice": 97741700,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Tree8", "quantity": 400000},
+                {"indent": 0, "item": "EquipmentShirts32", "quantity": 1},
+                {"indent": 1, "item": "GalaxyA1", "quantity": 100000},
+                {"indent": 1, "item": "EquipmentShirts27", "quantity": 1},
+                {"indent": 2, "item": "SnowC3", "quantity": 75000},
+                {"indent": 2, "item": "EquipmentShirts15", "quantity": 2},
+                {"indent": 3, "item": "Soul1", "quantity": 2000},
+                {"indent": 3, "item": "EquipmentShirts14", "quantity": 4},
+                {"indent": 4, "item": "DesertB4", "quantity": 20000},
+                {"indent": 4, "item": "EquipmentShirts12", "quantity": 20},
+                {"indent": 5, "item": "IronBar", "quantity": 3000},
+                {"indent": 5, "item": "JungleTree", "quantity": 12000},
+                {"indent": 4, "item": "PlatBar", "quantity": 4000},
+                {"indent": 3, "item": "DementiaBar", "quantity": 700},
+                {"indent": 2, "item": "VoidBar", "quantity": 500},
+                {"indent": 2, "item": "PureWater2", "quantity": 4},
+                {"indent": 1, "item": "LustreBar", "quantity": 1200},
+                {"indent": 0, "item": "StarfireBar", "quantity": 2500},
+                {"indent": 0, "item": "Refinery6", "quantity": 400}
+            ],
+            "detRecipeTotals": [
+                {"item": "Tree8", "quantity": 400000},
+                {"item": "StarfireBar", "quantity": 2500},
+                {"item": "Refinery6", "quantity": 400},
+                {"item": "GalaxyA1", "quantity": 100000},
+                {"item": "LustreBar", "quantity": 1200},
+                {"item": "SnowC3", "quantity": 75000},
+                {"item": "VoidBar", "quantity": 500},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "Soul1", "quantity": 2000},
+                {"item": "DementiaBar", "quantity": 700},
+                {"item": "DesertB4", "quantity": 20000},
+                {"item": "PlatBar", "quantity": 4000},
+                {"item": "IronBar", "quantity": 3000},
+                {"item": "JungleTree", "quantity": 12000}
+            ]
+        }
+    },
+    "EquipmentPants25": {
+        "intID": "EquipmentPants25",
+        "recipe": [
+            {"item": "Bug8", "quantity": 450000},
+            {"item": "EquipmentPants24", "quantity": 1},
+            {"item": "StarfireBar", "quantity": 4000},
+            {"item": "Refinery6", "quantity": 600}
+        ],
+        "levelReqToCraft": 62,
+        "expGiven": 1000000,
+        "no": 31,
+        "tab": 4,
+        "sellPrice": 95559760,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Bug8", "quantity": 450000},
+                {"indent": 0, "item": "EquipmentPants24", "quantity": 1},
+                {"indent": 1, "item": "CraftMat11", "quantity": 60000},
+                {"indent": 1, "item": "EquipmentPants21", "quantity": 1},
+                {"indent": 2, "item": "Tree7", "quantity": 75000},
+                {"indent": 2, "item": "EquipmentPants6", "quantity": 2},
+                {"indent": 3, "item": "SnowA1", "quantity": 16000},
+                {"indent": 3, "item": "EquipmentPants5", "quantity": 4},
+                {"indent": 4, "item": "Bug3", "quantity": 20000},
+                {"indent": 4, "item": "EquipmentPants3", "quantity": 24},
+                {"indent": 5, "item": "IronBar", "quantity": 4080},
+                {"indent": 5, "item": "CraftMat6", "quantity": 5400},
+                {"indent": 4, "item": "PlatBar", "quantity": 5000},
+                {"indent": 3, "item": "DementiaBar", "quantity": 800},
+                {"indent": 2, "item": "VoidBar", "quantity": 650},
+                {"indent": 2, "item": "PureWater2", "quantity": 4},
+                {"indent": 1, "item": "LustreBar", "quantity": 1600},
+                {"indent": 0, "item": "StarfireBar", "quantity": 4000},
+                {"indent": 0, "item": "Refinery6", "quantity": 600}
+            ],
+            "detRecipeTotals": [
+                {"item": "Bug8", "quantity": 450000},
+                {"item": "StarfireBar", "quantity": 4000},
+                {"item": "Refinery6", "quantity": 600},
+                {"item": "CraftMat11", "quantity": 60000},
+                {"item": "LustreBar", "quantity": 1600},
+                {"item": "Tree7", "quantity": 75000},
+                {"item": "VoidBar", "quantity": 650},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "SnowA1", "quantity": 16000},
+                {"item": "DementiaBar", "quantity": 800},
+                {"item": "Bug3", "quantity": 20000},
+                {"item": "PlatBar", "quantity": 5000},
+                {"item": "IronBar", "quantity": 4080},
+                {"item": "CraftMat6", "quantity": 5400}
+            ]
+        }
+    },
+    "EquipmentShoes25": {
+        "intID": "EquipmentShoes25",
+        "recipe": [
+            {"item": "Fish7", "quantity": 500000},
+            {"item": "EquipmentShoes24", "quantity": 1},
+            {"item": "StarfireBar", "quantity": 5000},
+            {"item": "Refinery6", "quantity": 700}
+        ],
+        "levelReqToCraft": 63,
+        "expGiven": 1000000,
+        "no": 32,
+        "tab": 4,
+        "sellPrice": 51282600,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Fish7", "quantity": 500000},
+                {"indent": 0, "item": "EquipmentShoes24", "quantity": 1},
+                {"indent": 1, "item": "GalaxyA2", "quantity": 120000},
+                {"indent": 1, "item": "EquipmentShoes22", "quantity": 1},
+                {"indent": 2, "item": "Bug6", "quantity": 60000},
+                {"indent": 2, "item": "EquipmentShoes5", "quantity": 2},
+                {"indent": 3, "item": "Critter1A", "quantity": 6},
+                {"indent": 3, "item": "EquipmentShoes4", "quantity": 2},
+                {"indent": 4, "item": "PalmTree", "quantity": 14000},
+                {"indent": 4, "item": "Fish3", "quantity": 6000},
+                {"indent": 4, "item": "EquipmentShoes3", "quantity": 6},
+                {"indent": 5, "item": "GoldBar", "quantity": 3600},
+                {"indent": 5, "item": "EquipmentShoes15", "quantity": 12},
+                {"indent": 6, "item": "CraftMat5", "quantity": 6000},
+                {"indent": 6, "item": "IronBar", "quantity": 1500},
+                {"indent": 6, "item": "EquipmentShoes1", "quantity": 24},
+                {"indent": 7, "item": "CopperBar", "quantity": 1800},
+                {"indent": 5, "item": "PureWater", "quantity": 24},
+                {"indent": 3, "item": "DementiaBar", "quantity": 1000},
+                {"indent": 2, "item": "VoidBar", "quantity": 725},
+                {"indent": 2, "item": "PureWater2", "quantity": 4},
+                {"indent": 1, "item": "LustreBar", "quantity": 2000},
+                {"indent": 0, "item": "StarfireBar", "quantity": 5000},
+                {"indent": 0, "item": "Refinery6", "quantity": 700}
+            ],
+            "detRecipeTotals": [
+                {"item": "Fish7", "quantity": 500000},
+                {"item": "StarfireBar", "quantity": 5000},
+                {"item": "Refinery6", "quantity": 700},
+                {"item": "GalaxyA2", "quantity": 120000},
+                {"item": "LustreBar", "quantity": 2000},
+                {"item": "Bug6", "quantity": 60000},
+                {"item": "VoidBar", "quantity": 725},
+                {"item": "PureWater2", "quantity": 4},
+                {"item": "Critter1A", "quantity": 6},
+                {"item": "DementiaBar", "quantity": 1000},
+                {"item": "PalmTree", "quantity": 14000},
+                {"item": "Fish3", "quantity": 6000},
+                {"item": "GoldBar", "quantity": 3600},
+                {"item": "PureWater", "quantity": 24},
+                {"item": "CraftMat5", "quantity": 6000},
+                {"item": "IronBar", "quantity": 1500},
+                {"item": "CopperBar", "quantity": 1800}
+            ]
+        }
+    },
+    "EquipmentPunching7": {
+        "intID": "EquipmentPunching7",
+        "recipe": [
+            {"item": "EquipmentPunching6", "quantity": 1},
+            {"item": "StarfireBar", "quantity": 50000},
+            {"item": "Refinery6", "quantity": 5000}
+        ],
+        "levelReqToCraft": 65,
+        "expGiven": 1000000,
+        "no": 33,
+        "tab": 4,
+        "sellPrice": 1117500,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentPunching6", "quantity": 1},
+                {"indent": 1, "item": "CraftMat12", "quantity": 50000},
+                {"indent": 1, "item": "EquipmentPunching5", "quantity": 1},
+                {"indent": 2, "item": "SnowA2a", "quantity": 100},
+                {"indent": 2, "item": "Critter5A", "quantity": 50},
+                {"indent": 2, "item": "Quest36", "quantity": 10},
+                {"indent": 3, "item": "Quest37", "quantity": 10},
+                {"indent": 3, "item": "GoldBar", "quantity": 800},
+                {"indent": 3, "item": "DesertC2b", "quantity": 10},
+                {"indent": 2, "item": "PureWater2", "quantity": 15},
+                {"indent": 1, "item": "Refinery4", "quantity": 2000},
+                {"indent": 0, "item": "StarfireBar", "quantity": 50000},
+                {"indent": 0, "item": "Refinery6", "quantity": 5000}
+            ],
+            "detRecipeTotals": [
+                {"item": "StarfireBar", "quantity": 50000},
+                {"item": "Refinery6", "quantity": 5000},
+                {"item": "CraftMat12", "quantity": 50000},
+                {"item": "Refinery4", "quantity": 2000},
+                {"item": "SnowA2a", "quantity": 100},
+                {"item": "Critter5A", "quantity": 50},
+                {"item": "PureWater2", "quantity": 15},
+                {"item": "Quest37", "quantity": 10},
+                {"item": "GoldBar", "quantity": 800},
+                {"item": "DesertC2b", "quantity": 10}
+            ]
+        }
+    },
+    "EquipmentSword5": {
+        "intID": "EquipmentSword5",
+        "recipe": [
+            {"item": "Fish8", "quantity": 200000},
+            {"item": "EquipmentSword4", "quantity": 1},
+            {"item": "StarfireBar", "quantity": 3000},
+            {"item": "Refinery6", "quantity": 750}
+        ],
+        "levelReqToCraft": 60,
+        "expGiven": 1000000,
+        "no": 34,
+        "tab": 4,
+        "sellPrice": 23509635,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Fish8", "quantity": 200000},
+                {"indent": 0, "item": "EquipmentSword4", "quantity": 1},
+                {"indent": 1, "item": "AlienTree", "quantity": 90000},
+                {"indent": 1, "item": "EquipmentSword3", "quantity": 1},
+                {"indent": 2, "item": "SnowC4a", "quantity": 10},
+                {"indent": 2, "item": "Critter6A", "quantity": 15},
+                {"indent": 2, "item": "EquipmentSword2", "quantity": 3},
+                {"indent": 3, "item": "SnowA2", "quantity": 75000},
+                {"indent": 3, "item": "EquipmentSword1", "quantity": 6},
+                {"indent": 4, "item": "DesertA3b", "quantity": 18},
+                {"indent": 4, "item": "CraftMat9", "quantity": 15000},
+                {"indent": 4, "item": "TestObj3", "quantity": 12},
+                {"indent": 5, "item": "ForestTree", "quantity": 15000},
+                {"indent": 5, "item": "TestObj7", "quantity": 24},
+                {"indent": 6, "item": "Jungle1", "quantity": 3000},
+                {"indent": 6, "item": "CraftMat6", "quantity": 3000},
+                {"indent": 5, "item": "PureWater", "quantity": 96},
+                {"indent": 3, "item": "Refinery1", "quantity": 450},
+                {"indent": 2, "item": "PureWater2", "quantity": 7},
+                {"indent": 1, "item": "Refinery4", "quantity": 500},
+                {"indent": 0, "item": "StarfireBar", "quantity": 3000},
+                {"indent": 0, "item": "Refinery6", "quantity": 750}
+            ],
+            "detRecipeTotals": [
+                {"item": "Fish8", "quantity": 200000},
+                {"item": "StarfireBar", "quantity": 3000},
+                {"item": "Refinery6", "quantity": 750},
+                {"item": "AlienTree", "quantity": 90000},
+                {"item": "Refinery4", "quantity": 500},
+                {"item": "SnowC4a", "quantity": 10},
+                {"item": "Critter6A", "quantity": 15},
+                {"item": "PureWater2", "quantity": 7},
+                {"item": "SnowA2", "quantity": 75000},
+                {"item": "Refinery1", "quantity": 450},
+                {"item": "DesertA3b", "quantity": 18},
+                {"item": "CraftMat9", "quantity": 15000},
+                {"item": "ForestTree", "quantity": 15000},
+                {"item": "PureWater", "quantity": 96},
+                {"item": "Jungle1", "quantity": 3000},
+                {"item": "CraftMat6", "quantity": 3000}
+            ]
+        }
+    },
+    "EquipmentBows10": {
+        "intID": "EquipmentBows10",
+        "recipe": [
+            {"item": "Critter10A", "quantity": 10},
+            {"item": "EquipmentBows9", "quantity": 1},
+            {"item": "StarfireBar", "quantity": 3000},
+            {"item": "Refinery6", "quantity": 750}
+        ],
+        "levelReqToCraft": 60,
+        "expGiven": 1000000,
+        "no": 35,
+        "tab": 4,
+        "sellPrice": 1412000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Critter10A", "quantity": 10},
+                {"indent": 0, "item": "EquipmentBows9", "quantity": 1},
+                {"indent": 1, "item": "Fish5", "quantity": 110000},
+                {"indent": 1, "item": "EquipmentBows8", "quantity": 1},
+                {"indent": 2, "item": "SnowC4a", "quantity": 4},
+                {"indent": 2, "item": "Refinery3", "quantity": 350},
+                {"indent": 2, "item": "EquipmentBows7", "quantity": 3},
+                {"indent": 3, "item": "Soul1", "quantity": 21000},
+                {"indent": 3, "item": "EquipmentBows6", "quantity": 6},
+                {"indent": 4, "item": "TreeInterior1b", "quantity": 18},
+                {"indent": 4, "item": "Fish4", "quantity": 8400},
+                {"indent": 4, "item": "EquipmentBows5", "quantity": 12},
+                {"indent": 5, "item": "GoldBar", "quantity": 3000},
+                {"indent": 5, "item": "EquipmentBows3", "quantity": 24},
+                {"indent": 6, "item": "Jungle1", "quantity": 3000},
+                {"indent": 6, "item": "BirchTree", "quantity": 6000},
+                {"indent": 5, "item": "PureWater", "quantity": 96},
+                {"indent": 3, "item": "Refinery1", "quantity": 450},
+                {"indent": 2, "item": "PureWater2", "quantity": 7},
+                {"indent": 1, "item": "Refinery4", "quantity": 500},
+                {"indent": 0, "item": "StarfireBar", "quantity": 3000},
+                {"indent": 0, "item": "Refinery6", "quantity": 750}
+            ],
+            "detRecipeTotals": [
+                {"item": "Critter10A", "quantity": 10},
+                {"item": "StarfireBar", "quantity": 3000},
+                {"item": "Refinery6", "quantity": 750},
+                {"item": "Fish5", "quantity": 110000},
+                {"item": "Refinery4", "quantity": 500},
+                {"item": "SnowC4a", "quantity": 4},
+                {"item": "Refinery3", "quantity": 350},
+                {"item": "PureWater2", "quantity": 7},
+                {"item": "Soul1", "quantity": 21000},
+                {"item": "Refinery1", "quantity": 450},
+                {"item": "TreeInterior1b", "quantity": 18},
+                {"item": "Fish4", "quantity": 8400},
+                {"item": "GoldBar", "quantity": 3000},
+                {"item": "PureWater", "quantity": 96},
+                {"item": "Jungle1", "quantity": 3000},
+                {"item": "BirchTree", "quantity": 6000}
+            ]
+        }
+    },
+    "EquipmentWands9": {
+        "intID": "EquipmentWands9",
+        "recipe": [
+            {"item": "Soul5", "quantity": 15000},
+            {"item": "EquipmentWands8", "quantity": 1},
+            {"item": "StarfireBar", "quantity": 3000},
+            {"item": "Refinery6", "quantity": 800}
+        ],
+        "levelReqToCraft": 60,
+        "expGiven": 1000000,
+        "no": 36,
+        "tab": 4,
+        "sellPrice": 5413950,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Soul5", "quantity": 15000},
+                {"indent": 0, "item": "EquipmentWands8", "quantity": 1},
+                {"indent": 1, "item": "Critter7", "quantity": 50000},
+                {"indent": 1, "item": "EquipmentWands7", "quantity": 1},
+                {"indent": 2, "item": "SnowC4a", "quantity": 4},
+                {"indent": 2, "item": "Soul4", "quantity": 5000},
+                {"indent": 2, "item": "EquipmentWands3", "quantity": 3},
+                {"indent": 3, "item": "SaharanFoal", "quantity": 30000},
+                {"indent": 3, "item": "EquipmentWands6", "quantity": 6},
+                {"indent": 4, "item": "Sewers1b", "quantity": 18},
+                {"indent": 4, "item": "Bug4", "quantity": 24000},
+                {"indent": 4, "item": "EquipmentWands5", "quantity": 12},
+                {"indent": 5, "item": "CraftMat7", "quantity": 12000},
+                {"indent": 5, "item": "EquipmentWands2", "quantity": 24},
+                {"indent": 6, "item": "Jungle1", "quantity": 3000},
+                {"indent": 6, "item": "CopperBar", "quantity": 2400},
+                {"indent": 5, "item": "PureWater", "quantity": 96},
+                {"indent": 3, "item": "Refinery1", "quantity": 450},
+                {"indent": 2, "item": "PureWater2", "quantity": 7},
+                {"indent": 1, "item": "Refinery4", "quantity": 500},
+                {"indent": 0, "item": "StarfireBar", "quantity": 3000},
+                {"indent": 0, "item": "Refinery6", "quantity": 800}
+            ],
+            "detRecipeTotals": [
+                {"item": "Soul5", "quantity": 15000},
+                {"item": "StarfireBar", "quantity": 3000},
+                {"item": "Refinery6", "quantity": 800},
+                {"item": "Critter7", "quantity": 50000},
+                {"item": "Refinery4", "quantity": 500},
+                {"item": "SnowC4a", "quantity": 4},
+                {"item": "Soul4", "quantity": 5000},
+                {"item": "PureWater2", "quantity": 7},
+                {"item": "SaharanFoal", "quantity": 30000},
+                {"item": "Refinery1", "quantity": 450},
+                {"item": "Sewers1b", "quantity": 18},
+                {"item": "Bug4", "quantity": 24000},
+                {"item": "CraftMat7", "quantity": 12000},
+                {"item": "PureWater", "quantity": 96},
+                {"item": "Jungle1", "quantity": 3000},
+                {"item": "CopperBar", "quantity": 2400}
+            ]
+        }
+    },
+    "EquipmentTools12": {
+        "intID": "EquipmentTools12",
+        "recipe": [
+            {"item": "LustreBar", "quantity": 10000},
+            {"item": "GalaxyC1b", "quantity": 100},
+            {"item": "EquipmentTools8", "quantity": 1}
+        ],
+        "levelReqToCraft": 60,
+        "expGiven": 1000000,
+        "no": 37,
+        "tab": 4,
+        "sellPrice": 157349170,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "LustreBar", "quantity": 10000},
+                {"indent": 0, "item": "GalaxyC1b", "quantity": 100},
+                {"indent": 0, "item": "EquipmentTools8", "quantity": 1},
+                {"indent": 1, "item": "LustreBar", "quantity": 1000},
+                {"indent": 1, "item": "EquipmentTools11", "quantity": 1},
+                {"indent": 2, "item": "VoidBar", "quantity": 400},
+                {"indent": 2, "item": "EquipmentTools7", "quantity": 2},
+                {"indent": 3, "item": "DementiaBar", "quantity": 550},
+                {"indent": 3, "item": "SnowA3", "quantity": 30000},
+                {"indent": 3, "item": "EquipmentTools6", "quantity": 4},
+                {"indent": 4, "item": "PlatBar", "quantity": 3200},
+                {"indent": 4, "item": "DesertB3", "quantity": 42000},
+                {"indent": 4, "item": "EquipmentTools5", "quantity": 8},
+                {"indent": 5, "item": "DesertA2", "quantity": 20000},
+                {"indent": 5, "item": "GoldBar", "quantity": 6400},
+                {"indent": 5, "item": "EquipmentTools3", "quantity": 8},
+                {"indent": 6, "item": "IronBar", "quantity": 560},
+                {"indent": 6, "item": "Jungle3", "quantity": 1200},
+                {"indent": 2, "item": "PureWater2", "quantity": 5},
+                {"indent": 1, "item": "Refinery4", "quantity": 600}
+            ],
+            "detRecipeTotals": [
+                {"item": "LustreBar", "quantity": 11000},
+                {"item": "GalaxyC1b", "quantity": 100},
+                {"item": "Refinery4", "quantity": 600},
+                {"item": "VoidBar", "quantity": 400},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "DementiaBar", "quantity": 550},
+                {"item": "SnowA3", "quantity": 30000},
+                {"item": "PlatBar", "quantity": 3200},
+                {"item": "DesertB3", "quantity": 42000},
+                {"item": "DesertA2", "quantity": 20000},
+                {"item": "GoldBar", "quantity": 6400},
+                {"item": "IronBar", "quantity": 560},
+                {"item": "Jungle3", "quantity": 1200}
+            ]
+        }
+    },
+    "MaxCapBagMi8": {
+        "intID": "MaxCapBagMi8",
+        "recipe": [{"item": "Starfire", "quantity": 300000}, {"item": "Refinery5", "quantity": 800}],
+        "levelReqToCraft": 62,
+        "expGiven": 1000000,
+        "no": 38,
+        "tab": 4,
+        "sellPrice": 30080000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Starfire", "quantity": 300000},
+                {"indent": 0, "item": "Refinery5", "quantity": 800}
+            ],
+            "detRecipeTotals": [{"item": "Starfire", "quantity": 300000}, {"item": "Refinery5", "quantity": 800}]
+        }
+    },
+    "EquipmentToolsHatchet8": {
+        "intID": "EquipmentToolsHatchet8",
+        "recipe": [
+            {"item": "Tree7", "quantity": 200000},
+            {"item": "GalaxyC1b", "quantity": 100},
+            {"item": "EquipmentToolsHatchet6", "quantity": 1}
+        ],
+        "levelReqToCraft": 60,
+        "expGiven": 1000000,
+        "no": 39,
+        "tab": 4,
+        "sellPrice": 20089850,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Tree7", "quantity": 200000},
+                {"indent": 0, "item": "GalaxyC1b", "quantity": 100},
+                {"indent": 0, "item": "EquipmentToolsHatchet6", "quantity": 1},
+                {"indent": 1, "item": "AlienTree", "quantity": 110000},
+                {"indent": 1, "item": "EquipmentToolsHatchet7", "quantity": 1},
+                {"indent": 2, "item": "Tree7", "quantity": 50000},
+                {"indent": 2, "item": "EquipmentToolsHatchet5", "quantity": 2},
+                {"indent": 3, "item": "SaharanFoal", "quantity": 30000},
+                {"indent": 3, "item": "Refinery1", "quantity": 100},
+                {"indent": 3, "item": "EquipmentToolsHatchet4", "quantity": 4},
+                {"indent": 4, "item": "PalmTree", "quantity": 26000},
+                {"indent": 4, "item": "CraftMat7", "quantity": 20000},
+                {"indent": 4, "item": "EquipmentToolsHatchet2", "quantity": 8},
+                {"indent": 5, "item": "Quest19", "quantity": 40},
+                {"indent": 5, "item": "DesertA3", "quantity": 16000},
+                {"indent": 5, "item": "EquipmentToolsHatchet1", "quantity": 8},
+                {"indent": 6, "item": "JungleTree", "quantity": 1600},
+                {"indent": 6, "item": "CraftMat6", "quantity": 800},
+                {"indent": 2, "item": "PureWater2", "quantity": 5},
+                {"indent": 1, "item": "Refinery4", "quantity": 600}
+            ],
+            "detRecipeTotals": [
+                {"item": "Tree7", "quantity": 250000},
+                {"item": "GalaxyC1b", "quantity": 100},
+                {"item": "AlienTree", "quantity": 110000},
+                {"item": "Refinery4", "quantity": 600},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "SaharanFoal", "quantity": 30000},
+                {"item": "Refinery1", "quantity": 100},
+                {"item": "PalmTree", "quantity": 26000},
+                {"item": "CraftMat7", "quantity": 20000},
+                {"item": "Quest19", "quantity": 40},
+                {"item": "DesertA3", "quantity": 16000},
+                {"item": "JungleTree", "quantity": 1600},
+                {"item": "CraftMat6", "quantity": 800}
+            ]
+        }
+    },
+    "MaxCapBagT8": {
+        "intID": "MaxCapBagT8",
+        "recipe": [
+            {"item": "Tree8", "quantity": 300000},
+            {"item": "GalaxyC1b", "quantity": 15},
+            {"item": "Refinery5", "quantity": 800}
+        ],
+        "levelReqToCraft": 62,
+        "expGiven": 1000000,
+        "no": 40,
+        "tab": 4,
+        "sellPrice": 24125000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Tree8", "quantity": 300000},
+                {"indent": 0, "item": "GalaxyC1b", "quantity": 15},
+                {"indent": 0, "item": "Refinery5", "quantity": 800}
+            ],
+            "detRecipeTotals": [
+                {"item": "Tree8", "quantity": 300000},
+                {"item": "GalaxyC1b", "quantity": 15},
+                {"item": "Refinery5", "quantity": 800}
+            ]
+        }
+    },
+    "FishingRod9": {
+        "intID": "FishingRod9",
+        "recipe": [
+            {"item": "Fish7", "quantity": 40000},
+            {"item": "GalaxyC1b", "quantity": 100},
+            {"item": "FishingRod8", "quantity": 1}
+        ],
+        "levelReqToCraft": 61,
+        "expGiven": 1000000,
+        "no": 41,
+        "tab": 4,
+        "sellPrice": 4541659,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Fish7", "quantity": 40000},
+                {"indent": 0, "item": "GalaxyC1b", "quantity": 100},
+                {"indent": 0, "item": "FishingRod8", "quantity": 1},
+                {"indent": 1, "item": "Fish5", "quantity": 90000},
+                {"indent": 1, "item": "FishingRod7", "quantity": 1},
+                {"indent": 2, "item": "Refinery3", "quantity": 200},
+                {"indent": 2, "item": "Critter5A", "quantity": 3},
+                {"indent": 2, "item": "FishingRod6", "quantity": 2},
+                {"indent": 3, "item": "DementiaBar", "quantity": 600},
+                {"indent": 3, "item": "Refinery1", "quantity": 100},
+                {"indent": 3, "item": "FishingRod5", "quantity": 4},
+                {"indent": 4, "item": "Fish4", "quantity": 8000},
+                {"indent": 4, "item": "PlatBar", "quantity": 3200},
+                {"indent": 4, "item": "FishingRod4", "quantity": 8},
+                {"indent": 5, "item": "Fish2", "quantity": 20000},
+                {"indent": 5, "item": "CraftMat9", "quantity": 8000},
+                {"indent": 5, "item": "FishingRod3", "quantity": 16},
+                {"indent": 6, "item": "IronBar", "quantity": 4800},
+                {"indent": 6, "item": "Fish2", "quantity": 10400},
+                {"indent": 6, "item": "PureWater", "quantity": 48},
+                {"indent": 2, "item": "PureWater2", "quantity": 5},
+                {"indent": 1, "item": "Refinery4", "quantity": 750}
+            ],
+            "detRecipeTotals": [
+                {"item": "Fish7", "quantity": 40000},
+                {"item": "GalaxyC1b", "quantity": 100},
+                {"item": "Fish5", "quantity": 90000},
+                {"item": "Refinery4", "quantity": 750},
+                {"item": "Refinery3", "quantity": 200},
+                {"item": "Critter5A", "quantity": 3},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "DementiaBar", "quantity": 600},
+                {"item": "Refinery1", "quantity": 100},
+                {"item": "Fish4", "quantity": 8000},
+                {"item": "PlatBar", "quantity": 3200},
+                {"item": "Fish2", "quantity": 30400},
+                {"item": "CraftMat9", "quantity": 8000},
+                {"item": "IronBar", "quantity": 4800},
+                {"item": "PureWater", "quantity": 48}
+            ]
+        }
+    },
+    "MaxCapBagFi8": {
+        "intID": "MaxCapBagFi8",
+        "recipe": [{"item": "Fish7", "quantity": 300000}, {"item": "Refinery6", "quantity": 600}],
+        "levelReqToCraft": 63,
+        "expGiven": 1000000,
+        "no": 42,
+        "tab": 4,
+        "sellPrice": 1560000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Fish7", "quantity": 300000},
+                {"indent": 0, "item": "Refinery6", "quantity": 600}
+            ],
+            "detRecipeTotals": [{"item": "Fish7", "quantity": 300000}, {"item": "Refinery6", "quantity": 600}]
+        }
+    },
+    "CatchingNet9": {
+        "intID": "CatchingNet9",
+        "recipe": [
+            {"item": "Bug7", "quantity": 200000},
+            {"item": "GalaxyC1b", "quantity": 100},
+            {"item": "CatchingNet8", "quantity": 1}
+        ],
+        "levelReqToCraft": 61,
+        "expGiven": 1000000,
+        "no": 43,
+        "tab": 4,
+        "sellPrice": 27818050,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Bug7", "quantity": 200000},
+                {"indent": 0, "item": "GalaxyC1b", "quantity": 100},
+                {"indent": 0, "item": "CatchingNet8", "quantity": 1},
+                {"indent": 1, "item": "Bug7", "quantity": 130000},
+                {"indent": 1, "item": "CatchingNet7", "quantity": 1},
+                {"indent": 2, "item": "Bug6", "quantity": 50000},
+                {"indent": 2, "item": "CatchingNet6", "quantity": 2},
+                {"indent": 3, "item": "Bug5", "quantity": 30000},
+                {"indent": 3, "item": "Refinery1", "quantity": 100},
+                {"indent": 3, "item": "CatchingNet5", "quantity": 4},
+                {"indent": 4, "item": "Bug4", "quantity": 28000},
+                {"indent": 4, "item": "Plat", "quantity": 12000},
+                {"indent": 4, "item": "CatchingNet4", "quantity": 8},
+                {"indent": 5, "item": "Quest19", "quantity": 40},
+                {"indent": 5, "item": "Bug2", "quantity": 20000},
+                {"indent": 5, "item": "CatchingNet3", "quantity": 16},
+                {"indent": 6, "item": "ForestTree", "quantity": 12800},
+                {"indent": 6, "item": "Bug2", "quantity": 13600},
+                {"indent": 6, "item": "PureWater", "quantity": 48},
+                {"indent": 2, "item": "PureWater2", "quantity": 5},
+                {"indent": 1, "item": "Refinery4", "quantity": 750}
+            ],
+            "detRecipeTotals": [
+                {"item": "Bug7", "quantity": 330000},
+                {"item": "GalaxyC1b", "quantity": 100},
+                {"item": "Refinery4", "quantity": 750},
+                {"item": "Bug6", "quantity": 50000},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "Bug5", "quantity": 30000},
+                {"item": "Refinery1", "quantity": 100},
+                {"item": "Bug4", "quantity": 28000},
+                {"item": "Plat", "quantity": 12000},
+                {"item": "Quest19", "quantity": 40},
+                {"item": "Bug2", "quantity": 33600},
+                {"item": "ForestTree", "quantity": 12800},
+                {"item": "PureWater", "quantity": 48}
+            ]
+        }
+    },
+    "MaxCapBagB8": {
+        "intID": "MaxCapBagB8",
+        "recipe": [{"item": "Bug8", "quantity": 300000}, {"item": "Refinery6", "quantity": 600}],
+        "levelReqToCraft": 63,
+        "expGiven": 1000000,
+        "no": 44,
+        "tab": 4,
+        "sellPrice": 36060000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Bug8", "quantity": 300000},
+                {"indent": 0, "item": "Refinery6", "quantity": 600}
+            ],
+            "detRecipeTotals": [{"item": "Bug8", "quantity": 300000}, {"item": "Refinery6", "quantity": 600}]
+        }
+    },
+    "TrapBoxSet7": {
+        "intID": "TrapBoxSet7",
+        "recipe": [{"item": "Critter10", "quantity": 800000}, {"item": "TrapBoxSet6", "quantity": 1}],
+        "levelReqToCraft": 62,
+        "expGiven": 1000000,
+        "no": 45,
+        "tab": 4,
+        "sellPrice": 64117313,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Critter10", "quantity": 800000},
+                {"indent": 0, "item": "TrapBoxSet6", "quantity": 1},
+                {"indent": 1, "item": "Critter8A", "quantity": 10},
+                {"indent": 1, "item": "TrapBoxSet5", "quantity": 1},
+                {"indent": 2, "item": "Critter6A", "quantity": 6},
+                {"indent": 2, "item": "TrapBoxSet4", "quantity": 1},
+                {"indent": 3, "item": "Critter4A", "quantity": 5},
+                {"indent": 3, "item": "Refinery1", "quantity": 50},
+                {"indent": 3, "item": "TrapBoxSet3", "quantity": 2},
+                {"indent": 4, "item": "Critter2A", "quantity": 4},
+                {"indent": 4, "item": "Refinery1", "quantity": 40},
+                {"indent": 2, "item": "PureWater2", "quantity": 5},
+                {"indent": 1, "item": "Refinery4", "quantity": 1000}
+            ],
+            "detRecipeTotals": [
+                {"item": "Critter10", "quantity": 800000},
+                {"item": "Critter8A", "quantity": 10},
+                {"item": "Refinery4", "quantity": 1000},
+                {"item": "Critter6A", "quantity": 6},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "Critter4A", "quantity": 5},
+                {"item": "Refinery1", "quantity": 90},
+                {"item": "Critter2A", "quantity": 4}
+            ]
+        }
+    },
+    "MaxCapBagTr7": {
+        "intID": "MaxCapBagTr7",
+        "recipe": [{"item": "Critter10", "quantity": 300000}, {"item": "Refinery6", "quantity": 800}],
+        "levelReqToCraft": 64,
+        "expGiven": 1000000,
+        "no": 46,
+        "tab": 4,
+        "sellPrice": 24080000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Critter10", "quantity": 300000},
+                {"indent": 0, "item": "Refinery6", "quantity": 800}
+            ],
+            "detRecipeTotals": [{"item": "Critter10", "quantity": 300000}, {"item": "Refinery6", "quantity": 800}]
+        }
+    },
+    "WorshipSkull7": {
+        "intID": "WorshipSkull7",
+        "recipe": [{"item": "Soul5", "quantity": 800000}, {"item": "WorshipSkull6", "quantity": 1}],
+        "levelReqToCraft": 62,
+        "expGiven": 1000000,
+        "no": 47,
+        "tab": 4,
+        "sellPrice": 42123450,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Soul5", "quantity": 800000},
+                {"indent": 0, "item": "WorshipSkull6", "quantity": 1},
+                {"indent": 1, "item": "Soul4", "quantity": 40000},
+                {"indent": 1, "item": "WorshipSkull5", "quantity": 1},
+                {"indent": 2, "item": "Soul4", "quantity": 8000},
+                {"indent": 2, "item": "WorshipSkull4", "quantity": 2},
+                {"indent": 3, "item": "Soul3", "quantity": 14000},
+                {"indent": 3, "item": "Refinery1", "quantity": 100},
+                {"indent": 3, "item": "WorshipSkull3", "quantity": 4},
+                {"indent": 4, "item": "Soul2", "quantity": 4800},
+                {"indent": 4, "item": "Refinery1", "quantity": 100},
+                {"indent": 2, "item": "PureWater2", "quantity": 5},
+                {"indent": 1, "item": "Refinery4", "quantity": 1000}
+            ],
+            "detRecipeTotals": [
+                {"item": "Soul5", "quantity": 800000},
+                {"item": "Soul4", "quantity": 48000},
+                {"item": "Refinery4", "quantity": 1000},
+                {"item": "PureWater2", "quantity": 5},
+                {"item": "Soul3", "quantity": 14000},
+                {"item": "Refinery1", "quantity": 200},
+                {"item": "Soul2", "quantity": 4800}
+            ]
+        }
+    },
+    "MaxCapBagS7": {
+        "intID": "MaxCapBagS7",
+        "recipe": [{"item": "Soul5", "quantity": 300000}, {"item": "Refinery6", "quantity": 800}],
+        "levelReqToCraft": 64,
+        "expGiven": 1000000,
+        "no": 48,
+        "tab": 4,
+        "sellPrice": 15080000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Soul5", "quantity": 300000},
+                {"indent": 0, "item": "Refinery6", "quantity": 800}
+            ],
+            "detRecipeTotals": [{"item": "Soul5", "quantity": 300000}, {"item": "Refinery6", "quantity": 800}]
+        }
+    },
+    "MaxCapBagF8": {
+        "intID": "MaxCapBagF8",
+        "recipe": [
+            {"item": "FoodHealth12", "quantity": 500000},
+            {"item": "Refinery6", "quantity": 800},
+            {"item": "GalaxyC1b", "quantity": 25}
+        ],
+        "levelReqToCraft": 64,
+        "expGiven": 1000000,
+        "no": 49,
+        "tab": 4,
+        "sellPrice": 2000155000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "FoodHealth12", "quantity": 500000},
+                {"indent": 0, "item": "Refinery6", "quantity": 800},
+                {"indent": 0, "item": "GalaxyC1b", "quantity": 25}
+            ],
+            "detRecipeTotals": [
+                {"item": "FoodHealth12", "quantity": 500000},
+                {"item": "Refinery6", "quantity": 800},
+                {"item": "GalaxyC1b", "quantity": 25}
+            ]
+        }
+    },
+    "MaxCapBagM9": {
+        "intID": "MaxCapBagM9",
+        "recipe": [
+            {"item": "GalaxyC4", "quantity": 500000},
+            {"item": "GalaxyC1b", "quantity": 25},
+            {"item": "Refinery6", "quantity": 800}
+        ],
+        "levelReqToCraft": 64,
+        "expGiven": 1000000,
+        "no": 50,
+        "tab": 4,
+        "sellPrice": 3750155000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "GalaxyC4", "quantity": 500000},
+                {"indent": 0, "item": "GalaxyC1b", "quantity": 25},
+                {"indent": 0, "item": "Refinery6", "quantity": 800}
+            ],
+            "detRecipeTotals": [
+                {"item": "GalaxyC4", "quantity": 500000},
+                {"item": "GalaxyC1b", "quantity": 25},
+                {"item": "Refinery6", "quantity": 800}
+            ]
+        }
+    },
+    "EquipmentSmithingTabs5": {
+        "intID": "EquipmentSmithingTabs5",
+        "recipe": [
+            {"item": "FillerMaterial", "quantity": 1},
+            {"item": "FillerMaterial", "quantity": 1000000},
+            {"item": "FillerMaterial", "quantity": 2500},
+            {"item": "FillerMaterial", "quantity": 25}
+        ],
+        "levelReqToCraft": 65,
+        "expGiven": 1000000,
+        "no": 52,
+        "tab": 4,
+        "sellPrice": 4010104,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "FillerMaterial", "quantity": 1},
+                {"indent": 0, "item": "FillerMaterial", "quantity": 1000000},
+                {"indent": 0, "item": "FillerMaterial", "quantity": 2500},
+                {"indent": 0, "item": "FillerMaterial", "quantity": 25}
+            ],
+            "detRecipeTotals": [{"item": "FillerMaterial", "quantity": 1002526}]
+        }
+    },
+    "InvBag111": {
+        "intID": "InvBag111",
+        "recipe": [
+            {"item": "Fish6", "quantity": 10000},
+            {"item": "Bug7", "quantity": 20000},
+            {"item": "AlienTree", "quantity": 20000},
+            {"item": "Soul5", "quantity": 5000}
+        ],
+        "levelReqToCraft": 53,
+        "expGiven": 1000000,
+        "no": 53,
+        "tab": 4,
+        "sellPrice": 2800000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Fish6", "quantity": 10000},
+                {"indent": 0, "item": "Bug7", "quantity": 20000},
+                {"indent": 0, "item": "AlienTree", "quantity": 20000},
+                {"indent": 0, "item": "Soul5", "quantity": 5000}
+            ],
+            "detRecipeTotals": [
+                {"item": "Fish6", "quantity": 10000},
+                {"item": "Bug7", "quantity": 20000},
+                {"item": "AlienTree", "quantity": 20000},
+                {"item": "Soul5", "quantity": 5000}
+            ]
+        }
+    },
+    "DNAgun1": {
+        "intID": "DNAgun1",
+        "recipe": [{"item": "DesertC2b", "quantity": 18}, {"item": "DNAgun0", "quantity": 5}],
+        "levelReqToCraft": 55,
+        "expGiven": 1000000,
+        "no": 54,
+        "tab": 4,
+        "sellPrice": 30002880,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "DesertC2b", "quantity": 18},
+                {"indent": 0, "item": "DNAgun0", "quantity": 5}
+            ],
+            "detRecipeTotals": [{"item": "DesertC2b", "quantity": 18}, {"item": "DNAgun0", "quantity": 5}]
+        }
+    },
+    "DNAgun2": {
+        "intID": "DNAgun2",
+        "recipe": [{"item": "SnowB2a", "quantity": 30}, {"item": "DNAgun1", "quantity": 1}],
+        "levelReqToCraft": 60,
+        "expGiven": 1000000,
+        "no": 55,
+        "tab": 4,
+        "sellPrice": 30097380,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "SnowB2a", "quantity": 30},
+                {"indent": 0, "item": "DNAgun1", "quantity": 1},
+                {"indent": 1, "item": "DesertC2b", "quantity": 18},
+                {"indent": 1, "item": "DNAgun0", "quantity": 5}
+            ],
+            "detRecipeTotals": [
+                {"item": "SnowB2a", "quantity": 30},
+                {"item": "DesertC2b", "quantity": 18},
+                {"item": "DNAgun0", "quantity": 5}
+            ]
+        }
+    },
+    "DNAgun3": {
+        "intID": "DNAgun3",
+        "recipe": [{"item": "GalaxyA2b", "quantity": 200}, {"item": "DNAgun2", "quantity": 1}],
+        "levelReqToCraft": 65,
+        "expGiven": 1000000,
+        "no": 56,
+        "tab": 4,
+        "sellPrice": 30127380,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "GalaxyA2b", "quantity": 200},
+                {"indent": 0, "item": "DNAgun2", "quantity": 1},
+                {"indent": 1, "item": "SnowB2a", "quantity": 30},
+                {"indent": 1, "item": "DNAgun1", "quantity": 1},
+                {"indent": 2, "item": "DesertC2b", "quantity": 18},
+                {"indent": 2, "item": "DNAgun0", "quantity": 5}
+            ],
+            "detRecipeTotals": [
+                {"item": "GalaxyA2b", "quantity": 200},
+                {"item": "SnowB2a", "quantity": 30},
+                {"item": "DesertC2b", "quantity": 18},
+                {"item": "DNAgun0", "quantity": 5}
             ]
         }
     }

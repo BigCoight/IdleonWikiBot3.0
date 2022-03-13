@@ -18,7 +18,8 @@ class CardRepo(Repository[CardData]):
 	@classmethod
 	def generateRepo(cls) -> None:
 		cardNames = ["Blunder Hills", "Yum Yum Desert", "Easy Resources",
-		             "Medium Resources", "Frostbite Tundra", "Hard Resources", "Dungeons", "Bosses", "Event"]
+		             "Medium Resources", "Frostbite Tundra", "Hard Resources","Hyperion Nebula", "Dungeons", "Bosses",
+		             "Event"]
 		cardData = formatStr(cls.getSection(), ["\n", "  "])
 		for n, section in enumerate([wrap(x) for x in re.split(r",?],?],\[\[", cardData)]):
 			for m, data in enumerate([wrap(x) for x in re.split(r",?],\[", section)]):

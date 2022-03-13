@@ -111,19 +111,19 @@
         "gpBaseCost": 30,
         "gpIncrease": 90
     },
-    "Wait A Minute": {
-        "name": "Wait A Minute",
-        "xPos": 296,
+    "Coin Supercharger": {
+        "name": "Coin Supercharger",
+        "xPos": 167,
         "yPos": 137,
-        "bonus": "+{% Nothing Yet",
-        "x1": 1,
-        "x2": 0,
-        "func": "add",
-        "maxLevel": 0,
-        "reqIndex": 16,
+        "bonus": "+{% Cash for each world you've reached",
+        "x1": 20,
+        "x2": 20,
+        "func": "decay",
+        "maxLevel": 100,
+        "reqIndex": 7,
         "reqLevel": 5,
-        "gpBaseCost": 20,
-        "gpIncrease": 80
+        "gpBaseCost": 30,
+        "gpIncrease": 120
     },
     "Bonus GP for small guilds": {
         "name": "Bonus GP for small guilds",
@@ -194,6 +194,20 @@
         "reqLevel": 8,
         "gpBaseCost": 30,
         "gpIncrease": 90
+    },
+    "Wait A Minute": {
+        "name": "Wait A Minute",
+        "xPos": 296,
+        "yPos": 137,
+        "bonus": "+{% Nothing Yet",
+        "x1": 1,
+        "x2": 0,
+        "func": "add",
+        "maxLevel": 0,
+        "reqIndex": 16,
+        "reqLevel": 5,
+        "gpBaseCost": 20,
+        "gpIncrease": 80
     },
     "Craps": {
         "name": "Craps",

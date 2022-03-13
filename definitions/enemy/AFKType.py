@@ -11,3 +11,5 @@ class AFKType(str, Enum, metaclass = CheckIn):
 	Nothing = 'Nothing'
 	Fighting = 'Fighting'
 	Choppin = 'Choppin'
+	Cooking = "Cooking"
+	Laboratory = "Laboratory"

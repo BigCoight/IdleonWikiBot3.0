@@ -13,6 +13,6 @@ class MapNameRepo(ListRepository[MapName]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		mapNames = re.findall(r'"([ a-zA-Z0-_\'\n]*)"\.', cls.getSection())[0].split(" ")
+		mapNames = re.findall(r'"(.*?)"\.', cls.getSection())[0].split(" ")
 		for n, v in enumerate(mapNames):
 			cls.add(MapName(name = v, id = n))

@@ -81,3 +81,5 @@ class TypeGen(str, Enum, metaclass = CheckIn):
 	dCritters = 'dCritters'
 	aError = 'aError'
 	aKeychain = 'aKeychain'
+	aCape = 'aCape'
+	aDNAgun = "aDNAgun"

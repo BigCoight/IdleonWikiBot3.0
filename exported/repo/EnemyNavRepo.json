@@ -393,6 +393,20 @@
     },
     "Boss3B": {
         "prev": "Boss3A",
+        "next": "Boss4A",
+        "hasCrystal": true,
+        "crystalName": null,
+        "hasCard": true
+    },
+    "Boss4A": {
+        "prev": "Boss3B",
+        "next": "Boss4B",
+        "hasCrystal": true,
+        "crystalName": null,
+        "hasCard": true
+    },
+    "Boss4B": {
+        "prev": "Boss4A",
         "next": "Blank",
         "hasCrystal": true,
         "crystalName": null,

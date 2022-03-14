@@ -34,6 +34,7 @@ class PostOfficeRepo(Repository[PostOffice]):
 					if len(data) > 3:
 						coins = data
 						continue
+					if len(data) != 3: continue #Lava needs to fix this
 					parts[v].append(Part(
 						item = data[0],
 						base = data[1],

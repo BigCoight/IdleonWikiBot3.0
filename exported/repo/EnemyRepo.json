@@ -578,6 +578,91 @@
         "navigation": null,
         "bossData": null
     },
+    "CritterCard10": {
+        "details": {
+            "Name": "Blobfish",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 85,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 13,
+            "MonsterHPTotal": 420,
+            "Type": "monsterType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsD10", "quantity": 1, "chance": 0.00014, "questLink": "N/A"},
+            {"item": "Critter10", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Cooking": {
+        "details": {
+            "Name": "Cooking",
+            "AFKtype": "Cooking",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 22,
+            "MonsterOffsetY": 38,
+            "HeightOfMonster": 25,
+            "MonsterMoving": 0,
+            "MovingFrame": 0,
+            "RespawnTime": 180,
+            "DeathFrame": 1,
+            "MonsterHPTotal": 5,
+            "Type": "oreType",
+            "SpecialType": "",
+            "ExpGiven": 100,
+            "ExpType": 10,
+            "Defence": 100,
+            "MoveSPEED": 0,
+            "Damages": [0, 1],
+            "DefFor0": 0.22
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Laboratory": {
+        "details": {
+            "Name": "Laboratory",
+            "AFKtype": "Laboratory",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 22,
+            "MonsterOffsetY": 38,
+            "HeightOfMonster": 25,
+            "MonsterMoving": 0,
+            "MovingFrame": 0,
+            "RespawnTime": 180,
+            "DeathFrame": 1,
+            "MonsterHPTotal": 5,
+            "Type": "oreType",
+            "SpecialType": "",
+            "ExpGiven": 25,
+            "ExpType": 12,
+            "Defence": 100,
+            "MoveSPEED": 0,
+            "Damages": [0, 1],
+            "DefFor0": 0.22
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
     "frogP": {
         "details": {
             "Name": "Poisonic Frog",
@@ -1389,6 +1474,41 @@
             "crystalName": "Crystal2",
             "hasCard": true
         },
+        "bossData": null
+    },
+    "Crystal3": {
+        "details": {
+            "Name": "Crystal Custard",
+            "AFKtype": "Fighting",
+            "MonsterFace": 47,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 40,
+            "HeightOfMonster": 60,
+            "MonsterMoving": 1,
+            "MovingFrame": 7,
+            "RespawnTime": 252000,
+            "DeathFrame": 14,
+            "MonsterHPTotal": 1000000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 210,
+            "ExpType": 0,
+            "Defence": 180,
+            "MoveSPEED": 5,
+            "Damages": [1, 1],
+            "DefFor0": 0
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 1, "chance": 0.5, "questLink": "N/A"},
+            {"item": "CardsG14", "quantity": 1, "chance": 0.008, "questLink": "N/A"},
+            {"item": "StampC3", "quantity": 1, "chance": 0.1, "questLink": "Papua_Piggea2"},
+            {"item": "TalentBook1", "quantity": 3618100, "chance": 0.005, "questLink": "N/A"},
+            {"item": "DropTable19", "quantity": 1, "chance": 0.6, "questLink": "N/A"},
+            {"item": "DropTable20", "quantity": 1, "chance": 0.5, "questLink": "N/A"},
+            {"item": "DropTable21", "quantity": 1, "chance": 0.4, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
         "bossData": null
     },
     "mushG": {
@@ -2678,7 +2798,7 @@
             "area": "Steep Sheep Ledge",
             "world": "Frostbite Tundra",
             "id": 101,
-            "portalRequirements": [2000]
+            "portalRequirements": [1000]
         },
         "navigation": {
             "prev": null,
@@ -2706,7 +2826,7 @@
             "SpecialType": "",
             "ExpGiven": 700,
             "ExpType": 0,
-            "Defence": 700,
+            "Defence": 650,
             "MoveSPEED": 4,
             "Damages": [360, 1],
             "DefFor0": 415.1
@@ -2723,7 +2843,7 @@
             "area": "Snowfield Outskirts",
             "world": "Frostbite Tundra",
             "id": 103,
-            "portalRequirements": [7500]
+            "portalRequirements": [2000]
         },
         "navigation": {
             "prev": "sheep",
@@ -2751,7 +2871,7 @@
             "SpecialType": "",
             "ExpGiven": 800,
             "ExpType": 0,
-            "Defence": 900,
+            "Defence": 775,
             "MoveSPEED": 4,
             "Damages": [420, 1],
             "DefFor0": 491.48
@@ -2768,7 +2888,7 @@
             "area": "The Stache Split",
             "world": "Frostbite Tundra",
             "id": 104,
-            "portalRequirements": [10000, 100000]
+            "portalRequirements": [3000, 100000]
         },
         "navigation": {
             "prev": "flake",
@@ -2840,7 +2960,7 @@
             "SpecialType": "",
             "ExpGiven": 940,
             "ExpType": 0,
-            "Defence": 1150,
+            "Defence": 900,
             "MoveSPEED": 4,
             "Damages": [500, 1],
             "DefFor0": 593.5
@@ -2857,7 +2977,7 @@
             "area": "Refrigeration Station",
             "world": "Frostbite Tundra",
             "id": 105,
-            "portalRequirements": [12500]
+            "portalRequirements": [4000]
         },
         "navigation": {
             "prev": "stache",
@@ -2885,7 +3005,7 @@
             "SpecialType": "",
             "ExpGiven": 1030,
             "ExpType": 0,
-            "Defence": 1400,
+            "Defence": 1050,
             "MoveSPEED": 3,
             "Damages": [580, 1],
             "DefFor0": 695.37
@@ -2903,7 +3023,7 @@
             "area": "Mamooooth Mountain",
             "world": "Frostbite Tundra",
             "id": 106,
-            "portalRequirements": [17500]
+            "portalRequirements": [6000]
         },
         "navigation": {
             "prev": "bloque",
@@ -2931,7 +3051,7 @@
             "SpecialType": "",
             "ExpGiven": 1130,
             "ExpType": 0,
-            "Defence": 1700,
+            "Defence": 1200,
             "MoveSPEED": 6,
             "Damages": [690, 1],
             "DefFor0": 834.89
@@ -2949,7 +3069,7 @@
             "area": "Rollin' Tundra",
             "world": "Frostbite Tundra",
             "id": 107,
-            "portalRequirements": [22000]
+            "portalRequirements": [8000]
         },
         "navigation": {
             "prev": "mamoth",
@@ -2977,7 +3097,7 @@
             "SpecialType": "",
             "ExpGiven": 1250,
             "ExpType": 0,
-            "Defence": 2000,
+            "Defence": 1350,
             "MoveSPEED": 4,
             "Damages": [800, 1],
             "DefFor0": 973.57
@@ -2994,7 +3114,7 @@
             "area": "Signature Slopes",
             "world": "Frostbite Tundra",
             "id": 108,
-            "portalRequirements": [30000]
+            "portalRequirements": [11000]
         },
         "navigation": {
             "prev": "snowball",
@@ -3022,7 +3142,7 @@
             "SpecialType": "",
             "ExpGiven": 1370,
             "ExpType": 0,
-            "Defence": 2250,
+            "Defence": 1500,
             "MoveSPEED": 4,
             "Damages": [950, 1],
             "DefFor0": 1161.15
@@ -3039,7 +3159,7 @@
             "area": "Thermonuclear Climb",
             "world": "Frostbite Tundra",
             "id": 109,
-            "portalRequirements": [35000]
+            "portalRequirements": [15000]
         },
         "navigation": {
             "prev": "penguin",
@@ -3067,7 +3187,7 @@
             "SpecialType": "",
             "ExpGiven": 1570,
             "ExpType": 0,
-            "Defence": 2600,
+            "Defence": 1700,
             "MoveSPEED": 4,
             "Damages": [1150, 1],
             "DefFor0": 1408.37
@@ -3083,7 +3203,7 @@
             "area": "Waterlogged Entrance",
             "world": "Frostbite Tundra",
             "id": 110,
-            "portalRequirements": [45000]
+            "portalRequirements": [18000]
         },
         "navigation": {
             "prev": "thermostat",
@@ -3111,7 +3231,7 @@
             "SpecialType": "",
             "ExpGiven": 1690,
             "ExpType": 0,
-            "Defence": 2900,
+            "Defence": 1900,
             "MoveSPEED": 6,
             "Damages": [1425, 1],
             "DefFor0": 1743.06
@@ -3127,7 +3247,7 @@
             "area": "Cryo Catacombs",
             "world": "Frostbite Tundra",
             "id": 111,
-            "portalRequirements": [65000]
+            "portalRequirements": [22000]
         },
         "navigation": {
             "prev": "glass",
@@ -3155,7 +3275,7 @@
             "SpecialType": "",
             "ExpGiven": 1780,
             "ExpType": 0,
-            "Defence": 3200,
+            "Defence": 2150,
             "MoveSPEED": 4,
             "Damages": [1700, 1],
             "DefFor0": 2072.08
@@ -3171,7 +3291,7 @@
             "area": "Overpass of Sound",
             "world": "Frostbite Tundra",
             "id": 112,
-            "portalRequirements": [90000]
+            "portalRequirements": [35000]
         },
         "navigation": {
             "prev": "snakeB",
@@ -3199,7 +3319,7 @@
             "SpecialType": "",
             "ExpGiven": 1900,
             "ExpType": 0,
-            "Defence": 3400,
+            "Defence": 2400,
             "MoveSPEED": 4,
             "Damages": [2000, 1],
             "DefFor0": 2424.95
@@ -3250,6 +3370,499 @@
         },
         "drops": [],
         "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "mushP": {
+        "details": {
+            "Name": "Purp Mushroom",
+            "AFKtype": "Fighting",
+            "MonsterFace": 49,
+            "MonsterOffsetX": 34,
+            "MonsterOffsetY": 25,
+            "HeightOfMonster": 50,
+            "MonsterMoving": 1,
+            "MovingFrame": 7,
+            "RespawnTime": 38,
+            "DeathFrame": 15,
+            "MonsterHPTotal": 520000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 2350,
+            "ExpType": 0,
+            "Defence": 2800,
+            "MoveSPEED": 4,
+            "Damages": [2100, 1],
+            "DefFor0": 2541.34
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 550, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyA1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "EquipmentShoes30", "quantity": 1, "chance": 6e-06, "questLink": "N/A"},
+            {"item": "CardsG1", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable19", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Spaceway Raceway",
+            "world": "Hyperion Nebula",
+            "id": 151,
+            "portalRequirements": [20000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "w4a2": {
+        "details": {
+            "Name": "TV",
+            "AFKtype": "Fighting",
+            "MonsterFace": 50,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 55,
+            "MonsterMoving": 1,
+            "MovingFrame": 7,
+            "RespawnTime": 40,
+            "DeathFrame": 18,
+            "MonsterHPTotal": 700000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 3000,
+            "ExpType": 0,
+            "Defence": 3300,
+            "MoveSPEED": 4,
+            "Damages": [2300, 1],
+            "DefFor0": 2772.33
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 630, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyA2", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "GalaxyA2b", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "Line12", "quantity": 1, "chance": 2.2e-06, "questLink": "N/A"},
+            {"item": "CardsG2", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable19", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "TV Outpost",
+            "world": "Hyperion Nebula",
+            "id": 152,
+            "portalRequirements": [30000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "w4a3": {
+        "details": {
+            "Name": "Donut",
+            "AFKtype": "Fighting",
+            "MonsterFace": 51,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 60,
+            "MonsterMoving": 1,
+            "MovingFrame": 8,
+            "RespawnTime": 40,
+            "DeathFrame": 16,
+            "MonsterHPTotal": 925000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 4000,
+            "ExpType": 0,
+            "Defence": 3800,
+            "MoveSPEED": 4,
+            "Damages": [2550, 1],
+            "DefFor0": 3057.91
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 730, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyA3", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "EquipmentShoes32", "quantity": 1, "chance": 6e-06, "questLink": "N/A"},
+            {"item": "CardsG3", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable19", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Donut Drive-In",
+            "world": "Hyperion Nebula",
+            "id": 153,
+            "portalRequirements": [50000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "demonP": {
+        "details": {
+            "Name": "Demon Genie",
+            "AFKtype": "Fighting",
+            "MonsterFace": 52,
+            "MonsterOffsetX": 50,
+            "MonsterOffsetY": 69,
+            "HeightOfMonster": 68,
+            "MonsterMoving": 1,
+            "MovingFrame": 13,
+            "RespawnTime": 40,
+            "DeathFrame": 24,
+            "MonsterHPTotal": 1250000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 4800,
+            "ExpType": 0,
+            "Defence": 4325,
+            "MoveSPEED": 3,
+            "Damages": [2750, 1],
+            "DefFor0": 3284.02
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 860, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyA4", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "EquipmentRings24", "quantity": 1, "chance": 4e-06, "questLink": "N/A"},
+            {"item": "CardsG4", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable19", "quantity": 1, "chance": 0.0034, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Outskirts of Fallstar Isle",
+            "world": "Hyperion Nebula",
+            "id": 154,
+            "portalRequirements": [70000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "w4b2": {
+        "details": {
+            "Name": "Soda Can",
+            "AFKtype": "Fighting",
+            "MonsterFace": 54,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 50,
+            "MonsterMoving": 1,
+            "MovingFrame": 7,
+            "RespawnTime": 38,
+            "DeathFrame": 16,
+            "MonsterHPTotal": 2000000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 7600,
+            "ExpType": 0,
+            "Defence": 5150,
+            "MoveSPEED": 6,
+            "Damages": [3000, 1],
+            "DefFor0": 3563.92
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 1050, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyB1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "Weight3", "quantity": 1, "chance": 1.9e-06, "questLink": "N/A"},
+            {"item": "CardsG6", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable20", "quantity": 1, "chance": 0.0027, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Moutainous Deugh",
+            "world": "Hyperion Nebula",
+            "id": 155,
+            "portalRequirements": [100000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "w4b1": {
+        "details": {
+            "Name": "Flying Worm",
+            "AFKtype": "Fighting",
+            "MonsterFace": 53,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 55,
+            "MonsterMoving": 1,
+            "MovingFrame": 8,
+            "RespawnTime": 40,
+            "DeathFrame": 18,
+            "MonsterHPTotal": 2500000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 8750,
+            "ExpType": 0,
+            "Defence": 5650,
+            "MoveSPEED": 7,
+            "Damages": [3400, 1],
+            "DefFor0": 4005.88
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 1300, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyB2", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "StampA29", "quantity": 1, "chance": 3.8e-06, "questLink": "N/A"},
+            {"item": "CardsG5", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable20", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Wurm Highway",
+            "world": "Hyperion Nebula",
+            "id": 156,
+            "portalRequirements": [150000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "w4b3": {
+        "details": {
+            "Name": "Gelatinous Cuboid",
+            "AFKtype": "Fighting",
+            "MonsterFace": 55,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 60,
+            "MonsterMoving": 1,
+            "MovingFrame": 12,
+            "RespawnTime": 40,
+            "DeathFrame": 19,
+            "MonsterHPTotal": 3300000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 10800,
+            "ExpType": 0,
+            "Defence": 6200,
+            "MoveSPEED": 4,
+            "Damages": [3900, 1],
+            "DefFor0": 4549.15
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 1600, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyB3", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "CardsG7", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "InvStorageS", "quantity": 1, "chance": 3.8e-06, "questLink": "N/A"},
+            {"item": "DropTable20", "quantity": 1, "chance": 0.0029, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Jelly Cube Bridge",
+            "world": "Hyperion Nebula",
+            "id": 157,
+            "portalRequirements": [250000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "w4b4": {
+        "details": {
+            "Name": "Choccie",
+            "AFKtype": "Fighting",
+            "MonsterFace": 56,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 60,
+            "MonsterMoving": 1,
+            "MovingFrame": 8,
+            "RespawnTime": 40,
+            "DeathFrame": 17,
+            "MonsterHPTotal": 4500000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 14000,
+            "ExpType": 0,
+            "Defence": 6900,
+            "MoveSPEED": 4,
+            "Damages": [4500, 1],
+            "DefFor0": 5189.1
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 2000, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyB4", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "EquipmentRings25", "quantity": 1, "chance": 4e-06, "questLink": "N/A"},
+            {"item": "CardsG8", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable20", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Cocoa Tunnel",
+            "world": "Hyperion Nebula",
+            "id": 158,
+            "portalRequirements": [500000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "w4b5": {
+        "details": {
+            "Name": "Biggole Wurm",
+            "AFKtype": "Fighting",
+            "MonsterFace": 57,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 55,
+            "MonsterMoving": 0,
+            "MovingFrame": 0,
+            "RespawnTime": 40,
+            "DeathFrame": 10,
+            "MonsterHPTotal": 6500000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 17500,
+            "ExpType": 0,
+            "Defence": 7700,
+            "MoveSPEED": 6,
+            "Damages": [5200, 1],
+            "DefFor0": 5921.21
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 2500, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyB5", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "CardsG9", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable20", "quantity": 1, "chance": 0.0033, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Standstill Plains",
+            "world": "Hyperion Nebula",
+            "id": 159,
+            "portalRequirements": [700000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "w4c1": {
+        "details": {
+            "Name": "Clammie",
+            "AFKtype": "Fighting",
+            "MonsterFace": 58,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 40,
+            "MonsterMoving": 1,
+            "MovingFrame": 7,
+            "RespawnTime": 40,
+            "DeathFrame": 16,
+            "MonsterHPTotal": 9000000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 23400,
+            "ExpType": 0,
+            "Defence": 8700,
+            "MoveSPEED": 4,
+            "Damages": [6000, 1],
+            "DefFor0": 6741.2
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 3100, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyC1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "GalaxyC1b", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "CardsG10", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable21", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Shelled Shores",
+            "world": "Hyperion Nebula",
+            "id": 160,
+            "portalRequirements": [1000000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "w4c2": {
+        "details": {
+            "Name": "Octodar",
+            "AFKtype": "Fighting",
+            "MonsterFace": 59,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 36,
+            "MonsterMoving": 1,
+            "MovingFrame": 6,
+            "RespawnTime": 40,
+            "DeathFrame": 14,
+            "MonsterHPTotal": 12000000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 27600,
+            "ExpType": 0,
+            "Defence": 9600,
+            "MoveSPEED": 4,
+            "Damages": [7000, 1],
+            "DefFor0": 7744.43
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 3500, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyC2", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "CardsG11", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "SmithingRecipes4", "quantity": 55, "chance": 3e-07, "questLink": "N/A"},
+            {"item": "DropTable21", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "The Untraveled Octopath",
+            "world": "Hyperion Nebula",
+            "id": 161,
+            "portalRequirements": [2000000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "w4c3": {
+        "details": {
+            "Name": "Flombeige",
+            "AFKtype": "Fighting",
+            "MonsterFace": 60,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 60,
+            "MonsterMoving": 1,
+            "MovingFrame": 7,
+            "RespawnTime": 45,
+            "DeathFrame": 16,
+            "MonsterHPTotal": 16000000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 30000,
+            "ExpType": 0,
+            "Defence": 10500,
+            "MoveSPEED": 4,
+            "Damages": [8200, 1],
+            "DefFor0": 8920.83
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 4500, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyC3", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "Line3", "quantity": 1, "chance": 1e-06, "questLink": "N/A"},
+            {"item": "CardsG12", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable21", "quantity": 1, "chance": 0.003, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Flamboyant Bayou",
+            "world": "Hyperion Nebula",
+            "id": 162,
+            "portalRequirements": [3000000]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "w4c4": {
+        "details": {
+            "Name": "Stilted Seeker",
+            "AFKtype": "Fighting",
+            "MonsterFace": 61,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 76,
+            "MonsterMoving": 1,
+            "MovingFrame": 9,
+            "RespawnTime": 45,
+            "DeathFrame": 20,
+            "MonsterHPTotal": 20000000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 33000,
+            "ExpType": 0,
+            "Defence": 11000,
+            "MoveSPEED": 6,
+            "Damages": [10000, 1],
+            "DefFor0": 10638.1
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 5000, "chance": 0.5, "questLink": "N/A"},
+            {"item": "GalaxyC4", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "CardsG13", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable21", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Enclave of Eyes",
+            "world": "Hyperion Nebula",
+            "id": 163,
+            "portalRequirements": [4000000]
+        },
         "navigation": null,
         "bossData": null
     },
@@ -3788,12 +4401,12 @@
             "hasCard": true
         },
         "bossData": {
-            "health": 40000000,
+            "health": 20000000,
             "defence": 2250,
             "exp": 750000,
             "keys": 1,
             "attacks": [
-                {"name": "filler", "damage": 2900}
+                {"name": "filler", "damage": 3500}
             ]
         }
     },
@@ -3832,13 +4445,13 @@
         "mapData": null,
         "navigation": {
             "prev": "Boss3A",
-            "next": "Blank",
+            "next": "Boss4A",
             "hasCrystal": true,
             "crystalName": null,
             "hasCard": true
         },
         "bossData": {
-            "health": 2000000000,
+            "health": 500000000,
             "defence": 7500,
             "exp": 10000000,
             "keys": 5,
@@ -3895,6 +4508,87 @@
                 {"name": "filler", "damage": 33000}
             ]
         }
+    },
+    "Boss4A": {
+        "details": {
+            "Name": "Troll",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 85,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 13,
+            "MonsterHPTotal": 400000000,
+            "Type": "monsterType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 4000, "chance": 1, "questLink": "N/A"},
+            {"item": "CardsZ10", "quantity": 1, "chance": 0.007, "questLink": "N/A"},
+            {"item": "FillerMaterial", "quantity": 2, "chance": 0.3, "questLink": "N/A"},
+            {"item": "DropTable19", "quantity": 2, "chance": 1, "questLink": "N/A"},
+            {"item": "DropTable20", "quantity": 2, "chance": 1, "questLink": "N/A"},
+            {"item": "DropTable21", "quantity": 2, "chance": 1, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": {
+            "prev": "Boss3B",
+            "next": "Boss4B",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
+        "bossData": null
+    },
+    "Boss4B": {
+        "details": {
+            "Name": "Chaotic Troll",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 85,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 13,
+            "MonsterHPTotal": 2000000000,
+            "Type": "monsterType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 4000, "chance": 1, "questLink": "N/A"},
+            {"item": "CardsZ11", "quantity": 1, "chance": 0.004, "questLink": "N/A"},
+            {"item": "FillerMaterial", "quantity": 2, "chance": 0.1, "questLink": "N/A"},
+            {"item": "FillerMaterial", "quantity": 2, "chance": 0.002, "questLink": "N/A"},
+            {"item": "DropTable19", "quantity": 2, "chance": 1, "questLink": "N/A"},
+            {"item": "DropTable20", "quantity": 2, "chance": 1, "questLink": "N/A"},
+            {"item": "DropTable21", "quantity": 2, "chance": 1, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": {
+            "prev": "Boss4A",
+            "next": "Blank",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
+        "bossData": null
     },
     "poopBig": {
         "details": {
@@ -4620,6 +5314,330 @@
         "navigation": null,
         "bossData": null
     },
+    "Pet0": {
+        "details": {
+            "Name": "Squirrel",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 36,
+            "MonsterMoving": 1,
+            "MovingFrame": 7,
+            "RespawnTime": 40,
+            "DeathFrame": 15,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Pet1": {
+        "details": {
+            "Name": "Piggo",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 38,
+            "MonsterMoving": 1,
+            "MovingFrame": 6,
+            "RespawnTime": 40,
+            "DeathFrame": 16,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Pet2": {
+        "details": {
+            "Name": "Wild Boar",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 40,
+            "MonsterMoving": 1,
+            "MovingFrame": 5,
+            "RespawnTime": 40,
+            "DeathFrame": 14,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Pet3": {
+        "details": {
+            "Name": "Mallay",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 44,
+            "MonsterMoving": 1,
+            "MovingFrame": 5,
+            "RespawnTime": 40,
+            "DeathFrame": 12,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Pet4": {
+        "details": {
+            "Name": "Whale",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 45,
+            "MonsterMoving": 1,
+            "MovingFrame": 5,
+            "RespawnTime": 40,
+            "DeathFrame": 12,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Pet5": {
+        "details": {
+            "Name": "Chippy",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 44,
+            "MonsterMoving": 1,
+            "MovingFrame": 8,
+            "RespawnTime": 40,
+            "DeathFrame": 7,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Pet6": {
+        "details": {
+            "Name": "Bunny",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 40,
+            "MonsterMoving": 1,
+            "MovingFrame": 6,
+            "RespawnTime": 40,
+            "DeathFrame": 13,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Pet7": {
+        "details": {
+            "Name": "Mecho Mouse",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 40,
+            "MonsterMoving": 1,
+            "MovingFrame": 0,
+            "RespawnTime": 40,
+            "DeathFrame": 10,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Pet8": {
+        "details": {
+            "Name": "Panda",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 47,
+            "MonsterMoving": 1,
+            "MovingFrame": 6,
+            "RespawnTime": 40,
+            "DeathFrame": 12,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Pet9": {
+        "details": {
+            "Name": "Panda",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 47,
+            "MonsterMoving": 1,
+            "MovingFrame": 6,
+            "RespawnTime": 40,
+            "DeathFrame": 12,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Pet10": {
+        "details": {
+            "Name": "Panda",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 47,
+            "MonsterMoving": 1,
+            "MovingFrame": 6,
+            "RespawnTime": 40,
+            "DeathFrame": 12,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Pet11": {
+        "details": {
+            "Name": "Panda",
+            "AFKtype": "Fighting",
+            "MonsterFace": 23,
+            "MonsterOffsetX": 38,
+            "MonsterOffsetY": 47,
+            "HeightOfMonster": 47,
+            "MonsterMoving": 1,
+            "MovingFrame": 6,
+            "RespawnTime": 40,
+            "DeathFrame": 12,
+            "MonsterHPTotal": 14000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 420,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 4,
+            "Damages": [2, 1],
+            "DefFor0": 0.5
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
     "Copper": {
         "details": {
             "Name": "Copper",
@@ -4881,7 +5899,8 @@
         },
         "drops": [
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-            {"item": "Grasslands2", "quantity": 2, "chance": 0.4, "questLink": "N/A"}
+            {"item": "CardsF16", "quantity": 1, "chance": 3e-05, "questLink": "N/A"},
+            {"item": "DropTable4", "quantity": 2, "chance": 0.011, "questLink": "N/A"}
         ],
         "mapData": {
             "area": "Slip Slidy Ledges",
@@ -5240,22 +6259,54 @@
             "MonsterOffsetY": 0,
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
-            "MovingFrame": 1,
+            "MovingFrame": 4,
             "RespawnTime": 0,
             "DeathFrame": 6,
             "MonsterHPTotal": 5,
             "Type": "treeType",
             "SpecialType": "",
-            "ExpGiven": 6,
+            "ExpGiven": 500,
             "ExpType": 3,
-            "Defence": 20000,
+            "Defence": 100000,
             "MoveSPEED": 0,
             "Damages": [0, 1],
             "DefFor0": 0.22
         },
         "drops": [
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-            {"item": "Grasslands2", "quantity": 2, "chance": 0.015, "questLink": "N/A"}
+            {"item": "CardsF13", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
+            {"item": "DropTable22", "quantity": 2, "chance": 0.00815, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Tree8": {
+        "details": {
+            "Name": "Cubed Tree",
+            "AFKtype": "Choppin",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 0,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 4,
+            "RespawnTime": 0,
+            "DeathFrame": 10,
+            "MonsterHPTotal": 5,
+            "Type": "treeType",
+            "SpecialType": "",
+            "ExpGiven": 1250,
+            "ExpType": 3,
+            "Defence": 250000,
+            "MoveSPEED": 0,
+            "Damages": [0, 1],
+            "DefFor0": 0.22
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF12", "quantity": 1, "chance": 4e-05, "questLink": "N/A"},
+            {"item": "DropTable22", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
         ],
         "mapData": null,
         "navigation": null,
@@ -5292,6 +6343,41 @@
             "world": "Yum Yum Desert",
             "id": 54,
             "portalRequirements": [15]
+        },
+        "navigation": null,
+        "bossData": null
+    },
+    "FishMed": {
+        "details": {
+            "Name": "Medium Fish",
+            "AFKtype": "Fishing",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 50,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 1,
+            "RespawnTime": 0,
+            "DeathFrame": 2,
+            "MonsterHPTotal": 5,
+            "Type": "fishType",
+            "SpecialType": "",
+            "ExpGiven": 2,
+            "ExpType": 4,
+            "Defence": 20000,
+            "MoveSPEED": 0,
+            "Damages": [6, 1],
+            "DefFor0": 2.67
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": {
+            "area": "Deepwater Docks",
+            "world": "Yum Yum Desert",
+            "id": 61,
+            "portalRequirements": [30]
         },
         "navigation": null,
         "bossData": null
@@ -5398,6 +6484,126 @@
             "MovingFrame": 4,
             "RespawnTime": 86400,
             "DeathFrame": 3,
+            "MonsterHPTotal": 750000,
+            "Type": "fishType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Fish5": {
+        "details": {
+            "Name": "Skelefish",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 48,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 4,
+            "MonsterHPTotal": 750000,
+            "Type": "fishType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Fish6": {
+        "details": {
+            "Name": "Shark",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 48,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 5,
+            "MonsterHPTotal": 750000,
+            "Type": "fishType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Fish7": {
+        "details": {
+            "Name": "Manta Ray",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 48,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 6,
+            "MonsterHPTotal": 750000,
+            "Type": "fishType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Fish8": {
+        "details": {
+            "Name": "Kraken",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 48,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 7,
             "MonsterHPTotal": 750000,
             "Type": "fishType",
             "SpecialType": "a",
@@ -5545,7 +6751,7 @@
             "MonsterOffsetY": 30,
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
-            "MovingFrame": 63,
+            "MovingFrame": 106,
             "RespawnTime": 86400,
             "DeathFrame": 4,
             "MonsterHPTotal": 999999999,
@@ -5575,9 +6781,69 @@
             "MonsterOffsetY": 30,
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
-            "MovingFrame": 63,
+            "MovingFrame": 112,
             "RespawnTime": 86400,
             "DeathFrame": 5,
+            "MonsterHPTotal": 999999999,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 2,
+            "ExpType": 6,
+            "Defence": 1,
+            "MoveSPEED": 0,
+            "Damages": [6, 1],
+            "DefFor0": 2.67
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "BugNest7": {
+        "details": {
+            "Name": "Bee Hive",
+            "AFKtype": "Fighting",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 30,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 157,
+            "RespawnTime": 86400,
+            "DeathFrame": 6,
+            "MonsterHPTotal": 999999999,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 2,
+            "ExpType": 6,
+            "Defence": 1,
+            "MoveSPEED": 0,
+            "Damages": [6, 1],
+            "DefFor0": 2.67
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "BugNest8": {
+        "details": {
+            "Name": "Fairy Hovel",
+            "AFKtype": "Fighting",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 30,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 112,
+            "RespawnTime": 86400,
+            "DeathFrame": 7,
             "MonsterHPTotal": 999999999,
             "Type": "monsterType",
             "SpecialType": "",
@@ -5783,6 +7049,68 @@
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
             {"item": "CardsF9", "quantity": 1, "chance": 0.00025, "questLink": "N/A"},
             {"item": "DropTable18", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Bug7": {
+        "details": {
+            "Name": "Bumble Bee",
+            "AFKtype": "Catching",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 50,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 1,
+            "RespawnTime": 0,
+            "DeathFrame": 6,
+            "MonsterHPTotal": 5,
+            "Type": "bugType",
+            "SpecialType": "",
+            "ExpGiven": 150,
+            "ExpType": 6,
+            "Defence": 100000,
+            "MoveSPEED": 0,
+            "Damages": [6, 1],
+            "DefFor0": 2.67
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF14", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
+            {"item": "DropTable23", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Bug8": {
+        "details": {
+            "Name": "Fairy",
+            "AFKtype": "Catching",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 50,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 1,
+            "RespawnTime": 0,
+            "DeathFrame": 7,
+            "MonsterHPTotal": 5,
+            "Type": "bugType",
+            "SpecialType": "",
+            "ExpGiven": 300,
+            "ExpType": 6,
+            "Defence": 250000,
+            "MoveSPEED": 0,
+            "Damages": [6, 1],
+            "DefFor0": 2.67
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF15", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "DropTable23", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
         ],
         "mapData": null,
         "navigation": null,
@@ -6099,7 +7427,7 @@
             "DefFor0": 0.22
         },
         "drops": [
-            {"item": "COIN", "quantity": 1000, "chance": 1, "questLink": "N/A"},
+            {"item": "COIN", "quantity": 10000, "chance": 1, "questLink": "N/A"},
             {"item": "PremiumGem", "quantity": 1, "chance": 0.12, "questLink": "N/A"},
             {"item": "StoneW3", "quantity": 1, "chance": 0.025, "questLink": "N/A"},
             {"item": "SnowA2a", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
@@ -6138,7 +7466,7 @@
             "DefFor0": 0.22
         },
         "drops": [
-            {"item": "COIN", "quantity": 4000, "chance": 1, "questLink": "N/A"},
+            {"item": "COIN", "quantity": 40000, "chance": 1, "questLink": "N/A"},
             {"item": "PremiumGem", "quantity": 1, "chance": 0.23, "questLink": "N/A"},
             {"item": "EquipmentHats28", "quantity": 1, "chance": 0.02, "questLink": "N/A"},
             {"item": "StoneW3", "quantity": 1, "chance": 0.2, "questLink": "N/A"},
@@ -6178,7 +7506,7 @@
             "DefFor0": 0.22
         },
         "drops": [
-            {"item": "COIN", "quantity": 10000, "chance": 1, "questLink": "N/A"},
+            {"item": "COIN", "quantity": 100000, "chance": 1, "questLink": "N/A"},
             {"item": "PremiumGem", "quantity": 1, "chance": 0.45, "questLink": "N/A"},
             {"item": "DementiaBar", "quantity": 80, "chance": 0.2, "questLink": "N/A"},
             {"item": "Soul2", "quantity": 400, "chance": 0.4, "questLink": "N/A"},
@@ -6242,7 +7570,18 @@
             "Damages": [0, 1],
             "DefFor0": 0.22
         },
-        "drops": null,
+        "drops": [
+            {"item": "COIN", "quantity": 8000000, "chance": 1, "questLink": "N/A"},
+            {"item": "PremiumGem", "quantity": 1, "chance": 0.12, "questLink": "N/A"},
+            {"item": "StoneW4", "quantity": 1, "chance": 0.015, "questLink": "N/A"},
+            {"item": "GalaxyA2b", "quantity": 1, "chance": 0.02, "questLink": "N/A"},
+            {"item": "StoneA4", "quantity": 1, "chance": 0.04, "questLink": "N/A"},
+            {"item": "Soul1", "quantity": 50, "chance": 0.6, "questLink": "N/A"},
+            {"item": "Critter6", "quantity": 200, "chance": 0.6, "questLink": "N/A"},
+            {"item": "VoidBar", "quantity": 100, "chance": 0.35, "questLink": "N/A"},
+            {"item": "Key1", "quantity": 1, "chance": 0.006, "questLink": "N/A"},
+            {"item": "DropTable19", "quantity": 1, "chance": 1, "questLink": "N/A"}
+        ],
         "mapData": null,
         "navigation": null,
         "bossData": null
@@ -6269,7 +7608,19 @@
             "Damages": [0, 1],
             "DefFor0": 0.22
         },
-        "drops": null,
+        "drops": [
+            {"item": "COIN", "quantity": 30000000, "chance": 1, "questLink": "N/A"},
+            {"item": "PremiumGem", "quantity": 1, "chance": 0.23, "questLink": "N/A"},
+            {"item": "StoneW4", "quantity": 1, "chance": 0.04, "questLink": "N/A"},
+            {"item": "StoneA4", "quantity": 1, "chance": 0.07, "questLink": "N/A"},
+            {"item": "Critter8", "quantity": 600, "chance": 0.4, "questLink": "N/A"},
+            {"item": "Bug7", "quantity": 1500, "chance": 0.4, "questLink": "N/A"},
+            {"item": "Key2", "quantity": 1, "chance": 0.012, "questLink": "N/A"},
+            {"item": "FoodG7", "quantity": 1, "chance": 0.5, "questLink": "N/A"},
+            {"item": "Lustre", "quantity": 1000, "chance": 0.6, "questLink": "N/A"},
+            {"item": "AlienTree", "quantity": 750, "chance": 0.5, "questLink": "N/A"},
+            {"item": "DropTable20", "quantity": 1, "chance": 1, "questLink": "N/A"}
+        ],
         "mapData": null,
         "navigation": null,
         "bossData": null
@@ -6296,7 +7647,16 @@
             "Damages": [0, 1],
             "DefFor0": 0.22
         },
-        "drops": null,
+        "drops": [
+            {"item": "COIN", "quantity": 80000000, "chance": 1, "questLink": "N/A"},
+            {"item": "PremiumGem", "quantity": 1, "chance": 0.45, "questLink": "N/A"},
+            {"item": "LustreBar", "quantity": 150, "chance": 0.05, "questLink": "N/A"},
+            {"item": "Starfire", "quantity": 2000, "chance": 0.03, "questLink": "N/A"},
+            {"item": "Bug8", "quantity": 1500, "chance": 0.02, "questLink": "N/A"},
+            {"item": "Key3", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
+            {"item": "FoodG7", "quantity": 2, "chance": 0.03, "questLink": "N/A"},
+            {"item": "DropTable21", "quantity": 1, "chance": 1, "questLink": "N/A"}
+        ],
         "mapData": null,
         "navigation": null,
         "bossData": null
@@ -6323,7 +7683,7 @@
             "Damages": [0, 1],
             "DefFor0": 0.22
         },
-        "drops": null,
+        "drops": [],
         "mapData": null,
         "navigation": null,
         "bossData": null

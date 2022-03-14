@@ -17,7 +17,7 @@ class PrayerRepo(Repository[Prayer]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		zones = ["Goblin Gorefest", "Wakawaka War", "Acorn Assault", "Frosty Firefight"]
+		zones = ["Goblin Gorefest", "Wakawaka War", "Acorn Assault", "Frosty Firefight", "FILLER", "FILLER"]
 		prayers = getFromSplitArray(cls.getSection())
 		for prayer in prayers:
 			cls.add(replaceUnderscores(prayer[0]), Prayer(

@@ -41,7 +41,7 @@
     },
     "Chest Space": {
         "name": "Chest Space",
-        "description": "Just gives more Storage Chest slots, straight up. Better late than never, eh? (Passive Upgrade) ",
+        "description": "Just gives more Storage Chest slots, straight up. I gotchu dawg, yeh. (Passive Upgrade) ",
         "bonus": " +2 Storage Chest Slots @ +{ more Storage Chest Slots",
         "lvlUpReq": [{"item": "Refinery2", "quantity": 25}, {"item": "OakTree", "quantity": 500}],
         "maxLvl": 25,
@@ -59,24 +59,24 @@
         "bonusInc": 1.106,
         "misc": 0
     },
-    "Junk Pile": {
-        "name": "Junk Pile",
-        "description": "Every day, you can claim a random item from the pile! It could be a ton of different things, even Gems! ",
-        "bonus": " +{% Chance for 2 items instead",
-        "lvlUpReq": [{"item": "Refinery4", "quantity": 30}, {"item": "FillerMaterial", "quantity": 100}],
-        "maxLvl": 100,
+    "Trapper Drone": {
+        "name": "Trapper Drone",
+        "description": "Remotely deploy AND collect traps to and from any discovered critter location! Collect-all is based on Hunter's Eagle Eye Talent. ",
+        "bonus": " +{% Extra critters from all traps",
+        "lvlUpReq": [{"item": "Refinery3", "quantity": 30}, {"item": "Critter3A", "quantity": 5}],
+        "maxLvl": 10,
         "costIncrement": [10, 1],
-        "bonusInc": 1.105,
+        "bonusInc": 3,
         "misc": 0
     },
-    "Candy Pile": {
-        "name": "Candy Pile",
-        "description": "Every day, you can claim a random candy from the pile! It could even be 72 hour candy! ",
-        "bonus": " +{% Chance for 2 candies instead",
-        "lvlUpReq": [{"item": "Refinery5", "quantity": 20}, {"item": "StumpTree", "quantity": 0}],
-        "maxLvl": 100,
-        "costIncrement": [10, 1],
-        "bonusInc": 1.1,
+    "Automation Arm": {
+        "name": "Automation Arm",
+        "description": "Automate some of the more tedious actions with the flip of a switch! Let the robots do the dirty work! ",
+        "bonus": " +{ Automated System, controlled via @ the Robotic Arm.",
+        "lvlUpReq": [{"item": "Refinery3", "quantity": 50}, {"item": "SnowC2", "quantity": 300}],
+        "maxLvl": 5,
+        "costIncrement": [1, 1],
+        "bonusInc": 4,
         "misc": 0
     },
     "Pulse Mage": {
@@ -151,9 +151,9 @@
     },
     "Poisonic Elder": {
         "name": "Poisonic Elder",
-        "description": "Poisons enemies. @ Has slow speed, and deals big damage over time. ",
+        "description": "Poisons enemies. @ Has slow speed, but great AoE for hitting large crowds of mobs. ",
         "bonus": " +{% Damage @ +}% Lower Upgrade Costs in Worship",
-        "lvlUpReq": [{"item": "Refinery5", "quantity": 10}, {"item": "FillerMaterial", "quantity": 600}],
+        "lvlUpReq": [{"item": "Refinery5", "quantity": 10}, {"item": "GalaxyA1", "quantity": 600}],
         "maxLvl": 50,
         "costIncrement": [15, 1.6],
         "bonusInc": 1.21,
@@ -163,7 +163,10 @@
         "name": "Voidinator",
         "description": "Teleports monsters back to the start, and sets them all to a certain amount of HP. ",
         "bonus": " +{% Recharge Speed @ +}% Lower Upgrade Costs in Worship",
-        "lvlUpReq": [{"item": "Refinery6", "quantity": 10}, {"item": "SnowC4a", "quantity": 1}],
+        "lvlUpReq": [
+            {"item": "Refinery6", "quantity": 10000},
+            {"item": "FillerMaterial", "quantity": 10000}
+        ],
         "maxLvl": 50,
         "costIncrement": [15, 1.6],
         "bonusInc": 1.19,

@@ -119,12 +119,12 @@
             {"bonus": "% AFK Cash if 36hr+", "x1": 35, "x2": 200, "func": "decay"}
         ]
     },
-    "Filler": {
-        "name": "Filler",
+    "Science Spare Parts": {
+        "name": "Science Spare Parts",
         "bonuses": [
-            {"bonus": "Nothing", "x1": 50, "x2": 200, "func": "decay"},
-            {"bonus": "Nothing", "x1": 0.25, "x2": 0, "func": "add"},
-            {"bonus": "Nothing", "x1": 65, "x2": 200, "func": "decay"}
+            {"bonus": "Lab Efficiency", "x1": 4, "x2": 0, "func": "add"},
+            {"bonus": "% Lab EXP gain", "x1": 40, "x2": 150, "func": "decay"},
+            {"bonus": "Base LUK", "x1": 30, "x2": 200, "func": "decay"}
         ]
     },
     "Trapping Lockbox": {
@@ -149,6 +149,30 @@
             {"bonus": "% Worship Efficiency", "x1": 50, "x2": 200, "func": "decay"},
             {"bonus": "% Max Charge", "x1": 200, "x2": 200, "func": "decay"},
             {"bonus": "Starting Worship Pts", "x1": 90, "x2": 200, "func": "decay"}
+        ]
+    },
+    "Chefs Essentials": {
+        "name": "Chefs Essentials",
+        "bonuses": [
+            {"bonus": "Cooking Efficiency", "x1": 4, "x2": 0, "func": "add"},
+            {"bonus": "% Cooking EXP gain", "x1": 60, "x2": 200, "func": "decay"},
+            {"bonus": "% for 2x Ladle Drop", "x1": 88, "x2": 200, "func": "decay"}
+        ]
+    },
+    "Myriad Crate": {
+        "name": "Myriad Crate",
+        "bonuses": [
+            {"bonus": "Base All Stat", "x1": 40, "x2": 200, "func": "decay"},
+            {"bonus": "Base All Efficiency", "x1": 100, "x2": 200, "func": "decay"},
+            {"bonus": "% All Skills exp", "x1": 30, "x2": 200, "func": "decay"}
+        ]
+    },
+    "Filler": {
+        "name": "Filler",
+        "bonuses": [
+            {"bonus": "Nothing", "x1": 50, "x2": 200, "func": "decay"},
+            {"bonus": "Nothing", "x1": 0.25, "x2": 0, "func": "add"},
+            {"bonus": "Nothing", "x1": 65, "x2": 200, "func": "decay"}
         ]
     }
 }

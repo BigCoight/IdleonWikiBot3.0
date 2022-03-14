@@ -52,7 +52,8 @@
             {"name": "Plat", "chance": 0.0077, "quantity": 1},
             {"name": "Dementia", "chance": 0.0082, "quantity": 1},
             {"name": "Void", "chance": 0.009, "quantity": 2},
-            {"name": "Lustre", "chance": 0.0095, "quantity": 2}
+            {"name": "Lustre", "chance": 0.0095, "quantity": 2},
+            {"name": "Starfire", "chance": 0.011, "quantity": 2}
         ]
     },
     "DropTable5": {
@@ -84,6 +85,7 @@
             {"name": "Boss2A", "chance": 1, "quantity": 2},
             {"name": "Boss2C", "chance": 1, "quantity": 2},
             {"name": "Boss3C", "chance": 1, "quantity": 2},
+            {"name": "Boss4C", "chance": 1, "quantity": 2},
             {"name": "ChestA2", "chance": 1, "quantity": 1}
         ]
     },
@@ -99,6 +101,7 @@
             {"name": "Boss2B", "chance": 1, "quantity": 2},
             {"name": "Boss2C", "chance": 1, "quantity": 2},
             {"name": "Boss3C", "chance": 1, "quantity": 2},
+            {"name": "Boss4C", "chance": 1, "quantity": 2},
             {"name": "ChestB2", "chance": 1, "quantity": 1}
         ]
     },
@@ -113,6 +116,7 @@
             {"name": "Boss2B", "chance": 1, "quantity": 2},
             {"name": "Boss2C", "chance": 1, "quantity": 2},
             {"name": "Boss3C", "chance": 1, "quantity": 2},
+            {"name": "Boss4C", "chance": 1, "quantity": 2},
             {"name": "ChestC2", "chance": 1, "quantity": 1}
         ]
     },
@@ -120,10 +124,15 @@
         "sources": [
             {"name": "Crystal1", "chance": 0.6, "quantity": 1},
             {"name": "FishSmall", "chance": 0.012, "quantity": 1},
+            {"name": "FishMed", "chance": 0.012, "quantity": 1},
             {"name": "Fish1", "chance": 0.012, "quantity": 1},
             {"name": "Fish2", "chance": 0.012, "quantity": 1},
             {"name": "Fish3", "chance": 0.012, "quantity": 1},
-            {"name": "Fish4", "chance": 0.012, "quantity": 1}
+            {"name": "Fish4", "chance": 0.012, "quantity": 1},
+            {"name": "Fish5", "chance": 0.012, "quantity": 1},
+            {"name": "Fish6", "chance": 0.012, "quantity": 1},
+            {"name": "Fish7", "chance": 0.012, "quantity": 1},
+            {"name": "Fish8", "chance": 0.012, "quantity": 1}
         ]
     },
     "DropTable12": {
@@ -180,7 +189,8 @@
         "sources": [
             {"name": "Crystal2", "chance": 0.6, "quantity": 1},
             {"name": "SaharanFoal", "chance": 0.0089, "quantity": 1},
-            {"name": "Tree7", "chance": 0.0089, "quantity": 1}
+            {"name": "Tree7", "chance": 0.0089, "quantity": 1},
+            {"name": "Tree9", "chance": 0.0089, "quantity": 1}
         ]
     },
     "DropTable18": {
@@ -188,6 +198,43 @@
             {"name": "Crystal2", "chance": 0.5, "quantity": 1},
             {"name": "Bug5", "chance": 0.015, "quantity": 1},
             {"name": "Bug6", "chance": 0.015, "quantity": 1}
+        ]
+    },
+    "DropTable19": {
+        "sources": [
+            {"name": "Crystal3", "chance": 0.6, "quantity": 1},
+            {"name": "mushP", "chance": 0.0025, "quantity": 1},
+            {"name": "w4a2", "chance": 0.0028, "quantity": 1},
+            {"name": "w4a3", "chance": 0.0031, "quantity": 1},
+            {"name": "demonP", "chance": 0.0034, "quantity": 1},
+            {"name": "Boss4A", "chance": 1, "quantity": 2},
+            {"name": "Boss4B", "chance": 1, "quantity": 2},
+            {"name": "ChestA4", "chance": 1, "quantity": 1}
+        ]
+    },
+    "DropTable20": {
+        "sources": [
+            {"name": "Crystal3", "chance": 0.5, "quantity": 1},
+            {"name": "w4b2", "chance": 0.0027, "quantity": 1},
+            {"name": "w4b1", "chance": 0.0025, "quantity": 1},
+            {"name": "w4b3", "chance": 0.0029, "quantity": 1},
+            {"name": "w4b4", "chance": 0.0031, "quantity": 1},
+            {"name": "w4b5", "chance": 0.0033, "quantity": 1},
+            {"name": "Boss4A", "chance": 1, "quantity": 2},
+            {"name": "Boss4B", "chance": 1, "quantity": 2},
+            {"name": "ChestB4", "chance": 1, "quantity": 1}
+        ]
+    },
+    "DropTable21": {
+        "sources": [
+            {"name": "Crystal3", "chance": 0.4, "quantity": 1},
+            {"name": "w4c1", "chance": 0.0025, "quantity": 1},
+            {"name": "w4c2", "chance": 0.0028, "quantity": 1},
+            {"name": "w4c3", "chance": 0.003, "quantity": 1},
+            {"name": "w4c4", "chance": 0.0032, "quantity": 1},
+            {"name": "Boss4A", "chance": 1, "quantity": 2},
+            {"name": "Boss4B", "chance": 1, "quantity": 2},
+            {"name": "ChestC4", "chance": 1, "quantity": 1}
         ]
     },
     "DropTable3c": {
@@ -213,6 +260,18 @@
     "DropTable11": {"sources": [
         {"name": "PalmTree", "chance": 0.015, "quantity": 2}
     ]},
+    "DropTable22": {
+        "sources": [
+            {"name": "AlienTree", "chance": 0.00815, "quantity": 2},
+            {"name": "Tree8", "chance": 0.0089, "quantity": 1}
+        ]
+    },
+    "DropTable23": {
+        "sources": [
+            {"name": "Bug7", "chance": 0.015, "quantity": 1},
+            {"name": "Bug8", "chance": 0.015, "quantity": 1}
+        ]
+    },
     "SuperDropTable1": {
         "sources": [
             {"name": "Crystal0", "chance": 0.0024, "quantity": 1},
@@ -260,6 +319,7 @@
             {"name": "Dementia", "chance": 4.92e-05, "quantity": 1},
             {"name": "Void", "chance": 5.4e-05, "quantity": 2},
             {"name": "Lustre", "chance": 5.7e-05, "quantity": 2},
+            {"name": "Starfire", "chance": 6.6e-05, "quantity": 2},
             {"name": "Crystal0", "chance": 0.003, "quantity": 1},
             {"name": "OakTree", "chance": 4.8e-05, "quantity": 1},
             {"name": "BirchTree", "chance": 5.1e-05, "quantity": 1},
@@ -279,6 +339,7 @@
             {"name": "Boss2A", "chance": 0.006, "quantity": 2},
             {"name": "Boss2C", "chance": 0.006, "quantity": 2},
             {"name": "Boss3C", "chance": 0.006, "quantity": 2},
+            {"name": "Boss4C", "chance": 0.006, "quantity": 2},
             {"name": "ChestA2", "chance": 0.006, "quantity": 1},
             {"name": "Crystal1", "chance": 0.003, "quantity": 1},
             {"name": "shovelR", "chance": 1.92e-05, "quantity": 1},
@@ -290,6 +351,7 @@
             {"name": "Boss2B", "chance": 0.006, "quantity": 2},
             {"name": "Boss2C", "chance": 0.006, "quantity": 2},
             {"name": "Boss3C", "chance": 0.006, "quantity": 2},
+            {"name": "Boss4C", "chance": 0.006, "quantity": 2},
             {"name": "ChestB2", "chance": 0.006, "quantity": 1},
             {"name": "Crystal1", "chance": 0.0024, "quantity": 1},
             {"name": "steak", "chance": 1.92e-05, "quantity": 1},
@@ -300,13 +362,19 @@
             {"name": "Boss2B", "chance": 0.006, "quantity": 2},
             {"name": "Boss2C", "chance": 0.006, "quantity": 2},
             {"name": "Boss3C", "chance": 0.006, "quantity": 2},
+            {"name": "Boss4C", "chance": 0.006, "quantity": 2},
             {"name": "ChestC2", "chance": 0.006, "quantity": 1},
             {"name": "Crystal1", "chance": 0.0036, "quantity": 1},
             {"name": "FishSmall", "chance": 7.2e-05, "quantity": 1},
+            {"name": "FishMed", "chance": 7.2e-05, "quantity": 1},
             {"name": "Fish1", "chance": 7.2e-05, "quantity": 1},
             {"name": "Fish2", "chance": 7.2e-05, "quantity": 1},
             {"name": "Fish3", "chance": 7.2e-05, "quantity": 1},
             {"name": "Fish4", "chance": 7.2e-05, "quantity": 1},
+            {"name": "Fish5", "chance": 7.2e-05, "quantity": 1},
+            {"name": "Fish6", "chance": 7.2e-05, "quantity": 1},
+            {"name": "Fish7", "chance": 7.2e-05, "quantity": 1},
+            {"name": "Fish8", "chance": 7.2e-05, "quantity": 1},
             {"name": "PalmTree", "chance": 9e-05, "quantity": 2},
             {"name": "Crystal1", "chance": 0.003, "quantity": 1},
             {"name": "Bug1", "chance": 9e-05, "quantity": 1},
@@ -349,9 +417,43 @@
             {"name": "Crystal2", "chance": 0.0036, "quantity": 1},
             {"name": "SaharanFoal", "chance": 5.34e-05, "quantity": 1},
             {"name": "Tree7", "chance": 5.34e-05, "quantity": 1},
+            {"name": "Tree9", "chance": 5.34e-05, "quantity": 1},
             {"name": "Crystal2", "chance": 0.003, "quantity": 1},
             {"name": "Bug5", "chance": 9e-05, "quantity": 1},
             {"name": "Bug6", "chance": 9e-05, "quantity": 1}
+        ]
+    },
+    "SuperDropTable4": {
+        "sources": [
+            {"name": "Crystal3", "chance": 0.0036, "quantity": 1},
+            {"name": "mushP", "chance": 1.5e-05, "quantity": 1},
+            {"name": "w4a2", "chance": 1.68e-05, "quantity": 1},
+            {"name": "w4a3", "chance": 1.86e-05, "quantity": 1},
+            {"name": "demonP", "chance": 2.04e-05, "quantity": 1},
+            {"name": "Boss4A", "chance": 0.006, "quantity": 2},
+            {"name": "Boss4B", "chance": 0.006, "quantity": 2},
+            {"name": "ChestA4", "chance": 0.006, "quantity": 1},
+            {"name": "Crystal3", "chance": 0.003, "quantity": 1},
+            {"name": "w4b2", "chance": 1.62e-05, "quantity": 1},
+            {"name": "w4b1", "chance": 1.5e-05, "quantity": 1},
+            {"name": "w4b3", "chance": 1.74e-05, "quantity": 1},
+            {"name": "w4b4", "chance": 1.86e-05, "quantity": 1},
+            {"name": "w4b5", "chance": 1.98e-05, "quantity": 1},
+            {"name": "Boss4A", "chance": 0.006, "quantity": 2},
+            {"name": "Boss4B", "chance": 0.006, "quantity": 2},
+            {"name": "ChestB4", "chance": 0.006, "quantity": 1},
+            {"name": "Crystal3", "chance": 0.0024, "quantity": 1},
+            {"name": "w4c1", "chance": 1.5e-05, "quantity": 1},
+            {"name": "w4c2", "chance": 1.68e-05, "quantity": 1},
+            {"name": "w4c3", "chance": 1.8e-05, "quantity": 1},
+            {"name": "w4c4", "chance": 1.92e-05, "quantity": 1},
+            {"name": "Boss4A", "chance": 0.006, "quantity": 2},
+            {"name": "Boss4B", "chance": 0.006, "quantity": 2},
+            {"name": "ChestC4", "chance": 0.006, "quantity": 1},
+            {"name": "AlienTree", "chance": 4.89e-05, "quantity": 2},
+            {"name": "Tree8", "chance": 5.34e-05, "quantity": 1},
+            {"name": "Bug7", "chance": 9e-05, "quantity": 1},
+            {"name": "Bug8", "chance": 9e-05, "quantity": 1}
         ]
     }
 }

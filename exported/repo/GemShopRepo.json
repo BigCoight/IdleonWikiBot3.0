@@ -139,7 +139,7 @@
         "desc": "Gives you a single 1 Hour Candy. Also, you're not a real adventurer in Flapjack's eyes. Sorry, just tellin' ya like it is!",
         "cost": 40,
         "no": 47,
-        "maxPurchases": 5,
+        "maxPurchases": 4,
         "qty": 1,
         "costIncrement": 0
     },
@@ -148,7 +148,7 @@
         "desc": "Gives a random Time Candy. The chances are: 34% for 1 Hr, 33% for 2 Hr, and 33% for 4 Hr.",
         "cost": 80,
         "no": 48,
-        "maxPurchases": 5,
+        "maxPurchases": 4,
         "qty": 1,
         "costIncrement": 0
     },
@@ -157,7 +157,7 @@
         "desc": "Gives a random Time Candy. The chances are: 50% for 2 Hr, 25% for 4 Hr, 18% for 12 Hr, and 7% for 24 Hr.",
         "cost": 150,
         "no": 49,
-        "maxPurchases": 5,
+        "maxPurchases": 4,
         "qty": 1,
         "costIncrement": 0
     },
@@ -166,22 +166,22 @@
         "desc": "Gives a random Time Candy. The chances are: 33% for 4 Hr, 40% for 12 Hr, 22% for 24 Hr, and 4% for 72 Hr.",
         "cost": 270,
         "no": 50,
-        "maxPurchases": 5,
+        "maxPurchases": 4,
         "qty": 1,
         "costIncrement": 0
     },
-    "Timecandy9": {
-        "itemName": "Cosmic Candy",
-        "desc": "Gives 1 Cosmic Time Candy, which can give up to 500 HOURS of AFK time! On average, it will give 24 hrs.",
-        "cost": 325,
-        "no": 54,
-        "maxPurchases": 100000,
-        "qty": 1,
+    "Blank": {
+        "itemName": "Weekend Dungeon Pass",
+        "desc": "For 3 days after purchase, EVERY dungeon run you do will be boosted, meaning you get +2 Loot Dice and flurbos and all that good stuff!",
+        "cost": 875,
+        "no": 83,
+        "maxPurchases": 1,
+        "qty": 0,
         "costIncrement": 0
     },
     "InvBag21": {
         "itemName": "Item Backpack Space",
-        "desc": "Gives +4 extra Item Slots for your backpack. Applies to all your characters, even ones you haven't made yet!",
+        "desc": "Gives +4 extra Item Slots for your backpack! Applies to all your characters, even ones you haven't made yet!",
         "cost": 200,
         "no": 55,
         "maxPurchases": 6,
@@ -190,7 +190,7 @@
     },
     "InvStorage31": {
         "itemName": "Storage Chest Space",
-        "desc": "Gives +6 extra Storage Chest Slots. Storage Chests are found in each town, and the items you put in can be access by all your players!",
+        "desc": "Gives +9 extra Storage Chest Slots! Storage Chests are found in each town, and the items you put in are shared by all your players!",
         "cost": 175,
         "no": 56,
         "maxPurchases": 12,
@@ -269,15 +269,6 @@
         "qty": 1,
         "costIncrement": 0
     },
-    "GemP3": {
-        "itemName": "Extra Card Slot",
-        "desc": "Lets you equip another card, so you can have more card bonuses! This applies to all characters.",
-        "cost": 150,
-        "no": 63,
-        "maxPurchases": 4,
-        "qty": 0,
-        "costIncrement": 40
-    },
     "CardPack1": {
         "itemName": "Newbie Card Pack",
         "desc": "Contains 3 cards from any set in the game, other than world 3 because it's not out yet. Has a 15% chance to give at least one Boss Card. Card Lv Rarities are: 50% for Lv 1, 35% for Lv 2, and 15% for Lv 3.",
@@ -290,7 +281,7 @@
     "CardPack2": {
         "itemName": "Ancient Card Pack",
         "desc": "Contains 4 cards from any set in the game, other than world 3 because it's not out yet. Has a 40% chance to give at least one Boss Card. Card Lv Rarities are: 26% for Lv 1, 30% for Lv 2, 27% for Lv 3, and 17% for Lv 4.",
-        "cost": 450,
+        "cost": 425,
         "no": 65,
         "maxPurchases": 100000,
         "qty": 1,
@@ -299,11 +290,29 @@
     "CardPack3": {
         "itemName": "Eternal Card Pack",
         "desc": "Blah",
-        "cost": 650,
+        "cost": 600,
         "no": 65,
         "maxPurchases": 100000,
         "qty": 1,
         "costIncrement": 0
+    },
+    "CardPack5": {
+        "itemName": "Galaxy Card Pack",
+        "desc": "Blah",
+        "cost": 650,
+        "no": 69,
+        "maxPurchases": 100000,
+        "qty": 1,
+        "costIncrement": 0
+    },
+    "GemP3": {
+        "itemName": "Extra Card Slot",
+        "desc": "Lets you equip another card, so you can have more card bonuses! This applies to all characters.",
+        "cost": 150,
+        "no": 63,
+        "maxPurchases": 4,
+        "qty": 0,
+        "costIncrement": 40
     },
     "GemQ9": {
         "itemName": "Card Presets",
@@ -313,6 +322,15 @@
         "maxPurchases": 5,
         "qty": 0,
         "costIncrement": 160
+    },
+    "GemQ17": {
+        "itemName": "4 Star Cardifier",
+        "desc": "Use this on a 3 star card to upgrade it to 4 stars! You can use it on any 3 star card you have, it's up to you! Each purchase allows for one card of your choice to be upgraded.",
+        "cost": 290,
+        "no": 67,
+        "maxPurchases": 100000,
+        "qty": 0,
+        "costIncrement": 0
     },
     "CardPack4": {
         "itemName": "Dungeon Card Pack",
@@ -358,24 +376,6 @@
         "maxPurchases": 11,
         "qty": 0,
         "costIncrement": 50
-    },
-    "GemP16": {
-        "itemName": "Dungeon Loot Dice",
-        "desc": "Gives you 2 dungeon loot roll dice! Yep, 2 of them! These are exactly the same as the dice you get from dungeons. IMPORTANT: You need to be Dungeon Rank 10+ for Tier 2 Keychains, and Rank 20+ for Tier 3 keychains.",
-        "cost": 225,
-        "no": 85,
-        "maxPurchases": 100000,
-        "qty": 2,
-        "costIncrement": 0
-    },
-    "Blank": {
-        "itemName": "Weekend Dungeon Pass",
-        "desc": "For 3 days after purchase, EVERY dungeon run you do will be boosted, meaning you get +2 Loot Dice and flurbos and all that good stuff!",
-        "cost": 875,
-        "no": 83,
-        "maxPurchases": 1,
-        "qty": 0,
-        "costIncrement": 0
     },
     "StonePremSTR": {
         "itemName": "Str Stone",
@@ -556,5 +556,77 @@
         "maxPurchases": 6,
         "qty": 0,
         "costIncrement": 75
+    },
+    "GemQ10": {
+        "itemName": "Royal Egg Cap",
+        "desc": "Boosts the max number of eggs in your breeding nest by +1. ALSO, as an added bonus, you get 1.10x New Pet Breeding Chance for each time you buy this!",
+        "cost": 350,
+        "no": 119,
+        "maxPurchases": 5,
+        "qty": 0,
+        "costIncrement": 50
+    },
+    "GemQ11": {
+        "itemName": "Richelin Kitchen",
+        "desc": "Upgrades 1 kitchen, in order from first to last, to a Richelin Kitchen! These have 3x Meal Cooking Speed, 2x New Recipe Speed, and 40% Cheaper Upgrade Costs!",
+        "cost": 250,
+        "no": 120,
+        "maxPurchases": 10,
+        "qty": 0,
+        "costIncrement": 40
+    },
+    "GemQ12": {
+        "itemName": "Console Chip",
+        "desc": "Gives you a random console chip. There are currently 22 Chips in the game, so you have a 1 in      22 chance of getting any particular chip.      This item restocks each week.",
+        "cost": 385,
+        "no": 121,
+        "maxPurchases": 7,
+        "qty": 0,
+        "costIncrement": 0
+    },
+    "GemQ13": {
+        "itemName": "Mainframe Jewel",
+        "desc": "Gives you a random Jewel that you don't already    own. No need to worry about duplicate jewels!    This item restocks each week, unless you own all Jewels, then it wont restock.",
+        "cost": 450,
+        "no": 122,
+        "maxPurchases": 2,
+        "qty": 0,
+        "costIncrement": 0
+    },
+    "GemQ14": {
+        "itemName": "Souped Up Tube",
+        "desc": "Each purchase soups up 2 lab Tubes. Players in souped-up tubes get 2x Lab EXP gain, and +30% Line Width. Keep in mind, players are placed in tubes in chronological order.",
+        "cost": 480,
+        "no": 123,
+        "maxPurchases": 4,
+        "qty": 0,
+        "costIncrement": 65
+    },
+    "GemQ15": {
+        "itemName": "Pet Storage",
+        "desc": "Unlocks 12 pet storage spaces, which is an entire row!",
+        "cost": 325,
+        "no": 124,
+        "maxPurchases": 12,
+        "qty": 0,
+        "costIncrement": 55
+    },
+    "GemQ16": {
+        "itemName": "Fenceyard Space",
+        "desc": "Unlocks 2 Fenceyard slots, which are great for Breedability Pets and Shiny Pets!",
+        "cost": 275,
+        "no": 125,
+        "maxPurchases": 6,
+        "qty": 0,
+        "costIncrement": 45
+    },
+    "PetEgg": {
+        "itemName": "Carton Of Eggs",
+        "desc": "Each purchase gives anywhere from 3 to 12 eggs in your item inventory! Use these eggs in your          inventory to refill your nest with eggs!              This item restocks each day.",
+        "cost": 270,
+        "no": 126,
+        "maxPurchases": 4,
+        "qty": 1,
+        "costIncrement": 0
     }
 }

@@ -51704,6 +51704,287 @@
             {"source": "w4b4", "quantity": 1, "chance": 4e-06}
         ]
     },
+    "EquipmentCape0": {
+        "item": {
+            "internalName": "EquipmentCape0",
+            "displayName": "Cape",
+            "sellPrice": 1,
+            "typeGen": "aCape",
+            "Type": "Cape",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 5,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 5,
+            "Defence": 10,
+            "miscUp1": "11% All Afk Gain",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "EquipmentCape1": {
+        "item": {
+            "internalName": "EquipmentCape1",
+            "displayName": "Lava Wings",
+            "sellPrice": 1,
+            "typeGen": "aCape",
+            "Type": "Cape",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 50,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 11,
+            "miscUp1": "100% Awesome",
+            "miscUp2": "100% Epic",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "DNAgun0": {
+        "item": {
+            "internalName": "DNAgun0",
+            "displayName": "Sappy DNA Splicer",
+            "sellPrice": 6000000,
+            "typeGen": "aDNAgun",
+            "Type": "Dna Splicer",
+            "lvReqToCraft": 15,
+            "lvReqToEquip": 40,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 5,
+            "AGI": 5,
+            "WIS": 5,
+            "LUK": 5,
+            "Defence": 10,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 3,
+            "Skill": "",
+            "Skill_Power": 50,
+            "Speed": 0
+        },
+        "sources": {
+            "sources": [
+                {
+                    "wikiName": "[[Vendors#Outer World Town|Outer World Town Vendors]]",
+                    "txtName": "Outer World Town Vendor"
+                }
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": null,
+        "vendors": [
+            {
+                "vendor": "Outer World Town",
+                "item": "DNAgun0",
+                "quantity": 10,
+                "no": 5,
+                "purchasePrice": 24000000
+            }
+        ],
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "DNAgun1": {
+        "item": {
+            "internalName": "DNAgun1",
+            "displayName": "Bolstered DNA Splicer",
+            "sellPrice": 10000,
+            "typeGen": "aDNAgun",
+            "Type": "Dna Splicer",
+            "lvReqToCraft": 15,
+            "lvReqToEquip": 90,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 10,
+            "AGI": 10,
+            "WIS": 10,
+            "LUK": 10,
+            "Defence": 15,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 3,
+            "Skill": "",
+            "Skill_Power": 70,
+            "Speed": 0
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Smithing]]", "txtName": "Smithing"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": {
+            "intID": "DNAgun1",
+            "recipe": [{"item": "DesertC2b", "quantity": 18}, {"item": "DNAgun0", "quantity": 5}],
+            "levelReqToCraft": 55,
+            "expGiven": 1000000,
+            "no": 54,
+            "tab": 4,
+            "sellPrice": 30002880,
+            "recipeFrom": [],
+            "detailedRecipe": {
+                "detRecipe": [
+                    {"indent": 0, "item": "DesertC2b", "quantity": 18},
+                    {"indent": 0, "item": "DNAgun0", "quantity": 5}
+                ],
+                "detRecipeTotals": [{"item": "DesertC2b", "quantity": 18}, {"item": "DNAgun0", "quantity": 5}]
+            }
+        },
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "DNAgun2": {
+        "item": {
+            "internalName": "DNAgun2",
+            "displayName": "Double Barreled DNA Splicer",
+            "sellPrice": 10000,
+            "typeGen": "aDNAgun",
+            "Type": "Dna Splicer",
+            "lvReqToCraft": 15,
+            "lvReqToEquip": 140,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 15,
+            "AGI": 15,
+            "WIS": 15,
+            "LUK": 15,
+            "Defence": 23,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 4,
+            "Skill": "",
+            "Skill_Power": 100,
+            "Speed": 0
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Smithing]]", "txtName": "Smithing"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": {
+            "intID": "DNAgun2",
+            "recipe": [{"item": "SnowB2a", "quantity": 30}, {"item": "DNAgun1", "quantity": 1}],
+            "levelReqToCraft": 60,
+            "expGiven": 1000000,
+            "no": 55,
+            "tab": 4,
+            "sellPrice": 30097380,
+            "recipeFrom": [],
+            "detailedRecipe": {
+                "detRecipe": [
+                    {"indent": 0, "item": "SnowB2a", "quantity": 30},
+                    {"indent": 0, "item": "DNAgun1", "quantity": 1},
+                    {"indent": 1, "item": "DesertC2b", "quantity": 18},
+                    {"indent": 1, "item": "DNAgun0", "quantity": 5}
+                ],
+                "detRecipeTotals": [
+                    {"item": "SnowB2a", "quantity": 30},
+                    {"item": "DesertC2b", "quantity": 18},
+                    {"item": "DNAgun0", "quantity": 5}
+                ]
+            }
+        },
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "DNAgun3": {
+        "item": {
+            "internalName": "DNAgun3",
+            "displayName": "Ergonomic DNA Splicer",
+            "sellPrice": 10000,
+            "typeGen": "aDNAgun",
+            "Type": "Dna Splicer",
+            "lvReqToCraft": 15,
+            "lvReqToEquip": 180,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 20,
+            "AGI": 20,
+            "WIS": 20,
+            "LUK": 20,
+            "Defence": 35,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 4,
+            "Skill": "",
+            "Skill_Power": 150,
+            "Speed": 0
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Smithing]]", "txtName": "Smithing"},
+                {"wikiName": "[[Octodar|Recipe from Octodar]]", "txtName": "Octodar"}
+            ],
+            "recipeFrom": [
+                {"wikiName": "[[Octodar]]", "txtName": "Octodar"}
+            ],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": {
+            "intID": "DNAgun3",
+            "recipe": [{"item": "GalaxyA2b", "quantity": 200}, {"item": "DNAgun2", "quantity": 1}],
+            "levelReqToCraft": 65,
+            "expGiven": 1000000,
+            "no": 56,
+            "tab": 4,
+            "sellPrice": 30127380,
+            "recipeFrom": [
+                {"wikiName": "[[Octodar]]", "txtName": "Octodar"}
+            ],
+            "detailedRecipe": {
+                "detRecipe": [
+                    {"indent": 0, "item": "GalaxyA2b", "quantity": 200},
+                    {"indent": 0, "item": "DNAgun2", "quantity": 1},
+                    {"indent": 1, "item": "SnowB2a", "quantity": 30},
+                    {"indent": 1, "item": "DNAgun1", "quantity": 1},
+                    {"indent": 2, "item": "DesertC2b", "quantity": 18},
+                    {"indent": 2, "item": "DNAgun0", "quantity": 5}
+                ],
+                "detRecipeTotals": [
+                    {"item": "GalaxyA2b", "quantity": 200},
+                    {"item": "SnowB2a", "quantity": 30},
+                    {"item": "DesertC2b", "quantity": 18},
+                    {"item": "DNAgun0", "quantity": 5}
+                ]
+            }
+        },
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
     "Refinery1": {
         "item": {
             "internalName": "Refinery1",

@@ -50,6 +50,7 @@ from repositories.misc.world3.BuildingRepo import BuildingRepo
 from repositories.misc.world3.PrayerRepo import PrayerRepo
 from repositories.misc.world3.SaltLickRepo import SaltLickRepo
 from repositories.misc.world3.ShrineRepo import ShrineRepo
+from repositories.misc.world4.MealRepo import MealRepo
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
 from repositories.npc.NpcRepo import NpcRepo
@@ -126,13 +127,13 @@ EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 
 StampDescriptionRepo.initialise(codeReader)
+# MealRepo.initialise(codeReader)
 
-ItemRepo.exportWikiMult()
+#ItemRepo.exportWikiMult()
 #EnemyRepo.upload(True)
 #ItemRepo.upload(True)
 #
-# newV = IdleonReader("140b", True)
-# oldV = IdleonReader("140", True)
-# ItemRepo.initialise(newV.codeReader)
-#ItemRepo.upload(False)
-# RecipeRepo.compareVersions(oldV, newV)
+newV = IdleonReader("150", True)
+oldV = IdleonReader("140b", True)
+
+SpecificItemRepo.compareVersions(oldV, newV)

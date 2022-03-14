@@ -1,0 +1,145 @@
+{
+    "Grounded Nanochip": {
+        "name": "Grounded Nanochip",
+        "bonus": "+{% Total Defence",
+        "description": "Boosts total defence",
+        "requirements": [
+            {"item": "Copper", "quantity": 100000},
+            {"item": "Meal0", "quantity": 100},
+            {"item": "Spice0", "quantity": 100}
+        ],
+        "bool1": false,
+        "stat": "def",
+        "baseVal": 10
+    },
+    "Grounded Motherboard": {
+        "name": "Grounded Motherboard",
+        "bonus": "+{% Move Speed if total is less than 170%",
+        "description": "Boosts total movement speed",
+        "requirements": [
+            {"item": "OakTree", "quantity": 100000},
+            {"item": "Meal1", "quantity": 100},
+            {"item": "Spice0", "quantity": 100}
+        ],
+        "bool1": false,
+        "stat": "move",
+        "baseVal": 30
+    },
+    "Grounded Software": {
+        "name": "Grounded Software",
+        "bonus": "+{% Total Accuracy",
+        "description": "Boosts total accuracy",
+        "requirements": [
+            {"item": "Fish1", "quantity": 100000},
+            {"item": "Meal3", "quantity": 100},
+            {"item": "Spice1", "quantity": 100}
+        ],
+        "bool1": false,
+        "stat": "acc",
+        "baseVal": 10
+    },
+    "Grounded Processor": {
+        "name": "Grounded Processor",
+        "bonus": "+{% Drop Rate if total is less than 5.00x",
+        "description": "Boosts total drop rate",
+        "requirements": [
+            {"item": "DesertA1", "quantity": 100000},
+            {"item": "Meal4", "quantity": 100},
+            {"item": "Spice1", "quantity": 100}
+        ],
+        "bool1": false,
+        "stat": "dr",
+        "baseVal": 60
+    },
+    "Conductive Nanochip": {
+        "name": "Conductive Nanochip",
+        "bonus": "+{% Lab EXP Gain",
+        "description": "Boosts lab exp gain",
+        "requirements": [
+            {"item": "StumpTree", "quantity": 200000},
+            {"item": "Meal9", "quantity": 100},
+            {"item": "Spice3", "quantity": 100}
+        ],
+        "bool1": false,
+        "stat": "labexp",
+        "baseVal": 30
+    },
+    "Conductive Motherboard": {
+        "name": "Conductive Motherboard",
+        "bonus": "+{% Line Width within Mainframe",
+        "description": "Boosts mainframe line width",
+        "requirements": [
+            {"item": "Gold", "quantity": 200000},
+            {"item": "Meal12", "quantity": 100},
+            {"item": "Spice4", "quantity": 100}
+        ],
+        "bool1": false,
+        "stat": "linewidth",
+        "baseVal": 12
+    },
+    "Galvanic Nanochip": {
+        "name": "Galvanic Nanochip",
+        "bonus": "+{% Monster Respawn Rate",
+        "description": "Boosts Mob respawn rate",
+        "requirements": [
+            {"item": "SnowC1", "quantity": 500000},
+            {"item": "Meal24", "quantity": 100},
+            {"item": "Spice7", "quantity": 100}
+        ],
+        "bool1": false,
+        "stat": "resp",
+        "baseVal": 10
+    },
+    "Galvanic Motherboard": {
+        "name": "Galvanic Motherboard",
+        "bonus": "+{% Total Skilling Efficiency for all skills",
+        "description": "Boosts skilling efficiency",
+        "requirements": [
+            {"item": "Fish5", "quantity": 500000},
+            {"item": "Meal27", "quantity": 100},
+            {"item": "Spice8", "quantity": 100}
+        ],
+        "bool1": false,
+        "stat": "toteff",
+        "baseVal": 20
+    },
+    "Galvanic Software": {
+        "name": "Galvanic Software",
+        "bonus": "+{% Total Damage",
+        "description": "Boosts total damage",
+        "requirements": [
+            {"item": "DementiaBar", "quantity": 500000},
+            {"item": "Meal29", "quantity": 100},
+            {"item": "Spice9", "quantity": 100}
+        ],
+        "bool1": false,
+        "stat": "dmg",
+        "baseVal": 10
+    },
+    "Galvanic Processor": {
+        "name": "Galvanic Processor",
+        "bonus": "+{ Base Efficiency for all skills",
+        "description": "Boosts base skilling efficiency",
+        "requirements": [
+            {"item": "GalaxyB2", "quantity": 500000},
+            {"item": "Meal31", "quantity": 100},
+            {"item": "Spice10", "quantity": 100}
+        ],
+        "bool1": false,
+        "stat": "eff",
+        "baseVal": 250
+    },
+    "Wood Chip": {
+        "name": "Wood Chip",
+        "bonus": "+{% Multikill per Damage Tier for all worlds",
+        "description": "Boosts multikill",
+        "requirements": [
+            {"item": "Tree8", "quantity": 500000},
+            {"item": "Meal33", "quantity": 100},
+            {"item": "Spice11", "quantity": 100}
+        ],
+        "bool1": false,
+        "stat": "mkill",
+        "baseVal": 15
+    }
+}

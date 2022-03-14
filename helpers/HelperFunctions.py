@@ -5,7 +5,7 @@ import numpy as np
 
 from definitions.common.Source import Source
 
-reAll = r'[ a-zA-Z0-_\'n()@,!$+{/}%:.~\-&\|]'
+reAll = r'[ a-zA-Z0-_\'n()@,!$+{/}%:.~\-&\|/]'
 
 
 def getFromSplitArray(v: str, replaceUnderscores: bool = True) -> List[List[str]]:
@@ -42,6 +42,8 @@ def getFromSplit(v: str) -> List[str]:
 	"""
 	section = formatStr(v, ["  ", "\n"])
 	subSections = re.findall(fr'"({reAll}*)"\.', section)
+	if not subSections:
+		return section.replace(".split( )", "").split(" ")
 	return subSections[0].split(" ")
 
 

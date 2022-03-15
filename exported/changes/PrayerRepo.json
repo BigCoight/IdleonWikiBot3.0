@@ -1,11 +1,100 @@
 {
-    "new": {},
-    "changes": {
-        "Unending Energy": {
-            "curse": [
-                "Max AFK time is now 10 hours. Use this prayer sparingly.",
-                "Max AFK time is now 10 hours. Use with caution"
-            ]
+    "new": {
+        "Fibers of Absence": {
+            "id": 4,
+            "bonus": "+{% Kills for Deathnote and opening portals",
+            "curse": "-{% Total Damage",
+            "x1": 30,
+            "x2": 15,
+            "soul": "Soul4",
+            "costMult": 100,
+            "unlockZone": "Frosty Firefight",
+            "unlockWave": 21
+        },
+        "Glitterbug": {
+            "id": 5,
+            "bonus": "+{% chance for Giant Mobs to summon 2 Crystal Mobs",
+            "curse": "Giant Mobs are {% less likely to spawn.",
+            "x1": 30,
+            "x2": 20,
+            "soul": "Soul5",
+            "costMult": 7000,
+            "unlockZone": "FILLER",
+            "unlockWave": 131
+        },
+        "Balance of Proficiency": {
+            "id": 5,
+            "bonus": "+{% Skill EXP Gain",
+            "curse": "-{% Skill Efficiency",
+            "x1": 30,
+            "x2": 20,
+            "soul": "Soul5",
+            "costMult": 1000,
+            "unlockZone": "FILLER",
+            "unlockWave": 51
+        },
+        "Vacuous Tissue": {
+            "id": 4,
+            "bonus": "+100% Dungeon Credits and Flurbos from Boosted Runs",
+            "curse": "Use 2x Dungeon Passes per run.",
+            "x1": 10,
+            "x2": 10,
+            "soul": "Soul4",
+            "costMult": 10,
+            "unlockZone": "Frosty Firefight",
+            "unlockWave": 51
+        },
+        "Circular Criticals": {
+            "id": 3,
+            "bonus": "+{% Critical Hit Chance",
+            "curse": "-{% Critical Damage",
+            "x1": 10,
+            "x2": 15,
+            "soul": "Soul3",
+            "costMult": 2000,
+            "unlockZone": "Acorn Assault",
+            "unlockWave": 71
         }
+    },
+    "changes": {
+        "Beefy For Real": {
+            "id": [1, 4],
+            "bonus": ["+{% Max HP", "+{% Total Damage"],
+            "curse": ["-{% Max MP", "-{% Total Defence and Accuracy"],
+            "x1": [30, 20],
+            "x2": [150, 10],
+            "soul": ["Soul1", "Soul4"],
+            "costMult": [100, 5000],
+            "unlockZone": ["Goblin Gorefest", "Frosty Firefight"],
+            "unlockWave": [999, 121]
+        },
+        "Zerg Rushogen": {"x2": [10, 12]},
+        "Jawbreaker": {
+            "bonus": ["+{% time candy chance every day, up to 7 days", "+{% Coins from Monsters"],
+            "curse": ["-1000% AFK Gain Rate. Also you owe me 25 cents!", "+{% Max HP for all monsters"],
+            "x1": [50, 40],
+            "x2": [1000, 200],
+            "unlockWave": [121, 101]
+        },
+        "Ruck Sack": {"x2": [20, 15], "unlockWave": [131, 111]},
+        "Skilled Dimwit": {"x2": [30, 20]},
+        "Shiny Snitch": {"x2": [20, 15]},
+        "Balance of Pain": {
+            "id": [1, 5],
+            "bonus": ["+{% Total Damage", "+{% Multikill per Damage Tier"],
+            "curse": ["-{% Total Defence", "-{% Total Defence and Accuracy"],
+            "x1": [30, 8],
+            "x2": [150, 15],
+            "soul": ["Soul1", "Soul5"],
+            "unlockZone": ["Goblin Gorefest", "FILLER"],
+            "unlockWave": [999, 21]
+        },
+        "Antifun Spirit": {
+            "curse": [
+                "Minigames cost { plays per attempt, or whatever you have.",
+                "Minigames cost { plays per attempt."
+            ]
+        },
+        "Balance of Precision": {"x2": [20, 15]}
     }
 }

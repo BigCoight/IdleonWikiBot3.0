@@ -1,5 +1,7 @@
 from typing import Set
 
+from pywikibot import Site, Page
+
 from definitions.collections.Enemy import Enemy
 from definitions.enemy.AFKType import AFKType
 from definitions.enemy.EnemyType import EnemyType
@@ -70,4 +72,12 @@ class EnemyRepo(Repository[Enemy]):
 			return True
 		if data.navigation is None:
 			return True
+		if cls._ignoreW4(name, data):
+			return True
 		return False
+
+	@classmethod
+	def _ignoreW4(cls, name: str, data: Enemy) -> bool:
+		website = Site()
+		page = Page(website, data.details.Name)
+		return not page.exists()

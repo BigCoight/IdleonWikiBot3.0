@@ -16,6 +16,7 @@ class MapDataRepo(Repository[MapData]):
 	@classmethod
 	def initDependencies(cls) -> None:
 		MapNameRepo.initialise(cls.codeReader)
+		MapPortalsRepo.initialise(cls.codeReader)
 
 	@classmethod
 	def getSections(cls) -> List[str]:

@@ -1,3 +1,5 @@
+from pywikibot import Site, Page
+
 from definitions.collections.Item import Item
 from repositories.item.AnvilRepo import AnvilRepo
 from repositories.item.DetDropsRepo import DetDropsRepo
@@ -55,7 +57,15 @@ class ItemRepo(Repository[Item]):
 			return True
 		if data.item.Type == "Dungeon Evaporate":
 			return True
+		if cls._ignoreW4(name, data):
+			return True
 		return False
+
+	@classmethod
+	def _ignoreW4(cls, name: str, data: Item) -> bool:
+		website = Site()
+		page = Page(website, data.item.displayName)
+		return not page.exists()
 
 	@classmethod
 	def getWikiName(cls, name: str) -> str:

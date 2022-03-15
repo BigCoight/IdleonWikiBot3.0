@@ -34,3 +34,6 @@ class BaseItem(IdleonModel):
 
 	def doHasCard(self):
 		return "yes" if CardRepo.contains(self.internalName) else ""
+
+	def isFiller(self) -> bool:
+		return self.displayName.lower() == 'filler'

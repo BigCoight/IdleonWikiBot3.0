@@ -18,6 +18,9 @@ class IdleonModel(BaseModel):
 	def shouldCompare(self) -> bool:
 		return True
 
+	def isFiller(self) -> bool:
+		return False
+
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = ""
 		for wiki, atr in self.intToWiki().items():

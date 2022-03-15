@@ -1,329 +1,69 @@
 {
-    "new": {
-        "iceknight": {
-            "details": {
-                "Name": "Ice Guard",
-                "AFKtype": "FIGHTING",
-                "MonsterFace": 45,
-                "MonsterOffsetX": 38,
-                "MonsterOffsetY": 90,
-                "HeightOfMonster": 76,
-                "MonsterMoving": 0,
-                "MovingFrame": 0,
-                "RespawnTime": 45,
-                "DeathFrame": 10,
-                "MonsterHPTotal": 10000,
-                "Type": "monsterType",
-                "SpecialType": "a",
-                "ExpGiven": 1900,
-                "ExpType": 0,
-                "Defence": 3400,
-                "MoveSPEED": 4,
-                "Damages": [50, 1],
-                "DefFor0": 40.66
-            },
-            "drops": {
-                "drops": [
-                    {"item": "COIN", "quantity": 69, "chance": 0.5, "questLink": "N/A"},
-                    {"item": "DungCredits1", "quantity": 1, "chance": 0.2, "questLink": "N/A"},
-                    {"item": "DungCredits2", "quantity": 1, "chance": 0.08, "questLink": "N/A"}
-                ]
-            },
-            "mapData": null
-        },
-        "iceBossZ3": {
-            "details": {
-                "Name": "Caustic Glaciaxus",
-                "AFKtype": "FIGHTING",
-                "MonsterFace": 45,
-                "MonsterOffsetX": 38,
-                "MonsterOffsetY": 90,
-                "HeightOfMonster": 141,
-                "MonsterMoving": 0,
-                "MovingFrame": 0,
-                "RespawnTime": 45,
-                "DeathFrame": 6,
-                "MonsterHPTotal": 10000,
-                "Type": "monsterType",
-                "SpecialType": "a",
-                "ExpGiven": 1900,
-                "ExpType": 0,
-                "Defence": 3400,
-                "MoveSPEED": 4,
-                "Damages": [2000, 1],
-                "DefFor0": 2424.95
-            },
-            "drops": {
-                "drops": [
-                    {"item": "COIN", "quantity": 69, "chance": 0.5, "questLink": "N/A"},
-                    {"item": "DungCredits1", "quantity": 1, "chance": 0.8, "questLink": "N/A"},
-                    {"item": "DungCredits1", "quantity": 1, "chance": 0.8, "questLink": "N/A"},
-                    {"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
-                ]
-            },
-            "mapData": null
-        },
-        "Iceball": {
-            "details": {
-                "Name": "Ice Ball",
-                "AFKtype": "FIGHTING",
-                "MonsterFace": 45,
-                "MonsterOffsetX": 38,
-                "MonsterOffsetY": 32,
-                "HeightOfMonster": 70,
-                "MonsterMoving": 0,
-                "MovingFrame": 0,
-                "RespawnTime": 45,
-                "DeathFrame": 13,
-                "MonsterHPTotal": 200000,
-                "Type": "monsterType",
-                "SpecialType": "",
-                "ExpGiven": 1500,
-                "ExpType": 0,
-                "Defence": 100,
-                "MoveSPEED": 4,
-                "Damages": [1, 1],
-                "DefFor0": 0
-            },
-            "drops": {"drops": []},
-            "mapData": null
-        },
-        "iceBossZ2": {
-            "details": {
-                "Name": "Golden Glaciaxus",
-                "AFKtype": "FIGHTING",
-                "MonsterFace": 45,
-                "MonsterOffsetX": 38,
-                "MonsterOffsetY": 90,
-                "HeightOfMonster": 141,
-                "MonsterMoving": 0,
-                "MovingFrame": 0,
-                "RespawnTime": 45,
-                "DeathFrame": 6,
-                "MonsterHPTotal": 10000,
-                "Type": "monsterType",
-                "SpecialType": "a",
-                "ExpGiven": 1900,
-                "ExpType": 0,
-                "Defence": 3400,
-                "MoveSPEED": 4,
-                "Damages": [2000, 1],
-                "DefFor0": 2424.95
-            },
-            "drops": {
-                "drops": [
-                    {"item": "COIN", "quantity": 69, "chance": 0.5, "questLink": "N/A"},
-                    {"item": "DungCredits1", "quantity": 1, "chance": 0.8, "questLink": "N/A"},
-                    {"item": "DungCredits1", "quantity": 1, "chance": 0.8, "questLink": "N/A"},
-                    {"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
-                ]
-            },
-            "mapData": null
-        },
-        "iceBossZ": {
-            "details": {
-                "Name": "Glaciaxus",
-                "AFKtype": "FIGHTING",
-                "MonsterFace": 45,
-                "MonsterOffsetX": 38,
-                "MonsterOffsetY": 90,
-                "HeightOfMonster": 141,
-                "MonsterMoving": 0,
-                "MovingFrame": 0,
-                "RespawnTime": 45,
-                "DeathFrame": 6,
-                "MonsterHPTotal": 10000,
-                "Type": "monsterType",
-                "SpecialType": "a",
-                "ExpGiven": 1900,
-                "ExpType": 0,
-                "Defence": 3400,
-                "MoveSPEED": 4,
-                "Damages": [2000, 1],
-                "DefFor0": 2424.95
-            },
-            "drops": {
-                "drops": [
-                    {"item": "COIN", "quantity": 69, "chance": 0.5, "questLink": "N/A"},
-                    {"item": "DungCredits1", "quantity": 1, "chance": 0.8, "questLink": "N/A"},
-                    {"item": "DungCredits1", "quantity": 1, "chance": 0.8, "questLink": "N/A"},
-                    {"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
-                ]
-            },
-            "mapData": null
-        }
-    },
+    "new": {},
     "changes": {
-        "Boss2B": {
-            "drops": {
-                "drops": [
-                    [
-                        {"item": "CardsZ7", "quantity": 1, "chance": 0.045, "questLink": "N/A"},
-                        {"item": "CardsZ7", "quantity": 1, "chance": 0.016, "questLink": "N/A"}
-                    ]
-                ]
-            }
+        "stache": {
+            "details": {"Defence": [900, 775]},
+            "mapData": {"portalRequirements": [
+                [10000, 3000]
+            ]}
+        },
+        "bloque": {
+            "details": {"Defence": [1150, 900]},
+            "mapData": {"portalRequirements": [
+                [12500, 4000]
+            ]}
         },
         "thermostat": {
-            "drops": {
-                "drops": [
-                    [
-                        {"item": "DropTable15", "quantity": 1, "chance": 0.0033, "questLink": "N/A"},
-                        {"item": "Quest63", "quantity": 1, "chance": 1, "questLink": "Shuvelle7"}
-                    ],
-                    [" ", {"item": "DropTable15", "quantity": 1, "chance": 0.0033, "questLink": "N/A"}]
-                ]
-            }
+            "details": {"Defence": [2250, 1500]},
+            "mapData": {"portalRequirements": [
+                [35000, 15000]
+            ]}
         },
-        "mamoth": {
-            "drops": {
-                "drops": [
-                    [
-                        {"item": "DropTable15", "quantity": 1, "chance": 0.0027, "questLink": "N/A"},
-                        {"item": "Quest63", "quantity": 1, "chance": 1, "questLink": "Shuvelle5"}
-                    ],
-                    [" ", {"item": "DropTable15", "quantity": 1, "chance": 0.0027, "questLink": "N/A"}]
-                ]
-            }
+        "speaker": {
+            "details": {"Defence": [3200, 2150]},
+            "mapData": {"portalRequirements": [
+                [90000, 35000]
+            ]}
+        },
+        "sheep": {"mapData": {"portalRequirements": [
+            [2000, 1000]
+        ]}},
+        "penguin": {
+            "details": {"Defence": [2000, 1350]},
+            "mapData": {"portalRequirements": [
+                [30000, 11000]
+            ]}
         },
         "snowball": {
-            "drops": {
-                "drops": [
-                    [
-                        {"item": "DropTable15", "quantity": 1, "chance": 0.0029, "questLink": "N/A"},
-                        {"item": "Quest63", "quantity": 1, "chance": 1, "questLink": "Shuvelle6"}
-                    ],
-                    [" ", {"item": "DropTable15", "quantity": 1, "chance": 0.0029, "questLink": "N/A"}]
-                ]
-            }
+            "details": {"Defence": [1700, 1200]},
+            "mapData": {"portalRequirements": [
+                [22000, 8000]
+            ]}
         },
-        "Boss3B": {
-            "drops": {
-                "drops": [
-                    [
-                        {"item": "CardsZ7", "quantity": 1, "chance": 0.045, "questLink": "N/A"},
-                        {"item": "ObolChizoarA", "quantity": 1, "chance": 0.002, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "MidnightCookie", "quantity": 1, "chance": 0.07, "questLink": "N/A"},
-                        {"item": "EquipmentPendant24", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "ObolEfauntA", "quantity": 1, "chance": 0.001, "questLink": "N/A"},
-                        {"item": "Chiz0", "quantity": 3, "chance": 0.4, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "EquipmentHats2", "quantity": 1, "chance": 0.000667, "questLink": "N/A"},
-                        {"item": "Chiz1", "quantity": 1, "chance": 0.2, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "EfauntDrop1", "quantity": 3, "chance": 0.4, "questLink": "N/A"},
-                        {"item": "DropTable15", "quantity": 2, "chance": 1, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "EfauntDrop2", "quantity": 1, "chance": 0.2, "questLink": "N/A"},
-                        {"item": "DropTable16", "quantity": 2, "chance": 1, "questLink": "N/A"}
-                    ]
-                ]
-            }
+        "glass": {
+            "details": {"Defence": [2600, 1700]},
+            "mapData": {"portalRequirements": [
+                [45000, 18000]
+            ]}
         },
-        "ram": {
-            "drops": {
-                "drops": [
-                    [
-                        {"item": "DropTable16", "quantity": 1, "chance": 0.0034, "questLink": "N/A"},
-                        {"item": "EquipmentRings23", "quantity": 1, "chance": 1e-06, "questLink": "N/A"}
-                    ],
-                    [" ", {"item": "DropTable16", "quantity": 1, "chance": 0.0034, "questLink": "N/A"}]
-                ]
-            }
+        "mamoth": {
+            "details": {"Defence": [1400, 1050]},
+            "mapData": {"portalRequirements": [
+                [17500, 6000]
+            ]}
         },
-        "penguin": {
-            "drops": {
-                "drops": [
-                    [
-                        {"item": "DropTable15", "quantity": 1, "chance": 0.0031, "questLink": "N/A"},
-                        {"item": "Quest62", "quantity": 1, "chance": 0.02, "questLink": "Yondergreen4"}
-                    ],
-                    [" ", {"item": "DropTable15", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}]
-                ]
-            }
+        "flake": {
+            "details": {"Defence": [700, 650]},
+            "mapData": {"portalRequirements": [
+                [7500, 2000]
+            ]}
         },
-        "Boss3A": {
-            "drops": {
-                "drops": [
-                    [
-                        {"item": "CardsZ3", "quantity": 1, "chance": 0.035, "questLink": "N/A"},
-                        {"item": "ObolChizoarA", "quantity": 1, "chance": 0.0008, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "MidnightCookie", "quantity": 1, "chance": 0.07, "questLink": "N/A"},
-                        {"item": "EquipmentPendant24", "quantity": 1, "chance": 0.001, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "ObolEfauntA", "quantity": 1, "chance": 0.001, "questLink": "N/A"},
-                        {"item": "Chiz0", "quantity": 1, "chance": 0.3, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "EquipmentHats2", "quantity": 1, "chance": 0.000667, "questLink": "N/A"},
-                        {"item": "DropTable14", "quantity": 2, "chance": 1, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "EfauntDrop1", "quantity": 1, "chance": 0.3, "questLink": "N/A"},
-                        {"item": "DropTable15", "quantity": 2, "chance": 1, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "DropTable6", "quantity": 2, "chance": 1, "questLink": "N/A"},
-                        {"item": "DropTable16", "quantity": 2, "chance": 1, "questLink": "N/A"}
-                    ]
-                ]
-            }
+        "snakeB": {
+            "details": {"Defence": [2900, 1900]},
+            "mapData": {"portalRequirements": [
+                [65000, 22000]
+            ]}
         },
-        "eye": {"details": {"RespawnTime": [45, 43]}},
-        "Boss3C": {
-            "drops": {
-                "drops": [
-                    [
-                        {"item": "CardsZ3", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
-                        {"item": "ObolChizoarA", "quantity": 1, "chance": 0.003, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "MidnightCookie", "quantity": 1, "chance": 0.07, "questLink": "N/A"},
-                        {
-                            "item": "EquipmentPendant24",
-                            "quantity": 1,
-                            "chance": 0.000667,
-                            "questLink": "N/A"
-                        }
-                    ],
-                    [
-                        {"item": "ObolEfauntA", "quantity": 1, "chance": 0.001, "questLink": "N/A"},
-                        {"item": "StoneZ1", "quantity": 1, "chance": 0.03, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "EquipmentHats2", "quantity": 1, "chance": 0.000667, "questLink": "N/A"},
-                        {"item": "DropTable6", "quantity": 2, "chance": 1, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "StoneZ1", "quantity": 1, "chance": 0.03, "questLink": "N/A"},
-                        {"item": "DropTable7", "quantity": 2, "chance": 1, "questLink": "N/A"}
-                    ],
-                    [
-                        {"item": "DropTable6", "quantity": 2, "chance": 1, "questLink": "N/A"},
-                        {"item": "DropTable8", "quantity": 2, "chance": 1, "questLink": "N/A"}
-                    ]
-                ]
-            }
-        },
-        "Boss2A": {
-            "drops": {
-                "drops": [
-                    [
-                        {"item": "CardsZ3", "quantity": 1, "chance": 0.035, "questLink": "N/A"},
-                        {"item": "CardsZ3", "quantity": 1, "chance": 0.025, "questLink": "N/A"}
-                    ]
-                ]
-            }
-        }
+        "eye": {"details": {"Defence": [3400, 2400]}}
     }
 }

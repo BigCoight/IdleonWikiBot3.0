@@ -134,6 +134,9 @@ class Repository(Generic[T], ABC):
 		for sameItem in sameItems:
 			if cls._ignore(sameItem, repo2[sameItem]):
 				continue
+			if repo1[sameItem].isFiller():
+				newItems.add(sameItem)
+				continue
 			if modelChanges := repo1[sameItem].compare(repo2[sameItem], ignored):
 				changes[sameItem] = modelChanges
 

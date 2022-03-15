@@ -129,11 +129,7 @@ ItemRepo.initialise(codeReader)
 StampDescriptionRepo.initialise(codeReader)
 # MealRepo.initialise(codeReader)
 
-#ItemRepo.exportWikiMult()
-#EnemyRepo.upload(True)
+ItemRepo.exportWikiMult()
+EnemyRepo.upload(True)
 #ItemRepo.upload(True)
 #
-newV = IdleonReader("150", True)
-oldV = IdleonReader("140b", True)
-
-SpecificItemRepo.compareVersions(oldV, newV)

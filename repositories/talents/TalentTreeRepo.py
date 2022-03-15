@@ -71,6 +71,9 @@ class TalentTreeRepo(Repository[TalentTree]):
 		def patchnote(v: str, o, n) -> str:
 			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
 
+		def italic(v: str) -> str:
+			return "{{patchnote/italic|" + v + "}}\n"
+
 		res = head(cls.getWikiName(item))
 		for v, d in change.items():
 			if isinstance(d, tuple):
@@ -84,7 +87,14 @@ class TalentTreeRepo(Repository[TalentTree]):
 			elif isinstance(d, dict):
 				for quest, subC in d.items():
 					res += bold(camelCaseToTitle(quest))
+					print(subC)
 					for atr, val in subC.items():
+						if isinstance(val, dict):
+							res += italic(atr)
+							for innerAtr, innerVal in val.items():
+								o, n = innerVal
+								res += patchnote(innerAtr, o, n)
+							continue
 						o, n = val
 						res += patchnote(atr, o, n)
 

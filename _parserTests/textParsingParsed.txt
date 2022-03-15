@@ -1,0 +1,72 @@
+(cb_WorshipStuff = function (t, s) {
+    if ("NextWaveCountdown" == t) return 0 == s % 10 && 0 != s ? 9999 : 19 < Math.floor(s / 10) ? 25 + 5 * Math.floor((s - 10) / 10) : 9 < s ? 25 : 4 < s ? 20 : 0.5 < s ? 15 : 6;
+    if ("waveAdjustment" == t) {
+        return (
+            Math.round(s - Math.floor(Math.max(s - ((CustomLists).get("WorshipInfo"))[cb_WorshipStuff("TrialType", CurrentMap)].length) - parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[62])), 0)) / parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[62])))) * parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[62])))
+        );
+    }
+    if ("waveAdjustmentTIER" == t)
+        return (
+            Math.floor(Math.max(s - ((CustomLists).get("WorshipInfo"))[cb_WorshipStuff("TrialType", CurrentMap)].length) - parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[62]))), 0)) / parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[62])))
+        );
+    if ("NewTowerCost" == t)
+        return Math.floor(cb_TowerStats("BaseTowerCost", s, 1) * Math.ceil((PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[56].length + 1) / 3) + 2 * Math.pow(1.3 + 0.03 * PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[56].length,
+                        PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[56].length
+                    )
+        );
+    if ("isTowerUnlocked?" == t) return 1 <= (TowerInfo[(9 + s)]) ? 1 : 0;
+    if ("TrialType" == t)
+        return 100 == CurrentMap && -1 != PixelHelperActor[8].getValue("ActorEvents_481", "_GenINFO")[57]
+            ? PixelHelperActor[8].getValue("ActorEvents_481", "_GenINFO")[57]
+            : (
+                (CustomMaps).get("WorshipMapType")).existsReserved(a))
+                    ? ((t = CustomMaps), (t = t.get("WorshipMapType")), t.get(s)[s])
+                    : 0);
+    if ("ExpRewards" == t)
+        return Math.floor(15 * Math.pow(cb_WorshipStuff("TrialType", CurrentMap) + 1, 2) * cb_skillstats2("WorshipEXPmulti") * Math.pow(cb_WorshipStuff("WaveMultiplier", 0), 0.9)
+        );
+    if ("SoulRewards" == t)
+        return Math.floor(5 * (1 + cb_WorshipStuff("EfficiencyBonusQTY", 0) / 100) * cb_WorshipStuff("WaveMultiplier", 0) * (1 + cb_TotalFoodBonuses("WorshipSoulBoosts") / 100));
+    if ("WaveMultiplier" == t)
+        return 0 == TotemInfo[0][cb_WorshipStuff("TrialType", CurrentMap)]
+            ? 0
+            : ((s = TotemInfo[0][cb_WorshipStuff("TrialType", CurrentMap)]), Math.pow((5 + parsenum(s)) / 10, 2.6));
+    if ("EfficiencyBonusQTY" == t)
+        return (
+            cb_skillstats2("WorshipEfficiency")) >= ((CustomLists).get("WorshipBASEinfos"))[cb_WorshipStuff("TrialType", CurrentMap)][7])
+                ? (
+                    Math.floor(100 * Math.pow(cb_skillstats2("WorshipEfficiency")) / (10 * parsenum((CustomLists).get("WorshipBASEinfos"))[cb_WorshipStuff("TrialType", CurrentMap)][7]))), 0.25)))
+                : 0
+        );
+    if ("SkullPts" == t) return 4 == s ? 8 : 3 == s ? 5 : 2 == s ? 3 : 1 == s ? 2 : 1;
+    if ("SkullCurrency" == t)
+        return 6 <= s
+            ? (
+                Math.floor((250 * Math.pow(Math.round(s - 6), 1.5)) + Math.floor(parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8])) / 1)) * (1 + cb_SaltLick(6) / 100)))
+            : 5 == s
+            ? ((s = PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.floor((150 + Math.floor(parsenum(s) / 1)) * (1 + cb_SaltLick(6) / 100)))
+            : 4 == s
+            ? ((s = PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.floor((70 + Math.floor(parsenum(s) / 1)) * (1 + cb_SaltLick(6) / 100)))
+            : 3 == s
+            ? ((s = PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.floor((25 + Math.floor(parsenum(s) / 2)) * (1 + cb_SaltLick(6) / 100)))
+            : 2 == s
+            ? ((s = PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.round((10 + Math.floor(parsenum(s) / 3)) * (1 + cb_SaltLick(6) / 100)))
+            : 1 == s
+            ? ((s = PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.round((5 + Math.floor(parsenum(s) / 4)) * (1 + cb_SaltLick(6) / 100)))
+            : (
+    if ("SkullTypeHP" == t) return 500 < s ? 4 : 100 < s ? 3 : 20 < s ? 2 : 4 < PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.round((2 + Math.floor(parsenum(s) / 5)) * (1 + cb_SaltLick(6) / 100))) ? 1 : 0;
+    if ("TowerCritDmg" == t) return 1.5;
+    if ("PrayerCost" == t) {
+        if (6 > (PrayersUnlocked[s]))
+            return (
+                Math.round((CustomLists).get("PrayerInfo"))[s][6]) * (1 + (4 + s / 25) * parsenum(PrayersUnlocked[s]))))
+            );
+        if (9 == s) {
+            return Math.round(Math.min(2000000000, (CustomLists).get("PrayerInfo"))[s][6]) * (1 + (2 + s / 20) * PrayersUnlocked[s])) * Math.pow(1.3, parsenum(PrayersUnlocked[s]) - 5)));
+        }
+        return (
+            Math.round(Math.min(2000000000, (CustomLists).get("PrayerInfo"))[s][6]) * (1 + (1 + s / 20) * PrayersUnlocked[s])) * Math.pow(1.12, parsenum(PrayersUnlocked[s])) - 5)))
+        );
+    }
+    return 69420;
+}),

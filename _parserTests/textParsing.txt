@@ -1,0 +1,109 @@
+(w._customBlock_WorshipStuff = function (t, s) {
+    if ("NextWaveCountdown" == t) return 0 == s % 10 && 0 != s ? 9999 : 19 < Math.floor(s / 10) ? 25 + 5 * Math.floor((s - 10) / 10) : 9 < s ? 25 : 4 < s ? 20 : 0.5 < s ? 15 : 6;
+    if ("waveAdjustment" == t) {
+        (t = b.engine.getGameAttribute("CustomLists")),
+            (t = (null != d.WorshipInfo ? t.getReserved("WorshipInfo") : t.h.WorshipInfo)[0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))].length);
+        var a = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[62];
+        return (
+            (t = Math.max(s - (t - parsenum(a)), 0)),
+            (a = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[62]),
+            (t = Math.floor(t / parsenum(a))),
+            (a = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[62]),
+            Math.round(s - t * parsenum(a))
+        );
+    }
+    if ("waveAdjustmentTIER" == t)
+        return (
+            (t = b.engine.getGameAttribute("CustomLists")),
+            (t = (null != d.WorshipInfo ? t.getReserved("WorshipInfo") : t.h.WorshipInfo)[0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))].length),
+            (a = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[62]),
+            (s = Math.max(s - (t - parsenum(a)), 0)),
+            (t = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[62]),
+            Math.floor(s / parsenum(t))
+        );
+    if ("NewTowerCost" == t)
+        return Math.floor(
+            w._customBlock_TowerStats("BaseTowerCost", s, 1) * Math.ceil((b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[56].length + 1) / 3) +
+                2 *
+                    Math.pow(
+                        1.3 + 0.03 * b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[56].length,
+                        b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[56].length
+                    )
+        );
+    if ("isTowerUnlocked?" == t) return 1 <= (parsenum(s) = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 1 : 0;
+    if ("TrialType" == t)
+        return 100 == b.engine.getGameAttribute("CurrentMap") && -1 != b.engine.getGameAttribute("PixelHelperActor")[8].getValue("ActorEvents_481", "_GenINFO")[57]
+            ? b.engine.getGameAttribute("PixelHelperActor")[8].getValue("ActorEvents_481", "_GenINFO")[57]
+            : ((t = b.engine.getGameAttribute("CustomMaps")),
+                (t = null != d.WorshipMapType ? t.getReserved("WorshipMapType") : t.h.WorshipMapType),
+                (null != d[(a = "" + s)] ? t.existsReserved(a) : t.h.hasOwnProperty(a))
+                    ? ((t = b.engine.getGameAttribute("CustomMaps")), (t = null != d.WorshipMapType ? t.getReserved("WorshipMapType") : t.h.WorshipMapType), null != d[(s = "" + s)] ? t.getReserved(s) : t.h[s])
+                    : 0);
+    if ("ExpRewards" == t)
+        return Math.floor(
+            15 *
+                Math.pow(w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap")) + 1, 2) *
+                F._customBlock_skillstats2("WorshipEXPmulti") *
+                Math.pow(w._customBlock_WorshipStuff("WaveMultiplier", 0), 0.9)
+        );
+    if ("SoulRewards" == t)
+        return Math.floor(5 * (1 + w._customBlock_WorshipStuff("EfficiencyBonusQTY", 0) / 100) * w._customBlock_WorshipStuff("WaveMultiplier", 0) * (1 + C._customBlock_TotalFoodBonuses("WorshipSoulBoosts") / 100));
+    if ("WaveMultiplier" == t)
+        return 0 == b.engine.getGameAttribute("TotemInfo")[0][0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))]
+            ? 0
+            : ((s = b.engine.getGameAttribute("TotemInfo")[0][0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))]), Math.pow((5 + parsenum(s)) / 10, 2.6));
+    if ("EfficiencyBonusQTY" == t)
+        return (
+            (s = F._customBlock_skillstats2("WorshipEfficiency")),
+            (t = b.engine.getGameAttribute("CustomLists")),
+            s >= (parsenum(t) = (null != d.WorshipBASEinfos ? t.getReserved("WorshipBASEinfos") : t.h.WorshipBASEinfos)[0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))][7])
+                ? ((s = F._customBlock_skillstats2("WorshipEfficiency")),
+                    (t = b.engine.getGameAttribute("CustomLists")),
+                    (t = (null != d.WorshipBASEinfos ? t.getReserved("WorshipBASEinfos") : t.h.WorshipBASEinfos)[0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))][7]),
+                    Math.floor(100 * Math.pow(s / (10 * parsenum(t)), 0.25)))
+                : 0
+        );
+    if ("SkullPts" == t) return 4 == s ? 8 : 3 == s ? 5 : 2 == s ? 3 : 1 == s ? 2 : 1;
+    if ("SkullCurrency" == t)
+        return 6 <= s
+            ? ((s = 250 * Math.pow(Math.round(s - 6), 1.5)),
+                (t = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]),
+                Math.floor((s + Math.floor(parsenum(t) / 1)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : 5 == s
+            ? ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.floor((150 + Math.floor(parsenum(s) / 1)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : 4 == s
+            ? ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.floor((70 + Math.floor(parsenum(s) / 1)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : 3 == s
+            ? ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.floor((25 + Math.floor(parsenum(s) / 2)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : 2 == s
+            ? ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.round((10 + Math.floor(parsenum(s) / 3)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : 1 == s
+            ? ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.round((5 + Math.floor(parsenum(s) / 4)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.round((2 + Math.floor(parsenum(s) / 5)) * (1 + w._customBlock_SaltLick(6) / 100)));
+    if ("SkullTypeHP" == t) return 500 < s ? 4 : 100 < s ? 3 : 20 < s ? 2 : 4 < s ? 1 : 0;
+    if ("TowerCritDmg" == t) return 1.5;
+    if ("PrayerCost" == t) {
+        if (6 > (parsenum(t) = b.engine.getGameAttribute("PrayersUnlocked")[0 | s]))
+            return (
+                (t = b.engine.getGameAttribute("CustomLists")),
+                (t = parsenum(t) = (null != d.PrayerInfo ? t.getReserved("PrayerInfo") : t.h.PrayerInfo)[0 | s][6]),
+                (a = b.engine.getGameAttribute("PrayersUnlocked")[0 | s]),
+                Math.round(t * (1 + (4 + s / 25) * parsenum(a)))
+            );
+        if (9 == s) {
+            (t = b.engine.getGameAttribute("CustomLists")),
+                (t = parsenum(t) = (null != d.PrayerInfo ? t.getReserved("PrayerInfo") : t.h.PrayerInfo)[0 | s][6]),
+                (a = parsenum(a) = b.engine.getGameAttribute("PrayersUnlocked")[0 | s]);
+            var A = b.engine.getGameAttribute("PrayersUnlocked")[0 | s];
+            return Math.round(Math.min(2000000000, t * (1 + (2 + s / 20) * a) * Math.pow(1.3, parsenum(A) - 5)));
+        }
+        return (
+            (t = b.engine.getGameAttribute("CustomLists")),
+            (t = parsenum(t) = (null != d.PrayerInfo ? t.getReserved("PrayerInfo") : t.h.PrayerInfo)[0 | s][6]),
+            (a = parsenum(a) = b.engine.getGameAttribute("PrayersUnlocked")[0 | s]),
+            (A = b.engine.getGameAttribute("PrayersUnlocked")[0 | s]),
+            Math.round(Math.min(2000000000, t * (1 + (1 + s / 20) * a) * Math.pow(1.12, parsenum(A) - 5)))
+        );
+    }
+    return 69420;
+}),

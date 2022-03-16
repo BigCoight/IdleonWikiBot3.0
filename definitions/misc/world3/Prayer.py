@@ -3,6 +3,7 @@ from helpers.CustomTypes import Numeric, Integer
 
 
 class Prayer(IdleonModel):
+	name: str
 	id: Integer
 	bonus: str
 	curse: str
@@ -12,3 +13,4 @@ class Prayer(IdleonModel):
 	costMult: Integer
 	unlockZone: str
 	unlockWave: Integer
+	maxLevel: Integer

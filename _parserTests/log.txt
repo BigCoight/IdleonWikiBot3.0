@@ -1,0 +1,128 @@
+---
+parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1)
+parsenum(DNSM.get("CookinPossibleRecpsDN2") + 1)
+0.9791666666666666
+---
+parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1)
+parsenum(DNSM.get("CookinPossibleRecpsDN2") + 1)
+0.9791666666666666
+---
+(H++ - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2)))
+(K - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2)))
+0.9726027397260274
+---
+(K - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2)))
+(H++ - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2)))
+0.9726027397260274
+---
+DNSM.get("CookinPossibleRecpsDN1" + (H++ - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2))))
+DNSM.get("CookinPossibleRecpsDN1" + (K - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2))))
+0.9818181818181818
+---
+CustomLists.get("MealINFO")
+(CustomLists.get("MealINFO"))
+0.9642857142857143
+---
+DNSM.get("CookinPossibleRecpsDN1" + (K - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2))))
+DNSM.get("CookinPossibleRecpsDN1" + (H++ - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2))))
+0.9818181818181818
+---
+parsenum(DNSM.get("CookinPossibleRecpsDN1" + (H++ - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2)))))
+parsenum(DNSM.get("CookinPossibleRecpsDN1" + (K - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2)))))
+0.9833333333333333
+---
+DNSM.set("CookinPossibleRecps", [])
+DNSM.set("CookinPossibleRecps2", [])
+0.9859154929577465
+---
+parsenum(Meals[0][parsenum(PixelHelperActor[21].getValue("ActorEvents_510", "_GenINFO")[69][n])])
+(0 >= parsenum(Meals[0][parsenum(PixelHelperActor[21].getValue("ActorEvents_510", "_GenINFO")[69][n])]))
+0.9651741293532339
+---
+(CustomLists.get("MealINFO"))
+CustomLists.get("MealINFO")
+0.9642857142857143
+---
+parsenum(DNSM.get("CookinPossibleRecpsDN1" + (K - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2)))))
+parsenum(DNSM.get("CookinPossibleRecpsDN1" + (H++ - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2)))))
+0.9833333333333333
+---
+Math.max(0, parsenum(DNSM.get("CookinPossibleRecpsDN1" + (H++ - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2))))))
+Math.max(0, parsenum(DNSM.get("CookinPossibleRecpsDN1" + (K - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2))))))
+0.9849624060150376
+---
+(DNSM.set("CookinPossibleRecps", []), -1 != n)
+((DNSM.set("CookinPossibleRecps", []), -1 != n))
+0.9787234042553191
+---
+(0 >= parsenum(Meals[0][parsenum(PixelHelperActor[21].getValue("ActorEvents_510", "_GenINFO")[69][n])]))
+parsenum(Meals[0][parsenum(PixelHelperActor[21].getValue("ActorEvents_510", "_GenINFO")[69][n])])
+0.9651741293532339
+---
+parsenum(DNSM.get("CookinPossibleRecpsDN2") + 1)
+parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1)
+0.9791666666666666
+---
+parsenum(DNSM.get("CookinPossibleRecpsDN2") + 1)
+parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1)
+0.9791666666666666
+---
+parsenum(DNSM.get("CookinPossibleRecpsDN2") + 1)
+parsenum(DNSM.get("CookinPossibleRecpsDN3") + 1)
+0.9791666666666666
+---
+DNSM.set("CookinPossibleRecpsDN2", 0)
+DNSM.set("CookinPossibleRecpsDN3", 0)
+0.972972972972973
+---
+DNSM.set("CookinPossibleRecpsDN2", 0)
+DNSM.set("CookinPossibleRecpsDN1", 0)
+0.972972972972973
+---
+(1 + parsenum(Cooking[n][7]) / 10)
+(1 + parsenum(Cooking[n][6]) / 10)
+0.9705882352941176
+---
+(1 + parsenum(Cooking[n][6]) / 10)
+(1 + parsenum(Cooking[n][7]) / 10)
+0.9705882352941176
+---
+DNSM.set("CookinPossibleRecps2", [])
+DNSM.set("CookinPossibleRecps", [])
+0.9859154929577465
+---
+Math.max(0, parsenum(DNSM.get("CookinPossibleRecpsDN1" + (K - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2))))))
+Math.max(0, parsenum(DNSM.get("CookinPossibleRecpsDN1" + (H++ - Math.floor((parsenum(DNSM.get("CookinPossibleRecpsDN2") - 1) / 2))))))
+0.9849624060150376
+---
+parsenum(DNSM.get("CookinPossibleRecpsDN3") + 1)
+parsenum(DNSM.get("CookinPossibleRecpsDN2") + 1)
+0.9791666666666666
+---
+DNSM.set("CookinPossibleRecpsDN3", 0)
+DNSM.set("CookinPossibleRecpsDN2", 0)
+0.972972972972973
+---
+DNSM.set("CookinPossibleRecpsDN3", 0)
+DNSM.set("CookinPossibleRecpsDN1", 0)
+0.972972972972973
+---
+DNSM.set("CookinPossibleRecpsDN1", 0)
+DNSM.set("CookinPossibleRecpsDN2", 0)
+0.972972972972973
+---
+DNSM.set("CookinPossibleRecpsDN1", 0)
+DNSM.set("CookinPossibleRecpsDN3", 0)
+0.972972972972973
+---
+((DNSM.set("CookinPossibleRecps", []), -1 != n))
+(DNSM.set("CookinPossibleRecps", []), -1 != n)
+0.9787234042553191
+---
+("PossibleRecipes2" == t)
+("PossibleRecipes" == t)
+0.9795918367346939
+---
+("PossibleRecipes" == t)
+("PossibleRecipes2" == t)
+0.9795918367346939

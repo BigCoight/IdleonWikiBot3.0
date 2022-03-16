@@ -1,7 +1,9 @@
 import os
 import threading
+from io import BytesIO
 from multiprocessing.dummy import Pool
-from tokenize import generate_tokens
+from tokenize import generate_tokens, tokenize, untokenize, TokenInfo
+from string import ascii_letters
 
 import regex as re
 from re import Match
@@ -10,8 +12,9 @@ from pathlib import Path
 
 
 class ReParser:
-	reVarUsedInNextLine = re.compile(r'\s*\(?(?:var )?(?<!\w)([^()\s]+) = (.*)?(?<!\+\+)[;, ]\n(.*)(?<=[^a-zA-Z])(\1)(?=[^a-zA-Z])(.*)')
-	reVarUsedInSameLine = re.compile(r'(?<!for \(var )\(?(?<= )([^()\s]+) = (.*?)?[;, ](.*)(?<![\w])(\1)(?=[^a-zA-Z])(.*)')
+	reVarUsedInNextLine = re.compile(r'\s*\(?(?:var )?(?<!\w)([^()\s]+) = (.*?)?\)?[;, ]\n(.*)(?<=[^a-zA-Z])(\1)(?=[^a-zA-Z])(.*)')
+	reVarUsedInSameLine = re.compile(r'(?<!for \(var )\(?(?<= |\()([^()\s]+) = (.*?)[;, ]?(.*)(?<![\w])(\1)(?=[^a-zA-Z])(.*)')
+	reVarUSedInBrackets = re.compile(r'\(\((?<= |\()([^()\s]+) = (.*)\),(.*?)(?<![\w])(\1)(?=[^a-zA-Z])(.*)\)')
 
 	reRemoveVar = re.compile(r'var ')
 	reOneLineEqn = re.compile(r'([+\-\*\/])\n\s*')
@@ -51,7 +54,6 @@ class Parser:
 			self.text = inFile.read()
 
 	def tryDetectRepeatedCode(self):
-
 		brackets = ReParser.reDetectRepeated.findall(self.text)
 		toCheckAgain = [x[1][1:-1] for x in brackets if x[1][0] == "("]
 		codeBlocks = ["".join(x) for x in brackets]
@@ -72,10 +74,10 @@ class Parser:
 
 
 		dupeBlocks = list_duplicates(goodCodeBlocks)
-		print(dupeBlocks)
 		restBlocks = [x for x in codeBlocks if x not in dupeBlocks]
 
-		#self.tryMakeFunctions(restBlocks)
+		self.tryMakeFunctions(restBlocks)
+		return
 
 		dupeBlocks = [x for x in dupeBlocks if len(x) > 2 and x[0] not in ['.', "[","]"] or len(x) > 15]
 		varAssignment = {}
@@ -97,33 +99,83 @@ class Parser:
 		self.text = header + self.text
 
 	def tryMakeFunctions(self, restBlocks):
-		similarBlocks = set()
+		with open('log.txt', 'w') as infile:
+			pass
+		similarBlocks = {}
 		for block1 in reversed(restBlocks):
+			similarBlocks[block1] = []
 			for block2 in reversed(restBlocks):
 				if block1 == block2: continue
 				ratio = SequenceMatcher(None, block1, block2).ratio()
-				if ratio <= 0.95: continue
-				similarBlocks.add(block1)
+				if ratio <= 0.8: continue
 
-		listSimilarBlocks = list(similarBlocks)
-		a = listSimilarBlocks[0]
-		b = listSimilarBlocks[1]
+				if ratio <= 0.96: continue
+				with open('log.txt', 'a') as infile:
+					infile.write("---\n")
+					infile.write(block1 + "\n")
+					infile.write(block2 + "\n")
+					infile.write(str(ratio) + "\n")
+				similarBlocks[block1].append(block2)
 
-		print(a)
-		print(b)
-		startMix = -1
-		endMix = -1
-		for i in range(len(a)):
-			if a[i] != b[i]:
-				if startMix == -1:
-					startMix = i
-			else:
-				if startMix != -1:
-					endMix = i
-					break
+		index = 0
+		while similarBlocks:
+			index += 1
+			key, vals = similarBlocks.popitem()
+			if not vals: continue
+			for val in vals:
+				if val not in similarBlocks: continue
+				similarBlocks.pop(val)
+			a = vals[0]
+			b = key
+			tokensA = [x.string for x in tokenize(BytesIO(a.encode('utf-8')).readline)]
+			tokensB = [x.string for x in tokenize(BytesIO(b.encode('utf-8')).readline)]
+			if len(tokensA) != len(tokensB): continue
 
-		capturedVars = [x[startMix:endMix] for x in listSimilarBlocks]
-		print(capturedVars)
+			differentTokens = []
+			for n, (tokenA, tokenB) in enumerate(zip(tokensA, tokensB)):
+				if tokenA != tokenB:
+					differentTokens.append(n)
+
+			toChange = [key] + vals
+			capturedVars = {}
+
+			functionParams = []
+
+			for change in toChange:
+
+				capturedVars[change] = []
+				changeTokens = [[x.start, x.end, x.string] for x in tokenize(BytesIO(change.encode('utf-8')).readline)]
+				for n, newVars in enumerate(differentTokens):
+					tokens = changeTokens[newVars]
+					capturedVars[change].append(tokens[2])
+
+			functionChange = toChange[0]
+			functionBody = functionChange
+			changeTokens = [[x.start, x.end, x.string] for x in tokenize(BytesIO(functionChange.encode('utf-8')).readline)]
+			for n, newVars in enumerate(reversed(differentTokens)):
+				token = changeTokens[newVars]
+				start = token[0][1]
+				end = token[1][1]
+				letter = ascii_letters[len(differentTokens)-1-n]
+				functionParams.append(ascii_letters[n])
+				functionBody = functionBody[:start] + letter + functionBody[end:]
+
+
+			functionName = f"gf{index}"
+
+			functionDefinition = functionName + f"({','.join(functionParams)})" + '=>' + functionBody
+
+			newText = self.text
+			for text, variables in capturedVars.items():
+				functionParam = ', '.join(variables)
+				functionCall = functionName + f"({functionParam})"
+				newText = newText.replace(text, functionCall)
+
+			if self.text != newText:
+				self.text = functionDefinition + "\n" + newText
+
+
+
 
 	def Parse(self, outPath):
 		# Just formatting
@@ -142,18 +194,23 @@ class Parser:
 		self.text = ReParser.reOneLineEqn.sub(r"\1 ", self.text)
 		self.text = ReParser.reOneLine.sub(r"\1 ", self.text)
 		self.text = ReParser.reOneLineBr.sub(r"\1", self.text)
+		for i in range(5):
+			self.text = ReParser.reVarUSedInBrackets.sub(r"\3\2\5", self.text)
+			#self.text = ReParser.reVarUsedInSameLine.sub(r"\3\2\5", self.text)
+
 		for i in range(10):
 			self.text = ReParser.reVarUsedInNextLine.sub(r"\n\3\2\5", self.text)
-			self.text = ReParser.reVarUsedInSameLine.sub(r"\3\2\5", self.text)
+
 
 		#self.text = ReParser.reOneLineExpr.sub(r"\1 ", self.text)
 		self.text = ReParser.reAssignMath.sub(r"\1\2 \4= \5;", self.text)
 		self.text = ReParser.reParseNumBlank.sub("", self.text)
 
-		for i in range(3):
+		for i in range(5):
 			self.text = ReParser.reVarUsedInSameLine.sub(r"\3\2\5", self.text)
 
-		#self.tryDetectRepeatedCode()
+		self.tryDetectRepeatedCode()
+
 
 		with open(f"{outPath}", "w") as outfile:
 			outfile.write(self.text)
@@ -169,8 +226,8 @@ def list_duplicates(seq):
 
 
 def parse_single_file():
-	parser = Parser("./textParsing.txt")
-	parser.Parse("./textParsingParsed.txt")
+	parser = Parser("textParsing.txt")
+	parser.Parse("textParsingParsed.txt")
 
 	# import token
 	# with open("./textParsing.txt", "r") as infile:

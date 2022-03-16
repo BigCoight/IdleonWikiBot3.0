@@ -20,7 +20,8 @@ class PrayerRepo(Repository[Prayer]):
 		zones = ["Goblin Gorefest", "Wakawaka War", "Acorn Assault", "Frosty Firefight", "FILLER", "FILLER"]
 		prayers = getFromSplitArray(cls.getSection())
 		for prayer in prayers:
-			cls.add(replaceUnderscores(prayer[0]), Prayer(
+			cls.addList(Prayer(
+				name = prayer[0],
 				bonus = prayer[1],
 				curse = prayer[2],
 				x1 = prayer[3],
@@ -30,4 +31,18 @@ class PrayerRepo(Repository[Prayer]):
 				costMult = prayer[6],
 				unlockZone = zones[int(prayer[8])],
 				unlockWave = prayer[7],
+				maxLevel = prayer[9],
+			))
+			cls.add(replaceUnderscores(prayer[0]), Prayer(
+				name = prayer[0],
+				bonus = prayer[1],
+				curse = prayer[2],
+				x1 = prayer[3],
+				x2 = prayer[4],
+				soul = f"Soul{int(prayer[8]) + 1}",
+				id = prayer[5],
+				costMult = prayer[6],
+				unlockZone = zones[int(prayer[8])],
+				unlockWave = prayer[7],
+				maxLevel = prayer[9],
 			))

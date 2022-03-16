@@ -50,10 +50,14 @@ class ConstellationsRepo(Repository[Constellation]):
 			elif int(const[0]) < 100:
 				prefix = "B"
 				number = 1 + n - 12
-			# else world 3
-			else:
+			# If map id > 100 but < 150, world 3
+			elif int(const[0]) < 150:
 				prefix = "C"
 				number = 1 + n - 23
+			# else world 4
+			else:
+				prefix = "D"
+				number = 1 + n - 34
 			mapName = MapNameRepo.get(int(const[0])).name
 			constName = f"{prefix}-{number}"
 			finalData = [constName, mapName, *const[1:]]

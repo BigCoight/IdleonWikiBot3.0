@@ -20,6 +20,8 @@ class PrayerRepo(Repository[Prayer]):
 		zones = ["Goblin Gorefest", "Wakawaka War", "Acorn Assault", "Frosty Firefight", "Clash of Cans", "FILLER"]
 		prayers = getFromSplitArray(cls.getSection())
 		for prayer in prayers:
+			# Max level was added in 1.50, so to cater for older version we need to check.
+			maxLevel = prayer[9] if len(prayer) == 10 else -1
 			cls.addList(Prayer(
 				name = prayer[0],
 				bonus = prayer[1],
@@ -31,7 +33,7 @@ class PrayerRepo(Repository[Prayer]):
 				costMult = prayer[6],
 				unlockZone = zones[int(prayer[8])],
 				unlockWave = prayer[7],
-				maxLevel = prayer[9],
+				maxLevel = maxLevel,
 			))
 			cls.add(replaceUnderscores(prayer[0]), Prayer(
 				name = prayer[0],
@@ -44,5 +46,5 @@ class PrayerRepo(Repository[Prayer]):
 				costMult = prayer[6],
 				unlockZone = zones[int(prayer[8])],
 				unlockWave = prayer[7],
-				maxLevel = prayer[9],
+				maxLevel = maxLevel,
 			))

@@ -1,5 +1,101 @@
 {
     "new": {
+        "Capital P": {
+            "quests": {
+                "Right side wrong side!": {
+                    "Type": "Custom",
+                    "DialogueText": "The first game is 'Right Side Wrong Side'. You get 1 Party Point for every monster on the left side of the platform and -5 Point for every monster on the right. This happens every second! <br> QUEST:Win the 1st party game!",
+                    "NextIndex": 4,
+                    "Name": "Right side wrong side!",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "NoSpaceIndex": 3,
+                    "Rewards": [{"item": "StampB42", "quantity": 1}, {"item": "Ladle", "quantity": 1}],
+                    "Difficulty": 3,
+                    "CustomArray": [{"desc": "Party Points:", "finalV": 200, "type": "GreaterEqual", "startV": 0}]
+                },
+                "No room on the Dance Floor!": {
+                    "Type": "Custom",
+                    "DialogueText": "The 2nd game is 'No Room on the Dancefloor'. If all monsters are dead you get 25 points. If even a single monster is alive you lose 5 points. This happens every second! QUEST:Win the 2nd party game!",
+                    "NextIndex": 7,
+                    "Name": "No room on the Dance Floor!",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "NoSpaceIndex": 6,
+                    "Rewards": [{"item": "StampC21", "quantity": 1}, {"item": "Ladle", "quantity": 1}],
+                    "Difficulty": 4,
+                    "CustomArray": [{"desc": "Party Points:", "finalV": 1400, "type": "GreaterEqual", "startV": 0}]
+                },
+                "Everybody move it move it!": {
+                    "Type": "Custom",
+                    "DialogueText": "The 3rd game is 'Move It Move It'. You get some Party Points when you kill a moving monster but LOSE points if you kill a monster that is NOT moving! <br> QUEST:Win the 3rd party game!",
+                    "NextIndex": 10,
+                    "Name": "Everybody move it move it!",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "NoSpaceIndex": 9,
+                    "Rewards": [{"item": "StampA30", "quantity": 1}, {"item": "Ladle", "quantity": 1}],
+                    "Difficulty": 6,
+                    "CustomArray": [{"desc": "Party Points:", "finalV": 10000, "type": "GreaterEqual", "startV": 0}]
+                }
+            }
+        },
+        "Oinkin": {
+            "quests": {
+                "Filling the Menu": {
+                    "Type": "Custom",
+                    "DialogueText": "Well?? Don't just stand there you knobhead get cooking! <br> QUEST:Level up three meals to Lv.2 by delivering them to the Menu Dinner Table in town.",
+                    "NextIndex": 4,
+                    "Name": "Filling the Menu",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 3,
+                    "NoSpaceIndex": 3,
+                    "Rewards": [
+                        {"item": "StampB37", "quantity": 1},
+                        {"item": "Ladle", "quantity": 4},
+                        {"item": "PetEgg", "quantity": 4}
+                    ],
+                    "Difficulty": 1,
+                    "CustomArray": [{"desc": "Lv.2 Meals:", "finalV": 3, "type": "GreaterEqual", "startV": 0}]
+                },
+                "Diner Deliverer": {
+                    "Type": "Custom",
+                    "DialogueText": "I've been getting complaints from the Egg Nest Station you need to fill those orders! <br> QUEST:Upgrade various pet upgrades using Grey DNA and meals.",
+                    "NextIndex": 7,
+                    "Name": "Diner Deliverer",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 3,
+                    "NoSpaceIndex": 6,
+                    "Rewards": [
+                        {"item": "StampB40", "quantity": 1},
+                        {"item": "Ladle", "quantity": 5},
+                        {"item": "PetEgg", "quantity": 4}
+                    ],
+                    "Difficulty": 1,
+                    "CustomArray": [
+                        {"desc": "Genetic Splicing LV:", "finalV": 3, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "Egg Capacity LV:", "finalV": 2, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "Breedability Pulse LV:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                    ]
+                },
+                "Recipe for Fattening Pastry": {
+                    "Type": "Custom",
+                    "DialogueText": "Look this one's important. I've got a VIP coming in tonight and I need the recipe for their favorite dish something known as the croissant... <br> QUEST:Discover the recipe for Croissants in cooking.",
+                    "NextIndex": 10,
+                    "Name": "Recipe for Fattening Pastry",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 3,
+                    "NoSpaceIndex": 9,
+                    "Rewards": [
+                        {"item": "StampB39", "quantity": 1},
+                        {"item": "Ladle", "quantity": 6},
+                        {"item": "PetEgg", "quantity": 4}
+                    ],
+                    "Difficulty": 1,
+                    "CustomArray": [{"desc": "Croissant Discovered:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                }
+            }
+        },
         "Gobo": {
             "quests": {
                 "Breeding in Outer Space": {
@@ -107,102 +203,6 @@
                         {"item": "Critter6A", "quantity": 60},
                         {"item": "Critter3A", "quantity": 200}
                     ]
-                }
-            }
-        },
-        "Capital P": {
-            "quests": {
-                "Right side wrong side!": {
-                    "Type": "Custom",
-                    "DialogueText": "The first game is 'Right Side Wrong Side'. You get 1 Party Point for every monster on the left side of the platform and -5 Point for every monster on the right. This happens every second! <br> QUEST:Win the 1st party game!",
-                    "NextIndex": 4,
-                    "Name": "Right side wrong side!",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "NoSpaceIndex": 3,
-                    "Rewards": [{"item": "StampB42", "quantity": 1}, {"item": "Ladle", "quantity": 1}],
-                    "Difficulty": 3,
-                    "CustomArray": [{"desc": "Party Points:", "finalV": 200, "type": "GreaterEqual", "startV": 0}]
-                },
-                "No room on the Dance Floor!": {
-                    "Type": "Custom",
-                    "DialogueText": "The 2nd game is 'No Room on the Dancefloor'. If all monsters are dead you get 25 points. If even a single monster is alive you lose 5 points. This happens every second! QUEST:Win the 2nd party game!",
-                    "NextIndex": 7,
-                    "Name": "No room on the Dance Floor!",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "NoSpaceIndex": 6,
-                    "Rewards": [{"item": "StampC21", "quantity": 1}, {"item": "Ladle", "quantity": 1}],
-                    "Difficulty": 4,
-                    "CustomArray": [{"desc": "Party Points:", "finalV": 1400, "type": "GreaterEqual", "startV": 0}]
-                },
-                "Everybody move it move it!": {
-                    "Type": "Custom",
-                    "DialogueText": "The 3rd game is 'Move It Move It'. You get some Party Points when you kill a moving monster but LOSE points if you kill a monster that is NOT moving! <br> QUEST:Win the 3rd party game!",
-                    "NextIndex": 10,
-                    "Name": "Everybody move it move it!",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "NoSpaceIndex": 9,
-                    "Rewards": [{"item": "StampA30", "quantity": 1}, {"item": "Ladle", "quantity": 1}],
-                    "Difficulty": 6,
-                    "CustomArray": [{"desc": "Party Points:", "finalV": 10000, "type": "GreaterEqual", "startV": 0}]
-                }
-            }
-        },
-        "Oinkin": {
-            "quests": {
-                "Filling the Menu": {
-                    "Type": "Custom",
-                    "DialogueText": "Well?? Don't just stand there you knobhead get cooking! <br> QUEST:Level up three meals to Lv.2 by delivering them to the Menu Dinner Table in town.",
-                    "NextIndex": 4,
-                    "Name": "Filling the Menu",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 3,
-                    "NoSpaceIndex": 3,
-                    "Rewards": [
-                        {"item": "StampB37", "quantity": 1},
-                        {"item": "Ladle", "quantity": 4},
-                        {"item": "PetEgg", "quantity": 4}
-                    ],
-                    "Difficulty": 1,
-                    "CustomArray": [{"desc": "Lv.2 Meals:", "finalV": 3, "type": "GreaterEqual", "startV": 0}]
-                },
-                "Diner Deliverer": {
-                    "Type": "Custom",
-                    "DialogueText": "I've been getting complaints from the Egg Nest Station you need to fill those orders! <br> QUEST:Upgrade various pet upgrades using Grey DNA and meals.",
-                    "NextIndex": 7,
-                    "Name": "Diner Deliverer",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 3,
-                    "NoSpaceIndex": 6,
-                    "Rewards": [
-                        {"item": "StampB40", "quantity": 1},
-                        {"item": "Ladle", "quantity": 5},
-                        {"item": "PetEgg", "quantity": 4}
-                    ],
-                    "Difficulty": 1,
-                    "CustomArray": [
-                        {"desc": "Genetic Splicing LV:", "finalV": 3, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "Egg Capacity LV:", "finalV": 2, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "Breedability Pulse LV:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                    ]
-                },
-                "Recipe for Fattening Pastry": {
-                    "Type": "Custom",
-                    "DialogueText": "Look this one's important. I've got a VIP coming in tonight and I need the recipe for their favorite dish something known as the croissant... <br> QUEST:Discover the recipe for Croissants in cooking.",
-                    "NextIndex": 10,
-                    "Name": "Recipe for Fattening Pastry",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 3,
-                    "NoSpaceIndex": 9,
-                    "Rewards": [
-                        {"item": "StampB39", "quantity": 1},
-                        {"item": "Ladle", "quantity": 6},
-                        {"item": "PetEgg", "quantity": 4}
-                    ],
-                    "Difficulty": 1,
-                    "CustomArray": [{"desc": "Croissant Discovered:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
                 }
             }
         }

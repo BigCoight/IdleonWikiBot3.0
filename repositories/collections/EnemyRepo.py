@@ -13,6 +13,9 @@ from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
 from repositories.enemies.EnemyNavRepo import EnemyNavRepo
 from repositories.enemies.EnemyTableRepo import EnemyTableRepo
 from repositories.enemies.MapDataRepo import MapDataRepo
+from repositories.item.ItemDetailRepo import ItemDetailRepo
+from repositories.item.RecipeRepo import RecipeRepo
+from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.master.Repository import Repository
 
 
@@ -23,6 +26,8 @@ class EnemyRepo(Repository[Enemy]):
 
 	@classmethod
 	def initDependencies(cls, log = True):
+		SpecificItemRepo.initialise(cls.codeReader, log)
+		RecipeRepo.initialise(cls.codeReader, log)
 		EnemyDetailsRepo.initialise(cls.codeReader, log)
 		EnemyTableRepo.initialise(cls.codeReader, log)
 		EnemyNavRepo.initialise(cls.codeReader, log)

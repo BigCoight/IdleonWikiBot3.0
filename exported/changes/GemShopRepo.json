@@ -1,13 +1,13 @@
 {
     "new": {
-        "GemQ15": {
-            "itemName": "Pet Storage",
-            "desc": "Unlocks 12 pet storage spaces, which is an entire row!",
-            "cost": 325,
-            "no": 124,
-            "maxPurchases": 12,
-            "qty": 0,
-            "costIncrement": 55
+        "PetEgg": {
+            "itemName": "Carton Of Eggs",
+            "desc": "Each purchase gives anywhere from 3 to 12 eggs in your item inventory! Use these eggs in your          inventory to refill your nest with eggs!              This item restocks each day.",
+            "cost": 270,
+            "no": 126,
+            "maxPurchases": 4,
+            "qty": 1,
+            "costIncrement": 0
         },
         "GemQ12": {
             "itemName": "Console Chip",
@@ -16,6 +16,15 @@
             "no": 121,
             "maxPurchases": 7,
             "qty": 0,
+            "costIncrement": 0
+        },
+        "CardPack5": {
+            "itemName": "Galaxy Card Pack",
+            "desc": "Blah",
+            "cost": 650,
+            "no": 69,
+            "maxPurchases": 100000,
+            "qty": 1,
             "costIncrement": 0
         },
         "GemQ11": {
@@ -27,23 +36,14 @@
             "qty": 0,
             "costIncrement": 40
         },
-        "GemQ14": {
-            "itemName": "Souped Up Tube",
-            "desc": "Each purchase soups up 2 lab Tubes. Players in souped-up tubes get 2x Lab EXP gain, and +30% Line Width. Keep in mind, players are placed in tubes in chronological order.",
-            "cost": 480,
-            "no": 123,
-            "maxPurchases": 4,
+        "GemQ15": {
+            "itemName": "Pet Storage",
+            "desc": "Unlocks 12 pet storage spaces, which is an entire row!",
+            "cost": 325,
+            "no": 124,
+            "maxPurchases": 12,
             "qty": 0,
-            "costIncrement": 65
-        },
-        "PetEgg": {
-            "itemName": "Carton Of Eggs",
-            "desc": "Each purchase gives anywhere from 3 to 12 eggs in your item inventory! Use these eggs in your          inventory to refill your nest with eggs!              This item restocks each day.",
-            "cost": 270,
-            "no": 126,
-            "maxPurchases": 4,
-            "qty": 1,
-            "costIncrement": 0
+            "costIncrement": 55
         },
         "GemQ10": {
             "itemName": "Royal Egg Cap",
@@ -54,13 +54,13 @@
             "qty": 0,
             "costIncrement": 50
         },
-        "CardPack5": {
-            "itemName": "Galaxy Card Pack",
-            "desc": "Blah",
-            "cost": 650,
-            "no": 69,
-            "maxPurchases": 100000,
-            "qty": 1,
+        "GemQ13": {
+            "itemName": "Mainframe Jewel",
+            "desc": "Gives you a random Jewel that you don't already    own. No need to worry about duplicate jewels!    This item restocks each week, unless you own all Jewels, then it wont restock.",
+            "cost": 450,
+            "no": 122,
+            "maxPurchases": 2,
+            "qty": 0,
             "costIncrement": 0
         },
         "GemQ16": {
@@ -72,14 +72,14 @@
             "qty": 0,
             "costIncrement": 45
         },
-        "GemQ13": {
-            "itemName": "Mainframe Jewel",
-            "desc": "Gives you a random Jewel that you don't already    own. No need to worry about duplicate jewels!    This item restocks each week, unless you own all Jewels, then it wont restock.",
-            "cost": 450,
-            "no": 122,
-            "maxPurchases": 2,
+        "GemQ14": {
+            "itemName": "Souped Up Tube",
+            "desc": "Each purchase soups up 2 lab Tubes. Players in souped-up tubes get 2x Lab EXP gain, and +30% Line Width. Keep in mind, players are placed in tubes in chronological order.",
+            "cost": 480,
+            "no": 123,
+            "maxPurchases": 4,
             "qty": 0,
-            "costIncrement": 0
+            "costIncrement": 65
         },
         "GemQ17": {
             "itemName": "4 Star Cardifier",
@@ -92,23 +92,23 @@
         }
     },
     "changes": {
-        "CardPack3": {"cost": [650, 600]},
         "Timecandy4": {"maxPurchases": [5, 4]},
+        "Timecandy3": {"maxPurchases": [5, 4]},
+        "CardPack3": {"cost": [650, 600]},
+        "Timecandy2": {"maxPurchases": [5, 4]},
         "InvStorage31": {
             "desc": [
                 "Gives +6 extra Storage Chest Slots. Storage Chests are found in each town, and the items you put in can be access by all your players!",
                 "Gives +9 extra Storage Chest Slots! Storage Chests are found in each town, and the items you put in are shared by all your players!"
             ]
         },
-        "Timecandy1": {"maxPurchases": [5, 4]},
         "InvBag21": {
             "desc": [
                 "Gives +4 extra Item Slots for your backpack. Applies to all your characters, even ones you haven't made yet!",
                 "Gives +4 extra Item Slots for your backpack! Applies to all your characters, even ones you haven't made yet!"
             ]
         },
-        "Timecandy2": {"maxPurchases": [5, 4]},
-        "Timecandy3": {"maxPurchases": [5, 4]},
+        "Timecandy1": {"maxPurchases": [5, 4]},
         "CardPack2": {"cost": [450, 425]}
     }
 }

@@ -18,6 +18,99 @@
 |}
 </div><div class="GenericChild">
 ==New==
+{{patchnote/head|changed=Capital P}}
+{{patchnote/bold|Right Side Wrong Side!}}
+{{patchnote|Type| |QuestType.Custom}}
+{{patchnote|DialogueText| |The first game is 'Right Side Wrong Side'. You get 1 Party Point for every monster on the left side of the platform and -5 Point for every monster on the right. This happens every second! <br> QUEST:Win the 1st party game!}}
+{{patchnote|NextIndex| |4}}
+{{patchnote|Name| |Right side wrong side!}}
+{{patchnote|ConsumeItems| |False}}
+{{patchnote|InventorySpacesNeeded| |2}}
+{{patchnote|NoSpaceIndex| |3}}
+{{patchnote/italic|Rewards}}
+{{patchnote|0| |1x{{CraftReq|Lab Tube Stamp}}}}
+{{patchnote|1| |1x{{CraftReq|Cooking Ladle}}}}
+{{patchnote|Difficulty| |3}}
+{{patchnote/italic|Custom Array}}
+{{patchnote|0| |Party Points: > 200}}
+{{patchnote/bold|No Room On The Dance Floor!}}
+{{patchnote|Type| |QuestType.Custom}}
+{{patchnote|DialogueText| |The 2nd game is 'No Room on the Dancefloor'. If all monsters are dead you get 25 points. If even a single monster is alive you lose 5 points. This happens every second! QUEST:Win the 2nd party game!}}
+{{patchnote|NextIndex| |7}}
+{{patchnote|Name| |No room on the Dance Floor!}}
+{{patchnote|ConsumeItems| |False}}
+{{patchnote|InventorySpacesNeeded| |2}}
+{{patchnote|NoSpaceIndex| |6}}
+{{patchnote/italic|Rewards}}
+{{patchnote|0| |1x{{CraftReq|DNA Stamp}}}}
+{{patchnote|1| |1x{{CraftReq|Cooking Ladle}}}}
+{{patchnote|Difficulty| |4}}
+{{patchnote/italic|Custom Array}}
+{{patchnote|0| |Party Points: > 1400}}
+{{patchnote/bold|Everybody Move It Move It!}}
+{{patchnote|Type| |QuestType.Custom}}
+{{patchnote|DialogueText| |The 3rd game is 'Move It Move It'. You get some Party Points when you kill a moving monster but LOSE points if you kill a monster that is NOT moving! <br> QUEST:Win the 3rd party game!}}
+{{patchnote|NextIndex| |10}}
+{{patchnote|Name| |Everybody move it move it!}}
+{{patchnote|ConsumeItems| |False}}
+{{patchnote|InventorySpacesNeeded| |2}}
+{{patchnote|NoSpaceIndex| |9}}
+{{patchnote/italic|Rewards}}
+{{patchnote|0| |1x{{CraftReq|Diamond Axe Stamp}}}}
+{{patchnote|1| |1x{{CraftReq|Cooking Ladle}}}}
+{{patchnote|Difficulty| |6}}
+{{patchnote/italic|Custom Array}}
+{{patchnote|0| |Party Points: > 10000}}
+|}
+{{patchnote/head|changed=Oinkin}}
+{{patchnote/bold|Filling The Menu}}
+{{patchnote|Type| |QuestType.Custom}}
+{{patchnote|DialogueText| |Well?? Don't just stand there you knobhead get cooking! <br> QUEST:Level up three meals to Lv.2 by delivering them to the Menu Dinner Table in town.}}
+{{patchnote|NextIndex| |4}}
+{{patchnote|Name| |Filling the Menu}}
+{{patchnote|ConsumeItems| |False}}
+{{patchnote|InventorySpacesNeeded| |3}}
+{{patchnote|NoSpaceIndex| |3}}
+{{patchnote/italic|Rewards}}
+{{patchnote|0| |1x{{CraftReq|Cooked Meal Stamp}}}}
+{{patchnote|1| |4x{{CraftReq|Cooking Ladle}}}}
+{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
+{{patchnote|Difficulty| |1}}
+{{patchnote/italic|Custom Array}}
+{{patchnote|0| |Lv.2 Meals: > 3}}
+{{patchnote/bold|Diner Deliverer}}
+{{patchnote|Type| |QuestType.Custom}}
+{{patchnote|DialogueText| |I've been getting complaints from the Egg Nest Station you need to fill those orders! <br> QUEST:Upgrade various pet upgrades using Grey DNA and meals.}}
+{{patchnote|NextIndex| |7}}
+{{patchnote|Name| |Diner Deliverer}}
+{{patchnote|ConsumeItems| |False}}
+{{patchnote|InventorySpacesNeeded| |3}}
+{{patchnote|NoSpaceIndex| |6}}
+{{patchnote/italic|Rewards}}
+{{patchnote|0| |1x{{CraftReq|Nest Eggs Stamp}}}}
+{{patchnote|1| |5x{{CraftReq|Cooking Ladle}}}}
+{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
+{{patchnote|Difficulty| |1}}
+{{patchnote/italic|Custom Array}}
+{{patchnote|0| |Genetic Splicing LV: > 3}}
+{{patchnote|1| |Egg Capacity LV: > 2}}
+{{patchnote|2| |Breedability Pulse LV: > 1}}
+{{patchnote/bold|Recipe For Fattening Pastry}}
+{{patchnote|Type| |QuestType.Custom}}
+{{patchnote|DialogueText| |Look this one's important. I've got a VIP coming in tonight and I need the recipe for their favorite dish something known as the croissant... <br> QUEST:Discover the recipe for Croissants in cooking.}}
+{{patchnote|NextIndex| |10}}
+{{patchnote|Name| |Recipe for Fattening Pastry}}
+{{patchnote|ConsumeItems| |False}}
+{{patchnote|InventorySpacesNeeded| |3}}
+{{patchnote|NoSpaceIndex| |9}}
+{{patchnote/italic|Rewards}}
+{{patchnote|0| |1x{{CraftReq|Ladle Stamp}}}}
+{{patchnote|1| |6x{{CraftReq|Cooking Ladle}}}}
+{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
+{{patchnote|Difficulty| |1}}
+{{patchnote/italic|Custom Array}}
+{{patchnote|0| |Croissant Discovered: > 1}}
+|}
 {{patchnote/head|changed=Gobo}}
 {{patchnote/bold|Breeding In Outer Space}}
 {{patchnote|Type| |QuestType.Custom}}
@@ -126,98 +219,5 @@
 {{patchnote|0| |30x{{CraftReq|Jade Scarab}}}}
 {{patchnote|1| |60x{{CraftReq|Eternal Lord of  The Undying Ember}}}}
 {{patchnote|2| |200x{{CraftReq|Crescent Scorpie}}}}
-|}
-{{patchnote/head|changed=Capital P}}
-{{patchnote/bold|Right Side Wrong Side!}}
-{{patchnote|Type| |QuestType.Custom}}
-{{patchnote|DialogueText| |The first game is 'Right Side Wrong Side'. You get 1 Party Point for every monster on the left side of the platform and -5 Point for every monster on the right. This happens every second! <br> QUEST:Win the 1st party game!}}
-{{patchnote|NextIndex| |4}}
-{{patchnote|Name| |Right side wrong side!}}
-{{patchnote|ConsumeItems| |False}}
-{{patchnote|InventorySpacesNeeded| |2}}
-{{patchnote|NoSpaceIndex| |3}}
-{{patchnote/italic|Rewards}}
-{{patchnote|0| |1x{{CraftReq|Lab Tube Stamp}}}}
-{{patchnote|1| |1x{{CraftReq|Cooking Ladle}}}}
-{{patchnote|Difficulty| |3}}
-{{patchnote/italic|Custom Array}}
-{{patchnote|0| |Party Points: > 200}}
-{{patchnote/bold|No Room On The Dance Floor!}}
-{{patchnote|Type| |QuestType.Custom}}
-{{patchnote|DialogueText| |The 2nd game is 'No Room on the Dancefloor'. If all monsters are dead you get 25 points. If even a single monster is alive you lose 5 points. This happens every second! QUEST:Win the 2nd party game!}}
-{{patchnote|NextIndex| |7}}
-{{patchnote|Name| |No room on the Dance Floor!}}
-{{patchnote|ConsumeItems| |False}}
-{{patchnote|InventorySpacesNeeded| |2}}
-{{patchnote|NoSpaceIndex| |6}}
-{{patchnote/italic|Rewards}}
-{{patchnote|0| |1x{{CraftReq|DNA Stamp}}}}
-{{patchnote|1| |1x{{CraftReq|Cooking Ladle}}}}
-{{patchnote|Difficulty| |4}}
-{{patchnote/italic|Custom Array}}
-{{patchnote|0| |Party Points: > 1400}}
-{{patchnote/bold|Everybody Move It Move It!}}
-{{patchnote|Type| |QuestType.Custom}}
-{{patchnote|DialogueText| |The 3rd game is 'Move It Move It'. You get some Party Points when you kill a moving monster but LOSE points if you kill a monster that is NOT moving! <br> QUEST:Win the 3rd party game!}}
-{{patchnote|NextIndex| |10}}
-{{patchnote|Name| |Everybody move it move it!}}
-{{patchnote|ConsumeItems| |False}}
-{{patchnote|InventorySpacesNeeded| |2}}
-{{patchnote|NoSpaceIndex| |9}}
-{{patchnote/italic|Rewards}}
-{{patchnote|0| |1x{{CraftReq|Diamond Axe Stamp}}}}
-{{patchnote|1| |1x{{CraftReq|Cooking Ladle}}}}
-{{patchnote|Difficulty| |6}}
-{{patchnote/italic|Custom Array}}
-{{patchnote|0| |Party Points: > 10000}}
-|}
-{{patchnote/head|changed=Oinkin}}
-{{patchnote/bold|Filling The Menu}}
-{{patchnote|Type| |QuestType.Custom}}
-{{patchnote|DialogueText| |Well?? Don't just stand there you knobhead get cooking! <br> QUEST:Level up three meals to Lv.2 by delivering them to the Menu Dinner Table in town.}}
-{{patchnote|NextIndex| |4}}
-{{patchnote|Name| |Filling the Menu}}
-{{patchnote|ConsumeItems| |False}}
-{{patchnote|InventorySpacesNeeded| |3}}
-{{patchnote|NoSpaceIndex| |3}}
-{{patchnote/italic|Rewards}}
-{{patchnote|0| |1x{{CraftReq|Cooked Meal Stamp}}}}
-{{patchnote|1| |4x{{CraftReq|Cooking Ladle}}}}
-{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
-{{patchnote|Difficulty| |1}}
-{{patchnote/italic|Custom Array}}
-{{patchnote|0| |Lv.2 Meals: > 3}}
-{{patchnote/bold|Diner Deliverer}}
-{{patchnote|Type| |QuestType.Custom}}
-{{patchnote|DialogueText| |I've been getting complaints from the Egg Nest Station you need to fill those orders! <br> QUEST:Upgrade various pet upgrades using Grey DNA and meals.}}
-{{patchnote|NextIndex| |7}}
-{{patchnote|Name| |Diner Deliverer}}
-{{patchnote|ConsumeItems| |False}}
-{{patchnote|InventorySpacesNeeded| |3}}
-{{patchnote|NoSpaceIndex| |6}}
-{{patchnote/italic|Rewards}}
-{{patchnote|0| |1x{{CraftReq|Nest Eggs Stamp}}}}
-{{patchnote|1| |5x{{CraftReq|Cooking Ladle}}}}
-{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
-{{patchnote|Difficulty| |1}}
-{{patchnote/italic|Custom Array}}
-{{patchnote|0| |Genetic Splicing LV: > 3}}
-{{patchnote|1| |Egg Capacity LV: > 2}}
-{{patchnote|2| |Breedability Pulse LV: > 1}}
-{{patchnote/bold|Recipe For Fattening Pastry}}
-{{patchnote|Type| |QuestType.Custom}}
-{{patchnote|DialogueText| |Look this one's important. I've got a VIP coming in tonight and I need the recipe for their favorite dish something known as the croissant... <br> QUEST:Discover the recipe for Croissants in cooking.}}
-{{patchnote|NextIndex| |10}}
-{{patchnote|Name| |Recipe for Fattening Pastry}}
-{{patchnote|ConsumeItems| |False}}
-{{patchnote|InventorySpacesNeeded| |3}}
-{{patchnote|NoSpaceIndex| |9}}
-{{patchnote/italic|Rewards}}
-{{patchnote|0| |1x{{CraftReq|Ladle Stamp}}}}
-{{patchnote|1| |6x{{CraftReq|Cooking Ladle}}}}
-{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
-{{patchnote|Difficulty| |1}}
-{{patchnote/italic|Custom Array}}
-{{patchnote|0| |Croissant Discovered: > 1}}
 |}
 </div></div>

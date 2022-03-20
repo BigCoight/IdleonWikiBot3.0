@@ -1,5 +1,13 @@
 {
     "new": {
+        "DropTable23": {
+            "drops": [
+                {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
+                {"item": "Line13", "quantity": 1, "chance": 0.0008, "questLink": "N/A"},
+                {"item": "SuperDropTable4", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
+            ],
+            "subTable": "DropTable23"
+        },
         "DropTable19": {
             "drops": [
                 {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
@@ -10,17 +18,6 @@
                 {"item": "SuperDropTable4", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
             ],
             "subTable": "DropTable19"
-        },
-        "DropTable20": {
-            "drops": [
-                {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
-                {"item": "Line8", "quantity": 1, "chance": 0.00015, "questLink": "N/A"},
-                {"item": "FoodPotMana4", "quantity": 50, "chance": 0.15, "questLink": "N/A"},
-                {"item": "Quest24", "quantity": 8, "chance": 0.5, "questLink": "Mutton4"},
-                {"item": "Quest22", "quantity": 3, "chance": 0.2, "questLink": "Mutton4"},
-                {"item": "SuperDropTable4", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
-            ],
-            "subTable": "DropTable20"
         },
         "DropTable21": {
             "drops": [
@@ -33,6 +30,17 @@
             ],
             "subTable": "DropTable21"
         },
+        "DropTable20": {
+            "drops": [
+                {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
+                {"item": "Line8", "quantity": 1, "chance": 0.00015, "questLink": "N/A"},
+                {"item": "FoodPotMana4", "quantity": 50, "chance": 0.15, "questLink": "N/A"},
+                {"item": "Quest24", "quantity": 8, "chance": 0.5, "questLink": "Mutton4"},
+                {"item": "Quest22", "quantity": 3, "chance": 0.2, "questLink": "Mutton4"},
+                {"item": "SuperDropTable4", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
+            ],
+            "subTable": "DropTable20"
+        },
         "DropTable22": {
             "drops": [
                 {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
@@ -41,14 +49,6 @@
                 {"item": "SuperDropTable4", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
             ],
             "subTable": "DropTable22"
-        },
-        "DropTable23": {
-            "drops": [
-                {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
-                {"item": "Line13", "quantity": 1, "chance": 0.0008, "questLink": "N/A"},
-                {"item": "SuperDropTable4", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
-            ],
-            "subTable": "DropTable23"
         },
         "SuperDropTable4": {
             "drops": [

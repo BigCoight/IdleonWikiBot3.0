@@ -1,18 +1,5 @@
 {
     "new": {
-        "Glitterbug": {
-            "name": "Glitterbug",
-            "id": 5,
-            "bonus": "+{% chance for Giant Mobs to summon 2 Crystal Mobs",
-            "curse": "Giant Mobs are {% less likely to spawn.",
-            "x1": 30,
-            "x2": 20,
-            "soul": "Soul5",
-            "costMult": 7000,
-            "unlockZone": "Clash of Cans",
-            "unlockWave": 131,
-            "maxLevel": 30
-        },
         "Balance of Proficiency": {
             "name": "Balance of Proficiency",
             "id": 5,
@@ -39,18 +26,18 @@
             "unlockWave": 51,
             "maxLevel": 1
         },
-        "Circular Criticals": {
-            "name": "Circular Criticals",
-            "id": 3,
-            "bonus": "+{% Critical Hit Chance",
-            "curse": "-{% Critical Damage",
-            "x1": 10,
-            "x2": 15,
-            "soul": "Soul3",
-            "costMult": 2000,
-            "unlockZone": "Acorn Assault",
-            "unlockWave": 71,
-            "maxLevel": 20
+        "Glitterbug": {
+            "name": "Glitterbug",
+            "id": 5,
+            "bonus": "+{% chance for Giant Mobs to summon 2 Crystal Mobs",
+            "curse": "Giant Mobs are {% less likely to spawn.",
+            "x1": 30,
+            "x2": 20,
+            "soul": "Soul5",
+            "costMult": 7000,
+            "unlockZone": "Clash of Cans",
+            "unlockWave": 131,
+            "maxLevel": 30
         },
         "Fibers of Absence": {
             "name": "Fibers of Absence",
@@ -64,28 +51,27 @@
             "unlockZone": "Frosty Firefight",
             "unlockWave": 21,
             "maxLevel": 50
+        },
+        "Circular Criticals": {
+            "name": "Circular Criticals",
+            "id": 3,
+            "bonus": "+{% Critical Hit Chance",
+            "curse": "-{% Critical Damage",
+            "x1": 10,
+            "x2": 15,
+            "soul": "Soul3",
+            "costMult": 2000,
+            "unlockZone": "Acorn Assault",
+            "unlockWave": 71,
+            "maxLevel": 20
         }
     },
     "changes": {
-        "The Royal Sampler": {"maxLevel": [-1, 20]},
-        "Shiny Snitch": {"x2": [20, 15], "maxLevel": [-1, 50]},
         "Tachion of the Titans": {"maxLevel": [-1, 2]},
-        "Jawbreaker": {
-            "bonus": ["+{% time candy chance every day, up to 7 days", "+{% Coins from Monsters"],
-            "curse": ["-1000% AFK Gain Rate. Also you owe me 25 cents!", "+{% Max HP for all monsters"],
-            "x1": [50, 40],
-            "x2": [1000, 200],
-            "unlockWave": [121, 101],
-            "maxLevel": [-1, 50]
-        },
+        "Skilled Dimwit": {"x2": [30, 20], "maxLevel": [-1, 50]},
+        "Shiny Snitch": {"x2": [20, 15], "maxLevel": [-1, 50]},
+        "Big Brain Time": {"maxLevel": [-1, 50]},
         "Unending Energy": {"maxLevel": [-1, 50]},
-        "Antifun Spirit": {
-            "curse": [
-                "Minigames cost { plays per attempt, or whatever you have.",
-                "Minigames cost { plays per attempt."
-            ],
-            "maxLevel": [-1, 10]
-        },
         "Balance of Pain": {
             "id": [1, 5],
             "bonus": ["+{% Total Damage", "+{% Multikill per Damage Tier"],
@@ -97,7 +83,6 @@
             "unlockWave": [999, 21],
             "maxLevel": [-1, 30]
         },
-        "Ruck Sack": {"x2": [20, 15], "unlockWave": [131, 111], "maxLevel": [-1, 50]},
         "Beefy For Real": {
             "id": [1, 4],
             "bonus": ["+{% Max HP", "+{% Total Damage"],
@@ -110,11 +95,26 @@
             "unlockWave": [999, 121],
             "maxLevel": [-1, 40]
         },
+        "Antifun Spirit": {
+            "curse": [
+                "Minigames cost { plays per attempt, or whatever you have.",
+                "Minigames cost { plays per attempt."
+            ],
+            "maxLevel": [-1, 10]
+        },
         "Some Prayer Name0": {"maxLevel": [-1, 999]},
         "Midas Minded": {"maxLevel": [-1, 50]},
-        "Big Brain Time": {"maxLevel": [-1, 50]},
-        "Skilled Dimwit": {"x2": [30, 20], "maxLevel": [-1, 50]},
+        "The Royal Sampler": {"maxLevel": [-1, 20]},
         "Zerg Rushogen": {"x2": [10, 12], "maxLevel": [-1, 20]},
+        "Ruck Sack": {"x2": [20, 15], "unlockWave": [131, 111], "maxLevel": [-1, 50]},
+        "Jawbreaker": {
+            "bonus": ["+{% time candy chance every day, up to 7 days", "+{% Coins from Monsters"],
+            "curse": ["-1000% AFK Gain Rate. Also you owe me 25 cents!", "+{% Max HP for all monsters"],
+            "x1": [50, 40],
+            "x2": [1000, 200],
+            "unlockWave": [121, 101],
+            "maxLevel": [-1, 50]
+        },
         "Balance of Precision": {"x2": [20, 15], "maxLevel": [-1, 50]}
     }
 }

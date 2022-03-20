@@ -197,6 +197,9 @@ class Repository(Generic[T], ABC):
 		def patchnote(v: str, o, n) -> str:
 			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
 
+		def italic(v: str) -> str:
+			return "{{patchnote/italic|" + v + "}}\n"
+
 		res = head(cls.getWikiName(item))
 		for v, d in change.items():
 			if isinstance(d, list):
@@ -207,6 +210,7 @@ class Repository(Generic[T], ABC):
 				res += bold(camelCaseToTitle(v))
 				for atr, subC in d.items():
 					if isinstance(subC, list):
+						res += italic(camelCaseToTitle(atr))
 						for i, subV in enumerate(subC):
 							res += patchnote(str(i), " ", subV)
 						continue
@@ -229,6 +233,9 @@ class Repository(Generic[T], ABC):
 		def patchnote(v: str, o, n) -> str:
 			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
 
+		def italic(v: str) -> str:
+			return "{{patchnote/italic|" + v + "}}\n"
+
 		res = head(cls.getWikiName(item))
 		for v, d in change.items():
 			if isinstance(d, tuple):
@@ -243,6 +250,7 @@ class Repository(Generic[T], ABC):
 				res += bold(camelCaseToTitle(v))
 				for atr, subC in d.items():
 					if isinstance(subC, list):
+						res += italic(camelCaseToTitle(atr))
 						for i, subV in enumerate(subC):
 							o, n = subV
 							res += patchnote(str(i), o, n)

@@ -8,6 +8,7 @@ from helpers.CustomTypes import Numeric
 from helpers.HelperFunctions import formatFloat, isTalent, isRecipe
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.RecipeRepo import RecipeRepo
+from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 
@@ -32,7 +33,7 @@ class Drop(IdleonModel):
 
 	def __str__(self) -> str:
 		res = f"{self.quantity}x " + "{{CraftReq|"
-		res += ItemDetailRepo.getDisplayName(self.item) + "}}"
+		res += SpecificItemRepo.getDisplayName(self.item) + "}}"
 		res += f" {self.chance:g}"
 		return res
 

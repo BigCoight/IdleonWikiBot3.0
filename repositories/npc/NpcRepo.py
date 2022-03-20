@@ -22,10 +22,10 @@ class NpcRepo(Repository[Npc]):
 	questToName: Dict[str, str] = {}
 
 	@classmethod
-	def initDependencies(cls) -> None:
-		NpcHeadRepo.initialise(cls.codeReader)
-		QuestNameRepo.initialise(cls.codeReader)
-		NpcNoteRepo.initialise(cls.codeReader)
+	def initDependencies(cls, log = True) -> None:
+		NpcHeadRepo.initialise(cls.codeReader, log)
+		QuestNameRepo.initialise(cls.codeReader, log)
+		NpcNoteRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def getSections(cls) -> List[str]:

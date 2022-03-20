@@ -32,7 +32,7 @@ class ExpReward(IdleonModel):
 		return False
 
 	def __str__(self):
-		return f"{self.amount}x {self.type.name} Experience"
+		return f"{self.amount} {self.type.name} Experience"
 
 
 class RecipeReward(IdleonModel):

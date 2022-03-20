@@ -14,9 +14,9 @@ class VendorRepo(Repository[Vendors]):
 	"""
 
 	@classmethod
-	def initDependencies(cls) -> None:
-		MapNameRepo.initialise(cls.codeReader)
-		ItemDetailRepo.initialise(cls.codeReader)
+	def initDependencies(cls, log = True) -> None:
+		MapNameRepo.initialise(cls.codeReader, log)
+		ItemDetailRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -36,7 +36,7 @@ class VendorRepo(Repository[Vendors]):
 			else:
 				fixedShopQTY.append(shopQTYSs.split(" "))
 		shopLocations = cls.getSection(2)
-		shopsLocations = [MapNameRepo.get(int(x)).name for x in re.findall(
+		shopsLocations = [MapNameRepo.get(x).name for x in re.findall(
 			r"\[([a-zA-Z0-_ ,]*)]", shopLocations)[0].split(", ")]
 		for i in range(len(shopsItems)):
 			currentLocation = replaceUnderscores(shopsLocations[i])

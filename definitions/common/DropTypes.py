@@ -18,6 +18,9 @@ class Drop(IdleonModel):
 	chance: float
 	questLink: str
 
+	def hasDropTableExtra(self) -> bool:
+		return True
+
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = self.writeDrop()
 		if self.questLink != "N/A":
@@ -60,6 +63,9 @@ class Drop(IdleonModel):
 
 
 class SubTableDrop(Drop):
+
+	def hasDropTableExtra(self) -> bool:
+		return False
 
 	def writeDrop(self):
 		res = "{{DropTable/append|"
@@ -115,12 +121,12 @@ class RecipeDrop(Drop):
 		index = int(self.quantity)
 		item = ItemDetailRepo.getDisplayName(RecipeRepo.getItemAtIndex(tab, index))
 		res = "{{DropTable/recipe|"
-		res += f" {tab}|{item}|{formatFloat(self.chance)}"
+		res += f"{tab + 1}|{item}|{formatFloat(self.chance)}"
 		return res
 
 	def __str__(self) -> str:
 		tab = int(self.item[-1]) - 1
-		index = int(self.quantity) + 1
+		index = int(self.quantity)
 		item = ItemDetailRepo.getDisplayName(RecipeRepo.getItemAtIndex(tab, index))
 		res = "{{CraftReq|" + item + "}}"
 		return f"{self.quantity}x " + f"{res} Recipe" + f" {self.chance:g}"

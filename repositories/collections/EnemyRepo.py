@@ -6,6 +6,7 @@ from definitions.collections.Enemy import Enemy
 from definitions.enemy.AFKType import AFKType
 from definitions.enemy.EnemyType import EnemyType
 from helpers.CodeReader import IdleonReader
+from helpers.ColourPrinter import printRed
 from repositories.enemies.BossDetailRepo import BossDetailRepo
 from repositories.enemies.DropTableRepo import DropTableRepo
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
@@ -21,13 +22,13 @@ class EnemyRepo(Repository[Enemy]):
 	"""
 
 	@classmethod
-	def initDependencies(cls):
-		EnemyDetailsRepo.initialise(cls.codeReader)
-		EnemyTableRepo.initialise(cls.codeReader)
-		EnemyNavRepo.initialise(cls.codeReader)
-		BossDetailRepo.initialise(cls.codeReader)
-		MapDataRepo.initialise(cls.codeReader)
-		DropTableRepo.initialise(cls.codeReader)
+	def initDependencies(cls, log = True):
+		EnemyDetailsRepo.initialise(cls.codeReader, log)
+		EnemyTableRepo.initialise(cls.codeReader, log)
+		EnemyNavRepo.initialise(cls.codeReader, log)
+		BossDetailRepo.initialise(cls.codeReader, log)
+		MapDataRepo.initialise(cls.codeReader, log)
+		DropTableRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def generateRepo(cls) -> None:
@@ -41,7 +42,6 @@ class EnemyRepo(Repository[Enemy]):
 				bossData = BossDetailRepo.get(enemy),
 			))
 			tempSet.add(data.AFKtype)
-		print(tempSet)
 
 	@classmethod
 	def getWikiName(cls, name: str) -> str:
@@ -72,12 +72,5 @@ class EnemyRepo(Repository[Enemy]):
 			return True
 		if data.navigation is None:
 			return True
-		if cls._ignoreW4(name, data):
-			return True
 		return False
 
-	@classmethod
-	def _ignoreW4(cls, name: str, data: Enemy) -> bool:
-		website = Site()
-		page = Page(website, data.details.Name)
-		return not page.exists()

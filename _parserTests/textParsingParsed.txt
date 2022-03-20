@@ -1,99 +1,72 @@
-gf82(a)=>parsenum(DNSM.get("CookinPossibleRecpsDN2") a 1)
-gf30(a)=>(1 + parsenum(Cooking[n][a]) / 10)
-gf18(a)=>DNSM.set(a, [])
-gf12(a)=>parsenum(DNSM.get(a) + 1)
-gf9(a)=>DNSM.set(a, 0)
-gf2(a)=>(a == t)
-cb_CookingR = function (t, n, s) {
-    if gf2("PossibleRecipes") {
-        return cb_CookingR("PossibleRecipes2", parsenum(PixelHelperActor[21].getValue("ActorEvents_510", "_GenINFO")[62]), 0);
+(cb_WorshipStuff = function (t, s) {
+    if ("NextWaveCountdown" == t) return 0 == s % 10 && 0 != s ? 9999 : 19 < Math.floor(s / 10) ? 25 + 5 * Math.floor((s - 10) / 10) : 9 < s ? 25 : 4 < s ? 20 : 0.5 < s ? 15 : 6;
+    if ("waveAdjustment" == t) {
+        return (
+            Math.round(s - Math.floor(Math.max(s - ((CustomLists.get("WorshipInfo"))[cb_WorshipStuff("TrialType", CurrentMap)].length - parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[62])), 0) / parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[62])) * parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[62]))
+        );
     }
-    if gf2("PossibleRecipes2") {
-        if ((gf18("CookinPossibleRecps"), -1 != n)) {
-            for (var i = 0; 4 > i; ) {
-                DNSM.set("CookinPossibleRecpsDN1", Cooking[n][2 + i++]);
-                if (-1 != (DNSM.get("CookinPossibleRecpsDN1"))) {
-                    DNSM.get("CookinPossibleRecps".push(parsenum((CustomLists.get("RANDOlist"))[49][parsenum(DNSM.get("CookinPossibleRecpsDN1")]));
-                }
-            }
-            gf9("CookinPossibleRecpsDN1");
-            gf9("CookinPossibleRecpsDN3");
-            for (var E = 0; 4 > E; ) {
-                if ((DNSM.set("CookinPossibleRecpsDN1", parsenum(DNSM.get("CookinPossibleRecpsDN1" + Math.max(0, parsenum(Cooking[n][2 + U])), -1 != Cooking[n][2 + E++])) {
-                    DNSM.set("CookinPossibleRecpsDN3", gf12("CookinPossibleRecpsDN3");
-                }
-            }
-            if (0.5 < parsenum(DNSM.get("CookinPossibleRecpsDN1")) {
-                DNSM.set("CookinPossibleRecpsDN2", Math.min(parsenum(DNSM.get("CookinPossibleRecpsDN3"), 3);
-                for (var H = 0, DNSM, .get("CookinPossibleRecpsDN2"), parsenum(); H < ; ) {
-                    if (!$a.contains($.get("CookinPossibleRecps")DNSM.h.CookinPossibleRecps, Math.round(Math.min(59, Math.max(0, parsenum(DNSM.get("CookinPossibleRecpsDN1" + (H++ - Math.floor((gf82(-) / 2))))))) {
-                        DNSM.get("CookinPossibleRecps".push(Math.round(Math.min(59, Math.max(0, parsenum(DNSM.get("CookinPossibleRecpsDN1" + (K - Math.floor((gf82(-) / 2))))));
-                    }
-                }
-            }
+    if ("waveAdjustmentTIER" == t)
+        return (
+            Math.floor(Math.max(s - ((CustomLists.get("WorshipInfo"))[cb_WorshipStuff("TrialType", CurrentMap)].length - parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[62])), 0) / parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[62]))
+        );
+    if ("NewTowerCost" == t)
+        return Math.floor(cb_TowerStats("BaseTowerCost", s, 1) * Math.ceil((PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[56].length + 1) / 3) + 2 * Math.pow(1.3 + 0.03 * PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[56].length,
+                        PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[56].length
+                    )
+        );
+    if ("isTowerUnlocked?" == t) return 1 <= (TowerInfo[(9 + s)]) ? 1 : 0;
+    if ("TrialType" == t)
+        return 100 == CurrentMap && -1 != PixelHelperActor[8].getValue("ActorEvents_481", "_GenINFO")[57]
+            ? PixelHelperActor[8].getValue("ActorEvents_481", "_GenINFO")[57]
+            : (
+                (CustomMaps.get("WorshipMapType").existsReserved(a))
+                    ?  CustomMaps), .get("WorshipMapType").get(s)[s]
+                    : 0);
+    if ("ExpRewards" == t)
+        return Math.floor(15 * Math.pow(cb_WorshipStuff("TrialType", CurrentMap) + 1, 2) * cb_skillstats2("WorshipEXPmulti") * Math.pow(cb_WorshipStuff("WaveMultiplier", 0), 0.9)
+        );
+    if ("SoulRewards" == t)
+        return Math.floor(5 * (1 + cb_WorshipStuff("EfficiencyBonusQTY", 0) / 100) * cb_WorshipStuff("WaveMultiplier", 0) * (1 + cb_TotalFoodBonuses("WorshipSoulBoosts") / 100));
+    if ("WaveMultiplier" == t)
+        return 0 == TotemInfo[0][cb_WorshipStuff("TrialType", CurrentMap)]
+            ? 0
+            :  Math.pow((5 + parsenum(TotemInfo[0][cb_WorshipStuff("TrialType", CurrentMap)])) / 10, 2.6);
+    if ("EfficiencyBonusQTY" == t)
+        return (
+            cb_skillstats2("WorshipEfficiency") >= ((CustomLists.get("WorshipBASEinfos"))[cb_WorshipStuff("TrialType", CurrentMap)][7])
+                ? (
+                    Math.floor(100 * Math.pow(cb_skillstats2("WorshipEfficiency") / (10 * parsenum((CustomLists.get("WorshipBASEinfos"))[cb_WorshipStuff("TrialType", CurrentMap)][7])), 0.25)))
+                : 0
+        );
+    if ("SkullPts" == t) return 4 == s ? 8 : 3 == s ? 5 : 2 == s ? 3 : 1 == s ? 2 : 1;
+    if ("SkullCurrency" == t)
+        return 6 <= s
+            ? (
+                Math.floor((250 * Math.pow(Math.round(s - 6), 1.5) + Math.floor(parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]) / 1)) * (1 + cb_SaltLick(6) / 100)))
+            : 5 == s
+            ?  Math.floor((150 + Math.floor(parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]) / 1)) * (1 + cb_SaltLick(6) / 100))
+            : 4 == s
+            ?  Math.floor((70 + Math.floor(parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]) / 1)) * (1 + cb_SaltLick(6) / 100))
+            : 3 == s
+            ?  Math.floor((25 + Math.floor(parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]) / 2)) * (1 + cb_SaltLick(6) / 100))
+            : 2 == s
+            ?  Math.round((10 + Math.floor(parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]) / 3)) * (1 + cb_SaltLick(6) / 100))
+            : 1 == s
+            ?  Math.round((5 + Math.floor(parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]) / 4)) * (1 + cb_SaltLick(6) / 100))
+            :  Math.round((2 + Math.floor(parsenum(PixelHelperActor[7].getValue("ActorEvents_340", "_GenINFO")[8]) / 5)) * (1 + cb_SaltLick(6) / 100));
+    if ("SkullTypeHP" == t) return 500 < s ? 4 : 100 < s ? 3 : 20 < s ? 2 : 4 < s ? 1 : 0;
+    if ("TowerCritDmg" == t) return 1.5;
+    if ("PrayerCost" == t) {
+        if (6 > (PrayersUnlocked[s]))
+            return (
+                Math.round((CustomLists.get("PrayerInfo"))[s][6] * (1 + (4 + s / 25) * parsenum(PrayersUnlocked[s])))
+            );
+        if (9 == s) {
+            return Math.round(Math.min(2000000000, (CustomLists.get("PrayerInfo"))[s][6] * (1 + (2 + s / 20) * PrayersUnlocked[s]) * Math.pow(1.3, parsenum(PrayersUnlocked[s]) - 5)));
         }
-        gf18("CookinPossibleRecps2");
-        for (var pe = 0, DNSM.get("CookinPossibleRecps").length; pe < ; ) {
-            pe++;
-            DNSM.set("CookinPossibleRecpsDN1", 99999);
-            for (var Re = 0, DNSM, .get("CookinPossibleRecps"); Re < .length; ) {
-                var Fe = ve[Re];
-                ++Re;
-                if (parsenum(Fe < parsenum(DNSM.get("CookinPossibleRecpsDN1"))
-                        Ue = !$a.contains(DNSM.get("CookinPossibleRecps2"), Fe);
-                else
-                if (!1) {
-                    DNSM.set("CookinPossibleRecpsDN1", Fe);
-                }
-            }
-            DNSM.get("CookinPossibleRecps2".push(DNSM.get("CookinPossibleRecpsDN1"));
-        }
-        return (PixelHelperActor[21].getValue("ActorEvents_510", "_GenINFO"[69] = DNSM.get("CookinPossibleRecps2")), 0;
+        return (
+            Math.round(Math.min(2000000000, (CustomLists.get("PrayerInfo"))[s][6] * (1 + (1 + s / 20) * PrayersUnlocked[s]) * Math.pow(1.12, parsenum(PrayersUnlocked[s]) - 5)))
+        );
     }
-    if ("CookingReqToCook" == t) {
-        return parsenum((CustomLists.get("MealINFO"))[n][1]);
-    }
-    if ("CookingSPEED" == t) {
-        return 10 * gf30(6);
-    }
-    if ("CookingFIRE" == t) {
-        return 5 * gf30(7);
-    }
-    if ("CookingLUCK" == t) {
-        return 1 + Math.pow(5 * parsenum(Cooking[n][8]), 0.85) / 100;
-    }
-    if ("CookingUpgSpiceCostType" == t) {
-        return Math.floor(parsenum(Cooking[n][(6 + s)]) / 25);
-    }
-    if ("CookingUpgSpiceCostQty" == t) {
-        return 5 * (parsenum(Cooking[n][(6 + s)]) + 1);
-    }
-    if ("CookingFireREQ" == t) {
-        DNSM.set("CookinPossibleRecps", cb_CookingR("PossibleRecipes2", n, 0);
-        DNSM.set("CookinPossibleRecps", DNSM.get("CookinPossibleRecps2");
-        DNSM.set("CookinPossibleRecpsDN1", DNSM.get("CookinPossibleRecps"[(DNSM.get("CookinPossibleRecps")).length - 1]);
-        return Math.pow(parsenum(DNSM.get("CookinPossibleRecpsDN1" + 1 + 3 * Math.max(0, parsenum(DNSM.get("CookinPossibleRecpsDN1") - 5, 2 + 0.25 * Math.floor(parsenum(DNSM.get("CookinPossibleRecpsDN1") / 10));
-    }
-    if ("CookingFireREQlv" == t) {
-        DNSM.set("CookinPossibleRecpsDN1", cb_CookingR("CookingFireREQ", n, 0);
-        gf9("CookinPossibleRecpsDN2");
-        for (var ot = 0; 100 > ot; ) {
-            ot++;
-            if (!(parsenum(Cooking[n][10] >= parsenum(DNSM.get("CookinPossibleRecpsDN1"))) break;
-            DNSM.set("CookinPossibleRecpsDN1", parsenum(DNSM.get("CookinPossibleRecpsDN1") * cb_CookingR("CookingFireREQlvMULTI", 0, 0);
-            DNSM.set("CookinPossibleRecpsDN2", gf12("CookinPossibleRecpsDN2");
-        }
-        return DNSM.get("CookinPossibleRecpsDN2");
-    }
-    if ("CookingFireREQlvMULTI" == t) return 3;
-    if ("CookingMenuMealCosts" == t) {
-        return 5 * Math.pow(20 + 5 * parsenum(Meals[0][n], parsenum(Meals[0][n]));
-    }
-    if ("CookingNewRecipeOdds" == t) {
-        if (0 >= parsenum(Meals[0][parsenum(PixelHelperActor[21].getValue("ActorEvents_510", "_GenINFO")[69][n])])) {
-            return parsenum((CustomLists.get("RANDOlist"))[50][n]) * cb_CookingR("CookingLUCK", s, 0) * Math.pow(1.5, cb_CookingR("CookingFireREQlv", s, 0));
-        }
-        return parsenum((CustomLists.get("RANDOlist"))[50][n]);
-    }
-    return "CookingNewKitchenCoinCost" == t ? (50000000 + 25000000 * Math.pow(n, 2)) * Math.pow(7, n) : 0;
-},
+    return 69420;
+}),

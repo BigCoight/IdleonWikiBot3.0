@@ -7,10 +7,6 @@
 {{patchnote|D|1.3|1}}
 {{patchnote|s|1.02|1}}
 |}
-{{patchnote/head|changed=Barbarian}}
-{{patchnote/bold|Monster Decimator}}
-{{patchnote|description|There is a {% chance for a monster kill to be counted for double for opening new portals.|There is a {% chance for a monster kill to be counted for double.}}
-|}
 {{patchnote/head|changed=Maestro}}
 {{patchnote/bold|Crystal Countdown}}
 {{patchnote|x1|100|99}}
@@ -19,6 +15,10 @@
 {{patchnote/head|changed=Special Talent 2}}
 {{patchnote/bold|Supersource}}
 {{patchnote|lvlUpText||+{ Base Efficiency}}
+|}
+{{patchnote/head|changed=Barbarian}}
+{{patchnote/bold|Monster Decimator}}
+{{patchnote|description|There is a {% chance for a monster kill to be counted for double for opening new portals.|There is a {% chance for a monster kill to be counted for double.}}
 |}
 {{patchnote/head|changed=Hunter}}
 {{patchnote/bold|Eagle Eye}}
@@ -30,42 +30,6 @@
 {{patchnote|funcY|decay|bigBase}}
 |}
 {{patchnote/head|changed=Special Talent 3}}
-{{patchnote/bold|Tiptoe Quickness}}
-{{patchnote|name| |Tiptoe Quickness}}
-{{patchnote|description| |+{% Movement Speed, if you're under 200% Speed. Otherwise, +}% Accuracy.}}
-{{patchnote|x1| |25}}
-{{patchnote|x2| |100}}
-{{patchnote|funcX| |decay}}
-{{patchnote|y1| |30}}
-{{patchnote|y2| |100}}
-{{patchnote|funcY| |decay}}
-{{patchnote|lvlUpText| |+{% Spd Or +}% Acc}}
-{{patchnote|skillIndex| |641}}
-{{patchnote|activeData| |None}}
-{{patchnote/bold|Overaccurate Crit}}
-{{patchnote|name| |Overaccurate Crit}}
-{{patchnote|description| |+{% Crit Chance for every Power of 10 accuracy above 100% Hit Chance.}}
-{{patchnote|x1| |8}}
-{{patchnote|x2| |70}}
-{{patchnote|funcX| |decay}}
-{{patchnote|y1| |0}}
-{{patchnote|y2| |0}}
-{{patchnote|funcY| |txt}}
-{{patchnote|lvlUpText| |+{% Crit Chance}}
-{{patchnote|skillIndex| |645}}
-{{patchnote|activeData| |None}}
-{{patchnote/bold|Coins For Charon}}
-{{patchnote|name| |Coins For Charon}}
-{{patchnote|description| |+{% cash per Multikill Damage Tier, as shown by the purple multiplier in AFK Info}}
-{{patchnote|x1| |25}}
-{{patchnote|x2| |75}}
-{{patchnote|funcX| |decay}}
-{{patchnote|y1| |0}}
-{{patchnote|y2| |0}}
-{{patchnote|funcY| |txt}}
-{{patchnote|lvlUpText| |+{% Cash Per Tier}}
-{{patchnote|skillIndex| |643}}
-{{patchnote|activeData| |None}}
 {{patchnote/bold|Ubercharged Health}}
 {{patchnote|name| |Ubercharged Health}}
 {{patchnote|description| |Increases base HP by +{. Cardiovascularly impressive!}}
@@ -89,6 +53,42 @@
 {{patchnote|funcY| |txt}}
 {{patchnote|lvlUpText| |+{% Cash}}
 {{patchnote|skillIndex| |644}}
+{{patchnote|activeData| |None}}
+{{patchnote/bold|Tiptoe Quickness}}
+{{patchnote|name| |Tiptoe Quickness}}
+{{patchnote|description| |+{% Movement Speed, if you're under 200% Speed. Otherwise, +}% Accuracy.}}
+{{patchnote|x1| |25}}
+{{patchnote|x2| |100}}
+{{patchnote|funcX| |decay}}
+{{patchnote|y1| |30}}
+{{patchnote|y2| |100}}
+{{patchnote|funcY| |decay}}
+{{patchnote|lvlUpText| |+{% Spd Or +}% Acc}}
+{{patchnote|skillIndex| |641}}
+{{patchnote|activeData| |None}}
+{{patchnote/bold|Coins For Charon}}
+{{patchnote|name| |Coins For Charon}}
+{{patchnote|description| |+{% cash per Multikill Damage Tier, as shown by the purple multiplier in AFK Info}}
+{{patchnote|x1| |25}}
+{{patchnote|x2| |75}}
+{{patchnote|funcX| |decay}}
+{{patchnote|y1| |0}}
+{{patchnote|y2| |0}}
+{{patchnote|funcY| |txt}}
+{{patchnote|lvlUpText| |+{% Cash Per Tier}}
+{{patchnote|skillIndex| |643}}
+{{patchnote|activeData| |None}}
+{{patchnote/bold|Overaccurate Crit}}
+{{patchnote|name| |Overaccurate Crit}}
+{{patchnote|description| |+{% Crit Chance for every Power of 10 accuracy above 100% Hit Chance.}}
+{{patchnote|x1| |8}}
+{{patchnote|x2| |70}}
+{{patchnote|funcX| |decay}}
+{{patchnote|y1| |0}}
+{{patchnote|y2| |0}}
+{{patchnote|funcY| |txt}}
+{{patchnote|lvlUpText| |+{% Crit Chance}}
+{{patchnote|skillIndex| |645}}
 {{patchnote|activeData| |None}}
 |}
 </div><div class="GenericChild">

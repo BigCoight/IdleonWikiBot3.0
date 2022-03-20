@@ -40,16 +40,16 @@ class SpecificItemRepo(Repository[BaseItem]):
 	"""
 
 	@classmethod
-	def initDependencies(cls):
-		ItemDetailRepo.initialise(cls.codeReader)
-		RecipeRepo.initialise(cls.codeReader)
-		CardRepo.initialise(cls.codeReader)
-		EnemyDetailsRepo.initialise(cls.codeReader)
-		StatueRepo.initialise(cls.codeReader)
-		FishingToolkitRepo.initialise(cls.codeReader)
-		KeychainBonusRepo.initialise(cls.codeReader)
-		StorageOrderRepo.initialise(cls.codeReader)
-		StampDescriptionRepo.initialise(cls.codeReader)
+	def initDependencies(cls, log = True):
+		ItemDetailRepo.initialise(cls.codeReader, log)
+		RecipeRepo.initialise(cls.codeReader, log)
+		CardRepo.initialise(cls.codeReader, log)
+		EnemyDetailsRepo.initialise(cls.codeReader, log)
+		StatueRepo.initialise(cls.codeReader, log)
+		FishingToolkitRepo.initialise(cls.codeReader, log)
+		KeychainBonusRepo.initialise(cls.codeReader, log)
+		StorageOrderRepo.initialise(cls.codeReader, log)
+		StampDescriptionRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def generateRepo(cls) -> None:

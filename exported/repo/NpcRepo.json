@@ -3414,7 +3414,7 @@
                 "Rewards": [{"item": "Timecandy2", "quantity": 1}, {"type": "Class", "amount": 4000}],
                 "QuestName": "Stiltzcho4",
                 "Difficulty": 2,
-                "note": "AFK at the [[Green Mushroom]] map for a total of 4 hours. The time spent AFK does not have to be all in one go.",
+                "note": "AFK at the [[Green Mushroom]] map for a total of 4 hours. The time spent AFK does not have to be all in one go. Choppin the Oak Tree counts, because it's on the same map.",
                 "CustomType": "Stiltzcho4",
                 "CustomArray": [{"desc": "AFK at Spores:", "finalV": 14400, "type": "GreaterEqual", "startV": 0}]
             },
@@ -3429,7 +3429,7 @@
                 "Rewards": [{"item": "Timecandy3", "quantity": 1}, {"type": "Class", "amount": 4000}],
                 "QuestName": "Stiltzcho5",
                 "Difficulty": 2,
-                "note": "The time spent AFK does not have to be all in one go.",
+                "note": "AFK at the [[Frog]] map for a total of 8 hours. The time spent AFK does not have to be all in one go.",
                 "CustomType": "Stiltzcho5",
                 "CustomArray": [{"desc": "AFK at Frogs:", "finalV": 28800, "type": "GreaterEqual", "startV": 0}]
             },
@@ -3448,7 +3448,7 @@
                 ],
                 "QuestName": "Stiltzcho6",
                 "Difficulty": 3,
-                "note": " ",
+                "note": " AFK at the [[Slime]] map for a total of 16 hours. The time spent AFK does not have to be all in one go.",
                 "CustomType": "Stiltzcho6",
                 "CustomArray": [{"desc": "AFK at Slimes:", "finalV": 57600, "type": "GreaterEqual", "startV": 0}]
             }
@@ -4110,7 +4110,7 @@
                 "Rewards": [{"item": "Key1", "quantity": 3}],
                 "QuestName": "Dog Bone1",
                 "Difficulty": 2,
-                "note": "Complete this quest to earn daily keys.",
+                "note": "Complete this quest to earn daily {{CraftReq|Forest Villa Key}}s.",
                 "ItemReq": [{"item": "Quest12", "quantity": 10}]
             },
             "Bow Wow going Dow..n!": {
@@ -4357,7 +4357,7 @@
                 "Rewards": [{"item": "PremiumGem", "quantity": 2}, {"type": "Class", "amount": 2500}],
                 "QuestName": "Papua Piggea1",
                 "Difficulty": 3,
-                "note": "",
+                "note": "The Kapow Stamp is a quest item, it will NOT drop unless the quest is active. Papua Piggea does not take it from you, so you can turn in the quest and then bring the stamp to your bank in town.",
                 "ItemReq": [{"item": "StampA8", "quantity": 1}]
             },
             "Crystal Crime Stopper": {
@@ -4375,7 +4375,7 @@
                 ],
                 "QuestName": "Papua Piggea2",
                 "Difficulty": 4,
-                "note": "",
+                "note": "The Crystallin Stamp is a quest item, it will NOT drop unless the quest is active. Papua Piggea WILL take it from you, so if you turn your only one in, you will have to start the quest on another character to get one for your bank in town. It's best to keep the first one for yourself, then farm a new one for the quest.",
                 "ItemReq": [{"item": "StampC3", "quantity": 1}]
             },
             "Stamp Collecting": {
@@ -4393,7 +4393,7 @@
                 ],
                 "QuestName": "Papua Piggea3",
                 "Difficulty": 6,
-                "note": "",
+                "note": "Longsword Stamp drops from [[Baby Boa]], Mana Stamp comes from the W1 [[Vendors|Town Shop]], and Smart Dirt Stamp comes from AFK [[Choppin]] W1 trees/as a rare drop killing [[Crystal Carrot]].",
                 "ItemReq": [
                     {"item": "StampA7", "quantity": 3},
                     {"item": "StampA3", "quantity": 5},
@@ -5387,7 +5387,7 @@
                 ],
                 "QuestName": "Postboy Pablob1",
                 "Difficulty": 6,
-                "note": "",
+                "note": "The Empty Box recipe comes from [[Tasks|Taskboard]] [[Tasks/Unlocks|Recipe Unlocks]].",
                 "ItemReq": [{"item": "Quest13", "quantity": 5}]
             }
         },
@@ -5709,7 +5709,7 @@
                 ],
                 "QuestName": "Carpetiem2",
                 "Difficulty": 4,
-                "note": "Load up your inventory with the necessary materials before accepting the quest, then craft the bullets and turn the quest in. If you open your storage while the quest is active, forfeit and start over.",
+                "note": "Load up your inventory with the necessary materials before accepting the quest, then craft the bullets and turn the quest in. If you open your storage while the quest is active, forfeit and start over. *You can use 'Craft From Storage' in the Anvil.",
                 "CustomType": "Carpetiem2",
                 "CustomArray": [
                     {"desc": "Bullets Crafted:", "finalV": 225, "type": "GreaterEqual", "startV": 0},
@@ -5919,7 +5919,7 @@
                 "Rewards": [{"item": "Key2", "quantity": 2}],
                 "QuestName": "Djonnut2",
                 "Difficulty": 4,
-                "note": "Kill 10k [[Moonmoon|Moonmoons]] and gather 1 [[Ghost]] drop. Moonmoons killed/Ghosts collected before you start this quest do not count.",
+                "note": "Kill 10k [[Moonmoon|Moonmoons]] and gather 1 [[Ghost]] drop. Moonmoons killed/Ghosts collected before you start this quest do not count. Complete this quest to earn daily {{CraftReq|Efaunt's Tomb Key}}s.",
                 "CustomType": "Djonnut2",
                 "CustomArray": [
                     {"desc": "Moonmen Defeated:", "finalV": 10000, "type": "GreaterEqual", "startV": 0},
@@ -6956,7 +6956,7 @@
                 ],
                 "QuestName": "Wellington4",
                 "Difficulty": 5,
-                "note": "Number of drop, not the total quantity of item. Coins also count. Spaces do NOT count.",
+                "note": "A stack of items counts as one on the ground. Coins also count as items. Spaces in your name do NOT count.",
                 "CustomType": "Wellington4",
                 "CustomArray": [{"desc": "Puzzle Complete:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
@@ -7110,7 +7110,7 @@
                 "Rewards": [{"item": "NPCtoken14", "quantity": 1}, {"item": "ExpBalloon2", "quantity": 5}],
                 "QuestName": "Dazey2",
                 "Difficulty": 4,
-                "note": "After completing this quest, Dazey will be replaced by Sprout.",
+                "note": "After completing this quest, Dazey will be replaced by [[Sprout]].",
                 "ItemReq": [
                     {"item": "ForestTree", "quantity": 1000},
                     {"item": "Quest41", "quantity": 5},
@@ -8837,7 +8837,7 @@
                 "Rewards": [{"item": "PremiumGem", "quantity": 3}],
                 "QuestName": "Hoggindaz1",
                 "Difficulty": 1,
-                "note": " ",
+                "note": "At rank 1, the refinery uses 10 Spore Caps and 5 Copper Ore every 15 minutes. You need at least 960 Spore Caps and 480 Copper Ore in your storage chest.",
                 "CustomType": "Hoggindaz1",
                 "CustomArray": [
                     {"desc": "Refinery Turned On:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -8855,7 +8855,7 @@
                 "Rewards": [{"item": "Timecandy1", "quantity": 1}, {"item": "PremiumGem", "quantity": 4}],
                 "QuestName": "Hoggindaz2",
                 "Difficulty": 4,
-                "note": " ",
+                "note": "You must complete the [[Lord of the Hunt]]'s first quest to have the ability to place traps in the jungle ([[Slime]] map)",
                 "CustomType": "Hoggindaz2",
                 "CustomArray": [
                     {"desc": "Buy Trap from Shop:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -8878,7 +8878,7 @@
                 "Rewards": [{"item": "TalentBook1", "quantity": 3635100}, {"item": "PremiumGem", "quantity": 2}],
                 "QuestName": "Hoggindaz3",
                 "Difficulty": 3,
-                "note": " ",
+                "note": "Collect a cog on the character with this quest active. Cogs collected by another character won't count. Wizard Defenders are in the middle row.",
                 "CustomType": "Hoggindaz3",
                 "CustomArray": [
                     {"desc": "3D Printer Built:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -8897,7 +8897,7 @@
                 "Rewards": [{"item": "Timecandy1", "quantity": 1}, {"item": "PremiumGem", "quantity": 2}],
                 "QuestName": "Hoggindaz4",
                 "Difficulty": 2,
-                "note": " ",
+                "note": "You need at least 25% charge to play a round of [[Worship]] at the [[Glublin]] totem. Purchase and equip a {{CraftReq|Ceramic Skull}} from the W3 town shop to gain charge. Charge is per-character, not account wide.",
                 "CustomType": "Hoggindaz4",
                 "CustomArray": [
                     {
@@ -8920,7 +8920,7 @@
                 "Rewards": [{"item": "TalentBook1", "quantity": 3639100}, {"item": "PremiumGem", "quantity": 2}],
                 "QuestName": "Hoggindaz5",
                 "Difficulty": 1,
-                "note": " ",
+                "note": "You must be in a map with AFK info of an activity in order to sample it. For instance, go to the [[Green Mushroom]] map or the [[Copper Ore]] mining area, then activate the talent. You can then print whatever you sampled in the 3D printer. Until you upgrade your printer in construction, only your first character can take samples.",
                 "CustomType": "Hoggindaz5",
                 "CustomArray": [{"desc": "Take Samples:", "finalV": 2, "type": "GreaterEqual", "startV": 0}]
             },
@@ -9283,7 +9283,7 @@
                 "Rewards": [{"item": "ExpBalloon2", "quantity": 5}, {"item": "PremiumGem", "quantity": 3}],
                 "QuestName": "Bill Brr1",
                 "Difficulty": 4,
-                "note": " ",
+                "note": "This is easily done in [[Worship]] where your character attacks all do only 1 damage.",
                 "CustomType": "Bill Brr1",
                 "CustomArray": [{"desc": "Odd Dmg in a Row:", "finalV": 8, "type": "GreaterEqual", "startV": 0}]
             },
@@ -9298,7 +9298,7 @@
                 "Rewards": [{"item": "GemP16", "quantity": 1}, {"item": "PremiumGem", "quantity": 4}],
                 "QuestName": "Bill Brr2",
                 "Difficulty": 2,
-                "note": " ",
+                "note": "The Gigafrog is always shielded, you must kill it with the shield up. Unequip HP-increasing Prayers to avoid extending the fight. Attacking the Gigafrog with a bow will cause it to glitch out. Archers should unequip your bow before spawning the Gigafrog.",
                 "CustomType": "Bill Brr2",
                 "CustomArray": [{"desc": "Frog Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
@@ -9313,7 +9313,7 @@
                 "Rewards": [{"item": "Timecandy2", "quantity": 2}],
                 "QuestName": "Bill Brr3",
                 "Difficulty": 3,
-                "note": " ",
+                "note": "Spears do AOE damage and should be unequipped to avoid killing the mushrooms by accident.",
                 "CustomType": "Bill Brr3",
                 "CustomArray": [
                     {"desc": "Cryo Kills:", "finalV": 3, "type": "GreaterEqual", "startV": 0},
@@ -9360,7 +9360,7 @@
                 "Rewards": [{"item": "GemP16", "quantity": 2}],
                 "QuestName": "Bill Brr6",
                 "Difficulty": 5,
-                "note": " ",
+                "note": "",
                 "CustomType": "Bill Brr6",
                 "CustomArray": [
                     {"desc": "Orbs Shattered:", "finalV": 18, "type": "GreaterEqual", "startV": 0},
@@ -9584,7 +9584,7 @@
                 "Rewards": [{"item": "Key3", "quantity": 2}],
                 "QuestName": "Bellows3",
                 "Difficulty": 4,
-                "note": " ",
+                "note": "You must equip the [[Worship#Tachion_of_the_Titans|Tachion of the Titans]] Prayer to spawn Giant Monsters. Complete this quest to earn daily {{CraftReq|Chizoar's Cavern Key}}s.",
                 "CustomType": "Bellows3",
                 "CustomArray": [{"desc": "Giant Eye's Killed:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
@@ -9756,7 +9756,7 @@
                 ],
                 "QuestName": "Crystalswine6",
                 "Difficulty": 7,
-                "note": " ",
+                "note": "Killing all [[Bloque]]s onscreen will leave you at 127/168, but the quest is looking for 128/168. Wait for one additional Bloque to spawn and kill it before moving on to [[Sir Stache]].",
                 "CustomType": "Crystalswine6",
                 "CustomArray": [
                     {"desc": "Monsters Defeated:", "finalV": 168, "type": "GreaterEqual", "startV": 0},
@@ -9896,7 +9896,7 @@
                 "Rewards": [{"item": "GemP16", "quantity": 1}],
                 "QuestName": "Yondergreen2",
                 "Difficulty": 3,
-                "note": " ",
+                "note": "Lowering your droprate to 2x (enough to guarantee coins, but lower chance at items) and reducing your multikill (via Big Brain Time [[Worship#Prayers|Prayer]] can make this slightly easier.",
                 "CustomType": "Yondergreen2",
                 "CustomArray": [{"desc": "Coins on Ground:", "finalV": 75, "type": "GreaterEqual", "startV": 0}]
             },
@@ -9940,7 +9940,7 @@
                 "Rewards": [{"item": "Timecandy3", "quantity": 1}, {"item": "GemP16", "quantity": 1}],
                 "QuestName": "Yondergreen5",
                 "Difficulty": 2,
-                "note": " ",
+                "note": "You can only be off by +/- 3 minutes, so you cannot use candy. Set a timer.",
                 "CustomType": "Yondergreen5",
                 "CustomArray": [{"desc": "Idle with Snouts:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
@@ -9955,7 +9955,7 @@
                 "Rewards": [{"item": "Timecandy4", "quantity": 1}, {"item": "GemP16", "quantity": 2}],
                 "QuestName": "Yondergreen6",
                 "Difficulty": 4,
-                "note": " ",
+                "note": "You can only be off by +/- 3 minutes, so you cannot use candy. Set a timer.",
                 "CustomType": "Yondergreen6",
                 "CustomArray": [{"desc": "Idle with LH:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             },
@@ -9970,7 +9970,7 @@
                 "Rewards": [{"item": "NPCtoken36", "quantity": 1}, {"item": "Timecandy5", "quantity": 1}],
                 "QuestName": "Yondergreen7",
                 "Difficulty": 7,
-                "note": " ",
+                "note": "You can only be off by +/- 3 minutes, so you cannot use candy. Set a timer.",
                 "CustomType": "Yondergreen7",
                 "CustomArray": [{"desc": "Idle with Bill:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
@@ -10254,7 +10254,7 @@
                 "Rewards": [{"item": "Timecandy1", "quantity": 2}, {"item": "GemP16", "quantity": 1}],
                 "QuestName": "Shuvelle1",
                 "Difficulty": 3,
-                "note": " ",
+                "note": "You can weaken the Mamooths prior to accepting the quest and the timer starting to be able to kill them quicker. ",
                 "CustomType": "Shuvelle1",
                 "CustomArray": [
                     {"desc": "Tusks Dropped:", "finalV": 6, "type": "GreaterEqual", "startV": 0},
@@ -10333,7 +10333,7 @@
                 "Rewards": [{"item": "Timecandy3", "quantity": 1}, {"item": "GemP16", "quantity": 2}],
                 "QuestName": "Shuvelle6",
                 "Difficulty": 4,
-                "note": " ",
+                "note": "Once the shovels are in place, leave them where they are and return to Shuvelle. If you pick them up before leaving the screen, the counter will reset back down to 0 and you must place them again.",
                 "CustomType": "Shuvelle6",
                 "CustomArray": [{"desc": "Shovels in Place:", "finalV": 15, "type": "GreaterEqual", "startV": 0}]
             },
@@ -10352,7 +10352,7 @@
                 ],
                 "QuestName": "Shuvelle7",
                 "Difficulty": 5,
-                "note": " ",
+                "note": "Make the shovels drop at the rightmost edge of the bottom right spawn platform.",
                 "CustomType": "Shuvelle7",
                 "CustomArray": [{"desc": "Shovels in Place:", "finalV": 16, "type": "GreaterEqual", "startV": 0}]
             }
@@ -10552,7 +10552,7 @@
                 "Rewards": [{"item": "NPCtoken31", "quantity": 1}, {"item": "TixCol", "quantity": 2}],
                 "QuestName": "Lonely Hunter3",
                 "Difficulty": 4,
-                "note": " ",
+                "note": "",
                 "CustomType": "Lonely Hunter3",
                 "CustomArray": [
                     {"desc": "Bronze Chests:", "finalV": 7, "type": "GreaterEqual", "startV": 0},
@@ -11453,7 +11453,7 @@
                 ],
                 "QuestName": "Walupiggy4",
                 "Difficulty": 5,
-                "note": "[https://www.youtube.com/watch?v=33k5wVGUyII Treasure Hunt #4 Video]",
+                "note": "[https://www.youtube.com/watch?v=33k5wVGUyII Treasure Hunt #4 Video] Goldegg Capsules are no longer usable in game.",
                 "CustomType": "Walupiggy4",
                 "CustomArray": [
                     {"desc": "Steps Completed:", "finalV": 8, "type": "GreaterEqual", "startV": 0},
@@ -11536,7 +11536,7 @@
                 "Rewards": [{"item": "DungCredits1", "quantity": 10}],
                 "QuestName": "Toadstall1",
                 "Difficulty": 1,
-                "note": " ",
+                "note": "The interface to create a party doesn't appear until you reach level 11.",
                 "CustomType": "Toadstall1",
                 "CustomArray": [
                     {"desc": "Create a Party:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -11709,7 +11709,7 @@
                 "Rewards": [{"item": "GemP16", "quantity": 3}, {"item": "DungCredits1", "quantity": 25}],
                 "QuestName": "Gangster Gus3",
                 "Difficulty": 5,
-                "note": "Quest is bugged as of patch 1.30b ",
+                "note": " ",
                 "CustomType": "Gangster Gus3",
                 "CustomArray": [{"desc": "Defeat Snakenhotep 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
             }
@@ -12015,9 +12015,9 @@
             "noQuest": 0,
             "repeatable": "Unknown",
             "type": "Unknown",
-            "birthWeight": 1.22,
-            "starSign": "Taurus",
-            "mothersMaidenName": "Soukup",
+            "birthWeight": 6.2,
+            "starSign": "Cancer",
+            "mothersMaidenName": "Ulrich",
             "notes": ""
         },
         "quests": {
@@ -12101,9 +12101,9 @@
             "noQuest": 0,
             "repeatable": "Unknown",
             "type": "Unknown",
-            "birthWeight": 6.49,
-            "starSign": "Aries",
-            "mothersMaidenName": "Thompson",
+            "birthWeight": 3.08,
+            "starSign": "Aquarius",
+            "mothersMaidenName": "Hancock",
             "notes": ""
         },
         "quests": {
@@ -12229,9 +12229,9 @@
             "noQuest": 0,
             "repeatable": "Unknown",
             "type": "Unknown",
-            "birthWeight": 3.83,
-            "starSign": "Taurus",
-            "mothersMaidenName": "Vogal",
+            "birthWeight": 1.61,
+            "starSign": "Capricorn",
+            "mothersMaidenName": "Johnson",
             "notes": ""
         },
         "quests": {
@@ -12373,9 +12373,9 @@
             "noQuest": 0,
             "repeatable": "Unknown",
             "type": "Unknown",
-            "birthWeight": 3.64,
-            "starSign": "Capricorn",
-            "mothersMaidenName": "Wakefield",
+            "birthWeight": 3.75,
+            "starSign": "Gemini",
+            "mothersMaidenName": "Ingram",
             "notes": ""
         },
         "quests": {

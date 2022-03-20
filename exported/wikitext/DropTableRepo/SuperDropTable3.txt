@@ -1,0 +1,22 @@
+__NOCACHE__
+{{#cargo_query:tables=DropTables
+ |fields=CONCAT("[[", DropSourceEntity, "]]")=DropSourceEntity
+ |where=TableName HOLDS "{{PAGENAME}}" AND DropSourceEntity NOT LIKE "{{PAGENAME}}"
+ |group by=DropTables.DropSourceEntity
+ |order by=`DropSourceEntity` ASC
+ |default=
+ |intro=This is a Mega Rare Droptable for:
+ |outro=To see monster specific droprates, visit the specified source page.
+ |limit=100
+ |offset=0
+ |format=ul
+ |columns=1
+}}
+{{DropTable/head}}
+{{DropTable|Silver Pen|0.09|1|tablename=SuperDropTable3|tabletype=Mega}}
+{{DropTable|Saw Stamp|0.015|1|tablename=SuperDropTable3|tabletype=Mega}}
+{{DropTable|Lucky Lad|0.0003|1|tablename=SuperDropTable3|tabletype=Mega}}
+{{DropTable|Talent Point Reset Fragment|0.15|1|tablename=SuperDropTable3|tabletype=Mega}}
+{{DropTable|Golden Ham|0.5|1|tablename=SuperDropTable3|tabletype=Mega}}
+{{DropTable|Bronze Obol of Multikill|0.03045|1|tablename=SuperDropTable3|tabletype=Mega}}
+{{DropTable|Mystery Upgrade Stone II|0.7|3|tablename=SuperDropTable3|tabletype=Mega}}

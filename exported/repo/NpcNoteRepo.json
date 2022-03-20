@@ -156,10 +156,14 @@
             "No Stone Unturned": {"note": ""},
             "Investigator by Day, Prankster by Night": {"note": ""},
             "Time Crime Episode 1": {
-                "note": "AFK at the [[Green Mushroom]] map for a total of 4 hours. The time spent AFK does not have to be all in one go."
+                "note": "AFK at the [[Green Mushroom]] map for a total of 4 hours. The time spent AFK does not have to be all in one go. Choppin the Oak Tree counts, because it's on the same map."
             },
-            "Time Crime Episode 2": {"note": "The time spent AFK does not have to be all in one go."},
-            "Time Crime Season Finale": {"note": " "}
+            "Time Crime Episode 2": {
+                "note": "AFK at the [[Frog]] map for a total of 8 hours. The time spent AFK does not have to be all in one go."
+            },
+            "Time Crime Season Finale": {
+                "note": " AFK at the [[Slime]] map for a total of 16 hours. The time spent AFK does not have to be all in one go."
+            }
         }
     },
     "Funguy": {
@@ -180,7 +184,7 @@
     },
     "Dog Bone (NPC)": {
         "notes": {
-            "Why he Die???": {"note": "Complete this quest to earn daily keys."},
+            "Why he Die???": {"note": "Complete this quest to earn daily {{CraftReq|Forest Villa Key}}s."},
             "Bow Wow Going Dow..n!": {"note": "This token is not reclaimable."}
         }
     },
@@ -188,9 +192,15 @@
     "Constructor Crow": {"notes": {"Restoring Power to Another Portal": {"note": ""}}},
     "Papua Piggea": {
         "notes": {
-            "Oinko Boinko": {"note": ""},
-            "Crystal Crime Stopper": {"note": ""},
-            "Stamp Collecting": {"note": ""},
+            "Oinko Boinko": {
+                "note": "The Kapow Stamp is a quest item, it will NOT drop unless the quest is active. Papua Piggea does not take it from you, so you can turn in the quest and then bring the stamp to your bank in town."
+            },
+            "Crystal Crime Stopper": {
+                "note": "The Crystallin Stamp is a quest item, it will NOT drop unless the quest is active. Papua Piggea WILL take it from you, so if you turn your only one in, you will have to start the quest on another character to get one for your bank in town. It's best to keep the first one for yourself, then farm a new one for the quest."
+            },
+            "Stamp Collecting": {
+                "note": "Longsword Stamp drops from [[Baby Boa]], Mana Stamp comes from the W1 [[Vendors|Town Shop]], and Smart Dirt Stamp comes from AFK [[Choppin]] W1 trees/as a rare drop killing [[Crystal Carrot]]."
+            },
             "This Little Piggy Felt Remorse": {"note": ""}
         }
     },
@@ -221,7 +231,13 @@
     "Whattso": {
         "notes": {"Bobbin' Bobbers": {"note": " "}, "The Biggest Fish in the Sea...?": {"note": " "}}
     },
-    "Postboy Pablob": {"notes": {"Signed, Sealed and Lost in the Post": {"note": ""}}},
+    "Postboy Pablob": {
+        "notes": {
+            "Signed, Sealed and Lost in the Post": {
+                "note": "The Empty Box recipe comes from [[Tasks|Taskboard]] [[Tasks/Unlocks|Recipe Unlocks]]."
+            }
+        }
+    },
     "Bandit Bob": {
         "notes": {
             "Bullets for Bandit Bob!": {"note": " "},
@@ -233,7 +249,7 @@
     "Carpetiem": {
         "notes": {
             "Old Timey Craftin'": {
-                "note": "Load up your inventory with the necessary materials before accepting the quest, then craft the bullets and turn the quest in. If you open your storage while the quest is active, forfeit and start over."
+                "note": "Load up your inventory with the necessary materials before accepting the quest, then craft the bullets and turn the quest in. If you open your storage while the quest is active, forfeit and start over. *You can use 'Craft From Storage' in the Anvil."
             },
             "Be like Buster!": {
                 "note": "Reclaim the [[Crimson String]] from your codex to craft a new pair of [[Boxing Gloves]]. Forfeit and start over if you need to respawn the monster."
@@ -247,7 +263,7 @@
                 "note": "The recipe for Icing Ironbite comes from [[Tasks]]. Average Mana Potions are dropped by Forest monsters and [[Amarok]]."
             },
             "I'm Blue Dabadedada": {
-                "note": "Kill 10k [[Moonmoon|Moonmoons]] and gather 1 [[Ghost]] drop. Moonmoons killed/Ghosts collected before you start this quest do not count."
+                "note": "Kill 10k [[Moonmoon|Moonmoons]] and gather 1 [[Ghost]] drop. Moonmoons killed/Ghosts collected before you start this quest do not count. Complete this quest to earn daily {{CraftReq|Efaunt's Tomb Key}}s."
             },
             "The Blue New World": {"note": "These are all monster drops from World 3."}
         }
@@ -297,13 +313,13 @@
                 "note": "It has to be typed exactly like Wellington says, cAsE sEnSiTiVe. If you're not using a US Keyboard layout, Shift+1 is how you must type the exclamation point. Requires level 70."
             },
             "Puzzles and Math, a Winning Combination!": {
-                "note": "Number of drop, not the total quantity of item. Coins also count. Spaces do NOT count."
+                "note": "A stack of items counts as one on the ground. Coins also count as items. Spaces in your name do NOT count."
             }
         }
     },
     "Dazey": {
         "notes": {
-            "Literally Physics": {"note": "After completing this quest, Dazey will be replaced by Sprout."}
+            "Literally Physics": {"note": "After completing this quest, Dazey will be replaced by [[Sprout]]."}
         }
     },
     "Cowbo Jones": {
@@ -355,14 +371,107 @@
     "Iceland Irwin": {"notes": {"Crikey, it's cold out!": {"note": " "}}},
     "Hoggindaz": {
         "notes": {
-            "Turn ON for what???": {"note": " "},
-            "Trapping with the Lord": {"note": " "},
-            "Constructing a Tower": {"note": " "},
-            "Monke Tower Time!": {"note": " "},
-            "Taking Samples": {"note": " "}
+            "Turn ON for what???": {
+                "note": "At rank 1, the refinery uses 10 Spore Caps and 5 Copper Ore every 15 minutes. You need at least 960 Spore Caps and 480 Copper Ore in your storage chest."
+            },
+            "Trapping with the Lord": {
+                "note": "You must complete the [[Lord of the Hunt]]'s first quest to have the ability to place traps in the jungle ([[Slime]] map)"
+            },
+            "Constructing a Tower": {
+                "note": "Collect a cog on the character with this quest active. Cogs collected by another character won't count. Wizard Defenders are in the middle row."
+            },
+            "Monke Tower Time!": {
+                "note": "You need at least 25% charge to play a round of [[Worship]] at the [[Glublin]] totem. Purchase and equip a {{CraftReq|Ceramic Skull}} from the W3 town shop to gain charge. Charge is per-character, not account wide."
+            },
+            "Taking Samples": {
+                "note": "You must be in a map with AFK info of an activity in order to sample it. For instance, go to the [[Green Mushroom]] map or the [[Copper Ore]] mining area, then activate the talent. You can then print whatever you sampled in the 3D printer. Until you upgrade your printer in construction, only your first character can take samples."
+            },
+            "Voter Recognition": {"note": " "},
+            "Voter Appeasement": {"note": " "},
+            "Voter Apathy": {"note": " "},
+            "Chizoar No More": {"note": " "},
+            "The Fresh Prince of the Tundra": {"note": " "}
         }
     },
-    "Lonely Hunter": {"notes": {"Leaf Him Alone!": {"note": " "}, "Skeleton? Skelegone!": {"note": " "}}},
+    "Bill Brr": {
+        "notes": {
+            "Fairly Odd Damage": {
+                "note": "This is easily done in [[Worship]] where your character attacks all do only 1 damage."
+            },
+            "Laughin' Amphibian": {
+                "note": "The Gigafrog is always shielded, you must kill it with the shield up. Unequip HP-increasing Prayers to avoid extending the fight. Attacking the Gigafrog with a bow will cause it to glitch out. Archers should unequip your bow before spawning the Gigafrog."
+            },
+            "The Spores are a Bore": {
+                "note": "Spears do AOE damage and should be unequipped to avoid killing the mushrooms by accident."
+            },
+            "Coin Shenanigans": {"note": " "},
+            "Have a Candy": {"note": " "},
+            "Duckin' and Shatterin'": {"note": ""},
+            "Hatin' on the Green One": {"note": " "}
+        }
+    },
+    "Bellows": {
+        "notes": {
+            "Poking Some Eyes Out": {"note": " "},
+            "Eyexperience": {"note": " "},
+            "Veyebing": {
+                "note": "You must equip the [[Worship#Tachion_of_the_Titans|Tachion of the Titans]] Prayer to spawn Giant Monsters. Complete this quest to earn daily {{CraftReq|Chizoar's Cavern Key}}s."
+            },
+            "Optometric Hoarder": {"note": " "}
+        }
+    },
+    "Crystalswine": {
+        "notes": {
+            "Melting the Snakes": {"note": " "},
+            "Sunrunning to Chizoar": {"note": " "},
+            "Global Warming": {
+                "note": "Killing all [[Bloque]]s onscreen will leave you at 127/168, but the quest is looking for 128/168. Wait for one additional Bloque to spawn and kill it before moving on to [[Sir Stache]]."
+            }
+        }
+    },
+    "Yondergreen": {
+        "notes": {
+            "Infrastructure Plan": {"note": " "},
+            "Economic Policy": {
+                "note": "Lowering your droprate to 2x (enough to guarantee coins, but lower chance at items) and reducing your multikill (via Big Brain Time [[Worship#Prayers|Prayer]] can make this slightly easier."
+            },
+            "Stance on Big Tech": {"note": " "},
+            "Legislative Action": {"note": " "},
+            "No Snapping Contract": {"note": "You can only be off by +/- 3 minutes, so you cannot use candy. Set a timer."},
+            "Keep Away Contract": {"note": "You can only be off by +/- 3 minutes, so you cannot use candy. Set a timer."},
+            "Ad Solidarity Contract": {"note": "You can only be off by +/- 3 minutes, so you cannot use candy. Set a timer."}
+        }
+    },
+    "Worldo": {
+        "notes": {
+            "Odd Jobs for Cold Hard Cash": {"note": " "},
+            "Can't Guard if you're Dead!": {"note": " "}
+        }
+    },
+    "Shuvelle": {
+        "notes": {
+            "Mayoral Luck": {
+                "note": "You can weaken the Mamooths prior to accepting the quest and the timer starting to be able to kill them quicker. "
+            },
+            "Mayoral Skill": {"note": " "},
+            "Mayoral Sack Size": {"note": " "},
+            "Mayoral Movie Taste": {"note": " "},
+            "Diggy Hole!": {"note": " "},
+            "Diggy Diggy Hole!": {
+                "note": "Once the shovels are in place, leave them where they are and return to Shuvelle. If you pick them up before leaving the screen, the counter will reset back down to 0 and you must place them again."
+            },
+            "Dig Diggily Diggy Dig Dig Hole!": {
+                "note": "Make the shovels drop at the rightmost edge of the bottom right spawn platform."
+            }
+        }
+    },
+    "Lonely Hunter": {
+        "notes": {
+            "Leaf Him Alone!": {"note": " "},
+            "Skeleton? Skelegone!": {"note": " "},
+            "Opening Chests": {"note": ""}
+        }
+    },
     "Lord of the Hunt": {
         "notes": {
             "Pelt for the Pelt God": {"note": " "},
@@ -384,7 +493,8 @@
             "Gravity VS Salt": {"note": " "},
             "Big Ol Chonker": {
                 "note": "You must equip the [[Worship#Tachion_of_the_Titans|Tachion of the Titans]] Prayer to spawn Giant Monsters."
-            }
+            },
+            "Mana Plox": {"note": " "}
         }
     },
     "Coastiolyte": {"notes": {"Cooler than a Cooler!": {"note": " "}, "Vibe Check": {"note": " "}}},
@@ -393,12 +503,14 @@
             "Treasure Hunt 1": {"note": "[https://www.youtube.com/watch?v=9XXmfvCs9FY Treasure Hunt #1 Video]"},
             "Treasure Hunt 2": {"note": "[https://www.youtube.com/watch?v=R0xTfo3YedQ Treasure Hunt #2 Video]"},
             "Treasure Hunt 3": {"note": "[https://youtu.be/WYCo9kiJxug Treasure Hunt #3 Video]"},
-            "Treasure Hunt 4": {"note": "[https://www.youtube.com/watch?v=33k5wVGUyII Treasure Hunt #4 Video]"}
+            "Treasure Hunt 4": {
+                "note": "[https://www.youtube.com/watch?v=33k5wVGUyII Treasure Hunt #4 Video] Goldegg Capsules are no longer usable in game."
+            }
         }
     },
     "Toadstall": {
         "notes": {
-            "Creating a Party!": {"note": " "},
+            "Creating a Party!": {"note": "The interface to create a party doesn't appear until you reach level 11."},
             "Bigger Party Better Party!": {"note": " "},
             "Bother the Frogger!": {"note": " "}
         }
@@ -407,7 +519,7 @@
         "notes": {
             "Plunderin Down Yonder": {"note": " "},
             "Perfect Progress Score": {"note": " "},
-            "Sanke Revival Denial": {"note": "Quest is bugged as of patch 1.30b "}
+            "Sanke Revival Denial": {"note": " "}
         }
     },
     "Falloween Pumpkin": {
@@ -419,5 +531,5 @@
             "The Afterparty": {"note": "The event ended without this quest being completable."}
         }
     },
-    "version": "140"
+    "version": "140b"
 }

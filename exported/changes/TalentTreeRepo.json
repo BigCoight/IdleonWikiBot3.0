@@ -4,6 +4,8 @@
         "Wizard": {
             "talents": {"Mana Is Life": {"activeData": {"K": [1.1, 1], "D": [1.3, 1], "s": [1.02, 1]}}}
         },
+        "Maestro": {"talents": {"Crystal Countdown": {"x1": [100, 99], "x2": [100, 72]}}},
+        "Special Talent 2": {"talents": {"Supersource": {"lvlUpText": ["", "+{ Base Efficiency"]}}},
         "Barbarian": {
             "talents": {
                 "Monster Decimator": {
@@ -14,8 +16,6 @@
                 }
             }
         },
-        "Maestro": {"talents": {"Crystal Countdown": {"x1": [100, 99], "x2": [100, 72]}}},
-        "Special Talent 2": {"talents": {"Supersource": {"lvlUpText": ["", "+{ Base Efficiency"]}}},
         "Hunter": {
             "talents": {
                 "Eagle Eye": {
@@ -30,45 +30,6 @@
         },
         "Special Talent 3": {
             "talents": {
-                "Tiptoe Quickness": {
-                    "name": [" ", "Tiptoe Quickness"],
-                    "description": [" ", "+{% Movement Speed, if you're under 200% Speed. Otherwise, +}% Accuracy."],
-                    "x1": [" ", 25],
-                    "x2": [" ", 100],
-                    "funcX": [" ", "decay"],
-                    "y1": [" ", 30],
-                    "y2": [" ", 100],
-                    "funcY": [" ", "decay"],
-                    "lvlUpText": [" ", "+{% Spd Or +}% Acc"],
-                    "skillIndex": [" ", 641],
-                    "activeData": [" ", null]
-                },
-                "Overaccurate Crit": {
-                    "name": [" ", "Overaccurate Crit"],
-                    "description": [" ", "+{% Crit Chance for every Power of 10 accuracy above 100% Hit Chance."],
-                    "x1": [" ", 8],
-                    "x2": [" ", 70],
-                    "funcX": [" ", "decay"],
-                    "y1": [" ", 0],
-                    "y2": [" ", 0],
-                    "funcY": [" ", "txt"],
-                    "lvlUpText": [" ", "+{% Crit Chance"],
-                    "skillIndex": [" ", 645],
-                    "activeData": [" ", null]
-                },
-                "Coins For Charon": {
-                    "name": [" ", "Coins For Charon"],
-                    "description": [" ", "+{% cash per Multikill Damage Tier, as shown by the purple multiplier in AFK Info"],
-                    "x1": [" ", 25],
-                    "x2": [" ", 75],
-                    "funcX": [" ", "decay"],
-                    "y1": [" ", 0],
-                    "y2": [" ", 0],
-                    "funcY": [" ", "txt"],
-                    "lvlUpText": [" ", "+{% Cash Per Tier"],
-                    "skillIndex": [" ", 643],
-                    "activeData": [" ", null]
-                },
                 "Ubercharged Health": {
                     "name": [" ", "Ubercharged Health"],
                     "description": [" ", "Increases base HP by +{. Cardiovascularly impressive!"],
@@ -96,6 +57,45 @@
                     "funcY": [" ", "txt"],
                     "lvlUpText": [" ", "+{% Cash"],
                     "skillIndex": [" ", 644],
+                    "activeData": [" ", null]
+                },
+                "Tiptoe Quickness": {
+                    "name": [" ", "Tiptoe Quickness"],
+                    "description": [" ", "+{% Movement Speed, if you're under 200% Speed. Otherwise, +}% Accuracy."],
+                    "x1": [" ", 25],
+                    "x2": [" ", 100],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 30],
+                    "y2": [" ", 100],
+                    "funcY": [" ", "decay"],
+                    "lvlUpText": [" ", "+{% Spd Or +}% Acc"],
+                    "skillIndex": [" ", 641],
+                    "activeData": [" ", null]
+                },
+                "Coins For Charon": {
+                    "name": [" ", "Coins For Charon"],
+                    "description": [" ", "+{% cash per Multikill Damage Tier, as shown by the purple multiplier in AFK Info"],
+                    "x1": [" ", 25],
+                    "x2": [" ", 75],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", "+{% Cash Per Tier"],
+                    "skillIndex": [" ", 643],
+                    "activeData": [" ", null]
+                },
+                "Overaccurate Crit": {
+                    "name": [" ", "Overaccurate Crit"],
+                    "description": [" ", "+{% Crit Chance for every Power of 10 accuracy above 100% Hit Chance."],
+                    "x1": [" ", 8],
+                    "x2": [" ", 70],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", "+{% Crit Chance"],
+                    "skillIndex": [" ", 645],
                     "activeData": [" ", null]
                 }
             }

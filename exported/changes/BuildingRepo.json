@@ -1,0 +1,47 @@
+{
+    "new": {
+        "Trapper Drone": {
+            "name": "Trapper Drone",
+            "description": "Remotely deploy AND collect traps to and from any discovered critter location! Collect-all is based on Hunter's Eagle Eye Talent. ",
+            "bonus": " +{% Extra critters from all traps",
+            "lvlUpReq": [{"item": "Refinery3", "quantity": 30}, {"item": "Critter3A", "quantity": 5}],
+            "maxLvl": 10,
+            "costIncrement": [10, 1],
+            "bonusInc": 3,
+            "misc": 0
+        },
+        "Automation Arm": {
+            "name": "Automation Arm",
+            "description": "Automate some of the more tedious actions with the flip of a switch! Let the robots do the dirty work! ",
+            "bonus": " +{ Automated System, controlled via @ the Robotic Arm.",
+            "lvlUpReq": [{"item": "Refinery3", "quantity": 50}, {"item": "SnowC2", "quantity": 300}],
+            "maxLvl": 5,
+            "costIncrement": [1, 1],
+            "bonusInc": 4,
+            "misc": 0
+        }
+    },
+    "changes": {
+        "Voidinator": {
+            "lvlUpReq": [
+                [{"item": "Refinery6", "quantity": 10}, {"item": "Refinery6", "quantity": 10000}],
+                [{"item": "SnowC4a", "quantity": 1}, {"item": "FillerMaterial", "quantity": 10000}]
+            ]
+        },
+        "Poisonic Elder": {
+            "description": [
+                "Poisons enemies. @ Has slow speed, and deals big damage over time. ",
+                "Poisons enemies. @ Has slow speed, but great AoE for hitting large crowds of mobs. "
+            ],
+            "lvlUpReq": [
+                [{"item": "FillerMaterial", "quantity": 600}, {"item": "GalaxyA1", "quantity": 600}]
+            ]
+        },
+        "Chest Space": {
+            "description": [
+                "Just gives more Storage Chest slots, straight up. Better late than never, eh? (Passive Upgrade) ",
+                "Just gives more Storage Chest slots, straight up. I gotchu dawg, yeh. (Passive Upgrade) "
+            ]
+        }
+    }
+}

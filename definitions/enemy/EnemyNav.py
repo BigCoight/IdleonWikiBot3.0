@@ -29,7 +29,6 @@ class EnemyNav(IdleonModel):
 
 	def getNext(self):
 		if self.next:
-			print(self.next)
 			return EnemyDetailsRepo.getWikiName(self.next)
 		return ""
 

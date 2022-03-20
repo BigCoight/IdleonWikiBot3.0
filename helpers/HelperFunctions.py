@@ -198,7 +198,7 @@ def changeChestNames(intName, name):
 		A more descriptive version of the chests name
 
 	"""
-	COLNAMES = ["Dewdrop", "Sandstone", "Chillsnap", "NYI", "NYI", "NYI", "NYI", "NYI", "NYI"]
+	COLNAMES = ["Dewdrop", "Sandstone", "Chillsnap", "Astro", "NYI", "NYI", "NYI", "NYI", "NYI"]
 	col = int(intName[6]) - 1
 	return f"{COLNAMES[col]} {name}"
 

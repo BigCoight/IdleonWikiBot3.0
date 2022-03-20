@@ -1,0 +1,25 @@
+__NOCACHE__
+{{#cargo_query:tables=DropTables
+ |fields=CONCAT("[[", DropSourceEntity, "]]")=DropSourceEntity
+ |where=TableName HOLDS "{{PAGENAME}}" AND DropSourceEntity NOT LIKE "{{PAGENAME}}"
+ |group by=DropTables.DropSourceEntity
+ |order by=`DropSourceEntity` ASC
+ |default=
+ |intro=This is a Mega Rare Droptable for:
+ |outro=To see monster specific droprates, visit the specified source page.
+ |limit=100
+ |offset=0
+ |format=ul
+ |columns=1
+}}
+{{DropTable/head}}
+{{DropTable|Silver Pen|0.07|1|tablename=SuperDropTable1|tabletype=Mega}}
+{{DropTable|Lucky Lad|0.0003|1|tablename=SuperDropTable1|tabletype=Mega}}
+{{DropTable|Talent Point Reset Fragment|0.1|1|tablename=SuperDropTable1|tabletype=Mega}}
+{{DropTable/talent|Roll Da Dice|0.1|tablename=SuperDropTable1|tabletype=Mega}}
+{{DropTable/talent|Attacks On Simmer|0.1|tablename=SuperDropTable1|tabletype=Mega}}
+{{DropTable|Golden Nomwich|0.5|1|tablename=SuperDropTable1|tabletype=Mega}}
+{{DropTable|Silver Obol of Pocket Change|0.02835|1|tablename=SuperDropTable1|tabletype=Mega}}
+{{DropTable|Silver Obol of Little Damage|0.02835|1|tablename=SuperDropTable1|tabletype=Mega}}
+{{DropTable|Bronze Obol of Experience|0.03045|1|tablename=SuperDropTable1|tabletype=Mega}}
+{{DropTable|Mystery Upgrade Stone I|0.85|2|tablename=SuperDropTable1|tabletype=Mega}}

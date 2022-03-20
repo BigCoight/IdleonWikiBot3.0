@@ -1,13 +1,5 @@
 {
     "new": {
-        "Myriad Crate": {
-            "name": "Myriad Crate",
-            "bonuses": [
-                {"bonus": "Base All Stat", "x1": 40, "x2": 200, "func": "decay"},
-                {"bonus": "Base All Efficiency", "x1": 100, "x2": 200, "func": "decay"},
-                {"bonus": "% All Skills exp", "x1": 30, "x2": 200, "func": "decay"}
-            ]
-        },
         "Science Spare Parts": {
             "name": "Science Spare Parts",
             "bonuses": [
@@ -22,6 +14,14 @@
                 {"bonus": "Cooking Efficiency", "x1": 4, "x2": 0, "func": "add"},
                 {"bonus": "% Cooking EXP gain", "x1": 60, "x2": 200, "func": "decay"},
                 {"bonus": "% for 2x Ladle Drop", "x1": 88, "x2": 200, "func": "decay"}
+            ]
+        },
+        "Myriad Crate": {
+            "name": "Myriad Crate",
+            "bonuses": [
+                {"bonus": "Base All Stat", "x1": 40, "x2": 200, "func": "decay"},
+                {"bonus": "Base All Efficiency", "x1": 100, "x2": 200, "func": "decay"},
+                {"bonus": "% All Skills exp", "x1": 30, "x2": 200, "func": "decay"}
             ]
         }
     },

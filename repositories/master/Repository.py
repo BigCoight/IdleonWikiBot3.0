@@ -6,11 +6,12 @@ from enum import Enum
 from typing import Dict, Generic, Optional, TypeVar, List, Set
 
 from pywikibot import Site, Page
+from rich.console import Console
 from rich.progress import track
 
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CodeReader import CodeReader, IdleonReader
-from helpers.ColourPrinter import printGreen, printRed, printYellow, printBlue
+from helpers.ColourPrinter import printGreen, printRed, printYellow, printBlue, printPurple
 from helpers.HelperFunctions import camelCaseToTitle
 from helpers.JsonEncoder import CompactJSONEncoder
 
@@ -30,7 +31,7 @@ class Repository(Generic[T], ABC):
 	listRepository: List[T]
 
 	@classmethod
-	def initialise(cls, codeReader: CodeReader) -> None:
+	def initialise(cls, codeReader: CodeReader, log = True) -> None:
 		if cls.__dict__.get("codeReader"):
 			if cls.codeReader.version == codeReader.version:
 				return
@@ -41,9 +42,10 @@ class Repository(Generic[T], ABC):
 		if cls.sections and not cls.getSection():
 			printRed(f"Could not find {cls.__name__}'s Section")
 			return None
-		cls.initDependencies()
+		cls.initDependencies(log)
 		cls.generateRepo()
-		printGreen(f"Generated {cls.__name__}'s repo with {len(cls.repository)} Items")
+		if log:
+			printGreen(f"Generated {cls.__name__}'s repo with {len(cls.repository)} Items")
 		cls._export()
 
 	@classmethod
@@ -51,7 +53,7 @@ class Repository(Generic[T], ABC):
 		return []
 
 	@classmethod
-	def initDependencies(cls) -> None:
+	def initDependencies(cls, log = True) -> None:
 		pass
 
 	@classmethod
@@ -67,6 +69,10 @@ class Repository(Generic[T], ABC):
 	@classmethod
 	def get(cls, key: str) -> Optional[T]:
 		return cls.repository.get(key)
+
+	@classmethod
+	def getList(cls, index: int) -> Optional[T]:
+		return cls.listRepository[index]
 
 	@classmethod
 	def add(cls, key: str, value: T) -> None:
@@ -122,9 +128,9 @@ class Repository(Generic[T], ABC):
 		cr1 = v1.codeReader
 		cr2 = v2.codeReader
 
-		cls.initialise(cr1)
+		cls.initialise(cr1, False)
 		repo1 = deepcopy(cls.repository)
-		cls.initialise(cr2)
+		cls.initialise(cr2, False)
 		repo2 = deepcopy(cls.repository)
 		key1 = set(repo1.keys())
 		key2 = set(repo2.keys())
@@ -311,7 +317,7 @@ class Repository(Generic[T], ABC):
 			return x.startswith("+") or x.startswith("-")
 
 		if not os.path.isfile(f"{cls._oldLocation()}/{name}.txt"):
-			printBlue(f'{OldType.New.name}:  {cls.getWikiName(name)}')
+			printPurple(f'{OldType.New.name}:  {cls.getWikiName(name)}')
 			return OldType.New
 		with open(f"{cls._oldLocation()}/{name}.txt", mode = 'r') as infile:
 			wiki = data.writeWiki()
@@ -349,14 +355,16 @@ class Repository(Generic[T], ABC):
 
 		wikiPage = Page(website, name)
 		wikiPage.text = data
-		wikiPage.save("Coights API 3.0")
+		wikiPage.save("Coights API 3.0", botflag = True)
 
 	@classmethod
 	def upload(cls, debug: bool) -> None:
+
 		debugNum = 0
 		cls._createOldDir()
 		website = Site()
-		for name, data in track(cls.items(), description = f"Uploading {cls.__name__}"):
+		for name, data in track(cls.items(), description = f"Uploading {cls.__name__}", console = Console(
+				color_system = "windows")):
 			if cls._ignore(name, data):
 				continue
 			if (oldStatus := cls._isOld(name, data)) == OldType.Old:

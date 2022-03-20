@@ -9,8 +9,8 @@ from typing import List
 class EnemyNavRepo(Repository[EnemyNav]):
 
 	@classmethod
-	def initDependencies(cls) -> None:
-		CardRepo.initialise(cls.codeReader)
+	def initDependencies(cls, log = True) -> None:
+		CardRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def generateRepo(cls) -> None:

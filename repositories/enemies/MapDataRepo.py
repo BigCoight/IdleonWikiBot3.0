@@ -14,9 +14,9 @@ class MapDataRepo(Repository[MapData]):
 	"""
 
 	@classmethod
-	def initDependencies(cls) -> None:
-		MapNameRepo.initialise(cls.codeReader)
-		MapPortalsRepo.initialise(cls.codeReader)
+	def initDependencies(cls, log = True) -> None:
+		MapNameRepo.initialise(cls.codeReader, log)
+		MapPortalsRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -32,8 +32,8 @@ class MapDataRepo(Repository[MapData]):
 			if cls.contains(v):
 				continue
 			cls.add(v, MapData(
-				area = MapNameRepo.get(n).name,
+				area = MapNameRepo.get(f"{n}").name,
 				world = Constants.worlds[worldIndex],
-				id = MapNameRepo.get(n).id,
+				id = MapNameRepo.get(f"{n}").id,
 				portalRequirements = MapPortalsRepo.get(n).portalRequirements
 			))

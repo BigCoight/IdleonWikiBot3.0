@@ -14,14 +14,14 @@ from repositories.item.StatueRepo import StatueRepo
 class StatueItem(BonusItem):
 	@classmethod
 	def getBonus(cls, item: Union[ConsumableItem, QuestItem]) -> str:
-		statueData = StatueRepo.get(item.ID)
+		statueData = StatueRepo.get(f"{item.ID}")
 		return statueData.effect.replace("@", "")
 
 	statueData: StatueData
 
 	@classmethod
 	def fromItemDetails(cls, item: Union[ConsumableItem, QuestItem]) -> BaseItem:
-		statueData = StatueRepo.get(item.ID)
+		statueData = StatueRepo.get(f"{item.ID}")
 		return cls(
 			internalName = item.internalID,
 			displayName = item.displayName,

@@ -30,22 +30,22 @@ class SourceRepo(Repository[Sources]):
 	"""
 
 	@classmethod
-	def initDependencies(cls) -> None:
-		DropTableRepo.initialise(cls.codeReader)
-		EnemyDetailsRepo.initialise(cls.codeReader)
-		PostOfficeRepo.initialise(cls.codeReader)
-		GemShopRepo.initialise(cls.codeReader)
-		EnemyTableRepo.initialise(cls.codeReader)
-		ItemDetailRepo.initialise(cls.codeReader)
-		RecipeRepo.initialise(cls.codeReader)
-		RefineryCostRepo.initialise(cls.codeReader)
-		VendorRepo.initialise(cls.codeReader)
-		FlurboShopRepo.initialise(cls.codeReader)
-		KeychainBonusRepo.initialise(cls.codeReader)
-		NpcRepo.initialise(cls.codeReader)
-		AnvilRepo.initialise(cls.codeReader)
-		TaskUnlocksRepo.initialise(cls.codeReader)
-		CustomSourceRepo.initialise(cls.codeReader)
+	def initDependencies(cls, log = True) -> None:
+		DropTableRepo.initialise(cls.codeReader, log)
+		EnemyDetailsRepo.initialise(cls.codeReader, log)
+		PostOfficeRepo.initialise(cls.codeReader, log)
+		GemShopRepo.initialise(cls.codeReader, log)
+		EnemyTableRepo.initialise(cls.codeReader, log)
+		ItemDetailRepo.initialise(cls.codeReader, log)
+		RecipeRepo.initialise(cls.codeReader, log)
+		RefineryCostRepo.initialise(cls.codeReader, log)
+		VendorRepo.initialise(cls.codeReader, log)
+		FlurboShopRepo.initialise(cls.codeReader, log)
+		KeychainBonusRepo.initialise(cls.codeReader, log)
+		NpcRepo.initialise(cls.codeReader, log)
+		AnvilRepo.initialise(cls.codeReader, log)
+		TaskUnlocksRepo.initialise(cls.codeReader, log)
+		CustomSourceRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def excludeDefaults(cls) -> bool:

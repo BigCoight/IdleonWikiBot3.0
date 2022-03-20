@@ -13,6 +13,10 @@ class DungItemRepo(Repository[DungItem]):
 	"""
 
 	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		AchievementRepo.initialise(cls.codeReader, log)
+
+	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["DungItems", "UnlockRNG"]
 
@@ -41,9 +45,9 @@ class DungItemRepo(Repository[DungItem]):
 
 
 	@classmethod
-	def getCorrespondingAchieve(cls, n):
+	def getCorrespondingAchieve(cls, n: int):
 		if n == 0:
 			return ""
 		if n == -1:
 			return "Unobtainable"
-		return AchievementRepo.get(n).name
+		return AchievementRepo.getList(n).name

@@ -21,7 +21,7 @@ class CritterRepo(Repository[Critter]):
 		critters = getFromSplitArray(cls.getSection())
 		for critter in critters:
 			cls.add(critter[2], Critter(
-				location = MapNameRepo.get(int(critter[0])).name,
+				location = MapNameRepo.get(critter[0]).name,
 				baseExp = critter[5],
 				baseShinyRate = critter[6],
 				shiny = critter[2] + "A",

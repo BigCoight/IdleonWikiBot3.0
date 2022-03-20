@@ -58,7 +58,8 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("150", True)
+
+idleonReader = IdleonReader("150", steam = True)
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
@@ -128,8 +129,8 @@ ItemRepo.initialise(codeReader)
 
 StampDescriptionRepo.initialise(codeReader)
 # MealRepo.initialise(codeReader)
-
-ItemRepo.exportWikiMult()
-EnemyRepo.upload(True)
+#DropTableRepo.upload(False)
+#EnemyRepo.exportWikiMult()
+#EnemyRepo.upload(True)
 #ItemRepo.upload(True)
 #

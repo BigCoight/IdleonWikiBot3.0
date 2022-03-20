@@ -16,7 +16,7 @@ class ListRepository(Generic[T]):
 	repository: List[T]
 
 	@classmethod
-	def initialise(cls, codeReader: CodeReader) -> None:
+	def initialise(cls, codeReader: CodeReader, log = True) -> None:
 		cls.repository = []
 		cls.codeReader = codeReader
 		cls.sections = cls.getSections()
@@ -24,7 +24,8 @@ class ListRepository(Generic[T]):
 			printRed(f"Could not find {cls.__name__}'s Section")
 			return None
 		cls.generateRepo()
-		printGreen(f"Generated {cls.__name__}'s repo with {len(cls.repository)} Items")
+		if log:
+			printGreen(f"Generated {cls.__name__}'s repo with {len(cls.repository)} Items")
 		cls.export()
 
 	@classmethod

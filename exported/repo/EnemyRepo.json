@@ -1508,7 +1508,13 @@
             {"item": "DropTable21", "quantity": 1, "chance": 0.4, "questLink": "N/A"}
         ],
         "mapData": null,
-        "navigation": null,
+        "navigation": {
+            "prev": "w4c4",
+            "next": "Blank",
+            "hasCrystal": false,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "mushG": {
@@ -3408,7 +3414,13 @@
             "id": 151,
             "portalRequirements": [20000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": null,
+            "next": "w4a2",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "w4a2": {
@@ -3447,7 +3459,13 @@
             "id": 152,
             "portalRequirements": [30000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "mushP",
+            "next": "w4a3",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "w4a3": {
@@ -3485,7 +3503,13 @@
             "id": 153,
             "portalRequirements": [50000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "w4a2",
+            "next": "demonP",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "demonP": {
@@ -3523,7 +3547,13 @@
             "id": 154,
             "portalRequirements": [70000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "w4a3",
+            "next": "w4b2",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "w4b2": {
@@ -3561,7 +3591,13 @@
             "id": 155,
             "portalRequirements": [100000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "demonP",
+            "next": "w4b1",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "w4b1": {
@@ -3599,7 +3635,13 @@
             "id": 156,
             "portalRequirements": [150000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "w4b2",
+            "next": "w4b3",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "w4b3": {
@@ -3637,7 +3679,13 @@
             "id": 157,
             "portalRequirements": [250000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "w4b1",
+            "next": "w4b4",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "w4b4": {
@@ -3675,7 +3723,13 @@
             "id": 158,
             "portalRequirements": [500000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "w4b3",
+            "next": "w4b5",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "w4b5": {
@@ -3712,7 +3766,13 @@
             "id": 159,
             "portalRequirements": [700000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "w4b4",
+            "next": "w4c1",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "w4c1": {
@@ -3750,7 +3810,13 @@
             "id": 160,
             "portalRequirements": [1000000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "w4b5",
+            "next": "w4c2",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "w4c2": {
@@ -3788,7 +3854,13 @@
             "id": 161,
             "portalRequirements": [2000000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "w4c1",
+            "next": "w4c3",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "w4c3": {
@@ -3826,7 +3898,13 @@
             "id": 162,
             "portalRequirements": [3000000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "w4c2",
+            "next": "w4c4",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "w4c4": {
@@ -3863,7 +3941,13 @@
             "id": 163,
             "portalRequirements": [4000000]
         },
-        "navigation": null,
+        "navigation": {
+            "prev": "w4c3",
+            "next": "Crystal3",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": null
     },
     "mushR": {
@@ -7550,7 +7634,7 @@
     },
     "ChestA4": {
         "details": {
-            "Name": "NYI Bronze Chest",
+            "Name": "Astro Bronze Chest",
             "AFKtype": "Error",
             "MonsterFace": 0,
             "MonsterOffsetX": 34,
@@ -7588,7 +7672,7 @@
     },
     "ChestB4": {
         "details": {
-            "Name": "NYI Silver Chest",
+            "Name": "Astro Silver Chest",
             "AFKtype": "Error",
             "MonsterFace": 0,
             "MonsterOffsetX": 34,
@@ -7627,7 +7711,7 @@
     },
     "ChestC4": {
         "details": {
-            "Name": "NYI Golden Chest",
+            "Name": "Astro Golden Chest",
             "AFKtype": "Error",
             "MonsterFace": 0,
             "MonsterOffsetX": 34,
@@ -7663,7 +7747,7 @@
     },
     "ChestD4": {
         "details": {
-            "Name": "NYI Legendary Chest",
+            "Name": "Astro Legendary Chest",
             "AFKtype": "Error",
             "MonsterFace": 0,
             "MonsterOffsetX": 34,

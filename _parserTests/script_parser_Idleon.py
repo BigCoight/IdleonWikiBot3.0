@@ -176,7 +176,6 @@ class Parser:
 
 
 
-
 	def Parse(self, outPath):
 		# Just formatting
 		self.text = ReParser.reBinOr.sub(r"\1", self.text)
@@ -209,7 +208,7 @@ class Parser:
 		for i in range(5):
 			self.text = ReParser.reVarUsedInSameLine.sub(r"\3\2\5", self.text)
 
-		self.tryDetectRepeatedCode()
+		#self.tryDetectRepeatedCode()
 
 
 		with open(f"{outPath}", "w") as outfile:

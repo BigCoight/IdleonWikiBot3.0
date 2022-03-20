@@ -12,8 +12,8 @@ class ConstellationsRepo(Repository[Constellation]):
 	"""
 
 	@classmethod
-	def initDependencies(cls):
-		MapNameRepo.initialise(cls.codeReader)
+	def initDependencies(cls, log = True):
+		MapNameRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -58,7 +58,7 @@ class ConstellationsRepo(Repository[Constellation]):
 			else:
 				prefix = "D"
 				number = 1 + n - 34
-			mapName = MapNameRepo.get(int(const[0])).name
+			mapName = MapNameRepo.get(const[0]).name
 			constName = f"{prefix}-{number}"
 			finalData = [constName, mapName, *const[1:]]
 			cls.add(constName, Constellation.fromList(finalData))

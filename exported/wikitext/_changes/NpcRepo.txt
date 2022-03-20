@@ -18,55 +18,6 @@
 |}
 </div><div class="GenericChild">
 ==New==
-{{patchnote/head|changed=Oinkin}}
-{{patchnote/bold|Filling The Menu}}
-{{patchnote|Type| |QuestType.Custom}}
-{{patchnote|DialogueText| |Well?? Don't just stand there you knobhead get cooking! <br> QUEST:Level up three meals to Lv.2 by delivering them to the Menu Dinner Table in town.}}
-{{patchnote|NextIndex| |4}}
-{{patchnote|Name| |Filling the Menu}}
-{{patchnote|ConsumeItems| |False}}
-{{patchnote|InventorySpacesNeeded| |3}}
-{{patchnote|NoSpaceIndex| |3}}
-{{patchnote/italic|Rewards}}
-{{patchnote|0| |1x{{CraftReq|Cooked Meal Stamp}}}}
-{{patchnote|1| |4x{{CraftReq|Cooking Ladle}}}}
-{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
-{{patchnote|Difficulty| |1}}
-{{patchnote/italic|Custom Array}}
-{{patchnote|0| |Lv.2 Meals: > 3}}
-{{patchnote/bold|Diner Deliverer}}
-{{patchnote|Type| |QuestType.Custom}}
-{{patchnote|DialogueText| |I've been getting complaints from the Egg Nest Station you need to fill those orders! <br> QUEST:Upgrade various pet upgrades using Grey DNA and meals.}}
-{{patchnote|NextIndex| |7}}
-{{patchnote|Name| |Diner Deliverer}}
-{{patchnote|ConsumeItems| |False}}
-{{patchnote|InventorySpacesNeeded| |3}}
-{{patchnote|NoSpaceIndex| |6}}
-{{patchnote/italic|Rewards}}
-{{patchnote|0| |1x{{CraftReq|Nest Eggs Stamp}}}}
-{{patchnote|1| |5x{{CraftReq|Cooking Ladle}}}}
-{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
-{{patchnote|Difficulty| |1}}
-{{patchnote/italic|Custom Array}}
-{{patchnote|0| |Genetic Splicing LV: > 3}}
-{{patchnote|1| |Egg Capacity LV: > 2}}
-{{patchnote|2| |Breedability Pulse LV: > 1}}
-{{patchnote/bold|Recipe For Fattening Pastry}}
-{{patchnote|Type| |QuestType.Custom}}
-{{patchnote|DialogueText| |Look this one's important. I've got a VIP coming in tonight and I need the recipe for their favorite dish something known as the croissant... <br> QUEST:Discover the recipe for Croissants in cooking.}}
-{{patchnote|NextIndex| |10}}
-{{patchnote|Name| |Recipe for Fattening Pastry}}
-{{patchnote|ConsumeItems| |False}}
-{{patchnote|InventorySpacesNeeded| |3}}
-{{patchnote|NoSpaceIndex| |9}}
-{{patchnote/italic|Rewards}}
-{{patchnote|0| |1x{{CraftReq|Ladle Stamp}}}}
-{{patchnote|1| |6x{{CraftReq|Cooking Ladle}}}}
-{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
-{{patchnote|Difficulty| |1}}
-{{patchnote/italic|Custom Array}}
-{{patchnote|0| |Croissant Discovered: > 1}}
-|}
 {{patchnote/head|changed=Gobo}}
 {{patchnote/bold|Breeding In Outer Space}}
 {{patchnote|Type| |QuestType.Custom}}
@@ -219,5 +170,54 @@
 {{patchnote|Difficulty| |6}}
 {{patchnote/italic|Custom Array}}
 {{patchnote|0| |Party Points: > 10000}}
+|}
+{{patchnote/head|changed=Oinkin}}
+{{patchnote/bold|Filling The Menu}}
+{{patchnote|Type| |QuestType.Custom}}
+{{patchnote|DialogueText| |Well?? Don't just stand there you knobhead get cooking! <br> QUEST:Level up three meals to Lv.2 by delivering them to the Menu Dinner Table in town.}}
+{{patchnote|NextIndex| |4}}
+{{patchnote|Name| |Filling the Menu}}
+{{patchnote|ConsumeItems| |False}}
+{{patchnote|InventorySpacesNeeded| |3}}
+{{patchnote|NoSpaceIndex| |3}}
+{{patchnote/italic|Rewards}}
+{{patchnote|0| |1x{{CraftReq|Cooked Meal Stamp}}}}
+{{patchnote|1| |4x{{CraftReq|Cooking Ladle}}}}
+{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
+{{patchnote|Difficulty| |1}}
+{{patchnote/italic|Custom Array}}
+{{patchnote|0| |Lv.2 Meals: > 3}}
+{{patchnote/bold|Diner Deliverer}}
+{{patchnote|Type| |QuestType.Custom}}
+{{patchnote|DialogueText| |I've been getting complaints from the Egg Nest Station you need to fill those orders! <br> QUEST:Upgrade various pet upgrades using Grey DNA and meals.}}
+{{patchnote|NextIndex| |7}}
+{{patchnote|Name| |Diner Deliverer}}
+{{patchnote|ConsumeItems| |False}}
+{{patchnote|InventorySpacesNeeded| |3}}
+{{patchnote|NoSpaceIndex| |6}}
+{{patchnote/italic|Rewards}}
+{{patchnote|0| |1x{{CraftReq|Nest Eggs Stamp}}}}
+{{patchnote|1| |5x{{CraftReq|Cooking Ladle}}}}
+{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
+{{patchnote|Difficulty| |1}}
+{{patchnote/italic|Custom Array}}
+{{patchnote|0| |Genetic Splicing LV: > 3}}
+{{patchnote|1| |Egg Capacity LV: > 2}}
+{{patchnote|2| |Breedability Pulse LV: > 1}}
+{{patchnote/bold|Recipe For Fattening Pastry}}
+{{patchnote|Type| |QuestType.Custom}}
+{{patchnote|DialogueText| |Look this one's important. I've got a VIP coming in tonight and I need the recipe for their favorite dish something known as the croissant... <br> QUEST:Discover the recipe for Croissants in cooking.}}
+{{patchnote|NextIndex| |10}}
+{{patchnote|Name| |Recipe for Fattening Pastry}}
+{{patchnote|ConsumeItems| |False}}
+{{patchnote|InventorySpacesNeeded| |3}}
+{{patchnote|NoSpaceIndex| |9}}
+{{patchnote/italic|Rewards}}
+{{patchnote|0| |1x{{CraftReq|Ladle Stamp}}}}
+{{patchnote|1| |6x{{CraftReq|Cooking Ladle}}}}
+{{patchnote|2| |4x{{CraftReq|Pet Egg}}}}
+{{patchnote|Difficulty| |1}}
+{{patchnote/italic|Custom Array}}
+{{patchnote|0| |Croissant Discovered: > 1}}
 |}
 </div></div>

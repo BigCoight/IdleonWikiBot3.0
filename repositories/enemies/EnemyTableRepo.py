@@ -1,8 +1,7 @@
 import re
 from typing import List
 
-from definitions.common.DropTypes import Drop, ItemDrop
-from definitions.enemy.DropTable import DropTable
+from definitions.common.DropTypes import Drop, ItemDrop, RecipeDrop
 from definitions.enemy.EnemyTable import EnemyTable
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.SpecificItemRepo import SpecificItemRepo
@@ -55,13 +54,13 @@ class EnemyTableRepo(Repository[EnemyTable]):
 			questLink = "N/A",
 		))
 		# DNA Guns
-		cls.get("pincermin").drops.insert(0, ItemDrop(
+		cls.get("pincermin").drops.insert(0, RecipeDrop(
 			item = "SmithingRecipes4",
 			quantity = "53",
 			chance = "0.000003",
 			questLink = "N/A",
 		))
-		cls.get("thermostat").drops.insert(0, ItemDrop(
+		cls.get("thermostat").drops.insert(0, RecipeDrop(
 			item = "SmithingRecipes4",
 			quantity = "54",
 			chance = "0.0000008",

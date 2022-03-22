@@ -3144,16 +3144,22 @@
     },
     "DNAgun1": {
         "sources": [
-            {"wikiName": "[[Smithing]]", "txtName": "Smithing"}
+            {"wikiName": "[[Smithing]]", "txtName": "Smithing"},
+            {"wikiName": "[[Pincermin|Recipe from Pincermin]]", "txtName": "Pincermin"}
         ],
-        "recipeFrom": [],
+        "recipeFrom": [
+            {"wikiName": "[[Pincermin]]", "txtName": "Pincermin"}
+        ],
         "questAss": []
     },
     "DNAgun2": {
         "sources": [
-            {"wikiName": "[[Smithing]]", "txtName": "Smithing"}
+            {"wikiName": "[[Smithing]]", "txtName": "Smithing"},
+            {"wikiName": "[[Thermister|Recipe from Thermister]]", "txtName": "Thermister"}
         ],
-        "recipeFrom": [],
+        "recipeFrom": [
+            {"wikiName": "[[Thermister]]", "txtName": "Thermister"}
+        ],
         "questAss": []
     },
     "DNAgun3": {

@@ -20,7 +20,7 @@ class Enemy(IdleonModel):
 		res += self.details.writeWiki()
 		res += self.mapData.writeWiki() if self.mapData else ""
 		res += self.navigation.writeWiki() if self.navigation else ""
-		res += "|}\n"
+		res += "}}\n"
 		if self.drops:
 			res += "{{DropTable/head|Droptable for " + self.details.Name + "}}\n"
 			res += self.drops.writeWiki()

@@ -8,6 +8,10 @@ from repositories.master.Repository import Repository
 class DungPassivesRepo(Repository[DungPassives]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Dungeon"
+
+	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["DungPassiveI", "DungPassiveF"]
 

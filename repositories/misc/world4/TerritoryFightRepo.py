@@ -7,6 +7,9 @@ from repositories.master.Repository import Repository
 
 
 class TerritoryFightRepo(Repository[TerritoryFight]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Worlds/4"
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -24,9 +27,9 @@ class TerritoryFightRepo(Repository[TerritoryFight]):
 				enemies.append(TerritoryEnemy.fromList(enemyData))
 			toAdd = TerritoryFight(
 				img =bonus[0],
-				spiceForage =bonus[1],
+				trekReq =bonus[1],
 				fightPower =bonus[2],
-				forCostUP =bonus[3],
+				enemyAttack =bonus[3],
 				battleName =bonus[4],
 				filler1 =bonus[5],
 				filler2 =bonus[6],

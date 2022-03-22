@@ -3,6 +3,7 @@ from helpers.CustomTypes import Numeric, Integer
 
 
 class ActiveTalent(IdleonModel):
+	name: str
 	K: Numeric
 	D: Numeric
 	s: Numeric

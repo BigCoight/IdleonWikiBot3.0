@@ -5,5 +5,5 @@ from helpers.CustomTypes import Numeric
 class TerritoryEnemy(IdleonModel):
     id: str
     health: Numeric
-    x1: Numeric
-    x2: Numeric
+    colour: Numeric
+    size: Numeric

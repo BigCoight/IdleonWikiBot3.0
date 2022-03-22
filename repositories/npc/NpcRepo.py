@@ -12,6 +12,7 @@ from definitions.questdef.Quest import ExpReward, CoinReward, RecipeReward, Tale
 from helpers.CodeReader import IdleonReader
 from helpers.Constants import Constants
 from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, camelCaseToTitle, isRecipe, isTalent
+from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.master.Repository import Repository
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
@@ -22,10 +23,15 @@ class NpcRepo(Repository[Npc]):
 	questToName: Dict[str, str] = {}
 
 	@classmethod
-	def initDependencies(cls) -> None:
+	def getCategory(cls) -> str:
+		return "Npc"
+
+	@classmethod
+	def initDependencies(cls, log = True) -> None:
 		NpcHeadRepo.initialise(cls.codeReader)
-		QuestNameRepo.initialise(cls.codeReader)
+		QuestNameRepo.initialise(cls.codeReader, log)
 		NpcNoteRepo.initialise(cls.codeReader)
+		ItemDetailRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -138,83 +144,6 @@ class NpcRepo(Repository[Npc]):
 	@classmethod
 	def getQuestByName(cls, name: str) -> str:
 		return cls.questToName.get(name)
-
-	@classmethod
-	def _writeChangelogChange(cls, item, change) -> str:
-		def head(v: str) -> str:
-			return "{{patchnote/head|changed=" + v + "}}\n"
-
-		def bold(v: str) -> str:
-			return "{{patchnote/bold|" + v + "}}\n"
-
-		def patchnote(v: str, o, n) -> str:
-			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
-
-		def italic(v: str) -> str:
-			return "{{patchnote/italic|" + v + "}}\n"
-
-		res = head(cls.getWikiName(item))
-		for v, d in change.items():
-			if isinstance(d, tuple):
-				o, n = d
-				res += patchnote(v, o, n)
-			elif isinstance(d, list):
-				res += bold(camelCaseToTitle(v))
-				for i, subC in enumerate(d):
-					o, n = subC
-					res += patchnote(str(i), o, n)
-			elif isinstance(d, dict):
-				for quest, subC in d.items():
-					res += bold(camelCaseToTitle(quest))
-					for atr, val in subC.items():
-						if isinstance(val, list):
-							res += italic(camelCaseToTitle(atr))
-							for i, subV in enumerate(val):
-								o, n = subV
-								res += patchnote(str(i), o, n)
-							continue
-						o, n = val
-						res += patchnote(atr, o, n)
-
-		res += '|}\n'
-		return res
-
-	@classmethod
-	def _writeChangelogNew(cls, item, change) -> str:
-		def head(v: str) -> str:
-			return "{{patchnote/head|changed=" + v + "}}\n"
-
-		def bold(v: str) -> str:
-			return "{{patchnote/bold|" + v + "}}\n"
-
-		def italic(v: str) -> str:
-			return "{{patchnote/italic|" + v + "}}\n"
-
-		def patchnote(v: str, o, n) -> str:
-			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
-
-		res = head(cls.getWikiName(item))
-		for v, d in change.items():
-			if isinstance(d, list):
-				res += bold(camelCaseToTitle(v))
-				for i, subC in enumerate(d):
-					res += patchnote(str(i), " ", subC)
-			elif isinstance(d, dict):
-				for quest, subC in d.items():
-					res += bold(camelCaseToTitle(quest))
-					for atr, val in subC.items():
-						if isinstance(val, list):
-							res += italic(camelCaseToTitle(atr))
-							for n, subV in enumerate(val):
-								res += patchnote(str(n), " ", subV)
-							continue
-						res += patchnote(atr, " ", val)
-			else:
-				if not d:
-					continue
-				res += patchnote(v, " ", d)
-		res += '|}\n'
-		return res
 
 	@classmethod
 	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):

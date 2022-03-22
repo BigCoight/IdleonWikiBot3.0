@@ -6,6 +6,11 @@ from repositories.master.Repository import Repository
 
 
 class DungTraitRepo(Repository[DungSet]):
+
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Dungeon"
+
 	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["DungTraits"]

@@ -1,17 +1,24 @@
-from colorama import Fore, Style
+
+from rich.console import Console
+
+console = Console(color_system = "windows")
 
 
 def printGreen(txt: str) -> None:
-	print(Fore.GREEN + txt + Style.RESET_ALL)
+	console.print(txt, style = "green")
 
 
 def printRed(txt: str) -> None:
-	print(Fore.RED + txt + Style.RESET_ALL)
+	console.print(txt, style = "red")
 
 
 def printYellow(txt: str) -> None:
-	print(Fore.YELLOW + txt + Style.RESET_ALL)
+	console.print(txt, style = "yellow")
 
 
 def printBlue(txt: str) -> None:
-	print(Fore.BLUE + txt + Style.RESET_ALL)
+	console.print(txt, style = "blue")
+
+
+def printPurple(txt: str) -> None:
+	console.print(txt, style = "purple")

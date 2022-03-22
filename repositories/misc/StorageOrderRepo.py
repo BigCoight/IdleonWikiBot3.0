@@ -6,6 +6,9 @@ from repositories.master.Repository import Repository
 
 
 class StorageOrderRepo(Repository[StorageOrder]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Misc"
 
 	@classmethod
 	def getSections(cls) -> List[str]:

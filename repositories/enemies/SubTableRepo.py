@@ -8,6 +8,10 @@ from repositories.master.Repository import Repository
 class SubTableRepo(Repository[SubTables]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Enemy"
+
+	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["DropTables", "EnemyDropTables"]
 

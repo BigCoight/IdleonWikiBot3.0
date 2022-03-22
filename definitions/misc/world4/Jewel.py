@@ -13,4 +13,4 @@ class Jewel(IdleonModel):
 	description: str
 	requirements: List[Component]
 	name: str
-	x1: Numeric
+	bonusGiven: Numeric

@@ -2,10 +2,14 @@ from typing import List
 
 from definitions.arcade.ArcadeBonus import ArcadeBonus
 from helpers.HelperFunctions import getFromSplitArray
-from repositories.master.ListRepository import ListRepository
+from repositories.master.Repository import Repository
 
 
-class ArcadeBonusRepo(ListRepository[ArcadeBonus]):
+class ArcadeBonusRepo(Repository[ArcadeBonus]):
+
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Arcade"
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -14,5 +18,7 @@ class ArcadeBonusRepo(ListRepository[ArcadeBonus]):
 	@classmethod
 	def generateRepo(cls) -> None:
 		data = getFromSplitArray(cls.getSection())
-		for bonus in data:
-			cls.add(ArcadeBonus.fromList(bonus))
+		for n, bonus in enumerate(data):
+			toAdd = ArcadeBonus.fromList(bonus)
+			cls.add(f"{n}", toAdd)
+			cls.addList(toAdd)

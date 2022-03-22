@@ -8,6 +8,10 @@ from repositories.master.Repository import Repository
 class KeychainBonusRepo(Repository[KeychainBonuses]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Dungeon"
+
+	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["DungKeychain"]
 

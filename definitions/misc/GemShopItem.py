@@ -3,6 +3,7 @@ from helpers.CustomTypes import Integer
 
 
 class GemShopItem(IdleonModel):
+	name: str
 	itemName: str
 	desc: str
 	cost: Integer

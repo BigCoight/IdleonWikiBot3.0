@@ -1,7 +1,7 @@
 class Constants:
 	worldNames = {"Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Hyperion Nebula"}
 	worlds = ["Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Hyperion Nebula"]
-	navCategories = {"Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Bosses"}
+	navCategories = {"Blunder Hills", "Yum Yum Desert", "Frostbite Tundra","Hyperion Nebula", "Bosses"}
 	worldToCrystal = {"Blunder Hills": "Crystal0", "Yum Yum Desert": "Crystal1", "Frostbite Tundra": "Crystal2"}
 	ignoredEnemies = {"Error", "ForgeA", "ForgeB", "Bandit_Bob", "SoulCard1", "SoulCard2", "SoulCard3", "SoulCard4",
 	                  "SoulCard5", "SoulCard6", "CritterCard1", "CritterCard2", "CritterCard3", "CritterCard4",

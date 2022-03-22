@@ -9,6 +9,10 @@ from repositories.master.Repository import Repository
 class BossDetailRepo(Repository[BossDetails]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Enemy"
+
+	@classmethod
 	def parse(cls, value) -> BossDetails:
 		return BossDetails.parse_obj(value)
 

@@ -6,6 +6,9 @@ from repositories.master.Repository import Repository
 
 
 class StarSignsRepo(Repository[StarSign]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Misc"
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -29,4 +32,5 @@ class StarSignsRepo(Repository[StarSign]):
 				cost = uiInfo[4]
 			)
 			cls.add(sign[0], signInfo)
+			cls.addList(signInfo)
 			

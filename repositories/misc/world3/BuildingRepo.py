@@ -7,6 +7,9 @@ from repositories.master.Repository import Repository
 
 
 class BuildingRepo(Repository[Building]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Worlds/3"
 
 	@classmethod
 	def parse(cls, value) -> Building:

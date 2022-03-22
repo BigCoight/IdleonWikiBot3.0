@@ -1,210 +1,109 @@
-x._customBlock_CookingR = function (t, n, s) {
-    if ("PossibleRecipes" == t) {
-        var a = b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[62];
-        return x._customBlock_CookingR("PossibleRecipes2", parsenum(a), 0);
+(w._customBlock_WorshipStuff = function (t, s) {
+    if ("NextWaveCountdown" == t) return 0 == s % 10 && 0 != s ? 9999 : 19 < Math.floor(s / 10) ? 25 + 5 * Math.floor((s - 10) / 10) : 9 < s ? 25 : 4 < s ? 20 : 0.5 < s ? 15 : 6;
+    if ("waveAdjustment" == t) {
+        (t = b.engine.getGameAttribute("CustomLists")),
+            (t = (null != d.WorshipInfo ? t.getReserved("WorshipInfo") : t.h.WorshipInfo)[0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))].length);
+        var a = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[62];
+        return (
+            (t = Math.max(s - (t - parsenum(a)), 0)),
+            (a = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[62]),
+            (t = Math.floor(t / parsenum(a))),
+            (a = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[62]),
+            Math.round(s - t * parsenum(a))
+        );
     }
-    if ("PossibleRecipes2" == t) {
-        var A = b.engine.getGameAttribute("DNSM"),
-            r = [];
-        if ((null != d.CookinPossibleRecps ? A.setReserved("CookinPossibleRecps", r) : (A.h.CookinPossibleRecps = r), -1 != n)) {
-            for (var i = 0; 4 > i; ) {
-                var o = i++,
-                    u = b.engine.getGameAttribute("DNSM"),
-                    c = b.engine.getGameAttribute("Cooking")[0 | n][2 + o];
-                null != d.CookinPossibleRecpsDN1 ? u.setReserved("CookinPossibleRecpsDN1", c) : (u.h.CookinPossibleRecpsDN1 = c);
-                var p = b.engine.getGameAttribute("DNSM");
-                if (-1 != (null != d.CookinPossibleRecpsDN1 ? p.getReserved("CookinPossibleRecpsDN1") : p.h.CookinPossibleRecpsDN1)) {
-                    var h = b.engine.getGameAttribute("DNSM"),
-                        f = null != d.CookinPossibleRecps ? h.getReserved("CookinPossibleRecps") : h.h.CookinPossibleRecps,
-                        R = b.engine.getGameAttribute("CustomLists"),
-                        y = (null != d.RANDOlist ? R.getReserved("RANDOlist") : R.h.RANDOlist)[49],
-                        v = b.engine.getGameAttribute("DNSM"),
-                        F = null != d.CookinPossibleRecpsDN1 ? v.getReserved("CookinPossibleRecpsDN1") : v.h.CookinPossibleRecpsDN1,
-                        N = y[0 | parsenum(F)];
-                    f.push(parsenum(N));
-                }
-            }
-            var I = b.engine.getGameAttribute("DNSM");
-            null != d.CookinPossibleRecpsDN1 ? I.setReserved("CookinPossibleRecpsDN1", 0) : (I.h.CookinPossibleRecpsDN1 = 0);
-            var D = b.engine.getGameAttribute("DNSM");
-            null != d.CookinPossibleRecpsDN3 ? D.setReserved("CookinPossibleRecpsDN3", 0) : (D.h.CookinPossibleRecpsDN3 = 0);
-            for (var E = 0; 4 > E; ) {
-                var U = E++,
-                    _ = b.engine.getGameAttribute("DNSM"),
-                    T = b.engine.getGameAttribute("DNSM"),
-                    S = null != d.CookinPossibleRecpsDN1 ? T.getReserved("CookinPossibleRecpsDN1") : T.h.CookinPossibleRecpsDN1,
-                    G = parsenum(S),
-                    M = b.engine.getGameAttribute("Cooking")[0 | n][2 + U],
-                    V = _,
-                    C = G + Math.max(0, parsenum(M));
-                if ((null != d.CookinPossibleRecpsDN1 ? V.setReserved("CookinPossibleRecpsDN1", C) : (V.h.CookinPossibleRecpsDN1 = C), -1 != b.engine.getGameAttribute("Cooking")[0 | n][2 + U])) {
-                    var B = b.engine.getGameAttribute("DNSM"),
-                        P = b.engine.getGameAttribute("DNSM"),
-                        O = null != d.CookinPossibleRecpsDN3 ? P.getReserved("CookinPossibleRecpsDN3") : P.h.CookinPossibleRecpsDN3,
-                        w = B,
-                        Q = parsenum(O) + 1;
-                    null != d.CookinPossibleRecpsDN3 ? w.setReserved("CookinPossibleRecpsDN3", Q) : (w.h.CookinPossibleRecpsDN3 = Q);
-                }
-            }
-            var X = b.engine.getGameAttribute("DNSM"),
-                z = null != d.CookinPossibleRecpsDN1 ? X.getReserved("CookinPossibleRecpsDN1") : X.h.CookinPossibleRecpsDN1;
-            if (0.5 < parsenum(z)) {
-                var L = b.engine.getGameAttribute("DNSM"),
-                    Z = b.engine.getGameAttribute("DNSM"),
-                    W = null != d.CookinPossibleRecpsDN3 ? Z.getReserved("CookinPossibleRecpsDN3") : Z.h.CookinPossibleRecpsDN3,
-                    Y = Math.min(parsenum(W), 3);
-                null != d.CookinPossibleRecpsDN2 ? L.setReserved("CookinPossibleRecpsDN2", Y) : (L.h.CookinPossibleRecpsDN2 = Y);
-                for (var H = 0, J = b.engine.getGameAttribute("DNSM"), j = null != d.CookinPossibleRecpsDN2 ? J.getReserved("CookinPossibleRecpsDN2") : J.h.CookinPossibleRecpsDN2, q = 0 | parsenum(j); H < q; ) {
-                    var K = H++,
-                        $ = b.engine.getGameAttribute("DNSM"),
-                        ee = null != d.CookinPossibleRecps ? $.getReserved("CookinPossibleRecps") : $.h.CookinPossibleRecps,
-                        te = b.engine.getGameAttribute("DNSM"),
-                        ne = null != d.CookinPossibleRecpsDN1 ? te.getReserved("CookinPossibleRecpsDN1") : te.h.CookinPossibleRecpsDN1,
-                        se = parsenum(ne),
-                        ae = b.engine.getGameAttribute("DNSM"),
-                        Ae = null != d.CookinPossibleRecpsDN2 ? ae.getReserved("CookinPossibleRecpsDN2") : ae.h.CookinPossibleRecpsDN2;
-                    if (!$a.contains(ee, Math.round(Math.min(59, Math.max(0, se + (K - Math.floor((parsenum(Ae) - 1) / 2))))))) {
-                        var re = b.engine.getGameAttribute("DNSM"),
-                            le = null != d.CookinPossibleRecps ? re.getReserved("CookinPossibleRecps") : re.h.CookinPossibleRecps,
-                            ie = b.engine.getGameAttribute("DNSM"),
-                            oe = null != d.CookinPossibleRecpsDN1 ? ie.getReserved("CookinPossibleRecpsDN1") : ie.h.CookinPossibleRecpsDN1,
-                            ue = parsenum(oe),
-                            ge = b.engine.getGameAttribute("DNSM"),
-                            me = null != d.CookinPossibleRecpsDN2 ? ge.getReserved("CookinPossibleRecpsDN2") : ge.h.CookinPossibleRecpsDN2;
-                        le.push(Math.round(Math.min(59, Math.max(0, ue + (K - Math.floor((parsenum(me) - 1) / 2))))));
-                    }
-                }
-            }
+    if ("waveAdjustmentTIER" == t)
+        return (
+            (t = b.engine.getGameAttribute("CustomLists")),
+            (t = (null != d.WorshipInfo ? t.getReserved("WorshipInfo") : t.h.WorshipInfo)[0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))].length),
+            (a = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[62]),
+            (s = Math.max(s - (t - parsenum(a)), 0)),
+            (t = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[62]),
+            Math.floor(s / parsenum(t))
+        );
+    if ("NewTowerCost" == t)
+        return Math.floor(
+            w._customBlock_TowerStats("BaseTowerCost", s, 1) * Math.ceil((b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[56].length + 1) / 3) +
+                2 *
+                    Math.pow(
+                        1.3 + 0.03 * b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[56].length,
+                        b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[56].length
+                    )
+        );
+    if ("isTowerUnlocked?" == t) return 1 <= (parsenum(s) = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 1 : 0;
+    if ("TrialType" == t)
+        return 100 == b.engine.getGameAttribute("CurrentMap") && -1 != b.engine.getGameAttribute("PixelHelperActor")[8].getValue("ActorEvents_481", "_GenINFO")[57]
+            ? b.engine.getGameAttribute("PixelHelperActor")[8].getValue("ActorEvents_481", "_GenINFO")[57]
+            : ((t = b.engine.getGameAttribute("CustomMaps")),
+                (t = null != d.WorshipMapType ? t.getReserved("WorshipMapType") : t.h.WorshipMapType),
+                (null != d[(a = "" + s)] ? t.existsReserved(a) : t.h.hasOwnProperty(a))
+                    ? ((t = b.engine.getGameAttribute("CustomMaps")), (t = null != d.WorshipMapType ? t.getReserved("WorshipMapType") : t.h.WorshipMapType), null != d[(s = "" + s)] ? t.getReserved(s) : t.h[s])
+                    : 0);
+    if ("ExpRewards" == t)
+        return Math.floor(
+            15 *
+                Math.pow(w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap")) + 1, 2) *
+                F._customBlock_skillstats2("WorshipEXPmulti") *
+                Math.pow(w._customBlock_WorshipStuff("WaveMultiplier", 0), 0.9)
+        );
+    if ("SoulRewards" == t)
+        return Math.floor(5 * (1 + w._customBlock_WorshipStuff("EfficiencyBonusQTY", 0) / 100) * w._customBlock_WorshipStuff("WaveMultiplier", 0) * (1 + C._customBlock_TotalFoodBonuses("WorshipSoulBoosts") / 100));
+    if ("WaveMultiplier" == t)
+        return 0 == b.engine.getGameAttribute("TotemInfo")[0][0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))]
+            ? 0
+            : ((s = b.engine.getGameAttribute("TotemInfo")[0][0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))]), Math.pow((5 + parsenum(s)) / 10, 2.6));
+    if ("EfficiencyBonusQTY" == t)
+        return (
+            (s = F._customBlock_skillstats2("WorshipEfficiency")),
+            (t = b.engine.getGameAttribute("CustomLists")),
+            s >= (parsenum(t) = (null != d.WorshipBASEinfos ? t.getReserved("WorshipBASEinfos") : t.h.WorshipBASEinfos)[0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))][7])
+                ? ((s = F._customBlock_skillstats2("WorshipEfficiency")),
+                    (t = b.engine.getGameAttribute("CustomLists")),
+                    (t = (null != d.WorshipBASEinfos ? t.getReserved("WorshipBASEinfos") : t.h.WorshipBASEinfos)[0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))][7]),
+                    Math.floor(100 * Math.pow(s / (10 * parsenum(t)), 0.25)))
+                : 0
+        );
+    if ("SkullPts" == t) return 4 == s ? 8 : 3 == s ? 5 : 2 == s ? 3 : 1 == s ? 2 : 1;
+    if ("SkullCurrency" == t)
+        return 6 <= s
+            ? ((s = 250 * Math.pow(Math.round(s - 6), 1.5)),
+                (t = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]),
+                Math.floor((s + Math.floor(parsenum(t) / 1)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : 5 == s
+            ? ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.floor((150 + Math.floor(parsenum(s) / 1)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : 4 == s
+            ? ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.floor((70 + Math.floor(parsenum(s) / 1)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : 3 == s
+            ? ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.floor((25 + Math.floor(parsenum(s) / 2)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : 2 == s
+            ? ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.round((10 + Math.floor(parsenum(s) / 3)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : 1 == s
+            ? ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.round((5 + Math.floor(parsenum(s) / 4)) * (1 + w._customBlock_SaltLick(6) / 100)))
+            : ((s = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[8]), Math.round((2 + Math.floor(parsenum(s) / 5)) * (1 + w._customBlock_SaltLick(6) / 100)));
+    if ("SkullTypeHP" == t) return 500 < s ? 4 : 100 < s ? 3 : 20 < s ? 2 : 4 < s ? 1 : 0;
+    if ("TowerCritDmg" == t) return 1.5;
+    if ("PrayerCost" == t) {
+        if (6 > (parsenum(t) = b.engine.getGameAttribute("PrayersUnlocked")[0 | s]))
+            return (
+                (t = b.engine.getGameAttribute("CustomLists")),
+                (t = parsenum(t) = (null != d.PrayerInfo ? t.getReserved("PrayerInfo") : t.h.PrayerInfo)[0 | s][6]),
+                (a = b.engine.getGameAttribute("PrayersUnlocked")[0 | s]),
+                Math.round(t * (1 + (4 + s / 25) * parsenum(a)))
+            );
+        if (9 == s) {
+            (t = b.engine.getGameAttribute("CustomLists")),
+                (t = parsenum(t) = (null != d.PrayerInfo ? t.getReserved("PrayerInfo") : t.h.PrayerInfo)[0 | s][6]),
+                (a = parsenum(a) = b.engine.getGameAttribute("PrayersUnlocked")[0 | s]);
+            var A = b.engine.getGameAttribute("PrayersUnlocked")[0 | s];
+            return Math.round(Math.min(2000000000, t * (1 + (2 + s / 20) * a) * Math.pow(1.3, parsenum(A) - 5)));
         }
-        var de = b.engine.getGameAttribute("DNSM"),
-            ce = [];
-        null != d.CookinPossibleRecps2 ? de.setReserved("CookinPossibleRecps2", ce) : (de.h.CookinPossibleRecps2 = ce);
-        for (var pe = 0, he = b.engine.getGameAttribute("DNSM"), be = (null != d.CookinPossibleRecps ? he.getReserved("CookinPossibleRecps") : he.h.CookinPossibleRecps).length; pe < be; ) {
-            pe++;
-            var fe = b.engine.getGameAttribute("DNSM");
-            null != d.CookinPossibleRecpsDN1 ? fe.setReserved("CookinPossibleRecpsDN1", 99999) : (fe.h.CookinPossibleRecpsDN1 = 99999);
-            for (var Re = 0, ye = b.engine.getGameAttribute("DNSM"), ve = e.__cast(null != d.CookinPossibleRecps ? ye.getReserved("CookinPossibleRecps") : ye.h.CookinPossibleRecps, Array); Re < ve.length; ) {
-                var Fe = ve[Re];
-                ++Re;
-                var Ne = parsenum(Fe),
-                    Ie = b.engine.getGameAttribute("DNSM"),
-                    De = null != d.CookinPossibleRecpsDN1 ? Ie.getReserved("CookinPossibleRecpsDN1") : Ie.h.CookinPossibleRecpsDN1;
-                if (Ne < parsenum(De))
-                    var Ee = b.engine.getGameAttribute("DNSM"),
-                        Ue = !$a.contains(null != d.CookinPossibleRecps2 ? Ee.getReserved("CookinPossibleRecps2") : Ee.h.CookinPossibleRecps2, Fe);
-                else Ue = !1;
-                if (Ue) {
-                    var _e = b.engine.getGameAttribute("DNSM"),
-                        Te = Fe;
-                    null != d.CookinPossibleRecpsDN1 ? _e.setReserved("CookinPossibleRecpsDN1", Te) : (_e.h.CookinPossibleRecpsDN1 = Te);
-                }
-            }
-            var Se = b.engine.getGameAttribute("DNSM"),
-                Ge = null != d.CookinPossibleRecps2 ? Se.getReserved("CookinPossibleRecps2") : Se.h.CookinPossibleRecps2,
-                Me = b.engine.getGameAttribute("DNSM");
-            Ge.push(null != d.CookinPossibleRecpsDN1 ? Me.getReserved("CookinPossibleRecpsDN1") : Me.h.CookinPossibleRecpsDN1);
-        }
-        var Ve = b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO"),
-            Ce = b.engine.getGameAttribute("DNSM");
-        return (Ve[69] = null != d.CookinPossibleRecps2 ? Ce.getReserved("CookinPossibleRecps2") : Ce.h.CookinPossibleRecps2), 0;
+        return (
+            (t = b.engine.getGameAttribute("CustomLists")),
+            (t = parsenum(t) = (null != d.PrayerInfo ? t.getReserved("PrayerInfo") : t.h.PrayerInfo)[0 | s][6]),
+            (a = parsenum(a) = b.engine.getGameAttribute("PrayersUnlocked")[0 | s]),
+            (A = b.engine.getGameAttribute("PrayersUnlocked")[0 | s]),
+            Math.round(Math.min(2000000000, t * (1 + (1 + s / 20) * a) * Math.pow(1.12, parsenum(A) - 5)))
+        );
     }
-    if ("CookingReqToCook" == t) {
-        var Be = b.engine.getGameAttribute("CustomLists"),
-            Pe = (null != d.MealINFO ? Be.getReserved("MealINFO") : Be.h.MealINFO)[0 | n][1];
-        return parsenum(Pe);
-    }
-    if ("CookingSPEED" == t) {
-        var ke = b.engine.getGameAttribute("Cooking")[0 | n][6];
-        return 10 * (1 + parsenum(ke) / 10);
-    }
-    if ("CookingFIRE" == t) {
-        var Oe = b.engine.getGameAttribute("Cooking")[0 | n][7];
-        return 5 * (1 + parsenum(Oe) / 10);
-    }
-    if ("CookingLUCK" == t) {
-        var xe = b.engine.getGameAttribute("Cooking")[0 | n][8];
-        return 1 + Math.pow(5 * parsenum(xe), 0.85) / 100;
-    }
-    if ("CookingUpgSpiceCostType" == t) {
-        var we = b.engine.getGameAttribute("Cooking")[0 | n][(6 + s) | 0];
-        return Math.floor(parsenum(we) / 25);
-    }
-    if ("CookingUpgSpiceCostQty" == t) {
-        var Qe = b.engine.getGameAttribute("Cooking")[0 | n][(6 + s) | 0];
-        return 5 * (parsenum(Qe) + 1);
-    }
-    if ("CookingFireREQ" == t) {
-        var Xe = b.engine.getGameAttribute("DNSM"),
-            ze = x._customBlock_CookingR("PossibleRecipes2", n, 0);
-        null != d.CookinPossibleRecps ? Xe.setReserved("CookinPossibleRecps", ze) : (Xe.h.CookinPossibleRecps = ze);
-        var Le = b.engine.getGameAttribute("DNSM"),
-            Ze = b.engine.getGameAttribute("DNSM"),
-            We = null != d.CookinPossibleRecps2 ? Ze.getReserved("CookinPossibleRecps2") : Ze.h.CookinPossibleRecps2;
-        null != d.CookinPossibleRecps ? Le.setReserved("CookinPossibleRecps", We) : (Le.h.CookinPossibleRecps = We);
-        var Ye = b.engine.getGameAttribute("DNSM"),
-            He = b.engine.getGameAttribute("DNSM"),
-            Je = null != d.CookinPossibleRecps ? He.getReserved("CookinPossibleRecps") : He.h.CookinPossibleRecps,
-            je = b.engine.getGameAttribute("DNSM"),
-            qe = Je[(null != d.CookinPossibleRecps ? je.getReserved("CookinPossibleRecps") : je.h.CookinPossibleRecps).length - 1];
-        null != d.CookinPossibleRecpsDN1 ? Ye.setReserved("CookinPossibleRecpsDN1", qe) : (Ye.h.CookinPossibleRecpsDN1 = qe);
-        var Ke = b.engine.getGameAttribute("DNSM"),
-            $e = null != d.CookinPossibleRecpsDN1 ? Ke.getReserved("CookinPossibleRecpsDN1") : Ke.h.CookinPossibleRecpsDN1,
-            et = parsenum($e),
-            tt = b.engine.getGameAttribute("DNSM"),
-            nt = null != d.CookinPossibleRecpsDN1 ? tt.getReserved("CookinPossibleRecpsDN1") : tt.h.CookinPossibleRecpsDN1,
-            st = et + 1 + 3 * Math.max(0, parsenum(nt) - 5),
-            at = b.engine.getGameAttribute("DNSM"),
-            At = null != d.CookinPossibleRecpsDN1 ? at.getReserved("CookinPossibleRecpsDN1") : at.h.CookinPossibleRecpsDN1;
-        return Math.pow(st, 2 + 0.25 * Math.floor(parsenum(At) / 10));
-    }
-    if ("CookingFireREQlv" == t) {
-        var rt = b.engine.getGameAttribute("DNSM"),
-            lt = x._customBlock_CookingR("CookingFireREQ", n, 0);
-        null != d.CookinPossibleRecpsDN1 ? rt.setReserved("CookinPossibleRecpsDN1", lt) : (rt.h.CookinPossibleRecpsDN1 = lt);
-        var it = b.engine.getGameAttribute("DNSM");
-        null != d.CookinPossibleRecpsDN2 ? it.setReserved("CookinPossibleRecpsDN2", 0) : (it.h.CookinPossibleRecpsDN2 = 0);
-        for (var ot = 0; 100 > ot; ) {
-            ot++;
-            var ut = b.engine.getGameAttribute("Cooking")[0 | n][10],
-                gt = parsenum(ut),
-                mt = b.engine.getGameAttribute("DNSM"),
-                dt = null != d.CookinPossibleRecpsDN1 ? mt.getReserved("CookinPossibleRecpsDN1") : mt.h.CookinPossibleRecpsDN1;
-            if (!(gt >= parsenum(dt))) break;
-            var ct = b.engine.getGameAttribute("DNSM"),
-                pt = b.engine.getGameAttribute("DNSM"),
-                ht = null != d.CookinPossibleRecpsDN1 ? pt.getReserved("CookinPossibleRecpsDN1") : pt.h.CookinPossibleRecpsDN1,
-                bt = ct,
-                ft = parsenum(ht) * x._customBlock_CookingR("CookingFireREQlvMULTI", 0, 0);
-            null != d.CookinPossibleRecpsDN1 ? bt.setReserved("CookinPossibleRecpsDN1", ft) : (bt.h.CookinPossibleRecpsDN1 = ft);
-            var Rt = b.engine.getGameAttribute("DNSM"),
-                yt = b.engine.getGameAttribute("DNSM"),
-                vt = null != d.CookinPossibleRecpsDN2 ? yt.getReserved("CookinPossibleRecpsDN2") : yt.h.CookinPossibleRecpsDN2,
-                Ft = Rt,
-                Nt = parsenum(vt) + 1;
-            null != d.CookinPossibleRecpsDN2 ? Ft.setReserved("CookinPossibleRecpsDN2", Nt) : (Ft.h.CookinPossibleRecpsDN2 = Nt);
-        }
-        var It = b.engine.getGameAttribute("DNSM");
-        return null != d.CookinPossibleRecpsDN2 ? It.getReserved("CookinPossibleRecpsDN2") : It.h.CookinPossibleRecpsDN2;
-    }
-    if ("CookingFireREQlvMULTI" == t) return 3;
-    if ("CookingMenuMealCosts" == t) {
-        var Dt = b.engine.getGameAttribute("Meals")[0][0 | n],
-            Et = parsenum(Dt),
-            Ut = b.engine.getGameAttribute("Meals")[0][0 | n];
-        return 5 * Math.pow(20 + 5 * Et, parsenum(Ut));
-    }
-    if ("CookingNewRecipeOdds" == t) {
-        var _t = b.engine.getGameAttribute("Meals")[0],
-            Tt = b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[69][0 | n],
-            St = _t[0 | parsenum(Tt)];
-        if (0 >= parsenum(St)) {
-            var Gt = b.engine.getGameAttribute("CustomLists"),
-                Mt = (null != d.RANDOlist ? Gt.getReserved("RANDOlist") : Gt.h.RANDOlist)[50][0 | n];
-            return parsenum(Mt) * x._customBlock_CookingR("CookingLUCK", s, 0) * Math.pow(1.5, x._customBlock_CookingR("CookingFireREQlv", s, 0));
-        }
-        var Vt = b.engine.getGameAttribute("CustomLists"),
-            Ct = (null != d.RANDOlist ? Vt.getReserved("RANDOlist") : Vt.h.RANDOlist)[50][0 | n];
-        return parsenum(Ct);
-    }
-    return "CookingNewKitchenCoinCost" == t ? (50000000 + 25000000 * Math.pow(n, 2)) * Math.pow(7, n) : 0;
-},
+    return 69420;
+}),

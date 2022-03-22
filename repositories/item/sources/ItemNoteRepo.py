@@ -1,7 +1,10 @@
 import re
+from concurrent.futures import ThreadPoolExecutor
 from typing import Dict
 
 from pywikibot import Site, Page
+from rich.console import Console
+from rich.progress import track, Progress
 
 from definitions.common.Note import Note
 from repositories.item.ItemDetailRepo import ItemDetailRepo
@@ -11,13 +14,18 @@ from repositories.master.FileRepository import FileRepository
 class ItemNoteRepo(FileRepository[Note]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item/Sources"
+
+	@classmethod
 	def parse(cls, value: Dict[str, any]) -> Note:
 		return Note.parse_obj(value)
 
 	@classmethod
 	def generateRepo(cls) -> None:
 		website = Site()
-		for item, data in ItemDetailRepo.items():
+		items = ItemDetailRepo.items()
+		for item, data in track(items, description = "Pulling notes...", console = Console(color_system = None)):
 			dispName = data.displayName
 			sources = cls.searchSource(website, dispName)
 			if not sources:
@@ -25,6 +33,7 @@ class ItemNoteRepo(FileRepository[Note]):
 			cls.add(item, Note(
 				note = re.escape(sources).replace('"', "'").replace("}}", ""),
 			))
+
 
 	@classmethod
 	def searchSource(cls, website: Site, siteName: str) -> str:

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from typing import Tuple, Dict, Union, Callable, List
 
+from definitions.common.QtylessComponent import QtylessComponent
 from definitions.itemdef.initialtypes.ConsumableItem import ConsumableItem
 from definitions.itemdef.initialtypes.QuestItem import QuestItem
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
@@ -20,7 +21,7 @@ class StampData(IdleonModel):
 	x1: Numeric
 	x2: Numeric
 	upgradeInterval: Numeric
-	material: str
+	material: QtylessComponent
 	startV: Numeric
 	mCostExp: Numeric
 	startingCost: Numeric
@@ -36,8 +37,8 @@ class StampData(IdleonModel):
 		return res
 
 	def getMaterial(self):
-		if ItemDetailRepo.contains(self.material):
-			return ItemDetailRepo.getDisplayName(self.material)
+		if ItemDetailRepo.contains(self.material.item):
+			return ItemDetailRepo.getDisplayName(self.material.item)
 		return self.material
 
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
@@ -94,7 +95,7 @@ class StampItem(BonusItem):
 				x1 = stampData[2],
 				x2 = stampData[3],
 				upgradeInterval = stampData[4],
-				material = stampData[5],
+				material = QtylessComponent(item = stampData[5]),
 				startV = stampData[6],
 				mCostExp = stampData[7],
 				startingCost = stampData[8],
@@ -128,6 +129,6 @@ class StampItem(BonusItem):
 		return [self.stampData]
 
 	def getMaterial(self):
-		if ItemDetailRepo.contains(self.stampData.material):
-			return ItemDetailRepo.getDisplayName(self.stampData.material)
+		if ItemDetailRepo.contains(self.stampData.material.item):
+			return ItemDetailRepo.getDisplayName(self.stampData.material.item)
 		return self.stampData.material

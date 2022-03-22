@@ -10,11 +10,15 @@ from repositories.master.Repository import Repository
 class DetDropsRepo(Repository[DetDrops]):
 
 	@classmethod
-	def initDependencies(cls) -> None:
-		DropTableRepo.initialise(cls.codeReader)
-		EnemyDetailsRepo.initialise(cls.codeReader)
-		EnemyTableRepo.initialise(cls.codeReader)
-		SubTableRepo.initialise(cls.codeReader)
+	def getCategory(cls) -> str:
+		return "Item"
+
+	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		DropTableRepo.initialise(cls.codeReader, log)
+		EnemyDetailsRepo.initialise(cls.codeReader, log)
+		EnemyTableRepo.initialise(cls.codeReader, log)
+		SubTableRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def generateRepo(cls) -> None:

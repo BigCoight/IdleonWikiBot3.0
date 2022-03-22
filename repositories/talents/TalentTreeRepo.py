@@ -8,10 +8,13 @@ from repositories.talents.ActiveTalentRepo import ActiveTalentRepo
 
 
 class TalentTreeRepo(Repository[TalentTree]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Talents"
 
 	@classmethod
-	def initDependencies(cls) -> None:
-		ActiveTalentRepo.initialise(cls.codeReader)
+	def initDependencies(cls, log = True) -> None:
+		ActiveTalentRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -87,7 +90,6 @@ class TalentTreeRepo(Repository[TalentTree]):
 			elif isinstance(d, dict):
 				for quest, subC in d.items():
 					res += bold(camelCaseToTitle(quest))
-					print(subC)
 					for atr, val in subC.items():
 						if isinstance(val, dict):
 							res += italic(atr)

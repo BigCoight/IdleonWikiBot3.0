@@ -10,8 +10,12 @@ from repositories.master.Repository import Repository
 class DungEnemyRepo(Repository[DungEnemy]):
 
 	@classmethod
-	def initDependencies(cls) -> None:
-		EnemyDetailsRepo.initialise(cls.codeReader)
+	def getCategory(cls) -> str:
+		return "Dungeon"
+
+	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		EnemyDetailsRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def getSections(cls) -> List[str]:

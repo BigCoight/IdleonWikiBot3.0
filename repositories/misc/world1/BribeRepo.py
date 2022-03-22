@@ -6,6 +6,9 @@ from repositories.master.Repository import Repository
 
 
 class BribeRepo(Repository[Bribe]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Worlds/1"
 
 	@classmethod
 	def getSections(cls) -> List[str]:

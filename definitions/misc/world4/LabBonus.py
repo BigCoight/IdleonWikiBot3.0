@@ -6,8 +6,8 @@ class LabBonus(IdleonModel):
 	no: Integer
 	x: Integer
 	y: Integer
-	x1: Integer
-	x2: Numeric
-	x3: Numeric
+	range: Integer
+	bonusOn: Numeric
+	bonusOff: Numeric
 	name: str
 	description: str

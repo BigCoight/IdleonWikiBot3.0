@@ -6,6 +6,9 @@ from repositories.master.Repository import Repository
 
 
 class PetStatRepo(Repository[PetStat]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Worlds/4"
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -17,7 +20,6 @@ class PetStatRepo(Repository[PetStat]):
 		for n, world in enumerate(data):
 			if n > 7: break
 			for pet in world:
-				print(pet)
 				petData = getFromSplit(pet) + [n]
 				cls.addList(PetStat.fromList(petData))
 				if cls.contains(petData[0]): continue

@@ -8,6 +8,9 @@ from repositories.master.Repository import Repository
 
 
 class PostOfficeRepo(Repository[PostOffice]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Worlds/2"
 
 	@classmethod
 	def parse(cls, value) -> PostOffice:

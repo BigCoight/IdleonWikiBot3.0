@@ -3,14 +3,23 @@ from typing import List
 
 from definitions.enemy.DropTable import DropTable
 from definitions.common.DropTypes import Drop, ItemDrop
+from repositories.item.RecipeRepo import RecipeRepo
+from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.master.Repository import Repository
+from repositories.talents.TalentNameRepo import TalentNameRepo
 
 
 class DropTableRepo(Repository[DropTable]):
 
 	@classmethod
-	def parse(cls, value) -> DropTable:
-		return DropTable.parse_obj(value)
+	def getCategory(cls) -> str:
+		return "Enemy"
+
+	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		TalentNameRepo.initialise(cls.codeReader, log)
+		SpecificItemRepo.initialise(cls.codeReader, log)
+		RecipeRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def getSections(cls) -> List[str]:

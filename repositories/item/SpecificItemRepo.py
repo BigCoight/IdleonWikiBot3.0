@@ -40,16 +40,20 @@ class SpecificItemRepo(Repository[BaseItem]):
 	"""
 
 	@classmethod
-	def initDependencies(cls):
-		ItemDetailRepo.initialise(cls.codeReader)
-		RecipeRepo.initialise(cls.codeReader)
-		CardRepo.initialise(cls.codeReader)
-		EnemyDetailsRepo.initialise(cls.codeReader)
-		StatueRepo.initialise(cls.codeReader)
-		FishingToolkitRepo.initialise(cls.codeReader)
-		KeychainBonusRepo.initialise(cls.codeReader)
-		StorageOrderRepo.initialise(cls.codeReader)
-		StampDescriptionRepo.initialise(cls.codeReader)
+	def getCategory(cls) -> str:
+		return "Item"
+
+	@classmethod
+	def initDependencies(cls, log = True):
+		ItemDetailRepo.initialise(cls.codeReader, log)
+		RecipeRepo.initialise(cls.codeReader, log)
+		CardRepo.initialise(cls.codeReader, log)
+		EnemyDetailsRepo.initialise(cls.codeReader, log)
+		StatueRepo.initialise(cls.codeReader, log)
+		FishingToolkitRepo.initialise(cls.codeReader, log)
+		KeychainBonusRepo.initialise(cls.codeReader, log)
+		StorageOrderRepo.initialise(cls.codeReader, log)
+		StampDescriptionRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def generateRepo(cls) -> None:
@@ -131,11 +135,13 @@ class SpecificItemRepo(Repository[BaseItem]):
 			return True
 		return False
 
-	# Need to make this group by type
 	@classmethod
 	def _writeChangesWiki(cls, differences):
 		def head(v: str) -> str:
 			return "{{patchnote/head|changed=" + v + "}}\n"
+
+		def item(v: str) -> str:
+			return "{{patchnote/item|" + v + "}}\n"
 
 		res = ""
 		new = differences["new"]
@@ -159,75 +165,21 @@ class SpecificItemRepo(Repository[BaseItem]):
 		res += "==Changes==\n"
 		for typ, keys in changesOrdered.items():
 			res += head(typ)
-			for key in keys:
-				res += cls._writeChangelogChange(key, changes[key])
+			for change in keys:
+				res += item(cls.getWikiName(change))
+				res += cls._writeChangelog(changes[change])
 			res += "|}\n\n"
 
 		res += "</div><div class=\"GenericChild\">\n"
 		res += "==New==\n"
-
 		for typ, keys in newOrdered.items():
 			res += head(typ)
-			for key in keys:
-				res += cls._writeChangelogNew(key, new[key])
+			for change in keys:
+				res += item(cls.getWikiName(change))
+				res += cls._writeChangelog(new[change])
 			res += "|}\n\n"
 
 		res += "</div></div>"
 
-		with open(fr"./exported/wikitext/_changes/{cls.__name__}.txt", mode = 'w') as infile:
+		with open(cls._getPath("wikitext/_changes", "txt"), mode = 'w') as infile:
 			infile.write(res)
-
-	@classmethod
-	def _writeChangelogNew(cls, item, change) -> str:
-		def head(v: str) -> str:
-			return "{{patchnote/item|" + v + "}}\n"
-
-		def bold(v: str) -> str:
-			return "{{patchnote/bold|" + v + "}}\n"
-
-		def patchnote(v: str, o, n) -> str:
-			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
-
-		res = head(cls.getWikiName(item))
-		for v, d in change.items():
-			if isinstance(d, list):
-				res += bold(camelCaseToTitle(v))
-				for i, subC in enumerate(d):
-					res += patchnote(str(i), " ", subC)
-			elif isinstance(d, dict):
-				res += bold(camelCaseToTitle(v))
-				for atr, subC in d.items():
-					res += patchnote(atr, " ", subC)
-			else:
-				if not d:
-					continue
-				res += patchnote(v, " ", d)
-		return res
-
-	@classmethod
-	def _writeChangelogChange(cls, item, change) -> str:
-		def head(v: str) -> str:
-			return "{{patchnote/item|" + v + "}}\n"
-
-		def bold(v: str) -> str:
-			return "{{patchnote/bold|" + v + "}}\n"
-
-		def patchnote(v: str, o, n) -> str:
-			return "{{patchnote|" + f"{v}|{str(o)}|{str(n)}" + "}}\n"
-
-		res = head(cls.getWikiName(item))
-		for v, d in change.items():
-			if isinstance(d, tuple):
-				o, n = d
-				res += patchnote(v, o, n)
-			elif isinstance(d, list):
-				res += bold(camelCaseToTitle(v))
-				for i, subC in enumerate(d):
-					o, n = subC
-					res += patchnote(str(i), o, n)
-			elif isinstance(d, dict):
-				res += bold(camelCaseToTitle(v))
-				for atr, subC in d.items():
-					o, n = subC
-					res += patchnote(atr, o, n)
-		return res

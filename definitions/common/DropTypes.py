@@ -8,6 +8,7 @@ from helpers.CustomTypes import Numeric
 from helpers.HelperFunctions import formatFloat, isTalent, isRecipe
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.RecipeRepo import RecipeRepo
+from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 
@@ -17,6 +18,9 @@ class Drop(IdleonModel):
 	quantity: Numeric
 	chance: float
 	questLink: str
+
+	def hasDropTableExtra(self) -> bool:
+		return True
 
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = self.writeDrop()
@@ -28,9 +32,12 @@ class Drop(IdleonModel):
 		return res
 
 	def __str__(self) -> str:
-		res = f"{self.quantity}x " + "{{CraftReq|"
-		res += ItemDetailRepo.getDisplayName(self.item) + "}}"
-		res += f" {self.chance:g}"
+		res = ""
+		if self.quantity != 1:
+			res += f"{self.quantity}x "
+		res += "{{CraftReq|"
+		res += SpecificItemRepo.getDisplayName(self.item) + "}}"
+		res += f" ({formatFloat(self.chance)})"
 		return res
 
 	def shouldCompare(self) -> bool:
@@ -60,6 +67,9 @@ class Drop(IdleonModel):
 
 
 class SubTableDrop(Drop):
+
+	def hasDropTableExtra(self) -> bool:
+		return False
 
 	def writeDrop(self):
 		res = "{{DropTable/append|"
@@ -96,7 +106,7 @@ class TalentDrop(Drop):
 		no = int(qty[0])
 		index = int(qty[1: no + 1])
 		res = "{{DropTable/talent|"
-		talent = TalentNameRepo.get(index).name
+		talent = TalentNameRepo.getList(index).name
 		res += f"{talent}|{formatFloat(self.chance)}"
 		return res
 
@@ -104,7 +114,7 @@ class TalentDrop(Drop):
 		qty = str(self.quantity)
 		no = int(qty[0])
 		index = int(qty[1: no + 1])
-		talent = TalentNameRepo.get(index).name
+		talent = TalentNameRepo.getList(index).name
 		return f"{self.quantity}x " + f"{talent} Talent Book" + f" {self.chance:g}"
 
 
@@ -115,12 +125,12 @@ class RecipeDrop(Drop):
 		index = int(self.quantity)
 		item = ItemDetailRepo.getDisplayName(RecipeRepo.getItemAtIndex(tab, index))
 		res = "{{DropTable/recipe|"
-		res += f" {tab}|{item}|{formatFloat(self.chance)}"
+		res += f"{tab + 1}|{item}|{formatFloat(self.chance)}"
 		return res
 
 	def __str__(self) -> str:
 		tab = int(self.item[-1]) - 1
-		index = int(self.quantity) + 1
+		index = int(self.quantity)
 		item = ItemDetailRepo.getDisplayName(RecipeRepo.getItemAtIndex(tab, index))
 		res = "{{CraftReq|" + item + "}}"
 		return f"{self.quantity}x " + f"{res} Recipe" + f" {self.chance:g}"

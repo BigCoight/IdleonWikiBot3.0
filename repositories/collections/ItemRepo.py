@@ -1,4 +1,3 @@
-from pywikibot import Site, Page
 
 from definitions.collections.Item import Item
 from repositories.item.AnvilRepo import AnvilRepo
@@ -17,13 +16,17 @@ class ItemRepo(Repository[Item]):
 	"""
 
 	@classmethod
-	def initDependencies(cls):
-		SpecificItemRepo.initialise(cls.codeReader)
-		SourceRepo.initialise(cls.codeReader)
-		RecipeRepo.initialise(cls.codeReader)
-		VendorRepo.initialise(cls.codeReader)
-		AnvilRepo.initialise(cls.codeReader)
-		DetDropsRepo.initialise(cls.codeReader)
+	def getCategory(cls) -> str:
+		return "Item"
+
+	@classmethod
+	def initDependencies(cls, log = True):
+		SpecificItemRepo.initialise(cls.codeReader, log)
+		SourceRepo.initialise(cls.codeReader, log)
+		RecipeRepo.initialise(cls.codeReader, log)
+		VendorRepo.initialise(cls.codeReader, log)
+		AnvilRepo.initialise(cls.codeReader, log)
+		DetDropsRepo.initialise(cls.codeReader, log)
 		ItemNoteRepo.initialise(cls.codeReader)
 
 	@classmethod
@@ -57,15 +60,7 @@ class ItemRepo(Repository[Item]):
 			return True
 		if data.item.Type == "Dungeon Evaporate":
 			return True
-		if cls._ignoreW4(name, data):
-			return True
 		return False
-
-	@classmethod
-	def _ignoreW4(cls, name: str, data: Item) -> bool:
-		website = Site()
-		page = Page(website, data.item.displayName)
-		return not page.exists()
 
 	@classmethod
 	def getWikiName(cls, name: str) -> str:

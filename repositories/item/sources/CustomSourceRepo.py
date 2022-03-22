@@ -6,6 +6,10 @@ from repositories.master.Repository import Repository
 class CustomSourceRepo(Repository[Sources]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item/Sources"
+
+	@classmethod
 	def excludeDefaults(cls) -> bool:
 		return True
 

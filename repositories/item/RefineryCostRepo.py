@@ -9,8 +9,8 @@ from repositories.master.Repository import Repository
 class RefineryCostRepo(Repository[RefineryCost]):
 
 	@classmethod
-	def parse(cls, value) -> RefineryCost:
-		return RefineryCost.parse_obj(value)
+	def getCategory(cls) -> str:
+		return "Item"
 
 	@classmethod
 	def getSections(cls) -> List[str]:

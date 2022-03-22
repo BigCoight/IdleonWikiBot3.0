@@ -6,6 +6,9 @@ from repositories.master.Repository import Repository
 
 
 class MealRepo(Repository[Meal]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Worlds/4"
 
 	@classmethod
 	def getSections(cls) -> List[str]:

@@ -6,6 +6,7 @@ from helpers.HelperFunctions import replaceUnderscores
 
 
 class Shrine(IdleonModel):
+	name: str
 	desc: str
 	baseBonus: Numeric
 	increment: Numeric

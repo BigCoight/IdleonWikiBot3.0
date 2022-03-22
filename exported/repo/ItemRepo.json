@@ -51834,9 +51834,12 @@
         },
         "sources": {
             "sources": [
-                {"wikiName": "[[Smithing]]", "txtName": "Smithing"}
+                {"wikiName": "[[Smithing]]", "txtName": "Smithing"},
+                {"wikiName": "[[Pincermin|Recipe from Pincermin]]", "txtName": "Pincermin"}
             ],
-            "recipeFrom": [],
+            "recipeFrom": [
+                {"wikiName": "[[Pincermin]]", "txtName": "Pincermin"}
+            ],
             "questAss": []
         },
         "notes": null,
@@ -51848,7 +51851,9 @@
             "no": 54,
             "tab": 4,
             "sellPrice": 30002880,
-            "recipeFrom": [],
+            "recipeFrom": [
+                {"wikiName": "[[Pincermin]]", "txtName": "Pincermin"}
+            ],
             "detailedRecipe": {
                 "detRecipe": [
                     {"indent": 0, "item": "DesertC2b", "quantity": 18},
@@ -51886,9 +51891,12 @@
         },
         "sources": {
             "sources": [
-                {"wikiName": "[[Smithing]]", "txtName": "Smithing"}
+                {"wikiName": "[[Smithing]]", "txtName": "Smithing"},
+                {"wikiName": "[[Thermister|Recipe from Thermister]]", "txtName": "Thermister"}
             ],
-            "recipeFrom": [],
+            "recipeFrom": [
+                {"wikiName": "[[Thermister]]", "txtName": "Thermister"}
+            ],
             "questAss": []
         },
         "notes": null,
@@ -51900,7 +51908,9 @@
             "no": 55,
             "tab": 4,
             "sellPrice": 30097380,
-            "recipeFrom": [],
+            "recipeFrom": [
+                {"wikiName": "[[Thermister]]", "txtName": "Thermister"}
+            ],
             "detailedRecipe": {
                 "detRecipe": [
                     {"indent": 0, "item": "SnowB2a", "quantity": 30},

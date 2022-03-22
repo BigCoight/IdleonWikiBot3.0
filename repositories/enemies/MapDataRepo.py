@@ -14,6 +14,10 @@ class MapDataRepo(Repository[MapData]):
 	"""
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Enemy"
+
+	@classmethod
 	def initDependencies(cls, log = True) -> None:
 		MapNameRepo.initialise(cls.codeReader, log)
 		MapPortalsRepo.initialise(cls.codeReader, log)
@@ -32,8 +36,8 @@ class MapDataRepo(Repository[MapData]):
 			if cls.contains(v):
 				continue
 			cls.add(v, MapData(
-				area = MapNameRepo.get(f"{n}").name,
+				area = MapNameRepo.getList(n).name,
 				world = Constants.worlds[worldIndex],
-				id = MapNameRepo.get(f"{n}").id,
-				portalRequirements = MapPortalsRepo.get(n).portalRequirements
+				id = MapNameRepo.getList(n).id,
+				portalRequirements = MapPortalsRepo.getList(n).portalRequirements
 			))

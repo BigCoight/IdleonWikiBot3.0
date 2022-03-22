@@ -30,6 +30,10 @@ class SourceRepo(Repository[Sources]):
 	"""
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item/Sources"
+
+	@classmethod
 	def initDependencies(cls, log = True) -> None:
 		DropTableRepo.initialise(cls.codeReader, log)
 		EnemyDetailsRepo.initialise(cls.codeReader, log)
@@ -163,7 +167,7 @@ class SourceRepo(Repository[Sources]):
 
 	@classmethod
 	def addTaskUnlocks(cls):
-		for sec, unlocks in enumerate(TaskUnlocksRepo.items()):
+		for sec, unlocks in enumerate(TaskUnlocksRepo.itemsList()):
 			for unlock in unlocks.unlocks:
 				for item in unlock:
 					if item.item == "PremiumGem":

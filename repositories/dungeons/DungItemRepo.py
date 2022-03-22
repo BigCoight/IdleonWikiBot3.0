@@ -13,6 +13,10 @@ class DungItemRepo(Repository[DungItem]):
 	"""
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Dungeon"
+
+	@classmethod
 	def initDependencies(cls, log = True) -> None:
 		AchievementRepo.initialise(cls.codeReader, log)
 

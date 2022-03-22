@@ -8,6 +8,9 @@ from repositories.talents.ActiveTalentRepo import ActiveTalentRepo
 
 
 class TalentTreeRepo(Repository[TalentTree]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Talents"
 
 	@classmethod
 	def initDependencies(cls, log = True) -> None:

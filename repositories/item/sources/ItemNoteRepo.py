@@ -14,6 +14,10 @@ from repositories.master.FileRepository import FileRepository
 class ItemNoteRepo(FileRepository[Note]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item/Sources"
+
+	@classmethod
 	def parse(cls, value: Dict[str, any]) -> Note:
 		return Note.parse_obj(value)
 

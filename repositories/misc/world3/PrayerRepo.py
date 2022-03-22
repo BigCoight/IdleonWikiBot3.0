@@ -6,6 +6,9 @@ from repositories.master.Repository import Repository
 
 
 class PrayerRepo(Repository[Prayer]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Worlds/3"
 
 	@classmethod
 	def parse(cls, value) -> Prayer:

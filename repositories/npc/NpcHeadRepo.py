@@ -12,6 +12,9 @@ from repositories.master.FileRepository import FileRepository
 
 
 class NpcHeadRepo(FileRepository[NpcHead]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Npc"
 
 	@classmethod
 	def parse(cls, value: Dict[str, any]) -> NpcHead:

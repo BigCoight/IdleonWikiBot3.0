@@ -8,6 +8,10 @@ from typing import List
 class StampDescriptionRepo(Repository[StampDescription]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item"
+
+	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["StampDescriptions"]
 

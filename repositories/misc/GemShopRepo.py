@@ -6,6 +6,9 @@ from repositories.master.Repository import Repository
 
 
 class GemShopRepo(Repository[GemShopItem]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Misc"
 
 	@classmethod
 	def parse(cls, value) -> GemShopItem:
@@ -19,9 +22,8 @@ class GemShopRepo(Repository[GemShopItem]):
 	def generateRepo(cls) -> None:
 		gemShopItems = getFromSplitArray(cls.getSection())
 		for item in gemShopItems:
-			if item[3] == "GemCostNum":
-				continue
-			cls.add(item[0], GemShopItem(
+			toAdd = GemShopItem(
+				name = item[0],
 				itemName = item[1].title(),
 				desc = item[2],
 				cost = item[3],
@@ -29,7 +31,11 @@ class GemShopRepo(Repository[GemShopItem]):
 				maxPurchases = item[5],
 				qty = item[6],
 				costIncrement = item[7]
-			))
+			)
+			cls.addList(toAdd)
+			if item[3] == "GemCostNum":
+				continue
+			cls.add(item[0], toAdd)
 
 	@classmethod
 	def getWikiName(cls, name: str) -> str:

@@ -5,6 +5,9 @@ from typing import List
 
 
 class ShrineRepo(Repository[Shrine]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Worlds/3"
 
 	@classmethod
 	def parse(cls, value) -> Shrine:
@@ -18,9 +21,12 @@ class ShrineRepo(Repository[Shrine]):
 	def generateRepo(cls) -> None:
 		shrines = getFromArrayArray(cls.getSection())
 		for shrine in shrines:
-			cls.add(replaceUnderscores(shrine[0]), Shrine(
+			toAdd = Shrine(
+				name = replaceUnderscores(shrine[0]),
 				desc = shrine[1],
 				baseBonus = shrine[2],
 				increment = shrine[3],
 				misc = shrine[4]
-			))
+			)
+			cls.add(replaceUnderscores(shrine[0]), toAdd)
+			cls.addList(toAdd)

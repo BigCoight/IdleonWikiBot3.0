@@ -20,9 +20,14 @@ def getFromSplitArray(v: str, replaceUnderscores: bool = True) -> List[List[str]
 	"""
 	section = formatStr(v, ["  ", "\n"])
 	subSections = re.findall(fr'"({reAll}*)"\.split', section)
-	subSections = [x.split(" ") for x in subSections]
+	newSections = []
+	for subSec in subSections:
+		if subSec.count(" ") > subSec.count(";"):
+			newSections.append(subSec.split(" "))
+		else:
+			newSections.append(subSec.split(";"))
 	newList = []
-	for subSection in subSections:
+	for subSection in newSections:
 		internalList = []
 		for i in range(len(subSection)):
 			internalList.append(formatStr(subSection[i], replaceUnderscores=replaceUnderscores))

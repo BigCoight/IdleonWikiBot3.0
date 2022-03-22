@@ -1,10 +1,14 @@
 from definitions.misc.TaskUnlocks import TaskUnlocks, TaskUnlock
 from helpers.HelperFunctions import getFrom4dArray
-from repositories.master.ListRepository import ListRepository
 from typing import List
 
+from repositories.master.Repository import Repository
 
-class TaskUnlocksRepo(ListRepository[TaskUnlocks]):
+
+class TaskUnlocksRepo(Repository[TaskUnlocks]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Misc"
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -13,7 +17,7 @@ class TaskUnlocksRepo(ListRepository[TaskUnlocks]):
 	@classmethod
 	def generateRepo(cls) -> None:
 		sections = getFrom4dArray(cls.getSection())
-		for section in sections:
+		for n, section in enumerate(sections):
 			sectionUnlocks = TaskUnlocks(
 				unlocks = []
 			)
@@ -28,4 +32,5 @@ class TaskUnlocksRepo(ListRepository[TaskUnlocks]):
 						recipNo = part[2]
 					))
 				sectionUnlocks.unlocks.append(partUnlocks.copy())
-			cls.add(sectionUnlocks.copy())
+			cls.add(f"{n}", sectionUnlocks.copy())
+			cls.addList(sectionUnlocks.copy())

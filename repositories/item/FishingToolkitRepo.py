@@ -9,6 +9,10 @@ from repositories.master.Repository import Repository
 class FishingToolkitRepo(Repository[FishingToolkit]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item"
+
+	@classmethod
 	def parse(cls, value) -> FishingToolkit:
 		return FishingToolkit.parse_obj(value)
 

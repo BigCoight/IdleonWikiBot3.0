@@ -8,6 +8,9 @@ from repositories.master.Repository import Repository
 
 
 class JewelRepo(Repository[Jewel]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Worlds/4"
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -31,7 +34,7 @@ class JewelRepo(Repository[Jewel]):
 				description =line[4],
 				requirements =components.copy(),
 				name =line[11],
-				x1 =line[12])
+				bonusGiven =line[12])
 			cls.addList(toAdd)
 			if cls.contains(line[11]): continue
 			cls.add(line[11], toAdd)

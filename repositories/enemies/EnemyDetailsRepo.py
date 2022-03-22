@@ -10,6 +10,10 @@ from repositories.master.Repository import Repository
 class EnemyDetailsRepo(Repository[EnemyDetails]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Enemy"
+
+	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["Enemies"]
 

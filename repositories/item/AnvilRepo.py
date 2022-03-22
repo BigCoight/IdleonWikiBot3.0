@@ -9,6 +9,10 @@ from repositories.master.Repository import Repository
 class AnvilRepo(Repository[AnvilProduce]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item"
+
+	@classmethod
 	def initDependencies(cls, log = True) -> None:
 		ItemDetailRepo.initialise(cls.codeReader, log)
 

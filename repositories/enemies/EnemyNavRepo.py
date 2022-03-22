@@ -9,6 +9,10 @@ from typing import List
 class EnemyNavRepo(Repository[EnemyNav]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Enemy"
+
+	@classmethod
 	def initDependencies(cls, log = True) -> None:
 		CardRepo.initialise(cls.codeReader, log)
 

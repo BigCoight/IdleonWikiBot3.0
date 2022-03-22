@@ -8,6 +8,7 @@ class AbilityType(Enum, metaclass=CheckIn):
 	Red = 0
 	Green = 1
 	Special = 2
+	Unsure = 3
 
 
 class PetGene(IdleonModel):

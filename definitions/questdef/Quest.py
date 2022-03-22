@@ -60,7 +60,7 @@ class TalentReward(IdleonModel):
 		qty = str(self.quantity)
 		no = int(qty[0])
 		index = int(qty[1: no + 1])
-		talent = TalentNameRepo.get(index).name
+		talent = TalentNameRepo.getList(index).name
 		return f"{talent} Talent Book"
 
 

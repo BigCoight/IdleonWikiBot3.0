@@ -12,6 +12,10 @@ class CardRepo(Repository[CardData]):
 	cardToName: Dict[str, str] = {}
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item"
+
+	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["CardInfo"]
 

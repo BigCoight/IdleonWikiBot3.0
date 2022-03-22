@@ -10,6 +10,10 @@ from repositories.master.Repository import Repository
 class DetDropsRepo(Repository[DetDrops]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item"
+
+	@classmethod
 	def initDependencies(cls, log = True) -> None:
 		DropTableRepo.initialise(cls.codeReader, log)
 		EnemyDetailsRepo.initialise(cls.codeReader, log)

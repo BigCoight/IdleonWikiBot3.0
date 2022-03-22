@@ -3,13 +3,15 @@ import re
 from definitions.talents.ActiveTalent import ActiveTalent
 from definitions.talents.TalentName import TalentName
 from helpers.HelperFunctions import replaceUnderscores, formatStr
-from repositories.master.ListRepository import ListRepository
 from typing import List
 
 from repositories.master.Repository import Repository
 
 
 class ActiveTalentRepo(Repository[ActiveTalent]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Talents"
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -27,4 +29,7 @@ class ActiveTalentRepo(Repository[ActiveTalent]):
 			activeDetails = re.findall(reData, activeDataSplit[i + 1])
 			for atr, val in activeDetails:
 				activeDict[atr] = formatStr(val, ['"'])
-			cls.add(replaceUnderscores(activeDataSplit[i]).title(), ActiveTalent.parse_obj(activeDict))
+			name = replaceUnderscores(activeDataSplit[i]).title()
+			activeDict["name"] = name
+			cls.add(name, ActiveTalent.parse_obj(activeDict))
+			cls.addList(ActiveTalent.parse_obj(activeDict))

@@ -32,9 +32,12 @@ class Drop(IdleonModel):
 		return res
 
 	def __str__(self) -> str:
-		res = f"{self.quantity}x " + "{{CraftReq|"
+		res = ""
+		if self.quantity != 1:
+			res += f"{self.quantity}x "
+		res += "{{CraftReq|"
 		res += SpecificItemRepo.getDisplayName(self.item) + "}}"
-		res += f" {self.chance:g}"
+		res += f" ({formatFloat(self.chance)})"
 		return res
 
 	def shouldCompare(self) -> bool:
@@ -103,7 +106,7 @@ class TalentDrop(Drop):
 		no = int(qty[0])
 		index = int(qty[1: no + 1])
 		res = "{{DropTable/talent|"
-		talent = TalentNameRepo.get(index).name
+		talent = TalentNameRepo.getList(index).name
 		res += f"{talent}|{formatFloat(self.chance)}"
 		return res
 
@@ -111,7 +114,7 @@ class TalentDrop(Drop):
 		qty = str(self.quantity)
 		no = int(qty[0])
 		index = int(qty[1: no + 1])
-		talent = TalentNameRepo.get(index).name
+		talent = TalentNameRepo.getList(index).name
 		return f"{self.quantity}x " + f"{talent} Talent Book" + f" {self.chance:g}"
 
 

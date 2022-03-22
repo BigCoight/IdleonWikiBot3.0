@@ -7,9 +7,9 @@ from helpers.CustomTypes import Numeric
 
 class TerritoryFight(IdleonModel):
 	img: str
-	spiceForage: Numeric
+	trekReq: Numeric
 	fightPower: Numeric
-	forCostUP: Numeric
+	enemyAttack: Numeric
 	battleName: str
 	filler1: str
 	filler2: str

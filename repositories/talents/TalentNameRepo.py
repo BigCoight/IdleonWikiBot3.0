@@ -2,11 +2,15 @@ import re
 
 from definitions.talents.TalentName import TalentName
 from helpers.HelperFunctions import replaceUnderscores
-from repositories.master.ListRepository import ListRepository
 from typing import List
 
+from repositories.master.Repository import Repository
 
-class TalentNameRepo(ListRepository[TalentName]):
+
+class TalentNameRepo(Repository[TalentName]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Talents"
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -17,7 +21,11 @@ class TalentNameRepo(ListRepository[TalentName]):
 		reEverything = r'"([a-zA-Z0-9_ +{}\',.\-%!$:`?;\n\]\(\)]*)"\.'
 		talentNames = re.findall(reEverything, cls.getSection())[0].split(" ")
 		for n, talentName in enumerate(talentNames):
-			cls.add(TalentName(
+			cls.add(f"{n}", TalentName(
+				name = replaceUnderscores(talentName).title(),
+				id = n
+			))
+			cls.addList(TalentName(
 				name = replaceUnderscores(talentName).title(),
 				id = n
 			))

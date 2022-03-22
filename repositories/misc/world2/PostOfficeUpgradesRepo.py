@@ -6,6 +6,9 @@ from repositories.master.Repository import Repository
 
 
 class PostOfficeUpgradesRepo(Repository[PostOfficeUpgrades]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Worlds/2"
 
 	@classmethod
 	def getSections(cls) -> List[str]:

@@ -8,6 +8,9 @@ from repositories.master.Repository import Repository
 
 
 class QuestNameRepo(Repository[QuestName]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Npc"
 
 	@classmethod
 	def getSections(cls) -> List[str]:

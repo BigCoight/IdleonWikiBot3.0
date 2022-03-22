@@ -10,6 +10,9 @@ class ConstellationsRepo(Repository[Constellation]):
 	"""
 	Dependent on: MapNameRepo
 	"""
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Misc"
 
 	@classmethod
 	def initDependencies(cls, log = True):
@@ -58,7 +61,8 @@ class ConstellationsRepo(Repository[Constellation]):
 			else:
 				prefix = "D"
 				number = 1 + n - 34
-			mapName = MapNameRepo.get(const[0]).name
+			mapName = MapNameRepo.getList(int(const[0])).name
 			constName = f"{prefix}-{number}"
 			finalData = [constName, mapName, *const[1:]]
 			cls.add(constName, Constellation.fromList(finalData))
+			cls.addList(Constellation.fromList(finalData))

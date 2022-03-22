@@ -25,6 +25,10 @@ class EnemyRepo(Repository[Enemy]):
 	"""
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Enemy"
+
+	@classmethod
 	def initDependencies(cls, log = True):
 		SpecificItemRepo.initialise(cls.codeReader, log)
 		RecipeRepo.initialise(cls.codeReader, log)

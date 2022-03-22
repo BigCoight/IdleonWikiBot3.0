@@ -50,7 +50,16 @@ from repositories.misc.world3.BuildingRepo import BuildingRepo
 from repositories.misc.world3.PrayerRepo import PrayerRepo
 from repositories.misc.world3.SaltLickRepo import SaltLickRepo
 from repositories.misc.world3.ShrineRepo import ShrineRepo
+from repositories.misc.world4.ArenaBonusRepo import ArenaBonusRepo
+from repositories.misc.world4.ChipRepo import ChipRepo
+from repositories.misc.world4.InfiniteTerritoryRepo import InfiniteTerritoryRepo
+from repositories.misc.world4.JewelRepo import JewelRepo
+from repositories.misc.world4.LabBonusRepo import LabBonusRepo
 from repositories.misc.world4.MealRepo import MealRepo
+from repositories.misc.world4.PetGeneRepo import PetGeneRepo
+from repositories.misc.world4.PetStatRepo import PetStatRepo
+from repositories.misc.world4.PetUpgradeRepo import PetUpgradeRepo
+from repositories.misc.world4.TerritoryFightRepo import TerritoryFightRepo
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
 from repositories.npc.NpcRepo import NpcRepo
@@ -126,11 +135,16 @@ ItemNoteRepo.initialise(codeReader)
 EnemyNavRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
-
 StampDescriptionRepo.initialise(codeReader)
-# MealRepo.initialise(codeReader)
-#DropTableRepo.upload(False)
-#EnemyRepo.exportWikiMult()
-#EnemyRepo.upload(True)
-#ItemRepo.upload(True)
-#
+ArenaBonusRepo.initialise(codeReader)
+ChipRepo.initialise(codeReader)
+InfiniteTerritoryRepo.initialise(codeReader)
+JewelRepo.initialise(codeReader)
+LabBonusRepo.initialise(codeReader)
+MealRepo.initialise(codeReader)
+PetGeneRepo.initialise(codeReader)
+PetStatRepo.initialise(codeReader)
+PetUpgradeRepo.initialise(codeReader)
+TerritoryFightRepo.initialise(codeReader)
+
+

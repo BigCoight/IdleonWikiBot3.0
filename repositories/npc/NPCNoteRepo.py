@@ -11,6 +11,9 @@ from repositories.master.FileRepository import FileRepository
 
 
 class NpcNoteRepo(FileRepository[NpcNote]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Npc"
 
 	@classmethod
 	def parse(cls, value: Dict[str, any]) -> NpcNote:

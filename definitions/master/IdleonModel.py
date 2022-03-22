@@ -92,6 +92,13 @@ class IdleonModel(BaseModel):
 			if key in ignored:
 				continue
 			if isinstance(d1[key], IdleonModel) and d1[key].shouldCompare():
+				if len(d1[key].__fields__) > 1:
+					diffs[key] = d1[key].compare(d2[key], ignored)
+					continue
+				firstKey = list(dict(d1[key]).keys())[0]
+				if isinstance(dict(d1[key])[firstKey], list):  # Remove the Drop: Drop: [] iteration
+					diffs[key] = self._getDifList(dict(d1[key])[firstKey], dict(d2[key])[firstKey], ignored)
+					continue
 				diffs[key] = d1[key].compare(d2[key], ignored)
 				continue
 			if isinstance(d1[key], list):

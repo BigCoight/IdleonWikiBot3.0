@@ -16,6 +16,10 @@ class ItemRepo(Repository[Item]):
 	"""
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item"
+
+	@classmethod
 	def initDependencies(cls, log = True):
 		SpecificItemRepo.initialise(cls.codeReader, log)
 		SourceRepo.initialise(cls.codeReader, log)
@@ -23,7 +27,7 @@ class ItemRepo(Repository[Item]):
 		VendorRepo.initialise(cls.codeReader, log)
 		AnvilRepo.initialise(cls.codeReader, log)
 		DetDropsRepo.initialise(cls.codeReader, log)
-		ItemNoteRepo.initialise(cls.codeReader, log)
+		ItemNoteRepo.initialise(cls.codeReader)
 
 	@classmethod
 	def generateRepo(cls) -> None:

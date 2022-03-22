@@ -2,11 +2,14 @@ from typing import List
 
 from definitions.itemdef.StatueData import StatueData
 from helpers.HelperFunctions import getFromArrayArray, replaceUnderscores
-from repositories.master.ListRepository import ListRepository
 from repositories.master.Repository import Repository
 
 
 class StatueRepo(Repository[StatueData]):
+
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Item"
 
 	@classmethod
 	def getSections(cls) -> List[str]:

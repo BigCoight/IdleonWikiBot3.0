@@ -13,6 +13,10 @@ from repositories.master.Repository import Repository
 class ItemDetailRepo(Repository[CommonItem]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item"
+
+	@classmethod
 	def parse(cls, value) -> CommonItem:
 		return CommonItem.parse_obj(value)
 

@@ -14,6 +14,10 @@ from repositories.master.FileRepository import FileRepository
 class WikiSourceRepo(FileRepository[Sources]):
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item/Sources"
+
+	@classmethod
 	def parse(cls, value: Dict[str, any]) -> Sources:
 		return Sources.parse_obj(value)
 

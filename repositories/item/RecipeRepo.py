@@ -17,6 +17,10 @@ class RecipeRepo(Repository[Recipe]):
 	anvilItemNames: List[List[str]]
 
 	@classmethod
+	def getCategory(cls) -> str:
+		return "Item"
+
+	@classmethod
 	def getSections(cls) -> List[str]:
 		return ["AnvilItems", "Recipes", "RecipeLevel"]
 

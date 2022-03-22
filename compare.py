@@ -19,11 +19,21 @@ from repositories.misc.world2.PostOfficeUpgradesRepo import PostOfficeUpgradesRe
 from repositories.misc.world3.BuildingRepo import BuildingRepo
 from repositories.misc.world3.PrayerRepo import PrayerRepo
 from repositories.misc.world3.ShrineRepo import ShrineRepo
+from repositories.misc.world4.ArenaBonusRepo import ArenaBonusRepo
+from repositories.misc.world4.ChipRepo import ChipRepo
+from repositories.misc.world4.InfiniteTerritoryRepo import InfiniteTerritoryRepo
+from repositories.misc.world4.JewelRepo import JewelRepo
+from repositories.misc.world4.LabBonusRepo import LabBonusRepo
+from repositories.misc.world4.MealRepo import MealRepo
+from repositories.misc.world4.PetGeneRepo import PetGeneRepo
+from repositories.misc.world4.PetStatRepo import PetStatRepo
+from repositories.misc.world4.PetUpgradeRepo import PetUpgradeRepo
+from repositories.misc.world4.TerritoryFightRepo import TerritoryFightRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("150d", True)
-oldV = IdleonReader("140b", True)
+newV = IdleonReader("151", True)
+oldV = IdleonReader("150d", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)
@@ -48,3 +58,16 @@ AchievementRepo.compareVersions(oldV, newV)
 GuildBonusRepo.compareVersions(oldV, newV)
 AnvilRepo.compareVersions(oldV, newV)
 
+ArenaBonusRepo.compareVersions(oldV, newV)
+ChipRepo.compareVersions(oldV, newV)
+InfiniteTerritoryRepo.compareVersions(oldV, newV)
+
+JewelRepo.compareVersions(oldV, newV)
+LabBonusRepo.compareVersions(oldV, newV)
+MealRepo.compareVersions(oldV, newV)
+
+PetGeneRepo.compareVersions(oldV, newV)
+PetStatRepo.compareVersions(oldV, newV)
+PetUpgradeRepo.compareVersions(oldV, newV)
+
+TerritoryFightRepo.compareVersions(oldV, newV)

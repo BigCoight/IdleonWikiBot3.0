@@ -7,6 +7,9 @@ from repositories.master.Repository import Repository
 
 
 class ChipRepo(Repository[Chip]):
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Worlds/4"
 
 	@classmethod
 	def getSections(cls) -> List[str]:

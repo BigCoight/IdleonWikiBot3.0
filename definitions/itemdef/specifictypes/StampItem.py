@@ -129,6 +129,6 @@ class StampItem(BonusItem):
 		return [self.stampData]
 
 	def getMaterial(self):
-		if ItemDetailRepo.contains(self.stampData.material):
-			return ItemDetailRepo.getDisplayName(self.stampData.material)
+		if ItemDetailRepo.contains(self.stampData.material.item):
+			return ItemDetailRepo.getDisplayName(self.stampData.material.item)
 		return self.stampData.material

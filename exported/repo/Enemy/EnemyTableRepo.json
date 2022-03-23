@@ -354,8 +354,8 @@
             {"item": "COIN", "quantity": 28, "chance": 0.35, "questLink": "N/A"},
             {"item": "Forest3", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
             {"item": "CardsA9", "quantity": 1, "chance": 7e-05, "questLink": "N/A"},
-            {"item": "StampA10", "quantity": 1, "chance": 3e-05, "questLink": "N/A"},
             {"item": "FoodPotRe2", "quantity": 5, "chance": 0.001, "questLink": "N/A"},
+            {"item": "StampA10", "quantity": 1, "chance": 3e-05, "questLink": "N/A"},
             {"item": "StampA8", "quantity": 1, "chance": 0.0003, "questLink": "Papua_Piggea1"},
             {"item": "ObolBronzePop", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
             {"item": "DropTable3", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
@@ -556,10 +556,15 @@
     },
     "pincermin": {
         "drops": [
-            {"item": "SmithingRecipes4", "quantity": 53, "chance": 3e-06, "questLink": "N/A"},
             {"item": "COIN", "quantity": 90, "chance": 0.38, "questLink": "N/A"},
             {"item": "DesertB3", "quantity": 1, "chance": 0.18, "questLink": "N/A"},
             {"item": "CardsB6", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
+            {
+                "item": "SmithingRecipes4",
+                "quantity": 53,
+                "chance": 3e-06,
+                "questLink": "(Enter World 4)"
+            },
             {"item": "DropTable7", "quantity": 1, "chance": 0.0037, "questLink": "N/A"}
         ]
     },
@@ -762,12 +767,17 @@
     },
     "thermostat": {
         "drops": [
-            {"item": "SmithingRecipes4", "quantity": 54, "chance": 8e-07, "questLink": "N/A"},
             {"item": "COIN", "quantity": 340, "chance": 0.35, "questLink": "N/A"},
             {"item": "SnowB4", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
             {"item": "CardsE7", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
             {"item": "StampB12", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
             {"item": "Quest63", "quantity": 1, "chance": 1, "questLink": "Shuvelle7"},
+            {
+                "item": "SmithingRecipes4",
+                "quantity": 54,
+                "chance": 8e-07,
+                "questLink": "(Enter World 4)"
+            },
             {"item": "DropTable15", "quantity": 1, "chance": 0.0033, "questLink": "N/A"}
         ]
     },

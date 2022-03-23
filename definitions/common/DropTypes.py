@@ -24,12 +24,17 @@ class Drop(IdleonModel):
 
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = self.writeDrop()
-		if self.questLink != "N/A":
-			questName = NpcRepo.getQuestByName(self.questLink)
-			npcName = self.questLink.rstrip(string.digits)
-			displayed = f"[[{npcName}#{questName}|{npcName}]]"
-			res += f"|special=({displayed})"
+		if self.questLink == "N/A":
+			return res
+		if not NpcRepo.isQuestName(self.questLink):
+			res += f"|special={self.questLink}"
+			return res
+		questName = NpcRepo.getQuestByName(self.questLink)
+		npcName = self.questLink.rstrip(string.digits)
+		displayed = f"[[{npcName}#{questName}|{npcName}]]"
+		res += f"|special=({displayed})"
 		return res
+
 
 	def __str__(self) -> str:
 		res = ""

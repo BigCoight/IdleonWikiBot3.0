@@ -148,3 +148,4 @@ PetUpgradeRepo.initialise(codeReader)
 TerritoryFightRepo.initialise(codeReader)
 
 
+EnemyRepo.exportWikiMult()

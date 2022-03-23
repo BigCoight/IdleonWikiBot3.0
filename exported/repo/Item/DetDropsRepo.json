@@ -2236,18 +2236,6 @@
             {"source": "Boss2B", "quantity": 1, "chance": 0.07}
         ]
     },
-    "StampA17": {
-        "sources": [
-            {"source": "Crystal1", "quantity": 1, "chance": 0.004},
-            {"source": "steak", "quantity": 1, "chance": 3.2e-05},
-            {"source": "moonman", "quantity": 1, "chance": 3.5e-05},
-            {"source": "sandgiant", "quantity": 1, "chance": 3.7e-05},
-            {"source": "snailZ", "quantity": 1, "chance": 3.9e-05},
-            {"source": "Boss2A", "quantity": 2, "chance": 0.01},
-            {"source": "Boss2B", "quantity": 2, "chance": 0.01},
-            {"source": "ChestC2", "quantity": 1, "chance": 0.01}
-        ]
-    },
     "FoodPotRe3": {
         "sources": [
             {"source": "Crystal1", "quantity": 25, "chance": 0.16},
@@ -2641,6 +2629,17 @@
             {"source": "ChestA3", "quantity": 1, "chance": 0.001}
         ]
     },
+    "StampB36": {
+        "sources": [
+            {"source": "Crystal2", "quantity": 1, "chance": 0.00036},
+            {"source": "sheep", "quantity": 1, "chance": 1.5e-06},
+            {"source": "flake", "quantity": 1, "chance": 1.68e-06},
+            {"source": "stache", "quantity": 1, "chance": 1.86e-06},
+            {"source": "skele", "quantity": 1, "chance": 6e-06},
+            {"source": "Boss3A", "quantity": 2, "chance": 0.0006},
+            {"source": "ChestA3", "quantity": 1, "chance": 0.0006}
+        ]
+    },
     "PureWater": {
         "sources": [
             {"source": "Crystal2", "quantity": 1, "chance": 0.0132},
@@ -2669,17 +2668,6 @@
             {"source": "Boss3A", "quantity": 2, "chance": 0.027},
             {"source": "Boss3B", "quantity": 2, "chance": 0.027},
             {"source": "ChestC3", "quantity": 1, "chance": 0.027}
-        ]
-    },
-    "StampB36": {
-        "sources": [
-            {"source": "Crystal2", "quantity": 1, "chance": 0.00036},
-            {"source": "sheep", "quantity": 1, "chance": 1.5e-06},
-            {"source": "flake", "quantity": 1, "chance": 1.68e-06},
-            {"source": "stache", "quantity": 1, "chance": 1.86e-06},
-            {"source": "skele", "quantity": 1, "chance": 6e-06},
-            {"source": "Boss3A", "quantity": 2, "chance": 0.0006},
-            {"source": "ChestA3", "quantity": 1, "chance": 0.0006}
         ]
     },
     "EquipmentStatues18": {
@@ -3019,42 +3007,6 @@
             {"source": "Bug5", "quantity": 1, "chance": 4.5e-05},
             {"source": "Bug6", "quantity": 1, "chance": 4.5e-05},
             {"source": "ChestB3", "quantity": 1, "chance": 0.5}
-        ]
-    },
-    "FoodG8": {
-        "sources": [
-            {"source": "Crystal2", "quantity": 1, "chance": 0.00144},
-            {"source": "sheep", "quantity": 1, "chance": 6e-06},
-            {"source": "flake", "quantity": 1, "chance": 6.72e-06},
-            {"source": "stache", "quantity": 1, "chance": 7.44e-06},
-            {"source": "skele", "quantity": 1, "chance": 2.4e-05},
-            {"source": "Boss3A", "quantity": 2, "chance": 0.0024},
-            {"source": "ChestA3", "quantity": 1, "chance": 0.0024},
-            {"source": "Crystal2", "quantity": 1, "chance": 0.0012},
-            {"source": "bloque", "quantity": 1, "chance": 6e-06},
-            {"source": "mamoth", "quantity": 1, "chance": 6.48e-06},
-            {"source": "snowball", "quantity": 1, "chance": 6.96e-06},
-            {"source": "penguin", "quantity": 1, "chance": 7.44e-06},
-            {"source": "thermostat", "quantity": 1, "chance": 7.92e-06},
-            {"source": "Boss3A", "quantity": 2, "chance": 0.0024},
-            {"source": "Boss3B", "quantity": 2, "chance": 0.0024},
-            {"source": "ChestB3", "quantity": 1, "chance": 0.0024},
-            {"source": "Crystal2", "quantity": 1, "chance": 0.00096},
-            {"source": "ram", "quantity": 1, "chance": 8.16e-06},
-            {"source": "glass", "quantity": 1, "chance": 6e-06},
-            {"source": "snakeB", "quantity": 1, "chance": 6.72e-06},
-            {"source": "speaker", "quantity": 1, "chance": 7.2e-06},
-            {"source": "eye", "quantity": 1, "chance": 7.68e-06},
-            {"source": "skele2", "quantity": 1, "chance": 1.2e-05},
-            {"source": "Boss3A", "quantity": 2, "chance": 0.0024},
-            {"source": "Boss3B", "quantity": 2, "chance": 0.0024},
-            {"source": "ChestC3", "quantity": 1, "chance": 0.0024},
-            {"source": "Crystal2", "quantity": 1, "chance": 0.00144},
-            {"source": "SaharanFoal", "quantity": 1, "chance": 2.136e-05},
-            {"source": "Tree7", "quantity": 1, "chance": 2.136e-05},
-            {"source": "Crystal2", "quantity": 1, "chance": 0.0012},
-            {"source": "Bug5", "quantity": 1, "chance": 3.6e-05},
-            {"source": "Bug6", "quantity": 1, "chance": 3.6e-05}
         ]
     },
     "ObolBronzeKill": {
@@ -3731,11 +3683,11 @@
     "CardsA9": {"sources": [
         {"source": "frogBIG", "quantity": 1, "chance": 7e-05}
     ]},
-    "StampA10": {"sources": [
-        {"source": "frogBIG", "quantity": 1, "chance": 3e-05}
-    ]},
     "FoodPotRe2": {"sources": [
         {"source": "frogBIG", "quantity": 5, "chance": 0.001}
+    ]},
+    "StampA10": {"sources": [
+        {"source": "frogBIG", "quantity": 1, "chance": 3e-05}
     ]},
     "StampA8": {"sources": [
         {"source": "frogBIG", "quantity": 1, "chance": 0.0003}
@@ -3912,6 +3864,12 @@
     "CardsB5": {"sources": [
         {"source": "sandcastle", "quantity": 1, "chance": 0.0001}
     ]},
+    "DesertB3": {"sources": [
+        {"source": "pincermin", "quantity": 1, "chance": 0.18}
+    ]},
+    "CardsB6": {"sources": [
+        {"source": "pincermin", "quantity": 1, "chance": 0.0001}
+    ]},
     "SmithingRecipes4": {
         "sources": [
             {"source": "pincermin", "quantity": 53, "chance": 3e-06},
@@ -3919,12 +3877,6 @@
             {"source": "w4c2", "quantity": 55, "chance": 3e-07}
         ]
     },
-    "DesertB3": {"sources": [
-        {"source": "pincermin", "quantity": 1, "chance": 0.18}
-    ]},
-    "CardsB6": {"sources": [
-        {"source": "pincermin", "quantity": 1, "chance": 0.0001}
-    ]},
     "DesertB4": {"sources": [
         {"source": "potato", "quantity": 1, "chance": 0.17}
     ]},

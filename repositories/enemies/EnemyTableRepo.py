@@ -54,15 +54,17 @@ class EnemyTableRepo(Repository[EnemyTable]):
 			questLink = "N/A",
 		))
 		# DNA Guns
-		cls.get("pincermin").drops.insert(0, RecipeDrop(
+		pincerDrops = cls.get("pincermin").drops
+		pincerDrops.insert(len(pincerDrops) - 1, RecipeDrop(
 			item = "SmithingRecipes4",
 			quantity = "53",
 			chance = "0.000003",
-			questLink = "N/A",
+			questLink = "(Enter World 4)",
 		))
-		cls.get("thermostat").drops.insert(0, RecipeDrop(
+		thermoDrops = cls.get("thermostat").drops
+		thermoDrops.insert(len(thermoDrops) - 1, RecipeDrop(
 			item = "SmithingRecipes4",
 			quantity = "54",
 			chance = "0.0000008",
-			questLink = "N/A",
+			questLink = "(Enter World 4)",
 		))

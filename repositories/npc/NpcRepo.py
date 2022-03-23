@@ -146,6 +146,10 @@ class NpcRepo(Repository[Npc]):
 		return cls.questToName.get(name)
 
 	@classmethod
+	def isQuestName(cls, name: str) -> bool:
+		return name in cls.questToName
+
+	@classmethod
 	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
 		return super().compareVersions(v1, v2, ignored = {"dialogue", "head", "QuestName", "CustomType", "note"})
 

@@ -1,0 +1,20 @@
+__NOCACHE__
+{{#cargo_query:tables=DropTables
+ |fields=CONCAT("[[", DropSourceEntity, "]]")=DropSourceEntity
+ |where=TableName HOLDS "{{PAGENAME}}" AND DropSourceEntity NOT LIKE "{{PAGENAME}}"
+ |group by=DropTables.DropSourceEntity
+ |order by=`DropSourceEntity` ASC
+ |default=
+ |intro=This is a Rare Droptable for:
+ |outro=To see monster specific droprates, visit the specified source page.
+ |limit=100
+ |offset=0
+ |format=ul
+ |columns=1
+}}
+{{DropTable/head}}
+{{DropTable|Blackheart Stamp|0.00018|1|tablename=DropTable21|tabletype=Rare}}
+{{DropTable|Crash Box|0.00005|1|tablename=DropTable21|tabletype=Rare}}
+{{DropTable|Cloudsound Follower|0.5|8|special=([[Mutton#7 Figure Followers|Mutton]])|tablename=DropTable21|tabletype=Rare}}
+{{DropTable|Corporatube Sub|0.2|3|special=([[Mutton#7 Figure Followers|Mutton]])|tablename=DropTable21|tabletype=Rare}}
+{{DropTable/append|SuperDropTable4|0.006|1}}

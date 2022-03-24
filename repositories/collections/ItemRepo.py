@@ -47,20 +47,8 @@ class ItemRepo(Repository[Item]):
 
 	@classmethod
 	def _ignore(cls, name: str, data: Item) -> bool:
-		if "Dung" in name:
-			return True
-		if name in {"EXP", "Blank", "LockedInvSpace", "COIN", "TalentBook1", "TalentBook2",
-		            "TalentBook3", "TalentBook4", "TalentBook5", "SmithingRecipes1", "SmithingRecipes2",
-		            "SmithingRecipes3", "SmithingRecipes4", "ExpSmith1", "Quest8", "EquipmentShirts8", "FoodHealth1d",
-		            "FoodHealth2d", "FoodHealth3d", "PremiumGem", "Quest49"}:
-			return True
-		if name[:3] == "Gem":
-			return True
-		if data.item.displayName in {"Filler", "FILLER", "Blank"}:
-			return True
-		if data.item.Type == "Dungeon Evaporate":
-			return True
-		return False
+		return SpecificItemRepo._ignore(name, data.item)
+
 
 	@classmethod
 	def getWikiName(cls, name: str) -> str:

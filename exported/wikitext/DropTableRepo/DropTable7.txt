@@ -1,0 +1,24 @@
+__NOCACHE__
+{{#cargo_query:tables=DropTables
+ |fields=CONCAT("[[", DropSourceEntity, "]]")=DropSourceEntity
+ |where=TableName HOLDS "{{PAGENAME}}" AND DropSourceEntity NOT LIKE "{{PAGENAME}}"
+ |group by=DropTables.DropSourceEntity
+ |order by=`DropSourceEntity` ASC
+ |default=
+ |intro=This is a Rare Droptable for:
+ |outro=To see monster specific droprates, visit the specified source page.
+ |limit=100
+ |offset=0
+ |format=ul
+ |columns=1
+}}
+{{DropTable/head}}
+{{DropTable|Armor Upgrade Stone B|0.005|1|tablename=DropTable7|tabletype=Rare}}
+{{DropTable|Meat Pie|0.42|15|tablename=DropTable7|tabletype=Rare}}
+{{DropTable|Droplots Stamp|0.0004|1|tablename=DropTable7|tabletype=Rare}}
+{{DropTable|Exp Book Statue|0.04|1|tablename=DropTable7|tabletype=Rare}}
+{{DropTable|Monster Rating|0.9|1|special=([[XxX_Cattleprod_XxX#None|XxX_Cattleprod_XxX]])|tablename=DropTable7|tabletype=Rare}}
+{{DropTable|Cloudsound Follower|0.5|8|special=([[Mutton#7 Figure Followers|Mutton]])|tablename=DropTable7|tabletype=Rare}}
+{{DropTable|Instablab Follower|0.3|3|special=([[Mutton#7 Figure Followers|Mutton]])|tablename=DropTable7|tabletype=Rare}}
+{{DropTable|Silver AGI Obol|0.0006299999999999999|1|tablename=DropTable7|tabletype=Rare}}
+{{DropTable/append|SuperDropTable2|0.006|1}}

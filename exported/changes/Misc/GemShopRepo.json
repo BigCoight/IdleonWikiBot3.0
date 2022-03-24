@@ -1,0 +1,47 @@
+{
+    "new": {
+        "EquipmentKeychain0": {
+            "name": "EquipmentKeychain0",
+            "itemName": "Tier 1 Keychain",
+            "desc": "Gives you 40 keychain fragments, enough to claim a Tier 1 Keychain! These keychains randomly give the following bonuses: Base Def, Accuracy, Move speed, Base Dmg, Card Drop rate, Money, Base Stat",
+            "cost": 90,
+            "no": 86,
+            "maxPurchases": 100000,
+            "qty": 0,
+            "costIncrement": 0
+        },
+        "EquipmentKeychain17": {
+            "name": "EquipmentKeychain17",
+            "itemName": "Tier 3 Keychain",
+            "desc": "Gives you 300 keychain fragments, enough to claim a Tier 3 Keychain! These keychains randomly give the following bonuses: %DEF, %Stat, %AFK gain, %DMG, mob respawn, Skilling spd, %All stat",
+            "cost": 340,
+            "no": 83,
+            "maxPurchases": 100000,
+            "qty": 0,
+            "costIncrement": 0
+        },
+        "EquipmentKeychain8": {
+            "name": "EquipmentKeychain8",
+            "itemName": "Tier 2 Keychan",
+            "desc": "Gives you 120 keychain fragments, enough to claim a Tier 3 Keychain! These keychains randomly give the following bonuses: %DEF, Mining XP, Fishing XP, %DMG, Drop chance, Atk speed, Crit chance, Multikill",
+            "cost": 200,
+            "no": 85,
+            "maxPurchases": 100000,
+            "qty": 0,
+            "costIncrement": 0
+        }
+    },
+    "changes": {
+        "Blank": {
+            "itemName": ["Weekend Dungeon Pass", "Cosmic Candy"],
+            "desc": [
+                "For 3 days after purchase, EVERY dungeon run you do will be boosted, meaning you get +2 Loot Dice and flurbos and all that good stuff!",
+                "Gives 1 Cosmic Time Candy, which can give up to 500 HOURS of AFK time! On average, it will give 24 hrs."
+            ],
+            "cost": [875, 325],
+            "no": [83, 54],
+            "maxPurchases": [1, 100000],
+            "qty": [0, 1]
+        }
+    }
+}

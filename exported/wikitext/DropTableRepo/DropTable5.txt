@@ -1,0 +1,22 @@
+__NOCACHE__
+{{#cargo_query:tables=DropTables
+ |fields=CONCAT("[[", DropSourceEntity, "]]")=DropSourceEntity
+ |where=TableName HOLDS "{{PAGENAME}}" AND DropSourceEntity NOT LIKE "{{PAGENAME}}"
+ |group by=DropTables.DropSourceEntity
+ |order by=`DropSourceEntity` ASC
+ |default=
+ |intro=This is a Rare Droptable for:
+ |outro=To see monster specific droprates, visit the specified source page.
+ |limit=100
+ |offset=0
+ |format=ul
+ |columns=1
+}}
+{{DropTable/head}}
+{{DropTable|Grass Leaf|0.5|5|tablename=DropTable5|tabletype=Rare}}
+{{DropTable|Weapon Upgrade Stone I|0.03|1|tablename=DropTable5|tabletype=Rare}}
+{{DropTable|Tool Upgrade Stone I|0.03|1|tablename=DropTable5|tabletype=Rare}}
+{{DropTable|Mining Statue|0.32|1|tablename=DropTable5|tabletype=Rare}}
+{{DropTable|Small Strength Potion|0.1|5|tablename=DropTable5|tabletype=Rare}}
+{{DropTable|Smart Dirt Stamp|0.0015|1|tablename=DropTable5|tabletype=Rare}}
+{{DropTable/append|SuperDropTable1|0.006|1}}

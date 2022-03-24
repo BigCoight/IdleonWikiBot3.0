@@ -1,0 +1,22 @@
+__NOCACHE__
+{{#cargo_query:tables=DropTables
+ |fields=CONCAT("[[", DropSourceEntity, "]]")=DropSourceEntity
+ |where=TableName HOLDS "{{PAGENAME}}" AND DropSourceEntity NOT LIKE "{{PAGENAME}}"
+ |group by=DropTables.DropSourceEntity
+ |order by=`DropSourceEntity` ASC
+ |default=
+ |intro=This is a Rare Droptable for:
+ |outro=To see monster specific droprates, visit the specified source page.
+ |limit=100
+ |offset=0
+ |format=ul
+ |columns=1
+}}
+{{DropTable/head}}
+{{DropTable|Twisty Leaf|0.5|4|tablename=DropTable11|tabletype=Rare}}
+{{DropTable|Weapon Upgrade Stone II|0.002|1|tablename=DropTable11|tabletype=Rare}}
+{{DropTable|Tool Upgrade Stone I|0.03|1|tablename=DropTable11|tabletype=Rare}}
+{{DropTable|Thicc Skin Statue|0.05|1|tablename=DropTable11|tabletype=Rare}}
+{{DropTable|Small Strength Potion|0.07|5|tablename=DropTable11|tabletype=Rare}}
+{{DropTable|Alch Go Brrr Stamp|0.0003|1|tablename=DropTable11|tabletype=Rare}}
+{{DropTable/append|SuperDropTable2|0.006|1}}

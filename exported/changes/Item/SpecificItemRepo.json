@@ -1,0 +1,29 @@
+{
+    "new": {
+        "Quest67": {
+            "displayName": "Bottled World Town Teleport",
+            "sellPrice": 1000000,
+            "Type": "Teleport",
+            "description": "Buy this once and hold down on it to permanently allow for free teleports inbetween World Towns without consuming a teleport! From town to town, free of charge! "
+        },
+        "FoodG8": {
+            "displayName": "Golden Cheese",
+            "sellPrice": 100,
+            "Type": "Golden Food",
+            "description": "Claiming AFK gains levels up shrines [% faster.. Golden foods are never consumed.",
+            "goldenFoodData": {"effect": "Claiming AFK gains levels up shrines [% faster.", "amount": 20}
+        }
+    },
+    "changes": {
+        "FoodG6": {
+            "description": [
+                "Claiming AFK gains levels up shrines [% faster.. Golden foods are never consumed.",
+                "Boosts coins dropped. Golden foods are never consumed."
+            ],
+            "goldenFoodData": {
+                "effect": ["Claiming AFK gains levels up shrines [% faster.", "Boosts coins dropped by mobs by [%."],
+                "amount": [20, 30]
+            }
+        }
+    }
+}

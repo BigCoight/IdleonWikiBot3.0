@@ -52,6 +52,19 @@
         "baseVal": 60
     },
     {
+        "name": "Potato Chip",
+        "bonus": "+{% Basic Attack spd. *Can Only Equip 1 per player*",
+        "description": "Boosts attack speed",
+        "requirements": [
+            {"item": "Bug1", "quantity": 100000},
+            {"item": "Meal6", "quantity": 100},
+            {"item": "Spice2", "quantity": 100}
+        ],
+        "bool1": true,
+        "stat": "atkspd",
+        "baseVal": 20
+    },
+    {
         "name": "Conductive Nanochip",
         "bonus": "+{% Lab EXP Gain",
         "description": "Boosts lab exp gain",
@@ -76,6 +89,45 @@
         "bool1": false,
         "stat": "linewidth",
         "baseVal": 12
+    },
+    {
+        "name": "Conductive Software",
+        "bonus": "+{% Fighting AFK Gain Rate *Can Only Equip 1 per player*",
+        "description": "Boosts Fighting AFK gain rate",
+        "requirements": [
+            {"item": "Critter2", "quantity": 5000},
+            {"item": "Meal15", "quantity": 100},
+            {"item": "Spice4", "quantity": 100}
+        ],
+        "bool1": true,
+        "stat": "fafk",
+        "baseVal": 15
+    },
+    {
+        "name": "Conductive Processor",
+        "bonus": "+{% Skilling AFK Gain Rate *Can Only Equip 1 per player*",
+        "description": "Boosts Skilling AFK gain Rate",
+        "requirements": [
+            {"item": "Bug5", "quantity": 100000},
+            {"item": "Meal18", "quantity": 100},
+            {"item": "Spice5", "quantity": 100}
+        ],
+        "bool1": true,
+        "stat": "safk",
+        "baseVal": 15
+    },
+    {
+        "name": "Chocolatey Chip",
+        "bonus": "{% chance to spawn a crystal mob when one dies. *Can Only Equip 1 per player*",
+        "description": "Chance for Crystal Mob revival",
+        "requirements": [
+            {"item": "CraftMat8", "quantity": 250000},
+            {"item": "Meal21", "quantity": 100},
+            {"item": "Spice6", "quantity": 100}
+        ],
+        "bool1": true,
+        "stat": "crys",
+        "baseVal": 75
     },
     {
         "name": "Galvanic Nanochip",
@@ -141,5 +193,96 @@
         "bool1": false,
         "stat": "mkill",
         "baseVal": 15
+    },
+    {
+        "name": "Silkrode Nanochip",
+        "bonus": "Doubles the bonuses of all active Star Signs. *Can Only Equip 1 per player*",
+        "description": "Bolsters active star signs",
+        "requirements": [
+            {"item": "CraftMat10", "quantity": 2000000},
+            {"item": "Meal35", "quantity": 100},
+            {"item": "Spice12", "quantity": 100}
+        ],
+        "bool1": true,
+        "stat": "star",
+        "baseVal": 1
+    },
+    {
+        "name": "Silkrode Motherboard",
+        "bonus": "Doubles MISC bonuses of currently equipped Trophy. *Can Only Equip 1 per player*",
+        "description": "Bolsters equipped trophy",
+        "requirements": [
+            {"item": "Soul5", "quantity": 2000000},
+            {"item": "Meal37", "quantity": 100},
+            {"item": "Spice13", "quantity": 100}
+        ],
+        "bool1": true,
+        "stat": "troph",
+        "baseVal": 1
+    },
+    {
+        "name": "Silkrode Software",
+        "bonus": "Doubles MISC bonuses of keychain equipped in the upper keychain slot. *Can Only Equip 1 per player*",
+        "description": "Bolsters equipped keychain",
+        "requirements": [
+            {"item": "Bug8", "quantity": 2000000},
+            {"item": "Meal39", "quantity": 100},
+            {"item": "Spice13", "quantity": 100}
+        ],
+        "bool1": true,
+        "stat": "key1",
+        "baseVal": 1
+    },
+    {
+        "name": "Silkrode Processor",
+        "bonus": "Doubles MISC bonuses of currently equipped Pendant. *Can Only Equip 1 per player*",
+        "description": "Bolsters equipped pendant",
+        "requirements": [
+            {"item": "Critter10", "quantity": 2000000},
+            {"item": "Meal41", "quantity": 100},
+            {"item": "Spice14", "quantity": 100}
+        ],
+        "bool1": true,
+        "stat": "pend",
+        "baseVal": 1
+    },
+    {
+        "name": "Poker Chip",
+        "bonus": "Your weapon gives 1.{x more Weapon Power. *Can Only Equip 1 per player*",
+        "description": "Bolsters equipped Weapon",
+        "requirements": [
+            {"item": "CraftMat14", "quantity": 2000000},
+            {"item": "Meal43", "quantity": 100},
+            {"item": "Spice14", "quantity": 100}
+        ],
+        "bool1": true,
+        "stat": "weppow",
+        "baseVal": 25
+    },
+    {
+        "name": "Omega Nanochip",
+        "bonus": "Doubles bonus of card equipped in top left slot. *Can Only Equip 1 per player*",
+        "description": "Bolsters an equipped card",
+        "requirements": [
+            {"item": "Bug8", "quantity": 10000000},
+            {"item": "Meal45", "quantity": 100},
+            {"item": "Spice15", "quantity": 100}
+        ],
+        "bool1": true,
+        "stat": "card1",
+        "baseVal": 1
+    },
+    {
+        "name": "Omega Motherboard",
+        "bonus": "Doubles bonus of card equipped in bottom right slot. *Can Only Equip 1 per player*",
+        "description": "Bolsters an equipped card",
+        "requirements": [
+            {"item": "Fish8", "quantity": 10000000},
+            {"item": "Meal47", "quantity": 100},
+            {"item": "Spice16", "quantity": 100}
+        ],
+        "bool1": true,
+        "stat": "card2",
+        "baseVal": 1
     }
 ]

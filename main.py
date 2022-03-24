@@ -146,6 +146,3 @@ PetGeneRepo.initialise(codeReader)
 PetStatRepo.initialise(codeReader)
 PetUpgradeRepo.initialise(codeReader)
 TerritoryFightRepo.initialise(codeReader)
-
-
-EnemyRepo.exportWikiMult()

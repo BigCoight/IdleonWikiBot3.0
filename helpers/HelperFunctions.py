@@ -52,7 +52,7 @@ def getFromSplit(v: str) -> List[str]:
 	return subSections[0].split(" ")
 
 
-def getFromArrayArray(v: str) -> List[List[str]]:
+def getFromArrayArray(v: str, repU = True) -> List[List[str]]:
 	"""
 	Converts a string representation of a 2d array into an actual 2d array
 	Args:
@@ -61,7 +61,7 @@ def getFromArrayArray(v: str) -> List[List[str]]:
 	Returns:
 
 	"""
-	section = formatStr(v, ["  ", "\n"])
+	section = formatStr(v, ["  ", "\n"], replaceUnderscores = repU)
 	subSections = section.split("],[")
 	return [strToArray(x) for x in subSections]
 

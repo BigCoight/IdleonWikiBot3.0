@@ -16,7 +16,7 @@ class PetStatRepo(Repository[PetStat]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		data = getFromArrayArray(cls.getSection())
+		data = getFromArrayArray(cls.getSection(), repU = False)
 		for n, world in enumerate(data):
 			if n > 7: break
 			for pet in world:

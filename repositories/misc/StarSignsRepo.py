@@ -1,7 +1,7 @@
 from typing import List
 
 from definitions.misc.StarSign import StarSign
-from helpers.HelperFunctions import getFromArrayArray
+from helpers.HelperFunctions import getFromArrayArray, replaceUnderscores
 from repositories.master.Repository import Repository
 
 
@@ -23,14 +23,15 @@ class StarSignsRepo(Repository[StarSign]):
 		for idx, sign in enumerate(signData):
 			# Find the UI info based on the star sign index
 			uiInfo = next(filter(lambda x: x[0] == str(idx), UIData))
+			name = replaceUnderscores(sign[0])
 			signInfo = StarSign(
-				name = sign[0],
-				text =' '.join([text for text in sign[1:] if text != "_"]),
+				name = name,
+				text =' '.join([replaceUnderscores(text) for text in sign[1:] if text != "_"]),
 				x = uiInfo[1],
 				y = uiInfo[2],
 				prevReq = uiInfo[3],
 				cost = uiInfo[4]
 			)
-			cls.add(sign[0], signInfo)
+			cls.add(name, signInfo)
 			cls.addList(signInfo)
 			

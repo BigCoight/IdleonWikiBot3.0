@@ -16,7 +16,7 @@ class AchievementRepo(Repository[Achievement]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		data = getFromArrayArray(cls.getSection(), repU = False)
+		data = getFromArrayArray(cls.getSection())
 		for achieve in data:
 			toAdd = Achievement(
 				name = replaceUnderscores(achieve[0]),

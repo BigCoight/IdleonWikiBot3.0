@@ -61,9 +61,10 @@ def getFromArrayArray(v: str, repU = True) -> List[List[str]]:
 	Returns:
 
 	"""
-	section = formatStr(v, ["  ", "\n"], replaceUnderscores = repU)
+	section = formatStr(v, ["  ", "\n"])
 	subSections = section.split("],[")
-	return [strToArray(x) for x in subSections]
+
+	return [strToArray(x, repU) for x in subSections]
 
 
 def getFrom4dArray(v: str) -> List[List[List[List[str]]]]:
@@ -171,7 +172,7 @@ def wrap(v: str) -> str:
 	return f"[[{v}]]"
 
 
-def strToArray(v: str) -> List[str]:
+def strToArray(v: str, repU = False) -> List[str]:
 	"""
 	Converts a string reprisentation of a list to an actual python list
 	strToArray("[1,2,3,4]") = ["1", "2", "3", "4"]
@@ -188,7 +189,7 @@ def strToArray(v: str) -> List[str]:
 	for x in parts:
 		formatted = formatStr(x).replace("&&&&", ", ").replace("$$$$", ",0").replace("****", "{_").replace("####", "{%_")
 		if formatted:
-			res.append(formatted)
+			res.append(replaceUnderscores(formatted) if repU else formatted)
 	return res
 
 

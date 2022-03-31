@@ -1,7 +1,9 @@
 import re
 from typing import List
 
+from definitions.enemy.AFKType import AFKType
 from definitions.enemy.EnemyDetails import EnemyDetails
+from definitions.enemy.EnemyType import EnemyType
 from helpers.Constants import Constants
 from helpers.HelperFunctions import strToArray, formatStr, changeChestNames
 from repositories.master.Repository import Repository
@@ -47,3 +49,20 @@ class EnemyDetailsRepo(Repository[EnemyDetails]):
 		if not cls.contains(name):
 			return name
 		return cls.get(name).Name
+
+	@classmethod
+	def _ignore(cls, name: str, data: EnemyDetails) -> bool:
+		if "Dung" in name:
+			return True
+		if name in {"EXP", "Blank", "LockedInvSpace", "COIN", "TalentBook1", "TalentBook2",
+		            "TalentBook3", "TalentBook4", "TalentBook5", "SmithingRecipes1", "SmithingRecipes2",
+		            "SmithingRecipes3", "SmithingRecipes4", "ExpSmith1", "Quest8", "EquipmentShirts8", "FoodHealth1d",
+		            "FoodHealth2d", "FoodHealth3d", "PremiumGem", "Quest49"}:
+			return True
+		if name[:3] == "Gem":
+			return True
+		if data.Type != EnemyType.monsterType:
+			return True
+		if data.AFKtype != AFKType.Fighting:
+			return True
+		return False

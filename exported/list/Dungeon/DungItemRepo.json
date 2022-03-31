@@ -6,7 +6,7 @@
         "rarity": "Common",
         "desc": "Increases your max HP by +{",
         "lvlText": "Next Lv: +{ Max HP",
-        "baseValue": 2,
+        "baseValue": 3,
         "maxLevel": 10,
         "achieve": "",
         "world": "Blunder Hills"
@@ -54,7 +54,7 @@
         "rarity": "Common",
         "desc": "Increases your Block Chance by +{%. I Guess pan lids are effective shields!",
         "lvlText": "Next Lv: +{% Block chance",
-        "baseValue": 2,
+        "baseValue": 3,
         "maxLevel": 10,
         "achieve": "",
         "world": "Blunder Hills"
@@ -66,7 +66,7 @@
         "rarity": "Common",
         "desc": "Increases your Drop Rate by +{%",
         "lvlText": "Next Lv: +{% Drop rate",
-        "baseValue": 3,
+        "baseValue": 5,
         "maxLevel": 8,
         "achieve": "",
         "world": "Blunder Hills"
@@ -78,7 +78,7 @@
         "rarity": "Common",
         "desc": "Monsters drop +{% more Cash to spend at NPC shop.",
         "lvlText": "Next Lv: +{% Cash dropped",
-        "baseValue": 8,
+        "baseValue": 14,
         "maxLevel": 8,
         "achieve": "",
         "world": "Blunder Hills"
@@ -246,7 +246,7 @@
         "rarity": "Uncommon",
         "desc": "Increases Critical Damage by +{%",
         "lvlText": "Next Lv: +{% Crit Dmg",
-        "baseValue": 25,
+        "baseValue": 30,
         "maxLevel": 5,
         "achieve": "",
         "world": "Blunder Hills"
@@ -258,7 +258,7 @@
         "rarity": "Uncommon",
         "desc": "+{ Max HP, but take 6 damage. This can be lethal, watch out!",
         "lvlText": "Next Lv: +{ max HP",
-        "baseValue": 10,
+        "baseValue": 13,
         "maxLevel": 5,
         "achieve": "",
         "world": "Blunder Hills"
@@ -342,7 +342,7 @@
         "rarity": "Uncommon",
         "desc": "For every minute you go undamaged, +{% crit chance, up to +30%.",
         "lvlText": "Next Lv: +{% crit chance per minute",
-        "baseValue": 2,
+        "baseValue": 10,
         "maxLevel": 5,
         "achieve": "Well Learned",
         "world": "Yum Yum Desert"
@@ -354,7 +354,7 @@
         "rarity": "Uncommon",
         "desc": "+{ sec of invincibility time whenever you get hit.",
         "lvlText": "Next Lv: +{ seconds",
-        "baseValue": 1.5,
+        "baseValue": 2,
         "maxLevel": 10,
         "achieve": "Hammer Bub",
         "world": "Yum Yum Desert"
@@ -364,9 +364,9 @@
         "bonus": "blockStack",
         "increment": 0.2,
         "rarity": "Uncommon",
-        "desc": "Each time you get hit, +0.1% block chance, up to a max of +{%",
+        "desc": "Each time you get hit, +0.3% block chance, up to a max of +{%",
         "lvlText": "Next Lv: +{% max cap",
-        "baseValue": 5,
+        "baseValue": 6,
         "maxLevel": 5,
         "achieve": "Jellyfish Jelly",
         "world": "Yum Yum Desert"
@@ -390,7 +390,7 @@
         "rarity": "Rare",
         "desc": "+{% Dmg and Crit chance for each monster type you defeat, even before getting this.",
         "lvlText": "Next Lv: +{% Dmg and Crit chance.",
-        "baseValue": 0.5,
+        "baseValue": 0.6,
         "maxLevel": 5,
         "achieve": "",
         "world": "Blunder Hills"
@@ -402,7 +402,7 @@
         "rarity": "Rare",
         "desc": "+{ base damage for every 10 Max HP you have. Also gives 2 Helping Hearts, because he loves u!",
         "lvlText": "Next Lv: +{ Base DMG per 10 Max HP.",
-        "baseValue": 1,
+        "baseValue": 3,
         "maxLevel": 5,
         "achieve": "",
         "world": "Blunder Hills"
@@ -556,7 +556,7 @@
         "bonus": "defGodU",
         "increment": 10,
         "rarity": "Legendary",
-        "desc": "-85% attack speed and mana regen. +25% Block chance and +{% damage.",
+        "desc": "-85% attack speed and mana regen. +30% Block chance and +{% damage.",
         "lvlText": "Next Lv: +{% damage, all else equal.",
         "baseValue": 500,
         "maxLevel": 10,

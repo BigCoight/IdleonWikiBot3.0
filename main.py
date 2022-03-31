@@ -13,6 +13,7 @@ from repositories.enemies.BossDetailRepo import BossDetailRepo
 from repositories.enemies.DropTableRepo import DropTableRepo
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
 from repositories.enemies.EnemyNavRepo import EnemyNavRepo
+from repositories.enemies.EnemyNoteRepo import EnemyNoteRepo
 from repositories.enemies.EnemyTableRepo import EnemyTableRepo
 from repositories.enemies.MapDataRepo import MapDataRepo
 from repositories.enemies.SubTableRepo import SubTableRepo
@@ -68,7 +69,7 @@ from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
 
-idleonReader = IdleonReader("150", steam = True)
+idleonReader = IdleonReader("152", steam = True)
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
@@ -133,6 +134,7 @@ PostOfficeUpgradesRepo.initialise(codeReader)
 SourceRepo.initialise(codeReader)
 ItemNoteRepo.initialise(codeReader)
 EnemyNavRepo.initialise(codeReader)
+EnemyNoteRepo.initialise(codeReader)
 EnemyRepo.initialise(codeReader)
 ItemRepo.initialise(codeReader)
 StampDescriptionRepo.initialise(codeReader)
@@ -146,3 +148,5 @@ PetGeneRepo.initialise(codeReader)
 PetStatRepo.initialise(codeReader)
 PetUpgradeRepo.initialise(codeReader)
 TerritoryFightRepo.initialise(codeReader)
+
+EnemyRepo.exportWikiMult()

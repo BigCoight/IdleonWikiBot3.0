@@ -143,15 +143,17 @@ class NpcRepo(Repository[Npc]):
 
 	@classmethod
 	def getQuestByName(cls, name: str) -> str:
+		name = replaceUnderscores(name)
 		return cls.questToName.get(name)
 
 	@classmethod
 	def isQuestName(cls, name: str) -> bool:
+		name = replaceUnderscores(name)
 		return name in cls.questToName
 
 	@classmethod
 	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
-		return super().compareVersions(v1, v2, ignored = {"dialogue", "head", "QuestName", "CustomType", "note"})
+		return super().compareVersions(v1, v2, ignored = {"head", "QuestName", "CustomType", "note"})
 
 	@classmethod
 	def _ignore(cls, name: str, data: Npc) -> bool:

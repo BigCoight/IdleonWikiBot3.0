@@ -137,3 +137,52 @@ class RecipeRepo(Repository[Recipe]):
 	@classmethod
 	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
 		return super().compareVersions(v1, v2, {"detailedRecipe", "recipeFrom", 'intID'})
+
+	@classmethod
+	def _writeChangesWiki(cls, differences):
+		def head(v: str) -> str:
+			return "{{patchnote/head|changed=" + v + "}}\n"
+
+		def item(v: str) -> str:
+			return "{{patchnote/item|" + v + "}}\n"
+
+		res = ""
+		new = differences["new"]
+		changes = differences["changes"]
+
+		changesOrdered = {}
+		for key in changes.keys():
+			cType = ItemDetailRepo.get(key).Type
+			if cType not in changesOrdered:
+				changesOrdered[cType] = []
+			changesOrdered[cType].append(key)
+
+		newOrdered = {}
+		for key in new.keys():
+			cType = ItemDetailRepo.get(key).Type
+			if cType not in newOrdered:
+				newOrdered[cType] = []
+			newOrdered[cType].append(key)
+
+		res += "<div class=\"GenericFlex\"><div class=\"GenericChild\">\n"
+		res += "==Changes==\n"
+		for typ, keys in changesOrdered.items():
+			res += head(typ)
+			for change in keys:
+				res += item(cls.getWikiName(change))
+				res += cls._writeChangelog(changes[change])
+			res += "|}\n\n"
+
+		res += "</div><div class=\"GenericChild\">\n"
+		res += "==New==\n"
+		for typ, keys in newOrdered.items():
+			res += head(typ)
+			for change in keys:
+				res += item(cls.getWikiName(change))
+				res += cls._writeChangelog(new[change])
+			res += "|}\n\n"
+
+		res += "</div></div>"
+
+		with open(cls._getPath("wikitext/_changes", "txt"), mode = 'w') as infile:
+			infile.write(res)

@@ -25,6 +25,3 @@ class AnvilProduce(IdleonModel):
 			"expcraft": "exp",
 			"time": "time"
 		}
-
-	def isFiller(self) -> bool:
-		return ItemDetailRepo.get(self.item).displayName == "Filler"

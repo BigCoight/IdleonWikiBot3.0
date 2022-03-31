@@ -93,7 +93,10 @@ def isTalent(name: str) -> bool:
 
 
 def formatFloat(v: float) -> str:
-	return np.format_float_positional(v)
+	res = np.format_float_positional(v)
+	if res[-1] == ".":
+		return res[:-1]
+	return res
 
 
 def camelCaseSplitter(string: str) -> List[str]:
@@ -108,7 +111,7 @@ def camelCaseSplitter(string: str) -> List[str]:
 		A list of strings split based on camel case
 
 	"""
-	return re.sub("([A-Z][a-z]+)", r" \1", re.sub("([A-Z]+)", r" \1", string)).split()
+	return re.sub("([A-Z][a-z]+|[0-9])", r" \1", re.sub("([A-Z]+)", r" \1", string)).split()
 
 
 def camelCaseToTitle(string: str) -> str:
@@ -122,6 +125,8 @@ def camelCaseToTitle(string: str) -> str:
 		The string as a title
 
 	"""
+	if "_" in string:
+		return replaceUnderscores(string)
 	return " ".join(map(lambda x: x.title(), camelCaseSplitter(string)))
 
 

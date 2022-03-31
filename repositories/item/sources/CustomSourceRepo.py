@@ -36,7 +36,7 @@ class CustomSourceRepo(Repository[Sources]):
 			))
 
 		for item in ["CardsX0", "CardsX1", "CardsX2", "CardsX3", "CardsX4", "CardsX5",
-					 "CardsX15", "CardsX14"]:
+		             "CardsX15", "CardsX14"]:
 			cls.addToSource(item, Source(
 				wikiName = "[[Dungeons#Grandfrog's Gazebo|Grandfrog's Gazebo]]",
 				txtName = "Dungeons: Grandfrog's Gazebo"
@@ -49,7 +49,8 @@ class CustomSourceRepo(Repository[Sources]):
 				txtName = "Dungeons: Crypt of Snakenhotep"
 			))
 
-		for item in ["CardsX17", "CardsX18", "CardsX19", "CardsX20", "Tree7D", "PlatD", "Fish1D", "Fish3D", "Cashb", "Dung3Ice"]:
+		for item in ["CardsX17", "CardsX18", "CardsX19", "CardsX20", "Tree7D", "PlatD", "Fish1D", "Fish3D", "Cashb",
+		             "Dung3Ice"]:
 			cls.addToSource(item, Source(
 				wikiName = "[[Dungeons#Igloo's Basement|Igloo's Basement]]",
 				txtName = "Dungeons: Igloo's Basement"
@@ -61,7 +62,7 @@ class CustomSourceRepo(Repository[Sources]):
 		))
 
 		cls.addToQuestAss("Quest63", Source(
-			wikiName = "[[Shuvelle#Diggy Hole!|Diggy Hole!]]", 
+			wikiName = "[[Shuvelle#Diggy Hole!|Diggy Hole!]]",
 			txtName = "Shuvelle: Diggy Hole!",
 		))
 
@@ -325,6 +326,29 @@ class CustomSourceRepo(Repository[Sources]):
 			cls.addToRecipeFrom(item, Source(
 				wikiName = "[[Tasks/Blunder_Hills#Merit_Shop|Blunder Hills Merit Shop]]",
 				txtName = "Blunder Hills Merit Shop"
+			))
+		# Chizaors Equipment
+		for item in ['EquipmentHats68', 'EquipmentShirts6', 'EquipmentPants9', 'EquipmentShoes23',
+		             "EquipmentPendant25"]:
+			cls.addToRecipeFrom(item, Source(
+				wikiName = "[[Tasks/Frostbite_Tundra#Merit_Shop|Frostbite Tundra Merit Shop]]",
+				txtName = "Frostbite Tundra Merit Shop"
+			))
+			cls.addToSource(item, Source(
+				wikiName = "[[Tasks/Frostbite_Tundra#Merit_Shop|Recipe from Frostbite Tundra Merit Shop]]",
+				txtName = "Frostbite Tundra Merit Shop"
+			))
+
+
+		# Tundra NPC tokens
+		for item in ["NPCtoken39", "NPCtoken40", "NPCtoken41", "BadgeI1", "BadgeI2", "BadgeI3"]:
+			cls.addToSource(item, Source(
+				wikiName = "[[Hoggindaz#The Fresh Prince of the Tundra|Recipe from The Fresh Prince of the Tundra]]",
+				txtName = "Hoggindaz: The Fresh Prince of the Tundra"
+			))
+			cls.addToRecipeFrom(item, Source(
+				wikiName = "[[Hoggindaz#The Fresh Prince of the Tundra|The Fresh Prince of the Tundra]]",
+				txtName = "Hoggindaz: The Fresh Prince of the Tundra"
 			))
 
 		cls.addToSource("Quest45", Source(

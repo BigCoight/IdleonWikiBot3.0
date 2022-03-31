@@ -73,7 +73,7 @@
         "x": 470,
         "y": 294,
         "range": 90,
-        "effect": "All players within a 150px radius of this jewel, shown by the circle, have +}% Line Width.",
+        "effect": "Even if this jewel is off, all players within a 150px radius of this jewel, shown by the circle, have +25% Line Width. @ Also gives +}% Breeding EXP, but only when active.",
         "description": "Emits a 'Line Width' Aura",
         "requirements": [
             {"item": "Sewers1b", "quantity": 30},
@@ -90,7 +90,7 @@
         "effect": "Every 24 hours, the } lowest level Kitchen Upgrades across all owned kitchens gain +1 Lv.",
         "description": "Automatically levels up kitchens",
         "requirements": [
-            {"item": "Quest38", "quantity": 25},
+            {"item": "Quest38", "quantity": 2},
             {"item": "Meal13", "quantity": 5000},
             {"item": "Spice6", "quantity": 400}
         ],
@@ -129,7 +129,7 @@
         "x": 696,
         "y": 319,
         "range": 90,
-        "effect": "All mainframe bonuses and jewels have a }% larger connection range.",
+        "effect": "All mainframe bonuses and jewels have a }% larger connection range, except for this jewel. This jewel has an 80px connection range no matter what!",
         "description": "Boosts mainframe connection range",
         "requirements": [
             {"item": "DesertA3b", "quantity": 50},

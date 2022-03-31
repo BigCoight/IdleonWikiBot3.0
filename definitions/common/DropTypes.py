@@ -82,7 +82,7 @@ class SubTableDrop(Drop):
 		return res
 
 	def __str__(self) -> str:
-		return f"{self.quantity}x " + self.item + f" {self.chance:g}"
+		return self.item + f" ({formatFloat(self.chance)})"
 
 
 class CardDrop(Drop):
@@ -101,7 +101,7 @@ class CoinDrop(Drop):
 		return res
 
 	def __str__(self) -> str:
-		return f"{self.quantity}x " + "Coins" + f" {self.chance:g}"
+		return f"{self.quantity}x " + "Coins" + f" ({formatFloat(self.chance)})"
 
 
 class TalentDrop(Drop):
@@ -120,7 +120,7 @@ class TalentDrop(Drop):
 		no = int(qty[0])
 		index = int(qty[1: no + 1])
 		talent = TalentNameRepo.getList(index).name
-		return f"{self.quantity}x " + f"{talent} Talent Book" + f" {self.chance:g}"
+		return f"{talent} Talent Book" + f" ({formatFloat(self.chance)})"
 
 
 class RecipeDrop(Drop):
@@ -138,7 +138,7 @@ class RecipeDrop(Drop):
 		index = int(self.quantity)
 		item = ItemDetailRepo.getDisplayName(RecipeRepo.getItemAtIndex(tab, index))
 		res = "{{CraftReq|" + item + "}}"
-		return f"{self.quantity}x " + f"{res} Recipe" + f" {self.chance:g}"
+		return f"{res} Recipe" + f" ({formatFloat(self.chance)})"
 
 
 class ItemDrop(Drop):

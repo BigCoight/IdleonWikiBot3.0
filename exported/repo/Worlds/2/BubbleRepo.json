@@ -697,10 +697,10 @@
     },
     "Big Game Hunter": {
         "cauldron": "Kazam Cauldron",
-        "x1": 70,
-        "x2": 50,
+        "x1": 60,
+        "x2": 30,
         "func": "decay",
-        "description": "Each time a Giant Monster spawns, the chance for another Giant Monster in that same week goes down by {% less than normal.",
+        "description": "Killing a Giant Monster has a {% chance to not decrease the Giant Mob Spawn Odds, which reset at the end of each week.",
         "requirements": [{"item": "Critter3", "quantity": 40}, {"liquidNo": "2", "quantity": 4}]
     },
     "Ignore Overdues": {
@@ -708,7 +708,7 @@
         "x1": 100,
         "x2": 60,
         "func": "decay",
-        "description": "+{% Book Checkout speed, thanks to this one little bubble that librarians do NOT want you to know about!",
+        "description": "+{% Book Checkout speed, all thanks to this one little bubble that librarians do NOT want you to know about!",
         "requirements": [{"item": "Tree7", "quantity": 120}, {"liquidNo": "2", "quantity": 2}]
     },
     "Yellow Bargain": {
@@ -1012,7 +1012,7 @@
         "x1": 1,
         "x2": 0,
         "func": "add",
-        "description": "+{ Cog Inventory spaces. DONT PANIC!!! I KNOW HOW ALARMING IT IS THAT A VIAL FINALLY GIVES A USEFUL BONUS FOR ONCE, BUT STAY CALM!",
+        "description": "+{ Cog Inventory spaces. DONT PANIC!!! I KNOW ITS ALARMING THAT A VIAL FINALLY GIVES A USEFUL BONUS, BUT STAY CALM!",
         "requirements": [{"item": "Critter4", "quantity": -1}, {"liquidNo": "3", "quantity": -1}]
     },
     "Visible Ink": {
@@ -1140,7 +1140,7 @@
         "x1": 3,
         "x2": 0,
         "func": "add",
-        "description": "+{% Lab EXP gain",
+        "description": "+{% Lab EXP gain. Strange, you'd think someone dumb enough to drink a bloated blobfish drink wouldn't get bonus lab exp at all...",
         "requirements": [{"item": "Critter10", "quantity": -1}, {"liquidNo": "3", "quantity": -1}]
     },
     "Choco Milkshake": {
@@ -1164,7 +1164,7 @@
         "x1": 1,
         "x2": 0,
         "func": "add",
-        "description": "+{ Weapon Power",
+        "description": "+{ Weapon Power. Unleash the kraken...",
         "requirements": [{"item": "Fish8", "quantity": -1}, {"liquidNo": "3", "quantity": -1}]
     },
     "Electrolyte": {

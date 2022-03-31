@@ -1683,8 +1683,8 @@
             {"item": "COIN", "quantity": 8, "chance": 0.44, "questLink": "N/A"},
             {"item": "Jungle1", "quantity": 1, "chance": 0.19, "questLink": "N/A"},
             {"item": "CardsA4", "quantity": 1, "chance": 9.5e-05, "questLink": "N/A"},
-            {"item": "OilBarrel2", "quantity": 10, "chance": 0.0003, "questLink": "N/A"},
             {"item": "SmithingRecipes1", "quantity": 43, "chance": 3e-05, "questLink": "N/A"},
+            {"item": "OilBarrel2", "quantity": 10, "chance": 0.0003, "questLink": "N/A"},
             {"item": "SmithingRecipes1", "quantity": 47, "chance": 2e-05, "questLink": "N/A"},
             {"item": "DropTable2", "quantity": 1, "chance": 0.004, "questLink": "N/A"}
         ],
@@ -1912,8 +1912,8 @@
             {"item": "COIN", "quantity": 28, "chance": 0.35, "questLink": "N/A"},
             {"item": "Forest3", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
             {"item": "CardsA9", "quantity": 1, "chance": 7e-05, "questLink": "N/A"},
-            {"item": "FoodPotRe2", "quantity": 5, "chance": 0.001, "questLink": "N/A"},
             {"item": "StampA10", "quantity": 1, "chance": 3e-05, "questLink": "N/A"},
+            {"item": "FoodPotRe2", "quantity": 5, "chance": 0.001, "questLink": "N/A"},
             {"item": "StampA8", "quantity": 1, "chance": 0.0003, "questLink": "Papua_Piggea1"},
             {"item": "ObolBronzePop", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
             {"item": "DropTable3", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
@@ -4384,7 +4384,7 @@
         "mapData": null,
         "navigation": {
             "prev": "Boss2A",
-            "next": "Boss3A",
+            "next": "mini3a",
             "hasCrystal": true,
             "crystalName": null,
             "hasCard": true
@@ -4490,7 +4490,7 @@
         ],
         "mapData": null,
         "navigation": {
-            "prev": "Boss2B",
+            "prev": "mini3a",
             "next": "Boss3B",
             "hasCrystal": true,
             "crystalName": null,
@@ -4518,7 +4518,7 @@
             "MovingFrame": 4,
             "RespawnTime": 86400,
             "DeathFrame": 13,
-            "MonsterHPTotal": 750000000,
+            "MonsterHPTotal": 400000000,
             "Type": "monsterType",
             "SpecialType": "a",
             "ExpGiven": 12000,
@@ -4541,13 +4541,13 @@
         "mapData": null,
         "navigation": {
             "prev": "Boss3A",
-            "next": "Boss4A",
+            "next": "mini4a",
             "hasCrystal": true,
             "crystalName": null,
             "hasCard": true
         },
         "bossData": {
-            "health": 500000000,
+            "health": 400000000,
             "defence": 7500,
             "exp": 10000000,
             "keys": 5,
@@ -4637,7 +4637,7 @@
         ],
         "mapData": null,
         "navigation": {
-            "prev": "Boss3B",
+            "prev": "mini4a",
             "next": "Boss4B",
             "hasCrystal": true,
             "crystalName": null,
@@ -4712,6 +4712,7 @@
             {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
             {"item": "CardsZ1", "quantity": 1, "chance": 0.03, "questLink": "N/A"},
             {"item": "JobApplication", "quantity": 1, "chance": 1, "questLink": "N/A"},
+            {"item": "SmithingRecipes2", "quantity": 24, "chance": 0.06, "questLink": "N/A"},
             {"item": "Sewers1", "quantity": 150, "chance": 1, "questLink": "N/A"},
             {
                 "item": "EquipmentToolsHatchet2b",
@@ -4759,6 +4760,7 @@
             {"item": "COIN", "quantity": 800, "chance": 1, "questLink": "N/A"},
             {"item": "CardsZ0", "quantity": 1, "chance": 0.03, "questLink": "N/A"},
             {"item": "BabaYagaETC", "quantity": 1, "chance": 0.006, "questLink": "N/A"},
+            {"item": "SmithingRecipes1", "quantity": 63, "chance": 0.06, "questLink": "N/A"},
             {"item": "Quest41", "quantity": 1, "chance": 1, "questLink": "N/A"},
             {"item": "DropTable1", "quantity": 2, "chance": 1, "questLink": "N/A"},
             {"item": "DropTable2", "quantity": 1, "chance": 1, "questLink": "N/A"},
@@ -4800,6 +4802,7 @@
             {"item": "COIN", "quantity": 7000, "chance": 1, "questLink": "N/A"},
             {"item": "Hgg", "quantity": 1, "chance": 0.3, "questLink": "N/A"},
             {"item": "StoneZ1", "quantity": 2, "chance": 0.4, "questLink": "N/A"},
+            {"item": "SmithingRecipes2", "quantity": 66, "chance": 0.06, "questLink": "N/A"},
             {"item": "StoneA3b", "quantity": 1, "chance": 0.008, "questLink": "N/A"},
             {"item": "CardsZ5", "quantity": 1, "chance": 0.024, "questLink": "N/A"},
             {"item": "SmithingRecipes2", "quantity": 75, "chance": 0.06, "questLink": "N/A"},
@@ -4842,7 +4845,8 @@
             {"item": "COIN", "quantity": 25000, "chance": 1, "questLink": "N/A"},
             {"item": "CardsZ6", "quantity": 1, "chance": 0.04, "questLink": "N/A"},
             {"item": "Key2", "quantity": 1, "chance": 0.8, "questLink": "N/A"},
-            {"item": "PremiumGem", "quantity": 15, "chance": 0.75, "questLink": "N/A"},
+            {"item": "SmithingRecipes2", "quantity": 65, "chance": 0.06, "questLink": "N/A"},
+            {"item": "PremiumGem", "quantity": 5, "chance": 0.75, "questLink": "N/A"},
             {"item": "StoneZ1", "quantity": 1, "chance": 1, "questLink": "N/A"},
             {"item": "StoneA3b", "quantity": 1, "chance": 0.04, "questLink": "N/A"},
             {"item": "EquipmentPants19", "quantity": 1, "chance": 0.04, "questLink": "N/A"},
@@ -4853,6 +4857,91 @@
         "navigation": {
             "prev": "babaHour",
             "next": "Boss2A",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
+        "bossData": null
+    },
+    "mini3a": {
+        "details": {
+            "Name": "Dilapidated Slush",
+            "AFKtype": "Fighting",
+            "MonsterFace": 6,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 40,
+            "HeightOfMonster": 60,
+            "MonsterMoving": 0,
+            "MovingFrame": 0,
+            "RespawnTime": 86400,
+            "DeathFrame": 7,
+            "MonsterHPTotal": 12500000,
+            "Type": "monsterType",
+            "SpecialType": "a",
+            "ExpGiven": 250000,
+            "ExpType": 0,
+            "Defence": 2000,
+            "MoveSPEED": 0,
+            "Damages": [20000, 450],
+            "DefFor0": 19482
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 25000, "chance": 1, "questLink": "N/A"},
+            {"item": "CardsZ12", "quantity": 1, "chance": 0.2, "questLink": "N/A"},
+            {"item": "WorshipSkull8", "quantity": 1, "chance": 0.009, "questLink": "N/A"},
+            {"item": "ObolSlush", "quantity": 1, "chance": 0.004, "questLink": "N/A"},
+            {"item": "Key3", "quantity": 2, "chance": 0.8, "questLink": "N/A"},
+            {"item": "SmithingRecipes3", "quantity": 20, "chance": 0.06, "questLink": "N/A"},
+            {"item": "StoneA3b", "quantity": 1, "chance": 0.04, "questLink": "N/A"},
+            {"item": "StoneA3b", "quantity": 1, "chance": 0.04, "questLink": "N/A"},
+            {"item": "DropTable13", "quantity": 1, "chance": 0.5, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": {
+            "prev": "Boss2B",
+            "next": "Boss3A",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
+        "bossData": null
+    },
+    "mini4a": {
+        "details": {
+            "Name": "Mutated Mush",
+            "AFKtype": "Fighting",
+            "MonsterFace": 6,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 40,
+            "HeightOfMonster": 78,
+            "MonsterMoving": 1,
+            "MovingFrame": 0,
+            "RespawnTime": 86400,
+            "DeathFrame": 9,
+            "MonsterHPTotal": 120000000,
+            "Type": "monsterType",
+            "SpecialType": "a",
+            "ExpGiven": 10000000,
+            "ExpType": 0,
+            "Defence": 4500,
+            "MoveSPEED": 3,
+            "Damages": [3000, 450],
+            "DefFor0": 3563.92
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 25000, "chance": 1, "questLink": "N/A"},
+            {"item": "CardsZ13", "quantity": 1, "chance": 0.2, "questLink": "N/A"},
+            {"item": "SmithingRecipes3", "quantity": 21, "chance": 0.02, "questLink": "N/A"},
+            {"item": "StoneA3b", "quantity": 1, "chance": 0.04, "questLink": "N/A"},
+            {"item": "PetEgg", "quantity": 1, "chance": 0.6, "questLink": "N/A"},
+            {"item": "Ladle", "quantity": 3, "chance": 1, "questLink": "N/A"},
+            {"item": "SmithingRecipes4", "quantity": 56, "chance": 0.008, "questLink": "N/A"},
+            {"item": "DropTable13", "quantity": 1, "chance": 0.5, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": {
+            "prev": "Boss3B",
+            "next": "Boss4A",
             "hasCrystal": true,
             "crystalName": null,
             "hasCard": true
@@ -7744,7 +7833,7 @@
             "DefFor0": 0.22
         },
         "drops": [
-            {"item": "COIN", "quantity": 80000000, "chance": 1, "questLink": "N/A"},
+            {"item": "COIN", "quantity": 60000000, "chance": 1, "questLink": "N/A"},
             {"item": "PremiumGem", "quantity": 1, "chance": 0.45, "questLink": "N/A"},
             {"item": "LustreBar", "quantity": 150, "chance": 0.05, "questLink": "N/A"},
             {"item": "Starfire", "quantity": 2000, "chance": 0.03, "questLink": "N/A"},

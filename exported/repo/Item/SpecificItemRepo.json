@@ -1813,7 +1813,7 @@
         "WIS": 0,
         "LUK": 0,
         "Defence": 18,
-        "miscUp1": "",
+        "miscUp1": "10% Catch Efficincy",
         "miscUp2": "00",
         "Upgrade_Slots_Left": 3,
         "Skill": "",
@@ -1876,7 +1876,7 @@
         "WIS": 16,
         "LUK": 0,
         "Defence": 15,
-        "miscUp1": "",
+        "miscUp1": "10% Chop Efficiency",
         "miscUp2": "00",
         "Upgrade_Slots_Left": 3,
         "Skill": "",
@@ -7036,8 +7036,8 @@
         "sellPrice": 100,
         "typeGen": "cFood",
         "Type": "Golden Food",
-        "description": "Claiming AFK gains levels up shrines [% faster.. Golden foods are never consumed.",
-        "goldenFoodData": {"effect": "Claiming AFK gains levels up shrines [% faster.", "amount": 20}
+        "description": "Boosts coins dropped. Golden foods are never consumed.",
+        "goldenFoodData": {"effect": "Boosts coins dropped by mobs by [%.", "amount": 30}
     },
     "FoodG7": {
         "internalName": "FoodG7",
@@ -7047,6 +7047,15 @@
         "Type": "Golden Food",
         "description": "Increases Fishing Efficiency. Golden foods are never consumed.",
         "goldenFoodData": {"effect": "Increases Fishing Efficiency by [%.", "amount": 40}
+    },
+    "FoodG8": {
+        "internalName": "FoodG8",
+        "displayName": "Golden Cheese",
+        "sellPrice": 100,
+        "typeGen": "cFood",
+        "Type": "Golden Food",
+        "description": "Claiming AFK gains levels up shrines [% faster.. Golden foods are never consumed.",
+        "goldenFoodData": {"effect": "Claiming AFK gains levels up shrines [% faster.", "amount": 20}
     },
     "ButterBar": {
         "internalName": "ButterBar",
@@ -9734,6 +9743,29 @@
         "Upgrade_Slots_Left": 0,
         "family": "Bosses",
         "rarity": "Frozen",
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "ObolSlush": {
+        "internalName": "ObolSlush",
+        "displayName": "Slushy Obol of Much Dilapidation",
+        "sellPrice": 20,
+        "typeGen": "aObolHexagon",
+        "Type": "Hexagon Obol",
+        "lvReqToCraft": 0,
+        "lvReqToEquip": 0,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 4,
+        "AGI": 4,
+        "WIS": 4,
+        "LUK": 4,
+        "Defence": 0,
+        "miscUp1": "3% Skill Efficiency",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 0,
+        "family": "Slush",
+        "rarity": "Slushy",
         "Skill": "",
         "Skill_Power": 0
     },
@@ -17699,7 +17731,7 @@
             "perTier": 1.5,
             "effect": "+{% Cog Build Spd (Passive)",
             "bonus": 8,
-            "order": 10
+            "order": 11
         }
     },
     "CardsZ9": {
@@ -17714,7 +17746,7 @@
             "perTier": 1.5,
             "effect": "+{% Shrine Effects",
             "bonus": 5,
-            "order": 11
+            "order": 12
         }
     },
     "CardsZ10": {
@@ -17729,7 +17761,7 @@
             "perTier": 2,
             "effect": "+{% Kitchen Speed (Passive)",
             "bonus": 6,
-            "order": 12
+            "order": 14
         }
     },
     "CardsZ11": {
@@ -17744,6 +17776,36 @@
             "perTier": 2,
             "effect": "+{% All Skill Efficiency",
             "bonus": 10,
+            "order": 15
+        }
+    },
+    "CardsZ12": {
+        "internalName": "CardsZ12",
+        "displayName": "Dilapidated Slush Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "Z12",
+            "category": "Bosses",
+            "perTier": 5,
+            "effect": "+{% Money from Monsters",
+            "bonus": 12,
+            "order": 10
+        }
+    },
+    "CardsZ13": {
+        "internalName": "CardsZ13",
+        "displayName": "Mutated Mush Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "Z13",
+            "category": "Bosses",
+            "perTier": 5,
+            "effect": "+{% Cooking EXP gain",
+            "bonus": 6,
             "order": 13
         }
     },
@@ -18083,6 +18145,22 @@
         "Type": "Lab Addition",
         "description": "Collect 7 of these, then hold down on the stack of 7 to unlock the Jewel Spinner! "
     },
+    "Quest67": {
+        "internalName": "Quest67",
+        "displayName": "Bottled World Town Teleport",
+        "sellPrice": 1000000,
+        "typeGen": "dQuest",
+        "Type": "Teleport",
+        "description": "Buy this once and hold down on it to permanently allow for free teleports inbetween World Towns without consuming a teleport! From town to town, free of charge! "
+    },
+    "Quest68": {
+        "internalName": "Quest68",
+        "displayName": "Bucket of Slush",
+        "sellPrice": 1000,
+        "typeGen": "dQuest",
+        "Type": "Bucket",
+        "description": "Drop this on the snowy pile in the Refigeration Station in World 3. There are rumors that the recent snowfall will coagulate with the slush in horrible ways... "
+    },
     "KeyFrag": {
         "internalName": "KeyFrag",
         "displayName": "Keychain Fragment",
@@ -18249,7 +18327,7 @@
         "sellPrice": 100,
         "typeGen": "bCraft",
         "Type": "Monster Drop",
-        "description": "All mushroom caps are naturally oblong like this one. It's only due to the longterm effects of gravity that the mushroom caps you're accustomed to are flat. "
+        "description": "According to herblore books, this purple cap is sterile. Those purple fungi that grow from the ground, however, will mutate if exposed to toxic oil radiation. "
     },
     "GalaxyA2": {
         "internalName": "GalaxyA2",
@@ -18972,6 +19050,48 @@
         "Skill": "",
         "Skill_Power": 0
     },
+    "EquipmentPendant26": {
+        "internalName": "EquipmentPendant26",
+        "displayName": "Polished Bludgeon",
+        "sellPrice": 10000,
+        "typeGen": "aPendant",
+        "Type": "Pendant",
+        "lvReqToCraft": 17,
+        "lvReqToEquip": 40,
+        "Class": "All",
+        "Weapon_Power": 6,
+        "STR": 0,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 5,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 3,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentPendant27": {
+        "internalName": "EquipmentPendant27",
+        "displayName": "Skullfish Pendant",
+        "sellPrice": 1,
+        "typeGen": "aPendant",
+        "Type": "Pendant",
+        "lvReqToCraft": 17,
+        "lvReqToEquip": 60,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 10,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "5% Fish Afk Gain",
+        "miscUp2": "40Purple Depth",
+        "Upgrade_Slots_Left": 2,
+        "Skill": "",
+        "Skill_Power": 0
+    },
     "EquipmentRings23": {
         "internalName": "EquipmentRings23",
         "displayName": "Neutron Ice Ring",
@@ -18995,7 +19115,7 @@
     },
     "EquipmentRings24": {
         "internalName": "EquipmentRings24",
-        "displayName": "Lab Rang",
+        "displayName": "Lab Ring",
         "sellPrice": 1,
         "typeGen": "aRing",
         "Type": "Ring",
@@ -19035,9 +19155,114 @@
         "Skill": "",
         "Skill_Power": 0
     },
+    "EquipmentRings26": {
+        "internalName": "EquipmentRings26",
+        "displayName": "Serrated Rex Ring",
+        "sellPrice": 1,
+        "typeGen": "aRing",
+        "Type": "Ring",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 50,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 5,
+        "AGI": 5,
+        "WIS": 5,
+        "LUK": 0,
+        "Defence": 5,
+        "miscUp1": "8% Skill Efficiency",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 3,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentRings27": {
+        "internalName": "EquipmentRings27",
+        "displayName": "Protectors Pride",
+        "sellPrice": 5000,
+        "typeGen": "aRing",
+        "Type": "Ring",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 70,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 0,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 3,
+        "Defence": 20,
+        "miscUp1": "6% Defence",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 3,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentRings28": {
+        "internalName": "EquipmentRings28",
+        "displayName": "Midnight Stopwatch",
+        "sellPrice": 5000,
+        "typeGen": "aRing",
+        "Type": "Ring",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 90,
+        "Class": "All",
+        "Weapon_Power": 3,
+        "STR": 0,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 3,
+        "miscUp1": "2% Fight Afk Gain",
+        "miscUp2": "3% Basic Atk Speed",
+        "Upgrade_Slots_Left": 3,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentRings29": {
+        "internalName": "EquipmentRings29",
+        "displayName": "Dawn Stopwatch",
+        "sellPrice": 5000,
+        "typeGen": "aRing",
+        "Type": "Ring",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 90,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 3,
+        "AGI": 3,
+        "WIS": 3,
+        "LUK": 3,
+        "Defence": 0,
+        "miscUp1": "2% Skill Afk Gain",
+        "miscUp2": "1% Skill Efficiency",
+        "Upgrade_Slots_Left": 3,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentRings30": {
+        "internalName": "EquipmentRings30",
+        "displayName": "Souped Lab Ring",
+        "sellPrice": 1,
+        "typeGen": "aRing",
+        "Type": "Ring",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 110,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 0,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 10,
+        "miscUp1": "25% Lab Exp",
+        "miscUp2": "35% Lab Efficiency",
+        "Upgrade_Slots_Left": 3,
+        "Skill": "",
+        "Skill_Power": 0
+    },
     "EquipmentCape0": {
         "internalName": "EquipmentCape0",
-        "displayName": "Cape",
+        "displayName": "Angel Wings",
         "sellPrice": 1,
         "typeGen": "aCape",
         "Type": "Cape",
@@ -19076,6 +19301,28 @@
         "Upgrade_Slots_Left": 0,
         "Skill": "",
         "Skill_Power": 0
+    },
+    "WorshipSkull8": {
+        "internalName": "WorshipSkull8",
+        "displayName": "Slush Skull",
+        "sellPrice": 100,
+        "typeGen": "aSkull",
+        "Type": "Worship Skull",
+        "lvReqToCraft": 1000,
+        "lvReqToEquip": 10,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 0,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 25,
+        "miscUp1": "Max Worship Charge: 1000%",
+        "miscUp2": "2% All Stats",
+        "Upgrade_Slots_Left": 0,
+        "Skill": "Worship",
+        "Skill_Power": 10,
+        "Speed": 2
     },
     "DNAgun0": {
         "internalName": "DNAgun0",

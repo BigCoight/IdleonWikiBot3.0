@@ -218,6 +218,8 @@ class Repository(Generic[T], ABC):
 			return "{{patchnote/bold|" + f"{camelCaseToTitle(v)}|{indent}" + "}}\n"
 
 		def patchnote(v: str, o, n) -> str:
+			if not o:
+				o = " "
 			return "{{patchnote|" + f"{camelCaseToTitle(v)}|{str(o)}|{str(n)}|{indent}" + "}}\n"
 
 		def aux(atr, val):
@@ -232,6 +234,8 @@ class Repository(Generic[T], ABC):
 				newChanges = {f"{n}": v for n, v in enumerate(val)}
 				res += cls._writeChangelog(newChanges, indent + 1)
 				return res
+			if not isinstance(val, IdleonModel) and val in {0, "0", "00"}:
+				return ""
 			return patchnote(atr, " ", val)
 		return "".join([aux(atr, val) for atr, val in changes.items()])
 

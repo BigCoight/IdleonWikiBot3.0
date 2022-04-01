@@ -134,4 +134,7 @@ class IdleonReader:
 		self.codeReader.addSection("LabMainBonusDESC = function ()", "LabDesc")
 		self.codeReader.addSection("ChipDesc = function ()", "ChipDesc")
 		self.codeReader.addSection("JewelDesc = function ()", "JewelDesc")
+		self.codeReader.addSection("ColosseumInfo = function ()", "ColInfo")
+		self.codeReader.addSection("ColosseumWaves = function ()", "ColWaves")
+
 		self.codeReader.readCode()

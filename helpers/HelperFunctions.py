@@ -4,6 +4,7 @@ from typing import List
 import numpy as np
 
 from definitions.common.Source import Source
+from helpers.Constants import Constants
 
 reAll = r'[ a-zA-Z0-_\'n()@,!$+{/}%:.~\-&\|/\*]'
 
@@ -209,9 +210,8 @@ def changeChestNames(intName, name):
 		A more descriptive version of the chests name
 
 	"""
-	COLNAMES = ["Dewdrop", "Sandstone", "Chillsnap", "Astro", "NYI", "NYI", "NYI", "NYI", "NYI"]
 	col = int(intName[6]) - 1
-	return f"{COLNAMES[col]} {name}"
+	return f"{Constants.COLNAMES[col]} {name}"
 
 
 def wikiSource(source: Source) -> str:

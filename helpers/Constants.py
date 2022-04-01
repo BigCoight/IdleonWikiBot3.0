@@ -24,6 +24,7 @@ class Constants:
 		"Critters": ["Critters"],
 		"Souls": ["Souls"],
 	}
+	COLNAMES = ["Dewdrop", "Sandstone", "Chillsnap", "Astro", "NYI", "NYI", "NYI", "NYI", "NYI"]
 
 	newLine = "<!--\n-->"
 	nameConflicts = {"Ghost": "Ghost (Event)", "Dog Bone": "Dog Bone (NPC)"}

@@ -2,6 +2,7 @@ from builds.Build import Build, BuildTab, BuildTalent
 from helpers.CodeReader import IdleonReader
 from helpers.JsonEncoder import CompactJSONEncoder
 from repositories.enemies.BossDetailRepo import BossDetailRepo
+from repositories.misc.ColosseumRepo import ColosseumRepo
 from repositories.misc.world3.ShrineRepo import ShrineRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
@@ -10,7 +11,7 @@ newV = IdleonReader("152", True)
 oldV = IdleonReader("151", True)
 
 # SpecificItemRepo.compareVersions(oldV, newV)
-BossDetailRepo.compareVersions(oldV, newV)
+ColosseumRepo.initialise(newV.codeReader)
 
 # classes = {
 # 	"Beginner": ["Beginner"],

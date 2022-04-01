@@ -3,6 +3,7 @@ from typing import List
 
 from definitions.enemy.BossDetails import BossDetails, BossAttack
 from helpers.HelperFunctions import formatStr, wrap, strToArray
+from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
 from repositories.master.Repository import Repository
 
 
@@ -13,8 +14,8 @@ class BossDetailRepo(Repository[BossDetails]):
 		return "Enemy"
 
 	@classmethod
-	def parse(cls, value) -> BossDetails:
-		return BossDetails.parse_obj(value)
+	def initDependencies(cls, log = True) -> None:
+		EnemyDetailsRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -30,7 +31,7 @@ class BossDetailRepo(Repository[BossDetails]):
 			["Fireball", "Stomp", "Rock Spikes", "Spike Traps", "Sword Swing", "Uppercut", "Rocketfist"],
 			["Hammer", "Scimitar", "Fire Column", "Purple Psionic Hoops", "Finger Gun", "Headpat", "Blue Psionic",
 			 "Hoops", "Kick"],
-			["filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler",
+			["Front Stomp", "Back Stomp", "Frozen Spikes", "Falling Icicles", "Tusk Swipe", "filler", "filler", "filler", "filler",
 			 "filler", "filler", "filler"],
 			["filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler",
 			 "filler", "filler", "filler"],
@@ -66,3 +67,7 @@ class BossDetailRepo(Repository[BossDetails]):
 				keys = detail["keys"],
 				attacks = attacks.copy(),
 			))
+
+	@classmethod
+	def getWikiName(cls, name: str) -> str:
+		return EnemyDetailsRepo.get(name).Name

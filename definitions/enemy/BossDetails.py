@@ -8,6 +8,12 @@ class BossAttack(IdleonModel):
 	name: str
 	damage: Integer
 
+	def shouldCompare(self) -> bool:
+		return False
+
+	def __str__(self) -> str:
+		return f"{self.name} {self.damage}"
+
 
 class BossDetails(IdleonModel):
 	health: Integer

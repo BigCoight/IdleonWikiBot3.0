@@ -83,8 +83,8 @@ class IdleonModel(BaseModel):
 
 	def compare(self, other: IdleonModel, ignored: Set[str] = set()):
 		diffs = {}
-		d1 = dict(self)
-		d2 = dict(other)
+		d1 = self.__dict__
+		d2 = other.__dict__
 		keys = d1.keys()
 		for key in keys:
 			if d1[key] == d2[key]:

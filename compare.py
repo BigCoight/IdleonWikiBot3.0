@@ -2,6 +2,7 @@ from helpers.CodeReader import IdleonReader
 from repositories.collections.EnemyRepo import EnemyRepo
 from repositories.dungeons.DungEnemyRepo import DungEnemyRepo
 from repositories.dungeons.DungItemRepo import DungItemRepo
+from repositories.enemies.BossDetailRepo import BossDetailRepo
 from repositories.enemies.DropTableRepo import DropTableRepo
 from repositories.item.AnvilRepo import AnvilRepo
 from repositories.item.RecipeRepo import RecipeRepo
@@ -71,3 +72,4 @@ PetStatRepo.compareVersions(oldV, newV)
 PetUpgradeRepo.compareVersions(oldV, newV)
 
 TerritoryFightRepo.compareVersions(oldV, newV)
+BossDetailRepo.compareVersions(oldV, newV)

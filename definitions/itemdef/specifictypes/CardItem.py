@@ -22,8 +22,10 @@ class CardItem(BaseItem):
 			dispName = "Crystal Crabal Card"
 		elif name == "Crystal2":
 			dispName = "Crystal Cattle Card"
+		elif name == "Crystal3":
+			dispName = "Crystal Custard Card"
 
-		#TODO add w4
+		#T
 		elif ItemDetailRepo.contains(name):
 			dispName = f"{ItemDetailRepo.getDisplayName(name)} Card"
 		else:

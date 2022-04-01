@@ -74,3 +74,4 @@ PetUpgradeRepo.compareVersions(oldV, newV)
 
 TerritoryFightRepo.compareVersions(oldV, newV)
 BossDetailRepo.compareVersions(oldV, newV)
+CardRepo.compareVersions(oldV, newV)

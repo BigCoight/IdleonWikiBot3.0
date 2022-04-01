@@ -5,6 +5,7 @@ from repositories.dungeons.DungItemRepo import DungItemRepo
 from repositories.enemies.BossDetailRepo import BossDetailRepo
 from repositories.enemies.DropTableRepo import DropTableRepo
 from repositories.item.AnvilRepo import AnvilRepo
+from repositories.item.CardRepo import CardRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.RefineryCostRepo import RefineryCostRepo
 from repositories.item.SpecificItemRepo import SpecificItemRepo

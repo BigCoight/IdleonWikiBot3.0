@@ -1,36 +1,16 @@
 {
     "new": {
-        "EquipmentRings30": {
+        "EquipmentRings27": {
             "recipe": [
-                {"item": "EquipmentRings24", "quantity": 5},
-                {"item": "GalaxyA1", "quantity": 200000},
-                {"item": "InvStorageS", "quantity": 1}
-            ],
-            "levelReqToCraft": 60,
-            "expGiven": 1000000,
-            "no": 57,
-            "tab": 4,
-            "sellPrice": 20001005
-        },
-        "EquipmentRings26": {
-            "recipe": [{"item": "EquipmentRings20", "quantity": 1}, {"item": "IronBar", "quantity": 1000}],
-            "levelReqToCraft": 20,
-            "expGiven": 5,
-            "no": 64,
-            "tab": 1,
-            "sellPrice": 32001
-        },
-        "Quest68": {
-            "recipe": [
-                {"item": "SnowA2", "quantity": 5},
-                {"item": "SnowB5", "quantity": 20},
-                {"item": "IronBar", "quantity": 5}
+                {"item": "EquipmentRings11", "quantity": 1},
+                {"item": "EquipmentPants19", "quantity": 1},
+                {"item": "PureWater", "quantity": 35}
             ],
             "levelReqToCraft": 38,
-            "expGiven": 5,
-            "no": 64,
-            "tab": 3,
-            "sellPrice": 7535
+            "expGiven": 15,
+            "no": 66,
+            "tab": 2,
+            "sellPrice": 44700
         },
         "EquipmentRings28": {
             "recipe": [
@@ -45,6 +25,18 @@
             "tab": 3,
             "sellPrice": 55000
         },
+        "EquipmentRings30": {
+            "recipe": [
+                {"item": "EquipmentRings24", "quantity": 5},
+                {"item": "GalaxyA1", "quantity": 200000},
+                {"item": "InvStorageS", "quantity": 1}
+            ],
+            "levelReqToCraft": 60,
+            "expGiven": 1000000,
+            "no": 57,
+            "tab": 4,
+            "sellPrice": 20001005
+        },
         "EquipmentPendant27": {
             "recipe": [{"item": "EquipmentPendant20", "quantity": 1}, {"item": "PureWater", "quantity": 60}],
             "levelReqToCraft": 38,
@@ -53,18 +45,6 @@
             "tab": 2,
             "sellPrice": 3001
         },
-        "EquipmentRings27": {
-            "recipe": [
-                {"item": "EquipmentRings11", "quantity": 1},
-                {"item": "EquipmentPants19", "quantity": 1},
-                {"item": "PureWater", "quantity": 35}
-            ],
-            "levelReqToCraft": 38,
-            "expGiven": 15,
-            "no": 66,
-            "tab": 2,
-            "sellPrice": 44700
-        },
         "EquipmentPendant26": {
             "recipe": [{"item": "EquipmentPendant16", "quantity": 1}, {"item": "PureWater", "quantity": 25}],
             "levelReqToCraft": 25,
@@ -72,6 +52,14 @@
             "no": 25,
             "tab": 2,
             "sellPrice": 3655
+        },
+        "EquipmentRings26": {
+            "recipe": [{"item": "EquipmentRings20", "quantity": 1}, {"item": "IronBar", "quantity": 1000}],
+            "levelReqToCraft": 20,
+            "expGiven": 5,
+            "no": 64,
+            "tab": 1,
+            "sellPrice": 32001
         },
         "EquipmentRings29": {
             "recipe": [
@@ -85,12 +73,30 @@
             "no": 22,
             "tab": 3,
             "sellPrice": 46200
+        },
+        "Quest68": {
+            "recipe": [
+                {"item": "SnowA2", "quantity": 5},
+                {"item": "SnowB5", "quantity": 20},
+                {"item": "IronBar", "quantity": 5}
+            ],
+            "levelReqToCraft": 38,
+            "expGiven": 5,
+            "no": 64,
+            "tab": 3,
+            "sellPrice": 7535
         }
     },
     "changes": {
-        "EquipmentSword5": {"sellPrice": [23509635, 22902765]},
-        "FishingRod8": {"sellPrice": [4041659, 1646859]},
-        "EquipmentShirts29": {"sellPrice": [40724200, 36661600]},
+        "EquipmentHats54": {
+            "recipe": [
+                [
+                    {"item": "EquipmentHats53", "quantity": 2},
+                    {"item": "EquipmentHats53", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [8846250, 7101750]
+        },
         "EquipmentSword2": {
             "recipe": [
                 [
@@ -100,8 +106,7 @@
             ],
             "sellPrice": [5777080, 5574790]
         },
-        "MaxCapBagFi5": {"sellPrice": [272940, 191470]},
-        "MaxCapBagFi6": {"sellPrice": [1445880, 1282940]},
+        "EquipmentShirts6": {"sellPrice": [90704218, 86641618]},
         "EquipmentToolsHatchet5": {
             "recipe": [
                 [
@@ -111,13 +116,236 @@
             ],
             "sellPrice": [1839800, 966200]
         },
-        "MaxCapBagB6": {"sellPrice": [2879400, 2735620]},
-        "EquipmentBows7": {
+        "MaxCapBagF6": {"sellPrice": [2560440, 2634640]},
+        "WorshipSkull4": {
             "recipe": [
-                [{"item": "EquipmentBows6", "quantity": 2}, {"item": "EquipmentBows6", "quantity": 1}]
+                [{"item": "WorshipSkull3", "quantity": 2}, {"item": "WorshipSkull3", "quantity": 1}]
             ],
-            "sellPrice": [219540, 92620]
+            "sellPrice": [171600, 158300]
         },
+        "EquipmentBows8": {
+            "recipe": [
+                [{"item": "EquipmentBows7", "quantity": 3}, {"item": "EquipmentBows7", "quantity": 1}]
+            ],
+            "sellPrice": [733970, 167970]
+        },
+        "EquipmentToolsHatchet7": {
+            "recipe": [
+                [
+                    {"item": "EquipmentToolsHatchet5", "quantity": 2},
+                    {"item": "EquipmentToolsHatchet5", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [5679850, 2966450]
+        },
+        "EquipmentHats53": {
+            "recipe": [
+                [
+                    {"item": "EquipmentHats19", "quantity": 2},
+                    {"item": "EquipmentHats19", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [1298000, 851500]
+        },
+        "EquipmentShirts5": {
+            "recipe": [
+                [
+                    {"item": "EquipmentShirts20", "quantity": 4},
+                    {"item": "EquipmentShirts20", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [314400, 287045]
+        },
+        "MaxCapBagB4": {
+            "recipe": [
+                [{"item": "Bug4", "quantity": 6750}, {"item": "Bug4", "quantity": 7500}],
+                [{"item": "MaxCapBagB3", "quantity": 3}, {"item": "MaxCapBagB3", "quantity": 1}]
+            ],
+            "sellPrice": [209850, 173905]
+        },
+        "EquipmentShirts14": {
+            "recipe": [
+                [
+                    {"item": "EquipmentShirts12", "quantity": 5},
+                    {"item": "EquipmentShirts12", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [1167000, 1133400]
+        },
+        "EquipmentPants23": {
+            "recipe": [
+                [
+                    {"item": "EquipmentPants18", "quantity": 3},
+                    {"item": "EquipmentPants18", "quantity": 2}
+                ]
+            ],
+            "sellPrice": [7740, 4810]
+        },
+        "EquipmentPendant16": {
+            "recipe": [
+                [{"item": "Forest3", "quantity": 9000}, {"item": "EquipmentPendant10", "quantity": 1}],
+                [{"item": "DesertA1b", "quantity": 10}, {"item": "DesertA1b", "quantity": 4}]
+            ],
+            "sellPrice": [271600, 2405]
+        },
+        "EquipmentPendant10": {
+            "recipe": [
+                [{"item": "EquipmentBows1", "quantity": 2}, {"item": "EquipmentBows1", "quantity": 1}],
+                [
+                    {"item": "EquipmentWands1", "quantity": 2},
+                    {"item": "EquipmentWands1", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [1300, 1165]
+        },
+        "EquipmentPants18": {
+            "recipe": [
+                [
+                    {"item": "EquipmentPants1", "quantity": 8},
+                    {"item": "EquipmentPants1", "quantity": 3}
+                ]
+            ],
+            "sellPrice": [2080, 1655]
+        },
+        "EquipmentShoes33": {"sellPrice": [48719600, 48352300]},
+        "MaxCapBagM7": {
+            "recipe": [
+                [{"item": "MaxCapBagM6", "quantity": 2}, {"item": "MaxCapBagM6", "quantity": 1}]
+            ],
+            "sellPrice": [34133540, 29876370]
+        },
+        "EquipmentShoes3": {"sellPrice": [91300, 90250]},
+        "EquipmentShoes24": {"sellPrice": [48707600, 48340300]},
+        "MaxCapBagF3": {
+            "recipe": [
+                [{"item": "MaxCapBag8", "quantity": 7}, {"item": "MaxCapBag8", "quantity": 2}],
+                [{"item": "FoodHealth7", "quantity": 250}, {"item": "FoodHealth7", "quantity": 400}],
+                [{"item": "FoodMining1", "quantity": 600}, {"item": "FoodMining1", "quantity": 700}],
+                [{"item": "FoodChoppin1", "quantity": 600}, {"item": "FoodChoppin1", "quantity": 700}]
+            ],
+            "sellPrice": [79650, 98200]
+        },
+        "EquipmentShoes4": {
+            "recipe": [
+                [
+                    {"item": "EquipmentShoes3", "quantity": 3},
+                    {"item": "EquipmentShoes3", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [455900, 272250]
+        },
+        "BadgeI3": {"sellPrice": [10157276, 8412776]},
+        "TrapBoxSet7": {"sellPrice": [64117313, 64111313]},
+        "EquipmentShirts15": {
+            "recipe": [
+                [
+                    {"item": "EquipmentShirts14", "quantity": 2},
+                    {"item": "EquipmentShirts14", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [2862000, 1661400]
+        },
+        "EquipmentWands3": {
+            "recipe": [
+                [
+                    {"item": "EquipmentWands6", "quantity": 2},
+                    {"item": "EquipmentWands6", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [655200, 438850]
+        },
+        "EquipmentHats19": {
+            "recipe": [
+                [
+                    {"item": "EquipmentHats18", "quantity": 4},
+                    {"item": "EquipmentHats18", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [416500, 386500]
+        },
+        "EquipmentShirts30": {"sellPrice": [40724200, 36661600]},
+        "EquipmentPunching4": {
+            "recipe": [
+                [
+                    {"item": "EquipmentPunching3", "quantity": 3},
+                    {"item": "EquipmentPunching3", "quantity": 2}
+                ]
+            ],
+            "sellPrice": [15192950, 15143180]
+        },
+        "EquipmentSword1": {"sellPrice": [193540, 184790]},
+        "EquipmentShoes17": {"sellPrice": [111350, 110300]},
+        "EquipmentTools11": {
+            "recipe": [
+                [
+                    {"item": "EquipmentTools7", "quantity": 2},
+                    {"item": "EquipmentTools7", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [19489170, 8542240]
+        },
+        "MaxCapBagT4": {
+            "recipe": [
+                [{"item": "PalmTree", "quantity": 6750}, {"item": "PalmTree", "quantity": 7500}],
+                [{"item": "MaxCapBagT3", "quantity": 3}, {"item": "MaxCapBagT3", "quantity": 1}]
+            ],
+            "sellPrice": [213300, 174720]
+        },
+        "TrapBoxSet6": {"sellPrice": [117313, 111313]},
+        "EquipmentPants9": {"sellPrice": [14400770, 9996275]},
+        "EquipmentShoes29": {"sellPrice": [49716600, 49348250]},
+        "EquipmentPants15": {
+            "recipe": [
+                [
+                    {"item": "EquipmentPants1", "quantity": 10},
+                    {"item": "EquipmentPants1", "quantity": 3}
+                ]
+            ],
+            "sellPrice": [9825, 9230]
+        },
+        "MaxCapBagB3": {
+            "recipe": [
+                [{"item": "MaxCapBagB1", "quantity": 5}, {"item": "MaxCapBagB1", "quantity": 2}],
+                [{"item": "MaxCapBagB2", "quantity": 2}, {"item": "MaxCapBagB2", "quantity": 1}],
+                [{"item": "Bug2", "quantity": 1600}, {"item": "Bug2", "quantity": 2100}]
+            ],
+            "sellPrice": [24950, 23905]
+        },
+        "MaxCapBagM5": {"sellPrice": [121160, 143460]},
+        "MaxCapBag3": {
+            "recipe": [
+                [{"item": "MaxCapBag1", "quantity": 5}, {"item": "MaxCapBag1", "quantity": 2}],
+                [{"item": "MaxCapBag2", "quantity": 2}, {"item": "MaxCapBag2", "quantity": 1}],
+                [{"item": "Gold", "quantity": 1400}, {"item": "Gold", "quantity": 2000}]
+            ],
+            "sellPrice": [29800, 31620]
+        },
+        "MaxCapBagB5": {"sellPrice": [739700, 667810]},
+        "MaxCapBag5": {"sellPrice": [1061300, 975740]},
+        "MaxCapBagFi3": {
+            "recipe": [
+                [{"item": "MaxCapBagFi1", "quantity": 5}, {"item": "MaxCapBagFi1", "quantity": 2}],
+                [{"item": "MaxCapBagFi2", "quantity": 2}, {"item": "MaxCapBagFi2", "quantity": 1}],
+                [{"item": "Fish2", "quantity": 1500}, {"item": "Fish2", "quantity": 2000}]
+            ],
+            "sellPrice": [29650, 28215]
+        },
+        "MaxCapBagT5": {"sellPrice": [1026600, 949440]},
+        "MaxCapBagT6": {"sellPrice": [3253200, 3098880]},
+        "MaxCapBagM6": {"sellPrice": [4301770, 4346370]},
+        "EquipmentHats60": {"sellPrice": [8861250, 7116750]},
+        "MaxCapBagFi5": {"sellPrice": [272940, 191470]},
+        "EquipmentShoes26": {"sellPrice": [49712250, 49343900]},
+        "EquipmentShoes18": {"sellPrice": [107750, 106700]},
+        "BadgeG3": {
+            "recipe": [
+                [{"item": "EquipmentBows4", "quantity": 2}, {"item": "EquipmentBows4", "quantity": 1}]
+            ],
+            "sellPrice": [253500, 248500]
+        },
+        "CatchingNet9": {"sellPrice": [27818050, 26303450]},
+        "EquipmentHats58": {"sellPrice": [8861250, 7116750]},
+        "EquipmentHats71": {"sellPrice": [88586250, 86841750]},
         "EquipmentShirts3": {
             "recipe": [
                 [
@@ -135,172 +363,15 @@
             ],
             "sellPrice": [5351, 3034]
         },
-        "EquipmentShoes4": {
+        "EquipmentTools7": {
             "recipe": [
                 [
-                    {"item": "EquipmentShoes3", "quantity": 3},
-                    {"item": "EquipmentShoes3", "quantity": 1}
+                    {"item": "EquipmentTools6", "quantity": 2},
+                    {"item": "EquipmentTools6", "quantity": 1}
                 ]
             ],
-            "sellPrice": [455900, 272250]
+            "sellPrice": [8504460, 6061990]
         },
-        "EquipmentShirts28": {"sellPrice": [40724200, 36661600]},
-        "EquipmentPendant16": {
-            "recipe": [
-                [{"item": "Forest3", "quantity": 9000}, {"item": "EquipmentPendant10", "quantity": 1}],
-                [{"item": "DesertA1b", "quantity": 10}, {"item": "DesertA1b", "quantity": 4}]
-            ],
-            "sellPrice": [271600, 2405]
-        },
-        "BadgeG3": {
-            "recipe": [
-                [{"item": "EquipmentBows4", "quantity": 2}, {"item": "EquipmentBows4", "quantity": 1}]
-            ],
-            "sellPrice": [253500, 248500]
-        },
-        "EquipmentShoes16": {"sellPrice": [104650, 103600]},
-        "TrapBoxSet4": {
-            "recipe": [
-                [{"item": "TrapBoxSet3", "quantity": 2}, {"item": "TrapBoxSet3", "quantity": 1}]
-            ],
-            "sellPrice": [17015, 11015]
-        },
-        "EquipmentShirts14": {
-            "recipe": [
-                [
-                    {"item": "EquipmentShirts12", "quantity": 5},
-                    {"item": "EquipmentShirts12", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [1167000, 1133400]
-        },
-        "EquipmentShoes21": {"sellPrice": [456145, 272495]},
-        "EquipmentShoes24": {"sellPrice": [48707600, 48340300]},
-        "EquipmentSword3": {"sellPrice": [17431635, 16824765]},
-        "TrapBoxSet5": {"sellPrice": [17283, 11283]},
-        "TrapBoxSet6": {"sellPrice": [117313, 111313]},
-        "EquipmentShirts32": {"sellPrice": [65699200, 61636600]},
-        "MaxCapBagT3": {
-            "recipe": [
-                [{"item": "MaxCapBag7", "quantity": 5}, {"item": "MaxCapBag7", "quantity": 2}],
-                [{"item": "MaxCapBag9", "quantity": 2}, {"item": "MaxCapBag9", "quantity": 1}],
-                [{"item": "ForestTree", "quantity": 1800}, {"item": "ForestTree", "quantity": 2100}]
-            ],
-            "sellPrice": [26100, 24720]
-        },
-        "EquipmentShoes26": {"sellPrice": [49712250, 49343900]},
-        "EquipmentShoes15": {
-            "recipe": [
-                [
-                    {"item": "EquipmentShoes1", "quantity": 2},
-                    {"item": "EquipmentShoes1", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [11050, 10525]
-        },
-        "MaxCapBag4": {
-            "recipe": [
-                [{"item": "Plat", "quantity": 6750}, {"item": "Plat", "quantity": 7500}],
-                [{"item": "MaxCapBag3", "quantity": 3}, {"item": "MaxCapBag3", "quantity": 1}]
-            ],
-            "sellPrice": [224400, 181620]
-        },
-        "EquipmentHats28": {
-            "recipe": [
-                [
-                    {"item": "EquipmentHats17", "quantity": 3},
-                    {"item": "EquipmentHats17", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [36010, 35170]
-        },
-        "EquipmentBows6": {
-            "recipe": [
-                [{"item": "EquipmentBows5", "quantity": 2}, {"item": "EquipmentBows5", "quantity": 1}]
-            ],
-            "sellPrice": [91770, 56620]
-        },
-        "EquipmentShirts22": {
-            "recipe": [
-                [
-                    {"item": "EquipmentShirts21", "quantity": 4},
-                    {"item": "EquipmentShirts21", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [90880, 90280]
-        },
-        "EquipmentSword1": {"sellPrice": [193540, 184790]},
-        "MaxCapBag3": {
-            "recipe": [
-                [{"item": "MaxCapBag1", "quantity": 5}, {"item": "MaxCapBag1", "quantity": 2}],
-                [{"item": "MaxCapBag2", "quantity": 2}, {"item": "MaxCapBag2", "quantity": 1}],
-                [{"item": "Gold", "quantity": 1400}, {"item": "Gold", "quantity": 2000}]
-            ],
-            "sellPrice": [29800, 31620]
-        },
-        "EquipmentTools11": {
-            "recipe": [
-                [
-                    {"item": "EquipmentTools7", "quantity": 2},
-                    {"item": "EquipmentTools7", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [19489170, 8542240]
-        },
-        "EquipmentShirts30": {"sellPrice": [40724200, 36661600]},
-        "EquipmentHats20": {
-            "recipe": [
-                [
-                    {"item": "EquipmentHats17", "quantity": 2},
-                    {"item": "EquipmentHats17", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [1560, 1140]
-        },
-        "EquipmentShoes31": {"sellPrice": [48719600, 48352300]},
-        "CatchingNet9": {"sellPrice": [27818050, 26303450]},
-        "EquipmentHats61": {"sellPrice": [8887750, 7143250]},
-        "EquipmentHats60": {"sellPrice": [8861250, 7116750]},
-        "EquipmentPants21": {
-            "recipe": [
-                [
-                    {"item": "EquipmentPants6", "quantity": 2},
-                    {"item": "EquipmentPants6", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [14295760, 9891265]
-        },
-        "EquipmentWands7": {
-            "recipe": [
-                [
-                    {"item": "EquipmentWands3", "quantity": 3},
-                    {"item": "EquipmentWands3", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [2180950, 654200]
-        },
-        "EquipmentToolsHatchet4": {
-            "recipe": [
-                [
-                    {"item": "EquipmentToolsHatchet2", "quantity": 2},
-                    {"item": "EquipmentToolsHatchet2", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [692400, 511200]
-        },
-        "EquipmentShoes18": {"sellPrice": [107750, 106700]},
-        "EquipmentShoes25": {"sellPrice": [51282600, 50915300]},
-        "EquipmentShirts5": {
-            "recipe": [
-                [
-                    {"item": "EquipmentShirts20", "quantity": 4},
-                    {"item": "EquipmentShirts20", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [314400, 287045]
-        },
-        "MaxCapBagF6": {"sellPrice": [2560440, 2634640]},
-        "EquipmentHats58": {"sellPrice": [8861250, 7116750]},
         "EquipmentShirts24": {
             "recipe": [
                 [
@@ -314,47 +385,26 @@
             ],
             "sellPrice": [802, 609]
         },
-        "EquipmentPants25": {"sellPrice": [95559760, 91155265]},
-        "EquipmentShoes5": {"sellPrice": [1206200, 1022550]},
-        "EquipmentTools12": {"sellPrice": [157349170, 146402240]},
-        "EquipmentShoes33": {"sellPrice": [48719600, 48352300]},
-        "EquipmentShirts20": {
-            "recipe": [
-                [
-                    {"item": "EquipmentShirts11", "quantity": 2},
-                    {"item": "EquipmentShirts11", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [8580, 6965]
-        },
-        "EquipmentHats54": {
-            "recipe": [
-                [
-                    {"item": "EquipmentHats53", "quantity": 2},
-                    {"item": "EquipmentHats53", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [8846250, 7101750]
-        },
+        "EquipmentHats68": {"sellPrice": [9556275, 7811775]},
+        "EquipmentHats70": {"sellPrice": [40496250, 38751750]},
+        "EquipmentShoes25": {"sellPrice": [51282600, 50915300]},
+        "MaxCapBagMi6": {"sellPrice": [3322600, 3151480]},
+        "EquipmentWands9": {"sellPrice": [5413950, 3887200]},
         "EquipmentShoes22": {"sellPrice": [9307600, 8940300]},
-        "EquipmentWands8": {"sellPrice": [4580950, 3054200]},
-        "EquipmentPunching3": {
+        "MaxCapBag4": {
             "recipe": [
-                [
-                    {"item": "EquipmentPunching2", "quantity": 5},
-                    {"item": "EquipmentPunching2", "quantity": 3}
-                ]
+                [{"item": "Plat", "quantity": 6750}, {"item": "Plat", "quantity": 7500}],
+                [{"item": "MaxCapBag3", "quantity": 3}, {"item": "MaxCapBag3", "quantity": 1}]
             ],
-            "sellPrice": [47650, 46590]
+            "sellPrice": [224400, 181620]
         },
-        "EquipmentShirts23": {
+        "EquipmentToolsHatchet8": {"sellPrice": [20089850, 17376450]},
+        "MaxCapBagF5": {"sellPrice": [2522540, 2596740]},
+        "EquipmentBows5": {
             "recipe": [
-                [
-                    {"item": "EquipmentShirts10", "quantity": 4},
-                    {"item": "EquipmentShirts10", "quantity": 1}
-                ]
+                [{"item": "EquipmentBows3", "quantity": 2}, {"item": "EquipmentBows3", "quantity": 1}]
             ],
-            "sellPrice": [374080, 296080]
+            "sellPrice": [33150, 31150]
         },
         "TestObj13": {
             "recipe": [
@@ -365,209 +415,8 @@
             ],
             "sellPrice": [53920, 47260]
         },
-        "MaxCapBagB4": {
-            "recipe": [
-                [{"item": "Bug4", "quantity": 6750}, {"item": "Bug4", "quantity": 7500}],
-                [{"item": "MaxCapBagB3", "quantity": 3}, {"item": "MaxCapBagB3", "quantity": 1}]
-            ],
-            "sellPrice": [209850, 173905]
-        },
-        "EquipmentHats71": {"sellPrice": [88586250, 86841750]},
-        "EquipmentShirts15": {
-            "recipe": [
-                [
-                    {"item": "EquipmentShirts14", "quantity": 2},
-                    {"item": "EquipmentShirts14", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [2862000, 1661400]
-        },
-        "EquipmentToolsHatchet7": {
-            "recipe": [
-                [
-                    {"item": "EquipmentToolsHatchet5", "quantity": 2},
-                    {"item": "EquipmentToolsHatchet5", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [5679850, 2966450]
-        },
-        "EquipmentSword4": {"sellPrice": [22431635, 21824765]},
-        "EquipmentHats68": {"sellPrice": [9556275, 7811775]},
-        "EquipmentHats70": {"sellPrice": [40496250, 38751750]},
+        "TrapBoxSet5": {"sellPrice": [17283, 11283]},
         "EquipmentShoes28": {"sellPrice": [50015350, 49647000]},
-        "EquipmentPants18": {
-            "recipe": [
-                [
-                    {"item": "EquipmentPants1", "quantity": 8},
-                    {"item": "EquipmentPants1", "quantity": 3}
-                ]
-            ],
-            "sellPrice": [2080, 1655]
-        },
-        "EquipmentHats21": {
-            "recipe": [
-                [
-                    {"item": "EquipmentHats17", "quantity": 4},
-                    {"item": "EquipmentHats17", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [6480, 5220]
-        },
-        "CatchingNet6": {
-            "recipe": [
-                [{"item": "CatchingNet5", "quantity": 2}, {"item": "CatchingNet5", "quantity": 1}]
-            ],
-            "sellPrice": [1171400, 828200]
-        },
-        "EquipmentTools7": {
-            "recipe": [
-                [
-                    {"item": "EquipmentTools6", "quantity": 2},
-                    {"item": "EquipmentTools6", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [8504460, 6061990]
-        },
-        "EquipmentBows5": {
-            "recipe": [
-                [{"item": "EquipmentBows3", "quantity": 2}, {"item": "EquipmentBows3", "quantity": 1}]
-            ],
-            "sellPrice": [33150, 31150]
-        },
-        "MaxCapBag5": {"sellPrice": [1061300, 975740]},
-        "EquipmentBows9": {"sellPrice": [1333970, 767970]},
-        "EquipmentPants4": {
-            "recipe": [
-                [
-                    {"item": "EquipmentPants2", "quantity": 5},
-                    {"item": "EquipmentPants2", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [59925, 57285]
-        },
-        "MaxCapBagFi3": {
-            "recipe": [
-                [{"item": "MaxCapBagFi1", "quantity": 5}, {"item": "MaxCapBagFi1", "quantity": 2}],
-                [{"item": "MaxCapBagFi2", "quantity": 2}, {"item": "MaxCapBagFi2", "quantity": 1}],
-                [{"item": "Fish2", "quantity": 1500}, {"item": "Fish2", "quantity": 2000}]
-            ],
-            "sellPrice": [29650, 28215]
-        },
-        "EquipmentHats16": {
-            "recipe": [
-                [
-                    {"item": "EquipmentHats17", "quantity": 2},
-                    {"item": "EquipmentHats17", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [1620, 1200]
-        },
-        "EquipmentPants9": {"sellPrice": [14400770, 9996275]},
-        "EquipmentShoes3": {"sellPrice": [91300, 90250]},
-        "MaxCapBagF4": {"sellPrice": [162770, 199870]},
-        "EquipmentToolsHatchet6": {"sellPrice": [11789850, 9076450]},
-        "EquipmentShirts33": {"sellPrice": [97741700, 93679100]},
-        "MaxCapBagF3": {
-            "recipe": [
-                [{"item": "MaxCapBag8", "quantity": 7}, {"item": "MaxCapBag8", "quantity": 2}],
-                [{"item": "FoodHealth7", "quantity": 250}, {"item": "FoodHealth7", "quantity": 400}],
-                [{"item": "FoodMining1", "quantity": 600}, {"item": "FoodMining1", "quantity": 700}],
-                [{"item": "FoodChoppin1", "quantity": 600}, {"item": "FoodChoppin1", "quantity": 700}]
-            ],
-            "sellPrice": [79650, 98200]
-        },
-        "MaxCapBagM4": {
-            "recipe": [
-                [{"item": "MaxCapBagM2", "quantity": 7}, {"item": "MaxCapBagM2", "quantity": 2}],
-                [{"item": "CraftMat7", "quantity": 1250}, {"item": "CraftMat7", "quantity": 1700}]
-            ],
-            "sellPrice": [59650, 70800]
-        },
-        "TestObj3": {
-            "recipe": [
-                [{"item": "TestObj7", "quantity": 2}, {"item": "TestObj7", "quantity": 1}]
-            ],
-            "sellPrice": [21650, 17275]
-        },
-        "MaxCapBagT6": {"sellPrice": [3253200, 3098880]},
-        "EquipmentShirts6": {"sellPrice": [90704218, 86641618]},
-        "EquipmentTools8": {"sellPrice": [32049170, 21102240]},
-        "EquipmentShoes29": {"sellPrice": [49716600, 49348250]},
-        "MaxCapBagM7": {
-            "recipe": [
-                [{"item": "MaxCapBagM6", "quantity": 2}, {"item": "MaxCapBagM6", "quantity": 1}]
-            ],
-            "sellPrice": [34133540, 29876370]
-        },
-        "FishingRod7": {
-            "recipe": [
-                [{"item": "FishingRod6", "quantity": 2}, {"item": "FishingRod6", "quantity": 1}]
-            ],
-            "sellPrice": [3516659, 1121859]
-        },
-        "EquipmentWands3": {
-            "recipe": [
-                [
-                    {"item": "EquipmentWands6", "quantity": 2},
-                    {"item": "EquipmentWands6", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [655200, 438850]
-        },
-        "EquipmentShirts13": {
-            "recipe": [
-                [
-                    {"item": "EquipmentShirts11", "quantity": 4},
-                    {"item": "EquipmentShirts11", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [136710, 131865]
-        },
-        "EquipmentHats53": {
-            "recipe": [
-                [
-                    {"item": "EquipmentHats19", "quantity": 2},
-                    {"item": "EquipmentHats19", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [1298000, 851500]
-        },
-        "EquipmentPendant10": {
-            "recipe": [
-                [{"item": "EquipmentBows1", "quantity": 2}, {"item": "EquipmentBows1", "quantity": 1}],
-                [
-                    {"item": "EquipmentWands1", "quantity": 2},
-                    {"item": "EquipmentWands1", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [1300, 1165]
-        },
-        "EquipmentHats26": {
-            "recipe": [
-                [
-                    {"item": "EquipmentHats16", "quantity": 5},
-                    {"item": "EquipmentHats16", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [128220, 121320]
-        },
-        "EquipmentShirts27": {
-            "recipe": [
-                [
-                    {"item": "EquipmentShirts15", "quantity": 2},
-                    {"item": "EquipmentShirts15", "quantity": 1}
-                ]
-            ],
-            "sellPrice": [40699200, 36636600]
-        },
-        "EquipmentShoes27": {"sellPrice": [49418950, 49050600]},
-        "WorshipSkull5": {
-            "recipe": [
-                [{"item": "WorshipSkull4", "quantity": 2}, {"item": "WorshipSkull4", "quantity": 1}]
-            ],
-            "sellPrice": [623450, 438550]
-        },
-        "EquipmentWands9": {"sellPrice": [5413950, 3887200]},
         "EquipmentHats3": {
             "recipe": [
                 [
@@ -578,30 +427,41 @@
             "sellPrice": [1440, 1020]
         },
         "EquipmentShoes20": {"sellPrice": [12800, 12275]},
-        "EquipmentHats59": {"sellPrice": [8861250, 7116750]},
-        "EquipmentPants24": {"sellPrice": [41495760, 37091265]},
-        "EquipmentBows8": {
-            "recipe": [
-                [{"item": "EquipmentBows7", "quantity": 3}, {"item": "EquipmentBows7", "quantity": 1}]
-            ],
-            "sellPrice": [733970, 167970]
-        },
-        "EquipmentToolsHatchet8": {"sellPrice": [20089850, 17376450]},
-        "EquipmentPants5": {
+        "EquipmentBows10": {"sellPrice": [1412000, 846000]},
+        "EquipmentToolsHatchet4": {
             "recipe": [
                 [
-                    {"item": "EquipmentPants3", "quantity": 6},
-                    {"item": "EquipmentPants3", "quantity": 1}
+                    {"item": "EquipmentToolsHatchet2", "quantity": 2},
+                    {"item": "EquipmentToolsHatchet2", "quantity": 1}
                 ]
             ],
-            "sellPrice": [716390, 661065]
+            "sellPrice": [692400, 511200]
         },
-        "FishingRod6": {
+        "FishingRod8": {"sellPrice": [4041659, 1646859]},
+        "EquipmentShoes16": {"sellPrice": [104650, 103600]},
+        "EquipmentShirts31": {"sellPrice": [71125100, 66962960]},
+        "WorshipSkull7": {"sellPrice": [42123450, 41938550]},
+        "MaxCapBagFi4": {
             "recipe": [
-                [{"item": "FishingRod5", "quantity": 2}, {"item": "FishingRod5", "quantity": 1}]
+                [{"item": "MaxCapBagFi3", "quantity": 3}, {"item": "Fish1", "quantity": 5000}],
+                [" ", {"item": "MaxCapBagFi3", "quantity": 1}]
             ],
-            "sellPrice": [1748200, 1101600]
+            "sellPrice": [133950, 93215]
         },
+        "EquipmentShoes31": {"sellPrice": [48719600, 48352300]},
+        "EquipmentTools6": {
+            "recipe": [
+                [
+                    {"item": "EquipmentTools5", "quantity": 2},
+                    {"item": "EquipmentTools5", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [2170980, 1899490]
+        },
+        "EquipmentShoes21": {"sellPrice": [456145, 272495]},
+        "EquipmentWands8": {"sellPrice": [4580950, 3054200]},
+        "EquipmentToolsHatchet6": {"sellPrice": [11789850, 9076450]},
+        "EquipmentShirts28": {"sellPrice": [40724200, 36661600]},
         "EquipmentShirts25": {
             "recipe": [
                 [
@@ -611,41 +471,73 @@
             ],
             "sellPrice": [682, 614]
         },
-        "TrapBoxSet7": {"sellPrice": [64117313, 64111313]},
-        "BadgeI3": {"sellPrice": [10157276, 8412776]},
-        "MaxCapBagB3": {
+        "TestObj3": {
             "recipe": [
-                [{"item": "MaxCapBagB1", "quantity": 5}, {"item": "MaxCapBagB1", "quantity": 2}],
-                [{"item": "MaxCapBagB2", "quantity": 2}, {"item": "MaxCapBagB2", "quantity": 1}],
-                [{"item": "Bug2", "quantity": 1600}, {"item": "Bug2", "quantity": 2100}]
+                [{"item": "TestObj7", "quantity": 2}, {"item": "TestObj7", "quantity": 1}]
             ],
-            "sellPrice": [24950, 23905]
+            "sellPrice": [21650, 17275]
         },
-        "EquipmentPants6": {
+        "EquipmentShirts29": {"sellPrice": [40724200, 36661600]},
+        "WorshipSkull6": {"sellPrice": [2123450, 1938550]},
+        "EquipmentBows9": {"sellPrice": [1333970, 767970]},
+        "MaxCapBagT3": {
+            "recipe": [
+                [{"item": "MaxCapBag7", "quantity": 5}, {"item": "MaxCapBag7", "quantity": 2}],
+                [{"item": "MaxCapBag9", "quantity": 2}, {"item": "MaxCapBag9", "quantity": 1}],
+                [{"item": "ForestTree", "quantity": 1800}, {"item": "ForestTree", "quantity": 2100}]
+            ],
+            "sellPrice": [26100, 24720]
+        },
+        "EquipmentPunching3": {
             "recipe": [
                 [
-                    {"item": "EquipmentPants5", "quantity": 2},
-                    {"item": "EquipmentPants5", "quantity": 1}
+                    {"item": "EquipmentPunching2", "quantity": 5},
+                    {"item": "EquipmentPunching2", "quantity": 3}
                 ]
             ],
-            "sellPrice": [3632780, 2861065]
+            "sellPrice": [47650, 46590]
         },
-        "MaxCapBagM6": {"sellPrice": [4301770, 4346370]},
-        "MaxCapBagT4": {
-            "recipe": [
-                [{"item": "PalmTree", "quantity": 6750}, {"item": "PalmTree", "quantity": 7500}],
-                [{"item": "MaxCapBagT3", "quantity": 3}, {"item": "MaxCapBagT3", "quantity": 1}]
-            ],
-            "sellPrice": [213300, 174720]
-        },
-        "EquipmentPants23": {
+        "EquipmentHats20": {
             "recipe": [
                 [
-                    {"item": "EquipmentPants18", "quantity": 3},
-                    {"item": "EquipmentPants18", "quantity": 2}
+                    {"item": "EquipmentHats17", "quantity": 2},
+                    {"item": "EquipmentHats17", "quantity": 1}
                 ]
             ],
-            "sellPrice": [7740, 4810]
+            "sellPrice": [1560, 1140]
+        },
+        "EquipmentPants21": {
+            "recipe": [
+                [
+                    {"item": "EquipmentPants6", "quantity": 2},
+                    {"item": "EquipmentPants6", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [14295760, 9891265]
+        },
+        "EquipmentShoes27": {"sellPrice": [49418950, 49050600]},
+        "FishingRod6": {
+            "recipe": [
+                [{"item": "FishingRod5", "quantity": 2}, {"item": "FishingRod5", "quantity": 1}]
+            ],
+            "sellPrice": [1748200, 1101600]
+        },
+        "EquipmentBows6": {
+            "recipe": [
+                [{"item": "EquipmentBows5", "quantity": 2}, {"item": "EquipmentBows5", "quantity": 1}]
+            ],
+            "sellPrice": [91770, 56620]
+        },
+        "EquipmentPants24": {"sellPrice": [41495760, 37091265]},
+        "EquipmentShirts32": {"sellPrice": [65699200, 61636600]},
+        "EquipmentWands6": {
+            "recipe": [
+                [
+                    {"item": "EquipmentWands5", "quantity": 2},
+                    {"item": "EquipmentWands5", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [170100, 123850]
         },
         "EquipmentPants22": {
             "recipe": [
@@ -656,46 +548,102 @@
             ],
             "sellPrice": [31475, 20460]
         },
-        "MaxCapBagFi4": {
-            "recipe": [
-                [{"item": "MaxCapBagFi3", "quantity": 3}, {"item": "Fish1", "quantity": 5000}],
-                [" ", {"item": "MaxCapBagFi3", "quantity": 1}]
-            ],
-            "sellPrice": [133950, 93215]
-        },
-        "FishingRod9": {"sellPrice": [4541659, 2146859]},
-        "WorshipSkull6": {"sellPrice": [2123450, 1938550]},
-        "MaxCapBagMi6": {"sellPrice": [3322600, 3151480]},
-        "EquipmentShoes19": {"sellPrice": [109000, 107950]},
-        "EquipmentWands6": {
+        "EquipmentHats61": {"sellPrice": [8887750, 7143250]},
+        "EquipmentShirts27": {
             "recipe": [
                 [
-                    {"item": "EquipmentWands5", "quantity": 2},
-                    {"item": "EquipmentWands5", "quantity": 1}
+                    {"item": "EquipmentShirts15", "quantity": 2},
+                    {"item": "EquipmentShirts15", "quantity": 1}
                 ]
             ],
-            "sellPrice": [170100, 123850]
+            "sellPrice": [40699200, 36636600]
         },
-        "EquipmentShirts2": {
+        "EquipmentHats41": {
+            "recipe": [
+                [{"item": "EquipmentHats3", "quantity": 5}, {"item": "EquipmentHats3", "quantity": 1}]
+            ],
+            "sellPrice": [47320, 41140]
+        },
+        "EquipmentHats59": {"sellPrice": [8861250, 7116750]},
+        "EquipmentHats16": {
             "recipe": [
                 [
-                    {"item": "EquipmentShirts1", "quantity": 2},
-                    {"item": "EquipmentShirts1", "quantity": 1}
+                    {"item": "EquipmentHats17", "quantity": 2},
+                    {"item": "EquipmentHats17", "quantity": 1}
                 ]
             ],
-            "sellPrice": [243, 209]
+            "sellPrice": [1620, 1200]
         },
-        "EquipmentTools6": {
+        "EquipmentShoes23": {"sellPrice": [9349106, 8981806]},
+        "EquipmentShoes5": {"sellPrice": [1206200, 1022550]},
+        "EquipmentPants4": {
             "recipe": [
                 [
-                    {"item": "EquipmentTools5", "quantity": 2},
-                    {"item": "EquipmentTools5", "quantity": 1}
+                    {"item": "EquipmentPants2", "quantity": 5},
+                    {"item": "EquipmentPants2", "quantity": 1}
                 ]
             ],
-            "sellPrice": [2170980, 1899490]
+            "sellPrice": [59925, 57285]
         },
-        "WorshipSkull7": {"sellPrice": [42123450, 41938550]},
-        "MaxCapBagF5": {"sellPrice": [2522540, 2596740]},
+        "WorshipSkull5": {
+            "recipe": [
+                [{"item": "WorshipSkull4", "quantity": 2}, {"item": "WorshipSkull4", "quantity": 1}]
+            ],
+            "sellPrice": [623450, 438550]
+        },
+        "EquipmentTools12": {"sellPrice": [157349170, 146402240]},
+        "EquipmentShirts13": {
+            "recipe": [
+                [
+                    {"item": "EquipmentShirts11", "quantity": 4},
+                    {"item": "EquipmentShirts11", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [136710, 131865]
+        },
+        "EquipmentPants5": {
+            "recipe": [
+                [
+                    {"item": "EquipmentPants3", "quantity": 6},
+                    {"item": "EquipmentPants3", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [716390, 661065]
+        },
+        "EquipmentHats26": {
+            "recipe": [
+                [
+                    {"item": "EquipmentHats16", "quantity": 5},
+                    {"item": "EquipmentHats16", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [128220, 121320]
+        },
+        "EquipmentRings16": {"sellPrice": [139439, 103229]},
+        "CatchingNet7": {
+            "recipe": [
+                [{"item": "CatchingNet6", "quantity": 2}, {"item": "CatchingNet6", "quantity": 1}]
+            ],
+            "sellPrice": [4343050, 2828450]
+        },
+        "EquipmentHats21": {
+            "recipe": [
+                [
+                    {"item": "EquipmentHats17", "quantity": 4},
+                    {"item": "EquipmentHats17", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [6480, 5220]
+        },
+        "EquipmentSword3": {"sellPrice": [17431635, 16824765]},
+        "MaxCapBagB6": {"sellPrice": [2879400, 2735620]},
+        "MaxCapBagM4": {
+            "recipe": [
+                [{"item": "MaxCapBagM2", "quantity": 7}, {"item": "MaxCapBagM2", "quantity": 2}],
+                [{"item": "CraftMat7", "quantity": 1250}, {"item": "CraftMat7", "quantity": 1700}]
+            ],
+            "sellPrice": [59650, 70800]
+        },
         "EquipmentWands5": {
             "recipe": [
                 [
@@ -705,59 +653,111 @@
             ],
             "sellPrice": [44300, 42350]
         },
-        "CatchingNet7": {
+        "EquipmentPants6": {
             "recipe": [
-                [{"item": "CatchingNet6", "quantity": 2}, {"item": "CatchingNet6", "quantity": 1}]
+                [
+                    {"item": "EquipmentPants5", "quantity": 2},
+                    {"item": "EquipmentPants5", "quantity": 1}
+                ]
             ],
-            "sellPrice": [4343050, 2828450]
+            "sellPrice": [3632780, 2861065]
         },
-        "EquipmentHats41": {
+        "EquipmentShirts33": {"sellPrice": [97741700, 93679100]},
+        "EquipmentShirts20": {
             "recipe": [
-                [{"item": "EquipmentHats3", "quantity": 5}, {"item": "EquipmentHats3", "quantity": 1}]
+                [
+                    {"item": "EquipmentShirts11", "quantity": 2},
+                    {"item": "EquipmentShirts11", "quantity": 1}
+                ]
             ],
-            "sellPrice": [47320, 41140]
+            "sellPrice": [8580, 6965]
         },
-        "EquipmentShirts31": {"sellPrice": [71125100, 66962960]},
-        "MaxCapBagB5": {"sellPrice": [739700, 667810]},
-        "WorshipSkull4": {
+        "EquipmentWands7": {
             "recipe": [
-                [{"item": "WorshipSkull3", "quantity": 2}, {"item": "WorshipSkull3", "quantity": 1}]
+                [
+                    {"item": "EquipmentWands3", "quantity": 3},
+                    {"item": "EquipmentWands3", "quantity": 1}
+                ]
             ],
-            "sellPrice": [171600, 158300]
+            "sellPrice": [2180950, 654200]
+        },
+        "EquipmentShoes19": {"sellPrice": [109000, 107950]},
+        "EquipmentTools8": {"sellPrice": [32049170, 21102240]},
+        "EquipmentShirts23": {
+            "recipe": [
+                [
+                    {"item": "EquipmentShirts10", "quantity": 4},
+                    {"item": "EquipmentShirts10", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [374080, 296080]
         },
         "CatchingNet8": {"sellPrice": [13518050, 12003450]},
-        "EquipmentPants15": {
+        "FishingRod7": {
+            "recipe": [
+                [{"item": "FishingRod6", "quantity": 2}, {"item": "FishingRod6", "quantity": 1}]
+            ],
+            "sellPrice": [3516659, 1121859]
+        },
+        "EquipmentSword4": {"sellPrice": [22431635, 21824765]},
+        "EquipmentShirts2": {
             "recipe": [
                 [
-                    {"item": "EquipmentPants1", "quantity": 10},
-                    {"item": "EquipmentPants1", "quantity": 3}
+                    {"item": "EquipmentShirts1", "quantity": 2},
+                    {"item": "EquipmentShirts1", "quantity": 1}
                 ]
             ],
-            "sellPrice": [9825, 9230]
+            "sellPrice": [243, 209]
         },
-        "EquipmentBows10": {"sellPrice": [1412000, 846000]},
-        "MaxCapBagT5": {"sellPrice": [1026600, 949440]},
-        "EquipmentPunching4": {
+        "EquipmentBows7": {
+            "recipe": [
+                [{"item": "EquipmentBows6", "quantity": 2}, {"item": "EquipmentBows6", "quantity": 1}]
+            ],
+            "sellPrice": [219540, 92620]
+        },
+        "EquipmentHats28": {
             "recipe": [
                 [
-                    {"item": "EquipmentPunching3", "quantity": 3},
-                    {"item": "EquipmentPunching3", "quantity": 2}
+                    {"item": "EquipmentHats17", "quantity": 3},
+                    {"item": "EquipmentHats17", "quantity": 1}
                 ]
             ],
-            "sellPrice": [15192950, 15143180]
+            "sellPrice": [36010, 35170]
         },
-        "EquipmentHats19": {
+        "MaxCapBagFi6": {"sellPrice": [1445880, 1282940]},
+        "EquipmentSword5": {"sellPrice": [23509635, 22902765]},
+        "EquipmentShoes15": {
             "recipe": [
                 [
-                    {"item": "EquipmentHats18", "quantity": 4},
-                    {"item": "EquipmentHats18", "quantity": 1}
+                    {"item": "EquipmentShoes1", "quantity": 2},
+                    {"item": "EquipmentShoes1", "quantity": 1}
                 ]
             ],
-            "sellPrice": [416500, 386500]
+            "sellPrice": [11050, 10525]
         },
-        "EquipmentShoes17": {"sellPrice": [111350, 110300]},
-        "EquipmentRings16": {"sellPrice": [139439, 103229]},
-        "EquipmentShoes23": {"sellPrice": [9349106, 8981806]},
-        "MaxCapBagM5": {"sellPrice": [121160, 143460]}
+        "EquipmentPants25": {"sellPrice": [95559760, 91155265]},
+        "MaxCapBagF4": {"sellPrice": [162770, 199870]},
+        "TrapBoxSet4": {
+            "recipe": [
+                [{"item": "TrapBoxSet3", "quantity": 2}, {"item": "TrapBoxSet3", "quantity": 1}]
+            ],
+            "sellPrice": [17015, 11015]
+        },
+        "FishingRod9": {"sellPrice": [4541659, 2146859]},
+        "CatchingNet6": {
+            "recipe": [
+                [{"item": "CatchingNet5", "quantity": 2}, {"item": "CatchingNet5", "quantity": 1}]
+            ],
+            "sellPrice": [1171400, 828200]
+        },
+        "EquipmentShirts22": {
+            "recipe": [
+                [
+                    {"item": "EquipmentShirts21", "quantity": 4},
+                    {"item": "EquipmentShirts21", "quantity": 1}
+                ]
+            ],
+            "sellPrice": [90880, 90280]
+        }
     }
 }

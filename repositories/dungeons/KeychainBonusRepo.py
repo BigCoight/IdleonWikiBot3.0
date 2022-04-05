@@ -1,3 +1,4 @@
+import string
 from typing import List
 
 from definitions.dungeons.KeychainBonus import KeychainBonus, KeychainBonuses
@@ -22,7 +23,7 @@ class KeychainBonusRepo(Repository[KeychainBonuses]):
 			if not cls.contains(item[0]):
 				cls.add(item[0], KeychainBonuses(bonuses = []))
 			cls.get(item[0]).bonuses.append(KeychainBonus(
-				bonus = replaceUnderscores(item[1]).title(),
+				bonus = string.capwords(replaceUnderscores(item[1])),
 				lvl1 = item[2],
 				lvl2 = item[3],
 				lvl3 = item[4]

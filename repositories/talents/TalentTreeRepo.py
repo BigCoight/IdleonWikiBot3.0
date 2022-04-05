@@ -1,4 +1,5 @@
 import re
+import string
 from typing import List
 
 from definitions.talents.TalentTree import TalentTree, Talent
@@ -44,7 +45,7 @@ class TalentTreeRepo(Repository[TalentTree]):
 					talentName, talentDesc = talentNames[skillI], talentDescriptions[skillI]
 					if talentName == "_" or talentDesc[0] == "_":
 						continue
-					fTalentName = replaceUnderscores(talentName).title()
+					fTalentName = string.capwords(replaceUnderscores(talentName))
 					talents.talents[fTalentName] = (Talent(
 						name = fTalentName,
 						description = replaceUnderscores(talentDesc[0]),
@@ -58,7 +59,7 @@ class TalentTreeRepo(Repository[TalentTree]):
 						skillIndex = skillI,
 						activeData = ActiveTalentRepo.get(fTalentName)
 					))
-				cls.add(replaceUnderscores(name).title(), talents)
+				cls.add(string.capwords(replaceUnderscores(name)), talents)
 
 		doTalents(classNames[:41], 0, 15)
 		doTalents(specialTalents, 615, 13)

@@ -1,3 +1,4 @@
+import string
 from typing import Union
 
 from pydantic import validator
@@ -35,4 +36,4 @@ class EquipItem(CommonItem):
 	def convertClass(cls, v: str):
 		if v in BagType:
 			return BagType(v)
-		return ClassType(v.title())
+		return ClassType(string.capwords(v))

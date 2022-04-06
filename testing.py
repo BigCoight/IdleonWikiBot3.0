@@ -11,7 +11,7 @@ newV = IdleonReader("152", True)
 oldV = IdleonReader("151", True)
 
 # SpecificItemRepo.compareVersions(oldV, newV)
-ColosseumRepo.initialise(newV.codeReader)
+ColosseumRepo.compareVersions(oldV, newV)
 
 # classes = {
 # 	"Beginner": ["Beginner"],

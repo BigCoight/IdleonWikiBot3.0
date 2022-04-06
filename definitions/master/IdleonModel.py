@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import difflib
 import enum
+from collections import Counter
 from typing import List, Dict, Union, Callable, Set
 
 from pydantic import BaseModel
@@ -120,6 +122,8 @@ class IdleonModel(BaseModel):
 		len1 = len(me)
 		len2 = len(other)
 
+
+		print([x for x in me if x not in other])
 		if len1 == len2:
 			for i in range(len1):
 				if me[i] == other[i]:
@@ -129,6 +133,7 @@ class IdleonModel(BaseModel):
 					continue
 				res.append((me[i], other[i]))
 		elif len1 < len2:
+
 			for i in range(len1):
 				if me[i] == other[i]:
 					continue

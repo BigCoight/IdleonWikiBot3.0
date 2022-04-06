@@ -4,10 +4,16 @@ from helpers.Constants import Constants
 from helpers.HelperFunctions import getFrom4dArray, getFromArrayArray
 from typing import List
 
+from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
 from repositories.master.Repository import Repository
 
 
 class ColosseumRepo(Repository[Colosseum]):
+
+	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		EnemyDetailsRepo.initialise(cls.codeReader, log)
+
 	@classmethod
 	def getCategory(cls) -> str:
 		return "Misc"
@@ -20,7 +26,6 @@ class ColosseumRepo(Repository[Colosseum]):
 	def generateRepo(cls) -> None:
 		cols = getFrom4dArray(cls.getSection(1))
 		info = getFromArrayArray(cls.getSection())
-		print(info)
 
 		for n, waves in enumerate(cols):
 			colWaves = []

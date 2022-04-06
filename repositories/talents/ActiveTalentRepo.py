@@ -1,4 +1,5 @@
 import re
+import string
 
 from definitions.talents.ActiveTalent import ActiveTalent
 from definitions.talents.TalentName import TalentName
@@ -29,7 +30,7 @@ class ActiveTalentRepo(Repository[ActiveTalent]):
 			activeDetails = re.findall(reData, activeDataSplit[i + 1])
 			for atr, val in activeDetails:
 				activeDict[atr] = formatStr(val, ['"'])
-			name = replaceUnderscores(activeDataSplit[i]).title()
+			name = string.capwords(replaceUnderscores(activeDataSplit[i]))
 			activeDict["name"] = name
 			cls.add(name, ActiveTalent.parse_obj(activeDict))
 			cls.addList(ActiveTalent.parse_obj(activeDict))

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import string
 from typing import Dict, Union, Callable
 
 from definitions.itemdef.initialtypes.EquipItem import EquipItem
@@ -48,13 +49,13 @@ class StatItem(BaseItem):
 	def getMisc1(cls, item: EquipItem):
 		if item.UQ1val == 0 and item.UQ1txt == "0":
 			return ""
-		return f"{item.UQ1val}{item.UQ1txt.title()}"
+		return f"{item.UQ1val}{string.capwords(item.UQ1txt)}"
 
 	@classmethod
 	def getMisc2(cls, item: EquipItem):
 		if not item.UQ2val == 0 and item.UQ2txt == "0":
 			return ""
-		return f"{item.UQ2val}{item.UQ2txt.title()}"
+		return f"{item.UQ2val}{string.capwords(item.UQ2txt)}"
 
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
 		base = super().intToWiki()

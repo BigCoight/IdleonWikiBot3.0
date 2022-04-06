@@ -1,4 +1,5 @@
 import re
+import string
 from typing import Dict, Type, List
 
 from definitions.itemdef.initialtypes.CommonItem import CommonItem
@@ -47,7 +48,7 @@ class ItemDetailRepo(Repository[CommonItem]):
 					for atr, val in data:
 						item[atr] = formatStr(val, replaceUnderscores = True)
 					item["internalID"] = itemName
-					item["Type"] = item["Type"].title()
+					item["Type"] = string.capwords(item["Type"])
 					cls.add(itemName, itemTypes[itemType].parse_obj(item))
 		cls.get("Quest5").displayName = "Golden Jam (Quest)"
 

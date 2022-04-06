@@ -42,6 +42,7 @@ class TrapBoxTime(IdleonModel):
 			res += f" Shiny({self.shinyX})"
 		return res
 
+
 class TrapBox(IdleonModel):
 	times: List[TrapBoxTime]
 

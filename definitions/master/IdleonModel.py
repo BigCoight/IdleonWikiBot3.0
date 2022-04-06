@@ -21,6 +21,9 @@ class IdleonModel(BaseModel):
 	def shouldCompare(self) -> bool:
 		return True
 
+	def compareKey(self) -> str:
+		return ""
+
 	def isFiller(self) -> bool:
 		return False
 
@@ -117,8 +120,11 @@ class IdleonModel(BaseModel):
 			return {}
 		return diffs
 
-	def _getDifList(self, me, other, ignored: Set[str] = set()) -> List[any]:
-		res = []
+	def _getDifList(self, me, other, ignored: Set[str] = set()) -> Dict[str, any]:
+		if isinstance(me[0], IdleonModel) and me[0].compareKey():
+			print(me[0].compareKey() )
+			return self._getDifListIdleon(me, other, ignored)
+		res = {}
 		len1 = len(me)
 		len2 = len(other)
 
@@ -127,32 +133,77 @@ class IdleonModel(BaseModel):
 				if me[i] == other[i]:
 					continue
 				if isinstance(me[i], IdleonModel) and me[i].shouldCompare():
-					res.append(me[i].compare(other[i], ignored))
+					res[str(i)] = (me[i].compare(other[i], ignored))
 					continue
-				res.append((me[i], other[i]))
+				res[str(i)] = (me[i], other[i])
 		elif len1 < len2:
 
 			for i in range(len1):
 				if me[i] == other[i]:
 					continue
 				if isinstance(me[i], IdleonModel) and me[i].shouldCompare():
-					res.append(me[i].compare(other[i], ignored))
+					res[str(i)] = (me[i].compare(other[i], ignored))
 					continue
-				res.append((me[i], other[i]))
-			for i in other[len1:len2]:
-				res.append((" ", i))
+				res[str(i)] = (me[i], other[i])
+			for n, i in enumerate(other[len1:len2]):
+				res[str(n)] = (" ", i)
 		else:
 			for i in range(len2):
 				if me[i] == other[i]:
 					continue
 				if isinstance(me[i], IdleonModel) and me[i].shouldCompare():
-					res.append(me[i].compare(other[i], ignored))
+					res[str(i)] = (me[i].compare(other[i], ignored))
 					continue
-				res.append((me[i], other[i]))
-			for i in other[len2:len1]:
-				res.append((i, " "))
-
+				res[str(i)] = (me[i], other[i])
+			for n, i in enumerate(other[len2:len1]):
+				res[str(n)] = (i, " ")
+		if not any(res.values()):
+			return {}
 		return res
+
+	def _getDifListIdleon(self, me, other, ignored: Set[str] = set()) -> Dict[str, any]:
+		meD = {x.compareKey(): {"model": x, "index": str(n)} for n, x in enumerate(me)}
+		otherD = {x.compareKey(): {"model": x, "index": str(n)} for n, x in enumerate(other)}
+
+		diffs = {}
+		keys1 = set(meD.keys())
+		keys2 = set(otherD.keys())
+		sameItems = keys1.intersection(keys2)
+		newItems = keys2 - keys1
+		for key in sameItems:
+			if meD[key]["model"] == otherD[key]["model"]:
+				continue
+			if key in ignored:
+				continue
+			if isinstance(meD[key]["model"], IdleonModel) and meD[key]["model"].shouldCompare():
+				diffs[meD[key]["index"]] = meD[key]["model"].compare(otherD[key]["model"], ignored)
+				continue
+			if isinstance(meD[key]["model"], list):
+				diffs[meD[key]["index"]] = self._getDifList(meD[key]["model"], otherD[key]["model"], ignored)
+				continue
+			if isinstance(meD[key]["model"], dict):
+				diffs[meD[key]["index"]] = self._getDifDict(meD[key]["model"], otherD[key]["model"], ignored)
+				continue
+			diffs[meD[key]["index"]] = (meD[key]["model"], otherD[key]["model"])
+
+		for key in newItems:
+			if isinstance(otherD[key]["model"], IdleonModel) and otherD[key]["model"].shouldCompare():
+				toAdd = otherD[key]["model"].toDict(ignored)
+				diffs[otherD[key]["index"]] = {}
+				for atr, val in toAdd.items():
+					if isinstance(val, list):
+						diffs[otherD[key]["index"]][atr] = []
+						for elem in val:
+							diffs[otherD[key]["index"]][atr].append((" ", elem))
+						continue
+					diffs[otherD[key]["index"]][atr] = (" ", val)
+				continue
+			diffs[otherD[key]["index"]] = (" ", otherD[key]["model"])
+
+		if not any(diffs.values()):
+			return {}
+		return diffs
+
 
 	def _getDifDict(self, me, other, ignored: Set[str] = set()) -> Dict[str, any]:
 		diffs = {}
@@ -189,4 +240,46 @@ class IdleonModel(BaseModel):
 					diffs[key][atr] = (" ", val)
 				continue
 			diffs[key] = (" ", other[key])
+
+		if not any(diffs.values()):
+			return {}
 		return diffs
+
+
+	'''
+		def _getDifList(self, me, other, ignored: Set[str] = set()) -> Dict[str, any]:
+		res = {}
+		len1 = len(me)
+		len2 = len(other)
+
+		if len1 == len2:
+			for i in range(len1):
+				if me[i] == other[i]:
+					continue
+				if isinstance(me[i], IdleonModel) and me[i].shouldCompare():
+					res[str(i)] = (me[i].compare(other[i], ignored))
+					continue
+				res[str(i)] = (me[i], other[i])
+		elif len1 < len2:
+
+			for i in range(len1):
+				if me[i] == other[i]:
+					continue
+				if isinstance(me[i], IdleonModel) and me[i].shouldCompare():
+					res[str(i)] = (me[i].compare(other[i], ignored))
+					continue
+				res[str(i)] = (me[i], other[i])
+			for n, i in enumerate(other[len1:len2]):
+				res[str(n)] = (" ", i)
+		else:
+			for i in range(len2):
+				if me[i] == other[i]:
+					continue
+				if isinstance(me[i], IdleonModel) and me[i].shouldCompare():
+					res[str(i)] = (me[i].compare(other[i], ignored))
+					continue
+				res[str(i)] = (me[i], other[i])
+			for n, i in enumerate(other[len2:len1]):
+				res[str(n)] = (i, " ")
+
+		return res'''

@@ -11,6 +11,9 @@ class Component(IdleonModel):
 	item: str
 	quantity: Integer
 
+	def compareKey(self) -> str:
+		return ""#self.item
+
 	def __str__(self) -> str:
 		res = ""
 		if self.quantity != -1:

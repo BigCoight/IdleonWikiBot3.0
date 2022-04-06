@@ -11,6 +11,21 @@
 |source=[[Smithing]]
 |notes= 
 }}
+{| class="wikitable mw-collapsible sortable" id="Trap Efficiency"
+|+Trap Data
+!Time
+!Qty Multi
+!XP Multi
+!Shiny Multi
+!Efficiency
+|-
+{{Traps/row||minutes=180|qty=5|xp=5}}
+{{Traps/row||minutes=3600|qty=50|xp=40}}
+{{Traps/row||minutes=7200|qty=100|xp=80|dayform=yes}}
+{{Traps/row||minutes=7200|qty=200|shiny=0|dayform=yes}}
+{{Traps/row||minutes=7200|qty=0|xp=200|dayform=yes}}
+
+|}
 {{ForgeSlot
 |anvtab=Anvil Tab 2
 |craftnum=69

@@ -1,0 +1,159 @@
+{
+    "new": {
+        "Astro": {
+            "name": "Astro",
+            "map": 152,
+            "node": 13,
+            "colMap": 164,
+            "keyCost": 6,
+            "infoX": 662,
+            "infoY": 380,
+            "bronzeScore": 125000,
+            "silverScore": 325000,
+            "goldScore": 650000,
+            "bronzeNode": 0,
+            "silverNode": 0,
+            "goldNode": 0,
+            "bronzeX": 300,
+            "silverX": 700,
+            "goldX": 950,
+            "waves": [
+                {"enemies": [{"enemy": "mushP", "qty": 8, "platform": 0, "baseScore": 665}]},
+                {"enemies": [{"enemy": "w4a2", "qty": 8, "platform": 0, "baseScore": 665}]},
+                {
+                    "enemies": [
+                        {"enemy": "mushP", "qty": 4, "platform": 0, "baseScore": 465},
+                        {"enemy": "w4a2", "qty": 8, "platform": 0, "baseScore": 965}
+                    ]
+                },
+                {"enemies": [{"enemy": "w4a3", "qty": 10, "platform": 0, "baseScore": 665}]},
+                {
+                    "enemies": [
+                        {"enemy": "w4a2", "qty": 10, "platform": 0, "baseScore": 665},
+                        {"enemy": "w4a3", "qty": 10, "platform": 0, "baseScore": 665},
+                        {"enemy": "demonP", "qty": 15, "platform": 0, "baseScore": 865}
+                    ]
+                },
+                {"enemies": [{"enemy": "w4b1", "qty": 12, "platform": 0, "baseScore": 665}]},
+                {
+                    "enemies": [
+                        {"enemy": "w4b2", "qty": 14, "platform": 0, "baseScore": 765},
+                        {"enemy": "w4b1", "qty": 8, "platform": 0, "baseScore": 465}
+                    ]
+                },
+                {"enemies": [{"enemy": "w4b3", "qty": 16, "platform": 0, "baseScore": 665}]},
+                {
+                    "enemies": [
+                        {"enemy": "w4b4", "qty": 12, "platform": 0, "baseScore": 665},
+                        {"enemy": "w4b2", "qty": 8, "platform": 0, "baseScore": 665},
+                        {"enemy": "w4b1", "qty": 6, "platform": 0, "baseScore": 665}
+                    ]
+                },
+                {"enemies": [{"enemy": "w4b5", "qty": 20, "platform": 0, "baseScore": 665}]},
+                {"enemies": [{"enemy": "w4c1", "qty": 10, "platform": 0, "baseScore": 665}]},
+                {"enemies": [{"enemy": "w4c2", "qty": 17, "platform": 0, "baseScore": 665}]},
+                {
+                    "enemies": [
+                        {"enemy": "w4c3", "qty": 13, "platform": 0, "baseScore": 755},
+                        {"enemy": "w4c1", "qty": 6, "platform": 0, "baseScore": 465}
+                    ]
+                },
+                {"enemies": [{"enemy": "w4c4", "qty": 8, "platform": 0, "baseScore": 665}]},
+                {
+                    "enemies": [
+                        {"enemy": "w4c3", "qty": 13, "platform": 0, "baseScore": 465},
+                        {"enemy": "w4c2", "qty": 6, "platform": 0, "baseScore": 865},
+                        {"enemy": "w4c4", "qty": 20, "platform": 0, "baseScore": 665},
+                        {"enemy": "mini4a", "qty": 1, "platform": 0, "baseScore": 700}
+                    ]
+                }
+            ]
+        }
+    },
+    "changes": {
+        "Chillsnap": {
+            "waves": {
+                "14": {
+                    "enemies": {
+                        "0": [
+                            {"enemy": "babaHour", "qty": 1, "platform": 3, "baseScore": 400},
+                            {"enemy": "eye", "qty": 4, "platform": 3, "baseScore": 330}
+                        ],
+                        "1": [
+                            {"enemy": "eye", "qty": 4, "platform": 3, "baseScore": 330},
+                            {"enemy": "eye", "qty": 4, "platform": 3, "baseScore": 470}
+                        ],
+                        "2": [
+                            {"enemy": "eye", "qty": 4, "platform": 3, "baseScore": 470},
+                            {"enemy": "speaker", "qty": 4, "platform": 3, "baseScore": 520}
+                        ],
+                        "3": [
+                            {"enemy": "speaker", "qty": 4, "platform": 3, "baseScore": 520},
+                            {"enemy": "speaker", "qty": 4, "platform": 3, "baseScore": 280}
+                        ],
+                        "4": [
+                            {"enemy": "speaker", "qty": 4, "platform": 3, "baseScore": 280},
+                            {"enemy": "glass", "qty": 5, "platform": 0, "baseScore": 200}
+                        ],
+                        "5": [
+                            {"enemy": "glass", "qty": 5, "platform": 0, "baseScore": 200},
+                            {"enemy": "glass", "qty": 5, "platform": 4, "baseScore": 400}
+                        ],
+                        "6": [
+                            {"enemy": "glass", "qty": 5, "platform": 4, "baseScore": 400},
+                            {"enemy": "mini3a", "qty": 1, "platform": 3, "baseScore": 400}
+                        ]
+                    }
+                }
+            }
+        },
+        "Dewdrop": {
+            "waves": {
+                "14": {
+                    "enemies": {
+                        "0": [
+                            {"enemy": "babayaga", "qty": 1, "platform": 4, "baseScore": 250},
+                            {"enemy": "branch", "qty": 12, "platform": 4, "baseScore": 150}
+                        ],
+                        "1": [
+                            {"enemy": "branch", "qty": 12, "platform": 4, "baseScore": 150},
+                            {"enemy": "plank", "qty": 10, "platform": 2, "baseScore": 480}
+                        ],
+                        "2": [
+                            {"enemy": "plank", "qty": 10, "platform": 2, "baseScore": 480},
+                            {"enemy": "mushR", "qty": 6, "platform": 1, "baseScore": 650}
+                        ],
+                        "3": [
+                            {"enemy": "mushR", "qty": 6, "platform": 1, "baseScore": 650},
+                            {"enemy": "babayaga", "qty": 1, "platform": 4, "baseScore": 250}
+                        ]
+                    }
+                }
+            }
+        },
+        "Sandstone": {
+            "waves": {
+                "14": {
+                    "enemies": {
+                        "0": [
+                            {"enemy": "babaHour", "qty": 1, "platform": 3, "baseScore": 250},
+                            {"enemy": "snailZ", "qty": 12, "platform": 0, "baseScore": 500}
+                        ],
+                        "1": [
+                            {"enemy": "snailZ", "qty": 12, "platform": 0, "baseScore": 500},
+                            {"enemy": "sandgiant", "qty": 7, "platform": 3, "baseScore": 150}
+                        ],
+                        "2": [
+                            {"enemy": "sandgiant", "qty": 7, "platform": 3, "baseScore": 150},
+                            {"enemy": "moonman", "qty": 5, "platform": 3, "baseScore": 400}
+                        ],
+                        "3": [
+                            {"enemy": "moonman", "qty": 5, "platform": 3, "baseScore": 400},
+                            {"enemy": "babaHour", "qty": 1, "platform": 3, "baseScore": 250}
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

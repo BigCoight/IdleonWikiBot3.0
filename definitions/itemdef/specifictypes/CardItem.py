@@ -40,8 +40,7 @@ class CardItem(BaseItem):
 			dropChance = CardDropChanceRepo.get(item.internalID).dropChance
 		else:
 			dropChance = 1
-			print(dispName, end = ', ')
-			print()
+			print(item.internalID, dispName, end = ', ')
 
 		return cls(
 			internalName = item.internalID,

@@ -1,11 +1,12 @@
 from helpers.CodeReader import IdleonReader
 from repositories.item.CardDropChanceRepo import CardDropChanceRepo
+from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.misc.CardSetRepo import CardSetRepo
 
 newV = IdleonReader("152", True)
 
 oldV = IdleonReader("151", True)
-CardSetRepo.initialise(newV.codeReader)
+SpecificItemRepo.initialise(newV.codeReader)
 # SpecificItemRepo.compareVersions(oldV, newV)
 
 

@@ -8,6 +8,7 @@ from repositories.master.Repository import Repository
 
 
 class CardSetRepo(Repository[CardSet]):
+
 	@classmethod
 	def getCategory(cls) -> str:
 		return "Misc"

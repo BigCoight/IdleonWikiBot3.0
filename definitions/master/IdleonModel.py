@@ -122,8 +122,6 @@ class IdleonModel(BaseModel):
 		len1 = len(me)
 		len2 = len(other)
 
-
-		print([x for x in me if x not in other])
 		if len1 == len2:
 			for i in range(len1):
 				if me[i] == other[i]:

@@ -1,17 +1,13 @@
-from builds.Build import Build, BuildTab, BuildTalent
 from helpers.CodeReader import IdleonReader
-from helpers.JsonEncoder import CompactJSONEncoder
-from repositories.enemies.BossDetailRepo import BossDetailRepo
-from repositories.misc.ColosseumRepo import ColosseumRepo
-from repositories.misc.world3.ShrineRepo import ShrineRepo
-from repositories.talents.TalentTreeRepo import TalentTreeRepo
+from repositories.item.CardDropChanceRepo import CardDropChanceRepo
+from repositories.misc.CardSetRepo import CardSetRepo
 
 newV = IdleonReader("152", True)
 
 oldV = IdleonReader("151", True)
-
+CardSetRepo.initialise(newV.codeReader)
 # SpecificItemRepo.compareVersions(oldV, newV)
-ColosseumRepo.compareVersions(oldV, newV)
+
 
 # classes = {
 # 	"Beginner": ["Beginner"],

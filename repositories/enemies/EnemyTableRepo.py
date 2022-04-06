@@ -33,9 +33,11 @@ class EnemyTableRepo(Repository[EnemyTable]):
 		droptables = re.split(reEnemies, droptableData)
 		for i in range(0, len(droptables) - 1, 2):
 			intName = droptables[i + 1]
-			drops = re.findall(reDrops, droptables[i])
+			rawDrops = re.findall(reDrops, droptables[i])
 
-			drops = [Drop.arrayToDropType(drop) for drop in drops]
+			drops = []
+			for drop in rawDrops:
+				drops.append(Drop.arrayToDropType(drop))
 			cls.add(intName, EnemyTable(drops = drops.copy()))
 		cls.insertMissing()
 

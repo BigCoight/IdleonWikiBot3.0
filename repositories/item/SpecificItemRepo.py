@@ -24,6 +24,7 @@ from helpers.CodeReader import IdleonReader
 from helpers.HelperFunctions import camelCaseToTitle
 from repositories.dungeons.KeychainBonusRepo import KeychainBonusRepo
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
+from repositories.item.CardDropChanceRepo import CardDropChanceRepo
 from repositories.item.CardRepo import CardRepo
 from repositories.item.FishingToolkitRepo import FishingToolkitRepo
 from repositories.item.ItemDetailRepo import ItemDetailRepo
@@ -54,6 +55,7 @@ class SpecificItemRepo(Repository[BaseItem]):
 		KeychainBonusRepo.initialise(cls.codeReader, log)
 		StorageOrderRepo.initialise(cls.codeReader, log)
 		StampDescriptionRepo.initialise(cls.codeReader, log)
+		CardDropChanceRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def generateRepo(cls) -> None:

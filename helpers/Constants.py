@@ -14,6 +14,10 @@ class Constants:
 	              "Choppin", "Mining", "Trapping", "Worship"]
 	toolSkills = {"aHatchet": "Choppin", "aFishingRod": "Fishing",
 	              "aBugNet": "Catching", "aPick": "Mining", "aTrap": "Trapping", "aSkull": "Worship"}
+
+	cardNames = ["Blunder Hills", "Yum Yum Desert", "Easy Resources",
+	             "Medium Resources", "Frostbite Tundra", "Hard Resources", "Hyperion Nebula", "Dungeons", "Bosses",
+	             "Event"]
 	pouches = {
 		"Mining": ["Ores", "Bars", "Barrels"],
 		"Chopping": ["Logs", "Leaves"],

@@ -5,13 +5,16 @@ from typing import Optional, Dict, Union, Callable
 from definitions.itemdef.CardData import CardData
 from definitions.itemdef.initialtypes.CommonItem import CommonItem
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
+from helpers.CustomTypes import Numeric
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
+from repositories.item.CardDropChanceRepo import CardDropChanceRepo
 from repositories.item.CardRepo import CardRepo
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 
 
 class CardItem(BaseItem):
 	cardData: Optional[CardData] = None
+	dropChance: Numeric
 
 	@classmethod
 	def fromItemDetails(cls, item: CommonItem) -> BaseItem:
@@ -33,6 +36,13 @@ class CardItem(BaseItem):
 
 		cardData = CardRepo.get(name)
 
+		if CardDropChanceRepo.contains(item.internalID):
+			dropChance = CardDropChanceRepo.get(item.internalID).dropChance
+		else:
+			dropChance = 1
+			print(dispName, end = ', ')
+			print()
+
 		return cls(
 			internalName = item.internalID,
 			displayName = dispName,
@@ -40,6 +50,7 @@ class CardItem(BaseItem):
 			typeGen = item.typeGen,
 			Type = item.Type,
 			cardData = cardData,
+			dropChance= dropChance
 		)
 
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
@@ -49,4 +60,4 @@ class CardItem(BaseItem):
 		return res
 
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
-		return {"title": "displayName"}
+		return {"title": "displayName", "dropchance": "dropChance"}

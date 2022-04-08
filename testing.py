@@ -8,8 +8,9 @@ from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.item.TrapBoxRepo import TrapBoxRepo
 from repositories.misc.CardSetRepo import CardSetRepo
 from repositories.misc.ColosseumRepo import ColosseumRepo
+from repositories.misc.RandoListRepo import RandoListRepo
 
 newV = IdleonReader("153", True)
 
 oldV = IdleonReader("152", True)
-RecipeRepo.compareVersions(oldV, newV)
+RandoListRepo.initialise(newV.codeReader)

@@ -73,19 +73,11 @@
     },
     {
         "effect": "+{% Catching EXP gain",
-        "x1": 10,
+        "x1": 50,
         "x2": 100,
         "func": "decay",
         "type": "%",
         "lvlUpText": "+{% Catch EXP"
-    },
-    {
-        "effect": "+{% Cash from Mobs",
-        "x1": 10,
-        "x2": 100,
-        "func": "decay",
-        "type": "%",
-        "lvlUpText": "+{% Cash"
     },
     {
         "effect": "+{% Cash from Mobs",
@@ -96,8 +88,16 @@
         "lvlUpText": "+{% Cash"
     },
     {
+        "effect": "+{% Cash from Mobs",
+        "x1": 30,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Cash"
+    },
+    {
         "effect": "+{% Class EXP gain",
-        "x1": 16,
+        "x1": 20,
         "x2": 100,
         "func": "decay",
         "type": "%",
@@ -112,35 +112,35 @@
         "lvlUpText": "+{% Chance"
     },
     {
-        "effect": "+{% Trapping Effic.",
+        "effect": "+{% Trapping EXP",
         "x1": 50,
         "x2": 100,
         "func": "decay",
         "type": "%",
-        "lvlUpText": "+{% Efficiency"
+        "lvlUpText": "+{% Trap EXP"
     },
     {
-        "effect": "+{% Worship Effic.",
-        "x1": 50,
-        "x2": 100,
-        "func": "decay",
-        "type": "%",
-        "lvlUpText": "+{% Efficiency"
+        "effect": "+{ Starting TD Pts",
+        "x1": 1,
+        "x2": 0,
+        "func": "add",
+        "type": "",
+        "lvlUpText": "+{ Worship Pts"
     },
     {
         "effect": "+{ Tab 1 Talent Pt",
         "x1": 1,
         "x2": 10,
         "func": "intervalAdd",
-        "type": "%",
+        "type": "",
         "lvlUpText": "+{ Talent Pt"
     },
     {
-        "effect": "+{% Total Damage",
-        "x1": 10,
-        "x2": 100,
-        "func": "decay",
-        "type": "%",
-        "lvlUpText": "+{% Dmg"
+        "effect": "+{ Weapon Power",
+        "x1": 0.07,
+        "x2": 0,
+        "func": "add",
+        "type": "",
+        "lvlUpText": "+{ Wep POW"
     }
 ]

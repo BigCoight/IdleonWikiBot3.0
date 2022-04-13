@@ -1,5 +1,5 @@
 {
-    "0": {
+    "Bonus 0": {
         "effect": "+{ Base Damage",
         "x1": 1,
         "x2": 0,
@@ -7,7 +7,7 @@
         "type": "",
         "lvlUpText": "+{ Dmg"
     },
-    "1": {
+    "Bonus 1": {
         "effect": "+{ Base Defence",
         "x1": 0.2,
         "x2": 0,
@@ -15,7 +15,7 @@
         "type": "",
         "lvlUpText": "+{ Def"
     },
-    "2": {
+    "Bonus 2": {
         "effect": "+{% Total Accuracy",
         "x1": 60,
         "x2": 100,
@@ -23,7 +23,7 @@
         "type": "",
         "lvlUpText": "+{% Acc"
     },
-    "3": {
+    "Bonus 3": {
         "effect": "+{% Mining EXP gain",
         "x1": 60,
         "x2": 100,
@@ -31,7 +31,7 @@
         "type": "%",
         "lvlUpText": "+{% Min EXP"
     },
-    "4": {
+    "Bonus 4": {
         "effect": "+{% Fishing EXP gain",
         "x1": 60,
         "x2": 100,
@@ -39,7 +39,7 @@
         "type": "%",
         "lvlUpText": "+{% Fish EXP"
     },
-    "5": {
+    "Bonus 5": {
         "effect": "+{% Sample Size",
         "x1": 4,
         "x2": 100,
@@ -47,7 +47,7 @@
         "type": "%",
         "lvlUpText": "+{% Size"
     },
-    "6": {
+    "Bonus 6": {
         "effect": "+{% AFK Gains Rate",
         "x1": 4,
         "x2": 100,
@@ -55,7 +55,7 @@
         "type": "%",
         "lvlUpText": "+{% Rate"
     },
-    "7": {
+    "Bonus 7": {
         "effect": "+{ Cap for all Liquids",
         "x1": 25,
         "x2": 100,
@@ -63,7 +63,7 @@
         "type": "%",
         "lvlUpText": "+{ Cap"
     },
-    "8": {
+    "Bonus 8": {
         "effect": "+{% Multikill per Tier",
         "x1": 10,
         "x2": 100,
@@ -71,23 +71,15 @@
         "type": "%",
         "lvlUpText": "+{% Multikill"
     },
-    "9": {
+    "Bonus 9": {
         "effect": "+{% Catching EXP gain",
-        "x1": 10,
+        "x1": 50,
         "x2": 100,
         "func": "decay",
         "type": "%",
         "lvlUpText": "+{% Catch EXP"
     },
-    "10": {
-        "effect": "+{% Cash from Mobs",
-        "x1": 10,
-        "x2": 100,
-        "func": "decay",
-        "type": "%",
-        "lvlUpText": "+{% Cash"
-    },
-    "11": {
+    "Bonus 10": {
         "effect": "+{% Cash from Mobs",
         "x1": 20,
         "x2": 100,
@@ -95,15 +87,23 @@
         "type": "%",
         "lvlUpText": "+{% Cash"
     },
-    "12": {
+    "Bonus 11": {
+        "effect": "+{% Cash from Mobs",
+        "x1": 30,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Cash"
+    },
+    "Bonus 12": {
         "effect": "+{% Class EXP gain",
-        "x1": 16,
+        "x1": 20,
         "x2": 100,
         "func": "decay",
         "type": "%",
         "lvlUpText": "+{% EXP"
     },
-    "13": {
+    "Bonus 13": {
         "effect": "+{% Shiny Chance",
         "x1": 100,
         "x2": 100,
@@ -111,36 +111,36 @@
         "type": "%",
         "lvlUpText": "+{% Chance"
     },
-    "14": {
-        "effect": "+{% Trapping Effic.",
+    "Bonus 14": {
+        "effect": "+{% Trapping EXP",
         "x1": 50,
         "x2": 100,
         "func": "decay",
         "type": "%",
-        "lvlUpText": "+{% Efficiency"
+        "lvlUpText": "+{% Trap EXP"
     },
-    "15": {
-        "effect": "+{% Worship Effic.",
-        "x1": 50,
-        "x2": 100,
-        "func": "decay",
-        "type": "%",
-        "lvlUpText": "+{% Efficiency"
+    "Bonus 15": {
+        "effect": "+{ Starting TD Pts",
+        "x1": 1,
+        "x2": 0,
+        "func": "add",
+        "type": "",
+        "lvlUpText": "+{ Worship Pts"
     },
-    "16": {
+    "Bonus 16": {
         "effect": "+{ Tab 1 Talent Pt",
         "x1": 1,
         "x2": 10,
         "func": "intervalAdd",
-        "type": "%",
+        "type": "",
         "lvlUpText": "+{ Talent Pt"
     },
-    "17": {
-        "effect": "+{% Total Damage",
-        "x1": 10,
-        "x2": 100,
-        "func": "decay",
-        "type": "%",
-        "lvlUpText": "+{% Dmg"
+    "Bonus 17": {
+        "effect": "+{ Weapon Power",
+        "x1": 0.07,
+        "x2": 0,
+        "func": "add",
+        "type": "",
+        "lvlUpText": "+{ Wep POW"
     }
 }

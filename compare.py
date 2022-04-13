@@ -1,4 +1,5 @@
 from helpers.CodeReader import IdleonReader
+from repositories.arcade.ArcadeBonusRepo import ArcadeBonusRepo
 from repositories.collections.EnemyRepo import EnemyRepo
 from repositories.dungeons.DungEnemyRepo import DungEnemyRepo
 from repositories.dungeons.DungItemRepo import DungItemRepo
@@ -9,13 +10,16 @@ from repositories.item.CardRepo import CardRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.RefineryCostRepo import RefineryCostRepo
 from repositories.item.SpecificItemRepo import SpecificItemRepo
+from repositories.item.TrapBoxRepo import TrapBoxRepo
 from repositories.item.VendorRepo import VendorRepo
 from repositories.misc.AchievementRepo import AchievementRepo
+from repositories.misc.CardSetRepo import CardSetRepo
 from repositories.misc.ConstellationsRepo import ConstellationsRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
 from repositories.misc.world2.BubbleRepo import BubbleRepo
+from repositories.misc.world2.FishPoolRepo import FishPoolRepo
 from repositories.misc.world2.PostOfficeRepo import PostOfficeRepo
 from repositories.misc.world2.PostOfficeUpgradesRepo import PostOfficeUpgradesRepo
 from repositories.misc.world3.BuildingRepo import BuildingRepo
@@ -34,8 +38,8 @@ from repositories.misc.world4.TerritoryFightRepo import TerritoryFightRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("152", True)
-oldV = IdleonReader("151", True)
+newV = IdleonReader("153", True)
+oldV = IdleonReader("152", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)
@@ -74,4 +78,7 @@ PetUpgradeRepo.compareVersions(oldV, newV)
 
 TerritoryFightRepo.compareVersions(oldV, newV)
 BossDetailRepo.compareVersions(oldV, newV)
-CardRepo.compareVersions(oldV, newV)
+CardSetRepo.compareVersions(oldV, newV)
+FishPoolRepo.compareVersions(oldV, newV)
+TrapBoxRepo.compareVersions(oldV, newV)
+ArcadeBonusRepo.compareVersions(oldV, newV)

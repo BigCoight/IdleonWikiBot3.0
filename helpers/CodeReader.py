@@ -138,5 +138,7 @@ class IdleonReader:
 		self.codeReader.addSection("ColosseumWaves = function ()", "ColWaves")
 		self.codeReader.addSection("FishPools = function ()", "FishPools")
 		self.codeReader.addSection("CardSets = function ()", "CardSets")
+		self.codeReader.addSection("TrapBoxInfo = function ()", "TrapBox")
+		self.codeReader.addSection("RANDOlist = function ()", "RandoList")
 
 		self.codeReader.readCode()

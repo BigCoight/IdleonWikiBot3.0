@@ -12,9 +12,13 @@ from repositories.master.Repository import Repository
 
 class RecipeRepo(Repository[Recipe]):
 	"""
-	Depends on: ItemDetailRepo, TaskUnlocksRepo, DropTableRepo, EnemyDetailsRepo, EnemyTableRepo
+	Depends on: ItemDetailRepo
 	"""
 	anvilItemNames: List[List[str]]
+
+	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		ItemDetailRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def getCategory(cls) -> str:

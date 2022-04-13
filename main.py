@@ -33,6 +33,7 @@ from repositories.item.sources.CustomSourceRepo import CustomSourceRepo
 from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
 from repositories.item.sources.SourceRepo import SourceRepo
 from repositories.misc.AchievementRepo import AchievementRepo
+from repositories.misc.CardSetRepo import CardSetRepo
 from repositories.misc.ConstellationsRepo import ConstellationsRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
@@ -45,6 +46,7 @@ from repositories.misc.TaskShopDescRepo import TaskShopDescRepo
 from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
 from repositories.misc.world2.BubbleRepo import BubbleRepo
+from repositories.misc.world2.FishPoolRepo import FishPoolRepo
 from repositories.misc.world2.PostOfficeRepo import PostOfficeRepo
 from repositories.misc.world2.PostOfficeUpgradesRepo import PostOfficeUpgradesRepo
 from repositories.misc.world3.BuildingRepo import BuildingRepo
@@ -148,5 +150,5 @@ PetGeneRepo.initialise(codeReader)
 PetStatRepo.initialise(codeReader)
 PetUpgradeRepo.initialise(codeReader)
 TerritoryFightRepo.initialise(codeReader)
-
-EnemyRepo.exportWikiMult()
+FishPoolRepo.initialise(codeReader)
+CardSetRepo.initialise(codeReader)

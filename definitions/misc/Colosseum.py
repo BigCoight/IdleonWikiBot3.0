@@ -17,8 +17,12 @@ class ColEnemy(IdleonModel):
 	def shouldCompare(self) -> bool:
 		return False
 
+	def compareKey(self) -> str:
+		return self.enemy
+
 	def __str__(self) -> str:
 		return f"{self.qty}x {EnemyDetailsRepo.get(self.enemy).Name} ({self.baseScore})"
+
 
 class ColWave(IdleonModel):
 	enemies: List[ColEnemy]

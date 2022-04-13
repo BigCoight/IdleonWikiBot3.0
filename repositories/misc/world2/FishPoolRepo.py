@@ -30,8 +30,8 @@ class FishPoolRepo(Repository[FishPool]):
 			for i in range(4):
 				toAdd = FishPool(
 					fish = rawData[0][i],
-					x1 = rawData[1][i],
-					x2 = rawData[2][i],
+					expGiven = rawData[1][i],
+					damageDelt = rawData[2][i],
 					efficiency = rawData[3][i] if rawData[3][i] else 0,
 					cardDrop = rawData[4][i],
 					cardChance = rawData[5][i],

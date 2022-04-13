@@ -19,6 +19,9 @@ class Drop(IdleonModel):
 	chance: float
 	questLink: str
 
+	def compareKey(self) -> str:
+		return self.item
+
 	def hasDropTableExtra(self) -> bool:
 		return True
 

@@ -17,6 +17,7 @@ from definitions.itemdef.specifictypes.StampItem import StampItem
 from definitions.itemdef.specifictypes.StatueItem import StatueItem
 from definitions.itemdef.specifictypes.StoneItem import StoneItem
 from definitions.itemdef.specifictypes.ToolItem import ToolItem
+from definitions.itemdef.specifictypes.TrapBoxItem import TrapBoxItem
 from definitions.itemdef.specifictypes.WeaponItem import WeaponItem
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
 from definitions.itemdef.specifictypes.master.DescItem import DescItem
@@ -31,6 +32,7 @@ from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.StampDescriptionRepo import StampDescriptionRepo
 from repositories.item.StatueRepo import StatueRepo
+from repositories.item.TrapBoxRepo import TrapBoxRepo
 from repositories.master.Repository import Repository
 from repositories.misc.StorageOrderRepo import StorageOrderRepo
 
@@ -56,6 +58,7 @@ class SpecificItemRepo(Repository[BaseItem]):
 		StorageOrderRepo.initialise(cls.codeReader, log)
 		StampDescriptionRepo.initialise(cls.codeReader, log)
 		CardDropChanceRepo.initialise(cls.codeReader, log)
+		TrapBoxRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def generateRepo(cls) -> None:
@@ -73,8 +76,10 @@ class SpecificItemRepo(Repository[BaseItem]):
 			elif item.typeGen == TypeGen.aWeapon:
 				cls.add(name, WeaponItem.fromItemDetails(item))
 			elif item.typeGen in {TypeGen.aHatchet, TypeGen.aFishingRod, TypeGen.aBugNet, TypeGen.aPick,
-			                      TypeGen.aTrap, TypeGen.aDNAgun}:
+			                      TypeGen.aDNAgun}:
 				cls.add(name, ToolItem.fromItemDetails(item))
+			elif item.typeGen == TypeGen.aTrap:
+				cls.add(name, TrapBoxItem.fromItemDetails(item))
 			elif item.typeGen == TypeGen.aSkull:
 				cls.add(name, SkullItem.fromItemDetails(item))
 			elif item.typeGen in {TypeGen.aObolCircle, TypeGen.aObolSquare, TypeGen.aObolSparkle, TypeGen.aObolHexagon}:

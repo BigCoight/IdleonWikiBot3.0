@@ -42849,7 +42849,7 @@
                 "category": "Yum Yum Desert",
                 "perTier": 10,
                 "effect": "+{% Total Drop Rate",
-                "bonus": 3,
+                "bonus": 2,
                 "order": 2
             },
             "dropChance": 0
@@ -44536,7 +44536,7 @@
                 "category": "Frostbite Tundra",
                 "perTier": 17,
                 "effect": "+{% Total Drop Rate",
-                "bonus": 3,
+                "bonus": 3.5,
                 "order": 11
             },
             "dropChance": 0.0001
@@ -48456,9 +48456,7 @@
             "description": "It's the last will and testament of some penguin monster. Just pretend you signed it, ol' Yondergreen seems a little blind and probably wont notice. "
         },
         "sources": {
-            "sources": [
-                {"wikiName": "[[Penguin]]", "txtName": "Penguin"}
-            ],
+            "sources": [],
             "recipeFrom": [],
             "questAss": [
                 {
@@ -48471,9 +48469,7 @@
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
-        "detDrops": [
-            {"source": "penguin", "quantity": 1, "chance": 0.02}
-        ]
+        "detDrops": null
     },
     "Quest63": {
         "item": {
@@ -50493,6 +50489,35 @@
                 ]
             }
         },
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "EquipmentHats72": {
+        "item": {
+            "internalName": "EquipmentHats72",
+            "displayName": "Nondescript Game Show Host Hair",
+            "sellPrice": 1,
+            "typeGen": "aHelmet",
+            "Type": "Helmet",
+            "lvReqToCraft": 5,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 100,
+            "STR": 25,
+            "AGI": 40,
+            "WIS": 0,
+            "LUK": 50,
+            "Defence": 0,
+            "miscUp1": "100% Family",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 8,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
         "vendors": null,
         "anvilProduction": null,
         "detDrops": null

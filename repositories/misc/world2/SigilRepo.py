@@ -1,4 +1,5 @@
 import re
+import string
 from typing import List
 
 from definitions.common.LiquidComponent import LiquidComponent
@@ -22,6 +23,7 @@ class SigilRepo(Repository[Sigil]):
 	def generateRepo(cls) -> None:
 		sigils = getFromSplitArray(cls.getSection())
 		for sigil in sigils:
+			sigil[0] = string.capwords(sigil[0])
 			toAdd = Sigil.fromList(sigil)
 			cls.add(sigil[0], toAdd)
 			cls.addList(toAdd)

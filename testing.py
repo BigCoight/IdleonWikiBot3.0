@@ -9,8 +9,9 @@ from repositories.item.TrapBoxRepo import TrapBoxRepo
 from repositories.misc.CardSetRepo import CardSetRepo
 from repositories.misc.ColosseumRepo import ColosseumRepo
 from repositories.misc.RandoListRepo import RandoListRepo
+from repositories.misc.world2.SigilRepo import SigilRepo
 
-newV = IdleonReader("153", True)
+newV = IdleonReader("154alphab", True)
 
 oldV = IdleonReader("152", True)
-RandoListRepo.initialise(newV.codeReader)
+SigilRepo.compareVersions(oldV, newV)

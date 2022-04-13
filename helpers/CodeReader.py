@@ -140,5 +140,6 @@ class IdleonReader:
 		self.codeReader.addSection("CardSets = function ()", "CardSets")
 		self.codeReader.addSection("TrapBoxInfo = function ()", "TrapBox")
 		self.codeReader.addSection("RANDOlist = function ()", "RandoList")
+		self.codeReader.addSection("SigilDesc = function ()", "SigilDesc")
 
 		self.codeReader.readCode()

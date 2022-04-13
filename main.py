@@ -49,6 +49,7 @@ from repositories.misc.world2.BubbleRepo import BubbleRepo
 from repositories.misc.world2.FishPoolRepo import FishPoolRepo
 from repositories.misc.world2.PostOfficeRepo import PostOfficeRepo
 from repositories.misc.world2.PostOfficeUpgradesRepo import PostOfficeUpgradesRepo
+from repositories.misc.world2.SigilRepo import SigilRepo
 from repositories.misc.world3.BuildingRepo import BuildingRepo
 from repositories.misc.world3.PrayerRepo import PrayerRepo
 from repositories.misc.world3.SaltLickRepo import SaltLickRepo
@@ -152,3 +153,4 @@ PetUpgradeRepo.initialise(codeReader)
 TerritoryFightRepo.initialise(codeReader)
 FishPoolRepo.initialise(codeReader)
 CardSetRepo.initialise(codeReader)
+SigilRepo.initialise(codeReader)

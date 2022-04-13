@@ -22,6 +22,7 @@ from repositories.misc.world2.BubbleRepo import BubbleRepo
 from repositories.misc.world2.FishPoolRepo import FishPoolRepo
 from repositories.misc.world2.PostOfficeRepo import PostOfficeRepo
 from repositories.misc.world2.PostOfficeUpgradesRepo import PostOfficeUpgradesRepo
+from repositories.misc.world2.SigilRepo import SigilRepo
 from repositories.misc.world3.BuildingRepo import BuildingRepo
 from repositories.misc.world3.PrayerRepo import PrayerRepo
 from repositories.misc.world3.ShrineRepo import ShrineRepo
@@ -38,8 +39,8 @@ from repositories.misc.world4.TerritoryFightRepo import TerritoryFightRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("153", True)
-oldV = IdleonReader("152", True)
+newV = IdleonReader("154alphab", True)
+oldV = IdleonReader("153", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)
@@ -82,3 +83,4 @@ CardSetRepo.compareVersions(oldV, newV)
 FishPoolRepo.compareVersions(oldV, newV)
 TrapBoxRepo.compareVersions(oldV, newV)
 ArcadeBonusRepo.compareVersions(oldV, newV)
+SigilRepo.compareVersions(oldV, newV)

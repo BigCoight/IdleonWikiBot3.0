@@ -1,1 +1,52 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "Nebula Neddy": {
+            "quests": {
+                "Task Requirement Affirmative": {
+                    "Type": "ItemsAndSpaceRequired",
+                    "DialogueText": "Yes I am the taskmaster. You can do my tasks once you prove you're here to stay. <br> QUEST:Gather some monster parts to show you're ready to take on the World 4 tasks!",
+                    "Name": "Task Requirement Affirmative",
+                    "ConsumeItems": true,
+                    "InventorySpacesNeeded": 1,
+                    "Rewards": [
+                        {"item": "Ladle", "quantity": 48},
+                        {"item": "PetEgg", "quantity": 12},
+                        {"item": "PureWater2", "quantity": 15}
+                    ],
+                    "Difficulty": 4,
+                    "ItemReq": [
+                        {"item": "GalaxyA1", "quantity": 200},
+                        {"item": "GalaxyA2", "quantity": 400},
+                        {"item": "GalaxyA3", "quantity": 750}
+                    ]
+                }
+            }
+        }
+    },
+    "changes": {
+        "Egggulyte": {
+            "quests": {
+                "Egg Shaped Lootboxes!": {
+                    "DialogueText": [
+                        "Dang it eggy! You're <br> . <br> messing up our Dialogue! <br> QUEST:Defeat monsters and find an egg capsule! Don't worry they won't take them back from You... if they did they wouldn't have hid them in the first place!",
+                        "Dang it eggy! You're <br> . <br> messing up our Dialogue! <br> QUEST:Defeat monsters and find some egg capsules! Open them for rewards!"
+                    ],
+                    "Rewards": {"1": [" ", {"item": "Quest43", "quantity": 3}]},
+                    "CustomArray": {
+                        "0": [
+                            {"desc": "Find Egg Capsule:", "finalV": 5, "type": "GreaterEqual", "startV": 0},
+                            {"desc": "Open Egg Capsule:", "finalV": 5, "type": "GreaterEqual", "startV": 0}
+                        ]
+                    }
+                },
+                "I've Got a Golden Tickegg!": {
+                    "DialogueText": [
+                        "There you go! Anyway <br> . <br> we also hid a golden <br> . <br> oh I know this one!!! A golden egg in one of the capsules! We want you to find it and open it! <br> QUEST:Open Egg Capsules until you find a Golden Egg! Previously found ones don't count!",
+                        "Whatever. Anyway <br> . <br> we also hid a golden <br> . <br> oh I know this one!!! A golden egg in one of the capsules! We want you to find it and open it! <br> QUEST:Open Egg Capsules until you find a Golden Egg! Previously found ones don't count!"
+                    ],
+                    "Rewards": {"1": [" ", {"item": "Quest43", "quantity": 5}]}
+                }
+            }
+        }
+    }
+}

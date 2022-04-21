@@ -17,4 +17,8 @@ class Bubble(IdleonModel):
 	description: str
 	requirements: List[Union[Component, LiquidComponent]]
 
+	def sortKey(self) -> str:
+		return self.cauldron
+
+
 	_removeUnderscores = validator("description", allow_reuse = True)(replaceUnderscores)

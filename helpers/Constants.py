@@ -13,7 +13,7 @@ class Constants:
 	skillNames = ["Catching", "Fishing",
 	              "Choppin", "Mining", "Trapping", "Worship"]
 	toolSkills = {"aHatchet": "Choppin", "aFishingRod": "Fishing",
-	              "aBugNet": "Catching", "aPick": "Mining", "aTrap": "Trapping", "aSkull": "Worship"}
+	              "aBugNet": "Catching", "aPick": "Mining", "aTrap": "Trapping", "aSkull": "Worship", "aDNAgun": "Laboratory"}
 
 	cardNames = ["Blunder Hills", "Yum Yum Desert", "Easy Resources",
 	             "Medium Resources", "Frostbite Tundra", "Hard Resources", "Hyperion Nebula", "Dungeons", "Bosses",

@@ -153,7 +153,8 @@ class NpcRepo(Repository[Npc]):
 
 	@classmethod
 	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
-		return super().compareVersions(v1, v2, ignored = {"head", "QuestName", "CustomType", "note", "NextIndex"})
+		return super().compareVersions(v1, v2, ignored = {"head", "QuestName", "CustomType", "note", "NextIndex",
+		                                                  "dialogue", "NoSpaceIndex"})
 
 	@classmethod
 	def _ignore(cls, name: str, data: Npc) -> bool:

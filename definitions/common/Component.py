@@ -12,7 +12,7 @@ class Component(IdleonModel):
 	quantity: Integer
 
 	def compareKey(self) -> str:
-		return ""#self.item
+		return self.item
 
 	def __str__(self) -> str:
 		res = ""

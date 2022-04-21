@@ -111,7 +111,8 @@ class SpecificItemRepo(Repository[BaseItem]):
 				cls.add(name, KeychainItem.fromItemDetails(item))
 			else:
 				havntDone.add(item.typeGen.value)
-		print(havntDone)
+		if cls.log:
+			print(havntDone)
 
 	@classmethod
 	def getDisplayName(cls, name: str) -> str:

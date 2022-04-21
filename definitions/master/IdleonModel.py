@@ -22,9 +22,29 @@ class IdleonModel(BaseModel):
 		return True
 
 	def compareKey(self) -> str:
+		"""
+
+		Returns: in lists of items what key to create compare dicts from
+		Examples: eg item name in rewards from quests
+
+		"""
+		return ""
+
+	def sortKey(self) -> str:
+		"""
+
+		Returns: the element to sort the changelogs by
+		Examples:sort items by type, bubbles by cauldron
+
+		"""
 		return ""
 
 	def isFiller(self) -> bool:
+		"""
+		Returns: True if the element was in the code but was filler
+		Examples: item name being FILLER
+
+		"""
 		return False
 
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
@@ -122,7 +142,6 @@ class IdleonModel(BaseModel):
 
 	def _getDifList(self, me, other, ignored: Set[str] = set()) -> Dict[str, any]:
 		if isinstance(me[0], IdleonModel) and me[0].compareKey():
-			print(me[0].compareKey() )
 			return self._getDifListIdleon(me, other, ignored)
 		res = {}
 		len1 = len(me)

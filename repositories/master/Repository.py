@@ -37,6 +37,7 @@ class Repository(Generic[T], ABC):
 		if cls.__dict__.get("codeReader"):
 			if cls.codeReader.version == codeReader.version:
 				return
+		cls.log = log
 		cls.repository = {}
 		cls.listRepository = []
 		cls.codeReader = codeReader
@@ -186,26 +187,56 @@ class Repository(Generic[T], ABC):
 
 	@classmethod
 	def _writeChangesWiki(cls, differences):
+
+		def _writeChanges(diffs: Dict[str, any]) -> str:
+			output = ""
+			for item, change in diffs.items():
+				output += head(cls.getWikiName(item))
+				output += cls._writeChangelog(change).rstrip('\n')
+				output += "\n|}\n\n"
+			return output
+
+		def _writeChangesSorted(diffs: Dict[str, any]) -> str:
+			changesOrdered = {}
+			for key in diffs.keys():
+				cType = cls.get(key).sortKey()
+				if cType not in changesOrdered:
+					changesOrdered[cType] = []
+				changesOrdered[cType].append(key)
+			output = ""
+			for typ, keys in changesOrdered.items():
+				output += head(typ)
+				for change in keys:
+					output += bold(cls.getWikiName(change))
+					output += cls._writeChangelog(diffs[change], 1)
+				output += "|}\n\n"
+			return output
+
+		def writeChanges(diffs: Dict[str, any]) -> str:
+			if not diffs:
+				return ""
+			firstKey = list(diffs.keys())[0]
+			if cls.get(firstKey).sortKey():
+				return _writeChangesSorted(diffs)
+			return _writeChanges(diffs)
+
 		def head(v: str) -> str:
 			return "{{patchnote/head|changed=" + v + "}}\n"
+
+		def bold(v: str) -> str:
+			return "{{patchnote/bold|" + f"{v}|0" + "}}\n"
 
 		res = ""
 		new = differences["new"]
 		changes = differences["changes"]
 		res += "<div class=\"GenericFlex\"><div class=\"GenericChild\">\n"
 		res += "==Changes==\n"
-		for item, change in changes.items():
-			res += head(cls.getWikiName(item))
-			res += cls._writeChangelog(change).rstrip('\n')
-			res += "\n|}\n\n"
+		res += writeChanges(changes)
 
 		res += "</div><div class=\"GenericChild\">\n"
 		res += "==New==\n"
 
-		for item, change in new.items():
-			res += head(cls.getWikiName(item))
-			res += cls._writeChangelog(change).rstrip('\n')
-			res += "\n|}\n\n"
+		res += writeChanges(new)
 
 		res += "</div></div>"
 

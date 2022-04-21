@@ -444,39 +444,39 @@
         "world": "Frostbite Tundra"
     },
     {
-        "name": "",
+        "name": "Prepaid Debit Card",
         "bonus": "",
-        "increment": 5,
+        "increment": 0.1,
         "rarity": "Rare",
-        "desc": "",
-        "lvlText": "Next Lv: +{ max HP.",
-        "baseValue": 10,
-        "maxLevel": 5,
-        "achieve": "Unobtainable",
+        "desc": "Auto purchases 4 of each equipment, free of charge. Also multiplies current cash by {x",
+        "lvlText": "Next Lv: {x Money Multiplier",
+        "baseValue": 1.5,
+        "maxLevel": 4,
+        "achieve": "Michelin Ranked",
         "world": "Hyperion Nebula"
     },
     {
-        "name": "",
-        "bonus": "",
-        "increment": 5,
+        "name": "Super Soda",
+        "bonus": "atkManaRegen",
+        "increment": 0.2,
         "rarity": "Rare",
-        "desc": "",
-        "lvlText": "Next Lv: +{ max HP.",
-        "baseValue": 10,
+        "desc": "Basic attack hits regen {% mana. Also comes with 1 sugar rush, so you can pop pop pop!",
+        "lvlText": "Next Lv: +{% mana regen.",
+        "baseValue": 5,
         "maxLevel": 5,
-        "achieve": "Unobtainable",
+        "achieve": "Milky Wayfarer",
         "world": "Hyperion Nebula"
     },
     {
-        "name": "",
+        "name": "3 of a Kind",
         "bonus": "",
-        "increment": 5,
+        "increment": 0.6,
         "rarity": "Rare",
-        "desc": "",
-        "lvlText": "Next Lv: +{ max HP.",
-        "baseValue": 10,
+        "desc": "For every RNG item you have 3 or more of, get +1 more of that item!",
+        "lvlText": "Next Lv: +{% chance for +2 more",
+        "baseValue": 5,
         "maxLevel": 5,
-        "achieve": "Unobtainable",
+        "achieve": "Good Plate",
         "world": "Hyperion Nebula"
     },
     {
@@ -528,15 +528,15 @@
         "world": "Yum Yum Desert"
     },
     {
-        "name": "",
+        "name": "Coin Flip",
         "bonus": "",
         "increment": 5,
         "rarity": "Epic",
-        "desc": "",
-        "lvlText": "Next Lv: +{ max HP.",
+        "desc": "Heads you get an Orange RNG item if you have none, tails you get 4 grey RNG items.",
+        "lvlText": "Next Lv: +{ flippy wippy boo.",
         "baseValue": 10,
         "maxLevel": 5,
-        "achieve": "Unobtainable",
+        "achieve": "Mutant Massacrer",
         "world": "Hyperion Nebula"
     },
     {
@@ -564,15 +564,15 @@
         "world": "Frostbite Tundra"
     },
     {
-        "name": "",
-        "bonus": "",
-        "increment": 5,
+        "name": "Triad of Manafine",
+        "bonus": "manaGodU",
+        "increment": 0.1,
         "rarity": "Legendary",
-        "desc": "",
-        "lvlText": "Next Lv: +{ max HP.",
-        "baseValue": 10,
-        "maxLevel": 5,
-        "achieve": "Unobtainable",
+        "desc": "+100% Max Mana, +120% Atk cooldown spd. +{% Mana regen every hit, but no more passive regen.",
+        "lvlText": "Next Lv: +{% mana regen per hit.",
+        "baseValue": 2,
+        "maxLevel": 10,
+        "achieve": "Matrix Wickermen",
         "world": "Hyperion Nebula"
     }
 ]

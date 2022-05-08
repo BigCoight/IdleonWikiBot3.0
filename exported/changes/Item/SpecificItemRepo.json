@@ -1,19 +1,96 @@
 {
     "new": {
-        "EquipmentCape2": {
-            "displayName": "Easter Egg Backpack",
+        "CardsZ15": {
+            "displayName": "Gilded Efaunt Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "Z15",
+                "perTier": 11,
+                "effect": "+{ Star Talent Pts (Passive)",
+                "bonus": 15,
+                "order": 11
+            },
+            "dropChance": 0.02
+        },
+        "EquipmentCape5": {
+            "displayName": "Blighted Chizoar Shard Cape",
+            "sellPrice": 1,
+            "Type": "Cape",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 3,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "8% Total Damage",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "CardsZ16": {
+            "displayName": "Blighted Chizoar Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "Z16",
+                "perTier": 12,
+                "effect": "+{% All Stat",
+                "bonus": 1.5,
+                "order": 15
+            },
+            "dropChance": 0.02
+        },
+        "CardsZ14": {
+            "displayName": "Radiant Amarok Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "Z14",
+                "perTier": 10,
+                "effect": "+{ Weapon Power",
+                "bonus": 3,
+                "order": 6
+            },
+            "dropChance": 0.02
+        },
+        "EquipmentCape3": {
+            "displayName": "Radiant Amarok Backstabber",
             "sellPrice": 1,
             "Type": "Cape",
             "lvReqToCraft": 55,
             "lvReqToEquip": 1,
             "Class": "All",
             "Weapon_Power": 0,
-            "STR": 5,
-            "AGI": 5,
-            "WIS": 5,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
             "LUK": 0,
-            "Defence": 10,
-            "miscUp1": "10% Total Damage",
+            "Defence": 50,
+            "miscUp1": "10% Defence",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentCape4": {
+            "displayName": "Gilded Efaunt Dislodged Tusks",
+            "sellPrice": 1,
+            "Type": "Cape",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 15,
+            "AGI": 15,
+            "WIS": 15,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "10% Skill Efficiency",
             "miscUp2": "00",
             "Upgrade_Slots_Left": 0,
             "Skill": "",
@@ -21,83 +98,38 @@
         }
     },
     "changes": {
-        "InvStorage35": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        },
-        "InvStorage33": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        },
-        "InvStorage39": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        },
-        "InvStorage34": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        },
-        "InvStorage36": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        },
-        "InvStorage42": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        },
-        "InvStorage37": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        },
-        "InvStorage38": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        },
-        "InvStorage31": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        },
-        "InvStorage40": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        },
-        "Quest44": {
-            "description": [
-                "Hold down to summon a mini boss or a green mushroom. Mostly the second thing. ",
-                "Hold down to summon a mini boss or a green mushroom. It's a 50 50 shot which one you get! "
-            ]
-        },
-        "InvStorage41": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        },
-        "InvStorage32": {
-            "description": [
-                "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
-                "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once."
-            ]
-        }
+        "CardsZ12": {"cardData": {"order": [10, 12]}},
+        "CardsF17": {"cardData": {"order": [18, 19]}},
+        "CardsF15": {"cardData": {"order": [16, 14]}},
+        "CardsZ9": {"cardData": {"order": [12, 14]}},
+        "CardsZ6": {"cardData": {"order": [7, 8]}},
+        "CardsF5": {"cardData": {"order": [6, 16]}},
+        "CardsF18": {"cardData": {"order": [19, 20]}},
+        "CardsF16": {"cardData": {"order": [17, 2]}},
+        "CardsF10": {"cardData": {"order": [3, 23]}},
+        "CardsF21": {"cardData": {"order": [22, 8]}},
+        "CardsF4": {"cardData": {"order": [5, 15]}},
+        "CardsF7": {"cardData": {"order": [8, 18]}},
+        "CardsF23": {"cardData": {"order": [24, 10]}},
+        "CardsF2": {"cardData": {"order": [10, 4]}},
+        "CardsF20": {"cardData": {"order": [21, 7]}},
+        "CardsF12": {"cardData": {"order": [14, 6]}},
+        "CardsZ11": {"cardData": {"order": [15, 18]}},
+        "CardsZ3": {"cardData": {"order": [8, 9]}},
+        "CardsZ5": {"cardData": {"order": [6, 7]}},
+        "CardsZ8": {"cardData": {"order": [11, 13]}, "dropChance": [0.01, 0.007]},
+        "CardsZ2": {"dropChance": [0.02, 0.04]},
+        "CardsF14": {"cardData": {"order": [15, 13]}},
+        "CardsF22": {"cardData": {"order": [23, 9]}},
+        "CardsF13": {"cardData": {"order": [13, 5]}},
+        "CardsZ13": {"cardData": {"order": [13, 16]}},
+        "CardsZ10": {"cardData": {"order": [14, 17]}},
+        "CardsF11": {"cardData": {"order": [4, 24]}},
+        "CardsZ7": {"cardData": {"order": [9, 10]}},
+        "EquipmentWeapons2": {"Speed": [5, 9]},
+        "CardsF19": {"cardData": {"order": [20, 21]}},
+        "CardsF3": {"cardData": {"order": [2, 22]}},
+        "CardsD8": {"cardData": {"order": [9, 3]}},
+        "CardsF6": {"cardData": {"order": [7, 17]}}
     }
 }

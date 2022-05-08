@@ -160,7 +160,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Well catch you later when you're higher level! <br> What? Oh did I say level 60 before? I meant 160... thousand. Yea come back at Lv. 160000 and I'll probably have a new quest by then. <br> Return at Class Lv. 160000",
-                "NextIndex": -1,
+                "NextIndex": 15,
                 "Name": ""
             }
         ]
@@ -189,7 +189,7 @@
                 "Rewards": [{"type": "Class", "amount": 1337}, {"coins": 1337}],
                 "QuestName": "Secretkeeper1",
                 "Difficulty": 1,
-                "note": "",
+                "note": " ",
                 "ItemReq": [{"item": "Secretstone", "quantity": 1}]
             }
         },
@@ -246,7 +246,7 @@
         },
         "quests": {},
         "dialogue": [
-            {"Type": "NoQuest", "DialogueText": "Wut wuuuut!", "NextIndex": -1, "Name": ""}
+            {"Type": "NoQuest", "DialogueText": "Wut wuuuut!", "NextIndex": 0, "Name": ""}
         ]
     },
     "Unmade Character": {
@@ -326,7 +326,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "So is that a deal? Type a name in and create me if you agree!",
-                "NextIndex": -1,
+                "NextIndex": 11,
                 "Name": ""
             }
         ]
@@ -515,7 +515,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Hahaha I sure do love bobbin' up and down!! It's a flower thing you wouldn't get it!!",
-                "NextIndex": -1,
+                "NextIndex": 15,
                 "Name": ""
             }
         ]
@@ -570,7 +570,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Aha! Now all shall bear witness to ultimate perfection! Please do return with any other statues you may come across on your journey so that they too may bask in my greatness!",
-                "NextIndex": -1,
+                "NextIndex": 4,
                 "Name": ""
             }
         ]
@@ -619,7 +619,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "MROWW! 'The cat jumps off in fear of the pickle. What a silly cat getting scared of a little pickl-- OH MY GOD THE PICKLE HAS EYEBALLS AAAAAH KILL IT KILL IT!!!'",
-                "NextIndex": -1,
+                "NextIndex": 9999,
                 "Name": ""
             }
         ]
@@ -789,7 +789,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Hahahaha did I getcha again my boy? Ah don't take it too hard you don't need to pretend that I didn't fool ya we all know I did #",
-                "NextIndex": -1,
+                "NextIndex": 14,
                 "Name": ""
             }
         ]
@@ -817,7 +817,7 @@
                 "NoSpaceIndex": 7,
                 "Rewards": [
                     {"item": "CraftMat2", "quantity": 1},
-                    {"coins": 80},
+                    {"coins": 100},
                     {"type": "Class", "amount": 10}
                 ],
                 "QuestName": "Scripticus2",
@@ -836,6 +836,7 @@
                 "NoSpaceIndex": 10,
                 "Rewards": [
                     {"item": "EquipmentHats7", "quantity": 1},
+                    {"coins": 150},
                     {"type": "Class", "amount": 15}
                 ],
                 "QuestName": "Scripticus3",
@@ -874,7 +875,11 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 18,
-                "Rewards": [{"coins": 125}, {"type": "Class", "amount": 20}],
+                "Rewards": [
+                    {"item": "Timecandy1", "quantity": 2},
+                    {"coins": 280},
+                    {"type": "Class", "amount": 20}
+                ],
                 "QuestName": "Scripticus5",
                 "Difficulty": 1,
                 "note": "",
@@ -939,11 +944,11 @@
                 "note": "There are '''TWO''' {{CraftReq|Golden Jam}} items. You want the {{CraftReq|Golden Jam (Quest)}} item for this.",
                 "ItemReq": [{"item": "Quest5", "quantity": 1}]
             },
-            "Seeking Foreign Aid": {
+            "Stiltzcho, the Leaf Scout": {
                 "Type": "ItemsAndSpaceRequired",
-                "DialogueText": "Anyway he's our best bet at finding out who took the Town Gem! We can figure out a plan once we have more info. <br> QUEST:Get a scouting report from the Jungle resident.",
+                "DialogueText": "Anyway he's our best bet at finding out who stole the Town Gem! <br> QUEST:Get a scouting report from Stiltzcho the Leaf NPC in the slime map after beans!",
                 "NextIndex": 35,
-                "Name": "Seeking Foreign Aid",
+                "Name": "Stiltzcho, the Leaf Scout",
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 34,
@@ -954,12 +959,12 @@
                 ],
                 "QuestName": "Scripticus9",
                 "Difficulty": 5,
-                "note": "[[Stiltzcho]] rewards you with the report upon completing his first 3 quests.",
+                "note": " ",
                 "ItemReq": [{"item": "Quest6", "quantity": 1}]
             },
             "What Lies at the Heart of the Forest": {
                 "Type": "Custom",
-                "DialogueText": "But you've come a long way since that epic fall from gamer grace so why don't you go check it out for yourself? Come back when you know more about the place!",
+                "DialogueText": "But you've come a long way since that epic fall from gamer grace so why don't you go check it out for yourself? Come back when you know more about the place! <br> MAIN QUEST:Reach the Forest Camp past the Carrotmen and Glublins!",
                 "NextIndex": 41,
                 "Name": "What Lies at the Heart of the Forest",
                 "ConsumeItems": false,
@@ -978,7 +983,7 @@
             },
             "The Bigger they are, the Bigger they Fall!": {
                 "Type": "Custom",
-                "DialogueText": "Well it's all up to you now! Go defeat that thief and take back our Town Crystal even though you'll basically topple the Forest Village's entire Tourist-Based economy in the process!",
+                "DialogueText": "Well it's all up to you now! Go defeat that thief and take back our Town Crystal! <br> MAIN QUEST: Defeat Amarok the wolf golem who awaits you in the map to the right of the tiki villagers.",
                 "NextIndex": 44,
                 "Name": "The Bigger they are, the Bigger they Fall!",
                 "ConsumeItems": false,
@@ -1018,7 +1023,7 @@
             },
             "Can't somebody else do it?": {
                 "Type": "Custom",
-                "DialogueText": "No real gamer does everything for themself! Go create a 2nd character to gather items for you! QUEST:Reach Lv 5 then create a 2nd character at the main menu! You can treat them as a laborer to gather materials for you!",
+                "DialogueText": "No real gamer does everything for themself! Go create a 2nd character! QUEST:Reach Lv 5 then create a 2nd character! Use them to gather materials for you while you play on your main character!!",
                 "NextIndex": 54,
                 "Name": "Can't somebody else do it?",
                 "ConsumeItems": false,
@@ -1027,14 +1032,14 @@
                 "Rewards": [
                     {"item": "StoneA1", "quantity": 1},
                     {"item": "Timecandy1", "quantity": 2},
-                    {"type": "Class", "amount": 130}
+                    {"item": "PremiumGem", "quantity": 150}
                 ],
                 "QuestName": "Scripticus13",
                 "Difficulty": 2,
                 "note": "",
                 "CustomType": "Scripticus13",
                 "CustomArray": [
-                    {"desc": "2nd Character Created:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                    {"desc": "Swap to 2nd Character:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
                     {"desc": "Storage Chest Used:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
                 ]
             }
@@ -1114,7 +1119,7 @@
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "There we go you're looking like a real street fighter now... or like some sort of 'grass-platform' fighter at least!",
+                "DialogueText": "Once you equip that Red Headband you'll be looking like a real street fighter! Or like some sort of 'grass-platform' fighter at least!",
                 "NextIndex": 13,
                 "Name": ""
             },
@@ -1240,9 +1245,9 @@
             },
             {
                 "Type": "ItemsAndSpaceRequired",
-                "DialogueText": "Anyway he's our best bet at finding out who took the Town Gem! We can figure out a plan once we have more info. <br> QUEST:Get a scouting report from the Jungle resident.",
+                "DialogueText": "Anyway he's our best bet at finding out who stole the Town Gem! <br> QUEST:Get a scouting report from Stiltzcho the Leaf NPC in the slime map after beans!",
                 "NextIndex": 35,
-                "Name": "Seeking Foreign Aid"
+                "Name": "Stiltzcho, the Leaf Scout"
             },
             {
                 "Type": "NoQuest",
@@ -1271,7 +1276,7 @@
             },
             {
                 "Type": "Custom",
-                "DialogueText": "But you've come a long way since that epic fall from gamer grace so why don't you go check it out for yourself? Come back when you know more about the place!",
+                "DialogueText": "But you've come a long way since that epic fall from gamer grace so why don't you go check it out for yourself? Come back when you know more about the place! <br> MAIN QUEST:Reach the Forest Camp past the Carrotmen and Glublins!",
                 "NextIndex": 41,
                 "Name": "What Lies at the Heart of the Forest"
             },
@@ -1289,7 +1294,7 @@
             },
             {
                 "Type": "Custom",
-                "DialogueText": "Well it's all up to you now! Go defeat that thief and take back our Town Crystal even though you'll basically topple the Forest Village's entire Tourist-Based economy in the process!",
+                "DialogueText": "Well it's all up to you now! Go defeat that thief and take back our Town Crystal! <br> MAIN QUEST: Defeat Amarok the wolf golem who awaits you in the map to the right of the tiki villagers.",
                 "NextIndex": 44,
                 "Name": "The Bigger they are, the Bigger they Fall!"
             },
@@ -1349,7 +1354,7 @@
             },
             {
                 "Type": "Custom",
-                "DialogueText": "No real gamer does everything for themself! Go create a 2nd character to gather items for you! QUEST:Reach Lv 5 then create a 2nd character at the main menu! You can treat them as a laborer to gather materials for you!",
+                "DialogueText": "No real gamer does everything for themself! Go create a 2nd character! QUEST:Reach Lv 5 then create a 2nd character! Use them to gather materials for you while you play on your main character!!",
                 "NextIndex": 54,
                 "Name": "Can't somebody else do it?"
             },
@@ -1368,7 +1373,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Wow I never thought someone would care enough about the first world to do everything! It feels like just yesterday I found you unconscious at 1 hp and took some of your money... to think I'm now giving you the highest honor in the land! You're one heckin' sick gamer wear this trophy with pride!",
-                "NextIndex": -1,
+                "NextIndex": 55,
                 "Name": ""
             }
         ]
@@ -1542,7 +1547,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "You can have my token early if it means you'll get off my back for a while but do return when I am prepared for my final plan!",
-                "NextIndex": -1,
+                "NextIndex": 15,
                 "Name": ""
             }
         ]
@@ -1562,7 +1567,7 @@
         "quests": {
             "Learning to Swing": {
                 "Type": "ItemsAndSpaceRequired",
-                "DialogueText": "Go mine some ores and read this while you do. Mining Efficiency is your main stat here. It is boosted by your STR stat as well as your Mining Power which comes from pickaxes and other equipment! <br> QUEST:Mine 5 Copper Ore",
+                "DialogueText": "Go mine some ores and read this while you do. Mining Efficiency is your main stat here. It is boosted by your STR stat as well as your Mining Power which comes from pickaxes and other equipment! <br> QUEST:Mine 2 Copper Ore",
                 "NextIndex": 5,
                 "Name": "Learning to Swing",
                 "ConsumeItems": false,
@@ -1572,7 +1577,7 @@
                 "QuestName": "Glumlee1",
                 "Difficulty": 1,
                 "note": "",
-                "ItemReq": [{"item": "Copper", "quantity": 5}]
+                "ItemReq": [{"item": "Copper", "quantity": 2}]
             },
             "Learning to Smelt": {
                 "Type": "ItemsAndSpaceRequired",
@@ -1605,7 +1610,7 @@
                 "Difficulty": 1,
                 "note": "",
                 "CustomType": "Glumlee3",
-                "CustomArray": [{"desc": "Upgrades Bought:", "finalV": 3, "type": "GreaterEqual", "startV": 0}]
+                "CustomArray": [{"desc": "Upgrades Bought:", "finalV": 2, "type": "GreaterEqual", "startV": 0}]
             },
             "The Impossible Task": {
                 "Type": "ItemsAndSpaceRequired",
@@ -1660,7 +1665,7 @@
             },
             {
                 "Type": "ItemsAndSpaceRequired",
-                "DialogueText": "Go mine some ores and read this while you do. Mining Efficiency is your main stat here. It is boosted by your STR stat as well as your Mining Power which comes from pickaxes and other equipment! <br> QUEST:Mine 5 Copper Ore",
+                "DialogueText": "Go mine some ores and read this while you do. Mining Efficiency is your main stat here. It is boosted by your STR stat as well as your Mining Power which comes from pickaxes and other equipment! <br> QUEST:Mine 2 Copper Ore",
                 "NextIndex": 5,
                 "Name": "Learning to Swing"
             },
@@ -1794,7 +1799,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Uh thanks... anyway I'll have quests later on that increase that Talent's max level above just 40 but those will be added in later.",
-                "NextIndex": -1,
+                "NextIndex": 26,
                 "Name": ""
             }
         ]
@@ -1824,7 +1829,7 @@
                 "QuestName": "Picnic Stowaway1",
                 "Difficulty": 2,
                 "note": " ",
-                "ItemReq": [{"item": "FoodHealth1", "quantity": 50}]
+                "ItemReq": [{"item": "FoodHealth1", "quantity": 30}]
             },
             "Beating Up Frogs for some Sauce": {
                 "Type": "ItemsAndSpaceRequired",
@@ -2328,7 +2333,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "King of food! King of food! And coming from a blobulyte like myself that means something! But hey that shouldn't stop you from doin' stuff for me eh? Hahaha I'll be here tomorrow if you wanna help out again.",
-                "NextIndex": -1,
+                "NextIndex": 49,
                 "Name": ""
             }
         ]
@@ -2478,7 +2483,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Idk what to do with all this sludge! It's very cool looking at least.",
-                "NextIndex": -1,
+                "NextIndex": 13,
                 "Name": ""
             }
         ]
@@ -2530,7 +2535,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "I'll go ahead and open up the first set of Tasks. You're gonna have to see my friends to get the other sets. They're located in the other towns.",
-                "NextIndex": -1,
+                "NextIndex": 9999,
                 "Name": ""
             }
         ]
@@ -2634,7 +2639,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Come on over I'll give you access to your stamps! No need for that prequest nonsense OINK!",
-                "NextIndex": -1,
+                "NextIndex": 9999,
                 "Name": ""
             }
         ]
@@ -2869,7 +2874,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Please clear up 2 spaces in your item bag!",
-                "NextIndex": -1,
+                "NextIndex": 10,
                 "Name": ""
             }
         ]
@@ -3007,7 +3012,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "DROP STONE PEANUT AT MARKED ROCK IN GRASSY LANDS.... YUMMY OFFERING FOR ROCKLYTE FRIEND! HE WILL LET U JOIN SECRET GROUP AND BECOME BEST BEGINNER!",
-                "NextIndex": -1,
+                "NextIndex": 14,
                 "Name": ""
             }
         ]
@@ -3131,7 +3136,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "WELCOME TO CLUB! BEGINNER FOR LIFE!!! BUT U CAN STILL BE MORE BEGINNEREST LONG WAY TO GO! DESERT MEMBER KNOW MORE THAN ME GO FIND THEM!",
-                "NextIndex": -1,
+                "NextIndex": 10,
                 "Name": ""
             }
         ]
@@ -3327,7 +3332,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "OH WELL AT LEAST PETE WAS TASTY! OH HEY YOURE A MAESTRO NOW COOL!!!",
-                "NextIndex": -1,
+                "NextIndex": 17,
                 "Name": ""
             }
         ]
@@ -3662,7 +3667,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "I think I will take some time alone having rest when it is needed is NEVER a waste of time even for a leaf like me!",
-                "NextIndex": -1,
+                "NextIndex": 35,
                 "Name": ""
             }
         ]
@@ -3875,7 +3880,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Hey thanks good stuff back there eh? I'll see you on your next character party never truly ends hahaha!",
-                "NextIndex": -1,
+                "NextIndex": 16,
                 "Name": ""
             }
         ]
@@ -4081,7 +4086,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "I'm still thinking of other schemes to bring in more visitors come back later and I may have something for you to do.",
-                "NextIndex": -1,
+                "NextIndex": 17,
                 "Name": ""
             }
         ]
@@ -4234,7 +4239,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Keys... I think I gooOOooot some oooOOooon me somewhere lemme check.",
-                "NextIndex": -1,
+                "NextIndex": 16,
                 "Name": ""
             }
         ]
@@ -4278,7 +4283,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Kacaw! Kacaw! <br> 'The bird looks very happy with itself after successfully restoring the portal.'",
-                "NextIndex": -1,
+                "NextIndex": 2,
                 "Name": ""
             }
         ]
@@ -4328,7 +4333,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Kacaw! Kacaw! <br> 'The bird looks very happy with itself after successfully restoring the portal.'",
-                "NextIndex": -1,
+                "NextIndex": 3,
                 "Name": ""
             }
         ]
@@ -4375,7 +4380,7 @@
                 ],
                 "QuestName": "Papua Piggea2",
                 "Difficulty": 4,
-                "note": "The Crystallin Stamp is a quest item, it will NOT drop unless the quest is active. Papua Piggea WILL take it from you, so if you turn your only one in, you will have to start the quest on another character to get one for your bank in town. It's best to keep the first one for yourself, then farm a new one for the quest.",
+                "note": "The Crystallin Stamp is a quest item, it will NOT drop unless the quest is active. Papua Piggea does not take it from you, so you can turn in the quest and then bring the stamp to your bank in town.",
                 "ItemReq": [{"item": "StampC3", "quantity": 1}]
             },
             "Stamp Collecting": {
@@ -4514,7 +4519,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Snagglu wingo bada chango reagg eEECHH-- thank you noble adventurer. I eagerly await the next time that our paths mi-- ouggo blarf wulanu! 'The pig points to his throat showing embarassment for reusing his opening joke and for choking.",
-                "NextIndex": -1,
+                "NextIndex": 15,
                 "Name": ""
             }
         ]
@@ -4590,7 +4595,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Huh these are definitely the coolest items. You sure are one cool gamer ",
-                "NextIndex": -1,
+                "NextIndex": 9999,
                 "Name": ""
             }
         ]
@@ -4771,7 +4776,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Oh well you'll probably help me get a following again on another character. Cya then!",
-                "NextIndex": -1,
+                "NextIndex": 15,
                 "Name": ""
             }
         ]
@@ -4919,7 +4924,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "If youre reading this I made an oopsie haha",
-                "NextIndex": -1,
+                "NextIndex": 11,
                 "Name": ""
             }
         ]
@@ -5041,7 +5046,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Shh I'm playing the minigame!!! Triple whale here I come!",
-                "NextIndex": -1,
+                "NextIndex": 11,
                 "Name": ""
             }
         ]
@@ -5205,7 +5210,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Thank you so much for the fish it's perfect! A perfect fish from a perfect ocean caught by a perfect player! Have a wonderful day friend I'll see you later! <br> Return at Lv. 200",
-                "NextIndex": -1,
+                "NextIndex": 14,
                 "Name": ""
             }
         ]
@@ -5352,7 +5357,7 @@
                 "NextIndex": 10,
                 "Name": ""
             },
-            {"Type": "NoQuest", "DialogueText": "D:", "NextIndex": -1, "Name": ""}
+            {"Type": "NoQuest", "DialogueText": "D:", "NextIndex": 12, "Name": ""}
         ]
     },
     "Postboy Pablob": {
@@ -5433,7 +5438,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "...get it? Post? Since I'm the postboy...?     <br> Ah come on now don't try to hide your laughter I can tell by the look on your face you found it funny! Anyway then get to filling those orders!",
-                "NextIndex": -1,
+                "NextIndex": 9999,
                 "Name": ""
             }
         ]
@@ -5653,7 +5658,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "I still can't believe I don't got my own dungeon no more... man if I ever get my hands on that darn dev...",
-                "NextIndex": -1,
+                "NextIndex": 23,
                 "Name": ""
             }
         ]
@@ -5868,7 +5873,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Thanks a million ya did it! Me and them Zoomer generation are great friends now they even include me in their Ticky Tocky shenanigans it's great fun! <br> Now get off my lawn ya darn millenial!",
-                "NextIndex": -1,
+                "NextIndex": 19,
                 "Name": ""
             }
         ]
@@ -6047,7 +6052,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Here are ur keys to the pyramid and if you return tomorrow more keys I will wish for you! And to say sorry for joke earlier I even wait up to 3 days and will give u keys as if you were here every day!",
-                "NextIndex": -1,
+                "NextIndex": 16,
                 "Name": ""
             }
         ]
@@ -6187,7 +6192,7 @@
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "Ohoho good morrow commoner! Coming to beg for money no doubt! <br> Oh... you are here to attempt to crime me? Oh goodie! Finally some excitement!",
+                "DialogueText": "Ohoho good morrow commoner! Coming to beg for my money no doubt! <br> Oh... you are here to attempt to crime me? Oh goodie! Finally some excitement!",
                 "NextIndex": 3,
                 "Name": ""
             },
@@ -6332,7 +6337,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Bwahahaha!!! What a hoot! <br> Ok I'm bored. Ta-ta! <br> That means get lost in rich-speak.",
-                "NextIndex": -1,
+                "NextIndex": 26,
                 "Name": ""
             }
         ]
@@ -6360,7 +6365,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "''Omar looks back over his shoulder and at the anchor he is holding...'' <br> Me have no sail boat... <br> Dev Note: ISLAND EXPEDITIONS ARE COMING IN A FUTURE UPDATE. Enjoy the sunset in the meantime!",
-                "NextIndex": -1,
+                "NextIndex": 1,
                 "Name": ""
             }
         ]
@@ -6455,7 +6460,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Oh hey gamer! Ooo yea!!! You found a secret! Mmm yea to the left to the right!",
-                "NextIndex": -1,
+                "NextIndex": 8,
                 "Name": ""
             }
         ]
@@ -6483,7 +6488,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "I run the Arcade the greatest game in town! Search around there isn't a more thrilling game to be found! Just gimme a tap and that will be that!",
-                "NextIndex": -1,
+                "NextIndex": 9999,
                 "Name": ""
             }
         ]
@@ -6658,7 +6663,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "MMMMmmmm what a juicy noob that was! The dumb ones are alwayssss the most ssssucculent!",
-                "NextIndex": -1,
+                "NextIndex": 18,
                 "Name": ""
             }
         ]
@@ -6863,7 +6868,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Vanquished at last boy that was fast! That iconoclast mummy has passed I forecast that my status will now go unsurpassed! Thank you player this was really great... an absolute blast!",
-                "NextIndex": -1,
+                "NextIndex": 17,
                 "Name": ""
             }
         ]
@@ -7063,7 +7068,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Top stuff my man! Brilliantly solved! I must be getting back to my adventure now as you to yours... cheerio!",
-                "NextIndex": -1,
+                "NextIndex": 17,
                 "Name": ""
             }
         ]
@@ -7184,7 +7189,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "NICE! FINALLY!!! Now I can make my costume and pretend to be Sprout! No one will ever bother me again!! Just gotta take this off and... <br> Hey can I get some privacy you creep? Please leave the map and come back...",
-                "NextIndex": -1,
+                "NextIndex": 11,
                 "Name": ""
             }
         ]
@@ -7219,7 +7224,7 @@
             },
             "The Hatless Howerhouse!": {
                 "Type": "Custom",
-                "DialogueText": "Hows about we getcha a real challenge somethin' yall grasslickers over in them thar Blunderhills aint never done before... <br> QUEST:Kill 20 Sandy Pots without your precious hat equipped.",
+                "DialogueText": "Anyways hows about we getcha a real challenge somethin' yall grasslickers over in them thar Blunderhills aint never done before... <br> QUEST:Kill 20 Sandy Pots without your precious hat equipped.",
                 "NextIndex": 6,
                 "Name": "The Hatless Howerhouse!",
                 "ConsumeItems": false,
@@ -7253,7 +7258,7 @@
             },
             "Say Goodbye to your Dubloon!": {
                 "Type": "ItemsAndSpaceRequired",
-                "DialogueText": "... so ya can't talk but don't yall worry yerself cause I sure know one thing that talks round 'ere:cold hard cash! Bring me round sum' that and we can git into some real business. <br> QUEST:Buy a Gold Dubloon to prove your worth.",
+                "DialogueText": "...whatever so ya can't talk but don't yall worry yerself cause I sure know one thing that talks round 'ere:cold hard cash! Bring me round sum' that and we can git into some real business. <br> QUEST:Buy a Gold Dubloon to prove your worth.",
                 "NextIndex": 14,
                 "Name": "Say Goodbye to your Dubloon!",
                 "ConsumeItems": true,
@@ -7341,7 +7346,7 @@
             },
             "A Hat in Crime": {
                 "Type": "ItemsAndSpaceRequired",
-                "DialogueText": "Before we get startin' our crime spree we gotta look the part. Go get some materials from the Anvil so I can make ya a hat like mine. <br> QUEST:Yes Bandit Bob set you up. Guess you're taking orders from a cactus now!",
+                "DialogueText": "Before we start our crime spree we gotta look the part. Go get some materials from the Anvil so I can make ya a hat like mine. <br> QUEST:Yes Bandit Bob set you up and yes Cacto Jones does seem possessed by an evil power!",
                 "NextIndex": 35,
                 "Name": "A Hat in Crime",
                 "ConsumeItems": true,
@@ -7370,7 +7375,7 @@
             },
             "The Worst Trade Deal in History": {
                 "Type": "Custom",
-                "DialogueText": "That there stall owner heard he's got a bit of a money sitiation. Hows about yall help him with that? <br> QUEST:Buy and sell a total of 10 Golden Dubloons.",
+                "DialogueText": "While you progress to Efaunt's tomb at the end of the Desert let's do some good deeds to ward off his evil... how about helping the Shop owner with his money woes? <br> QUEST:Buy and sell a total of 10 Golden Dubloons.",
                 "NextIndex": 46,
                 "Name": "The Worst Trade Deal in History",
                 "ConsumeItems": false,
@@ -7385,7 +7390,7 @@
             },
             "Children? What'd they ever do for Me...": {
                 "Type": "Custom",
-                "DialogueText": "I feel like we best do somethin' good for someone who won't make fun of us. Also remind me to steal that money back once we 'ventually go back to bein' evil. <br> QUEST:Donate to the Starving Orphan Monsters foundation in the Cauldron.",
+                "DialogueText": "I feel like we best move on and get to some who Efaunt hasn't corrupted with evil yet. The orphans! Maybe we can help them! <br> QUEST:Donate to the Starving Orphan Monsters foundation in the Cauldron.",
                 "NextIndex": 49,
                 "Name": "Children? What'd they ever do for Me...",
                 "ConsumeItems": false,
@@ -7400,7 +7405,7 @@
             },
             "Oh No, not the Elderly!": {
                 "Type": "Custom",
-                "DialogueText": "Supposin' you aint really innerested in that last part there's only one thing left to save our souls. <br> We gotta help the elderly... <br> QUEST:Find some old coot to assist. Some old rag a real carpet of a fella you know what I mean.",
+                "DialogueText": "Well shucks Efaunt done corrupted the orphans too! There's only one person left to help. <br> We gotta help the elderly... <br> QUEST:Find some old coot to assist. Some old rag a real carpet of a fella you know what I mean.",
                 "NextIndex": 52,
                 "Name": "Oh No, not the Elderly!",
                 "ConsumeItems": false,
@@ -7415,7 +7420,7 @@
             },
             "Tomb Raid": {
                 "Type": "Custom",
-                "DialogueText": "I got me an idea... there's a tomb way out in them Twilighty Desert dunes. It's home to the old Sultan a big dang elephant called Efaunt. You know what to do. <br> QUEST:Raid Efaunt's tomb and steal his crystal.",
+                "DialogueText": "Go now gamer go defeat that darned Efaunt. His tomb is at the very end of the Twilight desert past the Tysons and Sand Giants. His evil reign ends now... <br> QUEST:Raid Efaunt's tomb defeat him and steal his crystal.",
                 "NextIndex": 56,
                 "Name": "Tomb Raid",
                 "ConsumeItems": false,
@@ -7475,13 +7480,13 @@
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "Woah there pardner it don't count if the darn game creator himself does it for ya! that them's cheatin' that is!",
+                "DialogueText": "Woah there pardner you say the game deverloper Lava completed the quest for ya? Thats mighty strange Lava ain't never done that before. I wonder if... naw it can't be...",
                 "NextIndex": 4,
                 "Name": ""
             },
             {
                 "Type": "Custom",
-                "DialogueText": "Hows about we getcha a real challenge somethin' yall grasslickers over in them thar Blunderhills aint never done before... <br> QUEST:Kill 20 Sandy Pots without your precious hat equipped.",
+                "DialogueText": "Anyways hows about we getcha a real challenge somethin' yall grasslickers over in them thar Blunderhills aint never done before... <br> QUEST:Kill 20 Sandy Pots without your precious hat equipped.",
                 "NextIndex": 6,
                 "Name": "The Hatless Howerhouse!"
             },
@@ -7521,10 +7526,15 @@
                 "NextIndex": 11,
                 "Name": ""
             },
-            {"Type": "NoQuest", "DialogueText": "...", "NextIndex": 12, "Name": ""},
+            {
+                "Type": "NoQuest",
+                "DialogueText": "... he ain't talkin' almost like he done been cursed by an evil power I wonder if... naw Djonnut said that evil Elephant's tomb has been dormant for over a century... it can't be.",
+                "NextIndex": 12,
+                "Name": ""
+            },
             {
                 "Type": "ItemsAndSpaceRequired",
-                "DialogueText": "... so ya can't talk but don't yall worry yerself cause I sure know one thing that talks round 'ere:cold hard cash! Bring me round sum' that and we can git into some real business. <br> QUEST:Buy a Gold Dubloon to prove your worth.",
+                "DialogueText": "...whatever so ya can't talk but don't yall worry yerself cause I sure know one thing that talks round 'ere:cold hard cash! Bring me round sum' that and we can git into some real business. <br> QUEST:Buy a Gold Dubloon to prove your worth.",
                 "NextIndex": 14,
                 "Name": "Say Goodbye to your Dubloon!"
             },
@@ -7632,7 +7642,7 @@
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "Yep signature sure looks real... REALLY LIKE YOURS! Ya thought you were so smart hidin' all these years but I finally caught ya red handed!",
+                "DialogueText": "Yep signature sure looks real... <br> 'As Cowbo is talking you hear an eerie elephant roar and suddenly Cowbo Jones' expression turns sour' <br> REALLY LIKE YOURS! YOU'RE THE CRIMINAL!!",
                 "NextIndex": 31,
                 "Name": ""
             },
@@ -7650,7 +7660,7 @@
             },
             {
                 "Type": "ItemsAndSpaceRequired",
-                "DialogueText": "Before we get startin' our crime spree we gotta look the part. Go get some materials from the Anvil so I can make ya a hat like mine. <br> QUEST:Yes Bandit Bob set you up. Guess you're taking orders from a cactus now!",
+                "DialogueText": "Before we start our crime spree we gotta look the part. Go get some materials from the Anvil so I can make ya a hat like mine. <br> QUEST:Yes Bandit Bob set you up and yes Cacto Jones does seem possessed by an evil power!",
                 "NextIndex": 35,
                 "Name": "A Hat in Crime"
             },
@@ -7662,13 +7672,13 @@
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "With this hat we are now the LOVERS OF AMORIA!",
+                "DialogueText": "With this hat we are now the... <br> 'Cacto Jones eyes light up for a moment and his sour expression suddenly switches back to his normal lively look'... <br> the LOVERS OF AMORIA!",
                 "NextIndex": 36,
                 "Name": ""
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "... no hang on that's my idea for when we end up joining The Bachelor. Until then we are actually called THE HATS OF CRIME!",
+                "DialogueText": "Haha! The classic subversion of expectations I love me some lighthearted fun! <br> 'You hear the elephant roar once again and immediately Cacto Jones expression sours' <br> Fun? No time for fun we are THE HATS OF CRIME!",
                 "NextIndex": 37,
                 "Name": ""
             },
@@ -7698,25 +7708,25 @@
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "You stole... hwat? YOU STOLE HWAT?? Have you no SHAME? My lord and there's still some peanuts left!!!",
+                "DialogueText": "You stole... hwat? YOU STOLE HWAT?? <br> 'The sour expression has faded once again as the sheer injustice you've committed seems to have shocked him back to his normal self' <br> Why on earth would you steal THIS!?!!",
                 "NextIndex": 42,
                 "Name": ""
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "Yall just had to go and take it an 11 when I was just lookin' for a 6 maybe 7 tops. Look yall should've told me you were had no moral compass I'dve never made you my partner!",
+                "DialogueText": "Yall was just following... following my orders? Hwat do ya mean I told you to do crimes I'm the sheriff I'm the good guy! It would take an evil power the likes of which haven't been seen in 100 years to turn me evil...",
                 "NextIndex": 43,
                 "Name": ""
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "But it's too late for that. Only way to turn this 'round is to change our ways and do some good deeds.",
+                "DialogueText": "... oh lawd 100 years that can only mean one thing. <br> Efaunt the Elephant Pharoah has woken from his slumber. He must be defeated before he corrupts others!",
                 "NextIndex": 44,
                 "Name": ""
             },
             {
                 "Type": "Custom",
-                "DialogueText": "That there stall owner heard he's got a bit of a money sitiation. Hows about yall help him with that? <br> QUEST:Buy and sell a total of 10 Golden Dubloons.",
+                "DialogueText": "While you progress to Efaunt's tomb at the end of the Desert let's do some good deeds to ward off his evil... how about helping the Shop owner with his money woes? <br> QUEST:Buy and sell a total of 10 Golden Dubloons.",
                 "NextIndex": 46,
                 "Name": "The Worst Trade Deal in History"
             },
@@ -7728,13 +7738,13 @@
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "Well I'd say that worked! 'cept as soon as ya turned around to come talk to me the shopkeep started pointin' an' laughin' at ya...",
+                "DialogueText": "Well I'd say that worked! 'cept as soon as ya turned around to come talk to me the shopkeep started pointin' and laughin' at ya... I guess Efaunt already corrupted him.",
                 "NextIndex": 47,
                 "Name": ""
             },
             {
                 "Type": "Custom",
-                "DialogueText": "I feel like we best do somethin' good for someone who won't make fun of us. Also remind me to steal that money back once we 'ventually go back to bein' evil. <br> QUEST:Donate to the Starving Orphan Monsters foundation in the Cauldron.",
+                "DialogueText": "I feel like we best move on and get to some who Efaunt hasn't corrupted with evil yet. The orphans! Maybe we can help them! <br> QUEST:Donate to the Starving Orphan Monsters foundation in the Cauldron.",
                 "NextIndex": 49,
                 "Name": "Children? What'd they ever do for Me..."
             },
@@ -7746,13 +7756,13 @@
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "That was a bit better tell you hwat... but you know what they say: <br> Give an orphan monster some water and they'll drink for a day. Teach an orphan monster how to extract the liquid from the players they kill and they'll drink for a lifetime.",
+                "DialogueText": "That was a bit better tell you hwat... hey look we got a letter from the orphanage! It says <br> 'Thank you for the meager donations. You really think you're helping by giving us a little water? Go tuck yourself into bed that is.'",
                 "NextIndex": 50,
                 "Name": ""
             },
             {
                 "Type": "Custom",
-                "DialogueText": "Supposin' you aint really innerested in that last part there's only one thing left to save our souls. <br> We gotta help the elderly... <br> QUEST:Find some old coot to assist. Some old rag a real carpet of a fella you know what I mean.",
+                "DialogueText": "Well shucks Efaunt done corrupted the orphans too! There's only one person left to help. <br> We gotta help the elderly... <br> QUEST:Find some old coot to assist. Some old rag a real carpet of a fella you know what I mean.",
                 "NextIndex": 52,
                 "Name": "Oh No, not the Elderly!"
             },
@@ -7764,19 +7774,19 @@
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "That'll just about do it! <br> Wait... did you say the old geezer's name was... Carpetiem?? <br> No no no no!! He's the oldest most crankiest old person! Helping him is like helping 100 old people!",
+                "DialogueText": "That'll just about do it! <br> Wait... did you say the old geezer's name was... Carpetiem?? <br> No no no no!! He was the sweetest darn geezer ya ever saw Efaunt CROSSED THE LINE turning him cranky and evil!",
                 "NextIndex": 53,
                 "Name": ""
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "Ya went too far! Now were TOO good! I swore on me grandcacti's life I'd never end up a goody two shoes... We gotta go back to crime to balance this out!",
+                "DialogueText": "THATS IT. We must RID this land of Efaunt once and for all tell you hwat!",
                 "NextIndex": 54,
                 "Name": ""
             },
             {
                 "Type": "Custom",
-                "DialogueText": "I got me an idea... there's a tomb way out in them Twilighty Desert dunes. It's home to the old Sultan a big dang elephant called Efaunt. You know what to do. <br> QUEST:Raid Efaunt's tomb and steal his crystal.",
+                "DialogueText": "Go now gamer go defeat that darned Efaunt. His tomb is at the very end of the Twilight desert past the Tysons and Sand Giants. His evil reign ends now... <br> QUEST:Raid Efaunt's tomb defeat him and steal his crystal.",
                 "NextIndex": 56,
                 "Name": "Tomb Raid"
             },
@@ -7819,7 +7829,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Go git 'er dun new Sheriff! YeeeeHAW!!!",
-                "NextIndex": -1,
+                "NextIndex": 61,
                 "Name": ""
             }
         ]
@@ -7887,7 +7897,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Come tap on me every day to get another ticket given you're a registered combatant now. <br> And don't think I won't recognize you on your other characters! You only get 1 ticket every day!",
-                "NextIndex": -1,
+                "NextIndex": 5,
                 "Name": ""
             }
         ]
@@ -8136,7 +8146,7 @@
                 "NextIndex": 23,
                 "Name": ""
             },
-            {"Type": "NoQuest", "DialogueText": "Filler", "NextIndex": -1, "Name": ""}
+            {"Type": "NoQuest", "DialogueText": "Filler", "NextIndex": 23, "Name": ""}
         ]
     },
     "XxX Cattleprod XxX": {
@@ -8301,7 +8311,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Woah nice Lucky Lad trophy! Kinda weird how it's under me and not you... oh right thats because it's MINE hahaha! <br> Hiyaa! Take that air!",
-                "NextIndex": -1,
+                "NextIndex": 14,
                 "Name": ""
             }
         ]
@@ -8450,7 +8460,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Here you go! Cmon open them open them!! Oh and I've got more left so come back tomorrow!!! ##",
-                "NextIndex": -1,
+                "NextIndex": 13,
                 "Name": ""
             }
         ]
@@ -8528,7 +8538,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Oh no there's still more engravi- <br> 'Anyway as I was saying before I got interrupted there are constellations all over the game so always look out for them wherever you go! There's also a trophy if you can light up them all!' <br> The engraving pops out of the telescope and falls down the tree.",
-                "NextIndex": -1,
+                "NextIndex": 9999,
                 "Name": ""
             }
         ]
@@ -8632,7 +8642,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Alas I must admit. The loneliness I feel up here has broken my spirit. Neither cards from lovers nor destruction of others can bring to me what we all hold dearest. Please return tomorrow so we may try one more to ease my sorrow.",
-                "NextIndex": -1,
+                "NextIndex": 8,
                 "Name": ""
             }
         ]
@@ -8747,7 +8757,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "You found one! Thats <br> . <br> very impressive! Come <br> . <br> back tomorrow to find more capsules! <br> . <br> Good job Eggy! <br> . <br> Yea nice! <br> . <br> Haha thx guys #",
-                "NextIndex": -1,
+                "NextIndex": 9,
                 "Name": ""
             }
         ]
@@ -8812,7 +8822,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Right-o then mate! Go get those tasks!",
-                "NextIndex": -1,
+                "NextIndex": 9999,
                 "Name": ""
             }
         ]
@@ -9258,7 +9268,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "You got it?? Oh you filled it out I see... meh what's an election without a bit of corruption right? I'm sure if we weren't just 2d drawings we would be more than capable of doing without corruption!",
-                "NextIndex": -1,
+                "NextIndex": 41,
                 "Name": ""
             }
         ]
@@ -9529,7 +9539,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Not bad not bad. But I wont lie to ya I'm tired of seeing that blank face of yours. How about we do one last thing and call it quits?",
-                "NextIndex": -1,
+                "NextIndex": 23,
                 "Name": ""
             }
         ]
@@ -9683,7 +9693,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "You've got... the vibes... <br> and I've got... the keys... <br> Every day... you can have more keys...",
-                "NextIndex": -1,
+                "NextIndex": 12,
                 "Name": ""
             }
         ]
@@ -9760,7 +9770,7 @@
                 ],
                 "QuestName": "Crystalswine6",
                 "Difficulty": 7,
-                "note": "Killing all [[Bloque]]s onscreen will leave you at 127/168, but the quest is looking for 128/168. Wait for one additional Bloque to spawn and kill it before moving on to [[Sir Stache]].",
+                "note": "",
                 "CustomType": "Crystalswine6",
                 "CustomArray": [
                     {"desc": "Monsters Defeated:", "finalV": 168, "type": "GreaterEqual", "startV": 0},
@@ -9856,7 +9866,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "'The frozen pig seems happy with you... wait no that's just a smudge on the ice making it look like he's smiling. He is infact unmoved by your actions literally.",
-                "NextIndex": -1,
+                "NextIndex": 14,
                 "Name": ""
             }
         ]
@@ -10122,7 +10132,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "I can see why Hoggi picked you to represent him you're a very versatile and competent person! Thank you for the help and best of luck to you in your future endeavors!",
-                "NextIndex": -1,
+                "NextIndex": 24,
                 "Name": ""
             }
         ]
@@ -10229,7 +10239,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "That'll show 'em! <br> Well guess that's all we can do. I mean I'd give you a quest to kill the Big Boss and bring down the system but if any of his goons found out they'd come get me for sure... so yea no more quests.",
-                "NextIndex": -1,
+                "NextIndex": 9,
                 "Name": ""
             }
         ]
@@ -10498,7 +10508,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "You're a great digger especially for someone who isn't a literal shovel! Well I better get back to digging my own grave here who knows when my handle will splinter!",
-                "NextIndex": -1,
+                "NextIndex": 23,
                 "Name": ""
             }
         ]
@@ -10624,7 +10634,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Alright you got your tickets now get outta here.",
-                "NextIndex": -1,
+                "NextIndex": 10,
                 "Name": ""
             }
         ]
@@ -10674,7 +10684,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "KAW! KAWWWWWW! <br> 'The bird looks very proud of itself after successfully restoring the portal.'",
-                "NextIndex": -1,
+                "NextIndex": 3,
                 "Name": ""
             }
         ]
@@ -11081,7 +11091,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Huh. I guess that makes YOU the Lord of the Hunt... Well we can't be having a plot hole like this no sir! Enjoy the trophy but I'm going to go sell all this evidence to the store.",
-                "NextIndex": -1,
+                "NextIndex": 37,
                 "Name": ""
             }
         ]
@@ -11264,7 +11274,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Oh right mana potions don't actually give you mana they just make it recharge faster... guess I'll have to wait!",
-                "NextIndex": -1,
+                "NextIndex": 18,
                 "Name": ""
             }
         ]
@@ -11362,7 +11372,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Yooo now its a party! <br> Pfft cmon don't be down about it bro it's Summer Break! We don't worry about the underlying morals and themes behind quests around here we just have fun!",
-                "NextIndex": -1,
+                "NextIndex": 7,
                 "Name": ""
             }
         ]
@@ -11511,7 +11521,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "WAOOO!! YEHEHEHE!!",
-                "NextIndex": -1,
+                "NextIndex": 12,
                 "Name": ""
             }
         ]
@@ -11654,7 +11664,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Hehe... that outta teach that old coot to not hit me off my walking stick! Please do keep bothering him from time to time he has it coming!",
-                "NextIndex": -1,
+                "NextIndex": 12,
                 "Name": ""
             }
         ]
@@ -11794,7 +11804,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Ya got rid of 'im? They had it comin always sneerin' at me and tellin' me want to do.",
-                "NextIndex": -1,
+                "NextIndex": 12,
                 "Name": ""
             }
         ]
@@ -12007,7 +12017,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Happy Falloween! I'll scare you good next time so ya better watch out!",
-                "NextIndex": -1,
+                "NextIndex": 17,
                 "Name": ""
             }
         ]
@@ -12095,7 +12105,7 @@
                 "NextIndex": 4,
                 "Name": ""
             },
-            {"Type": "NoQuest", "DialogueText": "Blunb Blu ###", "NextIndex": -1, "Name": ""}
+            {"Type": "NoQuest", "DialogueText": "Blunb Blu ###", "NextIndex": 6, "Name": ""}
         ]
     },
     "Capital P": {
@@ -12122,7 +12132,7 @@
                 "Rewards": [{"item": "StampB42", "quantity": 1}, {"item": "Ladle", "quantity": 1}],
                 "QuestName": "Capital P1",
                 "Difficulty": 3,
-                "note": " ",
+                "note": "You can use Capital P as a marker for the middle of the platform. Only kill monsters to the right of the NPC, leave the monsters on the left alive.",
                 "CustomType": "Capital P1",
                 "CustomArray": [{"desc": "Party Points:", "finalV": 200, "type": "GreaterEqual", "startV": 0}]
             },
@@ -12137,7 +12147,7 @@
                 "Rewards": [{"item": "StampC21", "quantity": 1}, {"item": "Ladle", "quantity": 1}],
                 "QuestName": "Capital P2",
                 "Difficulty": 4,
-                "note": " ",
+                "note": "Removing additional sources of respawn such as equipment or Star Signs can give you more time between spawns.",
                 "CustomType": "Capital P2",
                 "CustomArray": [{"desc": "Party Points:", "finalV": 1400, "type": "GreaterEqual", "startV": 0}]
             },
@@ -12152,7 +12162,7 @@
                 "Rewards": [{"item": "StampA30", "quantity": 1}, {"item": "Ladle", "quantity": 1}],
                 "QuestName": "Capital P3",
                 "Difficulty": 6,
-                "note": " ",
+                "note": "",
                 "CustomType": "Capital P3",
                 "CustomArray": [{"desc": "Party Points:", "finalV": 10000, "type": "GreaterEqual", "startV": 0}]
             }
@@ -12221,7 +12231,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Holla holla! You're a winning MACHINE! I'm gonna keep the party going but that's it for the games for now. PartyOn!",
-                "NextIndex": -1,
+                "NextIndex": 10,
                 "Name": ""
             }
         ]
@@ -12365,7 +12375,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Now that's what I call non-raw cooking! I can't believe I'm saying this but that's all the cooking I can do for now... I'm all cooked out!",
-                "NextIndex": -1,
+                "NextIndex": 10,
                 "Name": ""
             }
         ]
@@ -12585,7 +12595,7 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "Zzzz.... nono lava I wont tell them... zzz... I wont tell them to drop sludge oil onto the purple spores.... zzz... nah lava secrets safe with... zzz... me...",
-                "NextIndex": -1,
+                "NextIndex": 18,
                 "Name": ""
             }
         ]
@@ -12597,9 +12607,9 @@
             "noQuest": 0,
             "repeatable": "Unknown",
             "type": "Unknown",
-            "birthWeight": 5.36,
+            "birthWeight": 5.47,
             "starSign": "Leo",
-            "mothersMaidenName": "Norquist",
+            "mothersMaidenName": "Ory",
             "notes": ""
         },
         "quests": {

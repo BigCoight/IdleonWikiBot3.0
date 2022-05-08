@@ -1,19 +1,16 @@
 import difflib
-import inspect
 import os.path
-import sys
 from abc import ABC, abstractmethod
 from copy import deepcopy
 from enum import Enum
 from typing import Dict, Generic, Optional, TypeVar, List, Set
 
 from pywikibot import Site, Page
-from rich.console import Console
 from rich.progress import track
 
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CodeReader import CodeReader, IdleonReader
-from helpers.ColourPrinter import printGreen, printRed, printYellow, printBlue, printPurple
+from helpers.ColourPrinter import printGreen, printRed, printYellow, printBlue, printPurple, console
 from helpers.HelperFunctions import camelCaseToTitle
 from helpers.JsonEncoder import CompactJSONEncoder
 
@@ -113,7 +110,7 @@ class Repository(Generic[T], ABC):
 		else:
 			path = fr"./exported/{location}/{cls.getCategory()}/"
 		if not os.path.isdir(path):
-			os.makedirs(path, exist_ok=True)
+			os.makedirs(path, exist_ok = True)
 		if not nameOveride:
 			return f"{path}{cls.__name__}.{fileExtension}"
 		return f"{path}{nameOveride}.{fileExtension}"
@@ -268,6 +265,7 @@ class Repository(Generic[T], ABC):
 			if not isinstance(val, IdleonModel) and val in {0, "0", "00"}:
 				return ""
 			return patchnote(atr, " ", val)
+
 		return "".join([aux(atr, val) for atr, val in changes.items()])
 
 	@classmethod
@@ -370,8 +368,7 @@ class Repository(Generic[T], ABC):
 		debugNum = 0
 		cls._createOldDir()
 		website = Site()
-		for name, data in track(cls.items(), description = f"Uploading {cls.__name__}", console = Console(
-				color_system = "windows")):
+		for name, data in track(cls.items(), description = f"Uploading {cls.__name__}", console = console):
 			if cls._ignore(name, data):
 				continue
 			if (oldStatus := cls._isOld(name, data)) == OldType.Old:

@@ -6,7 +6,7 @@
             "Fired for BS Reasons!": {"note": "[[Job Application]] drops from [[Dr Defecaus]]"}
         }
     },
-    "Secretkeeper": {"notes": {"The Few, the Proud": {"note": ""}}},
+    "Secretkeeper": {"notes": {"The Few, The Proud": {"note": ""}}},
     "Sprout": {
         "notes": {
             "Sticks and Stone Something Something Bones...": {"note": ""},
@@ -196,7 +196,7 @@
                 "note": "The Kapow Stamp is a quest item, it will NOT drop unless the quest is active. Papua Piggea does not take it from you, so you can turn in the quest and then bring the stamp to your bank in town."
             },
             "Crystal Crime Stopper": {
-                "note": "The Crystallin Stamp is a quest item, it will NOT drop unless the quest is active. Papua Piggea WILL take it from you, so if you turn your only one in, you will have to start the quest on another character to get one for your bank in town. It's best to keep the first one for yourself, then farm a new one for the quest."
+                "note": "The Crystallin Stamp is a quest item, it will NOT drop unless the quest is active. Papua Piggea does not take it from you, so you can turn in the quest and then bring the stamp to your bank in town."
             },
             "Stamp Collecting": {
                 "note": "Target Stamp and Mana Stamp come from the W1 [[Vendors|Town Shop]], and Vitality Stamp comes from the W1 [[Vendors#Encroaching Forest Villas|Encroaching Forest Villas Vendors]]"
@@ -428,9 +428,7 @@
         "notes": {
             "Melting the Snakes": {"note": " "},
             "Sunrunning to Chizoar": {"note": " "},
-            "Global Warming": {
-                "note": "Killing all [[Bloque]]s onscreen will leave you at 127/168, but the quest is looking for 128/168. Wait for one additional Bloque to spawn and kill it before moving on to [[Sir Stache]]."
-            }
+            "Global Warming": {"note": ""}
         }
     },
     "Yondergreen": {
@@ -539,9 +537,13 @@
     "Blobbo": {"notes": {"A Honker Took mah Baby!": {"note": " "}, "Glitter Critter": {"note": " "}}},
     "Capital P": {
         "notes": {
-            "Right side wrong side!": {"note": " "},
-            "No room on the Dance Floor!": {"note": " "},
-            "Everybody move it move it!": {"note": " "}
+            "Right side wrong side!": {
+                "note": "You can use Capital P as a marker for the middle of the platform. Only kill monsters to the right of the NPC, leave the monsters on the left alive."
+            },
+            "No room on the Dance Floor!": {
+                "note": "Removing additional sources of respawn such as equipment or Star Signs can give you more time between spawns."
+            },
+            "Everybody move it move it!": {"note": ""}
         }
     },
     "Oinkin": {
@@ -560,5 +562,6 @@
             "Lab Experimentation, Ft. You": {"note": " "}
         }
     },
-    "version": "150"
+    "Nebula Neddy": {"notes": {"Task Requirement Affirmative": {"note": " "}}},
+    "version": "155"
 }

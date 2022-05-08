@@ -16,6 +16,8 @@ class FileRepository(Repository[T], ABC):
 
 	@classmethod
 	def initialise(cls, codeReader: CodeReader, update: bool = False) -> None:
+		cls.codeReader = codeReader
+		cls.initDependencies(False)
 		cls.update = update
 		cls.repository = {}
 		cls.listRepository = []

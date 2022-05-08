@@ -1601,7 +1601,7 @@
             "area": "Froggy Fields",
             "world": "Blunder Hills",
             "id": 2,
-            "portalRequirements": [70]
+            "portalRequirements": [30]
         },
         "navigation": {
             "prev": "mushR",
@@ -1646,7 +1646,7 @@
             "area": "Valley Of The Beans",
             "world": "Blunder Hills",
             "id": 14,
-            "portalRequirements": [150, 1500]
+            "portalRequirements": [80, 1500]
         },
         "navigation": {
             "prev": "frogG",
@@ -4191,7 +4191,7 @@
             "MovingFrame": 4,
             "RespawnTime": 86400,
             "DeathFrame": 13,
-            "MonsterHPTotal": 15000000,
+            "MonsterHPTotal": 8000000,
             "Type": "monsterType",
             "SpecialType": "a",
             "ExpGiven": 12000,
@@ -4216,13 +4216,13 @@
         "mapData": null,
         "navigation": {
             "prev": "wolfA",
-            "next": "babaHour",
+            "next": "wolfC",
             "hasCrystal": true,
             "crystalName": null,
             "hasCard": true
         },
         "bossData": {
-            "health": 15000000,
+            "health": 8000000,
             "defence": 1750,
             "exp": 400000,
             "keys": 5,
@@ -4239,7 +4239,7 @@
     },
     "wolfC": {
         "details": {
-            "Name": "Nightmare Amarok",
+            "Name": "Radiant Amarok",
             "AFKtype": "Fighting",
             "MonsterFace": 4,
             "MonsterOffsetX": 42,
@@ -4249,42 +4249,49 @@
             "MovingFrame": 4,
             "RespawnTime": 86400,
             "DeathFrame": 13,
-            "MonsterHPTotal": 750000,
+            "MonsterHPTotal": 100000000,
             "Type": "monsterType",
             "SpecialType": "a",
             "ExpGiven": 12000,
             "ExpType": 0,
-            "Defence": 600,
+            "Defence": 8000,
             "MoveSPEED": 3,
             "Damages": [1000, 1],
             "DefFor0": 1223.26
         },
         "drops": [
             {"item": "COIN", "quantity": 500, "chance": 1, "questLink": "N/A"},
-            {"item": "Meatloaf", "quantity": 1, "chance": 0.05, "questLink": "N/A"},
-            {"item": "CardsZ2", "quantity": 1, "chance": 0.02, "questLink": "N/A"},
-            {"item": "EquipmentHats39", "quantity": 1, "chance": 0.001, "questLink": "N/A"},
-            {"item": "StoneZ1", "quantity": 1, "chance": 0.03, "questLink": "N/A"},
+            {"item": "Meatloaf", "quantity": 10, "chance": 0.05, "questLink": "N/A"},
+            {"item": "CardsZ14", "quantity": 1, "chance": 0.02, "questLink": "N/A"},
+            {"item": "EquipmentHats39", "quantity": 1, "chance": 0.012, "questLink": "N/A"},
+            {"item": "ObolAmarokA", "quantity": 1, "chance": 0.0085, "questLink": "N/A"},
+            {"item": "EquipmentCape3", "quantity": 1, "chance": 0.001, "questLink": "N/A"},
+            {"item": "StoneZ1", "quantity": 1, "chance": 0.25, "questLink": "N/A"},
             {"item": "Quest17", "quantity": 1, "chance": 0.3, "questLink": "N/A"},
-            {"item": "DropTable1", "quantity": 2, "chance": 1, "questLink": "N/A"},
             {"item": "DropTable2", "quantity": 2, "chance": 1, "questLink": "N/A"},
             {"item": "DropTable3", "quantity": 2, "chance": 1, "questLink": "N/A"}
         ],
         "mapData": null,
-        "navigation": null,
+        "navigation": {
+            "prev": "wolfB",
+            "next": "babaHour",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": {
             "health": 100000000,
-            "defence": 100000,
-            "exp": 1,
-            "keys": 9999,
+            "defence": 8000,
+            "exp": 50000000,
+            "keys": 30,
             "attacks": [
-                {"name": "Fireball", "damage": 18000},
-                {"name": "Stomp", "damage": 40000},
-                {"name": "Rock Spikes", "damage": 20000},
-                {"name": "Spike Traps", "damage": 15000},
-                {"name": "Sword Swing", "damage": 25000},
-                {"name": "Uppercut", "damage": 50000},
-                {"name": "Rocketfist", "damage": 33000}
+                {"name": "Fireball", "damage": 3650},
+                {"name": "Stomp", "damage": 5500},
+                {"name": "Rock Spikes", "damage": 3800},
+                {"name": "Spike Traps", "damage": 3675},
+                {"name": "Sword Swing", "damage": 5500},
+                {"name": "Uppercut", "damage": 8000},
+                {"name": "Rocketfist", "damage": 5000}
             ]
         }
     },
@@ -4359,7 +4366,7 @@
             "MovingFrame": 4,
             "RespawnTime": 86400,
             "DeathFrame": 13,
-            "MonsterHPTotal": 100000000,
+            "MonsterHPTotal": 30000000,
             "Type": "monsterType",
             "SpecialType": "a",
             "ExpGiven": 12000,
@@ -4383,13 +4390,13 @@
         "mapData": null,
         "navigation": {
             "prev": "Boss2A",
-            "next": "mini3a",
+            "next": "Boss2C",
             "hasCrystal": true,
             "crystalName": null,
             "hasCard": true
         },
         "bossData": {
-            "health": 100000000,
+            "health": 30000000,
             "defence": 3500,
             "exp": 2000000,
             "keys": 5,
@@ -4406,7 +4413,7 @@
     },
     "Boss2C": {
         "details": {
-            "Name": "Nightmare Amarok",
+            "Name": "Gilded Efaunt",
             "AFKtype": "Fighting",
             "MonsterFace": 4,
             "MonsterOffsetX": 42,
@@ -4416,34 +4423,40 @@
             "MovingFrame": 4,
             "RespawnTime": 86400,
             "DeathFrame": 13,
-            "MonsterHPTotal": 750000,
+            "MonsterHPTotal": 400000000,
             "Type": "monsterType",
             "SpecialType": "a",
             "ExpGiven": 12000,
             "ExpType": 0,
-            "Defence": 600,
+            "Defence": 15000,
             "MoveSPEED": 3,
             "Damages": [1000, 1],
             "DefFor0": 1223.26
         },
         "drops": [
             {"item": "COIN", "quantity": 4000, "chance": 1, "questLink": "N/A"},
-            {"item": "CardsZ3", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
+            {"item": "CardsZ15", "quantity": 1, "chance": 0.02, "questLink": "N/A"},
             {"item": "MidnightCookie", "quantity": 1, "chance": 0.07, "questLink": "N/A"},
-            {"item": "ObolEfauntA", "quantity": 1, "chance": 0.001, "questLink": "N/A"},
-            {"item": "EquipmentHats2", "quantity": 1, "chance": 0.000667, "questLink": "N/A"},
-            {"item": "StoneZ1", "quantity": 1, "chance": 0.03, "questLink": "N/A"},
-            {"item": "DropTable6", "quantity": 2, "chance": 1, "questLink": "N/A"},
-            {"item": "DropTable7", "quantity": 2, "chance": 1, "questLink": "N/A"},
+            {"item": "ObolEfauntA", "quantity": 1, "chance": 0.018, "questLink": "N/A"},
+            {"item": "EquipmentHats2", "quantity": 1, "chance": 0.015, "questLink": "N/A"},
+            {"item": "EfauntDrop1", "quantity": 12, "chance": 0.9, "questLink": "N/A"},
+            {"item": "EfauntDrop2", "quantity": 4, "chance": 0.5, "questLink": "N/A"},
+            {"item": "EquipmentCape4", "quantity": 1, "chance": 0.0007, "questLink": "N/A"},
             {"item": "DropTable8", "quantity": 2, "chance": 1, "questLink": "N/A"}
         ],
         "mapData": null,
-        "navigation": null,
+        "navigation": {
+            "prev": "Boss2B",
+            "next": "mini3a",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": {
-            "health": 500000000,
-            "defence": 100000,
-            "exp": 1,
-            "keys": 9999,
+            "health": 400000000,
+            "defence": 15000,
+            "exp": 100000000,
+            "keys": 40,
             "attacks": [
                 {"name": "Hammer", "damage": 18000},
                 {"name": "Scimitar", "damage": 40000},
@@ -4521,7 +4534,7 @@
             "MovingFrame": 4,
             "RespawnTime": 86400,
             "DeathFrame": 13,
-            "MonsterHPTotal": 400000000,
+            "MonsterHPTotal": 250000000,
             "Type": "monsterType",
             "SpecialType": "a",
             "ExpGiven": 12000,
@@ -4544,13 +4557,13 @@
         "mapData": null,
         "navigation": {
             "prev": "Boss3A",
-            "next": "mini4a",
+            "next": "Boss3C",
             "hasCrystal": true,
             "crystalName": null,
             "hasCard": true
         },
         "bossData": {
-            "health": 400000000,
+            "health": 250000000,
             "defence": 7500,
             "exp": 10000000,
             "keys": 5,
@@ -4565,7 +4578,7 @@
     },
     "Boss3C": {
         "details": {
-            "Name": "Nightmare Chizoar",
+            "Name": "Blighted Chizoar",
             "AFKtype": "Fighting",
             "MonsterFace": 4,
             "MonsterOffsetX": 42,
@@ -4575,38 +4588,39 @@
             "MovingFrame": 4,
             "RespawnTime": 86400,
             "DeathFrame": 13,
-            "MonsterHPTotal": 750000,
+            "MonsterHPTotal": 2000000000,
             "Type": "monsterType",
             "SpecialType": "a",
             "ExpGiven": 12000,
             "ExpType": 0,
-            "Defence": 600,
+            "Defence": 25000,
             "MoveSPEED": 3,
             "Damages": [1000, 1],
             "DefFor0": 1223.26
         },
         "drops": [
             {"item": "COIN", "quantity": 4000, "chance": 1, "questLink": "N/A"},
-            {"item": "CardsZ8", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
-            {"item": "ObolChizoarA", "quantity": 1, "chance": 0.003, "questLink": "N/A"},
-            {
-                "item": "EquipmentPendant24",
-                "quantity": 1,
-                "chance": 0.000667,
-                "questLink": "N/A"
-            },
+            {"item": "CardsZ16", "quantity": 1, "chance": 0.02, "questLink": "N/A"},
+            {"item": "ObolChizoarA", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
+            {"item": "EquipmentPendant24", "quantity": 1, "chance": 0.014, "questLink": "N/A"},
+            {"item": "EquipmentCape5", "quantity": 1, "chance": 0.0003, "questLink": "N/A"},
             {"item": "StoneZ1", "quantity": 1, "chance": 0.03, "questLink": "N/A"},
-            {"item": "DropTable6", "quantity": 2, "chance": 1, "questLink": "N/A"},
             {"item": "DropTable7", "quantity": 2, "chance": 1, "questLink": "N/A"},
             {"item": "DropTable8", "quantity": 2, "chance": 1, "questLink": "N/A"}
         ],
         "mapData": null,
-        "navigation": null,
+        "navigation": {
+            "prev": "Boss3B",
+            "next": "mini4a",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": {
             "health": 2000000000,
-            "defence": 100000,
-            "exp": 1,
-            "keys": 9999,
+            "defence": 25000,
+            "exp": 500000000,
+            "keys": 50,
             "attacks": [
                 {"name": "Front Stomp", "damage": 18000},
                 {"name": "Back Stomp", "damage": 40000},
@@ -4823,7 +4837,7 @@
         ],
         "mapData": null,
         "navigation": {
-            "prev": "wolfB",
+            "prev": "wolfC",
             "next": "babaMummy",
             "hasCrystal": true,
             "crystalName": null,
@@ -4910,7 +4924,7 @@
         ],
         "mapData": null,
         "navigation": {
-            "prev": "Boss2B",
+            "prev": "Boss2C",
             "next": "Boss3A",
             "hasCrystal": true,
             "crystalName": null,
@@ -4952,7 +4966,7 @@
         ],
         "mapData": null,
         "navigation": {
-            "prev": "Boss3B",
+            "prev": "Boss3C",
             "next": "Boss4A",
             "hasCrystal": true,
             "crystalName": null,

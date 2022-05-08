@@ -2637,19 +2637,19 @@
         "notes": " ",
         "recipe": {
             "intID": "EquipmentHats1",
-            "recipe": [{"item": "Grasslands1", "quantity": 4}, {"item": "Copper", "quantity": 12}],
+            "recipe": [{"item": "Grasslands1", "quantity": 4}, {"item": "Copper", "quantity": 5}],
             "levelReqToCraft": 1,
-            "expGiven": 3,
+            "expGiven": 6,
             "no": 5,
             "tab": 1,
-            "sellPrice": 48,
+            "sellPrice": 27,
             "recipeFrom": [],
             "detailedRecipe": {
                 "detRecipe": [
                     {"indent": 0, "item": "Grasslands1", "quantity": 4},
-                    {"indent": 0, "item": "Copper", "quantity": 12}
+                    {"indent": 0, "item": "Copper", "quantity": 5}
                 ],
-                "detRecipeTotals": [{"item": "Grasslands1", "quantity": 4}, {"item": "Copper", "quantity": 12}]
+                "detRecipeTotals": [{"item": "Grasslands1", "quantity": 4}, {"item": "Copper", "quantity": 5}]
             }
         },
         "vendors": null,
@@ -2840,7 +2840,7 @@
                 {"item": "CraftMat1", "quantity": 10}
             ],
             "levelReqToCraft": 4,
-            "expGiven": 12,
+            "expGiven": 15,
             "no": 13,
             "tab": 1,
             "sellPrice": 165,
@@ -3102,7 +3102,7 @@
             "Skill_Power": 0
         },
         "sources": null,
-        "notes": " ",
+        "notes": "Not available in-game, but can be purchased with channel points on Lava's [https://www.twitch.tv/lava_flame2 twitch channel].",
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
@@ -4063,7 +4063,8 @@
         "sources": {
             "sources": [
                 {"wikiName": "[[Efaunt]]", "txtName": "Efaunt"},
-                {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Chaotic Efaunt"}
+                {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Chaotic Efaunt"},
+                {"wikiName": "[[Gilded Efaunt]]", "txtName": "Gilded Efaunt"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -4074,7 +4075,8 @@
         "anvilProduction": null,
         "detDrops": [
             {"source": "Boss2A", "quantity": 1, "chance": 0.000667},
-            {"source": "Boss2B", "quantity": 1, "chance": 0.002}
+            {"source": "Boss2B", "quantity": 1, "chance": 0.002},
+            {"source": "Boss2C", "quantity": 1, "chance": 0.015}
         ]
     },
     "EquipmentHats27": {
@@ -4207,7 +4209,8 @@
         "sources": {
             "sources": [
                 {"wikiName": "[[Amarok]]", "txtName": "Amarok"},
-                {"wikiName": "[[Chaotic Amarok]]", "txtName": "Chaotic Amarok"}
+                {"wikiName": "[[Chaotic Amarok]]", "txtName": "Chaotic Amarok"},
+                {"wikiName": "[[Radiant Amarok]]", "txtName": "Radiant Amarok"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -4218,7 +4221,8 @@
         "anvilProduction": null,
         "detDrops": [
             {"source": "wolfA", "quantity": 1, "chance": 0.001},
-            {"source": "wolfB", "quantity": 1, "chance": 0.004}
+            {"source": "wolfB", "quantity": 1, "chance": 0.004},
+            {"source": "wolfC", "quantity": 1, "chance": 0.012}
         ]
     },
     "EquipmentHats42": {
@@ -5391,7 +5395,7 @@
                 {"item": "CraftMat5", "quantity": 20}
             ],
             "levelReqToCraft": 6,
-            "expGiven": 15,
+            "expGiven": 19,
             "no": 14,
             "tab": 1,
             "sellPrice": 530,
@@ -5832,8 +5836,8 @@
         "recipe": {
             "intID": "TestObj1",
             "recipe": [{"item": "Grasslands1", "quantity": 10}, {"item": "CopperBar", "quantity": 5}],
-            "levelReqToCraft": 3,
-            "expGiven": 5,
+            "levelReqToCraft": 2,
+            "expGiven": 10,
             "no": 2,
             "tab": 1,
             "sellPrice": 65,
@@ -6462,8 +6466,8 @@
         "recipe": {
             "intID": "EquipmentBows1",
             "recipe": [{"item": "Grasslands1", "quantity": 10}, {"item": "CraftMat1", "quantity": 15}],
-            "levelReqToCraft": 3,
-            "expGiven": 8,
+            "levelReqToCraft": 2,
+            "expGiven": 10,
             "no": 3,
             "tab": 1,
             "sellPrice": 75,
@@ -6926,7 +6930,7 @@
         "recipe": {
             "intID": "EquipmentWands1",
             "recipe": [{"item": "Grasslands1", "quantity": 10}, {"item": "OakTree", "quantity": 15}],
-            "levelReqToCraft": 3,
+            "levelReqToCraft": 2,
             "expGiven": 12,
             "no": 4,
             "tab": 1,
@@ -7381,19 +7385,19 @@
         "notes": " ",
         "recipe": {
             "intID": "EquipmentShirts1",
-            "recipe": [{"item": "Grasslands1", "quantity": 6}, {"item": "OakTree", "quantity": 8}],
+            "recipe": [{"item": "Grasslands1", "quantity": 6}, {"item": "OakTree", "quantity": 3}],
             "levelReqToCraft": 1,
-            "expGiven": 5,
+            "expGiven": 8,
             "no": 6,
             "tab": 1,
-            "sellPrice": 34,
+            "sellPrice": 24,
             "recipeFrom": [],
             "detailedRecipe": {
                 "detRecipe": [
                     {"indent": 0, "item": "Grasslands1", "quantity": 6},
-                    {"indent": 0, "item": "OakTree", "quantity": 8}
+                    {"indent": 0, "item": "OakTree", "quantity": 3}
                 ],
-                "detRecipeTotals": [{"item": "Grasslands1", "quantity": 6}, {"item": "OakTree", "quantity": 8}]
+                "detRecipeTotals": [{"item": "Grasslands1", "quantity": 6}, {"item": "OakTree", "quantity": 3}]
             }
         },
         "vendors": null,
@@ -7450,7 +7454,7 @@
             "expGiven": 15,
             "no": 37,
             "tab": 1,
-            "sellPrice": 209,
+            "sellPrice": 199,
             "recipeFrom": [
                 {
                     "wikiName": "[[Scripticus#The Smithing Grind|The Smithing Grind]]",
@@ -7463,9 +7467,9 @@
                     {"indent": 0, "item": "OakTree", "quantity": 50},
                     {"indent": 0, "item": "EquipmentShirts1", "quantity": 1},
                     {"indent": 1, "item": "Grasslands1", "quantity": 6},
-                    {"indent": 1, "item": "OakTree", "quantity": 8}
+                    {"indent": 1, "item": "OakTree", "quantity": 3}
                 ],
-                "detRecipeTotals": [{"item": "Grasslands1", "quantity": 31}, {"item": "OakTree", "quantity": 58}]
+                "detRecipeTotals": [{"item": "Grasslands1", "quantity": 31}, {"item": "OakTree", "quantity": 53}]
             }
         },
         "vendors": null,
@@ -7557,7 +7561,7 @@
             "expGiven": 120,
             "no": 56,
             "tab": 1,
-            "sellPrice": 3034,
+            "sellPrice": 2924,
             "recipeFrom": [
                 {"wikiName": "[[Tasks/Unlocks|Task Unlocks Tab 1]]", "txtName": "Task Unlocks Tab 1"}
             ],
@@ -7565,29 +7569,29 @@
                 "detRecipe": [
                     {"indent": 0, "item": "EquipmentShirts1", "quantity": 5},
                     {"indent": 1, "item": "Grasslands1", "quantity": 30},
-                    {"indent": 1, "item": "OakTree", "quantity": 40},
+                    {"indent": 1, "item": "OakTree", "quantity": 15},
                     {"indent": 0, "item": "EquipmentShirts2", "quantity": 2},
                     {"indent": 1, "item": "Grasslands1", "quantity": 50},
                     {"indent": 1, "item": "OakTree", "quantity": 100},
                     {"indent": 1, "item": "EquipmentShirts1", "quantity": 2},
                     {"indent": 2, "item": "Grasslands1", "quantity": 12},
-                    {"indent": 2, "item": "OakTree", "quantity": 16},
+                    {"indent": 2, "item": "OakTree", "quantity": 6},
                     {"indent": 0, "item": "EquipmentShirts25", "quantity": 2},
                     {"indent": 1, "item": "Grasslands4", "quantity": 80},
                     {"indent": 1, "item": "BirchTree", "quantity": 200},
                     {"indent": 1, "item": "EquipmentShirts1", "quantity": 2},
                     {"indent": 2, "item": "Grasslands1", "quantity": 12},
-                    {"indent": 2, "item": "OakTree", "quantity": 16},
+                    {"indent": 2, "item": "OakTree", "quantity": 6},
                     {"indent": 0, "item": "EquipmentShirts24", "quantity": 2},
                     {"indent": 1, "item": "CraftMat1", "quantity": 300},
                     {"indent": 1, "item": "EquipmentShirts16", "quantity": 2},
                     {"indent": 1, "item": "EquipmentShirts1", "quantity": 2},
                     {"indent": 2, "item": "Grasslands1", "quantity": 12},
-                    {"indent": 2, "item": "OakTree", "quantity": 16}
+                    {"indent": 2, "item": "OakTree", "quantity": 6}
                 ],
                 "detRecipeTotals": [
                     {"item": "Grasslands1", "quantity": 116},
-                    {"item": "OakTree", "quantity": 188},
+                    {"item": "OakTree", "quantity": 133},
                     {"item": "Grasslands4", "quantity": 80},
                     {"item": "BirchTree", "quantity": 200},
                     {"item": "CraftMat1", "quantity": 300},
@@ -7756,6 +7760,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 0.01},
             {"source": "wolfA", "quantity": 2, "chance": 0.01},
             {"source": "wolfB", "quantity": 4, "chance": 0.01},
+            {"source": "wolfC", "quantity": 2, "chance": 0.01},
             {"source": "ChestB1", "quantity": 1, "chance": 0.01}
         ]
     },
@@ -8541,7 +8546,7 @@
             "expGiven": 60,
             "no": 55,
             "tab": 1,
-            "sellPrice": 609,
+            "sellPrice": 599,
             "recipeFrom": [
                 {"wikiName": "[[Tasks/Unlocks|Task Unlocks Tab 1]]", "txtName": "Task Unlocks Tab 1"}
             ],
@@ -8551,13 +8556,13 @@
                     {"indent": 0, "item": "EquipmentShirts16", "quantity": 1},
                     {"indent": 0, "item": "EquipmentShirts1", "quantity": 1},
                     {"indent": 1, "item": "Grasslands1", "quantity": 6},
-                    {"indent": 1, "item": "OakTree", "quantity": 8}
+                    {"indent": 1, "item": "OakTree", "quantity": 3}
                 ],
                 "detRecipeTotals": [
                     {"item": "CraftMat1", "quantity": 150},
                     {"item": "EquipmentShirts16", "quantity": 1},
                     {"item": "Grasslands1", "quantity": 6},
-                    {"item": "OakTree", "quantity": 8}
+                    {"item": "OakTree", "quantity": 3}
                 ]
             }
         },
@@ -8612,7 +8617,7 @@
             "expGiven": 30,
             "no": 54,
             "tab": 1,
-            "sellPrice": 614,
+            "sellPrice": 604,
             "recipeFrom": [
                 {"wikiName": "[[Tasks/Unlocks|Task Unlocks Tab 1]]", "txtName": "Task Unlocks Tab 1"}
             ],
@@ -8622,13 +8627,13 @@
                     {"indent": 0, "item": "BirchTree", "quantity": 100},
                     {"indent": 0, "item": "EquipmentShirts1", "quantity": 1},
                     {"indent": 1, "item": "Grasslands1", "quantity": 6},
-                    {"indent": 1, "item": "OakTree", "quantity": 8}
+                    {"indent": 1, "item": "OakTree", "quantity": 3}
                 ],
                 "detRecipeTotals": [
                     {"item": "Grasslands4", "quantity": 40},
                     {"item": "BirchTree", "quantity": 100},
                     {"item": "Grasslands1", "quantity": 6},
-                    {"item": "OakTree", "quantity": 8}
+                    {"item": "OakTree", "quantity": 3}
                 ]
             }
         },
@@ -9233,19 +9238,19 @@
         "notes": " ",
         "recipe": {
             "intID": "EquipmentPants1",
-            "recipe": [{"item": "Grasslands2", "quantity": 10}, {"item": "CopperBar", "quantity": 5}],
+            "recipe": [{"item": "Grasslands2", "quantity": 6}, {"item": "CopperBar", "quantity": 3}],
             "levelReqToCraft": 4,
-            "expGiven": 7,
+            "expGiven": 14,
             "no": 7,
             "tab": 1,
-            "sellPrice": 85,
+            "sellPrice": 51,
             "recipeFrom": [],
             "detailedRecipe": {
                 "detRecipe": [
-                    {"indent": 0, "item": "Grasslands2", "quantity": 10},
-                    {"indent": 0, "item": "CopperBar", "quantity": 5}
+                    {"indent": 0, "item": "Grasslands2", "quantity": 6},
+                    {"indent": 0, "item": "CopperBar", "quantity": 3}
                 ],
-                "detRecipeTotals": [{"item": "Grasslands2", "quantity": 10}, {"item": "CopperBar", "quantity": 5}]
+                "detRecipeTotals": [{"item": "Grasslands2", "quantity": 6}, {"item": "CopperBar", "quantity": 3}]
             }
         },
         "vendors": null,
@@ -10039,23 +10044,23 @@
             "expGiven": 400,
             "no": 49,
             "tab": 1,
-            "sellPrice": 9230,
+            "sellPrice": 9128,
             "recipeFrom": [
                 {"wikiName": "[[Wode Board]]", "txtName": "Wode Board"}
             ],
             "detailedRecipe": {
                 "detRecipe": [
                     {"indent": 0, "item": "EquipmentPants1", "quantity": 3},
-                    {"indent": 1, "item": "Grasslands2", "quantity": 30},
-                    {"indent": 1, "item": "CopperBar", "quantity": 15},
+                    {"indent": 1, "item": "Grasslands2", "quantity": 18},
+                    {"indent": 1, "item": "CopperBar", "quantity": 9},
                     {"indent": 0, "item": "Forest2", "quantity": 275},
                     {"indent": 0, "item": "BirchTree", "quantity": 700}
                 ],
                 "detRecipeTotals": [
                     {"item": "Forest2", "quantity": 275},
                     {"item": "BirchTree", "quantity": 700},
-                    {"item": "Grasslands2", "quantity": 30},
-                    {"item": "CopperBar", "quantity": 15}
+                    {"item": "Grasslands2", "quantity": 18},
+                    {"item": "CopperBar", "quantity": 9}
                 ]
             }
         },
@@ -10144,21 +10149,21 @@
             "expGiven": 400,
             "no": 50,
             "tab": 1,
-            "sellPrice": 1655,
+            "sellPrice": 1553,
             "recipeFrom": [
                 {"wikiName": "[[Tasks/Unlocks|Task Unlocks Tab 1]]", "txtName": "Task Unlocks Tab 1"}
             ],
             "detailedRecipe": {
                 "detRecipe": [
                     {"indent": 0, "item": "EquipmentPants1", "quantity": 3},
-                    {"indent": 1, "item": "Grasslands2", "quantity": 30},
-                    {"indent": 1, "item": "CopperBar", "quantity": 15},
+                    {"indent": 1, "item": "Grasslands2", "quantity": 18},
+                    {"indent": 1, "item": "CopperBar", "quantity": 9},
                     {"indent": 0, "item": "Iron", "quantity": 200}
                 ],
                 "detRecipeTotals": [
                     {"item": "Iron", "quantity": 200},
-                    {"item": "Grasslands2", "quantity": 30},
-                    {"item": "CopperBar", "quantity": 15}
+                    {"item": "Grasslands2", "quantity": 18},
+                    {"item": "CopperBar", "quantity": 9}
                 ]
             }
         },
@@ -10243,7 +10248,7 @@
             "expGiven": 1,
             "no": 69,
             "tab": 1,
-            "sellPrice": 20460,
+            "sellPrice": 20256,
             "recipeFrom": [
                 {"wikiName": "[[Walking Stick]]", "txtName": "Walking Stick"}
             ],
@@ -10251,8 +10256,8 @@
                 "detRecipe": [
                     {"indent": 0, "item": "EquipmentPants15", "quantity": 2},
                     {"indent": 1, "item": "EquipmentPants1", "quantity": 6},
-                    {"indent": 2, "item": "Grasslands2", "quantity": 60},
-                    {"indent": 2, "item": "CopperBar", "quantity": 30},
+                    {"indent": 2, "item": "Grasslands2", "quantity": 36},
+                    {"indent": 2, "item": "CopperBar", "quantity": 18},
                     {"indent": 1, "item": "Forest2", "quantity": 550},
                     {"indent": 1, "item": "BirchTree", "quantity": 1400},
                     {"indent": 0, "item": "Fish1", "quantity": 500}
@@ -10261,8 +10266,8 @@
                     {"item": "Fish1", "quantity": 500},
                     {"item": "Forest2", "quantity": 550},
                     {"item": "BirchTree", "quantity": 1400},
-                    {"item": "Grasslands2", "quantity": 60},
-                    {"item": "CopperBar", "quantity": 30}
+                    {"item": "Grasslands2", "quantity": 36},
+                    {"item": "CopperBar", "quantity": 18}
                 ]
             }
         },
@@ -10310,7 +10315,7 @@
             "expGiven": 1,
             "no": 70,
             "tab": 1,
-            "sellPrice": 4810,
+            "sellPrice": 4606,
             "recipeFrom": [
                 {"wikiName": "[[Poop]]", "txtName": "Poop"}
             ],
@@ -10318,16 +10323,16 @@
                 "detRecipe": [
                     {"indent": 0, "item": "EquipmentPants18", "quantity": 2},
                     {"indent": 1, "item": "EquipmentPants1", "quantity": 6},
-                    {"indent": 2, "item": "Grasslands2", "quantity": 60},
-                    {"indent": 2, "item": "CopperBar", "quantity": 30},
+                    {"indent": 2, "item": "Grasslands2", "quantity": 36},
+                    {"indent": 2, "item": "CopperBar", "quantity": 18},
                     {"indent": 1, "item": "Iron", "quantity": 400},
                     {"indent": 0, "item": "Bug1", "quantity": 500}
                 ],
                 "detRecipeTotals": [
                     {"item": "Bug1", "quantity": 500},
                     {"item": "Iron", "quantity": 400},
-                    {"item": "Grasslands2", "quantity": 60},
-                    {"item": "CopperBar", "quantity": 30}
+                    {"item": "Grasslands2", "quantity": 36},
+                    {"item": "CopperBar", "quantity": 18}
                 ]
             }
         },
@@ -11073,7 +11078,7 @@
             "intID": "EquipmentShoes9",
             "recipe": [{"item": "Grasslands3", "quantity": 12}, {"item": "Leaf1", "quantity": 5}],
             "levelReqToCraft": 6,
-            "expGiven": 10,
+            "expGiven": 16,
             "no": 8,
             "tab": 1,
             "sellPrice": 104,
@@ -13796,19 +13801,19 @@
         "notes": " ",
         "recipe": {
             "intID": "EquipmentTools2",
-            "recipe": [{"item": "CopperBar", "quantity": 10}, {"item": "Grasslands2", "quantity": 15}],
+            "recipe": [{"item": "CopperBar", "quantity": 5}, {"item": "Grasslands2", "quantity": 10}],
             "levelReqToCraft": 3,
-            "expGiven": 10,
+            "expGiven": 13,
             "no": 9,
             "tab": 1,
-            "sellPrice": 145,
+            "sellPrice": 85,
             "recipeFrom": [],
             "detailedRecipe": {
                 "detRecipe": [
-                    {"indent": 0, "item": "CopperBar", "quantity": 10},
-                    {"indent": 0, "item": "Grasslands2", "quantity": 15}
+                    {"indent": 0, "item": "CopperBar", "quantity": 5},
+                    {"indent": 0, "item": "Grasslands2", "quantity": 10}
                 ],
-                "detRecipeTotals": [{"item": "CopperBar", "quantity": 10}, {"item": "Grasslands2", "quantity": 15}]
+                "detRecipeTotals": [{"item": "CopperBar", "quantity": 5}, {"item": "Grasslands2", "quantity": 10}]
             }
         },
         "vendors": null,
@@ -14518,26 +14523,26 @@
         "recipe": {
             "intID": "EquipmentToolsHatchet3",
             "recipe": [
-                {"item": "CopperBar", "quantity": 12},
-                {"item": "OakTree", "quantity": 30},
-                {"item": "CraftMat1", "quantity": 15}
+                {"item": "CopperBar", "quantity": 5},
+                {"item": "OakTree", "quantity": 10},
+                {"item": "CraftMat1", "quantity": 5}
             ],
             "levelReqToCraft": 4,
-            "expGiven": 10,
+            "expGiven": 13,
             "no": 11,
             "tab": 1,
-            "sellPrice": 189,
+            "sellPrice": 70,
             "recipeFrom": [],
             "detailedRecipe": {
                 "detRecipe": [
-                    {"indent": 0, "item": "CopperBar", "quantity": 12},
-                    {"indent": 0, "item": "OakTree", "quantity": 30},
-                    {"indent": 0, "item": "CraftMat1", "quantity": 15}
+                    {"indent": 0, "item": "CopperBar", "quantity": 5},
+                    {"indent": 0, "item": "OakTree", "quantity": 10},
+                    {"indent": 0, "item": "CraftMat1", "quantity": 5}
                 ],
                 "detRecipeTotals": [
-                    {"item": "CopperBar", "quantity": 12},
-                    {"item": "OakTree", "quantity": 30},
-                    {"item": "CraftMat1", "quantity": 15}
+                    {"item": "CopperBar", "quantity": 5},
+                    {"item": "OakTree", "quantity": 10},
+                    {"item": "CraftMat1", "quantity": 5}
                 ]
             }
         },
@@ -17616,6 +17621,7 @@
             {"source": "babayaga", "quantity": 15, "chance": 0.35},
             {"source": "wolfA", "quantity": 30, "chance": 0.35},
             {"source": "wolfB", "quantity": 60, "chance": 0.35},
+            {"source": "wolfC", "quantity": 30, "chance": 0.35},
             {"source": "ChestB1", "quantity": 15, "chance": 0.35}
         ]
     },
@@ -17673,6 +17679,7 @@
             {"source": "poopBig", "quantity": 30, "chance": 0.42},
             {"source": "wolfA", "quantity": 30, "chance": 0.42},
             {"source": "wolfB", "quantity": 60, "chance": 0.42},
+            {"source": "wolfC", "quantity": 30, "chance": 0.42},
             {"source": "ChestC1", "quantity": 15, "chance": 0.42},
             {"source": "snakeG", "quantity": 3, "chance": 0.005},
             {"source": "carrotO", "quantity": 4, "chance": 0.006}
@@ -17855,6 +17862,7 @@
             {"source": "potato", "quantity": 15, "chance": 0.001638},
             {"source": "Boss2A", "quantity": 30, "chance": 0.42},
             {"source": "Boss2B", "quantity": 30, "chance": 0.42},
+            {"source": "Boss3C", "quantity": 30, "chance": 0.42},
             {"source": "ChestB2", "quantity": 15, "chance": 0.42}
         ]
     },
@@ -18129,7 +18137,8 @@
         "sources": {
             "sources": [
                 {"wikiName": "[[Amarok]]", "txtName": "Amarok"},
-                {"wikiName": "[[Chaotic Amarok]]", "txtName": "Chaotic Amarok"}
+                {"wikiName": "[[Chaotic Amarok]]", "txtName": "Chaotic Amarok"},
+                {"wikiName": "[[Radiant Amarok]]", "txtName": "Radiant Amarok"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -18140,7 +18149,8 @@
         "anvilProduction": null,
         "detDrops": [
             {"source": "wolfA", "quantity": 1, "chance": 0.05},
-            {"source": "wolfB", "quantity": 3, "chance": 0.1}
+            {"source": "wolfB", "quantity": 3, "chance": 0.1},
+            {"source": "wolfC", "quantity": 10, "chance": 0.05}
         ]
     },
     "FoodPotOr1": {
@@ -18242,6 +18252,7 @@
             {"source": "babayaga", "quantity": 10, "chance": 0.2},
             {"source": "wolfA", "quantity": 20, "chance": 0.2},
             {"source": "wolfB", "quantity": 40, "chance": 0.2},
+            {"source": "wolfC", "quantity": 20, "chance": 0.2},
             {"source": "ChestB1", "quantity": 10, "chance": 0.2}
         ]
     },
@@ -18439,6 +18450,8 @@
             {"source": "snailZ", "quantity": 25, "chance": 0.00156},
             {"source": "Boss2A", "quantity": 50, "chance": 0.4},
             {"source": "Boss2B", "quantity": 50, "chance": 0.4},
+            {"source": "Boss2C", "quantity": 50, "chance": 0.4},
+            {"source": "Boss3C", "quantity": 50, "chance": 0.4},
             {"source": "ChestC2", "quantity": 25, "chance": 0.4}
         ]
     },
@@ -18515,6 +18528,7 @@
             {"source": "babayaga", "quantity": 5, "chance": 0.1},
             {"source": "wolfA", "quantity": 10, "chance": 0.1},
             {"source": "wolfB", "quantity": 20, "chance": 0.1},
+            {"source": "wolfC", "quantity": 10, "chance": 0.1},
             {"source": "ChestB1", "quantity": 5, "chance": 0.1},
             {"source": "Crystal0", "quantity": 5, "chance": 0.12},
             {"source": "Copper", "quantity": 5, "chance": 0.0013},
@@ -18767,6 +18781,7 @@
             {"source": "poopBig", "quantity": 20, "chance": 0.25},
             {"source": "wolfA", "quantity": 20, "chance": 0.25},
             {"source": "wolfB", "quantity": 40, "chance": 0.25},
+            {"source": "wolfC", "quantity": 20, "chance": 0.25},
             {"source": "ChestC1", "quantity": 10, "chance": 0.25}
         ]
     },
@@ -19572,6 +19587,7 @@
                 {"wikiName": "[[King Doot]]", "txtName": "King Doot"},
                 {"wikiName": "[[Efaunt]]", "txtName": "Efaunt"},
                 {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Chaotic Efaunt"},
+                {"wikiName": "[[Gilded Efaunt]]", "txtName": "Gilded Efaunt"},
                 {"wikiName": "[[DropTable8]]", "txtName": "DropTable8"}
             ],
             "recipeFrom": [],
@@ -19589,10 +19605,13 @@
             {"source": "snailZ", "quantity": 1, "chance": 1.17e-05},
             {"source": "Boss2A", "quantity": 2, "chance": 0.003},
             {"source": "Boss2B", "quantity": 2, "chance": 0.003},
+            {"source": "Boss2C", "quantity": 2, "chance": 0.003},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.003},
             {"source": "ChestC2", "quantity": 1, "chance": 0.003},
             {"source": "babaMummy", "quantity": 2, "chance": 0.2},
             {"source": "Boss2A", "quantity": 1, "chance": 0.07},
-            {"source": "Boss2B", "quantity": 1, "chance": 0.07}
+            {"source": "Boss2B", "quantity": 1, "chance": 0.07},
+            {"source": "Boss2C", "quantity": 1, "chance": 0.07}
         ]
     },
     "FoodEvent5": {
@@ -19845,6 +19864,7 @@
             {"source": "potato", "quantity": 1, "chance": 1.17e-05},
             {"source": "Boss2A", "quantity": 2, "chance": 0.003},
             {"source": "Boss2B", "quantity": 2, "chance": 0.003},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.003},
             {"source": "ChestB2", "quantity": 1, "chance": 0.003},
             {"source": "Crystal1", "quantity": 1, "chance": 0.0012},
             {"source": "steak", "quantity": 1, "chance": 9.6e-06},
@@ -19853,6 +19873,8 @@
             {"source": "snailZ", "quantity": 1, "chance": 1.17e-05},
             {"source": "Boss2A", "quantity": 2, "chance": 0.003},
             {"source": "Boss2B", "quantity": 2, "chance": 0.003},
+            {"source": "Boss2C", "quantity": 2, "chance": 0.003},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.003},
             {"source": "ChestC2", "quantity": 1, "chance": 0.003},
             {"source": "Crystal1", "quantity": 1, "chance": 0.0018},
             {"source": "FishSmall", "quantity": 1, "chance": 3.6e-05},
@@ -19920,6 +19942,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 0.00225},
             {"source": "wolfA", "quantity": 2, "chance": 0.00225},
             {"source": "wolfB", "quantity": 4, "chance": 0.00225},
+            {"source": "wolfC", "quantity": 2, "chance": 0.00225},
             {"source": "ChestB1", "quantity": 1, "chance": 0.00225},
             {"source": "Crystal0", "quantity": 1, "chance": 0.001},
             {"source": "goblinG", "quantity": 1, "chance": 1e-05},
@@ -19929,6 +19952,7 @@
             {"source": "poopBig", "quantity": 2, "chance": 0.0025},
             {"source": "wolfA", "quantity": 2, "chance": 0.0025},
             {"source": "wolfB", "quantity": 4, "chance": 0.0025},
+            {"source": "wolfC", "quantity": 2, "chance": 0.0025},
             {"source": "ChestC1", "quantity": 1, "chance": 0.0025},
             {"source": "poopSmall", "quantity": 1, "chance": 1.65e-05},
             {"source": "ratB", "quantity": 1, "chance": 1.65e-05},
@@ -20281,6 +20305,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 0.02},
             {"source": "wolfA", "quantity": 2, "chance": 0.02},
             {"source": "wolfB", "quantity": 4, "chance": 0.02},
+            {"source": "wolfC", "quantity": 2, "chance": 0.02},
             {"source": "ChestB1", "quantity": 1, "chance": 0.02},
             {"source": "Crystal0", "quantity": 1, "chance": 0.02},
             {"source": "goblinG", "quantity": 1, "chance": 0.0002},
@@ -20290,6 +20315,7 @@
             {"source": "poopBig", "quantity": 2, "chance": 0.05},
             {"source": "wolfA", "quantity": 2, "chance": 0.05},
             {"source": "wolfB", "quantity": 4, "chance": 0.05},
+            {"source": "wolfC", "quantity": 2, "chance": 0.05},
             {"source": "ChestC1", "quantity": 1, "chance": 0.05}
         ]
     },
@@ -20398,6 +20424,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 0.00045},
             {"source": "wolfA", "quantity": 2, "chance": 0.00045},
             {"source": "wolfB", "quantity": 4, "chance": 0.00045},
+            {"source": "wolfC", "quantity": 2, "chance": 0.00045},
             {"source": "ChestB1", "quantity": 1, "chance": 0.00045},
             {"source": "Crystal0", "quantity": 1, "chance": 0.0002},
             {"source": "goblinG", "quantity": 1, "chance": 2e-06},
@@ -20407,6 +20434,7 @@
             {"source": "poopBig", "quantity": 2, "chance": 0.0005},
             {"source": "wolfA", "quantity": 2, "chance": 0.0005},
             {"source": "wolfB", "quantity": 4, "chance": 0.0005},
+            {"source": "wolfC", "quantity": 2, "chance": 0.0005},
             {"source": "ChestC1", "quantity": 1, "chance": 0.0005},
             {"source": "poopSmall", "quantity": 1, "chance": 3.3e-06},
             {"source": "ratB", "quantity": 1, "chance": 3.3e-06},
@@ -20444,6 +20472,7 @@
             {"source": "potato", "quantity": 1, "chance": 3.51e-06},
             {"source": "Boss2A", "quantity": 2, "chance": 0.0009},
             {"source": "Boss2B", "quantity": 2, "chance": 0.0009},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.0009},
             {"source": "ChestB2", "quantity": 1, "chance": 0.0009},
             {"source": "Crystal1", "quantity": 1, "chance": 0.00036},
             {"source": "steak", "quantity": 1, "chance": 2.88e-06},
@@ -20452,6 +20481,8 @@
             {"source": "snailZ", "quantity": 1, "chance": 3.51e-06},
             {"source": "Boss2A", "quantity": 2, "chance": 0.0009},
             {"source": "Boss2B", "quantity": 2, "chance": 0.0009},
+            {"source": "Boss2C", "quantity": 2, "chance": 0.0009},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.0009},
             {"source": "ChestC2", "quantity": 1, "chance": 0.0009},
             {"source": "Crystal1", "quantity": 1, "chance": 0.00054},
             {"source": "FishSmall", "quantity": 1, "chance": 1.08e-05},
@@ -21480,8 +21511,8 @@
             "recipeFrom": [],
             "questAss": [
                 {
-                    "wikiName": "[[Scripticus#Seeking Foreign Aid|Seeking Foreign Aid]]",
-                    "txtName": "Scripticus: Seeking Foreign Aid"
+                    "wikiName": "[[Scripticus#Stiltzcho, the Leaf Scout|Stiltzcho, the Leaf Scout]]",
+                    "txtName": "Scripticus: Stiltzcho, the Leaf Scout"
                 }
             ]
         },
@@ -21771,7 +21802,8 @@
         "sources": {
             "sources": [
                 {"wikiName": "[[Amarok]]", "txtName": "Amarok"},
-                {"wikiName": "[[Chaotic Amarok]]", "txtName": "Chaotic Amarok"}
+                {"wikiName": "[[Chaotic Amarok]]", "txtName": "Chaotic Amarok"},
+                {"wikiName": "[[Radiant Amarok]]", "txtName": "Radiant Amarok"}
             ],
             "recipeFrom": [],
             "questAss": [
@@ -21787,7 +21819,8 @@
         "anvilProduction": null,
         "detDrops": [
             {"source": "wolfA", "quantity": 1, "chance": 0.3},
-            {"source": "wolfB", "quantity": 3, "chance": 0.4}
+            {"source": "wolfB", "quantity": 3, "chance": 0.4},
+            {"source": "wolfC", "quantity": 1, "chance": 0.3}
         ]
     },
     "Quest18": {
@@ -21922,6 +21955,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 0.3},
             {"source": "wolfA", "quantity": 2, "chance": 0.3},
             {"source": "wolfB", "quantity": 4, "chance": 0.3},
+            {"source": "wolfC", "quantity": 2, "chance": 0.3},
             {"source": "ChestB1", "quantity": 1, "chance": 0.3}
         ]
     },
@@ -22072,6 +22106,7 @@
             {"source": "potato", "quantity": 3, "chance": 0.00117},
             {"source": "Boss2A", "quantity": 6, "chance": 0.3},
             {"source": "Boss2B", "quantity": 6, "chance": 0.3},
+            {"source": "Boss3C", "quantity": 6, "chance": 0.3},
             {"source": "ChestB2", "quantity": 3, "chance": 0.3},
             {"source": "Crystal1", "quantity": 3, "chance": 0.12},
             {"source": "steak", "quantity": 3, "chance": 0.00096},
@@ -22080,6 +22115,8 @@
             {"source": "snailZ", "quantity": 3, "chance": 0.00117},
             {"source": "Boss2A", "quantity": 6, "chance": 0.3},
             {"source": "Boss2B", "quantity": 6, "chance": 0.3},
+            {"source": "Boss2C", "quantity": 6, "chance": 0.3},
+            {"source": "Boss3C", "quantity": 6, "chance": 0.3},
             {"source": "ChestC2", "quantity": 3, "chance": 0.3},
             {"source": "ratB", "quantity": 1, "chance": 0.16},
             {"source": "ratB", "quantity": 1, "chance": 0.16}
@@ -22140,6 +22177,7 @@
             {"source": "babayaga", "quantity": 4, "chance": 0.5},
             {"source": "wolfA", "quantity": 8, "chance": 0.5},
             {"source": "wolfB", "quantity": 16, "chance": 0.5},
+            {"source": "wolfC", "quantity": 8, "chance": 0.5},
             {"source": "ChestB1", "quantity": 4, "chance": 0.5},
             {"source": "Crystal0", "quantity": 6, "chance": 0.2},
             {"source": "goblinG", "quantity": 6, "chance": 0.002},
@@ -22149,6 +22187,7 @@
             {"source": "poopBig", "quantity": 12, "chance": 0.5},
             {"source": "wolfA", "quantity": 12, "chance": 0.5},
             {"source": "wolfB", "quantity": 24, "chance": 0.5},
+            {"source": "wolfC", "quantity": 12, "chance": 0.5},
             {"source": "ChestC1", "quantity": 6, "chance": 0.5},
             {"source": "poopSmall", "quantity": 3, "chance": 0.003},
             {"source": "ratB", "quantity": 3, "chance": 0.003},
@@ -22170,6 +22209,7 @@
             {"source": "potato", "quantity": 8, "chance": 0.00195},
             {"source": "Boss2A", "quantity": 16, "chance": 0.5},
             {"source": "Boss2B", "quantity": 16, "chance": 0.5},
+            {"source": "Boss3C", "quantity": 16, "chance": 0.5},
             {"source": "ChestB2", "quantity": 8, "chance": 0.5},
             {"source": "Crystal1", "quantity": 8, "chance": 0.2},
             {"source": "steak", "quantity": 8, "chance": 0.0016},
@@ -22178,6 +22218,8 @@
             {"source": "snailZ", "quantity": 8, "chance": 0.00195},
             {"source": "Boss2A", "quantity": 16, "chance": 0.5},
             {"source": "Boss2B", "quantity": 16, "chance": 0.5},
+            {"source": "Boss2C", "quantity": 16, "chance": 0.5},
+            {"source": "Boss3C", "quantity": 16, "chance": 0.5},
             {"source": "ChestC2", "quantity": 8, "chance": 0.5},
             {"source": "Crystal2", "quantity": 8, "chance": 0.3},
             {"source": "sheep", "quantity": 8, "chance": 0.00125},
@@ -22677,6 +22719,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 0.12},
             {"source": "wolfA", "quantity": 2, "chance": 0.12},
             {"source": "wolfB", "quantity": 4, "chance": 0.12},
+            {"source": "wolfC", "quantity": 2, "chance": 0.12},
             {"source": "ChestB1", "quantity": 1, "chance": 0.12}
         ]
     },
@@ -22865,6 +22908,7 @@
             {"source": "poopBig", "quantity": 2, "chance": 0.12},
             {"source": "wolfA", "quantity": 2, "chance": 0.12},
             {"source": "wolfB", "quantity": 4, "chance": 0.12},
+            {"source": "wolfC", "quantity": 2, "chance": 0.12},
             {"source": "ChestC1", "quantity": 1, "chance": 0.12},
             {"source": "poopSmall", "quantity": 1, "chance": 0.00054},
             {"source": "ratB", "quantity": 1, "chance": 0.00054},
@@ -23081,6 +23125,7 @@
             {"source": "potato", "quantity": 1, "chance": 0.000156},
             {"source": "Boss2A", "quantity": 2, "chance": 0.04},
             {"source": "Boss2B", "quantity": 2, "chance": 0.04},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.04},
             {"source": "ChestB2", "quantity": 1, "chance": 0.04}
         ]
     },
@@ -23150,6 +23195,8 @@
             {"source": "snailZ", "quantity": 1, "chance": 0.000273},
             {"source": "Boss2A", "quantity": 2, "chance": 0.07},
             {"source": "Boss2B", "quantity": 2, "chance": 0.07},
+            {"source": "Boss2C", "quantity": 2, "chance": 0.07},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.07},
             {"source": "ChestC2", "quantity": 1, "chance": 0.07}
         ]
     },
@@ -23400,7 +23447,7 @@
             "intID": "MaxCapBag1",
             "recipe": [{"item": "Copper", "quantity": 120}],
             "levelReqToCraft": 5,
-            "expGiven": 13,
+            "expGiven": 18,
             "no": 10,
             "tab": 1,
             "sellPrice": 360,
@@ -23834,7 +23881,7 @@
             "intID": "MaxCapBag7",
             "recipe": [{"item": "OakTree", "quantity": 150}, {"item": "CraftMat5", "quantity": 30}],
             "levelReqToCraft": 6,
-            "expGiven": 13,
+            "expGiven": 18,
             "no": 12,
             "tab": 1,
             "sellPrice": 660,
@@ -24291,7 +24338,7 @@
                 {"item": "CopperBar", "quantity": 15}
             ],
             "levelReqToCraft": 7,
-            "expGiven": 20,
+            "expGiven": 22,
             "no": 15,
             "tab": 1,
             "sellPrice": 550,
@@ -24859,8 +24906,8 @@
         "sources": {
             "sources": [
                 {
-                    "wikiName": "[[Scripticus#Seeking Foreign Aid|Seeking Foreign Aid]]",
-                    "txtName": "Scripticus: Seeking Foreign Aid"
+                    "wikiName": "[[Scripticus#Stiltzcho, the Leaf Scout|Stiltzcho, the Leaf Scout]]",
+                    "txtName": "Scripticus: Stiltzcho, the Leaf Scout"
                 }
             ],
             "recipeFrom": [],
@@ -26871,6 +26918,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 0.00063},
             {"source": "wolfA", "quantity": 2, "chance": 0.00063},
             {"source": "wolfB", "quantity": 4, "chance": 0.00063},
+            {"source": "wolfC", "quantity": 2, "chance": 0.00063},
             {"source": "ChestB1", "quantity": 1, "chance": 0.00063}
         ]
     },
@@ -26924,6 +26972,7 @@
             {"source": "poopBig", "quantity": 2, "chance": 0.00063},
             {"source": "wolfA", "quantity": 2, "chance": 0.00063},
             {"source": "wolfB", "quantity": 4, "chance": 0.00063},
+            {"source": "wolfC", "quantity": 2, "chance": 0.00063},
             {"source": "ChestC1", "quantity": 1, "chance": 0.00063}
         ]
     },
@@ -27076,6 +27125,7 @@
             {"source": "potato", "quantity": 1, "chance": 2.457e-06},
             {"source": "Boss2A", "quantity": 2, "chance": 0.00063},
             {"source": "Boss2B", "quantity": 2, "chance": 0.00063},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.00063},
             {"source": "ChestB2", "quantity": 1, "chance": 0.00063}
         ]
     },
@@ -27124,6 +27174,8 @@
             {"source": "snailZ", "quantity": 1, "chance": 2.457e-06},
             {"source": "Boss2A", "quantity": 2, "chance": 0.00063},
             {"source": "Boss2B", "quantity": 2, "chance": 0.00063},
+            {"source": "Boss2C", "quantity": 2, "chance": 0.00063},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.00063},
             {"source": "ChestC2", "quantity": 1, "chance": 0.00063}
         ]
     },
@@ -27360,6 +27412,7 @@
             {"source": "potato", "quantity": 1, "chance": 5.1597e-07},
             {"source": "Boss2A", "quantity": 2, "chance": 0.0001323},
             {"source": "Boss2B", "quantity": 2, "chance": 0.0001323},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.0001323},
             {"source": "ChestB2", "quantity": 1, "chance": 0.0001323},
             {"source": "Crystal1", "quantity": 1, "chance": 5.292e-05},
             {"source": "steak", "quantity": 1, "chance": 4.2336e-07},
@@ -27368,6 +27421,8 @@
             {"source": "snailZ", "quantity": 1, "chance": 5.1597e-07},
             {"source": "Boss2A", "quantity": 2, "chance": 0.0001323},
             {"source": "Boss2B", "quantity": 2, "chance": 0.0001323},
+            {"source": "Boss2C", "quantity": 2, "chance": 0.0001323},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.0001323},
             {"source": "ChestC2", "quantity": 1, "chance": 0.0001323},
             {"source": "Crystal1", "quantity": 1, "chance": 7.938e-05},
             {"source": "FishSmall", "quantity": 1, "chance": 1.5876e-06},
@@ -27806,6 +27861,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 0.000127575},
             {"source": "wolfA", "quantity": 2, "chance": 0.000127575},
             {"source": "wolfB", "quantity": 4, "chance": 0.000127575},
+            {"source": "wolfC", "quantity": 2, "chance": 0.000127575},
             {"source": "ChestB1", "quantity": 1, "chance": 0.000127575},
             {"source": "Crystal0", "quantity": 1, "chance": 5.67e-05},
             {"source": "goblinG", "quantity": 1, "chance": 5.67e-07},
@@ -27815,6 +27871,7 @@
             {"source": "poopBig", "quantity": 2, "chance": 0.00014175},
             {"source": "wolfA", "quantity": 2, "chance": 0.00014175},
             {"source": "wolfB", "quantity": 4, "chance": 0.00014175},
+            {"source": "wolfC", "quantity": 2, "chance": 0.00014175},
             {"source": "ChestC1", "quantity": 1, "chance": 0.00014175},
             {"source": "poopSmall", "quantity": 1, "chance": 9.3555e-07},
             {"source": "ratB", "quantity": 1, "chance": 9.3555e-07},
@@ -28046,6 +28103,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 0.000127575},
             {"source": "wolfA", "quantity": 2, "chance": 0.000127575},
             {"source": "wolfB", "quantity": 4, "chance": 0.000127575},
+            {"source": "wolfC", "quantity": 2, "chance": 0.000127575},
             {"source": "ChestB1", "quantity": 1, "chance": 0.000127575},
             {"source": "Crystal0", "quantity": 1, "chance": 5.67e-05},
             {"source": "goblinG", "quantity": 1, "chance": 5.67e-07},
@@ -28055,6 +28113,7 @@
             {"source": "poopBig", "quantity": 2, "chance": 0.00014175},
             {"source": "wolfA", "quantity": 2, "chance": 0.00014175},
             {"source": "wolfB", "quantity": 4, "chance": 0.00014175},
+            {"source": "wolfC", "quantity": 2, "chance": 0.00014175},
             {"source": "ChestC1", "quantity": 1, "chance": 0.00014175},
             {"source": "poopSmall", "quantity": 1, "chance": 9.3555e-07},
             {"source": "ratB", "quantity": 1, "chance": 9.3555e-07},
@@ -28969,6 +29028,7 @@
             {"source": "potato", "quantity": 1, "chance": 5.1597e-07},
             {"source": "Boss2A", "quantity": 2, "chance": 0.0001323},
             {"source": "Boss2B", "quantity": 2, "chance": 0.0001323},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.0001323},
             {"source": "ChestB2", "quantity": 1, "chance": 0.0001323},
             {"source": "Crystal1", "quantity": 1, "chance": 5.292e-05},
             {"source": "steak", "quantity": 1, "chance": 4.2336e-07},
@@ -28977,6 +29037,8 @@
             {"source": "snailZ", "quantity": 1, "chance": 5.1597e-07},
             {"source": "Boss2A", "quantity": 2, "chance": 0.0001323},
             {"source": "Boss2B", "quantity": 2, "chance": 0.0001323},
+            {"source": "Boss2C", "quantity": 2, "chance": 0.0001323},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.0001323},
             {"source": "ChestC2", "quantity": 1, "chance": 0.0001323},
             {"source": "Crystal1", "quantity": 1, "chance": 7.938e-05},
             {"source": "FishSmall", "quantity": 1, "chance": 1.5876e-06},
@@ -29341,7 +29403,8 @@
         "sources": {
             "sources": [
                 {"wikiName": "[[Amarok]]", "txtName": "Amarok"},
-                {"wikiName": "[[Chaotic Amarok]]", "txtName": "Chaotic Amarok"}
+                {"wikiName": "[[Chaotic Amarok]]", "txtName": "Chaotic Amarok"},
+                {"wikiName": "[[Radiant Amarok]]", "txtName": "Radiant Amarok"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -29352,7 +29415,8 @@
         "anvilProduction": null,
         "detDrops": [
             {"source": "wolfA", "quantity": 1, "chance": 0.0007},
-            {"source": "wolfB", "quantity": 1, "chance": 0.0033}
+            {"source": "wolfB", "quantity": 1, "chance": 0.0033},
+            {"source": "wolfC", "quantity": 1, "chance": 0.0085}
         ]
     },
     "ObolEfauntA": {
@@ -29382,7 +29446,8 @@
         "sources": {
             "sources": [
                 {"wikiName": "[[Efaunt]]", "txtName": "Efaunt"},
-                {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Chaotic Efaunt"}
+                {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Chaotic Efaunt"},
+                {"wikiName": "[[Gilded Efaunt]]", "txtName": "Gilded Efaunt"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -29393,7 +29458,8 @@
         "anvilProduction": null,
         "detDrops": [
             {"source": "Boss2A", "quantity": 1, "chance": 0.001},
-            {"source": "Boss2B", "quantity": 1, "chance": 0.003}
+            {"source": "Boss2B", "quantity": 1, "chance": 0.003},
+            {"source": "Boss2C", "quantity": 1, "chance": 0.018}
         ]
     },
     "ObolChizoarA": {
@@ -29423,7 +29489,8 @@
         "sources": {
             "sources": [
                 {"wikiName": "[[Chizoar]]", "txtName": "Chizoar"},
-                {"wikiName": "[[Chaotic Chizoar]]", "txtName": "Chaotic Chizoar"}
+                {"wikiName": "[[Chaotic Chizoar]]", "txtName": "Chaotic Chizoar"},
+                {"wikiName": "[[Blighted Chizoar]]", "txtName": "Blighted Chizoar"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -29434,7 +29501,8 @@
         "anvilProduction": null,
         "detDrops": [
             {"source": "Boss3A", "quantity": 1, "chance": 0.0008},
-            {"source": "Boss3B", "quantity": 1, "chance": 0.002}
+            {"source": "Boss3B", "quantity": 1, "chance": 0.002},
+            {"source": "Boss3C", "quantity": 1, "chance": 0.01}
         ]
     },
     "ObolSlush": {
@@ -29760,6 +29828,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 0.000137025},
             {"source": "wolfA", "quantity": 2, "chance": 0.000137025},
             {"source": "wolfB", "quantity": 4, "chance": 0.000137025},
+            {"source": "wolfC", "quantity": 2, "chance": 0.000137025},
             {"source": "ChestB1", "quantity": 1, "chance": 0.000137025},
             {"source": "Crystal0", "quantity": 1, "chance": 6.09e-05},
             {"source": "goblinG", "quantity": 1, "chance": 6.09e-07},
@@ -29769,6 +29838,7 @@
             {"source": "poopBig", "quantity": 2, "chance": 0.00015225},
             {"source": "wolfA", "quantity": 2, "chance": 0.00015225},
             {"source": "wolfB", "quantity": 4, "chance": 0.00015225},
+            {"source": "wolfC", "quantity": 2, "chance": 0.00015225},
             {"source": "ChestC1", "quantity": 1, "chance": 0.00015225},
             {"source": "poopSmall", "quantity": 1, "chance": 1.00485e-06},
             {"source": "ratB", "quantity": 1, "chance": 1.00485e-06},
@@ -30194,6 +30264,7 @@
             {"source": "potato", "quantity": 1, "chance": 7.1253e-07},
             {"source": "Boss2A", "quantity": 2, "chance": 0.0001827},
             {"source": "Boss2B", "quantity": 2, "chance": 0.0001827},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.0001827},
             {"source": "ChestB2", "quantity": 1, "chance": 0.0001827},
             {"source": "Crystal1", "quantity": 1, "chance": 7.308e-05},
             {"source": "steak", "quantity": 1, "chance": 5.8464e-07},
@@ -30202,6 +30273,8 @@
             {"source": "snailZ", "quantity": 1, "chance": 7.1253e-07},
             {"source": "Boss2A", "quantity": 2, "chance": 0.0001827},
             {"source": "Boss2B", "quantity": 2, "chance": 0.0001827},
+            {"source": "Boss2C", "quantity": 2, "chance": 0.0001827},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.0001827},
             {"source": "ChestC2", "quantity": 1, "chance": 0.0001827},
             {"source": "Crystal1", "quantity": 1, "chance": 0.00010962},
             {"source": "FishSmall", "quantity": 1, "chance": 2.1924e-06},
@@ -31732,6 +31805,8 @@
             {"source": "snailZ", "quantity": 1, "chance": 3.9e-05},
             {"source": "Boss2A", "quantity": 2, "chance": 0.01},
             {"source": "Boss2B", "quantity": 2, "chance": 0.01},
+            {"source": "Boss2C", "quantity": 2, "chance": 0.01},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.01},
             {"source": "ChestC2", "quantity": 1, "chance": 0.01}
         ]
     },
@@ -33182,6 +33257,7 @@
             {"source": "potato", "quantity": 1, "chance": 1.56e-06},
             {"source": "Boss2A", "quantity": 2, "chance": 0.0004},
             {"source": "Boss2B", "quantity": 2, "chance": 0.0004},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.0004},
             {"source": "ChestB2", "quantity": 1, "chance": 0.0004}
         ]
     },
@@ -33536,6 +33612,8 @@
             {"source": "snailZ", "quantity": 1, "chance": 5.85e-07},
             {"source": "Boss2A", "quantity": 2, "chance": 0.00015},
             {"source": "Boss2B", "quantity": 2, "chance": 0.00015},
+            {"source": "Boss2C", "quantity": 2, "chance": 0.00015},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.00015},
             {"source": "ChestC2", "quantity": 1, "chance": 0.00015}
         ]
     },
@@ -35171,8 +35249,8 @@
         "vendors": null,
         "anvilProduction": null,
         "detDrops": [
-            {"source": "sheepB", "quantity": 2, "chance": 0.01},
-            {"source": "snakeY", "quantity": 2, "chance": 0.01},
+            {"source": "sheepB", "quantity": 2, "chance": 0.04},
+            {"source": "snakeY", "quantity": 2, "chance": 0.02},
             {"source": "EasterEvent2", "quantity": 2, "chance": 0.25}
         ]
     },
@@ -35526,8 +35604,8 @@
         "vendors": null,
         "anvilProduction": null,
         "detDrops": [
-            {"source": "sheepB", "quantity": 3, "chance": 0.03},
-            {"source": "snakeY", "quantity": 3, "chance": 0.03},
+            {"source": "sheepB", "quantity": 2, "chance": 0.08},
+            {"source": "snakeY", "quantity": 2, "chance": 0.05},
             {"source": "EasterEvent2", "quantity": 3, "chance": 0.25}
         ]
     },
@@ -35775,6 +35853,7 @@
             {"source": "potato", "quantity": 1, "chance": 1.95e-05},
             {"source": "Boss2A", "quantity": 2, "chance": 0.005},
             {"source": "Boss2B", "quantity": 2, "chance": 0.005},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.005},
             {"source": "ChestB2", "quantity": 1, "chance": 0.005}
         ]
     },
@@ -35945,8 +36024,8 @@
         "vendors": null,
         "anvilProduction": null,
         "detDrops": [
-            {"source": "sheepB", "quantity": 3, "chance": 0.02},
-            {"source": "snakeY", "quantity": 3, "chance": 0.02},
+            {"source": "sheepB", "quantity": 2, "chance": 0.07},
+            {"source": "snakeY", "quantity": 2, "chance": 0.04},
             {"source": "EasterEvent2", "quantity": 3, "chance": 0.25}
         ]
     },
@@ -36161,6 +36240,7 @@
             {"source": "poopBig", "quantity": 2, "chance": 0.03},
             {"source": "wolfA", "quantity": 2, "chance": 0.03},
             {"source": "wolfB", "quantity": 4, "chance": 0.03},
+            {"source": "wolfC", "quantity": 2, "chance": 0.03},
             {"source": "ChestC1", "quantity": 1, "chance": 0.03},
             {"source": "Crystal1", "quantity": 1, "chance": 0.001},
             {"source": "Bug1", "quantity": 1, "chance": 3e-05},
@@ -36366,8 +36446,10 @@
         },
         "sources": {
             "sources": [
+                {"wikiName": "[[Radiant Amarok]]", "txtName": "Radiant Amarok"},
                 {"wikiName": "[[Biggie Hours]]", "txtName": "Biggie Hours"},
                 {"wikiName": "[[King Doot]]", "txtName": "King Doot"},
+                {"wikiName": "[[Blighted Chizoar]]", "txtName": "Blighted Chizoar"},
                 {"wikiName": "[[SuperDropTable1]]", "txtName": "SuperDropTable1"},
                 {"wikiName": "[[SuperDropTable2]]", "txtName": "SuperDropTable2"},
                 {
@@ -36427,6 +36509,7 @@
             {"source": "babayaga", "quantity": 2, "chance": 0.003825},
             {"source": "wolfA", "quantity": 4, "chance": 0.003825},
             {"source": "wolfB", "quantity": 8, "chance": 0.003825},
+            {"source": "wolfC", "quantity": 4, "chance": 0.003825},
             {"source": "ChestB1", "quantity": 2, "chance": 0.003825},
             {"source": "Crystal0", "quantity": 2, "chance": 0.0017},
             {"source": "goblinG", "quantity": 2, "chance": 1.7e-05},
@@ -36436,6 +36519,7 @@
             {"source": "poopBig", "quantity": 4, "chance": 0.00425},
             {"source": "wolfA", "quantity": 4, "chance": 0.00425},
             {"source": "wolfB", "quantity": 8, "chance": 0.00425},
+            {"source": "wolfC", "quantity": 4, "chance": 0.00425},
             {"source": "ChestC1", "quantity": 2, "chance": 0.00425},
             {"source": "poopSmall", "quantity": 2, "chance": 2.805e-05},
             {"source": "ratB", "quantity": 2, "chance": 2.805e-05},
@@ -36473,6 +36557,7 @@
             {"source": "potato", "quantity": 3, "chance": 1.638e-05},
             {"source": "Boss2A", "quantity": 6, "chance": 0.0042},
             {"source": "Boss2B", "quantity": 6, "chance": 0.0042},
+            {"source": "Boss3C", "quantity": 6, "chance": 0.0042},
             {"source": "ChestB2", "quantity": 3, "chance": 0.0042},
             {"source": "Crystal1", "quantity": 3, "chance": 0.00168},
             {"source": "steak", "quantity": 3, "chance": 1.344e-05},
@@ -36481,6 +36566,8 @@
             {"source": "snailZ", "quantity": 3, "chance": 1.638e-05},
             {"source": "Boss2A", "quantity": 6, "chance": 0.0042},
             {"source": "Boss2B", "quantity": 6, "chance": 0.0042},
+            {"source": "Boss2C", "quantity": 6, "chance": 0.0042},
+            {"source": "Boss3C", "quantity": 6, "chance": 0.0042},
             {"source": "ChestC2", "quantity": 3, "chance": 0.0042},
             {"source": "Crystal1", "quantity": 3, "chance": 0.00252},
             {"source": "FishSmall", "quantity": 3, "chance": 5.04e-05},
@@ -36499,8 +36586,10 @@
             {"source": "Bug2", "quantity": 3, "chance": 6.3e-05},
             {"source": "Bug3", "quantity": 3, "chance": 6.3e-05},
             {"source": "Bug4", "quantity": 3, "chance": 6.3e-05},
+            {"source": "wolfC", "quantity": 1, "chance": 0.25},
             {"source": "babaHour", "quantity": 2, "chance": 0.4},
-            {"source": "babaMummy", "quantity": 1, "chance": 1}
+            {"source": "babaMummy", "quantity": 1, "chance": 1},
+            {"source": "Boss3C", "quantity": 1, "chance": 0.03}
         ]
     },
     "StoneZ2": {
@@ -36756,6 +36845,10 @@
         },
         "sources": {
             "sources": [
+                {
+                    "wikiName": "[[Nebula Neddy#Task Requirement Affirmative|Task Requirement Affirmative]]",
+                    "txtName": "Nebula Neddy: Task Requirement Affirmative"
+                },
                 {
                     "wikiName": "[[Alchemy#Liquid Shop|Alchemy Liquid Shop]]",
                     "txtName": "Alchemy: Liquid Shop"
@@ -38041,7 +38134,8 @@
         "sources": {
             "sources": [
                 {"wikiName": "[[Efaunt]]", "txtName": "Efaunt"},
-                {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Chaotic Efaunt"}
+                {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Chaotic Efaunt"},
+                {"wikiName": "[[Gilded Efaunt]]", "txtName": "Gilded Efaunt"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -38052,7 +38146,8 @@
         "anvilProduction": null,
         "detDrops": [
             {"source": "Boss2A", "quantity": 1, "chance": 0.3},
-            {"source": "Boss2B", "quantity": 3, "chance": 0.4}
+            {"source": "Boss2B", "quantity": 3, "chance": 0.4},
+            {"source": "Boss2C", "quantity": 12, "chance": 0.9}
         ]
     },
     "EfauntDrop2": {
@@ -38066,7 +38161,8 @@
         },
         "sources": {
             "sources": [
-                {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Chaotic Efaunt"}
+                {"wikiName": "[[Chaotic Efaunt]]", "txtName": "Chaotic Efaunt"},
+                {"wikiName": "[[Gilded Efaunt]]", "txtName": "Gilded Efaunt"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -38076,7 +38172,8 @@
         "vendors": null,
         "anvilProduction": null,
         "detDrops": [
-            {"source": "Boss2B", "quantity": 1, "chance": 0.2}
+            {"source": "Boss2B", "quantity": 1, "chance": 0.2},
+            {"source": "Boss2C", "quantity": 4, "chance": 0.5}
         ]
     },
     "Trophy1": {
@@ -38170,6 +38267,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 1.35e-06},
             {"source": "wolfA", "quantity": 2, "chance": 1.35e-06},
             {"source": "wolfB", "quantity": 4, "chance": 1.35e-06},
+            {"source": "wolfC", "quantity": 2, "chance": 1.35e-06},
             {"source": "ChestB1", "quantity": 1, "chance": 1.35e-06},
             {"source": "Crystal0", "quantity": 1, "chance": 6e-07},
             {"source": "goblinG", "quantity": 1, "chance": 6e-09},
@@ -38179,6 +38277,7 @@
             {"source": "poopBig", "quantity": 2, "chance": 1.5e-06},
             {"source": "wolfA", "quantity": 2, "chance": 1.5e-06},
             {"source": "wolfB", "quantity": 4, "chance": 1.5e-06},
+            {"source": "wolfC", "quantity": 2, "chance": 1.5e-06},
             {"source": "ChestC1", "quantity": 1, "chance": 1.5e-06},
             {"source": "poopSmall", "quantity": 1, "chance": 9.9e-09},
             {"source": "ratB", "quantity": 1, "chance": 9.9e-09},
@@ -38216,6 +38315,7 @@
             {"source": "potato", "quantity": 1, "chance": 7.02e-09},
             {"source": "Boss2A", "quantity": 2, "chance": 1.8e-06},
             {"source": "Boss2B", "quantity": 2, "chance": 1.8e-06},
+            {"source": "Boss3C", "quantity": 2, "chance": 1.8e-06},
             {"source": "ChestB2", "quantity": 1, "chance": 1.8e-06},
             {"source": "Crystal1", "quantity": 1, "chance": 7.2e-07},
             {"source": "steak", "quantity": 1, "chance": 5.76e-09},
@@ -38224,6 +38324,8 @@
             {"source": "snailZ", "quantity": 1, "chance": 7.02e-09},
             {"source": "Boss2A", "quantity": 2, "chance": 1.8e-06},
             {"source": "Boss2B", "quantity": 2, "chance": 1.8e-06},
+            {"source": "Boss2C", "quantity": 2, "chance": 1.8e-06},
+            {"source": "Boss3C", "quantity": 2, "chance": 1.8e-06},
             {"source": "ChestC2", "quantity": 1, "chance": 1.8e-06},
             {"source": "Crystal1", "quantity": 1, "chance": 1.08e-06},
             {"source": "FishSmall", "quantity": 1, "chance": 2.16e-08},
@@ -38837,7 +38939,7 @@
             "miscUp1": "",
             "miscUp2": "00",
             "Upgrade_Slots_Left": 0,
-            "Speed": 5,
+            "Speed": 9,
             "Reach": 70
         },
         "sources": null,
@@ -38883,7 +38985,13 @@
         },
         "sources": {
             "sources": [
+                {"wikiName": "[[Floofie]]", "txtName": "Floofie"},
+                {"wikiName": "[[Shell Snake]]", "txtName": "Shell Snake"},
                 {"wikiName": "[[DropTable13]]", "txtName": "DropTable13"},
+                {
+                    "wikiName": "[[Scripticus#The Choice is Yours!|The Choice is Yours!]]",
+                    "txtName": "Scripticus: The Choice is Yours!"
+                },
                 {
                     "wikiName": "[[Scripticus#Can't somebody else do it?|Can't somebody else do it?]]",
                     "txtName": "Scripticus: Can't somebody else do it?"
@@ -38959,7 +39067,9 @@
             {"source": "babaHour", "quantity": 1, "chance": 0.24},
             {"source": "babaMummy", "quantity": 1, "chance": 0.3},
             {"source": "mini3a", "quantity": 1, "chance": 0.3},
-            {"source": "mini4a", "quantity": 1, "chance": 0.3}
+            {"source": "mini4a", "quantity": 1, "chance": 0.3},
+            {"source": "sheepB", "quantity": 3, "chance": 0.6},
+            {"source": "snakeY", "quantity": 3, "chance": 0.2}
         ]
     },
     "Timecandy2": {
@@ -38973,6 +39083,8 @@
         },
         "sources": {
             "sources": [
+                {"wikiName": "[[Floofie]]", "txtName": "Floofie"},
+                {"wikiName": "[[Shell Snake]]", "txtName": "Shell Snake"},
                 {"wikiName": "[[DropTable13]]", "txtName": "DropTable13"},
                 {
                     "wikiName": "[[Stiltzcho#Time Crime Episode 1|Time Crime Episode 1]]",
@@ -39033,7 +39145,9 @@
             {"source": "babaHour", "quantity": 1, "chance": 0.128},
             {"source": "babaMummy", "quantity": 1, "chance": 0.16},
             {"source": "mini3a", "quantity": 1, "chance": 0.16},
-            {"source": "mini4a", "quantity": 1, "chance": 0.16}
+            {"source": "mini4a", "quantity": 1, "chance": 0.16},
+            {"source": "sheepB", "quantity": 3, "chance": 0.15},
+            {"source": "snakeY", "quantity": 3, "chance": 0.05}
         ]
     },
     "Timecandy3": {
@@ -39146,6 +39260,7 @@
         },
         "sources": {
             "sources": [
+                {"wikiName": "[[Floofie]]", "txtName": "Floofie"},
                 {"wikiName": "[[DropTable13]]", "txtName": "DropTable13"},
                 {
                     "wikiName": "[[Cactolyte#Super Skillage|Super Skillage]]",
@@ -39201,7 +39316,8 @@
             {"source": "babaHour", "quantity": 1, "chance": 0.014},
             {"source": "babaMummy", "quantity": 1, "chance": 0.0175},
             {"source": "mini3a", "quantity": 1, "chance": 0.0175},
-            {"source": "mini4a", "quantity": 1, "chance": 0.0175}
+            {"source": "mini4a", "quantity": 1, "chance": 0.0175},
+            {"source": "sheepB", "quantity": 2, "chance": 0.01}
         ]
     },
     "Timecandy5": {
@@ -39454,8 +39570,8 @@
         "sources": {
             "sources": [
                 {
-                    "wikiName": "[[Scripticus#Seeking Foreign Aid|Seeking Foreign Aid]]",
-                    "txtName": "Scripticus: Seeking Foreign Aid"
+                    "wikiName": "[[Scripticus#Stiltzcho, the Leaf Scout|Stiltzcho, the Leaf Scout]]",
+                    "txtName": "Scripticus: Stiltzcho, the Leaf Scout"
                 }
             ],
             "recipeFrom": [],
@@ -40926,7 +41042,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 31,
             "level": 1
         },
@@ -40950,7 +41066,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 32,
             "level": 1
         },
@@ -40974,7 +41090,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 33,
             "level": 1
         },
@@ -40998,7 +41114,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 34,
             "level": 1
         },
@@ -41022,7 +41138,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 35,
             "level": 1
         },
@@ -41046,7 +41162,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 36,
             "level": 1
         },
@@ -41070,7 +41186,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 37,
             "level": 1
         },
@@ -41094,7 +41210,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 38,
             "level": 1
         },
@@ -41118,7 +41234,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 39,
             "level": 1
         },
@@ -41142,7 +41258,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 40,
             "level": 1
         },
@@ -41166,7 +41282,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 41,
             "level": 1
         },
@@ -41190,7 +41306,7 @@
             "sellPrice": 200,
             "typeGen": "aStorageChest",
             "Type": "Storage",
-            "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
             "order": 42,
             "level": 1
         },
@@ -43917,7 +44033,7 @@
                 "perTier": 10,
                 "effect": "+{% Choppin Away Gains",
                 "bonus": 2.5,
-                "order": 9
+                "order": 3
             },
             "dropChance": 0.0001
         },
@@ -44746,7 +44862,7 @@
                 "perTier": 10,
                 "effect": "+{% Choppin Speed",
                 "bonus": 6,
-                "order": 10
+                "order": 4
             },
             "dropChance": 0.0001
         },
@@ -44778,7 +44894,7 @@
                 "perTier": 3,
                 "effect": "+{ Starting Pts in Worship",
                 "bonus": 6,
-                "order": 2
+                "order": 22
             },
             "dropChance": 1
         },
@@ -44802,7 +44918,7 @@
                 "perTier": 4,
                 "effect": "+{% Shiny Critter Chance",
                 "bonus": 5,
-                "order": 5
+                "order": 15
             },
             "dropChance": 1
         },
@@ -44826,7 +44942,7 @@
                 "perTier": 4,
                 "effect": "+{% EXP from monsters",
                 "bonus": 1.25,
-                "order": 6
+                "order": 16
             },
             "dropChance": 1
         },
@@ -44850,7 +44966,7 @@
                 "perTier": 5,
                 "effect": "+{% Shiny Critter Chance",
                 "bonus": 6,
-                "order": 7
+                "order": 17
             },
             "dropChance": 1
         },
@@ -44874,7 +44990,7 @@
                 "perTier": 6,
                 "effect": "+{% Skill AFK gain rate",
                 "bonus": 1,
-                "order": 8
+                "order": 18
             },
             "dropChance": 1
         },
@@ -44962,7 +45078,7 @@
                 "perTier": 4,
                 "effect": "+{% Max Charge",
                 "bonus": 7,
-                "order": 3
+                "order": 23
             },
             "dropChance": 1
         },
@@ -44986,7 +45102,7 @@
                 "perTier": 5,
                 "effect": "+{% Charge Rate",
                 "bonus": 5,
-                "order": 4
+                "order": 24
             },
             "dropChance": 1
         },
@@ -45010,7 +45126,7 @@
                 "perTier": 10,
                 "effect": "+{% Choppin Speed",
                 "bonus": 7,
-                "order": 14
+                "order": 6
             },
             "dropChance": 4e-05
         },
@@ -45042,7 +45158,7 @@
                 "perTier": 10,
                 "effect": "+{% Total Choppin Efficiency",
                 "bonus": 8,
-                "order": 13
+                "order": 5
             },
             "dropChance": 1e-05
         },
@@ -45074,7 +45190,7 @@
                 "perTier": 10,
                 "effect": "+{% Total Catching Efficiency",
                 "bonus": 8,
-                "order": 15
+                "order": 13
             },
             "dropChance": 5e-05
         },
@@ -45106,7 +45222,7 @@
                 "perTier": 10,
                 "effect": "+{% Catching Speed",
                 "bonus": 4,
-                "order": 16
+                "order": 14
             },
             "dropChance": 2e-05
         },
@@ -45138,7 +45254,7 @@
                 "perTier": 12,
                 "effect": "+{% Mining EXP",
                 "bonus": 8,
-                "order": 17
+                "order": 2
             },
             "dropChance": 3e-05
         },
@@ -45170,7 +45286,7 @@
                 "perTier": 7,
                 "effect": "+{% Trapping Efficiency",
                 "bonus": 7,
-                "order": 18
+                "order": 19
             },
             "dropChance": 1
         },
@@ -45194,7 +45310,7 @@
                 "perTier": 9,
                 "effect": "+{% Trapping EXP",
                 "bonus": 8,
-                "order": 19
+                "order": 20
             },
             "dropChance": 1
         },
@@ -45218,7 +45334,7 @@
                 "perTier": 12,
                 "effect": "+{% Shiny Critter Chance",
                 "bonus": 8,
-                "order": 20
+                "order": 21
             },
             "dropChance": 1
         },
@@ -45242,7 +45358,7 @@
                 "perTier": 8,
                 "effect": "+{% Total Fishing Efficiency",
                 "bonus": 8,
-                "order": 21
+                "order": 7
             },
             "dropChance": 0.001
         },
@@ -45266,7 +45382,7 @@
                 "perTier": 10,
                 "effect": "+{% Fishing Speed",
                 "bonus": 4,
-                "order": 22
+                "order": 8
             },
             "dropChance": 0.0004
         },
@@ -45290,7 +45406,7 @@
                 "perTier": 10,
                 "effect": "+{% Fishing EXP",
                 "bonus": 10,
-                "order": 23
+                "order": 9
             },
             "dropChance": 0.0001
         },
@@ -45314,7 +45430,7 @@
                 "perTier": 10,
                 "effect": "+{% Fishing Away Gains",
                 "bonus": 3,
-                "order": 24
+                "order": 10
             },
             "dropChance": 2.5e-05
         },
@@ -46994,7 +47110,7 @@
                 "bonus": 2.5,
                 "order": 4
             },
-            "dropChance": 0.02
+            "dropChance": 0.04
         },
         "sources": {
             "sources": [
@@ -47024,7 +47140,7 @@
                 "perTier": 1.5,
                 "effect": "+{% EXP from monsters",
                 "bonus": 5,
-                "order": 8
+                "order": 9
             },
             "dropChance": 5e-07
         },
@@ -47088,7 +47204,7 @@
                 "perTier": 1.5,
                 "effect": "+{% Double AFK claim chance",
                 "bonus": 3,
-                "order": 6
+                "order": 7
             },
             "dropChance": 0
         },
@@ -47120,7 +47236,7 @@
                 "perTier": 1.5,
                 "effect": "+{% Total Drop Rate",
                 "bonus": 6,
-                "order": 7
+                "order": 8
             },
             "dropChance": 0
         },
@@ -47152,7 +47268,7 @@
                 "perTier": 1.5,
                 "effect": "+{% Skill EXP",
                 "bonus": 3.75,
-                "order": 9
+                "order": 10
             },
             "dropChance": 0.016
         },
@@ -47184,9 +47300,9 @@
                 "perTier": 1.5,
                 "effect": "+{% Cog Build Spd (Passive)",
                 "bonus": 8,
-                "order": 11
+                "order": 13
             },
-            "dropChance": 0.01
+            "dropChance": 0.007
         },
         "sources": {
             "sources": [
@@ -47216,7 +47332,7 @@
                 "perTier": 1.5,
                 "effect": "+{% Shrine Effects",
                 "bonus": 5,
-                "order": 12
+                "order": 14
             },
             "dropChance": 0.004
         },
@@ -47248,7 +47364,7 @@
                 "perTier": 2,
                 "effect": "+{% Kitchen Speed (Passive)",
                 "bonus": 6,
-                "order": 14
+                "order": 17
             },
             "dropChance": 0.01
         },
@@ -47280,7 +47396,7 @@
                 "perTier": 2,
                 "effect": "+{% All Skill Efficiency",
                 "bonus": 10,
-                "order": 15
+                "order": 18
             },
             "dropChance": 0.004
         },
@@ -47312,7 +47428,7 @@
                 "perTier": 5,
                 "effect": "+{% Money from Monsters",
                 "bonus": 12,
-                "order": 10
+                "order": 12
             },
             "dropChance": 0.2
         },
@@ -47344,7 +47460,7 @@
                 "perTier": 5,
                 "effect": "+{% Cooking EXP gain",
                 "bonus": 6,
-                "order": 13
+                "order": 16
             },
             "dropChance": 0.2
         },
@@ -47361,6 +47477,102 @@
         "anvilProduction": null,
         "detDrops": [
             {"source": "mini4a", "quantity": 1, "chance": 0.2}
+        ]
+    },
+    "CardsZ14": {
+        "item": {
+            "internalName": "CardsZ14",
+            "displayName": "Radiant Amarok Card",
+            "sellPrice": 1,
+            "typeGen": "dCard",
+            "Type": "Card",
+            "cardData": {
+                "cardID": "Z14",
+                "category": "Bosses",
+                "perTier": 10,
+                "effect": "+{ Weapon Power",
+                "bonus": 3,
+                "order": 6
+            },
+            "dropChance": 0.02
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Radiant Amarok]]", "txtName": "Radiant Amarok"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": [
+            {"source": "wolfC", "quantity": 1, "chance": 0.02}
+        ]
+    },
+    "CardsZ15": {
+        "item": {
+            "internalName": "CardsZ15",
+            "displayName": "Gilded Efaunt Card",
+            "sellPrice": 1,
+            "typeGen": "dCard",
+            "Type": "Card",
+            "cardData": {
+                "cardID": "Z15",
+                "category": "Bosses",
+                "perTier": 11,
+                "effect": "+{ Star Talent Pts (Passive)",
+                "bonus": 15,
+                "order": 11
+            },
+            "dropChance": 0.02
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Gilded Efaunt]]", "txtName": "Gilded Efaunt"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": [
+            {"source": "Boss2C", "quantity": 1, "chance": 0.02}
+        ]
+    },
+    "CardsZ16": {
+        "item": {
+            "internalName": "CardsZ16",
+            "displayName": "Blighted Chizoar Card",
+            "sellPrice": 1,
+            "typeGen": "dCard",
+            "Type": "Card",
+            "cardData": {
+                "cardID": "Z16",
+                "category": "Bosses",
+                "perTier": 12,
+                "effect": "+{% All Stat",
+                "bonus": 1.5,
+                "order": 15
+            },
+            "dropChance": 0.02
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Blighted Chizoar]]", "txtName": "Blighted Chizoar"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": [
+            {"source": "Boss3C", "quantity": 1, "chance": 0.02}
         ]
     },
     "GoldricP2": {
@@ -47537,6 +47749,7 @@
             {"source": "potato", "quantity": 1, "chance": 0.00351},
             {"source": "Boss2A", "quantity": 2, "chance": 0.9},
             {"source": "Boss2B", "quantity": 2, "chance": 0.9},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.9},
             {"source": "ChestB2", "quantity": 1, "chance": 0.9}
         ]
     },
@@ -47861,8 +48074,6 @@
         },
         "sources": {
             "sources": [
-                {"wikiName": "[[Floofie]]", "txtName": "Floofie"},
-                {"wikiName": "[[Shell Snake]]", "txtName": "Shell Snake"},
                 {"wikiName": "[[Egg Capsule]]", "txtName": "Egg Capsule"},
                 {
                     "wikiName": "[[Egggulyte#Egg Shaped Lootboxes!|Egg Shaped Lootboxes!]]",
@@ -47881,8 +48092,6 @@
         "vendors": null,
         "anvilProduction": null,
         "detDrops": [
-            {"source": "sheepB", "quantity": 1, "chance": 0.1},
-            {"source": "snakeY", "quantity": 1, "chance": 0.1},
             {"source": "EasterEvent2", "quantity": 1, "chance": 0.05}
         ]
     },
@@ -47895,7 +48104,20 @@
             "Type": "Event Box",
             "description": "Hold down to summon a friendly easter monster. But be careful, unlike real life where all friends are genuine, these monsters are just pretending to be your friend for personal gain! "
         },
-        "sources": null,
+        "sources": {
+            "sources": [
+                {
+                    "wikiName": "[[Egggulyte#Egg Shaped Lootboxes!|Egg Shaped Lootboxes!]]",
+                    "txtName": "Egggulyte: Egg Shaped Lootboxes!"
+                },
+                {
+                    "wikiName": "[[Egggulyte#I've Got a Golden Tickegg!|I've Got a Golden Tickegg!]]",
+                    "txtName": "Egggulyte: I've Got a Golden Tickegg!"
+                }
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
         "notes": " ",
         "recipe": null,
         "vendors": null,
@@ -47909,12 +48131,10 @@
             "sellPrice": 100,
             "typeGen": "dQuest",
             "Type": "Event Box",
-            "description": "Hold down to summon a mini boss or a green mushroom. Mostly the second thing. "
+            "description": "Hold down to summon a mini boss or a green mushroom. It's a 50 50 shot which one you get! "
         },
         "sources": {
             "sources": [
-                {"wikiName": "[[Floofie]]", "txtName": "Floofie"},
-                {"wikiName": "[[Shell Snake]]", "txtName": "Shell Snake"},
                 {"wikiName": "[[Egg Capsule]]", "txtName": "Egg Capsule"},
                 {
                     "wikiName": "[[Walupiggy#Treasure Hunt 4|Treasure Hunt 4]]",
@@ -47929,8 +48149,6 @@
         "vendors": null,
         "anvilProduction": null,
         "detDrops": [
-            {"source": "sheepB", "quantity": 1, "chance": 0.02},
-            {"source": "snakeY", "quantity": 1, "chance": 0.02},
             {"source": "EasterEvent2", "quantity": 1, "chance": 0.13}
         ]
     },
@@ -49088,6 +49306,10 @@
                 {
                     "wikiName": "[[Gobo#Lab Experimentation, Ft. You|Lab Experimentation, Ft. You]]",
                     "txtName": "Gobo: Lab Experimentation, Ft. You"
+                },
+                {
+                    "wikiName": "[[Nebula Neddy#Task Requirement Affirmative|Task Requirement Affirmative]]",
+                    "txtName": "Nebula Neddy: Task Requirement Affirmative"
                 }
             ],
             "recipeFrom": [],
@@ -49157,6 +49379,10 @@
                 {
                     "wikiName": "[[Gobo#Lab Experimentation, Ft. You|Lab Experimentation, Ft. You]]",
                     "txtName": "Gobo: Lab Experimentation, Ft. You"
+                },
+                {
+                    "wikiName": "[[Nebula Neddy#Task Requirement Affirmative|Task Requirement Affirmative]]",
+                    "txtName": "Nebula Neddy: Task Requirement Affirmative"
                 },
                 {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
             ],
@@ -52109,7 +52335,8 @@
         "sources": {
             "sources": [
                 {"wikiName": "[[Chizoar]]", "txtName": "Chizoar"},
-                {"wikiName": "[[Chaotic Chizoar]]", "txtName": "Chaotic Chizoar"}
+                {"wikiName": "[[Chaotic Chizoar]]", "txtName": "Chaotic Chizoar"},
+                {"wikiName": "[[Blighted Chizoar]]", "txtName": "Blighted Chizoar"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -52120,7 +52347,8 @@
         "anvilProduction": null,
         "detDrops": [
             {"source": "Boss3A", "quantity": 1, "chance": 0.001},
-            {"source": "Boss3B", "quantity": 1, "chance": 0.0032}
+            {"source": "Boss3B", "quantity": 1, "chance": 0.0032},
+            {"source": "Boss3C", "quantity": 1, "chance": 0.014}
         ]
     },
     "EquipmentPendant25": {
@@ -52827,6 +53055,146 @@
         "anvilProduction": null,
         "detDrops": null
     },
+    "EquipmentCape2": {
+        "item": {
+            "internalName": "EquipmentCape2",
+            "displayName": "Easter Egg Backpack",
+            "sellPrice": 1,
+            "typeGen": "aCape",
+            "Type": "Cape",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 5,
+            "AGI": 5,
+            "WIS": 5,
+            "LUK": 0,
+            "Defence": 10,
+            "miscUp1": "10% Total Damage",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "EquipmentCape3": {
+        "item": {
+            "internalName": "EquipmentCape3",
+            "displayName": "Radiant Amarok Backstabber",
+            "sellPrice": 1,
+            "typeGen": "aCape",
+            "Type": "Cape",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 50,
+            "miscUp1": "10% Defence",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Radiant Amarok]]", "txtName": "Radiant Amarok"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": [
+            {"source": "wolfC", "quantity": 1, "chance": 0.001}
+        ]
+    },
+    "EquipmentCape4": {
+        "item": {
+            "internalName": "EquipmentCape4",
+            "displayName": "Gilded Efaunt Dislodged Tusks",
+            "sellPrice": 1,
+            "typeGen": "aCape",
+            "Type": "Cape",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 15,
+            "AGI": 15,
+            "WIS": 15,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "10% Skill Efficiency",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Gilded Efaunt]]", "txtName": "Gilded Efaunt"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": [
+            {"source": "Boss2C", "quantity": 1, "chance": 0.0007}
+        ]
+    },
+    "EquipmentCape5": {
+        "item": {
+            "internalName": "EquipmentCape5",
+            "displayName": "Blighted Chizoar Shard Cape",
+            "sellPrice": 1,
+            "typeGen": "aCape",
+            "Type": "Cape",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 3,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "8% Total Damage",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Blighted Chizoar]]", "txtName": "Blighted Chizoar"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": [
+            {"source": "Boss3C", "quantity": 1, "chance": 0.0003}
+        ]
+    },
     "WorshipSkull8": {
         "item": {
             "internalName": "WorshipSkull8",
@@ -52884,7 +53252,7 @@
             "miscUp1": "",
             "miscUp2": "00",
             "Upgrade_Slots_Left": 3,
-            "Skill": "",
+            "Skill": "Laboratory",
             "Skill_Power": 50,
             "Speed": 0
         },
@@ -52931,7 +53299,7 @@
             "miscUp1": "",
             "miscUp2": "00",
             "Upgrade_Slots_Left": 3,
-            "Skill": "",
+            "Skill": "Laboratory",
             "Skill_Power": 70,
             "Speed": 0
         },
@@ -52988,7 +53356,7 @@
             "miscUp1": "",
             "miscUp2": "00",
             "Upgrade_Slots_Left": 4,
-            "Skill": "",
+            "Skill": "Laboratory",
             "Skill_Power": 100,
             "Speed": 0
         },
@@ -53051,7 +53419,7 @@
             "miscUp1": "",
             "miscUp2": "00",
             "Upgrade_Slots_Left": 4,
-            "Skill": "",
+            "Skill": "Laboratory",
             "Skill_Power": 150,
             "Speed": 0
         },
@@ -63249,7 +63617,7 @@
             "description": "Hold down to add these Obol Fragments to your account. Account items are shared between all your Characters! "
         },
         "sources": null,
-        "notes": " ",
+        "notes": "These cannot be physically obtained, can only be gotten through Fragmenting [[Obols]] or through [[Arcade]] rewards once you unlock it in [[Worlds#YumYum Grotto|YumYum Grotto]].",
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
@@ -63372,6 +63740,7 @@
             {"source": "babayaga", "quantity": 1, "chance": 0.000315},
             {"source": "wolfA", "quantity": 2, "chance": 0.000315},
             {"source": "wolfB", "quantity": 4, "chance": 0.000315},
+            {"source": "wolfC", "quantity": 2, "chance": 0.000315},
             {"source": "ChestB1", "quantity": 1, "chance": 0.000315},
             {"source": "Crystal0", "quantity": 1, "chance": 0.00014},
             {"source": "goblinG", "quantity": 1, "chance": 1.4e-06},
@@ -63381,6 +63750,7 @@
             {"source": "poopBig", "quantity": 2, "chance": 0.00035},
             {"source": "wolfA", "quantity": 2, "chance": 0.00035},
             {"source": "wolfB", "quantity": 4, "chance": 0.00035},
+            {"source": "wolfC", "quantity": 2, "chance": 0.00035},
             {"source": "ChestC1", "quantity": 1, "chance": 0.00035},
             {"source": "poopSmall", "quantity": 1, "chance": 2.31e-06},
             {"source": "ratB", "quantity": 1, "chance": 2.31e-06},
@@ -63418,6 +63788,7 @@
             {"source": "potato", "quantity": 1, "chance": 2.106e-06},
             {"source": "Boss2A", "quantity": 2, "chance": 0.00054},
             {"source": "Boss2B", "quantity": 2, "chance": 0.00054},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.00054},
             {"source": "ChestB2", "quantity": 1, "chance": 0.00054},
             {"source": "Crystal1", "quantity": 1, "chance": 0.000216},
             {"source": "steak", "quantity": 1, "chance": 1.728e-06},
@@ -63426,6 +63797,8 @@
             {"source": "snailZ", "quantity": 1, "chance": 2.106e-06},
             {"source": "Boss2A", "quantity": 2, "chance": 0.00054},
             {"source": "Boss2B", "quantity": 2, "chance": 0.00054},
+            {"source": "Boss2C", "quantity": 2, "chance": 0.00054},
+            {"source": "Boss3C", "quantity": 2, "chance": 0.00054},
             {"source": "ChestC2", "quantity": 1, "chance": 0.00054},
             {"source": "Crystal1", "quantity": 1, "chance": 0.000324},
             {"source": "FishSmall", "quantity": 1, "chance": 6.48e-06},
@@ -63571,7 +63944,6 @@
                     "wikiName": "[[Colosseum/Astro#Golden Chest|Astro Golden Chest]]",
                     "txtName": "Colosseum: Astro Golden Chest"
                 },
-                {"wikiName": "[[Shell Snake]]", "txtName": "Shell Snake"},
                 {"wikiName": "[[Egg Capsule]]", "txtName": "Egg Capsule"},
                 {
                     "wikiName": "[[Post Office#Simple Shippin|Simple Shippin]]",
@@ -63597,6 +63969,10 @@
                 {
                     "wikiName": "[[TP Pete#Roll of Anger|Roll of Anger]]",
                     "txtName": "TP Pete: Roll of Anger"
+                },
+                {
+                    "wikiName": "[[Scripticus#Can't somebody else do it?|Can't somebody else do it?]]",
+                    "txtName": "Scripticus: Can't somebody else do it?"
                 },
                 {
                     "wikiName": "[[Picnic Stowaway#Early Evening Eating Endeavor|Early Evening Eating Endeavor]]",
@@ -63848,7 +64224,6 @@
             {"source": "ChestA4", "quantity": 1, "chance": 0.12},
             {"source": "ChestB4", "quantity": 1, "chance": 0.23},
             {"source": "ChestC4", "quantity": 1, "chance": 0.45},
-            {"source": "snakeY", "quantity": 1, "chance": 0.05},
             {"source": "EasterEvent2", "quantity": 1, "chance": 0.3}
         ]
     },

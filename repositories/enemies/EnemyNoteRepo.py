@@ -15,6 +15,10 @@ from repositories.master.FileRepository import FileRepository
 class EnemyNoteRepo(FileRepository[Note]):
 
 	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		EnemyDetailsRepo.initialise(cls.codeReader, log)
+
+	@classmethod
 	def getCategory(cls) -> str:
 		return "Enemy"
 

@@ -19,8 +19,8 @@
     "TestObj1": {
         "intID": "TestObj1",
         "recipe": [{"item": "Grasslands1", "quantity": 10}, {"item": "CopperBar", "quantity": 5}],
-        "levelReqToCraft": 3,
-        "expGiven": 5,
+        "levelReqToCraft": 2,
+        "expGiven": 10,
         "no": 2,
         "tab": 1,
         "sellPrice": 65,
@@ -36,8 +36,8 @@
     "EquipmentBows1": {
         "intID": "EquipmentBows1",
         "recipe": [{"item": "Grasslands1", "quantity": 10}, {"item": "CraftMat1", "quantity": 15}],
-        "levelReqToCraft": 3,
-        "expGiven": 8,
+        "levelReqToCraft": 2,
+        "expGiven": 10,
         "no": 3,
         "tab": 1,
         "sellPrice": 75,
@@ -53,7 +53,7 @@
     "EquipmentWands1": {
         "intID": "EquipmentWands1",
         "recipe": [{"item": "Grasslands1", "quantity": 10}, {"item": "OakTree", "quantity": 15}],
-        "levelReqToCraft": 3,
+        "levelReqToCraft": 2,
         "expGiven": 12,
         "no": 4,
         "tab": 1,
@@ -69,60 +69,60 @@
     },
     "EquipmentHats1": {
         "intID": "EquipmentHats1",
-        "recipe": [{"item": "Grasslands1", "quantity": 4}, {"item": "Copper", "quantity": 12}],
+        "recipe": [{"item": "Grasslands1", "quantity": 4}, {"item": "Copper", "quantity": 5}],
         "levelReqToCraft": 1,
-        "expGiven": 3,
+        "expGiven": 6,
         "no": 5,
         "tab": 1,
-        "sellPrice": 48,
+        "sellPrice": 27,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "Grasslands1", "quantity": 4},
-                {"indent": 0, "item": "Copper", "quantity": 12}
+                {"indent": 0, "item": "Copper", "quantity": 5}
             ],
-            "detRecipeTotals": [{"item": "Grasslands1", "quantity": 4}, {"item": "Copper", "quantity": 12}]
+            "detRecipeTotals": [{"item": "Grasslands1", "quantity": 4}, {"item": "Copper", "quantity": 5}]
         }
     },
     "EquipmentShirts1": {
         "intID": "EquipmentShirts1",
-        "recipe": [{"item": "Grasslands1", "quantity": 6}, {"item": "OakTree", "quantity": 8}],
+        "recipe": [{"item": "Grasslands1", "quantity": 6}, {"item": "OakTree", "quantity": 3}],
         "levelReqToCraft": 1,
-        "expGiven": 5,
+        "expGiven": 8,
         "no": 6,
         "tab": 1,
-        "sellPrice": 34,
+        "sellPrice": 24,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "Grasslands1", "quantity": 6},
-                {"indent": 0, "item": "OakTree", "quantity": 8}
+                {"indent": 0, "item": "OakTree", "quantity": 3}
             ],
-            "detRecipeTotals": [{"item": "Grasslands1", "quantity": 6}, {"item": "OakTree", "quantity": 8}]
+            "detRecipeTotals": [{"item": "Grasslands1", "quantity": 6}, {"item": "OakTree", "quantity": 3}]
         }
     },
     "EquipmentPants1": {
         "intID": "EquipmentPants1",
-        "recipe": [{"item": "Grasslands2", "quantity": 10}, {"item": "CopperBar", "quantity": 5}],
+        "recipe": [{"item": "Grasslands2", "quantity": 6}, {"item": "CopperBar", "quantity": 3}],
         "levelReqToCraft": 4,
-        "expGiven": 7,
+        "expGiven": 14,
         "no": 7,
         "tab": 1,
-        "sellPrice": 85,
+        "sellPrice": 51,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "Grasslands2", "quantity": 10},
-                {"indent": 0, "item": "CopperBar", "quantity": 5}
+                {"indent": 0, "item": "Grasslands2", "quantity": 6},
+                {"indent": 0, "item": "CopperBar", "quantity": 3}
             ],
-            "detRecipeTotals": [{"item": "Grasslands2", "quantity": 10}, {"item": "CopperBar", "quantity": 5}]
+            "detRecipeTotals": [{"item": "Grasslands2", "quantity": 6}, {"item": "CopperBar", "quantity": 3}]
         }
     },
     "EquipmentShoes9": {
         "intID": "EquipmentShoes9",
         "recipe": [{"item": "Grasslands3", "quantity": 12}, {"item": "Leaf1", "quantity": 5}],
         "levelReqToCraft": 6,
-        "expGiven": 10,
+        "expGiven": 16,
         "no": 8,
         "tab": 1,
         "sellPrice": 104,
@@ -137,26 +137,26 @@
     },
     "EquipmentTools2": {
         "intID": "EquipmentTools2",
-        "recipe": [{"item": "CopperBar", "quantity": 10}, {"item": "Grasslands2", "quantity": 15}],
+        "recipe": [{"item": "CopperBar", "quantity": 5}, {"item": "Grasslands2", "quantity": 10}],
         "levelReqToCraft": 3,
-        "expGiven": 10,
+        "expGiven": 13,
         "no": 9,
         "tab": 1,
-        "sellPrice": 145,
+        "sellPrice": 85,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "CopperBar", "quantity": 10},
-                {"indent": 0, "item": "Grasslands2", "quantity": 15}
+                {"indent": 0, "item": "CopperBar", "quantity": 5},
+                {"indent": 0, "item": "Grasslands2", "quantity": 10}
             ],
-            "detRecipeTotals": [{"item": "CopperBar", "quantity": 10}, {"item": "Grasslands2", "quantity": 15}]
+            "detRecipeTotals": [{"item": "CopperBar", "quantity": 5}, {"item": "Grasslands2", "quantity": 10}]
         }
     },
     "MaxCapBag1": {
         "intID": "MaxCapBag1",
         "recipe": [{"item": "Copper", "quantity": 120}],
         "levelReqToCraft": 5,
-        "expGiven": 13,
+        "expGiven": 18,
         "no": 10,
         "tab": 1,
         "sellPrice": 360,
@@ -171,26 +171,26 @@
     "EquipmentToolsHatchet3": {
         "intID": "EquipmentToolsHatchet3",
         "recipe": [
-            {"item": "CopperBar", "quantity": 12},
-            {"item": "OakTree", "quantity": 30},
-            {"item": "CraftMat1", "quantity": 15}
+            {"item": "CopperBar", "quantity": 5},
+            {"item": "OakTree", "quantity": 10},
+            {"item": "CraftMat1", "quantity": 5}
         ],
         "levelReqToCraft": 4,
-        "expGiven": 10,
+        "expGiven": 13,
         "no": 11,
         "tab": 1,
-        "sellPrice": 189,
+        "sellPrice": 70,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "CopperBar", "quantity": 12},
-                {"indent": 0, "item": "OakTree", "quantity": 30},
-                {"indent": 0, "item": "CraftMat1", "quantity": 15}
+                {"indent": 0, "item": "CopperBar", "quantity": 5},
+                {"indent": 0, "item": "OakTree", "quantity": 10},
+                {"indent": 0, "item": "CraftMat1", "quantity": 5}
             ],
             "detRecipeTotals": [
-                {"item": "CopperBar", "quantity": 12},
-                {"item": "OakTree", "quantity": 30},
-                {"item": "CraftMat1", "quantity": 15}
+                {"item": "CopperBar", "quantity": 5},
+                {"item": "OakTree", "quantity": 10},
+                {"item": "CraftMat1", "quantity": 5}
             ]
         }
     },
@@ -198,7 +198,7 @@
         "intID": "MaxCapBag7",
         "recipe": [{"item": "OakTree", "quantity": 150}, {"item": "CraftMat5", "quantity": 30}],
         "levelReqToCraft": 6,
-        "expGiven": 13,
+        "expGiven": 18,
         "no": 12,
         "tab": 1,
         "sellPrice": 660,
@@ -219,7 +219,7 @@
             {"item": "CraftMat1", "quantity": 10}
         ],
         "levelReqToCraft": 4,
-        "expGiven": 12,
+        "expGiven": 15,
         "no": 13,
         "tab": 1,
         "sellPrice": 165,
@@ -245,7 +245,7 @@
             {"item": "CraftMat5", "quantity": 20}
         ],
         "levelReqToCraft": 6,
-        "expGiven": 15,
+        "expGiven": 19,
         "no": 14,
         "tab": 1,
         "sellPrice": 530,
@@ -272,7 +272,7 @@
             {"item": "CopperBar", "quantity": 15}
         ],
         "levelReqToCraft": 7,
-        "expGiven": 20,
+        "expGiven": 22,
         "no": 15,
         "tab": 1,
         "sellPrice": 550,
@@ -719,7 +719,7 @@
         "expGiven": 15,
         "no": 37,
         "tab": 1,
-        "sellPrice": 209,
+        "sellPrice": 199,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
@@ -727,9 +727,9 @@
                 {"indent": 0, "item": "OakTree", "quantity": 50},
                 {"indent": 0, "item": "EquipmentShirts1", "quantity": 1},
                 {"indent": 1, "item": "Grasslands1", "quantity": 6},
-                {"indent": 1, "item": "OakTree", "quantity": 8}
+                {"indent": 1, "item": "OakTree", "quantity": 3}
             ],
-            "detRecipeTotals": [{"item": "Grasslands1", "quantity": 31}, {"item": "OakTree", "quantity": 58}]
+            "detRecipeTotals": [{"item": "Grasslands1", "quantity": 31}, {"item": "OakTree", "quantity": 53}]
         }
     },
     "EquipmentPendant10": {
@@ -1002,21 +1002,21 @@
         "expGiven": 400,
         "no": 49,
         "tab": 1,
-        "sellPrice": 9230,
+        "sellPrice": 9128,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentPants1", "quantity": 3},
-                {"indent": 1, "item": "Grasslands2", "quantity": 30},
-                {"indent": 1, "item": "CopperBar", "quantity": 15},
+                {"indent": 1, "item": "Grasslands2", "quantity": 18},
+                {"indent": 1, "item": "CopperBar", "quantity": 9},
                 {"indent": 0, "item": "Forest2", "quantity": 275},
                 {"indent": 0, "item": "BirchTree", "quantity": 700}
             ],
             "detRecipeTotals": [
                 {"item": "Forest2", "quantity": 275},
                 {"item": "BirchTree", "quantity": 700},
-                {"item": "Grasslands2", "quantity": 30},
-                {"item": "CopperBar", "quantity": 15}
+                {"item": "Grasslands2", "quantity": 18},
+                {"item": "CopperBar", "quantity": 9}
             ]
         }
     },
@@ -1027,19 +1027,19 @@
         "expGiven": 400,
         "no": 50,
         "tab": 1,
-        "sellPrice": 1655,
+        "sellPrice": 1553,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentPants1", "quantity": 3},
-                {"indent": 1, "item": "Grasslands2", "quantity": 30},
-                {"indent": 1, "item": "CopperBar", "quantity": 15},
+                {"indent": 1, "item": "Grasslands2", "quantity": 18},
+                {"indent": 1, "item": "CopperBar", "quantity": 9},
                 {"indent": 0, "item": "Iron", "quantity": 200}
             ],
             "detRecipeTotals": [
                 {"item": "Iron", "quantity": 200},
-                {"item": "Grasslands2", "quantity": 30},
-                {"item": "CopperBar", "quantity": 15}
+                {"item": "Grasslands2", "quantity": 18},
+                {"item": "CopperBar", "quantity": 9}
             ]
         }
     },
@@ -1131,7 +1131,7 @@
         "expGiven": 30,
         "no": 54,
         "tab": 1,
-        "sellPrice": 614,
+        "sellPrice": 604,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
@@ -1139,13 +1139,13 @@
                 {"indent": 0, "item": "BirchTree", "quantity": 100},
                 {"indent": 0, "item": "EquipmentShirts1", "quantity": 1},
                 {"indent": 1, "item": "Grasslands1", "quantity": 6},
-                {"indent": 1, "item": "OakTree", "quantity": 8}
+                {"indent": 1, "item": "OakTree", "quantity": 3}
             ],
             "detRecipeTotals": [
                 {"item": "Grasslands4", "quantity": 40},
                 {"item": "BirchTree", "quantity": 100},
                 {"item": "Grasslands1", "quantity": 6},
-                {"item": "OakTree", "quantity": 8}
+                {"item": "OakTree", "quantity": 3}
             ]
         }
     },
@@ -1160,7 +1160,7 @@
         "expGiven": 60,
         "no": 55,
         "tab": 1,
-        "sellPrice": 609,
+        "sellPrice": 599,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
@@ -1168,13 +1168,13 @@
                 {"indent": 0, "item": "EquipmentShirts16", "quantity": 1},
                 {"indent": 0, "item": "EquipmentShirts1", "quantity": 1},
                 {"indent": 1, "item": "Grasslands1", "quantity": 6},
-                {"indent": 1, "item": "OakTree", "quantity": 8}
+                {"indent": 1, "item": "OakTree", "quantity": 3}
             ],
             "detRecipeTotals": [
                 {"item": "CraftMat1", "quantity": 150},
                 {"item": "EquipmentShirts16", "quantity": 1},
                 {"item": "Grasslands1", "quantity": 6},
-                {"item": "OakTree", "quantity": 8}
+                {"item": "OakTree", "quantity": 3}
             ]
         }
     },
@@ -1190,35 +1190,35 @@
         "expGiven": 120,
         "no": 56,
         "tab": 1,
-        "sellPrice": 3034,
+        "sellPrice": 2924,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentShirts1", "quantity": 5},
                 {"indent": 1, "item": "Grasslands1", "quantity": 30},
-                {"indent": 1, "item": "OakTree", "quantity": 40},
+                {"indent": 1, "item": "OakTree", "quantity": 15},
                 {"indent": 0, "item": "EquipmentShirts2", "quantity": 2},
                 {"indent": 1, "item": "Grasslands1", "quantity": 50},
                 {"indent": 1, "item": "OakTree", "quantity": 100},
                 {"indent": 1, "item": "EquipmentShirts1", "quantity": 2},
                 {"indent": 2, "item": "Grasslands1", "quantity": 12},
-                {"indent": 2, "item": "OakTree", "quantity": 16},
+                {"indent": 2, "item": "OakTree", "quantity": 6},
                 {"indent": 0, "item": "EquipmentShirts25", "quantity": 2},
                 {"indent": 1, "item": "Grasslands4", "quantity": 80},
                 {"indent": 1, "item": "BirchTree", "quantity": 200},
                 {"indent": 1, "item": "EquipmentShirts1", "quantity": 2},
                 {"indent": 2, "item": "Grasslands1", "quantity": 12},
-                {"indent": 2, "item": "OakTree", "quantity": 16},
+                {"indent": 2, "item": "OakTree", "quantity": 6},
                 {"indent": 0, "item": "EquipmentShirts24", "quantity": 2},
                 {"indent": 1, "item": "CraftMat1", "quantity": 300},
                 {"indent": 1, "item": "EquipmentShirts16", "quantity": 2},
                 {"indent": 1, "item": "EquipmentShirts1", "quantity": 2},
                 {"indent": 2, "item": "Grasslands1", "quantity": 12},
-                {"indent": 2, "item": "OakTree", "quantity": 16}
+                {"indent": 2, "item": "OakTree", "quantity": 6}
             ],
             "detRecipeTotals": [
                 {"item": "Grasslands1", "quantity": 116},
-                {"item": "OakTree", "quantity": 188},
+                {"item": "OakTree", "quantity": 133},
                 {"item": "Grasslands4", "quantity": 80},
                 {"item": "BirchTree", "quantity": 200},
                 {"item": "CraftMat1", "quantity": 300},
@@ -1585,14 +1585,14 @@
         "expGiven": 1,
         "no": 69,
         "tab": 1,
-        "sellPrice": 20460,
+        "sellPrice": 20256,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentPants15", "quantity": 2},
                 {"indent": 1, "item": "EquipmentPants1", "quantity": 6},
-                {"indent": 2, "item": "Grasslands2", "quantity": 60},
-                {"indent": 2, "item": "CopperBar", "quantity": 30},
+                {"indent": 2, "item": "Grasslands2", "quantity": 36},
+                {"indent": 2, "item": "CopperBar", "quantity": 18},
                 {"indent": 1, "item": "Forest2", "quantity": 550},
                 {"indent": 1, "item": "BirchTree", "quantity": 1400},
                 {"indent": 0, "item": "Fish1", "quantity": 500}
@@ -1601,8 +1601,8 @@
                 {"item": "Fish1", "quantity": 500},
                 {"item": "Forest2", "quantity": 550},
                 {"item": "BirchTree", "quantity": 1400},
-                {"item": "Grasslands2", "quantity": 60},
-                {"item": "CopperBar", "quantity": 30}
+                {"item": "Grasslands2", "quantity": 36},
+                {"item": "CopperBar", "quantity": 18}
             ]
         }
     },
@@ -1613,22 +1613,22 @@
         "expGiven": 1,
         "no": 70,
         "tab": 1,
-        "sellPrice": 4810,
+        "sellPrice": 4606,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentPants18", "quantity": 2},
                 {"indent": 1, "item": "EquipmentPants1", "quantity": 6},
-                {"indent": 2, "item": "Grasslands2", "quantity": 60},
-                {"indent": 2, "item": "CopperBar", "quantity": 30},
+                {"indent": 2, "item": "Grasslands2", "quantity": 36},
+                {"indent": 2, "item": "CopperBar", "quantity": 18},
                 {"indent": 1, "item": "Iron", "quantity": 400},
                 {"indent": 0, "item": "Bug1", "quantity": 500}
             ],
             "detRecipeTotals": [
                 {"item": "Bug1", "quantity": 500},
                 {"item": "Iron", "quantity": 400},
-                {"item": "Grasslands2", "quantity": 60},
-                {"item": "CopperBar", "quantity": 30}
+                {"item": "Grasslands2", "quantity": 36},
+                {"item": "CopperBar", "quantity": 18}
             ]
         }
     },

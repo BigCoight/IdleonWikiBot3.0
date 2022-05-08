@@ -607,61 +607,13 @@
         "bonus": 5,
         "order": 1
     },
-    "SoulCard3": {
-        "cardID": "F3",
+    "Starfire": {
+        "cardID": "F16",
         "category": "Hard Resources",
-        "perTier": 3,
-        "effect": "+{ Starting Pts in Worship",
-        "bonus": 6,
+        "perTier": 12,
+        "effect": "+{% Mining EXP",
+        "bonus": 8,
         "order": 2
-    },
-    "SoulCard4": {
-        "cardID": "F10",
-        "category": "Hard Resources",
-        "perTier": 4,
-        "effect": "+{% Max Charge",
-        "bonus": 7,
-        "order": 3
-    },
-    "SoulCard5": {
-        "cardID": "F11",
-        "category": "Hard Resources",
-        "perTier": 5,
-        "effect": "+{% Charge Rate",
-        "bonus": 5,
-        "order": 4
-    },
-    "CritterCard4": {
-        "cardID": "F4",
-        "category": "Hard Resources",
-        "perTier": 4,
-        "effect": "+{% Shiny Critter Chance",
-        "bonus": 5,
-        "order": 5
-    },
-    "CritterCard5": {
-        "cardID": "F5",
-        "category": "Hard Resources",
-        "perTier": 4,
-        "effect": "+{% EXP from monsters",
-        "bonus": 1.25,
-        "order": 6
-    },
-    "CritterCard6": {
-        "cardID": "F6",
-        "category": "Hard Resources",
-        "perTier": 5,
-        "effect": "+{% Shiny Critter Chance",
-        "bonus": 6,
-        "order": 7
-    },
-    "CritterCard7": {
-        "cardID": "F7",
-        "category": "Hard Resources",
-        "perTier": 6,
-        "effect": "+{% Skill AFK gain rate",
-        "bonus": 1,
-        "order": 8
     },
     "SaharanFoal": {
         "cardID": "D8",
@@ -669,7 +621,7 @@
         "perTier": 10,
         "effect": "+{% Choppin Away Gains",
         "bonus": 2.5,
-        "order": 9
+        "order": 3
     },
     "Tree7": {
         "cardID": "F2",
@@ -677,6 +629,54 @@
         "perTier": 10,
         "effect": "+{% Choppin Speed",
         "bonus": 6,
+        "order": 4
+    },
+    "AlienTree": {
+        "cardID": "F13",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Total Choppin Efficiency",
+        "bonus": 8,
+        "order": 5
+    },
+    "Tree8": {
+        "cardID": "F12",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Choppin Speed",
+        "bonus": 7,
+        "order": 6
+    },
+    "Fish5": {
+        "cardID": "F20",
+        "category": "Hard Resources",
+        "perTier": 8,
+        "effect": "+{% Total Fishing Efficiency",
+        "bonus": 8,
+        "order": 7
+    },
+    "Fish6": {
+        "cardID": "F21",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Fishing Speed",
+        "bonus": 4,
+        "order": 8
+    },
+    "Fish7": {
+        "cardID": "F22",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Fishing EXP",
+        "bonus": 10,
+        "order": 9
+    },
+    "Fish8": {
+        "cardID": "F23",
+        "category": "Hard Resources",
+        "perTier": 10,
+        "effect": "+{% Fishing Away Gains",
+        "bonus": 3,
         "order": 10
     },
     "Bug5": {
@@ -695,29 +695,13 @@
         "bonus": 2.5,
         "order": 12
     },
-    "AlienTree": {
-        "cardID": "F13",
-        "category": "Hard Resources",
-        "perTier": 10,
-        "effect": "+{% Total Choppin Efficiency",
-        "bonus": 8,
-        "order": 13
-    },
-    "Tree8": {
-        "cardID": "F12",
-        "category": "Hard Resources",
-        "perTier": 10,
-        "effect": "+{% Choppin Speed",
-        "bonus": 7,
-        "order": 14
-    },
     "Bug7": {
         "cardID": "F14",
         "category": "Hard Resources",
         "perTier": 10,
         "effect": "+{% Total Catching Efficiency",
         "bonus": 8,
-        "order": 15
+        "order": 13
     },
     "Bug8": {
         "cardID": "F15",
@@ -725,15 +709,39 @@
         "perTier": 10,
         "effect": "+{% Catching Speed",
         "bonus": 4,
+        "order": 14
+    },
+    "CritterCard4": {
+        "cardID": "F4",
+        "category": "Hard Resources",
+        "perTier": 4,
+        "effect": "+{% Shiny Critter Chance",
+        "bonus": 5,
+        "order": 15
+    },
+    "CritterCard5": {
+        "cardID": "F5",
+        "category": "Hard Resources",
+        "perTier": 4,
+        "effect": "+{% EXP from monsters",
+        "bonus": 1.25,
         "order": 16
     },
-    "Starfire": {
-        "cardID": "F16",
+    "CritterCard6": {
+        "cardID": "F6",
         "category": "Hard Resources",
-        "perTier": 12,
-        "effect": "+{% Mining EXP",
-        "bonus": 8,
+        "perTier": 5,
+        "effect": "+{% Shiny Critter Chance",
+        "bonus": 6,
         "order": 17
+    },
+    "CritterCard7": {
+        "cardID": "F7",
+        "category": "Hard Resources",
+        "perTier": 6,
+        "effect": "+{% Skill AFK gain rate",
+        "bonus": 1,
+        "order": 18
     },
     "CritterCard8": {
         "cardID": "F17",
@@ -741,7 +749,7 @@
         "perTier": 7,
         "effect": "+{% Trapping Efficiency",
         "bonus": 7,
-        "order": 18
+        "order": 19
     },
     "CritterCard9": {
         "cardID": "F18",
@@ -749,7 +757,7 @@
         "perTier": 9,
         "effect": "+{% Trapping EXP",
         "bonus": 8,
-        "order": 19
+        "order": 20
     },
     "CritterCard10": {
         "cardID": "F19",
@@ -757,38 +765,30 @@
         "perTier": 12,
         "effect": "+{% Shiny Critter Chance",
         "bonus": 8,
-        "order": 20
-    },
-    "Fish5": {
-        "cardID": "F20",
-        "category": "Hard Resources",
-        "perTier": 8,
-        "effect": "+{% Total Fishing Efficiency",
-        "bonus": 8,
         "order": 21
     },
-    "Fish6": {
-        "cardID": "F21",
+    "SoulCard3": {
+        "cardID": "F3",
         "category": "Hard Resources",
-        "perTier": 10,
-        "effect": "+{% Fishing Speed",
-        "bonus": 4,
+        "perTier": 3,
+        "effect": "+{ Starting Pts in Worship",
+        "bonus": 6,
         "order": 22
     },
-    "Fish7": {
-        "cardID": "F22",
+    "SoulCard4": {
+        "cardID": "F10",
         "category": "Hard Resources",
-        "perTier": 10,
-        "effect": "+{% Fishing EXP",
-        "bonus": 10,
+        "perTier": 4,
+        "effect": "+{% Max Charge",
+        "bonus": 7,
         "order": 23
     },
-    "Fish8": {
-        "cardID": "F23",
+    "SoulCard5": {
+        "cardID": "F11",
         "category": "Hard Resources",
-        "perTier": 10,
-        "effect": "+{% Fishing Away Gains",
-        "bonus": 3,
+        "perTier": 5,
+        "effect": "+{% Charge Rate",
+        "bonus": 5,
         "order": 24
     },
     "mushP": {
@@ -1111,13 +1111,21 @@
         "bonus": 2.5,
         "order": 5
     },
+    "wolfC": {
+        "cardID": "Z14",
+        "category": "Bosses",
+        "perTier": 10,
+        "effect": "+{ Weapon Power",
+        "bonus": 3,
+        "order": 6
+    },
     "babaHour": {
         "cardID": "Z5",
         "category": "Bosses",
         "perTier": 1.5,
         "effect": "+{% Double AFK claim chance",
         "bonus": 3,
-        "order": 6
+        "order": 7
     },
     "babaMummy": {
         "cardID": "Z6",
@@ -1125,7 +1133,7 @@
         "perTier": 1.5,
         "effect": "+{% Total Drop Rate",
         "bonus": 6,
-        "order": 7
+        "order": 8
     },
     "Boss2A": {
         "cardID": "Z3",
@@ -1133,7 +1141,7 @@
         "perTier": 1.5,
         "effect": "+{% EXP from monsters",
         "bonus": 5,
-        "order": 8
+        "order": 9
     },
     "Boss2B": {
         "cardID": "Z7",
@@ -1141,7 +1149,15 @@
         "perTier": 1.5,
         "effect": "+{% Skill EXP",
         "bonus": 3.75,
-        "order": 9
+        "order": 10
+    },
+    "Boss2C": {
+        "cardID": "Z15",
+        "category": "Bosses",
+        "perTier": 11,
+        "effect": "+{ Star Talent Pts (Passive)",
+        "bonus": 15,
+        "order": 11
     },
     "mini3a": {
         "cardID": "Z12",
@@ -1149,7 +1165,7 @@
         "perTier": 5,
         "effect": "+{% Money from Monsters",
         "bonus": 12,
-        "order": 10
+        "order": 12
     },
     "Boss3A": {
         "cardID": "Z8",
@@ -1157,7 +1173,7 @@
         "perTier": 1.5,
         "effect": "+{% Cog Build Spd (Passive)",
         "bonus": 8,
-        "order": 11
+        "order": 13
     },
     "Boss3B": {
         "cardID": "Z9",
@@ -1165,7 +1181,15 @@
         "perTier": 1.5,
         "effect": "+{% Shrine Effects",
         "bonus": 5,
-        "order": 12
+        "order": 14
+    },
+    "Boss3C": {
+        "cardID": "Z16",
+        "category": "Bosses",
+        "perTier": 12,
+        "effect": "+{% All Stat",
+        "bonus": 1.5,
+        "order": 15
     },
     "mini4a": {
         "cardID": "Z13",
@@ -1173,7 +1197,7 @@
         "perTier": 5,
         "effect": "+{% Cooking EXP gain",
         "bonus": 6,
-        "order": 13
+        "order": 16
     },
     "Boss4A": {
         "cardID": "Z10",
@@ -1181,7 +1205,7 @@
         "perTier": 2,
         "effect": "+{% Kitchen Speed (Passive)",
         "bonus": 6,
-        "order": 14
+        "order": 17
     },
     "Boss4B": {
         "cardID": "Z11",
@@ -1189,7 +1213,7 @@
         "perTier": 2,
         "effect": "+{% All Skill Efficiency",
         "bonus": 10,
-        "order": 15
+        "order": 18
     },
     "ghost": {
         "cardID": "Y0",

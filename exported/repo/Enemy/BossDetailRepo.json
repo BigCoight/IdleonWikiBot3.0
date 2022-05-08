@@ -15,7 +15,7 @@
         ]
     },
     "wolfB": {
-        "health": 15000000,
+        "health": 8000000,
         "defence": 1750,
         "exp": 400000,
         "keys": 5,
@@ -31,17 +31,17 @@
     },
     "wolfC": {
         "health": 100000000,
-        "defence": 100000,
-        "exp": 1,
-        "keys": 9999,
+        "defence": 8000,
+        "exp": 50000000,
+        "keys": 30,
         "attacks": [
-            {"name": "Fireball", "damage": 18000},
-            {"name": "Stomp", "damage": 40000},
-            {"name": "Rock Spikes", "damage": 20000},
-            {"name": "Spike Traps", "damage": 15000},
-            {"name": "Sword Swing", "damage": 25000},
-            {"name": "Uppercut", "damage": 50000},
-            {"name": "Rocketfist", "damage": 33000}
+            {"name": "Fireball", "damage": 3650},
+            {"name": "Stomp", "damage": 5500},
+            {"name": "Rock Spikes", "damage": 3800},
+            {"name": "Spike Traps", "damage": 3675},
+            {"name": "Sword Swing", "damage": 5500},
+            {"name": "Uppercut", "damage": 8000},
+            {"name": "Rocketfist", "damage": 5000}
         ]
     },
     "Boss2A": {
@@ -60,7 +60,7 @@
         ]
     },
     "Boss2B": {
-        "health": 100000000,
+        "health": 30000000,
         "defence": 3500,
         "exp": 2000000,
         "keys": 5,
@@ -75,10 +75,10 @@
         ]
     },
     "Boss2C": {
-        "health": 500000000,
-        "defence": 100000,
-        "exp": 1,
-        "keys": 9999,
+        "health": 400000000,
+        "defence": 15000,
+        "exp": 100000000,
+        "keys": 40,
         "attacks": [
             {"name": "Hammer", "damage": 18000},
             {"name": "Scimitar", "damage": 40000},
@@ -103,7 +103,7 @@
         ]
     },
     "Boss3B": {
-        "health": 400000000,
+        "health": 250000000,
         "defence": 7500,
         "exp": 10000000,
         "keys": 5,
@@ -117,9 +117,9 @@
     },
     "Boss3C": {
         "health": 2000000000,
-        "defence": 100000,
-        "exp": 1,
-        "keys": 9999,
+        "defence": 25000,
+        "exp": 500000000,
+        "keys": 50,
         "attacks": [
             {"name": "Front Stomp", "damage": 18000},
             {"name": "Back Stomp", "damage": 40000},

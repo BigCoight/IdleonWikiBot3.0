@@ -14,6 +14,11 @@ from repositories.master.FileRepository import FileRepository
 class ItemNoteRepo(FileRepository[Note]):
 
 	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		ItemDetailRepo.initialise(cls.codeReader, log)
+
+
+	@classmethod
 	def getCategory(cls) -> str:
 		return "Item/Sources"
 

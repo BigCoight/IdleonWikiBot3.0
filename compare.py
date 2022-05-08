@@ -6,7 +6,6 @@ from repositories.dungeons.DungItemRepo import DungItemRepo
 from repositories.enemies.BossDetailRepo import BossDetailRepo
 from repositories.enemies.DropTableRepo import DropTableRepo
 from repositories.item.AnvilRepo import AnvilRepo
-from repositories.item.CardRepo import CardRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.RefineryCostRepo import RefineryCostRepo
 from repositories.item.SpecificItemRepo import SpecificItemRepo
@@ -17,7 +16,6 @@ from repositories.misc.CardSetRepo import CardSetRepo
 from repositories.misc.ConstellationsRepo import ConstellationsRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
-from repositories.misc.TaskDescriptionsRepo import TaskDescriptionRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
 from repositories.misc.world2.BubbleRepo import BubbleRepo
 from repositories.misc.world2.FishPoolRepo import FishPoolRepo
@@ -40,8 +38,8 @@ from repositories.misc.world4.TerritoryFightRepo import TerritoryFightRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("155", True)
-oldV = IdleonReader("154alphab", True)
+newV = IdleonReader("156", True)
+oldV = IdleonReader("155", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)

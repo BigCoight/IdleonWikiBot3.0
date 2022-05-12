@@ -1,12 +1,7 @@
 from typing import Set
 
-from pywikibot import Site, Page
-
 from definitions.collections.Enemy import Enemy
-from definitions.enemy.AFKType import AFKType
-from definitions.enemy.EnemyType import EnemyType
 from helpers.CodeReader import IdleonReader
-from helpers.ColourPrinter import printRed
 from repositories.enemies.BossDetailRepo import BossDetailRepo
 from repositories.enemies.DropTableRepo import DropTableRepo
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
@@ -14,7 +9,6 @@ from repositories.enemies.EnemyNavRepo import EnemyNavRepo
 from repositories.enemies.EnemyNoteRepo import EnemyNoteRepo
 from repositories.enemies.EnemyTableRepo import EnemyTableRepo
 from repositories.enemies.MapDataRepo import MapDataRepo
-from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.master.Repository import Repository
@@ -59,7 +53,7 @@ class EnemyRepo(Repository[Enemy]):
 		return cls.get(name).details.Name
 
 	@classmethod
-	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True):
 		return super().compareVersions(v1, v2, ignored = {
 			"bossData",
 			"navigation",
@@ -73,7 +67,8 @@ class EnemyRepo(Repository[Enemy]):
 			"MovingFrame",
 			"DeathFrame",
 			"Type",
-		})
+		},
+		                               useIgnore = False)
 
 	@classmethod
 	def _ignore(cls, name: str, data: Enemy) -> bool:
@@ -82,4 +77,3 @@ class EnemyRepo(Repository[Enemy]):
 		if data.mapData is None or data.navigation is None:
 			return True
 		return EnemyDetailsRepo._ignore(name, data.details)
-

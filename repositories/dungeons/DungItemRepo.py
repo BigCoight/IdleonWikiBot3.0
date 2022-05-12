@@ -3,8 +3,8 @@ from typing import List
 from definitions.dungeons.DungItem import DungItem
 from helpers.Constants import Constants
 from helpers.HelperFunctions import getFromSplitArray, getFromArrayArray
-from repositories.misc.AchievementRepo import AchievementRepo
 from repositories.master.Repository import Repository
+from repositories.misc.AchievementRepo import AchievementRepo
 
 
 class DungItemRepo(Repository[DungItem]):
@@ -46,7 +46,6 @@ class DungItemRepo(Repository[DungItem]):
 			)
 			cls.add(item[0], addition)
 			cls.addList(addition)
-
 
 	@classmethod
 	def getCorrespondingAchieve(cls, n: int):

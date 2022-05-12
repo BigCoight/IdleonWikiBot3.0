@@ -34,7 +34,7 @@ class CodeReader:
 			self.sections.append(Section(start, re.escape(end), sectionName))
 			return
 		if self.steam:
-			self.sections.append(Section(start, r"\}\),", sectionName))
+			self.sections.append(Section(start, r"\}\)[,;]", sectionName))
 			return
 		self.sections.append(Section(start, r"\};", sectionName))
 

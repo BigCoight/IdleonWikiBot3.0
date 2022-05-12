@@ -943,13 +943,21 @@
         "bonus": 2.5,
         "order": 5
     },
+    "frogGG": {
+        "cardID": "X22",
+        "category": "Dungeons",
+        "perTier": 5,
+        "effect": "{% to start with RNG item",
+        "bonus": 20,
+        "order": 6
+    },
     "frogGR": {
         "cardID": "X3",
         "category": "Dungeons",
         "perTier": 1.5,
         "effect": "{% to start with RNG item",
         "bonus": 15,
-        "order": 6
+        "order": 7
     },
     "frogGR2": {
         "cardID": "X4",
@@ -957,7 +965,7 @@
         "perTier": 1.5,
         "effect": "+{% Dungeon Flurbos",
         "bonus": 4,
-        "order": 7
+        "order": 8
     },
     "frogGR3": {
         "cardID": "X5",
@@ -965,7 +973,15 @@
         "perTier": 1.5,
         "effect": "+{% Dungeon Credits",
         "bonus": 5,
-        "order": 8
+        "order": 9
+    },
+    "frogGR4": {
+        "cardID": "X21",
+        "category": "Dungeons",
+        "perTier": 1,
+        "effect": "+{% Dungeon Move Speed",
+        "bonus": 7,
+        "order": 10
     },
     "target": {
         "cardID": "X6",
@@ -973,7 +989,7 @@
         "perTier": 2,
         "effect": "+{ Base Dungeon HP",
         "bonus": 2,
-        "order": 9
+        "order": 11
     },
     "rocky": {
         "cardID": "X7",
@@ -981,7 +997,7 @@
         "perTier": 2,
         "effect": "+{% Dungeon Card Chance",
         "bonus": 8,
-        "order": 10
+        "order": 12
     },
     "steakR": {
         "cardID": "X9",
@@ -989,7 +1005,7 @@
         "perTier": 2,
         "effect": "+{% Dungeon Money",
         "bonus": 6,
-        "order": 11
+        "order": 13
     },
     "totem": {
         "cardID": "X16",
@@ -997,7 +1013,7 @@
         "perTier": 2,
         "effect": "+{% RNG item rarity",
         "bonus": 10,
-        "order": 12
+        "order": 14
     },
     "cactus": {
         "cardID": "X8",
@@ -1005,7 +1021,7 @@
         "perTier": 2,
         "effect": "+{% Dungeon Boss Dmg",
         "bonus": 3,
-        "order": 13
+        "order": 15
     },
     "potatoB": {
         "cardID": "X10",
@@ -1013,7 +1029,7 @@
         "perTier": 5,
         "effect": "+{% Dungeon MP regen",
         "bonus": 5,
-        "order": 14
+        "order": 16
     },
     "snakeZ": {
         "cardID": "X11",
@@ -1021,7 +1037,7 @@
         "perTier": 1.5,
         "effect": "+{% Dungeon Drop Rate",
         "bonus": 4,
-        "order": 15
+        "order": 17
     },
     "snakeZ2": {
         "cardID": "X12",
@@ -1029,7 +1045,7 @@
         "perTier": 1.5,
         "effect": "+{% Total Dungeon Dmg",
         "bonus": 5,
-        "order": 16
+        "order": 18
     },
     "snakeZ3": {
         "cardID": "X13",
@@ -1037,7 +1053,7 @@
         "perTier": 1.5,
         "effect": "+{% Dungeon Flurbos",
         "bonus": 5,
-        "order": 17
+        "order": 19
     },
     "iceknight": {
         "cardID": "X17",
@@ -1045,7 +1061,7 @@
         "perTier": 8,
         "effect": "+{% Dungeon MP regen",
         "bonus": 8,
-        "order": 18
+        "order": 20
     },
     "iceBossZ": {
         "cardID": "X18",
@@ -1053,7 +1069,7 @@
         "perTier": 2,
         "effect": "+{% Dungeon Card Chance",
         "bonus": 15,
-        "order": 19
+        "order": 21
     },
     "iceBossZ2": {
         "cardID": "X19",
@@ -1061,7 +1077,7 @@
         "perTier": 1.5,
         "effect": "+{% Dungeon Credits",
         "bonus": 8,
-        "order": 20
+        "order": 22
     },
     "iceBossZ3": {
         "cardID": "X20",
@@ -1069,7 +1085,7 @@
         "perTier": 1.5,
         "effect": "+{% Total Dungeon Dmg",
         "bonus": 8,
-        "order": 21
+        "order": 23
     },
     "babayaga": {
         "cardID": "Z0",

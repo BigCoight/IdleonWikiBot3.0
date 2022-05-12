@@ -22,7 +22,6 @@ from definitions.itemdef.specifictypes.WeaponItem import WeaponItem
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
 from definitions.itemdef.specifictypes.master.DescItem import DescItem
 from helpers.CodeReader import IdleonReader
-from helpers.HelperFunctions import camelCaseToTitle
 from repositories.dungeons.KeychainBonusRepo import KeychainBonusRepo
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
 from repositories.item.CardDropChanceRepo import CardDropChanceRepo
@@ -126,7 +125,7 @@ class SpecificItemRepo(Repository[BaseItem]):
 		return cls.getDisplayName(name)
 
 	@classmethod
-	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True):
 		return super().compareVersions(v1, v2, {"category", "internalName", "typeGen"})
 
 	@classmethod

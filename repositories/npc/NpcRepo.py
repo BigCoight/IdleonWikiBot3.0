@@ -11,7 +11,7 @@ from definitions.questdef.Npc import Npc
 from definitions.questdef.Quest import ExpReward, CoinReward, RecipeReward, TalentReward
 from helpers.CodeReader import IdleonReader
 from helpers.Constants import Constants
-from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, camelCaseToTitle, isRecipe, isTalent
+from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, isRecipe, isTalent
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.master.Repository import Repository
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
@@ -152,7 +152,7 @@ class NpcRepo(Repository[Npc]):
 		return name in cls.questToName
 
 	@classmethod
-	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True):
 		return super().compareVersions(v1, v2, ignored = {"head", "QuestName", "CustomType", "note", "NextIndex",
 		                                                  "dialogue", "NoSpaceIndex"})
 

@@ -129,10 +129,12 @@ class Repository(Generic[T], ABC):
 		return True
 
 	@classmethod
-	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True):
 		"""
 
 		Args:
+		    useIgnore:
+		    useIgnore: to use the classes ignore method when comparing
 			v1: The version that is "Old"
 			v2: The version that is "New"
 			ignored: A set of attributes to ignore in the comparison
@@ -155,7 +157,7 @@ class Repository(Generic[T], ABC):
 		sameItems = key1.intersection(key2)
 		newItems = key2 - key1
 		for sameItem in sameItems:
-			if cls._ignore(sameItem, repo2[sameItem]):
+			if cls._ignore(sameItem, repo2[sameItem]) and useIgnore:
 				continue
 			if repo1[sameItem].isFiller():
 				newItems.add(sameItem)

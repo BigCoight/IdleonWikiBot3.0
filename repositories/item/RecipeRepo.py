@@ -139,7 +139,7 @@ class RecipeRepo(Repository[Recipe]):
 		return {"recipe"}
 
 	@classmethod
-	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set()):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True):
 		return super().compareVersions(v1, v2, {"detailedRecipe", "recipeFrom", 'intID'})
 
 	@classmethod

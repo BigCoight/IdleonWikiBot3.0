@@ -13,9 +13,12 @@ from repositories.item.TrapBoxRepo import TrapBoxRepo
 from repositories.item.VendorRepo import VendorRepo
 from repositories.misc.AchievementRepo import AchievementRepo
 from repositories.misc.CardSetRepo import CardSetRepo
+from repositories.misc.ColosseumRepo import ColosseumRepo
 from repositories.misc.ConstellationsRepo import ConstellationsRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
+from repositories.misc.RandoListRepo import RandoListRepo
+from repositories.misc.TaskShopDescRepo import TaskShopDescRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
 from repositories.misc.world2.BubbleRepo import BubbleRepo
 from repositories.misc.world2.FishPoolRepo import FishPoolRepo
@@ -38,8 +41,8 @@ from repositories.misc.world4.TerritoryFightRepo import TerritoryFightRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("156", True)
-oldV = IdleonReader("155", True)
+newV = IdleonReader("1561", True)
+oldV = IdleonReader("156", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)
@@ -83,3 +86,7 @@ FishPoolRepo.compareVersions(oldV, newV)
 TrapBoxRepo.compareVersions(oldV, newV)
 ArcadeBonusRepo.compareVersions(oldV, newV)
 SigilRepo.compareVersions(oldV, newV)
+
+TaskShopDescRepo.compareVersions(oldV, newV)
+ColosseumRepo.compareVersions(oldV, newV)
+RandoListRepo.compareVersions(oldV, newV)

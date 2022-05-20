@@ -1,6 +1,10 @@
+from definitions.arcade.ArcadeBonus import ArcadeBonus
+from definitions.itemdef.Recipe import Recipe
+from definitions.talents.TalentTree import TalentTree
 from helpers.CodeReader import IdleonReader
 from repositories.dungeons.DungItemRepo import DungItemRepo
 
-newV = IdleonReader("1561", True)
-oldV = IdleonReader("156", True)
-DungItemRepo.compareVersions(oldV, newV)
+Recipe.toTS()
+TalentTree.toTS()
+ArcadeBonus.toTS()
+

@@ -3,7 +3,6 @@ from typing import List, Dict, Set
 
 from definitions.common.Component import Component
 from definitions.common.CustomReq import CustomReq
-from definitions.common.ExpType import ExpType
 from definitions.questdef.CustomQuest import CustomQuest
 from definitions.questdef.DialogueLine import DialogueLine
 from definitions.questdef.ItemQuest import ItemQuest
@@ -13,10 +12,12 @@ from helpers.CodeReader import IdleonReader
 from helpers.Constants import Constants
 from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, isRecipe, isTalent
 from repositories.item.ItemDetailRepo import ItemDetailRepo
+from repositories.item.RecipeRepo import RecipeRepo
 from repositories.master.Repository import Repository
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
 from repositories.npc.QuestNameRepo import QuestNameRepo
+from repositories.talents.TalentNameRepo import TalentNameRepo
 
 
 class NpcRepo(Repository[Npc]):
@@ -32,6 +33,8 @@ class NpcRepo(Repository[Npc]):
 		QuestNameRepo.initialise(cls.codeReader, log)
 		NpcNoteRepo.initialise(cls.codeReader)
 		ItemDetailRepo.initialise(cls.codeReader, log)
+		RecipeRepo.initialise(cls.codeReader, log)
+		TalentNameRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -114,13 +117,14 @@ class NpcRepo(Repository[Npc]):
 		for k in range(0, len(rew), 2):
 			if "Experience" == rew[k][:10]:
 				questRew.append(ExpReward(
-					type = ExpType(int(rew[k][10:])),
-					amount = rew[k + 1]
+					item = rew[k],
+					quantity = rew[k + 1]
 				))
 				continue
 			if "COIN" in rew[k]:
 				questRew.append(CoinReward(
-					coins = rew[k + 1],
+					item = "",
+					quantity = rew[k + 1],
 				))
 				continue
 			if isRecipe(rew[k]):
@@ -130,6 +134,10 @@ class NpcRepo(Repository[Npc]):
 				))
 				continue
 			if isTalent(rew[k]):
+				print()
+				print("Was a talent")
+				print(temp["QuestName"])
+				print(rew[k + 1])
 				questRew.append(TalentReward(
 					item = rew[k],
 					quantity = rew[k + 1]

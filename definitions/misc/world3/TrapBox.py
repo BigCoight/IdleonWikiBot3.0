@@ -4,7 +4,6 @@ from typing import List
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Integer
 from helpers.HelperFunctions import formatFloat
-from repositories.item.ItemDetailRepo import ItemDetailRepo
 
 
 class TrapBoxTime(IdleonModel):
@@ -19,7 +18,7 @@ class TrapBoxTime(IdleonModel):
 	def writeWikiSinge(self) -> str:
 		dayform = self.time / 60 > 3600
 
-		roundedTime = ceil((self.time/60)/60)*60
+		roundedTime = ceil(self.time / 60)
 		res = f"|minutes={formatFloat(roundedTime)}|qty={self.qtyX}"
 		if self.expX:
 			res += f"|xp={self.expX}"

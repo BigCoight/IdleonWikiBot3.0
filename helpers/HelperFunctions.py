@@ -31,7 +31,7 @@ def getFromSplitArray(v: str, replaceUnderscores: bool = True) -> List[List[str]
 	for subSection in newSections:
 		internalList = []
 		for i in range(len(subSection)):
-			internalList.append(formatStr(subSection[i], replaceUnderscores=replaceUnderscores))
+			internalList.append(formatStr(subSection[i], replaceUnderscores = replaceUnderscores))
 		newList.append(internalList[:])
 	return newList
 
@@ -90,7 +90,7 @@ def isRecipe(name: str) -> bool:
 
 
 def isTalent(name: str) -> bool:
-	return name[:-1] == "TalentBook"
+	return name[:10] == "TalentBook"
 
 
 def formatFloat(v: float) -> str:
@@ -193,7 +193,8 @@ def strToArray(v: str, repU = False) -> List[str]:
 	parts = formatStr(string, ["[", "]", '"', "return", ";", "\n", "{", "}"]).split(",")
 	res = []
 	for x in parts:
-		formatted = formatStr(x).replace("&&&&", ", ").replace("$$$$", ",0").replace("****", "{_").replace("####", "{%_")
+		formatted = formatStr(x).replace("&&&&", ", ").replace("$$$$", ",0").replace("****", "{_").replace("####",
+		                                                                                                   "{%_")
 		if formatted:
 			res.append(replaceUnderscores(formatted) if repU else formatted)
 	return res

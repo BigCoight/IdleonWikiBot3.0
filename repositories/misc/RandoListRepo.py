@@ -1,13 +1,13 @@
 from enum import Enum, auto
+from typing import List, Optional
 
 from definitions.common.EnumMeta import CheckIn
 from definitions.misc.RandoList import RandoList
 from helpers.HelperFunctions import getFromSplitArray
 from repositories.master.Repository import Repository
-from typing import List, Optional
 
 
-class RandoListDescriptions(int, Enum, metaclass= CheckIn):
+class RandoListDescriptions(int, Enum, metaclass = CheckIn):
 	monstersInGrasslands = auto()
 	monstersInDesert = auto()
 	noItemsRemoveFromAnvTab1 = auto()
@@ -85,8 +85,10 @@ class RandoListRepo(Repository[RandoList]):
 		lsts = getFromSplitArray(cls.getSection())
 		for n, lst in enumerate(lsts):
 			cls.addList(RandoList(elements = lst))
-			cls.add(RandoListDescriptions(n+1).name, RandoList(elements = lst))
+			cls.add(RandoListDescriptions(n + 1).name, RandoList(elements = lst))
 
 	@classmethod
 	def get(cls, key: RandoListDescriptions) -> Optional[RandoList]:
+		if isinstance(key, str):
+			return super().get(key)
 		return super().get(key.name)

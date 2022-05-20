@@ -41,8 +41,8 @@ from repositories.misc.world4.TerritoryFightRepo import TerritoryFightRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("1561", True)
-oldV = IdleonReader("156", True)
+newV = IdleonReader("157alphaa", True)
+oldV = IdleonReader("1561", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)

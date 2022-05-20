@@ -153,3 +153,5 @@ TerritoryFightRepo.initialise(codeReader)
 FishPoolRepo.initialise(codeReader)
 CardSetRepo.initialise(codeReader)
 SigilRepo.initialise(codeReader)
+
+ItemRepo.exportWikiMult()

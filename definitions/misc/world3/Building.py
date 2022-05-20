@@ -1,7 +1,5 @@
 from typing import List
 
-from pydantic import BaseModel
-
 from definitions.common.Component import Component
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Numeric, Integer
@@ -13,7 +11,6 @@ class Building(IdleonModel):
 	bonus: str
 	lvlUpReq: List[Component]
 	maxLvl: Integer
-	costIncrement: List[Numeric]
-	bonusInc: Numeric
+	costInc: Numeric
+	bonusInc: List[Numeric]
 	misc: Integer
-

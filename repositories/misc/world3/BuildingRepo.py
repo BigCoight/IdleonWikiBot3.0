@@ -1,7 +1,7 @@
 from typing import List
 
-from definitions.misc.world3.Building import Building
 from definitions.common.Component import Component
+from definitions.misc.world3.Building import Building
 from helpers.HelperFunctions import getFromSplitArray
 from repositories.master.Repository import Repository
 
@@ -34,8 +34,8 @@ class BuildingRepo(Repository[Building]):
 				bonus = "Filler" if len(desc) < 2 else desc[1],
 				lvlUpReq = costs,
 				maxLvl = building[8],
-				costIncrement = building[2:4],
-				bonusInc = building[9],
+				bonusInc = building[2:4],
+				costInc = building[9],
 				misc = building[10],
 
 			)

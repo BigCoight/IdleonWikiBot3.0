@@ -2,13 +2,71 @@ from __future__ import annotations
 
 import difflib
 import enum
+import re
 from collections import Counter
-from typing import List, Dict, Union, Callable, Set
+from typing import List, Dict, Union, Callable, Set, Type
 
 from pydantic import BaseModel
+from pydantic.fields import ModelField
+
+from helpers.CustomTypes import Integer, Numeric
 
 
 class IdleonModel(BaseModel):
+	@classmethod
+	def toTS(cls):
+		def getType(typ: type):
+			reGetTypeName = re.compile(r"\.(\w*)'")
+			baseType = typeMap.get(field.outer_type_)
+			if baseType:
+				return baseType, True
+
+			typeName = reGetTypeName.findall(str(typ))[0]
+			return typeName, False
+
+		def toLowerCamel(imp: str) -> str:
+			return imp[0].lower() + imp[1:]
+
+
+		typeMap = {
+			str: "string",
+			Integer: "number",
+			Numeric: "number",
+			float: "number",
+		}
+
+		res = f"interface {cls.__name__} ""{\n"
+		fields = cls.__fields__
+
+		toImport = set()
+		for name, field in fields.items():
+			res += f"    {name}: "
+			if not isinstance(field.outer_type_, type):
+				if "Dict" in str(field.outer_type_):
+					typ, builtin = getType(field.type_)
+					if not builtin:
+						toImport.add(typ)
+					res += f"Record<string, {typ}>"
+				elif "List" in str(field.outer_type_):
+					typ, builtin = getType(field.type_)
+					if not builtin:
+						toImport.add(typ)
+					res += typ + "[]"
+				res += ",\n"
+				continue
+			typ, builtin = getType(field.type_)
+			if not builtin:
+				toImport.add(typ)
+			res += typ + ",\n"
+		res = res[:-2] + "\n"
+		res += "}"
+
+		for imp in toImport:
+			res = "import { "f"{imp}"" } from "f"'./{toLowerCamel(imp)}';\n" + res
+		print(res)
+
+
+
 	@classmethod
 	def fromList(cls, data: List[any]) -> IdleonModel:
 		keys = cls.__fields__.keys()

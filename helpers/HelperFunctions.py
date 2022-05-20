@@ -3,7 +3,6 @@ from typing import List
 
 import numpy as np
 
-from definitions.common.Source import Source
 from helpers.Constants import Constants
 
 reAll = r'[ a-zA-Z0-_\'n()@,!$+{/}%:.~\-&\|/\*]'
@@ -215,5 +214,4 @@ def changeChestNames(intName, name):
 	return f"{Constants.COLNAMES[col]} {name}"
 
 
-def wikiSource(source: Source) -> str:
-	return source.wikiName
+

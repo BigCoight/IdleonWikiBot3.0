@@ -43,9 +43,16 @@ class Talent(IdleonModel):
 	def getDesc(self) -> str:
 		return self.description.replace("{", "(Table 1)").replace("}", "(Table 2)")
 
+	def isFiller(self) -> bool:
+		return self.name in {"_", "", " "}
+
 
 class TalentTree(IdleonModel):
 	talents: Dict[str, Talent]
 
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		return "\n".join(map(lambda x: x.writeWiki(), self.talents.values()))
+
+	def isFiller(self) -> bool:
+		talents = self.talents.values()
+		return len(talents) < 13

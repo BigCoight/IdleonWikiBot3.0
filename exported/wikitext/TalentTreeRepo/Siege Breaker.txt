@@ -1,0 +1,51 @@
+{{Talent
+|name=Ballista
+|textArr=Summons a giant ballista, which fires arrows dealing (Table 1)% dmg to up to (Table 2) mobs
+|form1=bigBase
+|x1=75
+|x2=1.25
+|form2=intervalAdd
+|y1=4
+|y2=30
+}}
+{{Talent
+|name=Stacked Skulls
+|textArr=+(Table 1)% Kill per Kill per 1000 AGI. Each kill is worth more kills!
+|form1=decay
+|x1=40
+|x2=100
+}}
+{{Talent
+|name=Skill Ambidexterity
+|textArr=AGI has a (Table 1)% larger impact on Skill Efficiency. Also, +(Table 2) AGI.
+|form1=decay
+|x1=60
+|x2=80
+|form2=intervalAdd
+|y1=1
+|y2=2
+}}
+{{Talent
+|name=Adaptation Revelation
+|textArr=+(Table 1)% AGI, and +(Table 2) Max Talent Lv for 'Quickness Boots'
+|form1=decay
+|x1=15
+|x2=100
+|form2=add
+|y1=1
+|y2=0
+}}
+{{Talent
+|name=The Family Guy
+|textArr=+(Table 1)% larger Family Bonuses from ones given by this player
+|form1=decay
+|x1=40
+|x2=100
+}}
+{{Talent
+|name=Symbols Of Beyond ~g
+|textArr=+(Table 1) Lv for all talents higher than Lv 1. This bonus goes up every 20 lvs
+|form1=intervalAdd
+|x1=1
+|x2=20
+}}

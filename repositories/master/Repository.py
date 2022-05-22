@@ -44,6 +44,7 @@ class Repository(Generic[T], ABC):
 			return None
 		cls.initDependencies(log)
 		cls.generateRepo()
+		cls.generateTSRepo()
 		if log:
 			printGreen(f"Generated {cls.__name__}'s repo with {len(cls.repository)} Items")
 		cls._export()
@@ -159,16 +160,19 @@ class Repository(Generic[T], ABC):
 		for sameItem in sameItems:
 			if cls._ignore(sameItem, repo2[sameItem]) and useIgnore:
 				continue
-			if repo1[sameItem].isFiller():
+			if repo1[sameItem].isFiller() and not repo2[sameItem].isFiller():
 				newItems.add(sameItem)
 				continue
 			if modelChanges := repo1[sameItem].compare(repo2[sameItem], ignored):
 				changes[sameItem] = modelChanges
 
 		for newItem in newItems:
-			if cls._ignore(newItem, repo2[newItem]):
+			if cls._ignore(newItem, repo2[newItem]) and useIgnore:
 				continue
-			new[newItem] = repo2[newItem].toDict(ignored)
+			current = repo2[newItem].toDict(ignored)
+			if not any(current):
+				continue
+			new[newItem] = current
 
 		out = {
 			"new": new,
@@ -389,3 +393,11 @@ class Repository(Generic[T], ABC):
 		cls._createOldDir()
 		for name, data in cls.items():
 			cls._writeOld(name, data)
+
+	@classmethod
+	def generateTSRepo(cls):
+		return
+		if not cls.listRepository:
+			cls.get(list(cls.repository.keys())[0]).toTS()
+			return
+		cls.getList(0).toTS()

@@ -1,7 +1,8 @@
+# newV = IdleonReader("1561", True)
+# oldV = IdleonReader("156", True)
+# NpcRepo.initialise(newV.codeReader)
 from helpers.CodeReader import IdleonReader
-from repositories.npc.NpcRepo import NpcRepo
+from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("1561", True)
-oldV = IdleonReader("156", True)
-NpcRepo.initialise(newV.codeReader)
-NpcRepo.exportWikiMult()
+idleonReader = IdleonReader("157alphab", steam = True)
+TalentTreeRepo.initialise(idleonReader.codeReader)

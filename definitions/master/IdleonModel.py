@@ -1,38 +1,50 @@
 from __future__ import annotations
 
-import difflib
 import enum
 import re
-from collections import Counter
-from typing import List, Dict, Union, Callable, Set, Type
+from typing import List, Dict, Union, Callable, Set
 
 from pydantic import BaseModel
-from pydantic.fields import ModelField
 
 from helpers.CustomTypes import Integer, Numeric
+from helpers.HelperFunctions import strToArray
 
 
 class IdleonModel(BaseModel):
 	@classmethod
 	def toTS(cls):
-		def getType(typ: type):
-			reGetTypeName = re.compile(r"\.(\w*)'")
-			baseType = typeMap.get(field.outer_type_)
+		def getType(typ: type | str):
+			reGetTypeName = re.compile(r"\.(\w*)(?:$|')")
+			reGetTypeEnum = re.compile(r"enum '(\w*)'")
+			baseType = typeMap.get(typ)
+			print("GET TYPE", typ, baseType)
 			if baseType:
-				return baseType, True
-
+				return baseType
+			if "enum" in str(typ):
+				enumName = reGetTypeEnum.findall(str(typ))[0]
+				toImport.add(enumName)
+				return enumName
+			if "Union" in str(typ):
+				innerTypes = strToArray(str(typ).replace("typing.Union", ""))
+				innerTypes = [getType(x) for x in innerTypes]
+				[toImport.add(x) for x in innerTypes]
+				return "(" + " | ".join(innerTypes) + ")"
 			typeName = reGetTypeName.findall(str(typ))[0]
-			return typeName, False
+			toImport.add(typeName)
+			return typeName
 
 		def toLowerCamel(imp: str) -> str:
 			return imp[0].lower() + imp[1:]
-
 
 		typeMap = {
 			str: "string",
 			Integer: "number",
 			Numeric: "number",
+			int: "number",
 			float: "number",
+			"helpers.CustomTypes.Integer": "number",
+			bool: "bool",
+			Union[Integer, float]: "number"
 		}
 
 		res = f"interface {cls.__name__} ""{\n"
@@ -40,23 +52,27 @@ class IdleonModel(BaseModel):
 
 		toImport = set()
 		for name, field in fields.items():
+			print(f"{name}")
 			res += f"    {name}: "
-			if not isinstance(field.outer_type_, type):
-				if "Dict" in str(field.outer_type_):
-					typ, builtin = getType(field.type_)
-					if not builtin:
-						toImport.add(typ)
+			print(field.outer_type_, field.type_)
+			if not isinstance(field.outer_type_, type) and field.outer_type_ not in typeMap:
+				outer = str(field.outer_type_)
+				if "Dict" in outer:
+					typ = getType(field.type_)
 					res += f"Record<string, {typ}>"
-				elif "List" in str(field.outer_type_):
-					typ, builtin = getType(field.type_)
-					if not builtin:
-						toImport.add(typ)
+				elif "List" in outer:
+					typ = getType(field.type_)
 					res += typ + "[]"
+				elif "Tuple" in outer:
+					types = strToArray(outer.replace("typing.Tuple", ""))
+					tupleTypes = []
+					for typ in types:
+						typ = getType(typ)
+						tupleTypes.append(typ)
+					res += "[" + ", ".join(tupleTypes) + "]"
 				res += ",\n"
 				continue
-			typ, builtin = getType(field.type_)
-			if not builtin:
-				toImport.add(typ)
+			typ = getType(field.type_)
 			res += typ + ",\n"
 		res = res[:-2] + "\n"
 		res += "}"
@@ -64,8 +80,6 @@ class IdleonModel(BaseModel):
 		for imp in toImport:
 			res = "import { "f"{imp}"" } from "f"'./{toLowerCamel(imp)}';\n" + res
 		print(res)
-
-
 
 	@classmethod
 	def fromList(cls, data: List[any]) -> IdleonModel:
@@ -281,7 +295,6 @@ class IdleonModel(BaseModel):
 			return {}
 		return diffs
 
-
 	def _getDifDict(self, me, other, ignored: Set[str] = set()) -> Dict[str, any]:
 		diffs = {}
 		keys1 = set(me.keys())
@@ -321,7 +334,6 @@ class IdleonModel(BaseModel):
 		if not any(diffs.values()):
 			return {}
 		return diffs
-
 
 	'''
 		def _getDifList(self, me, other, ignored: Set[str] = set()) -> Dict[str, any]:

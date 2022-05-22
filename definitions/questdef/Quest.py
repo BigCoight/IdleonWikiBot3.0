@@ -35,7 +35,6 @@ class RecipeReward(Component):
 
 class TalentReward(Component):
 	def __str__(self):
-		print("I got called")
 		qty = str(self.quantity)
 		no = int(qty[0])
 		index = int(qty[1: no + 1])
@@ -73,7 +72,6 @@ class Quest(DialogueLine):
 		res += f"|requirements={', '.join(map(lambda x: str(x), self.getRequirements()))}\n"
 		res += f"|consumed={'Yes' if self.ConsumeItems else 'No'}\n"
 		res += f"|rewards={', '.join(map(lambda x: str(x), self.Rewards))}\n"
-		print(self.Rewards)
 		res += f"|notes={self.note.note}\n"
 		res += "}}\n"
 		return res

@@ -1,0 +1,126 @@
+{{Talent
+|name=Ballista
+|textArr=Summons a giant ballista, which fires arrows dealing (Table 1)% dmg to up to (Table 2) mobs
+|form1=bigBase
+|x1=75
+|x2=1.25
+|form2=intervalAdd
+|y1=4
+|y2=30
+}}
+{{Talent
+|name=Boar Rush
+|textArr=Summons a boar to run wildly on your platform. Has (Table 1) HP and deals (Table 2)% DMG
+|form1=intervalAdd
+|x1=6
+|x2=20
+|form2=bigBase
+|y1=75
+|y2=1.5
+}}
+{{Talent
+|name=Whale Wallop
+|textArr=Summon up to (Table 1) whales on nearby monsters, who mega splash for (Table 2)% Dmg
+|form1=intervalAdd
+|x1=7
+|x2=17
+|form2=bigBase
+|y1=30
+|y2=1
+}}
+{{Talent
+|name=Nacho Party
+|textArr=Summon a nacho box, who launches (Table 1) cheesy chips per minute, dealing (Table 2)% Dmg
+|form1=intervalAdd
+|x1=15
+|x2=13
+|form2=bigBase
+|y1=50
+|y2=1
+}}
+{{Talent
+|name=Have Yet Anotha One
+|textArr=Basic Attacks have a (Table 1)% chance to fire 1 more arrow. Stacks with others.
+|form1=decay
+|x1=120
+|x2=40
+}}
+{{Talent
+|name=Animalistic Ferocity
+|textArr=+(Table 1) Weapon Power per power of 10 Pet Power of pet in 1st slot of Stored Pets.
+|form1=decay
+|x1=8
+|x2=100
+}}
+{{Talent
+|name=Stacked Skulls
+|textArr=+(Table 1)% Kill per Kill per 1000 AGI. Each kill is worth more kills!
+|form1=decay
+|x1=40
+|x2=100
+}}
+{{Talent
+|name=Skill Ambidexterity
+|textArr=AGI has a (Table 1)% larger impact on Skill Efficiency. Also, +(Table 2) AGI.
+|form1=decay
+|x1=60
+|x2=80
+|form2=intervalAdd
+|y1=1
+|y2=2
+}}
+{{Talent
+|name=Adaptation Revelation
+|textArr=+(Table 1)% AGI, and +(Table 2) Max Talent Lv for 'Quickness Boots'
+|form1=decay
+|x1=15
+|x2=100
+|form2=add
+|y1=1
+|y2=0
+}}
+{{Talent
+|name=The Family Guy
+|textArr=+(Table 1)% larger Family Bonuses from ones given by this player
+|form1=decay
+|x1=40
+|x2=100
+}}
+{{Talent
+|name=Arena Spirit
+|textArr=Get unlimited entries to the Pet Arena for (Table 1) mins. PASSIVE: +(Table 2)% Pet DMG
+|form1=intervalAdd
+|x1=5
+|x2=17
+|form2=decay
+|y1=30
+|y2=100
+}}
+{{Talent
+|name=I Dream Of Peace And Egg
+|textArr=(Table 1)% Chance to get 1 egg per 10 hrs of AFK claims, up to 100 hrs. Candy wont work here.
+|form1=decay
+|x1=100
+|x2=80
+}}
+{{Talent
+|name=Shining Beacon Of Egg
+|textArr=+(Table 1)% Breeding EXP gain, no matter which player you hatch eggs on!
+|form1=decay
+|x1=100
+|x2=100
+}}
+{{Talent
+|name=Curviture Of The Paw
+|textArr=(Table 1)x Higher Pet Power, no matter which player you hatch eggs on!
+|form1=decayMulti
+|x1=1.2
+|x2=100
+}}
+{{Talent
+|name=Symbols Of Beyond ~g
+|textArr=+(Table 1) Lv for all talents higher than Lv 1. This bonus goes up every 20 lvs
+|form1=intervalAdd
+|x1=1
+|x2=20
+}}

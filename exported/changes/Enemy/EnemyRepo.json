@@ -1,30 +1,21 @@
 {
-    "new": {},
-    "changes": {
-        "frogGR2": {"details": {"MonsterHPTotal": [750000, 17500]}},
-        "JungleTree": {"details": {"RespawnTime": [50000, 5000000]}},
-        "snakeZ2": {"details": {"MonsterHPTotal": [750000, 12250]}},
-        "snakeZ3": {"details": {"MonsterHPTotal": [750000, 1750000]}},
-        "wolfC": {
-            "drops": {
-                "7": [
-                    {"item": "Quest17", "quantity": 1, "chance": 0.3, "questLink": "N/A"},
-                    {"item": "Quest17", "quantity": 6, "chance": 0.5, "questLink": "N/A"}
-                ],
-                "8": [" ", {"item": "Quest29", "quantity": 2, "chance": 0.5, "questLink": "N/A"}]
-            }
-        },
-        "iceBossZ2": {"details": {"MonsterHPTotal": [10000, 66000]}},
-        "Boss3C": {
-            "drops": {
-                "6": [" ", {"item": "Chiz1", "quantity": 2, "chance": 0.5, "questLink": "N/A"}],
-                "5": [" ", {"item": "Chiz0", "quantity": 7, "chance": 0.5, "questLink": "N/A"}]
-            }
-        },
-        "frogGR": {"details": {"MonsterHPTotal": [10000, 700]}},
-        "frogGR3": {"details": {"MonsterHPTotal": [750000, 350000]}},
-        "iceBossZ3": {"details": {"MonsterHPTotal": [10000, 4480000]}},
-        "iceBossZ": {"details": {"MonsterHPTotal": [10000, 2800]}},
-        "snakeZ": {"details": {"MonsterHPTotal": [10000, 1750]}}
-    }
+    "new": {
+        "pghost": {
+            "details": {
+                "Name": "Ghost (Event)",
+                "RespawnTime": 40,
+                "MonsterHPTotal": 14000,
+                "SpecialType": "",
+                "ExpGiven": 420,
+                "ExpType": 0,
+                "Defence": 1,
+                "MoveSPEED": 7,
+                "Damages": [2, 1],
+                "DefFor0": 0.5
+            },
+            "drops": null,
+            "mapData": null
+        }
+    },
+    "changes": {"Pet2": {"details": {"MoveSPEED": [4, 5]}}}
 }

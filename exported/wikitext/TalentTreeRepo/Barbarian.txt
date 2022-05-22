@@ -1,0 +1,123 @@
+{{Talent
+|name=Bear Swipe
+|textArr=A big ol' bear claw swipes up to 5 monsters in front of you, dealing (Table 2)% damage
+|form1=intervalAdd
+|x1=3
+|x2=30
+|form2=bigBase
+|y1=108
+|y2=2
+}}
+{{Talent
+|name=Axe Hurl
+|textArr=Throws axe in a downward arc, which deals (Table 1)% dmg to up to (Table 2) monsters.
+|form1=bigBase
+|x1=200
+|x2=3
+|form2=intervalAdd
+|y1=2
+|y2=50
+}}
+{{Talent
+|name=Mocking Shout
+|textArr=Every 0.5 sec, monsters move toward you and heal for (Table 1)% HP. Lasts for (Table 2) seconds
+|form1=add
+|x1=1
+|x2=0
+|form2=bigBase
+|y1=20
+|y2=0.2
+}}
+{{Talent
+|name=No Pain No Gain
+|textArr=Reduces max HP by (Table 1)%, increases damage by (Table 2)%. Also, you take double damage.
+|form1=decay
+|x1=100
+|x2=30
+|form2=decay
+|y1=100
+|y2=50
+}}
+{{Talent
+|name=Monster Decimator
+|textArr=There is a (Table 1)% chance for a monster kill to be counted for double.
+|form1=decay
+|x1=100
+|x2=50
+}}
+{{Talent
+|name=Apocalypse Zow
+|textArr=+(Table 1)% Dmg for every monster you kill over 100,000 times. Counts (Table 2) monster types
+|form1=intervalAdd
+|x1=2
+|x2=33
+|form2=add
+|y1=1
+|y2=0
+}}
+{{Talent
+|name=Fistful Of Obol
+|textArr=Obols give +(Table 1)% more STR than what's listed
+|form1=decay
+|x1=60
+|x2=50
+}}
+{{Talent
+|name=Strongest Statues
+|textArr='Power', 'Mining', and 'Oceanman' statues give (Table 1)% higher bonuses
+|form1=decay
+|x1=100
+|x2=50
+}}
+{{Talent
+|name=Str Summore
+|textArr=+(Table 1) Max Talent Level for 'Fist of Rage'
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Beefy Bottles
+|textArr=Each Lv of 'Warriors Only' Bubble raises max Lv of 'CritiKill' Talent, up to +(Table 1)
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Worming Undercover
+|textArr=(Table 1)% chance
+|form1=9.3
+|x1=-1
+|x2=-1
+}}
+{{Talent
+|name=Bobbin' Bobbers
+|textArr=+(Table 1)% Minigame reward, and +1 Fishing Power per pt of your Highscore, up to +(Table 2)
+|form1=bigBase
+|x1=12
+|x2=3
+|form2=intervalAdd
+|y1=5
+|y2=3
+}}
+{{Talent
+|name=All Fish Diet
+|textArr=+(Table 1)% Fishing EXP, since like, fish is brain food and so it makes sense that... eh forget it.
+|form1=add
+|x1=1.5
+|x2=0
+}}
+{{Talent
+|name=Catching Some Zzz's
+|textArr=+(Table 1)% Away Gains for Fishing only. Just fishing. It totally doesn't boost anything else!
+|form1=decay
+|x1=20
+|x2=60
+}}
+{{Talent
+|name=Back To Basics
+|textArr=+(Table 1) Talent Points for the 'Warrior' talent tab, and +10 dmg to these Talents' feelings!
+|form1=add
+|x1=1
+|x2=0
+}}

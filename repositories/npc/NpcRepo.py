@@ -134,10 +134,6 @@ class NpcRepo(Repository[Npc]):
 				))
 				continue
 			if isTalent(rew[k]):
-				print()
-				print("Was a talent")
-				print(temp["QuestName"])
-				print(rew[k + 1])
 				questRew.append(TalentReward(
 					item = rew[k],
 					quantity = rew[k + 1]

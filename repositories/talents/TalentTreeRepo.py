@@ -3,7 +3,7 @@ import string
 from typing import List
 
 from definitions.talents.TalentTree import TalentTree, Talent
-from helpers.HelperFunctions import strToArray, formatStr, replaceUnderscores, camelCaseToTitle
+from helpers.HelperFunctions import strToArray, replaceUnderscores, camelCaseToTitle, getFromSplit
 from repositories.master.Repository import Repository
 from repositories.talents.ActiveTalentRepo import ActiveTalentRepo
 
@@ -25,15 +25,13 @@ class TalentTreeRepo(Repository[TalentTree]):
 	def generateRepo(cls) -> None:
 		reEverything = r'"([a-zA-Z0-9_ +{}\',.\-%!$:`?;\n\]\(\)]*)"\.'
 		talentOrder = [int(x) for x in strToArray(cls.getSection(0)) if x]
-		talentNames = re.findall(reEverything, cls.getSection(1))[0].split(" ")
+		talentNames = getFromSplit(cls.getSection(1))
 		reTalentDesc = r'\[\["(.*)"\], "(.*)"\.split\(" "\), \["(.*)"\], \["(.*)"\]\]'
 		talentDescriptions = [" ".join(x).split(" ") for x in re.findall(reTalentDesc, cls.getSection(2))]
 		classNames = re.findall(reEverything, cls.getSection(3))[0].split(" ")[1:]
 		specialTalents = []
 		for n, i in enumerate([41, 42, 43, 44, 45], 1):
 			specialTalents.append(f"Special Talent {n}")
-
-
 
 		def doTalents(arr, off, mod):
 			for n, name in enumerate(arr):

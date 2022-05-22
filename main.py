@@ -71,7 +71,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("1561", steam = True)
+idleonReader = IdleonReader("157alphab", steam = True)
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
@@ -154,4 +154,4 @@ FishPoolRepo.initialise(codeReader)
 CardSetRepo.initialise(codeReader)
 SigilRepo.initialise(codeReader)
 
-ItemRepo.exportWikiMult()
+TalentTreeRepo.exportWikiMult()

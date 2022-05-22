@@ -1,0 +1,120 @@
+{{Talent
+|name=Piercing Arrow
+|textArr=Shoots an arrow that deals (Table 1)% damage to up to (Table 2) monsters
+|form1=bigBase
+|x1=110
+|x2=2
+|form2=intervalAdd
+|y1=2
+|y2=40
+}}
+{{Talent
+|name=Kung Fu Kick
+|textArr=Pushes back nearby monsters by (Table 1) pixels while dealing (Table 2)% damage
+|form1=bigBase
+|x1=25
+|x2=1
+|form2=bigBase
+|y1=60
+|y2=2
+}}
+{{Talent
+|name=Hema Overdrive
+|textArr=Increase max HP and max MP by (Table 1)%
+|form1=add
+|x1=0.4
+|x2=0.01
+}}
+{{Talent
+|name=Strafe
+|textArr=Temporarily boosts Movement Speed by (Table 1)% for (Table 2) minutes
+|form1=bigBase
+|x1=5
+|x2=0.3
+|form2=intervalAdd
+|y1=2
+|y2=15
+}}
+{{Talent
+|name=Have Another!
+|textArr=Basic Attacks have a (Table 1)% chance to fire 1 additional arrow
+|form1=decay
+|x1=120
+|x2=40
+}}
+{{Talent
+|name=Veins Of The Infernal
+|textArr=Increases Damage Dealt by (Table 1)% every 10 Smithing Levels
+|form1=decay
+|x1=50
+|x2=60
+}}
+{{Talent
+|name=Garb Of Un'agi'ng Quality
+|textArr=All Equipment gives (Table 1)% more AGI than what's listed
+|form1=add
+|x1=1.5
+|x2=0
+}}
+{{Talent
+|name=High Polymer Limbs
+|textArr=The effect Weapon Power has on Damage Dealt is increased by (Table 1)%
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Sanic Speed
+|textArr=+(Table 1) base AGI
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Robbinghood
+|textArr=Monster drop rarity increased by (Table 1)%
+|form1=decay
+|x1=40
+|x2=65
+}}
+{{Talent
+|name=Smeltin' Erryday
+|textArr=Every kill has a (Table 1)% chance to give (Table 2) seconds of instant forge progress
+|form1=decay
+|x1=50
+|x2=80
+|form2=intervalAdd
+|y1=1
+|y2=60
+}}
+{{Talent
+|name=Acme Anvil
+|textArr=Get 1 Anvil Production Point, and also gain +(Table 1) extra pts every 10 Smithing Lvs
+|form1=intervalAdd
+|x1=1
+|x2=15
+}}
+{{Talent
+|name=Yea I Already Know
+|textArr=Start with (Table 1)% exp per 250 AGI when you lv up any Specialized Skill. Caps at (Table 2)%.
+|form1=decay
+|x1=5
+|x2=90
+|form2=intervalAdd
+|y1=5
+|y2=10
+}}
+{{Talent
+|name=Godly Creation
+|textArr=(Table 1)% chance to apply a special bonus to any equip crafted at the anvil.
+|form1=decay
+|x1=50
+|x2=75
+}}
+{{Talent
+|name=Focused Soul
+|textArr=EXP Gain for all Specialized Skills is increased by (Table 1)%
+|form1=add
+|x1=1
+|x2=0
+}}

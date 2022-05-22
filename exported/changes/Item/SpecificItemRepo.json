@@ -1,66 +1,12 @@
 {
-    "new": {
-        "CardsX21": {
-            "displayName": "Vengeful Grandfrogger Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X21",
-                "perTier": 1,
-                "effect": "+{% Dungeon Move Speed",
-                "bonus": 7,
-                "order": 10
-            },
-            "dropChance": 1
-        },
-        "CardsX22": {
-            "displayName": "Eldritch Croaker Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "X22",
-                "perTier": 5,
-                "effect": "{% to start with RNG item",
-                "bonus": 20,
-                "order": 6
-            },
-            "dropChance": 0.004
-        }
-    },
+    "new": {},
     "changes": {
-        "CardsX10": {"cardData": {"order": [14, 16]}},
-        "CardsX17": {"cardData": {"order": [18, 20]}},
-        "Line3": {
-            "fishingToolkit": {
-                "depth3": [0, 8],
-                "depth4": [0, 20],
-                "fishingExp": [0, 22],
-                "fishingSpeed": [0, 6],
-                "fishingPower": [0, 2]
-            }
-        },
-        "CardsX4": {"cardData": {"order": [7, 8]}},
-        "Line4": {
-            "fishingToolkit": {
-                "depth3": [0, 30],
-                "depth4": [0, 30],
-                "fishingExp": [0, 35],
-                "fishingSpeed": [0, 12],
-                "fishingPower": [0, 5]
-            }
-        },
-        "CardsX3": {"cardData": {"order": [6, 7]}, "dropChance": [0.025, 0.04]},
-        "CardsX20": {"cardData": {"order": [21, 23]}},
-        "CardsX9": {"cardData": {"order": [11, 13]}},
-        "CardsX7": {"cardData": {"order": [10, 12]}},
-        "CardsX8": {"cardData": {"order": [13, 15]}},
-        "CardsX6": {"cardData": {"order": [9, 11]}},
-        "CardsX11": {"cardData": {"order": [15, 17]}},
-        "CardsX12": {"cardData": {"order": [16, 18]}},
-        "CardsX19": {"cardData": {"order": [20, 22]}},
-        "CardsX16": {"cardData": {"order": [12, 14]}},
-        "CardsX18": {"cardData": {"order": [19, 21]}},
-        "CardsX5": {"cardData": {"order": [8, 9]}},
-        "CardsX13": {"cardData": {"order": [17, 19]}}
+        "CardsX16": {"dropChance": [0.007, 0.07]},
+        "ClassSwap": {
+            "description": [
+                "Hold down on this item to change sub class within your class. It won't let you change classes, you'll need to reach world 3 to do that. ",
+                "Hold down on this item to change sub class within your class. It won't let you change classes, that will be done a different way in the future... "
+            ]
+        }
     }
 }

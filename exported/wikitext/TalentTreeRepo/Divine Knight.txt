@@ -1,0 +1,41 @@
+{{Talent
+|name=Charred Skulls
+|textArr=+(Table 1)% Kill per Kill per 1000 STR. Each kill is worth more kills!
+|form1=decay
+|x1=40
+|x2=100
+}}
+{{Talent
+|name=Skill Strengthen
+|textArr=STR has a (Table 1)% larger impact on Skill Efficiency. Also, +(Table 2) STR.
+|form1=decay
+|x1=60
+|x2=80
+|form2=intervalAdd
+|y1=1
+|y2=2
+}}
+{{Talent
+|name=Overblown Testosterone
+|textArr=+(Table 1)% STR, and +(Table 2) Max Talent Lv for 'Fist of Rage'
+|form1=decay
+|x1=15
+|x2=100
+|form2=add
+|y1=1
+|y2=0
+}}
+{{Talent
+|name=The Family Guy
+|textArr=+(Table 1)% larger Family Bonuses from ones given by this player
+|form1=decay
+|x1=40
+|x2=100
+}}
+{{Talent
+|name=Symbols Of Beyond ~r
+|textArr=+(Table 1) Lv for all talents higher than Lv 1. This bonus goes up every 20 lvs
+|form1=intervalAdd
+|x1=1
+|x2=20
+}}

@@ -23,7 +23,7 @@
                 "Rewards": [
                     {"item": "ExpBalloon1", "quantity": 2},
                     {"item": "PremiumGem", "quantity": 2},
-                    {"type": "Class", "amount": 13000}
+                    {"item": "Experience0", "quantity": 13000}
                 ],
                 "QuestName": "TP Pete1",
                 "Difficulty": 4,
@@ -58,7 +58,7 @@
                 "NoSpaceIndex": 11,
                 "Rewards": [
                     {"item": "EquipmentTools10", "quantity": 1},
-                    {"type": "Class", "amount": 30000}
+                    {"item": "Experience0", "quantity": 30000}
                 ],
                 "QuestName": "TP Pete3",
                 "Difficulty": 5,
@@ -186,7 +186,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 3,
-                "Rewards": [{"type": "Class", "amount": 1337}, {"coins": 1337}],
+                "Rewards": [{"item": "Experience0", "quantity": 1337}, {"item": "", "quantity": 1337}],
                 "QuestName": "Secretkeeper1",
                 "Difficulty": 1,
                 "note": " ",
@@ -355,7 +355,7 @@
                 "Rewards": [
                     {"item": "EquipmentStatues8", "quantity": 12},
                     {"item": "ExpBalloon1", "quantity": 3},
-                    {"type": "Class", "amount": 25000}
+                    {"item": "Experience0", "quantity": 25000}
                 ],
                 "QuestName": "Sprout1",
                 "Difficulty": 5,
@@ -373,7 +373,7 @@
                 "Rewards": [
                     {"item": "EquipmentPants16", "quantity": 1},
                     {"item": "ExpBalloon1", "quantity": 1},
-                    {"type": "Class", "amount": 10000}
+                    {"item": "Experience0", "quantity": 10000}
                 ],
                 "QuestName": "Sprout2",
                 "Difficulty": 4,
@@ -391,7 +391,7 @@
                 "NoSpaceIndex": 10,
                 "Rewards": [
                     {"item": "EquipmentShirts17", "quantity": 1},
-                    {"type": "Choppin", "amount": 1200}
+                    {"item": "Experience3", "quantity": 1200}
                 ],
                 "QuestName": "Sprout3",
                 "Difficulty": 3,
@@ -413,7 +413,7 @@
                 "Rewards": [
                     {"item": "NPCtoken12", "quantity": 1},
                     {"item": "EquipmentRings12", "quantity": 1},
-                    {"type": "Choppin", "amount": 5000}
+                    {"item": "Experience3", "quantity": 5000}
                 ],
                 "QuestName": "Sprout4",
                 "Difficulty": 7,
@@ -647,8 +647,8 @@
                 "NoSpaceIndex": 3,
                 "Rewards": [
                     {"item": "MaxCapBagT1", "quantity": 1},
-                    {"type": "Class", "amount": 30},
-                    {"coins": 100}
+                    {"item": "Experience0", "quantity": 30},
+                    {"item": "", "quantity": 100}
                 ],
                 "QuestName": "Woodsman1",
                 "Difficulty": 1,
@@ -663,7 +663,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 6,
-                "Rewards": [{"item": "EquipmentToolsHatchet0", "quantity": 1}, {"coins": 200}],
+                "Rewards": [{"item": "EquipmentToolsHatchet0", "quantity": 1}, {"item": "", "quantity": 200}],
                 "QuestName": "Woodsman2",
                 "Difficulty": 2,
                 "note": "",
@@ -679,7 +679,7 @@
                 "NoSpaceIndex": 9,
                 "Rewards": [
                     {"item": "EquipmentHats4Choppin", "quantity": 1},
-                    {"type": "Class", "amount": 500}
+                    {"item": "Experience0", "quantity": 500}
                 ],
                 "QuestName": "Woodsman3",
                 "Difficulty": 3,
@@ -694,7 +694,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 13,
-                "Rewards": [{"item": "NPCtoken5", "quantity": 1}, {"type": "Choppin", "amount": 1000}],
+                "Rewards": [{"item": "NPCtoken5", "quantity": 1}, {"item": "Experience3", "quantity": 1000}],
                 "QuestName": "Woodsman4",
                 "Difficulty": 5,
                 "note": "",
@@ -817,8 +817,8 @@
                 "NoSpaceIndex": 7,
                 "Rewards": [
                     {"item": "CraftMat2", "quantity": 1},
-                    {"coins": 100},
-                    {"type": "Class", "amount": 10}
+                    {"item": "", "quantity": 100},
+                    {"item": "Experience0", "quantity": 10}
                 ],
                 "QuestName": "Scripticus2",
                 "Difficulty": 2,
@@ -836,8 +836,8 @@
                 "NoSpaceIndex": 10,
                 "Rewards": [
                     {"item": "EquipmentHats7", "quantity": 1},
-                    {"coins": 150},
-                    {"type": "Class", "amount": 15}
+                    {"item": "", "quantity": 150},
+                    {"item": "Experience0", "quantity": 15}
                 ],
                 "QuestName": "Scripticus3",
                 "Difficulty": 1,
@@ -859,7 +859,7 @@
                 "Rewards": [
                     {"item": "InvBag1", "quantity": 1},
                     {"item": "FoodHealth1", "quantity": 20},
-                    {"type": "Class", "amount": 25}
+                    {"item": "Experience0", "quantity": 25}
                 ],
                 "QuestName": "Scripticus4",
                 "Difficulty": 3,
@@ -877,8 +877,8 @@
                 "NoSpaceIndex": 18,
                 "Rewards": [
                     {"item": "Timecandy1", "quantity": 2},
-                    {"coins": 280},
-                    {"type": "Class", "amount": 20}
+                    {"item": "", "quantity": 280},
+                    {"item": "Experience0", "quantity": 20}
                 ],
                 "QuestName": "Scripticus5",
                 "Difficulty": 1,
@@ -896,8 +896,8 @@
                 "NoSpaceIndex": 21,
                 "Rewards": [
                     {"item": "EquipmentTools1", "quantity": 1},
-                    {"type": "Mining", "amount": 50},
-                    {"coins": 200}
+                    {"item": "Experience1", "quantity": 50},
+                    {"item": "", "quantity": 200}
                 ],
                 "QuestName": "Scripticus6",
                 "Difficulty": 3,
@@ -915,7 +915,7 @@
                 "Rewards": [
                     {"item": "MaxCapBagM1", "quantity": 1},
                     {"item": "SmithingRecipes1", "quantity": 36},
-                    {"type": "Class", "amount": 200}
+                    {"item": "Experience0", "quantity": 200}
                 ],
                 "QuestName": "Scripticus7",
                 "Difficulty": 2,
@@ -936,8 +936,8 @@
                 "NoSpaceIndex": 50,
                 "Rewards": [
                     {"item": "InvBag2", "quantity": 1},
-                    {"type": "Class", "amount": 120},
-                    {"coins": 300}
+                    {"item": "Experience0", "quantity": 120},
+                    {"item": "", "quantity": 300}
                 ],
                 "QuestName": "Scripticus8",
                 "Difficulty": 4,
@@ -955,7 +955,7 @@
                 "Rewards": [
                     {"item": "InvBag3", "quantity": 1},
                     {"item": "MaxCapBagM3", "quantity": 1},
-                    {"type": "Class", "amount": 1250}
+                    {"item": "Experience0", "quantity": 1250}
                 ],
                 "QuestName": "Scripticus9",
                 "Difficulty": 5,
@@ -973,7 +973,7 @@
                 "Rewards": [
                     {"item": "rtt0", "quantity": 10},
                     {"item": "ExpBalloon1", "quantity": 2},
-                    {"type": "Class", "amount": 2500}
+                    {"item": "Experience0", "quantity": 2500}
                 ],
                 "QuestName": "Scripticus10",
                 "Difficulty": 2,
@@ -991,8 +991,8 @@
                 "NoSpaceIndex": 43,
                 "Rewards": [
                     {"item": "TalentBook1", "quantity": 362050},
-                    {"type": "Class", "amount": 5000},
-                    {"coins": 4000}
+                    {"item": "Experience0", "quantity": 5000},
+                    {"item": "", "quantity": 4000}
                 ],
                 "QuestName": "Scripticus11",
                 "Difficulty": 3,
@@ -1401,8 +1401,8 @@
                 "NoSpaceIndex": 2,
                 "Rewards": [
                     {"item": "FoodMining1", "quantity": 200},
-                    {"type": "Class", "amount": 500},
-                    {"type": "Mining", "amount": 400}
+                    {"item": "Experience0", "quantity": 500},
+                    {"item": "Experience1", "quantity": 400}
                 ],
                 "QuestName": "Krunk1",
                 "Difficulty": 2,
@@ -1420,7 +1420,7 @@
                 "Rewards": [
                     {"item": "StoneA1b", "quantity": 5},
                     {"item": "InvStorage3", "quantity": 1},
-                    {"type": "Class", "amount": 1000}
+                    {"item": "Experience0", "quantity": 1000}
                 ],
                 "QuestName": "Krunk2",
                 "Difficulty": 4,
@@ -1441,7 +1441,7 @@
                 "NoSpaceIndex": 9,
                 "Rewards": [
                     {"item": "EquipmentStatues2", "quantity": 2},
-                    {"type": "Class", "amount": 1000}
+                    {"item": "Experience0", "quantity": 1000}
                 ],
                 "QuestName": "Krunk3",
                 "Difficulty": 5,
@@ -1573,7 +1573,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 4,
-                "Rewards": [{"item": "OilBarrel4", "quantity": 1}, {"type": "Mining", "amount": 10}],
+                "Rewards": [{"item": "OilBarrel4", "quantity": 1}, {"item": "Experience1", "quantity": 10}],
                 "QuestName": "Glumlee1",
                 "Difficulty": 1,
                 "note": "",
@@ -1587,7 +1587,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 7,
-                "Rewards": [{"item": "OilBarrel1", "quantity": 10}, {"type": "Mining", "amount": 20}],
+                "Rewards": [{"item": "OilBarrel1", "quantity": 10}, {"item": "Experience1", "quantity": 20}],
                 "QuestName": "Glumlee2",
                 "Difficulty": 2,
                 "note": "",
@@ -1604,7 +1604,7 @@
                 "Rewards": [
                     {"item": "Quest1", "quantity": 1},
                     {"item": "MaxCapBagT2", "quantity": 1},
-                    {"type": "Mining", "amount": 15}
+                    {"item": "Experience1", "quantity": 15}
                 ],
                 "QuestName": "Glumlee3",
                 "Difficulty": 1,
@@ -1622,7 +1622,7 @@
                 "NoSpaceIndex": 18,
                 "Rewards": [
                     {"item": "TalentBook1", "quantity": 362640},
-                    {"type": "Mining", "amount": 250}
+                    {"item": "Experience1", "quantity": 250}
                 ],
                 "QuestName": "Glumlee4",
                 "Difficulty": 7,
@@ -1637,7 +1637,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 25,
-                "Rewards": [{"item": "NPCtoken6", "quantity": 1}, {"type": "Mining", "amount": 1000}],
+                "Rewards": [{"item": "NPCtoken6", "quantity": 1}, {"item": "Experience1", "quantity": 1000}],
                 "QuestName": "Glumlee5",
                 "Difficulty": 2,
                 "note": "",
@@ -1825,7 +1825,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 6,
-                "Rewards": [{"item": "MaxCapBag6", "quantity": 1}, {"coins": 300}],
+                "Rewards": [{"item": "MaxCapBag6", "quantity": 1}, {"item": "", "quantity": 300}],
                 "QuestName": "Picnic Stowaway1",
                 "Difficulty": 2,
                 "note": " ",
@@ -1841,7 +1841,7 @@
                 "NoSpaceIndex": 9,
                 "Rewards": [
                     {"item": "EquipmentPendant9", "quantity": 1},
-                    {"type": "Class", "amount": 200}
+                    {"item": "Experience0", "quantity": 200}
                 ],
                 "QuestName": "Picnic Stowaway2",
                 "Difficulty": 3,
@@ -1859,7 +1859,7 @@
                 "Rewards": [
                     {"item": "Quest5", "quantity": 1},
                     {"item": "FoodG1", "quantity": 1},
-                    {"type": "Class", "amount": 150}
+                    {"item": "Experience0", "quantity": 150}
                 ],
                 "QuestName": "Picnic Stowaway3",
                 "Difficulty": 3,
@@ -2359,7 +2359,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 3,
-                "Rewards": [{"item": "StampA4", "quantity": 1}, {"type": "Choppin", "amount": 100}],
+                "Rewards": [{"item": "StampA4", "quantity": 1}, {"item": "Experience3", "quantity": 100}],
                 "QuestName": "Hamish1",
                 "Difficulty": 2,
                 "note": "",
@@ -2375,7 +2375,7 @@
                 "NoSpaceIndex": 7,
                 "Rewards": [
                     {"item": "StampB6", "quantity": 1},
-                    {"type": "Choppin", "amount": 150},
+                    {"item": "Experience3", "quantity": 150},
                     {"item": "ResetCompleted", "quantity": 1}
                 ],
                 "QuestName": "Hamish2",
@@ -2391,10 +2391,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 11,
-                "Rewards": [
-                    {"item": "InvStorage1", "quantity": 1},
-                    {"type": "Choppin", "amount": 150}
-                ],
+                "Rewards": [{"item": "InvStorage1", "quantity": 1}, {"item": "Experience3", "quantity": 150}],
                 "QuestName": "Hamish3",
                 "Difficulty": 4,
                 "note": "Requires level 7 choppin to start this quest.",
@@ -2561,7 +2558,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 6,
-                "Rewards": [{"type": "Class", "amount": 150}],
+                "Rewards": [{"item": "Experience0", "quantity": 150}],
                 "QuestName": "Mr Pigibank1",
                 "Difficulty": 2,
                 "note": " The Stamp Thief is Hamish found at the bottom right of the frogs area",
@@ -2665,7 +2662,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 3,
-                "Rewards": [{"coins": 500}, {"item": "rtt0", "quantity": 5}],
+                "Rewards": [{"item": "", "quantity": 500}, {"item": "rtt0", "quantity": 5}],
                 "QuestName": "Promotheus1",
                 "Difficulty": 2,
                 "note": "",
@@ -2683,7 +2680,7 @@
                 "Rewards": [
                     {"item": "ResetCompleted", "quantity": 1},
                     {"item": "ResetFrag", "quantity": 8},
-                    {"coins": 1000}
+                    {"item": "", "quantity": 1000}
                 ],
                 "QuestName": "Promotheus2",
                 "Difficulty": 1,
@@ -2701,7 +2698,7 @@
                 "NoSpaceIndex": 18,
                 "Rewards": [
                     {"item": "EquipmentHats29", "quantity": 1},
-                    {"type": "Class", "amount": 1500},
+                    {"item": "Experience0", "quantity": 1500},
                     {"item": "ResetCompleted", "quantity": 1}
                 ],
                 "QuestName": "Promotheus3",
@@ -2900,7 +2897,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 2,
-                "Rewards": [{"item": "StoneZ1", "quantity": 1}, {"coins": 777}],
+                "Rewards": [{"item": "StoneZ1", "quantity": 1}, {"item": "", "quantity": 777}],
                 "QuestName": "Bushlyte1",
                 "Difficulty": 1,
                 "note": "Get this quest by dropping a {{CraftReq|Peanut}} on the bush in Vegetable Patch.",
@@ -2914,7 +2911,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 5,
-                "Rewards": [{"item": "StoneZ1", "quantity": 2}, {"coins": 1500}],
+                "Rewards": [{"item": "StoneZ1", "quantity": 2}, {"item": "", "quantity": 1500}],
                 "QuestName": "Bushlyte2",
                 "Difficulty": 2,
                 "note": " ",
@@ -2931,7 +2928,7 @@
                 "Rewards": [
                     {"item": "StoneZ1", "quantity": 3},
                     {"item": "PeanutS", "quantity": 1},
-                    {"coins": 2500}
+                    {"item": "", "quantity": 2500}
                 ],
                 "QuestName": "Bushlyte3",
                 "Difficulty": 3,
@@ -3040,7 +3037,7 @@
                 "NoSpaceIndex": 3,
                 "Rewards": [
                     {"item": "SmithingRecipes1", "quantity": 51},
-                    {"type": "Class", "amount": 5000}
+                    {"item": "Experience0", "quantity": 5000}
                 ],
                 "QuestName": "Rocklyte1",
                 "Difficulty": 3,
@@ -3055,7 +3052,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 6,
-                "Rewards": [{"item": "StoneZ1", "quantity": 1}, {"type": "Class", "amount": 5000}],
+                "Rewards": [{"item": "StoneZ1", "quantity": 1}, {"item": "Experience0", "quantity": 5000}],
                 "QuestName": "Rocklyte2",
                 "Difficulty": 4,
                 "note": "This quest gives the recipe for Golden Peanut",
@@ -3361,7 +3358,7 @@
                 "Rewards": [
                     {"item": "EquipmentStatues2", "quantity": 3},
                     {"item": "FoodPotGr2", "quantity": 25},
-                    {"type": "Class", "amount": 2000}
+                    {"item": "Experience0", "quantity": 2000}
                 ],
                 "QuestName": "Stiltzcho1",
                 "Difficulty": 3,
@@ -3383,7 +3380,7 @@
                 "Rewards": [
                     {"item": "EquipmentStatues2", "quantity": 2},
                     {"item": "ExpBalloon1", "quantity": 1},
-                    {"coins": 1000}
+                    {"item": "", "quantity": 1000}
                 ],
                 "QuestName": "Stiltzcho2",
                 "Difficulty": 3,
@@ -3401,7 +3398,7 @@
                 "Rewards": [
                     {"item": "Quest6", "quantity": 1},
                     {"item": "EquipmentPendant11", "quantity": 1},
-                    {"type": "Class", "amount": 1000}
+                    {"item": "Experience0", "quantity": 1000}
                 ],
                 "QuestName": "Stiltzcho3",
                 "Difficulty": 4,
@@ -3416,7 +3413,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 24,
-                "Rewards": [{"item": "Timecandy2", "quantity": 1}, {"type": "Class", "amount": 4000}],
+                "Rewards": [{"item": "Timecandy2", "quantity": 1}, {"item": "Experience0", "quantity": 4000}],
                 "QuestName": "Stiltzcho4",
                 "Difficulty": 2,
                 "note": "AFK at the [[Green Mushroom]] map for a total of 4 hours. The time spent AFK does not have to be all in one go. Choppin the Oak Tree counts, because it's on the same map.",
@@ -3431,7 +3428,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 27,
-                "Rewards": [{"item": "Timecandy3", "quantity": 1}, {"type": "Class", "amount": 4000}],
+                "Rewards": [{"item": "Timecandy3", "quantity": 1}, {"item": "Experience0", "quantity": 4000}],
                 "QuestName": "Stiltzcho5",
                 "Difficulty": 2,
                 "note": "AFK at the [[Frog]] map for a total of 8 hours. The time spent AFK does not have to be all in one go.",
@@ -3449,7 +3446,7 @@
                 "Rewards": [
                     {"item": "NPCtoken4", "quantity": 1},
                     {"item": "Timecandy5", "quantity": 1},
-                    {"type": "Class", "amount": 4000}
+                    {"item": "Experience0", "quantity": 4000}
                 ],
                 "QuestName": "Stiltzcho6",
                 "Difficulty": 3,
@@ -3696,7 +3693,7 @@
                 "Rewards": [
                     {"item": "MaxCapBag10", "quantity": 1},
                     {"item": "ResetCompleted", "quantity": 1},
-                    {"type": "Class", "amount": 800}
+                    {"item": "Experience0", "quantity": 800}
                 ],
                 "QuestName": "Funguy1",
                 "Difficulty": 3,
@@ -3717,8 +3714,8 @@
                 "NoSpaceIndex": 7,
                 "Rewards": [
                     {"item": "SmithingRecipes1", "quantity": 44},
-                    {"type": "Class", "amount": 3000},
-                    {"coins": 1250}
+                    {"item": "Experience0", "quantity": 3000},
+                    {"item": "", "quantity": 1250}
                 ],
                 "QuestName": "Funguy2",
                 "Difficulty": 3,
@@ -3736,7 +3733,7 @@
                 "NoSpaceIndex": 10,
                 "Rewards": [
                     {"item": "EquipmentRings13", "quantity": 1},
-                    {"type": "Smithing", "amount": 1500}
+                    {"item": "Experience2", "quantity": 1500}
                 ],
                 "QuestName": "Funguy3",
                 "Difficulty": 6,
@@ -3752,8 +3749,8 @@
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 13,
                 "Rewards": [
-                    {"type": "Class", "amount": 5000},
-                    {"type": "Choppin", "amount": 3000},
+                    {"item": "Experience0", "quantity": 5000},
+                    {"item": "Experience3", "quantity": 3000},
                     {"item": "PremiumGem", "quantity": 4}
                 ],
                 "QuestName": "Funguy4",
@@ -3920,7 +3917,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 9,
-                "Rewards": [{"item": "StampC1", "quantity": 1}, {"type": "Class", "amount": 7500}],
+                "Rewards": [{"item": "StampC1", "quantity": 1}, {"item": "Experience0", "quantity": 7500}],
                 "QuestName": "Tiki Chief2",
                 "Difficulty": 3,
                 "note": "Drop the quest item in front of [[Krunk]], [[Funguy]] and [[Mr Pigibank]]",
@@ -3939,10 +3936,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 12,
-                "Rewards": [
-                    {"item": "ExpBalloon2", "quantity": 1},
-                    {"type": "Class", "amount": 25000}
-                ],
+                "Rewards": [{"item": "ExpBalloon2", "quantity": 1}, {"item": "Experience0", "quantity": 25000}],
                 "QuestName": "Tiki Chief3",
                 "Difficulty": 4,
                 "note": " ",
@@ -3968,7 +3962,7 @@
                 "Rewards": [
                     {"item": "NPCtoken11", "quantity": 1},
                     {"item": "StoneZ1", "quantity": 2},
-                    {"coins": 5000}
+                    {"item": "", "quantity": 5000}
                 ],
                 "QuestName": "Tiki Chief4",
                 "Difficulty": 4,
@@ -4265,7 +4259,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 2,
-                "Rewards": [{"item": "ExpBalloon1", "quantity": 2}, {"coins": 2500}],
+                "Rewards": [{"item": "ExpBalloon1", "quantity": 2}, {"item": "", "quantity": 2500}],
                 "QuestName": "Builder Bird1",
                 "Difficulty": 4,
                 "note": "",
@@ -4309,7 +4303,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 3,
-                "Rewards": [{"item": "ExpBalloon2", "quantity": 3}, {"coins": 250000}],
+                "Rewards": [{"item": "ExpBalloon2", "quantity": 3}, {"item": "", "quantity": 250000}],
                 "QuestName": "Constructor Crow1",
                 "Difficulty": 7,
                 "note": " ",
@@ -4359,7 +4353,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 4,
-                "Rewards": [{"item": "PremiumGem", "quantity": 2}, {"type": "Class", "amount": 2500}],
+                "Rewards": [{"item": "PremiumGem", "quantity": 2}, {"item": "Experience0", "quantity": 2500}],
                 "QuestName": "Papua Piggea1",
                 "Difficulty": 3,
                 "note": "The Kapow Stamp is a quest item, it will NOT drop unless the quest is active. Papua Piggea does not take it from you, so you can turn in the quest and then bring the stamp to your bank in town.",
@@ -4375,7 +4369,7 @@
                 "NoSpaceIndex": 8,
                 "Rewards": [
                     {"item": "ExpBalloon1", "quantity": 4},
-                    {"type": "Class", "amount": 2500},
+                    {"item": "Experience0", "quantity": 2500},
                     {"item": "Timecandy3", "quantity": 2}
                 ],
                 "QuestName": "Papua Piggea2",
@@ -4394,7 +4388,7 @@
                 "Rewards": [
                     {"item": "StampC6", "quantity": 1},
                     {"item": "ExpBalloon1", "quantity": 3},
-                    {"coins": 10000}
+                    {"item": "", "quantity": 10000}
                 ],
                 "QuestName": "Papua Piggea3",
                 "Difficulty": 6,
@@ -4624,7 +4618,7 @@
                 "Rewards": [
                     {"item": "StampA9", "quantity": 1},
                     {"item": "InvStorage5", "quantity": 1},
-                    {"coins": 2500}
+                    {"item": "", "quantity": 2500}
                 ],
                 "QuestName": "Mutton1",
                 "Difficulty": 4,
@@ -4820,7 +4814,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 8,
-                "Rewards": [{"coins": 10000}],
+                "Rewards": [{"item": "", "quantity": 10000}],
                 "QuestName": "Speccius2",
                 "Difficulty": 1,
                 "note": "This quest can also be completed if you're a journeyman.",
@@ -5075,7 +5069,7 @@
                 "Rewards": [
                     {"item": "Weight2", "quantity": 1},
                     {"item": "PremiumGem", "quantity": 3},
-                    {"type": "Fishing", "amount": 1000}
+                    {"item": "Experience4", "quantity": 1000}
                 ],
                 "QuestName": "Scubidew1",
                 "Difficulty": 2,
@@ -5112,10 +5106,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 12,
-                "Rewards": [
-                    {"item": "NPCtoken26", "quantity": 1},
-                    {"type": "Fishing", "amount": 10000}
-                ],
+                "Rewards": [{"item": "NPCtoken26", "quantity": 1}, {"item": "Experience4", "quantity": 10000}],
                 "QuestName": "Scubidew3",
                 "Difficulty": 1,
                 "note": " ",
@@ -5238,8 +5229,8 @@
                 "NoSpaceIndex": 2,
                 "Rewards": [
                     {"item": "Weight1", "quantity": 1},
-                    {"type": "Fishing", "amount": 200},
-                    {"coins": 2000}
+                    {"item": "Experience4", "quantity": 200},
+                    {"item": "", "quantity": 2000}
                 ],
                 "QuestName": "Whattso1",
                 "Difficulty": 1,
@@ -5257,7 +5248,7 @@
                 "Rewards": [
                     {"item": "Line11", "quantity": 1},
                     {"item": "PremiumGem", "quantity": 3},
-                    {"type": "Fishing", "amount": 2000}
+                    {"item": "Experience4", "quantity": 2000}
                 ],
                 "QuestName": "Whattso2",
                 "Difficulty": 3,
@@ -5276,7 +5267,7 @@
                 "Rewards": [
                     {"item": "Weight12", "quantity": 1},
                     {"item": "NPCtoken18", "quantity": 1},
-                    {"type": "Fishing", "amount": 8000}
+                    {"item": "Experience4", "quantity": 8000}
                 ],
                 "QuestName": "Whattso3",
                 "Difficulty": 4,
@@ -5295,7 +5286,7 @@
                 "Rewards": [
                     {"item": "Line7", "quantity": 1},
                     {"item": "Quest46", "quantity": 1},
-                    {"type": "Fishing", "amount": 17500}
+                    {"item": "Experience4", "quantity": 17500}
                 ],
                 "QuestName": "Whattso4",
                 "Difficulty": 6,
@@ -5382,7 +5373,7 @@
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 3,
                 "Rewards": [
-                    {"type": "Class", "amount": 10000},
+                    {"item": "Experience0", "quantity": 10000},
                     {"item": "PremiumGem", "quantity": 75},
                     {"item": "Timecandy2", "quantity": 5}
                 ],
@@ -5467,7 +5458,7 @@
                 "Rewards": [
                     {"item": "StoneW6", "quantity": 2},
                     {"item": "ExpBalloon1", "quantity": 2},
-                    {"type": "Smithing", "amount": 2500}
+                    {"item": "Experience2", "quantity": 2500}
                 ],
                 "QuestName": "Bandit Bob1",
                 "Difficulty": 3,
@@ -5484,7 +5475,7 @@
                 "NoSpaceIndex": 11,
                 "Rewards": [
                     {"item": "EquipmentStatues1", "quantity": 7},
-                    {"type": "Class", "amount": 20000}
+                    {"item": "Experience0", "quantity": 20000}
                 ],
                 "QuestName": "Bandit Bob2",
                 "Difficulty": 2,
@@ -5687,7 +5678,7 @@
                 "Rewards": [
                     {"item": "ObolSilver0", "quantity": 1},
                     {"item": "PremiumGem", "quantity": 3},
-                    {"type": "Class", "amount": 80000}
+                    {"item": "Experience0", "quantity": 80000}
                 ],
                 "QuestName": "Carpetiem1",
                 "Difficulty": 3,
@@ -5706,7 +5697,7 @@
                 "Rewards": [
                     {"item": "PureWater", "quantity": 15},
                     {"item": "ExpBalloon1", "quantity": 2},
-                    {"type": "Smithing", "amount": 6000}
+                    {"item": "Experience2", "quantity": 6000}
                 ],
                 "QuestName": "Carpetiem2",
                 "Difficulty": 4,
@@ -5725,10 +5716,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 14,
-                "Rewards": [
-                    {"item": "PremiumGem", "quantity": 4},
-                    {"type": "Class", "amount": 120000}
-                ],
+                "Rewards": [{"item": "PremiumGem", "quantity": 4}, {"item": "Experience0", "quantity": 120000}],
                 "QuestName": "Carpetiem3",
                 "Difficulty": 3,
                 "note": "Reclaim the [[Crimson String]] from your codex to craft a new pair of [[Boxing Gloves]]. Forfeit and start over if you need to respawn the monster.",
@@ -6078,7 +6066,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 5,
-                "Rewards": [{"item": "PremiumGem", "quantity": 3}, {"coins": 10000}],
+                "Rewards": [{"item": "PremiumGem", "quantity": 3}, {"item": "", "quantity": 10000}],
                 "QuestName": "Goldric1",
                 "Difficulty": 2,
                 "note": "You need to have the [[Cowbo Jones]] quest 'Commence Criminal Crimes!' active in order to get this quest.",
@@ -6096,7 +6084,7 @@
                 "Rewards": [
                     {"item": "PremiumGem", "quantity": 4},
                     {"item": "StoneT3", "quantity": 2},
-                    {"type": "Catching", "amount": 10000}
+                    {"item": "Experience6", "quantity": 10000}
                 ],
                 "QuestName": "Goldric2",
                 "Difficulty": 2,
@@ -6115,7 +6103,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 12,
-                "Rewards": [{"item": "PremiumGem", "quantity": 5}, {"coins": 10000}],
+                "Rewards": [{"item": "PremiumGem", "quantity": 5}, {"item": "", "quantity": 10000}],
                 "QuestName": "Goldric3",
                 "Difficulty": 3,
                 "note": "The paintings drop from [[Mimic|Mimics]], [[Mafioso|Mafiosos]] and [[Sand Castle|Sand Castles]].",
@@ -6149,8 +6137,8 @@
                 "NoSpaceIndex": 18,
                 "Rewards": [
                     {"item": "Quest27", "quantity": 1},
-                    {"type": "Class", "amount": 60000},
-                    {"coins": 25000}
+                    {"item": "Experience0", "quantity": 60000},
+                    {"item": "", "quantity": 25000}
                 ],
                 "QuestName": "Goldric5",
                 "Difficulty": 4,
@@ -7215,7 +7203,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 2,
-                "Rewards": [{"item": "PremiumGem", "quantity": 5}, {"type": "Class", "amount": 9000}],
+                "Rewards": [{"item": "PremiumGem", "quantity": 5}, {"item": "Experience0", "quantity": 9000}],
                 "QuestName": "Cowbo Jones1",
                 "Difficulty": 1,
                 "note": "After 10 active kills, the quest auto-completes.",
@@ -7232,8 +7220,8 @@
                 "NoSpaceIndex": 5,
                 "Rewards": [
                     {"item": "InvStorage4", "quantity": 1},
-                    {"type": "Class", "amount": 15000},
-                    {"coins": 3500}
+                    {"item": "Experience0", "quantity": 15000},
+                    {"item": "", "quantity": 3500}
                 ],
                 "QuestName": "Cowbo Jones2",
                 "Difficulty": 3,
@@ -7249,7 +7237,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 8,
-                "Rewards": [{"item": "Timecandy1", "quantity": 3}, {"type": "Class", "amount": 17500}],
+                "Rewards": [{"item": "Timecandy1", "quantity": 3}, {"item": "Experience0", "quantity": 17500}],
                 "QuestName": "Cowbo Jones3",
                 "Difficulty": 4,
                 "note": " ",
@@ -7267,7 +7255,7 @@
                 "Rewards": [
                     {"item": "ExpBalloon1", "quantity": 5},
                     {"item": "PremiumGem", "quantity": 5},
-                    {"type": "Class", "amount": 3500}
+                    {"item": "Experience0", "quantity": 3500}
                 ],
                 "QuestName": "Cowbo Jones4",
                 "Difficulty": 2,
@@ -7285,7 +7273,7 @@
                 "Rewards": [
                     {"item": "StoneW2", "quantity": 2},
                     {"item": "StoneA2", "quantity": 3},
-                    {"type": "Alchemy", "amount": 40}
+                    {"item": "Experience5", "quantity": 40}
                 ],
                 "QuestName": "Cowbo Jones5",
                 "Difficulty": 3,
@@ -7304,7 +7292,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 23,
-                "Rewards": [{"type": "Class", "amount": 10000}],
+                "Rewards": [{"item": "Experience0", "quantity": 10000}],
                 "QuestName": "Cowbo Jones6",
                 "Difficulty": 2,
                 "note": "Vials unlocked before you start the quest count. See [[Alchemy#Vials|Alchemy Vials]] for a full list of unlockable Vials.",
@@ -7322,7 +7310,7 @@
                 "Rewards": [
                     {"item": "PremiumGem", "quantity": 3},
                     {"item": "ExpBalloon1", "quantity": 2},
-                    {"type": "Class", "amount": 10000}
+                    {"item": "Experience0", "quantity": 10000}
                 ],
                 "QuestName": "Cowbo Jones7",
                 "Difficulty": 4,
@@ -7338,7 +7326,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 28,
-                "Rewards": [{"item": "InvBag5", "quantity": 1}, {"type": "Class", "amount": 15000}],
+                "Rewards": [{"item": "InvBag5", "quantity": 1}, {"item": "Experience0", "quantity": 15000}],
                 "QuestName": "Cowbo Jones8",
                 "Difficulty": 5,
                 "note": "You have to complete [[Bandit Bob|Bandit Bob's]] questline for this.",
@@ -7366,7 +7354,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 39,
-                "Rewards": [{"item": "InvBag6", "quantity": 1}, {"type": "Class", "amount": 25000}],
+                "Rewards": [{"item": "InvBag6", "quantity": 1}, {"item": "Experience0", "quantity": 25000}],
                 "QuestName": "Cowbo Jones10",
                 "Difficulty": 6,
                 "note": "You have to complete [[Goldric|Goldric's]] questline for this.",
@@ -7855,7 +7843,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 3,
-                "Rewards": [{"item": "TixCol", "quantity": 1}, {"type": "Class", "amount": 100}],
+                "Rewards": [{"item": "TixCol", "quantity": 1}, {"item": "Experience0", "quantity": 100}],
                 "QuestName": "Typhoon1",
                 "Difficulty": 2,
                 "note": "",
@@ -7923,7 +7911,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 3,
-                "Rewards": [{"item": "TixCol", "quantity": 1}, {"type": "Class", "amount": 100}],
+                "Rewards": [{"item": "TixCol", "quantity": 1}, {"item": "Experience0", "quantity": 100}],
                 "QuestName": "Centurion1",
                 "Difficulty": 3,
                 "note": " ",
@@ -7944,7 +7932,7 @@
                 "Rewards": [
                     {"item": "Timecandy1", "quantity": 2},
                     {"item": "TixCol", "quantity": 2},
-                    {"coins": 10000}
+                    {"item": "", "quantity": 10000}
                 ],
                 "QuestName": "Centurion2",
                 "Difficulty": 3,
@@ -7959,7 +7947,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 12,
-                "Rewards": [{"item": "Timecandy2", "quantity": 2}, {"coins": 20000}],
+                "Rewards": [{"item": "Timecandy2", "quantity": 2}, {"item": "", "quantity": 20000}],
                 "QuestName": "Centurion3",
                 "Difficulty": 4,
                 "note": " ",
@@ -7977,7 +7965,7 @@
                 "Rewards": [
                     {"item": "Timecandy3", "quantity": 1},
                     {"item": "Timecandy2", "quantity": 2},
-                    {"coins": 50000}
+                    {"item": "", "quantity": 50000}
                 ],
                 "QuestName": "Centurion4",
                 "Difficulty": 5,
@@ -7999,7 +7987,7 @@
                 "Rewards": [
                     {"item": "Timecandy4", "quantity": 1},
                     {"item": "PremiumGem", "quantity": 30},
-                    {"coins": 100000}
+                    {"item": "", "quantity": 100000}
                 ],
                 "QuestName": "Centurion5",
                 "Difficulty": 6,
@@ -8212,7 +8200,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 1,
                 "NoSpaceIndex": 12,
-                "Rewards": [{"item": "StampA28", "quantity": 1}, {"coins": 20000}],
+                "Rewards": [{"item": "StampA28", "quantity": 1}, {"item": "", "quantity": 20000}],
                 "QuestName": "XxX Cattleprod XxX3",
                 "Difficulty": 5,
                 "note": " ",
@@ -8889,7 +8877,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 11,
-                "Rewards": [{"item": "TalentBook1", "quantity": 3635100}, {"item": "PremiumGem", "quantity": 2}],
+                "Rewards": [
+                    {"item": "TalentBook1", "quantity": 3635100},
+                    {"item": "PremiumGem", "quantity": 2}
+                ],
                 "QuestName": "Hoggindaz3",
                 "Difficulty": 3,
                 "note": "Collect a cog on the character with this quest active. Cogs collected by another character won't count. Wizard Defenders are in the middle row.",
@@ -8931,7 +8922,10 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 20,
-                "Rewards": [{"item": "TalentBook1", "quantity": 3639100}, {"item": "PremiumGem", "quantity": 2}],
+                "Rewards": [
+                    {"item": "TalentBook1", "quantity": 3639100},
+                    {"item": "PremiumGem", "quantity": 2}
+                ],
                 "QuestName": "Hoggindaz5",
                 "Difficulty": 1,
                 "note": "You must be in a map with AFK info of an activity in order to sample it. For instance, go to the [[Green Mushroom]] map or the [[Copper Ore]] mining area, then activate the talent. You can then print whatever you sampled in the 3D printer. Until you upgrade your printer in construction, only your first character can take samples.",
@@ -10660,7 +10654,7 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 0,
                 "NoSpaceIndex": 2,
-                "Rewards": [{"item": "Timecandy9", "quantity": 1}, {"coins": 1500000000}],
+                "Rewards": [{"item": "Timecandy9", "quantity": 1}, {"item": "", "quantity": 1500000000}],
                 "QuestName": "Carpenter Cardinal1",
                 "Difficulty": 8,
                 "note": " ",
@@ -12607,9 +12601,9 @@
             "noQuest": 0,
             "repeatable": "Unknown",
             "type": "Unknown",
-            "birthWeight": 5.63,
-            "starSign": "Aries",
-            "mothersMaidenName": "Turco",
+            "birthWeight": 8.35,
+            "starSign": "Capricorn",
+            "mothersMaidenName": "Woo",
             "notes": ""
         },
         "quests": {
@@ -12664,6 +12658,100 @@
             {
                 "Type": "NoQuest",
                 "DialogueText": "This is.... acceptable. You may proceed to the Task TV behind me.",
+                "NextIndex": -1,
+                "Name": ""
+            }
+        ]
+    },
+    "Eliteus": {
+        "head": {
+            "location": "Unknown",
+            "world": "Unknown",
+            "noQuest": 0,
+            "repeatable": "Unknown",
+            "type": "Unknown",
+            "birthWeight": 8.86,
+            "starSign": "Pisces",
+            "mothersMaidenName": "Ortiz",
+            "notes": ""
+        },
+        "quests": {
+            "The Greenie Gucci Gang": {
+                "Type": "Custom",
+                "DialogueText": "YO it's the Greenie Gang ice them fools and you've got one of them classes comin' your way dog. <br> QUEST:Defeat all the Greenie Genies in the Greenie Gang.",
+                "NextIndex": 3,
+                "Name": "The Greenie Gucci Gang",
+                "ConsumeItems": false,
+                "InventorySpacesNeeded": 0,
+                "NoSpaceIndex": 2,
+                "Rewards": [{"item": "", "quantity": 750000000}],
+                "QuestName": "Eliteus1",
+                "Difficulty": 5,
+                "note": " ",
+                "CustomType": "Eliteus1",
+                "CustomArray": [{
+                    "desc": "Defeat the Greenie Gang:",
+                    "finalV": 10,
+                    "type": "GreaterEqual",
+                    "startV": 0
+                }]
+            },
+            "Elite Class for the Elites in Class": {
+                "Type": "Custom",
+                "DialogueText": "",
+                "NextIndex": 5,
+                "Name": "Elite Class for the Elites in Class",
+                "ConsumeItems": false,
+                "InventorySpacesNeeded": 0,
+                "NoSpaceIndex": 4,
+                "Rewards": [{"item": "", "quantity": 150964823}],
+                "QuestName": "Eliteus2",
+                "Difficulty": 5,
+                "note": " ",
+                "CustomType": "Eliteus2",
+                "CustomArray": [{"desc": "Select an Elite Class:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+            }
+        },
+        "dialogue": [
+            {
+                "Type": "NoQuest",
+                "DialogueText": "Yo wuz gucci man how we doin...",
+                "NextIndex": 1,
+                "Name": ""
+            },
+            {
+                "Type": "NoQuest",
+                "DialogueText": "You here for them elite classes huh? Aight check it I gotchu with one of them classes but you gotta show me you can hang with it first.",
+                "NextIndex": 2,
+                "Name": ""
+            },
+            {
+                "Type": "Custom",
+                "DialogueText": "YO it's the Greenie Gang ice them fools and you've got one of them classes comin' your way dog. <br> QUEST:Defeat all the Greenie Genies in the Greenie Gang.",
+                "NextIndex": 3,
+                "Name": "The Greenie Gucci Gang"
+            },
+            {
+                "Type": "NoQuest",
+                "DialogueText": "Yoooooo haha love that! Man they up and DIPPED once you started slappin' them around bwhahaha! <br> Aight fairs fair here's your own elite class.",
+                "NextIndex": 4,
+                "Name": ""
+            },
+            {
+                "Type": "Custom",
+                "DialogueText": "",
+                "NextIndex": 5,
+                "Name": "Elite Class for the Elites in Class"
+            },
+            {
+                "Type": "NoQuest",
+                "DialogueText": "Yous is one of them elites now dog go shine on them world 3 haters always givin' you them salty looks. They just mad jealous you one of them winners and they aint got it like you got it.",
+                "NextIndex": 5,
+                "Name": ""
+            },
+            {
+                "Type": "NoQuest",
+                "DialogueText": "Bruh what even ARE you...? Ain't never saw that class you got there is that even legit?",
                 "NextIndex": -1,
                 "Name": ""
             }

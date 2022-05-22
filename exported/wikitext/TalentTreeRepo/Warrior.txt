@@ -1,0 +1,111 @@
+{{Talent
+|name=Power Strike
+|textArr=Slash forward dealing (Table 1)% damage to up to 2 monsters
+|form1=bigBase
+|x1=130
+|x2=3
+}}
+{{Talent
+|name=Whirl
+|textArr=Swing your weapon around you dealing (Table 1)% damage to up to (Table 2) monsters
+|form1=bigBase
+|x1=60
+|x2=1.5
+|form2=intervalAdd
+|y1=3
+|y2=24
+}}
+{{Talent
+|name=Health Overdrive
+|textArr=Increase max HP by (Table 1)%
+|form1=add
+|x1=0.5
+|x2=0.02
+}}
+{{Talent
+|name=Double Strike
+|textArr=Basic Attacks with Warrior Weapons have a (Table 1)% chance to hit twice
+|form1=decay
+|x1=110
+|x2=50
+}}
+{{Talent
+|name=Firmly Grasp It
+|textArr=Temporarily boosts base STR by (Table 1) for (Table 2) minutes
+|form1=bigBase
+|x1=15
+|x2=1
+|form2=intervalAdd
+|y1=2
+|y2=4
+}}
+{{Talent
+|name=Strength In Numbers
+|textArr=STR's effect on both Damage and HP is increased by (Table 1)%
+|form1=add
+|x1=0.75
+|x2=0
+}}
+{{Talent
+|name='str'ess Tested Garb
+|textArr=All Equipment gives (Table 1)% more STR than what's listed
+|form1=decay
+|x1=200
+|x2=250
+}}
+{{Talent
+|name=Carry A Big Stick
+|textArr=The effect Weapon Power has on Damage Dealt is increased by (Table 1)%
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Absolute Unit
+|textArr=+(Table 1) base STR
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Haungry For Gold
+|textArr=Golden Food bonuses are increased by (Table 1)%
+|form1=decay
+|x1=55
+|x2=80
+}}
+{{Talent
+|name=Big Pick
+|textArr=Swings forward and mines the rock with +(Table 1)% bonus Mining Efficiency
+|form1=bigBase
+|x1=150
+|x2=15
+}}
+{{Talent
+|name=Copper Collector
+|textArr=Mining Efficiency is increased by +(Table 1)% for every power of 10 Copper Ore in Storage Chest.
+|form1=decay
+|x1=20
+|x2=70
+}}
+{{Talent
+|name=Motherlode Miner
+|textArr=+(Table 1)% base multi-ore drop chance. This can trigger up to 4 times in a row per swing.
+|form1=decay
+|x1=20
+|x2=50
+}}
+{{Talent
+|name=Tool Proficiency
+|textArr=Pickaxes give +(Table 1)% more Mining Power than whats listed for every 10 Mining Lv you have
+|form1=decay
+|x1=16
+|x2=40
+}}
+{{Talent
+|name=Tempestuous Emotions
+|textArr=Increases Exp Gain for all Specialized Skills by (Table 1)%
+|form1=add
+|x1=1
+|x2=0
+}}

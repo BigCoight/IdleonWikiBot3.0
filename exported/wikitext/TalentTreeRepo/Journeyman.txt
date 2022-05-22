@@ -1,0 +1,117 @@
+{{Talent
+|name=Indiana Attack
+|textArr=Whip forward, dealing (Table 1)% dmg and pulling in up to (Table 2) monsters.
+|form1=bigBase
+|x1=50
+|x2=1
+|form2=intervalAdd
+|y1=3
+|y2=30
+}}
+{{Talent
+|name=Breakin' The Bank
+|textArr=Multiplies value of all coins on ground by (Table 1)x.
+|form1=decayMulti
+|x1=0.6
+|x2=100
+}}
+{{Talent
+|name=Supernova Player
+|textArr=Gives (Table 1) Star Talent Points.
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Two Punch Man
+|textArr=Regular punches do +(Table 1)% more damage and also hit a 2nd time for (Table 2)% damage
+|form1=add
+|x1=0.6
+|x2=0
+|form2=intervalAdd
+|y1=25
+|y2=3
+}}
+{{Talent
+|name=Gimme Gimme
+|textArr=Monsters have a (Table 1)% chance to drop 2x loot for (Table 2) Minutes
+|form1=decay
+|x1=80
+|x2=60
+|form2=intervalAdd
+|y1=3
+|y2=20
+}}
+{{Talent
+|name=Lucky Hit
+|textArr=LUK's effect on Damage is increased by (Table 1)%
+|form1=add
+|x1=0.4
+|x2=0
+}}
+{{Talent
+|name=F'luk'ey Fabrics
+|textArr=All Equipment gives (Table 1)% more LUK than what's listed
+|form1=decay
+|x1=100
+|x2=250
+}}
+{{Talent
+|name=Chaching!
+|textArr=Straight up cash, yo. +(Table 1)% more to be exact.
+|form1=decay
+|x1=50
+|x2=100
+}}
+{{Talent
+|name=Lucky Horseshoe
+|textArr=+(Table 1) base LUK
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Curse Of Mr Looty Booty
+|textArr=+(Table 1)% Drop rate, and -(Table 2)% Total Damage. Cmon, do it! Or are u too scared?
+|form1=decay
+|x1=70
+|x2=100
+|form2=decay
+|y1=120
+|y2=100
+}}
+{{Talent
+|name=Its Your Birthday!
+|textArr=Drops some random reward. Has a (Table 1)% chance to have no cooldown!
+|form1=decay
+|x1=35
+|x2=50
+}}
+{{Talent
+|name=Cmon Out Crystals
+|textArr=+(Table 1)% Crystal Mob spawn chance
+|form1=decay
+|x1=300
+|x2=100
+}}
+{{Talent
+|name=Reroll Pls
+|textArr=(Table 1)% Chance to get a reroll on AFK rewards. Can trigger multiple times!
+|form1=decay
+|x1=36
+|x2=60
+}}
+{{Talent
+|name=Cards Galore
+|textArr=+(Table 1)% Card Drop Chance. As with all card drop bonuses, this affects AFK too.
+|form1=decay
+|x1=50
+|x2=100
+}}
+{{Talent
+|name=Rares Everywhere!
+|textArr=Items in all Rare Drop Tables are (Table 1)% more likely to drop!
+|form1=decay
+|x1=30
+|x2=80
+}}

@@ -1,98 +1,135 @@
 <div class="GenericFlex"><div class="GenericChild">
 ==Changes==
+{{patchnote/head|changed=Bowman}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|Magic Shortbow|1}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Mana Cost|15|13|3}}
+{{patchnote/bold|Homing Arrows|1}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Mana Cost|28|18|3}}
+{{patchnote/bold|Extendo Rangeo|1}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Mana Cost|10|8|3}}
+|}
+
+{{patchnote/head|changed=Barbarian}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|Bear Swipe|1}}
+{{patchnote|Description|A big ol' bear claw swipes up to { monsters in front of you, dealing }% damage|A big ol' bear claw swipes up to 5 monsters in front of you, dealing }% damage|2}}
+{{patchnote|Lvl Up Text|+{ Mobs & +}% Dmg|+}% Dmg|2}}
+|}
+
+{{patchnote/head|changed=Shaman}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|Sizzling Skull|1}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Mana Cost|60|17|3}}
+{{patchnote/bold|Crazy Concoctions|1}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Cooldown|23|25|3}}
+{{patchnote|Mana Cost|30|20|3}}
+{{patchnote/bold|Auspicious Aura|1}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Mana Cost|60|30|3}}
+|}
+
 {{patchnote/head|changed=Hunter}}
 {{patchnote/bold|Talents|0}}
 {{patchnote/bold|Bear Trap|1}}
 {{patchnote/bold|Active Data|2}}
 {{patchnote|Mana Cost|30|20|3}}
-{{patchnote/bold|Stop Right There|1}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Mana Cost|50|40|3}}
 {{patchnote/bold|Uwu Rawrrr|1}}
 {{patchnote/bold|Active Data|2}}
 {{patchnote|Mana Cost|35|30|3}}
+{{patchnote/bold|Stop Right There|1}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Mana Cost|50|40|3}}
+|}
+
+{{patchnote/head|changed=Warrior}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|Whirl|1}}
+{{patchnote|Y 1|4|3|2}}
+{{patchnote/bold|Power Strike|1}}
+{{patchnote|Description|Slash forward dealing {% damage to up to 3 monsters|Slash forward dealing {% damage to up to 2 monsters|2}}
 |}
 
 {{patchnote/head|changed=Wizard}}
 {{patchnote/bold|Talents|0}}
-{{patchnote/bold|Mana Is Life|1}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Mana Cost|30|12|3}}
-{{patchnote/bold|Ice Shards|1}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Mana Cost|30|20|3}}
-{{patchnote/bold|Speedy Book|1}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Mana Cost|30|10|3}}
-{{patchnote/bold|Floor Is Lava|1}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Mana Cost|30|17|3}}
 {{patchnote/bold|Tornado|1}}
 {{patchnote/bold|Active Data|2}}
 {{patchnote|Mana Cost|30|15|3}}
+{{patchnote/bold|Speedy Book|1}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Mana Cost|30|10|3}}
+{{patchnote/bold|Ice Shards|1}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Mana Cost|30|20|3}}
+{{patchnote/bold|Mana Is Life|1}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Mana Cost|30|12|3}}
+{{patchnote/bold|Floor Is Lava|1}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Mana Cost|30|17|3}}
 |}
 
-{{patchnote/head|changed=Divine Knight}}
+</div><div class="GenericChild">
+==New==
+{{patchnote/head|changed=Siege Breaker}}
 {{patchnote/bold|Talents|0}}
-{{patchnote/bold|Symbols Of Beyond ~R|1}}
-{{patchnote|Name| |Symbols Of Beyond ~r|2}}
-{{patchnote|Description| |+{ Lv for all talents higher than Lv 1. This bonus goes up every 20 lvs|2}}
-{{patchnote|X 1| |1|2}}
-{{patchnote|X 2| |20|2}}
-{{patchnote|Func X| |intervalAdd|2}}
-{{patchnote|Y 1| |0|2}}
-{{patchnote|Y 2| |0|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+1 All Lvs Every 20 Lvs|2}}
-{{patchnote|Skill Index| |149|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Overblown Testosterone|1}}
-{{patchnote|Name| |Overblown Testosterone|2}}
-{{patchnote|Description| |+{% STR, and +} Max Talent Lv for 'Fist of Rage'|2}}
-{{patchnote|X 1| |15|2}}
+{{patchnote/bold|Stacked Skulls|1}}
+{{patchnote|Name| |Stacked Skulls|2}}
+{{patchnote|Description| |+{% Kill per Kill per 1000 AGI. Each kill is worth more kills!|2}}
+{{patchnote|X 1| |40|2}}
 {{patchnote|X 2| |100|2}}
 {{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |1|2}}
-{{patchnote|Y 2| |0|2}}
-{{patchnote|Func Y| |add|2}}
-{{patchnote|Lvl Up Text| |+{% Str & +} Max Lv|2}}
-{{patchnote|Skill Index| |143|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Kill Per Kill Per 1000|2}}
+{{patchnote|Skill Index| |366|2}}
 {{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Skill Strengthen|1}}
-{{patchnote|Name| |Skill Strengthen|2}}
-{{patchnote|Description| |STR has a {% larger impact on Skill Efficiency. Also, +} STR.|2}}
+{{patchnote/bold|Skill Ambidexterity|1}}
+{{patchnote|Name| |Skill Ambidexterity|2}}
+{{patchnote|Description| |AGI has a {% larger impact on Skill Efficiency. Also, +} AGI.|2}}
 {{patchnote|X 1| |60|2}}
 {{patchnote|X 2| |80|2}}
 {{patchnote|Func X| |decay|2}}
 {{patchnote|Y 1| |1|2}}
 {{patchnote|Y 2| |2|2}}
 {{patchnote|Func Y| |intervalAdd|2}}
-{{patchnote|Lvl Up Text| |+{% Impact & } Str|2}}
-{{patchnote|Skill Index| |142|2}}
+{{patchnote|Lvl Up Text| |+{% Impact & } Agi|2}}
+{{patchnote|Skill Index| |367|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Adaptation Revelation|1}}
+{{patchnote|Name| |Adaptation Revelation|2}}
+{{patchnote|Description| |+{% AGI, and +} Max Talent Lv for 'Quickness Boots'|2}}
+{{patchnote|X 1| |15|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |1|2}}
+{{patchnote|Func Y| |add|2}}
+{{patchnote|Lvl Up Text| |+{% Agi & +} Max Lv|2}}
+{{patchnote|Skill Index| |368|2}}
 {{patchnote|Active Data| |None|2}}
 {{patchnote/bold|The Family Guy|1}}
 {{patchnote|Name| |The Family Guy|2}}
-{{patchnote|Description| |+{% larger Family Bonuses from ones given by this player|2}}
+{{patchnote|Description| |+{% larger Family Bonuses than what is displayed from bonuses given by this player|2}}
 {{patchnote|X 1| |40|2}}
 {{patchnote|X 2| |100|2}}
 {{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |0|2}}
-{{patchnote|Y 2| |0|2}}
 {{patchnote|Func Y| |txt|2}}
 {{patchnote|Lvl Up Text| |+{% Bonus|2}}
 {{patchnote|Skill Index| |144|2}}
 {{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Charred Skulls|1}}
-{{patchnote|Name| |Charred Skulls|2}}
-{{patchnote|Description| |+{% Kill per Kill per 1000 STR. Each kill is worth more kills!|2}}
-{{patchnote|X 1| |40|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |0|2}}
-{{patchnote|Y 2| |0|2}}
+{{patchnote/bold|Symbols Of Beyond ~G|1}}
+{{patchnote|Name| |Symbols Of Beyond ~g|2}}
+{{patchnote|Description| |+{ Lv for all talents higher than Lv 1. This bonus goes up every 20 lvs|2}}
+{{patchnote|X 1| |1|2}}
+{{patchnote|X 2| |20|2}}
+{{patchnote|Func X| |intervalAdd|2}}
 {{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{% Kill Per Kill Per 1000|2}}
-{{patchnote|Skill Index| |141|2}}
+{{patchnote|Lvl Up Text| |+1 All Lvs Every 20 Lvs|2}}
+{{patchnote|Skill Index| |374|2}}
 {{patchnote|Active Data| |None|2}}
 |}
 
@@ -104,23 +141,9 @@
 {{patchnote|X 1| |40|2}}
 {{patchnote|X 2| |100|2}}
 {{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |0|2}}
-{{patchnote|Y 2| |0|2}}
 {{patchnote|Func Y| |txt|2}}
 {{patchnote|Lvl Up Text| |+{% Kill Per Kill Per 1000|2}}
 {{patchnote|Skill Index| |531|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Utmost Intellect|1}}
-{{patchnote|Name| |Utmost Intellect|2}}
-{{patchnote|Description| |+{% WIS, and +} Max Talent Lv for 'Book of the Wise'|2}}
-{{patchnote|X 1| |15|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |1|2}}
-{{patchnote|Y 2| |0|2}}
-{{patchnote|Func Y| |add|2}}
-{{patchnote|Lvl Up Text| |+{% Wis & +} Max Lv|2}}
-{{patchnote|Skill Index| |533|2}}
 {{patchnote|Active Data| |None|2}}
 {{patchnote/bold|Skill Wiz|1}}
 {{patchnote|Name| |Skill Wiz|2}}
@@ -134,152 +157,39 @@
 {{patchnote|Lvl Up Text| |+{% Impact & +} Wis|2}}
 {{patchnote|Skill Index| |532|2}}
 {{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Utmost Intellect|1}}
+{{patchnote|Name| |Utmost Intellect|2}}
+{{patchnote|Description| |+{% WIS, and +} Max Talent Lv for 'Book of the Wise'|2}}
+{{patchnote|X 1| |15|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |1|2}}
+{{patchnote|Func Y| |add|2}}
+{{patchnote|Lvl Up Text| |+{% Wis & +} Max Lv|2}}
+{{patchnote|Skill Index| |533|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|The Family Guy|1}}
+{{patchnote|Name| |The Family Guy|2}}
+{{patchnote|Description| |+{% larger Family Bonuses than what is displayed from bonuses given by this player|2}}
+{{patchnote|X 1| |40|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Bonus|2}}
+{{patchnote|Skill Index| |144|2}}
+{{patchnote|Active Data| |None|2}}
 {{patchnote/bold|Symbols Of Beyond ~P|1}}
 {{patchnote|Name| |Symbols Of Beyond ~p|2}}
 {{patchnote|Description| |+{ Lv for all talents higher than Lv 1. This bonus goes up every 20 lvs|2}}
 {{patchnote|X 1| |1|2}}
 {{patchnote|X 2| |20|2}}
 {{patchnote|Func X| |intervalAdd|2}}
-{{patchnote|Y 1| |0|2}}
-{{patchnote|Y 2| |0|2}}
 {{patchnote|Func Y| |txt|2}}
 {{patchnote|Lvl Up Text| |+1 All Lvs Every 20 Lvs|2}}
 {{patchnote|Skill Index| |539|2}}
 {{patchnote|Active Data| |None|2}}
-{{patchnote/bold|The Family Guy|1}}
-{{patchnote|Name| |The Family Guy|2}}
-{{patchnote|Description| |+{% larger Family Bonuses from ones given by this player|2}}
-{{patchnote|X 1| |40|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |0|2}}
-{{patchnote|Y 2| |0|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{% Bonus|2}}
-{{patchnote|Skill Index| |144|2}}
-{{patchnote|Active Data| |None|2}}
 |}
 
-{{patchnote/head|changed=Shaman}}
-{{patchnote/bold|Talents|0}}
-{{patchnote/bold|Sizzling Skull|1}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Mana Cost|60|17|3}}
-{{patchnote/bold|Auspicious Aura|1}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Mana Cost|60|30|3}}
-{{patchnote/bold|Crazy Concoctions|1}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Mana Cost|30|20|3}}
-|}
-
-{{patchnote/head|changed=Siege Breaker}}
-{{patchnote/bold|Talents|0}}
-{{patchnote/bold|Ballista|1}}
-{{patchnote|Description|Ballista bitch|Summons a giant ballista, which fires arrows dealing {% dmg to up to } mobs|2}}
-{{patchnote|X 1|400|75|2}}
-{{patchnote|X 2|25|1.25|2}}
-{{patchnote|Y 1| |4|2}}
-{{patchnote|Y 2| |30|2}}
-{{patchnote|Func Y|txt|intervalAdd|2}}
-{{patchnote|Lvl Up Text| |+{% Dmg & +} Mobs|2}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|K|1|1.1|3}}
-{{patchnote|D|1.4|1.3|3}}
-{{patchnote|Cooldown|45|35|3}}
-{{patchnote|Mana Cost|500|22|3}}
-{{patchnote/bold|Skill Ambidexterity|1}}
-{{patchnote|Name| |Skill Ambidexterity|2}}
-{{patchnote|Description| |AGI has a {% larger impact on Skill Efficiency. Also, +} AGI.|2}}
-{{patchnote|X 1| |60|2}}
-{{patchnote|X 2| |80|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |1|2}}
-{{patchnote|Y 2| |2|2}}
-{{patchnote|Func Y| |intervalAdd|2}}
-{{patchnote|Lvl Up Text| |+{% Impact & } Agi|2}}
-{{patchnote|Skill Index| |367|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Stacked Skulls|1}}
-{{patchnote|Name| |Stacked Skulls|2}}
-{{patchnote|Description| |+{% Kill per Kill per 1000 AGI. Each kill is worth more kills!|2}}
-{{patchnote|X 1| |40|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |0|2}}
-{{patchnote|Y 2| |0|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{% Kill Per Kill Per 1000|2}}
-{{patchnote|Skill Index| |366|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Adaptation Revelation|1}}
-{{patchnote|Name| |Adaptation Revelation|2}}
-{{patchnote|Description| |+{% AGI, and +} Max Talent Lv for 'Quickness Boots'|2}}
-{{patchnote|X 1| |15|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |1|2}}
-{{patchnote|Y 2| |0|2}}
-{{patchnote|Func Y| |add|2}}
-{{patchnote|Lvl Up Text| |+{% Agi & +} Max Lv|2}}
-{{patchnote|Skill Index| |368|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|The Family Guy|1}}
-{{patchnote|Name| |The Family Guy|2}}
-{{patchnote|Description| |+{% larger Family Bonuses from ones given by this player|2}}
-{{patchnote|X 1| |40|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |0|2}}
-{{patchnote|Y 2| |0|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{% Bonus|2}}
-{{patchnote|Skill Index| |144|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Symbols Of Beyond ~G|1}}
-{{patchnote|Name| |Symbols Of Beyond ~g|2}}
-{{patchnote|Description| |+{ Lv for all talents higher than Lv 1. This bonus goes up every 20 lvs|2}}
-{{patchnote|X 1| |1|2}}
-{{patchnote|X 2| |20|2}}
-{{patchnote|Func X| |intervalAdd|2}}
-{{patchnote|Y 1| |0|2}}
-{{patchnote|Y 2| |0|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+1 All Lvs Every 20 Lvs|2}}
-{{patchnote|Skill Index| |374|2}}
-{{patchnote|Active Data| |None|2}}
-|}
-
-{{patchnote/head|changed=Barbarian}}
-{{patchnote/bold|Talents|0}}
-{{patchnote/bold|Bear Swipe|1}}
-{{patchnote|Description|A big ol' bear claw swipes up to { monsters in front of you, dealing }% damage|A big ol' bear claw swipes up to 5 monsters in front of you, dealing }% damage|2}}
-{{patchnote|Lvl Up Text|+{ Mobs & +}% Dmg|+}% Dmg|2}}
-|}
-
-{{patchnote/head|changed=Bowman}}
-{{patchnote/bold|Talents|0}}
-{{patchnote/bold|Extendo Rangeo|1}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Mana Cost|10|8|3}}
-{{patchnote/bold|Magic Shortbow|1}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Mana Cost|15|13|3}}
-{{patchnote/bold|Homing Arrows|1}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Mana Cost|28|18|3}}
-|}
-
-{{patchnote/head|changed=Warrior}}
-{{patchnote/bold|Talents|0}}
-{{patchnote/bold|Whirl|1}}
-{{patchnote|Y 1|4|3|2}}
-{{patchnote/bold|Power Strike|1}}
-{{patchnote|Description|Slash forward dealing {% damage to up to 3 monsters|Slash forward dealing {% damage to up to 2 monsters|2}}
-|}
-
-</div><div class="GenericChild">
-==New==
 {{patchnote/head|changed=Bubonic Conjuror}}
 {{patchnote/bold|Talents|0}}
 {{patchnote/bold|Chemical Warfare|1}}
@@ -298,7 +208,7 @@
 {{patchnote|K| |1|3}}
 {{patchnote|D| |1.21|3}}
 {{patchnote|S| |1|3}}
-{{patchnote|Cooldown| |30|3}}
+{{patchnote|Cooldown| |32|3}}
 {{patchnote|Cast Time| |1.1|3}}
 {{patchnote|Mana Cost| |16|3}}
 {{patchnote|Af Krange| |1|3}}
@@ -319,7 +229,7 @@
 {{patchnote|K| |1|3}}
 {{patchnote|D| |1.21|3}}
 {{patchnote|S| |1|3}}
-{{patchnote|Cooldown| |35|3}}
+{{patchnote|Cooldown| |38|3}}
 {{patchnote|Cast Time| |1.1|3}}
 {{patchnote|Mana Cost| |17|3}}
 {{patchnote|Af Krange| |1|3}}
@@ -338,7 +248,7 @@
 {{patchnote|K| |1|3}}
 {{patchnote|D| |1.21|3}}
 {{patchnote|S| |1|3}}
-{{patchnote|Cooldown| |25|3}}
+{{patchnote|Cooldown| |28|3}}
 {{patchnote|Cast Time| |1.1|3}}
 {{patchnote|Mana Cost| |15|3}}
 {{patchnote|Input Req| |2|3}}
@@ -346,7 +256,7 @@
 {{patchnote|Af Ktype| |auto|3}}
 {{patchnote/bold|Plague Stricken|1}}
 {{patchnote|Name| |Plague Stricken|2}}
-{{patchnote|Description| |Basic attacks have a {% chance to hit multiple lines.|2}}
+{{patchnote|Description| |Basic attacks have a {% chance to hit multiple times|2}}
 {{patchnote|X 1| |280|2}}
 {{patchnote|X 2| |100|2}}
 {{patchnote|Func X| |decay|2}}
@@ -368,7 +278,7 @@
 {{patchnote|K| |1|3}}
 {{patchnote|D| |1.21|3}}
 {{patchnote|S| |1|3}}
-{{patchnote|Cooldown| |30|3}}
+{{patchnote|Cooldown| |37|3}}
 {{patchnote|Cast Time| |1.1|3}}
 {{patchnote|Mana Cost| |9|3}}
 {{patchnote|Af Krange| |1|3}}
@@ -418,7 +328,7 @@
 {{patchnote|Active Data| |None|2}}
 {{patchnote/bold|The Family Guy|1}}
 {{patchnote|Name| |The Family Guy|2}}
-{{patchnote|Description| |+{% larger Family Bonuses from ones given by this player|2}}
+{{patchnote|Description| |+{% larger Family Bonuses than what is displayed from bonuses given by this player|2}}
 {{patchnote|X 1| |40|2}}
 {{patchnote|X 2| |100|2}}
 {{patchnote|Func X| |decay|2}}
@@ -448,7 +358,7 @@
 {{patchnote|Active Data| |None|2}}
 {{patchnote/bold|Essence Transferral|1}}
 {{patchnote|Name| |Essence Transferral|2}}
-{{patchnote|Description| |{% of EXP earned by this character is also given to your lowest Lab Lv player|2}}
+{{patchnote|Description| |{% of Lab EXP earned by this character is also given to your lowest Lab Lv player|2}}
 {{patchnote|X 1| |70|2}}
 {{patchnote|X 2| |100|2}}
 {{patchnote|Func X| |decay|2}}
@@ -475,206 +385,6 @@
 {{patchnote|Func Y| |txt|2}}
 {{patchnote|Lvl Up Text| |+1 All Lvs Every 20 Lvs|2}}
 {{patchnote|Skill Index| |539|2}}
-{{patchnote|Active Data| |None|2}}
-|}
-
-{{patchnote/head|changed=Blood Berserker}}
-{{patchnote/bold|Talents|0}}
-{{patchnote/bold|Fired Up|1}}
-{{patchnote|Name| |Fired Up|2}}
-{{patchnote|Description| |Inflame yourself, boosting attack spd. Attacks refresh flame, moving a lot ends it|2}}
-{{patchnote|X 1| |5|2}}
-{{patchnote|X 2| |15|2}}
-{{patchnote|Func X| |intervalAdd|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{S Inflame Timer|2}}
-{{patchnote|Skill Index| |135|2}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Name| |Fired Up|3}}
-{{patchnote|K| |1|3}}
-{{patchnote|D| |1.4|3}}
-{{patchnote|S| |1|3}}
-{{patchnote|Cooldown| |90|3}}
-{{patchnote|Cast Time| |1.5|3}}
-{{patchnote|Mana Cost| |15|3}}
-{{patchnote|Af Krange| |1|3}}
-{{patchnote|Af Ktype| |buff|3}}
-{{patchnote|Af Kactivity| |4|3}}
-{{patchnote/bold|Combustion|1}}
-{{patchnote|Name| |Combustion|2}}
-{{patchnote|Description| |If inflamed, releases your fire and deals {% dmg to up to } mobs near you|2}}
-{{patchnote|X 1| |300|2}}
-{{patchnote|X 2| |1.5|2}}
-{{patchnote|Func X| |bigBase|2}}
-{{patchnote|Y 1| |13|2}}
-{{patchnote|Y 2| |20|2}}
-{{patchnote|Func Y| |intervalAdd|2}}
-{{patchnote|Lvl Up Text| |+{% Dmg & +} Mobs Hit|2}}
-{{patchnote|Skill Index| |136|2}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Name| |Combustion|3}}
-{{patchnote|K| |1.1|3}}
-{{patchnote|D| |1.25|3}}
-{{patchnote|S| |1.2|3}}
-{{patchnote|Cooldown| |40|3}}
-{{patchnote|Cast Time| |0.8|3}}
-{{patchnote|Mana Cost| |20|3}}
-{{patchnote|Af Krange| |125|3}}
-{{patchnote|Af Ktype| |line|3}}
-{{patchnote/bold|Serrated Swipe|1}}
-{{patchnote|Name| |Serrated Swipe|2}}
-{{patchnote|Description| |Slashes repeatedly if inflamed, dealing {% dmg to a max of } mobs|2}}
-{{patchnote|X 1| |40|2}}
-{{patchnote|X 2| |0.4|2}}
-{{patchnote|Func X| |bigBase|2}}
-{{patchnote|Y 1| |2|2}}
-{{patchnote|Y 2| |50|2}}
-{{patchnote|Func Y| |intervalAdd|2}}
-{{patchnote|Lvl Up Text| |+{% Dmg & +} Mob|2}}
-{{patchnote|Skill Index| |137|2}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Name| |Serrated Swipe|3}}
-{{patchnote|K| |1.1|3}}
-{{patchnote|D| |1.25|3}}
-{{patchnote|S| |1.2|3}}
-{{patchnote|Cooldown| |15|3}}
-{{patchnote|Cast Time| |0.8|3}}
-{{patchnote|Mana Cost| |15|3}}
-{{patchnote|Af Krange| |125|3}}
-{{patchnote|Af Ktype| |line|3}}
-{{patchnote/bold|Ember Bear|1}}
-{{patchnote|Name| |Ember Bear|2}}
-{{patchnote|Description| |Ignites the bear claw, boosting max mobs hit to 10 and multihit by {%|2}}
-{{patchnote|X 1| |250|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{% Claw Multihit Chance|2}}
-{{patchnote|Skill Index| |138|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Ferocity Strike|1}}
-{{patchnote|Name| |Ferocity Strike|2}}
-{{patchnote|Description| |Basic Attacks with Warrior Weapons have a {% chance to hit again|2}}
-{{patchnote|X 1| |100|2}}
-{{patchnote|X 2| |80|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |{% Chance|2}}
-{{patchnote|Skill Index| |139|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Tough Steaks|1}}
-{{patchnote|Name| |Tough Steaks|2}}
-{{patchnote|Description| |+{ Weapon Power for every 10 Cooking Lvs of this character.|2}}
-{{patchnote|X 1| |10|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{ Wep Power Per 10 Lv|2}}
-{{patchnote|Skill Index| |140|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Charred Skulls|1}}
-{{patchnote|Name| |Charred Skulls|2}}
-{{patchnote|Description| |+{% Kill per Kill per 1000 STR. Each kill is worth more kills!|2}}
-{{patchnote|X 1| |40|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{% Kill Per Kill Per 1000|2}}
-{{patchnote|Skill Index| |141|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Skill Strengthen|1}}
-{{patchnote|Name| |Skill Strengthen|2}}
-{{patchnote|Description| |STR has a {% larger impact on Skill Efficiency. Also, +} STR.|2}}
-{{patchnote|X 1| |60|2}}
-{{patchnote|X 2| |80|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |1|2}}
-{{patchnote|Y 2| |2|2}}
-{{patchnote|Func Y| |intervalAdd|2}}
-{{patchnote|Lvl Up Text| |+{% Impact & } Str|2}}
-{{patchnote|Skill Index| |142|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Overblown Testosterone|1}}
-{{patchnote|Name| |Overblown Testosterone|2}}
-{{patchnote|Description| |+{% STR, and +} Max Talent Lv for 'Fist of Rage'|2}}
-{{patchnote|X 1| |15|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |1|2}}
-{{patchnote|Func Y| |add|2}}
-{{patchnote|Lvl Up Text| |+{% Str & +} Max Lv|2}}
-{{patchnote|Skill Index| |143|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|The Family Guy|1}}
-{{patchnote|Name| |The Family Guy|2}}
-{{patchnote|Description| |+{% larger Family Bonuses from ones given by this player|2}}
-{{patchnote|X 1| |40|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{% Bonus|2}}
-{{patchnote|Skill Index| |144|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Taste Test|1}}
-{{patchnote|Name| |Taste Test|2}}
-{{patchnote|Description| |Finishes all recipes, but the kitchens keep {% of the fire.|2}}
-{{patchnote|X 1| |100|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{% Of The Fire Kept|2}}
-{{patchnote|Skill Index| |145|2}}
-{{patchnote/bold|Active Data|2}}
-{{patchnote|Name| |Taste Test|3}}
-{{patchnote|K| |1.1|3}}
-{{patchnote|D| |1.25|3}}
-{{patchnote|S| |1.2|3}}
-{{patchnote|Cooldown| |200000|3}}
-{{patchnote|Cast Time| |0.8|3}}
-{{patchnote|Mana Cost| |15|3}}
-{{patchnote|Af Krange| |125|3}}
-{{patchnote|Af Ktype| |buff|3}}
-{{patchnote|Af Kactivity| |-2|3}}
-{{patchnote/bold|Apocalypse Chow|1}}
-{{patchnote|Name| |Apocalypse Chow|2}}
-{{patchnote|Description| |+{% Cooking EXP and Eff for every mob with 1 million kills up to } mobs|2}}
-{{patchnote|X 1| |20|2}}
-{{patchnote|X 2| |100|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Y 1| |1|2}}
-{{patchnote|Func Y| |add|2}}
-{{patchnote|Lvl Up Text| |+{% Bonus & +} Mob|2}}
-{{patchnote|Skill Index| |146|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Waiting To Cool|1}}
-{{patchnote|Name| |Waiting To Cool|2}}
-{{patchnote|Description| |+{% Cooking AFK Gains rate. Gotta wait for things to cool by the window sill!|2}}
-{{patchnote|X 1| |20|2}}
-{{patchnote|X 2| |60|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{% Afk Gains Rate|2}}
-{{patchnote|Skill Index| |147|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Overflowing Ladle|1}}
-{{patchnote|Name| |Overflowing Ladle|2}}
-{{patchnote|Description| |Ladles used on this character give +{% more AFK time than normal|2}}
-{{patchnote|X 1| |100|2}}
-{{patchnote|X 2| |80|2}}
-{{patchnote|Func X| |decay|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+{% Better Ladles|2}}
-{{patchnote|Skill Index| |148|2}}
-{{patchnote|Active Data| |None|2}}
-{{patchnote/bold|Symbols Of Beyond ~R|1}}
-{{patchnote|Name| |Symbols Of Beyond ~r|2}}
-{{patchnote|Description| |+{ Lv for all talents higher than Lv 1. This bonus goes up every 20 lvs|2}}
-{{patchnote|X 1| |1|2}}
-{{patchnote|X 2| |20|2}}
-{{patchnote|Func X| |intervalAdd|2}}
-{{patchnote|Func Y| |txt|2}}
-{{patchnote|Lvl Up Text| |+1 All Lvs Every 20 Lvs|2}}
-{{patchnote|Skill Index| |149|2}}
 {{patchnote|Active Data| |None|2}}
 |}
 
@@ -820,7 +530,7 @@
 {{patchnote|Active Data| |None|2}}
 {{patchnote/bold|The Family Guy|1}}
 {{patchnote|Name| |The Family Guy|2}}
-{{patchnote|Description| |+{% larger Family Bonuses from ones given by this player|2}}
+{{patchnote|Description| |+{% larger Family Bonuses than what is displayed from bonuses given by this player|2}}
 {{patchnote|X 1| |40|2}}
 {{patchnote|X 2| |100|2}}
 {{patchnote|Func X| |decay|2}}
@@ -889,6 +599,262 @@
 {{patchnote|Func Y| |txt|2}}
 {{patchnote|Lvl Up Text| |+1 All Lvs Every 20 Lvs|2}}
 {{patchnote|Skill Index| |374|2}}
+{{patchnote|Active Data| |None|2}}
+|}
+
+{{patchnote/head|changed=Divine Knight}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|Charred Skulls|1}}
+{{patchnote|Name| |Charred Skulls|2}}
+{{patchnote|Description| |+{% Kill per Kill per 1000 STR. Each kill is worth more kills!|2}}
+{{patchnote|X 1| |40|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Kill Per Kill Per 1000|2}}
+{{patchnote|Skill Index| |141|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Skill Strengthen|1}}
+{{patchnote|Name| |Skill Strengthen|2}}
+{{patchnote|Description| |STR has a {% larger impact on Skill Efficiency. Also, +} STR.|2}}
+{{patchnote|X 1| |60|2}}
+{{patchnote|X 2| |80|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |1|2}}
+{{patchnote|Y 2| |2|2}}
+{{patchnote|Func Y| |intervalAdd|2}}
+{{patchnote|Lvl Up Text| |+{% Impact & } Str|2}}
+{{patchnote|Skill Index| |142|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Overblown Testosterone|1}}
+{{patchnote|Name| |Overblown Testosterone|2}}
+{{patchnote|Description| |+{% STR, and +} Max Talent Lv for 'Fist of Rage'|2}}
+{{patchnote|X 1| |15|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |1|2}}
+{{patchnote|Func Y| |add|2}}
+{{patchnote|Lvl Up Text| |+{% Str & +} Max Lv|2}}
+{{patchnote|Skill Index| |143|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|The Family Guy|1}}
+{{patchnote|Name| |The Family Guy|2}}
+{{patchnote|Description| |+{% larger Family Bonuses than what is displayed from bonuses given by this player|2}}
+{{patchnote|X 1| |40|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Bonus|2}}
+{{patchnote|Skill Index| |144|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Symbols Of Beyond ~R|1}}
+{{patchnote|Name| |Symbols Of Beyond ~r|2}}
+{{patchnote|Description| |+{ Lv for all talents higher than Lv 1. This bonus goes up every 20 lvs|2}}
+{{patchnote|X 1| |1|2}}
+{{patchnote|X 2| |20|2}}
+{{patchnote|Func X| |intervalAdd|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+1 All Lvs Every 20 Lvs|2}}
+{{patchnote|Skill Index| |149|2}}
+{{patchnote|Active Data| |None|2}}
+|}
+
+{{patchnote/head|changed=Blood Berserker}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|Fired Up|1}}
+{{patchnote|Name| |Fired Up|2}}
+{{patchnote|Description| |Inflame yourself, boosting attack spd. Attacks refresh flame, moving a lot ends it|2}}
+{{patchnote|X 1| |5|2}}
+{{patchnote|X 2| |15|2}}
+{{patchnote|Func X| |intervalAdd|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{S Inflame Timer|2}}
+{{patchnote|Skill Index| |135|2}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Name| |Fired Up|3}}
+{{patchnote|K| |1|3}}
+{{patchnote|D| |1.4|3}}
+{{patchnote|S| |1|3}}
+{{patchnote|Cooldown| |90|3}}
+{{patchnote|Cast Time| |1.5|3}}
+{{patchnote|Mana Cost| |15|3}}
+{{patchnote|Af Krange| |1|3}}
+{{patchnote|Af Ktype| |buff|3}}
+{{patchnote/bold|Combustion|1}}
+{{patchnote|Name| |Combustion|2}}
+{{patchnote|Description| |If inflamed, releases your fire and deals {% dmg to up to } mobs near you|2}}
+{{patchnote|X 1| |300|2}}
+{{patchnote|X 2| |1.5|2}}
+{{patchnote|Func X| |bigBase|2}}
+{{patchnote|Y 1| |13|2}}
+{{patchnote|Y 2| |20|2}}
+{{patchnote|Func Y| |intervalAdd|2}}
+{{patchnote|Lvl Up Text| |+{% Dmg & +} Mobs Hit|2}}
+{{patchnote|Skill Index| |136|2}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Name| |Combustion|3}}
+{{patchnote|K| |1.1|3}}
+{{patchnote|D| |1.25|3}}
+{{patchnote|S| |1.2|3}}
+{{patchnote|Cooldown| |40|3}}
+{{patchnote|Cast Time| |0.8|3}}
+{{patchnote|Mana Cost| |20|3}}
+{{patchnote|Af Krange| |125|3}}
+{{patchnote|Af Ktype| |line|3}}
+{{patchnote/bold|Serrated Swipe|1}}
+{{patchnote|Name| |Serrated Swipe|2}}
+{{patchnote|Description| |Slashes repeatedly if you're inflamed, dealing {% dmg to a max of } mobs|2}}
+{{patchnote|X 1| |40|2}}
+{{patchnote|X 2| |0.4|2}}
+{{patchnote|Func X| |bigBase|2}}
+{{patchnote|Y 1| |2|2}}
+{{patchnote|Y 2| |50|2}}
+{{patchnote|Func Y| |intervalAdd|2}}
+{{patchnote|Lvl Up Text| |+{% Dmg & +} Mob|2}}
+{{patchnote|Skill Index| |137|2}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Name| |Serrated Swipe|3}}
+{{patchnote|K| |1.1|3}}
+{{patchnote|D| |1.25|3}}
+{{patchnote|S| |1.2|3}}
+{{patchnote|Cooldown| |15|3}}
+{{patchnote|Cast Time| |0.8|3}}
+{{patchnote|Mana Cost| |15|3}}
+{{patchnote|Af Krange| |125|3}}
+{{patchnote|Af Ktype| |line|3}}
+{{patchnote/bold|Ember Bear|1}}
+{{patchnote|Name| |Ember Bear|2}}
+{{patchnote|Description| |Ignites the bear claw, boosting max mobs hit to 10 and multihit by {%|2}}
+{{patchnote|X 1| |250|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Claw Multihit Chance|2}}
+{{patchnote|Skill Index| |138|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Ferocity Strike|1}}
+{{patchnote|Name| |Ferocity Strike|2}}
+{{patchnote|Description| |Basic Attacks with Warrior Weapons have a {% chance to hit again|2}}
+{{patchnote|X 1| |100|2}}
+{{patchnote|X 2| |80|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |{% Chance|2}}
+{{patchnote|Skill Index| |139|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Tough Steaks|1}}
+{{patchnote|Name| |Tough Steaks|2}}
+{{patchnote|Description| |+{ Weapon Power for every 10 Cooking Lvs of this character.|2}}
+{{patchnote|X 1| |10|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{ Wep Power Per 10 Lv|2}}
+{{patchnote|Skill Index| |140|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Charred Skulls|1}}
+{{patchnote|Name| |Charred Skulls|2}}
+{{patchnote|Description| |+{% Kill per Kill per 1000 STR. Each kill is worth more kills!|2}}
+{{patchnote|X 1| |40|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Kill Per Kill Per 1000|2}}
+{{patchnote|Skill Index| |141|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Skill Strengthen|1}}
+{{patchnote|Name| |Skill Strengthen|2}}
+{{patchnote|Description| |STR has a {% larger impact on Skill Efficiency. Also, +} STR.|2}}
+{{patchnote|X 1| |60|2}}
+{{patchnote|X 2| |80|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |1|2}}
+{{patchnote|Y 2| |2|2}}
+{{patchnote|Func Y| |intervalAdd|2}}
+{{patchnote|Lvl Up Text| |+{% Impact & } Str|2}}
+{{patchnote|Skill Index| |142|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Overblown Testosterone|1}}
+{{patchnote|Name| |Overblown Testosterone|2}}
+{{patchnote|Description| |+{% STR, and +} Max Talent Lv for 'Fist of Rage'|2}}
+{{patchnote|X 1| |15|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |1|2}}
+{{patchnote|Func Y| |add|2}}
+{{patchnote|Lvl Up Text| |+{% Str & +} Max Lv|2}}
+{{patchnote|Skill Index| |143|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|The Family Guy|1}}
+{{patchnote|Name| |The Family Guy|2}}
+{{patchnote|Description| |+{% larger Family Bonuses than what is displayed from bonuses given by this player|2}}
+{{patchnote|X 1| |40|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Bonus|2}}
+{{patchnote|Skill Index| |144|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Taste Test|1}}
+{{patchnote|Name| |Taste Test|2}}
+{{patchnote|Description| |Finishes all recipes, but the kitchens keep {% of the fire.|2}}
+{{patchnote|X 1| |100|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Of The Fire Kept|2}}
+{{patchnote|Skill Index| |145|2}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Name| |Taste Test|3}}
+{{patchnote|K| |1.1|3}}
+{{patchnote|D| |1.25|3}}
+{{patchnote|S| |1.2|3}}
+{{patchnote|Cooldown| |200000|3}}
+{{patchnote|Cast Time| |0.8|3}}
+{{patchnote|Mana Cost| |15|3}}
+{{patchnote|Af Krange| |125|3}}
+{{patchnote|Af Ktype| |buff|3}}
+{{patchnote|Af Kactivity| |-2|3}}
+{{patchnote/bold|Apocalypse Chow|1}}
+{{patchnote|Name| |Apocalypse Chow|2}}
+{{patchnote|Description| |+{% Cooking EXP and Eff for every mob you kill over 1m times up to } mobs|2}}
+{{patchnote|X 1| |20|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |1|2}}
+{{patchnote|Func Y| |add|2}}
+{{patchnote|Lvl Up Text| |+{% Bonus & +} Mob|2}}
+{{patchnote|Skill Index| |146|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Waiting To Cool|1}}
+{{patchnote|Name| |Waiting To Cool|2}}
+{{patchnote|Description| |+{% Cooking AFK Gains rate. Gotta wait for things to cool by the window sill!|2}}
+{{patchnote|X 1| |20|2}}
+{{patchnote|X 2| |60|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Afk Gains Rate|2}}
+{{patchnote|Skill Index| |147|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Overflowing Ladle|1}}
+{{patchnote|Name| |Overflowing Ladle|2}}
+{{patchnote|Description| |Ladles used on this character give +{% more AFK time than normal|2}}
+{{patchnote|X 1| |100|2}}
+{{patchnote|X 2| |80|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Better Ladles|2}}
+{{patchnote|Skill Index| |148|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Symbols Of Beyond ~R|1}}
+{{patchnote|Name| |Symbols Of Beyond ~r|2}}
+{{patchnote|Description| |+{ Lv for all talents higher than Lv 1. This bonus goes up every 20 lvs|2}}
+{{patchnote|X 1| |1|2}}
+{{patchnote|X 2| |20|2}}
+{{patchnote|Func X| |intervalAdd|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+1 All Lvs Every 20 Lvs|2}}
+{{patchnote|Skill Index| |149|2}}
 {{patchnote|Active Data| |None|2}}
 |}
 

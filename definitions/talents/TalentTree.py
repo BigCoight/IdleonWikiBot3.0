@@ -55,4 +55,4 @@ class TalentTree(IdleonModel):
 
 	def isFiller(self) -> bool:
 		talents = self.talents.values()
-		return len(talents) < 13
+		return len(talents) <= 3

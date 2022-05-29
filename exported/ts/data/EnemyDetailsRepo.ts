@@ -1,6 +1,6 @@
-import { EnemyType } from '../model/enemyType';
-import { EnemyDetailsModel } from '../model/enemyDetailsModel';
 import { AFKType } from '../model/aFKType';
+import { EnemyDetailsModel } from '../model/enemyDetailsModel';
+import { EnemyType } from '../model/enemyType';
 
 export class EnemyDetailsBase { constructor(public id: string, public data: EnemyDetailsModel) { } }
 

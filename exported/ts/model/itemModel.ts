@@ -1,9 +1,9 @@
-import { RecipeModel } from './recipeModel';
-import { ItemVendorsModel } from './itemVendorsModel';
 import { AnvilProduceModel } from './anvilProduceModel';
-import { NoteModel } from './noteModel';
-import { DetDropsModel } from './detDropsModel';
 import { BaseItemModel } from './baseItemModel';
+import { DetDropsModel } from './detDropsModel';
+import { ItemVendorsModel } from './itemVendorsModel';
+import { NoteModel } from './noteModel';
+import { RecipeModel } from './recipeModel';
 import { SourcesModel } from './sourcesModel';
 
 export interface ItemModel {

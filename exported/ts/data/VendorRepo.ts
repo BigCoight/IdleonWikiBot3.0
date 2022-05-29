@@ -1,5 +1,5 @@
-import { VendorsModel } from '../model/vendorsModel';
 import { VendorModel } from '../model/vendorModel';
+import { VendorsModel } from '../model/vendorsModel';
 
 export class VendorsBase { constructor(public id: string, public data: VendorsModel) { } }
 

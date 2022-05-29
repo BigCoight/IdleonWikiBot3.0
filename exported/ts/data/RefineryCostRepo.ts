@@ -1,5 +1,5 @@
-import { RefineryCostModel } from '../model/refineryCostModel';
 import { ComponentModel } from '../model/componentModel';
+import { RefineryCostModel } from '../model/refineryCostModel';
 
 export class RefineryCostBase { constructor(public id: string, public data: RefineryCostModel) { } }
 

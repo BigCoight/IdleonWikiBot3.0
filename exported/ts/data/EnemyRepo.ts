@@ -1,18 +1,18 @@
 import { AFKType } from '../model/aFKType';
-import { CoinDropModel } from '../model/coinDropModel';
-import { EnemyTableModel } from '../model/enemyTableModel';
-import { EnemyDetailsModel } from '../model/enemyDetailsModel';
-import { MapDataModel } from '../model/mapDataModel';
-import { EnemyNavModel } from '../model/enemyNavModel';
-import { EnemyType } from '../model/enemyType';
-import { BossDetailsModel } from '../model/bossDetailsModel';
-import { EnemyModel } from '../model/enemyModel';
-import { ItemDropModel } from '../model/itemDropModel';
-import { TalentDropModel } from '../model/talentDropModel';
-import { CardDropModel } from '../model/cardDropModel';
-import { SubTableDropModel } from '../model/subTableDropModel';
-import { RecipeDropModel } from '../model/recipeDropModel';
 import { BossAttackModel } from '../model/bossAttackModel';
+import { BossDetailsModel } from '../model/bossDetailsModel';
+import { CardDropModel } from '../model/cardDropModel';
+import { CoinDropModel } from '../model/coinDropModel';
+import { EnemyDetailsModel } from '../model/enemyDetailsModel';
+import { EnemyModel } from '../model/enemyModel';
+import { EnemyNavModel } from '../model/enemyNavModel';
+import { EnemyTableModel } from '../model/enemyTableModel';
+import { EnemyType } from '../model/enemyType';
+import { ItemDropModel } from '../model/itemDropModel';
+import { MapDataModel } from '../model/mapDataModel';
+import { RecipeDropModel } from '../model/recipeDropModel';
+import { SubTableDropModel } from '../model/subTableDropModel';
+import { TalentDropModel } from '../model/talentDropModel';
 
 export class EnemyBase { constructor(public id: string, public data: EnemyModel) { } }
 

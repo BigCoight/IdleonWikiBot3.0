@@ -1,6 +1,6 @@
-import { NoteModel } from './noteModel';
 import { ComponentModel } from './componentModel';
 import { DialogueLineModel } from './dialogueLineModel';
+import { NoteModel } from './noteModel';
 import { QuestType } from './questType';
 
 export interface QuestModel extends DialogueLineModel {

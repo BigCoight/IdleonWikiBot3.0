@@ -1,6 +1,6 @@
-import { TalentTreeModel } from '../model/talentTreeModel';
-import { TalentModel } from '../model/talentModel';
 import { ActiveTalentModel } from '../model/activeTalentModel';
+import { TalentModel } from '../model/talentModel';
+import { TalentTreeModel } from '../model/talentTreeModel';
 
 export class TalentTreeBase { constructor(public id: string, public data: TalentTreeModel) { } }
 

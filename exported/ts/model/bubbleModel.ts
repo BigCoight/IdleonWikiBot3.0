@@ -1,5 +1,5 @@
-import { LiquidComponentModel } from './liquidComponentModel';
 import { ComponentModel } from './componentModel';
+import { LiquidComponentModel } from './liquidComponentModel';
 
 export interface BubbleModel {
     cauldron: string,

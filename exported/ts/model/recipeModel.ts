@@ -1,6 +1,6 @@
-import { SourceModel } from './sourceModel';
-import { DetailedRecipeModel } from './detailedRecipeModel';
 import { ComponentModel } from './componentModel';
+import { DetailedRecipeModel } from './detailedRecipeModel';
+import { SourceModel } from './sourceModel';
 
 export interface RecipeModel {
     intID: string,

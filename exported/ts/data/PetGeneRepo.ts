@@ -1,5 +1,5 @@
-import { PetGeneModel } from '../model/petGeneModel';
 import { AbilityType } from '../model/abilityType';
+import { PetGeneModel } from '../model/petGeneModel';
 
 export class PetGeneBase { constructor(public index: number, public data: PetGeneModel) { } }
 

@@ -1,5 +1,5 @@
-import { EnemyType } from './enemyType';
 import { AFKType } from './aFKType';
+import { EnemyType } from './enemyType';
 
 export interface EnemyDetailsModel {
     Name: string,

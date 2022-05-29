@@ -1,5 +1,5 @@
-import { PoolType } from '../model/poolType';
 import { FishPoolModel } from '../model/fishPoolModel';
+import { PoolType } from '../model/poolType';
 
 export class FishPoolBase { constructor(public index: number, public data: FishPoolModel) { } }
 

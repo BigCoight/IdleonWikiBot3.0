@@ -1,10 +1,10 @@
+import { CardDropModel } from '../model/cardDropModel';
 import { CoinDropModel } from '../model/coinDropModel';
 import { EnemyTableModel } from '../model/enemyTableModel';
 import { ItemDropModel } from '../model/itemDropModel';
-import { TalentDropModel } from '../model/talentDropModel';
-import { CardDropModel } from '../model/cardDropModel';
-import { SubTableDropModel } from '../model/subTableDropModel';
 import { RecipeDropModel } from '../model/recipeDropModel';
+import { SubTableDropModel } from '../model/subTableDropModel';
+import { TalentDropModel } from '../model/talentDropModel';
 
 export class EnemyTableBase { constructor(public id: string, public data: EnemyTableModel) { } }
 

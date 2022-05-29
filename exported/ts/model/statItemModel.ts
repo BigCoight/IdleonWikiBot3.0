@@ -1,5 +1,5 @@
-import { ClassType } from './classType';
 import { BaseItemModel } from './baseItemModel';
+import { ClassType } from './classType';
 import { TypeGen } from './typeGen';
 
 export interface StatItemModel extends BaseItemModel {

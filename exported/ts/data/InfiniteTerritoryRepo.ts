@@ -1,5 +1,5 @@
-import { TerritoryEnemyModel } from '../model/territoryEnemyModel';
 import { InfiniteTerritoryModel } from '../model/infiniteTerritoryModel';
+import { TerritoryEnemyModel } from '../model/territoryEnemyModel';
 
 export class InfiniteTerritoryBase { constructor(public index: number, public data: InfiniteTerritoryModel) { } }
 

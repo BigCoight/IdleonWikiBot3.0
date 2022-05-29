@@ -1,5 +1,5 @@
-import { TaskUnlocksModel } from '../model/taskUnlocksModel';
 import { TaskUnlockModel } from '../model/taskUnlockModel';
+import { TaskUnlocksModel } from '../model/taskUnlocksModel';
 
 export class TaskUnlocksBase { constructor(public index: number, public data: TaskUnlocksModel) { } }
 

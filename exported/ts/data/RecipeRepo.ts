@@ -1,7 +1,7 @@
-import { RecipeModel } from '../model/recipeModel';
+import { ComponentModel } from '../model/componentModel';
 import { DetRecipeComponentModel } from '../model/detRecipeComponentModel';
 import { DetailedRecipeModel } from '../model/detailedRecipeModel';
-import { ComponentModel } from '../model/componentModel';
+import { RecipeModel } from '../model/recipeModel';
 
 export class RecipeBase { constructor(public id: string, public data: RecipeModel) { } }
 

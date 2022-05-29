@@ -1,7 +1,7 @@
-import { EnemyTableModel } from './enemyTableModel';
+import { BossDetailsModel } from './bossDetailsModel';
 import { EnemyDetailsModel } from './enemyDetailsModel';
 import { EnemyNavModel } from './enemyNavModel';
-import { BossDetailsModel } from './bossDetailsModel';
+import { EnemyTableModel } from './enemyTableModel';
 import { MapDataModel } from './mapDataModel';
 
 export interface EnemyModel {

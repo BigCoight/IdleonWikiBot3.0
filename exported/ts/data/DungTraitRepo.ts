@@ -1,5 +1,5 @@
-import { DungTraitModel } from '../model/dungTraitModel';
 import { DungSetModel } from '../model/dungSetModel';
+import { DungTraitModel } from '../model/dungTraitModel';
 
 export class DungSetBase { constructor(public id: string, public data: DungSetModel) { } }
 

@@ -1,10 +1,10 @@
-import { QuestItemModel } from '../model/questItemModel';
-import { ConsumableItemModel } from '../model/consumableItemModel';
-import { ClassType } from '../model/classType';
-import { TypeGen } from '../model/typeGen';
 import { BagType } from '../model/bagType';
-import { EquipItemModel } from '../model/equipItemModel';
+import { ClassType } from '../model/classType';
 import { CommonItemModel } from '../model/commonItemModel';
+import { ConsumableItemModel } from '../model/consumableItemModel';
+import { EquipItemModel } from '../model/equipItemModel';
+import { QuestItemModel } from '../model/questItemModel';
+import { TypeGen } from '../model/typeGen';
 
 export class CommonItemBase { constructor(public id: string, public data: CommonItemModel) { } }
 

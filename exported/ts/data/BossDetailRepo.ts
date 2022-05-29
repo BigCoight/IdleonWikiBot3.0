@@ -1,5 +1,5 @@
-import { BossDetailsModel } from '../model/bossDetailsModel';
 import { BossAttackModel } from '../model/bossAttackModel';
+import { BossDetailsModel } from '../model/bossDetailsModel';
 
 export class BossDetailsBase { constructor(public id: string, public data: BossDetailsModel) { } }
 

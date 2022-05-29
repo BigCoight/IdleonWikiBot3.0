@@ -1,5 +1,5 @@
-import { SubTablesModel } from '../model/subTablesModel';
 import { SubTableModel } from '../model/subTableModel';
+import { SubTablesModel } from '../model/subTablesModel';
 
 export class SubTablesBase { constructor(public id: string, public data: SubTablesModel) { } }
 

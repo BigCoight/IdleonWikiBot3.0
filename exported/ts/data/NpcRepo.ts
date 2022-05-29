@@ -1,15 +1,15 @@
-import { NpcModel } from '../model/npcModel';
-import { RecipeRewardModel } from '../model/recipeRewardModel';
-import { CustomReqModel } from '../model/customReqModel';
-import { NoteModel } from '../model/noteModel';
 import { CoinRewardModel } from '../model/coinRewardModel';
-import { CustomQuestModel } from '../model/customQuestModel';
-import { ExpRewardModel } from '../model/expRewardModel';
-import { NpcHeadModel } from '../model/npcHeadModel';
-import { ItemQuestModel } from '../model/itemQuestModel';
-import { QuestType } from '../model/questType';
 import { ComponentModel } from '../model/componentModel';
+import { CustomQuestModel } from '../model/customQuestModel';
+import { CustomReqModel } from '../model/customReqModel';
 import { DialogueLineModel } from '../model/dialogueLineModel';
+import { ExpRewardModel } from '../model/expRewardModel';
+import { ItemQuestModel } from '../model/itemQuestModel';
+import { NoteModel } from '../model/noteModel';
+import { NpcHeadModel } from '../model/npcHeadModel';
+import { NpcModel } from '../model/npcModel';
+import { QuestType } from '../model/questType';
+import { RecipeRewardModel } from '../model/recipeRewardModel';
 import { TalentRewardModel } from '../model/talentRewardModel';
 
 export class NpcBase { constructor(public id: string, public data: NpcModel) { } }

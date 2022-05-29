@@ -1,5 +1,5 @@
-import { NpcHeadModel } from './npcHeadModel';
 import { DialogueLineModel } from './dialogueLineModel';
+import { NpcHeadModel } from './npcHeadModel';
 import { QuestModel } from './questModel';
 
 export interface NpcModel {

@@ -1,9 +1,9 @@
 import { CoinDropModel } from '../model/coinDropModel';
 import { DropTableModel } from '../model/dropTableModel';
 import { ItemDropModel } from '../model/itemDropModel';
-import { TalentDropModel } from '../model/talentDropModel';
-import { SubTableDropModel } from '../model/subTableDropModel';
 import { RecipeDropModel } from '../model/recipeDropModel';
+import { SubTableDropModel } from '../model/subTableDropModel';
+import { TalentDropModel } from '../model/talentDropModel';
 
 export class DropTableBase { constructor(public id: string, public data: DropTableModel) { } }
 

@@ -1,6 +1,6 @@
-import { LiquidComponentModel } from '../model/liquidComponentModel';
 import { BubbleModel } from '../model/bubbleModel';
 import { ComponentModel } from '../model/componentModel';
+import { LiquidComponentModel } from '../model/liquidComponentModel';
 
 export class BubbleBase { constructor(public id: string, public data: BubbleModel) { } }
 

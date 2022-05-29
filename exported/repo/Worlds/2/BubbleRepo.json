@@ -565,6 +565,14 @@
         "description": "+{% Choppin' AFK Gains Rate. Ain't nothin' like sittin' down at the ol' tree and havin' a snooze n' a sleep!",
         "requirements": [{"item": "Soul5", "quantity": 60}, {"liquidNo": "3", "quantity": 4}]
     },
+    "Hyperswift": {
+        "cauldron": "High-IQ Cauldron",
+        "x1": 30,
+        "x2": 30,
+        "func": "decay",
+        "description": "+{% Basic Attack Speed. Just like all other Basic Attack Speed bonuses, this boosts AFK kills/hr if you do enough dmg!",
+        "requirements": [{"item": "Fish7", "quantity": 250}, {"liquidNo": "3", "quantity": 4}]
+    },
     "Matrix Evolved": {
         "cauldron": "High-IQ Cauldron",
         "x1": 60,
@@ -1182,14 +1190,6 @@
         "func": "0",
         "description": "1 random low-quality Obol. Sure, it'll probably be a crappy bronze Obol, but that's not bad considering youre paying with water!",
         "requirements": [{"liquidNo": "1", "quantity": 10}]
-    },
-    "Weak Upg Stone": {
-        "cauldron": "Liquid Shop",
-        "x1": 1,
-        "x2": 1,
-        "func": "0",
-        "description": "`Slaps roof of car` This bad boy can upgrade so many equipm... wait, how'd a car get in here? Gives 1 random low-quality Upgrade Stone.",
-        "requirements": [{"liquidNo": "1", "quantity": 5}]
     },
     "Distilled Water": {
         "cauldron": "Liquid Shop",

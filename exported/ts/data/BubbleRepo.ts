@@ -574,6 +574,14 @@ export const initBubbleRepo = () => {
                 "description": "+{% Choppin' AFK Gains Rate. Ain't nothin' like sittin' down at the ol' tree and havin' a snooze n' a sleep!",
                 "requirements": [<ComponentModel>{"item": "Soul5", "quantity": 60}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 4}]
             }),
+        new BubbleBase("Hyperswift", <BubbleModel>{
+                "cauldron": "High-IQ Cauldron",
+                "x1": 30,
+                "x2": 30,
+                "func": "decay",
+                "description": "+{% Basic Attack Speed. Just like all other Basic Attack Speed bonuses, this boosts AFK kills/hr if you do enough dmg!",
+                "requirements": [<ComponentModel>{"item": "Fish7", "quantity": 250}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 4}]
+            }),
         new BubbleBase("Matrix Evolved", <BubbleModel>{
                 "cauldron": "High-IQ Cauldron",
                 "x1": 60,
@@ -1191,14 +1199,6 @@ export const initBubbleRepo = () => {
                 "func": "0",
                 "description": "1 random low-quality Obol. Sure, it'll probably be a crappy bronze Obol, but that's not bad considering youre paying with water!",
                 "requirements": [<LiquidComponentModel>{"liquidNo": "1", "quantity": 10}]
-            }),
-        new BubbleBase("Weak Upg Stone", <BubbleModel>{
-                "cauldron": "Liquid Shop",
-                "x1": 1,
-                "x2": 1,
-                "func": "0",
-                "description": "`Slaps roof of car` This bad boy can upgrade so many equipm... wait, how'd a car get in here? Gives 1 random low-quality Upgrade Stone.",
-                "requirements": [<LiquidComponentModel>{"liquidNo": "1", "quantity": 5}]
             }),
         new BubbleBase("Distilled Water", <BubbleModel>{
                 "cauldron": "Liquid Shop",

@@ -1,10 +1,10 @@
 import re
 from typing import List
 
+from definitions.common.Component import Component
 from definitions.common.LiquidComponent import LiquidComponent
 from definitions.misc.world2.Bubble import Bubble
-from definitions.common.Component import Component
-from helpers.HelperFunctions import replaceUnderscores, camelCaseToTitle
+from helpers.HelperFunctions import replaceUnderscores, reAll
 from repositories.master.Repository import Repository
 
 
@@ -26,7 +26,7 @@ class BubbleRepo(Repository[Bubble]):
 		bubbleNames = ["Power Cauldron", "Quicc Cauldron", "High-IQ Cauldron", "Kazam Cauldron", "Vials",
 		               "Liquid Shop", "??"]
 		bubbleData = cls.getSection().split("],")
-		reEverything = r'"([a-zA-Z0-9_ +{}\',.\-%!$:`?;\n\]\(\)]*)"\.'
+		reEverything = fr'"({reAll}*)"\.'
 		for n, v in enumerate(bubbleData):
 			bubbles = re.findall(reEverything, v)
 			for bubble in bubbles:

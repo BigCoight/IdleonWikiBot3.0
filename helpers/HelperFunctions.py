@@ -220,6 +220,6 @@ def toLowerCamel(imp: str) -> str:
 
 def extractImportsClass(imports: Set[str]) -> str:
 	res = []
-	for imp in imports:
+	for imp in sorted(imports):
 		res.append("import { "f"{imp}"" } from "f"'../model/{toLowerCamel(imp)}';")
 	return "\n".join(res) + '\n\n'

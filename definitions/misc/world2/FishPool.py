@@ -1,13 +1,13 @@
-from enum import Enum
-
 from definitions.common.EnumMeta import CheckIn
+from definitions.master.IdleonEnum import IdleonEnum
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Integer, Numeric
 
 
-class PoolType(str, Enum, metaclass=CheckIn):
+class PoolType(str, IdleonEnum, metaclass = CheckIn):
 	FishSmall = "FishSmall"
 	FishMed = "FishMed"
+
 
 class FishPool(IdleonModel):
 	fish: str

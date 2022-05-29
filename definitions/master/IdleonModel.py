@@ -1,85 +1,170 @@
 from __future__ import annotations
 
 import enum
+import json
 import re
-from typing import List, Dict, Union, Callable, Set
+from typing import List, Dict, Union, Callable, Set, Any, Optional, Tuple, Type
 
 from pydantic import BaseModel
 
-from helpers.CustomTypes import Integer, Numeric
-from helpers.HelperFunctions import strToArray
+
+class ModelConverter:
+	class TypeNotFoundError(Exception):
+		def __init__(self, typ: str, message: str = "Type was not found in the typeMap object"):
+			self.typ = typ
+			self.message = message
+			super().__init__(f"({typ}) {self.message}")
+
+	def __init__(self, name: str, fields: Dict[str, Any], required: Optional[List[str]], base: IdleonModel,
+	             definitions: Optional[Dict[str, Any]]):
+		self.needToImport = set()
+		self.fields = fields.copy()
+		self.name = name + "Model"
+		if required:
+			self.required = set(required)
+		else:
+			self.required = set()
+		self.base = base
+		self.defs = definitions
+
+		self.typeMap = {
+			"integer": "number",
+			"number": "number",
+			"string": "string",
+			"boolean": "boolean"
+		}
+
+	def toLowerCamel(self, imp: str) -> str:
+		return imp[0].lower() + imp[1:]
+
+	def addImport(self, imp: str) -> None:
+		self.needToImport.add(imp)
+
+	def extractImports(self) -> str:
+		res = []
+		for imp in self.needToImport:
+			res.append("import { "f"{imp}"" } from "f"'./{self.toLowerCamel(imp)}';")
+		return "\n".join(res) + '\n\n'
+
+	def getInnermostType(self, typ: str) -> str:
+		if res := self.typeMap.get(typ):
+			return res
+		raise self.TypeNotFoundError(typ)
+
+	def handleAnyOf(self, anyOf: List[Dict[str, str]]) -> str:
+		res = set()
+		for typ in anyOf:
+			res.add(self.fieldToTs(typ))
+		if len(res) == 1:
+			return res.pop()
+		types = " | ".join(res)
+		return f"({types})"
+
+	def handleRef(self, ref: str) -> str:
+
+		split = ref.split("/")
+		typ = split[-1]
+		if defin := self.defs.get(typ):
+			if "enum" in defin:
+				self.addImport(typ)
+				return typ
+
+		self.addImport(typ + "Model")
+		return typ + "Model"
+
+	def getBaseClass(self, cls: str) -> str:
+		reGetTypeName = re.compile(r"\.(\w*)(?:$|')")
+		return reGetTypeName.findall(cls)[0] + "Model"
+
+	def fieldToTs(self, field: Dict[str, Any]):
+		# print(json.dumps(field, indent = 4, sort_keys = True))
+		if anyOf := field.get("anyOf"):
+			return self.handleAnyOf(anyOf)
+		if items := field.get("items"):
+			if len(items) > 1 and "type" not in items:
+				return self.handleAnyOf(items)
+			return self.fieldToTs(items) + "[]"
+		if allOf := field.get("allOf"):
+			return self.handleAnyOf(allOf)
+		if ref := field.get("$ref"):
+			return self.handleRef(ref)
+		if addProp := field.get("additionalProperties"):
+			return f"Record<string, {self.fieldToTs(addProp)}>"
+		return self.getInnermostType(field.get("type"))
+
+	def toTS(self):
+		# print(json.dumps(self.fields, indent = 4, sort_keys = True))
+		res = {}
+		# print(self.name)
+		for name, field in self.fields.items():
+			# print("    " + name)
+			res[name] = self.fieldToTs(field)
+		base = ""
+		if self.base != IdleonModel:
+			toRemove = self.base.__fields__.keys()
+			for remove in toRemove:
+				res.pop(remove)
+			base = self.getBaseClass(str(self.base))
+			self.addImport(base)
+		interface = self.extractImports()
+		if not base:
+			interface += f"export interface {self.name} ""{\n"
+		else:
+			interface += f"export interface {self.name} extends {base} ""{\n"
+		indent = "    "
+
+		modelFields = []
+		for name, typ in res.items():
+			required = ""
+			if name not in self.required:
+				required = "?"
+			modelFields.append(f"{indent}{name}{required}: {typ}")
+		interface += ",\n".join(modelFields)
+		interface += "\n}\n"
+		return interface
 
 
 class IdleonModel(BaseModel):
 	@classmethod
-	def toTS(cls):
-		def getType(typ: type | str):
-			reGetTypeName = re.compile(r"\.(\w*)(?:$|')")
-			reGetTypeEnum = re.compile(r"enum '(\w*)'")
-			baseType = typeMap.get(typ)
-			print("GET TYPE", typ, baseType)
-			if baseType:
-				return baseType
-			if "enum" in str(typ):
-				enumName = reGetTypeEnum.findall(str(typ))[0]
-				toImport.add(enumName)
-				return enumName
-			if "Union" in str(typ):
-				innerTypes = strToArray(str(typ).replace("typing.Union", ""))
-				innerTypes = [getType(x) for x in innerTypes]
-				[toImport.add(x) for x in innerTypes]
-				return "(" + " | ".join(innerTypes) + ")"
-			typeName = reGetTypeName.findall(str(typ))[0]
-			toImport.add(typeName)
-			return typeName
+	def generateConverter(cls) -> ModelConverter:
+		json_schema = json.loads(cls.schema_json())
+		# print(json.dumps(json_schema, indent = 4, sort_keys = True))
+		properties = json_schema.get("properties")
+		required = json_schema.get("required")
+		definitions = json_schema.get("definitions")
+		base = cls.__bases__[0]
+		# print(json.loads(cls.schema_json()))
+		exporter = ModelConverter(cls.__name__, properties, required, base, definitions)
+		return exporter
 
-		def toLowerCamel(imp: str) -> str:
-			return imp[0].lower() + imp[1:]
+	@classmethod
+	def toTsInterface(cls):
+		return cls.generateConverter().toTS()
 
-		typeMap = {
-			str: "string",
-			Integer: "number",
-			Numeric: "number",
-			int: "number",
-			float: "number",
-			"helpers.CustomTypes.Integer": "number",
-			bool: "bool",
-			Union[Integer, float]: "number"
-		}
+	@classmethod
+	def getHighestClass(cls) -> Type[IdleonModel]:
+		prev = cls
+		for parent in cls.mro():
+			if parent == IdleonModel:
+				return prev
+			prev = parent
+		return prev
 
-		res = f"interface {cls.__name__} ""{\n"
-		fields = cls.__fields__
+	@classmethod
+	def toTsClass(cls, lst: bool) -> str:
 
-		toImport = set()
-		for name, field in fields.items():
-			print(f"{name}")
-			res += f"    {name}: "
-			print(field.outer_type_, field.type_)
-			if not isinstance(field.outer_type_, type) and field.outer_type_ not in typeMap:
-				outer = str(field.outer_type_)
-				if "Dict" in outer:
-					typ = getType(field.type_)
-					res += f"Record<string, {typ}>"
-				elif "List" in outer:
-					typ = getType(field.type_)
-					res += typ + "[]"
-				elif "Tuple" in outer:
-					types = strToArray(outer.replace("typing.Tuple", ""))
-					tupleTypes = []
-					for typ in types:
-						typ = getType(typ)
-						tupleTypes.append(typ)
-					res += "[" + ", ".join(tupleTypes) + "]"
-				res += ",\n"
-				continue
-			typ = getType(field.type_)
-			res += typ + ",\n"
-		res = res[:-2] + "\n"
-		res += "}"
+		res = f"export class {cls.getHighestClass().__name__}Base"" { "
+		dataName = f"{cls.getHighestClass().__name__}Model"
+		if lst:
+			res += f"constructor(public index: number, public data: {dataName}) ""{ }"
+		else:
+			res += f"constructor(public id: string, public data: {dataName}) ""{ }"
+		return res + " }"
 
-		for imp in toImport:
-			res = "import { "f"{imp}"" } from "f"'./{toLowerCamel(imp)}';\n" + res
-		print(res)
+	def toTs(self) -> Tuple[str, Set[str]]:
+		converter = TSEncoder(indent = 4)
+		res = converter.encode(self)
+		return res, converter.needToImport
 
 	@classmethod
 	def fromList(cls, data: List[any]) -> IdleonModel:
@@ -335,40 +420,82 @@ class IdleonModel(BaseModel):
 			return {}
 		return diffs
 
-	'''
-		def _getDifList(self, me, other, ignored: Set[str] = set()) -> Dict[str, any]:
-		res = {}
-		len1 = len(me)
-		len2 = len(other)
 
-		if len1 == len2:
-			for i in range(len1):
-				if me[i] == other[i]:
-					continue
-				if isinstance(me[i], IdleonModel) and me[i].shouldCompare():
-					res[str(i)] = (me[i].compare(other[i], ignored))
-					continue
-				res[str(i)] = (me[i], other[i])
-		elif len1 < len2:
+class TSEncoder(json.JSONEncoder):
+	"""A JSON Encoder that puts small containers on single lines."""
 
-			for i in range(len1):
-				if me[i] == other[i]:
-					continue
-				if isinstance(me[i], IdleonModel) and me[i].shouldCompare():
-					res[str(i)] = (me[i].compare(other[i], ignored))
-					continue
-				res[str(i)] = (me[i], other[i])
-			for n, i in enumerate(other[len1:len2]):
-				res[str(n)] = (" ", i)
+	CONTAINER_TYPES = (list, tuple, dict)
+	"""Container datatypes include primitives or other containers."""
+
+	MAX_WIDTH = 90
+	"""Maximum width of a container that might be put on a single line."""
+
+	MAX_ITEMS = 5
+	"""Maximum number of items in container that might be put on single line."""
+
+	INDENTATION_CHAR = " "
+
+	def __init__(self, *args, **kwargs):
+		super().__init__(*args, **kwargs)
+		self.base_indent = 12
+		self.indentation_level = 0
+		self.needToImport = set()
+
+	def encode(self, o):
+		"""Encode JSON object *o* with respect to single line lists."""
+		if isinstance(o, (list, tuple)):
+			if self._put_on_single_line(o):
+				return "[" + ", ".join(self.encode(el) for el in o) + "]"
+			else:
+				self.indentation_level += 1
+				output = [self.indent_str + self.encode(el) for el in o]
+				self.indentation_level -= 1
+				return "[\n" + ",\n".join(output) + "\n" + self.indent_str + "]"
+		elif isinstance(o, dict):
+			if o:
+				output = [f"{json.dumps(k)}: {self.encode(v)}" for k, v in o.items()]
+				if self._put_on_single_line(output):
+					return "{" + ", ".join(output) + "}"
+				self.indentation_level += 1
+				output = [self.indent_str + f"{json.dumps(k)}: {self.encode(v)}" for k, v in o.items()]
+				self.indentation_level -= 1
+				return "{\n" + ",\n".join(output) + "\n" + self.indent_str + "}"
+			else:
+				return "{}"
+		elif isinstance(o, IdleonModel):
+			type_str = f"<{o.__class__.__name__}Model>"
+			self.needToImport.add(f"{o.__class__.__name__}Model")
+			if o:
+				output = [f"{json.dumps(k)}: {self.encode(v)}" for k, v in o]
+				if self._put_on_single_line(output):
+					return type_str + "{" + ", ".join(output) + "}"
+				self.indentation_level += 1
+				output = [self.indent_str + f"{json.dumps(k)}: {self.encode(v)}" for k, v in o]
+				self.indentation_level -= 1
+				return type_str + "{\n" + ",\n".join(output) + "\n" + self.indent_str + "}"
+			else:
+				return type_str + "{}"
+		elif isinstance(o, enum.Enum):
+			self.needToImport.add(f"{o.__class__.__name__}")
+			return f"{o.__class__.__name__}.{o.name}"
+		elif isinstance(o, float):  # Use scientific notation for floats, where appropiate
+			return format(o, "g")
+		elif isinstance(o, str):  # escape newlines
+			o = o.replace("\n", "\\n")
+			o = o.replace("\\", "")
+			return f'"{o}"'
 		else:
-			for i in range(len2):
-				if me[i] == other[i]:
-					continue
-				if isinstance(me[i], IdleonModel) and me[i].shouldCompare():
-					res[str(i)] = (me[i].compare(other[i], ignored))
-					continue
-				res[str(i)] = (me[i], other[i])
-			for n, i in enumerate(other[len2:len1]):
-				res[str(n)] = (i, " ")
+			return json.dumps(o)
 
-		return res'''
+	def _put_on_single_line(self, o):
+		return self._primitives_only(o) and len(o) <= self.MAX_ITEMS and len(str(o)) - 2 <= self.MAX_WIDTH
+
+	def _primitives_only(self, o: Union[list, tuple, dict]):
+		if isinstance(o, (list, tuple)):
+			return not any(isinstance(el, self.CONTAINER_TYPES) for el in o)
+		elif isinstance(o, dict):
+			return not any(isinstance(el, self.CONTAINER_TYPES) for el in o.values())
+
+	@property
+	def indent_str(self) -> str:
+		return self.INDENTATION_CHAR * (self.indentation_level * self.indent + self.base_indent)

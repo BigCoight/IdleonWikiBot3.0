@@ -15594,6 +15594,14 @@
         "Type": "Usable",
         "description": "Hold down to gain 20% EXP in the skill that's shown in the corner of the screen. If you're in a town, you will gain EXP in the town skill. Only works on skills below level 30. "
     },
+    "Pearl5": {
+        "internalName": "Pearl5",
+        "displayName": "White Pearl",
+        "sellPrice": 100,
+        "typeGen": "dQuest",
+        "Type": "Usable",
+        "description": "Hold down to gain Class EXP. The amount you gain is based on your Class LV. "
+    },
     "Quest53": {
         "internalName": "Quest53",
         "displayName": "Meat Cube",
@@ -15721,6 +15729,14 @@
         "typeGen": "dQuest",
         "Type": "Bucket",
         "description": "Drop this on the snowy pile in the Refigeration Station in World 3. There are rumors that the recent snowfall will coagulate with the slush in horrible ways... "
+    },
+    "Quest69": {
+        "internalName": "Quest69",
+        "displayName": "Skull",
+        "sellPrice": 1000,
+        "typeGen": "dQuest",
+        "Type": "Dungeon Evaporate",
+        "description": "It may be a skull, but it sure ain't no Killroy! "
     },
     "KeyFrag": {
         "internalName": "KeyFrag",
@@ -16230,6 +16246,27 @@
         "miscUp1": "100% Family",
         "miscUp2": "00",
         "Upgrade_Slots_Left": 8,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats73": {
+        "internalName": "EquipmentHats73",
+        "displayName": "Real Civil Engineer Helmet",
+        "sellPrice": 1,
+        "typeGen": "aHelmet",
+        "Type": "Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 2,
+        "AGI": 0,
+        "WIS": 4,
+        "LUK": 0,
+        "Defence": 6,
+        "miscUp1": "100% Fellow Engineer",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 3,
         "Skill": "",
         "Skill_Power": 0
     },

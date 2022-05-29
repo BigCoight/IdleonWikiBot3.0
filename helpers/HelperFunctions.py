@@ -1,5 +1,5 @@
 import re
-from typing import List
+from typing import List, Set
 
 import numpy as np
 
@@ -214,4 +214,12 @@ def changeChestNames(intName, name):
 	return f"{Constants.COLNAMES[col]} {name}"
 
 
+def toLowerCamel(imp: str) -> str:
+	return imp[0].lower() + imp[1:]
 
+
+def extractImportsClass(imports: Set[str]) -> str:
+	res = []
+	for imp in imports:
+		res.append("import { "f"{imp}"" } from "f"'../model/{toLowerCamel(imp)}';")
+	return "\n".join(res) + '\n\n'

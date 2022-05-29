@@ -39,6 +39,7 @@ from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
 from repositories.misc.MapNameRepo import MapNameRepo
 from repositories.misc.MapPortalsRepo import MapPortalsRepo
+from repositories.misc.SkullShopRepo import SkullShopRepo
 from repositories.misc.StarSignsRepo import StarSignsRepo
 from repositories.misc.StorageOrderRepo import StorageOrderRepo
 from repositories.misc.TaskDescriptionsRepo import TaskDescriptionRepo
@@ -71,7 +72,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("157alphab", steam = True)
+idleonReader = IdleonReader("158alphab", steam = True)
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
@@ -153,5 +154,4 @@ TerritoryFightRepo.initialise(codeReader)
 FishPoolRepo.initialise(codeReader)
 CardSetRepo.initialise(codeReader)
 SigilRepo.initialise(codeReader)
-
-TalentTreeRepo.exportWikiMult()
+SkullShopRepo.initialise(codeReader)

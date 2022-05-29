@@ -1,12 +1,30 @@
 {
-    "new": {},
-    "changes": {
-        "ClassSwap": {
-            "description": [
-                "Hold down on this item to change sub class within your class. It won't let you change classes, you'll need to reach world 3 to do that. ",
-                "Hold down on this item to change sub class within your class. It won't let you change classes, that will be done a different way in the future... "
-            ]
+    "new": {
+        "Pearl5": {
+            "displayName": "White Pearl",
+            "sellPrice": 100,
+            "Type": "Usable",
+            "description": "Hold down to gain Class EXP. The amount you gain is based on your Class LV. "
         },
-        "CardsX16": {"dropChance": [0.007, 0.07]}
-    }
+        "EquipmentHats73": {
+            "displayName": "Real Civil Engineer Helmet",
+            "sellPrice": 1,
+            "Type": "Helmet",
+            "lvReqToCraft": 5,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 2,
+            "AGI": 0,
+            "WIS": 4,
+            "LUK": 0,
+            "Defence": 6,
+            "miscUp1": "100% Fellow Engineer",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 3,
+            "Skill": "",
+            "Skill_Power": 0
+        }
+    },
+    "changes": {}
 }

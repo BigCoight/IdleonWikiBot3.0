@@ -8,10 +8,11 @@ from typing import Dict, Generic, Optional, TypeVar, List, Set
 from pywikibot import Site, Page
 from rich.progress import track
 
+from definitions.master.IdleonEnum import IdleonEnum
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CodeReader import CodeReader, IdleonReader
 from helpers.ColourPrinter import printGreen, printRed, printYellow, printBlue, printPurple, console
-from helpers.HelperFunctions import camelCaseToTitle
+from helpers.HelperFunctions import camelCaseToTitle, extractImportsClass
 from helpers.JsonEncoder import CompactJSONEncoder
 
 T = TypeVar("T", bound = IdleonModel)
@@ -106,6 +107,17 @@ class Repository(Generic[T], ABC):
 
 	@classmethod
 	def _getPath(cls, location: str, fileExtension: str, nameOveride = "", noCat = False) -> str:
+		"""
+
+		Args:
+			location: the base file location
+			fileExtension: the extension of the file
+			nameOveride: what to call the file, defaults to class name
+			noCat: whether to include a category or not
+
+		Returns:
+			the created file path
+		"""
 		if noCat:
 			path = fr"./exported/{location}/"
 		else:
@@ -370,7 +382,6 @@ class Repository(Generic[T], ABC):
 
 	@classmethod
 	def upload(cls, debug: bool) -> None:
-
 		debugNum = 0
 		cls._createOldDir()
 		website = Site()
@@ -395,9 +406,66 @@ class Repository(Generic[T], ABC):
 			cls._writeOld(name, data)
 
 	@classmethod
+	def getFirstKey(cls) -> str:
+		return list(cls.repository.keys())[0]
+
+	@classmethod
+	def getFirstElement(cls) -> T:
+		return cls.get(cls.getFirstKey())
+
+	@classmethod
 	def generateTSRepo(cls):
-		return
+		def all_subclasses(cls):
+			return set(cls.__subclasses__()).union(
+				[s for c in cls.__subclasses__() for s in all_subclasses(c)])
+
+		# print(all_subclasses(IdleonModel))
+		for subclass in all_subclasses(IdleonModel):
+			tsRepr = subclass.toTsInterface()
+			name = subclass.__name__[0].lower() + subclass.__name__[1:] + "Model"
+			path = cls._getPath("ts/model", "ts", noCat = True, nameOveride = name)
+			with open(path, "w") as infile:
+				infile.write(tsRepr)
+
+		for enum in all_subclasses(IdleonEnum):
+			name = enum.__name__[0].lower() + enum.__name__[1:]
+			path = cls._getPath("ts/model", "ts", noCat = True, nameOveride = name)
+			tsEnum = f"export enum {enum.__name__} ""{\n"
+			out = []
+			for e in enum:
+				out.append(f"    {e.name} = \"{e.name}\"")
+			tsEnum += ",\n".join(out)
+			tsEnum += "\n}\n"
+			with open(path, "w") as infile:
+				infile.write(tsEnum)
+
+		path = cls._getPath("ts/data", "ts", noCat = True)
+		tsData = ""
+		imports = set()
 		if not cls.listRepository:
-			cls.get(list(cls.repository.keys())[0]).toTS()
-			return
-		cls.getList(0).toTS()
+			tsData += cls.getFirstElement().toTsClass(False)
+			className = cls.getFirstElement().__class__.__name__
+			tsData += "\n\n\n\n"
+			tsData += f"export const init{cls.__name__} = () => ""{\n    return [    \n"
+			for n, (atr, val) in enumerate(cls.items()):
+				tsObj, toImport = val.toTs()
+				[imports.add(x) for x in toImport]
+				tsData += f"        new {className}Base(\"{atr}\", {tsObj})"
+				if n != len(cls.items()) - 1:
+					tsData += ",\n"
+			tsData += "    \n]\n}\n"
+		else:
+			tsData += cls.getList(0).toTsClass(True)
+			className = cls.getFirstElement().__class__.__name__
+			tsData += "\n\n\n\n"
+			tsData += f"export const init{cls.__name__} = () => ""{\n    return [    \n"
+			for n, val in enumerate(cls.listRepository):
+				tsObj, toImport = val.toTs()
+				[imports.add(x) for x in toImport]
+				tsData += f"        new {className}Base({n}, {tsObj})"
+				if n != len(cls.listRepository) - 1:
+					tsData += ",\n"
+			tsData += "    \n]\n}\n"
+		tsData = extractImportsClass(imports) + tsData
+		with open(path, "w") as infile:
+			infile.write(tsData)

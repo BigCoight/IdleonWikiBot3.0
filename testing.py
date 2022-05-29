@@ -2,7 +2,8 @@
 # oldV = IdleonReader("156", True)
 # NpcRepo.initialise(newV.codeReader)
 from helpers.CodeReader import IdleonReader
-from repositories.talents.TalentTreeRepo import TalentTreeRepo
+from repositories.item.ItemDetailRepo import ItemDetailRepo
 
 idleonReader = IdleonReader("157alphab", steam = True)
-TalentTreeRepo.initialise(idleonReader.codeReader)
+ItemDetailRepo.initialise(idleonReader.codeReader)
+# ItemRepo.initialise(idleonReader.codeReader)

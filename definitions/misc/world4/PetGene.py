@@ -1,10 +1,10 @@
-from enum import Enum
-
 from definitions.common.EnumMeta import CheckIn
+from definitions.master.IdleonEnum import IdleonEnum
 from definitions.master.IdleonModel import IdleonModel
-from helpers.CustomTypes import Numeric, Integer
+from helpers.CustomTypes import Numeric
 
-class AbilityType(Enum, metaclass=CheckIn):
+
+class AbilityType(IdleonEnum, metaclass = CheckIn):
 	Red = 0
 	Green = 1
 	Special = 2

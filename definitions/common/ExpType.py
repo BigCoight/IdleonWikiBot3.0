@@ -1,7 +1,7 @@
-from enum import Enum
+from definitions.master.IdleonEnum import IdleonEnum
 
 
-class ExpType(Enum):
+class ExpType(IdleonEnum):
 	Class = 0
 	Mining = 1
 	Smithing = 2

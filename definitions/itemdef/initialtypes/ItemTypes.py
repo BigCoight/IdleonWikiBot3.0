@@ -1,9 +1,8 @@
-from enum import Enum
-
 from definitions.common.EnumMeta import CheckIn
+from definitions.master.IdleonEnum import IdleonEnum
 
 
-class ClassType(str, Enum, metaclass = CheckIn):
+class ClassType(str, IdleonEnum, metaclass = CheckIn):
 	"""
 	Contains all class types
 	"""
@@ -14,7 +13,7 @@ class ClassType(str, Enum, metaclass = CheckIn):
 	Archer = "Archer"
 
 
-class BagType(str, Enum, metaclass = CheckIn):
+class BagType(str, IdleonEnum, metaclass = CheckIn):
 	"""
 	Contains all types of material bags
 	"""
@@ -28,7 +27,7 @@ class BagType(str, Enum, metaclass = CheckIn):
 	Mining = 'Mining'
 
 
-class TypeGen(str, Enum, metaclass = CheckIn):
+class TypeGen(str, IdleonEnum, metaclass = CheckIn):
 	"""
 	Contains all current types
 	"""

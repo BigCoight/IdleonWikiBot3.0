@@ -1,10 +1,10 @@
-from enum import Enum
 from typing import Callable
 
 from definitions.common.EnumMeta import CheckIn
+from definitions.master.IdleonEnum import IdleonEnum
 
 
-class EnemyType(str, Enum, metaclass = CheckIn):
+class EnemyType(str, IdleonEnum, metaclass = CheckIn):
 	monsterType = "Monster Type"
 	oreType = "Ore Type"
 	treeType = "Tree Type"

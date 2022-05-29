@@ -1,9 +1,8 @@
-from enum import Enum
-
 from definitions.common.EnumMeta import CheckIn
+from definitions.master.IdleonEnum import IdleonEnum
 
 
-class QuestType(str, Enum, metaclass=CheckIn):
+class QuestType(str, IdleonEnum, metaclass = CheckIn):
 	NoQuest = "None"
 	Custom = "Custom"
 	ItemsAndSpaceRequired = "ItemsAndSpaceRequired"

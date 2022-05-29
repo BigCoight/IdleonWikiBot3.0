@@ -42,7 +42,7 @@ class ModelConverter:
 
 	def extractImports(self) -> str:
 		res = []
-		for imp in self.needToImport:
+		for imp in sorted(self.needToImport):
 			res.append("import { "f"{imp}"" } from "f"'./{self.toLowerCamel(imp)}';")
 		return "\n".join(res) + '\n\n'
 

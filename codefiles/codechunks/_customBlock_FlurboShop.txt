@@ -1,0 +1,22 @@
+                        (w._customBlock_FlurboShop = function(t) {
+                        		var s = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.FlurboStats ? !s.existsReserved("FlurboStats") : !s.h.hasOwnProperty("FlurboStats")) {
+                        			s = b.engine.getGameAttribute("DNSM");
+                        			var a = new p();
+                        			for (null != e.FlurboStats ? s.setReserved("FlurboStats", a) : (s.h.FlurboStats = a), s = 0; 8 > s;) {
+                        				a = s++;
+                        				var r = b.engine.getGameAttribute("DNSM"),
+                        					A = null != e.FlurboStats ? r.getReserved("FlurboStats") : r.h.FlurboStats;
+                        				(r = b.engine.getGameAttribute("CustomLists")), (r = "" + g.string((null != e.DungPassiveStats2 ? r.getReserved("DungPassiveStats2") : r.h.DungPassiveStats2)[a][3]));
+                        				var o = b.engine.getGameAttribute("CustomLists");
+                        				o = null == (o = (null != e.DungPassiveStats2 ? o.getReserved("DungPassiveStats2") : o.h.DungPassiveStats2)[a][1]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o));
+                        				var i = b.engine.getGameAttribute("CustomLists");
+                        				i = null == (i = (null != e.DungPassiveStats2 ? i.getReserved("DungPassiveStats2") : i.h.DungPassiveStats2)[a][2]) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i));
+                        				var u = b.engine.getGameAttribute("DungUpg")[5][a];
+                        				(a = "" + a),
+                        				(r = H._customBlock_ArbitraryCode5Inputs(r, o, i, parseNum(u), 0, 0)),
+                        				null != e[a] ? A.setReserved(a, r) : (A.h[a] = r);
+                        			}
+                        		}
+                        		return (s = b.engine.getGameAttribute("DNSM")), (s = null != e.FlurboStats ? s.getReserved("FlurboStats") : s.h.FlurboStats), null != e[(t = "" + t)] ? s.getReserved(t) : s.h[t];
+                        	}

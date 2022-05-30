@@ -1,0 +1,42 @@
+                        (t._customBlock_GetTalentNumber = function(t, s) {
+                        		var a = b.engine.getGameAttribute("SkillLevels")[0 | s];
+                        		if (0 >= parseNum(a)) return 0;
+                        		if (0 < w._customBlock_Dungon()) {
+                        			if (1 == t) {
+                        				(t = b.engine.getGameAttribute("CustomLists")),
+                        				(t = "" + g.string((null != e.TalentDescriptions ? t.getReserved("TalentDescriptions") : t.h.TalentDescriptions)[0 | s][1][2])),
+                        				(a = b.engine.getGameAttribute("CustomLists")),
+                        				(a = null == (a = (null != e.TalentDescriptions ? a.getReserved("TalentDescriptions") : a.h.TalentDescriptions)[0 | s][1][0]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)));
+                        				var r = b.engine.getGameAttribute("CustomLists");
+                        				return (
+                        					(s = (null != e.TalentDescriptions ? r.getReserved("TalentDescriptions") : r.h.TalentDescriptions)[0 | s][1][1]), H._customBlock_ArbitraryCode5Inputs(t, a, parseNum(s), 50, 0, 0));
+                        			}
+                        			return (
+                        				(t = b.engine.getGameAttribute("CustomLists")),
+                        				(t = "" + g.string((null != e.TalentDescriptions ? t.getReserved("TalentDescriptions") : t.h.TalentDescriptions)[0 | s][1][5])),
+                        				(a = b.engine.getGameAttribute("CustomLists")),
+                        				(a = null == (a = (null != e.TalentDescriptions ? a.getReserved("TalentDescriptions") : a.h.TalentDescriptions)[0 | s][1][3]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        				(r = b.engine.getGameAttribute("CustomLists")),
+                        				(s = (null != e.TalentDescriptions ? r.getReserved("TalentDescriptions") : r.h.TalentDescriptions)[0 | s][1][4]), H._customBlock_ArbitraryCode5Inputs(t, a, parseNum(s), 50, 0, 0));
+                        		}
+                        		if (1 == t) {
+                        			(t = b.engine.getGameAttribute("CustomLists")),
+                        			(t = "" + g.string((null != e.TalentDescriptions ? t.getReserved("TalentDescriptions") : t.h.TalentDescriptions)[0 | s][1][2])),
+                        			(a = b.engine.getGameAttribute("CustomLists")),
+                        			(a = null == (a = (null != e.TalentDescriptions ? a.getReserved("TalentDescriptions") : a.h.TalentDescriptions)[0 | s][1][0]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(r = null == (r = (null != e.TalentDescriptions ? r.getReserved("TalentDescriptions") : r.h.TalentDescriptions)[0 | s][1][1]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r)));
+                        			var A = H._customBlock_RunCodeOfTypeXforThingY("AllTalentLV", "" + s);
+                        			return (
+                        				(s = b.engine.getGameAttribute("SkillLevels")[0 | s]), H._customBlock_ArbitraryCode5Inputs(t, a, r, A + parseNum(s), 0, 0));
+                        		}
+                        		return (
+                        			(t = b.engine.getGameAttribute("CustomLists")),
+                        			(t = "" + g.string((null != e.TalentDescriptions ? t.getReserved("TalentDescriptions") : t.h.TalentDescriptions)[0 | s][1][5])),
+                        			(a = b.engine.getGameAttribute("CustomLists")),
+                        			(a = null == (a = (null != e.TalentDescriptions ? a.getReserved("TalentDescriptions") : a.h.TalentDescriptions)[0 | s][1][3]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(r = null == (r = (null != e.TalentDescriptions ? r.getReserved("TalentDescriptions") : r.h.TalentDescriptions)[0 | s][1][4]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        			(A = H._customBlock_RunCodeOfTypeXforThingY("AllTalentLV", "" + s)),
+                        			(s = b.engine.getGameAttribute("SkillLevels")[0 | s]), H._customBlock_ArbitraryCode5Inputs(t, a, r, A + parseNum(s), 0, 0));
+                        	}

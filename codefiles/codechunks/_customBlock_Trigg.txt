@@ -1,0 +1,5 @@
+                        (U._customBlock_Trigg = function(e, t, s) {
+                        		return "sin" == e ? ((e = b.engine.getGameAttribute("PixelHelperActor")[4].getValue("ActorEvents_229", "_GenInfo")[16][0]), Math.sin(
+                        			(parseNum(e) + (t / s) * 360) * s * 0.01745329251994278)) : "cos" == e ? ((e = b.engine.getGameAttribute("PixelHelperActor")[4].getValue("ActorEvents_229", "_GenInfo")[16][0]), Math.cos(
+                        			(parseNum(e) + (t / s) * 360) * s * 0.01745329251994278)) : 1;
+                        	}

@@ -1,0 +1,20 @@
+    ($jscomp.iteratorFromArray = function(e, t) {
+    		$jscomp.initSymbolIterator(), e instanceof String && (e += "");
+    		var n = 0,
+    			s = {
+    				next: function() {
+    					if (n < e.length) {
+    						var a = n++;
+    						return { value: t(a, e[a]), done: !1 };
+    					}
+    					return (
+    						(s.next = function() {
+    							return { done: !0, value: void 0 };
+    						}), s.next());
+    				},
+    			};
+    		return (
+    			(s[Symbol.iterator] = function() {
+    				return s;
+    			}), s);
+    	}

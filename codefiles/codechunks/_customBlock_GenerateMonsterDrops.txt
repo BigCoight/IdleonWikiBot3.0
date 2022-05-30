@@ -1,0 +1,336 @@
+                        (H._customBlock_GenerateMonsterDrops = function(s, a) {
+                        		var r = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			A = [];
+                        		null != e.MonsterDropDL ? r.setReserved("MonsterDropDL", A) : (r.h.MonsterDropDL = A);
+                        		var o = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		null != e.MonsterDropDN2 ? o.setReserved("MonsterDropDN2", 0) : (o.h.MonsterDropDN2 = 0);
+                        		for (var i = 0, u = b.engine.getGameAttribute("CustomMaps"), m = null != e.MonsterDrops ? u.getReserved("MonsterDrops") : u.h.MonsterDrops, c = d.__cast(null != e[a] ? m.getReserved(a) : m.h[a], Array); i < c.length;) {
+                        			var p = c[i];
+                        			++i;
+                        			var f = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        			if ((null != e.MonsDropNum ? f.setReserved("MonsDropNum", 0) : (f.h.MonsDropNum = 0), "N/A" == p[3])) {
+                        				var y = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        				null != e.MonsDropNum ? y.setReserved("MonsDropNum", 1) : (y.h.MonsDropNum = 1);
+                        			} else {
+                        				var R = b.engine.getGameAttribute("QuestComplete"),
+                        					v = "" + g.string(p[3]),
+                        					F = R;
+                        				if (0 == (null != e[v] ? F.getReserved(v) : F.h[v])) {
+                        					var N = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        					null != e.MonsDropNum ? N.setReserved("MonsDropNum", 1) : (N.h.MonsDropNum = 1);
+                        				}
+                        			}
+                        			var _ = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        			if (1 == (null != e.MonsDropNum ? _.getReserved("MonsDropNum") : _.h.MonsDropNum)) {
+                        				if (-1 != ("" + g.string(p[0])).indexOf("SmithingRecipes") || -1 != ("" + g.string(p[0])).indexOf("TalentBook")) {
+                        					var I = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						D = p[1],
+                        						E = I,
+                        						S = Math.floor(Math.min(t._customBlock_DropOdds(s, parseNum(D)), 1));
+                        					null != e.MonsterDropDN ? E.setReserved("MonsterDropDN", S) : (E.h.MonsterDropDN = S);
+                        				} else if (-1 != ("" + g.string(p[0])).indexOf("PremiumGem") || -1 != ("" + g.string(p[0])).indexOf("Timecandy")) {
+                        					var G = h.randomFloat(),
+                        						T = p[1];
+                        					if (G < parseNum(T) * Math.pow(H._customBlock_TotalStats("Drop_Rarity"), 0.5)) {
+                        						var U = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        						null != e.MonsterDropDN ? U.setReserved("MonsterDropDN", 1) : (U.h.MonsterDropDN = 1);
+                        					} else {
+                        						var M = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        						null != e.MonsterDropDN ? M.setReserved("MonsterDropDN", 0) : (M.h.MonsterDropDN = 0);
+                        					}
+                        				} else {
+                        					var V = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						C = p[1],
+                        						B = V,
+                        						P = t._customBlock_DropOdds(s, parseNum(C));
+                        					null != e.MonsterDropDN ? B.setReserved("MonsterDropDN", P) : (B.h.MonsterDropDN = P);
+                        				}
+                        				var O = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        				if (0 != (null != e.MonsterDropDN ? O.getReserved("MonsterDropDN") : O.h.MonsterDropDN)) {
+                        					var w = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						x = [];
+                        					null != e.MonsDropDL2 ? w.setReserved("MonsDropDL2", x) : (w.h.MonsDropDL2 = x);
+                        					var Q = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        					(null != e.MonsDropDL2 ? Q.getReserved("MonsDropDL2") : Q.h.MonsDropDL2).push(p[0]);
+                        					var X = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						L = null != e.MonsDropDL2 ? X.getReserved("MonsDropDL2") : X.h.MonsDropDL2,
+                        						z = p[2],
+                        						Y = parseNum(z),
+                        						W = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Z = null != e.MonsterDropDN ? W.getReserved("MonsterDropDN") : W.h.MonsterDropDN;
+                        					L.push(Math.round(Y * parseNum(Z)));
+                        					var J = p[2],
+                        						j = parseNum(J),
+                        						q = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						K = null != e.MonsterDropDN ? q.getReserved("MonsterDropDN") : q.h.MonsterDropDN;
+                        					if (1e9 < j * parseNum(K)) {
+                        						var $ = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							ee = null != e.MonsDropDL2 ? $.getReserved("MonsDropDL2") : $.h.MonsDropDL2,
+                        							te = p[2],
+                        							ne = parseNum(te),
+                        							se = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							ae = null != e.MonsterDropDN ? se.getReserved("MonsterDropDN") : se.h.MonsterDropDN;
+                        						ee[1] = ne * parseNum(ae);
+                        					}
+                        					if (-1 != ("" + g.string(p[0])).indexOf("DropTable")) {
+                        						var re = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							Ae = p[0];
+                        						null != e.MonsDropTxt1 ? re.setReserved("MonsDropTxt1", Ae) : (re.h.MonsDropTxt1 = Ae);
+                        						var le = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							oe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							ie = le,
+                        							ue = (null != e.MonsDropDL2 ? oe.getReserved("MonsDropDL2") : oe.h.MonsDropDL2)[1];
+                        						null != e.MonsterDropDN2 ? ie.setReserved("MonsterDropDN2", ue) : (ie.h.MonsterDropDN2 = ue);
+                        						for (var ge = 0,
+                        								me = b.engine.getGameAttribute("CustomMaps"),
+                        								de = null != e.DropTables ? me.getReserved("DropTables") : me.h.DropTables,
+                        								ce = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								pe = "" + g.string(null != e.MonsDropTxt1 ? ce.getReserved("MonsDropTxt1") : ce.h.MonsDropTxt1),
+                        								he = de,
+                        								be = d.__cast(null != e[pe] ? he.getReserved(pe) : he.h[pe], Array); ge < be.length;) {
+                        							var fe = be[ge];
+                        							++ge;
+                        							var ye = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        							if ((null != e.MonsDropNum ? ye.setReserved("MonsDropNum", 0) : (ye.h.MonsDropNum = 0), "N/A" == fe[3])) {
+                        								var Re = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        								null != e.MonsDropNum ? Re.setReserved("MonsDropNum", 1) : (Re.h.MonsDropNum = 1);
+                        							} else {
+                        								var ve = b.engine.getGameAttribute("QuestComplete"),
+                        									Fe = "" + g.string(fe[3]),
+                        									Ne = ve;
+                        								if (0 == (null != e[Fe] ? Ne.getReserved(Fe) : Ne.h[Fe])) {
+                        									var _e = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        									null != e.MonsDropNum ? _e.setReserved("MonsDropNum", 1) : (_e.h.MonsDropNum = 1);
+                        								}
+                        							}
+                        							var Ie = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        							if (1 == (null != e.MonsDropNum ? Ie.getReserved("MonsDropNum") : Ie.h.MonsDropNum)) {
+                        								if (-1 != ("" + g.string(fe[0])).indexOf("SmithingRecipes") || -1 != ("" + g.string(fe[0])).indexOf("TalentBook")) {
+                        									var De = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Ee = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Se = null != e.MonsterDropDN2 ? Ee.getReserved("MonsterDropDN2") : Ee.h.MonsterDropDN2,
+                        										Ge = parseNum(Se),
+                        										Te = fe[1],
+                        										Ue = De,
+                        										Me = Math.floor(Math.min(t._customBlock_DropOdds(Ge, parseNum(Te) / Math.max(H._customBlock_TotalStats("Drop_Rarity"), 1)), 1));
+                        									null != e.MonsterDropDN ? Ue.setReserved("MonsterDropDN", Me) : (Ue.h.MonsterDropDN = Me);
+                        								} else if (-1 != ("" + g.string(fe[0])).indexOf("PremiumGem") || -1 != ("" + g.string(fe[0])).indexOf("Timecandy")) {
+                        									var Ve = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Ce = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Be = null != e.MonsterDropDN2 ? Ce.getReserved("MonsterDropDN2") : Ce.h.MonsterDropDN2,
+                        										Pe = parseNum(Be),
+                        										Oe = fe[1],
+                        										we = Ve,
+                        										ke = Math.floor(Math.min(1, t._customBlock_DropOdds(Pe, parseNum(Oe) / Math.max(H._customBlock_TotalStats("Drop_Rarity"), 1))));
+                        									null != e.MonsterDropDN ? we.setReserved("MonsterDropDN", ke) : (we.h.MonsterDropDN = ke);
+                        								} else {
+                        									var xe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Qe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Xe = null != e.MonsterDropDN2 ? Qe.getReserved("MonsterDropDN2") : Qe.h.MonsterDropDN2,
+                        										Le = parseNum(Xe),
+                        										ze = fe[1],
+                        										Ye = xe,
+                        										We = t._customBlock_DropOdds(Le,
+                        											(parseNum(ze) * (1 + t._customBlock_GetTalentNumber(1, 29) / 100)) / Math.max(H._customBlock_TotalStats("Drop_Rarity"), 1));
+                        									null != e.MonsterDropDN ? Ye.setReserved("MonsterDropDN", We) : (Ye.h.MonsterDropDN = We);
+                        								}
+                        								var Ze = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        								if (0 != (null != e.MonsterDropDN ? Ze.getReserved("MonsterDropDN") : Ze.h.MonsterDropDN)) {
+                        									var He = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Je = [];
+                        									null != e.MonsDropDL2 ? He.setReserved("MonsDropDL2", Je) : (He.h.MonsDropDL2 = Je);
+                        									var je = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        									(null != e.MonsDropDL2 ? je.getReserved("MonsDropDL2") : je.h.MonsDropDL2).push(fe[0]);
+                        									var qe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Ke = null != e.MonsDropDL2 ? qe.getReserved("MonsDropDL2") : qe.h.MonsDropDL2,
+                        										$e = fe[2],
+                        										et = null == $e ? 0 : "number" == typeof $e ? d.__cast($e, k) : "number" == typeof $e && (0 | $e) === $e ? d.__cast($e, l) : "boolean" == typeof $e ? d.__cast($e, n) ? 1 : 0 : "string" == typeof $e ? parseFloat($e) : parseFloat(g.string($e)),
+                        										tt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										nt = null != e.MonsterDropDN ? tt.getReserved("MonsterDropDN") : tt.h.MonsterDropDN;
+                        									if (
+                        										(Ke.push(Math.round(et * parseNum(nt))), -1 != ("" + g.string(fe[0])).indexOf("DropTable"))) {
+                        										var st = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        											at = fe[0];
+                        										null != e.MonsDropTxt1 ? st.setReserved("MonsDropTxt1", at) : (st.h.MonsDropTxt1 = at);
+                        										var rt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        											At = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        											lt = rt,
+                        											ot = (null != e.MonsDropDL2 ? At.getReserved("MonsDropDL2") : At.h.MonsDropDL2)[1];
+                        										null != e.MonsterDropDN2 ? lt.setReserved("MonsterDropDN2", ot) : (lt.h.MonsterDropDN2 = ot);
+                        										for (var it = 0,
+                        												ut = b.engine.getGameAttribute("CustomMaps"),
+                        												gt = null != e.DropTables ? ut.getReserved("DropTables") : ut.h.DropTables,
+                        												mt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        												dt = "" + g.string(null != e.MonsDropTxt1 ? mt.getReserved("MonsDropTxt1") : mt.h.MonsDropTxt1),
+                        												ct = gt,
+                        												pt = d.__cast(null != e[dt] ? ct.getReserved(dt) : ct.h[dt], Array); it < pt.length;) {
+                        											var ht = pt[it];
+                        											++it;
+                        											var bt = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        											if ((null != e.MonsDropNum ? bt.setReserved("MonsDropNum", 0) : (bt.h.MonsDropNum = 0), "N/A" == ht[3])) {
+                        												var ft = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        												null != e.MonsDropNum ? ft.setReserved("MonsDropNum", 1) : (ft.h.MonsDropNum = 1);
+                        											} else {
+                        												var yt = b.engine.getGameAttribute("QuestComplete"),
+                        													Rt = "" + g.string(ht[3]),
+                        													vt = yt;
+                        												if (0 == (null != e[Rt] ? vt.getReserved(Rt) : vt.h[Rt])) {
+                        													var Ft = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        													null != e.MonsDropNum ? Ft.setReserved("MonsDropNum", 1) : (Ft.h.MonsDropNum = 1);
+                        												}
+                        											}
+                        											var Nt = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        											if (1 == (null != e.MonsDropNum ? Nt.getReserved("MonsDropNum") : Nt.h.MonsDropNum)) {
+                        												if (-1 != ("" + g.string(ht[0])).indexOf("SmithingRecipes") || -1 != ("" + g.string(ht[0])).indexOf("TalentBook")) {
+                        													var _t = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        														It = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        														Dt = null != e.MonsterDropDN2 ? It.getReserved("MonsterDropDN2") : It.h.MonsterDropDN2,
+                        														Et = parseNum(Dt),
+                        														St = ht[1],
+                        														Gt = _t,
+                        														Tt = Math.floor(Math.min(t._customBlock_DropOdds(Et, parseNum(St) / Math.max(H._customBlock_TotalStats("Drop_Rarity"), 1)), 1));
+                        													null != e.MonsterDropDN ? Gt.setReserved("MonsterDropDN", Tt) : (Gt.h.MonsterDropDN = Tt);
+                        												} else if (-1 != ("" + g.string(ht[0])).indexOf("PremiumGem") || -1 != ("" + g.string(ht[0])).indexOf("Timecandy")) {
+                        													var Ut = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        														Mt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        														Vt = null != e.MonsterDropDN2 ? Mt.getReserved("MonsterDropDN2") : Mt.h.MonsterDropDN2,
+                        														Ct = parseNum(Vt),
+                        														Bt = ht[1],
+                        														Pt = Ut,
+                        														Ot = Math.floor(Math.min(1, t._customBlock_DropOdds(Ct, parseNum(Bt) / Math.max(H._customBlock_TotalStats("Drop_Rarity"), 1))));
+                        													null != e.MonsterDropDN ? Pt.setReserved("MonsterDropDN", Ot) : (Pt.h.MonsterDropDN = Ot);
+                        												} else {
+                        													var wt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        														kt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        														xt = null != e.MonsterDropDN2 ? kt.getReserved("MonsterDropDN2") : kt.h.MonsterDropDN2,
+                        														Qt = parseNum(xt),
+                        														Xt = ht[1],
+                        														Lt = wt,
+                        														zt = t._customBlock_DropOdds(Qt, parseNum(Xt) / Math.max(H._customBlock_TotalStats("Drop_Rarity"), 1));
+                        													null != e.MonsterDropDN ? Lt.setReserved("MonsterDropDN", zt) : (Lt.h.MonsterDropDN = zt);
+                        												}
+                        												var Yt = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        												if (0 != (null != e.MonsterDropDN ? Yt.getReserved("MonsterDropDN") : Yt.h.MonsterDropDN)) {
+                        													var Wt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        														Zt = [];
+                        													null != e.MonsDropDL2 ? Wt.setReserved("MonsDropDL2", Zt) : (Wt.h.MonsDropDL2 = Zt);
+                        													var Ht = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        													(null != e.MonsDropDL2 ? Ht.getReserved("MonsDropDL2") : Ht.h.MonsDropDL2).push(ht[0]);
+                        													var Jt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        														jt = null != e.MonsDropDL2 ? Jt.getReserved("MonsDropDL2") : Jt.h.MonsDropDL2,
+                        														qt = ht[2],
+                        														Kt = parseNum(qt),
+                        														$t = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        														en = null != e.MonsterDropDN ? $t.getReserved("MonsterDropDN") : $t.h.MonsterDropDN;
+                        													jt.push(Math.round(Kt * parseNum(en)));
+                        													for (var tn = 0,
+                        															nn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        															sn = d.__cast(null != e.MonsterDropDL ? nn.getReserved("MonsterDropDL") : nn.h.MonsterDropDL, Array); tn < sn.length;) {
+                        														var an = sn[tn];
+                        														++tn;
+                        														var rn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        														if ((null != e.MonsDropDL2 ? rn.getReserved("MonsDropDL2") : rn.h.MonsDropDL2)[0] == an[0]) {
+                        															if (-1 == ("" + g.string(an[0])).indexOf("SmithingRecipes") && -1 == ("" + g.string(an[0])).indexOf("TalentBook")) {
+                        																var An = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        																	ln = (null != e.MonsDropDL2 ? An.getReserved("MonsDropDL2") : An.h.MonsDropDL2)[1],
+                        																	on = parseNum(ln),
+                        																	un = an[1];
+                        																an[1] = Math.round(on + parseNum(un));
+                        															}
+                        															var gn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        															(null != e.MonsDropDL2 ? gn.getReserved("MonsDropDL2") : gn.h.MonsDropDL2)[1] = -1;
+                        														}
+                        													}
+                        													var mn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        													if (-1 != (null != e.MonsDropDL2 ? mn.getReserved("MonsDropDL2") : mn.h.MonsDropDL2)[1]) {
+                        														var dn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        															cn = null != e.MonsterDropDL ? dn.getReserved("MonsterDropDL") : dn.h.MonsterDropDL,
+                        															pn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        														cn.push(null != e.MonsDropDL2 ? pn.getReserved("MonsDropDL2") : pn.h.MonsDropDL2);
+                        													}
+                        												}
+                        											}
+                        										}
+                        									} else {
+                        										for (var hn = 0, bn = b.engine.getGameAttribute("DummyNumbersStatManager"), fn = d.__cast(null != e.MonsterDropDL ? bn.getReserved("MonsterDropDL") : bn.h.MonsterDropDL, Array); hn < fn.length;) {
+                        											var yn = fn[hn];
+                        											++hn;
+                        											var Rn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        											if ((null != e.MonsDropDL2 ? Rn.getReserved("MonsDropDL2") : Rn.h.MonsDropDL2)[0] == yn[0]) {
+                        												if (-1 == ("" + g.string(yn[0])).indexOf("SmithingRecipes") && -1 == ("" + g.string(yn[0])).indexOf("TalentBook")) {
+                        													var vn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        														Fn = (null != e.MonsDropDL2 ? vn.getReserved("MonsDropDL2") : vn.h.MonsDropDL2)[1],
+                        														Nn = parseNum(Fn),
+                        														_n = yn[1];
+                        													yn[1] = Math.round(Nn + parseNum(_n));
+                        												}
+                        												var In = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        												(null != e.MonsDropDL2 ? In.getReserved("MonsDropDL2") : In.h.MonsDropDL2)[1] = -1;
+                        											}
+                        										}
+                        										var Dn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        										if (-1 != (null != e.MonsDropDL2 ? Dn.getReserved("MonsDropDL2") : Dn.h.MonsDropDL2)[1]) {
+                        											var En = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        												Sn = null != e.MonsterDropDL ? En.getReserved("MonsterDropDL") : En.h.MonsterDropDL,
+                        												Gn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        											Sn.push(null != e.MonsDropDL2 ? Gn.getReserved("MonsDropDL2") : Gn.h.MonsDropDL2);
+                        										}
+                        									}
+                        								}
+                        							}
+                        						}
+                        					} else {
+                        						if ("COIN" == p[0]) {
+                        							var Tn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								Un = (null != e.MonsDropDL2 ? Tn.getReserved("MonsDropDL2") : Tn.h.MonsDropDL2)[1];
+                        							if (1e9 < parseNum(Un)) {
+                        								var Mn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									Vn = null != e.MonsDropDL2 ? Mn.getReserved("MonsDropDL2") : Mn.h.MonsDropDL2,
+                        									Cn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									Bn = (null != e.MonsDropDL2 ? Cn.getReserved("MonsDropDL2") : Cn.h.MonsDropDL2)[1];
+                        								Vn[1] = parseNum(Bn) * (h.randomFloat() + 0.5) * H._customBlock_ArbitraryCode("MonsterCash") + 0.01;
+                        							} else {
+                        								var Pn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									On = null != e.MonsDropDL2 ? Pn.getReserved("MonsDropDL2") : Pn.h.MonsDropDL2,
+                        									wn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									kn = (null != e.MonsDropDL2 ? wn.getReserved("MonsDropDL2") : wn.h.MonsDropDL2)[1];
+                        								On[1] = Math.ceil(parseNum(kn) * (h.randomFloat() + 0.5) * H._customBlock_ArbitraryCode("MonsterCash"));
+                        							}
+                        						}
+                        						for (var xn = 0, Qn = b.engine.getGameAttribute("DummyNumbersStatManager"), Xn = d.__cast(null != e.MonsterDropDL ? Qn.getReserved("MonsterDropDL") : Qn.h.MonsterDropDL, Array); xn < Xn.length;) {
+                        							var Ln = Xn[xn];
+                        							++xn;
+                        							var zn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        							if ((null != e.MonsDropDL2 ? zn.getReserved("MonsDropDL2") : zn.h.MonsDropDL2)[0] == Ln[0]) {
+                        								if (-1 == ("" + g.string(Ln[0])).indexOf("SmithingRecipes") && -1 == ("" + g.string(Ln[0])).indexOf("TalentBook")) {
+                        									var Yn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Wn = (null != e.MonsDropDL2 ? Yn.getReserved("MonsDropDL2") : Yn.h.MonsDropDL2)[1],
+                        										Zn = parseNum(Wn),
+                        										Hn = Ln[1];
+                        									Ln[1] = Math.round(Zn + parseNum(Hn));
+                        								}
+                        								var Jn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        								(null != e.MonsDropDL2 ? Jn.getReserved("MonsDropDL2") : Jn.h.MonsDropDL2)[1] = -1;
+                        							}
+                        						}
+                        						var jn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        						if (-1 != (null != e.MonsDropDL2 ? jn.getReserved("MonsDropDL2") : jn.h.MonsDropDL2)[1]) {
+                        							var qn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								Kn = null != e.MonsterDropDL ? qn.getReserved("MonsterDropDL") : qn.h.MonsterDropDL,
+                        								$n = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        							Kn.push(null != e.MonsDropDL2 ? $n.getReserved("MonsDropDL2") : $n.h.MonsDropDL2);
+                        						}
+                        					}
+                        				}
+                        			}
+                        		}
+                        		for (var es = 0, ts = b.engine.getGameAttribute("DummyNumbersStatManager"), ns = d.__cast(null != e.MonsterDropDL ? ts.getReserved("MonsterDropDL") : ts.h.MonsterDropDL, Array); es < ns.length;) {
+                        			var ss = ns[es];
+                        			if ((++es, "COIN" == ss[0])) {
+                        				var as = ss[1];
+                        				ss[1] = parseNum(as) + 0.01;
+                        			}
+                        		}
+                        		var rs = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		return null != e.MonsterDropDL ? rs.getReserved("MonsterDropDL") : rs.h.MonsterDropDL;
+                        	}

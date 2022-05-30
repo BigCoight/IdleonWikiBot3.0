@@ -1,0 +1,14 @@
+                        (t._customBlock_killmonsterQuest = function(t, s) {
+                        		var a = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Tiki_Chief3 ? a.getReserved("Tiki_Chief3") : a.h.Tiki_Chief3) && "goblinG" == t) {
+                        			(a = b.engine.getGameAttribute("QuestStatus")), (a = null != e.Tiki_Chief3 ? a.getReserved("Tiki_Chief3") : a.h.Tiki_Chief3);
+                        			var r = b.engine.getGameAttribute("QuestStatus");
+                        			(r = (null != e.Tiki_Chief3 ? r.getReserved("Tiki_Chief3") : r.h.Tiki_Chief3)[0]),
+                        			(a[0] = parseNum(r) + s);
+                        		}
+                        		U._customBlock_TaskProgress(0, 0, "add", s), "poopSmall" == t ? 0 == b.engine.getGameAttribute("Tasks")[5][0] && U._customBlock_TaskProgress(0, 8, "add", 1) : "moonman" == t ? ((t = b.engine.getGameAttribute("QuestComplete")), 0 == (null != e.Djonnut2 ? t.getReserved("Djonnut2") : t.h.Djonnut2) && ((t = b.engine.getGameAttribute("QuestStatus")),
+                        			(t = null != e.Djonnut2 ? t.getReserved("Djonnut2") : t.h.Djonnut2),
+                        			(a = b.engine.getGameAttribute("QuestStatus")),
+                        			(a = (null != e.Djonnut2 ? a.getReserved("Djonnut2") : a.h.Djonnut2)[0]),
+                        			(t[0] = parseNum(a) + s))) : "goblinGTD" == t ? (4 == b.engine.getGameAttribute("Tasks")[5][2] || 11 == b.engine.getGameAttribute("Tasks")[5][2]) && U._customBlock_TaskProgress(2, 8, "add", 1) : "moonmanTD" == t ? (5 == b.engine.getGameAttribute("Tasks")[5][2] || 11 == b.engine.getGameAttribute("Tasks")[5][2]) && U._customBlock_TaskProgress(2, 8, "add", 1) : "acornTD" == t ? (6 == b.engine.getGameAttribute("Tasks")[5][2] || 11 == b.engine.getGameAttribute("Tasks")[5][2]) && U._customBlock_TaskProgress(2, 8, "add", 1) : "snowballTD" == t && (7 == b.engine.getGameAttribute("Tasks")[5][2] || 11 == b.engine.getGameAttribute("Tasks")[5][2]) && U._customBlock_TaskProgress(2, 8, "add", 1);
+                        	}

@@ -1,0 +1,10 @@
+                        (A._customBlock_MealBonus = function(s) {
+                        		var a = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.MealBonusesS ? !a.existsReserved("MealBonusesS") : !a.h.hasOwnProperty("MealBonusesS")) {
+                        			var r = b.engine;
+                        			(a = t._customBlock_TalentCalc(-6)), (r = r.gameAttributes), null != e.DummyNumber4 ? r.setReserved("DummyNumber4", a) : (r.h.DummyNumber4 = a);
+                        		}
+                        		return (
+                        			(a = b.engine.getGameAttribute("DNSM")),
+                        			(a = null != e.MealBonusesS ? a.getReserved("MealBonusesS") : a.h.MealBonusesS), null == (s = null != e[s] ? a.getReserved(s) : a.h[s]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)));
+                        	}

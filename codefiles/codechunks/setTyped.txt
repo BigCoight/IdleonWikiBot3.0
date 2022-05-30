@@ -1,0 +1,3 @@
+                        (n.setTyped = function(e) {
+                        		e ? ((n.Buf8 = Uint8Array), (n.Buf16 = Uint16Array), (n.Buf32 = Int32Array), n.assign(n, s)) : ((n.Buf8 = Array), (n.Buf16 = Array), (n.Buf32 = Array), n.assign(n, a));
+                        	}

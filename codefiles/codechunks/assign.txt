@@ -1,0 +1,10 @@
+                            (n.assign = function(e) {
+                            		for (var t = Array.prototype.slice.call(arguments, 1); t.length;) {
+                            			var n = t.shift();
+                            			if (n) {
+                            				if ("object" != typeof n) throw new TypeError(n + "must be non-object");
+                            				for (var s in n) n.hasOwnProperty(s) && (e[s] = n[s]);
+                            			}
+                            		}
+                            		return e;
+                            	}

@@ -1,0 +1,23 @@
+                        (A._customBlock_MonsterDamage = function(s) {
+                        		var a = b.engine.getGameAttribute("DNSM"),
+                        			r = H._customBlock_TotalStats("Defence");
+                        		null != e.MonsterDmgRedux2 ? a.setReserved("MonsterDmgRedux2", r) : (a.h.MonsterDmgRedux2 = r),
+                        			(a = b.engine.getGameAttribute("DNSM")),
+                        			(r = b.engine.getGameAttribute("DNSM")),
+                        			(r = null != e.MonsterDmgRedux2 ? r.getReserved("MonsterDmgRedux2") : r.h.MonsterDmgRedux2),
+                        			(r = s - 2.5 * Math.pow(parseNum(r), 0.8));
+                        		var A = b.engine.getGameAttribute("DNSM");
+                        		(A = null != e.MonsterDmgRedux2 ? A.getReserved("MonsterDmgRedux2") : A.h.MonsterDmgRedux2),
+                        		(A = Math.pow(parseNum(A), 1.5) / 100);
+                        		var o = b.engine.getGameAttribute("DNSM");
+                        		return (
+                        			(o = null != e.MonsterDmgRedux2 ? o.getReserved("MonsterDmgRedux2") : o.h.MonsterDmgRedux2),
+                        			(s = r / Math.max(1 + A * (parseNum(o) / Math.max(s, 1)), 1)), null != e.MonsterDmgRedux ? a.setReserved("MonsterDmgRedux", s) : (a.h.MonsterDmgRedux = s), 0 != H._customBlock_GetBuffBonuses(108, 1) && ((s = b.engine.getGameAttribute("DNSM")),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = 2 * (null == (a = null != e.MonsterDmgRedux ? a.getReserved("MonsterDmgRedux") : a.h.MonsterDmgRedux) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)))), null != e.MonsterDmgRedux ? s.setReserved("MonsterDmgRedux", a) : (s.h.MonsterDmgRedux = a)), 0 != H._customBlock_GetBuffBonuses(122, 1) && ((s = b.engine.getGameAttribute("DNSM")),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = (null == (a = null != e.MonsterDmgRedux ? a.getReserved("MonsterDmgRedux") : a.h.MonsterDmgRedux) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) * Math.max(0.05, 1 - t._customBlock_GetTalentNumber(1, 122) / 100)), null != e.MonsterDmgRedux ? s.setReserved("MonsterDmgRedux", a) : (s.h.MonsterDmgRedux = a)),
+                        			(s = b.engine.getGameAttribute("DNSM")), 0.5 > (null == (s = null != e.MonsterDmgRedux ? s.getReserved("MonsterDmgRedux") : s.h.MonsterDmgRedux) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) && ((s = b.engine.getGameAttribute("DNSM")), null != e.MonsterDmgRedux ? s.setReserved("MonsterDmgRedux", 0) : (s.h.MonsterDmgRedux = 0)),
+                        			(s = b.engine.getGameAttribute("DNSM")),
+                        			(s = null != e.MonsterDmgRedux ? s.getReserved("MonsterDmgRedux") : s.h.MonsterDmgRedux), Math.max(Math.ceil(parseNum(s)), 0));
+                        	}

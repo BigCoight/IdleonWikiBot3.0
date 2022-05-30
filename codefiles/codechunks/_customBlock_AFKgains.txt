@@ -1,0 +1,682 @@
+                        (A._customBlock_AFKgains = function(s, a) {
+                        		var r = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			o = new p();
+                        		null != e.AFKrewMapz ? r.setReserved("AFKrewMapz", o) : (r.h.AFKrewMapz = o);
+                        		var i = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			u = [];
+                        		null != e.AFKrewDL1 ? i.setReserved("AFKrewDL1", u) : (i.h.AFKrewDL1 = u);
+                        		var m = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		null != e.AFKrewDN1 ? m.setReserved("AFKrewDN1", 0) : (m.h.AFKrewDN1 = 0);
+                        		var c = b.engine.getGameAttribute("TimeAway"),
+                        			f = null != e.Player ? c.getReserved("Player") : c.h.Player;
+                        		if (1e4 > parseNum(f)) {
+                        			var y = b.engine.getGameAttribute("TimeAway"),
+                        				R = b.engine.getGameAttribute("TimeAway"),
+                        				v = null != e.GlobalTime ? R.getReserved("GlobalTime") : R.h.GlobalTime;
+                        			null != e.Player ? y.setReserved("Player", v) : (y.h.Player = v);
+                        		}
+                        		var F = b.engine.getGameAttribute("TimeAway"),
+                        			N = null != e.GlobalTime ? F.getReserved("GlobalTime") : F.h.GlobalTime,
+                        			_ = parseNum(N),
+                        			I = b.engine.getGameAttribute("TimeAway"),
+                        			D = null != e.Player ? I.getReserved("Player") : I.h.Player;
+                        		if (1e8 < _ - parseNum(D)) {
+                        			var E = b.engine.getGameAttribute("TimeAway"),
+                        				S = b.engine.getGameAttribute("TimeAway"),
+                        				G = null != e.GlobalTime ? S.getReserved("GlobalTime") : S.h.GlobalTime;
+                        			null != e.Player ? E.setReserved("Player", G) : (E.h.Player = G);
+                        		}
+                        		var T = b.engine.getGameAttribute("TimeAway"),
+                        			U = null != e.GlobalTime ? T.getReserved("GlobalTime") : T.h.GlobalTime,
+                        			M = parseNum(U),
+                        			V = b.engine.getGameAttribute("TimeAway"),
+                        			C = null != e.Player ? V.getReserved("Player") : V.h.Player;
+                        		if (120 < M - parseNum(C)) {
+                        			var B = b.engine.getGameAttribute("TimeAway"),
+                        				P = null != e.GlobalTime ? B.getReserved("GlobalTime") : B.h.GlobalTime,
+                        				O = parseNum(P),
+                        				x = b.engine.getGameAttribute("TimeAway"),
+                        				Q = null != e.Player ? x.getReserved("Player") : x.h.Player;
+                        			A._customBlock_AFKcode("AnvilPA", O - parseNum(Q));
+                        			var X = b.engine.getGameAttribute("PlayerStuff"),
+                        				L = b.engine.getGameAttribute("PlayerStuff")[0],
+                        				z = parseNum(L),
+                        				Y = H._customBlock_SkillStats("WorshipSpeed"),
+                        				W = b.engine.getGameAttribute("TimeAway"),
+                        				Z = null != e.GlobalTime ? W.getReserved("GlobalTime") : W.h.GlobalTime,
+                        				J = parseNum(Z),
+                        				j = b.engine.getGameAttribute("TimeAway"),
+                        				q = null != e.Player ? j.getReserved("Player") : j.h.Player;
+                        			X[0] = Math.min(z + Y * ((J - parseNum(q)) / 3600), H._customBlock_SkillStats("WorshipChargeMax"));
+                        		}
+                        		if ("FIGHTING" == s) {
+                        			var K = b.engine.getGameAttribute("TimeAway"),
+                        				$ = null != e.GlobalTime ? K.getReserved("GlobalTime") : K.h.GlobalTime,
+                        				ee = null == $ ? 0 : "number" == typeof $ ? d.__cast($, k) : "number" == typeof $ && (0 | $) === $ ? d.__cast($, l) : "boolean" == typeof $ ? d.__cast($, n) ? 1 : 0 : "string" == typeof $ ? parseFloat($) : parseFloat(g.string($)),
+                        				te = b.engine.getGameAttribute("TimeAway"),
+                        				ne = null != e.Player ? te.getReserved("Player") : te.h.Player;
+                        			if (120 < ee - parseNum(ne)) {
+                        				var se = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ae = null != e.AFKrewMapz ? se.getReserved("AFKrewMapz") : se.h.AFKrewMapz,
+                        					re = b.engine.getGameAttribute("TimeAway"),
+                        					Ae = null != e.GlobalTime ? re.getReserved("GlobalTime") : re.h.GlobalTime,
+                        					le = parseNum(Ae),
+                        					oe = b.engine.getGameAttribute("TimeAway"),
+                        					ie = null != e.Player ? oe.getReserved("Player") : oe.h.Player,
+                        					ue = Math.round(le - parseNum(ie));
+                        				if ((null != e.Time ? ae.setReserved("Time", ue) : (ae.h.Time = ue), 2 < w._customBlock_prayersReal(2, 1))) {
+                        					var ge = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						me = null != e.AFKrewMapz ? ge.getReserved("AFKrewMapz") : ge.h.AFKrewMapz,
+                        						de = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						ce = null != e.AFKrewMapz ? de.getReserved("AFKrewMapz") : de.h.AFKrewMapz,
+                        						pe = null != e.Time ? ce.getReserved("Time") : ce.h.Time,
+                        						he = Math.min(parseNum(pe), 36e3);
+                        					null != e.Time ? me.setReserved("Time", he) : (me.h.Time = he);
+                        				}
+                        				var be = b.engine.getGameAttribute("DNSM"),
+                        					fe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ye = null != e.AFKrewMapz ? fe.getReserved("AFKrewMapz") : fe.h.AFKrewMapz,
+                        					Re = null != e.Time ? ye.getReserved("Time") : ye.h.Time,
+                        					ve = A._customBlock_AFKfoodsTimeRedux("Fighting", parseNum(Re));
+                        				null != e.FoodUseCoeffzz ? be.setReserved("FoodUseCoeffzz", ve) : (be.h.FoodUseCoeffzz = ve);
+                        				var Fe = b.engine.getGameAttribute("DNSM"),
+                        					Ne = null != e.FoodUseCoeffzz ? Fe.getReserved("FoodUseCoeffzz") : Fe.h.FoodUseCoeffzz;
+                        				if (2e9 > parseNum(Ne) * t._customBlock_AFKgainrates("Fighting") * H._customBlock_ArbitraryCode("KillPerKill")) {
+                        					var _e = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Ie = null != e.AFKrewMapz ? _e.getReserved("AFKrewMapz") : _e.h.AFKrewMapz,
+                        						De = b.engine.getGameAttribute("DNSM"),
+                        						Ee = null != e.FoodUseCoeffzz ? De.getReserved("FoodUseCoeffzz") : De.h.FoodUseCoeffzz,
+                        						Se = Math.floor(parseNum(Ee) * t._customBlock_AFKgainrates("Fighting") * H._customBlock_ArbitraryCode("KillPerKill"));
+                        					null != e.Kills ? Ie.setReserved("Kills", Se) : (Ie.h.Kills = Se);
+                        				} else {
+                        					var Ge = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Te = null != e.AFKrewMapz ? Ge.getReserved("AFKrewMapz") : Ge.h.AFKrewMapz,
+                        						Ue = b.engine.getGameAttribute("DNSM"),
+                        						Me = null != e.FoodUseCoeffzz ? Ue.getReserved("FoodUseCoeffzz") : Ue.h.FoodUseCoeffzz,
+                        						Ve = parseNum(Me) * t._customBlock_AFKgainrates("Fighting") * H._customBlock_ArbitraryCode("KillPerKill");
+                        					null != e.Kills ? Te.setReserved("Kills", Ve) : (Te.h.Kills = Ve);
+                        				}
+                        				var Ce = b.engine.getGameAttribute("DNSM"),
+                        					Be = null != e.FoodUseCoeffzz ? Ce.getReserved("FoodUseCoeffzz") : Ce.h.FoodUseCoeffzz,
+                        					Pe = parseNum(Be) * t._customBlock_AFKgainrates("Fighting"),
+                        					Oe = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					we = b.engine.getGameAttribute("AFKtarget"),
+                        					ke = null != e[we] ? Oe.getReserved(we) : Oe.h[we],
+                        					xe = null != e.ExpGiven ? ke.getReserved("ExpGiven") : ke.h.ExpGiven,
+                        					Qe = parseNum(xe),
+                        					Xe = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					Le = b.engine.getGameAttribute("AFKtarget"),
+                        					ze = null != e[Le] ? Xe.getReserved(Le) : Xe.h[Le],
+                        					Ye = null != e.ExpType ? ze.getReserved("ExpType") : ze.h.ExpType;
+                        				if (2e9 > Pe * Qe * H._customBlock_ExpMulti(parseNum(Ye))) {
+                        					var We = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Ze = null != e.AFKrewMapz ? We.getReserved("AFKrewMapz") : We.h.AFKrewMapz,
+                        						He = b.engine.getGameAttribute("DNSM"),
+                        						Je = null != e.FoodUseCoeffzz ? He.getReserved("FoodUseCoeffzz") : He.h.FoodUseCoeffzz,
+                        						je = parseNum(Je) * t._customBlock_AFKgainrates("Fighting"),
+                        						qe = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						Ke = b.engine.getGameAttribute("AFKtarget"),
+                        						$e = null != e[Ke] ? qe.getReserved(Ke) : qe.h[Ke],
+                        						et = null != e.ExpGiven ? $e.getReserved("ExpGiven") : $e.h.ExpGiven,
+                        						tt = parseNum(et),
+                        						nt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						st = b.engine.getGameAttribute("AFKtarget"),
+                        						at = null != e[st] ? nt.getReserved(st) : nt.h[st],
+                        						rt = null != e.ExpType ? at.getReserved("ExpType") : at.h.ExpType,
+                        						At = Math.floor(je * tt * H._customBlock_ExpMulti(parseNum(rt)));
+                        					null != e.Main_Exp ? Ze.setReserved("Main_Exp", At) : (Ze.h.Main_Exp = At);
+                        				} else {
+                        					var lt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						ot = null != e.AFKrewMapz ? lt.getReserved("AFKrewMapz") : lt.h.AFKrewMapz,
+                        						it = b.engine.getGameAttribute("DNSM"),
+                        						ut = null != e.FoodUseCoeffzz ? it.getReserved("FoodUseCoeffzz") : it.h.FoodUseCoeffzz,
+                        						gt = parseNum(ut) * t._customBlock_AFKgainrates("Fighting"),
+                        						mt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						dt = b.engine.getGameAttribute("AFKtarget"),
+                        						ct = null != e[dt] ? mt.getReserved(dt) : mt.h[dt],
+                        						pt = null != e.ExpGiven ? ct.getReserved("ExpGiven") : ct.h.ExpGiven,
+                        						ht = parseNum(pt),
+                        						bt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						ft = b.engine.getGameAttribute("AFKtarget"),
+                        						yt = null != e[ft] ? bt.getReserved(ft) : bt.h[ft],
+                        						Rt = null != e.ExpType ? yt.getReserved("ExpType") : yt.h.ExpType,
+                        						vt = gt * ht * H._customBlock_ExpMulti(parseNum(Rt));
+                        					null != e.Main_Exp ? ot.setReserved("Main_Exp", vt) : (ot.h.Main_Exp = vt);
+                        				}
+                        				var Ft = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Nt = b.engine.getGameAttribute("DNSM"),
+                        					_t = null != e.FoodUseCoeffzz ? Nt.getReserved("FoodUseCoeffzz") : Nt.h.FoodUseCoeffzz,
+                        					It = H._customBlock_GenerateMonsterDrops(Math.floor(parseNum(_t) * t._customBlock_AFKgainrates("Fighting")), b.engine.getGameAttribute("AFKtarget"));
+                        				null != e.AFKrewDL1 ? Ft.setReserved("AFKrewDL1", It) : (Ft.h.AFKrewDL1 = It);
+                        				for (var Dt = 0, Et = b.engine.getGameAttribute("DummyNumbersStatManager"), St = d.__cast(null != e.AFKrewDL1 ? Et.getReserved("AFKrewDL1") : Et.h.AFKrewDL1, Array); Dt < St.length;) {
+                        					var Gt = St[Dt];
+                        					++Dt;
+                        					var Tt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Ut = null != e.AFKrewMapz ? Tt.getReserved("AFKrewMapz") : Tt.h.AFKrewMapz,
+                        						Mt = "" + g.string(Gt[0]),
+                        						Vt = Ut,
+                        						Ct = Gt[1];
+                        					null != e[Mt] ? Vt.setReserved(Mt, Ct) : (Vt.h[Mt] = Ct);
+                        				}
+                        				var Bt = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        				null != e["%_Chance_for_a_Card"] ? Bt.setReserved("%_Chance_for_a_Card", 777) : (Bt.h["%_Chance_for_a_Card"] = 777);
+                        			}
+                        		} else if ("MINING" == s) {
+                        			var Pt = b.engine.getGameAttribute("TimeAway"),
+                        				Ot = null != e.GlobalTime ? Pt.getReserved("GlobalTime") : Pt.h.GlobalTime,
+                        				wt = parseNum(Ot),
+                        				kt = b.engine.getGameAttribute("TimeAway"),
+                        				xt = null != e.Player ? kt.getReserved("Player") : kt.h.Player;
+                        			if (120 < wt - parseNum(xt)) {
+                        				var Qt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Xt = null != e.AFKrewMapz ? Qt.getReserved("AFKrewMapz") : Qt.h.AFKrewMapz,
+                        					Lt = b.engine.getGameAttribute("TimeAway"),
+                        					zt = null != e.GlobalTime ? Lt.getReserved("GlobalTime") : Lt.h.GlobalTime,
+                        					Yt = parseNum(zt),
+                        					Wt = b.engine.getGameAttribute("TimeAway"),
+                        					Zt = null != e.Player ? Wt.getReserved("Player") : Wt.h.Player,
+                        					Ht = Math.round(Yt - parseNum(Zt));
+                        				if ((null != e.Time ? Xt.setReserved("Time", Ht) : (Xt.h.Time = Ht), 2 < w._customBlock_prayersReal(2, 1))) {
+                        					var Jt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						jt = null != e.AFKrewMapz ? Jt.getReserved("AFKrewMapz") : Jt.h.AFKrewMapz,
+                        						qt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Kt = null != e.AFKrewMapz ? qt.getReserved("AFKrewMapz") : qt.h.AFKrewMapz,
+                        						$t = null != e.Time ? Kt.getReserved("Time") : Kt.h.Time,
+                        						en = Math.min(null == $t ? 0 : "number" == typeof $t ? d.__cast($t, k) : "number" == typeof $t && (0 | $t) === $t ? d.__cast($t, l) : "boolean" == typeof $t ? d.__cast($t, n) ? 1 : 0 : "string" == typeof $t ? parseFloat($t) : parseFloat(g.string($t)), 36e3);
+                        					null != e.Time ? jt.setReserved("Time", en) : (jt.h.Time = en);
+                        				}
+                        				var tn = b.engine.getGameAttribute("DNSM"),
+                        					nn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					sn = null != e.AFKrewMapz ? nn.getReserved("AFKrewMapz") : nn.h.AFKrewMapz,
+                        					an = null != e.Time ? sn.getReserved("Time") : sn.h.Time,
+                        					rn = A._customBlock_AFKfoodsTimeRedux("Mining", parseNum(an));
+                        				null != e.FoodUseCoeffzz ? tn.setReserved("FoodUseCoeffzz", rn) : (tn.h.FoodUseCoeffzz = rn);
+                        				var An = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ln = null != e.AFKrewMapz ? An.getReserved("AFKrewMapz") : An.h.AFKrewMapz,
+                        					on = b.engine.getGameAttribute("AFKtarget"),
+                        					un = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					gn = null != e.AFKrewMapz ? un.getReserved("AFKrewMapz") : un.h.AFKrewMapz,
+                        					mn = null != e.Time ? gn.getReserved("Time") : gn.h.Time,
+                        					dn = Math.floor(
+                        						(parseNum(mn) / 3600) * Math.floor(t._customBlock_HourlyKillRate("Mining") * t._customBlock_AFKgainrates("Mining") * (1 + H._customBlock_SkillStats("MiningMultiOre") / 100) * H._customBlock_SkillStats("MiningOreValue")));
+                        				null != e[on] ? ln.setReserved(on, dn) : (ln.h[on] = dn);
+                        				var cn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					pn = null != e.AFKrewMapz ? cn.getReserved("AFKrewMapz") : cn.h.AFKrewMapz,
+                        					hn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					bn = null != e.AFKrewMapz ? hn.getReserved("AFKrewMapz") : hn.h.AFKrewMapz,
+                        					fn = null != e.Time ? bn.getReserved("Time") : bn.h.Time,
+                        					yn = (parseNum(fn) / 3600) * t._customBlock_HourlyKillRate("Mining") * t._customBlock_AFKgainrates("Mining"),
+                        					Rn = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					vn = b.engine.getGameAttribute("AFKtarget"),
+                        					Fn = null != e[vn] ? Rn.getReserved(vn) : Rn.h[vn],
+                        					Nn = null != e.ExpGiven ? Fn.getReserved("ExpGiven") : Fn.h.ExpGiven,
+                        					_n = parseNum(Nn),
+                        					In = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					Dn = b.engine.getGameAttribute("AFKtarget"),
+                        					En = null != e[Dn] ? In.getReserved(Dn) : In.h[Dn],
+                        					Sn = null != e.ExpType ? En.getReserved("ExpType") : En.h.ExpType,
+                        					Gn = Math.floor(yn * _n * H._customBlock_ExpMulti(parseNum(Sn)));
+                        				null != e.Mining_Exp ? pn.setReserved("Mining_Exp", Gn) : (pn.h.Mining_Exp = Gn);
+                        				var Tn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Un = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Mn = null != e.AFKrewMapz ? Un.getReserved("AFKrewMapz") : Un.h.AFKrewMapz,
+                        					Vn = null != e.Time ? Mn.getReserved("Time") : Mn.h.Time,
+                        					Cn = H._customBlock_GenerateMonsterDrops(Math.floor(
+                        						(parseNum(Vn) / 3600) * t._customBlock_HourlyKillRate("Mining") * t._customBlock_AFKgainrates("Mining")), b.engine.getGameAttribute("AFKtarget"));
+                        				null != e.AFKrewDL1 ? Tn.setReserved("AFKrewDL1", Cn) : (Tn.h.AFKrewDL1 = Cn);
+                        				for (var Bn = 0, Pn = b.engine.getGameAttribute("DummyNumbersStatManager"), On = d.__cast(null != e.AFKrewDL1 ? Pn.getReserved("AFKrewDL1") : Pn.h.AFKrewDL1, Array); Bn < On.length;) {
+                        					var wn = On[Bn];
+                        					++Bn;
+                        					var kn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						xn = null != e.AFKrewMapz ? kn.getReserved("AFKrewMapz") : kn.h.AFKrewMapz,
+                        						Qn = "" + g.string(wn[0]),
+                        						Xn = xn,
+                        						Ln = wn[1];
+                        					null != e[Qn] ? Xn.setReserved(Qn, Ln) : (Xn.h[Qn] = Ln);
+                        				}
+                        				var zn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Yn = null != e.AFKrewMapz ? zn.getReserved("AFKrewMapz") : zn.h.AFKrewMapz;
+                        				null != e["%_Chance_for_a_Card"] ? Yn.setReserved("%_Chance_for_a_Card", 777) : (Yn.h["%_Chance_for_a_Card"] = 777);
+                        			}
+                        		} else if ("CHOPPIN" == s) {
+                        			var Wn = b.engine.getGameAttribute("TimeAway"),
+                        				Zn = null != e.GlobalTime ? Wn.getReserved("GlobalTime") : Wn.h.GlobalTime,
+                        				Hn = parseNum(Zn),
+                        				Jn = b.engine.getGameAttribute("TimeAway"),
+                        				jn = null != e.Player ? Jn.getReserved("Player") : Jn.h.Player;
+                        			if (120 < Hn - parseNum(jn)) {
+                        				var qn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Kn = null != e.AFKrewMapz ? qn.getReserved("AFKrewMapz") : qn.h.AFKrewMapz,
+                        					$n = b.engine.getGameAttribute("TimeAway"),
+                        					es = null != e.GlobalTime ? $n.getReserved("GlobalTime") : $n.h.GlobalTime,
+                        					ts = parseNum(es),
+                        					ns = b.engine.getGameAttribute("TimeAway"),
+                        					ss = null != e.Player ? ns.getReserved("Player") : ns.h.Player,
+                        					as = Math.round(ts - parseNum(ss));
+                        				if ((null != e.Time ? Kn.setReserved("Time", as) : (Kn.h.Time = as), 2 < w._customBlock_prayersReal(2, 1))) {
+                        					var rs = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						As = null != e.AFKrewMapz ? rs.getReserved("AFKrewMapz") : rs.h.AFKrewMapz,
+                        						ls = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						os = null != e.AFKrewMapz ? ls.getReserved("AFKrewMapz") : ls.h.AFKrewMapz,
+                        						is = null != e.Time ? os.getReserved("Time") : os.h.Time,
+                        						us = Math.min(parseNum(is), 36e3);
+                        					null != e.Time ? As.setReserved("Time", us) : (As.h.Time = us);
+                        				}
+                        				var gs = b.engine.getGameAttribute("DNSM"),
+                        					ms = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ds = null != e.AFKrewMapz ? ms.getReserved("AFKrewMapz") : ms.h.AFKrewMapz,
+                        					cs = null != e.Time ? ds.getReserved("Time") : ds.h.Time,
+                        					ps = A._customBlock_AFKfoodsTimeRedux("Choppin", parseNum(cs));
+                        				null != e.FoodUseCoeffzz ? gs.setReserved("FoodUseCoeffzz", ps) : (gs.h.FoodUseCoeffzz = ps);
+                        				var hs = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					bs = null != e.AFKrewMapz ? hs.getReserved("AFKrewMapz") : hs.h.AFKrewMapz,
+                        					fs = b.engine.getGameAttribute("AFKtarget"),
+                        					ys = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Rs = null != e.AFKrewMapz ? ys.getReserved("AFKrewMapz") : ys.h.AFKrewMapz,
+                        					vs = null != e.Time ? Rs.getReserved("Time") : Rs.h.Time,
+                        					Fs = Math.floor(
+                        						(parseNum(vs) / 3600) * Math.floor(t._customBlock_HourlyKillRate("Choppin") * t._customBlock_AFKgainrates("Choppin") * (1 + H._customBlock_SkillStats("ChoppinMultiOre") / 100) * H._customBlock_SkillStats("ChoppinOreValue")));
+                        				null != e[fs] ? bs.setReserved(fs, Fs) : (bs.h[fs] = Fs);
+                        				var Ns = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					_s = null != e.AFKrewMapz ? Ns.getReserved("AFKrewMapz") : Ns.h.AFKrewMapz,
+                        					Is = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Ds = null != e.AFKrewMapz ? Is.getReserved("AFKrewMapz") : Is.h.AFKrewMapz,
+                        					Es = null != e.Time ? Ds.getReserved("Time") : Ds.h.Time,
+                        					Ss = (parseNum(Es) / 3600) * t._customBlock_HourlyKillRate("Choppin") * t._customBlock_AFKgainrates("Choppin"),
+                        					Gs = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					Ts = b.engine.getGameAttribute("AFKtarget"),
+                        					Us = null != e[Ts] ? Gs.getReserved(Ts) : Gs.h[Ts],
+                        					Ms = null != e.ExpGiven ? Us.getReserved("ExpGiven") : Us.h.ExpGiven,
+                        					Vs = parseNum(Ms),
+                        					Cs = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					Bs = b.engine.getGameAttribute("AFKtarget"),
+                        					Ps = null != e[Bs] ? Cs.getReserved(Bs) : Cs.h[Bs],
+                        					Os = null != e.ExpType ? Ps.getReserved("ExpType") : Ps.h.ExpType,
+                        					ws = Math.floor(Ss * Vs * H._customBlock_ExpMulti(parseNum(Os)));
+                        				null != e.Choppin_Exp ? _s.setReserved("Choppin_Exp", ws) : (_s.h.Choppin_Exp = ws);
+                        				var ks = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					xs = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Qs = null != e.AFKrewMapz ? xs.getReserved("AFKrewMapz") : xs.h.AFKrewMapz,
+                        					Xs = null != e.Time ? Qs.getReserved("Time") : Qs.h.Time,
+                        					Ls = H._customBlock_GenerateMonsterDrops(Math.floor(
+                        						(parseNum(Xs) / 3600) * t._customBlock_HourlyKillRate("Choppin") * t._customBlock_AFKgainrates("Choppin")), b.engine.getGameAttribute("AFKtarget"));
+                        				null != e.AFKrewDL1 ? ks.setReserved("AFKrewDL1", Ls) : (ks.h.AFKrewDL1 = Ls);
+                        				for (var zs = 0, Ys = b.engine.getGameAttribute("DummyNumbersStatManager"), Ws = d.__cast(null != e.AFKrewDL1 ? Ys.getReserved("AFKrewDL1") : Ys.h.AFKrewDL1, Array); zs < Ws.length;) {
+                        					var Zs = Ws[zs];
+                        					++zs;
+                        					var Hs = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Js = null != e.AFKrewMapz ? Hs.getReserved("AFKrewMapz") : Hs.h.AFKrewMapz,
+                        						js = "" + g.string(Zs[0]),
+                        						qs = Js,
+                        						Ks = Zs[1];
+                        					null != e[js] ? qs.setReserved(js, Ks) : (qs.h[js] = Ks);
+                        				}
+                        				var $s = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ea = null != e.AFKrewMapz ? $s.getReserved("AFKrewMapz") : $s.h.AFKrewMapz;
+                        				null != e["%_Chance_for_a_Card"] ? ea.setReserved("%_Chance_for_a_Card", 777) : (ea.h["%_Chance_for_a_Card"] = 777);
+                        			}
+                        		} else if ("FISHING" == s) {
+                        			var ta = b.engine.getGameAttribute("TimeAway"),
+                        				na = null != e.GlobalTime ? ta.getReserved("GlobalTime") : ta.h.GlobalTime,
+                        				sa = parseNum(na),
+                        				aa = b.engine.getGameAttribute("TimeAway"),
+                        				ra = null != e.Player ? aa.getReserved("Player") : aa.h.Player;
+                        			if (120 < sa - parseNum(ra)) {
+                        				var Aa = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					la = null != e.AFKrewMapz ? Aa.getReserved("AFKrewMapz") : Aa.h.AFKrewMapz,
+                        					oa = b.engine.getGameAttribute("TimeAway"),
+                        					ia = null != e.GlobalTime ? oa.getReserved("GlobalTime") : oa.h.GlobalTime,
+                        					ua = parseNum(ia),
+                        					ga = b.engine.getGameAttribute("TimeAway"),
+                        					ma = null != e.Player ? ga.getReserved("Player") : ga.h.Player,
+                        					da = Math.round(ua - parseNum(ma));
+                        				if ((null != e.Time ? la.setReserved("Time", da) : (la.h.Time = da), 2 < w._customBlock_prayersReal(2, 1))) {
+                        					var ca = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						pa = null != e.AFKrewMapz ? ca.getReserved("AFKrewMapz") : ca.h.AFKrewMapz,
+                        						ha = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						ba = null != e.AFKrewMapz ? ha.getReserved("AFKrewMapz") : ha.h.AFKrewMapz,
+                        						fa = null != e.Time ? ba.getReserved("Time") : ba.h.Time,
+                        						ya = Math.min(parseNum(fa), 36e3);
+                        					null != e.Time ? pa.setReserved("Time", ya) : (pa.h.Time = ya);
+                        				}
+                        				var Ra = b.engine.getGameAttribute("DNSM"),
+                        					va = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Fa = null != e.AFKrewMapz ? va.getReserved("AFKrewMapz") : va.h.AFKrewMapz,
+                        					Na = null != e.Time ? Fa.getReserved("Time") : Fa.h.Time,
+                        					_a = A._customBlock_AFKfoodsTimeRedux("Fishing", parseNum(Na));
+                        				null != e.FoodUseCoeffzz ? Ra.setReserved("FoodUseCoeffzz", _a) : (Ra.h.FoodUseCoeffzz = _a);
+                        				for (var Ia = 0; 4 > Ia;) {
+                        					var Da = Ia++,
+                        						Ea = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Sa = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Ga = null != e.AFKrewMapz ? Sa.getReserved("AFKrewMapz") : Sa.h.AFKrewMapz,
+                        						Ta = null != e.Time ? Ga.getReserved("Time") : Ga.h.Time,
+                        						Ua = Ea,
+                        						Ma = Math.floor(
+                        							(parseNum(Ta) / 3600) * t._customBlock_HourlyKillRate("Fishing") * t._customBlock_AFKgainrates("Fishing") * (1 + H._customBlock_SkillStats("FishingMultiOre") / 100) * H._customBlock_SkillStats("FishingOreValue") * (A._customBlock_FishingToolkit("Pct" + Math.round(Da + 1)) / 100));
+                        					null != e.AFKrewDN1 ? Ua.setReserved("AFKrewDN1", Ma) : (Ua.h.AFKrewDN1 = Ma);
+                        					var Va = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Ca = null != e.AFKrewDN1 ? Va.getReserved("AFKrewDN1") : Va.h.AFKrewDN1;
+                        					if (0 < parseNum(Ca)) {
+                        						var Ba = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							Pa = null != e.AFKrewMapz ? Ba.getReserved("AFKrewMapz") : Ba.h.AFKrewMapz,
+                        							Oa = b.engine.getGameAttribute("CustomMaps"),
+                        							wa = null != e.FishPools ? Oa.getReserved("FishPools") : Oa.h.FishPools,
+                        							ka = b.engine.getGameAttribute("AFKtarget"),
+                        							xa = wa,
+                        							Qa = "" + g.string((null != e[ka] ? xa.getReserved(ka) : xa.h[ka])[0][Da]),
+                        							Xa = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							La = Pa,
+                        							za = null != e.AFKrewDN1 ? Xa.getReserved("AFKrewDN1") : Xa.h.AFKrewDN1;
+                        						null != e[Qa] ? La.setReserved(Qa, za) : (La.h[Qa] = za);
+                        						var Ya = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							Wa = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							Za = null != e.AFKrewDN1 ? Wa.getReserved("AFKrewDN1") : Wa.h.AFKrewDN1,
+                        							Ha = parseNum(Za),
+                        							Ja = b.engine.getGameAttribute("CustomMaps"),
+                        							ja = null != e.FishPools ? Ja.getReserved("FishPools") : Ja.h.FishPools,
+                        							qa = b.engine.getGameAttribute("AFKtarget"),
+                        							Ka = ja,
+                        							$a = (null != e[qa] ? Ka.getReserved(qa) : Ka.h[qa])[5][Da],
+                        							er = Ya,
+                        							tr = t._customBlock_DropOdds(Ha, null == $a ? 0 : "number" == typeof $a ? d.__cast($a, k) : "number" == typeof $a && (0 | $a) === $a ? d.__cast($a, l) : "boolean" == typeof $a ? d.__cast($a, n) ? 1 : 0 : "string" == typeof $a ? parseFloat($a) : parseFloat(g.string($a)));
+                        						null != e.AFKrewDN2 ? er.setReserved("AFKrewDN2", tr) : (er.h.AFKrewDN2 = tr);
+                        						var nr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							sr = null != e.AFKrewDN2 ? nr.getReserved("AFKrewDN2") : nr.h.AFKrewDN2;
+                        						if (1 <= parseNum(sr)) {
+                        							var ar = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								rr = null != e.AFKrewMapz ? ar.getReserved("AFKrewMapz") : ar.h.AFKrewMapz,
+                        								Ar = b.engine.getGameAttribute("CustomMaps"),
+                        								lr = null != e.FishPools ? Ar.getReserved("FishPools") : Ar.h.FishPools,
+                        								or = b.engine.getGameAttribute("AFKtarget"),
+                        								ir = lr,
+                        								ur = "" + g.string((null != e[or] ? ir.getReserved(or) : ir.h[or])[4][Da]),
+                        								gr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								mr = null != e.AFKrewDN2 ? gr.getReserved("AFKrewDN2") : gr.h.AFKrewDN2,
+                        								dr = rr,
+                        								cr = Math.max(Math.floor(Math.pow(parseNum(mr), 0.7)), 1);
+                        							null != e[ur] ? dr.setReserved(ur, cr) : (dr.h[ur] = cr);
+                        						}
+                        					}
+                        				}
+                        				var pr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					hr = null != e.AFKrewMapz ? pr.getReserved("AFKrewMapz") : pr.h.AFKrewMapz;
+                        				null != e.Fishing_Exp ? hr.setReserved("Fishing_Exp", 0) : (hr.h.Fishing_Exp = 0);
+                        				for (var br = 0; 4 > br;) {
+                        					var fr = br++;
+                        					if (0 < A._customBlock_FishingToolkit("Pct" + Math.round(fr + 1))) {
+                        						var yr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							Rr = null != e.AFKrewMapz ? yr.getReserved("AFKrewMapz") : yr.h.AFKrewMapz,
+                        							vr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							Fr = null != e.AFKrewMapz ? vr.getReserved("AFKrewMapz") : vr.h.AFKrewMapz,
+                        							Nr = null != e.Fishing_Exp ? Fr.getReserved("Fishing_Exp") : Fr.h.Fishing_Exp,
+                        							_r = parseNum(Nr),
+                        							Ir = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							Dr = null != e.AFKrewMapz ? Ir.getReserved("AFKrewMapz") : Ir.h.AFKrewMapz,
+                        							Er = null != e.Time ? Dr.getReserved("Time") : Dr.h.Time,
+                        							Sr = (parseNum(Er) / 3600) * t._customBlock_HourlyKillRate("Fishing") * t._customBlock_AFKgainrates("Fishing"),
+                        							Gr = b.engine.getGameAttribute("CustomMaps"),
+                        							Tr = null != e.FishPools ? Gr.getReserved("FishPools") : Gr.h.FishPools,
+                        							Ur = b.engine.getGameAttribute("AFKtarget"),
+                        							Mr = Tr,
+                        							Vr = (null != e[Ur] ? Mr.getReserved(Ur) : Mr.h[Ur])[1][fr],
+                        							Cr = Sr * parseNum(Vr) * (A._customBlock_FishingToolkit("Pct" + Math.round(fr + 1)) / 100),
+                        							Br = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							Pr = b.engine.getGameAttribute("AFKtarget"),
+                        							Or = Br,
+                        							wr = null != e[Pr] ? Or.getReserved(Pr) : Or.h[Pr],
+                        							kr = null != e.ExpType ? wr.getReserved("ExpType") : wr.h.ExpType,
+                        							xr = Rr,
+                        							Qr = _r + Math.floor(Cr * H._customBlock_ExpMulti(parseNum(kr)));
+                        						null != e.Fishing_Exp ? xr.setReserved("Fishing_Exp", Qr) : (xr.h.Fishing_Exp = Qr);
+                        					}
+                        				}
+                        				var Xr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Lr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					zr = null != e.AFKrewMapz ? Lr.getReserved("AFKrewMapz") : Lr.h.AFKrewMapz,
+                        					Yr = null != e.Time ? zr.getReserved("Time") : zr.h.Time,
+                        					Wr = H._customBlock_GenerateMonsterDrops(Math.floor(
+                        						(parseNum(Yr) / 3600) * t._customBlock_HourlyKillRate("Fishing") * t._customBlock_AFKgainrates("Fishing")), b.engine.getGameAttribute("AFKtarget"));
+                        				null != e.AFKrewDL1 ? Xr.setReserved("AFKrewDL1", Wr) : (Xr.h.AFKrewDL1 = Wr);
+                        				for (var Zr = 0, Hr = b.engine.getGameAttribute("DummyNumbersStatManager"), Jr = d.__cast(null != e.AFKrewDL1 ? Hr.getReserved("AFKrewDL1") : Hr.h.AFKrewDL1, Array); Zr < Jr.length;) {
+                        					var jr = Jr[Zr];
+                        					++Zr;
+                        					var qr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Kr = null != e.AFKrewMapz ? qr.getReserved("AFKrewMapz") : qr.h.AFKrewMapz,
+                        						$r = "" + g.string(jr[0]),
+                        						eA = Kr,
+                        						tA = jr[1];
+                        					null != e[$r] ? eA.setReserved($r, tA) : (eA.h[$r] = tA);
+                        				}
+                        				var nA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					sA = null != e.AFKrewMapz ? nA.getReserved("AFKrewMapz") : nA.h.AFKrewMapz;
+                        				null != e["%_Chance_for_a_Card"] ? sA.setReserved("%_Chance_for_a_Card", 777) : (sA.h["%_Chance_for_a_Card"] = 777);
+                        			}
+                        		} else if ("CATCHING" == s) {
+                        			var aA = b.engine.getGameAttribute("TimeAway"),
+                        				rA = null != e.GlobalTime ? aA.getReserved("GlobalTime") : aA.h.GlobalTime,
+                        				AA = parseNum(rA),
+                        				lA = b.engine.getGameAttribute("TimeAway"),
+                        				oA = null != e.Player ? lA.getReserved("Player") : lA.h.Player;
+                        			if (120 < AA - parseNum(oA)) {
+                        				var iA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					uA = null != e.AFKrewMapz ? iA.getReserved("AFKrewMapz") : iA.h.AFKrewMapz,
+                        					gA = b.engine.getGameAttribute("TimeAway"),
+                        					mA = null != e.GlobalTime ? gA.getReserved("GlobalTime") : gA.h.GlobalTime,
+                        					dA = parseNum(mA),
+                        					cA = b.engine.getGameAttribute("TimeAway"),
+                        					pA = null != e.Player ? cA.getReserved("Player") : cA.h.Player,
+                        					hA = Math.round(dA - parseNum(pA));
+                        				if ((null != e.Time ? uA.setReserved("Time", hA) : (uA.h.Time = hA), 2 < w._customBlock_prayersReal(2, 1))) {
+                        					var bA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						fA = null != e.AFKrewMapz ? bA.getReserved("AFKrewMapz") : bA.h.AFKrewMapz,
+                        						yA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						RA = null != e.AFKrewMapz ? yA.getReserved("AFKrewMapz") : yA.h.AFKrewMapz,
+                        						vA = null != e.Time ? RA.getReserved("Time") : RA.h.Time,
+                        						FA = Math.min(parseNum(vA), 36e3);
+                        					null != e.Time ? fA.setReserved("Time", FA) : (fA.h.Time = FA);
+                        				}
+                        				var NA = b.engine.getGameAttribute("DNSM"),
+                        					_A = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					IA = null != e.AFKrewMapz ? _A.getReserved("AFKrewMapz") : _A.h.AFKrewMapz,
+                        					DA = null != e.Time ? IA.getReserved("Time") : IA.h.Time,
+                        					EA = A._customBlock_AFKfoodsTimeRedux("Catching", parseNum(DA));
+                        				null != e.FoodUseCoeffzz ? NA.setReserved("FoodUseCoeffzz", EA) : (NA.h.FoodUseCoeffzz = EA);
+                        				var SA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					GA = null != e.AFKrewMapz ? SA.getReserved("AFKrewMapz") : SA.h.AFKrewMapz,
+                        					TA = b.engine.getGameAttribute("AFKtarget"),
+                        					UA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					MA = null != e.AFKrewMapz ? UA.getReserved("AFKrewMapz") : UA.h.AFKrewMapz,
+                        					VA = null != e.Time ? MA.getReserved("Time") : MA.h.Time,
+                        					CA = Math.floor(
+                        						(parseNum(VA) / 3600) * Math.floor(t._customBlock_HourlyKillRate("Catching") * t._customBlock_AFKgainrates("Catching") * (1 + H._customBlock_SkillStats("CatchingMultiOre") / 100) * H._customBlock_SkillStats("CatchingOreValue")));
+                        				null != e[TA] ? GA.setReserved(TA, CA) : (GA.h[TA] = CA);
+                        				var BA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					PA = null != e.AFKrewMapz ? BA.getReserved("AFKrewMapz") : BA.h.AFKrewMapz,
+                        					OA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					wA = null != e.AFKrewMapz ? OA.getReserved("AFKrewMapz") : OA.h.AFKrewMapz,
+                        					kA = null != e.Time ? wA.getReserved("Time") : wA.h.Time,
+                        					xA = (parseNum(kA) / 3600) * t._customBlock_HourlyKillRate("Catching") * t._customBlock_AFKgainrates("Catching"),
+                        					QA = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					XA = b.engine.getGameAttribute("AFKtarget"),
+                        					LA = null != e[XA] ? QA.getReserved(XA) : QA.h[XA],
+                        					zA = null != e.ExpGiven ? LA.getReserved("ExpGiven") : LA.h.ExpGiven,
+                        					YA = parseNum(zA),
+                        					WA = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					ZA = b.engine.getGameAttribute("AFKtarget"),
+                        					HA = null != e[ZA] ? WA.getReserved(ZA) : WA.h[ZA],
+                        					JA = null != e.ExpType ? HA.getReserved("ExpType") : HA.h.ExpType,
+                        					jA = Math.floor(xA * YA * H._customBlock_ExpMulti(parseNum(JA)));
+                        				null != e.Catching_Exp ? PA.setReserved("Catching_Exp", jA) : (PA.h.Catching_Exp = jA);
+                        				var qA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					KA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					$A = null != e.AFKrewMapz ? KA.getReserved("AFKrewMapz") : KA.h.AFKrewMapz,
+                        					el = null != e.Time ? $A.getReserved("Time") : $A.h.Time,
+                        					tl = H._customBlock_GenerateMonsterDrops(Math.floor(
+                        						(parseNum(el) / 3600) * t._customBlock_HourlyKillRate("Catching") * t._customBlock_AFKgainrates("Catching")), b.engine.getGameAttribute("AFKtarget"));
+                        				null != e.AFKrewDL1 ? qA.setReserved("AFKrewDL1", tl) : (qA.h.AFKrewDL1 = tl);
+                        				for (var nl = 0, sl = b.engine.getGameAttribute("DummyNumbersStatManager"), al = d.__cast(null != e.AFKrewDL1 ? sl.getReserved("AFKrewDL1") : sl.h.AFKrewDL1, Array); nl < al.length;) {
+                        					var rl = al[nl];
+                        					++nl;
+                        					var Al = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						ll = null != e.AFKrewMapz ? Al.getReserved("AFKrewMapz") : Al.h.AFKrewMapz,
+                        						ol = "" + g.string(rl[0]),
+                        						il = ll,
+                        						ul = rl[1];
+                        					null != e[ol] ? il.setReserved(ol, ul) : (il.h[ol] = ul);
+                        				}
+                        				var gl = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ml = null != e.AFKrewMapz ? gl.getReserved("AFKrewMapz") : gl.h.AFKrewMapz;
+                        				null != e["%_Chance_for_a_Card"] ? ml.setReserved("%_Chance_for_a_Card", 777) : (ml.h["%_Chance_for_a_Card"] = 777);
+                        			}
+                        		} else if ("COOKING" == s) {
+                        			var dl = b.engine.getGameAttribute("TimeAway"),
+                        				cl = null != e.GlobalTime ? dl.getReserved("GlobalTime") : dl.h.GlobalTime,
+                        				pl = parseNum(cl),
+                        				hl = b.engine.getGameAttribute("TimeAway"),
+                        				bl = null != e.Player ? hl.getReserved("Player") : hl.h.Player;
+                        			if (120 < pl - parseNum(bl)) {
+                        				var fl = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					yl = null != e.AFKrewMapz ? fl.getReserved("AFKrewMapz") : fl.h.AFKrewMapz,
+                        					Rl = b.engine.getGameAttribute("TimeAway"),
+                        					vl = null != e.GlobalTime ? Rl.getReserved("GlobalTime") : Rl.h.GlobalTime,
+                        					Fl = parseNum(vl),
+                        					Nl = b.engine.getGameAttribute("TimeAway"),
+                        					_l = null != e.Player ? Nl.getReserved("Player") : Nl.h.Player,
+                        					Il = Math.round(Fl - parseNum(_l));
+                        				if ((null != e.Time ? yl.setReserved("Time", Il) : (yl.h.Time = Il), 2 < w._customBlock_prayersReal(2, 1))) {
+                        					var Dl = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						El = null != e.AFKrewMapz ? Dl.getReserved("AFKrewMapz") : Dl.h.AFKrewMapz,
+                        						Sl = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Gl = null != e.AFKrewMapz ? Sl.getReserved("AFKrewMapz") : Sl.h.AFKrewMapz,
+                        						Tl = null != e.Time ? Gl.getReserved("Time") : Gl.h.Time,
+                        						Ul = Math.min(parseNum(Tl), 36e3);
+                        					null != e.Time ? El.setReserved("Time", Ul) : (El.h.Time = Ul);
+                        				}
+                        				var Ml = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Vl = null != e.AFKrewMapz ? Ml.getReserved("AFKrewMapz") : Ml.h.AFKrewMapz,
+                        					Cl = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Bl = null != e.AFKrewMapz ? Cl.getReserved("AFKrewMapz") : Cl.h.AFKrewMapz,
+                        					Pl = null != e.Time ? Bl.getReserved("Time") : Bl.h.Time,
+                        					Ol = (parseNum(Pl) / 3600) * t._customBlock_AFKgainrates("Cooking"),
+                        					wl = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					kl = b.engine.getGameAttribute("AFKtarget"),
+                        					xl = null != e[kl] ? wl.getReserved(kl) : wl.h[kl],
+                        					Ql = null != e.ExpGiven ? xl.getReserved("ExpGiven") : xl.h.ExpGiven,
+                        					Xl = parseNum(Ql),
+                        					Ll = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					zl = b.engine.getGameAttribute("AFKtarget"),
+                        					Yl = null != e[zl] ? Ll.getReserved(zl) : Ll.h[zl],
+                        					Wl = null != e.ExpType ? Yl.getReserved("ExpType") : Yl.h.ExpType,
+                        					Zl = Math.floor(Ol * Xl * H._customBlock_ExpMulti(parseNum(Wl)));
+                        				null != e.Cooking_Exp ? Vl.setReserved("Cooking_Exp", Zl) : (Vl.h.Cooking_Exp = Zl);
+                        				var Hl = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Jl = [];
+                        				null != e.AFKrewDL1 ? Hl.setReserved("AFKrewDL1", Jl) : (Hl.h.AFKrewDL1 = Jl);
+                        				for (var jl = 0,
+                        						ql = 1e3 + h.randomInt(0, 100),
+                        						Kl = b.engine.getGameAttribute("DNSM"),
+                        						$l = null != e.BoxRewards ? Kl.getReserved("BoxRewards") : Kl.h.BoxRewards,
+                        						eo = null != e["19c"] ? $l.getReserved("19c") : $l.h["19c"],
+                        						to = Math.floor(1 + ql / (100 - parseNum(eo) + 1e3)); jl < to;) {
+                        					var no = jl++,
+                        						so = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        					(null != e.AFKrewDL1 ? so.getReserved("AFKrewDL1") : so.h.AFKrewDL1).push([]);
+                        					var ao = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        					(null != e.AFKrewDL1 ? ao.getReserved("AFKrewDL1") : ao.h.AFKrewDL1)[no].push("Ladle");
+                        					var ro = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Ao = (null != e.AFKrewDL1 ? ro.getReserved("AFKrewDL1") : ro.h.AFKrewDL1)[no],
+                        						lo = H._customBlock_SkillStats("CookingBaseLadlePerDay") * t._customBlock_AFKgainrates("Cooking"),
+                        						oo = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						io = null != e.AFKrewMapz ? oo.getReserved("AFKrewMapz") : oo.h.AFKrewMapz,
+                        						uo = null != e.Time ? io.getReserved("Time") : io.h.Time;
+                        					Ao.push(lo * (parseNum(uo) / 86400));
+                        					var go = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						mo = (null != e.AFKrewDL1 ? go.getReserved("AFKrewDL1") : go.h.AFKrewDL1)[no][1];
+                        					if (1 > parseNum(mo)) {
+                        						var co = h.randomFloat(),
+                        							po = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							ho = (null != e.AFKrewDL1 ? po.getReserved("AFKrewDL1") : po.h.AFKrewDL1)[no][1];
+                        						if (co < parseNum(ho)) {
+                        							var bo = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        							(null != e.AFKrewDL1 ? bo.getReserved("AFKrewDL1") : bo.h.AFKrewDL1)[no][1] = 1;
+                        						}
+                        					}
+                        					var fo = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						yo = (null != e.AFKrewDL1 ? fo.getReserved("AFKrewDL1") : fo.h.AFKrewDL1)[no],
+                        						Ro = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						vo = (null != e.AFKrewDL1 ? Ro.getReserved("AFKrewDL1") : Ro.h.AFKrewDL1)[no][1];
+                        					yo[1] = Math.floor(parseNum(vo));
+                        				}
+                        				for (var Fo = 0, No = b.engine.getGameAttribute("DummyNumbersStatManager"), _o = d.__cast(null != e.AFKrewDL1 ? No.getReserved("AFKrewDL1") : No.h.AFKrewDL1, Array); Fo < _o.length;) {
+                        					var Io = _o[Fo];
+                        					++Fo;
+                        					var Do = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Eo = null != e.AFKrewMapz ? Do.getReserved("AFKrewMapz") : Do.h.AFKrewMapz,
+                        						So = "" + g.string(Io[0]),
+                        						Go = Eo,
+                        						To = Io[1];
+                        					null != e[So] ? Go.setReserved(So, To) : (Go.h[So] = To);
+                        				}
+                        				var Uo = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Mo = null != e.AFKrewMapz ? Uo.getReserved("AFKrewMapz") : Uo.h.AFKrewMapz;
+                        				null != e["%_Chance_for_a_Card"] ? Mo.setReserved("%_Chance_for_a_Card", 777) : (Mo.h["%_Chance_for_a_Card"] = 777);
+                        			}
+                        		} else if ("LABORATORY" == s) {
+                        			var Vo = b.engine.getGameAttribute("TimeAway"),
+                        				Co = null != e.GlobalTime ? Vo.getReserved("GlobalTime") : Vo.h.GlobalTime,
+                        				Bo = parseNum(Co),
+                        				Po = b.engine.getGameAttribute("TimeAway"),
+                        				Oo = null != e.Player ? Po.getReserved("Player") : Po.h.Player;
+                        			if (120 < Bo - parseNum(Oo)) {
+                        				var wo = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ko = null != e.AFKrewMapz ? wo.getReserved("AFKrewMapz") : wo.h.AFKrewMapz,
+                        					xo = b.engine.getGameAttribute("TimeAway"),
+                        					Qo = null != e.GlobalTime ? xo.getReserved("GlobalTime") : xo.h.GlobalTime,
+                        					Xo = parseNum(Qo),
+                        					Lo = b.engine.getGameAttribute("TimeAway"),
+                        					zo = null != e.Player ? Lo.getReserved("Player") : Lo.h.Player,
+                        					Yo = Math.round(Xo - parseNum(zo));
+                        				if ((null != e.Time ? ko.setReserved("Time", Yo) : (ko.h.Time = Yo), 2 < w._customBlock_prayersReal(2, 1))) {
+                        					var Wo = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Zo = null != e.AFKrewMapz ? Wo.getReserved("AFKrewMapz") : Wo.h.AFKrewMapz,
+                        						Ho = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Jo = null != e.AFKrewMapz ? Ho.getReserved("AFKrewMapz") : Ho.h.AFKrewMapz,
+                        						jo = null != e.Time ? Jo.getReserved("Time") : Jo.h.Time,
+                        						qo = Math.min(parseNum(jo), 36e3);
+                        					null != e.Time ? Zo.setReserved("Time", qo) : (Zo.h.Time = qo);
+                        				}
+                        				var Ko = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					$o = null != e.AFKrewMapz ? Ko.getReserved("AFKrewMapz") : Ko.h.AFKrewMapz,
+                        					ei = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ti = null != e.AFKrewMapz ? ei.getReserved("AFKrewMapz") : ei.h.AFKrewMapz,
+                        					ni = null != e.Time ? ti.getReserved("Time") : ti.h.Time,
+                        					si = (parseNum(ni) / 3600) * t._customBlock_AFKgainrates("Laboratory"),
+                        					ai = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					ri = b.engine.getGameAttribute("AFKtarget"),
+                        					Ai = null != e[ri] ? ai.getReserved(ri) : ai.h[ri],
+                        					li = null != e.ExpGiven ? Ai.getReserved("ExpGiven") : Ai.h.ExpGiven,
+                        					oi = parseNum(li),
+                        					ii = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					ui = b.engine.getGameAttribute("AFKtarget"),
+                        					gi = null != e[ui] ? ii.getReserved(ui) : ii.h[ui],
+                        					mi = null != e.ExpType ? gi.getReserved("ExpType") : gi.h.ExpType,
+                        					di = Math.floor(si * oi * H._customBlock_ExpMulti(parseNum(mi)));
+                        				null != e.Laboratory_Exp ? $o.setReserved("Laboratory_Exp", di) : ($o.h.Laboratory_Exp = di);
+                        			}
+                        		}
+                        		var ci = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		if (0 != Sb.mapCount(null != e.AFKrewMapz ? ci.getReserved("AFKrewMapz") : ci.h.AFKrewMapz)) {
+                        			var pi = b.engine,
+                        				hi = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				bi = null != e.AFKrewMapz ? hi.getReserved("AFKrewMapz") : hi.h.AFKrewMapz,
+                        				fi = pi.gameAttributes;
+                        			null != e.DummyMap ? fi.setReserved("DummyMap", bi) : (fi.h.DummyMap = bi), h.createRecycledActor(h.getActorType(203), 370, 80, 0);
+                        		}
+                        		var yi = b.engine.getGameAttribute("TimeAway"),
+                        			Ri = b.engine.getGameAttribute("TimeAway"),
+                        			vi = null != e.GlobalTime ? Ri.getReserved("GlobalTime") : Ri.h.GlobalTime;
+                        		null != e.Player ? yi.setReserved("Player", vi) : (yi.h.Player = vi);
+                        		var Fi = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		return null != e.AFKrewMapz ? Fi.getReserved("AFKrewMapz") : Fi.h.AFKrewMapz;
+                        	}

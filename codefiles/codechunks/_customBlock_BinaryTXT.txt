@@ -1,0 +1,9 @@
+                        (U._customBlock_BinaryTXT = function(t) {
+                        		var n = b.engine.getGameAttribute("DNSM"),
+                        			s = [];
+                        		for (null != e.BinaryTXTlist ? n.setReserved("BinaryTXTlist", s) : (n.h.BinaryTXTlist = s), n = 0, s = t.length; n < s;) {
+                        			var a = n++;
+                        			"1" == t.charAt(a) ? ((a = b.engine.getGameAttribute("DNSM")), (null != e.BinaryTXTlist ? a.getReserved("BinaryTXTlist") : a.h.BinaryTXTlist).push(1)) : ((a = b.engine.getGameAttribute("DNSM")), (null != e.BinaryTXTlist ? a.getReserved("BinaryTXTlist") : a.h.BinaryTXTlist).push(0));
+                        		}
+                        		return (t = b.engine.getGameAttribute("DNSM")), null != e.BinaryTXTlist ? t.getReserved("BinaryTXTlist") : t.h.BinaryTXTlist;
+                        	}

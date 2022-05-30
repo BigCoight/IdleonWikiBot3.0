@@ -1,0 +1,4 @@
+                            (n.binstring2buf = function(e) {
+                            		for (var t = new a.Buf8(e.length), n = 0, s = t.length; n < s; n++) t[n] = e.charCodeAt(n);
+                            		return t;
+                            	}

@@ -1,0 +1,725 @@
+                        (xQ._customBlock_CastAttackofID1 = function(s) {
+                        		if (315 == s && 473 > h.getMouseY()) {
+                        			var a = b.engine.gameAttributes;
+                        			null != e.DummyText ? a.setReserved("DummyText", "Bow") : (a.h.DummyText = "Bow"), h.createRecycledActor(h.getActorType(114), h.getMouseX() + h.getScreenX(), h.getMouseY() + h.getScreenY(), 0);
+                        			var r = b.engine.gameAttributes;
+                        			null != e.DummyText ? r.setReserved("DummyText", "Arrow") : (r.h.DummyText = "Arrow"), h.createRecycledActor(h.getActorType(114), h.getMouseX() + h.getScreenX() + 30, h.getMouseY() + h.getScreenY() - 15, 0);
+                        		}
+                        		if (15e5 == s && 473 > h.getMouseY()) {
+                        			var A = b.engine.gameAttributes;
+                        			null != e.DummyText ? A.setReserved("DummyText", "TracerParabolaPlayer") : (A.h.DummyText = "TracerParabolaPlayer");
+                        			var o = h.getActorType(114),
+                        				i = b.engine.getGameAttribute("OtherPlayers"),
+                        				u = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				m = (null != e[u] ? i.getReserved(u) : i.h[u]).getXCenter(),
+                        				c = b.engine.getGameAttribute("OtherPlayers"),
+                        				p = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(o, m, (null != e[p] ? c.getReserved(p) : c.h[p]).getYCenter(), 0);
+                        			var f = b.engine.gameAttributes;
+                        			null != e.DummyText ? f.setReserved("DummyText", "Basketball") : (f.h.DummyText = "Basketball");
+                        			var y = h.getActorType(114),
+                        				R = b.engine.getGameAttribute("OtherPlayers"),
+                        				v = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				F = (null != e[v] ? R.getReserved(v) : R.h[v]).getXCenter(),
+                        				N = b.engine.getGameAttribute("OtherPlayers"),
+                        				_ = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(y, F, (null != e[_] ? N.getReserved(_) : N.h[_]).getYCenter(), 0);
+                        		}
+                        		if (15 == s) {
+                        			var I = b.engine.gameAttributes;
+                        			null != e.WeaponType ? I.setReserved("WeaponType", 23) : (I.h.WeaponType = 23);
+                        			var D = h.getActorType(7),
+                        				E = b.engine.getGameAttribute("OtherPlayers"),
+                        				S = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				T = (null != e[S] ? E.getReserved(S) : E.h[S]).getX() + 37,
+                        				M = b.engine.getGameAttribute("OtherPlayers"),
+                        				V = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				C = (null != e[V] ? M.getReserved(V) : M.h[V]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				B = parseNum(C),
+                        				P = b.engine.getGameAttribute("OtherPlayers"),
+                        				O = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(D, T + 75 * (2 * B - 1), (null != e[O] ? P.getReserved(O) : P.h[O]).getY() - -15, 1);
+                        			var x = h.getLastCreatedActor(),
+                        				Q = b.engine.getGameAttribute("OtherPlayers"),
+                        				X = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				L = (null != e[X] ? Q.getReserved(X) : Q.h[X]).getValue("ActorEvents_20", "_PlayerDirection");
+                        			x.growTo(
+                        				(200 * (2 * parseNum(L) - 1)) / 100, 2, 0, G.linear);
+                        		}
+                        		if (16 == s) {
+                        			var z = b.engine.gameAttributes;
+                        			null != e.DummyText ? z.setReserved("DummyText", "Pig") : (z.h.DummyText = "Pig"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        			for (var Y = 0, W = h.getActorsOfType(h.getActorType(44)); Y < W.length;) {
+                        				var Z = W[Y];
+                        				if ((++Y, null != Z && !Z.dead && !Z.recycled && "COIN" == Z.getValue("ActorEvents_44", "_DropType"))) {
+                        					var J = Z.getValue("ActorEvents_44", "_DropAmount");
+                        					Z.setValue("ActorEvents_44", "_DropAmount", Math.round(parseNum(J) * t._customBlock_GetTalentNumber(1, 16)));
+                        					var j = Z.getValue("ActorEvents_44", "_DropAmount");
+                        					if (100 > parseNum(j)) Z.setAnimation("1");
+                        					else {
+                        						var q = Z.getValue("ActorEvents_44", "_DropAmount");
+                        						if (1e4 > parseNum(q)) Z.setAnimation("2");
+                        						else {
+                        							var K = Z.getValue("ActorEvents_44", "_DropAmount");
+                        							if (1e6 > parseNum(K)) Z.setAnimation("3");
+                        							else {
+                        								var $ = Z.getValue("ActorEvents_44", "_DropAmount");
+                        								1e8 > (null == $ ? 0 : "number" == typeof $ ? d.__cast($, k) : "number" == typeof $ && (0 | $) === $ ? d.__cast($, l) : "boolean" == typeof $ ? d.__cast($, n) ? 1 : 0 : "string" == typeof $ ? parseFloat($) : parseFloat(g.string($))) ? Z.setAnimation("4") : Z.setAnimation("5");
+                        							}
+                        						}
+                        					}
+                        				}
+                        			}
+                        		}
+                        		if (19 == s) {
+                        			H._customBlock_AddBuffType(19, 60 * t._customBlock_GetTalentNumber(2, 19));
+                        			var ee = b.engine.gameAttributes;
+                        			null != e.DummyText ? ee.setReserved("DummyText", "Bag") : (ee.h.DummyText = "Bag"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		}
+                        		if (25 == s) {
+                        			var te = b.engine.gameAttributes;
+                        			null != e.DummyText ? te.setReserved("DummyText", "Gift") : (te.h.DummyText = "Gift"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else if (30 == s) {
+                        			if (473 > h.getMouseY()) {
+                        				var ne = b.engine.gameAttributes;
+                        				null != e.DummyText ? ne.setReserved("DummyText", "TracerParabolaPlayer") : (ne.h.DummyText = "TracerParabolaPlayer");
+                        				var se = h.getActorType(114),
+                        					ae = b.engine.getGameAttribute("OtherPlayers"),
+                        					re = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					Ae = (null != e[re] ? ae.getReserved(re) : ae.h[re]).getXCenter(),
+                        					le = b.engine.getGameAttribute("OtherPlayers"),
+                        					oe = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        				h.createRecycledActor(se, Ae, (null != e[oe] ? le.getReserved(oe) : le.h[oe]).getYCenter(), 0);
+                        				var ie = b.engine.gameAttributes;
+                        				null != e.DummyText ? ie.setReserved("DummyText", "CoinToss") : (ie.h.DummyText = "CoinToss");
+                        				var ue = h.getActorType(114),
+                        					ge = b.engine.getGameAttribute("OtherPlayers"),
+                        					me = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					de = (null != e[me] ? ge.getReserved(me) : ge.h[me]).getXCenter(),
+                        					ce = b.engine.getGameAttribute("OtherPlayers"),
+                        					pe = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        				h.createRecycledActor(ue, de, (null != e[pe] ? ce.getReserved(pe) : ce.h[pe]).getYCenter(), 0);
+                        			}
+                        		} else if (32 == s) {
+                        			var he = b.engine.gameAttributes;
+                        			null != e.DummyText ? he.setReserved("DummyText", "Print") : (he.h.DummyText = "Print"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else 40 == s && H._customBlock_AddBuffType(40, 600);
+                        		if (90 == s) {
+                        			var be = b.engine.gameAttributes;
+                        			null != e.WeaponType ? be.setReserved("WeaponType", 10) : (be.h.WeaponType = 10);
+                        			var fe = h.getActorType(7),
+                        				ye = b.engine.getGameAttribute("OtherPlayers"),
+                        				Re = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				ve = (null != e[Re] ? ye.getReserved(Re) : ye.h[Re]).getX() + 37,
+                        				Fe = b.engine.getGameAttribute("OtherPlayers"),
+                        				Ne = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				_e = (null != e[Ne] ? Fe.getReserved(Ne) : Fe.h[Ne]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				Ie = parseNum(_e),
+                        				De = b.engine.getGameAttribute("OtherPlayers"),
+                        				Ee = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(fe, ve + 30 * (2 * Ie - 1), (null != e[Ee] ? De.getReserved(Ee) : De.h[Ee]).getY() - 20, 1);
+                        			var Se = h.getLastCreatedActor(),
+                        				Ge = b.engine.getGameAttribute("OtherPlayers"),
+                        				Te = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Ue = (null != e[Te] ? Ge.getReserved(Te) : Ge.h[Te]).getValue("ActorEvents_20", "_PlayerDirection");
+                        			Se.growTo(
+                        				(-200 * (2 * parseNum(Ue) - 1)) / 100, 2, 0.01, G.linear);
+                        		} else if (91 == s) {
+                        			var Me = b.engine.gameAttributes;
+                        			null != e.WeaponType ? Me.setReserved("WeaponType", 13) : (Me.h.WeaponType = 13);
+                        			var Ve = h.getActorType(7),
+                        				Ce = b.engine.getGameAttribute("OtherPlayers"),
+                        				Be = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Pe = (null != e[Be] ? Ce.getReserved(Be) : Ce.h[Be]).getX() + 32,
+                        				Oe = b.engine.getGameAttribute("OtherPlayers"),
+                        				we = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(Ve, Pe, (null != e[we] ? Oe.getReserved(we) : Oe.h[we]).getY() - -15, 1);
+                        		} else if (94 == s) {
+                        			H._customBlock_AddBuffType(94, 60 * t._customBlock_GetTalentNumber(2, 94));
+                        			var ke = b.engine.gameAttributes;
+                        			null != e.DummyText ? ke.setReserved("DummyText", "Dmg") : (ke.h.DummyText = "Dmg"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else if (100 == s) {
+                        			var xe = b.engine.getGameAttribute("OtherPlayers"),
+                        				Qe = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			if ("5" == (null != e[Qe] ? xe.getReserved(Qe) : xe.h[Qe]).getAnimation()) {
+                        				var Xe = b.engine.getGameAttribute("OtherPlayers"),
+                        					Le = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        				if (null != (null != e[Le] ? Xe.getReserved(Le) : Xe.h[Le]).getValue("ActorEvents_20", "_TargetEnemy")) {
+                        					b.engine.getGameAttribute("PixelHelperActor")[8].getValue("ActorEvents_481", "_GenINFO")[51] = 2;
+                        					var ze = b.engine.gameAttributes;
+                        					null != e.WeaponType ? ze.setReserved("WeaponType", 17) : (ze.h.WeaponType = 17);
+                        					var Ye = h.getActorType(7),
+                        						We = b.engine.getGameAttribute("OtherPlayers"),
+                        						Ze = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						He = (null != e[Ze] ? We.getReserved(Ze) : We.h[Ze]).getValue("ActorEvents_20", "_TargetEnemy").getX() + -3,
+                        						Je = b.engine.getGameAttribute("OtherPlayers"),
+                        						je = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        					h.createRecycledActor(Ye, He, (null != e[je] ? Je.getReserved(je) : Je.h[je]).getValue("ActorEvents_20", "_TargetEnemy").getY() - 20, 1);
+                        				}
+                        			}
+                        		} else if (105 == s) {
+                        			var qe = b.engine.gameAttributes;
+                        			null != e.WeaponType ? qe.setReserved("WeaponType", 7) : (qe.h.WeaponType = 7);
+                        			var Ke = h.getActorType(7),
+                        				$e = b.engine.getGameAttribute("OtherPlayers"),
+                        				et = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				tt = (null != e[et] ? $e.getReserved(et) : $e.h[et]).getX() + 37,
+                        				nt = b.engine.getGameAttribute("OtherPlayers"),
+                        				st = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				at = (null != e[st] ? nt.getReserved(st) : nt.h[st]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				rt = parseNum(at),
+                        				At = b.engine.getGameAttribute("OtherPlayers"),
+                        				lt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(Ke, tt + 30 * (2 * rt - 1), (null != e[lt] ? At.getReserved(lt) : At.h[lt]).getY() - 50, 1);
+                        			var ot = h.getLastCreatedActor(),
+                        				it = b.engine.getGameAttribute("OtherPlayers"),
+                        				ut = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				gt = (null != e[ut] ? it.getReserved(ut) : it.h[ut]).getValue("ActorEvents_20", "_PlayerDirection");
+                        			ot.growTo(
+                        				(200 * (2 * parseNum(gt) - 1)) / 100, 2, 0.01, G.linear);
+                        		} else if (106 == s) {
+                        			var mt = b.engine.gameAttributes;
+                        			null != e.WeaponType ? mt.setReserved("WeaponType", 100) : (mt.h.WeaponType = 100);
+                        			var dt = b.engine,
+                        				ct = b.engine.getGameAttribute("OtherPlayers"),
+                        				pt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				ht = (null != e[pt] ? ct.getReserved(pt) : ct.h[pt]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				bt = parseNum(ht),
+                        				ft = dt.gameAttributes,
+                        				yt = 2 * bt - 1;
+                        			null != e.DummyNumber3 ? ft.setReserved("DummyNumber3", yt) : (ft.h.DummyNumber3 = yt);
+                        			var Rt = h.getActorType(7),
+                        				vt = b.engine.getGameAttribute("OtherPlayers"),
+                        				Ft = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Nt = (null != e[Ft] ? vt.getReserved(Ft) : vt.h[Ft]).getX() + 30,
+                        				_t = b.engine.getGameAttribute("OtherPlayers"),
+                        				It = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Dt = (null != e[It] ? _t.getReserved(It) : _t.h[It]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				Et = parseNum(Dt),
+                        				St = b.engine.getGameAttribute("OtherPlayers"),
+                        				Gt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(Rt, Nt + 37 * (2 * Et - 1), (null != e[Gt] ? St.getReserved(Gt) : St.h[Gt]).getY() - 30, 1);
+                        		} else if (107 == s) {
+                        			H._customBlock_AddBuffType(107, t._customBlock_GetTalentNumber(2, 107));
+                        			var Tt = b.engine.gameAttributes;
+                        			null != e.DummyText ? Tt.setReserved("DummyText", "Shout") : (Tt.h.DummyText = "Shout"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else if (108 == s) {
+                        			H._customBlock_AddBuffType(108, 120);
+                        			var Ut = b.engine.gameAttributes;
+                        			null != e.DummyText ? Ut.setReserved("DummyText", "Heart") : (Ut.h.DummyText = "Heart"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else if (115 == s) {
+                        			var Mt = b.engine.getGameAttribute("OtherPlayers"),
+                        				Vt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			if ("7" == (null != e[Vt] ? Mt.getReserved(Vt) : Mt.h[Vt]).getAnimation() && h.randomFloat() < t._customBlock_GetTalentNumber(1, 115) / 100) {
+                        				var Ct = b.engine,
+                        					Bt = -1 * H._customBlock_SkillStats("FishingSpeed") + 0.5,
+                        					Pt = Ct.gameAttributes;
+                        				null != e.ActionTimer ? Pt.setReserved("ActionTimer", Bt) : (Pt.h.ActionTimer = Bt);
+                        			}
+                        			var Ot = b.engine.gameAttributes;
+                        			null != e.DummyText ? Ot.setReserved("DummyText", "Worm") : (Ot.h.DummyText = "Worm"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else if (135 == s) {
+                        			if (!(0.5 < H._customBlock_GetBuffBonuses(135, 1))) {
+                        				var wt = b.engine.gameAttributes;
+                        				null != e.DummyText ? wt.setReserved("DummyText", "Fire") : (wt.h.DummyText = "Fire"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        			}
+                        			H._customBlock_AddBuffType(135, t._customBlock_GetTalentNumber(1, 135));
+                        		} else if (136 == s) {
+                        			if (0 < H._customBlock_GetBuffBonuses(135, 1)) {
+                        				for (var kt = 0, xt = b.engine.getGameAttribute("BuffsActive").length; kt < xt;) {
+                        					var Qt = kt++;
+                        					135 == b.engine.getGameAttribute("BuffsActive")[Qt][0] && (b.engine.getGameAttribute("BuffsActive")[Qt][1] = 1);
+                        				}
+                        				var Xt = b.engine.gameAttributes;
+                        				null != e.WeaponType ? Xt.setReserved("WeaponType", 3) : (Xt.h.WeaponType = 3);
+                        				var Lt = h.getActorType(575),
+                        					zt = b.engine.getGameAttribute("OtherPlayers"),
+                        					Yt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					Wt = (null != e[Yt] ? zt.getReserved(Yt) : zt.h[Yt]).getX() + 15,
+                        					Zt = b.engine.getGameAttribute("OtherPlayers"),
+                        					Ht = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        				h.createRecycledActor(Lt, Wt, (null != e[Ht] ? Zt.getReserved(Ht) : Zt.h[Ht]).getY() - -5, 1);
+                        				var Jt = b.engine.gameAttributes;
+                        				null != e.DummyNumber ? Jt.setReserved("DummyNumber", 0) : (Jt.h.DummyNumber = 0);
+                        				for (var jt = 0, qt = b.engine.getGameAttribute("MapMonstersList").length; jt < qt;) {
+                        					var Kt = jt++;
+                        					if (15 > b.engine.getGameAttribute("DummyNumber") && 1 == b.engine.getGameAttribute("MonsterAlive")[Kt + 1] && 0 == b.engine.getGameAttribute("MapMonstersList")[Kt].getValue("ActorEvents_1", "_PetStatus") && 420 > t._customBlock_DistanceEqn(b.engine.getGameAttribute("MapMonstersList")[Kt].getX(), b.engine.getGameAttribute("MapMonstersList")[Kt].getY(), U._customBlock_Player("actor")[0].getXCenter(), U._customBlock_Player("actor")[0].getYCenter())) {
+                        						b.engine.getGameAttribute("dummyActor")[0] = b.engine.getGameAttribute("MapMonstersList")[Kt];
+                        						var $t = b.engine.gameAttributes,
+                        							en = [];
+                        						null != e.DummyList ? $t.setReserved("DummyList", en) : ($t.h.DummyList = en), b.engine.getGameAttribute("DummyList").push(t._customBlock_GetTalentNumber(1, 136) / 500);
+                        						var tn = b.engine,
+                        							nn = "" + t._customBlock_CreateDmgPixel(h.randomInt(4, 6), b.engine.getGameAttribute("MapMonstersList")[Kt], b.engine.getGameAttribute("DummyList")),
+                        							sn = tn.gameAttributes,
+                        							an = nn;
+                        						null != e.DummyText ? sn.setReserved("DummyText", an) : (sn.h.DummyText = an);
+                        						var rn = b.engine,
+                        							An = b.engine.getGameAttribute("DummyNumber") + 1,
+                        							ln = rn.gameAttributes,
+                        							on = An;
+                        						null != e.DummyNumber ? ln.setReserved("DummyNumber", on) : (ln.h.DummyNumber = on);
+                        						var un = b.engine.gameAttributes;
+                        						null != e.WeaponType ? un.setReserved("WeaponType", 11) : (un.h.WeaponType = 11),
+                        							h.createRecycledActor(h.getActorType(7), b.engine.getGameAttribute("MapMonstersList")[Kt].getXCenter(), b.engine.getGameAttribute("MapMonstersList")[Kt].getYCenter(), 1),
+                        							h.getLastCreatedActor().setCurrentFrame(11);
+                        					}
+                        				}
+                        			}
+                        		} else if (137 == s) {
+                        			var gn = b.engine.gameAttributes;
+                        			null != e.WeaponType ? gn.setReserved("WeaponType", 2) : (gn.h.WeaponType = 2);
+                        			var mn = h.getActorType(575),
+                        				dn = b.engine.getGameAttribute("OtherPlayers"),
+                        				cn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				pn = (null != e[cn] ? dn.getReserved(cn) : dn.h[cn]).getX() + 8,
+                        				hn = b.engine.getGameAttribute("OtherPlayers"),
+                        				bn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(mn, pn, (null != e[bn] ? hn.getReserved(bn) : hn.h[bn]).getY() - -15, 1);
+                        		} else if (145 == s) {
+                        			for (var fn = 0; 10 > fn;) {
+                        				var yn = fn++;
+                        				if (3 == b.engine.getGameAttribute("Cooking")[yn][0]) var Rn = b.engine.getGameAttribute("Cooking")[yn][10],
+                        					vn = 1 < parseNum(Rn);
+                        				else vn = !1;
+                        				vn && ((b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[89] = 1),
+                        					(b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[62] = yn), b.engine.getGameAttribute("PixelHelperActor")[21].setValue("ActorEvents_510", "_DL2", []), b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_DL2").push(w._customBlock_CookingR("PossibleRecipes", 0, 0)), b.engine.getGameAttribute("PixelHelperActor")[21].setValue("ActorEvents_510", "_DL2", b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[69]), b.engine.getGameAttribute("PixelHelperActor")[21].setValue("ActorEvents_510", "_TRIGGEREDtext", "z"), b.engine.getGameAttribute("PixelHelperActor")[21].shout("_customEvent_CookingThing"));
+                        			}
+                        			(b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[62] = -1),
+                        			(b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[63] = -1),
+                        			(b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[68] = -1);
+                        			var Fn = b.engine.gameAttributes;
+                        			null != e.DummyText ? Fn.setReserved("DummyText", "Tongue") : (Fn.h.DummyText = "Tongue"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else if (120 == s) {
+                        			var Nn = b.engine.gameAttributes;
+                        			null != e.WeaponType ? Nn.setReserved("WeaponType", 24) : (Nn.h.WeaponType = 24);
+                        			var _n = h.getActorType(7),
+                        				In = b.engine.getGameAttribute("OtherPlayers"),
+                        				Dn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				En = (null != e[Dn] ? In.getReserved(Dn) : In.h[Dn]).getX() + 37,
+                        				Sn = b.engine.getGameAttribute("OtherPlayers"),
+                        				Gn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Tn = (null != e[Gn] ? Sn.getReserved(Gn) : Sn.h[Gn]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				Un = parseNum(Tn),
+                        				Mn = b.engine.getGameAttribute("OtherPlayers"),
+                        				Vn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(_n, En + 40 * (2 * Un - 1), (null != e[Vn] ? Mn.getReserved(Vn) : Mn.h[Vn]).getY() - -10, 1);
+                        			var Cn = h.getLastCreatedActor(),
+                        				Bn = b.engine.getGameAttribute("OtherPlayers"),
+                        				Pn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				On = (null != e[Pn] ? Bn.getReserved(Pn) : Bn.h[Pn]).getValue("ActorEvents_20", "_PlayerDirection");
+                        			Cn.growTo(
+                        				(200 * (2 * parseNum(On) - 1)) / 100, 2, 0.01, G.linear);
+                        		} else if (121 == s) {
+                        			var wn = b.engine.gameAttributes;
+                        			null != e.WeaponType ? wn.setReserved("WeaponType", 102) : (wn.h.WeaponType = 102);
+                        			var kn = b.engine,
+                        				xn = b.engine.getGameAttribute("OtherPlayers"),
+                        				Qn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Xn = (null != e[Qn] ? xn.getReserved(Qn) : xn.h[Qn]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				Ln = parseNum(Xn),
+                        				zn = kn.gameAttributes,
+                        				Yn = 2 * Ln - 1;
+                        			null != e.DummyNumber3 ? zn.setReserved("DummyNumber3", Yn) : (zn.h.DummyNumber3 = Yn);
+                        			var Wn = h.getActorType(7),
+                        				Zn = b.engine.getGameAttribute("OtherPlayers"),
+                        				Hn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Jn = (null != e[Hn] ? Zn.getReserved(Hn) : Zn.h[Hn]).getX() + 10,
+                        				jn = b.engine.getGameAttribute("OtherPlayers"),
+                        				qn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Kn = (null != e[qn] ? jn.getReserved(qn) : jn.h[qn]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				$n = parseNum(Kn),
+                        				es = b.engine.getGameAttribute("OtherPlayers"),
+                        				ts = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(Wn, Jn + 10 * (2 * $n - 1), (null != e[ts] ? es.getReserved(ts) : es.h[ts]).getY() - -20, 1);
+                        		} else if (122 == s) {
+                        			H._customBlock_AddBuffType(122, 10);
+                        			var ns = b.engine.gameAttributes;
+                        			null != e.DummyText ? ns.setReserved("DummyText", "Wall") : (ns.h.DummyText = "Wall"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else if (124 == s) H._customBlock_AddBuffType(124, 240);
+                        		else if (130 == s) {
+                        			for (var ss = 0,
+                        					as = b.engine.getGameAttribute("Refinery")[0][0],
+                        					rs = Math.round(1 + Math.floor(parseNum(as) / 3)); ss < rs;) {
+                        				var As = ss++,
+                        					ls = b.engine.getGameAttribute("Refinery")[0],
+                        					os = b.engine.getGameAttribute("Refinery")[0][As + 1];
+                        				ls[As + 1] = parseNum(os) + t._customBlock_GetTalentNumber(1, 130) * w._customBlock_Refinery("CycleInitialTime", As);
+                        			}
+                        			var is = b.engine.gameAttributes;
+                        			null != e.DummyText ? is.setReserved("DummyText", "Ref") : (is.h.DummyText = "Ref"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else if (270 == s) {
+                        			var us = b.engine.gameAttributes;
+                        			null != e.WeaponType ? us.setReserved("WeaponType", 14) : (us.h.WeaponType = 14);
+                        			var gs = b.engine,
+                        				ms = b.engine.getGameAttribute("OtherPlayers"),
+                        				ds = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				cs = (null != e[ds] ? ms.getReserved(ds) : ms.h[ds]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				ps = parseNum(cs),
+                        				hs = gs.gameAttributes,
+                        				bs = 2 * ps - 1;
+                        			null != e.DummyNumber ? hs.setReserved("DummyNumber", bs) : (hs.h.DummyNumber = bs);
+                        			var fs = h.getActorType(7),
+                        				ys = b.engine.getGameAttribute("OtherPlayers"),
+                        				Rs = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				vs = (null != e[Rs] ? ys.getReserved(Rs) : ys.h[Rs]).getX(),
+                        				Fs = b.engine.getGameAttribute("OtherPlayers"),
+                        				Ns = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				_s = (null != e[Ns] ? Fs.getReserved(Ns) : Fs.h[Ns]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				Is = parseNum(_s),
+                        				Ds = b.engine.getGameAttribute("OtherPlayers"),
+                        				Es = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(fs, vs + (20 * (2 * Is - 1) + 35), (null != e[Es] ? Ds.getReserved(Es) : Ds.h[Es]).getY() - -6, 1);
+                        			var Ss = h.getLastCreatedActor(),
+                        				Gs = b.engine.getGameAttribute("OtherPlayers"),
+                        				Ts = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Us = (null != e[Ts] ? Gs.getReserved(Ts) : Gs.h[Ts]).getValue("ActorEvents_20", "_PlayerDirection");
+                        			Ss.growTo(
+                        				(150 * (2 * parseNum(Us) - 1)) / 100, 1.5, 0.01, G.linear);
+                        		} else if (271 == s) {
+                        			var Ms = b.engine.gameAttributes;
+                        			null != e.WeaponType ? Ms.setReserved("WeaponType", 18) : (Ms.h.WeaponType = 18);
+                        			var Vs = b.engine,
+                        				Cs = b.engine.getGameAttribute("OtherPlayers"),
+                        				Bs = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Ps = (null != e[Bs] ? Cs.getReserved(Bs) : Cs.h[Bs]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				Os = parseNum(Ps),
+                        				ws = Vs.gameAttributes,
+                        				ks = 2 * Os - 1;
+                        			null != e.DummyNumber ? ws.setReserved("DummyNumber", ks) : (ws.h.DummyNumber = ks);
+                        			var xs = h.getActorType(7),
+                        				Qs = b.engine.getGameAttribute("OtherPlayers"),
+                        				Xs = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Ls = (null != e[Xs] ? Qs.getReserved(Xs) : Qs.h[Xs]).getX() + 35,
+                        				zs = b.engine.getGameAttribute("OtherPlayers"),
+                        				Ys = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Ws = (null != e[Ys] ? zs.getReserved(Ys) : zs.h[Ys]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				Zs = parseNum(Ws),
+                        				Hs = b.engine.getGameAttribute("OtherPlayers"),
+                        				Js = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(xs, Ls + 42 * (2 * Zs - 1), (null != e[Js] ? Hs.getReserved(Js) : Hs.h[Js]).getY() - -23, 1);
+                        			var js = h.getLastCreatedActor(),
+                        				qs = b.engine.getGameAttribute("OtherPlayers"),
+                        				Ks = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				$s = (null != e[Ks] ? qs.getReserved(Ks) : qs.h[Ks]).getValue("ActorEvents_20", "_PlayerDirection");
+                        			js.growTo(
+                        				(200 * (2 * (null == $s ? 0 : "number" == typeof $s ? d.__cast($s, k) : "number" == typeof $s && (0 | $s) === $s ? d.__cast($s, l) : "boolean" == typeof $s ? d.__cast($s, n) ? 1 : 0 : "string" == typeof $s ? parseFloat($s) : parseFloat(g.string($s))) - 1)) / 100, 2, 0.01, G.linear);
+                        		} else if (273 == s) {
+                        			H._customBlock_AddBuffType(273, 60 * t._customBlock_GetTalentNumber(2, 273));
+                        			var ea = b.engine.gameAttributes;
+                        			null != e.DummyText ? ea.setReserved("DummyText", "Spd") : (ea.h.DummyText = "Spd"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else if (285 == s) {
+                        			var ta = b.engine.getGameAttribute("DNSM"),
+                        				na = t._customBlock_GetTalentNumber(1, 285);
+                        			null != e.Cast285 ? ta.setReserved("Cast285", na) : (ta.h.Cast285 = na);
+                        			for (var sa = 0,
+                        					aa = b.engine.getGameAttribute("DNSM"),
+                        					ra = null != e.Cast285 ? aa.getReserved("Cast285") : aa.h.Cast285,
+                        					Aa = 0 | parseNum(ra); sa < Aa;) {
+                        				var la = sa++,
+                        					oa = b.engine.gameAttributes;
+                        				null != e.WeaponType ? oa.setReserved("WeaponType", 101) : (oa.h.WeaponType = 101);
+                        				var ia = b.engine.gameAttributes,
+                        					ua = la;
+                        				null != e.dummyDamageDealt ? ia.setReserved("dummyDamageDealt", ua) : (ia.h.dummyDamageDealt = ua);
+                        				var ga = h.getActorType(7),
+                        					ma = b.engine.getGameAttribute("OtherPlayers"),
+                        					da = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					ca = ma,
+                        					pa = (null != e[da] ? ca.getReserved(da) : ca.h[da]).getXCenter() + -36,
+                        					ha = b.engine.getGameAttribute("OtherPlayers"),
+                        					ba = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					fa = ha;
+                        				h.createRecycledActor(ga, pa, (null != e[ba] ? fa.getReserved(ba) : fa.h[ba]).getY() - 60, 1);
+                        			}
+                        		} else if (286 == s) {
+                        			var ya = b.engine.getGameAttribute("OtherPlayers"),
+                        				Ra = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			if (null != (null != e[Ra] ? ya.getReserved(Ra) : ya.h[Ra]).getValue("ActorEvents_20", "_TargetEnemy")) {
+                        				var va = b.engine.getGameAttribute("dummyActor"),
+                        					Fa = b.engine.getGameAttribute("OtherPlayers"),
+                        					Na = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        				va[0] = (null != e[Na] ? Fa.getReserved(Na) : Fa.h[Na]).getValue("ActorEvents_20", "_TargetEnemy");
+                        				var _a = b.engine.getGameAttribute("OtherPlayers"),
+                        					Ia = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        				if ((null != e[Ia] ? _a.getReserved(Ia) : _a.h[Ia]).getValue("ActorEvents_20", "_PlayerNode") == b.engine.getGameAttribute("dummyActor")[0].getValue("ActorEvents_1", "_MonsterNODE")) {
+                        					b.engine.getGameAttribute("dummyActor")[1] = b.engine.getGameAttribute("dummyActor")[0];
+                        					var Da = b.engine.gameAttributes;
+                        					null != e.WeaponType ? Da.setReserved("WeaponType", 8) : (Da.h.WeaponType = 8);
+                        					var Ea = h.getActorType(7),
+                        						Sa = b.engine.getGameAttribute("dummyActor")[0].getX(),
+                        						Ga = b.engine.getGameAttribute("dummyActor")[0].getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        						Ta = parseNum(Ga),
+                        						Ua = b.engine.getGameAttribute("dummyActor")[0].getY(),
+                        						Ma = b.engine.getGameAttribute("dummyActor")[0].getValue("ActorEvents_1", "_Monster0ffsetY");
+                        					h.createRecycledActor(Ea, Sa + Ta, Ua + parseNum(Ma), 1);
+                        					var Va = b.engine.getGameAttribute("DNSM");
+                        					null != e.Cast286 ? Va.setReserved("Cast286", 0) : (Va.h.Cast286 = 0);
+                        					for (var Ca = 0, Ba = b.engine.getGameAttribute("MapMonstersList").length; Ca < Ba;) {
+                        						var Pa = Ca++;
+                        						if (b.engine.getGameAttribute("MapMonstersList")[Pa] != b.engine.getGameAttribute("dummyActor")[0]) {
+                        							var Oa = b.engine.getGameAttribute("DNSM"),
+                        								wa = null != e.Cast286 ? Oa.getReserved("Cast286") : Oa.h.Cast286;
+                        							if (parseNum(wa) < t._customBlock_GetTalentNumber(1, 286) && 1 == b.engine.getGameAttribute("MonsterAlive")[Pa + 1] && 50 > t._customBlock_DistanceEqn(b.engine.getGameAttribute("MapMonstersList")[Pa].getX(), b.engine.getGameAttribute("MapMonstersList")[Pa].getY(), b.engine.getGameAttribute("dummyActor")[1].getX(), b.engine.getGameAttribute("dummyActor")[1].getY())) {
+                        								b.engine.getGameAttribute("dummyActor")[0] = b.engine.getGameAttribute("MapMonstersList")[Pa];
+                        								var ka = b.engine.gameAttributes;
+                        								null != e.WeaponType ? ka.setReserved("WeaponType", 8) : (ka.h.WeaponType = 8);
+                        								var xa = h.getActorType(7),
+                        									Qa = b.engine.getGameAttribute("dummyActor")[0].getX(),
+                        									Xa = b.engine.getGameAttribute("dummyActor")[0].getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        									La = parseNum(Xa),
+                        									za = b.engine.getGameAttribute("dummyActor")[0].getY(),
+                        									Ya = b.engine.getGameAttribute("dummyActor")[0].getValue("ActorEvents_1", "_Monster0ffsetY");
+                        								h.createRecycledActor(xa, Qa + La, za + parseNum(Ya), 1);
+                        								var Wa = b.engine.getGameAttribute("DNSM"),
+                        									Za = b.engine.getGameAttribute("DNSM"),
+                        									Ha = null != e.Cast286 ? Za.getReserved("Cast286") : Za.h.Cast286,
+                        									Ja = Wa,
+                        									ja = parseNum(Ha) + 1;
+                        								null != e.Cast286 ? Ja.setReserved("Cast286", ja) : (Ja.h.Cast286 = ja);
+                        							}
+                        						}
+                        					}
+                        				}
+                        			}
+                        		} else if (288 == s) {
+                        			H._customBlock_AddBuffType(288, 120 + (60 * t._customBlock_GetTalentNumber(2, 288)) / 7);
+                        			var qa = b.engine.gameAttributes;
+                        			null != e.DummyText ? qa.setReserved("DummyText", "Range") : (qa.h.DummyText = "Range"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else if (300 == s) {
+                        			var Ka = b.engine.gameAttributes;
+                        			null != e.WeaponType ? Ka.setReserved("WeaponType", 26) : (Ka.h.WeaponType = 26);
+                        			var $a = b.engine,
+                        				er = b.engine.getGameAttribute("OtherPlayers"),
+                        				tr = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				nr = (null != e[tr] ? er.getReserved(tr) : er.h[tr]).getValue("ActorEvents_20", "_PlayerNode"),
+                        				sr = parseNum(nr),
+                        				ar = $a.gameAttributes;
+                        			null != e.DummyNumber3 ? ar.setReserved("DummyNumber3", sr) : (ar.h.DummyNumber3 = sr);
+                        			var rr = h.getActorType(7),
+                        				Ar = b.engine.getGameAttribute("OtherPlayers"),
+                        				lr = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				or = (null != e[lr] ? Ar.getReserved(lr) : Ar.h[lr]).getX() + 37,
+                        				ir = b.engine.getGameAttribute("OtherPlayers"),
+                        				ur = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				gr = (null != e[ur] ? ir.getReserved(ur) : ir.h[ur]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        				mr = parseNum(gr),
+                        				dr = b.engine.getGameAttribute("OtherPlayers"),
+                        				cr = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(rr, or + 40 * (2 * mr - 1), (null != e[cr] ? dr.getReserved(cr) : dr.h[cr]).getY() - -10, 1);
+                        			var pr = h.getLastCreatedActor(),
+                        				hr = b.engine.getGameAttribute("OtherPlayers"),
+                        				br = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				fr = (null != e[br] ? hr.getReserved(br) : hr.h[br]).getValue("ActorEvents_20", "_PlayerDirection");
+                        			pr.growTo(
+                        				(200 * (2 * parseNum(fr) - 1)) / 100, 2, 0.01, G.linear);
+                        		} else if (301 == s) {
+                        			var yr = b.engine.gameAttributes;
+                        			null != e.WeaponType ? yr.setReserved("WeaponType", 27) : (yr.h.WeaponType = 27);
+                        			var Rr = b.engine.gameAttributes;
+                        			null != e.DummyNumber3 ? Rr.setReserved("DummyNumber3", 0) : (Rr.h.DummyNumber3 = 0);
+                        			var vr = h.getActorType(7),
+                        				Fr = b.engine.getGameAttribute("OtherPlayers"),
+                        				Nr = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				_r = (null != e[Nr] ? Fr.getReserved(Nr) : Fr.h[Nr]).getXCenter() + -9,
+                        				Ir = b.engine.getGameAttribute("NodeY"),
+                        				Dr = b.engine.getGameAttribute("OtherPlayers"),
+                        				Er = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Sr = (null != e[Er] ? Dr.getReserved(Er) : Dr.h[Er]).getValue("ActorEvents_20", "_PlayerNode"),
+                        				Gr = Ir[0 | parseNum(Sr)];
+                        			h.createRecycledActor(vr, _r, parseNum(Gr) - 26, 1);
+                        			for (var Tr = 0, Ur = Math.round(t._customBlock_GetTalentNumber(1, 301) - 1); Tr < Ur;) {
+                        				var Mr = Tr++,
+                        					Vr = b.engine,
+                        					Cr = h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_NumberOfNodes"),
+                        					Br = h.randomInt(0, Math.round(parseNum(Cr) - 1)),
+                        					Pr = Vr.gameAttributes,
+                        					Or = Br;
+                        				null != e.DummyNumber ? Pr.setReserved("DummyNumber", Or) : (Pr.h.DummyNumber = Or);
+                        				var wr = b.engine,
+                        					kr = b.engine.getGameAttribute("OtherPlayers"),
+                        					xr = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					Qr = kr,
+                        					Xr = (null != e[xr] ? Qr.getReserved(xr) : Qr.h[xr]).getValue("ActorEvents_20", "_PlayerNode"),
+                        					Lr = parseNum(Xr),
+                        					zr = wr.gameAttributes,
+                        					Yr = Lr;
+                        				null != e.DummyNumber2 ? zr.setReserved("DummyNumber2", Yr) : (zr.h.DummyNumber2 = Yr);
+                        				for (var Wr = 0; 20 > Wr;) {
+                        					var Zr = Wr++,
+                        						Hr = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("DummyNumber")],
+                        						Jr = parseNum(Hr),
+                        						jr = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("DummyNumber")],
+                        						qr = parseNum(jr),
+                        						Kr = b.engine.getGameAttribute("OtherPlayers"),
+                        						$r = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						eA = Kr,
+                        						tA = (null != e[$r] ? eA.getReserved($r) : eA.h[$r]).getXCenter(),
+                        						nA = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("DummyNumber2")];
+                        					if (275 > t._customBlock_DistanceEqn(Jr, qr, tA, parseNum(nA))) var sA = !0;
+                        					else {
+                        						var aA = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("DummyNumber")],
+                        							rA = parseNum(aA),
+                        							AA = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("DummyNumber")],
+                        							lA = parseNum(AA),
+                        							oA = b.engine.getGameAttribute("OtherPlayers"),
+                        							iA = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							uA = oA,
+                        							gA = (null != e[iA] ? uA.getReserved(iA) : uA.h[iA]).getXCenter(),
+                        							mA = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("DummyNumber2")];
+                        						sA = 275 > t._customBlock_DistanceEqn(rA, lA, gA, parseNum(mA));
+                        					}
+                        					if (sA || b.engine.getGameAttribute("DummyNumber") == b.engine.getGameAttribute("DummyNumber2")) {
+                        						var dA = b.engine.gameAttributes;
+                        						null != e.WeaponType ? dA.setReserved("WeaponType", 0) : (dA.h.WeaponType = 0);
+                        						for (var cA = 0, pA = b.engine.getGameAttribute("MapMonstersList").length; cA < pA;) {
+                        							var hA = cA++;
+                        							if (b.engine.getGameAttribute("DummyNumber") == b.engine.getGameAttribute("MapMonstersList")[hA].getValue("ActorEvents_1", "_MonsterNODE")) {
+                        								var bA = b.engine.gameAttributes;
+                        								null != e.WeaponType ? bA.setReserved("WeaponType", 1) : (bA.h.WeaponType = 1);
+                        								break;
+                        							}
+                        						}
+                        						if (1 == b.engine.getGameAttribute("WeaponType")) break;
+                        						var fA = b.engine,
+                        							yA = h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_NumberOfNodes"),
+                        							RA = h.randomInt(0, Math.round(parseNum(yA) - 1)),
+                        							vA = fA.gameAttributes,
+                        							FA = RA;
+                        						null != e.DummyNumber ? vA.setReserved("DummyNumber", FA) : (vA.h.DummyNumber = FA);
+                        					} else {
+                        						var NA = b.engine,
+                        							_A = h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_NumberOfNodes"),
+                        							IA = h.randomInt(0, Math.round(parseNum(_A) - 1)),
+                        							DA = NA.gameAttributes,
+                        							EA = IA;
+                        						if ((null != e.DummyNumber ? DA.setReserved("DummyNumber", EA) : (DA.h.DummyNumber = EA), 19 == Zr)) {
+                        							var SA = b.engine,
+                        								GA = b.engine.getGameAttribute("OtherPlayers"),
+                        								TA = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        								UA = GA,
+                        								MA = (null != e[TA] ? UA.getReserved(TA) : UA.h[TA]).getValue("ActorEvents_20", "_PlayerNode"),
+                        								VA = parseNum(MA),
+                        								CA = SA.gameAttributes,
+                        								BA = VA;
+                        							null != e.DummyNumber ? CA.setReserved("DummyNumber", BA) : (CA.h.DummyNumber = BA);
+                        						}
+                        					}
+                        				}
+                        				var PA = b.engine.gameAttributes;
+                        				null != e.WeaponType ? PA.setReserved("WeaponType", 27) : (PA.h.WeaponType = 27);
+                        				var OA = b.engine.gameAttributes,
+                        					wA = 2 * Mr + 2;
+                        				null != e.DummyNumber3 ? OA.setReserved("DummyNumber3", wA) : (OA.h.DummyNumber3 = wA);
+                        				var kA = b.engine,
+                        					xA = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("DummyNumber")],
+                        					QA = parseNum(xA),
+                        					XA = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("DummyNumber")],
+                        					LA = h.randomInt(0 | QA,
+                        						(parseNum(XA) - 38) | 0),
+                        					zA = kA.gameAttributes,
+                        					YA = LA;
+                        				null != e.DummyNumber2 ? zA.setReserved("DummyNumber2", YA) : (zA.h.DummyNumber2 = YA);
+                        				var WA = h.getActorType(7),
+                        					ZA = b.engine.getGameAttribute("OtherPlayers"),
+                        					HA = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					JA = ZA,
+                        					jA = (null != e[HA] ? JA.getReserved(HA) : JA.h[HA]).getXCenter() - 300,
+                        					qA = b.engine.getGameAttribute("OtherPlayers"),
+                        					KA = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					$A = qA,
+                        					el = Math.max(jA, Math.min((null != e[KA] ? $A.getReserved(KA) : $A.h[KA]).getXCenter() + 300, b.engine.getGameAttribute("DummyNumber2"))),
+                        					tl = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("DummyNumber")];
+                        				h.createRecycledActor(WA, el, parseNum(tl) - 26, 1);
+                        			}
+                        		} else if (302 == s) {
+                        			H._customBlock_AddBuffType(302, 30);
+                        			var nl = b.engine.gameAttributes;
+                        			null != e.DummyText ? nl.setReserved("DummyText", "Wolf") : (nl.h.DummyText = "Wolf"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else if (303 == s)
+                        			for (var sl = 0, al = b.engine.getGameAttribute("MapMonstersList").length; sl < al;) {
+                        				var rl = sl++;
+                        				if (1 == b.engine.getGameAttribute("MonsterAlive")[rl + 1] && t._customBlock_DistanceEqn(b.engine.getGameAttribute("MapMonstersList")[rl].getX(), b.engine.getGameAttribute("MapMonstersList")[rl].getY(), U._customBlock_Player("actor")[0].getXCenter(), U._customBlock_Player("actor")[0].getYCenter()) < t._customBlock_GetTalentNumber(1, 303) && 0 == b.engine.getGameAttribute("MapMonstersList")[rl].getValue("ActorEvents_1", "_PetStatus")) {
+                        					b.engine.getGameAttribute("dummyActor")[0] = b.engine.getGameAttribute("MapMonstersList")[rl];
+                        					var Al = b.engine.gameAttributes;
+                        					null != e.WeaponType ? Al.setReserved("WeaponType", 28) : (Al.h.WeaponType = 28);
+                        					var ll = h.getActorType(7),
+                        						ol = b.engine.getGameAttribute("dummyActor")[0].getXCenter() + -14,
+                        						il = b.engine.getGameAttribute("NodeY"),
+                        						ul = b.engine.getGameAttribute("dummyActor")[0].getValue("ActorEvents_1", "_MonsterNODE"),
+                        						gl = il[0 | parseNum(ul)];
+                        					h.createRecycledActor(ll, ol, parseNum(gl) - 18, 1),
+                        						t._customBlock_AddStatusToMonster("StatusNoMove", b.engine.getGameAttribute("dummyActor")[0], t._customBlock_GetTalentNumber(2, 303)),
+                        						b.engine.getGameAttribute("dummyActor")[0].setXVelocity(0);
+                        					var ml = h.getLastCreatedActor(),
+                        						dl = b.engine.getGameAttribute("OtherPlayers"),
+                        						cl = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						pl = dl,
+                        						hl = (null != e[cl] ? pl.getReserved(cl) : pl.h[cl]).getValue("ActorEvents_20", "_PlayerDirection");
+                        					ml.growTo(
+                        						(200 * (2 * parseNum(hl) - 1)) / 100, 2, 0.01, G.linear);
+                        				}
+                        			}
+                        		else if (310 == s) {
+                        			var bl = b.engine.gameAttributes;
+                        			null != e.MenuType2 ? bl.setReserved("MenuType2", 32) : (bl.h.MenuType2 = 32);
+                        		} else if (361 == s) {
+                        			var fl = b.engine.gameAttributes;
+                        			null != e.DummyText3 ? fl.setReserved("DummyText3", "PetSummonSpawn") : (fl.h.DummyText3 = "PetSummonSpawn");
+                        			var yl = b.engine,
+                        				Rl = t._customBlock_GetTalentNumber(1, 361),
+                        				vl = yl.gameAttributes;
+                        			null != e.DummyNumber2 ? vl.setReserved("DummyNumber2", Rl) : (vl.h.DummyNumber2 = Rl);
+                        			var Fl = b.engine.getGameAttribute("OtherPlayers"),
+                        				Nl = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				_l = (null != e[Nl] ? Fl.getReserved(Nl) : Fl.h[Nl]).getValue("ActorEvents_20", "_PlayerNode"),
+                        				Il = parseNum(_l),
+                        				Dl = b.engine.getGameAttribute("OtherPlayers"),
+                        				El = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			t._customBlock_CreateMonster("Pet2", Il, (null != e[El] ? Dl.getReserved(El) : Dl.h[El]).getXCenter());
+                        		} else if (362 == s) {
+                        			var Sl = b.engine.gameAttributes;
+                        			null != e.DummyNumber ? Sl.setReserved("DummyNumber", 0) : (Sl.h.DummyNumber = 0);
+                        			for (var Gl = 0, Tl = b.engine.getGameAttribute("MapMonstersList").length; Gl < Tl;) {
+                        				var Ul = Gl++;
+                        				if (b.engine.getGameAttribute("DummyNumber") < t._customBlock_GetTalentNumber(1, 362) && 1 == b.engine.getGameAttribute("MonsterAlive")[Ul + 1] && 0 == b.engine.getGameAttribute("MapMonstersList")[Ul].getValue("ActorEvents_1", "_PetStatus") && 420 > t._customBlock_DistanceEqn(b.engine.getGameAttribute("MapMonstersList")[Ul].getX(), b.engine.getGameAttribute("MapMonstersList")[Ul].getY(), U._customBlock_Player("actor")[0].getXCenter(), U._customBlock_Player("actor")[0].getYCenter())) {
+                        					b.engine.getGameAttribute("dummyActor")[0] = b.engine.getGameAttribute("MapMonstersList")[Ul];
+                        					var Ml = b.engine.gameAttributes;
+                        					null != e.WeaponType ? Ml.setReserved("WeaponType", 1) : (Ml.h.WeaponType = 1);
+                        					var Vl = b.engine,
+                        						Cl = b.engine.getGameAttribute("MapMonstersList")[Ul].getValue("ActorEvents_1", "_MonsterNODE"),
+                        						Bl = parseNum(Cl),
+                        						Pl = Vl.gameAttributes,
+                        						Ol = Bl;
+                        					null != e.DummyNumber2 ? Pl.setReserved("DummyNumber2", Ol) : (Pl.h.DummyNumber2 = Ol);
+                        					var wl = b.engine.gameAttributes;
+                        					null != e.DummyText2 ? wl.setReserved("DummyText2", "none") : (wl.h.DummyText2 = "none");
+                        					var kl = h.getActorType(575),
+                        						xl = b.engine.getGameAttribute("MapMonstersList")[Ul].getXCenter() - 40,
+                        						Ql = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("DummyNumber2")];
+                        					h.createRecycledActor(kl, xl, parseNum(Ql) - h.randomInt(80, 125), 1);
+                        					var Xl = b.engine,
+                        						Ll = b.engine.getGameAttribute("DummyNumber") + 1,
+                        						zl = Xl.gameAttributes,
+                        						Yl = Ll;
+                        					null != e.DummyNumber ? zl.setReserved("DummyNumber", Yl) : (zl.h.DummyNumber = Yl);
+                        				}
+                        			}
+                        		} else if (363 == s) {
+                        			var Wl = b.engine.gameAttributes;
+                        			null != e.DummyText3 ? Wl.setReserved("DummyText3", "PetSummonSpawn") : (Wl.h.DummyText3 = "PetSummonSpawn");
+                        			var Zl = b.engine.gameAttributes;
+                        			null != e.DummyNumber2 ? Zl.setReserved("DummyNumber2", 2) : (Zl.h.DummyNumber2 = 2);
+                        			var Hl = b.engine.getGameAttribute("OtherPlayers"),
+                        				Jl = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				jl = (null != e[Jl] ? Hl.getReserved(Jl) : Hl.h[Jl]).getValue("ActorEvents_20", "_PlayerNode"),
+                        				ql = parseNum(jl),
+                        				Kl = b.engine.getGameAttribute("OtherPlayers"),
+                        				$l = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			t._customBlock_CreateMonster("Pet5", ql, (null != e[$l] ? Kl.getReserved($l) : Kl.h[$l]).getXCenter());
+                        		} else if (370 == s) {
+                        			H._customBlock_AddBuffType(370, 60 * t._customBlock_GetTalentNumber(1, 370));
+                        			var eo = b.engine.gameAttributes;
+                        			null != e.DummyText ? eo.setReserved("DummyText", "Wolf") : (eo.h.DummyText = "Wolf"), h.createRecycledActor(h.getActorType(209), 0, 0, 0);
+                        		} else xQ._customBlock_CastAttack2(s);
+                        		return "a";
+                        	}

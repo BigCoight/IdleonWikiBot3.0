@@ -1,0 +1,10 @@
+                        (A._customBlock_LimbRotation = function(t, n, s) {
+                        		var a = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			r = [];
+                        		return (null != e.XYrotList ? a.setReserved("XYrotList", r) : (a.h.XYrotList = r),
+                        			(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(null != e.XYrotList ? a.getReserved("XYrotList") : a.h.XYrotList).push(Math.round(Math.cos(0.01745329251994278 * (t + n)) * (s + b.engine.getGameAttribute("DummyNumber4")) - Math.cos(0.01745329251994278 * t) * s)),
+                        			(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(null != e.XYrotList ? a.getReserved("XYrotList") : a.h.XYrotList).push(Math.round(-1 * (Math.sin(0.01745329251994278 * (t + n)) * (s + b.engine.getGameAttribute("DummyNumber4")) - Math.sin(0.01745329251994278 * t) * s))),
+                        			(t = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.XYrotList ? t.getReserved("XYrotList") : t.h.XYrotList);
+                        	}

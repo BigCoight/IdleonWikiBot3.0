@@ -1,0 +1,14 @@
+                        (w._customBlock_ArcadeBonus = function(t) {
+                        		var s = b.engine.getGameAttribute("DNSM"),
+                        			a = b.engine.getGameAttribute("CustomLists");
+                        		(a = (null != e.ArcadeShopInfo ? a.getReserved("ArcadeShopInfo") : a.h.ArcadeShopInfo)[0 | t]),
+                        		null != e.ArcadBonDL ? s.setReserved("ArcadBonDL", a) : (s.h.ArcadBonDL = a),
+                        			(s = b.engine.getGameAttribute("DNSM")),
+                        			(s = "" + g.string((null != e.ArcadBonDL ? s.getReserved("ArcadBonDL") : s.h.ArcadBonDL)[3])),
+                        			(a = b.engine.getGameAttribute("DNSM")),
+                        			(a = null == (a = (null != e.ArcadBonDL ? a.getReserved("ArcadBonDL") : a.h.ArcadBonDL)[1]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)));
+                        		var r = b.engine.getGameAttribute("DNSM");
+                        		return (
+                        			(r = null == (r = (null != e.ArcadBonDL ? r.getReserved("ArcadBonDL") : r.h.ArcadBonDL)[2]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        			(t = b.engine.getGameAttribute("ArcadeUpg")[0 | t]), H._customBlock_ArbitraryCode5Inputs(s, a, r, parseNum(t), 0, 0));
+                        	}

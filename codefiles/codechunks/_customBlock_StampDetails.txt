@@ -1,0 +1,16 @@
+                        (t._customBlock_StampDetails = function(t) {
+                        		if (0 == Math.floor(t / 1e3)) {
+                        			var n = b.engine.getGameAttribute("ItemDefinitionsGET");
+                        			return (
+                        				(t = "StampA" + Math.round(t - 1e3 * Math.floor(t / 1e3) + 1)),
+                        				(t = null != e[t] ? n.getReserved(t) : n.h[t]),
+                        				("" + g.string(null != e.desc_line1 ? t.getReserved("desc_line1") : t.h.desc_line1)).split(","));
+                        		}
+                        		return 1 == Math.floor(t / 1e3) ? ((n = b.engine.getGameAttribute("ItemDefinitionsGET")),
+                        			(t = "StampB" + Math.round(t - 1e3 * Math.floor(t / 1e3) + 1)),
+                        			(t = null != e[t] ? n.getReserved(t) : n.h[t]),
+                        			("" + g.string(null != e.desc_line1 ? t.getReserved("desc_line1") : t.h.desc_line1)).split(",")) : ((n = b.engine.getGameAttribute("ItemDefinitionsGET")),
+                        			(t = "StampC" + Math.round(t - 1e3 * Math.floor(t / 1e3) + 1)),
+                        			(t = null != e[t] ? n.getReserved(t) : n.h[t]),
+                        			("" + g.string(null != e.desc_line1 ? t.getReserved("desc_line1") : t.h.desc_line1)).split(","));
+                        	}

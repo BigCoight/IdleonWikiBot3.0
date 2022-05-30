@@ -1,0 +1,16 @@
+                        (t._customBlock_playerfitsinshape = function(n, s, a, r, A) {
+                        		if ("circle" == n) {
+                        			(A = b.engine.getGameAttribute("OtherPlayers")),
+                        			(n = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        			(A = (null != e[n] ? A.getReserved(n) : A.h[n]).getXCenter()),
+                        			(n = b.engine.getGameAttribute("OtherPlayers"));
+                        			var l = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			return t._customBlock_DistanceEqn(s, r, A, (null != e[l] ? n.getReserved(l) : n.h[l]).getYCenter()) < a ? "yes" : "no";
+                        		}
+                        		return (
+                        			(n = b.engine.getGameAttribute("OtherPlayers")),
+                        			(l = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        			(null != e[l] ? n.getReserved(l) : n.h[l]).getXCenter() + 7 > s ? ((s = b.engine.getGameAttribute("OtherPlayers")), (n = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), (a = (null != e[n] ? s.getReserved(n) : s.h[n]).getXCenter() - 7 < a)) : (a = !1), a ? ((a = b.engine.getGameAttribute("OtherPlayers")),
+                        				(s = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        				(null != e[s] ? a.getReserved(s) : a.h[s]).getYCenter() + 30 > r ? ((r = b.engine.getGameAttribute("OtherPlayers")), (a = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), (r = (null != e[a] ? r.getReserved(a) : r.h[a]).getYCenter() - 2 < A)) : (r = !1)) : (r = !1), r ? "yes" : "no");
+                        	}

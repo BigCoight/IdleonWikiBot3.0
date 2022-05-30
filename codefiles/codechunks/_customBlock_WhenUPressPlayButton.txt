@@ -1,0 +1,705 @@
+                        (U._customBlock_WhenUPressPlayButton = function() {
+                        		for (var s = b.engine.getGameAttribute("PlayerDATABASE").keys(); s.hasNext();) {
+                        			var a = s.next(),
+                        				r = b.engine.gameAttributes,
+                        				A = "" + a;
+                        			null != e.DummyText ? r.setReserved("DummyText", A) : (r.h.DummyText = A);
+                        			for (var o = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					i = b.engine.getGameAttribute("DummyText"),
+                        					u = o,
+                        					m = null != e[i] ? u.getReserved(i) : u.h[i],
+                        					c = (null != e.NPCdialogue ? m.getReserved("NPCdialogue") : m.h.NPCdialogue).keys(); c.hasNext();) {
+                        				var h = c.next();
+                        				if ("Scripticus" == h) {
+                        					var f = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						y = b.engine.getGameAttribute("DummyText"),
+                        						R = f,
+                        						v = null != e[y] ? R.getReserved(y) : R.h[y],
+                        						F = null != e.QuestComplete ? v.getReserved("QuestComplete") : v.h.QuestComplete,
+                        						N = h + "2";
+                        					if (-1 == (null != e[N] ? F.getReserved(N) : F.h[N])) {
+                        						var _ = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							I = b.engine.getGameAttribute("DummyText"),
+                        							D = _,
+                        							S = null != e[I] ? D.getReserved(I) : D.h[I],
+                        							G = null != e.NPCdialogue ? S.getReserved("NPCdialogue") : S.h.NPCdialogue,
+                        							T = "" + h;
+                        						null != e[T] ? G.setReserved(T, 0) : (G.h[T] = 0);
+                        					}
+                        				} else {
+                        					var M = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						V = b.engine.getGameAttribute("DummyText"),
+                        						C = M,
+                        						B = null != e[V] ? C.getReserved(V) : C.h[V],
+                        						P = null != e.QuestComplete ? B.getReserved("QuestComplete") : B.h.QuestComplete,
+                        						O = h + "1";
+                        					if (-1 == (null != e[O] ? P.getReserved(O) : P.h[O])) {
+                        						var x = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							Q = b.engine.getGameAttribute("DummyText"),
+                        							X = x,
+                        							L = null != e[Q] ? X.getReserved(Q) : X.h[Q],
+                        							z = null != e.NPCdialogue ? L.getReserved("NPCdialogue") : L.h.NPCdialogue,
+                        							Y = "" + h;
+                        						null != e[Y] ? z.setReserved(Y, 0) : (z.h[Y] = 0);
+                        					}
+                        				}
+                        			}
+                        		}
+                        		if (0 == b.engine.getGameAttribute("DoOnceREAL") || 1 == b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var W = b.engine.gameAttributes;
+                        			if ((null != e.DoOnceREAL ? W.setReserved("DoOnceREAL", 2) : (W.h.DoOnceREAL = 2), 0 == b.engine.getGameAttribute("Tasks")[4][0] && -1 != b.engine.getGameAttribute("AnvilCraftStatus")[1][6]))
+                        				for (var Z = 0; 43 > Z;) {
+                        					var H = Z++;
+                        					if (4 > H || (18 <= H && 24 > H) || 39 == H || 40 == H) {
+                        						var J = b.engine.getGameAttribute("AnvilCraftStatus")[1],
+                        							j = b.engine.getGameAttribute("AnvilCraftStatus")[1][H];
+                        						J[H] = Math.max(0, parseNum(j));
+                        					} else b.engine.getGameAttribute("AnvilCraftStatus")[1][H] = -1;
+                        				}
+                        		}
+                        		if (4 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var q = b.engine.gameAttributes;
+                        			if ((null != e.DoOnceREAL ? q.setReserved("DoOnceREAL", 4.1) : (q.h.DoOnceREAL = 4.1), 0 == b.engine.getGameAttribute("Tasks")[4][0])) {
+                        				for (var K = 0, $ = b.engine.getGameAttribute("CustomLists"), ee = (null != e.RANDOlist ? $.getReserved("RANDOlist") : $.h.RANDOlist)[2].length; K < ee;) {
+                        					var te = K++,
+                        						ne = b.engine.getGameAttribute("AnvilCraftStatus")[0],
+                        						se = b.engine.getGameAttribute("CustomLists"),
+                        						ae = (null != e.RANDOlist ? se.getReserved("RANDOlist") : se.h.RANDOlist)[2][te];
+                        					ne[0 | parseNum(ae)] = -1;
+                        				}
+                        				for (var re = 0, Ae = b.engine.getGameAttribute("CustomLists"), le = (null != e.RANDOlist ? Ae.getReserved("RANDOlist") : Ae.h.RANDOlist)[3].length; re < le;) {
+                        					var oe = re++,
+                        						ie = b.engine.getGameAttribute("AnvilCraftStatus")[1],
+                        						ue = b.engine.getGameAttribute("CustomLists"),
+                        						ge = (null != e.RANDOlist ? ue.getReserved("RANDOlist") : ue.h.RANDOlist)[3][oe];
+                        					ie[0 | parseNum(ge)] = -1;
+                        				}
+                        			}
+                        		}
+                        		if (5 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var me = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? me.setReserved("DoOnceREAL", 5.1) : (me.h.DoOnceREAL = 5.1);
+                        			var de = b.engine.getGameAttribute("GemItemsPurchased")[72];
+                        			if (0 < parseNum(de)) {
+                        				var ce = b.engine,
+                        					pe = b.engine.getGameAttribute("GemsOwned") + 175,
+                        					he = ce.gameAttributes;
+                        				null != e.GemsOwned ? he.setReserved("GemsOwned", pe) : (he.h.GemsOwned = pe);
+                        			}
+                        			var be = b.engine.getGameAttribute("GemItemsPurchased")[72];
+                        			if (1 < parseNum(be)) {
+                        				var fe = b.engine,
+                        					ye = b.engine.getGameAttribute("GemsOwned") + 225,
+                        					Re = fe.gameAttributes;
+                        				null != e.GemsOwned ? Re.setReserved("GemsOwned", ye) : (Re.h.GemsOwned = ye);
+                        			}
+                        			var ve = b.engine.getGameAttribute("GemItemsPurchased")[72];
+                        			if (2 < parseNum(ve)) {
+                        				var Fe = b.engine,
+                        					Ne = b.engine.getGameAttribute("GemsOwned") + 275,
+                        					_e = Fe.gameAttributes;
+                        				null != e.GemsOwned ? _e.setReserved("GemsOwned", Ne) : (_e.h.GemsOwned = Ne);
+                        			}
+                        			var Ie = b.engine.getGameAttribute("GemItemsPurchased")[72];
+                        			if (3 < parseNum(Ie)) {
+                        				var De = b.engine,
+                        					Ee = b.engine.getGameAttribute("GemsOwned") + 325,
+                        					Se = De.gameAttributes;
+                        				null != e.GemsOwned ? Se.setReserved("GemsOwned", Ee) : (Se.h.GemsOwned = Ee);
+                        			}
+                        			b.engine.getGameAttribute("GemItemsPurchased")[72] = 0;
+                        		}
+                        		if (6 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var Ge = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? Ge.setReserved("DoOnceREAL", 6.1) : (Ge.h.DoOnceREAL = 6.1);
+                        			var Te = b.engine.getGameAttribute("CurrenciesOwned"),
+                        				Ue = (null != e.TalentPoints ? Te.getReserved("TalentPoints") : Te.h.TalentPoints)[1];
+                        			if (20 < parseNum(Ue)) {
+                        				var Me = b.engine.getGameAttribute("CurrenciesOwned");
+                        				(null != e.TalentPoints ? Me.getReserved("TalentPoints") : Me.h.TalentPoints)[1] = 20;
+                        			}
+                        			for (var Ve = 0, Ce = b.engine.getGameAttribute("CustomLists"), Be = (null != e.StampDescriptions ? Ce.getReserved("StampDescriptions") : Ce.h.StampDescriptions)[2].length; Ve < Be;) {
+                        				var Pe = Ve++,
+                        					Oe = b.engine.getGameAttribute("StampLevelMAX")[2][Pe];
+                        				0 < parseNum(Oe) && ((b.engine.getGameAttribute("StampLevel")[2][Pe] = 0), (b.engine.getGameAttribute("StampLevelMAX")[2][Pe] = t._customBlock_StampDetails(2e3 + Pe)[4]));
+                        			}
+                        		}
+                        		if (7 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var we = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? we.setReserved("DoOnceREAL", 7.1) : (we.h.DoOnceREAL = 7.1);
+                        			for (var ke = 0, xe = b.engine.getGameAttribute("OptionsListAccount").length; ke < xe;) {
+                        				var Qe = ke++;
+                        				35 < Qe && (b.engine.getGameAttribute("OptionsListAccount")[Qe] = 0);
+                        			}
+                        			if (51 <= b.engine.getGameAttribute("OptionsListAccount").length && 60 > b.engine.getGameAttribute("OptionsListAccount").length)
+                        				for (var Xe = 0, Le = b.engine.getGameAttribute("OptionsListAccount").length - 50; Xe < Le;) Xe++, b.engine.getGameAttribute("OptionsListAccount").splice(50, 1);
+                        			(b.engine.getGameAttribute("OptionsListAccount")[36] = 0),
+                        			(b.engine.getGameAttribute("OptionsListAccount")[37] = ""),
+                        			(b.engine.getGameAttribute("OptionsListAccount")[38] = 0),
+                        			(b.engine.getGameAttribute("OptionsListAccount")[39] = 6),
+                        			(b.engine.getGameAttribute("OptionsListAccount")[40] = 0),
+                        			2 < b.engine.getGameAttribute("GetPlayersUsernames").length && (b.engine.getGameAttribute("OptionsListAccount")[42] = 1);
+                        			for (var ze = b.engine.getGameAttribute("PlayerDATABASE").keys(); ze.hasNext();) {
+                        				var Ye = ze.next(),
+                        					We = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					Ze = "" + Ye,
+                        					He = null != e[Ze] ? We.getReserved(Ze) : We.h[Ze],
+                        					Je = null != e.PersonalValuesMap ? He.getReserved("PersonalValuesMap") : He.h.PersonalValuesMap,
+                        					je = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					qe = "" + Ye,
+                        					Ke = null != e[qe] ? je.getReserved(qe) : je.h[qe],
+                        					$e = null != e.PersonalValuesMap ? Ke.getReserved("PersonalValuesMap") : Ke.h.PersonalValuesMap,
+                        					et = Je,
+                        					tt = "" + g.string(null != e.StarSign ? $e.getReserved("StarSign") : $e.h.StarSign);
+                        				null != e.StarSign ? et.setReserved("StarSign", tt) : (et.h.StarSign = tt);
+                        				var nt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					st = "" + Ye,
+                        					at = null != e[st] ? nt.getReserved(st) : nt.h[st];
+                        				(null != e.OptionsList ? at.getReserved("OptionsList") : at.h.OptionsList)[26] = 0;
+                        			}
+                        			for (var rt = 0; 9 > rt;) {
+                        				var At = rt++;
+                        				(b.engine.getGameAttribute("GuildTasks")[At + 1][0] = 5 > At ? At + 3 * Math.floor(At / 3) : Math.round(At - 2 + 15 * Math.floor(At / 8))),
+                        				(b.engine.getGameAttribute("GuildTasks")[At + 1][1] = 0),
+                        				(b.engine.getGameAttribute("GuildTasks")[At + 1][2] = 0);
+                        			}
+                        		}
+                        		if (8 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var lt = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? lt.setReserved("DoOnceREAL", 8.1) : (lt.h.DoOnceREAL = 8.1), (b.engine.getGameAttribute("OptionsListAccount")[25] = 1);
+                        		}
+                        		if (9.7 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var ot = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? ot.setReserved("DoOnceREAL", 9.8) : (ot.h.DoOnceREAL = 9.8),
+                        				(b.engine.getGameAttribute("GemItemsPurchased")[75] = 0),
+                        				(b.engine.getGameAttribute("AnvilCraftStatus")[1][0 | d.__cast(60, k)] = -1),
+                        				(b.engine.getGameAttribute("AnvilCraftStatus")[1][0 | d.__cast(61, k)] = -1),
+                        				(b.engine.getGameAttribute("AnvilCraftStatus")[1][0 | d.__cast(62, k)] = -1),
+                        				(b.engine.getGameAttribute("AnvilCraftStatus")[1][0 | d.__cast(63, k)] = -1),
+                        				(b.engine.getGameAttribute("AnvilCraftStatus")[1][0 | d.__cast(64, k)] = -1),
+                        				(b.engine.getGameAttribute("AnvilCraftStatus")[1][0 | d.__cast(65, k)] = -1),
+                        				(b.engine.getGameAttribute("AnvilCraftStatus")[1][0 | d.__cast(66, k)] = -1),
+                        				(b.engine.getGameAttribute("AnvilCraftStatus")[1][0 | d.__cast(67, k)] = -1),
+                        				(b.engine.getGameAttribute("OptionsListAccount")[50] = 45),
+                        				(b.engine.getGameAttribute("OptionsListAccount")[51] = 47),
+                        				(b.engine.getGameAttribute("OptionsListAccount")[52] = 39),
+                        				(b.engine.getGameAttribute("OptionsListAccount")[52] = 39);
+                        			var it = b.engine.getGameAttribute("Tasks")[4],
+                        				ut = b.engine.getGameAttribute("Tasks")[4][2],
+                        				gt = parseNum(ut),
+                        				mt = b.engine.getGameAttribute("Tasks")[2][1][5];
+                        			(it[2] = gt + 2 * Math.max(0, Math.round(parseNum(mt)))),
+                        			(b.engine.getGameAttribute("Tasks")[2][1][5] = 0);
+                        		}
+                        		if (11.2 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var dt = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? dt.setReserved("DoOnceREAL", 11.3) : (dt.h.DoOnceREAL = 11.3),
+                        				1 > b.engine.getGameAttribute("KillsLeft2Advance")[17].length && b.engine.getGameAttribute("KillsLeft2Advance")[17].push(0),
+                        				(b.engine.getGameAttribute("OptionsListAccount")[25] = 1),
+                        				(b.engine.getGameAttribute("OptionsListAccount")[29] = 0);
+                        		}
+                        		if (11.8 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			for (var ct = b.engine.getGameAttribute("PlayerDATABASE").keys(); ct.hasNext();) {
+                        				var pt = ct.next(),
+                        					ht = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					bt = "" + pt,
+                        					ft = null != e[bt] ? ht.getReserved(bt) : ht.h[bt],
+                        					yt = null != e.MaxCarryCap ? ft.getReserved("MaxCarryCap") : ft.h.MaxCarryCap;
+                        				null != e.Critters ? yt.setReserved("Critters", 10) : (yt.h.Critters = 10);
+                        				var Rt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					vt = "" + pt,
+                        					Ft = null != e[vt] ? Rt.getReserved(vt) : Rt.h[vt],
+                        					Nt = null != e.MaxCarryCap ? Ft.getReserved("MaxCarryCap") : Ft.h.MaxCarryCap;
+                        				null != e.Souls ? Nt.setReserved("Souls", 10) : (Nt.h.Souls = 10);
+                        			}
+                        			var _t = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? _t.setReserved("DoOnceREAL", 11.9) : (_t.h.DoOnceREAL = 11.9);
+                        		}
+                        		if (12.5 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var It = b.engine.getGameAttribute("TimeAway"),
+                        				Dt = b.engine.getGameAttribute("TimeAway"),
+                        				Et = null != e.GlobalTime ? Dt.getReserved("GlobalTime") : Dt.h.GlobalTime;
+                        			null != e.Construction ? It.setReserved("Construction", Et) : (It.h.Construction = Et);
+                        			var St = b.engine.getGameAttribute("TimeAway"),
+                        				Gt = b.engine.getGameAttribute("TimeAway"),
+                        				Tt = null != e.GlobalTime ? Gt.getReserved("GlobalTime") : Gt.h.GlobalTime;
+                        			null != e.Printer ? St.setReserved("Printer", Tt) : (St.h.Printer = Tt);
+                        			var Ut = b.engine.getGameAttribute("TimeAway");
+                        			null != e.BookLib ? Ut.setReserved("BookLib", 0) : (Ut.h.BookLib = 0);
+                        			var Mt = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? Mt.setReserved("DoOnceREAL", 12.6) : (Mt.h.DoOnceREAL = 12.6);
+                        		}
+                        		if (13.5 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			for (var Vt = b.engine.getGameAttribute("PlayerDATABASE").keys(); Vt.hasNext();)
+                        				for (var Ct = Vt.next(),
+                        						Bt = 0,
+                        						Pt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						Ot = "" + Ct,
+                        						wt = null != e[Ot] ? Pt.getReserved(Ot) : Pt.h[Ot],
+                        						kt = (null != e.SkillLevelsMAX ? wt.getReserved("SkillLevelsMAX") : wt.h.SkillLevelsMAX).length; Bt < kt;) {
+                        					var xt = Bt++,
+                        						Qt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						Xt = "" + Ct,
+                        						Lt = null != e[Xt] ? Qt.getReserved(Xt) : Qt.h[Xt],
+                        						zt = (null != e.SkillLevelsMAX ? Lt.getReserved("SkillLevelsMAX") : Lt.h.SkillLevelsMAX)[xt];
+                        					if (110 < parseNum(zt)) {
+                        						var Yt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							Wt = "" + Ct,
+                        							Zt = null != e[Wt] ? Yt.getReserved(Wt) : Yt.h[Wt];
+                        						(null != e.SkillLevelsMAX ? Zt.getReserved("SkillLevelsMAX") : Zt.h.SkillLevelsMAX)[xt] = 100;
+                        					}
+                        				}
+                        			var Ht = b.engine.gameAttributes,
+                        				Jt = [];
+                        			null != e.Printer ? Ht.setReserved("Printer", Jt) : (Ht.h.Printer = Jt),
+                        				b.engine.getGameAttribute("Printer").push(0),
+                        				b.engine.getGameAttribute("Printer").push(0),
+                        				b.engine.getGameAttribute("Printer").push(0),
+                        				b.engine.getGameAttribute("Printer").push(0),
+                        				b.engine.getGameAttribute("Printer").push(0);
+                        			for (var jt = 0; 18 > jt;) jt++,
+                        				b.engine.getGameAttribute("Printer").push("Blank"),
+                        				b.engine.getGameAttribute("Printer").push(0),
+                        				b.engine.getGameAttribute("Printer").push("Blank"),
+                        				b.engine.getGameAttribute("Printer").push(0),
+                        				b.engine.getGameAttribute("Printer").push("Blank"),
+                        				b.engine.getGameAttribute("Printer").push(0),
+                        				b.engine.getGameAttribute("Printer").push("Blank"),
+                        				b.engine.getGameAttribute("Printer").push(0),
+                        				b.engine.getGameAttribute("Printer").push("Blank"),
+                        				b.engine.getGameAttribute("Printer").push(0),
+                        				b.engine.getGameAttribute("Printer").push("Blank"),
+                        				b.engine.getGameAttribute("Printer").push(0),
+                        				b.engine.getGameAttribute("Printer").push("Blank"),
+                        				b.engine.getGameAttribute("Printer").push(0);
+                        			for (var qt = 0; 18 > qt;)
+                        				for (var Kt = qt++, $t = b.engine.getGameAttribute("PlayerDATABASE").keys(); $t.hasNext();) {
+                        					var en = $t.next(),
+                        						tn = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						nn = "" + en,
+                        						sn = null != e[nn] ? tn.getReserved(nn) : tn.h[nn];
+                        					(null != e.KillsLeft2Advance ? sn.getReserved("KillsLeft2Advance") : sn.h.KillsLeft2Advance)[100 + Kt] = E.deepCopyList(b.engine.getGameAttribute("KillsLeft2Advance")[100 + Kt]);
+                        				}
+                        			var an = b.engine.gameAttributes,
+                        				rn = [];
+                        			null != e.DummyList ? an.setReserved("DummyList", rn) : (an.h.DummyList = rn);
+                        			var An = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? An.setReserved("DoOnceREAL", 13.7) : (An.h.DoOnceREAL = 13.7);
+                        		}
+                        		if (14 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var ln = b.engine.gameAttributes,
+                        				on = [];
+                        			null != e.CogOrder ? ln.setReserved("CogOrder", on) : (ln.h.CogOrder = on);
+                        			for (var un = 0; 228 > un;) un++, b.engine.getGameAttribute("CogOrder").push("Blank");
+                        			var gn = b.engine.gameAttributes,
+                        				mn = [];
+                        			null != e.CogMap ? gn.setReserved("CogMap", mn) : (gn.h.CogMap = mn);
+                        			for (var dn = 0; 228 > dn;) dn++, b.engine.getGameAttribute("CogMap").push(new p());
+                        			var cn = b.engine.gameAttributes,
+                        				pn = [];
+                        			null != e.FlagUnlock ? cn.setReserved("FlagUnlock", pn) : (cn.h.FlagUnlock = pn);
+                        			for (var hn = 0; 96 > hn;) {
+                        				var bn = hn++;
+                        				(28 <= bn && 31 >= bn) || (40 <= bn && 43 >= bn) || (52 <= bn && 55 >= bn) || (64 <= bn && 67 >= bn) ? b.engine.getGameAttribute("FlagUnlock").push(-11): b.engine.getGameAttribute("FlagUnlock").push(0);
+                        			}
+                        			var fn = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? fn.setReserved("DoOnceREAL", 14.1) : (fn.h.DoOnceREAL = 14.1);
+                        		}
+                        		if (14.5 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var yn = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? yn.setReserved("DoOnceREAL", 14.7) : (yn.h.DoOnceREAL = 14.7);
+                        			for (var Rn = b.engine.getGameAttribute("PlayerDATABASE").keys(); Rn.hasNext();) {
+                        				var vn = Rn.next(),
+                        					Fn = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					Nn = "" + vn,
+                        					_n = null != e[Nn] ? Fn.getReserved(Nn) : Fn.h[Nn];
+                        				(null != e.PlayerStuff ? _n.getReserved("PlayerStuff") : _n.h.PlayerStuff)[0] = 50;
+                        			}
+                        			for (var In = 0; 27 > In;) {
+                        				var Dn = In++;
+                        				b.engine.getGameAttribute("TowerInfo")[Dn] = 0;
+                        			}
+                        		}
+                        		if (15 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var En = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? En.setReserved("DoOnceREAL", 15.5) : (En.h.DoOnceREAL = 15.5), (b.engine.getGameAttribute("GemItemsPurchased")[75] = 0);
+                        		}
+                        		if (18.2 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var Sn = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? Sn.setReserved("DoOnceREAL", 18.5) : (Sn.h.DoOnceREAL = 18.5);
+                        			for (var Gn = 0, Tn = b.engine.getGameAttribute("CustomLists"), Un = (null != e.SaltLicks ? Tn.getReserved("SaltLicks") : Tn.h.SaltLicks).length; Gn < Un;) {
+                        				var Mn = Gn++,
+                        					Vn = b.engine.getGameAttribute("SaltLick")[Mn],
+                        					Cn = parseNum(Vn),
+                        					Bn = b.engine.getGameAttribute("CustomLists"),
+                        					Pn = (null != e.SaltLicks ? Bn.getReserved("SaltLicks") : Bn.h.SaltLicks)[Mn][4];
+                        				if (Cn > parseNum(Pn)) {
+                        					var On = b.engine.getGameAttribute("SaltLick"),
+                        						wn = b.engine.getGameAttribute("CustomLists"),
+                        						kn = (null != e.SaltLicks ? wn.getReserved("SaltLicks") : wn.h.SaltLicks)[Mn][4];
+                        					On[Mn] = Math.round(parseNum(kn));
+                        				}
+                        			}
+                        			for (var xn = 0; 18 > xn;)
+                        				for (var Qn = xn++, Xn = b.engine.getGameAttribute("PlayerDATABASE").keys(); Xn.hasNext();) {
+                        					var Ln = Xn.next(),
+                        						zn = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						Yn = "" + Ln,
+                        						Wn = null != e[Yn] ? zn.getReserved(Yn) : zn.h[Yn];
+                        					if (1e3 == (null != e.KillsLeft2Advance ? Wn.getReserved("KillsLeft2Advance") : Wn.h.KillsLeft2Advance)[100 + Qn][0]) {
+                        						var Zn = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							Hn = "" + Ln,
+                        							Jn = null != e[Hn] ? Zn.getReserved(Hn) : Zn.h[Hn];
+                        						(null != e.KillsLeft2Advance ? Jn.getReserved("KillsLeft2Advance") : Jn.h.KillsLeft2Advance)[100 + Qn] = E.deepCopyList(b.engine.getGameAttribute("KillsLeft2Advance")[100 + Qn]);
+                        					}
+                        				}
+                        			for (var jn = b.engine.getGameAttribute("PlayerDATABASE").keys(); jn.hasNext();) {
+                        				var qn = jn.next();
+                        				if (120 < w._customBlock_WorkbenchStuff("maxBookLv", 0, 0))
+                        					for (var Kn = 0,
+                        							$n = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							es = "" + qn,
+                        							ts = null != e[es] ? $n.getReserved(es) : $n.h[es],
+                        							ns = (null != e.SkillLevelsMAX ? ts.getReserved("SkillLevelsMAX") : ts.h.SkillLevelsMAX).length; Kn < ns;) {
+                        						var ss = Kn++;
+                        						if (615 > ss) {
+                        							var as = b.engine.getGameAttribute("PlayerDATABASE"),
+                        								rs = "" + qn,
+                        								As = null != e[rs] ? as.getReserved(rs) : as.h[rs],
+                        								ls = (null != e.SkillLevelsMAX ? As.getReserved("SkillLevelsMAX") : As.h.SkillLevelsMAX)[ss];
+                        							if (parseNum(ls) > w._customBlock_WorkbenchStuff("maxBookLv", 0, 0)) {
+                        								var os = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									is = "" + qn,
+                        									us = null != e[is] ? os.getReserved(is) : os.h[is];
+                        								(null != e.SkillLevelsMAX ? us.getReserved("SkillLevelsMAX") : us.h.SkillLevelsMAX)[ss] = w._customBlock_WorkbenchStuff("maxBookLv", 0, 0);
+                        							}
+                        						}
+                        					}
+                        			}
+                        			for (var gs = 0; 63 > gs;) {
+                        				var ms = gs++;
+                        				if (5 + 2 * ms < b.engine.getGameAttribute("Printer").length) {
+                        					var ds = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        						cs = "" + g.string(b.engine.getGameAttribute("Printer")[5 + 2 * ms]),
+                        						ps = ds,
+                        						hs = null != e[cs] ? ps.getReserved(cs) : ps.h[cs];
+                        					"bOre" == (null != e.typeGen ? hs.getReserved("typeGen") : hs.h.typeGen) && ((b.engine.getGameAttribute("Printer")[5 + 2 * ms] = "Blank"), (b.engine.getGameAttribute("Printer")[6 + 2 * ms] = 0));
+                        				}
+                        			}
+                        		}
+                        		if (21 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var bs = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? bs.setReserved("DoOnceREAL", 21.5) : (bs.h.DoOnceREAL = 21.5);
+                        			var fs = b.engine.gameAttributes,
+                        				ys = [];
+                        			null != e.DummyList2 ? fs.setReserved("DummyList2", ys) : (fs.h.DummyList2 = ys),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p());
+                        			for (var Rs = b.engine.getGameAttribute("PlayerDATABASE").keys(); Rs.hasNext();) {
+                        				var vs = Rs.next(),
+                        					Fs = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					Ns = "" + vs,
+                        					_s = null != e[Ns] ? Fs.getReserved(Ns) : Fs.h[Ns],
+                        					Is = E.deepCopyList(b.engine.getGameAttribute("DummyList2"));
+                        				null != e.ObolEquippedMap ? _s.setReserved("ObolEquippedMap", Is) : (_s.h.ObolEquippedMap = Is);
+                        			}
+                        			var Ds = b.engine.gameAttributes,
+                        				Es = [];
+                        			null != e.DummyList2 ? Ds.setReserved("DummyList2", Es) : (Ds.h.DummyList2 = Es);
+                        			for (var Ss = 0; 24 > Ss;) Ss++, b.engine.getGameAttribute("DummyList2").push(new p());
+                        			b.engine.getGameAttribute("ObolEquippedMap")[1] = b.engine.getGameAttribute("DummyList2");
+                        			var Gs = b.engine.gameAttributes,
+                        				Ts = [];
+                        			null != e.DummyList2 ? Gs.setReserved("DummyList2", Ts) : (Gs.h.DummyList2 = Ts),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				(b.engine.getGameAttribute("ObolEquippedMap")[2] = b.engine.getGameAttribute("DummyList2"));
+                        			var Us = b.engine.gameAttributes,
+                        				Ms = [];
+                        			null != e.DummyList2 ? Us.setReserved("DummyList2", Ms) : (Us.h.DummyList2 = Ms),
+                        				b.engine.getGameAttribute("DummyList2").push(new p()),
+                        				(b.engine.getGameAttribute("ObolEquippedMap")[3] = b.engine.getGameAttribute("DummyList2"));
+                        			var Vs = b.engine.gameAttributes,
+                        				Cs = [];
+                        			null != e.DummyList2 ? Vs.setReserved("DummyList2", Cs) : (Vs.h.DummyList2 = Cs), (b.engine.getGameAttribute("OptionsListAccount")[29] = 0);
+                        			for (var Bs = (b.engine.getGameAttribute("OptionsListAccount")[25] = 0); 63 > Bs;) {
+                        				var Ps = Bs++;
+                        				if (5 + 2 * Ps < b.engine.getGameAttribute("Printer").length) {
+                        					var Os = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        						ws = "" + g.string(b.engine.getGameAttribute("Printer")[5 + 2 * Ps]),
+                        						ks = Os,
+                        						xs = null != e[ws] ? ks.getReserved(ws) : ks.h[ws];
+                        					"bOre" == (null != e.typeGen ? xs.getReserved("typeGen") : xs.h.typeGen) && ((b.engine.getGameAttribute("Printer")[5 + 2 * Ps] = "Blank"), (b.engine.getGameAttribute("Printer")[6 + 2 * Ps] = 0));
+                        				}
+                        			}
+                        		}
+                        		if (22 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var Qs = b.engine.gameAttributes;
+                        			if ((null != e.DoOnceREAL ? Qs.setReserved("DoOnceREAL", 22.5) : (Qs.h.DoOnceREAL = 22.5), 70 > b.engine.getGameAttribute("OptionsListAccount").length))
+                        				for (var Xs = 0; 30 > Xs;) Xs++, b.engine.getGameAttribute("OptionsListAccount").push(0);
+                        		}
+                        		if (23 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var Ls = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? Ls.setReserved("DoOnceREAL", 23.2) : (Ls.h.DoOnceREAL = 23.2), "LockedInvSpace" == b.engine.getGameAttribute("ObolEquippedOrder")[2][0] && (b.engine.getGameAttribute("ObolEquippedOrder")[2][0] = "Blank"), "LockedInvSpace" == b.engine.getGameAttribute("ObolEquippedOrder")[2][1] && (b.engine.getGameAttribute("ObolEquippedOrder")[2][1] = "Blank"), "LockedInvSpace" == b.engine.getGameAttribute("ObolEquippedOrder")[2][2] && (b.engine.getGameAttribute("ObolEquippedOrder")[2][2] = "Blank");
+                        			var zs = b.engine.getGameAttribute("GemItemsPurchased")[111];
+                        			if (0.1 < parseNum(zs)) {
+                        				var Ys = b.engine,
+                        					Ws = b.engine.getGameAttribute("GemsOwned") + 375,
+                        					Zs = Ys.gameAttributes;
+                        				null != e.GemsOwned ? Zs.setReserved("GemsOwned", Ws) : (Zs.h.GemsOwned = Ws);
+                        			}
+                        		}
+                        		if (24 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var Hs = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? Hs.setReserved("DoOnceREAL", 24.1) : (Hs.h.DoOnceREAL = 24.1);
+                        			for (var Js = b.engine.getGameAttribute("PlayerDATABASE").keys(); Js.hasNext();) {
+                        				var js = Js.next(),
+                        					qs = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					Ks = "" + js,
+                        					$s = null != e[Ks] ? qs.getReserved(Ks) : qs.h[Ks],
+                        					ea = null != e.NPCdialogue ? $s.getReserved("NPCdialogue") : $s.h.NPCdialogue,
+                        					ta = null != e.Coastiolyte ? ea.getReserved("Coastiolyte") : ea.h.Coastiolyte;
+                        				if (9999 == parseNum(ta)) {
+                        					var na = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						sa = "" + js,
+                        						aa = null != e[sa] ? na.getReserved(sa) : na.h[sa],
+                        						ra = null != e.NPCdialogue ? aa.getReserved("NPCdialogue") : aa.h.NPCdialogue;
+                        					null != e.Coastiolyte ? ra.setReserved("Coastiolyte", 0) : (ra.h.Coastiolyte = 0),
+                        						U._customBlock_resetQuest("Coastiolyte", 0),
+                        						U._customBlock_resetQuest("Coastiolyte", 1),
+                        						U._customBlock_resetQuest("Coastiolyte", 2),
+                        						U._customBlock_resetQuest("Coastiolyte", 3),
+                        						U._customBlock_resetQuest("Coastiolyte", 4),
+                        						U._customBlock_resetQuest("Coastiolyte", 5),
+                        						U._customBlock_resetQuest("Coastiolyte", 6),
+                        						U._customBlock_resetQuest("Coastiolyte", 7),
+                        						U._customBlock_resetQuest("Coastiolyte", 8),
+                        						U._customBlock_resetQuest("Coastiolyte", 9),
+                        						U._customBlock_resetQuest("Coastiolyte", 10),
+                        						U._customBlock_resetQuest("Coastiolyte", 11),
+                        						U._customBlock_resetQuest("Coastiolyte", 12),
+                        						U._customBlock_resetQuest("Coastiolyte", 13),
+                        						U._customBlock_resetQuest("Coastiolyte", 14);
+                        				}
+                        			}
+                        		}
+                        		if (26 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var Aa = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? Aa.setReserved("DoOnceREAL", 26.5) : (Aa.h.DoOnceREAL = 26.5), (b.engine.getGameAttribute("MonsterRespawnTime")[149] = 2);
+                        			for (var la = 0; 30 > la;) {
+                        				var oa = la++;
+                        				b.engine.getGameAttribute("MonsterRespawnTime")[468 + oa] = 2;
+                        			}
+                        			if ((1 == b.engine.getGameAttribute("Tasks")[3][2][12] && (b.engine.getGameAttribute("AnvilCraftStatus")[2][28] = 0), 1 == b.engine.getGameAttribute("OptionsListAccount")[65])) {
+                        				var ia = b.engine,
+                        					ua = Math.round(b.engine.getGameAttribute("GemsOwned") + 200),
+                        					ga = ia.gameAttributes;
+                        				null != e.GemsOwned ? ga.setReserved("GemsOwned", ua) : (ga.h.GemsOwned = ua);
+                        			} else if (3 == b.engine.getGameAttribute("OptionsListAccount")[65]) {
+                        				var ma = b.engine,
+                        					da = Math.round(b.engine.getGameAttribute("GemsOwned") + 160),
+                        					ca = ma.gameAttributes;
+                        				null != e.GemsOwned ? ca.setReserved("GemsOwned", da) : (ca.h.GemsOwned = da);
+                        			} else if (2 == b.engine.getGameAttribute("OptionsListAccount")[65]) {
+                        				var pa = b.engine,
+                        					ha = Math.round(b.engine.getGameAttribute("GemsOwned") + 120),
+                        					ba = pa.gameAttributes;
+                        				null != e.GemsOwned ? ba.setReserved("GemsOwned", ha) : (ba.h.GemsOwned = ha);
+                        			} else if (4 == b.engine.getGameAttribute("OptionsListAccount")[65]) {
+                        				var fa = b.engine,
+                        					ya = Math.round(b.engine.getGameAttribute("GemsOwned") + 100),
+                        					Ra = fa.gameAttributes;
+                        				null != e.GemsOwned ? Ra.setReserved("GemsOwned", ya) : (Ra.h.GemsOwned = ya);
+                        			}
+                        			var va = b.engine.getGameAttribute("Cards")[0],
+                        				Fa = null != e.SummerEvent1 ? va.getReserved("SummerEvent1") : va.h.SummerEvent1;
+                        			350 < parseNum(Fa) && (b.engine.getGameAttribute("OptionsListAccount")[68] = 1),
+                        				2 == b.engine.getGameAttribute("OptionsListAccount")[26] && ((b.engine.getGameAttribute("OptionsListAccount")[26] = 0), E.cleanMarkedFiles(!1));
+                        		}
+                        		if (27 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var Na = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? Na.setReserved("DoOnceREAL", 27.5) : (Na.h.DoOnceREAL = 27.5),
+                        				4 == b.engine.getGameAttribute("OptionsListAccount")[26] && 1400 < b.engine.getGameAttribute("ServerGemsReceived") && ((b.engine.getGameAttribute("OptionsListAccount")[26] = 0), E.cleanMarkedFiles(!1));
+                        		}
+                        		if (35 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var _a = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? _a.setReserved("DoOnceREAL", 35.5) : (_a.h.DoOnceREAL = 35.5);
+                        			for (var Ia = 0, Da = b.engine.getGameAttribute("SteamAchieve").length; Ia < Da;) {
+                        				var Ea = Ia++;
+                        				if (-1 == b.engine.getGameAttribute("SteamAchieve")[Ea]) {
+                        					var Sa = b.engine.getGameAttribute("AchieveReg"),
+                        						Ga = b.engine.getGameAttribute("CustomLists"),
+                        						Ta = (null != e.AchSteam2Reg ? Ga.getReserved("AchSteam2Reg") : Ga.h.AchSteam2Reg)[Ea];
+                        					Sa[0 | parseNum(Ta)] = -1;
+                        				}
+                        			}
+                        			for (var Ua = b.engine.getGameAttribute("PlayerDATABASE").keys(); Ua.hasNext();) {
+                        				var Ma = Ua.next(),
+                        					Va = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					Ca = "" + Ma,
+                        					Ba = null != e[Ca] ? Va.getReserved(Ca) : Va.h[Ca];
+                        				if (3 == (null != e.CharacterClass ? Ba.getReserved("CharacterClass") : Ba.h.CharacterClass)) w._customBlock_Reg_ach_add_status(118, 1);
+                        				else {
+                        					var Pa = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						Oa = "" + Ma,
+                        						wa = null != e[Oa] ? Pa.getReserved(Oa) : Pa.h[Oa],
+                        						ka = null != e.CharacterClass ? wa.getReserved("CharacterClass") : wa.h.CharacterClass;
+                        					if (8 <= parseNum(ka)) var xa = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						Qa = "" + Ma,
+                        						Xa = null != e[Qa] ? xa.getReserved(Qa) : xa.h[Qa],
+                        						La = null != e.CharacterClass ? Xa.getReserved("CharacterClass") : Xa.h.CharacterClass,
+                        						za = 13 >= parseNum(La);
+                        					else za = !1;
+                        					if (za) var Ya = !0;
+                        					else {
+                        						var Wa = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							Za = "" + Ma,
+                        							Ha = null != e[Za] ? Wa.getReserved(Za) : Wa.h[Za],
+                        							Ja = null != e.CharacterClass ? Ha.getReserved("CharacterClass") : Ha.h.CharacterClass;
+                        						if (20 <= parseNum(Ja)) var ja = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							qa = "" + Ma,
+                        							Ka = null != e[qa] ? ja.getReserved(qa) : ja.h[qa],
+                        							$a = null != e.CharacterClass ? Ka.getReserved("CharacterClass") : Ka.h.CharacterClass,
+                        							er = 22 >= (null == $a ? 0 : "number" == typeof $a ? d.__cast($a, k) : "number" == typeof $a && (0 | $a) === $a ? d.__cast($a, l) : "boolean" == typeof $a ? d.__cast($a, n) ? 1 : 0 : "string" == typeof $a ? parseFloat($a) : parseFloat(g.string($a)));
+                        						else er = !1;
+                        						if (er) Ya = !0;
+                        						else {
+                        							var tr = b.engine.getGameAttribute("PlayerDATABASE"),
+                        								nr = "" + Ma,
+                        								sr = null != e[nr] ? tr.getReserved(nr) : tr.h[nr],
+                        								ar = null != e.CharacterClass ? sr.getReserved("CharacterClass") : sr.h.CharacterClass;
+                        							if (32 <= parseNum(ar)) {
+                        								var rr = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									Ar = "" + Ma,
+                        									lr = null != e[Ar] ? rr.getReserved(Ar) : rr.h[Ar],
+                        									or = null != e.CharacterClass ? lr.getReserved("CharacterClass") : lr.h.CharacterClass;
+                        								Ya = 34 >= parseNum(or);
+                        							} else Ya = !1;
+                        						}
+                        					}
+                        					Ya && w._customBlock_Reg_ach_add_status(82, 1);
+                        				}
+                        			}
+                        		}
+                        		if (36 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var ir = b.engine.getGameAttribute("TimeAway"),
+                        				ur = b.engine.getGameAttribute("TimeAway"),
+                        				gr = null != e.GlobalTime ? ur.getReserved("GlobalTime") : ur.h.GlobalTime;
+                        			null != e.Arcade ? ir.setReserved("Arcade", gr) : (ir.h.Arcade = gr);
+                        			var mr = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? mr.setReserved("DoOnceREAL", 36.5) : (mr.h.DoOnceREAL = 36.5);
+                        			for (var dr = 0; 6 > dr;) {
+                        				var cr = dr++,
+                        					pr = b.engine.getGameAttribute("FurnaceLevels")[cr],
+                        					hr = Math.round(parseNum(pr)),
+                        					br = b.engine.getGameAttribute("CustomLists"),
+                        					fr = (null != e.RANDOlist ? br.getReserved("RANDOlist") : br.h.RANDOlist)[42][cr];
+                        				if (hr >= parseNum(fr)) {
+                        					var yr = b.engine.getGameAttribute("FurnaceLevels"),
+                        						Rr = b.engine.getGameAttribute("CustomLists"),
+                        						vr = (null != e.RANDOlist ? Rr.getReserved("RANDOlist") : Rr.h.RANDOlist)[42][cr];
+                        					yr[cr] = parseNum(vr);
+                        				}
+                        			}
+                        			b.engine.getGameAttribute("OptionsListAccount")[74] = 0;
+                        		}
+                        		if (40 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var Fr = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? Fr.setReserved("DoOnceREAL", 40.5) : (Fr.h.DoOnceREAL = 40.5),
+                        				(b.engine.getGameAttribute("OptionsListAccount")[71] = 0),
+                        				(b.engine.getGameAttribute("OptionsListAccount")[72] = 0),
+                        				(b.engine.getGameAttribute("OptionsListAccount")[73] = 0),
+                        				(b.engine.getGameAttribute("AnvilCraftStatus")[0][59] = -1),
+                        				1 < b.engine.getGameAttribute("AnvilCraftStatus").length && (b.engine.getGameAttribute("AnvilCraftStatus")[1][44] = -1),
+                        				2 < b.engine.getGameAttribute("AnvilCraftStatus").length && (b.engine.getGameAttribute("AnvilCraftStatus")[2][59] = -1);
+                        		}
+                        		if (42 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			(b.engine.getGameAttribute("OptionsListAccount")[76] = 25), (b.engine.getGameAttribute("OptionsListAccount")[77] = 0);
+                        			var Nr = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? Nr.setReserved("DoOnceREAL", 42.5) : (Nr.h.DoOnceREAL = 42.5),
+                        				(1 == b.engine.getGameAttribute("OptionsListAccount")[26] || (4 == b.engine.getGameAttribute("OptionsListAccount")[26] && 2400 < b.engine.getGameAttribute("ServerGemsReceived")) || 3999 < b.engine.getGameAttribute("ServerGemsReceived")) && ((b.engine.getGameAttribute("OptionsListAccount")[26] = 0), E.cleanMarkedFiles(!1));
+                        		}
+                        		if (50 > b.engine.getGameAttribute("DoOnceREAL")) {
+                        			var _r = b.engine.gameAttributes;
+                        			null != e.DoOnceREAL ? _r.setReserved("DoOnceREAL", 51.5) : (_r.h.DoOnceREAL = 51.5),
+                        				(b.engine.getGameAttribute("GemItemsPurchased")[75] = 0),
+                        				4 == b.engine.getGameAttribute("OptionsListAccount")[26] && ((b.engine.getGameAttribute("OptionsListAccount")[26] = 0), E.cleanMarkedFiles(!1));
+                        			for (var Ir = 0, Dr = b.engine.getGameAttribute("SteamAchieve").length; Ir < Dr;) {
+                        				var Er = Ir++;
+                        				if (-1 == b.engine.getGameAttribute("SteamAchieve")[Er]) {
+                        					var Sr = b.engine.getGameAttribute("AchieveReg"),
+                        						Gr = b.engine.getGameAttribute("CustomLists"),
+                        						Tr = (null != e.AchSteam2Reg ? Gr.getReserved("AchSteam2Reg") : Gr.h.AchSteam2Reg)[Er];
+                        					Sr[0 | parseNum(Tr)] = -1;
+                        				}
+                        			}
+                        			for (var Ur = b.engine.getGameAttribute("PlayerDATABASE").keys(); Ur.hasNext();) {
+                        				var Mr = Ur.next(),
+                        					Vr = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					Cr = "" + Mr,
+                        					Br = null != e[Cr] ? Vr.getReserved(Cr) : Vr.h[Cr];
+                        				if (3 == (null != e.CharacterClass ? Br.getReserved("CharacterClass") : Br.h.CharacterClass)) w._customBlock_Reg_ach_add_status(118, 1);
+                        				else {
+                        					var Pr = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						Or = "" + Mr,
+                        						wr = null != e[Or] ? Pr.getReserved(Or) : Pr.h[Or],
+                        						kr = null != e.CharacterClass ? wr.getReserved("CharacterClass") : wr.h.CharacterClass;
+                        					if (8 <= parseNum(kr)) var xr = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						Qr = "" + Mr,
+                        						Xr = null != e[Qr] ? xr.getReserved(Qr) : xr.h[Qr],
+                        						Lr = null != e.CharacterClass ? Xr.getReserved("CharacterClass") : Xr.h.CharacterClass,
+                        						zr = 13 >= parseNum(Lr);
+                        					else zr = !1;
+                        					if (zr) var Yr = !0;
+                        					else {
+                        						var Wr = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							Zr = "" + Mr,
+                        							Hr = null != e[Zr] ? Wr.getReserved(Zr) : Wr.h[Zr],
+                        							Jr = null != e.CharacterClass ? Hr.getReserved("CharacterClass") : Hr.h.CharacterClass;
+                        						if (20 <= parseNum(Jr)) var jr = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							qr = "" + Mr,
+                        							Kr = null != e[qr] ? jr.getReserved(qr) : jr.h[qr],
+                        							$r = null != e.CharacterClass ? Kr.getReserved("CharacterClass") : Kr.h.CharacterClass,
+                        							eA = 22 >= (null == $r ? 0 : "number" == typeof $r ? d.__cast($r, k) : "number" == typeof $r && (0 | $r) === $r ? d.__cast($r, l) : "boolean" == typeof $r ? d.__cast($r, n) ? 1 : 0 : "string" == typeof $r ? parseFloat($r) : parseFloat(g.string($r)));
+                        						else eA = !1;
+                        						if (eA) Yr = !0;
+                        						else {
+                        							var tA = b.engine.getGameAttribute("PlayerDATABASE"),
+                        								nA = "" + Mr,
+                        								sA = null != e[nA] ? tA.getReserved(nA) : tA.h[nA],
+                        								aA = null != e.CharacterClass ? sA.getReserved("CharacterClass") : sA.h.CharacterClass;
+                        							if (32 <= parseNum(aA)) {
+                        								var rA = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									AA = "" + Mr,
+                        									lA = null != e[AA] ? rA.getReserved(AA) : rA.h[AA],
+                        									oA = null != e.CharacterClass ? lA.getReserved("CharacterClass") : lA.h.CharacterClass;
+                        								Yr = 34 >= parseNum(oA);
+                        							} else Yr = !1;
+                        						}
+                        					}
+                        					Yr && w._customBlock_Reg_ach_add_status(82, 1);
+                        				}
+                        			}
+                        		}
+                        		U._customBlock_OnPlayStart2();
+                        	}

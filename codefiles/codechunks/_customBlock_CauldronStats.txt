@@ -1,0 +1,565 @@
+                        (A._customBlock_CauldronStats = function(s, a, r, o) {
+                        		if ("BubbleBonus" == s) {
+                        			var i = b.engine.getGameAttribute("DNSM"),
+                        				u = b.engine.getGameAttribute("CustomLists"),
+                        				m = (null != e.AlchemyDescription ? u.getReserved("AlchemyDescription") : u.h.AlchemyDescription)[0 | a][0 | r];
+                        			null != e.CauldStatDL1 ? i.setReserved("CauldStatDL1", m) : (i.h.CauldStatDL1 = m);
+                        			var c = b.engine.getGameAttribute("DNSM"),
+                        				p = "" + g.string((null != e.CauldStatDL1 ? c.getReserved("CauldStatDL1") : c.h.CauldStatDL1)[3]),
+                        				h = b.engine.getGameAttribute("DNSM"),
+                        				f = (null != e.CauldStatDL1 ? h.getReserved("CauldStatDL1") : h.h.CauldStatDL1)[1],
+                        				y = parseNum(f),
+                        				R = b.engine.getGameAttribute("DNSM"),
+                        				v = (null != e.CauldStatDL1 ? R.getReserved("CauldStatDL1") : R.h.CauldStatDL1)[2],
+                        				F = parseNum(v),
+                        				N = b.engine.getGameAttribute("CauldronInfo")[0 | a][0 | r];
+                        			return H._customBlock_ArbitraryCode5Inputs(p, y, F, parseNum(N), 0, 0);
+                        		}
+                        		if ("VialBonus" == s) {
+                        			var _ = b.engine.getGameAttribute("DNSM"),
+                        				I = b.engine.getGameAttribute("CustomLists"),
+                        				D = (null != e.AlchemyDescription ? I.getReserved("AlchemyDescription") : I.h.AlchemyDescription)[0 | a][0 | r];
+                        			if ((null != e.CauldStatDL1 ? _.setReserved("CauldStatDL1", D) : (_.h.CauldStatDL1 = D), 2 == w._customBlock_MainframeBonus(10))) {
+                        				var E = b.engine.getGameAttribute("DNSM"),
+                        					S = "" + g.string((null != e.CauldStatDL1 ? E.getReserved("CauldStatDL1") : E.h.CauldStatDL1)[3]),
+                        					G = b.engine.getGameAttribute("DNSM"),
+                        					T = (null != e.CauldStatDL1 ? G.getReserved("CauldStatDL1") : G.h.CauldStatDL1)[1],
+                        					U = parseNum(T),
+                        					M = b.engine.getGameAttribute("DNSM"),
+                        					V = (null != e.CauldStatDL1 ? M.getReserved("CauldStatDL1") : M.h.CauldStatDL1)[2],
+                        					C = parseNum(V),
+                        					B = b.engine.getGameAttribute("CauldronInfo")[0 | a][0 | r];
+                        				return (2 * H._customBlock_ArbitraryCode5Inputs(S, U, C, parseNum(B), 0, 0));
+                        			}
+                        			var P = b.engine.getGameAttribute("DNSM"),
+                        				O = "" + g.string((null != e.CauldStatDL1 ? P.getReserved("CauldStatDL1") : P.h.CauldStatDL1)[3]),
+                        				x = b.engine.getGameAttribute("DNSM"),
+                        				Q = (null != e.CauldStatDL1 ? x.getReserved("CauldStatDL1") : x.h.CauldStatDL1)[1],
+                        				X = parseNum(Q),
+                        				L = b.engine.getGameAttribute("DNSM"),
+                        				z = (null != e.CauldStatDL1 ? L.getReserved("CauldStatDL1") : L.h.CauldStatDL1)[2],
+                        				Y = parseNum(z),
+                        				W = b.engine.getGameAttribute("CauldronInfo")[0 | a][0 | r];
+                        			return H._customBlock_ArbitraryCode5Inputs(O, X, Y, parseNum(W), 0, 0);
+                        		}
+                        		if ("CauldronCosts" == s) {
+                        			if (1 == b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[17]) {
+                        				var Z = b.engine.getGameAttribute("CustomLists"),
+                        					J = (null != e.AlchemyDescription ? Z.getReserved("AlchemyDescription") : Z.h.AlchemyDescription)[0 | a][0 | r][(11 + o) | 0],
+                        					j = parseNum(J),
+                        					q = b.engine.getGameAttribute("CustomLists"),
+                        					K = (null != e.AlchemyDescription ? q.getReserved("AlchemyDescription") : q.h.AlchemyDescription)[0 | a][0 | r][4],
+                        					$ = parseNum(K),
+                        					ee = b.engine.getGameAttribute("CauldronInfo")[10][
+                        						0 | parseNum(r)
+                        					];
+                        				return Math.round(j * Math.pow($, parseNum(ee)));
+                        			}
+                        			var te = b.engine.getGameAttribute("CustomLists"),
+                        				ne = "" + g.string((null != e.AlchemyDescription ? te.getReserved("AlchemyDescription") : te.h.AlchemyDescription)[0 | a][0 | r][(5 + o) | 0]),
+                        				se = b.engine.getGameAttribute("CustomLists");
+                        			if ("Liquid" == ne.substring(0, Math.round(("" + g.string((null != e.AlchemyDescription ? se.getReserved("AlchemyDescription") : se.h.AlchemyDescription)[0 | a][0 | r][(5 + o) | 0])).length - 1))) {
+                        				var ae = b.engine.getGameAttribute("CustomLists"),
+                        					re = (null != e.AlchemyDescription ? ae.getReserved("AlchemyDescription") : ae.h.AlchemyDescription)[0 | a][0 | r][(11 + o) | 0],
+                        					Ae = parseNum(re),
+                        					le = b.engine.getGameAttribute("CauldronInfo")[0 | a][0 | r];
+                        				return (Ae + Math.floor(parseNum(le) / 20));
+                        			}
+                        			if (14 < r) {
+                        				var oe = b.engine.getGameAttribute("DNSM"),
+                        					ie = b.engine.getGameAttribute("CustomLists"),
+                        					ue = (null != e.AlchemyDescription ? ie.getReserved("AlchemyDescription") : ie.h.AlchemyDescription)[0 | a][0 | r][(11 + o) | 0],
+                        					ge = parseNum(ue),
+                        					me = b.engine.getGameAttribute("CauldronInfo")[0 | a][0 | r],
+                        					de = parseNum(me),
+                        					ce = b.engine.getGameAttribute("CauldronInfo")[0 | a][0 | r],
+                        					pe = parseNum(ce),
+                        					he = b.engine.getGameAttribute("CauldronInfo")[0 | a][0 | r],
+                        					be = ge * Math.pow(1.37 - (0.28 * de) / (60 + pe), parseNum(he));
+                        				null != e.CauldStatDN1 ? oe.setReserved("CauldStatDN1", be) : (oe.h.CauldStatDN1 = be);
+                        			} else {
+                        				var fe = b.engine.getGameAttribute("DNSM"),
+                        					ye = b.engine.getGameAttribute("CustomLists"),
+                        					Re = (null != e.AlchemyDescription ? ye.getReserved("AlchemyDescription") : ye.h.AlchemyDescription)[0 | a][0 | r][(11 + o) | 0],
+                        					ve = parseNum(Re),
+                        					Fe = b.engine.getGameAttribute("CauldronInfo")[0 | a][0 | r],
+                        					Ne = parseNum(Fe),
+                        					_e = b.engine.getGameAttribute("CauldronInfo")[0 | a][0 | r],
+                        					Ie = parseNum(_e),
+                        					De = b.engine.getGameAttribute("CauldronInfo")[0 | a][0 | r],
+                        					Ee = ve * Math.pow(1.35 - (0.3 * Ne) / (50 + Ie), parseNum(De));
+                        				null != e.CauldStatDN1 ? fe.setReserved("CauldStatDN1", Ee) : (fe.h.CauldStatDN1 = Ee);
+                        			}
+                        			if (0 == a) {
+                        				var Se = b.engine.getGameAttribute("DNSM"),
+                        					Ge = b.engine.getGameAttribute("DNSM"),
+                        					Te = null != e.CauldStatDN1 ? Ge.getReserved("CauldStatDN1") : Ge.h.CauldStatDN1,
+                        					Ue = parseNum(Te),
+                        					Me = b.engine.getGameAttribute("DNSM"),
+                        					Ve = null != e.AlchBubbles ? Me.getReserved("AlchBubbles") : Me.h.AlchBubbles,
+                        					Ce = null != e.BubbleCostOr ? Ve.getReserved("BubbleCostOr") : Ve.h.BubbleCostOr,
+                        					Be = Ue * Math.max(0.05, 1 - parseNum(Ce) / 100);
+                        				null != e.CauldStatDN1 ? Se.setReserved("CauldStatDN1", Be) : (Se.h.CauldStatDN1 = Be);
+                        			} else if (1 == a) {
+                        				var Pe = b.engine.getGameAttribute("DNSM"),
+                        					Oe = b.engine.getGameAttribute("DNSM"),
+                        					we = null != e.CauldStatDN1 ? Oe.getReserved("CauldStatDN1") : Oe.h.CauldStatDN1,
+                        					ke = parseNum(we),
+                        					xe = b.engine.getGameAttribute("DNSM"),
+                        					Qe = null != e.AlchBubbles ? xe.getReserved("AlchBubbles") : xe.h.AlchBubbles,
+                        					Xe = null != e.BubbleCostGr ? Qe.getReserved("BubbleCostGr") : Qe.h.BubbleCostGr,
+                        					Le = ke * Math.max(0.05, 1 - parseNum(Xe) / 100);
+                        				null != e.CauldStatDN1 ? Pe.setReserved("CauldStatDN1", Le) : (Pe.h.CauldStatDN1 = Le);
+                        			} else if (2 == a) {
+                        				var ze = b.engine.getGameAttribute("DNSM"),
+                        					Ye = b.engine.getGameAttribute("DNSM"),
+                        					We = null != e.CauldStatDN1 ? Ye.getReserved("CauldStatDN1") : Ye.h.CauldStatDN1,
+                        					Ze = parseNum(We),
+                        					He = b.engine.getGameAttribute("DNSM"),
+                        					Je = null != e.AlchBubbles ? He.getReserved("AlchBubbles") : He.h.AlchBubbles,
+                        					je = null != e.BubbleCostPu ? Je.getReserved("BubbleCostPu") : Je.h.BubbleCostPu,
+                        					qe = Ze * Math.max(0.05, 1 - parseNum(je) / 100);
+                        				null != e.CauldStatDN1 ? ze.setReserved("CauldStatDN1", qe) : (ze.h.CauldStatDN1 = qe);
+                        			} else {
+                        				var Ke = b.engine.getGameAttribute("DNSM"),
+                        					$e = b.engine.getGameAttribute("DNSM"),
+                        					et = null != e.CauldStatDN1 ? $e.getReserved("CauldStatDN1") : $e.h.CauldStatDN1,
+                        					tt = parseNum(et),
+                        					nt = b.engine.getGameAttribute("DNSM"),
+                        					st = null != e.AlchBubbles ? nt.getReserved("AlchBubbles") : nt.h.AlchBubbles,
+                        					at = null != e.BubbleCostYe ? st.getReserved("BubbleCostYe") : st.h.BubbleCostYe,
+                        					rt = tt * Math.max(0.05, 1 - parseNum(at) / 100);
+                        				null != e.CauldStatDN1 ? Ke.setReserved("CauldStatDN1", rt) : (Ke.h.CauldStatDN1 = rt);
+                        			}
+                        			var At = b.engine.getGameAttribute("DNSM"),
+                        				lt = b.engine.getGameAttribute("DNSM"),
+                        				ot = null != e.CauldStatDN1 ? lt.getReserved("CauldStatDN1") : lt.h.CauldStatDN1,
+                        				it = parseNum(ot),
+                        				ut = Math.max(0.1, 1 - A._customBlock_CauldronStats("CauldronLvsBrewBonus", a, 2, 0) / 100),
+                        				gt = b.engine.getGameAttribute("DNSM"),
+                        				mt = null != e.AlchVials ? gt.getReserved("AlchVials") : gt.h.AlchVials,
+                        				dt = null != e.AlchBubbleCost ? mt.getReserved("AlchBubbleCost") : mt.h.AlchBubbleCost,
+                        				ct = parseNum(dt),
+                        				pt = b.engine.getGameAttribute("DNSM"),
+                        				ht = null != e.AlchBubbles ? pt.getReserved("AlchBubbles") : pt.h.AlchBubbles,
+                        				bt = null != e.BubbleCost ? ht.getReserved("BubbleCost") : ht.h.BubbleCost,
+                        				ft = Math.max(0.05, 1 - (ct + parseNum(bt)) / 100),
+                        				yt = b.engine.getGameAttribute("OptionsListAccount")[62],
+                        				Rt = it * ut * ft * Math.max(0.1, Math.pow(0.75, parseNum(yt))) * Math.max(0.9, 1 - 0.1 * w._customBlock_AchieveStatus(108));
+                        			null != e.CauldStatDN1 ? At.setReserved("CauldStatDN1", Rt) : (At.h.CauldStatDN1 = Rt);
+                        			var vt = b.engine.getGameAttribute("DNSM"),
+                        				Ft = null != e.CauldStatDN1 ? vt.getReserved("CauldStatDN1") : vt.h.CauldStatDN1;
+                        			if (2e9 < parseNum(Ft)) {
+                        				var Nt = b.engine.getGameAttribute("DNSM");
+                        				null != e.CauldStatDN1 ? Nt.setReserved("CauldStatDN1", 2e9) : (Nt.h.CauldStatDN1 = 2e9);
+                        			}
+                        			var _t = b.engine.getGameAttribute("DNSM"),
+                        				It = null != e.CauldStatDN1 ? _t.getReserved("CauldStatDN1") : _t.h.CauldStatDN1;
+                        			return Math.round(parseNum(It));
+                        		}
+                        		if ("VialCosts" == s) {
+                        			if (0 == r) {
+                        				var Dt = b.engine.getGameAttribute("CustomLists"),
+                        					Et = null != e.AlchemyVialQTYreq ? Dt.getReserved("AlchemyVialQTYreq") : Dt.h.AlchemyVialQTYreq,
+                        					St = b.engine.getGameAttribute("CauldronInfo")[4][0 | a];
+                        				return Et[0 | parseNum(St)];
+                        			}
+                        			var Gt = b.engine.getGameAttribute("CauldronInfo")[4][0 | a];
+                        			return (3 * (parseNum(Gt) - 1 + 1));
+                        		}
+                        		if ("ResearchSpeed" == s) {
+                        			var Tt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        				Ut = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[0 | a]);
+                        			if (null != e[Ut] ? Tt.existsReserved(Ut) : Tt.h.hasOwnProperty(Ut)) {
+                        				if ("gimmeBrewSPDnonLiquid" != b.engine.getGameAttribute("DummyText3")) var Mt = b.engine.getGameAttribute("CauldronJobs")[1][0 | a],
+                        					Vt = 3 < parseNum(Mt) || (-1 == b.engine.getGameAttribute("CauldronJobs")[1][0 | a] && 1 == b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[17]);
+                        				else Vt = !1;
+                        				if (Vt) {
+                        					var Ct = b.engine.getGameAttribute("CauldronJobs")[1][0 | a];
+                        					if (99.9 < parseNum(Ct) || 3 == b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[17]) return Math.round(10 * w._customBlock_Labb("SigilBonusSpeed", "Blank", 0, 0)) / 10;
+                        					var Bt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						Pt = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[0 | a]),
+                        						Ot = null != e[Pt] ? Bt.getReserved(Pt) : Bt.h[Pt],
+                        						wt = (null != e.Lv0 ? Ot.getReserved("Lv0") : Ot.h.Lv0)[5];
+                        					return Math.pow(2 * (parseNum(wt) + 2), 0.65);
+                        				}
+                        				var kt = b.engine.getGameAttribute("DNSM"),
+                        					xt = A._customBlock_cauldronp2wbonuses("CauldronBonus", 3, 0, "0"),
+                        					Qt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					Xt = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[0 | a]),
+                        					Lt = null != e[Xt] ? Qt.getReserved(Xt) : Qt.h[Xt],
+                        					zt = (null != e.Lv0 ? Lt.getReserved("Lv0") : Lt.h.Lv0)[5],
+                        					Yt = xt * parseNum(zt);
+                        				if ((null != e.CauldStatDN7 ? kt.setReserved("CauldStatDN7", Yt) : (kt.h.CauldStatDN7 = Yt), b.engine.getGameAttribute("GetPlayersUsernames")[0 | a] == b.engine.getGameAttribute("UserInfo")[0])) {
+                        					var Wt = b.engine.getGameAttribute("DNSM"),
+                        						Zt = b.engine.getGameAttribute("DNSM"),
+                        						Ht = null != e.CauldStatDN7 ? Zt.getReserved("CauldStatDN7") : Zt.h.CauldStatDN7,
+                        						Jt = parseNum(Ht) * (1 + H._customBlock_RunCodeOfTypeXforThingY("Stat2num", "" + H._customBlock_TotalStats("WIS")) / 0.6);
+                        					null != e.CauldStatDN7 ? Wt.setReserved("CauldStatDN7", Jt) : (Wt.h.CauldStatDN7 = Jt);
+                        					var jt = b.engine.getGameAttribute("DNSM"),
+                        						qt = b.engine.getGameAttribute("DNSM"),
+                        						Kt = null != e.CauldStatDN7 ? qt.getReserved("CauldStatDN7") : qt.h.CauldStatDN7,
+                        						$t = parseNum(Kt) * (1 + (t._customBlock_GetTalentNumber(1, 491) + H._customBlock_SkillStats("TownProdSpeedPCT")) / 100);
+                        					null != e.CauldStatDN7 ? jt.setReserved("CauldStatDN7", $t) : (jt.h.CauldStatDN7 = $t);
+                        				} else {
+                        					var en = b.engine.getGameAttribute("DNSM"),
+                        						tn = b.engine.getGameAttribute("DNSM"),
+                        						nn = null != e.CauldStatDN7 ? tn.getReserved("CauldStatDN7") : tn.h.CauldStatDN7,
+                        						sn = parseNum(nn),
+                        						an = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						rn = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[0 | a]),
+                        						An = null != e[rn] ? an.getReserved(rn) : an.h[rn],
+                        						ln = (null != e.SkillLevels ? An.getReserved("SkillLevels") : An.h.SkillLevels)[491],
+                        						on = parseNum(ln),
+                        						un = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						gn = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[0 | a]),
+                        						mn = null != e[gn] ? un.getReserved(gn) : un.h[gn],
+                        						dn = null != e.PersonalValuesMap ? mn.getReserved("PersonalValuesMap") : mn.h.PersonalValuesMap,
+                        						cn = sn * (1 + on / 100) * (1 + H._customBlock_RunCodeOfTypeXforThingY("Stat2num", "" + g.string((null != e.StatList ? dn.getReserved("StatList") : dn.h.StatList)[2])) / 0.6);
+                        					null != e.CauldStatDN7 ? en.setReserved("CauldStatDN7", cn) : (en.h.CauldStatDN7 = cn);
+                        				}
+                        				var pn = b.engine.getGameAttribute("PlayerDATABASE"),
+                        					hn = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[0 | a]),
+                        					bn = null != e[hn] ? pn.getReserved(hn) : pn.h[hn],
+                        					fn = (null != e.Lv0 ? bn.getReserved("Lv0") : bn.h.Lv0)[5],
+                        					yn = Math.round(Math.pow(parseNum(fn), 0.8)),
+                        					Rn = t._customBlock_StampBonusOfTypeX("AlchSpd") + w._customBlock_GuildBonuses(5),
+                        					vn = b.engine.getGameAttribute("DNSM"),
+                        					Fn = null != e.AlchBubbles ? vn.getReserved("AlchBubbles") : vn.h.AlchBubbles,
+                        					Nn = null != e.BrewSpd ? Fn.getReserved("BrewSpd") : Fn.h.BrewSpd,
+                        					_n = parseNum(Nn),
+                        					In = b.engine.getGameAttribute("DNSM"),
+                        					Dn = null != e.BoxRewards ? In.getReserved("BoxRewards") : In.h.BoxRewards,
+                        					En = null != e.BrewSpeed ? Dn.getReserved("BrewSpeed") : Dn.h.BrewSpeed,
+                        					Sn = parseNum(En),
+                        					Gn = b.engine.getGameAttribute("DNSM"),
+                        					Tn = null != e.CauldStatDN7 ? Gn.getReserved("CauldStatDN7") : Gn.h.CauldStatDN7;
+                        				return (yn * (1 + (Rn + (_n + Sn)) / 100) * (1 + parseNum(Tn) / 100));
+                        			}
+                        			return 0;
+                        		}
+                        		if ("NumBubblesUnlocked" == s) {
+                        			var Un = b.engine.getGameAttribute("DNSM");
+                        			null != e.CauldStatDN3 ? Un.setReserved("CauldStatDN3", 0) : (Un.h.CauldStatDN3 = 0);
+                        			for (var Mn = 0, Vn = b.engine.getGameAttribute("CauldronInfo")[0 | a].length; Mn < Vn;) {
+                        				var Cn = Mn++;
+                        				if (0 == b.engine.getGameAttribute("CauldronInfo")[0 | a][Cn]) break;
+                        				var Bn = b.engine.getGameAttribute("DNSM"),
+                        					Pn = Cn + 1;
+                        				null != e.CauldStatDN3 ? Bn.setReserved("CauldStatDN3", Pn) : (Bn.h.CauldStatDN3 = Pn);
+                        			}
+                        			var On = b.engine.getGameAttribute("DNSM");
+                        			return null != e.CauldStatDN3 ? On.getReserved("CauldStatDN3") : On.h.CauldStatDN3;
+                        		}
+                        		if ("MaxCauldronQTY" == s) {
+                        			var wn = b.engine.getGameAttribute("DNSM"),
+                        				kn = A._customBlock_CauldronStats("NumBubblesUnlocked", a, 0, 0);
+                        			null != e.CauldStatDN1 ? wn.setReserved("CauldStatDN1", kn) : (wn.h.CauldStatDN1 = kn);
+                        			var xn = b.engine.getGameAttribute("DNSM"),
+                        				Qn = null != e.CauldStatDN1 ? xn.getReserved("CauldStatDN1") : xn.h.CauldStatDN1,
+                        				Xn = Math.pow(3 * parseNum(Qn), 2.2),
+                        				Ln = b.engine.getGameAttribute("DNSM"),
+                        				zn = null != e.CauldStatDN1 ? Ln.getReserved("CauldStatDN1") : Ln.h.CauldStatDN1;
+                        			return (3 + Xn * Math.pow(1.3, parseNum(zn)));
+                        		}
+                        		if ("PctChanceNewBubble" == s) {
+                        			var Yn = b.engine.getGameAttribute("DNSM"),
+                        				Wn = A._customBlock_CauldronStats("NumBubblesUnlocked", a, 0, 0);
+                        			null != e.CauldStatDN1 ? Yn.setReserved("CauldStatDN1", Wn) : (Yn.h.CauldStatDN1 = Wn);
+                        			var Zn = b.engine.getGameAttribute("DNSM"),
+                        				Hn = b.engine.getGameAttribute("DNSM"),
+                        				Jn = null != e.CauldStatDN1 ? Hn.getReserved("CauldStatDN1") : Hn.h.CauldStatDN1,
+                        				jn = 125 * Math.pow(0.73, parseNum(Jn) + 1),
+                        				qn = b.engine.getGameAttribute("DNSM"),
+                        				Kn = null != e.CauldStatDN1 ? qn.getReserved("CauldStatDN1") : qn.h.CauldStatDN1,
+                        				$n = jn / Math.max(0.1 * parseNum(Kn) + 1, 1);
+                        			null != e.CauldStatDN2 ? Zn.setReserved("CauldStatDN2", $n) : (Zn.h.CauldStatDN2 = $n);
+                        			var es = b.engine.getGameAttribute("DNSM"),
+                        				ts = b.engine.getGameAttribute("DNSM"),
+                        				ns = null != e.CauldStatDN2 ? ts.getReserved("CauldStatDN2") : ts.h.CauldStatDN2,
+                        				ss = parseNum(ns) * A._customBlock_CauldronStats("CauldronLvsBrewBonus", a, 1, 0) * Math.max(A._customBlock_cauldronp2wbonuses("CauldronBonus", 0, a, "1"), 1) * (1 + t._customBlock_GetTalentNumber(2, 492) / 100);
+                        			if ((null != e.CauldStatDN2 ? es.setReserved("CauldStatDN2", ss) : (es.h.CauldStatDN2 = ss), "1" == ("" + g.string(b.engine.getGameAttribute("OptionsListAccount")[32])).charAt(0 | a))) {
+                        				var as = b.engine.getGameAttribute("DNSM"),
+                        					rs = b.engine.getGameAttribute("DNSM"),
+                        					As = null != e.CauldStatDN2 ? rs.getReserved("CauldStatDN2") : rs.h.CauldStatDN2,
+                        					ls = 1.5 * parseNum(As);
+                        				null != e.CauldStatDN2 ? as.setReserved("CauldStatDN2", ls) : (as.h.CauldStatDN2 = ls);
+                        			}
+                        			var os = b.engine.getGameAttribute("DNSM");
+                        			return null != e.CauldStatDN2 ? os.getReserved("CauldStatDN2") : os.h.CauldStatDN2;
+                        		}
+                        		if ("CauldronLvsBrewREQ" == s) {
+                        			var is = b.engine.getGameAttribute("DNSM"),
+                        				us = b.engine.getGameAttribute("CauldronInfo")[8][0 | a][0 | r][1],
+                        				gs = parseNum(us) + 1;
+                        			null != e.CauldStatDN4 ? is.setReserved("CauldStatDN4", gs) : (is.h.CauldStatDN4 = gs);
+                        			var ms = b.engine.getGameAttribute("DNSM"),
+                        				ds = Math.max((100 - A._customBlock_cauldronp2wbonuses("CauldronBonus", 0, a, "2")) / 100, 0.05);
+                        			if ((null != e.CauldStatDN5 ? ms.setReserved("CauldStatDN5", ds) : (ms.h.CauldStatDN5 = ds), 4 > a)) {
+                        				var cs = b.engine.getGameAttribute("DNSM"),
+                        					ps = null != e.CauldStatDN4 ? cs.getReserved("CauldStatDN4") : cs.h.CauldStatDN4,
+                        					hs = Math.pow(1.5 * parseNum(ps), 1.6),
+                        					bs = b.engine.getGameAttribute("DNSM"),
+                        					fs = null != e.CauldStatDN4 ? bs.getReserved("CauldStatDN4") : bs.h.CauldStatDN4,
+                        					ys = hs * Math.pow(1.073, parseNum(fs)),
+                        					Rs = b.engine.getGameAttribute("DNSM"),
+                        					vs = null != e.CauldStatDN5 ? Rs.getReserved("CauldStatDN5") : Rs.h.CauldStatDN5;
+                        				return Math.floor(1 + 2 * ys * parseNum(vs));
+                        			}
+                        			var Fs = b.engine.getGameAttribute("DNSM"),
+                        				Ns = null != e.CauldStatDN4 ? Fs.getReserved("CauldStatDN4") : Fs.h.CauldStatDN4;
+                        			return Math.floor(1.6 + Math.pow(1.25 * parseNum(Ns), 1.8));
+                        		}
+                        		if ("CauldronLvsBrewBonus" == s) {
+                        			if (4 > a) {
+                        				if (0 == r) {
+                        					var _s = b.engine.getGameAttribute("CauldronInfo")[8][0 | a][0][1];
+                        					return Math.round(5 * parseNum(_s));
+                        				}
+                        				if (1 == r) {
+                        					var Is = b.engine.getGameAttribute("CauldronInfo")[8][0 | a][1][1];
+                        					return (Math.round(10 * (1 + 0.05 * parseNum(Is))) / 10);
+                        				}
+                        				if (2 == r) {
+                        					var Ds = b.engine.getGameAttribute("CauldronInfo")[8][0 | a][2][1];
+                        					return (Math.round(10 * H._customBlock_ArbitraryCode5Inputs("decay", 90, 100, parseNum(Ds), 0, 0)) / 10);
+                        				}
+                        				var Es = b.engine.getGameAttribute("CauldronInfo")[8][0 | a][3][1];
+                        				return Math.round(2 * parseNum(Es));
+                        			}
+                        			if (2 == r) {
+                        				var Ss = b.engine.getGameAttribute("CauldronInfo")[8][0 | a][0 | r][1];
+                        				return Math.round(parseNum(Ss));
+                        			}
+                        			var Gs = b.engine.getGameAttribute("CauldronInfo")[8][0 | a][0 | r][1];
+                        			return Math.round(2 * parseNum(Gs));
+                        		}
+                        		if ("SpecificSpdBonuses" == s) {
+                        			if (0 == a) {
+                        				var Ts = b.engine.getGameAttribute("DNSM"),
+                        					Us = b.engine.getGameAttribute("DNSM"),
+                        					Ms = null != e.AlchVials ? Us.getReserved("AlchVials") : Us.h.AlchVials,
+                        					Vs = null != e.OrangeBrew ? Ms.getReserved("OrangeBrew") : Ms.h.OrangeBrew,
+                        					Cs = (1 + parseNum(Vs) / 100) * (1 + A._customBlock_cauldronp2wbonuses("CauldronBonus", 0, 0, "0") / 100);
+                        				null != e.CauldStatDN1 ? Ts.setReserved("CauldStatDN1", Cs) : (Ts.h.CauldStatDN1 = Cs);
+                        			} else if (1 == a) {
+                        				var Bs = b.engine.getGameAttribute("DNSM"),
+                        					Ps = b.engine.getGameAttribute("DNSM"),
+                        					Os = null != e.AlchVials ? Ps.getReserved("AlchVials") : Ps.h.AlchVials,
+                        					ws = null != e.GreenBrew ? Os.getReserved("GreenBrew") : Os.h.GreenBrew,
+                        					ks = (1 + parseNum(ws) / 100) * (1 + A._customBlock_cauldronp2wbonuses("CauldronBonus", 0, 1, "0") / 100);
+                        				null != e.CauldStatDN1 ? Bs.setReserved("CauldStatDN1", ks) : (Bs.h.CauldStatDN1 = ks);
+                        			} else if (2 == a) {
+                        				var xs = b.engine.getGameAttribute("DNSM"),
+                        					Qs = b.engine.getGameAttribute("DNSM"),
+                        					Xs = null != e.AlchVials ? Qs.getReserved("AlchVials") : Qs.h.AlchVials,
+                        					Ls = null != e.PurpleBrew ? Xs.getReserved("PurpleBrew") : Xs.h.PurpleBrew,
+                        					zs = (1 + parseNum(Ls) / 100) * (1 + A._customBlock_cauldronp2wbonuses("CauldronBonus", 0, 2, "0") / 100);
+                        				null != e.CauldStatDN1 ? xs.setReserved("CauldStatDN1", zs) : (xs.h.CauldStatDN1 = zs);
+                        			} else if (3 == a) {
+                        				var Ys = b.engine.getGameAttribute("DNSM"),
+                        					Ws = b.engine.getGameAttribute("DNSM"),
+                        					Zs = null != e.AlchVials ? Ws.getReserved("AlchVials") : Ws.h.AlchVials,
+                        					Hs = null != e.YellowBrew ? Zs.getReserved("YellowBrew") : Zs.h.YellowBrew,
+                        					Js = (1 + parseNum(Hs) / 100) * (1 + A._customBlock_cauldronp2wbonuses("CauldronBonus", 0, 3, "0") / 100);
+                        				null != e.CauldStatDN1 ? Ys.setReserved("CauldStatDN1", Js) : (Ys.h.CauldStatDN1 = Js);
+                        			} else {
+                        				var js = b.engine.getGameAttribute("DNSM");
+                        				null != e.CauldStatDN1 ? js.setReserved("CauldStatDN1", 1) : (js.h.CauldStatDN1 = 1);
+                        			}
+                        			if ("1" == ("" + g.string(b.engine.getGameAttribute("OptionsListAccount")[32])).charAt(0 | a)) {
+                        				var qs = b.engine.getGameAttribute("DNSM"),
+                        					Ks = b.engine.getGameAttribute("DNSM"),
+                        					$s = null != e.CauldStatDN1 ? Ks.getReserved("CauldStatDN1") : Ks.h.CauldStatDN1,
+                        					ea = 1.5 * (null == $s ? 0 : "number" == typeof $s ? d.__cast($s, k) : "number" == typeof $s && (0 | $s) === $s ? d.__cast($s, l) : "boolean" == typeof $s ? d.__cast($s, n) ? 1 : 0 : "string" == typeof $s ? parseFloat($s) : parseFloat(g.string($s)));
+                        				null != e.CauldStatDN1 ? qs.setReserved("CauldStatDN1", ea) : (qs.h.CauldStatDN1 = ea);
+                        			}
+                        			var ta = 1 + A._customBlock_CauldronStats("CauldronLvsBrewBonus", a, 0, 0) / 100,
+                        				na = b.engine.getGameAttribute("DNSM"),
+                        				sa = null != e.CauldStatDN1 ? na.getReserved("CauldStatDN1") : na.h.CauldStatDN1;
+                        			return (ta * parseNum(sa));
+                        		}
+                        		if ("LiquidCap" == s) {
+                        			var aa = b.engine.getGameAttribute("DNSM"),
+                        				ra = A._customBlock_CauldronStats("CauldronLvsBrewBonus", a + 4, 2, 0);
+                        			null != e.CauldStatDN1 ? aa.setReserved("CauldStatDN1", ra) : (aa.h.CauldStatDN1 = ra);
+                        			var Aa = b.engine.getGameAttribute("GemItemsPurchased")[106];
+                        			if (parseNum(Aa) > a) {
+                        				var la = b.engine.getGameAttribute("DNSM"),
+                        					oa = 0.5 + w._customBlock_SaltLick(5) / 100;
+                        				null != e.CauldStatDN1bb ? la.setReserved("CauldStatDN1bb", oa) : (la.h.CauldStatDN1bb = oa);
+                        			} else {
+                        				var ia = b.engine.getGameAttribute("DNSM");
+                        				null != e.CauldStatDN1bb ? ia.setReserved("CauldStatDN1bb", 0) : (ia.h.CauldStatDN1bb = 0);
+                        			}
+                        			var ua = b.engine.getGameAttribute("DNSM"),
+                        				ga = b.engine.getGameAttribute("DNSM"),
+                        				ma = null != e.AlchBubbles ? ga.getReserved("AlchBubbles") : ga.h.AlchBubbles,
+                        				da = null != e.LqdCap ? ma.getReserved("LqdCap") : ma.h.LqdCap,
+                        				ca = parseNum(da),
+                        				pa = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[87],
+                        				ha = ca * Math.max(Math.pow(parseNum(pa) / 25, 0.3), 0);
+                        			if ((null != e.CauldStatDNh20 ? ua.setReserved("CauldStatDNh20", ha) : (ua.h.CauldStatDNh20 = ha), 0 == a)) {
+                        				var ba = b.engine.getGameAttribute("DNSM"),
+                        					fa = null != e.CauldStatDN1bb ? ba.getReserved("CauldStatDN1bb") : ba.h.CauldStatDN1bb,
+                        					ya = (1 + parseNum(fa)) * w._customBlock_MainframeBonus(6),
+                        					Ra = b.engine.getGameAttribute("DNSM"),
+                        					va = null != e.CauldStatDN1 ? Ra.getReserved("CauldStatDN1") : Ra.h.CauldStatDN1,
+                        					Fa = parseNum(va),
+                        					Na = b.engine.getGameAttribute("DNSM"),
+                        					_a = null != e.AlchVials ? Na.getReserved("AlchVials") : Na.h.AlchVials,
+                        					Ia = null != e.Liquid1Cap ? _a.getReserved("Liquid1Cap") : _a.h.Liquid1Cap,
+                        					Da = parseNum(Ia),
+                        					Ea = A._customBlock_cauldronp2wbonuses("CauldronBonus", 1, 0, "1"),
+                        					Sa = b.engine.getGameAttribute("DNSM"),
+                        					Ga = null != e.CauldStatDNh20 ? Sa.getReserved("CauldStatDNh20") : Sa.h.CauldStatDNh20;
+                        				return (ya * (10 + (Fa + (Da + (Ea + (parseNum(Ga) + (t._customBlock_StampBonusOfTypeX("LiquidCap") + Math.ceil(w._customBlock_ArcadeBonus(7)))))))));
+                        			}
+                        			if (1 == a) {
+                        				var Ta = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[56];
+                        				if (2 <= parseNum(Ta)) {
+                        					var Ua = b.engine.getGameAttribute("DNSM"),
+                        						Ma = null != e.CauldStatDN1bb ? Ua.getReserved("CauldStatDN1bb") : Ua.h.CauldStatDN1bb,
+                        						Va = (1 + parseNum(Ma)) * w._customBlock_MainframeBonus(6),
+                        						Ca = b.engine.getGameAttribute("DNSM"),
+                        						Ba = null != e.CauldStatDN1 ? Ca.getReserved("CauldStatDN1") : Ca.h.CauldStatDN1,
+                        						Pa = parseNum(Ba),
+                        						Oa = b.engine.getGameAttribute("DNSM"),
+                        						wa = null != e.AlchVials ? Oa.getReserved("AlchVials") : Oa.h.AlchVials,
+                        						ka = null != e.Liquid2Cap ? wa.getReserved("Liquid2Cap") : wa.h.Liquid2Cap,
+                        						xa = parseNum(ka),
+                        						Qa = A._customBlock_cauldronp2wbonuses("CauldronBonus", 1, 1, "1"),
+                        						Xa = b.engine.getGameAttribute("DNSM"),
+                        						La = null != e.CauldStatDNh20 ? Xa.getReserved("CauldStatDNh20") : Xa.h.CauldStatDNh20;
+                        					return (Va * (10 + Pa + (xa + (Qa + (parseNum(La) + (t._customBlock_StampBonusOfTypeX("LiquidCap") + Math.ceil(w._customBlock_ArcadeBonus(7))))))));
+                        				}
+                        			} else if (2 == a) {
+                        				var za = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[56];
+                        				if (3 <= parseNum(za)) {
+                        					var Ya = b.engine.getGameAttribute("DNSM"),
+                        						Wa = null != e.CauldStatDN1bb ? Ya.getReserved("CauldStatDN1bb") : Ya.h.CauldStatDN1bb,
+                        						Za = (1 + parseNum(Wa)) * w._customBlock_MainframeBonus(6),
+                        						Ha = b.engine.getGameAttribute("DNSM"),
+                        						Ja = null != e.CauldStatDN1 ? Ha.getReserved("CauldStatDN1") : Ha.h.CauldStatDN1,
+                        						ja = parseNum(Ja),
+                        						qa = A._customBlock_cauldronp2wbonuses("CauldronBonus", 1, 2, "1"),
+                        						Ka = b.engine.getGameAttribute("DNSM"),
+                        						$a = null != e.CauldStatDNh20 ? Ka.getReserved("CauldStatDNh20") : Ka.h.CauldStatDNh20,
+                        						er = null == $a ? 0 : "number" == typeof $a ? d.__cast($a, k) : "number" == typeof $a && (0 | $a) === $a ? d.__cast($a, l) : "boolean" == typeof $a ? d.__cast($a, n) ? 1 : 0 : "string" == typeof $a ? parseFloat($a) : parseFloat(g.string($a)),
+                        						tr = t._customBlock_StampBonusOfTypeX("LiquidCap"),
+                        						nr = Math.ceil(w._customBlock_ArcadeBonus(7)),
+                        						sr = b.engine.getGameAttribute("DNSM"),
+                        						ar = null != e.AlchVials ? sr.getReserved("AlchVials") : sr.h.AlchVials,
+                        						rr = null != e.Liquid3Cap ? ar.getReserved("Liquid3Cap") : ar.h.Liquid3Cap;
+                        					return (Za * (10 + ja + (qa + er + (tr + (nr + parseNum(rr))))));
+                        				}
+                        			} else {
+                        				var Ar = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[56];
+                        				if (4 <= parseNum(Ar)) {
+                        					var lr = b.engine.getGameAttribute("DNSM"),
+                        						or = null != e.CauldStatDN1bb ? lr.getReserved("CauldStatDN1bb") : lr.h.CauldStatDN1bb,
+                        						ir = (1 + parseNum(or)) * w._customBlock_MainframeBonus(6),
+                        						ur = b.engine.getGameAttribute("DNSM"),
+                        						gr = null != e.CauldStatDN1 ? ur.getReserved("CauldStatDN1") : ur.h.CauldStatDN1,
+                        						mr = parseNum(gr),
+                        						dr = A._customBlock_cauldronp2wbonuses("CauldronBonus", 1, 3, "1"),
+                        						cr = b.engine.getGameAttribute("DNSM"),
+                        						pr = null != e.CauldStatDNh20 ? cr.getReserved("CauldStatDNh20") : cr.h.CauldStatDNh20;
+                        					return (ir * (10 + (mr + (dr + parseNum(pr) + (t._customBlock_StampBonusOfTypeX("LiquidCap") + Math.ceil(w._customBlock_ArcadeBonus(7)))))));
+                        				}
+                        			}
+                        			return 0;
+                        		}
+                        		if ("LiquidHRrate" == s) {
+                        			if (0 == a) {
+                        				var hr = b.engine.getGameAttribute("DNSM"),
+                        					br = A._customBlock_CauldronStats("CauldronLvsBrewBonus", 4, 3, 0) + A._customBlock_cauldronp2wbonuses("CauldronBonus", 1, 0, "0");
+                        				null != e.CauldStatDN1 ? hr.setReserved("CauldStatDN1", br) : (hr.h.CauldStatDN1 = br);
+                        			} else if (1 == a) {
+                        				var fr = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[86];
+                        				if (19 < parseNum(fr)) {
+                        					var yr = b.engine.getGameAttribute("DNSM"),
+                        						Rr = A._customBlock_CauldronStats("CauldronLvsBrewBonus", 5, 3, 0) + A._customBlock_cauldronp2wbonuses("CauldronBonus", 1, 1, "0");
+                        					null != e.CauldStatDN1 ? yr.setReserved("CauldStatDN1", Rr) : (yr.h.CauldStatDN1 = Rr);
+                        				} else {
+                        					var vr = b.engine.getGameAttribute("DNSM");
+                        					null != e.CauldStatDN1 ? vr.setReserved("CauldStatDN1", 0) : (vr.h.CauldStatDN1 = 0);
+                        				}
+                        			} else if (2 == a) {
+                        				var Fr = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[86];
+                        				if (34 < parseNum(Fr)) {
+                        					var Nr = b.engine.getGameAttribute("DNSM"),
+                        						_r = A._customBlock_CauldronStats("CauldronLvsBrewBonus", 6, 3, 0) + A._customBlock_cauldronp2wbonuses("CauldronBonus", 1, 2, "0");
+                        					null != e.CauldStatDN1 ? Nr.setReserved("CauldStatDN1", _r) : (Nr.h.CauldStatDN1 = _r);
+                        				} else {
+                        					var Ir = b.engine.getGameAttribute("DNSM");
+                        					null != e.CauldStatDN1 ? Ir.setReserved("CauldStatDN1", 0) : (Ir.h.CauldStatDN1 = 0);
+                        				}
+                        			} else {
+                        				var Dr = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[86];
+                        				if (119 < parseNum(Dr)) {
+                        					var Er = b.engine.getGameAttribute("DNSM"),
+                        						Sr = A._customBlock_CauldronStats("CauldronLvsBrewBonus", 7, 3, 0) + A._customBlock_cauldronp2wbonuses("CauldronBonus", 1, 3, "0");
+                        					null != e.CauldStatDN1 ? Er.setReserved("CauldStatDN1", Sr) : (Er.h.CauldStatDN1 = Sr);
+                        				} else {
+                        					var Gr = b.engine.getGameAttribute("DNSM");
+                        					null != e.CauldStatDN1 ? Gr.setReserved("CauldStatDN1", 0) : (Gr.h.CauldStatDN1 = 0);
+                        				}
+                        			}
+                        			var Tr = b.engine.getGameAttribute("DNSM"),
+                        				Ur = b.engine.getGameAttribute("DNSM"),
+                        				Mr = null != e.CauldStatDN1 ? Ur.getReserved("CauldStatDN1") : Ur.h.CauldStatDN1,
+                        				Vr = parseNum(Mr),
+                        				Cr = b.engine.getGameAttribute("DNSM"),
+                        				Br = null != e.AlchVials ? Cr.getReserved("AlchVials") : Cr.h.AlchVials,
+                        				Pr = null != e.LiquidRegen ? Br.getReserved("LiquidRegen") : Br.h.LiquidRegen,
+                        				Or = Vr + parseNum(Pr);
+                        			null != e.CauldStatDN1 ? Tr.setReserved("CauldStatDN1", Or) : (Tr.h.CauldStatDN1 = Or);
+                        			var wr = b.engine.getGameAttribute("DNSM");
+                        			null != e.CauldStatDN2 ? wr.setReserved("CauldStatDN2", 0) : (wr.h.CauldStatDN2 = 0);
+                        			for (var kr = 0; 4 > kr;) {
+                        				var xr = kr++;
+                        				if (-1 != b.engine.getGameAttribute("CauldronJobs")[0][(a + 4) | 0][xr]) {
+                        					var Qr = b.engine.getGameAttribute("DNSM"),
+                        						Xr = b.engine.getGameAttribute("DNSM"),
+                        						Lr = null != e.CauldStatDN2 ? Xr.getReserved("CauldStatDN2") : Xr.h.CauldStatDN2,
+                        						zr = parseNum(Lr),
+                        						Yr = b.engine.getGameAttribute("CauldronJobs")[0][(a + 4) | 0][xr],
+                        						Wr = Qr,
+                        						Zr = zr + A._customBlock_CauldronStats("ResearchSpeed", parseNum(Yr), 0, 0);
+                        					null != e.CauldStatDN2 ? Wr.setReserved("CauldStatDN2", Zr) : (Wr.h.CauldStatDN2 = Zr);
+                        				}
+                        			}
+                        			var Hr = b.engine.getGameAttribute("GemItemsPurchased")[106];
+                        			if (parseNum(Hr) > a) {
+                        				var Jr = b.engine.getGameAttribute("DNSM"),
+                        					jr = null != e.CauldStatDN1 ? Jr.getReserved("CauldStatDN1") : Jr.h.CauldStatDN1,
+                        					qr = parseNum(jr),
+                        					Kr = b.engine.getGameAttribute("DNSM"),
+                        					$r = null != e.CauldStatDN2 ? Kr.getReserved("CauldStatDN2") : Kr.h.CauldStatDN2;
+                        				return (1.5 * (1 + qr / 100) * (1 + ((null == $r ? 0 : "number" == typeof $r ? d.__cast($r, k) : "number" == typeof $r && (0 | $r) === $r ? d.__cast($r, l) : "boolean" == typeof $r ? d.__cast($r, n) ? 1 : 0 : "string" == typeof $r ? parseFloat($r) : parseFloat(g.string($r))) + (t._customBlock_StampBonusOfTypeX("LiquidSpd") + (w._customBlock_SaltLick(5) + w._customBlock_Labb("SigilBonus", "Blank", 20, 0)))) / 100) * (1 - (7.5 * (w._customBlock_MainframeBonus(6) - 1)) / 100));
+                        			}
+                        			var eA = b.engine.getGameAttribute("DNSM"),
+                        				tA = null != e.CauldStatDN1 ? eA.getReserved("CauldStatDN1") : eA.h.CauldStatDN1,
+                        				nA = parseNum(tA),
+                        				sA = b.engine.getGameAttribute("DNSM"),
+                        				aA = null != e.CauldStatDN2 ? sA.getReserved("CauldStatDN2") : sA.h.CauldStatDN2;
+                        			return (
+                        				(1 + nA / 100) * (1 + (parseNum(aA) + (t._customBlock_StampBonusOfTypeX("LiquidSpd") + (w._customBlock_SaltLick(5) + w._customBlock_Labb("SigilBonus", "Blank", 20, 0)))) / 100) * (1 - (7.5 * (w._customBlock_MainframeBonus(6) - 1)) / 100));
+                        		}
+                        		if ("ExpPerPtBrewed" == s) {
+                        			if (-1 == b.engine.getGameAttribute("CauldronJobs")[1][0 | a]) return 0;
+                        			var rA = b.engine.getGameAttribute("DNSM");
+                        			null != e.CauldStatDN1 ? rA.setReserved("CauldStatDN1", 1) : (rA.h.CauldStatDN1 = 1);
+                        			var AA = b.engine.getGameAttribute("CauldronJobs")[1][0 | a];
+                        			if (3 < parseNum(AA)) {
+                        				var lA = b.engine.getGameAttribute("DNSM");
+                        				null != e.CauldStatDN1 ? lA.setReserved("CauldStatDN1", 2) : (lA.h.CauldStatDN1 = 2);
+                        			}
+                        			var oA = H._customBlock_ExpMulti(5),
+                        				iA = b.engine.getGameAttribute("DNSM"),
+                        				uA = null != e.CauldStatDN1 ? iA.getReserved("CauldStatDN1") : iA.h.CauldStatDN1;
+                        			return (15 * oA * parseNum(uA));
+                        		}
+                        		return 1;
+                        	}

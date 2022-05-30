@@ -1,0 +1,1398 @@
+                        (t._customBlock_TalentCalc = function(s) {
+                        		var a = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.TotStatMAP ? !a.existsReserved("TotStatMAP") : !a.h.hasOwnProperty("TotStatMAP")) {
+                        			var r = b.engine.getGameAttribute("DNSM"),
+                        				o = new p();
+                        			null != e.TotStatMAP ? r.setReserved("TotStatMAP", o) : (r.h.TotStatMAP = o);
+                        		}
+                        		var i = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.TotalStatsETCmap ? !i.existsReserved("TotalStatsETCmap") : !i.h.hasOwnProperty("TotalStatsETCmap")) {
+                        			var u = b.engine.getGameAttribute("DNSM"),
+                        				m = new p();
+                        			null != e.TotalStatsETCmap ? u.setReserved("TotalStatsETCmap", m) : (u.h.TotalStatsETCmap = m);
+                        		}
+                        		var c = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.AlchBubbles ? !c.existsReserved("AlchBubbles") : !c.h.hasOwnProperty("AlchBubbles")) {
+                        			var f = b.engine.getGameAttribute("DNSM"),
+                        				y = new p();
+                        			null != e.AlchBubbles ? f.setReserved("AlchBubbles", y) : (f.h.AlchBubbles = y);
+                        		}
+                        		var R = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.AlchVials ? !R.existsReserved("AlchVials") : !R.h.hasOwnProperty("AlchVials")) {
+                        			var v = b.engine.getGameAttribute("DNSM"),
+                        				N = new p();
+                        			null != e.AlchVials ? v.setReserved("AlchVials", N) : (v.h.AlchVials = N);
+                        		}
+                        		var _ = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.BoxRewards ? !_.existsReserved("BoxRewards") : !_.h.hasOwnProperty("BoxRewards")) {
+                        			var I = b.engine.getGameAttribute("DNSM"),
+                        				D = new p();
+                        			null != e.BoxRewards ? I.setReserved("BoxRewards", D) : (I.h.BoxRewards = D);
+                        		}
+                        		var S = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.FamBonusQTYs ? !S.existsReserved("FamBonusQTYs") : !S.h.hasOwnProperty("FamBonusQTYs")) {
+                        			var G = b.engine.getGameAttribute("DNSM"),
+                        				T = new p();
+                        			null != e.FamBonusQTYs ? G.setReserved("FamBonusQTYs", T) : (G.h.FamBonusQTYs = T);
+                        		}
+                        		var M = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.CardBonusS ? !M.existsReserved("CardBonusS") : !M.h.hasOwnProperty("CardBonusS")) {
+                        			var V = b.engine.getGameAttribute("DNSM"),
+                        				C = new p();
+                        			null != e.CardBonusS ? V.setReserved("CardBonusS", C) : (V.h.CardBonusS = C);
+                        		}
+                        		var B = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.MealBonusesS ? !B.existsReserved("MealBonusesS") : !B.h.hasOwnProperty("MealBonusesS")) {
+                        			var P = b.engine.getGameAttribute("DNSM"),
+                        				O = new p();
+                        			null != e.MealBonusesS ? P.setReserved("MealBonusesS", O) : (P.h.MealBonusesS = O);
+                        		}
+                        		var x = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.LabMFbonuses ? !x.existsReserved("LabMFbonuses") : !x.h.hasOwnProperty("LabMFbonuses")) {
+                        			var Q = b.engine.getGameAttribute("DNSM"),
+                        				X = new p();
+                        			null != e.LabMFbonuses ? Q.setReserved("LabMFbonuses", X) : (Q.h.LabMFbonuses = X);
+                        		}
+                        		var L = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.StampBonuses_Map_Of_Val ? !L.existsReserved("StampBonuses_Map_Of_Val") : !L.h.hasOwnProperty("StampBonuses_Map_Of_Val")) {
+                        			var z = b.engine.getGameAttribute("DNSM"),
+                        				Y = new p();
+                        			null != e.StampBonuses_Map_Of_Val ? z.setReserved("StampBonuses_Map_Of_Val", Y) : (z.h.StampBonuses_Map_Of_Val = Y);
+                        		}
+                        		var W = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.CalcTalentMAP ? !W.existsReserved("CalcTalentMAP") : !W.h.hasOwnProperty("CalcTalentMAP")) {
+                        			var Z = b.engine.getGameAttribute("DNSM"),
+                        				J = new p();
+                        			null != e.CalcTalentMAP ? Z.setReserved("CalcTalentMAP", J) : (Z.h.CalcTalentMAP = J);
+                        			var j = b.engine.getGameAttribute("DNSM"),
+                        				q = [];
+                        			null != e.CalcTalentDLz ? j.setReserved("CalcTalentDLz", q) : (j.h.CalcTalentDLz = q);
+                        			var K = b.engine.getGameAttribute("DNSM"),
+                        				$ = [];
+                        			null != e.CalcTalentDL2z ? K.setReserved("CalcTalentDL2z", $) : (K.h.CalcTalentDL2z = $);
+                        			for (var ee = 0; 9 > ee;) {
+                        				ee++;
+                        				var te = b.engine.getGameAttribute("DNSM");
+                        				(null != e.CalcTalentDLz ? te.getReserved("CalcTalentDLz") : te.h.CalcTalentDLz).push(0);
+                        				var ne = b.engine.getGameAttribute("DNSM");
+                        				(null != e.CalcTalentDL2z ? ne.getReserved("CalcTalentDL2z") : ne.h.CalcTalentDL2z).push(0);
+                        			}
+                        			var se = b.engine.getGameAttribute("DNSM"),
+                        				ae = null != e.CalcTalentMAP ? se.getReserved("CalcTalentMAP") : se.h.CalcTalentMAP,
+                        				re = b.engine.getGameAttribute("DNSM"),
+                        				Ae = null != e.CalcTalentDLz ? re.getReserved("CalcTalentDLz") : re.h.CalcTalentDLz;
+                        			null != e[42] ? ae.setReserved("42", Ae) : (ae.h[42] = Ae);
+                        			var le = b.engine.getGameAttribute("DNSM"),
+                        				oe = null != e.CalcTalentMAP ? le.getReserved("CalcTalentMAP") : le.h.CalcTalentMAP,
+                        				ie = b.engine.getGameAttribute("DNSM"),
+                        				ue = null != e.CalcTalentDL2z ? ie.getReserved("CalcTalentDL2z") : ie.h.CalcTalentDL2z;
+                        			null != e[43] ? oe.setReserved("43", ue) : (oe.h[43] = ue);
+                        		}
+                        		if (-7044.5 != s) {
+                        			if (1 != h.getCurrentSceneName().indexOf("utorial")) {
+                        				if (0 >= s) {
+                        					var ge = b.engine.getGameAttribute("DNSM"),
+                        						me = new p();
+                        					null != e.CalcTalentMAP ? ge.setReserved("CalcTalentMAP", me) : (ge.h.CalcTalentMAP = me);
+                        					var de = b.engine.getGameAttribute("DNSM"),
+                        						ce = null != e.CalcTalentMAP ? de.getReserved("CalcTalentMAP") : de.h.CalcTalentMAP;
+                        					null != e.arena ? ce.setReserved("arena", 0) : (ce.h.arena = 0);
+                        					for (var pe = 0; 16 > pe;) {
+                        						var he = pe++,
+                        							be = b.engine.getGameAttribute("OptionsListAccount")[89],
+                        							fe = parseNum(be),
+                        							ye = b.engine.getGameAttribute("CustomLists"),
+                        							Re = (null != e.RANDOlist ? ye.getReserved("RANDOlist") : ye.h.RANDOlist)[53][he];
+                        						if (!(fe >= parseNum(Re))) break;
+                        						var ve = b.engine.getGameAttribute("DNSM"),
+                        							Fe = null != e.CalcTalentMAP ? ve.getReserved("CalcTalentMAP") : ve.h.CalcTalentMAP,
+                        							Ne = he + 1;
+                        						null != e.arena ? Fe.setReserved("arena", Ne) : (Fe.h.arena = Ne);
+                        					}
+                        					var _e = b.engine.getGameAttribute("DNSM");
+                        					null != e.CalcTalentDN1 ? _e.setReserved("CalcTalentDN1", 1e3) : (_e.h.CalcTalentDN1 = 1e3);
+                        					for (var Ie = 0; 9 > Ie;) {
+                        						var De = Ie++;
+                        						if (8 < De) var Ee = b.engine.getGameAttribute("KillsLeft2Advance")[100][0],
+                        							Se = !(1 > parseNum(Ee));
+                        						else Se = !1;
+                        						if (!Se) {
+                        							var Ge = b.engine.getGameAttribute("Lv0")[De + 1],
+                        								Te = parseNum(Ge),
+                        								Ue = b.engine.getGameAttribute("DNSM"),
+                        								Me = null != e.CalcTalentDN1 ? Ue.getReserved("CalcTalentDN1") : Ue.h.CalcTalentDN1;
+                        							if (Te < parseNum(Me)) {
+                        								var Ve = b.engine.getGameAttribute("DNSM"),
+                        									Ce = b.engine.getGameAttribute("Lv0")[De + 1];
+                        								null != e.CalcTalentDN1 ? Ve.setReserved("CalcTalentDN1", Ce) : (Ve.h.CalcTalentDN1 = Ce);
+                        							}
+                        						}
+                        					}
+                        					var Be = b.engine.getGameAttribute("DNSM"),
+                        						Pe = null != e.CalcTalentMAP ? Be.getReserved("CalcTalentMAP") : Be.h.CalcTalentMAP,
+                        						Oe = b.engine.getGameAttribute("DNSM"),
+                        						we = null != e.CalcTalentDN1 ? Oe.getReserved("CalcTalentDN1") : Oe.h.CalcTalentDN1;
+                        					null != e[31] ? Pe.setReserved("31", we) : (Pe.h[31] = we);
+                        					var ke = b.engine.getGameAttribute("DNSM");
+                        					null != e.CalcTalentDN1 ? ke.setReserved("CalcTalentDN1", 0) : (ke.h.CalcTalentDN1 = 0);
+                        					var xe = b.engine.getGameAttribute("DNSM"),
+                        						Qe = [];
+                        					null != e.CalcTalentDLz ? xe.setReserved("CalcTalentDLz", Qe) : (xe.h.CalcTalentDLz = Qe);
+                        					var Xe = b.engine.getGameAttribute("DNSM"),
+                        						Le = [];
+                        					null != e.CalcTalentDL2z ? Xe.setReserved("CalcTalentDL2z", Le) : (Xe.h.CalcTalentDL2z = Le);
+                        					for (var ze = 0; 9 > ze;) {
+                        						ze++;
+                        						var Ye = b.engine.getGameAttribute("DNSM");
+                        						(null != e.CalcTalentDLz ? Ye.getReserved("CalcTalentDLz") : Ye.h.CalcTalentDLz).push(0);
+                        						var We = b.engine.getGameAttribute("DNSM");
+                        						(null != e.CalcTalentDL2z ? We.getReserved("CalcTalentDL2z") : We.h.CalcTalentDL2z).push(0);
+                        					}
+                        					var Ze = b.engine.getGameAttribute("DNSM");
+                        					null != e.CalcTalentDT1 ? Ze.setReserved("CalcTalentDT1", "No") : (Ze.h.CalcTalentDT1 = "No");
+                        					for (var He = b.engine.getGameAttribute("PlayerDATABASE").keys(); He.hasNext();) {
+                        						var Je = He.next(),
+                        							je = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							qe = "" + Je,
+                        							Ke = null != e[qe] ? je.getReserved(qe) : je.h[qe],
+                        							$e = null != e.CharacterClass ? Ke.getReserved("CharacterClass") : Ke.h.CharacterClass;
+                        						if (3 <= (null == $e ? 0 : "number" == typeof $e ? d.__cast($e, k) : "number" == typeof $e && (0 | $e) === $e ? d.__cast($e, l) : "boolean" == typeof $e ? d.__cast($e, n) ? 1 : 0 : "string" == typeof $e ? parseFloat($e) : parseFloat(g.string($e)))) var et = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							tt = "" + Je,
+                        							nt = null != e[tt] ? et.getReserved(tt) : et.h[tt],
+                        							st = null != e.CharacterClass ? nt.getReserved("CharacterClass") : nt.h.CharacterClass,
+                        							at = 6 > parseNum(st);
+                        						else at = !1;
+                        						if (at) {
+                        							var rt = b.engine.getGameAttribute("DNSM");
+                        							null != e.CalcTalentDT1 ? rt.setReserved("CalcTalentDT1", Je) : (rt.h.CalcTalentDT1 = Je);
+                        						}
+                        					}
+                        					var At = b.engine.getGameAttribute("DNSM");
+                        					if ("No" != (null != e.CalcTalentDT1 ? At.getReserved("CalcTalentDT1") : At.h.CalcTalentDT1)) var lt = b.engine.getGameAttribute("DNSM"),
+                        						ot = (null != e.CalcTalentDT1 ? lt.getReserved("CalcTalentDT1") : lt.h.CalcTalentDT1) != b.engine.getGameAttribute("UserInfo")[0];
+                        					else ot = !1;
+                        					if (ot)
+                        						for (var it = 0; 9 > it;) {
+                        							var ut = it++,
+                        								gt = b.engine.getGameAttribute("Lv0")[ut + 1],
+                        								mt = parseNum(gt),
+                        								dt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        								ct = b.engine.getGameAttribute("DNSM"),
+                        								pt = "" + g.string(null != e.CalcTalentDT1 ? ct.getReserved("CalcTalentDT1") : ct.h.CalcTalentDT1),
+                        								ht = dt,
+                        								bt = null != e[pt] ? ht.getReserved(pt) : ht.h[pt],
+                        								ft = (null != e.Lv0 ? bt.getReserved("Lv0") : bt.h.Lv0)[ut + 1];
+                        							if (mt < parseNum(ft)) {
+                        								var yt = b.engine.getGameAttribute("DNSM"),
+                        									Rt = null != e.CalcTalentDLz ? yt.getReserved("CalcTalentDLz") : yt.h.CalcTalentDLz,
+                        									vt = b.engine.getGameAttribute("CustomLists"),
+                        									Ft = "" + g.string((null != e.TalentDescriptions ? vt.getReserved("TalentDescriptions") : vt.h.TalentDescriptions)[42][1][2]),
+                        									Nt = b.engine.getGameAttribute("CustomLists"),
+                        									_t = (null != e.TalentDescriptions ? Nt.getReserved("TalentDescriptions") : Nt.h.TalentDescriptions)[42][1][0],
+                        									It = parseNum(_t),
+                        									Dt = b.engine.getGameAttribute("CustomLists"),
+                        									Et = (null != e.TalentDescriptions ? Dt.getReserved("TalentDescriptions") : Dt.h.TalentDescriptions)[42][1][1],
+                        									St = parseNum(Et),
+                        									Gt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									Tt = b.engine.getGameAttribute("DNSM"),
+                        									Ut = "" + g.string(null != e.CalcTalentDT1 ? Tt.getReserved("CalcTalentDT1") : Tt.h.CalcTalentDT1),
+                        									Mt = Gt,
+                        									Vt = null != e[Ut] ? Mt.getReserved(Ut) : Mt.h[Ut],
+                        									Ct = (null != e.SkillLevels ? Vt.getReserved("SkillLevels") : Vt.h.SkillLevels)[42];
+                        								Rt[ut] = H._customBlock_ArbitraryCode5Inputs(Ft, It, St, parseNum(Ct), 0, 0);
+                        								var Bt = b.engine.getGameAttribute("DNSM"),
+                        									Pt = null != e.CalcTalentDL2z ? Bt.getReserved("CalcTalentDL2z") : Bt.h.CalcTalentDL2z,
+                        									Ot = b.engine.getGameAttribute("CustomLists"),
+                        									wt = "" + g.string((null != e.TalentDescriptions ? Ot.getReserved("TalentDescriptions") : Ot.h.TalentDescriptions)[43][1][2]),
+                        									kt = b.engine.getGameAttribute("CustomLists"),
+                        									xt = (null != e.TalentDescriptions ? kt.getReserved("TalentDescriptions") : kt.h.TalentDescriptions)[43][1][0],
+                        									Qt = parseNum(xt),
+                        									Xt = b.engine.getGameAttribute("CustomLists"),
+                        									Lt = (null != e.TalentDescriptions ? Xt.getReserved("TalentDescriptions") : Xt.h.TalentDescriptions)[43][1][1],
+                        									zt = parseNum(Lt),
+                        									Yt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									Wt = b.engine.getGameAttribute("DNSM"),
+                        									Zt = "" + g.string(null != e.CalcTalentDT1 ? Wt.getReserved("CalcTalentDT1") : Wt.h.CalcTalentDT1),
+                        									Ht = Yt,
+                        									Jt = null != e[Zt] ? Ht.getReserved(Zt) : Ht.h[Zt],
+                        									jt = (null != e.SkillLevels ? Jt.getReserved("SkillLevels") : Jt.h.SkillLevels)[43];
+                        								Pt[ut] = H._customBlock_ArbitraryCode5Inputs(wt, Qt, zt, parseNum(jt), 0, 0);
+                        							}
+                        						}
+                        					var qt = b.engine.getGameAttribute("DNSM"),
+                        						Kt = null != e.CalcTalentMAP ? qt.getReserved("CalcTalentMAP") : qt.h.CalcTalentMAP,
+                        						$t = b.engine.getGameAttribute("DNSM"),
+                        						en = null != e.CalcTalentDLz ? $t.getReserved("CalcTalentDLz") : $t.h.CalcTalentDLz;
+                        					null != e[42] ? Kt.setReserved("42", en) : (Kt.h[42] = en);
+                        					var tn = b.engine.getGameAttribute("DNSM"),
+                        						nn = null != e.CalcTalentMAP ? tn.getReserved("CalcTalentMAP") : tn.h.CalcTalentMAP,
+                        						sn = b.engine.getGameAttribute("DNSM"),
+                        						an = null != e.CalcTalentDL2z ? sn.getReserved("CalcTalentDL2z") : sn.h.CalcTalentDL2z;
+                        					null != e[43] ? nn.setReserved("43", an) : (nn.h[43] = an);
+                        					var rn = b.engine.getGameAttribute("DNSM");
+                        					null != e.CalcTalentDN1 ? rn.setReserved("CalcTalentDN1", 0) : (rn.h.CalcTalentDN1 = 0);
+                        					var An = b.engine.getGameAttribute("DNSM");
+                        					null != e.CalcTalentDN2 ? An.setReserved("CalcTalentDN2", 0) : (An.h.CalcTalentDN2 = 0);
+                        					for (var ln = 0, on = b.engine.getGameAttribute("CustomLists"), un = (null != e.MapAFKtarget ? on.getReserved("MapAFKtarget") : on.h.MapAFKtarget).length; ln < un;) {
+                        						var gn = ln++,
+                        							mn = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							dn = b.engine.getGameAttribute("CustomLists"),
+                        							cn = "" + g.string((null != e.MapAFKtarget ? dn.getReserved("MapAFKtarget") : dn.h.MapAFKtarget)[gn]),
+                        							pn = mn;
+                        						if (null != e[cn] ? pn.existsReserved(cn) : pn.h.hasOwnProperty(cn)) {
+                        							if (!(gn < b.engine.getGameAttribute("KillsLeft2Advance").length)) break;
+                        							var hn = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								bn = b.engine.getGameAttribute("CustomLists"),
+                        								fn = "" + g.string((null != e.MapAFKtarget ? bn.getReserved("MapAFKtarget") : bn.h.MapAFKtarget)[gn]),
+                        								yn = hn,
+                        								Rn = null != e[fn] ? yn.getReserved(fn) : yn.h[fn];
+                        							if ("FIGHTING" == (null != e.AFKtype ? Rn.getReserved("AFKtype") : Rn.h.AFKtype)) {
+                        								var vn = b.engine.getGameAttribute("CustomLists"),
+                        									Fn = (null != e.MapDetails ? vn.getReserved("MapDetails") : vn.h.MapDetails)[gn][0][0],
+                        									Nn = parseNum(Fn),
+                        									_n = b.engine.getGameAttribute("KillsLeft2Advance")[gn][0];
+                        								if (1e5 <= Nn - parseNum(_n)) {
+                        									var In = b.engine.getGameAttribute("DNSM"),
+                        										Dn = b.engine.getGameAttribute("DNSM"),
+                        										En = null != e.CalcTalentDN1 ? Dn.getReserved("CalcTalentDN1") : Dn.h.CalcTalentDN1,
+                        										Sn = In,
+                        										Gn = parseNum(En) + 1;
+                        									null != e.CalcTalentDN1 ? Sn.setReserved("CalcTalentDN1", Gn) : (Sn.h.CalcTalentDN1 = Gn);
+                        								}
+                        								var Tn = b.engine.getGameAttribute("CustomLists"),
+                        									Un = (null != e.MapDetails ? Tn.getReserved("MapDetails") : Tn.h.MapDetails)[gn][0][0],
+                        									Mn = parseNum(Un),
+                        									Vn = b.engine.getGameAttribute("KillsLeft2Advance")[gn][0];
+                        								if (1e6 <= Mn - parseNum(Vn)) {
+                        									var Cn = b.engine.getGameAttribute("DNSM"),
+                        										Bn = b.engine.getGameAttribute("DNSM"),
+                        										Pn = null != e.CalcTalentDN2 ? Bn.getReserved("CalcTalentDN2") : Bn.h.CalcTalentDN2,
+                        										On = Cn,
+                        										wn = parseNum(Pn) + 1;
+                        									null != e.CalcTalentDN2 ? On.setReserved("CalcTalentDN2", wn) : (On.h.CalcTalentDN2 = wn);
+                        								}
+                        							}
+                        						}
+                        					}
+                        					var kn = b.engine.getGameAttribute("DNSM"),
+                        						xn = null != e.CalcTalentMAP ? kn.getReserved("CalcTalentMAP") : kn.h.CalcTalentMAP,
+                        						Qn = b.engine.getGameAttribute("DNSM"),
+                        						Xn = null != e.CalcTalentDN1 ? Qn.getReserved("CalcTalentDN1") : Qn.h.CalcTalentDN1,
+                        						Ln = Math.min(parseNum(Xn), t._customBlock_GetTalentNumber(2, 110));
+                        					null != e[110] ? xn.setReserved("110", Ln) : (xn.h[110] = Ln);
+                        					var zn = b.engine.getGameAttribute("DNSM"),
+                        						Yn = null != e.CalcTalentMAP ? zn.getReserved("CalcTalentMAP") : zn.h.CalcTalentMAP,
+                        						Wn = b.engine.getGameAttribute("DNSM"),
+                        						Zn = null != e.CalcTalentDN2 ? Wn.getReserved("CalcTalentDN2") : Wn.h.CalcTalentDN2,
+                        						Hn = Math.min(parseNum(Zn), t._customBlock_GetTalentNumber(2, 146));
+                        					null != e[146] ? Yn.setReserved("146", Hn) : (Yn.h[146] = Hn);
+                        					var Jn = b.engine.getGameAttribute("DNSM"),
+                        						jn = E.deepCopyList(b.engine.getGameAttribute("Cards")[1]);
+                        					null != e.CalcTalentDL1 ? Jn.setReserved("CalcTalentDL1", jn) : (Jn.h.CalcTalentDL1 = jn);
+                        					for (var qn = 0, Kn = b.engine.getGameAttribute("CustomLists"), $n = (null != e.RANDOlist ? Kn.getReserved("RANDOlist") : Kn.h.RANDOlist)[17].length; qn < $n;) {
+                        						var es = qn++,
+                        							ts = b.engine.getGameAttribute("DNSM"),
+                        							ns = null != e.CalcTalentDL1 ? ts.getReserved("CalcTalentDL1") : ts.h.CalcTalentDL1,
+                        							ss = b.engine.getGameAttribute("CustomLists");
+                        						Mc.remove(ns, (null != e.RANDOlist ? ss.getReserved("RANDOlist") : ss.h.RANDOlist)[17][es]);
+                        					}
+                        					for (var as = 0, rs = b.engine.getGameAttribute("DNSM"), As = (null != e.CalcTalentDL1 ? rs.getReserved("CalcTalentDL1") : rs.h.CalcTalentDL1).length; as < As;) {
+                        						var ls = as++,
+                        							os = b.engine.getGameAttribute("DNSM"),
+                        							is = null != e.CalcTalentDL1 ? os.getReserved("CalcTalentDL1") : os.h.CalcTalentDL1,
+                        							us = b.engine.getGameAttribute("DNSM"),
+                        							gs = null != e.CalcTalentDN1 ? us.getReserved("CalcTalentDN1") : us.h.CalcTalentDN1;
+                        						if (0 == ("" + g.string(is[
+                        								(ls - parseNum(gs)) | 0])).indexOf("DungW")) {
+                        							var ms = b.engine.getGameAttribute("DNSM"),
+                        								ds = null != e.CalcTalentDL1 ? ms.getReserved("CalcTalentDL1") : ms.h.CalcTalentDL1,
+                        								cs = b.engine.getGameAttribute("DNSM"),
+                        								ps = null != e.CalcTalentDL1 ? cs.getReserved("CalcTalentDL1") : cs.h.CalcTalentDL1,
+                        								hs = b.engine.getGameAttribute("DNSM"),
+                        								bs = null != e.CalcTalentDN1 ? hs.getReserved("CalcTalentDN1") : hs.h.CalcTalentDN1;
+                        							Mc.remove(ds, ps[
+                        								(ls - parseNum(bs)) | 0]);
+                        							var fs = b.engine.getGameAttribute("DNSM"),
+                        								ys = b.engine.getGameAttribute("DNSM"),
+                        								Rs = null != e.CalcTalentDN1 ? ys.getReserved("CalcTalentDN1") : ys.h.CalcTalentDN1,
+                        								vs = fs,
+                        								Fs = parseNum(Rs) + 1;
+                        							null != e.CalcTalentDN1 ? vs.setReserved("CalcTalentDN1", Fs) : (vs.h.CalcTalentDN1 = Fs);
+                        						}
+                        					}
+                        					var Ns = b.engine.getGameAttribute("DNSM"),
+                        						_s = null != e.CalcTalentMAP ? Ns.getReserved("CalcTalentMAP") : Ns.h.CalcTalentMAP,
+                        						Is = b.engine.getGameAttribute("DNSM"),
+                        						Ds = (null != e.CalcTalentDL1 ? Is.getReserved("CalcTalentDL1") : Is.h.CalcTalentDL1).length;
+                        					null != e[305] ? _s.setReserved("305", Ds) : (_s.h[305] = Ds);
+                        					var Es = b.engine.getGameAttribute("DNSM");
+                        					null != e.CalcTalentDN1 ? Es.setReserved("CalcTalentDN1", 0) : (Es.h.CalcTalentDN1 = 0);
+                        					for (var Ss = 0; 3 > Ss;) {
+                        						var Gs = Ss++,
+                        							Ts = b.engine.getGameAttribute("DNSM");
+                        						null != e.CalcTalentDN2 ? Ts.setReserved("CalcTalentDN2", Gs) : (Ts.h.CalcTalentDN2 = Gs);
+                        						for (var Us = 0,
+                        								Ms = b.engine.getGameAttribute("StampLevelMAX"),
+                        								Vs = b.engine.getGameAttribute("DNSM"),
+                        								Cs = null != e.CalcTalentDN2 ? Vs.getReserved("CalcTalentDN2") : Vs.h.CalcTalentDN2,
+                        								Bs = Ms[0 | parseNum(Cs)].length; Us < Bs;) {
+                        							var Ps = Us++,
+                        								Os = b.engine.getGameAttribute("StampLevelMAX"),
+                        								ws = b.engine.getGameAttribute("DNSM"),
+                        								ks = null != e.CalcTalentDN2 ? ws.getReserved("CalcTalentDN2") : ws.h.CalcTalentDN2,
+                        								xs = Os[0 | parseNum(ks)][Ps];
+                        							if (0.5 < parseNum(xs)) {
+                        								var Qs = b.engine.getGameAttribute("DNSM"),
+                        									Xs = b.engine.getGameAttribute("DNSM"),
+                        									Ls = null != e.CalcTalentDN1 ? Xs.getReserved("CalcTalentDN1") : Xs.h.CalcTalentDN1,
+                        									zs = Qs,
+                        									Ys = parseNum(Ls) + 1;
+                        								null != e.CalcTalentDN1 ? zs.setReserved("CalcTalentDN1", Ys) : (zs.h.CalcTalentDN1 = Ys);
+                        							}
+                        						}
+                        					}
+                        					var Ws = b.engine.getGameAttribute("DNSM"),
+                        						Zs = null != e.CalcTalentMAP ? Ws.getReserved("CalcTalentMAP") : Ws.h.CalcTalentMAP,
+                        						Hs = b.engine.getGameAttribute("DNSM"),
+                        						Js = null != e.CalcTalentDN1 ? Hs.getReserved("CalcTalentDN1") : Hs.h.CalcTalentDN1;
+                        					null != e[470] ? Zs.setReserved("470", Js) : (Zs.h[470] = Js);
+                        					var js = b.engine.getGameAttribute("DNSM");
+                        					null != e.CalcTalentDN1 ? js.setReserved("CalcTalentDN1", 0) : (js.h.CalcTalentDN1 = 0);
+                        					for (var qs = 0, Ks = b.engine.getGameAttribute("CauldronInfo")[4].length; qs < Ks;) {
+                        						var $s = qs++,
+                        							ta = b.engine.getGameAttribute("CauldronInfo")[4][$s];
+                        						if (3 < parseNum(ta)) {
+                        							var na = b.engine.getGameAttribute("DNSM"),
+                        								sa = b.engine.getGameAttribute("DNSM"),
+                        								aa = null != e.CalcTalentDN1 ? sa.getReserved("CalcTalentDN1") : sa.h.CalcTalentDN1,
+                        								ra = na,
+                        								Aa = parseNum(aa) + 1;
+                        							null != e.CalcTalentDN1 ? ra.setReserved("CalcTalentDN1", Aa) : (ra.h.CalcTalentDN1 = Aa);
+                        						}
+                        					}
+                        					var la = b.engine.getGameAttribute("DNSM"),
+                        						oa = null != e.CalcTalentMAP ? la.getReserved("CalcTalentMAP") : la.h.CalcTalentMAP,
+                        						ia = b.engine.getGameAttribute("DNSM"),
+                        						ua = null != e.CalcTalentDN1 ? ia.getReserved("CalcTalentDN1") : ia.h.CalcTalentDN1;
+                        					null != e[485] ? oa.setReserved("485", ua) : (oa.h[485] = ua);
+                        					var ga = b.engine.getGameAttribute("DNSM"),
+                        						ma = null != e.CalcTalentMAP ? ga.getReserved("CalcTalentMAP") : ga.h.CalcTalentMAP;
+                        					null != e[616] ? ma.setReserved("616", 0) : (ma.h[616] = 0);
+                        					var da = b.engine.getGameAttribute("DNSM"),
+                        						ca = null != e.CalcTalentMAP ? da.getReserved("CalcTalentMAP") : da.h.CalcTalentMAP;
+                        					null != e[620] ? ca.setReserved("620", 0) : (ca.h[620] = 0);
+                        					for (var pa = b.engine.getGameAttribute("PlayerDATABASE").keys(); pa.hasNext();) {
+                        						var ha = pa.next(),
+                        							ba = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							fa = "" + ha,
+                        							ya = null != e[fa] ? ba.getReserved(fa) : ba.h[fa],
+                        							Ra = null != e.CharacterClass ? ya.getReserved("CharacterClass") : ya.h.CharacterClass;
+                        						if (6 > parseNum(Ra)) {
+                        							var va = b.engine.getGameAttribute("PlayerDATABASE"),
+                        								Fa = "" + ha,
+                        								Na = null != e[Fa] ? va.getReserved(Fa) : va.h[Fa],
+                        								_a = (null != e.Lv0 ? Na.getReserved("Lv0") : Na.h.Lv0)[0],
+                        								Ia = parseNum(_a),
+                        								Da = b.engine.getGameAttribute("DNSM"),
+                        								Ea = null != e.CalcTalentMAP ? Da.getReserved("CalcTalentMAP") : Da.h.CalcTalentMAP,
+                        								Sa = null != e[616] ? Ea.getReserved("616") : Ea.h[616];
+                        							if (Ia > parseNum(Sa)) {
+                        								var Ga = b.engine.getGameAttribute("DNSM"),
+                        									Ta = null != e.CalcTalentMAP ? Ga.getReserved("CalcTalentMAP") : Ga.h.CalcTalentMAP,
+                        									Ua = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									Ma = "" + ha,
+                        									Va = null != e[Ma] ? Ua.getReserved(Ma) : Ua.h[Ma],
+                        									Ca = Ta,
+                        									Ba = (null != e.Lv0 ? Va.getReserved("Lv0") : Va.h.Lv0)[0];
+                        								null != e[616] ? Ca.setReserved("616", Ba) : (Ca.h[616] = Ba);
+                        							}
+                        						}
+                        						var Pa = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							Oa = "" + ha,
+                        							wa = null != e[Oa] ? Pa.getReserved(Oa) : Pa.h[Oa],
+                        							ka = (null != e.Lv0 ? wa.getReserved("Lv0") : wa.h.Lv0)[0],
+                        							xa = parseNum(ka),
+                        							Qa = b.engine.getGameAttribute("DNSM"),
+                        							Xa = null != e.CalcTalentMAP ? Qa.getReserved("CalcTalentMAP") : Qa.h.CalcTalentMAP,
+                        							La = null != e[620] ? Xa.getReserved("620") : Xa.h[620];
+                        						if (xa > parseNum(La)) {
+                        							var za = b.engine.getGameAttribute("DNSM"),
+                        								Ya = null != e.CalcTalentMAP ? za.getReserved("CalcTalentMAP") : za.h.CalcTalentMAP,
+                        								Wa = b.engine.getGameAttribute("PlayerDATABASE"),
+                        								Za = "" + ha,
+                        								Ha = null != e[Za] ? Wa.getReserved(Za) : Wa.h[Za],
+                        								Ja = Ya,
+                        								ja = (null != e.Lv0 ? Ha.getReserved("Lv0") : Ha.h.Lv0)[0];
+                        							null != e[620] ? Ja.setReserved("620", ja) : (Ja.h[620] = ja);
+                        						}
+                        					}
+                        					var qa = b.engine.getGameAttribute("DNSM"),
+                        						Ka = null != e.CalcTalentMAP ? qa.getReserved("CalcTalentMAP") : qa.h.CalcTalentMAP;
+                        					null != e[643] ? Ka.setReserved("643", -11) : (Ka.h[643] = -11);
+                        					var $a = b.engine.getGameAttribute("DNSM"),
+                        						er = null != e.CalcTalentMAP ? $a.getReserved("CalcTalentMAP") : $a.h.CalcTalentMAP,
+                        						tr = b.engine.getGameAttribute("Lv0")[10],
+                        						nr = parseNum(tr) / 10;
+                        					null != e[644] ? er.setReserved("644", nr) : (er.h[644] = nr);
+                        					var sr = b.engine.getGameAttribute("DNSM"),
+                        						ar = null != e.CalcTalentMAP ? sr.getReserved("CalcTalentMAP") : sr.h.CalcTalentMAP;
+                        					null != e[645] ? ar.setReserved("645", -11) : (ar.h[645] = -11);
+                        					var rr = b.engine.getGameAttribute("DNSM"),
+                        						Ar = new p();
+                        					null != e.BoxRewards ? rr.setReserved("BoxRewards", Ar) : (rr.h.BoxRewards = Ar);
+                        					for (var lr = 0, or = b.engine.getGameAttribute("CustomLists"), ir = (null != e.PostOffUpgradeInfo ? or.getReserved("PostOffUpgradeInfo") : or.h.PostOffUpgradeInfo).length; lr < ir;) {
+                        						var ur = lr++,
+                        							gr = b.engine.getGameAttribute("DNSM");
+                        						null != e.CalcTalentDN3 ? gr.setReserved("CalcTalentDN3", ur) : (gr.h.CalcTalentDN3 = ur);
+                        						for (var mr = 0; 3 > mr;) {
+                        							var dr = mr++,
+                        								cr = b.engine.getGameAttribute("DNSM"),
+                        								pr = null != e.BoxRewards ? cr.getReserved("BoxRewards") : cr.h.BoxRewards,
+                        								hr = b.engine.getGameAttribute("CustomLists"),
+                        								br = null != e.PostOffUpgradeInfo ? hr.getReserved("PostOffUpgradeInfo") : hr.h.PostOffUpgradeInfo,
+                        								fr = b.engine.getGameAttribute("DNSM"),
+                        								yr = null != e.CalcTalentDN3 ? fr.getReserved("CalcTalentDN3") : fr.h.CalcTalentDN3,
+                        								Rr = "" + g.string(br[0 | parseNum(yr)][16 + dr]),
+                        								vr = b.engine.getGameAttribute("DNSM"),
+                        								Fr = null != e.CalcTalentDN3 ? vr.getReserved("CalcTalentDN3") : vr.h.CalcTalentDN3,
+                        								Nr = A._customBlock_PostOfficeINFO("BonusAmount", parseNum(Fr), "" + dr),
+                        								_r = b.engine.getGameAttribute("DNSM"),
+                        								Ir = null != e.BoxRewards ? _r.getReserved("BoxRewards") : _r.h.BoxRewards,
+                        								Dr = b.engine.getGameAttribute("CustomLists"),
+                        								Er = null != e.PostOffUpgradeInfo ? Dr.getReserved("PostOffUpgradeInfo") : Dr.h.PostOffUpgradeInfo,
+                        								Sr = b.engine.getGameAttribute("DNSM"),
+                        								Gr = null != e.CalcTalentDN3 ? Sr.getReserved("CalcTalentDN3") : Sr.h.CalcTalentDN3,
+                        								Tr = "" + g.string(Er[0 | parseNum(Gr)][16 + dr]),
+                        								Ur = Ir,
+                        								Mr = null != e[Tr] ? Ur.getReserved(Tr) : Ur.h[Tr],
+                        								Vr = pr,
+                        								Cr = Nr + parseNum(Mr);
+                        							null != e[Rr] ? Vr.setReserved(Rr, Cr) : (Vr.h[Rr] = Cr);
+                        						}
+                        					}
+                        					if (-2 == s) {
+                        						var Br = b.engine.getGameAttribute("DNSM"),
+                        							Pr = new p();
+                        						null != e.AlchBubbles ? Br.setReserved("AlchBubbles", Pr) : (Br.h.AlchBubbles = Pr);
+                        						for (var Or = 0; 4 > Or;) {
+                        							var wr = Or++,
+                        								kr = b.engine.getGameAttribute("DNSM");
+                        							null != e.CalcTalentDN2 ? kr.setReserved("CalcTalentDN2", wr) : (kr.h.CalcTalentDN2 = wr);
+                        							for (var xr = 0,
+                        									Qr = b.engine.getGameAttribute("CustomLists"),
+                        									Xr = null != e.AlchemyDescription ? Qr.getReserved("AlchemyDescription") : Qr.h.AlchemyDescription,
+                        									Lr = b.engine.getGameAttribute("DNSM"),
+                        									zr = null != e.CalcTalentDN2 ? Lr.getReserved("CalcTalentDN2") : Lr.h.CalcTalentDN2,
+                        									Yr = Xr[0 | parseNum(zr)].length; xr < Yr;) {
+                        								var Wr = xr++,
+                        									Zr = b.engine,
+                        									Hr = b.engine.getGameAttribute("CustomLists"),
+                        									Jr = null != e.AlchemyDescription ? Hr.getReserved("AlchemyDescription") : Hr.h.AlchemyDescription,
+                        									jr = b.engine.getGameAttribute("DNSM"),
+                        									qr = null != e.CalcTalentDN2 ? jr.getReserved("CalcTalentDN2") : jr.h.CalcTalentDN2,
+                        									Kr = parseNum(qr),
+                        									$r = Zr.gameAttributes,
+                        									eA = "" + g.string(Jr[0 | Kr][Wr][15]);
+                        								if ((null != e.DummyText ? $r.setReserved("DummyText", eA) : ($r.h.DummyText = eA), -1 != b.engine.getGameAttribute("DummyText").indexOf("ACTIVE"))) var tA = b.engine.getGameAttribute("CauldronBubbles")[b.engine.getGameAttribute("GetPlayersUsernames").indexOf(b.engine.getGameAttribute("UserInfo")[0])],
+                        									nA = b.engine.getGameAttribute("Number2Letter"),
+                        									sA = b.engine.getGameAttribute("DNSM"),
+                        									aA = null != e.CalcTalentDN2 ? sA.getReserved("CalcTalentDN2") : sA.h.CalcTalentDN2,
+                        									rA = Sb.contains(tA, g.string(nA[0 | parseNum(aA)]) + ("" + Wr));
+                        								else rA = !1;
+                        								if (rA || -1 == b.engine.getGameAttribute("DummyText").indexOf("ACTIVE")) {
+                        									var AA = b.engine.getGameAttribute("CauldronInfo"),
+                        										lA = b.engine.getGameAttribute("DNSM"),
+                        										oA = null != e.CalcTalentDN2 ? lA.getReserved("CalcTalentDN2") : lA.h.CalcTalentDN2,
+                        										iA = AA[0 | parseNum(oA)][Wr];
+                        									if (0 < parseNum(iA)) {
+                        										var uA = b.engine.getGameAttribute("DNSM"),
+                        											gA = null != e.AlchBubbles ? uA.getReserved("AlchBubbles") : uA.h.AlchBubbles,
+                        											mA = b.engine.getGameAttribute("DummyText"),
+                        											dA = b.engine.getGameAttribute("DNSM"),
+                        											cA = null != e.CalcTalentDN2 ? dA.getReserved("CalcTalentDN2") : dA.h.CalcTalentDN2,
+                        											pA = gA,
+                        											hA = A._customBlock_CauldronStats("BubbleBonus", parseNum(cA), Wr, 0);
+                        										if ((null != e[mA] ? pA.setReserved(mA, hA) : (pA.h[mA] = hA), "MinEff" == b.engine.getGameAttribute("DummyText"))) {
+                        											var bA = b.engine.getGameAttribute("DNSM"),
+                        												fA = null != e.AlchBubbles ? bA.getReserved("AlchBubbles") : bA.h.AlchBubbles,
+                        												yA = b.engine.getGameAttribute("DummyText"),
+                        												RA = b.engine.getGameAttribute("DNSM"),
+                        												vA = null != e.AlchBubbles ? RA.getReserved("AlchBubbles") : RA.h.AlchBubbles,
+                        												FA = b.engine.getGameAttribute("DummyText"),
+                        												NA = vA,
+                        												_A = null != e[FA] ? NA.getReserved(FA) : NA.h[FA],
+                        												IA = fA,
+                        												DA = parseNum(_A) * t._customBlock_getLOG(H._customBlock_PlayerHPmax());
+                        											null != e[yA] ? IA.setReserved(yA, DA) : (IA.h[yA] = DA);
+                        										}
+                        										if ("ChopEff" == b.engine.getGameAttribute("DummyText")) {
+                        											var EA = b.engine.getGameAttribute("DNSM"),
+                        												SA = null != e.AlchBubbles ? EA.getReserved("AlchBubbles") : EA.h.AlchBubbles,
+                        												GA = b.engine.getGameAttribute("DummyText"),
+                        												TA = b.engine.getGameAttribute("DNSM"),
+                        												UA = null != e.AlchBubbles ? TA.getReserved("AlchBubbles") : TA.h.AlchBubbles,
+                        												MA = b.engine.getGameAttribute("DummyText"),
+                        												VA = UA,
+                        												CA = null != e[MA] ? VA.getReserved(MA) : VA.h[MA],
+                        												BA = SA,
+                        												PA = parseNum(CA) * t._customBlock_getLOG(H._customBlock_PlayerMPmax());
+                        											null != e[GA] ? BA.setReserved(GA, PA) : (BA.h[GA] = PA);
+                        										}
+                        										if (-1 == b.engine.getGameAttribute("DummyText").indexOf("passz") && -1 == b.engine.getGameAttribute("DummyText").indexOf("ACTIVE")) {
+                        											if (6 < b.engine.getGameAttribute("CharacterClass") && 16 != Wr) {
+                        												var OA = b.engine.getGameAttribute("DNSM");
+                        												if (0 == (null != e.CalcTalentDN2 ? OA.getReserved("CalcTalentDN2") : OA.h.CalcTalentDN2) && 18 > b.engine.getGameAttribute("CharacterClass")) {
+                        													var wA = b.engine.getGameAttribute("DNSM"),
+                        														kA = null != e.AlchBubbles ? wA.getReserved("AlchBubbles") : wA.h.AlchBubbles,
+                        														xA = b.engine.getGameAttribute("DummyText"),
+                        														QA = b.engine.getGameAttribute("DNSM"),
+                        														XA = null != e.AlchBubbles ? QA.getReserved("AlchBubbles") : QA.h.AlchBubbles,
+                        														LA = b.engine.getGameAttribute("DummyText"),
+                        														zA = XA,
+                        														YA = null != e[LA] ? zA.getReserved(LA) : zA.h[LA],
+                        														WA = parseNum(YA),
+                        														ZA = b.engine.getGameAttribute("DNSM"),
+                        														HA = null != e.AlchBubbles ? ZA.getReserved("AlchBubbles") : ZA.h.AlchBubbles,
+                        														JA = null != e.Opassz ? HA.getReserved("Opassz") : HA.h.Opassz,
+                        														jA = kA,
+                        														qA = WA * Math.max(1, parseNum(JA));
+                        													null != e[xA] ? jA.setReserved(xA, qA) : (jA.h[xA] = qA);
+                        												} else {
+                        													var KA = b.engine.getGameAttribute("DNSM");
+                        													if (1 == (null != e.CalcTalentDN2 ? KA.getReserved("CalcTalentDN2") : KA.h.CalcTalentDN2) && 30 > b.engine.getGameAttribute("CharacterClass") && 18 <= b.engine.getGameAttribute("CharacterClass")) {
+                        														var $A = b.engine.getGameAttribute("DNSM"),
+                        															el = null != e.AlchBubbles ? $A.getReserved("AlchBubbles") : $A.h.AlchBubbles,
+                        															tl = b.engine.getGameAttribute("DummyText"),
+                        															nl = b.engine.getGameAttribute("DNSM"),
+                        															sl = null != e.AlchBubbles ? nl.getReserved("AlchBubbles") : nl.h.AlchBubbles,
+                        															al = b.engine.getGameAttribute("DummyText"),
+                        															rl = sl,
+                        															Al = null != e[al] ? rl.getReserved(al) : rl.h[al],
+                        															ll = parseNum(Al),
+                        															ol = b.engine.getGameAttribute("DNSM"),
+                        															il = null != e.AlchBubbles ? ol.getReserved("AlchBubbles") : ol.h.AlchBubbles,
+                        															ul = null != e.Gpassz ? il.getReserved("Gpassz") : il.h.Gpassz,
+                        															gl = el,
+                        															ml = ll * Math.max(1, parseNum(ul));
+                        														null != e[tl] ? gl.setReserved(tl, ml) : (gl.h[tl] = ml);
+                        													} else {
+                        														var dl = b.engine.getGameAttribute("DNSM");
+                        														if (2 == (null != e.CalcTalentDN2 ? dl.getReserved("CalcTalentDN2") : dl.h.CalcTalentDN2) && 42 > b.engine.getGameAttribute("CharacterClass") && 30 <= b.engine.getGameAttribute("CharacterClass")) {
+                        															var cl = b.engine.getGameAttribute("DNSM"),
+                        																pl = null != e.AlchBubbles ? cl.getReserved("AlchBubbles") : cl.h.AlchBubbles,
+                        																hl = b.engine.getGameAttribute("DummyText"),
+                        																bl = b.engine.getGameAttribute("DNSM"),
+                        																fl = null != e.AlchBubbles ? bl.getReserved("AlchBubbles") : bl.h.AlchBubbles,
+                        																yl = b.engine.getGameAttribute("DummyText"),
+                        																Rl = fl,
+                        																vl = null != e[yl] ? Rl.getReserved(yl) : Rl.h[yl],
+                        																Fl = parseNum(vl),
+                        																Nl = b.engine.getGameAttribute("DNSM"),
+                        																_l = null != e.AlchBubbles ? Nl.getReserved("AlchBubbles") : Nl.h.AlchBubbles,
+                        																Il = null != e.Ppassz ? _l.getReserved("Ppassz") : _l.h.Ppassz,
+                        																Dl = pl,
+                        																El = Fl * Math.max(1, parseNum(Il));
+                        															null != e[hl] ? Dl.setReserved(hl, El) : (Dl.h[hl] = El);
+                        														}
+                        													}
+                        												}
+                        											}
+                        											var Sl = b.engine.getGameAttribute("DNSM");
+                        											if (3 == (null != e.CalcTalentDN2 ? Sl.getReserved("CalcTalentDN2") : Sl.h.CalcTalentDN2)) {
+                        												var Gl = b.engine.getGameAttribute("DNSM"),
+                        													Tl = null != e.AlchBubbles ? Gl.getReserved("AlchBubbles") : Gl.h.AlchBubbles,
+                        													Ul = b.engine.getGameAttribute("DummyText"),
+                        													Ml = b.engine.getGameAttribute("DNSM"),
+                        													Vl = null != e.AlchBubbles ? Ml.getReserved("AlchBubbles") : Ml.h.AlchBubbles,
+                        													Cl = b.engine.getGameAttribute("DummyText"),
+                        													Bl = Vl,
+                        													Pl = null != e[Cl] ? Bl.getReserved(Cl) : Bl.h[Cl],
+                        													Ol = Tl,
+                        													wl = parseNum(Pl) * Math.max(1, 0);
+                        												null != e[Ul] ? Ol.setReserved(Ul, wl) : (Ol.h[Ul] = wl);
+                        											}
+                        										}
+                        									}
+                        								}
+                        							}
+                        						}
+                        						for (var kl = 0; 4 > kl;) {
+                        							var xl = kl++,
+                        								Ql = b.engine.getGameAttribute("DNSM");
+                        							null != e.CalcTalentDN2 ? Ql.setReserved("CalcTalentDN2", xl) : (Ql.h.CalcTalentDN2 = xl);
+                        							for (var Xl = 0,
+                        									Ll = b.engine.getGameAttribute("CustomLists"),
+                        									zl = null != e.AlchemyDescription ? Ll.getReserved("AlchemyDescription") : Ll.h.AlchemyDescription,
+                        									Yl = b.engine.getGameAttribute("DNSM"),
+                        									Wl = null != e.CalcTalentDN2 ? Yl.getReserved("CalcTalentDN2") : Yl.h.CalcTalentDN2,
+                        									Zl = zl[0 | parseNum(Wl)].length; Xl < Zl;) {
+                        								var Hl = Xl++,
+                        									Jl = b.engine,
+                        									jl = b.engine.getGameAttribute("CustomLists"),
+                        									ql = null != e.AlchemyDescription ? jl.getReserved("AlchemyDescription") : jl.h.AlchemyDescription,
+                        									Kl = b.engine.getGameAttribute("DNSM"),
+                        									$l = null != e.CalcTalentDN2 ? Kl.getReserved("CalcTalentDN2") : Kl.h.CalcTalentDN2,
+                        									eo = null == $l ? 0 : "number" == typeof $l ? d.__cast($l, k) : "number" == typeof $l && (0 | $l) === $l ? d.__cast($l, l) : "boolean" == typeof $l ? d.__cast($l, n) ? 1 : 0 : "string" == typeof $l ? parseFloat($l) : parseFloat(g.string($l)),
+                        									to = Jl.gameAttributes,
+                        									no = "" + g.string(ql[0 | eo][Hl][15]);
+                        								null != e.DummyText ? to.setReserved("DummyText", no) : (to.h.DummyText = no);
+                        								var so = b.engine.getGameAttribute("DNSM");
+                        								if (0 == (null != e.CalcTalentDN2 ? so.getReserved("CalcTalentDN2") : so.h.CalcTalentDN2)) {
+                        									if (0 == Hl || 2 == Hl || 4 == Hl || 7 == Hl || 14 == Hl) {
+                        										var ao = b.engine.getGameAttribute("DNSM"),
+                        											ro = null != e.AlchBubbles ? ao.getReserved("AlchBubbles") : ao.h.AlchBubbles,
+                        											Ao = b.engine.getGameAttribute("DummyText"),
+                        											lo = b.engine.getGameAttribute("DNSM"),
+                        											oo = null != e.AlchBubbles ? lo.getReserved("AlchBubbles") : lo.h.AlchBubbles,
+                        											io = b.engine.getGameAttribute("DummyText"),
+                        											uo = oo,
+                        											go = null != e[io] ? uo.getReserved(io) : uo.h[io],
+                        											mo = parseNum(go),
+                        											co = b.engine.getGameAttribute("DNSM"),
+                        											po = null != e.AlchBubbles ? co.getReserved("AlchBubbles") : co.h.AlchBubbles,
+                        											ho = null != e.MultiOr ? po.getReserved("MultiOr") : po.h.MultiOr,
+                        											bo = ro,
+                        											fo = mo * Math.max(1, parseNum(ho));
+                        										null != e[Ao] ? bo.setReserved(Ao, fo) : (bo.h[Ao] = fo);
+                        									}
+                        								} else {
+                        									var yo = b.engine.getGameAttribute("DNSM");
+                        									if (1 == (null != e.CalcTalentDN2 ? yo.getReserved("CalcTalentDN2") : yo.h.CalcTalentDN2)) {
+                        										if (0 == Hl || 6 == Hl || 9 == Hl || 12 == Hl || 14 == Hl) {
+                        											var Ro = b.engine.getGameAttribute("DNSM"),
+                        												vo = null != e.AlchBubbles ? Ro.getReserved("AlchBubbles") : Ro.h.AlchBubbles,
+                        												Fo = b.engine.getGameAttribute("DummyText"),
+                        												No = b.engine.getGameAttribute("DNSM"),
+                        												_o = null != e.AlchBubbles ? No.getReserved("AlchBubbles") : No.h.AlchBubbles,
+                        												Io = b.engine.getGameAttribute("DummyText"),
+                        												Do = _o,
+                        												Eo = null != e[Io] ? Do.getReserved(Io) : Do.h[Io],
+                        												So = parseNum(Eo),
+                        												Go = b.engine.getGameAttribute("DNSM"),
+                        												To = null != e.AlchBubbles ? Go.getReserved("AlchBubbles") : Go.h.AlchBubbles,
+                        												Uo = null != e.MultiGr ? To.getReserved("MultiGr") : To.h.MultiGr,
+                        												Mo = vo,
+                        												Vo = So * Math.max(1, parseNum(Uo));
+                        											null != e[Fo] ? Mo.setReserved(Fo, Vo) : (Mo.h[Fo] = Vo);
+                        										}
+                        									} else {
+                        										var Co = b.engine.getGameAttribute("DNSM");
+                        										if (2 == (null != e.CalcTalentDN2 ? Co.getReserved("CalcTalentDN2") : Co.h.CalcTalentDN2) && (0 == Hl || 2 == Hl || 6 == Hl || 12 == Hl || 14 == Hl)) {
+                        											var Bo = b.engine.getGameAttribute("DNSM"),
+                        												Po = null != e.AlchBubbles ? Bo.getReserved("AlchBubbles") : Bo.h.AlchBubbles,
+                        												Oo = b.engine.getGameAttribute("DummyText"),
+                        												wo = b.engine.getGameAttribute("DNSM"),
+                        												ko = null != e.AlchBubbles ? wo.getReserved("AlchBubbles") : wo.h.AlchBubbles,
+                        												xo = b.engine.getGameAttribute("DummyText"),
+                        												Qo = ko,
+                        												Xo = null != e[xo] ? Qo.getReserved(xo) : Qo.h[xo],
+                        												Lo = parseNum(Xo),
+                        												zo = b.engine.getGameAttribute("DNSM"),
+                        												Yo = null != e.AlchBubbles ? zo.getReserved("AlchBubbles") : zo.h.AlchBubbles,
+                        												Wo = null != e.MultiPu ? Yo.getReserved("MultiPu") : Yo.h.MultiPu,
+                        												Zo = Po,
+                        												Ho = Lo * Math.max(1, parseNum(Wo));
+                        											null != e[Oo] ? Zo.setReserved(Oo, Ho) : (Zo.h[Oo] = Ho);
+                        										}
+                        									}
+                        								}
+                        							}
+                        						}
+                        						var Jo = b.engine.getGameAttribute("DNSM");
+                        						null != e.CalcTalentDN2 ? Jo.setReserved("CalcTalentDN2", 0) : (Jo.h.CalcTalentDN2 = 0);
+                        						for (var jo = 0, qo = b.engine.getGameAttribute("Meals")[0].length; jo < qo;) {
+                        							var Ko = jo++,
+                        								$o = b.engine.getGameAttribute("Meals")[0][Ko];
+                        							if (11 <= (null == $o ? 0 : "number" == typeof $o ? d.__cast($o, k) : "number" == typeof $o && (0 | $o) === $o ? d.__cast($o, l) : "boolean" == typeof $o ? d.__cast($o, n) ? 1 : 0 : "string" == typeof $o ? parseFloat($o) : parseFloat(g.string($o)))) {
+                        								var ei = b.engine.getGameAttribute("DNSM"),
+                        									ti = b.engine.getGameAttribute("DNSM"),
+                        									ni = null != e.CalcTalentDN2 ? ti.getReserved("CalcTalentDN2") : ti.h.CalcTalentDN2,
+                        									si = ei,
+                        									ai = parseNum(ni) + 1;
+                        								null != e.CalcTalentDN2 ? si.setReserved("CalcTalentDN2", ai) : (si.h.CalcTalentDN2 = ai);
+                        							}
+                        						}
+                        						var ri = b.engine.getGameAttribute("DNSM"),
+                        							Ai = null != e.AlchBubbles ? ri.getReserved("AlchBubbles") : ri.h.AlchBubbles,
+                        							li = b.engine.getGameAttribute("DNSM"),
+                        							oi = null != e.AlchBubbles ? li.getReserved("AlchBubbles") : li.h.AlchBubbles,
+                        							ii = null != e.MealSpdz ? oi.getReserved("MealSpdz") : oi.h.MealSpdz,
+                        							ui = parseNum(ii),
+                        							gi = b.engine.getGameAttribute("DNSM"),
+                        							mi = null != e.CalcTalentDN2 ? gi.getReserved("CalcTalentDN2") : gi.h.CalcTalentDN2,
+                        							di = Math.pow(ui, parseNum(mi));
+                        						null != e.MealSpdz ? Ai.setReserved("MealSpdz", di) : (Ai.h.MealSpdz = di);
+                        						var ci = b.engine.getGameAttribute("DNSM"),
+                        							pi = new p();
+                        						null != e.AlchVials ? ci.setReserved("AlchVials", pi) : (ci.h.AlchVials = pi);
+                        						for (var hi = 0, bi = b.engine.getGameAttribute("CustomLists"), fi = (null != e.AlchemyDescription ? bi.getReserved("AlchemyDescription") : bi.h.AlchemyDescription)[4].length; hi < fi;) {
+                        							var yi = hi++,
+                        								Ri = b.engine.getGameAttribute("DNSM"),
+                        								vi = null != e.AlchVials ? Ri.getReserved("AlchVials") : Ri.h.AlchVials,
+                        								Fi = b.engine.getGameAttribute("CustomLists"),
+                        								Ni = "" + g.string((null != e.AlchemyDescription ? Fi.getReserved("AlchemyDescription") : Fi.h.AlchemyDescription)[4][yi][11]),
+                        								_i = A._customBlock_CauldronStats("VialBonus", 4, yi, 0),
+                        								Ii = b.engine.getGameAttribute("DNSM"),
+                        								Di = null != e.AlchVials ? Ii.getReserved("AlchVials") : Ii.h.AlchVials,
+                        								Ei = b.engine.getGameAttribute("CustomLists"),
+                        								Si = "" + g.string((null != e.AlchemyDescription ? Ei.getReserved("AlchemyDescription") : Ei.h.AlchemyDescription)[4][yi][11]),
+                        								Gi = Di,
+                        								Ti = null != e[Si] ? Gi.getReserved(Si) : Gi.h[Si],
+                        								Ui = vi,
+                        								Mi = _i + parseNum(Ti);
+                        							null != e[Ni] ? Ui.setReserved(Ni, Mi) : (Ui.h[Ni] = Mi);
+                        						}
+                        					}
+                        					if (-3 == s) {
+                        						var Vi = b.engine.getGameAttribute("DNSM"),
+                        							Ci = new p();
+                        						null != e.FamBonusQTYs ? Vi.setReserved("FamBonusQTYs", Ci) : (Vi.h.FamBonusQTYs = Ci);
+                        						for (var Bi = b.engine.getGameAttribute("PlayerDATABASE").keys(); Bi.hasNext();) {
+                        							var Pi = Bi.next(),
+                        								Oi = b.engine.getGameAttribute("DNSM");
+                        							null != e.CalcTalentDT1 ? Oi.setReserved("CalcTalentDT1", Pi) : (Oi.h.CalcTalentDT1 = Pi);
+                        							var wi = b.engine.getGameAttribute("DNSM");
+                        							if ((null != e.CalcTalentDT1 ? wi.getReserved("CalcTalentDT1") : wi.h.CalcTalentDT1) == b.engine.getGameAttribute("UserInfo")[0]) {
+                        								var ki = b.engine.getGameAttribute("DNSM"),
+                        									xi = b.engine.getGameAttribute("Lv0")[0];
+                        								null != e.CalcTalentDN1 ? ki.setReserved("CalcTalentDN1", xi) : (ki.h.CalcTalentDN1 = xi);
+                        								var Qi = b.engine.getGameAttribute("DNSM"),
+                        									Xi = b.engine.getGameAttribute("CharacterClass"),
+                        									Li = Qi,
+                        									zi = H._customBlock_ReturnClasses(parseNum(Xi));
+                        								null != e.CalcTalentDL1 ? Li.setReserved("CalcTalentDL1", zi) : (Li.h.CalcTalentDL1 = zi);
+                        							} else {
+                        								var Yi = b.engine.getGameAttribute("DNSM"),
+                        									Wi = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									Zi = b.engine.getGameAttribute("DNSM"),
+                        									Hi = "" + g.string(null != e.CalcTalentDT1 ? Zi.getReserved("CalcTalentDT1") : Zi.h.CalcTalentDT1),
+                        									Ji = Wi,
+                        									ji = null != e[Hi] ? Ji.getReserved(Hi) : Ji.h[Hi],
+                        									qi = Yi,
+                        									Ki = (null != e.Lv0 ? ji.getReserved("Lv0") : ji.h.Lv0)[0];
+                        								null != e.CalcTalentDN1 ? qi.setReserved("CalcTalentDN1", Ki) : (qi.h.CalcTalentDN1 = Ki);
+                        								var $i = b.engine.getGameAttribute("DNSM"),
+                        									eu = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									tu = b.engine.getGameAttribute("DNSM"),
+                        									nu = "" + g.string(null != e.CalcTalentDT1 ? tu.getReserved("CalcTalentDT1") : tu.h.CalcTalentDT1),
+                        									su = eu,
+                        									au = null != e[nu] ? su.getReserved(nu) : su.h[nu],
+                        									ru = null != e.CharacterClass ? au.getReserved("CharacterClass") : au.h.CharacterClass,
+                        									Au = $i,
+                        									lu = H._customBlock_ReturnClasses(parseNum(ru));
+                        								null != e.CalcTalentDL1 ? Au.setReserved("CalcTalentDL1", lu) : (Au.h.CalcTalentDL1 = lu);
+                        							}
+                        							for (var ou = 0, iu = b.engine.getGameAttribute("DNSM"), uu = (null != e.CalcTalentDL1 ? iu.getReserved("CalcTalentDL1") : iu.h.CalcTalentDL1).length; ou < uu;) {
+                        								var gu = ou++,
+                        									mu = b.engine.getGameAttribute("DNSM");
+                        								null != e.CalcTalentDN2 ? mu.setReserved("CalcTalentDN2", gu) : (mu.h.CalcTalentDN2 = gu);
+                        								for (var du = 0; 2 > du;) {
+                        									var cu = du++,
+                        										pu = b.engine.getGameAttribute("DNSM"),
+                        										hu = b.engine.getGameAttribute("DNSM"),
+                        										bu = null != e.CalcTalentDL1 ? hu.getReserved("CalcTalentDL1") : hu.h.CalcTalentDL1,
+                        										fu = b.engine.getGameAttribute("DNSM"),
+                        										yu = null != e.CalcTalentDN2 ? fu.getReserved("CalcTalentDN2") : fu.h.CalcTalentDN2,
+                        										Ru = bu[0 | parseNum(yu)],
+                        										vu = parseNum(Ru),
+                        										Fu = b.engine.getGameAttribute("DNSM"),
+                        										Nu = null != e.CalcTalentDN1 ? Fu.getReserved("CalcTalentDN1") : Fu.h.CalcTalentDN1,
+                        										_u = pu,
+                        										Iu = U._customBlock_FamilyBonsuesREAL(vu, cu, parseNum(Nu));
+                        									null != e.CalcTalentDN3 ? _u.setReserved("CalcTalentDN3", Iu) : (_u.h.CalcTalentDN3 = Iu);
+                        									var Du = b.engine.getGameAttribute("DNSM"),
+                        										Eu = null != e.CalcTalentDN3 ? Du.getReserved("CalcTalentDN3") : Du.h.CalcTalentDN3,
+                        										Su = parseNum(Eu),
+                        										Gu = b.engine.getGameAttribute("DNSM"),
+                        										Tu = null != e.FamBonusQTYs ? Gu.getReserved("FamBonusQTYs") : Gu.h.FamBonusQTYs,
+                        										Uu = b.engine.getGameAttribute("DNSM"),
+                        										Mu = null != e.CalcTalentDL1 ? Uu.getReserved("CalcTalentDL1") : Uu.h.CalcTalentDL1,
+                        										Vu = b.engine.getGameAttribute("DNSM"),
+                        										Cu = null != e.CalcTalentDN2 ? Vu.getReserved("CalcTalentDN2") : Vu.h.CalcTalentDN2,
+                        										Bu = Mu[0 | parseNum(Cu)],
+                        										Pu = "" + Math.round(2 * parseNum(Bu) + cu),
+                        										Ou = Tu,
+                        										wu = null != e[Pu] ? Ou.getReserved(Pu) : Ou.h[Pu];
+                        									if (Su > parseNum(wu)) {
+                        										var ku = b.engine.getGameAttribute("DNSM"),
+                        											xu = null != e.FamBonusQTYs ? ku.getReserved("FamBonusQTYs") : ku.h.FamBonusQTYs,
+                        											Qu = b.engine.getGameAttribute("DNSM"),
+                        											Xu = null != e.CalcTalentDL1 ? Qu.getReserved("CalcTalentDL1") : Qu.h.CalcTalentDL1,
+                        											Lu = b.engine.getGameAttribute("DNSM"),
+                        											zu = null != e.CalcTalentDN2 ? Lu.getReserved("CalcTalentDN2") : Lu.h.CalcTalentDN2,
+                        											Yu = Xu[0 | parseNum(zu)],
+                        											Wu = "" + Math.round(2 * parseNum(Yu) + cu),
+                        											Zu = b.engine.getGameAttribute("DNSM"),
+                        											Hu = xu,
+                        											Ju = null != e.CalcTalentDN3 ? Zu.getReserved("CalcTalentDN3") : Zu.h.CalcTalentDN3;
+                        										if ((null != e[Wu] ? Hu.setReserved(Wu, Ju) : (Hu.h[Wu] = Ju), 0 < t._customBlock_GetTalentNumber(1, 144))) {
+                        											var ju = b.engine.getGameAttribute("DNSM");
+                        											if ((null != e.CalcTalentDT1 ? ju.getReserved("CalcTalentDT1") : ju.h.CalcTalentDT1) == b.engine.getGameAttribute("UserInfo")[0]) {
+                        												var qu = b.engine.getGameAttribute("DNSM"),
+                        													Ku = null != e.FamBonusQTYs ? qu.getReserved("FamBonusQTYs") : qu.h.FamBonusQTYs,
+                        													$u = b.engine.getGameAttribute("DNSM"),
+                        													eg = null != e.CalcTalentDL1 ? $u.getReserved("CalcTalentDL1") : $u.h.CalcTalentDL1,
+                        													tg = b.engine.getGameAttribute("DNSM"),
+                        													ng = null != e.CalcTalentDN2 ? tg.getReserved("CalcTalentDN2") : tg.h.CalcTalentDN2,
+                        													sg = eg[0 | parseNum(ng)],
+                        													ag = "" + Math.round(2 * parseNum(sg) + cu),
+                        													rg = b.engine.getGameAttribute("DNSM"),
+                        													Ag = null != e.CalcTalentDN3 ? rg.getReserved("CalcTalentDN3") : rg.h.CalcTalentDN3,
+                        													lg = Ku,
+                        													og = parseNum(Ag) * (1 + t._customBlock_GetTalentNumber(1, 144) / 100);
+                        												null != e[ag] ? lg.setReserved(ag, og) : (lg.h[ag] = og);
+                        											}
+                        										}
+                        										var ig = b.engine.getGameAttribute("DNSM"),
+                        											ug = [];
+                        										null != e.CalcTalentDL2 ? ig.setReserved("CalcTalentDL2", ug) : (ig.h.CalcTalentDL2 = ug);
+                        										var gg = b.engine.getGameAttribute("DNSM"),
+                        											mg = null != e.CalcTalentDL2 ? gg.getReserved("CalcTalentDL2") : gg.h.CalcTalentDL2,
+                        											dg = b.engine.getGameAttribute("DNSM");
+                        										mg.push(null != e.CalcTalentDT1 ? dg.getReserved("CalcTalentDT1") : dg.h.CalcTalentDT1);
+                        										var cg = b.engine.getGameAttribute("DNSM"),
+                        											pg = null != e.CalcTalentDL2 ? cg.getReserved("CalcTalentDL2") : cg.h.CalcTalentDL2,
+                        											hg = b.engine.getGameAttribute("DNSM");
+                        										pg.push(null != e.CalcTalentDN1 ? hg.getReserved("CalcTalentDN1") : hg.h.CalcTalentDN1);
+                        										var bg = b.engine.getGameAttribute("DNSM"),
+                        											fg = null != e.FamBonusQTYs ? bg.getReserved("FamBonusQTYs") : bg.h.FamBonusQTYs,
+                        											yg = b.engine.getGameAttribute("DNSM"),
+                        											Rg = null != e.CalcTalentDL1 ? yg.getReserved("CalcTalentDL1") : yg.h.CalcTalentDL1,
+                        											vg = b.engine.getGameAttribute("DNSM"),
+                        											Fg = null != e.CalcTalentDN2 ? vg.getReserved("CalcTalentDN2") : vg.h.CalcTalentDN2,
+                        											Ng = Rg[0 | parseNum(Fg)],
+                        											_g = Math.round(2 * parseNum(Ng)) + "list",
+                        											Ig = b.engine.getGameAttribute("DNSM"),
+                        											Dg = fg,
+                        											Eg = null != e.CalcTalentDL2 ? Ig.getReserved("CalcTalentDL2") : Ig.h.CalcTalentDL2;
+                        										null != e[_g] ? Dg.setReserved(_g, Eg) : (Dg.h[_g] = Eg);
+                        									}
+                        								}
+                        							}
+                        						}
+                        					}
+                        					if (-4 == s) {
+                        						var Sg = b.engine.getGameAttribute("DNSM"),
+                        							Gg = new p();
+                        						null != e.CardBonusS ? Sg.setReserved("CardBonusS", Gg) : (Sg.h.CardBonusS = Gg);
+                        						var Tg = b.engine.getGameAttribute("DNSM"),
+                        							Ug = [];
+                        						if (
+                        							(null != e.CardBonusSdl ? Tg.setReserved("CardBonusSdl", Ug) : (Tg.h.CardBonusSdl = Ug), null != b.engine.getGameAttribute("Cards")[2] && null != b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[45]))
+                        							for (var Mg = 0; 10 > Mg;) {
+                        								var Vg = Mg++;
+                        								if ("B" != b.engine.getGameAttribute("Cards")[2][Vg]) {
+                        									var Cg = b.engine.getGameAttribute("DNSM"),
+                        										Bg = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[45],
+                        										Pg = "" + g.string(b.engine.getGameAttribute("Cards")[2][Vg]),
+                        										Og = Bg,
+                        										wg = Cg,
+                        										kg = null != e[Pg] ? Og.getReserved(Pg) : Og.h[Pg];
+                        									if (
+                        										(null != e.CardBonusSdl ? wg.setReserved("CardBonusSdl", kg) : (wg.h.CardBonusSdl = kg),
+                        											(0 == Vg && 1 == A._customBlock_chipBonuses("card1")) || (7 == Vg && 1 == A._customBlock_chipBonuses("card2")))) {
+                        										var xg = b.engine.getGameAttribute("DNSM"),
+                        											Qg = null != e.CardBonusS ? xg.getReserved("CardBonusS") : xg.h.CardBonusS,
+                        											Xg = b.engine.getGameAttribute("DNSM"),
+                        											Lg = "" + g.string((null != e.CardBonusSdl ? Xg.getReserved("CardBonusSdl") : Xg.h.CardBonusSdl)[3]),
+                        											zg = 2 * H._customBlock_RunCodeOfTypeXforThingY("CardLv", "" + g.string(b.engine.getGameAttribute("Cards")[2][Vg])),
+                        											Yg = b.engine.getGameAttribute("DNSM"),
+                        											Wg = (null != e.CardBonusSdl ? Yg.getReserved("CardBonusSdl") : Yg.h.CardBonusSdl)[4],
+                        											Zg = parseNum(Wg),
+                        											Hg = b.engine.getGameAttribute("DNSM"),
+                        											Jg = null != e.CardBonusS ? Hg.getReserved("CardBonusS") : Hg.h.CardBonusS,
+                        											jg = b.engine.getGameAttribute("DNSM"),
+                        											qg = "" + g.string((null != e.CardBonusSdl ? jg.getReserved("CardBonusSdl") : jg.h.CardBonusSdl)[3]),
+                        											Kg = Jg,
+                        											$g = null != e[qg] ? Kg.getReserved(qg) : Kg.h[qg],
+                        											em = Qg,
+                        											tm = zg * Zg + (null == $g ? 0 : "number" == typeof $g ? d.__cast($g, k) : "number" == typeof $g && (0 | $g) === $g ? d.__cast($g, l) : "boolean" == typeof $g ? d.__cast($g, n) ? 1 : 0 : "string" == typeof $g ? parseFloat($g) : parseFloat(g.string($g)));
+                        										null != e[Lg] ? em.setReserved(Lg, tm) : (em.h[Lg] = tm);
+                        									} else {
+                        										var nm = b.engine.getGameAttribute("DNSM"),
+                        											sm = null != e.CardBonusS ? nm.getReserved("CardBonusS") : nm.h.CardBonusS,
+                        											am = b.engine.getGameAttribute("DNSM"),
+                        											rm = "" + g.string((null != e.CardBonusSdl ? am.getReserved("CardBonusSdl") : am.h.CardBonusSdl)[3]),
+                        											Am = H._customBlock_RunCodeOfTypeXforThingY("CardLv", "" + g.string(b.engine.getGameAttribute("Cards")[2][Vg])),
+                        											lm = b.engine.getGameAttribute("DNSM"),
+                        											om = (null != e.CardBonusSdl ? lm.getReserved("CardBonusSdl") : lm.h.CardBonusSdl)[4],
+                        											im = parseNum(om),
+                        											um = b.engine.getGameAttribute("DNSM"),
+                        											gm = null != e.CardBonusS ? um.getReserved("CardBonusS") : um.h.CardBonusS,
+                        											mm = b.engine.getGameAttribute("DNSM"),
+                        											dm = "" + g.string((null != e.CardBonusSdl ? mm.getReserved("CardBonusSdl") : mm.h.CardBonusSdl)[3]),
+                        											cm = gm,
+                        											pm = null != e[dm] ? cm.getReserved(dm) : cm.h[dm],
+                        											hm = sm,
+                        											bm = Am * im + parseNum(pm);
+                        										null != e[rm] ? hm.setReserved(rm, bm) : (hm.h[rm] = bm);
+                        									}
+                        								}
+                        							}
+                        					}
+                        					if (-6 == s) {
+                        						var fm = b.engine.getGameAttribute("DNSM"),
+                        							ym = new p();
+                        						null != e.MealBonusesS ? fm.setReserved("MealBonusesS", ym) : (fm.h.MealBonusesS = ym);
+                        						for (var Rm = 0; 46 > Rm;) {
+                        							var vm = Rm++,
+                        								Fm = b.engine.getGameAttribute("CustomLists");
+                        							null != e.MealINFO && Fm.getReserved("MealINFO");
+                        							var Nm = b.engine.getGameAttribute("DNSM"),
+                        								_m = null != e.MealBonusesS ? Nm.getReserved("MealBonusesS") : Nm.h.MealBonusesS,
+                        								Im = b.engine.getGameAttribute("CustomLists"),
+                        								Dm = "" + g.string((null != e.MealINFO ? Im.getReserved("MealINFO") : Im.h.MealINFO)[vm][5]),
+                        								Em = 1 + w._customBlock_MainframeBonus(116) / 100,
+                        								Sm = b.engine.getGameAttribute("Meals")[0][vm],
+                        								Gm = parseNum(Sm),
+                        								Tm = b.engine.getGameAttribute("CustomLists"),
+                        								Um = (null != e.MealINFO ? Tm.getReserved("MealINFO") : Tm.h.MealINFO)[vm][2],
+                        								Mm = parseNum(Um),
+                        								Vm = b.engine.getGameAttribute("DNSM"),
+                        								Cm = null != e.MealBonusesS ? Vm.getReserved("MealBonusesS") : Vm.h.MealBonusesS,
+                        								Bm = b.engine.getGameAttribute("CustomLists"),
+                        								Pm = "" + g.string((null != e.MealINFO ? Bm.getReserved("MealINFO") : Bm.h.MealINFO)[vm][5]),
+                        								Om = Cm,
+                        								wm = null != e[Pm] ? Om.getReserved(Pm) : Om.h[Pm],
+                        								km = _m,
+                        								xm = Em * Gm * Mm + parseNum(wm);
+                        							null != e[Dm] ? km.setReserved(Dm, xm) : (km.h[Dm] = xm);
+                        						}
+                        					}
+                        					if (-7 == s) {
+                        						var Qm = b.engine.getGameAttribute("DNSM"),
+                        							Xm = new p();
+                        						null != e.LabMFbonuses ? Qm.setReserved("LabMFbonuses", Xm) : (Qm.h.LabMFbonuses = Xm);
+                        						var Lm = b.engine.getGameAttribute("DNSM"),
+                        							zm = null != e.LabMFbonuses ? Lm.getReserved("LabMFbonuses") : Lm.h.LabMFbonuses,
+                        							Ym = w._customBlock_MainframeBonus(100);
+                        						null != e[100] ? zm.setReserved("100", Ym) : (zm.h[100] = Ym);
+                        						for (var Wm = 0, Zm = b.engine.getGameAttribute("CustomLists"), Hm = (null != e.JewelDesc ? Zm.getReserved("JewelDesc") : Zm.h.JewelDesc).length; Wm < Hm;) {
+                        							var Jm = Wm++,
+                        								jm = b.engine.getGameAttribute("DNSM"),
+                        								qm = null != e.LabMFbonuses ? jm.getReserved("LabMFbonuses") : jm.h.LabMFbonuses,
+                        								Km = "" + (100 + Jm),
+                        								$m = w._customBlock_MainframeBonus(100 + Jm);
+                        							null != e[Km] ? qm.setReserved(Km, $m) : (qm.h[Km] = $m);
+                        						}
+                        						for (var ed = 0, td = b.engine.getGameAttribute("CustomLists"), nd = (null != e.LabMainBonus ? td.getReserved("LabMainBonus") : td.h.LabMainBonus).length; ed < nd;) {
+                        							var sd = ed++,
+                        								ad = b.engine.getGameAttribute("DNSM"),
+                        								rd = null != e.LabMFbonuses ? ad.getReserved("LabMFbonuses") : ad.h.LabMFbonuses,
+                        								Ad = "" + sd,
+                        								ld = w._customBlock_MainframeBonus(sd);
+                        							null != e[Ad] ? rd.setReserved(Ad, ld) : (rd.h[Ad] = ld);
+                        						}
+                        						var od = b.engine.getGameAttribute("DNSM"),
+                        							id = null != e.LabMFbonuses ? od.getReserved("LabMFbonuses") : od.h.LabMFbonuses;
+                        						null != e.YES ? id.setReserved("YES", 1) : (id.h.YES = 1);
+                        						var ud = b.engine.getGameAttribute("DNSM"),
+                        							gd = null != e.LabMFbonuses ? ud.getReserved("LabMFbonuses") : ud.h.LabMFbonuses,
+                        							md = null != e[114] ? gd.getReserved("114") : gd.h[114];
+                        						if (0 < parseNum(md)) {
+                        							var dd = b.engine.getGameAttribute("DNSM");
+                        							null != e.CalcTalentDN2 ? dd.setReserved("CalcTalentDN2", 0) : (dd.h.CalcTalentDN2 = 0);
+                        							for (var cd = 0; 10 > cd;) {
+                        								var pd = cd++,
+                        									hd = b.engine.getGameAttribute("DNSM");
+                        								if ((null != e.CalcTalentDN1 ? hd.setReserved("CalcTalentDN1", pd) : (hd.h.CalcTalentDN1 = pd), 0 == b.engine.getGameAttribute("Cooking")[pd][0])) break;
+                        								var bd = b.engine.getGameAttribute("DNSM"),
+                        									fd = b.engine.getGameAttribute("DNSM"),
+                        									yd = null != e.CalcTalentDN2 ? fd.getReserved("CalcTalentDN2") : fd.h.CalcTalentDN2,
+                        									Rd = parseNum(yd),
+                        									vd = b.engine.getGameAttribute("Cooking"),
+                        									Fd = b.engine.getGameAttribute("DNSM"),
+                        									Nd = null != e.CalcTalentDN1 ? Fd.getReserved("CalcTalentDN1") : Fd.h.CalcTalentDN1,
+                        									_d = vd[0 | parseNum(Nd)][6],
+                        									Id = bd,
+                        									Dd = Rd + parseNum(_d);
+                        								null != e.CalcTalentDN2 ? Id.setReserved("CalcTalentDN2", Dd) : (Id.h.CalcTalentDN2 = Dd);
+                        								var Ed = b.engine.getGameAttribute("DNSM"),
+                        									Sd = b.engine.getGameAttribute("DNSM"),
+                        									Gd = null != e.CalcTalentDN2 ? Sd.getReserved("CalcTalentDN2") : Sd.h.CalcTalentDN2,
+                        									Td = parseNum(Gd),
+                        									Ud = b.engine.getGameAttribute("Cooking"),
+                        									Md = b.engine.getGameAttribute("DNSM"),
+                        									Vd = null != e.CalcTalentDN1 ? Md.getReserved("CalcTalentDN1") : Md.h.CalcTalentDN1,
+                        									Cd = Ud[0 | parseNum(Vd)][7],
+                        									Bd = Ed,
+                        									Pd = Td + parseNum(Cd);
+                        								null != e.CalcTalentDN2 ? Bd.setReserved("CalcTalentDN2", Pd) : (Bd.h.CalcTalentDN2 = Pd);
+                        								var Od = b.engine.getGameAttribute("DNSM"),
+                        									wd = b.engine.getGameAttribute("DNSM"),
+                        									kd = null != e.CalcTalentDN2 ? wd.getReserved("CalcTalentDN2") : wd.h.CalcTalentDN2,
+                        									xd = parseNum(kd),
+                        									Qd = b.engine.getGameAttribute("Cooking"),
+                        									Xd = b.engine.getGameAttribute("DNSM"),
+                        									Ld = null != e.CalcTalentDN1 ? Xd.getReserved("CalcTalentDN1") : Xd.h.CalcTalentDN1,
+                        									zd = Qd[0 | parseNum(Ld)][8],
+                        									Yd = Od,
+                        									Wd = xd + parseNum(zd);
+                        								null != e.CalcTalentDN2 ? Yd.setReserved("CalcTalentDN2", Wd) : (Yd.h.CalcTalentDN2 = Wd);
+                        							}
+                        							var Zd = b.engine.getGameAttribute("DNSM"),
+                        								Hd = null != e.LabMFbonuses ? Zd.getReserved("LabMFbonuses") : Zd.h.LabMFbonuses,
+                        								Jd = b.engine.getGameAttribute("DNSM"),
+                        								jd = null != e.LabMFbonuses ? Jd.getReserved("LabMFbonuses") : Jd.h.LabMFbonuses,
+                        								qd = null != e[114] ? jd.getReserved("114") : jd.h[114],
+                        								Kd = parseNum(qd),
+                        								$d = b.engine.getGameAttribute("DNSM"),
+                        								ec = null != e.CalcTalentDN2 ? $d.getReserved("CalcTalentDN2") : $d.h.CalcTalentDN2,
+                        								tc = Kd * Math.floor(
+                        									(parseNum(ec) + 0.5) / 25);
+                        							null != e[114] ? Hd.setReserved("114", tc) : (Hd.h[114] = tc);
+                        						}
+                        						var nc = b.engine.getGameAttribute("DNSM"),
+                        							sc = null != e.LabMFbonuses ? nc.getReserved("LabMFbonuses") : nc.h.LabMFbonuses,
+                        							ac = null != e[9] ? sc.getReserved("9") : sc.h[9];
+                        						if (0 < parseNum(ac)) {
+                        							var rc = b.engine,
+                        								Ac = b.engine.getGameAttribute("CustomLists"),
+                        								lc = null != e.MapAFKtarget ? Ac.getReserved("MapAFKtarget") : Ac.h.MapAFKtarget,
+                        								oc = rc.gameAttributes,
+                        								ic = lc.indexOf("mushG");
+                        							null != e.DummyNumber3 ? oc.setReserved("DummyNumber3", ic) : (oc.h.DummyNumber3 = ic);
+                        							var uc = b.engine.gameAttributes;
+                        							if ((null != e.DummyNumber4 ? uc.setReserved("DummyNumber4", 0) : (uc.h.DummyNumber4 = 0), 0 <= b.engine.getGameAttribute("DummyNumber3"))) {
+                        								var gc = b.engine,
+                        									mc = b.engine.getGameAttribute("CustomLists"),
+                        									dc = (null != e.MapDetails ? mc.getReserved("MapDetails") : mc.h.MapDetails)[0 | b.engine.getGameAttribute("DummyNumber3")][0][0],
+                        									cc = parseNum(dc),
+                        									pc = b.engine.getGameAttribute("KillsLeft2Advance")[0 | b.engine.getGameAttribute("DummyNumber3")][0],
+                        									hc = parseNum(pc),
+                        									bc = gc.gameAttributes,
+                        									fc = cc - hc;
+                        								null != e.DummyNumber4 ? bc.setReserved("DummyNumber4", fc) : (bc.h.DummyNumber4 = fc);
+                        								for (var yc = b.engine.getGameAttribute("PlayerDATABASE").keys(); yc.hasNext();) {
+                        									var Rc = yc.next();
+                        									if (b.engine.getGameAttribute("UserInfo")[0] != Rc) {
+                        										var vc = b.engine,
+                        											Fc = b.engine.getGameAttribute("DummyNumber4"),
+                        											Nc = b.engine.getGameAttribute("CustomLists"),
+                        											_c = (null != e.MapDetails ? Nc.getReserved("MapDetails") : Nc.h.MapDetails)[0 | b.engine.getGameAttribute("DummyNumber3")][0][0],
+                        											Dc = parseNum(_c),
+                        											Ec = b.engine.getGameAttribute("PlayerDATABASE"),
+                        											Sc = "" + Rc,
+                        											Gc = null != e[Sc] ? Ec.getReserved(Sc) : Ec.h[Sc],
+                        											Tc = (null != e.KillsLeft2Advance ? Gc.getReserved("KillsLeft2Advance") : Gc.h.KillsLeft2Advance)[0 | b.engine.getGameAttribute("DummyNumber3")][0],
+                        											Uc = parseNum(Tc),
+                        											Vc = vc.gameAttributes,
+                        											Cc = Fc + (Dc - Uc);
+                        										null != e.DummyNumber4 ? Vc.setReserved("DummyNumber4", Cc) : (Vc.h.DummyNumber4 = Cc);
+                        									}
+                        								}
+                        							}
+                        							var Bc = b.engine.getGameAttribute("DNSM"),
+                        								Pc = null != e.LabMFbonuses ? Bc.getReserved("LabMFbonuses") : Bc.h.LabMFbonuses,
+                        								Oc = b.engine.getGameAttribute("DNSM"),
+                        								wc = null != e.LabMFbonuses ? Oc.getReserved("LabMFbonuses") : Oc.h.LabMFbonuses,
+                        								kc = null != e[9] ? wc.getReserved("9") : wc.h[9],
+                        								xc = parseNum(kc) * Math.floor(b.engine.getGameAttribute("DummyNumber4") / 1e6);
+                        							null != e[9] ? Pc.setReserved("9", xc) : (Pc.h[9] = xc);
+                        						}
+                        						var Qc = b.engine.getGameAttribute("DNSM"),
+                        							Xc = null != e.LabMFbonuses ? Qc.getReserved("LabMFbonuses") : Qc.h.LabMFbonuses,
+                        							Lc = null != e[11] ? Xc.getReserved("11") : Xc.h[11];
+                        						if (0 < parseNum(Lc)) {
+                        							var zc = b.engine.getGameAttribute("DNSM"),
+                        								Yc = [];
+                        							null != e.CalcTalentDL1 ? zc.setReserved("CalcTalentDL1", Yc) : (zc.h.CalcTalentDL1 = Yc);
+                        							for (var Wc = 0, Zc = b.engine.getGameAttribute("ChestOrder").length; Wc < Zc;) {
+                        								var Hc = Wc++,
+                        									Jc = b.engine.getGameAttribute("ChestQuantity")[Hc];
+                        								if (1e7 <= parseNum(Jc)) {
+                        									var jc = b.engine.getGameAttribute("DNSM");
+                        									if (!Sb.contains(null != e.CalcTalentDL1 ? jc.getReserved("CalcTalentDL1") : jc.h.CalcTalentDL1, b.engine.getGameAttribute("ChestOrder")[Hc])) {
+                        										var qc = b.engine.getGameAttribute("DNSM");
+                        										(null != e.CalcTalentDL1 ? qc.getReserved("CalcTalentDL1") : qc.h.CalcTalentDL1).push(b.engine.getGameAttribute("ChestOrder")[Hc]);
+                        									}
+                        								}
+                        							}
+                        						}
+                        						var Kc = b.engine.getGameAttribute("DNSM"),
+                        							$c = null != e.LabMFbonuses ? Kc.getReserved("LabMFbonuses") : Kc.h.LabMFbonuses,
+                        							ep = b.engine.getGameAttribute("DNSM"),
+                        							tp = null != e.LabMFbonuses ? ep.getReserved("LabMFbonuses") : ep.h.LabMFbonuses,
+                        							np = null != e[11] ? tp.getReserved("11") : tp.h[11],
+                        							sp = parseNum(np),
+                        							ap = b.engine.getGameAttribute("DNSM"),
+                        							rp = sp * (null != e.CalcTalentDL1 ? ap.getReserved("CalcTalentDL1") : ap.h.CalcTalentDL1).length;
+                        						null != e[11] ? $c.setReserved("11", rp) : ($c.h[11] = rp);
+                        					}
+                        				}
+                        				if (31 == s) {
+                        					var Ap = t._customBlock_GetTalentNumber(1, 31),
+                        						lp = b.engine.getGameAttribute("DNSM"),
+                        						op = null != e.CalcTalentMAP ? lp.getReserved("CalcTalentMAP") : lp.h.CalcTalentMAP,
+                        						ip = null != e[31] ? op.getReserved("31") : op.h[31];
+                        					return (Ap * Math.floor(parseNum(ip) / 5));
+                        				}
+                        				if (110 == s) {
+                        					var up = t._customBlock_GetTalentNumber(1, 110),
+                        						gp = b.engine.getGameAttribute("DNSM"),
+                        						mp = null != e.CalcTalentMAP ? gp.getReserved("CalcTalentMAP") : gp.h.CalcTalentMAP,
+                        						dp = null != e[110] ? mp.getReserved("110") : mp.h[110];
+                        					return (up * parseNum(dp));
+                        				}
+                        				if (125 == s) {
+                        					var cp = b.engine.getGameAttribute("DNSM");
+                        					null != e.CalcTalentDN1 ? cp.setReserved("CalcTalentDN1", 0) : (cp.h.CalcTalentDN1 = 0);
+                        					var pp = Math.floor(H._customBlock_PlayerAccTot()),
+                        						hp = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						bp = b.engine.getGameAttribute("AFKtarget"),
+                        						fp = null != e[bp] ? hp.getReserved(bp) : hp.h[bp],
+                        						yp = null != e.Defence ? fp.getReserved("Defence") : fp.h.Defence;
+                        					if (pp >= 2.25 * parseNum(yp)) {
+                        						for (var Rp = 0; 6 > Rp;) {
+                        							var vp = Rp++,
+                        								Fp = b.engine.getGameAttribute("DNSM"),
+                        								Np = b.engine.getGameAttribute("DNSM"),
+                        								_p = null != e.CalcTalentDN1 ? Np.getReserved("CalcTalentDN1") : Np.h.CalcTalentDN1,
+                        								Ip = parseNum(_p),
+                        								Dp = b.engine.getGameAttribute("Refinery")[3 + vp][1],
+                        								Ep = Fp,
+                        								Sp = Ip + parseNum(Dp);
+                        							null != e.CalcTalentDN1 ? Ep.setReserved("CalcTalentDN1", Sp) : (Ep.h.CalcTalentDN1 = Sp);
+                        						}
+                        						var Gp = b.engine.getGameAttribute("DNSM");
+                        						return null != e.CalcTalentDN1 ? Gp.getReserved("CalcTalentDN1") : Gp.h.CalcTalentDN1;
+                        					}
+                        					return 0;
+                        				}
+                        				if (146 == s) {
+                        					var Tp = t._customBlock_GetTalentNumber(1, 146),
+                        						Up = b.engine.getGameAttribute("DNSM"),
+                        						Mp = null != e.CalcTalentMAP ? Up.getReserved("CalcTalentMAP") : Up.h.CalcTalentMAP,
+                        						Vp = null != e[146] ? Mp.getReserved("146") : Mp.h[146];
+                        					return (Tp * parseNum(Vp));
+                        				}
+                        				if (305 == s) {
+                        					var Cp = t._customBlock_GetTalentNumber(1, 305),
+                        						Bp = b.engine.getGameAttribute("DNSM"),
+                        						Pp = null != e.CalcTalentMAP ? Bp.getReserved("CalcTalentMAP") : Bp.h.CalcTalentMAP,
+                        						Op = null != e[305] ? Pp.getReserved("305") : Pp.h[305];
+                        					return (Cp * parseNum(Op));
+                        				}
+                        				if (470 == s) {
+                        					var wp = t._customBlock_GetTalentNumber(1, 470),
+                        						kp = b.engine.getGameAttribute("DNSM"),
+                        						xp = null != e.CalcTalentMAP ? kp.getReserved("CalcTalentMAP") : kp.h.CalcTalentMAP,
+                        						Qp = null != e[470] ? xp.getReserved("470") : xp.h[470];
+                        					return (wp * parseNum(Qp));
+                        				}
+                        				if (485 == s) {
+                        					var Xp = t._customBlock_GetTalentNumber(1, 485),
+                        						Lp = b.engine.getGameAttribute("DNSM"),
+                        						zp = null != e.CalcTalentMAP ? Lp.getReserved("CalcTalentMAP") : Lp.h.CalcTalentMAP,
+                        						Yp = null != e[485] ? zp.getReserved("485") : zp.h[485];
+                        					return (Xp * parseNum(Yp));
+                        				}
+                        				if (493 == s) {
+                        					var Wp = b.engine.getGameAttribute("DNSM");
+                        					null != e.CalcTalentDN1 ? Wp.setReserved("CalcTalentDN1", 0) : (Wp.h.CalcTalentDN1 = 0);
+                        					for (var Zp = 0, Hp = b.engine.getGameAttribute("GetPlayersUsernames").length; Zp < Hp;) {
+                        						var Jp = Zp++;
+                        						if (b.engine.getGameAttribute("GetPlayersUsernames")[Jp] == b.engine.getGameAttribute("UserInfo")[0]) {
+                        							var jp = b.engine.getGameAttribute("DNSM"),
+                        								qp = b.engine.getGameAttribute("DNSM"),
+                        								Kp = null != e.CalcTalentDN1 ? qp.getReserved("CalcTalentDN1") : qp.h.CalcTalentDN1,
+                        								$p = jp,
+                        								eh = parseNum(Kp) + t._customBlock_GetTalentNumber(1, 493);
+                        							null != e.CalcTalentDN1 ? $p.setReserved("CalcTalentDN1", eh) : ($p.h.CalcTalentDN1 = eh);
+                        						} else {
+                        							var th = b.engine.getGameAttribute("CauldronJobs")[1][Jp],
+                        								nh = parseNum(th),
+                        								sh = b.engine.getGameAttribute("CauldronJobs")[1][b.engine.getGameAttribute("GetPlayersUsernames").indexOf(b.engine.getGameAttribute("UserInfo")[0])];
+                        							if (nh + 1 == parseNum(sh) + 1) {
+                        								var ah = b.engine.getGameAttribute("DNSM"),
+                        									rh = b.engine.getGameAttribute("DNSM"),
+                        									Ah = null != e.CalcTalentDN1 ? rh.getReserved("CalcTalentDN1") : rh.h.CalcTalentDN1,
+                        									lh = parseNum(Ah),
+                        									oh = b.engine.getGameAttribute("CustomLists"),
+                        									ih = "" + g.string((null != e.TalentDescriptions ? oh.getReserved("TalentDescriptions") : oh.h.TalentDescriptions)[493][1][2]),
+                        									uh = b.engine.getGameAttribute("CustomLists"),
+                        									gh = (null != e.TalentDescriptions ? uh.getReserved("TalentDescriptions") : uh.h.TalentDescriptions)[493][1][0],
+                        									mh = parseNum(gh),
+                        									dh = b.engine.getGameAttribute("CustomLists"),
+                        									ch = (null != e.TalentDescriptions ? dh.getReserved("TalentDescriptions") : dh.h.TalentDescriptions)[493][1][1],
+                        									ph = parseNum(ch),
+                        									hh = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									bh = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[Jp]),
+                        									fh = hh,
+                        									yh = null != e[bh] ? fh.getReserved(bh) : fh.h[bh],
+                        									Rh = (null != e.SkillLevels ? yh.getReserved("SkillLevels") : yh.h.SkillLevels)[493],
+                        									vh = ah,
+                        									Fh = lh + H._customBlock_ArbitraryCode5Inputs(ih, mh, ph, parseNum(Rh), 0, 0);
+                        								null != e.CalcTalentDN1 ? vh.setReserved("CalcTalentDN1", Fh) : (vh.h.CalcTalentDN1 = Fh);
+                        							}
+                        						}
+                        					}
+                        					var Nh = b.engine.getGameAttribute("DNSM");
+                        					return null != e.CalcTalentDN1 ? Nh.getReserved("CalcTalentDN1") : Nh.h.CalcTalentDN1;
+                        				}
+                        				if (616 == s) {
+                        					var _h = t._customBlock_GetTalentNumber(1, 616),
+                        						Ih = b.engine.getGameAttribute("DNSM"),
+                        						Dh = null != e.CalcTalentMAP ? Ih.getReserved("CalcTalentMAP") : Ih.h.CalcTalentMAP,
+                        						Eh = null != e[616] ? Dh.getReserved("616") : Dh.h[616];
+                        					return Math.min(_h, Math.floor(parseNum(Eh) / 10));
+                        				}
+                        				if (620 == s) {
+                        					var Sh = t._customBlock_GetTalentNumber(1, 620),
+                        						Gh = b.engine.getGameAttribute("DNSM"),
+                        						Th = null != e.CalcTalentMAP ? Gh.getReserved("CalcTalentMAP") : Gh.h.CalcTalentMAP,
+                        						Uh = null != e[620] ? Th.getReserved("620") : Th.h[620];
+                        					return Math.min(Sh, Math.floor(parseNum(Uh) / 10));
+                        				}
+                        				if (643 == s || 644 == s || 645 == s) {
+                        					if (643 == s) var Mh = b.engine.getGameAttribute("DNSM"),
+                        						Vh = null != e.CalcTalentMAP ? Mh.getReserved("CalcTalentMAP") : Mh.h.CalcTalentMAP,
+                        						Ch = "" + s,
+                        						Bh = -11 == (null != e[Ch] ? Vh.getReserved(Ch) : Vh.h[Ch]);
+                        					else Bh = !1;
+                        					if (Bh) {
+                        						var Ph = b.engine.getGameAttribute("DNSM"),
+                        							Oh = null != e.CalcTalentMAP ? Ph.getReserved("CalcTalentMAP") : Ph.h.CalcTalentMAP,
+                        							wh = H._customBlock_RunCodeOfTypeXforThingY("OverkillStuffs", "2");
+                        						null != e[643] ? Oh.setReserved("643", wh) : (Oh.h[643] = wh);
+                        					} else {
+                        						if (645 == s) var kh = b.engine.getGameAttribute("DNSM"),
+                        							xh = null != e.CalcTalentMAP ? kh.getReserved("CalcTalentMAP") : kh.h.CalcTalentMAP,
+                        							Qh = "" + s,
+                        							Xh = -11 == (null != e[Qh] ? xh.getReserved(Qh) : xh.h[Qh]);
+                        						else Xh = !1;
+                        						if (Xh) {
+                        							var Lh = b.engine.getGameAttribute("DNSM");
+                        							null != e.CalcTalentDN1 ? Lh.setReserved("CalcTalentDN1", 0) : (Lh.h.CalcTalentDN1 = 0);
+                        							var zh = Math.floor(H._customBlock_PlayerAccTot()),
+                        								Yh = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								Wh = b.engine.getGameAttribute("AFKtarget"),
+                        								Zh = null != e[Wh] ? Yh.getReserved(Wh) : Yh.h[Wh],
+                        								Hh = null != e.Defence ? Zh.getReserved("Defence") : Zh.h.Defence;
+                        							if (zh > 2.25 * parseNum(Hh)) {
+                        								var Jh = b.engine.getGameAttribute("DNSM"),
+                        									jh = Math.floor(H._customBlock_PlayerAccTot()),
+                        									qh = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        									Kh = b.engine.getGameAttribute("AFKtarget"),
+                        									$h = null != e[Kh] ? qh.getReserved(Kh) : qh.h[Kh],
+                        									eb = null != e.Defence ? $h.getReserved("Defence") : $h.h.Defence,
+                        									tb = t._customBlock_getLOG(jh - 2.25 * parseNum(eb));
+                        								null != e.CalcTalentDN1 ? Jh.setReserved("CalcTalentDN1", tb) : (Jh.h.CalcTalentDN1 = tb);
+                        							}
+                        							var nb = b.engine.getGameAttribute("DNSM"),
+                        								sb = null != e.CalcTalentMAP ? nb.getReserved("CalcTalentMAP") : nb.h.CalcTalentMAP,
+                        								ab = b.engine.getGameAttribute("DNSM"),
+                        								rb = null != e.CalcTalentDN1 ? ab.getReserved("CalcTalentDN1") : ab.h.CalcTalentDN1;
+                        							null != e[645] ? sb.setReserved("645", rb) : (sb.h[645] = rb);
+                        						}
+                        					}
+                        					var Ab = t._customBlock_GetTalentNumber(1, s),
+                        						lb = b.engine.getGameAttribute("DNSM"),
+                        						ob = null != e.CalcTalentMAP ? lb.getReserved("CalcTalentMAP") : lb.h.CalcTalentMAP,
+                        						ib = "" + s,
+                        						ub = null != e[ib] ? ob.getReserved(ib) : ob.h[ib];
+                        					return (Ab * parseNum(ub));
+                        				}
+                        			}
+                        			return 1;
+                        		}
+                        		var gb = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.ItemzzSellPricesz ? !gb.existsReserved("ItemzzSellPricesz") : !gb.h.hasOwnProperty("ItemzzSellPricesz")) {
+                        			var mb = b.engine.getGameAttribute("CustomLists");
+                        			if (null != e.ItemToCraftNAME ? !mb.existsReserved("ItemToCraftNAME") : !mb.h.hasOwnProperty("ItemToCraftNAME")) {
+                        				var db = b.engine.getGameAttribute("CustomLists"),
+                        					cb = Ic.ItemToCraftNAME();
+                        				null != e.ItemToCraftNAME ? db.setReserved("ItemToCraftNAME", cb) : (db.h.ItemToCraftNAME = cb);
+                        			}
+                        			var pb = b.engine.getGameAttribute("CustomLists");
+                        			if (null != e.ItemToCraftCostTYPE ? !pb.existsReserved("ItemToCraftCostTYPE") : !pb.h.hasOwnProperty("ItemToCraftCostTYPE")) {
+                        				var hb = b.engine.getGameAttribute("CustomLists"),
+                        					bb = Ic.ItemToCraftCostTYPE();
+                        				null != e.ItemToCraftCostTYPE ? hb.setReserved("ItemToCraftCostTYPE", bb) : (hb.h.ItemToCraftCostTYPE = bb);
+                        			}
+                        			if (0 == Sb.mapCount(b.engine.getGameAttribute("ItemDefinitionsGET"))) {
+                        				var fb = b.engine,
+                        					yb = F.get(),
+                        					Rb = fb.gameAttributes;
+                        				null != e.ItemDefinitionsGET ? Rb.setReserved("ItemDefinitionsGET", yb) : (Rb.h.ItemDefinitionsGET = yb);
+                        				var vb = b.engine,
+                        					Fb = ea.get(),
+                        					Nb = vb.gameAttributes;
+                        				null != e.DummyMap ? Nb.setReserved("DummyMap", Fb) : (Nb.h.DummyMap = Fb);
+                        				for (var _b = b.engine.getGameAttribute("DummyMap").keys(); _b.hasNext();) {
+                        					var Ib = _b.next(),
+                        						Db = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        						Eb = b.engine.getGameAttribute("DummyMap"),
+                        						Gb = "" + Ib,
+                        						Tb = Db,
+                        						Ub = "" + Ib,
+                        						Mb = null != e[Gb] ? Eb.getReserved(Gb) : Eb.h[Gb];
+                        					null != e[Ub] ? Tb.setReserved(Ub, Mb) : (Tb.h[Ub] = Mb);
+                        				}
+                        				var Vb = b.engine,
+                        					Cb = new p(),
+                        					Bb = Vb.gameAttributes;
+                        				null != e.DummyMap ? Bb.setReserved("DummyMap", Cb) : (Bb.h.DummyMap = Cb);
+                        			}
+                        			var Pb = b.engine.getGameAttribute("DNSM"),
+                        				Ob = new p();
+                        			null != e.ItemzzSellPricesz ? Pb.setReserved("ItemzzSellPricesz", Ob) : (Pb.h.ItemzzSellPricesz = Ob);
+                        			for (var wb = 0, kb = b.engine.getGameAttribute("CustomLists"), xb = (null != e.ItemToCraftNAME ? kb.getReserved("ItemToCraftNAME") : kb.h.ItemToCraftNAME).length; wb < xb;) {
+                        				var Qb = wb++,
+                        					Xb = b.engine.getGameAttribute("DNSM");
+                        				null != e.CalcTalentDN1 ? Xb.setReserved("CalcTalentDN1", Qb) : (Xb.h.CalcTalentDN1 = Qb);
+                        				for (var Lb = 0,
+                        						zb = b.engine.getGameAttribute("CustomLists"),
+                        						Yb = null != e.ItemToCraftNAME ? zb.getReserved("ItemToCraftNAME") : zb.h.ItemToCraftNAME,
+                        						Wb = b.engine.getGameAttribute("DNSM"),
+                        						Zb = null != e.CalcTalentDN1 ? Wb.getReserved("CalcTalentDN1") : Wb.h.CalcTalentDN1,
+                        						Hb = Yb[0 | parseNum(Zb)].length; Lb < Hb;) {
+                        					var Jb = Lb++,
+                        						jb = b.engine.getGameAttribute("DNSM");
+                        					null != e.CalcTalentDN2 ? jb.setReserved("CalcTalentDN2", Jb) : (jb.h.CalcTalentDN2 = Jb);
+                        					var qb = b.engine.getGameAttribute("DNSM");
+                        					null != e.CalcTalentDN3 ? qb.setReserved("CalcTalentDN3", 0) : (qb.h.CalcTalentDN3 = 0);
+                        					var Kb = b.engine.getGameAttribute("DNSM"),
+                        						$b = b.engine.getGameAttribute("CustomLists"),
+                        						ef = null != e.ItemToCraftCostTYPE ? $b.getReserved("ItemToCraftCostTYPE") : $b.h.ItemToCraftCostTYPE,
+                        						tf = b.engine.getGameAttribute("DNSM"),
+                        						nf = null != e.CalcTalentDN1 ? tf.getReserved("CalcTalentDN1") : tf.h.CalcTalentDN1,
+                        						sf = ef[0 | parseNum(nf)],
+                        						af = b.engine.getGameAttribute("DNSM"),
+                        						rf = null != e.CalcTalentDN2 ? af.getReserved("CalcTalentDN2") : af.h.CalcTalentDN2,
+                        						Af = Kb,
+                        						lf = sf[0 | parseNum(rf)];
+                        					null != e.CalcTalentDL1 ? Af.setReserved("CalcTalentDL1", lf) : (Af.h.CalcTalentDL1 = lf);
+                        					for (var of = 0, uf = b.engine.getGameAttribute("DNSM"), gf = (null != e.CalcTalentDL1 ? uf.getReserved("CalcTalentDL1") : uf.h.CalcTalentDL1).length; of < gf;) {
+                        						var mf = of ++,
+                        							df = b.engine.getGameAttribute("DNSM"),
+                        							cf = b.engine.getGameAttribute("DNSM"),
+                        							pf = null != e.CalcTalentDN3 ? cf.getReserved("CalcTalentDN3") : cf.h.CalcTalentDN3,
+                        							hf = parseNum(pf),
+                        							bf = b.engine.getGameAttribute("DNSM"),
+                        							ff = H._customBlock_RunCodeOfTypeXforThingY("SellPrice", "" + g.string((null != e.CalcTalentDL1 ? bf.getReserved("CalcTalentDL1") : bf.h.CalcTalentDL1)[mf][0])),
+                        							yf = b.engine.getGameAttribute("DNSM"),
+                        							Rf = (null != e.CalcTalentDL1 ? yf.getReserved("CalcTalentDL1") : yf.h.CalcTalentDL1)[mf][1],
+                        							vf = df,
+                        							Ff = hf + ff * parseNum(Rf);
+                        						null != e.CalcTalentDN3 ? vf.setReserved("CalcTalentDN3", Ff) : (vf.h.CalcTalentDN3 = Ff);
+                        					}
+                        					var Nf = b.engine.getGameAttribute("DNSM"),
+                        						_f = null != e.ItemzzSellPricesz ? Nf.getReserved("ItemzzSellPricesz") : Nf.h.ItemzzSellPricesz,
+                        						If = b.engine.getGameAttribute("CustomLists"),
+                        						Df = null != e.ItemToCraftNAME ? If.getReserved("ItemToCraftNAME") : If.h.ItemToCraftNAME,
+                        						Ef = b.engine.getGameAttribute("DNSM"),
+                        						Sf = null != e.CalcTalentDN1 ? Ef.getReserved("CalcTalentDN1") : Ef.h.CalcTalentDN1,
+                        						Gf = Df[0 | parseNum(Sf)],
+                        						Tf = b.engine.getGameAttribute("DNSM"),
+                        						Uf = null != e.CalcTalentDN2 ? Tf.getReserved("CalcTalentDN2") : Tf.h.CalcTalentDN2,
+                        						Mf = "" + g.string(Gf[0 | parseNum(Uf)]),
+                        						Vf = b.engine.getGameAttribute("DNSM"),
+                        						Cf = _f,
+                        						Bf = null != e.CalcTalentDN3 ? Vf.getReserved("CalcTalentDN3") : Vf.h.CalcTalentDN3;
+                        					null != e[Mf] ? Cf.setReserved(Mf, Bf) : (Cf.h[Mf] = Bf);
+                        				}
+                        			}
+                        		}
+                        		return 1;
+                        	}

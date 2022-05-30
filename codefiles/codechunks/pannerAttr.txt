@@ -1,0 +1,55 @@
+            (Howl.prototype.pannerAttr = function() {
+            		var e,
+            			n,
+            			s = arguments;
+            		if (!this._webAudio) return this;
+            		if (0 === s.length) return this._pannerAttr;
+            		if (1 === s.length) {
+            			if ("object" != typeof s[0]) return (n = this._soundById(parseInt(s[0], 10))) ? n._pannerAttr : this._pannerAttr;
+            			var a = s[0];
+            			void 0 === e && (a.pannerAttr || (a.pannerAttr = {
+            					coneInnerAngle: a.coneInnerAngle,
+            					coneOuterAngle: a.coneOuterAngle,
+            					coneOuterGain: a.coneOuterGain,
+            					distanceModel: a.distanceModel,
+            					maxDistance: a.maxDistance,
+            					refDistance: a.refDistance,
+            					rolloffFactor: a.rolloffFactor,
+            					panningModel: a.panningModel,
+            				}),
+            				(this._pannerAttr = {
+            					coneInnerAngle: void 0 !== a.pannerAttr.coneInnerAngle ? a.pannerAttr.coneInnerAngle : this._coneInnerAngle,
+            					coneOuterAngle: void 0 !== a.pannerAttr.coneOuterAngle ? a.pannerAttr.coneOuterAngle : this._coneOuterAngle,
+            					coneOuterGain: void 0 !== a.pannerAttr.coneOuterGain ? a.pannerAttr.coneOuterGain : this._coneOuterGain,
+            					distanceModel: void 0 !== a.pannerAttr.distanceModel ? a.pannerAttr.distanceModel : this._distanceModel,
+            					maxDistance: void 0 !== a.pannerAttr.maxDistance ? a.pannerAttr.maxDistance : this._maxDistance,
+            					refDistance: void 0 !== a.pannerAttr.refDistance ? a.pannerAttr.refDistance : this._refDistance,
+            					rolloffFactor: void 0 !== a.pannerAttr.rolloffFactor ? a.pannerAttr.rolloffFactor : this._rolloffFactor,
+            					panningModel: void 0 !== a.pannerAttr.panningModel ? a.pannerAttr.panningModel : this._panningModel,
+            				}));
+            		} else 2 === s.length && ((a = s[0]), (e = parseInt(s[1], 10)));
+            		for (e = this._getSoundIds(e), s = 0; s < e.length; s++)
+            			if ((n = this._soundById(e[s]))) {
+            				var r = n._pannerAttr;
+            				r = {
+            					coneInnerAngle: void 0 !== a.coneInnerAngle ? a.coneInnerAngle : r.coneInnerAngle,
+            					coneOuterAngle: void 0 !== a.coneOuterAngle ? a.coneOuterAngle : r.coneOuterAngle,
+            					coneOuterGain: void 0 !== a.coneOuterGain ? a.coneOuterGain : r.coneOuterGain,
+            					distanceModel: void 0 !== a.distanceModel ? a.distanceModel : r.distanceModel,
+            					maxDistance: void 0 !== a.maxDistance ? a.maxDistance : r.maxDistance,
+            					refDistance: void 0 !== a.refDistance ? a.refDistance : r.refDistance,
+            					rolloffFactor: void 0 !== a.rolloffFactor ? a.rolloffFactor : r.rolloffFactor,
+            					panningModel: void 0 !== a.panningModel ? a.panningModel : r.panningModel,
+            				};
+            				var A = n._panner;
+            				A ? ((A.coneInnerAngle = r.coneInnerAngle),
+            					(A.coneOuterAngle = r.coneOuterAngle),
+            					(A.coneOuterGain = r.coneOuterGain),
+            					(A.distanceModel = r.distanceModel),
+            					(A.maxDistance = r.maxDistance),
+            					(A.refDistance = r.refDistance),
+            					(A.rolloffFactor = r.rolloffFactor),
+            					(A.panningModel = r.panningModel)) : (n._pos || (n._pos = this._pos || [0, 0, -0.5]), t(n, "spatial"));
+            			}
+            		return this;
+            	}

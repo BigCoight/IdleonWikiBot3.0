@@ -1,0 +1,32 @@
+                        (U._customBlock_resetQuest = function(t, n) {
+                        		var s = b.engine.gameAttributes;
+                        		for (null != e.DummyText ? s.setReserved("DummyText", t) : (s.h.DummyText = t), t = b.engine.gameAttributes, null != e.DummyNumber ? t.setReserved("DummyNumber", n) : (t.h.DummyNumber = n), n = 0, t = b.engine.getGameAttribute("DialogueDefGET"), s = b.engine.getGameAttribute("DummyText"), t = (null != e[s] ? t.getReserved(s) : t.h[s])[1].length; n < t;) {
+                        			s = n++;
+                        			var a = b.engine.gameAttributes,
+                        				r = s;
+                        			null != e.DummyNumber4 ? a.setReserved("DummyNumber4", r) : (a.h.DummyNumber4 = r), (a = b.engine);
+                        			var A = b.engine.getGameAttribute("DialogueDefGET");
+                        			if (
+                        				((r = b.engine.getGameAttribute("DummyText")),
+                        					(r = (null != e[r] ? A.getReserved(r) : A.h[r])[1][0 | b.engine.getGameAttribute("DummyNumber4")]),
+                        					(a = a.gameAttributes), null != e.DummyList3 ? a.setReserved("DummyList3", r) : (a.h.DummyList3 = r), s == b.engine.getGameAttribute("DummyNumber") && (4 == b.engine.getGameAttribute("DummyList3")[0] || 1 == b.engine.getGameAttribute("DummyList3")[0]))) {
+                        				for (s = b.engine.gameAttributes, a = [], null != e.DummyList2 ? s.setReserved("DummyList2", a) : (s.h.DummyList2 = a), s = 0, a = b.engine.getGameAttribute("DummyList3")[3].length; s < a;)
+                        					(r = s++),
+                        					4 == b.engine.getGameAttribute("DummyList3")[0] ? b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList3")[3][r][3]) : 1 == b.engine.getGameAttribute("DummyList3")[0] && b.engine.getGameAttribute("DummyList2").push(0);
+                        				for (a = b.engine.getGameAttribute("QuestStatus"), s = "" + g.string(b.engine.getGameAttribute("DummyList3")[8]), r = b.engine.getGameAttribute("DummyList2"), null != e[s] ? a.setReserved(s, r) : (a.h[s] = r), a = b.engine.getGameAttribute("QuestComplete"), s = "" + g.string(b.engine.getGameAttribute("DummyList3")[8]), null != e[s] ? a.setReserved(s, -1) : (a.h[s] = -1), s = b.engine.getGameAttribute("PlayerDATABASE").keys(); s.hasNext();) {
+                        					(a = s.next()),
+                        					(r = b.engine.getGameAttribute("PlayerDATABASE")),
+                        					(r = null != e[(A = "" + a)] ? r.getReserved(A) : r.h[A]),
+                        					(A = null != e.QuestStatus ? r.getReserved("QuestStatus") : r.h.QuestStatus),
+                        					(r = "" + g.string(b.engine.getGameAttribute("DummyList3")[8]));
+                        					var l = E.deepCopyList(b.engine.getGameAttribute("DummyList2"));
+                        					null != e[r] ? A.setReserved(r, l) : (A.h[r] = l),
+                        						(r = b.engine.getGameAttribute("PlayerDATABASE")),
+                        						(a = null != e[(a = "" + a)] ? r.getReserved(a) : r.h[a]),
+                        						(r = null != e.QuestComplete ? a.getReserved("QuestComplete") : a.h.QuestComplete),
+                        						(a = "" + g.string(b.engine.getGameAttribute("DummyList3")[8])),
+                        						null != e[a] ? r.setReserved(a, -1) : (r.h[a] = -1);
+                        				}
+                        			}
+                        		}
+                        	}

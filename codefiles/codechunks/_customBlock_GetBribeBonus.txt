@@ -1,0 +1,7 @@
+                        (A._customBlock_GetBribeBonus = function(t) {
+                        		if (1 == b.engine.getGameAttribute("BribeStatus")[Math.round(parseNum(t))]) {
+                        			var s = b.engine.getGameAttribute("CustomLists");
+                        			return null == (t = (null != e.BribeDescriptions ? s.getReserved("BribeDescriptions") : s.h.BribeDescriptions)[Math.round(parseNum(t))][5]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t));
+                        		}
+                        		return 0;
+                        	}

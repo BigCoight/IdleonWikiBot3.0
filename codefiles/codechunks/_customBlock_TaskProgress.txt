@@ -1,0 +1,15 @@
+                        (U._customBlock_TaskProgress = function(e, t, s, a) {
+                        		if ("add" == s)
+                        			(s = b.engine.getGameAttribute("Tasks")[0][0 | e]),
+                        			(e = b.engine.getGameAttribute("Tasks")[0][0 | e][0 | t]),
+                        			(s[0 | t] = parseNum(e) + a);
+                        		else if ("total" == s) b.engine.getGameAttribute("Tasks")[0][0 | e][0 | t] = a;
+                        		else if ("Guild" == s)
+                        			for (var r = 0; 9 > r;)
+                        				if (((s = r++), b.engine.getGameAttribute("GuildTasks")[s + 1][0] == t)) {
+                        					-1 == e ? a > (null == (t = b.engine.getGameAttribute("GuildTasks")[s + 1][2]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))) && (b.engine.getGameAttribute("GuildTasks")[s + 1][2] = Math.round(a)) : ((t = b.engine.getGameAttribute("GuildTasks")[s + 1]),
+                        						(e = b.engine.getGameAttribute("GuildTasks")[s + 1][2]),
+                        						(t[2] = Math.round(parseNum(e) + a)));
+                        					break;
+                        				}
+                        	}

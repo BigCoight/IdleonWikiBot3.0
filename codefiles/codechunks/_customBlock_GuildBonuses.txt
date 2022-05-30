@@ -1,0 +1,10 @@
+                        (w._customBlock_GuildBonuses = function(t) {
+                        		var s = b.engine.getGameAttribute("CustomLists");
+                        		s = "" + g.string((null != e.GuildBonuses ? s.getReserved("GuildBonuses") : s.h.GuildBonuses)[0 | t][6]);
+                        		var a = b.engine.getGameAttribute("CustomLists");
+                        		a = null == (a = (null != e.GuildBonuses ? a.getReserved("GuildBonuses") : a.h.GuildBonuses)[0 | t][4]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a));
+                        		var r = b.engine.getGameAttribute("CustomLists");
+                        		return (
+                        			(r = null == (r = (null != e.GuildBonuses ? r.getReserved("GuildBonuses") : r.h.GuildBonuses)[0 | t][5]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        			(t = b.engine.getGameAttribute("GuildTasks")[0][0 | t]), H._customBlock_ArbitraryCode5Inputs(s, a, r, parseNum(t), 0, 0));
+                        	}

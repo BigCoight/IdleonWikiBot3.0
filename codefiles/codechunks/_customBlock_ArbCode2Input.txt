@@ -1,0 +1,42 @@
+                        (t._customBlock_ArbCode2Input = function(t, s) {
+                        		var a = b.engine.gameAttributes,
+                        			r = [];
+                        		null != e.DummyList ? a.setReserved("DummyList", r) : (a.h.DummyList = r), (a = b.engine), (r = b.engine.getGameAttribute("DialogueDefGET")), (r = (null != e[s] ? r.getReserved(s) : r.h[s])[1]);
+                        		var o = parseNum(t);
+                        		for (a = a.gameAttributes, r = r[0 | o], null != e.DummyList3 ? a.setReserved("DummyList3", r) : (a.h.DummyList3 = r), a = 0, r = b.engine.getGameAttribute("QuestHelperMenu").length; a < r;)
+                        			(o = a++), b.engine.getGameAttribute("DummyList").push(b.engine.getGameAttribute("QuestHelperMenu")[o][0]);
+                        		if (!Sb.contains(b.engine.getGameAttribute("DummyList"), b.engine.getGameAttribute("DummyList3")[8])) {
+                        			if (4 == b.engine.getGameAttribute("DummyList3")[0])
+                        				for (r = b.engine, a = b.engine.getGameAttribute("DummyList3")[3], r = r.gameAttributes, null != e.DummyList2 ? r.setReserved("DummyList2", a) : (r.h.DummyList2 = a), a = b.engine.gameAttributes, r = [], null != e.DummyList3 ? a.setReserved("DummyList3", r) : (a.h.DummyList3 = r), a = b.engine.getGameAttribute("DummyList3"), r = b.engine.getGameAttribute("DialogueDefGET"), a.push(
+                        						(null != e[s] ? r.getReserved(s) : r.h[s])[1][
+                        							0 | parseNum(t)
+                        						][8]), a = 0, r = b.engine.getGameAttribute("DummyList2").length; a < r;) {
+                        					(o = a++), b.engine.getGameAttribute("DummyList3").push(b.engine.getGameAttribute("DummyList2")[o][0]);
+                        					var i = b.engine.getGameAttribute("DummyList3"),
+                        						u = b.engine.getGameAttribute("QuestStatus"),
+                        						m = "" + g.string(b.engine.getGameAttribute("DummyList3")[0]);
+                        					i.push((null != e[m] ? u.getReserved(m) : u.h[m])[o]), b.engine.getGameAttribute("DummyList3").push(b.engine.getGameAttribute("DummyList2")[o][1]);
+                        				}
+                        			else if (1 == b.engine.getGameAttribute("DummyList3")[0])
+                        				for (r = b.engine, a = b.engine.getGameAttribute("DummyList3")[2], r = r.gameAttributes, null != e.DummyList2 ? r.setReserved("DummyList2", a) : (r.h.DummyList2 = a), a = b.engine.gameAttributes, r = [], null != e.DummyList3 ? a.setReserved("DummyList3", r) : (a.h.DummyList3 = r), a = b.engine.getGameAttribute("DummyList3"), r = b.engine.getGameAttribute("DialogueDefGET"), a.push(
+                        						(null != e[s] ? r.getReserved(s) : r.h[s])[1][
+                        							0 | parseNum(t)
+                        						][8]), a = 0, r = b.engine.getGameAttribute("DummyList2").length; a < r;)
+                        					(o = a++),
+                        					b.engine.getGameAttribute("DummyList3").push(b.engine.getGameAttribute("DummyList2")[o]),
+                        					(m = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ItemsOwnedMap")),
+                        					(i = "" + g.string(b.engine.getGameAttribute("DummyList2")[o])),
+                        					(null != e[i] ? m.existsReserved(i) : m.h.hasOwnProperty(i)) ? ((i = b.engine.getGameAttribute("DummyList3")),
+                        						(u = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ItemsOwnedMap")),
+                        						(m = "" + g.string(b.engine.getGameAttribute("DummyList2")[o])), i.push(null != e[m] ? u.getReserved(m) : u.h[m])) : b.engine.getGameAttribute("DummyList3").push(0),
+                        					(i = b.engine.getGameAttribute("DummyList3")),
+                        					(m = b.engine.getGameAttribute("DialogueDefGET")),
+                        					(u = t),
+                        					i.push(
+                        						(null != e[s] ? m.getReserved(s) : m.h[s])[1][
+                        							0 | parseNum(u)
+                        						][3][o]);
+                        			5 > b.engine.getGameAttribute("QuestHelperMenu").length && (1 == b.engine.getGameAttribute("OptionsList")[20] || "burgersonrepeat635" == b.engine.getGameAttribute("DummyText")) && b.engine.getGameAttribute("QuestHelperMenu").push(b.engine.getGameAttribute("DummyList3")), "wafflesonrepeat821" == b.engine.getGameAttribute("DummyText") && A._customBlock_QuestStarted(s, parseNum(t));
+                        		}
+                        		return "Ok";
+                        	}

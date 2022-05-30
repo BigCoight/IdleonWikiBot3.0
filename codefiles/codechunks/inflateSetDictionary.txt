@@ -1,0 +1,5 @@
+                            (n.inflateSetDictionary = function(e, t) {
+                            		var n,
+                            			s = t.length;
+                            		return e && e.state ? (0 !== (n = e.state).wrap && 11 !== n.mode ? f : 11 === n.mode && d(1, t, s, 0) !== n.check ? -3 : i(e, t, s, s) ? ((n.mode = 31), -4) : ((n.havedict = 1), b)) : f;
+                            	}

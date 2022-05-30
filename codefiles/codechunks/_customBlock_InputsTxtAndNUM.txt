@@ -1,0 +1,23 @@
+                        (U._customBlock_InputsTxtAndNUM = function(t, n) {
+                        		var s = b.engine.getGameAttribute("DNSM");
+                        		if ((null != e.InputTXTreturn ? s.setReserved("InputTXTreturn", 0) : (s.h.InputTXTreturn = 0), "GuildLv" == t)) {
+                        			for (t = b.engine.getGameAttribute("DNSM"), null != e.InputTXTreturn ? t.setReserved("InputTXTreturn", 1) : (t.h.InputTXTreturn = 1), s = 0; 100 > s;)
+                        				if (!(n >= 100 * ((t = s++) + 1) * Math.pow(1.21, t))) {
+                        					(n = b.engine.getGameAttribute("DNSM")), (t = Math.min(t + 1, 45)), null != e.InputTXTreturn ? n.setReserved("InputTXTreturn", t) : (n.h.InputTXTreturn = t);
+                        					break;
+                        				}
+                        		} else if ("GuildGpREQ" == t) {
+                        			for (s = 0; 100 > s;)
+                        				if (!(n >= 100 * ((t = s++) + 1) * Math.pow(1.21, t))) {
+                        					(n = b.engine.getGameAttribute("DNSM")), (t = 100 * (t + 1) * Math.pow(1.21, t)), null != e.InputTXTreturn ? n.setReserved("InputTXTreturn", t) : (n.h.InputTXTreturn = t);
+                        					break;
+                        				}
+                        		} else if ("GuildGpREQprev" == t) {
+                        			for (s = 0; 100 > s;)
+                        				if (!(n >= 100 * ((t = s++) + 1) * Math.pow(1.21, t))) {
+                        					(n = b.engine.getGameAttribute("DNSM")), (t = 100 * t * Math.pow(1.21, t - 1)), null != e.InputTXTreturn ? n.setReserved("InputTXTreturn", t) : (n.h.InputTXTreturn = t);
+                        					break;
+                        				}
+                        		} else "GuildMaxMembers" == t && ((t = b.engine.getGameAttribute("DNSM")), (n = 30 + 4 * n), null != e.InputTXTreturn ? t.setReserved("InputTXTreturn", n) : (t.h.InputTXTreturn = n));
+                        		return (n = b.engine.getGameAttribute("DNSM")), null != e.InputTXTreturn ? n.getReserved("InputTXTreturn") : n.h.InputTXTreturn;
+                        	}

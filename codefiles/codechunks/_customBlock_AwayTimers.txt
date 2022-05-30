@@ -1,0 +1,64 @@
+                        (U._customBlock_AwayTimers = function(t) {
+                        		if (0 < t) {
+                        			if (1 == b.engine.getGameAttribute("OptionsListAccount")[46]) {
+                        				var s = b.engine.getGameAttribute("OptionsListAccount"),
+                        					a = b.engine.getGameAttribute("OptionsListAccount")[45];
+                        				s[45] = parseNum(a) + t;
+                        			}
+                        			for (s = b.engine.getGameAttribute("TimeAway"), a = b.engine.getGameAttribute("TimeAway"), a = (null == (a = null != e.ShopRestock ? a.getReserved("ShopRestock") : a.h.ShopRestock) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) - t, null != e.ShopRestock ? s.setReserved("ShopRestock", a) : (s.h.ShopRestock = a), s = b.engine.getGameAttribute("TimeAway"), a = b.engine.getGameAttribute("TimeAway"), a = (null == (a = null != e.PostOfficeRefresh ? a.getReserved("PostOfficeRefresh") : a.h.PostOfficeRefresh) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) - t, null != e.PostOfficeRefresh ? s.setReserved("PostOfficeRefresh", a) : (s.h.PostOfficeRefresh = a), s = b.engine.getGameAttribute("TimeAway"), a = b.engine.getGameAttribute("TimeAway"), a = (null == (a = null != e.DailyRewards ? a.getReserved("DailyRewards") : a.h.DailyRewards) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + t, null != e.DailyRewards ? s.setReserved("DailyRewards", a) : (s.h.DailyRewards = a), s = 0; 2500 > s;) {
+                        				a = s++;
+                        				var r = b.engine.getGameAttribute("MonsterRespawnTime"),
+                        					A = b.engine.getGameAttribute("MonsterRespawnTime")[a];
+                        				r[a] = parseNum(A) - t;
+                        			}
+                        			for (s = b.engine.getGameAttribute("TimeAway"),
+                        				(null != e.Cauldron ? s.existsReserved("Cauldron") : s.h.hasOwnProperty("Cauldron")) || ((s = b.engine.getGameAttribute("TimeAway")),
+                        					(a = b.engine.getGameAttribute("TimeAway")),
+                        					(a = null != e.GlobalTime ? a.getReserved("GlobalTime") : a.h.GlobalTime), null != e.Cauldron ? s.setReserved("Cauldron", a) : (s.h.Cauldron = a)), s = b.engine.getGameAttribute("TimeAway"),
+                        				(null != e.Construction ? s.existsReserved("Construction") : s.h.hasOwnProperty("Construction")) || ((s = b.engine.getGameAttribute("TimeAway")),
+                        					(a = b.engine.getGameAttribute("TimeAway")),
+                        					(a = null != e.GlobalTime ? a.getReserved("GlobalTime") : a.h.GlobalTime), null != e.Construction ? s.setReserved("Construction", a) : (s.h.Construction = a)), s = b.engine.getGameAttribute("TimeAway"),
+                        				(null != e.Printer ? s.existsReserved("Printer") : s.h.hasOwnProperty("Printer")) || ((s = b.engine.getGameAttribute("TimeAway")),
+                        					(a = b.engine.getGameAttribute("TimeAway")),
+                        					(a = null != e.GlobalTime ? a.getReserved("GlobalTime") : a.h.GlobalTime), null != e.Printer ? s.setReserved("Printer", a) : (s.h.Printer = a)), s = b.engine.getGameAttribute("TimeAway"),
+                        				(null != e.BookLib ? s.existsReserved("BookLib") : s.h.hasOwnProperty("BookLib")) || ((s = b.engine.getGameAttribute("TimeAway")), null != e.BookLib ? s.setReserved("BookLib", 0) : (s.h.BookLib = 0)), s = b.engine.getGameAttribute("TimeAway"), a = b.engine.getGameAttribute("TimeAway"), a = (null == (a = null != e.BookLib ? a.getReserved("BookLib") : a.h.BookLib) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + t, null != e.BookLib ? s.setReserved("BookLib", a) : (s.h.BookLib = a), s = b.engine.getGameAttribute("PlayerDATABASE").keys(); s.hasNext();) {
+                        				(a = s.next()), (r = b.engine.getGameAttribute("PlayerDATABASE")), (r = null != e[(A = "" + a)] ? r.getReserved(A) : r.h[A]), (A = b.engine.getGameAttribute("PlayerDATABASE"));
+                        				var o = "" + a;
+                        				(A = null != e[o] ? A.getReserved(o) : A.h[o]),
+                        				(A = (null == (A = null != e.RespawnTime ? A.getReserved("RespawnTime") : A.h.RespawnTime) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))) - t),
+                        				null != e.RespawnTime ? r.setReserved("RespawnTime", A) : (r.h.RespawnTime = A),
+                        					(r = b.engine.getGameAttribute("PlayerDATABASE")),
+                        					(r = null != e[(A = "" + a)] ? r.getReserved(A) : r.h[A]),
+                        					0 >= (null == (r = null != e.RespawnTime ? r.getReserved("RespawnTime") : r.h.RespawnTime) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))) && ((r = b.engine.getGameAttribute("PlayerDATABASE")),
+                        						(r = null != e[(A = "" + a)] ? r.getReserved(A) : r.h[A]), 0 >= (null == (r = null != e.PlayerHP ? r.getReserved("PlayerHP") : r.h.PlayerHP) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))) && ((r = b.engine.getGameAttribute("PlayerDATABASE")),
+                        							(r = null != e[(A = "" + a)] ? r.getReserved(A) : r.h[A]), null != e.RespawnTime ? r.setReserved("RespawnTime", 0) : (r.h.RespawnTime = 0),
+                        							(r = b.engine.getGameAttribute("PlayerDATABASE")),
+                        							(a = null != e[(a = "" + a)] ? r.getReserved(a) : r.h[a]), null != e.PlayerHP ? a.setReserved("PlayerHP", 1e4) : (a.h.PlayerHP = 1e4)));
+                        			}
+                        			for (s = 0, a = b.engine.getGameAttribute("PlacedTraps").length; s < a;)
+                        				(A = s++), -1 != b.engine.getGameAttribute("PlacedTraps")[A][2] && ((r = b.engine.getGameAttribute("PlacedTraps")[A]),
+                        					(A = b.engine.getGameAttribute("PlacedTraps")[A][2]),
+                        					(r[2] = parseNum(A) + t));
+                        			for (s = b.engine.getGameAttribute("PlayerDATABASE").keys(); s.hasNext();)
+                        				for (a = s.next(), r = 0, A = b.engine.getGameAttribute("PlayerDATABASE"), A = null != e[(o = "" + a)] ? A.getReserved(o) : A.h[o], A = (null != e.PldTraps ? A.getReserved("PldTraps") : A.h.PldTraps).length; r < A;) {
+                        					o = r++;
+                        					var i = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						u = "" + a;
+                        					if (((i = null != e[u] ? i.getReserved(u) : i.h[u]), -1 != (null != e.PldTraps ? i.getReserved("PldTraps") : i.h.PldTraps)[o][2])) {
+                        						(i = b.engine.getGameAttribute("PlayerDATABASE")),
+                        						(i = null != e[(u = "" + a)] ? i.getReserved(u) : i.h[u]),
+                        						(i = (null != e.PldTraps ? i.getReserved("PldTraps") : i.h.PldTraps)[o]),
+                        						(u = b.engine.getGameAttribute("PlayerDATABASE"));
+                        						var m = "" + a;
+                        						(u = null != e[m] ? u.getReserved(m) : u.h[m]),
+                        						(o = (null != e.PldTraps ? u.getReserved("PldTraps") : u.h.PldTraps)[o][2]),
+                        						(i[2] = parseNum(o) + t);
+                        					}
+                        				}
+                        			for (s = 0, a = 0 | Math.max(b.engine.getGameAttribute("Refinery")[0].length - 1, 0); s < a;)
+                        				(r = s++),
+                        				(A = b.engine.getGameAttribute("Refinery")[0]),
+                        				(o = b.engine.getGameAttribute("Refinery")[0][r + 1]),
+                        				(A[r + 1] = parseNum(o) + t);
+                        		}
+                        	}

@@ -1,0 +1,57 @@
+                        (H._customBlock_PlayerSpeedBonus = function() {
+                        		var s = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		null != e.PlayerSpeedBonusDN ? s.setReserved("PlayerSpeedBonusDN", 0) : (s.h.PlayerSpeedBonusDN = 0), (s = b.engine.getGameAttribute("DummyNumbersStatManager"));
+                        		var a = new p();
+                        		for (null != e.PlayerSpeedBonusMAP ? s.setReserved("PlayerSpeedBonusMAP", a) : (s.h.PlayerSpeedBonusMAP = a), s = 0, a = 0 | b.engine.getGameAttribute("FoodSlotsOwned"); s < a;) {
+                        			var r = s++;
+                        			if ("Blank" != b.engine.getGameAttribute("EquipmentOrder")[2][r] && 0 != b.engine.getGameAttribute("EquipmentQuantity")[2][r]) {
+                        				var o = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        					i = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[2][r]);
+                        				if (((i = null != e[i] ? o.getReserved(i) : o.h[i]), "MoveSpdBoosts" == (null != e.Effect ? i.getReserved("Effect") : i.h.Effect))) {
+                        					(i = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(o = b.engine.getGameAttribute("ItemDefinitionsGET")),
+                        					(r = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[2][r])),
+                        					(r = null != e[r] ? o.getReserved(r) : o.h[r]),
+                        					null != e.PlayerSpeedBonusMAP ? i.setReserved("PlayerSpeedBonusMAP", r) : (i.h.PlayerSpeedBonusMAP = r),
+                        						(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        						(i = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        						(i = null == (i = null != e.PlayerSpeedBonusDN ? i.getReserved("PlayerSpeedBonusDN") : i.h.PlayerSpeedBonusDN) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        						(o = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        						(o = null != e.PlayerSpeedBonusMAP ? o.getReserved("PlayerSpeedBonusMAP") : o.h.PlayerSpeedBonusMAP),
+                        						(o = null == (o = null != e.Amount ? o.getReserved("Amount") : o.h.Amount) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o)));
+                        					var u = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        					(u = null != e.PlayerSpeedBonusMAP ? u.getReserved("PlayerSpeedBonusMAP") : u.h.PlayerSpeedBonusMAP),
+                        					(i += o * H._customBlock_FoodBonuses(g.string(null != e.Effect ? u.getReserved("Effect") : u.h.Effect) + "EffectBonus")),
+                        					null != e.PlayerSpeedBonusDN ? r.setReserved("PlayerSpeedBonusDN", i) : (r.h.PlayerSpeedBonusDN = i);
+                        				}
+                        			}
+                        		}
+                        		return (
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = (null == (a = null != e.PlayerSpeedBonusDN ? a.getReserved("PlayerSpeedBonusDN") : a.h.PlayerSpeedBonusDN) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + (t._customBlock_GetTalentNumber(1, 266) + t._customBlock_StampBonusOfTypeX("PctMoveSpd") + H._customBlock_GetBuffBonuses(273, 1))), null != e.PlayerSpeedBonusDN ? s.setReserved("PlayerSpeedBonusDN", a) : (s.h.PlayerSpeedBonusDN = a),
+                        			(s = b.engine.getGameAttribute("DNSM")),
+                        			(a = H._customBlock_TotalStats("AGI")), null != e.PlayerSpeedAGI ? s.setReserved("PlayerSpeedAGI", a) : (s.h.PlayerSpeedAGI = a),
+                        			(s = b.engine.getGameAttribute("DNSM")), 1e3 > (null == (s = null != e.PlayerSpeedAGI ? s.getReserved("PlayerSpeedAGI") : s.h.PlayerSpeedAGI) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) ? ((s = b.engine.getGameAttribute("DNSM")),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null != e.PlayerSpeedAGI ? a.getReserved("PlayerSpeedAGI") : a.h.PlayerSpeedAGI),
+                        				(a = (Math.pow(parseNum(a) + 1, 0.4) - 1) / 40)) : ((s = b.engine.getGameAttribute("DNSM")),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null == (a = null != e.PlayerSpeedAGI ? a.getReserved("PlayerSpeedAGI") : a.h.PlayerSpeedAGI) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        				(r = b.engine.getGameAttribute("DNSM")),
+                        				(a = ((a - 1e3) / ((null == (r = null != e.PlayerSpeedAGI ? r.getReserved("PlayerSpeedAGI") : r.h.PlayerSpeedAGI) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))) + 2500)) * 0.5 + 0.371)), null != e.PlayerSpeedAGI ? s.setReserved("PlayerSpeedAGI", a) : (s.h.PlayerSpeedAGI = a),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = null == (a = null != e.PlayerSpeedBonusDN ? a.getReserved("PlayerSpeedBonusDN") : a.h.PlayerSpeedBonusDN) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = H._customBlock_ArbitraryCode("StatueBonusGiven1")),
+                        			(i = b.engine.getGameAttribute("DNSM")),
+                        			(i = null != e.StarSigns ? i.getReserved("StarSigns") : i.h.StarSigns),
+                        			(a = (a + (r + ((null == (i = null != e.MoveSpd ? i.getReserved("MoveSpd") : i.h.MoveSpd) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))) + (U._customBlock_EtcBonuses("1") + (U._customBlock_CardBonusREAL(6) + t._customBlock_GetTalentNumber(1, 77)))))) / 100),
+                        			(r = b.engine.getGameAttribute("DNSM")),
+                        			(a = 1 + (a + (null == (r = null != e.PlayerSpeedAGI ? r.getReserved("PlayerSpeedAGI") : r.h.PlayerSpeedAGI) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))) / 2.2)), null != e.PlayerSpeedBonusDN ? s.setReserved("PlayerSpeedBonusDN", a) : (s.h.PlayerSpeedBonusDN = a), 0 < H._customBlock_GetBuffBonuses(135, 1) ? 0.6 : (-1 != w._customBlock_Dungon() && ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(a = 1 + (w._customBlock_DungeonStat("SPEED") + 0.06)), null != e.PlayerSpeedBonusDN ? s.setReserved("PlayerSpeedBonusDN", a) : (s.h.PlayerSpeedBonusDN = a)),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")), 2 < (null == (s = null != e.PlayerSpeedBonusDN ? s.getReserved("PlayerSpeedBonusDN") : s.h.PlayerSpeedBonusDN) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) ? ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(s = null != e.PlayerSpeedBonusDN ? s.getReserved("PlayerSpeedBonusDN") : s.h.PlayerSpeedBonusDN), Math.floor(100 * parseNum(s)) / 100) : ((s = b.engine.getGameAttribute("DummyNumbersStatManager")), 1.75 < (null == (s = null != e.PlayerSpeedBonusDN ? s.getReserved("PlayerSpeedBonusDN") : s.h.PlayerSpeedBonusDN) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) || -1 != w._customBlock_Dungon() ? ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(s = null != e.PlayerSpeedBonusDN ? s.getReserved("PlayerSpeedBonusDN") : s.h.PlayerSpeedBonusDN), Math.min(2, Math.floor(100 * (parseNum(s) + t._customBlock_GetTalentNumber(1, 641) / 100)) / 100)) : ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(s = null != e.PlayerSpeedBonusDN ? s.getReserved("PlayerSpeedBonusDN") : s.h.PlayerSpeedBonusDN), Math.min(1.75, Math.floor(100 * (parseNum(s) + (w._customBlock_SaltLick(7) + A._customBlock_chipBonuses("move") + (t._customBlock_GetTalentNumber(1, 641) + w._customBlock_Labb("SigilBonus", "Blank", 13, 0))) / 100)) / 100)))));
+                        	}

@@ -1,0 +1,15 @@
+                        (U._customBlock_Player = function(t) {
+                        		var n = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			s = [];
+                        		return (null != e.playerInfoQ612 ? n.setReserved("playerInfoQ612", s) : (n.h.playerInfoQ612 = s), "node" == t || "Node" == t ? ((t = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(t = null != e.playerInfoQ612 ? t.getReserved("playerInfoQ612") : t.h.playerInfoQ612),
+                        				(n = b.engine.getGameAttribute("OtherPlayers")),
+                        				(s = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), t.push((null != e[s] ? n.getReserved(s) : n.h[s]).getValue("ActorEvents_20", "_PlayerNode"))) : "ani" == t ? ((t = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(t = null != e.playerInfoQ612 ? t.getReserved("playerInfoQ612") : t.h.playerInfoQ612),
+                        				(n = b.engine.getGameAttribute("OtherPlayers")),
+                        				(s = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), t.push((null != e[s] ? n.getReserved(s) : n.h[s]).getAnimation())) : ("actor" != t && "Actor" != t) || ((t = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(t = null != e.playerInfoQ612 ? t.getReserved("playerInfoQ612") : t.h.playerInfoQ612),
+                        				(n = b.engine.getGameAttribute("OtherPlayers")),
+                        				(s = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), t.push(null != e[s] ? n.getReserved(s) : n.h[s])),
+                        			(t = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.playerInfoQ612 ? t.getReserved("playerInfoQ612") : t.h.playerInfoQ612);
+                        	}

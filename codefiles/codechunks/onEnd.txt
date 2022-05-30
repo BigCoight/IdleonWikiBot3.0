@@ -1,0 +1,3 @@
+                            (s.prototype.onEnd = function(e) {
+                            		e === o.Z_OK && ("string" === this.options.to ? (this.result = this.chunks.join("")) : (this.result = A.flattenChunks(this.chunks))), (this.chunks = []), (this.err = e), (this.msg = this.strm.msg);
+                            	}

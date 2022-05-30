@@ -1,0 +1,50 @@
+                        (A._customBlock_Teleport = function(t) {
+                        		var s = b.engine.getGameAttribute("QuestComplete");
+                        		if (
+                        			(0 == (null != e.Picnic_Stowaway7 ? s.getReserved("Picnic_Stowaway7") : s.h.Picnic_Stowaway7) && ((s = b.engine.getGameAttribute("QuestStatus")), ((null != e.Picnic_Stowaway7 ? s.getReserved("Picnic_Stowaway7") : s.h.Picnic_Stowaway7)[2] = 0)), !h.isTransitioning())) {
+                        			(s = b.engine.gameAttributes),
+                        			null != e.MenuType ? s.setReserved("MenuType", 0) : (s.h.MenuType = 0),
+                        				(s = b.engine.gameAttributes),
+                        				null != e.MenuType2 ? s.setReserved("MenuType2", 0) : (s.h.MenuType2 = 0),
+                        				h.clearFiltersForImage(b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_UIbutton1")),
+                        				h.clearFiltersForImage(b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_UIbutton2")),
+                        				h.clearFiltersForImage(b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_UIbutton3")),
+                        				h.clearFiltersForImage(b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_UIbutton4")),
+                        				h.clearFiltersForImage(b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_UIbutton5")),
+                        				(s = b.engine.getGameAttribute("OtherPlayers"));
+                        			var a = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			(s = null != e[a] ? s.getReserved(a) : s.h[a]), (a = b.engine.getGameAttribute("OtherPlayers"));
+                        			var r = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			s.setValue("ActorEvents_20", "_MouseClickX", (null != e[r] ? a.getReserved(r) : a.h[r]).getX() + 55),
+                        				(s = b.engine.getGameAttribute("PlayerMoveMaps")[2]),
+                        				(a = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        				(r = b.engine.getGameAttribute("OtherPlayers"));
+                        			var A = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			(r = (null != e[A] ? r.getReserved(A) : r.h[A]).getValue("ActorEvents_20", "_PlayerNode")),
+                        			null != e[a] ? s.setReserved(a, r) : (s.h[a] = r),
+                        				(s = b.engine.gameAttributes),
+                        				null != e.WeaponType ? s.setReserved("WeaponType", 16) : (s.h.WeaponType = 16),
+                        				(s = h.getActorType(7)),
+                        				(a = b.engine.getGameAttribute("OtherPlayers")),
+                        				(r = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        				(a = (null != e[r] ? a.getReserved(r) : a.h[r]).getX()),
+                        				(r = b.engine.getGameAttribute("OtherPlayers")),
+                        				(A = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        				(r = null == (r = (null != e[A] ? r.getReserved(A) : r.h[A]).getValue("ActorEvents_20", "_PlayerDirection")) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        				(A = b.engine.getGameAttribute("OtherPlayers"));
+                        			var o = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			h.createRecycledActor(s, a + (2 * (2 * r - 1) + 35), (null != e[o] ? A.getReserved(o) : A.h[o]).getY() - -6, 1),
+                        				(s = Ig.get().scenes),
+                        				(a = b.engine.getGameAttribute("CustomLists")),
+                        				(t = h.getIDForScene("" + g.string((null != e.MapName ? a.getReserved("MapName") : a.h.MapName)[0 | t]))),
+                        				(t = s.h[t].getID()),
+                        				null == (r = a = s = 0) && (r = 0),
+                        				null == a && (a = 0),
+                        				null == s && (s = 0),
+                        				(s = h.createFadeOut(1.5, (s << 16) | (a << 8) | r)),
+                        				null == (A = r = a = 0) && (A = 0),
+                        				null == r && (r = 0),
+                        				null == a && (a = 0),
+                        				h.switchScene(t, s, h.createFadeIn(0.8, (a << 16) | (r << 8) | A));
+                        		}
+                        	}

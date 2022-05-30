@@ -1,0 +1,38 @@
+                        (A._customBlock_CommaNotation = function(t) {
+                        		var s = b.engine.getGameAttribute("DNSM");
+                        		null != e.CommaDT1 ? s.setReserved("CommaDT1", "") : (s.h.CommaDT1 = ""),
+                        			(s = b.engine.getGameAttribute("DNSM")),
+                        			(t = "" + Math.round(t)),
+                        			null != e.CommaDT2 ? s.setReserved("CommaDT2", t) : (s.h.CommaDT2 = t),
+                        			(t = b.engine.getGameAttribute("DNSM")),
+                        			(s = b.engine.getGameAttribute("DNSM")),
+                        			(s = Math.floor((("" + g.string(null != e.CommaDT2 ? s.getReserved("CommaDT2") : s.h.CommaDT2)).length - 1) / 3) + 1),
+                        			null != e.CommaDN1 ? t.setReserved("CommaDN1", s) : (t.h.CommaDN1 = s),
+                        			(t = b.engine.getGameAttribute("DNSM")),
+                        			(s = b.engine.getGameAttribute("DNSM")),
+                        			(s = ("" + g.string(null != e.CommaDT2 ? s.getReserved("CommaDT2") : s.h.CommaDT2)).length);
+                        		var a = b.engine.getGameAttribute("DNSM");
+                        		for (s -= 3 * Math.floor((("" + g.string(null != e.CommaDT2 ? a.getReserved("CommaDT2") : a.h.CommaDT2)).length - 1) / 3), null != e.CommaDN2 ? t.setReserved("CommaDN2", s) : (t.h.CommaDN2 = s), t = 0, s = b.engine.getGameAttribute("DNSM"), s = 0 | (null == (s = null != e.CommaDN1 ? s.getReserved("CommaDN1") : s.h.CommaDN1) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))); t < s;)
+                        			if (0 == (a = t++)) {
+                        				a = b.engine.getGameAttribute("DNSM");
+                        				var r = b.engine.getGameAttribute("DNSM");
+                        				r = "" + g.string(null != e.CommaDT2 ? r.getReserved("CommaDT2") : r.h.CommaDT2);
+                        				var A = b.engine.getGameAttribute("DNSM");
+                        				(A = null != e.CommaDN2 ? A.getReserved("CommaDN2") : A.h.CommaDN2),
+                        				(r = r.substring(0, 0 | parseNum(A))),
+                        				null != e.CommaDT1 ? a.setReserved("CommaDT1", r) : (a.h.CommaDT1 = r);
+                        			} else {
+                        				(r = b.engine.getGameAttribute("DNSM")), (A = b.engine.getGameAttribute("DNSM")), (A = g.string(null != e.CommaDT1 ? A.getReserved("CommaDT1") : A.h.CommaDT1) + ",");
+                        				var o = b.engine.getGameAttribute("DNSM");
+                        				o = "" + g.string(null != e.CommaDT2 ? o.getReserved("CommaDT2") : o.h.CommaDT2);
+                        				var i = b.engine.getGameAttribute("DNSM");
+                        				i = null == (i = null != e.CommaDN2 ? i.getReserved("CommaDN2") : i.h.CommaDN2) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i));
+                        				var u = b.engine.getGameAttribute("DNSM");
+                        				(u = null != e.CommaDN2 ? u.getReserved("CommaDN2") : u.h.CommaDN2),
+                        				(a = A + o.substring(
+                        					(i + 3 * (a - 1)) | 0,
+                        					(parseNum(u) + 3 * a) | 0)),
+                        				null != e.CommaDT1 ? r.setReserved("CommaDT1", a) : (r.h.CommaDT1 = a);
+                        			}
+                        		return (t = b.engine.getGameAttribute("DNSM")), null != e.CommaDT1 ? t.getReserved("CommaDT1") : t.h.CommaDT1;
+                        	}

@@ -1,0 +1,307 @@
+                        (A._customBlock_5sec = function() {
+                        		if (6 == b.engine.getGameAttribute("MenuType2"))
+                        			for (var t = 0, s = 0 | b.engine.getGameAttribute("ChestSlotsOwned"); t < s;) {
+                        				var a = t++;
+                        				"Copper" == b.engine.getGameAttribute("ChestOrder")[a] && 500 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(6, 1) : "OakTree" == b.engine.getGameAttribute("ChestOrder")[a] && 1500 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(8, 1) : "Iron" == b.engine.getGameAttribute("ChestOrder")[a] && 2e3 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(16, 1) : "TreeInterior1" == b.engine.getGameAttribute("ChestOrder")[a] && 2e4 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(22, 1) : "ForestTree" == b.engine.getGameAttribute("ChestOrder")[a] && 2e4 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(23, 1) : "Gold" == b.engine.getGameAttribute("ChestOrder")[a] && 3e4 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(26, 1) : "Plat" == b.engine.getGameAttribute("ChestOrder")[a] && 2e5 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(34, 1) : "StumpTree" == b.engine.getGameAttribute("ChestOrder")[a] && 5e5 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(42, 1) : "Void" == b.engine.getGameAttribute("ChestOrder")[a] && 1e6 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(45, 1) : "Fish1" == b.engine.getGameAttribute("ChestOrder")[a] && 1500 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(77, 1) : "Fish3" == b.engine.getGameAttribute("ChestOrder")[a] && 6e3 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(101, 1) : "Fish4" == b.engine.getGameAttribute("ChestOrder")[a] && 1e5 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(111, 1) : "Bug1" == b.engine.getGameAttribute("ChestOrder")[a] && 2500 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(78, 1) : "Bug3" == b.engine.getGameAttribute("ChestOrder")[a] && 5e4 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(102, 1) : "Bug4" == b.engine.getGameAttribute("ChestOrder")[a] && 1e6 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(113, 1) : "DesertA1b" == b.engine.getGameAttribute("ChestOrder")[a] && 15 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(79, 1) : "Critter1" == b.engine.getGameAttribute("ChestOrder")[a] && 250 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(143, 1) : "Soul1" == b.engine.getGameAttribute("ChestOrder")[a] && 1e3 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(144, 1) : "Soul2" == b.engine.getGameAttribute("ChestOrder")[a] && 1e4 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(159, 1) : "Critter4" == b.engine.getGameAttribute("ChestOrder")[a] && 6e4 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(162, 1) : "Soul3" == b.engine.getGameAttribute("ChestOrder")[a] && 25e4 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(176, 1) : "Critter9" == b.engine.getGameAttribute("ChestOrder")[a] && 1e6 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(179, 1) : "SnowC4a" == b.engine.getGameAttribute("ChestOrder")[a] && 500 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(180, 1) : "GalaxyA2" == b.engine.getGameAttribute("ChestOrder")[a] && 75e3 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(211, 1) : "GalaxyB1" == b.engine.getGameAttribute("ChestOrder")[a] && 8e5 == b.engine.getGameAttribute("ChestQuantity")[a] ? w._customBlock_Reg_ach_add_status(212, 1) : "GalaxyC2" == b.engine.getGameAttribute("ChestOrder")[a] && 1e7 == b.engine.getGameAttribute("ChestQuantity")[a] && w._customBlock_Reg_ach_add_status(213, 1);
+                        			}
+                        		else if (28 == b.engine.getGameAttribute("MenuType2")) {
+                        			4 <= w._customBlock_WorkbenchStuff("CogBuildClaims", 1, 0) && w._customBlock_Reg_ach_add_status(146, 1),
+                        				16 <= w._customBlock_WorkbenchStuff("CogBuildClaims", 0, 0) && w._customBlock_Reg_ach_add_status(171, 1);
+                        			var r = b.engine.getGameAttribute("DNSM");
+                        			null != e["5secDN"] ? r.setReserved("5secDN", 0) : (r.h["5secDN"] = 0);
+                        			var A = b.engine.getGameAttribute("DNSM");
+                        			null != e["5secDN2"] ? A.setReserved("5secDN2", 0) : (A.h["5secDN2"] = 0);
+                        			var o = b.engine.getGameAttribute("DNSM");
+                        			null != e["5secDN3"] ? o.setReserved("5secDN3", 0) : (o.h["5secDN3"] = 0);
+                        			for (var i = 0; 96 > i;) {
+                        				var u = i++;
+                        				if (-1 != ("" + g.string(b.engine.getGameAttribute("CogOrder")[u])).indexOf("Cog0")) {
+                        					var m = b.engine.getGameAttribute("DNSM"),
+                        						c = b.engine.getGameAttribute("DNSM"),
+                        						p = null != e["5secDN"] ? c.getReserved("5secDN") : c.h["5secDN"],
+                        						h = m,
+                        						f = parseNum(p) + 1;
+                        					null != e["5secDN"] ? h.setReserved("5secDN", f) : (h.h["5secDN"] = f);
+                        				} else if (-1 != ("" + g.string(b.engine.getGameAttribute("CogOrder")[u])).indexOf("Cog1")) {
+                        					var y = b.engine.getGameAttribute("DNSM"),
+                        						R = b.engine.getGameAttribute("DNSM"),
+                        						v = null != e["5secDN2"] ? R.getReserved("5secDN2") : R.h["5secDN2"],
+                        						F = y,
+                        						N = parseNum(v) + 1;
+                        					null != e["5secDN2"] ? F.setReserved("5secDN2", N) : (F.h["5secDN2"] = N);
+                        				} else if (-1 != ("" + g.string(b.engine.getGameAttribute("CogOrder")[u])).indexOf("Cog3")) {
+                        					var _ = b.engine.getGameAttribute("DNSM"),
+                        						I = b.engine.getGameAttribute("DNSM"),
+                        						D = null != e["5secDN3"] ? I.getReserved("5secDN3") : I.h["5secDN3"],
+                        						E = _,
+                        						S = parseNum(D) + 1;
+                        					null != e["5secDN3"] ? E.setReserved("5secDN3", S) : (E.h["5secDN3"] = S);
+                        				}
+                        			}
+                        			var G = b.engine.getGameAttribute("DNSM"),
+                        				T = null != e["5secDN"] ? G.getReserved("5secDN") : G.h["5secDN"];
+                        			20 <= parseNum(T) && w._customBlock_Reg_ach_add_status(153, 1);
+                        			var U = b.engine.getGameAttribute("DNSM"),
+                        				M = null != e["5secDN2"] ? U.getReserved("5secDN2") : U.h["5secDN2"];
+                        			40 <= parseNum(M) && w._customBlock_Reg_ach_add_status(163, 1);
+                        			var V = b.engine.getGameAttribute("DNSM"),
+                        				C = null != e["5secDN3"] ? V.getReserved("5secDN3") : V.h["5secDN3"];
+                        			78 <= parseNum(C) && w._customBlock_Reg_ach_add_status(173, 1);
+                        			var B = b.engine.getGameAttribute("DNSM");
+                        			null != e["5secDN"] ? B.setReserved("5secDN", 0) : (B.h["5secDN"] = 0);
+                        			for (var P = 0; 27 > P;) {
+                        				var O = P++,
+                        					x = b.engine.getGameAttribute("DNSM"),
+                        					Q = b.engine.getGameAttribute("DNSM"),
+                        					X = null != e["5secDN"] ? Q.getReserved("5secDN") : Q.h["5secDN"],
+                        					L = parseNum(X),
+                        					z = b.engine.getGameAttribute("TowerInfo")[O],
+                        					Y = x,
+                        					W = L + Math.max(parseNum(z), 0);
+                        				null != e["5secDN"] ? Y.setReserved("5secDN", W) : (Y.h["5secDN"] = W);
+                        			}
+                        			var Z = b.engine.getGameAttribute("DNSM"),
+                        				H = null != e["5secDN"] ? Z.getReserved("5secDN") : Z.h["5secDN"];
+                        			50 <= parseNum(H) && w._customBlock_Reg_ach_add_status(154, 1);
+                        			var J = b.engine.getGameAttribute("DNSM"),
+                        				j = null != e["5secDN"] ? J.getReserved("5secDN") : J.h["5secDN"];
+                        			250 <= parseNum(j) && w._customBlock_Reg_ach_add_status(155, 1);
+                        			var q = b.engine.getGameAttribute("DNSM"),
+                        				K = null != e["5secDN"] ? q.getReserved("5secDN") : q.h["5secDN"];
+                        			900 <= parseNum(K) && w._customBlock_Reg_ach_add_status(170, 1);
+                        		} else if (34 == b.engine.getGameAttribute("MenuType2"))
+                        			for (var $ = 0; 3 > $;) {
+                        				var ee = $++,
+                        					te = b.engine.getGameAttribute("DNSM");
+                        				null != e["5secDN"] ? te.setReserved("5secDN", ee) : (te.h["5secDN"] = ee);
+                        				for (var ne = 0,
+                        						se = b.engine.getGameAttribute("CustomLists"),
+                        						ae = null != e.DeathNoteMobs ? se.getReserved("DeathNoteMobs") : se.h.DeathNoteMobs,
+                        						re = b.engine.getGameAttribute("DNSM"),
+                        						Ae = null != e["5secDN"] ? re.getReserved("5secDN") : re.h["5secDN"],
+                        						le = ae[0 | parseNum(Ae)].length; ne < le;) {
+                        					var oe = ne++,
+                        						ie = b.engine,
+                        						ue = b.engine.getGameAttribute("CustomLists"),
+                        						ge = null != e.MapAFKtarget ? ue.getReserved("MapAFKtarget") : ue.h.MapAFKtarget,
+                        						me = b.engine.getGameAttribute("CustomLists"),
+                        						de = null != e.DeathNoteMobs ? me.getReserved("DeathNoteMobs") : me.h.DeathNoteMobs,
+                        						ce = b.engine.getGameAttribute("DNSM"),
+                        						pe = null != e["5secDN"] ? ce.getReserved("5secDN") : ce.h["5secDN"],
+                        						he = parseNum(pe),
+                        						be = ie.gameAttributes,
+                        						fe = ge.indexOf(de[0 | he][oe]);
+                        					null != e.DummyNumber3 ? be.setReserved("DummyNumber3", fe) : (be.h.DummyNumber3 = fe);
+                        					var ye = b.engine.gameAttributes;
+                        					if ((null != e.DummyNumber4 ? ye.setReserved("DummyNumber4", 0) : (ye.h.DummyNumber4 = 0), 0 <= b.engine.getGameAttribute("DummyNumber3"))) {
+                        						var Re = b.engine,
+                        							ve = b.engine.getGameAttribute("CustomLists"),
+                        							Fe = (null != e.MapDetails ? ve.getReserved("MapDetails") : ve.h.MapDetails)[0 | b.engine.getGameAttribute("DummyNumber3")][0][0],
+                        							Ne = parseNum(Fe),
+                        							_e = b.engine.getGameAttribute("KillsLeft2Advance")[0 | b.engine.getGameAttribute("DummyNumber3")][0],
+                        							Ie = parseNum(_e),
+                        							De = Re.gameAttributes,
+                        							Ee = Ne - Ie;
+                        						null != e.DummyNumber4 ? De.setReserved("DummyNumber4", Ee) : (De.h.DummyNumber4 = Ee);
+                        						for (var Se = b.engine.getGameAttribute("PlayerDATABASE").keys(); Se.hasNext();) {
+                        							var Ge = Se.next();
+                        							if (b.engine.getGameAttribute("UserInfo")[0] != Ge) {
+                        								var Te = b.engine,
+                        									Ue = b.engine.getGameAttribute("DummyNumber4"),
+                        									Me = b.engine.getGameAttribute("CustomLists"),
+                        									Ve = (null != e.MapDetails ? Me.getReserved("MapDetails") : Me.h.MapDetails)[0 | b.engine.getGameAttribute("DummyNumber3")][0][0],
+                        									Ce = parseNum(Ve),
+                        									Be = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									Pe = "" + Ge,
+                        									Oe = null != e[Pe] ? Be.getReserved(Pe) : Be.h[Pe],
+                        									we = (null != e.KillsLeft2Advance ? Oe.getReserved("KillsLeft2Advance") : Oe.h.KillsLeft2Advance)[0 | b.engine.getGameAttribute("DummyNumber3")][0],
+                        									ke = parseNum(we),
+                        									xe = Te.gameAttributes,
+                        									Qe = Ue + (Ce - ke);
+                        								null != e.DummyNumber4 ? xe.setReserved("DummyNumber4", Qe) : (xe.h.DummyNumber4 = Qe);
+                        							}
+                        						}
+                        					}
+                        					var Xe = w._customBlock_WorkbenchStuff("DeathNoteRank", b.engine.getGameAttribute("DummyNumber4"), 0),
+                        						Le = b.engine.getGameAttribute("DNSM"),
+                        						ze = null != e["5secDN"] ? Le.getReserved("5secDN") : Le.h["5secDN"];
+                        					if (!(Xe >= Math.round(2 + 2 * parseNum(ze)))) break;
+                        					var Ye = b.engine.getGameAttribute("CustomLists"),
+                        						We = null != e.DeathNoteMobs ? Ye.getReserved("DeathNoteMobs") : Ye.h.DeathNoteMobs,
+                        						Ze = b.engine.getGameAttribute("DNSM"),
+                        						He = null != e["5secDN"] ? Ze.getReserved("5secDN") : Ze.h["5secDN"];
+                        					if (oe == Math.round(We[0 | parseNum(He)].length - 1)) {
+                        						var Je = b.engine.getGameAttribute("DNSM");
+                        						if (0 == (null != e["5secDN"] ? Je.getReserved("5secDN") : Je.h["5secDN"])) w._customBlock_Reg_ach_add_status(147, 1);
+                        						else {
+                        							var je = b.engine.getGameAttribute("DNSM");
+                        							if (1 == (null != e["5secDN"] ? je.getReserved("5secDN") : je.h["5secDN"])) w._customBlock_Reg_ach_add_status(158, 1);
+                        							else {
+                        								var qe = b.engine.getGameAttribute("DNSM");
+                        								2 == (null != e["5secDN"] ? qe.getReserved("5secDN") : qe.h["5secDN"]) && w._customBlock_Reg_ach_add_status(168, 1);
+                        							}
+                        						}
+                        					}
+                        				}
+                        			}
+                        		else if (26 == b.engine.getGameAttribute("MenuType2")) {
+                        			var Ke = b.engine.getGameAttribute("Refinery")[4][1];
+                        			1 <= parseNum(Ke) && w._customBlock_Reg_ach_add_status(150, 1);
+                        			var $e = b.engine.getGameAttribute("Refinery")[5][1];
+                        			3 <= (null == $e ? 0 : "number" == typeof $e ? d.__cast($e, k) : "number" == typeof $e && (0 | $e) === $e ? d.__cast($e, l) : "boolean" == typeof $e ? d.__cast($e, n) ? 1 : 0 : "string" == typeof $e ? parseFloat($e) : parseFloat(g.string($e))) && w._customBlock_Reg_ach_add_status(166, 1);
+                        			var et = b.engine.getGameAttribute("Refinery")[3][1];
+                        			10 <= parseNum(et) && w._customBlock_Reg_ach_add_status(169, 1);
+                        		} else if (27 == b.engine.getGameAttribute("MenuType2")) {
+                        			var tt = b.engine.getGameAttribute("DNSM");
+                        			null != e["5secDN"] ? tt.setReserved("5secDN", 0) : (tt.h["5secDN"] = 0);
+                        			for (var nt = 0; 24 > nt;) {
+                        				var st = nt++,
+                        					at = b.engine.getGameAttribute("PrayersUnlocked")[st];
+                        				if (0.5 < parseNum(at)) {
+                        					var rt = b.engine.getGameAttribute("DNSM"),
+                        						At = b.engine.getGameAttribute("DNSM"),
+                        						lt = null != e["5secDN"] ? At.getReserved("5secDN") : At.h["5secDN"],
+                        						ot = rt,
+                        						it = parseNum(lt) + 1;
+                        					null != e["5secDN"] ? ot.setReserved("5secDN", it) : (ot.h["5secDN"] = it);
+                        				}
+                        			}
+                        			var ut = b.engine.getGameAttribute("DNSM"),
+                        				gt = null != e["5secDN"] ? ut.getReserved("5secDN") : ut.h["5secDN"];
+                        			3.5 < parseNum(gt) && w._customBlock_Reg_ach_add_status(151, 1);
+                        		} else if (1 == b.engine.getGameAttribute("MenuType"))
+                        			if ("EquipmentHats17" == b.engine.getGameAttribute("EquipmentOrder")[0][0] && "EquipmentShirts11" == b.engine.getGameAttribute("EquipmentOrder")[0][2]) w._customBlock_Reg_ach_add_status(10, 1);
+                        			else if ("EquipmentHats18" == b.engine.getGameAttribute("EquipmentOrder")[0][0] && "EquipmentShirts12" == b.engine.getGameAttribute("EquipmentOrder")[0][2] && "EquipmentPants3" == b.engine.getGameAttribute("EquipmentOrder")[0][4]) {
+                        			var mt = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        				dt = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[1][0]),
+                        				ct = null != e[dt] ? mt.getReserved(dt) : mt.h[dt]; - 1 != ("" + g.string(null != e.displayName ? ct.getReserved("displayName") : ct.h.displayName)).toLowerCase().indexOf("iron") && w._customBlock_Reg_ach_add_status(21, 1);
+                        			var pt = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        				ht = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[1][1]),
+                        				bt = null != e[ht] ? pt.getReserved(ht) : pt.h[ht]; - 1 != ("" + g.string(null != e.displayName ? bt.getReserved("displayName") : bt.h.displayName)).toLowerCase().indexOf("iron") && w._customBlock_Reg_ach_add_status(21, 1);
+                        			var ft = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        				yt = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[1][2]),
+                        				Rt = null != e[yt] ? ft.getReserved(yt) : ft.h[yt]; - 1 != ("" + g.string(null != e.displayName ? Rt.getReserved("displayName") : Rt.h.displayName)).toLowerCase().indexOf("iron") && w._customBlock_Reg_ach_add_status(21, 1);
+                        			var vt = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        				Ft = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[1][3]),
+                        				Nt = null != e[Ft] ? vt.getReserved(Ft) : vt.h[Ft]; - 1 != ("" + g.string(null != e.displayName ? Nt.getReserved("displayName") : Nt.h.displayName)).toLowerCase().indexOf("iron") && w._customBlock_Reg_ach_add_status(21, 1);
+                        		} else if ("EquipmentHats28" != b.engine.getGameAttribute("EquipmentOrder")[0][0] || "EquipmentShirts13" != b.engine.getGameAttribute("EquipmentOrder")[0][2] || "EquipmentPants4" != b.engine.getGameAttribute("EquipmentOrder")[0][4] || "EquipmentShoes3" != b.engine.getGameAttribute("EquipmentOrder")[0][6] || ("EquipmentRings11" != b.engine.getGameAttribute("EquipmentOrder")[0][5] && "EquipmentRings11" != b.engine.getGameAttribute("EquipmentOrder")[0][7])) "EquipmentHats22" == b.engine.getGameAttribute("EquipmentOrder")[0][0] && "EquipmentShirts18" == b.engine.getGameAttribute("EquipmentOrder")[0][2] && "EquipmentPants17" == b.engine.getGameAttribute("EquipmentOrder")[0][4] && "EquipmentShoes20" == b.engine.getGameAttribute("EquipmentOrder")[0][6] ? w._customBlock_Reg_ach_add_status(41, 1) : "EquipmentHats52" != b.engine.getGameAttribute("EquipmentOrder")[0][0] || "EquipmentShirts26" != b.engine.getGameAttribute("EquipmentOrder")[0][2] || "EquipmentPants20" != b.engine.getGameAttribute("EquipmentOrder")[0][4] || "EquipmentShoes21" != b.engine.getGameAttribute("EquipmentOrder")[0][6] || (-1 == b.engine.getGameAttribute("ObolEquippedOrder")[0].indexOf("ObolEfauntA") && -1 == b.engine.getGameAttribute("ObolEquippedOrder")[1].indexOf("ObolEfauntA")) ? "Trophy6" == b.engine.getGameAttribute("EquipmentOrder")[0][10] ? -1 != b.engine.getGameAttribute("InventoryOrder").indexOf("Trophy6") && w._customBlock_Reg_ach_add_status(44, 3) : "Trophy11" == b.engine.getGameAttribute("EquipmentOrder")[0][10] && -1 != b.engine.getGameAttribute("InventoryOrder").indexOf("Trophy11") && w._customBlock_Reg_ach_add_status(109, 3) : w._customBlock_Reg_ach_add_status(114, 1);
+                        		else {
+                        			var _t = b.engine.getGameAttribute("DNSM");
+                        			null != e["5secDN"] ? _t.setReserved("5secDN", 0) : (_t.h["5secDN"] = 0);
+                        			for (var It = 0; 5 > It;) {
+                        				var Dt = It++,
+                        					Et = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        					St = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[1][Dt]),
+                        					Gt = Et,
+                        					Tt = null != e[St] ? Gt.getReserved(St) : Gt.h[St];
+                        				if (-1 != ("" + g.string(null != e.displayName ? Tt.getReserved("displayName") : Tt.h.displayName)).toLowerCase().indexOf("gold")) {
+                        					var Ut = b.engine.getGameAttribute("DNSM"),
+                        						Mt = b.engine.getGameAttribute("DNSM"),
+                        						Vt = null != e["5secDN"] ? Mt.getReserved("5secDN") : Mt.h["5secDN"],
+                        						Ct = Ut,
+                        						Bt = parseNum(Vt) + 1;
+                        					null != e["5secDN"] ? Ct.setReserved("5secDN", Bt) : (Ct.h["5secDN"] = Bt);
+                        				}
+                        			}
+                        			var Pt = b.engine.getGameAttribute("DNSM"),
+                        				Ot = null != e["5secDN"] ? Pt.getReserved("5secDN") : Pt.h["5secDN"];
+                        			2 <= parseNum(Ot) && w._customBlock_Reg_ach_add_status(40, 1);
+                        		} else if (21 == b.engine.getGameAttribute("MenuType2")) {
+                        			var wt = b.engine.getGameAttribute("DNSM");
+                        			null != e["5secDN"] ? wt.setReserved("5secDN", 0) : (wt.h["5secDN"] = 0);
+                        			var kt = b.engine.getGameAttribute("DNSM");
+                        			null != e["5secDN2"] ? kt.setReserved("5secDN2", 0) : (kt.h["5secDN2"] = 0);
+                        			var xt = b.engine.getGameAttribute("DNSM");
+                        			null != e["5secDN3"] ? xt.setReserved("5secDN3", 0) : (xt.h["5secDN3"] = 0);
+                        			for (var Qt = 0, Xt = b.engine.getGameAttribute("CauldronInfo")[4].length; Qt < Xt;) {
+                        				var Lt = Qt++,
+                        					zt = b.engine.getGameAttribute("CauldronInfo")[4][Lt];
+                        				if (4 <= parseNum(zt)) {
+                        					var Yt = b.engine.getGameAttribute("DNSM"),
+                        						Wt = b.engine.getGameAttribute("DNSM"),
+                        						Zt = null != e["5secDN"] ? Wt.getReserved("5secDN") : Wt.h["5secDN"],
+                        						Ht = Yt,
+                        						Jt = parseNum(Zt) + 1;
+                        					null != e["5secDN"] ? Ht.setReserved("5secDN", Jt) : (Ht.h["5secDN"] = Jt);
+                        				}
+                        				var jt = b.engine.getGameAttribute("CauldronInfo")[4][Lt];
+                        				if (7 <= parseNum(jt)) {
+                        					var qt = b.engine.getGameAttribute("DNSM"),
+                        						Kt = b.engine.getGameAttribute("DNSM"),
+                        						$t = null != e["5secDN2"] ? Kt.getReserved("5secDN2") : Kt.h["5secDN2"],
+                        						en = qt,
+                        						tn = (null == $t ? 0 : "number" == typeof $t ? d.__cast($t, k) : "number" == typeof $t && (0 | $t) === $t ? d.__cast($t, l) : "boolean" == typeof $t ? d.__cast($t, n) ? 1 : 0 : "string" == typeof $t ? parseFloat($t) : parseFloat(g.string($t))) + 1;
+                        					null != e["5secDN2"] ? en.setReserved("5secDN2", tn) : (en.h["5secDN2"] = tn);
+                        				}
+                        				var nn = b.engine.getGameAttribute("CauldronInfo")[4][Lt];
+                        				if (9 <= parseNum(nn)) {
+                        					var sn = b.engine.getGameAttribute("DNSM"),
+                        						an = b.engine.getGameAttribute("DNSM"),
+                        						rn = null != e["5secDN3"] ? an.getReserved("5secDN3") : an.h["5secDN3"],
+                        						An = sn,
+                        						ln = parseNum(rn) + 1;
+                        					null != e["5secDN3"] ? An.setReserved("5secDN3", ln) : (An.h["5secDN3"] = ln);
+                        				}
+                        			}
+                        			var on = b.engine.getGameAttribute("DNSM"),
+                        				un = null != e["5secDN"] ? on.getReserved("5secDN") : on.h["5secDN"];
+                        			3 <= parseNum(un) && w._customBlock_Reg_ach_add_status(81, 1);
+                        			var gn = b.engine.getGameAttribute("DNSM"),
+                        				mn = null != e["5secDN2"] ? gn.getReserved("5secDN2") : gn.h["5secDN2"];
+                        			6 <= parseNum(mn) && w._customBlock_Reg_ach_add_status(96, 1);
+                        			var dn = b.engine.getGameAttribute("DNSM"),
+                        				cn = null != e["5secDN3"] ? dn.getReserved("5secDN3") : dn.h["5secDN3"];
+                        			10 <= parseNum(cn) && w._customBlock_Reg_ach_add_status(112, 1);
+                        			var pn = b.engine.getGameAttribute("CauldronInfo")[4][20];
+                        			1 <= parseNum(pn) && w._customBlock_Reg_ach_add_status(116, 1);
+                        		} else if (5 == b.engine.getGameAttribute("MenuType2")) {
+                        			var hn = b.engine.getGameAttribute("DNSM");
+                        			null != e["5secDN"] ? hn.setReserved("5secDN", 0) : (hn.h["5secDN"] = 0);
+                        			var bn = b.engine.getGameAttribute("DNSM");
+                        			null != e["5secDN2"] ? bn.setReserved("5secDN2", 0) : (bn.h["5secDN2"] = 0);
+                        			for (var fn = 0, yn = b.engine.getGameAttribute("ObolEquippedOrder")[0].length; fn < yn;) {
+                        				var Rn = fn++;
+                        				if (-1 != ("" + g.string(b.engine.getGameAttribute("ObolEquippedOrder")[0][Rn])).indexOf("Silver")) {
+                        					var vn = b.engine.getGameAttribute("DNSM"),
+                        						Fn = b.engine.getGameAttribute("DNSM"),
+                        						Nn = null != e["5secDN"] ? Fn.getReserved("5secDN") : Fn.h["5secDN"],
+                        						_n = vn,
+                        						In = parseNum(Nn) + 1;
+                        					null != e["5secDN"] ? _n.setReserved("5secDN", In) : (_n.h["5secDN"] = In);
+                        				}
+                        				if (-1 != ("" + g.string(b.engine.getGameAttribute("ObolEquippedOrder")[0][Rn])).indexOf("Gold")) {
+                        					var Dn = b.engine.getGameAttribute("DNSM"),
+                        						En = b.engine.getGameAttribute("DNSM"),
+                        						Sn = null != e["5secDN2"] ? En.getReserved("5secDN2") : En.h["5secDN2"],
+                        						Gn = Dn,
+                        						Tn = parseNum(Sn) + 1;
+                        					null != e["5secDN2"] ? Gn.setReserved("5secDN2", Tn) : (Gn.h["5secDN2"] = Tn);
+                        				}
+                        			}
+                        			for (var Un = 0, Mn = b.engine.getGameAttribute("ObolEquippedOrder")[1].length; Un < Mn;) {
+                        				var Vn = Un++;
+                        				if (-1 != ("" + g.string(b.engine.getGameAttribute("ObolEquippedOrder")[1][Vn])).indexOf("Silver")) {
+                        					var Cn = b.engine.getGameAttribute("DNSM"),
+                        						Bn = b.engine.getGameAttribute("DNSM"),
+                        						Pn = null != e["5secDN"] ? Bn.getReserved("5secDN") : Bn.h["5secDN"],
+                        						On = Cn,
+                        						wn = parseNum(Pn) + 1;
+                        					null != e["5secDN"] ? On.setReserved("5secDN", wn) : (On.h["5secDN"] = wn);
+                        				}
+                        				if (-1 != ("" + g.string(b.engine.getGameAttribute("ObolEquippedOrder")[1][Vn])).indexOf("Gold")) {
+                        					var kn = b.engine.getGameAttribute("DNSM"),
+                        						xn = b.engine.getGameAttribute("DNSM"),
+                        						Qn = null != e["5secDN2"] ? xn.getReserved("5secDN2") : xn.h["5secDN2"],
+                        						Xn = kn,
+                        						Ln = parseNum(Qn) + 1;
+                        					null != e["5secDN2"] ? Xn.setReserved("5secDN2", Ln) : (Xn.h["5secDN2"] = Ln);
+                        				}
+                        			}
+                        			var zn = b.engine.getGameAttribute("DNSM"),
+                        				Yn = null != e["5secDN"] ? zn.getReserved("5secDN") : zn.h["5secDN"];
+                        			10 <= parseNum(Yn) && w._customBlock_Reg_ach_add_status(83, 1);
+                        			var Wn = b.engine.getGameAttribute("DNSM"),
+                        				Zn = null != e["5secDN2"] ? Wn.getReserved("5secDN2") : Wn.h["5secDN2"];
+                        			15 <= parseNum(Zn) && w._customBlock_Reg_ach_add_status(99, 1);
+                        		}
+                        	}

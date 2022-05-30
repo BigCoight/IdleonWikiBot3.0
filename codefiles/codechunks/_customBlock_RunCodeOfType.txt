@@ -1,0 +1,247 @@
+                        (H._customBlock_RunCodeOfType = function(t) {
+                        		if ("YourClass" == t) return 5 > b.engine.getGameAttribute("CharacterClass") || 6 > b.engine.getGameAttribute("CharacterClass") ? "BEGINNER" : 18 > b.engine.getGameAttribute("CharacterClass") ? "WARRIOR" : 30 > b.engine.getGameAttribute("CharacterClass") ? "ARCHER" : 250 > b.engine.getGameAttribute("CharacterClass") ? "MAGE" : "NONE";
+                        		if ("AllowUI" == t) return 35 == b.engine.getGameAttribute("MenuType2") || 1 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[10] || -1 != b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[15] || -1 != b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[10] || 0 != b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[90] ? "no" : "yes";
+                        		if ("StampNames" == t) {
+                        			var s = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				a = null != e.NAME_OF_STAMP ? s.getReserved("NAME_OF_STAMP") : s.h.NAME_OF_STAMP;
+                        			if (0 == Math.floor(parseNum(a) / 1e3)) {
+                        				var r = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        					A = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					o = null != e.NAME_OF_STAMP ? A.getReserved("NAME_OF_STAMP") : A.h.NAME_OF_STAMP,
+                        					i = parseNum(o),
+                        					u = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					m = null != e.NAME_OF_STAMP ? u.getReserved("NAME_OF_STAMP") : u.h.NAME_OF_STAMP,
+                        					c = "StampA" + Math.round(i - 1e3 * Math.floor(parseNum(m) / 1e3) + 1),
+                        					p = null != e[c] ? r.getReserved(c) : r.h[c];
+                        				return null != e.displayName ? p.getReserved("displayName") : p.h.displayName;
+                        			}
+                        			var h = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				f = null != e.NAME_OF_STAMP ? h.getReserved("NAME_OF_STAMP") : h.h.NAME_OF_STAMP;
+                        			if (1 == Math.floor(parseNum(f) / 1e3)) {
+                        				var y = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        					R = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					v = null != e.NAME_OF_STAMP ? R.getReserved("NAME_OF_STAMP") : R.h.NAME_OF_STAMP,
+                        					F = parseNum(v),
+                        					N = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					_ = null != e.NAME_OF_STAMP ? N.getReserved("NAME_OF_STAMP") : N.h.NAME_OF_STAMP,
+                        					I = "StampB" + Math.round(F - 1e3 * Math.floor(parseNum(_) / 1e3) + 1),
+                        					D = null != e[I] ? y.getReserved(I) : y.h[I];
+                        				return null != e.displayName ? D.getReserved("displayName") : D.h.displayName;
+                        			}
+                        			var E = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        				S = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				G = null != e.NAME_OF_STAMP ? S.getReserved("NAME_OF_STAMP") : S.h.NAME_OF_STAMP,
+                        				T = parseNum(G),
+                        				U = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				M = null != e.NAME_OF_STAMP ? U.getReserved("NAME_OF_STAMP") : U.h.NAME_OF_STAMP,
+                        				V = "StampC" + Math.round(T - 1e3 * Math.floor(parseNum(M) / 1e3) + 1),
+                        				C = null != e[V] ? E.getReserved(V) : E.h[V];
+                        			return null != e.displayName ? C.getReserved("displayName") : C.h.displayName;
+                        		}
+                        		if ("Costs2TypeAnvilPA" == t) {
+                        			var B = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (5 > parseNum(B)) return "Grasslands1";
+                        			var P = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (15 > parseNum(P)) return "Grasslands2";
+                        			var O = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (25 > parseNum(O)) return "Grasslands3";
+                        			var w = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (40 > parseNum(w)) return "Jungle1";
+                        			var x = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (55 > parseNum(x)) return "Jungle3";
+                        			var Q = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (70 > parseNum(Q)) return "Forest1";
+                        			var X = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (85 > parseNum(X)) return "Forest3";
+                        			var L = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (100 > parseNum(L)) return "DesertA1";
+                        			var z = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (115 > parseNum(z)) return "DesertA3";
+                        			var Y = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (130 > parseNum(Y)) return "DesertB1";
+                        			var W = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (150 > parseNum(W)) return "DesertB3";
+                        			var Z = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (175 > parseNum(Z)) return "DesertC1";
+                        			var H = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (200 > parseNum(H)) return "DesertC2";
+                        			var J = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (225 > parseNum(J)) return "DesertC4";
+                        			var j = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (250 > parseNum(j)) return "SnowA2";
+                        			var q = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (280 > parseNum(q)) return "SnowB1";
+                        			var K = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (310 > parseNum(K)) return "SnowB3";
+                        			var $ = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (350 > (null == $ ? 0 : "number" == typeof $ ? d.__cast($, k) : "number" == typeof $ && (0 | $) === $ ? d.__cast($, l) : "boolean" == typeof $ ? d.__cast($, n) ? 1 : 0 : "string" == typeof $ ? parseFloat($) : parseFloat(g.string($)))) return "SnowC1";
+                        			var ee = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (375 > parseNum(ee)) return "SnowA4";
+                        			var te = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (410 > parseNum(te)) return "GalaxyA1";
+                        			var ne = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (440 > parseNum(ne)) return "GalaxyA3";
+                        			var se = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (470 > parseNum(se)) return "GalaxyA4";
+                        			var ae = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (500 > parseNum(ae)) return "GalaxyB1";
+                        			var re = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			if (540 > parseNum(re)) return "GalaxyB3";
+                        			var Ae = b.engine.getGameAttribute("AnvilPAstats")[2];
+                        			return 600 > parseNum(Ae) ? "GalaxyC1" : "GalaxyC4";
+                        		}
+                        		if ("KillTempMonsters" == t) {
+                        			for (var le = 0, oe = b.engine.getGameAttribute("MapMonstersList").length; le < oe;) {
+                        				var ie = le++,
+                        					ue = b.engine.getGameAttribute("DNSM"),
+                        					ge = b.engine.getGameAttribute("MapMonstersList").length;
+                        				null != e.KTMdznn3 ? ue.setReserved("KTMdznn3", ge) : (ue.h.KTMdznn3 = ge);
+                        				var me = b.engine.getGameAttribute("MapMonstersList"),
+                        					de = b.engine.getGameAttribute("DNSM"),
+                        					ce = null != e.KTMdznn3 ? de.getReserved("KTMdznn3") : de.h.KTMdznn3;
+                        				if (1 == me[Math.round(parseNum(ce) - (ie + 1))].getValue("ActorEvents_1", "_TempMonster")) {
+                        					var pe = b.engine.getGameAttribute("MonsterHP"),
+                        						he = b.engine.getGameAttribute("DNSM"),
+                        						be = null != e.KTMdznn3 ? he.getReserved("KTMdznn3") : he.h.KTMdznn3;
+                        					pe[Math.round(parseNum(be) - ie)] = -69.42069;
+                        				}
+                        			}
+                        			return "NONE";
+                        		}
+                        		if ("FILLER" == t) return "NONE";
+                        		if (-1 != t.indexOf("Cog")) {
+                        			var fe = b.engine.getGameAttribute("DNSM");
+                        			if ((null != e.KTMdznn3 ? fe.setReserved("KTMdznn3", "") : (fe.h.KTMdznn3 = ""), "0" == t.charAt(3))) {
+                        				var ye = b.engine.getGameAttribute("DNSM");
+                        				null != e.KTMdznn3 ? ye.setReserved("KTMdznn3", "Nooby_") : (ye.h.KTMdznn3 = "Nooby_");
+                        			} else if ("1" == t.charAt(3)) {
+                        				var Re = b.engine.getGameAttribute("DNSM");
+                        				null != e.KTMdznn3 ? Re.setReserved("KTMdznn3", "Decent_") : (Re.h.KTMdznn3 = "Decent_");
+                        			} else if ("2" == t.charAt(3)) {
+                        				var ve = b.engine.getGameAttribute("DNSM");
+                        				null != e.KTMdznn3 ? ve.setReserved("KTMdznn3", "Superb_") : (ve.h.KTMdznn3 = "Superb_");
+                        			} else if ("3" == t.charAt(3)) {
+                        				var Fe = b.engine.getGameAttribute("DNSM");
+                        				null != e.KTMdznn3 ? Fe.setReserved("KTMdznn3", "Ulti_") : (Fe.h.KTMdznn3 = "Ulti_");
+                        			} else if ("Z" == t.charAt(3)) {
+                        				var Ne = b.engine.getGameAttribute("DNSM");
+                        				null != e.KTMdznn3 ? Ne.setReserved("KTMdznn3", "Yin_") : (Ne.h.KTMdznn3 = "Yin_");
+                        			} else if ("Y" == t.charAt(3)) {
+                        				var _e = b.engine.getGameAttribute("DNSM");
+                        				null != e.KTMdznn3 ? _e.setReserved("KTMdznn3", "Yang_") : (_e.h.KTMdznn3 = "Yang_");
+                        			} else {
+                        				var Ie = b.engine.getGameAttribute("DNSM");
+                        				null != e.KTMdznn3 ? Ie.setReserved("KTMdznn3", "Glitched") : (Ie.h.KTMdznn3 = "Glitched");
+                        			}
+                        			if (Sb.contains(b.engine.getGameAttribute("Number2Letter"), t.charAt(5)) && "Y" != t.charAt(3))
+                        				if ("ad" == t.substring(4, 6)) {
+                        					var De = b.engine.getGameAttribute("DNSM"),
+                        						Ee = b.engine.getGameAttribute("DNSM"),
+                        						Se = g.string(null != e.KTMdznn3 ? Ee.getReserved("KTMdznn3") : Ee.h.KTMdznn3) + "Adjay_Cog";
+                        					null != e.KTMdznn3 ? De.setReserved("KTMdznn3", Se) : (De.h.KTMdznn3 = Se);
+                        				} else if ("di" == t.substring(4, 6)) {
+                        				var Ge = b.engine.getGameAttribute("DNSM"),
+                        					Te = b.engine.getGameAttribute("DNSM"),
+                        					Ue = g.string(null != e.KTMdznn3 ? Te.getReserved("KTMdznn3") : Te.h.KTMdznn3) + "Diggle_Cog";
+                        				null != e.KTMdznn3 ? Ge.setReserved("KTMdznn3", Ue) : (Ge.h.KTMdznn3 = Ue);
+                        			} else if ("le" == t.substring(4, 6)) {
+                        				var Me = b.engine.getGameAttribute("DNSM"),
+                        					Ve = b.engine.getGameAttribute("DNSM"),
+                        					Ce = g.string(null != e.KTMdznn3 ? Ve.getReserved("KTMdznn3") : Ve.h.KTMdznn3) + "Leff_Cog";
+                        				null != e.KTMdznn3 ? Me.setReserved("KTMdznn3", Ce) : (Me.h.KTMdznn3 = Ce);
+                        			} else if ("ri" == t.substring(4, 6)) {
+                        				var Be = b.engine.getGameAttribute("DNSM"),
+                        					Pe = b.engine.getGameAttribute("DNSM"),
+                        					Oe = g.string(null != e.KTMdznn3 ? Pe.getReserved("KTMdznn3") : Pe.h.KTMdznn3) + "Rite_Cog";
+                        				null != e.KTMdznn3 ? Be.setReserved("KTMdznn3", Oe) : (Be.h.KTMdznn3 = Oe);
+                        			} else if ("up" == t.substring(4, 6)) {
+                        				var we = b.engine.getGameAttribute("DNSM"),
+                        					ke = b.engine.getGameAttribute("DNSM"),
+                        					xe = g.string(null != e.KTMdznn3 ? ke.getReserved("KTMdznn3") : ke.h.KTMdznn3) + "Uppy_Cog";
+                        				null != e.KTMdznn3 ? we.setReserved("KTMdznn3", xe) : (we.h.KTMdznn3 = xe);
+                        			} else if ("do" == t.substring(4, 6)) {
+                        				var Qe = b.engine.getGameAttribute("DNSM"),
+                        					Xe = b.engine.getGameAttribute("DNSM"),
+                        					Le = g.string(null != e.KTMdznn3 ? Xe.getReserved("KTMdznn3") : Xe.h.KTMdznn3) + "Downer_Cog";
+                        				null != e.KTMdznn3 ? Qe.setReserved("KTMdznn3", Le) : (Qe.h.KTMdznn3 = Le);
+                        			} else if ("cn" == t.substring(4, 6)) {
+                        				var ze = b.engine.getGameAttribute("DNSM"),
+                        					Ye = b.engine.getGameAttribute("DNSM"),
+                        					We = g.string(null != e.KTMdznn3 ? Ye.getReserved("KTMdznn3") : Ye.h.KTMdznn3) + "Sniper_Cog";
+                        				null != e.KTMdznn3 ? ze.setReserved("KTMdznn3", We) : (ze.h.KTMdznn3 = We);
+                        			} else if ("co" == t.substring(4, 6)) {
+                        				var Ze = b.engine.getGameAttribute("DNSM"),
+                        					He = b.engine.getGameAttribute("DNSM"),
+                        					Je = g.string(null != e.KTMdznn3 ? He.getReserved("KTMdznn3") : He.h.KTMdznn3) + "Collumm_Cog";
+                        				null != e.KTMdznn3 ? Ze.setReserved("KTMdznn3", Je) : (Ze.h.KTMdznn3 = Je);
+                        			} else if ("ro" == t.substring(4, 6)) {
+                        				var je = b.engine.getGameAttribute("DNSM"),
+                        					qe = b.engine.getGameAttribute("DNSM"),
+                        					Ke = g.string(null != e.KTMdznn3 ? qe.getReserved("KTMdznn3") : qe.h.KTMdznn3) + "Rowow_Cog";
+                        				null != e.KTMdznn3 ? je.setReserved("KTMdznn3", Ke) : (je.h.KTMdznn3 = Ke);
+                        			} else {
+                        				var $e = b.engine.getGameAttribute("DNSM"),
+                        					et = b.engine.getGameAttribute("DNSM"),
+                        					tt = g.string(null != e.KTMdznn3 ? et.getReserved("KTMdznn3") : et.h.KTMdznn3) + "Omni_Cog";
+                        				null != e.KTMdznn3 ? $e.setReserved("KTMdznn3", tt) : ($e.h.KTMdznn3 = tt);
+                        			} else if ("A0" == t.substring(4, 6)) {
+                        				var nt = b.engine.getGameAttribute("DNSM"),
+                        					st = b.engine.getGameAttribute("DNSM"),
+                        					at = g.string(null != e.KTMdznn3 ? st.getReserved("KTMdznn3") : st.h.KTMdznn3) + "Cog";
+                        				null != e.KTMdznn3 ? nt.setReserved("KTMdznn3", at) : (nt.h.KTMdznn3 = at);
+                        			} else if ("A1" == t.substring(4, 6)) {
+                        				var rt = b.engine.getGameAttribute("DNSM"),
+                        					At = b.engine.getGameAttribute("DNSM"),
+                        					lt = g.string(null != e.KTMdznn3 ? At.getReserved("KTMdznn3") : At.h.KTMdznn3) + "Average_Cog";
+                        				null != e.KTMdznn3 ? rt.setReserved("KTMdznn3", lt) : (rt.h.KTMdznn3 = lt);
+                        			} else if ("A2" == t.substring(4, 6)) {
+                        				var ot = b.engine.getGameAttribute("DNSM"),
+                        					it = b.engine.getGameAttribute("DNSM"),
+                        					ut = g.string(null != e.KTMdznn3 ? it.getReserved("KTMdznn3") : it.h.KTMdznn3) + "Spur_Cog";
+                        				null != e.KTMdznn3 ? ot.setReserved("KTMdznn3", ut) : (ot.h.KTMdznn3 = ut);
+                        			} else if ("A3" == t.substring(4, 6)) {
+                        				var gt = b.engine.getGameAttribute("DNSM"),
+                        					mt = b.engine.getGameAttribute("DNSM"),
+                        					dt = g.string(null != e.KTMdznn3 ? mt.getReserved("KTMdznn3") : mt.h.KTMdznn3) + "Stacked_Cog";
+                        				null != e.KTMdznn3 ? gt.setReserved("KTMdznn3", dt) : (gt.h.KTMdznn3 = dt);
+                        			} else if ("A4" == t.substring(4, 6)) {
+                        				var ct = b.engine.getGameAttribute("DNSM"),
+                        					pt = b.engine.getGameAttribute("DNSM"),
+                        					ht = g.string(null != e.KTMdznn3 ? pt.getReserved("KTMdznn3") : pt.h.KTMdznn3) + "Deckered_Cog";
+                        				null != e.KTMdznn3 ? ct.setReserved("KTMdznn3", ht) : (ct.h.KTMdznn3 = ht);
+                        			} else if ("B0" == t.substring(4, 6)) {
+                        				var bt = b.engine.getGameAttribute("DNSM"),
+                        					ft = b.engine.getGameAttribute("DNSM"),
+                        					yt = g.string(null != e.KTMdznn3 ? ft.getReserved("KTMdznn3") : ft.h.KTMdznn3) + "Double_Cog";
+                        				null != e.KTMdznn3 ? bt.setReserved("KTMdznn3", yt) : (bt.h.KTMdznn3 = yt);
+                        			} else if ("B1" == t.substring(4, 6)) {
+                        				var Rt = b.engine.getGameAttribute("DNSM"),
+                        					vt = b.engine.getGameAttribute("DNSM"),
+                        					Ft = g.string(null != e.KTMdznn3 ? vt.getReserved("KTMdznn3") : vt.h.KTMdznn3) + "Trips_Cog";
+                        				null != e.KTMdznn3 ? Rt.setReserved("KTMdznn3", Ft) : (Rt.h.KTMdznn3 = Ft);
+                        			} else if ("B2" == t.substring(4, 6)) {
+                        				var Nt = b.engine.getGameAttribute("DNSM"),
+                        					_t = b.engine.getGameAttribute("DNSM"),
+                        					It = g.string(null != e.KTMdznn3 ? _t.getReserved("KTMdznn3") : _t.h.KTMdznn3) + "Trabble_Cog";
+                        				null != e.KTMdznn3 ? Nt.setReserved("KTMdznn3", It) : (Nt.h.KTMdznn3 = It);
+                        			} else if ("B3" == t.substring(4, 6)) {
+                        				var Dt = b.engine.getGameAttribute("DNSM"),
+                        					Et = b.engine.getGameAttribute("DNSM"),
+                        					St = g.string(null != e.KTMdznn3 ? Et.getReserved("KTMdznn3") : Et.h.KTMdznn3) + "Quad_Cog";
+                        				null != e.KTMdznn3 ? Dt.setReserved("KTMdznn3", St) : (Dt.h.KTMdznn3 = St);
+                        			} else if ("B4" == t.substring(4, 6)) {
+                        				var Gt = b.engine.getGameAttribute("DNSM"),
+                        					Tt = b.engine.getGameAttribute("DNSM"),
+                        					Ut = g.string(null != e.KTMdznn3 ? Tt.getReserved("KTMdznn3") : Tt.h.KTMdznn3) + "Penta_Cog";
+                        				null != e.KTMdznn3 ? Gt.setReserved("KTMdznn3", Ut) : (Gt.h.KTMdznn3 = Ut);
+                        			} else {
+                        				var Mt = b.engine.getGameAttribute("DNSM"),
+                        					Vt = b.engine.getGameAttribute("DNSM"),
+                        					Ct = g.string(null != e.KTMdznn3 ? Vt.getReserved("KTMdznn3") : Vt.h.KTMdznn3) + "Mongo_Cog";
+                        				null != e.KTMdznn3 ? Mt.setReserved("KTMdznn3", Ct) : (Mt.h.KTMdznn3 = Ct);
+                        			}
+                        			var Bt = b.engine.getGameAttribute("DNSM");
+                        			return null != e.KTMdznn3 ? Bt.getReserved("KTMdznn3") : Bt.h.KTMdznn3;
+                        		}
+                        		return "ERROR";
+                        	}

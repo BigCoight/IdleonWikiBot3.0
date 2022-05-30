@@ -1,0 +1,3 @@
+    ($jscomp.getGlobal = function(e) {
+    		return "undefined" != typeof window && window === e ? e : "undefined" != typeof global && null != global ? global : e;
+    	}

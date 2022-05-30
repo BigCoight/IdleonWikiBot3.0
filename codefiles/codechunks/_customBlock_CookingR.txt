@@ -1,0 +1,310 @@
+                        (w._customBlock_CookingR = function(s, a, r) {
+                        		if ("PossibleRecipes" == s) {
+                        			var o = b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[62];
+                        			return w._customBlock_CookingR("PossibleRecipes2", parseNum(o), 0);
+                        		}
+                        		if ("PossibleRecipes2" == s) {
+                        			var i = b.engine.getGameAttribute("DNSM"),
+                        				u = [];
+                        			if ((null != e.CookinPossibleRecps ? i.setReserved("CookinPossibleRecps", u) : (i.h.CookinPossibleRecps = u), -1 != a)) {
+                        				for (var m = 0; 4 > m;) {
+                        					var c = m++,
+                        						p = b.engine.getGameAttribute("DNSM"),
+                        						h = b.engine.getGameAttribute("Cooking")[0 | a][2 + c];
+                        					null != e.CookinPossibleRecpsDN1 ? p.setReserved("CookinPossibleRecpsDN1", h) : (p.h.CookinPossibleRecpsDN1 = h);
+                        					var f = b.engine.getGameAttribute("DNSM");
+                        					if (-1 != (null != e.CookinPossibleRecpsDN1 ? f.getReserved("CookinPossibleRecpsDN1") : f.h.CookinPossibleRecpsDN1)) {
+                        						var y = b.engine.getGameAttribute("DNSM"),
+                        							R = null != e.CookinPossibleRecps ? y.getReserved("CookinPossibleRecps") : y.h.CookinPossibleRecps,
+                        							v = b.engine.getGameAttribute("CustomLists"),
+                        							F = (null != e.RANDOlist ? v.getReserved("RANDOlist") : v.h.RANDOlist)[49],
+                        							N = b.engine.getGameAttribute("DNSM"),
+                        							_ = null != e.CookinPossibleRecpsDN1 ? N.getReserved("CookinPossibleRecpsDN1") : N.h.CookinPossibleRecpsDN1,
+                        							I = F[0 | parseNum(_)];
+                        						R.push(parseNum(I));
+                        					}
+                        				}
+                        				var D = b.engine.getGameAttribute("DNSM");
+                        				null != e.CookinPossibleRecpsDN1 ? D.setReserved("CookinPossibleRecpsDN1", 0) : (D.h.CookinPossibleRecpsDN1 = 0);
+                        				var E = b.engine.getGameAttribute("DNSM");
+                        				null != e.CookinPossibleRecpsDN3 ? E.setReserved("CookinPossibleRecpsDN3", 0) : (E.h.CookinPossibleRecpsDN3 = 0);
+                        				for (var S = 0; 4 > S;) {
+                        					var G = S++,
+                        						T = b.engine.getGameAttribute("DNSM"),
+                        						U = b.engine.getGameAttribute("DNSM"),
+                        						M = null != e.CookinPossibleRecpsDN1 ? U.getReserved("CookinPossibleRecpsDN1") : U.h.CookinPossibleRecpsDN1,
+                        						V = parseNum(M),
+                        						C = b.engine.getGameAttribute("Cooking")[0 | a][2 + G],
+                        						B = T,
+                        						P = V + Math.max(0, parseNum(C));
+                        					if ((null != e.CookinPossibleRecpsDN1 ? B.setReserved("CookinPossibleRecpsDN1", P) : (B.h.CookinPossibleRecpsDN1 = P), -1 != b.engine.getGameAttribute("Cooking")[0 | a][2 + G])) {
+                        						var O = b.engine.getGameAttribute("DNSM"),
+                        							x = b.engine.getGameAttribute("DNSM"),
+                        							Q = null != e.CookinPossibleRecpsDN3 ? x.getReserved("CookinPossibleRecpsDN3") : x.h.CookinPossibleRecpsDN3,
+                        							X = O,
+                        							L = parseNum(Q) + 1;
+                        						null != e.CookinPossibleRecpsDN3 ? X.setReserved("CookinPossibleRecpsDN3", L) : (X.h.CookinPossibleRecpsDN3 = L);
+                        					}
+                        				}
+                        				var z = b.engine.getGameAttribute("DNSM"),
+                        					Y = null != e.CookinPossibleRecpsDN1 ? z.getReserved("CookinPossibleRecpsDN1") : z.h.CookinPossibleRecpsDN1;
+                        				if (0.5 < parseNum(Y)) {
+                        					var W = b.engine.getGameAttribute("DNSM"),
+                        						Z = b.engine.getGameAttribute("DNSM"),
+                        						J = null != e.CookinPossibleRecpsDN3 ? Z.getReserved("CookinPossibleRecpsDN3") : Z.h.CookinPossibleRecpsDN3,
+                        						j = Math.min(parseNum(J), 3);
+                        					null != e.CookinPossibleRecpsDN2 ? W.setReserved("CookinPossibleRecpsDN2", j) : (W.h.CookinPossibleRecpsDN2 = j);
+                        					for (var q = 0,
+                        							K = b.engine.getGameAttribute("DNSM"),
+                        							$ = null != e.CookinPossibleRecpsDN2 ? K.getReserved("CookinPossibleRecpsDN2") : K.h.CookinPossibleRecpsDN2,
+                        							ee = 0 | (null == $ ? 0 : "number" == typeof $ ? d.__cast($, k) : "number" == typeof $ && (0 | $) === $ ? d.__cast($, l) : "boolean" == typeof $ ? d.__cast($, n) ? 1 : 0 : "string" == typeof $ ? parseFloat($) : parseFloat(g.string($))); q < ee;) {
+                        						var te = q++,
+                        							ne = b.engine.getGameAttribute("DNSM"),
+                        							se = null != e.CookinPossibleRecps ? ne.getReserved("CookinPossibleRecps") : ne.h.CookinPossibleRecps,
+                        							ae = b.engine.getGameAttribute("DNSM"),
+                        							re = null != e.CookinPossibleRecpsDN1 ? ae.getReserved("CookinPossibleRecpsDN1") : ae.h.CookinPossibleRecpsDN1,
+                        							Ae = parseNum(re),
+                        							le = b.engine.getGameAttribute("DNSM"),
+                        							oe = null != e.CookinPossibleRecpsDN2 ? le.getReserved("CookinPossibleRecpsDN2") : le.h.CookinPossibleRecpsDN2;
+                        						if (!Sb.contains(se, Math.round(Math.min(59, Math.max(0, Ae + (te - Math.floor(
+                        								(parseNum(oe) - 1) / 2))))))) {
+                        							var ie = b.engine.getGameAttribute("CustomLists"),
+                        								ue = (null != e.RANDOlist ? ie.getReserved("RANDOlist") : ie.h.RANDOlist)[49],
+                        								ge = b.engine.getGameAttribute("DNSM"),
+                        								me = null != e.CookinPossibleRecpsDN1 ? ge.getReserved("CookinPossibleRecpsDN1") : ge.h.CookinPossibleRecpsDN1,
+                        								de = parseNum(me),
+                        								ce = b.engine.getGameAttribute("DNSM"),
+                        								pe = null != e.CookinPossibleRecpsDN2 ? ce.getReserved("CookinPossibleRecpsDN2") : ce.h.CookinPossibleRecpsDN2;
+                        							if (!Sb.contains(ue, "" + Math.round(Math.min(59, Math.max(0, de + (te - Math.floor(
+                        									(parseNum(pe) - 1) / 2))))))) {
+                        								var he = b.engine.getGameAttribute("DNSM"),
+                        									be = null != e.CookinPossibleRecpsDN1 ? he.getReserved("CookinPossibleRecpsDN1") : he.h.CookinPossibleRecpsDN1,
+                        									fe = parseNum(be),
+                        									ye = b.engine.getGameAttribute("DNSM"),
+                        									Re = null != e.CookinPossibleRecpsDN2 ? ye.getReserved("CookinPossibleRecpsDN2") : ye.h.CookinPossibleRecpsDN2;
+                        								if (49 > Math.round(Math.min(59, Math.max(0, fe + (te - Math.floor(
+                        										(parseNum(Re) - 1) / 2)))))) {
+                        									var ve = b.engine.getGameAttribute("DNSM"),
+                        										Fe = null != e.CookinPossibleRecps ? ve.getReserved("CookinPossibleRecps") : ve.h.CookinPossibleRecps,
+                        										Ne = b.engine.getGameAttribute("DNSM"),
+                        										_e = null != e.CookinPossibleRecpsDN1 ? Ne.getReserved("CookinPossibleRecpsDN1") : Ne.h.CookinPossibleRecpsDN1,
+                        										Ie = parseNum(_e),
+                        										De = b.engine.getGameAttribute("DNSM"),
+                        										Ee = null != e.CookinPossibleRecpsDN2 ? De.getReserved("CookinPossibleRecpsDN2") : De.h.CookinPossibleRecpsDN2;
+                        									Fe.push(Math.round(Math.min(59, Math.max(0, Ie + (te - Math.floor(
+                        										(parseNum(Ee) - 1) / 2))))));
+                        								}
+                        							}
+                        						}
+                        					}
+                        				}
+                        			}
+                        			var Se = b.engine.getGameAttribute("DNSM"),
+                        				Ge = [];
+                        			null != e.CookinPossibleRecps2 ? Se.setReserved("CookinPossibleRecps2", Ge) : (Se.h.CookinPossibleRecps2 = Ge);
+                        			for (var Te = 0, Ue = b.engine.getGameAttribute("DNSM"), Me = (null != e.CookinPossibleRecps ? Ue.getReserved("CookinPossibleRecps") : Ue.h.CookinPossibleRecps).length; Te < Me;) {
+                        				Te++;
+                        				var Ve = b.engine.getGameAttribute("DNSM");
+                        				null != e.CookinPossibleRecpsDN1 ? Ve.setReserved("CookinPossibleRecpsDN1", 99999) : (Ve.h.CookinPossibleRecpsDN1 = 99999);
+                        				for (var Ce = 0, Be = b.engine.getGameAttribute("DNSM"), Pe = d.__cast(null != e.CookinPossibleRecps ? Be.getReserved("CookinPossibleRecps") : Be.h.CookinPossibleRecps, Array); Ce < Pe.length;) {
+                        					var Oe = Pe[Ce];
+                        					++Ce;
+                        					var we = parseNum(Oe),
+                        						ke = b.engine.getGameAttribute("DNSM"),
+                        						xe = null != e.CookinPossibleRecpsDN1 ? ke.getReserved("CookinPossibleRecpsDN1") : ke.h.CookinPossibleRecpsDN1;
+                        					if (we < parseNum(xe)) var Qe = b.engine.getGameAttribute("DNSM"),
+                        						Xe = !Sb.contains(null != e.CookinPossibleRecps2 ? Qe.getReserved("CookinPossibleRecps2") : Qe.h.CookinPossibleRecps2, Oe);
+                        					else Xe = !1;
+                        					if (Xe) {
+                        						var Le = b.engine.getGameAttribute("DNSM"),
+                        							ze = Oe;
+                        						null != e.CookinPossibleRecpsDN1 ? Le.setReserved("CookinPossibleRecpsDN1", ze) : (Le.h.CookinPossibleRecpsDN1 = ze);
+                        					}
+                        				}
+                        				var Ye = b.engine.getGameAttribute("DNSM"),
+                        					We = null != e.CookinPossibleRecps2 ? Ye.getReserved("CookinPossibleRecps2") : Ye.h.CookinPossibleRecps2,
+                        					Ze = b.engine.getGameAttribute("DNSM");
+                        				We.push(null != e.CookinPossibleRecpsDN1 ? Ze.getReserved("CookinPossibleRecpsDN1") : Ze.h.CookinPossibleRecpsDN1);
+                        			}
+                        			var He = b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO"),
+                        				Je = b.engine.getGameAttribute("DNSM");
+                        			return (He[69] = null != e.CookinPossibleRecps2 ? Je.getReserved("CookinPossibleRecps2") : Je.h.CookinPossibleRecps2), 0;
+                        		}
+                        		if ("CookingReqToCook" == s) {
+                        			var je = b.engine.getGameAttribute("CustomLists"),
+                        				qe = (null != e.MealINFO ? je.getReserved("MealINFO") : je.h.MealINFO)[0 | a][1];
+                        			return parseNum(qe);
+                        		}
+                        		if ("CookingSPEED" == s) {
+                        			var Ke = b.engine.getGameAttribute("DNSM");
+                        			null != e.CookinzzDN1 ? Ke.setReserved("CookinzzDN1", 0) : (Ke.h.CookinzzDN1 = 0);
+                        			var $e = b.engine.getGameAttribute("GemItemsPurchased")[120];
+                        			if (
+                        				(null == $e ? 0 : "number" == typeof $e ? d.__cast($e, k) : "number" == typeof $e && (0 | $e) === $e ? d.__cast($e, l) : "boolean" == typeof $e ? d.__cast($e, n) ? 1 : 0 : "string" == typeof $e ? parseFloat($e) : parseFloat(g.string($e))) > a) {
+                        				var et = b.engine.getGameAttribute("DNSM");
+                        				null != e.CookinzzDN1 ? et.setReserved("CookinzzDN1", 2) : (et.h.CookinzzDN1 = 2);
+                        			}
+                        			var tt = b.engine.getGameAttribute("DNSM"),
+                        				nt = null != e.CookinzzDN1 ? tt.getReserved("CookinzzDN1") : tt.h.CookinzzDN1,
+                        				st = parseNum(nt),
+                        				at = b.engine.getGameAttribute("DNSM"),
+                        				rt = null != e.AlchBubbles ? at.getReserved("AlchBubbles") : at.h.AlchBubbles,
+                        				At = null != e.MealSpdz ? rt.getReserved("MealSpdz") : rt.h.MealSpdz,
+                        				lt = 10 * (1 + st) * Math.max(1, parseNum(At)),
+                        				ot = b.engine.getGameAttribute("Cooking")[0 | a][6],
+                        				it = parseNum(ot),
+                        				ut = b.engine.getGameAttribute("DNSM"),
+                        				gt = null != e.AlchVials ? ut.getReserved("AlchVials") : ut.h.AlchVials,
+                        				mt = null != e.MealCook ? gt.getReserved("MealCook") : gt.h.MealCook,
+                        				dt = parseNum(mt),
+                        				ct = (1 + (t._customBlock_StampBonusOfTypeX("MealCook") + Math.max(0, w._customBlock_MainframeBonus(114))) / 100) * (1 + A._customBlock_MealBonus("Mcook") / 100) * Math.max(1, w._customBlock_MainframeBonus(100)),
+                        				pt = 1 + Math.min(6 * H._customBlock_RunCodeOfTypeXforThingY("CardLv", "Boss4A") + (20 * w._customBlock_AchieveStatus(225) + 10 * w._customBlock_AchieveStatus(224)), 100) / 100,
+                        				ht = A._customBlock_MealBonus("KitchenEff"),
+                        				bt = b.engine.getGameAttribute("Cooking")[0 | a][6],
+                        				ft = parseNum(bt),
+                        				yt = b.engine.getGameAttribute("Cooking")[0 | a][7],
+                        				Rt = parseNum(yt),
+                        				vt = b.engine.getGameAttribute("Cooking")[0 | a][8];
+                        			return (lt * (1 + it / 10) * (1 + dt / 100) * ct * pt * (1 + (ht * Math.floor(
+                        				(ft + (Rt + parseNum(vt))) / 10)) / 100));
+                        		}
+                        		if ("CookingFIRE" == s) {
+                        			var Ft = b.engine.getGameAttribute("DNSM");
+                        			null != e.CookinzzDN1 ? Ft.setReserved("CookinzzDN1", 0) : (Ft.h.CookinzzDN1 = 0);
+                        			var Nt = b.engine.getGameAttribute("GemItemsPurchased")[120];
+                        			if (parseNum(Nt) > a) {
+                        				var _t = b.engine.getGameAttribute("DNSM");
+                        				null != e.CookinzzDN1 ? _t.setReserved("CookinzzDN1", 1) : (_t.h.CookinzzDN1 = 1);
+                        			}
+                        			var It = b.engine.getGameAttribute("DNSM"),
+                        				Dt = null != e.CookinzzDN1 ? It.getReserved("CookinzzDN1") : It.h.CookinzzDN1,
+                        				Et = parseNum(Dt),
+                        				St = b.engine.getGameAttribute("DNSM"),
+                        				Gt = null != e.AlchBubbles ? St.getReserved("AlchBubbles") : St.h.AlchBubbles,
+                        				Tt = null != e.MealSpdz ? Gt.getReserved("MealSpdz") : Gt.h.MealSpdz,
+                        				Ut = 5 * (1 + Et) * Math.max(1, parseNum(Tt)),
+                        				Mt = b.engine.getGameAttribute("Cooking")[0 | a][7],
+                        				Vt = parseNum(Mt),
+                        				Ct = b.engine.getGameAttribute("DNSM"),
+                        				Bt = null != e.AlchVials ? Ct.getReserved("AlchVials") : Ct.h.AlchVials,
+                        				Pt = null != e.RecCook ? Bt.getReserved("RecCook") : Bt.h.RecCook,
+                        				Ot = parseNum(Pt),
+                        				wt = 1 + t._customBlock_StampBonusOfTypeX("RecipeCook") / 100,
+                        				kt = 1 + A._customBlock_MealBonus("Rcook") / 100,
+                        				xt = 1 + Math.min(6 * H._customBlock_RunCodeOfTypeXforThingY("CardLv", "Boss4A"), 50) / 100,
+                        				Qt = A._customBlock_MealBonus("KitchenEff"),
+                        				Xt = b.engine.getGameAttribute("Cooking")[0 | a][6],
+                        				Lt = parseNum(Xt),
+                        				zt = b.engine.getGameAttribute("Cooking")[0 | a][7],
+                        				Yt = parseNum(zt),
+                        				Wt = b.engine.getGameAttribute("Cooking")[0 | a][8];
+                        			return (Ut * (1 + Vt / 10) * (1 + Ot / 100) * wt * kt * xt * (1 + (Qt * Math.floor(
+                        				(Lt + (Yt + parseNum(Wt))) / 10)) / 100));
+                        		}
+                        		if ("CookingLUCK" == s) {
+                        			var Zt = b.engine.getGameAttribute("Cooking")[0 | a][8];
+                        			return (1 + Math.pow(5 * parseNum(Zt), 0.85) / 100);
+                        		}
+                        		if ("CookingUpgSpiceCostType" == s) return Math.floor(2 * a + r);
+                        		if ("CookingUpgSpiceCostQty" == s) {
+                        			var Ht = b.engine.getGameAttribute("DNSM");
+                        			null != e.CookinzzDN1 ? Ht.setReserved("CookinzzDN1", 0) : (Ht.h.CookinzzDN1 = 0);
+                        			var Jt = b.engine.getGameAttribute("GemItemsPurchased")[120];
+                        			if (parseNum(Jt) > a) {
+                        				var jt = b.engine.getGameAttribute("DNSM");
+                        				null != e.CookinzzDN1 ? jt.setReserved("CookinzzDN1", 40) : (jt.h.CookinzzDN1 = 40);
+                        			}
+                        			var qt = b.engine.getGameAttribute("DNSM"),
+                        				Kt = null != e.AlchVials ? qt.getReserved("AlchVials") : qt.h.AlchVials,
+                        				$t = null != e.Kcosts ? Kt.getReserved("Kcosts") : Kt.h.Kcosts,
+                        				en = 1 + ((null == $t ? 0 : "number" == typeof $t ? d.__cast($t, k) : "number" == typeof $t && (0 | $t) === $t ? d.__cast($t, l) : "boolean" == typeof $t ? d.__cast($t, n) ? 1 : 0 : "string" == typeof $t ? parseFloat($t) : parseFloat(g.string($t))) + w._customBlock_Labb("SigilBonus", "Blank", 18, 0)) / 100,
+                        				tn = 1 + A._customBlock_MealBonus("KitchC") / 100,
+                        				nn = b.engine.getGameAttribute("DNSM"),
+                        				sn = null != e.CookinzzDN1 ? nn.getReserved("CookinzzDN1") : nn.h.CookinzzDN1,
+                        				an = 1 / (en * tn * (1 + parseNum(sn) / 100) * (1 + 0.5 * w._customBlock_Breeding("PetArenaBonus", "0", 7, 0))),
+                        				rn = b.engine.getGameAttribute("Cooking")[0 | a][(6 + r) | 0],
+                        				An = parseNum(rn),
+                        				ln = b.engine.getGameAttribute("Cooking")[0 | a][(6 + r) | 0],
+                        				on = An + 1 + Math.floor(Math.max(0, parseNum(ln) - 10) / 2),
+                        				un = b.engine.getGameAttribute("Cooking")[0 | a][(6 + r) | 0],
+                        				gn = on + Math.pow(Math.max(0, parseNum(un) - 30), 1.2),
+                        				mn = b.engine.getGameAttribute("Cooking")[0 | a][(6 + r) | 0];
+                        			return (1 + an * gn * Math.pow(1.02, Math.max(0, parseNum(mn) - 60)));
+                        		}
+                        		if ("CookingFireREQ" == s) {
+                        			var dn = b.engine.getGameAttribute("DNSM"),
+                        				cn = w._customBlock_CookingR("PossibleRecipes2", a, 0);
+                        			null != e.CookinPossibleRecps ? dn.setReserved("CookinPossibleRecps", cn) : (dn.h.CookinPossibleRecps = cn);
+                        			var pn = b.engine.getGameAttribute("DNSM"),
+                        				hn = b.engine.getGameAttribute("DNSM"),
+                        				bn = null != e.CookinPossibleRecps2 ? hn.getReserved("CookinPossibleRecps2") : hn.h.CookinPossibleRecps2;
+                        			null != e.CookinPossibleRecps ? pn.setReserved("CookinPossibleRecps", bn) : (pn.h.CookinPossibleRecps = bn);
+                        			var fn = b.engine.getGameAttribute("DNSM"),
+                        				yn = b.engine.getGameAttribute("DNSM"),
+                        				Rn = null != e.CookinPossibleRecps ? yn.getReserved("CookinPossibleRecps") : yn.h.CookinPossibleRecps,
+                        				vn = b.engine.getGameAttribute("DNSM"),
+                        				Fn = Rn[(null != e.CookinPossibleRecps ? vn.getReserved("CookinPossibleRecps") : vn.h.CookinPossibleRecps).length - 1];
+                        			null != e.CookinPossibleRecpsDN1 ? fn.setReserved("CookinPossibleRecpsDN1", Fn) : (fn.h.CookinPossibleRecpsDN1 = Fn);
+                        			var Nn = b.engine.getGameAttribute("CustomLists"),
+                        				_n = null != e.MealINFO ? Nn.getReserved("MealINFO") : Nn.h.MealINFO,
+                        				In = b.engine.getGameAttribute("DNSM"),
+                        				Dn = null != e.CookinPossibleRecpsDN1 ? In.getReserved("CookinPossibleRecpsDN1") : In.h.CookinPossibleRecpsDN1,
+                        				En = _n[0 | parseNum(Dn)][1];
+                        			return (2 * parseNum(En));
+                        		}
+                        		if ("CookingFireREQlv" == s) {
+                        			var Sn = b.engine.getGameAttribute("DNSM"),
+                        				Gn = w._customBlock_CookingR("CookingFireREQ", a, 0);
+                        			null != e.CookinPossibleRecpsDN1 ? Sn.setReserved("CookinPossibleRecpsDN1", Gn) : (Sn.h.CookinPossibleRecpsDN1 = Gn);
+                        			var Tn = b.engine.getGameAttribute("DNSM");
+                        			null != e.CookinPossibleRecpsDN2 ? Tn.setReserved("CookinPossibleRecpsDN2", 0) : (Tn.h.CookinPossibleRecpsDN2 = 0);
+                        			for (var Un = 0; 100 > Un;) {
+                        				Un++;
+                        				var Mn = b.engine.getGameAttribute("Cooking")[0 | a][10],
+                        					Vn = parseNum(Mn),
+                        					Cn = b.engine.getGameAttribute("DNSM"),
+                        					Bn = null != e.CookinPossibleRecpsDN1 ? Cn.getReserved("CookinPossibleRecpsDN1") : Cn.h.CookinPossibleRecpsDN1;
+                        				if (!(Vn >= parseNum(Bn))) break;
+                        				var Pn = b.engine.getGameAttribute("DNSM"),
+                        					On = b.engine.getGameAttribute("DNSM"),
+                        					wn = null != e.CookinPossibleRecpsDN1 ? On.getReserved("CookinPossibleRecpsDN1") : On.h.CookinPossibleRecpsDN1,
+                        					kn = Pn,
+                        					xn = parseNum(wn) * w._customBlock_CookingR("CookingFireREQlvMULTI", 0, 0);
+                        				null != e.CookinPossibleRecpsDN1 ? kn.setReserved("CookinPossibleRecpsDN1", xn) : (kn.h.CookinPossibleRecpsDN1 = xn);
+                        				var Qn = b.engine.getGameAttribute("DNSM"),
+                        					Xn = b.engine.getGameAttribute("DNSM"),
+                        					Ln = null != e.CookinPossibleRecpsDN2 ? Xn.getReserved("CookinPossibleRecpsDN2") : Xn.h.CookinPossibleRecpsDN2,
+                        					zn = Qn,
+                        					Yn = parseNum(Ln) + 1;
+                        				null != e.CookinPossibleRecpsDN2 ? zn.setReserved("CookinPossibleRecpsDN2", Yn) : (zn.h.CookinPossibleRecpsDN2 = Yn);
+                        			}
+                        			var Wn = b.engine.getGameAttribute("DNSM");
+                        			return null != e.CookinPossibleRecpsDN2 ? Wn.getReserved("CookinPossibleRecpsDN2") : Wn.h.CookinPossibleRecpsDN2;
+                        		}
+                        		if ("CookingFireREQlvMULTI" == s) return 3;
+                        		if ("CookingMenuMealCosts" == s) {
+                        			var Zn = 1 / Math.min(5, Math.max(1, 1 + (10 * w._customBlock_AchieveStatus(233)) / 100)),
+                        				Hn = b.engine.getGameAttribute("Meals")[0][0 | a],
+                        				Jn = parseNum(Hn),
+                        				jn = b.engine.getGameAttribute("Meals")[0][0 | a],
+                        				qn = Zn * (10 + (Jn + Math.pow(parseNum(jn), 2))),
+                        				Kn = b.engine.getGameAttribute("Meals")[0][0 | a],
+                        				$n = parseNum(Kn),
+                        				es = b.engine.getGameAttribute("Meals")[0][0 | a];
+                        			return (qn * Math.pow(1.2 + 0.05 * $n, parseNum(es)));
+                        		}
+                        		if ("CookingNewRecipeOdds" == s) {
+                        			var ts = b.engine.getGameAttribute("Meals")[0],
+                        				ns = b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[69][0 | a],
+                        				ss = ts[0 | parseNum(ns)];
+                        			if (0 >= parseNum(ss)) {
+                        				var as = b.engine.getGameAttribute("CustomLists"),
+                        					rs = (null != e.RANDOlist ? as.getReserved("RANDOlist") : as.h.RANDOlist)[50][0 | a];
+                        				return (parseNum(rs) * w._customBlock_CookingR("CookingLUCK", r, 0) * Math.pow(1.5, w._customBlock_CookingR("CookingFireREQlv", r, 0)));
+                        			}
+                        			var As = b.engine.getGameAttribute("CustomLists"),
+                        				ls = (null != e.RANDOlist ? As.getReserved("RANDOlist") : As.h.RANDOlist)[50][0 | a];
+                        			return parseNum(ls);
+                        		}
+                        		return "CookingNewKitchenCoinCost" == s ? (1 == a ? 82e5 : 2 == a ? 75e6 : 3 == a ? 4e8 : 4 == a ? 8e9 : 5 == a ? 5e10 : 6 == a ? 213e10 : 7 == a ? 6e13 : 8 == a ? 2e15 : 1e17) : 0;
+                        	}

@@ -1,0 +1,26 @@
+                        (w._customBlock_Shrine = function(t) {
+                        		var s = b.engine.getGameAttribute("DNSM");
+                        		if ((null != e.ShrineStuffz723 ? s.existsReserved("ShrineStuffz723") : s.h.hasOwnProperty("ShrineStuffz723")) && -1 != t) return (s = b.engine.getGameAttribute("DNSM")), (null != e.ShrineStuffz723 ? s.getReserved("ShrineStuffz723") : s.h.ShrineStuffz723)[0 | t];
+                        		for (t = b.engine.getGameAttribute("DNSM"), s = [], null != e.ShrineStuffz723 ? t.setReserved("ShrineStuffz723", s) : (t.h.ShrineStuffz723 = s), t = 0; 9 > t;) {
+                        			s = t++;
+                        			var a = b.engine.getGameAttribute("DNSM");
+                        			if (((null != e.ShrineStuffz723 ? a.getReserved("ShrineStuffz723") : a.h.ShrineStuffz723).push(0), b.engine.getGameAttribute("CurrentMap") != b.engine.getGameAttribute("ShrineInfo")[s][0]))
+                        				if (1 == w._customBlock_MainframeBonus(5)) {
+                        					a = Math.floor(b.engine.getGameAttribute("CurrentMap") / 50);
+                        					var r = b.engine.getGameAttribute("ShrineInfo")[s][0];
+                        					a = a == Math.floor(parseNum(r) / 50);
+                        				} else a = !1;
+                        			else a = !0;
+                        			if (a && 0.5 < (null == (a = b.engine.getGameAttribute("ShrineInfo")[s][3]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)))) {
+                        				(a = b.engine.getGameAttribute("DNSM")), (a = null != e.ShrineStuffz723 ? a.getReserved("ShrineStuffz723") : a.h.ShrineStuffz723), (r = 1 + U._customBlock_CardBonusREAL(59) / 100);
+                        				var A = b.engine.getGameAttribute("ShrineInfo")[s][3];
+                        				A = parseNum(A);
+                        				var o = b.engine.getGameAttribute("CustomLists");
+                        				o = null == (o = (null != e.ShrineInfo ? o.getReserved("ShrineInfo") : o.h.ShrineInfo)[s][3]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o));
+                        				var i = b.engine.getGameAttribute("CustomLists");
+                        				(i = (null != e.ShrineInfo ? i.getReserved("ShrineInfo") : i.h.ShrineInfo)[s][2]),
+                        				(a[s] = r * ((A - 1) * o + parseNum(i)));
+                        			}
+                        		}
+                        		return 0;
+                        	}

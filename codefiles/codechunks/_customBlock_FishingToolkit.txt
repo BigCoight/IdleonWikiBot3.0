@@ -1,0 +1,273 @@
+                        (A._customBlock_FishingToolkit = function(t) {
+                        		var s = b.engine.getGameAttribute("DNSM"),
+                        			a = [];
+                        		null != e.FishTKdl ? s.setReserved("FishTKdl", a) : (s.h.FishTKdl = a);
+                        		var r = b.engine.getGameAttribute("DNSM");
+                        		(null != e.FishTKdl ? r.getReserved("FishTKdl") : r.h.FishTKdl).push(0);
+                        		var o = b.engine.getGameAttribute("DNSM");
+                        		(null != e.FishTKdl ? o.getReserved("FishTKdl") : o.h.FishTKdl).push(0);
+                        		var i = b.engine.getGameAttribute("DNSM");
+                        		(null != e.FishTKdl ? i.getReserved("FishTKdl") : i.h.FishTKdl).push(0);
+                        		var u = b.engine.getGameAttribute("DNSM");
+                        		(null != e.FishTKdl ? u.getReserved("FishTKdl") : u.h.FishTKdl).push(0);
+                        		var m = b.engine.getGameAttribute("DNSM");
+                        		(null != e.FishTKdl ? m.getReserved("FishTKdl") : m.h.FishTKdl).push(0);
+                        		var c = b.engine.getGameAttribute("DNSM");
+                        		(null != e.FishTKdl ? c.getReserved("FishTKdl") : c.h.FishTKdl).push(0);
+                        		var p = b.engine.getGameAttribute("DNSM");
+                        		(null != e.FishTKdl ? p.getReserved("FishTKdl") : p.h.FishTKdl).push(0);
+                        		var h = b.engine.getGameAttribute("DNSM");
+                        		null != e.FishTKdn ? h.setReserved("FishTKdn", 0) : (h.h.FishTKdn = 0);
+                        		for (var f = 0; 7 > f;) {
+                        			var y = f++,
+                        				R = b.engine.getGameAttribute("DNSM"),
+                        				v = null != e.FishTKdl ? R.getReserved("FishTKdl") : R.h.FishTKdl,
+                        				F = b.engine.getGameAttribute("DNSM"),
+                        				N = (null != e.FishTKdl ? F.getReserved("FishTKdl") : F.h.FishTKdl)[y],
+                        				_ = parseNum(N),
+                        				I = b.engine.getGameAttribute("CustomLists"),
+                        				D = null != e.FishToolkitInfo ? I.getReserved("FishToolkitInfo") : I.h.FishToolkitInfo,
+                        				E = b.engine.getGameAttribute("DNSM"),
+                        				S = null != e.FishTKdn ? E.getReserved("FishTKdn") : E.h.FishTKdn,
+                        				G = D[0 | parseNum(S)],
+                        				T = b.engine.getGameAttribute("PersonalValuesMap"),
+                        				M = null != e.FishingToolkit ? T.getReserved("FishingToolkit") : T.h.FishingToolkit,
+                        				V = b.engine.getGameAttribute("DNSM"),
+                        				C = null != e.FishTKdn ? V.getReserved("FishTKdn") : V.h.FishTKdn,
+                        				B = M[0 | parseNum(C)],
+                        				P = G[0 | parseNum(B)][y + 1];
+                        			v[y] = _ + parseNum(P);
+                        		}
+                        		var O = b.engine.getGameAttribute("DNSM");
+                        		null != e.FishTKdn ? O.setReserved("FishTKdn", 1) : (O.h.FishTKdn = 1);
+                        		for (var w = 0; 7 > w;) {
+                        			var x = w++,
+                        				Q = b.engine.getGameAttribute("DNSM"),
+                        				X = null != e.FishTKdl ? Q.getReserved("FishTKdl") : Q.h.FishTKdl,
+                        				L = b.engine.getGameAttribute("DNSM"),
+                        				z = (null != e.FishTKdl ? L.getReserved("FishTKdl") : L.h.FishTKdl)[x],
+                        				Y = parseNum(z),
+                        				W = b.engine.getGameAttribute("CustomLists"),
+                        				Z = null != e.FishToolkitInfo ? W.getReserved("FishToolkitInfo") : W.h.FishToolkitInfo,
+                        				J = b.engine.getGameAttribute("DNSM"),
+                        				j = null != e.FishTKdn ? J.getReserved("FishTKdn") : J.h.FishTKdn,
+                        				q = Z[0 | parseNum(j)],
+                        				K = b.engine.getGameAttribute("PersonalValuesMap"),
+                        				$ = null != e.FishingToolkit ? K.getReserved("FishingToolkit") : K.h.FishingToolkit,
+                        				ee = b.engine.getGameAttribute("DNSM"),
+                        				te = null != e.FishTKdn ? ee.getReserved("FishTKdn") : ee.h.FishTKdn,
+                        				ne = $[0 | parseNum(te)],
+                        				se = q[0 | parseNum(ne)][x + 1];
+                        			X[x] = Y + parseNum(se);
+                        		}
+                        		var ae = b.engine.getGameAttribute("DNSM"),
+                        			re = [];
+                        		null != e.FishTKdl2 ? ae.setReserved("FishTKdl2", re) : (ae.h.FishTKdl2 = re);
+                        		var Ae = b.engine.getGameAttribute("DNSM");
+                        		null != e.FishTKdn3 ? Ae.setReserved("FishTKdn3", 0) : (Ae.h.FishTKdn3 = 0);
+                        		var le = b.engine.getGameAttribute("DNSM"),
+                        			oe = [];
+                        		null != e.FishTKdl3 ? le.setReserved("FishTKdl3", oe) : (le.h.FishTKdl3 = oe);
+                        		var ie = b.engine.getGameAttribute("DNSM");
+                        		(null != e.FishTKdl2 ? ie.getReserved("FishTKdl2") : ie.h.FishTKdl2).push(0);
+                        		var ue = b.engine.getGameAttribute("DNSM");
+                        		(null != e.FishTKdl2 ? ue.getReserved("FishTKdl2") : ue.h.FishTKdl2).push(0);
+                        		var ge = b.engine.getGameAttribute("DNSM");
+                        		(null != e.FishTKdl2 ? ge.getReserved("FishTKdl2") : ge.h.FishTKdl2).push(0);
+                        		var me = b.engine.getGameAttribute("DNSM");
+                        		(null != e.FishTKdl2 ? me.getReserved("FishTKdl2") : me.h.FishTKdl2).push(0);
+                        		var de = b.engine.getGameAttribute("DNSM"),
+                        			ce = b.engine.getGameAttribute("PersonalValuesMap"),
+                        			pe = null != e.FishingSpotIndex ? ce.getReserved("FishingSpotIndex") : ce.h.FishingSpotIndex;
+                        		if ((null != e.FishTKdn3 ? de.setReserved("FishTKdn3", pe) : (de.h.FishTKdn3 = pe), 54 == b.engine.getGameAttribute("CurrentMap"))) {
+                        			var he = b.engine.getGameAttribute("DNSM");
+                        			if (1 == (null != e.FishTKdn3 ? he.getReserved("FishTKdn3") : he.h.FishTKdn3)) {
+                        				var be = b.engine.getGameAttribute("DNSM");
+                        				(null != e.FishTKdl2 ? be.getReserved("FishTKdl2") : be.h.FishTKdl2)[0] = 30;
+                        				var fe = b.engine.getGameAttribute("DNSM");
+                        				(null != e.FishTKdl2 ? fe.getReserved("FishTKdl2") : fe.h.FishTKdl2)[1] = 5;
+                        			} else {
+                        				var ye = b.engine.getGameAttribute("DNSM");
+                        				if (0 == (null != e.FishTKdn3 ? ye.getReserved("FishTKdn3") : ye.h.FishTKdn3)) {
+                        					var Re = b.engine.getGameAttribute("DNSM");
+                        					(null != e.FishTKdl2 ? Re.getReserved("FishTKdl2") : Re.h.FishTKdl2)[1] = 25;
+                        					var ve = b.engine.getGameAttribute("DNSM");
+                        					(null != e.FishTKdl2 ? ve.getReserved("FishTKdl2") : ve.h.FishTKdl2)[2] = 5;
+                        				}
+                        			}
+                        		} else if (55 == b.engine.getGameAttribute("CurrentMap")) {
+                        			var Fe = b.engine.getGameAttribute("DNSM");
+                        			if (2 == (null != e.FishTKdn3 ? Fe.getReserved("FishTKdn3") : Fe.h.FishTKdn3)) {
+                        				var Ne = b.engine.getGameAttribute("DNSM");
+                        				(null != e.FishTKdl2 ? Ne.getReserved("FishTKdl2") : Ne.h.FishTKdl2)[2] = 35;
+                        			} else {
+                        				var _e = b.engine.getGameAttribute("DNSM");
+                        				if (1 == (null != e.FishTKdn3 ? _e.getReserved("FishTKdn3") : _e.h.FishTKdn3)) {
+                        					var Ie = b.engine.getGameAttribute("DNSM");
+                        					(null != e.FishTKdl2 ? Ie.getReserved("FishTKdl2") : Ie.h.FishTKdl2)[2] = 15;
+                        					var De = b.engine.getGameAttribute("DNSM");
+                        					(null != e.FishTKdl2 ? De.getReserved("FishTKdl2") : De.h.FishTKdl2)[3] = 30;
+                        				} else {
+                        					var Ee = b.engine.getGameAttribute("DNSM");
+                        					if (0 == (null != e.FishTKdn3 ? Ee.getReserved("FishTKdn3") : Ee.h.FishTKdn3)) {
+                        						var Se = b.engine.getGameAttribute("DNSM");
+                        						(null != e.FishTKdl2 ? Se.getReserved("FishTKdl2") : Se.h.FishTKdl2)[3] = 40;
+                        					}
+                        				}
+                        			}
+                        		} else if (61 == b.engine.getGameAttribute("CurrentMap")) {
+                        			var Ge = b.engine.getGameAttribute("DNSM");
+                        			if (2 == (null != e.FishTKdn3 ? Ge.getReserved("FishTKdn3") : Ge.h.FishTKdn3)) {
+                        				var Te = b.engine.getGameAttribute("DNSM");
+                        				(null != e.FishTKdl2 ? Te.getReserved("FishTKdl2") : Te.h.FishTKdl2)[2] = 45;
+                        			} else {
+                        				var Ue = b.engine.getGameAttribute("DNSM");
+                        				if (1 == (null != e.FishTKdn3 ? Ue.getReserved("FishTKdn3") : Ue.h.FishTKdn3)) {
+                        					var Me = b.engine.getGameAttribute("DNSM");
+                        					(null != e.FishTKdl2 ? Me.getReserved("FishTKdl2") : Me.h.FishTKdl2)[3] = 54;
+                        				} else {
+                        					var Ve = b.engine.getGameAttribute("DNSM");
+                        					if (0 == (null != e.FishTKdn3 ? Ve.getReserved("FishTKdn3") : Ve.h.FishTKdn3)) {
+                        						var Ce = b.engine.getGameAttribute("DNSM");
+                        						(null != e.FishTKdl2 ? Ce.getReserved("FishTKdl2") : Ce.h.FishTKdl2)[3] = 70;
+                        					}
+                        				}
+                        			}
+                        		}
+                        		if ("D0" == t) {
+                        			var Be = b.engine.getGameAttribute("DNSM"),
+                        				Pe = (null != e.FishTKdl ? Be.getReserved("FishTKdl") : Be.h.FishTKdl)[0],
+                        				Oe = parseNum(Pe),
+                        				we = b.engine.getGameAttribute("DNSM"),
+                        				ke = (null != e.FishTKdl2 ? we.getReserved("FishTKdl2") : we.h.FishTKdl2)[0];
+                        			return (Oe + parseNum(ke));
+                        		}
+                        		if ("D1" == t) {
+                        			var xe = b.engine.getGameAttribute("DNSM"),
+                        				Qe = (null != e.FishTKdl ? xe.getReserved("FishTKdl") : xe.h.FishTKdl)[1],
+                        				Xe = parseNum(Qe) + U._customBlock_EtcBonuses("12"),
+                        				Le = b.engine.getGameAttribute("DNSM"),
+                        				ze = (null != e.FishTKdl2 ? Le.getReserved("FishTKdl2") : Le.h.FishTKdl2)[1];
+                        			return Math.max(0, Xe + parseNum(ze) - A._customBlock_FishingToolkit("D0") / 3);
+                        		}
+                        		if ("D2" == t) {
+                        			var Ye = b.engine.getGameAttribute("DNSM"),
+                        				We = (null != e.FishTKdl ? Ye.getReserved("FishTKdl") : Ye.h.FishTKdl)[2],
+                        				Ze = parseNum(We) + U._customBlock_EtcBonuses("13"),
+                        				He = b.engine.getGameAttribute("DNSM"),
+                        				Je = (null != e.FishTKdl2 ? He.getReserved("FishTKdl2") : He.h.FishTKdl2)[2];
+                        			return Math.max(0, Ze + parseNum(Je) - A._customBlock_FishingToolkit("D0") / 3);
+                        		}
+                        		if ("D3" == t) {
+                        			var je = b.engine.getGameAttribute("DNSM"),
+                        				qe = (null != e.FishTKdl ? je.getReserved("FishTKdl") : je.h.FishTKdl)[3],
+                        				Ke = parseNum(qe) + U._customBlock_EtcBonuses("14"),
+                        				$e = b.engine.getGameAttribute("DNSM"),
+                        				et = (null != e.FishTKdl2 ? $e.getReserved("FishTKdl2") : $e.h.FishTKdl2)[3];
+                        			return Math.max(0, Ke + parseNum(et) - A._customBlock_FishingToolkit("D0") / 3);
+                        		}
+                        		if ("EXP" == t) {
+                        			var tt = b.engine.getGameAttribute("DNSM");
+                        			return (null != e.FishTKdl ? tt.getReserved("FishTKdl") : tt.h.FishTKdl)[4];
+                        		}
+                        		if ("SPEED" == t) {
+                        			var nt = b.engine.getGameAttribute("DNSM");
+                        			return (null != e.FishTKdl ? nt.getReserved("FishTKdl") : nt.h.FishTKdl)[5];
+                        		}
+                        		if ("POW" == t) {
+                        			var st = b.engine.getGameAttribute("DNSM");
+                        			return (null != e.FishTKdl ? st.getReserved("FishTKdl") : st.h.FishTKdl)[6];
+                        		}
+                        		if (-1 != t.indexOf("EffReq")) {
+                        			var at = b.engine.getGameAttribute("CustomMaps"),
+                        				rt = null != e.FishPools ? at.getReserved("FishPools") : at.h.FishPools,
+                        				At = b.engine.getGameAttribute("AFKtarget");
+                        			if (null != e[At] ? rt.existsReserved(At) : rt.h.hasOwnProperty(At)) {
+                        				var lt = b.engine.getGameAttribute("DNSM"),
+                        					ot = b.engine.getGameAttribute("CustomMaps"),
+                        					it = null != e.FishPools ? ot.getReserved("FishPools") : ot.h.FishPools,
+                        					ut = b.engine.getGameAttribute("AFKtarget"),
+                        					gt = null != e[ut] ? it.getReserved(ut) : it.h[ut];
+                        				null != e.FishTKdl3 ? lt.setReserved("FishTKdl3", gt) : (lt.h.FishTKdl3 = gt);
+                        			} else {
+                        				var mt = b.engine.getGameAttribute("CustomMaps"),
+                        					dt = null != e.FishPools ? mt.getReserved("FishPools") : mt.h.FishPools,
+                        					ct = b.engine.getGameAttribute("OtherPlayers"),
+                        					pt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					ht = "" + g.string((null != e[pt] ? ct.getReserved(pt) : ct.h[pt]).getValue("ActorEvents_20", "_TargetEnemy").getValue("ActorEvents_1", "_MonsterType"));
+                        				if (null != e[ht] ? dt.existsReserved(ht) : dt.h.hasOwnProperty(ht)) {
+                        					var bt = b.engine.getGameAttribute("DNSM"),
+                        						ft = b.engine.getGameAttribute("CustomMaps"),
+                        						yt = null != e.FishPools ? ft.getReserved("FishPools") : ft.h.FishPools,
+                        						Rt = b.engine.getGameAttribute("OtherPlayers"),
+                        						vt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						Ft = "" + g.string((null != e[vt] ? Rt.getReserved(vt) : Rt.h[vt]).getValue("ActorEvents_20", "_TargetEnemy").getValue("ActorEvents_1", "_MonsterType")),
+                        						Nt = null != e[Ft] ? yt.getReserved(Ft) : yt.h[Ft];
+                        					null != e.FishTKdl3 ? bt.setReserved("FishTKdl3", Nt) : (bt.h.FishTKdl3 = Nt);
+                        				} else {
+                        					var _t = b.engine.getGameAttribute("DNSM"),
+                        						It = b.engine.getGameAttribute("CustomMaps"),
+                        						Dt = null != e.FishPools ? It.getReserved("FishPools") : It.h.FishPools,
+                        						Et = null != e.FishSmall ? Dt.getReserved("FishSmall") : Dt.h.FishSmall;
+                        					null != e.FishTKdl3 ? _t.setReserved("FishTKdl3", Et) : (_t.h.FishTKdl3 = Et);
+                        				}
+                        			}
+                        			if ("EffReq1" == t) {
+                        				var St = b.engine.getGameAttribute("DNSM");
+                        				return (null != e.FishTKdl3 ? St.getReserved("FishTKdl3") : St.h.FishTKdl3)[3][0];
+                        			}
+                        			if ("EffReq2" == t) {
+                        				var Gt = b.engine.getGameAttribute("DNSM");
+                        				return (null != e.FishTKdl3 ? Gt.getReserved("FishTKdl3") : Gt.h.FishTKdl3)[3][1];
+                        			}
+                        			if ("EffReq3" == t) {
+                        				var Tt = b.engine.getGameAttribute("DNSM");
+                        				return (null != e.FishTKdl3 ? Tt.getReserved("FishTKdl3") : Tt.h.FishTKdl3)[3][2];
+                        			}
+                        			return 9999;
+                        		}
+                        		var Ut = b.engine.getGameAttribute("DNSM"),
+                        			Mt = H._customBlock_SkillStats("FishingEfficiency");
+                        		if ((null != e.FishTKdn2 ? Ut.setReserved("FishTKdn2", Mt) : (Ut.h.FishTKdn2 = Mt), "Pct1" == t)) return Math.floor(100 * (100 - (A._customBlock_FishingToolkit("Pct2") + (A._customBlock_FishingToolkit("Pct3") + A._customBlock_FishingToolkit("Pct4"))))) / 100;
+                        		if ("Pct2" == t) {
+                        			var Vt = b.engine.getGameAttribute("DNSM"),
+                        				Ct = null != e.FishTKdn2 ? Vt.getReserved("FishTKdn2") : Vt.h.FishTKdn2;
+                        			if (parseNum(Ct) >= A._customBlock_FishingToolkit("EffReq1")) {
+                        				var Bt = b.engine.getGameAttribute("DNSM"),
+                        					Pt = null != e.FishTKdn2 ? Bt.getReserved("FishTKdn2") : Bt.h.FishTKdn2,
+                        					Ot = parseNum(Pt),
+                        					wt = b.engine.getGameAttribute("DNSM"),
+                        					kt = null != e.FishTKdn2 ? wt.getReserved("FishTKdn2") : wt.h.FishTKdn2;
+                        				return (Math.floor(100 * (((1.5 * Ot) / (parseNum(kt) + 10)) * 20 * ((2 * A._customBlock_FishingToolkit("D1")) / (A._customBlock_FishingToolkit("D1") + 100) + 1) - (A._customBlock_FishingToolkit("Pct3") / 3 + A._customBlock_FishingToolkit("Pct4") / 5))) / 100);
+                        			}
+                        			return 0;
+                        		}
+                        		if ("Pct3" == t) {
+                        			var xt = b.engine.getGameAttribute("DNSM"),
+                        				Qt = null != e.FishTKdn2 ? xt.getReserved("FishTKdn2") : xt.h.FishTKdn2;
+                        			if (parseNum(Qt) >= A._customBlock_FishingToolkit("EffReq2")) {
+                        				var Xt = b.engine.getGameAttribute("DNSM"),
+                        					Lt = null != e.FishTKdn2 ? Xt.getReserved("FishTKdn2") : Xt.h.FishTKdn2,
+                        					zt = parseNum(Lt),
+                        					Yt = b.engine.getGameAttribute("DNSM"),
+                        					Wt = null != e.FishTKdn2 ? Yt.getReserved("FishTKdn2") : Yt.h.FishTKdn2;
+                        				return (Math.floor(100 * (((2 * zt) / (parseNum(Wt) + 200)) * 6 * ((2 * A._customBlock_FishingToolkit("D2")) / (A._customBlock_FishingToolkit("D2") + 100) + 1) - A._customBlock_FishingToolkit("Pct4") / 5)) / 100);
+                        			}
+                        			return 0;
+                        		}
+                        		if ("Pct4" == t) {
+                        			var Zt = b.engine.getGameAttribute("DNSM"),
+                        				Ht = null != e.FishTKdn2 ? Zt.getReserved("FishTKdn2") : Zt.h.FishTKdn2;
+                        			if (parseNum(Ht) >= A._customBlock_FishingToolkit("EffReq3")) {
+                        				var Jt = b.engine.getGameAttribute("DNSM"),
+                        					jt = null != e.FishTKdn2 ? Jt.getReserved("FishTKdn2") : Jt.h.FishTKdn2,
+                        					qt = parseNum(jt),
+                        					Kt = b.engine.getGameAttribute("DNSM"),
+                        					$t = null != e.FishTKdn2 ? Kt.getReserved("FishTKdn2") : Kt.h.FishTKdn2;
+                        				return (Math.floor(
+                        					((3 * qt) / ((null == $t ? 0 : "number" == typeof $t ? d.__cast($t, k) : "number" == typeof $t && (0 | $t) === $t ? d.__cast($t, l) : "boolean" == typeof $t ? d.__cast($t, n) ? 1 : 0 : "string" == typeof $t ? parseFloat($t) : parseFloat(g.string($t))) + 800)) * ((4 * A._customBlock_FishingToolkit("D3")) / (A._customBlock_FishingToolkit("D3") + 100) + 1) * 100) / 100);
+                        			}
+                        			return 0;
+                        		}
+                        		return 1;
+                        	}

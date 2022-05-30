@@ -1,0 +1,12 @@
+                        (A._customBlock_UnlockHint = function(t, n) {
+                        		if (-1 == b.engine.getGameAttribute("HintStatus")[0 | t][0 | n] && -1 == h.getCurrentSceneName().indexOf("Tutorial")) {
+                        			if (6 == b.engine.getGameAttribute("MenuType")) {
+                        				var s = b.engine.gameAttributes;
+                        				null != e.MenuType ? s.setReserved("MenuType", 0) : (s.h.MenuType = 0);
+                        			}
+                        			(b.engine.getGameAttribute("HintStatus")[0 | t][0 | n] = 0),
+                        			(t = b.engine.gameAttributes),
+                        			null != e.PopupType ? t.setReserved("PopupType", 4) : (t.h.PopupType = 4),
+                        				h.createRecycledActor(h.getActorType(40), 688, 484, 0), -1 == b.engine.getGameAttribute("HintStatus")[0][0] && A._customBlock_UnlockHint(0, 0);
+                        		}
+                        	}

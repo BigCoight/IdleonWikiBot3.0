@@ -1,0 +1,7 @@
+            (Ef.lime.embed = function(e) {
+            		var t = {},
+            			n = Ef.lime.$scripts[e];
+            		if (!n) throw Error('Cannot find project name "' + e + '"');
+            		for (var s in (n(t, hc), t)) Ef[s] = Ef[s] || t[s];
+            		return (n = t.lime || window.lime) && n.embed && this != n.embed && n.embed.apply(n, arguments), t;
+            	}

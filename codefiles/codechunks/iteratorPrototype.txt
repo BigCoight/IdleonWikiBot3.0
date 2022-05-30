@@ -1,0 +1,6 @@
+    ($jscomp.iteratorPrototype = function(e) {
+    		return ($jscomp.initSymbolIterator(),
+    			((e = { next: e })[$jscomp.global.Symbol.iterator] = function() {
+    				return this;
+    			}), e);
+    	}

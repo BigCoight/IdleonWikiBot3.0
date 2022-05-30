@@ -1,0 +1,3 @@
+                            (n.shrinkBuf = function(e, t) {
+                            		return e.length === t ? e : e.subarray ? e.subarray(0, t) : ((e.length = t), e);
+                            	}

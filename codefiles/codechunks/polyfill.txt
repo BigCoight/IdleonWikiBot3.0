@@ -1,0 +1,9 @@
+    ($jscomp.polyfill = function(e, t, n, s) {
+    		if (t) {
+    			for (n = $jscomp.global, e = e.split("."), s = 0; s < e.length - 1; s++) {
+    				var a = e[s];
+    				a in n || (n[a] = {}), (n = n[a]);
+    			}
+    			(t = t((s = n[(e = e[e.length - 1])]))) != s && null != t && $jscomp.defineProperty(n, e, { configurable: !0, writable: !0, value: t });
+    		}
+    	}

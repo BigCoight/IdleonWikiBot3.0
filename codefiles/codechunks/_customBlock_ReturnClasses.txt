@@ -1,0 +1,56 @@
+                        (H._customBlock_ReturnClasses = function(t) {
+                        		var s = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			a = [];
+                        		if (
+                        			(null != e.AllClassDList ? s.setReserved("AllClassDList", a) : (s.h.AllClassDList = a),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.AllClassDN ? s.setReserved("AllClassDN", 0) : (s.h.AllClassDN = 0), 6 > t)) {
+                        			for (s = 0, t |= 0; s < t;) {
+                        				a = s++;
+                        				var r = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        				(null != e.AllClassDList ? r.getReserved("AllClassDList") : r.h.AllClassDList).push(a + 1);
+                        			}
+                        			return (t = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.AllClassDList ? t.getReserved("AllClassDList") : t.h.AllClassDList;
+                        		}
+                        		return (
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = t - 6 - 12 * Math.floor((t - 6) / 12)), null != e.AllClassDN ? s.setReserved("AllClassDN", a) : (s.h.AllClassDN = a),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")), 7 < (null == (s = null != e.AllClassDN ? s.getReserved("AllClassDN") : s.h.AllClassDN) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) ? ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(null != e.AllClassDList ? s.getReserved("AllClassDList") : s.h.AllClassDList).push(6 + 12 * Math.floor((t - 6) / 12)),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = null != e.AllClassDList ? s.getReserved("AllClassDList") : s.h.AllClassDList),
+                        				(a = 12 * Math.floor((t - 6) / 12)),
+                        				(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = null != e.AllClassDN ? r.getReserved("AllClassDN") : r.h.AllClassDN), s.push(6 + (a + Math.ceil(parseNum(r) / 12))),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = null != e.AllClassDList ? s.getReserved("AllClassDList") : s.h.AllClassDList),
+                        				(a = 12 * Math.floor((t - 6) / 12)),
+                        				(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = null != e.AllClassDN ? r.getReserved("AllClassDN") : r.h.AllClassDN), s.push(6 + (a + Math.ceil(
+                        					(parseNum(r) - 5) / 2))),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = null != e.AllClassDList ? s.getReserved("AllClassDList") : s.h.AllClassDList),
+                        				(a = 12 * Math.floor((t - 6) / 12)),
+                        				(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = null != e.AllClassDN ? r.getReserved("AllClassDN") : r.h.AllClassDN), s.push(6 + (a + (parseNum(r) - 4)))) : ((s = b.engine.getGameAttribute("DummyNumbersStatManager")), 3 < (null == (s = null != e.AllClassDN ? s.getReserved("AllClassDN") : s.h.AllClassDN) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) ? ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(null != e.AllClassDList ? s.getReserved("AllClassDList") : s.h.AllClassDList).push(6 + 12 * Math.floor((t - 6) / 12)),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = null != e.AllClassDList ? s.getReserved("AllClassDList") : s.h.AllClassDList),
+                        				(a = 12 * Math.floor((t - 6) / 12)),
+                        				(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = null != e.AllClassDN ? r.getReserved("AllClassDN") : r.h.AllClassDN), s.push(6 + (a + Math.ceil(parseNum(r) / 12))),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = null != e.AllClassDList ? s.getReserved("AllClassDList") : s.h.AllClassDList),
+                        				(a = 12 * Math.floor((t - 6) / 12)),
+                        				(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = null != e.AllClassDN ? r.getReserved("AllClassDN") : r.h.AllClassDN), s.push(6 + (a + Math.ceil(
+                        					(parseNum(r) - 1) / 2)))) : ((s = b.engine.getGameAttribute("DummyNumbersStatManager")), 1 < (null == (s = null != e.AllClassDN ? s.getReserved("AllClassDN") : s.h.AllClassDN) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) ? ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(null != e.AllClassDList ? s.getReserved("AllClassDList") : s.h.AllClassDList).push(6 + 12 * Math.floor((t - 6) / 12)),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = null != e.AllClassDList ? s.getReserved("AllClassDList") : s.h.AllClassDList),
+                        				(a = 12 * Math.floor((t - 6) / 12)),
+                        				(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = null != e.AllClassDN ? r.getReserved("AllClassDN") : r.h.AllClassDN), s.push(6 + (a + Math.ceil(parseNum(r) / 12)))) : ((s = b.engine.getGameAttribute("DummyNumbersStatManager")), 0 < (null == (s = null != e.AllClassDN ? s.getReserved("AllClassDN") : s.h.AllClassDN) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) && ((s = b.engine.getGameAttribute("DummyNumbersStatManager")), (null != e.AllClassDList ? s.getReserved("AllClassDList") : s.h.AllClassDList).push(6 + 12 * Math.floor((t - 6) / 12)))))),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(null != e.AllClassDList ? s.getReserved("AllClassDList") : s.h.AllClassDList).push(t),
+                        			(t = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.AllClassDList ? t.getReserved("AllClassDList") : t.h.AllClassDList);
+                        	}

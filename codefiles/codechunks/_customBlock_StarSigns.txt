@@ -1,0 +1,624 @@
+                        (U._customBlock_StarSigns = function(t) {
+                        		var s = b.engine.getGameAttribute("DNSM"),
+                        			a = b.engine.getGameAttribute("PersonalValuesMap"),
+                        			r = ("" + g.string(null != e.StarSign ? a.getReserved("StarSign") : a.h.StarSign)).split(",");
+                        		null != e.StarSignsDL ? s.setReserved("StarSignsDL", r) : (s.h.StarSignsDL = r);
+                        		var o = b.engine.getGameAttribute("DNSM"),
+                        			i = new p();
+                        		if ((null != e.StarSigns ? o.setReserved("StarSigns", i) : (o.h.StarSigns = i), null != b.engine.getGameAttribute("PersonalValuesMap"))) {
+                        			var u = b.engine.getGameAttribute("PersonalValuesMap");
+                        			if (null != e.StarSign ? u.existsReserved("StarSign") : u.h.hasOwnProperty("StarSign")) {
+                        				var m = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? m.getReserved("StarSignsDL") : m.h.StarSignsDL, "0")) {
+                        					var c = b.engine.getGameAttribute("DNSM"),
+                        						h = null != e.StarSigns ? c.getReserved("StarSigns") : c.h.StarSigns;
+                        					null != e.PctDmg ? h.setReserved("PctDmg", 1) : (h.h.PctDmg = 1);
+                        					var f = b.engine.getGameAttribute("DNSM"),
+                        						y = null != e.StarSigns ? f.getReserved("StarSigns") : f.h.StarSigns;
+                        					null != e.STR ? y.setReserved("STR", 3) : (y.h.STR = 3);
+                        				}
+                        				var R = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? R.getReserved("StarSignsDL") : R.h.StarSignsDL, "1")) {
+                        					var v = b.engine.getGameAttribute("DNSM"),
+                        						F = null != e.StarSigns ? v.getReserved("StarSigns") : v.h.StarSigns;
+                        					null != e.MoveSpd ? F.setReserved("MoveSpd", 2) : (F.h.MoveSpd = 2);
+                        					var N = b.engine.getGameAttribute("DNSM"),
+                        						_ = null != e.StarSigns ? N.getReserved("StarSigns") : N.h.StarSigns;
+                        					null != e.AGI ? _.setReserved("AGI", 3) : (_.h.AGI = 3);
+                        				}
+                        				var I = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? I.getReserved("StarSignsDL") : I.h.StarSignsDL, "2")) {
+                        					var D = b.engine.getGameAttribute("DNSM"),
+                        						E = null != e.StarSigns ? D.getReserved("StarSigns") : D.h.StarSigns;
+                        					null != e.MainXP ? E.setReserved("MainXP", 1) : (E.h.MainXP = 1);
+                        					var S = b.engine.getGameAttribute("DNSM"),
+                        						G = null != e.StarSigns ? S.getReserved("StarSigns") : S.h.StarSigns;
+                        					null != e.WIS ? G.setReserved("WIS", 3) : (G.h.WIS = 3);
+                        				}
+                        				var T = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? T.getReserved("StarSignsDL") : T.h.StarSignsDL, "3")) {
+                        					var U = b.engine.getGameAttribute("DNSM"),
+                        						M = null != e.StarSigns ? U.getReserved("StarSigns") : U.h.StarSigns;
+                        					null != e.TalPts1 ? M.setReserved("TalPts1", 3) : (M.h.TalPts1 = 3);
+                        					var V = b.engine.getGameAttribute("DNSM"),
+                        						C = null != e.StarSigns ? V.getReserved("StarSigns") : V.h.StarSigns;
+                        					null != e.LUK ? C.setReserved("LUK", 3) : (C.h.LUK = 3);
+                        				}
+                        				var B = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? B.getReserved("StarSignsDL") : B.h.StarSignsDL, "4")) {
+                        					var P = b.engine.getGameAttribute("DNSM"),
+                        						O = null != e.StarSigns ? P.getReserved("StarSigns") : P.h.StarSigns;
+                        					null != e.MiningEff ? O.setReserved("MiningEff", 5) : (O.h.MiningEff = 5);
+                        					var w = b.engine.getGameAttribute("DNSM"),
+                        						x = null != e.StarSigns ? w.getReserved("StarSigns") : w.h.StarSigns;
+                        					null != e.MultiOre ? x.setReserved("MultiOre", 20) : (x.h.MultiOre = 20);
+                        				}
+                        				var Q = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Q.getReserved("StarSignsDL") : Q.h.StarSignsDL, "5")) {
+                        					var X = b.engine.getGameAttribute("DNSM"),
+                        						L = null != e.StarSigns ? X.getReserved("StarSigns") : X.h.StarSigns;
+                        					null != e.ChopEff ? L.setReserved("ChopEff", 5) : (L.h.ChopEff = 5);
+                        					var z = b.engine.getGameAttribute("DNSM"),
+                        						Y = null != e.StarSigns ? z.getReserved("StarSigns") : z.h.StarSigns;
+                        					null != e.MultiLog ? Y.setReserved("MultiLog", 20) : (Y.h.MultiLog = 20);
+                        				}
+                        				var W = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? W.getReserved("StarSignsDL") : W.h.StarSignsDL, "6")) {
+                        					var Z = b.engine.getGameAttribute("DNSM"),
+                        						H = null != e.StarSigns ? Z.getReserved("StarSigns") : Z.h.StarSigns;
+                        					null != e.FishEff ? H.setReserved("FishEff", 5) : (H.h.FishEff = 5);
+                        					var J = b.engine.getGameAttribute("DNSM"),
+                        						j = null != e.StarSigns ? J.getReserved("StarSigns") : J.h.StarSigns;
+                        					null != e.MultiFish ? j.setReserved("MultiFish", 20) : (j.h.MultiFish = 20);
+                        				}
+                        				var q = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? q.getReserved("StarSignsDL") : q.h.StarSignsDL, "7")) {
+                        					var K = b.engine.getGameAttribute("DNSM"),
+                        						$ = null != e.StarSigns ? K.getReserved("StarSigns") : K.h.StarSigns;
+                        					null != e.CatchingEff ? $.setReserved("CatchingEff", 5) : ($.h.CatchingEff = 5);
+                        					var ee = b.engine.getGameAttribute("DNSM"),
+                        						te = null != e.StarSigns ? ee.getReserved("StarSigns") : ee.h.StarSigns;
+                        					null != e.MultiBug ? te.setReserved("MultiBug", 20) : (te.h.MultiBug = 20);
+                        				}
+                        				var ne = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? ne.getReserved("StarSignsDL") : ne.h.StarSignsDL, "8")) {
+                        					var se = b.engine.getGameAttribute("DNSM"),
+                        						ae = null != e.StarSigns ? se.getReserved("StarSigns") : se.h.StarSigns,
+                        						re = b.engine.getGameAttribute("DNSM"),
+                        						Ae = null != e.StarSigns ? re.getReserved("StarSigns") : re.h.StarSigns,
+                        						le = null != e.MoveSpd ? Ae.getReserved("MoveSpd") : Ae.h.MoveSpd,
+                        						oe = 4 + parseNum(le);
+                        					null != e.MoveSpd ? ae.setReserved("MoveSpd", oe) : (ae.h.MoveSpd = oe);
+                        					var ie = b.engine.getGameAttribute("DNSM"),
+                        						ue = null != e.StarSigns ? ie.getReserved("StarSigns") : ie.h.StarSigns;
+                        					null != e.RingDrop ? ue.setReserved("RingDrop", 1) : (ue.h.RingDrop = 1);
+                        				}
+                        				var ge = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? ge.getReserved("StarSignsDL") : ge.h.StarSignsDL, "9")) {
+                        					var me = b.engine.getGameAttribute("DNSM"),
+                        						de = null != e.StarSigns ? me.getReserved("StarSigns") : me.h.StarSigns;
+                        					null != e.TimeCandy ? de.setReserved("TimeCandy", 20) : (de.h.TimeCandy = 20);
+                        				}
+                        				var ce = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? ce.getReserved("StarSignsDL") : ce.h.StarSignsDL, "10")) {
+                        					var pe = b.engine.getGameAttribute("DNSM"),
+                        						he = null != e.StarSigns ? pe.getReserved("StarSigns") : pe.h.StarSigns;
+                        					null != e.ExpActive ? he.setReserved("ExpActive", 15) : (he.h.ExpActive = 15);
+                        				}
+                        				var be = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? be.getReserved("StarSignsDL") : be.h.StarSignsDL, "11")) {
+                        					var fe = b.engine.getGameAttribute("DNSM"),
+                        						ye = null != e.StarSigns ? fe.getReserved("StarSigns") : fe.h.StarSigns;
+                        					null != e.CarryCap ? ye.setReserved("CarryCap", 10) : (ye.h.CarryCap = 10);
+                        				}
+                        				var Re = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Re.getReserved("StarSignsDL") : Re.h.StarSignsDL, "12")) {
+                        					var ve = b.engine.getGameAttribute("DNSM"),
+                        						Fe = null != e.StarSigns ? ve.getReserved("StarSigns") : ve.h.StarSigns;
+                        					null != e.DefPct ? Fe.setReserved("DefPct", 6) : (Fe.h.DefPct = 6);
+                        					var Ne = b.engine.getGameAttribute("DNSM"),
+                        						_e = null != e.StarSigns ? Ne.getReserved("StarSigns") : Ne.h.StarSigns;
+                        					null != e.WepPow ? _e.setReserved("WepPow", 2) : (_e.h.WepPow = 2);
+                        				}
+                        				var Ie = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Ie.getReserved("StarSignsDL") : Ie.h.StarSignsDL, "13")) {
+                        					var De = b.engine.getGameAttribute("DNSM"),
+                        						Ee = null != e.StarSigns ? De.getReserved("StarSigns") : De.h.StarSigns;
+                        					null != e.AccPct ? Ee.setReserved("AccPct", 4) : (Ee.h.AccPct = 4);
+                        					var Se = b.engine.getGameAttribute("DNSM"),
+                        						Ge = null != e.StarSigns ? Se.getReserved("StarSigns") : Se.h.StarSigns,
+                        						Te = b.engine.getGameAttribute("DNSM"),
+                        						Ue = null != e.StarSigns ? Te.getReserved("StarSigns") : Te.h.StarSigns,
+                        						Me = null != e.MoveSpd ? Ue.getReserved("MoveSpd") : Ue.h.MoveSpd,
+                        						Ve = 2 + parseNum(Me);
+                        					null != e.MoveSpd ? Ge.setReserved("MoveSpd", Ve) : (Ge.h.MoveSpd = Ve);
+                        				}
+                        				var Ce = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Ce.getReserved("StarSignsDL") : Ce.h.StarSignsDL, "14")) {
+                        					var Be = b.engine.getGameAttribute("DNSM"),
+                        						Pe = null != e.StarSigns ? Be.getReserved("StarSigns") : Be.h.StarSigns;
+                        					null != e.Drop ? Pe.setReserved("Drop", 5) : (Pe.h.Drop = 5);
+                        				}
+                        				var Oe = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Oe.getReserved("StarSignsDL") : Oe.h.StarSignsDL, "15")) {
+                        					var we = b.engine.getGameAttribute("DNSM"),
+                        						ke = null != e.StarSigns ? we.getReserved("StarSigns") : we.h.StarSigns,
+                        						xe = b.engine.getGameAttribute("DNSM"),
+                        						Qe = null != e.StarSigns ? xe.getReserved("StarSigns") : xe.h.StarSigns,
+                        						Xe = null != e.STR ? Qe.getReserved("STR") : Qe.h.STR,
+                        						Le = 8 + parseNum(Xe);
+                        					null != e.STR ? ke.setReserved("STR", Le) : (ke.h.STR = Le);
+                        				}
+                        				var ze = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? ze.getReserved("StarSignsDL") : ze.h.StarSignsDL, "16")) {
+                        					var Ye = b.engine.getGameAttribute("DNSM"),
+                        						We = null != e.StarSigns ? Ye.getReserved("StarSigns") : Ye.h.StarSigns,
+                        						Ze = b.engine.getGameAttribute("DNSM"),
+                        						He = null != e.StarSigns ? Ze.getReserved("StarSigns") : Ze.h.StarSigns,
+                        						Je = null != e.AGI ? He.getReserved("AGI") : He.h.AGI,
+                        						je = 8 + parseNum(Je);
+                        					null != e.AGI ? We.setReserved("AGI", je) : (We.h.AGI = je);
+                        				}
+                        				var qe = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? qe.getReserved("StarSignsDL") : qe.h.StarSignsDL, "17")) {
+                        					var Ke = b.engine.getGameAttribute("DNSM"),
+                        						$e = null != e.StarSigns ? Ke.getReserved("StarSigns") : Ke.h.StarSigns,
+                        						et = b.engine.getGameAttribute("DNSM"),
+                        						tt = null != e.StarSigns ? et.getReserved("StarSigns") : et.h.StarSigns,
+                        						nt = null != e.WIS ? tt.getReserved("WIS") : tt.h.WIS,
+                        						st = 8 + parseNum(nt);
+                        					null != e.WIS ? $e.setReserved("WIS", st) : ($e.h.WIS = st);
+                        				}
+                        				var at = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? at.getReserved("StarSignsDL") : at.h.StarSignsDL, "18")) {
+                        					var rt = b.engine.getGameAttribute("DNSM"),
+                        						At = null != e.StarSigns ? rt.getReserved("StarSigns") : rt.h.StarSigns,
+                        						lt = b.engine.getGameAttribute("DNSM"),
+                        						ot = null != e.StarSigns ? lt.getReserved("StarSigns") : lt.h.StarSigns,
+                        						it = null != e.LUK ? ot.getReserved("LUK") : ot.h.LUK,
+                        						ut = 8 + parseNum(it);
+                        					null != e.LUK ? At.setReserved("LUK", ut) : (At.h.LUK = ut);
+                        				}
+                        				var gt = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? gt.getReserved("StarSignsDL") : gt.h.StarSignsDL, "19")) {
+                        					var mt = b.engine.getGameAttribute("DNSM"),
+                        						dt = null != e.StarSigns ? mt.getReserved("StarSigns") : mt.h.StarSigns;
+                        					null != e.FightAFK ? dt.setReserved("FightAFK", 2) : (dt.h.FightAFK = 2);
+                        				}
+                        				var ct = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? ct.getReserved("StarSignsDL") : ct.h.StarSignsDL, "20")) {
+                        					var pt = b.engine.getGameAttribute("DNSM"),
+                        						ht = null != e.StarSigns ? pt.getReserved("StarSigns") : pt.h.StarSigns;
+                        					null != e.SkillAFK ? ht.setReserved("SkillAFK", 2) : (ht.h.SkillAFK = 2);
+                        				}
+                        				var bt = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? bt.getReserved("StarSignsDL") : bt.h.StarSignsDL, "21")) {
+                        					var ft = b.engine.getGameAttribute("DNSM"),
+                        						yt = null != e.StarSigns ? ft.getReserved("StarSigns") : ft.h.StarSigns;
+                        					null != e.Minigame ? yt.setReserved("Minigame", 30) : (yt.h.Minigame = 30);
+                        				}
+                        				var Rt = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Rt.getReserved("StarSignsDL") : Rt.h.StarSignsDL, "22")) {
+                        					var vt = b.engine.getGameAttribute("DNSM"),
+                        						Ft = null != e.StarSigns ? vt.getReserved("StarSigns") : vt.h.StarSigns;
+                        					null != e.NoConsumeFood ? Ft.setReserved("NoConsumeFood", 10) : (Ft.h.NoConsumeFood = 10);
+                        					var Nt = b.engine.getGameAttribute("DNSM"),
+                        						_t = null != e.StarSigns ? Nt.getReserved("StarSigns") : Nt.h.StarSigns;
+                        					null != e.FoodEffect ? _t.setReserved("FoodEffect", 15) : (_t.h.FoodEffect = 15);
+                        				}
+                        				var It = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? It.getReserved("StarSignsDL") : It.h.StarSignsDL, "23")) {
+                        					var Dt = b.engine.getGameAttribute("DNSM"),
+                        						Et = null != e.StarSigns ? Dt.getReserved("StarSigns") : Dt.h.StarSigns;
+                        					null != e.TownSkillSpd ? Et.setReserved("TownSkillSpd", 10) : (Et.h.TownSkillSpd = 10);
+                        				}
+                        				var St = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? St.getReserved("StarSignsDL") : St.h.StarSignsDL, "24")) {
+                        					var Gt = b.engine.getGameAttribute("DNSM"),
+                        						Tt = null != e.StarSigns ? Gt.getReserved("StarSigns") : Gt.h.StarSigns,
+                        						Ut = b.engine.getGameAttribute("DNSM"),
+                        						Mt = null != e.StarSigns ? Ut.getReserved("StarSigns") : Ut.h.StarSigns,
+                        						Vt = null != e.MainXP ? Mt.getReserved("MainXP") : Mt.h.MainXP,
+                        						Ct = 3 + parseNum(Vt);
+                        					null != e.MainXP ? Tt.setReserved("MainXP", Ct) : (Tt.h.MainXP = Ct);
+                        				}
+                        				var Bt = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Bt.getReserved("StarSignsDL") : Bt.h.StarSignsDL, "25")) {
+                        					var Pt = b.engine.getGameAttribute("DNSM"),
+                        						Ot = null != e.StarSigns ? Pt.getReserved("StarSigns") : Pt.h.StarSigns,
+                        						wt = b.engine.getGameAttribute("DNSM"),
+                        						kt = null != e.StarSigns ? wt.getReserved("StarSigns") : wt.h.StarSigns,
+                        						xt = null != e.CarryCap ? kt.getReserved("CarryCap") : kt.h.CarryCap,
+                        						Qt = 5 + parseNum(xt);
+                        					null != e.CarryCap ? Ot.setReserved("CarryCap", Qt) : (Ot.h.CarryCap = Qt);
+                        					var Xt = b.engine.getGameAttribute("DNSM"),
+                        						Lt = null != e.StarSigns ? Xt.getReserved("StarSigns") : Xt.h.StarSigns,
+                        						zt = b.engine.getGameAttribute("DNSM"),
+                        						Yt = null != e.StarSigns ? zt.getReserved("StarSigns") : zt.h.StarSigns,
+                        						Wt = null != e.SkillAFK ? Yt.getReserved("SkillAFK") : Yt.h.SkillAFK,
+                        						Zt = 1 + parseNum(Wt);
+                        					null != e.SkillAFK ? Lt.setReserved("SkillAFK", Zt) : (Lt.h.SkillAFK = Zt);
+                        					var Ht = b.engine.getGameAttribute("DNSM"),
+                        						Jt = null != e.StarSigns ? Ht.getReserved("StarSigns") : Ht.h.StarSigns;
+                        					null != e.SkillProw ? Jt.setReserved("SkillProw", 2) : (Jt.h.SkillProw = 2);
+                        				}
+                        				var jt = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? jt.getReserved("StarSignsDL") : jt.h.StarSignsDL, "26")) {
+                        					var qt = b.engine.getGameAttribute("DNSM"),
+                        						Kt = null != e.StarSigns ? qt.getReserved("StarSigns") : qt.h.StarSigns;
+                        					null != e.MobRespawn ? Kt.setReserved("MobRespawn", 2) : (Kt.h.MobRespawn = 2);
+                        				}
+                        				var $t = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? $t.getReserved("StarSignsDL") : $t.h.StarSignsDL, "27")) {
+                        					var en = b.engine.getGameAttribute("DNSM"),
+                        						tn = null != e.StarSigns ? en.getReserved("StarSigns") : en.h.StarSigns;
+                        					null != e.BossDamage ? tn.setReserved("BossDamage", 3) : (tn.h.BossDamage = 3);
+                        					var nn = b.engine.getGameAttribute("DNSM"),
+                        						sn = null != e.StarSigns ? nn.getReserved("StarSigns") : nn.h.StarSigns;
+                        					null != e.CritChance ? sn.setReserved("CritChance", 4) : (sn.h.CritChance = 4);
+                        				}
+                        				var an = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? an.getReserved("StarSignsDL") : an.h.StarSignsDL, "28")) {
+                        					var rn = b.engine.getGameAttribute("DNSM"),
+                        						An = null != e.StarSigns ? rn.getReserved("StarSigns") : rn.h.StarSigns;
+                        					null != e.TotalHP ? An.setReserved("TotalHP", -80) : (An.h.TotalHP = -80);
+                        					var ln = b.engine.getGameAttribute("DNSM"),
+                        						on = null != e.StarSigns ? ln.getReserved("StarSigns") : ln.h.StarSigns,
+                        						un = b.engine.getGameAttribute("DNSM"),
+                        						gn = null != e.StarSigns ? un.getReserved("StarSigns") : un.h.StarSigns,
+                        						mn = null != e.DefPct ? gn.getReserved("DefPct") : gn.h.DefPct,
+                        						dn = -50 + parseNum(mn);
+                        					null != e.DefPct ? on.setReserved("DefPct", dn) : (on.h.DefPct = dn);
+                        					var cn = b.engine.getGameAttribute("DNSM"),
+                        						pn = null != e.StarSigns ? cn.getReserved("StarSigns") : cn.h.StarSigns,
+                        						hn = b.engine.getGameAttribute("DNSM"),
+                        						bn = null != e.StarSigns ? hn.getReserved("StarSigns") : hn.h.StarSigns,
+                        						fn = null != e.FightAFK ? bn.getReserved("FightAFK") : bn.h.FightAFK,
+                        						yn = 6 + parseNum(fn);
+                        					null != e.FightAFK ? pn.setReserved("FightAFK", yn) : (pn.h.FightAFK = yn);
+                        				}
+                        				var Rn = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Rn.getReserved("StarSignsDL") : Rn.h.StarSignsDL, "29")) {
+                        					var vn = b.engine.getGameAttribute("DNSM"),
+                        						Fn = null != e.StarSigns ? vn.getReserved("StarSigns") : vn.h.StarSigns,
+                        						Nn = b.engine.getGameAttribute("DNSM"),
+                        						_n = null != e.StarSigns ? Nn.getReserved("StarSigns") : Nn.h.StarSigns,
+                        						In = null != e.FightAFK ? _n.getReserved("FightAFK") : _n.h.FightAFK,
+                        						Dn = -6 + parseNum(In);
+                        					null != e.FightAFK ? Fn.setReserved("FightAFK", Dn) : (Fn.h.FightAFK = Dn);
+                        					var En = b.engine.getGameAttribute("DNSM"),
+                        						Sn = null != e.StarSigns ? En.getReserved("StarSigns") : En.h.StarSigns,
+                        						Gn = b.engine.getGameAttribute("DNSM"),
+                        						Tn = null != e.StarSigns ? Gn.getReserved("StarSigns") : Gn.h.StarSigns,
+                        						Un = null != e.SkillAFK ? Tn.getReserved("SkillAFK") : Tn.h.SkillAFK,
+                        						Mn = -6 + parseNum(Un);
+                        					null != e.SkillAFK ? Sn.setReserved("SkillAFK", Mn) : (Sn.h.SkillAFK = Mn);
+                        					var Vn = b.engine.getGameAttribute("DNSM"),
+                        						Cn = null != e.StarSigns ? Vn.getReserved("StarSigns") : Vn.h.StarSigns,
+                        						Bn = b.engine.getGameAttribute("DNSM"),
+                        						Pn = null != e.StarSigns ? Bn.getReserved("StarSigns") : Bn.h.StarSigns,
+                        						On = null != e.CarryCap ? Pn.getReserved("CarryCap") : Pn.h.CarryCap,
+                        						wn = 30 + parseNum(On);
+                        					null != e.CarryCap ? Cn.setReserved("CarryCap", wn) : (Cn.h.CarryCap = wn);
+                        				}
+                        				var kn = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? kn.getReserved("StarSignsDL") : kn.h.StarSignsDL, "30")) {
+                        					var xn = b.engine.getGameAttribute("DNSM"),
+                        						Qn = null != e.StarSigns ? xn.getReserved("StarSigns") : xn.h.StarSigns;
+                        					null != e.SkillEXP ? Qn.setReserved("SkillEXP", 3) : (Qn.h.SkillEXP = 3);
+                        				}
+                        				var Xn = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Xn.getReserved("StarSignsDL") : Xn.h.StarSignsDL, "31")) {
+                        					var Ln = b.engine.getGameAttribute("DNSM"),
+                        						zn = null != e.StarSigns ? Ln.getReserved("StarSigns") : Ln.h.StarSigns,
+                        						Yn = b.engine.getGameAttribute("DNSM"),
+                        						Wn = null != e.StarSigns ? Yn.getReserved("StarSigns") : Yn.h.StarSigns,
+                        						Zn = null != e.STR ? Wn.getReserved("STR") : Wn.h.STR,
+                        						Hn = 4 + parseNum(Zn);
+                        					null != e.STR ? zn.setReserved("STR", Hn) : (zn.h.STR = Hn);
+                        					var Jn = b.engine.getGameAttribute("DNSM"),
+                        						jn = null != e.StarSigns ? Jn.getReserved("StarSigns") : Jn.h.StarSigns,
+                        						qn = b.engine.getGameAttribute("DNSM"),
+                        						Kn = null != e.StarSigns ? qn.getReserved("StarSigns") : qn.h.StarSigns,
+                        						$n = null != e.AGI ? Kn.getReserved("AGI") : Kn.h.AGI,
+                        						es = 4 + (null == $n ? 0 : "number" == typeof $n ? d.__cast($n, k) : "number" == typeof $n && (0 | $n) === $n ? d.__cast($n, l) : "boolean" == typeof $n ? d.__cast($n, n) ? 1 : 0 : "string" == typeof $n ? parseFloat($n) : parseFloat(g.string($n)));
+                        					null != e.AGI ? jn.setReserved("AGI", es) : (jn.h.AGI = es);
+                        					var ts = b.engine.getGameAttribute("DNSM"),
+                        						ns = null != e.StarSigns ? ts.getReserved("StarSigns") : ts.h.StarSigns,
+                        						ss = b.engine.getGameAttribute("DNSM"),
+                        						as = null != e.StarSigns ? ss.getReserved("StarSigns") : ss.h.StarSigns,
+                        						rs = null != e.WIS ? as.getReserved("WIS") : as.h.WIS,
+                        						As = 4 + parseNum(rs);
+                        					null != e.WIS ? ns.setReserved("WIS", As) : (ns.h.WIS = As);
+                        					var ls = b.engine.getGameAttribute("DNSM"),
+                        						os = null != e.StarSigns ? ls.getReserved("StarSigns") : ls.h.StarSigns,
+                        						is = b.engine.getGameAttribute("DNSM"),
+                        						us = null != e.StarSigns ? is.getReserved("StarSigns") : is.h.StarSigns,
+                        						gs = null != e.LUK ? us.getReserved("LUK") : us.h.LUK,
+                        						ms = 4 + parseNum(gs);
+                        					null != e.LUK ? os.setReserved("LUK", ms) : (os.h.LUK = ms);
+                        				}
+                        				var ds = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? ds.getReserved("StarSignsDL") : ds.h.StarSignsDL, "32")) {
+                        					var cs = b.engine.getGameAttribute("DNSM"),
+                        						ps = null != e.StarSigns ? cs.getReserved("StarSigns") : cs.h.StarSigns,
+                        						hs = b.engine.getGameAttribute("DNSM"),
+                        						bs = null != e.StarSigns ? hs.getReserved("StarSigns") : hs.h.StarSigns,
+                        						fs = null != e.MoveSpd ? bs.getReserved("MoveSpd") : bs.h.MoveSpd,
+                        						ys = -3 + parseNum(fs);
+                        					null != e.MoveSpd ? ps.setReserved("MoveSpd", ys) : (ps.h.MoveSpd = ys);
+                        					var Rs = b.engine.getGameAttribute("DNSM"),
+                        						vs = null != e.StarSigns ? Rs.getReserved("StarSigns") : Rs.h.StarSigns,
+                        						Fs = b.engine.getGameAttribute("DNSM"),
+                        						Ns = null != e.StarSigns ? Fs.getReserved("StarSigns") : Fs.h.StarSigns,
+                        						_s = null != e.DefPct ? Ns.getReserved("DefPct") : Ns.h.DefPct,
+                        						Is = 5 + parseNum(_s);
+                        					null != e.DefPct ? vs.setReserved("DefPct", Is) : (vs.h.DefPct = Is);
+                        					var Ds = b.engine.getGameAttribute("DNSM"),
+                        						Es = null != e.StarSigns ? Ds.getReserved("StarSigns") : Ds.h.StarSigns;
+                        					null != e.PctDmg ? Es.setReserved("PctDmg", 2) : (Es.h.PctDmg = 2);
+                        				}
+                        				var Ss = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Ss.getReserved("StarSignsDL") : Ss.h.StarSignsDL, "34")) {
+                        					var Gs = b.engine.getGameAttribute("DNSM"),
+                        						Ts = null != e.StarSigns ? Gs.getReserved("StarSigns") : Gs.h.StarSigns;
+                        					null != e.pctSTR ? Ts.setReserved("pctSTR", 1) : (Ts.h.pctSTR = 1);
+                        					var Us = b.engine.getGameAttribute("DNSM"),
+                        						Ms = null != e.StarSigns ? Us.getReserved("StarSigns") : Us.h.StarSigns;
+                        					null != e.pctAGI ? Ms.setReserved("pctAGI", 1) : (Ms.h.pctAGI = 1);
+                        					var Vs = b.engine.getGameAttribute("DNSM"),
+                        						Cs = null != e.StarSigns ? Vs.getReserved("StarSigns") : Vs.h.StarSigns;
+                        					null != e.pctWIS ? Cs.setReserved("pctWIS", 1) : (Cs.h.pctWIS = 1);
+                        					var Bs = b.engine.getGameAttribute("DNSM"),
+                        						Ps = null != e.StarSigns ? Bs.getReserved("StarSigns") : Bs.h.StarSigns;
+                        					null != e.pctLUK ? Ps.setReserved("pctLUK", 1) : (Ps.h.pctLUK = 1);
+                        				}
+                        				var Os = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Os.getReserved("StarSignsDL") : Os.h.StarSignsDL, "35")) {
+                        					var ws = b.engine.getGameAttribute("DNSM"),
+                        						ks = null != e.StarSigns ? ws.getReserved("StarSigns") : ws.h.StarSigns,
+                        						xs = b.engine.getGameAttribute("DNSM"),
+                        						Qs = null != e.StarSigns ? xs.getReserved("StarSigns") : xs.h.StarSigns,
+                        						Xs = null != e.AccPct ? Qs.getReserved("AccPct") : Qs.h.AccPct,
+                        						Ls = 10 + parseNum(Xs);
+                        					null != e.AccPct ? ks.setReserved("AccPct", Ls) : (ks.h.AccPct = Ls);
+                        				}
+                        				var zs = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? zs.getReserved("StarSignsDL") : zs.h.StarSignsDL, "36")) {
+                        					var Ys = b.engine.getGameAttribute("DNSM"),
+                        						Ws = null != e.StarSigns ? Ys.getReserved("StarSigns") : Ys.h.StarSigns,
+                        						Zs = b.engine.getGameAttribute("DNSM"),
+                        						Hs = null != e.StarSigns ? Zs.getReserved("StarSigns") : Zs.h.StarSigns,
+                        						Js = null != e.DefPct ? Hs.getReserved("DefPct") : Hs.h.DefPct,
+                        						js = 10 + parseNum(Js);
+                        					null != e.DefPct ? Ws.setReserved("DefPct", js) : (Ws.h.DefPct = js);
+                        				}
+                        				var qs = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? qs.getReserved("StarSignsDL") : qs.h.StarSignsDL, "37")) {
+                        					var Ks = b.engine.getGameAttribute("DNSM"),
+                        						$s = null != e.StarSigns ? Ks.getReserved("StarSigns") : Ks.h.StarSigns,
+                        						ea = b.engine.getGameAttribute("DNSM"),
+                        						ta = null != e.StarSigns ? ea.getReserved("StarSigns") : ea.h.StarSigns,
+                        						na = null != e.pctSTR ? ta.getReserved("pctSTR") : ta.h.pctSTR,
+                        						sa = 3 + parseNum(na);
+                        					null != e.pctSTR ? $s.setReserved("pctSTR", sa) : ($s.h.pctSTR = sa);
+                        				}
+                        				var aa = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? aa.getReserved("StarSignsDL") : aa.h.StarSignsDL, "38")) {
+                        					var ra = b.engine.getGameAttribute("DNSM"),
+                        						Aa = null != e.StarSigns ? ra.getReserved("StarSigns") : ra.h.StarSigns,
+                        						la = b.engine.getGameAttribute("DNSM"),
+                        						oa = null != e.StarSigns ? la.getReserved("StarSigns") : la.h.StarSigns,
+                        						ia = null != e.pctAGI ? oa.getReserved("pctAGI") : oa.h.pctAGI,
+                        						ua = 3 + parseNum(ia);
+                        					null != e.pctAGI ? Aa.setReserved("pctAGI", ua) : (Aa.h.pctAGI = ua);
+                        				}
+                        				var ga = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? ga.getReserved("StarSignsDL") : ga.h.StarSignsDL, "39")) {
+                        					var ma = b.engine.getGameAttribute("DNSM"),
+                        						da = null != e.StarSigns ? ma.getReserved("StarSigns") : ma.h.StarSigns,
+                        						ca = b.engine.getGameAttribute("DNSM"),
+                        						pa = null != e.StarSigns ? ca.getReserved("StarSigns") : ca.h.StarSigns,
+                        						ha = null != e.pctWIS ? pa.getReserved("pctWIS") : pa.h.pctWIS,
+                        						ba = 3 + parseNum(ha);
+                        					null != e.pctWIS ? da.setReserved("pctWIS", ba) : (da.h.pctWIS = ba);
+                        				}
+                        				var fa = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? fa.getReserved("StarSignsDL") : fa.h.StarSignsDL, "40")) {
+                        					var ya = b.engine.getGameAttribute("DNSM"),
+                        						Ra = null != e.StarSigns ? ya.getReserved("StarSigns") : ya.h.StarSigns,
+                        						va = b.engine.getGameAttribute("DNSM"),
+                        						Fa = null != e.StarSigns ? va.getReserved("StarSigns") : va.h.StarSigns,
+                        						Na = null != e.pctLUK ? Fa.getReserved("pctLUK") : Fa.h.pctLUK,
+                        						_a = 3 + parseNum(Na);
+                        					null != e.pctLUK ? Ra.setReserved("pctLUK", _a) : (Ra.h.pctLUK = _a);
+                        				}
+                        				var Ia = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Ia.getReserved("StarSignsDL") : Ia.h.StarSignsDL, "41")) {
+                        					var Da = b.engine.getGameAttribute("DNSM"),
+                        						Ea = null != e.StarSigns ? Da.getReserved("StarSigns") : Da.h.StarSigns;
+                        					null != e.pctCardDrop ? Ea.setReserved("pctCardDrop", 15) : (Ea.h.pctCardDrop = 15);
+                        				}
+                        				var Sa = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Sa.getReserved("StarSignsDL") : Sa.h.StarSignsDL, "42")) {
+                        					var Ga = b.engine.getGameAttribute("DNSM"),
+                        						Ta = null != e.StarSigns ? Ga.getReserved("StarSigns") : Ga.h.StarSigns,
+                        						Ua = b.engine.getGameAttribute("DNSM"),
+                        						Ma = null != e.StarSigns ? Ua.getReserved("StarSigns") : Ua.h.StarSigns,
+                        						Va = null != e.BossDamage ? Ma.getReserved("BossDamage") : Ma.h.BossDamage,
+                        						Ca = 3 + parseNum(Va);
+                        					null != e.BossDamage ? Ta.setReserved("BossDamage", Ca) : (Ta.h.BossDamage = Ca);
+                        				}
+                        				var Ba = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Ba.getReserved("StarSignsDL") : Ba.h.StarSignsDL, "44")) {
+                        					var Pa = b.engine.getGameAttribute("DNSM"),
+                        						Oa = null != e.StarSigns ? Pa.getReserved("StarSigns") : Pa.h.StarSigns;
+                        					null != e.pctCritter ? Oa.setReserved("pctCritter", 2) : (Oa.h.pctCritter = 2);
+                        					var wa = b.engine.getGameAttribute("DNSM"),
+                        						ka = null != e.StarSigns ? wa.getReserved("StarSigns") : wa.h.StarSigns;
+                        					null != e.TrapEff ? ka.setReserved("TrapEff", 10) : (ka.h.TrapEff = 10);
+                        				}
+                        				var xa = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? xa.getReserved("StarSignsDL") : xa.h.StarSignsDL, "45")) {
+                        					var Qa = b.engine.getGameAttribute("DNSM"),
+                        						Xa = null != e.StarSigns ? Qa.getReserved("StarSigns") : Qa.h.StarSigns;
+                        					null != e.ConstExp ? Xa.setReserved("ConstExp", 25) : (Xa.h.ConstExp = 25);
+                        				}
+                        				var La = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? La.getReserved("StarSignsDL") : La.h.StarSignsDL, "46")) {
+                        					var za = b.engine.getGameAttribute("DNSM"),
+                        						Ya = null != e.StarSigns ? za.getReserved("StarSigns") : za.h.StarSigns;
+                        					null != e.WorshEff ? Ya.setReserved("WorshEff", 15) : (Ya.h.WorshEff = 15);
+                        					var Wa = b.engine.getGameAttribute("DNSM"),
+                        						Za = null != e.StarSigns ? Wa.getReserved("StarSigns") : Wa.h.StarSigns;
+                        					null != e.WorshExp ? Za.setReserved("WorshExp", 15) : (Za.h.WorshExp = 15);
+                        				}
+                        				var Ha = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Ha.getReserved("StarSignsDL") : Ha.h.StarSignsDL, "47")) {
+                        					var Ja = b.engine.getGameAttribute("DNSM"),
+                        						ja = null != e.StarSigns ? Ja.getReserved("StarSigns") : Ja.h.StarSigns;
+                        					null != e.MultiKill ? ja.setReserved("MultiKill", 15) : (ja.h.MultiKill = 15);
+                        				}
+                        				var qa = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? qa.getReserved("StarSignsDL") : qa.h.StarSignsDL, "48")) {
+                        					var Ka = b.engine.getGameAttribute("DNSM"),
+                        						$a = null != e.StarSigns ? Ka.getReserved("StarSigns") : Ka.h.StarSigns;
+                        					null != e.TC40p ? $a.setReserved("TC40p", 40) : ($a.h.TC40p = 40);
+                        				}
+                        				var er = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? er.getReserved("StarSignsDL") : er.h.StarSignsDL, "49")) {
+                        					var tr = b.engine.getGameAttribute("Lv0")[0];
+                        					if (59 < parseNum(tr)) {
+                        						var nr = b.engine.getGameAttribute("DNSM"),
+                        							sr = null != e.StarSigns ? nr.getReserved("StarSigns") : nr.h.StarSigns,
+                        							ar = b.engine.getGameAttribute("DNSM"),
+                        							rr = null != e.StarSigns ? ar.getReserved("StarSigns") : ar.h.StarSigns,
+                        							Ar = null != e.MobRespawn ? rr.getReserved("MobRespawn") : rr.h.MobRespawn,
+                        							lr = 4 + parseNum(Ar);
+                        						null != e.MobRespawn ? sr.setReserved("MobRespawn", lr) : (sr.h.MobRespawn = lr);
+                        					}
+                        				}
+                        				var or = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? or.getReserved("StarSignsDL") : or.h.StarSignsDL, "50")) {
+                        					var ir = b.engine.getGameAttribute("Lv0")[0];
+                        					if (69 < parseNum(ir)) {
+                        						var ur = b.engine.getGameAttribute("DNSM"),
+                        							gr = null != e.StarSigns ? ur.getReserved("StarSigns") : ur.h.StarSigns,
+                        							mr = b.engine.getGameAttribute("DNSM"),
+                        							dr = null != e.StarSigns ? mr.getReserved("StarSigns") : mr.h.StarSigns,
+                        							cr = null != e.SkillEXP ? dr.getReserved("SkillEXP") : dr.h.SkillEXP,
+                        							pr = 6 + parseNum(cr);
+                        						null != e.SkillEXP ? gr.setReserved("SkillEXP", pr) : (gr.h.SkillEXP = pr);
+                        					}
+                        				}
+                        				var hr = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? hr.getReserved("StarSignsDL") : hr.h.StarSignsDL, "51")) {
+                        					var br = b.engine.getGameAttribute("DNSM"),
+                        						fr = null != e.StarSigns ? br.getReserved("StarSigns") : br.h.StarSigns,
+                        						yr = b.engine.getGameAttribute("DNSM"),
+                        						Rr = null != e.StarSigns ? yr.getReserved("StarSigns") : yr.h.StarSigns,
+                        						vr = null != e.PctDmg ? Rr.getReserved("PctDmg") : Rr.h.PctDmg,
+                        						Fr = 20 + parseNum(vr);
+                        					null != e.PctDmg ? fr.setReserved("PctDmg", Fr) : (fr.h.PctDmg = Fr);
+                        					var Nr = b.engine.getGameAttribute("DNSM"),
+                        						_r = null != e.StarSigns ? Nr.getReserved("StarSigns") : Nr.h.StarSigns,
+                        						Ir = b.engine.getGameAttribute("DNSM"),
+                        						Dr = null != e.StarSigns ? Ir.getReserved("StarSigns") : Ir.h.StarSigns,
+                        						Er = null != e.MoveSpd ? Dr.getReserved("MoveSpd") : Dr.h.MoveSpd,
+                        						Sr = -12 + parseNum(Er);
+                        					null != e.MoveSpd ? _r.setReserved("MoveSpd", Sr) : (_r.h.MoveSpd = Sr);
+                        				}
+                        				var Gr = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Gr.getReserved("StarSignsDL") : Gr.h.StarSignsDL, "52")) {
+                        					var Tr = b.engine.getGameAttribute("Lv0")[0];
+                        					if (79 < parseNum(Tr)) {
+                        						var Ur = b.engine.getGameAttribute("DNSM"),
+                        							Mr = null != e.StarSigns ? Ur.getReserved("StarSigns") : Ur.h.StarSigns,
+                        							Vr = b.engine.getGameAttribute("DNSM"),
+                        							Cr = null != e.StarSigns ? Vr.getReserved("StarSigns") : Vr.h.StarSigns,
+                        							Br = null != e.MainXP ? Cr.getReserved("MainXP") : Cr.h.MainXP,
+                        							Pr = 6 + parseNum(Br);
+                        						null != e.MainXP ? Mr.setReserved("MainXP", Pr) : (Mr.h.MainXP = Pr);
+                        					}
+                        				}
+                        				var Or = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? Or.getReserved("StarSignsDL") : Or.h.StarSignsDL, "53")) {
+                        					var wr = b.engine.getGameAttribute("DNSM"),
+                        						kr = null != e.StarSigns ? wr.getReserved("StarSigns") : wr.h.StarSigns,
+                        						xr = b.engine.getGameAttribute("DNSM"),
+                        						Qr = null != e.StarSigns ? xr.getReserved("StarSigns") : xr.h.StarSigns,
+                        						Xr = null != e.PctDmg ? Qr.getReserved("PctDmg") : Qr.h.PctDmg,
+                        						Lr = 6 + parseNum(Xr);
+                        					null != e.PctDmg ? kr.setReserved("PctDmg", Lr) : (kr.h.PctDmg = Lr);
+                        				}
+                        				var zr = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? zr.getReserved("StarSignsDL") : zr.h.StarSignsDL, "54")) {
+                        					var Yr = b.engine.getGameAttribute("DNSM"),
+                        						Wr = null != e.StarSigns ? Yr.getReserved("StarSigns") : Yr.h.StarSigns,
+                        						Zr = b.engine.getGameAttribute("DNSM"),
+                        						Hr = null != e.StarSigns ? Zr.getReserved("StarSigns") : Zr.h.StarSigns,
+                        						Jr = null != e.PctDmg ? Hr.getReserved("PctDmg") : Hr.h.PctDmg,
+                        						jr = 15 + parseNum(Jr);
+                        					null != e.PctDmg ? Wr.setReserved("PctDmg", jr) : (Wr.h.PctDmg = jr);
+                        					var qr = b.engine.getGameAttribute("DNSM"),
+                        						Kr = null != e.StarSigns ? qr.getReserved("StarSigns") : qr.h.StarSigns,
+                        						$r = b.engine.getGameAttribute("DNSM"),
+                        						eA = null != e.StarSigns ? $r.getReserved("StarSigns") : $r.h.StarSigns,
+                        						tA = null != e.FightAFK ? eA.getReserved("FightAFK") : eA.h.FightAFK,
+                        						nA = -7 + parseNum(tA);
+                        					null != e.FightAFK ? Kr.setReserved("FightAFK", nA) : (Kr.h.FightAFK = nA);
+                        				}
+                        				var sA = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? sA.getReserved("StarSignsDL") : sA.h.StarSignsDL, "55")) {
+                        					var aA = b.engine.getGameAttribute("Lv0")[0];
+                        					if (89 < parseNum(aA)) {
+                        						var rA = b.engine.getGameAttribute("DNSM"),
+                        							AA = null != e.StarSigns ? rA.getReserved("StarSigns") : rA.h.StarSigns,
+                        							lA = b.engine.getGameAttribute("DNSM"),
+                        							oA = null != e.StarSigns ? lA.getReserved("StarSigns") : lA.h.StarSigns,
+                        							iA = null != e.SkillAFK ? oA.getReserved("SkillAFK") : oA.h.SkillAFK,
+                        							uA = 4 + parseNum(iA);
+                        						null != e.SkillAFK ? AA.setReserved("SkillAFK", uA) : (AA.h.SkillAFK = uA);
+                        					}
+                        				}
+                        				var gA = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(null != e.StarSignsDL ? gA.getReserved("StarSignsDL") : gA.h.StarSignsDL, "56")) {
+                        					var mA = b.engine.getGameAttribute("Lv0")[0];
+                        					if (99 < parseNum(mA)) {
+                        						var dA = b.engine.getGameAttribute("DNSM"),
+                        							cA = null != e.StarSigns ? dA.getReserved("StarSigns") : dA.h.StarSigns,
+                        							pA = b.engine.getGameAttribute("DNSM"),
+                        							hA = null != e.StarSigns ? pA.getReserved("StarSigns") : pA.h.StarSigns,
+                        							bA = null != e.FightAFK ? hA.getReserved("FightAFK") : hA.h.FightAFK,
+                        							fA = 4 + parseNum(bA);
+                        						null != e.FightAFK ? cA.setReserved("FightAFK", fA) : (cA.h.FightAFK = fA);
+                        					}
+                        				}
+                        				if (1 == A._customBlock_chipBonuses("star"))
+                        					for (var yA = b.engine.getGameAttribute("DNSM"), RA = (null != e.StarSigns ? yA.getReserved("StarSigns") : yA.h.StarSigns).keys(); RA.hasNext();) {
+                        						var vA = RA.next(),
+                        							FA = b.engine.getGameAttribute("DNSM"),
+                        							NA = null != e.StarSigns ? FA.getReserved("StarSigns") : FA.h.StarSigns,
+                        							_A = "" + vA,
+                        							IA = null != e[_A] ? NA.getReserved(_A) : NA.h[_A];
+                        						if (0 < parseNum(IA)) {
+                        							var DA = b.engine.getGameAttribute("DNSM"),
+                        								EA = null != e.StarSigns ? DA.getReserved("StarSigns") : DA.h.StarSigns,
+                        								SA = b.engine.getGameAttribute("DNSM"),
+                        								GA = null != e.StarSigns ? SA.getReserved("StarSigns") : SA.h.StarSigns,
+                        								TA = "" + vA,
+                        								UA = null != e[TA] ? GA.getReserved(TA) : GA.h[TA],
+                        								MA = EA,
+                        								VA = "" + vA,
+                        								CA = 2 * parseNum(UA);
+                        							null != e[VA] ? MA.setReserved(VA, CA) : (MA.h[VA] = CA);
+                        						}
+                        					}
+                        			}
+                        		} else {
+                        			var BA = b.engine,
+                        				PA = new p(),
+                        				OA = BA.gameAttributes;
+                        			null != e.PersonalValuesMap ? OA.setReserved("PersonalValuesMap", PA) : (OA.h.PersonalValuesMap = PA);
+                        		}
+                        	}

@@ -1,0 +1,9 @@
+                        (w._customBlock_prayersReal = function(t, s) {
+                        		if (-1 != b.engine.getGameAttribute("PrayersActive").indexOf(t)) {
+                        			var a = b.engine.getGameAttribute("CustomLists");
+                        			return (
+                        				(s = null == (s = (null != e.PrayerInfo ? a.getReserved("PrayerInfo") : a.h.PrayerInfo)[0 | t][(3 + s) | 0]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        				(t = b.engine.getGameAttribute("PrayersUnlocked")[0 | t]), Math.round(s * Math.max(1, 1 + (parseNum(t) - 1) / 10)));
+                        		}
+                        		return 0;
+                        	}

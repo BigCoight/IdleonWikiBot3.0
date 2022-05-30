@@ -1,0 +1,6 @@
+                            (n._tr_tally = function(e, t, n) {
+                            		return (
+                            			(e.pending_buf[e.d_buf + 2 * e.last_lit] = (t >>> 8) & 255),
+                            			(e.pending_buf[e.d_buf + 2 * e.last_lit + 1] = 255 & t),
+                            			(e.pending_buf[e.l_buf + e.last_lit] = 255 & n), e.last_lit++, 0 === t ? e.dyn_ltree[2 * n]++ : (e.matches++, t--, e.dyn_ltree[2 * (X[n] + _ + 1)]++, e.dyn_dtree[2 * (256 > t ? Q[t] : Q[256 + (t >>> 7)])]++), e.last_lit === e.lit_bufsize - 1);
+                            	}

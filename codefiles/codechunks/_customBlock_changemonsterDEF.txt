@@ -1,0 +1,25 @@
+                        (U._customBlock_changemonsterDEF = function() {
+                        		if (29 == b.engine.getGameAttribute("CurrentMap")) {
+                        			var t = b.engine.getGameAttribute("MonsterDefinitionsGET");
+                        			t = null != e.BossPart ? t.getReserved("BossPart") : t.h.BossPart;
+                        			var n = b.engine.getGameAttribute("BossInfo")[0][2];
+                        			null != e.Defence ? t.setReserved("Defence", n) : (t.h.Defence = n),
+                        				0 == b.engine.getGameAttribute("BossInfo")[0][0] ? ((t = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        					(t = null != e.rockG ? t.getReserved("rockG") : t.h.rockG), null != e.MonsterHPTotal ? t.setReserved("MonsterHPTotal", 3e3) : (t.h.MonsterHPTotal = 3e3),
+                        					(t = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        					(t = null != e.rockB ? t.getReserved("rockB") : t.h.rockB), null != e.MonsterHPTotal ? t.setReserved("MonsterHPTotal", 3e3) : (t.h.MonsterHPTotal = 3e3)) : 1 == b.engine.getGameAttribute("BossInfo")[0][0] && ((t = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        					(t = null != e.rockG ? t.getReserved("rockG") : t.h.rockG), null != e.MonsterHPTotal ? t.setReserved("MonsterHPTotal", 5e5) : (t.h.MonsterHPTotal = 5e5),
+                        					(t = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        					(t = null != e.rockB ? t.getReserved("rockB") : t.h.rockB), null != e.MonsterHPTotal ? t.setReserved("MonsterHPTotal", 5e5) : (t.h.MonsterHPTotal = 5e5)),
+                        				(t = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        				(t = null != e.BossPart ? t.getReserved("BossPart") : t.h.BossPart),
+                        				(n = b.engine.getGameAttribute("BossInfo")[0][2]),
+                        				null != e.Defence ? t.setReserved("Defence", n) : (t.h.Defence = n);
+                        		}
+                        		66 == b.engine.getGameAttribute("CurrentMap") && ((t = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        			(t = null != e.EfauntArm ? t.getReserved("EfauntArm") : t.h.EfauntArm),
+                        			(n = b.engine.getGameAttribute("BossInfo")[1][2]), null != e.Defence ? t.setReserved("Defence", n) : (t.h.Defence = n),
+                        			(t = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        			(t = null != e.BossPart ? t.getReserved("BossPart") : t.h.BossPart),
+                        			(n = b.engine.getGameAttribute("BossInfo")[1][2]), null != e.Defence ? t.setReserved("Defence", n) : (t.h.Defence = n));
+                        	}

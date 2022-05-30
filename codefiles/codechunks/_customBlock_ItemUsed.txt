@@ -1,0 +1,205 @@
+                        (w._customBlock_ItemUsed = function(t, s) {
+                        		if ("DungCredits1" == t) {
+                        			var a = b.engine.getGameAttribute("OptionsListAccount"),
+                        				r = b.engine.getGameAttribute("OptionsListAccount")[71];
+                        			a[71] = Math.round(parseNum(r) + s);
+                        			var A = b.engine.getGameAttribute("OptionsListAccount"),
+                        				o = b.engine.getGameAttribute("OptionsListAccount")[72];
+                        			A[72] = Math.round(parseNum(o) + s);
+                        		} else if ("DungCredits2" == t) {
+                        			var i = b.engine.getGameAttribute("OptionsListAccount"),
+                        				u = b.engine.getGameAttribute("OptionsListAccount")[73];
+                        			i[73] = Math.round(parseNum(u) + s);
+                        		} else if ("XP" == t) {
+                        			var m = b.engine.getGameAttribute("Lv0")[0];
+                        			if (30 > parseNum(m)) {
+                        				var c = b.engine,
+                        					p = b.engine.getGameAttribute("ExpReq0")[0],
+                        					f = parseNum(p) * h.randomFloatBetween(0.2, 0.35),
+                        					y = c.gameAttributes;
+                        				null != e.DummyNumberSafe ? y.setReserved("DummyNumberSafe", f) : (y.h.DummyNumberSafe = f);
+                        				var R = b.engine,
+                        					v = b.engine.getGameAttribute("DummyNumberSafe") / 2.5,
+                        					F = R.gameAttributes;
+                        				null != e.DummyNumberSafe ? F.setReserved("DummyNumberSafe", v) : (F.h.DummyNumberSafe = v);
+                        				var N = b.engine.getGameAttribute("Exp0"),
+                        					_ = b.engine.getGameAttribute("Exp0")[0];
+                        				N[0] = parseNum(_) + b.engine.getGameAttribute("DummyNumberSafe");
+                        			} else {
+                        				var I = b.engine.getGameAttribute("Lv0")[0];
+                        				if (50 > parseNum(I)) {
+                        					var D = b.engine,
+                        						E = b.engine.getGameAttribute("ExpReq0")[0],
+                        						S = parseNum(E) * h.randomFloatBetween(0.1, 0.16),
+                        						G = D.gameAttributes;
+                        					null != e.DummyNumberSafe ? G.setReserved("DummyNumberSafe", S) : (G.h.DummyNumberSafe = S);
+                        					var T = b.engine,
+                        						U = b.engine.getGameAttribute("DummyNumberSafe") / 2.5,
+                        						M = T.gameAttributes;
+                        					null != e.DummyNumberSafe ? M.setReserved("DummyNumberSafe", U) : (M.h.DummyNumberSafe = U);
+                        					var V = b.engine.getGameAttribute("Exp0"),
+                        						C = b.engine.getGameAttribute("Exp0")[0];
+                        					V[0] = parseNum(C) + b.engine.getGameAttribute("DummyNumberSafe");
+                        				} else {
+                        					var B = b.engine.getGameAttribute("Lv0")[0];
+                        					if (70 > parseNum(B)) {
+                        						var P = b.engine,
+                        							O = b.engine.getGameAttribute("ExpReq0")[0],
+                        							w = parseNum(O) * h.randomFloatBetween(0.05, 0.09),
+                        							x = P.gameAttributes;
+                        						null != e.DummyNumberSafe ? x.setReserved("DummyNumberSafe", w) : (x.h.DummyNumberSafe = w);
+                        						var Q = b.engine,
+                        							X = b.engine.getGameAttribute("DummyNumberSafe") / 2.5,
+                        							L = Q.gameAttributes;
+                        						null != e.DummyNumberSafe ? L.setReserved("DummyNumberSafe", X) : (L.h.DummyNumberSafe = X);
+                        						var z = b.engine.getGameAttribute("Exp0"),
+                        							Y = b.engine.getGameAttribute("Exp0")[0];
+                        						z[0] = parseNum(Y) + b.engine.getGameAttribute("DummyNumberSafe");
+                        					} else {
+                        						var W = b.engine.getGameAttribute("Lv0")[0];
+                        						if (90 > parseNum(W)) {
+                        							var Z = b.engine,
+                        								H = b.engine.getGameAttribute("ExpReq0")[0],
+                        								J = parseNum(H) * h.randomFloatBetween(0.025, 0.04),
+                        								j = Z.gameAttributes;
+                        							null != e.DummyNumberSafe ? j.setReserved("DummyNumberSafe", J) : (j.h.DummyNumberSafe = J);
+                        							var q = b.engine,
+                        								K = b.engine.getGameAttribute("DummyNumberSafe") / 2.5,
+                        								$ = q.gameAttributes;
+                        							null != e.DummyNumberSafe ? $.setReserved("DummyNumberSafe", K) : ($.h.DummyNumberSafe = K);
+                        							var ee = b.engine.getGameAttribute("Exp0"),
+                        								te = b.engine.getGameAttribute("Exp0")[0];
+                        							ee[0] = parseNum(te) + b.engine.getGameAttribute("DummyNumberSafe");
+                        						} else {
+                        							var ne = b.engine.getGameAttribute("Lv0")[0];
+                        							if (120 > parseNum(ne)) {
+                        								var se = b.engine,
+                        									ae = b.engine.getGameAttribute("ExpReq0")[0],
+                        									re = parseNum(ae) * h.randomFloatBetween(0.01, 0.02),
+                        									Ae = se.gameAttributes;
+                        								null != e.DummyNumberSafe ? Ae.setReserved("DummyNumberSafe", re) : (Ae.h.DummyNumberSafe = re);
+                        								var le = b.engine,
+                        									oe = b.engine.getGameAttribute("DummyNumberSafe") / 2.5,
+                        									ie = le.gameAttributes;
+                        								null != e.DummyNumberSafe ? ie.setReserved("DummyNumberSafe", oe) : (ie.h.DummyNumberSafe = oe);
+                        								var ue = b.engine.getGameAttribute("Exp0"),
+                        									ge = b.engine.getGameAttribute("Exp0")[0];
+                        								ue[0] = parseNum(ge) + b.engine.getGameAttribute("DummyNumberSafe");
+                        							} else {
+                        								var me = b.engine,
+                        									de = b.engine.getGameAttribute("ExpReq0")[0],
+                        									ce = parseNum(de) * h.randomFloatBetween(0.0035, 0.006),
+                        									pe = me.gameAttributes;
+                        								null != e.DummyNumberSafe ? pe.setReserved("DummyNumberSafe", ce) : (pe.h.DummyNumberSafe = ce);
+                        								var he = b.engine,
+                        									be = b.engine.getGameAttribute("DummyNumberSafe") / 2.5,
+                        									fe = he.gameAttributes;
+                        								null != e.DummyNumberSafe ? fe.setReserved("DummyNumberSafe", be) : (fe.h.DummyNumberSafe = be);
+                        								var ye = b.engine.getGameAttribute("Exp0"),
+                        									Re = b.engine.getGameAttribute("Exp0")[0];
+                        								ye[0] = parseNum(Re) + b.engine.getGameAttribute("DummyNumberSafe");
+                        							}
+                        						}
+                        					}
+                        				}
+                        			}
+                        			var ve = b.engine,
+                        				Fe = b.engine.getGameAttribute("DummyNumberSafe"),
+                        				Ne = ve.gameAttributes;
+                        			null != e.dummyDamageDealt ? Ne.setReserved("dummyDamageDealt", Fe) : (Ne.h.dummyDamageDealt = Fe);
+                        			var _e = b.engine.gameAttributes;
+                        			null != e.dummyDisplayPopup ? _e.setReserved("dummyDisplayPopup", "EXP") : (_e.h.dummyDisplayPopup = "EXP");
+                        			var Ie = b.engine.gameAttributes;
+                        			null != e.dummyDisplayEXPTYPE ? Ie.setReserved("dummyDisplayEXPTYPE", "ExpType0") : (Ie.h.dummyDisplayEXPTYPE = "ExpType0"), h.createRecycledActor(h.getActorType(34), 8, 457, 0);
+                        			var De = b.engine.gameAttributes;
+                        			null != e.dummyDisplayEXPTYPE ? De.setReserved("dummyDisplayEXPTYPE", "Null") : (De.h.dummyDisplayEXPTYPE = "Null");
+                        		} else if ("XPskill" == t) {
+                        			var Ee = b.engine.getGameAttribute("Lv0")[0 | s];
+                        			if (10 > parseNum(Ee)) {
+                        				var Se = b.engine,
+                        					Ge = b.engine.getGameAttribute("ExpReq0")[0 | s],
+                        					Te = parseNum(Ge) * h.randomFloatBetween(0.12, 0.17),
+                        					Ue = Se.gameAttributes;
+                        				null != e.DummyNumberSafe ? Ue.setReserved("DummyNumberSafe", Te) : (Ue.h.DummyNumberSafe = Te);
+                        				var Me = b.engine,
+                        					Ve = b.engine.getGameAttribute("DummyNumberSafe") / 2.5,
+                        					Ce = Me.gameAttributes;
+                        				null != e.DummyNumberSafe ? Ce.setReserved("DummyNumberSafe", Ve) : (Ce.h.DummyNumberSafe = Ve);
+                        				var Be = b.engine.getGameAttribute("Exp0"),
+                        					Pe = b.engine.getGameAttribute("Exp0")[0 | s];
+                        				Be[0 | s] = parseNum(Pe) + b.engine.getGameAttribute("DummyNumberSafe");
+                        			} else {
+                        				var Oe = b.engine.getGameAttribute("Lv0")[0 | s];
+                        				if (25 > parseNum(Oe)) {
+                        					var we = b.engine,
+                        						ke = b.engine.getGameAttribute("ExpReq0")[0 | s],
+                        						xe = parseNum(ke) * h.randomFloatBetween(0.05, 0.08),
+                        						Qe = we.gameAttributes;
+                        					null != e.DummyNumberSafe ? Qe.setReserved("DummyNumberSafe", xe) : (Qe.h.DummyNumberSafe = xe);
+                        					var Xe = b.engine,
+                        						Le = b.engine.getGameAttribute("DummyNumberSafe") / 2.5,
+                        						ze = Xe.gameAttributes;
+                        					null != e.DummyNumberSafe ? ze.setReserved("DummyNumberSafe", Le) : (ze.h.DummyNumberSafe = Le);
+                        					var Ye = b.engine.getGameAttribute("Exp0"),
+                        						We = b.engine.getGameAttribute("Exp0")[0 | s];
+                        					Ye[0 | s] = parseNum(We) + b.engine.getGameAttribute("DummyNumberSafe");
+                        				} else {
+                        					var Ze = b.engine.getGameAttribute("Lv0")[0 | s];
+                        					if (40 > parseNum(Ze)) {
+                        						var He = b.engine,
+                        							Je = b.engine.getGameAttribute("ExpReq0")[0 | s],
+                        							je = parseNum(Je) * h.randomFloatBetween(0.02, 0.035),
+                        							qe = He.gameAttributes;
+                        						null != e.DummyNumberSafe ? qe.setReserved("DummyNumberSafe", je) : (qe.h.DummyNumberSafe = je);
+                        						var Ke = b.engine,
+                        							$e = b.engine.getGameAttribute("DummyNumberSafe") / 2.5,
+                        							et = Ke.gameAttributes;
+                        						null != e.DummyNumberSafe ? et.setReserved("DummyNumberSafe", $e) : (et.h.DummyNumberSafe = $e);
+                        						var tt = b.engine.getGameAttribute("Exp0"),
+                        							nt = b.engine.getGameAttribute("Exp0")[0 | s];
+                        						tt[0 | s] = parseNum(nt) + b.engine.getGameAttribute("DummyNumberSafe");
+                        					} else {
+                        						var st = b.engine.getGameAttribute("Lv0")[0 | s];
+                        						if (60 > parseNum(st)) {
+                        							var at = b.engine,
+                        								rt = b.engine.getGameAttribute("ExpReq0")[0 | s],
+                        								At = parseNum(rt) * h.randomFloatBetween(0.007, 0.012),
+                        								lt = at.gameAttributes;
+                        							null != e.DummyNumberSafe ? lt.setReserved("DummyNumberSafe", At) : (lt.h.DummyNumberSafe = At);
+                        							var ot = b.engine,
+                        								it = b.engine.getGameAttribute("DummyNumberSafe") / 2.5,
+                        								ut = ot.gameAttributes;
+                        							null != e.DummyNumberSafe ? ut.setReserved("DummyNumberSafe", it) : (ut.h.DummyNumberSafe = it);
+                        							var gt = b.engine.getGameAttribute("Exp0"),
+                        								mt = b.engine.getGameAttribute("Exp0")[0 | s];
+                        							gt[0 | s] = parseNum(mt) + b.engine.getGameAttribute("DummyNumberSafe");
+                        						} else {
+                        							var dt = b.engine,
+                        								ct = b.engine.getGameAttribute("ExpReq0")[0 | s],
+                        								pt = parseNum(ct) * h.randomFloatBetween(0.0035, 0.006),
+                        								ht = dt.gameAttributes;
+                        							null != e.DummyNumberSafe ? ht.setReserved("DummyNumberSafe", pt) : (ht.h.DummyNumberSafe = pt);
+                        							var bt = b.engine,
+                        								ft = b.engine.getGameAttribute("DummyNumberSafe") / 2.5,
+                        								yt = bt.gameAttributes;
+                        							null != e.DummyNumberSafe ? yt.setReserved("DummyNumberSafe", ft) : (yt.h.DummyNumberSafe = ft);
+                        							var Rt = b.engine.getGameAttribute("Exp0"),
+                        								vt = b.engine.getGameAttribute("Exp0")[0 | s];
+                        							Rt[0 | s] = parseNum(vt) + b.engine.getGameAttribute("DummyNumberSafe");
+                        						}
+                        					}
+                        				}
+                        			}
+                        			var Ft = b.engine.gameAttributes;
+                        			null != e.dummyDisplayPopup ? Ft.setReserved("dummyDisplayPopup", "EXP") : (Ft.h.dummyDisplayPopup = "EXP");
+                        			var Nt = b.engine.gameAttributes,
+                        				_t = "ExpType" + s;
+                        			null != e.dummyDisplayEXPTYPE ? Nt.setReserved("dummyDisplayEXPTYPE", _t) : (Nt.h.dummyDisplayEXPTYPE = _t);
+                        			var It = b.engine,
+                        				Dt = b.engine.getGameAttribute("DummyNumberSafe"),
+                        				Et = It.gameAttributes;
+                        			null != e.dummyDamageDealt ? Et.setReserved("dummyDamageDealt", Dt) : (Et.h.dummyDamageDealt = Dt), h.createRecycledActor(h.getActorType(34), 8, 457, 2);
+                        			var St = b.engine.gameAttributes;
+                        			null != e.dummyDisplayEXPTYPE ? St.setReserved("dummyDisplayEXPTYPE", "Null") : (St.h.dummyDisplayEXPTYPE = "Null");
+                        		}
+                        	}

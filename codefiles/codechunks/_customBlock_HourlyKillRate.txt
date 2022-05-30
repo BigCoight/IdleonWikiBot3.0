@@ -1,0 +1,258 @@
+                        (t._customBlock_HourlyKillRate = function(s) {
+                        		var a = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			r = new p();
+                        		null != e.HourlyKillsMAP ? a.setReserved("HourlyKillsMAP", r) : (a.h.HourlyKillsMAP = r);
+                        		var o = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			i = [];
+                        		null != e.HourlyKillsMAPoutput ? o.setReserved("HourlyKillsMAPoutput", i) : (o.h.HourlyKillsMAPoutput = i);
+                        		var u = b.engine.getGameAttribute("DNSM");
+                        		if ((null != e.HourlyKillsHealsHRdn ? u.setReserved("HourlyKillsHealsHRdn", 0) : (u.h.HourlyKillsHealsHRdn = 0), "Fighting" == s)) {
+                        			var m = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				c = null != e.HourlyKillsMAP ? m.getReserved("HourlyKillsMAP") : m.h.HourlyKillsMAP,
+                        				h = b.engine.getGameAttribute("MapMonstersList")[0].getValue("ActorEvents_1", "_MonsterHPtot");
+                        			null != e.H ? c.setReserved("H", h) : (c.h.H = h);
+                        			var f = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				y = null != e.HourlyKillsMAP ? f.getReserved("HourlyKillsMAP") : f.h.HourlyKillsMAP,
+                        				R = H._customBlock_DamageDealed("Max") * (H._customBlock_DamageDealed("Mastery") + (1 - H._customBlock_DamageDealed("Mastery")) / 2) * (1 + (H._customBlock_CritDamage() - 1) * (H._customBlock_CritChance() / 100)) * (H._customBlock_ArbitraryCode("HitChancePCT") / 100) * Math.max(U._customBlock_afkAttackBonses("D", 0), 1);
+                        			null != e.D ? y.setReserved("D", R) : (y.h.D = R);
+                        			var v = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				F = null != e.HourlyKillsMAP ? v.getReserved("HourlyKillsMAP") : v.h.HourlyKillsMAP,
+                        				N = b.engine.getGameAttribute("MonstersOnScreen")[0 | b.engine.getGameAttribute("CurrentMap")];
+                        			null != e.N ? F.setReserved("N", N) : (F.h.N = N);
+                        			var _ = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				I = null != e.HourlyKillsMAP ? _.getReserved("HourlyKillsMAP") : _.h.HourlyKillsMAP,
+                        				D = b.engine.getGameAttribute("CustomLists"),
+                        				E = (null != e.MapDetails ? D.getReserved("MapDetails") : D.h.MapDetails)[0 | b.engine.getGameAttribute("CurrentMap")][1][1],
+                        				S = parseNum(E);
+                        			null != e.d ? I.setReserved("d", S) : (I.h.d = S);
+                        			var G = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				T = null != e.HourlyKillsMAP ? G.getReserved("HourlyKillsMAP") : G.h.HourlyKillsMAP,
+                        				M = b.engine.getGameAttribute("MapMonstersList")[0].getValue("ActorEvents_1", "_RespawnTime");
+                        			null != e.R ? T.setReserved("R", M) : (T.h.R = M);
+                        			var V = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				C = null != e.HourlyKillsMAP ? V.getReserved("HourlyKillsMAP") : V.h.HourlyKillsMAP,
+                        				B = Math.min(Math.max(U._customBlock_afkAttackBonses("K", 0), 1), 2.2);
+                        			null != e.K ? C.setReserved("K", B) : (C.h.K = B);
+                        			var P = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				O = null != e.HourlyKillsMAP ? P.getReserved("HourlyKillsMAP") : P.h.HourlyKillsMAP,
+                        				x = H._customBlock_PlayerSpeedBonus();
+                        			null != e.m ? O.setReserved("m", x) : (O.h.m = x);
+                        			var Q = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				X = null != e.HourlyKillsMAP ? Q.getReserved("HourlyKillsMAP") : Q.h.HourlyKillsMAP,
+                        				L = H._customBlock_ActionWaitTime("AFK");
+                        			null != e.r ? X.setReserved("r", L) : (X.h.r = L);
+                        			var z = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Y = null != e.HourlyKillsMAP ? z.getReserved("HourlyKillsMAP") : z.h.HourlyKillsMAP,
+                        				W = H._customBlock_ArbitraryCode("HitChancePCT");
+                        			null != e.A ? Y.setReserved("A", W) : (Y.h.A = W);
+                        			var Z = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				J = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				j = t._customBlock_CalcAwayKills(null != e.HourlyKillsMAP ? J.getReserved("HourlyKillsMAP") : J.h.HourlyKillsMAP, "Killing");
+                        			null != e.HourlyKillsMAPoutput ? Z.setReserved("HourlyKillsMAPoutput", j) : (Z.h.HourlyKillsMAPoutput = j);
+                        			var q = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				K = (null != e.HourlyKillsMAPoutput ? q.getReserved("HourlyKillsMAPoutput") : q.h.HourlyKillsMAPoutput)[0];
+                        			return Math.floor(3600 * parseNum(K));
+                        		}
+                        		if ("Mining" == s) {
+                        			if (0.05 < H._customBlock_RunCodeOfTypeXforThingY("ChanceToHarvest", "Mining")) {
+                        				var $ = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ee = null != e.HourlyKillsMAP ? $.getReserved("HourlyKillsMAP") : $.h.HourlyKillsMAP,
+                        					te = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					ne = "" + g.string(b.engine.getGameAttribute("MapMonstersList")[0].getValue("ActorEvents_1", "_MonsterType")),
+                        					se = null != e[ne] ? te.getReserved(ne) : te.h[ne],
+                        					ae = null != e.MonsterHPTotal ? se.getReserved("MonsterHPTotal") : se.h.MonsterHPTotal,
+                        					re = parseNum(ae),
+                        					Ae = b.engine.getGameAttribute("CustomLists"),
+                        					le = (null != e.MapDetails ? Ae.getReserved("MapDetails") : Ae.h.MapDetails)[0 | b.engine.getGameAttribute("CurrentMap")][1][0],
+                        					oe = parseNum(le),
+                        					ie = b.engine.getGameAttribute("MapMonstersList")[0].getValue("ActorEvents_1", "_RespawnTime"),
+                        					ue = re * oe * (3600 / parseNum(ie));
+                        				return (null != e.MaxOres ? ee.setReserved("MaxOres", ue) : (ee.h.MaxOres = ue), Math.round(
+                        					((3600 / (H._customBlock_SkillStats("MiningSpeed") + 0.4)) * Math.min(1, H._customBlock_RunCodeOfTypeXforThingY("ChanceToHarvest", "Mining")) * Math.max(Math.min(U._customBlock_afkAttackBonses("D", 1), 3), 1)) / 1.15));
+                        			}
+                        			return 0;
+                        		}
+                        		if ("Choppin" == s) return Math.round(((3600 / (H._customBlock_SkillStats("ChoppinSpeed") + 0.4)) * Math.min(1, H._customBlock_RunCodeOfTypeXforThingY("ChanceToHarvest", "Choppin"))) / 1.15);
+                        		if ("Fishing" == s) return Math.round((3600 / (H._customBlock_SkillStats("FishingSpeed") + 0.4)) * Math.max(Math.min(U._customBlock_afkAttackBonses("D", 4), 3), 1));
+                        		if ("Catching" == s) return Math.round((3600 / (H._customBlock_SkillStats("CatchingSpeed") + 0.4)) * Math.min(1, H._customBlock_RunCodeOfTypeXforThingY("ChanceToHarvest", "Catching")));
+                        		if ("SurvivabilityPCT" == s) {
+                        			var ge = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        				me = b.engine.getGameAttribute("AFKtarget"),
+                        				de = null != e[me] ? ge.getReserved(me) : ge.h[me];
+                        			if ("MINING" == (null != e.AFKtype ? de.getReserved("AFKtype") : de.h.AFKtype)) return 100;
+                        			var ce = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        				pe = b.engine.getGameAttribute("AFKtarget"),
+                        				he = null != e[pe] ? ce.getReserved(pe) : ce.h[pe];
+                        			if ("CHOPPIN" == (null != e.AFKtype ? he.getReserved("AFKtype") : he.h.AFKtype)) return 100;
+                        			var be = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        				fe = b.engine.getGameAttribute("AFKtarget"),
+                        				ye = null != e[fe] ? be.getReserved(fe) : be.h[fe];
+                        			if ("CATCHING" == (null != e.AFKtype ? ye.getReserved("AFKtype") : ye.h.AFKtype)) return 100;
+                        			var Re = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        				ve = b.engine.getGameAttribute("AFKtarget"),
+                        				Fe = null != e[ve] ? Re.getReserved(ve) : Re.h[ve];
+                        			if ("COOKING" == (null != e.AFKtype ? Fe.getReserved("AFKtype") : Fe.h.AFKtype)) return 100;
+                        			var Ne = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        				_e = b.engine.getGameAttribute("AFKtarget"),
+                        				Ie = null != e[_e] ? Ne.getReserved(_e) : Ne.h[_e];
+                        			if ("Nothing" == (null != e.AFKtype ? Ie.getReserved("AFKtype") : Ie.h.AFKtype)) return 100;
+                        			var De = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Ee = null != e.HourlyKillsMAP ? De.getReserved("HourlyKillsMAP") : De.h.HourlyKillsMAP,
+                        				Se = H._customBlock_PlayerHPmax();
+                        			null != e.H ? Ee.setReserved("H", Se) : (Ee.h.H = Se);
+                        			var Ge = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        				Te = b.engine.getGameAttribute("AFKtarget"),
+                        				Ue = null != e[Te] ? Ge.getReserved(Te) : Ge.h[Te];
+                        			if ("FISHING" == (null != e.AFKtype ? Ue.getReserved("AFKtype") : Ue.h.AFKtype)) {
+                        				var Me = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Ve = null != e.HourlyKillsMAP ? Me.getReserved("HourlyKillsMAP") : Me.h.HourlyKillsMAP;
+                        				null != e.D ? Ve.setReserved("D", 0) : (Ve.h.D = 0);
+                        				for (var Ce = 0; 4 > Ce;) {
+                        					var Be = Ce++,
+                        						Pe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Oe = null != e.HourlyKillsMAP ? Pe.getReserved("HourlyKillsMAP") : Pe.h.HourlyKillsMAP,
+                        						we = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						ke = null != e.HourlyKillsMAP ? we.getReserved("HourlyKillsMAP") : we.h.HourlyKillsMAP,
+                        						xe = null != e.D ? ke.getReserved("D") : ke.h.D,
+                        						Qe = parseNum(xe),
+                        						Xe = b.engine.getGameAttribute("CustomMaps"),
+                        						Le = null != e.FishPools ? Xe.getReserved("FishPools") : Xe.h.FishPools,
+                        						ze = b.engine.getGameAttribute("AFKtarget"),
+                        						Ye = Le,
+                        						We = (null != e[ze] ? Ye.getReserved(ze) : Ye.h[ze])[2][Be],
+                        						Ze = Oe,
+                        						He = Qe + A._customBlock_MonsterDamage(parseNum(We) * (A._customBlock_FishingToolkit("Pct" + Math.round(Be + 1)) / 100));
+                        					null != e.D ? Ze.setReserved("D", He) : (Ze.h.D = He);
+                        				}
+                        				var Je = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					je = null != e.HourlyKillsMAP ? Je.getReserved("HourlyKillsMAP") : Je.h.HourlyKillsMAP,
+                        					qe = 3600 / (H._customBlock_SkillStats("FishingSpeed") + 0.4);
+                        				null != e.r ? je.setReserved("r", qe) : (je.h.r = qe);
+                        			} else {
+                        				if (0 != b.engine.getGameAttribute("MapMonstersList").length) {
+                        					var Ke = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						$e = null != e.HourlyKillsMAP ? Ke.getReserved("HourlyKillsMAP") : Ke.h.HourlyKillsMAP,
+                        						et = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						tt = "" + g.string(b.engine.getGameAttribute("MapMonstersList")[0].getValue("ActorEvents_1", "_MonsterType")),
+                        						nt = null != e[tt] ? et.getReserved(tt) : et.h[tt],
+                        						st = (null != e.Damages ? nt.getReserved("Damages") : nt.h.Damages)[0],
+                        						at = A._customBlock_MonsterDamage(parseNum(st));
+                        					null != e.D ? $e.setReserved("D", at) : ($e.h.D = at);
+                        				} else {
+                        					var rt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						At = null != e.HourlyKillsMAP ? rt.getReserved("HourlyKillsMAP") : rt.h.HourlyKillsMAP;
+                        					null != e.D ? At.setReserved("D", 0) : (At.h.D = 0);
+                        				}
+                        				if (0 < t._customBlock_GetTalentNumber(1, 469)) {
+                        					var lt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						ot = null != e.HourlyKillsMAP ? lt.getReserved("HourlyKillsMAP") : lt.h.HourlyKillsMAP,
+                        						it = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						ut = null != e.HourlyKillsMAP ? it.getReserved("HourlyKillsMAP") : it.h.HourlyKillsMAP,
+                        						gt = null != e.D ? ut.getReserved("D") : ut.h.D,
+                        						mt = parseNum(gt) / (1 + t._customBlock_GetTalentNumber(1, 469) / 100);
+                        					null != e.D ? ot.setReserved("D", mt) : (ot.h.D = mt);
+                        				}
+                        				var dt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ct = null != e.HourlyKillsMAP ? dt.getReserved("HourlyKillsMAP") : dt.h.HourlyKillsMAP,
+                        					pt = b.engine.getGameAttribute("CustomLists"),
+                        					ht = (null != e.MapDetails ? pt.getReserved("MapDetails") : pt.h.MapDetails)[0 | b.engine.getGameAttribute("CurrentMap")][1][2];
+                        				null != e.r ? ct.setReserved("r", ht) : (ct.h.r = ht);
+                        			}
+                        			for (var bt = 0, ft = 0 | b.engine.getGameAttribute("FoodSlotsOwned"); bt < ft;) {
+                        				var yt = bt++,
+                        					Rt = b.engine,
+                        					vt = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        					Ft = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[2][yt]),
+                        					Nt = vt,
+                        					_t = null != e[Ft] ? Nt.getReserved(Ft) : Nt.h[Ft],
+                        					It = Rt.gameAttributes,
+                        					Dt = _t;
+                        				null != e.DummyMap ? It.setReserved("DummyMap", Dt) : (It.h.DummyMap = Dt);
+                        				var Et = b.engine.getGameAttribute("DummyMap"),
+                        					St = null != e.Trigger ? Et.getReserved("Trigger") : Et.h.Trigger;
+                        				if (0 < parseNum(St)) {
+                        					var Gt = b.engine.getGameAttribute("DNSM"),
+                        						Tt = b.engine.getGameAttribute("DNSM"),
+                        						Ut = null != e.HourlyKillsHealsHRdn ? Tt.getReserved("HourlyKillsHealsHRdn") : Tt.h.HourlyKillsHealsHRdn,
+                        						Mt = parseNum(Ut),
+                        						Vt = b.engine.getGameAttribute("DummyMap"),
+                        						Ct = null != e.Amount ? Vt.getReserved("Amount") : Vt.h.Amount,
+                        						Bt = parseNum(Ct),
+                        						Pt = b.engine.getGameAttribute("DummyMap"),
+                        						Ot = Bt * H._customBlock_FoodBonuses(g.string(null != e.Effect ? Pt.getReserved("Effect") : Pt.h.Effect) + "EffectBonus"),
+                        						wt = b.engine.getGameAttribute("DummyMap"),
+                        						kt = null != e.Cooldown ? wt.getReserved("Cooldown") : wt.h.Cooldown,
+                        						xt = parseNum(kt),
+                        						Qt = b.engine.getGameAttribute("DummyMap"),
+                        						Xt = Gt,
+                        						Lt = Mt + (Ot / Math.max(xt * H._customBlock_FoodBonuses(g.string(null != e.Effect ? Qt.getReserved("Effect") : Qt.h.Effect) + "CooldownBonus"), 1)) * 3600;
+                        					null != e.HourlyKillsHealsHRdn ? Xt.setReserved("HourlyKillsHealsHRdn", Lt) : (Xt.h.HourlyKillsHealsHRdn = Lt);
+                        				}
+                        			}
+                        			var zt = b.engine.getGameAttribute("DNSM"),
+                        				Yt = b.engine.getGameAttribute("DNSM"),
+                        				Wt = null != e.HourlyKillsHealsHRdn ? Yt.getReserved("HourlyKillsHealsHRdn") : Yt.h.HourlyKillsHealsHRdn,
+                        				Zt = parseNum(Wt),
+                        				Ht = b.engine.getGameAttribute("DNSM"),
+                        				Jt = null != e.HourlyKillsHealsHRdn2 ? Ht.getReserved("HourlyKillsHealsHRdn2") : Ht.h.HourlyKillsHealsHRdn2,
+                        				jt = Zt + parseNum(Jt) * (t._customBlock_GetTalentNumber(1, 627) / 100) * H._customBlock_PlayerHPmax();
+                        			null != e.HourlyKillsHealsHRdn ? zt.setReserved("HourlyKillsHealsHRdn", jt) : (zt.h.HourlyKillsHealsHRdn = jt);
+                        			var qt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Kt = null != e.HourlyKillsMAP ? qt.getReserved("HourlyKillsMAP") : qt.h.HourlyKillsMAP,
+                        				$t = b.engine.getGameAttribute("DNSM"),
+                        				en = null != e.HourlyKillsHealsHRdn ? $t.getReserved("HourlyKillsHealsHRdn") : $t.h.HourlyKillsHealsHRdn;
+                        			null != e.h ? Kt.setReserved("h", en) : (Kt.h.h = en);
+                        			var tn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				nn = null != e.HourlyKillsMAP ? tn.getReserved("HourlyKillsMAP") : tn.h.HourlyKillsMAP,
+                        				sn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				an = null != e.HourlyKillsMAP ? sn.getReserved("HourlyKillsMAP") : sn.h.HourlyKillsMAP,
+                        				rn = null != e.D ? an.getReserved("D") : an.h.D,
+                        				An = parseNum(rn),
+                        				ln = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				on = null != e.HourlyKillsMAP ? ln.getReserved("HourlyKillsMAP") : ln.h.HourlyKillsMAP,
+                        				un = null != e.r ? on.getReserved("r") : on.h.r,
+                        				gn = parseNum(un),
+                        				mn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				dn = null != e.HourlyKillsMAP ? mn.getReserved("HourlyKillsMAP") : mn.h.HourlyKillsMAP,
+                        				cn = null != e.h ? dn.getReserved("h") : dn.h.h,
+                        				pn = An * gn - parseNum(cn);
+                        			null != e.q ? nn.setReserved("q", pn) : (nn.h.q = pn);
+                        			var hn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				bn = null != e.HourlyKillsMAP ? hn.getReserved("HourlyKillsMAP") : hn.h.HourlyKillsMAP,
+                        				fn = null != e.q ? bn.getReserved("q") : bn.h.q;
+                        			if (0 < parseNum(fn)) {
+                        				var yn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Rn = null != e.HourlyKillsMAP ? yn.getReserved("HourlyKillsMAP") : yn.h.HourlyKillsMAP,
+                        					vn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Fn = null != e.HourlyKillsMAP ? vn.getReserved("HourlyKillsMAP") : vn.h.HourlyKillsMAP,
+                        					Nn = null != e.H ? Fn.getReserved("H") : Fn.h.H,
+                        					_n = parseNum(Nn),
+                        					In = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Dn = null != e.HourlyKillsMAP ? In.getReserved("HourlyKillsMAP") : In.h.HourlyKillsMAP,
+                        					En = null != e.q ? Dn.getReserved("q") : Dn.h.q,
+                        					Sn = _n / parseNum(En);
+                        				null != e.Q ? Rn.setReserved("Q", Sn) : (Rn.h.Q = Sn);
+                        				var Gn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Tn = null != e.HourlyKillsMAP ? Gn.getReserved("HourlyKillsMAP") : Gn.h.HourlyKillsMAP,
+                        					Un = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Mn = null != e.HourlyKillsMAP ? Un.getReserved("HourlyKillsMAP") : Un.h.HourlyKillsMAP,
+                        					Vn = null != e.Q ? Mn.getReserved("Q") : Mn.h.Q,
+                        					Cn = parseNum(Vn),
+                        					Bn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Pn = null != e.HourlyKillsMAP ? Bn.getReserved("HourlyKillsMAP") : Bn.h.HourlyKillsMAP,
+                        					On = null != e.Q ? Pn.getReserved("Q") : Pn.h.Q,
+                        					wn = Cn / (parseNum(On) + t._customBlock_AutoRespawnTime() / 3600);
+                        				if ((null != e.S ? Tn.setReserved("S", wn) : (Tn.h.S = wn), -1 != w._customBlock_Dungon())) {
+                        					var kn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						xn = null != e.HourlyKillsMAP ? kn.getReserved("HourlyKillsMAP") : kn.h.HourlyKillsMAP;
+                        					null != e.S ? xn.setReserved("S", 1) : (xn.h.S = 1);
+                        				}
+                        				var Qn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Xn = null != e.HourlyKillsMAP ? Qn.getReserved("HourlyKillsMAP") : Qn.h.HourlyKillsMAP,
+                        					Ln = null != e.S ? Xn.getReserved("S") : Xn.h.S;
+                        				return Math.min(Math.round(100 * parseNum(Ln)), 100);
+                        			}
+                        			return 100;
+                        		}
+                        		return 0;
+                        	}

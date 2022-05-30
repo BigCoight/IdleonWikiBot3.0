@@ -1,0 +1,68 @@
+                        (t._customBlock_StampCostss = function(s, a) {
+                        		var r = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			o = [];
+                        		if (
+                        			(null != e.StampCostLIST ? r.setReserved("StampCostLIST", o) : (r.h.StampCostLIST = o),
+                        				(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(o = b.engine.getGameAttribute("StampLevel")[0 | s][0 | a]), null != e.StampCostNumber ? r.setReserved("StampCostNumber", o) : (r.h.StampCostNumber = o),
+                        				(r = null == (r = b.engine.getGameAttribute("StampLevelMAX")[0 | s][0 | a]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        				(o = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(o = null != e.StampCostNumber ? o.getReserved("StampCostNumber") : o.h.StampCostNumber), 0.1 > Math.abs(r - parseNum(o)) ? (r = !0) : ((r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(r = (null != e.StampCostNumber ? r.getReserved("StampCostNumber") : r.h.StampCostNumber) == b.engine.getGameAttribute("StampLevelMAX")[0 | s][0 | a])), r)) {
+                        			(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(null != e.StampCostLIST ? r.getReserved("StampCostLIST") : r.h.StampCostLIST).push(t._customBlock_StampDetails(a + 1e3 * s)[5]),
+                        				(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = null != e.StampCostLIST ? r.getReserved("StampCostLIST") : r.h.StampCostLIST),
+                        				(o = null == (o = t._customBlock_StampDetails(a + 1e3 * s)[6]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o)));
+                        			var i = 1 / (1 + w._customBlock_Labb("SigilBonus", "Blank", 6, 0) / 100),
+                        				u = t._customBlock_StampDetails(a + 1e3 * s)[7];
+                        			u = parseNum(u);
+                        			var m = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        			(m = null == (m = null != e.StampCostNumber ? m.getReserved("StampCostNumber") : m.h.StampCostNumber) ? 0 : "number" == typeof m ? d.__cast(m, k) : "number" == typeof m && (0 | m) === m ? d.__cast(m, l) : "boolean" == typeof m ? d.__cast(m, n) ? 1 : 0 : "string" == typeof m ? parseFloat(m) : parseFloat(g.string(m))),
+                        			(s = t._customBlock_StampDetails(a + 1e3 * s)[4]),
+                        			r.push(o * i * Math.pow(u, Math.pow(Math.round(m / parseNum(s)) - 1, 0.8)));
+                        		} else {
+                        			(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(null != e.StampCostLIST ? r.getReserved("StampCostLIST") : r.h.StampCostLIST).push("Money"),
+                        				(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = null != e.StampCostLIST ? r.getReserved("StampCostLIST") : r.h.StampCostLIST),
+                        				(o = (null == (o = t._customBlock_StampDetails(a + 1e3 * s)[8]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))) * (1 - A._customBlock_GetBribeBonus("0") / 100)),
+                        				(i = null == (i = t._customBlock_StampDetails(a + 1e3 * s)[9]) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        				(u = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(u = null == (u = null != e.StampCostNumber ? u.getReserved("StampCostNumber") : u.h.StampCostNumber) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))),
+                        				(m = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(m = null == (m = null != e.StampCostNumber ? m.getReserved("StampCostNumber") : m.h.StampCostNumber) ? 0 : "number" == typeof m ? d.__cast(m, k) : "number" == typeof m && (0 | m) === m ? d.__cast(m, l) : "boolean" == typeof m ? d.__cast(m, n) ? 1 : 0 : "string" == typeof m ? parseFloat(m) : parseFloat(g.string(m)));
+                        			var c = t._customBlock_StampDetails(a + 1e3 * s)[4];
+                        			c = parseNum(c);
+                        			var p = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        			(p = null == (p = null != e.StampCostNumber ? p.getReserved("StampCostNumber") : p.h.StampCostNumber) ? 0 : "number" == typeof p ? d.__cast(p, k) : "number" == typeof p && (0 | p) === p ? d.__cast(p, l) : "boolean" == typeof p ? d.__cast(p, n) ? 1 : 0 : "string" == typeof p ? parseFloat(p) : parseFloat(g.string(p))),
+                        			(s = t._customBlock_StampDetails(a + 1e3 * s)[4]),
+                        			r.push(o * Math.pow(i - (u / (m + 5 * c)) * 0.25, p * (10 / parseNum(s))));
+                        		}
+                        		return (
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")), "Money" != (null != e.StampCostLIST ? s.getReserved("StampCostLIST") : s.h.StampCostLIST)[0] ? ((s = b.engine.getGameAttribute("DummyNumbersStatManager")), 2e9 < (null == (s = (null != e.StampCostLIST ? s.getReserved("StampCostLIST") : s.h.StampCostLIST)[1]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) ? ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(s = null != e.StampCostLIST ? s.getReserved("StampCostLIST") : s.h.StampCostLIST),
+                        					(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(a = (null != e.StampCostLIST ? a.getReserved("StampCostLIST") : a.h.StampCostLIST)[1]),
+                        					(s[1] = 100 * Math.floor(parseNum(a) / 100))) : ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(s = null != e.StampCostLIST ? s.getReserved("StampCostLIST") : s.h.StampCostLIST),
+                        					(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(a = (null != e.StampCostLIST ? a.getReserved("StampCostLIST") : a.h.StampCostLIST)[1]),
+                        					(s[1] = Math.floor(parseNum(a)))),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = null != e.StampCostLIST ? s.getReserved("StampCostLIST") : s.h.StampCostLIST),
+                        				(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(a = null == (a = (null != e.StampCostLIST ? a.getReserved("StampCostLIST") : a.h.StampCostLIST)[1]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        				(r = b.engine.getGameAttribute("DNSM")),
+                        				(r = null != e.AlchVials ? r.getReserved("AlchVials") : r.h.AlchVials),
+                        				(r = null != e.MatCostStamp ? r.getReserved("MatCostStamp") : r.h.MatCostStamp),
+                        				(s[1] = Math.floor(a * Math.max(0.1, 1 - parseNum(r) / 100)))) : ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = null != e.StampCostLIST ? s.getReserved("StampCostLIST") : s.h.StampCostLIST),
+                        				(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(a = null == (a = (null != e.StampCostLIST ? a.getReserved("StampCostLIST") : a.h.StampCostLIST)[1]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        				(r = b.engine.getGameAttribute("DNSM")),
+                        				(r = null != e.AlchVials ? r.getReserved("AlchVials") : r.h.AlchVials),
+                        				(r = null != e.MatCostStamp ? r.getReserved("MatCostStamp") : r.h.MatCostStamp),
+                        				(s[1] = a * Math.max(0.1, 1 - parseNum(r) / 100))),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.StampCostLIST ? s.getReserved("StampCostLIST") : s.h.StampCostLIST);
+                        	}

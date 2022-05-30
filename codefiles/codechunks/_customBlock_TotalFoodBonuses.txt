@@ -1,0 +1,29 @@
+                        (A._customBlock_TotalFoodBonuses = function(t) {
+                        		var s = b.engine.getGameAttribute("DNSM");
+                        		null != e.playHPbasePOT2 ? s.setReserved("playHPbasePOT2", 0) : (s.h.playHPbasePOT2 = 0), (s = 0);
+                        		for (var a = 0 | b.engine.getGameAttribute("FoodSlotsOwned"); s < a;) {
+                        			var r = s++;
+                        			if ("Blank" != b.engine.getGameAttribute("EquipmentOrder")[2][r] && 0 != b.engine.getGameAttribute("EquipmentQuantity")[2][r]) {
+                        				var A = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        					o = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[2][r]);
+                        				if (((o = null != e[o] ? A.getReserved(o) : A.h[o]), (null != e.Effect ? o.getReserved("Effect") : o.h.Effect) == t)) {
+                        					(o = b.engine.getGameAttribute("DNSM")),
+                        					(A = b.engine.getGameAttribute("ItemDefinitionsGET")),
+                        					(r = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[2][r])),
+                        					(r = null != e[r] ? A.getReserved(r) : A.h[r]),
+                        					null != e.playHPbasePOT1 ? o.setReserved("playHPbasePOT1", r) : (o.h.playHPbasePOT1 = r),
+                        						(r = b.engine.getGameAttribute("DNSM")),
+                        						(o = b.engine.getGameAttribute("DNSM")),
+                        						(o = null == (o = null != e.playHPbasePOT2 ? o.getReserved("playHPbasePOT2") : o.h.playHPbasePOT2) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        						(A = b.engine.getGameAttribute("DNSM")),
+                        						(A = null != e.playHPbasePOT1 ? A.getReserved("playHPbasePOT1") : A.h.playHPbasePOT1),
+                        						(A = null == (A = null != e.Amount ? A.getReserved("Amount") : A.h.Amount) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A)));
+                        					var i = b.engine.getGameAttribute("DNSM");
+                        					(i = null != e.playHPbasePOT1 ? i.getReserved("playHPbasePOT1") : i.h.playHPbasePOT1),
+                        					(o += A * H._customBlock_FoodBonuses(g.string(null != e.Effect ? i.getReserved("Effect") : i.h.Effect) + "EffectBonus")),
+                        					null != e.playHPbasePOT2 ? r.setReserved("playHPbasePOT2", o) : (r.h.playHPbasePOT2 = o);
+                        				}
+                        			}
+                        		}
+                        		return (t = b.engine.getGameAttribute("DNSM")), null != e.playHPbasePOT2 ? t.getReserved("playHPbasePOT2") : t.h.playHPbasePOT2;
+                        	}

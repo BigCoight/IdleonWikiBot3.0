@@ -1,0 +1,76 @@
+                        (A._customBlock_PostOfficeINFO = function(t, s, a) {
+                        		if ("AvailablePoints" == t) {
+                        			for (a = b.engine.getGameAttribute("DNSM"), null != e.PostOffInfoDN1 ? a.setReserved("PostOffInfoDN1", 0) : (a.h.PostOffInfoDN1 = 0), a = 0, s = b.engine.getGameAttribute("PostOfficeInfo")[3].length; a < s;) {
+                        				var r = a++;
+                        				t = b.engine.getGameAttribute("DNSM");
+                        				var o = b.engine.getGameAttribute("DNSM");
+                        				(r = (o = null == (o = null != e.PostOffInfoDN1 ? o.getReserved("PostOffInfoDN1") : o.h.PostOffInfoDN1) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))) + (null == (r = b.engine.getGameAttribute("PostOfficeInfo")[3][r][0]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r)))),
+                        				null != e.PostOffInfoDN1 ? t.setReserved("PostOffInfoDN1", r) : (t.h.PostOffInfoDN1 = r);
+                        			}
+                        			return (
+                        				(a = b.engine.getGameAttribute("CurrenciesOwned")),
+                        				(s = b.engine.getGameAttribute("DNSM")),
+                        				(s = null != e.AlchVials ? s.getReserved("AlchVials") : s.h.AlchVials),
+                        				(s = null != e.BoxPoints ? s.getReserved("BoxPoints") : s.h.BoxPoints), null != e.DeliveryBoxMisc ? a.setReserved("DeliveryBoxMisc", s) : (a.h.DeliveryBoxMisc = s),
+                        				(a = b.engine.getGameAttribute("CurrenciesOwned")),
+                        				(a = null == (a = null != e.DeliveryBoxComplete ? a.getReserved("DeliveryBoxComplete") : a.h.DeliveryBoxComplete) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        				(s = b.engine.getGameAttribute("CurrenciesOwned")),
+                        				(s = null == (s = null != e.DeliveryBoxStreak ? s.getReserved("DeliveryBoxStreak") : s.h.DeliveryBoxStreak) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        				(t = b.engine.getGameAttribute("CurrenciesOwned")),
+                        				(t = null == (t = null != e.DeliveryBoxMisc ? t.getReserved("DeliveryBoxMisc") : t.h.DeliveryBoxMisc) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        				(r = b.engine.getGameAttribute("DNSM")),
+                        				(r = null != e.PostOffInfoDN1 ? r.getReserved("PostOffInfoDN1") : r.h.PostOffInfoDN1), Math.round(a + s + t - parseNum(r)));
+                        		}
+                        		if ("BonusAmount" == t) {
+                        			if (
+                        				((t = b.engine.getGameAttribute("DNSM")),
+                        					(r = b.engine.getGameAttribute("PostOfficeInfo")[3][0 | s][0]), null != e.PostOffInfoDN1 ? t.setReserved("PostOffInfoDN1", r) : (t.h.PostOffInfoDN1 = r), 1 == parseNum(a) ? ((t = b.engine.getGameAttribute("DNSM")),
+                        						(r = b.engine.getGameAttribute("DNSM")),
+                        						(r = null == (r = null != e.PostOffInfoDN1 ? r.getReserved("PostOffInfoDN1") : r.h.PostOffInfoDN1) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        						(o = b.engine.getGameAttribute("CustomLists")),
+                        						(r -= null == (o = (null != e.PostOffUpgradeInfo ? o.getReserved("PostOffUpgradeInfo") : o.h.PostOffUpgradeInfo)[0 | s][13]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))), null != e.PostOffInfoDN1 ? t.setReserved("PostOffInfoDN1", r) : (t.h.PostOffInfoDN1 = r)) : 2 == parseNum(a) && ((t = b.engine.getGameAttribute("DNSM")),
+                        						(r = b.engine.getGameAttribute("DNSM")),
+                        						(r = null == (r = null != e.PostOffInfoDN1 ? r.getReserved("PostOffInfoDN1") : r.h.PostOffInfoDN1) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        						(o = b.engine.getGameAttribute("CustomLists")),
+                        						(r -= null == (o = (null != e.PostOffUpgradeInfo ? o.getReserved("PostOffUpgradeInfo") : o.h.PostOffUpgradeInfo)[0 | s][14]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))), null != e.PostOffInfoDN1 ? t.setReserved("PostOffInfoDN1", r) : (t.h.PostOffInfoDN1 = r)),
+                        					(t = b.engine.getGameAttribute("DNSM")),
+                        					(r = b.engine.getGameAttribute("DNSM")),
+                        					(r = null != e.PostOffInfoDN1 ? r.getReserved("PostOffInfoDN1") : r.h.PostOffInfoDN1),
+                        					(r = Math.round(parseNum(r))), null != e.PostOffInfoDN1 ? t.setReserved("PostOffInfoDN1", r) : (t.h.PostOffInfoDN1 = r),
+                        					(t = b.engine.getGameAttribute("DNSM")), 0 < (null == (t = null != e.PostOffInfoDN1 ? t.getReserved("PostOffInfoDN1") : t.h.PostOffInfoDN1) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))))) return (
+                        				(t = b.engine.getGameAttribute("CustomLists")),
+                        				(t = "" + g.string(
+                        					(null != e.PostOffUpgradeInfo ? t.getReserved("PostOffUpgradeInfo") : t.h.PostOffUpgradeInfo)[0 | s][
+                        						(3 + 4 * parseNum(a)) | 0
+                        					])),
+                        				(r = b.engine.getGameAttribute("CustomLists")),
+                        				(r = null == (r = (null != e.PostOffUpgradeInfo ? r.getReserved("PostOffUpgradeInfo") : r.h.PostOffUpgradeInfo)[0 | s][
+                        					(1 + 4 * parseNum(a)) | 0
+                        				]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        				(o = b.engine.getGameAttribute("CustomLists")),
+                        				(a = null == (a = (null != e.PostOffUpgradeInfo ? o.getReserved("PostOffUpgradeInfo") : o.h.PostOffUpgradeInfo)[0 | s][
+                        					(2 + 4 * parseNum(a)) | 0
+                        				]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        				(s = b.engine.getGameAttribute("DNSM")),
+                        				(s = null != e.PostOffInfoDN1 ? s.getReserved("PostOffInfoDN1") : s.h.PostOffInfoDN1), H._customBlock_ArbitraryCode5Inputs(t, r, a, parseNum(s), 0, 0));
+                        		} else if ("SpecificBonus" == t) {
+                        			for (s = b.engine.getGameAttribute("DNSM"), null != e.PostOffInfoDN4 ? s.setReserved("PostOffInfoDN4", 0) : (s.h.PostOffInfoDN4 = 0), s = 0, t = b.engine.getGameAttribute("PostOfficeInfo")[3].length; s < t;)
+                        				for (r = s++, o = b.engine.getGameAttribute("DNSM"), null != e.PostOffInfoDRI ? o.setReserved("PostOffInfoDRI", r) : (o.h.PostOffInfoDRI = r), r = 0; 3 > r;) {
+                        					o = r++;
+                        					var i = b.engine.getGameAttribute("CustomLists");
+                        					i = null != e.PostOffUpgradeInfo ? i.getReserved("PostOffUpgradeInfo") : i.h.PostOffUpgradeInfo;
+                        					var u = b.engine.getGameAttribute("DNSM");
+                        					if (i[0 | (null == (u = null != e.PostOffInfoDRI ? u.getReserved("PostOffInfoDRI") : u.h.PostOffInfoDRI) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u)))][16 + o] == a) {
+                        						(i = b.engine.getGameAttribute("DNSM")),
+                        						(u = b.engine.getGameAttribute("DNSM")),
+                        						(u = null == (u = null != e.PostOffInfoDN4 ? u.getReserved("PostOffInfoDN4") : u.h.PostOffInfoDN4) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u)));
+                        						var m = b.engine.getGameAttribute("DNSM");
+                        						(m = null != e.PostOffInfoDRI ? m.getReserved("PostOffInfoDRI") : m.h.PostOffInfoDRI),
+                        						(o = u + A._customBlock_PostOfficeINFO("BonusAmount", parseNum(m), "" + o)),
+                        						null != e.PostOffInfoDN4 ? i.setReserved("PostOffInfoDN4", o) : (i.h.PostOffInfoDN4 = o);
+                        					}
+                        				}
+                        			return (a = b.engine.getGameAttribute("DNSM")), null != e.PostOffInfoDN4 ? a.getReserved("PostOffInfoDN4") : a.h.PostOffInfoDN4;
+                        		}
+                        		return 0;
+                        	}

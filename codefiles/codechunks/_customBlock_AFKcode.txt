@@ -1,0 +1,838 @@
+                        (A._customBlock_AFKcode = function(t, s) {
+                        		if ("AnvilPA" == t)
+                        			for (var a = 0, r = b.engine.getGameAttribute("AnvilPAselect").length; a < r;) {
+                        				var o = a++;
+                        				if (-1 != b.engine.getGameAttribute("AnvilPAselect")[o]) {
+                        					var i = b.engine.getGameAttribute("AnvilPA"),
+                        						u = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        						m = i[0 | parseNum(u)][0];
+                        					if (parseNum(m) < A._customBlock_AnvilProduceStats("Cap")) {
+                        						var c = b.engine.getGameAttribute("AnvilPA"),
+                        							f = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        							y = c[0 | parseNum(f)],
+                        							R = b.engine.getGameAttribute("AnvilPA"),
+                        							v = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        							F = R[0 | parseNum(v)][2];
+                        						y[2] = parseNum(F) + A._customBlock_AnvilProduceStats("ProductionSpeed") * s;
+                        						var N = b.engine.getGameAttribute("AnvilPA"),
+                        							_ = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        							I = N[0 | parseNum(_)][2],
+                        							D = parseNum(I),
+                        							E = b.engine.getGameAttribute("CustomLists"),
+                        							S = null != e.AnvilProductionInfo ? E.getReserved("AnvilProductionInfo") : E.h.AnvilProductionInfo,
+                        							G = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        							T = S[0 | parseNum(G)][1];
+                        						if (D >= parseNum(T)) {
+                        							var U = b.engine.getGameAttribute("DNSM"),
+                        								M = A._customBlock_AnvilProduceStats("Cap"),
+                        								V = b.engine.getGameAttribute("AnvilPA"),
+                        								C = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								B = V[0 | parseNum(C)][0],
+                        								P = parseNum(B),
+                        								O = b.engine.getGameAttribute("AnvilPA"),
+                        								w = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								x = O[0 | parseNum(w)][2],
+                        								Q = parseNum(x),
+                        								X = b.engine.getGameAttribute("CustomLists"),
+                        								L = null != e.AnvilProductionInfo ? X.getReserved("AnvilProductionInfo") : X.h.AnvilProductionInfo,
+                        								z = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								Y = L[0 | parseNum(z)][1],
+                        								W = U,
+                        								Z = Math.min(M - P, Math.floor(Q / parseNum(Y)));
+                        							null != e.AFKgetDN1 ? W.setReserved("AFKgetDN1", Z) : (W.h.AFKgetDN1 = Z);
+                        							var J = b.engine.getGameAttribute("AnvilPA"),
+                        								j = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								q = J[0 | parseNum(j)],
+                        								K = b.engine.getGameAttribute("AnvilPA"),
+                        								$ = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								ee = K[0 | (null == $ ? 0 : "number" == typeof $ ? d.__cast($, k) : "number" == typeof $ && (0 | $) === $ ? d.__cast($, l) : "boolean" == typeof $ ? d.__cast($, n) ? 1 : 0 : "string" == typeof $ ? parseFloat($) : parseFloat(g.string($)))][2],
+                        								te = parseNum(ee),
+                        								ne = b.engine.getGameAttribute("CustomLists"),
+                        								se = null != e.AnvilProductionInfo ? ne.getReserved("AnvilProductionInfo") : ne.h.AnvilProductionInfo,
+                        								ae = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								re = se[0 | parseNum(ae)][1],
+                        								Ae = parseNum(re),
+                        								le = b.engine.getGameAttribute("DNSM"),
+                        								oe = null != e.AFKgetDN1 ? le.getReserved("AFKgetDN1") : le.h.AFKgetDN1,
+                        								ie = parseNum(oe),
+                        								ue = b.engine.getGameAttribute("CustomLists"),
+                        								ge = null != e.AnvilProductionInfo ? ue.getReserved("AnvilProductionInfo") : ue.h.AnvilProductionInfo,
+                        								me = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								de = ge[0 | parseNum(me)][1];
+                        							q[2] = Math.min(te - Ae * ie, parseNum(de));
+                        							var ce = b.engine.getGameAttribute("AnvilPA"),
+                        								pe = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								he = ce[0 | parseNum(pe)],
+                        								be = b.engine.getGameAttribute("AnvilPA"),
+                        								fe = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								ye = be[0 | parseNum(fe)][0],
+                        								Re = parseNum(ye),
+                        								ve = b.engine.getGameAttribute("DNSM"),
+                        								Fe = null != e.AFKgetDN1 ? ve.getReserved("AFKgetDN1") : ve.h.AFKgetDN1;
+                        							he[0] = Re + parseNum(Fe);
+                        							var Ne = b.engine.getGameAttribute("AnvilPA"),
+                        								_e = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								Ie = Ne[0 | parseNum(_e)],
+                        								De = b.engine.getGameAttribute("AnvilPA"),
+                        								Ee = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								Se = De[0 | parseNum(Ee)][1],
+                        								Ge = parseNum(Se),
+                        								Te = b.engine.getGameAttribute("DNSM"),
+                        								Ue = null != e.AFKgetDN1 ? Te.getReserved("AFKgetDN1") : Te.h.AFKgetDN1,
+                        								Me = parseNum(Ue) * A._customBlock_AnvilProduceStats("ProdExpBonus"),
+                        								Ve = b.engine.getGameAttribute("CustomLists"),
+                        								Ce = null != e.AnvilProductionInfo ? Ve.getReserved("AnvilProductionInfo") : Ve.h.AnvilProductionInfo,
+                        								Be = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								Pe = Ce[0 | parseNum(Be)][3];
+                        							Ie[1] = Ge + Me * parseNum(Pe);
+                        							var Oe = b.engine.getGameAttribute("AnvilPA"),
+                        								we = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								ke = Oe[0 | parseNum(we)],
+                        								xe = b.engine.getGameAttribute("AnvilPA"),
+                        								Qe = b.engine.getGameAttribute("AnvilPAselect")[o],
+                        								Xe = xe[0 | parseNum(Qe)][3],
+                        								Le = parseNum(Xe),
+                        								ze = b.engine.getGameAttribute("DNSM"),
+                        								Ye = null != e.AFKgetDN1 ? ze.getReserved("AFKgetDN1") : ze.h.AFKgetDN1;
+                        							(ke[3] = Le + parseNum(Ye)),
+                        							17 == b.engine.getGameAttribute("MenuType2") && 1 == b.engine.getGameAttribute("PixelHelperActor")[3].getValue("ActorEvents_201", "_UIinventoryOn4")[0] && (b.engine.getGameAttribute("PixelHelperActor")[3].getValue("ActorEvents_201", "_GenINFO")[5] = 1);
+                        						}
+                        					}
+                        				}
+                        			}
+                        		else if ("Forge" == t)
+                        			for (var We = 0; 16 > We;) {
+                        				var Ze = We++;
+                        				if ("Blank" != b.engine.getGameAttribute("ForgeItemOrder")[3 * Ze]) {
+                        					var He = b.engine.getGameAttribute("DNSM"),
+                        						Je = new p();
+                        					null != e.forgeAFK ? He.setReserved("forgeAFK", Je) : (He.h.forgeAFK = Je);
+                        					var je = b.engine.getGameAttribute("DNSM"),
+                        						qe = null != e.forgeAFK ? je.getReserved("forgeAFK") : je.h.forgeAFK;
+                        					null != e.i ? qe.setReserved("i", Ze) : (qe.h.i = Ze);
+                        					var Ke = b.engine.getGameAttribute("DNSM"),
+                        						$e = null != e.forgeAFK ? Ke.getReserved("forgeAFK") : Ke.h.forgeAFK,
+                        						et = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        						tt = b.engine.getGameAttribute("DNSM"),
+                        						nt = null != e.forgeAFK ? tt.getReserved("forgeAFK") : tt.h.forgeAFK,
+                        						st = null != e.i ? nt.getReserved("i") : nt.h.i,
+                        						at = $e,
+                        						rt = et[
+                        							(3 * parseNum(st)) | 0];
+                        					null != e.N ? at.setReserved("N", rt) : (at.h.N = rt);
+                        					var At = b.engine.getGameAttribute("DNSM"),
+                        						lt = null != e.forgeAFK ? At.getReserved("forgeAFK") : At.h.forgeAFK,
+                        						ot = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        						it = b.engine.getGameAttribute("ForgeItemOrder"),
+                        						ut = b.engine.getGameAttribute("DNSM"),
+                        						gt = null != e.forgeAFK ? ut.getReserved("forgeAFK") : ut.h.forgeAFK,
+                        						mt = null != e.i ? gt.getReserved("i") : gt.h.i,
+                        						dt = "" + g.string(it[
+                        							(3 * parseNum(mt)) | 0]),
+                        						ct = ot,
+                        						pt = null != e[dt] ? ct.getReserved(dt) : ct.h[dt],
+                        						ht = null != e.Amount ? pt.getReserved("Amount") : pt.h.Amount,
+                        						bt = parseNum(ht),
+                        						ft = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        						yt = b.engine.getGameAttribute("ForgeItemOrder"),
+                        						Rt = b.engine.getGameAttribute("DNSM"),
+                        						vt = null != e.forgeAFK ? Rt.getReserved("forgeAFK") : Rt.h.forgeAFK,
+                        						Ft = null != e.i ? vt.getReserved("i") : vt.h.i,
+                        						Nt = "" + g.string(yt[
+                        							(3 * parseNum(Ft)) | 0]),
+                        						_t = ft,
+                        						It = null != e[Nt] ? _t.getReserved(Nt) : _t.h[Nt],
+                        						Dt = lt,
+                        						Et = bt - H._customBlock_FoodBonuses(g.string(null != e.Effect ? It.getReserved("Effect") : It.h.Effect) + "Redux");
+                        					null != e.n ? Dt.setReserved("n", Et) : (Dt.h.n = Et);
+                        					var St = b.engine.getGameAttribute("DNSM"),
+                        						Gt = null != e.forgeAFK ? St.getReserved("forgeAFK") : St.h.forgeAFK,
+                        						Tt = b.engine.getGameAttribute("DNSM"),
+                        						Ut = null != e.forgeAFK ? Tt.getReserved("forgeAFK") : Tt.h.forgeAFK,
+                        						Mt = null != e.i ? Ut.getReserved("i") : Ut.h.i,
+                        						Vt = H._customBlock_ForgeInterval(parseNum(Mt)),
+                        						Ct = b.engine.getGameAttribute("DNSM"),
+                        						Bt = null != e.forgeAFK ? Ct.getReserved("forgeAFK") : Ct.h.forgeAFK,
+                        						Pt = null != e.i ? Bt.getReserved("i") : Bt.h.i,
+                        						Ot = Gt,
+                        						wt = Vt / (4 * H._customBlock_ForgeSpeeed(parseNum(Pt)));
+                        					null != e.V ? Ot.setReserved("V", wt) : (Ot.h.V = wt);
+                        					var kt = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        						xt = b.engine.getGameAttribute("DNSM"),
+                        						Qt = null != e.forgeAFK ? xt.getReserved("forgeAFK") : xt.h.forgeAFK,
+                        						Xt = null != e.i ? Qt.getReserved("i") : Qt.h.i;
+                        					if (0 != kt[
+                        							(3 * parseNum(Xt) + 1) | 0]) var Lt = b.engine.getGameAttribute("ForgeItemOrder"),
+                        						zt = b.engine.getGameAttribute("DNSM"),
+                        						Yt = null != e.forgeAFK ? zt.getReserved("forgeAFK") : zt.h.forgeAFK,
+                        						Wt = null != e.i ? Yt.getReserved("i") : Yt.h.i,
+                        						Zt = "Blank" != Lt[
+                        							(3 * parseNum(Wt) + 1) | 0];
+                        					else Zt = !1;
+                        					if (Zt) {
+                        						var Ht = b.engine.getGameAttribute("DNSM"),
+                        							Jt = null != e.forgeAFK ? Ht.getReserved("forgeAFK") : Ht.h.forgeAFK,
+                        							jt = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        							qt = b.engine.getGameAttribute("DNSM"),
+                        							Kt = null != e.forgeAFK ? qt.getReserved("forgeAFK") : qt.h.forgeAFK,
+                        							$t = null != e.i ? Kt.getReserved("i") : Kt.h.i,
+                        							en = jt[
+                        								(3 * (null == $t ? 0 : "number" == typeof $t ? d.__cast($t, k) : "number" == typeof $t && (0 | $t) === $t ? d.__cast($t, l) : "boolean" == typeof $t ? d.__cast($t, n) ? 1 : 0 : "string" == typeof $t ? parseFloat($t) : parseFloat(g.string($t))) + 1) | 0],
+                        							tn = parseNum(en),
+                        							nn = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        							sn = b.engine.getGameAttribute("ForgeItemOrder"),
+                        							an = b.engine.getGameAttribute("DNSM"),
+                        							rn = null != e.forgeAFK ? an.getReserved("forgeAFK") : an.h.forgeAFK,
+                        							An = null != e.i ? rn.getReserved("i") : rn.h.i,
+                        							ln = "" + g.string(sn[
+                        								(3 * parseNum(An) + 1) | 0]),
+                        							on = nn,
+                        							un = null != e[ln] ? on.getReserved(ln) : on.h[ln],
+                        							gn = null != e.Cooldown ? un.getReserved("Cooldown") : un.h.Cooldown,
+                        							mn = parseNum(gn),
+                        							dn = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        							cn = b.engine.getGameAttribute("ForgeItemOrder"),
+                        							pn = b.engine.getGameAttribute("DNSM"),
+                        							hn = null != e.forgeAFK ? pn.getReserved("forgeAFK") : pn.h.forgeAFK,
+                        							bn = null != e.i ? hn.getReserved("i") : hn.h.i,
+                        							fn = "" + g.string(cn[
+                        								(3 * parseNum(bn) + 1) | 0]),
+                        							yn = dn,
+                        							Rn = null != e[fn] ? yn.getReserved(fn) : yn.h[fn],
+                        							vn = Jt,
+                        							Fn = tn * (1 / ((mn * H._customBlock_FoodBonuses(g.string(null != e.Effect ? Rn.getReserved("Effect") : Rn.h.Effect) + "CooldownBonus")) / 100));
+                        						null != e.Q ? vn.setReserved("Q", Fn) : (vn.h.Q = Fn);
+                        					} else {
+                        						var Nn = b.engine.getGameAttribute("DNSM"),
+                        							_n = null != e.forgeAFK ? Nn.getReserved("forgeAFK") : Nn.h.forgeAFK;
+                        						null != e.Q ? _n.setReserved("Q", 0) : (_n.h.Q = 0);
+                        					}
+                        					var In = b.engine.getGameAttribute("DNSM"),
+                        						Dn = null != e.forgeAFK ? In.getReserved("forgeAFK") : In.h.forgeAFK,
+                        						En = b.engine.getGameAttribute("DNSM"),
+                        						Sn = null != e.forgeAFK ? En.getReserved("forgeAFK") : En.h.forgeAFK,
+                        						Gn = null != e.Q ? Sn.getReserved("Q") : Sn.h.Q,
+                        						Tn = parseNum(Gn),
+                        						Un = b.engine.getGameAttribute("DNSM"),
+                        						Mn = null != e.forgeAFK ? Un.getReserved("forgeAFK") : Un.h.forgeAFK,
+                        						Vn = null != e.V ? Mn.getReserved("V") : Mn.h.V,
+                        						Cn = Dn,
+                        						Bn = Tn * parseNum(Vn);
+                        					null != e.Q2 ? Cn.setReserved("Q2", Bn) : (Cn.h.Q2 = Bn);
+                        					var Pn = b.engine.getGameAttribute("DNSM"),
+                        						On = null != e.forgeAFK ? Pn.getReserved("forgeAFK") : Pn.h.forgeAFK,
+                        						wn = b.engine.getGameAttribute("DNSM"),
+                        						kn = null != e.forgeAFK ? wn.getReserved("forgeAFK") : wn.h.forgeAFK,
+                        						xn = null != e.V ? kn.getReserved("V") : kn.h.V,
+                        						Qn = parseNum(xn),
+                        						Xn = b.engine.getGameAttribute("DNSM"),
+                        						Ln = null != e.forgeAFK ? Xn.getReserved("forgeAFK") : Xn.h.forgeAFK,
+                        						zn = null != e.N ? Ln.getReserved("N") : Ln.h.N,
+                        						Yn = parseNum(zn),
+                        						Wn = b.engine.getGameAttribute("DNSM"),
+                        						Zn = null != e.forgeAFK ? Wn.getReserved("forgeAFK") : Wn.h.forgeAFK,
+                        						Hn = null != e.n ? Zn.getReserved("n") : Zn.h.n,
+                        						Jn = On,
+                        						jn = Math.floor(Math.min(
+                        							(1 / Qn) * s, Yn / parseNum(Hn)));
+                        					null != e.T ? Jn.setReserved("T", jn) : (Jn.h.T = jn);
+                        					var qn = b.engine.getGameAttribute("DNSM"),
+                        						Kn = null != e.forgeAFK ? qn.getReserved("forgeAFK") : qn.h.forgeAFK,
+                        						$n = null != e.T ? Kn.getReserved("T") : Kn.h.T,
+                        						es = null == $n ? 0 : "number" == typeof $n ? d.__cast($n, k) : "number" == typeof $n && (0 | $n) === $n ? d.__cast($n, l) : "boolean" == typeof $n ? d.__cast($n, n) ? 1 : 0 : "string" == typeof $n ? parseFloat($n) : parseFloat(g.string($n)),
+                        						ts = b.engine.getGameAttribute("DNSM"),
+                        						ns = null != e.forgeAFK ? ts.getReserved("forgeAFK") : ts.h.forgeAFK,
+                        						ss = null != e.Q ? ns.getReserved("Q") : ns.h.Q;
+                        					if (es < parseNum(ss)) var as = !0;
+                        					else {
+                        						var rs = b.engine.getGameAttribute("DNSM"),
+                        							As = null != e.forgeAFK ? rs.getReserved("forgeAFK") : rs.h.forgeAFK;
+                        						as = 0 == (null != e.Q ? As.getReserved("Q") : As.h.Q);
+                        					}
+                        					if (as) {
+                        						var ls = b.engine.getGameAttribute("ForgeIntervalProgress"),
+                        							os = b.engine.getGameAttribute("DNSM"),
+                        							is = null != e.forgeAFK ? os.getReserved("forgeAFK") : os.h.forgeAFK,
+                        							us = null != e.i ? is.getReserved("i") : is.h.i,
+                        							gs = parseNum(us),
+                        							ms = b.engine.getGameAttribute("ForgeIntervalProgress"),
+                        							ds = b.engine.getGameAttribute("DNSM"),
+                        							cs = null != e.forgeAFK ? ds.getReserved("forgeAFK") : ds.h.forgeAFK,
+                        							ps = null != e.i ? cs.getReserved("i") : cs.h.i,
+                        							hs = ms[0 | parseNum(ps)],
+                        							bs = parseNum(hs),
+                        							fs = b.engine.getGameAttribute("DNSM"),
+                        							ys = null != e.forgeAFK ? fs.getReserved("forgeAFK") : fs.h.forgeAFK,
+                        							Rs = null != e.i ? ys.getReserved("i") : ys.h.i;
+                        						ls[0 | gs] = bs + 4 * H._customBlock_ForgeSpeeed(parseNum(Rs)) * s;
+                        						var vs = b.engine.getGameAttribute("DNSM"),
+                        							Fs = null != e.forgeAFK ? vs.getReserved("forgeAFK") : vs.h.forgeAFK;
+                        						null != e.ii ? Fs.setReserved("ii", 1) : (Fs.h.ii = 1);
+                        					} else {
+                        						var Ns = b.engine.getGameAttribute("ForgeIntervalProgress"),
+                        							_s = b.engine.getGameAttribute("DNSM"),
+                        							Is = null != e.forgeAFK ? _s.getReserved("forgeAFK") : _s.h.forgeAFK,
+                        							Ds = null != e.i ? Is.getReserved("i") : Is.h.i,
+                        							Es = parseNum(Ds),
+                        							Ss = b.engine.getGameAttribute("ForgeIntervalProgress"),
+                        							Gs = b.engine.getGameAttribute("DNSM"),
+                        							Ts = null != e.forgeAFK ? Gs.getReserved("forgeAFK") : Gs.h.forgeAFK,
+                        							Us = null != e.i ? Ts.getReserved("i") : Ts.h.i,
+                        							Ms = Ss[0 | parseNum(Us)],
+                        							Vs = parseNum(Ms),
+                        							Cs = b.engine.getGameAttribute("DNSM"),
+                        							Bs = null != e.forgeAFK ? Cs.getReserved("forgeAFK") : Cs.h.forgeAFK,
+                        							Ps = null != e.i ? Bs.getReserved("i") : Bs.h.i,
+                        							Os = H._customBlock_ForgeSpeeed(parseNum(Ps)),
+                        							ws = b.engine.getGameAttribute("DNSM"),
+                        							ks = null != e.forgeAFK ? ws.getReserved("forgeAFK") : ws.h.forgeAFK,
+                        							xs = null != e.Q ? ks.getReserved("Q") : ks.h.Q,
+                        							Qs = parseNum(xs),
+                        							Xs = b.engine.getGameAttribute("DNSM"),
+                        							Ls = null != e.forgeAFK ? Xs.getReserved("forgeAFK") : Xs.h.forgeAFK,
+                        							zs = null != e.V ? Ls.getReserved("V") : Ls.h.V;
+                        						Ns[0 | Es] = Vs + 4 * Os * Qs * parseNum(zs);
+                        						var Ys = b.engine.getGameAttribute("DNSM"),
+                        							Ws = null != e.forgeAFK ? Ys.getReserved("forgeAFK") : Ys.h.forgeAFK;
+                        						null != e.ii ? Ws.setReserved("ii", 2) : (Ws.h.ii = 2);
+                        						var Zs = b.engine.getGameAttribute("DNSM"),
+                        							Hs = null != e.forgeAFK ? Zs.getReserved("forgeAFK") : Zs.h.forgeAFK,
+                        							Js = b.engine.getGameAttribute("DNSM"),
+                        							js = null != e.forgeAFK ? Js.getReserved("forgeAFK") : Js.h.forgeAFK,
+                        							qs = Hs,
+                        							Ks = null != e.Q ? js.getReserved("Q") : js.h.Q;
+                        						null != e.T ? qs.setReserved("T", Ks) : (qs.h.T = Ks);
+                        					}
+                        					for (var $s = 0,
+                        							ea = b.engine.getGameAttribute("DNSM"),
+                        							ta = null != e.forgeAFK ? ea.getReserved("forgeAFK") : ea.h.forgeAFK,
+                        							na = null != e.ii ? ta.getReserved("ii") : ta.h.ii,
+                        							sa = 0 | parseNum(na); $s < sa;) {
+                        						var aa = $s++,
+                        							ra = b.engine.getGameAttribute("DNSM"),
+                        							Aa = null != e.forgeAFK ? ra.getReserved("forgeAFK") : ra.h.forgeAFK,
+                        							la = null != e.T ? Aa.getReserved("T") : Aa.h.T;
+                        						if (1 <= parseNum(la)) {
+                        							var oa = b.engine.getGameAttribute("ForgeIntervalProgress"),
+                        								ia = b.engine.getGameAttribute("DNSM"),
+                        								ua = null != e.forgeAFK ? ia.getReserved("forgeAFK") : ia.h.forgeAFK,
+                        								ga = null != e.i ? ua.getReserved("i") : ua.h.i,
+                        								ma = parseNum(ga),
+                        								da = b.engine.getGameAttribute("ForgeIntervalProgress"),
+                        								ca = b.engine.getGameAttribute("DNSM"),
+                        								pa = null != e.forgeAFK ? ca.getReserved("forgeAFK") : ca.h.forgeAFK,
+                        								ha = null != e.i ? pa.getReserved("i") : pa.h.i,
+                        								ba = da[0 | parseNum(ha)],
+                        								fa = parseNum(ba),
+                        								ya = b.engine.getGameAttribute("DNSM"),
+                        								Ra = null != e.forgeAFK ? ya.getReserved("forgeAFK") : ya.h.forgeAFK,
+                        								va = null != e.i ? Ra.getReserved("i") : Ra.h.i,
+                        								Fa = H._customBlock_ForgeInterval(parseNum(va)),
+                        								Na = b.engine.getGameAttribute("DNSM"),
+                        								_a = null != e.forgeAFK ? Na.getReserved("forgeAFK") : Na.h.forgeAFK,
+                        								Ia = null != e.T ? _a.getReserved("T") : _a.h.T;
+                        							oa[0 | ma] = fa - Fa * parseNum(Ia);
+                        							var Da = b.engine.getGameAttribute("ForgeItemOrder"),
+                        								Ea = b.engine.getGameAttribute("DNSM"),
+                        								Sa = null != e.forgeAFK ? Ea.getReserved("forgeAFK") : Ea.h.forgeAFK,
+                        								Ga = null != e.i ? Sa.getReserved("i") : Sa.h.i;
+                        							if ("Blank" == "" + g.string(Da[
+                        									(3 * parseNum(Ga) + 2) | 0])) {
+                        								var Ta = b.engine.getGameAttribute("ForgeItemOrder"),
+                        									Ua = b.engine.getGameAttribute("DNSM"),
+                        									Ma = null != e.forgeAFK ? Ua.getReserved("forgeAFK") : Ua.h.forgeAFK,
+                        									Va = null != e.i ? Ma.getReserved("i") : Ma.h.i,
+                        									Ca = parseNum(Va),
+                        									Ba = b.engine.getGameAttribute("ForgeItemOrder"),
+                        									Pa = b.engine.getGameAttribute("DNSM"),
+                        									Oa = null != e.forgeAFK ? Pa.getReserved("forgeAFK") : Pa.h.forgeAFK,
+                        									wa = null != e.i ? Oa.getReserved("i") : Oa.h.i;
+                        								Ta[(3 * Ca + 2) | 0] = g.string(Ba[
+                        									(3 * parseNum(wa)) | 0]) + "Bar";
+                        							}
+                        							var ka = b.engine.getGameAttribute("DNSM"),
+                        								xa = null != e.forgeAFK ? ka.getReserved("forgeAFK") : ka.h.forgeAFK,
+                        								Qa = b.engine.getGameAttribute("DNSM"),
+                        								Xa = null != e.forgeAFK ? Qa.getReserved("forgeAFK") : Qa.h.forgeAFK,
+                        								La = null != e.i ? Xa.getReserved("i") : Xa.h.i,
+                        								za = H._customBlock_ForgeEtcDetails("BarsMade", parseNum(La)),
+                        								Ya = b.engine.getGameAttribute("DNSM"),
+                        								Wa = null != e.forgeAFK ? Ya.getReserved("forgeAFK") : Ya.h.forgeAFK,
+                        								Za = null != e.T ? Wa.getReserved("T") : Wa.h.T,
+                        								Ha = xa,
+                        								Ja = za * parseNum(Za);
+                        							null != e.Zz ? Ha.setReserved("Zz", Ja) : (Ha.h.Zz = Ja);
+                        							var ja = h.randomFloat(),
+                        								qa = b.engine.getGameAttribute("DNSM"),
+                        								Ka = null != e.forgeAFK ? qa.getReserved("forgeAFK") : qa.h.forgeAFK,
+                        								$a = null != e.Zz ? Ka.getReserved("Zz") : Ka.h.Zz,
+                        								er = null == $a ? 0 : "number" == typeof $a ? d.__cast($a, k) : "number" == typeof $a && (0 | $a) === $a ? d.__cast($a, l) : "boolean" == typeof $a ? d.__cast($a, n) ? 1 : 0 : "string" == typeof $a ? parseFloat($a) : parseFloat(g.string($a)),
+                        								tr = b.engine.getGameAttribute("DNSM"),
+                        								nr = null != e.forgeAFK ? tr.getReserved("forgeAFK") : tr.h.forgeAFK,
+                        								sr = null != e.Zz ? nr.getReserved("Zz") : nr.h.Zz;
+                        							if (ja > er - Math.floor(parseNum(sr))) {
+                        								var ar = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        									rr = b.engine.getGameAttribute("DNSM"),
+                        									Ar = null != e.forgeAFK ? rr.getReserved("forgeAFK") : rr.h.forgeAFK,
+                        									lr = null != e.i ? Ar.getReserved("i") : Ar.h.i,
+                        									or = parseNum(lr),
+                        									ir = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        									ur = b.engine.getGameAttribute("DNSM"),
+                        									gr = null != e.forgeAFK ? ur.getReserved("forgeAFK") : ur.h.forgeAFK,
+                        									mr = null != e.i ? gr.getReserved("i") : gr.h.i,
+                        									dr = ir[
+                        										(3 * parseNum(mr) + 2) | 0],
+                        									cr = parseNum(dr),
+                        									pr = b.engine.getGameAttribute("DNSM"),
+                        									hr = null != e.forgeAFK ? pr.getReserved("forgeAFK") : pr.h.forgeAFK,
+                        									br = null != e.Zz ? hr.getReserved("Zz") : hr.h.Zz;
+                        								ar[(3 * or + 2) | 0] = Math.floor(cr + parseNum(br));
+                        							} else {
+                        								var fr = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        									yr = b.engine.getGameAttribute("DNSM"),
+                        									Rr = null != e.forgeAFK ? yr.getReserved("forgeAFK") : yr.h.forgeAFK,
+                        									vr = null != e.i ? Rr.getReserved("i") : Rr.h.i,
+                        									Fr = parseNum(vr),
+                        									Nr = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        									_r = b.engine.getGameAttribute("DNSM"),
+                        									Ir = null != e.forgeAFK ? _r.getReserved("forgeAFK") : _r.h.forgeAFK,
+                        									Dr = null != e.i ? Ir.getReserved("i") : Ir.h.i,
+                        									Er = Nr[
+                        										(3 * parseNum(Dr) + 2) | 0],
+                        									Sr = parseNum(Er),
+                        									Gr = b.engine.getGameAttribute("DNSM"),
+                        									Tr = null != e.forgeAFK ? Gr.getReserved("forgeAFK") : Gr.h.forgeAFK,
+                        									Ur = null != e.Zz ? Tr.getReserved("Zz") : Tr.h.Zz;
+                        								fr[(3 * Fr + 2) | 0] = Math.ceil(Sr + parseNum(Ur));
+                        							}
+                        							var Mr = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        								Vr = b.engine.getGameAttribute("DNSM"),
+                        								Cr = null != e.forgeAFK ? Vr.getReserved("forgeAFK") : Vr.h.forgeAFK,
+                        								Br = null != e.i ? Cr.getReserved("i") : Cr.h.i,
+                        								Pr = parseNum(Br),
+                        								Or = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        								wr = b.engine.getGameAttribute("DNSM"),
+                        								kr = null != e.forgeAFK ? wr.getReserved("forgeAFK") : wr.h.forgeAFK,
+                        								xr = null != e.i ? kr.getReserved("i") : kr.h.i,
+                        								Qr = Or[
+                        									(3 * parseNum(xr)) | 0],
+                        								Xr = parseNum(Qr),
+                        								Lr = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        								zr = b.engine.getGameAttribute("ForgeItemOrder"),
+                        								Yr = b.engine.getGameAttribute("DNSM"),
+                        								Wr = null != e.forgeAFK ? Yr.getReserved("forgeAFK") : Yr.h.forgeAFK,
+                        								Zr = null != e.i ? Wr.getReserved("i") : Wr.h.i,
+                        								Hr = "" + g.string(zr[
+                        									(3 * parseNum(Zr)) | 0]),
+                        								Jr = Lr,
+                        								jr = null != e[Hr] ? Jr.getReserved(Hr) : Jr.h[Hr],
+                        								qr = null != e.Amount ? jr.getReserved("Amount") : jr.h.Amount,
+                        								Kr = parseNum(qr),
+                        								$r = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        								eA = b.engine.getGameAttribute("ForgeItemOrder"),
+                        								tA = b.engine.getGameAttribute("DNSM"),
+                        								nA = null != e.forgeAFK ? tA.getReserved("forgeAFK") : tA.h.forgeAFK,
+                        								sA = null != e.i ? nA.getReserved("i") : nA.h.i,
+                        								aA = "" + g.string(eA[
+                        									(3 * parseNum(sA)) | 0]),
+                        								rA = $r,
+                        								AA = null != e[aA] ? rA.getReserved(aA) : rA.h[aA],
+                        								lA = Math.max(Math.ceil(Kr - H._customBlock_FoodBonuses(g.string(null != e.Effect ? AA.getReserved("Effect") : AA.h.Effect) + "Redux")), 1),
+                        								oA = b.engine.getGameAttribute("DNSM"),
+                        								iA = null != e.forgeAFK ? oA.getReserved("forgeAFK") : oA.h.forgeAFK,
+                        								uA = null != e.T ? iA.getReserved("T") : iA.h.T;
+                        							Mr[(3 * Pr) | 0] = Xr - lA * parseNum(uA);
+                        							var gA = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        								mA = b.engine.getGameAttribute("DNSM"),
+                        								dA = null != e.forgeAFK ? mA.getReserved("forgeAFK") : mA.h.forgeAFK,
+                        								cA = null != e.i ? dA.getReserved("i") : dA.h.i,
+                        								pA = gA[
+                        									(3 * parseNum(cA)) | 0];
+                        							if (0 >= parseNum(pA)) var hA = b.engine.getGameAttribute("ForgeItemOrder"),
+                        								bA = b.engine.getGameAttribute("DNSM"),
+                        								fA = null != e.forgeAFK ? bA.getReserved("forgeAFK") : bA.h.forgeAFK,
+                        								yA = null != e.i ? fA.getReserved("i") : fA.h.i,
+                        								RA = "Blank" != hA[
+                        									(3 * parseNum(yA)) | 0];
+                        							else RA = !1;
+                        							if (RA) {
+                        								var vA = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        									FA = b.engine.getGameAttribute("DNSM"),
+                        									NA = null != e.forgeAFK ? FA.getReserved("forgeAFK") : FA.h.forgeAFK,
+                        									_A = null != e.i ? NA.getReserved("i") : NA.h.i;
+                        								if (
+                        									((vA[
+                        										(3 * parseNum(_A)) | 0] = 0), 1 == b.engine.getGameAttribute("Lab")[16][0])) var IA = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_JustStorageOWNED"),
+                        									DA = b.engine.getGameAttribute("ForgeItemOrder"),
+                        									EA = b.engine.getGameAttribute("DNSM"),
+                        									SA = null != e.forgeAFK ? EA.getReserved("forgeAFK") : EA.h.forgeAFK,
+                        									GA = null != e.i ? SA.getReserved("i") : SA.h.i,
+                        									TA = "" + g.string(DA[
+                        										(3 * parseNum(GA)) | 0]),
+                        									UA = IA,
+                        									MA = null != e[TA] ? UA.getReserved(TA) : UA.h[TA],
+                        									VA = 0 < parseNum(MA);
+                        								else VA = !1;
+                        								if (VA) {
+                        									var CA = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        										BA = b.engine.getGameAttribute("DNSM"),
+                        										PA = null != e.forgeAFK ? BA.getReserved("forgeAFK") : BA.h.forgeAFK,
+                        										OA = null != e.i ? PA.getReserved("i") : PA.h.i,
+                        										wA = parseNum(OA),
+                        										kA = H._customBlock_ForgeStats(1),
+                        										xA = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_JustStorageOWNED"),
+                        										QA = b.engine.getGameAttribute("ForgeItemOrder"),
+                        										XA = b.engine.getGameAttribute("DNSM"),
+                        										LA = null != e.forgeAFK ? XA.getReserved("forgeAFK") : XA.h.forgeAFK,
+                        										zA = null != e.i ? LA.getReserved("i") : LA.h.i,
+                        										YA = "" + g.string(QA[
+                        											(3 * parseNum(zA)) | 0]),
+                        										WA = xA,
+                        										ZA = null != e[YA] ? WA.getReserved(YA) : WA.h[YA];
+                        									CA[(3 * wA) | 0] = Math.min(kA, parseNum(ZA));
+                        									var HA = b.engine.getGameAttribute("ForgeItemOrder"),
+                        										JA = b.engine.getGameAttribute("DNSM"),
+                        										jA = null != e.forgeAFK ? JA.getReserved("forgeAFK") : JA.h.forgeAFK,
+                        										qA = null != e.i ? jA.getReserved("i") : jA.h.i,
+                        										KA = "" + g.string(HA[
+                        											(3 * parseNum(qA)) | 0]),
+                        										$A = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        										el = b.engine.getGameAttribute("DNSM"),
+                        										tl = null != e.forgeAFK ? el.getReserved("forgeAFK") : el.h.forgeAFK,
+                        										nl = null != e.i ? tl.getReserved("i") : tl.h.i,
+                        										sl = $A[
+                        											(3 * parseNum(nl)) | 0];
+                        									A._customBlock_removeitems(KA, parseNum(sl), "Storage");
+                        									var al = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_JustStorageOWNED"),
+                        										rl = b.engine.getGameAttribute("ForgeItemOrder"),
+                        										Al = b.engine.getGameAttribute("DNSM"),
+                        										ll = null != e.forgeAFK ? Al.getReserved("forgeAFK") : Al.h.forgeAFK,
+                        										ol = null != e.i ? ll.getReserved("i") : ll.h.i,
+                        										il = "" + g.string(rl[
+                        											(3 * parseNum(ol)) | 0]),
+                        										ul = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_JustStorageOWNED"),
+                        										gl = b.engine.getGameAttribute("ForgeItemOrder"),
+                        										ml = b.engine.getGameAttribute("DNSM"),
+                        										dl = null != e.forgeAFK ? ml.getReserved("forgeAFK") : ml.h.forgeAFK,
+                        										cl = null != e.i ? dl.getReserved("i") : dl.h.i,
+                        										pl = "" + g.string(gl[
+                        											(3 * parseNum(cl)) | 0]),
+                        										hl = ul,
+                        										bl = null != e[pl] ? hl.getReserved(pl) : hl.h[pl],
+                        										fl = parseNum(bl),
+                        										yl = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        										Rl = b.engine.getGameAttribute("DNSM"),
+                        										vl = null != e.forgeAFK ? Rl.getReserved("forgeAFK") : Rl.h.forgeAFK,
+                        										Fl = null != e.i ? vl.getReserved("i") : vl.h.i,
+                        										Nl = yl[
+                        											(3 * parseNum(Fl)) | 0],
+                        										_l = al,
+                        										Il = fl - parseNum(Nl);
+                        									null != e[il] ? _l.setReserved(il, Il) : (_l.h[il] = Il);
+                        									var Dl = b.engine.getGameAttribute("ForgeIntervalProgress"),
+                        										El = b.engine.getGameAttribute("DNSM"),
+                        										Sl = null != e.forgeAFK ? El.getReserved("forgeAFK") : El.h.forgeAFK,
+                        										Gl = null != e.i ? Sl.getReserved("i") : Sl.h.i;
+                        									Dl[0 | parseNum(Gl)] = 0;
+                        								} else {
+                        									var Tl = b.engine.getGameAttribute("ForgeItemOrder"),
+                        										Ul = b.engine.getGameAttribute("DNSM"),
+                        										Ml = null != e.forgeAFK ? Ul.getReserved("forgeAFK") : Ul.h.forgeAFK,
+                        										Vl = null != e.i ? Ml.getReserved("i") : Ml.h.i;
+                        									Tl[
+                        										(3 * parseNum(Vl)) | 0] = "Blank";
+                        								}
+                        							}
+                        							var Cl = b.engine.getGameAttribute("ForgeItemOrder"),
+                        								Bl = b.engine.getGameAttribute("DNSM"),
+                        								Pl = null != e.forgeAFK ? Bl.getReserved("forgeAFK") : Bl.h.forgeAFK,
+                        								Ol = null != e.i ? Pl.getReserved("i") : Pl.h.i;
+                        							if ("Blank" != "" + g.string(Cl[
+                        									(3 * parseNum(Ol) + 1) | 0])) {
+                        								var wl = b.engine.getGameAttribute("DNSM"),
+                        									kl = null != e.forgeAFK ? wl.getReserved("forgeAFK") : wl.h.forgeAFK,
+                        									xl = b.engine.getGameAttribute("DNSM"),
+                        									Ql = null != e.forgeAFK ? xl.getReserved("forgeAFK") : xl.h.forgeAFK,
+                        									Xl = null != e.T ? Ql.getReserved("T") : Ql.h.T,
+                        									Ll = parseNum(Xl),
+                        									zl = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        									Yl = b.engine.getGameAttribute("ForgeItemOrder"),
+                        									Wl = b.engine.getGameAttribute("DNSM"),
+                        									Zl = null != e.forgeAFK ? Wl.getReserved("forgeAFK") : Wl.h.forgeAFK,
+                        									Hl = null != e.i ? Zl.getReserved("i") : Zl.h.i,
+                        									Jl = "" + g.string(Yl[
+                        										(3 * parseNum(Hl) + 1) | 0]),
+                        									jl = zl,
+                        									ql = null != e[Jl] ? jl.getReserved(Jl) : jl.h[Jl],
+                        									Kl = null != e.Cooldown ? ql.getReserved("Cooldown") : ql.h.Cooldown,
+                        									$l = parseNum(Kl),
+                        									eo = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        									to = b.engine.getGameAttribute("ForgeItemOrder"),
+                        									no = b.engine.getGameAttribute("DNSM"),
+                        									so = null != e.forgeAFK ? no.getReserved("forgeAFK") : no.h.forgeAFK,
+                        									ao = null != e.i ? so.getReserved("i") : so.h.i,
+                        									ro = "" + g.string(to[
+                        										(3 * parseNum(ao) + 1) | 0]),
+                        									Ao = eo,
+                        									lo = null != e[ro] ? Ao.getReserved(ro) : Ao.h[ro],
+                        									oo = kl,
+                        									io = Ll * (($l * H._customBlock_FoodBonuses(g.string(null != e.Effect ? lo.getReserved("Effect") : lo.h.Effect) + "CooldownBonus")) / 100);
+                        								null != e.Z ? oo.setReserved("Z", io) : (oo.h.Z = io);
+                        								var uo = h.randomFloat(),
+                        									go = b.engine.getGameAttribute("DNSM"),
+                        									mo = null != e.forgeAFK ? go.getReserved("forgeAFK") : go.h.forgeAFK,
+                        									co = null != e.Z ? mo.getReserved("Z") : mo.h.Z,
+                        									po = parseNum(co),
+                        									ho = b.engine.getGameAttribute("DNSM"),
+                        									bo = null != e.forgeAFK ? ho.getReserved("forgeAFK") : ho.h.forgeAFK,
+                        									fo = null != e.Z ? bo.getReserved("Z") : bo.h.Z;
+                        								if (uo > po - Math.floor(parseNum(fo))) {
+                        									var yo = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        										Ro = b.engine.getGameAttribute("DNSM"),
+                        										vo = null != e.forgeAFK ? Ro.getReserved("forgeAFK") : Ro.h.forgeAFK,
+                        										Fo = null != e.i ? vo.getReserved("i") : vo.h.i,
+                        										No = parseNum(Fo),
+                        										_o = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        										Io = b.engine.getGameAttribute("DNSM"),
+                        										Do = null != e.forgeAFK ? Io.getReserved("forgeAFK") : Io.h.forgeAFK,
+                        										Eo = null != e.i ? Do.getReserved("i") : Do.h.i,
+                        										So = _o[
+                        											(3 * parseNum(Eo) + 1) | 0],
+                        										Go = parseNum(So),
+                        										To = b.engine.getGameAttribute("DNSM"),
+                        										Uo = null != e.forgeAFK ? To.getReserved("forgeAFK") : To.h.forgeAFK,
+                        										Mo = null != e.Z ? Uo.getReserved("Z") : Uo.h.Z;
+                        									yo[(3 * No + 1) | 0] = Math.floor(Go - parseNum(Mo));
+                        								} else {
+                        									var Vo = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        										Co = b.engine.getGameAttribute("DNSM"),
+                        										Bo = null != e.forgeAFK ? Co.getReserved("forgeAFK") : Co.h.forgeAFK,
+                        										Po = null != e.i ? Bo.getReserved("i") : Bo.h.i,
+                        										Oo = parseNum(Po),
+                        										wo = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        										ko = b.engine.getGameAttribute("DNSM"),
+                        										xo = null != e.forgeAFK ? ko.getReserved("forgeAFK") : ko.h.forgeAFK,
+                        										Qo = null != e.i ? xo.getReserved("i") : xo.h.i,
+                        										Xo = wo[
+                        											(3 * parseNum(Qo) + 1) | 0],
+                        										Lo = parseNum(Xo),
+                        										zo = b.engine.getGameAttribute("DNSM"),
+                        										Yo = null != e.forgeAFK ? zo.getReserved("forgeAFK") : zo.h.forgeAFK,
+                        										Wo = null != e.Z ? Yo.getReserved("Z") : Yo.h.Z;
+                        									Vo[(3 * Oo + 1) | 0] = Math.ceil(Lo - parseNum(Wo));
+                        								}
+                        							}
+                        							var Zo = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        								Ho = b.engine.getGameAttribute("DNSM"),
+                        								Jo = null != e.forgeAFK ? Ho.getReserved("forgeAFK") : Ho.h.forgeAFK,
+                        								jo = null != e.i ? Jo.getReserved("i") : Jo.h.i,
+                        								qo = Zo[
+                        									(3 * parseNum(jo) + 1) | 0];
+                        							if (0 >= parseNum(qo)) var Ko = b.engine.getGameAttribute("ForgeItemOrder"),
+                        								$o = b.engine.getGameAttribute("DNSM"),
+                        								ei = null != e.forgeAFK ? $o.getReserved("forgeAFK") : $o.h.forgeAFK,
+                        								ti = null != e.i ? ei.getReserved("i") : ei.h.i,
+                        								ni = "Blank" != Ko[
+                        									(3 * parseNum(ti) + 1) | 0];
+                        							else ni = !1;
+                        							if (ni) {
+                        								var si = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        									ai = b.engine.getGameAttribute("DNSM"),
+                        									ri = null != e.forgeAFK ? ai.getReserved("forgeAFK") : ai.h.forgeAFK,
+                        									Ai = null != e.i ? ri.getReserved("i") : ri.h.i;
+                        								if (
+                        									((si[
+                        										(3 * parseNum(Ai) + 1) | 0] = 0), 1 == b.engine.getGameAttribute("Lab")[16][0])) var li = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_JustStorageOWNED"),
+                        									oi = b.engine.getGameAttribute("ForgeItemOrder"),
+                        									ii = b.engine.getGameAttribute("DNSM"),
+                        									ui = null != e.forgeAFK ? ii.getReserved("forgeAFK") : ii.h.forgeAFK,
+                        									gi = null != e.i ? ui.getReserved("i") : ui.h.i,
+                        									mi = "" + g.string(oi[
+                        										(3 * parseNum(gi) + 1) | 0]),
+                        									di = li,
+                        									ci = null != e[mi] ? di.getReserved(mi) : di.h[mi],
+                        									pi = 0 < parseNum(ci);
+                        								else pi = !1;
+                        								if (pi) {
+                        									var hi = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        										bi = b.engine.getGameAttribute("DNSM"),
+                        										fi = null != e.forgeAFK ? bi.getReserved("forgeAFK") : bi.h.forgeAFK,
+                        										yi = null != e.i ? fi.getReserved("i") : fi.h.i,
+                        										Ri = parseNum(yi),
+                        										vi = H._customBlock_ForgeStats(1),
+                        										Fi = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_JustStorageOWNED"),
+                        										Ni = b.engine.getGameAttribute("ForgeItemOrder"),
+                        										_i = b.engine.getGameAttribute("DNSM"),
+                        										Ii = null != e.forgeAFK ? _i.getReserved("forgeAFK") : _i.h.forgeAFK,
+                        										Di = null != e.i ? Ii.getReserved("i") : Ii.h.i,
+                        										Ei = "" + g.string(Ni[
+                        											(3 * parseNum(Di) + 1) | 0]),
+                        										Si = Fi,
+                        										Gi = null != e[Ei] ? Si.getReserved(Ei) : Si.h[Ei];
+                        									hi[(3 * Ri + 1) | 0] = Math.min(vi, parseNum(Gi));
+                        									var Ti = b.engine.getGameAttribute("ForgeItemOrder"),
+                        										Ui = b.engine.getGameAttribute("DNSM"),
+                        										Mi = null != e.forgeAFK ? Ui.getReserved("forgeAFK") : Ui.h.forgeAFK,
+                        										Vi = null != e.i ? Mi.getReserved("i") : Mi.h.i,
+                        										Ci = "" + g.string(Ti[
+                        											(3 * parseNum(Vi) + 1) | 0]),
+                        										Bi = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        										Pi = b.engine.getGameAttribute("DNSM"),
+                        										Oi = null != e.forgeAFK ? Pi.getReserved("forgeAFK") : Pi.h.forgeAFK,
+                        										wi = null != e.i ? Oi.getReserved("i") : Oi.h.i,
+                        										ki = Bi[
+                        											(3 * parseNum(wi) + 1) | 0];
+                        									A._customBlock_removeitems(Ci, parseNum(ki), "Storage");
+                        									var xi = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_JustStorageOWNED"),
+                        										Qi = b.engine.getGameAttribute("ForgeItemOrder"),
+                        										Xi = b.engine.getGameAttribute("DNSM"),
+                        										Li = null != e.forgeAFK ? Xi.getReserved("forgeAFK") : Xi.h.forgeAFK,
+                        										zi = null != e.i ? Li.getReserved("i") : Li.h.i,
+                        										Yi = "" + g.string(Qi[
+                        											(3 * parseNum(zi) + 1) | 0]),
+                        										Wi = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_JustStorageOWNED"),
+                        										Zi = b.engine.getGameAttribute("ForgeItemOrder"),
+                        										Hi = b.engine.getGameAttribute("DNSM"),
+                        										Ji = null != e.forgeAFK ? Hi.getReserved("forgeAFK") : Hi.h.forgeAFK,
+                        										ji = null != e.i ? Ji.getReserved("i") : Ji.h.i,
+                        										qi = "" + g.string(Zi[
+                        											(3 * parseNum(ji) + 1) | 0]),
+                        										Ki = Wi,
+                        										$i = null != e[qi] ? Ki.getReserved(qi) : Ki.h[qi],
+                        										eu = null == $i ? 0 : "number" == typeof $i ? d.__cast($i, k) : "number" == typeof $i && (0 | $i) === $i ? d.__cast($i, l) : "boolean" == typeof $i ? d.__cast($i, n) ? 1 : 0 : "string" == typeof $i ? parseFloat($i) : parseFloat(g.string($i)),
+                        										tu = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        										nu = b.engine.getGameAttribute("DNSM"),
+                        										su = null != e.forgeAFK ? nu.getReserved("forgeAFK") : nu.h.forgeAFK,
+                        										au = null != e.i ? su.getReserved("i") : su.h.i,
+                        										ru = tu[
+                        											(3 * parseNum(au) + 1) | 0],
+                        										Au = xi,
+                        										lu = eu - parseNum(ru);
+                        									null != e[Yi] ? Au.setReserved(Yi, lu) : (Au.h[Yi] = lu);
+                        									var ou = b.engine.getGameAttribute("ForgeIntervalProgress"),
+                        										iu = b.engine.getGameAttribute("DNSM"),
+                        										uu = null != e.forgeAFK ? iu.getReserved("forgeAFK") : iu.h.forgeAFK,
+                        										gu = null != e.i ? uu.getReserved("i") : uu.h.i;
+                        									ou[0 | parseNum(gu)] = 0;
+                        								} else {
+                        									var mu = b.engine.getGameAttribute("ForgeItemOrder"),
+                        										du = b.engine.getGameAttribute("DNSM"),
+                        										cu = null != e.forgeAFK ? du.getReserved("forgeAFK") : du.h.forgeAFK,
+                        										pu = null != e.i ? cu.getReserved("i") : cu.h.i;
+                        									mu[
+                        										(3 * parseNum(pu) + 1) | 0] = "Blank";
+                        								}
+                        							}
+                        							var hu = b.engine.getGameAttribute("DNSM"),
+                        								bu = null != e.forgeAFK ? hu.getReserved("forgeAFK") : hu.h.forgeAFK;
+                        							if (2 == (null != e.ii ? bu.getReserved("ii") : bu.h.ii) && 0 == aa) {
+                        								var fu = b.engine.getGameAttribute("DNSM"),
+                        									yu = null != e.forgeAFK ? fu.getReserved("forgeAFK") : fu.h.forgeAFK,
+                        									Ru = b.engine.getGameAttribute("ForgeItemQuantity"),
+                        									vu = b.engine.getGameAttribute("DNSM"),
+                        									Fu = null != e.forgeAFK ? vu.getReserved("forgeAFK") : vu.h.forgeAFK,
+                        									Nu = null != e.i ? Fu.getReserved("i") : Fu.h.i,
+                        									_u = yu,
+                        									Iu = Ru[
+                        										(3 * parseNum(Nu)) | 0];
+                        								null != e.N ? _u.setReserved("N", Iu) : (_u.h.N = Iu);
+                        								var Du = b.engine.getGameAttribute("DNSM"),
+                        									Eu = null != e.forgeAFK ? Du.getReserved("forgeAFK") : Du.h.forgeAFK,
+                        									Su = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        									Gu = b.engine.getGameAttribute("ForgeItemOrder"),
+                        									Tu = b.engine.getGameAttribute("DNSM"),
+                        									Uu = null != e.forgeAFK ? Tu.getReserved("forgeAFK") : Tu.h.forgeAFK,
+                        									Mu = null != e.i ? Uu.getReserved("i") : Uu.h.i,
+                        									Vu = "" + g.string(Gu[
+                        										(3 * parseNum(Mu)) | 0]),
+                        									Cu = Su,
+                        									Bu = null != e[Vu] ? Cu.getReserved(Vu) : Cu.h[Vu],
+                        									Pu = null != e.Amount ? Bu.getReserved("Amount") : Bu.h.Amount,
+                        									Ou = parseNum(Pu),
+                        									wu = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        									ku = b.engine.getGameAttribute("ForgeItemOrder"),
+                        									xu = b.engine.getGameAttribute("DNSM"),
+                        									Qu = null != e.forgeAFK ? xu.getReserved("forgeAFK") : xu.h.forgeAFK,
+                        									Xu = null != e.i ? Qu.getReserved("i") : Qu.h.i,
+                        									Lu = "" + g.string(ku[
+                        										(3 * parseNum(Xu)) | 0]),
+                        									zu = wu,
+                        									Yu = null != e[Lu] ? zu.getReserved(Lu) : zu.h[Lu],
+                        									Wu = Eu,
+                        									Zu = Ou - H._customBlock_FoodBonuses(g.string(null != e.Effect ? Yu.getReserved("Effect") : Yu.h.Effect) + "Redux");
+                        								null != e.n ? Wu.setReserved("n", Zu) : (Wu.h.n = Zu);
+                        								var Hu = b.engine.getGameAttribute("DNSM"),
+                        									Ju = null != e.forgeAFK ? Hu.getReserved("forgeAFK") : Hu.h.forgeAFK,
+                        									ju = b.engine.getGameAttribute("DNSM"),
+                        									qu = null != e.forgeAFK ? ju.getReserved("forgeAFK") : ju.h.forgeAFK,
+                        									Ku = null != e.i ? qu.getReserved("i") : qu.h.i,
+                        									$u = H._customBlock_ForgeInterval(parseNum(Ku)),
+                        									eg = b.engine.getGameAttribute("DNSM"),
+                        									tg = null != e.forgeAFK ? eg.getReserved("forgeAFK") : eg.h.forgeAFK,
+                        									ng = null != e.i ? tg.getReserved("i") : tg.h.i,
+                        									sg = Ju,
+                        									ag = $u / (4 * H._customBlock_ForgeSpeeed(parseNum(ng)));
+                        								null != e.V ? sg.setReserved("V", ag) : (sg.h.V = ag);
+                        								var rg = b.engine.getGameAttribute("DNSM"),
+                        									Ag = null != e.forgeAFK ? rg.getReserved("forgeAFK") : rg.h.forgeAFK,
+                        									lg = b.engine.getGameAttribute("DNSM"),
+                        									og = null != e.forgeAFK ? lg.getReserved("forgeAFK") : lg.h.forgeAFK,
+                        									ig = null != e.Q2 ? og.getReserved("Q2") : og.h.Q2,
+                        									ug = parseNum(ig),
+                        									gg = b.engine.getGameAttribute("DNSM"),
+                        									mg = null != e.forgeAFK ? gg.getReserved("forgeAFK") : gg.h.forgeAFK,
+                        									dg = null != e.V ? mg.getReserved("V") : mg.h.V,
+                        									cg = parseNum(dg),
+                        									pg = b.engine.getGameAttribute("DNSM"),
+                        									hg = null != e.forgeAFK ? pg.getReserved("forgeAFK") : pg.h.forgeAFK,
+                        									bg = null != e.N ? hg.getReserved("N") : hg.h.N,
+                        									fg = parseNum(bg),
+                        									yg = b.engine.getGameAttribute("DNSM"),
+                        									Rg = null != e.forgeAFK ? yg.getReserved("forgeAFK") : yg.h.forgeAFK,
+                        									vg = null != e.n ? Rg.getReserved("n") : Rg.h.n,
+                        									Fg = Ag,
+                        									Ng = Math.floor(Math.min(
+                        										(1 / cg) * (s - ug), fg / parseNum(vg)));
+                        								null != e.T ? Fg.setReserved("T", Ng) : (Fg.h.T = Ng);
+                        								var _g = b.engine.getGameAttribute("ForgeIntervalProgress"),
+                        									Ig = b.engine.getGameAttribute("DNSM"),
+                        									Dg = null != e.forgeAFK ? Ig.getReserved("forgeAFK") : Ig.h.forgeAFK,
+                        									Eg = null != e.i ? Dg.getReserved("i") : Dg.h.i,
+                        									Sg = parseNum(Eg),
+                        									Gg = b.engine.getGameAttribute("ForgeIntervalProgress"),
+                        									Tg = b.engine.getGameAttribute("DNSM"),
+                        									Ug = null != e.forgeAFK ? Tg.getReserved("forgeAFK") : Tg.h.forgeAFK,
+                        									Mg = null != e.i ? Ug.getReserved("i") : Ug.h.i,
+                        									Vg = Gg[0 | parseNum(Mg)],
+                        									Cg = parseNum(Vg),
+                        									Bg = b.engine.getGameAttribute("DNSM"),
+                        									Pg = null != e.forgeAFK ? Bg.getReserved("forgeAFK") : Bg.h.forgeAFK,
+                        									Og = null != e.i ? Pg.getReserved("i") : Pg.h.i,
+                        									wg = H._customBlock_ForgeSpeeed(parseNum(Og)),
+                        									kg = b.engine.getGameAttribute("DNSM"),
+                        									xg = null != e.forgeAFK ? kg.getReserved("forgeAFK") : kg.h.forgeAFK,
+                        									Qg = null != e.Q2 ? xg.getReserved("Q2") : xg.h.Q2;
+                        								_g[0 | Sg] = Cg + 4 * wg * (s - parseNum(Qg));
+                        							}
+                        						}
+                        					}
+                        				}
+                        			}
+                        		else if ("Cauldron" == t) {
+                        			var Xg = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO"),
+                        				Lg = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[49];
+                        			Xg[49] = parseNum(Lg) + s;
+                        		} else if ("Construction" == t) {
+                        			var zg = b.engine.getGameAttribute("PixelHelperActor")[8].getValue("ActorEvents_481", "_GenINFO"),
+                        				Yg = b.engine.getGameAttribute("PixelHelperActor")[8].getValue("ActorEvents_481", "_GenINFO")[19];
+                        			zg[19] = parseNum(Yg) + s;
+                        		} else if ("Cooking" == t) {
+                        			var Wg = b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO"),
+                        				Zg = b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[70];
+                        			Wg[70] = parseNum(Zg) + s;
+                        		} else if ("Pets" == t) {
+                        			var Hg = b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO"),
+                        				Jg = b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[35];
+                        			Hg[35] = parseNum(Jg) + s;
+                        		}
+                        	}

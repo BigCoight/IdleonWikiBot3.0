@@ -1,0 +1,13 @@
+                        (U._customBlock_EtcBonuses = function(t) {
+                        		var n = b.engine.getGameAttribute("DNSM");
+                        		n = null != e.TotalStatsETCmap ? n.getReserved("TotalStatsETCmap") : n.h.TotalStatsETCmap;
+                        		var s = b.engine.getGameAttribute("CustomMaps");
+                        		return (
+                        			(s = null != e.IDforETCbonus ? s.getReserved("IDforETCbonus") : s.h.IDforETCbonus),
+                        			(s = "" + g.string(null != e[t] ? s.getReserved(t) : s.h[t])),
+                        			(null != e[s] ? n.existsReserved(s) : n.h.hasOwnProperty(s)) ? ((n = b.engine.getGameAttribute("DNSM")),
+                        				(n = null != e.TotalStatsETCmap ? n.getReserved("TotalStatsETCmap") : n.h.TotalStatsETCmap),
+                        				(s = b.engine.getGameAttribute("CustomMaps")),
+                        				(s = null != e.IDforETCbonus ? s.getReserved("IDforETCbonus") : s.h.IDforETCbonus),
+                        				(t = "" + g.string(null != e[t] ? s.getReserved(t) : s.h[t])), null != e[t] ? n.getReserved(t) : n.h[t]) : 0);
+                        	}

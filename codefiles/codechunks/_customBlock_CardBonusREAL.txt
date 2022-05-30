@@ -1,0 +1,12 @@
+                        (U._customBlock_CardBonusREAL = function(t) {
+                        		var n = b.engine.getGameAttribute("DNSM"),
+                        			s = b.engine.getGameAttribute("DNSM");
+                        		s = null != e.CardBonusS ? s.getReserved("CardBonusS") : s.h.CardBonusS;
+                        		var a = b.engine.getGameAttribute("CustomMaps");
+                        		return (
+                        			(a = null != e.IDforCardBonus ? a.getReserved("IDforCardBonus") : a.h.IDforCardBonus),
+                        			(t = "" + t),
+                        			(t = "" + g.string(null != e[t] ? a.getReserved(t) : a.h[t])),
+                        			(s = null != e[t] ? s.getReserved(t) : s.h[t]), null != e.cdb8 ? n.setReserved("cdb8", s) : (n.h.cdb8 = s),
+                        			(n = b.engine.getGameAttribute("DNSM")), null == (null != e.cdb8 ? n.getReserved("cdb8") : n.h.cdb8) ? 0 : ((n = b.engine.getGameAttribute("DNSM")), null != e.cdb8 ? n.getReserved("cdb8") : n.h.cdb8));
+                        	}

@@ -1,0 +1,30 @@
+                        (H._customBlock_ForgeEtcDetails = function(t, s) {
+                        		if ("BarsMade" == t) {
+                        			t = b.engine.getGameAttribute("DNSM");
+                        			var a = 1 + Math.round(H._customBlock_ForgeStats(4)) / 100;
+                        			if (
+                        				(null != e.ForgeETCdn ? t.setReserved("ForgeETCdn", a) : (t.h.ForgeETCdn = a),
+                        					(t = b.engine.getGameAttribute("ItemDefinitionsGET")),
+                        					(a = "" + g.string(b.engine.getGameAttribute("ForgeItemOrder")[(3 * s + 1) | 0])),
+                        					(t = null != e[a] ? t.getReserved(a) : t.h[a]), "DoubleBarsForge" == (null != e.Effect ? t.getReserved("Effect") : t.h.Effect))) {
+                        				(t = b.engine.getGameAttribute("DNSM")),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null == (a = null != e.ForgeETCdn ? a.getReserved("ForgeETCdn") : a.h.ForgeETCdn) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)));
+                        				var r = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        					A = "" + g.string(b.engine.getGameAttribute("ForgeItemOrder")[(3 * s + 1) | 0]);
+                        				(r = null != e[A] ? r.getReserved(A) : r.h[A]),
+                        				(r = null == (r = null != e.Amount ? r.getReserved("Amount") : r.h.Amount) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        				(A = b.engine.getGameAttribute("ItemDefinitionsGET"));
+                        				var o = "" + g.string(b.engine.getGameAttribute("ForgeItemOrder")[(3 * s + 1) | 0]);
+                        				(A = null != e[o] ? A.getReserved(o) : A.h[o]),
+                        				(a *= 1 + (r * H._customBlock_FoodBonuses(g.string(null != e.Effect ? A.getReserved("Effect") : A.h.Effect) + "EffectBonus")) / 100),
+                        				null != e.ForgeETCdn ? t.setReserved("ForgeETCdn", a) : (t.h.ForgeETCdn = a);
+                        			}
+                        			return (
+                        				(null == (t = b.engine.getGameAttribute("GemItemsPurchased")[104]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))) > s && ((s = b.engine.getGameAttribute("DNSM")),
+                        					(t = b.engine.getGameAttribute("DNSM")),
+                        					(t = 1.5 * (null == (t = null != e.ForgeETCdn ? t.getReserved("ForgeETCdn") : t.h.ForgeETCdn) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t)))), null != e.ForgeETCdn ? s.setReserved("ForgeETCdn", t) : (s.h.ForgeETCdn = t)),
+                        				(s = b.engine.getGameAttribute("DNSM")), null != e.ForgeETCdn ? s.getReserved("ForgeETCdn") : s.h.ForgeETCdn);
+                        		}
+                        		return "CardChance" == t ? (4 > s ? 100 : 8 > s ? 400 : 12 > s || 16 > s ? 1e5 : 400) : "CardChanceBONUS" == t ? 1 + H._customBlock_ForgeStats(5) / 100 : 0;
+                        	}

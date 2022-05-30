@@ -1,0 +1,164 @@
+                        (w._customBlock_keychainn = function(t, s) {
+                        		var a = b.engine.getGameAttribute("DNSM"),
+                        			r = h.randomInt(0, 100);
+                        		null != e.GenKeychainzDN ? a.setReserved("GenKeychainzDN", r) : (a.h.GenKeychainzDN = r);
+                        		var A = b.engine.getGameAttribute("DNSM"),
+                        			o = h.randomInt(0, 100);
+                        		if ((null != e.GenKeychainzDN2 ? A.setReserved("GenKeychainzDN2", o) : (A.h.GenKeychainzDN2 = o), 0 == t)) {
+                        			for (;;) {
+                        				var i = b.engine.getGameAttribute("CustomLists"),
+                        					u = (null != e.RANDOlist ? i.getReserved("RANDOlist") : i.h.RANDOlist)[45],
+                        					m = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(u, "" + g.string(null != e.GenKeychainzDN ? m.getReserved("GenKeychainzDN") : m.h.GenKeychainzDN))) break;
+                        				var c = b.engine.getGameAttribute("DNSM"),
+                        					p = h.randomInt(0, 100);
+                        				null != e.GenKeychainzDN ? c.setReserved("GenKeychainzDN", p) : (c.h.GenKeychainzDN = p);
+                        			}
+                        			for (;;) {
+                        				var f = b.engine.getGameAttribute("CustomLists"),
+                        					y = (null != e.RANDOlist ? f.getReserved("RANDOlist") : f.h.RANDOlist)[45],
+                        					R = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(y, "" + g.string(null != e.GenKeychainzDN2 ? R.getReserved("GenKeychainzDN2") : R.h.GenKeychainzDN2))) break;
+                        				var v = b.engine.getGameAttribute("DNSM"),
+                        					F = h.randomInt(0, 100);
+                        				null != e.GenKeychainzDN2 ? v.setReserved("GenKeychainzDN2", F) : (v.h.GenKeychainzDN2 = F);
+                        			}
+                        		} else if (1 == t) {
+                        			for (;;) {
+                        				var N = b.engine.getGameAttribute("CustomLists"),
+                        					_ = (null != e.RANDOlist ? N.getReserved("RANDOlist") : N.h.RANDOlist)[46],
+                        					I = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(_, "" + g.string(null != e.GenKeychainzDN ? I.getReserved("GenKeychainzDN") : I.h.GenKeychainzDN))) break;
+                        				var D = b.engine.getGameAttribute("DNSM"),
+                        					E = h.randomInt(0, 100);
+                        				null != e.GenKeychainzDN ? D.setReserved("GenKeychainzDN", E) : (D.h.GenKeychainzDN = E);
+                        			}
+                        			for (;;) {
+                        				var S = b.engine.getGameAttribute("CustomLists"),
+                        					G = (null != e.RANDOlist ? S.getReserved("RANDOlist") : S.h.RANDOlist)[46],
+                        					T = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(G, "" + g.string(null != e.GenKeychainzDN2 ? T.getReserved("GenKeychainzDN2") : T.h.GenKeychainzDN2))) break;
+                        				var U = b.engine.getGameAttribute("DNSM"),
+                        					M = h.randomInt(0, 100);
+                        				null != e.GenKeychainzDN2 ? U.setReserved("GenKeychainzDN2", M) : (U.h.GenKeychainzDN2 = M);
+                        			}
+                        		} else if (2 == t) {
+                        			for (;;) {
+                        				var V = b.engine.getGameAttribute("CustomLists"),
+                        					C = (null != e.RANDOlist ? V.getReserved("RANDOlist") : V.h.RANDOlist)[47],
+                        					B = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(C, "" + g.string(null != e.GenKeychainzDN ? B.getReserved("GenKeychainzDN") : B.h.GenKeychainzDN))) break;
+                        				var P = b.engine.getGameAttribute("DNSM"),
+                        					O = h.randomInt(0, 100);
+                        				null != e.GenKeychainzDN ? P.setReserved("GenKeychainzDN", O) : (P.h.GenKeychainzDN = O);
+                        			}
+                        			for (;;) {
+                        				var w = b.engine.getGameAttribute("CustomLists"),
+                        					x = (null != e.RANDOlist ? w.getReserved("RANDOlist") : w.h.RANDOlist)[47],
+                        					Q = b.engine.getGameAttribute("DNSM");
+                        				if (Sb.contains(x, "" + g.string(null != e.GenKeychainzDN2 ? Q.getReserved("GenKeychainzDN2") : Q.h.GenKeychainzDN2))) break;
+                        				var X = b.engine.getGameAttribute("DNSM"),
+                        					L = h.randomInt(0, 100);
+                        				null != e.GenKeychainzDN2 ? X.setReserved("GenKeychainzDN2", L) : (X.h.GenKeychainzDN2 = L);
+                        			}
+                        		} else {
+                        			var z = b.engine.getGameAttribute("DNSM");
+                        			null != e.GenKeychainzDN ? z.setReserved("GenKeychainzDN", 0) : (z.h.GenKeychainzDN = 0);
+                        		}
+                        		if (0.225 > h.randomFloat()) {
+                        			var Y = b.engine.getGameAttribute("DNSM"),
+                        				W = b.engine.getGameAttribute("DNSM"),
+                        				Z = null != e.GenKeychainzDN ? W.getReserved("GenKeychainzDN") : W.h.GenKeychainzDN;
+                        			null != e.GenKeychainzDN2 ? Y.setReserved("GenKeychainzDN2", Z) : (Y.h.GenKeychainzDN2 = Z);
+                        		}
+                        		var H = b.engine.getGameAttribute("DNSM"),
+                        			J = [];
+                        		null != e.GenKeychainzL ? H.setReserved("GenKeychainzL", J) : (H.h.GenKeychainzL = J);
+                        		var j = b.engine.getGameAttribute("DNSM"),
+                        			q = null != e.GenKeychainzL ? j.getReserved("GenKeychainzL") : j.h.GenKeychainzL,
+                        			K = b.engine.getGameAttribute("CustomLists"),
+                        			$ = null != e.DungKEYCHAINS ? K.getReserved("DungKEYCHAINS") : K.h.DungKEYCHAINS,
+                        			ee = b.engine.getGameAttribute("DNSM"),
+                        			te = null != e.GenKeychainzDN ? ee.getReserved("GenKeychainzDN") : ee.h.GenKeychainzDN;
+                        		q.push($[0 | parseNum(te)][0]);
+                        		var ne = b.engine.getGameAttribute("DNSM");
+                        		(null != e.GenKeychainzL ? ne.getReserved("GenKeychainzL") : ne.h.GenKeychainzL).push("0");
+                        		var se = b.engine.getGameAttribute("DNSM");
+                        		(null != e.GenKeychainzL ? se.getReserved("GenKeychainzL") : se.h.GenKeychainzL).push(0);
+                        		var ae = b.engine.getGameAttribute("DNSM");
+                        		(null != e.GenKeychainzL ? ae.getReserved("GenKeychainzL") : ae.h.GenKeychainzL).push("0");
+                        		var re = b.engine.getGameAttribute("DNSM");
+                        		(null != e.GenKeychainzL ? re.getReserved("GenKeychainzL") : re.h.GenKeychainzL).push(0);
+                        		var Ae = b.engine.getGameAttribute("DNSM"),
+                        			le = null != e.GenKeychainzL ? Ae.getReserved("GenKeychainzL") : Ae.h.GenKeychainzL,
+                        			oe = b.engine.getGameAttribute("CustomLists"),
+                        			ie = null != e.DungKEYCHAINS ? oe.getReserved("DungKEYCHAINS") : oe.h.DungKEYCHAINS,
+                        			ue = b.engine.getGameAttribute("DNSM"),
+                        			ge = null != e.GenKeychainzDN ? ue.getReserved("GenKeychainzDN") : ue.h.GenKeychainzDN;
+                        		if (
+                        			((le[1] = ie[0 | parseNum(ge)][1]), 0.125 > h.randomFloat())) {
+                        			var me = b.engine.getGameAttribute("DNSM"),
+                        				de = null != e.GenKeychainzL ? me.getReserved("GenKeychainzL") : me.h.GenKeychainzL,
+                        				ce = b.engine.getGameAttribute("CustomLists"),
+                        				pe = null != e.DungKEYCHAINS ? ce.getReserved("DungKEYCHAINS") : ce.h.DungKEYCHAINS,
+                        				he = b.engine.getGameAttribute("DNSM"),
+                        				be = null != e.GenKeychainzDN ? he.getReserved("GenKeychainzDN") : he.h.GenKeychainzDN,
+                        				fe = pe[0 | parseNum(be)][4];
+                        			de[2] = parseNum(fe);
+                        		} else if (0.37 > h.randomFloat()) {
+                        			var ye = b.engine.getGameAttribute("DNSM"),
+                        				Re = null != e.GenKeychainzL ? ye.getReserved("GenKeychainzL") : ye.h.GenKeychainzL,
+                        				ve = b.engine.getGameAttribute("CustomLists"),
+                        				Fe = null != e.DungKEYCHAINS ? ve.getReserved("DungKEYCHAINS") : ve.h.DungKEYCHAINS,
+                        				Ne = b.engine.getGameAttribute("DNSM"),
+                        				_e = null != e.GenKeychainzDN ? Ne.getReserved("GenKeychainzDN") : Ne.h.GenKeychainzDN,
+                        				Ie = Fe[0 | parseNum(_e)][3];
+                        			Re[2] = parseNum(Ie);
+                        		} else {
+                        			var De = b.engine.getGameAttribute("DNSM"),
+                        				Ee = null != e.GenKeychainzL ? De.getReserved("GenKeychainzL") : De.h.GenKeychainzL,
+                        				Se = b.engine.getGameAttribute("CustomLists"),
+                        				Ge = null != e.DungKEYCHAINS ? Se.getReserved("DungKEYCHAINS") : Se.h.DungKEYCHAINS,
+                        				Te = b.engine.getGameAttribute("DNSM"),
+                        				Ue = null != e.GenKeychainzDN ? Te.getReserved("GenKeychainzDN") : Te.h.GenKeychainzDN,
+                        				Me = Ge[0 | parseNum(Ue)][2];
+                        			Ee[2] = parseNum(Me);
+                        		}
+                        		var Ve = b.engine.getGameAttribute("DNSM"),
+                        			Ce = null != e.GenKeychainzL ? Ve.getReserved("GenKeychainzL") : Ve.h.GenKeychainzL,
+                        			Be = b.engine.getGameAttribute("CustomLists"),
+                        			Pe = null != e.DungKEYCHAINS ? Be.getReserved("DungKEYCHAINS") : Be.h.DungKEYCHAINS,
+                        			Oe = b.engine.getGameAttribute("DNSM"),
+                        			we = null != e.GenKeychainzDN2 ? Oe.getReserved("GenKeychainzDN2") : Oe.h.GenKeychainzDN2;
+                        		if (
+                        			((Ce[3] = Pe[0 | parseNum(we)][1]), 0.125 > h.randomFloat())) {
+                        			var ke = b.engine.getGameAttribute("DNSM"),
+                        				xe = null != e.GenKeychainzL ? ke.getReserved("GenKeychainzL") : ke.h.GenKeychainzL,
+                        				Qe = b.engine.getGameAttribute("CustomLists"),
+                        				Xe = null != e.DungKEYCHAINS ? Qe.getReserved("DungKEYCHAINS") : Qe.h.DungKEYCHAINS,
+                        				Le = b.engine.getGameAttribute("DNSM"),
+                        				ze = null != e.GenKeychainzDN2 ? Le.getReserved("GenKeychainzDN2") : Le.h.GenKeychainzDN2,
+                        				Ye = Xe[0 | parseNum(ze)][4];
+                        			xe[4] = parseNum(Ye);
+                        		} else if (0.37 > h.randomFloat()) {
+                        			var We = b.engine.getGameAttribute("DNSM"),
+                        				Ze = null != e.GenKeychainzL ? We.getReserved("GenKeychainzL") : We.h.GenKeychainzL,
+                        				He = b.engine.getGameAttribute("CustomLists"),
+                        				Je = null != e.DungKEYCHAINS ? He.getReserved("DungKEYCHAINS") : He.h.DungKEYCHAINS,
+                        				je = b.engine.getGameAttribute("DNSM"),
+                        				qe = null != e.GenKeychainzDN2 ? je.getReserved("GenKeychainzDN2") : je.h.GenKeychainzDN2,
+                        				Ke = Je[0 | parseNum(qe)][3];
+                        			Ze[4] = parseNum(Ke);
+                        		} else {
+                        			var $e = b.engine.getGameAttribute("DNSM"),
+                        				et = null != e.GenKeychainzL ? $e.getReserved("GenKeychainzL") : $e.h.GenKeychainzL,
+                        				tt = b.engine.getGameAttribute("CustomLists"),
+                        				nt = null != e.DungKEYCHAINS ? tt.getReserved("DungKEYCHAINS") : tt.h.DungKEYCHAINS,
+                        				st = b.engine.getGameAttribute("DNSM"),
+                        				at = null != e.GenKeychainzDN2 ? st.getReserved("GenKeychainzDN2") : st.h.GenKeychainzDN2,
+                        				rt = nt[0 | parseNum(at)][2];
+                        			et[4] = parseNum(rt);
+                        		}
+                        		var At = b.engine.getGameAttribute("DNSM");
+                        		return null != e.GenKeychainzL ? At.getReserved("GenKeychainzL") : At.h.GenKeychainzL;
+                        	}

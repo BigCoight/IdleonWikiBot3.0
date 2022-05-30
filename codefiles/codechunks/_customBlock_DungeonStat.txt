@@ -1,0 +1,393 @@
+                        (w._customBlock_DungeonStat = function(s) {
+                        		var a = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.DungeonStats ? !a.existsReserved("DungeonStats") : !a.h.hasOwnProperty("DungeonStats")) {
+                        			var r = b.engine.getGameAttribute("DNSM"),
+                        				o = new p();
+                        			null != e.DungeonStats ? r.setReserved("DungeonStats", o) : (r.h.DungeonStats = o);
+                        		}
+                        		if ("HP" == s) {
+                        			var i = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				u = 10 + U._customBlock_CardBonusREAL(68) + 5 * w._customBlock_DungeonCalc("TraitBonus", 0) + H._customBlock_TotalStats("WIS"),
+                        				m = b.engine.getGameAttribute("DNSM"),
+                        				c = null != e.DungeonStats ? m.getReserved("DungeonStats") : m.h.DungeonStats,
+                        				h = null != e.maxHp ? c.getReserved("maxHp") : c.h.maxHp,
+                        				f = parseNum(h),
+                        				y = b.engine.getGameAttribute("DNSM"),
+                        				R = null != e.DungeonStats ? y.getReserved("DungeonStats") : y.h.DungeonStats,
+                        				v = null != e.hpMpBloU ? R.getReserved("hpMpBloU") : R.h.hpMpBloU,
+                        				F = u + (f + parseNum(v));
+                        			null != e.PlayerHPmaxDN ? i.setReserved("PlayerHPmaxDN", F) : (i.h.PlayerHPmaxDN = F);
+                        			var N = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				_ = [];
+                        			null != e.PlayerHPmaxLIST ? N.setReserved("PlayerHPmaxLIST", _) : (N.h.PlayerHPmaxLIST = _);
+                        			var I = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        			(null != e.PlayerHPmaxLIST ? I.getReserved("PlayerHPmaxLIST") : I.h.PlayerHPmaxLIST).push(1 + U._customBlock_EtcBonuses("37") / 100);
+                        			var D = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				S = null != e.PlayerHPmaxLIST ? D.getReserved("PlayerHPmaxLIST") : D.h.PlayerHPmaxLIST,
+                        				G = b.engine.getGameAttribute("DNSM"),
+                        				T = null != e.DungeonStats ? G.getReserved("DungeonStats") : G.h.DungeonStats,
+                        				M = null != e.DRandHP ? T.getReserved("DRandHP") : T.h.DRandHP;
+                        			S.push(Math.max(0.05, 1 - parseNum(M) / 100));
+                        			var V = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				C = null != e.PlayerHPmaxDN ? V.getReserved("PlayerHPmaxDN") : V.h.PlayerHPmaxDN,
+                        				B = parseNum(C),
+                        				P = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				O = (null != e.PlayerHPmaxLIST ? P.getReserved("PlayerHPmaxLIST") : P.h.PlayerHPmaxLIST)[0],
+                        				x = parseNum(O),
+                        				Q = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				X = (null != e.PlayerHPmaxLIST ? Q.getReserved("PlayerHPmaxLIST") : Q.h.PlayerHPmaxLIST)[1];
+                        			return (B * x * parseNum(X));
+                        		}
+                        		if ("TimeToEndOfNextHappyHour" == s) {
+                        			var L = b.engine.getGameAttribute("DNSM");
+                        			null != e.TimeHappyHourDN1 ? L.setReserved("TimeHappyHourDN1", 0) : (L.h.TimeHappyHourDN1 = 0);
+                        			for (var z = 0, Y = E.getServerVarLoadList("HappyHours").length; z < Y;) {
+                        				var W = z++;
+                        				if (0 == E.getServerVarLoadList("HappyHours")[W]) {
+                        					var Z = b.engine.getGameAttribute("TimeAway"),
+                        						J = null != e.GlobalTime ? Z.getReserved("GlobalTime") : Z.h.GlobalTime;
+                        					E.makeRandom(Math.floor(parseNum(J) / 604800));
+                        					var j = b.engine.getGameAttribute("DNSM"),
+                        						q = Math.floor(381600 + 1e3 * E.getRandom());
+                        					null != e.TimeHappyHourDN1 ? j.setReserved("TimeHappyHourDN1", q) : (j.h.TimeHappyHourDN1 = q);
+                        					var K = b.engine.getGameAttribute("TimeAway"),
+                        						$ = null != e.GlobalTime ? K.getReserved("GlobalTime") : K.h.GlobalTime,
+                        						ee = null == $ ? 0 : "number" == typeof $ ? d.__cast($, k) : "number" == typeof $ && (0 | $) === $ ? d.__cast($, l) : "boolean" == typeof $ ? d.__cast($, n) ? 1 : 0 : "string" == typeof $ ? parseFloat($) : parseFloat(g.string($)),
+                        						te = b.engine.getGameAttribute("TimeAway"),
+                        						ne = null != e.GlobalTime ? te.getReserved("GlobalTime") : te.h.GlobalTime,
+                        						se = ee - 604800 * Math.floor(parseNum(ne) / 604800),
+                        						ae = b.engine.getGameAttribute("DNSM"),
+                        						re = null != e.TimeHappyHourDN1 ? ae.getReserved("TimeHappyHourDN1") : ae.h.TimeHappyHourDN1;
+                        					if (se < parseNum(re)) break;
+                        				} else {
+                        					var Ae = b.engine.getGameAttribute("TimeAway"),
+                        						le = null != e.GlobalTime ? Ae.getReserved("GlobalTime") : Ae.h.GlobalTime,
+                        						oe = parseNum(le),
+                        						ie = b.engine.getGameAttribute("TimeAway"),
+                        						ue = null != e.GlobalTime ? ie.getReserved("GlobalTime") : ie.h.GlobalTime,
+                        						ge = oe - 604800 * Math.floor(parseNum(ue) / 604800),
+                        						me = E.getServerVarLoadList("HappyHours")[W];
+                        					if (ge < parseNum(me)) {
+                        						var de = b.engine.getGameAttribute("DNSM"),
+                        							ce = E.getServerVarLoadList("HappyHours")[W];
+                        						null != e.TimeHappyHourDN1 ? de.setReserved("TimeHappyHourDN1", ce) : (de.h.TimeHappyHourDN1 = ce);
+                        						break;
+                        					}
+                        				}
+                        			}
+                        			var pe = b.engine.getGameAttribute("DNSM");
+                        			return null != e.TimeHappyHourDN1 ? pe.getReserved("TimeHappyHourDN1") : pe.h.TimeHappyHourDN1;
+                        		}
+                        		if ("DungeonPassesUsedAtOnce" == s) return 0.5 < w._customBlock_prayersReal(14, 0) ? 2 : 1;
+                        		if ("PartySize" == s) return b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[56].length;
+                        		if ("DropRate_Adjust" == s) return Math.pow(1 / Math.max(w._customBlock_DungeonStat("PartySize"), 1), 0.5);
+                        		if ("BossHP_Adjust" == s) return Math.pow(Math.max(w._customBlock_DungeonStat("PartySize") / 0.88, 1), 0.58);
+                        		if ("Arcade_SecPerBall" == s) return 4e3 / (1 + (w._customBlock_DungeonStat("Arcade_BallBonus") + A._customBlock_GetBribeBonus("14")) / 100);
+                        		if ("Arcade_MaxClaimTime" == s) return Math.ceil(3600 * (48 + Math.min(10, t._customBlock_StampBonusOfTypeX("ArcadeTimeMax"))));
+                        		if ("Arcade_BallBonus" == s) {
+                        			var he = b.engine.getGameAttribute("DNSM");
+                        			if (null != e.Arcade_BallBonus ? he.existsReserved("Arcade_BallBonus") : he.h.hasOwnProperty("Arcade_BallBonus")) {
+                        				var be = b.engine.getGameAttribute("DNSM");
+                        				return null != e.Arcade_BallBonus ? be.getReserved("Arcade_BallBonus") : be.h.Arcade_BallBonus;
+                        			}
+                        			var fe = b.engine.getGameAttribute("DNSM");
+                        			null != e.Arcade_BallBonus ? fe.setReserved("Arcade_BallBonus", 0) : (fe.h.Arcade_BallBonus = 0);
+                        			for (var ye = 0, Re = b.engine.getGameAttribute("CustomLists"), ve = (null != e.AchBallzBonuses ? Re.getReserved("AchBallzBonuses") : Re.h.AchBallzBonuses).length; ye < ve;) {
+                        				var Fe = ye++,
+                        					Ne = b.engine.getGameAttribute("CustomLists"),
+                        					_e = (null != e.AchBallzBonuses ? Ne.getReserved("AchBallzBonuses") : Ne.h.AchBallzBonuses)[Fe][0];
+                        				if (1 == w._customBlock_AchieveStatus(parseNum(_e))) {
+                        					var Ie = b.engine.getGameAttribute("DNSM"),
+                        						De = b.engine.getGameAttribute("DNSM"),
+                        						Ee = null != e.Arcade_BallBonus ? De.getReserved("Arcade_BallBonus") : De.h.Arcade_BallBonus,
+                        						Se = parseNum(Ee),
+                        						Ge = b.engine.getGameAttribute("CustomLists"),
+                        						Te = (null != e.AchBallzBonuses ? Ge.getReserved("AchBallzBonuses") : Ge.h.AchBallzBonuses)[Fe][1],
+                        						Ue = Ie,
+                        						Me = Math.round(Se + parseNum(Te));
+                        					null != e.Arcade_BallBonus ? Ue.setReserved("Arcade_BallBonus", Me) : (Ue.h.Arcade_BallBonus = Me);
+                        				}
+                        			}
+                        			var Ve = b.engine.getGameAttribute("DNSM"),
+                        				Ce = b.engine.getGameAttribute("DNSM"),
+                        				Be = null != e.Arcade_BallBonus ? Ce.getReserved("Arcade_BallBonus") : Ce.h.Arcade_BallBonus,
+                        				Pe = parseNum(Be),
+                        				Oe = b.engine.getGameAttribute("DNSM"),
+                        				we = null != e.AlchVials ? Oe.getReserved("AlchVials") : Oe.h.AlchVials,
+                        				ke = null != e.arcadeBALLZ ? we.getReserved("arcadeBALLZ") : we.h.arcadeBALLZ,
+                        				xe = parseNum(ke),
+                        				Qe = b.engine.getGameAttribute("Tasks")[2][1][7],
+                        				Xe = Pe + (xe + (5 * parseNum(Qe) + Math.min(50, t._customBlock_StampBonusOfTypeX("ArcadeBallz"))));
+                        			null != e.Arcade_BallBonus ? Ve.setReserved("Arcade_BallBonus", Xe) : (Ve.h.Arcade_BallBonus = Xe);
+                        			var Le = b.engine.getGameAttribute("DNSM");
+                        			return null != e.Arcade_BallBonus ? Le.getReserved("Arcade_BallBonus") : Le.h.Arcade_BallBonus;
+                        		}
+                        		if ("Weapon_Power" == s) return H._customBlock_TotalStats("Dung_Power");
+                        		if ("sellMultiPCT" == s) {
+                        			var ze = b.engine.getGameAttribute("DNSM"),
+                        				Ye = null != e.DungeonStats ? ze.getReserved("DungeonStats") : ze.h.DungeonStats,
+                        				We = null != e.sellPrice ? Ye.getReserved("sellPrice") : Ye.h.sellPrice;
+                        			return parseNum(We);
+                        		}
+                        		if ("MultiHitPCT" == s) {
+                        			var Ze = b.engine.getGameAttribute("DNSM"),
+                        				He = null != e.DungeonStats ? Ze.getReserved("DungeonStats") : Ze.h.DungeonStats;
+                        			return null != e.multiHit ? He.getReserved("multiHit") : He.h.multiHit;
+                        		}
+                        		if ("MP" == s) {
+                        			var Je = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				je = 10 + U._customBlock_CardBonusREAL(61),
+                        				qe = 3 * w._customBlock_DungeonCalc("TraitBonus", 8),
+                        				Ke = b.engine.getGameAttribute("DNSM"),
+                        				$e = null != e.DungeonStats ? Ke.getReserved("DungeonStats") : Ke.h.DungeonStats,
+                        				et = null != e.QTYofItemRAR2 ? $e.getReserved("QTYofItemRAR2") : $e.h.QTYofItemRAR2,
+                        				tt = je + qe * parseNum(et) + 5 * w._customBlock_DungeonCalc("TraitBonus", 2) + H._customBlock_TotalStats("WIS"),
+                        				nt = b.engine.getGameAttribute("DNSM"),
+                        				st = null != e.DungeonStats ? nt.getReserved("DungeonStats") : nt.h.DungeonStats,
+                        				at = null != e.maxMp ? st.getReserved("maxMp") : st.h.maxMp,
+                        				rt = parseNum(at),
+                        				At = b.engine.getGameAttribute("DNSM"),
+                        				lt = null != e.DungeonStats ? At.getReserved("DungeonStats") : At.h.DungeonStats,
+                        				ot = null != e.hpMpBloU ? lt.getReserved("hpMpBloU") : lt.h.hpMpBloU,
+                        				it = tt + (rt + parseNum(ot));
+                        			null != e.PlayerMPmaxDN ? Je.setReserved("PlayerMPmaxDN", it) : (Je.h.PlayerMPmaxDN = it);
+                        			var ut = 1 + U._customBlock_EtcBonuses("38") / 100,
+                        				gt = b.engine.getGameAttribute("DNSM"),
+                        				mt = null != e.DungeonStats ? gt.getReserved("DungeonStats") : gt.h.DungeonStats,
+                        				dt = null != e.manaGodU ? mt.getReserved("manaGodU") : mt.h.manaGodU,
+                        				ct = ut * (1 + (100 * Math.floor(parseNum(dt) / 1.9)) / 100),
+                        				pt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				ht = null != e.PlayerMPmaxDN ? pt.getReserved("PlayerMPmaxDN") : pt.h.PlayerMPmaxDN;
+                        			return (ct * parseNum(ht));
+                        		}
+                        		if ("DEF" == s) {
+                        			var bt = U._customBlock_EtcBonuses("39") + U._customBlock_CardBonusREAL(62),
+                        				ft = b.engine.getGameAttribute("DNSM"),
+                        				yt = null != e.DungeonStats ? ft.getReserved("DungeonStats") : ft.h.DungeonStats,
+                        				Rt = null != e.BlockChance ? yt.getReserved("BlockChance") : yt.h.BlockChance,
+                        				vt = parseNum(Rt),
+                        				Ft = b.engine.getGameAttribute("DNSM"),
+                        				Nt = null != e.DungeonStats ? Ft.getReserved("DungeonStats") : Ft.h.DungeonStats,
+                        				_t = null != e.hpMpBloU ? Nt.getReserved("hpMpBloU") : Nt.h.hpMpBloU,
+                        				It = parseNum(_t),
+                        				Dt = b.engine.getGameAttribute("DNSM"),
+                        				Et = null != e.blockStackVAL ? Dt.getReserved("blockStackVAL") : Dt.h.blockStackVAL,
+                        				St = parseNum(Et),
+                        				Gt = b.engine.getGameAttribute("DNSM"),
+                        				Tt = null != e.DungeonStats ? Gt.getReserved("DungeonStats") : Gt.h.DungeonStats,
+                        				Ut = null != e.blockStack ? Tt.getReserved("blockStack") : Tt.h.blockStack,
+                        				Mt = Math.min(0.3 * St, parseNum(Ut)),
+                        				Vt = b.engine.getGameAttribute("DNSM"),
+                        				Ct = null != e.DungeonStats ? Vt.getReserved("DungeonStats") : Vt.h.DungeonStats,
+                        				Bt = null != e.defGodU ? Ct.getReserved("defGodU") : Ct.h.defGodU;
+                        			return Math.min(95, bt + vt + (It + (Mt + Math.min(parseNum(Bt), 30))));
+                        		}
+                        		if ("cash" == s) {
+                        			var Pt = b.engine.getGameAttribute("DNSM"),
+                        				Ot = null != e.DungeonStats ? Pt.getReserved("DungeonStats") : Pt.h.DungeonStats,
+                        				wt = null != e.monsterCash ? Ot.getReserved("monsterCash") : Ot.h.monsterCash;
+                        			return (1 + (parseNum(wt) + (U._customBlock_EtcBonuses("40") + U._customBlock_CardBonusREAL(69))) / 100);
+                        		}
+                        		if ("sellPrice" == s) {
+                        			var kt = b.engine.getGameAttribute("DNSM"),
+                        				xt = null != e.DungeonStats ? kt.getReserved("DungeonStats") : kt.h.DungeonStats,
+                        				Qt = null != e.sellPrice ? xt.getReserved("sellPrice") : xt.h.sellPrice;
+                        			return (1 + parseNum(Qt) / 100);
+                        		}
+                        		if ("DMG" == s) {
+                        			if (1 == H._customBlock_GetBuffBonuses(615, 1)) return 1;
+                        			var Xt = b.engine.getGameAttribute("DNSM"),
+                        				Lt = 4 + U._customBlock_CardBonusREAL(63),
+                        				zt = w._customBlock_DungeonCalc("TraitBonus", 7),
+                        				Yt = b.engine.getGameAttribute("DNSM"),
+                        				Wt = null != e.DungeonStats ? Yt.getReserved("DungeonStats") : Yt.h.DungeonStats,
+                        				Zt = null != e.QTYofItemRAR1 ? Wt.getReserved("QTYofItemRAR1") : Wt.h.QTYofItemRAR1,
+                        				Ht = parseNum(Zt),
+                        				Jt = 5 * w._customBlock_DungeonCalc("TraitBonus", 9),
+                        				jt = b.engine.getGameAttribute("DNSM"),
+                        				qt = null != e.DungeonStats ? jt.getReserved("DungeonStats") : jt.h.DungeonStats,
+                        				Kt = null != e.QTYofItemRAR3 ? qt.getReserved("QTYofItemRAR3") : qt.h.QTYofItemRAR3,
+                        				$t = Lt + (zt * Ht + Jt * parseNum(Kt)) + 3 * w._customBlock_DungeonCalc("TraitBonus", 1) + H._customBlock_TotalStats("STR"),
+                        				en = b.engine.getGameAttribute("DNSM"),
+                        				tn = null != e.DungeonStats ? en.getReserved("DungeonStats") : en.h.DungeonStats,
+                        				nn = null != e.baseDmg ? tn.getReserved("baseDmg") : tn.h.baseDmg,
+                        				sn = parseNum(nn),
+                        				an = b.engine.getGameAttribute("DNSM"),
+                        				rn = null != e.DungeonStats ? an.getReserved("DungeonStats") : an.h.DungeonStats,
+                        				An = null != e.baseDmg2 ? rn.getReserved("baseDmg2") : rn.h.baseDmg2,
+                        				ln = parseNum(An),
+                        				on = b.engine.getGameAttribute("DNSM"),
+                        				un = null != e.DungeonStats ? on.getReserved("DungeonStats") : on.h.DungeonStats,
+                        				gn = null != e.baseDmgPLUS ? un.getReserved("baseDmgPLUS") : un.h.baseDmgPLUS,
+                        				mn = parseNum(gn),
+                        				dn = Math.floor(Math.min(w._customBlock_DungeonStat("HP"), 150) / 10),
+                        				cn = b.engine.getGameAttribute("DNSM"),
+                        				pn = null != e.DungeonStats ? cn.getReserved("DungeonStats") : cn.h.DungeonStats,
+                        				hn = null != e.hpDmgArma ? pn.getReserved("hpDmgArma") : pn.h.hpDmgArma,
+                        				bn = $t + (sn + (ln * (1 + mn / 100) + Math.max(0, Math.floor(dn * parseNum(hn))))) + Math.pow(w._customBlock_DungeonStat("Weapon_Power") / 3, 2);
+                        			null != e.DungDMG ? Xt.setReserved("DungDMG", bn) : (Xt.h.DungDMG = bn);
+                        			var fn = b.engine.getGameAttribute("DNSM"),
+                        				yn = [];
+                        			null != e.DungDMGlist ? fn.setReserved("DungDMGlist", yn) : (fn.h.DungDMGlist = yn);
+                        			var Rn = b.engine.getGameAttribute("DNSM"),
+                        				vn = null != e.DungDMGlist ? Rn.getReserved("DungDMGlist") : Rn.h.DungDMGlist,
+                        				Fn = 1 + U._customBlock_EtcBonuses("32") / 100,
+                        				Nn = b.engine.getGameAttribute("DNSM"),
+                        				_n = null != e.DungeonStats ? Nn.getReserved("DungeonStats") : Nn.h.DungeonStats,
+                        				In = null != e.pctDmg ? _n.getReserved("pctDmg") : _n.h.pctDmg,
+                        				Dn = parseNum(In),
+                        				En = b.engine.getGameAttribute("DNSM"),
+                        				Sn = null != e.DungeonStats ? En.getReserved("DungeonStats") : En.h.DungeonStats,
+                        				Gn = null != e.fullMpDmg ? Sn.getReserved("fullMpDmg") : Sn.h.fullMpDmg,
+                        				Tn = parseNum(Gn),
+                        				Un = (b.engine.getGameAttribute("PlayerMP") + 1) / w._customBlock_DungeonStat("MP"),
+                        				Mn = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[89];
+                        			vn.push(Fn * (1 + (Dn + Tn * Math.floor(Math.min(1, Un + parseNum(Mn)))) / 100));
+                        			var Vn = b.engine.getGameAttribute("DNSM"),
+                        				Cn = null != e.DungDMGlist ? Vn.getReserved("DungDMGlist") : Vn.h.DungDMGlist,
+                        				Bn = b.engine.getGameAttribute("DNSM"),
+                        				Pn = null != e.DungeonStats ? Bn.getReserved("DungeonStats") : Bn.h.DungeonStats,
+                        				On = null != e.dmgCritSpdU ? Pn.getReserved("dmgCritSpdU") : Pn.h.dmgCritSpdU,
+                        				wn = parseNum(On),
+                        				kn = b.engine.getGameAttribute("DNSM"),
+                        				xn = wn * Sb.mapCount(null != e.dmgCritSpdUVAL ? kn.getReserved("dmgCritSpdUVAL") : kn.h.dmgCritSpdUVAL),
+                        				Qn = b.engine.getGameAttribute("DNSM"),
+                        				Xn = null != e.DungeonStats ? Qn.getReserved("DungeonStats") : Qn.h.DungeonStats,
+                        				Ln = null != e.dmgTakenU ? Xn.getReserved("dmgTakenU") : Xn.h.dmgTakenU,
+                        				zn = parseNum(Ln),
+                        				Yn = b.engine.getGameAttribute("DNSM"),
+                        				Wn = null != e.DungeonStats ? Yn.getReserved("DungeonStats") : Yn.h.DungeonStats,
+                        				Zn = null != e.allGreyDmg ? Wn.getReserved("allGreyDmg") : Wn.h.allGreyDmg,
+                        				Hn = parseNum(Zn),
+                        				Jn = b.engine.getGameAttribute("DNSM"),
+                        				jn = null != e.DungeonStats ? Jn.getReserved("DungeonStats") : Jn.h.DungeonStats,
+                        				qn = null != e.hpMissingDmg ? jn.getReserved("hpMissingDmg") : jn.h.hpMissingDmg,
+                        				Kn = Math.min(parseNum(qn), Math.round((Math.max(0, w._customBlock_DungeonStat("HP") - b.engine.getGameAttribute("PlayerHP")) / w._customBlock_DungeonStat("HP")) * 200)),
+                        				$n = b.engine.getGameAttribute("DNSM"),
+                        				es = null != e.DungeonStats ? $n.getReserved("DungeonStats") : $n.h.DungeonStats,
+                        				ts = null != e.skillingDmg ? es.getReserved("skillingDmg") : es.h.skillingDmg,
+                        				ns = parseNum(ts),
+                        				ss = b.engine.getGameAttribute("DNSM"),
+                        				as = null != e.skillingDmgVAL ? ss.getReserved("skillingDmgVAL") : ss.h.skillingDmgVAL,
+                        				rs = Math.min(100, ns * parseNum(as)),
+                        				As = b.engine.getGameAttribute("DNSM"),
+                        				ls = null != e.DungeonStats ? As.getReserved("DungeonStats") : As.h.DungeonStats,
+                        				os = null != e.defGodU ? ls.getReserved("defGodU") : ls.h.defGodU;
+                        			Cn.push(1 + (xn + (zn + (Hn + (Kn + (rs + (parseNum(os) + U._customBlock_CardBonusREAL(72))))))) / 100);
+                        			var is = b.engine.getGameAttribute("DNSM"),
+                        				us = null != e.DungDMG ? is.getReserved("DungDMG") : is.h.DungDMG,
+                        				gs = parseNum(us),
+                        				ms = b.engine.getGameAttribute("DNSM"),
+                        				ds = (null != e.DungDMGlist ? ms.getReserved("DungDMGlist") : ms.h.DungDMGlist)[0],
+                        				cs = parseNum(ds),
+                        				ps = b.engine.getGameAttribute("DNSM"),
+                        				hs = (null != e.DungDMGlist ? ps.getReserved("DungDMGlist") : ps.h.DungDMGlist)[1],
+                        				bs = parseNum(hs),
+                        				fs = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[94][5];
+                        			return (gs * cs * bs * (1 + 0.5 * parseNum(fs)));
+                        		}
+                        		if ("MASTERY" == s) return Math.min(0.9, 0.25 + U._customBlock_EtcBonuses("34") / 100);
+                        		if ("CRITCHANCE" == s) {
+                        			var ys = b.engine.getGameAttribute("DNSM");
+                        			null != e.DungCRTch ? ys.setReserved("DungCRTch", 0) : (ys.h.DungCRTch = 0);
+                        			var Rs = b.engine.getGameAttribute("DNSM"),
+                        				vs = null != e.DungeonStats ? Rs.getReserved("DungeonStats") : Rs.h.DungeonStats,
+                        				Fs = null != e.sneakCR ? vs.getReserved("sneakCR") : vs.h.sneakCR;
+                        			if (0.5 < parseNum(Fs)) {
+                        				var Ns = b.engine.getGameAttribute("DNSM"),
+                        					_s = b.engine.getGameAttribute("DNSM"),
+                        					Is = null != e.sneakCRVAL ? _s.getReserved("sneakCRVAL") : _s.h.sneakCRVAL,
+                        					Ds = parseNum(Is),
+                        					Es = b.engine.getGameAttribute("DNSM"),
+                        					Ss = null != e.DungeonStats ? Es.getReserved("DungeonStats") : Es.h.DungeonStats,
+                        					Gs = null != e.sneakCR ? Ss.getReserved("sneakCR") : Ss.h.sneakCR,
+                        					Ts = Math.min(Ds * parseNum(Gs), 30);
+                        				null != e.DungCRTch ? Ns.setReserved("DungCRTch", Ts) : (Ns.h.DungCRTch = Ts);
+                        			}
+                        			var Us = b.engine.getGameAttribute("DNSM"),
+                        				Ms = null != e.DungCRTch ? Us.getReserved("DungCRTch") : Us.h.DungCRTch,
+                        				Vs = parseNum(Ms),
+                        				Cs = b.engine.getGameAttribute("DNSM"),
+                        				Bs = null != e.DungeonStats ? Cs.getReserved("DungeonStats") : Cs.h.DungeonStats,
+                        				Ps = null != e.critGodU ? Bs.getReserved("critGodU") : Bs.h.critGodU,
+                        				Os = 5 + Vs + 15 * Math.floor(parseNum(Ps) / 599),
+                        				ws = b.engine.getGameAttribute("DNSM"),
+                        				ks = null != e.DungeonStats ? ws.getReserved("DungeonStats") : ws.h.DungeonStats,
+                        				xs = null != e.critChance ? ks.getReserved("critChance") : ks.h.critChance,
+                        				Qs = parseNum(xs),
+                        				Xs = b.engine.getGameAttribute("DNSM"),
+                        				Ls = null != e.DungeonStats ? Xs.getReserved("DungeonStats") : Xs.h.DungeonStats,
+                        				zs = null != e.dmgCritSpdU ? Ls.getReserved("dmgCritSpdU") : Ls.h.dmgCritSpdU,
+                        				Ys = parseNum(zs),
+                        				Ws = b.engine.getGameAttribute("DNSM");
+                        			return Os + (Qs + (Ys * Sb.mapCount(null != e.dmgCritSpdUVAL ? Ws.getReserved("dmgCritSpdUVAL") : Ws.h.dmgCritSpdUVAL) + U._customBlock_EtcBonuses("31")));
+                        		}
+                        		if ("CRITDMG" == s) {
+                        			var Zs = b.engine.getGameAttribute("DNSM"),
+                        				Hs = null != e.DungeonStats ? Zs.getReserved("DungeonStats") : Zs.h.DungeonStats,
+                        				Js = null != e.critDmg ? Hs.getReserved("critDmg") : Hs.h.critDmg,
+                        				js = parseNum(Js),
+                        				qs = b.engine.getGameAttribute("DNSM"),
+                        				Ks = null != e.DungeonStats ? qs.getReserved("DungeonStats") : qs.h.DungeonStats,
+                        				$s = null != e.critGodU ? Ks.getReserved("critGodU") : Ks.h.critGodU;
+                        			return (1.2 + (js + ((null == $s ? 0 : "number" == typeof $s ? d.__cast($s, k) : "number" == typeof $s && (0 | $s) === $s ? d.__cast($s, l) : "boolean" == typeof $s ? d.__cast($s, n) ? 1 : 0 : "string" == typeof $s ? parseFloat($s) : parseFloat(g.string($s))) + U._customBlock_EtcBonuses("35"))) / 100);
+                        		}
+                        		if ("BossDMG" == s) {
+                        			var ea = U._customBlock_CardBonusREAL(71) + U._customBlock_EtcBonuses("33"),
+                        				ta = b.engine.getGameAttribute("DNSM"),
+                        				na = null != e.DungeonStats ? ta.getReserved("DungeonStats") : ta.h.DungeonStats,
+                        				sa = null != e.bossDmg ? na.getReserved("bossDmg") : na.h.bossDmg;
+                        			return (ea + parseNum(sa));
+                        		}
+                        		if ("SPEED" == s) {
+                        			var aa = b.engine.getGameAttribute("DNSM"),
+                        				ra = null != e.DungeonStats ? aa.getReserved("DungeonStats") : aa.h.DungeonStats,
+                        				Aa = null != e.MoveSpeed ? ra.getReserved("MoveSpeed") : ra.h.MoveSpeed,
+                        				la = parseNum(Aa),
+                        				oa = H._customBlock_TotalStats("AGI"),
+                        				ia = U._customBlock_CardBonusREAL(86),
+                        				ua = U._customBlock_EtcBonuses("36"),
+                        				ga = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[94][4];
+                        			return (
+                        				(la + (oa + (ia + (ua + 25 * parseNum(ga))))) / 100);
+                        		}
+                        		if ("DropRarity" == s) {
+                        			var ma = U._customBlock_CardBonusREAL(74) + U._customBlock_EtcBonuses("41"),
+                        				da = b.engine.getGameAttribute("DNSM"),
+                        				ca = null != e.DungeonStats ? da.getReserved("DungeonStats") : da.h.DungeonStats,
+                        				pa = null != e.DropRarity ? ca.getReserved("DropRarity") : ca.h.DropRarity,
+                        				ha = parseNum(pa),
+                        				ba = b.engine.getGameAttribute("DNSM"),
+                        				fa = null != e.DungeonStats ? ba.getReserved("DungeonStats") : ba.h.DungeonStats,
+                        				ya = null != e.reviveU ? fa.getReserved("reviveU") : fa.h.reviveU,
+                        				Ra = parseNum(ya),
+                        				va = b.engine.getGameAttribute("DNSM"),
+                        				Fa = null != e.DungeonStats ? va.getReserved("DungeonStats") : va.h.DungeonStats,
+                        				Na = null != e.DRandHP ? Fa.getReserved("DRandHP") : Fa.h.DRandHP,
+                        				_a = parseNum(Na),
+                        				Ia = b.engine.getGameAttribute("DNSM"),
+                        				Da = null != e.DungeonStats ? Ia.getReserved("DungeonStats") : Ia.h.DungeonStats,
+                        				Ea = null != e.QTYofItemRAR0 ? Da.getReserved("QTYofItemRAR0") : Da.h.QTYofItemRAR0;
+                        			return (ma + (ha + Ra + (_a + parseNum(Ea) * w._customBlock_DungeonCalc("TraitBonus", 6))));
+                        		}
+                        		if ("CardChance" == s) return 1 + U._customBlock_CardBonusREAL(64) / 100;
+                        		if ("FOODHP" == s) {
+                        			var Sa = b.engine.getGameAttribute("DNSM"),
+                        				Ga = null != e.DungeonStats ? Sa.getReserved("DungeonStats") : Sa.h.DungeonStats,
+                        				Ta = null != e.foodEff ? Ga.getReserved("foodEff") : Ga.h.foodEff;
+                        			return (1 + parseNum(Ta) / 100);
+                        		}
+                        		if ("FOODBOOST" == s) {
+                        			var Ua = b.engine.getGameAttribute("DNSM"),
+                        				Ma = null != e.DungeonStats ? Ua.getReserved("DungeonStats") : Ua.h.DungeonStats,
+                        				Va = null != e.foodEff ? Ma.getReserved("foodEff") : Ma.h.foodEff;
+                        			return (1 + parseNum(Va) / 100);
+                        		}
+                        		if ("invuln" == s) {
+                        			var Ca = b.engine.getGameAttribute("DNSM"),
+                        				Ba = null != e.DungeonStats ? Ca.getReserved("DungeonStats") : Ca.h.DungeonStats,
+                        				Pa = null != e.invuln ? Ba.getReserved("invuln") : Ba.h.invuln;
+                        			return parseNum(Pa);
+                        		}
+                        		return 1;
+                        	}

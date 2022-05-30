@@ -1,0 +1,163 @@
+                        (t._customBlock_add_new_player_to_database = function(t) {
+                        		var n = b.engine,
+                        			s = new p(),
+                        			a = n.gameAttributes;
+                        		null != e.DummyMap ? a.setReserved("DummyMap", s) : (a.h.DummyMap = s);
+                        		var r = b.engine.getGameAttribute("DummyMap"),
+                        			A = E.deepCopyList(b.engine.getGameAttribute("AttackLoadout"));
+                        		null != e.AttackLoadout ? r.setReserved("AttackLoadout", A) : (r.h.AttackLoadout = A);
+                        		var l = b.engine.getGameAttribute("DummyMap"),
+                        			o = E.deepCopyList(b.engine.getGameAttribute("EquipmentMap"));
+                        		null != e.EquipmentMap ? l.setReserved("EquipmentMap", o) : (l.h.EquipmentMap = o);
+                        		var i = b.engine.getGameAttribute("DummyMap"),
+                        			u = E.deepCopyList(b.engine.getGameAttribute("EquipmentOrder"));
+                        		null != e.EquipmentOrder ? i.setReserved("EquipmentOrder", u) : (i.h.EquipmentOrder = u);
+                        		var g = b.engine.getGameAttribute("DummyMap"),
+                        			m = E.deepCopyList(b.engine.getGameAttribute("EquipmentQuantity"));
+                        		null != e.EquipmentQuantity ? g.setReserved("EquipmentQuantity", m) : (g.h.EquipmentQuantity = m);
+                        		var d = b.engine.getGameAttribute("DummyMap"),
+                        			c = E.deepCopyList(b.engine.getGameAttribute("Exp0"));
+                        		null != e.Exp0 ? d.setReserved("Exp0", c) : (d.h.Exp0 = c);
+                        		var h = b.engine.getGameAttribute("DummyMap"),
+                        			f = E.deepCopyList(b.engine.getGameAttribute("ExpReq0"));
+                        		null != e.ExpReq0 ? h.setReserved("ExpReq0", f) : (h.h.ExpReq0 = f);
+                        		var y = b.engine.getGameAttribute("DummyMap"),
+                        			R = E.deepCopyList(b.engine.getGameAttribute("FoodCooldowns"));
+                        		null != e.FoodCooldowns ? y.setReserved("FoodCooldowns", R) : (y.h.FoodCooldowns = R);
+                        		var v = b.engine.getGameAttribute("DummyMap"),
+                        			F = E.deepCopyList(b.engine.getGameAttribute("InventoryOrder"));
+                        		null != e.InventoryOrder ? v.setReserved("InventoryOrder", F) : (v.h.InventoryOrder = F);
+                        		var N = b.engine.getGameAttribute("DummyMap"),
+                        			_ = E.deepCopyList(b.engine.getGameAttribute("ItemMap"));
+                        		null != e.ItemMap ? N.setReserved("ItemMap", _) : (N.h.ItemMap = _);
+                        		var I = b.engine.getGameAttribute("DummyMap"),
+                        			D = E.deepCopyList(b.engine.getGameAttribute("ItemQuantity"));
+                        		null != e.ItemQuantity ? I.setReserved("ItemQuantity", D) : (I.h.ItemQuantity = D);
+                        		var S = b.engine.getGameAttribute("DummyMap"),
+                        			G = E.deepCopyList(b.engine.getGameAttribute("Lv0"));
+                        		null != e.Lv0 ? S.setReserved("Lv0", G) : (S.h.Lv0 = G);
+                        		var T = b.engine.getGameAttribute("DummyMap"),
+                        			U = E.deepCopyList(b.engine.getGameAttribute("KillsLeft2Advance"));
+                        		null != e.KillsLeft2Advance ? T.setReserved("KillsLeft2Advance", U) : (T.h.KillsLeft2Advance = U);
+                        		var M = b.engine.getGameAttribute("DummyMap"),
+                        			V = E.deepCopyList(b.engine.getGameAttribute("ObolEquippedMap")[0]);
+                        		null != e.ObolEquippedMap ? M.setReserved("ObolEquippedMap", V) : (M.h.ObolEquippedMap = V);
+                        		var C = b.engine.getGameAttribute("DummyMap"),
+                        			B = E.deepCopyList(b.engine.getGameAttribute("ObolEquippedOrder")[0]);
+                        		null != e.ObolEquippedOrder ? C.setReserved("ObolEquippedOrder", B) : (C.h.ObolEquippedOrder = B);
+                        		var P = b.engine.getGameAttribute("DummyMap"),
+                        			O = E.deepCopyList(b.engine.getGameAttribute("OptionsList"));
+                        		null != e.OptionsList ? P.setReserved("OptionsList", O) : (P.h.OptionsList = O);
+                        		var w = b.engine.getGameAttribute("DummyMap"),
+                        			k = E.deepCopyList(b.engine.getGameAttribute("QuestHelperMenu"));
+                        		null != e.QuestHelperMenu ? w.setReserved("QuestHelperMenu", k) : (w.h.QuestHelperMenu = k);
+                        		var x = b.engine.getGameAttribute("DummyMap"),
+                        			Q = E.deepCopyList(b.engine.getGameAttribute("SkillLevels"));
+                        		null != e.SkillLevels ? x.setReserved("SkillLevels", Q) : (x.h.SkillLevels = Q);
+                        		var X = b.engine.getGameAttribute("DummyMap"),
+                        			L = E.deepCopyList(b.engine.getGameAttribute("SkillLevelsMAX"));
+                        		null != e.SkillLevelsMAX ? X.setReserved("SkillLevelsMAX", L) : (X.h.SkillLevelsMAX = L);
+                        		var z = b.engine.getGameAttribute("DummyMap"),
+                        			Y = E.deepCopyMap(b.engine.getGameAttribute("MaxCarryCap"));
+                        		null != e.MaxCarryCap ? z.setReserved("MaxCarryCap", Y) : (z.h.MaxCarryCap = Y);
+                        		var W = b.engine.getGameAttribute("DummyMap"),
+                        			Z = E.deepCopyMap(b.engine.getGameAttribute("QuestStatus"));
+                        		null != e.QuestStatus ? W.setReserved("QuestStatus", Z) : (W.h.QuestStatus = Z);
+                        		var H = b.engine.getGameAttribute("DummyMap"),
+                        			J = E.deepCopyMap(b.engine.getGameAttribute("QuestComplete"));
+                        		null != e.QuestComplete ? H.setReserved("QuestComplete", J) : (H.h.QuestComplete = J);
+                        		var j = b.engine.getGameAttribute("DummyMap"),
+                        			q = E.deepCopyMap(b.engine.getGameAttribute("NPCdialogue"));
+                        		null != e.NPCdialogue ? j.setReserved("NPCdialogue", q) : (j.h.NPCdialogue = q);
+                        		var K = b.engine.getGameAttribute("DummyMap"),
+                        			$ = b.engine.getGameAttribute("CharacterClass");
+                        		null != e.CharacterClass ? K.setReserved("CharacterClass", $) : (K.h.CharacterClass = $);
+                        		var ee = b.engine.getGameAttribute("DummyMap"),
+                        			te = b.engine.getGameAttribute("CurrentMap");
+                        		null != e.CurrentMap ? ee.setReserved("CurrentMap", te) : (ee.h.CurrentMap = te);
+                        		var ne = b.engine.getGameAttribute("DummyMap"),
+                        			se = b.engine.getGameAttribute("FoodSlotsOwned");
+                        		null != e.FoodSlotsOwned ? ne.setReserved("FoodSlotsOwned", se) : (ne.h.FoodSlotsOwned = se);
+                        		var ae = b.engine.getGameAttribute("DummyMap"),
+                        			re = b.engine.getGameAttribute("Money");
+                        		null != e.Money ? ae.setReserved("Money", re) : (ae.h.Money = re);
+                        		var Ae = b.engine.getGameAttribute("DummyMap"),
+                        			le = E.deepCopyMap(b.engine.getGameAttribute("AttackCooldowns"));
+                        		null != e.AttackCooldowns ? Ae.setReserved("AttackCooldowns", le) : (Ae.h.AttackCooldowns = le);
+                        		var oe = b.engine.getGameAttribute("DummyMap"),
+                        			ie = b.engine.getGameAttribute("RespawnTime");
+                        		null != e.RespawnTime ? oe.setReserved("RespawnTime", ie) : (oe.h.RespawnTime = ie);
+                        		var ue = b.engine.getGameAttribute("DummyMap"),
+                        			ge = b.engine.getGameAttribute("PlayerHP");
+                        		null != e.PlayerHP ? ue.setReserved("PlayerHP", ge) : (ue.h.PlayerHP = ge);
+                        		var me = b.engine.getGameAttribute("DummyMap"),
+                        			de = b.engine.getGameAttribute("PlayerMP");
+                        		null != e.PlayerMP ? me.setReserved("PlayerMP", de) : (me.h.PlayerMP = de);
+                        		var ce = b.engine.getGameAttribute("DummyMap"),
+                        			pe = b.engine.getGameAttribute("AFKtarget");
+                        		null != e.AFKtarget ? ce.setReserved("AFKtarget", pe) : (ce.h.AFKtarget = pe);
+                        		var he = b.engine.getGameAttribute("DummyMap"),
+                        			be = b.engine.getGameAttribute("TimeAway"),
+                        			fe = null != e.Player ? be.getReserved("Player") : be.h.Player;
+                        		null != e.PlayerAwayTime ? he.setReserved("PlayerAwayTime", fe) : (he.h.PlayerAwayTime = fe);
+                        		var ye = b.engine.getGameAttribute("DummyMap"),
+                        			Re = b.engine.getGameAttribute("InventorySlotsOwned");
+                        		null != e.InventorySlotsOwned ? ye.setReserved("InventorySlotsOwned", Re) : (ye.h.InventorySlotsOwned = Re);
+                        		var ve = b.engine.getGameAttribute("DummyMap"),
+                        			Fe = E.deepCopyMap(b.engine.getGameAttribute("InvBagsUsed"));
+                        		null != e.InvBagsUsed ? ve.setReserved("InvBagsUsed", Fe) : (ve.h.InvBagsUsed = Fe);
+                        		var Ne = b.engine.getGameAttribute("DummyMap"),
+                        			_e = E.deepCopyList(b.engine.getGameAttribute("BuffsActive"));
+                        		null != e.BuffsActive ? Ne.setReserved("BuffsActive", _e) : (Ne.h.BuffsActive = _e);
+                        		var Ie = b.engine.getGameAttribute("DummyMap"),
+                        			De = b.engine.getGameAttribute("PlayerAutoMoveTOGGLE");
+                        		null != e.PlayerAutoMoveTOGGLE ? Ie.setReserved("PlayerAutoMoveTOGGLE", De) : (Ie.h.PlayerAutoMoveTOGGLE = De);
+                        		var Ee = b.engine.getGameAttribute("DummyMap"),
+                        			Se = E.deepCopyList(b.engine.getGameAttribute("StatueLevels"));
+                        		null != e.StatueLevels ? Ee.setReserved("StatueLevels", Se) : (Ee.h.StatueLevels = Se);
+                        		var Ge = b.engine.getGameAttribute("DummyMap"),
+                        			Te = E.deepCopyList(b.engine.getGameAttribute("AnvilPA"));
+                        		null != e.AnvilPA ? Ge.setReserved("AnvilPA", Te) : (Ge.h.AnvilPA = Te);
+                        		var Ue = b.engine.getGameAttribute("DummyMap"),
+                        			Me = E.deepCopyList(b.engine.getGameAttribute("AnvilPAstats"));
+                        		null != e.AnvilPAstats ? Ue.setReserved("AnvilPAstats", Me) : (Ue.h.AnvilPAstats = Me);
+                        		var Ve = b.engine.getGameAttribute("DummyMap"),
+                        			Ce = E.deepCopyList(b.engine.getGameAttribute("AnvilPAselect"));
+                        		null != e.AnvilPAselect ? Ve.setReserved("AnvilPAselect", Ce) : (Ve.h.AnvilPAselect = Ce);
+                        		var Be = b.engine.getGameAttribute("DummyMap"),
+                        			Pe = E.deepCopyMap(b.engine.getGameAttribute("PersonalValuesMap"));
+                        		null != e.PersonalValuesMap ? Be.setReserved("PersonalValuesMap", Pe) : (Be.h.PersonalValuesMap = Pe);
+                        		var Oe = b.engine.getGameAttribute("DummyMap"),
+                        			we = E.deepCopyList(b.engine.getGameAttribute("PostOfficeInfo")[3]);
+                        		null != e.PostOfficeInfo ? Oe.setReserved("PostOfficeInfo", we) : (Oe.h.PostOfficeInfo = we);
+                        		var ke = b.engine.getGameAttribute("DummyMap"),
+                        			xe = E.deepCopyList(b.engine.getGameAttribute("Cards")[2]);
+                        		null != e.CardEquip ? ke.setReserved("CardEquip", xe) : (ke.h.CardEquip = xe);
+                        		var Qe = b.engine.getGameAttribute("DummyMap"),
+                        			Xe = E.deepCopyMap(b.engine.getGameAttribute("Cards")[3]);
+                        		null != e.CSetEq ? Qe.setReserved("CSetEq", Xe) : (Qe.h.CSetEq = Xe);
+                        		var Le = b.engine.getGameAttribute("DummyMap"),
+                        			ze = E.deepCopyList(b.engine.getGameAttribute("PrayersActive"));
+                        		null != e.Prayers ? Le.setReserved("Prayers", ze) : (Le.h.Prayers = ze);
+                        		var Ye = b.engine.getGameAttribute("DummyMap"),
+                        			We = E.deepCopyList(b.engine.getGameAttribute("PlayerStuff"));
+                        		null != e.PlayerStuff ? Ye.setReserved("PlayerStuff", We) : (Ye.h.PlayerStuff = We);
+                        		var Ze = b.engine.getGameAttribute("DummyMap"),
+                        			He = E.deepCopyList(b.engine.getGameAttribute("PlacedTraps"));
+                        		null != e.PldTraps ? Ze.setReserved("PldTraps", He) : (Ze.h.PldTraps = He);
+                        		var Je = b.engine.getGameAttribute("DummyMap"),
+                        			je = E.deepCopyList(b.engine.getGameAttribute("LockedSlots"));
+                        		null != e.LockedSlots ? Je.setReserved("LockedSlots", je) : (Je.h.LockedSlots = je);
+                        		var qe = b.engine.getGameAttribute("DummyMap"),
+                        			Ke = E.deepCopyList(b.engine.getGameAttribute("TalPresetLISTS"));
+                        		null != e.TalPresetLISTS ? qe.setReserved("TalPresetLISTS", Ke) : (qe.h.TalPresetLISTS = Ke);
+                        		var $e = b.engine.getGameAttribute("DummyMap"),
+                        			et = E.deepCopyList(b.engine.getGameAttribute("TalPresetATTACKS"));
+                        		null != e.TalPresetATTACKS ? $e.setReserved("TalPresetATTACKS", et) : ($e.h.TalPresetATTACKS = et);
+                        		var tt = b.engine.getGameAttribute("DummyMap"),
+                        			nt = E.deepCopyList(b.engine.getGameAttribute("CardPreset"));
+                        		null != e.CardPreset ? tt.setReserved("CardPreset", nt) : (tt.h.CardPreset = nt);
+                        		var st = b.engine.getGameAttribute("PlayerDATABASE"),
+                        			at = b.engine.getGameAttribute("DummyMap");
+                        		return null != e[t] ? st.setReserved(t, at) : (st.h[t] = at), "txt";
+                        	}

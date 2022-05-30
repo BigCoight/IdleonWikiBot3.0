@@ -1,0 +1,40 @@
+                        (t._customBlock_CalcAwayKills = function(t, s) {
+                        		var a = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			r = [];
+                        		if ((null != e.AFKinfoDummyLIST ? a.setReserved("AFKinfoDummyLIST", r) : (a.h.AFKinfoDummyLIST = r), "Killing" == s)) {
+                        			if (0 < (null == (s = null != e.A ? t.getReserved("A") : t.h.A) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)))) {
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = null != e.AFKinfoDummyLIST ? s.getReserved("AFKinfoDummyLIST") : s.h.AFKinfoDummyLIST),
+                        				(a = null == (a = null != e.N ? t.getReserved("N") : t.h.N) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        				(r = null == (r = null != e.R ? t.getReserved("R") : t.h.R) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r)));
+                        				var A = null != e.K ? t.getReserved("K") : t.h.K;
+                        				A = parseNum(A);
+                        				var o = null != e.d ? t.getReserved("d") : t.h.d;
+                        				o = parseNum(o);
+                        				var i = null != e.m ? t.getReserved("m") : t.h.m;
+                        				i = parseNum(i);
+                        				var u = null != e.r ? t.getReserved("r") : t.h.r;
+                        				u = parseNum(u);
+                        				var m = null != e.H ? t.getReserved("H") : t.h.H;
+                        				m = parseNum(m);
+                        				var c = null != e.D ? t.getReserved("D") : t.h.D;
+                        				c = parseNum(c);
+                        				var p = null != e.A ? t.getReserved("A") : t.h.A;
+                        				s.push(Math.min(a / (r + 0.1), A / (o / (130 * i) + u * Math.max(
+                        						(m / c + 0.52) * (1 / (parseNum(p) / 100)), 1)))),
+                        					(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(s = null != e.AFKinfoDummyLIST ? s.getReserved("AFKinfoDummyLIST") : s.h.AFKinfoDummyLIST),
+                        					(a = null == (a = null != e.N ? t.getReserved("N") : t.h.N) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        					(r = null == (r = null != e.R ? t.getReserved("R") : t.h.R) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        					(A = null == (A = null != e.K ? t.getReserved("K") : t.h.K) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))),
+                        					(o = null == (o = null != e.d ? t.getReserved("d") : t.h.d) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        					(i = null == (i = null != e.m ? t.getReserved("m") : t.h.m) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        					(u = null == (u = null != e.r ? t.getReserved("r") : t.h.r) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))),
+                        					(m = null == (m = null != e.H ? t.getReserved("H") : t.h.H) ? 0 : "number" == typeof m ? d.__cast(m, k) : "number" == typeof m && (0 | m) === m ? d.__cast(m, l) : "boolean" == typeof m ? d.__cast(m, n) ? 1 : 0 : "string" == typeof m ? parseFloat(m) : parseFloat(g.string(m))),
+                        					(t = null != e.D ? t.getReserved("D") : t.h.D),
+                        					s.push(Math.min(a / (r + 0.1), A / (o / (130 * i) + u * Math.max(m / parseNum(t) + 0.52, 1))));
+                        			} else(t = b.engine.getGameAttribute("DummyNumbersStatManager")), (null != e.AFKinfoDummyLIST ? t.getReserved("AFKinfoDummyLIST") : t.h.AFKinfoDummyLIST).push(0);
+                        			return (t = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.AFKinfoDummyLIST ? t.getReserved("AFKinfoDummyLIST") : t.h.AFKinfoDummyLIST;
+                        		}
+                        		return [];
+                        	}

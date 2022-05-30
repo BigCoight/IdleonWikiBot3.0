@@ -1,0 +1,64 @@
+                        (U._customBlock_ClickNode = function(t) {
+                        		if (0 == b.engine.getGameAttribute("BlockMovement") && 0 == H._customBlock_MiningChance()) {
+                        			if (0 == b.engine.getGameAttribute("OptionsList")[7] && 0 == b.engine.getGameAttribute("OptionsList")[18] && 0 == h.isTransitioning() && 470 > h.getMouseY() && (0 == b.engine.getGameAttribute("MenuType") || (6 == b.engine.getGameAttribute("MenuType") && -1 == b.engine.getGameAttribute("AttackSelected"))))
+                        				for (var s = 0, a = (t + 2) | 0; s < a;) {
+                        					var r = s++;
+                        					if (r == t) {
+                        						(t = h.getMouseX() + h.getScreenX()) > (null == (s = b.engine.getGameAttribute("NodeX")[r]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) ? (t = (t = h.getMouseX() + h.getScreenX()) < (null == (s = b.engine.getGameAttribute("NodeLength")[r]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)))) : (t = !1),
+                        						t ? (t = h.getMouseY() + h.getScreenY()) > (null == (s = b.engine.getGameAttribute("NodeY")[r]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) - 40 ? (t = (t = h.getMouseY() + h.getScreenY()) < (null == (s = b.engine.getGameAttribute("NodeY")[r]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) + 30) : (t = !1) : (t = !1),
+                        							t && ((s = b.engine.getGameAttribute("PlayerMoveMaps")[0]),
+                        								(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), 0 != (null != e[t] ? s.getReserved(t) : s.h[t]) ? ((s = b.engine.getGameAttribute("PlayerMoveMaps")[0]),
+                        									(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), 1 != (null != e[t] ? s.getReserved(t) : s.h[t]) ? ((s = b.engine.getGameAttribute("PlayerMoveMaps")[0]),
+                        										(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), 2 != (null != e[t] ? s.getReserved(t) : s.h[t]) ? ((s = b.engine.getGameAttribute("PlayerMoveMaps")[0]),
+                        											(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        											(t = 5 == (null != e[t] ? s.getReserved(t) : s.h[t]))) : (t = !0)) : (t = !0)) : (t = !0), t) && (Sb.contains(h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_IdlePlatforms"), r) ? ((t = b.engine.gameAttributes), null != e.PlayerAutoMoveTOGGLE ? t.setReserved("PlayerAutoMoveTOGGLE", 0) : (t.h.PlayerAutoMoveTOGGLE = 0),
+                        									(s = b.engine.getGameAttribute("PlayerMoveMaps")[1]),
+                        									(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), null != e[t] ? s.setReserved(t, 2) : (s.h[t] = 2)) : ((s = b.engine.getGameAttribute("PlayerMoveMaps")[1]), (t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), null != e[t] ? s.setReserved(t, 0) : (s.h[t] = 0)), 0 == b.engine.getGameAttribute("PlayerAutoMoveTOGGLE") && ((s = b.engine.getGameAttribute("OtherPlayers")),
+                        									(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        									(null != e[t] ? s.getReserved(t) : s.h[t]).getValue("ActorEvents_20", "_PlayerNode") == r ? ((t = h.getMouseX() + h.getScreenX()),
+                        										(a = b.engine.getGameAttribute("OtherPlayers")),
+                        										(s = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), t < (null != e[s] ? a.getReserved(s) : a.h[s]).getXCenter() - 10 * (H._customBlock_PlayerSpeedBonus() - 0.5) ? (t = !0) : ((t = h.getMouseX() + h.getScreenX()),
+                        											(a = b.engine.getGameAttribute("OtherPlayers")),
+                        											(s = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        											(t = t > (null != e[s] ? a.getReserved(s) : a.h[s]).getXCenter() + 10 * (H._customBlock_PlayerSpeedBonus() - 0.5)))) : (t = !0), t && ((s = b.engine.getGameAttribute("OtherPlayers")),
+                        										(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        										(null != e[t] ? s.getReserved(t) : s.h[t]).setValue("ActorEvents_20", "_TargetEnemy", null), b.engine.getGameAttribute("PixelHelperActor")[10].setValue("ActorEvents_112", "_HiddenStatus", 1), b.engine.getGameAttribute("PixelHelperActor")[10].disableActorDrawing(),
+                        										(s = b.engine.getGameAttribute("OtherPlayers")),
+                        										(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        										(null != e[t] ? s.getReserved(t) : s.h[t]).setValue("ActorEvents_20", "_MouseClickX", h.getMouseX() + h.getScreenX()), b.engine.getGameAttribute("PixelHelperActor")[11].setValue("ActorEvents_112", "_Xcoord", Math.round(h.getMouseX() + h.getScreenX() - 18)), 1.5 == b.engine.getGameAttribute("PixelHelperActor")[11].getValue("ActorEvents_112", "_HiddenStatus") && b.engine.getGameAttribute("PixelHelperActor")[11].setValue("ActorEvents_112", "_HiddenStatus", 1))),
+                        								(s = b.engine.getGameAttribute("OtherPlayers")),
+                        								(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        								(null != e[t] ? s.getReserved(t) : s.h[t]).getValue("ActorEvents_20", "_PlayerNode") != r ? ((s = b.engine.getGameAttribute("OtherPlayers")),
+                        									(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        									(null != e[t] ? s.getReserved(t) : s.h[t]).setValue("ActorEvents_20", "_MouseClickX", h.getMouseX() + h.getScreenX()),
+                        									(s = b.engine.getGameAttribute("PlayerMoveMaps")[0]),
+                        									(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), null != e[t] ? s.setReserved(t, 5) : (s.h[t] = 5),
+                        									(s = b.engine.getGameAttribute("PlayerMoveMaps")[2]),
+                        									(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), null != e[t] ? s.setReserved(t, r) : (s.h[t] = r),
+                        									(20 > b.engine.getGameAttribute("CurrentMap") || 23 < b.engine.getGameAttribute("CurrentMap")) && ((s = b.engine.getGameAttribute("OtherPlayers")),
+                        										(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        										(t = (null != e[t] ? s.getReserved(t) : s.h[t]).getX()),
+                        										(a = b.engine.getGameAttribute("OtherPlayers")),
+                        										(s = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        										(s = (null != e[s] ? a.getReserved(s) : a.h[s]).getValue("ActorEvents_20", "_PlayerNode")), U._customBlock_NetworkMove(t, Math.round(parseNum(s)), h.getMouseX(), r))) : ((s = b.engine.getGameAttribute("PlayerMoveMaps")[0]),
+                        									(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        									(2 != (null != e[t] ? s.getReserved(t) : s.h[t]) || 0 == b.engine.getGameAttribute("PlayerAutoMoveTOGGLE")) && ((s = b.engine.getGameAttribute("PlayerMoveMaps")[0]),
+                        										(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), null != e[t] ? s.setReserved(t, 1) : (s.h[t] = 1),
+                        										(s = b.engine.getGameAttribute("PlayerMoveMaps")[2]),
+                        										(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), null != e[t] ? s.setReserved(t, r) : (s.h[t] = r),
+                        										(s = b.engine.getGameAttribute("PlayerMoveMaps")[1]),
+                        										(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), 2 != (null != e[t] ? s.getReserved(t) : s.h[t]) ? ((s = b.engine.getGameAttribute("PlayerMoveMaps")[1]), (t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), (t = 0 == (null != e[t] ? s.getReserved(t) : s.h[t]))) : (t = !0), t && ((s = b.engine.getGameAttribute("OtherPlayers")),
+                        											(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        											(null != e[t] ? s.getReserved(t) : s.h[t]).setValue("ActorEvents_20", "_MouseClickX", h.getMouseX() + h.getScreenX())),
+                        										(20 > b.engine.getGameAttribute("CurrentMap") || 23 < b.engine.getGameAttribute("CurrentMap")) && ((s = b.engine.getGameAttribute("OtherPlayers")),
+                        											(t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        											(t = (null != e[t] ? s.getReserved(t) : s.h[t]).getX()),
+                        											(a = b.engine.getGameAttribute("OtherPlayers")),
+                        											(s = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        											(s = (null != e[s] ? a.getReserved(s) : a.h[s]).getValue("ActorEvents_20", "_PlayerNode")), U._customBlock_NetworkMove(t, Math.round(parseNum(s)), h.getMouseX(), r)))));
+                        						break;
+                        					}
+                        				}
+                        			b.engine.getGameAttribute("OptionsList")[7] = 0;
+                        		}
+                        	}

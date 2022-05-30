@@ -1,0 +1,873 @@
+                        (t._customBlock_dungeonKill = function(s) {
+                        		var a = b.engine.getGameAttribute("DNSM"),
+                        			r = null != e.dmgCritSpdUVAL ? a.getReserved("dmgCritSpdUVAL") : a.h.dmgCritSpdUVAL,
+                        			o = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType"));
+                        		null != e[o] ? r.setReserved(o, 1) : (r.h[o] = 1);
+                        		var i = b.engine.getGameAttribute("MonsterHP"),
+                        			u = s.getValue("ActorEvents_1", "_MonsterID");
+                        		if (-69.42069 != i[0 | parseNum(u)]) {
+                        			if (0.3 > h.randomFloat()) var m = !0;
+                        			else {
+                        				var c = b.engine.getGameAttribute("OptionsListAccount")[76];
+                        				if (0 >= parseNum(c)) var p = b.engine.getGameAttribute("OptionsListAccount")[77],
+                        					f = 0 >= parseNum(p);
+                        				else f = !1;
+                        				m = !f;
+                        			}
+                        			if (m) {
+                        				var y = b.engine.getGameAttribute("DNSM");
+                        				if (
+                        					(null != e.KillDungDN ? y.setReserved("KillDungDN", 1) : (y.h.KillDungDN = 1), 2 == w._customBlock_Dungon() && (15 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID") || 40 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")))) {
+                        					var R = b.engine.getGameAttribute("DNSM");
+                        					null != e.KillDungDN ? R.setReserved("KillDungDN", 0) : (R.h.KillDungDN = 0);
+                        				}
+                        				var v = b.engine.getGameAttribute("DNSM");
+                        				if (1 == (null != e.KillDungDN ? v.getReserved("KillDungDN") : v.h.KillDungDN)) {
+                        					var F = h.randomFloat(),
+                        						N = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[12],
+                        						_ = 6 / (1 + Math.floor(parseNum(N) / 6) / 2),
+                        						I = 1 + w._customBlock_DungeonCalc("TraitBonus", 10) / 100,
+                        						D = b.engine.getGameAttribute("CustomMaps"),
+                        						S = null != e.DungMobs ? D.getReserved("DungMobs") : D.h.DungMobs,
+                        						T = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        						U = (null != e[T] ? S.getReserved(T) : S.h[T])[2];
+                        					if (F < _ * I * parseNum(U) * Math.min(2.2, H._customBlock_TotalStats("Drop_Rarity"))) {
+                        						var M = h.randomInt(0, 3),
+                        							V = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							C = parseNum(V),
+                        							B = s.getX(),
+                        							P = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							O = parseNum(P),
+                        							x = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("DungCredits1", 1, 0, M, 4, C, 0, B + O - 18, parseNum(x));
+                        					}
+                        					var Q = h.randomFloat(),
+                        						X = 4 * (1 + w._customBlock_DungeonCalc("TraitBonus", 11) / 100),
+                        						L = b.engine.getGameAttribute("CustomMaps"),
+                        						z = null != e.DungMobs ? L.getReserved("DungMobs") : L.h.DungMobs,
+                        						Y = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        						W = (null != e[Y] ? z.getReserved(Y) : z.h[Y])[3];
+                        					if (Q < X * parseNum(W) * Math.min(3, H._customBlock_TotalStats("Drop_Rarity"))) {
+                        						var Z = h.randomInt(0, 3),
+                        							J = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							j = parseNum(J),
+                        							q = s.getX(),
+                        							K = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							$ = parseNum(K),
+                        							ee = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("DungCredits2", 1, 0, Z, 4, j, 0, q + $ - 18, parseNum(ee));
+                        					}
+                        				}
+                        			}
+                        			var te = h.randomFloat(),
+                        				ne = b.engine.getGameAttribute("CustomMaps"),
+                        				se = null != e.DungMobs ? ne.getReserved("DungMobs") : ne.h.DungMobs,
+                        				ae = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        				re = (null != e[ae] ? se.getReserved(ae) : se.h[ae])[6];
+                        			te < parseNum(re) * H._customBlock_TotalStats("Drop_Rarity") && ((b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[71] = s), b.engine.getGameAttribute("PixelHelperActor")[9].setValue("ActorEvents_498", "_TRIGGEREDtext", "f"), b.engine.getGameAttribute("PixelHelperActor")[9].shout("_customEvent_DungeonStuffs2"));
+                        			var Ae = h.randomFloat(),
+                        				le = b.engine.getGameAttribute("DNSM"),
+                        				oe = null != e.DungeonStats ? le.getReserved("DungeonStats") : le.h.DungeonStats,
+                        				ie = null != e.healKill ? oe.getReserved("healKill") : oe.h.healKill;
+                        			if (Ae < parseNum(ie) / 100) {
+                        				var ue = b.engine,
+                        					ge = b.engine.getGameAttribute("PlayerHP") + 1,
+                        					me = ue.gameAttributes;
+                        				null != e.PlayerHP ? me.setReserved("PlayerHP", ge) : (me.h.PlayerHP = ge);
+                        			}
+                        			var de = b.engine.getGameAttribute("NONdummies"),
+                        				ce = b.engine.getGameAttribute("NONdummies")[12],
+                        				pe = parseNum(ce),
+                        				he = b.engine.getGameAttribute("CustomMaps"),
+                        				be = null != e.DungMobs ? he.getReserved("DungMobs") : he.h.DungMobs,
+                        				fe = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        				ye = (null != e[fe] ? be.getReserved(fe) : be.h[fe])[5];
+                        			if (
+                        				((de[12] = pe + parseNum(ye) * H._customBlock_TotalStats("Drop_Rarity") * w._customBlock_DungeonStat("cash")), 1 == h.randomInt(1, 20))) {
+                        				var Re = b.engine.getGameAttribute("NONdummies"),
+                        					ve = b.engine.getGameAttribute("NONdummies")[12],
+                        					Fe = parseNum(ve),
+                        					Ne = b.engine.getGameAttribute("CustomMaps"),
+                        					_e = null != e.DungMobs ? Ne.getReserved("DungMobs") : Ne.h.DungMobs,
+                        					Ie = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        					De = (null != e[Ie] ? _e.getReserved(Ie) : _e.h[Ie])[5];
+                        				Re[12] = Fe + 4 * parseNum(De) * H._customBlock_TotalStats("Drop_Rarity") * w._customBlock_DungeonStat("cash");
+                        			}
+                        			var Ee = b.engine.getGameAttribute("CustomMaps"),
+                        				Se = null != e.DungMobs ? Ee.getReserved("DungMobs") : Ee.h.DungMobs,
+                        				Ge = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType"));
+                        			if (-1 != (null != e[Ge] ? Se.getReserved(Ge) : Se.h[Ge])[4])
+                        				if ("frogGR" == s.getValue("ActorEvents_1", "_MonsterType") || "snakeZ" == s.getValue("ActorEvents_1", "_MonsterType") || "iceBossZ" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					if ("frogGR" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var Te = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60];
+                        						if (61 > Math.round(58 + parseNum(Te))) {
+                        							var Ue = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60];
+                        							w._customBlock_Reg_ach_add_status(58 + parseNum(Ue), 2);
+                        						} else 3 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60] && w._customBlock_Reg_ach_add_status(62, 2);
+                        					} else if ("snakeZ" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var Me = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60];
+                        						w._customBlock_Reg_ach_add_status(Math.round(119 + parseNum(Me)), 2);
+                        					} else if ("iceBossZ" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var Ve = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60];
+                        						w._customBlock_Reg_ach_add_status(Math.round(185 + parseNum(Ve)), 2);
+                        					}
+                        					var Ce = h.randomFloat(),
+                        						Be = b.engine.getGameAttribute("DNSM"),
+                        						Pe = null != e.AlchBubbles ? Be.getReserved("AlchBubbles") : Be.h.AlchBubbles,
+                        						Oe = null != e.CardDropz ? Pe.getReserved("CardDropz") : Pe.h.CardDropz,
+                        						we = parseNum(Oe),
+                        						ke = b.engine.getGameAttribute("CustomMaps"),
+                        						xe = null != e.DungMobs ? ke.getReserved("DungMobs") : ke.h.DungMobs,
+                        						Qe = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        						Xe = (null != e[Qe] ? xe.getReserved(Qe) : xe.h[Qe])[7];
+                        					if (Ce < (1 + we / 100) * parseNum(Xe) * Math.max(1, Math.min(2, w._customBlock_DungeonStat("CardChance")) * Math.min(4, E.getServerVarLoad("Dungeon_CardMulti"))))
+                        						if ("frogGR" == s.getValue("ActorEvents_1", "_MonsterType") && 3 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60]) {
+                        							var Le = h.randomInt(0, 5),
+                        								ze = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        								Ye = parseNum(ze),
+                        								We = s.getX(),
+                        								Ze = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        								He = parseNum(Ze),
+                        								Je = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        							A._customBlock_DropSomething("CardsX21", 1, 0, Le, 6, Ye, 0, We + He - 18, parseNum(Je));
+                        						} else {
+                        							var je = b.engine.getGameAttribute("CustomMaps"),
+                        								qe = null != e.DungMobs ? je.getReserved("DungMobs") : je.h.DungMobs,
+                        								Ke = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        								$e = (null != e[Ke] ? qe.getReserved(Ke) : qe.h[Ke])[4],
+                        								et = null == $e ? 0 : "number" == typeof $e ? d.__cast($e, k) : "number" == typeof $e && (0 | $e) === $e ? d.__cast($e, l) : "boolean" == typeof $e ? d.__cast($e, n) ? 1 : 0 : "string" == typeof $e ? parseFloat($e) : parseFloat(g.string($e)),
+                        								tt = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60],
+                        								nt = parseNum(tt),
+                        								st = h.randomInt(0, 5),
+                        								at = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        								rt = parseNum(at),
+                        								At = s.getX(),
+                        								lt = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        								ot = parseNum(lt),
+                        								it = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        							A._customBlock_DropSomething("CardsX" + (et + nt), 1, 0, st, 6, rt, 0, At + ot - 18, parseNum(it));
+                        						}
+                        				} else {
+                        					var ut = h.randomFloat(),
+                        						gt = b.engine.getGameAttribute("DNSM"),
+                        						mt = null != e.AlchBubbles ? gt.getReserved("AlchBubbles") : gt.h.AlchBubbles,
+                        						dt = null != e.CardDropz ? mt.getReserved("CardDropz") : mt.h.CardDropz,
+                        						ct = parseNum(dt),
+                        						pt = b.engine.getGameAttribute("CustomMaps"),
+                        						ht = null != e.DungMobs ? pt.getReserved("DungMobs") : pt.h.DungMobs,
+                        						bt = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        						ft = (null != e[bt] ? ht.getReserved(bt) : ht.h[bt])[7];
+                        					if (ut < (1 + ct / 100) * parseNum(ft) * Math.max(1, Math.min(2, w._customBlock_DungeonStat("CardChance")) * Math.min(4, E.getServerVarLoad("Dungeon_CardMulti")))) {
+                        						var yt = b.engine.getGameAttribute("CustomMaps"),
+                        							Rt = null != e.DungMobs ? yt.getReserved("DungMobs") : yt.h.DungMobs,
+                        							vt = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        							Ft = "CardsX" + g.string((null != e[vt] ? Rt.getReserved(vt) : Rt.h[vt])[4]),
+                        							Nt = h.randomInt(0, 5),
+                        							_t = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							It = parseNum(_t),
+                        							Dt = s.getX(),
+                        							Et = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							St = parseNum(Et),
+                        							Gt = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething(Ft, 1, 0, Nt, 6, It, 0, Dt + St - 18, parseNum(Gt));
+                        					}
+                        				}
+                        			if (1 == w._customBlock_Dungon()) {
+                        				if ("frogG" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					if (100 * h.randomFloat() < 40 * H._customBlock_TotalStats("Drop_Rarity") * w._customBlock_DungeonStat("DropRate_Adjust")) {
+                        						var Tt = h.randomInt(0, 3),
+                        							Ut = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							Mt = parseNum(Ut),
+                        							Vt = s.getX(),
+                        							Ct = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							Bt = parseNum(Ct),
+                        							Pt = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("DungeonA1", 1, 0, Tt, 4, Mt, 0, Vt + Bt - 18, parseNum(Pt));
+                        					}
+                        					if (100 * h.randomFloat() < 20 * H._customBlock_TotalStats("Drop_Rarity")) {
+                        						var Ot = h.randomInt(0, 3),
+                        							wt = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							kt = parseNum(wt),
+                        							xt = s.getX(),
+                        							Qt = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							Xt = parseNum(Qt),
+                        							Lt = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("FoodHealth1d", 1, 0, Ot, 4, kt, 0, xt + Xt - 18, parseNum(Lt));
+                        					}
+                        				} else if ("frogP" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					if (100 * h.randomFloat() < 31 * H._customBlock_TotalStats("Drop_Rarity") * w._customBlock_DungeonStat("DropRate_Adjust")) {
+                        						var zt = h.randomInt(0, 3),
+                        							Yt = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							Wt = parseNum(Yt),
+                        							Zt = s.getX(),
+                        							Ht = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							Jt = parseNum(Ht),
+                        							jt = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("DungeonA2", 1, 0, zt, 4, Wt, 0, Zt + Jt - 18, parseNum(jt));
+                        					}
+                        				} else if ("frogBIG" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					if (100 * h.randomFloat() < 28 * H._customBlock_TotalStats("Drop_Rarity") * w._customBlock_DungeonStat("DropRate_Adjust")) {
+                        						var qt = h.randomInt(0, 3),
+                        							Kt = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							$t = parseNum(Kt),
+                        							en = s.getX(),
+                        							tn = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							nn = parseNum(tn),
+                        							sn = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("DungeonA3", 1, 0, qt, 4, $t, 0, en + nn - 18, parseNum(sn));
+                        					}
+                        				} else if ("frogD" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					if (100 * h.randomFloat() < 22 * H._customBlock_TotalStats("Drop_Rarity") * w._customBlock_DungeonStat("DropRate_Adjust")) {
+                        						var an = h.randomInt(0, 3),
+                        							rn = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							An = parseNum(rn),
+                        							ln = s.getX(),
+                        							on = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							un = parseNum(on),
+                        							gn = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("DungeonA4", 1, 0, an, 4, An, 0, ln + un - 18, parseNum(gn));
+                        					}
+                        				} else if ("frogY" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					if (100 * h.randomFloat() < 19 * H._customBlock_TotalStats("Drop_Rarity") * w._customBlock_DungeonStat("DropRate_Adjust")) {
+                        						var mn = h.randomInt(0, 3),
+                        							dn = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							cn = parseNum(dn),
+                        							pn = s.getX(),
+                        							hn = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							bn = parseNum(hn),
+                        							fn = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("DungeonA5", 1, 0, mn, 4, cn, 0, pn + bn - 18, parseNum(fn));
+                        					}
+                        				} else if ("frogR" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					if (100 * h.randomFloat() < 16 * H._customBlock_TotalStats("Drop_Rarity") * w._customBlock_DungeonStat("DropRate_Adjust")) {
+                        						var yn = h.randomInt(0, 3),
+                        							Rn = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							vn = parseNum(Rn),
+                        							Fn = s.getX(),
+                        							Nn = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							_n = parseNum(Nn),
+                        							In = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("DungeonA6", 1, 0, yn, 4, vn, 0, Fn + _n - 18, parseNum(In));
+                        					}
+                        				} else if ("frogW" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					if (100 * h.randomFloat() < 12.5 * H._customBlock_TotalStats("Drop_Rarity") * w._customBlock_DungeonStat("DropRate_Adjust")) {
+                        						var Dn = h.randomInt(0, 3),
+                        							En = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							Sn = parseNum(En),
+                        							Gn = s.getX(),
+                        							Tn = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							Un = parseNum(Tn),
+                        							Mn = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("DungeonA7", 1, 0, Dn, 4, Sn, 0, Gn + Un - 18, parseNum(Mn));
+                        					}
+                        				} else if ("frogGG" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					if (100 * h.randomFloat() < 17 * H._customBlock_TotalStats("Drop_Rarity") * w._customBlock_DungeonStat("DropRate_Adjust")) {
+                        						var Vn = h.randomInt(0, 3),
+                        							Cn = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							Bn = parseNum(Cn),
+                        							Pn = s.getX(),
+                        							On = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							wn = parseNum(On),
+                        							kn = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("DungeonA8", 1, 0, Vn, 4, Bn, 0, Pn + wn - 18, parseNum(kn));
+                        					}
+                        				} else if ("frogNest" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					var xn = b.engine.getGameAttribute("DNSM");
+                        					if (
+                        						(null != e.KillDungDN ? xn.setReserved("KillDungDN", "frogG") : (xn.h.KillDungDN = "frogG"),
+                        							(b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[5] = 1), Sb.contains(s.getValue("ActorEvents_1", "_StatusList"), "StatusSkull1"))) {
+                        						var Qn = b.engine.getGameAttribute("DNSM");
+                        						null != e.KillDungDN ? Qn.setReserved("KillDungDN", "frogP") : (Qn.h.KillDungDN = "frogP");
+                        					} else if (Sb.contains(s.getValue("ActorEvents_1", "_StatusList"), "StatusSkull2")) {
+                        						var Xn = b.engine.getGameAttribute("DNSM");
+                        						null != e.KillDungDN ? Xn.setReserved("KillDungDN", "frogBIG") : (Xn.h.KillDungDN = "frogBIG");
+                        					} else if (Sb.contains(s.getValue("ActorEvents_1", "_StatusList"), "StatusSkull3")) {
+                        						var Ln = b.engine.getGameAttribute("DNSM");
+                        						null != e.KillDungDN ? Ln.setReserved("KillDungDN", "frogD") : (Ln.h.KillDungDN = "frogD");
+                        					} else if (Sb.contains(s.getValue("ActorEvents_1", "_StatusList"), "StatusSkull4")) {
+                        						var zn = b.engine.getGameAttribute("DNSM");
+                        						null != e.KillDungDN ? zn.setReserved("KillDungDN", "frogY") : (zn.h.KillDungDN = "frogY");
+                        					} else if (Sb.contains(s.getValue("ActorEvents_1", "_StatusList"), "StatusSkull5")) {
+                        						var Yn = b.engine.getGameAttribute("DNSM");
+                        						null != e.KillDungDN ? Yn.setReserved("KillDungDN", "frogR") : (Yn.h.KillDungDN = "frogR");
+                        					} else if (Sb.contains(s.getValue("ActorEvents_1", "_StatusList"), "StatusSkull6")) {
+                        						var Wn = b.engine.getGameAttribute("DNSM");
+                        						null != e.KillDungDN ? Wn.setReserved("KillDungDN", "frogGG") : (Wn.h.KillDungDN = "frogGG");
+                        					}
+                        					for (var Zn = 0; 10 > Zn;) {
+                        						var Hn = Zn++,
+                        							Jn = b.engine.getGameAttribute("DNSM"),
+                        							jn = "" + g.string(null != e.KillDungDN ? Jn.getReserved("KillDungDN") : Jn.h.KillDungDN),
+                        							qn = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						t._customBlock_CreateMonster(jn, parseNum(qn), s.getX() + 20 * (Hn - 4));
+                        						var Kn = b.engine.getGameAttribute("DNSM");
+                        						"frogBIG" == (null != e.KillDungDN ? Kn.getReserved("KillDungDN") : Kn.h.KillDungDN) && h.getLastCreatedActor().setFilter([h.createHueFilter(90)]);
+                        					}
+                        				}
+                        				if (100 * h.randomFloat() < 10 * H._customBlock_TotalStats("Drop_Rarity")) {
+                        					var $n = h.randomInt(0, 3),
+                        						es = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        						ts = parseNum(es),
+                        						ns = s.getX(),
+                        						ss = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        						as = parseNum(ss),
+                        						rs = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        					A._customBlock_DropSomething("FoodHealth1d", 1, 0, $n, 4, ts, 0, ns + as - 18, parseNum(rs));
+                        				}
+                        				if ("frogGR" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					-3 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0] && h.shoutToScene("_customEvent_SpawnNests");
+                        					var As = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0];
+                        					if (0 > parseNum(As)) {
+                        						var ls = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO"),
+                        							os = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0];
+                        						ls[0] = Math.abs(Math.round(-1 * parseNum(os)));
+                        						var is = b.engine.getGameAttribute("QuestComplete");
+                        						if (0 == (null != e.Toadstall3 ? is.getReserved("Toadstall3") : is.h.Toadstall3)) {
+                        							var us = b.engine.getGameAttribute("QuestStatus");
+                        							(null != e.Toadstall3 ? us.getReserved("Toadstall3") : us.h.Toadstall3)[0] = 1;
+                        						}
+                        					}
+                        					var gs = b.engine.getGameAttribute("OptionsListAccount")[76];
+                        					if (0 >= parseNum(gs)) var ms = b.engine.getGameAttribute("OptionsListAccount")[77],
+                        						ds = 0 >= parseNum(ms);
+                        					else ds = !1;
+                        					if (!ds)
+                        						for (var cs = 0,
+                        								ps = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60],
+                        								hs = (2 + 2 * parseNum(ps)) | 0; cs < hs;) {
+                        							var bs = cs++,
+                        								fs = h.randomFloat(),
+                        								ys = 1 + w._customBlock_DungeonCalc("TraitBonus", 10) / 100,
+                        								Rs = b.engine.getGameAttribute("CustomMaps"),
+                        								vs = null != e.DungMobs ? Rs.getReserved("DungMobs") : Rs.h.DungMobs,
+                        								Fs = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        								Ns = vs,
+                        								_s = (null != e[Fs] ? Ns.getReserved(Fs) : Ns.h[Fs])[2];
+                        							if (fs < ys * parseNum(_s) * H._customBlock_TotalStats("Drop_Rarity")) {
+                        								var Is = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60],
+                        									Ds = parseNum(Is),
+                        									Es = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        									Ss = parseNum(Es),
+                        									Gs = s.getX(),
+                        									Ts = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        									Us = parseNum(Ts),
+                        									Ms = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        								A._customBlock_DropSomething("DungCredits1", 1, 0, bs, 2 + 2 * Ds, Ss, 0, Gs + Us - 18, parseNum(Ms));
+                        							}
+                        							var Vs = h.randomFloat(),
+                        								Cs = 1 + w._customBlock_DungeonCalc("TraitBonus", 11) / 100,
+                        								Bs = b.engine.getGameAttribute("CustomMaps"),
+                        								Ps = null != e.DungMobs ? Bs.getReserved("DungMobs") : Bs.h.DungMobs,
+                        								Os = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        								ws = Ps,
+                        								ks = (null != e[Os] ? ws.getReserved(Os) : ws.h[Os])[3];
+                        							if (Vs < Cs * parseNum(ks) * H._customBlock_TotalStats("Drop_Rarity")) {
+                        								var xs = Math.round(1),
+                        									Qs = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60],
+                        									Xs = parseNum(Qs),
+                        									Ls = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        									zs = parseNum(Ls),
+                        									Ys = s.getX(),
+                        									Ws = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        									Zs = parseNum(Ws),
+                        									Hs = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        								A._customBlock_DropSomething("DungCredits2", xs, 0, bs, 2 + 2 * Xs, zs, 0, Ys + Zs - 18, parseNum(Hs));
+                        							}
+                        						}
+                        				}
+                        			} else if (3 == w._customBlock_Dungon())
+                        				if ("flake" == s.getValue("ActorEvents_1", "_MonsterType") || "mamoth" == s.getValue("ActorEvents_1", "_MonsterType") || "snowball" == s.getValue("ActorEvents_1", "_MonsterType") || "thermostat" == s.getValue("ActorEvents_1", "_MonsterType") || "eye" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					if (14 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[96] && h.randomFloat() < 0.3 * Math.min(3, H._customBlock_TotalStats("Drop_Rarity"))) {
+                        						var Js = Math.round(1),
+                        							js = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							qs = parseNum(js),
+                        							Ks = s.getX(),
+                        							$s = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							ea = null == $s ? 0 : "number" == typeof $s ? d.__cast($s, k) : "number" == typeof $s && (0 | $s) === $s ? d.__cast($s, l) : "boolean" == typeof $s ? d.__cast($s, n) ? 1 : 0 : "string" == typeof $s ? parseFloat($s) : parseFloat(g.string($s)),
+                        							ta = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("Dung3Ice", Js, 0, 0, 1, qs, 0, Ks + ea - 18, parseNum(ta));
+                        					}
+                        					for (var na = b.engine.getGameAttribute("OtherPlayers").keys(); na.hasNext();) {
+                        						var sa = na.next();
+                        						if (sa != b.engine.getGameAttribute("UserInfo")[0]) {
+                        							var aa = b.engine.getGameAttribute("OtherPlayers"),
+                        								ra = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        								Aa = aa,
+                        								la = (null != e[ra] ? Aa.getReserved(ra) : Aa.h[ra]).getX(),
+                        								oa = b.engine.getGameAttribute("OtherPlayers"),
+                        								ia = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        								ua = oa,
+                        								ga = (null != e[ia] ? ua.getReserved(ia) : ua.h[ia]).getY(),
+                        								ma = b.engine.getGameAttribute("OtherPlayers"),
+                        								da = "" + sa,
+                        								ca = (null != e[da] ? ma.getReserved(da) : ma.h[da]).getX(),
+                        								pa = b.engine.getGameAttribute("OtherPlayers"),
+                        								ha = "" + sa;
+                        							90 > t._customBlock_DistanceEqn(la, ga, ca, (null != e[ha] ? pa.getReserved(ha) : pa.h[ha]).getY()) && w._customBlock_DungAction("Dungeon3", 1, 5);
+                        						}
+                        					}
+                        					4 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[96] && w._customBlock_DungAction("Dungeon3", 1, 4), "flake" == s.getValue("ActorEvents_1", "_MonsterType") ? w._customBlock_DungAction("Dungeon3", 1, 2) : "mamoth" == s.getValue("ActorEvents_1", "_MonsterType") ? w._customBlock_DungAction("Dungeon3", 1, 9) : "snowball" == s.getValue("ActorEvents_1", "_MonsterType") ? w._customBlock_DungAction("Dungeon3", 1, 12) : "thermostat" == s.getValue("ActorEvents_1", "_MonsterType") ? w._customBlock_DungAction("Dungeon3", 1, 15) : "eye" == s.getValue("ActorEvents_1", "_MonsterType") && w._customBlock_DungAction("Dungeon3", 1, 17),
+                        						(b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[95] = s.getValue("ActorEvents_1", "_MonsterType"));
+                        				} else if ("iceknight" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        				var ba = b.engine.getGameAttribute("QuestComplete");
+                        				if (0 == (null != e.Worldo2 ? ba.getReserved("Worldo2") : ba.h.Worldo2)) {
+                        					var fa = b.engine.getGameAttribute("QuestStatus"),
+                        						ya = null != e.Worldo2 ? fa.getReserved("Worldo2") : fa.h.Worldo2,
+                        						Ra = b.engine.getGameAttribute("QuestStatus"),
+                        						va = (null != e.Worldo2 ? Ra.getReserved("Worldo2") : Ra.h.Worldo2)[0];
+                        					ya[0] = parseNum(va) + 1;
+                        				}
+                        				8 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[96] && w._customBlock_DungAction("Dungeon3", 1, 8);
+                        			} else "iceBossZ" == s.getValue("ActorEvents_1", "_MonsterType") && ((b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[100] = 0), b.engine.getGameAttribute("PixelHelperActor")[9].setValue("ActorEvents_498", "_TRIGGEREDtext", "d"), b.engine.getGameAttribute("PixelHelperActor")[9].shout("_customEvent_Dungeon3EventsA"));
+                        			else if (2 == w._customBlock_Dungon()) {
+                        				if (1 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("mimicA" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var Fa = b.engine.getGameAttribute("DNSM"),
+                        							Na = 100 * h.randomFloat() * H._customBlock_TotalStats("Drop_Rarity");
+                        						null != e.KillDungDN ? Fa.setReserved("KillDungDN", Na) : (Fa.h.KillDungDN = Na);
+                        						var _a = b.engine.getGameAttribute("DNSM"),
+                        							Ia = b.engine.getGameAttribute("DNSM"),
+                        							Da = null != e.KillDungDN ? Ia.getReserved("KillDungDN") : Ia.h.KillDungDN,
+                        							Ea = parseNum(Da),
+                        							Sa = b.engine.getGameAttribute("DNSM"),
+                        							Ga = null != e.KillDungDN ? Sa.getReserved("KillDungDN") : Sa.h.KillDungDN,
+                        							Ta = Math.floor(3 + (8 * Ea) / (parseNum(Ga) + 100));
+                        						null != e.KillDungDN ? _a.setReserved("KillDungDN", Ta) : (_a.h.KillDungDN = Ta);
+                        						for (var Ua = 0,
+                        								Ma = b.engine.getGameAttribute("DNSM"),
+                        								Va = null != e.KillDungDN ? Ma.getReserved("KillDungDN") : Ma.h.KillDungDN,
+                        								Ca = 0 | parseNum(Va); Ua < Ca;) {
+                        							var Ba = Ua++;
+                        							if (0.12 > h.randomFloat()) {
+                        								var Pa = b.engine.getGameAttribute("DNSM"),
+                        									Oa = null != e.KillDungDN ? Pa.getReserved("KillDungDN") : Pa.h.KillDungDN,
+                        									wa = parseNum(Oa),
+                        									ka = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        									xa = parseNum(ka),
+                        									Qa = s.getX(),
+                        									Xa = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        									La = parseNum(Xa),
+                        									za = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        								A._customBlock_DropSomething("Quest51", 1, 0, Ba, wa, xa, 0, Qa + La - 18, parseNum(za));
+                        							} else {
+                        								var Ya = b.engine.getGameAttribute("DNSM"),
+                        									Wa = null != e.KillDungDN ? Ya.getReserved("KillDungDN") : Ya.h.KillDungDN,
+                        									Za = parseNum(Wa),
+                        									Ha = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        									Ja = parseNum(Ha),
+                        									ja = s.getX(),
+                        									qa = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        									Ka = parseNum(qa),
+                        									$a = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        								A._customBlock_DropSomething("Quest52", 1, 0, Ba, Za, Ja, 0, ja + Ka - 18, null == $a ? 0 : "number" == typeof $a ? d.__cast($a, k) : "number" == typeof $a && (0 | $a) === $a ? d.__cast($a, l) : "boolean" == typeof $a ? d.__cast($a, n) ? 1 : 0 : "string" == typeof $a ? parseFloat($a) : parseFloat(g.string($a)));
+                        							}
+                        						}
+                        					}
+                        				} else if (2 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("jarSand" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var er = b.engine,
+                        							tr = w._customBlock_DungeonCalc("DungeonScoreAdd", 1),
+                        							nr = er.gameAttributes;
+                        						null != e.DummyNumberSafe ? nr.setReserved("DummyNumberSafe", tr) : (nr.h.DummyNumberSafe = tr);
+                        					} else if ("babaHour" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var sr = b.engine,
+                        							ar = w._customBlock_DungeonCalc("DungeonScoreAdd", 100),
+                        							rr = sr.gameAttributes;
+                        						null != e.DummyNumberSafe ? rr.setReserved("DummyNumberSafe", ar) : (rr.h.DummyNumberSafe = ar);
+                        					}
+                        				} else if (3 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID") || 18 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("rocky" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var Ar = b.engine,
+                        							lr = w._customBlock_DungeonCalc("DungeonScoreAdd", 1),
+                        							or = Ar.gameAttributes;
+                        						null != e.DummyNumberSafe ? or.setReserved("DummyNumberSafe", lr) : (or.h.DummyNumberSafe = lr);
+                        					}
+                        				} else if (4 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("rocky" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var ir = b.engine,
+                        							ur = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[1],
+                        							gr = parseNum(ur),
+                        							mr = b.engine.getGameAttribute("TimeAway"),
+                        							dr = null != e.GlobalTime ? mr.getReserved("GlobalTime") : mr.h.GlobalTime,
+                        							cr = parseNum(dr),
+                        							pr = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[0],
+                        							hr = w._customBlock_DungeonCalc("DungeonScoreAdd", Math.round(Math.max(gr - (cr - parseNum(pr)), 0))),
+                        							br = ir.gameAttributes;
+                        						null != e.DummyNumberSafe ? br.setReserved("DummyNumberSafe", hr) : (br.h.DummyNumberSafe = hr);
+                        					}
+                        				} else if (7 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("cactus" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var fr = b.engine,
+                        							yr = w._customBlock_DungeonCalc("DungeonScoreAdd", 1),
+                        							Rr = fr.gameAttributes;
+                        						null != e.DummyNumberSafe ? Rr.setReserved("DummyNumberSafe", yr) : (Rr.h.DummyNumberSafe = yr);
+                        					}
+                        				} else if (9 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) "snakeZ" == s.getValue("ActorEvents_1", "_MonsterType") && 1 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[59] && (b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[59] = 2);
+                        				else if (12 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("steak" == s.getValue("ActorEvents_1", "_MonsterType"))
+                        						for (var vr = 0; 5 > vr;) {
+                        							var Fr = vr++;
+                        							if (Sb.contains(s.getValue("ActorEvents_1", "_StatusList"), "StatusSkull" + (Fr + 1))) {
+                        								(b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[5] = Math.pow(3, Fr + 2)),
+                        								t._customBlock_CreateMonster("steak", 0, 800),
+                        									t._customBlock_AddStatusToMonster("StatusSkull" + (Fr + 2), h.getLastCreatedActor(), 36e3),
+                        									t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 36e3);
+                        								var Nr = b.engine.gameAttributes;
+                        								null != e.DummyText3 ? Nr.setReserved("DummyText3", "nah") : (Nr.h.DummyText3 = "nah"),
+                        									h.getLastCreatedActor().setValue("ActorEvents_1", "_Frozen", 1),
+                        									h.getLastCreatedActor().setValue("ActorEvents_1", "_SizeMulti", 3 + Math.floor(Fr / 2)),
+                        									h.getLastCreatedActor().growTo(Math.round(-100 * (3 + Math.floor(Fr / 2))) / 100, Math.round(100 * (3 + Math.floor(Fr / 2))) / 100, 0.01, G.linear),
+                        									h.getLastCreatedActor().setXVelocity(-2);
+                        								var _r = b.engine,
+                        									Ir = w._customBlock_DungeonCalc("DungeonScoreAdd", 1),
+                        									Dr = _r.gameAttributes,
+                        									Er = Ir;
+                        								null != e.DummyNumberSafe ? Dr.setReserved("DummyNumberSafe", Er) : (Dr.h.DummyNumberSafe = Er);
+                        								break;
+                        							}
+                        							4 == Fr && (b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[1] = 0);
+                        						}
+                        				} else if (13 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID") || 24 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					var Sr = s.getValue("ActorEvents_1", "_PersNum");
+                        					if (0 < parseNum(Sr) && "target" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var Gr = b.engine,
+                        							Tr = w._customBlock_DungeonCalc("DungeonScoreAdd", 1),
+                        							Ur = Gr.gameAttributes;
+                        						null != e.DummyNumberSafe ? Ur.setReserved("DummyNumberSafe", Tr) : (Ur.h.DummyNumberSafe = Tr);
+                        					}
+                        					if ("rocky" == s.getValue("ActorEvents_1", "_MonsterType") && 24 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        						var Mr = b.engine,
+                        							Vr = w._customBlock_DungeonCalc("DungeonScoreSubtract", 2),
+                        							Cr = Mr.gameAttributes;
+                        						null != e.DummyNumberSafe ? Cr.setReserved("DummyNumberSafe", Vr) : (Cr.h.DummyNumberSafe = Vr);
+                        					}
+                        				} else if (14 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("steakR" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var Br = b.engine.getGameAttribute("DNSM"),
+                        							Pr = 100 * h.randomFloat() * H._customBlock_TotalStats("Drop_Rarity");
+                        						null != e.KillDungDN ? Br.setReserved("KillDungDN", Pr) : (Br.h.KillDungDN = Pr);
+                        						var Or = b.engine.getGameAttribute("DNSM"),
+                        							wr = b.engine.getGameAttribute("DNSM"),
+                        							kr = null != e.KillDungDN ? wr.getReserved("KillDungDN") : wr.h.KillDungDN,
+                        							xr = parseNum(kr),
+                        							Qr = b.engine.getGameAttribute("DNSM"),
+                        							Xr = null != e.KillDungDN ? Qr.getReserved("KillDungDN") : Qr.h.KillDungDN,
+                        							Lr = Math.floor(1 + (4 * xr) / (parseNum(Xr) + 100));
+                        						null != e.KillDungDN ? Or.setReserved("KillDungDN", Lr) : (Or.h.KillDungDN = Lr);
+                        						for (var zr = 0,
+                        								Yr = b.engine.getGameAttribute("DNSM"),
+                        								Wr = null != e.KillDungDN ? Yr.getReserved("KillDungDN") : Yr.h.KillDungDN,
+                        								Zr = 0 | parseNum(Wr); zr < Zr;) {
+                        							var Hr = zr++,
+                        								Jr = b.engine.getGameAttribute("DNSM"),
+                        								jr = null != e.KillDungDN ? Jr.getReserved("KillDungDN") : Jr.h.KillDungDN,
+                        								qr = parseNum(jr),
+                        								Kr = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        								$r = parseNum(Kr),
+                        								eA = s.getX(),
+                        								tA = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        								nA = parseNum(tA),
+                        								sA = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        							A._customBlock_DropSomething("Quest53", 1, 0, Hr, qr, $r, 0, eA + nA - 18, parseNum(sA));
+                        						}
+                        					}
+                        				} else if (25 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("jarSand" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var aA = b.engine.getGameAttribute("DNSM"),
+                        							rA = Math.floor(2);
+                        						null != e.KillDungDN ? aA.setReserved("KillDungDN", rA) : (aA.h.KillDungDN = rA);
+                        						for (var AA = 0,
+                        								lA = b.engine.getGameAttribute("DNSM"),
+                        								oA = null != e.KillDungDN ? lA.getReserved("KillDungDN") : lA.h.KillDungDN,
+                        								iA = 0 | parseNum(oA); AA < iA;) {
+                        							var uA = AA++,
+                        								gA = b.engine.getGameAttribute("DNSM"),
+                        								mA = null != e.KillDungDN ? gA.getReserved("KillDungDN") : gA.h.KillDungDN,
+                        								dA = parseNum(mA),
+                        								cA = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        								pA = parseNum(cA),
+                        								hA = s.getX(),
+                        								bA = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        								fA = parseNum(bA),
+                        								yA = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        							A._customBlock_DropSomething("Quest54", 1, 0, uA, dA, pA, 0, hA + fA - 18, parseNum(yA));
+                        						}
+                        					}
+                        				} else if (15 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("crabcake" == s.getValue("ActorEvents_1", "_MonsterType") && 0 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[49])
+                        						if (500 > s.getX()) {
+                        							b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[5] = 1;
+                        							var RA = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        							if (
+                        								(t._customBlock_CreateMonster("crabcake", parseNum(RA), 412), t._customBlock_AddStatusToMonster("StatusMultiCombat", h.getLastCreatedActor(), 1e4), h.getLastCreatedActor().setValue("ActorEvents_1", "_Frozen", 1), h.getLastCreatedActor().setXVelocity(0), 1 == s.getValue("ActorEvents_1", "_MonsterNODE") ? h.getLastCreatedActor().setFilter([h.createHueFilter(118)]) : 2 == s.getValue("ActorEvents_1", "_MonsterNODE") && h.getLastCreatedActor().setFilter([h.createHueFilter(224)]), b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0] == s.getValue("ActorEvents_1", "_MonsterNODE"))) {
+                        								var vA = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO"),
+                        									FA = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[2];
+                        								vA[2] = parseNum(FA) + 3;
+                        							} else {
+                        								var NA = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO"),
+                        									_A = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[2];
+                        								NA[2] = parseNum(_A) + -1;
+                        							}
+                        							var IA = b.engine,
+                        								DA = w._customBlock_DungeonCalc("DungeonScoreSubtract", 1),
+                        								EA = IA.gameAttributes;
+                        							null != e.DummyNumberSafe ? EA.setReserved("DummyNumberSafe", DA) : (EA.h.DummyNumberSafe = DA);
+                        						} else(b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[54] = 1),
+                        							(b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[1] = 0);
+                        				} else if (16 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) "totem" == s.getValue("ActorEvents_1", "_MonsterType") && (500 > s.getX() ? (b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0] = 1) : (b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[1] = 1));
+                        				else if (17 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("potatoB" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var SA = b.engine,
+                        							GA = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							TA = parseNum(GA),
+                        							UA = SA.gameAttributes;
+                        						null != e.DummyNumber5 ? UA.setReserved("DummyNumber5", TA) : (UA.h.DummyNumber5 = TA);
+                        						var MA = b.engine.gameAttributes;
+                        						null != e.DummyText3 ? MA.setReserved("DummyText3", "Splotch") : (MA.h.DummyText3 = "Splotch");
+                        						var VA = h.getActorType(358),
+                        							CA = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("DummyNumber5")],
+                        							BA = parseNum(CA),
+                        							PA = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("DummyNumber5")],
+                        							OA = Math.min(BA - 120, Math.max(parseNum(PA), s.getX())),
+                        							wA = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("DummyNumber5")];
+                        						h.createRecycledActor(VA, OA, Math.floor(parseNum(wA) - 30), 0);
+                        					}
+                        				} else if (23 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("jarSand" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var kA = b.engine,
+                        							xA = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							QA = parseNum(xA),
+                        							XA = kA.gameAttributes;
+                        						null != e.DummyNumber5 ? XA.setReserved("DummyNumber5", QA) : (XA.h.DummyNumber5 = QA);
+                        						var LA = b.engine.gameAttributes;
+                        						null != e.DummyText3 ? LA.setReserved("DummyText3", "Splotch2") : (LA.h.DummyText3 = "Splotch2");
+                        						var zA = h.getActorType(358),
+                        							YA = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("DummyNumber5")],
+                        							WA = parseNum(YA),
+                        							ZA = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("DummyNumber5")],
+                        							HA = Math.min(WA - 60, Math.max(parseNum(ZA), s.getX())),
+                        							JA = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("DummyNumber5")];
+                        						h.createRecycledActor(zA, HA, Math.floor(parseNum(JA) - 30), 0);
+                        					}
+                        				} else if (20 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("coconut" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var jA = b.engine,
+                        							qA = w._customBlock_DungeonCalc("DungeonScoreAdd", 1),
+                        							KA = jA.gameAttributes;
+                        						null != e.DummyNumberSafe ? KA.setReserved("DummyNumberSafe", qA) : (KA.h.DummyNumberSafe = qA);
+                        					}
+                        				} else if (22 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					var $A = b.engine,
+                        						el = w._customBlock_DungeonCalc("DungeonScoreAdd", 1),
+                        						tl = $A.gameAttributes;
+                        					null != e.DummyNumberSafe ? tl.setReserved("DummyNumberSafe", el) : (tl.h.DummyNumberSafe = el);
+                        				} else if (29 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					var nl = b.engine,
+                        						sl = w._customBlock_DungeonCalc("DungeonScoreAdd", 1),
+                        						al = nl.gameAttributes;
+                        					null != e.DummyNumberSafe ? al.setReserved("DummyNumberSafe", sl) : (al.h.DummyNumberSafe = sl);
+                        				} else if (32 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if (h.randomFloat() < 0.05 * H._customBlock_TotalStats("Drop_Rarity")) {
+                        						var rl = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							Al = parseNum(rl),
+                        							ll = s.getX(),
+                        							ol = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							il = parseNum(ol),
+                        							ul = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("Quest55", 1, 0, 0, 3, Al, 0, ll + il - 18, parseNum(ul));
+                        					}
+                        				} else if (34 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) "rocky" == s.getValue("ActorEvents_1", "_MonsterType") && ((b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[54] = 1),
+                        					(b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[1] = 0));
+                        				else if (36 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) "babaMummy" == s.getValue("ActorEvents_1", "_MonsterType") && ((b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[54] = 1),
+                        					(b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[1] = 0));
+                        				else if (37 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("totem" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var gl = b.engine,
+                        							ml = w._customBlock_DungeonCalc("DungeonScoreAdd", 1),
+                        							dl = gl.gameAttributes;
+                        						null != e.DummyNumberSafe ? dl.setReserved("DummyNumberSafe", ml) : (dl.h.DummyNumberSafe = ml),
+                        							300 > s.getX() ? (b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[1] = 1) : 1e3 > s.getX() ? (b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0] = 1) : (b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[2] = 1);
+                        					}
+                        				} else if (38 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID") || 41 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					if ("rocky" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var cl = b.engine,
+                        							pl = w._customBlock_DungeonCalc("DungeonScoreAdd", 1),
+                        							hl = cl.gameAttributes;
+                        						null != e.DummyNumberSafe ? hl.setReserved("DummyNumberSafe", pl) : (hl.h.DummyNumberSafe = pl);
+                        					}
+                        				} else if (40 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID") && "cactus" == s.getValue("ActorEvents_1", "_MonsterType"))
+                        					if (500 > s.getX()) {
+                        						b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[5] = 1;
+                        						var bl = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						if (
+                        							(t._customBlock_CreateMonster("cactus", parseNum(bl), 412), t._customBlock_AddStatusToMonster("StatusMultiCombat", h.getLastCreatedActor(), 1e4), h.getLastCreatedActor().setValue("ActorEvents_1", "_Frozen", 1), h.getLastCreatedActor().setXVelocity(0), 1 == s.getValue("ActorEvents_1", "_MonsterNODE") ? h.getLastCreatedActor().setFilter([h.createHueFilter(118)]) : 2 == s.getValue("ActorEvents_1", "_MonsterNODE") && h.getLastCreatedActor().setFilter([h.createHueFilter(224)]), b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0] == s.getValue("ActorEvents_1", "_MonsterNODE"))) {
+                        							var fl = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO"),
+                        								yl = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[2];
+                        							fl[2] = parseNum(yl) + 1;
+                        						} else {
+                        							var Rl = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO"),
+                        								vl = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[2];
+                        							Rl[2] = parseNum(vl) + -1;
+                        						}
+                        						var Fl = b.engine,
+                        							Nl = w._customBlock_DungeonCalc("DungeonScoreSubtract", 1),
+                        							_l = Fl.gameAttributes;
+                        						null != e.DummyNumberSafe ? _l.setReserved("DummyNumberSafe", Nl) : (_l.h.DummyNumberSafe = Nl);
+                        					} else(b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[54] = 1),
+                        						(b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[1] = 0);
+                        				if ("snakeZ" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					var Il = b.engine.getGameAttribute("QuestComplete");
+                        					if (0 == (null != e.Gangster_Gus2 ? Il.getReserved("Gangster_Gus2") : Il.h.Gangster_Gus2)) {
+                        						var Dl = b.engine.getGameAttribute("QuestStatus");
+                        						(null != e.Gangster_Gus2 ? Dl.getReserved("Gangster_Gus2") : Dl.h.Gangster_Gus2)[0] = 1;
+                        					}
+                        					var El = b.engine.getGameAttribute("QuestComplete");
+                        					if (0 == (null != e.Gangster_Gus3 ? El.getReserved("Gangster_Gus3") : El.h.Gangster_Gus3) && 1 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60]) {
+                        						var Sl = b.engine.getGameAttribute("QuestStatus");
+                        						(null != e.Gangster_Gus3 ? Sl.getReserved("Gangster_Gus3") : Sl.h.Gangster_Gus3)[0] = 1;
+                        					}
+                        					var Gl = b.engine.getGameAttribute("OptionsListAccount")[76];
+                        					if (0 >= parseNum(Gl)) var Tl = b.engine.getGameAttribute("OptionsListAccount")[77],
+                        						Ul = 0 >= parseNum(Tl);
+                        					else Ul = !1;
+                        					if (Ul) {
+                        						var Ml = Math.round(1),
+                        							Vl = h.randomInt(0, 4),
+                        							Cl = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							Bl = parseNum(Cl),
+                        							Pl = s.getX(),
+                        							Ol = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							wl = parseNum(Ol),
+                        							kl = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("XP", Ml, 0, Vl, 5, Bl, 0, Pl + wl - 18, parseNum(kl));
+                        					} else {
+                        						for (var xl = 0,
+                        								Ql = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60],
+                        								Xl = (2 + 3 * parseNum(Ql)) | 0; xl < Xl;) {
+                        							var Ll = xl++,
+                        								zl = h.randomFloat(),
+                        								Yl = 1 + w._customBlock_DungeonCalc("TraitBonus", 10) / 100,
+                        								Wl = b.engine.getGameAttribute("CustomMaps"),
+                        								Zl = null != e.DungMobs ? Wl.getReserved("DungMobs") : Wl.h.DungMobs,
+                        								Hl = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        								Jl = Zl,
+                        								jl = (null != e[Hl] ? Jl.getReserved(Hl) : Jl.h[Hl])[2];
+                        							if (zl < Yl * parseNum(jl) * H._customBlock_TotalStats("Drop_Rarity")) {
+                        								var ql = Math.round(1),
+                        									Kl = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60],
+                        									$l = parseNum(Kl),
+                        									eo = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        									to = parseNum(eo),
+                        									no = s.getX(),
+                        									so = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        									ao = parseNum(so),
+                        									ro = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        								A._customBlock_DropSomething("DungCredits1", ql, 0, Ll, 2 + 2 * $l, to, 0, no + ao - 18, parseNum(ro));
+                        							}
+                        							var Ao = h.randomFloat(),
+                        								lo = 1 + w._customBlock_DungeonCalc("TraitBonus", 11) / 100,
+                        								oo = b.engine.getGameAttribute("CustomMaps"),
+                        								io = null != e.DungMobs ? oo.getReserved("DungMobs") : oo.h.DungMobs,
+                        								uo = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        								go = io,
+                        								mo = (null != e[uo] ? go.getReserved(uo) : go.h[uo])[3];
+                        							if (Ao < lo * parseNum(mo) * H._customBlock_TotalStats("Drop_Rarity")) {
+                        								var co = Math.round(1),
+                        									po = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60],
+                        									ho = parseNum(po),
+                        									bo = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        									fo = parseNum(bo),
+                        									yo = s.getX(),
+                        									Ro = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        									vo = parseNum(Ro),
+                        									Fo = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        								A._customBlock_DropSomething("DungCredits2", co, 0, Ll, 2 + 2 * ho, fo, 0, yo + vo - 18, parseNum(Fo));
+                        							}
+                        						}
+                        						var No = Math.round(1),
+                        							_o = h.randomInt(0, 4),
+                        							Io = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							Do = parseNum(Io),
+                        							Eo = s.getX(),
+                        							So = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        							Go = parseNum(So),
+                        							To = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        						A._customBlock_DropSomething("LootDice", No, 0, _o, 5, Do, 0, Eo + Go - 18, parseNum(To));
+                        					}
+                        				} else if ("babaMummy" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        					var Uo = b.engine.getGameAttribute("OptionsListAccount")[76];
+                        					if (0 >= parseNum(Uo)) var Mo = b.engine.getGameAttribute("OptionsListAccount")[77],
+                        						Vo = 0 >= parseNum(Mo);
+                        					else Vo = !1;
+                        					if (Vo) {
+                        						if (0.4 > h.randomFloat()) {
+                        							var Co = Math.round(1),
+                        								Bo = h.randomInt(0, 4),
+                        								Po = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        								Oo = parseNum(Po),
+                        								wo = s.getX(),
+                        								ko = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        								xo = parseNum(ko),
+                        								Qo = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        							A._customBlock_DropSomething("XP", Co, 0, Bo, 5, Oo, 0, wo + xo - 18, parseNum(Qo));
+                        						}
+                        					} else {
+                        						for (var Xo = 0,
+                        								Lo = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60],
+                        								zo = (2 + 3 * parseNum(Lo)) | 0; Xo < zo;) {
+                        							var Yo = Xo++,
+                        								Wo = h.randomFloat(),
+                        								Zo = 1 + w._customBlock_DungeonCalc("TraitBonus", 10) / 100,
+                        								Ho = b.engine.getGameAttribute("CustomMaps"),
+                        								Jo = null != e.DungMobs ? Ho.getReserved("DungMobs") : Ho.h.DungMobs,
+                        								jo = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        								qo = Jo,
+                        								Ko = (null != e[jo] ? qo.getReserved(jo) : qo.h[jo])[2];
+                        							if (Wo < Zo * parseNum(Ko) * H._customBlock_TotalStats("Drop_Rarity")) {
+                        								var $o = Math.round(1),
+                        									ei = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60],
+                        									ti = parseNum(ei),
+                        									ni = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        									si = parseNum(ni),
+                        									ai = s.getX(),
+                        									ri = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        									Ai = parseNum(ri),
+                        									li = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        								A._customBlock_DropSomething("DungCredits1", $o, 0, Yo, 2 + 2 * ti, si, 0, ai + Ai - 18, parseNum(li));
+                        							}
+                        							var oi = h.randomFloat(),
+                        								ii = 1 + w._customBlock_DungeonCalc("TraitBonus", 11) / 100,
+                        								ui = b.engine.getGameAttribute("CustomMaps"),
+                        								gi = null != e.DungMobs ? ui.getReserved("DungMobs") : ui.h.DungMobs,
+                        								mi = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        								di = gi,
+                        								ci = (null != e[mi] ? di.getReserved(mi) : di.h[mi])[3];
+                        							if (oi < ii * parseNum(ci) * H._customBlock_TotalStats("Drop_Rarity")) {
+                        								var pi = Math.round(1),
+                        									hi = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[60],
+                        									bi = parseNum(hi),
+                        									fi = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        									yi = parseNum(fi),
+                        									Ri = s.getX(),
+                        									vi = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        									Fi = parseNum(vi),
+                        									Ni = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        								A._customBlock_DropSomething("DungCredits2", pi, 0, Yo, 2 + 2 * bi, yi, 0, Ri + Fi - 18, parseNum(Ni));
+                        							}
+                        						}
+                        						if (0.4 > h.randomFloat()) {
+                        							var _i = Math.round(1),
+                        								Ii = h.randomInt(0, 4),
+                        								Di = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        								Ei = parseNum(Di),
+                        								Si = s.getX(),
+                        								Gi = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        								Ti = parseNum(Gi),
+                        								Ui = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        							A._customBlock_DropSomething("LootDice", _i, 0, Ii, 5, Ei, 0, Si + Ti - 18, parseNum(Ui));
+                        						}
+                        					}
+                        				}
+                        			}
+                        		}
+                        	}

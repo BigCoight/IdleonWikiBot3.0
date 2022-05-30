@@ -1,0 +1,27 @@
+                        (s.prototype.push = function(e, t) {
+                        		var n,
+                        			s,
+                        			a,
+                        			i,
+                        			u,
+                        			g = this.strm,
+                        			d = this.options.chunkSize,
+                        			c = this.options.dictionary,
+                        			p = !1;
+                        		if (this.ended) return !1;
+                        		(t = t === ~~t ? t : !0 === t ? o.Z_FINISH : o.Z_NO_FLUSH), "string" == typeof e ? (g.input = l.binstring2buf(e)) : "[object ArrayBuffer]" === m.call(e) ? (g.input = new Uint8Array(e)) : (g.input = e),
+                        			(g.next_in = 0),
+                        			(g.avail_in = g.input.length);
+                        		do {
+                        			if (
+                        				(0 === g.avail_out && ((g.output = new A.Buf8(d)), (g.next_out = 0), (g.avail_out = d)),
+                        					(n = r.inflate(g, o.Z_NO_FLUSH)) === o.Z_NEED_DICT && c && ((u = "string" == typeof c ? l.string2buf(c) : "[object ArrayBuffer]" === m.call(c) ? new Uint8Array(c) : c), (n = r.inflateSetDictionary(this.strm, u))), n === o.Z_BUF_ERROR && !0 === p && ((n = o.Z_OK), (p = !1)), n !== o.Z_STREAM_END && n !== o.Z_OK)) return this.onEnd(n), (this.ended = !0), !1;
+                        			g.next_out && ((0 !== g.avail_out && n !== o.Z_STREAM_END && (0 !== g.avail_in || (t !== o.Z_FINISH && t !== o.Z_SYNC_FLUSH))) || ("string" === this.options.to ? ((s = l.utf8border(g.output, g.next_out)),
+                        					(a = g.next_out - s),
+                        					(i = l.buf2string(g.output, s)),
+                        					(g.next_out = a),
+                        					(g.avail_out = d - a), a && A.arraySet(g.output, g.output, s, a, 0), this.onData(i)) : this.onData(A.shrinkBuf(g.output, g.next_out)))),
+                        				0 === g.avail_in && 0 === g.avail_out && (p = !0);
+                        		} while ((0 < g.avail_in || 0 === g.avail_out) && n !== o.Z_STREAM_END);
+                        		return (n === o.Z_STREAM_END && (t = o.Z_FINISH), t === o.Z_FINISH ? ((n = r.inflateEnd(this.strm)), this.onEnd(n), (this.ended = !0), n === o.Z_OK) : t !== o.Z_SYNC_FLUSH || (this.onEnd(o.Z_OK), (g.avail_out = 0), !0));
+                        	}

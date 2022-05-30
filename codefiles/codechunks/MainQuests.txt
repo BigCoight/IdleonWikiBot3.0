@@ -1,0 +1,129 @@
+                        (eh.MainQuests = function() {
+                        		var t = new p(),
+                        			n = [
+                        				[0, 0],
+                        				[6, 9, 13, 17, 20, 23, 25, 33, 39, 42],
+                        				[99999]
+                        			];
+                        		return (null != e.Scripticus ? t.setReserved("Scripticus", n) : (t.h.Scripticus = n),
+                        			(n = [
+                        				[0, 0],
+                        				[3, 6, 9],
+                        				[99999]
+                        			]), null != e.Glumlee ? t.setReserved("Glumlee", n) : (t.h.Glumlee = n),
+                        			(n = [
+                        				[0, 0],
+                        				[5, 8, 12],
+                        				[20]
+                        			]), null != e.Picnic_Stowaway ? t.setReserved("Picnic_Stowaway", n) : (t.h.Picnic_Stowaway = n),
+                        			(n = [
+                        				[9, -3],
+                        				[5, 10, 16],
+                        				[99999]
+                        			]), null != e.Stiltzcho ? t.setReserved("Stiltzcho", n) : (t.h.Stiltzcho = n),
+                        			(n = [
+                        				[-16, 0],
+                        				[-7, -5],
+                        				[99999]
+                        			]), null != e.Town_Marble ? t.setReserved("Town_Marble", n) : (t.h.Town_Marble = n),
+                        			(n = [
+                        				[18, 0],
+                        				[-7, -5],
+                        				[99999]
+                        			]), null != e.Woodsman ? t.setReserved("Woodsman", n) : (t.h.Woodsman = n),
+                        			(n = [
+                        				[-8, -4],
+                        				[-7, -5],
+                        				[99999]
+                        			]), null != e.TP_Pete ? t.setReserved("TP_Pete", n) : (t.h.TP_Pete = n),
+                        			(n = [
+                        				[-10, 0],
+                        				[-7, -5],
+                        				[99999]
+                        			]), null != e.Promotheus ? t.setReserved("Promotheus", n) : (t.h.Promotheus = n),
+                        			(n = [
+                        				[36, 27],
+                        				[-7, -5],
+                        				[99999]
+                        			]), null != e.Speccius ? t.setReserved("Speccius", n) : (t.h.Speccius = n),
+                        			(n = [
+                        				[-17, -70],
+                        				[-7, -5],
+                        				[99999]
+                        			]), null != e.Whattso ? t.setReserved("Whattso", n) : (t.h.Whattso = n),
+                        			(n = [
+                        				[-7, -7],
+                        				[-7, -5],
+                        				[99999]
+                        			]), null != e.Scubidew ? t.setReserved("Scubidew", n) : (t.h.Scubidew = n),
+                        			(n = [
+                        				[-7, -10],
+                        				[-7, -5],
+                        				[99999]
+                        			]), null != e.Fishpaste97 ? t.setReserved("Fishpaste97", n) : (t.h.Fishpaste97 = n),
+                        			(n = [
+                        				[-15, 14],
+                        				[-7, -5],
+                        				[1]
+                        			]), null != e.Loveulyte ? t.setReserved("Loveulyte", n) : (t.h.Loveulyte = n),
+                        			(n = [
+                        				[0, 0],
+                        				[1, 4, 7, 12, 19, 22, 24, 27, 33, 38, 44, 47, 50, 54],
+                        				[99999]
+                        			]), null != e.Cowbo_Jones ? t.setReserved("Cowbo_Jones", n) : (t.h.Cowbo_Jones = n),
+                        			(n = [
+                        				[0, 0],
+                        				[-7, -5],
+                        				[1]
+                        			]), null != e.Giftmas_Blobulyte ? t.setReserved("Giftmas_Blobulyte", n) : (t.h.Giftmas_Blobulyte = n),
+                        			(n = [
+                        				[-8, 15],
+                        				[3, 7, 10, 15, 19, 25, 28, 31, 36, 39],
+                        				[99999]
+                        			]), null != e.Hoggindaz ? t.setReserved("Hoggindaz", n) : (t.h.Hoggindaz = n),
+                        			(n = [
+                        				[0, 0],
+                        				[5, 9, 13, 17],
+                        				[99999]
+                        			]), null != e.Carpetiem ? t.setReserved("Carpetiem", n) : (t.h.Carpetiem = n),
+                        			(n = [
+                        				[0, 0],
+                        				[-7, -5],
+                        				[1]
+                        			]), null != e.Coastiolyte ? t.setReserved("Coastiolyte", n) : (t.h.Coastiolyte = n),
+                        			(n = [
+                        				[50, -15],
+                        				[-7, -5],
+                        				[99999]
+                        			]), null != e.Gangster_Gus ? t.setReserved("Gangster_Gus", n) : (t.h.Gangster_Gus = n),
+                        			(n = [
+                        				[0, 0],
+                        				[3, 6, 9, 12],
+                        				[99999]
+                        			]), null != e.Shuvelle ? t.setReserved("Shuvelle", n) : (t.h.Shuvelle = n),
+                        			(n = [
+                        				[0, 0],
+                        				[3, 6, 9, 12],
+                        				[99999]
+                        			]), null != e.Yondergreen ? t.setReserved("Yondergreen", n) : (t.h.Yondergreen = n),
+                        			(n = [
+                        				[0, 0],
+                        				[2, 5, 9, 12],
+                        				[99999]
+                        			]), null != e.Bill_Brr ? t.setReserved("Bill_Brr", n) : (t.h.Bill_Brr = n),
+                        			(n = [
+                        				[65, -34],
+                        				[3, 6, 9, 12, 16],
+                        				[99999]
+                        			]), null != e.Gobo ? t.setReserved("Gobo", n) : (t.h.Gobo = n),
+                        			(n = [
+                        				[-7, -6],
+                        				[-7, -5],
+                        				[99999]
+                        			]), null != e.Nebula_Neddy ? t.setReserved("Nebula_Neddy", n) : (t.h.Nebula_Neddy = n),
+                        			(n = [
+                        				[-7, 0],
+                        				[-7, -5],
+                        				[99999]
+                        			]), null != e.Eliteus ? t.setReserved("Eliteus", n) : (t.h.Eliteus = n), t);
+                        	}

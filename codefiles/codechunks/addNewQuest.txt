@@ -1,0 +1,5 @@
+                        (F.addNewQuest = function(t, n) {
+                        		(n = F.unpackMap(n)), F.requireStats(n, [F.COMMON_STATS, F.QUEST_STATS]);
+                        		var s = F.itemDefs;
+                        		null != e[t] ? s.setReserved(t, n) : (s.h[t] = n);
+                        	}

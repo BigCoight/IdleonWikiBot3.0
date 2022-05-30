@@ -1,0 +1,5 @@
+                            (n.utf8border = function(e, t) {
+                            		var n;
+                            		for ((t = t || e.length) > e.length && (t = e.length), n = t - 1; 0 <= n && 128 == (192 & e[n]);) n--;
+                            		return 0 > n || 0 === n ? t : n + l[e[n]] > t ? n : t;
+                            	}

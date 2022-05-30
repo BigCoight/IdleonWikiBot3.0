@@ -1,0 +1,24 @@
+            (Howl.prototype.pos = function(e, n, s, a) {
+            		var r = this;
+            		if (!r._webAudio) return r;
+            		if ("loaded" !== r._state) return (r._queue.push({
+            			event: "pos",
+            			action: function() {
+            				r.pos(e, n, s, a);
+            			},
+            		}), r);
+            		if (((n = "number" != typeof n ? 0 : n), (s = "number" != typeof s ? -0.5 : s), void 0 === a)) {
+            			if ("number" != typeof e) return r._pos;
+            			r._pos = [e, n, s];
+            		}
+            		for (var A = r._getSoundIds(a), l = 0; l < A.length; l++) {
+            			var o = r._soundById(A[l]);
+            			if (o) {
+            				if ("number" != typeof e) return o._pos;
+            				(o._pos = [e, n, s]),
+            				o._node && ((o._panner && !o._panner.pan) || t(o, "spatial"), void 0 !== o._panner.positionX ? (o._panner.positionX.setValueAtTime(e, Howler.ctx.currentTime), o._panner.positionY.setValueAtTime(n, Howler.ctx.currentTime), o._panner.positionZ.setValueAtTime(s, Howler.ctx.currentTime)) : o._panner.setPosition(e, n, s)),
+            					r._emit("pos", o._id);
+            			}
+            		}
+            		return r;
+            	}

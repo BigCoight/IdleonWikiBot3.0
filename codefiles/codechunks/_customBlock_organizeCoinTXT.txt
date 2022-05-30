@@ -1,0 +1,66 @@
+                        (U._customBlock_organizeCoinTXT = function(t) {
+                        		var s = b.engine.gameAttributes;
+                        		for (null != e.DummyNumber ? s.setReserved("DummyNumber", t) : (s.h.DummyNumber = t), t = b.engine.gameAttributes, s = [], null != e.DummyList2 ? t.setReserved("DummyList2", s) : (t.h.DummyList2 = s), t = b.engine.gameAttributes, s = [], null != e.DummyList3 ? t.setReserved("DummyList3", s) : (t.h.DummyList3 = s), t = b.engine.getGameAttribute("DNSM"), null != e.OrgCdn1 ? t.setReserved("OrgCdn1", 0) : (t.h.OrgCdn1 = 0), t = b.engine.getGameAttribute("DNSM"), null != e.OrgCdn2 ? t.setReserved("OrgCdn2", 0) : (t.h.OrgCdn2 = 0), t = b.engine.getGameAttribute("DNSM"), null != e.OrgCdtz ? t.setReserved("OrgCdtz", "") : (t.h.OrgCdtz = ""), t = b.engine.getGameAttribute("DNSM"), null != e.OrgCdtz2 ? t.setReserved("OrgCdtz2", "") : (t.h.OrgCdtz2 = ""), t = 0; 5 > t;)
+                        			if ((t++, 1e10 < b.engine.getGameAttribute("DummyNumber"))) {
+                        				var a = b.engine;
+                        				(s = b.engine.getGameAttribute("DummyNumber") / 100),
+                        				(a = a.gameAttributes),
+                        				null != e.DummyNumber ? a.setReserved("DummyNumber", s) : (a.h.DummyNumber = s),
+                        					(s = b.engine.getGameAttribute("DNSM")),
+                        					(a = b.engine.getGameAttribute("DNSM")),
+                        					(a = (null == (a = null != e.OrgCdn1 ? a.getReserved("OrgCdn1") : a.h.OrgCdn1) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + 1),
+                        					null != e.OrgCdn1 ? s.setReserved("OrgCdn1", a) : (s.h.OrgCdn1 = a);
+                        			}
+                        		if (0 == b.engine.getGameAttribute("DummyNumber"))
+                        			(t = b.engine.getGameAttribute("DummyList2")),
+                        			(s = b.engine.getGameAttribute("CustomLists")),
+                        			t.push((null != e.CoinStrings ? s.getReserved("CoinStrings") : s.h.CoinStrings)[0]),
+                        			b.engine.getGameAttribute("DummyList3").push("@@0");
+                        		else {
+                        			for (t = b.engine.gameAttributes, null != e.DummyNumber2 ? t.setReserved("DummyNumber2", 0) : (t.h.DummyNumber2 = 0), t = 0; 5 > t && ((s = t++), b.engine.getGameAttribute("DummyNumber") >= Math.pow(100, s));)
+                        				(a = b.engine), (s = b.engine.getGameAttribute("DummyNumber2") + 1), (a = a.gameAttributes), null != e.DummyNumber2 ? a.setReserved("DummyNumber2", s) : (a.h.DummyNumber2 = s);
+                        			for (t = b.engine.getGameAttribute("DNSM"), s = ("" + b.engine.getGameAttribute("DummyNumber")).indexOf("."), null != e.OrgCdn2 ? t.setReserved("OrgCdn2", s) : (t.h.OrgCdn2 = s), t = b.engine.getGameAttribute("DNSM"), 0 > (null == (t = null != e.OrgCdn2 ? t.getReserved("OrgCdn2") : t.h.OrgCdn2) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))) && ((t = b.engine.getGameAttribute("DNSM")), null != e.OrgCdn2 ? t.setReserved("OrgCdn2", 10) : (t.h.OrgCdn2 = 10)), t = b.engine.getGameAttribute("DNSM"), s = "" + b.engine.getGameAttribute("DummyNumber"), a = b.engine.getGameAttribute("DNSM"), a = null != e.OrgCdn2 ? a.getReserved("OrgCdn2") : a.h.OrgCdn2, s = s.substring(0, 0 | Math.min(Math.min(10, parseNum(a)),
+                        					("" + b.engine.getGameAttribute("DummyNumber")).length)), null != e.OrgCdtz2 ? t.setReserved("OrgCdtz2", s) : (t.h.OrgCdtz2 = s), t = 0, s = 0 | b.engine.getGameAttribute("DummyNumber2"); t < s;) {
+                        				a = t++;
+                        				var r = b.engine.getGameAttribute("DummyList2"),
+                        					A = b.engine.getGameAttribute("CustomLists");
+                        				A = null != e.CoinStrings ? A.getReserved("CoinStrings") : A.h.CoinStrings;
+                        				var o = b.engine.getGameAttribute("DNSM");
+                        				if (
+                        					((o = null != e.OrgCdn1 ? o.getReserved("OrgCdn1") : o.h.OrgCdn1), r.push(A[
+                        							(a + parseNum(o)) | 0]),
+                        						(r = b.engine.getGameAttribute("DNSM")), 0 <= ("" + g.string(null != e.OrgCdtz2 ? r.getReserved("OrgCdtz2") : r.h.OrgCdtz2)).length - (2 + 2 * a)))
+                        					if (
+                        						((r = b.engine.getGameAttribute("DNSM")),
+                        							(r = "" + g.string(null != e.OrgCdtz2 ? r.getReserved("OrgCdtz2") : r.h.OrgCdtz2)),
+                        							(A = b.engine.getGameAttribute("DNSM")), "0" != r.charAt(("" + g.string(null != e.OrgCdtz2 ? A.getReserved("OrgCdtz2") : A.h.OrgCdtz2)).length - (2 + 2 * a)))) {
+                        						(r = b.engine),
+                        						(A = b.engine.getGameAttribute("DNSM")),
+                        						(A = "" + g.string(null != e.OrgCdtz2 ? A.getReserved("OrgCdtz2") : A.h.OrgCdtz2)),
+                        						(o = b.engine.getGameAttribute("DNSM")),
+                        						(A = A.charAt(("" + g.string(null != e.OrgCdtz2 ? o.getReserved("OrgCdtz2") : o.h.OrgCdtz2)).length - (2 + 2 * a))),
+                        						(o = b.engine.getGameAttribute("DNSM")),
+                        						(o = "" + g.string(null != e.OrgCdtz2 ? o.getReserved("OrgCdtz2") : o.h.OrgCdtz2));
+                        						var i = b.engine.getGameAttribute("DNSM");
+                        						(i = null != e.OrgCdtz2 ? i.getReserved("OrgCdtz2") : i.h.OrgCdtz2), (r = r.gameAttributes), (a = A + o.charAt(("" + g.string(i)).length - (1 + 2 * a)));
+                        					} else(r = b.engine),
+                        						(A = b.engine.getGameAttribute("DNSM")),
+                        						(A = "" + g.string(null != e.OrgCdtz2 ? A.getReserved("OrgCdtz2") : A.h.OrgCdtz2)),
+                        						(o = b.engine.getGameAttribute("DNSM")),
+                        						(o = null != e.OrgCdtz2 ? o.getReserved("OrgCdtz2") : o.h.OrgCdtz2),
+                        						(r = r.gameAttributes),
+                        						(a = "@@" + A.charAt(("" + g.string(o)).length - (1 + 2 * a)));
+                        				else(r = b.engine),
+                        					(A = b.engine.getGameAttribute("DNSM")),
+                        					(A = "" + g.string(null != e.OrgCdtz2 ? A.getReserved("OrgCdtz2") : A.h.OrgCdtz2)),
+                        					(o = b.engine.getGameAttribute("DNSM")),
+                        					(o = null != e.OrgCdtz2 ? o.getReserved("OrgCdtz2") : o.h.OrgCdtz2),
+                        					(r = r.gameAttributes),
+                        					(a = "@@" + A.charAt(("" + g.string(o)).length - (1 + 2 * a)));
+                        				null != e.DummyText ? r.setReserved("DummyText", a) : (r.h.DummyText = a), b.engine.getGameAttribute("DummyList3").push(b.engine.getGameAttribute("DummyText"));
+                        			}
+                        		}
+                        		return (
+                        			(t = b.engine.gameAttributes),
+                        			(s = []), null != e.DummyList ? t.setReserved("DummyList", s) : (t.h.DummyList = s), b.engine.getGameAttribute("DummyList").push(b.engine.getGameAttribute("DummyList2")), b.engine.getGameAttribute("DummyList").push(b.engine.getGameAttribute("DummyList3")), b.engine.getGameAttribute("DummyList"));
+                        	}

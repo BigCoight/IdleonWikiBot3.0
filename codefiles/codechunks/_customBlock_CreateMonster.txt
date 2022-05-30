@@ -1,0 +1,96 @@
+                        (t._customBlock_CreateMonster = function(t, s, a) {
+                        		var r = b.engine,
+                        			A = b.engine.getGameAttribute("MonstersOnScreen")[0 | b.engine.getGameAttribute("CurrentMap")];
+                        		A = parseNum(A);
+                        		var o = h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_NumberOfEnemiesTEMP");
+                        		if (
+                        			((o = parseNum(o)),
+                        				(r = r.gameAttributes),
+                        				(A += o + 1), null != e.dummyMonsterID ? r.setReserved("dummyMonsterID", A) : (r.h.dummyMonsterID = A),
+                        				(r = b.engine.getGameAttribute("SceneEvents_n")),
+                        				(A = h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_NumberOfEnemiesTEMP")), h.setValueForScene(r, "_NumberOfEnemiesTEMP", parseNum(A) + 1),
+                        				(r = b.engine.gameAttributes), null != e.dummyMonsterTYPE ? r.setReserved("dummyMonsterTYPE", t) : (r.h.dummyMonsterTYPE = t),
+                        				(r = b.engine.gameAttributes), null != e.dummyMonsterNODE ? r.setReserved("dummyMonsterNODE", s) : (r.h.dummyMonsterNODE = s),
+                        				(r = b.engine.gameAttributes), null != e.DummyNumber ? r.setReserved("DummyNumber", 1) : (r.h.DummyNumber = 1), b.engine.getGameAttribute("DummyText3"), b.engine.getGameAttribute("DummyText3"),
+                        				(r = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        				(r = null != e[t] ? r.getReserved(t) : r.h[t]), "Tree" == (null != e.Type ? r.getReserved("Type") : r.h.Type)))
+                        			(r = h.getActorType(1)),
+                        			(s = null == (s = b.engine.getGameAttribute("NodeY")[0 | s]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(A = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        			(A = null != e[t] ? A.getReserved(t) : A.h[t]),
+                        			(A = null != e.HeightOfMonster ? A.getReserved("HeightOfMonster") : A.h.HeightOfMonster),
+                        			h.createRecycledActor(r, a, s - 100 + (parseNum(A) - 50) / 2, 2);
+                        		else if (((r = b.engine.getGameAttribute("MonsterDefinitionsGET")), (r = null != e[t] ? r.getReserved(t) : r.h[t]), "Fish" == (null != e.Type ? r.getReserved("Type") : r.h.Type)))
+                        			(r = h.getActorType(1)),
+                        			(s = b.engine.getGameAttribute("NodeY")[0 | s]),
+                        			h.createRecycledActor(r, a, parseNum(s) + 60, 2);
+                        		else if ("PetByYourSide" == b.engine.getGameAttribute("DummyText3") || "PetInFenceYard" == b.engine.getGameAttribute("DummyText3") || "PetInTerritoryBattle" == b.engine.getGameAttribute("DummyText3")) {
+                        			(s = h.getActorType(1)),
+                        			(r = w._customBlock_PetStuff("Yoffset_PetSpawn", b.engine.getGameAttribute("dummyMonsterTYPE"), 0, 0)),
+                        			(A = null == (A = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))),
+                        			(o = b.engine.getGameAttribute("MonsterDefinitionsGET"));
+                        			var i = b.engine.getGameAttribute("dummyMonsterTYPE");
+                        			(o = null != e[i] ? o.getReserved(i) : o.h[i]),
+                        			(o = null == (o = null != e.HeightOfMonster ? o.getReserved("HeightOfMonster") : o.h.HeightOfMonster) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        			(i = b.engine.getGameAttribute("MonsterDefinitionsGET"));
+                        			var u = b.engine.getGameAttribute("dummyMonsterTYPE");
+                        			(i = null != e[u] ? i.getReserved(u) : i.h[u]),
+                        			(i = null != e.HeightOfMonster ? i.getReserved("HeightOfMonster") : i.h.HeightOfMonster),
+                        			h.createRecycledActor(s, a, r + (A - o + (parseNum(i) - 50) / 2), 2);
+                        		} else(s = h.getActorType(1)),
+                        			(r = null == (r = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        			(A = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        			(o = b.engine.getGameAttribute("dummyMonsterTYPE")),
+                        			(A = null != e[o] ? A.getReserved(o) : A.h[o]),
+                        			(A = null == (A = null != e.HeightOfMonster ? A.getReserved("HeightOfMonster") : A.h.HeightOfMonster) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))),
+                        			(o = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        			(i = b.engine.getGameAttribute("dummyMonsterTYPE")),
+                        			(o = null != e[i] ? o.getReserved(i) : o.h[i]),
+                        			(o = null != e.HeightOfMonster ? o.getReserved("HeightOfMonster") : o.h.HeightOfMonster),
+                        			h.createRecycledActor(s, a, r - A + (parseNum(o) - 50) / 2, 2);
+                        		"PetSummonSpawn" != b.engine.getGameAttribute("DummyText3") && ((a = b.engine.getGameAttribute("MonsterHP")),
+                        				(s = 0 | b.engine.getGameAttribute("dummyMonsterID")),
+                        				(r = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        				(A = b.engine.getGameAttribute("dummyMonsterTYPE")),
+                        				(r = null != e[A] ? r.getReserved(A) : r.h[A]),
+                        				(a[s] = null != e.MonsterHPTotal ? r.getReserved("MonsterHPTotal") : r.h.MonsterHPTotal)), "BigBadGiantMonster" == b.engine.getGameAttribute("DummyText3") && ((a = b.engine.getGameAttribute("MonsterHP")),
+                        				(s = 0 | b.engine.getGameAttribute("dummyMonsterID")),
+                        				(r = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        				(A = b.engine.getGameAttribute("dummyMonsterTYPE")),
+                        				(r = null != e[A] ? r.getReserved(A) : r.h[A]),
+                        				(r = null != e.MonsterHPTotal ? r.getReserved("MonsterHPTotal") : r.h.MonsterHPTotal),
+                        				(a[s] = 40 * parseNum(r))), "SuperBigBadGiantMonster" == b.engine.getGameAttribute("DummyText3") && ((a = b.engine.getGameAttribute("MonsterHP")),
+                        				(s = 0 | b.engine.getGameAttribute("dummyMonsterID")),
+                        				(r = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        				(A = b.engine.getGameAttribute("dummyMonsterTYPE")),
+                        				(r = null != e[A] ? r.getReserved(A) : r.h[A]),
+                        				(r = null != e.MonsterHPTotal ? r.getReserved("MonsterHPTotal") : r.h.MonsterHPTotal),
+                        				(a[s] = 100 * parseNum(r))), "WorshipMobboSpawn" == b.engine.getGameAttribute("DummyText3") ? ((t = b.engine.getGameAttribute("MonsterHP")),
+                        				(a = 0 | b.engine.getGameAttribute("dummyMonsterID")),
+                        				(s = b.engine.getGameAttribute("CustomLists")),
+                        				(s = null == (s = (null != e.WorshipBASEinfos ? s.getReserved("WorshipBASEinfos") : s.h.WorshipBASEinfos)[0 | w._customBlock_WorshipStuff("TrialType", b.engine.getGameAttribute("CurrentMap"))][0]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        				(r = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[24][0]),
+                        				(t[a] = Math.ceil(s * parseNum(r))), h.getLastCreatedActor().setValue("ActorEvents_1", "_MonsterHPtot", b.engine.getGameAttribute("MonsterHP")[0 | b.engine.getGameAttribute("dummyMonsterID")])) : -1 != w._customBlock_Dungon() && (2 == w._customBlock_Dungon() ? 8 != h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID") && ((a = b.engine.getGameAttribute("MonsterHP")),
+                        					(s = 0 | b.engine.getGameAttribute("dummyMonsterID")),
+                        					(r = null == (r = b.engine.getGameAttribute("NONdummies")[24]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        					(A = b.engine.getGameAttribute("NONdummies")[24]),
+                        					(A = Math.floor(
+                        						(parseNum(A) - 1) / 5)),
+                        					(o = b.engine.getGameAttribute("NONdummies")[24]),
+                        					(r = 1 + ((r - 1) / 6 + Math.pow(A * (parseNum(o) - 5), 1.35))),
+                        					(A = b.engine.getGameAttribute("CustomMaps")),
+                        					(A = null != e.DungMobs ? A.getReserved("DungMobs") : A.h.DungMobs),
+                        					(t = null == (t = (null != e[t] ? A.getReserved(t) : A.h[t])[0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        					(A = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[5]),
+                        					(a[s] = Math.ceil(r * t * parseNum(A)))) : ((a = b.engine.getGameAttribute("MonsterHP")),
+                        					(s = 0 | b.engine.getGameAttribute("dummyMonsterID")),
+                        					(r = b.engine.getGameAttribute("CustomMaps")),
+                        					(r = null != e.DungMobs ? r.getReserved("DungMobs") : r.h.DungMobs),
+                        					(t = null == (t = (null != e[t] ? r.getReserved(t) : r.h[t])[0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        					(r = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[5]),
+                        					(a[s] = Math.ceil(t * parseNum(r)))), h.getLastCreatedActor().setValue("ActorEvents_1", "_MonsterHPtot", b.engine.getGameAttribute("MonsterHP")[0 | b.engine.getGameAttribute("dummyMonsterID")]),
+                        				(b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[5] = 1)),
+                        			b.engine.getGameAttribute("MapMonstersList").push(h.getLastCreatedActor()),
+                        			(b.engine.getGameAttribute("MonsterAlive")[0 | b.engine.getGameAttribute("dummyMonsterID")] = 1),
+                        			(b.engine.getGameAttribute("MonsterWillDie")[0 | b.engine.getGameAttribute("dummyMonsterID")] = 0);
+                        	}

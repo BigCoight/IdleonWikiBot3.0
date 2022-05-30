@@ -1,0 +1,42 @@
+                        (H._customBlock_AddBuffType = function(n, s) {
+                        		if (Sb.contains(b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffIDsOn"), n))
+                        			(b.engine.getGameAttribute("BuffsActive")[b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffIDsOn").indexOf(n)][1] = s),
+                        			(b.engine.getGameAttribute("BuffsActive")[b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffIDsOn").indexOf(n)][2] = s);
+                        		else {
+                        			b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffIDsOn").push(n),
+                        				b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffImgInst").push(new rd(new gd(h.getSubImage(h.getExternalImage("UISkillIcon" + n + ".png"), (5 / b.SCALE) | 0, (5 / b.SCALE) | 0, (46 / b.SCALE) | 0, (46 / b.SCALE) | 0)))),
+                        				b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffImgInst")[b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffIDsOn").indexOf(n)].set_scaleY((100 * b.SCALE) / 100),
+                        				b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffImgInst")[b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffIDsOn").indexOf(n)].set_scaleX((100 * b.SCALE) / 100),
+                        				h.attachImageToHUD(b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffImgInst")[b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffIDsOn").indexOf(n)], 912, 2);
+                        			var a = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				r = [];
+                        			null != e.AddBuffDL ? a.setReserved("AddBuffDL", r) : (a.h.AddBuffDL = r),
+                        				(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(null != e.AddBuffDL ? a.getReserved("AddBuffDL") : a.h.AddBuffDL).push(t._customBlock_addImgInst("BuffBorder.png")),
+                        				(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(null != e.AddBuffDL ? a.getReserved("AddBuffDL") : a.h.AddBuffDL).push(t._customBlock_addImgInst("BuffFill.png")),
+                        				(a = b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_GeneralInfo")[3]),
+                        				(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				a.push(null != e.AddBuffDL ? r.getReserved("AddBuffDL") : r.h.AddBuffDL),
+                        				h.attachImageToHUD(b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_GeneralInfo")[3][
+                        					b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffIDsOn").indexOf(n)
+                        				][0], 912, 2),
+                        				h.attachImageToHUD(b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_GeneralInfo")[3][
+                        					b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffIDsOn").indexOf(n)
+                        				][1], 912, 2),
+                        				b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_GeneralInfo")[3]
+                        				[b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_BuffIDsOn").indexOf(n)][1].set_scaleY(0),
+                        				(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = []),
+                        				null != e.AddBuffDL ? a.setReserved("AddBuffDL", r) : (a.h.AddBuffDL = r),
+                        				(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(null != e.AddBuffDL ? a.getReserved("AddBuffDL") : a.h.AddBuffDL).push(n),
+                        				(n = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(null != e.AddBuffDL ? n.getReserved("AddBuffDL") : n.h.AddBuffDL).push(s),
+                        				(n = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(null != e.AddBuffDL ? n.getReserved("AddBuffDL") : n.h.AddBuffDL).push(s),
+                        				(s = b.engine.getGameAttribute("BuffsActive")),
+                        				(n = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				s.push(null != e.AddBuffDL ? n.getReserved("AddBuffDL") : n.h.AddBuffDL);
+                        		}
+                        	}

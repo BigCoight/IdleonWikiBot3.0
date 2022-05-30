@@ -1,0 +1,305 @@
+                        (t._customBlock_TotalTalentPoints = function(s) {
+                        		b.engine.getGameAttribute("SkillLevelsMAX")[10] = 100 + (t._customBlock_GetTalentNumber(1, 81) + t._customBlock_GetTalentNumber(2, 143));
+                        		var a = b.engine.getGameAttribute("SkillLevelsMAX")[11];
+                        		5 < parseNum(a) && (b.engine.getGameAttribute("SkillLevelsMAX")[11] = 100 + (t._customBlock_GetTalentNumber(1, 293) + t._customBlock_GetTalentNumber(2, 368)));
+                        		var r = b.engine.getGameAttribute("SkillLevelsMAX")[12];
+                        		5 < parseNum(r) && (b.engine.getGameAttribute("SkillLevelsMAX")[12] = 100 + (t._customBlock_GetTalentNumber(1, 488) + t._customBlock_GetTalentNumber(2, 533)));
+                        		var o = b.engine.getGameAttribute("Lv0")[0];
+                        		10 < parseNum(o) && (b.engine.getGameAttribute("SkillLevelsMAX")[75] = 100 + t._customBlock_GetTalentNumber(1, 38));
+                        		var i = b.engine.getGameAttribute("SkillLevelsMAX")[23];
+                        		5 < parseNum(i) && (b.engine.getGameAttribute("SkillLevelsMAX")[23] = 100 + t._customBlock_GetTalentNumber(2, 38));
+                        		var u = b.engine.getGameAttribute("SkillLevelsMAX")[87];
+                        		if (1 < parseNum(u)) {
+                        			var m = b.engine.getGameAttribute("SkillLevelsMAX"),
+                        				c = t._customBlock_GetTalentNumber(1, 114),
+                        				p = b.engine.getGameAttribute("CauldronInfo")[0][1],
+                        				h = 100 + Math.min(c, parseNum(p)),
+                        				f = b.engine.getGameAttribute("SkillLevelsMAX")[87];
+                        			m[87] = Math.max(h, parseNum(f));
+                        			var y = b.engine.getGameAttribute("SkillLevelsMAX"),
+                        				R = t._customBlock_GetTalentNumber(1, 129),
+                        				v = b.engine.getGameAttribute("CauldronInfo")[0][1],
+                        				F = 100 + Math.min(R, parseNum(v)),
+                        				N = b.engine.getGameAttribute("SkillLevelsMAX")[86];
+                        			y[86] = Math.max(F, parseNum(N));
+                        		}
+                        		var _ = b.engine.getGameAttribute("SkillLevelsMAX")[266];
+                        		if (1 < parseNum(_)) {
+                        			var I = b.engine.getGameAttribute("SkillLevelsMAX"),
+                        				D = t._customBlock_GetTalentNumber(1, 294),
+                        				E = b.engine.getGameAttribute("CauldronInfo")[1][1],
+                        				S = 100 + Math.min(D, parseNum(E)),
+                        				G = b.engine.getGameAttribute("SkillLevelsMAX")[266];
+                        			I[266] = Math.max(S, parseNum(G));
+                        			var T = b.engine.getGameAttribute("SkillLevelsMAX"),
+                        				U = t._customBlock_GetTalentNumber(1, 309),
+                        				M = b.engine.getGameAttribute("CauldronInfo")[1][1],
+                        				V = 100 + Math.min(U, parseNum(M)),
+                        				C = b.engine.getGameAttribute("SkillLevelsMAX")[267];
+                        			T[267] = Math.max(V, parseNum(C));
+                        		}
+                        		var B = b.engine.getGameAttribute("SkillLevelsMAX")[446];
+                        		if (1 < parseNum(B)) {
+                        			var P = b.engine.getGameAttribute("SkillLevelsMAX"),
+                        				O = t._customBlock_GetTalentNumber(1, 474),
+                        				x = b.engine.getGameAttribute("CauldronInfo")[2][1],
+                        				Q = 100 + Math.min(O, parseNum(x)),
+                        				X = b.engine.getGameAttribute("SkillLevelsMAX")[446];
+                        			P[446] = Math.max(Q, parseNum(X));
+                        			var L = b.engine.getGameAttribute("SkillLevelsMAX"),
+                        				z = t._customBlock_GetTalentNumber(1, 489),
+                        				Y = b.engine.getGameAttribute("CauldronInfo")[2][1],
+                        				W = 100 + Math.min(z, parseNum(Y)),
+                        				Z = b.engine.getGameAttribute("SkillLevelsMAX")[447];
+                        			L[447] = Math.max(W, parseNum(Z));
+                        		}
+                        		var J = b.engine.getGameAttribute("SkillLevelsMAX")[79];
+                        		if (1 < parseNum(J)) {
+                        			var j = b.engine.getGameAttribute("SkillLevelsMAX"),
+                        				q = t._customBlock_GetTalentNumber(1, 39),
+                        				K = b.engine.getGameAttribute("CauldronInfo")[3][0];
+                        			j[79] = Math.max(100 + Math.min(q, parseNum(K)), 100);
+                        		}
+                        		var $ = b.engine.getGameAttribute("SkillLevelsMAX")[625];
+                        		if (0 < (null == $ ? 0 : "number" == typeof $ ? d.__cast($, k) : "number" == typeof $ && (0 | $) === $ ? d.__cast($, l) : "boolean" == typeof $ ? d.__cast($, n) ? 1 : 0 : "string" == typeof $ ? parseFloat($) : parseFloat(g.string($)))) {
+                        			var ee = b.engine.getGameAttribute("SkillLevelsMAX"),
+                        				te = b.engine.getGameAttribute("CauldronInfo")[3][5];
+                        			ee[625] = Math.floor(parseNum(te) + A._customBlock_MealBonus("TPpete"));
+                        		}
+                        		var ne = b.engine.getGameAttribute("DNSM"),
+                        			se = [];
+                        		null != e.TalentDL ? ne.setReserved("TalentDL", se) : (ne.h.TalentDL = se);
+                        		var ae = b.engine.getGameAttribute("DNSM"),
+                        			re = [];
+                        		null != e.TalentDLbonus ? ae.setReserved("TalentDLbonus", re) : (ae.h.TalentDLbonus = re);
+                        		var Ae = b.engine.getGameAttribute("DNSM");
+                        		null != e.TalentDN4 ? Ae.setReserved("TalentDN4", -3) : (Ae.h.TalentDN4 = -3);
+                        		for (var le = 0; 9 > le;) {
+                        			var oe = le++,
+                        				ie = b.engine.getGameAttribute("DNSM"),
+                        				ue = b.engine.getGameAttribute("DNSM"),
+                        				ge = null != e.TalentDN4 ? ue.getReserved("TalentDN4") : ue.h.TalentDN4,
+                        				me = parseNum(ge),
+                        				de = b.engine.getGameAttribute("Lv0")[oe + 1],
+                        				ce = ie,
+                        				pe = me + parseNum(de);
+                        			null != e.TalentDN4 ? ce.setReserved("TalentDN4", pe) : (ce.h.TalentDN4 = pe);
+                        		}
+                        		var he = b.engine.getGameAttribute("DNSM"),
+                        			be = b.engine.getGameAttribute("DNSM"),
+                        			fe = null != e.TalentDN4 ? be.getReserved("TalentDN4") : be.h.TalentDN4,
+                        			ye = parseNum(fe) + Math.round(t._customBlock_GetTalentNumber(1, 275));
+                        		null != e.TalentDN4 ? he.setReserved("TalentDN4", ye) : (he.h.TalentDN4 = ye);
+                        		var Re = b.engine.getGameAttribute("DNSM"),
+                        			ve = null != e.TalentDL ? Re.getReserved("TalentDL") : Re.h.TalentDL,
+                        			Fe = b.engine.getGameAttribute("DNSM");
+                        		ve.push(null != e.TalentDN4 ? Fe.getReserved("TalentDN4") : Fe.h.TalentDN4);
+                        		var Ne = b.engine.getGameAttribute("DNSM");
+                        		null != e.TalentDN4 ? Ne.setReserved("TalentDN4", 0) : (Ne.h.TalentDN4 = 0);
+                        		for (var _e = 0; 9 > _e;) {
+                        			var Ie = _e++,
+                        				De = b.engine.getGameAttribute("DNSM"),
+                        				Ee = b.engine.getGameAttribute("DNSM"),
+                        				Se = null != e.TalentDN4 ? Ee.getReserved("TalentDN4") : Ee.h.TalentDN4,
+                        				Ge = parseNum(Se),
+                        				Te = b.engine.getGameAttribute("Lv0")[Ie + 1],
+                        				Ue = De,
+                        				Me = Ge + Math.floor(parseNum(Te) / 2);
+                        			null != e.TalentDN4 ? Ue.setReserved("TalentDN4", Me) : (Ue.h.TalentDN4 = Me);
+                        		}
+                        		var Ve = b.engine.getGameAttribute("DNSM"),
+                        			Ce = null != e.TalentDL ? Ve.getReserved("TalentDL") : Ve.h.TalentDL,
+                        			Be = b.engine.getGameAttribute("DNSM");
+                        		Ce.push(null != e.TalentDN4 ? Be.getReserved("TalentDN4") : Be.h.TalentDN4);
+                        		var Pe = b.engine.getGameAttribute("DNSM");
+                        		null != e.TalentDN4 ? Pe.setReserved("TalentDN4", 0) : (Pe.h.TalentDN4 = 0);
+                        		for (var Oe = 0; 9 > Oe;) {
+                        			var we = Oe++,
+                        				ke = b.engine.getGameAttribute("DNSM"),
+                        				xe = b.engine.getGameAttribute("DNSM"),
+                        				Qe = null != e.TalentDN4 ? xe.getReserved("TalentDN4") : xe.h.TalentDN4,
+                        				Xe = parseNum(Qe),
+                        				Le = b.engine.getGameAttribute("Lv0")[we + 1],
+                        				ze = ke,
+                        				Ye = Xe + Math.floor(parseNum(Le) / 5);
+                        			null != e.TalentDN4 ? ze.setReserved("TalentDN4", Ye) : (ze.h.TalentDN4 = Ye);
+                        		}
+                        		var We = b.engine.getGameAttribute("DNSM"),
+                        			Ze = null != e.TalentDL ? We.getReserved("TalentDL") : We.h.TalentDL,
+                        			He = b.engine.getGameAttribute("DNSM");
+                        		Ze.push(null != e.TalentDN4 ? He.getReserved("TalentDN4") : He.h.TalentDN4);
+                        		var Je = b.engine.getGameAttribute("DNSM"),
+                        			je = null != e.TalentDLbonus ? Je.getReserved("TalentDLbonus") : Je.h.TalentDLbonus,
+                        			qe = b.engine.getGameAttribute("CurrenciesOwned"),
+                        			Ke = (null != e.TalentPoints ? qe.getReserved("TalentPoints") : qe.h.TalentPoints)[0];
+                        		je.push(parseNum(Ke));
+                        		var $e = b.engine.getGameAttribute("DNSM"),
+                        			et = null != e.TalentDLbonus ? $e.getReserved("TalentDLbonus") : $e.h.TalentDLbonus,
+                        			tt = b.engine.getGameAttribute("CurrenciesOwned"),
+                        			nt = (null != e.TalentPoints ? tt.getReserved("TalentPoints") : tt.h.TalentPoints)[1];
+                        		et.push(parseNum(nt));
+                        		var st = b.engine.getGameAttribute("DNSM"),
+                        			at = null != e.TalentDLbonus ? st.getReserved("TalentDLbonus") : st.h.TalentDLbonus,
+                        			rt = b.engine.getGameAttribute("CurrenciesOwned"),
+                        			At = (null != e.TalentPoints ? rt.getReserved("TalentPoints") : rt.h.TalentPoints)[2];
+                        		at.push(parseNum(At));
+                        		var lt = b.engine.getGameAttribute("DNSM"),
+                        			ot = null != e.TalentDLbonus ? lt.getReserved("TalentDLbonus") : lt.h.TalentDLbonus,
+                        			it = b.engine.getGameAttribute("CurrenciesOwned"),
+                        			ut = (null != e.TalentPoints ? it.getReserved("TalentPoints") : it.h.TalentPoints)[3];
+                        		ot.push(parseNum(ut));
+                        		var gt = b.engine.getGameAttribute("DNSM"),
+                        			mt = null != e.TalentDLbonus ? gt.getReserved("TalentDLbonus") : gt.h.TalentDLbonus,
+                        			dt = b.engine.getGameAttribute("CurrenciesOwned"),
+                        			ct = (null != e.TalentPoints ? dt.getReserved("TalentPoints") : dt.h.TalentPoints)[4];
+                        		mt.push(parseNum(ct));
+                        		var pt = b.engine.getGameAttribute("DNSM"),
+                        			ht = null != e.TalentDLbonus ? pt.getReserved("TalentDLbonus") : pt.h.TalentDLbonus,
+                        			bt = b.engine.getGameAttribute("CurrenciesOwned"),
+                        			ft = (null != e.TalentPoints ? bt.getReserved("TalentPoints") : bt.h.TalentPoints)[5];
+                        		ht.push(parseNum(ft));
+                        		for (var yt = 0; 5 > yt;) {
+                        			var Rt = yt++;
+                        			if (7 > b.engine.getGameAttribute("CharacterClass")) {
+                        				var vt = b.engine.getGameAttribute("DNSM"),
+                        					Ft = null != e.TalentDLbonus ? vt.getReserved("TalentDLbonus") : vt.h.TalentDLbonus,
+                        					Nt = b.engine.getGameAttribute("DNSM"),
+                        					_t = (null != e.TalentDLbonus ? Nt.getReserved("TalentDLbonus") : Nt.h.TalentDLbonus)[Rt],
+                        					It = parseNum(_t),
+                        					Dt = b.engine.getGameAttribute("DNSM"),
+                        					Et = null != e.AlchBubbles ? Dt.getReserved("AlchBubbles") : Dt.h.AlchBubbles,
+                        					St = null != e.TalArchers ? Et.getReserved("TalArchers") : Et.h.TalArchers;
+                        				Ft[Rt] = It + parseNum(St);
+                        			} else if (19 > b.engine.getGameAttribute("CharacterClass")) {
+                        				var Gt = b.engine.getGameAttribute("DNSM"),
+                        					Tt = null != e.TalentDLbonus ? Gt.getReserved("TalentDLbonus") : Gt.h.TalentDLbonus,
+                        					Ut = b.engine.getGameAttribute("DNSM"),
+                        					Mt = (null != e.TalentDLbonus ? Ut.getReserved("TalentDLbonus") : Ut.h.TalentDLbonus)[Rt],
+                        					Vt = parseNum(Mt),
+                        					Ct = b.engine.getGameAttribute("DNSM"),
+                        					Bt = null != e.AlchBubbles ? Ct.getReserved("AlchBubbles") : Ct.h.AlchBubbles,
+                        					Pt = null != e.TalWarrior ? Bt.getReserved("TalWarrior") : Bt.h.TalWarrior;
+                        				Tt[Rt] = Vt + parseNum(Pt);
+                        			} else if (31 > b.engine.getGameAttribute("CharacterClass")) {
+                        				var Ot = b.engine.getGameAttribute("DNSM"),
+                        					wt = null != e.TalentDLbonus ? Ot.getReserved("TalentDLbonus") : Ot.h.TalentDLbonus,
+                        					kt = b.engine.getGameAttribute("DNSM"),
+                        					xt = (null != e.TalentDLbonus ? kt.getReserved("TalentDLbonus") : kt.h.TalentDLbonus)[Rt],
+                        					Qt = parseNum(xt),
+                        					Xt = b.engine.getGameAttribute("DNSM"),
+                        					Lt = null != e.AlchBubbles ? Xt.getReserved("AlchBubbles") : Xt.h.AlchBubbles,
+                        					zt = null != e.TalArchers ? Lt.getReserved("TalArchers") : Lt.h.TalArchers;
+                        				wt[Rt] = Qt + parseNum(zt);
+                        			} else {
+                        				var Yt = b.engine.getGameAttribute("DNSM"),
+                        					Wt = null != e.TalentDLbonus ? Yt.getReserved("TalentDLbonus") : Yt.h.TalentDLbonus,
+                        					Zt = b.engine.getGameAttribute("DNSM"),
+                        					Ht = (null != e.TalentDLbonus ? Zt.getReserved("TalentDLbonus") : Zt.h.TalentDLbonus)[Rt],
+                        					Jt = parseNum(Ht),
+                        					jt = b.engine.getGameAttribute("DNSM"),
+                        					qt = null != e.AlchBubbles ? jt.getReserved("AlchBubbles") : jt.h.AlchBubbles,
+                        					Kt = null != e.TalWiz ? qt.getReserved("TalWiz") : qt.h.TalWiz;
+                        				Wt[Rt] = Jt + parseNum(Kt);
+                        			}
+                        		}
+                        		var $t = b.engine.getGameAttribute("DNSM"),
+                        			en = [];
+                        		null != e.TalentDL2 ? $t.setReserved("TalentDL2", en) : ($t.h.TalentDL2 = en);
+                        		var tn = b.engine.getGameAttribute("DNSM"),
+                        			nn = null != e.TalentDL2 ? tn.getReserved("TalentDL2") : tn.h.TalentDL2,
+                        			sn = b.engine.getGameAttribute("Lv0")[0],
+                        			an = parseNum(sn),
+                        			rn = b.engine.getGameAttribute("DNSM"),
+                        			An = (null != e.TalentDL ? rn.getReserved("TalentDL") : rn.h.TalentDL)[0],
+                        			ln = parseNum(An),
+                        			on = b.engine.getGameAttribute("DNSM"),
+                        			un = (null != e.TalentDLbonus ? on.getReserved("TalentDLbonus") : on.h.TalentDLbonus)[0],
+                        			gn = parseNum(un),
+                        			mn = b.engine.getGameAttribute("DNSM"),
+                        			dn = null != e.AlchVials ? mn.getReserved("AlchVials") : mn.h.AlchVials,
+                        			cn = null != e.Tab1Pts ? dn.getReserved("Tab1Pts") : dn.h.Tab1Pts,
+                        			pn = parseNum(cn),
+                        			hn = b.engine.getGameAttribute("DNSM"),
+                        			bn = null != e.StarSigns ? hn.getReserved("StarSigns") : hn.h.StarSigns,
+                        			fn = null != e.TalPts1 ? bn.getReserved("TalPts1") : bn.h.TalPts1,
+                        			yn = 3 * (an - 1) + (ln + (gn + (pn + (parseNum(fn) + (t._customBlock_StampBonusOfTypeX("Talent1") + (5 * w._customBlock_AchieveStatus(54) + (w._customBlock_FlurboShop(1) + (w._customBlock_ArcadeBonus(16) + 6 * w._customBlock_AchieveStatus(216))))))))),
+                        			Rn = s[0];
+                        		nn.push(Math.floor(yn - parseNum(Rn)));
+                        		var vn = b.engine.getGameAttribute("DNSM"),
+                        			Fn = null != e.TalentDL2 ? vn.getReserved("TalentDL2") : vn.h.TalentDL2,
+                        			Nn = b.engine.getGameAttribute("Lv0")[0],
+                        			_n = parseNum(Nn),
+                        			In = b.engine.getGameAttribute("DNSM"),
+                        			Dn = (null != e.TalentDL ? In.getReserved("TalentDL") : In.h.TalentDL)[1],
+                        			En = parseNum(Dn),
+                        			Sn = b.engine.getGameAttribute("DNSM"),
+                        			Gn = (null != e.TalentDLbonus ? Sn.getReserved("TalentDLbonus") : Sn.h.TalentDLbonus)[1],
+                        			Tn = parseNum(Gn),
+                        			Un = b.engine.getGameAttribute("DNSM"),
+                        			Mn = null != e.AlchVials ? Un.getReserved("AlchVials") : Un.h.AlchVials,
+                        			Vn = null != e.Tab2Pts ? Mn.getReserved("Tab2Pts") : Mn.h.Tab2Pts,
+                        			Cn = 3 * (_n - 9) + (En + (Tn + parseNum(Vn) + (t._customBlock_GetTalentNumber(1, 119) + (t._customBlock_GetTalentNumber(1, 299) + (t._customBlock_GetTalentNumber(1, 494) + (t._customBlock_StampBonusOfTypeX("Talent2") + (t._customBlock_GetTalentNumber(1, 44) + (2 * w._customBlock_AchieveStatus(76) + 3 * w._customBlock_AchieveStatus(78) + (w._customBlock_FlurboShop(1) + 8 * w._customBlock_AchieveStatus(230)))))))))),
+                        			Bn = s[1];
+                        		Fn.push(Math.floor(Cn - parseNum(Bn)));
+                        		var Pn = b.engine.getGameAttribute("DNSM"),
+                        			On = null != e.TalentDL2 ? Pn.getReserved("TalentDL2") : Pn.h.TalentDL2,
+                        			wn = b.engine.getGameAttribute("Lv0")[0],
+                        			kn = parseNum(wn),
+                        			xn = b.engine.getGameAttribute("DNSM"),
+                        			Qn = (null != e.TalentDL ? xn.getReserved("TalentDL") : xn.h.TalentDL)[1],
+                        			Xn = parseNum(Qn),
+                        			Ln = b.engine.getGameAttribute("DNSM"),
+                        			zn = (null != e.TalentDLbonus ? Ln.getReserved("TalentDLbonus") : Ln.h.TalentDLbonus)[2],
+                        			Yn = parseNum(zn),
+                        			Wn = b.engine.getGameAttribute("DNSM"),
+                        			Zn = null != e.AlchVials ? Wn.getReserved("AlchVials") : Wn.h.AlchVials,
+                        			Hn = null != e.Tab3Pts ? Zn.getReserved("Tab3Pts") : Zn.h.Tab3Pts,
+                        			Jn = 3 * (kn - 29) + (Xn + (Yn + parseNum(Hn) + (t._customBlock_StampBonusOfTypeX("Talent3") + (5 * w._customBlock_AchieveStatus(166) + 10 * w._customBlock_AchieveStatus(170) + (w._customBlock_FlurboShop(1) + 8 * w._customBlock_AchieveStatus(219)))))),
+                        			jn = s[2];
+                        		On.push(Math.floor(Jn - parseNum(jn)));
+                        		var qn = b.engine.getGameAttribute("DNSM"),
+                        			Kn = null != e.TalentDL2 ? qn.getReserved("TalentDL2") : qn.h.TalentDL2,
+                        			$n = b.engine.getGameAttribute("Lv0")[0],
+                        			es = 3 * Math.min(
+                        				(null == $n ? 0 : "number" == typeof $n ? d.__cast($n, k) : "number" == typeof $n && (0 | $n) === $n ? d.__cast($n, l) : "boolean" == typeof $n ? d.__cast($n, n) ? 1 : 0 : "string" == typeof $n ? parseFloat($n) : parseFloat(g.string($n))) - 89, 100),
+                        			ts = b.engine.getGameAttribute("Lv0")[0],
+                        			ns = es + Math.max(0, 2 * (parseNum(ts) - 189)),
+                        			ss = b.engine.getGameAttribute("DNSM"),
+                        			as = (null != e.TalentDL ? ss.getReserved("TalentDL") : ss.h.TalentDL)[2],
+                        			rs = parseNum(as),
+                        			As = b.engine.getGameAttribute("DNSM"),
+                        			ls = (null != e.TalentDLbonus ? As.getReserved("TalentDLbonus") : As.h.TalentDLbonus)[3],
+                        			os = ns + (rs + (parseNum(ls) + (t._customBlock_StampBonusOfTypeX("Talent4") + w._customBlock_FlurboShop(1)))),
+                        			is = s[3];
+                        		Kn.push(Math.floor(Math.max(0, os - parseNum(is))));
+                        		var us = b.engine.getGameAttribute("DNSM"),
+                        			gs = null != e.TalentDL2 ? us.getReserved("TalentDL2") : us.h.TalentDL2,
+                        			ms = b.engine.getGameAttribute("Lv0")[0],
+                        			ds = parseNum(ms),
+                        			cs = b.engine.getGameAttribute("DNSM"),
+                        			ps = (null != e.TalentDL ? cs.getReserved("TalentDL") : cs.h.TalentDL)[2],
+                        			hs = parseNum(ps),
+                        			bs = b.engine.getGameAttribute("DNSM"),
+                        			fs = (null != e.TalentDLbonus ? bs.getReserved("TalentDLbonus") : bs.h.TalentDLbonus)[4],
+                        			ys = 3 * (ds - 149) + (hs + (parseNum(fs) + (t._customBlock_StampBonusOfTypeX("Talent5") + w._customBlock_FlurboShop(1)))),
+                        			Rs = s[4];
+                        		gs.push(Math.floor(Math.max(0, ys - parseNum(Rs))));
+                        		var vs = b.engine.getGameAttribute("DNSM"),
+                        			Fs = null != e.TalentDL2 ? vs.getReserved("TalentDL2") : vs.h.TalentDL2,
+                        			Ns = b.engine.getGameAttribute("Lv0")[0],
+                        			_s = parseNum(Ns),
+                        			Is = b.engine.getGameAttribute("DNSM"),
+                        			Ds = (null != e.TalentDL ? Is.getReserved("TalentDL") : Is.h.TalentDL)[0],
+                        			Es = parseNum(Ds) + t._customBlock_GetTalentNumber(1, 8),
+                        			Ss = b.engine.getGameAttribute("DNSM"),
+                        			Gs = (null != e.TalentDLbonus ? Ss.getReserved("TalentDLbonus") : Ss.h.TalentDLbonus)[5],
+                        			Ts = parseNum(Gs),
+                        			Us = b.engine.getGameAttribute("DNSM"),
+                        			Ms = null != e.FamBonusQTYs ? Us.getReserved("FamBonusQTYs") : Us.h.FamBonusQTYs,
+                        			Vs = null != e[64] ? Ms.getReserved("64") : Ms.h[64],
+                        			Cs = _s - 1 + (Es + (Ts + parseNum(Vs) + (t._customBlock_GetTalentNumber(1, 622) + (t._customBlock_StampBonusOfTypeX("TalentS") + (t._customBlock_GetTalentNumber(1, 17) + (Math.floor(w._customBlock_GuildBonuses(11)) + (w._customBlock_FlurboShop(1) + (Math.min(5 * H._customBlock_RunCodeOfTypeXforThingY("CardLv", "w4b2"), 50) + Math.min(15 * H._customBlock_RunCodeOfTypeXforThingY("CardLv", "Boss2C"), 100) + (w._customBlock_Labb("SigilBonus", "Blank", 9, 0) + 10 * w._customBlock_AchieveStatus(212)))))))))),
+                        			Bs = s[5];
+                        		Fs.push(Math.floor(Cs - parseNum(Bs)));
+                        		var Ps = b.engine.getGameAttribute("DNSM");
+                        		return null != e.TalentDL2 ? Ps.getReserved("TalentDL2") : Ps.h.TalentDL2;
+                        	}

@@ -1,0 +1,1711 @@
+                        (eh.MonsterDrops = function() {
+                        		var t = new p(),
+                        			n = [
+                        				["COIN", "0.5", "69", "N/A"],
+                        				["DungCredits1", "0.012", "1", "N/A"],
+                        				["DungCredits2", "0.0014", "1", "N/A"],
+                        			];
+                        		null != e.frogP ? t.setReserved("frogP", n) : (t.h.frogP = n);
+                        		var s = [
+                        			["COIN", "0.5", "69", "N/A"]
+                        		];
+                        		null != e.frogNest ? t.setReserved("frogNest", s) : (t.h.frogNest = s);
+                        		var a = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.014", "1", "N/A"],
+                        			["DungCredits2", "0.004", "1", "N/A"],
+                        		];
+                        		null != e.frogD ? t.setReserved("frogD", a) : (t.h.frogD = a);
+                        		var r = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.017", "1", "N/A"],
+                        			["DungCredits2", "0.006", "1", "N/A"],
+                        		];
+                        		null != e.frogY ? t.setReserved("frogY", r) : (t.h.frogY = r);
+                        		var A = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["DungCredits1", "0.02", "1", "N/A"],
+                        			["DungCredits2", "0.012", "1", "N/A"],
+                        		];
+                        		null != e.frogR ? t.setReserved("frogR", A) : (t.h.frogR = A);
+                        		var l = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["DungCredits1", "0.03", "1", "N/A"],
+                        			["DungCredits2", "0.020", "1", "N/A"],
+                        		];
+                        		null != e.frogW ? t.setReserved("frogW", l) : (t.h.frogW = l);
+                        		var o = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["DungCredits1", "0.04", "1", "N/A"],
+                        			["DungCredits2", "0.025", "1", "N/A"],
+                        		];
+                        		null != e.frogGG ? t.setReserved("frogGG", o) : (t.h.frogGG = o);
+                        		var i = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["DungCredits1", "0.80", "1", "N/A"],
+                        			["DungCredits2", "0.80", "1", "N/A"],
+                        		];
+                        		null != e.frogGR ? t.setReserved("frogGR", i) : (t.h.frogGR = i);
+                        		var u = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["DungCredits1", "0.80", "1", "N/A"],
+                        			["DungCredits2", "0.80", "1", "N/A"],
+                        		];
+                        		null != e.frogGR2 ? t.setReserved("frogGR2", u) : (t.h.frogGR2 = u);
+                        		var g = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["DungCredits1", "0.80", "1", "N/A"],
+                        			["DungCredits2", "0.80", "1", "N/A"],
+                        		];
+                        		null != e.frogGR3 ? t.setReserved("frogGR3", g) : (t.h.frogGR3 = g);
+                        		var m = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["DungCredits1", "0.80", "1", "N/A"],
+                        			["DungCredits2", "0.80", "1", "N/A"],
+                        		];
+                        		null != e.frogGR4 ? t.setReserved("frogGR4", m) : (t.h.frogGR4 = m);
+                        		var d = [
+                        			["COIN", "0.5", "69", "N/A"]
+                        		];
+                        		null != e.frogFiller1 ? t.setReserved("frogFiller1", d) : (t.h.frogFiller1 = d);
+                        		var c = [
+                        			["COIN", "0.5", "69", "N/A"]
+                        		];
+                        		null != e.frogFiller1b ? t.setReserved("frogFiller1b", c) : (t.h.frogFiller1b = c);
+                        		var h = [
+                        			["COIN", "0.5", "69", "N/A"]
+                        		];
+                        		null != e.frogFiller1d ? t.setReserved("frogFiller1d", h) : (t.h.frogFiller1d = h);
+                        		var b = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.016", "1", "N/A"],
+                        			["DungCredits2", "0.0025", "1", "N/A"],
+                        		];
+                        		null != e.rocky ? t.setReserved("rocky", b) : (t.h.rocky = b);
+                        		var f = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.022", "1", "N/A"],
+                        			["DungCredits2", "0.005", "1", "N/A"],
+                        		];
+                        		null != e.cactus ? t.setReserved("cactus", f) : (t.h.cactus = f);
+                        		var y = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.012", "1", "N/A"],
+                        			["DungCredits2", "0.0017", "1", "N/A"],
+                        		];
+                        		null != e.target ? t.setReserved("target", y) : (t.h.target = y);
+                        		var R = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.016", "1", "N/A"],
+                        			["DungCredits2", "0.0020", "1", "N/A"],
+                        		];
+                        		null != e.totem ? t.setReserved("totem", R) : (t.h.totem = R);
+                        		var v = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.018", "1", "N/A"],
+                        			["DungCredits2", "0.0025", "1", "N/A"],
+                        		];
+                        		null != e.steakR ? t.setReserved("steakR", v) : (t.h.steakR = v);
+                        		var F = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.030", "1", "N/A"],
+                        			["DungCredits2", "0.005", "1", "N/A"],
+                        		];
+                        		null != e.potatoB ? t.setReserved("potatoB", F) : (t.h.potatoB = F);
+                        		var N = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["DungCredits1", "0.8", "1", "N/A"],
+                        			["DungCredits2", "0.80", "1", "N/A"],
+                        		];
+                        		null != e.snakeZ ? t.setReserved("snakeZ", N) : (t.h.snakeZ = N);
+                        		var _ = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["DungCredits1", "0.8", "1", "N/A"],
+                        			["DungCredits2", "0.80", "1", "N/A"],
+                        		];
+                        		null != e.snakeZ2 ? t.setReserved("snakeZ2", _) : (t.h.snakeZ2 = _);
+                        		var I = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["DungCredits1", "0.8", "1", "N/A"],
+                        			["DungCredits2", "0.80", "1", "N/A"],
+                        		];
+                        		null != e.snakeZ3 ? t.setReserved("snakeZ3", I) : (t.h.snakeZ3 = I);
+                        		var D = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.2", "1", "N/A"],
+                        			["DungCredits2", "0.08", "1", "N/A"],
+                        		];
+                        		null != e.iceknight ? t.setReserved("iceknight", D) : (t.h.iceknight = D);
+                        		var E = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.8", "1", "N/A"],
+                        			["DungCredits1", "0.8", "1", "N/A"],
+                        			["DungCredits2", "0.80", "1", "N/A"],
+                        		];
+                        		null != e.iceBossZ ? t.setReserved("iceBossZ", E) : (t.h.iceBossZ = E);
+                        		var S = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.8", "1", "N/A"],
+                        			["DungCredits1", "0.8", "1", "N/A"],
+                        			["DungCredits2", "0.80", "1", "N/A"],
+                        		];
+                        		null != e.iceBossZ2 ? t.setReserved("iceBossZ2", S) : (t.h.iceBossZ2 = S);
+                        		var G = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["DungCredits1", "0.8", "1", "N/A"],
+                        			["DungCredits1", "0.8", "1", "N/A"],
+                        			["DungCredits2", "0.80", "1", "N/A"],
+                        		];
+                        		null != e.iceBossZ3 ? t.setReserved("iceBossZ3", G) : (t.h.iceBossZ3 = G);
+                        		var T = [
+                        			["COIN", "0.5", "69", "N/A"]
+                        		];
+                        		null != e.frogFiller3de ? t.setReserved("frogFiller3de", T) : (t.h.frogFiller3de = T);
+                        		var U = [
+                        			["COIN", "0.5", "69", "N/A"]
+                        		];
+                        		null != e.frogFiller3fd ? t.setReserved("frogFiller3fd", U) : (t.h.frogFiller3fd = U);
+                        		var M = [
+                        			["COIN", "0.5", "69", "N/A"]
+                        		];
+                        		null != e.frogFiller3drt ? t.setReserved("frogFiller3drt", M) : (t.h.frogFiller3drt = M);
+                        		var V = [
+                        			["COIN", "0.5", "69", "N/A"]
+                        		];
+                        		null != e.frogFiller3ed ? t.setReserved("frogFiller3ed", V) : (t.h.frogFiller3ed = V);
+                        		var C = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CopperBar", "0.5", "69", "N/A"],
+                        			["IronBar", "0.5", "69", "N/A"],
+                        			["GoldBar", "0.5", "69", "N/A"],
+                        		];
+                        		null != e.ForgeA ? t.setReserved("ForgeA", C) : (t.h.ForgeA = C);
+                        		var B = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["PlatBar", "0.5", "69", "N/A"],
+                        			["DementiaBar", "0.5", "69", "N/A"],
+                        			["VoidBar", "0.5", "69", "N/A"],
+                        		];
+                        		null != e.ForgeB ? t.setReserved("ForgeB", B) : (t.h.ForgeB = B);
+                        		var P = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["Quest19", "0.5", "69", "N/A"],
+                        			["Quest19", "0.2", "69", "N/A"],
+                        			["Quest19", "1", "69", "N/A"],
+                        			["Quest19", "0.1", "69", "N/A"],
+                        			["Quest19", "0.01", "69", "N/A"],
+                        			["Quest19", "0.07", "69", "N/A"],
+                        		];
+                        		null != e.Bandit_Bob ? t.setReserved("Bandit_Bob", P) : (t.h.Bandit_Bob = P);
+                        		var O = [
+                        			["COIN", "0.5", "50", "N/A"]
+                        		];
+                        		null != e.mushPtutorial ? t.setReserved("mushPtutorial", O) : (t.h.mushPtutorial = O);
+                        		var w = [
+                        			["COIN", "0.4", "250", "N/A"]
+                        		];
+                        		null != e.demonPtutorial ? t.setReserved("demonPtutorial", w) : (t.h.demonPtutorial = w);
+                        		var k = [
+                        			["COIN", "1", "1", "N/A"]
+                        		];
+                        		null != e.behemoth ? t.setReserved("behemoth", k) : (t.h.behemoth = k);
+                        		var x = [
+                        			["COIN", "0", "0", "N/A"]
+                        		];
+                        		null != e.AlienTreetutorial ? t.setReserved("AlienTreetutorial", x) : (t.h.AlienTreetutorial = x);
+                        		var Q = [
+                        			["COIN", "0", "0", "N/A"]
+                        		];
+                        		null != e.Starlight ? t.setReserved("Starlight", Q) : (t.h.Starlight = Q);
+                        		var X = [
+                        			["COIN", "0.5", "1", "N/A"],
+                        			["CardsA14", "0.01", "1", "N/A"],
+                        			["StampC3", ".1", "1", "Papua_Piggea2"],
+                        			["TalentBook1", ".005", "3618100", "N/A"],
+                        			["DropTable1", ".6", "1", "N/A"],
+                        			["DropTable2", ".5", "1", "N/A"],
+                        			["DropTable3", ".4", "1", "N/A"],
+                        			["DropTable4", ".6", "1", "N/A"],
+                        			["DropTable5", ".5", "1", "N/A"],
+                        			["DropTable5b", "1", "2", "N/A"],
+                        		];
+                        		null != e.Crystal0 ? t.setReserved("Crystal0", X) : (t.h.Crystal0 = X);
+                        		var L = [
+                        			["COIN", "0.5", "1", "N/A"],
+                        			["CardsB13", "0.008", "1", "N/A"],
+                        			["StampC3", ".1", "1", "Papua_Piggea2"],
+                        			["TalentBook1", ".005", "3618100", "N/A"],
+                        			["DropTable6", ".6", "1", "N/A"],
+                        			["DropTable7", ".5", "1", "N/A"],
+                        			["DropTable8", ".4", "1", "N/A"],
+                        			["DropTable9", ".6", "1", "N/A"],
+                        			["DropTable12", ".5", "1", "N/A"],
+                        			["DropTable5b", "1", "3", "N/A"],
+                        		];
+                        		null != e.Crystal1 ? t.setReserved("Crystal1", L) : (t.h.Crystal1 = L);
+                        		var z = [
+                        			["COIN", "0.5", "1", "N/A"],
+                        			["CardsE15", "0.008", "1", "N/A"],
+                        			["StampC3", ".1", "1", "Papua_Piggea2"],
+                        			["TalentBook1", ".005", "3618100", "N/A"],
+                        			["DropTable14", ".6", "1", "N/A"],
+                        			["DropTable15", ".5", "1", "N/A"],
+                        			["DropTable16", ".4", "1", "N/A"],
+                        			["DropTable17", ".6", "1", "N/A"],
+                        			["DropTable18", ".5", "1", "N/A"],
+                        			["DropTable5b", "1", "3", "N/A"],
+                        		];
+                        		null != e.Crystal2 ? t.setReserved("Crystal2", z) : (t.h.Crystal2 = z);
+                        		var Y = [
+                        			["COIN", "0.5", "1", "N/A"],
+                        			["CardsG14", "0.008", "1", "N/A"],
+                        			["StampC3", ".1", "1", "Papua_Piggea2"],
+                        			["TalentBook1", ".005", "3618100", "N/A"],
+                        			["DropTable19", ".6", "1", "N/A"],
+                        			["DropTable20", ".5", "1", "N/A"],
+                        			["DropTable21", ".4", "1", "N/A"],
+                        		];
+                        		null != e.Crystal3 ? t.setReserved("Crystal3", Y) : (t.h.Crystal3 = Y);
+                        		var W = [
+                        			["COIN", "0.5", "1", "N/A"],
+                        			["Grasslands1", "0.22", "1", "N/A"],
+                        			["CardsA0", "0.0001", "1", "N/A"],
+                        			["FoodHealth1", "0.005", "3", "N/A"],
+                        			["EquipmentShirts16", "0.00035", "1", "N/A"],
+                        			["StoneW2", "0.00005", "1", "N/A"],
+                        			["Cutter", "0.00001", "1", "N/A"],
+                        			["DropTable1", "0.003", "1", "N/A"],
+                        		];
+                        		null != e.mushG ? t.setReserved("mushG", W) : (t.h.mushG = W);
+                        		var Z = [
+                        			["COIN", "0.5", "6", "N/A"],
+                        			["Grasslands4", "0.20", "1", "N/A"],
+                        			["CardsA1", "0.0001", "1", "N/A"],
+                        			["DropTable1", ".0052", "1", "N/A"],
+                        		];
+                        		null != e.mushR ? t.setReserved("mushR", Z) : (t.h.mushR = Z);
+                        		var H = [
+                        			["COIN", "0.5", "40", "N/A"],
+                        			["Quest15", "0.00001", "1", "N/A"],
+                        			["TreeInterior1b", "0.000075", "1", "N/A"],
+                        			["CardsA16", "0.0001", "1", "N/A"],
+                        			["DropTable3c", ".007", "1", "N/A"],
+                        			["DropTable5b", ".002", "1", "N/A"],
+                        		];
+                        		null != e.mushW ? t.setReserved("mushW", H) : (t.h.mushW = H);
+                        		var J = [
+                        			["COIN", "0.48", "3", "N/A"],
+                        			["Grasslands2", "0.21", "1", "N/A"],
+                        			["CardsA2", "0.0001", "1", "N/A"],
+                        			["Quest3", "0.15", "1", "Picnic_Stowaway2"],
+                        			["Quest4", "0.15", "1", "Picnic_Stowaway2"],
+                        			["FoodPotMana1", "0.002", "1", "N/A"],
+                        			["EquipmentHats6", "0.00025", "1", "N/A"],
+                        			["InvStorageF", "0.0001", "1", "N/A"],
+                        			["DropTable1", "0.0038", "1", "N/A"],
+                        		];
+                        		null != e.frogG ? t.setReserved("frogG", J) : (t.h.frogG = J);
+                        		var j = [
+                        			["COIN", "0.46", "5", "N/A"],
+                        			["Grasslands3", "0.20", "1", "N/A"],
+                        			["CardsA3", "0.000097", "1", "N/A"],
+                        			["StoneA2", "0.00005", "1", "N/A"],
+                        			["EquipmentHats25", "0.000035", "1", "N/A"],
+                        			["DropTable1", "0.0045", "1", "N/A"],
+                        		];
+                        		null != e.beanG ? t.setReserved("beanG", j) : (t.h.beanG = j);
+                        		var q = [
+                        			["COIN", "0.44", "8", "N/A"],
+                        			["Jungle1", "0.19", "1", "N/A"],
+                        			["CardsA4", "0.000095", "1", "N/A"],
+                        			["SmithingRecipes1", "0.00003", "43", "N/A"],
+                        			["OilBarrel2", "0.0003", "10", "N/A"],
+                        			["SmithingRecipes1", "0.00002", "47", "N/A"],
+                        			["DropTable2", "0.004", "1", "N/A"],
+                        		];
+                        		null != e.slimeG ? t.setReserved("slimeG", q) : (t.h.slimeG = q);
+                        		var K = [
+                        			["COIN", "0.43", "11", "N/A"],
+                        			["Jungle2", "0.18", "1", "N/A"],
+                        			["CardsA5", "0.000094", "1", "N/A"],
+                        			["FoodHealth2", "0.005", "3", "N/A"],
+                        			["Quest7", "0.2", "1", "Stiltzcho2"],
+                        			["StampA7", "0.00005", "1", "N/A"],
+                        			["InvBag100", "0.00008", "1", "N/A"],
+                        			["DropTable2", "0.005", "1", "N/A"],
+                        		];
+                        		null != e.snakeG ? t.setReserved("snakeG", K) : (t.h.snakeG = K);
+                        		var $ = [
+                        			["COIN", "0.41", "15", "N/A"],
+                        			["Jungle3", "0.17", "1", "N/A"],
+                        			["CardsA6", "0.000090", "1", "N/A"],
+                        			["FoodHealth2", "0.006", "4", "N/A"],
+                        			["EquipmentBows4", "0.00004", "1", "N/A"],
+                        			["DropTable2", "0.006", "1", "N/A"],
+                        		];
+                        		null != e.carrotO ? t.setReserved("carrotO", $) : (t.h.carrotO = $);
+                        		var ee = [
+                        			["COIN", "0.39", "19", "N/A"],
+                        			["Forest1", "0.16", "1", "N/A"],
+                        			["CardsA7", "0.000086", "1", "N/A"],
+                        			["StoneHelm1", "0.00015", "1", "N/A"],
+                        			["SmithingRecipes1", "0.00003", "44", "N/A"],
+                        			["DropTable3", "0.004", "1", "N/A"],
+                        		];
+                        		null != e.goblinG ? t.setReserved("goblinG", ee) : (t.h.goblinG = ee);
+                        		var te = [
+                        			["COIN", "0.37", "23", "N/A"],
+                        			["Forest2", "0.15", "1", "N/A"],
+                        			["CardsA8", "0.000080", "1", "N/A"],
+                        			["SmithingRecipes1", "0.00003", "48", "N/A"],
+                        			["Quest12", ".1", "1", "Dog_Bone1"],
+                        			["EquipmentShirts19", "0.00001", "1", "N/A"],
+                        			["DropTable3", "0.0045", "1", "N/A"],
+                        		];
+                        		null != e.plank ? t.setReserved("plank", te) : (t.h.plank = te);
+                        		var ne = [
+                        			["COIN", "0.35", "28", "N/A"],
+                        			["Forest3", "0.14", "1", "N/A"],
+                        			["CardsA9", "0.000070", "1", "N/A"],
+                        			["StampA10", "0.00003", "1", "N/A"],
+                        			["FoodPotRe2", "0.001", "5", "N/A"],
+                        			["StampA8", "0.0003", "1", "Papua_Piggea1"],
+                        			["ObolBronzePop", "0.00001", "1", "N/A"],
+                        			["DropTable3", "0.005", "1", "N/A"],
+                        		];
+                        		null != e.frogBIG ? t.setReserved("frogBIG", ne) : (t.h.frogBIG = ne);
+                        		var se = [
+                        			["COIN", ".3", "90", "N/A"],
+                        			["TreeInterior1", "0.21", "1", "N/A"],
+                        			["CardsA12", "0.000060", "1", "N/A"],
+                        			["TreeInterior1b", "0.00005", "1", "N/A"],
+                        			["SmithingRecipes1", "0.0002", "68", "N/A"],
+                        			["DropTable3c", "0.0057", "1", "N/A"],
+                        		];
+                        		null != e.branch ? t.setReserved("branch", se) : (t.h.branch = se);
+                        		var ae = [
+                        			["COIN", ".3", "110", "N/A"],
+                        			["TreeInterior2", "0.23", "1", "N/A"],
+                        			["CardsA13", "0.000050", "1", "N/A"],
+                        			["DropTable3c", "0.0065", "1", "N/A"],
+                        		];
+                        		null != e.acorn ? t.setReserved("acorn", ae) : (t.h.acorn = ae);
+                        		var re = [
+                        			["COIN", ".3", "80", "N/A"],
+                        			["Sewers1", "0.24", "1", "N/A"],
+                        			["CardsA10", "0.000060", "1", "N/A"],
+                        			["Sewers1b", "0.00005", "1", "N/A"],
+                        			["SmithingRecipes1", "0.0001", "69", "N/A"],
+                        			["Quest22", "0.23", "1", "Mutton2"],
+                        			["Quest22", "0.23", "1", "Mutton3"],
+                        			["Quest22", "0.23", "1", "Mutton4"],
+                        			["DropTable3b", "0.006", "1", "N/A"],
+                        		];
+                        		null != e.poopSmall ? t.setReserved("poopSmall", re) : (t.h.poopSmall = re);
+                        		var Ae = [
+                        			["COIN", ".3", "105", "N/A"],
+                        			["Sewers2", "0.19", "1", "N/A"],
+                        			["CardsA11", "0.000050", "1", "N/A"],
+                        			["Quest14", ".1", "1", "TP_Pete2"],
+                        			["Quest23", "0.16", "1", "Mutton3"],
+                        			["Quest23", "0.16", "1", "Mutton4"],
+                        			["DropTable3b", "0.006", "1", "N/A"],
+                        		];
+                        		null != e.ratB ? t.setReserved("ratB", Ae) : (t.h.ratB = Ae);
+                        		var le = [
+                        			["COIN", ".99", "1", "N/A"],
+                        			["Sewers3", "0.5", "1", "N/A"],
+                        			["CardsA15", "0.0015", "1", "N/A"],
+                        		];
+                        		null != e.poopD ? t.setReserved("poopD", le) : (t.h.poopD = le);
+                        		var oe = [
+                        			["COIN", "1", "800", "N/A"],
+                        			["CardsZ0", "0.03", "1", "N/A"],
+                        			["BabaYagaETC", "0.006", "1", "N/A"],
+                        			["SmithingRecipes1", "0.06", "63", "N/A"],
+                        			["Quest41", "1", "1", "N/A"],
+                        			["DropTable1", "1", "2", "N/A"],
+                        			["DropTable2", "1", "1", "N/A"],
+                        			["DropTable3", "1", ".5", "N/A"],
+                        		];
+                        		null != e.babayaga ? t.setReserved("babayaga", oe) : (t.h.babayaga = oe);
+                        		var ie = [
+                        			["COIN", "0", "1", "N/A"],
+                        			["CardsZ1", "0.03", "1", "N/A"],
+                        			["JobApplication", "1", "1", "N/A"],
+                        			["SmithingRecipes2", "0.06", "24", "N/A"],
+                        			["Sewers1", "1", "150", "N/A"],
+                        			["EquipmentToolsHatchet2b", "0.02", "1", "N/A"],
+                        			["EquipmentTools10", "0.01", "1", "N/A"],
+                        			["Sewers1b", "0.1", "1", "N/A"],
+                        			["DropTable3", "1", "2", "N/A"],
+                        		];
+                        		null != e.poopBig ? t.setReserved("poopBig", ie) : (t.h.poopBig = ie);
+                        		var ue = [
+                        			["COIN", "1", "500", "N/A"],
+                        			["Meatloaf", "0.05", "1", "N/A"],
+                        			["CardsZ2", "0.045", "1", "N/A"],
+                        			["EquipmentHats39", "0.001", "1", "N/A"],
+                        			["StoneZ1", "0.03", "1", "N/A"],
+                        			["Quest17", "0.3", "1", "N/A"],
+                        			["DropTable1", "1", "2", "N/A"],
+                        			["DropTable2", "1", "2", "N/A"],
+                        			["DropTable3", "1", "2", "N/A"],
+                        		];
+                        		null != e.GrasslandsBoss ? t.setReserved("GrasslandsBoss", ue) : (t.h.GrasslandsBoss = ue);
+                        		var ge = [
+                        			["COIN", "1", "500", "N/A"],
+                        			["Meatloaf", "0.05", "1", "N/A"],
+                        			["CardsZ2", "0.04", "1", "N/A"],
+                        			["EquipmentHats39", "0.001", "1", "N/A"],
+                        			["ObolAmarokA", "0.0007", "1", "N/A"],
+                        			["Quest17", "0.3", "1", "N/A"],
+                        			["DropTable1", "1", "2", "N/A"],
+                        			["DropTable2", "1", "2", "N/A"],
+                        			["DropTable3", "1", "2", "N/A"],
+                        		];
+                        		null != e.wolfA ? t.setReserved("wolfA", ge) : (t.h.wolfA = ge);
+                        		var me = [
+                        			["COIN", "1", "500", "N/A"],
+                        			["Meatloaf", "0.10", "3", "N/A"],
+                        			["CardsZ4", "0.02", "1", "N/A"],
+                        			["EquipmentHats39", "0.004", "1", "N/A"],
+                        			["ObolAmarokA", "0.0033", "1", "N/A"],
+                        			["Quest17", "0.4", "3", "N/A"],
+                        			["Quest29", "0.2", "1", "N/A"],
+                        			["DropTable1", "1", "4", "N/A"],
+                        			["DropTable2", "1", "4", "N/A"],
+                        			["DropTable3", "1", "4", "N/A"],
+                        		];
+                        		null != e.wolfB ? t.setReserved("wolfB", me) : (t.h.wolfB = me);
+                        		var de = [
+                        			["COIN", "1", "500", "N/A"],
+                        			["Meatloaf", "0.05", "10", "N/A"],
+                        			["CardsZ14", "0.02", "1", "N/A"],
+                        			["EquipmentHats39", "0.012", "1", "N/A"],
+                        			["ObolAmarokA", "0.0085", "1", "N/A"],
+                        			["EquipmentCape3", "0.001", "1", "N/A"],
+                        			["StoneZ1", "0.25", "1", "N/A"],
+                        			["Quest17", "0.5", "6", "N/A"],
+                        			["Quest29", "0.5", "2", "N/A"],
+                        			["DropTable3", "1", "2", "N/A"],
+                        		];
+                        		null != e.wolfC ? t.setReserved("wolfC", de) : (t.h.wolfC = de);
+                        		var ce = [
+                        			["COIN", "0", "1", "N/A"]
+                        		];
+                        		null != e.BossPart ? t.setReserved("BossPart", ce) : (t.h.BossPart = ce);
+                        		var pe = [
+                        			["COIN", "0", "1", "N/A"]
+                        		];
+                        		null != e.rockG ? t.setReserved("rockG", pe) : (t.h.rockG = pe);
+                        		var he = [
+                        			["COIN", "0", "1", "N/A"]
+                        		];
+                        		null != e.rockB ? t.setReserved("rockB", he) : (t.h.rockB = he);
+                        		var be = [
+                        			["COIN", "0", "1", "N/A"]
+                        		];
+                        		null != e.rockS ? t.setReserved("rockS", be) : (t.h.rockS = be);
+                        		var fe = [
+                        			["COIN", "0", "1", "N/A"]
+                        		];
+                        		null != e.Iceball ? t.setReserved("Iceball", fe) : (t.h.Iceball = fe);
+                        		var ye = [
+                        			["COIN", "0.5", "40", "N/A"],
+                        			["DesertA1", "0.22", "1", "N/A"],
+                        			["CardsB1", "0.0001", "1", "N/A"],
+                        			["EquipmentHats9", ".0001", "1", "N/A"],
+                        			["DesertA1b", "0.00005", "1", "N/A"],
+                        			["DropTable6", "0.003", "1", "N/A"],
+                        		];
+                        		null != e.jarSand ? t.setReserved("jarSand", ye) : (t.h.jarSand = ye);
+                        		var Re = [
+                        			["COIN", "0.47", "47", "N/A"],
+                        			["DesertA2", "0.212", "1", "N/A"],
+                        			["GoldricP1", "0.1", "1", "Goldric3"],
+                        			["CardsB2", "0.0001", "1", "N/A"],
+                        			["InvBag101", "0.000025", "1", "N/A"],
+                        			["SmithingRecipes2", "0.000005", "16", "N/A"],
+                        			["DropTable6", "0.0032", "1", "N/A"],
+                        		];
+                        		null != e.mimicA ? t.setReserved("mimicA", Re) : (t.h.mimicA = Re);
+                        		var ve = [
+                        			["COIN", "0.45", "55", "N/A"],
+                        			["DesertA3", "0.205", "1", "N/A"],
+                        			["CardsB3", "0.0001", "1", "N/A"],
+                        			["DesertA3b", "0.00005", "1", "N/A"],
+                        			["SmithingRecipes2", "0.000025", "41", "N/A"],
+                        			["DropTable6", "0.0036", "1", "N/A"],
+                        		];
+                        		null != e.crabcake ? t.setReserved("crabcake", ve) : (t.h.crabcake = ve);
+                        		var Fe = [
+                        			["COIN", "0.43", "60", "N/A"],
+                        			["CardsB12", "0.04", "1", "N/A"],
+                        			["DropTable7", "0.0032", "1", "N/A"],
+                        		];
+                        		null != e.shovelR ? t.setReserved("shovelR", Fe) : (t.h.shovelR = Fe);
+                        		var Ne = [
+                        			["COIN", "0.43", "67", "N/A"],
+                        			["DesertB1", "0.2", "1", "N/A"],
+                        			["GoldricP2", "0.075", "1", "Goldric3"],
+                        			["CardsB4", "0.0001", "1", "N/A"],
+                        			["SmithingRecipes2", "0.000002", "17", "N/A"],
+                        			["DropTable7", "0.0032", "1", "N/A"],
+                        		];
+                        		null != e.coconut ? t.setReserved("coconut", Ne) : (t.h.coconut = Ne);
+                        		var _e = [
+                        			["COIN", "0.4", "80", "N/A"],
+                        			["DesertB2", "0.19", "1", "N/A"],
+                        			["GoldricP3", "0.05", "1", "Goldric3"],
+                        			["CardsB5", "0.0001", "1", "N/A"],
+                        			["DropTable7", "0.0035", "1", "N/A"],
+                        		];
+                        		null != e.sandcastle ? t.setReserved("sandcastle", _e) : (t.h.sandcastle = _e);
+                        		var Ie = [
+                        			["COIN", "0.38", "90", "N/A"],
+                        			["DesertB3", "0.18", "1", "N/A"],
+                        			["CardsB6", "0.0001", "1", "N/A"],
+                        			["DropTable7", "0.0037", "1", "N/A"],
+                        		];
+                        		null != e.pincermin ? t.setReserved("pincermin", Ie) : (t.h.pincermin = Ie);
+                        		var De = [
+                        			["COIN", "0.37", "100", "N/A"],
+                        			["DesertB4", "0.17", "1", "N/A"],
+                        			["CardsB7", "0.0001", "1", "N/A"],
+                        			["DropTable7", "0.0039", "1", "N/A"],
+                        		];
+                        		null != e.potato ? t.setReserved("potato", De) : (t.h.potato = De);
+                        		var Ee = [
+                        			["COIN", "0.36", "112", "N/A"],
+                        			["DesertC1", "0.18", "1", "N/A"],
+                        			["CardsB8", "0.0001", "1", "N/A"],
+                        			["DropTable8", "0.0032", "1", "N/A"],
+                        		];
+                        		null != e.steak ? t.setReserved("steak", Ee) : (t.h.steak = Ee);
+                        		var Se = [
+                        			["COIN", "0.35", "125", "N/A"],
+                        			["DesertC2", "0.165", "1", "N/A"],
+                        			["DesertC2b", "0.00005", "1", "N/A"],
+                        			["CardsB9", "0.0001", "1", "N/A"],
+                        			["Quest18", "0.0001", "1", "Loominadi1"],
+                        			["DropTable8", "0.0035", "1", "N/A"],
+                        		];
+                        		null != e.moonman ? t.setReserved("moonman", Se) : (t.h.moonman = Se);
+                        		var Ge = [
+                        			["COIN", "0.34", "140", "N/A"],
+                        			["DesertC3", "0.152", "1", "N/A"],
+                        			["CardsB10", "0.0001", "1", "N/A"],
+                        			["SmithingRecipes2", "0.000017", "58", "N/A"],
+                        			["DropTable8", "0.0037", "1", "N/A"],
+                        		];
+                        		null != e.sandgiant ? t.setReserved("sandgiant", Ge) : (t.h.sandgiant = Ge);
+                        		var Te = [
+                        			["COIN", "0.35", "160", "N/A"],
+                        			["DesertC4", "0.14", "1", "N/A"],
+                        			["CardsB11", "0.0001", "1", "N/A"],
+                        			["EquipmentPendant14", "0.000002", "1", "N/A"],
+                        			["DropTable8", "0.0039", "1", "N/A"],
+                        		];
+                        		null != e.snailZ ? t.setReserved("snailZ", Te) : (t.h.snailZ = Te);
+                        		var Ue = [
+                        			["COIN", "1", "7000", "N/A"],
+                        			["Hgg", "0.3", "1", "N/A"],
+                        			["StoneZ1", "0.4", "2", "N/A"],
+                        			["SmithingRecipes2", "0.06", "66", "N/A"],
+                        			["StoneA3b", "0.008", "1", "N/A"],
+                        			["CardsZ5", "0.024", "1", "N/A"],
+                        			["SmithingRecipes2", "0.06", "75", "N/A"],
+                        			["DropTable6", "0.5", "1", "N/A"],
+                        			["DropTable13", "0.4", "1", "N/A"],
+                        		];
+                        		null != e.babaHour ? t.setReserved("babaHour", Ue) : (t.h.babaHour = Ue);
+                        		var Me = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["CardsZ6", "0.04", "1", "N/A"],
+                        			["Key2", "0.8", "1", "N/A"],
+                        			["SmithingRecipes2", "0.06", "65", "N/A"],
+                        			["PremiumGem", "0.75", "5", "N/A"],
+                        			["StoneZ1", "1", "1", "N/A"],
+                        			["StoneA3b", "0.04", "1", "N/A"],
+                        			["EquipmentPants19", "0.04", "1", "N/A"],
+                        			["MidnightCookie", ".2", "2", "N/A"],
+                        			["DropTable13", "0.5", "1", "N/A"],
+                        		];
+                        		null != e.babaMummy ? t.setReserved("babaMummy", Me) : (t.h.babaMummy = Me);
+                        		var Ve = [
+                        			["COIN", "1", "4000", "N/A"],
+                        			["CardsZ3", "0.025", "1", "N/A"],
+                        			["MidnightCookie", "0.07", "1", "N/A"],
+                        			["ObolEfauntA", "0.001", "1", "N/A"],
+                        			["EquipmentHats2", "0.000667", "1", "N/A"],
+                        			["SmithingRecipes2", "0.04", "75", "N/A"],
+                        			["EfauntDrop1", "0.3", "1", "N/A"],
+                        			["DropTable6", "1", "2", "N/A"],
+                        			["DropTable7", "1", "2", "N/A"],
+                        			["DropTable8", "1", "2", "N/A"],
+                        		];
+                        		null != e.Boss2A ? t.setReserved("Boss2A", Ve) : (t.h.Boss2A = Ve);
+                        		var Ce = [
+                        			["COIN", "1", "4000", "N/A"],
+                        			["CardsZ7", "0.016", "1", "N/A"],
+                        			["MidnightCookie", "0.07", "1", "N/A"],
+                        			["ObolEfauntA", "0.003", "1", "N/A"],
+                        			["EquipmentHats2", "0.002", "1", "N/A"],
+                        			["EfauntDrop1", "0.4", "3", "N/A"],
+                        			["EfauntDrop2", "0.2", "1", "N/A"],
+                        			["DropTable7", "1", "2", "N/A"],
+                        			["DropTable8", "1", "2", "N/A"],
+                        		];
+                        		null != e.Boss2B ? t.setReserved("Boss2B", Ce) : (t.h.Boss2B = Ce);
+                        		var Be = [
+                        			["COIN", "1", "4000", "N/A"],
+                        			["CardsZ15", "0.02", "1", "N/A"],
+                        			["MidnightCookie", "0.07", "1", "N/A"],
+                        			["ObolEfauntA", "0.018", "1", "N/A"],
+                        			["EquipmentHats2", "0.015", "1", "N/A"],
+                        			["EfauntDrop1", "0.9", "12", "N/A"],
+                        			["EfauntDrop2", "0.5", "4", "N/A"],
+                        			["EquipmentCape4", "0.0007", "1", "N/A"],
+                        			["DropTable8", "1", "2", "N/A"],
+                        		];
+                        		null != e.Boss2C ? t.setReserved("Boss2C", Be) : (t.h.Boss2C = Be);
+                        		var Pe = [
+                        			["COIN", "0", "1", "N/A"],
+                        			["CardsZ3", "0.0000005", "1", "N/A"],
+                        		];
+                        		null != e.EfauntArm ? t.setReserved("EfauntArm", Pe) : (t.h.EfauntArm = Pe);
+                        		var Oe = [
+                        			["COIN", "0.5", "180", "N/A"],
+                        			["SnowA1", "0.16", "1", "N/A"],
+                        			["CardsE0", "0.0001", "1", "N/A"],
+                        			["EquipmentStatues16", "0.0002", "1", "N/A"],
+                        			["StampB5", "0.00008", "1", "N/A"],
+                        			["DropTable14", "0.0025", "1", "N/A"],
+                        		];
+                        		null != e.sheep ? t.setReserved("sheep", Oe) : (t.h.sheep = Oe);
+                        		var we = [
+                        			["COIN", "0.46", "190", "N/A"],
+                        			["SnowA2", "0.16", "1", "N/A"],
+                        			["CardsE1", "0.0001", "1", "N/A"],
+                        			["StampB7", "0.00006", "1", "N/A"],
+                        			["SnowA2a", "0.00005", "1", "N/A"],
+                        			["DropTable14", "0.0028", "1", "N/A"],
+                        		];
+                        		null != e.flake ? t.setReserved("flake", we) : (t.h.flake = we);
+                        		var ke = [
+                        			["COIN", "0.43", "205", "N/A"],
+                        			["SnowA3", "0.16", "1", "N/A"],
+                        			["CardsE2", "0.0001", "1", "N/A"],
+                        			["FoodPotGr3", ".002", "1", "N/A"],
+                        			["EquipmentStatues17", "0.0002", "1", "N/A"],
+                        			["DropTable14", "0.0031", "1", "N/A"],
+                        		];
+                        		null != e.stache ? t.setReserved("stache", ke) : (t.h.stache = ke);
+                        		var xe = [
+                        			["COIN", "0.5", "520", "N/A"],
+                        			["SnowA4", "0.16", "1", "N/A"],
+                        			["CardsE14", "0.0001", "1", "N/A"],
+                        			["EquipmentRings23", "0.000001", "1", "N/A"],
+                        			["DropTable16", "0.0034", "1", "N/A"],
+                        		];
+                        		null != e.ram ? t.setReserved("ram", xe) : (t.h.ram = xe);
+                        		var Qe = [
+                        			["COIN", "0.41", "240", "N/A"],
+                        			["SnowB1", "0.16", "1", "N/A"],
+                        			["CardsE3", "0.0001", "1", "N/A"],
+                        			["EquipmentStatues19", "0.0002", "1", "N/A"],
+                        			["FoodPotMana3", ".0025", "1", "N/A"],
+                        			["DropTable15", "0.0025", "1", "N/A"],
+                        		];
+                        		null != e.bloque ? t.setReserved("bloque", Qe) : (t.h.bloque = Qe);
+                        		var Xe = [
+                        			["COIN", "0.39", "260", "N/A"],
+                        			["SnowB2", "0.16", "1", "N/A"],
+                        			["CardsE4", "0.0001", "1", "N/A"],
+                        			["SnowB2a", "0.00005", "1", "N/A"],
+                        			["InvBag110", "0.000008", "1", "N/A"],
+                        			["Quest63", "1", "1", "Shuvelle5"],
+                        			["DropTable15", "0.0027", "1", "N/A"],
+                        		];
+                        		null != e.mamoth ? t.setReserved("mamoth", Xe) : (t.h.mamoth = Xe);
+                        		var Le = [
+                        			["COIN", "0.37", "285", "N/A"],
+                        			["SnowB5", "0.16", "1", "N/A"],
+                        			["CardsE5", "0.0001", "1", "N/A"],
+                        			["StampB10", "0.000025", "1", "N/A"],
+                        			["FoodHealth10", ".009", "1", "N/A"],
+                        			["Quest63", "1", "1", "Shuvelle6"],
+                        			["DropTable15", "0.0029", "1", "N/A"],
+                        		];
+                        		null != e.snowball ? t.setReserved("snowball", Le) : (t.h.snowball = Le);
+                        		var ze = [
+                        			["COIN", "0.36", "310", "N/A"],
+                        			["SnowB3", "0.16", "1", "N/A"],
+                        			["CardsE6", "0.0001", "1", "N/A"],
+                        			["EquipmentStatues16", "0.0003", "1", "N/A"],
+                        			["DropTable15", "0.0031", "1", "N/A"],
+                        		];
+                        		null != e.penguin ? t.setReserved("penguin", ze) : (t.h.penguin = ze);
+                        		var Ye = [
+                        			["COIN", "0.35", "340", "N/A"],
+                        			["SnowB4", "0.16", "1", "N/A"],
+                        			["CardsE7", "0.0001", "1", "N/A"],
+                        			["StampB12", "0.00001", "1", "N/A"],
+                        			["Quest63", "1", "1", "Shuvelle7"],
+                        			["DropTable15", "0.0033", "1", "N/A"],
+                        		];
+                        		null != e.thermostat ? t.setReserved("thermostat", Ye) : (t.h.thermostat = Ye);
+                        		var We = [
+                        			["COIN", "0.34", "370", "N/A"],
+                        			["SnowC1", "0.16", "1", "N/A"],
+                        			["CardsE8", "0.0001", "1", "N/A"],
+                        			["EquipmentStatues17", "0.0003", "1", "N/A"],
+                        			["DropTable16", "0.0025", "1", "N/A"],
+                        		];
+                        		null != e.glass ? t.setReserved("glass", We) : (t.h.glass = We);
+                        		var Ze = [
+                        			["COIN", "0.32", "400", "N/A"],
+                        			["SnowC2", "0.16", "1", "N/A"],
+                        			["CardsE9", "0.0001", "1", "N/A"],
+                        			["EquipmentStatues19", "0.0003", "1", "N/A"],
+                        			["DropTable16", "0.0028", "1", "N/A"],
+                        		];
+                        		null != e.snakeB ? t.setReserved("snakeB", Ze) : (t.h.snakeB = Ze);
+                        		var He = [
+                        			["COIN", "0.3", "440", "N/A"],
+                        			["SnowC3", "0.16", "1", "N/A"],
+                        			["CardsE10", "0.0001", "1", "N/A"],
+                        			["FoodHealth9", ".007", "1", "N/A"],
+                        			["DropTable16", "0.0030", "1", "N/A"],
+                        		];
+                        		null != e.speaker ? t.setReserved("speaker", He) : (t.h.speaker = He);
+                        		var Je = [
+                        			["COIN", "0.28", "490", "N/A"],
+                        			["SnowC4", "0.16", "1", "N/A"],
+                        			["CardsE11", "0.0001", "1", "N/A"],
+                        			["SnowC4a", "0.00005", "1", "N/A"],
+                        			["DropTable16", "0.0032", "1", "N/A"],
+                        		];
+                        		null != e.eye ? t.setReserved("eye", Je) : (t.h.eye = Je);
+                        		var je = [
+                        			["COIN", "0.5", "100", "N/A"],
+                        			["CardsE12", "0.010", "1", "N/A"],
+                        			["DropTable14", "0.01", "1", "N/A"],
+                        		];
+                        		null != e.skele ? t.setReserved("skele", je) : (t.h.skele = je);
+                        		var qe = [
+                        			["COIN", "0.5", "800", "N/A"],
+                        			["SnowC5", "0.01", "1", "N/A"],
+                        			["CardsE13", "0.0001", "1", "N/A"],
+                        			["DropTable16", "0.005", "1", "N/A"],
+                        		];
+                        		null != e.skele2 ? t.setReserved("skele2", qe) : (t.h.skele2 = qe);
+                        		var Ke = [
+                        			["COIN", "1", "4000", "N/A"],
+                        			["CardsZ8", "0.007", "1", "N/A"],
+                        			["ObolChizoarA", "0.0008", "1", "N/A"],
+                        			["EquipmentPendant24", "0.001", "1", "N/A"],
+                        			["Chiz0", "0.3", "1", "N/A"],
+                        			["DropTable14", "1", "2", "N/A"],
+                        			["DropTable15", "1", "2", "N/A"],
+                        			["DropTable16", "1", "2", "N/A"],
+                        		];
+                        		null != e.Boss3A ? t.setReserved("Boss3A", Ke) : (t.h.Boss3A = Ke);
+                        		var $e = [
+                        			["COIN", "1", "4000", "N/A"],
+                        			["CardsZ9", "0.004", "1", "N/A"],
+                        			["ObolChizoarA", "0.002", "1", "N/A"],
+                        			["EquipmentPendant24", "0.0032", "1", "N/A"],
+                        			["Chiz0", "0.4", "3", "N/A"],
+                        			["Chiz1", "0.2", "1", "N/A"],
+                        			["DropTable15", "1", "2", "N/A"],
+                        			["DropTable16", "1", "2", "N/A"],
+                        		];
+                        		null != e.Boss3B ? t.setReserved("Boss3B", $e) : (t.h.Boss3B = $e);
+                        		var et = [
+                        			["COIN", "1", "4000", "N/A"],
+                        			["CardsZ16", "0.02", "1", "N/A"],
+                        			["ObolChizoarA", "0.01", "1", "N/A"],
+                        			["EquipmentPendant24", "0.014", "1", "N/A"],
+                        			["EquipmentCape5", "0.0003", "1", "N/A"],
+                        			["Chiz0", "0.5", "7", "N/A"],
+                        			["Chiz1", "0.5", "2", "N/A"],
+                        			["StoneZ1", "0.03", "1", "N/A"],
+                        			["DropTable8", "1", "2", "N/A"],
+                        		];
+                        		null != e.Boss3C ? t.setReserved("Boss3C", et) : (t.h.Boss3C = et);
+                        		var tt = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["CardsZ12", "0.2", "1", "N/A"],
+                        			["WorshipSkull8", "0.009", "1", "N/A"],
+                        			["ObolSlush", "0.004", "1", "N/A"],
+                        			["Key3", "0.8", "2", "N/A"],
+                        			["SmithingRecipes3", "0.06", "20", "N/A"],
+                        			["StoneA3b", "0.04", "1", "N/A"],
+                        			["StoneA3b", "0.04", "1", "N/A"],
+                        			["DropTable13", "0.5", "1", "N/A"],
+                        		];
+                        		null != e.mini3a ? t.setReserved("mini3a", tt) : (t.h.mini3a = tt);
+                        		var nt = [
+                        			["COIN", "0.5", "550", "N/A"],
+                        			["GalaxyA1", "0.16", "1", "N/A"],
+                        			["EquipmentShoes30", "0.000006", "1", "N/A"],
+                        			["CardsG1", "0.00002", "1", "N/A"],
+                        			["DropTable19", "0.0025", "1", "N/A"],
+                        		];
+                        		null != e.mushP ? t.setReserved("mushP", nt) : (t.h.mushP = nt);
+                        		var st = [
+                        			["COIN", "0.5", "630", "N/A"],
+                        			["GalaxyA2", "0.16", "1", "N/A"],
+                        			["GalaxyA2b", "0.00002", "1", "N/A"],
+                        			["Line12", "0.0000022", "1", "N/A"],
+                        			["CardsG2", "0.00002", "1", "N/A"],
+                        			["DropTable19", "0.0028", "1", "N/A"],
+                        		];
+                        		null != e.w4a2 ? t.setReserved("w4a2", st) : (t.h.w4a2 = st);
+                        		var at = [
+                        			["COIN", "0.5", "730", "N/A"],
+                        			["GalaxyA3", "0.16", "1", "N/A"],
+                        			["EquipmentShoes32", "0.000006", "1", "N/A"],
+                        			["CardsG3", "0.00002", "1", "N/A"],
+                        			["DropTable19", "0.0031", "1", "N/A"],
+                        		];
+                        		null != e.w4a3 ? t.setReserved("w4a3", at) : (t.h.w4a3 = at);
+                        		var rt = [
+                        			["COIN", "0.5", "860", "N/A"],
+                        			["GalaxyA4", "0.16", "1", "N/A"],
+                        			["EquipmentRings24", "0.000004", "1", "N/A"],
+                        			["CardsG4", "0.00002", "1", "N/A"],
+                        			["DropTable19", "0.0034", "1", "N/A"],
+                        		];
+                        		null != e.demonP ? t.setReserved("demonP", rt) : (t.h.demonP = rt);
+                        		var At = [
+                        			["COIN", "0.5", "1050", "N/A"],
+                        			["GalaxyB1", "0.16", "1", "N/A"],
+                        			["Weight3", "0.0000019", "1", "N/A"],
+                        			["CardsG6", "0.00002", "1", "N/A"],
+                        			["DropTable20", "0.0027", "1", "N/A"],
+                        		];
+                        		null != e.w4b2 ? t.setReserved("w4b2", At) : (t.h.w4b2 = At);
+                        		var lt = [
+                        			["COIN", "0.5", "1300", "N/A"],
+                        			["GalaxyB2", "0.16", "1", "N/A"],
+                        			["StampA29", "0.0000038", "1", "N/A"],
+                        			["CardsG5", "0.00002", "1", "N/A"],
+                        			["DropTable20", "0.0025", "1", "N/A"],
+                        		];
+                        		null != e.w4b1 ? t.setReserved("w4b1", lt) : (t.h.w4b1 = lt);
+                        		var ot = [
+                        			["COIN", "0.5", "1600", "N/A"],
+                        			["GalaxyB3", "0.16", "1", "N/A"],
+                        			["CardsG7", "0.00002", "1", "N/A"],
+                        			["InvStorageS", "0.0000038", "1", "N/A"],
+                        			["DropTable20", "0.0029", "1", "N/A"],
+                        		];
+                        		null != e.w4b3 ? t.setReserved("w4b3", ot) : (t.h.w4b3 = ot);
+                        		var it = [
+                        			["COIN", "0.5", "2000", "N/A"],
+                        			["GalaxyB4", "0.16", "1", "N/A"],
+                        			["EquipmentRings25", "0.000004", "1", "N/A"],
+                        			["CardsG8", "0.00002", "1", "N/A"],
+                        			["DropTable20", "0.0031", "1", "N/A"],
+                        		];
+                        		null != e.w4b4 ? t.setReserved("w4b4", it) : (t.h.w4b4 = it);
+                        		var ut = [
+                        			["COIN", "0.5", "2500", "N/A"],
+                        			["GalaxyB5", "0.16", "1", "N/A"],
+                        			["CardsG9", "0.00002", "1", "N/A"],
+                        			["DropTable20", "0.0033", "1", "N/A"],
+                        		];
+                        		null != e.w4b5 ? t.setReserved("w4b5", ut) : (t.h.w4b5 = ut);
+                        		var gt = [
+                        			["COIN", "0.5", "3100", "N/A"],
+                        			["GalaxyC1", "0.16", "1", "N/A"],
+                        			["GalaxyC1b", "0.00002", "1", "N/A"],
+                        			["CardsG10", "0.00002", "1", "N/A"],
+                        			["DropTable21", "0.0025", "1", "N/A"],
+                        		];
+                        		null != e.w4c1 ? t.setReserved("w4c1", gt) : (t.h.w4c1 = gt);
+                        		var mt = [
+                        			["COIN", "0.5", "3500", "N/A"],
+                        			["GalaxyC2", "0.16", "1", "N/A"],
+                        			["CardsG11", "0.00002", "1", "N/A"],
+                        			["SmithingRecipes4", "0.0000003", "55", "N/A"],
+                        			["DropTable21", "0.0028", "1", "N/A"],
+                        		];
+                        		null != e.w4c2 ? t.setReserved("w4c2", mt) : (t.h.w4c2 = mt);
+                        		var dt = [
+                        			["COIN", "0.5", "4500", "N/A"],
+                        			["GalaxyC3", "0.16", "1", "N/A"],
+                        			["Line3", "0.000001", "1", "N/A"],
+                        			["CardsG12", "0.00002", "1", "N/A"],
+                        			["DropTable21", "0.0030", "1", "N/A"],
+                        		];
+                        		null != e.w4c3 ? t.setReserved("w4c3", dt) : (t.h.w4c3 = dt);
+                        		var ct = [
+                        			["COIN", "0.5", "5000", "N/A"],
+                        			["GalaxyC4", "0.16", "1", "N/A"],
+                        			["CardsG13", "0.00002", "1", "N/A"],
+                        			["DropTable21", "0.0032", "1", "N/A"],
+                        		];
+                        		null != e.w4c4 ? t.setReserved("w4c4", ct) : (t.h.w4c4 = ct);
+                        		var pt = [
+                        			["COIN", "1", "4000", "N/A"],
+                        			["CardsZ10", "0.007", "1", "N/A"],
+                        			["FillerMaterial", ".3", "2", "N/A"],
+                        			["DropTable19", "1", "2", "N/A"],
+                        			["DropTable20", "1", "2", "N/A"],
+                        			["DropTable21", "1", "2", "N/A"],
+                        		];
+                        		null != e.Boss4A ? t.setReserved("Boss4A", pt) : (t.h.Boss4A = pt);
+                        		var ht = [
+                        			["COIN", "1", "4000", "N/A"],
+                        			["CardsZ11", "0.004", "1", "N/A"],
+                        			["FillerMaterial", ".1", "2", "N/A"],
+                        			["FillerMaterial", ".002", "2", "N/A"],
+                        			["DropTable19", "1", "2", "N/A"],
+                        			["DropTable20", "1", "2", "N/A"],
+                        			["DropTable21", "1", "2", "N/A"],
+                        		];
+                        		null != e.Boss4B ? t.setReserved("Boss4B", ht) : (t.h.Boss4B = ht);
+                        		var bt = [
+                        			["COIN", "1", "4000", "N/A"],
+                        			["CardsZ10", "0.01", "1", "N/A"],
+                        			["ObolChizoarA", "0.003", "1", "N/A"],
+                        			["EquipmentPendant24", "0.000667", "1", "N/A"],
+                        			["StoneZ1", "0.03", "1", "N/A"],
+                        			["DropTable6", "1", "2", "N/A"],
+                        			["DropTable7", "1", "2", "N/A"],
+                        			["DropTable8", "1", "2", "N/A"],
+                        		];
+                        		null != e.Boss4C ? t.setReserved("Boss4C", bt) : (t.h.Boss4C = bt);
+                        		var ft = [
+                        			["COIN", "1", "25000", "N/A"],
+                        			["CardsZ13", "0.2", "1", "N/A"],
+                        			["SmithingRecipes3", "0.02", "21", "N/A"],
+                        			["StoneA3b", "0.04", "1", "N/A"],
+                        			["PetEgg", "0.6", "1", "N/A"],
+                        			["Ladle", "1", "3", "N/A"],
+                        			["SmithingRecipes4", "0.008", "56", "N/A"],
+                        			["DropTable13", "0.5", "1", "N/A"],
+                        		];
+                        		null != e.mini4a ? t.setReserved("mini4a", ft) : (t.h.mini4a = ft);
+                        		var yt = [
+                        			["COIN", "1", "100", "N/A"],
+                        			["PremiumGem", "0.05", "1", "N/A"],
+                        			["StoneW1", "0.025", "1", "N/A"],
+                        			["StoneA1", "0.09", "1", "N/A"],
+                        			["OakTree", "0.6", "40", "N/A"],
+                        			["Copper", "0.6", "30", "N/A"],
+                        			["CopperBar", "0.2", "20", "N/A"],
+                        			["DropTable1", "1", "1", "N/A"],
+                        			["Key1", "0.04", "1", "N/A"],
+                        		];
+                        		null != e.ChestA1 ? t.setReserved("ChestA1", yt) : (t.h.ChestA1 = yt);
+                        		var Rt = [
+                        			["COIN", "1", "400", "N/A"],
+                        			["PremiumGem", "0.12", "1", "N/A"],
+                        			["EquipmentHats17", "0.02", "1", "N/A"],
+                        			["StoneW2", "0.04", "1", "N/A"],
+                        			["StoneA2", "0.1", "1", "N/A"],
+                        			["FoodG4", "0.5", "1", "N/A"],
+                        			["Iron", "0.6", "50", "N/A"],
+                        			["CopperBar", "0.35", "50", "N/A"],
+                        			["Key1", "0.1", "1", "N/A"],
+                        			["JungleTree", "0.4", "15", "N/A"],
+                        			["BirchTree", "0.1", "25", "N/A"],
+                        			["DropTable2", "1", "1", "N/A"],
+                        		];
+                        		null != e.ChestB1 ? t.setReserved("ChestB1", Rt) : (t.h.ChestB1 = Rt);
+                        		var vt = [
+                        			["COIN", "1", "1250", "N/A"],
+                        			["PremiumGem", "0.3", "1", "N/A"],
+                        			["PremiumGem", "0.8", "1", "N/A"],
+                        			["FoodG1", "0.5", "1", "N/A"],
+                        			["IronBar", "0.1", "15", "N/A"],
+                        			["Gold", "0.1", "20", "N/A"],
+                        			["ToiletTree", "0.5", "50", "N/A"],
+                        			["Key1", "0.18", "1", "N/A"],
+                        			["StumpTree", "0.5", "50", "N/A"],
+                        			["EquipmentShirts12", "0.04", "1", "N/A"],
+                        			["DropTable3", "1", "1", "N/A"],
+                        		];
+                        		null != e.ChestC1 ? t.setReserved("ChestC1", vt) : (t.h.ChestC1 = vt);
+                        		var Ft = [
+                        			["COIN", "1", "5000", "N/A"]
+                        		];
+                        		null != e.ChestD1 ? t.setReserved("ChestD1", Ft) : (t.h.ChestD1 = Ft);
+                        		var Nt = [
+                        			["COIN", "1", "1000", "N/A"],
+                        			["PremiumGem", "0.1", "1", "N/A"],
+                        			["StoneW2", "0.025", "1", "N/A"],
+                        			["StoneA2", "0.09", "1", "N/A"],
+                        			["Fish1", "0.6", "50", "N/A"],
+                        			["Fish2", "0.4", "50", "N/A"],
+                        			["Bug1", "0.6", "65", "N/A"],
+                        			["Gold", "0.6", "75", "N/A"],
+                        			["Key2", "0.04", "1", "N/A"],
+                        			["GoldBar", "0.2", "20", "N/A"],
+                        			["DropTable6", "1", "1", "N/A"],
+                        		];
+                        		null != e.ChestA2 ? t.setReserved("ChestA2", Nt) : (t.h.ChestA2 = Nt);
+                        		var _t = [
+                        			["COIN", "1", "4000", "N/A"],
+                        			["PremiumGem", "0.2", "1", "N/A"],
+                        			["EquipmentHats18", "0.02", "1", "N/A"],
+                        			["StoneW3", "0.04", "1", "N/A"],
+                        			["StoneA3", "0.09", "1", "N/A"],
+                        			["Fish3", "0.4", "100", "N/A"],
+                        			["Bug3", "0.4", "125", "N/A"],
+                        			["Key2", "0.1", "1", "N/A"],
+                        			["FoodG2", "0.5", "1", "N/A"],
+                        			["Plat", "0.6", "50", "N/A"],
+                        			["GoldBar", "0.35", "60", "N/A"],
+                        			["PalmTree", "0.5", "100", "N/A"],
+                        			["DropTable7", "1", "1", "N/A"],
+                        		];
+                        		null != e.ChestB2 ? t.setReserved("ChestB2", _t) : (t.h.ChestB2 = _t);
+                        		var It = [
+                        			["COIN", "1", "10000", "N/A"],
+                        			["PremiumGem", "0.4", "1", "N/A"],
+                        			["FoodG3", "0.5", "1", "N/A"],
+                        			["PlatBar", "0.2", "20", "N/A"],
+                        			["Dementia", "0.1", "80", "N/A"],
+                        			["Fish4", "0.2", "150", "N/A"],
+                        			["Bug4", "0.2", "169", "N/A"],
+                        			["EquipmentPants4", "0.04", "1", "N/A"],
+                        			["Key2", "0.18", "1", "N/A"],
+                        			["DropTable8", "1", "1", "N/A"],
+                        		];
+                        		null != e.ChestC2 ? t.setReserved("ChestC2", It) : (t.h.ChestC2 = It);
+                        		var Dt = [
+                        			["COIN", "1", "5000", "N/A"]
+                        		];
+                        		null != e.ChestD2 ? t.setReserved("ChestD2", Dt) : (t.h.ChestD2 = Dt);
+                        		var Et = [
+                        			["COIN", "1", "10000", "N/A"],
+                        			["PremiumGem", "0.12", "1", "N/A"],
+                        			["StoneW3", "0.025", "1", "N/A"],
+                        			["SnowA2a", "0.01", "1", "N/A"],
+                        			["StoneA3", "0.09", "1", "N/A"],
+                        			["Soul1", "0.6", "50", "N/A"],
+                        			["Critter1", "0.6", "65", "N/A"],
+                        			["PlatBar", "0.35", "60", "N/A"],
+                        			["Key3", "0.04", "1", "N/A"],
+                        			["PlatBar", "0.2", "20", "N/A"],
+                        			["DropTable14", "1", "1", "N/A"],
+                        		];
+                        		null != e.ChestA3 ? t.setReserved("ChestA3", Et) : (t.h.ChestA3 = Et);
+                        		var St = [
+                        			["COIN", "1", "40000", "N/A"],
+                        			["PremiumGem", "0.23", "1", "N/A"],
+                        			["EquipmentHats28", "0.02", "1", "N/A"],
+                        			["StoneW3", "0.2", "1", "N/A"],
+                        			["StoneA3", "0.3", "1", "N/A"],
+                        			["Critter2", "0.4", "350", "N/A"],
+                        			["Bug5", "0.4", "150", "N/A"],
+                        			["Key3", "0.1", "1", "N/A"],
+                        			["FoodG5", "0.5", "1", "N/A"],
+                        			["Dementia", "0.6", "100", "N/A"],
+                        			["SaharanFoal", "0.5", "100", "N/A"],
+                        			["DropTable15", "1", "1", "N/A"],
+                        		];
+                        		null != e.ChestB3 ? t.setReserved("ChestB3", St) : (t.h.ChestB3 = St);
+                        		var Gt = [
+                        			["COIN", "1", "100000", "N/A"],
+                        			["PremiumGem", "0.45", "1", "N/A"],
+                        			["DementiaBar", "0.2", "80", "N/A"],
+                        			["Soul2", "0.4", "400", "N/A"],
+                        			["Void", "0.1", "120", "N/A"],
+                        			["Bug6", "0.2", "150", "N/A"],
+                        			["EquipmentPants5", "0.04", "1", "N/A"],
+                        			["Key3", "0.18", "1", "N/A"],
+                        			["FoodG6", "0.3", "1", "N/A"],
+                        			["DropTable16", "1", "1", "N/A"],
+                        		];
+                        		null != e.ChestC3 ? t.setReserved("ChestC3", Gt) : (t.h.ChestC3 = Gt);
+                        		var Tt = [
+                        			["COIN", "1", "5000", "N/A"]
+                        		];
+                        		null != e.ChestD3 ? t.setReserved("ChestD3", Tt) : (t.h.ChestD3 = Tt);
+                        		var Ut = [
+                        			["COIN", "1", "8000000", "N/A"],
+                        			["PremiumGem", "0.12", "1", "N/A"],
+                        			["StoneW4", "0.015", "1", "N/A"],
+                        			["GalaxyA2b", "0.02", "1", "N/A"],
+                        			["StoneA4", "0.04", "1", "N/A"],
+                        			["Soul1", "0.6", "50", "N/A"],
+                        			["Critter6", "0.6", "200", "N/A"],
+                        			["VoidBar", "0.35", "100", "N/A"],
+                        			["Key1", "0.006", "1", "N/A"],
+                        			["DropTable19", "1", "1", "N/A"],
+                        		];
+                        		null != e.ChestA4 ? t.setReserved("ChestA4", Ut) : (t.h.ChestA4 = Ut);
+                        		var Mt = [
+                        			["COIN", "1", "30000000", "N/A"],
+                        			["PremiumGem", "0.23", "1", "N/A"],
+                        			["StoneW4", "0.04", "1", "N/A"],
+                        			["StoneA4", "0.07", "1", "N/A"],
+                        			["Critter8", "0.4", "600", "N/A"],
+                        			["Bug7", "0.4", "1500", "N/A"],
+                        			["Key2", "0.012", "1", "N/A"],
+                        			["FoodG7", "0.5", "1", "N/A"],
+                        			["Lustre", "0.6", "1000", "N/A"],
+                        			["AlienTree", "0.5", "750", "N/A"],
+                        			["DropTable20", "1", "1", "N/A"],
+                        		];
+                        		null != e.ChestB4 ? t.setReserved("ChestB4", Mt) : (t.h.ChestB4 = Mt);
+                        		var Vt = [
+                        			["COIN", "1", "60000000", "N/A"],
+                        			["PremiumGem", "0.45", "1", "N/A"],
+                        			["LustreBar", "0.05", "150", "N/A"],
+                        			["Starfire", "0.03", "2000", "N/A"],
+                        			["Bug8", "0.02", "1500", "N/A"],
+                        			["Key3", "0.01", "1", "N/A"],
+                        			["FoodG7", "0.03", "2", "N/A"],
+                        			["DropTable21", "1", "1", "N/A"],
+                        		];
+                        		null != e.ChestC4 ? t.setReserved("ChestC4", Vt) : (t.h.ChestC4 = Vt);
+                        		var Ct = [
+                        			["COIN", "1", "5000", "N/A"]
+                        		];
+                        		null != e.ChestD4 ? t.setReserved("ChestD4", Ct) : (t.h.ChestD4 = Ct);
+                        		var Bt = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable13", "1", "1", "N/A"],
+                        		];
+                        		null != e.GiantMobzz69 ? t.setReserved("GiantMobzz69", Bt) : (t.h.GiantMobzz69 = Bt);
+                        		var Pt = [
+                        			["COIN", "0.5", "10", "N/A"],
+                        			["CardsY0", "0.05", "1", "N/A"],
+                        			["Quest30", "0.15", "1", "N/A"],
+                        			["FoodEvent1", "0.3", "2", "N/A"],
+                        			["FoodEvent2", "0.3", "2", "N/A"],
+                        			["FoodEvent3", "0.3", "2", "N/A"],
+                        			["FoodEvent4", "0.3", "2", "N/A"],
+                        		];
+                        		null != e.ghost ? t.setReserved("ghost", Pt) : (t.h.ghost = Pt);
+                        		var Ot = [
+                        			["COIN", "0.5", "10", "N/A"],
+                        			["CardsY0", "0.05", "1", "N/A"],
+                        			["Quest30", "0.05", "1", "N/A"],
+                        			["FoodEvent1", "0.25", "3", "N/A"],
+                        			["FoodEvent2", "0.25", "3", "N/A"],
+                        			["FoodEvent3", "0.25", "2", "N/A"],
+                        			["FoodEvent4", "0.25", "2", "N/A"],
+                        		];
+                        		null != e.xmasEvent ? t.setReserved("xmasEvent", Ot) : (t.h.xmasEvent = Ot);
+                        		var wt = [
+                        			["COIN", "0.5", "10", "N/A"],
+                        			["CardsY0", "0.05", "1", "N/A"],
+                        			["Quest30", "0.05", "1", "N/A"],
+                        			["FoodEvent1", "0.25", "3", "N/A"],
+                        			["FoodEvent2", "0.25", "3", "N/A"],
+                        			["FoodEvent3", "0.25", "2", "N/A"],
+                        			["FoodEvent4", "0.25", "2", "N/A"],
+                        		];
+                        		null != e.xmasEvent2 ? t.setReserved("xmasEvent2", wt) : (t.h.xmasEvent2 = wt);
+                        		var kt = [
+                        			["COIN", "0.5", "10", "N/A"],
+                        			["CardsY0", "0.05", "1", "N/A"],
+                        			["Quest30", "0.05", "1", "N/A"],
+                        			["FoodEvent1", "0.25", "3", "N/A"],
+                        			["FoodEvent2", "0.25", "3", "N/A"],
+                        			["FoodEvent3", "0.25", "2", "N/A"],
+                        			["FoodEvent4", "0.25", "2", "N/A"],
+                        		];
+                        		null != e.xmasEvent3 ? t.setReserved("xmasEvent3", kt) : (t.h.xmasEvent3 = kt);
+                        		var xt = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CardsY3", "0.085", "1", "N/A"],
+                        			["Quest40", "0.20", "1", "N/A"],
+                        			["FoodEvent5", "0.25", "3", "N/A"],
+                        			["FoodEvent6", "0.25", "3", "N/A"],
+                        			["FoodEvent7", "0.25", "2", "N/A"],
+                        			["FoodEvent8", "0.25", "2", "N/A"],
+                        		];
+                        		null != e.slimeR ? t.setReserved("slimeR", xt) : (t.h.slimeR = xt);
+                        		var Qt = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CardsY3", "0.05", "1", "N/A"],
+                        			["Quest40", "0.05", "1", "N/A"],
+                        			["FoodEvent5", "0.25", "3", "N/A"],
+                        			["FoodEvent6", "0.25", "3", "N/A"],
+                        			["FoodEvent7", "0.25", "2", "N/A"],
+                        			["FoodEvent8", "0.25", "2", "N/A"],
+                        		];
+                        		null != e.loveEvent ? t.setReserved("loveEvent", Qt) : (t.h.loveEvent = Qt);
+                        		var Xt = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CardsY3", "0.05", "1", "N/A"],
+                        			["Quest40", "0.05", "1", "N/A"],
+                        			["FoodEvent5", "0.25", "3", "N/A"],
+                        			["FoodEvent6", "0.25", "3", "N/A"],
+                        			["FoodEvent7", "0.25", "2", "N/A"],
+                        			["FoodEvent8", "0.25", "2", "N/A"],
+                        		];
+                        		null != e.loveEvent2 ? t.setReserved("loveEvent2", Xt) : (t.h.loveEvent2 = Xt);
+                        		var Lt = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CardsY6", "0.05", "1", "N/A"],
+                        			["Timecandy1", "0.6", "3", "N/A"],
+                        			["Timecandy2", "0.15", "3", "N/A"],
+                        			["Timecandy4", "0.01", "2", "N/A"],
+                        			["StoneTe", "0.07", "2", "N/A"],
+                        			["StoneAe", "0.08", "2", "N/A"],
+                        			["StoneWe", "0.04", "2", "N/A"],
+                        		];
+                        		null != e.sheepB ? t.setReserved("sheepB", Lt) : (t.h.sheepB = Lt);
+                        		var zt = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CardsY7", "0.05", "1", "N/A"],
+                        			["Timecandy1", "0.20", "3", "N/A"],
+                        			["Timecandy2", "0.05", "3", "N/A"],
+                        			["StoneTe", "0.04", "2", "N/A"],
+                        			["StoneAe", "0.05", "2", "N/A"],
+                        			["StoneWe", "0.02", "2", "N/A"],
+                        		];
+                        		null != e.snakeY ? t.setReserved("snakeY", zt) : (t.h.snakeY = zt);
+                        		var Yt = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CardsY6", "0.05", "1", "N/A"],
+                        			["PremiumGem", "0.3", "1", "N/A"],
+                        			["Quest42", "0.05", "1", "N/A"],
+                        			["StoneTe", "0.25", "3", "N/A"],
+                        			["StoneAe", "0.25", "3", "N/A"],
+                        			["StoneWe", "0.25", "2", "N/A"],
+                        		];
+                        		null != e.EasterEvent1 ? t.setReserved("EasterEvent1", Yt) : (t.h.EasterEvent1 = Yt);
+                        		var Wt = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CardsY6", "0.05", "1", "N/A"],
+                        			["PremiumGem", "0.3", "1", "N/A"],
+                        			["Quest42", "0.05", "1", "N/A"],
+                        			["Quest44", "0.13", "1", "N/A"],
+                        			["StoneTe", "0.25", "3", "N/A"],
+                        			["StoneAe", "0.25", "3", "N/A"],
+                        			["StoneWe", "0.25", "2", "N/A"],
+                        		];
+                        		null != e.EasterEvent2 ? t.setReserved("EasterEvent2", Wt) : (t.h.EasterEvent2 = Wt);
+                        		var Zt = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CardsY10", "0.03", "1", "N/A"],
+                        			["Quest49", "0.4", "1", "N/A"],
+                        			["StoneT1eb", "0.012", "3", "N/A"],
+                        			["StoneAeB", "0.02", "3", "N/A"],
+                        			["StoneWeb", "0.01", "2", "N/A"],
+                        		];
+                        		null != e.crabcakeB ? t.setReserved("crabcakeB", Zt) : (t.h.crabcakeB = Zt);
+                        		var Ht = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CardsY13", "0.03", "1", "N/A"],
+                        			["Quest49", "0.4", "1", "N/A"],
+                        			["StoneT1eb", "0.012", "3", "N/A"],
+                        			["StoneAeB", "0.02", "3", "N/A"],
+                        			["StoneWeb", "0.01", "2", "N/A"],
+                        		];
+                        		null != e.shovelY ? t.setReserved("shovelY", Ht) : (t.h.shovelY = Ht);
+                        		var Jt = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CardsY11", "0.05", "1", "N/A"],
+                        			["Quest49", "0.5", "1", "N/A"],
+                        			["Quest50", "0.13", "1", "N/A"],
+                        		];
+                        		null != e.SummerEvent1 ? t.setReserved("SummerEvent1", Jt) : (t.h.SummerEvent1 = Jt);
+                        		var jt = [
+                        			["COIN", "0.5", "69", "N/A"],
+                        			["CardsY2", "0.05", "1", "N/A"],
+                        			["PremiumGem", "0.5", "1", "N/A"],
+                        			["Timecandy1", "0.04", "1", "N/A"],
+                        			["Timecandy2", "0.01", "3", "N/A"],
+                        			["StoneWeb", "0.02", "1", "N/A"],
+                        			["StoneT1eb", "0.03", "3", "N/A"],
+                        			["StoneAeB", "0.04", "3", "N/A"],
+                        			["Quest50", "0.1", "1", "N/A"],
+                        		];
+                        		null != e.SummerEvent2 ? t.setReserved("SummerEvent2", jt) : (t.h.SummerEvent2 = jt);
+                        		var qt = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC1", "0.0002", "1", "N/A"],
+                        			["DropTable4", "0.0065", "1", "N/A"],
+                        		];
+                        		null != e.Copper ? t.setReserved("Copper", qt) : (t.h.Copper = qt);
+                        		var Kt = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC2", "0.00013", "1", "N/A"],
+                        			["DropTable4", "0.0070", "1", "N/A"],
+                        		];
+                        		null != e.Iron ? t.setReserved("Iron", Kt) : (t.h.Iron = Kt);
+                        		var $t = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC3", "0.00011", "1", "N/A"],
+                        			["DropTable4", "0.0075", "1", "N/A"],
+                        		];
+                        		null != e.Gold ? t.setReserved("Gold", $t) : (t.h.Gold = $t);
+                        		var en = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD2", "0.00008", "1", "N/A"],
+                        			["DropTable4", "0.0077", "1", "N/A"],
+                        		];
+                        		null != e.Plat ? t.setReserved("Plat", en) : (t.h.Plat = en);
+                        		var tn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD1", "0.00006", "1", "N/A"],
+                        			["DropTable4", "0.0082", "1", "N/A"],
+                        		];
+                        		null != e.Dementia ? t.setReserved("Dementia", tn) : (t.h.Dementia = tn);
+                        		var nn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD3", "0.00006", "1", "N/A"],
+                        			["DropTable4", "0.0090", "2", "N/A"],
+                        		];
+                        		null != e.Void ? t.setReserved("Void", nn) : (t.h.Void = nn);
+                        		var sn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD4", "0.00006", "1", "N/A"],
+                        			["DropTable4", "0.0095", "2", "N/A"],
+                        		];
+                        		null != e.Lustre ? t.setReserved("Lustre", sn) : (t.h.Lustre = sn);
+                        		var an = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsF16", "0.00003", "1", "N/A"],
+                        			["DropTable4", "0.0110", "2", "N/A"],
+                        		];
+                        		null != e.Starfire ? t.setReserved("Starfire", an) : (t.h.Starfire = an);
+                        		var rn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.4", "2", "N/A"],
+                        		];
+                        		null != e.Dreadlo ? t.setReserved("Dreadlo", rn) : (t.h.Dreadlo = rn);
+                        		var An = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.4", "2", "N/A"],
+                        		];
+                        		null != e.Godshard ? t.setReserved("Godshard", An) : (t.h.Godshard = An);
+                        		var ln = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC4", "0.0004", "1", "N/A"],
+                        			["DropTable5", "0.008", "1", "N/A"],
+                        		];
+                        		null != e.OakTree ? t.setReserved("OakTree", ln) : (t.h.OakTree = ln);
+                        		var on = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC5", "0.00029", "1", "N/A"],
+                        			["DropTable5", "0.0085", "1", "N/A"],
+                        		];
+                        		null != e.BirchTree ? t.setReserved("BirchTree", on) : (t.h.BirchTree = on);
+                        		var un = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC6", "0.00021", "1", "N/A"],
+                        			["DropTable5", "0.009", "1", "N/A"],
+                        		];
+                        		null != e.JungleTree ? t.setReserved("JungleTree", un) : (t.h.JungleTree = un);
+                        		var gn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC7", "0.00017", "1", "N/A"],
+                        			["DropTable5", "0.0095", "1", "N/A"],
+                        		];
+                        		null != e.ForestTree ? t.setReserved("ForestTree", gn) : (t.h.ForestTree = gn);
+                        		var mn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD6", "0.00013", "1", "N/A"],
+                        			["DropTable5", "0.0102", "1", "N/A"],
+                        		];
+                        		null != e.StumpTree ? t.setReserved("StumpTree", mn) : (t.h.StumpTree = mn);
+                        		var dn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD5", "0.00012", "1", "N/A"],
+                        			["DropTable5", "0.0106", "1", "N/A"],
+                        		];
+                        		null != e.ToiletTree ? t.setReserved("ToiletTree", dn) : (t.h.ToiletTree = dn);
+                        		var cn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD7", "0.00011", "1", "N/A"],
+                        			["DropTable11", "0.015", "2", "N/A"],
+                        		];
+                        		null != e.PalmTree ? t.setReserved("PalmTree", cn) : (t.h.PalmTree = cn);
+                        		var pn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD8", "0.0001", "1", "N/A"],
+                        			["DropTable17", "0.0089", "1", "N/A"],
+                        		];
+                        		null != e.SaharanFoal ? t.setReserved("SaharanFoal", pn) : (t.h.SaharanFoal = pn);
+                        		var hn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsF2", "0.0001", "1", "N/A"],
+                        			["DropTable17", "0.0089", "1", "N/A"],
+                        		];
+                        		null != e.Tree7 ? t.setReserved("Tree7", hn) : (t.h.Tree7 = hn);
+                        		var bn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsF13", "0.00001", "1", "N/A"],
+                        			["DropTable22", "0.00815", "2", "N/A"],
+                        		];
+                        		null != e.AlienTree ? t.setReserved("AlienTree", bn) : (t.h.AlienTree = bn);
+                        		var fn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsF12", "0.00004", "1", "N/A"],
+                        			["DropTable22", "0.0089", "1", "N/A"],
+                        		];
+                        		null != e.Tree8 ? t.setReserved("Tree8", fn) : (t.h.Tree8 = fn);
+                        		var yn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable17", "0.0089", "1", "N/A"],
+                        		];
+                        		null != e.Tree9 ? t.setReserved("Tree9", yn) : (t.h.Tree9 = yn);
+                        		var Rn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.015", "2", "N/A"],
+                        		];
+                        		null != e.BirchTree2 ? t.setReserved("BirchTree2", Rn) : (t.h.BirchTree2 = Rn);
+                        		var vn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.015", "2", "N/A"],
+                        		];
+                        		null != e.BirchTree3 ? t.setReserved("BirchTree3", vn) : (t.h.BirchTree3 = vn);
+                        		var Fn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable9", "0.012", "1", "N/A"],
+                        		];
+                        		null != e.FishSmall ? t.setReserved("FishSmall", Fn) : (t.h.FishSmall = Fn);
+                        		var Nn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable9", "0.012", "1", "N/A"],
+                        		];
+                        		null != e.FishMed ? t.setReserved("FishMed", Nn) : (t.h.FishMed = Nn);
+                        		var _n = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable9", "0.012", "1", "N/A"],
+                        		];
+                        		null != e.Fish1 ? t.setReserved("Fish1", _n) : (t.h.Fish1 = _n);
+                        		var In = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable9", "0.012", "1", "N/A"],
+                        		];
+                        		null != e.Fish2 ? t.setReserved("Fish2", In) : (t.h.Fish2 = In);
+                        		var Dn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable9", "0.012", "1", "N/A"],
+                        		];
+                        		null != e.Fish3 ? t.setReserved("Fish3", Dn) : (t.h.Fish3 = Dn);
+                        		var En = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable9", "0.012", "1", "N/A"],
+                        		];
+                        		null != e.Fish4 ? t.setReserved("Fish4", En) : (t.h.Fish4 = En);
+                        		var Sn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable9", "0.012", "1", "N/A"],
+                        		];
+                        		null != e.Fish5 ? t.setReserved("Fish5", Sn) : (t.h.Fish5 = Sn);
+                        		var Gn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable9", "0.012", "1", "N/A"],
+                        		];
+                        		null != e.Fish6 ? t.setReserved("Fish6", Gn) : (t.h.Fish6 = Gn);
+                        		var Tn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable9", "0.012", "1", "N/A"],
+                        		];
+                        		null != e.Fish7 ? t.setReserved("Fish7", Tn) : (t.h.Fish7 = Tn);
+                        		var Un = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["DropTable9", "0.012", "1", "N/A"],
+                        		];
+                        		null != e.Fish8 ? t.setReserved("Fish8", Un) : (t.h.Fish8 = Un);
+                        		var Mn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.0", "2", "N/A"],
+                        		];
+                        		null != e.BugNest1 ? t.setReserved("BugNest1", Mn) : (t.h.BugNest1 = Mn);
+                        		var Vn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.0", "2", "N/A"],
+                        		];
+                        		null != e.BugNest2 ? t.setReserved("BugNest2", Vn) : (t.h.BugNest2 = Vn);
+                        		var Cn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.0", "2", "N/A"],
+                        		];
+                        		null != e.BugNest3 ? t.setReserved("BugNest3", Cn) : (t.h.BugNest3 = Cn);
+                        		var Bn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.0", "2", "N/A"],
+                        		];
+                        		null != e.BugNest4 ? t.setReserved("BugNest4", Bn) : (t.h.BugNest4 = Bn);
+                        		var Pn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.0", "2", "N/A"],
+                        		];
+                        		null != e.BugNest5 ? t.setReserved("BugNest5", Pn) : (t.h.BugNest5 = Pn);
+                        		var On = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.0", "2", "N/A"],
+                        		];
+                        		null != e.BugNest6 ? t.setReserved("BugNest6", On) : (t.h.BugNest6 = On);
+                        		var wn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.0", "2", "N/A"],
+                        		];
+                        		null != e.BugNest7 ? t.setReserved("BugNest7", wn) : (t.h.BugNest7 = wn);
+                        		var kn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["Grasslands2", "0.0", "2", "N/A"],
+                        		];
+                        		null != e.BugNest8 ? t.setReserved("BugNest8", kn) : (t.h.BugNest8 = kn);
+                        		var xn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC11", "0.00042", "1", "N/A"],
+                        			["DropTable12", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.Bug1 ? t.setReserved("Bug1", xn) : (t.h.Bug1 = xn);
+                        		var Qn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC12", "0.00030", "1", "N/A"],
+                        			["ButterBar", "0.01", "1", "N/A"],
+                        			["DropTable12", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.Bug2 ? t.setReserved("Bug2", Qn) : (t.h.Bug2 = Qn);
+                        		var Xn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD10", "0.00028", "1", "N/A"],
+                        			["DropTable12", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.Bug3 ? t.setReserved("Bug3", Xn) : (t.h.Bug3 = Xn);
+                        		var Ln = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD9", "0.00025", "1", "N/A"],
+                        			["DropTable12", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.Bug4 ? t.setReserved("Bug4", Ln) : (t.h.Bug4 = Ln);
+                        		var zn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsF8", "0.00025", "1", "N/A"],
+                        			["DropTable18", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.Bug5 ? t.setReserved("Bug5", zn) : (t.h.Bug5 = zn);
+                        		var Yn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsF9", "0.00025", "1", "N/A"],
+                        			["DropTable18", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.Bug6 ? t.setReserved("Bug6", Yn) : (t.h.Bug6 = Yn);
+                        		var Wn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsF14", "0.00005", "1", "N/A"],
+                        			["DropTable23", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.Bug7 ? t.setReserved("Bug7", Wn) : (t.h.Bug7 = Wn);
+                        		var Zn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsF15", "0.00002", "1", "N/A"],
+                        			["DropTable23", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.Bug8 ? t.setReserved("Bug8", Zn) : (t.h.Bug8 = Zn);
+                        		var Hn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC11", "0.00022", "1", "N/A"],
+                        			["Soul1", "1", "1", "N/A"],
+                        			["Soul1", "1", "1", "N/A"],
+                        			["Soul1", "1", "1", "N/A"],
+                        			["Soul1", "1", "1", "N/A"],
+                        		];
+                        		null != e.SoulCard1 ? t.setReserved("SoulCard1", Hn) : (t.h.SoulCard1 = Hn);
+                        		var Jn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC12", "0.00018", "1", "N/A"],
+                        			["Soul2", "1", "1", "N/A"],
+                        			["Soul2", "1", "1", "N/A"],
+                        			["Soul2", "1", "1", "N/A"],
+                        			["Soul2", "1", "1", "N/A"],
+                        		];
+                        		null != e.SoulCard2 ? t.setReserved("SoulCard2", Jn) : (t.h.SoulCard2 = Jn);
+                        		var jn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD10", "0.00016", "1", "N/A"],
+                        			["Soul3", "1", "1", "N/A"],
+                        			["Soul3", "1", "1", "N/A"],
+                        			["Soul3", "1", "1", "N/A"],
+                        			["Soul3", "1", "1", "N/A"],
+                        		];
+                        		null != e.SoulCard3 ? t.setReserved("SoulCard3", jn) : (t.h.SoulCard3 = jn);
+                        		var qn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD9", "0.00014", "1", "N/A"],
+                        			["DropTable12", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.SoulCard4 ? t.setReserved("SoulCard4", qn) : (t.h.SoulCard4 = qn);
+                        		var Kn = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD9", "0.00014", "1", "N/A"],
+                        			["DropTable12", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.SoulCard5 ? t.setReserved("SoulCard5", Kn) : (t.h.SoulCard5 = Kn);
+                        		var $n = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD9", "0.00014", "1", "N/A"],
+                        			["DropTable12", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.SoulCard6 ? t.setReserved("SoulCard6", $n) : (t.h.SoulCard6 = $n);
+                        		var es = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC11", "0.00022", "1", "N/A"],
+                        			["Critter1", "1", "1", "N/A"],
+                        		];
+                        		null != e.CritterCard1 ? t.setReserved("CritterCard1", es) : (t.h.CritterCard1 = es);
+                        		var ts = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsC12", "0.00018", "1", "N/A"],
+                        			["Critter2", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.CritterCard2 ? t.setReserved("CritterCard2", ts) : (t.h.CritterCard2 = ts);
+                        		var ns = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD10", "0.00016", "1", "N/A"],
+                        			["Critter3", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.CritterCard3 ? t.setReserved("CritterCard3", ns) : (t.h.CritterCard3 = ns);
+                        		var ss = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD9", "0.00014", "1", "N/A"],
+                        			["Critter4", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.CritterCard4 ? t.setReserved("CritterCard4", ss) : (t.h.CritterCard4 = ss);
+                        		var as = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD9", "0.00014", "1", "N/A"],
+                        			["Critter5", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.CritterCard5 ? t.setReserved("CritterCard5", as) : (t.h.CritterCard5 = as);
+                        		var rs = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD9", "0.00014", "1", "N/A"],
+                        			["Critter6", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.CritterCard6 ? t.setReserved("CritterCard6", rs) : (t.h.CritterCard6 = rs);
+                        		var As = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD9", "0.00014", "1", "N/A"],
+                        			["Critter7", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.CritterCard7 ? t.setReserved("CritterCard7", As) : (t.h.CritterCard7 = As);
+                        		var ls = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD9", "0.00014", "1", "N/A"],
+                        			["Critter8", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.CritterCard8 ? t.setReserved("CritterCard8", ls) : (t.h.CritterCard8 = ls);
+                        		var os = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD9", "0.00014", "1", "N/A"],
+                        			["Critter9", "0.015", "1", "N/A"],
+                        		];
+                        		null != e.CritterCard9 ? t.setReserved("CritterCard9", os) : (t.h.CritterCard9 = os);
+                        		var is = [
+                        			["COIN", "0", "0", "N/A"],
+                        			["CardsD10", "0.00014", "1", "N/A"],
+                        			["Critter10", "0.015", "1", "N/A"],
+                        		];
+                        		return null != e.CritterCard10 ? t.setReserved("CritterCard10", is) : (t.h.CritterCard10 = is), t;
+                        	}

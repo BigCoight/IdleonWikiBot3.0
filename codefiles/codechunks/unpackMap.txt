@@ -1,0 +1,10 @@
+                        (F.unpackMap = function(t) {
+                        		var n = new p();
+                        		for (t = new ht(t, t.arrayKeys()); t.hasNext();)
+                        			for (var s = t.next(), a = s.keys(); a.hasNext();) {
+                        				var r = a.next(),
+                        					A = null != e[r] ? s.getReserved(r) : s.h[r];
+                        				null != e[r] ? n.setReserved(r, A) : (n.h[r] = A);
+                        			}
+                        		return n;
+                        	}

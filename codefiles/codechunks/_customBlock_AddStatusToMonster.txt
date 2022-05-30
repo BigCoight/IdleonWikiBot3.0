@@ -1,0 +1,20 @@
+                        (t._customBlock_AddStatusToMonster = function(n, s, a) {
+                        		if (null != s)
+                        			if (Sb.contains(s.getValue("ActorEvents_1", "_StatusList"), n)) s.getValue("ActorEvents_1", "_StatusActive")[s.getValue("ActorEvents_1", "_StatusList").indexOf(n)][1] = a;
+                        			else {
+                        				s.getValue("ActorEvents_1", "_StatusList").push(n);
+                        				var r = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					A = [];
+                        				null != e.AddStatusDummyList ? r.setReserved("AddStatusDummyList", A) : (r.h.AddStatusDummyList = A),
+                        					(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(null != e.AddStatusDummyList ? r.getReserved("AddStatusDummyList") : r.h.AddStatusDummyList).push(n),
+                        					(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(null != e.AddStatusDummyList ? r.getReserved("AddStatusDummyList") : r.h.AddStatusDummyList).push(a),
+                        					(a = s.getValue("ActorEvents_1", "_StatusActive")),
+                        					(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					a.push(null != e.AddStatusDummyList ? r.getReserved("AddStatusDummyList") : r.h.AddStatusDummyList),
+                        					s.getValue("ActorEvents_1", "_StatusImgInst").push(t._customBlock_addImgInst(n + ".png")),
+                        					h.attachImageToActor(s.getValue("ActorEvents_1", "_StatusImgInst")[s.getValue("ActorEvents_1", "_StatusList").indexOf(n)], b.engine.getGameAttribute("OriginPixelActor")[0], 0,
+                        						(-1 - s.getValue("ActorEvents_1", "_StatusImgInst")[s.getValue("ActorEvents_1", "_StatusList").indexOf(n)].get_height() / b.SCALE) | 0, 1);
+                        			}
+                        	}

@@ -1,0 +1,431 @@
+                        (w._customBlock_DungAction = function(s, a, r) {
+                        		if ("ChopTree" == s) {
+                        			if (0 == a)
+                        				if (14 <= r) {
+                        					if (1 == h.randomInt(1, 1)) {
+                        						var o = b.engine.getGameAttribute("OtherPlayers"),
+                        							i = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							u = (null != e[i] ? o.getReserved(i) : o.h[i]).getValue("ActorEvents_20", "_PlayerNode"),
+                        							m = parseNum(u),
+                        							c = b.engine.getGameAttribute("OtherPlayers"),
+                        							p = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							f = (null != e[p] ? c.getReserved(p) : c.h[p]).getXCenter() - 16,
+                        							y = b.engine.getGameAttribute("OtherPlayers"),
+                        							R = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							v = (null != e[R] ? y.getReserved(R) : y.h[R]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        							F = parseNum(v),
+                        							N = b.engine.getGameAttribute("OtherPlayers"),
+                        							_ = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							I = (null != e[_] ? N.getReserved(_) : N.h[_]).getValue("ActorEvents_20", "_PlayerNode");
+                        						A._customBlock_DropSomething("PalmTreeD", 1, 0, 0, 0, m, 0, f + 45 * (2 * F - 1), parseNum(I));
+                        					}
+                        				} else {
+                        					var D = b.engine.gameAttributes;
+                        					null != e.DummyText ? D.setReserved("DummyText", "etcPixelDropLol") : (D.h.DummyText = "etcPixelDropLol");
+                        					var S = b.engine.gameAttributes;
+                        					null != e.dummyDamageDealt ? S.setReserved("dummyDamageDealt", 0) : (S.h.dummyDamageDealt = 0);
+                        					var G = b.engine.gameAttributes;
+                        					null != e.dummyDisplayPopup ? G.setReserved("dummyDisplayPopup", "gold_hatchet_needed") : (G.h.dummyDisplayPopup = "gold_hatchet_needed");
+                        					var T = b.engine.gameAttributes;
+                        					null != e.dummyDisplayEXPTYPE ? T.setReserved("dummyDisplayEXPTYPE", "Null") : (T.h.dummyDisplayEXPTYPE = "Null"), h.createRecycledActor(h.getActorType(34), 8, 457, 2);
+                        					var U = b.engine.gameAttributes;
+                        					null != e.dummyDisplayEXPTYPE ? U.setReserved("dummyDisplayEXPTYPE", "Null") : (U.h.dummyDisplayEXPTYPE = "Null");
+                        				}
+                        			else if (1 == a) {
+                        				var M = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0];
+                        				if (-0.5 < parseNum(M)) {
+                        					if (3 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0]) {
+                        						var V = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN ? V.setReserved("DungActDN", 26) : (V.h.DungActDN = 26);
+                        						var C = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN2 ? C.setReserved("DungActDN2", "void_imperium") : (C.h.DungActDN2 = "void_imperium");
+                        						var B = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN3 ? B.setReserved("DungActDN3", "frogY") : (B.h.DungActDN3 = "frogY");
+                        					} else if (2 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0]) {
+                        						var P = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN ? P.setReserved("DungActDN", 18) : (P.h.DungActDN = 18);
+                        						var O = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN2 ? O.setReserved("DungActDN2", "plat") : (O.h.DungActDN2 = "plat");
+                        						var x = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN3 ? x.setReserved("DungActDN3", "frogBIG") : (x.h.DungActDN3 = "frogBIG");
+                        					} else if (1 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0]) {
+                        						var Q = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN ? Q.setReserved("DungActDN", 10) : (Q.h.DungActDN = 10);
+                        						var X = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN2 ? X.setReserved("DungActDN2", "iron") : (X.h.DungActDN2 = "iron");
+                        						var L = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN3 ? L.setReserved("DungActDN3", "frogP") : (L.h.DungActDN3 = "frogP");
+                        					} else {
+                        						var z = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN ? z.setReserved("DungActDN", 7) : (z.h.DungActDN = 7);
+                        						var Y = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN2 ? Y.setReserved("DungActDN2", "copper") : (Y.h.DungActDN2 = "copper");
+                        						var W = b.engine.getGameAttribute("DNSM");
+                        						null != e.DungActDN3 ? W.setReserved("DungActDN3", "frogG") : (W.h.DungActDN3 = "frogG");
+                        					}
+                        					var Z = b.engine.getGameAttribute("DNSM"),
+                        						H = null != e.DungActDN ? Z.getReserved("DungActDN") : Z.h.DungActDN;
+                        					if (r >= parseNum(H) || 9999 == r) {
+                        						if (1 == h.randomInt(1, Math.ceil(1 + w._customBlock_DungeonStat("PartySize") / 1.5)) || 9999 == r) {
+                        							1e3 > r && E.partyOther("Dungeon1fg", Math.round(0), Math.round(0), Math.round(0));
+                        							var J = b.engine.getGameAttribute("DNSM");
+                        							t._customBlock_CreateMonster("" + g.string(null != e.DungActDN3 ? J.getReserved("DungActDN3") : J.h.DungActDN3), 6, 10);
+                        							var j = b.engine.getGameAttribute("DNSM");
+                        							"frogBIG" == (null != e.DungActDN3 ? j.getReserved("DungActDN3") : j.h.DungActDN3) && h.getLastCreatedActor().setFilter([h.createHueFilter(90)]);
+                        						}
+                        					} else {
+                        						var q = b.engine.gameAttributes;
+                        						null != e.DummyText ? q.setReserved("DummyText", "etcPixelDropLol") : (q.h.DummyText = "etcPixelDropLol");
+                        						var K = b.engine.gameAttributes;
+                        						null != e.dummyDamageDealt ? K.setReserved("dummyDamageDealt", 0) : (K.h.dummyDamageDealt = 0);
+                        						var $ = b.engine,
+                        							ee = b.engine.getGameAttribute("DNSM"),
+                        							te = null != e.DungActDN2 ? ee.getReserved("DungActDN2") : ee.h.DungActDN2,
+                        							ne = $.gameAttributes,
+                        							se = g.string(te) + "_hatchet_needed";
+                        						null != e.dummyDisplayPopup ? ne.setReserved("dummyDisplayPopup", se) : (ne.h.dummyDisplayPopup = se);
+                        						var ae = b.engine.gameAttributes;
+                        						null != e.dummyDisplayEXPTYPE ? ae.setReserved("dummyDisplayEXPTYPE", "Null") : (ae.h.dummyDisplayEXPTYPE = "Null"), h.createRecycledActor(h.getActorType(34), 8, 457, 2);
+                        						var re = b.engine.gameAttributes;
+                        						null != e.dummyDisplayEXPTYPE ? re.setReserved("dummyDisplayEXPTYPE", "Null") : (re.h.dummyDisplayEXPTYPE = "Null");
+                        					}
+                        				}
+                        			} else if (2 == a)
+                        				if (17 <= r) {
+                        					if (0.8 + (r - 17) / 50 > h.randomFloat()) {
+                        						var Ae = b.engine.getGameAttribute("OtherPlayers"),
+                        							le = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							oe = (null != e[le] ? Ae.getReserved(le) : Ae.h[le]).getValue("ActorEvents_20", "_PlayerNode"),
+                        							ie = parseNum(oe),
+                        							ue = b.engine.getGameAttribute("OtherPlayers"),
+                        							ge = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							me = (null != e[ge] ? ue.getReserved(ge) : ue.h[ge]).getXCenter() - 16,
+                        							de = b.engine.getGameAttribute("OtherPlayers"),
+                        							ce = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							pe = (null != e[ce] ? de.getReserved(ce) : de.h[ce]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        							he = parseNum(pe),
+                        							be = b.engine.getGameAttribute("OtherPlayers"),
+                        							fe = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							ye = (null != e[fe] ? be.getReserved(fe) : be.h[fe]).getValue("ActorEvents_20", "_PlayerNode");
+                        						A._customBlock_DropSomething("Tree7D", 1, 0, 0, 0, ie, 0, me + 45 * (2 * he - 1), parseNum(ye));
+                        					}
+                        				} else {
+                        					var Re = b.engine.gameAttributes;
+                        					null != e.DummyText ? Re.setReserved("DummyText", "etcPixelDropLol") : (Re.h.DummyText = "etcPixelDropLol");
+                        					var ve = b.engine.gameAttributes;
+                        					null != e.dummyDamageDealt ? ve.setReserved("dummyDamageDealt", 0) : (ve.h.dummyDamageDealt = 0);
+                        					var Fe = b.engine.gameAttributes;
+                        					null != e.dummyDisplayPopup ? Fe.setReserved("dummyDisplayPopup", "platinum_hatchet_needed") : (Fe.h.dummyDisplayPopup = "platinum_hatchet_needed");
+                        					var Ne = b.engine.gameAttributes;
+                        					null != e.dummyDisplayEXPTYPE ? Ne.setReserved("dummyDisplayEXPTYPE", "Null") : (Ne.h.dummyDisplayEXPTYPE = "Null"), h.createRecycledActor(h.getActorType(34), 8, 457, 2);
+                        					var _e = b.engine.gameAttributes;
+                        					null != e.dummyDisplayEXPTYPE ? _e.setReserved("dummyDisplayEXPTYPE", "Null") : (_e.h.dummyDisplayEXPTYPE = "Null");
+                        				}
+                        		} else if ("SwitchActivated" == s) {
+                        			if (2 == w._customBlock_Dungon() && (25 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID") || 14 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID"))) {
+                        				var Ie = b.engine.getGameAttribute("DNSM");
+                        				null != e.DungActDN ? Ie.setReserved("DungActDN", 0) : (Ie.h.DungActDN = 0);
+                        				for (var De = 0, Ee = h.getActorsOfType(h.getActorType(44)); De < Ee.length;) {
+                        					var Se = Ee[De];
+                        					if (
+                        						(++De, null != Se && !Se.dead && !Se.recycled && ((25 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID") && "Quest54" == Se.getValue("ActorEvents_44", "_DropType")) || (14 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID") && "Quest53" == Se.getValue("ActorEvents_44", "_DropType"))))) {
+                        						var Ge = b.engine.getGameAttribute("DNSM"),
+                        							Te = b.engine.getGameAttribute("DNSM"),
+                        							Ue = null != e.DungActDN ? Te.getReserved("DungActDN") : Te.h.DungActDN,
+                        							Me = Ge,
+                        							Ve = parseNum(Ue) + 1;
+                        						null != e.DungActDN ? Me.setReserved("DungActDN", Ve) : (Me.h.DungActDN = Ve);
+                        					}
+                        				}
+                        				if (25 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) var Ce = b.engine.getGameAttribute("DNSM"),
+                        					Be = 25 == (null != e.DungActDN ? Ce.getReserved("DungActDN") : Ce.h.DungActDN);
+                        				else Be = !1;
+                        				if (Be) var Pe = !0;
+                        				else if (14 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					var Oe = b.engine.getGameAttribute("DNSM"),
+                        						we = null != e.DungActDN ? Oe.getReserved("DungActDN") : Oe.h.DungActDN,
+                        						ke = b.engine.getGameAttribute("NONdummies")[24];
+                        					Pe = we == 20 * Math.ceil(parseNum(ke) / 5);
+                        				} else Pe = !1;
+                        				if (Pe) {
+                        					var xe = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[54];
+                        					if (2 > parseNum(xe)) {
+                        						var Qe = b.engine,
+                        							Xe = w._customBlock_DungeonCalc("DungeonScoreAdd", 3e4),
+                        							Le = Qe.gameAttributes;
+                        						null != e.DummyNumberSafe ? Le.setReserved("DummyNumberSafe", Xe) : (Le.h.DummyNumberSafe = Xe);
+                        					} else {
+                        						var ze = b.engine,
+                        							Ye = w._customBlock_DungeonCalc("DungeonScoreAdd", 15e3),
+                        							We = ze.gameAttributes;
+                        						null != e.DummyNumberSafe ? We.setReserved("DummyNumberSafe", Ye) : (We.h.DummyNumberSafe = Ye);
+                        					}
+                        					b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[1] = 0;
+                        				} else
+                        					for (var Ze = 0, He = h.getActorsOfType(h.getActorType(358)); Ze < He.length;) {
+                        						var Je = He[Ze];
+                        						++Ze, null == Je || Je.dead || Je.recycled || (Je.getValue("ActorEvents_358", "_PersonalLIST")[1] = 4);
+                        					}
+                        				for (var je = 0, qe = h.getActorsOfType(h.getActorType(44)); je < qe.length;) {
+                        					var Ke = qe[je];
+                        					++je,
+                        					null == Ke || Ke.dead || Ke.recycled || (25 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID") ? "Quest54" == Ke.getValue("ActorEvents_44", "_DropType") && h.recycleActor(Ke) : 14 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID") && "Quest53" == Ke.getValue("ActorEvents_44", "_DropType") && h.recycleActor(Ke));
+                        				}
+                        				0 == b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0] ? (b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_DungINFO")[0] = 1) : (b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[1] = 0);
+                        			}
+                        		} else if ("MineCopper" == s)
+                        			if (1 == h.randomInt(1, 12)) {
+                        				b.engine.getGameAttribute("MonsterHP")[0 | r] = 0;
+                        				var $e = b.engine.getGameAttribute("OtherPlayers"),
+                        					et = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					tt = (null != e[et] ? $e.getReserved(et) : $e.h[et]).getValue("ActorEvents_20", "_PlayerNode"),
+                        					nt = parseNum(tt),
+                        					st = b.engine.getGameAttribute("OtherPlayers"),
+                        					at = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					rt = (null != e[at] ? st.getReserved(at) : st.h[at]).getXCenter() - 30,
+                        					At = b.engine.getGameAttribute("OtherPlayers"),
+                        					lt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					ot = (null != e[lt] ? At.getReserved(lt) : At.h[lt]).getValue("ActorEvents_20", "_PlayerDirection");
+                        				t._customBlock_CreateMonster("rocky", nt, rt + 60 * (2 * parseNum(ot) - 1)),
+                        					t._customBlock_AddStatusToMonster("StatusMultiCombat", h.getLastCreatedActor(), 1e4);
+                        				var it = b.engine.getGameAttribute("OtherPlayers"),
+                        					ut = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					gt = (null != e[ut] ? it.getReserved(ut) : it.h[ut]).getValue("ActorEvents_20", "_PlayerNode"),
+                        					mt = Math.round(parseNum(gt)),
+                        					dt = b.engine.getGameAttribute("OtherPlayers"),
+                        					ct = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					pt = (null != e[ct] ? dt.getReserved(ct) : dt.h[ct]).getXCenter() - 30,
+                        					ht = b.engine.getGameAttribute("OtherPlayers"),
+                        					bt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					ft = (null != e[bt] ? ht.getReserved(bt) : ht.h[bt]).getValue("ActorEvents_20", "_PlayerDirection");
+                        				E.partyOther("D2rok", mt, Math.round(pt + 60 * (2 * parseNum(ft) - 1)), 0);
+                        			} else 1 == h.randomInt(1, 4) && (b.engine.getGameAttribute("MonsterHP")[0 | r] = 0);
+                        		else if ("MineIron" == s)
+                        			if (10 <= a)
+                        				if (1 == h.randomInt(1, 7)) {
+                        					b.engine.getGameAttribute("MonsterHP")[0 | r] = 0;
+                        					var yt = b.engine.getGameAttribute("OtherPlayers"),
+                        						Rt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						vt = (null != e[Rt] ? yt.getReserved(Rt) : yt.h[Rt]).getValue("ActorEvents_20", "_PlayerNode"),
+                        						Ft = parseNum(vt),
+                        						Nt = b.engine.getGameAttribute("OtherPlayers"),
+                        						_t = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						It = (null != e[_t] ? Nt.getReserved(_t) : Nt.h[_t]).getXCenter() - 30,
+                        						Dt = b.engine.getGameAttribute("OtherPlayers"),
+                        						Et = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						St = (null != e[Et] ? Dt.getReserved(Et) : Dt.h[Et]).getValue("ActorEvents_20", "_PlayerDirection");
+                        					t._customBlock_CreateMonster("rocky", Ft, It + 60 * (2 * parseNum(St) - 1)),
+                        						t._customBlock_AddStatusToMonster("StatusMultiCombat", h.getLastCreatedActor(), 1e4);
+                        					var Gt = b.engine.getGameAttribute("OtherPlayers"),
+                        						Tt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						Ut = (null != e[Tt] ? Gt.getReserved(Tt) : Gt.h[Tt]).getValue("ActorEvents_20", "_PlayerNode"),
+                        						Mt = Math.round(parseNum(Ut)),
+                        						Vt = b.engine.getGameAttribute("OtherPlayers"),
+                        						Ct = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						Bt = (null != e[Ct] ? Vt.getReserved(Ct) : Vt.h[Ct]).getXCenter() - 30,
+                        						Pt = b.engine.getGameAttribute("OtherPlayers"),
+                        						Ot = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						wt = (null != e[Ot] ? Pt.getReserved(Ot) : Pt.h[Ot]).getValue("ActorEvents_20", "_PlayerDirection");
+                        					E.partyOther("D2rok", Mt, Math.round(Bt + 60 * (2 * parseNum(wt) - 1)), 0);
+                        				} else 1 == h.randomInt(1, 5) && (b.engine.getGameAttribute("MonsterHP")[0 | r] = 0);
+                        		else {
+                        			var kt = b.engine.gameAttributes;
+                        			null != e.DummyText ? kt.setReserved("DummyText", "etcPixelDropLol") : (kt.h.DummyText = "etcPixelDropLol");
+                        			var xt = b.engine.gameAttributes;
+                        			null != e.dummyDamageDealt ? xt.setReserved("dummyDamageDealt", 0) : (xt.h.dummyDamageDealt = 0);
+                        			var Qt = b.engine.gameAttributes;
+                        			null != e.dummyDisplayPopup ? Qt.setReserved("dummyDisplayPopup", "iron_pickaxe_needed") : (Qt.h.dummyDisplayPopup = "iron_pickaxe_needed");
+                        			var Xt = b.engine.gameAttributes;
+                        			null != e.dummyDisplayEXPTYPE ? Xt.setReserved("dummyDisplayEXPTYPE", "Null") : (Xt.h.dummyDisplayEXPTYPE = "Null"), h.createRecycledActor(h.getActorType(34), 8, 457, 2);
+                        			var Lt = b.engine.gameAttributes;
+                        			null != e.dummyDisplayEXPTYPE ? Lt.setReserved("dummyDisplayEXPTYPE", "Null") : (Lt.h.dummyDisplayEXPTYPE = "Null");
+                        		} else if ("MineGold" == s)
+                        			if (13 <= a)
+                        				if (1 == h.randomInt(1, 4)) {
+                        					b.engine.getGameAttribute("MonsterHP")[0 | r] = 0;
+                        					var zt = b.engine.getGameAttribute("OtherPlayers"),
+                        						Yt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						Wt = (null != e[Yt] ? zt.getReserved(Yt) : zt.h[Yt]).getValue("ActorEvents_20", "_PlayerNode"),
+                        						Zt = parseNum(Wt),
+                        						Ht = b.engine.getGameAttribute("OtherPlayers"),
+                        						Jt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						jt = (null != e[Jt] ? Ht.getReserved(Jt) : Ht.h[Jt]).getXCenter() - 30,
+                        						qt = b.engine.getGameAttribute("OtherPlayers"),
+                        						Kt = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						$t = (null != e[Kt] ? qt.getReserved(Kt) : qt.h[Kt]).getValue("ActorEvents_20", "_PlayerDirection");
+                        					t._customBlock_CreateMonster("rocky", Zt, jt + 60 * (2 * (null == $t ? 0 : "number" == typeof $t ? d.__cast($t, k) : "number" == typeof $t && (0 | $t) === $t ? d.__cast($t, l) : "boolean" == typeof $t ? d.__cast($t, n) ? 1 : 0 : "string" == typeof $t ? parseFloat($t) : parseFloat(g.string($t))) - 1)),
+                        						t._customBlock_AddStatusToMonster("StatusMultiCombat", h.getLastCreatedActor(), 1e4);
+                        					var en = b.engine.getGameAttribute("OtherPlayers"),
+                        						tn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						nn = (null != e[tn] ? en.getReserved(tn) : en.h[tn]).getValue("ActorEvents_20", "_PlayerNode"),
+                        						sn = Math.round(parseNum(nn)),
+                        						an = b.engine.getGameAttribute("OtherPlayers"),
+                        						rn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						An = (null != e[rn] ? an.getReserved(rn) : an.h[rn]).getXCenter() - 30,
+                        						ln = b.engine.getGameAttribute("OtherPlayers"),
+                        						on = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						un = (null != e[on] ? ln.getReserved(on) : ln.h[on]).getValue("ActorEvents_20", "_PlayerDirection");
+                        					E.partyOther("D2rok", sn, Math.round(An + 60 * (2 * parseNum(un) - 1)), 0);
+                        				} else 1 == h.randomInt(1, 6) && (b.engine.getGameAttribute("MonsterHP")[0 | r] = 0);
+                        		else {
+                        			var gn = b.engine.gameAttributes;
+                        			null != e.DummyText ? gn.setReserved("DummyText", "etcPixelDropLol") : (gn.h.DummyText = "etcPixelDropLol");
+                        			var mn = b.engine.gameAttributes;
+                        			null != e.dummyDamageDealt ? mn.setReserved("dummyDamageDealt", 0) : (mn.h.dummyDamageDealt = 0);
+                        			var dn = b.engine.gameAttributes;
+                        			null != e.dummyDisplayPopup ? dn.setReserved("dummyDisplayPopup", "gold_pickaxe_needed") : (dn.h.dummyDisplayPopup = "gold_pickaxe_needed");
+                        			var cn = b.engine.gameAttributes;
+                        			null != e.dummyDisplayEXPTYPE ? cn.setReserved("dummyDisplayEXPTYPE", "Null") : (cn.h.dummyDisplayEXPTYPE = "Null"), h.createRecycledActor(h.getActorType(34), 8, 457, 2);
+                        			var pn = b.engine.gameAttributes;
+                        			null != e.dummyDisplayEXPTYPE ? pn.setReserved("dummyDisplayEXPTYPE", "Null") : (pn.h.dummyDisplayEXPTYPE = "Null");
+                        		} else if ("MinePlat" == s)
+                        			if (16 <= a)
+                        				if (3 == w._customBlock_Dungon()) {
+                        					if (0.8 + (a - 16) / 60 > h.randomFloat()) {
+                        						var hn = b.engine.getGameAttribute("OtherPlayers"),
+                        							bn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							fn = (null != e[bn] ? hn.getReserved(bn) : hn.h[bn]).getValue("ActorEvents_20", "_PlayerNode"),
+                        							yn = parseNum(fn),
+                        							Rn = b.engine.getGameAttribute("OtherPlayers"),
+                        							vn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							Fn = (null != e[vn] ? Rn.getReserved(vn) : Rn.h[vn]).getXCenter() - 16,
+                        							Nn = b.engine.getGameAttribute("OtherPlayers"),
+                        							_n = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							In = (null != e[_n] ? Nn.getReserved(_n) : Nn.h[_n]).getValue("ActorEvents_20", "_PlayerDirection"),
+                        							Dn = parseNum(In),
+                        							En = b.engine.getGameAttribute("OtherPlayers"),
+                        							Sn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        							Gn = (null != e[Sn] ? En.getReserved(Sn) : En.h[Sn]).getValue("ActorEvents_20", "_PlayerNode");
+                        						A._customBlock_DropSomething("PlatD", 1, 0, 0, 0, yn, 0, Fn + 45 * (2 * Dn - 1), parseNum(Gn));
+                        					}
+                        				} else if (1 == h.randomInt(1, 3)) {
+                        			b.engine.getGameAttribute("MonsterHP")[0 | r] = 0;
+                        			var Tn = b.engine.getGameAttribute("OtherPlayers"),
+                        				Un = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Mn = (null != e[Un] ? Tn.getReserved(Un) : Tn.h[Un]).getValue("ActorEvents_20", "_PlayerNode"),
+                        				Vn = parseNum(Mn),
+                        				Cn = b.engine.getGameAttribute("OtherPlayers"),
+                        				Bn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Pn = (null != e[Bn] ? Cn.getReserved(Bn) : Cn.h[Bn]).getXCenter() - 30,
+                        				On = b.engine.getGameAttribute("OtherPlayers"),
+                        				wn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				kn = (null != e[wn] ? On.getReserved(wn) : On.h[wn]).getValue("ActorEvents_20", "_PlayerDirection");
+                        			t._customBlock_CreateMonster("rocky", Vn, Pn + 60 * (2 * parseNum(kn) - 1)),
+                        				t._customBlock_AddStatusToMonster("StatusMultiCombat", h.getLastCreatedActor(), 1e4);
+                        			var xn = b.engine.getGameAttribute("OtherPlayers"),
+                        				Qn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Xn = (null != e[Qn] ? xn.getReserved(Qn) : xn.h[Qn]).getValue("ActorEvents_20", "_PlayerNode"),
+                        				Ln = Math.round(parseNum(Xn)),
+                        				zn = b.engine.getGameAttribute("OtherPlayers"),
+                        				Yn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Wn = (null != e[Yn] ? zn.getReserved(Yn) : zn.h[Yn]).getXCenter() - 30,
+                        				Zn = b.engine.getGameAttribute("OtherPlayers"),
+                        				Hn = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        				Jn = (null != e[Hn] ? Zn.getReserved(Hn) : Zn.h[Hn]).getValue("ActorEvents_20", "_PlayerDirection");
+                        			E.partyOther("D2rok", Ln, Math.round(Wn + 60 * (2 * parseNum(Jn) - 1)), 0);
+                        		} else 1 == h.randomInt(1, 8) && (b.engine.getGameAttribute("MonsterHP")[0 | r] = 0);
+                        		else {
+                        			var jn = b.engine.gameAttributes;
+                        			null != e.DummyText ? jn.setReserved("DummyText", "etcPixelDropLol") : (jn.h.DummyText = "etcPixelDropLol");
+                        			var qn = b.engine.gameAttributes;
+                        			null != e.dummyDamageDealt ? qn.setReserved("dummyDamageDealt", 0) : (qn.h.dummyDamageDealt = 0);
+                        			var Kn = b.engine.gameAttributes;
+                        			null != e.dummyDisplayPopup ? Kn.setReserved("dummyDisplayPopup", "platinum_pickaxe_needed") : (Kn.h.dummyDisplayPopup = "platinum_pickaxe_needed");
+                        			var $n = b.engine.gameAttributes;
+                        			null != e.dummyDisplayEXPTYPE ? $n.setReserved("dummyDisplayEXPTYPE", "Null") : ($n.h.dummyDisplayEXPTYPE = "Null"), h.createRecycledActor(h.getActorType(34), 8, 457, 2);
+                        			var es = b.engine.gameAttributes;
+                        			null != e.dummyDisplayEXPTYPE ? es.setReserved("dummyDisplayEXPTYPE", "Null") : (es.h.dummyDisplayEXPTYPE = "Null");
+                        		} else if ("MineVoid" == s)
+                        			if (19 <= a)
+                        				if (1 == h.randomInt(1, 2)) {
+                        					b.engine.getGameAttribute("MonsterHP")[0 | r] = 0;
+                        					var ts = b.engine.getGameAttribute("OtherPlayers"),
+                        						ns = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						ss = (null != e[ns] ? ts.getReserved(ns) : ts.h[ns]).getValue("ActorEvents_20", "_PlayerNode"),
+                        						as = parseNum(ss),
+                        						rs = b.engine.getGameAttribute("OtherPlayers"),
+                        						As = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						ls = (null != e[As] ? rs.getReserved(As) : rs.h[As]).getXCenter() - 30,
+                        						os = b.engine.getGameAttribute("OtherPlayers"),
+                        						is = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						us = (null != e[is] ? os.getReserved(is) : os.h[is]).getValue("ActorEvents_20", "_PlayerDirection");
+                        					t._customBlock_CreateMonster("rocky", as, ls + 60 * (2 * parseNum(us) - 1)),
+                        						t._customBlock_AddStatusToMonster("StatusMultiCombat", h.getLastCreatedActor(), 1e4);
+                        					var gs = b.engine.getGameAttribute("OtherPlayers"),
+                        						ms = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						ds = (null != e[ms] ? gs.getReserved(ms) : gs.h[ms]).getValue("ActorEvents_20", "_PlayerNode"),
+                        						cs = Math.round(parseNum(ds)),
+                        						ps = b.engine.getGameAttribute("OtherPlayers"),
+                        						hs = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						bs = (null != e[hs] ? ps.getReserved(hs) : ps.h[hs]).getXCenter() - 30,
+                        						fs = b.engine.getGameAttribute("OtherPlayers"),
+                        						ys = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						Rs = (null != e[ys] ? fs.getReserved(ys) : fs.h[ys]).getValue("ActorEvents_20", "_PlayerDirection");
+                        					E.partyOther("D2rok", cs, Math.round(bs + 60 * (2 * parseNum(Rs) - 1)), 0);
+                        				} else 1 == h.randomInt(1, 10) && (b.engine.getGameAttribute("MonsterHP")[0 | r] = 0);
+                        		else {
+                        			var vs = b.engine.gameAttributes;
+                        			null != e.DummyText ? vs.setReserved("DummyText", "etcPixelDropLol") : (vs.h.DummyText = "etcPixelDropLol");
+                        			var Fs = b.engine.gameAttributes;
+                        			null != e.dummyDamageDealt ? Fs.setReserved("dummyDamageDealt", 0) : (Fs.h.dummyDamageDealt = 0);
+                        			var Ns = b.engine.gameAttributes;
+                        			null != e.dummyDisplayPopup ? Ns.setReserved("dummyDisplayPopup", "dementia_pickaxe_needed") : (Ns.h.dummyDisplayPopup = "dementia_pickaxe_needed");
+                        			var _s = b.engine.gameAttributes;
+                        			null != e.dummyDisplayEXPTYPE ? _s.setReserved("dummyDisplayEXPTYPE", "Null") : (_s.h.dummyDisplayEXPTYPE = "Null"), h.createRecycledActor(h.getActorType(34), 8, 457, 2);
+                        			var Is = b.engine.gameAttributes;
+                        			null != e.dummyDisplayEXPTYPE ? Is.setReserved("dummyDisplayEXPTYPE", "Null") : (Is.h.dummyDisplayEXPTYPE = "Null");
+                        		} else if ("Dungeon3" == s)
+                        			if (-999 == a) b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[98][0 | r] = 0;
+                        			else if (0 > a) {
+                        			var Ds = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[98],
+                        				Es = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[98][0 | r];
+                        			Ds[0 | r] = Math.max(0, parseNum(Es) + a);
+                        		} else {
+                        			var Ss = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[98],
+                        				Gs = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[98][0 | r];
+                        			Ss[0 | r] = parseNum(Gs) + 1;
+                        		} else if ("Fishing" == s) {
+                        			if (3 == w._customBlock_Dungon()) {
+                        				var Ts = b.engine.gameAttributes;
+                        				null != e.PopupType ? Ts.setReserved("PopupType", 6) : (Ts.h.PopupType = 6);
+                        				var Us = b.engine.gameAttributes;
+                        				null != e.DummyNumber4 ? Us.setReserved("DummyNumber4", 1) : (Us.h.DummyNumber4 = 1);
+                        				var Ms = b.engine.gameAttributes;
+                        				if ((null != e.DummyText2 ? Ms.setReserved("DummyText2", "Fish1") : (Ms.h.DummyText2 = "Fish1"), 0.6 > h.randomFloat())) {
+                        					var Vs = b.engine.gameAttributes;
+                        					null != e.DummyNumber4 ? Vs.setReserved("DummyNumber4", 2) : (Vs.h.DummyNumber4 = 2);
+                        					var Cs = b.engine.gameAttributes;
+                        					null != e.DummyText2 ? Cs.setReserved("DummyText2", "Fish3") : (Cs.h.DummyText2 = "Fish3");
+                        				}
+                        			} else {
+                        				var Bs = b.engine.gameAttributes;
+                        				null != e.PopupType ? Bs.setReserved("PopupType", 6) : (Bs.h.PopupType = 6);
+                        				var Ps = b.engine.gameAttributes;
+                        				null != e.DummyNumber4 ? Ps.setReserved("DummyNumber4", 2) : (Ps.h.DummyNumber4 = 2);
+                        				var Os = b.engine.gameAttributes;
+                        				if ((null != e.DummyText2 ? Os.setReserved("DummyText2", "Fish2") : (Os.h.DummyText2 = "Fish2"), 0.6 > h.randomFloat())) {
+                        					var ws = b.engine.gameAttributes;
+                        					null != e.DummyNumber4 ? ws.setReserved("DummyNumber4", 1) : (ws.h.DummyNumber4 = 1);
+                        					var ks = b.engine.gameAttributes;
+                        					null != e.DummyText2 ? ks.setReserved("DummyText2", "Fish1") : (ks.h.DummyText2 = "Fish1");
+                        				} else if (0.2 > h.randomFloat() && 28 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_RoomID")) {
+                        					var xs = b.engine.gameAttributes;
+                        					null != e.DummyNumber4 ? xs.setReserved("DummyNumber4", 5) : (xs.h.DummyNumber4 = 5);
+                        					var Qs = b.engine.gameAttributes;
+                        					null != e.DummyText2 ? Qs.setReserved("DummyText2", "Fish4") : (Qs.h.DummyText2 = "Fish4");
+                        				} else if (0.6 > h.randomFloat()) {
+                        					var Xs = b.engine.gameAttributes;
+                        					null != e.DummyNumber4 ? Xs.setReserved("DummyNumber4", -1) : (Xs.h.DummyNumber4 = -1);
+                        					var Ls = b.engine.gameAttributes;
+                        					null != e.DummyText2 ? Ls.setReserved("DummyText2", "FishM") : (Ls.h.DummyText2 = "FishM");
+                        				}
+                        			}
+                        			h.createRecycledActor(h.getActorType(40), a, r, 0), E.partyOther("D2fish", Math.round(b.engine.getGameAttribute("DummyNumber4")), Math.round(a), Math.round(r));
+                        		} else if ("SkillingAction" == s) {
+                        			var zs = b.engine.getGameAttribute("DNSM"),
+                        				Ys = b.engine.getGameAttribute("DNSM"),
+                        				Ws = null != e.skillingDmgVAL ? Ys.getReserved("skillingDmgVAL") : Ys.h.skillingDmgVAL,
+                        				Zs = parseNum(Ws) + 1;
+                        			null != e.skillingDmgVAL ? zs.setReserved("skillingDmgVAL", Zs) : (zs.h.skillingDmgVAL = Zs);
+                        		}
+                        	}

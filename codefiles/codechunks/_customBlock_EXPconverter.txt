@@ -1,0 +1,22 @@
+                        (U._customBlock_EXPconverter = function(s) {
+                        		if (0 == s) {
+                        			if (0 < (null == (s = b.engine.getGameAttribute("OptionsList")[30]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)))) {
+                        				s = t._customBlock_GetTalentNumber(1, 626);
+                        				var a = b.engine.getGameAttribute("DNSM");
+                        				(a = null != e.AlchVials ? a.getReserved("AlchVials") : a.h.AlchVials),
+                        				(a = null == (a = null != e.ClassEXPconvert ? a.getReserved("ClassEXPconvert") : a.h.ClassEXPconvert) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)));
+                        				var r = 1 + U._customBlock_CardBonusREAL(22) / 100,
+                        					A = Math.max(t._customBlock_GetTalentNumber(1, 630), 1) - 1,
+                        					o = b.engine.getGameAttribute("Lv0"),
+                        					i = b.engine.getGameAttribute("OptionsList")[30];
+                        				return (
+                        					((s + a) * r * (1 + A * ((null == (o = o[0 | parseNum(i)]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))) / 5))) / 100);
+                        			}
+                        			return (
+                        				(s = t._customBlock_GetTalentNumber(1, 626)),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null != e.AlchVials ? a.getReserved("AlchVials") : a.h.AlchVials),
+                        				((s + (null == (a = null != e.ClassEXPconvert ? a.getReserved("ClassEXPconvert") : a.h.ClassEXPconvert) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)))) * (1 + U._customBlock_CardBonusREAL(22) / 100) * Math.max(t._customBlock_GetTalentNumber(1, 630), 1)) / 100);
+                        		}
+                        		return 1;
+                        	}

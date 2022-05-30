@@ -1,0 +1,531 @@
+                        (t._customBlock_KilledMonsterType = function(s) {
+                        		if ((U._customBlock_TaskProgress(0, 0, "Guild", 1), "On" == "" + w._customBlock_eventStatus() && 0 == b.engine.getGameAttribute("PlayerAutoMoveTOGGLE"))) {
+                        			var a = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Falloween_Pumpkin1 ? a.getReserved("Falloween_Pumpkin1") : a.h.Falloween_Pumpkin1)) {
+                        				var r = b.engine.getGameAttribute("QuestStatus"),
+                        					o = null != e.Falloween_Pumpkin1 ? r.getReserved("Falloween_Pumpkin1") : r.h.Falloween_Pumpkin1,
+                        					i = b.engine.getGameAttribute("QuestStatus"),
+                        					u = (null != e.Falloween_Pumpkin1 ? i.getReserved("Falloween_Pumpkin1") : i.h.Falloween_Pumpkin1)[0];
+                        				o[0] = parseNum(u) + 1;
+                        			} else {
+                        				var m = b.engine.getGameAttribute("QuestComplete");
+                        				if (0 == (null != e.Falloween_Pumpkin3 ? m.getReserved("Falloween_Pumpkin3") : m.h.Falloween_Pumpkin3)) {
+                        					var c = b.engine.getGameAttribute("QuestStatus"),
+                        						p = null != e.Falloween_Pumpkin3 ? c.getReserved("Falloween_Pumpkin3") : c.h.Falloween_Pumpkin3,
+                        						f = b.engine.getGameAttribute("QuestStatus"),
+                        						y = (null != e.Falloween_Pumpkin3 ? f.getReserved("Falloween_Pumpkin3") : f.h.Falloween_Pumpkin3)[0];
+                        					p[0] = parseNum(y) + 1;
+                        				} else {
+                        					var R = b.engine.getGameAttribute("QuestComplete");
+                        					if (0 == (null != e.Falloween_Pumpkin5 ? R.getReserved("Falloween_Pumpkin5") : R.h.Falloween_Pumpkin5))
+                        						for (var v = 0, F = b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[57].length; v < F;) {
+                        							var N = v++,
+                        								_ = b.engine.getGameAttribute("OtherPlayers"),
+                        								I = "" + g.string(b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[57][N]),
+                        								D = _;
+                        							if (
+                        								(null != e[I] ? D.existsReserved(I) : D.h.hasOwnProperty(I)) && b.engine.getGameAttribute("UserInfo")[0] != b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[57][N]) {
+                        								var E = b.engine.getGameAttribute("QuestStatus"),
+                        									S = null != e.Falloween_Pumpkin5 ? E.getReserved("Falloween_Pumpkin5") : E.h.Falloween_Pumpkin5,
+                        									G = b.engine.getGameAttribute("QuestStatus"),
+                        									T = (null != e.Falloween_Pumpkin5 ? G.getReserved("Falloween_Pumpkin5") : G.h.Falloween_Pumpkin5)[0];
+                        								S[0] = parseNum(T) + 1;
+                        								break;
+                        							}
+                        						}
+                        				}
+                        			}
+                        		}
+                        		if ("branch" == s) {
+                        			var M = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Sprout2 ? M.getReserved("Sprout2") : M.h.Sprout2)) {
+                        				var V = b.engine.gameAttributes;
+                        				null != e.DummyNumber ? V.setReserved("DummyNumber", 0) : (V.h.DummyNumber = 0);
+                        				for (var C = 0; 8 > C;) {
+                        					var B = C++;
+                        					if ("Blank" != b.engine.getGameAttribute("EquipmentOrder")[0][B] && 1 != B) {
+                        						var P = b.engine.gameAttributes;
+                        						null != e.DummyNumber ? P.setReserved("DummyNumber", 1) : (P.h.DummyNumber = 1);
+                        					}
+                        				}
+                        				if (0 == b.engine.getGameAttribute("DummyNumber")) {
+                        					var O = b.engine.getGameAttribute("QuestStatus"),
+                        						x = null != e.Sprout2 ? O.getReserved("Sprout2") : O.h.Sprout2,
+                        						Q = b.engine.getGameAttribute("QuestStatus"),
+                        						X = (null != e.Sprout2 ? Q.getReserved("Sprout2") : Q.h.Sprout2)[0];
+                        					x[0] = parseNum(X) + 1;
+                        				}
+                        			}
+                        		} else if ("poopD" == s) {
+                        			var L = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Meel1 ? L.getReserved("Meel1") : L.h.Meel1)) {
+                        				var z = b.engine.getGameAttribute("QuestStatus"),
+                        					Y = null != e.Meel1 ? z.getReserved("Meel1") : z.h.Meel1,
+                        					W = b.engine.getGameAttribute("QuestStatus"),
+                        					Z = (null != e.Meel1 ? W.getReserved("Meel1") : W.h.Meel1)[0];
+                        				Y[0] = parseNum(Z) + 1;
+                        			}
+                        		}
+                        		if (
+                        			("poopBig" == s && U._customBlock_ProgressStarsign(4, 100), -1 != s.indexOf("Crystal") && (U._customBlock_TaskProgress(0, 22, "Guild", 1), 0 == b.engine.getGameAttribute("Tasks")[5][3] && U._customBlock_TaskProgress(3, 8, "add", 1)),
+                        				("poopBig" != s && "babayaga" != s && "babaHour" != s && "babaMummy" != s && "mini3a" != s && "mini4a" != s) || (U._customBlock_TaskProgress(0, 3, "Guild", 1), 1 == b.engine.getGameAttribute("Tasks")[5][3] && U._customBlock_TaskProgress(3, 8, "add", 1)), "coconut" == s)) {
+                        			if (60 == b.engine.getGameAttribute("CurrentMap")) var J = b.engine.getGameAttribute("QuestStatus"),
+                        				j = 7 == (null != e.Walupiggy4 ? J.getReserved("Walupiggy4") : J.h.Walupiggy4)[0];
+                        			else j = !1;
+                        			if (j) {
+                        				var q = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Walupiggy4 ? q.getReserved("Walupiggy4") : q.h.Walupiggy4)[0] = 8;
+                        			}
+                        		}
+                        		var K = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.XxX_Cattleprod_XxX1 ? K.getReserved("XxX_Cattleprod_XxX1") : K.h.XxX_Cattleprod_XxX1) && "coconut" == s) {
+                        			var $ = b.engine.getGameAttribute("QuestStatus"),
+                        				ee = null != e.XxX_Cattleprod_XxX1 ? $.getReserved("XxX_Cattleprod_XxX1") : $.h.XxX_Cattleprod_XxX1,
+                        				te = b.engine.getGameAttribute("QuestStatus"),
+                        				ne = (null != e.XxX_Cattleprod_XxX1 ? te.getReserved("XxX_Cattleprod_XxX1") : te.h.XxX_Cattleprod_XxX1)[0];
+                        			ee[0] = parseNum(ne) + 1;
+                        		}
+                        		var se = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.XxX_Cattleprod_XxX2 ? se.getReserved("XxX_Cattleprod_XxX2") : se.h.XxX_Cattleprod_XxX2)) {
+                        			if ("coconut" == s) {
+                        				var ae = b.engine.getGameAttribute("QuestStatus"),
+                        					re = null != e.XxX_Cattleprod_XxX2 ? ae.getReserved("XxX_Cattleprod_XxX2") : ae.h.XxX_Cattleprod_XxX2,
+                        					Ae = b.engine.getGameAttribute("QuestStatus"),
+                        					le = (null != e.XxX_Cattleprod_XxX2 ? Ae.getReserved("XxX_Cattleprod_XxX2") : Ae.h.XxX_Cattleprod_XxX2)[0];
+                        				re[0] = parseNum(le) + 1;
+                        			}
+                        			if ("sandcastle" == s) {
+                        				var oe = b.engine.getGameAttribute("QuestStatus"),
+                        					ie = null != e.XxX_Cattleprod_XxX2 ? oe.getReserved("XxX_Cattleprod_XxX2") : oe.h.XxX_Cattleprod_XxX2,
+                        					ue = b.engine.getGameAttribute("QuestStatus"),
+                        					ge = (null != e.XxX_Cattleprod_XxX2 ? ue.getReserved("XxX_Cattleprod_XxX2") : ue.h.XxX_Cattleprod_XxX2)[1];
+                        				ie[1] = parseNum(ge) + 1;
+                        			}
+                        		}
+                        		var me = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Funguy4 ? me.getReserved("Funguy4") : me.h.Funguy4) && ("crabcake" == s || ("coconut" == s && 19 == b.engine.getGameAttribute("CurrentMap")))) {
+                        			var de = b.engine.getGameAttribute("QuestStatus"),
+                        				ce = null != e.Funguy4 ? de.getReserved("Funguy4") : de.h.Funguy4,
+                        				pe = b.engine.getGameAttribute("QuestStatus"),
+                        				he = (null != e.Funguy4 ? pe.getReserved("Funguy4") : pe.h.Funguy4)[0];
+                        			ce[0] = parseNum(he) + 1;
+                        		}
+                        		var be = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Loveulyte2 ? be.getReserved("Loveulyte2") : be.h.Loveulyte2) && "slimeR" == s) {
+                        			var fe = b.engine.getGameAttribute("QuestStatus"),
+                        				ye = null != e.Loveulyte2 ? fe.getReserved("Loveulyte2") : fe.h.Loveulyte2,
+                        				Re = b.engine.getGameAttribute("QuestStatus"),
+                        				ve = (null != e.Loveulyte2 ? Re.getReserved("Loveulyte2") : Re.h.Loveulyte2)[0];
+                        			ye[0] = parseNum(ve) + 1;
+                        		}
+                        		var Fe = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.TP_Pete1 ? Fe.getReserved("TP_Pete1") : Fe.h.TP_Pete1) && "poopSmall" == s) {
+                        			var Ne = b.engine.getGameAttribute("QuestStatus"),
+                        				_e = null != e.TP_Pete1 ? Ne.getReserved("TP_Pete1") : Ne.h.TP_Pete1,
+                        				Ie = b.engine.getGameAttribute("QuestStatus"),
+                        				De = (null != e.TP_Pete1 ? Ie.getReserved("TP_Pete1") : Ie.h.TP_Pete1)[0];
+                        			_e[0] = parseNum(De) + 1;
+                        		}
+                        		var Ee = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Carpetiem1 ? Ee.getReserved("Carpetiem1") : Ee.h.Carpetiem1) && "potato" == s) {
+                        			var Se = b.engine.getGameAttribute("QuestStatus"),
+                        				Ge = null != e.Carpetiem1 ? Se.getReserved("Carpetiem1") : Se.h.Carpetiem1,
+                        				Te = b.engine.getGameAttribute("QuestStatus"),
+                        				Ue = (null != e.Carpetiem1 ? Te.getReserved("Carpetiem1") : Te.h.Carpetiem1)[0];
+                        			Ge[0] = parseNum(Ue) + 1;
+                        		}
+                        		var Me = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Centurion1 ? Me.getReserved("Centurion1") : Me.h.Centurion1) && "mimicA" == s) {
+                        			var Ve = b.engine.getGameAttribute("QuestStatus"),
+                        				Ce = null != e.Centurion1 ? Ve.getReserved("Centurion1") : Ve.h.Centurion1,
+                        				Be = b.engine.getGameAttribute("QuestStatus"),
+                        				Pe = (null != e.Centurion1 ? Be.getReserved("Centurion1") : Be.h.Centurion1)[0];
+                        			Ce[0] = parseNum(Pe) + 1;
+                        		}
+                        		var Oe = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Carpetiem3 ? Oe.getReserved("Carpetiem3") : Oe.h.Carpetiem3) && "steak" == s && "EquipmentPunching1" == b.engine.getGameAttribute("EquipmentOrder")[0][1]) {
+                        			var we = b.engine.getGameAttribute("QuestStatus"),
+                        				ke = null != e.Carpetiem3 ? we.getReserved("Carpetiem3") : we.h.Carpetiem3,
+                        				xe = b.engine.getGameAttribute("QuestStatus"),
+                        				Qe = (null != e.Carpetiem3 ? xe.getReserved("Carpetiem3") : xe.h.Carpetiem3)[0];
+                        			ke[0] = parseNum(Qe) + 1;
+                        		}
+                        		var Xe = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Giftmas_Blobulyte3 ? Xe.getReserved("Giftmas_Blobulyte3") : Xe.h.Giftmas_Blobulyte3)) {
+                        			var Le = b.engine.getGameAttribute("QuestStatus"),
+                        				ze = null != e.Giftmas_Blobulyte3 ? Le.getReserved("Giftmas_Blobulyte3") : Le.h.Giftmas_Blobulyte3,
+                        				Ye = b.engine.getGameAttribute("QuestStatus"),
+                        				We = (null != e.Giftmas_Blobulyte3 ? Ye.getReserved("Giftmas_Blobulyte3") : Ye.h.Giftmas_Blobulyte3)[0];
+                        			ze[0] = parseNum(We) + 1;
+                        		}
+                        		var Ze = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        			He = null != e[s] ? Ze.getReserved(s) : Ze.h[s],
+                        			Je = null != e.Name ? He.getReserved("Name") : He.h.Name,
+                        			je = b.engine.getGameAttribute("CustomLists"),
+                        			qe = ("" + g.string((null != e.TaskDescriptions ? je.getReserved("TaskDescriptions") : je.h.TaskDescriptions)[0][3][2])).split("|"),
+                        			Ke = b.engine.getGameAttribute("Tasks")[1][0][3];
+                        		Je == qe[0 | parseNum(Ke)] && "Blank" == b.engine.getGameAttribute("EquipmentOrder")[0][1] && U._customBlock_TaskProgress(0, 3, "add", 1),
+                        			t._customBlock_killmonsterQuest(s, 1);
+                        		var $e = b.engine,
+                        			et = Math.min(H._customBlock_PlayerHPmax(), b.engine.getGameAttribute("PlayerHP") + (t._customBlock_GetTalentNumber(1, 627) / 100) * H._customBlock_PlayerHPmax()),
+                        			tt = $e.gameAttributes;
+                        		if ((null != e.PlayerHP ? tt.setReserved("PlayerHP", et) : (tt.h.PlayerHP = et), "crabcake" == s)) 14 == b.engine.getGameAttribute("Tasks")[5][1] && U._customBlock_TaskProgress(1, 8, "add", 1);
+                        		else if ("pincermin" == s) {
+                        			var nt = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Walupiggy4 ? nt.getReserved("Walupiggy4") : nt.h.Walupiggy4) && 25 == h.randomInt(1, 26)) {
+                        				var st = b.engine.getGameAttribute("QuestStatus");
+                        				if (5 == (null != e.Walupiggy4 ? st.getReserved("Walupiggy4") : st.h.Walupiggy4)[0]) {
+                        					var at = b.engine.gameAttributes;
+                        					null != e.DummyText3 ? at.setReserved("DummyText3", "KillDialogueEarly") : (at.h.DummyText3 = "KillDialogueEarly");
+                        					var rt = b.engine.gameAttributes;
+                        					null != e.DummyNumber ? rt.setReserved("DummyNumber", 25) : (rt.h.DummyNumber = 25);
+                        					var At = b.engine,
+                        						lt = "" + t._customBlock_DialogueETC("Lava_Flame2", "Stop.", h.getScreenX() + 280, h.getScreenY() + 120),
+                        						ot = At.gameAttributes;
+                        					null != e.DummyText ? ot.setReserved("DummyText", lt) : (ot.h.DummyText = lt);
+                        					var it = b.engine.getGameAttribute("QuestStatus");
+                        					(null != e.Walupiggy4 ? it.getReserved("Walupiggy4") : it.h.Walupiggy4)[0] = 6;
+                        				}
+                        			}
+                        		} else if ("babaHour" == s) {
+                        			if (
+                        				(52 == b.engine.getGameAttribute("CurrentMap") && h.setValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_FadeRockWall", 0), 0 == b.engine.getGameAttribute("SteamAchieve")[26] && (b.engine.getGameAttribute("SteamAchieve")[26] = 1), 2 == b.engine.getGameAttribute("CharacterClass"))) {
+                        				var ut = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ItemsOwnedMap"),
+                        					gt = null != e.Quest47 ? ut.getReserved("Quest47") : ut.h.Quest47;
+                        				1 <= parseNum(gt) && (b.engine.getGameAttribute("InventoryOrder")[b.engine.getGameAttribute("InventoryOrder").indexOf("Quest47")] = "Quest48");
+                        			}
+                        		} else if ("babaMummy" == s) {
+                        			1 == b.engine.getGameAttribute("SteamAchieve")[26] && ((b.engine.getGameAttribute("SteamAchieve")[26] = 2), w._customBlock_steamachieve(26, 2));
+                        			var mt = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Loominadi4 ? mt.getReserved("Loominadi4") : mt.h.Loominadi4)) {
+                        				var dt = b.engine.getGameAttribute("QuestStatus"),
+                        					ct = null != e.Loominadi4 ? dt.getReserved("Loominadi4") : dt.h.Loominadi4,
+                        					pt = b.engine.getGameAttribute("QuestStatus"),
+                        					ht = (null != e.Loominadi4 ? pt.getReserved("Loominadi4") : pt.h.Loominadi4)[0];
+                        				ct[0] = parseNum(ht) + 1;
+                        			}
+                        		} else if ("babayaga" == s) 0 == b.engine.getGameAttribute("SteamAchieve")[25] && (b.engine.getGameAttribute("SteamAchieve")[25] = 1);
+                        		else if ("poopBig" == s) {
+                        			1 == b.engine.getGameAttribute("SteamAchieve")[25] && ((b.engine.getGameAttribute("SteamAchieve")[25] = 2), w._customBlock_steamachieve(25, 2));
+                        			var bt = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Walupiggy2 ? bt.getReserved("Walupiggy2") : bt.h.Walupiggy2)) {
+                        				var ft = b.engine.getGameAttribute("QuestStatus");
+                        				if (2 == (null != e.Walupiggy2 ? ft.getReserved("Walupiggy2") : ft.h.Walupiggy2)[0]) {
+                        					var yt = b.engine.getGameAttribute("QuestStatus");
+                        					(null != e.Walupiggy2 ? yt.getReserved("Walupiggy2") : yt.h.Walupiggy2)[0] = 3;
+                        				}
+                        			}
+                        		} else if ("mini3a" == s) 0 == b.engine.getGameAttribute("SteamAchieve")[57] && (b.engine.getGameAttribute("SteamAchieve")[57] = 1);
+                        		else if ("mini4a" == s) 1 == b.engine.getGameAttribute("SteamAchieve")[57] && ((b.engine.getGameAttribute("SteamAchieve")[57] = 2), w._customBlock_steamachieve(57, 2));
+                        		else if ("sandcastle" == s) {
+                        			15 == b.engine.getGameAttribute("Tasks")[5][1] && U._customBlock_TaskProgress(1, 8, "add", 1);
+                        			var Rt = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Goldric6 ? Rt.getReserved("Goldric6") : Rt.h.Goldric6)) {
+                        				var vt = b.engine.getGameAttribute("QuestStatus"),
+                        					Ft = null != e.Goldric6 ? vt.getReserved("Goldric6") : vt.h.Goldric6,
+                        					Nt = b.engine.getGameAttribute("QuestStatus"),
+                        					_t = (null != e.Goldric6 ? Nt.getReserved("Goldric6") : Nt.h.Goldric6)[0];
+                        				Ft[0] = parseNum(_t) + 1;
+                        			}
+                        		} else if ("sheep" == s) {
+                        			"Blank" == b.engine.getGameAttribute("EquipmentOrder")[0][1] && U._customBlock_ProgressStarsign(24, 100), 14 == b.engine.getGameAttribute("Tasks")[5][2] && U._customBlock_TaskProgress(2, 8, "add", 1);
+                        			var It = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Goldric6 ? It.getReserved("Goldric6") : It.h.Goldric6)) {
+                        				var Dt = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Goldric6 ? Dt.getReserved("Goldric6") : Dt.h.Goldric6)[1] = 0;
+                        			}
+                        		} else if ("ram" == s) {
+                        			var Et = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Goldric6 ? Et.getReserved("Goldric6") : Et.h.Goldric6)) {
+                        				var St = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Goldric6 ? St.getReserved("Goldric6") : St.h.Goldric6)[1] = 0;
+                        			}
+                        		} else if ("bloque" == s) 15 == b.engine.getGameAttribute("Tasks")[5][2] && U._customBlock_TaskProgress(2, 8, "add", 1);
+                        		else if ("glass" == s) 16 == b.engine.getGameAttribute("Tasks")[5][2] && U._customBlock_TaskProgress(2, 8, "add", 1);
+                        		else if ("skele" == s) {
+                        			var Gt = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Lonely_Hunter2 ? Gt.getReserved("Lonely_Hunter2") : Gt.h.Lonely_Hunter2)) {
+                        				var Tt = b.engine.getGameAttribute("QuestStatus"),
+                        					Ut = null != e.Lonely_Hunter2 ? Tt.getReserved("Lonely_Hunter2") : Tt.h.Lonely_Hunter2,
+                        					Mt = b.engine.getGameAttribute("QuestStatus"),
+                        					Vt = (null != e.Lonely_Hunter2 ? Mt.getReserved("Lonely_Hunter2") : Mt.h.Lonely_Hunter2)[0];
+                        				Ut[0] = parseNum(Vt) + 1;
+                        			}
+                        			10 == b.engine.getGameAttribute("Tasks")[5][2] && U._customBlock_TaskProgress(2, 8, "add", 1);
+                        		} else if ("skele2" == s) U._customBlock_ProgressStarsign(30, 100);
+                        		else if ("eye" == s) {
+                        			var Ct = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Bellows1 ? Ct.getReserved("Bellows1") : Ct.h.Bellows1)) {
+                        				var Bt = b.engine.getGameAttribute("QuestStatus"),
+                        					Pt = null != e.Bellows1 ? Bt.getReserved("Bellows1") : Bt.h.Bellows1,
+                        					Ot = b.engine.getGameAttribute("QuestStatus"),
+                        					wt = (null != e.Bellows1 ? Ot.getReserved("Bellows1") : Ot.h.Bellows1)[0];
+                        				Pt[0] = parseNum(wt) + 1;
+                        			}
+                        		} else if ("ghost" == s) {
+                        			var kt = b.engine.getGameAttribute("QuestStatus"),
+                        				xt = null != e.Giftmas_Blobulyte1 ? kt.getReserved("Giftmas_Blobulyte1") : kt.h.Giftmas_Blobulyte1,
+                        				Qt = b.engine.getGameAttribute("QuestStatus"),
+                        				Xt = (null != e.Giftmas_Blobulyte1 ? Qt.getReserved("Giftmas_Blobulyte1") : Qt.h.Giftmas_Blobulyte1)[0];
+                        			xt[0] = parseNum(Xt) + 1;
+                        		} else if ("potato" == s) {
+                        			16 == b.engine.getGameAttribute("Tasks")[5][1] && U._customBlock_TaskProgress(1, 8, "add", 1);
+                        			var Lt = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Walupiggy4 ? Lt.getReserved("Walupiggy4") : Lt.h.Walupiggy4) && 2 == h.randomInt(1, 80)) {
+                        				var zt = b.engine.getGameAttribute("QuestStatus");
+                        				7 == (null != e.Walupiggy4 ? zt.getReserved("Walupiggy4") : zt.h.Walupiggy4)[0] && t._customBlock_CreateMonster("coconut", 3, 500);
+                        			}
+                        		} else if ("shovelY" == s) {
+                        			var Yt = b.engine.getGameAttribute("QuestStatus"),
+                        				Wt = null != e.Coastiolyte2 ? Yt.getReserved("Coastiolyte2") : Yt.h.Coastiolyte2,
+                        				Zt = b.engine.getGameAttribute("QuestStatus"),
+                        				Ht = (null != e.Coastiolyte2 ? Zt.getReserved("Coastiolyte2") : Zt.h.Coastiolyte2)[0];
+                        			Wt[0] = parseNum(Ht) + 1;
+                        		} else if ("crabcakeB" == s) {
+                        			var Jt = b.engine.getGameAttribute("QuestStatus"),
+                        				jt = null != e.Coastiolyte2 ? Jt.getReserved("Coastiolyte2") : Jt.h.Coastiolyte2,
+                        				qt = b.engine.getGameAttribute("QuestStatus"),
+                        				Kt = (null != e.Coastiolyte2 ? qt.getReserved("Coastiolyte2") : qt.h.Coastiolyte2)[1];
+                        			jt[1] = parseNum(Kt) + 1;
+                        		} else if ("frogBIG" == s) {
+                        			var $t = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Walupiggy1 ? $t.getReserved("Walupiggy1") : $t.h.Walupiggy1) && 16 == b.engine.getGameAttribute("CurrentMap")) {
+                        				var en = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Walupiggy1 ? en.getReserved("Walupiggy1") : en.h.Walupiggy1)[0] = 6;
+                        			}
+                        			var tn = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Bill_Brr2 ? tn.getReserved("Bill_Brr2") : tn.h.Bill_Brr2) && 112 == b.engine.getGameAttribute("CurrentMap")) {
+                        				var nn = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Bill_Brr2 ? nn.getReserved("Bill_Brr2") : nn.h.Bill_Brr2)[0] = 1;
+                        			}
+                        		} else if ("sandgiant" == s) {
+                        			if (64 == b.engine.getGameAttribute("CurrentMap")) {
+                        				var sn = b.engine.getGameAttribute("NONdummies"),
+                        					an = b.engine.getGameAttribute("NONdummies")[29];
+                        				(sn[29] = parseNum(an) + 1),
+                        				1 == b.engine.getGameAttribute("PlayerAutoMoveTOGGLE") && (b.engine.getGameAttribute("NONdummies")[29] = 0);
+                        				var rn = b.engine.getGameAttribute("NONdummies")[29];
+                        				if (160 <= parseNum(rn)) var An = b.engine.getGameAttribute("TimeAway"),
+                        					ln = null != e.GlobalTime ? An.getReserved("GlobalTime") : An.h.GlobalTime,
+                        					on = parseNum(ln),
+                        					un = b.engine.getGameAttribute("NONdummies")[30],
+                        					gn = 600 > on - parseNum(un);
+                        				else gn = !1;
+                        				gn && w._customBlock_Reg_ach_add_status(100, 2);
+                        			}
+                        		} else if ("Iceball" == s) {
+                        			var mn = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Bill_Brr6 ? mn.getReserved("Bill_Brr6") : mn.h.Bill_Brr6)) {
+                        				var dn = b.engine.getGameAttribute("QuestStatus"),
+                        					cn = null != e.Bill_Brr6 ? dn.getReserved("Bill_Brr6") : dn.h.Bill_Brr6,
+                        					pn = b.engine.getGameAttribute("QuestStatus"),
+                        					hn = (null != e.Bill_Brr6 ? pn.getReserved("Bill_Brr6") : pn.h.Bill_Brr6)[0];
+                        				cn[0] = parseNum(hn) + 1;
+                        			}
+                        		} else if ("plank" == s) 1.5 < b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[56].length && w._customBlock_Reg_ach_add_status(15, 1);
+                        		else if ("ratB" == s) 1.5 < b.engine.getGameAttribute("PixelHelperActor")[21].getValue("ActorEvents_510", "_GenINFO")[56].length && w._customBlock_Reg_ach_add_status(30, 1);
+                        		else if (-1 != s.indexOf("Crystal") && (w._customBlock_steamachieve(33, 1), w._customBlock_steamachieve(34, 1), w._customBlock_steamachieve(35, 1), 1 < t._customBlock_GetTalentNumber(2, 41))) {
+                        			var bn = b.engine.getGameAttribute("DNSM"),
+                        				fn = h.randomInt(1, 9);
+                        			null != e.KMexpreq ? bn.setReserved("KMexpreq", fn) : (bn.h.KMexpreq = fn);
+                        			var yn = b.engine.getGameAttribute("ExpReq0"),
+                        				Rn = b.engine.getGameAttribute("DNSM"),
+                        				vn = null != e.KMexpreq ? Rn.getReserved("KMexpreq") : Rn.h.KMexpreq,
+                        				Fn = parseNum(vn),
+                        				Nn = 1 - t._customBlock_GetTalentNumber(1, 41) / 100,
+                        				_n = b.engine.getGameAttribute("DNSM"),
+                        				In = null != e.KMexpreq ? _n.getReserved("KMexpreq") : _n.h.KMexpreq,
+                        				Dn = parseNum(In),
+                        				En = b.engine.getGameAttribute("Lv0"),
+                        				Sn = b.engine.getGameAttribute("DNSM"),
+                        				Gn = null != e.KMexpreq ? Sn.getReserved("KMexpreq") : Sn.h.KMexpreq,
+                        				Tn = En[0 | parseNum(Gn)],
+                        				Un = Nn * A._customBlock_expReqQTY(Dn, parseNum(Tn)),
+                        				Mn = b.engine.getGameAttribute("ExpReq0"),
+                        				Vn = b.engine.getGameAttribute("DNSM"),
+                        				Cn = null != e.KMexpreq ? Vn.getReserved("KMexpreq") : Vn.h.KMexpreq,
+                        				Bn = Mn[0 | parseNum(Cn)];
+                        			yn[0 | Fn] = Math.max(Un, 0.98 * parseNum(Bn));
+                        		}
+                        		var Pn = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Crystalswine4 ? Pn.getReserved("Crystalswine4") : Pn.h.Crystalswine4)) {
+                        			if ("snakeB" == s) {
+                        				var On = b.engine.getGameAttribute("QuestStatus"),
+                        					wn = null != e.Crystalswine4 ? On.getReserved("Crystalswine4") : On.h.Crystalswine4,
+                        					kn = b.engine.getGameAttribute("QuestStatus"),
+                        					xn = (null != e.Crystalswine4 ? kn.getReserved("Crystalswine4") : kn.h.Crystalswine4)[0];
+                        				wn[0] = parseNum(xn) + 1;
+                        			}
+                        		} else {
+                        			var Qn = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Crystalswine5 ? Qn.getReserved("Crystalswine5") : Qn.h.Crystalswine5)) {
+                        				var Xn = b.engine.getGameAttribute("QuestStatus"),
+                        					Ln = (null != e.Crystalswine5 ? Xn.getReserved("Crystalswine5") : Xn.h.Crystalswine5)[0];
+                        				if (20 > parseNum(Ln)) {
+                        					if ("snakeB" == s) {
+                        						var zn = b.engine.getGameAttribute("QuestStatus"),
+                        							Yn = null != e.Crystalswine5 ? zn.getReserved("Crystalswine5") : zn.h.Crystalswine5,
+                        							Wn = b.engine.getGameAttribute("QuestStatus"),
+                        							Zn = (null != e.Crystalswine5 ? Wn.getReserved("Crystalswine5") : Wn.h.Crystalswine5)[0];
+                        						Yn[0] = parseNum(Zn) + 1;
+                        					}
+                        				} else {
+                        					var Hn = b.engine.getGameAttribute("QuestStatus"),
+                        						Jn = (null != e.Crystalswine5 ? Hn.getReserved("Crystalswine5") : Hn.h.Crystalswine5)[0];
+                        					if (37 > parseNum(Jn)) {
+                        						if ("speaker" == s) {
+                        							var jn = b.engine.getGameAttribute("QuestStatus"),
+                        								qn = null != e.Crystalswine5 ? jn.getReserved("Crystalswine5") : jn.h.Crystalswine5,
+                        								Kn = b.engine.getGameAttribute("QuestStatus"),
+                        								$n = (null != e.Crystalswine5 ? Kn.getReserved("Crystalswine5") : Kn.h.Crystalswine5)[0];
+                        							qn[0] = (null == $n ? 0 : "number" == typeof $n ? d.__cast($n, k) : "number" == typeof $n && (0 | $n) === $n ? d.__cast($n, l) : "boolean" == typeof $n ? d.__cast($n, n) ? 1 : 0 : "string" == typeof $n ? parseFloat($n) : parseFloat(g.string($n))) + 1;
+                        						}
+                        					} else if ("eye" == s) {
+                        						var es = b.engine.getGameAttribute("QuestStatus"),
+                        							ts = null != e.Crystalswine5 ? es.getReserved("Crystalswine5") : es.h.Crystalswine5,
+                        							ns = b.engine.getGameAttribute("QuestStatus"),
+                        							ss = (null != e.Crystalswine5 ? ns.getReserved("Crystalswine5") : ns.h.Crystalswine5)[0];
+                        						ts[0] = parseNum(ss) + 1;
+                        					}
+                        				}
+                        			} else {
+                        				var as = b.engine.getGameAttribute("QuestComplete");
+                        				if (0 == (null != e.Crystalswine6 ? as.getReserved("Crystalswine6") : as.h.Crystalswine6)) {
+                        					var rs = b.engine.getGameAttribute("QuestStatus"),
+                        						As = (null != e.Crystalswine6 ? rs.getReserved("Crystalswine6") : rs.h.Crystalswine6)[0];
+                        					if (20 > parseNum(As)) {
+                        						if ("snakeB" == s) {
+                        							var ls = b.engine.getGameAttribute("QuestStatus"),
+                        								os = null != e.Crystalswine6 ? ls.getReserved("Crystalswine6") : ls.h.Crystalswine6,
+                        								is = b.engine.getGameAttribute("QuestStatus"),
+                        								us = (null != e.Crystalswine6 ? is.getReserved("Crystalswine6") : is.h.Crystalswine6)[0];
+                        							os[0] = parseNum(us) + 1;
+                        						}
+                        					} else {
+                        						var gs = b.engine.getGameAttribute("QuestStatus"),
+                        							ms = (null != e.Crystalswine6 ? gs.getReserved("Crystalswine6") : gs.h.Crystalswine6)[0];
+                        						if (39 > parseNum(ms)) {
+                        							if ("glass" == s) {
+                        								var ds = b.engine.getGameAttribute("QuestStatus"),
+                        									cs = null != e.Crystalswine6 ? ds.getReserved("Crystalswine6") : ds.h.Crystalswine6,
+                        									ps = b.engine.getGameAttribute("QuestStatus"),
+                        									hs = (null != e.Crystalswine6 ? ps.getReserved("Crystalswine6") : ps.h.Crystalswine6)[0];
+                        								cs[0] = parseNum(hs) + 1;
+                        							}
+                        						} else {
+                        							var bs = b.engine.getGameAttribute("QuestStatus"),
+                        								fs = (null != e.Crystalswine6 ? bs.getReserved("Crystalswine6") : bs.h.Crystalswine6)[0];
+                        							if (57 > parseNum(fs)) {
+                        								if ("thermostat" == s) {
+                        									var ys = b.engine.getGameAttribute("QuestStatus"),
+                        										Rs = null != e.Crystalswine6 ? ys.getReserved("Crystalswine6") : ys.h.Crystalswine6,
+                        										vs = b.engine.getGameAttribute("QuestStatus"),
+                        										Fs = (null != e.Crystalswine6 ? vs.getReserved("Crystalswine6") : vs.h.Crystalswine6)[0];
+                        									Rs[0] = parseNum(Fs) + 1;
+                        								}
+                        							} else {
+                        								var Ns = b.engine.getGameAttribute("QuestStatus"),
+                        									_s = (null != e.Crystalswine6 ? Ns.getReserved("Crystalswine6") : Ns.h.Crystalswine6)[0];
+                        								if (70 > parseNum(_s)) {
+                        									if ("penguin" == s) {
+                        										var Is = b.engine.getGameAttribute("QuestStatus"),
+                        											Ds = null != e.Crystalswine6 ? Is.getReserved("Crystalswine6") : Is.h.Crystalswine6,
+                        											Es = b.engine.getGameAttribute("QuestStatus"),
+                        											Ss = (null != e.Crystalswine6 ? Es.getReserved("Crystalswine6") : Es.h.Crystalswine6)[0];
+                        										Ds[0] = parseNum(Ss) + 1;
+                        									}
+                        								} else {
+                        									var Gs = b.engine.getGameAttribute("QuestStatus"),
+                        										Ts = (null != e.Crystalswine6 ? Gs.getReserved("Crystalswine6") : Gs.h.Crystalswine6)[0];
+                        									if (89 > parseNum(Ts)) {
+                        										if ("snowball" == s) {
+                        											var Us = b.engine.getGameAttribute("QuestStatus"),
+                        												Ms = null != e.Crystalswine6 ? Us.getReserved("Crystalswine6") : Us.h.Crystalswine6,
+                        												Vs = b.engine.getGameAttribute("QuestStatus"),
+                        												Cs = (null != e.Crystalswine6 ? Vs.getReserved("Crystalswine6") : Vs.h.Crystalswine6)[0];
+                        											Ms[0] = parseNum(Cs) + 1;
+                        										}
+                        									} else {
+                        										var Bs = b.engine.getGameAttribute("QuestStatus"),
+                        											Ps = (null != e.Crystalswine6 ? Bs.getReserved("Crystalswine6") : Bs.h.Crystalswine6)[0];
+                        										if (109 > parseNum(Ps)) {
+                        											if ("mamoth" == s) {
+                        												var Os = b.engine.getGameAttribute("QuestStatus"),
+                        													ws = null != e.Crystalswine6 ? Os.getReserved("Crystalswine6") : Os.h.Crystalswine6,
+                        													ks = b.engine.getGameAttribute("QuestStatus"),
+                        													xs = (null != e.Crystalswine6 ? ks.getReserved("Crystalswine6") : ks.h.Crystalswine6)[0];
+                        												ws[0] = parseNum(xs) + 1;
+                        											}
+                        										} else {
+                        											var Qs = b.engine.getGameAttribute("QuestStatus"),
+                        												Xs = (null != e.Crystalswine6 ? Qs.getReserved("Crystalswine6") : Qs.h.Crystalswine6)[0];
+                        											if (128 > parseNum(Xs)) {
+                        												if ("bloque" == s) {
+                        													var Ls = b.engine.getGameAttribute("QuestStatus"),
+                        														zs = null != e.Crystalswine6 ? Ls.getReserved("Crystalswine6") : Ls.h.Crystalswine6,
+                        														Ys = b.engine.getGameAttribute("QuestStatus"),
+                        														Ws = (null != e.Crystalswine6 ? Ys.getReserved("Crystalswine6") : Ys.h.Crystalswine6)[0];
+                        													zs[0] = parseNum(Ws) + 1;
+                        												}
+                        											} else {
+                        												var Zs = b.engine.getGameAttribute("QuestStatus"),
+                        													Hs = (null != e.Crystalswine6 ? Zs.getReserved("Crystalswine6") : Zs.h.Crystalswine6)[0];
+                        												if (148 > parseNum(Hs)) {
+                        													if ("stache" == s) {
+                        														var Js = b.engine.getGameAttribute("QuestStatus"),
+                        															js = null != e.Crystalswine6 ? Js.getReserved("Crystalswine6") : Js.h.Crystalswine6,
+                        															qs = b.engine.getGameAttribute("QuestStatus"),
+                        															Ks = (null != e.Crystalswine6 ? qs.getReserved("Crystalswine6") : qs.h.Crystalswine6)[0];
+                        														js[0] = parseNum(Ks) + 1;
+                        													}
+                        												} else if ("ram" == s) {
+                        													var $s = b.engine.getGameAttribute("QuestStatus"),
+                        														ea = null != e.Crystalswine6 ? $s.getReserved("Crystalswine6") : $s.h.Crystalswine6,
+                        														ta = b.engine.getGameAttribute("QuestStatus"),
+                        														na = (null != e.Crystalswine6 ? ta.getReserved("Crystalswine6") : ta.h.Crystalswine6)[0];
+                        													ea[0] = parseNum(na) + 1;
+                        												}
+                        											}
+                        										}
+                        									}
+                        								}
+                        							}
+                        						}
+                        					}
+                        				}
+                        			}
+                        		}
+                        		var sa = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Lonely_Hunter3 ? sa.getReserved("Lonely_Hunter3") : sa.h.Lonely_Hunter3))
+                        			if ("ChestA3" == s) {
+                        				var aa = b.engine.getGameAttribute("QuestStatus"),
+                        					ra = null != e.Lonely_Hunter3 ? aa.getReserved("Lonely_Hunter3") : aa.h.Lonely_Hunter3,
+                        					Aa = b.engine.getGameAttribute("QuestStatus"),
+                        					la = (null != e.Lonely_Hunter3 ? Aa.getReserved("Lonely_Hunter3") : Aa.h.Lonely_Hunter3)[0];
+                        				ra[0] = parseNum(la) + 1;
+                        			} else if ("ChestB3" == s) {
+                        			var oa = b.engine.getGameAttribute("QuestStatus"),
+                        				ia = null != e.Lonely_Hunter3 ? oa.getReserved("Lonely_Hunter3") : oa.h.Lonely_Hunter3,
+                        				ua = b.engine.getGameAttribute("QuestStatus"),
+                        				ga = (null != e.Lonely_Hunter3 ? ua.getReserved("Lonely_Hunter3") : ua.h.Lonely_Hunter3)[1];
+                        			ia[1] = parseNum(ga) + 1;
+                        		} else if ("ChestC3" == s) {
+                        			var ma = b.engine.getGameAttribute("QuestStatus"),
+                        				da = null != e.Lonely_Hunter3 ? ma.getReserved("Lonely_Hunter3") : ma.h.Lonely_Hunter3,
+                        				ca = b.engine.getGameAttribute("QuestStatus"),
+                        				pa = (null != e.Lonely_Hunter3 ? ca.getReserved("Lonely_Hunter3") : ca.h.Lonely_Hunter3)[2];
+                        			da[2] = parseNum(pa) + 1;
+                        		}
+                        		var ha = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Bill_Brr3 ? ha.getReserved("Bill_Brr3") : ha.h.Bill_Brr3) && 112 == b.engine.getGameAttribute("CurrentMap"))
+                        			if ("snakeB" == s) {
+                        				var ba = b.engine.getGameAttribute("QuestStatus"),
+                        					fa = null != e.Bill_Brr3 ? ba.getReserved("Bill_Brr3") : ba.h.Bill_Brr3,
+                        					ya = b.engine.getGameAttribute("QuestStatus"),
+                        					Ra = (null != e.Bill_Brr3 ? ya.getReserved("Bill_Brr3") : ya.h.Bill_Brr3)[0];
+                        				fa[0] = parseNum(Ra) + 1;
+                        			} else if ("mushG" == s) {
+                        			var va = b.engine.getGameAttribute("QuestStatus");
+                        			(null != e.Bill_Brr3 ? va.getReserved("Bill_Brr3") : va.h.Bill_Brr3)[1] = 0;
+                        		}
+                        	}

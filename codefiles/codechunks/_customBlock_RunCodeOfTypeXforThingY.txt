@@ -1,0 +1,357 @@
+                        (H._customBlock_RunCodeOfTypeXforThingY = function(s, a) {
+                        		if ("BuyPrice" == s) {
+                        			var r = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        				o = null != e[a] ? r.getReserved(a) : r.h[a],
+                        				i = null != e.sellPrice ? o.getReserved("sellPrice") : o.h.sellPrice;
+                        			return (4 * parseNum(i) * (1 - A._customBlock_GetBribeBonus("2") / 100));
+                        		}
+                        		if ("CardLv" == s) {
+                        			var u = b.engine.getGameAttribute("DNSM");
+                        			null != e.cardLvCalco ? u.setReserved("cardLvCalco", 0) : (u.h.cardLvCalco = 0);
+                        			var m = b.engine.getGameAttribute("Cards")[0],
+                        				c = null != e[a] ? m.getReserved(a) : m.h[a];
+                        			if (0 < parseNum(c)) {
+                        				var p = b.engine.getGameAttribute("DNSM");
+                        				null != e.cardLvCalco ? p.setReserved("cardLvCalco", 1) : (p.h.cardLvCalco = 1);
+                        			}
+                        			for (var h = 0; 4 > h;) {
+                        				var f = h++,
+                        					y = b.engine.getGameAttribute("Cards")[0],
+                        					R = null != e[a] ? y.getReserved(a) : y.h[a],
+                        					v = parseNum(R),
+                        					F = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[45],
+                        					N = (null != e[a] ? F.getReserved(a) : F.h[a])[2];
+                        				if (v > parseNum(N) * Math.pow(f + 1 + Math.floor(f / 3), 2)) {
+                        					var _ = b.engine.getGameAttribute("DNSM"),
+                        						I = f + 2;
+                        					null != e.cardLvCalco ? _.setReserved("cardLvCalco", I) : (_.h.cardLvCalco = I);
+                        				}
+                        			}
+                        			var D = b.engine.getGameAttribute("DNSM");
+                        			return null != e.cardLvCalco ? D.getReserved("cardLvCalco") : D.h.cardLvCalco;
+                        		}
+                        		if ("AllTalentLV" == s) {
+                        			var E = b.engine.getGameAttribute("SkillLevels")[0 | parseNum(a)];
+                        			return 0.5 < parseNum(E) ? 149 == parseNum(a) || 374 == parseNum(a) || 539 == parseNum(a) || 614 < parseNum(a) ? 0 : Math.floor(t._customBlock_GetTalentNumber(1, 149) + (t._customBlock_GetTalentNumber(1, 374) + t._customBlock_GetTalentNumber(1, 539))) : 0;
+                        		}
+                        		if ("CardsTillNextLV" == s) {
+                        			var S = b.engine.getGameAttribute("DNSM"),
+                        				G = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[45],
+                        				T = (null != e[a] ? G.getReserved(a) : G.h[a])[2],
+                        				U = parseNum(T) * Math.pow(H._customBlock_RunCodeOfTypeXforThingY("CardLv", a) + Math.floor(H._customBlock_RunCodeOfTypeXforThingY("CardLv", a) / 4), 2),
+                        				M = b.engine.getGameAttribute("Cards")[0],
+                        				V = null != e[a] ? M.getReserved(a) : M.h[a],
+                        				C = U - parseNum(V);
+                        			null != e.cardLvCalco2 ? S.setReserved("cardLvCalco2", C) : (S.h.cardLvCalco2 = C);
+                        			var B = b.engine.getGameAttribute("DNSM"),
+                        				P = null != e.cardLvCalco2 ? B.getReserved("cardLvCalco2") : B.h.cardLvCalco2;
+                        			return Math.ceil(parseNum(P));
+                        		}
+                        		if ("KillroyRoom" == s) {
+                        			var O = b.engine.getGameAttribute("NONdummies")[46];
+                        			return 0 < parseNum(O) ? 1 : 0;
+                        		}
+                        		if ("SellPrice" == s) {
+                        			var w = b.engine.getGameAttribute("DNSM"),
+                        				x = null != e.ItemzzSellPricesz ? w.getReserved("ItemzzSellPricesz") : w.h.ItemzzSellPricesz;
+                        			if (null != e[a] ? x.existsReserved(a) : x.h.hasOwnProperty(a)) {
+                        				var Q = b.engine.getGameAttribute("DNSM"),
+                        					X = null != e.ItemzzSellPricesz ? Q.getReserved("ItemzzSellPricesz") : Q.h.ItemzzSellPricesz;
+                        				return null != e[a] ? X.getReserved(a) : X.h[a];
+                        			}
+                        			var L = b.engine.getGameAttribute("ItemDefinitionsGET");
+                        			if (null != e[a] ? L.existsReserved(a) : L.h.hasOwnProperty(a)) {
+                        				var z = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        					Y = null != e[a] ? z.getReserved(a) : z.h[a],
+                        					W = null != e.sellPrice ? Y.getReserved("sellPrice") : Y.h.sellPrice,
+                        					Z = parseNum(W),
+                        					J = A._customBlock_GetBribeBonus("4"),
+                        					j = b.engine.getGameAttribute("DNSM"),
+                        					q = null != e.AlchVials ? j.getReserved("AlchVials") : j.h.AlchVials,
+                        					K = null != e.ShopSell ? q.getReserved("ShopSell") : q.h.ShopSell;
+                        				return Math.round(Z * (1 + (J + parseNum(K)) / 100));
+                        			}
+                        			return 1;
+                        		}
+                        		if ("ObolRerollCostMoney" == s) {
+                        			var $ = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        				ee = null != e[a] ? $.getReserved(a) : $.h[a],
+                        				te = null != e.sellPrice ? ee.getReserved("sellPrice") : ee.h.sellPrice;
+                        			return Math.round(2 * Math.pow(50 * Math.pow(parseNum(te), 1.5), 1.5));
+                        		}
+                        		if ("ObolRerollCostFrag" == s) {
+                        			var ne = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        				se = null != e[a] ? ne.getReserved(a) : ne.h[a],
+                        				ae = null != e.sellPrice ? se.getReserved("sellPrice") : se.h.sellPrice;
+                        			return Math.ceil(0.8 * parseNum(ae));
+                        		}
+                        		if ("ShopQtyBonus" == s) return 1 + A._customBlock_GetBribeBonus("6") / 100;
+                        		if ("ChanceToHarvest" == s) {
+                        			var re = b.engine.getGameAttribute("OtherPlayers"),
+                        				Ae = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			if (null != (null != e[Ae] ? re.getReserved(Ae) : re.h[Ae]).getValue("ActorEvents_20", "_TargetEnemy")) {
+                        				var le = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					oe = b.engine.getGameAttribute("OtherPlayers"),
+                        					ie = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        					ue = (null != e[ie] ? oe.getReserved(ie) : oe.h[ie]).getValue("ActorEvents_20", "_TargetEnemy").getValue("ActorEvents_1", "_MonsterType");
+                        				null != e.Chnc2HarvTxt ? le.setReserved("Chnc2HarvTxt", ue) : (le.h.Chnc2HarvTxt = ue);
+                        			} else {
+                        				var ge = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					me = b.engine.getGameAttribute("AFKtarget");
+                        				null != e.Chnc2HarvTxt ? ge.setReserved("Chnc2HarvTxt", me) : (ge.h.Chnc2HarvTxt = me);
+                        			}
+                        			if ("Mining" == a) {
+                        				var de = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ce = H._customBlock_SkillStats("MiningEfficiency"),
+                        					pe = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					he = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					be = "" + g.string(null != e.Chnc2HarvTxt ? he.getReserved("Chnc2HarvTxt") : he.h.Chnc2HarvTxt),
+                        					fe = null != e[be] ? pe.getReserved(be) : pe.h[be],
+                        					ye = null != e.Defence ? fe.getReserved("Defence") : fe.h.Defence,
+                        					Re = ce / parseNum(ye);
+                        				null != e.Chnc2HarvDN ? de.setReserved("Chnc2HarvDN", Re) : (de.h.Chnc2HarvDN = Re);
+                        			} else if ("Choppin" == a) {
+                        				var ve = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Fe = H._customBlock_SkillStats("ChoppinEfficiency"),
+                        					Ne = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					_e = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Ie = "" + g.string(null != e.Chnc2HarvTxt ? _e.getReserved("Chnc2HarvTxt") : _e.h.Chnc2HarvTxt),
+                        					De = null != e[Ie] ? Ne.getReserved(Ie) : Ne.h[Ie],
+                        					Ee = null != e.Defence ? De.getReserved("Defence") : De.h.Defence,
+                        					Se = Fe / parseNum(Ee);
+                        				null != e.Chnc2HarvDN ? ve.setReserved("Chnc2HarvDN", Se) : (ve.h.Chnc2HarvDN = Se);
+                        			} else if ("Catching" == a) {
+                        				var Ge = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Te = H._customBlock_SkillStats("CatchingEfficiency"),
+                        					Ue = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					Me = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Ve = "" + g.string(null != e.Chnc2HarvTxt ? Me.getReserved("Chnc2HarvTxt") : Me.h.Chnc2HarvTxt),
+                        					Ce = null != e[Ve] ? Ue.getReserved(Ve) : Ue.h[Ve],
+                        					Be = null != e.Defence ? Ce.getReserved("Defence") : Ce.h.Defence,
+                        					Pe = Te / parseNum(Be);
+                        				null != e.Chnc2HarvDN ? Ge.setReserved("Chnc2HarvDN", Pe) : (Ge.h.Chnc2HarvDN = Pe);
+                        			} else if ("Fishing" == a) {
+                        				var Oe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					we = H._customBlock_SkillStats("FishingEfficiency"),
+                        					ke = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					xe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Qe = "" + g.string(null != e.Chnc2HarvTxt ? xe.getReserved("Chnc2HarvTxt") : xe.h.Chnc2HarvTxt),
+                        					Xe = null != e[Qe] ? ke.getReserved(Qe) : ke.h[Qe],
+                        					Le = null != e.Defence ? Xe.getReserved("Defence") : Xe.h.Defence,
+                        					ze = we / parseNum(Le);
+                        				null != e.Chnc2HarvDN ? Oe.setReserved("Chnc2HarvDN", ze) : (Oe.h.Chnc2HarvDN = ze);
+                        			} else if ("Cooking" == a) {
+                        				var Ye = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					We = H._customBlock_SkillStats("CookingEfficiency"),
+                        					Ze = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					He = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Je = "" + g.string(null != e.Chnc2HarvTxt ? He.getReserved("Chnc2HarvTxt") : He.h.Chnc2HarvTxt),
+                        					je = null != e[Je] ? Ze.getReserved(Je) : Ze.h[Je],
+                        					qe = null != e.Defence ? je.getReserved("Defence") : je.h.Defence,
+                        					Ke = We / parseNum(qe);
+                        				null != e.Chnc2HarvDN ? Ye.setReserved("Chnc2HarvDN", Ke) : (Ye.h.Chnc2HarvDN = Ke);
+                        			} else if ("Laboratory" == a) {
+                        				var $e = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					et = H._customBlock_SkillStats("LaboratoryEfficiency"),
+                        					tt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					nt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					st = "" + g.string(null != e.Chnc2HarvTxt ? nt.getReserved("Chnc2HarvTxt") : nt.h.Chnc2HarvTxt),
+                        					at = null != e[st] ? tt.getReserved(st) : tt.h[st],
+                        					rt = null != e.Defence ? at.getReserved("Defence") : at.h.Defence,
+                        					At = et / parseNum(rt);
+                        				null != e.Chnc2HarvDN ? $e.setReserved("Chnc2HarvDN", At) : ($e.h.Chnc2HarvDN = At);
+                        			} else {
+                        				var lt = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        				null != e.Chnc2HarvDN ? lt.setReserved("Chnc2HarvDN", 0) : (lt.h.Chnc2HarvDN = 0);
+                        			}
+                        			var ot = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				it = null != e.Chnc2HarvDN ? ot.getReserved("Chnc2HarvDN") : ot.h.Chnc2HarvDN;
+                        			if (0.25 <= parseNum(it)) {
+                        				var ut = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					gt = null != e.Chnc2HarvDN ? ut.getReserved("Chnc2HarvDN") : ut.h.Chnc2HarvDN,
+                        					mt = parseNum(gt),
+                        					dt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ct = null != e.Chnc2HarvDN ? dt.getReserved("Chnc2HarvDN") : dt.h.Chnc2HarvDN;
+                        				return Math.min(
+                        					(1.512 * (mt - 0.0763)) / (parseNum(ct) + 5), 1);
+                        			}
+                        			return 0;
+                        		}
+                        		if ("RevProwCalc" == s) {
+                        			var pt = b.engine.getGameAttribute("DNSM");
+                        			null != e.RevProwCalcDN ? pt.setReserved("RevProwCalcDN", 1) : (pt.h.RevProwCalcDN = 1);
+                        			var ht = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        				bt = b.engine.getGameAttribute("AFKtarget"),
+                        				ft = null != e[bt] ? ht.getReserved(bt) : ht.h[bt];
+                        			if ("FIGHTING" == (null != e.AFKtype ? ft.getReserved("AFKtype") : ft.h.AFKtype)) {
+                        				var yt = b.engine.getGameAttribute("DNSM");
+                        				null != e.RevProwCalcDN ? yt.setReserved("RevProwCalcDN", 1) : (yt.h.RevProwCalcDN = 1);
+                        			} else {
+                        				var Rt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					vt = b.engine.getGameAttribute("AFKtarget"),
+                        					Ft = null != e[vt] ? Rt.getReserved(vt) : Rt.h[vt];
+                        				if ("MINING" == (null != e.AFKtype ? Ft.getReserved("AFKtype") : Ft.h.AFKtype)) {
+                        					var Nt = b.engine.getGameAttribute("DNSM"),
+                        						_t = 0.25 + H._customBlock_ArbitraryCode("MiningProwess");
+                        					null != e.RevProwCalcDN ? Nt.setReserved("RevProwCalcDN", _t) : (Nt.h.RevProwCalcDN = _t);
+                        				} else {
+                        					var It = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						Dt = b.engine.getGameAttribute("AFKtarget"),
+                        						Et = null != e[Dt] ? It.getReserved(Dt) : It.h[Dt];
+                        					if ("CHOPPIN" == (null != e.AFKtype ? Et.getReserved("AFKtype") : Et.h.AFKtype)) {
+                        						var St = b.engine.getGameAttribute("DNSM"),
+                        							Gt = 0.25 + H._customBlock_ArbitraryCode("ChopProwess");
+                        						null != e.RevProwCalcDN ? St.setReserved("RevProwCalcDN", Gt) : (St.h.RevProwCalcDN = Gt);
+                        					} else {
+                        						var Tt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							Ut = b.engine.getGameAttribute("AFKtarget"),
+                        							Mt = null != e[Ut] ? Tt.getReserved(Ut) : Tt.h[Ut];
+                        						if ("FISHING" == (null != e.AFKtype ? Mt.getReserved("AFKtype") : Mt.h.AFKtype)) {
+                        							var Vt = b.engine.getGameAttribute("DNSM"),
+                        								Ct = 0.25 + H._customBlock_ArbitraryCode("FishProwess");
+                        							null != e.RevProwCalcDN ? Vt.setReserved("RevProwCalcDN", Ct) : (Vt.h.RevProwCalcDN = Ct);
+                        						} else {
+                        							var Bt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								Pt = b.engine.getGameAttribute("AFKtarget"),
+                        								Ot = null != e[Pt] ? Bt.getReserved(Pt) : Bt.h[Pt];
+                        							if ("CATCHING" == (null != e.AFKtype ? Ot.getReserved("AFKtype") : Ot.h.AFKtype)) {
+                        								var wt = b.engine.getGameAttribute("DNSM"),
+                        									kt = 0.25 + H._customBlock_ArbitraryCode("CatchProwess");
+                        								null != e.RevProwCalcDN ? wt.setReserved("RevProwCalcDN", kt) : (wt.h.RevProwCalcDN = kt);
+                        							} else {
+                        								var xt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        									Qt = b.engine.getGameAttribute("AFKtarget"),
+                        									Xt = null != e[Qt] ? xt.getReserved(Qt) : xt.h[Qt];
+                        								if ("COOKING" == (null != e.AFKtype ? Xt.getReserved("AFKtype") : Xt.h.AFKtype)) {
+                        									var Lt = b.engine.getGameAttribute("DNSM"),
+                        										zt = 0.25 + H._customBlock_ArbitraryCode("CookingProwess");
+                        									null != e.RevProwCalcDN ? Lt.setReserved("RevProwCalcDN", zt) : (Lt.h.RevProwCalcDN = zt);
+                        								} else {
+                        									var Yt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        										Wt = b.engine.getGameAttribute("AFKtarget"),
+                        										Zt = null != e[Wt] ? Yt.getReserved(Wt) : Yt.h[Wt];
+                        									if ("LABORATORY" == (null != e.AFKtype ? Zt.getReserved("AFKtype") : Zt.h.AFKtype)) {
+                        										var Ht = b.engine.getGameAttribute("DNSM"),
+                        											Jt = 0.25 + H._customBlock_ArbitraryCode("LaboratoryProwess");
+                        										null != e.RevProwCalcDN ? Ht.setReserved("RevProwCalcDN", Jt) : (Ht.h.RevProwCalcDN = Jt);
+                        									}
+                        								}
+                        							}
+                        						}
+                        					}
+                        				}
+                        			}
+                        			var jt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        				qt = b.engine.getGameAttribute("AFKtarget"),
+                        				Kt = null != e[qt] ? jt.getReserved(qt) : jt.h[qt];
+                        			if ("FISHING" == (null != e.AFKtype ? Kt.getReserved("AFKtype") : Kt.h.AFKtype)) {
+                        				var $t = b.engine.getGameAttribute("CustomMaps"),
+                        					en = null != e.FishPools ? $t.getReserved("FishPools") : $t.h.FishPools,
+                        					tn = b.engine.getGameAttribute("AFKtarget"),
+                        					nn = (null != e[tn] ? en.getReserved(tn) : en.h[tn])[3][2],
+                        					sn = parseNum(nn),
+                        					an = Math.round(parseNum(a)),
+                        					rn = b.engine.getGameAttribute("DNSM"),
+                        					An = null != e.RevProwCalcDN ? rn.getReserved("RevProwCalcDN") : rn.h.RevProwCalcDN;
+                        				return (
+                        					(sn / 1) * Math.pow(an, 1 / parseNum(An)));
+                        			}
+                        			var ln = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        				on = b.engine.getGameAttribute("AFKtarget"),
+                        				un = null != e[on] ? ln.getReserved(on) : ln.h[on],
+                        				gn = null != e.Defence ? un.getReserved("Defence") : un.h.Defence,
+                        				mn = parseNum(gn),
+                        				dn = Math.round(parseNum(a)),
+                        				cn = b.engine.getGameAttribute("DNSM"),
+                        				pn = null != e.RevProwCalcDN ? cn.getReserved("RevProwCalcDN") : cn.h.RevProwCalcDN;
+                        			return (
+                        				(mn / 0.1) * Math.pow(dn, 1 / parseNum(pn)));
+                        		}
+                        		if ("atan2convert" == s) return 0 <= parseNum(a) ? 360 + -1 * parseNum(a) : -1 * parseNum(a);
+                        		if ("Stat2num" == s) {
+                        			var hn = b.engine.getGameAttribute("DNSM"),
+                        				bn = parseNum(a);
+                        			null != e.S2Nz3 ? hn.setReserved("S2Nz3", bn) : (hn.h.S2Nz3 = bn);
+                        			var fn = b.engine.getGameAttribute("DNSM"),
+                        				yn = null != e.S2Nz3 ? fn.getReserved("S2Nz3") : fn.h.S2Nz3;
+                        			if (1e3 > parseNum(yn)) {
+                        				var Rn = b.engine.getGameAttribute("DNSM"),
+                        					vn = b.engine.getGameAttribute("DNSM"),
+                        					Fn = null != e.S2Nz3 ? vn.getReserved("S2Nz3") : vn.h.S2Nz3,
+                        					Nn = (Math.pow(parseNum(Fn) + 1, 0.37) - 1) / 40;
+                        				null != e.S2Nz3 ? Rn.setReserved("S2Nz3", Nn) : (Rn.h.S2Nz3 = Nn);
+                        			} else {
+                        				var _n = b.engine.getGameAttribute("DNSM"),
+                        					In = b.engine.getGameAttribute("DNSM"),
+                        					Dn = null != e.S2Nz3 ? In.getReserved("S2Nz3") : In.h.S2Nz3,
+                        					En = parseNum(Dn),
+                        					Sn = b.engine.getGameAttribute("DNSM"),
+                        					Gn = null != e.S2Nz3 ? Sn.getReserved("S2Nz3") : Sn.h.S2Nz3,
+                        					Tn = ((En - 1e3) / (parseNum(Gn) + 2500)) * 0.5 + 0.297;
+                        				null != e.S2Nz3 ? _n.setReserved("S2Nz3", Tn) : (_n.h.S2Nz3 = Tn);
+                        			}
+                        			var Un = b.engine.getGameAttribute("DNSM");
+                        			return null != e.S2Nz3 ? Un.getReserved("S2Nz3") : Un.h.S2Nz3;
+                        		}
+                        		if ("OverkillStuffs" == s) {
+                        			if (0 == parseNum(a)) {
+                        				if (1 == H._customBlock_RunCodeOfTypeXforThingY("OverkillStuffs", "2")) {
+                        					var Mn = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						Vn = b.engine.getGameAttribute("AFKtarget"),
+                        						Cn = null != e[Vn] ? Mn.getReserved(Vn) : Mn.h[Vn];
+                        					return null != e.MonsterHPTotal ? Cn.getReserved("MonsterHPTotal") : Cn.h.MonsterHPTotal;
+                        				}
+                        				var Bn = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					Pn = b.engine.getGameAttribute("AFKtarget"),
+                        					On = null != e[Pn] ? Bn.getReserved(Pn) : Bn.h[Pn],
+                        					wn = null != e.MonsterHPTotal ? On.getReserved("MonsterHPTotal") : On.h.MonsterHPTotal;
+                        				return (2 * parseNum(wn) * Math.pow(2, H._customBlock_RunCodeOfTypeXforThingY("OverkillStuffs", "2") - 1));
+                        			}
+                        			if (1 == parseNum(a)) {
+                        				var kn = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					xn = b.engine.getGameAttribute("AFKtarget"),
+                        					Qn = null != e[xn] ? kn.getReserved(xn) : kn.h[xn],
+                        					Xn = null != e.MonsterHPTotal ? Qn.getReserved("MonsterHPTotal") : Qn.h.MonsterHPTotal;
+                        				return (2 * parseNum(Xn) * Math.pow(2, H._customBlock_RunCodeOfTypeXforThingY("OverkillStuffs", "2")));
+                        			}
+                        			if (2 == parseNum(a)) {
+                        				var Ln = b.engine.getGameAttribute("DNSM");
+                        				null != e.S2Nz4 ? Ln.setReserved("S2Nz4", 1) : (Ln.h.S2Nz4 = 1);
+                        				for (var zn = 0; 50 > zn;) {
+                        					var Yn = zn++,
+                        						Wn = H._customBlock_DamageDealed("Max"),
+                        						Zn = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						Hn = b.engine.getGameAttribute("AFKtarget"),
+                        						Jn = Zn,
+                        						jn = null != e[Hn] ? Jn.getReserved(Hn) : Jn.h[Hn],
+                        						qn = null != e.MonsterHPTotal ? jn.getReserved("MonsterHPTotal") : jn.h.MonsterHPTotal;
+                        					if (!(Wn >= 2 * parseNum(qn) * Math.pow(2, Yn + 1))) break;
+                        					var Kn = b.engine.getGameAttribute("DNSM"),
+                        						$n = Yn + 2;
+                        					null != e.S2Nz4 ? Kn.setReserved("S2Nz4", $n) : (Kn.h.S2Nz4 = $n);
+                        				}
+                        				var es = b.engine.getGameAttribute("DNSM");
+                        				return null != e.S2Nz4 ? es.getReserved("S2Nz4") : es.h.S2Nz4;
+                        			}
+                        			if (3 == parseNum(a)) {
+                        				var ts = H._customBlock_DamageDealed("Max"),
+                        					ns = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					ss = b.engine.getGameAttribute("AFKtarget"),
+                        					as = null != e[ss] ? ns.getReserved(ss) : ns.h[ss],
+                        					rs = null != e.MonsterHPTotal ? as.getReserved("MonsterHPTotal") : as.h.MonsterHPTotal;
+                        				if (ts >= 2 * parseNum(rs)) {
+                        					var As = b.engine.getGameAttribute("TowerInfo")[2];
+                        					if (0.5 < parseNum(As)) var ls = Math.floor(H._customBlock_PlayerAccTot()),
+                        						os = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						is = b.engine.getGameAttribute("AFKtarget"),
+                        						us = null != e[is] ? os.getReserved(is) : os.h[is],
+                        						gs = null != e.Defence ? us.getReserved("Defence") : us.h.Defence,
+                        						ms = ls > 1.5 * parseNum(gs);
+                        					else ms = !1;
+                        				} else ms = !1;
+                        				return ms ? 1 : 0;
+                        			}
+                        			return 1;
+                        		}
+                        		return 777;
+                        	}

@@ -1,0 +1,206 @@
+                        (w._customBlock_TrappingStuffs = function(s, a) {
+                        		if ("BaseQTY" == s) {
+                        			var r = b.engine.getGameAttribute("TowerInfo")[6],
+                        				o = parseNum(r),
+                        				i = b.engine.getGameAttribute("DNSM"),
+                        				u = null != e.AlchVials ? i.getReserved("AlchVials") : i.h.AlchVials,
+                        				m = null != e.CritterBASED ? u.getReserved("CritterBASED") : u.h.CritterBASED,
+                        				c = parseNum(m),
+                        				p = b.engine.getGameAttribute("DNSM"),
+                        				h = null != e.StarSigns ? p.getReserved("StarSigns") : p.h.StarSigns,
+                        				f = null != e.pctCritter ? h.getReserved("pctCritter") : h.h.pctCritter,
+                        				y = parseNum(f) + (w._customBlock_TrappingStuffs("TrapMGbonus", 4) + w._customBlock_TrappingStuffs("TrapMGbonus", 7)),
+                        				R = b.engine.getGameAttribute("DNSM"),
+                        				v = null != e.BoxRewards ? R.getReserved("BoxRewards") : R.h.BoxRewards,
+                        				F = null != e["16c"] ? v.getReserved("16c") : v.h["16c"];
+                        			return Math.floor(10 + o + (c + (y + parseNum(F) / 10)));
+                        		}
+                        		if ("MapNumToListNum" == s) {
+                        			var N = b.engine.getGameAttribute("DNSM");
+                        			null != e.TrappingDNcm ? N.setReserved("TrappingDNcm", 0) : (N.h.TrappingDNcm = 0);
+                        			for (var _ = 0, I = b.engine.getGameAttribute("CustomLists"), D = (null != e.TrappingInfo ? I.getReserved("TrappingInfo") : I.h.TrappingInfo).length; _ < D;) {
+                        				var E = _++,
+                        					S = b.engine.getGameAttribute("CustomLists");
+                        				if (a == (null != e.TrappingInfo ? S.getReserved("TrappingInfo") : S.h.TrappingInfo)[E][0]) {
+                        					var G = b.engine.getGameAttribute("DNSM");
+                        					null != e.TrappingDNcm ? G.setReserved("TrappingDNcm", E) : (G.h.TrappingDNcm = E);
+                        					break;
+                        				}
+                        			}
+                        			var T = b.engine.getGameAttribute("DNSM"),
+                        				M = null != e.TrappingDNcm ? T.getReserved("TrappingDNcm") : T.h.TrappingDNcm;
+                        			return Math.floor(parseNum(M));
+                        		}
+                        		if ("CollectAllPCT" == s) {
+                        			var V = b.engine.getGameAttribute("DNSM");
+                        			if ((null != e.TrappingDNcm ? V.setReserved("TrappingDNcm", 0) : (V.h.TrappingDNcm = 0), 0 < t._customBlock_GetTalentNumber(1, 310))) {
+                        				var C = t._customBlock_GetTalentNumber(1, 310),
+                        					B = b.engine.getGameAttribute("DNSM"),
+                        					P = null != e.AlchVials ? B.getReserved("AlchVials") : B.h.AlchVials,
+                        					O = null != e.TrapOvision ? P.getReserved("TrapOvision") : P.h.TrapOvision;
+                        				return Math.max(30, C + parseNum(O));
+                        			}
+                        			for (var x = 0, Q = b.engine.getGameAttribute("GetPlayersUsernames").length; x < Q;) {
+                        				var X = x++,
+                        					L = b.engine.getGameAttribute("DNSM"),
+                        					z = b.engine.getGameAttribute("DNSM"),
+                        					Y = null != e.TrappingDNcm ? z.getReserved("TrappingDNcm") : z.h.TrappingDNcm,
+                        					W = parseNum(Y),
+                        					Z = w._customBlock_getbonus2(1, 310, X),
+                        					J = b.engine.getGameAttribute("DNSM"),
+                        					j = null != e.AlchVials ? J.getReserved("AlchVials") : J.h.AlchVials,
+                        					q = null != e.TrapOvision ? j.getReserved("TrapOvision") : j.h.TrapOvision,
+                        					K = L,
+                        					$ = Math.max(30, Math.max(W, Z + parseNum(q)));
+                        				null != e.TrappingDNcm ? K.setReserved("TrappingDNcm", $) : (K.h.TrappingDNcm = $);
+                        			}
+                        			var ee = b.engine.getGameAttribute("DNSM");
+                        			return null != e.TrappingDNcm ? ee.getReserved("TrappingDNcm") : ee.h.TrappingDNcm;
+                        		}
+                        		if ("CollectAllPCTexp" == s) {
+                        			var te = b.engine.getGameAttribute("DNSM");
+                        			if ((null != e.TrappingDNcm ? te.setReserved("TrappingDNcm", 0) : (te.h.TrappingDNcm = 0), 0 < Math.min(t._customBlock_GetTalentNumber(2, 310), 99))) return Math.max(30, Math.min(t._customBlock_GetTalentNumber(2, 310), 99));
+                        			for (var ne = 0, se = b.engine.getGameAttribute("GetPlayersUsernames").length; ne < se;) {
+                        				var ae = ne++,
+                        					re = b.engine.getGameAttribute("DNSM"),
+                        					Ae = b.engine.getGameAttribute("DNSM"),
+                        					le = null != e.TrappingDNcm ? Ae.getReserved("TrappingDNcm") : Ae.h.TrappingDNcm,
+                        					oe = re,
+                        					ie = Math.max(30, Math.max(parseNum(le), Math.min(w._customBlock_getbonus2(2, 310, ae), 99)));
+                        				null != e.TrappingDNcm ? oe.setReserved("TrappingDNcm", ie) : (oe.h.TrappingDNcm = ie);
+                        			}
+                        			var ue = b.engine.getGameAttribute("DNSM");
+                        			return null != e.TrappingDNcm ? ue.getReserved("TrappingDNcm") : ue.h.TrappingDNcm;
+                        		}
+                        		if ("EfficiencyBonusQTY" == s) {
+                        			var ge = H._customBlock_skillstats2("TrappingEfficiency"),
+                        				me = b.engine.getGameAttribute("CustomLists"),
+                        				de = (null != e.TrappingInfo ? me.getReserved("TrappingInfo") : me.h.TrappingInfo)[0 | w._customBlock_TrappingStuffs("MapNumToListNum", a)][4];
+                        			if (ge >= parseNum(de)) {
+                        				var ce = H._customBlock_skillstats2("TrappingEfficiency"),
+                        					pe = b.engine.getGameAttribute("CustomLists"),
+                        					he = (null != e.TrappingInfo ? pe.getReserved("TrappingInfo") : pe.h.TrappingInfo)[0 | w._customBlock_TrappingStuffs("MapNumToListNum", a)][4];
+                        				return Math.floor(100 * Math.pow(ce / (10 * parseNum(he)), 0.25));
+                        			}
+                        			return 0;
+                        		}
+                        		if ("TrapQtyBonus" == s) {
+                        			if (-1 != b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[25]) {
+                        				var be = b.engine.getGameAttribute("CustomLists"),
+                        					fe = null != e.TrapBoxInfo ? be.getReserved("TrapBoxInfo") : be.h.TrapBoxInfo,
+                        					ye = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[33],
+                        					Re = fe[0 | parseNum(ye)],
+                        					ve = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[25],
+                        					Fe = Re[0 | parseNum(ve)][1];
+                        				return Math.floor(parseNum(Fe));
+                        			}
+                        			return 1;
+                        		}
+                        		if ("TrapEXPBonus" == s) {
+                        			if (-1 != b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[25]) {
+                        				var Ne = b.engine.getGameAttribute("CustomLists"),
+                        					_e = null != e.TrapBoxInfo ? Ne.getReserved("TrapBoxInfo") : Ne.h.TrapBoxInfo,
+                        					Ie = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[33],
+                        					De = _e[0 | parseNum(Ie)],
+                        					Ee = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[25];
+                        				if (0 == De[0 | parseNum(Ee)][3]) {
+                        					var Se = b.engine.getGameAttribute("CustomLists"),
+                        						Ge = null != e.TrapBoxInfo ? Se.getReserved("TrapBoxInfo") : Se.h.TrapBoxInfo,
+                        						Te = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[33],
+                        						Ue = Ge[0 | parseNum(Te)],
+                        						Me = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[25],
+                        						Ve = Ue[0 | parseNum(Me)][2];
+                        					return Math.floor(parseNum(Ve));
+                        				}
+                        			}
+                        			return 1;
+                        		}
+                        		if ("TrapRareBonus" == s) {
+                        			if (-1 != b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[25]) {
+                        				var Ce = b.engine.getGameAttribute("CustomLists"),
+                        					Be = null != e.TrapBoxInfo ? Ce.getReserved("TrapBoxInfo") : Ce.h.TrapBoxInfo,
+                        					Pe = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[33],
+                        					Oe = Be[0 | parseNum(Pe)],
+                        					we = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[25];
+                        				if (1 == Oe[0 | parseNum(we)][3]) {
+                        					var ke = b.engine.getGameAttribute("CustomLists"),
+                        						xe = null != e.TrapBoxInfo ? ke.getReserved("TrapBoxInfo") : ke.h.TrapBoxInfo,
+                        						Qe = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[33],
+                        						Xe = xe[0 | parseNum(Qe)],
+                        						Le = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[25],
+                        						ze = Xe[0 | parseNum(Le)][2];
+                        					return Math.floor(parseNum(ze));
+                        				}
+                        			}
+                        			return 1;
+                        		}
+                        		if ("CurrentMapADJ" == s) {
+                        			if (-1 == b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[78]) return b.engine.getGameAttribute("CurrentMap");
+                        			var Ye = b.engine.getGameAttribute("CustomLists"),
+                        				We = null != e.TrappingInfo ? Ye.getReserved("TrappingInfo") : Ye.h.TrappingInfo,
+                        				Ze = b.engine.getGameAttribute("PixelHelperActor")[7].getValue("ActorEvents_340", "_GenINFO")[78],
+                        				He = We[0 | parseNum(Ze)][0];
+                        			return parseNum(He);
+                        		}
+                        		if ("TotalQTY" == s) return Math.floor(
+                        			(1 + A._customBlock_MealBonus("Critter") / 100) * w._customBlock_TrappingStuffs("BaseQTY", 1) * (1 + w._customBlock_TrappingStuffs("EfficiencyBonusQTY", w._customBlock_TrappingStuffs("CurrentMapADJ", b.engine.getGameAttribute("CurrentMap"))) / 100) * w._customBlock_TrappingStuffs("TrapQtyBonus", 0));
+                        		if ("TotalEXP" == s) {
+                        			var Je = w._customBlock_TrappingStuffs("BaseQTY", 1),
+                        				je = w._customBlock_TrappingStuffs("TrapEXPBonus", 0),
+                        				qe = b.engine.getGameAttribute("CustomLists"),
+                        				Ke = (null != e.TrappingInfo ? qe.getReserved("TrappingInfo") : qe.h.TrappingInfo)[0 | w._customBlock_TrappingStuffs("MapNumToListNum", w._customBlock_TrappingStuffs("CurrentMapADJ", b.engine.getGameAttribute("CurrentMap")))][5];
+                        			return Math.floor(Je * je * parseNum(Ke) * H._customBlock_skillstats2("TrappingEXPmulti"));
+                        		}
+                        		if ("TotalRareChance" == s) {
+                        			var $e = b.engine.getGameAttribute("CustomLists"),
+                        				et = (null != e.TrappingInfo ? $e.getReserved("TrappingInfo") : $e.h.TrappingInfo)[0 | w._customBlock_TrappingStuffs("MapNumToListNum", w._customBlock_TrappingStuffs("CurrentMapADJ", b.engine.getGameAttribute("CurrentMap")))][6],
+                        				tt = parseNum(et),
+                        				nt = Math.max(w._customBlock_TrappingStuffs("TrapRareBonus", 0), 1),
+                        				st = t._customBlock_StampBonusOfTypeX("ShinyChance"),
+                        				at = b.engine.getGameAttribute("Tasks")[1][2][5],
+                        				rt = parseNum(at),
+                        				At = b.engine.getGameAttribute("DNSM"),
+                        				lt = null != e.AlchBubbles ? At.getReserved("AlchBubbles") : At.h.AlchBubbles,
+                        				ot = null != e.CritShiny ? lt.getReserved("CritShiny") : lt.h.CritShiny,
+                        				it = Math.max(parseNum(ot), 1),
+                        				ut = b.engine.getGameAttribute("DNSM"),
+                        				gt = null != e.AlchVials ? ut.getReserved("AlchVials") : ut.h.AlchVials,
+                        				mt = null != e.Shiny1 ? gt.getReserved("Shiny1") : gt.h.Shiny1,
+                        				dt = parseNum(mt),
+                        				ct = b.engine.getGameAttribute("DNSM"),
+                        				pt = null != e.AlchVials ? ct.getReserved("AlchVials") : ct.h.AlchVials,
+                        				ht = null != e.Shiny2 ? pt.getReserved("Shiny2") : pt.h.Shiny2,
+                        				bt = parseNum(ht),
+                        				ft = Math.max(1, t._customBlock_GetTalentNumber(1, 313)),
+                        				yt = b.engine.getGameAttribute("Lv0")[7];
+                        			return Math.max(0.001, tt * nt * (1 + (st + 2 * rt) / 100) * it * (1 + (dt + bt) / 100) * Math.pow(ft, 1 + Math.floor(parseNum(yt) / 10)));
+                        		}
+                        		if ("RareBonusOnOpen" == s) return (A._customBlock_TotalFoodBonuses("TrappingSpeedBoosts") + (U._customBlock_CardBonusREAL(53) + (w._customBlock_TrappingStuffs("TrapMGbonus", 2) + w._customBlock_TrappingStuffs("TrapMGbonus", 5) + w._customBlock_ArcadeBonus(13))));
+                        		if ("NumOfTrapsPlaceable" == s) {
+                        			var Rt = b.engine.getGameAttribute("DNSM"),
+                        				vt = null != e.AlchBubbles ? Rt.getReserved("AlchBubbles") : Rt.h.AlchBubbles,
+                        				Ft = null != e.TrapACTIVE ? vt.getReserved("TrapACTIVE") : vt.h.TrapACTIVE;
+                        			if (15 < parseNum(Ft)) {
+                        				var Nt = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        					_t = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[1][4]),
+                        					It = null != e[_t] ? Nt.getReserved(_t) : Nt.h[_t],
+                        					Dt = null != e.ID ? It.getReserved("ID") : It.h.ID;
+                        				return (1 + parseNum(Dt));
+                        			}
+                        			var Et = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        				St = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[1][4]),
+                        				Gt = null != e[St] ? Et.getReserved(St) : Et.h[St],
+                        				Tt = null != e.ID ? Gt.getReserved("ID") : Gt.h.ID;
+                        			return parseNum(Tt);
+                        		}
+                        		if ("TrapMGbonus" == s) {
+                        			var Ut = b.engine.getGameAttribute("OptionsListAccount")[99];
+                        			if (parseNum(Ut) >= 25 * (a + 1)) {
+                        				var Mt = b.engine.getGameAttribute("CustomLists"),
+                        					Vt = (null != e.RANDOlist ? Mt.getReserved("RANDOlist") : Mt.h.RANDOlist)[59][0 | a];
+                        				return parseNum(Vt);
+                        			}
+                        			return 0;
+                        		}
+                        		return 1;
+                        	}

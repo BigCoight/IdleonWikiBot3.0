@@ -1,0 +1,27 @@
+                        (H._customBlock_ForgeSpeeed = function(t) {
+                        		var s = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			a = Math.round(H._customBlock_ForgeStats(2)) / 100;
+                        		if (
+                        			(null != e.ForgeSpeedzDN ? s.setReserved("ForgeSpeedzDN", a) : (s.h.ForgeSpeedzDN = a),
+                        				(s = b.engine.getGameAttribute("ItemDefinitionsGET")),
+                        				(a = "" + g.string(b.engine.getGameAttribute("ForgeItemOrder")[(3 * t + 1) | 0])),
+                        				(s = null != e[a] ? s.getReserved(a) : s.h[a]), "SpeedForge" == (null != e.Effect ? s.getReserved("Effect") : s.h.Effect))) {
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = null == (a = null != e.ForgeSpeedzDN ? a.getReserved("ForgeSpeedzDN") : a.h.ForgeSpeedzDN) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)));
+                        			var r = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        				A = "" + g.string(b.engine.getGameAttribute("ForgeItemOrder")[(3 * t + 1) | 0]);
+                        			(r = null != e[A] ? r.getReserved(A) : r.h[A]),
+                        			(r = null == (r = null != e.Amount ? r.getReserved("Amount") : r.h.Amount) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        			(A = b.engine.getGameAttribute("ItemDefinitionsGET"));
+                        			var o = "" + g.string(b.engine.getGameAttribute("ForgeItemOrder")[(3 * t + 1) | 0]);
+                        			(A = null != e[o] ? A.getReserved(o) : A.h[o]),
+                        			(a *= 1 + (r * H._customBlock_FoodBonuses(g.string(null != e.Effect ? A.getReserved("Effect") : A.h.Effect) + "EffectBonus")) / 100),
+                        			null != e.ForgeSpeedzDN ? s.setReserved("ForgeSpeedzDN", a) : (s.h.ForgeSpeedzDN = a);
+                        		}
+                        		return (
+                        			(null == (s = b.engine.getGameAttribute("GemItemsPurchased")[104]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) > t && ((t = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = 1.5 * (null == (s = null != e.ForgeSpeedzDN ? s.getReserved("ForgeSpeedzDN") : s.h.ForgeSpeedzDN) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)))), null != e.ForgeSpeedzDN ? t.setReserved("ForgeSpeedzDN", s) : (t.h.ForgeSpeedzDN = s)),
+                        			(t = b.engine.getGameAttribute("DummyNumbersStatManager")), 0.25 * (null == (t = null != e.ForgeSpeedzDN ? t.getReserved("ForgeSpeedzDN") : t.h.ForgeSpeedzDN) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))));
+                        	}

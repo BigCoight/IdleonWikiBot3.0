@@ -1,0 +1,7 @@
+                        (t._customBlock_RemoveQuestFromHelper = function(t, s) {
+                        		var a = b.engine.gameAttributes,
+                        			r = [];
+                        		for (null != e.DummyList ? a.setReserved("DummyList", r) : (a.h.DummyList = r), a = b.engine, r = b.engine.getGameAttribute("DialogueDefGET"), s = (null != e[s] ? r.getReserved(s) : r.h[s])[1], t = parseNum(t), a = a.gameAttributes, t = s[0 | t], null != e.DummyList3 ? a.setReserved("DummyList3", t) : (a.h.DummyList3 = t), t = 0, s = b.engine.getGameAttribute("QuestHelperMenu").length; t < s;)
+                        			(a = t++), b.engine.getGameAttribute("DummyList").push(b.engine.getGameAttribute("QuestHelperMenu")[a][0]);
+                        		return (Sb.contains(b.engine.getGameAttribute("DummyList"), b.engine.getGameAttribute("DummyList3")[8]) && b.engine.getGameAttribute("QuestHelperMenu").splice(b.engine.getGameAttribute("DummyList").indexOf(b.engine.getGameAttribute("DummyList3")[8]), 1), "cool");
+                        	}

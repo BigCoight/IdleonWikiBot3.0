@@ -1,0 +1,28 @@
+                        (H._customBlock_Pathfinder = function(t, s) {
+                        		var a = b.engine.gameAttributes,
+                        			r = [];
+                        		for (null != e._Parent ? a.setReserved("_Parent", r) : (a.h._Parent = r), a = b.engine.gameAttributes, r = [], null != e._Path ? a.setReserved("_Path", r) : (a.h._Path = r), a = b.engine.gameAttributes, r = [], null != e._Queue ? a.setReserved("_Queue", r) : (a.h._Queue = r), a = b.engine.gameAttributes, r = [], null != e._Visited ? a.setReserved("_Visited", r) : (a.h._Visited = r), b.engine.getGameAttribute("_Queue").push(t), a = 0, r = b.engine.getGameAttribute("NodeNeighbors").length; a < r;) a++, b.engine.getGameAttribute("_Parent").push(-1);
+                        		for (; 0 != b.engine.getGameAttribute("_Queue").length;) {
+                        			if ((b.engine.getGameAttribute("_Visited").push(b.engine.getGameAttribute("_Queue")[0]), b.engine.getGameAttribute("_Queue")[0] == s)) {
+                        				for (a = b.engine.gameAttributes, null != e._Current ? a.setReserved("_Current", s) : (a.h._Current = s); b.engine.getGameAttribute("_Current") != t;) {
+                        					for (s = 0, a = (a = b.engine.getGameAttribute("NodeNeighbors"))[0 | (null == (r = b.engine.getGameAttribute("_Parent")[0 | b.engine.getGameAttribute("_Current")]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r)))].length; s < a;) {
+                        						r = s++;
+                        						var A = b.engine.getGameAttribute("NodeNeighbors"),
+                        							o = b.engine.getGameAttribute("_Parent")[0 | b.engine.getGameAttribute("_Current")];
+                        						A[0 | parseNum(o)][r] == b.engine.getGameAttribute("_Current") && b.engine.getGameAttribute("_Path").splice(0, 0, r);
+                        					}
+                        					(s = b.engine),
+                        					(a = null == (a = b.engine.getGameAttribute("_Parent")[0 | b.engine.getGameAttribute("_Current")]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        					(s = s.gameAttributes),
+                        					null != e._Current ? s.setReserved("_Current", a) : (s.h._Current = a);
+                        				}
+                        				return b.engine.getGameAttribute("_Path");
+                        			}
+                        			for (a = 0, r = b.engine.getGameAttribute("NodeNeighbors"), A = b.engine.getGameAttribute("_Queue")[0], r = d.__cast(r[0 | parseNum(A)], Array); a < r.length;)
+                        				(A = r[a]),
+                        				++a,
+                        				Sb.contains(b.engine.getGameAttribute("_Visited"), A) || ((b.engine.getGameAttribute("_Parent")[0 | parseNum(A)] = b.engine.getGameAttribute("_Queue")[0]), b.engine.getGameAttribute("_Queue").push(A));
+                        			b.engine.getGameAttribute("_Queue").splice(0, 1);
+                        		}
+                        		return null;
+                        	}

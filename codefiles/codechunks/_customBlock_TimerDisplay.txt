@@ -1,0 +1,3 @@
+                        (U._customBlock_TimerDisplay = function(e) {
+                        		return 0 <= e ? Math.round(Math.floor(e / 3600)) + "hr_" + Math.round(Math.floor(e / 60) - 60 * Math.floor(e / 3600)) + "min_" + Math.round(Math.round(e) - 60 * Math.floor(e / 60)) + "sec" : "0hr_0min_0sec";
+                        	}

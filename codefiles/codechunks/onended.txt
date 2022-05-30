@@ -1,0 +1,4 @@
+                            (A.onended = function() {
+                            		A.disconnect(0), (e._audioUnlocked = !0), document.removeEventListener("touchstart", s, !0), document.removeEventListener("touchend", s, !0), document.removeEventListener("click", s, !0);
+                            		for (var t = 0; t < e._howls.length; t++) e._howls[t]._emit("unlock");
+                            	}

@@ -1,0 +1,17 @@
+                        (A._customBlock_chipBonuses = function(t) {
+                        		var s = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.ChipBbonusz ? s.existsReserved("ChipBbonusz") : s.h.hasOwnProperty("ChipBbonusz")) {
+                        			s = b.engine.getGameAttribute("UserInfo")[0];
+                        			var a = b.engine.getGameAttribute("DNSM");
+                        			return (
+                        				(a = null != e.ChipBbonusz ? a.getReserved("ChipBbonusz") : a.h.ChipBbonusz), s != (null != e.PlayerNAME ? a.getReserved("PlayerNAME") : a.h.PlayerNAME) ? (w._customBlock_ActionBlock("RecalcChipBonuses", "0", 0, 0),
+                        					(s = b.engine.getGameAttribute("DNSM")),
+                        					(null != e.ChipBbonusz ? s.existsReserved("ChipBbonusz") : s.h.hasOwnProperty("ChipBbonusz")) ? ((s = b.engine.getGameAttribute("DNSM")),
+                        						(s = null != e.ChipBbonusz ? s.getReserved("ChipBbonusz") : s.h.ChipBbonusz), null == (t = null != e[t] ? s.getReserved(t) : s.h[t]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))) : 0) : ((s = b.engine.getGameAttribute("DNSM")),
+                        					(s = null != e.ChipBbonusz ? s.getReserved("ChipBbonusz") : s.h.ChipBbonusz), null == (t = null != e[t] ? s.getReserved(t) : s.h[t]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))));
+                        		}
+                        		return (w._customBlock_ActionBlock("RecalcChipBonuses", "0", 0, 0),
+                        			(s = b.engine.getGameAttribute("DNSM")),
+                        			(null != e.ChipBbonusz ? s.existsReserved("ChipBbonusz") : s.h.hasOwnProperty("ChipBbonusz")) ? ((s = b.engine.getGameAttribute("DNSM")),
+                        				(s = null != e.ChipBbonusz ? s.getReserved("ChipBbonusz") : s.h.ChipBbonusz), null == (t = null != e[t] ? s.getReserved(t) : s.h[t]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))) : 0);
+                        	}

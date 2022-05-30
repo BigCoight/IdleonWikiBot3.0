@@ -1,0 +1,10 @@
+                        (eh.NumberOfWeaponsMAP = function() {
+                        		var t = new p();
+                        		null != e["FILLER?"] ? t.setReserved("FILLER?", 0) : (t.h["FILLER?"] = 0);
+                        		var n = (null != e["FILLER?"] ? t.getReserved("FILLER?") : t.h["FILLER?"]) + 0;
+                        		return (null != e.FISTICUFF ? t.setReserved("FISTICUFF", n) : (t.h.FISTICUFF = n),
+                        			(n = (null != e.FISTICUFF ? t.getReserved("FISTICUFF") : t.h.FISTICUFF) + 7), null != e.SPEAR ? t.setReserved("SPEAR", n) : (t.h.SPEAR = n),
+                        			(n = (null != e.SPEAR ? t.getReserved("SPEAR") : t.h.SPEAR) + 11), null != e.BOW ? t.setReserved("BOW", n) : (t.h.BOW = n),
+                        			(n = (null != e.BOW ? t.getReserved("BOW") : t.h.BOW) + 9), null != e.WAND ? t.setReserved("WAND", n) : (t.h.WAND = n),
+                        			(n = (null != e.WAND ? t.getReserved("WAND") : t.h.WAND) + 8), null != e.CLASS4 ? t.setReserved("CLASS4", n) : (t.h.CLASS4 = n), t);
+                        	}

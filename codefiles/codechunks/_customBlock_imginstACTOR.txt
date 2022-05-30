@@ -1,0 +1,10 @@
+                        (t._customBlock_imginstACTOR = function(t) {
+                        		var n = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		return (
+                        			(t = new rd(new gd(t))), null != e.InstaceImgZz2 ? n.setReserved("InstaceImgZz2", t) : (n.h.InstaceImgZz2 = t),
+                        			(n = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(null != e.InstaceImgZz2 ? n.getReserved("InstaceImgZz2") : n.h.InstaceImgZz2).set_scaleY((100 * b.SCALE) / 100),
+                        			(n = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(null != e.InstaceImgZz2 ? n.getReserved("InstaceImgZz2") : n.h.InstaceImgZz2).set_scaleX((100 * b.SCALE) / 100),
+                        			(n = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.InstaceImgZz2 ? n.getReserved("InstaceImgZz2") : n.h.InstaceImgZz2);
+                        	}

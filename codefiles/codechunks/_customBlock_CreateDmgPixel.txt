@@ -1,0 +1,316 @@
+                        (t._customBlock_CreateDmgPixel = function(s, a, r) {
+                        		if (0 == a.getValue("ActorEvents_1", "_PetStatus")) var o = b.engine.getGameAttribute("CustomLists"),
+                        			i = null != e.NonDMGLinemonsterTypes ? o.getReserved("NonDMGLinemonsterTypes") : o.h.NonDMGLinemonsterTypes,
+                        			u = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        			m = "" + g.string(a.getValue("ActorEvents_1", "_MonsterType")),
+                        			c = null != e[m] ? u.getReserved(m) : u.h[m],
+                        			p = Sb.contains(i, null != e.Type ? c.getReserved("Type") : c.h.Type);
+                        		else p = !0;
+                        		if (!p)
+                        			if (Sb.contains(b.engine.getGameAttribute("DummyList"), "PartyMemberDmg")) {
+                        				if (0.15 > h.randomFloat()) {
+                        					var f = b.engine.gameAttributes;
+                        					null != e.dummyCritDmgMulti ? f.setReserved("dummyCritDmgMulti", 2) : (f.h.dummyCritDmgMulti = 2);
+                        				} else {
+                        					var y = b.engine.gameAttributes;
+                        					null != e.dummyCritDmgMulti ? y.setReserved("dummyCritDmgMulti", 1) : (y.h.dummyCritDmgMulti = 1);
+                        				}
+                        				var R = b.engine.getGameAttribute("MonsterHP"),
+                        					v = a.getValue("ActorEvents_1", "_MonsterID"),
+                        					F = parseNum(v),
+                        					N = b.engine.getGameAttribute("MonsterHP"),
+                        					_ = a.getValue("ActorEvents_1", "_MonsterID"),
+                        					I = N[0 | parseNum(_)];
+                        				R[0 | F] = parseNum(I) - b.engine.getGameAttribute("dummyDamageDealt");
+                        				var D = h.getActorType(10),
+                        					S = a.getX(),
+                        					G = a.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        					T = parseNum(G),
+                        					M = a.getY(),
+                        					V = a.getValue("ActorEvents_1", "_Monster0ffsetY");
+                        				h.createRecycledActor(D, S + T, M - parseNum(V) + 25, 0);
+                        			} else {
+                        				Sb.contains(a.getValue("ActorEvents_1", "_StatusList"), "StatusMark") && r.push(1 + t._customBlock_GetTalentNumber(2, 454) / 100);
+                        				for (var C = 0, B = 0 | s; C < B;) {
+                        					var P = C++,
+                        						O = b.engine.gameAttributes,
+                        						x = [];
+                        					if (
+                        						(null != e.DummyListDMGpixel ? O.setReserved("DummyListDMGpixel", x) : (O.h.DummyListDMGpixel = x), b.engine.getGameAttribute("DummyListDMGpixel").push(P), 1 == s ? b.engine.getGameAttribute("DummyListDMGpixel").push(1) : b.engine.getGameAttribute("DummyListDMGpixel").push(0), 1 != a.getValue("ActorEvents_1", "_IsWorshipMob")))
+                        						if (h.randomInt(0, 1e3) / 10 < H._customBlock_CritChance()) {
+                        							if (h.randomInt(0, 1e3) / 10 < H._customBlock_CritChance() - 100) var Q = b.engine.getGameAttribute("SkillLevels")[640],
+                        								X = 0.5 < parseNum(Q);
+                        							else X = !1;
+                        							if (X) {
+                        								160 == b.engine.getGameAttribute("CurrentMap") && U._customBlock_ProgressStarsign(40, 100);
+                        								var L = b.engine,
+                        									z = H._customBlock_CritDamage() + Math.max(2, Math.min(6, t._customBlock_GetTalentNumber(2, 640) / 100)),
+                        									Y = L.gameAttributes,
+                        									W = z;
+                        								null != e.dummyCritDmgMulti ? Y.setReserved("dummyCritDmgMulti", W) : (Y.h.dummyCritDmgMulti = W);
+                        							} else {
+                        								var Z = b.engine,
+                        									J = H._customBlock_CritDamage(),
+                        									j = Z.gameAttributes,
+                        									q = J;
+                        								null != e.dummyCritDmgMulti ? j.setReserved("dummyCritDmgMulti", q) : (j.h.dummyCritDmgMulti = q);
+                        							}
+                        						} else {
+                        							var K = b.engine.gameAttributes;
+                        							null != e.dummyCritDmgMulti ? K.setReserved("dummyCritDmgMulti", 1) : (K.h.dummyCritDmgMulti = 1);
+                        						}
+                        					else if (-1 == b.engine.getGameAttribute("dummyCritDmgMulti")) {
+                        						var $ = b.engine.gameAttributes;
+                        						null != e.dummyCritDmgMulti ? $.setReserved("dummyCritDmgMulti", 1) : ($.h.dummyCritDmgMulti = 1);
+                        					}
+                        					if (-1 != w._customBlock_Dungon()) {
+                        						var ee = b.engine.getGameAttribute("DNSM");
+                        						if (1 == (null != e.blokcritretDUNG ? ee.getReserved("blokcritretDUNG") : ee.h.blokcritretDUNG)) {
+                        							var te = b.engine,
+                        								ne = H._customBlock_CritDamage(),
+                        								se = te.gameAttributes,
+                        								ae = ne;
+                        							null != e.dummyCritDmgMulti ? se.setReserved("dummyCritDmgMulti", ae) : (se.h.dummyCritDmgMulti = ae);
+                        							var re = b.engine,
+                        								Ae = b.engine.getGameAttribute("dummyDamageDealt"),
+                        								le = b.engine.getGameAttribute("DNSM"),
+                        								oe = null != e.DungeonStats ? le.getReserved("DungeonStats") : le.h.DungeonStats,
+                        								ie = null != e.retaliate ? oe.getReserved("retaliate") : oe.h.retaliate,
+                        								ue = parseNum(ie),
+                        								ge = re.gameAttributes,
+                        								me = (ue / 100) * Ae;
+                        							null != e.dummyDamageDealt ? ge.setReserved("dummyDamageDealt", me) : (ge.h.dummyDamageDealt = me);
+                        						} else {
+                        							var de = b.engine.getGameAttribute("DNSM");
+                        							if (-5 == (null != e.blokcritretDUNG ? de.getReserved("blokcritretDUNG") : de.h.blokcritretDUNG)) {
+                        								var ce = b.engine.gameAttributes;
+                        								null != e.dummyCritDmgMulti ? ce.setReserved("dummyCritDmgMulti", 1) : (ce.h.dummyCritDmgMulti = 1);
+                        								var pe = b.engine,
+                        									he = b.engine.getGameAttribute("dummyDamageDealt"),
+                        									be = b.engine.getGameAttribute("DNSM"),
+                        									fe = null != e.DungeonStats ? be.getReserved("DungeonStats") : be.h.DungeonStats,
+                        									ye = null != e.retaliate ? fe.getReserved("retaliate") : fe.h.retaliate,
+                        									Re = parseNum(ye),
+                        									ve = pe.gameAttributes,
+                        									Fe = (Re / 100) * he;
+                        								null != e.dummyDamageDealt ? ve.setReserved("dummyDamageDealt", Fe) : (ve.h.dummyDamageDealt = Fe);
+                        							}
+                        						}
+                        						var Ne = b.engine,
+                        							_e = H._customBlock_PlayerMPmax(),
+                        							Ie = b.engine.getGameAttribute("PlayerMP"),
+                        							De = H._customBlock_PlayerMPmax(),
+                        							Ee = b.engine.getGameAttribute("DNSM"),
+                        							Se = null != e.DungeonStats ? Ee.getReserved("DungeonStats") : Ee.h.DungeonStats,
+                        							Ge = null != e.manaGodU ? Se.getReserved("manaGodU") : Se.h.manaGodU,
+                        							Te = parseNum(Ge),
+                        							Ue = Ne.gameAttributes,
+                        							Me = Math.min(_e, Ie + (De * Te) / 100);
+                        						null != e.PlayerMP ? Ue.setReserved("PlayerMP", Me) : (Ue.h.PlayerMP = Me);
+                        					}
+                        					var Ve = b.engine,
+                        						Ce = H._customBlock_DamageDealed("RNG") * b.engine.getGameAttribute("dummyCritDmgMulti"),
+                        						Be = Ve.gameAttributes,
+                        						Pe = Ce;
+                        					null != e.dummyDamageDealt ? Be.setReserved("dummyDamageDealt", Pe) : (Be.h.dummyDamageDealt = Pe);
+                        					for (var Oe = 0, we = r.length; Oe < we;) {
+                        						var ke = Oe++;
+                        						if (-1 != ("" + g.string(r[ke])).indexOf("Line")) {
+                        							if (-1 != ("" + g.string(r[ke])).indexOf("Line" + g.string(b.engine.getGameAttribute("DummyListDMGpixel")[0]))) {
+                        								var xe = b.engine,
+                        									Qe = b.engine.getGameAttribute("dummyDamageDealt"),
+                        									Xe = Nc.replace("" + g.string(r[ke]), "Line" + g.string(b.engine.getGameAttribute("DummyListDMGpixel")[0]), ""),
+                        									Le = parseNum(Xe),
+                        									ze = xe.gameAttributes,
+                        									Ye = Qe * Le;
+                        								null != e.dummyDamageDealt ? ze.setReserved("dummyDamageDealt", Ye) : (ze.h.dummyDamageDealt = Ye);
+                        							}
+                        						} else {
+                        							var We = b.engine,
+                        								Ze = b.engine.getGameAttribute("dummyDamageDealt"),
+                        								He = r[ke],
+                        								Je = parseNum(He),
+                        								je = We.gameAttributes,
+                        								qe = Ze * Je;
+                        							null != e.dummyDamageDealt ? je.setReserved("dummyDamageDealt", qe) : (je.h.dummyDamageDealt = qe);
+                        						}
+                        					}
+                        					var Ke = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						$e = "" + g.string(a.getValue("ActorEvents_1", "_MonsterType")),
+                        						et = Ke,
+                        						tt = null != e[$e] ? et.getReserved($e) : et.h[$e];
+                        					if (-1 != ("" + g.string(null != e.SpecialType ? tt.getReserved("SpecialType") : tt.h.SpecialType)).indexOf("a"))
+                        						if (-1 == w._customBlock_Dungon()) {
+                        							var nt = b.engine,
+                        								st = b.engine.getGameAttribute("dummyDamageDealt"),
+                        								at = t._customBlock_DamageMultipliers("Boss")[0],
+                        								rt = parseNum(at),
+                        								At = b.engine.getGameAttribute("DNSM"),
+                        								lt = null != e.StarSigns ? At.getReserved("StarSigns") : At.h.StarSigns,
+                        								ot = null != e.BossDamage ? lt.getReserved("BossDamage") : lt.h.BossDamage,
+                        								it = parseNum(ot),
+                        								ut = nt.gameAttributes,
+                        								gt = st * rt * (1 + it / 100);
+                        							null != e.dummyDamageDealt ? ut.setReserved("dummyDamageDealt", gt) : (ut.h.dummyDamageDealt = gt);
+                        						} else {
+                        							var mt = b.engine,
+                        								dt = b.engine.getGameAttribute("dummyDamageDealt") * (1 + w._customBlock_DungeonStat("BossDMG") / 100),
+                        								ct = mt.gameAttributes,
+                        								pt = dt;
+                        							null != e.dummyDamageDealt ? ct.setReserved("dummyDamageDealt", pt) : (ct.h.dummyDamageDealt = pt);
+                        						}
+                        					if (3 == w._customBlock_Dungon() && "iceknight" == a.getValue("ActorEvents_1", "_MonsterType")) {
+                        						var ht = b.engine,
+                        							bt = b.engine.getGameAttribute("dummyDamageDealt"),
+                        							ft = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[94][2],
+                        							yt = parseNum(ft),
+                        							Rt = b.engine.getGameAttribute("PixelHelperActor")[9].getValue("ActorEvents_498", "_GenINFO")[94][3],
+                        							vt = parseNum(Rt),
+                        							Ft = ht.gameAttributes,
+                        							Nt = bt * (1 + 0.5 * yt) * (1 + vt);
+                        						null != e.dummyDamageDealt ? Ft.setReserved("dummyDamageDealt", Nt) : (Ft.h.dummyDamageDealt = Nt);
+                        					}
+                        					var _t = b.engine.getGameAttribute("DNSM"),
+                        						It = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						Dt = "" + g.string(a.getValue("ActorEvents_1", "_MonsterType")),
+                        						Et = It,
+                        						St = null != e[Dt] ? Et.getReserved(Dt) : Et.h[Dt],
+                        						Gt = _t,
+                        						Tt = null != e.Defence ? St.getReserved("Defence") : St.h.Defence;
+                        					if ((null != e.arbAcc3 ? Gt.setReserved("arbAcc3", Tt) : (Gt.h.arbAcc3 = Tt), 1 == a.getValue("ActorEvents_1", "_IsWorshipMob"))) {
+                        						var Ut = b.engine.gameAttributes;
+                        						if ((null != e.dummyDamageDealt ? Ut.setReserved("dummyDamageDealt", 1) : (Ut.h.dummyDamageDealt = 1), 0 == b.engine.getGameAttribute("DummyText").indexOf("WorshipTowerDMG"))) {
+                        							var Mt = b.engine,
+                        								Vt = Nc.replace(b.engine.getGameAttribute("DummyText"), "WorshipTowerDMG", ""),
+                        								Ct = Math.round(parseNum(Vt) * b.engine.getGameAttribute("dummyCritDmgMulti")),
+                        								Bt = Mt.gameAttributes,
+                        								Pt = Ct;
+                        							null != e.dummyDamageDealt ? Bt.setReserved("dummyDamageDealt", Pt) : (Bt.h.dummyDamageDealt = Pt);
+                        						}
+                        						if (2 == a.getValue("ActorEvents_1", "_WorshipMOD")) {
+                        							var Ot = a.getValue("ActorEvents_1", "_PersNum");
+                        							if (0 <= parseNum(Ot)) {
+                        								var wt = a.getValue("ActorEvents_1", "_PersNum");
+                        								a.setValue("ActorEvents_1", "_PersNum", parseNum(wt) + 1);
+                        								var kt = a.getValue("ActorEvents_1", "_PersNum");
+                        								if (5 < parseNum(kt)) {
+                        									a.setValue("ActorEvents_1", "_PersNum", -3);
+                        									var xt = b.engine.gameAttributes;
+                        									null != e.dummyDamageDealt ? xt.setReserved("dummyDamageDealt", 0) : (xt.h.dummyDamageDealt = 0), a.set_alpha(0.5);
+                        								}
+                        							} else {
+                        								var Qt = b.engine.gameAttributes;
+                        								null != e.dummyDamageDealt ? Qt.setReserved("dummyDamageDealt", 0) : (Qt.h.dummyDamageDealt = 0);
+                        							}
+                        						} else if (5 == a.getValue("ActorEvents_1", "_WorshipMOD"))
+                        							if (0 < a.getXVelocity()) {
+                        								var Xt = b.engine.getGameAttribute("NodeLength"),
+                        									Lt = a.getValue("ActorEvents_1", "_MonsterNODE"),
+                        									zt = Xt[0 | parseNum(Lt)];
+                        								a.setX(Math.round(Math.min(parseNum(zt) - 10, a.getX() + 10)));
+                        							} else {
+                        								var Yt = b.engine.getGameAttribute("NodeX"),
+                        									Wt = a.getValue("ActorEvents_1", "_MonsterNODE"),
+                        									Zt = Yt[0 | parseNum(Wt)];
+                        								a.setX(Math.round(Math.max(parseNum(Zt) + 10, a.getX() - 10)));
+                        							}
+                        					}
+                        					if (0 == a.getValue("ActorEvents_1", "_IsWorshipMob") && H._customBlock_ArbitraryCode("HitChancePCT") < h.randomInt(1, 100)) {
+                        						A._customBlock_UnlockHint(0, 9);
+                        						var Ht = b.engine.gameAttributes;
+                        						null != e.dummyDamageDealt ? Ht.setReserved("dummyDamageDealt", 0) : (Ht.h.dummyDamageDealt = 0);
+                        					}
+                        					var Jt = b.engine.getGameAttribute("DNSM");
+                        					if ((null != e.arbAcc3 ? Jt.setReserved("arbAcc3", 0.444) : (Jt.h.arbAcc3 = 0.444), Sb.contains(a.getValue("ActorEvents_1", "_StatusList"), "StatusBlockFull")))
+                        						if (-1 != w._customBlock_Dungon()) {
+                        							var jt = b.engine.gameAttributes;
+                        							null != e.dummyDamageDealt ? jt.setReserved("dummyDamageDealt", 0) : (jt.h.dummyDamageDealt = 0);
+                        						} else {
+                        							var qt = b.engine.gameAttributes;
+                        							null != e.dummyDamageDealt ? qt.setReserved("dummyDamageDealt", 10) : (qt.h.dummyDamageDealt = 10);
+                        						}
+                        					if (-1 != w._customBlock_Dungon()) {
+                        						var Kt = b.engine.getGameAttribute("DNSM"),
+                        							$t = null != e.DungeonStats ? Kt.getReserved("DungeonStats") : Kt.h.DungeonStats,
+                        							en = null != e.critGodU ? $t.getReserved("critGodU") : $t.h.critGodU;
+                        						if (0.5 < parseNum(en) && !(1 < b.engine.getGameAttribute("dummyCritDmgMulti"))) {
+                        							var tn = b.engine.gameAttributes;
+                        							null != e.dummyDamageDealt ? tn.setReserved("dummyDamageDealt", 0) : (tn.h.dummyDamageDealt = 0);
+                        						}
+                        					}
+                        					var nn = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						sn = "" + g.string(a.getValue("ActorEvents_1", "_MonsterType")),
+                        						an = nn,
+                        						rn = null != e[sn] ? an.getReserved(sn) : an.h[sn];
+                        					if ("Monster" == (null != e.Type ? rn.getReserved("Type") : rn.h.Type)) {
+                        						var An = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							ln = "" + g.string(a.getValue("ActorEvents_1", "_MonsterType")),
+                        							on = An,
+                        							un = null != e[ln] ? on.getReserved(ln) : on.h[ln];
+                        						if (-1 == (null != e.DeathFrame ? un.getReserved("DeathFrame") : un.h.DeathFrame)) {
+                        							var gn = b.engine,
+                        								mn = b.engine.getGameAttribute("BossHP") - b.engine.getGameAttribute("dummyDamageDealt"),
+                        								dn = gn.gameAttributes,
+                        								cn = mn;
+                        							null != e.BossHP ? dn.setReserved("BossHP", cn) : (dn.h.BossHP = cn);
+                        						} else if (-1 != ("" + g.string(a.getValue("ActorEvents_1", "_MonsterType"))).indexOf("BugNest")) {
+                        							var pn = b.engine.getGameAttribute("DNSM"),
+                        								hn = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								bn = "" + g.string(a.getValue("ActorEvents_1", "_MonsterType")),
+                        								fn = hn,
+                        								yn = null != e[bn] ? fn.getReserved(bn) : fn.h[bn],
+                        								Rn = pn,
+                        								vn = null != e.DeathFrame ? yn.getReserved("DeathFrame") : yn.h.DeathFrame;
+                        							null != e.DmgPxNestz ? Rn.setReserved("DmgPxNestz", vn) : (Rn.h.DmgPxNestz = vn);
+                        							var Fn = b.engine.getGameAttribute("BugInfo")[0],
+                        								Nn = b.engine.getGameAttribute("DNSM"),
+                        								_n = null != e.DmgPxNestz ? Nn.getReserved("DmgPxNestz") : Nn.h.DmgPxNestz;
+                        							if (-10 == Fn[0 | parseNum(_n)]) {
+                        								b.engine.getGameAttribute("PixelHelperActor")[4].getValue("ActorEvents_229", "_GenInfo")[29] = 1;
+                        								var In = b.engine.getGameAttribute("BugInfo")[0],
+                        									Dn = b.engine.getGameAttribute("DNSM"),
+                        									En = null != e.DmgPxNestz ? Dn.getReserved("DmgPxNestz") : Dn.h.DmgPxNestz;
+                        								In[0 | parseNum(En)] = H._customBlock_SkillStats("CatchingNestTime");
+                        								var Sn = b.engine.getGameAttribute("BugInfo")[1],
+                        									Gn = b.engine.getGameAttribute("DNSM"),
+                        									Tn = null != e.DmgPxNestz ? Gn.getReserved("DmgPxNestz") : Gn.h.DmgPxNestz;
+                        								Sn[0 | parseNum(Tn)] = 0;
+                        							}
+                        							var Un = b.engine.getGameAttribute("BugInfo")[1],
+                        								Mn = b.engine.getGameAttribute("DNSM"),
+                        								Vn = null != e.DmgPxNestz ? Mn.getReserved("DmgPxNestz") : Mn.h.DmgPxNestz,
+                        								Cn = parseNum(Vn),
+                        								Bn = b.engine.getGameAttribute("BugInfo")[1],
+                        								Pn = b.engine.getGameAttribute("DNSM"),
+                        								On = null != e.DmgPxNestz ? Pn.getReserved("DmgPxNestz") : Pn.h.DmgPxNestz,
+                        								wn = Bn[0 | parseNum(On)];
+                        							Un[0 | Cn] = parseNum(wn) + b.engine.getGameAttribute("dummyDamageDealt");
+                        						} else {
+                        							var kn = b.engine.getGameAttribute("MonsterHP"),
+                        								xn = a.getValue("ActorEvents_1", "_MonsterID"),
+                        								Qn = parseNum(xn),
+                        								Xn = b.engine.getGameAttribute("MonsterHP"),
+                        								Ln = a.getValue("ActorEvents_1", "_MonsterID"),
+                        								zn = Xn[0 | parseNum(Ln)];
+                        							(kn[0 | Qn] = parseNum(zn) - b.engine.getGameAttribute("dummyDamageDealt")), -1 != w._customBlock_Dungon() && Sb.contains(a.getValue("ActorEvents_1", "_StatusList"), "StatusMultiCombat") && ("rockS" == a.getValue("ActorEvents_1", "_MonsterType") ? E.partyDealDamage(Math.round(b.engine.getGameAttribute("dummyDamageDealt")), Math.round(a.getXCenter()), Math.round(a.getYCenter()), 1) : E.partyDealDamage(Math.round(b.engine.getGameAttribute("dummyDamageDealt")), Math.round(a.getXCenter()), Math.round(a.getYCenter()), 0));
+                        						}
+                        					}
+                        					if (-1 == w._customBlock_Dungon()) {
+                        						var Yn = b.engine.getGameAttribute("dummyDamageDealt"),
+                        							Wn = b.engine.getGameAttribute("Tasks")[0][1][0];
+                        						Yn > parseNum(Wn) && U._customBlock_TaskProgress(1, 0, "total", b.engine.getGameAttribute("dummyDamageDealt"));
+                        					} else -1 != w._customBlock_Dungon() && (25e3 <= b.engine.getGameAttribute("dummyDamageDealt") ? w._customBlock_Reg_ach_add_status(184, 1) : 1e3 <= b.engine.getGameAttribute("dummyDamageDealt") ? w._customBlock_Reg_ach_add_status(124, 1) : 100 <= b.engine.getGameAttribute("dummyDamageDealt") && w._customBlock_Reg_ach_add_status(57, 1));
+                        					777 == Math.round(b.engine.getGameAttribute("dummyDamageDealt")) && w._customBlock_Reg_ach_add_status(46, 1);
+                        					var Zn = h.getActorType(10),
+                        						Hn = a.getX(),
+                        						Jn = a.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        						jn = parseNum(Jn),
+                        						qn = a.getY(),
+                        						Kn = a.getValue("ActorEvents_1", "_Monster0ffsetY");
+                        					h.createRecycledActor(Zn, Hn + jn, qn - parseNum(Kn) + 25, 0);
+                        				}
+                        				var $n = b.engine.gameAttributes;
+                        				null != e.DummyText ? $n.setReserved("DummyText", "blah") : ($n.h.DummyText = "blah");
+                        			}
+                        		return "done";
+                        	}

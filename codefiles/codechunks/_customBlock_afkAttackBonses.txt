@@ -1,0 +1,66 @@
+                        (U._customBlock_afkAttackBonses = function(s, a) {
+                        		var r = b.engine.getGameAttribute("DNSM");
+                        		if (
+                        			(null != e.SuffixDN1 ? r.setReserved("SuffixDN1", 0) : (r.h.SuffixDN1 = 0),
+                        				(r = b.engine.getGameAttribute("DNSM")), null != e.SuffixDN2 ? r.setReserved("SuffixDN2", 1) : (r.h.SuffixDN2 = 1), null != b.engine.getGameAttribute("AttackLoadout"))) {
+                        			r = 0;
+                        			for (var A = b.engine.getGameAttribute("AttackLoadout").length; r < A;) {
+                        				var o = r++,
+                        					i = b.engine.getGameAttribute("DNSM");
+                        				null != e.SuffixDN1 ? i.setReserved("SuffixDN1", o) : (i.h.SuffixDN1 = o), (o = 0), (i = b.engine.getGameAttribute("AttackLoadout"));
+                        				var u = b.engine.getGameAttribute("DNSM");
+                        				for (i = i[0 | (null == (u = null != e.SuffixDN1 ? u.getReserved("SuffixDN1") : u.h.SuffixDN1) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u)))].length; o < i;) {
+                        					u = o++;
+                        					var m = b.engine.getGameAttribute("AttackLoadout"),
+                        						c = b.engine.getGameAttribute("DNSM");
+                        					if ("Null" != m[0 | (null == (c = null != e.SuffixDN1 ? c.getReserved("SuffixDN1") : c.h.SuffixDN1) ? 0 : "number" == typeof c ? d.__cast(c, k) : "number" == typeof c && (0 | c) === c ? d.__cast(c, l) : "boolean" == typeof c ? d.__cast(c, n) ? 1 : 0 : "string" == typeof c ? parseFloat(c) : parseFloat(g.string(c)))][u]) {
+                        						(m = b.engine.getGameAttribute("AttackMoveGET")), (c = b.engine.getGameAttribute("CustomLists")), (c = null != e.TalentIconNames ? c.getReserved("TalentIconNames") : c.h.TalentIconNames);
+                        						var p = b.engine.getGameAttribute("AttackLoadout"),
+                        							h = b.engine.getGameAttribute("DNSM");
+                        						if (
+                        							((p = p[0 | (null == (h = null != e.SuffixDN1 ? h.getReserved("SuffixDN1") : h.h.SuffixDN1) ? 0 : "number" == typeof h ? d.__cast(h, k) : "number" == typeof h && (0 | h) === h ? d.__cast(h, l) : "boolean" == typeof h ? d.__cast(h, n) ? 1 : 0 : "string" == typeof h ? parseFloat(h) : parseFloat(g.string(h)))][u]),
+                        								(c = "" + g.string(c[0 | parseNum(p)])),
+                        								(m = null != e[c] ? m.getReserved(c) : m.h[c]), a == (null != e.AFKactivity ? m.getReserved("AFKactivity") : m.h.AFKactivity) && ((m = b.engine.getGameAttribute("AttackMoveGET")),
+                        									(c = b.engine.getGameAttribute("CustomLists")),
+                        									(c = null != e.TalentIconNames ? c.getReserved("TalentIconNames") : c.h.TalentIconNames),
+                        									(p = b.engine.getGameAttribute("AttackLoadout")),
+                        									(h = b.engine.getGameAttribute("DNSM")),
+                        									(p = p[0 | (null == (h = null != e.SuffixDN1 ? h.getReserved("SuffixDN1") : h.h.SuffixDN1) ? 0 : "number" == typeof h ? d.__cast(h, k) : "number" == typeof h && (0 | h) === h ? d.__cast(h, l) : "boolean" == typeof h ? d.__cast(h, n) ? 1 : 0 : "string" == typeof h ? parseFloat(h) : parseFloat(g.string(h)))][u]),
+                        									(c = "" + g.string(c[0 | parseNum(p)])),
+                        									(m = null != e[c] ? m.getReserved(c) : m.h[c]), 1 != (null != e[s] ? m.getReserved(s) : m.h[s])))) {
+                        							(m = b.engine.getGameAttribute("DNSM")),
+                        							(c = b.engine.getGameAttribute("DNSM")),
+                        							(c = null == (c = null != e.SuffixDN2 ? c.getReserved("SuffixDN2") : c.h.SuffixDN2) ? 0 : "number" == typeof c ? d.__cast(c, k) : "number" == typeof c && (0 | c) === c ? d.__cast(c, l) : "boolean" == typeof c ? d.__cast(c, n) ? 1 : 0 : "string" == typeof c ? parseFloat(c) : parseFloat(g.string(c))),
+                        							(p = b.engine.getGameAttribute("AttackMoveGET")),
+                        							(h = b.engine.getGameAttribute("CustomLists")),
+                        							(h = null != e.TalentIconNames ? h.getReserved("TalentIconNames") : h.h.TalentIconNames);
+                        							var f = b.engine.getGameAttribute("AttackLoadout"),
+                        								y = b.engine.getGameAttribute("DNSM");
+                        							(f = f[0 | (null == (y = null != e.SuffixDN1 ? y.getReserved("SuffixDN1") : y.h.SuffixDN1) ? 0 : "number" == typeof y ? d.__cast(y, k) : "number" == typeof y && (0 | y) === y ? d.__cast(y, l) : "boolean" == typeof y ? d.__cast(y, n) ? 1 : 0 : "string" == typeof y ? parseFloat(y) : parseFloat(g.string(y)))][u]),
+                        							(h = "" + g.string(h[0 | parseNum(f)])),
+                        							(p = null != e[h] ? p.getReserved(h) : p.h[h]),
+                        							(p = null == (p = null != e[s] ? p.getReserved(s) : p.h[s]) ? 0 : "number" == typeof p ? d.__cast(p, k) : "number" == typeof p && (0 | p) === p ? d.__cast(p, l) : "boolean" == typeof p ? d.__cast(p, n) ? 1 : 0 : "string" == typeof p ? parseFloat(p) : parseFloat(g.string(p))),
+                        							(h = b.engine.getGameAttribute("SkillLevels")),
+                        							(f = b.engine.getGameAttribute("AttackLoadout")),
+                        							(y = b.engine.getGameAttribute("DNSM")),
+                        							(h = null == (h = h[0 | (null == (f = f[0 | (null == (y = null != e.SuffixDN1 ? y.getReserved("SuffixDN1") : y.h.SuffixDN1) ? 0 : "number" == typeof y ? d.__cast(y, k) : "number" == typeof y && (0 | y) === y ? d.__cast(y, l) : "boolean" == typeof y ? d.__cast(y, n) ? 1 : 0 : "string" == typeof y ? parseFloat(y) : parseFloat(g.string(y)))][u]) ? 0 : "number" == typeof f ? d.__cast(f, k) : "number" == typeof f && (0 | f) === f ? d.__cast(f, l) : "boolean" == typeof f ? d.__cast(f, n) ? 1 : 0 : "string" == typeof f ? parseFloat(f) : parseFloat(g.string(f)))]) ? 0 : "number" == typeof h ? d.__cast(h, k) : "number" == typeof h && (0 | h) === h ? d.__cast(h, l) : "boolean" == typeof h ? d.__cast(h, n) ? 1 : 0 : "string" == typeof h ? parseFloat(h) : parseFloat(g.string(h))),
+                        							(f = b.engine.getGameAttribute("SkillLevels")),
+                        							(y = b.engine.getGameAttribute("AttackLoadout"));
+                        							var R = b.engine.getGameAttribute("DNSM");
+                        							(u = f[0 | (null == (u = y[0 | (null == (R = null != e.SuffixDN1 ? R.getReserved("SuffixDN1") : R.h.SuffixDN1) ? 0 : "number" == typeof R ? d.__cast(R, k) : "number" == typeof R && (0 | R) === R ? d.__cast(R, l) : "boolean" == typeof R ? d.__cast(R, n) ? 1 : 0 : "string" == typeof R ? parseFloat(R) : parseFloat(g.string(R)))][u]) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u)))]),
+                        							(u = c * p * (1 + Math.min(1, h / (parseNum(u) + 100)))),
+                        							null != e.SuffixDN2 ? m.setReserved("SuffixDN2", u) : (m.h.SuffixDN2 = u);
+                        						}
+                        					}
+                        				}
+                        			}
+                        			return "D" == s ? 0 == a ? ((s = b.engine.getGameAttribute("DNSM")),
+                        				(s = null == (s = null != e.SuffixDN2 ? s.getReserved("SuffixDN2") : s.h.SuffixDN2) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        				(a = Math.min(t._customBlock_GetTalentNumber(1, 624), 25)),
+                        				(r = b.engine.getGameAttribute("DNSM")),
+                        				(r = null != e.AlchBubbles ? r.getReserved("AlchBubbles") : r.h.AlchBubbles),
+                        				(r = null != e.AttackAfk ? r.getReserved("AttackAfk") : r.h.AttackAfk), s * (1 + (a + Math.min(parseNum(r), 25)) / 100) * (1 + (t._customBlock_GetTalentNumber(2, 18) + (t._customBlock_GetTalentNumber(1, 33) + (t._customBlock_GetTalentNumber(1, 93) + (t._customBlock_GetTalentNumber(1, 274) + t._customBlock_GetTalentNumber(1, 304))))) / 100)) : ((s = b.engine.getGameAttribute("DNSM")),
+                        				(null == (s = null != e.SuffixDN2 ? s.getReserved("SuffixDN2") : s.h.SuffixDN2) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) * (1 + Math.min(t._customBlock_GetTalentNumber(1, 624), 25) / 100)) : ((s = b.engine.getGameAttribute("DNSM")), null == (s = null != e.SuffixDN2 ? s.getReserved("SuffixDN2") : s.h.SuffixDN2) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)));
+                        		}
+                        		return 1;
+                        	}

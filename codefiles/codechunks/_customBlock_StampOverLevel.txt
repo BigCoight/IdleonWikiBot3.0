@@ -1,0 +1,46 @@
+                        (t._customBlock_StampOverLevel = function(s) {
+                        		var a = t._customBlock_StampDetails(s)[10];
+                        		if (0 < parseNum(a)) {
+                        			if (1 < (null == (a = t._customBlock_StampDetails(s)[4]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)))) {
+                        				a = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        				var r = b.engine.getGameAttribute("Lv0"),
+                        					A = t._customBlock_StampDetails(s)[10];
+                        				if (
+                        					((r = r[0 | parseNum(A)]), null != e.StampOL_yourLv ? a.setReserved("StampOL_yourLv", r) : (a.h.StampOL_yourLv = r),
+                        						(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        						(r = null == (r = b.engine.getGameAttribute("StampLevel")[Math.floor(s / 1e3)][(s - 1e3 * Math.floor(s / 1e3)) | 0]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        						(r *= 200 / (20 * (null == (A = t._customBlock_StampDetails(s)[4]) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))))), null != e.StampOL_stampLv ? a.setReserved("StampOL_stampLv", r) : (a.h.StampOL_stampLv = r),
+                        						(a = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.StampOL_deficitcoeff ? a.setReserved("StampOL_deficitcoeff", 3) : (a.h.StampOL_deficitcoeff = 3),
+                        						(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        						(a = null == (a = null != e.StampOL_stampLv ? a.getReserved("StampOL_stampLv") : a.h.StampOL_stampLv) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        						(r = b.engine.getGameAttribute("DummyNumbersStatManager")), a > (null == (r = null != e.StampOL_deficitcoeff ? r.getReserved("StampOL_deficitcoeff") : r.h.StampOL_deficitcoeff) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))))) {
+                        					(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(r = null == (r = null != e.StampOL_deficitcoeff ? r.getReserved("StampOL_deficitcoeff") : r.h.StampOL_deficitcoeff) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        					(A = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(A = null == (A = null != e.StampOL_stampLv ? A.getReserved("StampOL_stampLv") : A.h.StampOL_stampLv) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A)));
+                        					var o = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        					o = null == (o = null != e.StampOL_deficitcoeff ? o.getReserved("StampOL_deficitcoeff") : o.h.StampOL_deficitcoeff) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o));
+                        					var i = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        					i = null == (i = null != e.StampOL_yourLv ? i.getReserved("StampOL_yourLv") : i.h.StampOL_yourLv) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i));
+                        					var u = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        					u = null == (u = null != e.StampOL_stampLv ? u.getReserved("StampOL_stampLv") : u.h.StampOL_stampLv) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u));
+                        					var m = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        					(m = null != e.StampOL_deficitcoeff ? m.getReserved("StampOL_deficitcoeff") : m.h.StampOL_deficitcoeff),
+                        					(r += (A - o) * Math.pow(i / (u - parseNum(m)), 0.75)),
+                        					null != e.StampOverlevelNumberDUM ? a.setReserved("StampOverlevelNumberDUM", r) : (a.h.StampOverlevelNumberDUM = r),
+                        						(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        						(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        						(r = null == (r = null != e.StampOverlevelNumberDUM ? r.getReserved("StampOverlevelNumberDUM") : r.h.StampOverlevelNumberDUM) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        						(r *= (20 * (null == (A = t._customBlock_StampDetails(s)[4]) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A)))) / 200);
+                        				} else(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(r = null != e.StampOL_stampLv ? r.getReserved("StampOL_stampLv") : r.h.StampOL_stampLv);
+                        			} else(a = b.engine.getGameAttribute("DummyNumbersStatManager")), (r = b.engine.getGameAttribute("StampLevel")[Math.floor(s / 1e3)][(s - 1e3 * Math.floor(s / 1e3)) | 0]);
+                        			return (null != e.StampOverlevelNumberDUM ? a.setReserved("StampOverlevelNumberDUM", r) : (a.h.StampOverlevelNumberDUM = r),
+                        				(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(a = null == (a = null != e.StampOverlevelNumberDUM ? a.getReserved("StampOverlevelNumberDUM") : a.h.StampOverlevelNumberDUM) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        				(s = b.engine.getGameAttribute("StampLevel")[Math.floor(s / 1e3)][(s - 1e3 * Math.floor(s / 1e3)) | 0]), Math.min(a, parseNum(s)));
+                        		}
+                        		return b.engine.getGameAttribute("StampLevel")[Math.floor(s / 1e3)][(s - 1e3 * Math.floor(s / 1e3)) | 0];
+                        	}

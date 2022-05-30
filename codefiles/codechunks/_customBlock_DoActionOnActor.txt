@@ -1,0 +1,51 @@
+                        (A._customBlock_DoActionOnActor = function(t, s, a, r, A) {
+                        		if ("Mining" == t) {
+                        			if (
+                        				("BigPick" == A && ((t = b.engine.getGameAttribute("DNSM")), (a = 1 + a / 100), null != e.ExtraMinEff ? t.setReserved("ExtraMinEff", a) : (t.h.ExtraMinEff = a)), h.randomFloatBetween(0, 1) < H._customBlock_RunCodeOfTypeXforThingY("ChanceToHarvest", "Mining") && 0.05 < H._customBlock_RunCodeOfTypeXforThingY("ChanceToHarvest", "Mining"))) {
+                        				for (a = b.engine.gameAttributes, null != e.DummyNumber2 ? a.setReserved("DummyNumber2", 0) : (a.h.DummyNumber2 = 0), 1 >= h.randomInt(8, 8) && ((a = b.engine.getGameAttribute("MonsterHP"))[0 | (null == (t = s.getValue("ActorEvents_1", "_MonsterID")) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t)))] = 0), a = 0, t = 0 | H._customBlock_SkillStats("MiningMaxOre"); a < t && ((r = a++), h.randomInt(1, 100) + 100 * Math.max(r - 1, 0) < H._customBlock_SkillStats("MiningMultiOre") || 0 == r);) {
+                        					var o = b.engine;
+                        					(r = b.engine.getGameAttribute("DummyNumber2") + 1), (o = o.gameAttributes), null != e.DummyNumber2 ? o.setReserved("DummyNumber2", r) : (o.h.DummyNumber2 = r);
+                        				}
+                        				for (a = 0, t = 0 | b.engine.getGameAttribute("DummyNumber2"); a < t;) {
+                        					(r = a++), (o = b.engine);
+                        					var i = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        						u = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType"));
+                        					(u = null != e[u] ? i.getReserved(u) : i.h[u]),
+                        					(u = (null == (u = null != e.ExpGiven ? u.getReserved("ExpGiven") : u.h.ExpGiven) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))) * H._customBlock_ExpMulti(1)),
+                        					(o = o.gameAttributes),
+                        					null != e.dummyDamageDealt ? o.setReserved("dummyDamageDealt", u) : (o.h.dummyDamageDealt = u),
+                        						(o = b.engine),
+                        						(i = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        						(u = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType"))),
+                        						(u = null != e[u] ? i.getReserved(u) : i.h[u]),
+                        						(u = null == (u = null != e.ExpType ? u.getReserved("ExpType") : u.h.ExpType) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))),
+                        						(o = o.gameAttributes),
+                        						null != e.DummyNumber4 ? o.setReserved("DummyNumber4", u) : (o.h.DummyNumber4 = u),
+                        						U._customBlock_giveEXP(b.engine.getGameAttribute("DummyNumber4"), b.engine.getGameAttribute("dummyDamageDealt")),
+                        						(o = b.engine.gameAttributes),
+                        						(u = []),
+                        						null != e.dummyActor ? o.setReserved("dummyActor", u) : (o.h.dummyActor = u),
+                        						b.engine.getGameAttribute("dummyActor").push(r),
+                        						b.engine.getGameAttribute("dummyActor").push(b.engine.getGameAttribute("DummyNumber2") - 1),
+                        						b.engine.getGameAttribute("dummyActor").push(s.getValue("ActorEvents_1", "_MonsterNODE")),
+                        						b.engine.getGameAttribute("dummyActor").push(0),
+                        						(o = b.engine),
+                        						(r = "" + s.getAnimation()),
+                        						(o = o.gameAttributes),
+                        						null != e.dummyDisplayPopup ? o.setReserved("dummyDisplayPopup", r) : (o.h.dummyDisplayPopup = r),
+                        						(o = b.engine),
+                        						(r = Math.round(H._customBlock_SkillStats("MiningOreValue"))),
+                        						(o = o.gameAttributes),
+                        						null != e.DummyNumber ? o.setReserved("DummyNumber", r) : (o.h.DummyNumber = r),
+                        						(r = h.getActorType(44)),
+                        						(o = s.getX()),
+                        						(u = null == (u = s.getValue("ActorEvents_1", "_Monster0ffsetX")) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))),
+                        						(i = b.engine.getGameAttribute("NodeY"));
+                        					var m = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        					(i = i[0 | parseNum(m)]),
+                        					h.createRecycledActor(r, o + u - 18, parseNum(i) - 36, 0);
+                        				}
+                        			}
+                        			"BigPick" == A && ((s = b.engine.getGameAttribute("DNSM")), null != e.ExtraMinEff ? s.setReserved("ExtraMinEff", 1) : (s.h.ExtraMinEff = 1));
+                        		}
+                        	}

@@ -1,0 +1,238 @@
+                        (A._customBlock_CheckQuests = function() {
+                        		var t = b.engine.getGameAttribute("DNSM");
+                        		null != e.CheckQuestDN1 ? t.setReserved("CheckQuestDN1", 0) : (t.h.CheckQuestDN1 = 0);
+                        		var s = b.engine.getGameAttribute("DNSM");
+                        		null != e.CheckQuestDN2 ? s.setReserved("CheckQuestDN2", 0) : (s.h.CheckQuestDN2 = 0);
+                        		var a = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Mr_Pigibank1 ? a.getReserved("Mr_Pigibank1") : a.h.Mr_Pigibank1)) {
+                        			var r = b.engine.getGameAttribute("NPCdialogue"),
+                        				A = null != e.Hamish ? r.getReserved("Hamish") : r.h.Hamish;
+                        			if (1 < parseNum(A)) {
+                        				var o = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Mr_Pigibank1 ? o.getReserved("Mr_Pigibank1") : o.h.Mr_Pigibank1)[0] = 1;
+                        			}
+                        		}
+                        		var i = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Scripticus3 ? i.getReserved("Scripticus3") : i.h.Scripticus3)) {
+                        			var u = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ItemsOwnedMap"),
+                        				m = null != e.EquipmentPunching1 ? u.getReserved("EquipmentPunching1") : u.h.EquipmentPunching1,
+                        				c = parseNum(m),
+                        				p = b.engine.getGameAttribute("QuestStatus"),
+                        				h = (null != e.Scripticus3 ? p.getReserved("Scripticus3") : p.h.Scripticus3)[0];
+                        			if (c > parseNum(h)) {
+                        				var f = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Scripticus3 ? f.getReserved("Scripticus3") : f.h.Scripticus3)[0] = 1;
+                        			}
+                        			var y = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ItemsOwnedMap"),
+                        				R = null != e.CraftMat3 ? y.getReserved("CraftMat3") : y.h.CraftMat3,
+                        				v = parseNum(R),
+                        				F = b.engine.getGameAttribute("QuestStatus"),
+                        				N = (null != e.Scripticus3 ? F.getReserved("Scripticus3") : F.h.Scripticus3)[1];
+                        			if (v > parseNum(N)) {
+                        				var _ = b.engine.getGameAttribute("QuestStatus"),
+                        					I = null != e.Scripticus3 ? _.getReserved("Scripticus3") : _.h.Scripticus3,
+                        					D = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ItemsOwnedMap");
+                        				I[1] = null != e.CraftMat3 ? D.getReserved("CraftMat3") : D.h.CraftMat3;
+                        			}
+                        		}
+                        		var E = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Scripticus5 ? E.getReserved("Scripticus5") : E.h.Scripticus5)) {
+                        			var S = b.engine.getGameAttribute("QuestStatus");
+                        			(null != e.Scripticus5 ? S.getReserved("Scripticus5") : S.h.Scripticus5)[0] = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_SpentPoints")[0];
+                        		}
+                        		var G = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Promotheus1 ? G.getReserved("Promotheus1") : G.h.Promotheus1)) {
+                        			var T = b.engine.getGameAttribute("Lv0")[0];
+                        			if (10 <= parseNum(T)) {
+                        				var M = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Promotheus1 ? M.getReserved("Promotheus1") : M.h.Promotheus1)[0] = 1;
+                        			}
+                        		}
+                        		var V = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Glumlee3 ? V.getReserved("Glumlee3") : V.h.Glumlee3)) {
+                        			var C = b.engine.getGameAttribute("DNSM");
+                        			null != e.CheckQuestDN1 ? C.setReserved("CheckQuestDN1", 0) : (C.h.CheckQuestDN1 = 0);
+                        			var B = b.engine.getGameAttribute("DNSM"),
+                        				P = b.engine.getGameAttribute("DNSM"),
+                        				O = null != e.CheckQuestDN1 ? P.getReserved("CheckQuestDN1") : P.h.CheckQuestDN1,
+                        				w = parseNum(O),
+                        				x = b.engine.getGameAttribute("FurnaceLevels")[0],
+                        				Q = w + parseNum(x);
+                        			null != e.CheckQuestDN1 ? B.setReserved("CheckQuestDN1", Q) : (B.h.CheckQuestDN1 = Q);
+                        			var X = b.engine.getGameAttribute("DNSM"),
+                        				L = b.engine.getGameAttribute("DNSM"),
+                        				z = null != e.CheckQuestDN1 ? L.getReserved("CheckQuestDN1") : L.h.CheckQuestDN1,
+                        				Y = parseNum(z),
+                        				W = b.engine.getGameAttribute("FurnaceLevels")[1],
+                        				Z = Y + parseNum(W);
+                        			null != e.CheckQuestDN1 ? X.setReserved("CheckQuestDN1", Z) : (X.h.CheckQuestDN1 = Z);
+                        			var H = b.engine.getGameAttribute("DNSM"),
+                        				J = b.engine.getGameAttribute("DNSM"),
+                        				j = null != e.CheckQuestDN1 ? J.getReserved("CheckQuestDN1") : J.h.CheckQuestDN1,
+                        				q = parseNum(j),
+                        				K = b.engine.getGameAttribute("FurnaceLevels")[2],
+                        				$ = q + parseNum(K);
+                        			null != e.CheckQuestDN1 ? H.setReserved("CheckQuestDN1", $) : (H.h.CheckQuestDN1 = $);
+                        			var ee = b.engine.getGameAttribute("DNSM"),
+                        				te = b.engine.getGameAttribute("DNSM"),
+                        				ne = null != e.CheckQuestDN1 ? te.getReserved("CheckQuestDN1") : te.h.CheckQuestDN1,
+                        				se = parseNum(ne),
+                        				ae = b.engine.getGameAttribute("FurnaceLevels")[3],
+                        				re = se + parseNum(ae);
+                        			null != e.CheckQuestDN1 ? ee.setReserved("CheckQuestDN1", re) : (ee.h.CheckQuestDN1 = re);
+                        			var Ae = b.engine.getGameAttribute("DNSM"),
+                        				le = b.engine.getGameAttribute("DNSM"),
+                        				oe = null != e.CheckQuestDN1 ? le.getReserved("CheckQuestDN1") : le.h.CheckQuestDN1,
+                        				ie = parseNum(oe),
+                        				ue = b.engine.getGameAttribute("FurnaceLevels")[4],
+                        				ge = ie + parseNum(ue);
+                        			null != e.CheckQuestDN1 ? Ae.setReserved("CheckQuestDN1", ge) : (Ae.h.CheckQuestDN1 = ge);
+                        			var me = b.engine.getGameAttribute("DNSM"),
+                        				de = b.engine.getGameAttribute("DNSM"),
+                        				ce = null != e.CheckQuestDN1 ? de.getReserved("CheckQuestDN1") : de.h.CheckQuestDN1,
+                        				pe = parseNum(ce),
+                        				he = b.engine.getGameAttribute("FurnaceLevels")[5],
+                        				be = pe + parseNum(he);
+                        			null != e.CheckQuestDN1 ? me.setReserved("CheckQuestDN1", be) : (me.h.CheckQuestDN1 = be);
+                        			var fe = b.engine.getGameAttribute("QuestStatus"),
+                        				ye = null != e.Glumlee3 ? fe.getReserved("Glumlee3") : fe.h.Glumlee3,
+                        				Re = b.engine.getGameAttribute("DNSM"),
+                        				ve = null != e.CheckQuestDN1 ? Re.getReserved("CheckQuestDN1") : Re.h.CheckQuestDN1;
+                        			ye[0] = Math.max(parseNum(ve) - 1, 0);
+                        		}
+                        		var Fe = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Scripticus7 ? Fe.getReserved("Scripticus7") : Fe.h.Scripticus7)) {
+                        			var Ne = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ItemsOwnedMap"),
+                        				_e = null != e.EquipmentHats1 ? Ne.getReserved("EquipmentHats1") : Ne.h.EquipmentHats1;
+                        			if (0 < parseNum(_e)) {
+                        				var Ie = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Scripticus7 ? Ie.getReserved("Scripticus7") : Ie.h.Scripticus7)[0] = 1;
+                        			}
+                        			var De = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ItemsOwnedMap"),
+                        				Ee = null != e.EquipmentShirts1 ? De.getReserved("EquipmentShirts1") : De.h.EquipmentShirts1;
+                        			if (0 < parseNum(Ee)) var Se = b.engine.getGameAttribute("Lv0")[2],
+                        				Ge = 1 <= parseNum(Se);
+                        			else Ge = !1;
+                        			if (Ge) {
+                        				var Te = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Scripticus7 ? Te.getReserved("Scripticus7") : Te.h.Scripticus7)[1] = 1;
+                        			}
+                        		}
+                        		var Ue = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Scripticus10 ? Ue.getReserved("Scripticus10") : Ue.h.Scripticus10)) {
+                        			var Me = b.engine.getGameAttribute("NPCdialogue"),
+                        				Ve = null != e.Tiki_Chief ? Me.getReserved("Tiki_Chief") : Me.h.Tiki_Chief;
+                        			if (3 < parseNum(Ve)) {
+                        				var Ce = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Scripticus10 ? Ce.getReserved("Scripticus10") : Ce.h.Scripticus10)[0] = 1;
+                        			}
+                        		}
+                        		var Be = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Loominadi2 ? Be.getReserved("Loominadi2") : Be.h.Loominadi2))
+                        			for (var Pe = b.engine.getGameAttribute("QuestStatus"), Oe = ((null != e.Loominadi2 ? Pe.getReserved("Loominadi2") : Pe.h.Loominadi2)[0] = 0), we = b.engine.getGameAttribute("CauldronInfo")[4].length; Oe < we;) {
+                        				var ke = Oe++,
+                        					xe = b.engine.getGameAttribute("CauldronInfo")[4][ke];
+                        				if (5 <= parseNum(xe)) {
+                        					var Qe = b.engine.getGameAttribute("QuestStatus"),
+                        						Xe = null != e.Loominadi2 ? Qe.getReserved("Loominadi2") : Qe.h.Loominadi2,
+                        						Le = b.engine.getGameAttribute("QuestStatus"),
+                        						ze = (null != e.Loominadi2 ? Le.getReserved("Loominadi2") : Le.h.Loominadi2)[0];
+                        					Xe[0] = parseNum(ze) + 1;
+                        				}
+                        			}
+                        		var Ye = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Loominadi3 ? Ye.getReserved("Loominadi3") : Ye.h.Loominadi3) && 12 == b.engine.getGameAttribute("CurrentMap")) {
+                        			var We = b.engine.getGameAttribute("QuestStatus");
+                        			(null != e.Loominadi3 ? We.getReserved("Loominadi3") : We.h.Loominadi3)[0] = 1;
+                        		}
+                        		var Ze = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Cowbo_Jones3 ? Ze.getReserved("Cowbo_Jones3") : Ze.h.Cowbo_Jones3)) {
+                        			var He = b.engine.getGameAttribute("QuestStatus");
+                        			(null != e.Cowbo_Jones3 ? He.getReserved("Cowbo_Jones3") : He.h.Cowbo_Jones3)[0] = b.engine.getGameAttribute("GetPlayersUsernames").length;
+                        		}
+                        		var Je = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Cowbo_Jones5 ? Je.getReserved("Cowbo_Jones5") : Je.h.Cowbo_Jones5)) {
+                        			var je = b.engine.getGameAttribute("CauldronInfo")[0][0];
+                        			if (1 <= parseNum(je)) {
+                        				var qe = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Cowbo_Jones5 ? qe.getReserved("Cowbo_Jones5") : qe.h.Cowbo_Jones5)[0] = 1;
+                        			}
+                        			var Ke = b.engine.getGameAttribute("CauldronInfo")[1][0];
+                        			if (1 <= parseNum(Ke)) {
+                        				var $e = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Cowbo_Jones5 ? $e.getReserved("Cowbo_Jones5") : $e.h.Cowbo_Jones5)[0] = 1;
+                        			}
+                        			var et = b.engine.getGameAttribute("CauldronInfo")[2][0];
+                        			if (1 <= parseNum(et)) {
+                        				var tt = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Cowbo_Jones5 ? tt.getReserved("Cowbo_Jones5") : tt.h.Cowbo_Jones5)[0] = 1;
+                        			}
+                        			var nt = b.engine.getGameAttribute("CauldronInfo")[3][0];
+                        			if (1 <= parseNum(nt)) {
+                        				var st = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Cowbo_Jones5 ? st.getReserved("Cowbo_Jones5") : st.h.Cowbo_Jones5)[0] = 1;
+                        			}
+                        		}
+                        		var at = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Cowbo_Jones6 ? at.getReserved("Cowbo_Jones6") : at.h.Cowbo_Jones6))
+                        			for (var rt = b.engine.getGameAttribute("QuestStatus"), At = ((null != e.Cowbo_Jones6 ? rt.getReserved("Cowbo_Jones6") : rt.h.Cowbo_Jones6)[0] = 0); 30 > At;) {
+                        				var lt = At++,
+                        					ot = b.engine.getGameAttribute("CauldronInfo")[4][lt];
+                        				if (1 <= parseNum(ot)) {
+                        					var it = b.engine.getGameAttribute("QuestStatus"),
+                        						ut = null != e.Cowbo_Jones6 ? it.getReserved("Cowbo_Jones6") : it.h.Cowbo_Jones6,
+                        						gt = b.engine.getGameAttribute("QuestStatus"),
+                        						mt = (null != e.Cowbo_Jones6 ? gt.getReserved("Cowbo_Jones6") : gt.h.Cowbo_Jones6)[0];
+                        					ut[0] = parseNum(mt) + 1;
+                        				}
+                        			}
+                        		var dt = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Cowbo_Jones7 ? dt.getReserved("Cowbo_Jones7") : dt.h.Cowbo_Jones7)) {
+                        			var ct = b.engine.getGameAttribute("NPCdialogue"),
+                        				pt = null != e.Bandit_Bob ? ct.getReserved("Bandit_Bob") : ct.h.Bandit_Bob;
+                        			if (0 < parseNum(pt)) {
+                        				var ht = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Cowbo_Jones7 ? ht.getReserved("Cowbo_Jones7") : ht.h.Cowbo_Jones7)[0] = 1;
+                        			}
+                        		}
+                        		var bt = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Bandit_Bob3 ? bt.getReserved("Bandit_Bob3") : bt.h.Bandit_Bob3)) {
+                        			var ft = b.engine.getGameAttribute("QuestStatus");
+                        			(null != e.Bandit_Bob3 ? ft.getReserved("Bandit_Bob3") : ft.h.Bandit_Bob3)[0] = b.engine.getGameAttribute("PostOfficeInfo")[1][1][0];
+                        		}
+                        		var yt = b.engine.getGameAttribute("DNSM");
+                        		null != e.CheckQuestDN1 ? yt.setReserved("CheckQuestDN1", 0) : (yt.h.CheckQuestDN1 = 0);
+                        		for (var Rt = 0; 3 > Rt;) {
+                        			var vt = Rt++,
+                        				Ft = b.engine.getGameAttribute("DNSM");
+                        			null != e.CheckQuestDN2 ? Ft.setReserved("CheckQuestDN2", vt) : (Ft.h.CheckQuestDN2 = vt);
+                        			for (var Nt = 0,
+                        					_t = b.engine.getGameAttribute("StampLevel"),
+                        					It = b.engine.getGameAttribute("DNSM"),
+                        					Dt = null != e.CheckQuestDN2 ? It.getReserved("CheckQuestDN2") : It.h.CheckQuestDN2,
+                        					Et = _t[0 | parseNum(Dt)].length; Nt < Et;) {
+                        				var St = Nt++,
+                        					Gt = b.engine.getGameAttribute("DNSM"),
+                        					Tt = b.engine.getGameAttribute("DNSM"),
+                        					Ut = null != e.CheckQuestDN1 ? Tt.getReserved("CheckQuestDN1") : Tt.h.CheckQuestDN1,
+                        					Mt = parseNum(Ut),
+                        					Vt = b.engine.getGameAttribute("StampLevel"),
+                        					Ct = b.engine.getGameAttribute("DNSM"),
+                        					Bt = null != e.CheckQuestDN2 ? Ct.getReserved("CheckQuestDN2") : Ct.h.CheckQuestDN2,
+                        					Pt = Vt[0 | parseNum(Bt)][St],
+                        					Ot = Gt,
+                        					wt = Mt + parseNum(Pt);
+                        				null != e.CheckQuestDN1 ? Ot.setReserved("CheckQuestDN1", wt) : (Ot.h.CheckQuestDN1 = wt);
+                        			}
+                        		}
+                        		var kt = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Papua_Piggea4 ? kt.getReserved("Papua_Piggea4") : kt.h.Papua_Piggea4)) {
+                        			var xt = b.engine.getGameAttribute("QuestStatus"),
+                        				Qt = null != e.Papua_Piggea4 ? xt.getReserved("Papua_Piggea4") : xt.h.Papua_Piggea4,
+                        				Xt = b.engine.getGameAttribute("DNSM");
+                        			Qt[0] = null != e.CheckQuestDN1 ? Xt.getReserved("CheckQuestDN1") : Xt.h.CheckQuestDN1;
+                        		}
+                        		var Lt = b.engine.getGameAttribute("DNSM"),
+                        			zt = null != e.CheckQuestDN1 ? Lt.getReserved("CheckQuestDN1") : Lt.h.CheckQuestDN1;
+                        		U._customBlock_TaskProgress(0, 5, "total", parseNum(zt));
+                        	}

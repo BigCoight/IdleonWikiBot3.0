@@ -1,0 +1,6 @@
+                        (w._customBlock_contributeGP = function(e) {
+                        		b.engine.getGameAttribute("CloudSaveCD")[0] = 250;
+                        		var t = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[55].length,
+                        			s = b.engine.getGameAttribute("GuildTasks")[0][9];
+                        		t <= Math.round(parseNum(s) + 10) ? ((t = b.engine.getGameAttribute("GuildTasks")[0][9]), E.guildPointAdjust(Math.floor(e * (1 + (100 - H._customBlock_ArbitraryCode5Inputs("decay", 200, 50, parseNum(t), 0, 0)) / 100)))) : E.guildPointAdjust(Math.floor(e));
+                        	}

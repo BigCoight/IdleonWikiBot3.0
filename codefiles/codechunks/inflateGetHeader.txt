@@ -1,0 +1,4 @@
+                            (n.inflateGetHeader = function(e, t) {
+                            		var n;
+                            		return e && e.state ? (0 == (2 & (n = e.state).wrap) ? f : ((n.head = t), (t.done = !1), b)) : f;
+                            	}

@@ -1,0 +1,15 @@
+                            (n.buf2string = function(e, t) {
+                            		var n,
+                            			a,
+                            			r,
+                            			A = t || e.length,
+                            			o = Array(2 * A);
+                            		for (t = n = 0; t < A;)
+                            			if (128 > (a = e[t++])) o[n++] = a;
+                            			else if (4 < (r = l[a]))(o[n++] = 65533), (t += r - 1);
+                            		else {
+                            			for (a &= 2 === r ? 31 : 3 === r ? 15 : 7; 1 < r && t < A;)(a = (a << 6) | (63 & e[t++])), r--;
+                            			1 < r ? (o[n++] = 65533) : 65536 > a ? (o[n++] = a) : ((a -= 65536), (o[n++] = 55296 | ((a >> 10) & 1023)), (o[n++] = 56320 | (1023 & a)));
+                            		}
+                            		return s(o, n);
+                            	}

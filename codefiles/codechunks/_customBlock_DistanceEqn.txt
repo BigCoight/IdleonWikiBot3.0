@@ -1,0 +1,3 @@
+                        (t._customBlock_DistanceEqn = function(e, t, n, s) {
+                        		return 0.9604339 * Math.max(Math.abs(e - n), Math.abs(t - s)) + 0.397824735 * Math.min(Math.abs(e - n), Math.abs(t - s));
+                        	}

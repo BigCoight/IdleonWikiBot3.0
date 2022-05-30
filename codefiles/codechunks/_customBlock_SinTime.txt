@@ -1,0 +1,4 @@
+                        (U._customBlock_SinTime = function(e) {
+                        		var t = b.engine.getGameAttribute("PixelHelperActor")[4].getValue("ActorEvents_229", "_GenInfo")[16][0];
+                        		return Math.sin(parseNum(t) * e * 0.01745329251994278);
+                        	}

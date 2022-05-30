@@ -1,0 +1,32 @@
+                        (A._customBlock_GoldFoodBonuses = function(s) {
+                        		var a = b.engine.getGameAttribute("DNSM");
+                        		null != e.GfoodBonus ? a.setReserved("GfoodBonus", 0) : (a.h.GfoodBonus = 0), (a = b.engine.getGameAttribute("DNSM"));
+                        		var r = b.engine.getGameAttribute("DNSM");
+                        		(r = null != e.FamBonusQTYs ? r.getReserved("FamBonusQTYs") : r.h.FamBonusQTYs),
+                        		(r = null != e[66] ? r.getReserved("66") : r.h[66]),
+                        		(r = Math.max(parseNum(r), 1));
+                        		var A = U._customBlock_EtcBonuses("8"),
+                        			o = t._customBlock_GetTalentNumber(1, 99),
+                        			i = t._customBlock_StampBonusOfTypeX("GFood"),
+                        			u = w._customBlock_AchieveStatus(37),
+                        			m = b.engine.getGameAttribute("DNSM");
+                        		for (m = null != e.AlchBubbles ? m.getReserved("AlchBubbles") : m.h.AlchBubbles, r += (A + (o + (i + (u + ((null == (m = null != e.GFoodz ? m.getReserved("GFoodz") : m.h.GFoodz) ? 0 : "number" == typeof m ? d.__cast(m, k) : "number" == typeof m && (0 | m) === m ? d.__cast(m, l) : "boolean" == typeof m ? d.__cast(m, n) ? 1 : 0 : "string" == typeof m ? parseFloat(m) : parseFloat(g.string(m))) + w._customBlock_Labb("SigilBonus", "Blank", 14, 0)))))) / 100, null != e.GfoodBonusMULTI ? a.setReserved("GfoodBonusMULTI", r) : (a.h.GfoodBonusMULTI = r), a = 0, r = 0 | b.engine.getGameAttribute("FoodSlotsOwned"); a < r;)
+                        			(A = a++), "Blank" != b.engine.getGameAttribute("EquipmentOrder")[2][A] && ((i = b.engine.getGameAttribute("DNSM")),
+                        				(u = b.engine.getGameAttribute("ItemDefinitionsGET")),
+                        				(o = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[2][A])),
+                        				(o = null != e[o] ? u.getReserved(o) : u.h[o]), null != e.GfoodMap ? i.setReserved("GfoodMap", o) : (i.h.GfoodMap = o),
+                        				(o = b.engine.getGameAttribute("DNSM")),
+                        				(o = null != e.GfoodMap ? o.getReserved("GfoodMap") : o.h.GfoodMap), "GOLDEN_FOOD" == (null != e.Type ? o.getReserved("Type") : o.h.Type) && ((o = b.engine.getGameAttribute("DNSM")),
+                        					(o = null != e.GfoodMap ? o.getReserved("GfoodMap") : o.h.GfoodMap), s == (null != e.Effect ? o.getReserved("Effect") : o.h.Effect) && ((o = b.engine.getGameAttribute("DNSM")),
+                        						(i = b.engine.getGameAttribute("DNSM")),
+                        						(i = null != e.GfoodMap ? i.getReserved("GfoodMap") : i.h.GfoodMap),
+                        						(i = null == (i = null != e.Amount ? i.getReserved("Amount") : i.h.Amount) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        						(u = b.engine.getGameAttribute("DNSM")),
+                        						(u = null == (u = null != e.GfoodBonusMULTI ? u.getReserved("GfoodBonusMULTI") : u.h.GfoodBonusMULTI) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))),
+                        						(m = b.engine.getGameAttribute("EquipmentQuantity")[2][A]),
+                        						(m = t._customBlock_getLOG(1 + parseNum(m))),
+                        						(A = b.engine.getGameAttribute("EquipmentQuantity")[2][A]),
+                        						(A = i * u * 0.05 * m * (1 + t._customBlock_getLOG(1 + parseNum(A)) / 2.14)), null != e.GfoodBonus ? o.setReserved("GfoodBonus", A) : (o.h.GfoodBonus = A))));
+                        		return "BaseDamage" == s || "Defence" == s || "SkillExp" == s || "BaseAcc" == s ? ((s = b.engine.getGameAttribute("DNSM")), null != e.GfoodBonus ? s.getReserved("GfoodBonus") : s.h.GfoodBonus) : "Filler" == s ? ((s = b.engine.getGameAttribute("DNSM")),
+                        			(null == (s = null != e.GfoodBonus ? s.getReserved("GfoodBonus") : s.h.GfoodBonus) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) / 100) : ((s = b.engine.getGameAttribute("DNSM")), 1 + (null == (s = null != e.GfoodBonus ? s.getReserved("GfoodBonus") : s.h.GfoodBonus) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) / 100);
+                        	}

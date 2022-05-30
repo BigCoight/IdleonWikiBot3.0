@@ -1,0 +1,70 @@
+                        (w._customBlock_getbonus2 = function(t, s, a) {
+                        		if (-1 == a) {
+                        			if (1 == t) {
+                        				for (a = b.engine.getGameAttribute("DNSM"), null != e.GurtBonuzzDN ? a.setReserved("GurtBonuzzDN", 0) : (a.h.GurtBonuzzDN = 0), a = b.engine.getGameAttribute("DNSM"), null != e.GurtBonuzzDN2 ? a.setReserved("GurtBonuzzDN2", 0) : (a.h.GurtBonuzzDN2 = 0), a = 0, t = Sb.mapCount(b.engine.getGameAttribute("PlayerDATABASE")); a < t;) {
+                        					var r = a++,
+                        						A = b.engine.getGameAttribute("DNSM"),
+                        						o = b.engine.getGameAttribute("CustomLists");
+                        					o = "" + g.string((null != e.TalentDescriptions ? o.getReserved("TalentDescriptions") : o.h.TalentDescriptions)[0 | s][1][2]);
+                        					var i = b.engine.getGameAttribute("CustomLists");
+                        					i = null == (i = (null != e.TalentDescriptions ? i.getReserved("TalentDescriptions") : i.h.TalentDescriptions)[0 | s][1][0]) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i));
+                        					var u = b.engine.getGameAttribute("CustomLists");
+                        					u = null == (u = (null != e.TalentDescriptions ? u.getReserved("TalentDescriptions") : u.h.TalentDescriptions)[0 | s][1][1]) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u));
+                        					var m = b.engine.getGameAttribute("PlayerDATABASE");
+                        					(r = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[r])),
+                        					(r = null != e[r] ? m.getReserved(r) : m.h[r]),
+                        					(r = (null != e.SkillLevels ? r.getReserved("SkillLevels") : r.h.SkillLevels)[0 | s]),
+                        					(o = H._customBlock_ArbitraryCode5Inputs(o, i, u, parseNum(r), 0, 0)),
+                        					null != e.GurtBonuzzDN2 ? A.setReserved("GurtBonuzzDN2", o) : (A.h.GurtBonuzzDN2 = o),
+                        						(A = b.engine.getGameAttribute("DNSM")),
+                        						(A = null == (A = null != e.GurtBonuzzDN2 ? A.getReserved("GurtBonuzzDN2") : A.h.GurtBonuzzDN2) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))),
+                        						(o = b.engine.getGameAttribute("DNSM")),
+                        						A > (null == (o = null != e.GurtBonuzzDN ? o.getReserved("GurtBonuzzDN") : o.h.GurtBonuzzDN) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))) && ((o = b.engine.getGameAttribute("DNSM")),
+                        							(A = b.engine.getGameAttribute("DNSM")),
+                        							(A = null != e.GurtBonuzzDN2 ? A.getReserved("GurtBonuzzDN2") : A.h.GurtBonuzzDN2), null != e.GurtBonuzzDN ? o.setReserved("GurtBonuzzDN", A) : (o.h.GurtBonuzzDN = A));
+                        				}
+                        				return (s = b.engine.getGameAttribute("DNSM")), null != e.GurtBonuzzDN ? s.getReserved("GurtBonuzzDN") : s.h.GurtBonuzzDN;
+                        			}
+                        			for (a = b.engine.getGameAttribute("DNSM"), null != e.GurtBonuzzDN ? a.setReserved("GurtBonuzzDN", 0) : (a.h.GurtBonuzzDN = 0), a = b.engine.getGameAttribute("DNSM"), null != e.GurtBonuzzDN2 ? a.setReserved("GurtBonuzzDN2", 0) : (a.h.GurtBonuzzDN2 = 0), a = 0, t = Sb.mapCount(b.engine.getGameAttribute("PlayerDATABASE")); a < t;)
+                        				(r = a++),
+                        				(A = b.engine.getGameAttribute("DNSM")),
+                        				(o = b.engine.getGameAttribute("CustomLists")),
+                        				(o = "" + g.string((null != e.TalentDescriptions ? o.getReserved("TalentDescriptions") : o.h.TalentDescriptions)[0 | s][1][5])),
+                        				(i = b.engine.getGameAttribute("CustomLists")),
+                        				(i = null == (i = (null != e.TalentDescriptions ? i.getReserved("TalentDescriptions") : i.h.TalentDescriptions)[0 | s][1][3]) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        				(u = b.engine.getGameAttribute("CustomLists")),
+                        				(u = null == (u = (null != e.TalentDescriptions ? u.getReserved("TalentDescriptions") : u.h.TalentDescriptions)[0 | s][1][4]) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))),
+                        				(m = b.engine.getGameAttribute("PlayerDATABASE")),
+                        				(r = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[r])),
+                        				(r = null != e[r] ? m.getReserved(r) : m.h[r]),
+                        				(r = (null != e.SkillLevels ? r.getReserved("SkillLevels") : r.h.SkillLevels)[0 | s]),
+                        				(o = H._customBlock_ArbitraryCode5Inputs(o, i, u, parseNum(r), 0, 0)),
+                        				null != e.GurtBonuzzDN2 ? A.setReserved("GurtBonuzzDN2", o) : (A.h.GurtBonuzzDN2 = o),
+                        				(A = b.engine.getGameAttribute("DNSM")),
+                        				(A = null == (A = null != e.GurtBonuzzDN2 ? A.getReserved("GurtBonuzzDN2") : A.h.GurtBonuzzDN2) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))),
+                        				(o = b.engine.getGameAttribute("DNSM")),
+                        				A > (null == (o = null != e.GurtBonuzzDN ? o.getReserved("GurtBonuzzDN") : o.h.GurtBonuzzDN) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))) && ((o = b.engine.getGameAttribute("DNSM")),
+                        					(A = b.engine.getGameAttribute("DNSM")),
+                        					(A = null != e.GurtBonuzzDN2 ? A.getReserved("GurtBonuzzDN2") : A.h.GurtBonuzzDN2), null != e.GurtBonuzzDN ? o.setReserved("GurtBonuzzDN", A) : (o.h.GurtBonuzzDN = A));
+                        			return (s = b.engine.getGameAttribute("DNSM")), null != e.GurtBonuzzDN ? s.getReserved("GurtBonuzzDN") : s.h.GurtBonuzzDN;
+                        		}
+                        		return 1 == t ? ((t = b.engine.getGameAttribute("CustomLists")),
+                        			(t = "" + g.string((null != e.TalentDescriptions ? t.getReserved("TalentDescriptions") : t.h.TalentDescriptions)[0 | s][1][2])),
+                        			(A = b.engine.getGameAttribute("CustomLists")),
+                        			(A = null == (A = (null != e.TalentDescriptions ? A.getReserved("TalentDescriptions") : A.h.TalentDescriptions)[0 | s][1][0]) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))),
+                        			(o = b.engine.getGameAttribute("CustomLists")),
+                        			(o = null == (o = (null != e.TalentDescriptions ? o.getReserved("TalentDescriptions") : o.h.TalentDescriptions)[0 | s][1][1]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        			(i = b.engine.getGameAttribute("PlayerDATABASE")),
+                        			(a = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[0 | a])),
+                        			(a = null != e[a] ? i.getReserved(a) : i.h[a]),
+                        			(s = (null != e.SkillLevels ? a.getReserved("SkillLevels") : a.h.SkillLevels)[0 | s]), H._customBlock_ArbitraryCode5Inputs(t, A, o, parseNum(s), 0, 0)) : ((t = b.engine.getGameAttribute("CustomLists")),
+                        			(t = "" + g.string((null != e.TalentDescriptions ? t.getReserved("TalentDescriptions") : t.h.TalentDescriptions)[0 | s][1][5])),
+                        			(A = b.engine.getGameAttribute("CustomLists")),
+                        			(A = null == (A = (null != e.TalentDescriptions ? A.getReserved("TalentDescriptions") : A.h.TalentDescriptions)[0 | s][1][3]) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))),
+                        			(o = b.engine.getGameAttribute("CustomLists")),
+                        			(o = null == (o = (null != e.TalentDescriptions ? o.getReserved("TalentDescriptions") : o.h.TalentDescriptions)[0 | s][1][4]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        			(i = b.engine.getGameAttribute("PlayerDATABASE")),
+                        			(a = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[0 | a])),
+                        			(a = null != e[a] ? i.getReserved(a) : i.h[a]),
+                        			(s = (null != e.SkillLevels ? a.getReserved("SkillLevels") : a.h.SkillLevels)[0 | s]), H._customBlock_ArbitraryCode5Inputs(t, A, o, parseNum(s), 0, 0));
+                        	}

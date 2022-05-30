@@ -1,0 +1,81 @@
+                        (H._customBlock_ExpMulti = function(s) {
+                        		if (0 == s) {
+                        			s = b.engine.getGameAttribute("DNSM");
+                        			var a = H._customBlock_TotalStats("LUK");
+                        			if (
+                        				(null != e.ExpGainLUK ? s.setReserved("ExpGainLUK", a) : (s.h.ExpGainLUK = a),
+                        					(s = b.engine.getGameAttribute("DNSM")), null != e.ExpGainLUK2 ? s.setReserved("ExpGainLUK2", 0) : (s.h.ExpGainLUK2 = 0),
+                        					(s = b.engine.getGameAttribute("DNSM")), 1e3 > (null == (s = null != e.ExpGainLUK ? s.getReserved("ExpGainLUK") : s.h.ExpGainLUK) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)))))
+                        				(s = b.engine.getGameAttribute("DNSM")),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null != e.ExpGainLUK ? a.getReserved("ExpGainLUK") : a.h.ExpGainLUK),
+                        				(a = (Math.pow(parseNum(a) + 1, 0.37) - 1) / 40);
+                        			else {
+                        				(s = b.engine.getGameAttribute("DNSM")),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null == (a = null != e.ExpGainLUK ? a.getReserved("ExpGainLUK") : a.h.ExpGainLUK) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)));
+                        				var r = b.engine.getGameAttribute("DNSM");
+                        				a = ((a - 1e3) / ((null == (r = null != e.ExpGainLUK ? r.getReserved("ExpGainLUK") : r.h.ExpGainLUK) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))) + 2500)) * 0.5 + 0.297;
+                        			}
+                        			if (
+                        				(null != e.ExpGainLUK ? s.setReserved("ExpGainLUK", a) : (s.h.ExpGainLUK = a), 0 < (null == (s = b.engine.getGameAttribute("Tasks")[2][0][2]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)))))
+                        				for (s = 0, a = b.engine.getGameAttribute("GetPlayersUsernames").length; s < a;) {
+                        					if (((r = s++), b.engine.getGameAttribute("UserInfo")[0] != b.engine.getGameAttribute("GetPlayersUsernames")[r])) {
+                        						var o = b.engine.getGameAttribute("Lv0")[0];
+                        						o = parseNum(o);
+                        						var i = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							u = "" + g.string(b.engine.getGameAttribute("GetPlayersUsernames")[r]);
+                        						(u = null != e[u] ? i.getReserved(u) : i.h[u]),
+                        						(o = o < (null == (u = (null != e.Lv0 ? u.getReserved("Lv0") : u.h.Lv0)[0]) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))));
+                        					} else o = !0;
+                        					if (!o) break;
+                        					Math.round(r + 1) == b.engine.getGameAttribute("GetPlayersUsernames").length && ((o = b.engine.getGameAttribute("DNSM")),
+                        						(r = 3 * (null == (r = b.engine.getGameAttribute("Tasks")[2][0][2]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r)))), null != e.ExpGainLUK2 ? o.setReserved("ExpGainLUK2", r) : (o.h.ExpGainLUK2 = r));
+                        				}
+                        			50 > (null == (s = b.engine.getGameAttribute("Lv0")[0]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) && ((s = b.engine.getGameAttribute("DNSM")),
+                        					(a = b.engine.getGameAttribute("DNSM")),
+                        					(a = (null == (a = null != e.ExpGainLUK2 ? a.getReserved("ExpGainLUK2") : a.h.ExpGainLUK2) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + w._customBlock_CardSetBonuses(0, "0")), null != e.ExpGainLUK2 ? s.setReserved("ExpGainLUK2", a) : (s.h.ExpGainLUK2 = a)),
+                        				120 > (null == (s = b.engine.getGameAttribute("Lv0")[0]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) && ((s = b.engine.getGameAttribute("DNSM")),
+                        					(a = b.engine.getGameAttribute("DNSM")),
+                        					(a = (null == (a = null != e.ExpGainLUK2 ? a.getReserved("ExpGainLUK2") : a.h.ExpGainLUK2) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + A._customBlock_MealBonus("Clexp")), null != e.ExpGainLUK2 ? s.setReserved("ExpGainLUK2", a) : (s.h.ExpGainLUK2 = a)),
+                        				10 > (null == (s = b.engine.getGameAttribute("Lv0")[0]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) && ((s = b.engine.getGameAttribute("DNSM")),
+                        					(a = b.engine.getGameAttribute("DNSM")),
+                        					(a = (null == (a = null != e.ExpGainLUK2 ? a.getReserved("ExpGainLUK2") : a.h.ExpGainLUK2) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + 50), null != e.ExpGainLUK2 ? s.setReserved("ExpGainLUK2", a) : (s.h.ExpGainLUK2 = a)),
+                        				(s = b.engine.getGameAttribute("DNSM")),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = (null == (a = null != e.ExpGainLUK2 ? a.getReserved("ExpGainLUK2") : a.h.ExpGainLUK2) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + w._customBlock_CardSetBonuses(0, "5")),
+                        				null != e.ExpGainLUK2 ? s.setReserved("ExpGainLUK2", a) : (s.h.ExpGainLUK2 = a),
+                        				(s = b.engine.getGameAttribute("DNSM")),
+                        				(s = ((null == (s = null != e.ExpGainLUK ? s.getReserved("ExpGainLUK") : s.h.ExpGainLUK) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) * (1 + t._customBlock_GetTalentNumber(1, 35) / 100)) / 1.8),
+                        				(a = U._customBlock_EtcBonuses("4")),
+                        				(r = b.engine.getGameAttribute("DNSM")),
+                        				(r = null != e.BoxRewards ? r.getReserved("BoxRewards") : r.h.BoxRewards),
+                        				(r = null == (r = null != e.monsterExp ? r.getReserved("monsterExp") : r.h.monsterExp) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        				(o = A._customBlock_TotalFoodBonuses("ClassEXP")),
+                        				(u = b.engine.getGameAttribute("DNSM")),
+                        				(u = null != e.StarSigns ? u.getReserved("StarSigns") : u.h.StarSigns),
+                        				(u = null == (u = null != e.MainXP ? u.getReserved("MainXP") : u.h.MainXP) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))),
+                        				(i = b.engine.getGameAttribute("DNSM")),
+                        				(i = null != e.AlchVials ? i.getReserved("AlchVials") : i.h.AlchVials),
+                        				(i = null == (i = null != e.MonsterEXP ? i.getReserved("MonsterEXP") : i.h.MonsterEXP) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i)));
+                        			var m = b.engine.getGameAttribute("DNSM");
+                        			(m = null != e.AlchBubbles ? m.getReserved("AlchBubbles") : m.h.AlchBubbles),
+                        			(m = null == (m = null != e.expACTIVE ? m.getReserved("expACTIVE") : m.h.expACTIVE) ? 0 : "number" == typeof m ? d.__cast(m, k) : "number" == typeof m && (0 | m) === m ? d.__cast(m, l) : "boolean" == typeof m ? d.__cast(m, n) ? 1 : 0 : "string" == typeof m ? parseFloat(m) : parseFloat(g.string(m)));
+                        			var c = U._customBlock_CardBonusREAL(44),
+                        				p = b.engine.getGameAttribute("DNSM");
+                        			return (1 + (s + (a + (r + (o + u + (i + (m + (c + ((null == (p = null != e.ExpGainLUK2 ? p.getReserved("ExpGainLUK2") : p.h.ExpGainLUK2) ? 0 : "number" == typeof p ? d.__cast(p, k) : "number" == typeof p && (0 | p) === p ? d.__cast(p, l) : "boolean" == typeof p ? d.__cast(p, n) ? 1 : 0 : "string" == typeof p ? parseFloat(p) : parseFloat(g.string(p))) + (H._customBlock_ArbitraryCode("StatueBonusGiven10") + (t._customBlock_GetTalentNumber(1, 632) + (w._customBlock_Shrine(5) + (w._customBlock_SaltLick(3) + (w._customBlock_prayersReal(0, 0) + (w._customBlock_prayersReal(2, 0) - w._customBlock_prayersReal(9, 1) + w._customBlock_FlurboShop(2) + (w._customBlock_AchieveStatus(57) + (3 * w._customBlock_AchieveStatus(61) + (2 * w._customBlock_AchieveStatus(124) + (5 * w._customBlock_AchieveStatus(188) + (w._customBlock_ArcadeBonus(12) + w._customBlock_Labb("SigilBonus", "Blank", 8, 0))))))))))))))))))) / 100));
+                        		}
+                        		return (
+                        			(a = b.engine.getGameAttribute("DNSM")), null != e.AllSkillxpz ? a.setReserved("AllSkillxpz", 0) : (a.h.AllSkillxpz = 0), 1 == s ? H._customBlock_SkillStats("MiningEXPmulti") : 2 == s ? H._customBlock_SkillStats("SmithingEXPmulti") : 3 == s ? H._customBlock_SkillStats("ChoppinEXPmulti") : 4 == s ? H._customBlock_SkillStats("FishingEXPmulti") : 5 == s ? ((s = 1 + H._customBlock_SkillStats("AllSkillxpz") / 100),
+                        				(a = A._customBlock_cauldronp2wbonuses("CauldronBonus", 3, 1, "0")),
+                        				(r = t._customBlock_StampBonusOfTypeX("AlchExp")),
+                        				(o = t._customBlock_GetTalentNumber(1, 75)),
+                        				(u = b.engine.getGameAttribute("DNSM")),
+                        				(u = null != e.BoxRewards ? u.getReserved("BoxRewards") : u.h.BoxRewards),
+                        				(a = a + (r + (o + ((null == (u = null != e.AlchEXP ? u.getReserved("AlchEXP") : u.h.AlchEXP) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))) + H._customBlock_ArbitraryCode("StatueBonusGiven12")))) + (t._customBlock_GetTalentNumber(1, 492) + t._customBlock_TalentCalc(493))),
+                        				(r = b.engine.getGameAttribute("DNSM")),
+                        				(r = null != e.AlchBubbles ? r.getReserved("AlchBubbles") : r.h.AlchBubbles),
+                        				(r = null == (r = null != e.ChopAlchEXP ? r.getReserved("ChopAlchEXP") : r.h.ChopAlchEXP) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        				(o = b.engine.getGameAttribute("DNSM")),
+                        				(o = null != e.AlchBubbles ? o.getReserved("AlchBubbles") : o.h.AlchBubbles), s + (a + (r + (null == (o = null != e.AlchemyACTIVE ? o.getReserved("AlchemyACTIVE") : o.h.AlchemyACTIVE) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))))) / 100) : 6 == s ? H._customBlock_SkillStats("CatchingEXPmulti") : 7 == s ? H._customBlock_SkillStats("TrappingEXPmulti") : 8 == s ? H._customBlock_SkillStats("ConstructionEXPmulti") : 9 == s ? H._customBlock_SkillStats("WorshipEXPmulti") : 10 == s ? H._customBlock_SkillStats("CookingEXPmulti") : 11 == s ? H._customBlock_SkillStats("BreedingEXPmulti") : 12 == s ? H._customBlock_SkillStats("LaboratoryEXPmulti") : 1);
+                        	}

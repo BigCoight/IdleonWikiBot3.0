@@ -1,0 +1,26 @@
+                            (n._tr_flush_block = function(e, t, n, s) {
+                            		var a = 0;
+                            		if (0 < e.level) {
+                            			for (2 === e.strm.data_type && (e.strm.data_type = (function(e) {
+                            					var t,
+                            						n = 4093624447;
+                            					for (t = 0; 31 >= t; t++, n >>>= 1)
+                            						if (1 & n && 0 !== e.dyn_ltree[2 * t]) return v;
+                            					if (0 !== e.dyn_ltree[18] || 0 !== e.dyn_ltree[20] || 0 !== e.dyn_ltree[26]) return F;
+                            					for (t = 32; t < _; t++)
+                            						if (0 !== e.dyn_ltree[2 * t]) return F;
+                            					return v;
+                            				})(e)), h(e, e.l_desc), h(e, e.d_desc), b(e, e.dyn_ltree, e.l_desc.max_code), b(e, e.dyn_dtree, e.d_desc.max_code), h(e, e.bl_desc), a = E - 1; 3 <= a && 0 === e.bl_tree[2 * w[a] + 1]; a--);
+                            			(e.opt_len += 3 * (a + 1) + 14), (a = a);
+                            			var r = (e.opt_len + 3 + 7) >>> 3,
+                            				A = (e.static_len + 3 + 7) >>> 3;
+                            			A <= r && (r = A);
+                            		} else r = A = n + 5;
+                            		if (n + 4 <= r && -1 !== t) y(e, t, n, s);
+                            		else if (4 === e.strategy || A === r) l(e, 2 + (s ? 1 : 0), 3), p(e, k, x);
+                            		else {
+                            			for (l(e, 4 + (s ? 1 : 0), 3), t = e.l_desc.max_code + 1, n = e.d_desc.max_code + 1, a += 1, l(e, t - 257, 5), l(e, n - 1, 5), l(e, a - 4, 4), r = 0; r < a; r++) l(e, e.bl_tree[2 * w[r] + 1], 3);
+                            			f(e, e.dyn_ltree, t - 1), f(e, e.dyn_dtree, n - 1), p(e, e.dyn_ltree, e.dyn_dtree);
+                            		}
+                            		g(e), s && m(e);
+                            	}

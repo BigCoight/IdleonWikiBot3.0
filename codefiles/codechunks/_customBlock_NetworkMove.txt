@@ -1,0 +1,13 @@
+                        (U._customBlock_NetworkMove = function(t, s, a, r) {
+                        		if (0 == b.engine.getGameAttribute("PlayerAutoMoveTOGGLE") || 0 < w._customBlock_Dungon())
+                        			if (0 < b.engine.getGameAttribute("PlayerHP")) {
+                        				var A = b.engine.getGameAttribute("PlayerMoveMaps")[0],
+                        					o = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        				A = 7 != (null != e[o] ? A.getReserved(o) : A.h[o]);
+                        			} else A = !1;
+                        		else A = !1;
+                        		A && ((A = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[71][0]),
+                        			(30 < Math.abs(a - parseNum(A)) || r != b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[71][1]) && 0 == b.engine.getGameAttribute("OptionsListAccount")[26] && (0 == E.getServerVarLoad("DampenServerPlayerMvmt") || 0 <= w._customBlock_Dungon()) && (E.updateMovement(Math.round(t), 0, Math.round(Math.min(Math.round(s), b.engine.getGameAttribute("NodeNeighbors").length - 1)), Math.round(a), 0, Math.round(Math.min(r, b.engine.getGameAttribute("NodeNeighbors").length - 1))),
+                        				(b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[71][0] = a),
+                        				(b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_GenINFO")[71][1] = r)));
+                        	}

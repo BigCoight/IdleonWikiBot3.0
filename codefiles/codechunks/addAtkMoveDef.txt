@@ -1,0 +1,25 @@
+                        (Bj.addAtkMoveDef = function(t, n) {
+                        		var s = new p(),
+                        			a = n.K;
+                        		null != e.K ? s.setReserved("K", a) : (s.h.K = a),
+                        			(a = n.D),
+                        			null != e.D ? s.setReserved("D", a) : (s.h.D = a),
+                        			(a = n.s),
+                        			null != e.s ? s.setReserved("s", a) : (s.h.s = a),
+                        			(a = n.cooldown),
+                        			null != e.cooldown ? s.setReserved("cooldown", a) : (s.h.cooldown = a),
+                        			(a = n.castTime),
+                        			null != e.castTime ? s.setReserved("castTime", a) : (s.h.castTime = a),
+                        			(a = n.manaCost),
+                        			null != e.manaCost ? s.setReserved("manaCost", a) : (s.h.manaCost = a),
+                        			(a = n.inputReq),
+                        			null != e.inputReq ? s.setReserved("inputReq", a) : (s.h.inputReq = a),
+                        			(a = n.AFKrange),
+                        			null != e.AFKrange ? s.setReserved("AFKrange", a) : (s.h.AFKrange = a),
+                        			(a = n.AFKtype),
+                        			null != e.AFKtype ? s.setReserved("AFKtype", a) : (s.h.AFKtype = a),
+                        			(n = n.AFKactivity),
+                        			null != e.AFKactivity ? s.setReserved("AFKactivity", n) : (s.h.AFKactivity = n),
+                        			(n = Bj.atkMoveMap),
+                        			null != e[t] ? n.setReserved(t, s) : (n.h[t] = s);
+                        	}

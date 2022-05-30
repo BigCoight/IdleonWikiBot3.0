@@ -1,0 +1,6 @@
+    ($jscomp.arrayIterator = function(e) {
+    		var t = 0;
+    		return $jscomp.iteratorPrototype(function() {
+    			return t < e.length ? { done: !1, value: e[t++] } : { done: !0 };
+    		});
+    	}

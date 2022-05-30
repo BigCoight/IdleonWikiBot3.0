@@ -1,0 +1,10 @@
+                        (t._customBlock_addImgInst = function(t) {
+                        		var n = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		return (
+                        			(t = new rd(new gd(h.getExternalImage(t)))), null != e.InstaceImgZz ? n.setReserved("InstaceImgZz", t) : (n.h.InstaceImgZz = t),
+                        			(n = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(null != e.InstaceImgZz ? n.getReserved("InstaceImgZz") : n.h.InstaceImgZz).set_scaleY((100 * b.SCALE) / 100),
+                        			(n = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(null != e.InstaceImgZz ? n.getReserved("InstaceImgZz") : n.h.InstaceImgZz).set_scaleX((100 * b.SCALE) / 100),
+                        			(n = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.InstaceImgZz ? n.getReserved("InstaceImgZz") : n.h.InstaceImgZz);
+                        	}

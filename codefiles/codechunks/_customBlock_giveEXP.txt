@@ -1,0 +1,80 @@
+                        (U._customBlock_giveEXP = function(s, a) {
+                        		if (0 < a)
+                        			if (11.5 == s) {
+                        				s = b.engine.getGameAttribute("Exp0");
+                        				var r = b.engine.getGameAttribute("Exp0")[11];
+                        				for (s[11] = parseNum(r) + a, s = b.engine.getGameAttribute("PlayerDATABASE").keys(); s.hasNext();)
+                        					if (((r = s.next()), b.engine.getGameAttribute("UserInfo")[0] != r)) {
+                        						var A = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							o = "" + r;
+                        						(A = null != e[o] ? A.getReserved(o) : A.h[o]),
+                        						(A = null != e.Exp0 ? A.getReserved("Exp0") : A.h.Exp0),
+                        						(o = b.engine.getGameAttribute("PlayerDATABASE")),
+                        						(r = null != e[(r = "" + r)] ? o.getReserved(r) : o.h[r]),
+                        						(r = (null != e.Exp0 ? r.getReserved("Exp0") : r.h.Exp0)[11]),
+                        						(A[11] = parseNum(r) + a);
+                        					}
+                        			} else if (11 != s)
+                        			if (0 == s || b.engine.getGameAttribute("OptionsList")[30] != s) {
+                        				if (
+                        					((r = b.engine.getGameAttribute("Exp0")),
+                        						(A = b.engine.getGameAttribute("Exp0")[0 | s]),
+                        						(r[0 | s] = parseNum(A) + a),
+                        						(r = b.engine.gameAttributes), null != e.dummyDisplayPopup ? r.setReserved("dummyDisplayPopup", "EXP") : (r.h.dummyDisplayPopup = "EXP"),
+                        						(r = b.engine.gameAttributes),
+                        						(A = "ExpType" + s), null != e.dummyDisplayEXPTYPE ? r.setReserved("dummyDisplayEXPTYPE", A) : (r.h.dummyDisplayEXPTYPE = A),
+                        						(r = b.engine.gameAttributes), null != e.dummyDamageDealt ? r.setReserved("dummyDamageDealt", a) : (r.h.dummyDamageDealt = a), h.createRecycledActor(h.getActorType(34), 8, 457, 2),
+                        						(r = b.engine.gameAttributes), null != e.dummyDisplayEXPTYPE ? r.setReserved("dummyDisplayEXPTYPE", "Null") : (r.h.dummyDisplayEXPTYPE = "Null"), 12 == s && 0 < t._customBlock_GetTalentNumber(1, 537))) {
+                        					for (s = b.engine.gameAttributes, null != e.dummyDamageDealt ? s.setReserved("dummyDamageDealt", 999) : (s.h.dummyDamageDealt = 999), s = b.engine.getGameAttribute("PlayerDATABASE").keys(); s.hasNext();)
+                        						(r = s.next()),
+                        						(A = b.engine.getGameAttribute("PlayerDATABASE")),
+                        						(A = null != e[(o = "" + r)] ? A.getReserved(o) : A.h[o]),
+                        						(null == (A = (null != e.Lv0 ? A.getReserved("Lv0") : A.h.Lv0)[12]) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))) < b.engine.getGameAttribute("dummyDamageDealt") && ((A = b.engine.gameAttributes),
+                        							(o = "" + r), null != e.dummyDisplayEXPTYPE ? A.setReserved("dummyDisplayEXPTYPE", o) : (A.h.dummyDisplayEXPTYPE = o),
+                        							(A = b.engine),
+                        							(o = b.engine.getGameAttribute("PlayerDATABASE")),
+                        							(r = null != e[(r = "" + r)] ? o.getReserved(r) : o.h[r]),
+                        							(r = null == (r = (null != e.Lv0 ? r.getReserved("Lv0") : r.h.Lv0)[12]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        							(A = A.gameAttributes), null != e.dummyDamageDealt ? A.setReserved("dummyDamageDealt", r) : (A.h.dummyDamageDealt = r));
+                        					(s = b.engine.getGameAttribute("PlayerDATABASE")),
+                        					(r = b.engine.getGameAttribute("dummyDisplayEXPTYPE")),
+                        					(s = null != e[r] ? s.getReserved(r) : s.h[r]),
+                        					(s = null != e.Exp0 ? s.getReserved("Exp0") : s.h.Exp0),
+                        					(r = b.engine.getGameAttribute("PlayerDATABASE")),
+                        					(A = b.engine.getGameAttribute("dummyDisplayEXPTYPE")),
+                        					(r = null != e[A] ? r.getReserved(A) : r.h[A]),
+                        					(r = (null != e.Exp0 ? r.getReserved("Exp0") : r.h.Exp0)[12]),
+                        					(s[12] = parseNum(r) + a * (t._customBlock_GetTalentNumber(1, 537) / 100)),
+                        					(a = b.engine.gameAttributes),
+                        					null != e.dummyDisplayEXPTYPE ? a.setReserved("dummyDisplayEXPTYPE", "Null") : (a.h.dummyDisplayEXPTYPE = "Null");
+                        				}
+                        			} else(r = b.engine.getGameAttribute("Exp0")),
+                        				(A = b.engine.getGameAttribute("Exp0")[0 | s]),
+                        				(r[0 | s] = parseNum(A) + a * U._customBlock_EXPconverter(s)),
+                        				(r = b.engine.gameAttributes),
+                        				null != e.dummyDisplayPopup ? r.setReserved("dummyDisplayPopup", "EXP") : (r.h.dummyDisplayPopup = "EXP"),
+                        				(r = b.engine.gameAttributes),
+                        				(A = "ExpType" + s),
+                        				null != e.dummyDisplayEXPTYPE ? r.setReserved("dummyDisplayEXPTYPE", A) : (r.h.dummyDisplayEXPTYPE = A),
+                        				(r = b.engine),
+                        				(s = a * U._customBlock_EXPconverter(s)),
+                        				(r = r.gameAttributes),
+                        				null != e.dummyDamageDealt ? r.setReserved("dummyDamageDealt", s) : (r.h.dummyDamageDealt = s),
+                        				h.createRecycledActor(h.getActorType(34), 8, 457, 2),
+                        				(s = b.engine.gameAttributes),
+                        				null != e.dummyDisplayEXPTYPE ? s.setReserved("dummyDisplayEXPTYPE", "Null") : (s.h.dummyDisplayEXPTYPE = "Null"),
+                        				(s = b.engine.getGameAttribute("Exp0")),
+                        				(r = b.engine.getGameAttribute("Exp0")[0]),
+                        				(s[0] = parseNum(r) + a * U._customBlock_EXPconverter(0)),
+                        				(s = b.engine.gameAttributes),
+                        				null != e.dummyDisplayPopup ? s.setReserved("dummyDisplayPopup", "EXP") : (s.h.dummyDisplayPopup = "EXP"),
+                        				(s = b.engine.gameAttributes),
+                        				null != e.dummyDisplayEXPTYPE ? s.setReserved("dummyDisplayEXPTYPE", "ExpType0") : (s.h.dummyDisplayEXPTYPE = "ExpType0"),
+                        				(s = b.engine),
+                        				(a *= U._customBlock_EXPconverter(0)),
+                        				(s = s.gameAttributes),
+                        				null != e.dummyDamageDealt ? s.setReserved("dummyDamageDealt", a) : (s.h.dummyDamageDealt = a),
+                        				h.createRecycledActor(h.getActorType(34), 8, 457, 2),
+                        				(a = b.engine.gameAttributes),
+                        				null != e.dummyDisplayEXPTYPE ? a.setReserved("dummyDisplayEXPTYPE", "Null") : (a.h.dummyDisplayEXPTYPE = "Null");
+                        	}

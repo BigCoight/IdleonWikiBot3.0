@@ -1,0 +1,3 @@
+                            (n._tr_align = function(e) {
+                            		l(e, 2, 3), o(e, U, k), 16 === e.bi_valid ? (A(e, e.bi_buf), (e.bi_buf = 0), (e.bi_valid = 0)) : 8 <= e.bi_valid && ((e.pending_buf[e.pending++] = 255 & e.bi_buf), (e.bi_buf >>= 8), (e.bi_valid -= 8));
+                            	}

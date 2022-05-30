@@ -1,0 +1,65 @@
+                        (w._customBlock_TowerStats = function(t, s, a) {
+                        		if ("damage" == t) {
+                        			if (0 == s) {
+                        				(a *= Math.pow(1.2 - (0.193 * a) / (15 + a), a)),
+                        				(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t)));
+                        				var r = b.engine.getGameAttribute("CustomLists");
+                        				return (
+                        					(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][2]), Math.floor(a * (1 + ((t - 1) * parseNum(s)) / 100)));
+                        			}
+                        			return 1 == s ? ((a = 2 + 1.4 * a * Math.pow(1.23 - (0.225 * a) / (20 + a), a)),
+                        				(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        				(r = b.engine.getGameAttribute("CustomLists")),
+                        				(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][2]), Math.floor(a * (1 + ((t - 1) * parseNum(s)) / 100))) : 2 == s ? ((a = 3 * a * Math.pow(1.13 - (0.125 * a) / (30 + a), a)),
+                        				(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        				(r = b.engine.getGameAttribute("CustomLists")),
+                        				(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][2]), Math.floor(a * (1 + ((t - 1) * parseNum(s)) / 100))) : 3 == s ? Math.floor(3 * a) : 4 == s ? ((a = (5 + 5 * a) * Math.pow(1.2 - (0.193 * a) / (20 + a), a)),
+                        				(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        				(r = b.engine.getGameAttribute("CustomLists")),
+                        				(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][2]), Math.floor(a * (1 + ((t - 1) * parseNum(s)) / 100))) : 5 == s ? Math.floor(0) : 6 == s ? ((a = 2 * a * Math.pow(1.2 - (0.193 * a) / (20 + a), a)),
+                        				(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        				(r = b.engine.getGameAttribute("CustomLists")),
+                        				(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][2]), Math.floor(a * (1 + ((t - 1) * parseNum(s)) / 100))) : 7 == s ? ((a = (1 + a) * Math.pow(1.2 - (0.193 * a) / (20 + a), a)),
+                        				(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        				(r = b.engine.getGameAttribute("CustomLists")),
+                        				(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][2]), Math.floor(a * (1 + ((t - 1) * parseNum(s)) / 100))) : 8 == s ? ((a = (10 + 5 * a) * Math.pow(1.2 - (0.193 * a) / (20 + a), a)),
+                        				(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        				(r = b.engine.getGameAttribute("CustomLists")),
+                        				(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][2]), Math.floor(a * (1 + ((t - 1) * parseNum(s)) / 100))) : 1;
+                        		}
+                        		return "cost" == t ? 0 == s ? ((a = (2 + 3 * a) * Math.pow(1.57, a)),
+                        			(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][3]), Math.floor(a * Math.max(0.05, 1 - ((t - 1) * parseNum(s)) / 100))) : 1 == s ? ((a = (3 + 3.5 * a) * Math.pow(1.58, a)),
+                        			(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][3]), Math.floor(a * Math.max(0.05, 1 - ((t - 1) * parseNum(s)) / 100))) : 2 == s ? ((a = (4 + 4 * a) * Math.pow(1.61, a)),
+                        			(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][3]), Math.floor(a * Math.max(0.05, 1 - ((t - 1) * parseNum(s)) / 100))) : 3 == s ? ((a = (4 + 3 * a) * Math.pow(1.5, a)),
+                        			(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][3]), Math.floor(a * Math.max(0.05, 1 - ((t - 1) * parseNum(s)) / 100))) : 4 == s ? ((a = (5 + 4 * a) * Math.pow(1.63, a)),
+                        			(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][3]), Math.floor(a * Math.max(0.05, 1 - ((t - 1) * parseNum(s)) / 100))) : 5 == s ? ((a = (2 + 2 * a) * Math.pow(1.55, a)),
+                        			(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][3]), Math.floor(a * Math.max(0.05, 1 - ((t - 1) * parseNum(s)) / 100))) : 6 == s ? ((a = (6 + 4.5 * a) * Math.pow(1.6, a)),
+                        			(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][3]), Math.floor(a * Math.max(0.05, 1 - ((t - 1) * parseNum(s)) / 100))) : 7 == s ? ((a = (10 + 4.8 * a) * Math.pow(1.63, a)),
+                        			(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][3]), Math.floor(a * Math.max(0.05, 1 - ((t - 1) * parseNum(s)) / 100))) : 8 == s ? ((a = (50 + 20 * a) * Math.pow(1.6, a)),
+                        			(t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][3]), Math.floor(a * Math.max(0.05, 1 - ((t - 1) * parseNum(s)) / 100))) : 1 : "atkcd" == t ? 0 == s ? Math.floor(100 * Math.max(1, 4.2 - (2.65 * a) / (a + 10))) / 100 : 1 == s ? Math.floor(100 * (5.15 - (3.2 * a) / (a + 7))) / 100 : 2 == s ? Math.floor(100 * (6.4 - (3.7 * a) / (a + 7))) / 100 : 3 == s ? Math.floor(100 * (7 - (3.5 * a) / (a + 7))) / 100 : 4 == s || 5 == s ? Math.floor(100 * (10 - (3 * a) / (a + 7))) / 100 : 6 == s ? ((t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][2]), Math.floor(
+                        				(10 - (3 * a) / (a + 7)) * (1 / (1 + ((t - 1) * parseNum(s)) / 100)) * 100) / 100) : 7 == s || 8 == s ? Math.floor(100 * (10 - (3 * a) / (a + 7))) / 100 : 1 : "range" == t ? 0 == s || 1 == s || 2 == s ? Math.floor(80 + (150 * a) / (a + 7)) : 3 == s ? ((t = null == (t = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        			(r = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? r.getReserved("TowerInfo") : r.h.TowerInfo)[(9 + s) | 0][2]), Math.floor(85 + (25 * a) / (a + 7) + (t - 1) * parseNum(s))) : 4 == s ? Math.floor(250 + (150 * a) / (a + 7)) : 5 == s ? ((a = null == (a = b.engine.getGameAttribute("TowerInfo")[(9 + s) | 0]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(t = b.engine.getGameAttribute("CustomLists")),
+                        			(s = (null != e.TowerInfo ? t.getReserved("TowerInfo") : t.h.TowerInfo)[(9 + s) | 0][2]), Math.floor(250 * (1 + ((a - 1) * parseNum(s)) / 100))) : 6 == s || 7 == s || 8 == s ? Math.floor(275) : 1 : "maxlv" == t ? 0 == s || 1 == s || 2 == s || 3 == s || 4 == s || 5 == s || 6 == s || 7 == s || 8 == s ? Math.floor(5) : 1 : w._customBlock_Tower2Stats(t, s, a);
+                        	}

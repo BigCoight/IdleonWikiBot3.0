@@ -1,0 +1,555 @@
+                        (A._customBlock_AFKfoodsTimeRedux = function(s, a) {
+                        		var r = b.engine.getGameAttribute("DNSM"),
+                        			o = [];
+                        		null != e.AFKfoodTimes ? r.setReserved("AFKfoodTimes", o) : (r.h.AFKfoodTimes = o);
+                        		var i = b.engine.getGameAttribute("DNSM"),
+                        			u = [];
+                        		null != e.AFKfoodTimesFINAL ? i.setReserved("AFKfoodTimesFINAL", u) : (i.h.AFKfoodTimesFINAL = u);
+                        		var m = b.engine.getGameAttribute("DNSM"),
+                        			c = [];
+                        		null != e.AFKfoodTimesDum ? m.setReserved("AFKfoodTimesDum", c) : (m.h.AFKfoodTimesDum = c);
+                        		var p = b.engine.getGameAttribute("DNSM"),
+                        			h = [];
+                        		null != e.AFKfoodTimesDum2 ? p.setReserved("AFKfoodTimesDum2", h) : (p.h.AFKfoodTimesDum2 = h);
+                        		var f = b.engine.getGameAttribute("DNSM");
+                        		null != e.AFKfoodTimesDum3 ? f.setReserved("AFKfoodTimesDum3", 0) : (f.h.AFKfoodTimesDum3 = 0);
+                        		var y = b.engine.getGameAttribute("DNSM");
+                        		null != e.AFKfoodTimesSortDN ? y.setReserved("AFKfoodTimesSortDN", 0) : (y.h.AFKfoodTimesSortDN = 0);
+                        		var R = b.engine.getGameAttribute("DNSM");
+                        		null != e.AFKfoodTimesSortDN2 ? R.setReserved("AFKfoodTimesSortDN2", 0) : (R.h.AFKfoodTimesSortDN2 = 0);
+                        		var v = b.engine.getGameAttribute("DNSM");
+                        		if ((null != e.AFKfoodTimesSortDN3 ? v.setReserved("AFKfoodTimesSortDN3", 0) : (v.h.AFKfoodTimesSortDN3 = 0), "RerollDontRecalcFoodCoeff" == b.engine.getGameAttribute("DummyText3"))) {
+                        			var F = b.engine.getGameAttribute("DNSM");
+                        			null != e.AFKfoodTimesSortDN4 ? F.setReserved("AFKfoodTimesSortDN4", 0) : (F.h.AFKfoodTimesSortDN4 = 0);
+                        		} else {
+                        			var N = b.engine.getGameAttribute("DNSM");
+                        			null != e.AFKfoodTimesSortDN4 ? N.setReserved("AFKfoodTimesSortDN4", 1) : (N.h.AFKfoodTimesSortDN4 = 1);
+                        		}
+                        		var _ = b.engine.getGameAttribute("DNSM");
+                        		null != e.AFKfoodTimesSortDNreturn ? _.setReserved("AFKfoodTimesSortDNreturn", 0) : (_.h.AFKfoodTimesSortDNreturn = 0);
+                        		var I = b.engine.getGameAttribute("DNSM"),
+                        			D = [];
+                        		null != e.AFKfoodConsumeWARNING ? I.setReserved("AFKfoodConsumeWARNING", D) : (I.h.AFKfoodConsumeWARNING = D);
+                        		var E = b.engine.getGameAttribute("DNSM");
+                        		null != e.AFKfooddmgperHrLeftDN ? E.setReserved("AFKfooddmgperHrLeftDN", 0) : (E.h.AFKfooddmgperHrLeftDN = 0);
+                        		for (var S = 0, G = 0 | b.engine.getGameAttribute("FoodSlotsOwned"); S < G;) {
+                        			var T = S++,
+                        				U = b.engine.getGameAttribute("DNSM"),
+                        				M = [];
+                        			null != e.AFKfoodTimesDum2 ? U.setReserved("AFKfoodTimesDum2", M) : (U.h.AFKfoodTimesDum2 = M);
+                        			var V = b.engine,
+                        				C = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        				B = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[2][T]),
+                        				P = C,
+                        				O = null != e[B] ? P.getReserved(B) : P.h[B],
+                        				w = V.gameAttributes,
+                        				x = O;
+                        			null != e.DummyMap ? w.setReserved("DummyMap", x) : (w.h.DummyMap = x);
+                        			var Q = b.engine.getGameAttribute("DummyMap");
+                        			if (-1 == (null != e.Trigger ? Q.getReserved("Trigger") : Q.h.Trigger) && "Fighting" == s) {
+                        				var X = b.engine.getGameAttribute("DNSM"),
+                        					L = null != e.AFKfoodTimesDum2 ? X.getReserved("AFKfoodTimesDum2") : X.h.AFKfoodTimesDum2,
+                        					z = 3600 / Math.max(t._customBlock_HourlyKillRate("Fighting"), 1),
+                        					Y = b.engine.getGameAttribute("DummyMap"),
+                        					W = null != e.Cooldown ? Y.getReserved("Cooldown") : Y.h.Cooldown,
+                        					Z = (parseNum(W) / 100) * ((100 - H._customBlock_ArbitraryCode("FoodNOTconsume")) / 100),
+                        					J = b.engine.getGameAttribute("DummyMap"),
+                        					j = z * (1 / Math.max(Z * H._customBlock_FoodBonuses(g.string(null != e.Effect ? J.getReserved("Effect") : J.h.Effect) + "CooldownBonus"), 0.001)),
+                        					q = b.engine.getGameAttribute("EquipmentQuantity")[2][T];
+                        				L.push(j * parseNum(q));
+                        				var K = b.engine.getGameAttribute("DNSM");
+                        				(null != e.AFKfoodTimesDum2 ? K.getReserved("AFKfoodTimesDum2") : K.h.AFKfoodTimesDum2).push(T);
+                        				var $ = b.engine.getGameAttribute("DNSM");
+                        				(null != e.AFKfoodTimesDum2 ? $.getReserved("AFKfoodTimesDum2") : $.h.AFKfoodTimesDum2).push(-1);
+                        				var ee = b.engine.getGameAttribute("DNSM"),
+                        					te = null != e.AFKfoodTimes ? ee.getReserved("AFKfoodTimes") : ee.h.AFKfoodTimes,
+                        					ne = b.engine.getGameAttribute("DNSM");
+                        				te.push(null != e.AFKfoodTimesDum2 ? ne.getReserved("AFKfoodTimesDum2") : ne.h.AFKfoodTimesDum2);
+                        			} else {
+                        				var se = b.engine.getGameAttribute("DummyMap");
+                        				if (-2 == (null != e.Trigger ? se.getReserved("Trigger") : se.h.Trigger) && "Choppin" != s && "Mining" != s && "Fishing" != s && "Catching" != s && "FillerZ" != s) {
+                        					var ae = b.engine.getGameAttribute("DNSM"),
+                        						re = null != e.AFKfoodTimesDum2 ? ae.getReserved("AFKfoodTimesDum2") : ae.h.AFKfoodTimesDum2,
+                        						Ae = 3600 / Math.max(t._customBlock_HourlyKillRate(s), 1),
+                        						le = b.engine.getGameAttribute("DummyMap"),
+                        						oe = null != e.Cooldown ? le.getReserved("Cooldown") : le.h.Cooldown,
+                        						ie = (parseNum(oe) / 100) * ((100 - H._customBlock_ArbitraryCode("FoodNOTconsume")) / 100),
+                        						ue = b.engine.getGameAttribute("DummyMap"),
+                        						ge = Ae * (1 / Math.max(ie * H._customBlock_FoodBonuses(g.string(null != e.Effect ? ue.getReserved("Effect") : ue.h.Effect) + "CooldownBonus"), 0.001)),
+                        						me = b.engine.getGameAttribute("EquipmentQuantity")[2][T];
+                        					re.push(ge * parseNum(me));
+                        					var de = b.engine.getGameAttribute("DNSM");
+                        					(null != e.AFKfoodTimesDum2 ? de.getReserved("AFKfoodTimesDum2") : de.h.AFKfoodTimesDum2).push(T);
+                        					var ce = b.engine.getGameAttribute("DNSM");
+                        					(null != e.AFKfoodTimesDum2 ? ce.getReserved("AFKfoodTimesDum2") : ce.h.AFKfoodTimesDum2).push(-1);
+                        					var pe = b.engine.getGameAttribute("DNSM"),
+                        						he = null != e.AFKfoodTimes ? pe.getReserved("AFKfoodTimes") : pe.h.AFKfoodTimes,
+                        						be = b.engine.getGameAttribute("DNSM");
+                        					he.push(null != e.AFKfoodTimesDum2 ? be.getReserved("AFKfoodTimesDum2") : be.h.AFKfoodTimesDum2);
+                        				} else {
+                        					var fe = b.engine.getGameAttribute("DummyMap");
+                        					if (-3 == (null != e.Trigger ? fe.getReserved("Trigger") : fe.h.Trigger)) {
+                        						var ye = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AFKfoodTimesDum2 ? ye.getReserved("AFKfoodTimesDum2") : ye.h.AFKfoodTimesDum2).push(-1);
+                        						var Re = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AFKfoodTimesDum2 ? Re.getReserved("AFKfoodTimesDum2") : Re.h.AFKfoodTimesDum2).push(T);
+                        						var ve = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AFKfoodTimesDum2 ? ve.getReserved("AFKfoodTimesDum2") : ve.h.AFKfoodTimesDum2).push(-1);
+                        						var Fe = b.engine.getGameAttribute("DNSM"),
+                        							Ne = null != e.AFKfoodTimes ? Fe.getReserved("AFKfoodTimes") : Fe.h.AFKfoodTimes,
+                        							_e = b.engine.getGameAttribute("DNSM");
+                        						Ne.push(null != e.AFKfoodTimesDum2 ? _e.getReserved("AFKfoodTimesDum2") : _e.h.AFKfoodTimesDum2);
+                        					} else {
+                        						var Ie = b.engine.getGameAttribute("DummyMap"),
+                        							De = null != e.Trigger ? Ie.getReserved("Trigger") : Ie.h.Trigger;
+                        						if (-23 <= parseNum(De)) var Ee = b.engine.getGameAttribute("DummyMap"),
+                        							Se = null != e.Trigger ? Ee.getReserved("Trigger") : Ee.h.Trigger,
+                        							Ge = -4 >= parseNum(Se);
+                        						else Ge = !1;
+                        						if (Ge) {
+                        							var Te = b.engine.getGameAttribute("DummyMap");
+                        							if (-4 == (null != e.Trigger ? Te.getReserved("Trigger") : Te.h.Trigger) && "Mining" == s) {
+                        								var Ue = b.engine.getGameAttribute("DNSM"),
+                        									Me = null != e.AFKfoodTimesDum2 ? Ue.getReserved("AFKfoodTimesDum2") : Ue.h.AFKfoodTimesDum2,
+                        									Ve = H._customBlock_SkillStats("MiningSpeed") + 0.4,
+                        									Ce = b.engine.getGameAttribute("DummyMap"),
+                        									Be = null != e.Cooldown ? Ce.getReserved("Cooldown") : Ce.h.Cooldown,
+                        									Pe = (parseNum(Be) / 100) * ((100 - H._customBlock_ArbitraryCode("FoodNOTconsume")) / 100),
+                        									Oe = b.engine.getGameAttribute("DummyMap"),
+                        									we = Ve * (1 / Math.max(Pe * H._customBlock_FoodBonuses(g.string(null != e.Effect ? Oe.getReserved("Effect") : Oe.h.Effect) + "CooldownBonus"), 0.001)),
+                        									ke = b.engine.getGameAttribute("EquipmentQuantity")[2][T];
+                        								Me.push(we * parseNum(ke));
+                        							} else {
+                        								var xe = b.engine.getGameAttribute("DummyMap");
+                        								if (-6 == (null != e.Trigger ? xe.getReserved("Trigger") : xe.h.Trigger) && "Choppin" == s) {
+                        									var Qe = b.engine.getGameAttribute("DNSM"),
+                        										Xe = null != e.AFKfoodTimesDum2 ? Qe.getReserved("AFKfoodTimesDum2") : Qe.h.AFKfoodTimesDum2,
+                        										Le = H._customBlock_SkillStats("ChoppinSpeed") + 0.4,
+                        										ze = b.engine.getGameAttribute("DummyMap"),
+                        										Ye = null != e.Cooldown ? ze.getReserved("Cooldown") : ze.h.Cooldown,
+                        										We = (parseNum(Ye) / 100) * ((100 - H._customBlock_ArbitraryCode("FoodNOTconsume")) / 100),
+                        										Ze = b.engine.getGameAttribute("DummyMap"),
+                        										He = Le * (1 / Math.max(We * H._customBlock_FoodBonuses(g.string(null != e.Effect ? Ze.getReserved("Effect") : Ze.h.Effect) + "CooldownBonus"), 0.001)),
+                        										Je = b.engine.getGameAttribute("EquipmentQuantity")[2][T];
+                        									Xe.push(He * parseNum(Je));
+                        								} else {
+                        									var je = b.engine.getGameAttribute("DummyMap");
+                        									if (-7 == (null != e.Trigger ? je.getReserved("Trigger") : je.h.Trigger) && "Fishing" == s) {
+                        										var qe = b.engine.getGameAttribute("DNSM"),
+                        											Ke = null != e.AFKfoodTimesDum2 ? qe.getReserved("AFKfoodTimesDum2") : qe.h.AFKfoodTimesDum2,
+                        											$e = H._customBlock_SkillStats("FishingSpeed") + 0.4,
+                        											et = b.engine.getGameAttribute("DummyMap"),
+                        											tt = null != e.Cooldown ? et.getReserved("Cooldown") : et.h.Cooldown,
+                        											nt = (parseNum(tt) / 100) * ((100 - H._customBlock_ArbitraryCode("FoodNOTconsume")) / 100),
+                        											st = b.engine.getGameAttribute("DummyMap"),
+                        											at = $e * (1 / Math.max(nt * H._customBlock_FoodBonuses(g.string(null != e.Effect ? st.getReserved("Effect") : st.h.Effect) + "CooldownBonus"), 0.001)),
+                        											rt = b.engine.getGameAttribute("EquipmentQuantity")[2][T];
+                        										Ke.push(at * parseNum(rt));
+                        									} else {
+                        										var At = b.engine.getGameAttribute("DummyMap");
+                        										if (-8 == (null != e.Trigger ? At.getReserved("Trigger") : At.h.Trigger) && "Catching" == s) {
+                        											var lt = b.engine.getGameAttribute("DNSM"),
+                        												ot = null != e.AFKfoodTimesDum2 ? lt.getReserved("AFKfoodTimesDum2") : lt.h.AFKfoodTimesDum2,
+                        												it = H._customBlock_SkillStats("CatchingSpeed") + 0.4,
+                        												ut = b.engine.getGameAttribute("DummyMap"),
+                        												gt = null != e.Cooldown ? ut.getReserved("Cooldown") : ut.h.Cooldown,
+                        												mt = (parseNum(gt) / 100) * ((100 - H._customBlock_ArbitraryCode("FoodNOTconsume")) / 100),
+                        												dt = b.engine.getGameAttribute("DummyMap"),
+                        												ct = it * (1 / Math.max(mt * H._customBlock_FoodBonuses(g.string(null != e.Effect ? dt.getReserved("Effect") : dt.h.Effect) + "CooldownBonus"), 0.001)),
+                        												pt = b.engine.getGameAttribute("EquipmentQuantity")[2][T];
+                        											ot.push(ct * parseNum(pt));
+                        										} else {
+                        											var ht = b.engine.getGameAttribute("DNSM");
+                        											(null != e.AFKfoodTimesDum2 ? ht.getReserved("AFKfoodTimesDum2") : ht.h.AFKfoodTimesDum2).push(-1);
+                        										}
+                        									}
+                        								}
+                        							}
+                        							var bt = b.engine.getGameAttribute("DNSM");
+                        							(null != e.AFKfoodTimesDum2 ? bt.getReserved("AFKfoodTimesDum2") : bt.h.AFKfoodTimesDum2).push(T);
+                        							var ft = b.engine.getGameAttribute("DNSM");
+                        							(null != e.AFKfoodTimesDum2 ? ft.getReserved("AFKfoodTimesDum2") : ft.h.AFKfoodTimesDum2).push(-1);
+                        							var yt = b.engine.getGameAttribute("DNSM"),
+                        								Rt = null != e.AFKfoodTimes ? yt.getReserved("AFKfoodTimes") : yt.h.AFKfoodTimes,
+                        								vt = b.engine.getGameAttribute("DNSM");
+                        							Rt.push(null != e.AFKfoodTimesDum2 ? vt.getReserved("AFKfoodTimesDum2") : vt.h.AFKfoodTimesDum2);
+                        						} else {
+                        							var Ft = b.engine.getGameAttribute("DummyMap"),
+                        								Nt = null != e.Trigger ? Ft.getReserved("Trigger") : Ft.h.Trigger;
+                        							if (0 < parseNum(Nt) && ("Fighting" == s || "Fishing" == s)) {
+                        								if ("Fighting" == s) {
+                        									var _t = b.engine.getGameAttribute("DNSM"),
+                        										It = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        										Dt = "" + g.string(b.engine.getGameAttribute("MapMonstersList")[0].getValue("ActorEvents_1", "_MonsterType")),
+                        										Et = It,
+                        										St = null != e[Dt] ? Et.getReserved(Dt) : Et.h[Dt],
+                        										Gt = (null != e.Damages ? St.getReserved("Damages") : St.h.Damages)[0],
+                        										Tt = A._customBlock_MonsterDamage(parseNum(Gt)),
+                        										Ut = b.engine.getGameAttribute("CustomLists"),
+                        										Mt = (null != e.MapDetails ? Ut.getReserved("MapDetails") : Ut.h.MapDetails)[0 | b.engine.getGameAttribute("CurrentMap")][1][2],
+                        										Vt = _t,
+                        										Ct = a * ((Tt * parseNum(Mt)) / 3600);
+                        									null != e.AFKfooddmgperHrLeftDN ? Vt.setReserved("AFKfooddmgperHrLeftDN", Ct) : (Vt.h.AFKfooddmgperHrLeftDN = Ct);
+                        								} else if ("Fishing" == s) {
+                        									var Bt = b.engine.getGameAttribute("DNSM"),
+                        										Pt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        										Ot = "" + g.string(b.engine.getGameAttribute("MapMonstersList")[0].getValue("ActorEvents_1", "_MonsterType")),
+                        										wt = Pt,
+                        										kt = null != e[Ot] ? wt.getReserved(Ot) : wt.h[Ot],
+                        										xt = (null != e.Damages ? kt.getReserved("Damages") : kt.h.Damages)[0],
+                        										Qt = A._customBlock_MonsterDamage(parseNum(xt)),
+                        										Xt = b.engine.getGameAttribute("CustomLists"),
+                        										Lt = (null != e.MapDetails ? Xt.getReserved("MapDetails") : Xt.h.MapDetails)[0 | b.engine.getGameAttribute("CurrentMap")][1][2],
+                        										zt = Bt,
+                        										Yt = a * ((Qt * parseNum(Lt)) / 3600);
+                        									null != e.AFKfooddmgperHrLeftDN ? zt.setReserved("AFKfooddmgperHrLeftDN", Yt) : (zt.h.AFKfooddmgperHrLeftDN = Yt);
+                        								}
+                        								var Wt = b.engine.getGameAttribute("DNSM"),
+                        									Zt = null != e.AFKfooddmgperHrLeftDN ? Wt.getReserved("AFKfooddmgperHrLeftDN") : Wt.h.AFKfooddmgperHrLeftDN;
+                        								if (0 < parseNum(Zt)) {
+                        									var Ht = b.engine.getGameAttribute("DNSM"),
+                        										Jt = null != e.AFKfoodTimesDum2 ? Ht.getReserved("AFKfoodTimesDum2") : Ht.h.AFKfoodTimesDum2,
+                        										jt = b.engine.getGameAttribute("DummyMap"),
+                        										qt = null != e.Cooldown ? jt.getReserved("Cooldown") : jt.h.Cooldown,
+                        										Kt = parseNum(qt),
+                        										$t = b.engine.getGameAttribute("DummyMap"),
+                        										en = Kt * H._customBlock_FoodBonuses(g.string(null != e.Effect ? $t.getReserved("Effect") : $t.h.Effect) + "CooldownBonus"),
+                        										tn = b.engine.getGameAttribute("EquipmentQuantity")[2][T];
+                        									Jt.push(en * parseNum(tn));
+                        									var nn = b.engine.getGameAttribute("DNSM");
+                        									(null != e.AFKfoodTimesDum2 ? nn.getReserved("AFKfoodTimesDum2") : nn.h.AFKfoodTimesDum2).push(T);
+                        									var sn = b.engine.getGameAttribute("DNSM"),
+                        										an = null != e.AFKfoodTimesDum2 ? sn.getReserved("AFKfoodTimesDum2") : sn.h.AFKfoodTimesDum2,
+                        										rn = b.engine.getGameAttribute("DNSM"),
+                        										An = null != e.AFKfooddmgperHrLeftDN ? rn.getReserved("AFKfooddmgperHrLeftDN") : rn.h.AFKfooddmgperHrLeftDN,
+                        										ln = parseNum(An),
+                        										on = b.engine.getGameAttribute("DummyMap"),
+                        										un = null != e.Amount ? on.getReserved("Amount") : on.h.Amount,
+                        										gn = parseNum(un),
+                        										mn = b.engine.getGameAttribute("DummyMap"),
+                        										dn = Math.round(ln / Math.min(gn * H._customBlock_FoodBonuses(g.string(null != e.Effect ? mn.getReserved("Effect") : mn.h.Effect) + "EffectBonus"), H._customBlock_PlayerHPmax())),
+                        										cn = b.engine.getGameAttribute("DummyMap"),
+                        										pn = null != e.Cooldown ? cn.getReserved("Cooldown") : cn.h.Cooldown,
+                        										hn = parseNum(pn),
+                        										bn = b.engine.getGameAttribute("DummyMap"),
+                        										fn = a / Math.max(hn * H._customBlock_FoodBonuses(g.string(null != e.Effect ? bn.getReserved("Effect") : bn.h.Effect) + "CooldownBonus"), 1),
+                        										yn = b.engine.getGameAttribute("EquipmentQuantity")[2][T];
+                        									an.push(Math.min(dn, Math.min(fn, parseNum(yn))));
+                        									var Rn = b.engine.getGameAttribute("DNSM"),
+                        										vn = null != e.AFKfoodTimes ? Rn.getReserved("AFKfoodTimes") : Rn.h.AFKfoodTimes,
+                        										Fn = b.engine.getGameAttribute("DNSM");
+                        									vn.push(null != e.AFKfoodTimesDum2 ? Fn.getReserved("AFKfoodTimesDum2") : Fn.h.AFKfoodTimesDum2);
+                        									var Nn = b.engine.getGameAttribute("DNSM"),
+                        										_n = b.engine.getGameAttribute("DNSM"),
+                        										In = null != e.AFKfooddmgperHrLeftDN ? _n.getReserved("AFKfooddmgperHrLeftDN") : _n.h.AFKfooddmgperHrLeftDN,
+                        										Dn = parseNum(In),
+                        										En = b.engine.getGameAttribute("DummyMap"),
+                        										Sn = null != e.Cooldown ? En.getReserved("Cooldown") : En.h.Cooldown,
+                        										Gn = parseNum(Sn),
+                        										Tn = b.engine.getGameAttribute("DummyMap"),
+                        										Un = a / Math.max(Gn * H._customBlock_FoodBonuses(g.string(null != e.Effect ? Tn.getReserved("Effect") : Tn.h.Effect) + "CooldownBonus"), 1),
+                        										Mn = b.engine.getGameAttribute("EquipmentQuantity")[2][T],
+                        										Vn = Math.min(Un, parseNum(Mn)),
+                        										Cn = b.engine.getGameAttribute("DummyMap"),
+                        										Bn = null != e.Amount ? Cn.getReserved("Amount") : Cn.h.Amount,
+                        										Pn = parseNum(Bn),
+                        										On = b.engine.getGameAttribute("DummyMap"),
+                        										wn = Nn,
+                        										kn = Dn - Vn * Pn * H._customBlock_FoodBonuses(g.string(null != e.Effect ? On.getReserved("Effect") : On.h.Effect) + "EffectBonus");
+                        									null != e.AFKfooddmgperHrLeftDN ? wn.setReserved("AFKfooddmgperHrLeftDN", kn) : (wn.h.AFKfooddmgperHrLeftDN = kn);
+                        								} else {
+                        									var xn = b.engine.getGameAttribute("DNSM");
+                        									(null != e.AFKfoodTimesDum2 ? xn.getReserved("AFKfoodTimesDum2") : xn.h.AFKfoodTimesDum2).push(-1);
+                        									var Qn = b.engine.getGameAttribute("DNSM");
+                        									(null != e.AFKfoodTimesDum2 ? Qn.getReserved("AFKfoodTimesDum2") : Qn.h.AFKfoodTimesDum2).push(T);
+                        									var Xn = b.engine.getGameAttribute("DNSM");
+                        									(null != e.AFKfoodTimesDum2 ? Xn.getReserved("AFKfoodTimesDum2") : Xn.h.AFKfoodTimesDum2).push(0);
+                        									var Ln = b.engine.getGameAttribute("DNSM"),
+                        										zn = null != e.AFKfoodTimes ? Ln.getReserved("AFKfoodTimes") : Ln.h.AFKfoodTimes,
+                        										Yn = b.engine.getGameAttribute("DNSM");
+                        									zn.push(null != e.AFKfoodTimesDum2 ? Yn.getReserved("AFKfoodTimesDum2") : Yn.h.AFKfoodTimesDum2);
+                        								}
+                        							} else {
+                        								var Wn = b.engine.getGameAttribute("DNSM");
+                        								(null != e.AFKfoodTimesDum2 ? Wn.getReserved("AFKfoodTimesDum2") : Wn.h.AFKfoodTimesDum2).push(-1);
+                        								var Zn = b.engine.getGameAttribute("DNSM");
+                        								(null != e.AFKfoodTimesDum2 ? Zn.getReserved("AFKfoodTimesDum2") : Zn.h.AFKfoodTimesDum2).push(T);
+                        								var Hn = b.engine.getGameAttribute("DNSM");
+                        								(null != e.AFKfoodTimesDum2 ? Hn.getReserved("AFKfoodTimesDum2") : Hn.h.AFKfoodTimesDum2).push(0);
+                        								var Jn = b.engine.getGameAttribute("DNSM"),
+                        									jn = null != e.AFKfoodTimes ? Jn.getReserved("AFKfoodTimes") : Jn.h.AFKfoodTimes,
+                        									qn = b.engine.getGameAttribute("DNSM");
+                        								jn.push(null != e.AFKfoodTimesDum2 ? qn.getReserved("AFKfoodTimesDum2") : qn.h.AFKfoodTimesDum2);
+                        							}
+                        						}
+                        					}
+                        				}
+                        			}
+                        		}
+                        		var Kn = b.engine.getGameAttribute("DNSM"),
+                        			$n = [];
+                        		null != e.AFKfoodTimesDum ? Kn.setReserved("AFKfoodTimesDum", $n) : (Kn.h.AFKfoodTimesDum = $n);
+                        		for (var es = 0, ts = b.engine.getGameAttribute("DNSM"), ns = (null != e.AFKfoodTimes ? ts.getReserved("AFKfoodTimes") : ts.h.AFKfoodTimes).length; es < ns;) {
+                        			var ss = es++,
+                        				as = b.engine.getGameAttribute("DNSM"),
+                        				rs = (null != e.AFKfoodTimes ? as.getReserved("AFKfoodTimes") : as.h.AFKfoodTimes)[ss][0];
+                        			if (0 < parseNum(rs)) {
+                        				var As = b.engine.getGameAttribute("DNSM"),
+                        					ls = null != e.AFKfoodTimesDum ? As.getReserved("AFKfoodTimesDum") : As.h.AFKfoodTimesDum,
+                        					os = b.engine.getGameAttribute("DNSM");
+                        				ls.push((null != e.AFKfoodTimes ? os.getReserved("AFKfoodTimes") : os.h.AFKfoodTimes)[ss]);
+                        			}
+                        		}
+                        		var is = b.engine.getGameAttribute("DNSM"),
+                        			us = b.engine.getGameAttribute("DNSM"),
+                        			gs = null != e.AFKfoodTimesDum ? us.getReserved("AFKfoodTimesDum") : us.h.AFKfoodTimesDum;
+                        		null != e.AFKfoodTimes ? is.setReserved("AFKfoodTimes", gs) : (is.h.AFKfoodTimes = gs);
+                        		for (var ms = 0; 20 > ms;) {
+                        			ms++;
+                        			for (var ds = 0, cs = b.engine.getGameAttribute("DNSM"), ps = (null != e.AFKfoodTimes ? cs.getReserved("AFKfoodTimes") : cs.h.AFKfoodTimes).length; ds < ps;) {
+                        				var hs = ds++;
+                        				if (0 != hs) var bs = b.engine.getGameAttribute("DNSM"),
+                        					fs = (null != e.AFKfoodTimes ? bs.getReserved("AFKfoodTimes") : bs.h.AFKfoodTimes)[hs][0],
+                        					ys = parseNum(fs),
+                        					Rs = b.engine.getGameAttribute("DNSM"),
+                        					vs = null != e.AFKfoodTimesSortDN ? Rs.getReserved("AFKfoodTimesSortDN") : Rs.h.AFKfoodTimesSortDN,
+                        					Fs = ys < parseNum(vs);
+                        				else Fs = !0;
+                        				if (Fs) {
+                        					var Ns = b.engine.getGameAttribute("DNSM");
+                        					null != e.AFKfoodTimesSortDN2 ? Ns.setReserved("AFKfoodTimesSortDN2", hs) : (Ns.h.AFKfoodTimesSortDN2 = hs);
+                        					var _s = b.engine.getGameAttribute("DNSM"),
+                        						Is = b.engine.getGameAttribute("DNSM"),
+                        						Ds = _s,
+                        						Es = (null != e.AFKfoodTimes ? Is.getReserved("AFKfoodTimes") : Is.h.AFKfoodTimes)[hs][0];
+                        					null != e.AFKfoodTimesSortDN ? Ds.setReserved("AFKfoodTimesSortDN", Es) : (Ds.h.AFKfoodTimesSortDN = Es);
+                        					var Ss = b.engine.getGameAttribute("DNSM"),
+                        						Gs = b.engine.getGameAttribute("DNSM"),
+                        						Ts = Ss,
+                        						Us = (null != e.AFKfoodTimes ? Gs.getReserved("AFKfoodTimes") : Gs.h.AFKfoodTimes)[hs];
+                        					null != e.AFKfoodTimesSortDum3 ? Ts.setReserved("AFKfoodTimesSortDum3", Us) : (Ts.h.AFKfoodTimesSortDum3 = Us);
+                        				}
+                        				var Ms = b.engine.getGameAttribute("DNSM");
+                        				if (hs + 1 == (null != e.AFKfoodTimes ? Ms.getReserved("AFKfoodTimes") : Ms.h.AFKfoodTimes).length) {
+                        					var Vs = b.engine.getGameAttribute("DNSM"),
+                        						Cs = null != e.AFKfoodTimesFINAL ? Vs.getReserved("AFKfoodTimesFINAL") : Vs.h.AFKfoodTimesFINAL,
+                        						Bs = b.engine.getGameAttribute("DNSM");
+                        					Cs.push(null != e.AFKfoodTimesSortDum3 ? Bs.getReserved("AFKfoodTimesSortDum3") : Bs.h.AFKfoodTimesSortDum3);
+                        					var Ps = b.engine.getGameAttribute("DNSM"),
+                        						Os = null != e.AFKfoodTimes ? Ps.getReserved("AFKfoodTimes") : Ps.h.AFKfoodTimes,
+                        						ws = b.engine.getGameAttribute("DNSM"),
+                        						ks = null != e.AFKfoodTimesSortDN2 ? ws.getReserved("AFKfoodTimesSortDN2") : ws.h.AFKfoodTimesSortDN2;
+                        					Os.splice(0 | parseNum(ks), 1);
+                        				}
+                        			}
+                        		}
+                        		var xs = b.engine.getGameAttribute("DNSM");
+                        		(null != e.AFKfoodConsumeWARNING ? xs.getReserved("AFKfoodConsumeWARNING") : xs.h.AFKfoodConsumeWARNING).push(
+                        			(a / 3600) * t._customBlock_HourlyKillRate("Fighting") * (t._customBlock_HourlyKillRate("SurvivabilityPCT") / 100));
+                        		var Qs = b.engine.getGameAttribute("DNSM");
+                        		if (0 < (null != e.AFKfoodTimesFINAL ? Qs.getReserved("AFKfoodTimesFINAL") : Qs.h.AFKfoodTimesFINAL).length) {
+                        			for (var Xs = 0, Ls = b.engine.getGameAttribute("DNSM"), zs = (null != e.AFKfoodTimesFINAL ? Ls.getReserved("AFKfoodTimesFINAL") : Ls.h.AFKfoodTimesFINAL).length; Xs < zs;) {
+                        				var Ys = Xs++,
+                        					Ws = b.engine.getGameAttribute("DNSM"),
+                        					Zs = (null != e.AFKfoodTimesFINAL ? Ws.getReserved("AFKfoodTimesFINAL") : Ws.h.AFKfoodTimesFINAL)[Ys][0];
+                        				if (!(a > parseNum(Zs))) {
+                        					if (0 == Ys) {
+                        						var Hs = b.engine.getGameAttribute("DNSM"),
+                        							Js = b.engine.getGameAttribute("DNSM"),
+                        							js = null != e.AFKfoodTimesSortDNreturn ? Js.getReserved("AFKfoodTimesSortDNreturn") : Js.h.AFKfoodTimesSortDNreturn,
+                        							qs = Hs,
+                        							Ks = parseNum(js) + (a / 3600) * t._customBlock_HourlyKillRate("Fighting") * (t._customBlock_HourlyKillRate("SurvivabilityPCT") / 100);
+                        						null != e.AFKfoodTimesSortDNreturn ? qs.setReserved("AFKfoodTimesSortDNreturn", Ks) : (qs.h.AFKfoodTimesSortDNreturn = Ks);
+                        					} else {
+                        						var $s = b.engine.getGameAttribute("DNSM"),
+                        							ea = b.engine.getGameAttribute("DNSM"),
+                        							ta = null != e.AFKfoodTimesSortDNreturn ? ea.getReserved("AFKfoodTimesSortDNreturn") : ea.h.AFKfoodTimesSortDNreturn,
+                        							na = parseNum(ta),
+                        							sa = b.engine.getGameAttribute("DNSM"),
+                        							aa = (null != e.AFKfoodTimesFINAL ? sa.getReserved("AFKfoodTimesFINAL") : sa.h.AFKfoodTimesFINAL)[Ys - 1][0],
+                        							ra = $s,
+                        							Aa = na + ((a - parseNum(aa)) / 3600) * t._customBlock_HourlyKillRate("Fighting") * (t._customBlock_HourlyKillRate("SurvivabilityPCT") / 100);
+                        						null != e.AFKfoodTimesSortDNreturn ? ra.setReserved("AFKfoodTimesSortDNreturn", Aa) : (ra.h.AFKfoodTimesSortDNreturn = Aa);
+                        					}
+                        					var la = b.engine.getGameAttribute("DNSM");
+                        					if (-1 != (null != e.AFKfoodTimesFINAL ? la.getReserved("AFKfoodTimesFINAL") : la.h.AFKfoodTimesFINAL)[Ys][2]) {
+                        						var oa = b.engine.getGameAttribute("DNSM");
+                        						if (1 == (null != e.AFKfoodTimesSortDN4 ? oa.getReserved("AFKfoodTimesSortDN4") : oa.h.AFKfoodTimesSortDN4)) {
+                        							var ia = b.engine.getGameAttribute("EquipmentQuantity")[2],
+                        								ua = b.engine.getGameAttribute("DNSM"),
+                        								ga = (null != e.AFKfoodTimesFINAL ? ua.getReserved("AFKfoodTimesFINAL") : ua.h.AFKfoodTimesFINAL)[Ys][1],
+                        								ma = parseNum(ga),
+                        								da = b.engine.getGameAttribute("EquipmentQuantity")[2],
+                        								ca = b.engine.getGameAttribute("DNSM"),
+                        								pa = (null != e.AFKfoodTimesFINAL ? ca.getReserved("AFKfoodTimesFINAL") : ca.h.AFKfoodTimesFINAL)[Ys][1],
+                        								ha = da[0 | parseNum(pa)],
+                        								ba = parseNum(ha),
+                        								fa = b.engine.getGameAttribute("DNSM"),
+                        								ya = (null != e.AFKfoodTimesFINAL ? fa.getReserved("AFKfoodTimesFINAL") : fa.h.AFKfoodTimesFINAL)[Ys][2],
+                        								Ra = parseNum(ya),
+                        								va = b.engine.getGameAttribute("DNSM"),
+                        								Fa = (null != e.AFKfoodTimesFINAL ? va.getReserved("AFKfoodTimesFINAL") : va.h.AFKfoodTimesFINAL)[Ys][0],
+                        								Na = parseNum(Fa),
+                        								_a = b.engine.getGameAttribute("DNSM"),
+                        								Ia = (null != e.AFKfoodTimesFINAL ? _a.getReserved("AFKfoodTimesFINAL") : _a.h.AFKfoodTimesFINAL)[Ys][0],
+                        								Da = parseNum(Ia),
+                        								Ea = b.engine.getGameAttribute("EquipmentQuantity")[2],
+                        								Sa = b.engine.getGameAttribute("DNSM"),
+                        								Ga = (null != e.AFKfoodTimesFINAL ? Sa.getReserved("AFKfoodTimesFINAL") : Sa.h.AFKfoodTimesFINAL)[Ys][1],
+                        								Ta = Ea[0 | parseNum(Ga)];
+                        							ia[0 | ma] = Math.round(Math.max(ba - Ra,
+                        								((Na - a) / Da) * parseNum(Ta)));
+                        						}
+                        					} else {
+                        						var Ua = b.engine.getGameAttribute("DNSM");
+                        						if (1 == (null != e.AFKfoodTimesSortDN4 ? Ua.getReserved("AFKfoodTimesSortDN4") : Ua.h.AFKfoodTimesSortDN4)) {
+                        							var Ma = b.engine.getGameAttribute("EquipmentQuantity")[2],
+                        								Va = b.engine.getGameAttribute("DNSM"),
+                        								Ca = (null != e.AFKfoodTimesFINAL ? Va.getReserved("AFKfoodTimesFINAL") : Va.h.AFKfoodTimesFINAL)[Ys][1],
+                        								Ba = parseNum(Ca),
+                        								Pa = b.engine.getGameAttribute("DNSM"),
+                        								Oa = (null != e.AFKfoodTimesFINAL ? Pa.getReserved("AFKfoodTimesFINAL") : Pa.h.AFKfoodTimesFINAL)[Ys][0],
+                        								wa = parseNum(Oa),
+                        								ka = b.engine.getGameAttribute("DNSM"),
+                        								xa = (null != e.AFKfoodTimesFINAL ? ka.getReserved("AFKfoodTimesFINAL") : ka.h.AFKfoodTimesFINAL)[Ys][0],
+                        								Qa = parseNum(xa),
+                        								Xa = b.engine.getGameAttribute("EquipmentQuantity")[2],
+                        								La = b.engine.getGameAttribute("DNSM"),
+                        								za = (null != e.AFKfoodTimesFINAL ? La.getReserved("AFKfoodTimesFINAL") : La.h.AFKfoodTimesFINAL)[Ys][1],
+                        								Ya = Xa[0 | parseNum(za)];
+                        							Ma[0 | Ba] = Math.round(
+                        								((wa - a) / Qa) * parseNum(Ya));
+                        						}
+                        					}
+                        					break;
+                        				}
+                        				if (0 == Ys) {
+                        					var Wa = b.engine.getGameAttribute("DNSM"),
+                        						Za = b.engine.getGameAttribute("DNSM"),
+                        						Ha = null != e.AFKfoodTimesSortDNreturn ? Za.getReserved("AFKfoodTimesSortDNreturn") : Za.h.AFKfoodTimesSortDNreturn,
+                        						Ja = parseNum(Ha),
+                        						ja = b.engine.getGameAttribute("DNSM"),
+                        						qa = (null != e.AFKfoodTimesFINAL ? ja.getReserved("AFKfoodTimesFINAL") : ja.h.AFKfoodTimesFINAL)[Ys][0],
+                        						Ka = Wa,
+                        						$a = Ja + (parseNum(qa) / 3600) * t._customBlock_HourlyKillRate("Fighting") * (t._customBlock_HourlyKillRate("SurvivabilityPCT") / 100);
+                        					null != e.AFKfoodTimesSortDNreturn ? Ka.setReserved("AFKfoodTimesSortDNreturn", $a) : (Ka.h.AFKfoodTimesSortDNreturn = $a);
+                        				} else {
+                        					var er = b.engine.getGameAttribute("DNSM"),
+                        						tr = b.engine.getGameAttribute("DNSM"),
+                        						nr = null != e.AFKfoodTimesSortDNreturn ? tr.getReserved("AFKfoodTimesSortDNreturn") : tr.h.AFKfoodTimesSortDNreturn,
+                        						sr = parseNum(nr),
+                        						ar = b.engine.getGameAttribute("DNSM"),
+                        						rr = (null != e.AFKfoodTimesFINAL ? ar.getReserved("AFKfoodTimesFINAL") : ar.h.AFKfoodTimesFINAL)[Ys][0],
+                        						Ar = parseNum(rr),
+                        						lr = b.engine.getGameAttribute("DNSM"),
+                        						or = (null != e.AFKfoodTimesFINAL ? lr.getReserved("AFKfoodTimesFINAL") : lr.h.AFKfoodTimesFINAL)[Ys - 1][0],
+                        						ir = er,
+                        						ur = sr + ((Ar - parseNum(or)) / 3600) * t._customBlock_HourlyKillRate("Fighting") * (t._customBlock_HourlyKillRate("SurvivabilityPCT") / 100);
+                        					null != e.AFKfoodTimesSortDNreturn ? ir.setReserved("AFKfoodTimesSortDNreturn", ur) : (ir.h.AFKfoodTimesSortDNreturn = ur);
+                        				}
+                        				var gr = b.engine.getGameAttribute("EquipmentQuantity")[2],
+                        					mr = b.engine.getGameAttribute("DNSM"),
+                        					dr = (null != e.AFKfoodTimesFINAL ? mr.getReserved("AFKfoodTimesFINAL") : mr.h.AFKfoodTimesFINAL)[Ys][1],
+                        					cr = gr[0 | parseNum(dr)],
+                        					pr = parseNum(cr),
+                        					hr = b.engine.getGameAttribute("DNSM"),
+                        					br = (null != e.AFKfoodTimesFINAL ? hr.getReserved("AFKfoodTimesFINAL") : hr.h.AFKfoodTimesFINAL)[Ys][2];
+                        				if (pr <= parseNum(br)) var fr = !0;
+                        				else {
+                        					var yr = b.engine.getGameAttribute("DNSM");
+                        					fr = -1 == (null != e.AFKfoodTimesFINAL ? yr.getReserved("AFKfoodTimesFINAL") : yr.h.AFKfoodTimesFINAL)[Ys][2];
+                        				}
+                        				if (fr) {
+                        					var Rr = b.engine.getGameAttribute("DNSM");
+                        					if (1 == (null != e.AFKfoodTimesSortDN4 ? Rr.getReserved("AFKfoodTimesSortDN4") : Rr.h.AFKfoodTimesSortDN4)) {
+                        						var vr = b.engine.getGameAttribute("EquipmentQuantity")[2],
+                        							Fr = b.engine.getGameAttribute("DNSM"),
+                        							Nr = (null != e.AFKfoodTimesFINAL ? Fr.getReserved("AFKfoodTimesFINAL") : Fr.h.AFKfoodTimesFINAL)[Ys][1];
+                        						if (
+                        							((vr[0 | parseNum(Nr)] = 0), 1 == b.engine.getGameAttribute("Lab")[16][1])) var _r = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_JustStorageOWNED"),
+                        							Ir = b.engine.getGameAttribute("EquipmentOrder")[2],
+                        							Dr = b.engine.getGameAttribute("DNSM"),
+                        							Er = (null != e.AFKfoodTimesFINAL ? Dr.getReserved("AFKfoodTimesFINAL") : Dr.h.AFKfoodTimesFINAL)[Ys][1],
+                        							Sr = "" + g.string(Ir[0 | parseNum(Er)]),
+                        							Gr = _r,
+                        							Tr = null != e[Sr] ? Gr.getReserved(Sr) : Gr.h[Sr],
+                        							Ur = 0 < parseNum(Tr);
+                        						else Ur = !1;
+                        						if (Ur) {
+                        							var Mr = b.engine.getGameAttribute("EquipmentQuantity")[2],
+                        								Vr = b.engine.getGameAttribute("DNSM"),
+                        								Cr = (null != e.AFKfoodTimesFINAL ? Vr.getReserved("AFKfoodTimesFINAL") : Vr.h.AFKfoodTimesFINAL)[Ys][1],
+                        								Br = parseNum(Cr),
+                        								Pr = H._customBlock_MaxCapacity("cFood"),
+                        								Or = b.engine.getGameAttribute("PixelHelperActor")[5].getValue("ActorEvents_232", "_JustStorageOWNED"),
+                        								wr = b.engine.getGameAttribute("EquipmentOrder")[2],
+                        								kr = b.engine.getGameAttribute("DNSM"),
+                        								xr = (null != e.AFKfoodTimesFINAL ? kr.getReserved("AFKfoodTimesFINAL") : kr.h.AFKfoodTimesFINAL)[Ys][1],
+                        								Qr = "" + g.string(wr[0 | parseNum(xr)]),
+                        								Xr = Or,
+                        								Lr = null != e[Qr] ? Xr.getReserved(Qr) : Xr.h[Qr];
+                        							Mr[0 | Br] = Math.min(Pr, parseNum(Lr));
+                        							var zr = b.engine.getGameAttribute("EquipmentOrder")[2],
+                        								Yr = b.engine.getGameAttribute("DNSM"),
+                        								Wr = (null != e.AFKfoodTimesFINAL ? Yr.getReserved("AFKfoodTimesFINAL") : Yr.h.AFKfoodTimesFINAL)[Ys][1],
+                        								Zr = "" + g.string(zr[0 | parseNum(Wr)]),
+                        								Hr = b.engine.getGameAttribute("EquipmentQuantity")[2],
+                        								Jr = b.engine.getGameAttribute("DNSM"),
+                        								jr = (null != e.AFKfoodTimesFINAL ? Jr.getReserved("AFKfoodTimesFINAL") : Jr.h.AFKfoodTimesFINAL)[Ys][1],
+                        								qr = Hr[0 | parseNum(jr)];
+                        							A._customBlock_removeitems(Zr, parseNum(qr), "Storage");
+                        						} else {
+                        							var Kr = b.engine.getGameAttribute("EquipmentOrder")[2],
+                        								$r = b.engine.getGameAttribute("DNSM"),
+                        								eA = (null != e.AFKfoodTimesFINAL ? $r.getReserved("AFKfoodTimesFINAL") : $r.h.AFKfoodTimesFINAL)[Ys][1];
+                        							Kr[0 | parseNum(eA)] = "Blank";
+                        						}
+                        					}
+                        				} else {
+                        					var tA = b.engine.getGameAttribute("DNSM");
+                        					if (1 == (null != e.AFKfoodTimesSortDN4 ? tA.getReserved("AFKfoodTimesSortDN4") : tA.h.AFKfoodTimesSortDN4)) {
+                        						var nA = b.engine.getGameAttribute("EquipmentQuantity")[2],
+                        							sA = b.engine.getGameAttribute("DNSM"),
+                        							aA = (null != e.AFKfoodTimesFINAL ? sA.getReserved("AFKfoodTimesFINAL") : sA.h.AFKfoodTimesFINAL)[Ys][1],
+                        							rA = parseNum(aA),
+                        							AA = b.engine.getGameAttribute("EquipmentQuantity")[2],
+                        							lA = b.engine.getGameAttribute("DNSM"),
+                        							oA = (null != e.AFKfoodTimesFINAL ? lA.getReserved("AFKfoodTimesFINAL") : lA.h.AFKfoodTimesFINAL)[Ys][1],
+                        							iA = AA[0 | parseNum(oA)],
+                        							uA = parseNum(iA),
+                        							gA = b.engine.getGameAttribute("DNSM"),
+                        							mA = (null != e.AFKfoodTimesFINAL ? gA.getReserved("AFKfoodTimesFINAL") : gA.h.AFKfoodTimesFINAL)[Ys][2];
+                        						nA[0 | rA] = Math.round(uA - parseNum(mA));
+                        					}
+                        				}
+                        			}
+                        			var dA = b.engine.getGameAttribute("DNSM"),
+                        				cA = null != e.AFKfoodTimesFINAL ? dA.getReserved("AFKfoodTimesFINAL") : dA.h.AFKfoodTimesFINAL,
+                        				pA = b.engine.getGameAttribute("DNSM"),
+                        				hA = cA[Math.round((null != e.AFKfoodTimesFINAL ? pA.getReserved("AFKfoodTimesFINAL") : pA.h.AFKfoodTimesFINAL).length - 1)][0];
+                        			if (a > parseNum(hA)) {
+                        				var bA = b.engine.getGameAttribute("DNSM"),
+                        					fA = b.engine.getGameAttribute("DNSM"),
+                        					yA = null != e.AFKfoodTimesSortDNreturn ? fA.getReserved("AFKfoodTimesSortDNreturn") : fA.h.AFKfoodTimesSortDNreturn,
+                        					RA = parseNum(yA),
+                        					vA = b.engine.getGameAttribute("DNSM"),
+                        					FA = null != e.AFKfoodTimesFINAL ? vA.getReserved("AFKfoodTimesFINAL") : vA.h.AFKfoodTimesFINAL,
+                        					NA = b.engine.getGameAttribute("DNSM"),
+                        					_A = FA[Math.round((null != e.AFKfoodTimesFINAL ? NA.getReserved("AFKfoodTimesFINAL") : NA.h.AFKfoodTimesFINAL).length - 1)][0],
+                        					IA = RA + ((a - parseNum(_A)) / 3600) * t._customBlock_HourlyKillRate("Fighting") * (t._customBlock_HourlyKillRate("SurvivabilityPCT") / 100);
+                        				null != e.AFKfoodTimesSortDNreturn ? bA.setReserved("AFKfoodTimesSortDNreturn", IA) : (bA.h.AFKfoodTimesSortDNreturn = IA);
+                        			}
+                        		} else {
+                        			var DA = b.engine.getGameAttribute("DNSM"),
+                        				EA = b.engine.getGameAttribute("DNSM"),
+                        				SA = null != e.AFKfoodTimesSortDNreturn ? EA.getReserved("AFKfoodTimesSortDNreturn") : EA.h.AFKfoodTimesSortDNreturn,
+                        				GA = parseNum(SA) + (a / 3600) * t._customBlock_HourlyKillRate("Fighting") * (t._customBlock_HourlyKillRate("SurvivabilityPCT") / 100);
+                        			null != e.AFKfoodTimesSortDNreturn ? DA.setReserved("AFKfoodTimesSortDNreturn", GA) : (DA.h.AFKfoodTimesSortDNreturn = GA);
+                        		}
+                        		var TA = b.engine.getGameAttribute("DNSM"),
+                        			UA = null != e.AFKfoodConsumeWARNING ? TA.getReserved("AFKfoodConsumeWARNING") : TA.h.AFKfoodConsumeWARNING,
+                        			MA = b.engine.getGameAttribute("DNSM");
+                        		UA.push(null != e.AFKfoodTimesSortDNreturn ? MA.getReserved("AFKfoodTimesSortDNreturn") : MA.h.AFKfoodTimesSortDNreturn);
+                        		var VA = b.engine.getGameAttribute("DNSM");
+                        		return null != e.AFKfoodTimesSortDNreturn ? VA.getReserved("AFKfoodTimesSortDNreturn") : VA.h.AFKfoodTimesSortDNreturn;
+                        	}

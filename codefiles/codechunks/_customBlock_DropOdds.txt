@@ -1,0 +1,20 @@
+                        (t._customBlock_DropOdds = function(t, s) {
+                        		var a = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			r = h.randomFloat();
+                        		return (null != e.ItemDropFloat ? a.setReserved("ItemDropFloat", r) : (a.h.ItemDropFloat = r),
+                        			(a = b.engine.getGameAttribute("DNSM")),
+                        			(s *= H._customBlock_TotalStats("Drop_Rarity")), null != e.ChanceREALdrprt ? a.setReserved("ChanceREALdrprt", s) : (a.h.ChanceREALdrprt = s),
+                        			(s = b.engine.getGameAttribute("DNSM")), 2 < (null == (s = null != e.ChanceREALdrprt ? s.getReserved("ChanceREALdrprt") : s.h.ChanceREALdrprt) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) * t ? ((s = b.engine.getGameAttribute("DNSM")),
+                        				(s = null != e.ChanceREALdrprt ? s.getReserved("ChanceREALdrprt") : s.h.ChanceREALdrprt), Math.round(parseNum(s) * t)) : ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(s = null == (s = null != e.ItemDropFloat ? s.getReserved("ItemDropFloat") : s.h.ItemDropFloat) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null != e.ChanceREALdrprt ? a.getReserved("ChanceREALdrprt") : a.h.ChanceREALdrprt), s < Math.pow(1 - parseNum(a), t) ? 0 : ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(s = null == (s = null != e.ItemDropFloat ? s.getReserved("ItemDropFloat") : s.h.ItemDropFloat) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        					(a = b.engine.getGameAttribute("DNSM")),
+                        					(a = null == (a = null != e.ChanceREALdrprt ? a.getReserved("ChanceREALdrprt") : a.h.ChanceREALdrprt) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        					(r = b.engine.getGameAttribute("DNSM")),
+                        					(r = null != e.ChanceREALdrprt ? r.getReserved("ChanceREALdrprt") : r.h.ChanceREALdrprt),
+                        					(a = a * Math.pow(1 - parseNum(r), t - 1) * t),
+                        					(r = b.engine.getGameAttribute("DNSM")),
+                        					(r = null != e.ChanceREALdrprt ? r.getReserved("ChanceREALdrprt") : r.h.ChanceREALdrprt), s < a + Math.pow(1 - parseNum(r), t) ? 1 : 2)));
+                        	}

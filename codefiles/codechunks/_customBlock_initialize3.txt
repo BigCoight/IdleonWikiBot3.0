@@ -1,0 +1,69 @@
+                        (U._customBlock_initialize3 = function() {
+                        		if (0 == b.engine.getGameAttribute("Breeding").length) {
+                        			var t = b.engine.gameAttributes,
+                        				n = [];
+                        			for (null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n), t = 0; 20 > t;) 3 > t++ ? b.engine.getGameAttribute("DummyList2").push(1) : b.engine.getGameAttribute("DummyList2").push(0);
+                        			for (b.engine.getGameAttribute("Breeding").push(b.engine.getGameAttribute("DummyList2")), t = b.engine.gameAttributes, n = [], null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n), b.engine.getGameAttribute("DummyList2").push(1), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("Breeding").push(b.engine.getGameAttribute("DummyList2")), t = b.engine.gameAttributes, n = [], null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("Breeding").push(b.engine.getGameAttribute("DummyList2")), t = b.engine.gameAttributes, n = [], null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("Breeding").push(b.engine.getGameAttribute("DummyList2")), t = 0; 8 > t;) {
+                        				var s = t++;
+                        				for (n = b.engine.gameAttributes, null != e.DummyNumber2 ? n.setReserved("DummyNumber2", s) : (n.h.DummyNumber2 = s), n = b.engine.gameAttributes, s = [], null != e.DummyList2 ? n.setReserved("DummyList2", s) : (n.h.DummyList2 = s), n = 0, s = b.engine.getGameAttribute("CustomLists"), s = (null != e.PetStats ? s.getReserved("PetStats") : s.h.PetStats)[0 | b.engine.getGameAttribute("DummyNumber2")].length; n < s;) n++, b.engine.getGameAttribute("DummyList2").push(0);
+                        				b.engine.getGameAttribute("Breeding").push(b.engine.getGameAttribute("DummyList2"));
+                        			}
+                        			for (t = b.engine.gameAttributes, n = [], null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("Breeding").push(b.engine.getGameAttribute("DummyList2")), t = 0; 8 > t;) {
+                        				for (s = t++, n = b.engine.gameAttributes, null != e.DummyNumber2 ? n.setReserved("DummyNumber2", s) : (n.h.DummyNumber2 = s), n = b.engine.gameAttributes, s = [], null != e.DummyList2 ? n.setReserved("DummyList2", s) : (n.h.DummyList2 = s), n = 0, s = b.engine.getGameAttribute("CustomLists"), s = (null != e.PetStats ? s.getReserved("PetStats") : s.h.PetStats)[0 | b.engine.getGameAttribute("DummyNumber2")].length; n < s;) n++, b.engine.getGameAttribute("DummyList2").push(0);
+                        				b.engine.getGameAttribute("Breeding").push(b.engine.getGameAttribute("DummyList2"));
+                        			}
+                        			for (t = b.engine.gameAttributes, n = [], null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("Breeding").push(b.engine.getGameAttribute("DummyList2")), t = 0; 8 > t;) {
+                        				for (s = t++, n = b.engine.gameAttributes, null != e.DummyNumber2 ? n.setReserved("DummyNumber2", s) : (n.h.DummyNumber2 = s), n = b.engine.gameAttributes, s = [], null != e.DummyList2 ? n.setReserved("DummyList2", s) : (n.h.DummyList2 = s), n = 0, s = b.engine.getGameAttribute("CustomLists"), s = (null != e.PetStats ? s.getReserved("PetStats") : s.h.PetStats)[0 | b.engine.getGameAttribute("DummyNumber2")].length; n < s;) n++, b.engine.getGameAttribute("DummyList2").push(0);
+                        				b.engine.getGameAttribute("Breeding").push(b.engine.getGameAttribute("DummyList2"));
+                        			}
+                        			(t = b.engine.gameAttributes),
+                        			(n = []),
+                        			null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("Breeding").push(b.engine.getGameAttribute("DummyList2"));
+                        		}
+                        		for (t = 0; 8 > t;)
+                        			if (
+                        				((s = t++),
+                        					(n = b.engine.gameAttributes), null != e.DummyNumber2 ? n.setReserved("DummyNumber2", s) : (n.h.DummyNumber2 = s),
+                        					(n = b.engine.getGameAttribute("CustomLists")), 0 < (null != e.PetStats ? n.getReserved("PetStats") : n.h.PetStats)[0 | b.engine.getGameAttribute("DummyNumber2")].length - b.engine.getGameAttribute("Breeding")[(b.engine.getGameAttribute("DummyNumber2") + 4) | 0].length))
+                        				for (n = 0, s = b.engine.getGameAttribute("CustomLists"), s = (null != e.PetStats ? s.getReserved("PetStats") : s.h.PetStats)[0 | b.engine.getGameAttribute("DummyNumber2")].length - b.engine.getGameAttribute("Breeding")[(b.engine.getGameAttribute("DummyNumber2") + 4) | 0].length; n < s;) n++, b.engine.getGameAttribute("Breeding")[(b.engine.getGameAttribute("DummyNumber2") + 4) | 0].push(0);
+                        		for (t = 0; 8 > t;)
+                        			if (
+                        				((s = t++),
+                        					(n = b.engine.gameAttributes), null != e.DummyNumber2 ? n.setReserved("DummyNumber2", s) : (n.h.DummyNumber2 = s),
+                        					(n = b.engine.getGameAttribute("CustomLists")), 0 < (null != e.PetStats ? n.getReserved("PetStats") : n.h.PetStats)[0 | b.engine.getGameAttribute("DummyNumber2")].length - b.engine.getGameAttribute("Breeding")[(b.engine.getGameAttribute("DummyNumber2") + 13) | 0].length))
+                        				for (n = 0, s = b.engine.getGameAttribute("CustomLists"), s = (null != e.PetStats ? s.getReserved("PetStats") : s.h.PetStats)[0 | b.engine.getGameAttribute("DummyNumber2")].length - b.engine.getGameAttribute("Breeding")[(b.engine.getGameAttribute("DummyNumber2") + 13) | 0].length; n < s;) n++, b.engine.getGameAttribute("Breeding")[(b.engine.getGameAttribute("DummyNumber2") + 13) | 0].push(0);
+                        		for (t = 0; 8 > t;)
+                        			if (
+                        				((s = t++),
+                        					(n = b.engine.gameAttributes), null != e.DummyNumber2 ? n.setReserved("DummyNumber2", s) : (n.h.DummyNumber2 = s),
+                        					(n = b.engine.getGameAttribute("CustomLists")), 0 < (null != e.PetStats ? n.getReserved("PetStats") : n.h.PetStats)[0 | b.engine.getGameAttribute("DummyNumber2")].length - b.engine.getGameAttribute("Breeding")[(b.engine.getGameAttribute("DummyNumber2") + 22) | 0].length))
+                        				for (n = 0, s = b.engine.getGameAttribute("CustomLists"), s = (null != e.PetStats ? s.getReserved("PetStats") : s.h.PetStats)[0 | b.engine.getGameAttribute("DummyNumber2")].length - b.engine.getGameAttribute("Breeding")[(b.engine.getGameAttribute("DummyNumber2") + 22) | 0].length; n < s;) n++, b.engine.getGameAttribute("Breeding")[(b.engine.getGameAttribute("DummyNumber2") + 22) | 0].push(0);
+                        		if (0 == b.engine.getGameAttribute("Lab").length) {
+                        			for (t = b.engine.gameAttributes, n = [], null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n), t = 0; 12 > t;)
+                        				(n = t++), b.engine.getGameAttribute("DummyList2").push(40 + 40 * Math.floor(n)), b.engine.getGameAttribute("DummyList2").push(100);
+                        			for (b.engine.getGameAttribute("Lab").push(b.engine.getGameAttribute("DummyList2")), t = 0; 12 > t;) t++,
+                        				(n = b.engine.gameAttributes),
+                        				(s = []),
+                        				null != e.DummyList2 ? n.setReserved("DummyList2", s) : (n.h.DummyList2 = s),
+                        				b.engine.getGameAttribute("DummyList2").push(-1),
+                        				b.engine.getGameAttribute("DummyList2").push(-1),
+                        				b.engine.getGameAttribute("DummyList2").push(-1),
+                        				b.engine.getGameAttribute("DummyList2").push(-1),
+                        				b.engine.getGameAttribute("DummyList2").push(-1),
+                        				b.engine.getGameAttribute("DummyList2").push(-1),
+                        				b.engine.getGameAttribute("DummyList2").push(-1),
+                        				b.engine.getGameAttribute("Lab").push(b.engine.getGameAttribute("DummyList2"));
+                        			for (t = b.engine.gameAttributes, n = [], null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n), b.engine.getGameAttribute("DummyList2").push(-1), b.engine.getGameAttribute("DummyList2").push(-1), b.engine.getGameAttribute("DummyList2").push(-1), b.engine.getGameAttribute("Lab").push(b.engine.getGameAttribute("DummyList2")), t = b.engine.gameAttributes, n = [], null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("DummyList2").push(0), b.engine.getGameAttribute("Lab").push(b.engine.getGameAttribute("DummyList2")), t = b.engine.gameAttributes, n = [], null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n), t = 0; 25 > t;) t++, b.engine.getGameAttribute("DummyList2").push(-1);
+                        			b.engine.getGameAttribute("Lab").push(b.engine.getGameAttribute("DummyList2")),
+                        				(t = b.engine.gameAttributes),
+                        				(n = []),
+                        				null != e.DummyList2 ? t.setReserved("DummyList2", n) : (t.h.DummyList2 = n),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("Lab").push(b.engine.getGameAttribute("DummyList2"));
+                        		}
+                        	}

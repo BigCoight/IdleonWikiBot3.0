@@ -1,0 +1,23 @@
+                        (H._customBlock_FoodBonuses = function(s) {
+                        		if ("HealthEffectBonus" == s) {
+                        			if (-1 != w._customBlock_Dungon()) return w._customBlock_DungeonStat("FOODHP");
+                        			s = A._customBlock_GoldFoodBonuses("HealthFoods");
+                        			var a = b.engine.getGameAttribute("DNSM");
+                        			(a = null != e.BoxRewards ? a.getReserved("BoxRewards") : a.h.BoxRewards),
+                        			(a = null == (a = null != e.HealthFoodEffect ? a.getReserved("HealthFoodEffect") : a.h.HealthFoodEffect) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)));
+                        			var r = H._customBlock_ArbitraryCode("StatueBonusGiven3"),
+                        				o = U._customBlock_EtcBonuses("9"),
+                        				i = t._customBlock_StampBonusOfTypeX("HFood"),
+                        				u = b.engine.getGameAttribute("DNSM");
+                        			return (
+                        				(u = null != e.StarSigns ? u.getReserved("StarSigns") : u.h.StarSigns), s + (a + (r + (o + (i + ((null == (u = null != e.FoodEffect ? u.getReserved("FoodEffect") : u.h.FoodEffect) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))) + w._customBlock_CardSetBonuses(0, "1")))))) / 100);
+                        		}
+                        		return "HealthCooldownBonus" == s || -1 != s.indexOf("ForgeEffectBonus") ? 1 : -1 != s.indexOf("ForgeCooldownBonus") ? 1 - A._customBlock_GetBribeBonus("9") / 100 : -1 != s.indexOf("BoostsEffectBonus") ? -1 != w._customBlock_Dungon() ? w._customBlock_DungeonStat("FOODBOOST") : ((s = b.engine.getGameAttribute("DNSM")),
+                        			(s = null != e.BoxRewards ? s.getReserved("BoxRewards") : s.h.BoxRewards),
+                        			(s = null == (s = null != e.PowerFoodEffect ? s.getReserved("PowerFoodEffect") : s.h.PowerFoodEffect) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = H._customBlock_ArbitraryCode("StatueBonusGiven3")),
+                        			(r = U._customBlock_EtcBonuses("9")),
+                        			(o = t._customBlock_StampBonusOfTypeX("BFood")),
+                        			(i = b.engine.getGameAttribute("DNSM")),
+                        			(i = null != e.StarSigns ? i.getReserved("StarSigns") : i.h.StarSigns), 1 + (s + (a + (r + (o + ((null == (i = null != e.FoodEffect ? i.getReserved("FoodEffect") : i.h.FoodEffect) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))) + (U._customBlock_CardBonusREAL(48) + (w._customBlock_CardSetBonuses(0, "1") + t._customBlock_GetTalentNumber(1, 631)))))))) / 100) : -1 != s.indexOf("BoostsCooldownBonus") ? 1 : -1 != s.indexOf("OreRedux") ? 0 : (s.indexOf("OreSmithTime"), 1);
+                        	}

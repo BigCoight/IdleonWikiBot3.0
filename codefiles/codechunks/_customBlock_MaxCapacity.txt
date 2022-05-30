@@ -1,0 +1,64 @@
+                        (H._customBlock_MaxCapacity = function(s) {
+                        		if ("a" == s.charAt(0)) return 1;
+                        		if ("AllCapBonuses" == s) return (
+                        			(1 + (w._customBlock_GuildBonuses(2) + t._customBlock_GetTalentNumber(1, 634)) / 100) * (1 + w._customBlock_Shrine(3) / 100) * Math.max(1 - w._customBlock_prayersReal(4, 1) / 100, 0.4) * (1 + (w._customBlock_prayersReal(12, 0) + A._customBlock_GetBribeBonus("23")) / 100));
+                        		if ("bOre" == s || "bBar" == s || "cOil" == s) {
+                        			(s = b.engine.getGameAttribute("MaxCarryCap")),
+                        			(s = null == (s = null != e.Mining ? s.getReserved("Mining") : s.h.Mining) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)));
+                        			var a = 1 + t._customBlock_StampBonusOfTypeX("MinCap") / 100,
+                        				r = b.engine.getGameAttribute("GemItemsPurchased")[58];
+                        			r = parseNum(r);
+                        			var o = t._customBlock_StampBonusOfTypeX("AllCarryCap"),
+                        				i = b.engine.getGameAttribute("DNSM");
+                        			return (
+                        				(i = null != e.StarSigns ? i.getReserved("StarSigns") : i.h.StarSigns),
+                        				(i = null != e.CarryCap ? i.getReserved("CarryCap") : i.h.CarryCap), Math.floor(s * a * (1 + (25 * r) / 100) * (1 + (o + parseNum(i)) / 100) * H._customBlock_MaxCapacity("AllCapBonuses")));
+                        		}
+                        		return "dFish" == s ? ((s = b.engine.getGameAttribute("MaxCarryCap")),
+                        			(s = null == (s = null != e.Fishing ? s.getReserved("Fishing") : s.h.Fishing) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = null == (a = b.engine.getGameAttribute("GemItemsPurchased")[58]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = 1 + t._customBlock_StampBonusOfTypeX("FishCap") / 100),
+                        			(o = t._customBlock_StampBonusOfTypeX("AllCarryCap")),
+                        			(i = b.engine.getGameAttribute("DNSM")),
+                        			(i = null != e.StarSigns ? i.getReserved("StarSigns") : i.h.StarSigns),
+                        			(i = null != e.CarryCap ? i.getReserved("CarryCap") : i.h.CarryCap), Math.floor(s * (1 + (25 * a) / 100) * r * (1 + (o + parseNum(i)) / 100) * H._customBlock_MaxCapacity("AllCapBonuses"))) : "dBugs" == s ? ((s = b.engine.getGameAttribute("MaxCarryCap")),
+                        			(s = null == (s = null != e.Bugs ? s.getReserved("Bugs") : s.h.Bugs) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = null == (a = b.engine.getGameAttribute("GemItemsPurchased")[58]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = 1 + t._customBlock_StampBonusOfTypeX("CatchCap") / 100),
+                        			(o = t._customBlock_StampBonusOfTypeX("AllCarryCap")),
+                        			(i = b.engine.getGameAttribute("DNSM")),
+                        			(i = null != e.StarSigns ? i.getReserved("StarSigns") : i.h.StarSigns),
+                        			(i = null != e.CarryCap ? i.getReserved("CarryCap") : i.h.CarryCap), Math.floor(s * (1 + (25 * a) / 100) * r * (1 + (o + parseNum(i)) / 100) * H._customBlock_MaxCapacity("AllCapBonuses"))) : "bLog" == s || "bLeaf" == s ? ((s = b.engine.getGameAttribute("MaxCarryCap")),
+                        			(s = null == (s = null != e.Chopping ? s.getReserved("Chopping") : s.h.Chopping) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = 1 + t._customBlock_StampBonusOfTypeX("ChopCap") / 100),
+                        			(r = null == (r = b.engine.getGameAttribute("GemItemsPurchased")[58]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        			(o = t._customBlock_StampBonusOfTypeX("AllCarryCap")),
+                        			(i = b.engine.getGameAttribute("DNSM")),
+                        			(i = null != e.StarSigns ? i.getReserved("StarSigns") : i.h.StarSigns),
+                        			(i = null != e.CarryCap ? i.getReserved("CarryCap") : i.h.CarryCap), Math.floor(s * a * (1 + (25 * r) / 100) * (1 + (o + parseNum(i)) / 100) * H._customBlock_MaxCapacity("AllCapBonuses"))) : "cFood" == s ? ((s = b.engine.getGameAttribute("MaxCarryCap")),
+                        			(s = null == (s = null != e.Foods ? s.getReserved("Foods") : s.h.Foods) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = null == (a = b.engine.getGameAttribute("GemItemsPurchased")[58]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = t._customBlock_StampBonusOfTypeX("AllCarryCap")),
+                        			(o = b.engine.getGameAttribute("DNSM")),
+                        			(o = null != e.StarSigns ? o.getReserved("StarSigns") : o.h.StarSigns),
+                        			(o = null != e.CarryCap ? o.getReserved("CarryCap") : o.h.CarryCap), Math.floor(s * (1 + (25 * a) / 100) * (1 + (r + parseNum(o)) / 100) * H._customBlock_MaxCapacity("AllCapBonuses"))) : "dCritters" == s ? ((s = b.engine.getGameAttribute("MaxCarryCap")),
+                        			(s = null == (s = null != e.Critters ? s.getReserved("Critters") : s.h.Critters) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = null == (a = b.engine.getGameAttribute("GemItemsPurchased")[58]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = t._customBlock_StampBonusOfTypeX("AllCarryCap")),
+                        			(o = b.engine.getGameAttribute("DNSM")),
+                        			(o = null != e.StarSigns ? o.getReserved("StarSigns") : o.h.StarSigns),
+                        			(o = null != e.CarryCap ? o.getReserved("CarryCap") : o.h.CarryCap), Math.floor(s * (1 + (25 * a) / 100) * (1 + (r + parseNum(o)) / 100) * H._customBlock_MaxCapacity("AllCapBonuses"))) : "dSouls" == s ? ((s = b.engine.getGameAttribute("MaxCarryCap")),
+                        			(s = null == (s = null != e.Souls ? s.getReserved("Souls") : s.h.Souls) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = null == (a = b.engine.getGameAttribute("GemItemsPurchased")[58]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = t._customBlock_StampBonusOfTypeX("AllCarryCap")),
+                        			(o = b.engine.getGameAttribute("DNSM")),
+                        			(o = null != e.StarSigns ? o.getReserved("StarSigns") : o.h.StarSigns),
+                        			(o = null != e.CarryCap ? o.getReserved("CarryCap") : o.h.CarryCap), Math.floor(s * (1 + (25 * a) / 100) * (1 + (r + parseNum(o)) / 100) * H._customBlock_MaxCapacity("AllCapBonuses"))) : "dCurrency" == s || "dQuest" == s || "dStatueStone" == s ? 999999 : "bCraft" == s ? ((s = b.engine.getGameAttribute("MaxCarryCap")),
+                        			(s = null == (s = null != e.bCraft ? s.getReserved("bCraft") : s.h.bCraft) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = 1 + t._customBlock_StampBonusOfTypeX("MatCap") / 100),
+                        			(r = null == (r = b.engine.getGameAttribute("GemItemsPurchased")[58]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        			(o = t._customBlock_StampBonusOfTypeX("AllCarryCap")),
+                        			(i = b.engine.getGameAttribute("DNSM")),
+                        			(i = null != e.StarSigns ? i.getReserved("StarSigns") : i.h.StarSigns),
+                        			(i = null != e.CarryCap ? i.getReserved("CarryCap") : i.h.CarryCap), Math.floor(s * a * (1 + (25 * r) / 100) * (1 + (o + parseNum(i)) / 100) * (1 + t._customBlock_GetTalentNumber(1, 78) / 100) * H._customBlock_MaxCapacity("AllCapBonuses"))) : "dExpOrb" == s || "dStone" == s || "dFishToolkit" == s ? 999999 : "fillerz" == s ? ((s = b.engine.getGameAttribute("MaxCarryCap")), null != e.fillerz ? s.getReserved("fillerz") : s.h.fillerz) : "d" == s.charAt(0) ? 999999 : 2;
+                        	}

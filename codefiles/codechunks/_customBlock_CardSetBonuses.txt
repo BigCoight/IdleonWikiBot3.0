@@ -1,0 +1,11 @@
+                        (w._customBlock_CardSetBonuses = function(t, n) {
+                        		t = b.engine.getGameAttribute("Cards")[3];
+                        		var s = b.engine.getGameAttribute("CustomMaps");
+                        		return (
+                        			(s = null != e.IDforCardSETbonus ? s.getReserved("IDforCardSETbonus") : s.h.IDforCardSETbonus),
+                        			(s = "" + g.string(null != e[n] ? s.getReserved(n) : s.h[n])),
+                        			(null != e[s] ? t.existsReserved(s) : t.h.hasOwnProperty(s)) ? ((t = b.engine.getGameAttribute("Cards")[3]),
+                        				(s = b.engine.getGameAttribute("CustomMaps")),
+                        				(s = null != e.IDforCardSETbonus ? s.getReserved("IDforCardSETbonus") : s.h.IDforCardSETbonus),
+                        				(n = "" + g.string(null != e[n] ? s.getReserved(n) : s.h[n])), null != e[n] ? t.getReserved(n) : t.h[n]) : 0);
+                        	}

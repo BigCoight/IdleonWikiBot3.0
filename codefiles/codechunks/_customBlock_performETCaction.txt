@@ -1,0 +1,571 @@
+                        (U._customBlock_performETCaction = function(s) {
+                        		if ("DisableAutoMove" == s) {
+                        			if (1 == b.engine.getGameAttribute("PlayerAutoMoveTOGGLE")) {
+                        				var a = b.engine.getGameAttribute("PlayerMoveMaps")[0],
+                        					r = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        				if (3 != (null != e[r] ? a.getReserved(r) : a.h[r])) {
+                        					var o = b.engine.getGameAttribute("PlayerMoveMaps")[0],
+                        						i = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        					if (4 != (null != e[i] ? o.getReserved(i) : o.h[i])) var u = b.engine.getGameAttribute("PlayerMoveMaps")[0],
+                        						m = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						c = 6 != (null != e[m] ? u.getReserved(m) : u.h[m]);
+                        					else c = !1;
+                        				} else c = !1;
+                        				if (c) {
+                        					h.removeImage(b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_UIinventory")[332]),
+                        						(b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_UIinventory")[332] = t._customBlock_addImgInst("UIbuttons7.png")),
+                        						h.attachImageToActor(b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_UIinventory")[332], b.engine.getGameAttribute("PixelHelperActor")[0], 413, 480, 1);
+                        					var p = b.engine.getGameAttribute("OtherPlayers"),
+                        						f = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						y = null != e[f] ? p.getReserved(f) : p.h[f],
+                        						R = b.engine.getGameAttribute("OtherPlayers"),
+                        						v = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        					y.setValue("ActorEvents_20", "_MouseClickX", (null != e[v] ? R.getReserved(v) : R.h[v]).getXCenter());
+                        					var F = b.engine.getGameAttribute("PixelHelperActor")[11],
+                        						N = b.engine.getGameAttribute("OtherPlayers"),
+                        						_ = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        					F.setValue("ActorEvents_112", "_Xcoord", Math.round((null != e[_] ? N.getReserved(_) : N.h[_]).getXCenter() - 18));
+                        					var I = b.engine.getGameAttribute("PlayerMoveMaps")[0],
+                        						D = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        					null != e[D] ? I.setReserved(D, 1) : (I.h[D] = 1);
+                        					var S = b.engine.getGameAttribute("PlayerMoveMaps")[2],
+                        						G = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						T = b.engine.getGameAttribute("OtherPlayers"),
+                        						M = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]),
+                        						V = (null != e[M] ? T.getReserved(M) : T.h[M]).getValue("ActorEvents_20", "_PlayerNode");
+                        					null != e[G] ? S.setReserved(G, V) : (S.h[G] = V);
+                        					var C = b.engine.gameAttributes;
+                        					if (
+                        						(null != e.PlayerAutoMoveTOGGLE ? C.setReserved("PlayerAutoMoveTOGGLE", 0) : (C.h.PlayerAutoMoveTOGGLE = 0), 0 == b.engine.getGameAttribute("PixelHelperActor")[1].getValue("ActorEvents_116", "_GeneralINFO")[4])) {
+                        						var B = b.engine.getGameAttribute("OtherPlayers"),
+                        							P = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        						(null != e[P] ? B.getReserved(P) : B.h[P]).setValue("ActorEvents_20", "_TargetEnemy", null);
+                        					}
+                        				}
+                        			}
+                        		} else if ("MonsterRespawnTimeReset" == s) {
+                        			if (0 != b.engine.getGameAttribute("Tasks").length) {
+                        				var O = b.engine,
+                        					x = Xa.get(),
+                        					Q = O.gameAttributes;
+                        				null != e.MonsterDefinitionsGET ? Q.setReserved("MonsterDefinitionsGET", x) : (Q.h.MonsterDefinitionsGET = x);
+                        				var X = b.engine,
+                        					L = E.deepCopyMap(b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        					z = X.gameAttributes;
+                        				null != e.MonsterDefinitionsGET ? z.setReserved("MonsterDefinitionsGET", L) : (z.h.MonsterDefinitionsGET = L);
+                        				for (var Y = b.engine.getGameAttribute("MonsterDefinitionsGET").keys(); Y.hasNext();) {
+                        					var W = Y.next(),
+                        						Z = b.engine.getGameAttribute("CustomLists");
+                        					if (Sb.contains((null != e.RANDOlist ? Z.getReserved("RANDOlist") : Z.h.RANDOlist)[0], W)) {
+                        						var J = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							j = "" + W,
+                        							q = null != e[j] ? J.getReserved(j) : J.h[j],
+                        							K = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							$ = "" + W,
+                        							ee = null != e[$] ? K.getReserved($) : K.h[$],
+                        							te = null != e.RespawnTime ? ee.getReserved("RespawnTime") : ee.h.RespawnTime,
+                        							ne = parseNum(te),
+                        							se = w._customBlock_Shrine(7) + A._customBlock_chipBonuses("resp") + U._customBlock_EtcBonuses("47") + w._customBlock_AchieveStatus(44),
+                        							ae = b.engine.getGameAttribute("DNSM"),
+                        							re = null != e.StarSigns ? ae.getReserved("StarSigns") : ae.h.StarSigns,
+                        							Ae = null != e.MobRespawn ? re.getReserved("MobRespawn") : re.h.MobRespawn,
+                        							le = parseNum(Ae),
+                        							oe = b.engine.getGameAttribute("CustomLists"),
+                        							ie = (null != e.TaskShopDesc ? oe.getReserved("TaskShopDesc") : oe.h.TaskShopDesc)[0][1][11],
+                        							ue = parseNum(ie),
+                        							ge = b.engine.getGameAttribute("Tasks")[2][0][1],
+                        							me = q,
+                        							de = ne / (1 + (se + le + ue * parseNum(ge)) / 100);
+                        						null != e.RespawnTime ? me.setReserved("RespawnTime", de) : (me.h.RespawnTime = de);
+                        					} else {
+                        						var ce = b.engine.getGameAttribute("CustomLists");
+                        						if (Sb.contains((null != e.RANDOlist ? ce.getReserved("RANDOlist") : ce.h.RANDOlist)[1], W)) {
+                        							var pe = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								he = "" + W,
+                        								be = null != e[he] ? pe.getReserved(he) : pe.h[he],
+                        								fe = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								ye = "" + W,
+                        								Re = null != e[ye] ? fe.getReserved(ye) : fe.h[ye],
+                        								ve = null != e.RespawnTime ? Re.getReserved("RespawnTime") : Re.h.RespawnTime,
+                        								Fe = parseNum(ve),
+                        								Ne = w._customBlock_Shrine(7) + A._customBlock_chipBonuses("resp") + U._customBlock_EtcBonuses("47") + w._customBlock_AchieveStatus(109),
+                        								_e = b.engine.getGameAttribute("DNSM"),
+                        								Ie = null != e.StarSigns ? _e.getReserved("StarSigns") : _e.h.StarSigns,
+                        								De = null != e.MobRespawn ? Ie.getReserved("MobRespawn") : Ie.h.MobRespawn,
+                        								Ee = parseNum(De),
+                        								Se = b.engine.getGameAttribute("CustomLists"),
+                        								Ge = (null != e.TaskShopDesc ? Se.getReserved("TaskShopDesc") : Se.h.TaskShopDesc)[1][1][11],
+                        								Te = parseNum(Ge),
+                        								Ue = b.engine.getGameAttribute("Tasks")[2][1][1],
+                        								Me = be,
+                        								Ve = Fe / (1 + (Ne + Ee + Te * parseNum(Ue)) / 100);
+                        							null != e.RespawnTime ? Me.setReserved("RespawnTime", Ve) : (Me.h.RespawnTime = Ve);
+                        						} else {
+                        							var Ce = b.engine.getGameAttribute("CustomLists");
+                        							if (Sb.contains((null != e.RANDOlist ? Ce.getReserved("RANDOlist") : Ce.h.RANDOlist)[15], W)) {
+                        								var Be = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        									Pe = "" + W,
+                        									Oe = null != e[Pe] ? Be.getReserved(Pe) : Be.h[Pe],
+                        									we = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        									ke = "" + W,
+                        									xe = null != e[ke] ? we.getReserved(ke) : we.h[ke],
+                        									Qe = null != e.RespawnTime ? xe.getReserved("RespawnTime") : xe.h.RespawnTime,
+                        									Xe = parseNum(Qe),
+                        									Le = w._customBlock_Shrine(7) + A._customBlock_chipBonuses("resp") + U._customBlock_EtcBonuses("47"),
+                        									ze = b.engine.getGameAttribute("DNSM"),
+                        									Ye = null != e.StarSigns ? ze.getReserved("StarSigns") : ze.h.StarSigns,
+                        									We = null != e.MobRespawn ? Ye.getReserved("MobRespawn") : Ye.h.MobRespawn,
+                        									Ze = parseNum(We),
+                        									He = b.engine.getGameAttribute("CustomLists"),
+                        									Je = (null != e.TaskShopDesc ? He.getReserved("TaskShopDesc") : He.h.TaskShopDesc)[2][1][11],
+                        									je = parseNum(Je),
+                        									qe = b.engine.getGameAttribute("Tasks")[2][2][1],
+                        									Ke = Oe,
+                        									$e = Xe / (1 + (Le + Ze + je * parseNum(qe)) / 100);
+                        								null != e.RespawnTime ? Ke.setReserved("RespawnTime", $e) : (Ke.h.RespawnTime = $e);
+                        							} else {
+                        								var et = b.engine.getGameAttribute("CustomLists");
+                        								if (Sb.contains((null != e.DeathNoteMobs ? et.getReserved("DeathNoteMobs") : et.h.DeathNoteMobs)[3], W)) {
+                        									var tt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        										nt = "" + W,
+                        										st = null != e[nt] ? tt.getReserved(nt) : tt.h[nt],
+                        										at = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        										rt = "" + W,
+                        										At = null != e[rt] ? at.getReserved(rt) : at.h[rt],
+                        										lt = null != e.RespawnTime ? At.getReserved("RespawnTime") : At.h.RespawnTime,
+                        										ot = parseNum(lt),
+                        										it = w._customBlock_Shrine(7) + A._customBlock_chipBonuses("resp") + U._customBlock_EtcBonuses("47"),
+                        										ut = b.engine.getGameAttribute("DNSM"),
+                        										gt = null != e.StarSigns ? ut.getReserved("StarSigns") : ut.h.StarSigns,
+                        										mt = null != e.MobRespawn ? gt.getReserved("MobRespawn") : gt.h.MobRespawn,
+                        										dt = parseNum(mt),
+                        										ct = b.engine.getGameAttribute("CustomLists"),
+                        										pt = (null != e.TaskShopDesc ? ct.getReserved("TaskShopDesc") : ct.h.TaskShopDesc)[3][1][11],
+                        										ht = parseNum(pt),
+                        										bt = b.engine.getGameAttribute("Tasks")[2][3][1],
+                        										ft = st,
+                        										yt = ot / (1 + (it + dt + ht * parseNum(bt)) / 100);
+                        									null != e.RespawnTime ? ft.setReserved("RespawnTime", yt) : (ft.h.RespawnTime = yt);
+                        								}
+                        							}
+                        						}
+                        					}
+                        					if (0 != w._customBlock_prayersReal(0, 1) || 0 != w._customBlock_prayersReal(7, 1) || 0 != w._customBlock_prayersReal(8, 1)) {
+                        						var Rt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							vt = "" + W,
+                        							Ft = null != e[vt] ? Rt.getReserved(vt) : Rt.h[vt],
+                        							Nt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							_t = "" + W,
+                        							It = null != e[_t] ? Nt.getReserved(_t) : Nt.h[_t],
+                        							Dt = null != e.MonsterHPTotal ? It.getReserved("MonsterHPTotal") : It.h.MonsterHPTotal,
+                        							Et = Ft,
+                        							St = parseNum(Dt) * (1 + (w._customBlock_prayersReal(0, 1) + (w._customBlock_prayersReal(7, 1) + w._customBlock_prayersReal(8, 1))) / 100);
+                        						null != e.MonsterHPTotal ? Et.setReserved("MonsterHPTotal", St) : (Et.h.MonsterHPTotal = St);
+                        					}
+                        				}
+                        			}
+                        			U._customBlock_changemonsterDEF();
+                        		} else if ("LootDropOddsReset" == s && 0 != b.engine.getGameAttribute("Cards").length) {
+                        			var Gt = b.engine.getGameAttribute("CustomMaps"),
+                        				Tt = eh.MonsterDrops();
+                        			null != e.MonsterDrops ? Gt.setReserved("MonsterDrops", Tt) : (Gt.h.MonsterDrops = Tt);
+                        			var Ut = b.engine.getGameAttribute("CustomMaps"),
+                        				Mt = eh.DropTables();
+                        			null != e.DropTables ? Ut.setReserved("DropTables", Mt) : (Ut.h.DropTables = Mt);
+                        			var Vt = b.engine.getGameAttribute("CustomMaps"),
+                        				Ct = b.engine.getGameAttribute("CustomMaps"),
+                        				Bt = E.deepCopyMap(null != e.MonsterDrops ? Ct.getReserved("MonsterDrops") : Ct.h.MonsterDrops);
+                        			null != e.MonsterDrops ? Vt.setReserved("MonsterDrops", Bt) : (Vt.h.MonsterDrops = Bt);
+                        			var Pt = b.engine.getGameAttribute("CustomMaps"),
+                        				Ot = b.engine.getGameAttribute("CustomMaps"),
+                        				wt = E.deepCopyMap(null != e.DropTables ? Ot.getReserved("DropTables") : Ot.h.DropTables);
+                        			null != e.DropTables ? Pt.setReserved("DropTables", wt) : (Pt.h.DropTables = wt);
+                        			for (var kt = b.engine.getGameAttribute("CustomMaps"), xt = (null != e.MonsterDrops ? kt.getReserved("MonsterDrops") : kt.h.MonsterDrops).keys(); xt.hasNext();) {
+                        				var Qt = xt.next(),
+                        					Xt = b.engine.gameAttributes,
+                        					Lt = "" + Qt;
+                        				null != e.DummyText ? Xt.setReserved("DummyText", Lt) : (Xt.h.DummyText = Lt);
+                        				var zt = b.engine,
+                        					Yt = b.engine.getGameAttribute("CustomMaps"),
+                        					Wt = null != e.MonsterDrops ? Yt.getReserved("MonsterDrops") : Yt.h.MonsterDrops,
+                        					Zt = "" + Qt,
+                        					Ht = null != e[Zt] ? Wt.getReserved(Zt) : Wt.h[Zt],
+                        					Jt = zt.gameAttributes,
+                        					jt = Ht;
+                        				null != e.DummyList ? Jt.setReserved("DummyList", jt) : (Jt.h.DummyList = jt);
+                        				for (var qt = 0, Kt = d.__cast(b.engine.getGameAttribute("DummyList"), Array); qt < Kt.length;) {
+                        					var $t = Kt[qt];
+                        					if ((++qt, -1 != ("" + g.string($t[0])).indexOf("Stamp"))) {
+                        						var en = $t[1];
+                        						$t[1] = parseNum(en) * (1 + (A._customBlock_GetBribeBonus("1") + A._customBlock_GetBribeBonus("8")) / 100);
+                        					} else if (-1 != ("" + g.string($t[0])).indexOf("Cards")) {
+                        						if (-1 == ("" + g.string($t[0])).indexOf("CardsZ")) {
+                        							var tn = b.engine.getGameAttribute("Cards")[0],
+                        								nn = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        								sn = "" + g.string($t[0]),
+                        								an = nn,
+                        								rn = null != e[sn] ? an.getReserved(sn) : an.h[sn],
+                        								An = "" + g.string(null != e.desc_line1 ? rn.getReserved("desc_line1") : rn.h.desc_line1),
+                        								ln = tn;
+                        							if (0 == (null != e[An] ? ln.getReserved(An) : ln.h[An])) {
+                        								var on = $t[1];
+                        								$t[1] = 5 * parseNum(on);
+                        							}
+                        						}
+                        						var un = $t[1];
+                        						$t[1] = parseNum(un) * H._customBlock_ArbitraryCode("CardChanceMulti");
+                        					}
+                        				}
+                        			}
+                        			var gn = b.engine.getGameAttribute("KillsLeft2Advance")[100][0];
+                        			if (1 > parseNum(gn)) {
+                        				var mn = b.engine.getGameAttribute("DNSM"),
+                        					dn = [];
+                        				null != e.AddLewtzL ? mn.setReserved("AddLewtzL", dn) : (mn.h.AddLewtzL = dn);
+                        				var cn = b.engine.getGameAttribute("DNSM");
+                        				(null != e.AddLewtzL ? cn.getReserved("AddLewtzL") : cn.h.AddLewtzL).push("SmithingRecipes4");
+                        				var pn = b.engine.getGameAttribute("DNSM");
+                        				(null != e.AddLewtzL ? pn.getReserved("AddLewtzL") : pn.h.AddLewtzL).push(3e-6);
+                        				var hn = b.engine.getGameAttribute("DNSM");
+                        				(null != e.AddLewtzL ? hn.getReserved("AddLewtzL") : hn.h.AddLewtzL).push(53);
+                        				var bn = b.engine.getGameAttribute("DNSM");
+                        				(null != e.AddLewtzL ? bn.getReserved("AddLewtzL") : bn.h.AddLewtzL).push("N/A");
+                        				var fn = b.engine.getGameAttribute("CustomMaps"),
+                        					yn = null != e.MonsterDrops ? fn.getReserved("MonsterDrops") : fn.h.MonsterDrops,
+                        					Rn = null != e.pincermin ? yn.getReserved("pincermin") : yn.h.pincermin,
+                        					vn = b.engine.getGameAttribute("CustomMaps"),
+                        					Fn = null != e.MonsterDrops ? vn.getReserved("MonsterDrops") : vn.h.MonsterDrops,
+                        					Nn = (null != e.pincermin ? Fn.getReserved("pincermin") : Fn.h.pincermin).length - 1,
+                        					_n = b.engine.getGameAttribute("DNSM"),
+                        					In = null != e.AddLewtzL ? _n.getReserved("AddLewtzL") : _n.h.AddLewtzL;
+                        				Rn.splice(Nn, 0, In);
+                        				var Dn = b.engine.getGameAttribute("DNSM"),
+                        					En = [];
+                        				null != e.AddLewtzL ? Dn.setReserved("AddLewtzL", En) : (Dn.h.AddLewtzL = En);
+                        				var Sn = b.engine.getGameAttribute("DNSM");
+                        				(null != e.AddLewtzL ? Sn.getReserved("AddLewtzL") : Sn.h.AddLewtzL).push("SmithingRecipes4");
+                        				var Gn = b.engine.getGameAttribute("DNSM");
+                        				(null != e.AddLewtzL ? Gn.getReserved("AddLewtzL") : Gn.h.AddLewtzL).push(8e-7);
+                        				var Tn = b.engine.getGameAttribute("DNSM");
+                        				(null != e.AddLewtzL ? Tn.getReserved("AddLewtzL") : Tn.h.AddLewtzL).push(54);
+                        				var Un = b.engine.getGameAttribute("DNSM");
+                        				(null != e.AddLewtzL ? Un.getReserved("AddLewtzL") : Un.h.AddLewtzL).push("N/A");
+                        				var Mn = b.engine.getGameAttribute("CustomMaps"),
+                        					Vn = null != e.MonsterDrops ? Mn.getReserved("MonsterDrops") : Mn.h.MonsterDrops,
+                        					Cn = null != e.thermostat ? Vn.getReserved("thermostat") : Vn.h.thermostat,
+                        					Bn = b.engine.getGameAttribute("CustomMaps"),
+                        					Pn = null != e.MonsterDrops ? Bn.getReserved("MonsterDrops") : Bn.h.MonsterDrops,
+                        					On = (null != e.thermostat ? Pn.getReserved("thermostat") : Pn.h.thermostat).length - 1,
+                        					wn = b.engine.getGameAttribute("DNSM"),
+                        					kn = null != e.AddLewtzL ? wn.getReserved("AddLewtzL") : wn.h.AddLewtzL;
+                        				Cn.splice(On, 0, kn);
+                        				var xn = b.engine.getGameAttribute("DNSM"),
+                        					Qn = [];
+                        				null != e.AddLewtzL ? xn.setReserved("AddLewtzL", Qn) : (xn.h.AddLewtzL = Qn);
+                        			}
+                        			for (var Xn = b.engine.getGameAttribute("CustomMaps"), Ln = (null != e.MonsterDrops ? Xn.getReserved("MonsterDrops") : Xn.h.MonsterDrops).keys(); Ln.hasNext();) {
+                        				var zn = Ln.next(),
+                        					Yn = b.engine.gameAttributes,
+                        					Wn = "" + zn;
+                        				null != e.DummyText ? Yn.setReserved("DummyText", Wn) : (Yn.h.DummyText = Wn);
+                        				var Zn = b.engine,
+                        					Hn = b.engine.getGameAttribute("CustomMaps"),
+                        					Jn = null != e.MonsterDrops ? Hn.getReserved("MonsterDrops") : Hn.h.MonsterDrops,
+                        					jn = "" + zn,
+                        					qn = null != e[jn] ? Jn.getReserved(jn) : Jn.h[jn],
+                        					Kn = Zn.gameAttributes,
+                        					$n = qn;
+                        				null != e.DummyList ? Kn.setReserved("DummyList", $n) : (Kn.h.DummyList = $n);
+                        				for (var es = 0, ts = d.__cast(b.engine.getGameAttribute("DummyList"), Array); es < ts.length;) {
+                        					var ns = ts[es];
+                        					if ((++es, -1 != ("" + g.string(ns[0])).indexOf("SmithingRecipes"))) {
+                        						var ss = b.engine.getGameAttribute("AnvilCraftStatus"),
+                        							as = Nc.replace("" + g.string(ns[0]), "SmithingRecipes", ""),
+                        							rs = ss[0 | Math.max(0, parseNum(as) - 1)],
+                        							As = ns[2],
+                        							ls = rs[0 | parseNum(As)];
+                        						0 <= parseNum(ls) && Mc.remove(b.engine.getGameAttribute("DummyList"), ns);
+                        					} else if (-1 != ("" + g.string(ns[0])).indexOf("Stamp")) {
+                        						var os = b.engine,
+                        							is = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        							us = "" + g.string(ns[0]),
+                        							gs = is,
+                        							ms = null != e[us] ? gs.getReserved(us) : gs.h[us],
+                        							ds = null != e.ID ? ms.getReserved("ID") : ms.h.ID,
+                        							cs = parseNum(ds),
+                        							ps = os.gameAttributes,
+                        							hs = cs;
+                        						if ((null != e.DummyNumber4 ? ps.setReserved("DummyNumber4", hs) : (ps.h.DummyNumber4 = hs), "N/A" == ns[3])) {
+                        							var bs = b.engine.getGameAttribute("StampLevelMAX")[Math.floor(b.engine.getGameAttribute("DummyNumber4") / 1e3)][
+                        								(b.engine.getGameAttribute("DummyNumber4") - 1e3 * Math.floor(b.engine.getGameAttribute("DummyNumber4") / 1e3)) | 0
+                        							];
+                        							0 < parseNum(bs) && Mc.remove(b.engine.getGameAttribute("DummyList"), ns);
+                        						}
+                        					}
+                        				}
+                        				if (-1 != b.engine.getGameAttribute("DummyText").indexOf("Crystal")) {
+                        					var fs = b.engine,
+                        						ys = b.engine.getGameAttribute("CustomMaps"),
+                        						Rs = null != e.MonsterDrops ? ys.getReserved("MonsterDrops") : ys.h.MonsterDrops,
+                        						vs = b.engine.getGameAttribute("DummyText"),
+                        						Fs = Rs,
+                        						Ns = null != e[vs] ? Fs.getReserved(vs) : Fs.h[vs],
+                        						_s = fs.gameAttributes,
+                        						Is = Ns;
+                        					null != e.DummyList ? _s.setReserved("DummyList", Is) : (_s.h.DummyList = Is);
+                        					for (var Ds = 0, Es = d.__cast(b.engine.getGameAttribute("DummyList"), Array); Ds < Es.length;) {
+                        						var Ss = Es[Ds];
+                        						if ((++Ds, "TalentBook1" == Ss[0])) {
+                        							var Gs = b.engine.getGameAttribute("SkillLevelsMAX")[618];
+                        							2 < parseNum(Gs) && Mc.remove(b.engine.getGameAttribute("DummyList"), Ss);
+                        						}
+                        					}
+                        				}
+                        			}
+                        			for (var Ts = b.engine.getGameAttribute("CustomMaps"), Us = (null != e.DropTables ? Ts.getReserved("DropTables") : Ts.h.DropTables).keys(); Us.hasNext();) {
+                        				var Ms = Us.next(),
+                        					Vs = b.engine.gameAttributes,
+                        					Cs = "" + Ms;
+                        				null != e.DummyText ? Vs.setReserved("DummyText", Cs) : (Vs.h.DummyText = Cs);
+                        				var Bs = b.engine,
+                        					Ps = b.engine.getGameAttribute("CustomMaps"),
+                        					Os = null != e.DropTables ? Ps.getReserved("DropTables") : Ps.h.DropTables,
+                        					ws = "" + Ms,
+                        					ks = null != e[ws] ? Os.getReserved(ws) : Os.h[ws],
+                        					xs = Bs.gameAttributes,
+                        					Qs = ks;
+                        				null != e.DummyList ? xs.setReserved("DummyList", Qs) : (xs.h.DummyList = Qs);
+                        				for (var Xs = 0, Ls = d.__cast(b.engine.getGameAttribute("DummyList"), Array); Xs < Ls.length;) {
+                        					var zs = Ls[Xs];
+                        					if ((++Xs, -1 != ("" + g.string(zs[0])).indexOf("Stamp"))) {
+                        						var Ys = zs[1];
+                        						zs[1] = parseNum(Ys) * (1 + (A._customBlock_GetBribeBonus("1") + A._customBlock_GetBribeBonus("8")) / 100);
+                        					} else if (-1 != ("" + g.string(zs[0])).indexOf("Cards") && -1 == ("" + g.string(zs[0])).indexOf("CardsZ")) {
+                        						var Ws = b.engine.getGameAttribute("Cards")[0],
+                        							Zs = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        							Hs = "" + g.string(zs[0]),
+                        							Js = Zs,
+                        							js = null != e[Hs] ? Js.getReserved(Hs) : Js.h[Hs],
+                        							qs = "" + g.string(null != e.desc_line1 ? js.getReserved("desc_line1") : js.h.desc_line1),
+                        							Ks = Ws;
+                        						if (0 == (null != e[qs] ? Ks.getReserved(qs) : Ks.h[qs])) {
+                        							var $s = zs[1];
+                        							zs[1] = 5 * (null == $s ? 0 : "number" == typeof $s ? d.__cast($s, k) : "number" == typeof $s && (0 | $s) === $s ? d.__cast($s, l) : "boolean" == typeof $s ? d.__cast($s, n) ? 1 : 0 : "string" == typeof $s ? parseFloat($s) : parseFloat(g.string($s)));
+                        						}
+                        					}
+                        				}
+                        				for (var ea = 0, ta = d.__cast(b.engine.getGameAttribute("DummyList"), Array); ea < ta.length;) {
+                        					var na = ta[ea];
+                        					if ((++ea, -1 != ("" + g.string(na[0])).indexOf("SmithingRecipes"))) {
+                        						var sa = b.engine.getGameAttribute("AnvilCraftStatus"),
+                        							aa = Nc.replace("" + g.string(na[0]), "SmithingRecipes", ""),
+                        							ra = sa[0 | Math.max(0, parseNum(aa) - 1)],
+                        							Aa = na[2],
+                        							la = ra[0 | parseNum(Aa)];
+                        						0 <= parseNum(la) && Mc.remove(b.engine.getGameAttribute("DummyList"), na);
+                        					} else if (-1 != ("" + g.string(na[0])).indexOf("Stamp")) {
+                        						var oa = b.engine,
+                        							ia = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        							ua = "" + g.string(na[0]),
+                        							ga = ia,
+                        							ma = null != e[ua] ? ga.getReserved(ua) : ga.h[ua],
+                        							da = null != e.ID ? ma.getReserved("ID") : ma.h.ID,
+                        							ca = parseNum(da),
+                        							pa = oa.gameAttributes,
+                        							ha = ca;
+                        						null != e.DummyNumber4 ? pa.setReserved("DummyNumber4", ha) : (pa.h.DummyNumber4 = ha);
+                        						var ba = b.engine.getGameAttribute("StampLevelMAX")[Math.floor(b.engine.getGameAttribute("DummyNumber4") / 1e3)][
+                        							(b.engine.getGameAttribute("DummyNumber4") - 1e3 * Math.floor(b.engine.getGameAttribute("DummyNumber4") / 1e3)) | 0
+                        						];
+                        						0 < parseNum(ba) && Mc.remove(b.engine.getGameAttribute("DummyList"), na);
+                        					}
+                        				}
+                        			}
+                        			var fa = b.engine.getGameAttribute("Tasks")[2][1][0];
+                        			if (0 < parseNum(fa)) {
+                        				for (var ya = 0; 12 > ya;) {
+                        					var Ra = ya++,
+                        						va = b.engine.getGameAttribute("DNSM"),
+                        						Fa = [];
+                        					if ((null != e.AddLewtzL ? va.setReserved("AddLewtzL", Fa) : (va.h.AddLewtzL = Fa), 4 > Ra)) {
+                        						var Na = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? Na.getReserved("AddLewtzL") : Na.h.AddLewtzL).push("ObolBronze" + Ra);
+                        						var _a = b.engine.getGameAttribute("DNSM"),
+                        							Ia = null != e.AddLewtzL ? _a.getReserved("AddLewtzL") : _a.h.AddLewtzL,
+                        							Da = b.engine.getGameAttribute("Tasks")[2][1][0];
+                        						Ia.push(0.0011 * (1 + parseNum(Da) / 20));
+                        					} else if (8 > Ra) {
+                        						var Ea = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? Ea.getReserved("AddLewtzL") : Ea.h.AddLewtzL).push("ObolSilver" + Math.round(Ra - 4));
+                        						var Sa = b.engine.getGameAttribute("DNSM"),
+                        							Ga = null != e.AddLewtzL ? Sa.getReserved("AddLewtzL") : Sa.h.AddLewtzL,
+                        							Ta = b.engine.getGameAttribute("Tasks")[2][1][0];
+                        						Ga.push(7e-4 * (1 + parseNum(Ta) / 20));
+                        					} else if (8 == Ra) {
+                        						var Ua = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? Ua.getReserved("AddLewtzL") : Ua.h.AddLewtzL).push("ObolSilverMoney");
+                        						var Ma = b.engine.getGameAttribute("DNSM"),
+                        							Va = null != e.AddLewtzL ? Ma.getReserved("AddLewtzL") : Ma.h.AddLewtzL,
+                        							Ca = b.engine.getGameAttribute("Tasks")[2][1][0];
+                        						Va.push(0.03 * (1 + parseNum(Ca) / 20));
+                        					} else if (9 == Ra) {
+                        						var Ba = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? Ba.getReserved("AddLewtzL") : Ba.h.AddLewtzL).push("ObolSilverDamage");
+                        						var Pa = b.engine.getGameAttribute("DNSM"),
+                        							Oa = null != e.AddLewtzL ? Pa.getReserved("AddLewtzL") : Pa.h.AddLewtzL,
+                        							wa = b.engine.getGameAttribute("Tasks")[2][1][0];
+                        						Oa.push(0.031 * (1 + parseNum(wa) / 20));
+                        					} else if (10 == Ra) {
+                        						var ka = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? ka.getReserved("AddLewtzL") : ka.h.AddLewtzL).push("ObolGold3");
+                        						var xa = b.engine.getGameAttribute("DNSM"),
+                        							Qa = null != e.AddLewtzL ? xa.getReserved("AddLewtzL") : xa.h.AddLewtzL,
+                        							La = b.engine.getGameAttribute("Tasks")[2][1][0];
+                        						Qa.push(0.015 * (1 + parseNum(La) / 20));
+                        					} else if (11 == Ra) {
+                        						var za = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? za.getReserved("AddLewtzL") : za.h.AddLewtzL).push("ObolSilverLuck");
+                        						var Ya = b.engine.getGameAttribute("DNSM"),
+                        							Wa = null != e.AddLewtzL ? Ya.getReserved("AddLewtzL") : Ya.h.AddLewtzL,
+                        							Za = b.engine.getGameAttribute("Tasks")[2][1][0];
+                        						Wa.push(0.025 * (1 + parseNum(Za) / 20));
+                        					}
+                        					var Ha = b.engine.getGameAttribute("DNSM");
+                        					(null != e.AddLewtzL ? Ha.getReserved("AddLewtzL") : Ha.h.AddLewtzL).push(1);
+                        					var Ja = b.engine.getGameAttribute("DNSM");
+                        					if (((null != e.AddLewtzL ? Ja.getReserved("AddLewtzL") : Ja.h.AddLewtzL).push("N/A"), 4 > Ra)) {
+                        						var ja = b.engine.getGameAttribute("CustomMaps"),
+                        							qa = null != e.DropTables ? ja.getReserved("DropTables") : ja.h.DropTables,
+                        							Ka = "DropTable" + Math.round(Ra + 1),
+                        							$a = qa,
+                        							er = null != e[Ka] ? $a.getReserved(Ka) : $a.h[Ka],
+                        							tr = b.engine.getGameAttribute("CustomMaps"),
+                        							nr = null != e.DropTables ? tr.getReserved("DropTables") : tr.h.DropTables,
+                        							sr = "DropTable" + Math.round(Ra + 1),
+                        							ar = nr,
+                        							rr = (null != e[sr] ? ar.getReserved(sr) : ar.h[sr]).length - 1,
+                        							Ar = b.engine.getGameAttribute("DNSM"),
+                        							lr = null != e.AddLewtzL ? Ar.getReserved("AddLewtzL") : Ar.h.AddLewtzL;
+                        						er.splice(rr, 0, lr);
+                        					} else if (8 > Ra) {
+                        						var or = b.engine.getGameAttribute("CustomMaps"),
+                        							ir = null != e.DropTables ? or.getReserved("DropTables") : or.h.DropTables,
+                        							ur = "DropTable" + Math.round(Ra + 1),
+                        							gr = ir,
+                        							mr = null != e[ur] ? gr.getReserved(ur) : gr.h[ur],
+                        							dr = b.engine.getGameAttribute("CustomMaps"),
+                        							cr = null != e.DropTables ? dr.getReserved("DropTables") : dr.h.DropTables,
+                        							pr = "DropTable" + Math.round(Ra + 2),
+                        							hr = cr,
+                        							br = (null != e[pr] ? hr.getReserved(pr) : hr.h[pr]).length - 1,
+                        							fr = b.engine.getGameAttribute("DNSM"),
+                        							yr = null != e.AddLewtzL ? fr.getReserved("AddLewtzL") : fr.h.AddLewtzL;
+                        						mr.splice(br, 0, yr);
+                        					} else if (10 > Ra) {
+                        						var Rr = b.engine.getGameAttribute("CustomMaps"),
+                        							vr = null != e.DropTables ? Rr.getReserved("DropTables") : Rr.h.DropTables,
+                        							Fr = null != e.SuperDropTable1 ? vr.getReserved("SuperDropTable1") : vr.h.SuperDropTable1,
+                        							Nr = b.engine.getGameAttribute("CustomMaps"),
+                        							_r = null != e.DropTables ? Nr.getReserved("DropTables") : Nr.h.DropTables,
+                        							Ir = (null != e.SuperDropTable1 ? _r.getReserved("SuperDropTable1") : _r.h.SuperDropTable1).length - 1,
+                        							Dr = b.engine.getGameAttribute("DNSM"),
+                        							Er = null != e.AddLewtzL ? Dr.getReserved("AddLewtzL") : Dr.h.AddLewtzL;
+                        						Fr.splice(Ir, 0, Er);
+                        					} else if (12 > Ra) {
+                        						var Sr = b.engine.getGameAttribute("CustomMaps"),
+                        							Gr = null != e.DropTables ? Sr.getReserved("DropTables") : Sr.h.DropTables,
+                        							Tr = null != e.SuperDropTable2 ? Gr.getReserved("SuperDropTable2") : Gr.h.SuperDropTable2,
+                        							Ur = b.engine.getGameAttribute("CustomMaps"),
+                        							Mr = null != e.DropTables ? Ur.getReserved("DropTables") : Ur.h.DropTables,
+                        							Vr = (null != e.SuperDropTable2 ? Mr.getReserved("SuperDropTable2") : Mr.h.SuperDropTable2).length - 1,
+                        							Cr = b.engine.getGameAttribute("DNSM"),
+                        							Br = null != e.AddLewtzL ? Cr.getReserved("AddLewtzL") : Cr.h.AddLewtzL;
+                        						Tr.splice(Vr, 0, Br);
+                        					}
+                        				}
+                        				for (var Pr = 0; 6 > Pr;) {
+                        					var Or = Pr++,
+                        						wr = b.engine.getGameAttribute("DNSM"),
+                        						kr = [];
+                        					if ((null != e.AddLewtzL ? wr.setReserved("AddLewtzL", kr) : (wr.h.AddLewtzL = kr), 4 == Or)) {
+                        						var xr = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? xr.getReserved("AddLewtzL") : xr.h.AddLewtzL).push("ObolBronzeKill");
+                        					} else if (3 == Or) {
+                        						var Qr = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? Qr.getReserved("AddLewtzL") : Qr.h.AddLewtzL).push("ObolBronzeEXP");
+                        					} else if (0 == Or) {
+                        						var Xr = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? Xr.getReserved("AddLewtzL") : Xr.h.AddLewtzL).push("ObolBronzeWorship");
+                        					} else if (5 == Or) {
+                        						var Lr = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? Lr.getReserved("AddLewtzL") : Lr.h.AddLewtzL).push("ObolBronzeDef");
+                        					} else if (1 == Or) {
+                        						var zr = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? zr.getReserved("AddLewtzL") : zr.h.AddLewtzL).push("ObolBronzeTrapping");
+                        					} else {
+                        						var Yr = b.engine.getGameAttribute("DNSM");
+                        						(null != e.AddLewtzL ? Yr.getReserved("AddLewtzL") : Yr.h.AddLewtzL).push("ObolBronzeCons");
+                        					}
+                        					if (3 > Or) {
+                        						var Wr = b.engine.getGameAttribute("DNSM"),
+                        							Zr = null != e.AddLewtzL ? Wr.getReserved("AddLewtzL") : Wr.h.AddLewtzL,
+                        							Hr = b.engine.getGameAttribute("Tasks")[2][1][0];
+                        						Zr.push(9e-4 * (1 + parseNum(Hr) / 20));
+                        					} else {
+                        						var Jr = b.engine.getGameAttribute("DNSM"),
+                        							jr = null != e.AddLewtzL ? Jr.getReserved("AddLewtzL") : Jr.h.AddLewtzL,
+                        							qr = b.engine.getGameAttribute("Tasks")[2][1][0];
+                        						jr.push(0.029 * (1 + parseNum(qr) / 20));
+                        					}
+                        					var Kr = b.engine.getGameAttribute("DNSM");
+                        					(null != e.AddLewtzL ? Kr.getReserved("AddLewtzL") : Kr.h.AddLewtzL).push(1);
+                        					var $r = b.engine.getGameAttribute("DNSM");
+                        					if (((null != e.AddLewtzL ? $r.getReserved("AddLewtzL") : $r.h.AddLewtzL).push("N/A"), 3 > Or)) {
+                        						var eA = b.engine.getGameAttribute("CustomMaps"),
+                        							tA = null != e.DropTables ? eA.getReserved("DropTables") : eA.h.DropTables,
+                        							nA = "DropTable" + Math.round(Or + 14),
+                        							sA = tA,
+                        							aA = null != e[nA] ? sA.getReserved(nA) : sA.h[nA],
+                        							rA = b.engine.getGameAttribute("CustomMaps"),
+                        							AA = null != e.DropTables ? rA.getReserved("DropTables") : rA.h.DropTables,
+                        							lA = "DropTable" + Math.round(Or + 14),
+                        							oA = AA,
+                        							iA = (null != e[lA] ? oA.getReserved(lA) : oA.h[lA]).length - 1,
+                        							uA = b.engine.getGameAttribute("DNSM"),
+                        							gA = null != e.AddLewtzL ? uA.getReserved("AddLewtzL") : uA.h.AddLewtzL;
+                        						aA.splice(iA, 0, gA);
+                        					} else if (4 == Or) {
+                        						var mA = b.engine.getGameAttribute("CustomMaps"),
+                        							dA = null != e.DropTables ? mA.getReserved("DropTables") : mA.h.DropTables,
+                        							cA = null != e.SuperDropTable3 ? dA.getReserved("SuperDropTable3") : dA.h.SuperDropTable3,
+                        							pA = b.engine.getGameAttribute("CustomMaps"),
+                        							hA = null != e.DropTables ? pA.getReserved("DropTables") : pA.h.DropTables,
+                        							bA = (null != e.SuperDropTable3 ? hA.getReserved("SuperDropTable3") : hA.h.SuperDropTable3).length - 1,
+                        							fA = b.engine.getGameAttribute("DNSM"),
+                        							yA = null != e.AddLewtzL ? fA.getReserved("AddLewtzL") : fA.h.AddLewtzL;
+                        						cA.splice(bA, 0, yA);
+                        					} else if (3 == Or) {
+                        						var RA = b.engine.getGameAttribute("CustomMaps"),
+                        							vA = null != e.DropTables ? RA.getReserved("DropTables") : RA.h.DropTables,
+                        							FA = null != e.SuperDropTable1 ? vA.getReserved("SuperDropTable1") : vA.h.SuperDropTable1,
+                        							NA = b.engine.getGameAttribute("CustomMaps"),
+                        							_A = null != e.DropTables ? NA.getReserved("DropTables") : NA.h.DropTables,
+                        							IA = (null != e.SuperDropTable1 ? _A.getReserved("SuperDropTable1") : _A.h.SuperDropTable1).length - 1,
+                        							DA = b.engine.getGameAttribute("DNSM"),
+                        							EA = null != e.AddLewtzL ? DA.getReserved("AddLewtzL") : DA.h.AddLewtzL;
+                        						FA.splice(IA, 0, EA);
+                        					} else if (5 == Or) {
+                        						var SA = b.engine.getGameAttribute("CustomMaps"),
+                        							GA = null != e.DropTables ? SA.getReserved("DropTables") : SA.h.DropTables,
+                        							TA = null != e.SuperDropTable2 ? GA.getReserved("SuperDropTable2") : GA.h.SuperDropTable2,
+                        							UA = b.engine.getGameAttribute("CustomMaps"),
+                        							MA = null != e.DropTables ? UA.getReserved("DropTables") : UA.h.DropTables,
+                        							VA = (null != e.SuperDropTable2 ? MA.getReserved("SuperDropTable2") : MA.h.SuperDropTable2).length - 1,
+                        							CA = b.engine.getGameAttribute("DNSM"),
+                        							BA = null != e.AddLewtzL ? CA.getReserved("AddLewtzL") : CA.h.AddLewtzL;
+                        						TA.splice(VA, 0, BA);
+                        					}
+                        				}
+                        			}
+                        		}
+                        	}

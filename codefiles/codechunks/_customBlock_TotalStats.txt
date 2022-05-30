@@ -1,0 +1,923 @@
+                        (H._customBlock_TotalStats = function(s) {
+                        		var a = b.engine.getGameAttribute("DNSM"),
+                        			r = null != e.TotStatMAP ? a.getReserved("TotStatMAP") : a.h.TotStatMAP;
+                        		if (null != e[s] ? r.existsReserved(s) : r.h.hasOwnProperty(s)) {
+                        			var o = b.engine.getGameAttribute("DNSM"),
+                        				i = null != e.TotStatMAP ? o.getReserved("TotStatMAP") : o.h.TotStatMAP;
+                        			return null != e[s] ? i.getReserved(s) : i.h[s];
+                        		}
+                        		var u = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		null != e.TotalStatsDN ? u.setReserved("TotalStatsDN", 0) : (u.h.TotalStatsDN = 0);
+                        		var m = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		null != e.TotalStatsDT ? m.setReserved("TotalStatsDT", "") : (m.h.TotalStatsDT = "");
+                        		var c = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		null != e.TotalStatsDRI ? c.setReserved("TotalStatsDRI", 0) : (c.h.TotalStatsDRI = 0);
+                        		var h = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		if ((null != e.TotalStatsDRI2 ? h.setReserved("TotalStatsDRI2", 0) : (h.h.TotalStatsDRI2 = 0), "calcEtcBonuses" == s)) {
+                        			var f = b.engine.getGameAttribute("DNSM"),
+                        				y = new p();
+                        			null != e.TotalStatsETCmap ? f.setReserved("TotalStatsETCmap", y) : (f.h.TotalStatsETCmap = y);
+                        			var R = b.engine.getGameAttribute("DNSM"),
+                        				v = [];
+                        			null != e.TotalStatsETCmap2List ? R.setReserved("TotalStatsETCmap2List", v) : (R.h.TotalStatsETCmap2List = v);
+                        			for (var F = b.engine.getGameAttribute("CustomMaps"), N = (null != e.IDforETCbonus ? F.getReserved("IDforETCbonus") : F.h.IDforETCbonus).keys(); N.hasNext();) {
+                        				var _ = N.next(),
+                        					I = b.engine.getGameAttribute("DNSM"),
+                        					D = null != e.TotalStatsETCmap2List ? I.getReserved("TotalStatsETCmap2List") : I.h.TotalStatsETCmap2List,
+                        					E = b.engine.getGameAttribute("CustomMaps"),
+                        					S = null != e.IDforETCbonus ? E.getReserved("IDforETCbonus") : E.h.IDforETCbonus,
+                        					G = "" + _;
+                        				D.push(null != e[G] ? S.getReserved(G) : S.h[G]);
+                        			}
+                        		}
+                        		var T = b.engine.getGameAttribute("DNSM"),
+                        			M = new p();
+                        		null != e.TotalStatsDM ? T.setReserved("TotalStatsDM", M) : (T.h.TotalStatsDM = M);
+                        		var V = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		null != e.TotalStatsDT2 ? V.setReserved("TotalStatsDT2", "") : (V.h.TotalStatsDT2 = "");
+                        		for (var C = 0; 2 > C;) {
+                        			var B = C++,
+                        				P = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        			null != e.TotalStatsDRI ? P.setReserved("TotalStatsDRI", B) : (P.h.TotalStatsDRI = B);
+                        			for (var O = 0,
+                        					x = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Q = null != e.TotalStatsDRI ? x.getReserved("TotalStatsDRI") : x.h.TotalStatsDRI,
+                        					X = Math.round(8 + 8 * (1 - parseNum(Q))); O < X;) {
+                        				var L = O++,
+                        					z = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        				if ((null != e.TotalStatsDRI2 ? z.setReserved("TotalStatsDRI2", L) : (z.h.TotalStatsDRI2 = L), -1 != w._customBlock_Dungon()))
+                        					if (-1 != w._customBlock_Dungon()) var Y = b.engine.getGameAttribute("EquipmentOrder"),
+                        						W = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Z = null != e.TotalStatsDRI ? W.getReserved("TotalStatsDRI") : W.h.TotalStatsDRI,
+                        						J = -1 != ("" + g.string(Y[0 | parseNum(Z)][L])).indexOf("Dung");
+                        					else J = !1;
+                        				else J = !0;
+                        				if (J) var j = b.engine.getGameAttribute("EquipmentOrder"),
+                        					q = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					K = null != e.TotalStatsDRI ? q.getReserved("TotalStatsDRI") : q.h.TotalStatsDRI,
+                        					$ = "Blank" != j[0 | parseNum(K)][L];
+                        				else $ = !1;
+                        				if ($) {
+                        					if (-1 != s.indexOf("Power")) {
+                        						var ee = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        						null != e.TotalStatsDT2 ? ee.setReserved("TotalStatsDT2", "NOstats") : (ee.h.TotalStatsDT2 = "NOstats");
+                        						var te = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        						if (0 == (null != e.TotalStatsDRI ? te.getReserved("TotalStatsDRI") : te.h.TotalStatsDRI)) {
+                        							var ne = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								se = s.substring(0, s.indexOf("_"));
+                        							null != e.TotalStatsDT ? ne.setReserved("TotalStatsDT", se) : (ne.h.TotalStatsDT = se);
+                        							for (var ae = 0, re = b.engine.getGameAttribute("CustomLists"), Ae = (null != e.PowerSuffixes ? re.getReserved("PowerSuffixes") : re.h.PowerSuffixes).length; ae < Ae;) {
+                        								var le = ae++,
+                        									oe = b.engine.getGameAttribute("EquipmentOrder"),
+                        									ie = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									ue = null != e.TotalStatsDRI ? ie.getReserved("TotalStatsDRI") : ie.h.TotalStatsDRI,
+                        									ge = oe[0 | parseNum(ue)],
+                        									me = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									de = null != e.TotalStatsDRI2 ? me.getReserved("TotalStatsDRI2") : me.h.TotalStatsDRI2,
+                        									ce = "" + g.string(ge[0 | parseNum(de)]),
+                        									pe = b.engine.getGameAttribute("CustomLists");
+                        								if (-1 != ce.indexOf("" + g.string((null != e.PowerSuffixes ? pe.getReserved("PowerSuffixes") : pe.h.PowerSuffixes)[le]))) {
+                        									var he = b.engine.getGameAttribute("CustomLists"),
+                        										be = (null != e.PowerSuffixes ? he.getReserved("PowerSuffixes") : he.h.PowerSuffixes)[le],
+                        										fe = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        									if (be == (null != e.TotalStatsDT ? fe.getReserved("TotalStatsDT") : fe.h.TotalStatsDT)) {
+                        										var ye = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        										null != e.TotalStatsDT2 ? ye.setReserved("TotalStatsDT2", "YESstats") : (ye.h.TotalStatsDT2 = "YESstats");
+                        									}
+                        									break;
+                        								}
+                        								var Re = b.engine.getGameAttribute("CustomLists");
+                        								if (le + 1 == (null != e.PowerSuffixes ? Re.getReserved("PowerSuffixes") : Re.h.PowerSuffixes).length) var ve = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									Fe = "Weapon" == (null != e.TotalStatsDT ? ve.getReserved("TotalStatsDT") : ve.h.TotalStatsDT);
+                        								else Fe = !1;
+                        								if (Fe) {
+                        									var Ne = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        									null != e.TotalStatsDT2 ? Ne.setReserved("TotalStatsDT2", "YESstats") : (Ne.h.TotalStatsDT2 = "YESstats");
+                        								}
+                        							}
+                        						} else {
+                        							var _e = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								Ie = s.substring(0, s.indexOf("_"));
+                        							null != e.TotalStatsDT ? _e.setReserved("TotalStatsDT", Ie) : (_e.h.TotalStatsDT = Ie);
+                        							var De = b.engine.getGameAttribute("CustomLists"),
+                        								Ee = null != e.PowerSuffixes ? De.getReserved("PowerSuffixes") : De.h.PowerSuffixes,
+                        								Se = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        							if (Ee.indexOf(null != e.TotalStatsDT ? Se.getReserved("TotalStatsDT") : Se.h.TotalStatsDT) == L) {
+                        								var Ge = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        								null != e.TotalStatsDT2 ? Ge.setReserved("TotalStatsDT2", "YESstats") : (Ge.h.TotalStatsDT2 = "YESstats");
+                        							}
+                        						}
+                        						var Te = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        						if ("YESstats" == (null != e.TotalStatsDT2 ? Te.getReserved("TotalStatsDT2") : Te.h.TotalStatsDT2)) {
+                        							var Ue = b.engine.getGameAttribute("EquipmentMap"),
+                        								Me = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								Ve = null != e.TotalStatsDRI ? Me.getReserved("TotalStatsDRI") : Me.h.TotalStatsDRI,
+                        								Ce = Ue[0 | parseNum(Ve)][L];
+                        							if (null != e.Weapon_Power ? Ce.existsReserved("Weapon_Power") : Ce.h.hasOwnProperty("Weapon_Power")) {
+                        								var Be = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									Pe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									Oe = null != e.TotalStatsDN ? Pe.getReserved("TotalStatsDN") : Pe.h.TotalStatsDN,
+                        									we = parseNum(Oe),
+                        									ke = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        									xe = b.engine.getGameAttribute("EquipmentOrder"),
+                        									Qe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									Xe = null != e.TotalStatsDRI ? Qe.getReserved("TotalStatsDRI") : Qe.h.TotalStatsDRI,
+                        									Le = "" + g.string(xe[0 | parseNum(Xe)][L]),
+                        									ze = ke,
+                        									Ye = null != e[Le] ? ze.getReserved(Le) : ze.h[Le],
+                        									We = null != e.Weapon_Power ? Ye.getReserved("Weapon_Power") : Ye.h.Weapon_Power,
+                        									Ze = parseNum(We),
+                        									He = b.engine.getGameAttribute("EquipmentMap"),
+                        									Je = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									je = null != e.TotalStatsDRI ? Je.getReserved("TotalStatsDRI") : Je.h.TotalStatsDRI,
+                        									qe = He[0 | parseNum(je)][L],
+                        									Ke = null != e.Weapon_Power ? qe.getReserved("Weapon_Power") : qe.h.Weapon_Power,
+                        									$e = Be,
+                        									et = we + (Ze + parseNum(Ke));
+                        								null != e.TotalStatsDN ? $e.setReserved("TotalStatsDN", et) : ($e.h.TotalStatsDN = et);
+                        							} else {
+                        								var tt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									nt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									st = null != e.TotalStatsDN ? nt.getReserved("TotalStatsDN") : nt.h.TotalStatsDN,
+                        									at = parseNum(st),
+                        									rt = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        									At = b.engine.getGameAttribute("EquipmentOrder"),
+                        									lt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									ot = null != e.TotalStatsDRI ? lt.getReserved("TotalStatsDRI") : lt.h.TotalStatsDRI,
+                        									it = "" + g.string(At[0 | parseNum(ot)][L]),
+                        									ut = rt,
+                        									gt = null != e[it] ? ut.getReserved(it) : ut.h[it],
+                        									mt = null != e.Weapon_Power ? gt.getReserved("Weapon_Power") : gt.h.Weapon_Power,
+                        									dt = tt,
+                        									ct = at + parseNum(mt);
+                        								null != e.TotalStatsDN ? dt.setReserved("TotalStatsDN", ct) : (dt.h.TotalStatsDN = ct);
+                        							}
+                        						}
+                        					} else {
+                        						var pt = b.engine.getGameAttribute("EquipmentMap"),
+                        							ht = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							bt = null != e.TotalStatsDRI ? ht.getReserved("TotalStatsDRI") : ht.h.TotalStatsDRI,
+                        							ft = pt[0 | parseNum(bt)][L];
+                        						if (null != e[s] ? ft.existsReserved(s) : ft.h.hasOwnProperty(s)) {
+                        							var yt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								Rt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								vt = null != e.TotalStatsDN ? Rt.getReserved("TotalStatsDN") : Rt.h.TotalStatsDN,
+                        								Ft = parseNum(vt),
+                        								Nt = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        								_t = b.engine.getGameAttribute("EquipmentOrder"),
+                        								It = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								Dt = null != e.TotalStatsDRI ? It.getReserved("TotalStatsDRI") : It.h.TotalStatsDRI,
+                        								Et = "" + g.string(_t[0 | parseNum(Dt)][L]),
+                        								St = Nt,
+                        								Gt = null != e[Et] ? St.getReserved(Et) : St.h[Et],
+                        								Tt = null != e[s] ? Gt.getReserved(s) : Gt.h[s],
+                        								Ut = parseNum(Tt),
+                        								Mt = b.engine.getGameAttribute("EquipmentMap"),
+                        								Vt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								Ct = null != e.TotalStatsDRI ? Vt.getReserved("TotalStatsDRI") : Vt.h.TotalStatsDRI,
+                        								Bt = Mt[0 | parseNum(Ct)][L],
+                        								Pt = null != e[s] ? Bt.getReserved(s) : Bt.h[s],
+                        								Ot = yt,
+                        								wt = Ft + (Ut + parseNum(Pt));
+                        							null != e.TotalStatsDN ? Ot.setReserved("TotalStatsDN", wt) : (Ot.h.TotalStatsDN = wt);
+                        						} else {
+                        							var kt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								xt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								Qt = null != e.TotalStatsDN ? xt.getReserved("TotalStatsDN") : xt.h.TotalStatsDN,
+                        								Xt = parseNum(Qt),
+                        								Lt = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        								zt = b.engine.getGameAttribute("EquipmentOrder"),
+                        								Yt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        								Wt = null != e.TotalStatsDRI ? Yt.getReserved("TotalStatsDRI") : Yt.h.TotalStatsDRI,
+                        								Zt = "" + g.string(zt[0 | parseNum(Wt)][L]),
+                        								Ht = Lt,
+                        								Jt = null != e[Zt] ? Ht.getReserved(Zt) : Ht.h[Zt],
+                        								jt = null != e[s] ? Jt.getReserved(s) : Jt.h[s],
+                        								qt = kt,
+                        								Kt = Xt + parseNum(jt);
+                        							null != e.TotalStatsDN ? qt.setReserved("TotalStatsDN", Kt) : (qt.h.TotalStatsDN = Kt);
+                        						}
+                        					}
+                        					if ("calcEtcBonuses" == s) {
+                        						var $t = b.engine.getGameAttribute("DNSM"),
+                        							en = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        							tn = b.engine.getGameAttribute("EquipmentOrder"),
+                        							nn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							sn = null != e.TotalStatsDRI ? nn.getReserved("TotalStatsDRI") : nn.h.TotalStatsDRI,
+                        							an = "" + g.string(tn[0 | parseNum(sn)][L]),
+                        							rn = en,
+                        							An = $t,
+                        							ln = null != e[an] ? rn.getReserved(an) : rn.h[an];
+                        						null != e.TotalStatsDM ? An.setReserved("TotalStatsDM", ln) : (An.h.TotalStatsDM = ln);
+                        						for (var on = 0; 2 > on;) {
+                        							var un = on++,
+                        								gn = b.engine.getGameAttribute("DNSM"),
+                        								mn = null != e.TotalStatsDM ? gn.getReserved("TotalStatsDM") : gn.h.TotalStatsDM,
+                        								dn = "UQ" + Math.round(un + 1) + "txt",
+                        								cn = mn;
+                        							if ("0" == (null != e[dn] ? cn.getReserved(dn) : cn.h[dn])) {
+                        								var pn = b.engine.getGameAttribute("EquipmentMap"),
+                        									hn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									bn = null != e.TotalStatsDRI ? hn.getReserved("TotalStatsDRI") : hn.h.TotalStatsDRI,
+                        									fn = pn[0 | parseNum(bn)],
+                        									yn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									Rn = null != e.TotalStatsDRI2 ? yn.getReserved("TotalStatsDRI2") : yn.h.TotalStatsDRI2,
+                        									vn = parseNum(Rn),
+                        									Fn = "UQ" + Math.round(un + 1) + "val",
+                        									Nn = fn[0 | vn],
+                        									_n = null != e[Fn] ? Nn.getReserved(Fn) : Nn.h[Fn];
+                        								if (0 < parseNum(_n)) var In = b.engine.getGameAttribute("EquipmentMap"),
+                        									Dn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									En = null != e.TotalStatsDRI ? Dn.getReserved("TotalStatsDRI") : Dn.h.TotalStatsDRI,
+                        									Sn = In[0 | parseNum(En)],
+                        									Gn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									Tn = null != e.TotalStatsDRI2 ? Gn.getReserved("TotalStatsDRI2") : Gn.h.TotalStatsDRI2,
+                        									Un = parseNum(Tn),
+                        									Mn = "UQ" + Math.round(un + 1) + "txt",
+                        									Vn = Sn[0 | Un],
+                        									Cn = null != e[Mn] ? Vn.existsReserved(Mn) : Vn.h.hasOwnProperty(Mn);
+                        								else Cn = !1;
+                        							} else Cn = !1;
+                        							if (Cn) {
+                        								var Bn = b.engine.getGameAttribute("DNSM"),
+                        									Pn = b.engine.getGameAttribute("EquipmentMap"),
+                        									On = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									wn = null != e.TotalStatsDRI ? On.getReserved("TotalStatsDRI") : On.h.TotalStatsDRI,
+                        									kn = Pn[0 | parseNum(wn)],
+                        									xn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									Qn = null != e.TotalStatsDRI2 ? xn.getReserved("TotalStatsDRI2") : xn.h.TotalStatsDRI2,
+                        									Xn = parseNum(Qn),
+                        									Ln = "UQ" + Math.round(un + 1) + "txt",
+                        									zn = kn[0 | Xn],
+                        									Yn = Bn,
+                        									Wn = null != e[Ln] ? zn.getReserved(Ln) : zn.h[Ln];
+                        								null != e.TotalStatsDT2 ? Yn.setReserved("TotalStatsDT2", Wn) : (Yn.h.TotalStatsDT2 = Wn);
+                        								var Zn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        								if (0 == (null != e.TotalStatsDRI ? Zn.getReserved("TotalStatsDRI") : Zn.h.TotalStatsDRI)) var Hn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									Jn = 3 == (null != e.TotalStatsDRI2 ? Hn.getReserved("TotalStatsDRI2") : Hn.h.TotalStatsDRI2);
+                        								else Jn = !1;
+                        								if (Jn && 1 == A._customBlock_chipBonuses("pend")) var jn = !0;
+                        								else {
+                        									var qn = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        									if (0 == (null != e.TotalStatsDRI ? qn.getReserved("TotalStatsDRI") : qn.h.TotalStatsDRI)) var Kn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										$n = 9 == (null != e.TotalStatsDRI2 ? Kn.getReserved("TotalStatsDRI2") : Kn.h.TotalStatsDRI2);
+                        									else $n = !1;
+                        									jn = $n && 1 == A._customBlock_chipBonuses("key1");
+                        								}
+                        								if (jn) var es = !0;
+                        								else {
+                        									var ts = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        									if (0 == (null != e.TotalStatsDRI ? ts.getReserved("TotalStatsDRI") : ts.h.TotalStatsDRI)) var ns = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										ss = 10 == (null != e.TotalStatsDRI2 ? ns.getReserved("TotalStatsDRI2") : ns.h.TotalStatsDRI2);
+                        									else ss = !1;
+                        									es = ss && 1 == A._customBlock_chipBonuses("troph");
+                        								}
+                        								if (es) {
+                        									var as = b.engine.getGameAttribute("DNSM"),
+                        										rs = null != e.TotalStatsETCmap ? as.getReserved("TotalStatsETCmap") : as.h.TotalStatsETCmap,
+                        										As = b.engine.getGameAttribute("DNSM"),
+                        										ls = "" + g.string(null != e.TotalStatsDT2 ? As.getReserved("TotalStatsDT2") : As.h.TotalStatsDT2),
+                        										os = b.engine.getGameAttribute("DNSM"),
+                        										is = null != e.TotalStatsETCmap ? os.getReserved("TotalStatsETCmap") : os.h.TotalStatsETCmap,
+                        										us = b.engine.getGameAttribute("DNSM"),
+                        										gs = "" + g.string(null != e.TotalStatsDT2 ? us.getReserved("TotalStatsDT2") : us.h.TotalStatsDT2),
+                        										ms = is,
+                        										ds = null != e[gs] ? ms.getReserved(gs) : ms.h[gs],
+                        										cs = parseNum(ds),
+                        										ps = b.engine.getGameAttribute("EquipmentMap"),
+                        										hs = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										bs = null != e.TotalStatsDRI ? hs.getReserved("TotalStatsDRI") : hs.h.TotalStatsDRI,
+                        										fs = ps[0 | parseNum(bs)],
+                        										ys = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Rs = null != e.TotalStatsDRI2 ? ys.getReserved("TotalStatsDRI2") : ys.h.TotalStatsDRI2,
+                        										vs = parseNum(Rs),
+                        										Fs = "UQ" + Math.round(un + 1) + "val",
+                        										Ns = fs[0 | vs],
+                        										_s = null != e[Fs] ? Ns.getReserved(Fs) : Ns.h[Fs],
+                        										Is = rs,
+                        										Ds = cs + 2 * parseNum(_s);
+                        									null != e[ls] ? Is.setReserved(ls, Ds) : (Is.h[ls] = Ds);
+                        								} else {
+                        									var Es = b.engine.getGameAttribute("DNSM"),
+                        										Ss = null != e.TotalStatsETCmap ? Es.getReserved("TotalStatsETCmap") : Es.h.TotalStatsETCmap,
+                        										Gs = b.engine.getGameAttribute("DNSM"),
+                        										Ts = "" + g.string(null != e.TotalStatsDT2 ? Gs.getReserved("TotalStatsDT2") : Gs.h.TotalStatsDT2),
+                        										Us = b.engine.getGameAttribute("DNSM"),
+                        										Ms = null != e.TotalStatsETCmap ? Us.getReserved("TotalStatsETCmap") : Us.h.TotalStatsETCmap,
+                        										Vs = b.engine.getGameAttribute("DNSM"),
+                        										Cs = "" + g.string(null != e.TotalStatsDT2 ? Vs.getReserved("TotalStatsDT2") : Vs.h.TotalStatsDT2),
+                        										Bs = Ms,
+                        										Ps = null != e[Cs] ? Bs.getReserved(Cs) : Bs.h[Cs],
+                        										Os = parseNum(Ps),
+                        										ws = b.engine.getGameAttribute("EquipmentMap"),
+                        										ks = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										xs = null != e.TotalStatsDRI ? ks.getReserved("TotalStatsDRI") : ks.h.TotalStatsDRI,
+                        										Qs = ws[0 | parseNum(xs)],
+                        										Xs = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Ls = null != e.TotalStatsDRI2 ? Xs.getReserved("TotalStatsDRI2") : Xs.h.TotalStatsDRI2,
+                        										zs = parseNum(Ls),
+                        										Ys = "UQ" + Math.round(un + 1) + "val",
+                        										Ws = Qs[0 | zs],
+                        										Zs = null != e[Ys] ? Ws.getReserved(Ys) : Ws.h[Ys],
+                        										Hs = Ss,
+                        										Js = Os + parseNum(Zs);
+                        									null != e[Ts] ? Hs.setReserved(Ts, Js) : (Hs.h[Ts] = Js);
+                        								}
+                        							} else {
+                        								var js = b.engine.getGameAttribute("DNSM"),
+                        									qs = b.engine.getGameAttribute("DNSM"),
+                        									Ks = null != e.TotalStatsDM ? qs.getReserved("TotalStatsDM") : qs.h.TotalStatsDM,
+                        									$s = "UQ" + Math.round(un + 1) + "txt",
+                        									ea = Ks,
+                        									ta = js,
+                        									na = null != e[$s] ? ea.getReserved($s) : ea.h[$s];
+                        								null != e.TotalStatsDT2 ? ta.setReserved("TotalStatsDT2", na) : (ta.h.TotalStatsDT2 = na);
+                        								var sa = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        								if (0 == (null != e.TotalStatsDRI ? sa.getReserved("TotalStatsDRI") : sa.h.TotalStatsDRI)) var aa = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        									ra = 3 == (null != e.TotalStatsDRI2 ? aa.getReserved("TotalStatsDRI2") : aa.h.TotalStatsDRI2);
+                        								else ra = !1;
+                        								if (ra && 1 == A._customBlock_chipBonuses("pend")) var Aa = !0;
+                        								else {
+                        									var la = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        									if (0 == (null != e.TotalStatsDRI ? la.getReserved("TotalStatsDRI") : la.h.TotalStatsDRI)) var oa = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										ia = 9 == (null != e.TotalStatsDRI2 ? oa.getReserved("TotalStatsDRI2") : oa.h.TotalStatsDRI2);
+                        									else ia = !1;
+                        									Aa = ia && 1 == A._customBlock_chipBonuses("key1");
+                        								}
+                        								if (Aa) var ua = !0;
+                        								else {
+                        									var ga = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        									if (0 == (null != e.TotalStatsDRI ? ga.getReserved("TotalStatsDRI") : ga.h.TotalStatsDRI)) var ma = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										da = 10 == (null != e.TotalStatsDRI2 ? ma.getReserved("TotalStatsDRI2") : ma.h.TotalStatsDRI2);
+                        									else da = !1;
+                        									ua = da && 1 == A._customBlock_chipBonuses("troph");
+                        								}
+                        								if (ua) {
+                        									var ca = b.engine.getGameAttribute("DNSM"),
+                        										pa = null != e.TotalStatsETCmap ? ca.getReserved("TotalStatsETCmap") : ca.h.TotalStatsETCmap,
+                        										ha = b.engine.getGameAttribute("DNSM"),
+                        										ba = "" + g.string(null != e.TotalStatsDT2 ? ha.getReserved("TotalStatsDT2") : ha.h.TotalStatsDT2),
+                        										fa = b.engine.getGameAttribute("DNSM"),
+                        										ya = null != e.TotalStatsETCmap ? fa.getReserved("TotalStatsETCmap") : fa.h.TotalStatsETCmap,
+                        										Ra = b.engine.getGameAttribute("DNSM"),
+                        										va = "" + g.string(null != e.TotalStatsDT2 ? Ra.getReserved("TotalStatsDT2") : Ra.h.TotalStatsDT2),
+                        										Fa = ya,
+                        										Na = null != e[va] ? Fa.getReserved(va) : Fa.h[va],
+                        										_a = parseNum(Na),
+                        										Ia = b.engine.getGameAttribute("DNSM"),
+                        										Da = null != e.TotalStatsDM ? Ia.getReserved("TotalStatsDM") : Ia.h.TotalStatsDM,
+                        										Ea = "UQ" + Math.round(un + 1) + "val",
+                        										Sa = Da,
+                        										Ga = null != e[Ea] ? Sa.getReserved(Ea) : Sa.h[Ea],
+                        										Ta = parseNum(Ga),
+                        										Ua = b.engine.getGameAttribute("EquipmentMap"),
+                        										Ma = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Va = null != e.TotalStatsDRI ? Ma.getReserved("TotalStatsDRI") : Ma.h.TotalStatsDRI,
+                        										Ca = Ua[0 | parseNum(Va)],
+                        										Ba = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										Pa = null != e.TotalStatsDRI2 ? Ba.getReserved("TotalStatsDRI2") : Ba.h.TotalStatsDRI2,
+                        										Oa = parseNum(Pa),
+                        										wa = "UQ" + Math.round(un + 1) + "val",
+                        										ka = Ca[0 | Oa],
+                        										xa = null != e[wa] ? ka.getReserved(wa) : ka.h[wa],
+                        										Qa = pa,
+                        										Xa = _a + 2 * (Ta + parseNum(xa));
+                        									null != e[ba] ? Qa.setReserved(ba, Xa) : (Qa.h[ba] = Xa);
+                        								} else {
+                        									var La = b.engine.getGameAttribute("DNSM"),
+                        										za = null != e.TotalStatsETCmap ? La.getReserved("TotalStatsETCmap") : La.h.TotalStatsETCmap,
+                        										Ya = b.engine.getGameAttribute("DNSM"),
+                        										Wa = "" + g.string(null != e.TotalStatsDT2 ? Ya.getReserved("TotalStatsDT2") : Ya.h.TotalStatsDT2),
+                        										Za = b.engine.getGameAttribute("DNSM"),
+                        										Ha = null != e.TotalStatsETCmap ? Za.getReserved("TotalStatsETCmap") : Za.h.TotalStatsETCmap,
+                        										Ja = b.engine.getGameAttribute("DNSM"),
+                        										ja = "" + g.string(null != e.TotalStatsDT2 ? Ja.getReserved("TotalStatsDT2") : Ja.h.TotalStatsDT2),
+                        										qa = Ha,
+                        										Ka = null != e[ja] ? qa.getReserved(ja) : qa.h[ja],
+                        										$a = parseNum(Ka),
+                        										er = b.engine.getGameAttribute("DNSM"),
+                        										tr = null != e.TotalStatsDM ? er.getReserved("TotalStatsDM") : er.h.TotalStatsDM,
+                        										nr = "UQ" + Math.round(un + 1) + "val",
+                        										sr = tr,
+                        										ar = null != e[nr] ? sr.getReserved(nr) : sr.h[nr],
+                        										rr = parseNum(ar),
+                        										Ar = b.engine.getGameAttribute("EquipmentMap"),
+                        										lr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										or = null != e.TotalStatsDRI ? lr.getReserved("TotalStatsDRI") : lr.h.TotalStatsDRI,
+                        										ir = Ar[0 | parseNum(or)],
+                        										ur = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        										gr = null != e.TotalStatsDRI2 ? ur.getReserved("TotalStatsDRI2") : ur.h.TotalStatsDRI2,
+                        										mr = parseNum(gr),
+                        										dr = "UQ" + Math.round(un + 1) + "val",
+                        										cr = ir[0 | mr],
+                        										pr = null != e[dr] ? cr.getReserved(dr) : cr.h[dr],
+                        										hr = za,
+                        										br = $a + (rr + parseNum(pr));
+                        									null != e[Wa] ? hr.setReserved(Wa, br) : (hr.h[Wa] = br);
+                        								}
+                        							}
+                        						}
+                        					}
+                        				}
+                        			}
+                        		}
+                        		if (-1 == w._customBlock_Dungon())
+                        			if ("STR" == s) {
+                        				var fr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					yr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Rr = null != e.TotalStatsDN ? yr.getReserved("TotalStatsDN") : yr.h.TotalStatsDN,
+                        					vr = parseNum(Rr) * (1 + (t._customBlock_GetTalentNumber(1, 96) + t._customBlock_StampBonusOfTypeX("PctSTR")) / 100);
+                        				null != e.TotalStatsDN ? fr.setReserved("TotalStatsDN", vr) : (fr.h.TotalStatsDN = vr);
+                        			} else if ("AGI" == s) {
+                        			var Fr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Nr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				_r = null != e.TotalStatsDN ? Nr.getReserved("TotalStatsDN") : Nr.h.TotalStatsDN,
+                        				Ir = parseNum(_r) * (1 + (t._customBlock_GetTalentNumber(1, 276) + t._customBlock_StampBonusOfTypeX("PctAGI")) / 100);
+                        			null != e.TotalStatsDN ? Fr.setReserved("TotalStatsDN", Ir) : (Fr.h.TotalStatsDN = Ir);
+                        		} else if ("WIS" == s) {
+                        			var Dr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Er = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Sr = null != e.TotalStatsDN ? Er.getReserved("TotalStatsDN") : Er.h.TotalStatsDN,
+                        				Gr = parseNum(Sr) * (1 + (t._customBlock_GetTalentNumber(1, 456) + t._customBlock_StampBonusOfTypeX("PctWIS")) / 100);
+                        			null != e.TotalStatsDN ? Dr.setReserved("TotalStatsDN", Gr) : (Dr.h.TotalStatsDN = Gr);
+                        		} else if ("LUK" == s) {
+                        			var Tr = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Ur = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Mr = null != e.TotalStatsDN ? Ur.getReserved("TotalStatsDN") : Ur.h.TotalStatsDN,
+                        				Vr = parseNum(Mr) * (1 + (t._customBlock_GetTalentNumber(1, 21) + t._customBlock_StampBonusOfTypeX("PctLUK")) / 100);
+                        			null != e.TotalStatsDN ? Tr.setReserved("TotalStatsDN", Vr) : (Tr.h.TotalStatsDN = Vr);
+                        		}
+                        		if (-1 == w._customBlock_Dungon()) {
+                        			var Cr = b.engine.getGameAttribute("DNSM");
+                        			null != e.TotalStatsDN2 ? Cr.setReserved("TotalStatsDN2", 0) : (Cr.h.TotalStatsDN2 = 0);
+                        			for (var Br = 0, Pr = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ScrollCircleINFO")[43].length; Br < Pr;) {
+                        				var Or = Br++;
+                        				if (b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ScrollCircleINFO")[43][Or][0] == s) {
+                        					var wr = b.engine.getGameAttribute("DNSM"),
+                        						kr = b.engine.getGameAttribute("DNSM"),
+                        						xr = null != e.TotalStatsDN2 ? kr.getReserved("TotalStatsDN2") : kr.h.TotalStatsDN2,
+                        						Qr = parseNum(xr),
+                        						Xr = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ScrollCircleINFO")[43][Or][3],
+                        						Lr = wr,
+                        						zr = Qr + parseNum(Xr);
+                        					null != e.TotalStatsDN2 ? Lr.setReserved("TotalStatsDN2", zr) : (Lr.h.TotalStatsDN2 = zr);
+                        				}
+                        				if ("calcEtcBonuses" == s) {
+                        					var Yr = b.engine.getGameAttribute("DNSM");
+                        					if (Sb.contains(null != e.TotalStatsETCmap2List ? Yr.getReserved("TotalStatsETCmap2List") : Yr.h.TotalStatsETCmap2List, b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ScrollCircleINFO")[43][Or][0])) {
+                        						var Wr = b.engine.getGameAttribute("DNSM"),
+                        							Zr = null != e.TotalStatsETCmap ? Wr.getReserved("TotalStatsETCmap") : Wr.h.TotalStatsETCmap,
+                        							Hr = "" + g.string(b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ScrollCircleINFO")[43][Or][0]),
+                        							Jr = b.engine.getGameAttribute("DNSM"),
+                        							jr = null != e.TotalStatsETCmap ? Jr.getReserved("TotalStatsETCmap") : Jr.h.TotalStatsETCmap,
+                        							qr = "" + g.string(b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ScrollCircleINFO")[43][Or][0]),
+                        							Kr = jr,
+                        							$r = null != e[qr] ? Kr.getReserved(qr) : Kr.h[qr],
+                        							eA = null == $r ? 0 : "number" == typeof $r ? d.__cast($r, k) : "number" == typeof $r && (0 | $r) === $r ? d.__cast($r, l) : "boolean" == typeof $r ? d.__cast($r, n) ? 1 : 0 : "string" == typeof $r ? parseFloat($r) : parseFloat(g.string($r)),
+                        							tA = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ScrollCircleINFO")[43][Or][3],
+                        							nA = Zr,
+                        							sA = eA + parseNum(tA);
+                        						null != e[Hr] ? nA.setReserved(Hr, sA) : (nA.h[Hr] = sA);
+                        					}
+                        				}
+                        			}
+                        			if ("STR" == s) {
+                        				var aA = b.engine.getGameAttribute("DNSM"),
+                        					rA = b.engine.getGameAttribute("DNSM"),
+                        					AA = null != e.TotalStatsDN2 ? rA.getReserved("TotalStatsDN2") : rA.h.TotalStatsDN2,
+                        					lA = parseNum(AA) * (1 + t._customBlock_GetTalentNumber(1, 111) / 100);
+                        				null != e.TotalStatsDN2 ? aA.setReserved("TotalStatsDN2", lA) : (aA.h.TotalStatsDN2 = lA);
+                        			} else if ("AGI" == s) {
+                        				var oA = b.engine.getGameAttribute("DNSM"),
+                        					iA = b.engine.getGameAttribute("DNSM"),
+                        					uA = null != e.TotalStatsDN2 ? iA.getReserved("TotalStatsDN2") : iA.h.TotalStatsDN2,
+                        					gA = parseNum(uA) * (1 + t._customBlock_GetTalentNumber(1, 291) / 100);
+                        				null != e.TotalStatsDN2 ? oA.setReserved("TotalStatsDN2", gA) : (oA.h.TotalStatsDN2 = gA);
+                        			} else if ("WIS" == s) {
+                        				var mA = b.engine.getGameAttribute("DNSM"),
+                        					dA = b.engine.getGameAttribute("DNSM"),
+                        					cA = null != e.TotalStatsDN2 ? dA.getReserved("TotalStatsDN2") : dA.h.TotalStatsDN2,
+                        					pA = parseNum(cA) * (1 + t._customBlock_GetTalentNumber(1, 486) / 100);
+                        				null != e.TotalStatsDN2 ? mA.setReserved("TotalStatsDN2", pA) : (mA.h.TotalStatsDN2 = pA);
+                        			} else if ("LUK" == s) {
+                        				var hA = b.engine.getGameAttribute("DNSM"),
+                        					bA = b.engine.getGameAttribute("DNSM"),
+                        					fA = null != e.TotalStatsDN2 ? bA.getReserved("TotalStatsDN2") : bA.h.TotalStatsDN2,
+                        					yA = parseNum(fA) * (1 + t._customBlock_GetTalentNumber(1, 36) / 100);
+                        				null != e.TotalStatsDN2 ? hA.setReserved("TotalStatsDN2", yA) : (hA.h.TotalStatsDN2 = yA);
+                        			}
+                        			var RA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				vA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				FA = null != e.TotalStatsDN ? vA.getReserved("TotalStatsDN") : vA.h.TotalStatsDN,
+                        				NA = parseNum(FA),
+                        				_A = b.engine.getGameAttribute("DNSM"),
+                        				IA = null != e.TotalStatsDN2 ? _A.getReserved("TotalStatsDN2") : _A.h.TotalStatsDN2,
+                        				DA = NA + parseNum(IA);
+                        			null != e.TotalStatsDN ? RA.setReserved("TotalStatsDN", DA) : (RA.h.TotalStatsDN = DA);
+                        		}
+                        		if ("STR" == s) {
+                        			if (-1 != w._customBlock_Dungon()) {
+                        				var EA = b.engine.getGameAttribute("DNSM"),
+                        					SA = null != e.TotStatMAP ? EA.getReserved("TotStatMAP") : EA.h.TotStatMAP,
+                        					GA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					TA = null != e.TotalStatsDN ? GA.getReserved("TotalStatsDN") : GA.h.TotalStatsDN,
+                        					UA = Math.floor(parseNum(TA));
+                        				null != e[s] ? SA.setReserved(s, UA) : (SA.h[s] = UA);
+                        			} else {
+                        				var MA = b.engine.getGameAttribute("DNSM"),
+                        					VA = null != e.TotStatMAP ? MA.getReserved("TotStatMAP") : MA.h.TotStatMAP,
+                        					CA = b.engine.getGameAttribute("DNSM"),
+                        					BA = null != e.AlchBubbles ? CA.getReserved("AlchBubbles") : CA.h.AlchBubbles,
+                        					PA = null != e.TotalSTR ? BA.getReserved("TotalSTR") : BA.h.TotalSTR,
+                        					OA = parseNum(PA),
+                        					wA = t._customBlock_GetTalentNumber(1, 143) + U._customBlock_EtcBonuses("57"),
+                        					kA = U._customBlock_EtcBonuses("46") + H._customBlock_ArbitraryCode("AllStatPCT"),
+                        					xA = b.engine.getGameAttribute("DNSM"),
+                        					QA = null != e.StarSigns ? xA.getReserved("StarSigns") : xA.h.StarSigns,
+                        					XA = null != e.pctSTR ? QA.getReserved("pctSTR") : QA.h.pctSTR,
+                        					LA = parseNum(XA),
+                        					zA = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					YA = null != e.TotalStatsDN ? zA.getReserved("TotalStatsDN") : zA.h.TotalStatsDN,
+                        					WA = parseNum(YA) + (t._customBlock_GetTalentNumber(1, 10) + (t._customBlock_StampBonusOfTypeX("BaseSTR") + U._customBlock_EtcBonuses("51"))) + (t._customBlock_GetTalentNumber(1, 98) + (H._customBlock_GetBuffBonuses(94, 1) + t._customBlock_GetTalentNumber(2, 142))),
+                        					ZA = b.engine.getGameAttribute("DNSM"),
+                        					HA = null != e.FamBonusQTYs ? ZA.getReserved("FamBonusQTYs") : ZA.h.FamBonusQTYs,
+                        					JA = null != e[14] ? HA.getReserved("14") : HA.h[14],
+                        					jA = parseNum(JA),
+                        					qA = b.engine.getGameAttribute("DNSM"),
+                        					KA = null != e.StarSigns ? qA.getReserved("StarSigns") : qA.h.StarSigns,
+                        					$A = null != e.STR ? KA.getReserved("STR") : KA.h.STR,
+                        					el = Math.floor(OA + (1 + (wA + (kA + LA)) / 100) * (WA + (jA + ((null == $A ? 0 : "number" == typeof $A ? d.__cast($A, k) : "number" == typeof $A && (0 | $A) === $A ? d.__cast($A, l) : "boolean" == typeof $A ? d.__cast($A, n) ? 1 : 0 : "string" == typeof $A ? parseFloat($A) : parseFloat(g.string($A))) + (t._customBlock_TalentCalc(620) + (U._customBlock_CardBonusREAL(9) + (t._customBlock_StampBonusOfTypeX("BaseAllStat") + (H._customBlock_ArbitraryCode("AllStat") + w._customBlock_Labb("SigilBonus", "Blank", 0, 0)))))))));
+                        				null != e[s] ? VA.setReserved(s, el) : (VA.h[s] = el);
+                        			}
+                        			var tl = b.engine.getGameAttribute("DNSM"),
+                        				nl = null != e.TotStatMAP ? tl.getReserved("TotStatMAP") : tl.h.TotStatMAP;
+                        			return null != e[s] ? nl.getReserved(s) : nl.h[s];
+                        		}
+                        		if ("AGI" == s) {
+                        			if (-1 != w._customBlock_Dungon()) {
+                        				var sl = b.engine.getGameAttribute("DNSM"),
+                        					al = null != e.TotStatMAP ? sl.getReserved("TotStatMAP") : sl.h.TotStatMAP,
+                        					rl = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Al = null != e.TotalStatsDN ? rl.getReserved("TotalStatsDN") : rl.h.TotalStatsDN,
+                        					ll = Math.floor(parseNum(Al));
+                        				null != e[s] ? al.setReserved(s, ll) : (al.h[s] = ll);
+                        			} else {
+                        				var ol = b.engine.getGameAttribute("DNSM"),
+                        					il = null != e.TotStatMAP ? ol.getReserved("TotStatMAP") : ol.h.TotStatMAP,
+                        					ul = b.engine.getGameAttribute("DNSM"),
+                        					gl = null != e.AlchBubbles ? ul.getReserved("AlchBubbles") : ul.h.AlchBubbles,
+                        					ml = null != e.TotalAGI ? gl.getReserved("TotalAGI") : gl.h.TotalAGI,
+                        					dl = parseNum(ml),
+                        					cl = t._customBlock_GetTalentNumber(1, 368) + U._customBlock_EtcBonuses("25"),
+                        					pl = U._customBlock_EtcBonuses("46") + H._customBlock_ArbitraryCode("AllStatPCT"),
+                        					hl = b.engine.getGameAttribute("DNSM"),
+                        					bl = null != e.StarSigns ? hl.getReserved("StarSigns") : hl.h.StarSigns,
+                        					fl = null != e.pctAGI ? bl.getReserved("pctAGI") : bl.h.pctAGI,
+                        					yl = parseNum(fl),
+                        					Rl = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					vl = null != e.TotalStatsDN ? Rl.getReserved("TotalStatsDN") : Rl.h.TotalStatsDN,
+                        					Fl = parseNum(vl) + (t._customBlock_GetTalentNumber(1, 11) + (t._customBlock_StampBonusOfTypeX("BaseAGI") + U._customBlock_EtcBonuses("52"))) + t._customBlock_GetTalentNumber(1, 278),
+                        					Nl = b.engine.getGameAttribute("DNSM"),
+                        					_l = null != e.FamBonusQTYs ? Nl.getReserved("FamBonusQTYs") : Nl.h.FamBonusQTYs,
+                        					Il = null != e[38] ? _l.getReserved("38") : _l.h[38],
+                        					Dl = parseNum(Il),
+                        					El = b.engine.getGameAttribute("DNSM"),
+                        					Sl = null != e.StarSigns ? El.getReserved("StarSigns") : El.h.StarSigns,
+                        					Gl = null != e.AGI ? Sl.getReserved("AGI") : Sl.h.AGI,
+                        					Tl = Math.floor(dl + (1 + (cl + (pl + yl)) / 100) * (Fl + (Dl + (parseNum(Gl) + (t._customBlock_TalentCalc(620) + (U._customBlock_CardBonusREAL(7) + (t._customBlock_StampBonusOfTypeX("BaseAllStat") + (H._customBlock_ArbitraryCode("AllStat") + (w._customBlock_Labb("SigilBonus", "Blank", 1, 0) + t._customBlock_GetTalentNumber(2, 367))))))))));
+                        				null != e[s] ? il.setReserved(s, Tl) : (il.h[s] = Tl);
+                        			}
+                        			var Ul = b.engine.getGameAttribute("DNSM"),
+                        				Ml = null != e.TotStatMAP ? Ul.getReserved("TotStatMAP") : Ul.h.TotStatMAP;
+                        			return null != e[s] ? Ml.getReserved(s) : Ml.h[s];
+                        		}
+                        		if ("WIS" == s) {
+                        			if (-1 != w._customBlock_Dungon()) {
+                        				var Vl = b.engine.getGameAttribute("DNSM"),
+                        					Cl = null != e.TotStatMAP ? Vl.getReserved("TotStatMAP") : Vl.h.TotStatMAP,
+                        					Bl = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Pl = null != e.TotalStatsDN ? Bl.getReserved("TotalStatsDN") : Bl.h.TotalStatsDN,
+                        					Ol = Math.floor(parseNum(Pl));
+                        				null != e[s] ? Cl.setReserved(s, Ol) : (Cl.h[s] = Ol);
+                        			} else {
+                        				var wl = b.engine.getGameAttribute("DNSM"),
+                        					kl = null != e.TotStatMAP ? wl.getReserved("TotStatMAP") : wl.h.TotStatMAP,
+                        					xl = b.engine.getGameAttribute("DNSM"),
+                        					Ql = null != e.AlchBubbles ? xl.getReserved("AlchBubbles") : xl.h.AlchBubbles,
+                        					Xl = null != e.TotalWIS ? Ql.getReserved("TotalWIS") : Ql.h.TotalWIS,
+                        					Ll = parseNum(Xl),
+                        					zl = t._customBlock_GetTalentNumber(1, 533) + U._customBlock_EtcBonuses("58"),
+                        					Yl = U._customBlock_EtcBonuses("46") + H._customBlock_ArbitraryCode("AllStatPCT"),
+                        					Wl = b.engine.getGameAttribute("DNSM"),
+                        					Zl = null != e.StarSigns ? Wl.getReserved("StarSigns") : Wl.h.StarSigns,
+                        					Hl = null != e.pctWIS ? Zl.getReserved("pctWIS") : Zl.h.pctWIS,
+                        					Jl = parseNum(Hl),
+                        					jl = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ql = null != e.TotalStatsDN ? jl.getReserved("TotalStatsDN") : jl.h.TotalStatsDN,
+                        					Kl = parseNum(ql) + (t._customBlock_GetTalentNumber(1, 12) + (t._customBlock_StampBonusOfTypeX("BaseWIS") + U._customBlock_EtcBonuses("53"))) + t._customBlock_GetTalentNumber(1, 459),
+                        					$l = b.engine.getGameAttribute("DNSM"),
+                        					eo = null != e.FamBonusQTYs ? $l.getReserved("FamBonusQTYs") : $l.h.FamBonusQTYs,
+                        					to = null != e[62] ? eo.getReserved("62") : eo.h[62],
+                        					no = parseNum(to),
+                        					so = b.engine.getGameAttribute("DNSM"),
+                        					ao = null != e.StarSigns ? so.getReserved("StarSigns") : so.h.StarSigns,
+                        					ro = null != e.WIS ? ao.getReserved("WIS") : ao.h.WIS,
+                        					Ao = Math.floor(Ll + (1 + (zl + (Yl + Jl)) / 100) * (Kl + no + (parseNum(ro) + (t._customBlock_TalentCalc(620) + (U._customBlock_CardBonusREAL(5) + (t._customBlock_StampBonusOfTypeX("BaseAllStat") + (H._customBlock_ArbitraryCode("AllStat") + (w._customBlock_Labb("SigilBonus", "Blank", 2, 0) + t._customBlock_GetTalentNumber(2, 532)))))))));
+                        				null != e[s] ? kl.setReserved(s, Ao) : (kl.h[s] = Ao);
+                        			}
+                        			var lo = b.engine.getGameAttribute("DNSM"),
+                        				oo = null != e.TotStatMAP ? lo.getReserved("TotStatMAP") : lo.h.TotStatMAP;
+                        			return null != e[s] ? oo.getReserved(s) : oo.h[s];
+                        		}
+                        		if ("LUK" == s) {
+                        			if (-1 != w._customBlock_Dungon()) {
+                        				var io = b.engine.getGameAttribute("DNSM"),
+                        					uo = null != e.TotStatMAP ? io.getReserved("TotStatMAP") : io.h.TotStatMAP,
+                        					go = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					mo = null != e.TotalStatsDN ? go.getReserved("TotalStatsDN") : go.h.TotalStatsDN,
+                        					co = Math.floor(parseNum(mo));
+                        				null != e[s] ? uo.setReserved(s, co) : (uo.h[s] = co);
+                        			} else {
+                        				var po = b.engine.getGameAttribute("DNSM"),
+                        					ho = null != e.TotStatMAP ? po.getReserved("TotStatMAP") : po.h.TotStatMAP,
+                        					bo = b.engine.getGameAttribute("DNSM"),
+                        					fo = null != e.AlchBubbles ? bo.getReserved("AlchBubbles") : bo.h.AlchBubbles,
+                        					yo = null != e.TotalLUK ? fo.getReserved("TotalLUK") : fo.h.TotalLUK,
+                        					Ro = parseNum(yo),
+                        					vo = U._customBlock_EtcBonuses("17"),
+                        					Fo = U._customBlock_EtcBonuses("46") + H._customBlock_ArbitraryCode("AllStatPCT"),
+                        					No = b.engine.getGameAttribute("DNSM"),
+                        					_o = null != e.StarSigns ? No.getReserved("StarSigns") : No.h.StarSigns,
+                        					Io = null != e.pctLUK ? _o.getReserved("pctLUK") : _o.h.pctLUK,
+                        					Do = parseNum(Io),
+                        					Eo = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					So = null != e.TotalStatsDN ? Eo.getReserved("TotalStatsDN") : Eo.h.TotalStatsDN,
+                        					Go = parseNum(So),
+                        					To = t._customBlock_GetTalentNumber(1, 13),
+                        					Uo = t._customBlock_StampBonusOfTypeX("BaseLUK"),
+                        					Mo = b.engine.getGameAttribute("DNSM"),
+                        					Vo = null != e.BoxRewards ? Mo.getReserved("BoxRewards") : Mo.h.BoxRewards,
+                        					Co = null != e["15c"] ? Vo.getReserved("15c") : Vo.h["15c"],
+                        					Bo = Go + (To + (Uo + parseNum(Co) + U._customBlock_EtcBonuses("54"))),
+                        					Po = b.engine.getGameAttribute("DNSM"),
+                        					Oo = null != e.BoxRewards ? Po.getReserved("BoxRewards") : Po.h.BoxRewards,
+                        					wo = null != e.LUK ? Oo.getReserved("LUK") : Oo.h.LUK,
+                        					ko = parseNum(wo),
+                        					xo = b.engine.getGameAttribute("DNSM"),
+                        					Qo = null != e.StarSigns ? xo.getReserved("StarSigns") : xo.h.StarSigns,
+                        					Xo = null != e.LUK ? Qo.getReserved("LUK") : Qo.h.LUK,
+                        					Lo = Math.floor(Ro + (1 + (vo + (Fo + Do)) / 100) * (Bo + (ko + (parseNum(Xo) + (Math.min(H._customBlock_ArbitraryCode("TotalQuestsComplete"), t._customBlock_GetTalentNumber(1, 618)) + (t._customBlock_TalentCalc(620) + (U._customBlock_CardBonusREAL(2) + (t._customBlock_GetTalentNumber(1, 23) + (t._customBlock_StampBonusOfTypeX("BaseAllStat") + (H._customBlock_ArbitraryCode("AllStat") + w._customBlock_Labb("SigilBonus", "Blank", 3, 0)))))))))));
+                        				null != e[s] ? ho.setReserved(s, Lo) : (ho.h[s] = Lo);
+                        			}
+                        			var zo = b.engine.getGameAttribute("DNSM"),
+                        				Yo = null != e.TotStatMAP ? zo.getReserved("TotStatMAP") : zo.h.TotStatMAP;
+                        			return null != e[s] ? Yo.getReserved(s) : Yo.h[s];
+                        		}
+                        		if ("Defence" == s) {
+                        			if (-1 != w._customBlock_Dungon()) {
+                        				var Wo = b.engine.getGameAttribute("DNSM"),
+                        					Zo = null != e.TotStatMAP ? Wo.getReserved("TotStatMAP") : Wo.h.TotStatMAP,
+                        					Ho = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					Jo = null != e.TotalStatsDN ? Ho.getReserved("TotalStatsDN") : Ho.h.TotalStatsDN,
+                        					jo = parseNum(Jo) + w._customBlock_DungeonStat("DEF");
+                        				null != e[s] ? Zo.setReserved(s, jo) : (Zo.h[s] = jo);
+                        			} else {
+                        				var qo = b.engine.getGameAttribute("DNSM"),
+                        					Ko = null != e.TotStatMAP ? qo.getReserved("TotStatMAP") : qo.h.TotStatMAP,
+                        					$o = b.engine.getGameAttribute("DNSM"),
+                        					ei = null != e.BoxRewards ? $o.getReserved("BoxRewards") : $o.h.BoxRewards,
+                        					ti = null != e.def ? ei.getReserved("def") : ei.h.def,
+                        					ni = parseNum(ti) + U._customBlock_CardBonusREAL(26),
+                        					si = b.engine.getGameAttribute("Lv0")[0],
+                        					ai = parseNum(si),
+                        					ri = b.engine.getGameAttribute("DNSM"),
+                        					Ai = null != e.AlchBubbles ? ri.getReserved("AlchBubbles") : ri.h.AlchBubbles,
+                        					li = null != e.DefPct ? Ai.getReserved("DefPct") : Ai.h.DefPct,
+                        					oi = ni + Math.min(ai, parseNum(li)) + (t._customBlock_StampBonusOfTypeX("BaseDef") + U._customBlock_EtcBonuses("50") + w._customBlock_ArcadeBonus(1) + H._customBlock_ArbitraryCode("StatueBonusGiven7")),
+                        					ii = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					ui = null != e.TotalStatsDN ? ii.getReserved("TotalStatsDN") : ii.h.TotalStatsDN,
+                        					gi = parseNum(ui),
+                        					mi = b.engine.getGameAttribute("DNSM"),
+                        					di = null != e.AlchBubbles ? mi.getReserved("AlchBubbles") : mi.h.AlchBubbles,
+                        					ci = null != e.DefPct ? di.getReserved("DefPct") : di.h.DefPct,
+                        					pi = Math.floor(oi + (gi * (1 + (parseNum(ci) + U._customBlock_CardBonusREAL(15)) / 100) + (A._customBlock_MealBonus("Def") + t._customBlock_GetTalentNumber(2, 122)))),
+                        					hi = (1 + (w._customBlock_Shrine(1) + A._customBlock_GetBribeBonus("22")) / 100) * Math.max(0.05, 1 - (w._customBlock_prayersReal(15, 1) + w._customBlock_prayersReal(16, 1)) / 100),
+                        					bi = A._customBlock_GoldFoodBonuses("Defence") + t._customBlock_GetTalentNumber(1, 9),
+                        					fi = U._customBlock_EtcBonuses("7"),
+                        					yi = b.engine.getGameAttribute("DNSM"),
+                        					Ri = null != e.StarSigns ? yi.getReserved("StarSigns") : yi.h.StarSigns,
+                        					vi = null != e.DefPct ? Ri.getReserved("DefPct") : Ri.h.DefPct,
+                        					Fi = pi * hi * (1 + (bi + (fi + (parseNum(vi) + (H._customBlock_GetBuffBonuses(124, 1) + (w._customBlock_CardSetBonuses(0, "4") + (w._customBlock_FlurboShop(6) + A._customBlock_chipBonuses("def"))))))) / 100);
+                        				null != e[s] ? Ko.setReserved(s, Fi) : (Ko.h[s] = Fi);
+                        			}
+                        			var Ni = b.engine.getGameAttribute("DNSM"),
+                        				_i = null != e.TotStatMAP ? Ni.getReserved("TotStatMAP") : Ni.h.TotStatMAP;
+                        			return null != e[s] ? _i.getReserved(s) : _i.h[s];
+                        		}
+                        		if ("Accuracy" == s) {
+                        			var Ii = b.engine.getGameAttribute("DNSM"),
+                        				Di = null != e.TotStatMAP ? Ii.getReserved("TotStatMAP") : Ii.h.TotStatMAP,
+                        				Ei = b.engine.getGameAttribute("DNSM"),
+                        				Si = null != e.AlchVials ? Ei.getReserved("AlchVials") : Ei.h.AlchVials,
+                        				Gi = null != e.baseACC ? Si.getReserved("baseACC") : Si.h.baseACC,
+                        				Ti = parseNum(Gi),
+                        				Ui = b.engine.getGameAttribute("DNSM"),
+                        				Mi = null != e.BoxRewards ? Ui.getReserved("BoxRewards") : Ui.h.BoxRewards,
+                        				Vi = null != e.acc ? Mi.getReserved("acc") : Mi.h.acc,
+                        				Ci = 2 + Ti + (parseNum(Vi) + (U._customBlock_CardBonusREAL(23) + U._customBlock_EtcBonuses("28") + A._customBlock_GoldFoodBonuses("BaseAcc")) + t._customBlock_StampBonusOfTypeX("BaseAcc")),
+                        				Bi = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Pi = null != e.TotalStatsDN ? Bi.getReserved("TotalStatsDN") : Bi.h.TotalStatsDN,
+                        				Oi = Math.floor(Ci + parseNum(Pi));
+                        			null != e[s] ? Di.setReserved(s, Oi) : (Di.h[s] = Oi);
+                        			var wi = b.engine.getGameAttribute("DNSM"),
+                        				ki = null != e.TotStatMAP ? wi.getReserved("TotStatMAP") : wi.h.TotStatMAP;
+                        			return null != e[s] ? ki.getReserved(s) : ki.h[s];
+                        		}
+                        		if ("Weapon_Power" == s) {
+                        			var xi = b.engine.getGameAttribute("DNSM"),
+                        				Qi = null != e.TotStatMAP ? xi.getReserved("TotStatMAP") : xi.h.TotStatMAP,
+                        				Xi = b.engine.getGameAttribute("DNSM"),
+                        				Li = null != e.BoxRewards ? Xi.getReserved("BoxRewards") : Xi.h.BoxRewards,
+                        				zi = null != e["12a"] ? Li.getReserved("12a") : Li.h["12a"],
+                        				Yi = 5 + parseNum(zi) + w._customBlock_FlurboShop(0) + A._customBlock_TotalFoodBonuses("WeaponPowerBoosts") + (U._customBlock_CardBonusREAL(18) + (w._customBlock_GuildBonuses(3) + w._customBlock_Labb("SigilBonus", "Blank", 17, 0))),
+                        				Wi = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Zi = null != e.TotalStatsDN ? Wi.getReserved("TotalStatsDN") : Wi.h.TotalStatsDN,
+                        				Hi = parseNum(Zi) * (1 + A._customBlock_chipBonuses("weppow") / 100) + t._customBlock_TalentCalc(616),
+                        				Ji = b.engine.getGameAttribute("DNSM"),
+                        				ji = null != e.AlchVials ? Ji.getReserved("AlchVials") : Ji.h.AlchVials,
+                        				qi = null != e.WeaponPOW ? ji.getReserved("WeaponPOW") : ji.h.WeaponPOW,
+                        				Ki = parseNum(qi),
+                        				$i = b.engine.getGameAttribute("DNSM"),
+                        				eu = null != e.FamBonusQTYs ? $i.getReserved("FamBonusQTYs") : $i.h.FamBonusQTYs,
+                        				tu = null != e[16] ? eu.getReserved("16") : eu.h[16],
+                        				nu = parseNum(tu),
+                        				su = b.engine.getGameAttribute("DNSM"),
+                        				au = null != e.StarSigns ? su.getReserved("StarSigns") : su.h.StarSigns,
+                        				ru = null != e.WepPow ? au.getReserved("WepPow") : au.h.WepPow,
+                        				Au = parseNum(ru),
+                        				lu = w._customBlock_ArcadeBonus(17),
+                        				ou = t._customBlock_GetTalentNumber(1, 140),
+                        				iu = b.engine.getGameAttribute("Lv0")[10],
+                        				uu = ou * Math.floor(parseNum(iu) / 10),
+                        				gu = t._customBlock_GetTalentNumber(1, 365),
+                        				mu = b.engine.getGameAttribute("PetsStored")[0][2],
+                        				du = gu * t._customBlock_getLOG(parseNum(mu)),
+                        				cu = t._customBlock_GetTalentNumber(1, 530),
+                        				pu = b.engine.getGameAttribute("Lv0")[12],
+                        				hu = Yi + (Hi + (Ki + (nu + (Au + (lu + (uu + (du + cu * Math.floor(parseNum(pu) / 10))))))));
+                        			null != e[s] ? Qi.setReserved(s, hu) : (Qi.h[s] = hu);
+                        			var bu = b.engine.getGameAttribute("DNSM"),
+                        				fu = null != e.TotStatMAP ? bu.getReserved("TotStatMAP") : bu.h.TotStatMAP;
+                        			return null != e[s] ? fu.getReserved(s) : fu.h[s];
+                        		}
+                        		if ("Dung_Power" == s) {
+                        			var yu = b.engine.getGameAttribute("DNSM"),
+                        				Ru = null != e.TotStatMAP ? yu.getReserved("TotStatMAP") : yu.h.TotStatMAP,
+                        				vu = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Fu = null != e.TotalStatsDN ? vu.getReserved("TotalStatsDN") : vu.h.TotalStatsDN,
+                        				Nu = parseNum(Fu);
+                        			null != e[s] ? Ru.setReserved(s, Nu) : (Ru.h[s] = Nu);
+                        			var _u = b.engine.getGameAttribute("DNSM"),
+                        				Iu = null != e.TotStatMAP ? _u.getReserved("TotStatMAP") : _u.h.TotStatMAP;
+                        			return null != e[s] ? Iu.getReserved(s) : Iu.h[s];
+                        		}
+                        		if ("Mining_Power" == s) {
+                        			var Du = b.engine.getGameAttribute("DNSM"),
+                        				Eu = null != e.TotStatMAP ? Du.getReserved("TotStatMAP") : Du.h.TotStatMAP,
+                        				Su = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Gu = null != e.TotalStatsDN ? Su.getReserved("TotalStatsDN") : Su.h.TotalStatsDN,
+                        				Tu = parseNum(Gu) + H._customBlock_ArbitraryCode("StatueBonusGiven2");
+                        			null != e[s] ? Eu.setReserved(s, Tu) : (Eu.h[s] = Tu);
+                        			var Uu = b.engine.getGameAttribute("DNSM"),
+                        				Mu = null != e.TotStatMAP ? Uu.getReserved("TotStatMAP") : Uu.h.TotStatMAP;
+                        			return null != e[s] ? Mu.getReserved(s) : Mu.h[s];
+                        		}
+                        		if ("Choppin_Power" == s) {
+                        			var Vu = b.engine.getGameAttribute("DNSM"),
+                        				Cu = null != e.TotStatMAP ? Vu.getReserved("TotStatMAP") : Vu.h.TotStatMAP,
+                        				Bu = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Pu = null != e.TotalStatsDN ? Bu.getReserved("TotalStatsDN") : Bu.h.TotalStatsDN,
+                        				Ou = parseNum(Pu) + H._customBlock_ArbitraryCode("StatueBonusGiven6");
+                        			null != e[s] ? Cu.setReserved(s, Ou) : (Cu.h[s] = Ou);
+                        			var wu = b.engine.getGameAttribute("DNSM"),
+                        				ku = null != e.TotStatMAP ? wu.getReserved("TotStatMAP") : wu.h.TotStatMAP;
+                        			return null != e[s] ? ku.getReserved(s) : ku.h[s];
+                        		}
+                        		if ("Fishing_Power" == s) {
+                        			var xu = b.engine.getGameAttribute("DNSM"),
+                        				Qu = null != e.TotStatMAP ? xu.getReserved("TotStatMAP") : xu.h.TotStatMAP,
+                        				Xu = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Lu = null != e.TotalStatsDN ? Xu.getReserved("TotalStatsDN") : Xu.h.TotalStatsDN,
+                        				zu = parseNum(Lu) + H._customBlock_ArbitraryCode("StatueBonusGiven8");
+                        			null != e[s] ? Qu.setReserved(s, zu) : (Qu.h[s] = zu);
+                        			var Yu = b.engine.getGameAttribute("DNSM"),
+                        				Wu = null != e.TotStatMAP ? Yu.getReserved("TotStatMAP") : Yu.h.TotStatMAP;
+                        			return null != e[s] ? Wu.getReserved(s) : Wu.h[s];
+                        		}
+                        		if ("Catching_Power" == s) {
+                        			var Zu = b.engine.getGameAttribute("DNSM"),
+                        				Hu = null != e.TotStatMAP ? Zu.getReserved("TotStatMAP") : Zu.h.TotStatMAP,
+                        				Ju = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				ju = null != e.TotalStatsDN ? Ju.getReserved("TotalStatsDN") : Ju.h.TotalStatsDN,
+                        				qu = parseNum(ju) + H._customBlock_ArbitraryCode("StatueBonusGiven9");
+                        			null != e[s] ? Hu.setReserved(s, qu) : (Hu.h[s] = qu);
+                        			var Ku = b.engine.getGameAttribute("DNSM"),
+                        				$u = null != e.TotStatMAP ? Ku.getReserved("TotStatMAP") : Ku.h.TotStatMAP;
+                        			return null != e[s] ? $u.getReserved(s) : $u.h[s];
+                        		}
+                        		if ("Trapping_Power" == s) {
+                        			var eg = b.engine.getGameAttribute("DNSM"),
+                        				tg = null != e.TotStatMAP ? eg.getReserved("TotStatMAP") : eg.h.TotStatMAP,
+                        				ng = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				sg = null != e.TotalStatsDN ? ng.getReserved("TotalStatsDN") : ng.h.TotalStatsDN,
+                        				ag = parseNum(sg);
+                        			null != e[s] ? tg.setReserved(s, ag) : (tg.h[s] = ag);
+                        			var rg = b.engine.getGameAttribute("DNSM"),
+                        				Ag = null != e.TotStatMAP ? rg.getReserved("TotStatMAP") : rg.h.TotStatMAP;
+                        			return null != e[s] ? Ag.getReserved(s) : Ag.h[s];
+                        		}
+                        		if ("Worship_Power" == s) {
+                        			var lg = b.engine.getGameAttribute("DNSM"),
+                        				og = null != e.TotStatMAP ? lg.getReserved("TotStatMAP") : lg.h.TotStatMAP,
+                        				ig = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				ug = null != e.TotalStatsDN ? ig.getReserved("TotalStatsDN") : ig.h.TotalStatsDN,
+                        				gg = parseNum(ug);
+                        			null != e[s] ? og.setReserved(s, gg) : (og.h[s] = gg);
+                        			var mg = b.engine.getGameAttribute("DNSM"),
+                        				dg = null != e.TotStatMAP ? mg.getReserved("TotStatMAP") : mg.h.TotStatMAP;
+                        			return null != e[s] ? dg.getReserved(s) : dg.h[s];
+                        		}
+                        		if ("Drop_Rarity" == s) {
+                        			var cg = b.engine.getGameAttribute("DNSM"),
+                        				pg = H._customBlock_TotalStats("LUK");
+                        			null != e.DropRateLUK ? cg.setReserved("DropRateLUK", pg) : (cg.h.DropRateLUK = pg);
+                        			var hg = b.engine.getGameAttribute("DNSM"),
+                        				bg = null != e.DropRateLUK ? hg.getReserved("DropRateLUK") : hg.h.DropRateLUK;
+                        			if (1e3 > parseNum(bg)) {
+                        				var fg = b.engine.getGameAttribute("DNSM"),
+                        					yg = b.engine.getGameAttribute("DNSM"),
+                        					Rg = null != e.DropRateLUK ? yg.getReserved("DropRateLUK") : yg.h.DropRateLUK,
+                        					vg = (Math.pow(parseNum(Rg) + 1, 0.37) - 1) / 40;
+                        				null != e.DropRateLUK ? fg.setReserved("DropRateLUK", vg) : (fg.h.DropRateLUK = vg);
+                        			} else {
+                        				var Fg = b.engine.getGameAttribute("DNSM"),
+                        					Ng = b.engine.getGameAttribute("DNSM"),
+                        					_g = null != e.DropRateLUK ? Ng.getReserved("DropRateLUK") : Ng.h.DropRateLUK,
+                        					Ig = parseNum(_g),
+                        					Dg = b.engine.getGameAttribute("DNSM"),
+                        					Eg = null != e.DropRateLUK ? Dg.getReserved("DropRateLUK") : Dg.h.DropRateLUK,
+                        					Sg = ((Ig - 1e3) / (parseNum(Eg) + 2500)) * 0.5 + 0.297;
+                        				null != e.DropRateLUK ? Fg.setReserved("DropRateLUK", Sg) : (Fg.h.DropRateLUK = Sg);
+                        			}
+                        			var Gg = b.engine.getGameAttribute("DNSM"),
+                        				Tg = null != e.TotStatMAP ? Gg.getReserved("TotStatMAP") : Gg.h.TotStatMAP,
+                        				Ug = b.engine.getGameAttribute("DNSM"),
+                        				Mg = null != e.DropRateLUK ? Ug.getReserved("DropRateLUK") : Ug.h.DropRateLUK,
+                        				Vg = parseNum(Mg),
+                        				Cg = t._customBlock_GetTalentNumber(1, 279),
+                        				Bg = b.engine.getGameAttribute("DNSM"),
+                        				Pg = null != e.BoxRewards ? Bg.getReserved("BoxRewards") : Bg.h.BoxRewards,
+                        				Og = null != e.DropRate ? Pg.getReserved("DropRate") : Pg.h.DropRate,
+                        				wg = parseNum(Og),
+                        				kg = U._customBlock_EtcBonuses("2"),
+                        				xg = b.engine.getGameAttribute("DNSM"),
+                        				Qg = null != e.AlchBubbles ? xg.getReserved("AlchBubbles") : xg.h.AlchBubbles,
+                        				Xg = null != e.DropRate ? Qg.getReserved("DropRate") : Qg.h.DropRate,
+                        				Lg = parseNum(Xg),
+                        				zg = U._customBlock_CardBonusREAL(10),
+                        				Yg = t._customBlock_GetTalentNumber(1, 24),
+                        				Wg = b.engine.getGameAttribute("DNSM"),
+                        				Zg = null != e.StarSigns ? Wg.getReserved("StarSigns") : Wg.h.StarSigns,
+                        				Hg = null != e.Drop ? Zg.getReserved("Drop") : Zg.h.Drop,
+                        				Jg = 1.4 * Vg + (Cg + (wg + (kg + (Lg + (zg + (Yg + (parseNum(Hg) + (w._customBlock_GuildBonuses(10) + (w._customBlock_CardSetBonuses(0, "5") + (w._customBlock_CardSetBonuses(0, "6") + (w._customBlock_Shrine(4) + (w._customBlock_prayersReal(7, 0) + w._customBlock_Labb("SigilBonus", "Blank", 11, 0))))))))))))) / 100 + 1;
+                        			null != e[s] ? Tg.setReserved(s, Jg) : (Tg.h[s] = Jg);
+                        			var jg = b.engine.getGameAttribute("DNSM"),
+                        				qg = null != e.TotStatMAP ? jg.getReserved("TotStatMAP") : jg.h.TotStatMAP,
+                        				Kg = null != e[s] ? qg.getReserved(s) : qg.h[s];
+                        			parseNum(Kg);
+                        			var $g = b.engine.getGameAttribute("DNSM"),
+                        				em = null != e.TotStatMAP ? $g.getReserved("TotStatMAP") : $g.h.TotStatMAP,
+                        				tm = null != e[s] ? em.getReserved(s) : em.h[s];
+                        			if (5 > parseNum(tm)) {
+                        				var nm = b.engine.getGameAttribute("DNSM"),
+                        					sm = null != e.TotStatMAP ? nm.getReserved("TotStatMAP") : nm.h.TotStatMAP,
+                        					am = b.engine.getGameAttribute("DNSM"),
+                        					rm = null != e.TotStatMAP ? am.getReserved("TotStatMAP") : am.h.TotStatMAP,
+                        					Am = null != e[s] ? rm.getReserved(s) : rm.h[s],
+                        					lm = Math.min(5, parseNum(Am) + A._customBlock_chipBonuses("dr") / 100);
+                        				null != e[s] ? sm.setReserved(s, lm) : (sm.h[s] = lm);
+                        			}
+                        			if (-1 != w._customBlock_Dungon()) {
+                        				var om = b.engine.getGameAttribute("DNSM"),
+                        					im = null != e.TotStatMAP ? om.getReserved("TotStatMAP") : om.h.TotStatMAP,
+                        					um = 1 + (H._customBlock_TotalStats("LUK") + w._customBlock_DungeonStat("DropRarity")) / 100;
+                        				null != e[s] ? im.setReserved(s, um) : (im.h[s] = um);
+                        			}
+                        			var gm = b.engine.getGameAttribute("DNSM"),
+                        				mm = null != e.TotStatMAP ? gm.getReserved("TotStatMAP") : gm.h.TotStatMAP;
+                        			return null != e[s] ? mm.getReserved(s) : mm.h[s];
+                        		}
+                        		var dm = b.engine.getGameAttribute("DNSM"),
+                        			cm = null != e.TotStatMAP ? dm.getReserved("TotStatMAP") : dm.h.TotStatMAP;
+                        		return null != e[s] ? cm.setReserved(s, 0) : (cm.h[s] = 0), 0;
+                        	}

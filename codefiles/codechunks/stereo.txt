@@ -1,0 +1,27 @@
+            (Howl.prototype.stereo = function(e, n) {
+            		var s = this;
+            		if (!s._webAudio) return s;
+            		if ("loaded" !== s._state) return (s._queue.push({
+            			event: "stereo",
+            			action: function() {
+            				s.stereo(e, n);
+            			},
+            		}), s);
+            		var a = void 0 === Howler.ctx.createStereoPanner ? "spatial" : "stereo";
+            		if (void 0 === n) {
+            			if ("number" != typeof e) return s._stereo;
+            			(s._stereo = e), (s._pos = [e, 0, 0]);
+            		}
+            		for (var r = s._getSoundIds(n), A = 0; A < r.length; A++) {
+            			var l = s._soundById(r[A]);
+            			if (l) {
+            				if ("number" != typeof e) return l._stereo;
+            				(l._stereo = e),
+            				(l._pos = [e, 0, 0]),
+            				l._node && ((l._pannerAttr.panningModel = "equalpower"),
+            						(l._panner && l._panner.pan) || t(l, a), "spatial" === a ? void 0 !== l._panner.positionX ? (l._panner.positionX.setValueAtTime(e, Howler.ctx.currentTime), l._panner.positionY.setValueAtTime(0, Howler.ctx.currentTime), l._panner.positionZ.setValueAtTime(0, Howler.ctx.currentTime)) : l._panner.setPosition(e, 0, 0) : l._panner.pan.setValueAtTime(e, Howler.ctx.currentTime)),
+            					s._emit("stereo", l._id);
+            			}
+            		}
+            		return s;
+            	}

@@ -1,0 +1,28 @@
+                        (H._customBlock_CritDamage = function() {
+                        		if (-1 != w._customBlock_Dungon()) return w._customBlock_DungeonStat("CRITDMG");
+                        		var s = b.engine.getGameAttribute("DNSM"),
+                        			a = H._customBlock_TotalStats("STR");
+                        		if (
+                        			(null != e.CritDmgSTR ? s.setReserved("CritDmgSTR", a) : (s.h.CritDmgSTR = a),
+                        				(s = b.engine.getGameAttribute("DNSM")), 1e3 > (null == (s = null != e.CritDmgSTR ? s.getReserved("CritDmgSTR") : s.h.CritDmgSTR) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)))))
+                        			(s = b.engine.getGameAttribute("DNSM")),
+                        			(a = b.engine.getGameAttribute("DNSM")),
+                        			(a = null != e.CritDmgSTR ? a.getReserved("CritDmgSTR") : a.h.CritDmgSTR),
+                        			(a = (Math.pow(parseNum(a) + 1, 0.37) - 1) / 40);
+                        		else {
+                        			(s = b.engine.getGameAttribute("DNSM")),
+                        			(a = b.engine.getGameAttribute("DNSM")),
+                        			(a = null == (a = null != e.CritDmgSTR ? a.getReserved("CritDmgSTR") : a.h.CritDmgSTR) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)));
+                        			var r = b.engine.getGameAttribute("DNSM");
+                        			a = ((a - 1e3) / ((null == (r = null != e.CritDmgSTR ? r.getReserved("CritDmgSTR") : r.h.CritDmgSTR) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))) + 2500)) * 0.5 + 0.255;
+                        		}
+                        		null != e.CritDmgSTR ? s.setReserved("CritDmgSTR", a) : (s.h.CritDmgSTR = a),
+                        			(s = t._customBlock_GetTalentNumber(1, 87) + H._customBlock_ArbitraryCode("StatueBonusGiven5")),
+                        			(a = t._customBlock_GetTalentNumber(2, 447)),
+                        			(r = t._customBlock_StampBonusOfTypeX("CritDmg"));
+                        		var A = b.engine.getGameAttribute("DNSM");
+                        		A = null == (A = null != e.CritDmgSTR ? A.getReserved("CritDmgSTR") : A.h.CritDmgSTR) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A));
+                        		var o = b.engine.getGameAttribute("DNSM");
+                        		return (
+                        			(o = null != e.AlchBubbles ? o.getReserved("AlchBubbles") : o.h.AlchBubbles), 1.2 + (s + (a + (r + ((100 * A) / 1.8 + ((null == (o = null != e.critDMG ? o.getReserved("critDMG") : o.h.critDMG) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))) + (U._customBlock_CardBonusREAL(19) - w._customBlock_prayersReal(11, 1) + (t._customBlock_GetTalentNumber(1, 76) + U._customBlock_EtcBonuses("22")))))))) / 100);
+                        	}

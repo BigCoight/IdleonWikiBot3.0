@@ -1,0 +1,82 @@
+                        (t._customBlock_StampBonusOfTypeX = function(s) {
+                        		var a = b.engine.getGameAttribute("DNSM");
+                        		if (null != e.StampBonuses_Map_Of_Val ? !a.existsReserved("StampBonuses_Map_Of_Val") : !a.h.hasOwnProperty("StampBonuses_Map_Of_Val")) {
+                        			a = b.engine.getGameAttribute("DNSM");
+                        			var r = new p();
+                        			null != e.StampBonuses_Map_Of_Val ? a.setReserved("StampBonuses_Map_Of_Val", r) : (a.h.StampBonuses_Map_Of_Val = r);
+                        		}
+                        		if (
+                        			((a = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.Stamp_TOTAL_bonus_of_type_X ? a.setReserved("Stamp_TOTAL_bonus_of_type_X", 0) : (a.h.Stamp_TOTAL_bonus_of_type_X = 0),
+                        				(a = b.engine.getGameAttribute("DNSM")), null != e.Sp_bn_l ? a.setReserved("Sp_bn_l", "null") : (a.h.Sp_bn_l = "null"),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null != e.StampBonuses_Map_Of_Val ? a.getReserved("StampBonuses_Map_Of_Val") : a.h.StampBonuses_Map_Of_Val), null != e[s] ? a.existsReserved(s) : a.h.hasOwnProperty(s)))
+                        			(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(r = b.engine.getGameAttribute("DNSM")),
+                        			(r = null != e.StampBonuses_Map_Of_Val ? r.getReserved("StampBonuses_Map_Of_Val") : r.h.StampBonuses_Map_Of_Val),
+                        			(s = null != e[s] ? r.getReserved(s) : r.h[s]),
+                        			null != e.Stamp_TOTAL_bonus_of_type_X ? a.setReserved("Stamp_TOTAL_bonus_of_type_X", s) : (a.h.Stamp_TOTAL_bonus_of_type_X = s);
+                        		else {
+                        			for (r = 0; 3 > r;) {
+                        				a = r++;
+                        				var A = b.engine.getGameAttribute("CustomLists");
+                        				if (Sb.contains((null != e.StampBonusIndex ? A.getReserved("StampBonusIndex") : A.h.StampBonusIndex)[a], s)) {
+                        					(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					null != e.Stamp_bonuses_DRI ? r.setReserved("Stamp_bonuses_DRI", a) : (r.h.Stamp_bonuses_DRI = a),
+                        						(r = b.engine.getGameAttribute("DNSM")),
+                        						(a = ("" + g.string(b.engine.getGameAttribute("Number2Letter")[Math.round(a + 1)])).toUpperCase()),
+                        						null != e.Sp_bn_l ? r.setReserved("Sp_bn_l", a) : (r.h.Sp_bn_l = a);
+                        					break;
+                        				}
+                        			}
+                        			if (((a = b.engine.getGameAttribute("DNSM")), "null" != (null != e.Sp_bn_l ? a.getReserved("Sp_bn_l") : a.h.Sp_bn_l)))
+                        				for (a = 0, r = b.engine.getGameAttribute("CustomLists"), r = null != e.StampDescriptions ? r.getReserved("StampDescriptions") : r.h.StampDescriptions, A = b.engine.getGameAttribute("DummyNumbersStatManager"), r = r[0 | (null == (A = null != e.Stamp_bonuses_DRI ? A.getReserved("Stamp_bonuses_DRI") : A.h.Stamp_bonuses_DRI) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A)))].length; a < r;) {
+                        					A = a++;
+                        					var o = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        						i = b.engine.getGameAttribute("DNSM");
+                        					if (
+                        						((i = "Stamp" + g.string(null != e.Sp_bn_l ? i.getReserved("Sp_bn_l") : i.h.Sp_bn_l) + Math.round(A + 1)),
+                        							(o = null != e[i] ? o.getReserved(i) : o.h[i]), -1 != ("" + g.string(null != e.desc_line1 ? o.getReserved("desc_line1") : o.h.desc_line1)).indexOf(s))) {
+                        						(o = b.engine.getGameAttribute("StampLevel")),
+                        						(i = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        						(o = o[0 | (null == (i = null != e.Stamp_bonuses_DRI ? i.getReserved("Stamp_bonuses_DRI") : i.h.Stamp_bonuses_DRI) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i)))]),
+                        						(i = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        						(i = null == (i = null != e.Stamp_bonuses_DRI ? i.getReserved("Stamp_bonuses_DRI") : i.h.Stamp_bonuses_DRI) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i)));
+                        						var u = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        						if (
+                        							((u = null != e.Stamp_bonuses_DRI ? u.getReserved("Stamp_bonuses_DRI") : u.h.Stamp_bonuses_DRI), 0 < (null == (o = o[
+                        								(A + 1e3 * i - 1e3 * Math.floor(
+                        									(A + 1e3 * parseNum(u)) / 1e3)) | 0]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))))) {
+                        							(o = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        							(i = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        							(i = null == (i = null != e.Stamp_TOTAL_bonus_of_type_X ? i.getReserved("Stamp_TOTAL_bonus_of_type_X") : i.h.Stamp_TOTAL_bonus_of_type_X) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        							(u = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        							(u = null != e.Stamp_bonuses_DRI ? u.getReserved("Stamp_bonuses_DRI") : u.h.Stamp_bonuses_DRI),
+                        							(u = "" + g.string(t._customBlock_StampDetails(A + 1e3 * parseNum(u))[1]));
+                        							var m = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        							(m = null != e.Stamp_bonuses_DRI ? m.getReserved("Stamp_bonuses_DRI") : m.h.Stamp_bonuses_DRI),
+                        							(m = null == (m = t._customBlock_StampDetails(A + 1e3 * parseNum(m))[2]) ? 0 : "number" == typeof m ? d.__cast(m, k) : "number" == typeof m && (0 | m) === m ? d.__cast(m, l) : "boolean" == typeof m ? d.__cast(m, n) ? 1 : 0 : "string" == typeof m ? parseFloat(m) : parseFloat(g.string(m)));
+                        							var c = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        							(c = null != e.Stamp_bonuses_DRI ? c.getReserved("Stamp_bonuses_DRI") : c.h.Stamp_bonuses_DRI),
+                        							(c = null == (c = t._customBlock_StampDetails(A + 1e3 * parseNum(c))[3]) ? 0 : "number" == typeof c ? d.__cast(c, k) : "number" == typeof c && (0 | c) === c ? d.__cast(c, l) : "boolean" == typeof c ? d.__cast(c, n) ? 1 : 0 : "string" == typeof c ? parseFloat(c) : parseFloat(g.string(c)));
+                        							var h = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        							(h = null != e.Stamp_bonuses_DRI ? h.getReserved("Stamp_bonuses_DRI") : h.h.Stamp_bonuses_DRI),
+                        							(A = i + H._customBlock_ArbitraryCode5Inputs(u, m, c, Math.floor(t._customBlock_StampOverLevel(A + 1e3 * parseNum(h))), 0, 0)),
+                        							null != e.Stamp_TOTAL_bonus_of_type_X ? o.setReserved("Stamp_TOTAL_bonus_of_type_X", A) : (o.h.Stamp_TOTAL_bonus_of_type_X = A);
+                        						}
+                        					}
+                        				} - 1 != s.indexOf("Eff") && ((a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(r = (null == (r = null != e.Stamp_TOTAL_bonus_of_type_X ? r.getReserved("Stamp_TOTAL_bonus_of_type_X") : r.h.Stamp_TOTAL_bonus_of_type_X) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))) * Math.max(t._customBlock_GetTalentNumber(1, 625), 1)), null != e.Stamp_TOTAL_bonus_of_type_X ? a.setReserved("Stamp_TOTAL_bonus_of_type_X", r) : (a.h.Stamp_TOTAL_bonus_of_type_X = r)),
+                        				2 == w._customBlock_MainframeBonus(7) ? ((a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(a = 2 > (null == (a = null != e.Stamp_bonuses_DRI ? a.getReserved("Stamp_bonuses_DRI") : a.h.Stamp_bonuses_DRI) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))))) : (a = !1),
+                        				a && ((a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        					(r = 2 * (null == (r = null != e.Stamp_TOTAL_bonus_of_type_X ? r.getReserved("Stamp_TOTAL_bonus_of_type_X") : r.h.Stamp_TOTAL_bonus_of_type_X) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r)))), null != e.Stamp_TOTAL_bonus_of_type_X ? a.setReserved("Stamp_TOTAL_bonus_of_type_X", r) : (a.h.Stamp_TOTAL_bonus_of_type_X = r)),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null != e.StampBonuses_Map_Of_Val ? a.getReserved("StampBonuses_Map_Of_Val") : a.h.StampBonuses_Map_Of_Val),
+                        				(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = null != e.Stamp_TOTAL_bonus_of_type_X ? r.getReserved("Stamp_TOTAL_bonus_of_type_X") : r.h.Stamp_TOTAL_bonus_of_type_X),
+                        				null != e[s] ? a.setReserved(s, r) : (a.h[s] = r);
+                        		}
+                        		return (s = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.Stamp_TOTAL_bonus_of_type_X ? s.getReserved("Stamp_TOTAL_bonus_of_type_X") : s.h.Stamp_TOTAL_bonus_of_type_X;
+                        	}

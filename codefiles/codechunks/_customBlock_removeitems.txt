@@ -1,0 +1,147 @@
+                        (A._customBlock_removeitems = function(t, s, a) {
+                        		var r = b.engine.getGameAttribute("DNSM");
+                        		null != e.ItemRemovalDT1 ? r.setReserved("ItemRemovalDT1", t) : (r.h.ItemRemovalDT1 = t);
+                        		var A = b.engine.getGameAttribute("DNSM");
+                        		if ((null != e.ItemRemovalDN1 ? A.setReserved("ItemRemovalDN1", s) : (A.h.ItemRemovalDN1 = s), "Liquid" == t.substring(0, Math.round(t.length - 1)))) {
+                        			var o = b.engine.getGameAttribute("CauldronInfo")[6],
+                        				i = t.substring(6, Math.round(t.length)),
+                        				u = Math.round(parseNum(i) - 1),
+                        				m = b.engine.getGameAttribute("CauldronInfo")[6],
+                        				c = t.substring(6, Math.round(t.length)),
+                        				p = m[Math.round(parseNum(c) - 1)];
+                        			o[u] = parseNum(p) - s;
+                        		} else if ("Meal" == t.substring(0, 4)) {
+                        			var h = b.engine.getGameAttribute("Meals")[2],
+                        				f = t.substring(4, Math.round(t.length)),
+                        				y = Math.round(parseNum(f)),
+                        				R = b.engine.getGameAttribute("Meals")[2],
+                        				v = t.substring(4, Math.round(t.length)),
+                        				F = R[Math.round(parseNum(v))];
+                        			h[y] = parseNum(F) - s;
+                        		} else if ("Spice" == t.substring(0, 5)) {
+                        			var N = b.engine.getGameAttribute("Meals")[3],
+                        				_ = t.substring(5, Math.round(t.length)),
+                        				I = Math.round(parseNum(_)),
+                        				D = b.engine.getGameAttribute("Meals")[3],
+                        				E = t.substring(5, Math.round(t.length)),
+                        				S = D[Math.round(parseNum(E))];
+                        			N[I] = parseNum(S) - s;
+                        		} else {
+                        			if (-1 != a.indexOf("Inventory"))
+                        				for (var G = 0, T = 0 | b.engine.getGameAttribute("InventorySlotsOwned"); G < T;) {
+                        					var U = G++,
+                        						M = b.engine.getGameAttribute("DNSM"),
+                        						V = null != e.ItemRemovalDN1 ? M.getReserved("ItemRemovalDN1") : M.h.ItemRemovalDN1;
+                        					if (!(0 < parseNum(V))) break;
+                        					var C = b.engine.getGameAttribute("InventoryOrder")[U],
+                        						B = b.engine.getGameAttribute("DNSM");
+                        					if (C == (null != e.ItemRemovalDT1 ? B.getReserved("ItemRemovalDT1") : B.h.ItemRemovalDT1)) {
+                        						var P = b.engine.getGameAttribute("DNSM"),
+                        							O = b.engine.getGameAttribute("DNSM"),
+                        							w = P,
+                        							x = null != e.ItemRemovalDN1 ? O.getReserved("ItemRemovalDN1") : O.h.ItemRemovalDN1;
+                        						null != e.ItemRemovalDN2 ? w.setReserved("ItemRemovalDN2", x) : (w.h.ItemRemovalDN2 = x);
+                        						var Q = b.engine.getGameAttribute("DNSM"),
+                        							X = b.engine.getGameAttribute("DNSM"),
+                        							L = null != e.ItemRemovalDN1 ? X.getReserved("ItemRemovalDN1") : X.h.ItemRemovalDN1,
+                        							z = parseNum(L),
+                        							Y = b.engine.getGameAttribute("ItemQuantity")[U],
+                        							W = parseNum(Y),
+                        							Z = b.engine.getGameAttribute("DNSM"),
+                        							H = null != e.ItemRemovalDN2 ? Z.getReserved("ItemRemovalDN2") : Z.h.ItemRemovalDN2,
+                        							J = Q,
+                        							j = z - Math.min(W, parseNum(H));
+                        						null != e.ItemRemovalDN1 ? J.setReserved("ItemRemovalDN1", j) : (J.h.ItemRemovalDN1 = j);
+                        						var q = b.engine.getGameAttribute("ItemQuantity"),
+                        							K = b.engine.getGameAttribute("ItemQuantity")[U],
+                        							$ = parseNum(K),
+                        							ee = b.engine.getGameAttribute("ItemQuantity")[U],
+                        							te = parseNum(ee),
+                        							ne = b.engine.getGameAttribute("DNSM"),
+                        							se = null != e.ItemRemovalDN2 ? ne.getReserved("ItemRemovalDN2") : ne.h.ItemRemovalDN2;
+                        						q[U] = Math.round($ - Math.min(te, parseNum(se)));
+                        						var ae = b.engine.getGameAttribute("ItemQuantity")[U];
+                        						0 >= parseNum(ae) && ((b.engine.getGameAttribute("ItemQuantity")[U] = 0), (b.engine.getGameAttribute("InventoryOrder")[U] = "Blank"));
+                        					}
+                        				}
+                        			if (-1 != a.indexOf("Storage")) {
+                        				var re = b.engine.getGameAttribute("DNSM");
+                        				if (-1 != ("" + g.string(null != e.ItemRemovalDT1 ? re.getReserved("ItemRemovalDT1") : re.h.ItemRemovalDT1)).indexOf("Refinery"))
+                        					for (var Ae = 0; 8 > Ae;) {
+                        						var le = Ae++,
+                        							oe = b.engine.getGameAttribute("DNSM"),
+                        							ie = null != e.ItemRemovalDN1 ? oe.getReserved("ItemRemovalDN1") : oe.h.ItemRemovalDN1;
+                        						if (0 < parseNum(ie)) {
+                        							var ue = b.engine.getGameAttribute("Refinery")[1][le],
+                        								ge = b.engine.getGameAttribute("DNSM");
+                        							if (ue == (null != e.ItemRemovalDT1 ? ge.getReserved("ItemRemovalDT1") : ge.h.ItemRemovalDT1)) {
+                        								var me = b.engine.getGameAttribute("DNSM"),
+                        									de = b.engine.getGameAttribute("DNSM"),
+                        									ce = me,
+                        									pe = null != e.ItemRemovalDN1 ? de.getReserved("ItemRemovalDN1") : de.h.ItemRemovalDN1;
+                        								null != e.ItemRemovalDN2 ? ce.setReserved("ItemRemovalDN2", pe) : (ce.h.ItemRemovalDN2 = pe);
+                        								var he = b.engine.getGameAttribute("DNSM"),
+                        									be = b.engine.getGameAttribute("DNSM"),
+                        									fe = null != e.ItemRemovalDN1 ? be.getReserved("ItemRemovalDN1") : be.h.ItemRemovalDN1,
+                        									ye = parseNum(fe),
+                        									Re = b.engine.getGameAttribute("Refinery")[2][le],
+                        									ve = he,
+                        									Fe = ye - parseNum(Re);
+                        								null != e.ItemRemovalDN1 ? ve.setReserved("ItemRemovalDN1", Fe) : (ve.h.ItemRemovalDN1 = Fe);
+                        								var Ne = b.engine.getGameAttribute("Refinery")[2],
+                        									_e = b.engine.getGameAttribute("Refinery")[2][le],
+                        									Ie = parseNum(_e),
+                        									De = b.engine.getGameAttribute("DNSM"),
+                        									Ee = null != e.ItemRemovalDN2 ? De.getReserved("ItemRemovalDN2") : De.h.ItemRemovalDN2;
+                        								Ne[le] = Math.round(Math.max(Ie - parseNum(Ee), 0));
+                        								var Se = b.engine.getGameAttribute("Refinery")[2][le];
+                        								0 >= parseNum(Se) && ((b.engine.getGameAttribute("Refinery")[1][le] = "Blank"), (b.engine.getGameAttribute("Refinery")[2][le] = 0));
+                        								break;
+                        							}
+                        						}
+                        					}
+                        				var Ge = b.engine.getGameAttribute("DNSM"),
+                        					Te = b.engine.getGameAttribute("ChestSlotsOwned");
+                        				null != e.ItemRemovalDN2 ? Ge.setReserved("ItemRemovalDN2", Te) : (Ge.h.ItemRemovalDN2 = Te);
+                        				for (var Ue = 0,
+                        						Me = b.engine.getGameAttribute("DNSM"),
+                        						Ve = null != e.ItemRemovalDN2 ? Me.getReserved("ItemRemovalDN2") : Me.h.ItemRemovalDN2,
+                        						Ce = 0 | parseNum(Ve); Ue < Ce;) {
+                        					var Be = Ue++,
+                        						Pe = b.engine.getGameAttribute("DNSM"),
+                        						Oe = null != e.ItemRemovalDN1 ? Pe.getReserved("ItemRemovalDN1") : Pe.h.ItemRemovalDN1;
+                        					if (!(0 < parseNum(Oe))) break;
+                        					var we = b.engine.getGameAttribute("ChestOrder")[Be],
+                        						ke = b.engine.getGameAttribute("DNSM");
+                        					if (we == (null != e.ItemRemovalDT1 ? ke.getReserved("ItemRemovalDT1") : ke.h.ItemRemovalDT1)) {
+                        						var xe = b.engine.getGameAttribute("DNSM"),
+                        							Qe = b.engine.getGameAttribute("DNSM"),
+                        							Xe = xe,
+                        							Le = null != e.ItemRemovalDN1 ? Qe.getReserved("ItemRemovalDN1") : Qe.h.ItemRemovalDN1;
+                        						null != e.ItemRemovalDN2 ? Xe.setReserved("ItemRemovalDN2", Le) : (Xe.h.ItemRemovalDN2 = Le);
+                        						var ze = b.engine.getGameAttribute("DNSM"),
+                        							Ye = b.engine.getGameAttribute("DNSM"),
+                        							We = null != e.ItemRemovalDN1 ? Ye.getReserved("ItemRemovalDN1") : Ye.h.ItemRemovalDN1,
+                        							Ze = parseNum(We),
+                        							He = b.engine.getGameAttribute("ChestQuantity")[Be],
+                        							Je = parseNum(He),
+                        							je = b.engine.getGameAttribute("DNSM"),
+                        							qe = null != e.ItemRemovalDN2 ? je.getReserved("ItemRemovalDN2") : je.h.ItemRemovalDN2,
+                        							Ke = ze,
+                        							$e = Ze - Math.min(Je, parseNum(qe));
+                        						null != e.ItemRemovalDN1 ? Ke.setReserved("ItemRemovalDN1", $e) : (Ke.h.ItemRemovalDN1 = $e);
+                        						var et = b.engine.getGameAttribute("ChestQuantity"),
+                        							tt = b.engine.getGameAttribute("ChestQuantity")[Be],
+                        							nt = parseNum(tt),
+                        							st = b.engine.getGameAttribute("ChestQuantity")[Be],
+                        							at = parseNum(st),
+                        							rt = b.engine.getGameAttribute("DNSM"),
+                        							At = null != e.ItemRemovalDN2 ? rt.getReserved("ItemRemovalDN2") : rt.h.ItemRemovalDN2;
+                        						et[Be] = Math.round(nt - Math.min(at, parseNum(At)));
+                        						var lt = b.engine.getGameAttribute("ChestQuantity")[Be];
+                        						0 >= parseNum(lt) && ((b.engine.getGameAttribute("ChestQuantity")[Be] = 0), (b.engine.getGameAttribute("ChestOrder")[Be] = "Blank"));
+                        					}
+                        				}
+                        			}
+                        		}
+                        	}

@@ -1,0 +1,4 @@
+                        (i.onload = function() {
+                        		var t = (i.status + "")[0];
+                        		"0" === t || "2" === t || "3" === t ? l(i.response, e) : e._emit("loaderror", null, "Failed loading audio file with status: " + i.status + ".");
+                        	}

@@ -1,0 +1,12 @@
+    ($jscomp.initSymbolIterator = function() {
+    		$jscomp.initSymbol();
+    		var e = $jscomp.global.Symbol.iterator;
+    		e || (e = $jscomp.global.Symbol.iterator = $jscomp.global.Symbol("iterator")), "function" != typeof Array.prototype[e] && $jscomp.defineProperty(Array.prototype, e, {
+    				configurable: !0,
+    				writable: !0,
+    				value: function() {
+    					return $jscomp.arrayIterator(this);
+    				},
+    			}),
+    			($jscomp.initSymbolIterator = function() {});
+    	}

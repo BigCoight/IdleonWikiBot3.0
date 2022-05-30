@@ -1,0 +1,247 @@
+                        (t._customBlock_AFKgainrates = function(s) {
+                        		var a = b.engine.getGameAttribute("DNSM");
+                        		null != e.AFKgainzzDNz ? a.setReserved("AFKgainzzDNz", 0) : (a.h.AFKgainzzDNz = 0);
+                        		var r = b.engine.getGameAttribute("DNSM");
+                        		null != e.AFKgainzzALL ? r.setReserved("AFKgainzzALL", 0) : (r.h.AFKgainzzALL = 0);
+                        		var o = b.engine.getGameAttribute("Tasks")[2][1][2];
+                        		if (parseNum(o) > b.engine.getGameAttribute("GetPlayersUsernames").indexOf(b.engine.getGameAttribute("UserInfo")[0])) {
+                        			var i = b.engine.getGameAttribute("DNSM");
+                        			null != e.AFKgainzzALL ? i.setReserved("AFKgainzzALL", 2) : (i.h.AFKgainzzALL = 2);
+                        		}
+                        		if ("Fighting" != s) {
+                        			var u = b.engine.getGameAttribute("DNSM"),
+                        				m = b.engine.getGameAttribute("DNSM"),
+                        				c = null != e.AFKgainzzALL ? m.getReserved("AFKgainzzALL") : m.h.AFKgainzzALL,
+                        				p = parseNum(c),
+                        				h = b.engine.getGameAttribute("DNSM"),
+                        				f = null != e.FamBonusQTYs ? h.getReserved("FamBonusQTYs") : h.h.FamBonusQTYs,
+                        				y = null != e[50] ? f.getReserved("50") : f.h[50],
+                        				R = p + (parseNum(y) + (2 + U._customBlock_CardBonusREAL(46)) + (w._customBlock_GuildBonuses(7) + w._customBlock_CardSetBonuses(0, "7") + (w._customBlock_Labb("SigilBonus", "Blank", 16, 0) + A._customBlock_chipBonuses("safk") + (U._customBlock_EtcBonuses("24") + U._customBlock_EtcBonuses("59") + (w._customBlock_prayersReal(4, 0) - w._customBlock_prayersReal(12, 1))))));
+                        			null != e.AFKgainzzALL ? u.setReserved("AFKgainzzALL", R) : (u.h.AFKgainzzALL = R);
+                        		}
+                        		var v = b.engine.getGameAttribute("DNSM"),
+                        			F = b.engine.getGameAttribute("DNSM"),
+                        			N = null != e.AFKgainzzALL ? F.getReserved("AFKgainzzALL") : F.h.AFKgainzzALL,
+                        			_ = parseNum(N) + (w._customBlock_ArcadeBonus(6) + w._customBlock_FlurboShop(7));
+                        		if ((null != e.AFKgainzzALL ? v.setReserved("AFKgainzzALL", _) : (v.h.AFKgainzzALL = _), "Fighting" == s)) {
+                        			var I = b.engine.getGameAttribute("DNSM"),
+                        				D = b.engine.getGameAttribute("DNSM"),
+                        				E = null != e.BoxRewards ? D.getReserved("BoxRewards") : D.h.BoxRewards,
+                        				S = null != e.fightAFK ? E.getReserved("fightAFK") : E.h.fightAFK,
+                        				G = parseNum(S) + t._customBlock_GetTalentNumber(1, 88) + A._customBlock_GetBribeBonus("3"),
+                        				T = t._customBlock_GetTalentNumber(1, 268),
+                        				M = t._customBlock_GetTalentNumber(1, 448),
+                        				V = t._customBlock_GetTalentNumber(1, 621),
+                        				C = b.engine.getGameAttribute("DNSM"),
+                        				B = null != e.AFKgainzzALL ? C.getReserved("AFKgainzzALL") : C.h.AFKgainzzALL,
+                        				P = parseNum(B),
+                        				O = U._customBlock_CardBonusREAL(43),
+                        				x = t._customBlock_GetTalentNumber(1, 79),
+                        				Q = U._customBlock_EtcBonuses("20") + U._customBlock_EtcBonuses("59"),
+                        				X = b.engine.getGameAttribute("DNSM"),
+                        				L = null != e.StarSigns ? X.getReserved("StarSigns") : X.h.StarSigns,
+                        				z = null != e.FightAFK ? L.getReserved("FightAFK") : L.h.FightAFK,
+                        				Y = 0.2 + (G + (T + (M + (V + (P + (O + (x + (Q + (parseNum(z) + (w._customBlock_GuildBonuses(4) + (w._customBlock_prayersReal(4, 0) - w._customBlock_prayersReal(12, 1) + A._customBlock_chipBonuses("fafk")))))))))))) / 100;
+                        			null != e.AFKgainzzDNz ? I.setReserved("AFKgainzzDNz", Y) : (I.h.AFKgainzzDNz = Y);
+                        			var W = b.engine.getGameAttribute("DNSM"),
+                        				Z = null != e.AFKgainzzDNz ? W.getReserved("AFKgainzzDNz") : W.h.AFKgainzzDNz;
+                        			if (1.5 > parseNum(Z)) {
+                        				var H = b.engine.getGameAttribute("DNSM"),
+                        					J = b.engine.getGameAttribute("DNSM"),
+                        					j = null != e.AFKgainzzDNz ? J.getReserved("AFKgainzzDNz") : J.h.AFKgainzzDNz,
+                        					q = Math.min(1.5, parseNum(j) + w._customBlock_Shrine(8) / 100);
+                        				null != e.AFKgainzzDNz ? H.setReserved("AFKgainzzDNz", q) : (H.h.AFKgainzzDNz = q);
+                        			}
+                        			var K = b.engine.getGameAttribute("DNSM");
+                        			return null != e.AFKgainzzDNz ? K.getReserved("AFKgainzzDNz") : K.h.AFKgainzzDNz;
+                        		}
+                        		if ("Mining" == s) {
+                        			var $ = b.engine.getGameAttribute("DNSM"),
+                        				ee = t._customBlock_GetTalentNumber(1, 89),
+                        				te = b.engine.getGameAttribute("DNSM"),
+                        				ne = null != e.BoxRewards ? te.getReserved("BoxRewards") : te.h.BoxRewards,
+                        				se = null != e.MinAFK ? ne.getReserved("MinAFK") : ne.h.MinAFK,
+                        				ae = parseNum(se),
+                        				re = w._customBlock_TrappingStuffs("TrapMGbonus", 8) + t._customBlock_GetTalentNumber(1, 621),
+                        				Ae = b.engine.getGameAttribute("DNSM"),
+                        				le = null != e.AFKgainzzALL ? Ae.getReserved("AFKgainzzALL") : Ae.h.AFKgainzzALL,
+                        				oe = parseNum(le),
+                        				ie = U._customBlock_CardBonusREAL(33),
+                        				ue = b.engine.getGameAttribute("DNSM"),
+                        				ge = null != e.StarSigns ? ue.getReserved("StarSigns") : ue.h.StarSigns,
+                        				me = null != e.SkillAFK ? ge.getReserved("SkillAFK") : ge.h.SkillAFK,
+                        				de = parseNum(me),
+                        				ce = A._customBlock_GetBribeBonus("24"),
+                        				pe = b.engine.getGameAttribute("DNSM"),
+                        				he = null != e.AlchBubbles ? pe.getReserved("AlchBubbles") : pe.h.AlchBubbles,
+                        				be = null != e.MinFshAFK ? he.getReserved("MinFshAFK") : he.h.MinFshAFK,
+                        				fe = 0.25 + (ee + (ae + (re + (oe + (ie + (de + (ce + parseNum(be)))))))) / 100;
+                        			null != e.AFKgainzzDNz ? $.setReserved("AFKgainzzDNz", fe) : ($.h.AFKgainzzDNz = fe);
+                        			var ye = b.engine.getGameAttribute("DNSM"),
+                        				Re = null != e.AFKgainzzDNz ? ye.getReserved("AFKgainzzDNz") : ye.h.AFKgainzzDNz;
+                        			if (1.5 > parseNum(Re)) {
+                        				var ve = b.engine.getGameAttribute("DNSM"),
+                        					Fe = b.engine.getGameAttribute("DNSM"),
+                        					Ne = null != e.AFKgainzzDNz ? Fe.getReserved("AFKgainzzDNz") : Fe.h.AFKgainzzDNz,
+                        					_e = Math.min(1.5, parseNum(Ne) + w._customBlock_Shrine(8) / 100);
+                        				null != e.AFKgainzzDNz ? ve.setReserved("AFKgainzzDNz", _e) : (ve.h.AFKgainzzDNz = _e);
+                        			}
+                        			var Ie = b.engine.getGameAttribute("DNSM");
+                        			return null != e.AFKgainzzDNz ? Ie.getReserved("AFKgainzzDNz") : Ie.h.AFKgainzzDNz;
+                        		}
+                        		if ("Choppin" == s) {
+                        			var De = b.engine.getGameAttribute("DNSM"),
+                        				Ee = t._customBlock_GetTalentNumber(1, 449),
+                        				Se = b.engine.getGameAttribute("DNSM"),
+                        				Ge = null != e.BoxRewards ? Se.getReserved("BoxRewards") : Se.h.BoxRewards,
+                        				Te = null != e.ChopAFK ? Ge.getReserved("ChopAFK") : Ge.h.ChopAFK,
+                        				Ue = parseNum(Te),
+                        				Me = w._customBlock_TrappingStuffs("TrapMGbonus", 8) + t._customBlock_GetTalentNumber(1, 621),
+                        				Ve = b.engine.getGameAttribute("DNSM"),
+                        				Ce = null != e.AFKgainzzALL ? Ve.getReserved("AFKgainzzALL") : Ve.h.AFKgainzzALL,
+                        				Be = parseNum(Ce),
+                        				Pe = U._customBlock_CardBonusREAL(36),
+                        				Oe = b.engine.getGameAttribute("DNSM"),
+                        				we = null != e.StarSigns ? Oe.getReserved("StarSigns") : Oe.h.StarSigns,
+                        				ke = null != e.SkillAFK ? we.getReserved("SkillAFK") : we.h.SkillAFK,
+                        				xe = parseNum(ke),
+                        				Qe = A._customBlock_GetBribeBonus("24"),
+                        				Xe = b.engine.getGameAttribute("DNSM"),
+                        				Le = null != e.AlchBubbles ? Xe.getReserved("AlchBubbles") : Xe.h.AlchBubbles,
+                        				ze = null != e.ChoppinAFK ? Le.getReserved("ChoppinAFK") : Le.h.ChoppinAFK,
+                        				Ye = 0.25 + (Ee + (Ue + (Me + (Be + (Pe + (xe + (Qe + parseNum(ze)))))))) / 100;
+                        			null != e.AFKgainzzDNz ? De.setReserved("AFKgainzzDNz", Ye) : (De.h.AFKgainzzDNz = Ye);
+                        			var We = b.engine.getGameAttribute("DNSM"),
+                        				Ze = null != e.AFKgainzzDNz ? We.getReserved("AFKgainzzDNz") : We.h.AFKgainzzDNz;
+                        			if (1.5 > parseNum(Ze)) {
+                        				var He = b.engine.getGameAttribute("DNSM"),
+                        					Je = b.engine.getGameAttribute("DNSM"),
+                        					je = null != e.AFKgainzzDNz ? Je.getReserved("AFKgainzzDNz") : Je.h.AFKgainzzDNz,
+                        					qe = Math.min(1.5, parseNum(je) + w._customBlock_Shrine(8) / 100);
+                        				null != e.AFKgainzzDNz ? He.setReserved("AFKgainzzDNz", qe) : (He.h.AFKgainzzDNz = qe);
+                        			}
+                        			var Ke = b.engine.getGameAttribute("DNSM");
+                        			return null != e.AFKgainzzDNz ? Ke.getReserved("AFKgainzzDNz") : Ke.h.AFKgainzzDNz;
+                        		}
+                        		if ("Fishing" == s) {
+                        			var $e = b.engine.getGameAttribute("DNSM"),
+                        				et = t._customBlock_GetTalentNumber(1, 89),
+                        				tt = t._customBlock_GetTalentNumber(1, 118),
+                        				nt = w._customBlock_TrappingStuffs("TrapMGbonus", 8),
+                        				st = b.engine.getGameAttribute("DNSM"),
+                        				at = null != e.BoxRewards ? st.getReserved("BoxRewards") : st.h.BoxRewards,
+                        				rt = null != e.FishAFK ? at.getReserved("FishAFK") : at.h.FishAFK,
+                        				At = parseNum(rt),
+                        				lt = t._customBlock_GetTalentNumber(1, 621),
+                        				ot = b.engine.getGameAttribute("DNSM"),
+                        				it = null != e.AFKgainzzALL ? ot.getReserved("AFKgainzzALL") : ot.h.AFKgainzzALL,
+                        				ut = parseNum(it),
+                        				gt = U._customBlock_CardBonusREAL(39),
+                        				mt = b.engine.getGameAttribute("DNSM"),
+                        				dt = null != e.StarSigns ? mt.getReserved("StarSigns") : mt.h.StarSigns,
+                        				ct = null != e.SkillAFK ? dt.getReserved("SkillAFK") : dt.h.SkillAFK,
+                        				pt = parseNum(ct),
+                        				ht = A._customBlock_GetBribeBonus("24"),
+                        				bt = b.engine.getGameAttribute("DNSM"),
+                        				ft = null != e.AlchBubbles ? bt.getReserved("AlchBubbles") : bt.h.AlchBubbles,
+                        				yt = null != e.MinFshAFK ? ft.getReserved("MinFshAFK") : ft.h.MinFshAFK,
+                        				Rt = 0.25 + (et + (tt + (nt + At + (lt + (ut + (gt + (pt + (ht + (parseNum(yt) + U._customBlock_EtcBonuses("64")))))))))) / 100;
+                        			null != e.AFKgainzzDNz ? $e.setReserved("AFKgainzzDNz", Rt) : ($e.h.AFKgainzzDNz = Rt);
+                        			var vt = b.engine.getGameAttribute("DNSM"),
+                        				Ft = null != e.AFKgainzzDNz ? vt.getReserved("AFKgainzzDNz") : vt.h.AFKgainzzDNz;
+                        			if (1.5 > parseNum(Ft)) {
+                        				var Nt = b.engine.getGameAttribute("DNSM"),
+                        					_t = b.engine.getGameAttribute("DNSM"),
+                        					It = null != e.AFKgainzzDNz ? _t.getReserved("AFKgainzzDNz") : _t.h.AFKgainzzDNz,
+                        					Dt = Math.min(1.5, parseNum(It) + w._customBlock_Shrine(8) / 100);
+                        				null != e.AFKgainzzDNz ? Nt.setReserved("AFKgainzzDNz", Dt) : (Nt.h.AFKgainzzDNz = Dt);
+                        			}
+                        			var Et = b.engine.getGameAttribute("DNSM");
+                        			return null != e.AFKgainzzDNz ? Et.getReserved("AFKgainzzDNz") : Et.h.AFKgainzzDNz;
+                        		}
+                        		if ("Catching" == s) {
+                        			var St = b.engine.getGameAttribute("DNSM"),
+                        				Gt = t._customBlock_GetTalentNumber(1, 298),
+                        				Tt = w._customBlock_TrappingStuffs("TrapMGbonus", 8),
+                        				Ut = b.engine.getGameAttribute("DNSM"),
+                        				Mt = null != e.BoxRewards ? Ut.getReserved("BoxRewards") : Ut.h.BoxRewards,
+                        				Vt = null != e.CatchAFK ? Mt.getReserved("CatchAFK") : Mt.h.CatchAFK,
+                        				Ct = parseNum(Vt),
+                        				Bt = t._customBlock_GetTalentNumber(1, 621),
+                        				Pt = b.engine.getGameAttribute("DNSM"),
+                        				Ot = null != e.AFKgainzzALL ? Pt.getReserved("AFKgainzzALL") : Pt.h.AFKgainzzALL,
+                        				wt = parseNum(Ot),
+                        				kt = U._customBlock_CardBonusREAL(41),
+                        				xt = b.engine.getGameAttribute("DNSM"),
+                        				Qt = null != e.StarSigns ? xt.getReserved("StarSigns") : xt.h.StarSigns,
+                        				Xt = null != e.SkillAFK ? Qt.getReserved("SkillAFK") : Qt.h.SkillAFK,
+                        				Lt = parseNum(Xt),
+                        				zt = A._customBlock_GetBribeBonus("24"),
+                        				Yt = b.engine.getGameAttribute("DNSM"),
+                        				Wt = null != e.AlchBubbles ? Yt.getReserved("AlchBubbles") : Yt.h.AlchBubbles,
+                        				Zt = null != e.CatchinAFK ? Wt.getReserved("CatchinAFK") : Wt.h.CatchinAFK,
+                        				Ht = 0.25 + (Gt + (Tt + Ct + (Bt + (wt + (kt + (Lt + (zt + parseNum(Zt)))))))) / 100;
+                        			null != e.AFKgainzzDNz ? St.setReserved("AFKgainzzDNz", Ht) : (St.h.AFKgainzzDNz = Ht);
+                        			var Jt = b.engine.getGameAttribute("DNSM"),
+                        				jt = null != e.AFKgainzzDNz ? Jt.getReserved("AFKgainzzDNz") : Jt.h.AFKgainzzDNz;
+                        			if (1.5 > parseNum(jt)) {
+                        				var qt = b.engine.getGameAttribute("DNSM"),
+                        					Kt = b.engine.getGameAttribute("DNSM"),
+                        					$t = null != e.AFKgainzzDNz ? Kt.getReserved("AFKgainzzDNz") : Kt.h.AFKgainzzDNz,
+                        					en = Math.min(1.5,
+                        						(null == $t ? 0 : "number" == typeof $t ? d.__cast($t, k) : "number" == typeof $t && (0 | $t) === $t ? d.__cast($t, l) : "boolean" == typeof $t ? d.__cast($t, n) ? 1 : 0 : "string" == typeof $t ? parseFloat($t) : parseFloat(g.string($t))) + w._customBlock_Shrine(8) / 100);
+                        				null != e.AFKgainzzDNz ? qt.setReserved("AFKgainzzDNz", en) : (qt.h.AFKgainzzDNz = en);
+                        			}
+                        			var tn = b.engine.getGameAttribute("DNSM");
+                        			return null != e.AFKgainzzDNz ? tn.getReserved("AFKgainzzDNz") : tn.h.AFKgainzzDNz;
+                        		}
+                        		if ("Cooking" == s) {
+                        			var nn = b.engine.getGameAttribute("DNSM"),
+                        				sn = t._customBlock_GetTalentNumber(1, 621),
+                        				an = b.engine.getGameAttribute("DNSM"),
+                        				rn = null != e.AFKgainzzALL ? an.getReserved("AFKgainzzALL") : an.h.AFKgainzzALL,
+                        				An = parseNum(rn),
+                        				ln = w._customBlock_TrappingStuffs("TrapMGbonus", 8),
+                        				on = b.engine.getGameAttribute("DNSM"),
+                        				un = null != e.StarSigns ? on.getReserved("StarSigns") : on.h.StarSigns,
+                        				gn = null != e.SkillAFK ? un.getReserved("SkillAFK") : un.h.SkillAFK,
+                        				mn = 0.25 + (sn + (An + (ln + (parseNum(gn) + (A._customBlock_GetBribeBonus("24") + t._customBlock_GetTalentNumber(1, 147)))))) / 100;
+                        			null != e.AFKgainzzDNz ? nn.setReserved("AFKgainzzDNz", mn) : (nn.h.AFKgainzzDNz = mn);
+                        			var dn = b.engine.getGameAttribute("DNSM"),
+                        				cn = null != e.AFKgainzzDNz ? dn.getReserved("AFKgainzzDNz") : dn.h.AFKgainzzDNz;
+                        			if (1.5 > parseNum(cn)) {
+                        				var pn = b.engine.getGameAttribute("DNSM"),
+                        					hn = b.engine.getGameAttribute("DNSM"),
+                        					bn = null != e.AFKgainzzDNz ? hn.getReserved("AFKgainzzDNz") : hn.h.AFKgainzzDNz,
+                        					fn = Math.min(1.5, parseNum(bn) + w._customBlock_Shrine(8) / 100);
+                        				null != e.AFKgainzzDNz ? pn.setReserved("AFKgainzzDNz", fn) : (pn.h.AFKgainzzDNz = fn);
+                        			}
+                        			var yn = b.engine.getGameAttribute("DNSM");
+                        			return null != e.AFKgainzzDNz ? yn.getReserved("AFKgainzzDNz") : yn.h.AFKgainzzDNz;
+                        		}
+                        		if ("Laboratory" == s) {
+                        			var Rn = b.engine.getGameAttribute("DNSM"),
+                        				vn = t._customBlock_GetTalentNumber(1, 621),
+                        				Fn = b.engine.getGameAttribute("DNSM"),
+                        				Nn = null != e.AFKgainzzALL ? Fn.getReserved("AFKgainzzALL") : Fn.h.AFKgainzzALL,
+                        				_n = parseNum(Nn),
+                        				In = w._customBlock_TrappingStuffs("TrapMGbonus", 8),
+                        				Dn = b.engine.getGameAttribute("DNSM"),
+                        				En = null != e.StarSigns ? Dn.getReserved("StarSigns") : Dn.h.StarSigns,
+                        				Sn = null != e.SkillAFK ? En.getReserved("SkillAFK") : En.h.SkillAFK,
+                        				Gn = 0.25 + (vn + (_n + (In + (parseNum(Sn) + A._customBlock_GetBribeBonus("24"))))) / 100;
+                        			null != e.AFKgainzzDNz ? Rn.setReserved("AFKgainzzDNz", Gn) : (Rn.h.AFKgainzzDNz = Gn);
+                        			var Tn = b.engine.getGameAttribute("DNSM"),
+                        				Un = null != e.AFKgainzzDNz ? Tn.getReserved("AFKgainzzDNz") : Tn.h.AFKgainzzDNz;
+                        			if (1.5 > parseNum(Un)) {
+                        				var Mn = b.engine.getGameAttribute("DNSM"),
+                        					Vn = b.engine.getGameAttribute("DNSM"),
+                        					Cn = null != e.AFKgainzzDNz ? Vn.getReserved("AFKgainzzDNz") : Vn.h.AFKgainzzDNz,
+                        					Bn = Math.min(1.5, parseNum(Cn) + w._customBlock_Shrine(8) / 100);
+                        				null != e.AFKgainzzDNz ? Mn.setReserved("AFKgainzzDNz", Bn) : (Mn.h.AFKgainzzDNz = Bn);
+                        			}
+                        			var Pn = b.engine.getGameAttribute("DNSM");
+                        			return null != e.AFKgainzzDNz ? Pn.getReserved("AFKgainzzDNz") : Pn.h.AFKgainzzDNz;
+                        		}
+                        		return 0.01;
+                        	}

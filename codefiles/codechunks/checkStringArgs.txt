@@ -1,0 +1,5 @@
+    ($jscomp.checkStringArgs = function(e, t, n) {
+    		if (null == e) throw new TypeError("The 'this' value for String.prototype." + n + " must not be null or undefined");
+    		if (t instanceof RegExp) throw new TypeError("First argument to String.prototype." + n + " must not be a regular expression");
+    		return e + "";
+    	}

@@ -1,0 +1,275 @@
+                        (w._customBlock_Breeding = function(s, a, r, o) {
+                        		if ("TotalEggCapacity" == s) {
+                        			if ("UsingEggInv" == a) {
+                        				var i = b.engine.getGameAttribute("DNSM");
+                        				null != e.PetszzBrDN1 ? i.setReserved("PetszzBrDN1", 0) : (i.h.PetszzBrDN1 = 0);
+                        				for (var u = 0,
+                        						m = w._customBlock_Breeding("PetUpgBONUS", "0", 2, 0),
+                        						c = b.engine.getGameAttribute("GemItemsPurchased")[119],
+                        						p = parseNum(c),
+                        						f = b.engine.getGameAttribute("Tasks")[2][3][2],
+                        						y = (3 + (m + (p + parseNum(f)))) | 0; u < y;) {
+                        					var R = u++;
+                        					if (0 == b.engine.getGameAttribute("Breeding")[0][R]) {
+                        						var v = b.engine.getGameAttribute("DNSM"),
+                        							F = b.engine.getGameAttribute("DNSM"),
+                        							N = null != e.PetszzBrDN1 ? F.getReserved("PetszzBrDN1") : F.h.PetszzBrDN1,
+                        							_ = v,
+                        							I = Math.round(parseNum(N) + 1);
+                        						null != e.PetszzBrDN1 ? _.setReserved("PetszzBrDN1", I) : (_.h.PetszzBrDN1 = I);
+                        					}
+                        				}
+                        				var D = b.engine.getGameAttribute("DNSM");
+                        				return null != e.PetszzBrDN1 ? D.getReserved("PetszzBrDN1") : D.h.PetszzBrDN1;
+                        			}
+                        			var E = w._customBlock_Breeding("PetUpgBONUS", "0", 2, 0),
+                        				S = b.engine.getGameAttribute("GemItemsPurchased")[119],
+                        				G = parseNum(S),
+                        				T = b.engine.getGameAttribute("Tasks")[2][3][2];
+                        			return Math.round(3 + (E + (G + parseNum(T))));
+                        		}
+                        		if ("FenceYardSlots" == s) {
+                        			var U = b.engine.getGameAttribute("Breeding")[2][4],
+                        				M = parseNum(U),
+                        				V = b.engine.getGameAttribute("GemItemsPurchased")[125];
+                        			return Math.round(5 + (M + 2 * parseNum(V)));
+                        		}
+                        		if ("PetBattleSlots" == s) return Math.round(2 + (w._customBlock_Breeding("PetArenaBonus", "0", 0, 0) + (w._customBlock_Breeding("PetArenaBonus", "0", 4, 0) + w._customBlock_Breeding("PetArenaBonus", "0", 8, 0) + w._customBlock_Breeding("PetArenaBonus", "0", 12, 0))));
+                        		if ("BREED_RIG" == s) {
+                        			if (0 == r && 0 == o) {
+                        				if (0 == b.engine.getGameAttribute("Exp0")[11] && 1 == b.engine.getGameAttribute("Lv0")[11]) return Math.round(1);
+                        				var C = b.engine.getGameAttribute("Exp0")[11];
+                        				return parseNum(C) < 5 * H._customBlock_SkillStats("BreedingEXPmulti") && 1 == b.engine.getGameAttribute("Lv0")[11] ? Math.round(2) : Math.round(0);
+                        			}
+                        			return Math.round(0);
+                        		}
+                        		if ("PetArenaBonus" == s) {
+                        			var B = b.engine.getGameAttribute("DNSM"),
+                        				P = null != e.CalcTalentMAP ? B.getReserved("CalcTalentMAP") : B.h.CalcTalentMAP,
+                        				O = null != e.arena ? P.getReserved("arena") : P.h.arena;
+                        			return parseNum(O) > r ? Math.round(1) : Math.round(0);
+                        		}
+                        		if ("BreedabilitySpdMulti" == s) return 1 + (w._customBlock_Breeding("PetUpgBONUS", "0", 3, 0) + (A._customBlock_MealBonus("Breed") + 20 * w._customBlock_AchieveStatus(218))) / 100;
+                        		if ("TotPetsFound" == s) return b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[110];
+                        		if ("ShinySpdMulti" == s) return 1 + w._customBlock_MainframeBonus(115) / 100;
+                        		if ("PetQTYonBreed" == s) {
+                        			var x = b.engine.getGameAttribute("DNSM"),
+                        				Q = b.engine.getGameAttribute("Lv0")[11],
+                        				X = parseNum(Q),
+                        				L = b.engine.getGameAttribute("Lv0")[11],
+                        				z = Math.pow(4 * X + Math.pow(parseNum(L) / 2, 3), 0.85);
+                        			null != e.PetszzBrDN1 ? x.setReserved("PetszzBrDN1", z) : (x.h.PetszzBrDN1 = z);
+                        			var Y = b.engine.getGameAttribute("DNSM"),
+                        				W = b.engine.getGameAttribute("DNSM"),
+                        				Z = null != e.PetszzBrDN1 ? W.getReserved("PetszzBrDN1") : W.h.PetszzBrDN1,
+                        				J = parseNum(Z),
+                        				j = Math.min(2.1, Math.max(1, w._customBlock_getbonus2(1, 373, -1))) * (1 + r / 8),
+                        				q = b.engine.getGameAttribute("Lv0")[11],
+                        				K = J * j * (Math.min(1.2 + parseNum(q) / 12, 4) * Math.pow(2.71828, -10 * h.randomFloatBetween(0, Math.max(0.1, 1 - ((r + 4) / 12) * 0.9))) + 1);
+                        			null != e.PetszzBrDN1 ? Y.setReserved("PetszzBrDN1", K) : (Y.h.PetszzBrDN1 = K);
+                        			var $ = b.engine.getGameAttribute("DNSM");
+                        			return null != e.PetszzBrDN1 ? $.getReserved("PetszzBrDN1") : $.h.PetszzBrDN1;
+                        		}
+                        		if ("TerritoryID" == s) return 42 == o ? r : 14.5 == b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[10] && 14.5 == r ? 14 : Math.round(r + Math.floor((r + 86.1) / 100));
+                        		if ("maxTerritoryScroll" == s) {
+                        			var ee = b.engine.getGameAttribute("CustomLists");
+                        			return (null != e.TerritoryInfo ? ee.getReserved("TerritoryInfo") : ee.h.TerritoryInfo).length - 3;
+                        		}
+                        		if ("BaseBreedChance" == s) {
+                        			if (1 == b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[49]) {
+                        				var te = b.engine.getGameAttribute("CustomLists"),
+                        					ne = (null != e.RANDOlist ? te.getReserved("RANDOlist") : te.h.RANDOlist)[54],
+                        					se = b.engine.getGameAttribute("CustomLists"),
+                        					ae = (null != e.PetStats ? se.getReserved("PetStats") : se.h.PetStats)[0 | r][0 | o][5],
+                        					re = ne[0 | parseNum(ae)];
+                        				return (1e-6 + 0.002 / Math.max(1, parseNum(re)));
+                        			}
+                        			var Ae = b.engine.getGameAttribute("Breeding")[1][0 | r];
+                        			if (o + 2 > parseNum(Ae)) {
+                        				var le = b.engine.getGameAttribute("CustomLists"),
+                        					oe = (null != e.RANDOlist ? le.getReserved("RANDOlist") : le.h.RANDOlist)[54],
+                        					ie = b.engine.getGameAttribute("CustomLists"),
+                        					ue = (null != e.PetStats ? ie.getReserved("PetStats") : ie.h.PetStats)[0 | r][0 | o][5],
+                        					ge = oe[0 | parseNum(ue)];
+                        				return (1 / Math.max(1, parseNum(ge)));
+                        			}
+                        			return 1;
+                        		}
+                        		if ("TotalBreedChance" == s) {
+                        			var me = b.engine.getGameAttribute("GemItemsPurchased")[119],
+                        				de = parseNum(me),
+                        				ce = b.engine.getGameAttribute("DNSM"),
+                        				pe = null != e.AlchVials ? ce.getReserved("AlchVials") : ce.h.AlchVials,
+                        				he = null != e.NewPet ? pe.getReserved("NewPet") : pe.h.NewPet;
+                        			return (
+                        				(1 + (10 * de) / 100) * (1 + parseNum(he) / 100) * (1 + t._customBlock_StampBonusOfTypeX("NewPet") / 100) * (1 + A._customBlock_MealBonus("Npet") / 100) * w._customBlock_Breeding("BaseBreedChance", "0", r, o) * w._customBlock_Breeding("1stMulti", "0", r, o) * w._customBlock_Breeding("2ndMulti", "0", r, o) * w._customBlock_Breeding("3rdMulti", "0", r, o) * w._customBlock_Breeding("4thMulti", "0", r, o) * w._customBlock_Breeding("5thMulti", "0", r, o));
+                        		}
+                        		if ("GeneticCost" == s) {
+                        			var be = b.engine.getGameAttribute("Breeding")[(r + 4) | 0][0 | o],
+                        				fe = (10 + (5 + o + parseNum(be)) + Math.pow(Math.max(o - 3, 1), 1.7)) * Math.pow(Math.max(o + 1 - 6, 1), 1.12),
+                        				ye = b.engine.getGameAttribute("Breeding")[(r + 4) | 0][0 | o],
+                        				Re = 1.052 + 0.01 * Math.floor(parseNum(ye) / 10),
+                        				ve = b.engine.getGameAttribute("Breeding")[(r + 4) | 0][0 | o];
+                        			return (fe * Math.pow(Re, parseNum(ve)) * Math.max(0.01, 1 - w._customBlock_Breeding("PetUpgBONUS", "0", 1, 0) / 100));
+                        		}
+                        		if ("TotalTimeForEgg" == s) {
+                        			var Fe = w._customBlock_MainframeBonus(111),
+                        				Ne = A._customBlock_MealBonus("TimeEgg"),
+                        				_e = b.engine.getGameAttribute("DNSM"),
+                        				Ie = null != e.AlchBubbles ? _e.getReserved("AlchBubbles") : _e.h.AlchBubbles,
+                        				De = null != e.EggInc ? Ie.getReserved("EggInc") : Ie.h.EggInc;
+                        			return (7200 / (1 + (Fe + (Ne + (parseNum(De) + 10 * w._customBlock_AchieveStatus(220)))) / 100));
+                        		}
+                        		if ("SpecialPassives" == s) {
+                        			if ("Lv" == a) {
+                        				var Ee = b.engine.getGameAttribute("DNSM");
+                        				null != e.PetszzBrDN1 ? Ee.setReserved("PetszzBrDN1", 1) : (Ee.h.PetszzBrDN1 = 1);
+                        				for (var Se = 0; 19 > Se;) {
+                        					var Ge = Se++,
+                        						Te = b.engine.getGameAttribute("Breeding")[(r + 22) | 0][0 | o];
+                        					if (parseNum(Te) > Math.floor((1 + Math.pow(Ge + 1, 1.6)) * Math.pow(1.7, Ge + 1))) {
+                        						var Ue = b.engine.getGameAttribute("DNSM"),
+                        							Me = Ge + 2;
+                        						null != e.PetszzBrDN1 ? Ue.setReserved("PetszzBrDN1", Me) : (Ue.h.PetszzBrDN1 = Me);
+                        					}
+                        				}
+                        				var Ve = b.engine.getGameAttribute("DNSM");
+                        				return null != e.PetszzBrDN1 ? Ve.getReserved("PetszzBrDN1") : Ve.h.PetszzBrDN1;
+                        			}
+                        			if ("REQ" == a) {
+                        				var Ce = b.engine.getGameAttribute("DNSM"),
+                        					Be = w._customBlock_Breeding("SpecialPassives", "Lv", r, o);
+                        				null != e.PetszzBrDN2 ? Ce.setReserved("PetszzBrDN2", Be) : (Ce.h.PetszzBrDN2 = Be);
+                        				var Pe = b.engine.getGameAttribute("DNSM"),
+                        					Oe = null != e.PetszzBrDN2 ? Pe.getReserved("PetszzBrDN2") : Pe.h.PetszzBrDN2,
+                        					we = 1 + Math.pow(parseNum(Oe), 1.6),
+                        					ke = b.engine.getGameAttribute("DNSM"),
+                        					xe = null != e.PetszzBrDN2 ? ke.getReserved("PetszzBrDN2") : ke.h.PetszzBrDN2;
+                        				return Math.floor(we * Math.pow(1.7, parseNum(xe)));
+                        			}
+                        			return 1;
+                        		}
+                        		if ("1stMulti" == s) {
+                        			var Qe = b.engine.getGameAttribute("Breeding")[(4 + r) | 0][0 | o];
+                        			return (1 + Math.ceil(100 * Math.pow(parseNum(Qe) / 10, 1.9)) / 100);
+                        		}
+                        		if ("2ndMulti" == s) {
+                        			if (1 == b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[53][0]) {
+                        				var Xe = b.engine.getGameAttribute("Breeding")[(r + 13) | 0][0 | o];
+                        				return (1 + Math.log(Math.max(1, Math.pow(parseNum(Xe) + 1, 0.725))));
+                        			}
+                        			return 1;
+                        		}
+                        		if ("3rdMulti" == s) {
+                        			if (1 == b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[53][1]) {
+                        				var Le = b.engine.getGameAttribute("Breeding")[0][0],
+                        					ze = 0.25 * Math.pow(parseNum(Le), 1.4),
+                        					Ye = b.engine.getGameAttribute("Breeding")[0][0];
+                        				return (1 + (ze + Math.pow(parseNum(Ye) / 3, 6)));
+                        			}
+                        			return 1;
+                        		}
+                        		if ("4thMulti" == s) {
+                        			if (1 == b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[53][2]) {
+                        				if (0 == b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[44]) return 1;
+                        				var We = b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[44],
+                        					Ze = parseNum(We),
+                        					He = b.engine.getGameAttribute("Breeding")[2][7],
+                        					Je = Math.max(1, Math.min(3, 1 + 0.15 * parseNum(He))),
+                        					je = b.engine.getGameAttribute("Breeding")[1],
+                        					qe = b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[44],
+                        					Ke = je[
+                        						(parseNum(qe) - 1) | 0],
+                        					$e = parseNum(Ke),
+                        					et = b.engine.getGameAttribute("CustomLists"),
+                        					tt = null != e.PetStats ? et.getReserved("PetStats") : et.h.PetStats,
+                        					nt = b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[44],
+                        					st = tt[
+                        						(parseNum(nt) - 1) | 0].length,
+                        					at = b.engine.getGameAttribute("CustomLists"),
+                        					rt = null != e.PetStats ? at.getReserved("PetStats") : at.h.PetStats,
+                        					At = b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[44];
+                        				return (1 + 0.1 * Ze + Je * Math.pow($e / (st - rt[
+                        					(parseNum(At) - 1) | 0].length / 2), 3));
+                        			}
+                        			return 1;
+                        		}
+                        		if ("5thMulti" == s) {
+                        			if (1 == b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[53][3]) {
+                        				var lt = b.engine.getGameAttribute("OptionsListAccount")[86];
+                        				return Math.max(1, Math.pow(parseNum(lt) + 1, 0.3));
+                        			}
+                        			return 1;
+                        		}
+                        		if ("PetUpgCostREAL" == s) {
+                        			var ot = b.engine.getGameAttribute("CustomLists"),
+                        				it = (null != e.PetUpgradeINFO ? ot.getReserved("PetUpgradeINFO") : ot.h.PetUpgradeINFO)[0 | r][(4 + 2 * o) | 0],
+                        				ut = parseNum(it),
+                        				gt = b.engine.getGameAttribute("Breeding")[2][0 | r],
+                        				mt = parseNum(gt),
+                        				dt = b.engine.getGameAttribute("CustomLists"),
+                        				ct = (null != e.PetUpgradeINFO ? dt.getReserved("PetUpgradeINFO") : dt.h.PetUpgradeINFO)[0 | r][(2 * o + 5) | 0],
+                        				pt = parseNum(ct),
+                        				ht = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        			return (ut * (1 + mt) * Math.pow(pt, parseNum(ht)));
+                        		}
+                        		if ("PetUpgMaxLV" == s) {
+                        			var bt = b.engine.getGameAttribute("CustomLists"),
+                        				ft = (null != e.PetUpgradeINFO ? bt.getReserved("PetUpgradeINFO") : bt.h.PetUpgradeINFO)[0 | r][8];
+                        			return parseNum(ft);
+                        		}
+                        		if ("GeneticsPerTrashPet" == s) return h.randomInt(2, 6);
+                        		if ("PetUpgBONUS" == s) {
+                        			if (0 == r) {
+                        				var yt = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return parseNum(yt);
+                        			}
+                        			if (1 == r) {
+                        				var Rt = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return (4 * parseNum(Rt));
+                        			}
+                        			if (2 == r) {
+                        				var vt = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return parseNum(vt);
+                        			}
+                        			if (3 == r) {
+                        				var Ft = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return (25 * parseNum(Ft));
+                        			}
+                        			if (4 == r) {
+                        				var Nt = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return parseNum(Nt);
+                        			}
+                        			if (5 == r) {
+                        				var _t = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return (
+                        					(1 + 0.25 * parseNum(_t)) * Math.min(2, Math.max(1, 1 + 0.1 * w._customBlock_AchieveStatus(221))));
+                        			}
+                        			if (6 == r) {
+                        				var It = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return (6 * parseNum(It));
+                        			}
+                        			if (7 == r) {
+                        				var Dt = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return (1 + 0.15 * parseNum(Dt));
+                        			}
+                        			if (8 == r) {
+                        				var Et = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return (1 + 2 * parseNum(Et));
+                        			}
+                        			if (9 == r) {
+                        				var St = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return (1 + 0.05 * parseNum(St));
+                        			}
+                        			if (10 == r) {
+                        				var Gt = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return (10 * parseNum(Gt));
+                        			}
+                        			if (11 == r) {
+                        				var Tt = b.engine.getGameAttribute("Breeding")[2][0 | r];
+                        				return Math.ceil(12 * Math.pow(parseNum(Tt), 0.698));
+                        			}
+                        			return 0;
+                        		}
+                        		return 69;
+                        	}

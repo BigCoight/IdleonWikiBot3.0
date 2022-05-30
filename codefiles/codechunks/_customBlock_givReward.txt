@@ -1,0 +1,28 @@
+                        (w._customBlock_givReward = function(t, s, a) {
+                        		if ("arcade" == a)
+                        			if (Sb.contains(b.engine.getGameAttribute("InventoryOrder"), "Blank"))
+                        				if (Sb.contains(b.engine.getGameAttribute("InventoryOrder"), t)) {
+                        					a = b.engine.getGameAttribute("ItemQuantity");
+                        					var r = b.engine.getGameAttribute("InventoryOrder").indexOf(t);
+                        					(t = b.engine.getGameAttribute("ItemQuantity")[b.engine.getGameAttribute("InventoryOrder").indexOf(t)]),
+                        					(a[r] = Math.round(parseNum(t) + s));
+                        				} else(b.engine.getGameAttribute("ItemQuantity")[b.engine.getGameAttribute("InventoryOrder").indexOf("Blank")] = s),
+                        					(b.engine.getGameAttribute("ItemMap")[b.engine.getGameAttribute("InventoryOrder").indexOf("Blank")] = new p()),
+                        					(b.engine.getGameAttribute("InventoryOrder")[b.engine.getGameAttribute("InventoryOrder").indexOf("Blank")] = t);
+                        		else(a = b.engine.getGameAttribute("ArcUnclaim")),
+                        			(null != e[t] ? a.existsReserved(t) : a.h.hasOwnProperty(t)) ? ((a = b.engine.getGameAttribute("ArcUnclaim")),
+                        				(r = b.engine.getGameAttribute("ArcUnclaim")),
+                        				(r = null != e[t] ? r.getReserved(t) : r.h[t]),
+                        				(s = Math.round(parseNum(r) + s))) : (a = b.engine.getGameAttribute("ArcUnclaim")),
+                        			null != e[t] ? a.setReserved(t, s) : (a.h[t] = s);
+                        		else if ("arcadeClaim" == a && (Sb.contains(b.engine.getGameAttribute("InventoryOrder"), "Blank") || Sb.contains(b.engine.getGameAttribute("InventoryOrder"), t))) {
+                        			if (Sb.contains(b.engine.getGameAttribute("InventoryOrder"), t)) {
+                        				(a = b.engine.getGameAttribute("ItemQuantity")), (r = b.engine.getGameAttribute("InventoryOrder").indexOf(t));
+                        				var A = b.engine.getGameAttribute("ItemQuantity")[b.engine.getGameAttribute("InventoryOrder").indexOf(t)];
+                        				a[r] = Math.round(parseNum(A) + s);
+                        			} else(b.engine.getGameAttribute("ItemQuantity")[b.engine.getGameAttribute("InventoryOrder").indexOf("Blank")] = s),
+                        				(b.engine.getGameAttribute("ItemMap")[b.engine.getGameAttribute("InventoryOrder").indexOf("Blank")] = new p()),
+                        				(b.engine.getGameAttribute("InventoryOrder")[b.engine.getGameAttribute("InventoryOrder").indexOf("Blank")] = t);
+                        			b.engine.getGameAttribute("ArcUnclaim").remove(t);
+                        		}
+                        	}

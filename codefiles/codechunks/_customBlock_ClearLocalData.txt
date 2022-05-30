@@ -1,0 +1,522 @@
+                        (U._customBlock_ClearLocalData = function() {
+                        		var t = b.engine.gameAttributes;
+                        		null != e.CloudsaveTimer ? t.setReserved("CloudsaveTimer", 0) : (t.h.CloudsaveTimer = 0);
+                        		var s = b.engine,
+                        			a = new p(),
+                        			r = s.gameAttributes;
+                        		null != e.PlayerDATABASE ? r.setReserved("PlayerDATABASE", a) : (r.h.PlayerDATABASE = a);
+                        		var A = b.engine.gameAttributes,
+                        			o = [];
+                        		null != e.NonCloudsave ? A.setReserved("NonCloudsave", o) : (A.h.NonCloudsave = o);
+                        		var i = b.engine,
+                        			u = new p(),
+                        			m = i.gameAttributes;
+                        		null != e.DummyNumbersStatManager ? m.setReserved("DummyNumbersStatManager", u) : (m.h.DummyNumbersStatManager = u);
+                        		var c = b.engine.gameAttributes,
+                        			h = [];
+                        		null != e.TalPresetLISTS ? c.setReserved("TalPresetLISTS", h) : (c.h.TalPresetLISTS = h);
+                        		var f = b.engine.gameAttributes,
+                        			y = [];
+                        		null != e.TalPresetATTACKS ? f.setReserved("TalPresetATTACKS", y) : (f.h.TalPresetATTACKS = y);
+                        		var R = b.engine.gameAttributes,
+                        			v = [];
+                        		null != e.CardPreset ? R.setReserved("CardPreset", v) : (R.h.CardPreset = v);
+                        		var F = b.engine,
+                        			N = new p(),
+                        			_ = F.gameAttributes;
+                        		null != e.DNSM ? _.setReserved("DNSM", N) : (_.h.DNSM = N);
+                        		var I = b.engine.gameAttributes,
+                        			D = [];
+                        		null != e.DamagePixels ? I.setReserved("DamagePixels", D) : (I.h.DamagePixels = D);
+                        		var E = b.engine.gameAttributes,
+                        			S = [];
+                        		null != e.dummyActor ? E.setReserved("dummyActor", S) : (E.h.dummyActor = S);
+                        		var G = b.engine,
+                        			T = new p(),
+                        			U = G.gameAttributes;
+                        		null != e.OtherPlayers ? U.setReserved("OtherPlayers", T) : (U.h.OtherPlayers = T);
+                        		var M = b.engine.gameAttributes,
+                        			V = [];
+                        		null != e.OriginPixelActor ? M.setReserved("OriginPixelActor", V) : (M.h.OriginPixelActor = V);
+                        		var C = b.engine.gameAttributes,
+                        			B = [];
+                        		null != e.PixelHelperActor ? C.setReserved("PixelHelperActor", B) : (C.h.PixelHelperActor = B);
+                        		var P = b.engine.gameAttributes,
+                        			O = [];
+                        		null != e.PlayerImgInst ? P.setReserved("PlayerImgInst", O) : (P.h.PlayerImgInst = O);
+                        		var w = b.engine.gameAttributes,
+                        			x = [];
+                        		null != e.Player ? w.setReserved("Player", x) : (w.h.Player = x);
+                        		var Q = b.engine.gameAttributes,
+                        			X = [];
+                        		null != e.MapMonstersList ? Q.setReserved("MapMonstersList", X) : (Q.h.MapMonstersList = X);
+                        		var L = b.engine.gameAttributes,
+                        			z = [];
+                        		null != e.ItemGetPixelQueue ? L.setReserved("ItemGetPixelQueue", z) : (L.h.ItemGetPixelQueue = z);
+                        		var Y = b.engine.gameAttributes,
+                        			W = [];
+                        		null != e.DummyListDMGpixel ? Y.setReserved("DummyListDMGpixel", W) : (Y.h.DummyListDMGpixel = W);
+                        		var Z = b.engine.gameAttributes,
+                        			H = [];
+                        		null != e.DummyList ? Z.setReserved("DummyList", H) : (Z.h.DummyList = H);
+                        		var J = b.engine.gameAttributes,
+                        			j = [];
+                        		null != e.DummyList2 ? J.setReserved("DummyList2", j) : (J.h.DummyList2 = j);
+                        		var q = b.engine.gameAttributes,
+                        			K = [];
+                        		null != e.DummyList3 ? q.setReserved("DummyList3", K) : (q.h.DummyList3 = K);
+                        		var $ = b.engine,
+                        			ee = new p(),
+                        			te = $.gameAttributes;
+                        		null != e.ChatBubbleActors ? te.setReserved("ChatBubbleActors", ee) : (te.h.ChatBubbleActors = ee);
+                        		var ne = b.engine,
+                        			se = new p(),
+                        			ae = ne.gameAttributes;
+                        		null != e.ItemDefinitionsGET ? ae.setReserved("ItemDefinitionsGET", se) : (ae.h.ItemDefinitionsGET = se);
+                        		var re = b.engine,
+                        			Ae = new p(),
+                        			le = re.gameAttributes;
+                        		null != e.MonsterDefinitionsGET ? le.setReserved("MonsterDefinitionsGET", Ae) : (le.h.MonsterDefinitionsGET = Ae);
+                        		var oe = b.engine,
+                        			ie = new p(),
+                        			ue = oe.gameAttributes;
+                        		null != e.DialogueDefGET ? ue.setReserved("DialogueDefGET", ie) : (ue.h.DialogueDefGET = ie);
+                        		var ge = b.engine,
+                        			me = new p(),
+                        			de = ge.gameAttributes;
+                        		null != e.TimeAway ? de.setReserved("TimeAway", me) : (de.h.TimeAway = me);
+                        		var ce = b.engine.gameAttributes;
+                        		null != e.DummyNumber3 ? ce.setReserved("DummyNumber3", 713423) : (ce.h.DummyNumber3 = 713423);
+                        		var pe = b.engine.gameAttributes,
+                        			he = [];
+                        		null != e.AnvilCraftStatus ? pe.setReserved("AnvilCraftStatus", he) : (pe.h.AnvilCraftStatus = he);
+                        		var be = b.engine.gameAttributes;
+                        		null != e.BGselected ? be.setReserved("BGselected", 0) : (be.h.BGselected = 0);
+                        		var fe = b.engine.gameAttributes;
+                        		null != e.DoOnceREAL ? fe.setReserved("DoOnceREAL", 0) : (fe.h.DoOnceREAL = 0);
+                        		var ye = b.engine.gameAttributes,
+                        			Re = [];
+                        		null != e.BossInfo ? ye.setReserved("BossInfo", Re) : (ye.h.BossInfo = Re);
+                        		var ve = b.engine.gameAttributes,
+                        			Fe = [];
+                        		null != e.BribeStatus ? ve.setReserved("BribeStatus", Fe) : (ve.h.BribeStatus = Fe);
+                        		var Ne = b.engine.gameAttributes,
+                        			_e = [];
+                        		null != e.BugInfo ? Ne.setReserved("BugInfo", _e) : (Ne.h.BugInfo = _e);
+                        		var Ie = b.engine.gameAttributes,
+                        			De = [];
+                        		null != e.CauldronBubbles ? Ie.setReserved("CauldronBubbles", De) : (Ie.h.CauldronBubbles = De);
+                        		var Ee = b.engine.gameAttributes,
+                        			Se = [];
+                        		null != e.CauldronP2W ? Ee.setReserved("CauldronP2W", Se) : (Ee.h.CauldronP2W = Se);
+                        		var Ge = b.engine.gameAttributes,
+                        			Te = [];
+                        		null != e.ChestMap ? Ge.setReserved("ChestMap", Te) : (Ge.h.ChestMap = Te);
+                        		var Ue = b.engine.gameAttributes,
+                        			Me = [];
+                        		null != e.ChestOrder ? Ue.setReserved("ChestOrder", Me) : (Ue.h.ChestOrder = Me);
+                        		var Ve = b.engine.gameAttributes,
+                        			Ce = [];
+                        		null != e.ChestQuantity ? Ve.setReserved("ChestQuantity", Ce) : (Ve.h.ChestQuantity = Ce);
+                        		for (var Be = 0; 168 > Be;) {
+                        			var Pe = Be++;
+                        			null == b.engine.getGameAttribute("ChestOrder")[Pe] && (24 > Pe ? b.engine.getGameAttribute("ChestOrder").push("Blank") : b.engine.getGameAttribute("ChestOrder").push("LockedInvSpace"), b.engine.getGameAttribute("ChestQuantity").push(0), b.engine.getGameAttribute("ChestMap").push(new p()));
+                        		}
+                        		var Oe = b.engine,
+                        			we = new p(),
+                        			ke = Oe.gameAttributes;
+                        		null != e.CurrenciesOwned ? ke.setReserved("CurrenciesOwned", we) : (ke.h.CurrenciesOwned = we);
+                        		var xe = b.engine.gameAttributes,
+                        			Qe = [];
+                        		null != e.ForgeIntervalProgress ? xe.setReserved("ForgeIntervalProgress", Qe) : (xe.h.ForgeIntervalProgress = Qe),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[0] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[1] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[2] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[3] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[4] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[5] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[6] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[7] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[8] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[9] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[10] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[11] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[12] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[13] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[14] = 0),
+                        			(b.engine.getGameAttribute("ForgeIntervalProgress")[15] = 0);
+                        		var Xe = b.engine.gameAttributes,
+                        			Le = [];
+                        		null != e.ForgeItemOrder ? Xe.setReserved("ForgeItemOrder", Le) : (Xe.h.ForgeItemOrder = Le);
+                        		var ze = b.engine.gameAttributes,
+                        			Ye = [];
+                        		null != e.ForgeItemQuantity ? ze.setReserved("ForgeItemQuantity", Ye) : (ze.h.ForgeItemQuantity = Ye);
+                        		for (var We = 0; 48 > We;) {
+                        			var Ze = We++;
+                        			(b.engine.getGameAttribute("ForgeItemOrder")[Ze] = "Blank"), (b.engine.getGameAttribute("ForgeItemQuantity")[Ze] = 0);
+                        		}
+                        		var He = b.engine.gameAttributes,
+                        			Je = [];
+                        		null != e.FurnaceLevels ? He.setReserved("FurnaceLevels", Je) : (He.h.FurnaceLevels = Je),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(1),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(0),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(0),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(0),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(0),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(0),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(0),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(0),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(0),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(0),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(0),
+                        			b.engine.getGameAttribute("FurnaceLevels").push(0);
+                        		var je = b.engine,
+                        			qe = new p(),
+                        			Ke = je.gameAttributes;
+                        		null != e.FamilyValuesMap ? Ke.setReserved("FamilyValuesMap", qe) : (Ke.h.FamilyValuesMap = qe);
+                        		var $e = b.engine.gameAttributes,
+                        			et = [];
+                        		null != e.GemItemsPurchased ? $e.setReserved("GemItemsPurchased", et) : ($e.h.GemItemsPurchased = et);
+                        		var tt = b.engine.gameAttributes;
+                        		null != e.GemsOwned ? tt.setReserved("GemsOwned", 0) : (tt.h.GemsOwned = 0);
+                        		var nt = b.engine.gameAttributes,
+                        			st = [];
+                        		null != e.GemsPacksPurchased ? nt.setReserved("GemsPacksPurchased", st) : (nt.h.GemsPacksPurchased = st);
+                        		var at = b.engine.gameAttributes,
+                        			rt = [];
+                        		null != e.HintStatus ? at.setReserved("HintStatus", rt) : (at.h.HintStatus = rt);
+                        		for (var At = 0, lt = b.engine.getGameAttribute("CustomLists"), ot = (null != e.Hints ? lt.getReserved("Hints") : lt.h.Hints).length; At < ot;) {
+                        			var it = At++,
+                        				ut = b.engine.gameAttributes,
+                        				gt = it;
+                        			null != e.DummyNumber4 ? ut.setReserved("DummyNumber4", gt) : (ut.h.DummyNumber4 = gt), it >= b.engine.getGameAttribute("HintStatus").length && b.engine.getGameAttribute("HintStatus").push([]);
+                        			for (var mt = 0, dt = b.engine.getGameAttribute("CustomLists"), ct = (null != e.Hints ? dt.getReserved("Hints") : dt.h.Hints)[0 | b.engine.getGameAttribute("DummyNumber4")].length; mt < ct;) mt++ >= b.engine.getGameAttribute("HintStatus")[0 | b.engine.getGameAttribute("DummyNumber4")].length && b.engine.getGameAttribute("HintStatus")[0 | b.engine.getGameAttribute("DummyNumber4")].push(-1);
+                        		}
+                        		var pt = b.engine,
+                        			ht = new p(),
+                        			bt = pt.gameAttributes;
+                        		null != e.InvStorageUsed ? bt.setReserved("InvStorageUsed", ht) : (bt.h.InvStorageUsed = ht);
+                        		var ft = b.engine.gameAttributes;
+                        		null != e.MoneyBANK ? ft.setReserved("MoneyBANK", 0) : (ft.h.MoneyBANK = 0);
+                        		var yt = b.engine.gameAttributes,
+                        			Rt = [];
+                        		null != e.ObolInventoryOrder ? yt.setReserved("ObolInventoryOrder", Rt) : (yt.h.ObolInventoryOrder = Rt);
+                        		var vt = b.engine.gameAttributes,
+                        			Ft = [];
+                        		null != e.ObolInventorySlotsOwned ? vt.setReserved("ObolInventorySlotsOwned", Ft) : (vt.h.ObolInventorySlotsOwned = Ft),
+                        			b.engine.getGameAttribute("ObolInventorySlotsOwned").push(5),
+                        			b.engine.getGameAttribute("ObolInventorySlotsOwned").push(4),
+                        			b.engine.getGameAttribute("ObolInventorySlotsOwned").push(3),
+                        			b.engine.getGameAttribute("ObolInventorySlotsOwned").push(2);
+                        		var Nt = b.engine.gameAttributes,
+                        			_t = [];
+                        		null != e.OptionsListAccount ? Nt.setReserved("OptionsListAccount", _t) : (Nt.h.OptionsListAccount = _t);
+                        		var It = b.engine.gameAttributes,
+                        			Dt = [];
+                        		null != e.ObolEquippedOrder ? It.setReserved("ObolEquippedOrder", Dt) : (It.h.ObolEquippedOrder = Dt);
+                        		var Et = b.engine.gameAttributes,
+                        			St = [];
+                        		null != e.PostOfficeInfo ? Et.setReserved("PostOfficeInfo", St) : (Et.h.PostOfficeInfo = St);
+                        		var Gt = b.engine.gameAttributes,
+                        			Tt = [];
+                        		null != e.ShopStock ? Gt.setReserved("ShopStock", Tt) : (Gt.h.ShopStock = Tt);
+                        		for (var Ut = 0, Mt = Ic.ShopQTY().length; Ut < Mt;) {
+                        			var Vt = Ut++,
+                        				Ct = b.engine.gameAttributes,
+                        				Bt = Vt;
+                        			null != e.DummyNumber ? Ct.setReserved("DummyNumber", Bt) : (Ct.h.DummyNumber = Bt);
+                        			var Pt = b.engine.gameAttributes,
+                        				Ot = [];
+                        			null != e.DummyList ? Pt.setReserved("DummyList", Ot) : (Pt.h.DummyList = Ot);
+                        			for (var wt = 0, kt = Ic.ShopQTY()[0 | b.engine.getGameAttribute("DummyNumber")].length; wt < kt;) {
+                        				var xt = wt++;
+                        				b.engine.getGameAttribute("DummyList").push(Ic.ShopQTY()[0 | b.engine.getGameAttribute("DummyNumber")][xt]);
+                        			}
+                        			b.engine.getGameAttribute("ShopStock").push(b.engine.getGameAttribute("DummyList"));
+                        		}
+                        		var Qt = b.engine.gameAttributes,
+                        			Xt = [];
+                        		null != e.StampLevel ? Qt.setReserved("StampLevel", Xt) : (Qt.h.StampLevel = Xt);
+                        		var Lt = b.engine.gameAttributes,
+                        			zt = [];
+                        		null != e.StampLevelMAX ? Lt.setReserved("StampLevelMAX", zt) : (Lt.h.StampLevelMAX = zt),
+                        			0 == b.engine.getGameAttribute("StampLevel").length && (b.engine.getGameAttribute("StampLevel").push([]), b.engine.getGameAttribute("StampLevel").push([]), b.engine.getGameAttribute("StampLevel").push([]), b.engine.getGameAttribute("StampLevelMAX").push([]), b.engine.getGameAttribute("StampLevelMAX").push([]), b.engine.getGameAttribute("StampLevelMAX").push([]),
+                        				(b.engine.getGameAttribute("StampLevelMAX")[0][0] = 5),
+                        				(b.engine.getGameAttribute("StampLevelMAX")[0][1] = 5),
+                        				(b.engine.getGameAttribute("StampLevelMAX")[1][0] = 5),
+                        				(b.engine.getGameAttribute("StampLevelMAX")[1][1] = 5));
+                        		var Yt = b.engine,
+                        			Wt = new p(),
+                        			Zt = Yt.gameAttributes;
+                        		null != e.StarSignsUnlocked ? Zt.setReserved("StarSignsUnlocked", Wt) : (Zt.h.StarSignsUnlocked = Wt);
+                        		var Ht = b.engine.getGameAttribute("StarSignsUnlocked");
+                        		null != e.The_Buff_Guy ? Ht.setReserved("The_Buff_Guy", 1) : (Ht.h.The_Buff_Guy = 1);
+                        		var Jt = b.engine.getGameAttribute("StarSignsUnlocked");
+                        		null != e.Flexo_Bendo ? Jt.setReserved("Flexo_Bendo", 1) : (Jt.h.Flexo_Bendo = 1);
+                        		var jt = b.engine.getGameAttribute("StarSignsUnlocked");
+                        		null != e.The_Book_Worm ? jt.setReserved("The_Book_Worm", 1) : (jt.h.The_Book_Worm = 1);
+                        		var qt = b.engine.getGameAttribute("StarSignsUnlocked");
+                        		null != e.The_Fuzzy_Dice ? qt.setReserved("The_Fuzzy_Dice", 1) : (qt.h.The_Fuzzy_Dice = 1);
+                        		var Kt = b.engine,
+                        			$t = new p(),
+                        			en = Kt.gameAttributes;
+                        		null != e.TimeAway ? en.setReserved("TimeAway", $t) : (en.h.TimeAway = $t);
+                        		var tn = b.engine.gameAttributes,
+                        			nn = [];
+                        		null != e.CauldronInfo ? tn.setReserved("CauldronInfo", nn) : (tn.h.CauldronInfo = nn);
+                        		var sn = b.engine.gameAttributes,
+                        			an = [];
+                        		null != e.ObolEquippedOrder ? sn.setReserved("ObolEquippedOrder", an) : (sn.h.ObolEquippedOrder = an);
+                        		var rn = b.engine.gameAttributes,
+                        			An = [];
+                        		null != e.ObolEquippedMap ? rn.setReserved("ObolEquippedMap", An) : (rn.h.ObolEquippedMap = An);
+                        		var ln = b.engine.gameAttributes,
+                        			on = [];
+                        		null != e.DummyList ? ln.setReserved("DummyList", on) : (ln.h.DummyList = on);
+                        		var un = b.engine.gameAttributes,
+                        			gn = [];
+                        		null != e.DummyList2 ? un.setReserved("DummyList2", gn) : (un.h.DummyList2 = gn);
+                        		for (var mn = 0; 21 > mn;) {
+                        			mn++, b.engine.getGameAttribute("DummyList").push("Blank");
+                        			var dn = b.engine,
+                        				cn = new p(),
+                        				pn = dn.gameAttributes,
+                        				hn = cn;
+                        			null != e.DummyMap ? pn.setReserved("DummyMap", hn) : (pn.h.DummyMap = hn), b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap"));
+                        		}
+                        		b.engine.getGameAttribute("ObolEquippedOrder").push(b.engine.getGameAttribute("DummyList")), b.engine.getGameAttribute("ObolEquippedMap").push(b.engine.getGameAttribute("DummyList2"));
+                        		var bn = b.engine.gameAttributes,
+                        			fn = [];
+                        		null != e.DummyList ? bn.setReserved("DummyList", fn) : (bn.h.DummyList = fn);
+                        		var yn = b.engine.gameAttributes,
+                        			Rn = [];
+                        		null != e.DummyList2 ? yn.setReserved("DummyList2", Rn) : (yn.h.DummyList2 = Rn);
+                        		for (var vn = 0; 24 > vn;) {
+                        			vn++, b.engine.getGameAttribute("DummyList").push("Blank");
+                        			var Fn = b.engine,
+                        				Nn = new p(),
+                        				_n = Fn.gameAttributes,
+                        				In = Nn;
+                        			null != e.DummyMap ? _n.setReserved("DummyMap", In) : (_n.h.DummyMap = In), b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap"));
+                        		}
+                        		b.engine.getGameAttribute("ObolEquippedOrder").push(b.engine.getGameAttribute("DummyList")), b.engine.getGameAttribute("ObolEquippedMap").push(b.engine.getGameAttribute("DummyList2"));
+                        		var Dn = b.engine.gameAttributes,
+                        			En = [];
+                        		null != e.DummyList ? Dn.setReserved("DummyList", En) : (Dn.h.DummyList = En);
+                        		var Sn = b.engine.gameAttributes,
+                        			Gn = [];
+                        		null != e.DummyList2 ? Sn.setReserved("DummyList2", Gn) : (Sn.h.DummyList2 = Gn), b.engine.getGameAttribute("DummyList").push("Blank");
+                        		var Tn = b.engine,
+                        			Un = new p(),
+                        			Mn = Tn.gameAttributes;
+                        		null != e.DummyMap ? Mn.setReserved("DummyMap", Un) : (Mn.h.DummyMap = Un),
+                        			b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap")),
+                        			b.engine.getGameAttribute("DummyList").push("Blank");
+                        		var Vn = b.engine,
+                        			Cn = new p(),
+                        			Bn = Vn.gameAttributes;
+                        		null != e.DummyMap ? Bn.setReserved("DummyMap", Cn) : (Bn.h.DummyMap = Cn),
+                        			b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap")),
+                        			b.engine.getGameAttribute("DummyList").push("Blank");
+                        		var Pn = b.engine,
+                        			On = new p(),
+                        			wn = Pn.gameAttributes;
+                        		null != e.DummyMap ? wn.setReserved("DummyMap", On) : (wn.h.DummyMap = On),
+                        			b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap")),
+                        			b.engine.getGameAttribute("ObolEquippedOrder").push(b.engine.getGameAttribute("DummyList")),
+                        			b.engine.getGameAttribute("ObolEquippedMap").push(b.engine.getGameAttribute("DummyList2"));
+                        		var kn = b.engine.gameAttributes,
+                        			xn = [];
+                        		null != e.DummyList ? kn.setReserved("DummyList", xn) : (kn.h.DummyList = xn);
+                        		var Qn = b.engine.gameAttributes,
+                        			Xn = [];
+                        		null != e.DummyList2 ? Qn.setReserved("DummyList2", Xn) : (Qn.h.DummyList2 = Xn), b.engine.getGameAttribute("DummyList").push("Blank");
+                        		var Ln = b.engine,
+                        			zn = new p(),
+                        			Yn = Ln.gameAttributes;
+                        		null != e.DummyMap ? Yn.setReserved("DummyMap", zn) : (Yn.h.DummyMap = zn),
+                        			b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap")),
+                        			b.engine.getGameAttribute("ObolEquippedOrder").push(b.engine.getGameAttribute("DummyList")),
+                        			b.engine.getGameAttribute("ObolEquippedMap").push(b.engine.getGameAttribute("DummyList2"));
+                        		var Wn = b.engine.gameAttributes,
+                        			Zn = [];
+                        		null != e.DummyList ? Wn.setReserved("DummyList", Zn) : (Wn.h.DummyList = Zn);
+                        		var Hn = b.engine.gameAttributes,
+                        			Jn = [];
+                        		null != e.DummyList2 ? Hn.setReserved("DummyList2", Jn) : (Hn.h.DummyList2 = Jn);
+                        		var jn = b.engine.gameAttributes,
+                        			qn = [];
+                        		null != e.ObolInventoryOrder ? jn.setReserved("ObolInventoryOrder", qn) : (jn.h.ObolInventoryOrder = qn);
+                        		var Kn = b.engine.gameAttributes,
+                        			$n = [];
+                        		null != e.ObolInventoryMap ? Kn.setReserved("ObolInventoryMap", $n) : (Kn.h.ObolInventoryMap = $n);
+                        		for (var es = 0; 4 > es;) {
+                        			var ts = es++,
+                        				ns = b.engine.gameAttributes,
+                        				ss = ts;
+                        			null != e.DummyNumber ? ns.setReserved("DummyNumber", ss) : (ns.h.DummyNumber = ss);
+                        			var as = b.engine.gameAttributes,
+                        				rs = [];
+                        			null != e.DummyList ? as.setReserved("DummyList", rs) : (as.h.DummyList = rs);
+                        			var As = b.engine.gameAttributes,
+                        				ls = [];
+                        			null != e.DummyList2 ? As.setReserved("DummyList2", ls) : (As.h.DummyList2 = ls);
+                        			for (var os = 0,
+                        					is = b.engine.getGameAttribute("ObolInventorySlotsOwned")[0 | b.engine.getGameAttribute("DummyNumber")],
+                        					us = (4 * parseNum(is)) | 0; os < us;) {
+                        				os++, b.engine.getGameAttribute("DummyList").push("Blank");
+                        				var gs = b.engine,
+                        					ms = new p(),
+                        					ds = gs.gameAttributes,
+                        					cs = ms;
+                        				null != e.DummyMap ? ds.setReserved("DummyMap", cs) : (ds.h.DummyMap = cs), b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap"));
+                        			}
+                        			if (16 > b.engine.getGameAttribute("DummyList").length)
+                        				for (var ps = 0, hs = 16 - b.engine.getGameAttribute("DummyList").length; ps < hs;) {
+                        					ps++, b.engine.getGameAttribute("DummyList").push("LockedInvSpace");
+                        					var bs = b.engine,
+                        						fs = new p(),
+                        						ys = bs.gameAttributes,
+                        						Rs = fs;
+                        					null != e.DummyMap ? ys.setReserved("DummyMap", Rs) : (ys.h.DummyMap = Rs), b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap"));
+                        				}
+                        			else {
+                        				b.engine.getGameAttribute("DummyList").push("LockedInvSpace");
+                        				var vs = b.engine,
+                        					Fs = new p(),
+                        					Ns = vs.gameAttributes,
+                        					_s = Fs;
+                        				null != e.DummyMap ? Ns.setReserved("DummyMap", _s) : (Ns.h.DummyMap = _s),
+                        					b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap")),
+                        					b.engine.getGameAttribute("DummyList").push("LockedInvSpace");
+                        				var Is = b.engine,
+                        					Ds = new p(),
+                        					Es = Is.gameAttributes,
+                        					Ss = Ds;
+                        				null != e.DummyMap ? Es.setReserved("DummyMap", Ss) : (Es.h.DummyMap = Ss),
+                        					b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap")),
+                        					b.engine.getGameAttribute("DummyList").push("LockedInvSpace");
+                        				var Gs = b.engine,
+                        					Ts = new p(),
+                        					Us = Gs.gameAttributes,
+                        					Ms = Ts;
+                        				null != e.DummyMap ? Us.setReserved("DummyMap", Ms) : (Us.h.DummyMap = Ms),
+                        					b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap")),
+                        					b.engine.getGameAttribute("DummyList").push("LockedInvSpace");
+                        				var Vs = b.engine,
+                        					Cs = new p(),
+                        					Bs = Vs.gameAttributes,
+                        					Ps = Cs;
+                        				null != e.DummyMap ? Bs.setReserved("DummyMap", Ps) : (Bs.h.DummyMap = Ps), b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyMap"));
+                        			}
+                        			b.engine.getGameAttribute("ObolInventoryOrder").push(b.engine.getGameAttribute("DummyList")), b.engine.getGameAttribute("ObolInventoryMap").push(b.engine.getGameAttribute("DummyList2"));
+                        		}
+                        		var Os = b.engine.gameAttributes,
+                        			ws = [];
+                        		null != e.Cards ? Os.setReserved("Cards", ws) : (Os.h.Cards = ws);
+                        		var ks = b.engine.gameAttributes,
+                        			xs = [];
+                        		null != e.Tasks ? ks.setReserved("Tasks", xs) : (ks.h.Tasks = xs);
+                        		var Qs = b.engine.gameAttributes,
+                        			Xs = [];
+                        		if ((null != e.GuildTasks ? Qs.setReserved("GuildTasks", Xs) : (Qs.h.GuildTasks = Xs), 0 == b.engine.getGameAttribute("GuildTasks").length)) {
+                        			var Ls = b.engine.gameAttributes,
+                        				zs = [];
+                        			null != e.DummyList2 ? Ls.setReserved("DummyList2", zs) : (Ls.h.DummyList2 = zs),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(0),
+                        				b.engine.getGameAttribute("GuildTasks").push(b.engine.getGameAttribute("DummyList2"));
+                        			for (var Ys = 0; 9 > Ys;) {
+                        				Ys++;
+                        				var Ws = b.engine.gameAttributes,
+                        					Zs = [];
+                        				null != e.DummyList2 ? Ws.setReserved("DummyList2", Zs) : (Ws.h.DummyList2 = Zs),
+                        					b.engine.getGameAttribute("DummyList2").push(0),
+                        					b.engine.getGameAttribute("DummyList2").push(0),
+                        					b.engine.getGameAttribute("DummyList2").push(0),
+                        					b.engine.getGameAttribute("GuildTasks").push(b.engine.getGameAttribute("DummyList2"));
+                        			}
+                        		}
+                        		for (var Hs = 0; 9 > Hs;) {
+                        			var Js = Hs++;
+                        			(b.engine.getGameAttribute("GuildTasks")[Js + 1][0] = 5 > Js ? Js + 3 * Math.floor(Js / 3) : Math.round(Js - 2 + 15 * Math.floor(Js / 8))),
+                        			(b.engine.getGameAttribute("GuildTasks")[Js + 1][1] = 0),
+                        			(b.engine.getGameAttribute("GuildTasks")[Js + 1][2] = 0);
+                        		}
+                        		var js = b.engine.gameAttributes,
+                        			qs = [];
+                        		null != e.StarSignProg ? js.setReserved("StarSignProg", qs) : (js.h.StarSignProg = qs);
+                        		var Ks = b.engine.gameAttributes,
+                        			$s = [];
+                        		null != e.SteamAchieve ? Ks.setReserved("SteamAchieve", $s) : (Ks.h.SteamAchieve = $s);
+                        		var ea = b.engine.gameAttributes;
+                        		null != e.ServerGemsReceived ? ea.setReserved("ServerGemsReceived", 0) : (ea.h.ServerGemsReceived = 0);
+                        		var ta = b.engine.gameAttributes,
+                        			na = [];
+                        		null != e.Refinery ? ta.setReserved("Refinery", na) : (ta.h.Refinery = na);
+                        		var sa = b.engine.gameAttributes,
+                        			aa = [];
+                        		null != e.TotemInfo ? sa.setReserved("TotemInfo", aa) : (sa.h.TotemInfo = aa);
+                        		var ra = b.engine.gameAttributes,
+                        			Aa = [];
+                        		null != e.PrayersUnlocked ? ra.setReserved("PrayersUnlocked", Aa) : (ra.h.PrayersUnlocked = Aa);
+                        		var la = b.engine.gameAttributes,
+                        			oa = [];
+                        		null != e.PlayerStuff ? la.setReserved("PlayerStuff", oa) : (la.h.PlayerStuff = oa);
+                        		var ia = b.engine.gameAttributes,
+                        			ua = [];
+                        		null != e.CogOrder ? ia.setReserved("CogOrder", ua) : (ia.h.CogOrder = ua);
+                        		var ga = b.engine.gameAttributes,
+                        			ma = [];
+                        		null != e.CogMap ? ga.setReserved("CogMap", ma) : (ga.h.CogMap = ma);
+                        		var da = b.engine.gameAttributes,
+                        			ca = [];
+                        		null != e.FlagsPlaced ? da.setReserved("FlagsPlaced", ca) : (da.h.FlagsPlaced = ca);
+                        		var pa = b.engine.gameAttributes,
+                        			ha = [];
+                        		null != e.TowerInfo ? pa.setReserved("TowerInfo", ha) : (pa.h.TowerInfo = ha);
+                        		var ba = b.engine.gameAttributes,
+                        			fa = [];
+                        		null != e.FlagUnlock ? ba.setReserved("FlagUnlock", fa) : (ba.h.FlagUnlock = fa);
+                        		var ya = b.engine.gameAttributes,
+                        			Ra = [];
+                        		null != e.ShrineInfo ? ya.setReserved("ShrineInfo", Ra) : (ya.h.ShrineInfo = Ra);
+                        		var va = b.engine.gameAttributes,
+                        			Fa = [];
+                        		null != e.Printer ? va.setReserved("Printer", Fa) : (va.h.Printer = Fa);
+                        		var Na = b.engine.gameAttributes,
+                        			_a = [];
+                        		null != e.SaltLick ? Na.setReserved("SaltLick", _a) : (Na.h.SaltLick = _a);
+                        		var Ia = b.engine.gameAttributes,
+                        			Da = [];
+                        		null != e.StatueG ? Ia.setReserved("StatueG", Da) : (Ia.h.StatueG = Da);
+                        		var Ea = b.engine.gameAttributes,
+                        			Sa = [];
+                        		null != e.ArcadeUpg ? Ea.setReserved("ArcadeUpg", Sa) : (Ea.h.ArcadeUpg = Sa);
+                        		var Ga = b.engine,
+                        			Ta = new p(),
+                        			Ua = Ga.gameAttributes;
+                        		null != e.ArcUnclaim ? Ua.setReserved("ArcUnclaim", Ta) : (Ua.h.ArcUnclaim = Ta);
+                        		var Ma = b.engine.gameAttributes,
+                        			Va = [];
+                        		null != e.AchieveReg ? Ma.setReserved("AchieveReg", Va) : (Ma.h.AchieveReg = Va);
+                        		var Ca = b.engine.gameAttributes,
+                        			Ba = [];
+                        		null != e.DungUpg ? Ca.setReserved("DungUpg", Ba) : (Ca.h.DungUpg = Ba);
+                        	}

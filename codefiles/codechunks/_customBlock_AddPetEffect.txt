@@ -1,0 +1,29 @@
+                        (w._customBlock_AddPetEffect = function(t, s, a) {
+                        		var r = b.engine.getGameAttribute("DNSM");
+                        		null != e.PetszzzzDT1 ? r.setReserved("PetszzzzDT1", "") : (r.h.PetszzzzDT1 = ""), (r = 0);
+                        		for (var A = b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[38].length; r < A;) {
+                        			var o = r++,
+                        				i = b.engine.getGameAttribute("DNSM"),
+                        				u = b.engine.getGameAttribute("DNSM");
+                        			(o = g.string(null != e.PetszzzzDT1 ? u.getReserved("PetszzzzDT1") : u.h.PetszzzzDT1) + ("" + g.string(b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[38][o][0]))),
+                        			null != e.PetszzzzDT1 ? i.setReserved("PetszzzzDT1", o) : (i.h.PetszzzzDT1 = o);
+                        		}
+                        		(r = b.engine.getGameAttribute("DNSM")), -1 != ("" + g.string(null != e.PetszzzzDT1 ? r.getReserved("PetszzzzDT1") : r.h.PetszzzzDT1)).indexOf(t) ? ((s = b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[38]),
+                        			(r = b.engine.getGameAttribute("DNSM")),
+                        			(s = s[("" + g.string(null != e.PetszzzzDT1 ? r.getReserved("PetszzzzDT1") : r.h.PetszzzzDT1)).indexOf(t)]),
+                        			(r = b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[38]),
+                        			(A = b.engine.getGameAttribute("DNSM")),
+                        			(t = r[("" + g.string(null != e.PetszzzzDT1 ? A.getReserved("PetszzzzDT1") : A.h.PetszzzzDT1)).indexOf(t)][2]),
+                        			(s[2] = parseNum(t) + a)) : ((r = b.engine.getGameAttribute("DNSM")),
+                        			(A = []), null != e.PetszzzzDL1 ? r.setReserved("PetszzzzDL1", A) : (r.h.PetszzzzDL1 = A),
+                        			(r = b.engine.getGameAttribute("DNSM")),
+                        			(null != e.PetszzzzDL1 ? r.getReserved("PetszzzzDL1") : r.h.PetszzzzDL1).push(t),
+                        			(t = b.engine.getGameAttribute("DNSM")),
+                        			(null != e.PetszzzzDL1 ? t.getReserved("PetszzzzDL1") : t.h.PetszzzzDL1).push(s),
+                        			(t = b.engine.getGameAttribute("DNSM")),
+                        			(null != e.PetszzzzDL1 ? t.getReserved("PetszzzzDL1") : t.h.PetszzzzDL1).push(a),
+                        			(a = b.engine.getGameAttribute("DNSM")),
+                        			(null != e.PetszzzzDL1 ? a.getReserved("PetszzzzDL1") : a.h.PetszzzzDL1).push(s),
+                        			(a = b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[38]),
+                        			(t = b.engine.getGameAttribute("DNSM")), a.push(null != e.PetszzzzDL1 ? t.getReserved("PetszzzzDL1") : t.h.PetszzzzDL1));
+                        	}

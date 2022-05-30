@@ -1,0 +1,29 @@
+                        (H._customBlock_PlayerReach = function() {
+                        		var t = b.engine.getGameAttribute("OtherPlayers"),
+                        			s = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        		if (null != (null != e[s] ? t.getReserved(s) : t.h[s]).getValue("ActorEvents_20", "_TargetEnemy")) {
+                        			(t = b.engine.getGameAttribute("MonsterDefinitionsGET")), (s = b.engine.getGameAttribute("OtherPlayers"));
+                        			var a = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        			return (
+                        				(s = "" + g.string((null != e[a] ? s.getReserved(a) : s.h[a]).getValue("ActorEvents_20", "_TargetEnemy").getValue("ActorEvents_1", "_MonsterType"))),
+                        				(t = null != e[s] ? t.getReserved(s) : t.h[s]), "Monster" == (null != e.Type ? t.getReserved("Type") : t.h.Type) ? ((t = b.engine.getGameAttribute("ItemDefinitionsGET")),
+                        					(s = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[0][1])),
+                        					(t = null != e[s] ? t.getReserved(s) : t.h[s]), "Null" != (null != e.Reach ? t.getReserved("Reach") : t.h.Reach) ? ((t = b.engine.getGameAttribute("ItemDefinitionsGET")),
+                        						(s = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[0][1])),
+                        						(t = null != e[s] ? t.getReserved(s) : t.h[s]),
+                        						(null == (t = null != e.Reach ? t.getReserved("Reach") : t.h.Reach) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))) + H._customBlock_GetBuffBonuses(288, 1)) : 200 + H._customBlock_GetBuffBonuses(288, 1)) : ((t = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        					(s = b.engine.getGameAttribute("OtherPlayers")),
+                        					(a = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        					(s = "" + g.string((null != e[a] ? s.getReserved(a) : s.h[a]).getValue("ActorEvents_20", "_TargetEnemy").getValue("ActorEvents_1", "_MonsterType"))),
+                        					(t = null != e[s] ? t.getReserved(s) : t.h[s]), "Ore" == (null != e.Type ? t.getReserved("Type") : t.h.Type) ? 65 : ((t = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        						(s = b.engine.getGameAttribute("OtherPlayers")),
+                        						(a = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        						(s = "" + g.string((null != e[a] ? s.getReserved(a) : s.h[a]).getValue("ActorEvents_20", "_TargetEnemy").getValue("ActorEvents_1", "_MonsterType"))),
+                        						(t = null != e[s] ? t.getReserved(s) : t.h[s]), "Tree" == (null != e.Type ? t.getReserved("Type") : t.h.Type) ? 46 : ((t = b.engine.getGameAttribute("MonsterDefinitionsGET")),
+                        							(s = b.engine.getGameAttribute("OtherPlayers")),
+                        							(a = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])),
+                        							(s = "" + g.string((null != e[a] ? s.getReserved(a) : s.h[a]).getValue("ActorEvents_20", "_TargetEnemy").getValue("ActorEvents_1", "_MonsterType"))),
+                        							(t = null != e[s] ? t.getReserved(s) : t.h[s]), "Bug" == (null != e.Type ? t.getReserved("Type") : t.h.Type) ? 50 : 70))));
+                        		}
+                        		return 70;
+                        	}

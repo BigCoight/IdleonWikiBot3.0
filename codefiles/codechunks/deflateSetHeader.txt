@@ -1,0 +1,3 @@
+                            (n.deflateSetHeader = function(e, t) {
+                            		return e && e.state ? (2 !== e.state.wrap ? D : ((e.state.gzhead = t), I)) : D;
+                            	}

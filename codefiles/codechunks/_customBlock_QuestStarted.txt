@@ -1,0 +1,77 @@
+                        (A._customBlock_QuestStarted = function(s, a) {
+                        		if ("Picnic_Stowaway" == s && 12 == a)
+                        			for (var r = 0; 10 > r;) {
+                        				var o = r++,
+                        					i = b.engine.getGameAttribute("OtherPlayers"),
+                        					u = "" + g.string(b.engine.getGameAttribute("UserInfo")[0]);
+                        				8 == (null != e[u] ? i.getReserved(u) : i.h[u]).getValue("ActorEvents_20", "_PlayerNode") ? t._customBlock_CreateMonster("mushG", 8, 250 + 50 * o) : ((i = b.engine.getGameAttribute("OtherPlayers")),
+                        						(u = "" + g.string(b.engine.getGameAttribute("UserInfo")[0])), 4 == (null != e[u] ? i.getReserved(u) : i.h[u]).getValue("ActorEvents_20", "_PlayerNode") ? t._customBlock_CreateMonster("mushG", 4, 200 + 30 * o) : t._customBlock_CreateMonster("mushG", 5, 200 + 30 * o)),
+                        					t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600);
+                        			}
+                        		if (
+                        			("Typhoon" == s && 2 == a && (t._customBlock_CreateMonster("frogG", 2, 890), t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600), t._customBlock_CreateMonster("frogG", 2, 970), t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600), t._customBlock_CreateMonster("frogG", 2, 1050), t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600), t._customBlock_CreateMonster("frogG", 2, 1130), t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600), t._customBlock_CreateMonster("frogG", 2, 1210), t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600), t._customBlock_CreateMonster("frogG", 2, 1290), t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600), t._customBlock_CreateMonster("frogG", 2, 1370), t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600)), "Carpetiem" == s && 13 == a && (t._customBlock_CreateMonster("steak", 2, 1500), t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600)), "Goldric" == s && 4 == a))
+                        			for (r = 0, o = b.engine.getGameAttribute("MapMonstersList").length; r < o;)(u = r++), t._customBlock_AddStatusToMonster("StatusBuffDmg", b.engine.getGameAttribute("MapMonstersList")[u], 3600);
+                        		if ("Funguy" == s && 12 == a)
+                        			for (r = b.engine.getGameAttribute("QuestStatus"), r = (null != e.Funguy4 ? r.getReserved("Funguy4") : r.h.Funguy4)[0] = 0; 35 > r;) 4 > (o = r++) ? ((u = b.engine.getGameAttribute("NodeX")[0]), t._customBlock_CreateMonster("crabcake", 0, parseNum(u) + 15 * o)) : 10 > o ? ((u = b.engine.getGameAttribute("NodeX")[1]), t._customBlock_CreateMonster("coconut", 1, parseNum(u) + 10 * (o - 4))) : 26 > o ? 1 == o % 3 ? ((u = b.engine.getGameAttribute("NodeX")[3]), t._customBlock_CreateMonster("crabcake", 3, parseNum(u) + 30 * (o - 10))) : ((u = b.engine.getGameAttribute("NodeX")[3]), t._customBlock_CreateMonster("coconut", 3, parseNum(u) + 30 * (o - 10))) : ((u = b.engine.getGameAttribute("NodeX")[4]), t._customBlock_CreateMonster("crabcake", 4, parseNum(u) + 30 * (o - 26))),
+                        				t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600),
+                        				t._customBlock_AddStatusToMonster("StatusMark", h.getLastCreatedActor(), 3600);
+                        		if (("Scripticus" == s && 6 == a && (b.engine.getGameAttribute("OptionsList")[9] = 1), "Hamish" == s && 6 == a && -1 == b.engine.getGameAttribute("AnvilCraftStatus")[0][40])) A._customBlock_DropSomething("SmithingRecipes1", 0, 40, 0, 0, 12, 0, 900, 12);
+                        		else if ("Promotheus" != s || 11 != a)
+                        			if ("Picnic_Stowaway" == s && 24 == a && -1 == b.engine.getGameAttribute("AnvilCraftStatus")[0][50]) A._customBlock_DropSomething("SmithingRecipes1", 0, 50, 0, 0, 7, 0, 137, 7);
+                        			else if ("Scripticus" == s && 47 == a)
+                        			for (s = 0; 6 > s;)
+                        				(a = s++), -1 == b.engine.getGameAttribute("AnvilCraftStatus")[0][Math.round(56 + a + Math.floor(a / 3))] && A._customBlock_DropSomething("SmithingRecipes1", 0, Math.round(56 + a + Math.floor(a / 3)), 0, 0, 4, 0, 755 + 22 * a, 4);
+                        		else if ("Tiki_Chief" == s && 8 == a) A._customBlock_DropSomething("Quest11", 1, 0, 0, 0, 1, 0, 577, 1);
+                        		else if ("Glumlee" == s && 17 == a) A._customBlock_DropSomething("Quest16", 1, 0, 0, 0, 2, 0, 276, 2);
+                        		else if ("Glumlee" == s && 24 == a) A._customBlock_DropSomething("Quest16", 1, 0, 0, 0, 2, 0, 276, 2);
+                        		else if ("Cowbo_Jones" == s && 59 == a)
+                        			for (s = 0; 6 > s;)
+                        				(a = s++), -1 == b.engine.getGameAttribute("AnvilCraftStatus")[1][Math.round(72 + a + Math.floor(a / 3))] && A._customBlock_DropSomething("SmithingRecipes2", 0, Math.round(72 + a + Math.floor(a / 3)), 0, 0, 0, 0, 1062 + 22 * a, 3);
+                        		else if ("Goldric" == s && 24 == a) t._customBlock_CreateMonster("sheep", 0, 320),
+                        			t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600),
+                        			t._customBlock_CreateMonster("sheep", 3, 320),
+                        			t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600),
+                        			t._customBlock_CreateMonster("sheep", 0, 480),
+                        			t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600),
+                        			t._customBlock_CreateMonster("sheep", 3, 480),
+                        			t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600),
+                        			t._customBlock_CreateMonster("sheep", 0, 640),
+                        			t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600),
+                        			t._customBlock_CreateMonster("sheep", 3, 640),
+                        			t._customBlock_AddStatusToMonster("StatusBuffDmg", h.getLastCreatedActor(), 3600);
+                        		else if ("Cactolyte" == s && 11 == a) A._customBlock_DropSomething("Quest47", 1, 0, 0, 0, 0, 0, 105, 7);
+                        		else if ("Bill_Brr" == s && 5 == a) t._customBlock_CreateMonster("frogBIG", 7, 800), t._customBlock_AddStatusToMonster("StatusBlockFull", h.getLastCreatedActor(), 3600);
+                        		else if ("Bill_Brr" == s && 9 == a)
+                        			for (t._customBlock_CreateMonster("snakeB", 7, 200), t._customBlock_CreateMonster("snakeB", 7, 500), t._customBlock_CreateMonster("snakeB", 7, 800), s = 0; 30 > s;)
+                        				(a = s++), t._customBlock_CreateMonster("mushG", 7, 30 + 32 * a);
+                        		else if ("Gobo" == s && 6 == a) 0 < (null == (s = b.engine.getGameAttribute("OptionsListAccount")[85]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) && ((s = b.engine.getGameAttribute("QuestStatus")),
+                        			(s = null != e.Gobo2 ? s.getReserved("Gobo2") : s.h.Gobo2),
+                        			(a = b.engine.getGameAttribute("QuestStatus")),
+                        			(a = (null != e.Gobo2 ? a.getReserved("Gobo2") : a.h.Gobo2)[0]),
+                        			(s[0] = parseNum(a) + 1));
+                        		else if ("Gobo" == s && 16 == a) 1 == b.engine.getGameAttribute("PixelHelperActor")[22].getValue("ActorEvents_548", "_GenINFO")[92][0] && ((s = b.engine.getGameAttribute("QuestStatus")),
+                        			(s = null != e.Gobo5 ? s.getReserved("Gobo5") : s.h.Gobo5),
+                        			(a = b.engine.getGameAttribute("QuestStatus")),
+                        			(a = (null != e.Gobo5 ? a.getReserved("Gobo5") : a.h.Gobo5)[1]),
+                        			(s[1] = parseNum(a) + 1));
+                        		else if ("Gobo" == s && 9 == a) 2 <= (null == (s = b.engine.getGameAttribute("Breeding")[1][0]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) && ((s = b.engine.getGameAttribute("QuestStatus")), ((null != e.Gobo3 ? s.getReserved("Gobo3") : s.h.Gobo3)[0] = 1));
+                        		else if ("Oinkin" == s && 2 == a)
+                        			for (s = b.engine.getGameAttribute("QuestStatus"), s = (null != e.Oinkin1 ? s.getReserved("Oinkin1") : s.h.Oinkin1)[0] = 0; 10 > s;)
+                        				(a = s++),
+                        				2 <= (null == (a = b.engine.getGameAttribute("Meals")[0][a]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) && ((a = b.engine.getGameAttribute("QuestStatus")),
+                        					(a = null != e.Oinkin1 ? a.getReserved("Oinkin1") : a.h.Oinkin1),
+                        					(r = b.engine.getGameAttribute("QuestStatus")),
+                        					(r = (null != e.Oinkin1 ? r.getReserved("Oinkin1") : r.h.Oinkin1)[0]),
+                        					(a[0] = parseNum(r) + 1));
+                        		else if ("Bill_Brr" == s && 12 == a)
+                        			(s = b.engine.gameAttributes),
+                        			null != e.DummyNumber ? s.setReserved("DummyNumber", 7) : (s.h.DummyNumber = 7),
+                        			(s = b.engine.getGameAttribute("DummyNumber")),
+                        			(a = null == (a = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("DummyNumber")]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("DummyNumber")]),
+                        			A._customBlock_DropSomething("COIN", 1, 0, 0, 0, s, 0, h.randomInt(0 | a, 0 | parseNum(r)), b.engine.getGameAttribute("DummyNumber"));
+                        		else if ("Hoggindaz" == s && 39 == a)
+                        			for (s = 0; 6 > s;)
+                        				(a = s++), -1 == b.engine.getGameAttribute("AnvilCraftStatus")[2][Math.round(60 + a + Math.floor(a / 3))] && A._customBlock_DropSomething("SmithingRecipes3", 0, Math.round(60 + a + Math.floor(a / 3)), 0, 0, 5, 0, 1050 + 40 * a, 5);
+                        		else "Eliteus" == s && 2 == a && h.shoutToScene("_customEvent_ClassAdvanceSpawn");
+                        	}

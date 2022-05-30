@@ -1,0 +1,4 @@
+                        (eh.CogMapSurroundDisp = function() {
+                        		var t = new p();
+                        		return (null != e.adjacent ? t.setReserved("adjacent", "G") : (t.h.adjacent = "G"), null != e.diagonal ? t.setReserved("diagonal", "I") : (t.h.diagonal = "I"), null != e.row ? t.setReserved("row", "N") : (t.h.row = "N"), null != e.column ? t.setReserved("column", "O") : (t.h.column = "O"), null != e.left ? t.setReserved("left", "J") : (t.h.left = "J"), null != e.right ? t.setReserved("right", "K") : (t.h.right = "K"), null != e.up ? t.setReserved("up", "L") : (t.h.up = "L"), null != e.down ? t.setReserved("down", "M") : (t.h.down = "M"), null != e.corners ? t.setReserved("corners", "P") : (t.h.corners = "P"), null != e.everything ? t.setReserved("everything", "Q") : (t.h.everything = "Q"), null != e.around ? t.setReserved("around", "S") : (t.h.around = "S"), t);
+                        	}

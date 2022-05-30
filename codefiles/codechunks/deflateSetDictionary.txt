@@ -1,0 +1,31 @@
+                            (n.deflateSetDictionary = function(e, t) {
+                            		var n,
+                            			s,
+                            			r,
+                            			A = t.length;
+                            		if (!e || !e.state || 2 === (s = (n = e.state).wrap) || (1 === s && n.status !== Q) || n.lookahead) return D;
+                            		1 === s && (e.adler = R(e.adler, t, A, 0)),
+                            			(n.wrap = 0),
+                            			A >= n.w_size && (0 === s && (a(n.head), (n.strstart = 0), (n.block_start = 0), (n.insert = 0)), (r = new f.Buf8(n.w_size)), f.arraySet(r, t, A - n.w_size, n.w_size, 0), (t = r), (A = n.w_size)),
+                            			(r = e.avail_in);
+                            		var l = e.next_in,
+                            			o = e.input;
+                            		for (e.avail_in = A, e.next_in = 0, e.input = t, u(n); n.lookahead >= w;) {
+                            			(t = n.strstart), (A = n.lookahead - (w - 1));
+                            			do {
+                            				(n.ins_h = ((n.ins_h << n.hash_shift) ^ n.window[t + w - 1]) & n.hash_mask), (n.prev[t & n.w_mask] = n.head[n.ins_h]), (n.head[n.ins_h] = t), t++;
+                            			} while (--A);
+                            			(n.strstart = t), (n.lookahead = w - 1), u(n);
+                            		}
+                            		return (
+                            			(n.strstart += n.lookahead),
+                            			(n.block_start = n.strstart),
+                            			(n.insert = n.lookahead),
+                            			(n.lookahead = 0),
+                            			(n.match_length = n.prev_length = w - 1),
+                            			(n.match_available = 0),
+                            			(e.next_in = l),
+                            			(e.input = o),
+                            			(e.avail_in = r),
+                            			(n.wrap = s), I);
+                            	}

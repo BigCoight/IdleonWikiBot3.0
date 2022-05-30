@@ -1,0 +1,221 @@
+                        (H._customBlock_DamageDealed = function(s) {
+                        		if ("RNG" == s) {
+                        			var a = b.engine.getGameAttribute("DNSM"),
+                        				r = Math.ceil(H._customBlock_DamageDealed("Max"));
+                        			if ((null != e.DamageDealtMAX ? a.setReserved("DamageDealtMAX", r) : (a.h.DamageDealtMAX = r), 1 == b.engine.getGameAttribute("dummyCritDmgMulti"))) {
+                        				var o = b.engine.getGameAttribute("DNSM"),
+                        					i = null != e.DamageDealtMAX ? o.getReserved("DamageDealtMAX") : o.h.DamageDealtMAX,
+                        					u = Math.ceil(parseNum(i) * H._customBlock_DamageDealed("Mastery")),
+                        					m = b.engine.getGameAttribute("DNSM"),
+                        					c = null != e.DamageDealtMAX ? m.getReserved("DamageDealtMAX") : m.h.DamageDealtMAX;
+                        				return Math.max(h.randomInt(u, Math.ceil(parseNum(c))), 1);
+                        			}
+                        			var f = b.engine.getGameAttribute("DNSM"),
+                        				y = null != e.DamageDealtMAX ? f.getReserved("DamageDealtMAX") : f.h.DamageDealtMAX,
+                        				R = (parseNum(y) * Math.min(H._customBlock_DamageDealed("Mastery") + 0.35, 1)) | 0,
+                        				v = b.engine.getGameAttribute("DNSM"),
+                        				F = null != e.DamageDealtMAX ? v.getReserved("DamageDealtMAX") : v.h.DamageDealtMAX;
+                        			return Math.max(h.randomInt(R, 0 | parseNum(F)), 1);
+                        		}
+                        		if ("Min" == s) return H._customBlock_DamageDealed("Max") * H._customBlock_DamageDealed("Mastery");
+                        		if (-1 != w._customBlock_Dungon()) return "Mastery" == s ? Math.min(0.8, w._customBlock_DungeonStat("MASTERY")) : "Max" == s ? w._customBlock_DungeonStat("DMG") : 0;
+                        		if ("Mastery" == s) {
+                        			var N = 0.35 - t._customBlock_GetTalentNumber(2, 113) / 100,
+                        				_ = b.engine.getGameAttribute("DNSM"),
+                        				I = null != e.AlchBubbles ? _.getReserved("AlchBubbles") : _.h.AlchBubbles,
+                        				D = null != e.Mastery ? I.getReserved("Mastery") : I.h.Mastery;
+                        			return Math.min(0.8, N + (parseNum(D) + (U._customBlock_CardBonusREAL(21) + (t._customBlock_GetTalentNumber(1, 123) + U._customBlock_EtcBonuses("21")))) / 100);
+                        		}
+                        		if ("Max" == s) {
+                        			var E = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				S = b.engine.getGameAttribute("CustomMaps"),
+                        				G = null != e.ClassStatTypes ? S.getReserved("ClassStatTypes") : S.h.ClassStatTypes,
+                        				T = "" + g.string(H._customBlock_ReturnClasses(b.engine.getGameAttribute("CharacterClass"))[0]),
+                        				M = H._customBlock_TotalStats("" + g.string((null != e[T] ? G.getReserved(T) : G.h[T])[0])) * (1 + (t._customBlock_GetTalentNumber(1, 95) + (t._customBlock_GetTalentNumber(1, 455) + t._customBlock_GetTalentNumber(1, 20))) / 100);
+                        			null != e.DamageDealtSTATtype ? E.setReserved("DamageDealtSTATtype", M) : (E.h.DamageDealtSTATtype = M);
+                        			var V = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				C = [];
+                        			null != e.DamageDealtLIST ? V.setReserved("DamageDealtLIST", C) : (V.h.DamageDealtLIST = C);
+                        			var B = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				P = null != e.DamageDealtLIST ? B.getReserved("DamageDealtLIST") : B.h.DamageDealtLIST,
+                        				O = Math.pow(
+                        					(H._customBlock_TotalStats("Weapon_Power") * (1 + (t._customBlock_GetTalentNumber(1, 97) + (t._customBlock_GetTalentNumber(1, 277) + t._customBlock_GetTalentNumber(1, 457))) / 100) + t._customBlock_GetTalentNumber(1, 5)) / 3, 2),
+                        				x = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Q = null != e.DamageDealtSTATtype ? x.getReserved("DamageDealtSTATtype") : x.h.DamageDealtSTATtype;
+                        			P.push(O + (parseNum(Q) + A._customBlock_GoldFoodBonuses("BaseDamage")) + w._customBlock_ArcadeBonus(0));
+                        			var X = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				L = null != e.DamageDealtLIST ? X.getReserved("DamageDealtLIST") : X.h.DamageDealtLIST,
+                        				z = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Y = (null != e.DamageDealtLIST ? z.getReserved("DamageDealtLIST") : z.h.DamageDealtLIST)[0],
+                        				W = parseNum(Y),
+                        				Z = t._customBlock_StampBonusOfTypeX("BaseDmg") + U._customBlock_EtcBonuses("16") + H._customBlock_ArbitraryCode("StatueBonusGiven0"),
+                        				J = b.engine.getGameAttribute("DNSM"),
+                        				j = null != e.BoxRewards ? J.getReserved("BoxRewards") : J.h.BoxRewards,
+                        				q = null != e.basedmg ? j.getReserved("basedmg") : j.h.basedmg,
+                        				K = parseNum(q),
+                        				$ = b.engine.getGameAttribute("DNSM"),
+                        				ee = null != e.AlchBubbles ? $.getReserved("AlchBubbles") : $.h.AlchBubbles,
+                        				te = null != e.bdmgHP ? ee.getReserved("bdmgHP") : ee.h.bdmgHP,
+                        				ne = parseNum(te) * t._customBlock_getLOG(Math.max(H._customBlock_PlayerHPmax() - 250, 1)),
+                        				se = b.engine.getGameAttribute("DNSM"),
+                        				ae = null != e.AlchBubbles ? se.getReserved("AlchBubbles") : se.h.AlchBubbles,
+                        				re = null != e.bdmgSPD ? ae.getReserved("bdmgSPD") : ae.h.bdmgSPD,
+                        				Ae = ne + parseNum(re) * (Math.max(H._customBlock_PlayerSpeedBonus() - 1.1, 0) / 0.25),
+                        				le = b.engine.getGameAttribute("DNSM"),
+                        				oe = null != e.AlchBubbles ? le.getReserved("AlchBubbles") : le.h.AlchBubbles,
+                        				ie = null != e.bdmgMP ? oe.getReserved("bdmgMP") : oe.h.bdmgMP;
+                        			L[0] = W + (Z + (K + (Ae + (parseNum(ie) * t._customBlock_getLOG(Math.max(H._customBlock_PlayerMPmax() - 150, 1)) + (U._customBlock_CardBonusREAL(4) + w._customBlock_Labb("SigilBonus", "Blank", 4, 0))))));
+                        			var ue = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				ge = (null != e.DamageDealtLIST ? ue.getReserved("DamageDealtLIST") : ue.h.DamageDealtLIST)[0];
+                        			if (4e3 < parseNum(ge)) {
+                        				var me = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					de = null != e.DamageDealtLIST ? me.getReserved("DamageDealtLIST") : me.h.DamageDealtLIST,
+                        					ce = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					pe = (null != e.DamageDealtLIST ? ce.getReserved("DamageDealtLIST") : ce.h.DamageDealtLIST)[0];
+                        				de[0] = 4e3 + Math.max(Math.pow(parseNum(pe) - 4e3, 0.91), 0);
+                        				var he = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					be = (null != e.DamageDealtLIST ? he.getReserved("DamageDealtLIST") : he.h.DamageDealtLIST)[0];
+                        				if (15e3 < parseNum(be)) {
+                        					var fe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						ye = null != e.DamageDealtLIST ? fe.getReserved("DamageDealtLIST") : fe.h.DamageDealtLIST,
+                        						Re = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						ve = (null != e.DamageDealtLIST ? Re.getReserved("DamageDealtLIST") : Re.h.DamageDealtLIST)[0];
+                        					ye[0] = 15e3 + Math.max(Math.pow(parseNum(ve) - 15e3, 0.84), 0);
+                        				}
+                        			}
+                        			var Fe = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        			null != e.DDoTdn ? Fe.setReserved("DDoTdn", 0) : (Fe.h.DDoTdn = 0);
+                        			var Ne = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				_e = new p();
+                        			null != e.DDoTmap ? Ne.setReserved("DDoTmap", _e) : (Ne.h.DDoTmap = _e);
+                        			for (var Ie = 0, De = 0 | b.engine.getGameAttribute("FoodSlotsOwned"); Ie < De;) {
+                        				var Ee = Ie++;
+                        				if ("Blank" != b.engine.getGameAttribute("EquipmentOrder")[2][Ee] && 0 != b.engine.getGameAttribute("EquipmentQuantity")[2][Ee]) {
+                        					var Se = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        						Ge = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[2][Ee]),
+                        						Te = Se,
+                        						Ue = null != e[Ge] ? Te.getReserved(Ge) : Te.h[Ge];
+                        					if ("BaseDmgBoosts" == (null != e.Effect ? Ue.getReserved("Effect") : Ue.h.Effect)) {
+                        						var Me = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							Ve = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        							Ce = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[2][Ee]),
+                        							Be = Ve,
+                        							Pe = Me,
+                        							Oe = null != e[Ce] ? Be.getReserved(Ce) : Be.h[Ce];
+                        						null != e.DDoTmap ? Pe.setReserved("DDoTmap", Oe) : (Pe.h.DDoTmap = Oe);
+                        						var we = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							ke = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							xe = null != e.DDoTdn ? ke.getReserved("DDoTdn") : ke.h.DDoTdn,
+                        							Qe = parseNum(xe),
+                        							Xe = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							Le = null != e.DDoTmap ? Xe.getReserved("DDoTmap") : Xe.h.DDoTmap,
+                        							ze = null != e.Amount ? Le.getReserved("Amount") : Le.h.Amount,
+                        							Ye = parseNum(ze),
+                        							We = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        							Ze = null != e.DDoTmap ? We.getReserved("DDoTmap") : We.h.DDoTmap,
+                        							He = we,
+                        							Je = Qe + Ye * H._customBlock_FoodBonuses(g.string(null != e.Effect ? Ze.getReserved("Effect") : Ze.h.Effect) + "EffectBonus");
+                        						null != e.DDoTdn ? He.setReserved("DDoTdn", Je) : (He.h.DDoTdn = Je);
+                        					}
+                        				}
+                        			}
+                        			var je = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				qe = null != e.DamageDealtLIST ? je.getReserved("DamageDealtLIST") : je.h.DamageDealtLIST,
+                        				Ke = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				$e = (null != e.DamageDealtLIST ? Ke.getReserved("DamageDealtLIST") : Ke.h.DamageDealtLIST)[0],
+                        				et = null == $e ? 0 : "number" == typeof $e ? d.__cast($e, k) : "number" == typeof $e && (0 | $e) === $e ? d.__cast($e, l) : "boolean" == typeof $e ? d.__cast($e, n) ? 1 : 0 : "string" == typeof $e ? parseFloat($e) : parseFloat(g.string($e)),
+                        				tt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				nt = null != e.DDoTdn ? tt.getReserved("DDoTdn") : tt.h.DDoTdn;
+                        			qe[0] = et + parseNum(nt);
+                        			var st = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				at = null != e.DamageDealtLIST ? st.getReserved("DamageDealtLIST") : st.h.DamageDealtLIST,
+                        				rt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				At = null != e.DamageDealtSTATtype ? rt.getReserved("DamageDealtSTATtype") : rt.h.DamageDealtSTATtype;
+                        			at.push(1 + (Math.pow(parseNum(At), 0.7) + (A._customBlock_GetBribeBonus("20") + (t._customBlock_StampBonusOfTypeX("PctDmg") + t._customBlock_GetTalentNumber(1, 113)) + (t._customBlock_getLOG(H._customBlock_PlayerHPmax()) * t._customBlock_GetTalentNumber(1, 86) + t._customBlock_getLOG(H._customBlock_PlayerMPmax()) * t._customBlock_GetTalentNumber(1, 446)))) / 100);
+                        			var lt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				ot = null != e.DamageDealtLIST ? lt.getReserved("DamageDealtLIST") : lt.h.DamageDealtLIST,
+                        				it = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				ut = (null != e.DamageDealtLIST ? it.getReserved("DamageDealtLIST") : it.h.DamageDealtLIST)[1],
+                        				gt = parseNum(ut),
+                        				mt = t._customBlock_GetTalentNumber(1, 284),
+                        				dt = b.engine.getGameAttribute("Lv0")[2],
+                        				ct = parseNum(dt),
+                        				pt = t._customBlock_GetTalentNumber(2, 463),
+                        				ht = b.engine.getGameAttribute("FamilyValuesMap"),
+                        				bt = (null != e.MinigameHiscores ? ht.getReserved("MinigameHiscores") : ht.h.MinigameHiscores)[0],
+                        				ft = pt * Math.floor(parseNum(bt) / 25),
+                        				yt = t._customBlock_TalentCalc(31) + t._customBlock_TalentCalc(110) + t._customBlock_GetTalentNumber(1, 125) * t._customBlock_TalentCalc(125) + t._customBlock_TalentCalc(485) + (t._customBlock_TalentCalc(305) / 50 + t._customBlock_TalentCalc(470) / 10) + t._customBlock_GetTalentNumber(1, 290) * Math.floor((H._customBlock_PlayerSpeedBonus() - 1) / 0.15),
+                        				Rt = b.engine.getGameAttribute("OptionsListAccount")[71];
+                        			ot[1] = gt * (1 + ((ct / 12) * mt) / 100) * (1 + (ft + (yt + t._customBlock_getLOG(parseNum(Rt)) * t._customBlock_GetTalentNumber(1, 638))) / 100) * A._customBlock_GoldFoodBonuses("Damage");
+                        			var vt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				Ft = null != e.DamageDealtLIST ? vt.getReserved("DamageDealtLIST") : vt.h.DamageDealtLIST,
+                        				Nt = H._customBlock_GetBuffBonuses(108, 2),
+                        				_t = b.engine.getGameAttribute("DNSM"),
+                        				It = null != e.StarSigns ? _t.getReserved("StarSigns") : _t.h.StarSigns,
+                        				Dt = null != e.PctDmg ? It.getReserved("PctDmg") : It.h.PctDmg,
+                        				Et = parseNum(Dt),
+                        				St = w._customBlock_Shrine(0),
+                        				Gt = b.engine.getGameAttribute("DNSM"),
+                        				Tt = null != e.BoxRewards ? Gt.getReserved("BoxRewards") : Gt.h.BoxRewards,
+                        				Ut = null != e["12c"] ? Tt.getReserved("12c") : Tt.h["12c"],
+                        				Mt = parseNum(Ut),
+                        				Vt = b.engine.getGameAttribute("DNSM"),
+                        				Ct = null != e.FamBonusQTYs ? Vt.getReserved("FamBonusQTYs") : Vt.h.FamBonusQTYs,
+                        				Bt = null != e[20] ? Ct.getReserved("20") : Ct.h[20],
+                        				Pt = parseNum(Bt),
+                        				Ot = b.engine.getGameAttribute("DNSM"),
+                        				wt = null != e.AlchBubbles ? Ot.getReserved("AlchBubbles") : Ot.h.AlchBubbles,
+                        				kt = null != e.pctDmg1 ? wt.getReserved("pctDmg1") : wt.h.pctDmg1,
+                        				xt = parseNum(kt),
+                        				Qt = b.engine.getGameAttribute("DNSM"),
+                        				Xt = null != e.AlchBubbles ? Qt.getReserved("AlchBubbles") : Qt.h.AlchBubbles,
+                        				Lt = null != e.pctDmg2 ? Xt.getReserved("pctDmg2") : Xt.h.pctDmg2,
+                        				zt = parseNum(Lt),
+                        				Yt = b.engine.getGameAttribute("DNSM"),
+                        				Wt = null != e.AlchBubbles ? Yt.getReserved("AlchBubbles") : Yt.h.AlchBubbles,
+                        				Zt = null != e.pctDmg3 ? Wt.getReserved("pctDmg3") : Wt.h.pctDmg3;
+                        			Ft.push(
+                        				(1 + (Nt + Et) / 100) * (1 + (St + (Mt + Pt)) / 100) * (1 + (xt + (zt + parseNum(Zt))) / 100) * (1 + (t._customBlock_GetTalentNumber(1, 6) + (w._customBlock_SaltLick(9) + (U._customBlock_EtcBonuses("45") + w._customBlock_prayersReal(15, 0))) + (w._customBlock_MainframeBonus(0) + (w._customBlock_MainframeBonus(11) + w._customBlock_MainframeBonus(110)))) / 100) * (1 + (U._customBlock_CardBonusREAL(42) + w._customBlock_CardSetBonuses(0, "5")) / 100) * (1 + (20 * w._customBlock_Breeding("PetArenaBonus", "0", 2, 0) + 40 * w._customBlock_Breeding("PetArenaBonus", "0", 15, 0) + (A._customBlock_chipBonuses("dmg") + A._customBlock_MealBonus("TotDmg")) + 2 * w._customBlock_AchieveStatus(58) + 3 * w._customBlock_AchieveStatus(59) + (5 * w._customBlock_AchieveStatus(60) + 5 * w._customBlock_AchieveStatus(62)) + 2 * w._customBlock_AchieveStatus(119) + 3 * w._customBlock_AchieveStatus(120) + (5 * w._customBlock_AchieveStatus(121) + 2 * w._customBlock_AchieveStatus(185) + 3 * w._customBlock_AchieveStatus(186) + 5 * w._customBlock_AchieveStatus(187))) / 100) * Math.max(
+                        					(1 - t._customBlock_GetTalentNumber(1, 24) / 100) * (1 - H._customBlock_GetBuffBonuses(124, 2) / 100) * Math.max(0.01, 1 - (w._customBlock_prayersReal(6, 1) + w._customBlock_prayersReal(13, 1)) / 100), 0.05));
+                        			var Ht = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Cactolyte3 ? Ht.getReserved("Cactolyte3") : Ht.h.Cactolyte3) && 2 == b.engine.getGameAttribute("CharacterClass")) {
+                        				var Jt = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ItemsOwnedMap"),
+                        					jt = null != e.Quest47 ? Jt.getReserved("Quest47") : Jt.h.Quest47;
+                        				if (1 <= parseNum(jt)) {
+                        					var qt = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						Kt = null != e.DamageDealtLIST ? qt.getReserved("DamageDealtLIST") : qt.h.DamageDealtLIST,
+                        						$t = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        						en = (null != e.DamageDealtLIST ? $t.getReserved("DamageDealtLIST") : $t.h.DamageDealtLIST)[2];
+                        					Kt[2] = 0.5 * parseNum(en);
+                        				}
+                        			}
+                        			var tn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				nn = (null != e.DamageDealtLIST ? tn.getReserved("DamageDealtLIST") : tn.h.DamageDealtLIST)[1];
+                        			if (100 < parseNum(nn)) {
+                        				var sn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					an = null != e.DamageDealtLIST ? sn.getReserved("DamageDealtLIST") : sn.h.DamageDealtLIST,
+                        					rn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					An = (null != e.DamageDealtLIST ? rn.getReserved("DamageDealtLIST") : rn.h.DamageDealtLIST)[1];
+                        				an[1] = 100 + Math.max(Math.pow(parseNum(An) - 100, 0.86), 0);
+                        			}
+                        			var ln = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				on = (null != e.DamageDealtLIST ? ln.getReserved("DamageDealtLIST") : ln.h.DamageDealtLIST)[2];
+                        			if (100 < parseNum(on)) {
+                        				var un = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					gn = null != e.DamageDealtLIST ? un.getReserved("DamageDealtLIST") : un.h.DamageDealtLIST,
+                        					mn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        					dn = (null != e.DamageDealtLIST ? mn.getReserved("DamageDealtLIST") : mn.h.DamageDealtLIST)[2];
+                        				gn[2] = 100 + Math.max(Math.pow(parseNum(dn) - 100, 0.86), 0);
+                        			}
+                        			var cn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				pn = (null != e.DamageDealtLIST ? cn.getReserved("DamageDealtLIST") : cn.h.DamageDealtLIST)[0],
+                        				hn = parseNum(pn),
+                        				bn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				fn = (null != e.DamageDealtLIST ? bn.getReserved("DamageDealtLIST") : bn.h.DamageDealtLIST)[1],
+                        				yn = parseNum(fn),
+                        				Rn = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        				vn = (null != e.DamageDealtLIST ? Rn.getReserved("DamageDealtLIST") : Rn.h.DamageDealtLIST)[2];
+                        			return (hn * yn * parseNum(vn));
+                        		}
+                        		return 0;
+                        	}

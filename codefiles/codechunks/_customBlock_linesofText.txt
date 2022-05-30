@@ -1,0 +1,61 @@
+                        (U._customBlock_linesofText = function(t, s) {
+                        		var a = b.engine.gameAttributes,
+                        			r = [];
+                        		for (null != e.dummyActor ? a.setReserved("dummyActor", r) : (a.h.dummyActor = r), a = b.engine.gameAttributes, null != e.DummyList3 ? a.setReserved("DummyList3", s) : (a.h.DummyList3 = s), s = b.engine.gameAttributes, null != e.DummyText2 ? s.setReserved("DummyText2", "") : (s.h.DummyText2 = ""), s = b.engine.gameAttributes, t = t.split("_"), null != e.DummyList ? s.setReserved("DummyList", t) : (s.h.DummyList = t), t = b.engine.gameAttributes, null != e.DummyNumber4 ? t.setReserved("DummyNumber4", 0) : (t.h.DummyNumber4 = 0), t = 0, s = b.engine.getGameAttribute("DummyList").length; t < s;)
+                        			if (
+                        				((r = t++),
+                        					(a = b.engine.gameAttributes), null != e.DummyNumber3 ? a.setReserved("DummyNumber3", r) : (a.h.DummyNumber3 = r),
+                        					(r = b.engine),
+                        					(a = "" + g.string(b.engine.getGameAttribute("DummyList")[(b.engine.getGameAttribute("DummyNumber3") + b.engine.getGameAttribute("DummyNumber4")) | 0])),
+                        					(r = r.gameAttributes), null != e.DummyText3 ? r.setReserved("DummyText3", a) : (r.h.DummyText3 = a),
+                        					(a = b.engine.gameAttributes), null != e.DummyNumber2 ? a.setReserved("DummyNumber2", 0) : (a.h.DummyNumber2 = 0),
+                        					(a = b.engine.getGameAttribute("DummyList3")[3].getTextWidth(b.engine.getGameAttribute("DummyText3")) / b.SCALE) > (null == (r = b.engine.getGameAttribute("DummyList3")[0]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))))) {
+                        				(a = 0), (r = b.engine.getGameAttribute("DummyList3")[3].getTextWidth(b.engine.getGameAttribute("DummyText3")) / b.SCALE);
+                        				var A = b.engine.getGameAttribute("DummyList3")[0];
+                        				for (r = Math.floor(r / parseNum(A)) + 1; a < r;) {
+                        					a++;
+                        					for (var o = 0, i = Math.round(b.engine.getGameAttribute("DummyText3").length - b.engine.getGameAttribute("DummyNumber2")); o < i;) {
+                        						A = o++;
+                        						var u = b.engine.getGameAttribute("DummyList3")[3].getTextWidth(b.engine.getGameAttribute("DummyText3").substring(0 | b.engine.getGameAttribute("DummyNumber2"), (b.engine.getGameAttribute("DummyNumber2") + (A + 1)) | 0)) / b.SCALE,
+                        							m = b.engine.getGameAttribute("DummyList3")[0];
+                        						if (u > parseNum(m) - 1) {
+                        							(o = b.engine.getGameAttribute("DummyList")),
+                        							(i = 0 | b.engine.getGameAttribute("DummyNumber3")),
+                        							(u = b.engine.getGameAttribute("DummyText3").substring(0 | b.engine.getGameAttribute("DummyNumber2"), (b.engine.getGameAttribute("DummyNumber2") + A) | 0) + "-"),
+                        							o.splice(i, 0, u),
+                        								(i = b.engine),
+                        								(o = b.engine.getGameAttribute("DummyNumber3") + 1),
+                        								(i = i.gameAttributes),
+                        								null != e.DummyNumber3 ? i.setReserved("DummyNumber3", o) : (i.h.DummyNumber3 = o),
+                        								(o = b.engine),
+                        								(A = b.engine.getGameAttribute("DummyNumber2") + A),
+                        								(o = o.gameAttributes),
+                        								null != e.DummyNumber2 ? o.setReserved("DummyNumber2", A) : (o.h.DummyNumber2 = A),
+                        								(o = b.engine),
+                        								(A = b.engine.getGameAttribute("DummyNumber4") + 1),
+                        								(o = o.gameAttributes),
+                        								null != e.DummyNumber4 ? o.setReserved("DummyNumber4", A) : (o.h.DummyNumber4 = A);
+                        							break;
+                        						}
+                        						A == Math.round(b.engine.getGameAttribute("DummyText3").length - b.engine.getGameAttribute("DummyNumber2")) - 1 && (b.engine.getGameAttribute("DummyList")[0 | b.engine.getGameAttribute("DummyNumber3")] = b.engine.getGameAttribute("DummyText3").substring(0 | b.engine.getGameAttribute("DummyNumber2"), (b.engine.getGameAttribute("DummyNumber2") + A) | 0));
+                        					}
+                        				}
+                        			}
+                        		for (t = 0, s = b.engine.getGameAttribute("DummyList").length; t < s;)
+                        			(a = t++),
+                        			(r = b.engine.getGameAttribute("DummyList3")[3].getTextWidth(b.engine.getGameAttribute("DummyText2")) / b.SCALE) < (null == (A = b.engine.getGameAttribute("DummyList3")[0]) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))) + 6 ? ((r = b.engine),
+                        				(A = b.engine.getGameAttribute("DummyList3")[0]),
+                        				(A = Math.floor(
+                        					(parseNum(A) + 6 - b.engine.getGameAttribute("DummyList3")[3].getTextWidth(b.engine.getGameAttribute("DummyText2")) / b.SCALE) / 6.6)),
+                        				(r = r.gameAttributes), null != e.DummyNumber ? r.setReserved("DummyNumber", A) : (r.h.DummyNumber = A), "@" == b.engine.getGameAttribute("DummyList")[a] ? (b.engine.getGameAttribute("dummyActor").push(b.engine.getGameAttribute("DummyText2")),
+                        					(a = b.engine.gameAttributes), null != e.DummyText2 ? a.setReserved("DummyText2", "") : (a.h.DummyText2 = "")) : ((r = b.engine.getGameAttribute("DummyList3")[3].getTextWidth(b.engine.getGameAttribute("DummyText2")) / b.SCALE + b.engine.getGameAttribute("DummyList3")[3].getTextWidth("" + g.string(b.engine.getGameAttribute("DummyList")[a])) / b.SCALE) < (null == (A = b.engine.getGameAttribute("DummyList3")[0]) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))) + 10 ? ((A = b.engine), (r = b.engine.getGameAttribute("DummyText2") + (g.string(b.engine.getGameAttribute("DummyList")[a]) + "_"))) : (b.engine.getGameAttribute("dummyActor").push(b.engine.getGameAttribute("DummyText2")),
+                        						(r = b.engine.gameAttributes), null != e.DummyText2 ? r.setReserved("DummyText2", "") : (r.h.DummyText2 = ""),
+                        						(A = b.engine),
+                        						(r = "" + g.string(b.engine.getGameAttribute("DummyList3")[2]) + b.engine.getGameAttribute("DummyText2") + g.string(b.engine.getGameAttribute("DummyList")[a]) + "_")),
+                        					(A = A.gameAttributes), null != e.DummyText2 ? A.setReserved("DummyText2", r) : (A.h.DummyText2 = r), a + 1 == b.engine.getGameAttribute("DummyList").length && b.engine.getGameAttribute("dummyActor").push(b.engine.getGameAttribute("DummyText2")))) : (b.engine.getGameAttribute("dummyActor").push(b.engine.getGameAttribute("DummyText2")),
+                        				(r = b.engine.gameAttributes), null != e.DummyText2 ? r.setReserved("DummyText2", "") : (r.h.DummyText2 = ""),
+                        				(A = b.engine),
+                        				(r = "" + g.string(b.engine.getGameAttribute("DummyList3")[2]) + b.engine.getGameAttribute("DummyText2") + g.string(b.engine.getGameAttribute("DummyList")[a]) + "_"),
+                        				(A = A.gameAttributes), null != e.DummyText2 ? A.setReserved("DummyText2", r) : (A.h.DummyText2 = r), a + 1 == b.engine.getGameAttribute("DummyList").length && b.engine.getGameAttribute("dummyActor").push(b.engine.getGameAttribute("DummyText2")));
+                        		return b.engine.getGameAttribute("dummyActor");
+                        	}

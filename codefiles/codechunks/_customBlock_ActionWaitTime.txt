@@ -1,0 +1,96 @@
+                        (H._customBlock_ActionWaitTime = function(s) {
+                        		var a = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			r = b.engine.getGameAttribute("ItemDefinitionsGET"),
+                        			o = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[0][1]);
+                        		if (
+                        			((r = null != e[o] ? r.getReserved(o) : r.h[o]),
+                        				(r = null != e.Speed ? r.getReserved("Speed") : r.h.Speed), null != e.WaitTimeSPD ? a.setReserved("WaitTimeSPD", r) : (a.h.WaitTimeSPD = r), -1 == w._customBlock_Dungon()))
+                        			if (25 > (null == (a = b.engine.getGameAttribute("Lv0")[0]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)))) {
+                        				(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = null == (r = b.engine.getGameAttribute("Lv0")[0]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        				(o = b.engine.getGameAttribute("ItemDefinitionsGET"));
+                        				var i = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[0][1]);
+                        				(o = null != e[i] ? o.getReserved(i) : o.h[i]),
+                        				(o = null != e.Speed ? o.getReserved("Speed") : o.h.Speed),
+                        				(r = Math.min(13,
+                        					((75 - r) / 25) * 1.8 + parseNum(o))),
+                        				null != e.WaitTimeSPD ? a.setReserved("WaitTimeSPD", r) : (a.h.WaitTimeSPD = r);
+                        			} else 0 < H._customBlock_GetBuffBonuses(135, 1) && ((a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(r = b.engine.getGameAttribute("ItemDefinitionsGET")),
+                        				(o = "" + g.string(b.engine.getGameAttribute("EquipmentOrder")[0][1])),
+                        				(r = null != e[o] ? r.getReserved(o) : r.h[o]),
+                        				(r = null != e.Speed ? r.getReserved("Speed") : r.h.Speed),
+                        				(r = Math.min(13, 2 + parseNum(r))), null != e.WaitTimeSPD ? a.setReserved("WaitTimeSPD", r) : (a.h.WaitTimeSPD = r));
+                        		else -1 != w._customBlock_Dungon() && ((a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(r = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(r = null == (r = null != e.WaitTimeSPD ? r.getReserved("WaitTimeSPD") : r.h.WaitTimeSPD) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        			(o = b.engine.getGameAttribute("DNSM")),
+                        			(o = null != e.DungeonStats ? o.getReserved("DungeonStats") : o.h.DungeonStats),
+                        			(o = null != e.attackSpd ? o.getReserved("attackSpd") : o.h.attackSpd),
+                        			(r = Math.min(13, 1.2 + (r + (parseNum(o) / 100) * 4))), null != e.WaitTimeSPD ? a.setReserved("WaitTimeSPD", r) : (a.h.WaitTimeSPD = r),
+                        			(a = b.engine.getGameAttribute("DungItems")), 0 < (null == (a = null != e[46] ? a.getReserved("46") : a.h[46]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) && ((a = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.WaitTimeSPD ? a.setReserved("WaitTimeSPD", -30) : (a.h.WaitTimeSPD = -30)));
+                        		if ("FISTICUFF" == s) {
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(s = null == (s = null != e.WaitTimeSPD ? s.getReserved("WaitTimeSPD") : s.h.WaitTimeSPD) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = U._customBlock_EtcBonuses("56")),
+                        			(r = A._customBlock_MealBonus("AtkSpd")),
+                        			(o = A._customBlock_chipBonuses("atkspd")),
+                        			(i = b.engine.getGameAttribute("DNSM")),
+                        			(i = null != e.AlchBubbles ? i.getReserved("AlchBubbles") : i.h.AlchBubbles),
+                        			(i = null == (i = null != e.BAspd ? i.getReserved("BAspd") : i.h.BAspd) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i)));
+                        			var u = b.engine.getGameAttribute("DNSM");
+                        			return (
+                        				(u = null != e.BoxRewards ? u.getReserved("BoxRewards") : u.h.BoxRewards),
+                        				(0.6 + (10 - s) / 5 + 0.35) / (1 + (a + (r + (o + (i + (null == (u = null != e["12b"] ? u.getReserved("12b") : u.h["12b"]) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))))))) / 100));
+                        		}
+                        		if ("SPEAR" == s) return (
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(s = null == (s = null != e.WaitTimeSPD ? s.getReserved("WaitTimeSPD") : s.h.WaitTimeSPD) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = U._customBlock_EtcBonuses("56")),
+                        			(r = A._customBlock_MealBonus("AtkSpd")),
+                        			(o = A._customBlock_chipBonuses("atkspd")),
+                        			(i = b.engine.getGameAttribute("DNSM")),
+                        			(i = null != e.AlchBubbles ? i.getReserved("AlchBubbles") : i.h.AlchBubbles),
+                        			(i = null == (i = null != e.BAspd ? i.getReserved("BAspd") : i.h.BAspd) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        			(u = b.engine.getGameAttribute("DNSM")),
+                        			(u = null != e.BoxRewards ? u.getReserved("BoxRewards") : u.h.BoxRewards),
+                        			(0.6 + (10 - s) / 5 + 0.35) / (1 + (a + (r + (o + (i + (null == (u = null != e["12b"] ? u.getReserved("12b") : u.h["12b"]) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))))))) / 100));
+                        		if ("BOW" == s) return (
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(s = null == (s = null != e.WaitTimeSPD ? s.getReserved("WaitTimeSPD") : s.h.WaitTimeSPD) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = U._customBlock_EtcBonuses("56")),
+                        			(r = A._customBlock_MealBonus("AtkSpd")),
+                        			(o = A._customBlock_chipBonuses("atkspd")),
+                        			(i = b.engine.getGameAttribute("DNSM")),
+                        			(i = null != e.AlchBubbles ? i.getReserved("AlchBubbles") : i.h.AlchBubbles),
+                        			(i = null == (i = null != e.BAspd ? i.getReserved("BAspd") : i.h.BAspd) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        			(u = b.engine.getGameAttribute("DNSM")),
+                        			(u = null != e.BoxRewards ? u.getReserved("BoxRewards") : u.h.BoxRewards),
+                        			(0.7 + (10 - s) / 5 + 0.1) / (1 + (a + (r + (o + (i + (null == (u = null != e["12b"] ? u.getReserved("12b") : u.h["12b"]) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))))))) / 100));
+                        		if ("WAND" == s) {
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(s = null == (s = null != e.WaitTimeSPD ? s.getReserved("WaitTimeSPD") : s.h.WaitTimeSPD) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = H._customBlock_GetBuffBonuses(468, 1)),
+                        			(r = U._customBlock_EtcBonuses("56")),
+                        			(o = A._customBlock_chipBonuses("atkspd")),
+                        			(i = A._customBlock_MealBonus("AtkSpd")),
+                        			(u = b.engine.getGameAttribute("DNSM")),
+                        			(u = null != e.AlchBubbles ? u.getReserved("AlchBubbles") : u.h.AlchBubbles),
+                        			(u = null == (u = null != e.BAspd ? u.getReserved("BAspd") : u.h.BAspd) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u)));
+                        			var m = b.engine.getGameAttribute("DNSM");
+                        			return (
+                        				(m = null != e.BoxRewards ? m.getReserved("BoxRewards") : m.h.BoxRewards), 0.16 + (1.2 + (10 - s) / 5) / (1 + (a + (r + (o + (i + (u + (null == (m = null != e["12b"] ? m.getReserved("12b") : m.h["12b"]) ? 0 : "number" == typeof m ? d.__cast(m, k) : "number" == typeof m && (0 | m) === m ? d.__cast(m, l) : "boolean" == typeof m ? d.__cast(m, n) ? 1 : 0 : "string" == typeof m ? parseFloat(m) : parseFloat(g.string(m)))))))) / 100));
+                        		}
+                        		return "AFK" == s ? ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(s = null == (s = null != e.WaitTimeSPD ? s.getReserved("WaitTimeSPD") : s.h.WaitTimeSPD) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = U._customBlock_EtcBonuses("56")),
+                        			(r = A._customBlock_MealBonus("AtkSpd")),
+                        			(o = A._customBlock_chipBonuses("atkspd")),
+                        			(i = b.engine.getGameAttribute("DNSM")),
+                        			(i = null != e.AlchBubbles ? i.getReserved("AlchBubbles") : i.h.AlchBubbles),
+                        			(i = null == (i = null != e.BAspd ? i.getReserved("BAspd") : i.h.BAspd) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        			(u = b.engine.getGameAttribute("DNSM")),
+                        			(u = null != e.BoxRewards ? u.getReserved("BoxRewards") : u.h.BoxRewards),
+                        			(u = null != e["12b"] ? u.getReserved("12b") : u.h["12b"]), Math.max(0.1,
+                        				(1 + (10 - s) / 5) / (1 + (a + (r + (o + (i + parseNum(u))))) / 100))) : "Chopping" == s || "Mining" == s ? 0.5 : "Fishing" == s ? 5 : "Catching" == s ? 2 : "Invuln" == s ? -1 != w._customBlock_Dungon() ? 2.65 + w._customBlock_DungeonStat("invuln") : 2.65 + t._customBlock_GetTalentNumber(1, 484) : 2;
+                        	}

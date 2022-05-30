@@ -1,0 +1,13 @@
+                        (t._customBlock_AutoRespawnTime = function() {
+                        		if (0 == t._customBlock_GetTalentNumber(1, 615)) {
+                        			var s = b.engine.getGameAttribute("DNSM");
+                        			return (
+                        				(s = null != e.BoxRewards ? s.getReserved("BoxRewards") : s.h.BoxRewards),
+                        				(s = null != e.SelfHeal ? s.getReserved("SelfHeal") : s.h.SelfHeal), 600 / (1 + Math.min(50, Math.max(0, parseNum(s)) / 100)));
+                        		}
+                        		s = t._customBlock_GetTalentNumber(1, 615);
+                        		var a = b.engine.getGameAttribute("DNSM");
+                        		return (
+                        			(a = null != e.BoxRewards ? a.getReserved("BoxRewards") : a.h.BoxRewards),
+                        			(a = null != e.SelfHeal ? a.getReserved("SelfHeal") : a.h.SelfHeal), Math.max(s / (1 + Math.min(50, Math.max(0, parseNum(a))) / 100), 100));
+                        	}

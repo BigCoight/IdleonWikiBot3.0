@@ -1,0 +1,9 @@
+                        (U._customBlock_GemShop = function(e, t, n) {
+                        		if (!h.isTransitioning()) {
+                        			(b.engine.getGameAttribute("MTXpreSelect")[0] = e), (b.engine.getGameAttribute("MTXpreSelect")[1] = t), (b.engine.getGameAttribute("MTXpreSelect")[2] = n), (e = Ig.get().scenes.h[46].getID());
+                        			var s = 86;
+                        			null == s && (s = 0), null == (n = 41) && (n = 0), null == (t = 24) && (t = 0), (t = h.createFadeOut(0.5, (t << 16) | (n << 8) | s));
+                        			var a = 79;
+                        			null == a && (a = 0), null == (s = 36) && (s = 0), null == (n = 28) && (n = 0), h.switchScene(e, t, h.createFadeIn(0.3, (n << 16) | (s << 8) | a));
+                        		}
+                        	}

@@ -1,0 +1,7 @@
+                        (w._customBlock_eventStatus = function() {
+                        		if ("Easter" == E.getServerVarLoadString("EventActive")) {
+                        			var e = b.engine.getGameAttribute("NONdummies")[10];
+                        			e = 16513884e5 > parseNum(e) || 1 == E.getServerVarLoad("EventTimerBypass");
+                        		} else e = !1;
+                        		return e ? "On" : "NahOff";
+                        	}

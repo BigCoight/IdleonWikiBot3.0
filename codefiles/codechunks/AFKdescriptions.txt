@@ -1,0 +1,14 @@
+                        (eh.AFKdescriptions = function() {
+                        		var t = new p(),
+                        			n = "KILLS]HR;@ MONEY]HR;@ EXP]HR;@ SURVIVABILITY;@ AFK_GAINS_RATE;@ MONSTER_HP;@ CARD_ODDS;@ HIT_CHANCE;@ ACTIVE_PRAYERS;@ Accuracy_Req Afkz2.png".split(" ");
+                        		return (null != e.FIGHTING ? t.setReserved("FIGHTING", n) : (t.h.FIGHTING = n),
+                        			(n = "ORES]HR;@ MONEY]HR;@ EXP]HR;@ SURVIVABILITY;@ AFK_GAINS_RATE;@ QTY_PER_DROP;@ CARD_ODDS;@ MINE_CHANCE;@ ACTIVE_PRAYERS;@ Efficiency_Req Afkz3.png".split(" ")), null != e.MINING ? t.setReserved("MINING", n) : (t.h.MINING = n),
+                        			(n = ["ClassIcons43"]), null != e.SMITHING ? t.setReserved("SMITHING", n) : (t.h.SMITHING = n),
+                        			(n = "LOGS]HR;@ MONEY]HR;@ EXP]HR;@ SURVIVABILITY;@ AFK_GAINS_RATE;@ QTY_PER_DROP;@ CARD_ODDS;@ CHOP_CHANCE;@ ACTIVE_PRAYERS;@ Efficiency_Req Afkz4.png".split(" ")), null != e.CHOPPIN ? t.setReserved("CHOPPIN", n) : (t.h.CHOPPIN = n),
+                        			(n = "CATCHES]HR;@ MONEY]HR;@ EXP]HR;@ SURVIVABILITY;@ AFK_GAINS_RATE;@ QTY_PER_DROP;@ CARD_ODDS;@ _ ACTIVE_PRAYERS;@ Efficiency_Req Afkz6.png".split(" ")), null != e.FISHING ? t.setReserved("FISHING", n) : (t.h.FISHING = n),
+                        			(n = "KILLS]HR;@ MONEY]HR;@ EXP]HR;@ SURVIVABILITY;@ AFK_GAINS_RATE;@ NOTHINGNESS;@ NOTHING_ODDS;@ NOTHING_CHANCE;@ ACTIVE_PRAYERS;@ Efficiency_Req Afkz5.png".split(" ")), null != e.Nothing ? t.setReserved("Nothing", n) : (t.h.Nothing = n),
+                        			(n = "KILLS]HR;@ MONEY]HR;@ EXP]HR;@ SURVIVABILITY;@ AFK_GAINS_RATE;@ NOTHINGNESS;@ NOTHING_ODDS;@ NOTHING_CHANCE;@ ACTIVE_PRAYERS;@ Efficiency_Req Afkz7.png".split(" ")), null != e.ALCHEMY ? t.setReserved("ALCHEMY", n) : (t.h.ALCHEMY = n),
+                        			(n = "Bugs]HR;@ MONEY]HR;@ EXP]HR;@ SURVIVABILITY;@ AFK_GAINS_RATE;@ QTY_PER_DROP;@ CARD_ODDS;@ CATCH_CHANCE;@ ACTIVE_PRAYERS;@ Efficiency_Req Afkz8.png".split(" ")), null != e.CATCHING ? t.setReserved("CATCHING", n) : (t.h.CATCHING = n),
+                        			(n = "Ladles]DAY;@ MONEY]HR;@ EXP]HR;@ SURVIVABILITY;@ AFK_GAINS_RATE;@ LADLE_MULTI;@ CARD_ODDS;@ EXP_GAIN;@ ACTIVE_PRAYERS;@ Efficiency_Req Afkz10.png".split(" ")), null != e.COOKING ? t.setReserved("COOKING", n) : (t.h.COOKING = n),
+                        			(n = "KILLS]DAY;@ MONEY]HR;@ EXP]HR;@ SURVIVABILITY;@ AFK_GAINS_RATE;@ EXP_MULTI;@ CARD_ODDS;@ EXP_GAIN;@ ACTIVE_PRAYERS;@ Efficiency_Req Afkz11.png".split(" ")), null != e.LABORATORY ? t.setReserved("LABORATORY", n) : (t.h.LABORATORY = n), t);
+                        	}

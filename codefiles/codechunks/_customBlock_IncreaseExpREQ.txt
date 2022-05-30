@@ -1,0 +1,87 @@
+                        (A._customBlock_IncreaseExpREQ = function(s) {
+                        		if ((U._customBlock_TaskProgress(0, 1, "add", 1), 0 == s)) {
+                        			var a = b.engine.getGameAttribute("Lv0")[0 | s];
+                        			a = 7 <= parseNum(a);
+                        		} else a = !1;
+                        		if (
+                        			(a && A._customBlock_UnlockHint(0, 5), 0 == s ? (a = 4 <= (null == (a = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)))) : (a = !1), a && A._customBlock_UnlockHint(0, 2), 0 == s)) {
+                        			var r = b.engine;
+                        			(a = t._customBlock_TalentCalc(-3)), (r = r.gameAttributes), null != e.DummyNumber ? r.setReserved("DummyNumber", a) : (r.h.DummyNumber = a);
+                        		}
+                        		if (0 == s) {
+                        			(a = b.engine.getGameAttribute("ExpReq0")),
+                        			(r = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(r = 15 + Math.pow(parseNum(r), 1.9));
+                        			var o = b.engine.getGameAttribute("Lv0")[0 | s];
+                        			o = parseNum(o);
+                        			var i = b.engine.getGameAttribute("Lv0")[0 | s];
+                        			i = parseNum(i);
+                        			var u = b.engine.getGameAttribute("Lv0")[0 | s];
+                        			(i = 1.208 - Math.min(0.164,
+                        				(0.215 * i) / (parseNum(u) + 100))),
+                        			(u = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(a[0 | s] = (r + 11 * o) * Math.pow(i, parseNum(u)) - 15);
+                        		} else if (2 == s)
+                        			(a = b.engine.getGameAttribute("ExpReq0")),
+                        			(r = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(r = 15 + Math.pow(parseNum(r), 2)),
+                        			(o = null == (o = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        			(i = null == (i = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        			(u = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(i = 1.225 - Math.min(0.114,
+                        				(0.135 * i) / (parseNum(u) + 50))),
+                        			(u = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(a[0 | s] = (r + 13 * o) * Math.pow(i, parseNum(u)) - 26);
+                        		else if (8 == s) {
+                        			if (71 > (null == (a = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)))) {
+                        				(a = b.engine.getGameAttribute("ExpReq0")),
+                        				(r = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        				(r = 10 + Math.pow(parseNum(r), 2.81)),
+                        				(o = null == (o = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        				(i = null == (i = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        				(u = null == (u = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u)));
+                        				var m = b.engine.getGameAttribute("Lv0")[0 | s];
+                        				r = (r + 4 * o) * Math.pow(1.117 - (0.135 * i) / (u + 5), parseNum(m)) - 6;
+                        			} else(a = b.engine.getGameAttribute("ExpReq0")),
+                        				(r = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        				(r = 10 + Math.pow(parseNum(r), 2.81)),
+                        				(o = null == (o = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        				(i = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        				(r = ((r + 4 * o) * Math.pow(1.003, parseNum(i)) - 6) / 2.35);
+                        			(o = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(a[0 | s] = r * (1 + Math.pow(parseNum(o), 1.72) / 300));
+                        		} else 9 == s ? ((a = b.engine.getGameAttribute("ExpReq0")),
+                        			(r = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(r = 15 + Math.pow(parseNum(r), 1.3)),
+                        			(o = null == (o = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        			(i = null == (i = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        			(u = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(i = 1.17 - Math.min(0.07,
+                        				(0.135 * i) / (parseNum(u) + 50))),
+                        			(u = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(a[0 | s] = (r + 6 * o) * Math.pow(i, parseNum(u)) - 26)) : 11 == s ? ((a = b.engine.getGameAttribute("ExpReq0")),
+                        			(r = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(r = Math.pow(parseNum(r), 1.9)),
+                        			(o = null == (o = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        			(s = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(a[11] = (10 + (r + 10 * o)) * Math.pow(1.11, parseNum(s)))) : 12 == s ? 5 > (null == (a = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) ? ((a = b.engine.getGameAttribute("ExpReq0")),
+                        			(r = null == (r = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))),
+                        			(o = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(a[0 | s] = 6.4 * r * Math.pow(1.6, parseNum(o)))) : ((a = b.engine.getGameAttribute("ExpReq0")),
+                        			(r = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(r = Math.pow(parseNum(r), 1.3)),
+                        			(o = null == (o = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        			(i = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(r = (10 + (r + 24 * o)) * Math.pow(1.024, parseNum(i))),
+                        			(o = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(a[0 | s] = r - 9 * parseNum(o))) : ((a = b.engine.getGameAttribute("ExpReq0")),
+                        			(r = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(r = 15 + Math.pow(parseNum(r), 2)),
+                        			(o = null == (o = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        			(i = null == (i = b.engine.getGameAttribute("Lv0")[0 | s]) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i))),
+                        			(u = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(i = 1.225 - Math.min(0.18,
+                        				(0.135 * i) / (parseNum(u) + 50))),
+                        			(u = b.engine.getGameAttribute("Lv0")[0 | s]),
+                        			(a[0 | s] = (r + 15 * o) * Math.pow(i, parseNum(u)) - 30));
+                        	}

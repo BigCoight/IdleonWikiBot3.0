@@ -1,0 +1,19 @@
+                        (U._customBlock_GiveItem = function(t, s, a) {
+                        		for (var r = 0, A = 0 | b.engine.getGameAttribute("InventorySlotsOwned"); r < A;) {
+                        			var o = r++;
+                        			if (b.engine.getGameAttribute("InventoryOrder")[o] == t) {
+                        				var i = b.engine.getGameAttribute("ItemQuantity")[o];
+                        				i = parseNum(i);
+                        				var u = b.engine.getGameAttribute("ItemDefinitionsGET");
+                        				(u = null != e[t] ? u.getReserved(t) : u.h[t]), (i = i + s <= H._customBlock_MaxCapacity("" + g.string(null != e.typeGen ? u.getReserved("typeGen") : u.h.typeGen)));
+                        			} else i = !1;
+                        			if (i || ("Blank" == b.engine.getGameAttribute("InventoryOrder")[o] && 0 == b.engine.getGameAttribute("ItemQuantity")[o])) {
+                        				(b.engine.getGameAttribute("InventoryOrder")[o] = t),
+                        				(t = b.engine.getGameAttribute("ItemQuantity")),
+                        				(r = b.engine.getGameAttribute("ItemQuantity")[o]),
+                        				(t[o] = parseNum(r) + s),
+                        				(b.engine.getGameAttribute("ItemMap")[o] = a);
+                        				break;
+                        			}
+                        		}
+                        	}

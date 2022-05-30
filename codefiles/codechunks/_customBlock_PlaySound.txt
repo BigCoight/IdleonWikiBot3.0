@@ -1,0 +1,12 @@
+                        (w._customBlock_PlaySound = function(e) {
+                        		var t = b.engine.getGameAttribute("OptionsListAccount")[50];
+                        		0 < parseNum(t) ? (t = 0 < (null == (t = b.engine.getGameAttribute("OptionsListAccount")[52]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t)))) : (t = !1),
+                        			t && !Sb.contains(b.engine.getGameAttribute("NONdummies")[7], e) && (b.engine.getGameAttribute("NONdummies")[7].push(e), 31 < (null == (t = b.engine.getGameAttribute("NONdummies")[6]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))) && (b.engine.getGameAttribute("NONdummies")[6] = Math.round(1)),
+                        				(e = h.getSoundByName(e)),
+                        				(t = b.engine.getGameAttribute("NONdummies")[6]), h.playSoundOnChannel(e, 0 | Math.max(parseNum(t), 1)),
+                        				(e = null == (e = b.engine.getGameAttribute("OptionsListAccount")[52]) ? 0 : "number" == typeof e ? d.__cast(e, k) : "number" == typeof e && (0 | e) === e ? d.__cast(e, l) : "boolean" == typeof e ? d.__cast(e, n) ? 1 : 0 : "string" == typeof e ? parseFloat(e) : parseFloat(g.string(e))),
+                        				(t = b.engine.getGameAttribute("NONdummies")[6]), h.setVolumeForChannel(e / 100, 0 | Math.max(parseNum(t), 1)),
+                        				(e = b.engine.getGameAttribute("NONdummies")),
+                        				(t = b.engine.getGameAttribute("NONdummies")[6]),
+                        				(e[6] = Math.round(parseNum(t) + 1)));
+                        	}

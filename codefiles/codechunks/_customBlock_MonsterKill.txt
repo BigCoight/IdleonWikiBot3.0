@@ -1,0 +1,388 @@
+                        (t._customBlock_MonsterKill = function(s) {
+                        		if ((t._customBlock_GetTalentNumber(1, 280) / 100 > h.randomFloat() && A._customBlock_AFKcode("Forge", t._customBlock_GetTalentNumber(2, 280)), 0 < H._customBlock_GetBuffBonuses(490, 1))) {
+                        			var a = b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_GeneralInfo"),
+                        				r = b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_GeneralInfo")[19],
+                        				o = parseNum(r),
+                        				i = t._customBlock_GetTalentNumber(1, 490),
+                        				u = b.engine.getGameAttribute("DNSM"),
+                        				m = null != e.AlchBubbles ? u.getReserved("AlchBubbles") : u.h.AlchBubbles,
+                        				c = null != e.AlchemyACTIVE ? m.getReserved("AlchemyACTIVE") : m.h.AlchemyACTIVE;
+                        			a[19] = o + i * (1 + parseNum(c) / 100);
+                        			var p = t._customBlock_GetTalentNumber(1, 490),
+                        				f = b.engine.getGameAttribute("DNSM"),
+                        				y = null != e.AlchBubbles ? f.getReserved("AlchBubbles") : f.h.AlchBubbles,
+                        				R = null != e.AlchemyACTIVE ? y.getReserved("AlchemyACTIVE") : y.h.AlchemyACTIVE;
+                        			A._customBlock_AFKcode("Cauldron", p * (1 + parseNum(R) / 100));
+                        		}
+                        		var v = b.engine.getGameAttribute("CustomLists");
+                        		if (!Sb.contains(null != e.NonAFKmonsters ? v.getReserved("NonAFKmonsters") : v.h.NonAFKmonsters, s.getValue("ActorEvents_1", "_MonsterType"))) {
+                        			if (0 == s.getValue("ActorEvents_1", "_TempMonster"))
+                        				if (-1 == h.getCurrentSceneName().indexOf("Tutorial")) var F = b.engine.getGameAttribute("Lv0")[0],
+                        					N = 19 < parseNum(F);
+                        				else N = !1;
+                        			else N = !1;
+                        			if (N) {
+                        				if (H._customBlock_ArbitraryCode("CrystalSpawn") > h.randomFloat()) var _ = !0;
+                        				else {
+                        					var I = b.engine.getGameAttribute("OptionsListAccount")[101],
+                        						D = parseNum(I),
+                        						E = w._customBlock_Labb("SigilBonus", "Blank", 7, 0),
+                        						S = b.engine.getGameAttribute("Tasks")[2][3][0];
+                        					_ = D < E + parseNum(S);
+                        				}
+                        				if (_) {
+                        					if (200 > b.engine.getGameAttribute("CurrentMap")) {
+                        						var G = b.engine.getGameAttribute("OptionsListAccount"),
+                        							T = b.engine.getGameAttribute("OptionsListAccount")[101];
+                        						(G[101] = parseNum(T) + 1),
+                        						A._customBlock_UnlockHint(0, 20);
+                        						var U = b.engine,
+                        							M = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							V = parseNum(M),
+                        							C = U.gameAttributes;
+                        						null != e.DummyNumber ? C.setReserved("DummyNumber", V) : (C.h.DummyNumber = V);
+                        						var B = b.engine,
+                        							P = "Crystal" + Math.floor(b.engine.getGameAttribute("CurrentMap") / 50),
+                        							O = B.gameAttributes;
+                        						null != e.DummyText ? O.setReserved("DummyText", P) : (O.h.DummyText = P);
+                        						var x = b.engine.getGameAttribute("CustomMaps"),
+                        							Q = null != e.MonsterDrops ? x.getReserved("MonsterDrops") : x.h.MonsterDrops,
+                        							X = b.engine.getGameAttribute("DummyText"),
+                        							L = (null != e[X] ? Q.getReserved(X) : Q.h[X])[0],
+                        							z = b.engine.getGameAttribute("CustomMaps"),
+                        							Y = null != e.MonsterDrops ? z.getReserved("MonsterDrops") : z.h.MonsterDrops,
+                        							W = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        							Z = (null != e[W] ? Y.getReserved(W) : Y.h[W])[0][2];
+                        						L[2] = 100 * parseNum(Z);
+                        						var J = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							j = b.engine.getGameAttribute("DummyText"),
+                        							q = null != e[j] ? J.getReserved(j) : J.h[j],
+                        							K = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							$ = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        							ee = null != e[$] ? K.getReserved($) : K.h[$],
+                        							te = null != e.MonsterHPTotal ? ee.getReserved("MonsterHPTotal") : ee.h.MonsterHPTotal,
+                        							ne = 15 * parseNum(te);
+                        						null != e.MonsterHPTotal ? q.setReserved("MonsterHPTotal", ne) : (q.h.MonsterHPTotal = ne);
+                        						var se = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							ae = b.engine.getGameAttribute("DummyText"),
+                        							re = null != e[ae] ? se.getReserved(ae) : se.h[ae],
+                        							Ae = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							le = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        							oe = null != e[le] ? Ae.getReserved(le) : Ae.h[le],
+                        							ie = null != e.ExpGiven ? oe.getReserved("ExpGiven") : oe.h.ExpGiven,
+                        							ue = 35 * parseNum(ie);
+                        						null != e.ExpGiven ? re.setReserved("ExpGiven", ue) : (re.h.ExpGiven = ue);
+                        						var ge = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							me = b.engine.getGameAttribute("DummyText"),
+                        							de = null != e[me] ? ge.getReserved(me) : ge.h[me],
+                        							ce = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							pe = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        							he = null != e[pe] ? ce.getReserved(pe) : ce.h[pe],
+                        							be = null != e.Defence ? he.getReserved("Defence") : he.h.Defence,
+                        							fe = 2.5 * parseNum(be);
+                        						null != e.Defence ? de.setReserved("Defence", fe) : (de.h.Defence = fe);
+                        						var ye = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							Re = b.engine.getGameAttribute("DummyText"),
+                        							ve = null != e[Re] ? ye.getReserved(Re) : ye.h[Re],
+                        							Fe = null != e.Damages ? ve.getReserved("Damages") : ve.h.Damages,
+                        							Ne = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        							_e = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        							Ie = null != e[_e] ? Ne.getReserved(_e) : Ne.h[_e],
+                        							De = (null != e.Damages ? Ie.getReserved("Damages") : Ie.h.Damages)[0];
+                        						Fe[0] = 2.5 * parseNum(De);
+                        						var Ee = b.engine.getGameAttribute("DummyText"),
+                        							Se = b.engine.getGameAttribute("DummyNumber"),
+                        							Ge = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("DummyNumber")],
+                        							Te = parseNum(Ge),
+                        							Ue = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("DummyNumber")];
+                        						t._customBlock_CreateMonster(Ee, Se, h.randomInt(0 | Te, 0 | parseNum(Ue)) + 50);
+                        					}
+                        				} else {
+                        					var Me = b.engine.getGameAttribute("OptionsListAccount")[29];
+                        					if (1 == h.randomInt(1, Math.round(20 + 2 * parseNum(Me) + 5 * b.engine.getGameAttribute("PlayerAutoMoveTOGGLE")))) {
+                        						var Ve = b.engine.getGameAttribute("OptionsListAccount")[29];
+                        						if (20 > parseNum(Ve) && "On" == "" + w._customBlock_eventStatus()) {
+                        							var Ce = b.engine,
+                        								Be = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        								Pe = parseNum(Be),
+                        								Oe = Ce.gameAttributes;
+                        							if ((null != e.DummyNumber ? Oe.setReserved("DummyNumber", Pe) : (Oe.h.DummyNumber = Pe), 1 == h.randomInt(1, 3))) {
+                        								var we = b.engine.gameAttributes;
+                        								null != e.DummyText ? we.setReserved("DummyText", "sheepB") : (we.h.DummyText = "sheepB");
+                        							} else {
+                        								var ke = b.engine.gameAttributes;
+                        								null != e.DummyText ? ke.setReserved("DummyText", "snakeY") : (ke.h.DummyText = "snakeY");
+                        							}
+                        							var xe = b.engine.gameAttributes;
+                        							null != e.DummyText3 ? xe.setReserved("DummyText3", "asdf") : (xe.h.DummyText3 = "asdf");
+                        							var Qe = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								Xe = b.engine.getGameAttribute("DummyText"),
+                        								Le = null != e[Xe] ? Qe.getReserved(Xe) : Qe.h[Xe],
+                        								ze = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								Ye = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        								We = null != e[Ye] ? ze.getReserved(Ye) : ze.h[Ye],
+                        								Ze = null != e.MonsterHPTotal ? We.getReserved("MonsterHPTotal") : We.h.MonsterHPTotal,
+                        								He = 6 * parseNum(Ze);
+                        							null != e.MonsterHPTotal ? Le.setReserved("MonsterHPTotal", He) : (Le.h.MonsterHPTotal = He);
+                        							var Je = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								je = b.engine.getGameAttribute("DummyText"),
+                        								qe = null != e[je] ? Je.getReserved(je) : Je.h[je],
+                        								Ke = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								$e = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        								et = null != e[$e] ? Ke.getReserved($e) : Ke.h[$e],
+                        								tt = null != e.ExpGiven ? et.getReserved("ExpGiven") : et.h.ExpGiven,
+                        								nt = 25 * parseNum(tt);
+                        							null != e.ExpGiven ? qe.setReserved("ExpGiven", nt) : (qe.h.ExpGiven = nt);
+                        							var st = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								at = b.engine.getGameAttribute("DummyText"),
+                        								rt = null != e[at] ? st.getReserved(at) : st.h[at],
+                        								At = null != e.Damages ? rt.getReserved("Damages") : rt.h.Damages,
+                        								lt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        								ot = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        								it = null != e[ot] ? lt.getReserved(ot) : lt.h[ot],
+                        								ut = (null != e.Damages ? it.getReserved("Damages") : it.h.Damages)[0];
+                        							At[0] = 1.8 * parseNum(ut);
+                        							var gt = b.engine.getGameAttribute("DummyText"),
+                        								mt = b.engine.getGameAttribute("DummyNumber"),
+                        								dt = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("DummyNumber")],
+                        								ct = parseNum(dt),
+                        								pt = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("DummyNumber")];
+                        							t._customBlock_CreateMonster(gt, mt, h.randomInt(0 | ct, 0 | parseNum(pt)) + 50);
+                        						}
+                        					} else if (H._customBlock_ArbitraryCode("GiantMob") > h.randomFloat()) {
+                        						var ht = h.randomFloat(),
+                        							bt = b.engine.getGameAttribute("DNSM"),
+                        							ft = null != e.AlchBubbles ? bt.getReserved("AlchBubbles") : bt.h.AlchBubbles,
+                        							yt = null != e.GiantsACTIVE ? ft.getReserved("GiantsACTIVE") : ft.h.GiantsACTIVE;
+                        						if (ht >= parseNum(yt) / 100) {
+                        							var Rt = b.engine.getGameAttribute("OptionsListAccount"),
+                        								vt = b.engine.getGameAttribute("OptionsListAccount")[57];
+                        							Rt[57] = 1 + parseNum(vt);
+                        						}
+                        						A._customBlock_UnlockHint(2, 12);
+                        						var Ft = b.engine,
+                        							Nt = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        							_t = parseNum(Nt),
+                        							It = Ft.gameAttributes;
+                        						null != e.DummyNumber ? It.setReserved("DummyNumber", _t) : (It.h.DummyNumber = _t);
+                        						var Dt = b.engine,
+                        							Et = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        							St = Dt.gameAttributes;
+                        						null != e.DummyText ? St.setReserved("DummyText", Et) : (St.h.DummyText = Et);
+                        						var Gt = b.engine.gameAttributes;
+                        						null != e.DummyText3 ? Gt.setReserved("DummyText3", "BigBadGiantMonster") : (Gt.h.DummyText3 = "BigBadGiantMonster");
+                        						var Tt = b.engine.getGameAttribute("DummyText"),
+                        							Ut = b.engine.getGameAttribute("DummyNumber"),
+                        							Mt = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("DummyNumber")],
+                        							Vt = parseNum(Mt),
+                        							Ct = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("DummyNumber")];
+                        						t._customBlock_CreateMonster(Tt, Ut, h.randomInt(0 | Vt, 0 | parseNum(Ct)) + 50);
+                        						var Bt = b.engine.gameAttributes;
+                        						null != e.DummyText3 ? Bt.setReserved("DummyText3", "nah") : (Bt.h.DummyText3 = "nah");
+                        					}
+                        				}
+                        			}
+                        		}
+                        		var Pt = b.engine.getGameAttribute("PixelHelperActor")[1].getValue("ActorEvents_116", "_GeneralINFO"),
+                        			Ot = b.engine.getGameAttribute("PixelHelperActor")[1].getValue("ActorEvents_116", "_GeneralINFO")[9];
+                        		if (
+                        			((Pt[9] = parseNum(Ot) + 1), 0 != b.engine.getGameAttribute("PixelHelperActor")[3].getValue("ActorEvents_201", "_GenINFO")[29])) {
+                        			var wt = b.engine.getGameAttribute("PixelHelperActor")[3].getValue("ActorEvents_201", "_GenINFO")[35];
+                        			if (0 < parseNum(wt)) {
+                        				var kt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					xt = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        					Qt = null != e[xt] ? kt.getReserved(xt) : kt.h[xt],
+                        					Xt = null != e.ExpGiven ? Qt.getReserved("ExpGiven") : Qt.h.ExpGiven;
+                        				t._customBlock_ColosseumAction(parseNum(Xt), "score", "KILL");
+                        				var Lt = b.engine.getGameAttribute("MonsterDefinitionsGET"),
+                        					zt = "" + g.string(s.getValue("ActorEvents_1", "_MonsterType")),
+                        					Yt = null != e[zt] ? Lt.getReserved(zt) : Lt.h[zt];
+                        				"a" == (null != e.SpecialType ? Yt.getReserved("SpecialType") : Yt.h.SpecialType) ? t._customBlock_ColosseumAction(0.6, "multi", "eh"): t._customBlock_ColosseumAction(0.02, "multi", "eh");
+                        			}
+                        		}
+                        		if (0 == s.getValue("ActorEvents_1", "_TempMonster") && 0 == h.getValueForScene(b.engine.getGameAttribute("SceneEvents_n"), "_DefaultExpType"))
+                        			for (var Wt = 0, Zt = b.engine.getGameAttribute("KillsLeft2Advance")[0 | b.engine.getGameAttribute("CurrentMap")].length; Wt < Zt;) {
+                        				var Ht = Wt++,
+                        					Jt = b.engine.getGameAttribute("KillsLeft2Advance")[0 | b.engine.getGameAttribute("CurrentMap")],
+                        					jt = b.engine.getGameAttribute("KillsLeft2Advance")[0 | b.engine.getGameAttribute("CurrentMap")][Ht],
+                        					qt = parseNum(jt),
+                        					Kt = H._customBlock_ArbitraryCode("KillPerKill"),
+                        					$t = b.engine.getGameAttribute("DNSM"),
+                        					en = null != e.AlchVials ? $t.getReserved("AlchVials") : $t.h.AlchVials,
+                        					tn = null != e.MultiKillPlay ? en.getReserved("MultiKillPlay") : en.h.MultiKillPlay;
+                        				Jt[Ht] = qt - (Kt + parseNum(tn) / 100);
+                        			}
+                        		t._customBlock_KilledMonsterType("" + g.string(s.getValue("ActorEvents_1", "_MonsterType")));
+                        		var nn = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Scripticus2 ? nn.getReserved("Scripticus2") : nn.h.Scripticus2) && "mushG" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        			var sn = b.engine.getGameAttribute("QuestStatus"),
+                        				an = null != e.Scripticus2 ? sn.getReserved("Scripticus2") : sn.h.Scripticus2,
+                        				rn = b.engine.getGameAttribute("QuestStatus"),
+                        				An = (null != e.Scripticus2 ? rn.getReserved("Scripticus2") : rn.h.Scripticus2)[0];
+                        			an[0] = parseNum(An) + 1;
+                        		}
+                        		var ln = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Promotheus4 ? ln.getReserved("Promotheus4") : ln.h.Promotheus4) && "babayaga" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        			var on = b.engine.getGameAttribute("QuestStatus");
+                        			(null != e.Promotheus4 ? on.getReserved("Promotheus4") : on.h.Promotheus4)[0] = 1;
+                        		}
+                        		var un = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Picnic_Stowaway3 ? un.getReserved("Picnic_Stowaway3") : un.h.Picnic_Stowaway3) && 1 == s.getValue("ActorEvents_1", "_TempMonster") && 2 == b.engine.getGameAttribute("CurrentMap") && "mushG" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        			var gn = b.engine.getGameAttribute("QuestStatus"),
+                        				mn = null != e.Picnic_Stowaway3 ? gn.getReserved("Picnic_Stowaway3") : gn.h.Picnic_Stowaway3,
+                        				dn = b.engine.getGameAttribute("QuestStatus"),
+                        				cn = (null != e.Picnic_Stowaway3 ? dn.getReserved("Picnic_Stowaway3") : dn.h.Picnic_Stowaway3)[0];
+                        			mn[0] = parseNum(cn) + 1;
+                        		}
+                        		var pn = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Typhoon1 ? pn.getReserved("Typhoon1") : pn.h.Typhoon1) && 1 == s.getValue("ActorEvents_1", "_TempMonster") && 2 == b.engine.getGameAttribute("CurrentMap") && "frogG" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        			var hn = b.engine.getGameAttribute("QuestStatus"),
+                        				bn = null != e.Typhoon1 ? hn.getReserved("Typhoon1") : hn.h.Typhoon1,
+                        				fn = b.engine.getGameAttribute("QuestStatus"),
+                        				yn = (null != e.Typhoon1 ? fn.getReserved("Typhoon1") : fn.h.Typhoon1)[0];
+                        			bn[0] = parseNum(yn) + 1;
+                        		}
+                        		if ("mimicA" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        			var Rn = b.engine.getGameAttribute("NPCdialogue"),
+                        				vn = null != e.Bandit_Bob ? Rn.getReserved("Bandit_Bob") : Rn.h.Bandit_Bob;
+                        			if (17 < parseNum(vn) && 1 == h.randomInt(1, 100)) {
+                        				var Fn = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        					Nn = parseNum(Fn),
+                        					_n = s.getX(),
+                        					In = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        					Dn = parseNum(In),
+                        					En = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        				A._customBlock_DropSomething("Quest45", 1, 0, 0, 0, Nn, 0, _n + Dn - 18, parseNum(En));
+                        			}
+                        		}
+                        		if ("mushP" == s.getValue("ActorEvents_1", "_MonsterType") && 1 == h.randomInt(1, 50)) {
+                        			var Sn = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        				Gn = parseNum(Sn),
+                        				Tn = s.getX(),
+                        				Un = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        				Mn = parseNum(Un),
+                        				Vn = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        			A._customBlock_DropSomething("OilBarrel2", 1, 0, 0, 0, Gn, 0, Tn + Mn - 18, parseNum(Vn));
+                        		}
+                        		if ("jarSand" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        			var Cn = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Cowbo_Jones1 ? Cn.getReserved("Cowbo_Jones1") : Cn.h.Cowbo_Jones1)) {
+                        				var Bn = b.engine.getGameAttribute("QuestStatus"),
+                        					Pn = (null != e.Cowbo_Jones1 ? Bn.getReserved("Cowbo_Jones1") : Bn.h.Cowbo_Jones1)[0];
+                        				if (5 < parseNum(Pn)) var On = b.engine.getGameAttribute("QuestStatus"),
+                        					wn = (null != e.Cowbo_Jones1 ? On.getReserved("Cowbo_Jones1") : On.h.Cowbo_Jones1)[0],
+                        					kn = 1e3 > parseNum(wn);
+                        				else kn = !1;
+                        				if (kn) {
+                        					var xn = b.engine.getGameAttribute("QuestStatus");
+                        					(null != e.Cowbo_Jones1 ? xn.getReserved("Cowbo_Jones1") : xn.h.Cowbo_Jones1)[0] = 99999;
+                        					var Qn = b.engine.gameAttributes;
+                        					null != e.DummyText3 ? Qn.setReserved("DummyText3", "KillDialogueEarly") : (Qn.h.DummyText3 = "KillDialogueEarly");
+                        					var Xn = b.engine.gameAttributes;
+                        					null != e.DummyNumber ? Xn.setReserved("DummyNumber", 16) : (Xn.h.DummyNumber = 16);
+                        					var Ln = b.engine,
+                        						zn = "" + t._customBlock_DialogueETC("Lava_Flame2", "Whoa_there_gamer..._you_didn't_actually_think_I'd_make_you_kill_so_many_did_you?_@_You_did?_Oh._Well,_I_edited_your_progress_so_you_can_skip_this_one!_I'd_love_to_stay_and_chat,_but_I_gotta_go_ban_a_hacker_in_world_7!", 544, 50),
+                        						Yn = Ln.gameAttributes;
+                        					null != e.DummyText2 ? Yn.setReserved("DummyText2", zn) : (Yn.h.DummyText2 = zn);
+                        				} else {
+                        					var Wn = b.engine.getGameAttribute("QuestStatus"),
+                        						Zn = (null != e.Cowbo_Jones1 ? Wn.getReserved("Cowbo_Jones1") : Wn.h.Cowbo_Jones1)[0];
+                        					if (10 > parseNum(Zn)) {
+                        						var Hn = b.engine.getGameAttribute("QuestStatus"),
+                        							Jn = null != e.Cowbo_Jones1 ? Hn.getReserved("Cowbo_Jones1") : Hn.h.Cowbo_Jones1,
+                        							jn = b.engine.getGameAttribute("QuestStatus"),
+                        							qn = (null != e.Cowbo_Jones1 ? jn.getReserved("Cowbo_Jones1") : jn.h.Cowbo_Jones1)[0];
+                        						Jn[0] = parseNum(qn) + 1;
+                        					}
+                        				}
+                        			}
+                        			var Kn = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Cowbo_Jones2 ? Kn.getReserved("Cowbo_Jones2") : Kn.h.Cowbo_Jones2) && "Blank" == b.engine.getGameAttribute("EquipmentOrder")[0][0]) {
+                        				var $n = b.engine.getGameAttribute("QuestStatus"),
+                        					es = null != e.Cowbo_Jones2 ? $n.getReserved("Cowbo_Jones2") : $n.h.Cowbo_Jones2,
+                        					ts = b.engine.getGameAttribute("QuestStatus"),
+                        					ns = (null != e.Cowbo_Jones2 ? ts.getReserved("Cowbo_Jones2") : ts.h.Cowbo_Jones2)[0];
+                        				es[0] = parseNum(ns) + 1;
+                        			}
+                        		}
+                        		if (
+                        			("rockG" == s.getValue("ActorEvents_1", "_MonsterType") && Mc.remove(b.engine.getGameAttribute("PixelHelperActor")[2].getValue("ActorEvents_167", "_GeneralInfo")[5], 6), "slimeG" == s.getValue("ActorEvents_1", "_MonsterType"))) {
+                        			var ss = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Stiltzcho1 ? ss.getReserved("Stiltzcho1") : ss.h.Stiltzcho1)) {
+                        				var as = b.engine.getGameAttribute("QuestStatus"),
+                        					rs = (null != e.Stiltzcho1 ? as.getReserved("Stiltzcho1") : as.h.Stiltzcho1)[0];
+                        				if (15 > parseNum(rs)) {
+                        					var As = b.engine.getGameAttribute("QuestStatus"),
+                        						ls = null != e.Stiltzcho1 ? As.getReserved("Stiltzcho1") : As.h.Stiltzcho1,
+                        						os = b.engine.getGameAttribute("QuestStatus"),
+                        						is = (null != e.Stiltzcho1 ? os.getReserved("Stiltzcho1") : os.h.Stiltzcho1)[0];
+                        					ls[0] = parseNum(is) + 1;
+                        				}
+                        			}
+                        		}
+                        		if ("penguin" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        			var us = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Yondergreen4 ? us.getReserved("Yondergreen4") : us.h.Yondergreen4) && 1 == h.randomInt(1, 120)) {
+                        				var gs = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        					ms = parseNum(gs),
+                        					ds = s.getX(),
+                        					cs = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        					ps = parseNum(cs),
+                        					hs = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        				A._customBlock_DropSomething("Quest62", 1, 0, 0, 0, ms, 0, ds + ps - 18, parseNum(hs));
+                        			}
+                        		} else {
+                        			var bs = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Eliteus1 ? bs.getReserved("Eliteus1") : bs.h.Eliteus1) && 154 == b.engine.getGameAttribute("CurrentMap")) {
+                        				var fs = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        				if (1 < parseNum(fs)) {
+                        					var ys = b.engine.getGameAttribute("QuestStatus"),
+                        						Rs = null != e.Eliteus1 ? ys.getReserved("Eliteus1") : ys.h.Eliteus1,
+                        						vs = b.engine.getGameAttribute("QuestStatus"),
+                        						Fs = (null != e.Eliteus1 ? vs.getReserved("Eliteus1") : vs.h.Eliteus1)[0];
+                        					Rs[0] = parseNum(Fs) + 1;
+                        				}
+                        			}
+                        		}
+                        		var Ns = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Picnic_Stowaway7 ? Ns.getReserved("Picnic_Stowaway7") : Ns.h.Picnic_Stowaway7) && 24 == b.engine.getGameAttribute("CurrentMap")) {
+                        			if ("jarSand" == s.getValue("ActorEvents_1", "_MonsterType")) {
+                        				h.setValueForScene("SceneEvents_25", "_SJkill", 1);
+                        				var _s = b.engine.gameAttributes;
+                        				null != e.dummyDisplayPopup ? _s.setReserved("dummyDisplayPopup", "Quest10") : (_s.h.dummyDisplayPopup = "Quest10");
+                        				var Is = b.engine.gameAttributes;
+                        				null != e.DummyNumber ? Is.setReserved("DummyNumber", 1) : (Is.h.DummyNumber = 1);
+                        				var Ds = b.engine,
+                        					Es = b.engine.getGameAttribute("dummyActor"),
+                        					Ss = Ds.gameAttributes;
+                        				null != e.DummyList2 ? Ss.setReserved("DummyList2", Es) : (Ss.h.DummyList2 = Es);
+                        				var Gs = b.engine.gameAttributes,
+                        					Ts = [];
+                        				null != e.dummyActor ? Gs.setReserved("dummyActor", Ts) : (Gs.h.dummyActor = Ts),
+                        					b.engine.getGameAttribute("dummyActor").push(0),
+                        					b.engine.getGameAttribute("dummyActor").push(0),
+                        					b.engine.getGameAttribute("dummyActor").push(s.getValue("ActorEvents_1", "_MonsterNODE")),
+                        					b.engine.getGameAttribute("dummyActor").push(0);
+                        				var Us = h.getActorType(44),
+                        					Ms = s.getX(),
+                        					Vs = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        					Cs = parseNum(Vs),
+                        					Bs = b.engine.getGameAttribute("NodeY"),
+                        					Ps = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        					Os = Bs[0 | parseNum(Ps)];
+                        				h.createRecycledActor(Us, Ms + Cs - 18, parseNum(Os) - 36, 0);
+                        				var ws = b.engine,
+                        					ks = b.engine.getGameAttribute("DummyList2"),
+                        					xs = ws.gameAttributes;
+                        				null != e.dummyActor ? xs.setReserved("dummyActor", ks) : (xs.h.dummyActor = ks);
+                        			}
+                        		} else if ("ChestB1" == s.getValue("ActorEvents_1", "_MonsterType") && -1 == b.engine.getGameAttribute("AnvilCraftStatus")[0][38]) {
+                        			var Qs = s.getValue("ActorEvents_1", "_MonsterNODE"),
+                        				Xs = parseNum(Qs),
+                        				Ls = s.getX(),
+                        				zs = s.getValue("ActorEvents_1", "_Monster0ffsetX"),
+                        				Ys = parseNum(zs),
+                        				Ws = s.getValue("ActorEvents_1", "_MonsterNODE");
+                        			A._customBlock_DropSomething("SmithingRecipes1", 0, 38, 0, 0, Xs, 0, Ls + Ys - 18, parseNum(Ws));
+                        		}
+                        	}

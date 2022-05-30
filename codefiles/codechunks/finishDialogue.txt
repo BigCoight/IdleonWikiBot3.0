@@ -1,0 +1,8 @@
+                        (yi.finishDialogue = function(t, n) {
+                        		for (var s = 0; s < t.length;) {
+                        			var a = t[s];
+                        			++s;
+                        			var r = a.getName();
+                        			(a = a.output()), null != e[r] ? n.setReserved(r, a) : (n.h[r] = a);
+                        		}
+                        	}

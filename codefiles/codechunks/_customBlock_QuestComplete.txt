@@ -1,0 +1,63 @@
+                        (U._customBlock_QuestComplete = function(s, a) {
+                        		for (var r = 0; 3 > r;) {
+                        			var A = r++;
+                        			if (-1 != b.engine.getGameAttribute("SteamAchieve")[17 + A] && ((b.engine.getGameAttribute("SteamAchieve")[17 + A] = 1 + b.engine.getGameAttribute("PixelHelperActor")[1].getValue("ActorEvents_116", "_GeneralINFO")[12].length), -1 != b.engine.getGameAttribute("SteamAchieve")[17 + A])) {
+                        				w._customBlock_steamachieve(17 + A, 0);
+                        				break;
+                        			}
+                        		}
+                        		if (
+                        			((r = b.engine.getGameAttribute("CustomMaps")),
+                        				(r = null != e.AccountWideQuests ? r.getReserved("AccountWideQuests") : r.h.AccountWideQuests), null != e[(A = s + "" + a)] ? r.existsReserved(A) : r.h.hasOwnProperty(A))) {
+                        			for (r = b.engine.getGameAttribute("PlayerDATABASE").keys(); r.hasNext();)
+                        				if (((A = r.next()), b.engine.getGameAttribute("UserInfo")[0] != A)) {
+                        					var o = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						i = "" + A;
+                        					(o = null != e[i] ? o.getReserved(i) : o.h[i]),
+                        					(o = null != e.QuestComplete ? o.getReserved("QuestComplete") : o.h.QuestComplete),
+                        					(i = b.engine.getGameAttribute("DialogueDefGET")),
+                        					(i = "" + g.string((null != e[s] ? i.getReserved(s) : i.h[s])[1][0 | a][8])),
+                        					null != e[i] ? o.setReserved(i, 1) : (o.h[i] = 1),
+                        						(o = b.engine.getGameAttribute("CustomMaps")),
+                        						(o = null != e.AccountWideQuests ? o.getReserved("AccountWideQuests") : o.h.AccountWideQuests),
+                        						1 == (null == (o = (null != e[(i = s + "" + a)] ? o.getReserved(i) : o.h[i])[2]) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))) ? ((o = b.engine.getGameAttribute("PlayerDATABASE")),
+                        							(A = null != e[(A = "" + A)] ? o.getReserved(A) : o.h[A]),
+                        							(o = null != e.NPCdialogue ? A.getReserved("NPCdialogue") : A.h.NPCdialogue),
+                        							(A = b.engine.getGameAttribute("DialogueDefGET")),
+                        							(A = (null != e[s] ? A.getReserved(s) : A.h[s])[1][0 | a][1]), null != e[s] ? o.setReserved(s, A) : (o.h[s] = A), "Lord_of_the_Hunt" == s && ((A = b.engine.getGameAttribute("DialogueDefGET")), 10 > (null == (A = Nc.replace("" + g.string((null != e[s] ? A.getReserved(s) : A.h[s])[1][0 | a][8]), "Lord_of_the_Hunt", "")) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))) && ((A = b.engine.getGameAttribute("OptionsListAccount")),
+                        								(o = b.engine.getGameAttribute("DialogueDefGET")),
+                        								(o = Nc.replace("" + g.string((null != e[s] ? o.getReserved(s) : o.h[s])[1][0 | a][8]), "Lord_of_the_Hunt", "")),
+                        								(A[47] = parseNum(o))))) : ((o = b.engine.getGameAttribute("PlayerDATABASE")),
+                        							(A = null != e[(A = "" + A)] ? o.getReserved(A) : o.h[A]),
+                        							(A = null != e.NPCdialogue ? A.getReserved("NPCdialogue") : A.h.NPCdialogue), null != e[s] ? A.setReserved(s, 9999) : (A.h[s] = 9999));
+                        				}
+                        		} else "Glumlee" == s && 6 == a ? ((r = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ItemsOwnedMap")), 0 < (null == (r = null != e.OilBarrel4 ? r.getReserved("OilBarrel4") : r.h.OilBarrel4) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))) && w._customBlock_steamachieve(38, 1)) : "Goldric" == s && 17 == a ? ((r = b.engine.getGameAttribute("QuestStatus")), ((null != e.Cowbo_Jones10 ? r.getReserved("Cowbo_Jones10") : r.h.Cowbo_Jones10)[1] = 1)) : "Picnic_Stowaway" == s && 27 == a ? 12 == b.engine.getGameAttribute("Tasks")[5][0] && U._customBlock_TaskProgress(0, 8, "total", 1) : "Carpetiem" == s && 17 == a ? ((r = b.engine.getGameAttribute("QuestStatus")), ((null != e.Cowbo_Jones13 ? r.getReserved("Cowbo_Jones13") : r.h.Cowbo_Jones13)[0] = 100)) : "Glumlee" == s && 9 == a ? w._customBlock_steamachieve(42, 1) : "Picnic_Stowaway" == s && 12 == a ? w._customBlock_steamachieve(43, 1) : "Stiltzcho" == s && 16 == a ? w._customBlock_steamachieve(44, 1) : "Promotheus" == s && 10 == a ? w._customBlock_steamachieve(45, 1) : "Snouts" == s && 8 == a && ((A = b.engine), (r = "" + t._customBlock_DealDmgToPlayer(1e5, "none", "none")), (A = A.gameAttributes), null != e.DummyText ? A.setReserved("DummyText", r) : (A.h.DummyText = r));
+                        		"Blobbo" == s && 4 == a && ((b.engine.getGameAttribute("OptionsListAccount")[47] = 10),
+                        			(s = b.engine.gameAttributes), null != e.dummyMonsterNODE ? s.setReserved("dummyMonsterNODE", 2) : (s.h.dummyMonsterNODE = 2),
+                        			(s = b.engine.gameAttributes), null != e.dummyMonsterTYPE ? s.setReserved("dummyMonsterTYPE", "Critter10") : (s.h.dummyMonsterTYPE = "Critter10"),
+                        			(s = h.getActorType(356)),
+                        			(a = null == (a = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]),
+                        			(a = h.randomInt(0 | a, 0 | parseNum(r))),
+                        			(r = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]), h.createRecycledActor(s, a, parseNum(r), 0),
+                        			(s = h.getActorType(356)),
+                        			(a = null == (a = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]),
+                        			(a = h.randomInt(0 | a, 0 | parseNum(r))),
+                        			(r = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]), h.createRecycledActor(s, a, parseNum(r), 0),
+                        			(s = h.getActorType(356)),
+                        			(a = null == (a = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]),
+                        			(a = h.randomInt(0 | a, 0 | parseNum(r))),
+                        			(r = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]), h.createRecycledActor(s, a, parseNum(r), 0),
+                        			(s = h.getActorType(356)),
+                        			(a = null == (a = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]),
+                        			(a = h.randomInt(0 | a, 0 | parseNum(r))),
+                        			(r = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]), h.createRecycledActor(s, a, parseNum(r), 0),
+                        			(s = h.getActorType(356)),
+                        			(a = null == (a = b.engine.getGameAttribute("NodeX")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = b.engine.getGameAttribute("NodeLength")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]),
+                        			(a = h.randomInt(0 | a, 0 | parseNum(r))),
+                        			(r = b.engine.getGameAttribute("NodeY")[0 | b.engine.getGameAttribute("dummyMonsterNODE")]), h.createRecycledActor(s, a, parseNum(r), 0));
+                        	}

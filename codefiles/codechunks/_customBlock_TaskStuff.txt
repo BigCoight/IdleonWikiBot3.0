@@ -1,0 +1,77 @@
+                        (U._customBlock_TaskStuff = function(t, s, a) {
+                        		if ("AvailableUnlocks" == t) {
+                        			for (t = b.engine.getGameAttribute("DNSM"), null != e.taskppNum2 ? t.setReserved("taskppNum2", 0) : (t.h.taskppNum2 = 0), t = 0; 7 > t;) {
+                        				(s = t++), (a = b.engine.getGameAttribute("DNSM")), null != e.taskppNum ? a.setReserved("taskppNum", s) : (a.h.taskppNum = s), (s = 0), (a = b.engine.getGameAttribute("Tasks")[3]);
+                        				var r = b.engine.getGameAttribute("DNSM");
+                        				for (a = a[0 | (null == (r = null != e.taskppNum ? r.getReserved("taskppNum") : r.h.taskppNum) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r)))].length; s < a;) {
+                        					r = s++;
+                        					var A = b.engine.getGameAttribute("Tasks")[3],
+                        						o = b.engine.getGameAttribute("DNSM");
+                        					1 == A[0 | (null == (o = null != e.taskppNum ? o.getReserved("taskppNum") : o.h.taskppNum) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o)))][r] && ((r = b.engine.getGameAttribute("DNSM")),
+                        						(A = b.engine.getGameAttribute("DNSM")),
+                        						(A = (null == (A = null != e.taskppNum2 ? A.getReserved("taskppNum2") : A.h.taskppNum2) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))) + 1), null != e.taskppNum2 ? r.setReserved("taskppNum2", A) : (r.h.taskppNum2 = A));
+                        				}
+                        			}
+                        			return (
+                        				(t = null == (t = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[18]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))),
+                        				(s = b.engine.getGameAttribute("DNSM")),
+                        				(s = null != e.taskppNum2 ? s.getReserved("taskppNum2") : s.h.taskppNum2), Math.round(t - parseNum(s)));
+                        		}
+                        		if ("MeritsGiven" == t) return Math.round(1 + Math.floor(s / 5));
+                        		if ("RecipesUnlockedNUM" == t) {
+                        			for (t = b.engine.getGameAttribute("DNSM"), null != e.taskppNum2 ? t.setReserved("taskppNum2", 0) : (t.h.taskppNum2 = 0), t = 0; 7 > t;)
+                        				for (s = t++, a = b.engine.getGameAttribute("DNSM"), null != e.taskppNum ? a.setReserved("taskppNum", s) : (a.h.taskppNum = s), s = 0, a = b.engine.getGameAttribute("Tasks")[3], r = b.engine.getGameAttribute("DNSM"), a = a[0 | (null == (r = null != e.taskppNum ? r.getReserved("taskppNum") : r.h.taskppNum) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r)))].length; s < a;)
+                        					(r = s++),
+                        					(A = b.engine.getGameAttribute("Tasks")[3]),
+                        					(o = b.engine.getGameAttribute("DNSM")),
+                        					1 == A[0 | (null == (o = null != e.taskppNum ? o.getReserved("taskppNum") : o.h.taskppNum) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o)))][r] && ((r = b.engine.getGameAttribute("DNSM")),
+                        						(A = b.engine.getGameAttribute("DNSM")),
+                        						(A = (null == (A = null != e.taskppNum2 ? A.getReserved("taskppNum2") : A.h.taskppNum2) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A))) + 1), null != e.taskppNum2 ? r.setReserved("taskppNum2", A) : (r.h.taskppNum2 = A));
+                        			return (
+                        				(t = b.engine.getGameAttribute("DNSM")),
+                        				(t = null != e.taskppNum2 ? t.getReserved("taskppNum2") : t.h.taskppNum2), Math.round(parseNum(t)));
+                        		}
+                        		if ("TaskPointREQ" == t) return 1 == s ? ((t = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[18]), Math.round(U._customBlock_TaskStuff("UnlockPtsFORMULA", parseNum(t), "0"))) : ((t = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[18]), Math.round(U._customBlock_TaskStuff("UnlockPtsFORMULA", Math.round(parseNum(t) + 1), "0")));
+                        		if ("UnlockColumnsOpened" == t) {
+                        			for (t = b.engine.getGameAttribute("DNSM"), null != e.taskppNum3 ? t.setReserved("taskppNum3", 1) : (t.h.taskppNum3 = 1), t = 0; 6 > t;)
+                        				(s = t++),
+                        				(a = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[20][s]),
+                        				0 >= Math.round(parseNum(a) - U._customBlock_TaskStuff("RecipesUnlockedNUM", 0, "0")) && ((a = b.engine.getGameAttribute("CurrenciesOwned")),
+                        					(null == (a = null != e.AnvilTabsOwned ? a.getReserved("AnvilTabsOwned") : a.h.AnvilTabsOwned) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) > s + 1 && ((s = b.engine.getGameAttribute("DNSM")),
+                        						(a = b.engine.getGameAttribute("DNSM")),
+                        						(a = (null == (a = null != e.taskppNum3 ? a.getReserved("taskppNum3") : a.h.taskppNum3) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + 1), null != e.taskppNum3 ? s.setReserved("taskppNum3", a) : (s.h.taskppNum3 = a)));
+                        			return (
+                        				(t = b.engine.getGameAttribute("DNSM")),
+                        				(t = null != e.taskppNum3 ? t.getReserved("taskppNum3") : t.h.taskppNum3), Math.round(parseNum(t)));
+                        		}
+                        		if ("UnlockPtsOwned" == t) {
+                        			if (
+                        				(t = U._customBlock_TaskStuff("UnlockPtsFORMULA", 1, "0")) > (null == (s = b.engine.getGameAttribute("Tasks")[4][0]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)))) return 0;
+                        			for (t = 0; 100 > t;) {
+                        				if (
+                        					((s = t++),
+                        						(a = b.engine.getGameAttribute("DNSM")), null != e.taskppNum2 ? a.setReserved("taskppNum2", -10) : (a.h.taskppNum2 = -10),
+                        						(a = b.engine.getGameAttribute("DNSM")),
+                        						(s = 10 * (s + 1)), null != e.taskppNum ? a.setReserved("taskppNum", s) : (a.h.taskppNum = s),
+                        						(s = b.engine.getGameAttribute("DNSM")),
+                        						(s = null != e.taskppNum ? s.getReserved("taskppNum") : s.h.taskppNum),
+                        						(s = U._customBlock_TaskStuff("UnlockPtsFORMULA", parseNum(s), "0")) > (null == (a = b.engine.getGameAttribute("Tasks")[4][0]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)))))
+                        					for (a = 0; 10 > a;)
+                        						if (
+                        							((s = a++),
+                        								(r = b.engine.getGameAttribute("DNSM")),
+                        								(r = null != e.taskppNum ? r.getReserved("taskppNum") : r.h.taskppNum), !(
+                        									(r = U._customBlock_TaskStuff("UnlockPtsFORMULA", parseNum(r) - (s + 1), "0")) > (null == (A = b.engine.getGameAttribute("Tasks")[4][0]) ? 0 : "number" == typeof A ? d.__cast(A, k) : "number" == typeof A && (0 | A) === A ? d.__cast(A, l) : "boolean" == typeof A ? d.__cast(A, n) ? 1 : 0 : "string" == typeof A ? parseFloat(A) : parseFloat(g.string(A)))))) {
+                        							(a = b.engine.getGameAttribute("DNSM")),
+                        							(r = b.engine.getGameAttribute("DNSM")),
+                        							(s = (null == (r = null != e.taskppNum ? r.getReserved("taskppNum") : r.h.taskppNum) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))) - (s + 1)),
+                        							null != e.taskppNum2 ? a.setReserved("taskppNum2", s) : (a.h.taskppNum2 = s);
+                        							break;
+                        						}
+                        				if (
+                        					((s = b.engine.getGameAttribute("DNSM")), -1 < (null == (s = null != e.taskppNum2 ? s.getReserved("taskppNum2") : s.h.taskppNum2) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))))) break;
+                        			}
+                        			return (t = b.engine.getGameAttribute("DNSM")), null != e.taskppNum2 ? t.getReserved("taskppNum2") : t.h.taskppNum2;
+                        		}
+                        		return "UnlockPtsFORMULA" == t ? 9 * s + (2 * Math.max(0, s - 5) + (7 * Math.max(0, s - 12) + 11 * Math.max(0, s - 20))) + 1 : 0;
+                        	}

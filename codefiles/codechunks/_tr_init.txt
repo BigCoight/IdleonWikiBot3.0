@@ -1,0 +1,22 @@
+                        (n._tr_init = function(e) {
+                        		if (!H) {
+                        			var t,
+                        				n,
+                        				s,
+                        				A = Array(G + 1);
+                        			for (s = n = 0; 28 > s; s++)
+                        				for (L[s] = n, t = 0; t < 1 << B[s]; t++) X[n++] = s;
+                        			for (X[n - 1] = s, s = n = 0; 16 > s; s++)
+                        				for (z[s] = n, t = 0; t < 1 << P[s]; t++) Q[n++] = s;
+                        			for (n >>= 7; s < D; s++)
+                        				for (z[s] = n << 7, t = 0; t < 1 << (P[s] - 7); t++) Q[256 + n++] = s;
+                        			for (t = 0; t <= G; t++) A[t] = 0;
+                        			for (t = 0; 143 >= t;)(k[2 * t + 1] = 8), t++, A[8]++;
+                        			for (; 255 >= t;)(k[2 * t + 1] = 9), t++, A[9]++;
+                        			for (; 279 >= t;)(k[2 * t + 1] = 7), t++, A[7]++;
+                        			for (; 287 >= t;)(k[2 * t + 1] = 8), t++, A[8]++;
+                        			for (u(k, I + 1, A), t = 0; t < D; t++)(x[2 * t + 1] = 5), (x[2 * t] = i(t, 5));
+                        			(Y = new a(k, B, _ + 1, I, G)), (W = new a(x, P, 0, D, G)), (Z = new a([], O, 0, E, 7)), (H = !0);
+                        		}
+                        		(e.l_desc = new r(e.dyn_ltree, Y)), (e.d_desc = new r(e.dyn_dtree, W)), (e.bl_desc = new r(e.bl_tree, Z)), (e.bi_buf = 0), (e.bi_valid = 0), g(e);
+                        	}

@@ -1,0 +1,20 @@
+                        (eh.FishPools = function() {
+                        		var t = new p(),
+                        			n = [
+                        				["Fish1", "Fish2", "Fish3", "Fish4"],
+                        				["4", "7", "12", "21"],
+                        				["25", "70", "120", "200"],
+                        				["50", "200", "400"],
+                        				["CardsC8", "CardsC9", "CardsC10", "CardsD11"],
+                        				[".002", ".0018", ".0016", ".0014"],
+                        			];
+                        		return (null != e.FishSmall ? t.setReserved("FishSmall", n) : (t.h.FishSmall = n),
+                        			(n = [
+                        				["Fish5", "Fish6", "Fish7", "Fish8"],
+                        				["35", "60", "92", "150"],
+                        				["300", "750", "1500", "5000"],
+                        				["10000", "50000", "200000"],
+                        				["CardsF20", "CardsF21", "CardsF22", "CardsF23"],
+                        				[".001", ".0004", ".0001", ".000025"],
+                        			]), null != e.FishMed ? t.setReserved("FishMed", n) : (t.h.FishMed = n), t);
+                        	}

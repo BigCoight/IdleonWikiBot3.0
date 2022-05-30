@@ -1,0 +1,194 @@
+                        (A._customBlock_1second = function() {
+                        		var t = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Picnic_Stowaway7 ? t.getReserved("Picnic_Stowaway7") : t.h.Picnic_Stowaway7)) {
+                        			var s = b.engine.getGameAttribute("QuestStatus"),
+                        				a = null != e.Picnic_Stowaway7 ? s.getReserved("Picnic_Stowaway7") : s.h.Picnic_Stowaway7,
+                        				r = b.engine.getGameAttribute("QuestStatus"),
+                        				A = (null != e.Picnic_Stowaway7 ? r.getReserved("Picnic_Stowaway7") : r.h.Picnic_Stowaway7)[1];
+                        			a[1] = Math.max(parseNum(A) - 1, 68);
+                        		}
+                        		var o = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Scubidew2 ? o.getReserved("Scubidew2") : o.h.Scubidew2)) {
+                        			var i = b.engine.getGameAttribute("QuestStatus"),
+                        				u = (null != e.Scubidew2 ? i.getReserved("Scubidew2") : i.h.Scubidew2)[0];
+                        			if (5 > parseNum(u)) {
+                        				var m = b.engine.getGameAttribute("QuestStatus"),
+                        					c = null != e.Scubidew2 ? m.getReserved("Scubidew2") : m.h.Scubidew2,
+                        					p = b.engine.getGameAttribute("QuestStatus"),
+                        					h = (null != e.Scubidew2 ? p.getReserved("Scubidew2") : p.h.Scubidew2)[1];
+                        				c[1] = Math.max(parseNum(h) - 1, 0);
+                        			}
+                        		}
+                        		var f = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Centurion1 ? f.getReserved("Centurion1") : f.h.Centurion1)) {
+                        			var y = b.engine.getGameAttribute("QuestStatus"),
+                        				R = (null != e.Centurion1 ? y.getReserved("Centurion1") : y.h.Centurion1)[0];
+                        			if (21 > parseNum(R)) {
+                        				var v = b.engine.getGameAttribute("QuestStatus"),
+                        					F = null != e.Centurion1 ? v.getReserved("Centurion1") : v.h.Centurion1,
+                        					N = b.engine.getGameAttribute("QuestStatus"),
+                        					_ = (null != e.Centurion1 ? N.getReserved("Centurion1") : N.h.Centurion1)[1];
+                        				F[1] = Math.max(parseNum(_) - 1, 0);
+                        			}
+                        		}
+                        		var I = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.TP_Pete1 ? I.getReserved("TP_Pete1") : I.h.TP_Pete1)) {
+                        			var D = b.engine.getGameAttribute("QuestStatus"),
+                        				E = (null != e.TP_Pete1 ? D.getReserved("TP_Pete1") : D.h.TP_Pete1)[0];
+                        			if (40 > parseNum(E)) {
+                        				var S = b.engine.getGameAttribute("QuestStatus"),
+                        					G = null != e.TP_Pete1 ? S.getReserved("TP_Pete1") : S.h.TP_Pete1,
+                        					T = b.engine.getGameAttribute("QuestStatus"),
+                        					U = (null != e.TP_Pete1 ? T.getReserved("TP_Pete1") : T.h.TP_Pete1)[1];
+                        				G[1] = Math.max(parseNum(U) - 1, 0);
+                        			}
+                        		}
+                        		var M = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Goldric5 ? M.getReserved("Goldric5") : M.h.Goldric5) && "EquipmentHats28" == b.engine.getGameAttribute("EquipmentOrder")[0][0] && "EquipmentShirts13" == b.engine.getGameAttribute("EquipmentOrder")[0][2] && "EquipmentPants4" == b.engine.getGameAttribute("EquipmentOrder")[0][4] && ("EquipmentTools5" == b.engine.getGameAttribute("EquipmentOrder")[1][0] || "EquipmentToolsHatchet2" == b.engine.getGameAttribute("EquipmentOrder")[1][1] || "FishingRod4" == b.engine.getGameAttribute("EquipmentOrder")[1][2] || "CatchingNet4" == b.engine.getGameAttribute("EquipmentOrder")[1][3])) {
+                        			var V = b.engine.getGameAttribute("QuestStatus");
+                        			(null != e.Goldric5 ? V.getReserved("Goldric5") : V.h.Goldric5)[0] = 1;
+                        		}
+                        		var C = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Cowbo_Jones10 ? C.getReserved("Cowbo_Jones10") : C.h.Cowbo_Jones10)) {
+                        			var B = b.engine.getGameAttribute("QuestComplete");
+                        			if (1 == (null != e.Goldric5 ? B.getReserved("Goldric5") : B.h.Goldric5)) {
+                        				var P = b.engine.getGameAttribute("QuestStatus");
+                        				(null != e.Cowbo_Jones10 ? P.getReserved("Cowbo_Jones10") : P.h.Cowbo_Jones10)[0] = 1;
+                        			}
+                        		}
+                        		var O = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Cowbo_Jones12 ? O.getReserved("Cowbo_Jones12") : O.h.Cowbo_Jones12)) {
+                        			var w = b.engine.getGameAttribute("QuestStatus");
+                        			(null != e.Cowbo_Jones12 ? w.getReserved("Cowbo_Jones12") : w.h.Cowbo_Jones12)[0] = b.engine.getGameAttribute("CauldronInfo")[10][6];
+                        		}
+                        		var x = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.XxX_Cattleprod_XxX1 ? x.getReserved("XxX_Cattleprod_XxX1") : x.h.XxX_Cattleprod_XxX1)) {
+                        			var Q = b.engine.getGameAttribute("QuestStatus"),
+                        				X = (null != e.XxX_Cattleprod_XxX1 ? Q.getReserved("XxX_Cattleprod_XxX1") : Q.h.XxX_Cattleprod_XxX1)[0];
+                        			if (15 > parseNum(X)) {
+                        				var L = b.engine.getGameAttribute("QuestStatus"),
+                        					z = (null != e.XxX_Cattleprod_XxX1 ? L.getReserved("XxX_Cattleprod_XxX1") : L.h.XxX_Cattleprod_XxX1)[1];
+                        				if (0 < parseNum(z)) {
+                        					var Y = b.engine.getGameAttribute("QuestStatus"),
+                        						W = null != e.XxX_Cattleprod_XxX1 ? Y.getReserved("XxX_Cattleprod_XxX1") : Y.h.XxX_Cattleprod_XxX1,
+                        						Z = b.engine.getGameAttribute("QuestStatus"),
+                        						H = (null != e.XxX_Cattleprod_XxX1 ? Z.getReserved("XxX_Cattleprod_XxX1") : Z.h.XxX_Cattleprod_XxX1)[1];
+                        					W[1] = Math.max(parseNum(H) - 1, 0);
+                        				}
+                        			}
+                        		}
+                        		var J = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.XxX_Cattleprod_XxX2 ? J.getReserved("XxX_Cattleprod_XxX2") : J.h.XxX_Cattleprod_XxX2)) {
+                        			var j = b.engine.getGameAttribute("QuestStatus"),
+                        				q = (null != e.XxX_Cattleprod_XxX2 ? j.getReserved("XxX_Cattleprod_XxX2") : j.h.XxX_Cattleprod_XxX2)[0];
+                        			if (30 > parseNum(q)) var K = !0;
+                        			else {
+                        				var $ = b.engine.getGameAttribute("QuestStatus"),
+                        					ee = (null != e.XxX_Cattleprod_XxX2 ? $.getReserved("XxX_Cattleprod_XxX2") : $.h.XxX_Cattleprod_XxX2)[1];
+                        				K = 18 > parseNum(ee);
+                        			}
+                        			if (K) {
+                        				var te = b.engine.getGameAttribute("QuestStatus"),
+                        					ne = (null != e.XxX_Cattleprod_XxX2 ? te.getReserved("XxX_Cattleprod_XxX2") : te.h.XxX_Cattleprod_XxX2)[2];
+                        				if (0 < parseNum(ne)) {
+                        					var se = b.engine.getGameAttribute("QuestStatus"),
+                        						ae = null != e.XxX_Cattleprod_XxX2 ? se.getReserved("XxX_Cattleprod_XxX2") : se.h.XxX_Cattleprod_XxX2,
+                        						re = b.engine.getGameAttribute("QuestStatus"),
+                        						Ae = (null != e.XxX_Cattleprod_XxX2 ? re.getReserved("XxX_Cattleprod_XxX2") : re.h.XxX_Cattleprod_XxX2)[2];
+                        					ae[2] = Math.max(parseNum(Ae) - 1, 0);
+                        				}
+                        			}
+                        		}
+                        		var le = b.engine.getGameAttribute("QuestComplete");
+                        		if (0 == (null != e.Crystalswine4 ? le.getReserved("Crystalswine4") : le.h.Crystalswine4)) {
+                        			var oe = b.engine.getGameAttribute("QuestStatus"),
+                        				ie = (null != e.Crystalswine4 ? oe.getReserved("Crystalswine4") : oe.h.Crystalswine4)[0];
+                        			if (20 > parseNum(ie)) var ue = b.engine.getGameAttribute("QuestStatus"),
+                        				ge = (null != e.Crystalswine4 ? ue.getReserved("Crystalswine4") : ue.h.Crystalswine4)[1],
+                        				me = 0 < parseNum(ge);
+                        			else me = !1;
+                        			if (me) {
+                        				var de = b.engine.getGameAttribute("QuestStatus"),
+                        					ce = null != e.Crystalswine4 ? de.getReserved("Crystalswine4") : de.h.Crystalswine4,
+                        					pe = b.engine.getGameAttribute("QuestStatus"),
+                        					he = (null != e.Crystalswine4 ? pe.getReserved("Crystalswine4") : pe.h.Crystalswine4)[1];
+                        				ce[1] = Math.max(parseNum(he) - 1, 0);
+                        			}
+                        		} else {
+                        			var be = b.engine.getGameAttribute("QuestComplete");
+                        			if (0 == (null != e.Crystalswine5 ? be.getReserved("Crystalswine5") : be.h.Crystalswine5)) {
+                        				var fe = b.engine.getGameAttribute("QuestStatus"),
+                        					ye = (null != e.Crystalswine5 ? fe.getReserved("Crystalswine5") : fe.h.Crystalswine5)[0];
+                        				if (59 > parseNum(ye)) var Re = b.engine.getGameAttribute("QuestStatus"),
+                        					ve = (null != e.Crystalswine5 ? Re.getReserved("Crystalswine5") : Re.h.Crystalswine5)[1],
+                        					Fe = 0 < parseNum(ve);
+                        				else Fe = !1;
+                        				if (Fe) {
+                        					var Ne = b.engine.getGameAttribute("QuestStatus"),
+                        						_e = null != e.Crystalswine5 ? Ne.getReserved("Crystalswine5") : Ne.h.Crystalswine5,
+                        						Ie = b.engine.getGameAttribute("QuestStatus"),
+                        						De = (null != e.Crystalswine5 ? Ie.getReserved("Crystalswine5") : Ie.h.Crystalswine5)[1];
+                        					_e[1] = Math.max(parseNum(De) - 1, 0);
+                        				}
+                        			} else {
+                        				var Ee = b.engine.getGameAttribute("QuestComplete");
+                        				if (0 == (null != e.Crystalswine6 ? Ee.getReserved("Crystalswine6") : Ee.h.Crystalswine6)) {
+                        					var Se = b.engine.getGameAttribute("QuestStatus"),
+                        						Ge = (null != e.Crystalswine6 ? Se.getReserved("Crystalswine6") : Se.h.Crystalswine6)[0];
+                        					if (168 > parseNum(Ge)) var Te = b.engine.getGameAttribute("QuestStatus"),
+                        						Ue = (null != e.Crystalswine6 ? Te.getReserved("Crystalswine6") : Te.h.Crystalswine6)[1],
+                        						Me = 0 < parseNum(Ue);
+                        					else Me = !1;
+                        					if (Me) {
+                        						var Ve = b.engine.getGameAttribute("QuestStatus"),
+                        							Ce = null != e.Crystalswine6 ? Ve.getReserved("Crystalswine6") : Ve.h.Crystalswine6,
+                        							Be = b.engine.getGameAttribute("QuestStatus"),
+                        							Pe = (null != e.Crystalswine6 ? Be.getReserved("Crystalswine6") : Be.h.Crystalswine6)[1];
+                        						Ce[1] = Math.max(parseNum(Pe) - 1, 0);
+                        					}
+                        				}
+                        			}
+                        		}
+                        		for (var Oe = 0, we = b.engine.getGameAttribute("PlacedTraps").length; Oe < we;) {
+                        			var ke = Oe++;
+                        			if (-1 != b.engine.getGameAttribute("PlacedTraps")[ke][2]) {
+                        				var xe = b.engine.getGameAttribute("PlacedTraps")[ke],
+                        					Qe = b.engine.getGameAttribute("PlacedTraps")[ke][2];
+                        				xe[2] = parseNum(Qe) + 1;
+                        			}
+                        		}
+                        		for (var Xe = b.engine.getGameAttribute("PlayerDATABASE").keys(); Xe.hasNext();) {
+                        			var Le = Xe.next(),
+                        				ze = b.engine.getGameAttribute("PlayerDATABASE"),
+                        				Ye = "" + Le,
+                        				We = null != e[Ye] ? ze.getReserved(Ye) : ze.h[Ye];
+                        			if (null != e.PldTraps ? We.existsReserved("PldTraps") : We.h.hasOwnProperty("PldTraps"))
+                        				for (var Ze = 0,
+                        						He = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						Je = "" + Le,
+                        						je = null != e[Je] ? He.getReserved(Je) : He.h[Je],
+                        						qe = (null != e.PldTraps ? je.getReserved("PldTraps") : je.h.PldTraps).length; Ze < qe;) {
+                        					var Ke = Ze++,
+                        						$e = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						et = "" + Le,
+                        						tt = null != e[et] ? $e.getReserved(et) : $e.h[et];
+                        					if (-1 != (null != e.PldTraps ? tt.getReserved("PldTraps") : tt.h.PldTraps)[Ke][2]) {
+                        						var nt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							st = "" + Le,
+                        							at = null != e[st] ? nt.getReserved(st) : nt.h[st],
+                        							rt = (null != e.PldTraps ? at.getReserved("PldTraps") : at.h.PldTraps)[Ke],
+                        							At = b.engine.getGameAttribute("PlayerDATABASE"),
+                        							lt = "" + Le,
+                        							ot = null != e[lt] ? At.getReserved(lt) : At.h[lt],
+                        							it = (null != e.PldTraps ? ot.getReserved("PldTraps") : ot.h.PldTraps)[Ke][2];
+                        						rt[2] = parseNum(it) + 1;
+                        					}
+                        				}
+                        		}
+                        		for (var ut = 0, gt = 0 | Math.max(0, b.engine.getGameAttribute("Refinery")[0].length - 1); ut < gt;) {
+                        			var mt = ut++,
+                        				dt = b.engine.getGameAttribute("Refinery")[0],
+                        				ct = b.engine.getGameAttribute("Refinery")[0][mt + 1];
+                        			dt[mt + 1] = parseNum(ct) + 1;
+                        		}
+                        	}

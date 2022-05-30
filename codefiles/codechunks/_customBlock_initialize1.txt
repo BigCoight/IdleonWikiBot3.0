@@ -1,0 +1,495 @@
+                        (U._customBlock_initialize1 = function() {
+                        		var t = b.engine.getGameAttribute("DNSM"),
+                        			s = new p();
+                        		null != e.ChatYvals ? t.setReserved("ChatYvals", s) : (t.h.ChatYvals = s);
+                        		var a = b.engine.getGameAttribute("DNSM");
+                        		null != e.ChatChnlSEL ? a.setReserved("ChatChnlSEL", "Map") : (a.h.ChatChnlSEL = "Map");
+                        		var r = b.engine.getGameAttribute("DNSM");
+                        		null != e.ChatPgSEL ? r.setReserved("ChatPgSEL", 0) : (r.h.ChatPgSEL = 0);
+                        		var A = b.engine,
+                        			o = new p(),
+                        			i = A.gameAttributes;
+                        		null != e.Chat ? i.setReserved("Chat", o) : (i.h.Chat = o);
+                        		var u = b.engine.getGameAttribute("Chat"),
+                        			m = [];
+                        		null != e["Order*"] ? u.setReserved("Order*", m) : (u.h["Order*"] = m);
+                        		var c = b.engine.getGameAttribute("Chat"),
+                        			h = [];
+                        		null != e["NumMsgRead*"] ? c.setReserved("NumMsgRead*", h) : (c.h["NumMsgRead*"] = h);
+                        		var f = b.engine.gameAttributes,
+                        			y = [];
+                        		null != e.DummyList2 ? f.setReserved("DummyList2", y) : (f.h.DummyList2 = y);
+                        		var R = b.engine.gameAttributes,
+                        			v = [];
+                        		null != e.DummyList ? R.setReserved("DummyList", v) : (R.h.DummyList = v),
+                        			b.engine.getGameAttribute("DummyList").push("Note"),
+                        			b.engine.getGameAttribute("DummyList").push("Messages_from_all_players_in_your_current_map_show_up_here!"),
+                        			b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        		var F = b.engine.getGameAttribute("Chat"),
+                        			N = b.engine.getGameAttribute("DummyList2");
+                        		null != e.Map ? F.setReserved("Map", N) : (F.h.Map = N);
+                        		var _ = b.engine.getGameAttribute("Chat");
+                        		(null != e["Order*"] ? _.getReserved("Order*") : _.h["Order*"]).push("Map");
+                        		var I = b.engine.getGameAttribute("Chat");
+                        		(null != e["NumMsgRead*"] ? I.getReserved("NumMsgRead*") : I.h["NumMsgRead*"]).push(1);
+                        		var D = b.engine.getGameAttribute("DNSM"),
+                        			S = null != e.ChatYvals ? D.getReserved("ChatYvals") : D.h.ChatYvals;
+                        		null != e.Map ? S.setReserved("Map", 0) : (S.h.Map = 0);
+                        		var G = b.engine.gameAttributes,
+                        			T = [];
+                        		null != e.DummyList2 ? G.setReserved("DummyList2", T) : (G.h.DummyList2 = T);
+                        		var M = b.engine.gameAttributes,
+                        			V = [];
+                        		null != e.DummyList ? M.setReserved("DummyList", V) : (M.h.DummyList = V),
+                        			b.engine.getGameAttribute("DummyList").push("Note"), "" != b.engine.getGameAttribute("OptionsListAccount")[37] ? b.engine.getGameAttribute("DummyList").push("Chat_with_all_your_guild_buddies_here!") : b.engine.getGameAttribute("DummyList").push("You're_not_in_a_guild_yet._You_can_join_someone_elses_at_any_time,_or_make_your_own_after_reaching_Lv._30!"),
+                        			b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        		var C = b.engine.getGameAttribute("Chat"),
+                        			B = b.engine.getGameAttribute("DummyList2");
+                        		null != e.Guild ? C.setReserved("Guild", B) : (C.h.Guild = B);
+                        		var P = b.engine.getGameAttribute("Chat");
+                        		(null != e["Order*"] ? P.getReserved("Order*") : P.h["Order*"]).push("Guild");
+                        		var O = b.engine.getGameAttribute("Chat");
+                        		(null != e["NumMsgRead*"] ? O.getReserved("NumMsgRead*") : O.h["NumMsgRead*"]).push(1);
+                        		var w = b.engine.getGameAttribute("DNSM"),
+                        			x = null != e.ChatYvals ? w.getReserved("ChatYvals") : w.h.ChatYvals;
+                        		null != e.Guild ? x.setReserved("Guild", 0) : (x.h.Guild = 0);
+                        		var Q = b.engine.gameAttributes,
+                        			X = [];
+                        		null != e.DummyList2 ? Q.setReserved("DummyList2", X) : (Q.h.DummyList2 = X);
+                        		var L = b.engine.gameAttributes,
+                        			z = [];
+                        		null != e.DummyList ? L.setReserved("DummyList", z) : (L.h.DummyList = z),
+                        			b.engine.getGameAttribute("DummyList").push("Note"),
+                        			b.engine.getGameAttribute("DummyList").push("Messages_from_the_Developer_and_special_occasions_show_up_here!"),
+                        			b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        		var Y = b.engine.getGameAttribute("Chat"),
+                        			W = b.engine.getGameAttribute("DummyList2");
+                        		null != e.Server ? Y.setReserved("Server", W) : (Y.h.Server = W);
+                        		var Z = b.engine.getGameAttribute("Chat");
+                        		(null != e["Order*"] ? Z.getReserved("Order*") : Z.h["Order*"]).push("Server");
+                        		var H = b.engine.getGameAttribute("Chat");
+                        		(null != e["NumMsgRead*"] ? H.getReserved("NumMsgRead*") : H.h["NumMsgRead*"]).push(1);
+                        		var J = b.engine.getGameAttribute("DNSM"),
+                        			j = null != e.ChatYvals ? J.getReserved("ChatYvals") : J.h.ChatYvals;
+                        		null != e.Server ? j.setReserved("Server", 0) : (j.h.Server = 0);
+                        		var q = b.engine.gameAttributes,
+                        			K = [];
+                        		null != e.NonCloudsave ? q.setReserved("NonCloudsave", K) : (q.h.NonCloudsave = K);
+                        		var $ = b.engine.gameAttributes,
+                        			ee = [];
+                        		if (
+                        			(null != e.DummyList ? $.setReserved("DummyList", ee) : ($.h.DummyList = ee), b.engine.getGameAttribute("DummyList").push(1), b.engine.getGameAttribute("DummyList").push(0), b.engine.getGameAttribute("DummyList").push("N/A"), b.engine.getGameAttribute("DummyList").push(0), b.engine.getGameAttribute("NonCloudsave").push(b.engine.getGameAttribute("DummyList")), 0 == Sb.mapCount(b.engine.getGameAttribute("StarSignsUnlocked")))) {
+                        			var te = b.engine.getGameAttribute("StarSignsUnlocked");
+                        			null != e.The_Buff_Guy ? te.setReserved("The_Buff_Guy", 1) : (te.h.The_Buff_Guy = 1);
+                        			var ne = b.engine.getGameAttribute("StarSignsUnlocked");
+                        			null != e.Flexo_Bendo ? ne.setReserved("Flexo_Bendo", 1) : (ne.h.Flexo_Bendo = 1);
+                        			var se = b.engine.getGameAttribute("StarSignsUnlocked");
+                        			null != e.The_Book_Worm ? se.setReserved("The_Book_Worm", 1) : (se.h.The_Book_Worm = 1);
+                        			var ae = b.engine.getGameAttribute("StarSignsUnlocked");
+                        			null != e.The_Fuzzy_Dice ? ae.setReserved("The_Fuzzy_Dice", 1) : (ae.h.The_Fuzzy_Dice = 1);
+                        		}
+                        		if (300 > b.engine.getGameAttribute("GemItemsPurchased").length)
+                        			for (var re = 0; 300 > re;) {
+                        				var Ae = re++;
+                        				b.engine.getGameAttribute("GemItemsPurchased").length < Ae + 1 && b.engine.getGameAttribute("GemItemsPurchased").push(0);
+                        			}
+                        		if (17 > b.engine.getGameAttribute("OptionsListAccount").length) {
+                        			var le = b.engine.gameAttributes,
+                        				oe = [];
+                        			null != e.OptionsListAccount ? le.setReserved("OptionsListAccount", oe) : (le.h.OptionsListAccount = oe),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(2),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(1),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(1),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(10),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(10),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(-1),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0);
+                        		}
+                        		if (
+                        			(25 > b.engine.getGameAttribute("OptionsListAccount").length && (b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push("none.|"), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0)), 35 > b.engine.getGameAttribute("OptionsListAccount").length)) {
+                        			b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0);
+                        			var ie = b.engine.getGameAttribute("OptionsListAccount"),
+                        				ue = b.engine.getGameAttribute("GemItemsPurchased")[72];
+                        			ie.push(5 + 4 * parseNum(ue)),
+                        				b.engine.getGameAttribute("OptionsListAccount").push(0);
+                        		}
+                        		for (40 > b.engine.getGameAttribute("OptionsListAccount").length && (b.engine.getGameAttribute("OptionsListAccount").push(1), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(""), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0)); 50 > b.engine.getGameAttribute("OptionsListAccount").length;) b.engine.getGameAttribute("OptionsListAccount").push(0);
+                        		if (
+                        			(1 == b.engine.getGameAttribute("OptionsListAccount")[37] || b.engine.getGameAttribute("OptionsListAccount"), 3 > ("" + g.string(b.engine.getGameAttribute("OptionsListAccount")[37])).length && (b.engine.getGameAttribute("OptionsListAccount")[37] = ""), 51 <= b.engine.getGameAttribute("OptionsListAccount").length && 60 > b.engine.getGameAttribute("OptionsListAccount").length))
+                        			for (var ge = 0, me = b.engine.getGameAttribute("OptionsListAccount").length - 50; ge < me;) ge++, b.engine.getGameAttribute("OptionsListAccount").splice(50, 1);
+                        		if (
+                        			(61 > b.engine.getGameAttribute("OptionsListAccount").length && (b.engine.getGameAttribute("OptionsListAccount").push(45), b.engine.getGameAttribute("OptionsListAccount").push(47), b.engine.getGameAttribute("OptionsListAccount").push(39), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0), b.engine.getGameAttribute("OptionsListAccount").push(0)), 70 > b.engine.getGameAttribute("OptionsListAccount").length))
+                        			for (var de = 0; 30 > de;) de++, b.engine.getGameAttribute("OptionsListAccount").push(0);
+                        		for (var ce = 0, pe = b.engine.getGameAttribute("OptionsListAccount").length; ce < pe;) {
+                        			var he = ce++;
+                        			null == b.engine.getGameAttribute("OptionsListAccount")[he] && (b.engine.getGameAttribute("OptionsListAccount")[he] = 0);
+                        		}
+                        		if (null != b.engine.getGameAttribute("GetPlayersUsernames"))
+                        			for (var be = 0, fe = b.engine.getGameAttribute("GetPlayersUsernames").length; be < fe;) {
+                        				var ye = be++;
+                        				b.engine.getGameAttribute("CauldronJobs")[1].length <= ye && b.engine.getGameAttribute("CauldronJobs")[1].push(-1);
+                        			}
+                        		var Re = b.engine.gameAttributes,
+                        			ve = [];
+                        		null != e.DummyList2 ? Re.setReserved("DummyList2", ve) : (Re.h.DummyList2 = ve);
+                        		for (var Fe = 0; 36 > Fe;) {
+                        			Fe++;
+                        			var Ne = b.engine.gameAttributes,
+                        				_e = [];
+                        			null != e.DummyList ? Ne.setReserved("DummyList", _e) : (Ne.h.DummyList = _e),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        		}
+                        		if (
+                        			(4 > b.engine.getGameAttribute("PostOfficeInfo").length && (b.engine.getGameAttribute("PostOfficeInfo").push([]), (b.engine.getGameAttribute("PostOfficeInfo")[3] = b.engine.getGameAttribute("DummyList2"))), 0 == b.engine.getGameAttribute("CauldronInfo").length && (b.engine.getGameAttribute("CauldronInfo").push([]), b.engine.getGameAttribute("CauldronInfo").push([]), b.engine.getGameAttribute("CauldronInfo").push([]), b.engine.getGameAttribute("CauldronInfo").push([]), b.engine.getGameAttribute("CauldronInfo").push([]), b.engine.getGameAttribute("CauldronInfo").push([]), b.engine.getGameAttribute("CauldronInfo").push([]), b.engine.getGameAttribute("CauldronInfo").push([]), b.engine.getGameAttribute("CauldronInfo").push([]), b.engine.getGameAttribute("CauldronInfo").push([]), b.engine.getGameAttribute("CauldronInfo").push([])), 10 > b.engine.getGameAttribute("CauldronInfo").length))
+                        			for (var Ie = 0, De = Math.round(11 - b.engine.getGameAttribute("CauldronInfo").length); Ie < De;) Ie++, b.engine.getGameAttribute("CauldronInfo").push([]);
+                        		for (var Ee = 0; 5 > Ee;) {
+                        			var Se = Ee++,
+                        				Ge = b.engine.gameAttributes,
+                        				Te = Se;
+                        			null != e.DummyNumber2 ? Ge.setReserved("DummyNumber2", Te) : (Ge.h.DummyNumber2 = Te);
+                        			var Ue = b.engine.getGameAttribute("CustomLists");
+                        			if ((null != e.AlchemyCoords ? Ue.getReserved("AlchemyCoords") : Ue.h.AlchemyCoords)[Se].length > b.engine.getGameAttribute("CauldronInfo")[Se].length) {
+                        				var Me = b.engine,
+                        					Ve = b.engine.getGameAttribute("CustomLists"),
+                        					Ce = (null != e.AlchemyCoords ? Ve.getReserved("AlchemyCoords") : Ve.h.AlchemyCoords)[Se].length - b.engine.getGameAttribute("CauldronInfo")[Se].length,
+                        					Be = Me.gameAttributes,
+                        					Pe = Ce;
+                        				null != e.DummyNumber3 ? Be.setReserved("DummyNumber3", Pe) : (Be.h.DummyNumber3 = Pe);
+                        				for (var Oe = 0, we = 0 | b.engine.getGameAttribute("DummyNumber3"); Oe < we;) Oe++, b.engine.getGameAttribute("CauldronInfo")[0 | b.engine.getGameAttribute("DummyNumber2")].push(0);
+                        			}
+                        		}
+                        		var ke = b.engine.getGameAttribute("CauldronInfo")[4].length,
+                        			xe = b.engine.getGameAttribute("CustomLists");
+                        		if (ke < (null != e.AlchemyDescription ? xe.getReserved("AlchemyDescription") : xe.h.AlchemyDescription)[4].length)
+                        			for (var Qe = 0,
+                        					Xe = b.engine.getGameAttribute("CustomLists"),
+                        					Le = Math.round((null != e.AlchemyDescription ? Xe.getReserved("AlchemyDescription") : Xe.h.AlchemyDescription)[4].length - b.engine.getGameAttribute("CauldronInfo")[4].length); Qe < Le;) Qe++, b.engine.getGameAttribute("CauldronInfo")[4].push(0);
+                        		if (
+                        			(4 > b.engine.getGameAttribute("CauldronInfo")[5].length && (b.engine.getGameAttribute("CauldronInfo")[5].push(0), b.engine.getGameAttribute("CauldronInfo")[5].push(0), b.engine.getGameAttribute("CauldronInfo")[5].push(0), b.engine.getGameAttribute("CauldronInfo")[5].push(0)), 4 > b.engine.getGameAttribute("CauldronInfo")[6].length && (b.engine.getGameAttribute("CauldronInfo")[6].push(0), b.engine.getGameAttribute("CauldronInfo")[6].push(-1), b.engine.getGameAttribute("CauldronInfo")[6].push(-1), b.engine.getGameAttribute("CauldronInfo")[6].push(-1)), 4 > b.engine.getGameAttribute("CauldronInfo")[7].length && (b.engine.getGameAttribute("CauldronInfo")[7].push(0), b.engine.getGameAttribute("CauldronInfo")[7].push(0), b.engine.getGameAttribute("CauldronInfo")[7].push(0), b.engine.getGameAttribute("CauldronInfo")[7].push(0), b.engine.getGameAttribute("CauldronInfo")[7].push(0)), null == b.engine.getGameAttribute("CauldronInfo")[8] && (b.engine.getGameAttribute("CauldronInfo")[8] = []), 8 > b.engine.getGameAttribute("CauldronInfo")[8].length))
+                        			for (var ze = 0, Ye = Math.round(8 - b.engine.getGameAttribute("CauldronInfo")[8].length); ze < Ye;) {
+                        				ze++;
+                        				var We = b.engine.gameAttributes,
+                        					Ze = [];
+                        				null != e.DummyList2 ? We.setReserved("DummyList2", Ze) : (We.h.DummyList2 = Ze);
+                        				var He = b.engine.gameAttributes,
+                        					Je = [];
+                        				null != e.DummyList ? He.setReserved("DummyList", Je) : (He.h.DummyList = Je),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        				var je = b.engine.gameAttributes,
+                        					qe = [];
+                        				null != e.DummyList ? je.setReserved("DummyList", qe) : (je.h.DummyList = qe),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        				var Ke = b.engine.gameAttributes,
+                        					$e = [];
+                        				null != e.DummyList ? Ke.setReserved("DummyList", $e) : (Ke.h.DummyList = $e),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        				var et = b.engine.gameAttributes,
+                        					tt = [];
+                        				null != e.DummyList ? et.setReserved("DummyList", tt) : (et.h.DummyList = tt),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList")),
+                        					b.engine.getGameAttribute("CauldronInfo")[8].push(b.engine.getGameAttribute("DummyList2"));
+                        			}
+                        		4 > b.engine.getGameAttribute("CauldronInfo")[9].length && (b.engine.getGameAttribute("CauldronInfo")[9].push(0), b.engine.getGameAttribute("CauldronInfo")[9].push(0), b.engine.getGameAttribute("CauldronInfo")[9].push(0), b.engine.getGameAttribute("CauldronInfo")[9].push(0));
+                        		var nt = b.engine.getGameAttribute("CauldronInfo")[10].length,
+                        			st = b.engine.getGameAttribute("CustomLists");
+                        		if (nt < (null != e.AlchemyDescription ? st.getReserved("AlchemyDescription") : st.h.AlchemyDescription)[5].length)
+                        			for (var at = 0,
+                        					rt = b.engine.getGameAttribute("CustomLists"),
+                        					At = Math.round((null != e.AlchemyDescription ? rt.getReserved("AlchemyDescription") : rt.h.AlchemyDescription)[5].length - b.engine.getGameAttribute("CauldronInfo")[10].length); at < At;) at++, b.engine.getGameAttribute("CauldronInfo")[10].push(0);
+                        		if (0 == b.engine.getGameAttribute("CauldronJobs").length) {
+                        			b.engine.getGameAttribute("CauldronJobs").push([]), b.engine.getGameAttribute("CauldronJobs").push([]);
+                        			for (var lt = 0; 8 > lt;) {
+                        				lt++;
+                        				var ot = b.engine.gameAttributes,
+                        					it = [];
+                        				null != e.DummyList ? ot.setReserved("DummyList", it) : (ot.h.DummyList = it),
+                        					b.engine.getGameAttribute("DummyList").push(-1),
+                        					b.engine.getGameAttribute("DummyList").push(-1),
+                        					b.engine.getGameAttribute("DummyList").push(-1),
+                        					b.engine.getGameAttribute("DummyList").push(-1),
+                        					b.engine.getGameAttribute("DummyList").push(-1),
+                        					b.engine.getGameAttribute("DummyList").push(-1),
+                        					b.engine.getGameAttribute("DummyList").push(-1),
+                        					b.engine.getGameAttribute("DummyList").push(-1),
+                        					b.engine.getGameAttribute("CauldronJobs")[0].push(b.engine.getGameAttribute("DummyList"));
+                        			}
+                        			for (var ut = 0; 30 > ut;) ut++, b.engine.getGameAttribute("CauldronJobs")[1].push(-1);
+                        		}
+                        		if (0 == b.engine.getGameAttribute("CauldronBubbles").length)
+                        			for (var gt = 0; 36 > gt;) {
+                        				gt++;
+                        				var mt = b.engine.gameAttributes,
+                        					dt = [];
+                        				null != e.DummyList ? mt.setReserved("DummyList", dt) : (mt.h.DummyList = dt),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("CauldronBubbles").push(b.engine.getGameAttribute("DummyList"));
+                        			}
+                        		for (var ct = b.engine.getGameAttribute("PlayerDATABASE").keys(); ct.hasNext();) {
+                        			var pt = ct.next(),
+                        				ht = b.engine.getGameAttribute("PlayerDATABASE"),
+                        				bt = "" + pt,
+                        				ft = null != e[bt] ? ht.getReserved(bt) : ht.h[bt],
+                        				yt = (null != e.StatueLevels ? ft.getReserved("StatueLevels") : ft.h.StatueLevels).length,
+                        				Rt = b.engine.getGameAttribute("CustomLists");
+                        			if (yt < (null != e.StatueInfo ? Rt.getReserved("StatueInfo") : Rt.h.StatueInfo).length)
+                        				for (var vt = 0,
+                        						Ft = b.engine.getGameAttribute("CustomLists"),
+                        						Nt = (null != e.StatueInfo ? Ft.getReserved("StatueInfo") : Ft.h.StatueInfo).length,
+                        						_t = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						It = "" + pt,
+                        						Dt = null != e[It] ? _t.getReserved(It) : _t.h[It],
+                        						Et = Math.round(Nt - (null != e.StatueLevels ? Dt.getReserved("StatueLevels") : Dt.h.StatueLevels).length); vt < Et;) {
+                        					vt++;
+                        					var St = b.engine.gameAttributes,
+                        						Gt = [];
+                        					null != e.DummyList ? St.setReserved("DummyList", Gt) : (St.h.DummyList = Gt), b.engine.getGameAttribute("DummyList").push(0), b.engine.getGameAttribute("DummyList").push(0);
+                        					var Tt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						Ut = "" + pt,
+                        						Mt = null != e[Ut] ? Tt.getReserved(Ut) : Tt.h[Ut];
+                        					(null != e.StatueLevels ? Mt.getReserved("StatueLevels") : Mt.h.StatueLevels).push(b.engine.getGameAttribute("DummyList"));
+                        				}
+                        		}
+                        		if (0 == b.engine.getGameAttribute("CauldronP2W").length) {
+                        			var Vt = b.engine.gameAttributes,
+                        				Ct = [];
+                        			null != e.DummyList ? Vt.setReserved("DummyList", Ct) : (Vt.h.DummyList = Ct),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("CauldronP2W").push(b.engine.getGameAttribute("DummyList"));
+                        			var Bt = b.engine.gameAttributes,
+                        				Pt = [];
+                        			null != e.DummyList ? Bt.setReserved("DummyList", Pt) : (Bt.h.DummyList = Pt),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(-1),
+                        				b.engine.getGameAttribute("DummyList").push(-1),
+                        				b.engine.getGameAttribute("DummyList").push(-1),
+                        				b.engine.getGameAttribute("DummyList").push(-1),
+                        				b.engine.getGameAttribute("DummyList").push(-1),
+                        				b.engine.getGameAttribute("DummyList").push(-1),
+                        				b.engine.getGameAttribute("CauldronP2W").push(b.engine.getGameAttribute("DummyList"));
+                        			var Ot = b.engine.gameAttributes,
+                        				wt = [];
+                        			null != e.DummyList ? Ot.setReserved("DummyList", wt) : (Ot.h.DummyList = wt),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("CauldronP2W").push(b.engine.getGameAttribute("DummyList"));
+                        			var kt = b.engine.gameAttributes,
+                        				xt = [];
+                        			null != e.DummyList ? kt.setReserved("DummyList", xt) : (kt.h.DummyList = xt),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("CauldronP2W").push(b.engine.getGameAttribute("DummyList"));
+                        			var Qt = b.engine.gameAttributes,
+                        				Xt = [];
+                        			null != e.DummyList ? Qt.setReserved("DummyList", Xt) : (Qt.h.DummyList = Xt);
+                        			for (var Lt = 0; 24 > Lt;) Lt++, b.engine.getGameAttribute("DummyList").push(0), b.engine.getGameAttribute("DummyList").push(-1);
+                        			b.engine.getGameAttribute("CauldronP2W").push(b.engine.getGameAttribute("DummyList"));
+                        			var zt = b.engine.gameAttributes,
+                        				Yt = [];
+                        			null != e.DummyList ? zt.setReserved("DummyList", Yt) : (zt.h.DummyList = Yt),
+                        				b.engine.getGameAttribute("DummyList").push(3),
+                        				b.engine.getGameAttribute("DummyList").push(3),
+                        				b.engine.getGameAttribute("CauldronP2W").push(b.engine.getGameAttribute("DummyList"));
+                        		}
+                        		var Wt = b.engine.gameAttributes,
+                        			Zt = [];
+                        		null != e.DummyList2 ? Wt.setReserved("DummyList2", Zt) : (Wt.h.DummyList2 = Zt);
+                        		var Ht = b.engine.gameAttributes,
+                        			Jt = [];
+                        		null != e.DummyList ? Ht.setReserved("DummyList", Jt) : (Ht.h.DummyList = Jt),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        		var jt = b.engine.gameAttributes,
+                        			qt = [];
+                        		null != e.DummyList ? jt.setReserved("DummyList", qt) : (jt.h.DummyList = qt),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        		var Kt = b.engine.gameAttributes,
+                        			$t = [];
+                        		null != e.DummyList ? Kt.setReserved("DummyList", $t) : (Kt.h.DummyList = $t),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList").push("Blank"),
+                        			b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        		var en = b.engine.getGameAttribute("displayData"),
+                        			tn = b.engine.getGameAttribute("DummyList2");
+                        		null != e.PlayerEquipmentOrder ? en.setReserved("PlayerEquipmentOrder", tn) : (en.h.PlayerEquipmentOrder = tn);
+                        		var nn = b.engine.getGameAttribute("displayData");
+                        		null != e.P0 ? nn.setReserved("P0", 0) : (nn.h.P0 = 0);
+                        		var sn = b.engine.getGameAttribute("displayData");
+                        		null != e.P1 ? sn.setReserved("P1", 0) : (sn.h.P1 = 0);
+                        		var an = b.engine.getGameAttribute("displayData");
+                        		null != e.PlayerClass ? an.setReserved("PlayerClass", 0) : (an.h.PlayerClass = 0);
+                        		var rn = b.engine.getGameAttribute("displayData"),
+                        			An = b.engine.getGameAttribute("OptionsListAccount")[37];
+                        		null != e.GN ? rn.setReserved("GN", An) : (rn.h.GN = An);
+                        		var ln = b.engine.getGameAttribute("displayData"),
+                        			on = b.engine.getGameAttribute("OptionsListAccount")[38];
+                        		null != e.Gi ? ln.setReserved("Gi", on) : (ln.h.Gi = on);
+                        		var un = b.engine.gameAttributes,
+                        			gn = [];
+                        		null != e.DummyList ? un.setReserved("DummyList", gn) : (un.h.DummyList = gn),
+                        			b.engine.getGameAttribute("DummyList").push(0),
+                        			b.engine.getGameAttribute("DummyList").push(0),
+                        			b.engine.getGameAttribute("DummyList").push(0),
+                        			b.engine.getGameAttribute("DummyList").push(0),
+                        			b.engine.getGameAttribute("DummyList").push(0),
+                        			b.engine.getGameAttribute("DummyList").push(0);
+                        		var mn = b.engine.getGameAttribute("displayData"),
+                        			dn = b.engine.getGameAttribute("DummyList");
+                        		if ((null != e.SAWLFstats ? mn.setReserved("SAWLFstats", dn) : (mn.h.SAWLFstats = dn), 0 == b.engine.getGameAttribute("Tasks").length)) {
+                        			var cn = b.engine.gameAttributes,
+                        				pn = [];
+                        			null != e.DummyList2 ? cn.setReserved("DummyList2", pn) : (cn.h.DummyList2 = pn);
+                        			for (var hn = 0; 8 > hn;) {
+                        				hn++;
+                        				var bn = b.engine.gameAttributes,
+                        					fn = [];
+                        				null != e.DummyList ? bn.setReserved("DummyList", fn) : (bn.h.DummyList = fn),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        			}
+                        			b.engine.getGameAttribute("Tasks").push(b.engine.getGameAttribute("DummyList2"));
+                        			var yn = b.engine,
+                        				Rn = E.deepCopyList(b.engine.getGameAttribute("DummyList2")),
+                        				vn = yn.gameAttributes;
+                        			null != e.DummyList2 ? vn.setReserved("DummyList2", Rn) : (vn.h.DummyList2 = Rn), b.engine.getGameAttribute("Tasks").push(b.engine.getGameAttribute("DummyList2"));
+                        			var Fn = b.engine.gameAttributes,
+                        				Nn = [];
+                        			null != e.DummyList2 ? Fn.setReserved("DummyList2", Nn) : (Fn.h.DummyList2 = Nn);
+                        			for (var _n = 0; 8 > _n;) {
+                        				_n++;
+                        				var In = b.engine.gameAttributes,
+                        					Dn = [];
+                        				null != e.DummyList ? In.setReserved("DummyList", Dn) : (In.h.DummyList = Dn),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        			}
+                        			b.engine.getGameAttribute("Tasks").push(b.engine.getGameAttribute("DummyList2"));
+                        			var En = b.engine.gameAttributes,
+                        				Sn = [];
+                        			null != e.DummyList2 ? En.setReserved("DummyList2", Sn) : (En.h.DummyList2 = Sn);
+                        			for (var Gn = 0; 7 > Gn;) {
+                        				Gn++;
+                        				var Tn = b.engine.gameAttributes,
+                        					Un = [];
+                        				null != e.DummyList ? Tn.setReserved("DummyList", Un) : (Tn.h.DummyList = Un),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList").push(0),
+                        					b.engine.getGameAttribute("DummyList2").push(b.engine.getGameAttribute("DummyList"));
+                        			}
+                        			b.engine.getGameAttribute("Tasks").push(b.engine.getGameAttribute("DummyList2"));
+                        			var Mn = b.engine.gameAttributes,
+                        				Vn = [];
+                        			null != e.DummyList ? Mn.setReserved("DummyList", Vn) : (Mn.h.DummyList = Vn),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("Tasks").push(b.engine.getGameAttribute("DummyList"));
+                        			var Cn = b.engine.gameAttributes,
+                        				Bn = [];
+                        			null != e.DummyList ? Cn.setReserved("DummyList", Bn) : (Cn.h.DummyList = Bn),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("DummyList").push(0),
+                        				b.engine.getGameAttribute("Tasks").push(b.engine.getGameAttribute("DummyList"));
+                        		}
+                        		for (var Pn = 0, On = b.engine.getGameAttribute("CustomLists"), wn = (null != e.TaskUnlocks ? On.getReserved("TaskUnlocks") : On.h.TaskUnlocks).length; Pn < wn;)
+                        			for (var kn = Pn++;;) {
+                        				var xn = b.engine.getGameAttribute("CustomLists");
+                        				if (!((null != e.TaskUnlocks ? xn.getReserved("TaskUnlocks") : xn.h.TaskUnlocks)[kn].length > b.engine.getGameAttribute("Tasks")[3][kn].length)) break;
+                        				b.engine.getGameAttribute("Tasks")[3][kn].push(0);
+                        			}
+                        		U._customBlock_initialize2();
+                        	}

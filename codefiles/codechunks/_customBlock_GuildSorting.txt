@@ -1,0 +1,150 @@
+                        (U._customBlock_GuildSorting = function(t) {
+                        		if (0 == t) {
+                        			var s = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList2")[6],
+                        				a = parseNum(s),
+                        				r = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[55],
+                        				A = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList"),
+                        				o = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList").length,
+                        				i = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyRepeatIndex2"),
+                        				u = A[Math.round(o - (parseNum(i) + 1))],
+                        				m = r[0 | parseNum(u)][6];
+                        			return a < parseNum(m) ? 1 : 0;
+                        		}
+                        		if (1 == t) {
+                        			var c = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList2")[6],
+                        				p = parseNum(c),
+                        				h = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[55],
+                        				f = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList"),
+                        				y = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList").length,
+                        				R = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyRepeatIndex2"),
+                        				v = f[Math.round(y - (parseNum(R) + 1))],
+                        				F = h[0 | parseNum(v)][6];
+                        			return p >= parseNum(F) ? 1 : 0;
+                        		}
+                        		if (2 == t || 3 == t) {
+                        			var N = b.engine.getGameAttribute("DNSM"),
+                        				_ = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList2")[0];
+                        			null != e.SortingG1 ? N.setReserved("SortingG1", _) : (N.h.SortingG1 = _);
+                        			var I = b.engine.getGameAttribute("DNSM"),
+                        				D = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[55],
+                        				E = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList"),
+                        				S = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList").length,
+                        				G = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyRepeatIndex2"),
+                        				T = E[Math.round(S - (parseNum(G) + 1))],
+                        				U = D[0 | parseNum(T)][0];
+                        			null != e.SortingG2 ? I.setReserved("SortingG2", U) : (I.h.SortingG2 = U);
+                        			var M = b.engine.getGameAttribute("Number2Letter"),
+                        				V = b.engine.getGameAttribute("DNSM");
+                        			if (Sb.contains(M, ("" + g.string(null != e.SortingG1 ? V.getReserved("SortingG1") : V.h.SortingG1)).toLowerCase().charAt(0))) {
+                        				var C = b.engine.getGameAttribute("DNSM"),
+                        					B = b.engine.getGameAttribute("Number2Letter"),
+                        					P = b.engine.getGameAttribute("DNSM"),
+                        					O = B.indexOf(("" + g.string(null != e.SortingG1 ? P.getReserved("SortingG1") : P.h.SortingG1)).toLowerCase().charAt(0));
+                        				null != e.SortingG1 ? C.setReserved("SortingG1", O) : (C.h.SortingG1 = O);
+                        			} else {
+                        				var w = b.engine.getGameAttribute("DNSM"),
+                        					x = b.engine.getGameAttribute("CustomLists"),
+                        					Q = null != e.Num ? x.getReserved("Num") : x.h.Num,
+                        					X = b.engine.getGameAttribute("DNSM"),
+                        					L = Q.indexOf(("" + g.string(null != e.SortingG1 ? X.getReserved("SortingG1") : X.h.SortingG1)).charAt(0));
+                        				null != e.SortingG1 ? w.setReserved("SortingG1", L) : (w.h.SortingG1 = L);
+                        			}
+                        			var z = b.engine.getGameAttribute("Number2Letter"),
+                        				Y = b.engine.getGameAttribute("DNSM");
+                        			if (Sb.contains(z, ("" + g.string(null != e.SortingG2 ? Y.getReserved("SortingG2") : Y.h.SortingG2)).toLowerCase().charAt(0))) {
+                        				var W = b.engine.getGameAttribute("DNSM"),
+                        					Z = b.engine.getGameAttribute("Number2Letter"),
+                        					H = b.engine.getGameAttribute("DNSM"),
+                        					J = Z.indexOf(("" + g.string(null != e.SortingG2 ? H.getReserved("SortingG2") : H.h.SortingG2)).toLowerCase().charAt(0));
+                        				null != e.SortingG2 ? W.setReserved("SortingG2", J) : (W.h.SortingG2 = J);
+                        			} else {
+                        				var j = b.engine.getGameAttribute("DNSM"),
+                        					q = b.engine.getGameAttribute("CustomLists"),
+                        					K = null != e.Num ? q.getReserved("Num") : q.h.Num,
+                        					$ = b.engine.getGameAttribute("DNSM"),
+                        					ee = K.indexOf(("" + g.string(null != e.SortingG2 ? $.getReserved("SortingG2") : $.h.SortingG2)).charAt(0));
+                        				null != e.SortingG2 ? j.setReserved("SortingG2", ee) : (j.h.SortingG2 = ee);
+                        			}
+                        			if (2 == t) {
+                        				var te = b.engine.getGameAttribute("DNSM"),
+                        					ne = null != e.SortingG1 ? te.getReserved("SortingG1") : te.h.SortingG1,
+                        					se = parseNum(ne),
+                        					ae = b.engine.getGameAttribute("DNSM"),
+                        					re = null != e.SortingG2 ? ae.getReserved("SortingG2") : ae.h.SortingG2;
+                        				return se < parseNum(re) ? 1 : 0;
+                        			}
+                        			var Ae = b.engine.getGameAttribute("DNSM"),
+                        				le = null != e.SortingG1 ? Ae.getReserved("SortingG1") : Ae.h.SortingG1,
+                        				oe = parseNum(le),
+                        				ie = b.engine.getGameAttribute("DNSM"),
+                        				ue = null != e.SortingG2 ? ie.getReserved("SortingG2") : ie.h.SortingG2;
+                        			return oe >= parseNum(ue) ? 1 : 0;
+                        		}
+                        		if (4 == t) {
+                        			var ge = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList2")[3],
+                        				me = parseNum(ge),
+                        				de = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[55],
+                        				ce = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList"),
+                        				pe = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList").length,
+                        				he = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyRepeatIndex2"),
+                        				be = ce[Math.round(pe - (parseNum(he) + 1))],
+                        				fe = de[0 | parseNum(be)][3];
+                        			return me >= parseNum(fe) ? 1 : 0;
+                        		}
+                        		if (5 == t) {
+                        			var ye = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList2")[3],
+                        				Re = parseNum(ye),
+                        				ve = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[55],
+                        				Fe = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList"),
+                        				Ne = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList").length,
+                        				_e = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyRepeatIndex2"),
+                        				Ie = Fe[Math.round(Ne - (parseNum(_e) + 1))],
+                        				De = ve[0 | parseNum(Ie)][3];
+                        			return Re < parseNum(De) ? 1 : 0;
+                        		}
+                        		if (6 == t) {
+                        			var Ee = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList2")[4],
+                        				Se = parseNum(Ee),
+                        				Ge = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[55],
+                        				Te = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList"),
+                        				Ue = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList").length,
+                        				Me = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyRepeatIndex2"),
+                        				Ve = Te[Math.round(Ue - (parseNum(Me) + 1))],
+                        				Ce = Ge[0 | parseNum(Ve)][4];
+                        			return Se >= parseNum(Ce) ? 1 : 0;
+                        		}
+                        		if (7 == t) {
+                        			var Be = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList2")[4],
+                        				Pe = parseNum(Be),
+                        				Oe = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[55],
+                        				we = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList"),
+                        				ke = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList").length,
+                        				xe = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyRepeatIndex2"),
+                        				Qe = we[Math.round(ke - (parseNum(xe) + 1))],
+                        				Xe = Oe[0 | parseNum(Qe)][4];
+                        			return Pe < parseNum(Xe) ? 1 : 0;
+                        		}
+                        		if (8 == t) {
+                        			var Le = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList2")[5],
+                        				ze = parseNum(Le),
+                        				Ye = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[55],
+                        				We = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList"),
+                        				Ze = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList").length,
+                        				He = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyRepeatIndex2"),
+                        				Je = We[Math.round(Ze - (parseNum(He) + 1))],
+                        				je = Ye[0 | parseNum(Je)][5];
+                        			return ze >= parseNum(je) ? 1 : 0;
+                        		}
+                        		if (9 == t) {
+                        			var qe = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList2")[5],
+                        				Ke = parseNum(qe),
+                        				$e = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_GenINFO")[55],
+                        				et = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList"),
+                        				tt = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyList").length,
+                        				nt = b.engine.getGameAttribute("PixelHelperActor")[6].getValue("ActorEvents_312", "_DummyRepeatIndex2"),
+                        				st = et[Math.round(tt - (parseNum(nt) + 1))],
+                        				at = $e[0 | parseNum(st)][5];
+                        			return Ke < parseNum(at) ? 1 : 0;
+                        		}
+                        		return 0;
+                        	}

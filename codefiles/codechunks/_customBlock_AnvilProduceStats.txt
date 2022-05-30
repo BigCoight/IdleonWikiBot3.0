@@ -1,0 +1,264 @@
+                        (A._customBlock_AnvilProduceStats = function(s) {
+                        		if ("ProductionSpeed" == s) return A._customBlock_AnvilProduceStats("ProdSpdBonus") * (1 + H._customBlock_SkillStats("TownProdSpeedPCT") / 100);
+                        		if ("ProdSpdBonus" == s) {
+                        			var a = t._customBlock_StampBonusOfTypeX("AnvilPAspd"),
+                        				r = b.engine.getGameAttribute("AnvilPAstats")[4],
+                        				o = parseNum(r),
+                        				i = b.engine.getGameAttribute("DNSM"),
+                        				u = null != e.BoxRewards ? i.getReserved("BoxRewards") : i.h.BoxRewards,
+                        				m = null != e.ProdSpd ? u.getReserved("ProdSpd") : u.h.ProdSpd,
+                        				c = 1 + (parseNum(m) + H._customBlock_ArbitraryCode("StatueBonusGiven11")) / 100,
+                        				p = b.engine.getGameAttribute("DNSM"),
+                        				h = null != e.AlchBubbles ? p.getReserved("AlchBubbles") : p.h.AlchBubbles,
+                        				f = null != e.AnvilACTIVE ? h.getReserved("AnvilACTIVE") : h.h.AnvilACTIVE;
+                        			return (
+                        				(1 + (a + 2 * o) / 100) * c * (1 + parseNum(f) / 100) * A._customBlock_AnvilProduceStats("ProdSpdBonusFromAGI"));
+                        		}
+                        		if ("ProdSpdBonusFromAGI" == s) {
+                        			if (1e3 > H._customBlock_TotalStats("AGI")) {
+                        				var y = b.engine.getGameAttribute("DNSM"),
+                        					R = (Math.pow(H._customBlock_TotalStats("AGI") + 1, 0.37) - 1) / 40;
+                        				null != e.ProdAGIspd ? y.setReserved("ProdAGIspd", R) : (y.h.ProdAGIspd = R);
+                        			} else {
+                        				var v = b.engine.getGameAttribute("DNSM"),
+                        					F = ((H._customBlock_TotalStats("AGI") - 1e3) / (H._customBlock_TotalStats("AGI") + 2500)) * 0.5 + 0.297;
+                        				null != e.ProdAGIspd ? v.setReserved("ProdAGIspd", F) : (v.h.ProdAGIspd = F);
+                        			}
+                        			var N = b.engine.getGameAttribute("DNSM"),
+                        				_ = b.engine.getGameAttribute("DNSM"),
+                        				I = null != e.ProdAGIspd ? _.getReserved("ProdAGIspd") : _.h.ProdAGIspd,
+                        				D = 2 * parseNum(I);
+                        			null != e.ProdAGIspd ? N.setReserved("ProdAGIspd", D) : (N.h.ProdAGIspd = D);
+                        			var E = b.engine.getGameAttribute("DNSM"),
+                        				S = null != e.ProdAGIspd ? E.getReserved("ProdAGIspd") : E.h.ProdAGIspd;
+                        			return (1 + parseNum(S));
+                        		}
+                        		if ("ProdExpBonus" == s) {
+                        			var G = b.engine.getGameAttribute("DNSM"),
+                        				T = b.engine.getGameAttribute("AnvilPAstats")[3],
+                        				M = (1 + (3 * parseNum(T)) / 100) * H._customBlock_SkillStats("SmithingEXPmulti");
+                        			null != e.AnvilPAxpDN ? G.setReserved("AnvilPAxpDN", M) : (G.h.AnvilPAxpDN = M);
+                        			var V = b.engine.getGameAttribute("DNSM"),
+                        				C = null != e.AnvilPAxpDN ? V.getReserved("AnvilPAxpDN") : V.h.AnvilPAxpDN;
+                        			if (20 > parseNum(C)) {
+                        				var B = b.engine.getGameAttribute("DNSM");
+                        				return null != e.AnvilPAxpDN ? B.getReserved("AnvilPAxpDN") : B.h.AnvilPAxpDN;
+                        			}
+                        			var P = b.engine.getGameAttribute("DNSM"),
+                        				O = null != e.AnvilPAxpDN ? P.getReserved("AnvilPAxpDN") : P.h.AnvilPAxpDN,
+                        				w = parseNum(O),
+                        				x = b.engine.getGameAttribute("DNSM"),
+                        				Q = null != e.AnvilPAxpDN ? x.getReserved("AnvilPAxpDN") : x.h.AnvilPAxpDN;
+                        			return Math.min(20 + ((w - 20) / (parseNum(Q) - 20 + 70)) * 50, 75);
+                        		}
+                        		if ("Cap" == s) {
+                        			var X = H._customBlock_MaxCapacity("bCraft"),
+                        				L = b.engine.getGameAttribute("AnvilPAstats")[5];
+                        			return Math.round(X * (2 + 0.1 * parseNum(L)));
+                        		}
+                        		if ("Costs1" == s) {
+                        			var z = b.engine.getGameAttribute("AnvilPAstats")[1],
+                        				Y = Math.pow(parseNum(z), 3) + 50,
+                        				W = b.engine.getGameAttribute("AnvilPAstats")[1],
+                        				Z = parseNum(W),
+                        				J = b.engine.getGameAttribute("DNSM"),
+                        				j = null != e.AlchBubbles ? J.getReserved("AlchBubbles") : J.h.AlchBubbles,
+                        				q = null != e.AnvilProdCost ? j.getReserved("AnvilProdCost") : j.h.AnvilProdCost;
+                        			return Math.round(Y * (1 + Z / 100) * Math.max(0.1, 1 - parseNum(q) / 100));
+                        		}
+                        		if ("Costs2" == s) {
+                        			var K = b.engine.getGameAttribute("AnvilPAstats")[2],
+                        				$ = Math.pow(parseNum(K) + 1, 1.5),
+                        				ee = b.engine.getGameAttribute("AnvilPAstats")[2],
+                        				te = parseNum(ee),
+                        				ne = b.engine.getGameAttribute("DNSM"),
+                        				se = null != e.AlchBubbles ? ne.getReserved("AlchBubbles") : ne.h.AlchBubbles,
+                        				ae = null != e.AnvilProdCost ? se.getReserved("AnvilProdCost") : se.h.AnvilProdCost;
+                        			return Math.round(
+                        				($ + te) * Math.max(0.1, 1 - parseNum(ae) / 100));
+                        		}
+                        		if ("LvUps" == s) return Math.round(1);
+                        		if ("QuickDespositALL" == s) {
+                        			var re = b.engine.getGameAttribute("DNSM");
+                        			null != e.AnvilPAqd ? re.setReserved("AnvilPAqd", 0) : (re.h.AnvilPAqd = 0);
+                        			for (var Ae = 0, le = b.engine.getGameAttribute("AnvilPA").length; Ae < le;) {
+                        				var oe = Ae++,
+                        					ie = b.engine.getGameAttribute("DNSM");
+                        				null != e.AnvilPAqd2 ? ie.setReserved("AnvilPAqd2", -1) : (ie.h.AnvilPAqd2 = -1);
+                        				var ue = b.engine.getGameAttribute("DNSM");
+                        				null != e.AnvilPAqd3 ? ue.setReserved("AnvilPAqd3", oe) : (ue.h.AnvilPAqd3 = oe);
+                        				var ge = b.engine.getGameAttribute("AnvilPA")[oe][0];
+                        				if (0 < parseNum(ge)) {
+                        					for (var me = 0, de = 0 | b.engine.getGameAttribute("ChestSlotsOwned"); me < de;) {
+                        						var ce = me++,
+                        							pe = b.engine.getGameAttribute("CustomLists"),
+                        							he = null != e.AnvilProductionInfo ? pe.getReserved("AnvilProductionInfo") : pe.h.AnvilProductionInfo,
+                        							be = b.engine.getGameAttribute("DNSM"),
+                        							fe = null != e.AnvilPAqd3 ? be.getReserved("AnvilPAqd3") : be.h.AnvilPAqd3;
+                        						if (he[0 | parseNum(fe)][0] == b.engine.getGameAttribute("ChestOrder")[ce]) {
+                        							var ye = b.engine.getGameAttribute("DNSM");
+                        							null != e.AnvilPAqd2 ? ye.setReserved("AnvilPAqd2", ce) : (ye.h.AnvilPAqd2 = ce);
+                        							break;
+                        						}
+                        						if (ce == Math.round(b.engine.getGameAttribute("ChestSlotsOwned") - 1)) var Re = b.engine.getGameAttribute("DNSM"),
+                        							ve = -1 == (null != e.AnvilPAqd2 ? Re.getReserved("AnvilPAqd2") : Re.h.AnvilPAqd2);
+                        						else ve = !1;
+                        						if (ve)
+                        							for (var Fe = 0, Ne = 0 | b.engine.getGameAttribute("ChestSlotsOwned"); Fe < Ne;) {
+                        								var _e = Fe++;
+                        								if ("Blank" == b.engine.getGameAttribute("ChestOrder")[_e]) {
+                        									var Ie = b.engine.getGameAttribute("DNSM");
+                        									null != e.AnvilPAqd2 ? Ie.setReserved("AnvilPAqd2", _e) : (Ie.h.AnvilPAqd2 = _e);
+                        									break;
+                        								}
+                        							}
+                        					}
+                        					var De = b.engine.getGameAttribute("DNSM");
+                        					if (-1 != (null != e.AnvilPAqd2 ? De.getReserved("AnvilPAqd2") : De.h.AnvilPAqd2)) {
+                        						var Ee = b.engine.getGameAttribute("ChestOrder"),
+                        							Se = b.engine.getGameAttribute("DNSM"),
+                        							Ge = null != e.AnvilPAqd2 ? Se.getReserved("AnvilPAqd2") : Se.h.AnvilPAqd2,
+                        							Te = parseNum(Ge),
+                        							Ue = b.engine.getGameAttribute("CustomLists");
+                        						Ee[0 | Te] = (null != e.AnvilProductionInfo ? Ue.getReserved("AnvilProductionInfo") : Ue.h.AnvilProductionInfo)[oe][0];
+                        						var Me = b.engine.getGameAttribute("ChestQuantity"),
+                        							Ve = b.engine.getGameAttribute("DNSM"),
+                        							Ce = null != e.AnvilPAqd2 ? Ve.getReserved("AnvilPAqd2") : Ve.h.AnvilPAqd2,
+                        							Be = parseNum(Ce),
+                        							Pe = b.engine.getGameAttribute("ChestQuantity"),
+                        							Oe = b.engine.getGameAttribute("DNSM"),
+                        							we = null != e.AnvilPAqd2 ? Oe.getReserved("AnvilPAqd2") : Oe.h.AnvilPAqd2,
+                        							ke = Pe[0 | parseNum(we)],
+                        							xe = parseNum(ke),
+                        							Qe = b.engine.getGameAttribute("AnvilPA")[oe][0];
+                        						Me[0 | Be] = xe + parseNum(Qe);
+                        						var Xe = b.engine.getGameAttribute("AnvilPA")[oe][0],
+                        							Le = parseNum(Xe) * A._customBlock_AnvilProduceStats("ProdExpBonus"),
+                        							ze = b.engine.getGameAttribute("CustomLists"),
+                        							Ye = (null != e.AnvilProductionInfo ? ze.getReserved("AnvilProductionInfo") : ze.h.AnvilProductionInfo)[oe][3];
+                        						U._customBlock_giveEXP(2, Math.round(Le * parseNum(Ye))),
+                        							(b.engine.getGameAttribute("AnvilPA")[oe][0] = 0),
+                        							(b.engine.getGameAttribute("AnvilPA")[oe][1] = 0);
+                        					}
+                        				}
+                        			}
+                        			var We = b.engine.getGameAttribute("DNSM"),
+                        				Ze = null != e.AnvilPAqd ? We.getReserved("AnvilPAqd") : We.h.AnvilPAqd;
+                        			return Math.round(parseNum(Ze));
+                        		}
+                        		if ("QuickDespositALLautoALL" == s) {
+                        			var He = b.engine.getGameAttribute("DNSM");
+                        			null != e.AnvilPAqd ? He.setReserved("AnvilPAqd", 0) : (He.h.AnvilPAqd = 0);
+                        			for (var Je = b.engine.getGameAttribute("PlayerDATABASE").keys(); Je.hasNext();)
+                        				for (var je = Je.next(),
+                        						qe = 0,
+                        						Ke = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						$e = "" + je,
+                        						et = null != e[$e] ? Ke.getReserved($e) : Ke.h[$e],
+                        						tt = (null != e.AnvilPA ? et.getReserved("AnvilPA") : et.h.AnvilPA).length; qe < tt;) {
+                        					var nt = qe++,
+                        						st = b.engine.getGameAttribute("DNSM");
+                        					null != e.AnvilPAqd2 ? st.setReserved("AnvilPAqd2", -1) : (st.h.AnvilPAqd2 = -1);
+                        					var at = b.engine.getGameAttribute("DNSM");
+                        					null != e.AnvilPAqd3 ? at.setReserved("AnvilPAqd3", nt) : (at.h.AnvilPAqd3 = nt);
+                        					var rt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        						At = "" + je,
+                        						lt = null != e[At] ? rt.getReserved(At) : rt.h[At],
+                        						ot = (null != e.AnvilPA ? lt.getReserved("AnvilPA") : lt.h.AnvilPA)[nt][0];
+                        					if (0 < parseNum(ot)) {
+                        						for (var it = 0, ut = 0 | b.engine.getGameAttribute("ChestSlotsOwned"); it < ut;) {
+                        							var gt = it++,
+                        								mt = b.engine.getGameAttribute("CustomLists"),
+                        								dt = null != e.AnvilProductionInfo ? mt.getReserved("AnvilProductionInfo") : mt.h.AnvilProductionInfo,
+                        								ct = b.engine.getGameAttribute("DNSM"),
+                        								pt = null != e.AnvilPAqd3 ? ct.getReserved("AnvilPAqd3") : ct.h.AnvilPAqd3;
+                        							if (dt[0 | parseNum(pt)][0] == b.engine.getGameAttribute("ChestOrder")[gt]) {
+                        								var ht = b.engine.getGameAttribute("DNSM");
+                        								null != e.AnvilPAqd2 ? ht.setReserved("AnvilPAqd2", gt) : (ht.h.AnvilPAqd2 = gt);
+                        								break;
+                        							}
+                        							if (gt == Math.round(b.engine.getGameAttribute("ChestSlotsOwned") - 1)) var bt = b.engine.getGameAttribute("DNSM"),
+                        								ft = -1 == (null != e.AnvilPAqd2 ? bt.getReserved("AnvilPAqd2") : bt.h.AnvilPAqd2);
+                        							else ft = !1;
+                        							if (ft)
+                        								for (var yt = 0, Rt = 0 | b.engine.getGameAttribute("ChestSlotsOwned"); yt < Rt;) {
+                        									var vt = yt++;
+                        									if ("Blank" == b.engine.getGameAttribute("ChestOrder")[vt]) {
+                        										var Ft = b.engine.getGameAttribute("DNSM");
+                        										null != e.AnvilPAqd2 ? Ft.setReserved("AnvilPAqd2", vt) : (Ft.h.AnvilPAqd2 = vt);
+                        										break;
+                        									}
+                        								}
+                        						}
+                        						var Nt = b.engine.getGameAttribute("DNSM");
+                        						if (-1 != (null != e.AnvilPAqd2 ? Nt.getReserved("AnvilPAqd2") : Nt.h.AnvilPAqd2)) {
+                        							var _t = b.engine.getGameAttribute("ChestOrder"),
+                        								It = b.engine.getGameAttribute("DNSM"),
+                        								Dt = null != e.AnvilPAqd2 ? It.getReserved("AnvilPAqd2") : It.h.AnvilPAqd2,
+                        								Et = parseNum(Dt),
+                        								St = b.engine.getGameAttribute("CustomLists");
+                        							_t[0 | Et] = (null != e.AnvilProductionInfo ? St.getReserved("AnvilProductionInfo") : St.h.AnvilProductionInfo)[nt][0];
+                        							var Gt = b.engine.getGameAttribute("ChestQuantity"),
+                        								Tt = b.engine.getGameAttribute("DNSM"),
+                        								Ut = null != e.AnvilPAqd2 ? Tt.getReserved("AnvilPAqd2") : Tt.h.AnvilPAqd2,
+                        								Mt = parseNum(Ut),
+                        								Vt = b.engine.getGameAttribute("ChestQuantity"),
+                        								Ct = b.engine.getGameAttribute("DNSM"),
+                        								Bt = null != e.AnvilPAqd2 ? Ct.getReserved("AnvilPAqd2") : Ct.h.AnvilPAqd2,
+                        								Pt = Vt[0 | parseNum(Bt)],
+                        								Ot = parseNum(Pt),
+                        								wt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        								kt = "" + je,
+                        								xt = null != e[kt] ? wt.getReserved(kt) : wt.h[kt],
+                        								Qt = (null != e.AnvilPA ? xt.getReserved("AnvilPA") : xt.h.AnvilPA)[nt][0];
+                        							if (
+                        								((Gt[0 | Mt] = Ot + parseNum(Qt)), je == b.engine.getGameAttribute("UserInfo")[0])) {
+                        								var Xt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									Lt = "" + je,
+                        									zt = null != e[Lt] ? Xt.getReserved(Lt) : Xt.h[Lt],
+                        									Yt = (null != e.AnvilPA ? zt.getReserved("AnvilPA") : zt.h.AnvilPA)[nt][0],
+                        									Wt = parseNum(Yt) * A._customBlock_AnvilProduceStats("ProdExpBonus"),
+                        									Zt = b.engine.getGameAttribute("CustomLists"),
+                        									Ht = (null != e.AnvilProductionInfo ? Zt.getReserved("AnvilProductionInfo") : Zt.h.AnvilProductionInfo)[nt][3];
+                        								U._customBlock_giveEXP(2, Math.round(Wt * parseNum(Ht)));
+                        							} else {
+                        								var Jt = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									jt = "" + je,
+                        									qt = null != e[jt] ? Jt.getReserved(jt) : Jt.h[jt],
+                        									Kt = null != e.Exp0 ? qt.getReserved("Exp0") : qt.h.Exp0,
+                        									$t = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									en = "" + je,
+                        									tn = null != e[en] ? $t.getReserved(en) : $t.h[en],
+                        									nn = (null != e.Exp0 ? tn.getReserved("Exp0") : tn.h.Exp0)[2],
+                        									sn = parseNum(nn),
+                        									an = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									rn = "" + je,
+                        									An = null != e[rn] ? an.getReserved(rn) : an.h[rn],
+                        									ln = (null != e.AnvilPA ? An.getReserved("AnvilPA") : An.h.AnvilPA)[nt][0],
+                        									on = parseNum(ln),
+                        									un = b.engine.getGameAttribute("PlayerDATABASE"),
+                        									gn = "" + je,
+                        									mn = null != e[gn] ? un.getReserved(gn) : un.h[gn],
+                        									dn = (null != e.AnvilPAstats ? mn.getReserved("AnvilPAstats") : mn.h.AnvilPAstats)[3],
+                        									cn = on * Math.min(25, 1 + (3 * parseNum(dn)) / 100),
+                        									pn = b.engine.getGameAttribute("CustomLists"),
+                        									hn = (null != e.AnvilProductionInfo ? pn.getReserved("AnvilProductionInfo") : pn.h.AnvilProductionInfo)[nt][3];
+                        								Kt[2] = sn + Math.round(cn * parseNum(hn));
+                        							}
+                        							var bn = b.engine.getGameAttribute("PlayerDATABASE"),
+                        								fn = "" + je,
+                        								yn = null != e[fn] ? bn.getReserved(fn) : bn.h[fn];
+                        							(null != e.AnvilPA ? yn.getReserved("AnvilPA") : yn.h.AnvilPA)[nt][0] = 0;
+                        							var Rn = b.engine.getGameAttribute("PlayerDATABASE"),
+                        								vn = "" + je,
+                        								Fn = null != e[vn] ? Rn.getReserved(vn) : Rn.h[vn];
+                        							(null != e.AnvilPA ? Fn.getReserved("AnvilPA") : Fn.h.AnvilPA)[nt][1] = 0;
+                        						}
+                        					}
+                        				}
+                        			var Nn = b.engine.getGameAttribute("DNSM"),
+                        				_n = null != e.AnvilPAqd ? Nn.getReserved("AnvilPAqd") : Nn.h.AnvilPAqd;
+                        			return Math.round(parseNum(_n));
+                        		}
+                        		return 1;
+                        	}

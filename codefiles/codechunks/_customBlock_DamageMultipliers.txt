@@ -1,0 +1,29 @@
+                        (t._customBlock_DamageMultipliers = function(t) {
+                        		var s = b.engine.getGameAttribute("DNSM"),
+                        			a = [];
+                        		if ((null != e.DmgMultiLst ? s.setReserved("DmgMultiLst", a) : (s.h.DmgMultiLst = a), -1 != t.indexOf("Boss"))) {
+                        			if (
+                        				((s = b.engine.getGameAttribute("DNSM")),
+                        					(a = H._customBlock_TotalStats("WIS")), null != e.BossDmgWIS ? s.setReserved("BossDmgWIS", a) : (s.h.BossDmgWIS = a),
+                        					(s = b.engine.getGameAttribute("DNSM")), 1e3 > (null == (s = null != e.BossDmgWIS ? s.getReserved("BossDmgWIS") : s.h.BossDmgWIS) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s)))))
+                        				(s = b.engine.getGameAttribute("DNSM")),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null != e.BossDmgWIS ? a.getReserved("BossDmgWIS") : a.h.BossDmgWIS),
+                        				(a = (Math.pow(parseNum(a) + 1, 0.37) - 1) / 40);
+                        			else {
+                        				(s = b.engine.getGameAttribute("DNSM")),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null == (a = null != e.BossDmgWIS ? a.getReserved("BossDmgWIS") : a.h.BossDmgWIS) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a)));
+                        				var r = b.engine.getGameAttribute("DNSM");
+                        				a = ((a - 1e3) / ((null == (r = null != e.BossDmgWIS ? r.getReserved("BossDmgWIS") : r.h.BossDmgWIS) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))) + 2500)) * 0.5 + 0.255;
+                        			}
+                        			null != e.BossDmgWIS ? s.setReserved("BossDmgWIS", a) : (s.h.BossDmgWIS = a),
+                        				(s = b.engine.getGameAttribute("DNSM")),
+                        				(s = null != e.DmgMultiLst ? s.getReserved("DmgMultiLst") : s.h.DmgMultiLst),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(a = null != e.BossDmgWIS ? a.getReserved("BossDmgWIS") : a.h.BossDmgWIS),
+                        				s.push(1 + (parseNum(a) / 1.2 + U._customBlock_EtcBonuses("5")) / 100);
+                        		}
+                        		return (-1 != t.indexOf("Monster") && ((t = b.engine.getGameAttribute("DNSM")), (null != e.DmgMultiLst ? t.getReserved("DmgMultiLst") : t.h.DmgMultiLst).push(1)),
+                        			(t = b.engine.getGameAttribute("DNSM")), null != e.DmgMultiLst ? t.getReserved("DmgMultiLst") : t.h.DmgMultiLst);
+                        	}

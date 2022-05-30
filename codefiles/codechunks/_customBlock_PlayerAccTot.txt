@@ -1,0 +1,29 @@
+                        (H._customBlock_PlayerAccTot = function() {
+                        		if (-1 != w._customBlock_Dungon()) return 999999;
+                        		var s = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			a = b.engine.getGameAttribute("CustomMaps");
+                        		a = null != e.ClassStatTypes ? a.getReserved("ClassStatTypes") : a.h.ClassStatTypes;
+                        		var r = "" + g.string(H._customBlock_ReturnClasses(b.engine.getGameAttribute("CharacterClass"))[0]);
+                        		(a = H._customBlock_TotalStats("" + g.string((null != e[r] ? a.getReserved(r) : a.h[r])[1]))),
+                        		null != e.PlayerACCDN ? s.setReserved("PlayerACCDN", a) : (s.h.PlayerACCDN = a),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = null == (a = null != e.PlayerACCDN ? a.getReserved("PlayerACCDN") : a.h.PlayerACCDN) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = b.engine.getGameAttribute("DNSM")),
+                        			(r = null != e.AlchBubbles ? r.getReserved("AlchBubbles") : r.h.AlchBubbles),
+                        			(r = null == (r = null != e.AccPct ? r.getReserved("AccPct") : r.h.AccPct) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r)));
+                        		var o = H._customBlock_GetBuffBonuses(288, 2),
+                        			i = U._customBlock_CardBonusREAL(17),
+                        			u = b.engine.getGameAttribute("DNSM");
+                        		return (
+                        			(u = null != e.StarSigns ? u.getReserved("StarSigns") : u.h.StarSigns),
+                        			(a *= (1 + r / 100) * (1 + (o + (i + ((null == (u = null != e.AccPct ? u.getReserved("AccPct") : u.h.AccPct) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))) + (H._customBlock_GetBuffBonuses(124, 1) + (H._customBlock_ArbitraryCode("StatueBonusGiven14") + (w._customBlock_ArcadeBonus(2) + (w._customBlock_FlurboShop(5) + A._customBlock_GetBribeBonus("21")))))))) / 100)), null != e.PlayerACCDN ? s.setReserved("PlayerACCDN", a) : (s.h.PlayerACCDN = a), 1.99 < H._customBlock_PlayerSpeedBonus() && ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				(a = (null == (a = null != e.PlayerACCDN ? a.getReserved("PlayerACCDN") : a.h.PlayerACCDN) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) * (1 + t._customBlock_GetTalentNumber(2, 641) / 100)), null != e.PlayerACCDN ? s.setReserved("PlayerACCDN", a) : (s.h.PlayerACCDN = a)),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(s = null != e.PlayerACCDN ? s.getReserved("PlayerACCDN") : s.h.PlayerACCDN),
+                        			(s = Math.pow(parseNum(s) / 4, 1.4)),
+                        			(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(s += (null == (a = null != e.PlayerACCDN ? a.getReserved("PlayerACCDN") : a.h.PlayerACCDN) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + H._customBlock_TotalStats("Accuracy")),
+                        			(a = b.engine.getGameAttribute("DummyNumbersStatManager")), s * (1 + ((null == (a = null != e.PlayerACCDN ? a.getReserved("PlayerACCDN") : a.h.PlayerACCDN) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + 2 * w._customBlock_CardSetBonuses(0, "4")) / 200) * Math.max(0.1, 1 + (w._customBlock_prayersReal(6, 0) - w._customBlock_prayersReal(15, 1) - w._customBlock_prayersReal(16, 1)) / 100) * (1 + (A._customBlock_chipBonuses("acc") + A._customBlock_MealBonus("TotAcc")) / 100));
+                        	}

@@ -1,0 +1,9 @@
+                        (w._customBlock_SaltLick = function(t) {
+                        		var s = b.engine.getGameAttribute("SaltLick")[0 | t];
+                        		if (0 < parseNum(s)) {
+                        			s = null == (s = b.engine.getGameAttribute("SaltLick")[0 | t]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s));
+                        			var a = b.engine.getGameAttribute("CustomLists");
+                        			return (s * (null == (t = (null != e.SaltLicks ? a.getReserved("SaltLicks") : a.h.SaltLicks)[0 | t][3]) ? 0 : "number" == typeof t ? d.__cast(t, k) : "number" == typeof t && (0 | t) === t ? d.__cast(t, l) : "boolean" == typeof t ? d.__cast(t, n) ? 1 : 0 : "string" == typeof t ? parseFloat(t) : parseFloat(g.string(t))));
+                        		}
+                        		return 0;
+                        	}

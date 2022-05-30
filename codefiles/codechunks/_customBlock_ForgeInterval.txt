@@ -1,0 +1,10 @@
+                        (H._customBlock_ForgeInterval = function(t) {
+                        		if ("Blank" != "" + g.string(b.engine.getGameAttribute("ForgeItemOrder")[(3 * t) | 0])) {
+                        			var s = b.engine.getGameAttribute("ItemDefinitionsGET");
+                        			return (
+                        				(t = "" + g.string(b.engine.getGameAttribute("ForgeItemOrder")[(3 * t) | 0])),
+                        				(s = null != e[t] ? s.getReserved(t) : s.h[t]),
+                        				(null == (s = null != e.Cooldown ? s.getReserved("Cooldown") : s.h.Cooldown) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) / H._customBlock_FoodBonuses("OreSmithTime"));
+                        		}
+                        		return 9999999;
+                        	}

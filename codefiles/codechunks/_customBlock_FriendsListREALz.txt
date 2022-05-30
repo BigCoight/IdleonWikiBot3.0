@@ -1,0 +1,40 @@
+                        (U._customBlock_FriendsListREALz = function(t, n, s) {
+                        		var a = b.engine.getGameAttribute("Chat");
+                        		if (null != e[t] ? a.existsReserved(t) : a.h.hasOwnProperty(t)) {
+                        			a = b.engine.getGameAttribute("DNSM");
+                        			var r = [];
+                        			null != e.FrendChatyDL1 ? a.setReserved("FrendChatyDL1", r) : (a.h.FrendChatyDL1 = r),
+                        				(a = b.engine.getGameAttribute("DNSM")),
+                        				(null != e.FrendChatyDL1 ? a.getReserved("FrendChatyDL1") : a.h.FrendChatyDL1).push(n),
+                        				(n = b.engine.getGameAttribute("DNSM")),
+                        				(null != e.FrendChatyDL1 ? n.getReserved("FrendChatyDL1") : n.h.FrendChatyDL1).push(s),
+                        				(s = b.engine.getGameAttribute("Chat")),
+                        				(t = null != e[t] ? s.getReserved(t) : s.h[t]),
+                        				(s = b.engine.getGameAttribute("DNSM")),
+                        				t.push(null != e.FrendChatyDL1 ? s.getReserved("FrendChatyDL1") : s.h.FrendChatyDL1);
+                        		} else(a = b.engine.getGameAttribute("DNSM")),
+                        			(r = []),
+                        			null != e.FrendChatyDL2 ? a.setReserved("FrendChatyDL2", r) : (a.h.FrendChatyDL2 = r),
+                        			(a = b.engine.getGameAttribute("DNSM")),
+                        			(r = []),
+                        			null != e.FrendChatyDL1 ? a.setReserved("FrendChatyDL1", r) : (a.h.FrendChatyDL1 = r),
+                        			(a = b.engine.getGameAttribute("DNSM")),
+                        			(null != e.FrendChatyDL1 ? a.getReserved("FrendChatyDL1") : a.h.FrendChatyDL1).push(n),
+                        			(n = b.engine.getGameAttribute("DNSM")),
+                        			(null != e.FrendChatyDL1 ? n.getReserved("FrendChatyDL1") : n.h.FrendChatyDL1).push(s),
+                        			(s = b.engine.getGameAttribute("DNSM")),
+                        			(s = null != e.FrendChatyDL2 ? s.getReserved("FrendChatyDL2") : s.h.FrendChatyDL2),
+                        			(n = b.engine.getGameAttribute("DNSM")),
+                        			s.push(null != e.FrendChatyDL1 ? n.getReserved("FrendChatyDL1") : n.h.FrendChatyDL1),
+                        			(s = b.engine.getGameAttribute("Chat")),
+                        			(n = b.engine.getGameAttribute("DNSM")),
+                        			(n = null != e.FrendChatyDL2 ? n.getReserved("FrendChatyDL2") : n.h.FrendChatyDL2),
+                        			null != e[t] ? s.setReserved(t, n) : (s.h[t] = n),
+                        			(s = b.engine.getGameAttribute("Chat")),
+                        			(null != e["Order*"] ? s.getReserved("Order*") : s.h["Order*"]).push(t),
+                        			(s = b.engine.getGameAttribute("Chat")),
+                        			(null != e["NumMsgRead*"] ? s.getReserved("NumMsgRead*") : s.h["NumMsgRead*"]).push(0),
+                        			(s = b.engine.getGameAttribute("DNSM")),
+                        			(s = null != e.ChatYvals ? s.getReserved("ChatYvals") : s.h.ChatYvals),
+                        			null != e[t] ? s.setReserved(t, 0) : (s.h[t] = 0);
+                        	}

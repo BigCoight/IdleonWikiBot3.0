@@ -1,0 +1,3 @@
+                        (U._customBlock_timeDisp2 = function(e) {
+                        		return 0 <= e ? Math.round(Math.floor(e / 86400)) + "days_" + Math.round(Math.floor(e / 3600) - 24 * Math.floor(e / 86400)) + "hr_" + Math.round(Math.floor(e / 60) - 60 * Math.floor(e / 3600)) + "min_" : "0days_0hr_0min";
+                        	}

@@ -1,0 +1,53 @@
+                        (H._customBlock_PlayerHPmax = function() {
+                        		if (-1 != w._customBlock_Dungon()) return w._customBlock_DungeonStat("HP");
+                        		var s = b.engine.getGameAttribute("DummyNumbersStatManager"),
+                        			a = [];
+                        		null != e.PlayerHPmaxLIST ? s.setReserved("PlayerHPmaxLIST", a) : (s.h.PlayerHPmaxLIST = a),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			null != e.PlayerHPmaxDN ? s.setReserved("PlayerHPmaxDN", 0) : (s.h.PlayerHPmaxDN = 0),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = (null == (a = null != e.PlayerHPmaxDN ? a.getReserved("PlayerHPmaxDN") : a.h.PlayerHPmaxDN) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))) + (A._customBlock_TotalFoodBonuses("HpBaseBoosts") + H._customBlock_ArbitraryCode("StatueBonusGiven4"))),
+                        			null != e.PlayerHPmaxDN ? s.setReserved("PlayerHPmaxDN", a) : (s.h.PlayerHPmaxDN = a),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(s = null != e.PlayerHPmaxLIST ? s.getReserved("PlayerHPmaxLIST") : s.h.PlayerHPmaxLIST),
+                        			(a = 15 + U._customBlock_CardBonusREAL(1));
+                        		var r = b.engine.getGameAttribute("DNSM");
+                        		(r = null != e.AlchBubbles ? r.getReserved("AlchBubbles") : r.h.AlchBubbles),
+                        		(r = null == (r = null != e.BaseHP ? r.getReserved("BaseHP") : r.h.BaseHP) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r)));
+                        		var o = t._customBlock_StampBonusOfTypeX("BaseHP"),
+                        			i = b.engine.getGameAttribute("DummyNumbersStatManager");
+                        		i = null == (i = null != e.PlayerHPmaxDN ? i.getReserved("PlayerHPmaxDN") : i.h.PlayerHPmaxDN) ? 0 : "number" == typeof i ? d.__cast(i, k) : "number" == typeof i && (0 | i) === i ? d.__cast(i, l) : "boolean" == typeof i ? d.__cast(i, n) ? 1 : 0 : "string" == typeof i ? parseFloat(i) : parseFloat(g.string(i));
+                        		var u = b.engine.getGameAttribute("DNSM");
+                        		return (
+                        			(u = null != e.BoxRewards ? u.getReserved("BoxRewards") : u.h.BoxRewards),
+                        			(u = null != e.baseHP ? u.getReserved("baseHP") : u.h.baseHP), s.push(a + r + (o + i) + (parseNum(u) + (t._customBlock_GetTalentNumber(1, 0) + t._customBlock_GetTalentNumber(1, 642)) + Math.pow(H._customBlock_TotalStats("STR") * (1 + t._customBlock_GetTalentNumber(1, 95) / 100), 1.05))),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")), null != e.PlayerHPmaxDN ? s.setReserved("PlayerHPmaxDN", 0) : (s.h.PlayerHPmaxDN = 0),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(s = null != e.PlayerHPmaxLIST ? s.getReserved("PlayerHPmaxLIST") : s.h.PlayerHPmaxLIST),
+                        			(a = (1 + (t._customBlock_GetTalentNumber(1, 92) + (t._customBlock_GetTalentNumber(1, 272) + U._customBlock_EtcBonuses("15"))) / 100) * (1 + w._customBlock_Shrine(1) / 100)),
+                        			(r = A._customBlock_GoldFoodBonuses("MaxHPpct")),
+                        			(o = b.engine.getGameAttribute("DNSM")),
+                        			(o = null != e.BoxRewards ? o.getReserved("BoxRewards") : o.h.BoxRewards),
+                        			(o = null == (o = null != e.pctHP ? o.getReserved("pctHP") : o.h.pctHP) ? 0 : "number" == typeof o ? d.__cast(o, k) : "number" == typeof o && (0 | o) === o ? d.__cast(o, l) : "boolean" == typeof o ? d.__cast(o, n) ? 1 : 0 : "string" == typeof o ? parseFloat(o) : parseFloat(g.string(o))),
+                        			(i = 1 - H._customBlock_GetBuffBonuses(108, 1) / 100),
+                        			(u = b.engine.getGameAttribute("DNSM")),
+                        			(u = null != e.FamBonusQTYs ? u.getReserved("FamBonusQTYs") : u.h.FamBonusQTYs),
+                        			(i *= 1 + ((null == (u = null != e[18] ? u.getReserved("18") : u.h[18]) ? 0 : "number" == typeof u ? d.__cast(u, k) : "number" == typeof u && (0 | u) === u ? d.__cast(u, l) : "boolean" == typeof u ? d.__cast(u, n) ? 1 : 0 : "string" == typeof u ? parseFloat(u) : parseFloat(g.string(u))) + U._customBlock_CardBonusREAL(8)) / 100),
+                        			(u = b.engine.getGameAttribute("DNSM")),
+                        			(u = null != e.StarSigns ? u.getReserved("StarSigns") : u.h.StarSigns),
+                        			(u = null != e.TotalHP ? u.getReserved("TotalHP") : u.h.TotalHP), s.push(a * r * (1 + o / 100) * i * (1 + parseNum(u) / 100)),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(null != e.PlayerHPmaxLIST ? s.getReserved("PlayerHPmaxLIST") : s.h.PlayerHPmaxLIST).push(1), 19 < b.engine.getGameAttribute("CurrentMap") && 24 > b.engine.getGameAttribute("CurrentMap") && ((s = b.engine.getGameAttribute("DummyNumbersStatManager")), ((null != e.PlayerHPmaxLIST ? s.getReserved("PlayerHPmaxLIST") : s.h.PlayerHPmaxLIST)[2] = 164)),
+                        			(s = b.engine.getGameAttribute("QuestComplete")), 0 == (null != e.Cactolyte3 ? s.getReserved("Cactolyte3") : s.h.Cactolyte3) && 2 == b.engine.getGameAttribute("CharacterClass") && ((s = b.engine.getGameAttribute("PixelHelperActor")[0].getValue("ActorEvents_29", "_ItemsOwnedMap")), 1 <= (null == (s = null != e.Quest47 ? s.getReserved("Quest47") : s.h.Quest47) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))) && ((s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				((null != e.PlayerHPmaxLIST ? s.getReserved("PlayerHPmaxLIST") : s.h.PlayerHPmaxLIST)[0] = 1),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				((null != e.PlayerHPmaxLIST ? s.getReserved("PlayerHPmaxLIST") : s.h.PlayerHPmaxLIST)[1] = 1),
+                        				(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        				((null != e.PlayerHPmaxLIST ? s.getReserved("PlayerHPmaxLIST") : s.h.PlayerHPmaxLIST)[2] = 1))),
+                        			(s = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(s = null == (s = (null != e.PlayerHPmaxLIST ? s.getReserved("PlayerHPmaxLIST") : s.h.PlayerHPmaxLIST)[0]) ? 0 : "number" == typeof s ? d.__cast(s, k) : "number" == typeof s && (0 | s) === s ? d.__cast(s, l) : "boolean" == typeof s ? d.__cast(s, n) ? 1 : 0 : "string" == typeof s ? parseFloat(s) : parseFloat(g.string(s))),
+                        			(a = b.engine.getGameAttribute("DummyNumbersStatManager")),
+                        			(a = null == (a = (null != e.PlayerHPmaxLIST ? a.getReserved("PlayerHPmaxLIST") : a.h.PlayerHPmaxLIST)[1]) ? 0 : "number" == typeof a ? d.__cast(a, k) : "number" == typeof a && (0 | a) === a ? d.__cast(a, l) : "boolean" == typeof a ? d.__cast(a, n) ? 1 : 0 : "string" == typeof a ? parseFloat(a) : parseFloat(g.string(a))),
+                        			(r = b.engine.getGameAttribute("DummyNumbersStatManager")), s * a * (null == (r = (null != e.PlayerHPmaxLIST ? r.getReserved("PlayerHPmaxLIST") : r.h.PlayerHPmaxLIST)[2]) ? 0 : "number" == typeof r ? d.__cast(r, k) : "number" == typeof r && (0 | r) === r ? d.__cast(r, l) : "boolean" == typeof r ? d.__cast(r, n) ? 1 : 0 : "string" == typeof r ? parseFloat(r) : parseFloat(g.string(r))));
+                        	}

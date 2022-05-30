@@ -1,0 +1,61 @@
+                        (w._customBlock_RNGitemdrop = function(t, n) {
+                        		n = b.engine.gameAttributes;
+                        		var s = [];
+                        		if ((null != e.DummyList2 ? n.setReserved("DummyList2", s) : (n.h.DummyList2 = s), "NPCshop" == t))
+                        			for (t = 0, n = Math.round(2 + h.randomFloatBetween(0.335, 0.6) * w._customBlock_DungeonCalc("TraitBonus", 19)); t < n;) {
+                        				t++, (s = b.engine.getGameAttribute("DNSM"));
+                        				var a = w._customBlock_DungeonCalc("RNGdropID", 4);
+                        				for (null != e.RNGdropSourceDN1 ? s.setReserved("RNGdropSourceDN1", a) : (s.h.RNGdropSourceDN1 = a);
+                        					(s = b.engine.getGameAttribute("DummyList2")), (a = b.engine.getGameAttribute("DNSM")), Sb.contains(s, null != e.RNGdropSourceDN1 ? a.getReserved("RNGdropSourceDN1") : a.h.RNGdropSourceDN1);)
+                        					(s = b.engine.getGameAttribute("DNSM")), (a = w._customBlock_DungeonCalc("RNGdropID", 4)), null != e.RNGdropSourceDN1 ? s.setReserved("RNGdropSourceDN1", a) : (s.h.RNGdropSourceDN1 = a);
+                        				(s = b.engine.getGameAttribute("DummyList2")), (a = b.engine.getGameAttribute("DNSM")), s.push(null != e.RNGdropSourceDN1 ? a.getReserved("RNGdropSourceDN1") : a.h.RNGdropSourceDN1);
+                        			}
+                        		else if ("EnhancerSoldRNG" == t) {
+                        			for (t = b.engine.getGameAttribute("DNSM"), n = w._customBlock_DungeonCalc("RNGdropID", 4), null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", n) : (t.h.RNGdropSourceDN1 = n);
+                        				(t = b.engine.getGameAttribute("DummyList2")), (n = b.engine.getGameAttribute("DNSM")), Sb.contains(t, null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1);)
+                        				(t = b.engine.getGameAttribute("DNSM")), (n = w._customBlock_DungeonCalc("RNGdropID", 4)), null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", n) : (t.h.RNGdropSourceDN1 = n);
+                        			(t = b.engine.getGameAttribute("DummyList2")), (n = b.engine.getGameAttribute("DNSM")), t.push(null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1);
+                        		} else if ("RandomGrey" == t) {
+                        			for (t = b.engine.getGameAttribute("DNSM"), n = w._customBlock_DungeonCalc("RNGdropID", 0), null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", n) : (t.h.RNGdropSourceDN1 = n);
+                        				(t = b.engine.getGameAttribute("DummyList2")), (n = b.engine.getGameAttribute("DNSM")), Sb.contains(t, null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1);)
+                        				(t = b.engine.getGameAttribute("DNSM")), (n = w._customBlock_DungeonCalc("RNGdropID", 0)), null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", n) : (t.h.RNGdropSourceDN1 = n);
+                        			(t = b.engine.getGameAttribute("DummyList2")), (n = b.engine.getGameAttribute("DNSM")), t.push(null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1);
+                        		} else if ("RandomGreen" == t) {
+                        			for (t = b.engine.getGameAttribute("DNSM"), n = w._customBlock_DungeonCalc("RNGdropID", -2), null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", n) : (t.h.RNGdropSourceDN1 = n);
+                        				(t = b.engine.getGameAttribute("DummyList2")), (n = b.engine.getGameAttribute("DNSM")), Sb.contains(t, null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1);)
+                        				(t = b.engine.getGameAttribute("DNSM")), (n = w._customBlock_DungeonCalc("RNGdropID", -2)), null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", n) : (t.h.RNGdropSourceDN1 = n);
+                        			(t = b.engine.getGameAttribute("DummyList2")), (n = b.engine.getGameAttribute("DNSM")), t.push(null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1);
+                        		} else if ("RandomBlue" == t) {
+                        			for (t = b.engine.getGameAttribute("DNSM"), n = w._customBlock_DungeonCalc("RNGdropID", -3), null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", n) : (t.h.RNGdropSourceDN1 = n);
+                        				(t = b.engine.getGameAttribute("DummyList2")), (n = b.engine.getGameAttribute("DNSM")), Sb.contains(t, null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1);)
+                        				(t = b.engine.getGameAttribute("DNSM")), (n = w._customBlock_DungeonCalc("RNGdropID", -3)), null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", n) : (t.h.RNGdropSourceDN1 = n);
+                        			(t = b.engine.getGameAttribute("DummyList2")), (n = b.engine.getGameAttribute("DNSM")), t.push(null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1);
+                        		} else if ("AllOrange" == t) - 1 != b.engine.getGameAttribute("DungUpg")[0][45] && ((t = b.engine.getGameAttribute("DNSM")), null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", 45) : (t.h.RNGdropSourceDN1 = 45),
+                        			(t = b.engine.getGameAttribute("DummyList2")),
+                        			(n = b.engine.getGameAttribute("DNSM")), t.push(null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1)), -1 != b.engine.getGameAttribute("DungUpg")[0][46] && ((t = b.engine.getGameAttribute("DNSM")), null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", 46) : (t.h.RNGdropSourceDN1 = 46),
+                        			(t = b.engine.getGameAttribute("DummyList2")),
+                        			(n = b.engine.getGameAttribute("DNSM")), t.push(null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1)), -1 != b.engine.getGameAttribute("DungUpg")[0][47] && ((t = b.engine.getGameAttribute("DNSM")), null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", 47) : (t.h.RNGdropSourceDN1 = 47),
+                        			(t = b.engine.getGameAttribute("DummyList2")),
+                        			(n = b.engine.getGameAttribute("DNSM")), t.push(null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1));
+                        		else if ("Purple4" == t)
+                        			for (t = 0; 4 > t;) {
+                        				for (t++, n = b.engine.getGameAttribute("DNSM"), s = w._customBlock_DungeonCalc("RNGdropID", -4), null != e.RNGdropSourceDN1 ? n.setReserved("RNGdropSourceDN1", s) : (n.h.RNGdropSourceDN1 = s), n = 0; 10 > n && (n++, (s = b.engine.getGameAttribute("DummyList2")), (a = b.engine.getGameAttribute("DNSM")), Sb.contains(s, null != e.RNGdropSourceDN1 ? a.getReserved("RNGdropSourceDN1") : a.h.RNGdropSourceDN1));)
+                        					(s = b.engine.getGameAttribute("DNSM")), (a = w._customBlock_DungeonCalc("RNGdropID", -4)), null != e.RNGdropSourceDN1 ? s.setReserved("RNGdropSourceDN1", a) : (s.h.RNGdropSourceDN1 = a);
+                        				(n = b.engine.getGameAttribute("DummyList2")), (s = b.engine.getGameAttribute("DNSM")), n.push(null != e.RNGdropSourceDN1 ? s.getReserved("RNGdropSourceDN1") : s.h.RNGdropSourceDN1);
+                        			}
+                        		else if ("SingleCut" == t)
+                        			(t = b.engine.getGameAttribute("DNSM")),
+                        			(n = w._customBlock_DungeonCalc("RNGdropID", -1)),
+                        			null != e.RNGdropSourceDN1 ? t.setReserved("RNGdropSourceDN1", n) : (t.h.RNGdropSourceDN1 = n),
+                        			(t = b.engine.getGameAttribute("DummyList2")),
+                        			(n = b.engine.getGameAttribute("DNSM")),
+                        			t.push(null != e.RNGdropSourceDN1 ? n.getReserved("RNGdropSourceDN1") : n.h.RNGdropSourceDN1);
+                        		else
+                        			for (t = 0, n = Math.round(3 + h.randomFloatBetween(0.335, 0.6) * w._customBlock_DungeonCalc("TraitBonus", 20)); t < n;) {
+                        				for (t++, s = b.engine.getGameAttribute("DNSM"), a = w._customBlock_DungeonCalc("RNGdropID", 4), null != e.RNGdropSourceDN1 ? s.setReserved("RNGdropSourceDN1", a) : (s.h.RNGdropSourceDN1 = a);
+                        					(s = b.engine.getGameAttribute("DummyList2")), (a = b.engine.getGameAttribute("DNSM")), Sb.contains(s, null != e.RNGdropSourceDN1 ? a.getReserved("RNGdropSourceDN1") : a.h.RNGdropSourceDN1);)
+                        					(s = b.engine.getGameAttribute("DNSM")), (a = w._customBlock_DungeonCalc("RNGdropID", 4)), null != e.RNGdropSourceDN1 ? s.setReserved("RNGdropSourceDN1", a) : (s.h.RNGdropSourceDN1 = a);
+                        				(s = b.engine.getGameAttribute("DummyList2")), (a = b.engine.getGameAttribute("DNSM")), s.push(null != e.RNGdropSourceDN1 ? a.getReserved("RNGdropSourceDN1") : a.h.RNGdropSourceDN1);
+                        			}
+                        		return b.engine.getGameAttribute("DummyList2");
+                        	}

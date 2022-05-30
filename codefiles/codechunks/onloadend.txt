@@ -1,0 +1,4 @@
+                                (t.onloadend = function() {
+                                		var n = a ? t.result : t.result.replace(/^data:[^;]*;/, "data:attachment/file;");
+                                		e.open(n, "_blank") || (e.location.href = n), (g.readyState = g.DONE), d();
+                                	}

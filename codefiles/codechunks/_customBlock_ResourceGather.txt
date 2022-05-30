@@ -1,0 +1,7 @@
+                        (U._customBlock_ResourceGather = function(s) {
+                        		if (0 != b.engine.getGameAttribute("PixelHelperActor")[3].getValue("ActorEvents_201", "_GenINFO")[29]) {
+                        			var a = b.engine.getGameAttribute("PixelHelperActor")[3].getValue("ActorEvents_201", "_GenINFO")[35];
+                        			a = 0 < parseNum(a);
+                        		} else a = !1;
+                        		a && (t._customBlock_ColosseumAction(0.1, "multi", "ShowBonus"), -1 != s.indexOf("Fish") && ((s = b.engine.getGameAttribute("QuestComplete")), 0 == (null != e.Walupiggy3 ? s.getReserved("Walupiggy3") : s.h.Walupiggy3) && ((s = b.engine.getGameAttribute("QuestStatus")), 2 == (null != e.Walupiggy3 ? s.getReserved("Walupiggy3") : s.h.Walupiggy3)[0] && ((s = b.engine.getGameAttribute("QuestStatus")), ((null != e.Walupiggy3 ? s.getReserved("Walupiggy3") : s.h.Walupiggy3)[0] = 3)))));
+                        	}

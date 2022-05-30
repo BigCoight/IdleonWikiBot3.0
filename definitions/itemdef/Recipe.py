@@ -1,7 +1,7 @@
 from typing import List, Optional, Dict, Union, Callable
 
-from definitions.common.Component import Component
 from definitions.common.Source import Source
+from definitions.component.Component import Component
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Integer
 from repositories.item.ItemDetailRepo import ItemDetailRepo

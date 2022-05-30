@@ -1,8 +1,7 @@
 import re
 from typing import List
 
-from definitions.common.Component import Component
-from definitions.common.LiquidComponent import LiquidComponent
+from definitions.component.ComponentFactory import ComponentFactory
 from definitions.misc.world2.Bubble import Bubble
 from helpers.HelperFunctions import replaceUnderscores, reAll
 from repositories.master.Repository import Repository
@@ -41,15 +40,9 @@ class BubbleRepo(Repository[Bubble]):
 					if bubData[i] == "Blank":
 						break
 					if len(bubData) > 14:
-						if bubData[i][:6] == "Liquid":
-							bubbleReq.append(LiquidComponent(liquidNo = bubData[i][6], quantity = bubData[j]))
-							continue
-						bubbleReq.append(Component(item = bubData[i], quantity = bubData[j]))
+						bubbleReq.append(ComponentFactory.getComponent(bubData[i], bubData[j]))
 						continue
-					if bubData[i][:6] == "Liquid":
-						bubbleReq.append(LiquidComponent(liquidNo = bubData[i][6], quantity = -1))
-						continue
-					bubbleReq.append(Component(item = bubData[i], quantity = -1))
+					bubbleReq.append(ComponentFactory.getComponent(bubData[i], -1))
 				cls.add(bubData[0], Bubble(
 					cauldron = bubbleNames[n],
 					x1 = bubData[1],

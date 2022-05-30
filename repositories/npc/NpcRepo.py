@@ -1,8 +1,9 @@
 import re
 from typing import List, Dict, Set
 
-from definitions.common.Component import Component
 from definitions.common.CustomReq import CustomReq
+from definitions.component.Component import Component
+from definitions.component.ComponentFactory import ComponentFactory
 from definitions.questdef.CustomQuest import CustomQuest
 from definitions.questdef.DialogueLine import DialogueLine
 from definitions.questdef.ItemQuest import ItemQuest
@@ -87,10 +88,7 @@ class NpcRepo(Repository[Npc]):
 		items = temp.get("ItemTypeReq")
 		quants = temp.get("ItemNumReq")
 		for item, quant in zip(items, quants):
-			itemReqs.append(Component(
-				item = item,
-				quantity = quant
-			))
+			itemReqs.append(ComponentFactory.getComponent(item, quant))
 		temp["ItemReq"] = itemReqs.copy()
 		currentNpc.quests[temp.get("Name", "Filler")] = (ItemQuest.parse_obj(temp))
 

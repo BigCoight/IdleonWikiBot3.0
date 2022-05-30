@@ -1,4 +1,4 @@
-import { ComponentModel } from './componentModel';
+import { ComponentBaseModel } from './componentBaseModel';
 
 export interface JewelModel {
     x: number,
@@ -6,7 +6,7 @@ export interface JewelModel {
     range: number,
     effect: string,
     description: string,
-    requirements: ComponentModel[],
+    requirements: ComponentBaseModel[],
     name: string,
     bonusGiven: number
 }

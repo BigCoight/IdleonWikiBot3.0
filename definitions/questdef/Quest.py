@@ -2,10 +2,10 @@ from typing import List, Union
 
 from pydantic import validator
 
-from definitions.common.Component import Component
 from definitions.common.CustomReq import CustomReq
 from definitions.common.ExpType import ExpType
 from definitions.common.Note import Note
+from definitions.component.Component import Component
 from definitions.questdef.DialogueLine import DialogueLine
 from helpers.CustomTypes import Integer
 from repositories.item.ItemDetailRepo import ItemDetailRepo
@@ -14,7 +14,6 @@ from repositories.talents.TalentNameRepo import TalentNameRepo
 
 
 class CoinReward(Component):
-
 	def __str__(self):
 		return "{{Coindisplay|" + str(self.quantity) + "}}"
 

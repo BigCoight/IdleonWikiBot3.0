@@ -1,6 +1,6 @@
 from typing import List
 
-from definitions.common.Component import Component
+from definitions.component.ComponentFactory import ComponentFactory
 from definitions.misc.world3.Building import Building
 from helpers.HelperFunctions import getFromSplitArray
 from repositories.master.Repository import Repository
@@ -24,8 +24,8 @@ class BuildingRepo(Repository[Building]):
 		data = getFromSplitArray(cls.getSection())
 		for building in data:
 			costs = [
-				Component(item = building[4], quantity = building[6]),
-				Component(item = building[5], quantity = building[7])
+				ComponentFactory.getComponent(building[4], building[6]),
+				ComponentFactory.getComponent(building[5], building[7]),
 			]
 			desc = building[1].split("@ Current Bonuses: @")
 			cBuilding = Building(

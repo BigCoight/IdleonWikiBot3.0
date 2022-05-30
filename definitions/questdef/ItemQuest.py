@@ -1,11 +1,11 @@
 from typing import List
 
-from definitions.common.Component import Component
+from definitions.component.ComponentBase import ComponentBase
 from definitions.questdef.Quest import Quest
 
 
 class ItemQuest(Quest):
-	ItemReq: List[Component]
+	ItemReq: List[ComponentBase]
 
-	def getRequirements(self) -> List[Component]:
+	def getRequirements(self) -> List[ComponentBase]:
 		return self.ItemReq

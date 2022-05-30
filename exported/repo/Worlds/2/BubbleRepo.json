@@ -741,7 +741,7 @@
         "x2": 40,
         "func": "decay",
         "description": "+{% faster Egg Incubation Time in the Pet Nest. This will be an absolutely VITAL upgrade once you unlock pet egg rarity!",
-        "requirements": [{"item": "Spice0", "quantity": 100}, {"liquidNo": "3", "quantity": 4}]
+        "requirements": [{"spiceNo": "0", "quantity": 100}, {"liquidNo": "3", "quantity": 4}]
     },
     "Diamond Chef": {
         "cauldron": "Kazam Cauldron",
@@ -749,7 +749,7 @@
         "x2": 13,
         "func": "decayMulti",
         "description": "{x faster Meal and Fire Kitchen Speeds for every Meal at Lv 11+. This is when the meal plate becomes Diamond Blue, just so you know!",
-        "requirements": [{"item": "Spice6", "quantity": 100}, {"liquidNo": "3", "quantity": 4}]
+        "requirements": [{"spiceNo": "6", "quantity": 100}, {"liquidNo": "3", "quantity": 4}]
     },
     "Card Champ": {
         "cauldron": "Kazam Cauldron",
@@ -757,7 +757,7 @@
         "x2": 40,
         "func": "decay",
         "description": "+{% Card Drop Chance for all card types, even Party Dungeon cards!",
-        "requirements": [{"item": "Spice9", "quantity": 100}, {"liquidNo": "3", "quantity": 5}]
+        "requirements": [{"spiceNo": "9", "quantity": 100}, {"liquidNo": "3", "quantity": 5}]
     },
     "Petting The Rift": {
         "cauldron": "Kazam Cauldron",

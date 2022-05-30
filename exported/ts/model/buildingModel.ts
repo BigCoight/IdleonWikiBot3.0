@@ -1,10 +1,10 @@
-import { ComponentModel } from './componentModel';
+import { ComponentBaseModel } from './componentBaseModel';
 
 export interface BuildingModel {
     name: string,
     description: string,
     bonus: string,
-    lvlUpReq: ComponentModel[],
+    lvlUpReq: ComponentBaseModel[],
     maxLvl: number,
     costInc: number,
     bonusInc: number[],

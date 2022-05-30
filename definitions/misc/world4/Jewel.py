@@ -1,6 +1,6 @@
 from typing import List
 
-from definitions.common.Component import Component
+from definitions.component.ComponentBase import ComponentBase
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Integer, Numeric
 
@@ -11,6 +11,6 @@ class Jewel(IdleonModel):
 	range: Integer
 	effect: str
 	description: str
-	requirements: List[Component]
+	requirements: List[ComponentBase]
 	name: str
 	bonusGiven: Numeric

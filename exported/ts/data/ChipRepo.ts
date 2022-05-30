@@ -1,5 +1,7 @@
 import { ChipModel } from '../model/chipModel';
 import { ComponentModel } from '../model/componentModel';
+import { MealComponentModel } from '../model/mealComponentModel';
+import { SpiceComponentModel } from '../model/spiceComponentModel';
 
 export class ChipBase { constructor(public index: number, public data: ChipModel) { } }
 
@@ -13,8 +15,8 @@ export const initChipRepo = () => {
                 "description": "Boosts total defence",
                 "requirements": [
                     <ComponentModel>{"item": "Copper", "quantity": 20000},
-                    <ComponentModel>{"item": "Meal0", "quantity": 100},
-                    <ComponentModel>{"item": "Spice0", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "0", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "0", "quantity": 100}
                 ],
                 "bool1": false,
                 "stat": "def",
@@ -26,8 +28,8 @@ export const initChipRepo = () => {
                 "description": "Boosts total movement speed",
                 "requirements": [
                     <ComponentModel>{"item": "OakTree", "quantity": 30000},
-                    <ComponentModel>{"item": "Meal1", "quantity": 100},
-                    <ComponentModel>{"item": "Spice0", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "1", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "0", "quantity": 100}
                 ],
                 "bool1": false,
                 "stat": "move",
@@ -39,8 +41,8 @@ export const initChipRepo = () => {
                 "description": "Boosts total accuracy",
                 "requirements": [
                     <ComponentModel>{"item": "Fish1", "quantity": 20000},
-                    <ComponentModel>{"item": "Meal3", "quantity": 100},
-                    <ComponentModel>{"item": "Spice1", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "3", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "1", "quantity": 100}
                 ],
                 "bool1": false,
                 "stat": "acc",
@@ -52,8 +54,8 @@ export const initChipRepo = () => {
                 "description": "Boosts total drop rate",
                 "requirements": [
                     <ComponentModel>{"item": "DesertA1", "quantity": 10000},
-                    <ComponentModel>{"item": "Meal4", "quantity": 100},
-                    <ComponentModel>{"item": "Spice1", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "4", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "1", "quantity": 100}
                 ],
                 "bool1": false,
                 "stat": "dr",
@@ -65,8 +67,8 @@ export const initChipRepo = () => {
                 "description": "Boosts attack speed",
                 "requirements": [
                     <ComponentModel>{"item": "Bug1", "quantity": 20000},
-                    <ComponentModel>{"item": "Meal6", "quantity": 100},
-                    <ComponentModel>{"item": "Spice2", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "6", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "2", "quantity": 100}
                 ],
                 "bool1": true,
                 "stat": "atkspd",
@@ -78,8 +80,8 @@ export const initChipRepo = () => {
                 "description": "Boosts lab exp gain",
                 "requirements": [
                     <ComponentModel>{"item": "StumpTree", "quantity": 100000},
-                    <ComponentModel>{"item": "Meal9", "quantity": 100},
-                    <ComponentModel>{"item": "Spice3", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "9", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "3", "quantity": 100}
                 ],
                 "bool1": false,
                 "stat": "labexp",
@@ -91,8 +93,8 @@ export const initChipRepo = () => {
                 "description": "Boosts mainframe line width",
                 "requirements": [
                     <ComponentModel>{"item": "Gold", "quantity": 100000},
-                    <ComponentModel>{"item": "Meal12", "quantity": 100},
-                    <ComponentModel>{"item": "Spice4", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "12", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "4", "quantity": 100}
                 ],
                 "bool1": false,
                 "stat": "linewidth",
@@ -104,8 +106,8 @@ export const initChipRepo = () => {
                 "description": "Boosts Fighting AFK gain rate",
                 "requirements": [
                     <ComponentModel>{"item": "Critter2", "quantity": 10000},
-                    <ComponentModel>{"item": "Meal15", "quantity": 100},
-                    <ComponentModel>{"item": "Spice4", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "15", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "4", "quantity": 100}
                 ],
                 "bool1": true,
                 "stat": "fafk",
@@ -117,8 +119,8 @@ export const initChipRepo = () => {
                 "description": "Boosts Skilling AFK gain Rate",
                 "requirements": [
                     <ComponentModel>{"item": "Bug5", "quantity": 100000},
-                    <ComponentModel>{"item": "Meal18", "quantity": 100},
-                    <ComponentModel>{"item": "Spice5", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "18", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "5", "quantity": 100}
                 ],
                 "bool1": true,
                 "stat": "safk",
@@ -130,8 +132,8 @@ export const initChipRepo = () => {
                 "description": "Chance for Crystal Mob revival",
                 "requirements": [
                     <ComponentModel>{"item": "CraftMat8", "quantity": 200000},
-                    <ComponentModel>{"item": "Meal21", "quantity": 100},
-                    <ComponentModel>{"item": "Spice6", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "21", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "6", "quantity": 100}
                 ],
                 "bool1": true,
                 "stat": "crys",
@@ -143,8 +145,8 @@ export const initChipRepo = () => {
                 "description": "Boosts Mob respawn rate",
                 "requirements": [
                     <ComponentModel>{"item": "SnowC1", "quantity": 100000},
-                    <ComponentModel>{"item": "Meal24", "quantity": 100},
-                    <ComponentModel>{"item": "Spice7", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "24", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "7", "quantity": 100}
                 ],
                 "bool1": false,
                 "stat": "resp",
@@ -156,8 +158,8 @@ export const initChipRepo = () => {
                 "description": "Boosts skilling efficiency",
                 "requirements": [
                     <ComponentModel>{"item": "Fish5", "quantity": 250000},
-                    <ComponentModel>{"item": "Meal27", "quantity": 100},
-                    <ComponentModel>{"item": "Spice8", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "27", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "8", "quantity": 100}
                 ],
                 "bool1": false,
                 "stat": "toteff",
@@ -169,8 +171,8 @@ export const initChipRepo = () => {
                 "description": "Boosts total damage",
                 "requirements": [
                     <ComponentModel>{"item": "Dementia", "quantity": 300000},
-                    <ComponentModel>{"item": "Meal29", "quantity": 100},
-                    <ComponentModel>{"item": "Spice9", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "29", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "9", "quantity": 100}
                 ],
                 "bool1": false,
                 "stat": "dmg",
@@ -182,8 +184,8 @@ export const initChipRepo = () => {
                 "description": "Boosts base skilling efficiency",
                 "requirements": [
                     <ComponentModel>{"item": "GalaxyB2", "quantity": 100000},
-                    <ComponentModel>{"item": "Meal31", "quantity": 100},
-                    <ComponentModel>{"item": "Spice10", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "31", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "10", "quantity": 100}
                 ],
                 "bool1": false,
                 "stat": "eff",
@@ -195,8 +197,8 @@ export const initChipRepo = () => {
                 "description": "Boosts multikill",
                 "requirements": [
                     <ComponentModel>{"item": "Tree8", "quantity": 250000},
-                    <ComponentModel>{"item": "Meal33", "quantity": 100},
-                    <ComponentModel>{"item": "Spice11", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "33", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "11", "quantity": 100}
                 ],
                 "bool1": false,
                 "stat": "mkill",
@@ -208,8 +210,8 @@ export const initChipRepo = () => {
                 "description": "Bolsters active star signs",
                 "requirements": [
                     <ComponentModel>{"item": "CraftMat10", "quantity": 2000000},
-                    <ComponentModel>{"item": "Meal35", "quantity": 100},
-                    <ComponentModel>{"item": "Spice12", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "35", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "12", "quantity": 100}
                 ],
                 "bool1": true,
                 "stat": "star",
@@ -221,8 +223,8 @@ export const initChipRepo = () => {
                 "description": "Bolsters equipped trophy",
                 "requirements": [
                     <ComponentModel>{"item": "Soul5", "quantity": 2000000},
-                    <ComponentModel>{"item": "Meal37", "quantity": 100},
-                    <ComponentModel>{"item": "Spice13", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "37", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "13", "quantity": 100}
                 ],
                 "bool1": true,
                 "stat": "troph",
@@ -234,8 +236,8 @@ export const initChipRepo = () => {
                 "description": "Bolsters equipped keychain",
                 "requirements": [
                     <ComponentModel>{"item": "Bug8", "quantity": 2000000},
-                    <ComponentModel>{"item": "Meal39", "quantity": 100},
-                    <ComponentModel>{"item": "Spice13", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "39", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "13", "quantity": 100}
                 ],
                 "bool1": true,
                 "stat": "key1",
@@ -247,8 +249,8 @@ export const initChipRepo = () => {
                 "description": "Bolsters equipped pendant",
                 "requirements": [
                     <ComponentModel>{"item": "Critter10", "quantity": 2000000},
-                    <ComponentModel>{"item": "Meal41", "quantity": 100},
-                    <ComponentModel>{"item": "Spice14", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "41", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "14", "quantity": 100}
                 ],
                 "bool1": true,
                 "stat": "pend",
@@ -260,8 +262,8 @@ export const initChipRepo = () => {
                 "description": "Bolsters equipped Weapon",
                 "requirements": [
                     <ComponentModel>{"item": "CraftMat14", "quantity": 2000000},
-                    <ComponentModel>{"item": "Meal43", "quantity": 100},
-                    <ComponentModel>{"item": "Spice14", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "43", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "14", "quantity": 100}
                 ],
                 "bool1": true,
                 "stat": "weppow",
@@ -273,8 +275,8 @@ export const initChipRepo = () => {
                 "description": "Bolsters an equipped card",
                 "requirements": [
                     <ComponentModel>{"item": "Bug8", "quantity": 10000000},
-                    <ComponentModel>{"item": "Meal45", "quantity": 100},
-                    <ComponentModel>{"item": "Spice15", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "45", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "15", "quantity": 100}
                 ],
                 "bool1": true,
                 "stat": "card1",
@@ -286,8 +288,8 @@ export const initChipRepo = () => {
                 "description": "Bolsters an equipped card",
                 "requirements": [
                     <ComponentModel>{"item": "Fish8", "quantity": 10000000},
-                    <ComponentModel>{"item": "Meal47", "quantity": 100},
-                    <ComponentModel>{"item": "Spice16", "quantity": 100}
+                    <MealComponentModel>{"mealNo": "47", "quantity": 100},
+                    <SpiceComponentModel>{"spiceNo": "16", "quantity": 100}
                 ],
                 "bool1": true,
                 "stat": "card2",

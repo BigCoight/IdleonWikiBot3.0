@@ -1,6 +1,7 @@
 import { BubbleModel } from '../model/bubbleModel';
 import { ComponentModel } from '../model/componentModel';
 import { LiquidComponentModel } from '../model/liquidComponentModel';
+import { SpiceComponentModel } from '../model/spiceComponentModel';
 
 export class BubbleBase { constructor(public id: string, public data: BubbleModel) { } }
 
@@ -750,7 +751,7 @@ export const initBubbleRepo = () => {
                 "x2": 40,
                 "func": "decay",
                 "description": "+{% faster Egg Incubation Time in the Pet Nest. This will be an absolutely VITAL upgrade once you unlock pet egg rarity!",
-                "requirements": [<ComponentModel>{"item": "Spice0", "quantity": 100}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 4}]
+                "requirements": [<SpiceComponentModel>{"spiceNo": "0", "quantity": 100}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 4}]
             }),
         new BubbleBase("Diamond Chef", <BubbleModel>{
                 "cauldron": "Kazam Cauldron",
@@ -758,7 +759,7 @@ export const initBubbleRepo = () => {
                 "x2": 13,
                 "func": "decayMulti",
                 "description": "{x faster Meal and Fire Kitchen Speeds for every Meal at Lv 11+. This is when the meal plate becomes Diamond Blue, just so you know!",
-                "requirements": [<ComponentModel>{"item": "Spice6", "quantity": 100}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 4}]
+                "requirements": [<SpiceComponentModel>{"spiceNo": "6", "quantity": 100}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 4}]
             }),
         new BubbleBase("Card Champ", <BubbleModel>{
                 "cauldron": "Kazam Cauldron",
@@ -766,7 +767,7 @@ export const initBubbleRepo = () => {
                 "x2": 40,
                 "func": "decay",
                 "description": "+{% Card Drop Chance for all card types, even Party Dungeon cards!",
-                "requirements": [<ComponentModel>{"item": "Spice9", "quantity": 100}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 5}]
+                "requirements": [<SpiceComponentModel>{"spiceNo": "9", "quantity": 100}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 5}]
             }),
         new BubbleBase("Petting The Rift", <BubbleModel>{
                 "cauldron": "Kazam Cauldron",

@@ -1,6 +1,6 @@
+import { ComponentBaseModel } from './componentBaseModel';
 
-
-export interface LiquidComponentModel {
+export interface LiquidComponentModel extends ComponentBaseModel {
     liquidNo: string,
     quantity: number
 }

@@ -1,5 +1,5 @@
-import { ComponentModel } from './componentModel';
+import { ComponentBaseModel } from './componentBaseModel';
 
 export interface RefineryCostModel {
-    cost: ComponentModel[]
+    cost: ComponentBaseModel[]
 }

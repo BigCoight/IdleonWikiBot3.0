@@ -5,7 +5,7 @@ import { TypeGen } from './typeGen';
 
 export interface EquipItemModel extends CommonItemModel {
     lvReqToEquip: number,
-    Class: (BagType | ClassType),
+    Class: (ClassType | BagType),
     Speed: number,
     Reach: number,
     Weapon_Power: number,

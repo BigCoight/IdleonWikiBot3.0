@@ -1,5 +1,4 @@
-import { ComponentModel } from './componentModel';
-import { LiquidComponentModel } from './liquidComponentModel';
+import { ComponentBaseModel } from './componentBaseModel';
 
 export interface BubbleModel {
     cauldron: string,
@@ -7,5 +6,5 @@ export interface BubbleModel {
     x2: number,
     func: string,
     description: string,
-    requirements: (LiquidComponentModel | ComponentModel)[]
+    requirements: ComponentBaseModel[]
 }

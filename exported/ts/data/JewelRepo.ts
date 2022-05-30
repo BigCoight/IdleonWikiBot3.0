@@ -1,5 +1,7 @@
 import { ComponentModel } from '../model/componentModel';
 import { JewelModel } from '../model/jewelModel';
+import { MealComponentModel } from '../model/mealComponentModel';
+import { SpiceComponentModel } from '../model/spiceComponentModel';
 
 export class JewelBase { constructor(public index: number, public data: JewelModel) { } }
 
@@ -15,8 +17,8 @@ export const initJewelRepo = () => {
                 "description": "Boosts Meal Cooking speed",
                 "requirements": [
                     <ComponentModel>{"item": "Quest66", "quantity": 5},
-                    <ComponentModel>{"item": "Meal1", "quantity": 2000},
-                    <ComponentModel>{"item": "Spice0", "quantity": 200}
+                    <MealComponentModel>{"mealNo": "1", "quantity": 2000},
+                    <SpiceComponentModel>{"spiceNo": "0", "quantity": 200}
                 ],
                 "name": "Amethyst Rhinestone",
                 "bonusGiven": 1.5
@@ -29,8 +31,8 @@ export const initJewelRepo = () => {
                 "description": "Bolsters 'Animal Farm'",
                 "requirements": [
                     <ComponentModel>{"item": "Quest35", "quantity": 5},
-                    <ComponentModel>{"item": "Meal3", "quantity": 2000},
-                    <ComponentModel>{"item": "Spice1", "quantity": 200}
+                    <MealComponentModel>{"mealNo": "3", "quantity": 2000},
+                    <SpiceComponentModel>{"spiceNo": "1", "quantity": 200}
                 ],
                 "name": "Purple Navette",
                 "bonusGiven": 0.5
@@ -43,8 +45,8 @@ export const initJewelRepo = () => {
                 "description": "Boosts Lab EXP gain",
                 "requirements": [
                     <ComponentModel>{"item": "Timecandy1", "quantity": 10},
-                    <ComponentModel>{"item": "Meal5", "quantity": 2000},
-                    <ComponentModel>{"item": "Spice2", "quantity": 200}
+                    <MealComponentModel>{"mealNo": "5", "quantity": 2000},
+                    <SpiceComponentModel>{"spiceNo": "2", "quantity": 200}
                 ],
                 "name": "Purple Rhombol",
                 "bonusGiven": 40
@@ -57,8 +59,8 @@ export const initJewelRepo = () => {
                 "description": "Trims up a construction slot",
                 "requirements": [
                     <ComponentModel>{"item": "Quest15", "quantity": 10},
-                    <ComponentModel>{"item": "Meal7", "quantity": 5000},
-                    <ComponentModel>{"item": "Spice3", "quantity": 400}
+                    <MealComponentModel>{"mealNo": "7", "quantity": 5000},
+                    <SpiceComponentModel>{"spiceNo": "3", "quantity": 400}
                 ],
                 "name": "Sapphire Rhinestone",
                 "bonusGiven": 3
@@ -71,8 +73,8 @@ export const initJewelRepo = () => {
                 "description": "Boosts all stats",
                 "requirements": [
                     <ComponentModel>{"item": "TreeInterior1b", "quantity": 25},
-                    <ComponentModel>{"item": "Meal9", "quantity": 5000},
-                    <ComponentModel>{"item": "Spice4", "quantity": 400}
+                    <MealComponentModel>{"mealNo": "9", "quantity": 5000},
+                    <SpiceComponentModel>{"spiceNo": "4", "quantity": 400}
                 ],
                 "name": "Sapphire Navette",
                 "bonusGiven": 3
@@ -85,8 +87,8 @@ export const initJewelRepo = () => {
                 "description": "Emits a 'Line Width' Aura",
                 "requirements": [
                     <ComponentModel>{"item": "Sewers1b", "quantity": 30},
-                    <ComponentModel>{"item": "Meal11", "quantity": 5000},
-                    <ComponentModel>{"item": "Spice5", "quantity": 400}
+                    <MealComponentModel>{"mealNo": "11", "quantity": 5000},
+                    <SpiceComponentModel>{"spiceNo": "5", "quantity": 400}
                 ],
                 "name": "Sapphire Rhombol",
                 "bonusGiven": 25
@@ -99,8 +101,8 @@ export const initJewelRepo = () => {
                 "description": "Automatically levels up kitchens",
                 "requirements": [
                     <ComponentModel>{"item": "Quest38", "quantity": 2},
-                    <ComponentModel>{"item": "Meal13", "quantity": 5000},
-                    <ComponentModel>{"item": "Spice6", "quantity": 400}
+                    <MealComponentModel>{"mealNo": "13", "quantity": 5000},
+                    <SpiceComponentModel>{"spiceNo": "6", "quantity": 400}
                 ],
                 "name": "Sapphire Pyramite",
                 "bonusGiven": 2
@@ -113,8 +115,8 @@ export const initJewelRepo = () => {
                 "description": "Bolsters 'No Bubble Left Behind'",
                 "requirements": [
                     <ComponentModel>{"item": "DesertA1b", "quantity": 50},
-                    <ComponentModel>{"item": "Meal15", "quantity": 10000},
-                    <ComponentModel>{"item": "Spice7", "quantity": 1500}
+                    <MealComponentModel>{"mealNo": "15", "quantity": 10000},
+                    <SpiceComponentModel>{"spiceNo": "7", "quantity": 1500}
                 ],
                 "name": "Pyrite Rhinestone",
                 "bonusGiven": 2
@@ -127,8 +129,8 @@ export const initJewelRepo = () => {
                 "description": "Boosts 'non-consume' chance",
                 "requirements": [
                     <ComponentModel>{"item": "EquipmentPants19", "quantity": 2},
-                    <ComponentModel>{"item": "Meal17", "quantity": 10000},
-                    <ComponentModel>{"item": "Spice8", "quantity": 1500}
+                    <MealComponentModel>{"mealNo": "17", "quantity": 10000},
+                    <SpiceComponentModel>{"spiceNo": "8", "quantity": 1500}
                 ],
                 "name": "Pyrite Navette",
                 "bonusGiven": 3
@@ -141,8 +143,8 @@ export const initJewelRepo = () => {
                 "description": "Boosts mainframe connection range",
                 "requirements": [
                     <ComponentModel>{"item": "DesertA3b", "quantity": 50},
-                    <ComponentModel>{"item": "Meal19", "quantity": 10000},
-                    <ComponentModel>{"item": "Spice9", "quantity": 1500}
+                    <MealComponentModel>{"mealNo": "19", "quantity": 10000},
+                    <SpiceComponentModel>{"spiceNo": "9", "quantity": 1500}
                 ],
                 "name": "Pyrite Rhombol",
                 "bonusGiven": 30
@@ -155,8 +157,8 @@ export const initJewelRepo = () => {
                 "description": "Boosts player damage",
                 "requirements": [
                     <ComponentModel>{"item": "DesertC2b", "quantity": 50},
-                    <ComponentModel>{"item": "Meal21", "quantity": 10000},
-                    <ComponentModel>{"item": "Spice10", "quantity": 1500}
+                    <MealComponentModel>{"mealNo": "21", "quantity": 10000},
+                    <SpiceComponentModel>{"spiceNo": "10", "quantity": 1500}
                 ],
                 "name": "Pyrite Pyramite",
                 "bonusGiven": 10
@@ -169,8 +171,8 @@ export const initJewelRepo = () => {
                 "description": "Reduces egg incubation time",
                 "requirements": [
                     <ComponentModel>{"item": "BabaYagaETC", "quantity": 1},
-                    <ComponentModel>{"item": "Meal23", "quantity": 25000},
-                    <ComponentModel>{"item": "Spice11", "quantity": 5000}
+                    <MealComponentModel>{"mealNo": "23", "quantity": 25000},
+                    <SpiceComponentModel>{"spiceNo": "11", "quantity": 5000}
                 ],
                 "name": "Emerald Rhinestone",
                 "bonusGiven": 28
@@ -183,8 +185,8 @@ export const initJewelRepo = () => {
                 "description": "Boosts player efficiency",
                 "requirements": [
                     <ComponentModel>{"item": "SnowA2a", "quantity": 80},
-                    <ComponentModel>{"item": "Meal25", "quantity": 25000},
-                    <ComponentModel>{"item": "Spice12", "quantity": 5000}
+                    <MealComponentModel>{"mealNo": "25", "quantity": 25000},
+                    <SpiceComponentModel>{"spiceNo": "12", "quantity": 5000}
                 ],
                 "name": "Emerald Navette",
                 "bonusGiven": 200
@@ -197,8 +199,8 @@ export const initJewelRepo = () => {
                 "description": "Bolsters 'Fungi Finger Pocketer'",
                 "requirements": [
                     <ComponentModel>{"item": "SnowB2a", "quantity": 120},
-                    <ComponentModel>{"item": "Meal27", "quantity": 25000},
-                    <ComponentModel>{"item": "Spice13", "quantity": 5000}
+                    <MealComponentModel>{"mealNo": "27", "quantity": 25000},
+                    <SpiceComponentModel>{"spiceNo": "13", "quantity": 5000}
                 ],
                 "name": "Emerald Rhombol",
                 "bonusGiven": 1
@@ -211,8 +213,8 @@ export const initJewelRepo = () => {
                 "description": "Boosts Meal Cooking speed",
                 "requirements": [
                     <ComponentModel>{"item": "SnowC4a", "quantity": 150},
-                    <ComponentModel>{"item": "Meal29", "quantity": 25000},
-                    <ComponentModel>{"item": "Spice14", "quantity": 5000}
+                    <MealComponentModel>{"mealNo": "29", "quantity": 25000},
+                    <SpiceComponentModel>{"spiceNo": "14", "quantity": 5000}
                 ],
                 "name": "Emerald Pyramite",
                 "bonusGiven": 1
@@ -225,8 +227,8 @@ export const initJewelRepo = () => {
                 "description": "Boosts Pet Passive level up rate",
                 "requirements": [
                     <ComponentModel>{"item": "GalaxyA2b", "quantity": 200},
-                    <ComponentModel>{"item": "Meal31", "quantity": 25000},
-                    <ComponentModel>{"item": "Spice15", "quantity": 5000}
+                    <MealComponentModel>{"mealNo": "31", "quantity": 25000},
+                    <SpiceComponentModel>{"spiceNo": "15", "quantity": 5000}
                 ],
                 "name": "Emerald Ulthurite",
                 "bonusGiven": 30
@@ -239,8 +241,8 @@ export const initJewelRepo = () => {
                 "description": "Bolsters meals",
                 "requirements": [
                     <ComponentModel>{"item": "GalaxyC1b", "quantity": 300},
-                    <ComponentModel>{"item": "Meal33", "quantity": 100000},
-                    <ComponentModel>{"item": "Spice15", "quantity": 10000}
+                    <MealComponentModel>{"mealNo": "33", "quantity": 100000},
+                    <SpiceComponentModel>{"spiceNo": "15", "quantity": 10000}
                 ],
                 "name": "Black Diamond Rhinestone",
                 "bonusGiven": 16
@@ -253,8 +255,8 @@ export const initJewelRepo = () => {
                 "description": "Bolsters 'Unadulterated Banking Fury'",
                 "requirements": [
                     <ComponentModel>{"item": "Critter10A", "quantity": 10000},
-                    <ComponentModel>{"item": "Meal35", "quantity": 100000},
-                    <ComponentModel>{"item": "Spice16", "quantity": 10000}
+                    <MealComponentModel>{"mealNo": "35", "quantity": 100000},
+                    <SpiceComponentModel>{"spiceNo": "16", "quantity": 10000}
                 ],
                 "name": "Black Diamond Ulthurite",
                 "bonusGiven": 1

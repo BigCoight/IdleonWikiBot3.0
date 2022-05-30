@@ -1,12 +1,8 @@
-import re
 import string
 from typing import List
 
-from definitions.common.LiquidComponent import LiquidComponent
-from definitions.misc.world2.Bubble import Bubble
-from definitions.common.Component import Component
 from definitions.misc.world2.Sigil import Sigil
-from helpers.HelperFunctions import replaceUnderscores, camelCaseToTitle, getFromSplitArray
+from helpers.HelperFunctions import getFromSplitArray
 from repositories.master.Repository import Repository
 
 

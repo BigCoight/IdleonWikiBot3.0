@@ -7,7 +7,7 @@ export class EnemyNavBase { constructor(public id: string, public data: EnemyNav
 export const initEnemyNavRepo = () => {
     return [    
         new EnemyNavBase("mushG", <EnemyNavModel>{
-                "prev": null,
+                "prev": undefined,
                 "next": "mushR",
                 "hasCrystal": true,
                 "crystalName": "Crystal0",
@@ -113,13 +113,13 @@ export const initEnemyNavRepo = () => {
             }),
         new EnemyNavBase("mushW", <EnemyNavModel>{
                 "prev": "Crystal0",
-                "next": null,
+                "next": undefined,
                 "hasCrystal": true,
                 "crystalName": "Crystal0",
                 "hasCard": true
             }),
         new EnemyNavBase("jarSand", <EnemyNavModel>{
-                "prev": null,
+                "prev": undefined,
                 "next": "mimicA",
                 "hasCrystal": true,
                 "crystalName": "Crystal1",
@@ -217,7 +217,7 @@ export const initEnemyNavRepo = () => {
                 "hasCard": true
             }),
         new EnemyNavBase("sheep", <EnemyNavModel>{
-                "prev": null,
+                "prev": undefined,
                 "next": "flake",
                 "hasCrystal": true,
                 "crystalName": "Crystal2",
@@ -323,13 +323,13 @@ export const initEnemyNavRepo = () => {
             }),
         new EnemyNavBase("Crystal2", <EnemyNavModel>{
                 "prev": "skele2",
-                "next": null,
+                "next": undefined,
                 "hasCrystal": false,
                 "crystalName": "Crystal2",
                 "hasCard": true
             }),
         new EnemyNavBase("mushP", <EnemyNavModel>{
-                "prev": null,
+                "prev": undefined,
                 "next": "w4a2",
                 "hasCrystal": true,
                 "crystalName": "Crystal3",
@@ -427,129 +427,129 @@ export const initEnemyNavRepo = () => {
                 "hasCard": true
             }),
         new EnemyNavBase("babayaga", <EnemyNavModel>{
-                "prev": null,
+                "prev": undefined,
                 "next": "poopBig",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("poopBig", <EnemyNavModel>{
                 "prev": "babayaga",
                 "next": "poopD",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("poopD", <EnemyNavModel>{
                 "prev": "poopBig",
                 "next": "wolfA",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("wolfA", <EnemyNavModel>{
                 "prev": "poopD",
                 "next": "wolfB",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("wolfB", <EnemyNavModel>{
                 "prev": "wolfA",
                 "next": "wolfC",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("wolfC", <EnemyNavModel>{
                 "prev": "wolfB",
                 "next": "babaHour",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("babaHour", <EnemyNavModel>{
                 "prev": "wolfC",
                 "next": "babaMummy",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("babaMummy", <EnemyNavModel>{
                 "prev": "babaHour",
                 "next": "Boss2A",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("Boss2A", <EnemyNavModel>{
                 "prev": "babaMummy",
                 "next": "Boss2B",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("Boss2B", <EnemyNavModel>{
                 "prev": "Boss2A",
                 "next": "Boss2C",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("Boss2C", <EnemyNavModel>{
                 "prev": "Boss2B",
                 "next": "mini3a",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("mini3a", <EnemyNavModel>{
                 "prev": "Boss2C",
                 "next": "Boss3A",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("Boss3A", <EnemyNavModel>{
                 "prev": "mini3a",
                 "next": "Boss3B",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("Boss3B", <EnemyNavModel>{
                 "prev": "Boss3A",
                 "next": "Boss3C",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("Boss3C", <EnemyNavModel>{
                 "prev": "Boss3B",
                 "next": "mini4a",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("mini4a", <EnemyNavModel>{
                 "prev": "Boss3C",
                 "next": "Boss4A",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("Boss4A", <EnemyNavModel>{
                 "prev": "mini4a",
                 "next": "Boss4B",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             }),
         new EnemyNavBase("Boss4B", <EnemyNavModel>{
                 "prev": "Boss4A",
                 "next": "Blank",
                 "hasCrystal": true,
-                "crystalName": null,
+                "crystalName": undefined,
                 "hasCard": true
             })    
 ]

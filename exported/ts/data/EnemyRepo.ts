@@ -50,9 +50,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "GoldBar", "quantity": 69, "chance": 0.5, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ForgeB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -84,9 +84,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "VoidBar", "quantity": 69, "chance": 0.5, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Bandit_Bob", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -121,7 +121,7 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Quest19", "quantity": 69, "chance": 0.07, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "Crystal1",
                     "next": "Blank",
@@ -129,7 +129,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("SoulCard1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -163,9 +163,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Soul1", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("SoulCard2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -199,9 +199,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Soul2", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("SoulCard3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -235,9 +235,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Soul3", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("SoulCard4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -268,9 +268,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable12", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("SoulCard5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -301,9 +301,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable12", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("SoulCard6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -334,9 +334,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable12", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("CritterCard1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -367,9 +367,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Critter1", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("CritterCard2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -400,9 +400,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Critter2", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("CritterCard3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -433,9 +433,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Critter3", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("CritterCard4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -466,9 +466,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Critter4", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("CritterCard5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -499,9 +499,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Critter5", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("CritterCard6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -532,9 +532,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Critter6", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("CritterCard7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -565,9 +565,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Critter7", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("CritterCard8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -598,9 +598,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Critter8", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("CritterCard9", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -631,9 +631,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Critter9", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("CritterCard10", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -664,9 +664,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Critter10", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Cooking", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -690,10 +690,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Laboratory", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -717,10 +717,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("frogP", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -751,9 +751,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.0014, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("frogNest", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -778,9 +778,9 @@ export const initEnemyRepo = () => {
                     "DefFor0": 40.66
                 },
                 "drops": <EnemyTableModel>{"drops": []},
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("frogD", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -811,9 +811,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.004, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("frogY", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -844,9 +844,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("frogR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -877,9 +877,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("frogW", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -910,9 +910,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.02, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("frogGG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -943,9 +943,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.025, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("frogGR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -976,9 +976,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("frogGR2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1009,9 +1009,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("frogGR3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1042,9 +1042,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("frogGR4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1075,9 +1075,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("rocky", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1108,9 +1108,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("cactus", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1141,9 +1141,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("totem", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1174,9 +1174,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.002, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("target", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1207,9 +1207,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.0017, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("steakR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1240,9 +1240,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("potatoB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1273,9 +1273,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("snakeZ", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1306,9 +1306,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("snakeZ2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1339,9 +1339,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("snakeZ3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1372,9 +1372,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("iceknight", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1405,9 +1405,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.08, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("iceBossZ", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1439,9 +1439,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("iceBossZ2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1473,9 +1473,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("iceBossZ3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1507,9 +1507,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "DungCredits2", "quantity": 1, "chance": 0.8, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Crystal0", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1547,7 +1547,7 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable5b", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "acorn",
                     "next": "mushW",
@@ -1555,7 +1555,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("Crystal1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1593,7 +1593,7 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable5b", "quantity": 3, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "shovelR",
                     "next": "Bandit_Bob",
@@ -1601,7 +1601,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("Crystal2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1639,15 +1639,15 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable5b", "quantity": 3, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "skele2",
-                    "next": null,
+                    "next": undefined,
                     "hasCrystal": false,
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("Crystal3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1682,7 +1682,7 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable21", "quantity": 1, "chance": 0.4, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "w4c4",
                     "next": "Blank",
@@ -1690,7 +1690,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("mushG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1733,13 +1733,13 @@ export const initEnemyRepo = () => {
                     "portalRequirements": [20]
                 },
                 "navigation": <EnemyNavModel>{
-                    "prev": null,
+                    "prev": undefined,
                     "next": "mushR",
                     "hasCrystal": true,
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("frogG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1789,7 +1789,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("beanG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1836,7 +1836,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("slimeG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1884,7 +1884,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("snakeG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1933,7 +1933,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("carrotO", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -1980,7 +1980,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("goblinG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2027,7 +2027,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("plank", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2075,7 +2075,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("frogBIG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2124,7 +2124,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("branch", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2171,7 +2171,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("acorn", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2216,7 +2216,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("mushW", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2258,12 +2258,12 @@ export const initEnemyRepo = () => {
                 },
                 "navigation": <EnemyNavModel>{
                     "prev": "Crystal0",
-                    "next": null,
+                    "next": undefined,
                     "hasCrystal": true,
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("poopSmall", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2313,7 +2313,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("ratB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2361,7 +2361,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("poopD", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2402,10 +2402,10 @@ export const initEnemyRepo = () => {
                     "prev": "poopBig",
                     "next": "wolfA",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("rockG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2430,9 +2430,9 @@ export const initEnemyRepo = () => {
                     "DefFor0": 40.66
                 },
                 "drops": <EnemyTableModel>{"drops": []},
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("rockB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2457,9 +2457,9 @@ export const initEnemyRepo = () => {
                     "DefFor0": 40.66
                 },
                 "drops": <EnemyTableModel>{"drops": []},
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("rockS", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2484,9 +2484,9 @@ export const initEnemyRepo = () => {
                     "DefFor0": 40.66
                 },
                 "drops": <EnemyTableModel>{"drops": []},
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("jarSand", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2527,13 +2527,13 @@ export const initEnemyRepo = () => {
                     "portalRequirements": [250]
                 },
                 "navigation": <EnemyNavModel>{
-                    "prev": null,
+                    "prev": undefined,
                     "next": "mimicA",
                     "hasCrystal": true,
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("mimicA", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2581,7 +2581,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("crabcake", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2628,7 +2628,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("coconut", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2675,7 +2675,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("sandcastle", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2721,7 +2721,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("pincermin", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2772,7 +2772,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("potato", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2817,7 +2817,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("steak", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2862,7 +2862,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("moonman", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2909,7 +2909,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("sandgiant", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -2955,7 +2955,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("snailZ", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3001,7 +3001,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("sheep", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3042,13 +3042,13 @@ export const initEnemyRepo = () => {
                     "portalRequirements": [1000]
                 },
                 "navigation": <EnemyNavModel>{
-                    "prev": null,
+                    "prev": undefined,
                     "next": "flake",
                     "hasCrystal": true,
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("flake", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3095,7 +3095,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("stache", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3142,7 +3142,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("ram", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3188,7 +3188,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("bloque", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3235,7 +3235,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("mamoth", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3283,7 +3283,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("snowball", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3331,7 +3331,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("penguin", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3377,7 +3377,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("thermostat", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3430,7 +3430,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("glass", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3476,7 +3476,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("snakeB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3522,7 +3522,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("speaker", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3568,7 +3568,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("eye", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3614,7 +3614,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("Iceball", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3639,9 +3639,9 @@ export const initEnemyRepo = () => {
                     "DefFor0": 0
                 },
                 "drops": <EnemyTableModel>{"drops": []},
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("mushP", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3681,13 +3681,13 @@ export const initEnemyRepo = () => {
                     "portalRequirements": [20000]
                 },
                 "navigation": <EnemyNavModel>{
-                    "prev": null,
+                    "prev": undefined,
                     "next": "w4a2",
                     "hasCrystal": true,
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("w4a2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3734,7 +3734,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("w4a3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3780,7 +3780,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("demonP", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3826,7 +3826,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("w4b2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3872,7 +3872,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("w4b1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3918,7 +3918,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("w4b3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -3964,7 +3964,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("w4b4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -4010,7 +4010,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("w4b5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -4055,7 +4055,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("w4c1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -4101,7 +4101,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("w4c2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -4147,7 +4147,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("w4c3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -4193,7 +4193,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("w4c4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -4238,7 +4238,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal3",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("mushR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -4283,7 +4283,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal0",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("shovelR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -4314,7 +4314,7 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable7", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "snailZ",
                     "next": "Crystal1",
@@ -4322,7 +4322,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal1",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("skele", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -4353,7 +4353,7 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable14", "quantity": 1, "chance": 0.01, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "ram",
                     "next": "skele2",
@@ -4361,7 +4361,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("skele2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -4406,7 +4406,7 @@ export const initEnemyRepo = () => {
                     "crystalName": "Crystal2",
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("wolfA", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -4444,12 +4444,12 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable3", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "poopD",
                     "next": "wolfB",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
                 "bossData": <BossDetailsModel>{
@@ -4504,12 +4504,12 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable3", "quantity": 4, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "wolfA",
                     "next": "wolfC",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
                 "bossData": <BossDetailsModel>{
@@ -4564,12 +4564,12 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable3", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "wolfB",
                     "next": "babaHour",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
                 "bossData": <BossDetailsModel>{
@@ -4625,12 +4625,12 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable8", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "babaMummy",
                     "next": "Boss2B",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
                 "bossData": <BossDetailsModel>{
@@ -4684,12 +4684,12 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable8", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "Boss2A",
                     "next": "Boss2C",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
                 "bossData": <BossDetailsModel>{
@@ -4743,12 +4743,12 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable8", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "Boss2B",
                     "next": "mini3a",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
                 "bossData": <BossDetailsModel>{
@@ -4801,12 +4801,12 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable16", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "mini3a",
                     "next": "Boss3B",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
                 "bossData": <BossDetailsModel>{
@@ -4857,12 +4857,12 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable16", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "Boss3A",
                     "next": "Boss3C",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
                 "bossData": <BossDetailsModel>{
@@ -4914,12 +4914,12 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable8", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "Boss3B",
                     "next": "mini4a",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
                 "bossData": <BossDetailsModel>{
@@ -4969,15 +4969,15 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable21", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "mini4a",
                     "next": "Boss4B",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("Boss4B", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5012,15 +5012,15 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable21", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "Boss4A",
                     "next": "Blank",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("poopBig", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5062,15 +5062,15 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable3", "quantity": 2, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "babayaga",
                     "next": "poopD",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("babayaga", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5106,15 +5106,15 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable3", "quantity": 0.5, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
-                    "prev": null,
+                    "prev": undefined,
                     "next": "poopBig",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("babaHour", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5151,15 +5151,15 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable13", "quantity": 1, "chance": 0.4, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "wolfC",
                     "next": "babaMummy",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("babaMummy", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5197,15 +5197,15 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable13", "quantity": 1, "chance": 0.5, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "babaHour",
                     "next": "Boss2A",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("mini3a", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5242,15 +5242,15 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable13", "quantity": 1, "chance": 0.5, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "Boss2C",
                     "next": "Boss3A",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("mini4a", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5286,15 +5286,15 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable13", "quantity": 1, "chance": 0.5, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
+                "mapData": undefined,
                 "navigation": <EnemyNavModel>{
                     "prev": "Boss3C",
                     "next": "Boss4A",
                     "hasCrystal": true,
-                    "crystalName": null,
+                    "crystalName": undefined,
                     "hasCard": true
                 },
-                "bossData": null
+                "bossData": undefined
             }),
         new EnemyBase("xmasEvent", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5329,9 +5329,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "FoodEvent4", "quantity": 2, "chance": 0.25, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("xmasEvent2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5366,9 +5366,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "FoodEvent4", "quantity": 2, "chance": 0.25, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("xmasEvent3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5403,9 +5403,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "FoodEvent4", "quantity": 2, "chance": 0.25, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("loveEvent", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5440,9 +5440,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "FoodEvent8", "quantity": 2, "chance": 0.25, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("loveEvent2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5477,9 +5477,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "FoodEvent8", "quantity": 2, "chance": 0.25, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("EasterEvent1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5514,9 +5514,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "StoneWe", "quantity": 2, "chance": 0.25, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("EasterEvent2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5552,9 +5552,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "StoneWe", "quantity": 2, "chance": 0.25, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("SummerEvent1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5586,9 +5586,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Quest50", "quantity": 1, "chance": 0.13, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("SummerEvent2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5625,9 +5625,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Quest50", "quantity": 1, "chance": 0.1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Blank0ramaFiller", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5651,10 +5651,10 @@ export const initEnemyRepo = () => {
                     "Damages": [1000, 1],
                     "DefFor0": 1223.26
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ghost", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5689,9 +5689,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "FoodEvent4", "quantity": 2, "chance": 0.3, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("slimeR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5726,9 +5726,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "FoodEvent8", "quantity": 2, "chance": 0.25, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("sheepB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5764,9 +5764,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "StoneWe", "quantity": 2, "chance": 0.04, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("snakeY", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5801,9 +5801,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "StoneWe", "quantity": 2, "chance": 0.02, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("crabcakeB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5837,9 +5837,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "StoneWeb", "quantity": 2, "chance": 0.01, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("shovelY", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5873,9 +5873,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "StoneWeb", "quantity": 2, "chance": 0.01, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("pghost", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5899,10 +5899,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet0", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5926,10 +5926,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5953,10 +5953,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -5980,10 +5980,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6007,10 +6007,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6034,10 +6034,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6061,10 +6061,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6088,10 +6088,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6115,10 +6115,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6142,10 +6142,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet9", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6169,10 +6169,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet10", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6196,10 +6196,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Pet11", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6223,10 +6223,10 @@ export const initEnemyRepo = () => {
                     "Damages": [2, 1],
                     "DefFor0": 0.5
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Copper", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6263,8 +6263,8 @@ export const initEnemyRepo = () => {
                     "id": 6,
                     "portalRequirements": [10]
                 },
-                "navigation": null,
-                "bossData": null
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Iron", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6301,8 +6301,8 @@ export const initEnemyRepo = () => {
                     "id": 7,
                     "portalRequirements": [25, 81]
                 },
-                "navigation": null,
-                "bossData": null
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Gold", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6333,9 +6333,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable4", "quantity": 1, "chance": 0.0075, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Plat", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6372,8 +6372,8 @@ export const initEnemyRepo = () => {
                     "id": 10,
                     "portalRequirements": [40]
                 },
-                "navigation": null,
-                "bossData": null
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Dementia", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6404,9 +6404,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable4", "quantity": 1, "chance": 0.0082, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Void", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6443,8 +6443,8 @@ export const initEnemyRepo = () => {
                     "id": 11,
                     "portalRequirements": [50, 60]
                 },
-                "navigation": null,
-                "bossData": null
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Lustre", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6475,9 +6475,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable4", "quantity": 2, "chance": 0.0095, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Starfire", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6514,8 +6514,8 @@ export const initEnemyRepo = () => {
                     "id": 12,
                     "portalRequirements": [60]
                 },
-                "navigation": null,
-                "bossData": null
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Dreadlo", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6545,9 +6545,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Grasslands2", "quantity": 2, "chance": 0.4, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Godshard", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6577,9 +6577,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Grasslands2", "quantity": 2, "chance": 0.4, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("OakTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6610,9 +6610,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable5", "quantity": 1, "chance": 0.008, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("BirchTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6643,9 +6643,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable5", "quantity": 1, "chance": 0.0085, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("JungleTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6676,9 +6676,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable5", "quantity": 1, "chance": 0.009, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ForestTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6709,9 +6709,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable5", "quantity": 1, "chance": 0.0095, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("PalmTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6742,9 +6742,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable11", "quantity": 2, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ToiletTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6775,9 +6775,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable5", "quantity": 1, "chance": 0.0106, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("StumpTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6808,9 +6808,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable5", "quantity": 1, "chance": 0.0102, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("SaharanFoal", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6841,9 +6841,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable17", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Tree7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6874,9 +6874,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable17", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("AlienTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6907,9 +6907,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable22", "quantity": 2, "chance": 0.00815, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Tree8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6940,9 +6940,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable22", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("FishSmall", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -6978,8 +6978,8 @@ export const initEnemyRepo = () => {
                     "id": 54,
                     "portalRequirements": [15]
                 },
-                "navigation": null,
-                "bossData": null
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("FishMed", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7015,8 +7015,8 @@ export const initEnemyRepo = () => {
                     "id": 61,
                     "portalRequirements": [30]
                 },
-                "navigation": null,
-                "bossData": null
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Fish1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7046,9 +7046,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Fish2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7078,9 +7078,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Fish3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7110,9 +7110,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Fish4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7142,9 +7142,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Fish5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7174,9 +7174,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Fish6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7206,9 +7206,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Fish7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7238,9 +7238,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Fish8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7270,9 +7270,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("BugNest1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7302,9 +7302,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("BugNest2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7334,9 +7334,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("BugNest3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7366,9 +7366,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("BugNest4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7398,9 +7398,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("BugNest5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7430,9 +7430,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("BugNest6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7462,9 +7462,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("BugNest7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7494,9 +7494,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("BugNest8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7526,9 +7526,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Bug1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7559,9 +7559,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable12", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Bug2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7599,8 +7599,8 @@ export const initEnemyRepo = () => {
                     "id": 67,
                     "portalRequirements": [0]
                 },
-                "navigation": null,
-                "bossData": null
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Bug3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7631,9 +7631,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable12", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Bug4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7664,9 +7664,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable12", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Bug5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7697,9 +7697,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable18", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Bug6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7730,9 +7730,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable18", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Bug7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7763,9 +7763,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable23", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Bug8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7796,9 +7796,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable23", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestA1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7835,9 +7835,9 @@ export const initEnemyRepo = () => {
                         <ItemDropModel>{"item": "Key1", "quantity": 1, "chance": 0.04, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestB1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7877,9 +7877,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable2", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestC1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7918,9 +7918,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable3", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestD1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7945,9 +7945,9 @@ export const initEnemyRepo = () => {
                     "DefFor0": 0.22
                 },
                 "drops": <EnemyTableModel>{"drops": []},
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestA2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -7986,9 +7986,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable6", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestB2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8029,9 +8029,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable7", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestC2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8069,9 +8069,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable8", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestD2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8096,9 +8096,9 @@ export const initEnemyRepo = () => {
                     "DefFor0": 0.22
                 },
                 "drops": <EnemyTableModel>{"drops": []},
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestA3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8137,9 +8137,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable14", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestB3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8179,9 +8179,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable15", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestC3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8219,9 +8219,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable16", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestD3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8246,9 +8246,9 @@ export const initEnemyRepo = () => {
                     "DefFor0": 0.22
                 },
                 "drops": <EnemyTableModel>{"drops": []},
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestA4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8286,9 +8286,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable19", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestB4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8327,9 +8327,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable20", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestC4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8365,9 +8365,9 @@ export const initEnemyRepo = () => {
                         <SubTableDropModel>{"item": "DropTable21", "quantity": 1, "chance": 1, "questLink": "N/A"}
                     ]
                 },
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestD4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8392,9 +8392,9 @@ export const initEnemyRepo = () => {
                     "DefFor0": 0.22
                 },
                 "drops": <EnemyTableModel>{"drops": []},
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestA5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8418,10 +8418,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestB5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8445,10 +8445,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestC5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8472,10 +8472,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestD5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8499,10 +8499,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestA6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8526,10 +8526,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestB6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8553,10 +8553,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestC6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8580,10 +8580,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestD6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8607,10 +8607,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestA7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8634,10 +8634,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestB7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8661,10 +8661,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestC7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8688,10 +8688,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestD7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8715,10 +8715,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestA8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8742,10 +8742,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestB8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8769,10 +8769,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestC8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8796,10 +8796,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("ChestD8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8823,10 +8823,10 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 1],
                     "DefFor0": 0.22
                 },
-                "drops": null,
-                "mapData": null,
-                "navigation": null,
-                "bossData": null
+                "drops": undefined,
+                "mapData": undefined,
+                "navigation": undefined,
+                "bossData": undefined
             }),
         new EnemyBase("Nothing", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
@@ -8850,15 +8850,15 @@ export const initEnemyRepo = () => {
                     "Damages": [0, 0],
                     "DefFor0": 0.22
                 },
-                "drops": null,
+                "drops": undefined,
                 "mapData": <MapDataModel>{
                     "area": "Blunder Hills",
                     "world": "Blunder Hills",
                     "id": 0,
                     "portalRequirements": [1, 0]
                 },
-                "navigation": null,
-                "bossData": null
+                "navigation": undefined,
+                "bossData": undefined
             })    
 ]
 }

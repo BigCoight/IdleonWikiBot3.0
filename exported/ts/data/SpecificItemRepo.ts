@@ -22802,7 +22802,7 @@ export const initSpecificItemRepo = () => {
                 "sellPrice": 1,
                 "typeGen": TypeGenEnum.dCard,
                 "Type": "Card",
-                "cardData": null,
+                "cardData": undefined,
                 "dropChance": 1
             }),
         new DescItemBase("CardsC14", <CardItemModel>{
@@ -22811,7 +22811,7 @@ export const initSpecificItemRepo = () => {
                 "sellPrice": 1,
                 "typeGen": TypeGenEnum.dCard,
                 "Type": "Card",
-                "cardData": null,
+                "cardData": undefined,
                 "dropChance": 1
             }),
         new DescItemBase("CardsC15", <CardItemModel>{
@@ -22820,7 +22820,7 @@ export const initSpecificItemRepo = () => {
                 "sellPrice": 1,
                 "typeGen": TypeGenEnum.dCard,
                 "Type": "Card",
-                "cardData": null,
+                "cardData": undefined,
                 "dropChance": 1
             }),
         new DescItemBase("CardsC16", <CardItemModel>{
@@ -23021,7 +23021,7 @@ export const initSpecificItemRepo = () => {
                 "sellPrice": 1,
                 "typeGen": TypeGenEnum.dCard,
                 "Type": "Card",
-                "cardData": null,
+                "cardData": undefined,
                 "dropChance": 1
             }),
         new DescItemBase("CardsD13", <CardItemModel>{
@@ -23030,7 +23030,7 @@ export const initSpecificItemRepo = () => {
                 "sellPrice": 1,
                 "typeGen": TypeGenEnum.dCard,
                 "Type": "Card",
-                "cardData": null,
+                "cardData": undefined,
                 "dropChance": 1
             }),
         new DescItemBase("CardsD16", <CardItemModel>{
@@ -23391,7 +23391,7 @@ export const initSpecificItemRepo = () => {
                 "sellPrice": 1,
                 "typeGen": TypeGenEnum.dCard,
                 "Type": "Card",
-                "cardData": null,
+                "cardData": undefined,
                 "dropChance": 1
             }),
         new DescItemBase("CardsF2", <CardItemModel>{

@@ -21,7 +21,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Hp",
                         "skillIndex": 0,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Mana Booster": <TalentModel>{
                         "name": "Mana Booster",
@@ -34,7 +34,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Mp",
                         "skillIndex": 1,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Star Player": <TalentModel>{
                         "name": "Star Player",
@@ -47,7 +47,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Star Talent Point",
                         "skillIndex": 8,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Bucklered Up": <TalentModel>{
                         "name": "Bucklered Up",
@@ -60,7 +60,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{% Total Def",
                         "skillIndex": 9,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Sharpened Axe": <TalentModel>{
                         "name": "Sharpened Axe",
@@ -73,7 +73,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{ Base Weapon Power",
                         "skillIndex": 5,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Fist Of Rage": <TalentModel>{
                         "name": "Fist Of Rage",
@@ -86,7 +86,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Str",
                         "skillIndex": 10,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Quickness Boots": <TalentModel>{
                         "name": "Quickness Boots",
@@ -99,7 +99,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Agi",
                         "skillIndex": 11,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Book Of The Wise": <TalentModel>{
                         "name": "Book Of The Wise",
@@ -112,7 +112,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Wis",
                         "skillIndex": 12,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Lucky Clover": <TalentModel>{
                         "name": "Lucky Clover",
@@ -125,7 +125,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Luk",
                         "skillIndex": 13,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Gilded Sword": <TalentModel>{
                         "name": "Gilded Sword",
@@ -138,7 +138,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{% Damage",
                         "skillIndex": 6,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Happy Dude": <TalentModel>{
                         "name": "Happy Dude",
@@ -151,7 +151,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Exp Gain",
                         "skillIndex": 75,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Knucklebuster": <TalentModel>{
                         "name": "Knucklebuster",
@@ -164,7 +164,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Critical Damage",
                         "skillIndex": 76,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Feather Flight": <TalentModel>{
                         "name": "Feather Flight",
@@ -177,7 +177,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Move Speed",
                         "skillIndex": 77,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Extra Bags": <TalentModel>{
                         "name": "Extra Bags",
@@ -190,7 +190,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Mat Carry Cap",
                         "skillIndex": 78,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Sleepin' On The Job": <TalentModel>{
                         "name": "Sleepin' On The Job",
@@ -203,7 +203,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Afk Gains Rate",
                         "skillIndex": 79,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -270,7 +270,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Star Talent Point",
                         "skillIndex": 17,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Two Punch Man": <TalentModel>{
                         "name": "Two Punch Man",
@@ -283,7 +283,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "intervalAdd",
                         "lvlUpText": "+{% Dmg & +}% 2Nd Dmg",
                         "skillIndex": 18,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Gimme Gimme": <TalentModel>{
                         "name": "Gimme Gimme",
@@ -321,7 +321,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Effect",
                         "skillIndex": 20,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "F'luk'ey Fabrics": <TalentModel>{
                         "name": "F'luk'ey Fabrics",
@@ -334,7 +334,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Luk From Equips",
                         "skillIndex": 21,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Chaching!": <TalentModel>{
                         "name": "Chaching!",
@@ -347,7 +347,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Mo Money",
                         "skillIndex": 22,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Lucky Horseshoe": <TalentModel>{
                         "name": "Lucky Horseshoe",
@@ -360,7 +360,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Luk",
                         "skillIndex": 23,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Curse Of Mr Looty Booty": <TalentModel>{
                         "name": "Curse Of Mr Looty Booty",
@@ -373,7 +373,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "decay",
                         "lvlUpText": "+{% Drop & -}% Dmg",
                         "skillIndex": 24,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Its Your Birthday!": <TalentModel>{
                         "name": "Its Your Birthday!",
@@ -411,7 +411,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Spawn Chance",
                         "skillIndex": 26,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Reroll Pls": <TalentModel>{
                         "name": "Reroll Pls",
@@ -424,7 +424,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Chance",
                         "skillIndex": 27,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Cards Galore": <TalentModel>{
                         "name": "Cards Galore",
@@ -437,7 +437,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Card Drop Chance",
                         "skillIndex": 28,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Rares Everywhere!": <TalentModel>{
                         "name": "Rares Everywhere!",
@@ -450,7 +450,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Rare Drop Table Items",
                         "skillIndex": 29,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -492,7 +492,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Dmg",
                         "skillIndex": 31,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Printer Go Brrr": <TalentModel>{
                         "name": "Printer Go Brrr",
@@ -530,7 +530,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{% 3Rd Dmg & +} Other Dmg",
                         "skillIndex": 33,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "One Step Ahead": <TalentModel>{
                         "name": "One Step Ahead",
@@ -543,7 +543,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "Pawn To B{",
                         "skillIndex": 34,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Lucky Charms": <TalentModel>{
                         "name": "Lucky Charms",
@@ -556,7 +556,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Effect",
                         "skillIndex": 35,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Clever Clover Obols": <TalentModel>{
                         "name": "Clever Clover Obols",
@@ -569,7 +569,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Luk From Obols",
                         "skillIndex": 36,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Skilliest Statue": <TalentModel>{
                         "name": "Skilliest Statue",
@@ -582,7 +582,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Higher Bonuses",
                         "skillIndex": 37,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Bliss N Chips": <TalentModel>{
                         "name": "Bliss N Chips",
@@ -595,7 +595,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{ Max Lv & +} Max Lv",
                         "skillIndex": 38,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Colloquial Containers": <TalentModel>{
                         "name": "Colloquial Containers",
@@ -608,7 +608,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv For Sleep On Job",
                         "skillIndex": 39,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Maestro Transfusion": <TalentModel>{
                         "name": "Maestro Transfusion",
@@ -646,7 +646,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{% Max Exp Reduction",
                         "skillIndex": 41,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Left Hand Of Learning": <TalentModel>{
                         "name": "Left Hand Of Learning",
@@ -659,7 +659,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Skill Exp To Family",
                         "skillIndex": 42,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Right Hand Of Action": <TalentModel>{
                         "name": "Right Hand Of Action",
@@ -672,7 +672,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Skill Eff To Family",
                         "skillIndex": 43,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Jman Was Better": <TalentModel>{
                         "name": "Jman Was Better",
@@ -685,7 +685,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Journeyman Point",
                         "skillIndex": 44,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -704,7 +704,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Hp",
                         "skillIndex": 0,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Mana Booster": <TalentModel>{
                         "name": "Mana Booster",
@@ -717,7 +717,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Mp",
                         "skillIndex": 1,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Star Player": <TalentModel>{
                         "name": "Star Player",
@@ -730,7 +730,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Star Talent Point",
                         "skillIndex": 8,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Bucklered Up": <TalentModel>{
                         "name": "Bucklered Up",
@@ -743,7 +743,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{% Total Def",
                         "skillIndex": 9,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Sharpened Axe": <TalentModel>{
                         "name": "Sharpened Axe",
@@ -756,7 +756,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{ Base Weapon Power",
                         "skillIndex": 5,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Fist Of Rage": <TalentModel>{
                         "name": "Fist Of Rage",
@@ -769,7 +769,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Str",
                         "skillIndex": 10,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Quickness Boots": <TalentModel>{
                         "name": "Quickness Boots",
@@ -782,7 +782,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Agi",
                         "skillIndex": 11,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Book Of The Wise": <TalentModel>{
                         "name": "Book Of The Wise",
@@ -795,7 +795,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Wis",
                         "skillIndex": 12,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Lucky Clover": <TalentModel>{
                         "name": "Lucky Clover",
@@ -808,7 +808,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Luk",
                         "skillIndex": 13,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Gilded Sword": <TalentModel>{
                         "name": "Gilded Sword",
@@ -821,7 +821,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{% Damage",
                         "skillIndex": 6,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Brute Efficiency": <TalentModel>{
                         "name": "Brute Efficiency",
@@ -834,7 +834,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Efficiency",
                         "skillIndex": 85,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Meat Shank": <TalentModel>{
                         "name": "Meat Shank",
@@ -847,7 +847,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Damage",
                         "skillIndex": 86,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Critikill": <TalentModel>{
                         "name": "Critikill",
@@ -860,7 +860,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Critical Damage",
                         "skillIndex": 87,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Idle Brawling": <TalentModel>{
                         "name": "Idle Brawling",
@@ -873,7 +873,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Afk Gains Rate",
                         "skillIndex": 88,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Idle Skilling": <TalentModel>{
                         "name": "Idle Skilling",
@@ -886,7 +886,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Afk Gains Rate",
                         "skillIndex": 89,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -953,7 +953,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Hp",
                         "skillIndex": 92,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Double Strike": <TalentModel>{
                         "name": "Double Strike",
@@ -966,7 +966,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "{% Double Hit Chance",
                         "skillIndex": 93,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Firmly Grasp It": <TalentModel>{
                         "name": "Firmly Grasp It",
@@ -1004,7 +1004,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Effect",
                         "skillIndex": 95,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "'str'ess Tested Garb": <TalentModel>{
                         "name": "'str'ess Tested Garb",
@@ -1017,7 +1017,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Str From Equips",
                         "skillIndex": 96,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Carry A Big Stick": <TalentModel>{
                         "name": "Carry A Big Stick",
@@ -1030,7 +1030,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Weapon Power Effect",
                         "skillIndex": 97,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Absolute Unit": <TalentModel>{
                         "name": "Absolute Unit",
@@ -1043,7 +1043,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Str",
                         "skillIndex": 98,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Haungry For Gold": <TalentModel>{
                         "name": "Haungry For Gold",
@@ -1056,7 +1056,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Bonus",
                         "skillIndex": 99,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Big Pick": <TalentModel>{
                         "name": "Big Pick",
@@ -1094,7 +1094,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Efficiency",
                         "skillIndex": 101,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Motherlode Miner": <TalentModel>{
                         "name": "Motherlode Miner",
@@ -1107,7 +1107,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Multi-Ore Base Chance",
                         "skillIndex": 102,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Tool Proficiency": <TalentModel>{
                         "name": "Tool Proficiency",
@@ -1120,7 +1120,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Pow Per 10 Mining Lv",
                         "skillIndex": 103,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Tempestuous Emotions": <TalentModel>{
                         "name": "Tempestuous Emotions",
@@ -1133,7 +1133,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Exp Gain",
                         "skillIndex": 104,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -1250,7 +1250,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Double Count Chance",
                         "skillIndex": 109,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Apocalypse Zow": <TalentModel>{
                         "name": "Apocalypse Zow",
@@ -1263,7 +1263,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{% Dmg & +1 Mob Type",
                         "skillIndex": 110,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Fistful Of Obol": <TalentModel>{
                         "name": "Fistful Of Obol",
@@ -1276,7 +1276,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Str From Obols",
                         "skillIndex": 111,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Strongest Statues": <TalentModel>{
                         "name": "Strongest Statues",
@@ -1289,7 +1289,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Higher Bonuses",
                         "skillIndex": 112,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Str Summore": <TalentModel>{
                         "name": "Str Summore",
@@ -1302,7 +1302,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv",
                         "skillIndex": 81,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Beefy Bottles": <TalentModel>{
                         "name": "Beefy Bottles",
@@ -1315,7 +1315,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv For Critikill Talent",
                         "skillIndex": 114,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Worming Undercover": <TalentModel>{
                         "name": "Worming Undercover",
@@ -1353,7 +1353,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "intervalAdd",
                         "lvlUpText": "+{% Reward & +} Cap",
                         "skillIndex": 116,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "All Fish Diet": <TalentModel>{
                         "name": "All Fish Diet",
@@ -1366,7 +1366,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1.5% Fishing Exp",
                         "skillIndex": 117,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Catching Some Zzz's": <TalentModel>{
                         "name": "Catching Some Zzz's",
@@ -1379,7 +1379,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Fishing Away Gains",
                         "skillIndex": 118,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Back To Basics": <TalentModel>{
                         "name": "Back To Basics",
@@ -1392,7 +1392,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Talent Pt",
                         "skillIndex": 119,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -1484,7 +1484,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Mastery",
                         "skillIndex": 123,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Balanced Spirit": <TalentModel>{
                         "name": "Balanced Spirit",
@@ -1522,7 +1522,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Dmg If Acc Big",
                         "skillIndex": 125,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Fistful Of Obol": <TalentModel>{
                         "name": "Fistful Of Obol",
@@ -1535,7 +1535,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Str From Obols",
                         "skillIndex": 111,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Shieldiest Statues": <TalentModel>{
                         "name": "Shieldiest Statues",
@@ -1548,7 +1548,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Higher Bonuses",
                         "skillIndex": 127,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Str Summore": <TalentModel>{
                         "name": "Str Summore",
@@ -1561,7 +1561,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv",
                         "skillIndex": 81,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Blocky Bottles": <TalentModel>{
                         "name": "Blocky Bottles",
@@ -1574,7 +1574,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv For Meat Shank",
                         "skillIndex": 129,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Refinery Throttle": <TalentModel>{
                         "name": "Refinery Throttle",
@@ -1612,7 +1612,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Build Spd",
                         "skillIndex": 131,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Sharper Saws": <TalentModel>{
                         "name": "Sharper Saws",
@@ -1625,7 +1625,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Construction Exp",
                         "skillIndex": 132,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Super Samples": <TalentModel>{
                         "name": "Super Samples",
@@ -1638,7 +1638,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Sample Size",
                         "skillIndex": 133,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Back To Basics": <TalentModel>{
                         "name": "Back To Basics",
@@ -1651,7 +1651,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Talent Pt",
                         "skillIndex": 119,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -1743,7 +1743,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Claw Multihit Chance",
                         "skillIndex": 138,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Ferocity Strike": <TalentModel>{
                         "name": "Ferocity Strike",
@@ -1756,7 +1756,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "{% Chance",
                         "skillIndex": 139,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Tough Steaks": <TalentModel>{
                         "name": "Tough Steaks",
@@ -1769,7 +1769,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Wep Power Per 10 Lv",
                         "skillIndex": 140,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Charred Skulls": <TalentModel>{
                         "name": "Charred Skulls",
@@ -1782,7 +1782,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Kill Per Kill Per 1000",
                         "skillIndex": 141,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Skill Strengthen": <TalentModel>{
                         "name": "Skill Strengthen",
@@ -1795,7 +1795,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "intervalAdd",
                         "lvlUpText": "+{% Impact & } Str",
                         "skillIndex": 142,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Overblown Testosterone": <TalentModel>{
                         "name": "Overblown Testosterone",
@@ -1808,7 +1808,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{% Str & +} Max Lv",
                         "skillIndex": 143,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "The Family Guy": <TalentModel>{
                         "name": "The Family Guy",
@@ -1821,7 +1821,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Bonus",
                         "skillIndex": 144,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Taste Test": <TalentModel>{
                         "name": "Taste Test",
@@ -1859,7 +1859,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{% Bonus & +} Mob",
                         "skillIndex": 146,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Waiting To Cool": <TalentModel>{
                         "name": "Waiting To Cool",
@@ -1872,7 +1872,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Afk Gains Rate",
                         "skillIndex": 147,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Overflowing Ladle": <TalentModel>{
                         "name": "Overflowing Ladle",
@@ -1885,7 +1885,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Better Ladles",
                         "skillIndex": 148,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Symbols Of Beyond ~r": <TalentModel>{
                         "name": "Symbols Of Beyond ~r",
@@ -1898,7 +1898,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 All Lvs Every 20 Lvs",
                         "skillIndex": 149,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -1916,7 +1916,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Kill Per Kill Per 1000",
                         "skillIndex": 141,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Skill Strengthen": <TalentModel>{
                         "name": "Skill Strengthen",
@@ -1929,7 +1929,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "intervalAdd",
                         "lvlUpText": "+{% Impact & } Str",
                         "skillIndex": 142,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Overblown Testosterone": <TalentModel>{
                         "name": "Overblown Testosterone",
@@ -1942,7 +1942,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{% Str & +} Max Lv",
                         "skillIndex": 143,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "The Family Guy": <TalentModel>{
                         "name": "The Family Guy",
@@ -1955,7 +1955,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Bonus",
                         "skillIndex": 144,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Symbols Of Beyond ~r": <TalentModel>{
                         "name": "Symbols Of Beyond ~r",
@@ -1968,7 +1968,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 All Lvs Every 20 Lvs",
                         "skillIndex": 149,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -1987,7 +1987,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Hp",
                         "skillIndex": 0,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Mana Booster": <TalentModel>{
                         "name": "Mana Booster",
@@ -2000,7 +2000,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Mp",
                         "skillIndex": 1,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Star Player": <TalentModel>{
                         "name": "Star Player",
@@ -2013,7 +2013,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Star Talent Point",
                         "skillIndex": 8,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Bucklered Up": <TalentModel>{
                         "name": "Bucklered Up",
@@ -2026,7 +2026,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{% Total Def",
                         "skillIndex": 9,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Sharpened Axe": <TalentModel>{
                         "name": "Sharpened Axe",
@@ -2039,7 +2039,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{ Base Weapon Power",
                         "skillIndex": 5,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Fist Of Rage": <TalentModel>{
                         "name": "Fist Of Rage",
@@ -2052,7 +2052,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Str",
                         "skillIndex": 10,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Quickness Boots": <TalentModel>{
                         "name": "Quickness Boots",
@@ -2065,7 +2065,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Agi",
                         "skillIndex": 11,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Book Of The Wise": <TalentModel>{
                         "name": "Book Of The Wise",
@@ -2078,7 +2078,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Wis",
                         "skillIndex": 12,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Lucky Clover": <TalentModel>{
                         "name": "Lucky Clover",
@@ -2091,7 +2091,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Luk",
                         "skillIndex": 13,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Gilded Sword": <TalentModel>{
                         "name": "Gilded Sword",
@@ -2104,7 +2104,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{% Damage",
                         "skillIndex": 6,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Elusive Efficiency": <TalentModel>{
                         "name": "Elusive Efficiency",
@@ -2117,7 +2117,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Efficiency",
                         "skillIndex": 263,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Featherweight": <TalentModel>{
                         "name": "Featherweight",
@@ -2130,7 +2130,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Move Speed",
                         "skillIndex": 266,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "I See You": <TalentModel>{
                         "name": "I See You",
@@ -2143,7 +2143,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Crit Chance",
                         "skillIndex": 267,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Idle Shooting": <TalentModel>{
                         "name": "Idle Shooting",
@@ -2156,7 +2156,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Afk Gains Rate",
                         "skillIndex": 268,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Broken Time": <TalentModel>{
                         "name": "Broken Time",
@@ -2169,7 +2169,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Production Speed",
                         "skillIndex": 269,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -2236,7 +2236,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Hp And Mp",
                         "skillIndex": 272,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Strafe": <TalentModel>{
                         "name": "Strafe",
@@ -2274,7 +2274,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Chance",
                         "skillIndex": 274,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Veins Of The Infernal": <TalentModel>{
                         "name": "Veins Of The Infernal",
@@ -2287,7 +2287,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Damage",
                         "skillIndex": 284,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Garb Of Un'agi'ng Quality": <TalentModel>{
                         "name": "Garb Of Un'agi'ng Quality",
@@ -2300,7 +2300,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Agi From Equips",
                         "skillIndex": 276,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "High Polymer Limbs": <TalentModel>{
                         "name": "High Polymer Limbs",
@@ -2313,7 +2313,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Weapon Power Effect",
                         "skillIndex": 277,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Sanic Speed": <TalentModel>{
                         "name": "Sanic Speed",
@@ -2326,7 +2326,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Agi",
                         "skillIndex": 278,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Robbinghood": <TalentModel>{
                         "name": "Robbinghood",
@@ -2339,7 +2339,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Rarity",
                         "skillIndex": 279,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Smeltin' Erryday": <TalentModel>{
                         "name": "Smeltin' Erryday",
@@ -2352,7 +2352,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "intervalAdd",
                         "lvlUpText": "+{% For } Forge Secs",
                         "skillIndex": 280,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Acme Anvil": <TalentModel>{
                         "name": "Acme Anvil",
@@ -2365,7 +2365,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Extra Pts",
                         "skillIndex": 281,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Yea I Already Know": <TalentModel>{
                         "name": "Yea I Already Know",
@@ -2378,7 +2378,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "intervalAdd",
                         "lvlUpText": "+{% Exp, And +}% Cap",
                         "skillIndex": 282,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Godly Creation": <TalentModel>{
                         "name": "Godly Creation",
@@ -2391,7 +2391,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Chance",
                         "skillIndex": 283,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Focused Soul": <TalentModel>{
                         "name": "Focused Soul",
@@ -2404,7 +2404,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Exp Gain In Spec Skills",
                         "skillIndex": 265,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -2471,7 +2471,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Trigger Chance",
                         "skillIndex": 287,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Extendo Rangeo": <TalentModel>{
                         "name": "Extendo Rangeo",
@@ -2509,7 +2509,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Lower Cooldowns",
                         "skillIndex": 289,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Speedna": <TalentModel>{
                         "name": "Speedna",
@@ -2522,7 +2522,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Damage",
                         "skillIndex": 290,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Shoeful Of Obol": <TalentModel>{
                         "name": "Shoeful Of Obol",
@@ -2535,7 +2535,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Agi",
                         "skillIndex": 291,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Shwifty Statues": <TalentModel>{
                         "name": "Shwifty Statues",
@@ -2548,7 +2548,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Higher Bonuses",
                         "skillIndex": 292,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Agi Again": <TalentModel>{
                         "name": "Agi Again",
@@ -2561,7 +2561,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv",
                         "skillIndex": 293,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Velocity Vessels": <TalentModel>{
                         "name": "Velocity Vessels",
@@ -2574,7 +2574,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv Cap",
                         "skillIndex": 294,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Teleki'net'ic Logs": <TalentModel>{
                         "name": "Teleki'net'ic Logs",
@@ -2587,7 +2587,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Efficiency",
                         "skillIndex": 295,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Briar Patch Runner": <TalentModel>{
                         "name": "Briar Patch Runner",
@@ -2600,7 +2600,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Effect",
                         "skillIndex": 296,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Bug Enthusiast": <TalentModel>{
                         "name": "Bug Enthusiast",
@@ -2613,7 +2613,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Catching Exp",
                         "skillIndex": 297,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Sunset On The Hives": <TalentModel>{
                         "name": "Sunset On The Hives",
@@ -2626,7 +2626,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Away Gains",
                         "skillIndex": 298,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Previous Points": <TalentModel>{
                         "name": "Previous Points",
@@ -2639,7 +2639,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Talent Pt",
                         "skillIndex": 299,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -2756,7 +2756,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Chance",
                         "skillIndex": 304,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Looty Mc Shooty": <TalentModel>{
                         "name": "Looty Mc Shooty",
@@ -2769,7 +2769,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Damage",
                         "skillIndex": 305,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Shoeful Of Obol": <TalentModel>{
                         "name": "Shoeful Of Obol",
@@ -2782,7 +2782,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Agi",
                         "skillIndex": 291,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Straightshot Statues": <TalentModel>{
                         "name": "Straightshot Statues",
@@ -2795,7 +2795,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Higher Bonuses",
                         "skillIndex": 307,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Agi Again": <TalentModel>{
                         "name": "Agi Again",
@@ -2808,7 +2808,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv",
                         "skillIndex": 293,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Visibility Vessels": <TalentModel>{
                         "name": "Visibility Vessels",
@@ -2821,7 +2821,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv For Icu",
                         "skillIndex": 309,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Eagle Eye": <TalentModel>{
                         "name": "Eagle Eye",
@@ -2859,7 +2859,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Trap Efficiency",
                         "skillIndex": 311,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Shroom Bait": <TalentModel>{
                         "name": "Shroom Bait",
@@ -2872,7 +2872,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Trapping Exp",
                         "skillIndex": 312,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Reflective Eyesight": <TalentModel>{
                         "name": "Reflective Eyesight",
@@ -2885,7 +2885,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{X Shiny Chance",
                         "skillIndex": 313,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Previous Points": <TalentModel>{
                         "name": "Previous Points",
@@ -2898,7 +2898,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Talent Pt",
                         "skillIndex": 299,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -2915,7 +2915,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Kill Per Kill Per 1000",
                         "skillIndex": 366,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Skill Ambidexterity": <TalentModel>{
                         "name": "Skill Ambidexterity",
@@ -2928,7 +2928,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "intervalAdd",
                         "lvlUpText": "+{% Impact & } Agi",
                         "skillIndex": 367,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Adaptation Revelation": <TalentModel>{
                         "name": "Adaptation Revelation",
@@ -2941,7 +2941,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{% Agi & +} Max Lv",
                         "skillIndex": 368,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "The Family Guy": <TalentModel>{
                         "name": "The Family Guy",
@@ -2954,7 +2954,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Bonus",
                         "skillIndex": 144,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Symbols Of Beyond ~g": <TalentModel>{
                         "name": "Symbols Of Beyond ~g",
@@ -2967,7 +2967,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 All Lvs Every 20 Lvs",
                         "skillIndex": 374,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -3086,7 +3086,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Chance",
                         "skillIndex": 364,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Animalistic Ferocity": <TalentModel>{
                         "name": "Animalistic Ferocity",
@@ -3099,7 +3099,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Wep Pow Based On Pet Pow",
                         "skillIndex": 365,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Stacked Skulls": <TalentModel>{
                         "name": "Stacked Skulls",
@@ -3112,7 +3112,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Kill Per Kill Per 1000",
                         "skillIndex": 366,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Skill Ambidexterity": <TalentModel>{
                         "name": "Skill Ambidexterity",
@@ -3125,7 +3125,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "intervalAdd",
                         "lvlUpText": "+{% Impact & } Agi",
                         "skillIndex": 367,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Adaptation Revelation": <TalentModel>{
                         "name": "Adaptation Revelation",
@@ -3138,7 +3138,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{% Agi & +} Max Lv",
                         "skillIndex": 368,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "The Family Guy": <TalentModel>{
                         "name": "The Family Guy",
@@ -3151,7 +3151,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Bonus",
                         "skillIndex": 144,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Arena Spirit": <TalentModel>{
                         "name": "Arena Spirit",
@@ -3189,7 +3189,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Chance For Egg",
                         "skillIndex": 371,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Shining Beacon Of Egg": <TalentModel>{
                         "name": "Shining Beacon Of Egg",
@@ -3202,7 +3202,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Breeding Exp",
                         "skillIndex": 372,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Curviture Of The Paw": <TalentModel>{
                         "name": "Curviture Of The Paw",
@@ -3215,7 +3215,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{X Pet Power When Hatched",
                         "skillIndex": 373,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Symbols Of Beyond ~g": <TalentModel>{
                         "name": "Symbols Of Beyond ~g",
@@ -3228,7 +3228,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 All Lvs Every 20 Lvs",
                         "skillIndex": 374,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -3245,7 +3245,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Hp",
                         "skillIndex": 0,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Mana Booster": <TalentModel>{
                         "name": "Mana Booster",
@@ -3258,7 +3258,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Mp",
                         "skillIndex": 1,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Star Player": <TalentModel>{
                         "name": "Star Player",
@@ -3271,7 +3271,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Star Talent Point",
                         "skillIndex": 8,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Bucklered Up": <TalentModel>{
                         "name": "Bucklered Up",
@@ -3284,7 +3284,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{% Total Def",
                         "skillIndex": 9,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Sharpened Axe": <TalentModel>{
                         "name": "Sharpened Axe",
@@ -3297,7 +3297,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{ Base Weapon Power",
                         "skillIndex": 5,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Fist Of Rage": <TalentModel>{
                         "name": "Fist Of Rage",
@@ -3310,7 +3310,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Str",
                         "skillIndex": 10,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Quickness Boots": <TalentModel>{
                         "name": "Quickness Boots",
@@ -3323,7 +3323,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Agi",
                         "skillIndex": 11,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Book Of The Wise": <TalentModel>{
                         "name": "Book Of The Wise",
@@ -3336,7 +3336,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Wis",
                         "skillIndex": 12,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Lucky Clover": <TalentModel>{
                         "name": "Lucky Clover",
@@ -3349,7 +3349,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Luk",
                         "skillIndex": 13,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Gilded Sword": <TalentModel>{
                         "name": "Gilded Sword",
@@ -3362,7 +3362,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "_",
                         "lvlUpText": "+{% Damage",
                         "skillIndex": 6,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Smart Efficiency": <TalentModel>{
                         "name": "Smart Efficiency",
@@ -3375,7 +3375,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Efficiency",
                         "skillIndex": 445,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Overclocked Energy": <TalentModel>{
                         "name": "Overclocked Energy",
@@ -3388,7 +3388,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Damage",
                         "skillIndex": 446,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Farsight": <TalentModel>{
                         "name": "Farsight",
@@ -3401,7 +3401,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "decay",
                         "lvlUpText": "+{% Chance, +}% Dmg",
                         "skillIndex": 447,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Idle Casting": <TalentModel>{
                         "name": "Idle Casting",
@@ -3414,7 +3414,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Afk Gains Rate",
                         "skillIndex": 448,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Active Afk'er": <TalentModel>{
                         "name": "Active Afk'er",
@@ -3427,7 +3427,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Afk Gains Rate",
                         "skillIndex": 449,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -3494,7 +3494,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Mp",
                         "skillIndex": 452,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Teleport": <TalentModel>{
                         "name": "Teleport",
@@ -3532,7 +3532,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "bigBase",
                         "lvlUpText": "+{% Chance & +}% Dmg",
                         "skillIndex": 454,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Knowledge Is Power": <TalentModel>{
                         "name": "Knowledge Is Power",
@@ -3545,7 +3545,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Effect",
                         "skillIndex": 455,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Unt'wis'ted Robes": <TalentModel>{
                         "name": "Unt'wis'ted Robes",
@@ -3558,7 +3558,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Wis From Equips",
                         "skillIndex": 456,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Power Overwhelming": <TalentModel>{
                         "name": "Power Overwhelming",
@@ -3571,7 +3571,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Weapon Power Effect",
                         "skillIndex": 457,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Free Meal": <TalentModel>{
                         "name": "Free Meal",
@@ -3584,7 +3584,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Non-Consume Chance",
                         "skillIndex": 458,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Individual Insight": <TalentModel>{
                         "name": "Individual Insight",
@@ -3597,7 +3597,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Wis",
                         "skillIndex": 459,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Log On Logs": <TalentModel>{
                         "name": "Log On Logs",
@@ -3635,7 +3635,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Efficiency",
                         "skillIndex": 461,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Deforesting All Doubt": <TalentModel>{
                         "name": "Deforesting All Doubt",
@@ -3648,7 +3648,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Effect",
                         "skillIndex": 462,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Inner Peace": <TalentModel>{
                         "name": "Inner Peace",
@@ -3661,7 +3661,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Exp Gain",
                         "skillIndex": 464,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Choppin It Up Ez": <TalentModel>{
                         "name": "Choppin It Up Ez",
@@ -3674,7 +3674,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "decay",
                         "lvlUpText": "+{% Rewards & +}% Dmg",
                         "skillIndex": 463,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -3816,7 +3816,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Damage",
                         "skillIndex": 470,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Occult Obols": <TalentModel>{
                         "name": "Occult Obols",
@@ -3829,7 +3829,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Wis",
                         "skillIndex": 486,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Staring Statues": <TalentModel>{
                         "name": "Staring Statues",
@@ -3842,7 +3842,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Higher Bonuses",
                         "skillIndex": 472,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Wis Wumbo": <TalentModel>{
                         "name": "Wis Wumbo",
@@ -3855,7 +3855,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv",
                         "skillIndex": 488,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Fuscia Flasks": <TalentModel>{
                         "name": "Fuscia Flasks",
@@ -3868,7 +3868,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv Cap",
                         "skillIndex": 474,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Charge Syphon": <TalentModel>{
                         "name": "Charge Syphon",
@@ -3906,7 +3906,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Worship Eff.",
                         "skillIndex": 476,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Bless Up": <TalentModel>{
                         "name": "Bless Up",
@@ -3919,7 +3919,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Worship Exp",
                         "skillIndex": 477,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Nearby Outlet": <TalentModel>{
                         "name": "Nearby Outlet",
@@ -3932,7 +3932,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{X Charge Rate",
                         "skillIndex": 478,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Earlier Education": <TalentModel>{
                         "name": "Earlier Education",
@@ -3945,7 +3945,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Talent Pt",
                         "skillIndex": 494,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -4037,7 +4037,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "intervalAdd",
                         "lvlUpText": "+{% Chance",
                         "skillIndex": 483,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Instant Invincibility": <TalentModel>{
                         "name": "Instant Invincibility",
@@ -4050,7 +4050,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ More Seconds",
                         "skillIndex": 484,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Virile Vials": <TalentModel>{
                         "name": "Virile Vials",
@@ -4063,7 +4063,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Damage",
                         "skillIndex": 485,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Occult Obols": <TalentModel>{
                         "name": "Occult Obols",
@@ -4076,7 +4076,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Wis",
                         "skillIndex": 486,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Stupendous Statues": <TalentModel>{
                         "name": "Stupendous Statues",
@@ -4089,7 +4089,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Higher Bonuses",
                         "skillIndex": 487,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Wis Wumbo": <TalentModel>{
                         "name": "Wis Wumbo",
@@ -4102,7 +4102,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv",
                         "skillIndex": 488,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Fantasia Flasks": <TalentModel>{
                         "name": "Fantasia Flasks",
@@ -4115,7 +4115,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Max Lv Cap",
                         "skillIndex": 489,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Cranium Cooking": <TalentModel>{
                         "name": "Cranium Cooking",
@@ -4153,7 +4153,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Brew Effect",
                         "skillIndex": 491,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Bubble Breakthrough": <TalentModel>{
                         "name": "Bubble Breakthrough",
@@ -4166,7 +4166,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{% Exp & +}% Chance",
                         "skillIndex": 492,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Sharing Some Smarts": <TalentModel>{
                         "name": "Sharing Some Smarts",
@@ -4179,7 +4179,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Alch Exp",
                         "skillIndex": 493,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Earlier Education": <TalentModel>{
                         "name": "Earlier Education",
@@ -4192,7 +4192,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 Talent Pt",
                         "skillIndex": 494,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -4209,7 +4209,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Kill Per Kill Per 1000",
                         "skillIndex": 531,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Skill Wiz": <TalentModel>{
                         "name": "Skill Wiz",
@@ -4222,7 +4222,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "intervalAdd",
                         "lvlUpText": "+{% Impact & +} Wis",
                         "skillIndex": 532,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Utmost Intellect": <TalentModel>{
                         "name": "Utmost Intellect",
@@ -4235,7 +4235,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{% Wis & +} Max Lv",
                         "skillIndex": 533,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "The Family Guy": <TalentModel>{
                         "name": "The Family Guy",
@@ -4248,7 +4248,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Bonus",
                         "skillIndex": 144,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Symbols Of Beyond ~p": <TalentModel>{
                         "name": "Symbols Of Beyond ~p",
@@ -4261,7 +4261,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 All Lvs Every 20 Lvs",
                         "skillIndex": 539,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -4354,7 +4354,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Chance",
                         "skillIndex": 528,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Raise Dead": <TalentModel>{
                         "name": "Raise Dead",
@@ -4392,7 +4392,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Wep Power Per 10 Lv",
                         "skillIndex": 530,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Memorial Skulls": <TalentModel>{
                         "name": "Memorial Skulls",
@@ -4405,7 +4405,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Kill Per Kill Per 1000",
                         "skillIndex": 531,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Skill Wiz": <TalentModel>{
                         "name": "Skill Wiz",
@@ -4418,7 +4418,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "intervalAdd",
                         "lvlUpText": "+{% Impact & +} Wis",
                         "skillIndex": 532,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Utmost Intellect": <TalentModel>{
                         "name": "Utmost Intellect",
@@ -4431,7 +4431,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "add",
                         "lvlUpText": "+{% Wis & +} Max Lv",
                         "skillIndex": 533,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "The Family Guy": <TalentModel>{
                         "name": "The Family Guy",
@@ -4444,7 +4444,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Bonus",
                         "skillIndex": 144,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Purple Tube": <TalentModel>{
                         "name": "Purple Tube",
@@ -4457,7 +4457,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Width For Righties",
                         "skillIndex": 535,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Green Tube": <TalentModel>{
                         "name": "Green Tube",
@@ -4470,7 +4470,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Exp For Lefties",
                         "skillIndex": 536,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Essence Transferral": <TalentModel>{
                         "name": "Essence Transferral",
@@ -4483,7 +4483,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% More Exp Funneled",
                         "skillIndex": 537,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Upload Squared": <TalentModel>{
                         "name": "Upload Squared",
@@ -4496,7 +4496,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Xp And Eff",
                         "skillIndex": 538,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Symbols Of Beyond ~p": <TalentModel>{
                         "name": "Symbols Of Beyond ~p",
@@ -4509,7 +4509,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+1 All Lvs Every 20 Lvs",
                         "skillIndex": 539,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -4527,7 +4527,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "{ Sec Respawn",
                         "skillIndex": 615,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Beginner Best Class": <TalentModel>{
                         "name": "Beginner Best Class",
@@ -4540,7 +4540,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Weapon Pow Cap",
                         "skillIndex": 616,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Studious Quester": <TalentModel>{
                         "name": "Studious Quester",
@@ -4553,7 +4553,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Quest Exp",
                         "skillIndex": 617,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Quest Chungus": <TalentModel>{
                         "name": "Quest Chungus",
@@ -4566,7 +4566,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Luk Cap",
                         "skillIndex": 618,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Crystals 4 Dayys": <TalentModel>{
                         "name": "Crystals 4 Dayys",
@@ -4579,7 +4579,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Spawn Rate",
                         "skillIndex": 619,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Will Of The Eldest": <TalentModel>{
                         "name": "Will Of The Eldest",
@@ -4592,7 +4592,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ All Stat Cap",
                         "skillIndex": 620,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Tick Tock": <TalentModel>{
                         "name": "Tick Tock",
@@ -4605,7 +4605,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Away Gain Rate",
                         "skillIndex": 621,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Stonks!": <TalentModel>{
                         "name": "Stonks!",
@@ -4618,7 +4618,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "Even Stonkier!",
                         "skillIndex": 622,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Roll Da Dice": <TalentModel>{
                         "name": "Roll Da Dice",
@@ -4656,7 +4656,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Attack Afk Effect",
                         "skillIndex": 624,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Toilet Paper Postage": <TalentModel>{
                         "name": "Toilet Paper Postage",
@@ -4669,7 +4669,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{X Higher Bonus",
                         "skillIndex": 625,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Exp Converter": <TalentModel>{
                         "name": "Exp Converter",
@@ -4707,7 +4707,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Hp Regen Per Kill",
                         "skillIndex": 627,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -4724,7 +4724,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Class Exp",
                         "skillIndex": 632,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Frothy Malk": <TalentModel>{
                         "name": "Frothy Malk",
@@ -4737,7 +4737,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Boost Food Effect",
                         "skillIndex": 631,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Convert Better, Darnit!": <TalentModel>{
                         "name": "Convert Better, Darnit!",
@@ -4750,7 +4750,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{X More Class Exp",
                         "skillIndex": 630,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Pulsation": <TalentModel>{
                         "name": "Pulsation",
@@ -4763,7 +4763,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Mana Regen Rate",
                         "skillIndex": 629,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Cardiovascular!": <TalentModel>{
                         "name": "Cardiovascular!",
@@ -4776,7 +4776,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Card Drop Chance",
                         "skillIndex": 628,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Milkyway Candies": <TalentModel>{
                         "name": "Milkyway Candies",
@@ -4789,7 +4789,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Candy Drop",
                         "skillIndex": 633,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Telekinetic Storage": <TalentModel>{
                         "name": "Telekinetic Storage",
@@ -4852,7 +4852,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Base Efficiency",
                         "skillIndex": 636,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Action Frenzy": <TalentModel>{
                         "name": "Action Frenzy",
@@ -4865,7 +4865,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Skilling Speed",
                         "skillIndex": 637,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Dungeonic Damage": <TalentModel>{
                         "name": "Dungeonic Damage",
@@ -4878,7 +4878,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Dmg Per Pow 10 Creds",
                         "skillIndex": 638,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Shrine Architect": <TalentModel>{
                         "name": "Shrine Architect",
@@ -4916,7 +4916,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "bigBase",
                         "lvlUpText": "+{% Chance &+}% Dmg",
                         "skillIndex": 640,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),
@@ -4933,7 +4933,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "decay",
                         "lvlUpText": "+{% Spd Or +}% Acc",
                         "skillIndex": 641,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Ubercharged Health": <TalentModel>{
                         "name": "Ubercharged Health",
@@ -4946,7 +4946,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{ Base Hp",
                         "skillIndex": 642,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Coins For Charon": <TalentModel>{
                         "name": "Coins For Charon",
@@ -4959,7 +4959,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Cash Per Tier",
                         "skillIndex": 643,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "American Tipper": <TalentModel>{
                         "name": "American Tipper",
@@ -4972,7 +4972,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Cash",
                         "skillIndex": 644,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Overaccurate Crit": <TalentModel>{
                         "name": "Overaccurate Crit",
@@ -4985,7 +4985,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Crit Chance",
                         "skillIndex": 645,
-                        "activeData": null
+                        "activeData": undefined
                     },
                     "Spice Spillage": <TalentModel>{
                         "name": "Spice Spillage",
@@ -4998,7 +4998,7 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Chance",
                         "skillIndex": 651,
-                        "activeData": null
+                        "activeData": undefined
                     }
                 }
             }),

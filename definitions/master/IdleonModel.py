@@ -487,6 +487,8 @@ class TSEncoder(json.JSONEncoder):
 			o = o.replace("\n", "\\n")
 			o = o.replace("\\", "")
 			return f'"{o}"'
+		elif o is None:
+			return "undefined"
 		else:
 			return json.dumps(o)
 

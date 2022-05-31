@@ -4,7 +4,7 @@ export interface CommonItemModel {
     internalID: string,
     displayName: string,
     sellPrice: number,
-    typeGen: TypeGen,
+    typeGen: TypeGenEnum,
     ID: number,
     Type: string,
     lvReqToCraft: number

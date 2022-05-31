@@ -2,7 +2,7 @@ import { AbilityTypeEnum } from '../enum/abilityTypeEnum';
 
 export interface PetGeneModel {
     name: string,
-    abilityType: AbilityType,
+    abilityType: AbilityTypeEnum,
     x2: number,
     lowerLetter: string,
     upperLetter: string,

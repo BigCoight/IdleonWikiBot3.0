@@ -4,6 +4,6 @@ export interface BaseItemModel {
     internalName: string,
     displayName: string,
     sellPrice: number,
-    typeGen: TypeGen,
+    typeGen: TypeGenEnum,
     Type: string
 }

@@ -7,5 +7,5 @@ export interface FishPoolModel {
     efficiency: number,
     cardDrop: string,
     cardChance: number,
-    pool: PoolType
+    pool: PoolTypeEnum
 }

@@ -34,6 +34,7 @@ from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
 from repositories.item.sources.SourceRepo import SourceRepo
 from repositories.misc.AchievementRepo import AchievementRepo
 from repositories.misc.CardSetRepo import CardSetRepo
+from repositories.misc.ColosseumRepo import ColosseumRepo
 from repositories.misc.ConstellationsRepo import ConstellationsRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
@@ -158,3 +159,4 @@ SigilRepo.initialise(codeReader)
 SkullShopRepo.initialise(codeReader)
 
 RandoListRepo.initialise(codeReader)
+ColosseumRepo.initialise(codeReader)

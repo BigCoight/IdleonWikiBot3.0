@@ -1,4 +1,4 @@
-from typing import Tuple, Union, Dict, Callable
+from typing import Union, Dict, Callable, List
 
 from pydantic import validator
 
@@ -26,7 +26,7 @@ class EnemyDetails(IdleonModel):
 	ExpType: Integer
 	Defence: Integer
 	MoveSPEED: Integer
-	Damages: Tuple[Integer, Integer]
+	Damages: List[Integer]
 	DefFor0: Integer = 0
 
 	@validator("DefFor0", always = True, )

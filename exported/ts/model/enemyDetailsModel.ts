@@ -3,7 +3,7 @@ import { EnemyTypeEnum } from '../enum/enemyTypeEnum';
 
 export interface EnemyDetailsModel {
     Name: string,
-    AFKtype: AFKType,
+    AFKtype: AFKTypeEnum,
     MonsterFace: number,
     MonsterOffsetX: number,
     MonsterOffsetY: number,
@@ -13,12 +13,12 @@ export interface EnemyDetailsModel {
     RespawnTime: number,
     DeathFrame: number,
     MonsterHPTotal: number,
-    Type: EnemyType,
+    Type: EnemyTypeEnum,
     SpecialType: string,
     ExpGiven: number,
     ExpType: number,
     Defence: number,
     MoveSPEED: number,
-    Damages: number,
+    Damages: number[],
     DefFor0?: number
 }

@@ -70,7 +70,7 @@ class ModelConverter:
 		if defin := self.defs.get(typ):
 			if "enum" in defin:
 				self.addImport(typ + "Enum")
-				return typ
+				return typ + "Enum"
 
 		self.addImport(typ + "Model")
 		return typ + "Model"

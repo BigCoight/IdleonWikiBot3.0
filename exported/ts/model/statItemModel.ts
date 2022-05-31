@@ -5,7 +5,7 @@ import { TypeGenEnum } from '../enum/typeGenEnum';
 export interface StatItemModel extends BaseItemModel {
     lvReqToCraft: number,
     lvReqToEquip: number,
-    Class: ClassType,
+    Class: ClassTypeEnum,
     Weapon_Power: number,
     STR: number,
     AGI: number,

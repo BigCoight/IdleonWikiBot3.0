@@ -1,4 +1,4 @@
-export enum PoolType {
+export enum PoolTypeEnum {
     FishSmall = "FishSmall",
     FishMed = "FishMed"
 }

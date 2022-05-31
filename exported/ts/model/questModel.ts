@@ -1,7 +1,7 @@
 import { ComponentModel } from './componentModel';
 import { DialogueLineModel } from './dialogueLineModel';
 import { NoteModel } from './noteModel';
-import { QuestType } from './questType';
+import { QuestTypeEnum } from '../enum/questTypeEnum';
 
 export interface QuestModel extends DialogueLineModel {
     ConsumeItems: boolean,

@@ -1,6 +1,6 @@
-import { ClassType } from './classType';
+import { ClassTypeEnum } from '../enum/classTypeEnum';
 import { StatItemModel } from './statItemModel';
-import { TypeGen } from './typeGen';
+import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface KeychainItemModel extends StatItemModel {
 

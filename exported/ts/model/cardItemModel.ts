@@ -1,6 +1,6 @@
 import { BaseItemModel } from './baseItemModel';
 import { CardDataModel } from './cardDataModel';
-import { TypeGen } from './typeGen';
+import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface CardItemModel extends BaseItemModel {
     cardData?: CardDataModel,

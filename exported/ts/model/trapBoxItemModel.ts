@@ -1,7 +1,7 @@
-import { ClassType } from './classType';
+import { ClassTypeEnum } from '../enum/classTypeEnum';
 import { ToolItemModel } from './toolItemModel';
 import { TrapBoxModel } from './trapBoxModel';
-import { TypeGen } from './typeGen';
+import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface TrapBoxItemModel extends ToolItemModel {
     trapBoxData: TrapBoxModel

@@ -1,4 +1,4 @@
-export enum TypeGen {
+export enum TypeGenEnum {
     NothingERROR = "NothingERROR",
     aShoes = "aShoes",
     dStone = "dStone",

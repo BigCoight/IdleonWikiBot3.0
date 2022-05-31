@@ -1,5 +1,5 @@
 import { CommonItemModel } from './commonItemModel';
-import { TypeGen } from './typeGen';
+import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface QuestItemModel extends CommonItemModel {
     desc_line1: string,

@@ -1,4 +1,4 @@
-export enum BagType {
+export enum BagTypeEnum {
     Foods = "Foods",
     Chopping = "Chopping",
     bCraft = "bCraft",

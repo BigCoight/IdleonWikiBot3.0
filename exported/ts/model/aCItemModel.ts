@@ -1,5 +1,5 @@
 import { DescItemModel } from './descItemModel';
-import { TypeGen } from './typeGen';
+import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface ACItemModel extends DescItemModel {
 

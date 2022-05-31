@@ -1,5 +1,5 @@
 import { BaseItemModel } from './baseItemModel';
-import { TypeGen } from './typeGen';
+import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface DescItemModel extends BaseItemModel {
     description: string

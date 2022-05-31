@@ -1,9 +1,8 @@
-from enum import Enum
-
 from definitions.common.EnumMeta import CheckIn
+from definitions.master.IdleonEnum import IdleonEnum
 
 
-class AFKType(str, Enum, metaclass = CheckIn):
+class AFKType(str, IdleonEnum, metaclass = CheckIn):
 	Catching = 'Catching'
 	Mining = 'Mining'
 	Error = 'Error'

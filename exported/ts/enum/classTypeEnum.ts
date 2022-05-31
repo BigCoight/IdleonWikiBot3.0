@@ -1,4 +1,4 @@
-export enum ClassType {
+export enum ClassTypeEnum {
     All = "All",
     Mage = "Mage",
     Warrior = "Warrior",

@@ -1,4 +1,4 @@
-import { QuestType } from './questType';
+import { QuestTypeEnum } from '../enum/questTypeEnum';
 
 export interface DialogueLineModel {
     Type: QuestType,

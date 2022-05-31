@@ -1,4 +1,4 @@
-export enum AbilityType {
+export enum AbilityTypeEnum {
     Red = "Red",
     Green = "Green",
     Special = "Special",

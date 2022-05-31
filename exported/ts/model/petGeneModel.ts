@@ -1,4 +1,4 @@
-import { AbilityType } from './abilityType';
+import { AbilityTypeEnum } from '../enum/abilityTypeEnum';
 
 export interface PetGeneModel {
     name: string,

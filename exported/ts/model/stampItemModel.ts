@@ -1,6 +1,6 @@
 import { BonusItemModel } from './bonusItemModel';
 import { StampDataModel } from './stampDataModel';
-import { TypeGen } from './typeGen';
+import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface StampItemModel extends BonusItemModel {
     ID: number,

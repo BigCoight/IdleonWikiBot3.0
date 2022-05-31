@@ -1,4 +1,4 @@
-import { PoolType } from './poolType';
+import { PoolTypeEnum } from '../enum/poolTypeEnum';
 
 export interface FishPoolModel {
     fish: string,

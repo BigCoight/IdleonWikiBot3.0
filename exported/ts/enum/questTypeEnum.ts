@@ -1,4 +1,4 @@
-export enum QuestType {
+export enum QuestTypeEnum {
     NoQuest = "NoQuest",
     Custom = "Custom",
     ItemsAndSpaceRequired = "ItemsAndSpaceRequired",

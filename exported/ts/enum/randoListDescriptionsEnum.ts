@@ -1,4 +1,4 @@
-export enum RandoListDescriptions {
+export enum RandoListDescriptionsEnum {
     monstersInGrasslands = "monstersInGrasslands",
     monstersInDesert = "monstersInDesert",
     noItemsRemoveFromAnvTab1 = "noItemsRemoveFromAnvTab1",

@@ -1,4 +1,4 @@
-export enum EnemyType {
+export enum EnemyTypeEnum {
     monsterType = "monsterType",
     oreType = "oreType",
     treeType = "treeType",

@@ -221,5 +221,8 @@ def toLowerCamel(imp: str) -> str:
 def extractImportsClass(imports: Set[str]) -> str:
 	res = []
 	for imp in sorted(imports):
+		if "Enum" in imp:
+			res.append("import { "f"{imp}"" } from "f"'../enum/{toLowerCamel(imp)}';")
+			continue
 		res.append("import { "f"{imp}"" } from "f"'../model/{toLowerCamel(imp)}';")
 	return "\n".join(res) + '\n\n'

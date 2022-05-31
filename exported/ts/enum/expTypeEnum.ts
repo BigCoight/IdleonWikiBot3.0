@@ -1,4 +1,4 @@
-export enum ExpType {
+export enum ExpTypeEnum {
     Class = "Class",
     Mining = "Mining",
     Smithing = "Smithing",

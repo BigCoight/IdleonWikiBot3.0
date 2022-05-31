@@ -1,7 +1,7 @@
-import { BagType } from './bagType';
-import { ClassType } from './classType';
+import { BagTypeEnum } from '../enum/bagTypeEnum';
+import { ClassTypeEnum } from '../enum/classTypeEnum';
 import { CommonItemModel } from './commonItemModel';
-import { TypeGen } from './typeGen';
+import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface EquipItemModel extends CommonItemModel {
     lvReqToEquip: number,

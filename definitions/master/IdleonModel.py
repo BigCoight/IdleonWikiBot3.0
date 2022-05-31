@@ -43,6 +43,9 @@ class ModelConverter:
 	def extractImports(self) -> str:
 		res = []
 		for imp in sorted(self.needToImport):
+			if "Enum" in imp:
+				res.append("import { "f"{imp}"" } from "f"'../enum/{self.toLowerCamel(imp)}';")
+				continue
 			res.append("import { "f"{imp}"" } from "f"'./{self.toLowerCamel(imp)}';")
 		return "\n".join(res) + '\n\n'
 
@@ -66,7 +69,7 @@ class ModelConverter:
 		typ = split[-1]
 		if defin := self.defs.get(typ):
 			if "enum" in defin:
-				self.addImport(typ)
+				self.addImport(typ + "Enum")
 				return typ
 
 		self.addImport(typ + "Model")
@@ -476,8 +479,8 @@ class TSEncoder(json.JSONEncoder):
 			else:
 				return type_str + "{}"
 		elif isinstance(o, enum.Enum):
-			self.needToImport.add(f"{o.__class__.__name__}")
-			return f"{o.__class__.__name__}.{o.name}"
+			self.needToImport.add(f"{o.__class__.__name__}Enum")
+			return f"{o.__class__.__name__}Enum.{o.name}"
 		elif isinstance(o, float):  # Use scientific notation for floats, where appropiate
 			return format(o, "g")
 		elif isinstance(o, str):  # escape newlines

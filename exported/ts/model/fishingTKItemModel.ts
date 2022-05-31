@@ -1,6 +1,6 @@
 import { DescItemModel } from './descItemModel';
 import { FishingToolkitModel } from './fishingToolkitModel';
-import { TypeGen } from './typeGen';
+import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface FishingTKItemModel extends DescItemModel {
     fishingToolkit: FishingToolkitModel

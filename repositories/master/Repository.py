@@ -428,9 +428,9 @@ class Repository(Generic[T], ABC):
 				infile.write(tsRepr)
 
 		for enum in all_subclasses(IdleonEnum):
-			name = enum.__name__[0].lower() + enum.__name__[1:]
-			path = cls._getPath("ts/model", "ts", noCat = True, nameOveride = name)
-			tsEnum = f"export enum {enum.__name__} ""{\n"
+			name = enum.__name__[0].lower() + enum.__name__[1:] + "Enum"
+			path = cls._getPath("ts/enum", "ts", noCat = True, nameOveride = name)
+			tsEnum = f"export enum {enum.__name__}Enum ""{\n"
 			out = []
 			for e in enum:
 				out.append(f"    {e.name} = \"{e.name}\"")

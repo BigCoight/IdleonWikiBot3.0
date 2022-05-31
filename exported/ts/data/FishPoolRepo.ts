@@ -1,5 +1,5 @@
 import { FishPoolModel } from '../model/fishPoolModel';
-import { PoolType } from '../model/poolType';
+import { PoolTypeEnum } from '../enum/poolTypeEnum';
 
 export class FishPoolBase { constructor(public index: number, public data: FishPoolModel) { } }
 
@@ -14,7 +14,7 @@ export const initFishPoolRepo = () => {
                 "efficiency": 0,
                 "cardDrop": "CardsC8",
                 "cardChance": 0.002,
-                "pool": PoolType.FishSmall
+                "pool": PoolTypeEnum.FishSmall
             }),
         new FishPoolBase(1, <FishPoolModel>{
                 "fish": "Fish2",
@@ -23,7 +23,7 @@ export const initFishPoolRepo = () => {
                 "efficiency": 50,
                 "cardDrop": "CardsC9",
                 "cardChance": 0.0018,
-                "pool": PoolType.FishSmall
+                "pool": PoolTypeEnum.FishSmall
             }),
         new FishPoolBase(2, <FishPoolModel>{
                 "fish": "Fish3",
@@ -32,7 +32,7 @@ export const initFishPoolRepo = () => {
                 "efficiency": 200,
                 "cardDrop": "CardsC10",
                 "cardChance": 0.0016,
-                "pool": PoolType.FishSmall
+                "pool": PoolTypeEnum.FishSmall
             }),
         new FishPoolBase(3, <FishPoolModel>{
                 "fish": "Fish4",
@@ -41,7 +41,7 @@ export const initFishPoolRepo = () => {
                 "efficiency": 400,
                 "cardDrop": "CardsD11",
                 "cardChance": 0.0014,
-                "pool": PoolType.FishSmall
+                "pool": PoolTypeEnum.FishSmall
             }),
         new FishPoolBase(4, <FishPoolModel>{
                 "fish": "Fish5",
@@ -50,7 +50,7 @@ export const initFishPoolRepo = () => {
                 "efficiency": 0,
                 "cardDrop": "CardsF20",
                 "cardChance": 0.001,
-                "pool": PoolType.FishMed
+                "pool": PoolTypeEnum.FishMed
             }),
         new FishPoolBase(5, <FishPoolModel>{
                 "fish": "Fish6",
@@ -59,7 +59,7 @@ export const initFishPoolRepo = () => {
                 "efficiency": 10000,
                 "cardDrop": "CardsF21",
                 "cardChance": 0.0004,
-                "pool": PoolType.FishMed
+                "pool": PoolTypeEnum.FishMed
             }),
         new FishPoolBase(6, <FishPoolModel>{
                 "fish": "Fish7",
@@ -68,7 +68,7 @@ export const initFishPoolRepo = () => {
                 "efficiency": 50000,
                 "cardDrop": "CardsF22",
                 "cardChance": 0.0001,
-                "pool": PoolType.FishMed
+                "pool": PoolTypeEnum.FishMed
             }),
         new FishPoolBase(7, <FishPoolModel>{
                 "fish": "Fish8",
@@ -77,7 +77,7 @@ export const initFishPoolRepo = () => {
                 "efficiency": 200000,
                 "cardDrop": "CardsF23",
                 "cardChance": 2.5e-05,
-                "pool": PoolType.FishMed
+                "pool": PoolTypeEnum.FishMed
             })    
 ]
 }

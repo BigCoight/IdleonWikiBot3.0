@@ -1,4 +1,4 @@
-import { AFKType } from '../model/aFKType';
+import { AFKTypeEnum } from '../enum/aFKTypeEnum';
 import { BossAttackModel } from '../model/bossAttackModel';
 import { BossDetailsModel } from '../model/bossDetailsModel';
 import { CardDropModel } from '../model/cardDropModel';
@@ -7,7 +7,7 @@ import { EnemyDetailsModel } from '../model/enemyDetailsModel';
 import { EnemyModel } from '../model/enemyModel';
 import { EnemyNavModel } from '../model/enemyNavModel';
 import { EnemyTableModel } from '../model/enemyTableModel';
-import { EnemyType } from '../model/enemyType';
+import { EnemyTypeEnum } from '../enum/enemyTypeEnum';
 import { ItemDropModel } from '../model/itemDropModel';
 import { MapDataModel } from '../model/mapDataModel';
 import { RecipeDropModel } from '../model/recipeDropModel';
@@ -23,7 +23,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ForgeA", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Fire Forge",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -33,7 +33,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -57,7 +57,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ForgeB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Cinder Forge",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -67,7 +67,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -91,7 +91,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Bandit_Bob", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Bandit Bob",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -101,7 +101,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -134,7 +134,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("SoulCard1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Forest Soul",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -144,7 +144,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -170,7 +170,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("SoulCard2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dune Soul",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -180,7 +180,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -206,7 +206,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("SoulCard3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Rooted Soul",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -216,7 +216,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -242,7 +242,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("SoulCard4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Frigid Soul",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -252,7 +252,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -275,7 +275,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("SoulCard5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Squiddy Soul",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -285,7 +285,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -308,7 +308,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("SoulCard6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Bandit Bob",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -318,7 +318,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -341,7 +341,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("CritterCard1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Froge",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -351,7 +351,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -374,7 +374,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("CritterCard2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Crabbo",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -384,7 +384,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -407,7 +407,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("CritterCard3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Scorpie",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -417,7 +417,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -440,7 +440,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("CritterCard4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Mousey",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -450,7 +450,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -473,7 +473,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("CritterCard5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Owlio",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -483,7 +483,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -506,7 +506,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("CritterCard6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Pingy",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -516,7 +516,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -539,7 +539,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("CritterCard7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Bunny",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -549,7 +549,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -572,7 +572,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("CritterCard8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dung Beat",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -582,7 +582,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -605,7 +605,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("CritterCard9", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Honker",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -615,7 +615,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -638,7 +638,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("CritterCard10", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Blobfish",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -648,7 +648,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 420,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -671,7 +671,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Cooking", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Cooking",
-                    "AFKtype": AFKType.Cooking,
+                    "AFKtype": AFKTypeEnum.Cooking,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -681,7 +681,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 180,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 100,
                     "ExpType": 10,
@@ -698,7 +698,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Laboratory", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Laboratory",
-                    "AFKtype": AFKType.Laboratory,
+                    "AFKtype": AFKTypeEnum.Laboratory,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -708,7 +708,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 180,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 25,
                     "ExpType": 12,
@@ -725,7 +725,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogP", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Poisonic Frog",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 14,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 43,
@@ -735,7 +735,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 50,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 7,
                     "ExpType": 0,
@@ -758,7 +758,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogNest", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Frog Nest",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 13,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -768,7 +768,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 55,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 3000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 150,
                     "ExpType": 0,
@@ -785,7 +785,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogD", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Globohopper",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 75,
@@ -795,7 +795,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 10,
                     "MonsterHPTotal": 10000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -818,7 +818,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogY", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "King Frog",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 13,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -828,7 +828,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 55,
                     "DeathFrame": 14,
                     "MonsterHPTotal": 2500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 95,
                     "ExpType": 0,
@@ -851,7 +851,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Lava Slimer",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 13,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -861,7 +861,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 55,
                     "DeathFrame": 15,
                     "MonsterHPTotal": 2500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 95,
                     "ExpType": 0,
@@ -884,7 +884,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogW", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chromatium Frog",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 75,
@@ -894,7 +894,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 7,
                     "MonsterHPTotal": 10000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -917,7 +917,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogGG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Eldritch Croaker",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 75,
@@ -927,7 +927,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 19,
                     "MonsterHPTotal": 20000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -950,7 +950,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogGR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Grandfrogger",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -960,7 +960,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 7,
                     "MonsterHPTotal": 700,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -983,7 +983,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogGR2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Rotting Grandfrogger",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -993,7 +993,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 17500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -1016,7 +1016,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogGR3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Forlorn Grandfrogger",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -1026,7 +1026,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 350000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -1049,7 +1049,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogGR4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Vengeful Grandfrogger",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -1059,7 +1059,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 1400000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -1082,7 +1082,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("rocky", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Grumblo",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 46,
@@ -1092,7 +1092,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 10,
                     "MonsterHPTotal": 10000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -1115,7 +1115,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("cactus", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Cactopunk",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 75,
@@ -1125,7 +1125,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 10,
                     "MonsterHPTotal": 10000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -1148,7 +1148,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("totem", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Lazlo",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 75,
@@ -1158,7 +1158,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 7,
                     "MonsterHPTotal": 10000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -1181,7 +1181,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("target", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Target",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 21,
                     "MonsterOffsetX": 50,
                     "MonsterOffsetY": 34,
@@ -1191,7 +1191,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 10,
                     "MonsterHPTotal": 18500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 310,
                     "ExpType": 0,
@@ -1214,7 +1214,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("steakR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Beefie",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 31,
                     "MonsterOffsetX": 50,
                     "MonsterOffsetY": 72,
@@ -1224,7 +1224,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 14,
                     "MonsterHPTotal": 23000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 350,
                     "ExpType": 0,
@@ -1247,7 +1247,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("potatoB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Crescent Spud",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 21,
                     "MonsterOffsetX": 50,
                     "MonsterOffsetY": 34,
@@ -1257,7 +1257,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 17,
                     "MonsterHPTotal": 18500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 310,
                     "ExpType": 0,
@@ -1280,7 +1280,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("snakeZ", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Snakenhotep",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 90,
@@ -1290,7 +1290,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 9,
                     "MonsterHPTotal": 1750,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -1313,7 +1313,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("snakeZ2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Enraged Snakenhotep",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -1323,7 +1323,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 12250,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -1346,7 +1346,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("snakeZ3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Inevitable Snakenhotep",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -1356,7 +1356,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 1750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -1379,7 +1379,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("iceknight", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Ice Guard",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 90,
@@ -1389,7 +1389,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 10,
                     "MonsterHPTotal": 10000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -1412,7 +1412,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("iceBossZ", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Glaciaxus",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 90,
@@ -1422,7 +1422,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 6,
                     "MonsterHPTotal": 2800,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -1446,7 +1446,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("iceBossZ2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Golden Glaciaxus",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 90,
@@ -1456,7 +1456,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 6,
                     "MonsterHPTotal": 66000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -1480,7 +1480,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("iceBossZ3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Caustic Glaciaxus",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 90,
@@ -1490,7 +1490,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 6,
                     "MonsterHPTotal": 4480000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -1514,7 +1514,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Crystal0", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Crystal Carrot",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 1,
                     "MonsterOffsetX": 23,
                     "MonsterOffsetY": 23,
@@ -1524,7 +1524,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 35,
                     "DeathFrame": 15,
                     "MonsterHPTotal": 1,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 0,
@@ -1560,7 +1560,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Crystal1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Crystal Crabal",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 11,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 40,
@@ -1570,7 +1570,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 7500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 210,
                     "ExpType": 0,
@@ -1606,7 +1606,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Crystal2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Crystal Cattle",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 47,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 40,
@@ -1616,7 +1616,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 252000,
                     "DeathFrame": 17,
                     "MonsterHPTotal": 1000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 210,
                     "ExpType": 0,
@@ -1652,7 +1652,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Crystal3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Crystal Custard",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 47,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 40,
@@ -1662,7 +1662,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 252000,
                     "DeathFrame": 14,
                     "MonsterHPTotal": 1000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 210,
                     "ExpType": 0,
@@ -1695,7 +1695,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("mushG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Green Mushroom",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 1,
                     "MonsterOffsetX": 23,
                     "MonsterOffsetY": 23,
@@ -1705,7 +1705,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 35,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 10,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 0,
@@ -1744,7 +1744,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Frog",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 14,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 43,
@@ -1754,7 +1754,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 50,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 7,
                     "ExpType": 0,
@@ -1794,7 +1794,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("beanG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Bored Bean",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 7,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -1804,7 +1804,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 50,
                     "DeathFrame": 15,
                     "MonsterHPTotal": 150,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 15,
                     "ExpType": 0,
@@ -1841,7 +1841,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("slimeG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Slime",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 24,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -1851,7 +1851,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 42,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 250,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 23,
                     "ExpType": 0,
@@ -1889,7 +1889,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("snakeG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Baby Boa",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 25,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 36,
@@ -1899,7 +1899,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 450,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 34,
                     "ExpType": 0,
@@ -1938,7 +1938,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("carrotO", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Carrotman",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 9,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 45,
@@ -1948,7 +1948,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 50,
                     "DeathFrame": 15,
                     "MonsterHPTotal": 800,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 45,
                     "ExpType": 0,
@@ -1985,7 +1985,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("goblinG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Glublin",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 15,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -1995,7 +1995,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 52,
                     "DeathFrame": 15,
                     "MonsterHPTotal": 1250,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 60,
                     "ExpType": 0,
@@ -2032,7 +2032,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("plank", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Wode Board",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 3,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 58,
@@ -2042,7 +2042,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 19,
                     "MonsterHPTotal": 1800,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 75,
                     "ExpType": 0,
@@ -2080,7 +2080,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("frogBIG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Gigafrog",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 13,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -2090,7 +2090,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 55,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 2500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 95,
                     "ExpType": 0,
@@ -2129,7 +2129,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("branch", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Walking Stick",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 8,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 20,
@@ -2139,7 +2139,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 60,
                     "DeathFrame": 15,
                     "MonsterHPTotal": 1500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 120,
                     "ExpType": 0,
@@ -2176,7 +2176,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("acorn", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Nutto",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 5,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -2186,7 +2186,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 60,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 4000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 190,
                     "ExpType": 0,
@@ -2221,7 +2221,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("mushW", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Wood Mushroom",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 34,
                     "MonsterOffsetX": 23,
                     "MonsterOffsetY": 25,
@@ -2231,7 +2231,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 50,
                     "DeathFrame": 14,
                     "MonsterHPTotal": 10000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 300,
                     "ExpType": 0,
@@ -2268,7 +2268,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("poopSmall", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Poop",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 20,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 30,
@@ -2278,7 +2278,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 60,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 9000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 220,
                     "ExpType": 0,
@@ -2318,7 +2318,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ratB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Rat",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 22,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -2328,7 +2328,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 60,
                     "DeathFrame": 18,
                     "MonsterHPTotal": 20000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 330,
                     "ExpType": 0,
@@ -2366,7 +2366,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("poopD", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Boop",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 33,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 30,
@@ -2376,7 +2376,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 745000,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 200000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 1000,
                     "ExpType": 0,
@@ -2410,7 +2410,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("rockG", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Healing Rune",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 13,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -2420,7 +2420,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 55,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 3000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 150,
                     "ExpType": 0,
@@ -2437,7 +2437,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("rockB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Shielding Rune",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 13,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -2447,7 +2447,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 55,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 3000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 150,
                     "ExpType": 0,
@@ -2464,7 +2464,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("rockS", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Skeleton Rune",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 13,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -2474,7 +2474,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 6000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 20000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 10,
                     "ExpType": 0,
@@ -2491,7 +2491,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("jarSand", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Sandy Pot",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 16,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -2501,7 +2501,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 50,
                     "DeathFrame": 15,
                     "MonsterHPTotal": 4000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 150,
                     "ExpType": 0,
@@ -2538,7 +2538,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("mimicA", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Mimic",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 17,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 38,
@@ -2548,7 +2548,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 50,
                     "DeathFrame": 19,
                     "MonsterHPTotal": 5500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 180,
                     "ExpType": 0,
@@ -2586,7 +2586,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("crabcake", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Crabcake",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 11,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 40,
@@ -2596,7 +2596,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 7500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 210,
                     "ExpType": 0,
@@ -2633,7 +2633,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("coconut", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Mafioso",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 10,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 55,
@@ -2643,7 +2643,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 26,
                     "MonsterHPTotal": 11000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 240,
                     "ExpType": 0,
@@ -2680,7 +2680,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("sandcastle", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Sand Castle",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 28,
                     "MonsterOffsetX": 50,
                     "MonsterOffsetY": 59,
@@ -2690,7 +2690,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 19,
                     "MonsterHPTotal": 13000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 265,
                     "ExpType": 0,
@@ -2726,7 +2726,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("pincermin", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Pincermin",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 2,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 42,
@@ -2736,7 +2736,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 50,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 15500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 290,
                     "ExpType": 0,
@@ -2777,7 +2777,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("potato", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Mashed Potato",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 21,
                     "MonsterOffsetX": 50,
                     "MonsterOffsetY": 34,
@@ -2787,7 +2787,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 17,
                     "MonsterHPTotal": 18500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 310,
                     "ExpType": 0,
@@ -2822,7 +2822,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("steak", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Tyson",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 31,
                     "MonsterOffsetX": 50,
                     "MonsterOffsetY": 72,
@@ -2832,7 +2832,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 14,
                     "MonsterHPTotal": 23000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 350,
                     "ExpType": 0,
@@ -2867,7 +2867,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("moonman", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Moonmoon",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 30,
                     "MonsterOffsetX": 50,
                     "MonsterOffsetY": 66,
@@ -2877,7 +2877,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 26500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 380,
                     "ExpType": 0,
@@ -2914,7 +2914,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("sandgiant", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Sand Giant",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 29,
                     "MonsterOffsetX": 50,
                     "MonsterOffsetY": 72,
@@ -2924,7 +2924,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 20,
                     "MonsterHPTotal": 30000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 410,
                     "ExpType": 0,
@@ -2960,7 +2960,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("snailZ", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Snelbie",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 27,
                     "MonsterOffsetX": 50,
                     "MonsterOffsetY": 72,
@@ -2970,7 +2970,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 18,
                     "MonsterHPTotal": 35000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 460,
                     "ExpType": 0,
@@ -3006,7 +3006,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("sheep", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Sheepie",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 35,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3016,7 +3016,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 17,
                     "MonsterHPTotal": 55000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 620,
                     "ExpType": 0,
@@ -3053,7 +3053,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("flake", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Frost Flake",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 36,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3063,7 +3063,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 10,
                     "MonsterHPTotal": 67000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 700,
                     "ExpType": 0,
@@ -3100,7 +3100,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("stache", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Sir Stache",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 37,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3110,7 +3110,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 10,
                     "MonsterHPTotal": 81000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 800,
                     "ExpType": 0,
@@ -3147,7 +3147,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ram", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dedotated Ram",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 46,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3157,7 +3157,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 35,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 1250000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 3500,
                     "ExpType": 0,
@@ -3193,7 +3193,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("bloque", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Bloque",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 32,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3203,7 +3203,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 100000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 940,
                     "ExpType": 0,
@@ -3240,7 +3240,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("mamoth", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Mamooth",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 38,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3250,7 +3250,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 115000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1030,
                     "ExpType": 0,
@@ -3288,7 +3288,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("snowball", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Snowman",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 39,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3298,7 +3298,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 15,
                     "MonsterHPTotal": 135000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1130,
                     "ExpType": 0,
@@ -3336,7 +3336,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("penguin", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Penguin",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 40,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3346,7 +3346,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 25,
                     "MonsterHPTotal": 160000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1250,
                     "ExpType": 0,
@@ -3382,7 +3382,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("thermostat", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Thermister",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 41,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3392,7 +3392,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 20,
                     "MonsterHPTotal": 185000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1370,
                     "ExpType": 0,
@@ -3435,7 +3435,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("glass", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Quenchie",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 42,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3445,7 +3445,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 23,
                     "MonsterHPTotal": 225000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1570,
                     "ExpType": 0,
@@ -3481,7 +3481,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("snakeB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Cryosnake",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 43,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3491,7 +3491,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 260000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1690,
                     "ExpType": 0,
@@ -3527,7 +3527,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("speaker", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Bop Box",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 44,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3537,7 +3537,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 23,
                     "MonsterHPTotal": 310000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1780,
                     "ExpType": 0,
@@ -3573,7 +3573,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("eye", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Neyeptune",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3583,7 +3583,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 43,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 350000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1900,
                     "ExpType": 0,
@@ -3619,7 +3619,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Iceball", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Ice Ball",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 45,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3629,7 +3629,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 200000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1500,
                     "ExpType": 0,
@@ -3646,7 +3646,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("mushP", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Purp Mushroom",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 49,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -3656,7 +3656,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 38,
                     "DeathFrame": 15,
                     "MonsterHPTotal": 520000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2350,
                     "ExpType": 0,
@@ -3692,7 +3692,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("w4a2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "TV",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 50,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3702,7 +3702,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 18,
                     "MonsterHPTotal": 700000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 3000,
                     "ExpType": 0,
@@ -3739,7 +3739,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("w4a3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Donut",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 51,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3749,7 +3749,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 925000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 4000,
                     "ExpType": 0,
@@ -3785,7 +3785,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("demonP", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Demon Genie",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 52,
                     "MonsterOffsetX": 50,
                     "MonsterOffsetY": 69,
@@ -3795,7 +3795,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 24,
                     "MonsterHPTotal": 1250000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 4800,
                     "ExpType": 0,
@@ -3831,7 +3831,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("w4b2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Soda Can",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 54,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3841,7 +3841,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 38,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 2000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 7600,
                     "ExpType": 0,
@@ -3877,7 +3877,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("w4b1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Flying Worm",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 53,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3887,7 +3887,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 18,
                     "MonsterHPTotal": 2500000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 8750,
                     "ExpType": 0,
@@ -3923,7 +3923,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("w4b3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Gelatinous Cuboid",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 55,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3933,7 +3933,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 19,
                     "MonsterHPTotal": 3300000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 10800,
                     "ExpType": 0,
@@ -3969,7 +3969,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("w4b4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Choccie",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 56,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -3979,7 +3979,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 17,
                     "MonsterHPTotal": 4500000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 14000,
                     "ExpType": 0,
@@ -4015,7 +4015,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("w4b5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Biggole Wurm",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 57,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -4025,7 +4025,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 10,
                     "MonsterHPTotal": 6500000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 17500,
                     "ExpType": 0,
@@ -4060,7 +4060,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("w4c1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Clammie",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 58,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -4070,7 +4070,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 9000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 23400,
                     "ExpType": 0,
@@ -4106,7 +4106,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("w4c2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Octodar",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 59,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -4116,7 +4116,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 14,
                     "MonsterHPTotal": 12000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 27600,
                     "ExpType": 0,
@@ -4152,7 +4152,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("w4c3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Flombeige",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 60,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -4162,7 +4162,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 16000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 30000,
                     "ExpType": 0,
@@ -4198,7 +4198,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("w4c4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Stilted Seeker",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 61,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -4208,7 +4208,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 20,
                     "MonsterHPTotal": 20000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 33000,
                     "ExpType": 0,
@@ -4243,7 +4243,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("mushR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Red Mushroom",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 19,
                     "MonsterOffsetX": 23,
                     "MonsterOffsetY": 25,
@@ -4253,7 +4253,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 1000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 47,
                     "ExpType": 0,
@@ -4288,7 +4288,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("shovelR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dig Doug",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -4298,7 +4298,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -4327,7 +4327,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("skele", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Xylobone",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -4337,7 +4337,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 20,
                     "MonsterHPTotal": 200000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2000,
                     "ExpType": 0,
@@ -4366,7 +4366,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("skele2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Bloodbone",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 48,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -4376,7 +4376,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 60,
                     "DeathFrame": 20,
                     "MonsterHPTotal": 10000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 6000,
                     "ExpType": 0,
@@ -4411,7 +4411,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("wolfA", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Amarok",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -4421,7 +4421,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 25000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -4471,7 +4471,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("wolfB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chaotic Amarok",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -4481,7 +4481,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 8000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -4531,7 +4531,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("wolfC", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Radiant Amarok",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -4541,7 +4541,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 100000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -4591,7 +4591,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Boss2A", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Efaunt",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -4601,7 +4601,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 1000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -4652,7 +4652,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Boss2B", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chaotic Efaunt",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -4662,7 +4662,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 30000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -4711,7 +4711,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Boss2C", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Gilded Efaunt",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -4721,7 +4721,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 400000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -4770,7 +4770,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Boss3A", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chizoar",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -4780,7 +4780,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 20000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -4826,7 +4826,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Boss3B", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chaotic Chizoar",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -4836,7 +4836,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 250000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -4882,7 +4882,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Boss3C", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Blighted Chizoar",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -4892,7 +4892,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 2000000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -4940,7 +4940,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Boss4A", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Troll",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -4950,7 +4950,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 400000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -4982,7 +4982,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Boss4B", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chaotic Troll",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -4992,7 +4992,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 2000000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5025,7 +5025,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("poopBig", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dr Defecaus",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -5035,7 +5035,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 745000,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5075,7 +5075,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("babayaga", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Baba Yaga",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 6,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 40,
@@ -5085,7 +5085,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 15,
                     "MonsterHPTotal": 150000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 1750,
                     "ExpType": 0,
@@ -5119,7 +5119,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("babaHour", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Biggie Hours",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 6,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 40,
@@ -5129,7 +5129,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 20,
                     "MonsterHPTotal": 800000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12500,
                     "ExpType": 0,
@@ -5164,7 +5164,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("babaMummy", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "King Doot",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 6,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 40,
@@ -5174,7 +5174,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 17,
                     "MonsterHPTotal": 3000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 50000,
                     "ExpType": 0,
@@ -5210,7 +5210,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("mini3a", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dilapidated Slush",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 6,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 40,
@@ -5220,7 +5220,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 7,
                     "MonsterHPTotal": 12500000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 250000,
                     "ExpType": 0,
@@ -5255,7 +5255,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("mini4a", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Mutated Mush",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 6,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 40,
@@ -5265,7 +5265,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 9,
                     "MonsterHPTotal": 120000000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 2000000,
                     "ExpType": 0,
@@ -5299,7 +5299,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("xmasEvent", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Giftmas Blobulyte",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -5309,7 +5309,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5336,7 +5336,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("xmasEvent2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Meaning of Giftmas",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -5346,7 +5346,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5373,7 +5373,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("xmasEvent3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Golden Giftmas Box",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -5383,7 +5383,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5410,7 +5410,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("loveEvent", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Loveulyte",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -5420,7 +5420,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5447,7 +5447,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("loveEvent2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chocco Box",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -5457,7 +5457,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5484,7 +5484,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("EasterEvent1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Egggulyte",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -5494,7 +5494,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5521,7 +5521,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("EasterEvent2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Egg Capsule",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -5531,7 +5531,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5559,7 +5559,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("SummerEvent1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Coastiolyte",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -5569,7 +5569,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5593,7 +5593,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("SummerEvent2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Summer Spirit",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -5603,7 +5603,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5632,7 +5632,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Blank0ramaFiller", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Nightmare Amarok",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -5642,7 +5642,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -5659,7 +5659,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ghost", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Ghost (Event)",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 6,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 40,
@@ -5669,7 +5669,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 100,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 1000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "a",
                     "ExpGiven": 1,
                     "ExpType": 0,
@@ -5696,7 +5696,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("slimeR", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Valentslime",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 24,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -5706,7 +5706,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 42,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 20,
                     "ExpType": 0,
@@ -5733,7 +5733,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("sheepB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Floofie",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 35,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 32,
@@ -5743,7 +5743,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 17,
                     "MonsterHPTotal": 300,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 1,
                     "ExpType": 0,
@@ -5771,7 +5771,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("snakeY", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Shell Snake",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 25,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 36,
@@ -5781,7 +5781,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 45,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 170,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 34,
                     "ExpType": 0,
@@ -5808,7 +5808,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("crabcakeB", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Mr Blueberry",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 11,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 40,
@@ -5818,7 +5818,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 20,
                     "ExpType": 0,
@@ -5844,7 +5844,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("shovelY", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Plasti Doug",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -5854,7 +5854,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -5880,7 +5880,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("pghost", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Ghost (Event)",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -5890,7 +5890,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 9,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -5907,7 +5907,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet0", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Squirrel",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -5917,7 +5917,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 15,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -5934,7 +5934,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Piggo",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -5944,7 +5944,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 16,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -5961,7 +5961,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Wild Boar",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -5971,7 +5971,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -5988,7 +5988,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Mallay",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -5998,7 +5998,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -6015,7 +6015,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Whale",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -6025,7 +6025,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -6042,7 +6042,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chippy",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -6052,7 +6052,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 7,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -6069,7 +6069,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Bunny",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -6079,7 +6079,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 13,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -6096,7 +6096,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Mecho Mouse",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -6106,7 +6106,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 10,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -6123,7 +6123,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Panda",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -6133,7 +6133,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -6150,7 +6150,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet9", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Panda",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -6160,7 +6160,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -6177,7 +6177,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet10", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Panda",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -6187,7 +6187,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -6204,7 +6204,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Pet11", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Panda",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 23,
                     "MonsterOffsetX": 38,
                     "MonsterOffsetY": 47,
@@ -6214,7 +6214,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 40,
                     "DeathFrame": 12,
                     "MonsterHPTotal": 14000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 420,
                     "ExpType": 0,
@@ -6231,7 +6231,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Copper", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Copper",
-                    "AFKtype": AFKType.Mining,
+                    "AFKtype": AFKTypeEnum.Mining,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -6241,7 +6241,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 120,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 1,
@@ -6269,7 +6269,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Iron", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Iron",
-                    "AFKtype": AFKType.Mining,
+                    "AFKtype": AFKTypeEnum.Mining,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -6279,7 +6279,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 120,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 5,
                     "ExpType": 1,
@@ -6307,7 +6307,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Gold", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Gold",
-                    "AFKtype": AFKType.Mining,
+                    "AFKtype": AFKTypeEnum.Mining,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -6317,7 +6317,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 120,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 10,
                     "ExpType": 1,
@@ -6340,7 +6340,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Plat", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Plat",
-                    "AFKtype": AFKType.Mining,
+                    "AFKtype": AFKTypeEnum.Mining,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -6350,7 +6350,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 180,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 30,
                     "ExpType": 1,
@@ -6378,7 +6378,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Dementia", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dementia",
-                    "AFKtype": AFKType.Mining,
+                    "AFKtype": AFKTypeEnum.Mining,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -6388,7 +6388,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 180,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 55,
                     "ExpType": 1,
@@ -6411,7 +6411,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Void", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Void",
-                    "AFKtype": AFKType.Mining,
+                    "AFKtype": AFKTypeEnum.Mining,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -6421,7 +6421,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 240,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 185,
                     "ExpType": 1,
@@ -6449,7 +6449,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Lustre", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Lustre",
-                    "AFKtype": AFKType.Mining,
+                    "AFKtype": AFKTypeEnum.Mining,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -6459,7 +6459,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 240,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 250,
                     "ExpType": 1,
@@ -6482,7 +6482,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Starfire", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Starfire",
-                    "AFKtype": AFKType.Mining,
+                    "AFKtype": AFKTypeEnum.Mining,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -6492,7 +6492,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 240,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 500,
                     "ExpType": 1,
@@ -6520,7 +6520,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Dreadlo", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dreadlo",
-                    "AFKtype": AFKType.Mining,
+                    "AFKtype": AFKTypeEnum.Mining,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -6530,7 +6530,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 300,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 850,
                     "ExpType": 1,
@@ -6552,7 +6552,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Godshard", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Godshard",
-                    "AFKtype": AFKType.Mining,
+                    "AFKtype": AFKTypeEnum.Mining,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 38,
@@ -6562,7 +6562,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 600,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.oreType,
+                    "Type": EnemyTypeEnum.oreType,
                     "SpecialType": "",
                     "ExpGiven": 1250,
                     "ExpType": 1,
@@ -6584,7 +6584,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("OakTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Oak Tree",
-                    "AFKtype": AFKType.Choppin,
+                    "AFKtype": AFKTypeEnum.Choppin,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 0,
@@ -6594,7 +6594,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 2,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.treeType,
+                    "Type": EnemyTypeEnum.treeType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 3,
@@ -6617,7 +6617,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("BirchTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Birch Tree",
-                    "AFKtype": AFKType.Choppin,
+                    "AFKtype": AFKTypeEnum.Choppin,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 0,
@@ -6627,7 +6627,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 5,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.treeType,
+                    "Type": EnemyTypeEnum.treeType,
                     "SpecialType": "",
                     "ExpGiven": 6,
                     "ExpType": 3,
@@ -6650,7 +6650,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("JungleTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Jungle Tree",
-                    "AFKtype": AFKType.Choppin,
+                    "AFKtype": AFKTypeEnum.Choppin,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 0,
@@ -6660,7 +6660,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 5000000,
                     "DeathFrame": 7,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.treeType,
+                    "Type": EnemyTypeEnum.treeType,
                     "SpecialType": "",
                     "ExpGiven": 12,
                     "ExpType": 3,
@@ -6683,7 +6683,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ForestTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Forest Tree",
-                    "AFKtype": AFKType.Choppin,
+                    "AFKtype": AFKTypeEnum.Choppin,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 0,
@@ -6693,7 +6693,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 8,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.treeType,
+                    "Type": EnemyTypeEnum.treeType,
                     "SpecialType": "",
                     "ExpGiven": 20,
                     "ExpType": 3,
@@ -6716,7 +6716,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("PalmTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Palm Tree",
-                    "AFKtype": AFKType.Choppin,
+                    "AFKtype": AFKTypeEnum.Choppin,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 0,
@@ -6726,7 +6726,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.treeType,
+                    "Type": EnemyTypeEnum.treeType,
                     "SpecialType": "",
                     "ExpGiven": 32,
                     "ExpType": 3,
@@ -6749,7 +6749,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ToiletTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Toilet Tree",
-                    "AFKtype": AFKType.Choppin,
+                    "AFKtype": AFKTypeEnum.Choppin,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 0,
@@ -6759,7 +6759,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 3,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.treeType,
+                    "Type": EnemyTypeEnum.treeType,
                     "SpecialType": "",
                     "ExpGiven": 50,
                     "ExpType": 3,
@@ -6782,7 +6782,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("StumpTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Stump Tree",
-                    "AFKtype": AFKType.Choppin,
+                    "AFKtype": AFKTypeEnum.Choppin,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 0,
@@ -6792,7 +6792,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 4,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.treeType,
+                    "Type": EnemyTypeEnum.treeType,
                     "SpecialType": "",
                     "ExpGiven": 90,
                     "ExpType": 3,
@@ -6815,7 +6815,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("SaharanFoal", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Saharan Foal",
-                    "AFKtype": AFKType.Choppin,
+                    "AFKtype": AFKTypeEnum.Choppin,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 0,
@@ -6825,7 +6825,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 0,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.treeType,
+                    "Type": EnemyTypeEnum.treeType,
                     "SpecialType": "",
                     "ExpGiven": 150,
                     "ExpType": 3,
@@ -6848,7 +6848,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Tree7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Wispy Tree",
-                    "AFKtype": AFKType.Choppin,
+                    "AFKtype": AFKTypeEnum.Choppin,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 0,
@@ -6858,7 +6858,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 9,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.treeType,
+                    "Type": EnemyTypeEnum.treeType,
                     "SpecialType": "",
                     "ExpGiven": 275,
                     "ExpType": 3,
@@ -6881,7 +6881,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("AlienTree", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Alien Tree",
-                    "AFKtype": AFKType.Choppin,
+                    "AFKtype": AFKTypeEnum.Choppin,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 0,
@@ -6891,7 +6891,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 6,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.treeType,
+                    "Type": EnemyTypeEnum.treeType,
                     "SpecialType": "",
                     "ExpGiven": 500,
                     "ExpType": 3,
@@ -6914,7 +6914,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Tree8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Cubed Tree",
-                    "AFKtype": AFKType.Choppin,
+                    "AFKtype": AFKTypeEnum.Choppin,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 0,
@@ -6924,7 +6924,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 10,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.treeType,
+                    "Type": EnemyTypeEnum.treeType,
                     "SpecialType": "",
                     "ExpGiven": 1250,
                     "ExpType": 3,
@@ -6947,7 +6947,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("FishSmall", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Small Fish",
-                    "AFKtype": AFKType.Fishing,
+                    "AFKtype": AFKTypeEnum.Fishing,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 50,
@@ -6957,7 +6957,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 2,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.fishType,
+                    "Type": EnemyTypeEnum.fishType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 4,
@@ -6984,7 +6984,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("FishMed", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Medium Fish",
-                    "AFKtype": AFKType.Fishing,
+                    "AFKtype": AFKTypeEnum.Fishing,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 50,
@@ -6994,7 +6994,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 2,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.fishType,
+                    "Type": EnemyTypeEnum.fishType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 4,
@@ -7021,7 +7021,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Fish1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Goldfish",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -7031,7 +7031,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 0,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.fishType,
+                    "Type": EnemyTypeEnum.fishType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -7053,7 +7053,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Fish2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Hermit Can",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -7063,7 +7063,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.fishType,
+                    "Type": EnemyTypeEnum.fishType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -7085,7 +7085,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Fish3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Jellyfish",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -7095,7 +7095,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 2,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.fishType,
+                    "Type": EnemyTypeEnum.fishType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -7117,7 +7117,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Fish4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Bloach",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -7127,7 +7127,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 3,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.fishType,
+                    "Type": EnemyTypeEnum.fishType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -7149,7 +7149,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Fish5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Skelefish",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -7159,7 +7159,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 4,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.fishType,
+                    "Type": EnemyTypeEnum.fishType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -7181,7 +7181,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Fish6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Shark",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -7191,7 +7191,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 5,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.fishType,
+                    "Type": EnemyTypeEnum.fishType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -7213,7 +7213,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Fish7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Manta Ray",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -7223,7 +7223,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 6,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.fishType,
+                    "Type": EnemyTypeEnum.fishType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -7245,7 +7245,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Fish8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Kraken",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 4,
                     "MonsterOffsetX": 42,
                     "MonsterOffsetY": 28,
@@ -7255,7 +7255,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 7,
                     "MonsterHPTotal": 750000,
-                    "Type": EnemyType.fishType,
+                    "Type": EnemyTypeEnum.fishType,
                     "SpecialType": "a",
                     "ExpGiven": 12000,
                     "ExpType": 0,
@@ -7277,7 +7277,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("BugNest1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Fly Nest",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 30,
@@ -7287,7 +7287,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 0,
                     "MonsterHPTotal": 999999999,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 6,
@@ -7309,7 +7309,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("BugNest2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Butterfly Bar",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 30,
@@ -7319,7 +7319,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 999999999,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 6,
@@ -7341,7 +7341,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("BugNest3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Sentient Bowl",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 30,
@@ -7351,7 +7351,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 2,
                     "MonsterHPTotal": 999999999,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 6,
@@ -7373,7 +7373,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("BugNest4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Grocery Bag",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 30,
@@ -7383,7 +7383,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 3,
                     "MonsterHPTotal": 999999999,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 6,
@@ -7405,7 +7405,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("BugNest5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Snowden",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 30,
@@ -7415,7 +7415,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 4,
                     "MonsterHPTotal": 999999999,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 6,
@@ -7437,7 +7437,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("BugNest6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Icicle Nest",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 30,
@@ -7447,7 +7447,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 5,
                     "MonsterHPTotal": 999999999,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 6,
@@ -7469,7 +7469,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("BugNest7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Bee Hive",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 30,
@@ -7479,7 +7479,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 6,
                     "MonsterHPTotal": 999999999,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 6,
@@ -7501,7 +7501,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("BugNest8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Fairy Hovel",
-                    "AFKtype": AFKType.Fighting,
+                    "AFKtype": AFKTypeEnum.Fighting,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 30,
@@ -7511,7 +7511,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 7,
                     "MonsterHPTotal": 999999999,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 6,
@@ -7533,7 +7533,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Bug1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Flies",
-                    "AFKtype": AFKType.Catching,
+                    "AFKtype": AFKTypeEnum.Catching,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 50,
@@ -7543,7 +7543,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 0,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.bugType,
+                    "Type": EnemyTypeEnum.bugType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 6,
@@ -7566,7 +7566,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Bug2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Butterflies",
-                    "AFKtype": AFKType.Catching,
+                    "AFKtype": AFKTypeEnum.Catching,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 50,
@@ -7576,7 +7576,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.bugType,
+                    "Type": EnemyTypeEnum.bugType,
                     "SpecialType": "",
                     "ExpGiven": 6,
                     "ExpType": 6,
@@ -7605,7 +7605,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Bug3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Sentient Cereal",
-                    "AFKtype": AFKType.Catching,
+                    "AFKtype": AFKTypeEnum.Catching,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 50,
@@ -7615,7 +7615,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 2,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.bugType,
+                    "Type": EnemyTypeEnum.bugType,
                     "SpecialType": "",
                     "ExpGiven": 10,
                     "ExpType": 6,
@@ -7638,7 +7638,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Bug4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Fruitflies",
-                    "AFKtype": AFKType.Catching,
+                    "AFKtype": AFKTypeEnum.Catching,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 50,
@@ -7648,7 +7648,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 3,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.bugType,
+                    "Type": EnemyTypeEnum.bugType,
                     "SpecialType": "",
                     "ExpGiven": 20,
                     "ExpType": 6,
@@ -7671,7 +7671,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Bug5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Mosquisnow",
-                    "AFKtype": AFKType.Catching,
+                    "AFKtype": AFKTypeEnum.Catching,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 50,
@@ -7681,7 +7681,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 4,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.bugType,
+                    "Type": EnemyTypeEnum.bugType,
                     "SpecialType": "",
                     "ExpGiven": 40,
                     "ExpType": 6,
@@ -7704,7 +7704,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Bug6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Flycicle",
-                    "AFKtype": AFKType.Catching,
+                    "AFKtype": AFKTypeEnum.Catching,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 50,
@@ -7714,7 +7714,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 5,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.bugType,
+                    "Type": EnemyTypeEnum.bugType,
                     "SpecialType": "",
                     "ExpGiven": 75,
                     "ExpType": 6,
@@ -7737,7 +7737,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Bug7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Bumble Bee",
-                    "AFKtype": AFKType.Catching,
+                    "AFKtype": AFKTypeEnum.Catching,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 50,
@@ -7747,7 +7747,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 6,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.bugType,
+                    "Type": EnemyTypeEnum.bugType,
                     "SpecialType": "",
                     "ExpGiven": 150,
                     "ExpType": 6,
@@ -7770,7 +7770,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Bug8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Fairy",
-                    "AFKtype": AFKType.Catching,
+                    "AFKtype": AFKTypeEnum.Catching,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 32,
                     "MonsterOffsetY": 50,
@@ -7780,7 +7780,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 0,
                     "DeathFrame": 7,
                     "MonsterHPTotal": 5,
-                    "Type": EnemyType.bugType,
+                    "Type": EnemyTypeEnum.bugType,
                     "SpecialType": "",
                     "ExpGiven": 300,
                     "ExpType": 6,
@@ -7803,7 +7803,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestA1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dewdrop Bronze Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -7813,7 +7813,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 18000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 10,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -7842,7 +7842,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestB1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dewdrop Silver Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -7852,7 +7852,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 36000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -7884,7 +7884,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestC1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dewdrop Golden Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -7894,7 +7894,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 20000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -7925,7 +7925,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestD1", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Dewdrop Legendary Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -7935,7 +7935,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 345600,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 100000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -7952,7 +7952,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestA2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Sandstone Bronze Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -7962,7 +7962,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 18000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 10,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -7993,7 +7993,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestB2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Sandstone Silver Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8003,7 +8003,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 36000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8036,7 +8036,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestC2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Sandstone Golden Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8046,7 +8046,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 20000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8076,7 +8076,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestD2", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Sandstone Legendary Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8086,7 +8086,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 345600,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 100000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8103,7 +8103,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestA3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chillsnap Bronze Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8113,7 +8113,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 18000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 10,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8144,7 +8144,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestB3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chillsnap Silver Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8154,7 +8154,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 36000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8186,7 +8186,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestC3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chillsnap Golden Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8196,7 +8196,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 20000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8226,7 +8226,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestD3", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Chillsnap Legendary Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8236,7 +8236,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 345600,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 100000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8253,7 +8253,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestA4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Astro Bronze Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8263,7 +8263,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 18000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 10,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8293,7 +8293,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestB4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Astro Silver Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8303,7 +8303,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 36000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8334,7 +8334,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestC4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Astro Golden Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8344,7 +8344,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 20000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8372,7 +8372,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestD4", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "Astro Legendary Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8382,7 +8382,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 345600,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 100000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8399,7 +8399,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestA5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Bronze Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8409,7 +8409,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 18000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 10,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8426,7 +8426,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestB5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Silver Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8436,7 +8436,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 36000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8453,7 +8453,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestC5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Golden Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8463,7 +8463,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 20000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8480,7 +8480,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestD5", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Legendary Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8490,7 +8490,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 345600,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 100000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8507,7 +8507,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestA6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Bronze Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8517,7 +8517,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 18000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 10,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8534,7 +8534,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestB6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Silver Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8544,7 +8544,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 36000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8561,7 +8561,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestC6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Golden Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8571,7 +8571,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 20000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8588,7 +8588,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestD6", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Legendary Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8598,7 +8598,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 345600,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 100000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8615,7 +8615,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestA7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Bronze Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8625,7 +8625,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 18000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 10,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8642,7 +8642,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestB7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Silver Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8652,7 +8652,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 36000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8669,7 +8669,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestC7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Golden Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8679,7 +8679,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 20000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8696,7 +8696,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestD7", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Legendary Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8706,7 +8706,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 345600,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 100000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8723,7 +8723,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestA8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Bronze Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8733,7 +8733,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 18000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 10,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8750,7 +8750,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestB8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Silver Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8760,7 +8760,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 36000,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 500,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8777,7 +8777,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestC8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Golden Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8787,7 +8787,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 86400,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 20000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8804,7 +8804,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("ChestD8", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "NYI Legendary Chest",
-                    "AFKtype": AFKType.Error,
+                    "AFKtype": AFKTypeEnum.Error,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 34,
                     "MonsterOffsetY": 25,
@@ -8814,7 +8814,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 345600,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 100000,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 0,
                     "ExpType": 0,
@@ -8831,7 +8831,7 @@ export const initEnemyRepo = () => {
         new EnemyBase("Nothing", <EnemyModel>{
                 "details": <EnemyDetailsModel>{
                     "Name": "",
-                    "AFKtype": AFKType.Nothing,
+                    "AFKtype": AFKTypeEnum.Nothing,
                     "MonsterFace": 0,
                     "MonsterOffsetX": 22,
                     "MonsterOffsetY": 32,
@@ -8841,7 +8841,7 @@ export const initEnemyRepo = () => {
                     "RespawnTime": 1,
                     "DeathFrame": 1,
                     "MonsterHPTotal": 42,
-                    "Type": EnemyType.monsterType,
+                    "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 69,
                     "ExpType": 0,

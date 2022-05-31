@@ -1,6 +1,6 @@
 import { BaseItemModel } from './baseItemModel';
-import { ClassType } from './classType';
-import { TypeGen } from './typeGen';
+import { ClassTypeEnum } from '../enum/classTypeEnum';
+import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface StatItemModel extends BaseItemModel {
     lvReqToCraft: number,

@@ -1,5 +1,5 @@
-import { AFKType } from './aFKType';
-import { EnemyType } from './enemyType';
+import { AFKTypeEnum } from '../enum/aFKTypeEnum';
+import { EnemyTypeEnum } from '../enum/enemyTypeEnum';
 
 export interface EnemyDetailsModel {
     Name: string,

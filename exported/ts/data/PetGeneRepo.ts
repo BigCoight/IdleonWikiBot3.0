@@ -1,4 +1,4 @@
-import { AbilityType } from '../model/abilityType';
+import { AbilityTypeEnum } from '../enum/abilityTypeEnum';
 import { PetGeneModel } from '../model/petGeneModel';
 
 export class PetGeneBase { constructor(public index: number, public data: PetGeneModel) { } }
@@ -9,7 +9,7 @@ export const initPetGeneRepo = () => {
     return [    
         new PetGeneBase(0, <PetGeneModel>{
                 "name": "Fighter",
-                "abilityType": AbilityType.Red,
+                "abilityType": AbilityTypeEnum.Red,
                 "x2": 5,
                 "lowerLetter": "a",
                 "upperLetter": "A",
@@ -18,7 +18,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(1, <PetGeneModel>{
                 "name": "Defender",
-                "abilityType": AbilityType.Red,
+                "abilityType": AbilityTypeEnum.Red,
                 "x2": 10,
                 "lowerLetter": "b",
                 "upperLetter": "B",
@@ -27,7 +27,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(2, <PetGeneModel>{
                 "name": "Forager",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 12,
                 "lowerLetter": "c",
                 "upperLetter": "C",
@@ -36,7 +36,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(3, <PetGeneModel>{
                 "name": "Fleeter",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 13,
                 "lowerLetter": "d",
                 "upperLetter": "D",
@@ -45,7 +45,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(4, <PetGeneModel>{
                 "name": "Breeder",
-                "abilityType": AbilityType.Special,
+                "abilityType": AbilityTypeEnum.Special,
                 "x2": 15,
                 "lowerLetter": "e",
                 "upperLetter": "E",
@@ -54,7 +54,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(5, <PetGeneModel>{
                 "name": "Special",
-                "abilityType": AbilityType.Unsure,
+                "abilityType": AbilityTypeEnum.Unsure,
                 "x2": 15,
                 "lowerLetter": "f",
                 "upperLetter": "F",
@@ -63,7 +63,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(6, <PetGeneModel>{
                 "name": "Mercenary",
-                "abilityType": AbilityType.Red,
+                "abilityType": AbilityTypeEnum.Red,
                 "x2": 4,
                 "lowerLetter": "g",
                 "upperLetter": "G",
@@ -72,7 +72,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(7, <PetGeneModel>{
                 "name": "Boomer",
-                "abilityType": AbilityType.Red,
+                "abilityType": AbilityTypeEnum.Red,
                 "x2": 7,
                 "lowerLetter": "h",
                 "upperLetter": "H",
@@ -81,7 +81,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(8, <PetGeneModel>{
                 "name": "Sniper",
-                "abilityType": AbilityType.Red,
+                "abilityType": AbilityTypeEnum.Red,
                 "x2": 9,
                 "lowerLetter": "i",
                 "upperLetter": "I",
@@ -90,7 +90,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(9, <PetGeneModel>{
                 "name": "Amplifier",
-                "abilityType": AbilityType.Red,
+                "abilityType": AbilityTypeEnum.Red,
                 "x2": 10,
                 "lowerLetter": "j",
                 "upperLetter": "J",
@@ -99,7 +99,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(10, <PetGeneModel>{
                 "name": "Tsar",
-                "abilityType": AbilityType.Red,
+                "abilityType": AbilityTypeEnum.Red,
                 "x2": 40,
                 "lowerLetter": "k",
                 "upperLetter": "K",
@@ -108,7 +108,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(11, <PetGeneModel>{
                 "name": "Rattler",
-                "abilityType": AbilityType.Red,
+                "abilityType": AbilityTypeEnum.Red,
                 "x2": 4,
                 "lowerLetter": "l",
                 "upperLetter": "L",
@@ -117,7 +117,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(12, <PetGeneModel>{
                 "name": "Cursory",
-                "abilityType": AbilityType.Red,
+                "abilityType": AbilityTypeEnum.Red,
                 "x2": 3,
                 "lowerLetter": "m",
                 "upperLetter": "M",
@@ -126,7 +126,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(13, <PetGeneModel>{
                 "name": "Fastidious",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 10,
                 "lowerLetter": "n",
                 "upperLetter": "N",
@@ -135,7 +135,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(14, <PetGeneModel>{
                 "name": "Flashy",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 18,
                 "lowerLetter": "o",
                 "upperLetter": "O",
@@ -144,7 +144,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(15, <PetGeneModel>{
                 "name": "Opticular",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 7,
                 "lowerLetter": "p",
                 "upperLetter": "P",
@@ -153,7 +153,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(16, <PetGeneModel>{
                 "name": "Monolithic",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 20,
                 "lowerLetter": "q",
                 "upperLetter": "Q",
@@ -162,7 +162,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(17, <PetGeneModel>{
                 "name": "Alchemic",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 9,
                 "lowerLetter": "r",
                 "upperLetter": "R",
@@ -171,7 +171,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(18, <PetGeneModel>{
                 "name": "Badumdum",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 7,
                 "lowerLetter": "s",
                 "upperLetter": "S",
@@ -180,7 +180,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(19, <PetGeneModel>{
                 "name": "Defstone",
-                "abilityType": AbilityType.Red,
+                "abilityType": AbilityTypeEnum.Red,
                 "x2": 5,
                 "lowerLetter": "t",
                 "upperLetter": "T",
@@ -189,7 +189,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(20, <PetGeneModel>{
                 "name": "Targeter",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 8,
                 "lowerLetter": "u",
                 "upperLetter": "U",
@@ -198,7 +198,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(21, <PetGeneModel>{
                 "name": "Looter",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 4,
                 "lowerLetter": "v",
                 "upperLetter": "V",
@@ -207,7 +207,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(22, <PetGeneModel>{
                 "name": "Refiller",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 30,
                 "lowerLetter": "w",
                 "upperLetter": "W",
@@ -216,7 +216,7 @@ export const initPetGeneRepo = () => {
             }),
         new PetGeneBase(23, <PetGeneModel>{
                 "name": "Eggshell",
-                "abilityType": AbilityType.Green,
+                "abilityType": AbilityTypeEnum.Green,
                 "x2": 12,
                 "lowerLetter": "x",
                 "upperLetter": "X",

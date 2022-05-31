@@ -1,4 +1,4 @@
-import { TypeGen } from './typeGen';
+import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface BaseItemModel {
     internalName: string,

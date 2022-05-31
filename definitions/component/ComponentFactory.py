@@ -1,3 +1,5 @@
+from typing import Union
+
 from definitions.component.Component import Component
 from definitions.component.ComponentBase import ComponentBase
 from definitions.component.LiquidComponent import LiquidComponent
@@ -8,7 +10,7 @@ from helpers.CustomTypes import Integer
 
 class ComponentFactory:
 	@classmethod
-	def getComponent(cls, part: str, quantity: Integer | str) -> ComponentBase:
+	def getComponent(cls, part: str, quantity: Union[Integer, str]) -> ComponentBase:
 		if part[0:6] == "Liquid":
 			return LiquidComponent(liquidNo = part[6:], quantity = quantity)
 		if part[0:5] == "Spice":

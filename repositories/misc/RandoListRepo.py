@@ -1,13 +1,15 @@
-from enum import Enum, auto
+import re
+from enum import auto
 from typing import List, Optional
 
 from definitions.common.EnumMeta import CheckIn
+from definitions.master.IdleonEnum import IdleonEnum
 from definitions.misc.RandoList import RandoList
-from helpers.HelperFunctions import getFromSplitArray
+from helpers.HelperFunctions import strToArray
 from repositories.master.Repository import Repository
 
 
-class RandoListDescriptions(int, Enum, metaclass = CheckIn):
+class RandoListDescriptions(int, IdleonEnum, metaclass = CheckIn):
 	monstersInGrasslands = auto()
 	monstersInDesert = auto()
 	noItemsRemoveFromAnvTab1 = auto()
@@ -68,6 +70,21 @@ class RandoListDescriptions(int, Enum, metaclass = CheckIn):
 	vipMembershipStarTalent = auto()
 	npcsInNebulon = auto()
 	qtyOfTrappingMinigameBonus = auto()
+	idk1 = auto()
+	patchNotes = auto()
+	idk3 = auto()
+	idk4 = auto()
+	idk5 = auto()
+	idk6 = auto()
+	idk7 = auto()
+	idk8 = auto()
+	idk9 = auto()
+	idk10 = auto()
+	idk11 = auto()
+	idk12 = auto()
+	idk13 = auto()
+	idk14 = auto()
+	idk15 = auto()
 
 
 class RandoListRepo(Repository[RandoList]):
@@ -82,10 +99,20 @@ class RandoListRepo(Repository[RandoList]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		lsts = getFromSplitArray(cls.getSection())
+		section = cls.getSection().replace("return [", "")
+		print(section)
+		lsts = re.findall(fr'(?:"(.*?)"\.split|\[((?:.|\n)*?)\])', section)
 		for n, lst in enumerate(lsts):
-			cls.addList(RandoList(elements = lst))
-			cls.add(RandoListDescriptions(n + 1).name, RandoList(elements = lst))
+			if lst[0]:
+				if " " in lst[0]:
+					cls.addList(RandoList(elements = lst[0].split(" ")))
+					cls.add(RandoListDescriptions(n + 1).name, RandoList(elements = lst[0].split(" ")))
+				else:
+					cls.addList(RandoList(elements = list(lst[0])))
+					cls.add(RandoListDescriptions(n + 1).name, RandoList(elements = list(lst[0])))
+			else:
+				cls.addList(RandoList(elements = strToArray(lst[1])))
+				cls.add(RandoListDescriptions(n + 1).name, RandoList(elements = strToArray(lst[1])))
 
 	@classmethod
 	def get(cls, key: RandoListDescriptions) -> Optional[RandoList]:

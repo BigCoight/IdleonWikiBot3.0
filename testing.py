@@ -2,8 +2,8 @@
 # oldV = IdleonReader("156", True)
 # NpcRepo.initialise(newV.codeReader)
 from helpers.CodeReader import IdleonReader
-from repositories.item.ItemDetailRepo import ItemDetailRepo
+from repositories.misc.RandoListRepo import RandoListRepo
 
-idleonReader = IdleonReader("157alphab", steam = True)
-ItemDetailRepo.initialise(idleonReader.codeReader)
+idleonReader = IdleonReader("158", steam = True)
+RandoListRepo.initialise(idleonReader.codeReader)
 # ItemRepo.initialise(idleonReader.codeReader)

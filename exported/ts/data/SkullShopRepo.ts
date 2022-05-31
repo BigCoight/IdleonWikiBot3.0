@@ -42,11 +42,11 @@ export const initSkullShopRepo = () => {
                 "qty": 1
             }),
         new SkullShopBase(5, <SkullShopModel>{
-                "description": "Get 10 Balls! They're put right into the arcade!",
+                "description": "Get 6 Balls! They're put right into the arcade!",
                 "baseCost": 4,
                 "costInc": 0,
                 "rewardId": "Timecandy1",
-                "qty": 10
+                "qty": 6
             }),
         new SkullShopBase(6, <SkullShopModel>{
                 "description": "Get 2 Library Checkouts! It's put right into the library!",
@@ -57,7 +57,7 @@ export const initSkullShopRepo = () => {
             }),
         new SkullShopBase(7, <SkullShopModel>{
                 "description": "Complete 1 Refinery Cycle auto- matically, right here right now!",
-                "baseCost": 7,
+                "baseCost": 1,
                 "costInc": 0,
                 "rewardId": "Timecandy1",
                 "qty": 1

@@ -1252,7 +1252,7 @@ export const initGemShopRepo = () => {
                 "desc": "Each purchase soups up 2 lab Tubes. Players in souped-up tubes get 2x Lab EXP gain, and +30% Line Width. Keep in mind, players are placed in tubes in chronological order.",
                 "cost": 480,
                 "no": 123,
-                "maxPurchases": 4,
+                "maxPurchases": 5,
                 "qty": 0,
                 "costIncrement": 65
             }),

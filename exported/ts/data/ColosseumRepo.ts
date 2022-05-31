@@ -1,5 +1,5 @@
-import { ColWaveModel } from '../model/colWaveModel';
 import { ColEnemyModel } from '../model/colEnemyModel';
+import { ColWaveModel } from '../model/colWaveModel';
 import { ColosseumModel } from '../model/colosseumModel';
 
 export class ColosseumBase { constructor(public index: number, public data: ColosseumModel) { } }

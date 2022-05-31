@@ -55,9 +55,10 @@ class CodeReader:
 
 
 class IdleonReader:
-	def __init__(self, codeFile: str, steam: bool = False) -> None:
+	def __init__(self, version: str, steam: bool = False) -> None:
 		self.steam = steam
-		self.codeReader = CodeReader(codeFile, steam)
+		self.version = version
+		self.codeReader = CodeReader(version, steam)
 		self.readSections()
 
 	def readSections(self):

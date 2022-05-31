@@ -152,7 +152,7 @@ export const initTaskShopDescRepo = () => {
                 "number1": 0,
                 "number2": 0,
                 "number3": 0,
-                "totalLevels": 9,
+                "totalLevels": 10,
                 "meritCost": 1,
                 "text1": "bonusGiven",
                 "text2": "BonusPerLv",

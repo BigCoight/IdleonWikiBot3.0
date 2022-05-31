@@ -12,7 +12,7 @@ export const initBuildingRepo = () => {
                 "description": "Using the new Star Talent (on the 2nd tab of Star Talents), you can collect samples to start printing resources! ",
                 "bonus": " $ Player Slots Unlocked",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery1", "quantity": 3}, <ComponentModel>{"item": "Blank", "quantity": 0}],
-                "maxLvl": 9,
+                "maxLvl": 10,
                 "costInc": 1,
                 "bonusInc": [1, 30],
                 "misc": 0

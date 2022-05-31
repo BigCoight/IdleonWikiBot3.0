@@ -38,7 +38,7 @@ class TalentReward(Component):
 		no = int(qty[0])
 		index = int(qty[1: no + 1])
 		talent = TalentNameRepo.getList(index).name
-		return f"{talent} Talent Book"
+		return "{{Talentbook|"f"{talent}""}}"
 
 
 class Quest(DialogueLine):

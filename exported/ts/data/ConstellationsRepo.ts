@@ -127,6 +127,30 @@ export const initConstellationsRepo = () => {
                 "type": 0
             }),
         new ConstellationBase(10, <ConstellationModel>{
+                "name": "Filler",
+                "area": "",
+                "x": 0,
+                "y": 0,
+                "num1": 0,
+                "num2": 0,
+                "num3": 0,
+                "starChartPoints": 0,
+                "requirement": "",
+                "type": 0
+            }),
+        new ConstellationBase(11, <ConstellationModel>{
+                "name": "Filler",
+                "area": "",
+                "x": 0,
+                "y": 0,
+                "num1": 0,
+                "num2": 0,
+                "num3": 0,
+                "starChartPoints": 0,
+                "requirement": "",
+                "type": 0
+            }),
+        new ConstellationBase(12, <ConstellationModel>{
                 "name": "B-1",
                 "area": "The Mimic Hole",
                 "x": 16,
@@ -138,7 +162,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach this star on 3 players @ Progress:{/}",
                 "type": 0
             }),
-        new ConstellationBase(11, <ConstellationModel>{
+        new ConstellationBase(13, <ConstellationModel>{
                 "name": "B-2",
                 "area": "Faraway Piers",
                 "x": 490,
@@ -150,7 +174,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach this star as any Mage Class @ Progress:{/}",
                 "type": 0
             }),
-        new ConstellationBase(12, <ConstellationModel>{
+        new ConstellationBase(14, <ConstellationModel>{
                 "name": "B-3",
                 "area": "The Grandioso Canyon",
                 "x": 1011,
@@ -162,7 +186,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "AFK here for 36+ hours on 3 players @ Progress:{/}",
                 "type": 3
             }),
-        new ConstellationBase(13, <ConstellationModel>{
+        new ConstellationBase(15, <ConstellationModel>{
                 "name": "B-4",
                 "area": "Slamabam Straightaway",
                 "x": 1790,
@@ -174,7 +198,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach this star on 4 players @ Progress:{/}",
                 "type": 0
             }),
-        new ConstellationBase(14, <ConstellationModel>{
+        new ConstellationBase(16, <ConstellationModel>{
                 "name": "B-5",
                 "area": "Sandstone Colosseum",
                 "x": 134,
@@ -186,7 +210,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Clear the colosseum on 4 players @ Progress:{/}",
                 "type": 4
             }),
-        new ConstellationBase(15, <ConstellationModel>{
+        new ConstellationBase(17, <ConstellationModel>{
                 "name": "B-6",
                 "area": "Efaunt's Tomb",
                 "x": 210,
@@ -198,7 +222,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Defeat Efaunt as any Beginner Class @ Progress:{/}",
                 "type": 4
             }),
-        new ConstellationBase(16, <ConstellationModel>{
+        new ConstellationBase(18, <ConstellationModel>{
                 "name": "B-7",
                 "area": "Up Up Down Down",
                 "x": 958,
@@ -210,7 +234,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "AFK here for 48+ hours on 3 players @ Progress:{/}",
                 "type": 3
             }),
-        new ConstellationBase(17, <ConstellationModel>{
+        new ConstellationBase(19, <ConstellationModel>{
                 "name": "B-8",
                 "area": "YumYum Grotto",
                 "x": 11,
@@ -222,7 +246,43 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach Lv 65 on four players @ Progress:{/}",
                 "type": 1
             }),
-        new ConstellationBase(18, <ConstellationModel>{
+        new ConstellationBase(20, <ConstellationModel>{
+                "name": "Filler",
+                "area": "",
+                "x": 0,
+                "y": 0,
+                "num1": 0,
+                "num2": 0,
+                "num3": 0,
+                "starChartPoints": 0,
+                "requirement": "",
+                "type": 0
+            }),
+        new ConstellationBase(21, <ConstellationModel>{
+                "name": "Filler",
+                "area": "",
+                "x": 0,
+                "y": 0,
+                "num1": 0,
+                "num2": 0,
+                "num3": 0,
+                "starChartPoints": 0,
+                "requirement": "",
+                "type": 0
+            }),
+        new ConstellationBase(22, <ConstellationModel>{
+                "name": "Filler",
+                "area": "",
+                "x": 0,
+                "y": 0,
+                "num1": 0,
+                "num2": 0,
+                "num3": 0,
+                "starChartPoints": 0,
+                "requirement": "",
+                "type": 0
+            }),
+        new ConstellationBase(23, <ConstellationModel>{
                 "name": "C-1",
                 "area": "Frostbite Towndra",
                 "x": 13,
@@ -234,7 +294,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach Lv 90 on 6 players @ Progress:{/}",
                 "type": 1
             }),
-        new ConstellationBase(19, <ConstellationModel>{
+        new ConstellationBase(24, <ConstellationModel>{
                 "name": "C-2",
                 "area": "Steep Sheep Ledge",
                 "x": 898,
@@ -246,7 +306,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Defeat a sheepie barehanded on four players @ Progress:{/}",
                 "type": 4
             }),
-        new ConstellationBase(20, <ConstellationModel>{
+        new ConstellationBase(25, <ConstellationModel>{
                 "name": "C-3",
                 "area": "Trappers Folley",
                 "x": 183,
@@ -258,7 +318,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach Lv 15 trapping on five players @ Progress:{/}",
                 "type": 4
             }),
-        new ConstellationBase(21, <ConstellationModel>{
+        new ConstellationBase(26, <ConstellationModel>{
                 "name": "C-4",
                 "area": "Refrigeration Station",
                 "x": 78,
@@ -270,7 +330,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "AFK for 60+ hrs on 3 players @ Progress:{/}",
                 "type": 3
             }),
-        new ConstellationBase(22, <ConstellationModel>{
+        new ConstellationBase(27, <ConstellationModel>{
                 "name": "C-5",
                 "area": "Rollin' Tundra",
                 "x": 1643,
@@ -282,7 +342,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach wave 11 on 4 players @ Progress:{/}",
                 "type": 4
             }),
-        new ConstellationBase(23, <ConstellationModel>{
+        new ConstellationBase(28, <ConstellationModel>{
                 "name": "C-6",
                 "area": "Thermonuclear Climb",
                 "x": 843,
@@ -294,7 +354,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "AFK for 11+ hrs on 9 players @ Progress:{/}",
                 "type": 3
             }),
-        new ConstellationBase(24, <ConstellationModel>{
+        new ConstellationBase(29, <ConstellationModel>{
                 "name": "C-7",
                 "area": "Crystal Basecamp",
                 "x": 1488,
@@ -306,7 +366,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach this star on 6 players @ Progress:{/}",
                 "type": 0
             }),
-        new ConstellationBase(25, <ConstellationModel>{
+        new ConstellationBase(30, <ConstellationModel>{
                 "name": "C-8",
                 "area": "Hell Hath Frozen Over",
                 "x": 923,
@@ -318,7 +378,43 @@ export const initConstellationsRepo = () => {
                 "requirement": "Kill a bloodbone on 4 players @ Progress:{/}",
                 "type": 4
             }),
-        new ConstellationBase(26, <ConstellationModel>{
+        new ConstellationBase(31, <ConstellationModel>{
+                "name": "Filler",
+                "area": "",
+                "x": 0,
+                "y": 0,
+                "num1": 0,
+                "num2": 0,
+                "num3": 0,
+                "starChartPoints": 0,
+                "requirement": "",
+                "type": 0
+            }),
+        new ConstellationBase(32, <ConstellationModel>{
+                "name": "Filler",
+                "area": "",
+                "x": 0,
+                "y": 0,
+                "num1": 0,
+                "num2": 0,
+                "num3": 0,
+                "starChartPoints": 0,
+                "requirement": "",
+                "type": 0
+            }),
+        new ConstellationBase(33, <ConstellationModel>{
+                "name": "Filler",
+                "area": "",
+                "x": 0,
+                "y": 0,
+                "num1": 0,
+                "num2": 0,
+                "num3": 0,
+                "starChartPoints": 0,
+                "requirement": "",
+                "type": 0
+            }),
+        new ConstellationBase(34, <ConstellationModel>{
                 "name": "D-1",
                 "area": "Outer World Town",
                 "x": 42,
@@ -330,7 +426,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach Lv 120 on 8 players @ Progress:{/}",
                 "type": 1
             }),
-        new ConstellationBase(27, <ConstellationModel>{
+        new ConstellationBase(35, <ConstellationModel>{
                 "name": "D-2",
                 "area": "Spaceway Raceway",
                 "x": 29,
@@ -342,7 +438,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Defeat all mushrooms before any respawn on 3 players @ Progress:{/}",
                 "type": 4
             }),
-        new ConstellationBase(28, <ConstellationModel>{
+        new ConstellationBase(36, <ConstellationModel>{
                 "name": "D-3",
                 "area": "Donut Drive-In",
                 "x": 470,
@@ -354,7 +450,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach Lv 15 Cooking on 4 players @ Progress:{/}",
                 "type": 4
             }),
-        new ConstellationBase(29, <ConstellationModel>{
+        new ConstellationBase(37, <ConstellationModel>{
                 "name": "D-4",
                 "area": "Wurm Highway",
                 "x": 335,
@@ -366,7 +462,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach this star on 3 players @ Progress:{/}",
                 "type": 0
             }),
-        new ConstellationBase(30, <ConstellationModel>{
+        new ConstellationBase(38, <ConstellationModel>{
                 "name": "D-5",
                 "area": "Cocoa Tunnel",
                 "x": 940,
@@ -378,7 +474,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Defeat all choccies before any respawn on 4 players @ Progress:{/}",
                 "type": 4
             }),
-        new ConstellationBase(31, <ConstellationModel>{
+        new ConstellationBase(39, <ConstellationModel>{
                 "name": "D-6",
                 "area": "Standstill Plains",
                 "x": 1427,
@@ -390,7 +486,7 @@ export const initConstellationsRepo = () => {
                 "requirement": "Reach this star on 4 players @ Progress:{/}",
                 "type": 0
             }),
-        new ConstellationBase(32, <ConstellationModel>{
+        new ConstellationBase(40, <ConstellationModel>{
                 "name": "D-7",
                 "area": "Shelled Shores",
                 "x": 322,
@@ -401,6 +497,42 @@ export const initConstellationsRepo = () => {
                 "starChartPoints": 3,
                 "requirement": "Hit a megacrit on a Clammy on 4 players @ Progress:{/}",
                 "type": 4
+            }),
+        new ConstellationBase(41, <ConstellationModel>{
+                "name": "Filler",
+                "area": "",
+                "x": 0,
+                "y": 0,
+                "num1": 0,
+                "num2": 0,
+                "num3": 0,
+                "starChartPoints": 0,
+                "requirement": "",
+                "type": 0
+            }),
+        new ConstellationBase(42, <ConstellationModel>{
+                "name": "Filler",
+                "area": "",
+                "x": 0,
+                "y": 0,
+                "num1": 0,
+                "num2": 0,
+                "num3": 0,
+                "starChartPoints": 0,
+                "requirement": "",
+                "type": 0
+            }),
+        new ConstellationBase(43, <ConstellationModel>{
+                "name": "Filler",
+                "area": "",
+                "x": 0,
+                "y": 0,
+                "num1": 0,
+                "num2": 0,
+                "num3": 0,
+                "starChartPoints": 0,
+                "requirement": "",
+                "type": 0
             })    
 ]
 }

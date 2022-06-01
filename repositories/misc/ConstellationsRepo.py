@@ -10,6 +10,7 @@ class ConstellationsRepo(Repository[Constellation]):
 	"""
 	Dependent on: MapNameRepo
 	"""
+
 	@classmethod
 	def getCategory(cls) -> str:
 		return "Misc"
@@ -27,10 +28,10 @@ class ConstellationsRepo(Repository[Constellation]):
 		prefixes = ["A", "B", "C"]
 		# StarQuests
 		data = getFromSplitArray(cls.getSection())
-		fillterCount = 1 # used to handle multiple constellsations with the same name.
+		fillterCount = 1  # used to handle multiple constellsations with the same name.
 		for n, const in enumerate(data):
 			if const[0] == '':
-				cls.add(f"Filler{fillterCount}", Constellation(
+				tooAdd = Constellation(
 					name = f"Filler",
 					area = "",
 					x = 0,
@@ -41,10 +42,12 @@ class ConstellationsRepo(Repository[Constellation]):
 					starChartPoints = 0,
 					requirement = "",
 					type = 0,
-				))
+				)
+				cls.add(f"Filler{fillterCount}", tooAdd)
+				cls.addList(tooAdd)
 				fillterCount += 1
 				continue
-			
+
 			# If map id < 50, it's world 1
 			if int(const[0]) < 50:
 				prefix = "A"

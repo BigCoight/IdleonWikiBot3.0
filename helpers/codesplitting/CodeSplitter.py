@@ -1,8 +1,5 @@
+import difflib
 import os
-from io import BytesIO
-from itertools import groupby
-from token import tok_name
-from tokenize import tokenize
 
 import jsbeautifier
 import regex as re
@@ -18,7 +15,7 @@ class CodeSplitter:
 		opts = jsbeautifier.default_options()
 		opts.indent_size = 4
 		opts.space_in_empty_paren = False
-		opts.brace_style = "collapse,preserve-inline"
+		opts.brace_style = "collapse"
 		opts.indent_with_tabs = True
 		opts.preserve_newlines = False
 		opts.break_chained_methods = True
@@ -32,7 +29,6 @@ class CodeSplitter:
 			with open(cls._getPath(version, chunk[1]), mode = "w") as outfile:
 
 				outfile.write(pretty_chunk)
-		cls.tokenise()
 
 	@classmethod
 	def _getPath(cls, version: str, name: str) -> str:
@@ -44,14 +40,20 @@ class CodeSplitter:
 
 	@classmethod
 	def tokenise(cls):
-		with open(r"./codefiles/codechunks/157/_customBlock_GoldFoodBonuses.txt", mode = "r") as infile:
-			lines = infile.read()
-		tokens = tokenize(BytesIO(lines.encode('utf-8')).readline)
-		for key, line in groupby(tokens, lambda x: x.line):
-			toks = list(line)
-			print([token.string for token in toks])
-			print([tok_name[token.exact_type] for token in toks])
-			print("---EOL---")
+		def onlyDelta(x: str) -> bool:
+			return x.startswith("+") or x.startswith("-")
+
+		with open(r"./codefiles/codechunks/157/_customBlock_RunCodeOfTypeXforThingY.txt", mode = "r") as infile:
+			lines1 = infile.read()
+		with open(r"./codefiles/codechunks/158/_customBlock_RunCodeOfTypeXforThingY.txt", mode = "r") as infile:
+			lines2 = infile.read()
+		print("\n".join([x for x in difflib.unified_diff(lines1.splitlines(), lines2.splitlines())]))
+
+	# print([token.string for token in toks1])
+	# print([token.string for token in toks2])
+	# print([tok_name[token.exact_type] for token in toks1])
+	# print([tok_name[token.exact_type] for token in toks2])
+	# print("---EOL---")
 
 	@classmethod
 	def parseTypeChecks(cls, chunk: str) -> str:

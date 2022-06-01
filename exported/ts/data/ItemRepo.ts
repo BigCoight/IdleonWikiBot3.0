@@ -38079,6 +38079,7 @@ export const initItemRepo = () => {
                             "txtName": "Lonely Hunter: Skeleton? Skelegone!"
                         },
                         <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                        <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                         <SourceModel>{
                             "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                             "txtName": "Alchemy: Level up Gift"
@@ -38159,6 +38160,7 @@ export const initItemRepo = () => {
                         },
                         <SourceModel>{"wikiName": "[[Shuvelle#Diggy Hole!|Diggy Hole!]]", "txtName": "Shuvelle: Diggy Hole!"},
                         <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                        <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                         <SourceModel>{
                             "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                             "txtName": "Alchemy: Level up Gift"
@@ -38262,6 +38264,7 @@ export const initItemRepo = () => {
                         },
                         <SourceModel>{"wikiName": "[[Snouts#Mana Plox|Mana Plox]]", "txtName": "Snouts: Mana Plox"},
                         <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                        <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                         <SourceModel>{
                             "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                             "txtName": "Alchemy: Level up Gift"
@@ -38334,6 +38337,7 @@ export const initItemRepo = () => {
                             "txtName": "Walupiggy: Treasure Hunt 1"
                         },
                         <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                        <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                         <SourceModel>{
                             "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                             "txtName": "Alchemy: Level up Gift"
@@ -42211,6 +42215,7 @@ export const initItemRepo = () => {
                             "wikiName": "[[Walupiggy#Treasure Hunt 3|Treasure Hunt 3]]",
                             "txtName": "Walupiggy: Treasure Hunt 3"
                         },
+                        <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                         <SourceModel>{"wikiName": "[[2021 Giftmas Box]]", "txtName": "2021 Giftmas Box"}
                     ],
                     "recipeFrom": [],
@@ -42231,7 +42236,11 @@ export const initItemRepo = () => {
                     "Type": "Usable",
                     "description": "Hold down to gain Class EXP. The amount you gain is based on your Class LV. "
                 },
-                "sources": undefined,
+                "sources": <SourcesModel>{
+                    "sources": [<SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}],
+                    "recipeFrom": [],
+                    "questAss": []
+                },
                 "notes": undefined,
                 "recipe": undefined,
                 "vendors": undefined,
@@ -43081,7 +43090,11 @@ export const initItemRepo = () => {
                     "Type": "Currency",
                     "description": "You shouldn't be reading this... "
                 },
-                "sources": undefined,
+                "sources": <SourcesModel>{
+                    "sources": [<SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}],
+                    "recipeFrom": [],
+                    "questAss": []
+                },
                 "notes": undefined,
                 "recipe": undefined,
                 "vendors": undefined,
@@ -43152,7 +43165,8 @@ export const initItemRepo = () => {
                         <SourceModel>{
                             "wikiName": "[[Nebula Neddy#Task Requirement Affirmative|Task Requirement Affirmative]]",
                             "txtName": "Nebula Neddy: Task Requirement Affirmative"
-                        }
+                        },
+                        <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
                     ],
                     "recipeFrom": [],
                     "questAss": []
@@ -43224,7 +43238,8 @@ export const initItemRepo = () => {
                             "wikiName": "[[Nebula Neddy#Task Requirement Affirmative|Task Requirement Affirmative]]",
                             "txtName": "Nebula Neddy: Task Requirement Affirmative"
                         },
-                        <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                        <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                        <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
                     ],
                     "recipeFrom": [],
                     "questAss": []

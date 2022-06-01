@@ -1612,9 +1612,9 @@
             {"item": "DropTable1", "quantity": 1, "chance": 0.003, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Spore Meadows",
+            "enemy": "mushG",
             "world": "Blunder Hills",
-            "id": 1,
+            "map": {"intName": "GrasslandsA", "name": "Spore Meadows", "id": 1},
             "portalRequirements": [20]
         },
         "navigation": {
@@ -1660,9 +1660,9 @@
             {"item": "DropTable1", "quantity": 1, "chance": 0.0038, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Froggy Fields",
+            "enemy": "frogG",
             "world": "Blunder Hills",
-            "id": 2,
+            "map": {"intName": "GrasslandsB", "name": "Froggy Fields", "id": 2},
             "portalRequirements": [30]
         },
         "navigation": {
@@ -1705,9 +1705,9 @@
             {"item": "DropTable1", "quantity": 1, "chance": 0.0045, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Valley Of The Beans",
+            "enemy": "beanG",
             "world": "Blunder Hills",
-            "id": 14,
+            "map": {"intName": "GrasslandsC", "name": "Valley Of The Beans", "id": 14},
             "portalRequirements": [80, 1500]
         },
         "navigation": {
@@ -1751,9 +1751,9 @@
             {"item": "DropTable2", "quantity": 1, "chance": 0.004, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Jungle Perimeter",
+            "enemy": "slimeG",
             "world": "Blunder Hills",
-            "id": 16,
+            "map": {"intName": "JungleA", "name": "Jungle Perimeter", "id": 16},
             "portalRequirements": [200, 3000]
         },
         "navigation": {
@@ -1798,9 +1798,9 @@
             {"item": "DropTable2", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Winding Willows",
+            "enemy": "snakeG",
             "world": "Blunder Hills",
-            "id": 19,
+            "map": {"intName": "JungleB", "name": "Winding Willows", "id": 19},
             "portalRequirements": [250]
         },
         "navigation": {
@@ -1843,9 +1843,9 @@
             {"item": "DropTable2", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Vegetable Patch",
+            "enemy": "carrotO",
             "world": "Blunder Hills",
-            "id": 24,
+            "map": {"intName": "JungleC", "name": "Vegetable Patch", "id": 24},
             "portalRequirements": [300, 2000]
         },
         "navigation": {
@@ -1888,9 +1888,9 @@
             {"item": "DropTable3", "quantity": 1, "chance": 0.004, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Forest Outskirts",
+            "enemy": "goblinG",
             "world": "Blunder Hills",
-            "id": 26,
+            "map": {"intName": "ForestA", "name": "Forest Outskirts", "id": 26},
             "portalRequirements": [350]
         },
         "navigation": {
@@ -1934,9 +1934,9 @@
             {"item": "DropTable3", "quantity": 1, "chance": 0.0045, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Encroaching Forest Villas",
+            "enemy": "plank",
             "world": "Blunder Hills",
-            "id": 27,
+            "map": {"intName": "ForestB", "name": "Encroaching Forest Villas", "id": 27},
             "portalRequirements": [30, 4200]
         },
         "navigation": {
@@ -1981,9 +1981,9 @@
             {"item": "DropTable3", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Tucked Away",
+            "enemy": "frogBIG",
             "world": "Blunder Hills",
-            "id": 28,
+            "map": {"intName": "ForestC", "name": "Tucked Away", "id": 28},
             "portalRequirements": [0]
         },
         "navigation": {
@@ -2026,9 +2026,9 @@
             {"item": "DropTable3c", "quantity": 1, "chance": 0.0057, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "The Base Of The Bark",
+            "enemy": "branch",
             "world": "Blunder Hills",
-            "id": 13,
+            "map": {"intName": "TreeInteriorA", "name": "The Base Of The Bark", "id": 13},
             "portalRequirements": [2500, 50000]
         },
         "navigation": {
@@ -2069,9 +2069,9 @@
             {"item": "DropTable3c", "quantity": 1, "chance": 0.0065, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Hollowed Trunk",
+            "enemy": "acorn",
             "world": "Blunder Hills",
-            "id": 18,
+            "map": {"intName": "TreeInteriorB", "name": "Hollowed Trunk", "id": 18},
             "portalRequirements": [5000]
         },
         "navigation": {
@@ -2114,9 +2114,9 @@
             {"item": "DropTable5b", "quantity": 1, "chance": 0.002, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Where the Branches End",
+            "enemy": "mushW",
             "world": "Blunder Hills",
-            "id": 31,
+            "map": {"intName": "TreeInteriorC", "name": "Where the Branches End", "id": 31},
             "portalRequirements": [0]
         },
         "navigation": {
@@ -2162,9 +2162,9 @@
             {"item": "DropTable3b", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Poopy Sewers",
+            "enemy": "poopSmall",
             "world": "Blunder Hills",
-            "id": 8,
+            "map": {"intName": "SewerA", "name": "Poopy Sewers", "id": 8},
             "portalRequirements": [20000]
         },
         "navigation": {
@@ -2208,9 +2208,9 @@
             {"item": "DropTable3b", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Rats Nest",
+            "enemy": "ratB",
             "world": "Blunder Hills",
-            "id": 15,
+            "map": {"intName": "SewerB", "name": "Rats Nest", "id": 15},
             "portalRequirements": [35000]
         },
         "navigation": {
@@ -2250,9 +2250,9 @@
             {"item": "CardsA15", "quantity": 1, "chance": 0.0015, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Meel's Crypt",
+            "enemy": "poopD",
             "world": "Blunder Hills",
-            "id": 38,
+            "map": {"intName": "SewerD", "name": "Meel's Crypt", "id": 38},
             "portalRequirements": [0]
         },
         "navigation": {
@@ -2376,9 +2376,9 @@
             {"item": "DropTable6", "quantity": 1, "chance": 0.003, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Jar Bridge",
+            "enemy": "jarSand",
             "world": "Yum Yum Desert",
-            "id": 51,
+            "map": {"intName": "zDesertCalmA", "name": "Jar Bridge", "id": 51},
             "portalRequirements": [250]
         },
         "navigation": {
@@ -2422,9 +2422,9 @@
             {"item": "DropTable6", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "The Mimic Hole",
+            "enemy": "mimicA",
             "world": "Yum Yum Desert",
-            "id": 52,
+            "map": {"intName": "zDesertCalmB", "name": "The Mimic Hole", "id": 52},
             "portalRequirements": [600, 1000]
         },
         "navigation": {
@@ -2467,9 +2467,9 @@
             {"item": "DropTable6", "quantity": 1, "chance": 0.0036, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Dessert Dunes",
+            "enemy": "crabcake",
             "world": "Yum Yum Desert",
-            "id": 53,
+            "map": {"intName": "zDesertCalmC", "name": "Dessert Dunes", "id": 53},
             "portalRequirements": [1000]
         },
         "navigation": {
@@ -2512,9 +2512,9 @@
             {"item": "DropTable7", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "The Grandioso Canyon",
+            "enemy": "coconut",
             "world": "Yum Yum Desert",
-            "id": 57,
+            "map": {"intName": "zDesertMildA", "name": "The Grandioso Canyon", "id": 57},
             "portalRequirements": [1200]
         },
         "navigation": {
@@ -2556,9 +2556,9 @@
             {"item": "DropTable7", "quantity": 1, "chance": 0.0035, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Shifty Sandbox",
+            "enemy": "sandcastle",
             "world": "Yum Yum Desert",
-            "id": 58,
+            "map": {"intName": "zDesertMildB", "name": "Shifty Sandbox", "id": 58},
             "portalRequirements": [1600]
         },
         "navigation": {
@@ -2605,9 +2605,9 @@
             {"item": "DropTable7", "quantity": 1, "chance": 0.0037, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Pincer Plateau",
+            "enemy": "pincermin",
             "world": "Yum Yum Desert",
-            "id": 59,
+            "map": {"intName": "zDesertMildC", "name": "Pincer Plateau", "id": 59},
             "portalRequirements": [2000]
         },
         "navigation": {
@@ -2648,9 +2648,9 @@
             {"item": "DropTable7", "quantity": 1, "chance": 0.0039, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Slamabam Straightaway",
+            "enemy": "potato",
             "world": "Yum Yum Desert",
-            "id": 60,
+            "map": {"intName": "zDesertMildD", "name": "Slamabam Straightaway", "id": 60},
             "portalRequirements": [2500, 0]
         },
         "navigation": {
@@ -2691,9 +2691,9 @@
             {"item": "DropTable8", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "The Ring",
+            "enemy": "steak",
             "world": "Yum Yum Desert",
-            "id": 62,
+            "map": {"intName": "zDesertNightA", "name": "The Ring", "id": 62},
             "portalRequirements": [3000]
         },
         "navigation": {
@@ -2736,9 +2736,9 @@
             {"item": "DropTable8", "quantity": 1, "chance": 0.0035, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Up Up Down Down",
+            "enemy": "moonman",
             "world": "Yum Yum Desert",
-            "id": 63,
+            "map": {"intName": "zDesertNightB", "name": "Up Up Down Down", "id": 63},
             "portalRequirements": [4000]
         },
         "navigation": {
@@ -2780,9 +2780,9 @@
             {"item": "DropTable8", "quantity": 1, "chance": 0.0037, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Sands of Time",
+            "enemy": "sandgiant",
             "world": "Yum Yum Desert",
-            "id": 64,
+            "map": {"intName": "zDesertNightC", "name": "Sands of Time", "id": 64},
             "portalRequirements": [5000]
         },
         "navigation": {
@@ -2824,9 +2824,9 @@
             {"item": "DropTable8", "quantity": 1, "chance": 0.0039, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Djonnuttown",
+            "enemy": "snailZ",
             "world": "Yum Yum Desert",
-            "id": 65,
+            "map": {"intName": "zDesertNightD", "name": "Djonnuttown", "id": 65},
             "portalRequirements": [1]
         },
         "navigation": {
@@ -2869,9 +2869,9 @@
             {"item": "DropTable14", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Steep Sheep Ledge",
+            "enemy": "sheep",
             "world": "Frostbite Tundra",
-            "id": 101,
+            "map": {"intName": "ySnowA1", "name": "Steep Sheep Ledge", "id": 101},
             "portalRequirements": [1000]
         },
         "navigation": {
@@ -2914,9 +2914,9 @@
             {"item": "DropTable14", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Snowfield Outskirts",
+            "enemy": "flake",
             "world": "Frostbite Tundra",
-            "id": 103,
+            "map": {"intName": "ySnowA2", "name": "Snowfield Outskirts", "id": 103},
             "portalRequirements": [2000]
         },
         "navigation": {
@@ -2959,9 +2959,9 @@
             {"item": "DropTable14", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "The Stache Split",
+            "enemy": "stache",
             "world": "Frostbite Tundra",
-            "id": 104,
+            "map": {"intName": "ySnowA3", "name": "The Stache Split", "id": 104},
             "portalRequirements": [3000, 100000]
         },
         "navigation": {
@@ -3003,9 +3003,9 @@
             {"item": "DropTable16", "quantity": 1, "chance": 0.0034, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Wam Wonderland",
+            "enemy": "ram",
             "world": "Frostbite Tundra",
-            "id": 116,
+            "map": {"intName": "ySnowD1", "name": "Wam Wonderland", "id": 116},
             "portalRequirements": [250000]
         },
         "navigation": {
@@ -3048,9 +3048,9 @@
             {"item": "DropTable15", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Refrigeration Station",
+            "enemy": "bloque",
             "world": "Frostbite Tundra",
-            "id": 105,
+            "map": {"intName": "ySnowB1", "name": "Refrigeration Station", "id": 105},
             "portalRequirements": [4000]
         },
         "navigation": {
@@ -3094,9 +3094,9 @@
             {"item": "DropTable15", "quantity": 1, "chance": 0.0027, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Mamooooth Mountain",
+            "enemy": "mamoth",
             "world": "Frostbite Tundra",
-            "id": 106,
+            "map": {"intName": "ySnowB2", "name": "Mamooooth Mountain", "id": 106},
             "portalRequirements": [6000]
         },
         "navigation": {
@@ -3140,9 +3140,9 @@
             {"item": "DropTable15", "quantity": 1, "chance": 0.0029, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Rollin' Tundra",
+            "enemy": "snowball",
             "world": "Frostbite Tundra",
-            "id": 107,
+            "map": {"intName": "ySnowB3", "name": "Rollin' Tundra", "id": 107},
             "portalRequirements": [8000]
         },
         "navigation": {
@@ -3184,9 +3184,9 @@
             {"item": "DropTable15", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Signature Slopes",
+            "enemy": "penguin",
             "world": "Frostbite Tundra",
-            "id": 108,
+            "map": {"intName": "ySnowB4", "name": "Signature Slopes", "id": 108},
             "portalRequirements": [11000]
         },
         "navigation": {
@@ -3235,9 +3235,9 @@
             {"item": "DropTable15", "quantity": 1, "chance": 0.0033, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Thermonuclear Climb",
+            "enemy": "thermostat",
             "world": "Frostbite Tundra",
-            "id": 109,
+            "map": {"intName": "ySnowB5", "name": "Thermonuclear Climb", "id": 109},
             "portalRequirements": [15000]
         },
         "navigation": {
@@ -3279,9 +3279,9 @@
             {"item": "DropTable16", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Waterlogged Entrance",
+            "enemy": "glass",
             "world": "Frostbite Tundra",
-            "id": 110,
+            "map": {"intName": "ySnowC1", "name": "Waterlogged Entrance", "id": 110},
             "portalRequirements": [18000]
         },
         "navigation": {
@@ -3323,9 +3323,9 @@
             {"item": "DropTable16", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Cryo Catacombs",
+            "enemy": "snakeB",
             "world": "Frostbite Tundra",
-            "id": 111,
+            "map": {"intName": "ySnowC2", "name": "Cryo Catacombs", "id": 111},
             "portalRequirements": [22000]
         },
         "navigation": {
@@ -3367,9 +3367,9 @@
             {"item": "DropTable16", "quantity": 1, "chance": 0.003, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Overpass of Sound",
+            "enemy": "speaker",
             "world": "Frostbite Tundra",
-            "id": 112,
+            "map": {"intName": "ySnowC3", "name": "Overpass of Sound", "id": 112},
             "portalRequirements": [35000]
         },
         "navigation": {
@@ -3411,9 +3411,9 @@
             {"item": "DropTable16", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Crystal Basecamp",
+            "enemy": "eye",
             "world": "Frostbite Tundra",
-            "id": 113,
+            "map": {"intName": "ySnowC4", "name": "Crystal Basecamp", "id": 113},
             "portalRequirements": [120000]
         },
         "navigation": {
@@ -3482,9 +3482,9 @@
             {"item": "DropTable19", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Spaceway Raceway",
+            "enemy": "mushP",
             "world": "Hyperion Nebula",
-            "id": 151,
+            "map": {"intName": "xSpaceA1", "name": "Spaceway Raceway", "id": 151},
             "portalRequirements": [20000]
         },
         "navigation": {
@@ -3527,9 +3527,9 @@
             {"item": "DropTable19", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "TV Outpost",
+            "enemy": "w4a2",
             "world": "Hyperion Nebula",
-            "id": 152,
+            "map": {"intName": "xSpaceA2", "name": "TV Outpost", "id": 152},
             "portalRequirements": [30000]
         },
         "navigation": {
@@ -3571,9 +3571,9 @@
             {"item": "DropTable19", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Donut Drive-In",
+            "enemy": "w4a3",
             "world": "Hyperion Nebula",
-            "id": 153,
+            "map": {"intName": "xSpaceA3", "name": "Donut Drive-In", "id": 153},
             "portalRequirements": [50000]
         },
         "navigation": {
@@ -3615,9 +3615,9 @@
             {"item": "DropTable19", "quantity": 1, "chance": 0.0034, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Outskirts of Fallstar Isle",
+            "enemy": "demonP",
             "world": "Hyperion Nebula",
-            "id": 154,
+            "map": {"intName": "xSpaceA4", "name": "Outskirts of Fallstar Isle", "id": 154},
             "portalRequirements": [70000]
         },
         "navigation": {
@@ -3659,9 +3659,9 @@
             {"item": "DropTable20", "quantity": 1, "chance": 0.0027, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Moutainous Deugh",
+            "enemy": "w4b2",
             "world": "Hyperion Nebula",
-            "id": 155,
+            "map": {"intName": "xSpaceB1", "name": "Moutainous Deugh", "id": 155},
             "portalRequirements": [100000]
         },
         "navigation": {
@@ -3703,9 +3703,9 @@
             {"item": "DropTable20", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Wurm Highway",
+            "enemy": "w4b1",
             "world": "Hyperion Nebula",
-            "id": 156,
+            "map": {"intName": "xSpaceB2", "name": "Wurm Highway", "id": 156},
             "portalRequirements": [150000]
         },
         "navigation": {
@@ -3747,9 +3747,9 @@
             {"item": "DropTable20", "quantity": 1, "chance": 0.0029, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Jelly Cube Bridge",
+            "enemy": "w4b3",
             "world": "Hyperion Nebula",
-            "id": 157,
+            "map": {"intName": "xSpaceB3", "name": "Jelly Cube Bridge", "id": 157},
             "portalRequirements": [250000]
         },
         "navigation": {
@@ -3791,9 +3791,9 @@
             {"item": "DropTable20", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Cocoa Tunnel",
+            "enemy": "w4b4",
             "world": "Hyperion Nebula",
-            "id": 158,
+            "map": {"intName": "xSpaceB4", "name": "Cocoa Tunnel", "id": 158},
             "portalRequirements": [500000]
         },
         "navigation": {
@@ -3834,9 +3834,9 @@
             {"item": "DropTable20", "quantity": 1, "chance": 0.0033, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Standstill Plains",
+            "enemy": "w4b5",
             "world": "Hyperion Nebula",
-            "id": 159,
+            "map": {"intName": "xSpaceB5", "name": "Standstill Plains", "id": 159},
             "portalRequirements": [700000]
         },
         "navigation": {
@@ -3878,9 +3878,9 @@
             {"item": "DropTable21", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Shelled Shores",
+            "enemy": "w4c1",
             "world": "Hyperion Nebula",
-            "id": 160,
+            "map": {"intName": "xSpaceC1", "name": "Shelled Shores", "id": 160},
             "portalRequirements": [1000000]
         },
         "navigation": {
@@ -3922,9 +3922,9 @@
             {"item": "DropTable21", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "The Untraveled Octopath",
+            "enemy": "w4c2",
             "world": "Hyperion Nebula",
-            "id": 161,
+            "map": {"intName": "xSpaceC2", "name": "The Untraveled Octopath", "id": 161},
             "portalRequirements": [2000000]
         },
         "navigation": {
@@ -3966,9 +3966,9 @@
             {"item": "DropTable21", "quantity": 1, "chance": 0.003, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Flamboyant Bayou",
+            "enemy": "w4c3",
             "world": "Hyperion Nebula",
-            "id": 162,
+            "map": {"intName": "xSpaceC3", "name": "Flamboyant Bayou", "id": 162},
             "portalRequirements": [3000000]
         },
         "navigation": {
@@ -4009,9 +4009,9 @@
             {"item": "DropTable21", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Enclave of Eyes",
+            "enemy": "w4c4",
             "world": "Hyperion Nebula",
-            "id": 163,
+            "map": {"intName": "xSpaceC4", "name": "Enclave of Eyes", "id": 163},
             "portalRequirements": [4000000]
         },
         "navigation": {
@@ -4052,9 +4052,9 @@
             {"item": "DropTable1", "quantity": 1, "chance": 0.0052, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Birch Enclave",
+            "enemy": "mushR",
             "world": "Blunder Hills",
-            "id": 17,
+            "map": {"intName": "GrasslandsD", "name": "Birch Enclave", "id": 17},
             "portalRequirements": [0]
         },
         "navigation": {
@@ -4169,9 +4169,9 @@
             {"item": "DropTable16", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Hell Hath Frozen Over",
+            "enemy": "skele2",
             "world": "Frostbite Tundra",
-            "id": 117,
+            "map": {"intName": "ySnowD2", "name": "Hell Hath Frozen Over", "id": 117},
             "portalRequirements": [0]
         },
         "navigation": {
@@ -5967,9 +5967,9 @@
             {"item": "DropTable4", "quantity": 1, "chance": 0.0065, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Tunnels Entrance",
+            "enemy": "Copper",
             "world": "Blunder Hills",
-            "id": 6,
+            "map": {"intName": "MininggA", "name": "Tunnels Entrance", "id": 6},
             "portalRequirements": [10]
         },
         "navigation": null,
@@ -6003,9 +6003,9 @@
             {"item": "DropTable4", "quantity": 1, "chance": 0.007, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Freefall Caverns",
+            "enemy": "Iron",
             "world": "Blunder Hills",
-            "id": 7,
+            "map": {"intName": "MininggB", "name": "Freefall Caverns", "id": 7},
             "portalRequirements": [25, 81]
         },
         "navigation": null,
@@ -6070,9 +6070,9 @@
             {"item": "DropTable4", "quantity": 1, "chance": 0.0077, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "The Ol' Straightaway",
+            "enemy": "Plat",
             "world": "Blunder Hills",
-            "id": 10,
+            "map": {"intName": "MininggC", "name": "The Ol' Straightaway", "id": 10},
             "portalRequirements": [40]
         },
         "navigation": null,
@@ -6137,9 +6137,9 @@
             {"item": "DropTable4", "quantity": 2, "chance": 0.009, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Echoing Egress",
+            "enemy": "Void",
             "world": "Blunder Hills",
-            "id": 11,
+            "map": {"intName": "MininggD", "name": "Echoing Egress", "id": 11},
             "portalRequirements": [50, 60]
         },
         "navigation": null,
@@ -6204,9 +6204,9 @@
             {"item": "DropTable4", "quantity": 2, "chance": 0.011, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Slip Slidy Ledges",
+            "enemy": "Starfire",
             "world": "Blunder Hills",
-            "id": 12,
+            "map": {"intName": "MininggE", "name": "Slip Slidy Ledges", "id": 12},
             "portalRequirements": [60]
         },
         "navigation": null,
@@ -6640,9 +6640,9 @@
             {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Salty Shores",
+            "enemy": "FishSmall",
             "world": "Yum Yum Desert",
-            "id": 54,
+            "map": {"intName": "zFishingA", "name": "Salty Shores", "id": 54},
             "portalRequirements": [15]
         },
         "navigation": null,
@@ -6675,9 +6675,9 @@
             {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Deepwater Docks",
+            "enemy": "FishMed",
             "world": "Yum Yum Desert",
-            "id": 61,
+            "map": {"intName": "zFishingC", "name": "Deepwater Docks", "id": 61},
             "portalRequirements": [30]
         },
         "navigation": null,
@@ -7223,9 +7223,9 @@
             {"item": "DropTable12", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
         ],
         "mapData": {
-            "area": "Bandit Bob's Hideout",
+            "enemy": "Bug2",
             "world": "Yum Yum Desert",
-            "id": 67,
+            "map": {"intName": "zDesertCavernA", "name": "Bandit Bob's Hideout", "id": 67},
             "portalRequirements": [0]
         },
         "navigation": null,
@@ -8445,9 +8445,9 @@
         },
         "drops": null,
         "mapData": {
-            "area": "Blunder Hills",
+            "enemy": "Nothing",
             "world": "Blunder Hills",
-            "id": 0,
+            "map": {"intName": "GrasslandaTown", "name": "Blunder Hills", "id": 0},
             "portalRequirements": [1, 0]
         },
         "navigation": null,

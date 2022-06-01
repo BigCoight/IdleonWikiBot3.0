@@ -1,8 +1,8 @@
-
+import { MapNameModel } from './mapNameModel';
 
 export interface MapDataModel {
-    area: string,
+    enemy: string,
     world: string,
-    id: number,
+    map: MapNameModel,
     portalRequirements: number[]
 }

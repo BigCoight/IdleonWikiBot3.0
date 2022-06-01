@@ -3,9 +3,9 @@ from typing import List
 
 from definitions.enemy.MapData import MapData
 from helpers.Constants import Constants
+from repositories.master.Repository import Repository
 from repositories.misc.MapNameRepo import MapNameRepo
 from repositories.misc.MapPortalsRepo import MapPortalsRepo
-from repositories.master.Repository import Repository
 
 
 class MapDataRepo(Repository[MapData]):
@@ -31,13 +31,15 @@ class MapDataRepo(Repository[MapData]):
 		mapEnemies = re.findall(r'"([ a-zA-Z0-_\'\n]*)"\.', cls.getSection())[0].split(" ")
 		for n, v in enumerate(mapEnemies):
 			worldIndex = n // 50
-			if worldIndex > 3:
+			if worldIndex >= len(Constants.worldNames):
 				continue
+			toAdd = MapData(
+				enemy = v,
+				map = MapNameRepo.getList(n),
+				world = Constants.worlds[worldIndex],
+				portalRequirements = MapPortalsRepo.getList(n).portalRequirements
+			)
+			cls.addList(toAdd)
 			if cls.contains(v):
 				continue
-			cls.add(v, MapData(
-				area = MapNameRepo.getList(n).name,
-				world = Constants.worlds[worldIndex],
-				id = MapNameRepo.getList(n).id,
-				portalRequirements = MapPortalsRepo.getList(n).portalRequirements
-			))
+			cls.add(v, toAdd)

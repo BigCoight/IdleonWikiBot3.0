@@ -18,6 +18,7 @@ from repositories.item.VendorRepo import VendorRepo
 from repositories.item.sources.CustomSourceRepo import CustomSourceRepo
 from repositories.master.Repository import Repository
 from repositories.misc.GemShopRepo import GemShopRepo
+from repositories.misc.SkullShopRepo import SkullShopRepo
 from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
 from repositories.misc.world2.PostOfficeRepo import PostOfficeRepo
 from repositories.npc.NpcRepo import NpcRepo
@@ -50,6 +51,7 @@ class SourceRepo(Repository[Sources]):
 		AnvilRepo.initialise(cls.codeReader, log)
 		TaskUnlocksRepo.initialise(cls.codeReader, log)
 		CustomSourceRepo.initialise(cls.codeReader, log)
+		SkullShopRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def excludeDefaults(cls) -> bool:
@@ -71,6 +73,7 @@ class SourceRepo(Repository[Sources]):
 		cls.addFlurboShop()
 		cls.addKeychains()
 		cls.addDungeonItems()
+		cls.addSkullShop()
 
 		for item, sources in CustomSourceRepo.items():
 			for source in sources.sources:
@@ -325,3 +328,20 @@ class SourceRepo(Repository[Sources]):
 					txtName = "Dungeons",
 					wikiName = f"[[Dungeons]]"
 				))
+
+	@classmethod
+	def addSkullShop(cls):
+		for name, data in SkullShopRepo.items():
+			if "floor" not in data.description.lower():
+				continue
+			if "#" in data.rewardId:
+				for i in range(5):
+					rew = data.rewardId.replace("#", str(i))
+					cls.addToSource(rew, Source(
+						txtName = "Killroy Shop",
+						wikiName = f"[[Skull Shop]]"
+					))
+			cls.addToSource(data.rewardId, Source(
+				txtName = "Killroy Shop",
+				wikiName = f"[[Skull Shop]]"
+			))

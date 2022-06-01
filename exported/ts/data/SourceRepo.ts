@@ -5564,7 +5564,8 @@ export const initSourceRepo = () => {
                         "wikiName": "[[Nebula Neddy#Task Requirement Affirmative|Task Requirement Affirmative]]",
                         "txtName": "Nebula Neddy: Task Requirement Affirmative"
                     },
-                    <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                    <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                    <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -5624,7 +5625,8 @@ export const initSourceRepo = () => {
                     <SourceModel>{
                         "wikiName": "[[Nebula Neddy#Task Requirement Affirmative|Task Requirement Affirmative]]",
                         "txtName": "Nebula Neddy: Task Requirement Affirmative"
-                    }
+                    },
+                    <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -6685,6 +6687,7 @@ export const initSourceRepo = () => {
                         "txtName": "Lonely Hunter: Skeleton? Skelegone!"
                     },
                     <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                    <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                     <SourceModel>{
                         "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                         "txtName": "Alchemy: Level up Gift"
@@ -6741,6 +6744,7 @@ export const initSourceRepo = () => {
                     },
                     <SourceModel>{"wikiName": "[[Shuvelle#Diggy Hole!|Diggy Hole!]]", "txtName": "Shuvelle: Diggy Hole!"},
                     <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                    <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                     <SourceModel>{
                         "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                         "txtName": "Alchemy: Level up Gift"
@@ -6791,6 +6795,7 @@ export const initSourceRepo = () => {
                         "txtName": "Walupiggy: Treasure Hunt 1"
                     },
                     <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                    <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                     <SourceModel>{
                         "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                         "txtName": "Alchemy: Level up Gift"
@@ -8933,6 +8938,7 @@ export const initSourceRepo = () => {
                     },
                     <SourceModel>{"wikiName": "[[Snouts#Mana Plox|Mana Plox]]", "txtName": "Snouts: Mana Plox"},
                     <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                    <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                     <SourceModel>{
                         "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                         "txtName": "Alchemy: Level up Gift"
@@ -10767,6 +10773,7 @@ export const initSourceRepo = () => {
                         "wikiName": "[[Walupiggy#Treasure Hunt 3|Treasure Hunt 3]]",
                         "txtName": "Walupiggy: Treasure Hunt 3"
                     },
+                    <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                     <SourceModel>{"wikiName": "[[2021 Giftmas Box]]", "txtName": "2021 Giftmas Box"}
                 ],
                 "recipeFrom": [],
@@ -12661,6 +12668,26 @@ export const initSourceRepo = () => {
             }),
         new SourcesBase("DungEquipmentRings4", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Dungeons]]", "txtName": "Dungeons"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("Timecandy0", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("Timecandy#", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("Pearl5", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("LootDice", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}],
                 "recipeFrom": [],
                 "questAss": []
             }),

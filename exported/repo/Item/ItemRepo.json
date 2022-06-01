@@ -39048,6 +39048,7 @@
                     "txtName": "Lonely Hunter: Skeleton? Skelegone!"
                 },
                 {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                 {
                     "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                     "txtName": "Alchemy: Level up Gift"
@@ -39126,6 +39127,7 @@
                 },
                 {"wikiName": "[[Shuvelle#Diggy Hole!|Diggy Hole!]]", "txtName": "Shuvelle: Diggy Hole!"},
                 {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                 {
                     "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                     "txtName": "Alchemy: Level up Gift"
@@ -39227,6 +39229,7 @@
                 },
                 {"wikiName": "[[Snouts#Mana Plox|Mana Plox]]", "txtName": "Snouts: Mana Plox"},
                 {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                 {
                     "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                     "txtName": "Alchemy: Level up Gift"
@@ -39297,6 +39300,7 @@
                     "txtName": "Walupiggy: Treasure Hunt 1"
                 },
                 {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                 {
                     "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                     "txtName": "Alchemy: Level up Gift"
@@ -43216,6 +43220,7 @@
                     "wikiName": "[[Walupiggy#Treasure Hunt 3|Treasure Hunt 3]]",
                     "txtName": "Walupiggy: Treasure Hunt 3"
                 },
+                {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                 {"wikiName": "[[2021 Giftmas Box]]", "txtName": "2021 Giftmas Box"}
             ],
             "recipeFrom": [],
@@ -43236,7 +43241,13 @@
             "Type": "Usable",
             "description": "Hold down to gain Class EXP. The amount you gain is based on your Class LV. "
         },
-        "sources": null,
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
         "notes": null,
         "recipe": null,
         "vendors": null,
@@ -44078,7 +44089,13 @@
             "Type": "Currency",
             "description": "You shouldn't be reading this... "
         },
-        "sources": null,
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
         "notes": null,
         "recipe": null,
         "vendors": null,
@@ -44149,7 +44166,8 @@
                 {
                     "wikiName": "[[Nebula Neddy#Task Requirement Affirmative|Task Requirement Affirmative]]",
                     "txtName": "Nebula Neddy: Task Requirement Affirmative"
-                }
+                },
+                {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -44223,7 +44241,8 @@
                     "wikiName": "[[Nebula Neddy#Task Requirement Affirmative|Task Requirement Affirmative]]",
                     "txtName": "Nebula Neddy: Task Requirement Affirmative"
                 },
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
             ],
             "recipeFrom": [],
             "questAss": []

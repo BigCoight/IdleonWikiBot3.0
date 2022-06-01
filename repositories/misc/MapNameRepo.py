@@ -1,7 +1,7 @@
-import re
 from typing import List
 
 from definitions.misc.MapName import MapName
+from helpers.HelperFunctions import getFromSplit
 from repositories.master.Repository import Repository
 
 
@@ -12,11 +12,12 @@ class MapNameRepo(Repository[MapName]):
 
 	@classmethod
 	def getSections(cls) -> List[str]:
-		return ["MapNames"]
+		return ["MapNames", "MapInternal"]
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		mapNames = re.findall(r'"(.*?)"\.', cls.getSection())[0].split(" ")
+		mapNames = getFromSplit(cls.getSection())
+		mapIntName = getFromSplit(cls.getSection(1))
 		for n, v in enumerate(mapNames):
-			cls.add(f"{n}", MapName(name = v, id = n))
-			cls.addList(MapName(name = v, id = n))
+			cls.add(mapIntName[n], MapName(intName = mapIntName[n], name = v, id = n))
+			cls.addList(MapName(intName = mapIntName[n], name = v, id = n))

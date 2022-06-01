@@ -78,13 +78,13 @@ class RandoListDescriptions(int, IdleonEnum, metaclass = CheckIn):
 	idk6 = auto()
 	idk7 = auto()
 	idk8 = auto()
+	killroyRoomsW1 = auto()
+	killroyRoomsW2 = auto()
+	killroyRoomsW3 = auto()
+	killroyRoomsW4 = auto()
 	idk9 = auto()
 	idk10 = auto()
 	idk11 = auto()
-	idk12 = auto()
-	idk13 = auto()
-	idk14 = auto()
-	idk15 = auto()
 
 
 class RandoListRepo(Repository[RandoList]):
@@ -100,7 +100,6 @@ class RandoListRepo(Repository[RandoList]):
 	@classmethod
 	def generateRepo(cls) -> None:
 		section = cls.getSection().replace("return [", "")
-		print(section)
 		lsts = re.findall(fr'(?:"(.*?)"\.split|\[((?:.|\n)*?)\])', section)
 		for n, lst in enumerate(lsts):
 			if lst[0]:

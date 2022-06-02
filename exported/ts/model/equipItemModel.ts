@@ -5,7 +5,7 @@ import { TypeGenEnum } from '../enum/typeGenEnum';
 
 export interface EquipItemModel extends CommonItemModel {
     lvReqToEquip: number,
-    Class: (ClassTypeEnum | BagTypeEnum),
+    Class: (BagTypeEnum | ClassTypeEnum),
     Speed: number,
     Reach: number,
     Weapon_Power: number,

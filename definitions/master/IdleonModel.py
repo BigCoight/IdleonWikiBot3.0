@@ -60,7 +60,7 @@ class ModelConverter:
 			res.add(self.fieldToTs(typ))
 		if len(res) == 1:
 			return res.pop()
-		types = " | ".join(res)
+		types = " | ".join(sorted(res))
 		return f"({types})"
 
 	def handleRef(self, ref: str) -> str:

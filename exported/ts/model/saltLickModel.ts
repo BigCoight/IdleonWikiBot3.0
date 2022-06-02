@@ -5,6 +5,6 @@ export interface SaltLickModel {
     desc: string,
     baseCost: number,
     increment: number,
-    baseBonus: number,
-    maxLevel: number
+    maxLevel: number,
+    baseBonus: number
 }

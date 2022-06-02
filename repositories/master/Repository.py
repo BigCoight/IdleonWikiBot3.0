@@ -444,7 +444,7 @@ class Repository(Generic[T], ABC):
 		imports = set()
 		if not cls.listRepository:
 			tsData += cls.getFirstElement().toTsClass(False)
-			className = cls.getFirstElement().__class__.__name__
+			className = cls.getFirstElement().getHighestClass().__name__
 			tsData += "\n\n\n\n"
 			tsData += f"export const init{cls.__name__} = () => ""{\n    return [    \n"
 			for n, (atr, val) in enumerate(cls.items()):
@@ -456,7 +456,7 @@ class Repository(Generic[T], ABC):
 			tsData += "    \n]\n}\n"
 		else:
 			tsData += cls.getList(0).toTsClass(True)
-			className = cls.getFirstElement().__class__.__name__
+			className = cls.getFirstElement().getHighestClass().__name__
 			tsData += "\n\n\n\n"
 			tsData += f"export const init{cls.__name__} = () => ""{\n    return [    \n"
 			for n, val in enumerate(cls.listRepository):

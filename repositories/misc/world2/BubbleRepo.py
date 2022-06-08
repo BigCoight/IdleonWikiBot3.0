@@ -45,9 +45,11 @@ class BubbleRepo(Repository[Bubble]):
 					bubbleReq.append(ComponentFactory.getComponent(bubData[i], -1))
 				cls.add(bubData[0], Bubble(
 					cauldron = bubbleNames[n],
+					name = bubData[0],
 					x1 = bubData[1],
 					x2 = bubData[2],
 					func = bubData[3],
 					description = bubData[9],
-					requirements = bubbleReq.copy()
+					requirements = bubbleReq.copy(),
+					bonusKey = bubData[-1]
 				))

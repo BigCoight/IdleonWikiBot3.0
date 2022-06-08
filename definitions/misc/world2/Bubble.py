@@ -10,11 +10,13 @@ from helpers.HelperFunctions import replaceUnderscores
 
 class Bubble(IdleonModel):
 	cauldron: str
+	name: str
 	x1: Numeric
 	x2: Numeric
 	func: str
 	description: str
 	requirements: List[ComponentBase]
+	bonusKey: str
 
 	def sortKey(self) -> str:
 		return self.cauldron

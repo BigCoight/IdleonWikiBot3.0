@@ -1143,7 +1143,7 @@
         "lvReqToCraft": 1,
         "lvReqToEquip": 15,
         "Class": "All",
-        "Weapon_Power": 200,
+        "Weapon_Power": 400,
         "STR": 3000,
         "AGI": 3000,
         "WIS": 3000,
@@ -1346,7 +1346,7 @@
     },
     "EquipmentHats21": {
         "internalName": "EquipmentHats21",
-        "displayName": "Party Hat",
+        "displayName": "Birthday Hat",
         "sellPrice": 1500,
         "typeGen": "aHelmet",
         "Type": "Helmet",
@@ -3453,27 +3453,6 @@
         "lvReqToCraft": 55,
         "lvReqToEquip": 15,
         "Class": "Warrior",
-        "Weapon_Power": 5,
-        "STR": 3,
-        "AGI": 3,
-        "WIS": 0,
-        "LUK": 3,
-        "Defence": 0,
-        "miscUp1": "",
-        "miscUp2": "00",
-        "Upgrade_Slots_Left": 2,
-        "Skill": "",
-        "Skill_Power": 0
-    },
-    "EquipmentPants8": {
-        "internalName": "EquipmentPants8",
-        "displayName": "Twisted Scales",
-        "sellPrice": 200,
-        "typeGen": "aPants",
-        "Type": "Pants",
-        "lvReqToCraft": 55,
-        "lvReqToEquip": 15,
-        "Class": "All",
         "Weapon_Power": 5,
         "STR": 3,
         "AGI": 3,
@@ -7502,7 +7481,7 @@
         "sellPrice": 100,
         "typeGen": "dQuest",
         "Type": "Quest Item",
-        "description": "It'll mean more to you when you're older... or may when this game is older and I add a use for this item, can't remember which. "
+        "description": "Hold down to read the card! There's a 1 in 75 chance it contains a Birthday Hat recipe, and a 74 in 75 chance it contains a few dollars from grandma. "
     },
     "Quest26": {
         "internalName": "Quest26",
@@ -9820,6 +9799,29 @@
         "Upgrade_Slots_Left": 0,
         "family": "Slush",
         "rarity": "Slushy",
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "ObolTroll": {
+        "internalName": "ObolTroll",
+        "displayName": "Jagged Obol of Massive Trolling",
+        "sellPrice": 50,
+        "typeGen": "aObolSparkle",
+        "Type": "Sparkle Obol",
+        "lvReqToCraft": 0,
+        "lvReqToEquip": 0,
+        "Class": "All",
+        "Weapon_Power": 4,
+        "STR": 9,
+        "AGI": 9,
+        "WIS": 9,
+        "LUK": 9,
+        "Defence": 10,
+        "miscUp1": "3% All Stats",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 0,
+        "family": "Troll",
+        "rarity": "Jagged",
         "Skill": "",
         "Skill_Power": 0
     },
@@ -14726,6 +14728,26 @@
         "order": 21,
         "level": 1
     },
+    "InvStorage22": {
+        "internalName": "InvStorage22",
+        "displayName": "Storage Chest 22",
+        "sellPrice": 10,
+        "typeGen": "aStorageChest",
+        "Type": "Storage",
+        "description": "Hold down to permanently add +8 Slots to your Storage Chest. Can only be used once.",
+        "order": 22,
+        "level": 1
+    },
+    "InvStorage23": {
+        "internalName": "InvStorage23",
+        "displayName": "Storage Chest 23",
+        "sellPrice": 10,
+        "typeGen": "aStorageChest",
+        "Type": "Storage",
+        "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
+        "order": 23,
+        "level": 1
+    },
     "InvStorage31": {
         "internalName": "InvStorage31",
         "displayName": "Storage Chest 90",
@@ -15738,6 +15760,22 @@
         "Type": "Dungeon Evaporate",
         "description": "It may be a skull, but it sure ain't no Killroy! "
     },
+    "TrollPart": {
+        "internalName": "TrollPart",
+        "displayName": "Troll Scales",
+        "sellPrice": 1000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "Even the scales look like they have a wry smile, almost as if it remembers the part it played in that infamous tutorial prank you were unfortunately involved in "
+    },
+    "InvStorage99": {
+        "internalName": "InvStorage99",
+        "displayName": "Cosmic Storage Chest",
+        "sellPrice": 100,
+        "typeGen": "dQuest",
+        "Type": "Chest Receipt",
+        "description": "This item does nothing, you got the 9 Storage Slots instantly when you bought this. Consider this a receipt of purchase, you can throw it away. "
+    },
     "KeyFrag": {
         "internalName": "KeyFrag",
         "displayName": "Keychain Fragment",
@@ -15988,7 +16026,7 @@
     },
     "GalaxyC1b": {
         "internalName": "GalaxyC1b",
-        "displayName": "Pealer Shell",
+        "displayName": "Pearler Shell",
         "sellPrice": 3000,
         "typeGen": "bCraft",
         "Type": "Monster Drop",
@@ -16270,6 +16308,27 @@
         "Skill": "",
         "Skill_Power": 0
     },
+    "EquipmentHats74": {
+        "internalName": "EquipmentHats74",
+        "displayName": "Thin Veil of The Troll",
+        "sellPrice": 1,
+        "typeGen": "aHelmet",
+        "Type": "Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 200,
+        "Class": "All",
+        "Weapon_Power": 7,
+        "STR": 35,
+        "AGI": 35,
+        "WIS": 35,
+        "LUK": 35,
+        "Defence": 100,
+        "miscUp1": "4% All Stats",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 9,
+        "Skill": "",
+        "Skill_Power": 0
+    },
     "EquipmentShirts6": {
         "internalName": "EquipmentShirts6",
         "displayName": "Chizoar Bodyplate",
@@ -16330,6 +16389,27 @@
         "miscUp1": "11% Defence",
         "miscUp2": "00",
         "Upgrade_Slots_Left": 7,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentShirts34": {
+        "internalName": "EquipmentShirts34",
+        "displayName": "Trollish Garb",
+        "sellPrice": 200,
+        "typeGen": "aShirt",
+        "Type": "Shirt",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 190,
+        "Class": "All",
+        "Weapon_Power": 3,
+        "STR": 24,
+        "AGI": 24,
+        "WIS": 24,
+        "LUK": 24,
+        "Defence": 80,
+        "miscUp1": "3% All Stats",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 8,
         "Skill": "",
         "Skill_Power": 0
     },
@@ -16396,6 +16476,27 @@
         "Skill": "",
         "Skill_Power": 0
     },
+    "EquipmentPants8": {
+        "internalName": "EquipmentPants8",
+        "displayName": "Twisted Scales",
+        "sellPrice": 200,
+        "typeGen": "aPants",
+        "Type": "Pants",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 180,
+        "Class": "All",
+        "Weapon_Power": 3,
+        "STR": 25,
+        "AGI": 25,
+        "WIS": 25,
+        "LUK": 25,
+        "Defence": 70,
+        "miscUp1": "3% All Stats",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 8,
+        "Skill": "",
+        "Skill_Power": 0
+    },
     "EquipmentShoes23": {
         "internalName": "EquipmentShoes23",
         "displayName": "Chizoar Walkers",
@@ -16456,6 +16557,27 @@
         "miscUp1": "13% Defence",
         "miscUp2": "00",
         "Upgrade_Slots_Left": 6,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentShoes34": {
+        "internalName": "EquipmentShoes34",
+        "displayName": "Soles of the Troll",
+        "sellPrice": 200,
+        "typeGen": "aShoes",
+        "Type": "Shoes",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 185,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 22,
+        "AGI": 22,
+        "WIS": 22,
+        "LUK": 22,
+        "Defence": 65,
+        "miscUp1": "3% All Stats",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 7,
         "Skill": "",
         "Skill_Power": 0
     },
@@ -21936,7 +22058,15 @@
         "sellPrice": 50,
         "typeGen": "dCurrency",
         "Type": "Boss Key",
-        "description": "Hold down to add these Iceland Boss Keys to your account. "
+        "description": "Hold down to add these Tundra Boss Keys to your account. "
+    },
+    "Key4": {
+        "internalName": "Key4",
+        "displayName": "Troll's Enclave Key",
+        "sellPrice": 50,
+        "typeGen": "dCurrency",
+        "Type": "Boss Key",
+        "description": "Hold down to add these Nebula Boss Keys to your account. "
     },
     "ObolFrag": {
         "internalName": "ObolFrag",
@@ -23490,7 +23620,7 @@
     },
     "CardsF11": {
         "internalName": "CardsF11",
-        "displayName": "Squiddy Soul Card",
+        "displayName": "Squishy Soul Card",
         "sellPrice": 1,
         "typeGen": "dCard",
         "Type": "Card",
@@ -23978,7 +24108,7 @@
             "cardID": "X3",
             "category": "Dungeons",
             "perTier": 1.5,
-            "effect": "{% to start with RNG item",
+            "effect": "{% to start with RNG orb (Passive)",
             "bonus": 15,
             "order": 7
         },
@@ -24042,7 +24172,7 @@
             "cardID": "X22",
             "category": "Dungeons",
             "perTier": 5,
-            "effect": "{% to start with RNG item",
+            "effect": "{% to start with RNG orb (Passive)",
             "bonus": 20,
             "order": 6
         },
@@ -24690,7 +24820,7 @@
     },
     "CardsZ10": {
         "internalName": "CardsZ10",
-        "displayName": "Troll Card",
+        "displayName": "Massive Troll Card",
         "sellPrice": 1,
         "typeGen": "dCard",
         "Type": "Card",
@@ -24702,7 +24832,7 @@
             "bonus": 6,
             "order": 17
         },
-        "dropChance": 0.01
+        "dropChance": 0.004
     },
     "CardsZ11": {
         "internalName": "CardsZ11",
@@ -24718,7 +24848,7 @@
             "bonus": 10,
             "order": 18
         },
-        "dropChance": 0.004
+        "dropChance": 0.002
     },
     "CardsZ12": {
         "internalName": "CardsZ12",
@@ -24799,5 +24929,14 @@
             "order": 15
         },
         "dropChance": 0.02
+    },
+    "CardsZ17": {
+        "internalName": "CardsZ17",
+        "displayName": "FILLER",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": null,
+        "dropChance": 0.003
     }
 }

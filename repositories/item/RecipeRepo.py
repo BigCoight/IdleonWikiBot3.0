@@ -127,6 +127,8 @@ class RecipeRepo(Repository[Recipe]):
 	def calculateSellPrice(cls, recipe: Recipe):
 		sellPrice = 0
 		for component in recipe.detailedRecipe.detRecipeTotals:
+			if not ItemDetailRepo.contains(component.item):
+				continue
 			sellPrice += ItemDetailRepo.get(component.item).sellPrice * component.quantity
 		recipe.sellPrice = sellPrice
 

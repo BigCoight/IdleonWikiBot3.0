@@ -85,6 +85,10 @@ class RandoListDescriptions(int, IdleonEnum, metaclass = CheckIn):
 	idk9 = auto()
 	idk10 = auto()
 	idk11 = auto()
+	idk12 = auto()
+	idk13 = auto()
+	idk14 = auto()
+	idk15 = auto()
 
 
 class RandoListRepo(Repository[RandoList]):

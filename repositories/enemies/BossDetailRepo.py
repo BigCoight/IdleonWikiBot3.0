@@ -23,7 +23,7 @@ class BossDetailRepo(Repository[BossDetails]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		bossIntNames = ["wolf", "Boss2", "Boss3", "FILLER"]
+		bossIntNames = ["wolf", "Boss2", "Boss3", "Boss4"]
 		tabs = ["health", "defence", "exp", "keys"]
 		letters = ["A", "B", "C"]
 
@@ -31,7 +31,8 @@ class BossDetailRepo(Repository[BossDetails]):
 			["Fireball", "Stomp", "Rock Spikes", "Spike Traps", "Sword Swing", "Uppercut", "Rocketfist"],
 			["Hammer", "Scimitar", "Fire Column", "Purple Psionic Hoops", "Finger Gun", "Headpat", "Blue Psionic",
 			 "Hoops", "Kick"],
-			["Front Stomp", "Back Stomp", "Frozen Spikes", "Falling Icicles", "Tusk Swipe", "filler", "filler", "filler", "filler",
+			["Front Stomp", "Back Stomp", "Frozen Spikes", "Falling Icicles", "Tusk Swipe", "filler", "filler",
+			 "filler", "filler",
 			 "filler", "filler", "filler"],
 			["filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler", "filler",
 			 "filler", "filler", "filler"],
@@ -70,4 +71,6 @@ class BossDetailRepo(Repository[BossDetails]):
 
 	@classmethod
 	def getWikiName(cls, name: str) -> str:
+		if not EnemyDetailsRepo.contains(name):
+			return name
 		return EnemyDetailsRepo.get(name).Name

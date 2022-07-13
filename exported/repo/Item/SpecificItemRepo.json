@@ -7501,11 +7501,11 @@
     },
     "Quest28": {
         "internalName": "Quest28",
-        "displayName": "IOU One Blue Crystal",
+        "displayName": "IOU One Fire Crystal",
         "sellPrice": 100,
         "typeGen": "dQuest",
         "Type": "Quest Item",
-        "description": "Hold down on this IOU, and a Blue Crystal will drop at your feet! "
+        "description": "Sorry cutie, but you gotta wait until big man Lava up top tells me I'm allowed to drop the crystal to World 5! Them's the rules, I'm sure you've noticed by now... @ Love, Your Favorite Troll "
     },
     "Quest29": {
         "internalName": "Quest29",
@@ -16569,7 +16569,7 @@
         "lvReqToCraft": 55,
         "lvReqToEquip": 185,
         "Class": "All",
-        "Weapon_Power": 0,
+        "Weapon_Power": 2,
         "STR": 22,
         "AGI": 22,
         "WIS": 22,
@@ -17122,6 +17122,27 @@
         "LUK": 0,
         "Defence": 0,
         "miscUp1": "8% Total Damage",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 0,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentCape6": {
+        "internalName": "EquipmentCape6",
+        "displayName": "Cascading Scaled Cape of Krieg",
+        "sellPrice": 1,
+        "typeGen": "aCape",
+        "Type": "Cape",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 1,
+        "STR": 10,
+        "AGI": 10,
+        "WIS": 10,
+        "LUK": 10,
+        "Defence": 0,
+        "miscUp1": "6% All Stats",
         "miscUp2": "00",
         "Upgrade_Slots_Left": 0,
         "Skill": "",
@@ -24932,11 +24953,18 @@
     },
     "CardsZ17": {
         "internalName": "CardsZ17",
-        "displayName": "FILLER",
+        "displayName": "Blitzkrieg Troll Card",
         "sellPrice": 1,
         "typeGen": "dCard",
         "Type": "Card",
-        "cardData": null,
+        "cardData": {
+            "cardID": "Z17",
+            "category": "Bosses",
+            "perTier": 4,
+            "effect": "+{% Total Damage",
+            "bonus": 7,
+            "order": 19
+        },
         "dropChance": 0.003
     }
 }

@@ -4007,6 +4007,7 @@
         "drops": [
             {"item": "COIN", "quantity": 5000, "chance": 0.5, "questLink": "N/A"},
             {"item": "GalaxyC4", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+            {"item": "Key4", "quantity": 1, "chance": 6.667e-05, "questLink": "N/A"},
             {"item": "CardsG13", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "DropTable21", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
         ],
@@ -4777,7 +4778,7 @@
         "mapData": null,
         "navigation": {
             "prev": "Boss4A",
-            "next": "Blank",
+            "next": "Boss4C",
             "hasCrystal": true,
             "crystalName": null,
             "hasCard": true
@@ -4817,13 +4818,20 @@
             {"item": "CardsZ17", "quantity": 1, "chance": 0.003, "questLink": "N/A"},
             {"item": "ObolTroll", "quantity": 1, "chance": 0.007, "questLink": "N/A"},
             {"item": "TrollPart", "quantity": 4, "chance": 0.5, "questLink": "N/A"},
+            {"item": "EquipmentCape6", "quantity": 1, "chance": 0.00025, "questLink": "N/A"},
             {"item": "StoneZ2", "quantity": 1, "chance": 0.03, "questLink": "N/A"},
             {"item": "DropTable19", "quantity": 2, "chance": 1, "questLink": "N/A"},
             {"item": "DropTable20", "quantity": 2, "chance": 1, "questLink": "N/A"},
             {"item": "DropTable21", "quantity": 2, "chance": 1, "questLink": "N/A"}
         ],
         "mapData": null,
-        "navigation": null,
+        "navigation": {
+            "prev": "Boss4B",
+            "next": "Blank",
+            "hasCrystal": true,
+            "crystalName": null,
+            "hasCard": true
+        },
         "bossData": {
             "health": 2000000000,
             "defence": 25,
@@ -5918,16 +5926,16 @@
     },
     "Pet9": {
         "details": {
-            "Name": "Panda",
+            "Name": "Dog",
             "AFKtype": "Fighting",
             "MonsterFace": 23,
             "MonsterOffsetX": 38,
             "MonsterOffsetY": 47,
-            "HeightOfMonster": 47,
-            "MonsterMoving": 1,
-            "MovingFrame": 6,
+            "HeightOfMonster": 44,
+            "MonsterMoving": 0,
+            "MovingFrame": 0,
             "RespawnTime": 40,
-            "DeathFrame": 12,
+            "DeathFrame": 7,
             "MonsterHPTotal": 14000,
             "Type": "monsterType",
             "SpecialType": "",
@@ -5945,16 +5953,16 @@
     },
     "Pet10": {
         "details": {
-            "Name": "Panda",
+            "Name": "Cool Bird",
             "AFKtype": "Fighting",
             "MonsterFace": 23,
             "MonsterOffsetX": 38,
             "MonsterOffsetY": 47,
-            "HeightOfMonster": 47,
+            "HeightOfMonster": 53,
             "MonsterMoving": 1,
-            "MovingFrame": 6,
+            "MovingFrame": 8,
             "RespawnTime": 40,
-            "DeathFrame": 12,
+            "DeathFrame": 17,
             "MonsterHPTotal": 14000,
             "Type": "monsterType",
             "SpecialType": "",
@@ -5972,16 +5980,16 @@
     },
     "Pet11": {
         "details": {
-            "Name": "Panda",
+            "Name": "Hedgehog",
             "AFKtype": "Fighting",
             "MonsterFace": 23,
             "MonsterOffsetX": 38,
             "MonsterOffsetY": 47,
-            "HeightOfMonster": 47,
+            "HeightOfMonster": 46,
             "MonsterMoving": 1,
             "MovingFrame": 6,
             "RespawnTime": 40,
-            "DeathFrame": 12,
+            "DeathFrame": 11,
             "MonsterHPTotal": 14000,
             "Type": "monsterType",
             "SpecialType": "",

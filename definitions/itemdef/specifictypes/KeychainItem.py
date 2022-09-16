@@ -29,8 +29,10 @@ class KeychainItem(StatItem):
 		)
 
 	@classmethod
-	def getMisc1(cls, item: EquipItem):
+	def getMisc1(cls, item: EquipItem) -> str:
 		bonuses = KeychainBonusRepo.get(item.internalID)
+		if not bonuses:
+			return ""
 		return bonuses.writeMisc()
 
 	@classmethod

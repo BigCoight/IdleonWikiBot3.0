@@ -21245,6 +21245,22 @@
         "anvilProduction": null,
         "detDrops": null
     },
+    "Crystal4": {
+        "item": {
+            "internalName": "Crystal4",
+            "displayName": "Magma Geode",
+            "sellPrice": 1,
+            "typeGen": "dQuest",
+            "Type": "Quest Item",
+            "description": "Restores power to the Magma Portal in the galaxy town, allowing travel to World 5! "
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
     "Quest2": {
         "item": {
             "internalName": "Quest2",
@@ -38944,6 +38960,35 @@
         "anvilProduction": null,
         "detDrops": null
     },
+    "Trophy16": {
+        "item": {
+            "internalName": "Trophy16",
+            "displayName": "Idle Skiller",
+            "sellPrice": 69,
+            "typeGen": "aTrophy",
+            "Type": "Trophy",
+            "lvReqToCraft": 1,
+            "lvReqToEquip": 99,
+            "Class": "All",
+            "Weapon_Power": 3,
+            "STR": 20,
+            "AGI": 20,
+            "WIS": 20,
+            "LUK": 20,
+            "Defence": 0,
+            "miscUp1": "15% Skill Efficiency",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
     "Starlight": {
         "item": {
             "internalName": "Starlight",
@@ -39562,8 +39607,7 @@
                 {
                     "wikiName": "[[Carpenter Cardinal#Restoring Power, once again, to a Portal|Restoring Power, once again, to a Portal]]",
                     "txtName": "Carpenter Cardinal: Restoring Power, once again, to a Portal"
-                },
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                }
             ],
             "recipeFrom": [],
             "questAss": []
@@ -43876,6 +43920,38 @@
         "anvilProduction": null,
         "detDrops": null
     },
+    "Quest70": {
+        "item": {
+            "internalName": "Quest70",
+            "displayName": "Phone Box",
+            "sellPrice": 100,
+            "typeGen": "dQuest",
+            "Type": "Event Box",
+            "description": "IdleOn is out on iPhone devices! Go download it there if you have any iOS devices!                 Hold down to open for a random reward! Or, hold down for a LONG time to open them faster. "
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "Quest71": {
+        "item": {
+            "internalName": "Quest71",
+            "displayName": "Gem Envelope",
+            "sellPrice": 100,
+            "typeGen": "dQuest",
+            "Type": "Event Box",
+            "description": "Contains a random number of gems, hold down to open! It could be just a couple gems, but it could also have as many as 10,000 gems! "
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
     "TrollPart": {
         "item": {
             "internalName": "TrollPart",
@@ -45885,6 +45961,64 @@
                 ]
             }
         },
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "EquipmentHats75": {
+        "item": {
+            "internalName": "EquipmentHats75",
+            "displayName": "Apple Launch Hat",
+            "sellPrice": 1,
+            "typeGen": "aHelmet",
+            "Type": "Helmet",
+            "lvReqToCraft": 5,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 3,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 3,
+            "miscUp1": "5% Xp From Monsters",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "EquipmentHats76": {
+        "item": {
+            "internalName": "EquipmentHats76",
+            "displayName": "Funny Hat",
+            "sellPrice": 1,
+            "typeGen": "aHelmet",
+            "Type": "Helmet",
+            "lvReqToCraft": 5,
+            "lvReqToEquip": 20,
+            "Class": "All",
+            "Weapon_Power": 3,
+            "STR": 5,
+            "AGI": 5,
+            "WIS": 5,
+            "LUK": 5,
+            "Defence": 10,
+            "miscUp1": "6% Skill Efficiency",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
         "vendors": null,
         "anvilProduction": null,
         "detDrops": null
@@ -48349,13 +48483,7 @@
             "Skill": "",
             "Skill_Power": 0
         },
-        "sources": {
-            "sources": [
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-            ],
-            "recipeFrom": [],
-            "questAss": []
-        },
+        "sources": null,
         "notes": null,
         "recipe": null,
         "vendors": null,
@@ -52176,7 +52304,6 @@
         },
         "sources": {
             "sources": [
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
                 {"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
                 {
                     "wikiName": "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
@@ -52334,6 +52461,120 @@
             "recipeFrom": [],
             "questAss": []
         },
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "EquipmentKeychain25": {
+        "item": {
+            "internalName": "EquipmentKeychain25",
+            "displayName": "Eye Owe Ess Chain",
+            "sellPrice": 200,
+            "typeGen": "aKeychain",
+            "Type": "Keychain",
+            "lvReqToCraft": 1,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 1,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 5,
+            "miscUp1": "",
+            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
+            "Upgrade_Slots_Left": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "EquipmentKeychain26": {
+        "item": {
+            "internalName": "EquipmentKeychain26",
+            "displayName": "Key to Desert",
+            "sellPrice": 200,
+            "typeGen": "aKeychain",
+            "Type": "Keychain",
+            "lvReqToCraft": 1,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 1,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 5,
+            "miscUp1": "",
+            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
+            "Upgrade_Slots_Left": 0
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "EquipmentKeychain27": {
+        "item": {
+            "internalName": "EquipmentKeychain27",
+            "displayName": "Key to Mountains",
+            "sellPrice": 200,
+            "typeGen": "aKeychain",
+            "Type": "Keychain",
+            "lvReqToCraft": 1,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 1,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 5,
+            "miscUp1": "",
+            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
+            "Upgrade_Slots_Left": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "EquipmentKeychain28": {
+        "item": {
+            "internalName": "EquipmentKeychain28",
+            "displayName": "Key to Purgatory",
+            "sellPrice": 200,
+            "typeGen": "aKeychain",
+            "Type": "Keychain",
+            "lvReqToCraft": 1,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 1,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 5,
+            "miscUp1": "",
+            "miscUp2": "[[Keychains#Misc 2 Rolling|Misc 2 Table]]",
+            "Upgrade_Slots_Left": 0
+        },
+        "sources": null,
         "notes": null,
         "recipe": null,
         "vendors": null,
@@ -58121,6 +58362,28 @@
                     "wikiName": "[[Gangster Gus#Sanke Revival Denial|Sanke Revival Denial]]",
                     "txtName": "Gangster Gus: Sanke Revival Denial"
                 }
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null
+    },
+    "GemP19": {
+        "item": {
+            "internalName": "GemP19",
+            "displayName": "Bossius Obol Stack",
+            "sellPrice": 1,
+            "typeGen": "dQuest",
+            "Type": "Obol Stack",
+            "description": "Hold down and 1 boss obol will drop at your feet! YOU MUST BE IN WORLD 2 TOWN TO USE THIS! This way you can trash other obols incase you're out of space! "
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
             ],
             "recipeFrom": [],
             "questAss": []

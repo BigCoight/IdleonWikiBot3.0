@@ -15,4 +15,4 @@ class MapData(IdleonModel):
 		return self.map.name
 
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
-		return {"area": "area", "world": "world"}
+		return {"area": self.getMapName, "world": "world"}

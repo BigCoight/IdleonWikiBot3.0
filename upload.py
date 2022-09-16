@@ -9,7 +9,7 @@ from repositories.npc.NpcRepo import NpcRepo
 loginManager = LoginManager()
 loginManager.login()
 
-newV = IdleonReader("158", True)
+newV = IdleonReader("160", True)
 oldV = IdleonReader("157", True)
 upload = True
 

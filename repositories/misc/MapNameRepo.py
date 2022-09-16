@@ -19,5 +19,7 @@ class MapNameRepo(Repository[MapName]):
 		mapNames = getFromSplit(cls.getSection())
 		mapIntName = getFromSplit(cls.getSection(1))
 		for n, v in enumerate(mapNames):
+			if n >= len(mapIntName):
+				break
 			cls.add(mapIntName[n], MapName(intName = mapIntName[n], name = v, id = n))
 			cls.addList(MapName(intName = mapIntName[n], name = v, id = n))

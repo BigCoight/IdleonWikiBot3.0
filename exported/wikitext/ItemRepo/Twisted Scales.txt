@@ -1,12 +1,39 @@
 {{InfoItem
 |type=Pants
 |class=All
-|level=15
-|weaponpower=5
-|str=3
-|agi=3
-|luck=3
-|upgrade=2
-|sellprice=200
+|level=180
+|weaponpower=3
+|str=25
+|agi=25
+|wis=25
+|luck=25
+|misc=3% All Stats
+|upgrade=8
+|defence=70
+|sellprice=2500177500
+|source=[[Smithing]]
 |notes= 
+}}
+{{ForgeSlot
+|anvtab=Anvil Tab 4
+|craftnum=63
+|levelreq=67
+|expgiven=1000000
+|recipefrom=Start
+|resource1=Troll Scales|quantity1=15
+|resource2=Condensed Zap|quantity2=333333
+|resource3=Starfire Bar|quantity3=5000
+|resource4=Nullo Salt|quantity4=1600
+}}
+{{detrecipe/tab
+|reci=
+{{detrecipe|3|Troll Scales|15}}
+{{detrecipe|3|Condensed Zap|333333}}
+{{detrecipe|3|Starfire Bar|5000}}
+{{detrecipe|3|Nullo Salt|1600}}
+|tot=
+{{detrecipe/totals|Troll Scales|15}}
+{{detrecipe/totals|Condensed Zap|333333}}
+{{detrecipe/totals|Starfire Bar|5000}}
+{{detrecipe/totals|Nullo Salt|1600}}
 }}

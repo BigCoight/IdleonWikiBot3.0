@@ -85,6 +85,10 @@ class Repository(Generic[T], ABC):
 		cls.listRepository.append(value)
 
 	@classmethod
+	def lengthList(cls) -> int:
+		return len(cls.listRepository)
+
+	@classmethod
 	def contains(cls, key: str) -> bool:
 		return key in cls.repository
 

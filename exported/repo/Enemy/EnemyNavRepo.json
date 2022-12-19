@@ -419,6 +419,104 @@
         "crystalName": "Crystal3",
         "hasCard": true
     },
+    "w5a1": {
+        "prev": null,
+        "next": "w5a2",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5a2": {
+        "prev": "w5a1",
+        "next": "w5a3",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5a3": {
+        "prev": "w5a2",
+        "next": "w5a4",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5a4": {
+        "prev": "w5a3",
+        "next": "w5a5",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5a5": {
+        "prev": "w5a4",
+        "next": "w5b1",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5b1": {
+        "prev": "w5a5",
+        "next": "w5b2",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5b2": {
+        "prev": "w5b1",
+        "next": "w5b3",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5b3": {
+        "prev": "w5b2",
+        "next": "w5b4",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5b4": {
+        "prev": "w5b3",
+        "next": "w5b5",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5b5": {
+        "prev": "w5b4",
+        "next": "w5b6",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5b6": {
+        "prev": "w5b5",
+        "next": "w5c1",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5c1": {
+        "prev": "w5b6",
+        "next": "w5c2",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "w5c2": {
+        "prev": "w5c1",
+        "next": "Crystal4",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "Crystal4": {
+        "prev": "w5c2",
+        "next": "Blank",
+        "hasCrystal": false,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
     "babayaga": {
         "prev": null,
         "next": "poopBig",
@@ -547,6 +645,27 @@
     },
     "Boss4C": {
         "prev": "Boss4B",
+        "next": "Boss5A",
+        "hasCrystal": true,
+        "crystalName": null,
+        "hasCard": true
+    },
+    "Boss5A": {
+        "prev": "Boss4C",
+        "next": "Boss5B",
+        "hasCrystal": true,
+        "crystalName": null,
+        "hasCard": true
+    },
+    "Boss5B": {
+        "prev": "Boss5A",
+        "next": "Boss5C",
+        "hasCrystal": true,
+        "crystalName": null,
+        "hasCard": true
+    },
+    "Boss5C": {
+        "prev": "Boss5B",
         "next": "Blank",
         "hasCrystal": true,
         "crystalName": null,

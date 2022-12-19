@@ -162,17 +162,33 @@
     "Myriad Crate": {
         "name": "Myriad Crate",
         "bonuses": [
-            {"bonus": "Base All Stat", "x1": 40, "x2": 200, "func": "decay"},
-            {"bonus": "Base All Efficiency", "x1": 100, "x2": 200, "func": "decay"},
-            {"bonus": "% All Skills exp", "x1": 30, "x2": 200, "func": "decay"}
+            {"bonus": "Base All Stat", "x1": 400, "x2": 20000, "func": "decay"},
+            {"bonus": "Base All Efficiency", "x1": 1000, "x2": 20000, "func": "decay"},
+            {"bonus": "% All Skills exp", "x1": 100, "x2": 20000, "func": "decay"}
         ]
     },
-    "Filler": {
-        "name": "Filler",
+    "Scurvy C'arr'ate": {
+        "name": "Scurvy C'arr'ate",
         "bonuses": [
-            {"bonus": "Nothing", "x1": 50, "x2": 200, "func": "decay"},
-            {"bonus": "Nothing", "x1": 0.25, "x2": 0, "func": "add"},
-            {"bonus": "Nothing", "x1": 65, "x2": 200, "func": "decay"}
+            {"bonus": "% afk counts for sailing", "x1": 8, "x2": 400, "func": "decay"},
+            {"bonus": "AGI", "x1": 0.2, "x2": 0, "func": "add"},
+            {"bonus": "% Total Damage", "x1": 25, "x2": 400, "func": "decay"}
+        ]
+    },
+    "Box of Gosh": {
+        "name": "Box of Gosh",
+        "bonuses": [
+            {"bonus": "% Divinity EXP", "x1": 75, "x2": 400, "func": "decay"},
+            {"bonus": "WIS", "x1": 0.2, "x2": 0, "func": "add"},
+            {"bonus": "% Divinity Gain", "x1": 30, "x2": 400, "func": "decay"}
+        ]
+    },
+    "Gaming Lootcrate": {
+        "name": "Gaming Lootcrate",
+        "bonuses": [
+            {"bonus": "% afk counts for gaming", "x1": 14, "x2": 400, "func": "decay"},
+            {"bonus": "STR", "x1": 0.2, "x2": 0, "func": "add"},
+            {"bonus": "% Total Damage", "x1": 25, "x2": 400, "func": "decay"}
         ]
     }
 }

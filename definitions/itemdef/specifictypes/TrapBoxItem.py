@@ -1,13 +1,10 @@
-from typing import Dict, Union, Callable, List
+from typing import List
 
 from definitions.itemdef.initialtypes.EquipItem import EquipItem
 from definitions.itemdef.specifictypes.ToolItem import ToolItem
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
-from definitions.itemdef.specifictypes.master.StatItem import StatItem
 from definitions.master.IdleonModel import IdleonModel
 from definitions.misc.world3.TrapBox import TrapBox
-from helpers.Constants import Constants
-from helpers.CustomTypes import Integer
 from repositories.item.TrapBoxRepo import TrapBoxRepo
 
 
@@ -38,10 +35,8 @@ class TrapBoxItem(ToolItem):
 			miscUp1 = cls.getMisc1(item),
 			miscUp2 = cls.getMisc2(item),
 			Upgrade_Slots_Left = item.Upgrade_Slots_Left,
-			trapBoxData = TrapBoxRepo.get(item.internalID)
+			trapBoxData = TrapBoxRepo.getList(item.ID - 1)
 		)
 
 	def writeAfter(self) -> List[IdleonModel]:
 		return [self.trapBoxData]
-
-

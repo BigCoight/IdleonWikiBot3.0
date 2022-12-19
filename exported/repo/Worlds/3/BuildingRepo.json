@@ -79,6 +79,16 @@
         "bonusInc": [1, 1],
         "misc": 0
     },
+    "Atom Collider": {
+        "name": "Atom Collider",
+        "description": "Accelerate enough material to high speeds, and you can create the first physical atoms in this pixellated world! ",
+        "bonus": " +{% chance for an extra atom upon collision",
+        "lvlUpReq": [{"item": "Refinery6", "quantity": 10}, {"item": "FillerMaterial", "quantity": 100}],
+        "maxLvl": 200,
+        "costInc": 1.2,
+        "bonusInc": [10, 5],
+        "misc": 0
+    },
     "Pulse Mage": {
         "name": "Pulse Mage",
         "description": "Zaps a single nearby monster. @ Has fast speed, and low damage. ",
@@ -161,15 +171,12 @@
     },
     "Voidinator": {
         "name": "Voidinator",
-        "description": "Teleports monsters back to the start, and sets them all to a certain amount of HP. ",
-        "bonus": " +{% Recharge Speed @ +}% Lower Upgrade Costs in Worship",
-        "lvlUpReq": [
-            {"item": "Refinery6", "quantity": 10000},
-            {"item": "FillerMaterial", "quantity": 10000}
-        ],
-        "maxLvl": 50,
-        "costInc": 1.19,
-        "bonusInc": [15, 1.6],
+        "description": "Casts a wave of null and void, removing enemy colours. ",
+        "bonus": " +{% Range @ +}% Lower Upgrade Costs in Worship",
+        "lvlUpReq": [{"item": "Refinery6", "quantity": 20}, {"item": "LavaA1", "quantity": 5000}],
+        "maxLvl": 100,
+        "costInc": 1.4,
+        "bonusInc": [0.7, 0.8],
         "misc": 0
     },
     "Woodular Shrine": {

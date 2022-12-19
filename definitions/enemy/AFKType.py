@@ -12,3 +12,4 @@ class AFKType(str, IdleonEnum, metaclass = CheckIn):
 	Choppin = 'Choppin'
 	Cooking = "Cooking"
 	Laboratory = "Laboratory"
+	Divinity = "Divinity"

@@ -1,24 +1,30 @@
 class Constants:
-	worldNames = {"Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Hyperion Nebula"}
-	worlds = ["Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Hyperion Nebula"]
-	navCategories = {"Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Hyperion Nebula", "Bosses"}
+	worldNames = {"Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Hyperion Nebula", "Smolderin' Plateau"}
+	worlds = ["Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Hyperion Nebula", "Smolderin' Plateau"]
+	navCategories = {"Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Hyperion Nebula", "Smolderin' Plateau",
+	                 "Bosses"}
 	worldToCrystal = {"Blunder Hills": "Crystal0", "Yum Yum Desert": "Crystal1", "Frostbite Tundra": "Crystal2",
-	                  "Hyperion Nebula": "Crystal3"}
+	                  "Hyperion Nebula": "Crystal3", "Smolderin' Plateau": "Crystal4"}
 	ignoredEnemies = {"Error", "ForgeA", "ForgeB", "Bandit_Bob", "SoulCard1", "SoulCard2", "SoulCard3", "SoulCard4",
 	                  "SoulCard5", "SoulCard6", "CritterCard1", "CritterCard2", "CritterCard3", "CritterCard4",
 	                  "CritterCard5", "CritterCard6", "CritterCard7", "CritterCard8", "CritterCard9",
 	                  "rockG", "frogP", "frogNest", "frogD", "frogY", "frogR", "frogW",
 	                  "frogGR", "rockS", "target", "rocky", "totem", "cactus", "snakeZ", "SummerEvent1",
 	                  "EasterEvent1", "SummerEvent2", "xmasEvent2", "Blank0ramaFiller", "xmasEvent3"}
-	skillNames = ["Catching", "Fishing",
-	              "Choppin", "Mining", "Trapping", "Worship", "Laboratory"]
-	toolSkills = {"aHatchet": "Choppin", "aFishingRod": "Fishing",
-	              "aBugNet": "Catching", "aPick": "Mining", "aTrap": "Trapping", "aSkull": "Worship",
-	              "aDNAgun": "Laboratory"}
+	skillNames = ["Catching", "Fishing", "Choppin", "Mining", "Trapping", "Worship", "Laboratory"]
+	toolSkills = {
+		"aHatchet": "Choppin",
+		"aFishingRod": "Fishing",
+		"aBugNet": "Catching",
+		"aPick": "Mining",
+		"aTrap": "Trapping",
+		"aSkull": "Worship",
+		"aDNAgun": "Laboratory"
+	}
 
 	cardNames = ["Blunder Hills", "Yum Yum Desert", "Easy Resources",
-	             "Medium Resources", "Frostbite Tundra", "Hard Resources", "Hyperion Nebula", "Dungeons", "Bosses",
-	             "Event"]
+	             "Medium Resources", "Frostbite Tundra", "Hard Resources", "Hyperion Nebula", "Smolderin' Plateau",
+	             "Dungeons", "Bosses", "Event"]
 	pouches = {
 		"Mining": ["Ores", "Bars", "Barrels"],
 		"Chopping": ["Logs", "Leaves"],

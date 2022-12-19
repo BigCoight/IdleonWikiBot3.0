@@ -233,6 +233,56 @@
         "requirements": [{"item": "GalaxyC4", "quantity": 200}, {"liquidNo": "3", "quantity": 5}],
         "bonusKey": "nonFoodACTIVE"
     },
+    "Spear Powah": {
+        "cauldron": "Power Cauldron",
+        "name": "Spear Powah",
+        "x1": 40,
+        "x2": 60,
+        "func": "decay",
+        "description": "+{% more Weapon Power from your weapon, but only if its a Spear!",
+        "requirements": [{"item": "Bits", "quantity": 10000}, {"liquidNo": "3", "quantity": 5}],
+        "bonusKey": "W1"
+    },
+    "Slabi Orefish": {
+        "cauldron": "Power Cauldron",
+        "name": "Slabi Orefish",
+        "x1": 3,
+        "x2": 60,
+        "func": "decay",
+        "description": "+{ Mining and Fishing Power per 100 items found, shown on The Slab!",
+        "requirements": [{"item": "Soul6", "quantity": 150}, {"liquidNo": "3", "quantity": 5}],
+        "bonusKey": "W2"
+    },
+    "Gamer At Heart": {
+        "cauldron": "Power Cauldron",
+        "name": "Gamer At Heart",
+        "x1": 60,
+        "x2": 60,
+        "func": "decay",
+        "description": "When claiming AFK Gains, +{% chance to gain an equal amount of time for Gaming progress!",
+        "requirements": [{"item": "SailTr10", "quantity": 100}, {"liquidNo": "3", "quantity": 6}],
+        "bonusKey": "W3ACTIVE"
+    },
+    "Slabi Strength": {
+        "cauldron": "Power Cauldron",
+        "name": "Slabi Strength",
+        "x1": 25,
+        "x2": 60,
+        "func": "decay",
+        "description": "+{ Base STR per 100 items found, shown on The Slab!",
+        "requirements": [{"item": "LavaB3b", "quantity": 2}, {"liquidNo": "3", "quantity": 6}],
+        "bonusKey": "W4"
+    },
+    "Power Trione": {
+        "cauldron": "Power Cauldron",
+        "name": "Power Trione",
+        "x1": 23,
+        "x2": 50,
+        "func": "decay",
+        "description": "+{% Total Damage per 250 STR, but only for warriors! No triple dipping into AGI and WIS! Also this, but for beginners with LUK!",
+        "requirements": [{"item": "SailTr21", "quantity": 150}, {"liquidNo": "3", "quantity": 6}],
+        "bonusKey": "W5"
+    },
     "Swift Steppin": {
         "cauldron": "Quicc Cauldron",
         "name": "Swift Steppin",
@@ -466,6 +516,56 @@
         "description": "+{% chance for Double EXP when claiming AFK gains. You'll know this happens because it literally tells you it happened!",
         "requirements": [{"item": "Bug8", "quantity": 300}, {"liquidNo": "3", "quantity": 5}],
         "bonusKey": "DubEXP"
+    },
+    "Bow Power": {
+        "cauldron": "Quicc Cauldron",
+        "name": "Bow Power",
+        "x1": 40,
+        "x2": 60,
+        "func": "decay",
+        "description": "+{% more Weapon Power from your weapon, but only if its a Bow!",
+        "requirements": [{"item": "Bits", "quantity": 10000}, {"liquidNo": "3", "quantity": 5}],
+        "bonusKey": "A1"
+    },
+    "Slabo Critterbug": {
+        "cauldron": "Quicc Cauldron",
+        "name": "Slabo Critterbug",
+        "x1": 3,
+        "x2": 60,
+        "func": "decay",
+        "description": "+{ Catching and Trapping Power per 100 items found, shown on The Slab!",
+        "requirements": [{"item": "Tree9", "quantity": 500}, {"liquidNo": "3", "quantity": 5}],
+        "bonusKey": "A2"
+    },
+    "Sailor At Heart": {
+        "cauldron": "Quicc Cauldron",
+        "name": "Sailor At Heart",
+        "x1": 50,
+        "x2": 60,
+        "func": "decay",
+        "description": "When claiming AFK Gains, +{% chance to gain an equal amount of time for Sailing progress!",
+        "requirements": [{"item": "SailTr12", "quantity": 100}, {"liquidNo": "3", "quantity": 6}],
+        "bonusKey": "A3ACTIVE"
+    },
+    "Slabo Agility": {
+        "cauldron": "Quicc Cauldron",
+        "name": "Slabo Agility",
+        "x1": 25,
+        "x2": 60,
+        "func": "decay",
+        "description": "+{ Base AGI and LUK per 100 items found, shown on The Slab! Woah cool this is like a Archer Beginner crossover bubble!",
+        "requirements": [{"item": "LavaB6", "quantity": 250}, {"liquidNo": "3", "quantity": 6}],
+        "bonusKey": "A4"
+    },
+    "Power Tritwo": {
+        "cauldron": "Quicc Cauldron",
+        "name": "Power Tritwo",
+        "x1": 23,
+        "x2": 50,
+        "func": "decay",
+        "description": "+{% Total Damage per 250 AGI, but only for archers! No triple dipping into STR and WIS!",
+        "requirements": [{"item": "SailTr25", "quantity": 150}, {"liquidNo": "3", "quantity": 6}],
+        "bonusKey": "A5"
     },
     "Stable Jenius": {
         "cauldron": "High-IQ Cauldron",
@@ -701,6 +801,56 @@
         "requirements": [{"item": "Tree8", "quantity": 250}, {"liquidNo": "3", "quantity": 5}],
         "bonusKey": "LabXpACTIVE"
     },
+    "Wand Pawur": {
+        "cauldron": "High-IQ Cauldron",
+        "name": "Wand Pawur",
+        "x1": 40,
+        "x2": 60,
+        "func": "decay",
+        "description": "+{% more Weapon Power from your weapon, but only if its a Wand! Or a fisticuff I guess...",
+        "requirements": [{"item": "Bits", "quantity": 10000}, {"liquidNo": "3", "quantity": 5}],
+        "bonusKey": "M1"
+    },
+    "Slabe Logsoul": {
+        "cauldron": "High-IQ Cauldron",
+        "name": "Slabe Logsoul",
+        "x1": 3,
+        "x2": 60,
+        "func": "decay",
+        "description": "+{ Choppin and Worship Power per 100 items found, shown on The Slab!",
+        "requirements": [{"item": "Bug9", "quantity": 250}, {"liquidNo": "3", "quantity": 5}],
+        "bonusKey": "M2"
+    },
+    "Pious At Heart": {
+        "cauldron": "High-IQ Cauldron",
+        "name": "Pious At Heart",
+        "x1": 300,
+        "x2": 100,
+        "func": "decay",
+        "description": "+{% Divinity EXP Gain",
+        "requirements": [{"item": "SailTr14", "quantity": 15}, {"liquidNo": "3", "quantity": 6}],
+        "bonusKey": "M3ACTIVE"
+    },
+    "Slabe Wisdom": {
+        "cauldron": "High-IQ Cauldron",
+        "name": "Slabe Wisdom",
+        "x1": 25,
+        "x2": 60,
+        "func": "decay",
+        "description": "+{ Base WIS per 100 items found, shown on The Slab!",
+        "requirements": [{"item": "LavaC1", "quantity": 200}, {"liquidNo": "3", "quantity": 6}],
+        "bonusKey": "M4"
+    },
+    "Power Trithree": {
+        "cauldron": "High-IQ Cauldron",
+        "name": "Power Trithree",
+        "x1": 23,
+        "x2": 50,
+        "func": "decay",
+        "description": "+{% Total Damage per 250 WIS, but only for mages! No triple dipping into STR and AGI! Also, beginners get this bonus, but for LUK",
+        "requirements": [{"item": "SailTr29", "quantity": 200}, {"liquidNo": "3", "quantity": 6}],
+        "bonusKey": "M5"
+    },
     "Lotto Skills": {
         "cauldron": "Kazam Cauldron",
         "name": "Lotto Skills",
@@ -926,6 +1076,56 @@
         "description": "{x New Pet Chance for every gap you traverse in the SpaceTime Rift. The Rift entrance is deep in World 4, far above the 8 armed octodars.",
         "requirements": [{"item": "Critter10", "quantity": 100}, {"liquidNo": "3", "quantity": 5}],
         "bonusKey": "NewPetRift"
+    },
+    "Boaty Bubble": {
+        "cauldron": "Kazam Cauldron",
+        "name": "Boaty Bubble",
+        "x1": 160,
+        "x2": 70,
+        "func": "decay",
+        "description": "+{% Sailing Speed for all boats",
+        "requirements": [{"item": "Bits", "quantity": 5000}, {"liquidNo": "3", "quantity": 5}],
+        "bonusKey": "Y1"
+    },
+    "Big P": {
+        "cauldron": "Kazam Cauldron",
+        "name": "Big P",
+        "x1": 0.5,
+        "x2": 60,
+        "func": "decayMulti",
+        "description": "{x higher bonus than displayed from the passive bonus of the deity you're linked to in Divinity. AKA bigger god passive!",
+        "requirements": [{"item": "SailTr1", "quantity": 50}, {"liquidNo": "3", "quantity": 5}],
+        "bonusKey": "Y2ACTIVE"
+    },
+    "Bit By Bit": {
+        "cauldron": "Kazam Cauldron",
+        "name": "Bit By Bit",
+        "x1": 40,
+        "x2": 70,
+        "func": "decay",
+        "description": "+{% more bits earned in gaming per plant found, as shown in the Log Book found in the top right of the gaming garden!",
+        "requirements": [{"item": "Tree10", "quantity": 200}, {"liquidNo": "3", "quantity": 5}],
+        "bonusKey": "Y3"
+    },
+    "Gifts Abound": {
+        "cauldron": "Kazam Cauldron",
+        "name": "Gifts Abound",
+        "x1": 40,
+        "x2": 60,
+        "func": "decay",
+        "description": "+{% chance to not use up Divinity points when offering a gift!",
+        "requirements": [{"item": "Bug10", "quantity": 200}, {"liquidNo": "3", "quantity": 6}],
+        "bonusKey": "Y4"
+    },
+    "Atom Split": {
+        "cauldron": "Kazam Cauldron",
+        "name": "Atom Split",
+        "x1": 50,
+        "x2": 60,
+        "func": "decay",
+        "description": "+{% chance to gain 2x atoms from the Supercollider",
+        "requirements": [{"item": "LavaC2", "quantity": 250}, {"liquidNo": "3", "quantity": 6}],
+        "bonusKey": "Y5"
     },
     "Copper Corona": {
         "cauldron": "Vials",
@@ -1446,6 +1646,86 @@
         "description": "+{% Pet Team Damage",
         "requirements": [{"item": "GalaxyC4", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
         "bonusKey": "PetDmg"
+    },
+    "Ash Agua": {
+        "cauldron": "Vials",
+        "name": "Ash Agua",
+        "x1": 2,
+        "x2": 0,
+        "func": "add",
+        "description": "+{ Talent Points for Tab 4",
+        "requirements": [{"item": "LavaA1", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+        "bonusKey": "Tab4Pts"
+    },
+    "Maple Syrup": {
+        "cauldron": "Vials",
+        "name": "Maple Syrup",
+        "x1": 2,
+        "x2": 0,
+        "func": "add",
+        "description": "+{% Divinity EXP. Maple syrup helps me keep calm and meditate with the divine, eh? No wonder those Canadians sure are nice and calm people!",
+        "requirements": [{"item": "Tree9", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+        "bonusKey": "DivXP"
+    },
+    "Hampter Drippy": {
+        "cauldron": "Vials",
+        "name": "Hampter Drippy",
+        "x1": 2,
+        "x2": 0,
+        "func": "add",
+        "description": "+{% Sailing EXP gain. Doesn't help level up captains, only yourself. So yea, I'm basically saying you're a crappy captain haha!",
+        "requirements": [{"item": "LavaA5b", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+        "bonusKey": "SailXP"
+    },
+    "Dreadnog": {
+        "cauldron": "Vials",
+        "name": "Dreadnog",
+        "x1": 2,
+        "x2": 0,
+        "func": "add",
+        "description": "+{% Cooking Speed for meals. No, MEALS, not meel, dont cook him!! Stop!! STOP!!!!",
+        "requirements": [{"item": "DreadloBar", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+        "bonusKey": "MealCook"
+    },
+    "Dusted Drink": {
+        "cauldron": "Vials",
+        "name": "Dusted Drink",
+        "x1": 2,
+        "x2": 0,
+        "func": "add",
+        "description": "+{% Gaming EXP. Cool.",
+        "requirements": [{"item": "Bug10", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+        "bonusKey": "GameXP"
+    },
+    "Oj Jooce": {
+        "cauldron": "Vials",
+        "name": "Oj Jooce",
+        "x1": 2,
+        "x2": 0,
+        "func": "add",
+        "description": "+{% Sailing Speed. If only there was a way to also lower the minimum sailing time... I'm sure you'll find it eventually...",
+        "requirements": [{"item": "LavaB3", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+        "bonusKey": "SailSpd"
+    },
+    "Oozie Ooblek": {
+        "cauldron": "Vials",
+        "name": "Oozie Ooblek",
+        "x1": 2,
+        "x2": 0,
+        "func": "add",
+        "description": "+{% Bits gained in Gaming. Cool.",
+        "requirements": [{"item": "Soul6", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+        "bonusKey": "GameBits"
+    },
+    "Venison Malt": {
+        "cauldron": "Vials",
+        "name": "Venison Malt",
+        "x1": 2,
+        "x2": 0,
+        "func": "add",
+        "description": "-{% material cost for stamps. Have at it endgamers!",
+        "requirements": [{"item": "LavaC2", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+        "bonusKey": "MatCostStamp"
     },
     "Mediocre Obols": {
         "cauldron": "Liquid Shop",

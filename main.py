@@ -67,6 +67,13 @@ from repositories.misc.world4.PetGeneRepo import PetGeneRepo
 from repositories.misc.world4.PetStatRepo import PetStatRepo
 from repositories.misc.world4.PetUpgradeRepo import PetUpgradeRepo
 from repositories.misc.world4.TerritoryFightRepo import TerritoryFightRepo
+from repositories.misc.world5.ArtifactRepo import ArtifactRepo
+from repositories.misc.world5.CaptainBonusRepo import CaptainBonusRepo
+from repositories.misc.world5.DivinityStyleRepo import DivinityStyleRepo
+from repositories.misc.world5.GamingBoxRepo import GamingBoxRepo
+from repositories.misc.world5.GamingUpgradeRepo import GamingUpgradeRepo
+from repositories.misc.world5.GodInfoRepo import GodInfoRepo
+from repositories.misc.world5.IslandInfoRepo import IslandInfoRepo
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
 from repositories.npc.NpcRepo import NpcRepo
@@ -160,6 +167,15 @@ SkullShopRepo.initialise(codeReader)
 
 RandoListRepo.initialise(codeReader)
 ColosseumRepo.initialise(codeReader)
+
+# World 5
+ArtifactRepo.initialise(codeReader)
+CaptainBonusRepo.initialise(codeReader)
+DivinityStyleRepo.initialise(codeReader)
+GamingBoxRepo.initialise(codeReader)
+GamingUpgradeRepo.initialise(codeReader)
+GodInfoRepo.initialise(codeReader)
+IslandInfoRepo.initialise(codeReader)
 
 ItemRepo.exportWikiMult()
 NpcRepo.exportWikiMult()

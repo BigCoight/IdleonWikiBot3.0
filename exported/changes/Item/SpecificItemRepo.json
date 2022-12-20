@@ -1,1 +1,1222 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "LavaA2": {
+            "displayName": "Plated Crumbs",
+            "sellPrice": 18000,
+            "Type": "Monster Drop",
+            "description": "Look if you're gonna kill the poor thing, you may as well have the decency of finishing the whole thing! "
+        },
+        "CardsZ20": {
+            "displayName": "Undying Troll Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "Z20",
+                "perTier": 5,
+                "effect": "+{% Money from Monsters",
+                "bonus": 18,
+                "order": 22
+            },
+            "dropChance": 0.003
+        },
+        "StampB45": {
+            "displayName": "Divine Stamp",
+            "sellPrice": 4000,
+            "Type": "Skills Stamp",
+            "description": "",
+            "bonus": "+{% Divinity EXP Gain",
+            "ID": 45,
+            "stampData": {
+                "effect": "DivineExp",
+                "function": "add",
+                "x1": 1,
+                "x2": 0,
+                "upgradeInterval": 8,
+                "material": {"item": "LavaB3"},
+                "startV": 1000,
+                "mCostExp": 10,
+                "startingCost": 500000000,
+                "cCostExp": 1.35,
+                "i10": 0,
+                "upgradeText": "{}% Divinity EXP",
+                "i12": 0
+            }
+        },
+        "StampA35": {
+            "displayName": "Intellectostampo",
+            "sellPrice": 1,
+            "Type": "Combat Stamp",
+            "description": "",
+            "bonus": "+{ WIS",
+            "ID": 35,
+            "stampData": {
+                "effect": "BaseWIS",
+                "function": "add",
+                "x1": 4,
+                "x2": 0,
+                "upgradeInterval": 7,
+                "material": {"item": "Soul6"},
+                "startV": 150,
+                "mCostExp": 7,
+                "startingCost": 100000000,
+                "cCostExp": 1.4,
+                "i10": 0,
+                "upgradeText": "{} Base WIS",
+                "i12": 0
+            }
+        },
+        "CatchingNet10": {
+            "displayName": "Dreadlo Matted Netting",
+            "sellPrice": 17000,
+            "Type": "Bug Catching Net",
+            "lvReqToCraft": 1,
+            "lvReqToEquip": 65,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 13,
+            "AGI": 25,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "Catching",
+            "Skill_Power": 65,
+            "Speed": 7
+        },
+        "CardsZ19": {
+            "displayName": "Septic Kattlecruk Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "Z19",
+                "perTier": 4,
+                "effect": "+{% EXP from monsters",
+                "bonus": 8,
+                "order": 21
+            },
+            "dropChance": 0.002
+        },
+        "Bug9": {
+            "displayName": "Scarab",
+            "sellPrice": 200,
+            "Type": "Bug",
+            "description": "Amazingly, these bugs have adapted around being static images with no animation, and are able to fly without moving their wings! "
+        },
+        "MaxCapBagMi9": {
+            "displayName": "Colossal Mining Pouch",
+            "sellPrice": 200,
+            "Type": "Carry Bag",
+            "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Ores, Bars, Barrels",
+            "level": 150
+        },
+        "StoneT5": {
+            "displayName": "Tool Upgrade Stone V",
+            "sellPrice": 4000000,
+            "Type": "Upgrade",
+            "description": "Drag onto any Tool to apply. +6 Weapon Power, +6 Main Stat. Success Chance; 30% Uses up 1 slots only if Successful ",
+            "tier": "V"
+        },
+        "Bullet3": {
+            "displayName": "Coldseeker Bullet",
+            "sellPrice": 20,
+            "Type": "Boost Food",
+            "description": "Increases Weapon Power by 9. 5% chance to be consumed every time you defeat a monster. Must be equipped in a Food Slot to give its bonus. "
+        },
+        "MaxCapBagB9": {
+            "displayName": "Colossal Bug Pouch",
+            "sellPrice": 200,
+            "Type": "Carry Bag",
+            "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Bugs",
+            "level": 150
+        },
+        "StampB44": {
+            "displayName": "Gamejoy Stamp",
+            "sellPrice": 4000,
+            "Type": "Skills Stamp",
+            "description": "",
+            "bonus": "+{% Gaming EXP Gain",
+            "ID": 44,
+            "stampData": {
+                "effect": "GamingExp",
+                "function": "add",
+                "x1": 1,
+                "x2": 0,
+                "upgradeInterval": 5,
+                "material": {"item": "Tree10"},
+                "startV": 500,
+                "mCostExp": 8,
+                "startingCost": 500000000,
+                "cCostExp": 1.35,
+                "i10": 0,
+                "upgradeText": "{}% Gaming EXP",
+                "i12": 0
+            }
+        },
+        "LavaC1": {
+            "displayName": "Wormie Slices",
+            "sellPrice": 110000,
+            "Type": "Monster Drop",
+            "description": " "
+        },
+        "CardsF25": {
+            "displayName": "Dandielogs Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "F25",
+                "perTier": 15,
+                "effect": "+{% Choppin Speed",
+                "bonus": 8,
+                "order": 9
+            },
+            "dropChance": 5e-06
+        },
+        "CardsH8": {
+            "displayName": "Citringe Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H8",
+                "perTier": 60,
+                "effect": "+{% Total Damage",
+                "bonus": 4.5,
+                "order": 8
+            },
+            "dropChance": 2e-05
+        },
+        "EquipmentPunching8": {
+            "displayName": "Molten Core Knucklers",
+            "sellPrice": 7800,
+            "Type": "Fisticuff",
+            "lvReqToCraft": 10,
+            "lvReqToEquip": 160,
+            "Class": "Beginner",
+            "Weapon_Power": 55,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 40,
+            "Defence": 0,
+            "miscUp1": "10% Total Damage",
+            "miscUp2": "10% Mob Respawn",
+            "Upgrade_Slots_Left": 5,
+            "Speed": 9,
+            "Reach": 96
+        },
+        "MaxCapBagTr8": {
+            "displayName": "Colossal Critta Pouch",
+            "sellPrice": 200,
+            "Type": "Carry Bag",
+            "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Critters",
+            "level": 150
+        },
+        "EquipmentPants26": {
+            "displayName": "Magma Core Battleskirt",
+            "sellPrice": 200,
+            "Type": "Pants",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 225,
+            "Class": "All",
+            "Weapon_Power": 5,
+            "STR": 32,
+            "AGI": 32,
+            "WIS": 32,
+            "LUK": 32,
+            "Defence": 95,
+            "miscUp1": "4% All Stats",
+            "miscUp2": "4% Total Damage",
+            "Upgrade_Slots_Left": 8,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "Bits": {"displayName": "Bits", "sellPrice": 1, "Type": "Bits", "description": "Bits "},
+        "LavaB4": {
+            "displayName": "Molten Lamp",
+            "sellPrice": 70000,
+            "Type": "Monster Drop",
+            "description": " "
+        },
+        "CardsH4": {
+            "displayName": "Cheese Nub Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H4",
+                "perTier": 35,
+                "effect": "+{% Skill EXP (Passive)",
+                "bonus": 5,
+                "order": 4
+            },
+            "dropChance": 2e-05
+        },
+        "LavaA4": {
+            "displayName": "Cheesy Crumbs",
+            "sellPrice": 29000,
+            "Type": "Monster Drop",
+            "description": "Thats not your cheese! Err, thats nacho cheese! Ok wow that really doesn't work typed out like that... "
+        },
+        "CardsF29": {
+            "displayName": "Dreadlo Ore Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "F29",
+                "perTier": 15,
+                "effect": "+{% Mining Away Gains",
+                "bonus": 3,
+                "order": 3
+            },
+            "dropChance": 3e-05
+        },
+        "StampB46": {
+            "displayName": "Multitool Stamp",
+            "sellPrice": 4000,
+            "Type": "Skills Stamp",
+            "description": "",
+            "bonus": "+{ All Skill Efficiency",
+            "ID": 46,
+            "stampData": {
+                "effect": "BaseAllEff",
+                "function": "add",
+                "x1": 10,
+                "x2": 0,
+                "upgradeInterval": 10,
+                "material": {"item": "Bug10"},
+                "startV": 500,
+                "mCostExp": 8,
+                "startingCost": 800000000,
+                "cCostExp": 1.35,
+                "i10": 0,
+                "upgradeText": "{} All Efficiency",
+                "i12": 0
+            }
+        },
+        "LavaA1": {
+            "displayName": "Suggma Ashes",
+            "sellPrice": 15000,
+            "Type": "Monster Drop",
+            "description": "Poor suggma slug, couldn't even handle a little bit of water eh? "
+        },
+        "Leaf5": {"displayName": "Magma Leaf", "sellPrice": 100, "Type": "Leaf"},
+        "SailTr24": {
+            "displayName": "Strung Jewels",
+            "sellPrice": 1,
+            "Type": "Sail Treasure",
+            "description": "Sail Treasure "
+        },
+        "Quest72": {
+            "displayName": "Bottled Wind",
+            "sellPrice": 100,
+            "Type": "Bottled Wind",
+            "description": "Hold down instantly gain 6 Hours of Sailing Progress! "
+        },
+        "CardsF26": {
+            "displayName": "Scarab Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "F26",
+                "perTier": 12,
+                "effect": "+{% Total Catching Efficiency",
+                "bonus": 10,
+                "order": 18
+            },
+            "dropChance": 2e-05
+        },
+        "LavaB5": {
+            "displayName": "Spitfire",
+            "sellPrice": 80000,
+            "Type": "Monster Drop",
+            "description": " "
+        },
+        "CardsH5": {
+            "displayName": "Stiltmole Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H5",
+                "perTier": 45,
+                "effect": "+{% Divinity EXP (Passive)",
+                "bonus": 6,
+                "order": 5
+            },
+            "dropChance": 2e-05
+        },
+        "MaxCapBagFi9": {
+            "displayName": "Colossal Fish Pouch",
+            "sellPrice": 200,
+            "Type": "Carry Bag",
+            "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Fish",
+            "level": 150
+        },
+        "LavaA3": {
+            "displayName": "Sundried Glass",
+            "sellPrice": 22000,
+            "Type": "Monster Drop",
+            "description": "Reduced to mere glass fragments... I guess thats just the price he pays for being a monster, his destiny was calling. "
+        },
+        "Tree9": {"displayName": "Maple Logs", "sellPrice": 150, "Type": "Log"},
+        "StampC22": {
+            "displayName": "Refinery Stamp",
+            "sellPrice": 30000000,
+            "Type": "Misc Stamp",
+            "description": "",
+            "bonus": "+{% Faster refinery cycles",
+            "ID": 22,
+            "stampData": {
+                "effect": "RefinerySpd",
+                "function": "add",
+                "x1": 1,
+                "x2": 0,
+                "upgradeInterval": 5,
+                "material": {"item": "LavaA4"},
+                "startV": 250,
+                "mCostExp": 5,
+                "startingCost": 25000000,
+                "cCostExp": 1.52,
+                "i10": 0,
+                "upgradeText": "{}% faster refinery",
+                "i12": 0
+            }
+        },
+        "Quest73": {
+            "displayName": "Gaming Fertilizer",
+            "sellPrice": 100,
+            "Type": "Gamer Soil",
+            "description": "Hold down instantly gain 8 Hours of Gaming Progress! "
+        },
+        "WorshipSkull9": {
+            "displayName": "Dreadnaught Skull",
+            "sellPrice": 100,
+            "Type": "Worship Skull",
+            "lvReqToCraft": 3000,
+            "lvReqToEquip": 70,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "Max Worship Charge: 3000%",
+            "miscUp2": "3% All Stats",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "Worship",
+            "Skill_Power": 55,
+            "Speed": 9
+        },
+        "CardsF24": {
+            "displayName": "Maple Logs Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "F24",
+                "perTier": 12,
+                "effect": "+{% Choppin Away Gains",
+                "bonus": 3,
+                "order": 8
+            },
+            "dropChance": 1e-05
+        },
+        "CardsH10": {
+            "displayName": "Fire Spirit Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H10",
+                "perTier": 70,
+                "effect": "+{ Base LUK",
+                "bonus": 15,
+                "order": 10
+            },
+            "dropChance": 2e-05
+        },
+        "FishingRod10": {
+            "displayName": "Dreadlo Rod",
+            "sellPrice": 10000,
+            "Type": "Fishing Rod",
+            "lvReqToCraft": 15,
+            "lvReqToEquip": 60,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 35,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "Fishing",
+            "Skill_Power": 60,
+            "Speed": 7
+        },
+        "LavaB6": {
+            "displayName": "Hard Hat",
+            "sellPrice": 90000,
+            "Type": "Monster Drop",
+            "description": " "
+        },
+        "FoodG9": {
+            "displayName": "Golden Grilled Cheese Nomwich",
+            "sellPrice": 100,
+            "Type": "Golden Food",
+            "description": "STR AGI WIS and LUK all increased. Golden foods are never consumed.",
+            "goldenFoodData": {"effect": "STR AGI WIS and LUK all increased by [%.", "amount": 10}
+        },
+        "EquipmentSword6": {
+            "displayName": "Magma Maul",
+            "sellPrice": 26000,
+            "Type": "Spear",
+            "lvReqToCraft": 50,
+            "lvReqToEquip": 160,
+            "Class": "Warrior",
+            "Weapon_Power": 70,
+            "STR": 40,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "12% Total Damage",
+            "miscUp2": "10% Mob Respawn",
+            "Upgrade_Slots_Left": 5,
+            "Speed": 7,
+            "Reach": 92
+        },
+        "LavaA1b": {
+            "displayName": "Royal Suggma Urn",
+            "sellPrice": 150000,
+            "Type": "Monster Drop",
+            "description": "Huh... was uh... was that one some sort of king or something? This species really needs to sort out its heirarchy, it didn't look any different from the others! "
+        },
+        "SailTr13": {
+            "displayName": "Strung Jewels",
+            "sellPrice": 1,
+            "Type": "Sail Treasure",
+            "description": "Sail Treasure "
+        },
+        "MaxCapBagF9": {
+            "displayName": "Colossal Food Pouch",
+            "sellPrice": 200,
+            "Type": "Carry Bag",
+            "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Health Food, Boost Food, Golden Food",
+            "level": 150
+        },
+        "EquipmentStatues23": {
+            "displayName": "Battleaxe Statue",
+            "sellPrice": 10,
+            "Type": "Statue",
+            "description": "This statue makes you do more damage. Nothing fancy. ",
+            "bonus": "%Damage",
+            "statueData": {"name": "Battleaxe", "effect": "%@Damage", "dk": 300, "bonus": 0.2}
+        },
+        "StoneA5": {
+            "displayName": "Armor Upgrade Stone V",
+            "sellPrice": 3000000,
+            "Type": "Upgrade",
+            "description": "Drag onto any Armor to apply. +10 Defence, +6 Main Stat. Success Chance; 30% Uses up 1 slots only if Successful ",
+            "tier": "V"
+        },
+        "SailTr9": {
+            "displayName": "Strung Jewels",
+            "sellPrice": 1,
+            "Type": "Sail Treasure",
+            "description": "Sail Treasure "
+        },
+        "LavaB3b": {
+            "displayName": "OJ Juice",
+            "sellPrice": 750000,
+            "Type": "Monster Drop",
+            "description": " "
+        },
+        "CardsH14": {
+            "displayName": "Magma Geode Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H14",
+                "perTier": 15,
+                "effect": "+{% Skill Efficncy (Passive)",
+                "bonus": 3,
+                "order": 14
+            },
+            "dropChance": 0.008
+        },
+        "EquipmentHats77": {
+            "displayName": "Magma Core Headdress",
+            "sellPrice": 1,
+            "Type": "Helmet",
+            "lvReqToCraft": 5,
+            "lvReqToEquip": 210,
+            "Class": "All",
+            "Weapon_Power": 9,
+            "STR": 40,
+            "AGI": 40,
+            "WIS": 40,
+            "LUK": 40,
+            "Defence": 125,
+            "miscUp1": "5% All Stats",
+            "miscUp2": "6% Total Damage",
+            "Upgrade_Slots_Left": 9,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentStatues20": {
+            "displayName": "Pecunia Statue",
+            "sellPrice": 10,
+            "Type": "Statue",
+            "description": "This statue gonna make u heckin rich! ",
+            "bonus": "%Coins",
+            "statueData": {"name": "Pecunia", "effect": "%@Coins", "dk": 50, "bonus": 1}
+        },
+        "EquipmentCape7": {
+            "displayName": "Molten Cloak",
+            "sellPrice": 1,
+            "Type": "Cape",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 6,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 5,
+            "miscUp1": "30% Drop Chance",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "CardsF27": {
+            "displayName": "Dust Mote Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "F27",
+                "perTier": 15,
+                "effect": "+{% Catching Away Gains",
+                "bonus": 3,
+                "order": 19
+            },
+            "dropChance": 2e-05
+        },
+        "CardsZ18": {
+            "displayName": "Kattlecruk Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "Z18",
+                "perTier": 3,
+                "effect": "+{% Sailing Speed (Passive)",
+                "bonus": 6,
+                "order": 20
+            },
+            "dropChance": 0.004
+        },
+        "TrapBoxSet8": {
+            "displayName": "Egalitarian Royal Traps",
+            "sellPrice": 6,
+            "Type": "Trap Box Set",
+            "lvReqToCraft": 1,
+            "lvReqToEquip": 60,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 0,
+            "AGI": 38,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 4,
+            "Skill": "Trapping",
+            "Skill_Power": 55,
+            "Speed": 4,
+            "trapBoxData": [
+                {"time": 1200, "qtyX": 2, "expX": 0, "shinyX": 4},
+                {"time": 3600, "qtyX": 4, "expX": 0, "shinyX": 8},
+                {"time": 36000, "qtyX": 21, "expX": 0, "shinyX": 38},
+                {"time": 144000, "qtyX": 70, "expX": 0, "shinyX": 125},
+                {"time": 576000, "qtyX": 250, "expX": 0, "shinyX": 375},
+                {"time": 2419000, "qtyX": 550, "expX": 0, "shinyX": 1150}
+            ]
+        },
+        "CardsF28": {
+            "displayName": "Oozie Soul Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "F28",
+                "perTier": 7,
+                "effect": "+{% Max Charge",
+                "bonus": 10,
+                "order": 30
+            },
+            "dropChance": 1
+        },
+        "StampA34": {
+            "displayName": "Sashe Sidestamp",
+            "sellPrice": 1,
+            "Type": "Combat Stamp",
+            "description": "",
+            "bonus": "+{ AGI",
+            "ID": 34,
+            "stampData": {
+                "effect": "BaseAGI",
+                "function": "add",
+                "x1": 4,
+                "x2": 0,
+                "upgradeInterval": 7,
+                "material": {"item": "Bug9"},
+                "startV": 1000,
+                "mCostExp": 10,
+                "startingCost": 100000000,
+                "cCostExp": 1.4,
+                "i10": 0,
+                "upgradeText": "{} Base AGI",
+                "i12": 0
+            }
+        },
+        "SailTr28": {
+            "displayName": "Strung Jewels",
+            "sellPrice": 1,
+            "Type": "Sail Treasure",
+            "description": "Sail Treasure "
+        },
+        "OilBarrel6": {
+            "displayName": "Magma Barrel",
+            "sellPrice": 3000000,
+            "Type": "Barrel",
+            "description": "Increases Extra Bar chance by 40% for the Slot it's in. 50% chance to be consumed when a bar is forged. "
+        },
+        "EquipmentBows11": {
+            "displayName": "Sediment Core Grunkler",
+            "sellPrice": 15000,
+            "Type": "Bow",
+            "lvReqToCraft": 22,
+            "lvReqToEquip": 160,
+            "Class": "Archer",
+            "Weapon_Power": 65,
+            "STR": 20,
+            "AGI": 30,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "12% Total Damage",
+            "miscUp2": "10% Mob Respawn",
+            "Upgrade_Slots_Left": 5,
+            "Speed": 8,
+            "Reach": 320
+        },
+        "LavaC2": {
+            "displayName": "Mongo Worm Slices",
+            "sellPrice": 150000,
+            "Type": "Monster Drop",
+            "description": " "
+        },
+        "CardsH1": {
+            "displayName": "Suggma Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H1",
+                "perTier": 25,
+                "effect": "+{% Multikill per tier",
+                "bonus": 2,
+                "order": 1
+            },
+            "dropChance": 2e-05
+        },
+        "EquipmentStatues25": {
+            "displayName": "Boat Statue",
+            "sellPrice": 10,
+            "Type": "Statue",
+            "description": "This statue does not actually function as a boat, and will sink as youd expect a large piece of stone would. ",
+            "bonus": "%Sailing Spd",
+            "statueData": {"name": "Boat", "effect": "%@Sailing Spd", "dk": 160, "bonus": 0.5}
+        },
+        "EquipmentStatues21": {
+            "displayName": "Mutton Statue",
+            "sellPrice": 10,
+            "Type": "Statue",
+            "description": "This statue makes me really hungry... but for some reason it inspires me to cook rather than giving higher food bonuses. ",
+            "bonus": "%Cooking Exp",
+            "statueData": {"name": "Mutton", "effect": "%@Cooking Exp", "dk": 0, "bonus": 0.3}
+        },
+        "CardPack6": {
+            "displayName": "Smolderin Card Pack",
+            "sellPrice": 1,
+            "Type": "Card Pack",
+            "description": "Hold down to open the pack! The cards drop on the ground, make sure to pick them up!! "
+        },
+        "CardsH6": {
+            "displayName": "Molti Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H6",
+                "perTier": 48,
+                "effect": "+{% Money from mobs (Passive)",
+                "bonus": 7,
+                "order": 6
+            },
+            "dropChance": 2e-05
+        },
+        "StampA37": {
+            "displayName": "Dementia Sword",
+            "sellPrice": 1,
+            "Type": "Combat Stamp",
+            "description": "",
+            "bonus": "+{ WIS",
+            "ID": 35,
+            "stampData": {
+                "effect": "PctDmg",
+                "function": "decay",
+                "x1": 25,
+                "x2": 0,
+                "upgradeInterval": 10,
+                "material": {"item": "Dreadlo"},
+                "startV": 1000,
+                "mCostExp": 10,
+                "startingCost": 200000000,
+                "cCostExp": 1.43,
+                "i10": 0,
+                "upgradeText": "{}% Total Damage",
+                "i12": 0
+            }
+        },
+        "SailTr11": {
+            "displayName": "Strung Jewels",
+            "sellPrice": 1,
+            "Type": "Sail Treasure",
+            "description": "Sail Treasure "
+        },
+        "SailTr20": {
+            "displayName": "Strung Jewels",
+            "sellPrice": 1,
+            "Type": "Sail Treasure",
+            "description": "Sail Treasure "
+        },
+        "CardsH3": {
+            "displayName": "Mister Brightside Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H3",
+                "perTier": 32,
+                "effect": "+{% Total Drop Rate",
+                "bonus": 6,
+                "order": 3
+            },
+            "dropChance": 2e-05
+        },
+        "StoneW5": {
+            "displayName": "Weapon Upgrade Stone V",
+            "sellPrice": 6000000,
+            "Type": "Upgrade",
+            "description": "Drag onto any Weapon to apply. +5 Weapon Power, +5 Main Stat. Success Chance; 30% Uses up 1 slots only if Successful ",
+            "tier": "V"
+        },
+        "EquipmentWands10": {
+            "displayName": "Cattle Core Soothsayer Staff",
+            "sellPrice": 200,
+            "Type": "Wand",
+            "lvReqToCraft": 22,
+            "lvReqToEquip": 160,
+            "Class": "Mage",
+            "Weapon_Power": 75,
+            "STR": 0,
+            "AGI": 20,
+            "WIS": 35,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "12% Total Damage",
+            "miscUp2": "10% Mob Respawn",
+            "Upgrade_Slots_Left": 5,
+            "Speed": 8,
+            "Reach": 275
+        },
+        "CardsH12": {
+            "displayName": "Crawler Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H12",
+                "perTier": 80,
+                "effect": "+{% Sailing Speed (Passive)",
+                "bonus": 4,
+                "order": 12
+            },
+            "dropChance": 2e-05
+        },
+        "StoneZ3": {
+            "displayName": "Mystery Upgrade Stone III",
+            "sellPrice": 777,
+            "Type": "Upgrade",
+            "description": "Drag onto any Equip to apply. +8 Mystery Stat. Success Chance; 30% Uses up 1 slots only if Successful. WARNING:Mystery Stat has a chance to be Negative, and reduce stats! ",
+            "tier": "III"
+        },
+        "StampA36": {
+            "displayName": "Conjocharmo Stamp",
+            "sellPrice": 1,
+            "Type": "Combat Stamp",
+            "description": "",
+            "bonus": "+{ WIS",
+            "ID": 35,
+            "stampData": {
+                "effect": "BaseLUK",
+                "function": "add",
+                "x1": 4,
+                "x2": 0,
+                "upgradeInterval": 10,
+                "material": {"item": "LavaA1"},
+                "startV": 1000,
+                "mCostExp": 10,
+                "startingCost": 100000000,
+                "cCostExp": 1.4,
+                "i10": 0,
+                "upgradeText": "{} Base LUK",
+                "i12": 0
+            }
+        },
+        "MaxCapBagS8": {
+            "displayName": "Colossal Soul Pouch",
+            "sellPrice": 200,
+            "Type": "Carry Bag",
+            "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Souls",
+            "level": 150
+        },
+        "CardsH9": {
+            "displayName": "Lampar Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H9",
+                "perTier": 65,
+                "effect": "+{% EXP from monsters",
+                "bonus": 4,
+                "order": 9
+            },
+            "dropChance": 2e-05
+        },
+        "FoodPotYe5": {
+            "displayName": "Quotient EXP Potion",
+            "sellPrice": 150000,
+            "Type": "Boost Food",
+            "description": "Increases Exp Gain by 25% 2% chance to be consumed every time you defeat a monster. Must be equipped in a Food Slot to give its bonus. "
+        },
+        "Pearl6": {
+            "displayName": "Divinity Pearl",
+            "sellPrice": 100,
+            "Type": "Usable",
+            "description": "Hold down to gain 40% EXP in the skill that's shown in the corner of the screen. If you're in a town, you will gain EXP in the town skill. Only works on skills below level 50. "
+        },
+        "MaxCapBagM10": {
+            "displayName": "Colossal Matty Pouch",
+            "sellPrice": 200,
+            "Type": "Carry Bag",
+            "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Monster Parts, Smithing Production Items",
+            "level": 150
+        },
+        "LavaA5": {
+            "displayName": "Stilt Pole",
+            "sellPrice": 36000,
+            "Type": "Monster Drop",
+            "description": "It's got a built in gyroscope to help with balance. Unfortunately, it isn't turned on. "
+        },
+        "MaxCapBagT9": {
+            "displayName": "Colossal Chopping Pouch",
+            "sellPrice": 200,
+            "Type": "Carry Bag",
+            "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Logs, Leaves",
+            "level": 150
+        },
+        "LavaB2": {
+            "displayName": "Shattered Skull",
+            "sellPrice": 50000,
+            "Type": "Monster Drop",
+            "description": " "
+        },
+        "SailTr1": {
+            "displayName": "Strung Jewels",
+            "sellPrice": 1,
+            "Type": "Sail Treasure",
+            "description": "Sail Treasure "
+        },
+        "FoodHealth14": {
+            "displayName": "Lemon Slice",
+            "sellPrice": 8000,
+            "Type": "Health Food",
+            "description": "Auto-Used when your health goes below 50%. Restores 8000 HP. Has a 22 second Cooldown. "
+        },
+        "LavaB3": {
+            "displayName": "Orange Slice",
+            "sellPrice": 58000,
+            "Type": "Monster Drop",
+            "description": " "
+        },
+        "StampA33": {
+            "displayName": "Maxo Slappo Stamp",
+            "sellPrice": 1,
+            "Type": "Combat Stamp",
+            "description": "",
+            "bonus": "+{ STR",
+            "ID": 33,
+            "stampData": {
+                "effect": "BaseSTR",
+                "function": "add",
+                "x1": 4,
+                "x2": 0,
+                "upgradeInterval": 7,
+                "material": {"item": "Tree9"},
+                "startV": 1000,
+                "mCostExp": 10,
+                "startingCost": 100000000,
+                "cCostExp": 1.4,
+                "i10": 0,
+                "upgradeText": "{} Base STR",
+                "i12": 0
+            }
+        },
+        "EquipmentShirts35": {
+            "displayName": "Magma Core Wavemaille",
+            "sellPrice": 200,
+            "Type": "Shirt",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 220,
+            "Class": "All",
+            "Weapon_Power": 5,
+            "STR": 30,
+            "AGI": 30,
+            "WIS": 30,
+            "LUK": 30,
+            "Defence": 100,
+            "miscUp1": "4% All Stats",
+            "miscUp2": "4% Total Damage",
+            "Upgrade_Slots_Left": 8,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "CardsH13": {
+            "displayName": "Tremor Wurm Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H13",
+                "perTier": 100,
+                "effect": "+{% All Stat",
+                "bonus": 1,
+                "order": 13
+            },
+            "dropChance": 2e-05
+        },
+        "CardsH7": {
+            "displayName": "Purgatory Stalker Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H7",
+                "perTier": 52,
+                "effect": "+{ Weapon Power (Passive)",
+                "bonus": 1,
+                "order": 7
+            },
+            "dropChance": 2e-05
+        },
+        "LavaB1": {
+            "displayName": "Meteorite",
+            "sellPrice": 42000,
+            "Type": "Monster Drop",
+            "description": " "
+        },
+        "Tree10": {"displayName": "Dandielogs", "sellPrice": 250, "Type": "Log"},
+        "LavaA5b": {
+            "displayName": "Hampter",
+            "sellPrice": 500000,
+            "Type": "Monster Drop",
+            "description": "Hampter. "
+        },
+        "CardsH11": {
+            "displayName": "Biggole Mole Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H11",
+                "perTier": 75,
+                "effect": "+{% Mining Speed",
+                "bonus": 6,
+                "order": 11
+            },
+            "dropChance": 2e-05
+        },
+        "EquipmentStatues24": {
+            "displayName": "Spiral Statue",
+            "sellPrice": 10,
+            "Type": "Statue",
+            "description": "This statue will bring you closer to god. Or gods in this case, the world of IdleOn is polytheistic! ",
+            "bonus": "%Divinity Exp",
+            "statueData": {"name": "Spiral", "effect": "%@Divinity Exp", "dk": 70, "bonus": 1}
+        },
+        "CardsH2": {
+            "displayName": "Maccie Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "H2",
+                "perTier": 28,
+                "effect": "+{% Defence from Equipment",
+                "bonus": 5,
+                "order": 2
+            },
+            "dropChance": 2e-05
+        },
+        "Bug10": {
+            "displayName": "Dust Mote",
+            "sellPrice": 320,
+            "Type": "Bug",
+            "description": "Wait, is this actually just a piece of dust? I mean it's classified as a bug but like, I mean... the classifiers must get it wrong sometimes right? "
+        },
+        "EquipmentShoes35": {
+            "displayName": "Magma Core Lavarunners",
+            "sellPrice": 200,
+            "Type": "Shoes",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 230,
+            "Class": "All",
+            "Weapon_Power": 3,
+            "STR": 28,
+            "AGI": 28,
+            "WIS": 28,
+            "LUK": 28,
+            "Defence": 90,
+            "miscUp1": "4% All Stats",
+            "miscUp2": "4% Total Damage",
+            "Upgrade_Slots_Left": 7,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "FoodHealth15": {
+            "displayName": "Grilled Cheese Nomwich",
+            "sellPrice": 16000,
+            "Type": "Health Food",
+            "description": "Auto-Used when your health goes below 50%. Restores 12500 HP. Has a 20 second Cooldown. "
+        },
+        "StampB43": {
+            "displayName": "Sailboat Stamp",
+            "sellPrice": 4000,
+            "Type": "Skills Stamp",
+            "description": "",
+            "bonus": "+{% Sailing Speed",
+            "ID": 43,
+            "stampData": {
+                "effect": "SailSpd",
+                "function": "add",
+                "x1": 1,
+                "x2": 0,
+                "upgradeInterval": 5,
+                "material": {"item": "LavaA5"},
+                "startV": 1000,
+                "mCostExp": 5,
+                "startingCost": 500000000,
+                "cCostExp": 1.35,
+                "i10": 0,
+                "upgradeText": "{}% Sailing Speed",
+                "i12": 0
+            }
+        },
+        "FoodG10": {
+            "displayName": "Golden Hampter Gummy Candy",
+            "sellPrice": 100,
+            "Type": "Golden Food",
+            "description": "Claiming AFK gives Sailing AFK time [% chance.. Golden foods are never consumed.",
+            "goldenFoodData": {"effect": "Claiming AFK gives Sailing AFK time [% chance.", "amount": 30}
+        },
+        "EquipmentStatues22": {
+            "displayName": "Egg Statue",
+            "sellPrice": 10,
+            "Type": "Statue",
+            "description": "This statue somehow boosts the effectiveness of pets getting it on... ",
+            "bonus": "%Breeding Exp",
+            "statueData": {"name": "Egg", "effect": "%@Breeding Exp", "dk": 25, "bonus": 0.4}
+        }
+    },
+    "changes": {
+        "CardsF10": {"cardData": {"order": [23, 28]}},
+        "CardsF7": {"cardData": {"order": [18, 23]}},
+        "CardsF8": {"cardData": {"order": [11, 14]}},
+        "EquipmentKeychain24": {"displayName": ["BobGoldPickle", "BobGoldPickle Chain"]},
+        "CardsF17": {"cardData": {"order": [19, 24]}},
+        "CatchingNet3": {"lvReqToEquip": [9, 10]},
+        "EquipmentToolsHatchet8": {"lvReqToEquip": [65, 50]},
+        "CardsZ9": {"cardData": {"effect": ["+{% Shrine Effects", "+{% Shrine Effects (Passive)"]}},
+        "EquipmentSword5": {"displayName": ["Diabolical Flesh", "Diabolical Flesh Ripper"]},
+        "EquipmentToolsHatchet4": {"lvReqToEquip": [25, 20]},
+        "Dreadlo": {
+            "description": [
+                "Smelt down 1000 Ores into 1 Bar at the Forge. Smelting will take 100 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 1000 Ores into 1 Bar at the Forge. Smelting will take 50000 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "EquipmentKeychain26": {"displayName": ["Key to Desert", "Key to Desert Chain"]},
+        "CardsF19": {"cardData": {"order": [21, 26]}},
+        "Soul6": {
+            "displayName": ["Cryo Soul", "Oozie Soul"],
+            "description": [
+                "The soul moans ooOOOOooOOOoo, because it's the only key on his keyboard that works. ",
+                "He be oozin' and cruisin' and ain't worried 'bout nothin' "
+            ]
+        },
+        "TalentPoint5": {"displayName": ["Talent Point Tab 4", "Talent Point Tab 5"]},
+        "EquipmentToolsHatchet6": {"lvReqToEquip": [55, 40]},
+        "CardsZ16": {"cardData": {}, "dropChance": [0.02, 0.002]},
+        "CardsF22": {"cardData": {"order": [9, 12]}},
+        "EquipmentKeychain27": {"displayName": ["Key to Mountains", "Key to Mountains Chain"]},
+        "CatchingNet9": {"lvReqToEquip": [60, 50]},
+        "CardsF3": {"cardData": {"order": [22, 27]}},
+        "CardsF18": {"cardData": {"order": [20, 25]}},
+        "CardsF12": {"cardData": {"order": [6, 7]}},
+        "CardsF21": {"cardData": {"order": [8, 11]}},
+        "CardsF23": {"cardData": {"order": [10, 13]}},
+        "CardsD8": {"cardData": {"order": [3, 4]}},
+        "CardsF9": {"cardData": {"order": [12, 15]}},
+        "EquipmentKeychain23": {"displayName": ["Diamond Honker", "Diamond Honker Chain"]},
+        "EquipmentHats74": {"lvReqToEquip": [200, 180]},
+        "CardsF4": {"cardData": {"order": [15, 20]}},
+        "CardsF11": {"cardData": {"order": [24, 29]}},
+        "EquipmentToolsHatchet9": {"lvReqToEquip": [90, 65]},
+        "EquipmentToolsHatchet5": {"lvReqToEquip": [35, 25]},
+        "EquipmentToolsHatchet10": {"lvReqToEquip": [100, 80]},
+        "CatchingNet6": {"lvReqToEquip": [35, 25]},
+        "CatchingNet7": {"lvReqToEquip": [45, 30]},
+        "CatchingNet4": {"lvReqToEquip": [17, 15]},
+        "CardsF2": {"cardData": {"order": [4, 5]}},
+        "CatchingNet8": {"lvReqToEquip": [55, 40]},
+        "CardsF20": {"cardData": {"order": [7, 10]}},
+        "StampC16": {
+            "stampData": {
+                "material": [{"item": "Copper"}, {"item": "LavaA1b"}],
+                "startV": [25, 2],
+                "mCostExp": [6, 3],
+                "startingCost": [50, 300000000],
+                "cCostExp": [1.3, 1.4]
+            }
+        },
+        "SnowC5": {
+            "description": [
+                "Wait a minute, these are just regular bones pained red! Wait another minute, no, that's actual blood... ew. ",
+                "Wait a minute, these are just regular bones painted red! Wait another minute, no, that's actual blood... ew. "
+            ]
+        },
+        "EquipmentToolsHatchet7": {"lvReqToEquip": [45, 30]},
+        "CardsF6": {"cardData": {"order": [17, 22]}},
+        "CardsF14": {"cardData": {"order": [13, 16]}},
+        "EquipmentKeychain28": {"displayName": ["Key to Purgatory", "Key to Purgatory Chain"]},
+        "CardsF5": {"cardData": {"order": [16, 21]}},
+        "CardsF15": {"cardData": {"order": [14, 17]}},
+        "CardsF13": {"cardData": {"order": [5, 6]}},
+        "CatchingNet5": {"lvReqToEquip": [25, 20]}
+    }
+}

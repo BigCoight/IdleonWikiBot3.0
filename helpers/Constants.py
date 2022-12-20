@@ -42,3 +42,7 @@ class Constants:
 	postNames = ["Simple Shippin", "Plan-it Express", "Dudes Next Door", "Down Undelivery", "Alpine Suppliers",
 	             "Cosmic Carrier"]
 	stampTypes = ["Combat Stamp", "Skills Stamp", "Misc Stamp"]
+
+	sailingIslands = ["Safari Island", "Beachy Coast", "Isolated Woods", "Rocky Peaks", "Stormy North",
+	                  "Toxic Bay Inc", "Candied Island", "Fungi Meadows", "Cloudy Quay", "Dungeon Cove",
+	                  "Crystal Enclave", "Petulent Garage", "Isle of Note", "The Edge"]

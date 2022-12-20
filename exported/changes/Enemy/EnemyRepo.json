@@ -1,1 +1,672 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "w5b2": {
+            "details": {
+                "Name": "Purgatory Stalker",
+                "RespawnTime": 43,
+                "MonsterHPTotal": 300000000,
+                "SpecialType": "",
+                "ExpGiven": 400000,
+                "ExpType": 0,
+                "Defence": 17000,
+                "MoveSPEED": 3,
+                "Damages": [30000, 1],
+                "DefFor0": 27591.3
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 17000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaB2", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+                {"item": "CardsH7", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes5", "quantity": 3, "chance": 2e-07, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5b2",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaB2", "name": "Mount Doomish", "id": 207},
+                "portalRequirements": [500000]
+            }
+        },
+        "Boss5A": {
+            "details": {
+                "Name": "Kattlecruk",
+                "RespawnTime": 86400,
+                "MonsterHPTotal": 1500000000,
+                "SpecialType": "a",
+                "ExpGiven": 12000,
+                "ExpType": 0,
+                "Defence": 600,
+                "MoveSPEED": 3,
+                "Damages": [1000, 1],
+                "DefFor0": 1223.26
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 1000000, "chance": 1, "questLink": "N/A"},
+                {"item": "CardsZ18", "quantity": 1, "chance": 0.004, "questLink": "N/A"},
+                {"item": "DropTable25", "quantity": 2, "chance": 1, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 2, "chance": 1, "questLink": "N/A"},
+                {"item": "DropTable27", "quantity": 2, "chance": 1, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "w5a3": {
+            "details": {
+                "Name": "Mister Brightside",
+                "RespawnTime": 43,
+                "MonsterHPTotal": 60000000,
+                "SpecialType": "",
+                "ExpGiven": 91000,
+                "ExpType": 0,
+                "Defence": 12000,
+                "MoveSPEED": 4,
+                "Damages": [14000, 1],
+                "DefFor0": 14295.2
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 8500, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaA3", "quantity": 1, "chance": 0.15, "questLink": "N/A"},
+                {"item": "CardsH3", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes5", "quantity": 21, "chance": 4e-06, "questLink": "N/A"},
+                {"item": "DropTable25", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5a3",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaA3", "name": "The Killer Roundabout", "id": 203},
+                "portalRequirements": [50000]
+            }
+        },
+        "w5a2": {
+            "details": {
+                "Name": "Maccie",
+                "RespawnTime": 43,
+                "MonsterHPTotal": 35000000,
+                "SpecialType": "",
+                "ExpGiven": 54000,
+                "ExpType": 0,
+                "Defence": 12000,
+                "MoveSPEED": 4,
+                "Damages": [14000, 1],
+                "DefFor0": 14295.2
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 7000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaA2", "quantity": 1, "chance": 0.15, "questLink": "N/A"},
+                {"item": "CardsH2", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes5", "quantity": 20, "chance": 1e-05, "questLink": "N/A"},
+                {"item": "StampC16", "quantity": 1, "chance": 3e-06, "questLink": "N/A"},
+                {"item": "DropTable25", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5a2",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaA2", "name": "Niagrilled Falls", "id": 202},
+                "portalRequirements": [30000]
+            }
+        },
+        "Bug9": {
+            "details": {
+                "Name": "Scarab",
+                "RespawnTime": 0,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 550,
+                "ExpType": 6,
+                "Defence": 500000,
+                "MoveSPEED": 0,
+                "Damages": [6, 1],
+                "DefFor0": 2.67
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "CardsF26", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "DropTable25", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "Boss5B": {
+            "details": {
+                "Name": "Septic Kattlecruk",
+                "RespawnTime": 86400,
+                "MonsterHPTotal": 4e+10,
+                "SpecialType": "a",
+                "ExpGiven": 12000,
+                "ExpType": 0,
+                "Defence": 600,
+                "MoveSPEED": 3,
+                "Damages": [1000, 1],
+                "DefFor0": 1223.26
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 5000000, "chance": 1, "questLink": "N/A"},
+                {"item": "CardsZ19", "quantity": 1, "chance": 0.002, "questLink": "N/A"},
+                {"item": "DropTable25", "quantity": 2, "chance": 1, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 2, "chance": 1, "questLink": "N/A"},
+                {"item": "DropTable27", "quantity": 2, "chance": 1, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "BugNest10": {
+            "details": {
+                "Name": "Mote Hovel",
+                "RespawnTime": 86400,
+                "MonsterHPTotal": 999999999,
+                "SpecialType": "",
+                "ExpGiven": 2,
+                "ExpType": 6,
+                "Defence": 1,
+                "MoveSPEED": 0,
+                "Damages": [6, 1],
+                "DefFor0": 2.67
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "w5c1": {
+            "details": {
+                "Name": "Crawler",
+                "RespawnTime": 42,
+                "MonsterHPTotal": 1200000000,
+                "SpecialType": "",
+                "ExpGiven": 1150000,
+                "ExpType": 0,
+                "Defence": 45000,
+                "MoveSPEED": 4,
+                "Damages": [2100, 1],
+                "DefFor0": 2541.34
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 36000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaC1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+                {"item": "CardsH12", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "DropTable27", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5c1",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaC1", "name": "Crawly Catacombs", "id": 212},
+                "portalRequirements": [10000000]
+            }
+        },
+        "w5a5": {
+            "details": {
+                "Name": "Stiltmole",
+                "RespawnTime": 45,
+                "MonsterHPTotal": 130000000,
+                "SpecialType": "",
+                "ExpGiven": 185000,
+                "ExpType": 0,
+                "Defence": 17000,
+                "MoveSPEED": 3,
+                "Damages": [23000, 1],
+                "DefFor0": 21974.5
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 12500, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaA5", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
+                {"item": "LavaA5b", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes5", "quantity": 1, "chance": 6e-07, "questLink": "N/A"},
+                {"item": "CardsH5", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "DropTable25", "quantity": 1, "chance": 0.0037, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5a5",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaA5", "name": "The Great Molehill", "id": 205},
+                "portalRequirements": [125000]
+            }
+        },
+        "w5b1": {
+            "details": {
+                "Name": "Molti",
+                "RespawnTime": 43,
+                "MonsterHPTotal": 200000000,
+                "SpecialType": "",
+                "ExpGiven": 275000,
+                "ExpType": 0,
+                "Defence": 17000,
+                "MoveSPEED": 3,
+                "Damages": [23000, 1],
+                "DefFor0": 21974.5
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 15000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaB1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+                {"item": "CardsH6", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes5", "quantity": 2, "chance": 4e-07, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5b1",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaB1", "name": "Erruption River", "id": 206},
+                "portalRequirements": [300000]
+            }
+        },
+        "Boss5C": {
+            "details": {
+                "Name": "Undying Troll",
+                "RespawnTime": 86400,
+                "MonsterHPTotal": 2.5e+11,
+                "SpecialType": "a",
+                "ExpGiven": 12000,
+                "ExpType": 0,
+                "Defence": 600,
+                "MoveSPEED": 3,
+                "Damages": [1000, 1],
+                "DefFor0": 1223.26
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 20000000, "chance": 1, "questLink": "N/A"},
+                {"item": "CardsZ20", "quantity": 1, "chance": 0.003, "questLink": "N/A"},
+                {"item": "DropTable25", "quantity": 2, "chance": 1, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 2, "chance": 1, "questLink": "N/A"},
+                {"item": "DropTable27", "quantity": 2, "chance": 1, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "w5a4": {
+            "details": {
+                "Name": "Cheese Nub",
+                "RespawnTime": 43,
+                "MonsterHPTotal": 90000000,
+                "SpecialType": "",
+                "ExpGiven": 135000,
+                "ExpType": 0,
+                "Defence": 17000,
+                "MoveSPEED": 5,
+                "Damages": [14000, 1],
+                "DefFor0": 14295.2
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 10000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaA4", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
+                {"item": "CardsH4", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes5", "quantity": 0, "chance": 1e-06, "questLink": "N/A"},
+                {"item": "DropTable25", "quantity": 1, "chance": 0.0034, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5a4",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaA4", "name": "Cracker Jack Lake", "id": 204},
+                "portalRequirements": [75000]
+            }
+        },
+        "w5c2": {
+            "details": {
+                "Name": "Tremor Wurm",
+                "RespawnTime": 47,
+                "MonsterHPTotal": 1500000000,
+                "SpecialType": "",
+                "ExpGiven": 1250000,
+                "ExpType": 0,
+                "Defence": 50000,
+                "MoveSPEED": 2,
+                "Damages": [2100, 1],
+                "DefFor0": 2541.34
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 50000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaC2", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+                {"item": "CardsH13", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "StampA37", "quantity": 1, "chance": 1e-06, "questLink": "N/A"},
+                {"item": "DropTable27", "quantity": 1, "chance": 0.0035, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5c2",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaC2", "name": "The Worm Nest", "id": 213},
+                "portalRequirements": [60000]
+            }
+        },
+        "w5a1": {
+            "details": {
+                "Name": "Suggma",
+                "RespawnTime": 43,
+                "MonsterHPTotal": 25000000,
+                "SpecialType": "",
+                "ExpGiven": 40000,
+                "ExpType": 0,
+                "Defence": 12000,
+                "MoveSPEED": 3,
+                "Damages": [10000, 1],
+                "DefFor0": 10638.1
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 6000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaA1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+                {"item": "LavaA1b", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes5", "quantity": 4, "chance": 2e-08, "questLink": "N/A"},
+                {"item": "CardsH1", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "DropTable25", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5a1",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaA1", "name": "Naut Sake Perimeter", "id": 201},
+                "portalRequirements": [25000]
+            }
+        },
+        "Tree9": {
+            "details": {
+                "Name": "Maple Tree",
+                "RespawnTime": 0,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 2500,
+                "ExpType": 3,
+                "Defence": 600000,
+                "MoveSPEED": 0,
+                "Damages": [0, 1],
+                "DefFor0": 0.22
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "CardsF24", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
+                {"item": "DropTable22", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "Tree10": {
+            "details": {
+                "Name": "Dandelioli Tree",
+                "RespawnTime": 0,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 6600,
+                "ExpType": 3,
+                "Defence": 2500000,
+                "MoveSPEED": 0,
+                "Damages": [0, 1],
+                "DefFor0": 0.22
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "CardsF25", "quantity": 1, "chance": 5e-06, "questLink": "N/A"},
+                {"item": "DropTable22", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "BugNest9": {
+            "details": {
+                "Name": "Scarab Nest",
+                "RespawnTime": 86400,
+                "MonsterHPTotal": 999999999,
+                "SpecialType": "",
+                "ExpGiven": 2,
+                "ExpType": 6,
+                "Defence": 1,
+                "MoveSPEED": 0,
+                "Damages": [6, 1],
+                "DefFor0": 2.67
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "w5b6": {
+            "details": {
+                "Name": "Biggole Mole",
+                "RespawnTime": 45,
+                "MonsterHPTotal": 900000000,
+                "SpecialType": "",
+                "ExpGiven": 1000000,
+                "ExpType": 0,
+                "Defence": 36000,
+                "MoveSPEED": 3,
+                "Damages": [60000, 1],
+                "DefFor0": 49629.3
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 29000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaB6", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+                {"item": "CardsH11", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes5", "quantity": 22, "chance": 5e-07, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 1, "chance": 0.0035, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5b6",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaB6", "name": "Miner Mole Outskirts", "id": 211},
+                "portalRequirements": [6000000]
+            }
+        },
+        "w5b5": {
+            "details": {
+                "Name": "Fire Spirit",
+                "RespawnTime": 43,
+                "MonsterHPTotal": 720000000,
+                "SpecialType": "",
+                "ExpGiven": 900000,
+                "ExpType": 0,
+                "Defence": 26000,
+                "MoveSPEED": 4,
+                "Damages": [40000, 1],
+                "DefFor0": 35242.3
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 25000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaB5", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+                {"item": "CardsH10", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes5", "quantity": 7, "chance": 1e-06, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 1, "chance": 0.0033, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5b5",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaB5", "name": "Spitfire River", "id": 210},
+                "portalRequirements": [3000000]
+            }
+        },
+        "Bug10": {
+            "details": {
+                "Name": "Dust Mote",
+                "RespawnTime": 0,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 1750,
+                "ExpType": 6,
+                "Defence": 2000000,
+                "MoveSPEED": 0,
+                "Damages": [6, 1],
+                "DefFor0": 2.67
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "CardsF27", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "w5b3": {
+            "details": {
+                "Name": "Citringe",
+                "RespawnTime": 45,
+                "MonsterHPTotal": 420000000,
+                "SpecialType": "",
+                "ExpGiven": 550000,
+                "ExpType": 0,
+                "Defence": 26000,
+                "MoveSPEED": 3,
+                "Damages": [30000, 1],
+                "DefFor0": 27591.3
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 19000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaB3", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+                {"item": "LavaB3b", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "CardsH8", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes5", "quantity": 5, "chance": 1e-06, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 1, "chance": 0.0029, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5b3",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaB3", "name": "OJ Bay", "id": 208},
+                "portalRequirements": [1000000]
+            }
+        },
+        "w5b4": {
+            "details": {
+                "Name": "Lampar",
+                "RespawnTime": 43,
+                "MonsterHPTotal": 600000000,
+                "SpecialType": "",
+                "ExpGiven": 780000,
+                "ExpType": 0,
+                "Defence": 26000,
+                "MoveSPEED": 3,
+                "Damages": [40000, 1],
+                "DefFor0": 35242.3
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 22000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "LavaB4", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+                {"item": "CardsH9", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes5", "quantity": 6, "chance": 1e-06, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w5b4",
+                "world": "Smolderin' Plateau",
+                "map": {"intName": "wLavaB4", "name": "Lampar Lake", "id": 209},
+                "portalRequirements": [2000000]
+            }
+        },
+        "Divinity": {
+            "details": {
+                "Name": "Divinity",
+                "RespawnTime": 180,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 25,
+                "ExpType": 12,
+                "Defence": 100,
+                "MoveSPEED": 0,
+                "Damages": [0, 1],
+                "DefFor0": 0.22
+            },
+            "drops": null,
+            "mapData": null
+        },
+        "Crystal4": {
+            "details": {
+                "Name": "Crystal Capybara",
+                "RespawnTime": 252000,
+                "MonsterHPTotal": 1000000,
+                "SpecialType": "",
+                "ExpGiven": 210,
+                "ExpType": 0,
+                "Defence": 180,
+                "MoveSPEED": 5,
+                "Damages": [1, 1],
+                "DefFor0": 0
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 1, "chance": 0.5, "questLink": "N/A"},
+                {"item": "CardsH14", "quantity": 1, "chance": 0.008, "questLink": "N/A"},
+                {"item": "StampC3", "quantity": 1, "chance": 0.1, "questLink": "Papua_Piggea2"},
+                {"item": "DropTable25", "quantity": 1, "chance": 0.3, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 1, "chance": 0.2, "questLink": "N/A"},
+                {"item": "DropTable27", "quantity": 1, "chance": 0.17, "questLink": "N/A"}
+            ],
+            "mapData": null
+        }
+    },
+    "changes": {
+        "w4b4": {
+            "details": {"MonsterHPTotal": [4500000, 4000000]},
+            "mapData": {"portalRequirements": {"0": [500000, 120000]}}
+        },
+        "demonP": {
+            "details": {"MonsterHPTotal": [1250000, 1000000]},
+            "mapData": {"portalRequirements": {"0": [70000, 25000]}}
+        },
+        "Lustre": {"details": {"Defence": [2000000, 250000]}},
+        "w4b5": {
+            "details": {"MonsterHPTotal": [6500000, 6000000]},
+            "mapData": {"portalRequirements": {"0": [700000, 150000]}}
+        },
+        "AlienTree": {"details": {"Defence": [100000, 70000]}},
+        "Gold": {"details": {"Defence": [1250, 1000]}},
+        "Boss3C": {
+            "drops": {
+                "1": [
+                    {"item": "CardsZ16", "quantity": 1, "chance": 0.02, "questLink": "N/A"},
+                    {"item": "CardsZ16", "quantity": 1, "chance": 0.002, "questLink": "N/A"}
+                ]
+            }
+        },
+        "Copper": {"details": {"Defence": [30, 25]}},
+        "w4b1": {
+            "details": {"MonsterHPTotal": [2500000, 2000000]},
+            "mapData": {"portalRequirements": {"0": [150000, 60000]}}
+        },
+        "Iron": {"details": {"Defence": [180, 140]}},
+        "Bug4": {"details": {"Defence": [7000, 6000]}},
+        "Bug6": {"details": {"Defence": [40000, 35000]}},
+        "Starfire": {"details": {"Defence": [5000000, 1000000]}},
+        "w4a2": {
+            "details": {"MonsterHPTotal": [700000, 650000]},
+            "mapData": {"portalRequirements": {"0": [30000, 12000]}}
+        },
+        "SoulCard5": {"drops": {"5": [" ", {"item": "Soul5", "quantity": 1, "chance": 1, "questLink": "N/A"}]}},
+        "mushP": {
+            "details": {"MonsterHPTotal": [520000, 500000]},
+            "mapData": {"portalRequirements": {"0": [20000, 5000]}}
+        },
+        "Godshard": {"details": {"Defence": [100000000, 20000000]}},
+        "Bug3": {"details": {"Defence": [2500, 2000]}},
+        "w4c2": {
+            "details": {"MonsterHPTotal": [12000000, 11000000]},
+            "mapData": {"portalRequirements": {"0": [2000000, 250000]}}
+        },
+        "w4c3": {
+            "details": {"MonsterHPTotal": [16000000, 15000000]},
+            "mapData": {"portalRequirements": {"0": [3000000, 300000]}}
+        },
+        "Dementia": {"details": {"Defence": [150000, 40000]}},
+        "Bug1": {"details": {"Defence": [50, 40]}},
+        "w4b2": {
+            "details": {"MonsterHPTotal": [2000000, 1500000]},
+            "mapData": {"portalRequirements": {"0": [100000, 40000]}}
+        },
+        "w4b3": {
+            "details": {"MonsterHPTotal": [3300000, 3000000]},
+            "mapData": {"portalRequirements": {"0": [250000, 90000]}}
+        },
+        "Tree8": {"details": {"Defence": [250000, 150000]}},
+        "w4c1": {
+            "details": {"MonsterHPTotal": [9000000, 8000000]},
+            "mapData": {"portalRequirements": {"0": [1000000, 190000]}}
+        },
+        "Tree7": {"details": {"Defence": [50000, 30000]}},
+        "SaharanFoal": {"details": {"Defence": [20000, 16000]}},
+        "Void": {"details": {"Defence": [600000, 100000]}},
+        "Dreadlo": {
+            "details": {"Defence": [25000000, 5000000]},
+            "drops": {
+                "2": [" ", {"item": "DropTable4", "quantity": 2, "chance": 0.013, "questLink": "N/A"}],
+                "1": [" ", {"item": "CardsF29", "quantity": 1, "chance": 3e-05, "questLink": "N/A"}]
+            }
+        },
+        "Bug2": {"details": {"Defence": [600, 400]}},
+        "Bug5": {"details": {"Defence": [18000, 15000]}},
+        "SoulCard4": {"drops": {"5": [" ", {"item": "Soul4", "quantity": 1, "chance": 1, "questLink": "N/A"}]}},
+        "SoulCard6": {
+            "details": {"Name": ["Bandit Bob", "Oozie Soul"]},
+            "drops": {"5": [" ", {"item": "Soul6", "quantity": 1, "chance": 1, "questLink": "N/A"}]}
+        },
+        "w4a3": {
+            "details": {"MonsterHPTotal": [925000, 850000]},
+            "mapData": {"portalRequirements": {"0": [50000, 18000]}}
+        },
+        "Plat": {"details": {"Defence": [16000, 7500]}},
+        "w4c4": {"mapData": {"portalRequirements": {"0": [4000000, 350000]}}}
+    }
+}

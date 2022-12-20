@@ -39,48 +39,51 @@ class NpcRepo(Repository[Npc]):
 
 	@classmethod
 	def getSections(cls) -> List[str]:
-		return ["Quests"]
+		return ["Quests", "Quests2"]
 
 	@classmethod
 	def generateRepo(cls) -> None:
 		reNpcs = r'..\.addDialogueFor\("([a-zA-Z0-9_]*)", [^\s"]*\)'
 		reQuest = r"\.addLine_([a-zA-Z]*)\({"
 		reQData = r" ?,?([a-zA-Z]*): "
-		questText = formatStr(cls.getSection(), ["\n"])
-		questData = re.split(reNpcs, questText)
 
-		for i in range(1, len(questData), 2):
-			if quests := re.split(reQuest, questData[i + 1]):
-				npcName = replaceUnderscores(questData[i])
-				npcName = Constants.nameConflicts.get(npcName, npcName)
-				currentNpc = Npc(
-					head = NpcHeadRepo.getHead(npcName),
-					dialogue = [],
-					quests = {}
-				)
-				for j in range(1, len(quests), 2):
-					temp = {"Type": quests[j]}
-					if data := re.split(reQData, quests[j + 1]):
-						for k in range(1, len(data), 2):
-							atr = formatStr(data[k])
-							val = formatStr(data[k + 1], ['"', ",})", " })", ";"]).replace("@", "<br>")
-							val = strToArray(val) if "[" in val else formatStr(val, [","], replaceUnderscores = True)
-							temp[atr] = val
-					if qName := QuestNameRepo.get(f"{npcName}{j // 2}"):
-						temp["Difficulty"] = qName.difficulty
-						temp["Name"] = qName.name
-						if quests[j] != "None":
-							cls.questToName[temp["QuestName"]] = qName.name
-							temp["note"] = NpcNoteRepo.getNote(npcName, qName.name)
-					cls.formatRewards(temp)
-					if quests[j] == "Custom":
-						cls.addCustomQuest(currentNpc, temp)
-					elif quests[j] == "ItemsAndSpaceRequired":
-						cls.addItemQuest(currentNpc, temp)
+		for n in range(len(cls.getSections())):
+			questText = formatStr(cls.getSection(n), ["\n"])
+			questData = re.split(reNpcs, questText)
 
-					currentNpc.dialogue.append(DialogueLine.parse_obj(temp))
+			for i in range(1, len(questData), 2):
+				if quests := re.split(reQuest, questData[i + 1]):
+					npcName = replaceUnderscores(questData[i])
+					npcName = Constants.nameConflicts.get(npcName, npcName)
+					currentNpc = Npc(
+						head = NpcHeadRepo.getHead(npcName),
+						dialogue = [],
+						quests = {}
+					)
+					for j in range(1, len(quests), 2):
+						temp = {"Type": quests[j]}
+						if data := re.split(reQData, quests[j + 1]):
+							for k in range(1, len(data), 2):
+								atr = formatStr(data[k])
+								val = formatStr(data[k + 1], ['"', ",})", " })", ";"]).replace("@", "<br>")
+								val = strToArray(val) if "[" in val else formatStr(val, [","],
+								                                                   replaceUnderscores = True)
+								temp[atr] = val
+						if qName := QuestNameRepo.get(f"{npcName}{j // 2}"):
+							temp["Difficulty"] = qName.difficulty
+							temp["Name"] = qName.name
+							if quests[j] != "None":
+								cls.questToName[temp["QuestName"]] = qName.name
+								temp["note"] = NpcNoteRepo.getNote(npcName, qName.name)
+						cls.formatRewards(temp)
+						if quests[j] == "Custom":
+							cls.addCustomQuest(currentNpc, temp)
+						elif quests[j] == "ItemsAndSpaceRequired":
+							cls.addItemQuest(currentNpc, temp)
 
-				cls.add(npcName, currentNpc)
+						currentNpc.dialogue.append(DialogueLine.parse_obj(temp))
+
+					cls.add(npcName, currentNpc)
 
 	@classmethod
 	def addItemQuest(cls, currentNpc, temp):

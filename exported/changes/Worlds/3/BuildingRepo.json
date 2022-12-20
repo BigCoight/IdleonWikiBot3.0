@@ -1,1 +1,33 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "Atom Collider": {
+            "name": "Atom Collider",
+            "description": "Accelerate enough material to high speeds, and you can create the first physical atoms in this pixellated world! ",
+            "bonus": " +{% chance for an extra atom upon collision",
+            "lvlUpReq": [{"item": "Refinery6", "quantity": 10}, {"item": "FillerMaterial", "quantity": 100}],
+            "maxLvl": 200,
+            "costInc": 1.2,
+            "bonusInc": [10, 5],
+            "misc": 0
+        }
+    },
+    "changes": {
+        "Voidinator": {
+            "description": [
+                "Teleports monsters back to the start, and sets them all to a certain amount of HP. ",
+                "Casts a wave of null and void, removing enemy colours. "
+            ],
+            "bonus": [
+                " +{% Recharge Speed @ +}% Lower Upgrade Costs in Worship",
+                " +{% Range @ +}% Lower Upgrade Costs in Worship"
+            ],
+            "lvlUpReq": {
+                "0": [{"item": "Refinery6", "quantity": 10000}, {"item": "Refinery6", "quantity": 20}],
+                "1": [" ", {"item": "LavaA1", "quantity": 5000}]
+            },
+            "maxLvl": [50, 100],
+            "costInc": [1.19, 1.4],
+            "bonusInc": {"0": [15, 0.7], "1": [1.6, 0.8]}
+        }
+    }
+}

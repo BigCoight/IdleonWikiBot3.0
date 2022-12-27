@@ -8590,14 +8590,14 @@
         "intID": "EquipmentToolsHatchet8",
         "recipe": [
             {"item": "EquipmentToolsHatchet6", "quantity": 1},
-            {"item": "Tree7", "quantity": 100000},
+            {"item": "Tree8", "quantity": 100000},
             {"item": "GalaxyC1b", "quantity": 40}
         ],
         "levelReqToCraft": 60,
         "expGiven": 1000000,
         "no": 39,
         "tab": 4,
-        "sellPrice": 13196450,
+        "sellPrice": 17196450,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
@@ -8619,14 +8619,15 @@
                 {"indent": 2, "item": "PureWater2", "quantity": 5},
                 {"indent": 1, "item": "AlienTree", "quantity": 110000},
                 {"indent": 1, "item": "Refinery4", "quantity": 600},
-                {"indent": 0, "item": "Tree7", "quantity": 100000},
+                {"indent": 0, "item": "Tree8", "quantity": 100000},
                 {"indent": 0, "item": "GalaxyC1b", "quantity": 40}
             ],
             "detRecipeTotals": [
-                {"item": "Tree7", "quantity": 150000},
+                {"item": "Tree8", "quantity": 100000},
                 {"item": "GalaxyC1b", "quantity": 40},
                 {"item": "AlienTree", "quantity": 110000},
                 {"item": "Refinery4", "quantity": 600},
+                {"item": "Tree7", "quantity": 50000},
                 {"item": "PureWater2", "quantity": 5},
                 {"item": "SaharanFoal", "quantity": 15000},
                 {"item": "Refinery1", "quantity": 50},
@@ -8742,7 +8743,7 @@
     "CatchingNet9": {
         "intID": "CatchingNet9",
         "recipe": [
-            {"item": "Bug7", "quantity": 100000},
+            {"item": "Bug8", "quantity": 100000},
             {"item": "GalaxyC1b", "quantity": 80},
             {"item": "CatchingNet8", "quantity": 1}
         ],
@@ -8750,11 +8751,11 @@
         "expGiven": 1000000,
         "no": 43,
         "tab": 4,
-        "sellPrice": 19156050,
+        "sellPrice": 24156050,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "Bug7", "quantity": 100000},
+                {"indent": 0, "item": "Bug8", "quantity": 100000},
                 {"indent": 0, "item": "GalaxyC1b", "quantity": 80},
                 {"indent": 0, "item": "CatchingNet8", "quantity": 1},
                 {"indent": 1, "item": "Bug7", "quantity": 130000},
@@ -8777,8 +8778,9 @@
                 {"indent": 1, "item": "Refinery4", "quantity": 750}
             ],
             "detRecipeTotals": [
-                {"item": "Bug7", "quantity": 230000},
+                {"item": "Bug8", "quantity": 100000},
                 {"item": "GalaxyC1b", "quantity": 80},
+                {"item": "Bug7", "quantity": 130000},
                 {"item": "Refinery4", "quantity": 750},
                 {"item": "Bug6", "quantity": 50000},
                 {"item": "PureWater2", "quantity": 5},
@@ -9370,7 +9372,7 @@
     "EquipmentPunching8": {
         "intID": "EquipmentPunching8",
         "recipe": [
-            {"item": "EquipmentPunching5", "quantity": 1},
+            {"item": "EquipmentPunching7", "quantity": 1},
             {"item": "FoodG10", "quantity": 1000},
             {"item": "LavaA5b", "quantity": 500}
         ],
@@ -9378,24 +9380,34 @@
         "expGiven": 1000000,
         "no": 5,
         "tab": 5,
-        "sellPrice": 250417500,
+        "sellPrice": 251217500,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "EquipmentPunching5", "quantity": 1},
-                {"indent": 1, "item": "SnowA2a", "quantity": 100},
-                {"indent": 1, "item": "Critter5A", "quantity": 50},
-                {"indent": 1, "item": "Quest36", "quantity": 10},
-                {"indent": 2, "item": "Quest37", "quantity": 10},
-                {"indent": 2, "item": "GoldBar", "quantity": 800},
-                {"indent": 2, "item": "DesertC2b", "quantity": 10},
-                {"indent": 1, "item": "PureWater2", "quantity": 15},
+                {"indent": 0, "item": "EquipmentPunching7", "quantity": 1},
+                {"indent": 1, "item": "EquipmentPunching6", "quantity": 1},
+                {"indent": 2, "item": "EquipmentPunching5", "quantity": 1},
+                {"indent": 3, "item": "SnowA2a", "quantity": 100},
+                {"indent": 3, "item": "Critter5A", "quantity": 50},
+                {"indent": 3, "item": "Quest36", "quantity": 10},
+                {"indent": 4, "item": "Quest37", "quantity": 10},
+                {"indent": 4, "item": "GoldBar", "quantity": 800},
+                {"indent": 4, "item": "DesertC2b", "quantity": 10},
+                {"indent": 3, "item": "PureWater2", "quantity": 15},
+                {"indent": 2, "item": "CraftMat12", "quantity": 50000},
+                {"indent": 2, "item": "Refinery4", "quantity": 2000},
+                {"indent": 1, "item": "StarfireBar", "quantity": 50000},
+                {"indent": 1, "item": "Refinery6", "quantity": 5000},
                 {"indent": 0, "item": "FoodG10", "quantity": 1000},
                 {"indent": 0, "item": "LavaA5b", "quantity": 500}
             ],
             "detRecipeTotals": [
                 {"item": "FoodG10", "quantity": 1000},
                 {"item": "LavaA5b", "quantity": 500},
+                {"item": "StarfireBar", "quantity": 50000},
+                {"item": "Refinery6", "quantity": 5000},
+                {"item": "CraftMat12", "quantity": 50000},
+                {"item": "Refinery4", "quantity": 2000},
                 {"item": "SnowA2a", "quantity": 100},
                 {"item": "Critter5A", "quantity": 50},
                 {"item": "PureWater2", "quantity": 15},
@@ -9675,7 +9687,7 @@
         "expGiven": 1000000,
         "no": 11,
         "tab": 5,
-        "sellPrice": 19246450,
+        "sellPrice": 23246450,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
@@ -9698,15 +9710,16 @@
                 {"indent": 3, "item": "PureWater2", "quantity": 5},
                 {"indent": 2, "item": "AlienTree", "quantity": 110000},
                 {"indent": 2, "item": "Refinery4", "quantity": 600},
-                {"indent": 1, "item": "Tree7", "quantity": 100000},
+                {"indent": 1, "item": "Tree8", "quantity": 100000},
                 {"indent": 1, "item": "GalaxyC1b", "quantity": 40},
                 {"indent": 0, "item": "AlienTree", "quantity": 110000}
             ],
             "detRecipeTotals": [
                 {"item": "AlienTree", "quantity": 220000},
-                {"item": "Tree7", "quantity": 150000},
+                {"item": "Tree8", "quantity": 100000},
                 {"item": "GalaxyC1b", "quantity": 40},
                 {"item": "Refinery4", "quantity": 600},
+                {"item": "Tree7", "quantity": 50000},
                 {"item": "PureWater2", "quantity": 5},
                 {"item": "SaharanFoal", "quantity": 15000},
                 {"item": "Refinery1", "quantity": 50},
@@ -9814,12 +9827,12 @@
         "expGiven": 1000000,
         "no": 15,
         "tab": 5,
-        "sellPrice": 69156050,
+        "sellPrice": 74156050,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "CatchingNet9", "quantity": 1},
-                {"indent": 1, "item": "Bug7", "quantity": 100000},
+                {"indent": 1, "item": "Bug8", "quantity": 100000},
                 {"indent": 1, "item": "GalaxyC1b", "quantity": 80},
                 {"indent": 1, "item": "CatchingNet8", "quantity": 1},
                 {"indent": 2, "item": "Bug7", "quantity": 130000},
@@ -9844,8 +9857,9 @@
             ],
             "detRecipeTotals": [
                 {"item": "Bug9", "quantity": 250000},
-                {"item": "Bug7", "quantity": 230000},
+                {"item": "Bug8", "quantity": 100000},
                 {"item": "GalaxyC1b", "quantity": 80},
+                {"item": "Bug7", "quantity": 130000},
                 {"item": "Refinery4", "quantity": 750},
                 {"item": "Bug6", "quantity": 50000},
                 {"item": "PureWater2", "quantity": 5},

@@ -1973,7 +1973,7 @@
             "recipeFrom": [],
             "questAss": []
         },
-        "notes": " ",
+        "notes": "}}",
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
@@ -2307,7 +2307,7 @@
             "recipeFrom": [],
             "questAss": []
         },
-        "notes": " ",
+        "notes": null,
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
@@ -4805,7 +4805,7 @@
             "Skill_Power": 0
         },
         "sources": null,
-        "notes": null,
+        "notes": "This helmet was only available for a limited time because of a sponsored video with a YouTuber that goes by the name  'Real Civil Engineer' hence the name.",
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
@@ -6089,7 +6089,7 @@
         "recipe": {
             "intID": "EquipmentPunching8",
             "recipe": [
-                {"item": "EquipmentPunching5", "quantity": 1},
+                {"item": "EquipmentPunching7", "quantity": 1},
                 {"item": "FoodG10", "quantity": 1000},
                 {"item": "LavaA5b", "quantity": 500}
             ],
@@ -6097,26 +6097,36 @@
             "expGiven": 1000000,
             "no": 5,
             "tab": 5,
-            "sellPrice": 250417500,
+            "sellPrice": 251217500,
             "recipeFrom": [
                 {"wikiName": "[[Suggma]]", "txtName": "Suggma"}
             ],
             "detailedRecipe": {
                 "detRecipe": [
-                    {"indent": 0, "item": "EquipmentPunching5", "quantity": 1},
-                    {"indent": 1, "item": "SnowA2a", "quantity": 100},
-                    {"indent": 1, "item": "Critter5A", "quantity": 50},
-                    {"indent": 1, "item": "Quest36", "quantity": 10},
-                    {"indent": 2, "item": "Quest37", "quantity": 10},
-                    {"indent": 2, "item": "GoldBar", "quantity": 800},
-                    {"indent": 2, "item": "DesertC2b", "quantity": 10},
-                    {"indent": 1, "item": "PureWater2", "quantity": 15},
+                    {"indent": 0, "item": "EquipmentPunching7", "quantity": 1},
+                    {"indent": 1, "item": "EquipmentPunching6", "quantity": 1},
+                    {"indent": 2, "item": "EquipmentPunching5", "quantity": 1},
+                    {"indent": 3, "item": "SnowA2a", "quantity": 100},
+                    {"indent": 3, "item": "Critter5A", "quantity": 50},
+                    {"indent": 3, "item": "Quest36", "quantity": 10},
+                    {"indent": 4, "item": "Quest37", "quantity": 10},
+                    {"indent": 4, "item": "GoldBar", "quantity": 800},
+                    {"indent": 4, "item": "DesertC2b", "quantity": 10},
+                    {"indent": 3, "item": "PureWater2", "quantity": 15},
+                    {"indent": 2, "item": "CraftMat12", "quantity": 50000},
+                    {"indent": 2, "item": "Refinery4", "quantity": 2000},
+                    {"indent": 1, "item": "StarfireBar", "quantity": 50000},
+                    {"indent": 1, "item": "Refinery6", "quantity": 5000},
                     {"indent": 0, "item": "FoodG10", "quantity": 1000},
                     {"indent": 0, "item": "LavaA5b", "quantity": 500}
                 ],
                 "detRecipeTotals": [
                     {"item": "FoodG10", "quantity": 1000},
                     {"item": "LavaA5b", "quantity": 500},
+                    {"item": "StarfireBar", "quantity": 50000},
+                    {"item": "Refinery6", "quantity": 5000},
+                    {"item": "CraftMat12", "quantity": 50000},
+                    {"item": "Refinery4", "quantity": 2000},
                     {"item": "SnowA2a", "quantity": 100},
                     {"item": "Critter5A", "quantity": 50},
                     {"item": "PureWater2", "quantity": 15},
@@ -6905,7 +6915,7 @@
             "Reach": 84
         },
         "sources": null,
-        "notes": " ",
+        "notes": "The great LavaFlame2 wields this behemoth of a spear.",
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
@@ -21061,14 +21071,14 @@
             "intID": "EquipmentToolsHatchet8",
             "recipe": [
                 {"item": "EquipmentToolsHatchet6", "quantity": 1},
-                {"item": "Tree7", "quantity": 100000},
+                {"item": "Tree8", "quantity": 100000},
                 {"item": "GalaxyC1b", "quantity": 40}
             ],
             "levelReqToCraft": 60,
             "expGiven": 1000000,
             "no": 39,
             "tab": 4,
-            "sellPrice": 13196450,
+            "sellPrice": 17196450,
             "recipeFrom": [
                 {"wikiName": "[[Tasks/Unlocks|Task Unlocks Tab 4]]", "txtName": "Task Unlocks Tab 4"}
             ],
@@ -21092,14 +21102,15 @@
                     {"indent": 2, "item": "PureWater2", "quantity": 5},
                     {"indent": 1, "item": "AlienTree", "quantity": 110000},
                     {"indent": 1, "item": "Refinery4", "quantity": 600},
-                    {"indent": 0, "item": "Tree7", "quantity": 100000},
+                    {"indent": 0, "item": "Tree8", "quantity": 100000},
                     {"indent": 0, "item": "GalaxyC1b", "quantity": 40}
                 ],
                 "detRecipeTotals": [
-                    {"item": "Tree7", "quantity": 150000},
+                    {"item": "Tree8", "quantity": 100000},
                     {"item": "GalaxyC1b", "quantity": 40},
                     {"item": "AlienTree", "quantity": 110000},
                     {"item": "Refinery4", "quantity": 600},
+                    {"item": "Tree7", "quantity": 50000},
                     {"item": "PureWater2", "quantity": 5},
                     {"item": "SaharanFoal", "quantity": 15000},
                     {"item": "Refinery1", "quantity": 50},
@@ -21157,7 +21168,7 @@
             "expGiven": 1000000,
             "no": 11,
             "tab": 5,
-            "sellPrice": 19246450,
+            "sellPrice": 23246450,
             "recipeFrom": [],
             "detailedRecipe": {
                 "detRecipe": [
@@ -21180,15 +21191,16 @@
                     {"indent": 3, "item": "PureWater2", "quantity": 5},
                     {"indent": 2, "item": "AlienTree", "quantity": 110000},
                     {"indent": 2, "item": "Refinery4", "quantity": 600},
-                    {"indent": 1, "item": "Tree7", "quantity": 100000},
+                    {"indent": 1, "item": "Tree8", "quantity": 100000},
                     {"indent": 1, "item": "GalaxyC1b", "quantity": 40},
                     {"indent": 0, "item": "AlienTree", "quantity": 110000}
                 ],
                 "detRecipeTotals": [
                     {"item": "AlienTree", "quantity": 220000},
-                    {"item": "Tree7", "quantity": 150000},
+                    {"item": "Tree8", "quantity": 100000},
                     {"item": "GalaxyC1b", "quantity": 40},
                     {"item": "Refinery4", "quantity": 600},
+                    {"item": "Tree7", "quantity": 50000},
                     {"item": "PureWater2", "quantity": 5},
                     {"item": "SaharanFoal", "quantity": 15000},
                     {"item": "Refinery1", "quantity": 50},
@@ -22619,7 +22631,7 @@
         "recipe": {
             "intID": "CatchingNet9",
             "recipe": [
-                {"item": "Bug7", "quantity": 100000},
+                {"item": "Bug8", "quantity": 100000},
                 {"item": "GalaxyC1b", "quantity": 80},
                 {"item": "CatchingNet8", "quantity": 1}
             ],
@@ -22627,13 +22639,13 @@
             "expGiven": 1000000,
             "no": 43,
             "tab": 4,
-            "sellPrice": 19156050,
+            "sellPrice": 24156050,
             "recipeFrom": [
                 {"wikiName": "[[Tasks/Unlocks|Task Unlocks Tab 4]]", "txtName": "Task Unlocks Tab 4"}
             ],
             "detailedRecipe": {
                 "detRecipe": [
-                    {"indent": 0, "item": "Bug7", "quantity": 100000},
+                    {"indent": 0, "item": "Bug8", "quantity": 100000},
                     {"indent": 0, "item": "GalaxyC1b", "quantity": 80},
                     {"indent": 0, "item": "CatchingNet8", "quantity": 1},
                     {"indent": 1, "item": "Bug7", "quantity": 130000},
@@ -22656,8 +22668,9 @@
                     {"indent": 1, "item": "Refinery4", "quantity": 750}
                 ],
                 "detRecipeTotals": [
-                    {"item": "Bug7", "quantity": 230000},
+                    {"item": "Bug8", "quantity": 100000},
                     {"item": "GalaxyC1b", "quantity": 80},
+                    {"item": "Bug7", "quantity": 130000},
                     {"item": "Refinery4", "quantity": 750},
                     {"item": "Bug6", "quantity": 50000},
                     {"item": "PureWater2", "quantity": 5},
@@ -22714,12 +22727,12 @@
             "expGiven": 1000000,
             "no": 15,
             "tab": 5,
-            "sellPrice": 69156050,
+            "sellPrice": 74156050,
             "recipeFrom": [],
             "detailedRecipe": {
                 "detRecipe": [
                     {"indent": 0, "item": "CatchingNet9", "quantity": 1},
-                    {"indent": 1, "item": "Bug7", "quantity": 100000},
+                    {"indent": 1, "item": "Bug8", "quantity": 100000},
                     {"indent": 1, "item": "GalaxyC1b", "quantity": 80},
                     {"indent": 1, "item": "CatchingNet8", "quantity": 1},
                     {"indent": 2, "item": "Bug7", "quantity": 130000},
@@ -22744,8 +22757,9 @@
                 ],
                 "detRecipeTotals": [
                     {"item": "Bug9", "quantity": 250000},
-                    {"item": "Bug7", "quantity": 230000},
+                    {"item": "Bug8", "quantity": 100000},
                     {"item": "GalaxyC1b", "quantity": 80},
+                    {"item": "Bug7", "quantity": 130000},
                     {"item": "Refinery4", "quantity": 750},
                     {"item": "Bug6", "quantity": 50000},
                     {"item": "PureWater2", "quantity": 5},
@@ -27099,7 +27113,7 @@
             "typeGen": "cFood",
             "Type": "Golden Food",
             "description": "Claiming AFK gives Sailing AFK time [% chance.. Golden foods are never consumed.",
-            "goldenFoodData": {"effect": "Claiming AFK gives Sailing AFK time [% chance.", "amount": 30}
+            "goldenFoodData": {"effect": "Claiming AFK gives Sailing AFK time [% chance.", "amount": 23}
         },
         "sources": {
             "sources": [
@@ -29369,7 +29383,7 @@
             "description": "Sorry cutie, but you gotta wait until big man Lava up top tells me I'm allowed to drop the crystal to World 5! Them's the rules, I'm sure you've noticed by now... @ Love, Your Favorite Troll "
         },
         "sources": null,
-        "notes": "This item was given in replacement of the W2's portal crystal until the item itself was added in a later update.",
+        "notes": "This was a replacement for [[Magma Geode|W5's world crystal]] which would be added in a future update.",
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
@@ -30618,7 +30632,7 @@
             "recipeFrom": [],
             "questAss": []
         },
-        "notes": null,
+        "notes": " ",
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
@@ -30799,7 +30813,7 @@
             "description": "IdleOn is out on iPhone devices! Go download it there if you have any iOS devices!                 Hold down to open for a random reward! Or, hold down for a LONG time to open them faster. "
         },
         "sources": null,
-        "notes": null,
+        "notes": "Droprates are displayed on the Event page this item was apart of: [[Events/iOS_Release|iOS Release Event]].",
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
@@ -43395,7 +43409,7 @@
             "stampData": {
                 "effect": "BossDmg",
                 "function": "decay",
-                "x1": 24,
+                "x1": 20,
                 "x2": 60,
                 "upgradeInterval": 10,
                 "material": {"item": "Quest17"},
@@ -43975,8 +43989,8 @@
             "typeGen": "aStamp",
             "Type": "Combat Stamp",
             "description": "",
-            "bonus": "+{ WIS",
-            "ID": 35,
+            "bonus": "+{ LUK",
+            "ID": 36,
             "stampData": {
                 "effect": "BaseLUK",
                 "function": "add",
@@ -44017,8 +44031,8 @@
             "typeGen": "aStamp",
             "Type": "Combat Stamp",
             "description": "",
-            "bonus": "+{ WIS",
-            "ID": 35,
+            "bonus": "+{% Total Damage",
+            "ID": 37,
             "stampData": {
                 "effect": "PctDmg",
                 "function": "decay",
@@ -45063,7 +45077,7 @@
             "typeGen": "aStamp",
             "Type": "Skills Stamp",
             "description": "",
-            "bonus": "+{% Mutli-Bug Chance",
+            "bonus": "+{% Multi-Bug Chance",
             "ID": 24,
             "stampData": {
                 "effect": "DoubleCatch",
@@ -48758,7 +48772,7 @@
             "Reach": 70
         },
         "sources": null,
-        "notes": " ",
+        "notes": "This was the first weapon obtained in the tutorial in order to slay the [[Purple Demon]]",
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
@@ -61775,7 +61789,7 @@
             "recipeFrom": [],
             "questAss": []
         },
-        "notes": null,
+        "notes": "{{#cargo_query:tables=Items|fields=_pageName=Item, CONCAT('Dungeon Loot Dice')=Source, CONCAT('Dungeon Loot Dice')=Link, CONCAT('Random')=SpecialText|where=Type='Keychain' AND NOT _pageName IN ('Key to Desert', 'Key to Mountains', 'Key to Purgatory')|format=template|named args=yes|template=Sources/datarow|default=}}",
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
@@ -69503,7 +69517,7 @@
     "CardsZ19": {
         "item": {
             "internalName": "CardsZ19",
-            "displayName": "Septic Kattlecruk Card",
+            "displayName": "Chaotic Kattlecruk Card",
             "sellPrice": 1,
             "typeGen": "dCard",
             "Type": "Card",
@@ -69519,7 +69533,7 @@
         },
         "sources": {
             "sources": [
-                {"wikiName": "[[Septic Kattlecruk]]", "txtName": "Septic Kattlecruk"}
+                {"wikiName": "[[Chaotic Kattlecruk]]", "txtName": "Chaotic Kattlecruk"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -69535,7 +69549,7 @@
     "CardsZ20": {
         "item": {
             "internalName": "CardsZ20",
-            "displayName": "Undying Troll Card",
+            "displayName": "Sacrilegious Kattlecruk Card",
             "sellPrice": 1,
             "typeGen": "dCard",
             "Type": "Card",
@@ -69551,7 +69565,7 @@
         },
         "sources": {
             "sources": [
-                {"wikiName": "[[Undying Troll]]", "txtName": "Undying Troll"}
+                {"wikiName": "[[Sacrilegious Kattlecruk]]", "txtName": "Sacrilegious Kattlecruk"}
             ],
             "recipeFrom": [],
             "questAss": []

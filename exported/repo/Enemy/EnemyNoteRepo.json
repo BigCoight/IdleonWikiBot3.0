@@ -6,10 +6,6 @@
     "SoulCard2": {"note": " n"},
     "SoulCard3": {"note": " n}}"},
     "SoulCard4": {"note": " n}}"},
-    "SoulCard5": {"note": " n}}"},
-    "SoulCard6": {
-        "note": "[[Bandit Bob]] is found in [[Worlds#D3 - Bandit Bob's Hideout|Bandit Bob's Hideout]]. His quests require you to open up the 2nd [[Smithing]] tab, unlock recipes from [[Tasks]], and open the [[Post Office]]. n"
-    },
     "CritterCard1": {"note": " n"},
     "CritterCard2": {"note": " n"},
     "CritterCard3": {"note": " n}}"},
@@ -36,13 +32,13 @@
         "note": "Baba Yaga is a mini-boss that spawns in the Birch Enclave, the portal on the bottom left of [[Worlds#G4_-_Valley_Of_The_Beans|Valley of the Beans]]. It spawns at the beginning of each hour (XX:00). For best results, enter the area 5 minutes before and it may take 5 minutes after the hour to spawn. nnIf you have the accuracy, you can easily beat Baba Yaga at range on both Mage and Archer classes. Climbing trees can be useful to evade Baba Yaga if it gets too close. Warriors will have to be more careful about getting stepped on.nnBaba Yaga also appears in the 15th wave of the [[Colosseum/Dewdrop|Dewdrop Colosseum]].nnIf you have the [[Tasks/Blunder_Hills#Merit_Shop|W1 Merit]] 'Higher chance for minibosses in world 1 to drop new Star Talents' then Baba Yaga has a chance to drop {{Talentbook|Just Exp}} or {{Talentbook|Frothy Malk}}.n"
     },
     "babaHour": {
-        "note": "To summon this boss, you must craft {{CraftReq|Googley Eyes}} using the recipe dropped from [[Crabcake|Crabcakes]].n{{ForgeSlotn|anvtab=Anvil Tab 2n|craftnum=42n|levelreq=17n|resource1=Woodular Circle|quantity1=2n|resource2=Distilled Water|quantity2=5n|resource3=Capitalist Case|quantity3=1n|recipefrom=[[Crabcake]]n|cargo=n"
+        "note": "To summon this boss, you must craft {{CraftReq|Googley Eyes}} using the recipe dropped from [[Crabcake|Crabcakes]].n{{ForgeSlotn|anvtab=Anvil Tab 2n|craftnum=42n|levelreq=17n|resource1=Woodular Circle|quantity1=2n|resource2=Distilled Water|quantity2=5n|resource3=Capitalist Case|quantity3=1n|recipefrom=[[Crabcake]]n|nocargo=truen"
     },
     "babaMummy": {
-        "note": "To summon this boss, you must craft the {{CraftReq|Dootjat Eye}} using the recipe dropped from [[Sand Giant|Sand Giants]]. n{{ForgeSlotn|anvtab=Anvil Tab 2n|craftnum=59n|levelreq=21n|resource1=Silver Antiquen|quantity1= 1n|resource2=Gold Barn|quantity2= 80n|resource3=Ghostn|quantity3= 1n|recipefrom=[[Sand Giant]]n|cargo=n"
+        "note": "To summon this boss, you must craft the {{CraftReq|Dootjat Eye}} using the recipe dropped from [[Sand Giant|Sand Giants]]. n{{ForgeSlotn|anvtab=Anvil Tab 2n|craftnum=59n|levelreq=21n|resource1=Silver Antiquen|quantity1= 1n|resource2=Gold Barn|quantity2= 80n|resource3=Ghostn|quantity3= 1n|recipefrom=[[Sand Giant]]n|nocargo=truen"
     },
     "mini3a": {
-        "note": "<onlyinclude>To summon this boss, you must craft {{CraftReq|Bucket of Slush}} using the recipe dropped from mid-W3 monsters ([[Bloque]] through [[Thermister]]).n{{ForgeSlotn|anvtab=Anvil Tab 3n|craftnum=64n|levelreq=38n|resource1=Melty Cube|quantity1=5n|resource2=Snow Ball|quantity2=20n|resource3=Iron Bar|quantity3=5n|recipefrom=[[DropTable15]]n"
+        "note": "<onlyinclude>To summon this boss, you must craft {{CraftReq|Bucket of Slush}} using the recipe dropped from mid-W3 monsters ([[Bloque]] through [[Thermister]]).n{{ForgeSlotn|anvtab=Anvil Tab 3n|craftnum=64n|levelreq=38n|resource1=Melty Cube|quantity1=5n|resource2=Snow Ball|quantity2=20n|resource3=Iron Bar|quantity3=5n|recipefrom=[[DropTable15]]n|nocargo=yesn"
     },
     "mini4a": {
         "note": "<onlyinclude>To summon this boss, take {{CraftReq|Toxic Sludge}} or {{CraftReq|Radioactive Waste}} to the [[Worlds#Spaceway Raceway|Spaceway Raceway]] ([[Purp Mushroom]] map). On the top platform there are 1 or more mushrooms growing out of the ground. Drop the barrel on the mushrooms, this will spawn as many Mutated Mushes as there were mushrooms. The fight is similar to [[Dr Defecaus]], but more HP and an additional projectile, similar to [[Amarok]]'s Fireball. nnAfter using up the mushrooms, you have to wait a minimum of 4 days for the next one to spawn. Boss spawns will increase according to the table below. The days are the total waiting days, not cumulative. It only counts days when you log in on at least one character.nnMutated Mush also appears in the 15th wave of the [[Colosseum/Astro|Astro Colosseum]].nn<table class='wikitable'>n <tr><th>Spawns</th><th>Days</th></tr>n <tr><td>1</td><td>4</td></tr>n <tr><td>2</td><td>7</td></tr>n <tr><td>3</td><td>12</td></tr>n <tr><td>4</td><td>19</td></tr>n <tr><td>5</td><td>28</td></tr>n <tr><td>6</td><td>39</td></tr>n <tr><td>7</td><td>52</td></tr>n <tr><td>8</td><td>67</td></tr>n</table></onlyinclude>"
@@ -56,7 +52,9 @@
     "EasterEvent1": {
         "note": "'''Im Eg,' 'I'm Egg,' 'I'm... wait which one am I again?'''nnThe [[Egggulyte]] are a trio of blobulytes available during the [[Events/Easter|Easter Event]]. Their daily quests award players {{CraftReq|Egg Capsule}}s, {{CraftReq|Gummy Bunny}}s, and {{CraftReq|Gem}}s for finding {{CraftReq|Egg Capsule}} and {{CraftReq|Goldegg Capsule}}.nn"
     },
-    "EasterEvent2": {"note": " n"},
+    "EasterEvent2": {
+        "note": " n<table class='wikitable'>n<tr><td>48%</td><td>{{CraftReq|Gummy Bunny}}</td></tr>n<tr><td>9%</td><td>{{CraftReq|Goldegg Capsule}}</td></tr>n<tr><td>5%</td><td>{{CraftReq|Black Pearl}}</td></tr>n<tr><td>15%</td><td>{{CraftReq|Gem}} 4x</td></tr>n<tr><td>4.5%</td><td>{{CraftReq|Egggulyte Card}}</td></tr>n<tr><td>4.5%</td><td>{{CraftReq|Egg Capsule Card}}</td></tr>n<tr><td>3%</td><td>{{CraftReq|1 HR Time Candy}}</td></tr>n<tr><td>1%</td><td>{{CraftReq|2 HR Time Candy}}</td></tr>n<tr><td>1.5%</td><td>{{CraftReq|Easter Tool Upgrade Stone}}</td></tr>n<tr><td>4.5%</td><td>{{CraftReq|Easter Armor Stone}}</td></tr>n<tr><td>4%</td><td>{{CraftReq|Easter Weapon Stone}}</td></tr>n<tr><td>4%</td><td>{{CraftReq|Bunny Ears}} Bunny Ears are calculated separately, and their chance increase marginally for every Egg Capsule you've opened.</td></tr>n</table>n"
+    },
     "SummerEvent1": {
         "note": "'''Cmon bro go get yourself some of that summer action!! I wanna see you opening those coolers like no other!'''nnThe [[Coastiolyte]] is a blobulyte available during the [[Events#Summer Break|Summer Break Event]] (June 26th 2021 until July 18th 2021). Its daily quests award players {{CraftReq|Summer Cooler}} and {{CraftReq|Beach Oyster}} in exchange for finding {{CraftReq|Summer Cooler}} or killing [[Plasti Doug]] and [[Mr Blueberry]].n"
     },
@@ -67,5 +65,5 @@
         "note": "Ghosts had a chance to spawn during the [[Events|Giftmas 2020 Event]]. nnIf auto is off and you are manually clicking and killing monsters, the chance for a Ghost spawn on enemy kill is 1 in 45.nnIf auto is on and you are automatically killing monsters, the chance for a Ghost spawn on enemy kill is 1 in 60.nnThe stats are 10x HP, 20x EXP, 1.8x damage as the area it spawns in. n"
     },
     "Pet6": {"note": " n}}"},
-    "version": "157"
+    "version": "170"
 }

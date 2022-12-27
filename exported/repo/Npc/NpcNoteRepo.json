@@ -82,20 +82,14 @@
             "The Hungry Stowaway": {"note": " "},
             "Beating Up Frogs for some Sauce": {"note": " "},
             "Live-Action Entertainment": {"note": " "},
-            "The Most Important Meal of the Day": {"note": "Daily Quest"},
-            "Brunchin' with the Blobs": {
-                "note": "Daily Quest. The first time you start this quest, the recipe for the Peanut drops."
-            },
+            "Brunchin' with the Blobs": {"note": "The first time you start this quest, the recipe for the Peanut drops."},
             "Luncheon with the Inlaws": {
-                "note": "Daily Quest. You must complete this quest for the 'Escapin' the 'Laws' daily [[Tasks|Task]]."
+                "note": "You must complete this quest for the 'Escapin' the 'Laws' daily [[Tasks|Task]]."
             },
             "Afternoon Tea in a Jiffy": {
-                "note": "Daily Quest. There is a [[Sandy Pot]] at [[Carrotman|Carrotmen]]. Kill it, pick up the teacup and run back to Picnic Stowaway."
+                "note": "There is a [[Sandy Pot]] at [[Carrotman|Carrotmen]]. Kill it, pick up the teacup and run back to Picnic Stowaway."
             },
-            "Early Evening Eating Endeavor": {"note": "Daily Quest"},
-            "The Last Supper, at Least for Today!": {"note": "Daily Quest"},
-            "Don't Desert the Dessert": {"note": "Daily Quest. Nuget Cakes drop from [[Crabcake|Crabcakes]]"},
-            "A Midnight Snack": {"note": "Daily Quest"},
+            "Don't Desert the Dessert": {"note": "Nuget Cakes drop from [[Crabcake|Crabcakes]]"},
             "King of Food": {"note": " "}
         }
     },
@@ -252,7 +246,9 @@
             "Bullets for Bandit Bob!": {"note": " "},
             "Bob's Brand New Bandana": {"note": " "},
             "Bringing Bob's Boxes": {"note": " "},
-            "The Desert Dungeon Prequest": {"note": " "}
+            "The Desert Dungeon Prequest": {
+                "note": "{{Sources/datarow|Item=Sesame Seed|Source=Mimics, Quest|Link=Bandit Bob#The Desert Dungeon Prequest{{!}}Bandit Bob|SpecialText=From Mimics|Category=Quest}}"
+            }
         }
     },
     "Carpetiem": {
@@ -320,7 +316,7 @@
             "Platforms in Disguise, Platsformers!": {"note": "See [[Secrets]] for more information."},
             "Findin' Fingerprints": {"note": ""},
             "You Can't Run, but you Can Hide": {
-                "note": "It has to be typed exactly like Wellington says, cAsE sEnSiTiVe. If you're not using a US Keyboard layout, Shift+1 is how you must type the exclamation point. Requires level 70."
+                "note": "It has to be typed like Wellington says, 'Darn you, Blobulyte! Why must you hide like a coward' exactly. If you're not using a US Keyboard layout, Shift+1 is how you must type the exclamation point. Requires level 70."
             },
             "Puzzles and Math, a Winning Combination!": {
                 "note": "A stack of items counts as one on the ground. Coins also count as items. Spaces in your name do NOT count."
@@ -358,6 +354,10 @@
     "Typhoon": {"notes": {"Surprise Attack!": {"note": ""}}},
     "Centurion": {
         "notes": {
+            "Down The Mimic Hole!": {"note": " "},
+            "Which one of yous is the Mafia?": {"note": " "},
+            "High Scorer": {"note": " "},
+            "Colosseum Champ!": {"note": " "},
             "Colosseum GDQ": {"note": "The numbers are how many seconds you must have remaining for each colosseum."}
         }
     },
@@ -395,7 +395,7 @@
                 "note": "Collect a cog on the character with this quest active. Cogs collected by another character won't count. Wizard Defenders are in the middle row."
             },
             "Monke Tower Time!": {
-                "note": "You need at least 25% charge to play a round of [[Worship]] at the [[Glublin]] totem. Purchase and equip a {{CraftReq|Ceramic Skull}} from the W3 town shop to gain charge. Charge is per-character, not account wide."
+                "note": "You need at least 25% charge to play a round of [[Worship]] at the [[Glublin]] totem. Purchase and equip a {{CraftReq|Wax Skull}} from the W3 town shop to gain charge. Charge is per-character, not account wide."
             },
             "Taking Samples": {
                 "note": "You must be in a map with AFK info of an activity in order to sample it. For instance, go to the [[Green Mushroom]] map or the [[Copper Ore]] mining area, then activate the talent. You can then print whatever you sampled in the 3D printer. Until you upgrade your printer in construction, only your first character can take samples."
@@ -437,8 +437,10 @@
     "Crystalswine": {
         "notes": {
             "Melting the Snakes": {"note": " "},
-            "Sunrunning to Chizoar": {"note": " "},
-            "Global Warming": {"note": ""}
+            "Sunrunning to Chizoar": {"note": "Defeat 20 Cryosnake, 17 Bop Box and 22 Neyeptune "},
+            "Global Warming": {
+                "note": "Defeat 20 Cryosnakes, 19 Quenchies, 18 Thermisters, 13 Penguins, 19 Snowmans, 20 Mamooths, 19 Bloques, 20 Sir Staches, 20 Dedotated Rams"
+            }
         }
     },
     "Yondergreen": {
@@ -448,7 +450,9 @@
                 "note": "Lowering your droprate to 2x (enough to guarantee coins, but lower chance at items) and reducing your multikill (via Big Brain Time [[Worship#Prayers|Prayer]] can make this slightly easier."
             },
             "Stance on Big Tech": {"note": " "},
-            "Legislative Action": {"note": " "},
+            "Legislative Action": {
+                "note": "{{Sources/datarow|Item=Signed Contract|Source=Penguin|Link=Yondergreen#Legislative Action{{!}}Penguin|SpecialText=Quest Only|Category=Quest Spawned}}"
+            },
             "No Snapping Contract": {"note": "You can only be off by +/- 3 minutes, so you cannot use candy. Set a timer."},
             "Keep Away Contract": {"note": "You can only be off by +/- 3 minutes, so you cannot use candy. Set a timer."},
             "Ad Solidarity Contract": {"note": "You can only be off by +/- 3 minutes, so you cannot use candy. Set a timer."}
@@ -516,9 +520,7 @@
             "Treasure Hunt 1": {"note": "[https://www.youtube.com/watch?v=9XXmfvCs9FY Treasure Hunt #1 Video]"},
             "Treasure Hunt 2": {"note": "[https://www.youtube.com/watch?v=R0xTfo3YedQ Treasure Hunt #2 Video]"},
             "Treasure Hunt 3": {"note": "[https://youtu.be/WYCo9kiJxug Treasure Hunt #3 Video]"},
-            "Treasure Hunt 4": {
-                "note": "[https://www.youtube.com/watch?v=33k5wVGUyII Treasure Hunt #4 Video] Goldegg Capsules are no longer usable in game."
-            }
+            "Treasure Hunt 4": {"note": "[https://www.youtube.com/watch?v=33k5wVGUyII Treasure Hunt #4 Video]"}
         }
     },
     "Toadstall": {
@@ -573,5 +575,11 @@
         }
     },
     "Nebula Neddy": {"notes": {"Task Requirement Affirmative": {"note": " "}}},
-    "version": "157"
+    "Eliteus": {
+        "notes": {
+            "The Greenie Gucci Gang": {"note": " "},
+            "Elite Class for the Elites in Class": {"note": " "}
+        }
+    },
+    "version": "170"
 }

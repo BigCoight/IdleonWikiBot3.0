@@ -1910,7 +1910,7 @@ export const initItemRepo = () => {
                     "recipeFrom": [],
                     "questAss": []
                 },
-                "notes": <NoteModel>{"note": " "},
+                "notes": <NoteModel>{"note": "}}"},
                 "recipe": undefined,
                 "vendors": undefined,
                 "anvilProduction": undefined,
@@ -2220,7 +2220,7 @@ export const initItemRepo = () => {
                     "recipeFrom": [],
                     "questAss": []
                 },
-                "notes": <NoteModel>{"note": " "},
+                "notes": undefined,
                 "recipe": undefined,
                 "vendors": undefined,
                 "anvilProduction": undefined,
@@ -4650,7 +4650,9 @@ export const initItemRepo = () => {
                     "Skill_Power": 0
                 },
                 "sources": undefined,
-                "notes": undefined,
+                "notes": <NoteModel>{
+                    "note": "This helmet was only available for a limited time because of a sponsored video with a YouTuber that goes by the name  'Real Civil Engineer' hence the name."
+                },
                 "recipe": undefined,
                 "vendors": undefined,
                 "anvilProduction": undefined,
@@ -5874,7 +5876,7 @@ export const initItemRepo = () => {
                 "recipe": <RecipeModel>{
                     "intID": "EquipmentPunching8",
                     "recipe": [
-                        <ComponentModel>{"item": "EquipmentPunching5", "quantity": 1},
+                        <ComponentModel>{"item": "EquipmentPunching7", "quantity": 1},
                         <ComponentModel>{"item": "FoodG10", "quantity": 1000},
                         <ComponentModel>{"item": "LavaA5b", "quantity": 500}
                     ],
@@ -5882,24 +5884,34 @@ export const initItemRepo = () => {
                     "expGiven": 1000000,
                     "no": 5,
                     "tab": 5,
-                    "sellPrice": 250417500,
+                    "sellPrice": 251217500,
                     "recipeFrom": [<SourceModel>{"wikiName": "[[Suggma]]", "txtName": "Suggma"}],
                     "detailedRecipe": <DetailedRecipeModel>{
                         "detRecipe": [
-                            <DetRecipeComponentModel>{"indent": 0, "item": "EquipmentPunching5", "quantity": 1},
-                            <DetRecipeComponentModel>{"indent": 1, "item": "SnowA2a", "quantity": 100},
-                            <DetRecipeComponentModel>{"indent": 1, "item": "Critter5A", "quantity": 50},
-                            <DetRecipeComponentModel>{"indent": 1, "item": "Quest36", "quantity": 10},
-                            <DetRecipeComponentModel>{"indent": 2, "item": "Quest37", "quantity": 10},
-                            <DetRecipeComponentModel>{"indent": 2, "item": "GoldBar", "quantity": 800},
-                            <DetRecipeComponentModel>{"indent": 2, "item": "DesertC2b", "quantity": 10},
-                            <DetRecipeComponentModel>{"indent": 1, "item": "PureWater2", "quantity": 15},
+                            <DetRecipeComponentModel>{"indent": 0, "item": "EquipmentPunching7", "quantity": 1},
+                            <DetRecipeComponentModel>{"indent": 1, "item": "EquipmentPunching6", "quantity": 1},
+                            <DetRecipeComponentModel>{"indent": 2, "item": "EquipmentPunching5", "quantity": 1},
+                            <DetRecipeComponentModel>{"indent": 3, "item": "SnowA2a", "quantity": 100},
+                            <DetRecipeComponentModel>{"indent": 3, "item": "Critter5A", "quantity": 50},
+                            <DetRecipeComponentModel>{"indent": 3, "item": "Quest36", "quantity": 10},
+                            <DetRecipeComponentModel>{"indent": 4, "item": "Quest37", "quantity": 10},
+                            <DetRecipeComponentModel>{"indent": 4, "item": "GoldBar", "quantity": 800},
+                            <DetRecipeComponentModel>{"indent": 4, "item": "DesertC2b", "quantity": 10},
+                            <DetRecipeComponentModel>{"indent": 3, "item": "PureWater2", "quantity": 15},
+                            <DetRecipeComponentModel>{"indent": 2, "item": "CraftMat12", "quantity": 50000},
+                            <DetRecipeComponentModel>{"indent": 2, "item": "Refinery4", "quantity": 2000},
+                            <DetRecipeComponentModel>{"indent": 1, "item": "StarfireBar", "quantity": 50000},
+                            <DetRecipeComponentModel>{"indent": 1, "item": "Refinery6", "quantity": 5000},
                             <DetRecipeComponentModel>{"indent": 0, "item": "FoodG10", "quantity": 1000},
                             <DetRecipeComponentModel>{"indent": 0, "item": "LavaA5b", "quantity": 500}
                         ],
                         "detRecipeTotals": [
                             <ComponentModel>{"item": "FoodG10", "quantity": 1000},
                             <ComponentModel>{"item": "LavaA5b", "quantity": 500},
+                            <ComponentModel>{"item": "StarfireBar", "quantity": 50000},
+                            <ComponentModel>{"item": "Refinery6", "quantity": 5000},
+                            <ComponentModel>{"item": "CraftMat12", "quantity": 50000},
+                            <ComponentModel>{"item": "Refinery4", "quantity": 2000},
                             <ComponentModel>{"item": "SnowA2a", "quantity": 100},
                             <ComponentModel>{"item": "Critter5A", "quantity": 50},
                             <ComponentModel>{"item": "PureWater2", "quantity": 15},
@@ -6654,7 +6666,7 @@ export const initItemRepo = () => {
                     "Reach": 84
                 },
                 "sources": undefined,
-                "notes": <NoteModel>{"note": " "},
+                "notes": <NoteModel>{"note": "The great LavaFlame2 wields this behemoth of a spear."},
                 "recipe": undefined,
                 "vendors": undefined,
                 "anvilProduction": undefined,
@@ -20340,14 +20352,14 @@ export const initItemRepo = () => {
                     "intID": "EquipmentToolsHatchet8",
                     "recipe": [
                         <ComponentModel>{"item": "EquipmentToolsHatchet6", "quantity": 1},
-                        <ComponentModel>{"item": "Tree7", "quantity": 100000},
+                        <ComponentModel>{"item": "Tree8", "quantity": 100000},
                         <ComponentModel>{"item": "GalaxyC1b", "quantity": 40}
                     ],
                     "levelReqToCraft": 60,
                     "expGiven": 1000000,
                     "no": 39,
                     "tab": 4,
-                    "sellPrice": 13196450,
+                    "sellPrice": 17196450,
                     "recipeFrom": [<SourceModel>{"wikiName": "[[Tasks/Unlocks|Task Unlocks Tab 4]]", "txtName": "Task Unlocks Tab 4"}],
                     "detailedRecipe": <DetailedRecipeModel>{
                         "detRecipe": [
@@ -20369,14 +20381,15 @@ export const initItemRepo = () => {
                             <DetRecipeComponentModel>{"indent": 2, "item": "PureWater2", "quantity": 5},
                             <DetRecipeComponentModel>{"indent": 1, "item": "AlienTree", "quantity": 110000},
                             <DetRecipeComponentModel>{"indent": 1, "item": "Refinery4", "quantity": 600},
-                            <DetRecipeComponentModel>{"indent": 0, "item": "Tree7", "quantity": 100000},
+                            <DetRecipeComponentModel>{"indent": 0, "item": "Tree8", "quantity": 100000},
                             <DetRecipeComponentModel>{"indent": 0, "item": "GalaxyC1b", "quantity": 40}
                         ],
                         "detRecipeTotals": [
-                            <ComponentModel>{"item": "Tree7", "quantity": 150000},
+                            <ComponentModel>{"item": "Tree8", "quantity": 100000},
                             <ComponentModel>{"item": "GalaxyC1b", "quantity": 40},
                             <ComponentModel>{"item": "AlienTree", "quantity": 110000},
                             <ComponentModel>{"item": "Refinery4", "quantity": 600},
+                            <ComponentModel>{"item": "Tree7", "quantity": 50000},
                             <ComponentModel>{"item": "PureWater2", "quantity": 5},
                             <ComponentModel>{"item": "SaharanFoal", "quantity": 15000},
                             <ComponentModel>{"item": "Refinery1", "quantity": 50},
@@ -20432,7 +20445,7 @@ export const initItemRepo = () => {
                     "expGiven": 1000000,
                     "no": 11,
                     "tab": 5,
-                    "sellPrice": 19246450,
+                    "sellPrice": 23246450,
                     "recipeFrom": [],
                     "detailedRecipe": <DetailedRecipeModel>{
                         "detRecipe": [
@@ -20455,15 +20468,16 @@ export const initItemRepo = () => {
                             <DetRecipeComponentModel>{"indent": 3, "item": "PureWater2", "quantity": 5},
                             <DetRecipeComponentModel>{"indent": 2, "item": "AlienTree", "quantity": 110000},
                             <DetRecipeComponentModel>{"indent": 2, "item": "Refinery4", "quantity": 600},
-                            <DetRecipeComponentModel>{"indent": 1, "item": "Tree7", "quantity": 100000},
+                            <DetRecipeComponentModel>{"indent": 1, "item": "Tree8", "quantity": 100000},
                             <DetRecipeComponentModel>{"indent": 1, "item": "GalaxyC1b", "quantity": 40},
                             <DetRecipeComponentModel>{"indent": 0, "item": "AlienTree", "quantity": 110000}
                         ],
                         "detRecipeTotals": [
                             <ComponentModel>{"item": "AlienTree", "quantity": 220000},
-                            <ComponentModel>{"item": "Tree7", "quantity": 150000},
+                            <ComponentModel>{"item": "Tree8", "quantity": 100000},
                             <ComponentModel>{"item": "GalaxyC1b", "quantity": 40},
                             <ComponentModel>{"item": "Refinery4", "quantity": 600},
+                            <ComponentModel>{"item": "Tree7", "quantity": 50000},
                             <ComponentModel>{"item": "PureWater2", "quantity": 5},
                             <ComponentModel>{"item": "SaharanFoal", "quantity": 15000},
                             <ComponentModel>{"item": "Refinery1", "quantity": 50},
@@ -21830,7 +21844,7 @@ export const initItemRepo = () => {
                 "recipe": <RecipeModel>{
                     "intID": "CatchingNet9",
                     "recipe": [
-                        <ComponentModel>{"item": "Bug7", "quantity": 100000},
+                        <ComponentModel>{"item": "Bug8", "quantity": 100000},
                         <ComponentModel>{"item": "GalaxyC1b", "quantity": 80},
                         <ComponentModel>{"item": "CatchingNet8", "quantity": 1}
                     ],
@@ -21838,11 +21852,11 @@ export const initItemRepo = () => {
                     "expGiven": 1000000,
                     "no": 43,
                     "tab": 4,
-                    "sellPrice": 19156050,
+                    "sellPrice": 24156050,
                     "recipeFrom": [<SourceModel>{"wikiName": "[[Tasks/Unlocks|Task Unlocks Tab 4]]", "txtName": "Task Unlocks Tab 4"}],
                     "detailedRecipe": <DetailedRecipeModel>{
                         "detRecipe": [
-                            <DetRecipeComponentModel>{"indent": 0, "item": "Bug7", "quantity": 100000},
+                            <DetRecipeComponentModel>{"indent": 0, "item": "Bug8", "quantity": 100000},
                             <DetRecipeComponentModel>{"indent": 0, "item": "GalaxyC1b", "quantity": 80},
                             <DetRecipeComponentModel>{"indent": 0, "item": "CatchingNet8", "quantity": 1},
                             <DetRecipeComponentModel>{"indent": 1, "item": "Bug7", "quantity": 130000},
@@ -21865,8 +21879,9 @@ export const initItemRepo = () => {
                             <DetRecipeComponentModel>{"indent": 1, "item": "Refinery4", "quantity": 750}
                         ],
                         "detRecipeTotals": [
-                            <ComponentModel>{"item": "Bug7", "quantity": 230000},
+                            <ComponentModel>{"item": "Bug8", "quantity": 100000},
                             <ComponentModel>{"item": "GalaxyC1b", "quantity": 80},
+                            <ComponentModel>{"item": "Bug7", "quantity": 130000},
                             <ComponentModel>{"item": "Refinery4", "quantity": 750},
                             <ComponentModel>{"item": "Bug6", "quantity": 50000},
                             <ComponentModel>{"item": "PureWater2", "quantity": 5},
@@ -21921,12 +21936,12 @@ export const initItemRepo = () => {
                     "expGiven": 1000000,
                     "no": 15,
                     "tab": 5,
-                    "sellPrice": 69156050,
+                    "sellPrice": 74156050,
                     "recipeFrom": [],
                     "detailedRecipe": <DetailedRecipeModel>{
                         "detRecipe": [
                             <DetRecipeComponentModel>{"indent": 0, "item": "CatchingNet9", "quantity": 1},
-                            <DetRecipeComponentModel>{"indent": 1, "item": "Bug7", "quantity": 100000},
+                            <DetRecipeComponentModel>{"indent": 1, "item": "Bug8", "quantity": 100000},
                             <DetRecipeComponentModel>{"indent": 1, "item": "GalaxyC1b", "quantity": 80},
                             <DetRecipeComponentModel>{"indent": 1, "item": "CatchingNet8", "quantity": 1},
                             <DetRecipeComponentModel>{"indent": 2, "item": "Bug7", "quantity": 130000},
@@ -21951,8 +21966,9 @@ export const initItemRepo = () => {
                         ],
                         "detRecipeTotals": [
                             <ComponentModel>{"item": "Bug9", "quantity": 250000},
-                            <ComponentModel>{"item": "Bug7", "quantity": 230000},
+                            <ComponentModel>{"item": "Bug8", "quantity": 100000},
                             <ComponentModel>{"item": "GalaxyC1b", "quantity": 80},
+                            <ComponentModel>{"item": "Bug7", "quantity": 130000},
                             <ComponentModel>{"item": "Refinery4", "quantity": 750},
                             <ComponentModel>{"item": "Bug6", "quantity": 50000},
                             <ComponentModel>{"item": "PureWater2", "quantity": 5},
@@ -26332,7 +26348,7 @@ export const initItemRepo = () => {
                     "typeGen": TypeGenEnum.cFood,
                     "Type": "Golden Food",
                     "description": "Claiming AFK gives Sailing AFK time [% chance.. Golden foods are never consumed.",
-                    "goldenFoodData": <GoldenFoodDataModel>{"effect": "Claiming AFK gives Sailing AFK time [% chance.", "amount": 30}
+                    "goldenFoodData": <GoldenFoodDataModel>{"effect": "Claiming AFK gives Sailing AFK time [% chance.", "amount": 23}
                 },
                 "sources": <SourcesModel>{
                     "sources": [
@@ -28579,7 +28595,7 @@ export const initItemRepo = () => {
                 },
                 "sources": undefined,
                 "notes": <NoteModel>{
-                    "note": "This item was given in replacement of the W2's portal crystal until the item itself was added in a later update."
+                    "note": "This was a replacement for [[Magma Geode|W5's world crystal]] which would be added in a future update."
                 },
                 "recipe": undefined,
                 "vendors": undefined,
@@ -29805,7 +29821,7 @@ export const initItemRepo = () => {
                     "recipeFrom": [],
                     "questAss": []
                 },
-                "notes": undefined,
+                "notes": <NoteModel>{"note": " "},
                 "recipe": undefined,
                 "vendors": undefined,
                 "anvilProduction": undefined,
@@ -29988,7 +30004,9 @@ export const initItemRepo = () => {
                     "description": "IdleOn is out on iPhone devices! Go download it there if you have any iOS devices!                 Hold down to open for a random reward! Or, hold down for a LONG time to open them faster. "
                 },
                 "sources": undefined,
-                "notes": undefined,
+                "notes": <NoteModel>{
+                    "note": "Droprates are displayed on the Event page this item was apart of: [[Events/iOS_Release|iOS Release Event]]."
+                },
                 "recipe": undefined,
                 "vendors": undefined,
                 "anvilProduction": undefined,
@@ -42072,7 +42090,7 @@ export const initItemRepo = () => {
                     "stampData": <StampDataModel>{
                         "effect": "BossDmg",
                         "function": "decay",
-                        "x1": 24,
+                        "x1": 20,
                         "x2": 60,
                         "upgradeInterval": 10,
                         "material": <QtylessComponentModel>{"item": "Quest17"},
@@ -42648,8 +42666,8 @@ export const initItemRepo = () => {
                     "typeGen": TypeGenEnum.aStamp,
                     "Type": "Combat Stamp",
                     "description": "",
-                    "bonus": "+{ WIS",
-                    "ID": 35,
+                    "bonus": "+{ LUK",
+                    "ID": 36,
                     "stampData": <StampDataModel>{
                         "effect": "BaseLUK",
                         "function": "add",
@@ -42690,8 +42708,8 @@ export const initItemRepo = () => {
                     "typeGen": TypeGenEnum.aStamp,
                     "Type": "Combat Stamp",
                     "description": "",
-                    "bonus": "+{ WIS",
-                    "ID": 35,
+                    "bonus": "+{% Total Damage",
+                    "ID": 37,
                     "stampData": <StampDataModel>{
                         "effect": "PctDmg",
                         "function": "decay",
@@ -43710,7 +43728,7 @@ export const initItemRepo = () => {
                     "typeGen": TypeGenEnum.aStamp,
                     "Type": "Skills Stamp",
                     "description": "",
-                    "bonus": "+{% Mutli-Bug Chance",
+                    "bonus": "+{% Multi-Bug Chance",
                     "ID": 24,
                     "stampData": <StampDataModel>{
                         "effect": "DoubleCatch",
@@ -47459,7 +47477,9 @@ export const initItemRepo = () => {
                     "Reach": 70
                 },
                 "sources": undefined,
-                "notes": <NoteModel>{"note": " "},
+                "notes": <NoteModel>{
+                    "note": "This was the first weapon obtained in the tutorial in order to slay the [[Purple Demon]]"
+                },
                 "recipe": undefined,
                 "vendors": undefined,
                 "anvilProduction": undefined,
@@ -60070,7 +60090,9 @@ export const initItemRepo = () => {
                     "recipeFrom": [],
                     "questAss": []
                 },
-                "notes": undefined,
+                "notes": <NoteModel>{
+                    "note": "{{#cargo_query:tables=Items|fields=_pageName=Item, CONCAT('Dungeon Loot Dice')=Source, CONCAT('Dungeon Loot Dice')=Link, CONCAT('Random')=SpecialText|where=Type='Keychain' AND NOT _pageName IN ('Key to Desert', 'Key to Mountains', 'Key to Purgatory')|format=template|named args=yes|template=Sources/datarow|default=}}"
+                },
                 "recipe": undefined,
                 "vendors": undefined,
                 "anvilProduction": undefined,
@@ -67262,7 +67284,7 @@ export const initItemRepo = () => {
         new ItemBase("CardsZ19", <ItemModel>{
                 "item": <CardItemModel>{
                     "internalName": "CardsZ19",
-                    "displayName": "Septic Kattlecruk Card",
+                    "displayName": "Chaotic Kattlecruk Card",
                     "sellPrice": 1,
                     "typeGen": TypeGenEnum.dCard,
                     "Type": "Card",
@@ -67277,7 +67299,7 @@ export const initItemRepo = () => {
                     "dropChance": 0.002
                 },
                 "sources": <SourcesModel>{
-                    "sources": [<SourceModel>{"wikiName": "[[Septic Kattlecruk]]", "txtName": "Septic Kattlecruk"}],
+                    "sources": [<SourceModel>{"wikiName": "[[Chaotic Kattlecruk]]", "txtName": "Chaotic Kattlecruk"}],
                     "recipeFrom": [],
                     "questAss": []
                 },
@@ -67290,7 +67312,7 @@ export const initItemRepo = () => {
         new ItemBase("CardsZ20", <ItemModel>{
                 "item": <CardItemModel>{
                     "internalName": "CardsZ20",
-                    "displayName": "Undying Troll Card",
+                    "displayName": "Sacrilegious Kattlecruk Card",
                     "sellPrice": 1,
                     "typeGen": TypeGenEnum.dCard,
                     "Type": "Card",
@@ -67305,7 +67327,7 @@ export const initItemRepo = () => {
                     "dropChance": 0.003
                 },
                 "sources": <SourcesModel>{
-                    "sources": [<SourceModel>{"wikiName": "[[Undying Troll]]", "txtName": "Undying Troll"}],
+                    "sources": [<SourceModel>{"wikiName": "[[Sacrilegious Kattlecruk]]", "txtName": "Sacrilegious Kattlecruk"}],
                     "recipeFrom": [],
                     "questAss": []
                 },

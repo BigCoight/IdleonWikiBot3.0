@@ -37,11 +37,18 @@ from repositories.misc.world4.PetGeneRepo import PetGeneRepo
 from repositories.misc.world4.PetStatRepo import PetStatRepo
 from repositories.misc.world4.PetUpgradeRepo import PetUpgradeRepo
 from repositories.misc.world4.TerritoryFightRepo import TerritoryFightRepo
+from repositories.misc.world5.ArtifactRepo import ArtifactRepo
+from repositories.misc.world5.CaptainBonusRepo import CaptainBonusRepo
+from repositories.misc.world5.DivinityStyleRepo import DivinityStyleRepo
+from repositories.misc.world5.GamingBoxRepo import GamingBoxRepo
+from repositories.misc.world5.GamingUpgradeRepo import GamingUpgradeRepo
+from repositories.misc.world5.GodInfoRepo import GodInfoRepo
+from repositories.misc.world5.IslandInfoRepo import IslandInfoRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("170", True)
-oldV = IdleonReader("161is", True)
+newV = IdleonReader("171", True)
+oldV = IdleonReader("170", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)
@@ -88,3 +95,11 @@ SigilRepo.compareVersions(oldV, newV)
 
 TaskShopDescRepo.compareVersions(oldV, newV)
 ColosseumRepo.compareVersions(oldV, newV)
+
+ArtifactRepo.compareVersions(oldV, newV)
+CaptainBonusRepo.compareVersions(oldV, newV)
+DivinityStyleRepo.compareVersions(oldV, newV)
+GamingBoxRepo.compareVersions(oldV, newV)
+GamingUpgradeRepo.compareVersions(oldV, newV)
+GodInfoRepo.compareVersions(oldV, newV)
+IslandInfoRepo.compareVersions(oldV, newV)

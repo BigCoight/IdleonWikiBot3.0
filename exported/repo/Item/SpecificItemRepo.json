@@ -9418,7 +9418,7 @@
         "typeGen": "cFood",
         "Type": "Golden Food",
         "description": "Claiming AFK gives Sailing AFK time [% chance.. Golden foods are never consumed.",
-        "goldenFoodData": {"effect": "Claiming AFK gives Sailing AFK time [% chance.", "amount": 30}
+        "goldenFoodData": {"effect": "Claiming AFK gives Sailing AFK time [% chance.", "amount": 23}
     },
     "ButterBar": {
         "internalName": "ButterBar",
@@ -14742,7 +14742,7 @@
         "stampData": {
             "effect": "BossDmg",
             "function": "decay",
-            "x1": 24,
+            "x1": 20,
             "x2": 60,
             "upgradeInterval": 10,
             "material": {"item": "Quest17"},
@@ -15062,8 +15062,8 @@
         "typeGen": "aStamp",
         "Type": "Combat Stamp",
         "description": "",
-        "bonus": "+{ WIS",
-        "ID": 35,
+        "bonus": "+{ LUK",
+        "ID": 36,
         "stampData": {
             "effect": "BaseLUK",
             "function": "add",
@@ -15087,8 +15087,8 @@
         "typeGen": "aStamp",
         "Type": "Combat Stamp",
         "description": "",
-        "bonus": "+{ WIS",
-        "ID": 35,
+        "bonus": "+{% Total Damage",
+        "ID": 37,
         "stampData": {
             "effect": "PctDmg",
             "function": "decay",
@@ -15687,7 +15687,7 @@
         "typeGen": "aStamp",
         "Type": "Skills Stamp",
         "description": "",
-        "bonus": "+{% Mutli-Bug Chance",
+        "bonus": "+{% Multi-Bug Chance",
         "ID": 24,
         "stampData": {
             "effect": "DoubleCatch",
@@ -26399,7 +26399,7 @@
     },
     "CardsZ19": {
         "internalName": "CardsZ19",
-        "displayName": "Septic Kattlecruk Card",
+        "displayName": "Chaotic Kattlecruk Card",
         "sellPrice": 1,
         "typeGen": "dCard",
         "Type": "Card",
@@ -26415,7 +26415,7 @@
     },
     "CardsZ20": {
         "internalName": "CardsZ20",
-        "displayName": "Undying Troll Card",
+        "displayName": "Sacrilegious Kattlecruk Card",
         "sellPrice": 1,
         "typeGen": "dCard",
         "Type": "Card",

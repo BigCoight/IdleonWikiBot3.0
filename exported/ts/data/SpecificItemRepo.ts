@@ -9470,7 +9470,7 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.cFood,
                 "Type": "Golden Food",
                 "description": "Claiming AFK gives Sailing AFK time [% chance.. Golden foods are never consumed.",
-                "goldenFoodData": <GoldenFoodDataModel>{"effect": "Claiming AFK gives Sailing AFK time [% chance.", "amount": 30}
+                "goldenFoodData": <GoldenFoodDataModel>{"effect": "Claiming AFK gives Sailing AFK time [% chance.", "amount": 23}
             }),
         new BaseItemBase("ButterBar", <GoldenFoodItemModel>{
                 "internalName": "ButterBar",
@@ -14794,7 +14794,7 @@ export const initSpecificItemRepo = () => {
                 "stampData": <StampDataModel>{
                     "effect": "BossDmg",
                     "function": "decay",
-                    "x1": 24,
+                    "x1": 20,
                     "x2": 60,
                     "upgradeInterval": 10,
                     "material": <QtylessComponentModel>{"item": "Quest17"},
@@ -15114,8 +15114,8 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.aStamp,
                 "Type": "Combat Stamp",
                 "description": "",
-                "bonus": "+{ WIS",
-                "ID": 35,
+                "bonus": "+{ LUK",
+                "ID": 36,
                 "stampData": <StampDataModel>{
                     "effect": "BaseLUK",
                     "function": "add",
@@ -15139,8 +15139,8 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.aStamp,
                 "Type": "Combat Stamp",
                 "description": "",
-                "bonus": "+{ WIS",
-                "ID": 35,
+                "bonus": "+{% Total Damage",
+                "ID": 37,
                 "stampData": <StampDataModel>{
                     "effect": "PctDmg",
                     "function": "decay",
@@ -15739,7 +15739,7 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.aStamp,
                 "Type": "Skills Stamp",
                 "description": "",
-                "bonus": "+{% Mutli-Bug Chance",
+                "bonus": "+{% Multi-Bug Chance",
                 "ID": 24,
                 "stampData": <StampDataModel>{
                     "effect": "DoubleCatch",
@@ -26451,7 +26451,7 @@ export const initSpecificItemRepo = () => {
             }),
         new BaseItemBase("CardsZ19", <CardItemModel>{
                 "internalName": "CardsZ19",
-                "displayName": "Septic Kattlecruk Card",
+                "displayName": "Chaotic Kattlecruk Card",
                 "sellPrice": 1,
                 "typeGen": TypeGenEnum.dCard,
                 "Type": "Card",
@@ -26467,7 +26467,7 @@ export const initSpecificItemRepo = () => {
             }),
         new BaseItemBase("CardsZ20", <CardItemModel>{
                 "internalName": "CardsZ20",
-                "displayName": "Undying Troll Card",
+                "displayName": "Sacrilegious Kattlecruk Card",
                 "sellPrice": 1,
                 "typeGen": TypeGenEnum.dCard,
                 "Type": "Card",

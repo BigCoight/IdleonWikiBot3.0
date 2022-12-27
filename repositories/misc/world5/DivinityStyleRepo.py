@@ -17,7 +17,6 @@ class DivinityStyleRepo(Repository[DivinityStyle]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		print(cls.getSection())
 		data = getFromArrayArray(cls.getSection())
 		for line in data:
 			cls.addList(DivinityStyle.fromList(line))

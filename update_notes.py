@@ -4,7 +4,7 @@ from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
 
-idleonReader = IdleonReader("157", steam = True)
+idleonReader = IdleonReader("170", steam = True)
 codeReader = idleonReader.codeReader
 
 EnemyNoteRepo.initialise(codeReader, True)

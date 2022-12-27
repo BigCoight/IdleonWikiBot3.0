@@ -13061,9 +13061,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 6.45,
-                    "starSign": "Aquarius",
-                    "mothersMaidenName": "Zeaser",
+                    "birthWeight": 8.47,
+                    "starSign": "Taurus",
+                    "mothersMaidenName": "Sonderling",
                     "notes": ""
                 },
                 "quests": {
@@ -13243,9 +13243,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 1,
-                    "starSign": "Virgo",
-                    "mothersMaidenName": "Rice",
+                    "birthWeight": 5.34,
+                    "starSign": "Aries",
+                    "mothersMaidenName": "Hydinger",
                     "notes": ""
                 },
                 "quests": {
@@ -13420,9 +13420,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 5.92,
+                    "birthWeight": 3.63,
                     "starSign": "Libra",
-                    "mothersMaidenName": "Lulloff",
+                    "mothersMaidenName": "Weinstein",
                     "notes": ""
                 },
                 "quests": {
@@ -13554,9 +13554,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 1.22,
-                    "starSign": "Cancer",
-                    "mothersMaidenName": "Jones",
+                    "birthWeight": 1.63,
+                    "starSign": "Libra",
+                    "mothersMaidenName": "Christensen",
                     "notes": ""
                 },
                 "quests": {

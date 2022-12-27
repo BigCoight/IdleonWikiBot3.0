@@ -22597,12 +22597,13 @@ export const initItemRepo = () => {
                     "WIS": 2,
                     "LUK": 0,
                     "Defence": 0,
-                    "miscUp1": "Max Worship Charge: 100%",
+                    "miscUp1": "",
                     "miscUp2": "00",
                     "Upgrade_Slots_Left": 1,
                     "Skill": "Worship",
                     "Skill_Power": 4,
-                    "Speed": 4
+                    "Speed": 4,
+                    "maxCharge": 100
                 },
                 "sources": <SourcesModel>{
                     "sources": [
@@ -22646,12 +22647,13 @@ export const initItemRepo = () => {
                     "WIS": 4,
                     "LUK": 0,
                     "Defence": 0,
-                    "miscUp1": "Max Worship Charge: 200%",
+                    "miscUp1": "",
                     "miscUp2": "00",
                     "Upgrade_Slots_Left": 1,
                     "Skill": "Worship",
                     "Skill_Power": 8,
-                    "Speed": 5
+                    "Speed": 5,
+                    "maxCharge": 200
                 },
                 "sources": <SourcesModel>{
                     "sources": [<SourceModel>{"wikiName": "[[Smithing]]", "txtName": "Smithing"}],
@@ -22696,12 +22698,13 @@ export const initItemRepo = () => {
                     "WIS": 7,
                     "LUK": 0,
                     "Defence": 0,
-                    "miscUp1": "Max Worship Charge: 400%",
+                    "miscUp1": "",
                     "miscUp2": "00",
                     "Upgrade_Slots_Left": 2,
                     "Skill": "Worship",
                     "Skill_Power": 13,
-                    "Speed": 5
+                    "Speed": 5,
+                    "maxCharge": 400
                 },
                 "sources": <SourcesModel>{
                     "sources": [<SourceModel>{"wikiName": "[[Smithing]]", "txtName": "Smithing"}],
@@ -22746,12 +22749,13 @@ export const initItemRepo = () => {
                     "WIS": 10,
                     "LUK": 0,
                     "Defence": 0,
-                    "miscUp1": "Max Worship Charge: 750%",
+                    "miscUp1": "",
                     "miscUp2": "00",
                     "Upgrade_Slots_Left": 2,
                     "Skill": "Worship",
                     "Skill_Power": 20,
-                    "Speed": 6
+                    "Speed": 6,
+                    "maxCharge": 750
                 },
                 "sources": <SourcesModel>{
                     "sources": [
@@ -22813,12 +22817,13 @@ export const initItemRepo = () => {
                     "WIS": 12,
                     "LUK": 0,
                     "Defence": 0,
-                    "miscUp1": "Max Worship Charge: 1250%",
+                    "miscUp1": "",
                     "miscUp2": "00",
                     "Upgrade_Slots_Left": 3,
                     "Skill": "Worship",
                     "Skill_Power": 26,
-                    "Speed": 7
+                    "Speed": 7,
+                    "maxCharge": 1250
                 },
                 "sources": <SourcesModel>{
                     "sources": [
@@ -22885,12 +22890,13 @@ export const initItemRepo = () => {
                     "WIS": 15,
                     "LUK": 0,
                     "Defence": 0,
-                    "miscUp1": "Max Worship Charge: 1750%",
+                    "miscUp1": "",
                     "miscUp2": "00",
                     "Upgrade_Slots_Left": 4,
                     "Skill": "Worship",
                     "Skill_Power": 34,
-                    "Speed": 7
+                    "Speed": 7,
+                    "maxCharge": 1750
                 },
                 "sources": <SourcesModel>{
                     "sources": [
@@ -22961,12 +22967,13 @@ export const initItemRepo = () => {
                     "WIS": 20,
                     "LUK": 0,
                     "Defence": 0,
-                    "miscUp1": "Max Worship Charge: 2500%",
+                    "miscUp1": "",
                     "miscUp2": "00",
                     "Upgrade_Slots_Left": 4,
                     "Skill": "Worship",
                     "Skill_Power": 45,
-                    "Speed": 8
+                    "Speed": 8,
+                    "maxCharge": 2500
                 },
                 "sources": <SourcesModel>{
                     "sources": [
@@ -23036,12 +23043,13 @@ export const initItemRepo = () => {
                     "WIS": 0,
                     "LUK": 0,
                     "Defence": 25,
-                    "miscUp1": "Max Worship Charge: 1000%",
+                    "miscUp1": "250Base Damage",
                     "miscUp2": "2% All Stats",
                     "Upgrade_Slots_Left": 0,
                     "Skill": "Worship",
                     "Skill_Power": 10,
-                    "Speed": 2
+                    "Speed": 2,
+                    "maxCharge": 1000
                 },
                 "sources": <SourcesModel>{
                     "sources": [<SourceModel>{"wikiName": "[[Dilapidated Slush]]", "txtName": "Dilapidated Slush"}],
@@ -23070,12 +23078,13 @@ export const initItemRepo = () => {
                     "WIS": 0,
                     "LUK": 0,
                     "Defence": 0,
-                    "miscUp1": "Max Worship Charge: 3000%",
+                    "miscUp1": "3% Total Damage",
                     "miscUp2": "3% All Stats",
                     "Upgrade_Slots_Left": 5,
                     "Skill": "Worship",
                     "Skill_Power": 55,
-                    "Speed": 9
+                    "Speed": 9,
+                    "maxCharge": 3000
                 },
                 "sources": <SourcesModel>{
                     "sources": [<SourceModel>{"wikiName": "[[Smithing]]", "txtName": "Smithing"}],

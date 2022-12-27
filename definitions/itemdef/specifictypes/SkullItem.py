@@ -11,6 +11,7 @@ class SkullItem(StatItem):
 	Skill: str
 	Skill_Power: Integer
 	Speed: Integer
+	maxCharge: Integer
 
 	@classmethod
 	def fromItemDetails(cls, item: EquipItem) -> BaseItem:
@@ -36,11 +37,8 @@ class SkullItem(StatItem):
 			miscUp1 = cls.getMisc1(item),
 			miscUp2 = cls.getMisc2(item),
 			Upgrade_Slots_Left = item.Upgrade_Slots_Left,
+			maxCharge = item.lvReqToCraft,
 		)
-
-	@classmethod
-	def getMisc1(cls, item: EquipItem) -> str:
-		return f"Max Worship Charge: {item.lvReqToCraft}%"
 
 	@classmethod
 	def isSkill(cls, item: EquipItem) -> str:
@@ -53,6 +51,7 @@ class SkullItem(StatItem):
 		extra = {
 			"skill": "Skill",
 			"skillpower": "Skill_Power",
-			"speed": "Speed"
+			"speed": "Speed",
+			"charge": "maxCharge"
 		}
 		return {**base, **extra}

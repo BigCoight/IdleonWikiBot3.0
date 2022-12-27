@@ -8630,12 +8630,13 @@ export const initSpecificItemRepo = () => {
                 "WIS": 2,
                 "LUK": 0,
                 "Defence": 0,
-                "miscUp1": "Max Worship Charge: 100%",
+                "miscUp1": "",
                 "miscUp2": "00",
                 "Upgrade_Slots_Left": 1,
                 "Skill": "Worship",
                 "Skill_Power": 4,
-                "Speed": 4
+                "Speed": 4,
+                "maxCharge": 100
             }),
         new BaseItemBase("WorshipSkull2", <SkullItemModel>{
                 "internalName": "WorshipSkull2",
@@ -8652,12 +8653,13 @@ export const initSpecificItemRepo = () => {
                 "WIS": 4,
                 "LUK": 0,
                 "Defence": 0,
-                "miscUp1": "Max Worship Charge: 200%",
+                "miscUp1": "",
                 "miscUp2": "00",
                 "Upgrade_Slots_Left": 1,
                 "Skill": "Worship",
                 "Skill_Power": 8,
-                "Speed": 5
+                "Speed": 5,
+                "maxCharge": 200
             }),
         new BaseItemBase("WorshipSkull3", <SkullItemModel>{
                 "internalName": "WorshipSkull3",
@@ -8674,12 +8676,13 @@ export const initSpecificItemRepo = () => {
                 "WIS": 7,
                 "LUK": 0,
                 "Defence": 0,
-                "miscUp1": "Max Worship Charge: 400%",
+                "miscUp1": "",
                 "miscUp2": "00",
                 "Upgrade_Slots_Left": 2,
                 "Skill": "Worship",
                 "Skill_Power": 13,
-                "Speed": 5
+                "Speed": 5,
+                "maxCharge": 400
             }),
         new BaseItemBase("WorshipSkull4", <SkullItemModel>{
                 "internalName": "WorshipSkull4",
@@ -8696,12 +8699,13 @@ export const initSpecificItemRepo = () => {
                 "WIS": 10,
                 "LUK": 0,
                 "Defence": 0,
-                "miscUp1": "Max Worship Charge: 750%",
+                "miscUp1": "",
                 "miscUp2": "00",
                 "Upgrade_Slots_Left": 2,
                 "Skill": "Worship",
                 "Skill_Power": 20,
-                "Speed": 6
+                "Speed": 6,
+                "maxCharge": 750
             }),
         new BaseItemBase("WorshipSkull5", <SkullItemModel>{
                 "internalName": "WorshipSkull5",
@@ -8718,12 +8722,13 @@ export const initSpecificItemRepo = () => {
                 "WIS": 12,
                 "LUK": 0,
                 "Defence": 0,
-                "miscUp1": "Max Worship Charge: 1250%",
+                "miscUp1": "",
                 "miscUp2": "00",
                 "Upgrade_Slots_Left": 3,
                 "Skill": "Worship",
                 "Skill_Power": 26,
-                "Speed": 7
+                "Speed": 7,
+                "maxCharge": 1250
             }),
         new BaseItemBase("WorshipSkull6", <SkullItemModel>{
                 "internalName": "WorshipSkull6",
@@ -8740,12 +8745,13 @@ export const initSpecificItemRepo = () => {
                 "WIS": 15,
                 "LUK": 0,
                 "Defence": 0,
-                "miscUp1": "Max Worship Charge: 1750%",
+                "miscUp1": "",
                 "miscUp2": "00",
                 "Upgrade_Slots_Left": 4,
                 "Skill": "Worship",
                 "Skill_Power": 34,
-                "Speed": 7
+                "Speed": 7,
+                "maxCharge": 1750
             }),
         new BaseItemBase("WorshipSkull7", <SkullItemModel>{
                 "internalName": "WorshipSkull7",
@@ -8762,12 +8768,13 @@ export const initSpecificItemRepo = () => {
                 "WIS": 20,
                 "LUK": 0,
                 "Defence": 0,
-                "miscUp1": "Max Worship Charge: 2500%",
+                "miscUp1": "",
                 "miscUp2": "00",
                 "Upgrade_Slots_Left": 4,
                 "Skill": "Worship",
                 "Skill_Power": 45,
-                "Speed": 8
+                "Speed": 8,
+                "maxCharge": 2500
             }),
         new BaseItemBase("WorshipSkull8", <SkullItemModel>{
                 "internalName": "WorshipSkull8",
@@ -8784,12 +8791,13 @@ export const initSpecificItemRepo = () => {
                 "WIS": 0,
                 "LUK": 0,
                 "Defence": 25,
-                "miscUp1": "Max Worship Charge: 1000%",
+                "miscUp1": "250Base Damage",
                 "miscUp2": "2% All Stats",
                 "Upgrade_Slots_Left": 0,
                 "Skill": "Worship",
                 "Skill_Power": 10,
-                "Speed": 2
+                "Speed": 2,
+                "maxCharge": 1000
             }),
         new BaseItemBase("WorshipSkull9", <SkullItemModel>{
                 "internalName": "WorshipSkull9",
@@ -8806,12 +8814,13 @@ export const initSpecificItemRepo = () => {
                 "WIS": 0,
                 "LUK": 0,
                 "Defence": 0,
-                "miscUp1": "Max Worship Charge: 3000%",
+                "miscUp1": "3% Total Damage",
                 "miscUp2": "3% All Stats",
                 "Upgrade_Slots_Left": 5,
                 "Skill": "Worship",
                 "Skill_Power": 55,
-                "Speed": 9
+                "Speed": 9,
+                "maxCharge": 3000
             }),
         new BaseItemBase("DNAgun0", <ToolItemModel>{
                 "internalName": "DNAgun0",

@@ -74,6 +74,7 @@ from repositories.misc.world5.GamingBoxRepo import GamingBoxRepo
 from repositories.misc.world5.GamingUpgradeRepo import GamingUpgradeRepo
 from repositories.misc.world5.GodInfoRepo import GodInfoRepo
 from repositories.misc.world5.IslandInfoRepo import IslandInfoRepo
+from repositories.misc.world5.SlabItemSortRepo import SlabItemSortRepo
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
 from repositories.npc.NpcRepo import NpcRepo
@@ -176,6 +177,7 @@ GamingBoxRepo.initialise(codeReader)
 GamingUpgradeRepo.initialise(codeReader)
 GodInfoRepo.initialise(codeReader)
 IslandInfoRepo.initialise(codeReader)
+SlabItemSortRepo.initialise(codeReader)
 
 ItemRepo.exportWikiMult()
 NpcRepo.exportWikiMult()

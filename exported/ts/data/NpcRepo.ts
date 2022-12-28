@@ -13061,9 +13061,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 8.47,
-                    "starSign": "Taurus",
-                    "mothersMaidenName": "Sonderling",
+                    "birthWeight": 7,
+                    "starSign": "Leo",
+                    "mothersMaidenName": "Ferry",
                     "notes": ""
                 },
                 "quests": {
@@ -13243,9 +13243,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 5.34,
-                    "starSign": "Aries",
-                    "mothersMaidenName": "Hydinger",
+                    "birthWeight": 6.22,
+                    "starSign": "Taurus",
+                    "mothersMaidenName": "Uflan",
                     "notes": ""
                 },
                 "quests": {
@@ -13420,9 +13420,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 3.63,
-                    "starSign": "Libra",
-                    "mothersMaidenName": "Weinstein",
+                    "birthWeight": 5.75,
+                    "starSign": "Leo",
+                    "mothersMaidenName": "Jenson",
                     "notes": ""
                 },
                 "quests": {
@@ -13554,9 +13554,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 1.63,
-                    "starSign": "Libra",
-                    "mothersMaidenName": "Christensen",
+                    "birthWeight": 6.65,
+                    "starSign": "Sagittarius",
+                    "mothersMaidenName": "Hesch",
                     "notes": ""
                 },
                 "quests": {

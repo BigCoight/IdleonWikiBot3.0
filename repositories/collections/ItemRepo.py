@@ -1,4 +1,3 @@
-
 from definitions.collections.Item import Item
 from repositories.item.AnvilRepo import AnvilRepo
 from repositories.item.DetDropsRepo import DetDropsRepo
@@ -8,6 +7,7 @@ from repositories.item.VendorRepo import VendorRepo
 from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
 from repositories.item.sources.SourceRepo import SourceRepo
 from repositories.master.Repository import Repository
+from repositories.misc.world5.SlabItemSortRepo import SlabItemSortRepo
 
 
 class ItemRepo(Repository[Item]):
@@ -28,6 +28,7 @@ class ItemRepo(Repository[Item]):
 		AnvilRepo.initialise(cls.codeReader, log)
 		DetDropsRepo.initialise(cls.codeReader, log)
 		ItemNoteRepo.initialise(cls.codeReader)
+		SlabItemSortRepo.initialise(cls.codeReader)
 
 	@classmethod
 	def generateRepo(cls) -> None:
@@ -42,13 +43,13 @@ class ItemRepo(Repository[Item]):
 				recipe = RecipeRepo.get(item),
 				vendors = VendorRepo.getVendorFromItem(item),
 				anvilProduction = AnvilRepo.get(item),
-				detDrops = DetDropsRepo.get(item)
+				detDrops = DetDropsRepo.get(item),
+				order = SlabItemSortRepo.get(item)
 			))
 
 	@classmethod
 	def _ignore(cls, name: str, data: Item) -> bool:
 		return SpecificItemRepo._ignore(name, data.item)
-
 
 	@classmethod
 	def getWikiName(cls, name: str) -> str:

@@ -44,6 +44,7 @@ from repositories.misc.world5.GamingBoxRepo import GamingBoxRepo
 from repositories.misc.world5.GamingUpgradeRepo import GamingUpgradeRepo
 from repositories.misc.world5.GodInfoRepo import GodInfoRepo
 from repositories.misc.world5.IslandInfoRepo import IslandInfoRepo
+from repositories.misc.world5.SlabItemSortRepo import SlabItemSortRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
@@ -103,3 +104,4 @@ GamingBoxRepo.compareVersions(oldV, newV)
 GamingUpgradeRepo.compareVersions(oldV, newV)
 GodInfoRepo.compareVersions(oldV, newV)
 IslandInfoRepo.compareVersions(oldV, newV)
+SlabItemSortRepo.compareVersions(oldV, newV)

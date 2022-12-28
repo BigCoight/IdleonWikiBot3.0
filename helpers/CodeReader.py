@@ -159,5 +159,6 @@ class IdleonReader:
 		self.codeReader.addSection("IslandInfobox = function ()", "IslandInfobox")
 		self.codeReader.addSection("CaptainBonuses = function ()", "CaptainBonuses")
 		self.codeReader.addSection("ArtifactInfo = function ()", "ArtifactInfo")
+		self.codeReader.addSection("SlabItemSort = function ()", "SlabItemSort")
 
 		self.codeReader.readCode()

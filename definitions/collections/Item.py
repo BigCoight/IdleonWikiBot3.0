@@ -9,6 +9,7 @@ from definitions.itemdef.Vendors import ItemVendors
 from definitions.itemdef.initialtypes.ItemTypes import TypeGen
 from definitions.itemdef.specifictypes.master.BaseItem import BaseItem
 from definitions.master.IdleonModel import IdleonModel
+from definitions.misc.world5.SlabItemSort import SlabItemSort
 
 
 class Item(IdleonModel):
@@ -19,6 +20,7 @@ class Item(IdleonModel):
 	vendors: Optional[ItemVendors] = None
 	anvilProduction: Optional[AnvilProduce] = None
 	detDrops: Optional[DetDrops] = None
+	order: Optional[SlabItemSort]
 
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		res = self.getCorrectHead()
@@ -27,10 +29,12 @@ class Item(IdleonModel):
 			res += f"|sellprice={self.recipe.sellPrice}\n"
 		else:
 			res += f"|sellprice={self.item.sellPrice}\n"
-		if self.sources:
-			res += self.sources.writeWiki()
+		# if self.sources:
+		# 	res += self.sources.writeWiki()
 		if self.notes:
 			res += self.notes.writeWiki()
+		if self.order:
+			res += f"|order={self.order.order}\n"
 		res += "}}\n"
 
 		toWrite = filter(lambda x: x, self.item.writeAfter() + self.writeAfter())

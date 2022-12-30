@@ -43,6 +43,6 @@ class Constants:
 	             "Cosmic Carrier"]
 	stampTypes = ["Combat Stamp", "Skills Stamp", "Misc Stamp"]
 
-	sailingIslands = ["Safari Island", "Beachy Coast", "Isolated Woods", "Rocky Peaks", "Stormy North",
-	                  "Toxic Bay Inc", "Candied Island", "Fungi Meadows", "Cloudy Quay", "Dungeon Cove",
+	sailingIslands = ["Safari Island", "Beachy Coast", "Isolated Woods", "Rocky Peaks", "Stormy North", 
+	                  "Snowy South", "Toxic Bay Inc", "Candied Island", "Fungi Meadows", "Cloudy Quay", "Dungeon Cove",
 	                  "Crystal Enclave", "Petulent Garage", "Isle of Note", "The Edge"]

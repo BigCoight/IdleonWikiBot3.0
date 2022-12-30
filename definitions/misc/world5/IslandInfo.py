@@ -12,3 +12,4 @@ class IslandInfo(IdleonModel):
 	cloudsUnlocked: Numeric
 	xYPointer: str
 	expPerTrip: int
+	artifactsPerIsland: int

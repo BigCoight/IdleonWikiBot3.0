@@ -53,6 +53,7 @@ from repositories.misc.world2.FishPoolRepo import FishPoolRepo
 from repositories.misc.world2.PostOfficeRepo import PostOfficeRepo
 from repositories.misc.world2.PostOfficeUpgradesRepo import PostOfficeUpgradesRepo
 from repositories.misc.world2.SigilRepo import SigilRepo
+from repositories.misc.world3.AtomColliderRepo import AtomColliderRepo
 from repositories.misc.world3.BuildingRepo import BuildingRepo
 from repositories.misc.world3.PrayerRepo import PrayerRepo
 from repositories.misc.world3.SaltLickRepo import SaltLickRepo
@@ -82,7 +83,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("171", steam = True)
+idleonReader = IdleonReader("172", steam = True)
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
@@ -168,6 +169,8 @@ SkullShopRepo.initialise(codeReader)
 
 RandoListRepo.initialise(codeReader)
 ColosseumRepo.initialise(codeReader)
+
+AtomColliderRepo.initialise(codeReader)
 
 # World 5
 ArtifactRepo.initialise(codeReader)

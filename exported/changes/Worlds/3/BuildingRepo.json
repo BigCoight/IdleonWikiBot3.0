@@ -1,1 +1,12 @@
-{"new": {}, "changes": {}}
+{
+    "new": {},
+    "changes": {
+        "Talent Book Library": {"maxLvl": [50, 100]},
+        "Atom Collider": {
+            "bonus": [" +{% chance for an extra atom upon collision", " Upgrade costs for atoms are {% cheaper"],
+            "lvlUpReq": {"1": [" ", {"item": "LavaB2", "quantity": 25}]},
+            "bonusInc": {"0": [10, 0.1], "1": [5, 0.1]}
+        },
+        "Voidinator": {"maxLvl": [100, 50]}
+    }
+}

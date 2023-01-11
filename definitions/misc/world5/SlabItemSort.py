@@ -5,3 +5,6 @@ from definitions.master.IdleonModel import IdleonModel
 class SlabItemSort(IdleonModel):
 	item: QtylessComponent
 	order: int
+
+	def sortKey(self) -> str:
+		return "Order"

@@ -1,9 +1,34 @@
 {
     "new": {},
     "changes": {
-        "Boss5C": {"details": {"Name": ["Undying Troll", "Sacrilegious Kattlecruk"]}},
-        "JungleTree": {"details": {"RespawnTime": [5000000, 300]}},
-        "Iceball": {"details": {"MoveSPEED": [4, 0]}},
-        "Boss5B": {"details": {"Name": ["Septic Kattlecruk", "Chaotic Kattlecruk"]}}
+        "frogG": {
+            "drops": {
+                "4": [
+                    {"item": "Quest4", "quantity": 1, "chance": 0.15, "questLink": "Picnic_Stowaway2"},
+                    {"item": "Quest4", "quantity": 1, "chance": 0.3, "questLink": "Picnic_Stowaway2"}
+                ],
+                "3": [
+                    {"item": "Quest3", "quantity": 1, "chance": 0.15, "questLink": "Picnic_Stowaway2"},
+                    {"item": "Quest3", "quantity": 1, "chance": 0.5, "questLink": "Picnic_Stowaway2"}
+                ]
+            },
+            "mapData": {"portalRequirements": {"0": [30, 20]}}
+        },
+        "w5b4": {"details": {"Damages": {"0": [40000, 30000]}, "DefFor0": [35242.3, 27591.3]}},
+        "w5c1": {"details": {"Damages": {"0": [2100, 40000]}, "DefFor0": [2541.34, 35242.3]}},
+        "w5c2": {"details": {"Damages": {"0": [2100, 200000]}, "DefFor0": [2541.34, 135245]}},
+        "mushG": {"mapData": {"portalRequirements": {"0": [20, 11]}}},
+        "Tree10": {
+            "drops": {"2": [" ", {"item": "Leaf5", "quantity": 1, "chance": 0.0049, "questLink": "N/A"}]}
+        },
+        "w5b6": {"details": {"Damages": {"0": [60000, 40000]}, "DefFor0": [49629.3, 35242.3]}},
+        "Tree9": {
+            "drops": {"2": [" ", {"item": "Leaf5", "quantity": 1, "chance": 0.0049, "questLink": "N/A"}]}
+        },
+        "w5a4": {
+            "drops": {
+                "4": [" ", {"item": "InvStorageC", "quantity": 1, "chance": 1.01e-06, "questLink": "N/A"}]
+            }
+        }
     }
 }

@@ -1,12 +1,388 @@
 {
-    "new": {},
+    "new": {
+        "InvStorage25": {
+            "displayName": "Storage Chest 25",
+            "sellPrice": 10,
+            "Type": "Storage",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
+            "order": 25,
+            "level": 1
+        },
+        "EquipmentRings31": {
+            "displayName": "Tundra Killer Ring",
+            "sellPrice": 1,
+            "Type": "Ring",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 3,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 3,
+            "miscUp1": "30% Kills In World 3",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentPendant28": {
+            "displayName": "Crescent Moon Pendant",
+            "sellPrice": 1,
+            "Type": "Pendant",
+            "lvReqToCraft": 17,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 3,
+            "STR": 10,
+            "AGI": 10,
+            "WIS": 10,
+            "LUK": 10,
+            "Defence": 10,
+            "miscUp1": "35% Xp From Monsters",
+            "miscUp2": "5% Mob Respawn",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentRings32": {
+            "displayName": "Nebula Killer Ring",
+            "sellPrice": 1,
+            "Type": "Ring",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 4,
+            "STR": 0,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 4,
+            "miscUp1": "30% Kills In World 4",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "InvStorage24": {
+            "displayName": "Storage Chest 24",
+            "sellPrice": 10,
+            "Type": "Storage",
+            "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
+            "order": 24,
+            "level": 1
+        },
+        "InvStorageC": {
+            "displayName": "Cheesy Chest",
+            "sellPrice": 1000,
+            "Type": "Storage",
+            "description": "Hold down to permanently add +4 Slots to your Storage Chest. Can only be used once.",
+            "order": 103,
+            "level": 1
+        }
+    },
     "changes": {
-        "StampA36": {"bonus": ["+{ WIS", "+{ LUK"], "ID": [35, 36]},
-        "CardsZ20": {"displayName": ["Undying Troll Card", "Sacrilegious Kattlecruk Card"]},
-        "StampB24": {"bonus": ["+{% Mutli-Bug Chance", "+{% Multi-Bug Chance"]},
-        "FoodG10": {"goldenFoodData": {"amount": [30, 23]}},
-        "StampA23": {"stampData": {"x1": [24, 20]}},
-        "StampA37": {"bonus": ["+{ WIS", "+{% Total Damage"], "ID": [35, 37]},
-        "CardsZ19": {"displayName": ["Septic Kattlecruk Card", "Chaotic Kattlecruk Card"]}
+        "NPCtoken13": {
+            "description": [
+                "Proof that you completed all of Dog Bone's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Dog Bone's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken41": {
+            "description": [
+                "Made up of the tokens from all of the Tundra NPCs whose quests are hardest to complete. ",
+                "Made up of the tokens from all of the Tundra NPCs whose quests are hardest to complete. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken12": {
+            "description": [
+                "Proof that you completed all of Sproutinald's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Sproutinald's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken6": {
+            "description": [
+                "Proof that you completed all of Glumlee's quests! Hold down to add to your token bag found in Storage Info. Open items, look at the top left. ",
+                "Proof that you completed all of Glumlee's quests! Hold down to add to your token bag found in Storage Info. Open items, look at the top left. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken4": {
+            "description": [
+                "Proof that you completed all of Stiltzcho's main quests! Hold down to add to your token bag found in Storage Info. Open items, look at the top left. ",
+                "Proof that you completed all of Stiltzcho's main quests! Hold down to add to your token bag found in Storage Info. Open items, look at the top left. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken39": {
+            "description": [
+                "Made up of the tokens from all of the Tundra NPCs whose quests are easiest to complete. ",
+                "Made up of the tokens from all of the Tundra NPCs whose quests are easiest to complete. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken27": {
+            "description": [
+                "Proof that Cattleprod is a little brat of a pig... like, he seriously went and SOLD his own token to the store??? ",
+                "Proof that Cattleprod is a little brat of a pig... like, he seriously went and SOLD his own token to the store??? DONT SELL THIS ITEM "
+            ]
+        },
+        "StampA37": {"stampData": {"x2": [0, 80]}},
+        "NPCtoken7": {
+            "description": [
+                "Proof that you completed all of Papua Piggea's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Papua Piggea's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken40": {
+            "description": [
+                "Made up of the tokens from all of the Tundra NPCs whose quests are tough to complete. ",
+                "Made up of the tokens from all of the Tundra NPCs whose quests are tough to complete. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken20": {
+            "description": [
+                "Proof that you completed all of Carpetiem's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Carpetiem's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken35": {
+            "description": [
+                "Proof that you completed all of Shuvelle's quests! Hold down to add to your token bag, found in Storage Info. ",
+                "Proof that you completed all of Shuvelle's quests! Hold down to add to your token bag, found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "BadgeI2": {
+            "description": [
+                "Proof that you mastered the art of the Trapping, Construction, and Worship skills. ",
+                "Proof that you mastered the art of the Trapping, Construction, and Worship skills. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken31": {
+            "description": [
+                "Proof that you completed all of the Lonely Hunter's quests! Hold down to add to your token bag, found in Storage Info. ",
+                "Proof that you completed all of the Lonely Hunter's quests! Hold down to add to your token bag, found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "BadgeI3": {
+            "description": [
+                "Proof that you collected all the coolest and rarest items that Frostbite Tundra has to offer! ",
+                "Proof that you collected all the coolest and rarest items that Frostbite Tundra has to offer! DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken32": {
+            "description": [
+                "Proof that you completed all of Hoggindaz's quests! Hold down to add to your token bag, found in Storage Info. ",
+                "Proof that you completed all of Hoggindaz's quests! Hold down to add to your token bag, found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken22": {
+            "description": [
+                "Proof that you completed all of Fishpaste's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Fishpaste's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "BadgeI1": {
+            "description": [
+                "Made up of all the tokens that you collected after completing an NPC's entire questline. ",
+                "Made up of all the tokens that you collected after completing an NPC's entire questline. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken30": {
+            "description": [
+                "Made up of the tokens from all of the Yumyum NPCs whose quests are hardest to complete. ",
+                "Made up of the tokens from all of the Yumyum NPCs whose quests are hardest to complete. DONT SELL THIS ITEM "
+            ]
+        },
+        "Quest9": {
+            "description": [
+                "Proof that you were able to feed a blobulyte all day. If you bring 30 of these to the Picnic Stowaway, you'll get a Trophy! Hold down to add to your token bag ",
+                "Proof that you were able to feed a blobulyte all day. If you bring 30 of these to the Picnic Stowaway, you'll get a Trophy! Hold down to add to your token bag DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken5": {
+            "description": [
+                "Proof that you completed all of the Woodsman's quests! Hold down to add to your token bag found in Storage Info. Open items, look at the top left. ",
+                "Proof that you completed all of the Woodsman's quests! Hold down to add to your token bag found in Storage Info. Open items, look at the top left. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken26": {
+            "description": [
+                "Proof that you completed all of Scubidew's quests! Well, most of them, at least. Hold down to add to your token pouch found in Storage Info. ",
+                "Proof that you completed all of Scubidew's quests! Well, most of them, at least. Hold down to add to your token pouch found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "BadgeD1": {
+            "description": [
+                "Made up of all the tokens that you collected after completing an NPC's entire questline. ",
+                "Made up of all the tokens that you collected after completing an NPC's entire questline. DONT SELL THIS ITEM "
+            ]
+        },
+        "BadgeD3": {
+            "description": [
+                "Proof that you collected all the coolest and rarest items that Yumyum Desert has to offer! ",
+                "Proof that you collected all the coolest and rarest items that Yumyum Desert has to offer! DONT SELL THIS ITEM "
+            ]
+        },
+        "BadgeG1": {
+            "description": [
+                "Made up of all the tokens that you collected after completing an NPC's entire questline. ",
+                "Made up of all the tokens that you collected after completing an NPC's entire questline.  DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken24": {
+            "description": [
+                "Proof that you completed all of Loominadi's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Loominadi's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken36": {
+            "description": [
+                "Proof that you completed all of Yondergreen's quests! Hold down to add to your token bag, found in Storage Info. ",
+                "Proof that you completed all of Yondergreen's quests! Hold down to add to your token bag, found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken16": {
+            "description": [
+                "Proof that you completed all of Bandit Bob's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Bandit Bob's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken2": {
+            "description": [
+                "Made up of the tokens from all of the Blunder NPCs whose quests are tough to complete. ",
+                "Made up of the tokens from all of the Blunder NPCs whose quests are tough to complete. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken29": {
+            "description": [
+                "Made up of the tokens from all of the Yumyum NPCs whose quests are tough to complete. ",
+                "Made up of the tokens from all of the Yumyum NPCs whose quests are tough to complete. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken33": {
+            "description": [
+                "Proof that you completed all of Bellows' quests! Hold down to add to your token bag, found in Storage Info. ",
+                "Proof that you completed all of Bellows' quests! Hold down to add to your token bag, found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken18": {
+            "description": [
+                "Proof that you completed all of Whattso's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Whattso's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "BadgeG2": {
+            "description": [
+                "Proof that you mastered the art of the Mining, Smithing, and Choppin skills. ",
+                "Proof that you mastered the art of the Mining, Smithing, and Choppin skills. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken9": {
+            "description": [
+                "Proof that you completed all of Funguy's quests! Hold down to add to your token bag found in Storage Info. Open items, look at the top left. ",
+                "Proof that you completed all of Funguy's quests! Hold down to add to your token bag found in Storage Info. Open items, look at the top left. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken10": {
+            "description": [
+                "Proof that you completed all of Krunk's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Krunk's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken28": {
+            "description": [
+                "Made up of the tokens from all of the Yumyum NPCs whose quests are easiest to complete. ",
+                "Made up of the tokens from all of the Yumyum NPCs whose quests are easiest to complete. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken11": {
+            "description": [
+                "Proof that you completed all of Tiki Chief's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Tiki Chief's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken17": {
+            "description": [
+                "Proof that you completed all of Snake Jar's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Snake Jar's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "BadgeD2": {
+            "description": [
+                "Proof that you mastered the art of the Fishing, Alchemy, and Catching skills. ",
+                "Proof that you mastered the art of the Fishing, Alchemy, and Catching skills. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken15": {
+            "description": [
+                "Proof that you completed all of TP Pete's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of TP Pete's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken3": {
+            "description": [
+                "Made up of the tokens from all of the Blunder NPCs whose quests are hardest to complete. ",
+                "Made up of the tokens from all of the Blunder NPCs whose quests are hardest to complete. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken1": {
+            "description": [
+                "Made up of the tokens from all of the Blunder NPCs whose quests are easiest to complete. ",
+                "Made up of the tokens from all of the Blunder NPCs whose quests are easiest to complete. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken19": {
+            "description": [
+                "Proof that you completed all of Cowbo Jones's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Cowbo Jones's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken21": {
+            "description": [
+                "Proof that you completed all of Goldric's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Goldric's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken34": {
+            "description": [
+                "Proof that you completed all of Snouts' quests! Hold down to add to your token bag, found in Storage Info. ",
+                "Proof that you completed all of Snouts' quests! Hold down to add to your token bag, found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken14": {
+            "description": [
+                "Proof that you completed all of Dazey's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Dazey's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken25": {
+            "description": [
+                "Proof that you completed all of Djonnut's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Djonnut's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken37": {
+            "description": [
+                "Proof that you completed all of Bill Brr's quests! Hold down to add to your token bag, found in Storage Info. ",
+                "Proof that you completed all of Bill Brr's quests! Hold down to add to your token bag, found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken38": {
+            "description": [
+                "Proof that you completed all of Crystalswine's quests! Hold down to add to your token bag, found in Storage Info. ",
+                "Proof that you completed all of Crystalswine's quests! Hold down to add to your token bag, found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "NPCtoken23": {
+            "description": [
+                "Proof that you completed all of Wellington's quests! Hold down to add to your token bag found in Storage Info. ",
+                "Proof that you completed all of Wellington's quests! Hold down to add to your token bag found in Storage Info. DONT SELL THIS ITEM "
+            ]
+        },
+        "BadgeG3": {
+            "description": [
+                "Proof that you collected all the coolest and rarest items that Blunder Hills has to offer! ",
+                "Proof that you collected all the coolest and rarest items that Blunder Hills has to offer! DONT SELL THIS ITEM "
+            ]
+        }
     }
 }

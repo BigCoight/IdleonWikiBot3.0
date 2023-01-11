@@ -147,6 +147,8 @@ class IdleonReader:
 		self.codeReader.addSection("SkullShopDesc = function ()", "SkullShop")
 		self.codeReader.addSection("MapName = function ()", "MapInternal")
 
+		self.codeReader.addSection("AtomInfo = function ()", "AtomInfo")
+
 		# World 5
 		self.codeReader.addSection("GamingUpgrades = function ()", "GamingUpgrades")
 		self.codeReader.addSection("GodsInfo = function ()", "GodsInfo")

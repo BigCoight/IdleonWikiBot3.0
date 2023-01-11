@@ -1691,7 +1691,7 @@
             "enemy": "mushG",
             "world": "Blunder Hills",
             "map": {"intName": "GrasslandsA", "name": "Spore Meadows", "id": 1},
-            "portalRequirements": [20]
+            "portalRequirements": [11]
         },
         "navigation": {
             "prev": null,
@@ -1728,18 +1728,18 @@
             {"item": "COIN", "quantity": 3, "chance": 0.48, "questLink": "N/A"},
             {"item": "Grasslands2", "quantity": 1, "chance": 0.21, "questLink": "N/A"},
             {"item": "CardsA2", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
-            {"item": "Quest3", "quantity": 1, "chance": 0.15, "questLink": "Picnic_Stowaway2"},
-            {"item": "Quest4", "quantity": 1, "chance": 0.15, "questLink": "Picnic_Stowaway2"},
+            {"item": "Quest3", "quantity": 1, "chance": 0.5, "questLink": "Picnic_Stowaway2"},
+            {"item": "Quest4", "quantity": 1, "chance": 0.3, "questLink": "Picnic_Stowaway2"},
             {"item": "FoodPotMana1", "quantity": 1, "chance": 0.002, "questLink": "N/A"},
-            {"item": "EquipmentHats6", "quantity": 1, "chance": 0.00025, "questLink": "N/A"},
             {"item": "InvStorageF", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
+            {"item": "EquipmentHats6", "quantity": 1, "chance": 0.00025, "questLink": "N/A"},
             {"item": "DropTable1", "quantity": 1, "chance": 0.0038, "questLink": "N/A"}
         ],
         "mapData": {
             "enemy": "frogG",
             "world": "Blunder Hills",
             "map": {"intName": "GrasslandsB", "name": "Froggy Fields", "id": 2},
-            "portalRequirements": [30]
+            "portalRequirements": [20]
         },
         "navigation": {
             "prev": "mushR",
@@ -3599,8 +3599,8 @@
             {"item": "GalaxyA2", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
             {"item": "GalaxyA2b", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "Line12", "quantity": 1, "chance": 2.2e-06, "questLink": "N/A"},
-            {"item": "CardsG2", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "InvStorage22", "quantity": 1, "chance": 8e-06, "questLink": "N/A"},
+            {"item": "CardsG2", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "DropTable19", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
         ],
         "mapData": {
@@ -3819,8 +3819,8 @@
         "drops": [
             {"item": "COIN", "quantity": 1600, "chance": 0.5, "questLink": "N/A"},
             {"item": "GalaxyB3", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
-            {"item": "CardsG7", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "InvStorageS", "quantity": 1, "chance": 3.8e-06, "questLink": "N/A"},
+            {"item": "CardsG7", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "DropTable20", "quantity": 1, "chance": 0.0029, "questLink": "N/A"}
         ],
         "mapData": {
@@ -3907,8 +3907,8 @@
         "drops": [
             {"item": "COIN", "quantity": 2500, "chance": 0.5, "questLink": "N/A"},
             {"item": "GalaxyB5", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
-            {"item": "CardsG9", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "InvStorage23", "quantity": 1, "chance": 1e-06, "questLink": "N/A"},
+            {"item": "CardsG9", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "DropTable20", "quantity": 1, "chance": 0.0033, "questLink": "N/A"}
         ],
         "mapData": {
@@ -4172,8 +4172,8 @@
         "drops": [
             {"item": "COIN", "quantity": 7000, "chance": 0.5, "questLink": "N/A"},
             {"item": "LavaA2", "quantity": 1, "chance": 0.15, "questLink": "N/A"},
-            {"item": "CardsH2", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "SmithingRecipes5", "quantity": 20, "chance": 1e-05, "questLink": "N/A"},
+            {"item": "CardsH2", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "StampC16", "quantity": 1, "chance": 3e-06, "questLink": "N/A"},
             {"item": "DropTable25", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
         ],
@@ -4261,8 +4261,9 @@
         "drops": [
             {"item": "COIN", "quantity": 10000, "chance": 0.5, "questLink": "N/A"},
             {"item": "LavaA4", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
-            {"item": "CardsH4", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "SmithingRecipes5", "quantity": 0, "chance": 1e-06, "questLink": "N/A"},
+            {"item": "CardsH4", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+            {"item": "InvStorageC", "quantity": 1, "chance": 1.01e-06, "questLink": "N/A"},
             {"item": "DropTable25", "quantity": 1, "chance": 0.0034, "questLink": "N/A"}
         ],
         "mapData": {
@@ -4477,8 +4478,8 @@
             "ExpType": 0,
             "Defence": 26000,
             "MoveSPEED": 3,
-            "Damages": [40000, 1],
-            "DefFor0": 35242.3
+            "Damages": [30000, 1],
+            "DefFor0": 27591.3
         },
         "drops": [
             {"item": "COIN", "quantity": 22000, "chance": 0.5, "questLink": "N/A"},
@@ -4565,8 +4566,8 @@
             "ExpType": 0,
             "Defence": 36000,
             "MoveSPEED": 3,
-            "Damages": [60000, 1],
-            "DefFor0": 49629.3
+            "Damages": [40000, 1],
+            "DefFor0": 35242.3
         },
         "drops": [
             {"item": "COIN", "quantity": 29000, "chance": 0.5, "questLink": "N/A"},
@@ -4609,8 +4610,8 @@
             "ExpType": 0,
             "Defence": 45000,
             "MoveSPEED": 4,
-            "Damages": [2100, 1],
-            "DefFor0": 2541.34
+            "Damages": [40000, 1],
+            "DefFor0": 35242.3
         },
         "drops": [
             {"item": "COIN", "quantity": 36000, "chance": 0.5, "questLink": "N/A"},
@@ -4652,8 +4653,8 @@
             "ExpType": 0,
             "Defence": 50000,
             "MoveSPEED": 2,
-            "Damages": [2100, 1],
-            "DefFor0": 2541.34
+            "Damages": [200000, 1],
+            "DefFor0": 135245
         },
         "drops": [
             {"item": "COIN", "quantity": 50000, "chance": 0.5, "questLink": "N/A"},
@@ -7473,7 +7474,7 @@
         "drops": [
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
             {"item": "CardsF24", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
-            {"item": "DropTable22", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
+            {"item": "Leaf5", "quantity": 1, "chance": 0.0049, "questLink": "N/A"}
         ],
         "mapData": null,
         "navigation": null,
@@ -7504,7 +7505,7 @@
         "drops": [
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
             {"item": "CardsF25", "quantity": 1, "chance": 5e-06, "questLink": "N/A"},
-            {"item": "DropTable22", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
+            {"item": "Leaf5", "quantity": 1, "chance": 0.0049, "questLink": "N/A"}
         ],
         "mapData": null,
         "navigation": null,

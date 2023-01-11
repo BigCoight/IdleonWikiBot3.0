@@ -16,11 +16,7 @@
         "x2": 50,
         "func": "decayMulti",
         "description": "All Orange Passive Bubbles, which are the smaller sized ones, give a {x higher bonus to your warrior-based classes.",
-        "requirements": [
-            {"item": "Grasslands1", "quantity": 20},
-            {"item": "CraftMat1", "quantity": 3},
-            {"liquidNo": "1", "quantity": 2}
-        ],
+        "requirements": [{"item": "Grasslands1", "quantity": 20}, {"liquidNo": "1", "quantity": 2}],
         "bonusKey": "Opassz"
     },
     "Hearty Diggy": {
@@ -30,11 +26,7 @@
         "x2": 100,
         "func": "decay",
         "description": "+{% mining efficiency per power of 10 max HP that your character has. The perfect bonus for miners with infinite HP!",
-        "requirements": [
-            {"item": "JungleTree", "quantity": 40},
-            {"item": "CopperBar", "quantity": 18},
-            {"liquidNo": "1", "quantity": 2}
-        ],
+        "requirements": [{"item": "JungleTree", "quantity": 40}, {"liquidNo": "1", "quantity": 2}],
         "bonusKey": "MinEff"
     },
     "Wyoming Blood": {
@@ -44,11 +36,7 @@
         "x2": 1.5,
         "func": "bigBase",
         "description": "Multi-Ore mining chance is increased by +{%, and your max Multi-Ore chance is 300% instead of 100%.",
-        "requirements": [
-            {"item": "Bug1", "quantity": 30},
-            {"item": "Forest1", "quantity": 50},
-            {"liquidNo": "1", "quantity": 3}
-        ],
+        "requirements": [{"item": "Bug1", "quantity": 30}, {"liquidNo": "1", "quantity": 3}],
         "bonusKey": "MiningACTIVE"
     },
     "Reely Smart": {
@@ -58,11 +46,7 @@
         "x2": 80,
         "func": "decay",
         "description": "+{% Mining and Fishing EXP gain. Y'know what, I'll even DOUBLE that bonus for whichever skill has the lower level!",
-        "requirements": [
-            {"item": "CraftMat6", "quantity": 25},
-            {"item": "DesertA3", "quantity": 40},
-            {"liquidNo": "1", "quantity": 3}
-        ],
+        "requirements": [{"item": "CraftMat6", "quantity": 25}, {"liquidNo": "1", "quantity": 3}],
         "bonusKey": "MinFishEXP"
     },
     "Big Meaty Claws": {
@@ -72,11 +56,7 @@
         "x2": 0.02,
         "func": "add",
         "description": "Increases base damage by +$. This bonus increases based on how much Max HP you have above 250.",
-        "requirements": [
-            {"item": "BirchTree", "quantity": 200},
-            {"item": "DesertB2", "quantity": 75},
-            {"liquidNo": "1", "quantity": 4}
-        ],
+        "requirements": [{"item": "DesertB2", "quantity": 200}, {"liquidNo": "1", "quantity": 4}],
         "bonusKey": "bdmgHP"
     },
     "Sploosh Sploosh": {
@@ -96,11 +76,7 @@
         "x2": 70,
         "func": "decay",
         "description": "The following tools give +{% more skilling Power than normal: $",
-        "requirements": [
-            {"item": "Plat", "quantity": 60},
-            {"item": "Grasslands2", "quantity": 200},
-            {"liquidNo": "1", "quantity": 4}
-        ],
+        "requirements": [{"item": "Plat", "quantity": 60}, {"liquidNo": "1", "quantity": 4}],
         "bonusKey": "ToolW"
     },
     "Fmj": {
@@ -110,12 +86,7 @@
         "x2": 0,
         "func": "add",
         "description": "+{% more defence from Equipment. Also, +1 base Def per Class LV, up to +{.",
-        "requirements": [
-            {"item": "Bug4", "quantity": 50},
-            {"item": "DesertC2", "quantity": 140},
-            {"liquidNo": "1", "quantity": 5},
-            {"liquidNo": "2", "quantity": 2}
-        ],
+        "requirements": [{"item": "Bug4", "quantity": 50}, {"liquidNo": "1", "quantity": 5}],
         "bonusKey": "DefPct"
     },
     "Bappity Boopity": {
@@ -125,12 +96,7 @@
         "x2": 100,
         "func": "decay",
         "description": "+{% critical Damage. Badabing, badaboom! Or in Italian, Babadabinga, babadaboomahh!",
-        "requirements": [
-            {"item": "CraftMat8", "quantity": 100},
-            {"item": "JungleTree", "quantity": 700},
-            {"liquidNo": "1", "quantity": 5},
-            {"liquidNo": "2", "quantity": 2}
-        ],
+        "requirements": [{"item": "CraftMat8", "quantity": 100}, {"liquidNo": "1", "quantity": 5}],
         "bonusKey": "critDMG"
     },
     "Brittley Spears": {
@@ -300,11 +266,7 @@
         "x2": 50,
         "func": "decayMulti",
         "description": "All Green Passive Bonuses, which are the smaller sized ones, give {x more bonuses to your archer-based characters.",
-        "requirements": [
-            {"item": "Grasslands1", "quantity": 20},
-            {"item": "BirchTree", "quantity": 30},
-            {"liquidNo": "1", "quantity": 2}
-        ],
+        "requirements": [{"item": "Grasslands1", "quantity": 20}, {"liquidNo": "1", "quantity": 2}],
         "bonusKey": "Gpassz"
     },
     "Hammer Hammer": {
@@ -314,11 +276,7 @@
         "x2": 2,
         "func": "bigBase",
         "description": "You can now produce +1 more items at once in the anvil, and your production speed is increased by {%.",
-        "requirements": [
-            {"item": "Iron", "quantity": 30},
-            {"item": "Grasslands3", "quantity": 30},
-            {"liquidNo": "1", "quantity": 2}
-        ],
+        "requirements": [{"item": "Iron", "quantity": 30}, {"liquidNo": "1", "quantity": 2}],
         "bonusKey": "AnvilACTIVE"
     },
     "Lil Big Damage": {
@@ -328,11 +286,7 @@
         "x2": 100,
         "func": "decay",
         "description": "+{% Mastery. Mastery is your stat that boosts minimum damage. Just like in Maplest... err, just like how I thought it up myself!",
-        "requirements": [
-            {"item": "Fish1", "quantity": 25},
-            {"item": "Jungle3", "quantity": 40},
-            {"liquidNo": "1", "quantity": 3}
-        ],
+        "requirements": [{"item": "Fish1", "quantity": 25}, {"liquidNo": "1", "quantity": 3}],
         "bonusKey": "Mastery"
     },
     "Anvilnomics": {
@@ -342,11 +296,7 @@
         "x2": 100,
         "func": "decay",
         "description": "Costs for buying Anvil Production Points is reduced by {%. This is just like a tax cut, so remember me as a hero!",
-        "requirements": [
-            {"item": "ForestTree", "quantity": 50},
-            {"item": "Gold", "quantity": 40},
-            {"liquidNo": "1", "quantity": 3}
-        ],
+        "requirements": [{"item": "ForestTree", "quantity": 50}, {"liquidNo": "1", "quantity": 3}],
         "bonusKey": "AnvilProdCost"
     },
     "Quick Slap": {
@@ -356,11 +306,7 @@
         "x2": 0.02,
         "func": "add",
         "description": "Increases base damage by +$. This bonus increases based on how much Movement Speed you have above 110%.",
-        "requirements": [
-            {"item": "DesertB1", "quantity": 90},
-            {"item": "CraftMat6", "quantity": 200},
-            {"liquidNo": "1", "quantity": 4}
-        ],
+        "requirements": [{"item": "DesertB1", "quantity": 90}, {"liquidNo": "1", "quantity": 4}],
         "bonusKey": "bdmgSPD"
     },
     "Sanic Tools": {
@@ -370,11 +316,7 @@
         "x2": 70,
         "func": "decay",
         "description": "The following tools give +{% more skilling Power than normal: $",
-        "requirements": [
-            {"item": "Jungle1", "quantity": 130},
-            {"item": "GoldBar", "quantity": 6},
-            {"liquidNo": "1", "quantity": 4}
-        ],
+        "requirements": [{"item": "Jungle1", "quantity": 130}, {"liquidNo": "1", "quantity": 4}],
         "bonusKey": "ToolA"
     },
     "Bug]": {
@@ -394,12 +336,7 @@
         "x2": 0,
         "func": "add",
         "description": "Your secondary stat (WIS for warrior, STR for archer, AGI for mage) gives +{% more Accuracy than normal.",
-        "requirements": [
-            {"item": "Fish4", "quantity": 65},
-            {"item": "PalmTree", "quantity": 250},
-            {"liquidNo": "1", "quantity": 5},
-            {"liquidNo": "2", "quantity": 2}
-        ],
+        "requirements": [{"item": "Fish4", "quantity": 65}, {"liquidNo": "1", "quantity": 5}],
         "bonusKey": "AccPct"
     },
     "Cheap Shot": {
@@ -409,12 +346,7 @@
         "x2": 100,
         "func": "decay",
         "description": "+{% critical Chance, as it increases the chance for your attack to hit the monster's privates, and for the monster to be male.",
-        "requirements": [
-            {"item": "Bug5", "quantity": 35},
-            {"item": "DesertC3", "quantity": 150},
-            {"liquidNo": "1", "quantity": 5},
-            {"liquidNo": "2", "quantity": 2}
-        ],
+        "requirements": [{"item": "Bug5", "quantity": 35}, {"liquidNo": "1", "quantity": 5}],
         "bonusKey": "CritChance"
     },
     "Bow Jack": {
@@ -574,7 +506,7 @@
         "x2": 0,
         "func": "add",
         "description": "+{ Total WIS. Honesty the greatest bonus in any Idle Game, believe me. Absolutely incredible, everyone says so!",
-        "requirements": [{"item": "CraftMat1", "quantity": 10}, {"liquidNo": "1", "quantity": 2}],
+        "requirements": [{"item": "BirchTree", "quantity": 16}, {"liquidNo": "1", "quantity": 2}],
         "bonusKey": "TotalWIS"
     },
     "Mage Is Best": {
@@ -584,11 +516,7 @@
         "x2": 50,
         "func": "decayMulti",
         "description": "All Purple Passive Bonuses, which are the smaller sized ones, give {x more bonuses to your mage-based characters.",
-        "requirements": [
-            {"item": "Grasslands1", "quantity": 25},
-            {"item": "CopperBar", "quantity": 13},
-            {"liquidNo": "1", "quantity": 2}
-        ],
+        "requirements": [{"item": "Grasslands1", "quantity": 20}, {"liquidNo": "1", "quantity": 2}],
         "bonusKey": "Ppassz"
     },
     "Hocus Choppus": {
@@ -598,11 +526,7 @@
         "x2": 100,
         "func": "decay",
         "description": "+{% choppin efficiency per power of 10 max MP that your character has. Super diaper! Err, duper.",
-        "requirements": [
-            {"item": "CraftMat5", "quantity": 22},
-            {"item": "ForestTree", "quantity": 40},
-            {"liquidNo": "1", "quantity": 2}
-        ],
+        "requirements": [{"item": "CraftMat5", "quantity": 22}, {"liquidNo": "1", "quantity": 2}],
         "bonusKey": "ChopEff"
     },
     "Molto Loggo": {
@@ -612,11 +536,7 @@
         "x2": 1.5,
         "func": "bigBase",
         "description": "Multi-Log chop chance is increased by +{%, and your max Multi-Log chance is now 300% instead of 100%.",
-        "requirements": [
-            {"item": "IronBar", "quantity": 21},
-            {"item": "DesertA2", "quantity": 30},
-            {"liquidNo": "1", "quantity": 3}
-        ],
+        "requirements": [{"item": "IronBar", "quantity": 21}, {"liquidNo": "1", "quantity": 3}],
         "bonusKey": "MultiLogACTIVE"
     },
     "Noodubble": {
@@ -626,11 +546,7 @@
         "x2": 60,
         "func": "decay",
         "description": "+{% Choppin' and Alchemy EXP gain. Y'know what, I'll even... actually, never mind.",
-        "requirements": [
-            {"item": "CraftMat7", "quantity": 20},
-            {"item": "Fish2", "quantity": 30},
-            {"liquidNo": "1", "quantity": 3}
-        ],
+        "requirements": [{"item": "CraftMat7", "quantity": 20}, {"liquidNo": "1", "quantity": 3}],
         "bonusKey": "ChopAlchEXP"
     },
     "Name I Guess": {
@@ -640,11 +556,7 @@
         "x2": 0.02,
         "func": "add",
         "description": "Increases base damage by +$. This bonus increases based on how much Max MP you have above 150.",
-        "requirements": [
-            {"item": "Jungle2", "quantity": 110},
-            {"item": "Gold", "quantity": 40},
-            {"liquidNo": "1", "quantity": 4}
-        ],
+        "requirements": [{"item": "Gold", "quantity": 40}, {"liquidNo": "1", "quantity": 4}],
         "bonusKey": "bdmgMP"
     },
     "Le Brain Tools": {
@@ -654,11 +566,7 @@
         "x2": 70,
         "func": "decay",
         "description": "The following tools give +{% more skilling Power than normal: $",
-        "requirements": [
-            {"item": "BirchTree", "quantity": 250},
-            {"item": "Bug3", "quantity": 55},
-            {"liquidNo": "1", "quantity": 4}
-        ],
+        "requirements": [{"item": "Bug3", "quantity": 55}, {"liquidNo": "1", "quantity": 4}],
         "bonusKey": "ToolM"
     },
     "Cookin Roadkill": {
@@ -678,12 +586,7 @@
         "x2": 100,
         "func": "decay",
         "description": "+{% Brew Speed. This a multiplicative bonus, which means its ultra powerful, all the time! Even on Mondays, the worst day!",
-        "requirements": [
-            {"item": "DesertC1", "quantity": 150},
-            {"item": "Fish4", "quantity": 50},
-            {"liquidNo": "1", "quantity": 5},
-            {"liquidNo": "2", "quantity": 2}
-        ],
+        "requirements": [{"item": "DesertC1", "quantity": 150}, {"liquidNo": "1", "quantity": 5}],
         "bonusKey": "BrewSpd"
     },
     "All For Kill": {
@@ -693,12 +596,7 @@
         "x2": 100,
         "func": "decay",
         "description": "Attack Talents give +{% higher bonuses to Offline Gains than they normally do. So you might as well just AFK forever, bye!",
-        "requirements": [
-            {"item": "StumpTree", "quantity": 100},
-            {"item": "PlatBar", "quantity": 5},
-            {"liquidNo": "1", "quantity": 5},
-            {"liquidNo": "2", "quantity": 2}
-        ],
+        "requirements": [{"item": "StumpTree", "quantity": 100}, {"liquidNo": "1", "quantity": 5}],
         "bonusKey": "AttackAfk"
     },
     "Matty Stafford": {
@@ -858,12 +756,7 @@
         "x2": 0,
         "func": "add",
         "description": "+{ LUK. Also, this will increase your chances of winning the lottery in real life from 0.0% to 0.000%! I'm not even joking, it's true!!",
-        "requirements": [
-            {"item": "Copper", "quantity": 11},
-            {"item": "OakTree", "quantity": 15},
-            {"item": "CraftMat1", "quantity": 8},
-            {"liquidNo": "1", "quantity": 2}
-        ],
+        "requirements": [{"item": "CraftMat1", "quantity": 9}, {"liquidNo": "1", "quantity": 2}],
         "bonusKey": "TotalLUK"
     },
     "Droppin Loads": {
@@ -873,11 +766,7 @@
         "x2": 70,
         "func": "decay",
         "description": "+{% Drop Rate. Thanks to this upgrade, you can get even MORE angry when you keep not getting that rare pet drop from the boss!",
-        "requirements": [
-            {"item": "Fish1", "quantity": 20},
-            {"item": "Bug1", "quantity": 30},
-            {"liquidNo": "1", "quantity": 2}
-        ],
+        "requirements": [{"item": "Fish1", "quantity": 20}, {"liquidNo": "1", "quantity": 2}],
         "bonusKey": "DropRate"
     },
     "Startue Exp": {
@@ -887,11 +776,7 @@
         "x2": 60,
         "func": "decay",
         "description": "Leveling up a statue resets it's exp bar down to {%, instead of 0%. Staturrific! Yea... the jokes are only gonna go downhill from here lol",
-        "requirements": [
-            {"item": "DesertA1", "quantity": 30},
-            {"item": "Forest2", "quantity": 40},
-            {"liquidNo": "1", "quantity": 2}
-        ],
+        "requirements": [{"item": "DesertA1", "quantity": 30}, {"liquidNo": "1", "quantity": 2}],
         "bonusKey": "StatueStartEXP"
     },
     "Level Up Gift": {
@@ -901,12 +786,7 @@
         "x2": 30,
         "func": "decay",
         "description": "Whenever you level up anything, {% chance to drop a gift! It could be an EXP balloon, a Gem for the gem shop, or something crazy weird!",
-        "requirements": [
-            {"item": "Iron", "quantity": 35},
-            {"item": "JungleTree", "quantity": 70},
-            {"item": "CraftMat5", "quantity": 30},
-            {"liquidNo": "1", "quantity": 2}
-        ],
+        "requirements": [{"item": "DesertA3", "quantity": 30}, {"liquidNo": "1", "quantity": 2}],
         "bonusKey": "LevelUpACTIVE"
     },
     "Prowesessary": {
@@ -916,11 +796,7 @@
         "x2": 60,
         "func": "decayMulti",
         "description": "The Prowess Bonus for every skill is multiplied by {. Prowess lowers the Efficiency needed to get multiple QTY per drop from resources.",
-        "requirements": [
-            {"item": "GoldBar", "quantity": 25},
-            {"item": "ToiletTree", "quantity": 50},
-            {"liquidNo": "1", "quantity": 3}
-        ],
+        "requirements": [{"item": "ToiletTree", "quantity": 50}, {"liquidNo": "1", "quantity": 3}],
         "bonusKey": "ProwessMulti"
     },
     "Stamp Tramp": {
@@ -970,11 +846,7 @@
         "x2": 100,
         "func": "decay",
         "description": "Every time you upgrade an Alchemy bubble, there's a {% chance it'll upgrade 2 times, for no extra cost! Two fer one, getter dun!",
-        "requirements": [
-            {"item": "Dementia", "quantity": 50},
-            {"item": "DesertC4", "quantity": 130},
-            {"liquidNo": "2", "quantity": 4}
-        ],
+        "requirements": [{"item": "Dementia", "quantity": 50}, {"liquidNo": "2", "quantity": 4}],
         "bonusKey": "DoubleBubbleUpg"
     },
     "Cogs For Hands": {
@@ -1120,10 +992,10 @@
     "Atom Split": {
         "cauldron": "Kazam Cauldron",
         "name": "Atom Split",
-        "x1": 50,
-        "x2": 60,
+        "x1": 14,
+        "x2": 40,
         "func": "decay",
-        "description": "+{% chance to gain 2x atoms from the Supercollider",
+        "description": "+{% lower particle cost for upgrading all atoms",
         "requirements": [{"item": "LavaC2", "quantity": 250}, {"liquidNo": "3", "quantity": 6}],
         "bonusKey": "Y5"
     },

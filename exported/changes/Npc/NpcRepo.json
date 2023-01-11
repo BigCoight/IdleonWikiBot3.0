@@ -1,25 +1,72 @@
 {
     "new": {},
     "changes": {
-        "Picnic Stowaway": {
+        "Scripticus": {
             "quests": {
-                "The Hungry Stowaway": {
+                "The Unoccupied Picnic": {
+                    "Rewards": {
+                        "1": [{"item": "Experience0", "quantity": 120}, {"item": "Experience0", "quantity": 400}],
+                        "2": [{"item": "", "quantity": 300}, {"item": "", "quantity": 500}]
+                    }
+                }
+            }
+        },
+        "Stiltzcho": {
+            "quests": {
+                "No Stone Unturned": {
                     "DialogueText": [
-                        "Well come on now I aint gonna give you part of my stash here for nothin'. This is a picnic basket not a charity house! Bring me something and maybe we can fix up a deal... <br> QUEST:Buy and bring 50 Nomwiches from the Town Shop.",
-                        "Well come on now I aint gonna give you part of my stash here for nothin'. This is a picnic basket not a charity house! Bring me something and maybe we can fix up a deal... <br> QUEST:Buy and bring 30 Nomwiches from the Town Shop."
+                        "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boa Snakes until you find a clue",
+                        "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boa Snakes until you find remnanets of the gem thief. Baby Boas are on the next map."
                     ]
                 }
             }
         },
-        "Yondergreen": {
+        "Promotheus": {
             "quests": {
-                "Stance on Big Tech": {
+                "Three Right Answers": {
+                    "Rewards": {
+                        "2": [{"item": "", "quantity": 1000}, {"item": "", "quantity": 2500}],
+                        "0": [{"item": "ResetCompleted", "quantity": 1}, {"item": "ResetCompleted", "quantity": 3}],
+                        "1": [{"item": "ResetFrag", "quantity": 8}, {"item": "ResetFrag", "quantity": 9}]
+                    }
+                }
+            }
+        },
+        "Poigu": {
+            "quests": {
+                "Learn the Language of the Universe": {"Rewards": {"0": [" ", {"item": "Pearl6", "quantity": 3}]}}
+            }
+        },
+        "Builder Bird": {
+            "quests": {
+                "Restoring Power to the Portal": {
                     "DialogueText": [
-                        "So how about big tech then? <br> QUEST:Take a printer sample of at least 25 pens",
-                        "So how about big tech then? <br> QUEST:Take a printer sample of at least 20 pens"
+                        "Kacaw! <br> 'The bird awaits the return of the town gem. They're ready to restore the gem to the portal allowing travel to World 2. They look very stylish in their matching orange hat and scarf.'",
+                        "Kacaw! <br> 'Defeat the Boss at the end of World 1 to retrieve the gem. The bird will use the gem to fix the portal allowing travel to World 2. The bird looks very stylish in their matching orange hat and scarf.'"
+                    ],
+                    "Rewards": {"2": [" ", {"item": "ResetCompletedS", "quantity": 3}]}
+                }
+            }
+        },
+        "Picnic Stowaway": {
+            "quests": {
+                "Live-Action Entertainment": {
+                    "DialogueText": [
+                        "One... two... THREE!!! Oh and these monsters have Increased Damage watch out! If you fail you can forfeit and retry using the Codex!",
+                        "One... two... THREE!!! Oh and these monsters have Increased Damage watch out! <br> QUEST:Kill the green mushrooms! If you fail forfeit the quest using the Codex and retry!"
+                    ]
+                },
+                "The Hungry Stowaway": {"Rewards": {"2": [" ", {"item": "Timecandy1", "quantity": 1}]}},
+                "Beating Up Frogs for some Sauce": {
+                    "DialogueText": [
+                        "Why don't you go 'ask' the frogs around here for some Condiments. Those Fists of yours seem like persuasive talkers! I'll hold onto these nomwiches in the meantime... for safe keeping you know?",
+                        "Why don't you go 'ask' the frogs around here for some Condiments. Those Fists of yours seem like persuasive talkers! I'll hold onto these nomwiches in the meantime... for safe keeping you know? <br> QUEST:Kill frogs for condiments! Use your blue time candies to speed it up."
                     ]
                 }
             }
+        },
+        "Glumlee": {
+            "quests": {"Learning to Smelt": {"Rewards": {"2": [" ", {"item": "rtt0", "quantity": 10}]}}}
         }
     }
 }

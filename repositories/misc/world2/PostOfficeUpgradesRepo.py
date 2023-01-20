@@ -25,8 +25,11 @@ class PostOfficeUpgradesRepo(Repository[PostOfficeUpgrades]):
 						bonus = box[i * 4 + 4],
 						x1 = box[i * 4 + 1],
 						x2 = box[i * 4 + 2],
-						func = box[i * 4 + 3])
+						func = box[i * 4 + 3],
+						bonusKey = box[16 + i],
+						investmentReq = 0 if i == 0 else box[12 + i])
 				)
 			cls.add(box[0], PostOfficeUpgrades(
 				name = box[0],
-				bonuses = upgrades.copy()))
+				bonuses = upgrades.copy(),
+				maxLevel = box[15]))

@@ -9,8 +9,11 @@ class PostOfficeUpgrade(IdleonModel):
 	x1: Numeric
 	x2: Numeric
 	func: str
+	bonusKey: str
+	investmentReq: Numeric
 
 
 class PostOfficeUpgrades(IdleonModel):
 	name: str
 	bonuses: List[PostOfficeUpgrade]
+	maxLevel: Numeric

@@ -20,25 +20,40 @@ class Item(IdleonModel):
 	vendors: Optional[ItemVendors] = None
 	anvilProduction: Optional[AnvilProduce] = None
 	detDrops: Optional[DetDrops] = None
-	order: Optional[SlabItemSort]
+	slabSort: Optional[SlabItemSort]
 
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
-		res = self.getCorrectHead()
+		before = self.writeBefore()
+		after = self.writeAfter()
+		for _, subModel in self:
+			if not subModel:
+				continue
+			if not isinstance(subModel, IdleonModel):
+				continue
+			before += subModel.writeBefore()
+			after += subModel.writeAfter()
+
+		res = ""
+		writeBefore = filter(lambda x: x, before)
+		for subModel in writeBefore:
+			res += subModel.writeWiki()
+
+		res += self.getCorrectHead()
 		res += self.item.writeWiki()
 		if self.recipe:
 			res += f"|sellprice={self.recipe.sellPrice}\n"
 		else:
 			res += f"|sellprice={self.item.sellPrice}\n"
+		if self.slabSort:
+			res += f"|order={self.slabSort.order}\n"
 		# if self.sources:
 		# 	res += self.sources.writeWiki()
 		if self.notes:
 			res += self.notes.writeWiki()
-		if self.order:
-			res += f"|order={self.order.order}\n"
 		res += "}}\n"
 
-		toWrite = filter(lambda x: x, self.item.writeAfter() + self.writeAfter())
-		for subModel in toWrite:
+		writeAfter = filter(lambda x: x, after)
+		for subModel in writeAfter:
 			res += subModel.writeWiki()
 		return res
 
@@ -52,4 +67,7 @@ class Item(IdleonModel):
 		return "{{InfoItem\n"
 
 	def writeAfter(self) -> List[IdleonModel]:
-		return [self.recipe, self.vendors, self.anvilProduction, self.detDrops]
+		return [self.vendors, self.anvilProduction, self.detDrops]
+
+	def writeBefore(self) -> List[IdleonModel]:
+		return [self.recipe]

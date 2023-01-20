@@ -90,6 +90,15 @@ class RandoListDescriptions(int, IdleonEnum, metaclass = CheckIn):
 	bossObols = auto()
 	xYOfMutationDisplay = auto()
 	npcsInSmolderin = auto()
+	dk1 = auto()
+	dk2 = auto()
+	dk3 = auto()
+	dk4 = auto()
+	dk5 = auto()
+	dk6 = auto()
+	dk7 = auto()
+	dk8 = auto()
+
 
 
 class RandoListRepo(Repository[RandoList]):

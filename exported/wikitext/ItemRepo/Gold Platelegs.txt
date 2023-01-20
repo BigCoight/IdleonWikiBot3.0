@@ -1,16 +1,3 @@
-{{InfoItem
-|type=Pants
-|class=All
-|level=35
-|str=4
-|agi=4
-|wis=4
-|upgrade=3
-|defence=16
-|sellprice=57285
-|notes= 
-|order=322
-}}
 {{ForgeSlot
 |anvtab=Anvil Tab 2
 |craftnum=3
@@ -21,7 +8,22 @@
 |resource2=Goldfish|quantity2=500
 |resource3=Gold Bar|quantity3=475
 }}
-{{detrecipe/tab
+{{InfoItem
+|type=Pants
+|class=All
+|level=35
+|str=4
+|agi=4
+|wis=4
+|upgrade=3
+|defence=16
+|sellprice=57285
+|order=323
+|notes= 
+}}
+{{detdrops/head}}
+{{detdrops|[[Sandstone Golden Chest]]|0.04|1}}
+|}{{detrecipe/tab
 |reci=
 {{detrecipe|3|Copper Platelegs|1}}
 {{detrecipe|40|Copper Bar|30}}
@@ -34,6 +36,3 @@
 {{detrecipe/totals|Copper Bar|30}}
 {{detrecipe/totals|Bleach Logs|150}}
 }}
-{{detdrops/head}}
-{{detdrops|[[Sandstone Golden Chest]]|0.04|1}}
-|}

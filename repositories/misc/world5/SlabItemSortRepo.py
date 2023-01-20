@@ -28,3 +28,10 @@ class SlabItemSortRepo(Repository[SlabItemSort]):
 	@classmethod
 	def getWikiName(cls, name: str) -> str:
 		return ItemDetailRepo.getDisplayName(name)
+
+	@classmethod
+	def _extractWikiSingle(cls) -> str:
+		def toName(slab: SlabItemSort) -> str:
+			return cls.getWikiName(slab.item.item)
+
+		return ",".join(map(toName, cls.itemsList()))

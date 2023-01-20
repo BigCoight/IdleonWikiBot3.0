@@ -44,7 +44,7 @@ class ItemRepo(Repository[Item]):
 				vendors = VendorRepo.getVendorFromItem(item),
 				anvilProduction = AnvilRepo.get(item),
 				detDrops = DetDropsRepo.get(item),
-				order = SlabItemSortRepo.get(item)
+				slabSort = SlabItemSortRepo.get(item)
 			))
 
 	@classmethod

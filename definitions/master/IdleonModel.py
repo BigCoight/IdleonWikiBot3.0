@@ -232,6 +232,9 @@ class IdleonModel(BaseModel):
 	def writeAfter(self) -> List[IdleonModel]:
 		return []
 
+	def writeBefore(self) -> List[IdleonModel]:
+		return []
+
 	def toDict(self, ignored: Set[str] = set()) -> Dict[str, any]:
 		firstIter = {}
 		for atr, val in self:

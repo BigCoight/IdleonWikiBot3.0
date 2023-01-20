@@ -45,7 +45,7 @@ class Recipe(IdleonModel):
 		res += super().writeWiki()
 		res += self.writeRecipe()
 		res += "}}\n"
-		res += self.detailedRecipe.writeWiki()
+		# res += self.detailedRecipe.writeWiki()
 		return res
 
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
@@ -70,3 +70,6 @@ class Recipe(IdleonModel):
 		if not self.recipeFrom:
 			return "Start"
 		return ", ".join(map(lambda x: x.wikiName, self.recipeFrom))
+
+	def writeAfter(self) -> List[IdleonModel]:
+		return [self.detailedRecipe]

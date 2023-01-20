@@ -1,10 +1,3 @@
-{{InfoItem
-|type=Summon Item
-|description=Blinks repeatedly when close to the Black Market, where you buy the Ankh used in the ice zone to get the Hedjet... wait, wrong game, sorry! 
-|sellprice=29360
-|notes= 
-|order=710
-}}
 {{ForgeSlot
 |anvtab=Anvil Tab 2
 |craftnum=59
@@ -13,15 +6,22 @@
 |recipefrom=[[Sand Giant]]
 |resource1=Silver Antique|quantity1=1
 |resource2=Gold Bar|quantity2=80
-|resource3=Ghost|quantity3=1
+|resource3=Ghost|quantity3=5
+}}
+{{InfoItem
+|type=Summon Item
+|description=Blinks repeatedly when close to the Black Market, where you buy the Ankh used in the ice zone to get the Hedjet... wait, wrong game, sorry! 
+|sellprice=30000
+|order=702
+|notes= 
 }}
 {{detrecipe/tab
 |reci=
 {{detrecipe|3|Silver Antique|1}}
 {{detrecipe|3|Gold Bar|80}}
-{{detrecipe|3|Ghost|1}}
+{{detrecipe|3|Ghost|5}}
 |tot=
 {{detrecipe/totals|Silver Antique|1}}
 {{detrecipe/totals|Gold Bar|80}}
-{{detrecipe/totals|Ghost|1}}
+{{detrecipe/totals|Ghost|5}}
 }}

@@ -1,72 +1,23 @@
 {
     "new": {},
     "changes": {
-        "Scripticus": {
+        "Djonnut": {
             "quests": {
-                "The Unoccupied Picnic": {
-                    "Rewards": {
-                        "1": [{"item": "Experience0", "quantity": 120}, {"item": "Experience0", "quantity": 400}],
-                        "2": [{"item": "", "quantity": 300}, {"item": "", "quantity": 500}]
+                "I'm Blue Dabadedada": {
+                    "CustomArray": {
+                        "0": [
+                            {"desc": "Moonmen Defeated:", "finalV": 10000, "type": "GreaterEqual", "startV": 0},
+                            {"desc": "Moonmen Defeated:", "finalV": 3000, "type": "GreaterEqual", "startV": 0}
+                        ]
                     }
-                }
-            }
-        },
-        "Stiltzcho": {
-            "quests": {
-                "No Stone Unturned": {
-                    "DialogueText": [
-                        "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boa Snakes until you find a clue",
-                        "There must be some sort of clue there. I'll wait here while you go searching that way I can be well rested to investigate your find! <br> QUEST:Kill Baby Boa Snakes until you find remnanets of the gem thief. Baby Boas are on the next map."
-                    ]
-                }
-            }
-        },
-        "Promotheus": {
-            "quests": {
-                "Three Right Answers": {
-                    "Rewards": {
-                        "2": [{"item": "", "quantity": 1000}, {"item": "", "quantity": 2500}],
-                        "0": [{"item": "ResetCompleted", "quantity": 1}, {"item": "ResetCompleted", "quantity": 3}],
-                        "1": [{"item": "ResetFrag", "quantity": 8}, {"item": "ResetFrag", "quantity": 9}]
-                    }
-                }
-            }
-        },
-        "Poigu": {
-            "quests": {
-                "Learn the Language of the Universe": {"Rewards": {"0": [" ", {"item": "Pearl6", "quantity": 3}]}}
-            }
-        },
-        "Builder Bird": {
-            "quests": {
-                "Restoring Power to the Portal": {
-                    "DialogueText": [
-                        "Kacaw! <br> 'The bird awaits the return of the town gem. They're ready to restore the gem to the portal allowing travel to World 2. They look very stylish in their matching orange hat and scarf.'",
-                        "Kacaw! <br> 'Defeat the Boss at the end of World 1 to retrieve the gem. The bird will use the gem to fix the portal allowing travel to World 2. The bird looks very stylish in their matching orange hat and scarf.'"
-                    ],
-                    "Rewards": {"2": [" ", {"item": "ResetCompletedS", "quantity": 3}]}
-                }
-            }
-        },
-        "Picnic Stowaway": {
-            "quests": {
-                "Live-Action Entertainment": {
-                    "DialogueText": [
-                        "One... two... THREE!!! Oh and these monsters have Increased Damage watch out! If you fail you can forfeit and retry using the Codex!",
-                        "One... two... THREE!!! Oh and these monsters have Increased Damage watch out! <br> QUEST:Kill the green mushrooms! If you fail forfeit the quest using the Codex and retry!"
-                    ]
                 },
-                "The Hungry Stowaway": {"Rewards": {"2": [" ", {"item": "Timecandy1", "quantity": 1}]}},
-                "Beating Up Frogs for some Sauce": {
+                "The Blue New World": {
                     "DialogueText": [
-                        "Why don't you go 'ask' the frogs around here for some Condiments. Those Fists of yours seem like persuasive talkers! I'll hold onto these nomwiches in the meantime... for safe keeping you know?",
-                        "Why don't you go 'ask' the frogs around here for some Condiments. Those Fists of yours seem like persuasive talkers! I'll hold onto these nomwiches in the meantime... for safe keeping you know? <br> QUEST:Kill frogs for condiments! Use your blue time candies to speed it up."
+                        "How I would love to see this blue world. I would of be so happy but no I must remain here. Please player please help me see the blue world! <br> QUEST:He's blue nuff said.",
+                        "How I would love to see this blue world. I would of be so happy but no I must remain here. Please player please help me see the blue world! <br> QUEST:He's blue get him blue stuff from world 3 nuff said."
                     ]
                 }
             }
-        },
-        "Glumlee": {
-            "quests": {"Learning to Smelt": {"Rewards": {"2": [" ", {"item": "rtt0", "quantity": 10}]}}}
         }
     }
 }

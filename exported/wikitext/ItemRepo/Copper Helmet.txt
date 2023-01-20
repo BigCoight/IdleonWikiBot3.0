@@ -1,3 +1,12 @@
+{{ForgeSlot
+|anvtab=Anvil Tab 1
+|craftnum=17
+|levelreq=6
+|expgiven=35
+|recipefrom=Start
+|resource1=Copper Bar|quantity1=20
+|resource2=Bean Slices|quantity2=40
+}}
 {{InfoItem
 |type=Helmet
 |class=All
@@ -8,19 +17,12 @@
 |upgrade=2
 |defence=5
 |sellprice=420
-|notes= 
 |order=210
+|notes= 
 }}
-{{ForgeSlot
-|anvtab=Anvil Tab 1
-|craftnum=17
-|levelreq=6
-|expgiven=35
-|recipefrom=Start
-|resource1=Copper Bar|quantity1=20
-|resource2=Bean Slices|quantity2=40
-}}
-{{detrecipe/tab
+{{detdrops/head}}
+{{detdrops|[[Dewdrop Silver Chest]]|0.02|1}}
+|}{{detrecipe/tab
 |reci=
 {{detrecipe|3|Copper Bar|20}}
 {{detrecipe|3|Bean Slices|40}}
@@ -28,6 +30,3 @@
 {{detrecipe/totals|Copper Bar|20}}
 {{detrecipe/totals|Bean Slices|40}}
 }}
-{{detdrops/head}}
-{{detdrops|[[Dewdrop Silver Chest]]|0.02|1}}
-|}

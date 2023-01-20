@@ -33,5 +33,5 @@ class DetDrops(IdleonModel):
 		res = "{{detdrops/head}}\n"
 		for detDrop in self.sources:
 			res += detDrop.writeWiki() + "\n"
-		res += "|}"
+		res += "|}\n"
 		return res

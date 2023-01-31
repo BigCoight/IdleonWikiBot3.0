@@ -1,1 +1,60 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "Timecandy6": {
+            "name": "Timecandy6",
+            "itemName": "72 Hour Candy",
+            "desc": "Thy most coveted of all candies! Gives 72 hours of AFK gains instantly, guaranteed!",
+            "cost": 580,
+            "no": 89,
+            "maxPurchases": 4,
+            "qty": 1,
+            "costIncrement": 0
+        },
+        "EquipmentCape0": {
+            "name": "EquipmentCape0",
+            "itemName": "Random Cape Equip",
+            "desc": "Gives you a random cape in the game! Can be any of the following: Angel Wings (+11% afk gains), Eggs (+10% dmg), Amarok (+10% Def), Efaunt (+10% Eff), Chizoar (+8% dmg), Troll (+6% all stat), Molten (+30% drop chance)",
+            "cost": 950,
+            "no": 88,
+            "maxPurchases": 1,
+            "qty": 0,
+            "costIncrement": 0
+        },
+        "ObolHyper0": {
+            "name": "ObolHyper0",
+            "itemName": "Random Hyper Obol",
+            "desc": "Gives you a random Circle Hyper Obol! The four equal possibilites are +4% DROP RATE, +2% ALL STAT, +3% DAMAGE, and +2% MULTIKILL PER TIER!",
+            "cost": 475,
+            "no": 87,
+            "maxPurchases": 6,
+            "qty": 0,
+            "costIncrement": 0
+        }
+    },
+    "changes": {
+        "EquipmentKeychain0": {"cost": [90, 150]},
+        "Timecandy1": {
+            "desc": [
+                "Gives you a single 1 Hour Candy. Also, you're not a real adventurer in Flapjack's eyes. Sorry, just tellin' ya like it is!",
+                "Gives you a single 1 Hour Candy. One piece of candyyyy!"
+            ]
+        },
+        "EquipmentKeychain17": {"cost": [340, 490]},
+        "Pdaily0": {
+            "desc": [
+                "Each purchase gives +10 daily teleports every day, forever. You can use these on the Map Screen. You can be gone for up to 4 days and claim them all upon your return!",
+                "Each purchase gives +13 daily teleports every day, forever. You can use these on the Map Screen. You can be gone for up to 6 days and claim them all upon your return!"
+            ],
+            "cost": [200, 120],
+            "maxPurchases": [7, 10],
+            "costIncrement": [60, 40]
+        },
+        "Blank": {
+            "itemName": ["Cosmic Candy", "Name Of Item"],
+            "cost": [325, 300],
+            "no": [54, 91],
+            "maxPurchases": [100000, 8]
+        },
+        "EquipmentKeychain8": {"cost": [200, 325]}
+    }
+}

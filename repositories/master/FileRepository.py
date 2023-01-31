@@ -1,11 +1,15 @@
 import json
 import os.path
+import re
 from abc import ABC
 from typing import TypeVar, Dict
 
+from mwparserfromhell import parse as mwparse
 from pydantic import BaseModel
+from pywikibot import Page
 
 from helpers.CodeReader import CodeReader
+from helpers.Constants import Constants
 from helpers.JsonEncoder import CompactJSONEncoder
 from repositories.master.Repository import Repository
 
@@ -58,3 +62,26 @@ class FileRepository(Repository[T], ABC):
 	@classmethod
 	def parse(cls, value: Dict[str, any]) -> T:
 		raise NotImplementedError
+
+	@classmethod
+	def getNote(cls, website, dispName) -> str:
+		text = Page(website, dispName).text
+		replacedText = text.replace("\n", Constants.newLineRep)
+		wikiCode = mwparse(replacedText)
+		templates = wikiCode.filter_templates(recursive = False)
+		selectedTemplate = None
+		for template in templates:
+			if "notes" not in template:
+				continue
+			selectedTemplate = template
+			break
+		if selectedTemplate is None:
+			return ""
+		note = cls.getParsed(selectedTemplate, "notes")
+		if not note:
+			return " "
+		return re.escape(note)
+
+	@classmethod
+	def getParsed(cls, tempalte, key) -> str:
+		return str(tempalte.get(key).value).strip(Constants.newLineRep).strip()

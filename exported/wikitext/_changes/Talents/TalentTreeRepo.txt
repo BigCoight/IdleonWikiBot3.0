@@ -1,5 +1,129 @@
 <div class="GenericFlex"><div class="GenericChild">
 ==Changes==
+{{patchnote/head|changed=Divine Knight}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|Undying Passion|1}}
+{{patchnote|Name| |Undying Passion|2}}
+{{patchnote|Description| |+{% Chance to get Gaming AFK progress when claiming AFK gains, but not from candy.|2}}
+{{patchnote|X 1| |40|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |0|2}}
+{{patchnote|Y 2| |0|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Chance|2}}
+{{patchnote|Skill Index| |175|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Imbued Shockwaves|1}}
+{{patchnote|Name| |Imbued Shockwaves|2}}
+{{patchnote|Description| |Every basic attack with a spear has a {% chance of sending out a shockwave.|2}}
+{{patchnote|X 1| |100|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |0|2}}
+{{patchnote|Y 2| |0|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Shockwave Chance|2}}
+{{patchnote|Skill Index| |169|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Gamer Strength|1}}
+{{patchnote|Name| |Gamer Strength|2}}
+{{patchnote|Description| |+{ Weapon Power for every 10 Gaming Lvs of this character.|2}}
+{{patchnote|X 1| |7|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |0|2}}
+{{patchnote|Y 2| |0|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{ Wep Power Per 10 Lv|2}}
+{{patchnote|Skill Index| |170|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|King Of The Remembered|1}}
+{{patchnote|Name| |King Of The Remembered|2}}
+{{patchnote|Description| |+{% printer output for every POW 10 kills ever done with the rememberance orb.|2}}
+{{patchnote|X 1| |5|2}}
+{{patchnote|X 2| |150|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |0|2}}
+{{patchnote|Y 2| |0|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Printer Output|2}}
+{{patchnote|Skill Index| |178|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Knightly Disciple|1}}
+{{patchnote|Name| |Knightly Disciple|2}}
+{{patchnote|Description| |Spawn a knight disciple who generates shockwaves for { sec.|2}}
+{{patchnote|X 1| |10|2}}
+{{patchnote|X 2| |0.15|2}}
+{{patchnote|Func X| |bigBase|2}}
+{{patchnote|Y 1| |0|2}}
+{{patchnote|Y 2| |0|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+0.15 Sec Duration|2}}
+{{patchnote|Skill Index| |165|2}}
+{{patchnote|Active Data| |{'name': 'Knightly Disciple', 'K': 1.2, 'D': 1.4, 's': 1.2, 'cooldown': 40, 'castTime': 1, 'manaCost': 15, 'inputReq': 0, 'AFKrange': 230, 'AFKtype': 'line', 'AFKactivity': 0}|2}}
+{{patchnote/bold|Mega Mongorang|1}}
+{{patchnote|Name| |Mega Mongorang|2}}
+{{patchnote|Description| |Your daggerang is now +{% larger in size, and hits up to } more mobs.|2}}
+{{patchnote|X 1| |100|2}}
+{{patchnote|X 2| |2|2}}
+{{patchnote|Func X| |bigBase|2}}
+{{patchnote|Y 1| |2|2}}
+{{patchnote|Y 2| |25|2}}
+{{patchnote|Func Y| |intervalAdd|2}}
+{{patchnote|Lvl Up Text| |+{% Size & +} Mobs|2}}
+{{patchnote|Skill Index| |166|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Bitty Litty|1}}
+{{patchnote|Name| |Bitty Litty|2}}
+{{patchnote|Description| |+{% Bits gained per Gaming LV, no matter which character you're on!|2}}
+{{patchnote|X 1| |20|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |0|2}}
+{{patchnote|Y 2| |0|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Bits Per Gaming Lv|2}}
+{{patchnote|Skill Index| |177|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Divine Intervention|1}}
+{{patchnote|Name| |Divine Intervention|2}}
+{{patchnote|Description| |While active if all mobs on screen are dead, instantly revive all. Also +{% crit dmg|2}}
+{{patchnote|X 1| |200|2}}
+{{patchnote|X 2| |300|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |0|2}}
+{{patchnote|Y 2| |0|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Crit Dmg|2}}
+{{patchnote|Skill Index| |167|2}}
+{{patchnote|Active Data| |{'name': 'Divine Intervention', 'K': 1.2, 'D': 1.2, 's': 1, 'cooldown': 40, 'castTime': 0.5, 'manaCost': 15, 'inputReq': 0, 'AFKrange': 150, 'AFKtype': 'buff', 'AFKactivity': 0}|2}}
+{{patchnote/bold|Orb Of Remembrance|1}}
+{{patchnote|Name| |Orb Of Remembrance|2}}
+{{patchnote|Description| |+1% active EXP and Drop Rate per mob kill shown above Orb. Orb lasts for { sec|2}}
+{{patchnote|X 1| |30|2}}
+{{patchnote|X 2| |0.4|2}}
+{{patchnote|Func X| |bigBase|2}}
+{{patchnote|Y 1| |0|2}}
+{{patchnote|Y 2| |0|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+0.4 Sec Duration|2}}
+{{patchnote|Skill Index| |168|2}}
+{{patchnote|Active Data| |{'name': 'Orb Of Remembrance', 'K': 1, 'D': 1, 's': 1, 'cooldown': 150, 'castTime': 0.5, 'manaCost': 15, 'inputReq': 0, 'AFKrange': 150, 'AFKtype': 'buff', 'AFKactivity': 0}|2}}
+{{patchnote/bold|1 0 0 0 Hours Played|1}}
+{{patchnote|Name| |1000 Hours Played|2}}
+{{patchnote|Description| |+{% Gaming EXP gain for all characters!|2}}
+{{patchnote|X 1| |60|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |0|2}}
+{{patchnote|Y 2| |0|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Gaming Exp|2}}
+{{patchnote|Skill Index| |176|2}}
+{{patchnote|Active Data| |None|2}}
+|}
+
 </div><div class="GenericChild">
 ==New==
 </div></div>

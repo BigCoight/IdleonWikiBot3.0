@@ -273,11 +273,16 @@ class Repository(Generic[T], ABC):
 			return "{{patchnote|" + f"{camelCaseToTitle(v)}|{str(o)}|{str(n)}|{indent}" + "}}\n"
 
 		def aux(atr, val):
+
 			if isinstance(val, tuple):
 				return patchnote(atr, val[0], val[1])
 			if isinstance(val, dict):
 				res = bold(atr)
 				res += cls._writeChangelog(val, indent + 1)
+				return res
+			if isinstance(val, IdleonModel):
+				res = bold(atr)
+				res += cls._writeChangelog(val.toDict(), indent + 1)
 				return res
 			if isinstance(val, list):
 				res = bold(atr)

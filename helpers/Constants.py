@@ -1,4 +1,5 @@
 class Constants:
+	newLineRep = "$$NEWLINE$$"
 	worldNames = {"Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Hyperion Nebula", "Smolderin' Plateau"}
 	worlds = ["Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Hyperion Nebula", "Smolderin' Plateau"]
 	navCategories = {"Blunder Hills", "Yum Yum Desert", "Frostbite Tundra", "Hyperion Nebula", "Smolderin' Plateau",
@@ -43,6 +44,6 @@ class Constants:
 	             "Cosmic Carrier"]
 	stampTypes = ["Combat Stamp", "Skills Stamp", "Misc Stamp"]
 
-	sailingIslands = ["Safari Island", "Beachy Coast", "Isolated Woods", "Rocky Peaks", "Stormy North", 
+	sailingIslands = ["Safari Island", "Beachy Coast", "Isolated Woods", "Rocky Peaks", "Stormy North",
 	                  "Snowy South", "Toxic Bay Inc", "Candied Island", "Fungi Meadows", "Cloudy Quay", "Dungeon Cove",
 	                  "Crystal Enclave", "Petulent Garage", "Isle of Note", "The Edge"]

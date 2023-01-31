@@ -1,7 +1,8 @@
 import re
 from random import choice, randint
-from typing import List, Dict
+from typing import List, Dict, Optional
 
+from mwparserfromhell import parse as mwparse
 from pywikibot import Site, Page
 
 from definitions.questdef.NpcHead import NpcHead
@@ -22,60 +23,53 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 
 	@classmethod
 	def getSections(cls) -> List[str]:
-		return ["Quests"]
+		return ["Quests", "Quests2"]
 
 	@classmethod
 	def generateRepo(cls) -> None:
 		website = Site()
 		reNpcs = r'..\.addDialogueFor\("([a-zA-Z0-9_]*)", [^\s"]*\)'
-		questText = formatStr(cls.getSection(), ["\n"])
-		questData = re.split(reNpcs, questText)
-		for i in range(1, len(questData), 2):
-			npcName = replaceUnderscores(questData[i])
-			npcName = Constants.nameConflicts.get(npcName, npcName)
-			if head := cls.searchHead(website, npcName):
-				cls.add(npcName, cls.parseHead(head))
-				continue
-			cls.add(npcName, cls.newHead())
+
+		for n in range(len(cls.getSections())):
+			questText = formatStr(cls.getSection(n), ["\n"])
+			questData = re.split(reNpcs, questText)
+			for i in range(1, len(questData), 2):
+				npcName = replaceUnderscores(questData[i])
+				npcName = Constants.nameConflicts.get(npcName, npcName)
+				cls.add(npcName, cls.getHead(website, npcName))
 
 	@classmethod
-	def searchHead(cls, website: Site, siteName: str) -> str:
-		if siteName not in ["", " "]:
-			toSplit = "{{Quest/head}}"
-			page = Page(website, siteName)
-			splitText = page.text.split(toSplit)
-			if len(splitText) > 1:
-				searchText = page.text.split(toSplit)[0]
-				return searchText
-		return ""
-
-	@classmethod
-	def parseHead(cls, head: str) -> NpcHead:
-		paresedHead = {}
-		parts = head.split("\n|")
-		for part in parts:
-			subpart = part.split("=", 1)
-			if len(subpart) < 2:
-				continue
-			atr, val = subpart
-			paresedHead[atr] = val
-		return NpcHead(
-			location = paresedHead.get("location", ""),
-			world = paresedHead.get("world", ""),
-			noQuest = paresedHead.get("noquest", 0),
-			type = paresedHead.get("npcType", ""),
-			repeatable = paresedHead.get("repeatable", ""),
-			birthWeight = paresedHead.get("birthweight", 0),
-			starSign = paresedHead.get("starsign", ""),
-			mothersMaidenName = paresedHead.get("mmm", ""),
-			notes = paresedHead.get("notes", "").replace('"', r"'").replace("}}\n", "").replace("\n", "$NEWLINE$")
-		)
-
-	@classmethod
-	def getHead(cls, key: str) -> NpcHead:
-		if not cls.contains(key):
+	def getHead(cls, website: Site, dispName: str) -> NpcHead:
+		if dispName in ["", " "]: return {}
+		text = Page(website, dispName).text
+		replacedText = text.replace("\n", Constants.newLineRep)
+		wikiCode = mwparse(replacedText)
+		templates = wikiCode.filter_templates(recursive = False)
+		selectedTemplate = None
+		for template in templates:
+			if "world" in template:
+				selectedTemplate = template
+				break
+		if selectedTemplate is None:
 			return cls.newHead()
-		return cls.get(key)
+		print(dispName)
+		typ = ""
+		if "npcType" in selectedTemplate:
+			typ = cls.getParsed(selectedTemplate, "npcType")
+		notes = " "
+		if "notes" in selectedTemplate:
+			notes = re.escape(cls.getParsed(selectedTemplate, "notes")).replace('"', "'")
+		return NpcHead(
+			location = cls.getParsed(selectedTemplate, "location"),
+			world = cls.getParsed(selectedTemplate, "world"),
+			noQuest = cls.getParsed(selectedTemplate, "noquest"),
+			type = typ,
+			repeatable = cls.getParsed(selectedTemplate, "repeatable"),
+			birthWeight = cls.getParsed(selectedTemplate, "birthweight"),
+			starSign = cls.getParsed(selectedTemplate, "starsign"),
+			mothersMaidenName = cls.getParsed(selectedTemplate, "mmm"),
+			notes = notes
+		)
 
 	@classmethod
 	def newHead(cls):
@@ -88,8 +82,14 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 			birthWeight = cls.doBirthweight(),
 			starSign = cls.doStarsign(),
 			mothersMaidenName = cls.doMMM(),
-			notes = ""
+			notes = " "
 		)
+
+	@classmethod
+	def get(cls, key: str) -> Optional[NpcHead]:
+		if cls.contains(key):
+			return super().get(key)
+		return cls.newHead()
 
 	@classmethod
 	def doStarsign(cls):

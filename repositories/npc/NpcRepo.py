@@ -56,7 +56,7 @@ class NpcRepo(Repository[Npc]):
 					npcName = replaceUnderscores(questData[i])
 					npcName = Constants.nameConflicts.get(npcName, npcName)
 					currentNpc = Npc(
-						head = NpcHeadRepo.getHead(npcName),
+						head = NpcHeadRepo.get(npcName),
 						dialogue = [],
 						quests = {}
 					)

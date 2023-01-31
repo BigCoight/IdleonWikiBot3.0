@@ -1,6 +1,7 @@
 import re
 from typing import Dict, List
 
+from mwparserfromhell import parse as mwparse
 from pywikibot import Site, Page
 
 from definitions.common.Note import Note
@@ -21,40 +22,39 @@ class NpcNoteRepo(FileRepository[NpcNote]):
 
 	@classmethod
 	def getSections(cls) -> List[str]:
-		return ["Quests"]
+		return ["Quests", "Quests2"]
 
 	@classmethod
 	def generateRepo(cls) -> None:
 		website = Site()
 		reNpcs = r'..\.addDialogueFor\("([a-zA-Z0-9_]*)", [^\s"]*\)'
-		questText = formatStr(cls.getSection(), ["\n"])
-		questData = re.split(reNpcs, questText)
-		for i in range(1, len(questData), 2):
-			npcName = replaceUnderscores(questData[i])
-			npcName = Constants.nameConflicts.get(npcName, npcName)
-			sources = cls.searchNotes(website, npcName)
-			if not sources:
-				continue
-			cls.add(npcName, NpcNote(notes = sources.copy()))
+		for n in range(len(cls.getSections())):
+			questText = formatStr(cls.getSection(n), ["\n"])
+			questData = re.split(reNpcs, questText)
+			for i in range(1, len(questData), 2):
+				npcName = replaceUnderscores(questData[i])
+				npcName = Constants.nameConflicts.get(npcName, npcName)
+				sources = cls.searchNotes(website, npcName)
+				if not sources:
+					continue
+				cls.add(npcName, NpcNote(notes = sources.copy()))
 
 	@classmethod
-	def searchNotes(cls, website: Site, siteName: str) -> Dict[str, Note]:
-		if siteName in ["", " "]:
-			return {}
-		toSplit = "{{Quest/head}}"
+	def searchNotes(cls, website: Site, dispName: str) -> Dict[str, Note]:
+		if dispName in ["", " "]: return {}
 		res = {}
-		page = Page(website, siteName)
-		splitText = page.text.split(toSplit)
-		if not len(splitText) > 1:
-			return {}
-		searchText = page.text.split(toSplit)[1]
-		justQuests = searchText.split("{{dialogue/head}}")[0]
-		quests = justQuests.split("\n}}")
-		for quest in quests:
-			matches = re.findall(r"\|name=(.*)|notes=(.*)", quest)
-			if not len(matches) == 2:
+		text = Page(website, dispName).text
+		replacedText = text.replace("\n", Constants.newLineRep)
+		wikiCode = mwparse(replacedText)
+		templates = wikiCode.filter_templates(recursive = False)
+		for template in templates:
+			if "name" not in template:
 				continue
-			res[matches[0][0]] = Note(note = matches[1][1])
+			if "notes" not in template:
+				continue
+			note = cls.getParsed(template, "notes")
+			name = cls.getParsed(template, "name")
+			res[name] = Note(note = note)
 		return res
 
 	@classmethod

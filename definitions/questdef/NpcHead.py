@@ -1,6 +1,7 @@
 from typing import Union, Callable, Dict
 
 from definitions.master.IdleonModel import IdleonModel
+from helpers.Constants import Constants
 from helpers.CustomTypes import Integer
 
 
@@ -35,4 +36,4 @@ class NpcHead(IdleonModel):
 		return res
 
 	def getNotes(self) -> str:
-		return self.notes.replace("$NEWLINE$", "\n")
+		return self.notes.replace(Constants.newLineRep, "\n")

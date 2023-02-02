@@ -54,7 +54,7 @@ class VendorRepo(Repository[Vendors]):
 				if current := cls.get(currentLocation):
 					current.items.append(tempVendor)
 					continue
-				cls.add(currentLocation, Vendors(items = [tempVendor]))
+				cls.add(currentLocation, Vendors(area = currentLocation, items = [tempVendor]))
 
 	@classmethod
 	def getVendorFromItem(cls, item: str) -> ItemVendors:

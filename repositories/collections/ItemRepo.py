@@ -28,7 +28,7 @@ class ItemRepo(Repository[Item]):
 		AnvilRepo.initialise(cls.codeReader, log)
 		DetDropsRepo.initialise(cls.codeReader, log)
 		ItemNoteRepo.initialise(cls.codeReader)
-		SlabItemSortRepo.initialise(cls.codeReader)
+		SlabItemSortRepo.initialise(cls.codeReader, log)
 
 	@classmethod
 	def generateRepo(cls) -> None:

@@ -18,14 +18,19 @@ class Vendor(IdleonModel):
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
 		return {
 			"number": "no",
+			"item": self.getItemDisplayName,
 			"vendor": "vendor",
 			"stock": "quantity",
-			"buyprice": "purchasePrice"
+			"buyprice": "purchasePrice",
+
 		}
+
+	def getItemDisplayName(self) -> str:
+		return ItemDetailRepo.getDisplayName(self.item)
 
 	def __str__(self) -> str:
 		res = f"{self.quantity}x " + "{{CraftReq|"
-		res += ItemDetailRepo.getDisplayName(self.item) + "}}"
+		res += self.getItemDisplayName() + "}}"
 		return res
 
 
@@ -41,4 +46,12 @@ class ItemVendors(IdleonModel):
 
 
 class Vendors(IdleonModel):
+	area: str
 	items: List[Vendor]
+
+	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
+		res = "{{Vendoritem/head"f"|{self.area} Shop""}}" + "\n"
+		for vendor in self.items:
+			res += "{{Vendoritem" + vendor.writeWiki(False) + "}}" + "\n"
+		res += "|}"
+		return res

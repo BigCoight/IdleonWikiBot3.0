@@ -8,7 +8,7 @@ class ActiveTalent(IdleonModel):
 	D: Numeric
 	s: Numeric
 	cooldown: Integer
-	castTime:Numeric
+	castTime: Numeric
 	manaCost: Integer
 	inputReq: Integer
 	AFKrange: Integer

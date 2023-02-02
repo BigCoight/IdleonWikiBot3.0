@@ -1,9 +1,9 @@
 {{Talent
 |name=Fired Up
-|textArr=Inflame yourself, boosting attack spd. Attacks refresh flame, moving a lot ends it
+|textArr=Inflame yourself, boosting attack spd. Basic attacks refresh time you are inflamed.
 |form1=intervalAdd
 |x1=5
-|x2=15
+|x2=25
 }}
 {{Talent
 |name=Combustion
@@ -17,7 +17,7 @@
 }}
 {{Talent
 |name=Serrated Swipe
-|textArr=Slashes repeatedly if inflamed, dealing (Table 1)% dmg to a max of (Table 2) mobs
+|textArr=Slashes repeatedly if you're inflamed, dealing (Table 1)% dmg to a max of (Table 2) mobs
 |form1=bigBase
 |x1=40
 |x2=0.4
@@ -75,7 +75,7 @@
 }}
 {{Talent
 |name=The Family Guy
-|textArr=+(Table 1)% larger Family Bonuses from ones given by this player
+|textArr=+(Table 1)% larger Family Bonuses than what is displayed from bonuses given by this player
 |form1=decay
 |x1=40
 |x2=100
@@ -89,7 +89,7 @@
 }}
 {{Talent
 |name=Apocalypse Chow
-|textArr=+(Table 1)% Cooking EXP and Eff for every mob with 1 million kills up to (Table 2) mobs
+|textArr=+(Table 1)% Cooking EXP and Eff for every mob you kill over 1m times up to (Table 2) mobs
 |form1=decay
 |x1=20
 |x2=100

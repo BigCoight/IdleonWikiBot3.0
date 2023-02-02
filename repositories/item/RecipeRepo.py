@@ -192,3 +192,25 @@ class RecipeRepo(Repository[Recipe]):
 
 		with open(cls._getPath("wikitext/_changes", "txt"), mode = 'w') as infile:
 			infile.write(res)
+
+	@classmethod
+	def exportWikiMult(cls) -> None:
+		"""
+
+		Exports the entire repo into multiple files
+
+		"""
+
+		tabs = {}
+
+		for _, data in cls.items():
+			if data.tab not in tabs:
+				tabs[data.tab] = []
+			tabs[data.tab].append(data)
+		for tab, items in tabs.items():
+			currentTab = "{{Smithing/head|"f"{tab}""}}\n"
+			currentTab += "\n".join(map(lambda x: x.writeWiki(), items))
+			currentTab += "|}"
+			path = cls._getPath(f"wikitext/{cls.__name__}", "txt", nameOveride = f"Anvil Tab {tab}", noCat = True)
+			with open(path, mode = 'w') as outfile:
+				outfile.write(currentTab)

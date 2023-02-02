@@ -44,8 +44,8 @@ class Item(IdleonModel):
 			res += f"|sellprice={self.recipe.sellPrice}\n"
 		else:
 			res += f"|sellprice={self.item.sellPrice}\n"
-		if self.slabSort:
-			res += f"|order={self.slabSort.order}\n"
+		# if self.slabSort:
+		# 	res += f"|order={self.slabSort.order}\n"
 		# if self.sources:
 		# 	res += self.sources.writeWiki()
 		if self.notes:
@@ -67,7 +67,7 @@ class Item(IdleonModel):
 		return "{{InfoItem\n"
 
 	def writeAfter(self) -> List[IdleonModel]:
-		return [self.vendors, self.anvilProduction, self.detDrops]
+		return [self.anvilProduction, self.detDrops]
 
 	def writeBefore(self) -> List[IdleonModel]:
-		return [self.recipe]
+		return []

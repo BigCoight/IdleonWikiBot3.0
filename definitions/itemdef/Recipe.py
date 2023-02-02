@@ -48,8 +48,12 @@ class Recipe(IdleonModel):
 		# res += self.detailedRecipe.writeWiki()
 		return res
 
+	def getItemDisplayName(self) -> str:
+		return ItemDetailRepo.getDisplayName(self.intID)
+
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
 		return {
+			"name": self.getItemDisplayName,
 			"anvtab": self.getTab,
 			"craftnum": "no",
 			"levelreq": "levelReqToCraft",

@@ -258,9 +258,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 7.46,
-                    "starSign": "Capricorn",
-                    "mothersMaidenName": "Pak",
+                    "birthWeight": 7.84,
+                    "starSign": "Sagittarius",
+                    "mothersMaidenName": "DeLorenzo",
                     "notes": " "
                 },
                 "quests": {},
@@ -280,9 +280,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 2.33,
-                    "starSign": "Capricorn",
-                    "mothersMaidenName": "Jenson",
+                    "birthWeight": 7.39,
+                    "starSign": "Libra",
+                    "mothersMaidenName": "Linde",
                     "notes": " "
                 },
                 "quests": {},
@@ -1421,15 +1421,15 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Krunk", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
-                    "noQuest": 0,
+                    "location": "Freefall Caverns",
+                    "world": "Blunder Hills",
+                    "noQuest": 3,
                     "repeatable": "Unknown",
-                    "type": "Unknown",
-                    "birthWeight": 4.04,
-                    "starSign": "Pisces",
-                    "mothersMaidenName": "Upson",
-                    "notes": " "
+                    "type": "",
+                    "birthWeight": 9.31,
+                    "starSign": "Taurus",
+                    "mothersMaidenName": "Thomas",
+                    "notes": "[[Krunk]] is found in [[Worlds#M2 - Freefall Caverns|Freefall Caverns]], the second zone of the mines, located at the bottom of the area.$$NEWLINE$$$$NEWLINE$$Finishing his questline will unlock a shortcut to the gold ore within [[Worlds#M2 - Freefall Caverns|Freefall Caverns]], but only for characters that have completed the questline.$$NEWLINE$$$$NEWLINE$$You must complete all three of his quests and talk to him after reaching [[Mining]] Level 25 in order to receive the {{CraftReq|Krunk Token}}, which falls on the ground. He does say Level 33 at first but then changes his mind and gives it to you early.{{Sources/datarow|Item=Krunk Token}}"
                 },
                 "quests": {
                     "A Plot to be Perfect": <ItemQuestModel>{
@@ -4645,15 +4645,15 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Desert Davey", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
-                    "noQuest": 0,
+                    "location": "YumYum Grotto",
+                    "world": "Yum Yum Desert",
+                    "noQuest": 1,
                     "repeatable": "Unknown",
-                    "type": "Unknown",
-                    "birthWeight": 5.69,
-                    "starSign": "Scorpio",
-                    "mothersMaidenName": "Knutson",
-                    "notes": " "
+                    "type": "",
+                    "birthWeight": 9.09,
+                    "starSign": "Cancer",
+                    "mothersMaidenName": "Harris",
+                    "notes": "[[Desert Davey]] is the [[Tasks|Taskmaster]] of Yum-Yum Desert. You can find him in [[Worlds#D0 - YumYum Grotto|YumYum Grotto]].$$NEWLINE$$$$NEWLINE$$Once you've reached level 35, you can complete his quest to unlock [[Tasks/Yum Yum Desert|World 2 Tasks]]."
                 },
                 "quests": {
                     "U Cool?": <ItemQuestModel>{
@@ -8033,15 +8033,15 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Typhoon", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
-                    "noQuest": 0,
-                    "repeatable": "Unknown",
-                    "type": "Unknown",
-                    "birthWeight": 2.85,
-                    "starSign": "Aries",
-                    "mothersMaidenName": "Sawyer",
-                    "notes": " "
+                    "location": "Froggy Fields",
+                    "world": "Blunder Hills",
+                    "noQuest": 1,
+                    "repeatable": "Daily",
+                    "type": "",
+                    "birthWeight": 5.01,
+                    "starSign": "Taurus",
+                    "mothersMaidenName": "illiams",
+                    "notes": "[[Typhoon]] is found in [[Worlds#G3 - Froggy Fields|Froggy Fields]], the second zone of Grasslands, located in the top right of the area next to the [[Colosseum/Dewdrop|Dewdrop Colosseum]].$$NEWLINE$$$$NEWLINE$$Completing his quest gives the player the ability to talk to him once every day to obtain a {{CraftReq|Colosseum Ticket}}. He will hold tickets for you for up to 3 days. Having more characters complete his quest does not provide more daily tickets."
                 },
                 "quests": {
                     "Surprise Attack!": <CustomQuestModel>{
@@ -8358,15 +8358,15 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("XxX Cattleprod XxX", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
-                    "noQuest": 0,
+                    "location": "The Grandioso Canyon",
+                    "world": "YumYum Desert",
+                    "noQuest": 3,
                     "repeatable": "Unknown",
-                    "type": "Unknown",
-                    "birthWeight": 3.83,
-                    "starSign": "Sagittarius",
-                    "mothersMaidenName": "Ferro",
-                    "notes": " "
+                    "type": "",
+                    "birthWeight": 5.3,
+                    "starSign": "ibra",
+                    "mothersMaidenName": "Johnson",
+                    "notes": "[[XxX Cattleprod XxX]] is found in [[Worlds#D5 - The Grandioso Canyon|The Grandioso Canyon]].$$NEWLINE$$$$NEWLINE$$Like other piggy NPCs, his quests award stamps. His final quest requires you to interact with other players."
                 },
                 "quests": {
                     "Peak Gaming": <CustomQuestModel>{
@@ -13062,7 +13062,7 @@ export const initNpcRepo = () => {
                     "world": "Smolderin' Plateau",
                     "noQuest": 4,
                     "repeatable": "Unknown",
-                    "type": "Unknown",
+                    "type": "",
                     "birthWeight": 7.11,
                     "starSign": "Capricorn",
                     "mothersMaidenName": "Moody",
@@ -13243,8 +13243,8 @@ export const initNpcRepo = () => {
                     "location": "Cracker Jack Lake",
                     "world": "Smolderin' Plateau",
                     "noQuest": 4,
-                    "repeatable": "Unknown",
-                    "type": "Unknown",
+                    "repeatable": "o",
+                    "type": "",
                     "birthWeight": 6.77,
                     "starSign": "Cancer",
                     "mothersMaidenName": "eisinger",
@@ -13421,7 +13421,7 @@ export const initNpcRepo = () => {
                     "world": "Smolderin' Plateau",
                     "noQuest": 3,
                     "repeatable": "Unknown",
-                    "type": "Unknown",
+                    "type": "",
                     "birthWeight": 4.32,
                     "starSign": "Virgo",
                     "mothersMaidenName": "rwin",
@@ -13552,7 +13552,7 @@ export const initNpcRepo = () => {
         new NpcBase("Muhmuguh", <NpcModel>{
                 "head": <NpcHeadModel>{
                     "location": "Magma Rivertown",
-                    "world": "Smoulderin Plateau",
+                    "world": "Smoulderin' Plateau",
                     "noQuest": 3,
                     "repeatable": "o",
                     "type": "",

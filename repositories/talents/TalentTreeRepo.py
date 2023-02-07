@@ -2,10 +2,41 @@ import re
 import string
 from typing import List
 
+from definitions.talents.Build import BuildTalent, BuildTab, Build
 from definitions.talents.TalentTree import TalentTree, Talent
 from helpers.HelperFunctions import strToArray, replaceUnderscores, camelCaseToTitle, getFromSplit
+from helpers.JsonEncoder import CompactJSONEncoder
 from repositories.master.Repository import Repository
 from repositories.talents.ActiveTalentRepo import ActiveTalentRepo
+
+classTabs = {
+	"Beginner": ["Beginner"],
+	"Journeyman": ["Beginner", "Journeyman"],
+	"Maestro": ["Beginner", "Journeyman", "Maestro"],
+	"Virtuoso": [],
+	"Infinilyte": [],
+	"Warrior": ["Rage Basics", "Warrior"],
+	"Barbarian": ["Rage Basics", "Warrior", "Barbarian"],
+	"Squire": ["Rage Basics", "Warrior", "Squire"],
+	"Blood_Berserker": ["Rage Basics", "Warrior", "Barbarian", "Blood Berserker"],
+	"Death_Bringer": [],
+	"Divine_Knight": ["Rage Basics", "Warrior", "Squire", "Divine Knight"],
+	"Royal_Guardian": [],
+	"Archer": ["Calm Basics", "Archer"],
+	"Bowman": ["Calm Basics", "Archer", "Bowman"],
+	"Hunter": ["Calm Basics", "Archer", "Hunter"],
+	"Siege_Breaker": ["Calm Basics", "Archer", "Bowman", "Siege Breaker"],
+	"Mayheim": [],
+	"Wind_Walker": [],
+	"Beast_Master": ["Calm Basics", "Archer", "Hunter", "Beast Master"],
+	"Mage": ["Savvy Basics", "Mage"],
+	"Shaman": ["Savvy Basics", "Mage", "Shaman"],
+	"Wizard": ["Savvy Basics", "Mage", "Wizard"],
+	"Elemental_Sorcerer": ["Savvy Basics", "Mage", "Wizard", "Elemental Sorcerer"],
+	"Spiritual_Monk": [],
+	"Bubonic_Conjuror": ["Savvy Basics", "Mage", "Shaman", "Bubonic Conjuror"],
+	"Arcane_Cultist": [],
+}
 
 
 class TalentTreeRepo(Repository[TalentTree]):
@@ -138,3 +169,28 @@ class TalentTreeRepo(Repository[TalentTree]):
 				res += patchnote(v, " ", d)
 		res += '|}\n'
 		return res
+
+	@classmethod
+	def getClassTabs(cls, talentClass: str) -> List[BuildTab]:
+		tabs = classTabs[talentClass]
+		neededTabs = []
+		for tab in tabs:
+			currentTab = []
+			for name, talent in cls.get(tab).talents.items():
+				currentTab.append(BuildTalent(skillIndex = talent.skillIndex, level = 0, name = name, note = ""))
+			neededTabs.append(BuildTab(name = tab, talents = currentTab.copy(), note = ""))
+		return neededTabs.copy()
+
+	@classmethod
+	def exportTalentTemplates(cls) -> None:
+		for talentClass in classTabs.keys():
+			neededTabs = cls.getClassTabs(talentClass)
+			build = Build(
+				title = f"{replaceUnderscores(talentClass)} Build Template",
+				notes = "",
+				version = cls.codeReader.version,
+				level = 0,
+				tabs = neededTabs.copy(),
+				idleonClass = talentClass)
+			with open(cls._getPath("builds", "json", f"template_{talentClass}", noCat = True), 'w') as outfile:
+				outfile.write(CompactJSONEncoder(indent = 4).encode(build.toDict()))

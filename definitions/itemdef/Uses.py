@@ -1,15 +1,18 @@
 from typing import List, Union
 
-from pydantic import BaseModel
-
+from definitions.itemdef.initialtypes.ItemTypes import TypeGen
 from definitions.master.IdleonModel import IdleonModel
 
 
-class _Use(IdleonModel):
-    name: str
-    amount: Union[int, str]
-    type: str
+class Use(IdleonModel):
+	repoSource: str
+	key: str
+	name: str
+	amount: Union[int, str]
+	type: str
 
 
 class Uses(IdleonModel):
-    uses: List[_Use]
+	uses: List[Use]
+	typeGen: TypeGen
+	type: str

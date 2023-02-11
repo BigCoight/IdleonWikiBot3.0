@@ -29,7 +29,6 @@ class MapDataRepo(Repository[MapData]):
 	@classmethod
 	def generateRepo(cls) -> None:
 		mapEnemies = getFromSplit(cls.getSection())
-		print(len(mapEnemies))
 		for n, v in enumerate(mapEnemies):
 			worldIndex = n // 50
 			if worldIndex >= len(Constants.worldNames):

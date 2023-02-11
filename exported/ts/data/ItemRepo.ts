@@ -49564,6 +49564,7 @@ export const initItemRepo = () => {
                             "wikiName": "[[Walupiggy#Treasure Hunt 2|Treasure Hunt 2]]",
                             "txtName": "Walupiggy: Treasure Hunt 2"
                         },
+                        <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
                         <SourceModel>{
                             "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                             "txtName": "Alchemy: Level up Gift"

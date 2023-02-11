@@ -903,11 +903,11 @@ export const initGemShopRepo = () => {
                 "cost": 395,
                 "no": 88,
                 "maxPurchases": 5,
-                "qty": 0,
+                "qty": 1,
                 "costIncrement": 0
             }),
         new GemShopItemBase(90, <GemShopItemModel>{
-                "name": "Timecandy3",
+                "name": "Timecandy5",
                 "itemName": "Freebie Candy",
                 "desc": "Hey kid, how bout we get you a nice lil time candy for the road eh? It's on the house... plus a small freebie fee of course.",
                 "cost": 1,

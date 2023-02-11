@@ -2,6 +2,7 @@ import re
 from typing import List
 
 from definitions.misc.world2.FishPool import FishPool
+from helpers.HelperFunctions import formatStr, getFromArrayArray
 from repositories.master.Repository import Repository
 
 
@@ -16,21 +17,19 @@ class FishPoolRepo(Repository[FishPool]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		rePools = r'.\.setReserved\("([a-zA-Z0-9_]*)", [a-zA-Z0-9_$]*\)'
-		reData = r'\[(?:"([^ ]*)", )?"([^ ]*)", "([^ ]*)", "([^ ]*)"\],'
-		poolData = cls.getSection()
-		fishPools = re.split(rePools, poolData)
-		for i in range(0, len(fishPools) - 1, 2):
-			intName = fishPools[i + 1]
-			rawData = re.findall(reData, fishPools[i])
+		reDropTables = r'.\..\.(\S*?) = ?"?(.*?)"?\)'
+		fishPoolData = formatStr(cls.getSection(), ["\n", "  "])
+		for name, fishPool in re.findall(reDropTables, fishPoolData):
+			pool = getFromArrayArray(fishPool)
+			pool[3].insert(0, "0")
 			for i in range(4):
 				toAdd = FishPool(
-					fish = rawData[0][i],
-					expGiven = rawData[1][i],
-					damageDelt = rawData[2][i],
-					efficiency = rawData[3][i] if rawData[3][i] else 0,
-					cardDrop = rawData[4][i],
-					cardChance = rawData[5][i],
-					pool = intName)
-				cls.add(rawData[0][i], toAdd)
+					fish = pool[0][i],
+					expGiven = pool[1][i],
+					damageDelt = pool[2][i],
+					efficiency = pool[3][i],
+					cardDrop = pool[4][i],
+					cardChance = pool[5][i],
+					pool = name)
+				cls.add(pool[0][i], toAdd)
 				cls.addList(toAdd)

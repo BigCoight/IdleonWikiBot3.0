@@ -35,8 +35,8 @@ class ItemDetailRepo(Repository[CommonItem]):
 			'Consumable': ConsumableItem,
 		}
 
-		reNames = r'.\.addNew([a-zA-Z0-9_]*)\("([a-zA-Z0-9_]*)", ..?.?\);'
-		reData = r'..\.setReserved\("([a-zA-Z0-9_]*)", ?"?([^\s"]*)"?\)'
+		reNames = r'.\.addNew([a-zA-Z0-9_]*)\("([a-zA-Z0-9_]*)", .\)'
+		reData = r'.\..\.(\S*?) = ?"?(.*?)"?\)'
 		for j in range(len(cls.getSections())):
 			itemText = formatStr(cls.getSection(j), ["\n", "  "])
 			itemData = re.split(reNames, itemText)

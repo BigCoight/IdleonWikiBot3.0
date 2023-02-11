@@ -18,6 +18,7 @@ from repositories.enemies.EnemyTableRepo import EnemyTableRepo
 from repositories.enemies.MapDataRepo import MapDataRepo
 from repositories.enemies.SubTableRepo import SubTableRepo
 from repositories.item.AnvilRepo import AnvilRepo
+from repositories.item.CardDropChanceRepo import CardDropChanceRepo
 from repositories.item.CardRepo import CardRepo
 from repositories.item.CritterRepo import CritterRepo
 from repositories.item.DetDropsRepo import DetDropsRepo
@@ -28,6 +29,7 @@ from repositories.item.RefineryCostRepo import RefineryCostRepo
 from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.item.StampDescriptionRepo import StampDescriptionRepo
 from repositories.item.StatueRepo import StatueRepo
+from repositories.item.UsesRepo import UsesRepo
 from repositories.item.VendorRepo import VendorRepo
 from repositories.item.sources.CustomSourceRepo import CustomSourceRepo
 from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
@@ -83,12 +85,13 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("174", steam = True)
+idleonReader = IdleonReader("175a", steam = True)
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
 EnemyDetailsRepo.initialise(codeReader)
 CardRepo.initialise(codeReader)
+CardDropChanceRepo.initialise(codeReader)
 ItemDetailRepo.initialise(codeReader)
 StatueRepo.initialise(codeReader)
 FishingToolkitRepo.initialise(codeReader)
@@ -169,7 +172,7 @@ SkullShopRepo.initialise(codeReader)
 
 RandoListRepo.initialise(codeReader)
 ColosseumRepo.initialise(codeReader)
-
+UsesRepo.initialise(codeReader)
 AtomColliderRepo.initialise(codeReader)
 
 # World 5

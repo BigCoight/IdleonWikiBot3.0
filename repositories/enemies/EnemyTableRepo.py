@@ -3,6 +3,7 @@ from typing import List
 
 from definitions.common.DropTypes import Drop, ItemDrop, RecipeDrop
 from definitions.enemy.EnemyTable import EnemyTable
+from helpers.HelperFunctions import formatStr, getFromArrayArray
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.master.Repository import Repository
@@ -27,18 +28,12 @@ class EnemyTableRepo(Repository[EnemyTable]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		reEnemies = r'.\.setReserved\("([a-zA-Z0-9_]*)", [a-zA-Z0-9_$]*\)'
-		reDrops = r'\["([^ ]*)", "([^ ]*)", "([^ ]*)", "([^ ]*)"\],'
-		droptableData = cls.getSection()
-		droptables = re.split(reEnemies, droptableData)
-		for i in range(0, len(droptables) - 1, 2):
-			intName = droptables[i + 1]
-			rawDrops = re.findall(reDrops, droptables[i])
-
-			drops = []
-			for drop in rawDrops:
-				drops.append(Drop.arrayToDropType(drop))
-			cls.add(intName, EnemyTable(drops = drops.copy()))
+		reDropTables = r'.\..\.(\S*?) = ?"?(.*?)"?\)'
+		droptableData = formatStr(cls.getSection(), ["\n", "  "], replaceUnderscores = False)
+		for name, dt in re.findall(reDropTables, droptableData):
+			drops = getFromArrayArray(dt, repU = False)
+			drops = [Drop.arrayToDropType(drop) for drop in drops]
+			cls.add(name, EnemyTable(drops = drops.copy()))
 		cls.insertMissing()
 
 	@classmethod

@@ -2,6 +2,7 @@ import re
 from typing import List
 
 from definitions.enemy.SubTable import SubTables, SubTable
+from helpers.HelperFunctions import formatStr, getFromArrayArray
 from repositories.master.Repository import Repository
 
 
@@ -17,30 +18,26 @@ class SubTableRepo(Repository[SubTables]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		reEnemies = r'.\.setReserved\("([a-zA-Z0-9_]*)", [a-zA-Z0-9_$]*\)'
-		reDrops = r'\["([^ ]*)", "([^ ]*)", "([^ ]*)", "([^ ]*)"\],'
-		droptableData = cls.getSection(1)
-		droptables = re.split(reEnemies, droptableData)
-		for i in range(0, len(droptables) - 1, 2):
-			drops = re.findall(reDrops, droptables[i])
+		reDropTables = r'.\..\.(\S*?) = ?"?(.*?)"?\)'
+		droptableData = formatStr(cls.getSection(1), ["\n", "  "], replaceUnderscores = False)
+		for name, dt in re.findall(reDropTables, droptableData):
+			drops = getFromArrayArray(dt)
 			drops = [drop for drop in drops if "DropTable" in drop[0]]
 			for drop in drops:
 				cls.addTo(drop[0], SubTable(
-					name = droptables[i + 1],
+					name = name,
 					chance = drop[1],
 					quantity = drop[2]))
 
-		reEnemies = r'.\.setReserved\("([a-zA-Z0-9_]*)", [a-zA-Z0-9_$]*\)'
-		reDrops = r'\["([^ ]*)", "([^ ]*)", "([^ ]*)", "([^ ]*)"\],'
-		droptableData = cls.getSection()
-		droptables = re.split(reEnemies, droptableData)
-		for i in range(0, len(droptables) - 1, 2):
-			drops = re.findall(reDrops, droptables[i])
+		reDropTables = r'.\..\.(\S*?) = ?"?(.*?)"?\)'
+		droptableData = formatStr(cls.getSection(), ["\n", "  "])
+		for name, dt in re.findall(reDropTables, droptableData):
+			drops = getFromArrayArray(dt)
 			drops = [drop for drop in drops if "SuperDropTable" in drop[0]]
 			for drop in drops:
-				if not cls.contains(droptables[i + 1]):
+				if not cls.contains(name):
 					continue
-				for source in cls.get(droptables[i + 1]).sources:
+				for source in cls.get(name).sources:
 					cls.addTo(drop[0], SubTable(
 						name = source.name,
 						chance = float(drop[1]) * source.chance,

@@ -3596,6 +3596,7 @@
             {"wikiName": "[[Rotting Grandfrogger]]", "txtName": "Rotting Grandfrogger"},
             {"wikiName": "[[Forlorn Grandfrogger]]", "txtName": "Forlorn Grandfrogger"},
             {"wikiName": "[[Vengeful Grandfrogger]]", "txtName": "Vengeful Grandfrogger"},
+            {"wikiName": "[[Fallen Meteor]]", "txtName": "Fallen Meteor"},
             {"wikiName": "[[Beefie]]", "txtName": "Beefie"},
             {"wikiName": "[[Crescent Spud]]", "txtName": "Crescent Spud"},
             {"wikiName": "[[Enraged Snakenhotep]]", "txtName": "Enraged Snakenhotep"},
@@ -3630,6 +3631,8 @@
             {"wikiName": "[[Amarok]]", "txtName": "Amarok"},
             {"wikiName": "[[Chaotic Amarok]]", "txtName": "Chaotic Amarok"},
             {"wikiName": "[[Radiant Amarok]]", "txtName": "Radiant Amarok"},
+            {"wikiName": "[[Shielding Rune]]", "txtName": "Shielding Rune"},
+            {"wikiName": "[[Ice Ball]]", "txtName": "Ice Ball"},
             {"wikiName": "[[Sandy Pot]]", "txtName": "Sandy Pot"},
             {"wikiName": "[[Mimic]]", "txtName": "Mimic"},
             {"wikiName": "[[Crabcake]]", "txtName": "Crabcake"},
@@ -3712,6 +3715,10 @@
                 "txtName": "Colosseum: Dewdrop Golden Chest"
             },
             {
+                "wikiName": "[[Colosseum/Dewdrop#Legendary Chest|Dewdrop Legendary Chest]]",
+                "txtName": "Colosseum: Dewdrop Legendary Chest"
+            },
+            {
                 "wikiName": "[[Colosseum/Sandstone#Bronze Chest|Sandstone Bronze Chest]]",
                 "txtName": "Colosseum: Sandstone Bronze Chest"
             },
@@ -3722,6 +3729,10 @@
             {
                 "wikiName": "[[Colosseum/Sandstone#Golden Chest|Sandstone Golden Chest]]",
                 "txtName": "Colosseum: Sandstone Golden Chest"
+            },
+            {
+                "wikiName": "[[Colosseum/Sandstone#Legendary Chest|Sandstone Legendary Chest]]",
+                "txtName": "Colosseum: Sandstone Legendary Chest"
             },
             {
                 "wikiName": "[[Colosseum/Chillsnap#Bronze Chest|Chillsnap Bronze Chest]]",
@@ -3736,6 +3747,10 @@
                 "txtName": "Colosseum: Chillsnap Golden Chest"
             },
             {
+                "wikiName": "[[Colosseum/Chillsnap#Legendary Chest|Chillsnap Legendary Chest]]",
+                "txtName": "Colosseum: Chillsnap Legendary Chest"
+            },
+            {
                 "wikiName": "[[Colosseum/Astro#Bronze Chest|Astro Bronze Chest]]",
                 "txtName": "Colosseum: Astro Bronze Chest"
             },
@@ -3746,6 +3761,10 @@
             {
                 "wikiName": "[[Colosseum/Astro#Golden Chest|Astro Golden Chest]]",
                 "txtName": "Colosseum: Astro Golden Chest"
+            },
+            {
+                "wikiName": "[[Colosseum/Astro#Legendary Chest|Astro Legendary Chest]]",
+                "txtName": "Colosseum: Astro Legendary Chest"
             },
             {"wikiName": "[[Ghost (Event)]]", "txtName": "Ghost (Event)"},
             {"wikiName": "[[Giftmas Blobulyte]]", "txtName": "Giftmas Blobulyte"},
@@ -10808,8 +10827,7 @@
     },
     "Timecandy6": {
         "sources": [
-            {"wikiName": "[[DropTable13]]", "txtName": "DropTable13"},
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            {"wikiName": "[[DropTable13]]", "txtName": "DropTable13"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -12631,7 +12649,8 @@
             {
                 "wikiName": "[[Carpenter Cardinal#Restoring Power, once again, to a Portal|Restoring Power, once again, to a Portal]]",
                 "txtName": "Carpenter Cardinal: Restoring Power, once again, to a Portal"
-            }
+            },
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -13316,8 +13335,23 @@
         "recipeFrom": [],
         "questAss": []
     },
-    "EquipmentCape0": {
+    "EquipmentHats81": {
         "sources": [
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "EquipmentHats80": {
+        "sources": [
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "EquipmentHats33": {
+        "sources": [
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
@@ -13348,6 +13382,13 @@
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
             {"wikiName": "[[Guild Giftbox]]", "txtName": "Guild Giftbox"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "StonePremStatswap": {
+        "sources": [
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -16071,13 +16112,6 @@
         "questAss": []
     },
     "EquipmentHats32": {
-        "sources": [
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "EquipmentHats33": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],

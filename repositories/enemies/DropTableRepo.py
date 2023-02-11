@@ -1,8 +1,9 @@
 import re
 from typing import List
 
-from definitions.enemy.DropTable import DropTable
 from definitions.common.DropTypes import Drop, ItemDrop
+from definitions.enemy.DropTable import DropTable
+from helpers.HelperFunctions import formatStr, getFromArrayArray
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.master.Repository import Repository
@@ -27,18 +28,12 @@ class DropTableRepo(Repository[DropTable]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		cls.subDroptables()
-
-	@classmethod
-	def subDroptables(cls):
-		reEnemies = r'.\.setReserved\("([a-zA-Z0-9_]*)", [a-zA-Z0-9_$]*\)'
-		reDrops = r'\["([^ ]*)", "([^ ]*)", "([^ ]*)", "([^ ]*)"\],'
-		droptableData = cls.getSection()
-		droptables = re.split(reEnemies, droptableData)
-		for i in range(0, len(droptables) - 1, 2):
-			drops = re.findall(reDrops, droptables[i])
+		reDropTables = r'.\..\.(\S*?) = ?"?(.*?)"?\)'
+		droptableData = formatStr(cls.getSection(), ["\n", "  "], replaceUnderscores = False)
+		for name, dt in re.findall(reDropTables, droptableData):
+			drops = getFromArrayArray(dt, repU = False)
 			drops = [Drop.arrayToDropType(drop) for drop in drops]
-			cls.add(droptables[i + 1], DropTable(drops = drops.copy(), subTable = droptables[i + 1]))
+			cls.add(name, DropTable(drops = drops.copy(), subTable = name))
 		cls.insertObols()
 
 	@classmethod

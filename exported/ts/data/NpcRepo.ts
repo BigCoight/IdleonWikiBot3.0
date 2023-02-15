@@ -258,9 +258,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 7.84,
-                    "starSign": "Sagittarius",
-                    "mothersMaidenName": "DeLorenzo",
+                    "birthWeight": 2.37,
+                    "starSign": "Libra",
+                    "mothersMaidenName": "Zeller",
                     "notes": " "
                 },
                 "quests": {},
@@ -280,9 +280,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 7.39,
-                    "starSign": "Libra",
-                    "mothersMaidenName": "Linde",
+                    "birthWeight": 8.96,
+                    "starSign": "Pisces",
+                    "mothersMaidenName": "Aikin",
                     "notes": " "
                 },
                 "quests": {},
@@ -4025,7 +4025,9 @@ export const initNpcRepo = () => {
                         "Rewards": [<ComponentModel>{"item": "StampC1", "quantity": 1}, <ExpRewardModel>{"item": "Experience0", "quantity": 7500}],
                         "QuestName": "Tiki Chief2",
                         "Difficulty": 3,
-                        "note": <NoteModel>{"note": "Drop the quest item in front of [[Krunk]], [[Funguy]] and [[Mr Pigibank]]"},
+                        "note": <NoteModel>{
+                            "note": "Drop the quest item in front of [[Krunk]], [[Funguy]] and [[Mr Pigibank]]{{Sources/datarow|Item=Forest Villas Flyer Thingy|Link=Tiki Chief{{!}}Three Strikes, you're Out!}}"
+                        },
                         "CustomType": "Tiki Chief2",
                         "CustomArray": [
                             <CustomReqModel>{"desc": "Rich Guy Invited:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -8771,15 +8773,11 @@ export const initNpcRepo = () => {
                         "ConsumeItems": true,
                         "InventorySpacesNeeded": 3,
                         "NoSpaceIndex": 3,
-                        "Rewards": [
-                            <ComponentModel>{"item": "Quest40", "quantity": 15},
-                            <ComponentModel>{"item": "PremiumGem", "quantity": 10},
-                            <ComponentModel>{"item": "Timecandy1", "quantity": 1}
-                        ],
+                        "Rewards": [<ComponentModel>{"item": "Quest40", "quantity": 7}, <ComponentModel>{"item": "Timecandy1", "quantity": 1}],
                         "QuestName": "Loveulyte1",
                         "Difficulty": 2,
                         "note": <NoteModel>{"note": "All enemies can drop the letters. Daily quest"},
-                        "ItemReq": [<ComponentModel>{"item": "Quest39", "quantity": 25}]
+                        "ItemReq": [<ComponentModel>{"item": "Quest39", "quantity": 3}]
                     },
                     "Heartbreaker": <CustomQuestModel>{
                         "Type": QuestTypeEnum.Custom,
@@ -8789,7 +8787,7 @@ export const initNpcRepo = () => {
                         "ConsumeItems": false,
                         "InventorySpacesNeeded": 2,
                         "NoSpaceIndex": 6,
-                        "Rewards": [<ComponentModel>{"item": "Quest40", "quantity": 15}, <ComponentModel>{"item": "PremiumGem", "quantity": 10}],
+                        "Rewards": [<ComponentModel>{"item": "Quest40", "quantity": 8}, <ComponentModel>{"item": "Timecandy2", "quantity": 1}],
                         "QuestName": "Loveulyte2",
                         "Difficulty": 4,
                         "note": <NoteModel>{
@@ -8808,7 +8806,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
-                        "DialogueText": "From now until March 8th I'll be around so try to get some goodies before I can't be found!",
+                        "DialogueText": "From now until Feb 24th I'll be around so try to get some goodies before I can't be found!",
                         "NextIndex": 2,
                         "Name": ""
                     },

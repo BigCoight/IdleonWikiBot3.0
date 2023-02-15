@@ -502,6 +502,7 @@
             {"source": "slimeR", "quantity": 69, "chance": 0.5},
             {"source": "loveEvent", "quantity": 69, "chance": 0.5},
             {"source": "loveEvent2", "quantity": 69, "chance": 0.5},
+            {"source": "loveEvent3", "quantity": 69, "chance": 0.5},
             {"source": "sheepB", "quantity": 69, "chance": 0.5},
             {"source": "snakeY", "quantity": 69, "chance": 0.5},
             {"source": "EasterEvent2", "quantity": 69, "chance": 0.5},
@@ -5580,44 +5581,53 @@
         "sources": [
             {"source": "slimeR", "quantity": 1, "chance": 0.085},
             {"source": "loveEvent", "quantity": 1, "chance": 0.05},
-            {"source": "loveEvent2", "quantity": 1, "chance": 0.05}
-        ]
-    },
-    "Quest40": {
-        "sources": [
-            {"source": "slimeR", "quantity": 1, "chance": 0.2},
-            {"source": "loveEvent", "quantity": 1, "chance": 0.05},
-            {"source": "loveEvent2", "quantity": 1, "chance": 0.05}
+            {"source": "loveEvent2", "quantity": 1, "chance": 0.05},
+            {"source": "loveEvent3", "quantity": 1, "chance": 0.05}
         ]
     },
     "FoodEvent5": {
         "sources": [
-            {"source": "slimeR", "quantity": 3, "chance": 0.25},
+            {"source": "slimeR", "quantity": 5, "chance": 0.25},
             {"source": "loveEvent", "quantity": 3, "chance": 0.25},
             {"source": "loveEvent2", "quantity": 3, "chance": 0.25}
         ]
     },
     "FoodEvent6": {
         "sources": [
-            {"source": "slimeR", "quantity": 3, "chance": 0.25},
+            {"source": "slimeR", "quantity": 5, "chance": 0.25},
             {"source": "loveEvent", "quantity": 3, "chance": 0.25},
             {"source": "loveEvent2", "quantity": 3, "chance": 0.25}
         ]
     },
     "FoodEvent7": {
         "sources": [
-            {"source": "slimeR", "quantity": 2, "chance": 0.25},
+            {"source": "slimeR", "quantity": 5, "chance": 0.25},
             {"source": "loveEvent", "quantity": 2, "chance": 0.25},
             {"source": "loveEvent2", "quantity": 2, "chance": 0.25}
         ]
     },
     "FoodEvent8": {
         "sources": [
-            {"source": "slimeR", "quantity": 2, "chance": 0.25},
+            {"source": "slimeR", "quantity": 5, "chance": 0.25},
             {"source": "loveEvent", "quantity": 2, "chance": 0.25},
             {"source": "loveEvent2", "quantity": 2, "chance": 0.25}
         ]
     },
+    "Quest40": {
+        "sources": [
+            {"source": "loveEvent", "quantity": 1, "chance": 0.05},
+            {"source": "loveEvent2", "quantity": 1, "chance": 0.05}
+        ]
+    },
+    "EquipmentCape8": {"sources": [
+        {"source": "loveEvent3", "quantity": 1, "chance": 0.001429}
+    ]},
+    "EquipmentCape9": {"sources": [
+        {"source": "loveEvent3", "quantity": 1, "chance": 0.001429}
+    ]},
+    "EquipmentCape10": {"sources": [
+        {"source": "loveEvent3", "quantity": 1, "chance": 0.001429}
+    ]},
     "CardsY6": {
         "sources": [
             {"source": "sheepB", "quantity": 1, "chance": 0.05},

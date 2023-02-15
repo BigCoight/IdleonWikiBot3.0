@@ -241,11 +241,11 @@
     },
     "Blank": {
         "cardID": "A0",
-        "category": "Event",
+        "category": "Bosses",
         "perTier": 10,
         "effect": "+{% Base HP",
         "bonus": 3,
-        "order": 16
+        "order": 24
     },
     "Copper": {
         "cardID": "C1",
@@ -1471,13 +1471,21 @@
         "bonus": 4,
         "order": 6
     },
+    "loveEvent3": {
+        "cardID": "Y15",
+        "category": "Event",
+        "perTier": 1.5,
+        "effect": "+{% EXP from monsters",
+        "bonus": 3,
+        "order": 7
+    },
     "sheepB": {
         "cardID": "Y6",
         "category": "Event",
         "perTier": 3,
         "effect": "+{% MP regen rate",
         "bonus": 3,
-        "order": 7
+        "order": 8
     },
     "snakeY": {
         "cardID": "Y7",
@@ -1485,7 +1493,7 @@
         "perTier": 3,
         "effect": "+{ Base LUK",
         "bonus": 3,
-        "order": 8
+        "order": 9
     },
     "EasterEvent1": {
         "cardID": "Y8",
@@ -1493,7 +1501,7 @@
         "perTier": 1.5,
         "effect": "+{% Card Drop Chance",
         "bonus": 1,
-        "order": 9
+        "order": 10
     },
     "EasterEvent2": {
         "cardID": "Y9",
@@ -1501,7 +1509,7 @@
         "perTier": 1.5,
         "effect": "+{% Critical Damage",
         "bonus": 1,
-        "order": 10
+        "order": 11
     },
     "shovelY": {
         "cardID": "Y13",
@@ -1509,7 +1517,7 @@
         "perTier": 4,
         "effect": "+{ Base Defence",
         "bonus": 2,
-        "order": 11
+        "order": 12
     },
     "crabcakeB": {
         "cardID": "Y10",
@@ -1517,7 +1525,7 @@
         "perTier": 4,
         "effect": "+{% Total Drop Rate",
         "bonus": 3,
-        "order": 12
+        "order": 13
     },
     "SummerEvent1": {
         "cardID": "Y11",
@@ -1525,7 +1533,7 @@
         "perTier": 8,
         "effect": "+{% Fishing Away Gains",
         "bonus": 1,
-        "order": 13
+        "order": 14
     },
     "SummerEvent2": {
         "cardID": "Y12",
@@ -1533,7 +1541,7 @@
         "perTier": 8,
         "effect": "+{% Catching EXP",
         "bonus": 4,
-        "order": 14
+        "order": 15
     },
     "xmasEvent3": {
         "cardID": "Y14",
@@ -1541,6 +1549,6 @@
         "perTier": 1,
         "effect": "+{% Defence from Equipment",
         "bonus": 3,
-        "order": 15
+        "order": 16
     }
 }

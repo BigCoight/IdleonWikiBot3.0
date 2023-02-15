@@ -112,7 +112,7 @@
     "EquipmentHats51": {"note": " "},
     "EquipmentHats56": {"note": " "},
     "EquipmentHats73": {
-        "note": "This helmet was only available for a limited time because of a sponsored video with a YouTuber that goes by the name  'Real Civil Engineer' hence the name."
+        "note": "See [[Secrets]] for how to obtain this item.$$NEWLINE$$$$NEWLINE$$This helmet was originally intended to be available for a limited time because of a sponsored video with a YouTuber that goes by the name  'Real Civil Engineer' hence the name. For whatever reason, the event has yet to be removed."
     },
     "EquipmentHats20": {"note": " "},
     "TestObj13": {"note": " "},
@@ -242,7 +242,7 @@
     "EquipmentPendant11": {"note": " "},
     "EquipmentPendant12": {"note": " "},
     "EquipmentPendant13": {"note": " "},
-    "EquipmentPendant14": {"note": " "},
+    "EquipmentPendant14": {"note": "''Purple Depth refers to the [[Fishing]] System.''"},
     "EquipmentPendant16": {"note": " "},
     "EquipmentPendant17": {"note": " "},
     "EquipmentPendant18": {
@@ -323,7 +323,8 @@
     "TrapBoxSet3": {"note": " "},
     "TrapBoxSet4": {"note": " "},
     "TrapBoxSet5": {"note": " "},
-    "TrapBoxSet7": {"note": " "},
+    "TrapBoxSet7": {"note": "{{otheruses|the level-48 trap|the level-60 trap|Egalitarian Royal Traps}}"},
+    "TrapBoxSet8": {"note": "{{otheruses|the level-60 trap|the level-48 trap|Royal Traps}}"},
     "WorshipSkull2": {"note": " "},
     "WorshipSkull3": {"note": " "},
     "WorshipSkull4": {"note": " "},
@@ -874,6 +875,9 @@
     "GemP16": {
         "note": "{{#cargo_query:tables=Items|fields=_pageName=Item, CONCAT('Dungeon Loot Dice')=Source, CONCAT('Dungeon Loot Dice')=Link, CONCAT('Random')=SpecialText|where=Type='Keychain' AND NOT _pageName IN ('Key to Desert', 'Key to Mountains', 'Key to Purgatory')|format=template|named args=yes|template=Sources/datarow|default=}}"
     },
+    "GemP25": {
+        "note": "{{Sources/datarow|Item=Hyper DMG Obol}}{{Sources/datarow|Item=Hyper Pyre Obol}}{{Sources/datarow|Item=Hyper Six Obol}}{{Sources/datarow|Item=Hyper Skull Obol}}"
+    },
     "EquipmentHats31": {"note": " "},
     "EquipmentHats32": {"note": " "},
     "EquipmentHats33": {"note": " "},
@@ -901,6 +905,6 @@
     "TixCol": {"note": " "},
     "DeliveryBox": {"note": " "},
     "SilverPen": {"note": " "},
-    "PremiumGem": {"note": " "},
-    "version": "174"
+    "PremiumGem": {"note": "{{Otheruses|the gem shop currency}}"},
+    "version": "175"
 }

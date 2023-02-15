@@ -239,9 +239,9 @@
             "noQuest": 0,
             "repeatable": "Unknown",
             "type": "Unknown",
-            "birthWeight": 7.84,
-            "starSign": "Sagittarius",
-            "mothersMaidenName": "DeLorenzo",
+            "birthWeight": 2.37,
+            "starSign": "Libra",
+            "mothersMaidenName": "Zeller",
             "notes": " "
         },
         "quests": {},
@@ -256,9 +256,9 @@
             "noQuest": 0,
             "repeatable": "Unknown",
             "type": "Unknown",
-            "birthWeight": 7.39,
-            "starSign": "Libra",
-            "mothersMaidenName": "Linde",
+            "birthWeight": 8.96,
+            "starSign": "Pisces",
+            "mothersMaidenName": "Aikin",
             "notes": " "
         },
         "quests": {},
@@ -3928,7 +3928,7 @@
                 "Rewards": [{"item": "StampC1", "quantity": 1}, {"item": "Experience0", "quantity": 7500}],
                 "QuestName": "Tiki Chief2",
                 "Difficulty": 3,
-                "note": "Drop the quest item in front of [[Krunk]], [[Funguy]] and [[Mr Pigibank]]",
+                "note": "Drop the quest item in front of [[Krunk]], [[Funguy]] and [[Mr Pigibank]]{{Sources/datarow|Item=Forest Villas Flyer Thingy|Link=Tiki Chief{{!}}Three Strikes, you're Out!}}",
                 "CustomType": "Tiki Chief2",
                 "CustomArray": [
                     {"desc": "Rich Guy Invited:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
@@ -8575,15 +8575,11 @@
                 "ConsumeItems": true,
                 "InventorySpacesNeeded": 3,
                 "NoSpaceIndex": 3,
-                "Rewards": [
-                    {"item": "Quest40", "quantity": 15},
-                    {"item": "PremiumGem", "quantity": 10},
-                    {"item": "Timecandy1", "quantity": 1}
-                ],
+                "Rewards": [{"item": "Quest40", "quantity": 7}, {"item": "Timecandy1", "quantity": 1}],
                 "QuestName": "Loveulyte1",
                 "Difficulty": 2,
                 "note": "All enemies can drop the letters. Daily quest",
-                "ItemReq": [{"item": "Quest39", "quantity": 25}]
+                "ItemReq": [{"item": "Quest39", "quantity": 3}]
             },
             "Heartbreaker": {
                 "Type": "Custom",
@@ -8593,7 +8589,7 @@
                 "ConsumeItems": false,
                 "InventorySpacesNeeded": 2,
                 "NoSpaceIndex": 6,
-                "Rewards": [{"item": "Quest40", "quantity": 15}, {"item": "PremiumGem", "quantity": 10}],
+                "Rewards": [{"item": "Quest40", "quantity": 8}, {"item": "Timecandy2", "quantity": 1}],
                 "QuestName": "Loveulyte2",
                 "Difficulty": 4,
                 "note": "Consume 5 {{CraftReq|Lovey Dovey Letter}} to summon a [[Valentslime]]. Daily quest.",
@@ -8610,7 +8606,7 @@
             },
             {
                 "Type": "NoQuest",
-                "DialogueText": "From now until March 8th I'll be around so try to get some goodies before I can't be found!",
+                "DialogueText": "From now until Feb 24th I'll be around so try to get some goodies before I can't be found!",
                 "NextIndex": 2,
                 "Name": ""
             },

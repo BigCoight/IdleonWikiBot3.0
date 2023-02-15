@@ -1,1 +1,48 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "loveEvent3": {
+            "details": {
+                "Name": "Giant Rose",
+                "RespawnTime": 86400,
+                "MonsterHPTotal": 750000,
+                "SpecialType": "a",
+                "ExpGiven": 12000,
+                "ExpType": 0,
+                "Defence": 600,
+                "MoveSPEED": 3,
+                "Damages": [1000, 1],
+                "DefFor0": 1223.26
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 69, "chance": 0.5, "questLink": "N/A"},
+                {"item": "CardsY3", "quantity": 1, "chance": 0.05, "questLink": "N/A"},
+                {"item": "EquipmentCape8", "quantity": 1, "chance": 0.001429, "questLink": "N/A"},
+                {"item": "EquipmentCape9", "quantity": 1, "chance": 0.001429, "questLink": "N/A"},
+                {"item": "EquipmentCape10", "quantity": 1, "chance": 0.001429, "questLink": "N/A"}
+            ],
+            "mapData": null
+        }
+    },
+    "changes": {
+        "slimeR": {
+            "drops": {
+                "6": [
+                    {"item": "FoodEvent8", "quantity": 2, "chance": 0.25, "questLink": "N/A"},
+                    {"item": "FoodEvent8", "quantity": 5, "chance": 0.25, "questLink": "N/A"}
+                ],
+                "3": [
+                    {"item": "FoodEvent5", "quantity": 3, "chance": 0.25, "questLink": "N/A"},
+                    {"item": "FoodEvent5", "quantity": 5, "chance": 0.25, "questLink": "N/A"}
+                ],
+                "5": [
+                    {"item": "FoodEvent7", "quantity": 2, "chance": 0.25, "questLink": "N/A"},
+                    {"item": "FoodEvent7", "quantity": 5, "chance": 0.25, "questLink": "N/A"}
+                ],
+                "4": [
+                    {"item": "FoodEvent6", "quantity": 3, "chance": 0.25, "questLink": "N/A"},
+                    {"item": "FoodEvent6", "quantity": 5, "chance": 0.25, "questLink": "N/A"}
+                ]
+            }
+        }
+    }
+}

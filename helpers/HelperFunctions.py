@@ -189,10 +189,10 @@ def strToArray(v: str, repU = False) -> List[str]:
 
 	"""
 	string = v.replace(",_", "&&&&").replace(",0", "$$$$").replace("{_", "****").replace("{%_", "####")
-	parts = formatStr(string, ["[", "]", '"', "return", ";", "\n", "{", "}"]).split(",")
+	parts = formatStr(string, ["[", "]", '"', "return ", ";", "\n", "{", "}"]).split(",")
 	res = []
 	for x in parts:
-		formatted = formatStr(x).replace("&&&&", ", ").replace("$$$$", ",0").replace("****", "{_").replace("####",
+		formatted = formatStr(x).replace("&&&&", ",_").replace("$$$$", ",0").replace("****", "{_").replace("####",
 		                                                                                                   "{%_")
 		if formatted:
 			res.append(replaceUnderscores(formatted) if repU else formatted)

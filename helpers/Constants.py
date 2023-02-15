@@ -47,3 +47,9 @@ class Constants:
 	sailingIslands = ["Safari Island", "Beachy Coast", "Isolated Woods", "Rocky Peaks", "Stormy North",
 	                  "Snowy South", "Toxic Bay Inc", "Candied Island", "Fungi Meadows", "Cloudy Quay", "Dungeon Cove",
 	                  "Crystal Enclave", "Petulent Garage", "Isle of Note", "The Edge"]
+
+	gemShopSections = [
+		["Hats", "Chat Rings", "Blank", "Blank", "Blank", "Blank"],
+		["Time Candy", "Inventory & Storage", "Dailies N' Resets", "Cards", "Goods & Services", "Limited Specials"],
+		["Premium Stones", "World 1&2", "World 3", "World 4", "World 5", "Blank"]
+	]

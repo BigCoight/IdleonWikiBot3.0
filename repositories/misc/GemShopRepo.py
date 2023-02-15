@@ -1,7 +1,8 @@
 from typing import List
 
 from definitions.misc.GemShopItem import GemShopItem
-from helpers.HelperFunctions import getFromSplitArray
+from helpers.Constants import Constants
+from helpers.HelperFunctions import getFrom4dArray, getFromSplit, replaceUnderscores
 from repositories.master.Repository import Repository
 
 
@@ -20,23 +21,25 @@ class GemShopRepo(Repository[GemShopItem]):
 
 	@classmethod
 	def generateRepo(cls) -> None:
-		gemShopItems = getFromSplitArray(cls.getSection())
-		for item in gemShopItems:
-			toAdd = GemShopItem(
-				name = item[0],
-				itemName = item[1].title(),
-				desc = item[2],
-				cost = item[3],
-				no = item[4],
-				maxPurchases = item[5],
-				qty = item[6],
-				costIncrement = item[7]
-			)
-			cls.addList(toAdd)
-			if item[3] == "GemCostNum":
-				continue
-			cls.add(item[0], toAdd)
-
-	@classmethod
-	def getWikiName(cls, name: str) -> str:
-		return cls.get(name).itemName
+		gemShopItems = getFrom4dArray(cls.getSection())[0]
+		for n, parentSection in enumerate(gemShopItems):
+			for m, childSection in enumerate(parentSection):
+				for gemShopSlot in childSection:
+					gemShop = getFromSplit(gemShopSlot)
+					gemShop = [replaceUnderscores(x) for x in gemShop]
+					section = Constants.gemShopSections[n][m]
+					toAdd = GemShopItem(
+						section = section,
+						name = gemShop[0],
+						itemName = gemShop[1].title(),
+						desc = gemShop[2],
+						cost = gemShop[3],
+						no = gemShop[4],
+						maxPurchases = gemShop[5],
+						qty = gemShop[6],
+						costIncrement = gemShop[7]
+					)
+					cls.addList(toAdd)
+					if gemShop[3] == "GemCostNum":
+						continue
+					cls.add(gemShop[0], toAdd)

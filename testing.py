@@ -2,8 +2,8 @@
 # oldV = IdleonReader("156", True)
 # NpcRepo.initialise(newV.codeReader)
 from helpers.CodeReader import IdleonReader
-from repositories.item.UsesRepo import UsesRepo
+from repositories.misc.GemShopRepo import GemShopRepo
 
-newV = IdleonReader("174", True)
+newV = IdleonReader("175b", True)
 
-UsesRepo.initialise(newV.codeReader)
+GemShopRepo.initialise(newV.codeReader)

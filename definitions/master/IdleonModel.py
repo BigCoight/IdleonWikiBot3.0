@@ -222,8 +222,6 @@ class IdleonModel(BaseModel):
 					res += f"|{wiki}={atr()}"
 					if newLine:
 						res += "\n"
-		self.dict()
-
 		return res
 
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:

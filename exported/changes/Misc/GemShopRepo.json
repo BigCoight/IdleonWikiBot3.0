@@ -1,26 +1,77 @@
 {
     "new": {
-        "Quest40": {
-            "name": "Quest40",
-            "itemName": "Valenslime Boxes",
-            "desc": "100 Choco Boxes to open! Average rewards are 60 HOURS of Time Candy, over 100 gems, and a 20% chance at a Rose Cape! YOU CAN ONLY GET 3 ROSE CAPES, so maybe don't buy after you get all 3!",
-            "cost": 590,
-            "no": 90,
-            "maxPurchases": 20,
-            "qty": 100,
+        "GemP18": {
+            "section": "Limited Specials",
+            "name": "GemP18",
+            "itemName": "Dragonic Liquid Cauldron",
+            "desc": "Turns your 1st Liquid Cauldron into a Dragonic Cauldron, or 2nd Liquid Cauldron if you bought this before. Dragonic Cauldrons give 2x Liquid Capacity, a bonus which stacks with the 1.5x from Bleach Liquid Cauldrons.",
+            "cost": 969,
+            "no": 89,
+            "maxPurchases": 1,
+            "qty": 0,
+            "costIncrement": 0
+        },
+        "Pearl6": {
+            "section": "Limited Specials",
+            "name": "Pearl6",
+            "itemName": "Pair Of Pearls",
+            "desc": "You found a pair of what now? Where'd you find those, I don't remember stocking them... well, does it have a price tag? No? Eh lets just call it 1 gem... but the 2nd one is gonna cost ya extra!",
+            "cost": 1,
+            "no": 88,
+            "maxPurchases": 2,
+            "qty": 1,
+            "costIncrement": 1
+        },
+        "GemP26": {
+            "section": "World 5",
+            "name": "GemP26",
+            "itemName": "Ancient Artifact",
+            "desc": "Upgrades a random artifact you own to its ANCIENT form! 100% Success chance, no foolin! This item restocks every week. See Guild GP claim for when that happens.",
+            "cost": 790,
+            "no": 134,
+            "maxPurchases": 2,
+            "qty": 0,
+            "costIncrement": 0
+        },
+        "GemP19": {
+            "section": "Limited Specials",
+            "name": "GemP19",
+            "itemName": "Random Boss Obol",
+            "desc": "Gives you one of the Following Obols: Amarok Obol (+4% DEF), Efaunt Obol (+5% Boss Damage), Slush Obol (+3% Skill Efficiency), Chizoar Obol (+4% Total Damage), or Troll Obol (+3% ALL STAT)",
+            "cost": 600,
+            "no": 91,
+            "maxPurchases": 4,
+            "qty": 1,
+            "costIncrement": 0
+        },
+        "EquipmentRings32": {
+            "section": "Limited Specials",
+            "name": "EquipmentRings32",
+            "itemName": "World 4 Kill Ring",
+            "desc": "All kills in World 4 count for 1.30x for opening portals to the next map. Helps you get to World 5 faster! 30% Faster to be exact!",
+            "cost": 844,
+            "no": 93,
+            "maxPurchases": 1,
+            "qty": 1,
             "costIncrement": 0
         }
     },
     "changes": {
         "Blank": {
-            "itemName": ["Name Of Item", "Cosmic Candy"],
+            "section": ["Time Candy", "Limited Specials"],
+            "itemName": ["Cosmic Candy", "Name Of Item"],
             "desc": [
-                "Gives +35% EXP gain when killing monsters! Level up more, get more talent points... go harder, get better, go faster, get stronger! Also gives +5% monster respawn cuz why not lol",
-                "Gives 1 Cosmic Time Candy, which can give up to 500 HOURS of AFK time! On average, it will give 24 hrs."
+                "Gives 1 Cosmic Time Candy, which can give up to 500 HOURS of AFK time! On average, it will give 24 hrs.",
+                "Super close to getting a rose? Well don't worry I'll give you one more shot... good luck! Buying this will give you 100 Valenslimes Day Choco boxes."
             ],
-            "cost": [850, 325],
-            "no": [90, 54],
-            "maxPurchases": [1, 100000]
+            "no": [54, 92],
+            "maxPurchases": [100000, 1]
+        },
+        "Quest40": {
+            "desc": [
+                "100 Choco Boxes to open! Average rewards are 60 HOURS of Time Candy, over 100 gems, and a 20% chance at a Rose Cape! YOU CAN ONLY GET 3 ROSE CAPES, so maybe don't buy after you get all 3!",
+                "100 Choco Boxes to open! Average rewards are 60 HOURS of Time Candy over 100 gems, and a 20% Chance at a Rose Cape! YOU CAN ONLY GET 3 ROSE CAPES, so maybe don't buy after you get all 3 capes!"
+            ]
         }
     }
 }

@@ -3556,7 +3556,7 @@ export const initNpcRepo = () => {
                 "dialogue": [
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
-                        "DialogueText": "Hallo! Welcome to tha Jungle. I am pleased to make your aquaintance! <br> QUEST:Go complete Scripticus' quests until he asks you for Foreign Aid... ok this isn't really a quest but Stiltzcho wont wanna talk to you until you do that!",
+                        "DialogueText": "Hallo! Welcome to tha Jungle. I am pleased to make your aquaintance! QUEST:Go complete Scripticus' quests until he asks you for Foreign Aid... ok this isn't really a quest but Stiltzcho wont wanna talk to you until you do that!",
                         "NextIndex": 0,
                         "Name": ""
                     },

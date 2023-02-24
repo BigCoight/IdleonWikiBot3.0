@@ -1,3 +1,4 @@
+import string
 from typing import List
 
 from definitions.misc.GemShopItem import GemShopItem
@@ -31,7 +32,7 @@ class GemShopRepo(Repository[GemShopItem]):
 					toAdd = GemShopItem(
 						section = section,
 						name = gemShop[0],
-						itemName = gemShop[1].title(),
+						itemName = string.capwords(gemShop[1]),
 						desc = gemShop[2],
 						cost = gemShop[3],
 						no = gemShop[4],
@@ -43,3 +44,7 @@ class GemShopRepo(Repository[GemShopItem]):
 					if gemShop[3] == "GemCostNum":
 						continue
 					cls.add(gemShop[0], toAdd)
+
+	@classmethod
+	def getWikiName(cls, name: str) -> str:
+		return cls.get(name).itemName

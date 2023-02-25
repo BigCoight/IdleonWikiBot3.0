@@ -7,7 +7,8 @@ from helpers.CustomTypes import Integer
 class GemShopItem(IdleonModel):
 	section: str
 	name: str
-	itemName: str
+	mtxName: str
+	itemDisplayName: str
 	desc: str
 	cost: Integer
 	no: Integer
@@ -25,9 +26,13 @@ class GemShopItem(IdleonModel):
 		return {
 			"section": "section",
 			"name": "name",
-			"itemName": "itemName",
+			"mtxName": "mtxName",
+			"itemDisplayName": "itemDisplayName",
 			"description": "desc",
 			"cost": "cost",
 			"maxPurchases": "maxPurchases",
 			"costIncrement": "costIncrement",
 		}
+
+	def isFiller(self) -> bool:
+		return self.name == "Blank"

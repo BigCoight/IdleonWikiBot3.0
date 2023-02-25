@@ -185,6 +185,8 @@ class Repository(Generic[T], ABC):
 		for newItem in newItems:
 			if cls._ignore(newItem, repo2[newItem]) and useIgnore:
 				continue
+			if repo2[newItem].isFiller():
+				continue
 			current = repo2[newItem].toDict(ignored)
 			if not any(current):
 				continue

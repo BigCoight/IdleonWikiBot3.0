@@ -11,16 +11,16 @@
             "qty": 0,
             "costIncrement": 0
         },
-        "Pearl6": {
+        "GemP19": {
             "section": "Limited Specials",
-            "name": "Pearl6",
-            "itemName": "Pair Of Pearls",
-            "desc": "You found a pair of what now? Where'd you find those, I don't remember stocking them... well, does it have a price tag? No? Eh lets just call it 1 gem... but the 2nd one is gonna cost ya extra!",
-            "cost": 1,
-            "no": 88,
-            "maxPurchases": 2,
+            "name": "GemP19",
+            "itemName": "Random Boss Obol",
+            "desc": "Gives you one of the Following Obols: Amarok Obol (+4% DEF), Efaunt Obol (+5% Boss Damage), Slush Obol (+3% Skill Efficiency), Chizoar Obol (+4% Total Damage), or Troll Obol (+3% ALL STAT)",
+            "cost": 600,
+            "no": 91,
+            "maxPurchases": 4,
             "qty": 1,
-            "costIncrement": 1
+            "costIncrement": 0
         },
         "GemP26": {
             "section": "World 5",
@@ -33,16 +33,16 @@
             "qty": 0,
             "costIncrement": 0
         },
-        "GemP19": {
+        "Pearl6": {
             "section": "Limited Specials",
-            "name": "GemP19",
-            "itemName": "Random Boss Obol",
-            "desc": "Gives you one of the Following Obols: Amarok Obol (+4% DEF), Efaunt Obol (+5% Boss Damage), Slush Obol (+3% Skill Efficiency), Chizoar Obol (+4% Total Damage), or Troll Obol (+3% ALL STAT)",
-            "cost": 600,
-            "no": 91,
-            "maxPurchases": 4,
+            "name": "Pearl6",
+            "itemName": "Pair Of Pearls",
+            "desc": "You found a pair of what now? Where'd you find those, I don't remember stocking them... well, does it have a price tag? No? Eh lets just call it 1 gem... but the 2nd one is gonna cost ya extra!",
+            "cost": 1,
+            "no": 88,
+            "maxPurchases": 2,
             "qty": 1,
-            "costIncrement": 0
+            "costIncrement": 1
         },
         "EquipmentRings32": {
             "section": "Limited Specials",
@@ -57,6 +57,12 @@
         }
     },
     "changes": {
+        "Quest40": {
+            "desc": [
+                "100 Choco Boxes to open! Average rewards are 60 HOURS of Time Candy, over 100 gems, and a 20% chance at a Rose Cape! YOU CAN ONLY GET 3 ROSE CAPES, so maybe don't buy after you get all 3!",
+                "100 Choco Boxes to open! Average rewards are 60 HOURS of Time Candy over 100 gems, and a 20% Chance at a Rose Cape! YOU CAN ONLY GET 3 ROSE CAPES, so maybe don't buy after you get all 3 capes!"
+            ]
+        },
         "Blank": {
             "section": ["Time Candy", "Limited Specials"],
             "itemName": ["Cosmic Candy", "Name Of Item"],
@@ -66,12 +72,6 @@
             ],
             "no": [54, 92],
             "maxPurchases": [100000, 1]
-        },
-        "Quest40": {
-            "desc": [
-                "100 Choco Boxes to open! Average rewards are 60 HOURS of Time Candy, over 100 gems, and a 20% chance at a Rose Cape! YOU CAN ONLY GET 3 ROSE CAPES, so maybe don't buy after you get all 3!",
-                "100 Choco Boxes to open! Average rewards are 60 HOURS of Time Candy over 100 gems, and a 20% Chance at a Rose Cape! YOU CAN ONLY GET 3 ROSE CAPES, so maybe don't buy after you get all 3 capes!"
-            ]
         }
     }
 }

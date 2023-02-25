@@ -13,3 +13,6 @@ class Constellation(IdleonModel):
 	starChartPoints: Integer
 	requirement: str
 	type: Integer
+
+	def isFiller(self) -> bool:
+		return self.name == "Filler"

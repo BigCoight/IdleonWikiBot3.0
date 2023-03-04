@@ -37,6 +37,9 @@ class Talent(IdleonModel):
 			res += f"|form2={self.funcY}\n"
 			res += f"|y1={self.y1}\n"
 			res += f"|y2={self.y2}\n"
+
+		if self.activeData:
+			res += self.activeData.writeWiki()
 		res += "}}"
 		return res
 
@@ -54,5 +57,4 @@ class TalentTree(IdleonModel):
 		return "\n".join(map(lambda x: x.writeWiki(), self.talents.values()))
 
 	def isFiller(self) -> bool:
-		talents = self.talents.values()
-		return len(talents) <= 3
+		return len(self.talents) <= 5

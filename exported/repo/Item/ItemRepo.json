@@ -17801,13 +17801,7 @@
             "Skill": "",
             "Skill_Power": 0
         },
-        "sources": {
-            "sources": [
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-            ],
-            "recipeFrom": [],
-            "questAss": []
-        },
+        "sources": null,
         "notes": null,
         "recipe": null,
         "vendors": null,
@@ -18991,6 +18985,7 @@
         },
         "sources": {
             "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
                 {"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
                 {
                     "wikiName": "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
@@ -30894,8 +30889,7 @@
                 {
                     "wikiName": "[[Loveulyte#Heartbreaker|Heartbreaker]]",
                     "txtName": "Loveulyte: Heartbreaker"
-                },
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                }
             ],
             "recipeFrom": [],
             "questAss": []
@@ -31368,8 +31362,7 @@
                 {
                     "wikiName": "[[Poigu#Learn the Language of the Universe|Learn the Language of the Universe]]",
                     "txtName": "Poigu: Learn the Language of the Universe"
-                },
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                }
             ],
             "recipeFrom": [],
             "questAss": []
@@ -51092,7 +51085,8 @@
                 {
                     "wikiName": "[[Carpenter Cardinal#Restoring Power, once again, to a Portal|Restoring Power, once again, to a Portal]]",
                     "txtName": "Carpenter Cardinal: Restoring Power, once again, to a Portal"
-                }
+                },
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -64053,13 +64047,7 @@
             "Type": "Obol Stack",
             "description": "Hold down and 1 boss obol will drop at your feet! YOU MUST BE IN WORLD 2 TOWN TO USE THIS! This way you can trash other obols incase you're out of space! "
         },
-        "sources": {
-            "sources": [
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-            ],
-            "recipeFrom": [],
-            "questAss": []
-        },
+        "sources": null,
         "notes": null,
         "recipe": null,
         "vendors": null,
@@ -64860,6 +64848,42 @@
         "anvilProduction": null,
         "detDrops": null,
         "slabSort": {"item": {"item": "EquipmentHats81"}, "order": 1388}
+    },
+    "EquipmentHats82": {
+        "item": {
+            "internalName": "EquipmentHats82",
+            "displayName": "Ele Sorcerer Pointed Hat",
+            "sellPrice": 1,
+            "typeGen": "aHelmetMTX",
+            "Type": "Premium Helmet",
+            "lvReqToCraft": 5,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 1,
+            "AGI": 1,
+            "WIS": 1,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "5% All Stats",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null,
+        "slabSort": null
     },
     "Key1": {
         "item": {

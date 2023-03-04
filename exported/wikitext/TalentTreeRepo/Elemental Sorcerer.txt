@@ -1,4 +1,70 @@
 {{Talent
+|name=Meteor Shower
+|textArr=Rains down (Table 2) meteors onto nearby platforms, which deal (Table 1)% damage
+|form1=bigBase
+|x1=200
+|x2=2.5
+|form2=intervalAdd
+|y1=10
+|y2=7
+|cooldown=12
+|actiontime=0.8
+|manacost=50
+}}
+{{Talent
+|name=Lightning Barrage
+|textArr=Your next attack casts a lightning strike, dealing (Table 1)% dmg to up to (Table 2) mobs
+|form1=bigBase
+|x1=700
+|x2=8
+|form2=intervalAdd
+|y1=2
+|y2=20
+|cooldown=4
+|actiontime=0.55
+|manacost=60
+}}
+{{Talent
+|name=Radiant Chainbolt
+|textArr=Cast a bolt with (Table 1)% dmg and bounces up to (Table 2) times, losing dmg each time
+|form1=bigBase
+|x1=50
+|x2=4
+|form2=intervalAdd
+|y1=3
+|y2=10
+|cooldown=8
+|actiontime=0.95
+|manacost=100
+}}
+{{Talent
+|name=Dimensional Wormhole
+|textArr=Spawns Wormhole Mobs which give +(Table 1)% XP & Drop per Wormhole kill and spawn more.
+|form1=decay
+|x1=17
+|x2=70
+|form2=bigBase
+|y1=43
+|y2=0.2
+|cooldown=120
+|actiontime=0.95
+|manacost=100
+}}
+{{Talent
+|name=Chaotic Force
+|textArr=Basic attacks have a (Table 1)% chance to create either a Fireball, Tornado, or Volcano.
+|form1=decay
+|x1=75
+|x2=110
+}}
+{{Talent
+|name=Believer Strength
+|textArr=+(Table 1) Weapon Power for every 10 Divinity Lvs of this character.
+|form1=decay
+|x1=7
+|x2=100
+}}
+{{Talent
 |name=Memorial Skulls
 |textArr=+(Table 1)% Kill per Kill per 1000 WIS. Each kill is worth more kills!
 |form1=decay
@@ -31,6 +97,34 @@
 |form1=decay
 |x1=40
 |x2=100
+}}
+{{Talent
+|name=Polytheism
+|textArr=Link to 2nd God based on Talents Lv. Stand under Omniphau God to De-Level.
+|form1=decay
+|x1=70
+|x2=200
+}}
+{{Talent
+|name=Shared Beliefs
+|textArr=+(Table 1)% Divinity EXP Gain for all characters. Multiplicative too, divinilicious!
+|form1=decay
+|x1=100
+|x2=100
+}}
+{{Talent
+|name=Gods Chosen Children
+|textArr=+(Table 1)% DMG for all chars per GOD Rank. Reach all 10 Gods first...
+|form1=decay
+|x1=10
+|x2=200
+}}
+{{Talent
+|name=Wormhole Emperor
+|textArr=+(Table 1)% DMG per POW 10 kills of Wormhole Mobs. Applies to all characters!
+|form1=decay
+|x1=1.5
+|x2=150
 }}
 {{Talent
 |name=Symbols Of Beyond ~p

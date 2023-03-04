@@ -4,6 +4,9 @@
 |form1=bigBase
 |x1=70
 |x2=1
+|cooldown=10
+|actiontime=1.2
+|manacost=20
 }}
 {{Talent
 |name=Floor Is Lava
@@ -14,6 +17,9 @@
 |form2=bigBase
 |y1=120
 |y2=1
+|cooldown=13
+|actiontime=0.95
+|manacost=17
 }}
 {{Talent
 |name=Tornado
@@ -24,6 +30,9 @@
 |form2=intervalAdd
 |y1=4
 |y2=20
+|cooldown=25
+|actiontime=0.95
+|manacost=15
 }}
 {{Talent
 |name=Speedy Book
@@ -34,16 +43,22 @@
 |form2=intervalAdd
 |y1=3
 |y2=15
+|cooldown=2
+|actiontime=0.95
+|manacost=10
 }}
 {{Talent
 |name=Mana Is Life
-|textArr=(Table 1)% of taken dmg is dealt to MP. Also passively boosts MP regen by +(Table 2)%
+|textArr=(Table 1)% dmg taken is dealt to MP. Also, +(Table 2)% Multikill per Damage Tier (World 3 feature)
 |form1=bigBase
 |x1=25
 |x2=0.35
-|form2=bigBase
-|y1=15
-|y2=0.35
+|form2=decay
+|y1=40
+|y2=100
+|cooldown=60
+|actiontime=0.95
+|manacost=12
 }}
 {{Talent
 |name=Paperwork, Great...
@@ -89,6 +104,9 @@
 |form2=bigBase
 |y1=100
 |y2=10
+|cooldown=3600
+|actiontime=0.95
+|manacost=10
 }}
 {{Talent
 |name=Sooouls

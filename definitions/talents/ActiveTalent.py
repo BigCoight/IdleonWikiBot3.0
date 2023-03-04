@@ -1,3 +1,5 @@
+from typing import Dict, Union, Callable
+
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Numeric, Integer
 
@@ -14,3 +16,10 @@ class ActiveTalent(IdleonModel):
 	AFKrange: Integer
 	AFKtype: str
 	AFKactivity: Integer
+
+	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
+		return {
+			"cooldown": "cooldown",
+			"actiontime": "castTime",
+			"manacost": "manaCost",
+		}

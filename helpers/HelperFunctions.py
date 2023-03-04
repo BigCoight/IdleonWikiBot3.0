@@ -226,3 +226,7 @@ def extractImportsClass(imports: Set[str]) -> str:
 			continue
 		res.append("import { "f"{imp}"" } from "f"'../model/{toLowerCamel(imp)}';")
 	return "\n".join(res) + '\n\n'
+
+
+def formatToSingleSpace(val: str) -> str:
+	return re.sub(' +', ' ', val)

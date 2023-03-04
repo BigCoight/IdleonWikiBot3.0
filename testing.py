@@ -2,8 +2,9 @@
 # oldV = IdleonReader("156", True)
 # NpcRepo.initialise(newV.codeReader)
 from helpers.CodeReader import IdleonReader
-from repositories.misc.GemShopRepo import GemShopRepo
+from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("175b", True)
+newV = IdleonReader("177", True)
+oldV = IdleonReader("176", True)
 
-GemShopRepo.initialise(newV.codeReader)
+TalentTreeRepo.compareVersions(oldV, newV)

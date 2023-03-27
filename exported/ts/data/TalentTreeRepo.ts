@@ -1565,7 +1565,7 @@ export const initTalentTreeRepo = () => {
                     },
                     "Blocky Bottles": <TalentModel>{
                         "name": "Blocky Bottles",
-                        "description": "Each Lv of 'Warriors Only' Bubble raises max Lv of 'Meat Shank' Talent, up to +{",
+                        "description": "Each Lv of 'Warriors Rule' Bubble raises max Lv of 'Meat Shank' Talent, up to +{",
                         "x1": 1,
                         "x2": 0,
                         "funcX": "add",
@@ -2413,7 +2413,7 @@ export const initTalentTreeRepo = () => {
                         "y1": 2,
                         "y2": 15,
                         "funcY": "intervalAdd",
-                        "lvlUpText": "+{% Speed % +} Mins",
+                        "lvlUpText": "+{% Speed & +} Mins",
                         "skillIndex": 273,
                         "activeData": <ActiveTalentModel>{
                             "name": "Strafe",

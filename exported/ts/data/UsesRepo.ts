@@ -23792,21 +23792,21 @@ export const initUsesRepo = () => {
                         "repoSource": "RecipeRepo",
                         "key": "EquipmentHats74",
                         "name": "Thin Veil of The Troll Recipe",
-                        "amount": 10,
+                        "amount": 3,
                         "type": "recipe"
                     },
                     <UseModel>{
                         "repoSource": "RecipeRepo",
                         "key": "EquipmentHats74",
                         "name": "Thin Veil of The Troll Detailed Recipe",
-                        "amount": 10,
+                        "amount": 3,
                         "type": "detRecipe"
                     },
                     <UseModel>{
                         "repoSource": "RecipeRepo",
                         "key": "EquipmentHats77",
                         "name": "Magma Core Headdress Detailed Recipe",
-                        "amount": 10,
+                        "amount": 3,
                         "type": "detRecipe"
                     }
                 ],

@@ -39,7 +39,7 @@ class CodeReader:
 		self.sections.append(Section(start, r"\};", sectionName))
 
 	def readCode(self) -> None:
-		with open(self.codeFile, mode = "r") as infile:
+		with open(self.codeFile, mode = "r", encoding = 'utf-8') as infile:
 			lines = infile.read()
 			for section in self.sections:
 				escapedStart = re.escape(section.start)

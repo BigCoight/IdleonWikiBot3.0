@@ -1039,7 +1039,7 @@ export const initNpcRepo = () => {
                     },
                     "Champion of the Grasslands": <ItemQuestModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Go make me the 3 Blunderhill Tokens of Completion and you can have my Blunder Hero Trophy! Here's the token recipes. You'll find all their ingredients just from doing everything that this World has to offer!",
+                        "DialogueText": "Go make me the 3 Blunderhill Tokens of Completion and you can have my Blunder Hero Trophy! Here's the token recipes. You'll find all their ingredients just from doing everything that this World has to offer! <br> QUEST: Get the tokens and get given the Trophy!",
                         "NextIndex": 49,
                         "Name": "Champion of the Grasslands",
                         "ConsumeItems": true,
@@ -1365,7 +1365,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Go make me the 3 Blunderhill Tokens of Completion and you can have my Blunder Hero Trophy! Here's the token recipes. You'll find all their ingredients just from doing everything that this World has to offer!",
+                        "DialogueText": "Go make me the 3 Blunderhill Tokens of Completion and you can have my Blunder Hero Trophy! Here's the token recipes. You'll find all their ingredients just from doing everything that this World has to offer! <br> QUEST: Get the tokens and get given the Trophy!",
                         "NextIndex": 49,
                         "Name": "Champion of the Grasslands"
                     },
@@ -13447,7 +13447,7 @@ export const initNpcRepo = () => {
                     },
                     "Speak from the heart not the mind": <CustomQuestModel>{
                         "Type": QuestTypeEnum.Custom,
-                        "DialogueText": "Mmm... perhaps a greater voice from you will suit us both better... <br> QUEST:Wow la de da ya friggin piglet. Level up divinity more but I'd totally understand if you just wanna stop talking to this guy.",
+                        "DialogueText": "Mmm... perhaps a greater voice from you will suit us both better... QUEST:Wow la de da ya friggin piglet. He's telling you to level up divinity more but I'd totally understand if you just wanna stop talking to this guy.",
                         "NextIndex": 6,
                         "Name": "Speak from the heart not the mind",
                         "ConsumeItems": false,
@@ -13511,7 +13511,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.Custom,
-                        "DialogueText": "Mmm... perhaps a greater voice from you will suit us both better... <br> QUEST:Wow la de da ya friggin piglet. Level up divinity more but I'd totally understand if you just wanna stop talking to this guy.",
+                        "DialogueText": "Mmm... perhaps a greater voice from you will suit us both better... QUEST:Wow la de da ya friggin piglet. He's telling you to level up divinity more but I'd totally understand if you just wanna stop talking to this guy.",
                         "NextIndex": 6,
                         "Name": "Speak from the heart not the mind"
                     },

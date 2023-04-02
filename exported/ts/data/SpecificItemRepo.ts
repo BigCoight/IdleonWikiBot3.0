@@ -10386,7 +10386,7 @@ export const initSpecificItemRepo = () => {
             }),
         new BaseItemBase("Pearl5", <DescItemModel>{
                 "internalName": "Pearl5",
-                "displayName": "White Pearl",
+                "displayName": "Holy Pearl",
                 "sellPrice": 100,
                 "typeGen": TypeGenEnum.dQuest,
                 "Type": "Usable",

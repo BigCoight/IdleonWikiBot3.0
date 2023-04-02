@@ -1,0 +1,23 @@
+__NOCACHE__
+{{#cargo_query:tables=DropTables
+ |fields=CONCAT("[[", DropSourceEntity, "]]")=DropSourceEntity
+ |where=TableName HOLDS "{{PAGENAME}}" AND DropSourceEntity NOT LIKE "{{PAGENAME}}"
+ |group by=DropTables.DropSourceEntity
+ |order by=`DropSourceEntity` ASC
+ |default=
+ |intro=This is a Rare Droptable for:
+ |outro=To see monster specific droprates, visit the specified source page.
+ |limit=100
+ |offset=0
+ |format=ul
+ |columns=1
+}}
+{{DropTable/head}}
+{{DropTable|Spiral Statue|0.015|1|tablename=DropTable27|tabletype=Rare}}
+{{DropTable|Valve Patented Circle Thingies|0.00023|1|tablename=DropTable27|tabletype=Rare}}
+{{DropTable|Golden Grilled Cheese Nomwich|0.025|1|tablename=DropTable27|tabletype=Rare}}
+{{DropTable|Golden Hampter Gummy Candy|0.0083|1|tablename=DropTable27|tabletype=Rare}}
+{{DropTable|Quotient EXP Potion|0.19|20|tablename=DropTable27|tabletype=Rare}}
+{{DropTable|Cloudsound Follower|0.5|8|special=([[Mutton#7 Figure Followers|Mutton]])|tablename=DropTable27|tabletype=Rare}}
+{{DropTable|Corporatube Sub|0.2|3|special=([[Mutton#7 Figure Followers|Mutton]])|tablename=DropTable27|tabletype=Rare}}
+{{DropTable/append|SuperDropTable5|0.005|1}}

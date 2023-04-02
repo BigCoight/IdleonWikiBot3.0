@@ -11352,7 +11352,8 @@ export const initSourceRepo = () => {
                     <SourceModel>{
                         "wikiName": "[[Gangster Gus#Sanke Revival Denial|Sanke Revival Denial]]",
                         "txtName": "Gangster Gus: Sanke Revival Denial"
-                    }
+                    },
+                    <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -11467,8 +11468,7 @@ export const initSourceRepo = () => {
                     <SourceModel>{
                         "wikiName": "[[Carpenter Cardinal#Restoring Power, once again, to a Portal|Restoring Power, once again, to a Portal]]",
                         "txtName": "Carpenter Cardinal: Restoring Power, once again, to a Portal"
-                    },
-                    <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                    }
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -11770,6 +11770,10 @@ export const initSourceRepo = () => {
                         "wikiName": "[[Muhmuguh#Learn the Language of the Universe|Learn the Language of the Universe]]",
                         "txtName": "Muhmuguh: Learn the Language of the Universe"
                     },
+                    <SourceModel>{
+                        "wikiName": "[[Lava Larry#W5 Task Req Check|W5 Task Req Check]]",
+                        "txtName": "Lava Larry: W5 Task Req Check"
+                    },
                     <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
                 ],
                 "recipeFrom": [],
@@ -11813,6 +11817,10 @@ export const initSourceRepo = () => {
                         "wikiName": "[[Muhmuguh#Learn the Language of the Universe|Learn the Language of the Universe]]",
                         "txtName": "Muhmuguh: Learn the Language of the Universe"
                     },
+                    <SourceModel>{
+                        "wikiName": "[[Lava Larry#W5 Task Req Check|W5 Task Req Check]]",
+                        "txtName": "Lava Larry: W5 Task Req Check"
+                    },
                     <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
                 ],
                 "recipeFrom": [],
@@ -11831,7 +11839,8 @@ export const initSourceRepo = () => {
                     <SourceModel>{
                         "wikiName": "[[Poigu#Learn the Language of the Universe|Learn the Language of the Universe]]",
                         "txtName": "Poigu: Learn the Language of the Universe"
-                    }
+                    },
+                    <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -12082,19 +12091,28 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("EquipmentHats82", <SourcesModel>{
+        new SourcesBase("Pearl5", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                    <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
+                ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("GemP25", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("EquipmentKeychain11", <SourcesModel>{
+        new SourcesBase("EquipmentRings32", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("EquipmentHats34", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
-                    <SourceModel>{"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
-                    <SourceModel>{
-                        "wikiName": "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
-                        "txtName": "Dungeons: Flurbo Shop"
-                    }
+                    <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -12716,6 +12734,17 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("EquipmentKeychain10", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
+                    <SourceModel>{
+                        "wikiName": "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
+                        "txtName": "Dungeons: Flurbo Shop"
+                    }
+                ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("EquipmentKeychain11", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
                     <SourceModel>{
@@ -13713,11 +13742,6 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("Pearl5", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}],
-                "recipeFrom": [],
-                "questAss": []
-            }),
         new SourcesBase("LootDice", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}],
                 "recipeFrom": [],
@@ -14276,11 +14300,6 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("EquipmentHats33", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
-                "recipeFrom": [],
-                "questAss": []
-            }),
-        new SourcesBase("EquipmentHats34", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
                 "recipeFrom": [],
                 "questAss": []

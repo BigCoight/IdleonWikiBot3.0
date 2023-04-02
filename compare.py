@@ -17,6 +17,7 @@ from repositories.misc.ColosseumRepo import ColosseumRepo
 from repositories.misc.ConstellationsRepo import ConstellationsRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
+from repositories.misc.TaskDescriptionsRepo import TaskDescriptionRepo
 from repositories.misc.TaskShopDescRepo import TaskShopDescRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
 from repositories.misc.world2.BubbleRepo import BubbleRepo
@@ -48,8 +49,8 @@ from repositories.misc.world5.SlabItemSortRepo import SlabItemSortRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("178", True)
-oldV = IdleonReader("177", True)
+newV = IdleonReader("179", True)
+oldV = IdleonReader("178", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)
@@ -95,6 +96,7 @@ ArcadeBonusRepo.compareVersions(oldV, newV)
 SigilRepo.compareVersions(oldV, newV)
 
 TaskShopDescRepo.compareVersions(oldV, newV)
+TaskDescriptionRepo.compareVersions(oldV, newV)
 ColosseumRepo.compareVersions(oldV, newV)
 
 ArtifactRepo.compareVersions(oldV, newV)

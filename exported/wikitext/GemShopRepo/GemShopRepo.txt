@@ -119,12 +119,12 @@
 |maxPurchases=100000
 }}
 {{GemshopData
-|section=Limited Specials
+|section=Chat Rings
 |name=EquipmentRingsChat9
 |mtxName=Honk Ring
 |itemDisplayName=HONK Ring
-|cost=275
-|maxPurchases=1
+|cost=300
+|maxPurchases=100000
 }}
 {{GemshopData
 |section=Time Candy
@@ -312,13 +312,13 @@
 |maxPurchases=100000
 }}
 {{GemshopData
-|section=Limited Specials
+|section=Cards
 |name=CardPack5
 |mtxName=Galaxy Card Pack
 |itemDisplayName=Galaxy Card Pack
 |description=Contains 4 cards from these sets: Hyperion Nebula, Hard Resources, & Bosses n Nightmares (At least 1).<br/>Rarties - Lvl 2: 30%, Lvl 3: 35%, Lvl 4: 35%.
-|cost=1
-|maxPurchases=1
+|cost=650
+|maxPurchases=100000
 }}
 {{GemshopData
 |section=Cards
@@ -348,13 +348,13 @@
 |maxPurchases=100000
 }}
 {{GemshopData
-|section=Limited Specials
+|section=Cards
 |name=CardPack6
 |mtxName=Smolderin Card Pack
 |itemDisplayName=Smolderin Card Pack
 |description=Contains 4 cards from these sets: Smoulderin' Plateau, Hard Resources, & Bosses n Nightmares(At least 1).<br/>Rarties - Lvl 2: 30%, Lvl 3: 35%, Lvl 4: 35%.
-|cost=390
-|maxPurchases=2
+|cost=690
+|maxPurchases=100000
 }}
 {{GemshopData
 |section=Goods & Services
@@ -422,31 +422,66 @@
 }}
 {{GemshopData
 |section=Limited Specials
-|name=EquipmentHats82
-|mtxName=Elemental Sorcerer Hat
-|itemDisplayName=Ele Sorcerer Pointed Hat
-|description=You can't be a real sorcerer without a big wizard hat! Comes with a +5% All Stats bonus, so your STR AGI WIS LUK will be in good hands!
-|cost=790
+|name=Pearl6
+|mtxName=Divinity Pearl
+|itemDisplayName=Divinity Pearl
+|description=Gives you 5 Divinity Pearls, which give 40% EXP for the skill that's shown in the corner of the screen!
+|cost=200
+|maxPurchases=6
+}}
+{{GemshopData
+|section=Limited Specials
+|name=Pearl5
+|mtxName=Holy Pearl
+|itemDisplayName=Holy Pearl
+|description=Gives 5 Holy Pearls, which give Class EXP. The amount you gain is based on your Class LV! For example, Lv. 100 would give 37% exp, and Lv. 200 would give 15% Exp
+|cost=150
+|maxPurchases=6
+}}
+{{GemshopData
+|section=Limited Specials
+|name=GemP25
+|mtxName=Random Hyper Obol
+|itemDisplayName=Hyper Obol Stack
+|description=Gives you a random Circle Hyper Obol! The four equal possibilites are +4% DROP RATE, +2% ALL STAT, +3% DAMAGE, and +2% MULTIKILL PER TIER!
+|cost=463
+|maxPurchases=4
+}}
+{{GemshopData
+|section=World 5
+|name=Quest72
+|mtxName=Bottled Wind
+|itemDisplayName=Bottled Wind
+|description=Gives you a bottled wind item. Use it in your player inventory to instantly get 6 hours of sailing progress! This item restocks each day.
+|cost=190
+|maxPurchases=4
+}}
+{{GemshopData
+|section=Limited Specials
+|name=GemP16
+|mtxName=Dungeon Dice
+|itemDisplayName=Dungeon Loot Dice
+|description=Gives you 5 rolls of the Dungeon Loot Dice. Credits, Flurbos, and Keychains are all rewards!
+|cost=212
+|maxPurchases=7
+}}
+{{GemshopData
+|section=Limited Specials
+|name=EquipmentRings32
+|mtxName=World 4 Kill Ring
+|itemDisplayName=Nebula Killer Ring
+|description=All kills in World 4 count for 1.30x for opening portals to the next map. Helps you get to World 5 faster! 30% Faster to be exact!
+|cost=820
 |maxPurchases=1
 }}
 {{GemshopData
 |section=Limited Specials
-|name=EquipmentKeychain11
-|mtxName=Drop Rate Keychain
-|itemDisplayName=Relic Chain
-|description=This keychain comes with +25% Drop Rate bonus! Currently, the best possible Drop Rate keychain is 16%, so this is the best Drop Rate Keychain in the game yo!
-|cost=725
-|maxPurchases=2
-|costIncrement=200
-}}
-{{GemshopData
-|section=Limited Specials
-|name=Timecandy9
-|mtxName=Cosmic Time Candy
-|itemDisplayName=Cosmic Time Candy
-|description=A time candy that gives a random amount of time for a nonrandom cost of gems? How inexplicable! @ These candies give up to 500 hours, but on average give 24 hrs.
-|cost=395
-|maxPurchases=6
+|name=EquipmentHats34
+|mtxName=Purple Parasite
+|itemDisplayName=Parasite
+|description=This little fella's name is Lamar, and it wants to give you a big ol' kiss right on the entirety of your head!
+|cost=345
+|maxPurchases=1
 }}
 {{GemshopData
 |section=Premium Stones
@@ -740,21 +775,12 @@
 }}
 {{GemshopData
 |section=World 5
-|name=Quest72
-|mtxName=Bottled Wind
-|itemDisplayName=Bottled Wind
-|description=Gives you a bottled wind item. Use it in your player inventory to instantly get 6 hours of sailing progress! This item restocks each day.
-|cost=190
-|maxPurchases=4
-}}
-{{GemshopData
-|section=World 5
 |name=GemP21
 |mtxName=Chest Sluggo
 |itemDisplayName=Infinite Forge
 |description=Increases the maximum number of chests your sailing Loot Pile can hold by +1! Also adds a Chest Sluggo to roam around your dock! (Note:Not every purchase will visually add another slug, it'd be too chaotic!)
 |cost=250
-|maxPurchases=8
+|maxPurchases=12
 |costIncrement=40
 }}
 {{GemshopData

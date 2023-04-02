@@ -85,7 +85,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("178a", steam = True)
+idleonReader = IdleonReader("179", steam = True)
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
@@ -189,7 +189,8 @@ ItemRepo.exportWikiMult()
 NpcRepo.exportWikiMult()
 EnemyRepo.exportWikiMult()
 TalentTreeRepo.exportWikiMult()
-SlabItemSortRepo.exportWikiSingle()
+DropTableRepo.exportWikiMult()
 VendorRepo.exportWikiMult()
 RecipeRepo.exportWikiMult()
 GemShopRepo.exportWikiSingle()
+SlabItemSortRepo.exportWikiSingle()

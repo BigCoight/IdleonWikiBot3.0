@@ -17816,7 +17816,13 @@
             "Skill": "",
             "Skill_Power": 0
         },
-        "sources": null,
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
         "notes": null,
         "recipe": null,
         "vendors": null,
@@ -19000,7 +19006,6 @@
         },
         "sources": {
             "sources": [
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
                 {"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
                 {
                     "wikiName": "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
@@ -31344,7 +31349,7 @@
     "Pearl5": {
         "item": {
             "internalName": "Pearl5",
-            "displayName": "White Pearl",
+            "displayName": "Holy Pearl",
             "sellPrice": 100,
             "typeGen": "dQuest",
             "Type": "Usable",
@@ -31352,6 +31357,7 @@
         },
         "sources": {
             "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
                 {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
             ],
             "recipeFrom": [],
@@ -31386,7 +31392,8 @@
                 {
                     "wikiName": "[[Poigu#Learn the Language of the Universe|Learn the Language of the Universe]]",
                     "txtName": "Poigu: Learn the Language of the Universe"
-                }
+                },
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -32007,6 +32014,10 @@
                     "wikiName": "[[Muhmuguh#Learn the Language of the Universe|Learn the Language of the Universe]]",
                     "txtName": "Muhmuguh: Learn the Language of the Universe"
                 },
+                {
+                    "wikiName": "[[Lava Larry#W5 Task Req Check|W5 Task Req Check]]",
+                    "txtName": "Lava Larry: W5 Task Req Check"
+                },
                 {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
             ],
             "recipeFrom": [],
@@ -32065,6 +32076,10 @@
                 {
                     "wikiName": "[[Muhmuguh#Learn the Language of the Universe|Learn the Language of the Universe]]",
                     "txtName": "Muhmuguh: Learn the Language of the Universe"
+                },
+                {
+                    "wikiName": "[[Lava Larry#W5 Task Req Check|W5 Task Req Check]]",
+                    "txtName": "Lava Larry: W5 Task Req Check"
                 },
                 {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
             ],
@@ -51111,8 +51126,7 @@
                 {
                     "wikiName": "[[Carpenter Cardinal#Restoring Power, once again, to a Portal|Restoring Power, once again, to a Portal]]",
                     "txtName": "Carpenter Cardinal: Restoring Power, once again, to a Portal"
-                },
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                }
             ],
             "recipeFrom": [],
             "questAss": []
@@ -64075,7 +64089,8 @@
                 {
                     "wikiName": "[[Gangster Gus#Sanke Revival Denial|Sanke Revival Denial]]",
                     "txtName": "Gangster Gus: Sanke Revival Denial"
-                }
+                },
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
             ],
             "recipeFrom": [],
             "questAss": []
@@ -64113,7 +64128,13 @@
             "Type": "Obol Stack",
             "description": "Hold down and 1 hyper obol will drop at your feet! YOU MUST BE IN WORLD 2 TOWN TO USE THIS! This way you can trash other obols incase you're out of space! "
         },
-        "sources": null,
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
         "notes": "{{Sources/datarow|Item=Hyper DMG Obol}}{{Sources/datarow|Item=Hyper Pyre Obol}}{{Sources/datarow|Item=Hyper Six Obol}}{{Sources/datarow|Item=Hyper Skull Obol}}",
         "recipe": null,
         "vendors": null,
@@ -64253,6 +64274,7 @@
         },
         "sources": {
             "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
                 {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
             ],
             "recipeFrom": [],
@@ -64920,13 +64942,7 @@
             "Skill": "",
             "Skill_Power": 0
         },
-        "sources": {
-            "sources": [
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-            ],
-            "recipeFrom": [],
-            "questAss": []
-        },
+        "sources": null,
         "notes": null,
         "recipe": null,
         "vendors": null,

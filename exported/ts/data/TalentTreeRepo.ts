@@ -5521,6 +5521,19 @@ export const initTalentTreeRepo = () => {
                         "lvlUpText": "+{% Chance",
                         "skillIndex": 651,
                         "activeData": undefined
+                    },
+                    "Stat Overload": <TalentModel>{
+                        "name": "Stat Overload",
+                        "description": "+{ total STR, AGI, WIS, and LUK. Total means this bonus is not affected by +% ALL STAT.",
+                        "x1": 1,
+                        "x2": 0,
+                        "funcX": "add",
+                        "y1": 0,
+                        "y2": 0,
+                        "funcY": "txt",
+                        "lvlUpText": "+{ All Stat",
+                        "skillIndex": 652,
+                        "activeData": undefined
                     }
                 }
             }),

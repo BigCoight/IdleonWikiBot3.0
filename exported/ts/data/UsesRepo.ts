@@ -23978,6 +23978,13 @@ export const initUsesRepo = () => {
                         "name": "Magma Core Wavemaille Detailed Recipe",
                         "amount": 900000,
                         "type": "detRecipe"
+                    },
+                    <UseModel>{
+                        "repoSource": "NpcRepo",
+                        "key": "Lava Larry@W5 Task Req Check",
+                        "name": "W5 Task Req Check Requirements",
+                        "amount": 500,
+                        "type": "quest"
                     }
                 ],
                 "typeGen": TypeGenEnum.bCraft,
@@ -24626,6 +24633,13 @@ export const initUsesRepo = () => {
                         "name": "Conjocharmo Stamp Material",
                         "amount": "Lots",
                         "type": "stamp"
+                    },
+                    <UseModel>{
+                        "repoSource": "NpcRepo",
+                        "key": "Lava Larry@W5 Task Req Check",
+                        "name": "W5 Task Req Check Requirements",
+                        "amount": 2500,
+                        "type": "quest"
                     },
                     <UseModel>{
                         "repoSource": "BuildingRepo",
@@ -26560,6 +26574,19 @@ export const initUsesRepo = () => {
                 ],
                 "typeGen": TypeGenEnum.cFood,
                 "type": "Boost Food"
+            }),
+        new UsesBase("LavaA2", <UsesModel>{
+                "uses": [
+                    <UseModel>{
+                        "repoSource": "NpcRepo",
+                        "key": "Lava Larry@W5 Task Req Check",
+                        "name": "W5 Task Req Check Requirements",
+                        "amount": 1000,
+                        "type": "quest"
+                    }
+                ],
+                "typeGen": TypeGenEnum.bCraft,
+                "type": "Monster Drop"
             }),
         new UsesBase("SnowC2", <UsesModel>{
                 "uses": [

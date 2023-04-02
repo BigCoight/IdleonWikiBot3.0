@@ -1,0 +1,18 @@
+__NOCACHE__
+{{#cargo_query:tables=DropTables
+ |fields=CONCAT("[[", DropSourceEntity, "]]")=DropSourceEntity
+ |where=TableName HOLDS "{{PAGENAME}}" AND DropSourceEntity NOT LIKE "{{PAGENAME}}"
+ |group by=DropTables.DropSourceEntity
+ |order by=`DropSourceEntity` ASC
+ |default=
+ |intro=This is a Rare Droptable for:
+ |outro=To see monster specific droprates, visit the specified source page.
+ |limit=100
+ |offset=0
+ |format=ul
+ |columns=1
+}}
+{{DropTable/head}}
+{{DropTable|Magma Leaf|0.5|3|tablename=DropTable28|tabletype=Rare}}
+{{DropTable|Platinum Twine|0.0008|1|tablename=DropTable28|tabletype=Rare}}
+{{DropTable/append|SuperDropTable5|0.006|1}}

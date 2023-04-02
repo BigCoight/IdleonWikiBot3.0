@@ -17202,7 +17202,11 @@ export const initItemRepo = () => {
                     "Skill": "",
                     "Skill_Power": 0
                 },
-                "sources": undefined,
+                "sources": <SourcesModel>{
+                    "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
+                    "recipeFrom": [],
+                    "questAss": []
+                },
                 "notes": undefined,
                 "recipe": undefined,
                 "vendors": undefined,
@@ -18342,7 +18346,6 @@ export const initItemRepo = () => {
                 },
                 "sources": <SourcesModel>{
                     "sources": [
-                        <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
                         <SourceModel>{"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
                         <SourceModel>{
                             "wikiName": "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
@@ -30532,14 +30535,17 @@ export const initItemRepo = () => {
         new ItemBase("Pearl5", <ItemModel>{
                 "item": <DescItemModel>{
                     "internalName": "Pearl5",
-                    "displayName": "White Pearl",
+                    "displayName": "Holy Pearl",
                     "sellPrice": 100,
                     "typeGen": TypeGenEnum.dQuest,
                     "Type": "Usable",
                     "description": "Hold down to gain Class EXP. The amount you gain is based on your Class LV. "
                 },
                 "sources": <SourcesModel>{
-                    "sources": [<SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}],
+                    "sources": [
+                        <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                        <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
+                    ],
                     "recipeFrom": [],
                     "questAss": []
                 },
@@ -30572,7 +30578,8 @@ export const initItemRepo = () => {
                         <SourceModel>{
                             "wikiName": "[[Poigu#Learn the Language of the Universe|Learn the Language of the Universe]]",
                             "txtName": "Poigu: Learn the Language of the Universe"
-                        }
+                        },
+                        <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
                     ],
                     "recipeFrom": [],
                     "questAss": []
@@ -31199,6 +31206,10 @@ export const initItemRepo = () => {
                             "wikiName": "[[Muhmuguh#Learn the Language of the Universe|Learn the Language of the Universe]]",
                             "txtName": "Muhmuguh: Learn the Language of the Universe"
                         },
+                        <SourceModel>{
+                            "wikiName": "[[Lava Larry#W5 Task Req Check|W5 Task Req Check]]",
+                            "txtName": "Lava Larry: W5 Task Req Check"
+                        },
                         <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
                     ],
                     "recipeFrom": [],
@@ -31257,6 +31268,10 @@ export const initItemRepo = () => {
                         <SourceModel>{
                             "wikiName": "[[Muhmuguh#Learn the Language of the Universe|Learn the Language of the Universe]]",
                             "txtName": "Muhmuguh: Learn the Language of the Universe"
+                        },
+                        <SourceModel>{
+                            "wikiName": "[[Lava Larry#W5 Task Req Check|W5 Task Req Check]]",
+                            "txtName": "Lava Larry: W5 Task Req Check"
                         },
                         <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
                     ],
@@ -49835,8 +49850,7 @@ export const initItemRepo = () => {
                         <SourceModel>{
                             "wikiName": "[[Carpenter Cardinal#Restoring Power, once again, to a Portal|Restoring Power, once again, to a Portal]]",
                             "txtName": "Carpenter Cardinal: Restoring Power, once again, to a Portal"
-                        },
-                        <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                        }
                     ],
                     "recipeFrom": [],
                     "questAss": []
@@ -62379,7 +62393,8 @@ export const initItemRepo = () => {
                         <SourceModel>{
                             "wikiName": "[[Gangster Gus#Sanke Revival Denial|Sanke Revival Denial]]",
                             "txtName": "Gangster Gus: Sanke Revival Denial"
-                        }
+                        },
+                        <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
                     ],
                     "recipeFrom": [],
                     "questAss": []
@@ -62419,7 +62434,11 @@ export const initItemRepo = () => {
                     "Type": "Obol Stack",
                     "description": "Hold down and 1 hyper obol will drop at your feet! YOU MUST BE IN WORLD 2 TOWN TO USE THIS! This way you can trash other obols incase you're out of space! "
                 },
-                "sources": undefined,
+                "sources": <SourcesModel>{
+                    "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
+                    "recipeFrom": [],
+                    "questAss": []
+                },
                 "notes": <NoteModel>{
                     "note": "{{Sources/datarow|Item=Hyper DMG Obol}}{{Sources/datarow|Item=Hyper Pyre Obol}}{{Sources/datarow|Item=Hyper Six Obol}}{{Sources/datarow|Item=Hyper Skull Obol}}"
                 },
@@ -62554,7 +62573,10 @@ export const initItemRepo = () => {
                     "Skill_Power": 0
                 },
                 "sources": <SourcesModel>{
-                    "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
+                    "sources": [
+                        <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+                        <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                    ],
                     "recipeFrom": [],
                     "questAss": []
                 },
@@ -63192,11 +63214,7 @@ export const initItemRepo = () => {
                     "Skill": "",
                     "Skill_Power": 0
                 },
-                "sources": <SourcesModel>{
-                    "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
-                    "recipeFrom": [],
-                    "questAss": []
-                },
+                "sources": undefined,
                 "notes": undefined,
                 "recipe": undefined,
                 "vendors": undefined,

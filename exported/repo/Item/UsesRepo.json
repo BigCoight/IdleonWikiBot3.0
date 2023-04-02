@@ -23969,6 +23969,13 @@
                 "name": "Magma Core Wavemaille Detailed Recipe",
                 "amount": 900000,
                 "type": "detRecipe"
+            },
+            {
+                "repoSource": "NpcRepo",
+                "key": "Lava Larry@W5 Task Req Check",
+                "name": "W5 Task Req Check Requirements",
+                "amount": 500,
+                "type": "quest"
             }
         ],
         "typeGen": "bCraft",
@@ -24617,6 +24624,13 @@
                 "name": "Conjocharmo Stamp Material",
                 "amount": "Lots",
                 "type": "stamp"
+            },
+            {
+                "repoSource": "NpcRepo",
+                "key": "Lava Larry@W5 Task Req Check",
+                "name": "W5 Task Req Check Requirements",
+                "amount": 2500,
+                "type": "quest"
             },
             {
                 "repoSource": "BuildingRepo",
@@ -26551,6 +26565,19 @@
         ],
         "typeGen": "cFood",
         "type": "Boost Food"
+    },
+    "LavaA2": {
+        "uses": [
+            {
+                "repoSource": "NpcRepo",
+                "key": "Lava Larry@W5 Task Req Check",
+                "name": "W5 Task Req Check Requirements",
+                "amount": 1000,
+                "type": "quest"
+            }
+        ],
+        "typeGen": "bCraft",
+        "type": "Monster Drop"
     },
     "SnowC2": {
         "uses": [

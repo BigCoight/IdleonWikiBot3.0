@@ -14070,7 +14070,7 @@ export const initItemDetailRepo = () => {
             }),
         new CommonItemBase("Pearl5", <QuestItemModel>{
                 "internalID": "Pearl5",
-                "displayName": "White Pearl",
+                "displayName": "Holy Pearl",
                 "sellPrice": 100,
                 "typeGen": TypeGenEnum.dQuest,
                 "ID": 0,

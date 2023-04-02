@@ -12910,7 +12910,7 @@ export const initNpcRepo = () => {
                         "NextIndex": 4,
                         "Name": "Task Requirement Affirmative",
                         "ConsumeItems": true,
-                        "InventorySpacesNeeded": 1,
+                        "InventorySpacesNeeded": 3,
                         "NoSpaceIndex": 3,
                         "Rewards": [
                             <ComponentModel>{"item": "Ladle", "quantity": 48},
@@ -13682,6 +13682,71 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "Daaang you've got skills!! Now get out there and teach everyone else how it's done! Literally! So I don't have to do it myself anymore! ...no? Eh fine just go have fun then and leave me to it!",
+                        "NextIndex": -1,
+                        "Name": ""
+                    }
+                ]
+            }),
+        new NpcBase("Lava Larry", <NpcModel>{
+                "head": <NpcHeadModel>{
+                    "location": "Unknown",
+                    "world": "Unknown",
+                    "noQuest": 0,
+                    "repeatable": "Unknown",
+                    "type": "Unknown",
+                    "birthWeight": 1.57,
+                    "starSign": "Taurus",
+                    "mothersMaidenName": "Shaffer",
+                    "notes": " "
+                },
+                "quests": {
+                    "W5 Task Req Check": <ItemQuestModel>{
+                        "Type": QuestTypeEnum.ItemsAndSpaceRequired,
+                        "DialogueText": "So yea I'm the taskmaster the pastor if you will. But you can't step to me until you kill your fill. <br> QUEST:Kills some mobs and gather monster parts to show you're ready for the World 5 tasks!",
+                        "NextIndex": 4,
+                        "Name": "W5 Task Req Check",
+                        "ConsumeItems": true,
+                        "InventorySpacesNeeded": 2,
+                        "NoSpaceIndex": 3,
+                        "Rewards": [<ComponentModel>{"item": "Quest72", "quantity": 4}, <ComponentModel>{"item": "Quest73", "quantity": 3}],
+                        "QuestName": "Lava Larry1",
+                        "Difficulty": 4,
+                        "note": <NoteModel>{"note": " "},
+                        "ItemReq": [
+                            <ComponentModel>{"item": "LavaA1", "quantity": 2500},
+                            <ComponentModel>{"item": "LavaA2", "quantity": 1000},
+                            <ComponentModel>{"item": "LavaA3", "quantity": 500}
+                        ]
+                    }
+                },
+                "dialogue": [
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Hows it flowin' 'n goin' my guy? This pipin' hot heat out here making you and I very dry.",
+                        "NextIndex": 1,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Yo don't mind me and my spittin' I'm emcee Larry and I got dope tasks most fittin'",
+                        "NextIndex": 2,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.ItemsAndSpaceRequired,
+                        "DialogueText": "So yea I'm the taskmaster the pastor if you will. But you can't step to me until you kill your fill. <br> QUEST:Kills some mobs and gather monster parts to show you're ready for the World 5 tasks!",
+                        "NextIndex": 4,
+                        "Name": "W5 Task Req Check"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Eyo bro you ain't got the inventory space sort that out and save some face!",
+                        "NextIndex": 2,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Ayyyy that's how it's done! I'll give you access to my tasks have fun!",
                         "NextIndex": -1,
                         "Name": ""
                     }

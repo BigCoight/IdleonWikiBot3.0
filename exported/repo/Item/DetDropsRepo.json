@@ -487,6 +487,12 @@
             {"source": "Boss5A", "quantity": 1000000, "chance": 1},
             {"source": "Boss5B", "quantity": 5000000, "chance": 1},
             {"source": "Boss5C", "quantity": 20000000, "chance": 1},
+            {"source": "riftAll", "quantity": 6000, "chance": 0},
+            {"source": "rift1", "quantity": 6000, "chance": 0},
+            {"source": "rift2", "quantity": 6000, "chance": 0},
+            {"source": "rift3", "quantity": 6000, "chance": 0},
+            {"source": "rift4", "quantity": 6000, "chance": 0},
+            {"source": "rift5", "quantity": 6000, "chance": 0},
             {"source": "ChestA1", "quantity": 100, "chance": 1},
             {"source": "ChestB1", "quantity": 400, "chance": 1},
             {"source": "ChestC1", "quantity": 1250, "chance": 1},
@@ -5419,6 +5425,16 @@
     "CardsZ20": {"sources": [
         {"source": "Boss5C", "quantity": 1, "chance": 0.003}
     ]},
+    "Quest74": {
+        "sources": [
+            {"source": "riftAll", "quantity": 1, "chance": 1e-09},
+            {"source": "rift1", "quantity": 1, "chance": 1e-09},
+            {"source": "rift2", "quantity": 1, "chance": 1e-09},
+            {"source": "rift3", "quantity": 1, "chance": 1e-09},
+            {"source": "rift4", "quantity": 1, "chance": 1e-09},
+            {"source": "rift5", "quantity": 1, "chance": 1e-09}
+        ]
+    },
     "OakTree": {"sources": [
         {"source": "ChestA1", "quantity": 40, "chance": 0.6}
     ]},

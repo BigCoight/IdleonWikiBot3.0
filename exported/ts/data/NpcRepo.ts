@@ -13694,9 +13694,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 5.42,
-                    "starSign": "Cancer",
-                    "mothersMaidenName": "Pettigrew",
+                    "birthWeight": 4.98,
+                    "starSign": "Scorpio",
+                    "mothersMaidenName": "Tapia",
                     "notes": " "
                 },
                 "quests": {
@@ -13759,9 +13759,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 3.07,
-                    "starSign": "Libra",
-                    "mothersMaidenName": "Ulrich",
+                    "birthWeight": 6.87,
+                    "starSign": "Capricorn",
+                    "mothersMaidenName": "Ashwoon",
                     "notes": " "
                 },
                 "quests": {
@@ -13846,9 +13846,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 2.73,
-                    "starSign": "Capricorn",
-                    "mothersMaidenName": "Reamer",
+                    "birthWeight": 8.95,
+                    "starSign": "Taurus",
+                    "mothersMaidenName": "Wagle",
                     "notes": " "
                 },
                 "quests": {},

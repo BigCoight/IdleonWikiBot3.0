@@ -49,8 +49,8 @@ from repositories.misc.world5.SlabItemSortRepo import SlabItemSortRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("179", True)
-oldV = IdleonReader("178", True)
+newV = IdleonReader("180", True)
+oldV = IdleonReader("179", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)

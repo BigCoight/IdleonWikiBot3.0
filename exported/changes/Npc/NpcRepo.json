@@ -1,25 +1,28 @@
 {
     "new": {
-        "Lava Larry": {
+        "Fillerz": {"quests": {}},
+        "Rift Ripper": {
             "quests": {
-                "W5 Task Req Check": {
+                "Entering The Rift...": {
                     "Type": "ItemsAndSpaceRequired",
-                    "DialogueText": "So yea I'm the taskmaster the pastor if you will. But you can't step to me until you kill your fill. <br> QUEST:Kills some mobs and gather monster parts to show you're ready for the World 5 tasks!",
-                    "Name": "W5 Task Req Check",
+                    "DialogueText": "Go get me... THESE things... look we both know you don't know or care about what I'm gonna do with these so don't worry your pretty face about it! <br> QUEST:Get these random items to gain access to The Rift.",
+                    "Name": "Entering The Rift...",
                     "ConsumeItems": true,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "Quest72", "quantity": 4}, {"item": "Quest73", "quantity": 3}],
-                    "Difficulty": 4,
+                    "InventorySpacesNeeded": 3,
+                    "Rewards": [
+                        {"item": "Quest70", "quantity": 50},
+                        {"item": "Quest71", "quantity": 10},
+                        {"item": "Timecandy9", "quantity": 3}
+                    ],
+                    "Difficulty": 3,
                     "ItemReq": [
-                        {"item": "LavaA1", "quantity": 2500},
-                        {"item": "LavaA2", "quantity": 1000},
-                        {"item": "LavaA3", "quantity": 500}
+                        {"item": "GalaxyA2b", "quantity": 5},
+                        {"item": "GalaxyA1", "quantity": 878},
+                        {"item": "GalaxyB2", "quantity": 592}
                     ]
                 }
             }
         }
     },
-    "changes": {
-        "Nebula Neddy": {"quests": {"Task Requirement Affirmative": {"InventorySpacesNeeded": [1, 3]}}}
-    }
+    "changes": {}
 }

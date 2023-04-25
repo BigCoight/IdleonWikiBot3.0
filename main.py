@@ -67,6 +67,7 @@ from repositories.misc.world4.JewelRepo import JewelRepo
 from repositories.misc.world4.LabBonusRepo import LabBonusRepo
 from repositories.misc.world4.MealRepo import MealRepo
 from repositories.misc.world4.PetGeneRepo import PetGeneRepo
+from repositories.misc.world4.PetRepo import PetRepo
 from repositories.misc.world4.PetStatRepo import PetStatRepo
 from repositories.misc.world4.PetUpgradeRepo import PetUpgradeRepo
 from repositories.misc.world4.TerritoryFightRepo import TerritoryFightRepo
@@ -169,6 +170,7 @@ FishPoolRepo.initialise(codeReader)
 CardSetRepo.initialise(codeReader)
 SigilRepo.initialise(codeReader)
 SkullShopRepo.initialise(codeReader)
+PetRepo.initialise(codeReader)
 
 RandoListRepo.initialise(codeReader)
 ColosseumRepo.initialise(codeReader)

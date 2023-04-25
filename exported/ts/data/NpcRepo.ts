@@ -4767,7 +4767,7 @@ export const initNpcRepo = () => {
                         "Rewards": [<ComponentModel>{"item": "StampA14", "quantity": 1}, <ComponentModel>{"item": "Timecandy1", "quantity": 1}],
                         "QuestName": "Mutton2",
                         "Difficulty": 3,
-                        "note": <NoteModel>{"note": "eed level 21"},
+                        "note": <NoteModel>{"note": "eed level 21<br/>Only from [[Poop]]s at this stage."},
                         "ItemReq": [<ComponentModel>{"item": "Quest22", "quantity": 300}]
                     },
                     "Cross Platform Promotion": <ItemQuestModel>{
@@ -4781,7 +4781,7 @@ export const initNpcRepo = () => {
                         "Rewards": [<ComponentModel>{"item": "StampA16", "quantity": 1}, <ComponentModel>{"item": "PremiumGem", "quantity": 3}],
                         "QuestName": "Mutton3",
                         "Difficulty": 5,
-                        "note": <NoteModel>{"note": ""},
+                        "note": <NoteModel>{"note": "Only from [[Poop]]s & [[Rat]]s at this stage."},
                         "ItemReq": [<ComponentModel>{"item": "Quest22", "quantity": 5000}, <ComponentModel>{"item": "Quest23", "quantity": 1000}]
                     },
                     "7 Figure Followers": <ItemQuestModel>{
@@ -4795,7 +4795,7 @@ export const initNpcRepo = () => {
                         "Rewards": [<ComponentModel>{"item": "StampC7", "quantity": 1}, <ComponentModel>{"item": "StampA26", "quantity": 1}],
                         "QuestName": "Mutton4",
                         "Difficulty": 8,
-                        "note": <NoteModel>{"note": ""},
+                        "note": <NoteModel>{"note": "Refer to all the drop sources on each item's page for this stage."},
                         "ItemReq": [
                             <ComponentModel>{"item": "Quest22", "quantity": 200000},
                             <ComponentModel>{"item": "Quest23", "quantity": 300000},
@@ -5523,9 +5523,7 @@ export const initNpcRepo = () => {
                         ],
                         "QuestName": "Postboy Pablob1",
                         "Difficulty": 6,
-                        "note": <NoteModel>{
-                            "note": "The Empty Box recipe comes from [[Tasks|Taskboard]] [[Tasks/Unlocks|Recipe Unlocks]]."
-                        },
+                        "note": <NoteModel>{"note": ""},
                         "ItemReq": [<ComponentModel>{"item": "Quest13", "quantity": 5}]
                     }
                 },
@@ -8791,7 +8789,7 @@ export const initNpcRepo = () => {
                         "QuestName": "Loveulyte2",
                         "Difficulty": 4,
                         "note": <NoteModel>{
-                            "note": "Consume 5 {{CraftReq|Lovey Dovey Letter}} to summon a [[Valentslime]]. Daily quest."
+                            "note": "Consume {{CraftReq|Lovey Dovey Letter}} to summon a [[Valentslime]]. Daily quest."
                         },
                         "CustomType": "Loveulyte2",
                         "CustomArray": [<CustomReqModel>{"desc": "Defeat Heart Slimes:", "finalV": 20, "type": "GreaterEqual", "startV": 0}]
@@ -13694,9 +13692,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 4.98,
-                    "starSign": "Scorpio",
-                    "mothersMaidenName": "Tapia",
+                    "birthWeight": 2.3,
+                    "starSign": "Virgo",
+                    "mothersMaidenName": "Schickowski",
                     "notes": " "
                 },
                 "quests": {
@@ -13759,9 +13757,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 6.87,
-                    "starSign": "Capricorn",
-                    "mothersMaidenName": "Ashwoon",
+                    "birthWeight": 4.74,
+                    "starSign": "Gemini",
+                    "mothersMaidenName": "Sonderling",
                     "notes": " "
                 },
                 "quests": {
@@ -13846,9 +13844,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 8.95,
-                    "starSign": "Taurus",
-                    "mothersMaidenName": "Wagle",
+                    "birthWeight": 9.94,
+                    "starSign": "Scorpio",
+                    "mothersMaidenName": "Schwager",
                     "notes": " "
                 },
                 "quests": {},

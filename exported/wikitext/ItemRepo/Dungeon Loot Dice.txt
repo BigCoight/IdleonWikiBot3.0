@@ -2,5 +2,5 @@
 |type=Loot Dice
 |description=Hold down to get a loot roll! Use it anywhere you like! IMPORTANT: You need to be Dungeon Rank 10{ to get Tier 2 Keychains, and Rank 20{ to get Tier 3 keychains. 
 |sellprice=1
-|notes={{#cargo_query:tables=Items|fields=_pageName=Item, CONCAT('Dungeon Loot Dice')=Source, CONCAT('Dungeon Loot Dice')=Link, CONCAT('Random')=SpecialText|where=Type='Keychain' AND NOT _pageName IN ('Key to Desert', 'Key to Mountains', 'Key to Purgatory')|format=template|named args=yes|template=Sources/datarow|default=}}
+|notes={{#cargo_query:tables=Items|fields=_pageName=Item, CONCAT('Dungeon Loot Dice')=Source, CONCAT('Dungeon Loot Dice')=Link, CONCAT('Random')=SpecialText|where=Type='Keychain' AND NOT _pageName IN ('Key to Desert Chain', 'Key to Mountains Chain', 'Key to Purgatory Chain', 'Eye Owe Ess Chain')|format=template|named args=yes|template=Sources/datarow|default=}}
 }}

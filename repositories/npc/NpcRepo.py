@@ -163,6 +163,6 @@ class NpcRepo(Repository[Npc]):
 
 	@classmethod
 	def _ignore(cls, name: str, data: Npc) -> bool:
-		if name in {"FillerNPC", "Game Message", "Unmade Character", "Omar Da Ogar", "Mecha Pete"}:
+		if name in {"FillerNPC", "Game Message", "Unmade Character", "Omar Da Ogar", "Mecha Pete", "Fillerz"}:
 			return True
 		return False

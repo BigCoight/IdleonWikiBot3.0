@@ -47,9 +47,7 @@
                 "note": "There are '''TWO''' {{CraftReq|Golden Jam}} items. You want the {{CraftReq|Golden Jam (Quest)}} item for this."
             },
             "Stiltzcho, the Leaf Scout": {"note": ""},
-            "hat Lies at the Heart of the Forest": {
-                "note": "The 'Forest Camp' is the second area of the forest, where you can find the entrance to the [[Amarok]] boss fight."
-            },
+            "hat Lies at the Heart of the Forest": {"note": ""},
             "The Bigger they are, the Bigger they Fall!": {
                 "note": "[[Amarok|The boss]] is located to the far right in [[Worlds#F2 - Encroaching Forest Villas|Encroaching Forest Villas]]. You need to complete [[Dog Bone (NPC)|Dog Bone]]'s quest to get the keys required to enter the [[Amarok|boss]] zone."
             },
@@ -84,9 +82,7 @@
             "ive-Action Entertainment": {"note": ""},
             "The Most Important Meal of the Day": {"note": ""},
             "Brunchin' with the Blobs": {"note": "The first time you start this quest, the recipe for the Peanut drops."},
-            "uncheon with the Inlaws": {
-                "note": "You must complete this quest for the 'Escapin' the 'Laws' daily [[Tasks|Task]]."
-            },
+            "uncheon with the Inlaws": {"note": ""},
             "Afternoon Tea in a Jiffy": {
                 "note": "There is a [[Sandy Pot]] at [[Carrotman|Carrotmen]]. Kill it, pick up the teacup and run back to Picnic Stowaway."
             },
@@ -212,9 +208,9 @@
     "Mutton": {
         "notes": {
             "Beatboxing Starterpack": {"note": ""},
-            "Clout Chasin'": {"note": "eed level 21"},
-            "Cross Platform Promotion": {"note": ""},
-            "7 Figure Followers": {"note": ""}
+            "Clout Chasin'": {"note": "eed level 21<br/>Only from [[Poop]]s at this stage."},
+            "Cross Platform Promotion": {"note": "Only from [[Poop]]s & [[Rat]]s at this stage."},
+            "7 Figure Followers": {"note": "Refer to all the drop sources on each item's page for this stage."}
         }
     },
     "Speccius": {
@@ -242,13 +238,7 @@
             "The Biggest Fish in the Sea...?": {"note": ""}
         }
     },
-    "Postboy Pablob": {
-        "notes": {
-            "Signed, Sealed and Lost in the Post": {
-                "note": "The Empty Box recipe comes from [[Tasks|Taskboard]] [[Tasks/Unlocks|Recipe Unlocks]]."
-            }
-        }
-    },
+    "Postboy Pablob": {"notes": {"Signed, Sealed and Lost in the Post": {"note": ""}}},
     "Bandit Bob": {
         "notes": {
             "Bullets for Bandit Bob!": {"note": ""},
@@ -380,7 +370,7 @@
         "notes": {
             "Heart Hogger": {"note": "All enemies can drop the letters. Daily quest"},
             "Heartbreaker": {
-                "note": "Consume 5 {{CraftReq|Lovey Dovey Letter}} to summon a [[Valentslime]]. Daily quest."
+                "note": "Consume {{CraftReq|Lovey Dovey Letter}} to summon a [[Valentslime]]. Daily quest."
             }
         }
     },
@@ -451,9 +441,7 @@
     "Yondergreen": {
         "notes": {
             "nfrastructure Plan": {"note": ""},
-            "conomic Policy": {
-                "note": "owering your droprate to 2x (enough to guarantee coins, but lower chance at items) and reducing your multikill (via Big Brain Time [[Worship#Prayers|Prayer]] can make this slightly easier."
-            },
+            "conomic Policy": {"note": "You can use Item Drop Filter to prevent item from being dropped."},
             "Stance on Big Tech": {"note": ""},
             "egislative Action": {
                 "note": "{{Sources/datarow|Item=Signed Contract|Source=Penguin|Link=Yondergreen#Legislative Action{{!}}Penguin|SpecialText=Quest Only|Category=Quest Spawned}}"
@@ -616,5 +604,7 @@
             "earn the Language of the Universe": {"note": ""}
         }
     },
-    "version": "175"
+    "Lava Larry": {"notes": {"5 Task Req Check": {"note": ""}}},
+    "Rift Ripper": {"notes": {"ntering The Rift...": {"note": ""}}},
+    "version": "180"
 }

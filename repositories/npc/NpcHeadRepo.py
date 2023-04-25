@@ -10,6 +10,7 @@ from helpers.Constants import Constants
 from helpers.CustomTypes import Integer
 from helpers.HelperFunctions import formatStr, replaceUnderscores
 from repositories.master.FileRepository import FileRepository
+from repositories.misc.RandoListRepo import RandoListRepo, RandoListDescriptions
 
 
 class NpcHeadRepo(FileRepository[NpcHead]):
@@ -26,6 +27,10 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 		return ["Quests", "Quests2"]
 
 	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		RandoListRepo.initialise(cls.codeReader, False)
+
+	@classmethod
 	def generateRepo(cls) -> None:
 		website = Site()
 		reNpcs = r'..\.addDialogueFor\("([a-zA-Z0-9_]*)", [^\s"]*\)'
@@ -36,10 +41,10 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 			for i in range(1, len(questData), 2):
 				npcName = replaceUnderscores(questData[i])
 				npcName = Constants.nameConflicts.get(npcName, npcName)
-				cls.add(npcName, cls.getHead(website, npcName))
+				cls.add(npcName, cls.getHead(website, npcName, questData[i]))
 
 	@classmethod
-	def getHead(cls, website: Site, dispName: str) -> NpcHead:
+	def getHead(cls, website: Site, dispName: str, rawName: str) -> NpcHead:
 		if dispName in ["", " "]: return {}
 		text = Page(website, dispName).text
 		replacedText = text.replace("\n", Constants.newLineRep)
@@ -50,18 +55,24 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 			if "world" in template:
 				selectedTemplate = template
 				break
+		codeWorld = cls.getWorld(rawName)
+		print(codeWorld)
 		if selectedTemplate is None:
+			if codeWorld:
+				return cls.newHead(world = codeWorld)
 			return cls.newHead()
 		print(dispName)
 		typ = ""
 		if "npcType" in selectedTemplate:
+			if codeWorld:
+				typ = ""
 			typ = cls.getParsed(selectedTemplate, "npcType")
 		notes = " "
 		if "notes" in selectedTemplate:
 			notes = re.escape(cls.getParsed(selectedTemplate, "notes")).replace('"', "'")
 		return NpcHead(
 			location = cls.getParsed(selectedTemplate, "location"),
-			world = cls.getParsed(selectedTemplate, "world"),
+			world = codeWorld if codeWorld else cls.getParsed(selectedTemplate, "world"),
 			noQuest = cls.getParsed(selectedTemplate, "noquest"),
 			type = typ,
 			repeatable = cls.getParsed(selectedTemplate, "repeatable"),
@@ -72,11 +83,25 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 		)
 
 	@classmethod
-	def newHead(cls):
+	def getWorld(cls, rawName: str) -> str:
+		npcInWorld = [
+			RandoListRepo.get(RandoListDescriptions.npcsInBlunder).elements,
+			RandoListRepo.get(RandoListDescriptions.npcsInYumyum).elements,
+			RandoListRepo.get(RandoListDescriptions.npcsInFrostbite).elements,
+			RandoListRepo.get(RandoListDescriptions.npcsInNebulon).elements,
+			RandoListRepo.get(RandoListDescriptions.npcsInSmolderin).elements
+		]
+		for worldIndex, worldList in enumerate(npcInWorld):
+			if rawName in worldList:
+				return Constants.worlds[worldIndex]
+		return ""
+
+	@classmethod
+	def newHead(cls, world: str = "Unknown", noQuest: Integer = 0):
 		return NpcHead(
 			location = "Unknown",
-			world = "Unknown",
-			noQuest = Integer(0),
+			world = world,
+			noQuest = noQuest,
 			repeatable = "Unknown",
 			type = "Unknown",
 			birthWeight = cls.doBirthweight(),

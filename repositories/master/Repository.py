@@ -134,11 +134,11 @@ class Repository(Generic[T], ABC):
 
 	@classmethod
 	def _export(cls) -> None:
-		with open(cls._getPath("repo", "json"), mode = "w") as outfile:
+		with open(cls._getPath("repo", "json"), mode = "w", encoding = "utf-8") as outfile:
 			outfile.write(CompactJSONEncoder(indent = 4).encode(cls.repository))
 		if not cls.listRepository:
 			return
-		with open(cls._getPath("list", "json"), mode = "w") as outfile:
+		with open(cls._getPath("list", "json"), mode = "w", encoding = "utf-8") as outfile:
 			outfile.write(CompactJSONEncoder(indent = 4).encode(cls.listRepository))
 
 	@classmethod
@@ -197,7 +197,7 @@ class Repository(Generic[T], ABC):
 			"changes": changes
 		}
 		changeName = cls._getPath("changes", "json")
-		with open(changeName, mode = "w") as outfile:
+		with open(changeName, mode = "w", encoding = 'utf-8') as outfile:
 			outfile.write(CompactJSONEncoder(indent = 4).encode(out))
 		cls._writeChangesWiki(out)
 
@@ -261,7 +261,7 @@ class Repository(Generic[T], ABC):
 
 		res += "</div></div>"
 
-		with open(cls._getPath("wikitext/_changes", "txt"), mode = 'w') as infile:
+		with open(cls._getPath("wikitext/_changes", "txt"), mode = 'w', encoding = 'utf-8') as infile:
 			infile.write(res)
 
 	@classmethod
@@ -478,5 +478,5 @@ class Repository(Generic[T], ABC):
 					tsData += ",\n"
 			tsData += "    \n]\n}\n"
 		tsData = extractImportsClass(imports) + tsData
-		with open(path, "w") as infile:
+		with open(path, "w", encoding = "utf-8") as infile:
 			infile.write(tsData)

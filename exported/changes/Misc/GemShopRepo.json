@@ -1,1 +1,99 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "Timecandy9": {
+            "section": "Limited Specials",
+            "name": "Timecandy9",
+            "mtxName": "Cosmic Time Candy",
+            "itemDisplayName": "Cosmic Time Candy",
+            "desc": "A time candy that gives a random amount of time for a nonrandom cost of gems? How inexplicable! @ These candies give up to 500 hours, but on average give 24 hrs.",
+            "cost": 395,
+            "no": 90,
+            "maxPurchases": 8,
+            "qty": 1,
+            "costIncrement": 0
+        },
+        "ClassSwapB": {
+            "section": "Limited Specials",
+            "name": "ClassSwapB",
+            "mtxName": "Elite Class Swap",
+            "itemDisplayName": "Elite Class Swap Token",
+            "desc": "Gives 1 Elite Class Swap token. Use this to swap between elite classes of a certain category, like Blood Berserker to Divine Knight",
+            "cost": 650,
+            "no": 88,
+            "maxPurchases": 3,
+            "qty": 1,
+            "costIncrement": 250
+        },
+        "EquipmentPendant28": {
+            "section": "Limited Specials",
+            "name": "EquipmentPendant28",
+            "mtxName": "Crescent Moon Pendant",
+            "itemDisplayName": "Crescent Moon Pendant",
+            "desc": "This necklace equipment comes with +35% Class EXP bonus, +5% Mob Respawn bonus, +3 Weapon Power, and +10 all stat!",
+            "cost": 850,
+            "no": 87,
+            "maxPurchases": 1,
+            "qty": 1,
+            "costIncrement": 0
+        },
+        "GemQ18": {
+            "section": "Limited Specials",
+            "name": "GemQ18",
+            "mtxName": "5 Star Cardifier",
+            "itemDisplayName": "",
+            "desc": "Use this on a 4 star card to upgrade it to 5 stars! It works like 4 star cardifiers do, you get to choose which card gets upgraded, no randomness involved!! Yippie!!!",
+            "cost": 486,
+            "no": 92,
+            "maxPurchases": 10,
+            "qty": 0,
+            "costIncrement": 0
+        },
+        "ExpBalloon3": {
+            "section": "Limited Specials",
+            "name": "ExpBalloon3",
+            "mtxName": "Large Exp Balloon",
+            "itemDisplayName": "Large Experience Balloon",
+            "desc": "Gives you a bundle of 10 large EXP Balloon. These give you some experience points, kinda neat.",
+            "cost": 610,
+            "no": 89,
+            "maxPurchases": 3,
+            "qty": 10,
+            "costIncrement": 0
+        }
+    },
+    "changes": {
+        "EquipmentRingsChat9": {
+            "section": ["Chat Rings", "Limited Specials"],
+            "mtxName": ["Honk Ring", "Honk Chat Ring"],
+            "cost": [300, 315],
+            "no": [29, 94],
+            "maxPurchases": [100000, 1]
+        },
+        "GemQ17": {
+            "section": ["Cards", "Limited Specials"],
+            "desc": [
+                "Use this on a 3 star card to upgrade it to 4 stars! You can use it on any 3 star card you have, it's up to you! Each purchase allows for one card of your choice to be upgraded.",
+                "Use this on a 3 star card to upgrade it to 4 stars! You can use it on any 3 star card you have, and hey, its freakin free, so I will be offended if you don't buy it!"
+            ],
+            "cost": [290, 1],
+            "no": [67, 91],
+            "maxPurchases": [100000, 1]
+        },
+        "EquipmentRingsChat3": {
+            "section": ["Chat Rings", "Limited Specials"],
+            "no": [31, 93],
+            "maxPurchases": [100000, 1]
+        },
+        "Blank": {
+            "section": ["Limited Specials", "Time Candy"],
+            "mtxName": ["Name Of Item", "Cosmic Candy"],
+            "desc": [
+                "blah blah what a bore",
+                "Gives 1 Cosmic Time Candy, which can give up to 500 HOURS of AFK time! On average, it will give 24 hrs."
+            ],
+            "cost": [395, 325],
+            "no": [94, 54],
+            "maxPurchases": [3, 100000]
+        }
+    }
+}

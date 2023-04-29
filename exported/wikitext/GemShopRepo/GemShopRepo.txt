@@ -111,20 +111,20 @@
 |maxPurchases=100000
 }}
 {{GemshopData
-|section=Chat Rings
+|section=Limited Specials
 |name=EquipmentRingsChat3
 |mtxName=Money Talks Chat Ring
 |itemDisplayName=Wealth Ring
 |cost=2500
-|maxPurchases=100000
+|maxPurchases=1
 }}
 {{GemshopData
-|section=Chat Rings
+|section=Limited Specials
 |name=EquipmentRingsChat9
-|mtxName=Honk Ring
+|mtxName=Honk Chat Ring
 |itemDisplayName=HONK Ring
-|cost=300
-|maxPurchases=100000
+|cost=315
+|maxPurchases=1
 }}
 {{GemshopData
 |section=Time Candy
@@ -163,13 +163,13 @@
 |maxPurchases=4
 }}
 {{GemshopData
-|section=Limited Specials
+|section=Time Candy
 |name=Blank
-|mtxName=Name Of Item
+|mtxName=Cosmic Candy
 |itemDisplayName=ERROR
-|description=blah blah what a bore
-|cost=395
-|maxPurchases=3
+|description=Gives 1 Cosmic Time Candy, which can give up to 500 HOURS of AFK time! On average, it will give 24 hrs.
+|cost=325
+|maxPurchases=100000
 }}
 {{GemshopData
 |section=Inventory & Storage
@@ -339,13 +339,13 @@
 |maxPurchases=100000
 }}
 {{GemshopData
-|section=Cards
+|section=Limited Specials
 |name=GemQ17
 |mtxName=4 Star Cardifier
 |itemDisplayName=Infinite Forge
-|description=Use this on a 3 star card to upgrade it to 4 stars! You can use it on any 3 star card you have, it's up to you! Each purchase allows for one card of your choice to be upgraded.
-|cost=290
-|maxPurchases=100000
+|description=Use this on a 3 star card to upgrade it to 4 stars! You can use it on any 3 star card you have, and hey, its freakin free, so I will be offended if you don't buy it!
+|cost=1
+|maxPurchases=1
 }}
 {{GemshopData
 |section=Cards
@@ -422,66 +422,48 @@
 }}
 {{GemshopData
 |section=Limited Specials
-|name=Pearl6
-|mtxName=Divinity Pearl
-|itemDisplayName=Divinity Pearl
-|description=Gives you 5 Divinity Pearls, which give 40% EXP for the skill that's shown in the corner of the screen!
-|cost=200
-|maxPurchases=6
-}}
-{{GemshopData
-|section=Limited Specials
-|name=Pearl5
-|mtxName=Holy Pearl
-|itemDisplayName=Holy Pearl
-|description=Gives 5 Holy Pearls, which give Class EXP. The amount you gain is based on your Class LV! For example, Lv. 100 would give 37% exp, and Lv. 200 would give 15% Exp
-|cost=150
-|maxPurchases=6
-}}
-{{GemshopData
-|section=Limited Specials
-|name=GemP25
-|mtxName=Random Hyper Obol
-|itemDisplayName=Hyper Obol Stack
-|description=Gives you a random Circle Hyper Obol! The four equal possibilites are +4% DROP RATE, +2% ALL STAT, +3% DAMAGE, and +2% MULTIKILL PER TIER!
-|cost=463
-|maxPurchases=4
-}}
-{{GemshopData
-|section=World 5
-|name=Quest72
-|mtxName=Bottled Wind
-|itemDisplayName=Bottled Wind
-|description=Gives you a bottled wind item. Use it in your player inventory to instantly get 6 hours of sailing progress! This item restocks each day.
-|cost=190
-|maxPurchases=4
-}}
-{{GemshopData
-|section=Limited Specials
-|name=GemP16
-|mtxName=Dungeon Dice
-|itemDisplayName=Dungeon Loot Dice
-|description=Gives you 5 rolls of the Dungeon Loot Dice. Credits, Flurbos, and Keychains are all rewards!
-|cost=212
-|maxPurchases=7
-}}
-{{GemshopData
-|section=Limited Specials
-|name=EquipmentRings32
-|mtxName=World 4 Kill Ring
-|itemDisplayName=Nebula Killer Ring
-|description=All kills in World 4 count for 1.30x for opening portals to the next map. Helps you get to World 5 faster! 30% Faster to be exact!
-|cost=820
+|name=EquipmentPendant28
+|mtxName=Crescent Moon Pendant
+|itemDisplayName=Crescent Moon Pendant
+|description=This necklace equipment comes with +35% Class EXP bonus, +5% Mob Respawn bonus, +3 Weapon Power, and +10 all stat!
+|cost=850
 |maxPurchases=1
 }}
 {{GemshopData
 |section=Limited Specials
-|name=EquipmentHats34
-|mtxName=Purple Parasite
-|itemDisplayName=Parasite
-|description=This little fella's name is Lamar, and it wants to give you a big ol' kiss right on the entirety of your head!
-|cost=345
-|maxPurchases=1
+|name=ClassSwapB
+|mtxName=Elite Class Swap
+|itemDisplayName=Elite Class Swap Token
+|description=Gives 1 Elite Class Swap token. Use this to swap between elite classes of a certain category, like Blood Berserker to Divine Knight
+|cost=650
+|maxPurchases=3
+|costIncrement=250
+}}
+{{GemshopData
+|section=Limited Specials
+|name=ExpBalloon3
+|mtxName=Large Exp Balloon
+|itemDisplayName=Large Experience Balloon
+|description=Gives you a bundle of 10 large EXP Balloon. These give you some experience points, kinda neat.
+|cost=610
+|maxPurchases=3
+}}
+{{GemshopData
+|section=Limited Specials
+|name=Timecandy9
+|mtxName=Cosmic Time Candy
+|itemDisplayName=Cosmic Time Candy
+|description=A time candy that gives a random amount of time for a nonrandom cost of gems? How inexplicable! @ These candies give up to 500 hours, but on average give 24 hrs.
+|cost=395
+|maxPurchases=8
+}}
+{{GemshopData
+|section=Limited Specials
+|name=GemQ18
+|mtxName=5 Star Cardifier
+|description=Use this on a 4 star card to upgrade it to 5 stars! It works like 4 star cardifiers do, you get to choose which card gets upgraded, no randomness involved!! Yippie!!!
+|cost=486
+|maxPurchases=10
 }}
 {{GemshopData
 |section=Premium Stones
@@ -772,6 +754,15 @@
 |description=Gives you 1 Miracle Chest from a random island! These have 20x more treasure and 30x higher Artifact chance, including Ancient Artifacts! This item restocks each day.
 |cost=345
 |maxPurchases=3
+}}
+{{GemshopData
+|section=World 5
+|name=Quest72
+|mtxName=Bottled Wind
+|itemDisplayName=Bottled Wind
+|description=Gives you a bottled wind item. Use it in your player inventory to instantly get 6 hours of sailing progress! This item restocks each day.
+|cost=190
+|maxPurchases=4
 }}
 {{GemshopData
 |section=World 5

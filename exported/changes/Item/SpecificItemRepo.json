@@ -1,31 +1,30 @@
 {
     "new": {
-        "EquipmentCape11": {
-            "displayName": "Riftwalker Wings",
+        "EquipmentNametag3": {
+            "displayName": "Golden Nametag",
             "sellPrice": 1,
-            "Type": "Cape",
+            "Type": "Nametag",
             "lvReqToCraft": 55,
             "lvReqToEquip": 1,
             "Class": "All",
-            "Weapon_Power": 25,
-            "STR": 30,
-            "AGI": 30,
-            "WIS": 30,
-            "LUK": 30,
-            "Defence": 60,
-            "miscUp1": "20% Total Damage",
-            "miscUp2": "4% All Afk Gain",
+            "Weapon_Power": 3,
+            "STR": 5,
+            "AGI": 5,
+            "WIS": 5,
+            "LUK": 5,
+            "Defence": 20,
+            "miscUp1": "40% Drop Chance",
+            "miscUp2": "00",
             "Upgrade_Slots_Left": 0,
             "Skill": "",
             "Skill_Power": 0
+        },
+        "ClassSwapB": {
+            "displayName": "Elite Class Swap Token",
+            "sellPrice": 1,
+            "Type": "Usable",
+            "description": "Hold down on this item to change elite class within your class. Divine Knight to Blood Berserker, Beast Master to Siege Breaker, etc. "
         }
     },
-    "changes": {
-        "Quest70": {
-            "description": [
-                "IdleOn is out on iPhone devices! Go download it there if you have any iOS devices!                 Hold down to open for a random reward! Or, hold down for a LONG time to open them faster. ",
-                "IdleOn is out on iOS devices! The Rift Ripper must have kept a few of these back when he played during the iOS Launch event... Hold down to open, and a random reward will drop at your feet! "
-            ]
-        }
-    }
+    "changes": {}
 }

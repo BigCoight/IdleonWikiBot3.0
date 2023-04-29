@@ -42,6 +42,7 @@ from repositories.misc.world5.ArtifactRepo import ArtifactRepo
 from repositories.misc.world5.CaptainBonusRepo import CaptainBonusRepo
 from repositories.misc.world5.DivinityStyleRepo import DivinityStyleRepo
 from repositories.misc.world5.GamingBoxRepo import GamingBoxRepo
+from repositories.misc.world5.GamingSuperbitsRepo import GamingSuperbitsRepo
 from repositories.misc.world5.GamingUpgradeRepo import GamingUpgradeRepo
 from repositories.misc.world5.GodInfoRepo import GodInfoRepo
 from repositories.misc.world5.IslandInfoRepo import IslandInfoRepo
@@ -49,8 +50,8 @@ from repositories.misc.world5.SlabItemSortRepo import SlabItemSortRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("180", True)
-oldV = IdleonReader("179", True)
+newV = IdleonReader("181", True)
+oldV = IdleonReader("180", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)
@@ -107,3 +108,4 @@ GamingUpgradeRepo.compareVersions(oldV, newV)
 GodInfoRepo.compareVersions(oldV, newV)
 IslandInfoRepo.compareVersions(oldV, newV)
 SlabItemSortRepo.compareVersions(oldV, newV)
+GamingSuperbitsRepo.compareVersions(oldV, newV)

@@ -16000,6 +16000,27 @@ export const initSpecificItemRepo = () => {
                 "Skill": "",
                 "Skill_Power": 0
             }),
+        new BaseItemBase("EquipmentNametag3", <ArmourItemModel>{
+                "internalName": "EquipmentNametag3",
+                "displayName": "Golden Nametag",
+                "sellPrice": 1,
+                "typeGen": TypeGenEnum.aNametag,
+                "Type": "Nametag",
+                "lvReqToCraft": 55,
+                "lvReqToEquip": 1,
+                "Class": ClassTypeEnum.All,
+                "Weapon_Power": 3,
+                "STR": 5,
+                "AGI": 5,
+                "WIS": 5,
+                "LUK": 5,
+                "Defence": 20,
+                "miscUp1": "40% Drop Chance",
+                "miscUp2": "00",
+                "Upgrade_Slots_Left": 0,
+                "Skill": "",
+                "Skill_Power": 0
+            }),
         new BaseItemBase("EquipmentKeychain0", <KeychainItemModel>{
                 "internalName": "EquipmentKeychain0",
                 "displayName": "Simple Key Chain",
@@ -19037,6 +19058,14 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.dQuest,
                 "Type": "Usable",
                 "description": "Hold down on this item to change sub class within your class. It won't let you change classes, that will be done a different way in the future... "
+            }),
+        new BaseItemBase("ClassSwapB", <DescItemModel>{
+                "internalName": "ClassSwapB",
+                "displayName": "Elite Class Swap Token",
+                "sellPrice": 1,
+                "typeGen": TypeGenEnum.dQuest,
+                "Type": "Usable",
+                "description": "Hold down on this item to change elite class within your class. Divine Knight to Blood Berserker, Beast Master to Siege Breaker, etc. "
             }),
         new BaseItemBase("ResetBox", <DescItemModel>{
                 "internalName": "ResetBox",

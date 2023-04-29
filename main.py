@@ -76,6 +76,7 @@ from repositories.misc.world5.CaptainBonusRepo import CaptainBonusRepo
 from repositories.misc.world5.DivinityStyleRepo import DivinityStyleRepo
 from repositories.misc.world5.GamingBoxRepo import GamingBoxRepo
 from repositories.misc.world5.GamingUpgradeRepo import GamingUpgradeRepo
+from repositories.misc.world5.GamingSuperbitsRepo import GamingSuperbitsRepo
 from repositories.misc.world5.GodInfoRepo import GodInfoRepo
 from repositories.misc.world5.IslandInfoRepo import IslandInfoRepo
 from repositories.misc.world5.SlabItemSortRepo import SlabItemSortRepo
@@ -86,7 +87,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("180", steam=True)
+idleonReader = IdleonReader("181", steam=True)
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
 CustomSourceRepo.initialise(codeReader)
@@ -183,6 +184,7 @@ CaptainBonusRepo.initialise(codeReader)
 DivinityStyleRepo.initialise(codeReader)
 GamingBoxRepo.initialise(codeReader)
 GamingUpgradeRepo.initialise(codeReader)
+GamingSuperbitsRepo.initialise(codeReader)
 GodInfoRepo.initialise(codeReader)
 IslandInfoRepo.initialise(codeReader)
 SlabItemSortRepo.initialise(codeReader)

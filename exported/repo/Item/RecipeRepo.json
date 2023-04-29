@@ -3505,45 +3505,6 @@
             ]
         }
     },
-    "EquipmentShoes17": {
-        "intID": "EquipmentShoes17",
-        "recipe": [
-            {"item": "EquipmentShoes3", "quantity": 1},
-            {"item": "PureWater", "quantity": 9},
-            {"item": "JungleTree", "quantity": 1600},
-            {"item": "ForestTree", "quantity": 1000}
-        ],
-        "levelReqToCraft": 22,
-        "expGiven": 5000,
-        "no": 55,
-        "tab": 2,
-        "sellPrice": 99775,
-        "recipeFrom": [],
-        "detailedRecipe": {
-            "detRecipe": [
-                {"indent": 0, "item": "EquipmentShoes3", "quantity": 1},
-                {"indent": 1, "item": "EquipmentShoes15", "quantity": 1},
-                {"indent": 2, "item": "EquipmentShoes1", "quantity": 1},
-                {"indent": 3, "item": "CopperBar", "quantity": 75},
-                {"indent": 2, "item": "CraftMat5", "quantity": 500},
-                {"indent": 2, "item": "IronBar", "quantity": 125},
-                {"indent": 1, "item": "GoldBar", "quantity": 600},
-                {"indent": 1, "item": "PureWater", "quantity": 4},
-                {"indent": 0, "item": "PureWater", "quantity": 9},
-                {"indent": 0, "item": "JungleTree", "quantity": 1600},
-                {"indent": 0, "item": "ForestTree", "quantity": 1000}
-            ],
-            "detRecipeTotals": [
-                {"item": "PureWater", "quantity": 13},
-                {"item": "JungleTree", "quantity": 1600},
-                {"item": "ForestTree", "quantity": 1000},
-                {"item": "GoldBar", "quantity": 600},
-                {"item": "CraftMat5", "quantity": 500},
-                {"item": "IronBar", "quantity": 125},
-                {"item": "CopperBar", "quantity": 75}
-            ]
-        }
-    },
     "EquipmentShoes19": {
         "intID": "EquipmentShoes19",
         "recipe": [
@@ -3552,9 +3513,9 @@
             {"item": "Bug1", "quantity": 2000},
             {"item": "Bug2", "quantity": 1250}
         ],
-        "levelReqToCraft": 24,
-        "expGiven": 6500,
-        "no": 56,
+        "levelReqToCraft": 22,
+        "expGiven": 5000,
+        "no": 55,
         "tab": 2,
         "sellPrice": 97425,
         "recipeFrom": [],
@@ -3576,6 +3537,45 @@
                 {"item": "PureWater", "quantity": 13},
                 {"item": "Bug1", "quantity": 2000},
                 {"item": "Bug2", "quantity": 1250},
+                {"item": "GoldBar", "quantity": 600},
+                {"item": "CraftMat5", "quantity": 500},
+                {"item": "IronBar", "quantity": 125},
+                {"item": "CopperBar", "quantity": 75}
+            ]
+        }
+    },
+    "EquipmentShoes17": {
+        "intID": "EquipmentShoes17",
+        "recipe": [
+            {"item": "EquipmentShoes3", "quantity": 1},
+            {"item": "PureWater", "quantity": 9},
+            {"item": "JungleTree", "quantity": 1600},
+            {"item": "ForestTree", "quantity": 1000}
+        ],
+        "levelReqToCraft": 24,
+        "expGiven": 6500,
+        "no": 56,
+        "tab": 2,
+        "sellPrice": 99775,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentShoes3", "quantity": 1},
+                {"indent": 1, "item": "EquipmentShoes15", "quantity": 1},
+                {"indent": 2, "item": "EquipmentShoes1", "quantity": 1},
+                {"indent": 3, "item": "CopperBar", "quantity": 75},
+                {"indent": 2, "item": "CraftMat5", "quantity": 500},
+                {"indent": 2, "item": "IronBar", "quantity": 125},
+                {"indent": 1, "item": "GoldBar", "quantity": 600},
+                {"indent": 1, "item": "PureWater", "quantity": 4},
+                {"indent": 0, "item": "PureWater", "quantity": 9},
+                {"indent": 0, "item": "JungleTree", "quantity": 1600},
+                {"indent": 0, "item": "ForestTree", "quantity": 1000}
+            ],
+            "detRecipeTotals": [
+                {"item": "PureWater", "quantity": 13},
+                {"item": "JungleTree", "quantity": 1600},
+                {"item": "ForestTree", "quantity": 1000},
                 {"item": "GoldBar", "quantity": 600},
                 {"item": "CraftMat5", "quantity": 500},
                 {"item": "IronBar", "quantity": 125},

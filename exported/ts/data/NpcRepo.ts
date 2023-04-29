@@ -258,9 +258,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 2.37,
-                    "starSign": "Libra",
-                    "mothersMaidenName": "Zeller",
+                    "birthWeight": 6.96,
+                    "starSign": "Sagittarius",
+                    "mothersMaidenName": "Resnick",
                     "notes": " "
                 },
                 "quests": {},
@@ -280,9 +280,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 8.96,
-                    "starSign": "Pisces",
-                    "mothersMaidenName": "Aikin",
+                    "birthWeight": 9.42,
+                    "starSign": "Gemini",
+                    "mothersMaidenName": "Stahl",
                     "notes": " "
                 },
                 "quests": {},
@@ -602,7 +602,7 @@ export const initNpcRepo = () => {
         new NpcBase("Obol Altar", <NpcModel>{
                 "head": <NpcHeadModel>{
                     "location": "ncroaching Forest Villas, YumYum Grotto",
-                    "world": "Blunder Hills, Yum-Yum Desert",
+                    "world": "Yum-Yum Desert",
                     "noQuest": 1,
                     "repeatable": "Unknown",
                     "type": "",
@@ -4648,7 +4648,7 @@ export const initNpcRepo = () => {
         new NpcBase("Desert Davey", <NpcModel>{
                 "head": <NpcHeadModel>{
                     "location": "YumYum Grotto",
-                    "world": "Yum Yum Desert",
+                    "world": "Yum-Yum Desert",
                     "noQuest": 1,
                     "repeatable": "Unknown",
                     "type": "",
@@ -6503,7 +6503,7 @@ export const initNpcRepo = () => {
         new NpcBase("Omar Da Ogar", <NpcModel>{
                 "head": <NpcHeadModel>{
                     "location": "Deepwater Docks",
-                    "world": "[[Worlds|Yum Yum Desert]]",
+                    "world": "Yum-Yum Desert",
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "",
@@ -6631,7 +6631,7 @@ export const initNpcRepo = () => {
         new NpcBase("Clown", <NpcModel>{
                 "head": <NpcHeadModel>{
                     "location": "YumYum Grotto",
-                    "world": "YumYum Desert",
+                    "world": "Yum-Yum Desert",
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "PC",
@@ -7065,7 +7065,7 @@ export const initNpcRepo = () => {
         new NpcBase("Wellington", <NpcModel>{
                 "head": <NpcHeadModel>{
                     "location": "Sands of Time",
-                    "world": "[[Worlds|Yum Yum Desert]]",
+                    "world": "Yum-Yum Desert",
                     "noQuest": 3,
                     "repeatable": "Unknown",
                     "type": "",
@@ -8359,7 +8359,7 @@ export const initNpcRepo = () => {
         new NpcBase("XxX Cattleprod XxX", <NpcModel>{
                 "head": <NpcHeadModel>{
                     "location": "The Grandioso Canyon",
-                    "world": "YumYum Desert",
+                    "world": "Yum-Yum Desert",
                     "noQuest": 3,
                     "repeatable": "Unknown",
                     "type": "",
@@ -8760,7 +8760,7 @@ export const initNpcRepo = () => {
                     "birthWeight": 9.37,
                     "starSign": "Cancer",
                     "mothersMaidenName": "illiams",
-                    "notes": "'''Roses are red, blobulytes are cute, go run my errands and I'll give you some loot!'''$$NEWLINE$$$$NEWLINE$$The [[Loveulyte]] was a blobulyte available during the [[Events#Valenslimes_Day|Valentines Event]] (February 24th 2021 to March 8th 2021). Its daily quests awarded players {{CraftReq|Choco Box}} in exchange for {{CraftReq|Lovey Dovey Letter}} and [[Valentslime]] kills."
+                    "notes": "'''Roses are red, blobulytes are cute, go run my errands and I'll give you some loot!'''$$NEWLINE$$$$NEWLINE$$The [[Loveulyte]] is blobulyte available during the [[Events#Valenslimes_Day|Valentines Event]] (February 14th 2023 to February 24th 2023). Its daily quests awarded players {{CraftReq|Choco Box}} in exchange for {{CraftReq|Lovey Dovey Letter}} and [[Valentslime]] kills."
                 },
                 "quests": {
                     "Heart Hogger": <ItemQuestModel>{
@@ -11646,8 +11646,8 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Walupiggy", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Secret",
-                    "world": "Yum Yum Desert",
+                    "location": "YumYum Grotto",
+                    "world": "Yum-Yum Desert",
                     "noQuest": 4,
                     "repeatable": "Unknonwn",
                     "type": "",
@@ -12968,7 +12968,7 @@ export const initNpcRepo = () => {
                     "birthWeight": 4.46,
                     "starSign": "ibra",
                     "mothersMaidenName": "Darnell",
-                    "notes": "[[Eliteus]] is found in [[Worlds#H4 - Outskirts of Fallstar Isle|Outskirts of Fallstar Isle]].$$NEWLINE$$$$NEWLINE$$Complete his quests to choose a [[Classes|elite class]] for your Barbarian, Squire, Bowman, Hunter, Shaman, or Wizard. $$NEWLINE$$$$NEWLINE$$NOTE: Divine Knight, Siege Breaker, and Elemental Sorcerer are not complete and are for World 5, which is not out yet. These classes have no talents except for the ones shared between all elite classes."
+                    "notes": "[[Eliteus]] is found in [[Worlds#H4 - Outskirts of Fallstar Isle|Outskirts of Fallstar Isle]].$$NEWLINE$$$$NEWLINE$$Complete his quests to choose a [[Classes|elite class]] for your Barbarian, Squire, Bowman, Hunter, Shaman, or Wizard."
                 },
                 "quests": {
                     "The Greenie Gucci Gang": <CustomQuestModel>{
@@ -13421,7 +13421,7 @@ export const initNpcRepo = () => {
                     "birthWeight": 4.32,
                     "starSign": "Virgo",
                     "mothersMaidenName": "rwin",
-                    "notes": " "
+                    "notes": ""
                 },
                 "quests": {
                     "Think twice speak once": <CustomQuestModel>{
@@ -13548,7 +13548,7 @@ export const initNpcRepo = () => {
         new NpcBase("Muhmuguh", <NpcModel>{
                 "head": <NpcHeadModel>{
                     "location": "Magma Rivertown",
-                    "world": "Smoulderin' Plateau",
+                    "world": "Smolderin' Plateau",
                     "noQuest": 3,
                     "repeatable": "o",
                     "type": "",
@@ -13688,14 +13688,14 @@ export const initNpcRepo = () => {
         new NpcBase("Lava Larry", <NpcModel>{
                 "head": <NpcHeadModel>{
                     "location": "Unknown",
-                    "world": "Unknown",
-                    "noQuest": 0,
+                    "world": "Smolderin' Plateau",
+                    "noQuest": 1,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 2.3,
-                    "starSign": "Virgo",
-                    "mothersMaidenName": "Schickowski",
-                    "notes": " "
+                    "birthWeight": 4.98,
+                    "starSign": "Scorpio",
+                    "mothersMaidenName": "Tapia",
+                    "notes": ""
                 },
                 "quests": {
                     "W5 Task Req Check": <ItemQuestModel>{
@@ -13752,15 +13752,15 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Rift Ripper", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
-                    "noQuest": 0,
+                    "location": "The Untraveled Octopath",
+                    "world": "Hyperion Nebula",
+                    "noQuest": 1,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 4.74,
-                    "starSign": "Gemini",
-                    "mothersMaidenName": "Sonderling",
-                    "notes": " "
+                    "birthWeight": 6.87,
+                    "starSign": "Capricorn",
+                    "mothersMaidenName": "Ashwoon",
+                    "notes": ""
                 },
                 "quests": {
                     "Entering The Rift...": <ItemQuestModel>{
@@ -13844,9 +13844,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "repeatable": "Unknown",
                     "type": "Unknown",
-                    "birthWeight": 9.94,
-                    "starSign": "Scorpio",
-                    "mothersMaidenName": "Schwager",
+                    "birthWeight": 8.2,
+                    "starSign": "Capricorn",
+                    "mothersMaidenName": "Aikin",
                     "notes": " "
                 },
                 "quests": {},

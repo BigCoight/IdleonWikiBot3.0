@@ -28,6 +28,10 @@ class StoneItem(DescItem):
 			tier = tier)
 
 	@classmethod
+	def isTool(cls, item: ConsumableItem) -> bool:
+		return "StoneT" == item.internalID[:6]
+
+	@classmethod
 	def getDesc(cls, item: ConsumableItem) -> str:
 		baseDesc = super().getDesc(item)
 		before, after = baseDesc.split(".", 1)
@@ -35,6 +39,8 @@ class StoneItem(DescItem):
 		formattedEffects = []
 		for effect in effects:
 			e, n = effect.split(",")
+			if e == "Weapon Power" and cls.isTool(item):
+				e = "Tool Skill Power"
 			formattedEffects.append(f"+{n} {replaceUnderscores(e)}")
 		formattedEffects = ", ".join(formattedEffects)
 		after = after.replace("*", f"{item.Amount}").replace("#", f"{item.Trigger}")

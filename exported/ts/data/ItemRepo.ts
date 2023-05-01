@@ -23463,7 +23463,7 @@ export const initItemRepo = () => {
                     "sellPrice": 110,
                     "typeGen": TypeGenEnum.dStone,
                     "Type": "Upgrade",
-                    "description": "Drag onto any Tool to apply. +1 Weapon Power, +1 Random Stat. Success Chance; 100% Uses up 1 slots only if Successful ",
+                    "description": "Drag onto any Tool to apply. +1 Tool Skill Power, +1 Random Stat. Success Chance; 100% Uses up 1 slots only if Successful ",
                     "tier": "I"
                 },
                 "sources": <SourcesModel>{
@@ -23606,7 +23606,7 @@ export const initItemRepo = () => {
                     "sellPrice": 1250,
                     "typeGen": TypeGenEnum.dStone,
                     "Type": "Upgrade",
-                    "description": "Drag onto any Tool to apply. +2 Weapon Power, +2 Random Stat. Success Chance; 80% Uses up 1 slots only if Successful ",
+                    "description": "Drag onto any Tool to apply. +2 Tool Skill Power, +2 Random Stat. Success Chance; 80% Uses up 1 slots only if Successful ",
                     "tier": "II"
                 },
                 "sources": <SourcesModel>{
@@ -23697,7 +23697,7 @@ export const initItemRepo = () => {
                     "sellPrice": 20000,
                     "typeGen": TypeGenEnum.dStone,
                     "Type": "Upgrade",
-                    "description": "Drag onto any Tool to apply. +3 Weapon Power, +4 Random Stat. Success Chance; 50% Uses up 1 slots only if Successful ",
+                    "description": "Drag onto any Tool to apply. +3 Tool Skill Power, +4 Random Stat. Success Chance; 50% Uses up 1 slots only if Successful ",
                     "tier": "III"
                 },
                 "sources": <SourcesModel>{
@@ -23737,7 +23737,7 @@ export const initItemRepo = () => {
                     "sellPrice": 550000,
                     "typeGen": TypeGenEnum.dStone,
                     "Type": "Upgrade",
-                    "description": "Drag onto any Tool to apply. +5 Weapon Power, +4 Main Stat. Success Chance; 20% Uses up 1 slots only if Successful ",
+                    "description": "Drag onto any Tool to apply. +5 Tool Skill Power, +4 Main Stat. Success Chance; 20% Uses up 1 slots only if Successful ",
                     "tier": "IV"
                 },
                 "sources": <SourcesModel>{
@@ -23778,7 +23778,7 @@ export const initItemRepo = () => {
                     "sellPrice": 4000000,
                     "typeGen": TypeGenEnum.dStone,
                     "Type": "Upgrade",
-                    "description": "Drag onto any Tool to apply. +6 Weapon Power, +6 Main Stat. Success Chance; 30% Uses up 1 slots only if Successful ",
+                    "description": "Drag onto any Tool to apply. +6 Tool Skill Power, +6 Main Stat. Success Chance; 30% Uses up 1 slots only if Successful ",
                     "tier": "V"
                 },
                 "sources": <SourcesModel>{

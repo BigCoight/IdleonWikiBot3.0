@@ -168,4 +168,7 @@ class IdleonReader:
         self.codeReader.addSection("ArtifactInfo = function ()", "ArtifactInfo")
         self.codeReader.addSection("SlabItemSort = function ()", "SlabItemSort")
 
+        self.codeReader.addSection("RiftStuff = function ()", "Rift")
+        self.codeReader.addSection("CogMapKeys = function ()", "CogMap")
+
         self.codeReader.readCode()

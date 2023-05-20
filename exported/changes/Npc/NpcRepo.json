@@ -1,1 +1,123 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "Nebulyte": {
+            "quests": {
+                "Species Slayer": {
+                    "Type": "Custom",
+                    "DialogueText": "FIRST YOU MUST BE KILLER! BIG TIME!! TRUST TRUST YOU WILL NEED THIS... <br> QUEST:Get 1M deathnote kills on all monsters in World 1 2 and 3. Remember Deathnote Kills are account-wide this is NOT kills just on your Maestro.",
+                    "Name": "Species Slayer",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 1,
+                    "Rewards": [{"item": "Timecandy6", "quantity": 1}],
+                    "Difficulty": 7,
+                    "CustomArray": [
+                        {"desc": "Deathnote 1M Kills:", "finalV": 40, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "Visit Deathnote:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                    ]
+                },
+                "Chizoar Slayer": {
+                    "Type": "Custom",
+                    "DialogueText": "NEXT CHAOTIC CHIZOAR MUST DIE BY YOUR HAND! <br> QUEST:Defeat Chizoar on Chaotic Difficulty.",
+                    "Name": "Chizoar Slayer",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "Quest71", "quantity": 15}, {"item": "CardPack5", "quantity": 1}],
+                    "Difficulty": 7,
+                    "CustomArray": [{
+                        "desc": "Defeat Chaotic Chizoar:",
+                        "finalV": 1,
+                        "type": "GreaterEqual",
+                        "startV": 0
+                    }]
+                },
+                "Oh Geez Lets Not Think About This One...": {
+                    "Type": "Custom",
+                    "DialogueText": "DEFEAT 12 MILLION GREEN MUSHROOMS...AHAHAH! THIS IS IT GO GET THEM!! <br> QUEST:Defeat 12 million green mushrooms by yourself. Check Monster Card to see your personal killcount.",
+                    "Name": "Oh Geez Lets Not Think About This One...",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "CardPack6", "quantity": 1}, {"item": "Timecandy9", "quantity": 3}],
+                    "Difficulty": 7,
+                    "CustomArray": [{"desc": "Mushroom kills:", "finalV": 12000000, "type": "GreaterEqual", "startV": 0}]
+                },
+                "VMAN ACHIEVED!": {
+                    "Type": "Custom",
+                    "DialogueText": "",
+                    "Name": "VMAN ACHIEVED!",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 1,
+                    "Rewards": [{"item": "EquipmentNametag4", "quantity": 1}],
+                    "Difficulty": 1,
+                    "CustomArray": [{"desc": "Become a Voidwalker:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                }
+            }
+        }
+    },
+    "changes": {
+        "Scripticus": {
+            "quests": {
+                "The Bigger they are, the Bigger they Fall!": {
+                    "DialogueText": [
+                        "Well it's all up to you now! Go defeat that thief and take back our Town Crystal! <br> MAIN QUEST: Defeat Amarok the wolf golem who awaits you in the map to the right of the tiki villagers.",
+                        "Well it's all up to you now! Go defeat that thief and take back our Town Crystal! <br> MAIN QUEST: Defeat Amarok the boss of World 1. You'll need to do the Quest from Dog Bone the tiki ghost to get Boss Keys..."
+                    ],
+                    "CustomArray": {
+                        "0": [
+                            {"desc": "Wolf Golem Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                            {"desc": "Amarok Boss Defeated:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                        ]
+                    }
+                },
+                "Stiltzcho, the Leaf Scout": {
+                    "DialogueText": [
+                        "Anyway he's our best bet at finding out who stole the Town Gem! <br> QUEST:Get a scouting report from Stiltzcho the Leaf NPC in the slime map after beans!",
+                        "Get past the Frogs and Beans and talk to the Leaf NPC they might know who stole the Town Gem! <br> QUEST:Get a scouting report from Stiltzcho the Leaf NPC in the slime map after beans!"
+                    ]
+                },
+                "What Lies at the Heart of the Forest": {
+                    "DialogueText": [
+                        "But you've come a long way since that epic fall from gamer grace so why don't you go check it out for yourself? Come back when you know more about the place! <br> MAIN QUEST:Reach the Forest Camp past the Carrotmen and Glublins!",
+                        "But you've come a long way since that epic fall from gamer grace so why don't you go check it out for yourself? Come back when you know more about the place! <br> MAIN QUEST:Reach the Boss Room located in the Forest Camp past the Carrotmen and Glublin maps!"
+                    ],
+                    "CustomArray": {
+                        "0": [
+                            {"desc": "Forest Camp Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                            {"desc": "Boss Room Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                        ]
+                    }
+                },
+                "Mr. Worldwide": {
+                    "CustomArray": {
+                        "0": [
+                            {"desc": "Discover map 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                            {"desc": "Reach map 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                        ]
+                    }
+                },
+                "The Unoccupied Picnic": {
+                    "DialogueText": [
+                        "I went for a Picnic the other day out in the Frog Fields and I forgot to bring home the basket! There wasn't much in there other than a jar of Golden Jam that I need back!  <br> MAIN QUEST:Retrieve the Golden Jam",
+                        "You see I has a picnic and I forget the darn basket! There wasn't in it other than a jar of Golden Jam that I need back!  <br> MAIN QUEST:Retrieve the Golden Jam from the Picnic in Froggy Fields"
+                    ]
+                }
+            }
+        },
+        "Picnic Stowaway": {
+            "quests": {
+                "Beating Up Frogs for some Sauce": {
+                    "DialogueText": [
+                        "Why don't you go 'ask' the frogs around here for some Condiments. Those Fists of yours seem like persuasive talkers! I'll hold onto these nomwiches in the meantime... for safe keeping you know? <br> QUEST:Kill frogs for condiments! Use your blue time candies to speed it up.",
+                        "Why don't you go 'ask' the frogs around here for some Condiments? Those FISTS of yours seem persuasive hehe!! <br> QUEST:Kill frogs for condiments! USE your blue time candy to speed it up!"
+                    ]
+                },
+                "The Hungry Stowaway": {
+                    "DialogueText": [
+                        "Well come on now I aint gonna give you part of my stash here for nothin'. This is a picnic basket not a charity house! Bring me something and maybe we can fix up a deal... <br> QUEST:Buy and bring 30 Nomwiches from the Town Shop.",
+                        "Well come on now I aint gonna give you part of my stash here for nothin'. This is a picnic basket not a charity house! Bring me something and maybe we can fix up a deal... <br> QUEST:Buy and bring 20 Nomwiches from the Town Shop."
+                    ],
+                    "ItemReq": {"0": [{"item": "FoodHealth1", "quantity": 30}, {"item": "FoodHealth1", "quantity": 20}]}
+                }
+            }
+        }
+    }
+}

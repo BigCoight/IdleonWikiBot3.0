@@ -1,5 +1,195 @@
 <div class="GenericFlex"><div class="GenericChild">
 ==Changes==
+{{patchnote/head|changed=Maestro}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|One Step Ahead|1}}
+{{patchnote|Description|Check-Mate!|Check-Mate! +{ Points for the Vee Man!|2}}
+{{patchnote|X 2|1|0|2}}
+|}
+
+{{patchnote/head|changed=Barbarian}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|Beefy Bottles|1}}
+{{patchnote|Description|Each Lv of 'Warriors Only' Bubble raises max Lv of 'CritiKill' Talent, up to +{|Each Lv of 'Warriors Rule' Bubble raises max Lv of 'CritiKill' Talent, up to +{|2}}
+|}
+
 </div><div class="GenericChild">
 ==New==
+{{patchnote/head|changed=Voidwalker}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|Void Trial Rerun|1}}
+{{patchnote|Name| |Void Trial Rerun|2}}
+{{patchnote|Description| |Begin a Speedrun, lasts for {s. Gives } Void Talent Pts per portal unlocked from kills.|2}}
+{{patchnote|X 1| |150|2}}
+{{patchnote|X 2| |1.5|2}}
+{{patchnote|Func X| |bigBase|2}}
+{{patchnote|Y 1| |30|2}}
+{{patchnote|Func Y| |bigBase|2}}
+{{patchnote|Lvl Up Text| |+{S Speedrun Total Time|2}}
+{{patchnote|Skill Index| |45|2}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Name| |Void Trial Rerun|3}}
+{{patchnote|K| |1|3}}
+{{patchnote|D| |1|3}}
+{{patchnote|S| |1|3}}
+{{patchnote|Cooldown| |70010|3}}
+{{patchnote|Cast Time| |1|3}}
+{{patchnote|Mana Cost| |5|3}}
+{{patchnote|Af Krange| |125|3}}
+{{patchnote|Af Ktype| |buff|3}}
+{{patchnote|Af Kactivity| |-2|3}}
+{{patchnote/bold|Void Radius|1}}
+{{patchnote|Name| |Void Radius|2}}
+{{patchnote|Description| |Hits every mob within {px. Also gives +}% Multikill Per Tier for 20 sec if speedrunning.|2}}
+{{patchnote|X 1| |250|2}}
+{{patchnote|X 2| |2|2}}
+{{patchnote|Func X| |bigBase|2}}
+{{patchnote|Y 1| |400|2}}
+{{patchnote|Y 2| |5|2}}
+{{patchnote|Func Y| |bigBase|2}}
+{{patchnote|Lvl Up Text| |+{Px Hit Range|2}}
+{{patchnote|Skill Index| |46|2}}
+{{patchnote/bold|Active Data|2}}
+{{patchnote|Name| |Void Radius|3}}
+{{patchnote|K| |1.15|3}}
+{{patchnote|D| |1.35|3}}
+{{patchnote|S| |1.3|3}}
+{{patchnote|Cooldown| |40|3}}
+{{patchnote|Cast Time| |1|3}}
+{{patchnote|Mana Cost| |5|3}}
+{{patchnote|Af Krange| |400|3}}
+{{patchnote|Af Ktype| |line|3}}
+{{patchnote/bold|Bossing Vain|1}}
+{{patchnote|Name| |Bossing Vain|2}}
+{{patchnote|Description| |Boss kills count as portals. Also, each unique boss kill during the speedrun makes mobs respawn +}% faster|2}}
+{{patchnote|X 1| |100|2}}
+{{patchnote|Func X| |add|2}}
+{{patchnote|Y 1| |80|2}}
+{{patchnote|Y 2| |200|2}}
+{{patchnote|Func Y| |decay|2}}
+{{patchnote|Lvl Up Text| |+}% Bonus Per Boss Kill|2}}
+{{patchnote|Skill Index| |47|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Quad Jab|1}}
+{{patchnote|Name| |Quad Jab|2}}
+{{patchnote|Description| |Punches now hit a 4th time for {% dmg. The other hits do +}% more Dmg|2}}
+{{patchnote|X 1| |15|2}}
+{{patchnote|X 2| |3|2}}
+{{patchnote|Func X| |intervalAdd|2}}
+{{patchnote|Y 1| |0.5|2}}
+{{patchnote|Func Y| |add|2}}
+{{patchnote|Lvl Up Text| |+{% 4Th Dmg & +} Other Dmg|2}}
+{{patchnote|Skill Index| |48|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Enhancement Eclipse|1}}
+{{patchnote|Name| |Enhancement Eclipse|2}}
+{{patchnote|Description| |Enhances a new Talent for another class every 25 points invested, up to 250.|2}}
+{{patchnote|X 1| |1|2}}
+{{patchnote|Func X| |add|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |New Enhancement Every 25 Pts|2}}
+{{patchnote|Skill Index| |49|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Power Orb|1}}
+{{patchnote|Name| |Power Orb|2}}
+{{patchnote|Description| |+{% DMG for all characters, for every 50 Class LV they are over 200.|2}}
+{{patchnote|X 1| |25|2}}
+{{patchnote|X 2| |200|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Dmg Per 50 Class Lv|2}}
+{{patchnote|Skill Index| |50|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Eternal Str|1}}
+{{patchnote|Name| |Eternal Str|2}}
+{{patchnote|Description| |+{ base STR for all characters. Also +} max LV to 'Fist of Rage'|2}}
+{{patchnote|X 1| |2|2}}
+{{patchnote|Func X| |add|2}}
+{{patchnote|Y 1| |2|2}}
+{{patchnote|Func Y| |add|2}}
+{{patchnote|Lvl Up Text| |+{ Base Str And Max Lv|2}}
+{{patchnote|Skill Index| |51|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Eternal Agi|1}}
+{{patchnote|Name| |Eternal Agi|2}}
+{{patchnote|Description| |+{ base AGI for all characters. Also +} max LV to 'Quickness Boots'|2}}
+{{patchnote|X 1| |2|2}}
+{{patchnote|Func X| |add|2}}
+{{patchnote|Y 1| |2|2}}
+{{patchnote|Func Y| |add|2}}
+{{patchnote|Lvl Up Text| |+{ Base Agi And Max Lv|2}}
+{{patchnote|Skill Index| |52|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Eternal Wis|1}}
+{{patchnote|Name| |Eternal Wis|2}}
+{{patchnote|Description| |+{ base WIS for all characters. Also +} max LV to 'Book of the Wise'|2}}
+{{patchnote|X 1| |2|2}}
+{{patchnote|Func X| |add|2}}
+{{patchnote|Y 1| |2|2}}
+{{patchnote|Func Y| |add|2}}
+{{patchnote|Lvl Up Text| |+{ Base Wis And Max Lv|2}}
+{{patchnote|Skill Index| |53|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Eternal Luk|1}}
+{{patchnote|Name| |Eternal Luk|2}}
+{{patchnote|Description| |+{ base LUK for all characters. Also +} max LV to 'Lucky Horseshoe'|2}}
+{{patchnote|X 1| |2|2}}
+{{patchnote|Func X| |add|2}}
+{{patchnote|Y 1| |2|2}}
+{{patchnote|Func Y| |add|2}}
+{{patchnote|Lvl Up Text| |+{ Base Luk And Max Lv|2}}
+{{patchnote|Skill Index| |54|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Exp Cultivation|1}}
+{{patchnote|Name| |Exp Cultivation|2}}
+{{patchnote|Description| |+{% Class EXP for all characters.|2}}
+{{patchnote|X 1| |400|2}}
+{{patchnote|X 2| |250|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Class Exp|2}}
+{{patchnote|Skill Index| |55|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Voodoo Statufication|1}}
+{{patchnote|Name| |Voodoo Statufication|2}}
+{{patchnote|Description| |All statues give {% higher Bonuses to all characters|2}}
+{{patchnote|X 1| |200|2}}
+{{patchnote|X 2| |200|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Higher Bonuses|2}}
+{{patchnote|Skill Index| |56|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Species Epoch|1}}
+{{patchnote|Name| |Species Epoch|2}}
+{{patchnote|Description| |+{% Critters and Souls per combined Trapping and Worship LV above 100|2}}
+{{patchnote|X 1| |10|2}}
+{{patchnote|X 2| |200|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Critters And Souls|2}}
+{{patchnote|Skill Index| |57|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Master Of The System|1}}
+{{patchnote|Name| |Master Of The System|2}}
+{{patchnote|Description| |+{% Multikill per tier per 5 maps of Speedrun highscore. Applies to all characters.|2}}
+{{patchnote|X 1| |20|2}}
+{{patchnote|X 2| |200|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Multikill Per Tier|2}}
+{{patchnote|Skill Index| |58|2}}
+{{patchnote|Active Data| |None|2}}
+{{patchnote/bold|Blood Marrow|1}}
+{{patchnote|Name| |Blood Marrow|2}}
+{{patchnote|Description| |+{% Meal Cooking Spd per total LV of all Meals upgraded on the Dinner Table Menu|2}}
+{{patchnote|X 1| |10|2}}
+{{patchnote|X 2| |250|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Meal Spd Per Upg Lv|2}}
+{{patchnote|Skill Index| |59|2}}
+{{patchnote|Active Data| |None|2}}
+|}
+
 </div></div>

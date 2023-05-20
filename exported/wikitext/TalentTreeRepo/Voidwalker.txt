@@ -1,0 +1,135 @@
+{{Talent
+|name=Void Trial Rerun
+|textArr=Begin a Speedrun, lasts for (Table 1)s. Gives (Table 2) Void Talent Pts per portal unlocked from kills.
+|form1=bigBase
+|x1=150
+|x2=1.5
+|form2=bigBase
+|y1=30
+|y2=0
+|cooldown=70010
+|actiontime=1
+|manacost=5
+}}
+{{Talent
+|name=Void Radius
+|textArr=Hits every mob within (Table 1)px. Also gives +(Table 2)% Multikill Per Tier for 20 sec if speedrunning.
+|form1=bigBase
+|x1=250
+|x2=2
+|form2=bigBase
+|y1=400
+|y2=5
+|cooldown=40
+|actiontime=1
+|manacost=5
+}}
+{{Talent
+|name=Bossing Vain
+|textArr=Boss kills count as portals. Also, each unique boss kill during the speedrun makes mobs respawn +(Table 2)% faster
+|form1=add
+|x1=100
+|x2=0
+|form2=decay
+|y1=80
+|y2=200
+}}
+{{Talent
+|name=Quad Jab
+|textArr=Punches now hit a 4th time for (Table 1)% dmg. The other hits do +(Table 2)% more Dmg
+|form1=intervalAdd
+|x1=15
+|x2=3
+|form2=add
+|y1=0.5
+|y2=0
+}}
+{{Talent
+|name=Enhancement Eclipse
+|textArr=Enhances a new Talent for another class every 25 points invested, up to 250.
+|form1=add
+|x1=1
+|x2=0
+}}
+{{Talent
+|name=Power Orb
+|textArr=+(Table 1)% DMG for all characters, for every 50 Class LV they are over 200.
+|form1=decay
+|x1=25
+|x2=200
+}}
+{{Talent
+|name=Eternal Str
+|textArr=+(Table 1) base STR for all characters. Also +(Table 2) max LV to 'Fist of Rage'
+|form1=add
+|x1=2
+|x2=0
+|form2=add
+|y1=2
+|y2=0
+}}
+{{Talent
+|name=Eternal Agi
+|textArr=+(Table 1) base AGI for all characters. Also +(Table 2) max LV to 'Quickness Boots'
+|form1=add
+|x1=2
+|x2=0
+|form2=add
+|y1=2
+|y2=0
+}}
+{{Talent
+|name=Eternal Wis
+|textArr=+(Table 1) base WIS for all characters. Also +(Table 2) max LV to 'Book of the Wise'
+|form1=add
+|x1=2
+|x2=0
+|form2=add
+|y1=2
+|y2=0
+}}
+{{Talent
+|name=Eternal Luk
+|textArr=+(Table 1) base LUK for all characters. Also +(Table 2) max LV to 'Lucky Horseshoe'
+|form1=add
+|x1=2
+|x2=0
+|form2=add
+|y1=2
+|y2=0
+}}
+{{Talent
+|name=Exp Cultivation
+|textArr=+(Table 1)% Class EXP for all characters.
+|form1=decay
+|x1=400
+|x2=250
+}}
+{{Talent
+|name=Voodoo Statufication
+|textArr=All statues give (Table 1)% higher Bonuses to all characters
+|form1=decay
+|x1=200
+|x2=200
+}}
+{{Talent
+|name=Species Epoch
+|textArr=+(Table 1)% Critters and Souls per combined Trapping and Worship LV above 100
+|form1=decay
+|x1=10
+|x2=200
+}}
+{{Talent
+|name=Master Of The System
+|textArr=+(Table 1)% Multikill per tier per 5 maps of Speedrun highscore. Applies to all characters.
+|form1=decay
+|x1=20
+|x2=200
+}}
+{{Talent
+|name=Blood Marrow
+|textArr=+(Table 1)% Meal Cooking Spd per total LV of all Meals upgraded on the Dinner Table Menu
+|form1=decay
+|x1=10
+|x2=250
+}}

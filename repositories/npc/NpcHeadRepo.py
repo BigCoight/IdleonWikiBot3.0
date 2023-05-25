@@ -56,12 +56,10 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 				selectedTemplate = template
 				break
 		codeWorld = cls.getWorld(rawName)
-		print(codeWorld)
 		if selectedTemplate is None:
 			if codeWorld:
 				return cls.newHead(world = codeWorld)
 			return cls.newHead()
-		print(dispName)
 		typ = ""
 		if "npcType" in selectedTemplate:
 			if codeWorld:
@@ -75,7 +73,6 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 			world = codeWorld if codeWorld else cls.getParsed(selectedTemplate, "world"),
 			noQuest = cls.getParsed(selectedTemplate, "noquest"),
 			type = typ,
-			repeatable = cls.getParsed(selectedTemplate, "repeatable"),
 			birthWeight = cls.getParsed(selectedTemplate, "birthweight"),
 			starSign = cls.getParsed(selectedTemplate, "starsign"),
 			mothersMaidenName = cls.getParsed(selectedTemplate, "mmm"),

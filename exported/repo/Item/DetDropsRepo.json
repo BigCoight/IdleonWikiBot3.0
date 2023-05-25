@@ -520,6 +520,8 @@
             {"source": "EasterEvent2", "quantity": 69, "chance": 0.5},
             {"source": "crabcakeB", "quantity": 69, "chance": 0.5},
             {"source": "shovelY", "quantity": 69, "chance": 0.5},
+            {"source": "springEvent1", "quantity": 69, "chance": 0.5},
+            {"source": "springEvent2", "quantity": 69, "chance": 0.5},
             {"source": "Copper", "quantity": 0, "chance": 0},
             {"source": "Iron", "quantity": 0, "chance": 0},
             {"source": "Gold", "quantity": 0, "chance": 0},
@@ -2780,7 +2782,8 @@
             {"source": "ChestA4", "quantity": 1, "chance": 0.12},
             {"source": "ChestB4", "quantity": 1, "chance": 0.23},
             {"source": "ChestC4", "quantity": 1, "chance": 0.45},
-            {"source": "EasterEvent2", "quantity": 1, "chance": 0.3}
+            {"source": "EasterEvent2", "quantity": 1, "chance": 0.3},
+            {"source": "springEvent2", "quantity": 1, "chance": 0.2}
         ]
     },
     "Timecandy1": {
@@ -2790,7 +2793,8 @@
             {"source": "mini3a", "quantity": 1, "chance": 0.2},
             {"source": "mini4a", "quantity": 1, "chance": 0.2},
             {"source": "sheepB", "quantity": 3, "chance": 0.6},
-            {"source": "snakeY", "quantity": 3, "chance": 0.2}
+            {"source": "snakeY", "quantity": 3, "chance": 0.2},
+            {"source": "springEvent2", "quantity": 1, "chance": 0.2}
         ]
     },
     "Timecandy2": {
@@ -5786,6 +5790,36 @@
     },
     "CardsY13": {"sources": [
         {"source": "shovelY", "quantity": 1, "chance": 0.03}
+    ]},
+    "CardsY2": {
+        "sources": [
+            {"source": "springEvent1", "quantity": 1, "chance": 0},
+            {"source": "springEvent2", "quantity": 1, "chance": 0}
+        ]
+    },
+    "Quest71": {"sources": [
+        {"source": "springEvent1", "quantity": 1, "chance": 1}
+    ]},
+    "CardPack6": {"sources": [
+        {"source": "springEvent1", "quantity": 1, "chance": 1}
+    ]},
+    "EquipmentHats38": {"sources": [
+        {"source": "springEvent2", "quantity": 1, "chance": 0.001}
+    ]},
+    "EquipmentHats32": {"sources": [
+        {"source": "springEvent2", "quantity": 1, "chance": 0.001}
+    ]},
+    "EquipmentHats56": {"sources": [
+        {"source": "springEvent2", "quantity": 1, "chance": 0.001}
+    ]},
+    "ClassSwap": {"sources": [
+        {"source": "springEvent2", "quantity": 1, "chance": 0.001}
+    ]},
+    "ResetBox": {"sources": [
+        {"source": "springEvent2", "quantity": 1, "chance": 0.001}
+    ]},
+    "ResetCompletedS": {"sources": [
+        {"source": "springEvent2", "quantity": 1, "chance": 0.001}
     ]},
     "CardsC1": {"sources": [
         {"source": "Copper", "quantity": 1, "chance": 0.0002}

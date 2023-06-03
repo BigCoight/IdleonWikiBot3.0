@@ -1,10 +1,10 @@
 from helpers.CodeReader import IdleonReader
-from repositories.npc.NpcHeadRepo import NpcHeadRepo
+from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
 
-idleonReader = IdleonReader("180", steam=True)
+idleonReader = IdleonReader("184", steam = True)
 codeReader = idleonReader.codeReader
 
+# NpcHeadRepo.initialise(codeReader, True)
 # EnemyNoteRepo.initialise(codeReader, True)
-# ItemNoteRepo.initialise(codeReader, True)
 # NpcNoteRepo.initialise(codeReader, True)
-NpcHeadRepo.initialise(codeReader, True)
+ItemNoteRepo.initialise(codeReader, True)

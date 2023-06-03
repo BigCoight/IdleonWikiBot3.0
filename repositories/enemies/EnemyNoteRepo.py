@@ -1,6 +1,7 @@
 from typing import Dict
 
 from pywikibot import Site
+from rich.progress import track
 
 from definitions.common.Note import Note
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
@@ -25,10 +26,9 @@ class EnemyNoteRepo(FileRepository[Note]):
 	def generateRepo(cls) -> None:
 		website = Site()
 		items = EnemyDetailsRepo.items()
-		for item, data in items:
+		for item, data in track(items, "Getting enemy Notes..."):
 			if EnemyDetailsRepo._ignore(item, data): continue
 			dispName = data.Name
 			note = cls.getNote(website, dispName)
 			if note:
 				cls.add(item, Note(note = note))
-

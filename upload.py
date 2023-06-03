@@ -7,8 +7,8 @@ from repositories.npc.NpcRepo import NpcRepo
 # loginManager = ClientLoginManager()
 # loginManager.login()
 
-newV = IdleonReader("183", True)
-oldV = IdleonReader("182", True)
+newV = IdleonReader("184", True)
+oldV = IdleonReader("183", True)
 upload = True
 
 # ItemRepo.initialise(oldV.codeReader, log = False)

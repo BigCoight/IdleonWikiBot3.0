@@ -1,7 +1,6 @@
 from typing import Dict
 
 from pywikibot import Site
-from rich.console import Console
 from rich.progress import track
 
 from definitions.common.Note import Note
@@ -27,7 +26,7 @@ class ItemNoteRepo(FileRepository[Note]):
 	def generateRepo(cls) -> None:
 		website = Site()
 		items = ItemDetailRepo.items()
-		for item, data in track(items, description = "Pulling notes...", console = Console(color_system = None)):
+		for item, data in track(items, description = "Pulling notes..."):
 			dispName = data.displayName
 			note = cls.getNote(website, dispName)
 			if note:

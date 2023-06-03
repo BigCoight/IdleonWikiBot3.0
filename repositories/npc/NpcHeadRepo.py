@@ -4,6 +4,7 @@ from typing import List, Dict, Optional
 
 from mwparserfromhell import parse as mwparse
 from pywikibot import Site, Page
+from rich.progress import track
 
 from definitions.questdef.NpcHead import NpcHead
 from helpers.Constants import Constants
@@ -38,7 +39,7 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 		for n in range(len(cls.getSections())):
 			questText = formatStr(cls.getSection(n), ["\n"])
 			questData = re.split(reNpcs, questText)
-			for i in range(1, len(questData), 2):
+			for i in track(range(1, len(questData), 2), "Pulling heads..."):
 				npcName = replaceUnderscores(questData[i])
 				npcName = Constants.nameConflicts.get(npcName, npcName)
 				cls.add(npcName, cls.getHead(website, npcName, questData[i]))

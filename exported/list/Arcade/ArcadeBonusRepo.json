@@ -142,5 +142,85 @@
         "func": "add",
         "type": "",
         "lvlUpText": "+{ Wep POW"
+    },
+    {
+        "effect": "+{% Skill EXP gain",
+        "x1": 20,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% EXP"
+    },
+    {
+        "effect": "+{ Base STR",
+        "x1": 1,
+        "x2": 0,
+        "func": "add",
+        "type": "",
+        "lvlUpText": "+{ STR"
+    },
+    {
+        "effect": "+{ Base AGI",
+        "x1": 1,
+        "x2": 0,
+        "func": "add",
+        "type": "",
+        "lvlUpText": "+{ AGI"
+    },
+    {
+        "effect": "+{ Base WIS",
+        "x1": 1,
+        "x2": 0,
+        "func": "add",
+        "type": "",
+        "lvlUpText": "+{ WIS"
+    },
+    {
+        "effect": "+{ Base LUK",
+        "x1": 1,
+        "x2": 0,
+        "func": "add",
+        "type": "",
+        "lvlUpText": "+{ LUK"
+    },
+    {
+        "effect": "+{% Trapping Critters",
+        "x1": 30,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Critters"
+    },
+    {
+        "effect": "+{% Worship Souls",
+        "x1": 30,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Souls"
+    },
+    {
+        "effect": "+{% Refinery Speed",
+        "x1": 30,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Speed"
+    },
+    {
+        "effect": "+{% Forge Capacity",
+        "x1": 100,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Cap"
+    },
+    {
+        "effect": "+{% Drop Rate",
+        "x1": 30,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% Drop"
     }
 ]

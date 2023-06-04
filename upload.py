@@ -2,6 +2,7 @@ from helpers.CodeReader import IdleonReader
 from repositories.collections.EnemyRepo import EnemyRepo
 from repositories.collections.ItemRepo import ItemRepo
 from repositories.enemies.DropTableRepo import DropTableRepo
+from repositories.item.RecipeRepo import RecipeRepo
 from repositories.npc.NpcRepo import NpcRepo
 
 # loginManager = ClientLoginManager()
@@ -25,8 +26,10 @@ ItemRepo.initialise(newV.codeReader, log = False)
 EnemyRepo.initialise(newV.codeReader, log = False)
 NpcRepo.initialise(newV.codeReader, log = False)
 DropTableRepo.initialise(newV.codeReader, log = False)
+RecipeRepo.initialise(newV.codeReader, log = False)
 
 ItemRepo.upload(not upload)
 EnemyRepo.upload(not upload)
 NpcRepo.upload(not upload)
 DropTableRepo.upload(not upload)
+RecipeRepo.upload(not upload)

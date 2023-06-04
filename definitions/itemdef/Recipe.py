@@ -51,6 +51,9 @@ class Recipe(IdleonModel):
 	def getItemDisplayName(self) -> str:
 		return ItemDetailRepo.getDisplayName(self.intID)
 
+	def sortKey(self) -> str:
+		return ItemDetailRepo.get(self.intID).Type
+
 	def intToWiki(self) -> Dict[str, Union[Callable, str]]:
 		return {
 			"name": self.getItemDisplayName,

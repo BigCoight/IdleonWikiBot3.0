@@ -2,8 +2,9 @@
 # oldV = IdleonReader("156", True)
 # NpcRepo.initialise(newV.codeReader)
 from helpers.CodeReader import IdleonReader
-from repositories.misc.world5.ArtifactRepo import ArtifactRepo
+from repositories.item.RecipeRepo import RecipeRepo
 
-newV = IdleonReader("180", True)
+newV = IdleonReader("184", True)
 
-ArtifactRepo.initialise(newV.codeReader)
+RecipeRepo.initialise(newV.codeReader)
+RecipeRepo.upload(False)

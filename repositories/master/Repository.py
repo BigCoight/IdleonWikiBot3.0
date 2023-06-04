@@ -3,7 +3,7 @@ import os.path
 from abc import ABC, abstractmethod
 from copy import deepcopy
 from enum import Enum
-from typing import Dict, Generic, Optional, TypeVar, List, Set
+from typing import Dict, Generic, Optional, TypeVar, List, Set, Any
 
 from pywikibot import Site, Page
 from rich.progress import track
@@ -341,12 +341,16 @@ class Repository(Generic[T], ABC):
 		return fr"./exported/old/{cls.__name__}"
 
 	@classmethod
+	def _getOldData(cls, item: str, data: Any):
+		return data.writeWiki()
+
+	@classmethod
 	def _createOldDir(cls):
 		if not os.path.exists(cls._oldLocation()):
 			os.mkdir(cls._oldLocation())
 
 	@classmethod
-	def _isOld(cls, name: str, data: T) -> OldType:
+	def _isOld(cls, name: str, data: Any) -> OldType:
 		def onlyDelta(x: str) -> bool:
 			return x.startswith("+") or x.startswith("-")
 
@@ -354,7 +358,7 @@ class Repository(Generic[T], ABC):
 			printPurple(f'{OldType.New.name}:  {cls.getWikiName(name)}')
 			return OldType.New
 		with open(f"{cls._oldLocation()}/{name}.txt", mode = 'r') as infile:
-			wiki = data.writeWiki()
+			wiki = cls._getOldData(name, data)
 			old = infile.read()
 			if wiki == old:
 				return OldType.Old
@@ -364,9 +368,9 @@ class Repository(Generic[T], ABC):
 			return OldType.Changed
 
 	@classmethod
-	def _writeOld(cls, name: str, data: T) -> None:
+	def _writeOld(cls, name: str, data: Any) -> None:
 		with open(f"{cls._oldLocation()}/{name}.txt", mode = 'w') as outfile:
-			outfile.write(data.writeWiki())
+			outfile.write(cls._getOldData(name, data))
 
 	@classmethod
 	def _ignore(cls, name: str, data: T) -> bool:

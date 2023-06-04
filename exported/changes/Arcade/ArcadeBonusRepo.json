@@ -1,29 +1,5 @@
 {
     "new": {
-        "Bonus 20": {
-            "effect": "+{ Base AGI",
-            "x1": 1,
-            "x2": 0,
-            "func": "add",
-            "type": "",
-            "lvlUpText": "+{ AGI"
-        },
-        "Bonus 18": {
-            "effect": "+{% Skill EXP gain",
-            "x1": 20,
-            "x2": 100,
-            "func": "decay",
-            "type": "%",
-            "lvlUpText": "+{% EXP"
-        },
-        "Bonus 19": {
-            "effect": "+{ Base STR",
-            "x1": 1,
-            "x2": 0,
-            "func": "add",
-            "type": "",
-            "lvlUpText": "+{ STR"
-        },
         "Bonus 23": {
             "effect": "+{% Trapping Critters",
             "x1": 30,
@@ -48,14 +24,6 @@
             "type": "",
             "lvlUpText": "+{ LUK"
         },
-        "Bonus 27": {
-            "effect": "+{% Drop Rate",
-            "x1": 30,
-            "x2": 100,
-            "func": "decay",
-            "type": "%",
-            "lvlUpText": "+{% Drop"
-        },
         "Bonus 26": {
             "effect": "+{% Forge Capacity",
             "x1": 100,
@@ -64,14 +32,6 @@
             "type": "%",
             "lvlUpText": "+{% Cap"
         },
-        "Bonus 25": {
-            "effect": "+{% Refinery Speed",
-            "x1": 30,
-            "x2": 100,
-            "func": "decay",
-            "type": "%",
-            "lvlUpText": "+{% Speed"
-        },
         "Bonus 21": {
             "effect": "+{ Base WIS",
             "x1": 1,
@@ -79,6 +39,46 @@
             "func": "add",
             "type": "",
             "lvlUpText": "+{ WIS"
+        },
+        "Bonus 27": {
+            "effect": "+{% Drop Rate",
+            "x1": 30,
+            "x2": 100,
+            "func": "decay",
+            "type": "%",
+            "lvlUpText": "+{% Drop"
+        },
+        "Bonus 19": {
+            "effect": "+{ Base STR",
+            "x1": 1,
+            "x2": 0,
+            "func": "add",
+            "type": "",
+            "lvlUpText": "+{ STR"
+        },
+        "Bonus 20": {
+            "effect": "+{ Base AGI",
+            "x1": 1,
+            "x2": 0,
+            "func": "add",
+            "type": "",
+            "lvlUpText": "+{ AGI"
+        },
+        "Bonus 18": {
+            "effect": "+{% Skill EXP gain",
+            "x1": 20,
+            "x2": 100,
+            "func": "decay",
+            "type": "%",
+            "lvlUpText": "+{% EXP"
+        },
+        "Bonus 25": {
+            "effect": "+{% Refinery Speed",
+            "x1": 30,
+            "x2": 100,
+            "func": "decay",
+            "type": "%",
+            "lvlUpText": "+{% Speed"
         }
     },
     "changes": {}

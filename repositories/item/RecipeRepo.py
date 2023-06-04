@@ -1,13 +1,17 @@
 import re
 from queue import Queue
-from typing import List, Set
+from typing import List, Set, Any
+
+from pywikibot import Site
+from rich.progress import track
 
 from definitions.itemdef.Recipe import Recipe, Component, DetRecipeComponent, DetailedRecipe
 from helpers.CodeReader import IdleonReader
+from helpers.ColourPrinter import printYellow
 from helpers.CustomTypes import Integer
-from helpers.HelperFunctions import formatStr, wrap
+from helpers.HelperFunctions import getFrom4dArray, getFromSplitArray
 from repositories.item.ItemDetailRepo import ItemDetailRepo
-from repositories.master.Repository import Repository
+from repositories.master.Repository import Repository, OldType
 
 
 class RecipeRepo(Repository[Recipe]):
@@ -33,28 +37,24 @@ class RecipeRepo(Repository[Recipe]):
 		reItems = r'"([a-zA-Z0-_ ]*)"\.'
 		anvItemNameData = cls.getSection(0)
 		cls.anvilItemNames = [x.split(" ") for x in re.findall(reItems, anvItemNameData)]
-		recipeData = formatStr(cls.getSection(1), ["\n", "  "])
-		recipeSections = [wrap(x) for x in re.split(r"],?],?],\[\[\[", recipeData)]
-		levelData = formatStr(cls.getSection(2), ["\n", "  "])
-		levelSections = [wrap(x) for x in re.split(r"],?],\[\[", levelData)]
-		for i, (recipeSection, levelSection) in enumerate(zip(recipeSections, levelSections)):
-			if i >= len(cls.anvilItemNames):
-				break
-			recipeItems = [wrap(x) for x in re.split(r"],?],\[\[", recipeSection)]
-			levelItems = [wrap(x) for x in re.split(r"],\[", levelSection)]
-			for j, (item, level) in enumerate(zip(recipeItems, levelItems)):
-				recipe = re.findall(r'\["([a-zA-Z0-9_]*)", "([0-9]*)"', item)
-				recipe = [Component(item = q, quantity = v) for q, v in recipe]
-				lvlData = re.findall(r'\["([0-9]*)", "([0-9]*)"', level)
-				temp = Recipe(
-					intID = cls.anvilItemNames[i][j],
+
+		craftNames = getFromSplitArray(cls.getSection(0))
+		cls.anvilItemNames = craftNames
+		componentData = getFrom4dArray(cls.getSection(1))
+		levelData = getFrom4dArray(cls.getSection(2))[0]
+		for i, (tabName, tabComps, tabLevel) in enumerate(zip(craftNames, componentData, levelData)):
+			for j, (name, comps, level) in enumerate(zip(tabName, tabComps, tabLevel)):
+				recipe = [Component(item = q, quantity = v) for q, v in comps]
+				toAdd = Recipe(
+					intID = name,
 					recipe = recipe,
-					levelReqToCraft = lvlData[0][0],
-					expGiven = lvlData[0][1],
+					levelReqToCraft = level[0],
+					expGiven = level[1],
 					no = j + 1,
 					tab = i + 1
 				)
-				cls.add(cls.anvilItemNames[i][j], temp)
+				cls.add(cls.anvilItemNames[i][j], toAdd)
+
 		for _, v in cls.items():
 			cls.generateDetailedRecipe(v)
 			cls.generateDetTotals(v)
@@ -133,7 +133,9 @@ class RecipeRepo(Repository[Recipe]):
 		recipe.sellPrice = sellPrice
 
 	@classmethod
-	def getWikiName(cls, name: str) -> str:
+	def getWikiName(cls, name: str | int) -> str:
+		if isinstance(name, int):
+			return f"Anvil Tab {name}"
 		return ItemDetailRepo.getDisplayName(name)
 
 	@classmethod
@@ -145,53 +147,28 @@ class RecipeRepo(Repository[Recipe]):
 		return super().compareVersions(v1, v2, {"detailedRecipe", "recipeFrom", 'intID'})
 
 	@classmethod
-	def _writeChangesWiki(cls, differences):
-		def head(v: str) -> str:
-			return "{{patchnote/head|changed=" + v + "}}\n"
+	def _getOldData(cls, item: str, data: Any):
+		return cls.writeTabWiki(item, data)
 
-		def item(v: str) -> str:
-			return "{{patchnote/item|" + v + "}}\n"
+	@classmethod
+	def upload(cls, debug: bool) -> None:
+		debugNum = 0
+		cls._createOldDir()
+		website = Site()
+		tabs = cls._convertToTabs()
+		for tab, items in track(tabs.items(), description = f"Uploading {cls.__name__}"):
+			name = f"Smithing/Anvil_Tab_{tab}"
+			if (oldStatus := cls._isOld(tab, items)) == OldType.Old:
+				continue
+			if debug:
+				debugNum += 1
+				continue
+			currentTab = cls.writeTabWiki(tab, items)
+			cls._upload(website, name, currentTab)
+			cls._writeOld(tab, items)
 
-		res = ""
-		new = differences["new"]
-		changes = differences["changes"]
-
-		changesOrdered = {}
-		for key in changes.keys():
-			cType = ItemDetailRepo.get(key).Type
-			if cType not in changesOrdered:
-				changesOrdered[cType] = []
-			changesOrdered[cType].append(key)
-
-		newOrdered = {}
-		for key in new.keys():
-			cType = ItemDetailRepo.get(key).Type
-			if cType not in newOrdered:
-				newOrdered[cType] = []
-			newOrdered[cType].append(key)
-
-		res += "<div class=\"GenericFlex\"><div class=\"GenericChild\">\n"
-		res += "==Changes==\n"
-		for typ, keys in changesOrdered.items():
-			res += head(typ)
-			for change in keys:
-				res += item(cls.getWikiName(change))
-				res += cls._writeChangelog(changes[change])
-			res += "|}\n\n"
-
-		res += "</div><div class=\"GenericChild\">\n"
-		res += "==New==\n"
-		for typ, keys in newOrdered.items():
-			res += head(typ)
-			for change in keys:
-				res += item(cls.getWikiName(change))
-				res += cls._writeChangelog(new[change])
-			res += "|}\n\n"
-
-		res += "</div></div>"
-
-		with open(cls._getPath("wikitext/_changes", "txt"), mode = 'w') as infile:
-			infile.write(res)
+		if debug:
+			printYellow(f"{cls.__name__} has {debugNum} changes")
 
 	@classmethod
 	def exportWikiMult(cls) -> None:
@@ -201,16 +178,25 @@ class RecipeRepo(Repository[Recipe]):
 
 		"""
 
-		tabs = {}
+		tabs = cls._convertToTabs()
+		for tab, items in tabs.items():
+			currentTab = cls.writeTabWiki(tab, items)
+			path = cls._getPath(f"wikitext/{cls.__name__}", "txt", nameOveride = f"Anvil Tab {tab}", noCat = True)
+			with open(path, mode = 'w') as outfile:
+				outfile.write(currentTab)
 
+	@classmethod
+	def writeTabWiki(cls, tab, items):
+		currentTab = "{{Smithing/head|"f"{tab}""}}\n"
+		currentTab += "".join(map(lambda x: x.writeWiki(), items))
+		currentTab += "|}"
+		return currentTab
+
+	@classmethod
+	def _convertToTabs(cls):
+		tabs = {}
 		for _, data in cls.items():
 			if data.tab not in tabs:
 				tabs[data.tab] = []
 			tabs[data.tab].append(data)
-		for tab, items in tabs.items():
-			currentTab = "{{Smithing/head|"f"{tab}""}}\n"
-			currentTab += "\n".join(map(lambda x: x.writeWiki(), items))
-			currentTab += "|}"
-			path = cls._getPath(f"wikitext/{cls.__name__}", "txt", nameOveride = f"Anvil Tab {tab}", noCat = True)
-			with open(path, mode = 'w') as outfile:
-				outfile.write(currentTab)
+		return tabs

@@ -44,48 +44,46 @@ class DropTableRepo(Repository[DropTable]):
 				obols.append(ItemDrop(
 					item = f"ObolBronze{i}",
 					quantity = 1,
-					chance = 0.0006 * (1 + 1 / 20),
+					chance = 0.0011 * (1 + 1 / 20),
 					questLink = "N/A",
 				))
 			elif i < 8:
 				obols.append(ItemDrop(
 					item = f"ObolSilver{i - 4}",
 					quantity = 1,
-					chance = 0.0006 * (1 + 1 / 20),
+					chance = 0.0007 * (1 + 1 / 20),
 					questLink = "N/A",
 				))
 			elif i == 8:
 				obols.append(ItemDrop(
 					item = f"ObolSilverMoney",
 					quantity = 1,
-					chance = 0.027 * (1 + 1 / 20),
+					chance = 0.03 * (1 + 1 / 20),
 					questLink = "N/A",
 				))
 			elif i == 9:
 				obols.append(ItemDrop(
 					item = f"ObolSilverDamage",
 					quantity = 1,
-					chance = 0.027 * (1 + 1 / 20),
+					chance = 0.031 * (1 + 1 / 20),
 					questLink = "N/A",
 				))
 			elif i == 10:
 				obols.append(ItemDrop(
 					item = f"ObolGold3",
 					quantity = 1,
-					chance = 0.021 * (1 + 1 / 20),
+					chance = 0.015 * (1 + 1 / 20),
 					questLink = "N/A",
 				))
 			elif i == 11:
 				obols.append(ItemDrop(
 					item = f"ObolSilverLuck",
 					quantity = 1,
-					chance = 0.021 * (1 + 1 / 20),
+					chance = 0.025 * (1 + 1 / 20),
 					questLink = "N/A",
 				))
-			if i < 4:
+			if i < 8:
 				cls.get(f"DropTable{i + 1}").drops.insert(-1, obols[i])
-			elif i < 8:
-				cls.get(f"DropTable{i + 2}").drops.insert(-1, obols[i])
 			elif i < 10:
 				cls.get(f"SuperDropTable1").drops.insert(-1, obols[i])
 			elif i < 12:
@@ -94,19 +92,19 @@ class DropTableRepo(Repository[DropTable]):
 		cls.get("DropTable14").drops.insert(-1, ItemDrop(
 			item = f"ObolBronzeWorship",
 			quantity = 1,
-			chance = 0.021 * (1 + 1 / 20),
+			chance = 0.0009 * (1 + 1 / 20),
 			questLink = "N/A",
 		))
 		cls.get("DropTable15").drops.insert(-1, ItemDrop(
 			item = f"ObolBronzeTrapping",
 			quantity = 1,
-			chance = 0.021 * (1 + 1 / 20),
+			chance = 0.0009 * (1 + 1 / 20),
 			questLink = "N/A",
 		))
 		cls.get("DropTable16").drops.insert(-1, ItemDrop(
 			item = f"ObolBronzeCons",
 			quantity = 1,
-			chance = 0.021 * (1 + 1 / 20),
+			chance = 0.0009 * (1 + 1 / 20),
 			questLink = "N/A",
 		))
 		cls.get("SuperDropTable1").drops.insert(-1, ItemDrop(

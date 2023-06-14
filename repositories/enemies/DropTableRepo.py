@@ -84,7 +84,7 @@ class DropTableRepo(Repository[DropTable]):
 				))
 			if i < 4:
 				cls.get(f"DropTable{i + 1}").drops.insert(-1, obols[i])
-			if i < 8:
+			elif i < 8:
 				cls.get(f"DropTable{i + 1}").drops.insert(-1, obols[i])
 			elif i < 10:
 				cls.get(f"SuperDropTable1").drops.insert(-1, obols[i])

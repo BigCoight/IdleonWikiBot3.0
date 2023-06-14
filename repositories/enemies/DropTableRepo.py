@@ -82,6 +82,8 @@ class DropTableRepo(Repository[DropTable]):
 					chance = 0.025 * (1 + 1 / 20),
 					questLink = "N/A",
 				))
+			if i < 4:
+				cls.get(f"DropTable{i + 1}").drops.insert(-1, obols[i])
 			if i < 8:
 				cls.get(f"DropTable{i + 1}").drops.insert(-1, obols[i])
 			elif i < 10:

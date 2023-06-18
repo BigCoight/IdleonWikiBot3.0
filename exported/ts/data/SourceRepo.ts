@@ -9462,6 +9462,19 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
+        new SourcesBase("ObolSilver0", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{"wikiName": "[[DropTable5]]", "txtName": "DropTable5"},
+                    <SourceModel>{
+                        "wikiName": "[[Carpetiem#Darn Lazy Gamers!|Darn Lazy Gamers!]]",
+                        "txtName": "Carpetiem: Darn Lazy Gamers!"
+                    },
+                    <SourceModel>{"wikiName": "[[Alchemy#Liquid Shop|Decent Obols]]", "txtName": "Alchemy: Decent Obols"},
+                    <SourceModel>{"wikiName": "[[Alchemy#Liquid Shop|Grand Obols]]", "txtName": "Alchemy: Grand Obols"}
+                ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
         new SourcesBase("Trophy2", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[SuperDropTable1]]", "txtName": "SuperDropTable1"},
@@ -9559,13 +9572,9 @@ export const initSourceRepo = () => {
                     }
                 ]
             }),
-        new SourcesBase("ObolSilver0", <SourcesModel>{
+        new SourcesBase("ObolSilver1", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[DropTable6]]", "txtName": "DropTable6"},
-                    <SourceModel>{
-                        "wikiName": "[[Carpetiem#Darn Lazy Gamers!|Darn Lazy Gamers!]]",
-                        "txtName": "Carpetiem: Darn Lazy Gamers!"
-                    },
                     <SourceModel>{"wikiName": "[[Alchemy#Liquid Shop|Decent Obols]]", "txtName": "Alchemy: Decent Obols"},
                     <SourceModel>{"wikiName": "[[Alchemy#Liquid Shop|Grand Obols]]", "txtName": "Alchemy: Grand Obols"}
                 ],
@@ -9605,7 +9614,7 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("ObolSilver1", <SourcesModel>{
+        new SourcesBase("ObolSilver2", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[DropTable7]]", "txtName": "DropTable7"},
                     <SourceModel>{"wikiName": "[[Alchemy#Liquid Shop|Decent Obols]]", "txtName": "Alchemy: Decent Obols"},
@@ -9624,11 +9633,10 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("ObolSilver2", <SourcesModel>{
+        new SourcesBase("ObolSilver3", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[DropTable8]]", "txtName": "DropTable8"},
-                    <SourceModel>{"wikiName": "[[Alchemy#Liquid Shop|Decent Obols]]", "txtName": "Alchemy: Decent Obols"},
-                    <SourceModel>{"wikiName": "[[Alchemy#Liquid Shop|Grand Obols]]", "txtName": "Alchemy: Grand Obols"}
+                    <SourceModel>{"wikiName": "[[Alchemy#Liquid Shop|Decent Obols]]", "txtName": "Alchemy: Decent Obols"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -9645,14 +9653,6 @@ export const initSourceRepo = () => {
             }),
         new SourcesBase("EquipmentHats27", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[DropTable9]]", "txtName": "DropTable9"}],
-                "recipeFrom": [],
-                "questAss": []
-            }),
-        new SourcesBase("ObolSilver3", <SourcesModel>{
-                "sources": [
-                    <SourceModel>{"wikiName": "[[DropTable9]]", "txtName": "DropTable9"},
-                    <SourceModel>{"wikiName": "[[Alchemy#Liquid Shop|Decent Obols]]", "txtName": "Alchemy: Decent Obols"}
-                ],
                 "recipeFrom": [],
                 "questAss": []
             }),

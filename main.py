@@ -37,6 +37,7 @@ from repositories.item.sources.SourceRepo import SourceRepo
 from repositories.misc.AchievementRepo import AchievementRepo
 from repositories.misc.CardSetRepo import CardSetRepo
 from repositories.misc.ColosseumRepo import ColosseumRepo
+from repositories.misc.CompanionRepo import CompanionRepo
 from repositories.misc.ConstellationsRepo import ConstellationsRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
@@ -188,6 +189,8 @@ GamingSuperbitsRepo.initialise(codeReader)
 GodInfoRepo.initialise(codeReader)
 IslandInfoRepo.initialise(codeReader)
 SlabItemSortRepo.initialise(codeReader)
+
+CompanionRepo.initialise(codeReader)
 
 ItemRepo.exportWikiMult()
 NpcRepo.exportWikiMult()

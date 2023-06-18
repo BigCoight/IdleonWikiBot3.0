@@ -616,7 +616,7 @@ export const initTalentTreeRepo = () => {
                         "x1": 2.5,
                         "x2": 0,
                         "funcX": "add",
-                        "y1": 140,
+                        "y1": 120,
                         "y2": 100,
                         "funcY": "decay",
                         "lvlUpText": "+{% Exp Gain & -}% Efficiency",

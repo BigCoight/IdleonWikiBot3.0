@@ -6767,6 +6767,27 @@ export const initSpecificItemRepo = () => {
                 "Skill": "",
                 "Skill_Power": 0
             }),
+        new BaseItemBase("EquipmentCape12", <ArmourItemModel>{
+                "internalName": "EquipmentCape12",
+                "displayName": "Blooming Vine",
+                "sellPrice": 1,
+                "typeGen": TypeGenEnum.aCape,
+                "Type": "Cape",
+                "lvReqToCraft": 55,
+                "lvReqToEquip": 1,
+                "Class": ClassTypeEnum.All,
+                "Weapon_Power": 15,
+                "STR": 12,
+                "AGI": 12,
+                "WIS": 12,
+                "LUK": 12,
+                "Defence": 30,
+                "miscUp1": "50% Xp From Monsters",
+                "miscUp2": "50% Skill Exp",
+                "Upgrade_Slots_Left": 0,
+                "Skill": "",
+                "Skill_Power": 0
+            }),
         new BaseItemBase("StampA1", <StampItemModel>{
                 "internalName": "StampA1",
                 "displayName": "Sword Stamp",

@@ -51,7 +51,7 @@ from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
 newV = IdleonReader("184", True)
-oldV = IdleonReader("183", True)
+oldV = IdleonReader("183b", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)
@@ -109,3 +109,5 @@ GodInfoRepo.compareVersions(oldV, newV)
 IslandInfoRepo.compareVersions(oldV, newV)
 SlabItemSortRepo.compareVersions(oldV, newV)
 GamingSuperbitsRepo.compareVersions(oldV, newV)
+
+# CompanionRepo.compareVersions(oldV, newV)

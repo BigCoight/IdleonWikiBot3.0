@@ -254,9 +254,9 @@ export const initMapDataRepo = () => {
                 "portalRequirements": [0]
             }),
         new MapDataBase(41, <MapDataModel>{
-                "enemy": "Z",
+                "enemy": "Nothing",
                 "world": "Blunder Hills",
-                "map": <MapNameModel>{"intName": "Z", "name": "Z", "id": 41},
+                "map": <MapNameModel>{"intName": "GrasslandsF", "name": "Companion Park", "id": 41},
                 "portalRequirements": [0]
             }),
         new MapDataBase(42, <MapDataModel>{
@@ -694,7 +694,7 @@ export const initMapDataRepo = () => {
         new MapDataBase(114, <MapDataModel>{
                 "enemy": "eye",
                 "world": "Frostbite Tundra",
-                "map": <MapNameModel>{"intName": "ySnowCBOSS", "name": "Eycicles's Nest", "id": 114},
+                "map": <MapNameModel>{"intName": "ySnowCBOSS", "name": "Chizoar's Cavern", "id": 114},
                 "portalRequirements": [1000]
             }),
         new MapDataBase(115, <MapDataModel>{

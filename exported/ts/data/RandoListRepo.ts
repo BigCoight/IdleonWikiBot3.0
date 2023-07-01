@@ -859,7 +859,9 @@ export const initRandoListRepo = () => {
                     "ObolFrag_x1.png",
                     "PremiumGem_x1.png",
                     "PachAcc.png",
-                    "Libz.png"
+                    "Libz.png",
+                    "Blank.png",
+                    "Key5_x1.png"
                 ]
             }),
         new RandoListBase(26, <RandoListModel>{
@@ -1861,10 +1863,10 @@ export const initRandoListRepo = () => {
             }),
         new RandoListBase(61, <RandoListModel>{
                 "elements": [
-                    "Companions_v1.85",
-                    "*Visit_the_Doggy_in_World_1_to_start_your_Companion_collection!_@_*Each_week,_you_can_claim_another_FREE_companion!_@_*You_can_assign_your_companion_to_follow_you_everywhere,_just_press_the_Select_Follower_button_within_the_Manage_section!_@_*You_can_also_buy_companions_using_Crystals,_and_TRADE_these_with_other_players_soon!_@_*This_will_be_genuine_trading,_so_free_companions_are_untradeable_so_people_can't_tank_the_economy_by_creating_new_accounts._@_*You_can_now_unlink_from_Divinities_twice_per_week,_totally_for_free.",
-                    "*Visitez_le_chien_dans_le_monde_1_pour_commencer_votre_collection_de_compagnons_!_@_*Chaque_semaine,_vous_pouvez_réclamer_un_autre_compagnon_GRATUIT_!_@_*Vous_pouvez_désigner_votre_compagnon_pour_qu'il_vous_suive_partout,_appuyez_simplement_sur_le_bouton_Sélectionner_un_suiveur_dans_la_section_Gérer_!_@_*Vous_pouvez_également_acheter_des_compagnons_en_utilisant_des_cristaux_et_les_ÉCHANGER_avec_d'autres_joueurs_bientôt_!_@_*Il_s'agira_d'un_véritable_échange,_donc_les_compagnons_gratuits_ne_peuvent_pas_être_échangés,_de_sorte_que_les_gens_ne_peuvent_pas_faire_chuter_l'économie_en_créant_de_nouveaux_comptes._@_*Vous_pouvez_maintenant_vous_déconnecter_de_Divinities_deux_fois_par_semaine,_totalement_gratuitement.",
-                    "*Besuchen_Sie_das_Doggy_in_Welt_1,_um_Ihre_Companion-Sammlung_zu_starten!_@_*Jede_Woche_kannst_du_einen_weiteren_KOSTENLOSEN_Begleiter_beanspruchen!_@_*Sie_können_Ihren_Begleiter_damit_beauftragen,_Ihnen_überallhin_zu_folgen._Klicken_Sie_dazu_einfach_im_Abschnitt_'Verwalten'_auf_die_Schaltfläche_'Follower_auswählen'!_@_*Du_kannst_Gefährten_auch_mit_Kristallen_kaufen_und_diese_bald_mit_anderen_Spielern_HANDELN!_@_*Dies_wird_ein_echter_Handel_sein,_daher_sind_kostenlose_Begleiter_nicht_handelbar,_sodass_die_Leute_die_Wirtschaft_nicht_durch_die_Erstellung_neuer_Konten_ankurbeln_können._@_*Sie_können_jetzt_zweimal_pro_Woche_die_Verbindung_zu_Divinities_aufheben,_völlig_kostenlos."
+                    "Kattlekruk_Boss_v1.86",
+                    "*Kattlekruk's_Volcano_at_the_end_of_World_5_has_been_opened!_Enter_using_the_Boss_Keys_added_to_drop_tables_of_Biggole_Moles,_Crawlers,_and_Tremor_Wurms!_@_*Craft_4_new_Kattlekruk_Weapons,_the_'Cracked_Skull_Destroyer',_'Skull_Lance',_'Spine_Tingler_Sniper',_and_'Staff_of_the_Undead_Plague'_recipes_are_unlocked_though_W5_Merit_Shop_in_Tasks_@_*Craft_4_new_Kattlekruk_Boss_Armor,_recipes_unlocked_though_W5_Merit_Shop_in_Tasks._@_*Added_3_new_boss_exclusive_items_to_Kattlekruk's_Drop_Table,_including_a_new_Obol,_new_Pendant,_and_new_Cape_@_*A_new_Trophy_has_been_added_for_completing_all_of_the_new_'Tired_Mole'_NPC_quests._@_*King_Doot_companion_is_now_guaranteed_if_not_found_within_200_treats._This_works_retroactively_for_those_this_would_have_previously_applied_to!_@_*Blood_Berserker's_Combustion_attack_no_longer_ends_the_Inflame_Status,_and_had_its_cooldown_reduced_from_40s_to_20s",
+                    "*Le_volcan_de_Kattlekruk_à_la_fin_du_monde_5_a_été_ouvert_!_Entrez_en_utilisant_les_clés_de_boss_ajoutées_aux_tables_de_butin_de_Biggole_Moles,_Crawlers_et_Tremor_Wurms_!_@_*Craft_4_nouvelles_armes_Kattlekruk,_le_'Cracked_Skull_Destroyer',_Les_recettes_Lance',_'Spine_Tingler_Sniper'_et_'Staff_of_the_Undead_Plague'_sont_déverrouillées_via_W5_Merit_Shop_in_Tasks_@_*Craft_4_new_Kattlekruk_Boss_Armor,_recettes_déverrouillées_via_W5_Merit_Shop_in_Tasks_@_*Ajout_de_3_nouveaux_boss_des_objets_exclusifs_à_la_Drop_Table_de_Kattlekruk,_y_compris_un_nouvel_obole,_un_nouveau_pendentif_et_une_nouvelle_cape_@_*_Un_nouveau_trophée_a_été_ajouté_pour_avoir_terminé_toutes_les_nouvelles_quêtes_de_PNJ_'Taupe_fatiguée'._@_*_Le_compagnon_King_Doot_est_désormais_garanti_s'il_n'est_pas_trouvé_dans_les_200_friandises._Cela_fonctionne_rétroactivement_pour_ceux_auxquels_cela_s'appliquerait_auparavant_!_@_*_L'attaque_de_combustion_du_Berserker_sanguinaire_ne_met_plus_fin_au_statut_d'inflammation_et_son_temps_de_recharge_a_été_réduit_de_40_s_à_20_s",
+                    "*Kattlekruks_Vulkan_am_Ende_von_Welt_5_wurde_geöffnet!_Betreten_Sie_ihn_mit_den_Boss-Schlüsseln,_die_zu_den_Drop-Tischen_von_Biggole_Moles,_Crawlers_und_Tremor_Wurms_hinzugefügt_wurden!_@_*Stellen_Sie_4_neue_Kattlekruk-Waffen_her,_den__'Cracked_Skull_Destroyer_',_den__'Totenkopf_'._Die_Rezepte__'Lance_',__'Spine_Tingler_Sniper_'_und__'Stab_der_Undead_Plague_'_werden_im_W5-Merit-Shop_in_den_Aufgaben_freigeschaltet._@_*Stellen_Sie_4_neue_Kattlekruk-Boss-Rüstung_her._Die_Rezepte_sind_im_W5-Merit-Shop_in_den_Aufgaben_freigeschaltet._@_*3_neue_Bosse_hinzugefügt_Exklusive_Gegenstände_für_Kattlekruks_Drop-Tisch,_darunter_ein_neuer_Obol,_ein_neuer_Anhänger_und_ein_neuer_Umhang_@_*Für_den_Abschluss_aller_neuen__'Müder_Maulwurf_'-NPC-Quests_wurde_eine_neue_Trophäe_hinzugefügt._@_*Der_Begleiter_von_King_Doot_ist_jetzt_garantiert,_wenn_er_nicht_gefunden_wird_innerhalb_von_200_Leckereien._Dies_funktioniert_rückwirkend_für_diejenigen,_auf_die_dies_zuvor_zugetroffen_hätte!_@_*Der_Verbrennungsangriff_des_Blutberserkers_beendet_nicht_mehr_den_Inflame-Status_und_seine_Abklingzeit_wurde_von_40_auf_20_Sek._verringert"
                 ]
             }),
         new RandoListBase(62, <RandoListModel>{
@@ -2149,8 +2151,26 @@ export const initRandoListRepo = () => {
                     "330"
                 ]
             }),
-        new RandoListBase(79, <RandoListModel>{"elements": ["Slargon", "Pirate_Porkchop", "Muhmuguh", "Poigu", "Lava_Larry"]}),
-        new RandoListBase(80, <RandoListModel>{"elements": ["Slargon", "Pirate_Porkchop", "Muhmuguh", "Poigu", "Lava_Larry"]}),
+        new RandoListBase(79, <RandoListModel>{
+                "elements": [
+                    "Slargon",
+                    "Pirate_Porkchop",
+                    "Muhmuguh",
+                    "Poigu",
+                    "Lava_Larry",
+                    "Tired_Mole"
+                ]
+            }),
+        new RandoListBase(80, <RandoListModel>{
+                "elements": [
+                    "Slargon",
+                    "Pirate_Porkchop",
+                    "Muhmuguh",
+                    "Poigu",
+                    "Lava_Larry",
+                    "Tired_Mole"
+                ]
+            }),
         new RandoListBase(81, <RandoListModel>{"elements": ["Meteor", "rocky", "iceknight", "snakeZ", "frogGR"]}),
         new RandoListBase(82, <RandoListModel>{"elements": ["EquipmentHats78", "EquipmentRingsChat10"]}),
         new RandoListBase(83, <RandoListModel>{"elements": ["EquipmentToolsHatchet11"]}),

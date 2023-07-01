@@ -14,6 +14,7 @@ from repositories.item.VendorRepo import VendorRepo
 from repositories.misc.AchievementRepo import AchievementRepo
 from repositories.misc.CardSetRepo import CardSetRepo
 from repositories.misc.ColosseumRepo import ColosseumRepo
+from repositories.misc.CompanionRepo import CompanionRepo
 from repositories.misc.ConstellationsRepo import ConstellationsRepo
 from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
@@ -50,8 +51,8 @@ from repositories.misc.world5.SlabItemSortRepo import SlabItemSortRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("184", True)
-oldV = IdleonReader("183b", True)
+newV = IdleonReader("186", True)
+oldV = IdleonReader("184", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)
@@ -110,4 +111,4 @@ IslandInfoRepo.compareVersions(oldV, newV)
 SlabItemSortRepo.compareVersions(oldV, newV)
 GamingSuperbitsRepo.compareVersions(oldV, newV)
 
-# CompanionRepo.compareVersions(oldV, newV)
+CompanionRepo.compareVersions(oldV, newV)

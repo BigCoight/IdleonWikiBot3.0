@@ -1619,9 +1619,9 @@
     "FillerMaterial": {
         "intID": "FillerMaterial",
         "recipe": [{"item": "FillerMaterial", "quantity": 1}, {"item": "FillerMaterial", "quantity": 1}],
-        "levelReqToCraft": 63,
+        "levelReqToCraft": 75,
         "expGiven": 1000000,
-        "no": 32,
+        "no": 36,
         "tab": 5,
         "sellPrice": 8,
         "recipeFrom": [],
@@ -8368,14 +8368,14 @@
         "intID": "EquipmentPants26",
         "recipe": [
             {"item": "EquipmentPants8", "quantity": 1},
-            {"item": "LavaA4", "quantity": 10000000},
+            {"item": "LavaA4", "quantity": 1000000},
             {"item": "DreadloBar", "quantity": 1600}
         ],
         "levelReqToCraft": 67,
         "expGiven": 1000000,
         "no": 3,
         "tab": 5,
-        "sellPrice": 292500179100,
+        "sellPrice": 31500179100,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
@@ -8384,11 +8384,11 @@
                 {"indent": 1, "item": "GalaxyC4", "quantity": 333333},
                 {"indent": 1, "item": "StarfireBar", "quantity": 5000},
                 {"indent": 1, "item": "Refinery6", "quantity": 1600},
-                {"indent": 0, "item": "LavaA4", "quantity": 10000000},
+                {"indent": 0, "item": "LavaA4", "quantity": 1000000},
                 {"indent": 0, "item": "DreadloBar", "quantity": 1600}
             ],
             "detRecipeTotals": [
-                {"item": "LavaA4", "quantity": 10000000},
+                {"item": "LavaA4", "quantity": 1000000},
                 {"item": "DreadloBar", "quantity": 1600},
                 {"item": "TrollPart", "quantity": 15},
                 {"item": "GalaxyC4", "quantity": 333333},
@@ -9178,6 +9178,443 @@
                 {"indent": 0, "item": "FillerMaterial", "quantity": 1}
             ],
             "detRecipeTotals": [{"item": "FillerMaterial", "quantity": 3}]
+        }
+    },
+    "EquipmentHats83": {
+        "intID": "EquipmentHats83",
+        "recipe": [
+            {"item": "EquipmentHats77", "quantity": 1},
+            {"item": "KrukPart", "quantity": 50},
+            {"item": "KrukPart2", "quantity": 2}
+        ],
+        "levelReqToCraft": 75,
+        "expGiven": 1000000,
+        "no": 25,
+        "tab": 5,
+        "sellPrice": 26124650,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentHats77", "quantity": 1},
+                {"indent": 1, "item": "EquipmentHats74", "quantity": 1},
+                {"indent": 2, "item": "TrollPart", "quantity": 50},
+                {"indent": 2, "item": "Line3", "quantity": 3},
+                {"indent": 2, "item": "StarfireBar", "quantity": 20000},
+                {"indent": 2, "item": "Refinery6", "quantity": 4000},
+                {"indent": 1, "item": "Bug10", "quantity": 80000},
+                {"indent": 1, "item": "DreadloBar", "quantity": 2500},
+                {"indent": 0, "item": "KrukPart", "quantity": 50},
+                {"indent": 0, "item": "KrukPart2", "quantity": 2}
+            ],
+            "detRecipeTotals": [
+                {"item": "KrukPart", "quantity": 50},
+                {"item": "KrukPart2", "quantity": 2},
+                {"item": "Bug10", "quantity": 80000},
+                {"item": "DreadloBar", "quantity": 2500},
+                {"item": "TrollPart", "quantity": 50},
+                {"item": "Line3", "quantity": 3},
+                {"item": "StarfireBar", "quantity": 20000},
+                {"item": "Refinery6", "quantity": 4000}
+            ]
+        }
+    },
+    "EquipmentShirts36": {
+        "intID": "EquipmentShirts36",
+        "recipe": [{"item": "EquipmentShirts35", "quantity": 1}, {"item": "KrukPart", "quantity": 30}],
+        "levelReqToCraft": 74,
+        "expGiven": 1000000,
+        "no": 26,
+        "tab": 5,
+        "sellPrice": 19800421200,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentShirts35", "quantity": 1},
+                {"indent": 1, "item": "EquipmentShirts34", "quantity": 1},
+                {"indent": 2, "item": "TrollPart", "quantity": 25},
+                {"indent": 2, "item": "GalaxyC1b", "quantity": 25},
+                {"indent": 2, "item": "StarfireBar", "quantity": 10000},
+                {"indent": 2, "item": "Refinery6", "quantity": 2800},
+                {"indent": 1, "item": "LavaA3", "quantity": 900000},
+                {"indent": 1, "item": "DreadloBar", "quantity": 1200},
+                {"indent": 0, "item": "KrukPart", "quantity": 30}
+            ],
+            "detRecipeTotals": [
+                {"item": "KrukPart", "quantity": 30},
+                {"item": "LavaA3", "quantity": 900000},
+                {"item": "DreadloBar", "quantity": 1200},
+                {"item": "TrollPart", "quantity": 25},
+                {"item": "GalaxyC1b", "quantity": 25},
+                {"item": "StarfireBar", "quantity": 10000},
+                {"item": "Refinery6", "quantity": 2800}
+            ]
+        }
+    },
+    "EquipmentPants27": {
+        "intID": "EquipmentPants27",
+        "recipe": [{"item": "EquipmentPants26", "quantity": 1}, {"item": "KrukPart", "quantity": 20}],
+        "levelReqToCraft": 73,
+        "expGiven": 1000000,
+        "no": 27,
+        "tab": 5,
+        "sellPrice": 31500199100,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentPants26", "quantity": 1},
+                {"indent": 1, "item": "EquipmentPants8", "quantity": 1},
+                {"indent": 2, "item": "TrollPart", "quantity": 15},
+                {"indent": 2, "item": "GalaxyC4", "quantity": 333333},
+                {"indent": 2, "item": "StarfireBar", "quantity": 5000},
+                {"indent": 2, "item": "Refinery6", "quantity": 1600},
+                {"indent": 1, "item": "LavaA4", "quantity": 1000000},
+                {"indent": 1, "item": "DreadloBar", "quantity": 1600},
+                {"indent": 0, "item": "KrukPart", "quantity": 20}
+            ],
+            "detRecipeTotals": [
+                {"item": "KrukPart", "quantity": 20},
+                {"item": "LavaA4", "quantity": 1000000},
+                {"item": "DreadloBar", "quantity": 1600},
+                {"item": "TrollPart", "quantity": 15},
+                {"item": "GalaxyC4", "quantity": 333333},
+                {"item": "StarfireBar", "quantity": 5000},
+                {"item": "Refinery6", "quantity": 1600}
+            ]
+        }
+    },
+    "EquipmentShoes36": {
+        "intID": "EquipmentShoes36",
+        "recipe": [{"item": "EquipmentShoes35", "quantity": 1}, {"item": "KrukPart", "quantity": 10}],
+        "levelReqToCraft": 72,
+        "expGiven": 1000000,
+        "no": 28,
+        "tab": 5,
+        "sellPrice": 69600124000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentShoes35", "quantity": 1},
+                {"indent": 1, "item": "EquipmentShoes34", "quantity": 1},
+                {"indent": 2, "item": "EquipmentShoes30", "quantity": 8},
+                {"indent": 2, "item": "TrollPart", "quantity": 10},
+                {"indent": 2, "item": "StarfireBar", "quantity": 3000},
+                {"indent": 2, "item": "Refinery6", "quantity": 750},
+                {"indent": 1, "item": "LavaB3", "quantity": 1200000},
+                {"indent": 1, "item": "DreadloBar", "quantity": 2000},
+                {"indent": 0, "item": "KrukPart", "quantity": 10}
+            ],
+            "detRecipeTotals": [
+                {"item": "KrukPart", "quantity": 10},
+                {"item": "LavaB3", "quantity": 1200000},
+                {"item": "DreadloBar", "quantity": 2000},
+                {"item": "EquipmentShoes30", "quantity": 8},
+                {"item": "TrollPart", "quantity": 10},
+                {"item": "StarfireBar", "quantity": 3000},
+                {"item": "Refinery6", "quantity": 750}
+            ]
+        }
+    },
+    "EquipmentPunching9": {
+        "intID": "EquipmentPunching9",
+        "recipe": [
+            {"item": "EquipmentPunching8", "quantity": 1},
+            {"item": "KrukPart", "quantity": 100},
+            {"item": "KrukPart2", "quantity": 4},
+            {"item": "LavaC2", "quantity": 20000000}
+        ],
+        "levelReqToCraft": 80,
+        "expGiven": 1000000,
+        "no": 29,
+        "tab": 5,
+        "sellPrice": 3000251327900,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentPunching8", "quantity": 1},
+                {"indent": 1, "item": "EquipmentPunching7", "quantity": 1},
+                {"indent": 2, "item": "EquipmentPunching6", "quantity": 1},
+                {"indent": 3, "item": "EquipmentPunching5", "quantity": 1},
+                {"indent": 4, "item": "SnowA2a", "quantity": 100},
+                {"indent": 4, "item": "Critter5A", "quantity": 50},
+                {"indent": 4, "item": "Quest36", "quantity": 10},
+                {"indent": 5, "item": "Quest37", "quantity": 10},
+                {"indent": 5, "item": "GoldBar", "quantity": 800},
+                {"indent": 5, "item": "DesertC2b", "quantity": 50},
+                {"indent": 4, "item": "PureWater2", "quantity": 15},
+                {"indent": 3, "item": "CraftMat12", "quantity": 50000},
+                {"indent": 3, "item": "Refinery4", "quantity": 2000},
+                {"indent": 2, "item": "StarfireBar", "quantity": 50000},
+                {"indent": 2, "item": "Refinery6", "quantity": 5000},
+                {"indent": 1, "item": "FoodG10", "quantity": 1000},
+                {"indent": 1, "item": "LavaA5b", "quantity": 500},
+                {"indent": 0, "item": "KrukPart", "quantity": 100},
+                {"indent": 0, "item": "KrukPart2", "quantity": 4},
+                {"indent": 0, "item": "LavaC2", "quantity": 20000000}
+            ],
+            "detRecipeTotals": [
+                {"item": "KrukPart", "quantity": 100},
+                {"item": "KrukPart2", "quantity": 4},
+                {"item": "LavaC2", "quantity": 20000000},
+                {"item": "FoodG10", "quantity": 1000},
+                {"item": "LavaA5b", "quantity": 500},
+                {"item": "StarfireBar", "quantity": 50000},
+                {"item": "Refinery6", "quantity": 5000},
+                {"item": "CraftMat12", "quantity": 50000},
+                {"item": "Refinery4", "quantity": 2000},
+                {"item": "SnowA2a", "quantity": 100},
+                {"item": "Critter5A", "quantity": 50},
+                {"item": "PureWater2", "quantity": 15},
+                {"item": "Quest37", "quantity": 10},
+                {"item": "GoldBar", "quantity": 800},
+                {"item": "DesertC2b", "quantity": 50}
+            ]
+        }
+    },
+    "EquipmentSword7": {
+        "intID": "EquipmentSword7",
+        "recipe": [
+            {"item": "EquipmentSword6", "quantity": 1},
+            {"item": "KrukPart", "quantity": 30},
+            {"item": "KrukPart2", "quantity": 4},
+            {"item": "LavaC1", "quantity": 3000000}
+        ],
+        "levelReqToCraft": 78,
+        "expGiven": 1000000,
+        "no": 30,
+        "tab": 5,
+        "sellPrice": 330186769910,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentSword6", "quantity": 1},
+                {"indent": 1, "item": "EquipmentSword5", "quantity": 1},
+                {"indent": 2, "item": "EquipmentSword4", "quantity": 1},
+                {"indent": 3, "item": "EquipmentSword3", "quantity": 1},
+                {"indent": 4, "item": "EquipmentSword2", "quantity": 1},
+                {"indent": 5, "item": "EquipmentSword1", "quantity": 1},
+                {"indent": 6, "item": "DesertA3b", "quantity": 3},
+                {"indent": 6, "item": "CraftMat9", "quantity": 2500},
+                {"indent": 6, "item": "TestObj3", "quantity": 1},
+                {"indent": 7, "item": "ForestTree", "quantity": 1250},
+                {"indent": 7, "item": "TestObj7", "quantity": 1},
+                {"indent": 8, "item": "Jungle1", "quantity": 125},
+                {"indent": 8, "item": "CraftMat6", "quantity": 125},
+                {"indent": 7, "item": "PureWater", "quantity": 8},
+                {"indent": 5, "item": "SnowA2", "quantity": 25000},
+                {"indent": 5, "item": "Refinery1", "quantity": 150},
+                {"indent": 4, "item": "SnowC4a", "quantity": 10},
+                {"indent": 4, "item": "Critter6A", "quantity": 15},
+                {"indent": 4, "item": "PureWater2", "quantity": 7},
+                {"indent": 3, "item": "AlienTree", "quantity": 90000},
+                {"indent": 3, "item": "Refinery4", "quantity": 500},
+                {"indent": 2, "item": "Fish8", "quantity": 200000},
+                {"indent": 2, "item": "StarfireBar", "quantity": 3000},
+                {"indent": 2, "item": "Refinery6", "quantity": 750},
+                {"indent": 1, "item": "Tree10", "quantity": 500000},
+                {"indent": 1, "item": "LavaA5b", "quantity": 100},
+                {"indent": 0, "item": "KrukPart", "quantity": 30},
+                {"indent": 0, "item": "KrukPart2", "quantity": 4},
+                {"indent": 0, "item": "LavaC1", "quantity": 3000000}
+            ],
+            "detRecipeTotals": [
+                {"item": "KrukPart", "quantity": 30},
+                {"item": "KrukPart2", "quantity": 4},
+                {"item": "LavaC1", "quantity": 3000000},
+                {"item": "Tree10", "quantity": 500000},
+                {"item": "LavaA5b", "quantity": 100},
+                {"item": "Fish8", "quantity": 200000},
+                {"item": "StarfireBar", "quantity": 3000},
+                {"item": "Refinery6", "quantity": 750},
+                {"item": "AlienTree", "quantity": 90000},
+                {"item": "Refinery4", "quantity": 500},
+                {"item": "SnowC4a", "quantity": 10},
+                {"item": "Critter6A", "quantity": 15},
+                {"item": "PureWater2", "quantity": 7},
+                {"item": "SnowA2", "quantity": 25000},
+                {"item": "Refinery1", "quantity": 150},
+                {"item": "DesertA3b", "quantity": 3},
+                {"item": "CraftMat9", "quantity": 2500},
+                {"item": "ForestTree", "quantity": 1250},
+                {"item": "PureWater", "quantity": 8},
+                {"item": "Jungle1", "quantity": 125},
+                {"item": "CraftMat6", "quantity": 125}
+            ]
+        }
+    },
+    "EquipmentBows12": {
+        "intID": "EquipmentBows12",
+        "recipe": [
+            {"item": "EquipmentBows11", "quantity": 1},
+            {"item": "KrukPart", "quantity": 30},
+            {"item": "KrukPart2", "quantity": 4},
+            {"item": "LavaB6", "quantity": 4000000}
+        ],
+        "levelReqToCraft": 78,
+        "expGiven": 1000000,
+        "no": 31,
+        "tab": 5,
+        "sellPrice": 360175880000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentBows11", "quantity": 1},
+                {"indent": 1, "item": "EquipmentBows10", "quantity": 1},
+                {"indent": 2, "item": "EquipmentBows9", "quantity": 1},
+                {"indent": 3, "item": "EquipmentBows8", "quantity": 1},
+                {"indent": 4, "item": "EquipmentBows7", "quantity": 1},
+                {"indent": 5, "item": "EquipmentBows6", "quantity": 1},
+                {"indent": 6, "item": "EquipmentBows5", "quantity": 1},
+                {"indent": 7, "item": "EquipmentBows3", "quantity": 1},
+                {"indent": 8, "item": "Jungle1", "quantity": 125},
+                {"indent": 8, "item": "BirchTree", "quantity": 250},
+                {"indent": 7, "item": "GoldBar", "quantity": 250},
+                {"indent": 7, "item": "PureWater", "quantity": 8},
+                {"indent": 6, "item": "TreeInterior1b", "quantity": 3},
+                {"indent": 6, "item": "Fish4", "quantity": 1400},
+                {"indent": 5, "item": "Soul1", "quantity": 7000},
+                {"indent": 5, "item": "Refinery1", "quantity": 150},
+                {"indent": 4, "item": "SnowC4a", "quantity": 4},
+                {"indent": 4, "item": "Refinery3", "quantity": 350},
+                {"indent": 4, "item": "PureWater2", "quantity": 7},
+                {"indent": 3, "item": "Fish5", "quantity": 110000},
+                {"indent": 3, "item": "Refinery4", "quantity": 500},
+                {"indent": 2, "item": "Critter10A", "quantity": 10},
+                {"indent": 2, "item": "StarfireBar", "quantity": 3000},
+                {"indent": 2, "item": "Refinery6", "quantity": 750},
+                {"indent": 1, "item": "Tree10", "quantity": 500000},
+                {"indent": 1, "item": "LavaA5b", "quantity": 100},
+                {"indent": 0, "item": "KrukPart", "quantity": 30},
+                {"indent": 0, "item": "KrukPart2", "quantity": 4},
+                {"indent": 0, "item": "LavaB6", "quantity": 4000000}
+            ],
+            "detRecipeTotals": [
+                {"item": "KrukPart", "quantity": 30},
+                {"item": "KrukPart2", "quantity": 4},
+                {"item": "LavaB6", "quantity": 4000000},
+                {"item": "Tree10", "quantity": 500000},
+                {"item": "LavaA5b", "quantity": 100},
+                {"item": "Critter10A", "quantity": 10},
+                {"item": "StarfireBar", "quantity": 3000},
+                {"item": "Refinery6", "quantity": 750},
+                {"item": "Fish5", "quantity": 110000},
+                {"item": "Refinery4", "quantity": 500},
+                {"item": "SnowC4a", "quantity": 4},
+                {"item": "Refinery3", "quantity": 350},
+                {"item": "PureWater2", "quantity": 7},
+                {"item": "Soul1", "quantity": 7000},
+                {"item": "Refinery1", "quantity": 150},
+                {"item": "TreeInterior1b", "quantity": 3},
+                {"item": "Fish4", "quantity": 1400},
+                {"item": "GoldBar", "quantity": 250},
+                {"item": "PureWater", "quantity": 8},
+                {"item": "Jungle1", "quantity": 125},
+                {"item": "BirchTree", "quantity": 250}
+            ]
+        }
+    },
+    "EquipmentWands11": {
+        "intID": "EquipmentWands11",
+        "recipe": [
+            {"item": "EquipmentWands10", "quantity": 1},
+            {"item": "KrukPart", "quantity": 30},
+            {"item": "KrukPart2", "quantity": 4},
+            {"item": "LavaB4", "quantity": 5000000}
+        ],
+        "levelReqToCraft": 78,
+        "expGiven": 1000000,
+        "no": 32,
+        "tab": 5,
+        "sellPrice": 350178921200,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentWands10", "quantity": 1},
+                {"indent": 1, "item": "EquipmentWands9", "quantity": 1},
+                {"indent": 2, "item": "EquipmentWands8", "quantity": 1},
+                {"indent": 3, "item": "EquipmentWands7", "quantity": 1},
+                {"indent": 4, "item": "EquipmentWands3", "quantity": 1},
+                {"indent": 5, "item": "EquipmentWands6", "quantity": 1},
+                {"indent": 6, "item": "EquipmentWands5", "quantity": 1},
+                {"indent": 7, "item": "EquipmentWands2", "quantity": 1},
+                {"indent": 8, "item": "Jungle1", "quantity": 125},
+                {"indent": 8, "item": "CopperBar", "quantity": 100},
+                {"indent": 7, "item": "CraftMat7", "quantity": 1000},
+                {"indent": 7, "item": "PureWater", "quantity": 8},
+                {"indent": 6, "item": "Sewers1b", "quantity": 3},
+                {"indent": 6, "item": "Bug4", "quantity": 4000},
+                {"indent": 5, "item": "SaharanFoal", "quantity": 10000},
+                {"indent": 5, "item": "Refinery1", "quantity": 150},
+                {"indent": 4, "item": "SnowC4a", "quantity": 4},
+                {"indent": 4, "item": "Soul4", "quantity": 5000},
+                {"indent": 4, "item": "PureWater2", "quantity": 7},
+                {"indent": 3, "item": "Critter7", "quantity": 50000},
+                {"indent": 3, "item": "Refinery4", "quantity": 500},
+                {"indent": 2, "item": "Soul5", "quantity": 15000},
+                {"indent": 2, "item": "StarfireBar", "quantity": 3000},
+                {"indent": 2, "item": "Refinery6", "quantity": 800},
+                {"indent": 1, "item": "Tree10", "quantity": 500000},
+                {"indent": 1, "item": "LavaA5b", "quantity": 100},
+                {"indent": 0, "item": "KrukPart", "quantity": 30},
+                {"indent": 0, "item": "KrukPart2", "quantity": 4},
+                {"indent": 0, "item": "LavaB4", "quantity": 5000000}
+            ],
+            "detRecipeTotals": [
+                {"item": "KrukPart", "quantity": 30},
+                {"item": "KrukPart2", "quantity": 4},
+                {"item": "LavaB4", "quantity": 5000000},
+                {"item": "Tree10", "quantity": 500000},
+                {"item": "LavaA5b", "quantity": 100},
+                {"item": "Soul5", "quantity": 15000},
+                {"item": "StarfireBar", "quantity": 3000},
+                {"item": "Refinery6", "quantity": 800},
+                {"item": "Critter7", "quantity": 50000},
+                {"item": "Refinery4", "quantity": 500},
+                {"item": "SnowC4a", "quantity": 4},
+                {"item": "Soul4", "quantity": 5000},
+                {"item": "PureWater2", "quantity": 7},
+                {"item": "SaharanFoal", "quantity": 10000},
+                {"item": "Refinery1", "quantity": 150},
+                {"item": "Sewers1b", "quantity": 3},
+                {"item": "Bug4", "quantity": 4000},
+                {"item": "CraftMat7", "quantity": 1000},
+                {"item": "PureWater", "quantity": 8},
+                {"item": "Jungle1", "quantity": 125},
+                {"item": "CopperBar", "quantity": 100}
+            ]
+        }
+    },
+    "EquipmentPendant30": {
+        "intID": "EquipmentPendant30",
+        "recipe": [
+            {"item": "EquipmentPendant25", "quantity": 1},
+            {"item": "EquipmentPendant29", "quantity": 1},
+            {"item": "KrukPart2", "quantity": 10},
+            {"item": "Trophy2", "quantity": 2}
+        ],
+        "levelReqToCraft": 80,
+        "expGiven": 1000000,
+        "no": 33,
+        "tab": 5,
+        "sellPrice": 11601,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentPendant25", "quantity": 1},
+                {"indent": 1, "item": "EquipmentPendant24", "quantity": 1},
+                {"indent": 1, "item": "Chiz1", "quantity": 15},
+                {"indent": 1, "item": "Chiz0", "quantity": 30},
+                {"indent": 0, "item": "EquipmentPendant29", "quantity": 1},
+                {"indent": 0, "item": "KrukPart2", "quantity": 10},
+                {"indent": 0, "item": "Trophy2", "quantity": 2}
+            ],
+            "detRecipeTotals": [
+                {"item": "EquipmentPendant29", "quantity": 1},
+                {"item": "KrukPart2", "quantity": 10},
+                {"item": "Trophy2", "quantity": 2},
+                {"item": "EquipmentPendant24", "quantity": 1},
+                {"item": "Chiz1", "quantity": 15},
+                {"item": "Chiz0", "quantity": 30}
+            ]
         }
     }
 }

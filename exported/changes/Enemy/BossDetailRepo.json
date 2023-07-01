@@ -1,1 +1,50 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "Boss5C": {
+            "health": 1000000000,
+            "defence": 25,
+            "exp": 2000000000,
+            "keys": 70,
+            "attacks": [
+                {"name": "Attack1", "damage": 18000},
+                {"name": "Attack2", "damage": 40000},
+                {"name": "Attack3", "damage": 20000},
+                {"name": "Attack4", "damage": 15000},
+                {"name": "Attack5", "damage": 25000},
+                {"name": "Attack6", "damage": 50000},
+                {"name": "Attack7", "damage": 33000}
+            ]
+        },
+        "Boss5B": {
+            "health": 1000000000,
+            "defence": 5,
+            "exp": 700000000,
+            "keys": 5,
+            "attacks": [
+                {"name": "Attack1", "damage": 1800},
+                {"name": "Attack2", "damage": 4000},
+                {"name": "Attack3", "damage": 2000},
+                {"name": "Attack4", "damage": 1500},
+                {"name": "Attack5", "damage": 2500},
+                {"name": "Attack6", "damage": 5000},
+                {"name": "Attack7", "damage": 3300}
+            ]
+        },
+        "Boss5A": {
+            "health": 1000000000,
+            "defence": 2500,
+            "exp": 20000000,
+            "keys": 1,
+            "attacks": [
+                {"name": "Attack1", "damage": 1000},
+                {"name": "Attack2", "damage": 1500},
+                {"name": "Attack3", "damage": 800},
+                {"name": "Attack4", "damage": 450},
+                {"name": "Attack5", "damage": 5000},
+                {"name": "Attack6", "damage": 10000},
+                {"name": "Attack7", "damage": 400}
+            ]
+        }
+    },
+    "changes": {"Boss4B": {"exp": [200000, 30000000]}, "Boss4C": {"exp": [1000000, 1000000000]}}
+}

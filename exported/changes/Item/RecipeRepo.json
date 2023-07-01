@@ -1,1 +1,112 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "EquipmentWands11": {
+            "recipe": [
+                {"item": "EquipmentWands10", "quantity": 1},
+                {"item": "KrukPart", "quantity": 30},
+                {"item": "KrukPart2", "quantity": 4},
+                {"item": "LavaB4", "quantity": 5000000}
+            ],
+            "levelReqToCraft": 78,
+            "expGiven": 1000000,
+            "no": 32,
+            "tab": 5,
+            "sellPrice": 350178921200
+        },
+        "EquipmentBows12": {
+            "recipe": [
+                {"item": "EquipmentBows11", "quantity": 1},
+                {"item": "KrukPart", "quantity": 30},
+                {"item": "KrukPart2", "quantity": 4},
+                {"item": "LavaB6", "quantity": 4000000}
+            ],
+            "levelReqToCraft": 78,
+            "expGiven": 1000000,
+            "no": 31,
+            "tab": 5,
+            "sellPrice": 360175880000
+        },
+        "EquipmentPants27": {
+            "recipe": [{"item": "EquipmentPants26", "quantity": 1}, {"item": "KrukPart", "quantity": 20}],
+            "levelReqToCraft": 73,
+            "expGiven": 1000000,
+            "no": 27,
+            "tab": 5,
+            "sellPrice": 31500199100
+        },
+        "EquipmentShirts36": {
+            "recipe": [{"item": "EquipmentShirts35", "quantity": 1}, {"item": "KrukPart", "quantity": 30}],
+            "levelReqToCraft": 74,
+            "expGiven": 1000000,
+            "no": 26,
+            "tab": 5,
+            "sellPrice": 19800421200
+        },
+        "EquipmentPendant30": {
+            "recipe": [
+                {"item": "EquipmentPendant25", "quantity": 1},
+                {"item": "EquipmentPendant29", "quantity": 1},
+                {"item": "KrukPart2", "quantity": 10},
+                {"item": "Trophy2", "quantity": 2}
+            ],
+            "levelReqToCraft": 80,
+            "expGiven": 1000000,
+            "no": 33,
+            "tab": 5,
+            "sellPrice": 11601
+        },
+        "EquipmentShoes36": {
+            "recipe": [{"item": "EquipmentShoes35", "quantity": 1}, {"item": "KrukPart", "quantity": 10}],
+            "levelReqToCraft": 72,
+            "expGiven": 1000000,
+            "no": 28,
+            "tab": 5,
+            "sellPrice": 69600124000
+        },
+        "EquipmentPunching9": {
+            "recipe": [
+                {"item": "EquipmentPunching8", "quantity": 1},
+                {"item": "KrukPart", "quantity": 100},
+                {"item": "KrukPart2", "quantity": 4},
+                {"item": "LavaC2", "quantity": 20000000}
+            ],
+            "levelReqToCraft": 80,
+            "expGiven": 1000000,
+            "no": 29,
+            "tab": 5,
+            "sellPrice": 3000251327900
+        },
+        "EquipmentSword7": {
+            "recipe": [
+                {"item": "EquipmentSword6", "quantity": 1},
+                {"item": "KrukPart", "quantity": 30},
+                {"item": "KrukPart2", "quantity": 4},
+                {"item": "LavaC1", "quantity": 3000000}
+            ],
+            "levelReqToCraft": 78,
+            "expGiven": 1000000,
+            "no": 30,
+            "tab": 5,
+            "sellPrice": 330186769910
+        },
+        "EquipmentHats83": {
+            "recipe": [
+                {"item": "EquipmentHats77", "quantity": 1},
+                {"item": "KrukPart", "quantity": 50},
+                {"item": "KrukPart2", "quantity": 2}
+            ],
+            "levelReqToCraft": 75,
+            "expGiven": 1000000,
+            "no": 25,
+            "tab": 5,
+            "sellPrice": 26124650
+        }
+    },
+    "changes": {
+        "FillerMaterial": {"levelReqToCraft": [63, 75], "no": [32, 36]},
+        "EquipmentPants26": {
+            "recipe": {"1": [{"item": "LavaA4", "quantity": 10000000}, {"item": "LavaA4", "quantity": 1000000}]},
+            "sellPrice": [292500179100, 31500179100]
+        }
+    }
+}

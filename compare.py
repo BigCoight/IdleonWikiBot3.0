@@ -26,6 +26,7 @@ from repositories.misc.world2.FishPoolRepo import FishPoolRepo
 from repositories.misc.world2.PostOfficeRepo import PostOfficeRepo
 from repositories.misc.world2.PostOfficeUpgradesRepo import PostOfficeUpgradesRepo
 from repositories.misc.world2.SigilRepo import SigilRepo
+from repositories.misc.world3.AtomColliderRepo import AtomColliderRepo
 from repositories.misc.world3.BuildingRepo import BuildingRepo
 from repositories.misc.world3.PrayerRepo import PrayerRepo
 from repositories.misc.world3.ShrineRepo import ShrineRepo
@@ -51,8 +52,8 @@ from repositories.misc.world5.SlabItemSortRepo import SlabItemSortRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("186", True)
-oldV = IdleonReader("184", True)
+newV = IdleonReader("187", True)
+oldV = IdleonReader("186", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)
@@ -112,3 +113,5 @@ SlabItemSortRepo.compareVersions(oldV, newV)
 GamingSuperbitsRepo.compareVersions(oldV, newV)
 
 CompanionRepo.compareVersions(oldV, newV)
+
+AtomColliderRepo.compareVersions(oldV, newV)

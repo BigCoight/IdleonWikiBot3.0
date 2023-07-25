@@ -1,10 +1,9 @@
 from helpers.CodeReader import IdleonReader
 from repositories.item.sources.ItemNoteRepo import ItemNoteRepo
+from repositories.item.sources.WikiSetRepo import WikiSetRepo
 
-idleonReader = IdleonReader("184", steam = True)
+idleonReader = IdleonReader("187", steam = True)
 codeReader = idleonReader.codeReader
 
-# NpcHeadRepo.initialise(codeReader, True)
-# EnemyNoteRepo.initialise(codeReader, True)
-# NpcNoteRepo.initialise(codeReader, True)
+WikiSetRepo.initialise(codeReader, True)
 ItemNoteRepo.initialise(codeReader, True)

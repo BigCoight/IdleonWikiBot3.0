@@ -3,6 +3,7 @@ from typing import Optional, List
 from definitions.common.Note import Note
 from definitions.itemdef.AnvilProduce import AnvilProduce
 from definitions.itemdef.DetDrops import DetDrops
+from definitions.itemdef.ItemSet import ItemSet
 from definitions.itemdef.Recipe import Recipe
 from definitions.itemdef.Sources import Sources
 from definitions.itemdef.Vendors import ItemVendors
@@ -20,7 +21,8 @@ class Item(IdleonModel):
 	vendors: Optional[ItemVendors] = None
 	anvilProduction: Optional[AnvilProduce] = None
 	detDrops: Optional[DetDrops] = None
-	slabSort: Optional[SlabItemSort]
+	slabSort: Optional[SlabItemSort] = None
+	itemSet: Optional[ItemSet] = None
 
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		before = self.writeBefore()
@@ -44,6 +46,8 @@ class Item(IdleonModel):
 			res += f"|sellprice={self.recipe.sellPrice}\n"
 		else:
 			res += f"|sellprice={self.item.sellPrice}\n"
+		if self.itemSet:
+			res += self.itemSet.writeWiki()
 		# if self.slabSort:
 		# 	res += f"|order={self.slabSort.order}\n"
 		# if self.sources:

@@ -7960,6 +7960,36 @@
         "navigation": null,
         "bossData": null
     },
+    "FishBig": {
+        "details": {
+            "Name": "Large Fish",
+            "AFKtype": "Fishing",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 50,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 1,
+            "RespawnTime": 0,
+            "DeathFrame": 2,
+            "MonsterHPTotal": 5,
+            "Type": "fishType",
+            "SpecialType": "",
+            "ExpGiven": 1750,
+            "ExpType": 4,
+            "Defence": 2000000,
+            "MoveSPEED": 0,
+            "Damages": [6, 1],
+            "DefFor0": 2.67
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
     "Fish1": {
         "details": {
             "Name": "Goldfish",
@@ -8182,6 +8212,126 @@
             "MovingFrame": 4,
             "RespawnTime": 86400,
             "DeathFrame": 7,
+            "MonsterHPTotal": 750000,
+            "Type": "fishType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Fish9": {
+        "details": {
+            "Name": "Icefish",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 48,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 8,
+            "MonsterHPTotal": 750000,
+            "Type": "fishType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Fish10": {
+        "details": {
+            "Name": "Shellfish",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 48,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 9,
+            "MonsterHPTotal": 750000,
+            "Type": "fishType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Fish11": {
+        "details": {
+            "Name": "Jumbo Shrimp",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 48,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 10,
+            "MonsterHPTotal": 750000,
+            "Type": "fishType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Fish12": {
+        "details": {
+            "Name": "Caulifish",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 48,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 11,
             "MonsterHPTotal": 750000,
             "Type": "fishType",
             "SpecialType": "a",

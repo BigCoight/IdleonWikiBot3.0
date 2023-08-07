@@ -3874,6 +3874,7 @@
             {"wikiName": "[[Dandelioli Tree]]", "txtName": "Dandelioli Tree"},
             {"wikiName": "[[Small Fish]]", "txtName": "Small Fish"},
             {"wikiName": "[[Medium Fish]]", "txtName": "Medium Fish"},
+            {"wikiName": "[[Large Fish]]", "txtName": "Large Fish"},
             {"wikiName": "[[Goldfish]]", "txtName": "Goldfish"},
             {"wikiName": "[[Hermit Can]]", "txtName": "Hermit Can"},
             {"wikiName": "[[Jellyfish]]", "txtName": "Jellyfish"},
@@ -3882,6 +3883,10 @@
             {"wikiName": "[[Shark]]", "txtName": "Shark"},
             {"wikiName": "[[Manta Ray]]", "txtName": "Manta Ray"},
             {"wikiName": "[[Kraken]]", "txtName": "Kraken"},
+            {"wikiName": "[[Icefish]]", "txtName": "Icefish"},
+            {"wikiName": "[[Shellfish]]", "txtName": "Shellfish"},
+            {"wikiName": "[[Jumbo Shrimp]]", "txtName": "Jumbo Shrimp"},
+            {"wikiName": "[[Caulifish]]", "txtName": "Caulifish"},
             {"wikiName": "[[Fly Nest]]", "txtName": "Fly Nest"},
             {"wikiName": "[[Butterfly Bar]]", "txtName": "Butterfly Bar"},
             {"wikiName": "[[Sentient Bowl]]", "txtName": "Sentient Bowl"},
@@ -4222,6 +4227,7 @@
             {"wikiName": "[[Crystal Crabal]]", "txtName": "Crystal Crabal"},
             {"wikiName": "[[Small Fish]]", "txtName": "Small Fish"},
             {"wikiName": "[[Medium Fish]]", "txtName": "Medium Fish"},
+            {"wikiName": "[[Large Fish]]", "txtName": "Large Fish"},
             {"wikiName": "[[Goldfish]]", "txtName": "Goldfish"},
             {"wikiName": "[[Hermit Can]]", "txtName": "Hermit Can"},
             {"wikiName": "[[Jellyfish]]", "txtName": "Jellyfish"},
@@ -4229,7 +4235,11 @@
             {"wikiName": "[[Skelefish]]", "txtName": "Skelefish"},
             {"wikiName": "[[Shark]]", "txtName": "Shark"},
             {"wikiName": "[[Manta Ray]]", "txtName": "Manta Ray"},
-            {"wikiName": "[[Kraken]]", "txtName": "Kraken"}
+            {"wikiName": "[[Kraken]]", "txtName": "Kraken"},
+            {"wikiName": "[[Icefish]]", "txtName": "Icefish"},
+            {"wikiName": "[[Shellfish]]", "txtName": "Shellfish"},
+            {"wikiName": "[[Jumbo Shrimp]]", "txtName": "Jumbo Shrimp"},
+            {"wikiName": "[[Caulifish]]", "txtName": "Caulifish"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -4452,7 +4462,11 @@
     },
     "Grasslands1": {
         "sources": [
-            {"wikiName": "[[Green Mushroom]]", "txtName": "Green Mushroom"}
+            {"wikiName": "[[Green Mushroom]]", "txtName": "Green Mushroom"},
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar For the Final Time|Helping Omar For the Final Time]]",
+                "txtName": "Omar Da Ogar: Helping Omar For the Final Time"
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -4598,7 +4612,11 @@
             {"wikiName": "[[Bee Hive]]", "txtName": "Bee Hive"},
             {"wikiName": "[[Fairy Hovel]]", "txtName": "Fairy Hovel"},
             {"wikiName": "[[Scarab Nest]]", "txtName": "Scarab Nest"},
-            {"wikiName": "[[Mote Hovel]]", "txtName": "Mote Hovel"}
+            {"wikiName": "[[Mote Hovel]]", "txtName": "Mote Hovel"},
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar|Helping Omar]]",
+                "txtName": "Omar Da Ogar: Helping Omar"
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -4664,7 +4682,11 @@
     },
     "Grasslands3": {
         "sources": [
-            {"wikiName": "[[Bored Bean]]", "txtName": "Bored Bean"}
+            {"wikiName": "[[Bored Bean]]", "txtName": "Bored Bean"},
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar A 3rd Time|Helping Omar A 3rd Time]]",
+                "txtName": "Omar Da Ogar: Helping Omar A 3rd Time"
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -4755,7 +4777,11 @@
     },
     "Jungle2": {
         "sources": [
-            {"wikiName": "[[Baby Boa]]", "txtName": "Baby Boa"}
+            {"wikiName": "[[Baby Boa]]", "txtName": "Baby Boa"},
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar Yet Again Deja Vu|Helping Omar Yet Again Deja Vu]]",
+                "txtName": "Omar Da Ogar: Helping Omar Yet Again Deja Vu"
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -4812,7 +4838,11 @@
     },
     "Jungle3": {
         "sources": [
-            {"wikiName": "[[Carrotman]]", "txtName": "Carrotman"}
+            {"wikiName": "[[Carrotman]]", "txtName": "Carrotman"},
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar Some More|Helping Omar Some More]]",
+                "txtName": "Omar Da Ogar: Helping Omar Some More"
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -4833,7 +4863,11 @@
     },
     "Forest1": {
         "sources": [
-            {"wikiName": "[[Glublin]]", "txtName": "Glublin"}
+            {"wikiName": "[[Glublin]]", "txtName": "Glublin"},
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar Again|Helping Omar Again]]",
+                "txtName": "Omar Da Ogar: Helping Omar Again"
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -10030,6 +10064,10 @@
             {
                 "wikiName": "[[Vendors#YumYum Grotto|YumYum Grotto Vendors]]",
                 "txtName": "YumYum Grotto Vendor"
+            },
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar|Helping Omar]]",
+                "txtName": "Omar Da Ogar: Helping Omar"
             }
         ],
         "recipeFrom": [],
@@ -10037,6 +10075,18 @@
             {
                 "wikiName": "[[Obol Altar#Bad Kitty, get off that altar!|Bad Kitty, get off that altar!]]",
                 "txtName": "Obol Altar: Bad Kitty, get off that altar!"
+            },
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar A 3rd Time|Helping Omar A 3rd Time]]",
+                "txtName": "Omar Da Ogar: Helping Omar A 3rd Time"
+            },
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar Some More|Helping Omar Some More]]",
+                "txtName": "Omar Da Ogar: Helping Omar Some More"
+            },
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar Yet Again Deja Vu|Helping Omar Yet Again Deja Vu]]",
+                "txtName": "Omar Da Ogar: Helping Omar Yet Again Deja Vu"
             }
         ]
     },
@@ -11976,6 +12026,10 @@
                 "txtName": "Cactolyte: Peanut De-Aging"
             },
             {
+                "wikiName": "[[Omar Da Ogar#Helping Omar A 3rd Time|Helping Omar A 3rd Time]]",
+                "txtName": "Omar Da Ogar: Helping Omar A 3rd Time"
+            },
+            {
                 "wikiName": "[[Wellington#Puzzles and Math, a Winning Combination!|Puzzles and Math, a Winning Combination!]]",
                 "txtName": "Wellington: Puzzles and Math, a Winning Combination!"
             },
@@ -12397,6 +12451,63 @@
             {
                 "wikiName": "[[Goldric#Dont lay a finger on my Sheepies!!!|Dont lay a finger on my Sheepies!!!]]",
                 "txtName": "Goldric: Dont lay a finger on my Sheepies!!!"
+            }
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "EquipmentRingsFishing1": {
+        "sources": [
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar Again|Helping Omar Again]]",
+                "txtName": "Omar Da Ogar: Helping Omar Again"
+            }
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "EquipmentRingsFishing2": {
+        "sources": [
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar Some More|Helping Omar Some More]]",
+                "txtName": "Omar Da Ogar: Helping Omar Some More"
+            }
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "Pearl1": {
+        "sources": [
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar Yet Again Deja Vu|Helping Omar Yet Again Deja Vu]]",
+                "txtName": "Omar Da Ogar: Helping Omar Yet Again Deja Vu"
+            },
+            {"wikiName": "[[Beach Oyster]]", "txtName": "Beach Oyster"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "Pearl5": {
+        "sources": [
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar Yet Again Deja Vu|Helping Omar Yet Again Deja Vu]]",
+                "txtName": "Omar Da Ogar: Helping Omar Yet Again Deja Vu"
+            },
+            {
+                "wikiName": "[[Tired Mole#Like taking Keys from a Crawler|Like taking Keys from a Crawler]]",
+                "txtName": "Tired Mole: Like taking Keys from a Crawler"
+            },
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
+            {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "EquipmentRingsFishing3": {
+        "sources": [
+            {
+                "wikiName": "[[Omar Da Ogar#Helping Omar For the Final Time|Helping Omar For the Final Time]]",
+                "txtName": "Omar Da Ogar: Helping Omar For the Final Time"
             }
         ],
         "recipeFrom": [],
@@ -12996,8 +13107,7 @@
             {
                 "wikiName": "[[Nebulyte#Oh Geez Lets Not Think About This One...|Oh Geez Lets Not Think About This One...]]",
                 "txtName": "Nebulyte: Oh Geez Lets Not Think About This One..."
-            },
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -13461,17 +13571,6 @@
         "recipeFrom": [],
         "questAss": []
     },
-    "Pearl5": {
-        "sources": [
-            {
-                "wikiName": "[[Tired Mole#Like taking Keys from a Crawler|Like taking Keys from a Crawler]]",
-                "txtName": "Tired Mole: Like taking Keys from a Crawler"
-            },
-            {"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
     "Trophy17": {
         "sources": [
             {
@@ -13700,33 +13799,28 @@
         "recipeFrom": [],
         "questAss": []
     },
-    "EquipmentRings32": {
+    "Island1": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
         "questAss": []
     },
-    "EquipmentKeychain22": {
-        "sources": [
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
-            {"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
-            {
-                "wikiName": "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
-                "txtName": "Dungeons: Flurbo Shop"
-            }
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "GemP25": {
+    "EquipmentRings31": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
         "questAss": []
     },
-    "EquipmentHats81": {
+    "EquipmentHats82": {
+        "sources": [
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "EquipmentPendant28": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
@@ -14029,6 +14123,34 @@
         "questAss": []
     },
     "Fish8": {
+        "sources": [
+            {"wikiName": "[[Fishing]]", "txtName": "Fishing"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "Fish9": {
+        "sources": [
+            {"wikiName": "[[Fishing]]", "txtName": "Fishing"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "Fish10": {
+        "sources": [
+            {"wikiName": "[[Fishing]]", "txtName": "Fishing"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "Fish11": {
+        "sources": [
+            {"wikiName": "[[Fishing]]", "txtName": "Fishing"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "Fish12": {
         "sources": [
             {"wikiName": "[[Fishing]]", "txtName": "Fishing"}
         ],
@@ -14612,6 +14734,17 @@
         "questAss": []
     },
     "EquipmentKeychain21": {
+        "sources": [
+            {"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
+            {
+                "wikiName": "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
+                "txtName": "Dungeons: Flurbo Shop"
+            }
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "EquipmentKeychain22": {
         "sources": [
             {"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
             {
@@ -17279,13 +17412,6 @@
         "questAss": []
     },
     "Pearl2": {
-        "sources": [
-            {"wikiName": "[[Beach Oyster]]", "txtName": "Beach Oyster"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "Pearl1": {
         "sources": [
             {"wikiName": "[[Beach Oyster]]", "txtName": "Beach Oyster"}
         ],

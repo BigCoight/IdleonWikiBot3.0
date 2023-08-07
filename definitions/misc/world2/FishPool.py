@@ -7,6 +7,7 @@ from helpers.CustomTypes import Integer, Numeric
 class PoolType(str, IdleonEnum, metaclass = CheckIn):
 	FishSmall = "FishSmall"
 	FishMed = "FishMed"
+	FishBig = "FishBig"
 
 
 class FishPool(IdleonModel):

@@ -3,10 +3,16 @@ from typing import List
 
 from definitions.misc.world2.FishPool import FishPool
 from helpers.HelperFunctions import formatStr, getFromArrayArray
+from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.master.Repository import Repository
 
 
 class FishPoolRepo(Repository[FishPool]):
+
+	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		ItemDetailRepo.initialise(cls.codeReader, log)
+
 	@classmethod
 	def getCategory(cls) -> str:
 		return "Worlds/2"
@@ -33,3 +39,7 @@ class FishPoolRepo(Repository[FishPool]):
 					pool = name)
 				cls.add(pool[0][i], toAdd)
 				cls.addList(toAdd)
+
+	@classmethod
+	def getWikiName(cls, name: str) -> str:
+		return ItemDetailRepo.getWikiName(name)

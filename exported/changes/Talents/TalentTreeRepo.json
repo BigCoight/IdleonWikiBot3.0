@@ -1,1 +1,58 @@
-{"new": {}, "changes": {}}
+{
+    "new": {},
+    "changes": {
+        "Special Talent 1": {
+            "talents": {
+                "Tick Tock": {
+                    "description": [
+                        "+{% Away Gains Rate for both Fighting and Skills",
+                        "+{% AFK Gains Rate for both Fighting and Skills"
+                    ]
+                }
+            }
+        },
+        "Special Talent 3": {
+            "talents": {
+                "Filthy Damage": {
+                    "name": [" ", "Filthy Damage"],
+                    "description": [" ", "+{% damage for every power of 10 Garbage you have"],
+                    "x1": [" ", 20],
+                    "x2": [" ", 100],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", "+{% Dmg Per Pow 10 Garbo"],
+                    "skillIndex": [" ", 649],
+                    "activeData": [" ", null]
+                },
+                "Rando Event Looty": {
+                    "name": [" ", "Rando Event Looty"],
+                    "description": [" ", "+{% AFK Gains Rate per Random Event Rare Item found"],
+                    "x1": [" ", 0.75],
+                    "x2": [" ", 100],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", "+{% Afk Per Rare"],
+                    "skillIndex": [" ", 650],
+                    "activeData": [" ", null]
+                },
+                "Dummy Thicc Stats": {
+                    "name": [" ", "Dummy Thicc Stats"],
+                    "description": [" ", "+{% All Stat per POW 10 best DPS ever on the Target Dummy"],
+                    "x1": [" ", 0.35],
+                    "x2": [" ", 50],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", "+{% All Stat"],
+                    "skillIndex": [" ", 653],
+                    "activeData": [" ", null]
+                }
+            }
+        }
+    }
+}

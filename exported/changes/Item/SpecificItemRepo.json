@@ -1,1 +1,224 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "Fish9": {
+            "displayName": "Icefish",
+            "sellPrice": 125,
+            "Type": "Fish",
+            "description": "Scaled and icy, this coldblooded predator often travels out of the briney Seasalt shores to the Deepwater Docks to prey on Sand Sharks... "
+        },
+        "EquipmentNametag6b": {
+            "displayName": "Trash Tuna Nametag",
+            "sellPrice": 1,
+            "Type": "Nametag",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 30,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "200% Fishing Xp Gain",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "CardsF31": {
+            "displayName": "Shellfish Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "F31",
+                "perTier": 18,
+                "effect": "+{% Total Fishing Efficiency",
+                "bonus": 12,
+                "order": 32
+            },
+            "dropChance": 0.0004
+        },
+        "Fish11": {
+            "displayName": "Jumbo Shrimp",
+            "sellPrice": 555,
+            "Type": "Fish",
+            "description": "Woah momma thats a big shrimp... "
+        },
+        "StampA38": {
+            "displayName": "Golden Sixes Stamp",
+            "sellPrice": 1,
+            "Type": "Combat Stamp",
+            "description": "",
+            "bonus": "+{% Drop Rate",
+            "ID": 38,
+            "stampData": {
+                "effect": "DropRate",
+                "function": "decay",
+                "x1": 20,
+                "x2": 80,
+                "upgradeInterval": 10,
+                "material": {"item": "Fish8"},
+                "startV": 250,
+                "mCostExp": 10,
+                "startingCost": 10000000,
+                "cCostExp": 1.43,
+                "i10": 0,
+                "upgradeText": "{}% Drop Rate",
+                "i12": 0
+            }
+        },
+        "StampB47": {
+            "displayName": "Skelefish Stamp",
+            "sellPrice": 4000,
+            "Type": "Skills Stamp",
+            "description": "",
+            "bonus": "+{% Fishing Efficiency per Fishing Lv",
+            "ID": 47,
+            "stampData": {
+                "effect": "FishEffPerLv",
+                "function": "decay",
+                "x1": 0.2,
+                "x2": 20,
+                "upgradeInterval": 2,
+                "material": {"item": "Fish5"},
+                "startV": 250,
+                "mCostExp": 10,
+                "startingCost": 800000000,
+                "cCostExp": 1.35,
+                "i10": 0,
+                "upgradeText": "{}% Fishing Eff Per Fishing Lv",
+                "i12": 0
+            }
+        },
+        "Fish10": {
+            "displayName": "Shellfish",
+            "sellPrice": 205,
+            "Type": "Fish",
+            "description": "This gooey creature evolved from a common ancestor of the Dedotated Ram, hence the curled shell horns. "
+        },
+        "CardsF32": {
+            "displayName": "Jumbo Shrimp Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "F32",
+                "perTier": 24,
+                "effect": "+{% Fishing Away Gains",
+                "bonus": 3.5,
+                "order": 33
+            },
+            "dropChance": 0.0001
+        },
+        "StampA39": {
+            "displayName": "Stat Wallstreet Stamp",
+            "sellPrice": 1,
+            "Type": "Combat Stamp",
+            "description": "",
+            "bonus": "+{ All Stats.",
+            "ID": 39,
+            "stampData": {
+                "effect": "BaseAllStat",
+                "function": "add",
+                "x1": 2,
+                "x2": 0,
+                "upgradeInterval": 2,
+                "material": {"item": "StoneZ2"},
+                "startV": 5,
+                "mCostExp": 2,
+                "startingCost": 25000000,
+                "cCostExp": 1.36,
+                "i10": 0,
+                "upgradeText": "{} All Stats",
+                "i12": 0
+            }
+        },
+        "Fish12": {
+            "displayName": "Caulifish",
+            "sellPrice": 1255,
+            "Type": "Fish",
+            "description": "Astonishingly, despite its unthreatening exterior of cauliflower and bread, this creature sits atop the food chain according to leading IdleOn Oceanographers. At least, based on currently explored seas... "
+        },
+        "Trophy18": {
+            "displayName": "Master of Nothing",
+            "sellPrice": 69,
+            "Type": "Trophy",
+            "lvReqToCraft": 1,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 5,
+            "STR": 26,
+            "AGI": 26,
+            "WIS": 26,
+            "LUK": 26,
+            "Defence": 0,
+            "miscUp1": "10% All Afk Gain",
+            "miscUp2": "70% Skill Exp",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentNametag7": {
+            "displayName": "Island Adventurer Nametag",
+            "sellPrice": 1,
+            "Type": "Nametag",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 12,
+            "STR": 12,
+            "AGI": 0,
+            "WIS": 0,
+            "LUK": 12,
+            "Defence": 0,
+            "miscUp1": "10% Fight Afk Gain",
+            "miscUp2": "5% Fishin Efficincy",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "CardsF30": {
+            "displayName": "Icefish Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "F30",
+                "perTier": 15,
+                "effect": "+{% Fishing EXP",
+                "bonus": 15,
+                "order": 31
+            },
+            "dropChance": 0.001
+        },
+        "CardsF33": {
+            "displayName": "Caulifish Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "F33",
+                "perTier": 30,
+                "effect": "+{% Fishing Speed",
+                "bonus": 7,
+                "order": 34
+            },
+            "dropChance": 2.5e-05
+        }
+    },
+    "changes": {
+        "StampA37": {"displayName": ["Dementia Sword", "Dementia Sword Stamp"]},
+        "Fish5": {"sellPrice": [5, 25]},
+        "Fish6": {"sellPrice": [5, 35]},
+        "Fish8": {"sellPrice": [5, 65]},
+        "EquipmentRingsFishing1": {"Weapon_Power": [3, 4]},
+        "StampB32": {
+            "stampData": {
+                "startV": [200, 2500],
+                "mCostExp": [11, 12],
+                "startingCost": [25000, 50000],
+                "cCostExp": [1.3, 1.5]
+            }
+        },
+        "EquipmentRingsFishing3": {"Weapon_Power": [3, 14], "STR": [6, 12], "AGI": [2, 4]},
+        "Fish7": {"sellPrice": [5, 45]},
+        "EquipmentRingsFishing2": {"Weapon_Power": [3, 8], "STR": [6, 9], "AGI": [2, 3]}
+    }
+}

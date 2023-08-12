@@ -24419,7 +24419,7 @@
             "sellPrice": 125,
             "typeGen": "dStone",
             "Type": "Upgrade",
-            "description": "Drag onto any Weapon to apply. +1 Random Stat, +3 Defence. Success Chance; 40% Uses up 1 slots only if Successful ",
+            "description": "Drag onto any Weapon to apply. +3 Weapon Power, +2 Defence. Success Chance; 40% Uses up 1 slots only if Successful ",
             "tier": "Summer"
         },
         "sources": {
@@ -24858,7 +24858,7 @@
             "sellPrice": 100,
             "typeGen": "dStone",
             "Type": "Upgrade",
-            "description": "Drag onto any Armor to apply. +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful ",
+            "description": "Drag onto any Armor to apply. +3 Defence, +1 Random Stat. Success Chance; 60% Uses up 1 slots only if Successful ",
             "tier": "Summer"
         },
         "sources": {
@@ -25469,7 +25469,7 @@
             "sellPrice": 110,
             "typeGen": "dStone",
             "Type": "Upgrade",
-            "description": "Drag onto any Tool to apply. +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful ",
+            "description": "Drag onto any Tool to apply. +2 Tool Skill Power, +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful ",
             "tier": "Summer"
         },
         "sources": {
@@ -46311,6 +46311,37 @@
         "slabSort": {"item": {"item": "EquipmentNametag7"}, "order": 496},
         "itemSet": null
     },
+    "EquipmentNametag8": {
+        "item": {
+            "internalName": "EquipmentNametag8",
+            "displayName": "Summer Shovel Nametag",
+            "sellPrice": 1,
+            "typeGen": "aNametag",
+            "Type": "Nametag",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 4,
+            "STR": 4,
+            "AGI": 4,
+            "WIS": 4,
+            "LUK": 4,
+            "Defence": 0,
+            "miscUp1": "15% Xp From Monsters",
+            "miscUp2": "4% All Stats",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null,
+        "slabSort": null,
+        "itemSet": null
+    },
     "EquipmentKeychain0": {
         "item": {
             "internalName": "EquipmentKeychain0",
@@ -59297,8 +59328,6 @@
         },
         "sources": {
             "sources": [
-                {"wikiName": "[[Mr Blueberry]]", "txtName": "Mr Blueberry"},
-                {"wikiName": "[[Plasti Doug]]", "txtName": "Plasti Doug"},
                 {
                     "wikiName": "[[Coastiolyte#Cooler than a Cooler!|Cooler than a Cooler!]]",
                     "txtName": "Coastiolyte: Cooler than a Cooler!"
@@ -59315,10 +59344,7 @@
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
-        "detDrops": [
-            {"source": "crabcakeB", "quantity": 1, "chance": 0.4},
-            {"source": "shovelY", "quantity": 1, "chance": 0.4}
-        ],
+        "detDrops": null,
         "slabSort": {"item": {"item": "Quest49"}, "order": 753},
         "itemSet": null
     },

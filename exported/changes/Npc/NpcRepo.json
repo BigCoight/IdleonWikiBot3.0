@@ -1,1 +1,35 @@
-{"new": {}, "changes": {}}
+{
+    "new": {},
+    "changes": {
+        "Coastiolyte": {
+            "quests": {
+                "Cooler than a Cooler!": {
+                    "DialogueText": [
+                        "Cmon bro go get yourself some of that summer action!! I wanna see you opening those coolers like no other! <br> QUEST:Crack open some Coolers with the lads!",
+                        "Cmon bro go get yourself some of that summer action!! I wanna see you opening those coolers like no other! <br> QUEST:Crack open 15 Coolers with the lads!"
+                    ],
+                    "Rewards": {"0": [{"item": "Quest49", "quantity": 20}, {"item": "Quest49", "quantity": 1}]},
+                    "CustomArray": {
+                        "0": [
+                            {"desc": "Open Summer Coolers:", "finalV": 12, "type": "GreaterEqual", "startV": 0},
+                            {"desc": "Open Summer Coolers:", "finalV": 15, "type": "GreaterEqual", "startV": 0}
+                        ]
+                    }
+                },
+                "Vibe Check": {
+                    "DialogueText": [
+                        "But dang there sure are a lot of newbies harshin' the vibe this year... can you get rid of them? <br> QUEST: Clear the beach of all these 'Out of Towner' monsters",
+                        "But dang there sure are a lot of newbies harshin' the vibe this year... can you get rid of them? <br> QUEST: Clear the beach of all these 'Out of Towner' monsters namely 5 Plasti Dougs and 5 Mr Blueberry's"
+                    ],
+                    "Rewards": {"0": [{"item": "Quest49", "quantity": 30}, {"item": "Quest49", "quantity": 1}]},
+                    "CustomArray": {
+                        "0": [
+                            {"desc": "Defeat Plasti Dougs:", "finalV": 12, "type": "GreaterEqual", "startV": 0},
+                            {"desc": "Defeat Plasti Dougs:", "finalV": 5, "type": "GreaterEqual", "startV": 0}
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

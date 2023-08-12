@@ -1665,7 +1665,6 @@ export const initEnemyTableRepo = () => {
                 "drops": [
                     <CoinDropModel>{"item": "COIN", "quantity": 69, "chance": 0.5, "questLink": "N/A"},
                     <CardDropModel>{"item": "CardsY10", "quantity": 1, "chance": 0.03, "questLink": "N/A"},
-                    <ItemDropModel>{"item": "Quest49", "quantity": 1, "chance": 0.4, "questLink": "N/A"},
                     <ItemDropModel>{"item": "StoneT1eb", "quantity": 3, "chance": 0.012, "questLink": "N/A"},
                     <ItemDropModel>{"item": "StoneAeB", "quantity": 3, "chance": 0.02, "questLink": "N/A"},
                     <ItemDropModel>{"item": "StoneWeb", "quantity": 2, "chance": 0.01, "questLink": "N/A"}
@@ -1675,7 +1674,6 @@ export const initEnemyTableRepo = () => {
                 "drops": [
                     <CoinDropModel>{"item": "COIN", "quantity": 69, "chance": 0.5, "questLink": "N/A"},
                     <CardDropModel>{"item": "CardsY13", "quantity": 1, "chance": 0.03, "questLink": "N/A"},
-                    <ItemDropModel>{"item": "Quest49", "quantity": 1, "chance": 0.4, "questLink": "N/A"},
                     <ItemDropModel>{"item": "StoneT1eb", "quantity": 3, "chance": 0.012, "questLink": "N/A"},
                     <ItemDropModel>{"item": "StoneAeB", "quantity": 3, "chance": 0.02, "questLink": "N/A"},
                     <ItemDropModel>{"item": "StoneWeb", "quantity": 2, "chance": 0.01, "questLink": "N/A"}

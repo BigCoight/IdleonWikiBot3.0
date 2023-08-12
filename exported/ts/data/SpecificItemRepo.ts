@@ -9766,7 +9766,7 @@ export const initSpecificItemRepo = () => {
                 "sellPrice": 125,
                 "typeGen": TypeGenEnum.dStone,
                 "Type": "Upgrade",
-                "description": "Drag onto any Weapon to apply. +1 Random Stat, +3 Defence. Success Chance; 40% Uses up 1 slots only if Successful ",
+                "description": "Drag onto any Weapon to apply. +3 Weapon Power, +2 Defence. Success Chance; 40% Uses up 1 slots only if Successful ",
                 "tier": "Summer"
             }),
         new BaseItemBase("StoneW1", <StoneItemModel>{
@@ -9856,7 +9856,7 @@ export const initSpecificItemRepo = () => {
                 "sellPrice": 100,
                 "typeGen": TypeGenEnum.dStone,
                 "Type": "Upgrade",
-                "description": "Drag onto any Armor to apply. +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful ",
+                "description": "Drag onto any Armor to apply. +3 Defence, +1 Random Stat. Success Chance; 60% Uses up 1 slots only if Successful ",
                 "tier": "Summer"
             }),
         new BaseItemBase("StoneA1", <StoneItemModel>{
@@ -9973,7 +9973,7 @@ export const initSpecificItemRepo = () => {
                 "sellPrice": 110,
                 "typeGen": TypeGenEnum.dStone,
                 "Type": "Upgrade",
-                "description": "Drag onto any Tool to apply. +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful ",
+                "description": "Drag onto any Tool to apply. +2 Tool Skill Power, +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful ",
                 "tier": "Summer"
             }),
         new BaseItemBase("StoneT2", <StoneItemModel>{
@@ -16543,6 +16543,27 @@ export const initSpecificItemRepo = () => {
                 "Defence": 0,
                 "miscUp1": "10% Fight Afk Gain",
                 "miscUp2": "5% Fishin Efficincy",
+                "Upgrade_Slots_Left": 0,
+                "Skill": "",
+                "Skill_Power": 0
+            }),
+        new BaseItemBase("EquipmentNametag8", <ArmourItemModel>{
+                "internalName": "EquipmentNametag8",
+                "displayName": "Summer Shovel Nametag",
+                "sellPrice": 1,
+                "typeGen": TypeGenEnum.aNametag,
+                "Type": "Nametag",
+                "lvReqToCraft": 55,
+                "lvReqToEquip": 1,
+                "Class": ClassTypeEnum.All,
+                "Weapon_Power": 4,
+                "STR": 4,
+                "AGI": 4,
+                "WIS": 4,
+                "LUK": 4,
+                "Defence": 0,
+                "miscUp1": "15% Xp From Monsters",
+                "miscUp2": "4% All Stats",
                 "Upgrade_Slots_Left": 0,
                 "Skill": "",
                 "Skill_Power": 0

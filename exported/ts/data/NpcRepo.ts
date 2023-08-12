@@ -11710,34 +11710,34 @@ export const initNpcRepo = () => {
                 "quests": {
                     "Cooler than a Cooler!": <CustomQuestModel>{
                         "Type": QuestTypeEnum.Custom,
-                        "DialogueText": "Cmon bro go get yourself some of that summer action!! I wanna see you opening those coolers like no other! <br> QUEST:Crack open some Coolers with the lads!",
+                        "DialogueText": "Cmon bro go get yourself some of that summer action!! I wanna see you opening those coolers like no other! <br> QUEST:Crack open 15 Coolers with the lads!",
                         "NextIndex": 4,
                         "Name": "Cooler than a Cooler!",
                         "ConsumeItems": false,
                         "InventorySpacesNeeded": 2,
                         "NoSpaceIndex": 3,
-                        "Rewards": [<ComponentModel>{"item": "Quest49", "quantity": 20}, <ComponentModel>{"item": "Quest50", "quantity": 10}],
+                        "Rewards": [<ComponentModel>{"item": "Quest49", "quantity": 1}, <ComponentModel>{"item": "Quest50", "quantity": 10}],
                         "QuestName": "Coastiolyte1",
                         "Difficulty": 2,
                         "note": <NoteModel>{"note": ""},
                         "CustomType": "Coastiolyte1",
-                        "CustomArray": [<CustomReqModel>{"desc": "Open Summer Coolers:", "finalV": 12, "type": "GreaterEqual", "startV": 0}]
+                        "CustomArray": [<CustomReqModel>{"desc": "Open Summer Coolers:", "finalV": 15, "type": "GreaterEqual", "startV": 0}]
                     },
                     "Vibe Check": <CustomQuestModel>{
                         "Type": QuestTypeEnum.Custom,
-                        "DialogueText": "But dang there sure are a lot of newbies harshin' the vibe this year... can you get rid of them? <br> QUEST: Clear the beach of all these 'Out of Towner' monsters",
+                        "DialogueText": "But dang there sure are a lot of newbies harshin' the vibe this year... can you get rid of them? <br> QUEST: Clear the beach of all these 'Out of Towner' monsters namely 5 Plasti Dougs and 5 Mr Blueberry's",
                         "NextIndex": 7,
                         "Name": "Vibe Check",
                         "ConsumeItems": false,
                         "InventorySpacesNeeded": 2,
                         "NoSpaceIndex": 6,
-                        "Rewards": [<ComponentModel>{"item": "Quest49", "quantity": 30}, <ComponentModel>{"item": "Quest50", "quantity": 10}],
+                        "Rewards": [<ComponentModel>{"item": "Quest49", "quantity": 1}, <ComponentModel>{"item": "Quest50", "quantity": 10}],
                         "QuestName": "Coastiolyte2",
                         "Difficulty": 2,
                         "note": <NoteModel>{"note": ""},
                         "CustomType": "Coastiolyte2",
                         "CustomArray": [
-                            <CustomReqModel>{"desc": "Defeat Plasti Dougs:", "finalV": 12, "type": "GreaterEqual", "startV": 0},
+                            <CustomReqModel>{"desc": "Defeat Plasti Dougs:", "finalV": 5, "type": "GreaterEqual", "startV": 0},
                             <CustomReqModel>{"desc": "Defeat Mr. Blueberrys:", "finalV": 5, "type": "GreaterEqual", "startV": 0}
                         ]
                     }
@@ -11751,13 +11751,13 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
-                        "DialogueText": "Three weeks of hangin' around and getting sick-as rewards! This is the LIFE!",
+                        "DialogueText": "Two whole weeks of hangin' around and getting sick-as rewards! This is the LIFE!",
                         "NextIndex": 2,
                         "Name": ""
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.Custom,
-                        "DialogueText": "Cmon bro go get yourself some of that summer action!! I wanna see you opening those coolers like no other! <br> QUEST:Crack open some Coolers with the lads!",
+                        "DialogueText": "Cmon bro go get yourself some of that summer action!! I wanna see you opening those coolers like no other! <br> QUEST:Crack open 15 Coolers with the lads!",
                         "NextIndex": 4,
                         "Name": "Cooler than a Cooler!"
                     },
@@ -11775,7 +11775,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.Custom,
-                        "DialogueText": "But dang there sure are a lot of newbies harshin' the vibe this year... can you get rid of them? <br> QUEST: Clear the beach of all these 'Out of Towner' monsters",
+                        "DialogueText": "But dang there sure are a lot of newbies harshin' the vibe this year... can you get rid of them? <br> QUEST: Clear the beach of all these 'Out of Towner' monsters namely 5 Plasti Dougs and 5 Mr Blueberry's",
                         "NextIndex": 7,
                         "Name": "Vibe Check"
                     },
@@ -14206,9 +14206,9 @@ export const initNpcRepo = () => {
                     "world": "Unknown",
                     "noQuest": 0,
                     "type": "Unknown",
-                    "birthWeight": 1.18,
-                    "starSign": "Aries",
-                    "mothersMaidenName": "Ebner",
+                    "birthWeight": 5.38,
+                    "starSign": "Aquarius",
+                    "mothersMaidenName": "Norquist",
                     "notes": " "
                 },
                 "quests": {

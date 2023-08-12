@@ -1,218 +1,31 @@
 <div class="GenericFlex"><div class="GenericChild">
 ==Changes==
-{{patchnote/head|changed=Combat Stamp}}
-{{patchnote/item|Dementia Sword Stamp}}
-{{patchnote|Display Name|Dementia Sword|Dementia Sword Stamp|0}}
-|}
-
-{{patchnote/head|changed=Fish}}
-{{patchnote/item|Skelefish}}
-{{patchnote|Sell Price|5|25|0}}
-{{patchnote/item|Sand Shark}}
-{{patchnote|Sell Price|5|35|0}}
-{{patchnote/item|Kraken}}
-{{patchnote|Sell Price|5|65|0}}
-{{patchnote/item|Manta Ray}}
-{{patchnote|Sell Price|5|45|0}}
-|}
-
-{{patchnote/head|changed=Ring}}
-{{patchnote/item|Shallow Watering}}
-{{patchnote|Weapon Power|3|4|0}}
-{{patchnote/item|Deepwater Trench Ring}}
-{{patchnote|Weapon Power|3|14|0}}
-{{patchnote|Str|6|12|0}}
-{{patchnote|Agi|2|4|0}}
-{{patchnote/item|Oceanic Ring}}
-{{patchnote|Weapon Power|3|8|0}}
-{{patchnote|Str|6|9|0}}
-{{patchnote|Agi|2|3|0}}
-|}
-
-{{patchnote/head|changed=Skills Stamp}}
-{{patchnote/item|Amplestample Stamp}}
-{{patchnote/bold|Stamp Data|0}}
-{{patchnote|Start V|200|2500|1}}
-{{patchnote|M Cost Exp|11|12|1}}
-{{patchnote|Starting Cost|25000|50000|1}}
-{{patchnote|C Cost Exp|1.3|1.5|1}}
+{{patchnote/head|changed=Upgrade}}
+{{patchnote/item|Summer Armor Stone}}
+{{patchnote|Description|Drag onto any Armor to apply. +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful |Drag onto any Armor to apply. +3 Defence, +1 Random Stat. Success Chance; 60% Uses up 1 slots only if Successful |0}}
+{{patchnote/item|Summer Tool Upgrade Stone}}
+{{patchnote|Description|Drag onto any Tool to apply. +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful |Drag onto any Tool to apply. +2 Tool Skill Power, +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful |0}}
+{{patchnote/item|Summer Weapon Stone}}
+{{patchnote|Description|Drag onto any Weapon to apply. +1 Random Stat, +3 Defence. Success Chance; 40% Uses up 1 slots only if Successful |Drag onto any Weapon to apply. +3 Weapon Power, +2 Defence. Success Chance; 40% Uses up 1 slots only if Successful |0}}
 |}
 
 </div><div class="GenericChild">
 ==New==
-{{patchnote/head|changed=Fish}}
-{{patchnote/item|Icefish}}
-{{patchnote|Display Name| |Icefish|0}}
-{{patchnote|Sell Price| |125|0}}
-{{patchnote|Type| |Fish|0}}
-{{patchnote|Description| |Scaled and icy, this coldblooded predator often travels out of the briney Seasalt shores to the Deepwater Docks to prey on Sand Sharks... |0}}
-{{patchnote/item|Jumbo Shrimp}}
-{{patchnote|Display Name| |Jumbo Shrimp|0}}
-{{patchnote|Sell Price| |555|0}}
-{{patchnote|Type| |Fish|0}}
-{{patchnote|Description| |Woah momma thats a big shrimp... |0}}
-{{patchnote/item|Shellfish}}
-{{patchnote|Display Name| |Shellfish|0}}
-{{patchnote|Sell Price| |205|0}}
-{{patchnote|Type| |Fish|0}}
-{{patchnote|Description| |This gooey creature evolved from a common ancestor of the Dedotated Ram, hence the curled shell horns. |0}}
-{{patchnote/item|Caulifish}}
-{{patchnote|Display Name| |Caulifish|0}}
-{{patchnote|Sell Price| |1255|0}}
-{{patchnote|Type| |Fish|0}}
-{{patchnote|Description| |Astonishingly, despite its unthreatening exterior of cauliflower and bread, this creature sits atop the food chain according to leading IdleOn Oceanographers. At least, based on currently explored seas... |0}}
-|}
-
 {{patchnote/head|changed=Nametag}}
-{{patchnote/item|Trash Tuna Nametag}}
-{{patchnote|Display Name| |Trash Tuna Nametag|0}}
+{{patchnote/item|Summer Shovel Nametag}}
+{{patchnote|Display Name| |Summer Shovel Nametag|0}}
 {{patchnote|Sell Price| |1|0}}
 {{patchnote|Type| |Nametag|0}}
 {{patchnote|Lv Req To Craft| |55|0}}
 {{patchnote|Lv Req To Equip| |1|0}}
 {{patchnote|Class| |All|0}}
-{{patchnote|Str| |30|0}}
-{{patchnote|Misc Up 1| |200% Fishing Xp Gain|0}}
-{{patchnote|Skill| ||0}}
-{{patchnote/item|Island Adventurer Nametag}}
-{{patchnote|Display Name| |Island Adventurer Nametag|0}}
-{{patchnote|Sell Price| |1|0}}
-{{patchnote|Type| |Nametag|0}}
-{{patchnote|Lv Req To Craft| |55|0}}
-{{patchnote|Lv Req To Equip| |1|0}}
-{{patchnote|Class| |All|0}}
-{{patchnote|Weapon Power| |12|0}}
-{{patchnote|Str| |12|0}}
-{{patchnote|Luk| |12|0}}
-{{patchnote|Misc Up 1| |10% Fight Afk Gain|0}}
-{{patchnote|Misc Up 2| |5% Fishin Efficincy|0}}
-{{patchnote|Skill| ||0}}
-|}
-
-{{patchnote/head|changed=Card}}
-{{patchnote/item|Shellfish Card}}
-{{patchnote|Display Name| |Shellfish Card|0}}
-{{patchnote|Sell Price| |1|0}}
-{{patchnote|Type| |Card|0}}
-{{patchnote/bold|Card Data|0}}
-{{patchnote|Card Id| |F31|1}}
-{{patchnote|Per Tier| |18.0|1}}
-{{patchnote|Effect| |+{% Total Fishing Efficiency|1}}
-{{patchnote|Bonus| |12|1}}
-{{patchnote|Order| |32|1}}
-{{patchnote|Drop Chance| |0.0004|0}}
-{{patchnote/item|Jumbo Shrimp Card}}
-{{patchnote|Display Name| |Jumbo Shrimp Card|0}}
-{{patchnote|Sell Price| |1|0}}
-{{patchnote|Type| |Card|0}}
-{{patchnote/bold|Card Data|0}}
-{{patchnote|Card Id| |F32|1}}
-{{patchnote|Per Tier| |24.0|1}}
-{{patchnote|Effect| |+{% Fishing Away Gains|1}}
-{{patchnote|Bonus| |3.5|1}}
-{{patchnote|Order| |33|1}}
-{{patchnote|Drop Chance| |0.0001|0}}
-{{patchnote/item|Icefish Card}}
-{{patchnote|Display Name| |Icefish Card|0}}
-{{patchnote|Sell Price| |1|0}}
-{{patchnote|Type| |Card|0}}
-{{patchnote/bold|Card Data|0}}
-{{patchnote|Card Id| |F30|1}}
-{{patchnote|Per Tier| |15.0|1}}
-{{patchnote|Effect| |+{% Fishing EXP|1}}
-{{patchnote|Bonus| |15|1}}
-{{patchnote|Order| |31|1}}
-{{patchnote|Drop Chance| |0.001|0}}
-{{patchnote/item|Caulifish Card}}
-{{patchnote|Display Name| |Caulifish Card|0}}
-{{patchnote|Sell Price| |1|0}}
-{{patchnote|Type| |Card|0}}
-{{patchnote/bold|Card Data|0}}
-{{patchnote|Card Id| |F33|1}}
-{{patchnote|Per Tier| |30.0|1}}
-{{patchnote|Effect| |+{% Fishing Speed|1}}
-{{patchnote|Bonus| |7|1}}
-{{patchnote|Order| |34|1}}
-{{patchnote|Drop Chance| |2.5e-05|0}}
-|}
-
-{{patchnote/head|changed=Combat Stamp}}
-{{patchnote/item|Golden Sixes Stamp}}
-{{patchnote|Display Name| |Golden Sixes Stamp|0}}
-{{patchnote|Sell Price| |1|0}}
-{{patchnote|Type| |Combat Stamp|0}}
-{{patchnote|Description| ||0}}
-{{patchnote|Bonus| |+{% Drop Rate|0}}
-{{patchnote|Id| |38|0}}
-{{patchnote/bold|Stamp Data|0}}
-{{patchnote|Effect| |DropRate|1}}
-{{patchnote|Function| |decay|1}}
-{{patchnote|X 1| |20|1}}
-{{patchnote|X 2| |80|1}}
-{{patchnote|Upgrade Interval| |10|1}}
-{{patchnote|Material| |{{CraftReq|Kraken}}|1}}
-{{patchnote|Start V| |250|1}}
-{{patchnote|M Cost Exp| |10|1}}
-{{patchnote|Starting Cost| |10000000|1}}
-{{patchnote|C Cost Exp| |1.43|1}}
-{{patchnote|Upgrade Text| |{}% Drop Rate|1}}
-{{patchnote/item|Stat Wallstreet Stamp}}
-{{patchnote|Display Name| |Stat Wallstreet Stamp|0}}
-{{patchnote|Sell Price| |1|0}}
-{{patchnote|Type| |Combat Stamp|0}}
-{{patchnote|Description| ||0}}
-{{patchnote|Bonus| |+{ All Stats.|0}}
-{{patchnote|Id| |39|0}}
-{{patchnote/bold|Stamp Data|0}}
-{{patchnote|Effect| |BaseAllStat|1}}
-{{patchnote|Function| |add|1}}
-{{patchnote|X 1| |2|1}}
-{{patchnote|Upgrade Interval| |2|1}}
-{{patchnote|Material| |{{CraftReq|Mystery Upgrade Stone II}}|1}}
-{{patchnote|Start V| |5|1}}
-{{patchnote|M Cost Exp| |2|1}}
-{{patchnote|Starting Cost| |25000000|1}}
-{{patchnote|C Cost Exp| |1.36|1}}
-{{patchnote|Upgrade Text| |{} All Stats|1}}
-|}
-
-{{patchnote/head|changed=Skills Stamp}}
-{{patchnote/item|Skelefish Stamp}}
-{{patchnote|Display Name| |Skelefish Stamp|0}}
-{{patchnote|Sell Price| |4000|0}}
-{{patchnote|Type| |Skills Stamp|0}}
-{{patchnote|Description| ||0}}
-{{patchnote|Bonus| |+{% Fishing Efficiency per Fishing Lv|0}}
-{{patchnote|Id| |47|0}}
-{{patchnote/bold|Stamp Data|0}}
-{{patchnote|Effect| |FishEffPerLv|1}}
-{{patchnote|Function| |decay|1}}
-{{patchnote|X 1| |0.2|1}}
-{{patchnote|X 2| |20|1}}
-{{patchnote|Upgrade Interval| |2|1}}
-{{patchnote|Material| |{{CraftReq|Skelefish}}|1}}
-{{patchnote|Start V| |250|1}}
-{{patchnote|M Cost Exp| |10|1}}
-{{patchnote|Starting Cost| |800000000|1}}
-{{patchnote|C Cost Exp| |1.35|1}}
-{{patchnote|Upgrade Text| |{}% Fishing Eff Per Fishing Lv|1}}
-|}
-
-{{patchnote/head|changed=Trophy}}
-{{patchnote/item|Master of Nothing}}
-{{patchnote|Display Name| |Master of Nothing|0}}
-{{patchnote|Sell Price| |69|0}}
-{{patchnote|Type| |Trophy|0}}
-{{patchnote|Lv Req To Craft| |1|0}}
-{{patchnote|Lv Req To Equip| |1|0}}
-{{patchnote|Class| |All|0}}
-{{patchnote|Weapon Power| |5|0}}
-{{patchnote|Str| |26|0}}
-{{patchnote|Agi| |26|0}}
-{{patchnote|Wis| |26|0}}
-{{patchnote|Luk| |26|0}}
-{{patchnote|Misc Up 1| |10% All Afk Gain|0}}
-{{patchnote|Misc Up 2| |70% Skill Exp|0}}
+{{patchnote|Weapon Power| |4|0}}
+{{patchnote|Str| |4|0}}
+{{patchnote|Agi| |4|0}}
+{{patchnote|Wis| |4|0}}
+{{patchnote|Luk| |4|0}}
+{{patchnote|Misc Up 1| |15% Xp From Monsters|0}}
+{{patchnote|Misc Up 2| |4% All Stats|0}}
 {{patchnote|Skill| ||0}}
 |}
 

@@ -10809,7 +10809,7 @@
         "desc_line6": "Filler",
         "desc_line7": "Filler",
         "desc_line8": "Filler",
-        "Effect": "Random Stat,1.Defence,3",
+        "Effect": "Weapon Power,3.Defence,2",
         "Trigger": "1",
         "Amount": 40,
         "Cooldown": 0
@@ -11019,9 +11019,9 @@
         "desc_line6": "Filler",
         "desc_line7": "Filler",
         "desc_line8": "Filler",
-        "Effect": "Defence,3",
+        "Effect": "Defence,3.Random Stat,1",
         "Trigger": "1",
-        "Amount": 50,
+        "Amount": 60,
         "Cooldown": 0
     },
     "StoneA1": {
@@ -11292,7 +11292,7 @@
         "desc_line6": "Filler",
         "desc_line7": "Filler",
         "desc_line8": "Filler",
-        "Effect": "Defence,3",
+        "Effect": "Weapon Power,2.Defence,3",
         "Trigger": "1",
         "Amount": 50,
         "Cooldown": 0
@@ -22504,6 +22504,30 @@
         "UQ1val": 10,
         "UQ2txt": "% FISHIN EFFICINCY",
         "UQ2val": 5,
+        "Upgrade_Slots_Left": 0
+    },
+    "EquipmentNametag8": {
+        "internalID": "EquipmentNametag8",
+        "displayName": "Summer Shovel Nametag",
+        "sellPrice": 1,
+        "typeGen": "aNametag",
+        "ID": 8,
+        "Type": "Nametag",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Speed": 0,
+        "Reach": 0,
+        "Weapon_Power": 4,
+        "STR": 4,
+        "AGI": 4,
+        "WIS": 4,
+        "LUK": 4,
+        "Defence": 0,
+        "UQ1txt": "% XP FROM MONSTERS",
+        "UQ1val": 15,
+        "UQ2txt": "% ALL STATS",
+        "UQ2val": 4,
         "Upgrade_Slots_Left": 0
     },
     "EquipmentKeychain0": {

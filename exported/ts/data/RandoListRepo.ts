@@ -564,7 +564,8 @@ export const initRandoListRepo = () => {
                     "Woodsman",
                     "Toadstall",
                     "Falloween_Pumpkin",
-                    "Bubbulyte"
+                    "Bubbulyte",
+                    "Coastiolyte"
                 ]
             }),
         new RandoListBase(20, <RandoListModel>{

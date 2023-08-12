@@ -7641,22 +7641,6 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("Quest49", <SourcesModel>{
-                "sources": [
-                    <SourceModel>{"wikiName": "[[Mr Blueberry]]", "txtName": "Mr Blueberry"},
-                    <SourceModel>{"wikiName": "[[Plasti Doug]]", "txtName": "Plasti Doug"},
-                    <SourceModel>{
-                        "wikiName": "[[Coastiolyte#Cooler than a Cooler!|Cooler than a Cooler!]]",
-                        "txtName": "Coastiolyte: Cooler than a Cooler!"
-                    },
-                    <SourceModel>{
-                        "wikiName": "[[Coastiolyte#Vibe Check|Vibe Check]]",
-                        "txtName": "Coastiolyte: Vibe Check"
-                    }
-                ],
-                "recipeFrom": [],
-                "questAss": []
-            }),
         new SourcesBase("StoneT1eb", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[Mr Blueberry]]", "txtName": "Mr Blueberry"},
@@ -11906,6 +11890,20 @@ export const initSourceRepo = () => {
             }),
         new SourcesBase("NPCtoken34", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Snouts#Mana Plox|Mana Plox]]", "txtName": "Snouts: Mana Plox"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("Quest49", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{
+                        "wikiName": "[[Coastiolyte#Cooler than a Cooler!|Cooler than a Cooler!]]",
+                        "txtName": "Coastiolyte: Cooler than a Cooler!"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Coastiolyte#Vibe Check|Vibe Check]]",
+                        "txtName": "Coastiolyte: Vibe Check"
+                    }
+                ],
                 "recipeFrom": [],
                 "questAss": []
             }),

@@ -23688,7 +23688,7 @@ export const initItemRepo = () => {
                     "sellPrice": 125,
                     "typeGen": TypeGenEnum.dStone,
                     "Type": "Upgrade",
-                    "description": "Drag onto any Weapon to apply. +1 Random Stat, +3 Defence. Success Chance; 40% Uses up 1 slots only if Successful ",
+                    "description": "Drag onto any Weapon to apply. +3 Weapon Power, +2 Defence. Success Chance; 40% Uses up 1 slots only if Successful ",
                     "tier": "Summer"
                 },
                 "sources": <SourcesModel>{
@@ -24145,7 +24145,7 @@ export const initItemRepo = () => {
                     "sellPrice": 100,
                     "typeGen": TypeGenEnum.dStone,
                     "Type": "Upgrade",
-                    "description": "Drag onto any Armor to apply. +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful ",
+                    "description": "Drag onto any Armor to apply. +3 Defence, +1 Random Stat. Success Chance; 60% Uses up 1 slots only if Successful ",
                     "tier": "Summer"
                 },
                 "sources": <SourcesModel>{
@@ -24780,7 +24780,7 @@ export const initItemRepo = () => {
                     "sellPrice": 110,
                     "typeGen": TypeGenEnum.dStone,
                     "Type": "Upgrade",
-                    "description": "Drag onto any Tool to apply. +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful ",
+                    "description": "Drag onto any Tool to apply. +2 Tool Skill Power, +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful ",
                     "tier": "Summer"
                 },
                 "sources": <SourcesModel>{
@@ -44998,6 +44998,37 @@ export const initItemRepo = () => {
                 "slabSort": <SlabItemSortModel>{"item": <QtylessComponentModel>{"item": "EquipmentNametag7"}, "order": 496},
                 "itemSet": undefined
             }),
+        new ItemBase("EquipmentNametag8", <ItemModel>{
+                "item": <ArmourItemModel>{
+                    "internalName": "EquipmentNametag8",
+                    "displayName": "Summer Shovel Nametag",
+                    "sellPrice": 1,
+                    "typeGen": TypeGenEnum.aNametag,
+                    "Type": "Nametag",
+                    "lvReqToCraft": 55,
+                    "lvReqToEquip": 1,
+                    "Class": ClassTypeEnum.All,
+                    "Weapon_Power": 4,
+                    "STR": 4,
+                    "AGI": 4,
+                    "WIS": 4,
+                    "LUK": 4,
+                    "Defence": 0,
+                    "miscUp1": "15% Xp From Monsters",
+                    "miscUp2": "4% All Stats",
+                    "Upgrade_Slots_Left": 0,
+                    "Skill": "",
+                    "Skill_Power": 0
+                },
+                "sources": undefined,
+                "notes": undefined,
+                "recipe": undefined,
+                "vendors": undefined,
+                "anvilProduction": undefined,
+                "detDrops": undefined,
+                "slabSort": undefined,
+                "itemSet": undefined
+            }),
         new ItemBase("EquipmentKeychain0", <ItemModel>{
                 "item": <KeychainItemModel>{
                     "internalName": "EquipmentKeychain0",
@@ -57824,8 +57855,6 @@ export const initItemRepo = () => {
                 },
                 "sources": <SourcesModel>{
                     "sources": [
-                        <SourceModel>{"wikiName": "[[Mr Blueberry]]", "txtName": "Mr Blueberry"},
-                        <SourceModel>{"wikiName": "[[Plasti Doug]]", "txtName": "Plasti Doug"},
                         <SourceModel>{
                             "wikiName": "[[Coastiolyte#Cooler than a Cooler!|Cooler than a Cooler!]]",
                             "txtName": "Coastiolyte: Cooler than a Cooler!"
@@ -57844,12 +57873,7 @@ export const initItemRepo = () => {
                 "recipe": undefined,
                 "vendors": undefined,
                 "anvilProduction": undefined,
-                "detDrops": <DetDropsModel>{
-                    "sources": [
-                        <DetDropModel>{"source": "crabcakeB", "quantity": 1, "chance": 0.4},
-                        <DetDropModel>{"source": "shovelY", "quantity": 1, "chance": 0.4}
-                    ]
-                },
+                "detDrops": undefined,
                 "slabSort": <SlabItemSortModel>{"item": <QtylessComponentModel>{"item": "Quest49"}, "order": 753},
                 "itemSet": undefined
             }),

@@ -833,7 +833,7 @@ export const initNpcRepo = () => {
                         "Rewards": [
                             <ComponentModel>{"item": "CraftMat2", "quantity": 1},
                             <CoinRewardModel>{"item": "", "quantity": 100},
-                            <ExpRewardModel>{"item": "Experience0", "quantity": 10}
+                            <ExpRewardModel>{"item": "Experience0", "quantity": 37}
                         ],
                         "QuestName": "Scripticus2",
                         "Difficulty": 2,
@@ -2551,7 +2551,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.LevelReq,
-                        "DialogueText": "You're still pretty new though so I'm gonna keep quiet until I think you're ready to learn some new stuff. <br> Return at Lv.14 after you pick a class from Promotheus in the map after Froggy Fields",
+                        "DialogueText": "You're still pretty new though so I'm gonna keep quiet until I think you're ready to learn some new stuff. <br> Return at Lv.20",
                         "NextIndex": 2,
                         "Name": ""
                     },
@@ -4336,7 +4336,7 @@ export const initNpcRepo = () => {
                 "quests": {
                     "Restoring Power to the Portal": <ItemQuestModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Kacaw! <br> 'Defeat the Boss at the end of World 1 to retrieve the gem. The bird will use the gem to fix the portal allowing travel to World 2. The bird looks very stylish in their matching orange hat and scarf.'",
+                        "DialogueText": "Kacaw! <br> QUEST:Defeat the Boss at the end of World 1 to retrieve the gem and open the portal to WORLD 2!!",
                         "NextIndex": 2,
                         "Name": "Restoring Power to the Portal",
                         "ConsumeItems": true,
@@ -4362,7 +4362,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Kacaw! <br> 'Defeat the Boss at the end of World 1 to retrieve the gem. The bird will use the gem to fix the portal allowing travel to World 2. The bird looks very stylish in their matching orange hat and scarf.'",
+                        "DialogueText": "Kacaw! <br> QUEST:Defeat the Boss at the end of World 1 to retrieve the gem and open the portal to WORLD 2!!",
                         "NextIndex": 2,
                         "Name": "Restoring Power to the Portal"
                     },
@@ -13093,7 +13093,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "This is.... acceptable. You may proceed to the Task TV behind me.",
-                        "NextIndex": -1,
+                        "NextIndex": 9999,
                         "Name": ""
                     }
                 ]
@@ -13186,7 +13186,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "Bruh what even ARE you...? Ain't never saw that class you got there is that even legit?",
-                        "NextIndex": -1,
+                        "NextIndex": 6,
                         "Name": ""
                     }
                 ]
@@ -13367,7 +13367,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "I hate this. I wish things could just fix themself naturally and come to a conclusion but I guess things are never gonna change ^",
-                        "NextIndex": -1,
+                        "NextIndex": 15,
                         "Name": ""
                     }
                 ]
@@ -13543,7 +13543,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "Well done laddy! I take my cap off to ye that was some fine sailin' ye must have done!",
-                        "NextIndex": -1,
+                        "NextIndex": 14,
                         "Name": ""
                     }
                 ]
@@ -13676,7 +13676,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "Ah now I understand you perfectly... yes it is wonderful weather we're having.",
-                        "NextIndex": -1,
+                        "NextIndex": 9,
                         "Name": ""
                     }
                 ]
@@ -13815,7 +13815,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "Daaang you've got skills!! Now get out there and teach everyone else how it's done! Literally! So I don't have to do it myself anymore! ...no? Eh fine just go have fun then and leave me to it!",
-                        "NextIndex": -1,
+                        "NextIndex": 9999,
                         "Name": ""
                     }
                 ]
@@ -13879,7 +13879,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "Ayyyy that's how it's done! I'll give you access to my tasks have fun!",
-                        "NextIndex": -1,
+                        "NextIndex": 9999,
                         "Name": ""
                     }
                 ]
@@ -13965,7 +13965,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "You can access the rift from the World Map... <br> <br> I wonder when those Null Nightmares are gonna join me for brunch they're 5 decades late! Eh any year now I'm sure they'll show up...",
-                        "NextIndex": -1,
+                        "NextIndex": 7,
                         "Name": ""
                     }
                 ]
@@ -14139,7 +14139,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "ONE OF US! ONE OF US!",
-                        "NextIndex": -1,
+                        "NextIndex": 14,
                         "Name": ""
                     }
                 ]
@@ -14195,7 +14195,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "Spring spring spring!! Yippie!! Nice nametag its so poggers!",
-                        "NextIndex": -1,
+                        "NextIndex": 4,
                         "Name": ""
                     }
                 ]
@@ -14206,9 +14206,9 @@ export const initNpcRepo = () => {
                     "world": "Unknown",
                     "noQuest": 0,
                     "type": "Unknown",
-                    "birthWeight": 5.38,
-                    "starSign": "Aquarius",
-                    "mothersMaidenName": "Norquist",
+                    "birthWeight": 3.91,
+                    "starSign": "Capricorn",
+                    "mothersMaidenName": "Kalleg",
                     "notes": " "
                 },
                 "quests": {
@@ -14341,6 +14341,539 @@ export const initNpcRepo = () => {
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "You absolute legend! You made this tired mole very happy I really never thought I'd see the day that someone stood up to the boss!",
                         "NextIndex": 10,
+                        "Name": ""
+                    }
+                ]
+            }),
+        new NpcBase("Monolith", <NpcModel>{
+                "head": <NpcHeadModel>{
+                    "location": "Unknown",
+                    "world": "Unknown",
+                    "noQuest": 0,
+                    "type": "Unknown",
+                    "birthWeight": 2.77,
+                    "starSign": "Aquarius",
+                    "mothersMaidenName": "Sawyer",
+                    "notes": " "
+                },
+                "quests": {
+                    "Surface Level Jealousy": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "... what do you mean I 'remind you of the Statue Man from Blunder Hills'..?? Bah you're bluffing... <br> QUEST:Prove you know the Statue Man by leveling up Statues to Lv 250 total and bringing 17 different statues",
+                        "NextIndex": 3,
+                        "Name": "Surface Level Jealousy",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 1,
+                        "NoSpaceIndex": 2,
+                        "Rewards": [<ComponentModel>{"item": "Timecandy5", "quantity": 1}, <ComponentModel>{"item": "Pearl5", "quantity": 2}],
+                        "QuestName": "Monolith1",
+                        "Difficulty": 2,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Monolith1",
+                        "CustomArray": [
+                            <CustomReqModel>{"desc": "Total Statue LV:", "finalV": 250, "type": "GreaterEqual", "startV": 0},
+                            <CustomReqModel>{
+                                "desc": "Unique Statues in Inv:",
+                                "finalV": 17,
+                                "type": "GreaterEqual",
+                                "startV": 0
+                            }
+                        ]
+                    },
+                    "Onyx Statue Crafting": <ItemQuestModel>{
+                        "Type": QuestTypeEnum.ItemsAndSpaceRequired,
+                        "DialogueText": "NOTE: DO THIS QUEST ASAP!! <br> Before you cast your final judgement on who is superior me or the Statue Man let me first show you what I am capable of... <br> QUEST:Bring some statues to the monolith and youll get to make ONYX STATUES!",
+                        "NextIndex": 6,
+                        "Name": "Onyx Statue Crafting",
+                        "ConsumeItems": true,
+                        "InventorySpacesNeeded": 3,
+                        "NoSpaceIndex": 5,
+                        "Rewards": [
+                            <ComponentModel>{"item": "SmithingHammerChisel3", "quantity": 1},
+                            <ComponentModel>{"item": "Pearl6", "quantity": 2},
+                            <ComponentModel>{"item": "Pearl5", "quantity": 4}
+                        ],
+                        "QuestName": "Monolith2",
+                        "Difficulty": 6,
+                        "note": <NoteModel>{"note": " "},
+                        "ItemReq": [<ComponentModel>{"item": "EquipmentStatues1", "quantity": 20000}]
+                    },
+                    "A Lack of Modesty": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Now that there are no qualms over who creates the superior statue go out and gather as many as you can. My victory must be known throughout the worlds! <br> QUEST:Manually loot statues from drops",
+                        "NextIndex": 9,
+                        "Name": "A Lack of Modesty",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 3,
+                        "NoSpaceIndex": 8,
+                        "Rewards": [
+                            <TalentRewardModel>{"item": "TalentBook1", "quantity": 3654150},
+                            <ComponentModel>{"item": "EquipmentStatues18", "quantity": 10000},
+                            <ComponentModel>{"item": "EquipmentStatues6", "quantity": 10000}
+                        ],
+                        "QuestName": "Monolith3",
+                        "Difficulty": 9,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Monolith3",
+                        "CustomArray": [<CustomReqModel>{"desc": "Statues Looted:", "finalV": 100000, "type": "GreaterEqual", "startV": 0}]
+                    }
+                },
+                "dialogue": [
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Observe... bear witness to impeccable shape and form...",
+                        "NextIndex": 1,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "... what do you mean I 'remind you of the Statue Man from Blunder Hills'..?? Bah you're bluffing... <br> QUEST:Prove you know the Statue Man by leveling up Statues to Lv 250 total and bringing 17 different statues",
+                        "NextIndex": 3,
+                        "Name": "Surface Level Jealousy"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 1,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "By the divine you DO know the Statue Man... you say his surface shines brighter than mine his stature glossier than that which stands before you..?",
+                        "NextIndex": 4,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.ItemsAndSpaceRequired,
+                        "DialogueText": "NOTE: DO THIS QUEST ASAP!! <br> Before you cast your final judgement on who is superior me or the Statue Man let me first show you what I am capable of... <br> QUEST:Bring some statues to the monolith and youll get to make ONYX STATUES!",
+                        "NextIndex": 6,
+                        "Name": "Onyx Statue Crafting"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 4,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "I have turned your Power Statue into an Onyx Power Statue... you no doubt would rather see the Statue Man in his onyx form and indirectly prove me to be the most beautiful aesthetic object!",
+                        "NextIndex": 7,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Now that there are no qualms over who creates the superior statue go out and gather as many as you can. My victory must be known throughout the worlds! <br> QUEST:Manually loot statues from drops",
+                        "NextIndex": 9,
+                        "Name": "A Lack of Modesty"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 7,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Magnificent... and to think that my brilliance that irradiates from the surface of my being was ever called into question bluhahugue!",
+                        "NextIndex": 9,
+                        "Name": ""
+                    }
+                ]
+            }),
+        new NpcBase("Royal Worm", <NpcModel>{
+                "head": <NpcHeadModel>{
+                    "location": "Unknown",
+                    "world": "Unknown",
+                    "noQuest": 0,
+                    "type": "Unknown",
+                    "birthWeight": 1.1,
+                    "starSign": "Scorpio",
+                    "mothersMaidenName": "Mills",
+                    "notes": " "
+                },
+                "quests": {
+                    "Let the Tails Hit the Floor": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "You will?? Aw yea! Ok uh go kill all those peasant worms over and over fill the platforms with their bodies! Don't worry they respawn hah it's just a royal prank! <br> QUEST:Fill all 3 platforms with worm tails.",
+                        "NextIndex": 6,
+                        "Name": "Let the Tails Hit the Floor",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 3,
+                        "NoSpaceIndex": 5,
+                        "Rewards": [
+                            <TalentRewardModel>{"item": "TalentBook1", "quantity": 3617150},
+                            <ComponentModel>{"item": "EquipmentStatues6", "quantity": 100},
+                            <ComponentModel>{"item": "Pearl5", "quantity": 2}
+                        ],
+                        "QuestName": "Royal Worm1",
+                        "Difficulty": 2,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Royal Worm1",
+                        "CustomArray": [<CustomReqModel>{"desc": "Space filled:", "finalV": 1540, "type": "GreaterEqual", "startV": 0}]
+                    },
+                    "Bothering Mutants": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Ok that was hilarious. Lets do it again! No no lets go after uh the giant mushroom! You know near town? <br> QUEST:Spawn and defeat 5 Mutated Mush monsters by dropping toxic sludge oil on those spores near town...",
+                        "NextIndex": 9,
+                        "Name": "Bothering Mutants",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 1,
+                        "NoSpaceIndex": 8,
+                        "Rewards": [<ComponentModel>{"item": "Bullet3", "quantity": 5000}, <ComponentModel>{"item": "Pearl5", "quantity": 4}],
+                        "QuestName": "Royal Worm2",
+                        "Difficulty": 4,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Royal Worm2",
+                        "CustomArray": [<CustomReqModel>{
+                            "desc": "Mutated Mush Spawnkills:",
+                            "finalV": 5,
+                            "type": "GreaterEqual",
+                            "startV": 0
+                        }]
+                    },
+                    "Royal Score": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Another cracker of a prank mutating random mushrooms into sentience then destroying them haha! Ok lets go to the arcade <br> QUEST:By arcade he means colosseum... get a score of 48500000",
+                        "NextIndex": 12,
+                        "Name": "Royal Score",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 2,
+                        "NoSpaceIndex": 11,
+                        "Rewards": [<ComponentModel>{"item": "Ladle", "quantity": 40}, <ComponentModel>{"item": "Pearl5", "quantity": 2}],
+                        "QuestName": "Royal Worm3",
+                        "Difficulty": 5,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Royal Worm3",
+                        "CustomArray": [<CustomReqModel>{
+                            "desc": "Colosseum Score:",
+                            "finalV": 48500000,
+                            "type": "GreaterEqual",
+                            "startV": 0
+                        }]
+                    },
+                    "Downfall of the Hammer Things": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Ok ok I've got a great one. Those hammer eyeballs near the boss are soo weird and they think they're soo smart... lets put a stop to it! <br> QUEST:Defeat all Stilted Seekers before they respawn with Big Brain prayer on.",
+                        "NextIndex": 15,
+                        "Name": "Downfall of the Hammer Things",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 2,
+                        "NoSpaceIndex": 14,
+                        "Rewards": [<ComponentModel>{"item": "CatchingNet6", "quantity": 1}, <ComponentModel>{"item": "Pearl4", "quantity": 4}],
+                        "QuestName": "Royal Worm4",
+                        "Difficulty": 4,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Royal Worm4",
+                        "CustomArray": [
+                            <CustomReqModel>{
+                                "desc": "Kill Stilters without respawn:",
+                                "finalV": 1,
+                                "type": "GreaterEqual",
+                                "startV": 0
+                            },
+                            <CustomReqModel>{"desc": "Big Brain Time:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                        ]
+                    },
+                    "Kickin' the Can": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Oooh the wizard game I've been meaning to get someone to beat that for me for ages go do that! <br> QUEST:Reach Wave 55 in Clash of Cans Tower Defence and do a lot of personal damage by yourself.",
+                        "NextIndex": 18,
+                        "Name": "Kickin' the Can",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 3,
+                        "NoSpaceIndex": 17,
+                        "Rewards": [
+                            <ComponentModel>{"item": "EquipmentStatues17", "quantity": 2500},
+                            <ComponentModel>{"item": "FoodWorship1", "quantity": 5000}
+                        ],
+                        "QuestName": "Royal Worm5",
+                        "Difficulty": 6,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Royal Worm5",
+                        "CustomArray": [
+                            <CustomReqModel>{"desc": "Clash of Cans wave:", "finalV": 55, "type": "GreaterEqual", "startV": 0},
+                            <CustomReqModel>{"desc": "Person DMG dealt:", "finalV": 5000, "type": "GreaterEqual", "startV": 0}
+                        ]
+                    },
+                    "A Royal Gift": <ItemQuestModel>{
+                        "Type": QuestTypeEnum.ItemsAndSpaceRequired,
+                        "DialogueText": "I'm bored. Get me something you think I'd like and a lot of it! <br> QUEST: Bring an entire 10000000 greenstack of Worm Tails",
+                        "NextIndex": 21,
+                        "Name": "A Royal Gift",
+                        "ConsumeItems": true,
+                        "InventorySpacesNeeded": 2,
+                        "NoSpaceIndex": 20,
+                        "Rewards": [<ComponentModel>{"item": "Weight14", "quantity": 1}, <ComponentModel>{"item": "GalaxyC1b", "quantity": 30}],
+                        "QuestName": "Royal Worm6",
+                        "Difficulty": 7,
+                        "note": <NoteModel>{"note": " "},
+                        "ItemReq": [<ComponentModel>{"item": "GalaxyB2", "quantity": 10000000}]
+                    },
+                    "Bossin' the Boss": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Anyway you've been fun to boss around but I think we are done h... wait boss... yea! Go BOSS around the BOSS get it? <br> QUEST:Defeat the Troll boss on Nightmare 100 times.",
+                        "NextIndex": 24,
+                        "Name": "Bossin' the Boss",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 3,
+                        "NoSpaceIndex": 23,
+                        "Rewards": [<ComponentModel>{"item": "Timecandy9", "quantity": 1}, <ComponentModel>{"item": "Pearl6", "quantity": 5}],
+                        "QuestName": "Royal Worm7",
+                        "Difficulty": 8,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Royal Worm7",
+                        "CustomArray": [<CustomReqModel>{
+                            "desc": "Blitzkrieg Troll Defeated:",
+                            "finalV": 100,
+                            "type": "GreaterEqual",
+                            "startV": 0
+                        }]
+                    },
+                    "Normie Bidding": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "But fine if you do EVERYONES bidding I'll maybe think about considering the possibility of giving you a trophy perhaps... <br> QUEST:Do all other Quests here in World 4.",
+                        "NextIndex": 30,
+                        "Name": "Normie Bidding",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 3,
+                        "NoSpaceIndex": 29,
+                        "Rewards": [<ComponentModel>{"item": "Timecandy6", "quantity": 1}, <ComponentModel>{"item": "Pearl5", "quantity": 6}],
+                        "QuestName": "Royal Worm8",
+                        "Difficulty": 7,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Royal Worm8",
+                        "CustomArray": [<CustomReqModel>{"desc": "W4 Quests Done:", "finalV": 22, "type": "GreaterEqual", "startV": 0}]
+                    },
+                    "Royal Bidding": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Crystal check. Go on do it. I mean I totally could myself EASILY but I'm already royal and like yea... <br> QUEST:Defeat 25000 Crystal Custards",
+                        "NextIndex": 34,
+                        "Name": "Royal Bidding",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 3,
+                        "NoSpaceIndex": 33,
+                        "Rewards": [
+                            <ComponentModel>{"item": "Trophy19", "quantity": 1},
+                            <ComponentModel>{"item": "Gfoodcoupon", "quantity": 5000},
+                            <ComponentModel>{"item": "Pearl6", "quantity": 7}
+                        ],
+                        "QuestName": "Royal Worm9",
+                        "Difficulty": 1,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Royal Worm9",
+                        "CustomArray": [<CustomReqModel>{"desc": "Crystal Kills:", "finalV": 25000, "type": "GreaterEqual", "startV": 0}]
+                    }
+                },
+                "dialogue": [
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Did you REALLY just approach without bowing first?? Do you not see my polished golden skin??",
+                        "NextIndex": 1,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "I'll have you know that I worked hard to be born into the royal family I EARNED it! How did I earn it you ask? Well you see by me being born I uh... simply put the effort I put into... huh...",
+                        "NextIndex": 2,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "No hang on see like um me being born a royal shows that... hrmmmm...",
+                        "NextIndex": 3,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Ok point taken I guess being born into something doesn't mean you deserve it... but I am still royal so can you still do stuff for me anyway even if I don't deserve it? Royal decree?? Pls pls pls",
+                        "NextIndex": 4,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "You will?? Aw yea! Ok uh go kill all those peasant worms over and over fill the platforms with their bodies! Don't worry they respawn hah it's just a royal prank! <br> QUEST:Fill all 3 platforms with worm tails.",
+                        "NextIndex": 6,
+                        "Name": "Let the Tails Hit the Floor"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 4,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Hehehe that'll teach those worms for not being born royal!!",
+                        "NextIndex": 7,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Ok that was hilarious. Lets do it again! No no lets go after uh the giant mushroom! You know near town? <br> QUEST:Spawn and defeat 5 Mutated Mush monsters by dropping toxic sludge oil on those spores near town...",
+                        "NextIndex": 9,
+                        "Name": "Bothering Mutants"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 7,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Hehehe that'll teach those mushrooms for not being born royal!!",
+                        "NextIndex": 10,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Another cracker of a prank mutating random mushrooms into sentience then destroying them haha! Ok lets go to the arcade <br> QUEST:By arcade he means colosseum... get a score of 48500000",
+                        "NextIndex": 12,
+                        "Name": "Royal Score"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 10,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Hehehe that'll teach those arcade workers for not being born royal!!",
+                        "NextIndex": 13,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Ok ok I've got a great one. Those hammer eyeballs near the boss are soo weird and they think they're soo smart... lets put a stop to it! <br> QUEST:Defeat all Stilted Seekers before they respawn with Big Brain prayer on.",
+                        "NextIndex": 15,
+                        "Name": "Downfall of the Hammer Things"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 13,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Hehehe that'll teach those hammer things for being so smart and intelligent and always making me jealous and insecure!!! Err uh I mean that'll teach them for not being born royal!!",
+                        "NextIndex": 16,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Oooh the wizard game I've been meaning to get someone to beat that for me for ages go do that! <br> QUEST:Reach Wave 55 in Clash of Cans Tower Defence and do a lot of personal damage by yourself.",
+                        "NextIndex": 18,
+                        "Name": "Kickin' the Can"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 16,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Hehehe that'll teach those cans for not being born royal!",
+                        "NextIndex": 19,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.ItemsAndSpaceRequired,
+                        "DialogueText": "I'm bored. Get me something you think I'd like and a lot of it! <br> QUEST: Bring an entire 10000000 greenstack of Worm Tails",
+                        "NextIndex": 21,
+                        "Name": "A Royal Gift"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 19,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Hehehe that'll teach those... oh worms again yea they had it coming but like I thought you were gonna bring me something to eat...",
+                        "NextIndex": 22,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Anyway you've been fun to boss around but I think we are done h... wait boss... yea! Go BOSS around the BOSS get it? <br> QUEST:Defeat the Troll boss on Nightmare 100 times.",
+                        "NextIndex": 24,
+                        "Name": "Bossin' the Boss"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 22,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Hehehe that'll teach that stinky boss!",
+                        "NextIndex": 25,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.LevelReq,
+                        "DialogueText": "Thats enough of you. Sure you were useful for a while but like now you arent... <br> Return at Class Lv. 300",
+                        "NextIndex": 26,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Holy who the what now?? You're level THREE HUNDRED??? Well ok you suddenly appear very useful again! And uh... you like still will do my bidding right? Royal this and that?",
+                        "NextIndex": 27,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "You want the completion trophy? Humph... a non-royal like yourself doesn't DESERVE a trophy you dont work nearly has hard as royals like ME do!",
+                        "NextIndex": 28,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "But fine if you do EVERYONES bidding I'll maybe think about considering the possibility of giving you a trophy perhaps... <br> QUEST:Do all other Quests here in World 4.",
+                        "NextIndex": 30,
+                        "Name": "Normie Bidding"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 28,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "shiwha??? You did them all??? Pfft I mean sure ANYONE can do the bidding of Non-Royals thats easy...",
+                        "NextIndex": 31,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "No. If you REALLY want that trophy you need to do something truly tough that proves your ACTUALLY a royal in disguise...",
+                        "NextIndex": 32,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "Crystal check. Go on do it. I mean I totally could myself EASILY but I'm already royal and like yea... <br> QUEST:Defeat 25000 Crystal Custards",
+                        "NextIndex": 34,
+                        "Name": "Royal Bidding"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Clear some inventory Space!!",
+                        "NextIndex": 32,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "You're definitely royal. I don't know where you were born but that was a royal quantity of effort no doubt. I mean I could totally see MYSELF putting in that amount of effort! I-i-if I ever needed to of course!",
+                        "NextIndex": 34,
                         "Name": ""
                     }
                 ]

@@ -2039,7 +2039,7 @@ export const initEnemyRepo = () => {
                     "enemy": "mushG",
                     "world": "Blunder Hills",
                     "map": <MapNameModel>{"intName": "GrasslandsA", "name": "Spore Meadows", "id": 1},
-                    "portalRequirements": [11]
+                    "portalRequirements": [21]
                 },
                 "navigation": <EnemyNavModel>{
                     "prev": undefined,
@@ -2089,7 +2089,7 @@ export const initEnemyRepo = () => {
                     "enemy": "frogG",
                     "world": "Blunder Hills",
                     "map": <MapNameModel>{"intName": "GrasslandsB", "name": "Froggy Fields", "id": 2},
-                    "portalRequirements": [15]
+                    "portalRequirements": [30]
                 },
                 "navigation": <EnemyNavModel>{
                     "prev": "mushR",

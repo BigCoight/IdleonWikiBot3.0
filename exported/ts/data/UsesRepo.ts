@@ -24453,6 +24453,13 @@ export const initUsesRepo = () => {
                         "name": "The Scientific Method, According to a Rock Requirements",
                         "amount": 20,
                         "type": "quest"
+                    },
+                    <UseModel>{
+                        "repoSource": "NpcRepo",
+                        "key": "Monolith@Onyx Statue Crafting",
+                        "name": "Onyx Statue Crafting Requirements",
+                        "amount": 20000,
+                        "type": "quest"
                     }
                 ],
                 "typeGen": TypeGenEnum.dStatueStone,
@@ -25289,6 +25296,13 @@ export const initUsesRepo = () => {
                         "key": "Rift Ripper@Entering The Rift...",
                         "name": "Entering The Rift... Requirements",
                         "amount": 592,
+                        "type": "quest"
+                    },
+                    <UseModel>{
+                        "repoSource": "NpcRepo",
+                        "key": "Royal Worm@A Royal Gift",
+                        "name": "A Royal Gift Requirements",
+                        "amount": 10000000,
                         "type": "quest"
                     }
                 ],

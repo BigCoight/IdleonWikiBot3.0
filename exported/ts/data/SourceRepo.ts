@@ -1639,6 +1639,10 @@ export const initSourceRepo = () => {
                 "sources": [
                     <SourceModel>{"wikiName": "[[Smithing]]", "txtName": "Smithing"},
                     <SourceModel>{
+                        "wikiName": "[[Royal Worm#Downfall of the Hammer Things|Downfall of the Hammer Things]]",
+                        "txtName": "Royal Worm: Downfall of the Hammer Things"
+                    },
+                    <SourceModel>{
                         "wikiName": "[[Tasks/Unlocks|Recipe from Task Unlocks Tab 3]]",
                         "txtName": "Task Unlocks Tab 3"
                     }
@@ -2055,6 +2059,10 @@ export const initSourceRepo = () => {
         new SourcesBase("FoodWorship1", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[Smithing]]", "txtName": "Smithing"},
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Kickin' the Can|Kickin' the Can]]",
+                        "txtName": "Royal Worm: Kickin' the Can"
+                    },
                     <SourceModel>{
                         "wikiName": "[[Tasks/Unlocks|Recipe from Task Unlocks Tab 3]]",
                         "txtName": "Task Unlocks Tab 3"
@@ -3009,7 +3017,11 @@ export const initSourceRepo = () => {
         new SourcesBase("Bullet3", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[Smithing]]", "txtName": "Smithing"},
-                    <SourceModel>{"wikiName": "[[Biggole Mole|Recipe from Biggole Mole]]", "txtName": "Biggole Mole"}
+                    <SourceModel>{"wikiName": "[[Biggole Mole|Recipe from Biggole Mole]]", "txtName": "Biggole Mole"},
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Bothering Mutants|Bothering Mutants]]",
+                        "txtName": "Royal Worm: Bothering Mutants"
+                    }
                 ],
                 "recipeFrom": [<SourceModel>{"wikiName": "[[Biggole Mole]]", "txtName": "Biggole Mole"}],
                 "questAss": []
@@ -3472,6 +3484,14 @@ export const initSourceRepo = () => {
                     <SourceModel>{
                         "wikiName": "[[Hoggindaz#Taking Samples|Taking Samples]]",
                         "txtName": "Hoggindaz: Taking Samples"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Monolith#A Lack of Modesty|A Lack of Modesty]]",
+                        "txtName": "Monolith: A Lack of Modesty"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Let the Tails Hit the Floor|Let the Tails Hit the Floor]]",
+                        "txtName": "Royal Worm: Let the Tails Hit the Floor"
                     },
                     <SourceModel>{"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"}
                 ],
@@ -5392,7 +5412,11 @@ export const initSourceRepo = () => {
         new SourcesBase("EquipmentStatues17", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[Sir Stache]]", "txtName": "Sir Stache"},
-                    <SourceModel>{"wikiName": "[[Quenchie]]", "txtName": "Quenchie"}
+                    <SourceModel>{"wikiName": "[[Quenchie]]", "txtName": "Quenchie"},
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Kickin' the Can|Kickin' the Can]]",
+                        "txtName": "Royal Worm: Kickin' the Can"
+                    }
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -5892,6 +5916,10 @@ export const initSourceRepo = () => {
                         "wikiName": "[[Nebula Neddy#Task Requirement Affirmative|Task Requirement Affirmative]]",
                         "txtName": "Nebula Neddy: Task Requirement Affirmative"
                     },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Royal Score|Royal Score]]",
+                        "txtName": "Royal Worm: Royal Score"
+                    },
                     <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
                 ],
                 "recipeFrom": [],
@@ -6068,7 +6096,13 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("GalaxyC1b", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Clammie]]", "txtName": "Clammie"}],
+                "sources": [
+                    <SourceModel>{"wikiName": "[[Clammie]]", "txtName": "Clammie"},
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#A Royal Gift|A Royal Gift]]",
+                        "txtName": "Royal Worm: A Royal Gift"
+                    }
+                ],
                 "recipeFrom": [],
                 "questAss": []
             }),
@@ -8247,6 +8281,14 @@ export const initSourceRepo = () => {
                         "txtName": "Tiki Chief: Brochure Building"
                     },
                     <SourceModel>{
+                        "wikiName": "[[Monolith#A Lack of Modesty|A Lack of Modesty]]",
+                        "txtName": "Monolith: A Lack of Modesty"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Let the Tails Hit the Floor|Let the Tails Hit the Floor]]",
+                        "txtName": "Royal Worm: Let the Tails Hit the Floor"
+                    },
+                    <SourceModel>{
                         "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                         "txtName": "Alchemy: Level up Gift"
                     }
@@ -8358,7 +8400,11 @@ export const initSourceRepo = () => {
                         "txtName": "Post Office: Alpine Suppliers"
                     },
                     <SourceModel>{"wikiName": "[[DropTable14]]", "txtName": "DropTable14"},
-                    <SourceModel>{"wikiName": "[[DropTable15]]", "txtName": "DropTable15"}
+                    <SourceModel>{"wikiName": "[[DropTable15]]", "txtName": "DropTable15"},
+                    <SourceModel>{
+                        "wikiName": "[[Monolith#A Lack of Modesty|A Lack of Modesty]]",
+                        "txtName": "Monolith: A Lack of Modesty"
+                    }
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -9977,6 +10023,10 @@ export const initSourceRepo = () => {
                         "txtName": "Walupiggy: Treasure Hunt 2"
                     },
                     <SourceModel>{
+                        "wikiName": "[[Monolith#Surface Level Jealousy|Surface Level Jealousy]]",
+                        "txtName": "Monolith: Surface Level Jealousy"
+                    },
+                    <SourceModel>{
                         "wikiName": "[[Alchemy#Level up Gift|Level up Gift]]",
                         "txtName": "Alchemy: Level up Gift"
                     }
@@ -9990,6 +10040,10 @@ export const initSourceRepo = () => {
                     <SourceModel>{
                         "wikiName": "[[Nebulyte#Species Slayer|Species Slayer]]",
                         "txtName": "Nebulyte: Species Slayer"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Normie Bidding|Normie Bidding]]",
+                        "txtName": "Royal Worm: Normie Bidding"
                     }
                 ],
                 "recipeFrom": [],
@@ -11212,6 +11266,30 @@ export const initSourceRepo = () => {
                         "wikiName": "[[Tired Mole#Like taking Keys from a Crawler|Like taking Keys from a Crawler]]",
                         "txtName": "Tired Mole: Like taking Keys from a Crawler"
                     },
+                    <SourceModel>{
+                        "wikiName": "[[Monolith#Surface Level Jealousy|Surface Level Jealousy]]",
+                        "txtName": "Monolith: Surface Level Jealousy"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Monolith#Onyx Statue Crafting|Onyx Statue Crafting]]",
+                        "txtName": "Monolith: Onyx Statue Crafting"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Let the Tails Hit the Floor|Let the Tails Hit the Floor]]",
+                        "txtName": "Royal Worm: Let the Tails Hit the Floor"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Bothering Mutants|Bothering Mutants]]",
+                        "txtName": "Royal Worm: Bothering Mutants"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Royal Score|Royal Score]]",
+                        "txtName": "Royal Worm: Royal Score"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Normie Bidding|Normie Bidding]]",
+                        "txtName": "Royal Worm: Normie Bidding"
+                    },
                     <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
                     <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"}
                 ],
@@ -11818,6 +11896,10 @@ export const initSourceRepo = () => {
                     <SourceModel>{
                         "wikiName": "[[Nebulyte#Oh Geez Lets Not Think About This One...|Oh Geez Lets Not Think About This One...]]",
                         "txtName": "Nebulyte: Oh Geez Lets Not Think About This One..."
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Bossin' the Boss|Bossin' the Boss]]",
+                        "txtName": "Royal Worm: Bossin' the Boss"
                     }
                 ],
                 "recipeFrom": [],
@@ -11931,6 +12013,10 @@ export const initSourceRepo = () => {
                     <SourceModel>{
                         "wikiName": "[[Walupiggy#Treasure Hunt 3|Treasure Hunt 3]]",
                         "txtName": "Walupiggy: Treasure Hunt 3"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Downfall of the Hammer Things|Downfall of the Hammer Things]]",
+                        "txtName": "Royal Worm: Downfall of the Hammer Things"
                     },
                     <SourceModel>{"wikiName": "[[Skull Shop]]", "txtName": "Killroy Shop"},
                     <SourceModel>{"wikiName": "[[2021 Giftmas Box]]", "txtName": "2021 Giftmas Box"}
@@ -12196,6 +12282,18 @@ export const initSourceRepo = () => {
                     <SourceModel>{
                         "wikiName": "[[Tired Mole#Establishing Order among Molekind|Establishing Order among Molekind]]",
                         "txtName": "Tired Mole: Establishing Order among Molekind"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Monolith#Onyx Statue Crafting|Onyx Statue Crafting]]",
+                        "txtName": "Monolith: Onyx Statue Crafting"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Bossin' the Boss|Bossin' the Boss]]",
+                        "txtName": "Royal Worm: Bossin' the Boss"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Royal Bidding|Royal Bidding]]",
+                        "txtName": "Royal Worm: Royal Bidding"
                     }
                 ],
                 "recipeFrom": [],
@@ -12298,6 +12396,47 @@ export const initSourceRepo = () => {
                         "wikiName": "[[Tired Mole#Divine Endeavor|Divine Endeavor]]",
                         "txtName": "Tired Mole: Divine Endeavor"
                     }
+                ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("SmithingHammerChisel3", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{
+                        "wikiName": "[[Monolith#Onyx Statue Crafting|Onyx Statue Crafting]]",
+                        "txtName": "Monolith: Onyx Statue Crafting"
+                    }
+                ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("Weight14", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#A Royal Gift|A Royal Gift]]",
+                        "txtName": "Royal Worm: A Royal Gift"
+                    }
+                ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("Trophy19", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Royal Bidding|Royal Bidding]]",
+                        "txtName": "Royal Worm: Royal Bidding"
+                    }
+                ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("Gfoodcoupon", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{
+                        "wikiName": "[[Royal Worm#Royal Bidding|Royal Bidding]]",
+                        "txtName": "Royal Worm: Royal Bidding"
+                    },
+                    <SourceModel>{"wikiName": "[[Arcade]]", "txtName": "Arcade"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -14718,11 +14857,6 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("StampC4", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Arcade]]", "txtName": "Arcade"}],
-                "recipeFrom": [],
-                "questAss": []
-            }),
-        new SourcesBase("Gfoodcoupon", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Arcade]]", "txtName": "Arcade"}],
                 "recipeFrom": [],
                 "questAss": []

@@ -88,7 +88,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("189", steam = True)
+idleonReader = IdleonReader("190", steam = True)
 
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader

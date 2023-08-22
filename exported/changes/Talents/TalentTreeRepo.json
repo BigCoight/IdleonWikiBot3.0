@@ -1,1 +1,36 @@
-{"new": {}, "changes": {}}
+{
+    "new": {},
+    "changes": {
+        "Special Talent 1": {
+            "talents": {
+                "Studious Quester": {
+                    "description": [
+                        "Quests give +{% more exp than normal",
+                        "Each Completed Quest gives +0.10% All Skill efficiency. Total bonus caps at +{%"
+                    ],
+                    "x1": [120, 0.4],
+                    "x2": [40, 0],
+                    "funcX": ["decay", "add"],
+                    "lvlUpText": ["+{% Quest Exp", "+{% Skill Eff"]
+                }
+            }
+        },
+        "Special Talent 4": {
+            "talents": {
+                "Monolithialism": {
+                    "name": [" ", "Monolithialism"],
+                    "description": [" ", "+{% MultiKill per unique Onyx Statue you have"],
+                    "x1": [" ", 30],
+                    "x2": [" ", 100],
+                    "funcX": [" ", "decay"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", "+{% Multikill Per Onyx"],
+                    "skillIndex": [" ", 654],
+                    "activeData": [" ", null]
+                }
+            }
+        }
+    }
+}

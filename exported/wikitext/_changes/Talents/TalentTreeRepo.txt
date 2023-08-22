@@ -1,5 +1,31 @@
 <div class="GenericFlex"><div class="GenericChild">
 ==Changes==
+{{patchnote/head|changed=Special Talent 1}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|Studious Quester|1}}
+{{patchnote|Description|Quests give +{% more exp than normal|Each Completed Quest gives +0.10% All Skill efficiency. Total bonus caps at +{%|2}}
+{{patchnote|X 1|120|0.4|2}}
+{{patchnote|X 2|40|0|2}}
+{{patchnote|Func X|decay|add|2}}
+{{patchnote|Lvl Up Text|+{% Quest Exp|+{% Skill Eff|2}}
+|}
+
+{{patchnote/head|changed=Special Talent 4}}
+{{patchnote/bold|Talents|0}}
+{{patchnote/bold|Monolithialism|1}}
+{{patchnote|Name| |Monolithialism|2}}
+{{patchnote|Description| |+{% MultiKill per unique Onyx Statue you have|2}}
+{{patchnote|X 1| |30|2}}
+{{patchnote|X 2| |100|2}}
+{{patchnote|Func X| |decay|2}}
+{{patchnote|Y 1| |0|2}}
+{{patchnote|Y 2| |0|2}}
+{{patchnote|Func Y| |txt|2}}
+{{patchnote|Lvl Up Text| |+{% Multikill Per Onyx|2}}
+{{patchnote|Skill Index| |654|2}}
+{{patchnote|Active Data| |None|2}}
+|}
+
 </div><div class="GenericChild">
 ==New==
 </div></div>

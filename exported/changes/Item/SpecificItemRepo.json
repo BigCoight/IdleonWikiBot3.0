@@ -1,43 +1,45 @@
 {
     "new": {
-        "EquipmentNametag8": {
-            "displayName": "Summer Shovel Nametag",
-            "sellPrice": 1,
-            "Type": "Nametag",
-            "lvReqToCraft": 55,
-            "lvReqToEquip": 1,
+        "Trophy19": {
+            "displayName": "Nebula Royal",
+            "sellPrice": 69,
+            "Type": "Trophy",
+            "lvReqToCraft": 1,
+            "lvReqToEquip": 320,
             "Class": "All",
-            "Weapon_Power": 4,
-            "STR": 4,
-            "AGI": 4,
-            "WIS": 4,
-            "LUK": 4,
+            "Weapon_Power": 0,
+            "STR": 10,
+            "AGI": 10,
+            "WIS": 10,
+            "LUK": 10,
             "Defence": 0,
-            "miscUp1": "15% Xp From Monsters",
-            "miscUp2": "4% All Stats",
+            "miscUp1": "50% Skill Exp",
+            "miscUp2": "00",
             "Upgrade_Slots_Left": 0,
             "Skill": "",
             "Skill_Power": 0
+        },
+        "SmithingHammerChisel3": {
+            "displayName": "Onyx Tools",
+            "sellPrice": 12500,
+            "Type": "Quest Item",
+            "description": "Drop this on the statue man, and you'll turn him to onyx and unlock the ability to trade in statues for Onyx rank! "
         }
     },
     "changes": {
-        "StoneAeB": {
-            "description": [
-                "Drag onto any Armor to apply. +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful ",
-                "Drag onto any Armor to apply. +3 Defence, +1 Random Stat. Success Chance; 60% Uses up 1 slots only if Successful "
-            ]
+        "EquipmentShirts2": {
+            "AGI": [1, 3],
+            "WIS": [2, 4],
+            "Defence": [3, 4],
+            "miscUp1": ["", "2% Xp From Monsters"]
         },
-        "StoneT1eb": {
-            "description": [
-                "Drag onto any Tool to apply. +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful ",
-                "Drag onto any Tool to apply. +2 Tool Skill Power, +3 Defence. Success Chance; 50% Uses up 1 slots only if Successful "
-            ]
-        },
-        "StoneWeb": {
-            "description": [
-                "Drag onto any Weapon to apply. +1 Random Stat, +3 Defence. Success Chance; 40% Uses up 1 slots only if Successful ",
-                "Drag onto any Weapon to apply. +3 Weapon Power, +2 Defence. Success Chance; 40% Uses up 1 slots only if Successful "
-            ]
+        "EquipmentHats7": {"AGI": [1, 0], "LUK": [0, 2]},
+        "EquipmentWeapons2": {
+            "Weapon_Power": [690, 2500],
+            "STR": [0, 10000],
+            "AGI": [80, 2500],
+            "WIS": [0, 1000],
+            "LUK": [420, 4200]
         }
     }
 }

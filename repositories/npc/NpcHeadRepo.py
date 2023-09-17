@@ -69,10 +69,13 @@ class NpcHeadRepo(FileRepository[NpcHead]):
 		notes = " "
 		if "notes" in selectedTemplate:
 			notes = re.escape(cls.getParsed(selectedTemplate, "notes")).replace('"', "'")
+		noQuest = 0
+		if "noquest" in selectedTemplate:
+			noQuest = cls.getParsed(selectedTemplate, "noquest")
 		return NpcHead(
 			location = cls.getParsed(selectedTemplate, "location"),
 			world = codeWorld if codeWorld else cls.getParsed(selectedTemplate, "world"),
-			noQuest = cls.getParsed(selectedTemplate, "noquest"),
+			noQuest = noQuest,
 			type = typ,
 			birthWeight = cls.getParsed(selectedTemplate, "birthweight"),
 			starSign = cls.getParsed(selectedTemplate, "starsign"),

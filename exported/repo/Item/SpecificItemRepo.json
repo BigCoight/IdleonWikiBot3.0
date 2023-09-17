@@ -1387,6 +1387,27 @@
         "Skill": "",
         "Skill_Power": 0
     },
+    "EquipmentHats84": {
+        "internalName": "EquipmentHats84",
+        "displayName": "The Crow Perch",
+        "sellPrice": 1,
+        "typeGen": "aHelmet",
+        "Type": "Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 1,
+        "STR": 0,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 1,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 1,
+        "Skill": "",
+        "Skill_Power": 0
+    },
     "EquipmentHats21": {
         "internalName": "EquipmentHats21",
         "displayName": "Birthday Hat",
@@ -6037,7 +6058,7 @@
         "lvReqToCraft": 55,
         "lvReqToEquip": 9,
         "Class": "All",
-        "Weapon_Power": 4,
+        "Weapon_Power": 0,
         "STR": 6,
         "AGI": 2,
         "WIS": 0,
@@ -6046,8 +6067,8 @@
         "miscUp1": "20Yellow Depth",
         "miscUp2": "00",
         "Upgrade_Slots_Left": 2,
-        "Skill": "",
-        "Skill_Power": 0
+        "Skill": "Fishing",
+        "Skill_Power": 4
     },
     "EquipmentRingsFishing2": {
         "internalName": "EquipmentRingsFishing2",
@@ -6058,7 +6079,7 @@
         "lvReqToCraft": 55,
         "lvReqToEquip": 9,
         "Class": "All",
-        "Weapon_Power": 8,
+        "Weapon_Power": 0,
         "STR": 9,
         "AGI": 3,
         "WIS": 0,
@@ -6067,8 +6088,8 @@
         "miscUp1": "30Red Depth",
         "miscUp2": "00",
         "Upgrade_Slots_Left": 2,
-        "Skill": "",
-        "Skill_Power": 0
+        "Skill": "Fishing",
+        "Skill_Power": 8
     },
     "EquipmentRingsFishing3": {
         "internalName": "EquipmentRingsFishing3",
@@ -6079,7 +6100,7 @@
         "lvReqToCraft": 55,
         "lvReqToEquip": 9,
         "Class": "All",
-        "Weapon_Power": 14,
+        "Weapon_Power": 0,
         "STR": 12,
         "AGI": 4,
         "WIS": 0,
@@ -6088,8 +6109,8 @@
         "miscUp1": "40Purple Depth",
         "miscUp2": "00",
         "Upgrade_Slots_Left": 2,
-        "Skill": "",
-        "Skill_Power": 0
+        "Skill": "Fishing",
+        "Skill_Power": 14
     },
     "EquipmentRings12": {
         "internalName": "EquipmentRings12",
@@ -20440,6 +20461,22 @@
         "typeGen": "dQuest",
         "Type": "Event Box",
         "description": "Hold to open! Contains a random Spring Event goodie, from event cards to foods! ALSO, if you open a total of 500 Baggies, you'll get a limited edition Spring event NAMETAG! "
+    },
+    "Quest76": {
+        "internalName": "Quest76",
+        "displayName": "Silver Pocketwatch",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Event Box",
+        "description": "Hold down to change your daily reset time by 15 minutes. If this item is on the left side of the inventory, it'll DECREASE by 15 minutes. If it is on the right side, it'll INCREASE by 15 minutes. "
+    },
+    "Quest77": {
+        "internalName": "Quest77",
+        "displayName": "Gold Pocketwatch",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Event Box",
+        "description": "Hold down to fast forward a day, restocking shops and triggering various daily rewards and systems. "
     },
     "EquipmentSmithingTabs2": {
         "internalName": "EquipmentSmithingTabs2",

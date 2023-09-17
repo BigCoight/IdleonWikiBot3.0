@@ -44,7 +44,8 @@ class ArmourItem(StatItem):
 
 	@classmethod
 	def isSkill(cls, item: EquipItem) -> str:
-		skill = camelCaseSplitter(item.internalID)[-1]
+		nameWords = ''.join(filter(lambda x: not x.isdigit(), item.internalID))
+		skill = camelCaseSplitter(nameWords)[-1]
 		if skill in Constants.skillNames:
 			return skill
 		return ""

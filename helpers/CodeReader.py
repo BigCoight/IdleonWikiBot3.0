@@ -173,4 +173,10 @@ class IdleonReader:
 
 		self.codeReader.addSection("CompanionDB = function ()", "Companion")
 
+		# Weekly Bosses
+		self.codeReader.addSection("WeeklyBOSS = function ()", "WeeklyBoss")
+		self.codeReader.addSection("WeeklyTASK = function ()", "WeeklyTask")
+		self.codeReader.addSection("WeeklyACTION = function ()", "WeeklyAction")
+		self.codeReader.addSection("WeeklySHOP = function ()", "WeeklyShop")
+
 		self.codeReader.readCode()

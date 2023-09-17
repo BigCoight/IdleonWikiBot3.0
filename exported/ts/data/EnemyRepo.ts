@@ -5383,8 +5383,8 @@ export const initEnemyRepo = () => {
                 },
                 "bossData": <BossDetailsModel>{
                     "health": 25000,
-                    "defence": 40,
-                    "exp": 4000,
+                    "defence": 10,
+                    "exp": 10000,
                     "keys": 1,
                     "attacks": [
                         <BossAttackModel>{"name": "Fireball", "damage": 40},
@@ -5443,7 +5443,7 @@ export const initEnemyRepo = () => {
                 },
                 "bossData": <BossDetailsModel>{
                     "health": 8000000,
-                    "defence": 1750,
+                    "defence": 1350,
                     "exp": 400000,
                     "keys": 5,
                     "attacks": [
@@ -5564,7 +5564,7 @@ export const initEnemyRepo = () => {
                 },
                 "bossData": <BossDetailsModel>{
                     "health": 1000000,
-                    "defence": 350,
+                    "defence": 150,
                     "exp": 100000,
                     "keys": 1,
                     "attacks": [
@@ -5623,7 +5623,7 @@ export const initEnemyRepo = () => {
                 },
                 "bossData": <BossDetailsModel>{
                     "health": 30000000,
-                    "defence": 3500,
+                    "defence": 3000,
                     "exp": 2000000,
                     "keys": 5,
                     "attacks": [
@@ -5740,7 +5740,7 @@ export const initEnemyRepo = () => {
                 },
                 "bossData": <BossDetailsModel>{
                     "health": 20000000,
-                    "defence": 2250,
+                    "defence": 1250,
                     "exp": 750000,
                     "keys": 1,
                     "attacks": [

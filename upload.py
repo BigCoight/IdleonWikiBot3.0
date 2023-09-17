@@ -8,19 +8,19 @@ from repositories.npc.NpcRepo import NpcRepo
 # loginManager = ClientLoginManager()
 # loginManager.login()
 
-newV = IdleonReader("190", True)
-# oldV = IdleonReader("183", True)
+newV = IdleonReader("191", True)
+oldV = IdleonReader("190", True)
 upload = True
 
-# ItemRepo.initialise(oldV.codeReader, log = False)
-# EnemyRepo.initialise(oldV.codeReader, log = False)
-# NpcRepo.initialise(oldV.codeReader, log = False)
-# DropTableRepo.initialise(oldV.codeReader, log = False)
-#
-# ItemRepo._manualOld()
-# EnemyRepo._manualOld()
-# NpcRepo._manualOld()
-# DropTableRepo._manualOld()
+ItemRepo.initialise(oldV.codeReader, log = False)
+EnemyRepo.initialise(oldV.codeReader, log = False)
+NpcRepo.initialise(oldV.codeReader, log = False)
+DropTableRepo.initialise(oldV.codeReader, log = False)
+
+ItemRepo._manualOld()
+EnemyRepo._manualOld()
+NpcRepo._manualOld()
+DropTableRepo._manualOld()
 
 ItemRepo.initialise(newV.codeReader, log = False)
 EnemyRepo.initialise(newV.codeReader, log = False)

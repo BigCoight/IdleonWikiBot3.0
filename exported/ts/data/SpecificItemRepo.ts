@@ -1423,6 +1423,27 @@ export const initSpecificItemRepo = () => {
                 "Skill": "",
                 "Skill_Power": 0
             }),
+        new BaseItemBase("EquipmentHats84", <ArmourItemModel>{
+                "internalName": "EquipmentHats84",
+                "displayName": "The Crow Perch",
+                "sellPrice": 1,
+                "typeGen": TypeGenEnum.aHelmet,
+                "Type": "Helmet",
+                "lvReqToCraft": 5,
+                "lvReqToEquip": 1,
+                "Class": ClassTypeEnum.All,
+                "Weapon_Power": 1,
+                "STR": 0,
+                "AGI": 0,
+                "WIS": 0,
+                "LUK": 0,
+                "Defence": 1,
+                "miscUp1": "",
+                "miscUp2": "00",
+                "Upgrade_Slots_Left": 1,
+                "Skill": "",
+                "Skill_Power": 0
+            }),
         new BaseItemBase("EquipmentHats21", <ArmourItemModel>{
                 "internalName": "EquipmentHats21",
                 "displayName": "Birthday Hat",
@@ -6073,7 +6094,7 @@ export const initSpecificItemRepo = () => {
                 "lvReqToCraft": 55,
                 "lvReqToEquip": 9,
                 "Class": ClassTypeEnum.All,
-                "Weapon_Power": 4,
+                "Weapon_Power": 0,
                 "STR": 6,
                 "AGI": 2,
                 "WIS": 0,
@@ -6082,8 +6103,8 @@ export const initSpecificItemRepo = () => {
                 "miscUp1": "20Yellow Depth",
                 "miscUp2": "00",
                 "Upgrade_Slots_Left": 2,
-                "Skill": "",
-                "Skill_Power": 0
+                "Skill": "Fishing",
+                "Skill_Power": 4
             }),
         new BaseItemBase("EquipmentRingsFishing2", <ArmourItemModel>{
                 "internalName": "EquipmentRingsFishing2",
@@ -6094,7 +6115,7 @@ export const initSpecificItemRepo = () => {
                 "lvReqToCraft": 55,
                 "lvReqToEquip": 9,
                 "Class": ClassTypeEnum.All,
-                "Weapon_Power": 8,
+                "Weapon_Power": 0,
                 "STR": 9,
                 "AGI": 3,
                 "WIS": 0,
@@ -6103,8 +6124,8 @@ export const initSpecificItemRepo = () => {
                 "miscUp1": "30Red Depth",
                 "miscUp2": "00",
                 "Upgrade_Slots_Left": 2,
-                "Skill": "",
-                "Skill_Power": 0
+                "Skill": "Fishing",
+                "Skill_Power": 8
             }),
         new BaseItemBase("EquipmentRingsFishing3", <ArmourItemModel>{
                 "internalName": "EquipmentRingsFishing3",
@@ -6115,7 +6136,7 @@ export const initSpecificItemRepo = () => {
                 "lvReqToCraft": 55,
                 "lvReqToEquip": 9,
                 "Class": ClassTypeEnum.All,
-                "Weapon_Power": 14,
+                "Weapon_Power": 0,
                 "STR": 12,
                 "AGI": 4,
                 "WIS": 0,
@@ -6124,8 +6145,8 @@ export const initSpecificItemRepo = () => {
                 "miscUp1": "40Purple Depth",
                 "miscUp2": "00",
                 "Upgrade_Slots_Left": 2,
-                "Skill": "",
-                "Skill_Power": 0
+                "Skill": "Fishing",
+                "Skill_Power": 14
             }),
         new BaseItemBase("EquipmentRings12", <ArmourItemModel>{
                 "internalName": "EquipmentRings12",
@@ -20492,6 +20513,22 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.dQuest,
                 "Type": "Event Box",
                 "description": "Hold to open! Contains a random Spring Event goodie, from event cards to foods! ALSO, if you open a total of 500 Baggies, you'll get a limited edition Spring event NAMETAG! "
+            }),
+        new BaseItemBase("Quest76", <DescItemModel>{
+                "internalName": "Quest76",
+                "displayName": "Silver Pocketwatch",
+                "sellPrice": 1,
+                "typeGen": TypeGenEnum.dQuest,
+                "Type": "Event Box",
+                "description": "Hold down to change your daily reset time by 15 minutes. If this item is on the left side of the inventory, it'll DECREASE by 15 minutes. If it is on the right side, it'll INCREASE by 15 minutes. "
+            }),
+        new BaseItemBase("Quest77", <DescItemModel>{
+                "internalName": "Quest77",
+                "displayName": "Gold Pocketwatch",
+                "sellPrice": 1,
+                "typeGen": TypeGenEnum.dQuest,
+                "Type": "Event Box",
+                "description": "Hold down to fast forward a day, restocking shops and triggering various daily rewards and systems. "
             }),
         new BaseItemBase("EquipmentSmithingTabs2", <DescItemModel>{
                 "internalName": "EquipmentSmithingTabs2",

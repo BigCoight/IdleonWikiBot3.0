@@ -5812,6 +5812,19 @@ export const initTalentTreeRepo = () => {
                         "lvlUpText": "+{% Multikill Per Onyx",
                         "skillIndex": 654,
                         "activeData": undefined
+                    },
+                    "Boss Battle Spillover": <TalentModel>{
+                        "name": "Boss Battle Spillover",
+                        "description": "+{% Drop Rate for each difficulty of weekly boss battle defeated.",
+                        "x1": 25,
+                        "x2": 100,
+                        "funcX": "decay",
+                        "y1": 0,
+                        "y2": 0,
+                        "funcY": "txt",
+                        "lvlUpText": "+{% Drop Rate Per Diff",
+                        "skillIndex": 655,
+                        "activeData": undefined
                     }
                 }
             }),

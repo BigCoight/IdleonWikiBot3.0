@@ -255,9 +255,9 @@ export const initNpcRepo = () => {
                     "world": "Unknown",
                     "noQuest": 0,
                     "type": "Unknown",
-                    "birthWeight": 6.01,
-                    "starSign": "Sagittarius",
-                    "mothersMaidenName": "Van Zandt",
+                    "birthWeight": 4.12,
+                    "starSign": "Aries",
+                    "mothersMaidenName": "Rogers",
                     "notes": " "
                 },
                 "quests": {},
@@ -276,9 +276,9 @@ export const initNpcRepo = () => {
                     "world": "Unknown",
                     "noQuest": 0,
                     "type": "Unknown",
-                    "birthWeight": 2.42,
-                    "starSign": "Aries",
-                    "mothersMaidenName": "Quinn",
+                    "birthWeight": 1.28,
+                    "starSign": "Leo",
+                    "mothersMaidenName": "Doran",
                     "notes": " "
                 },
                 "quests": {},
@@ -6467,12 +6467,12 @@ export const initNpcRepo = () => {
                 "head": <NpcHeadModel>{
                     "location": "Deepwater Docks",
                     "world": "Yum-Yum Desert",
-                    "noQuest": 0,
+                    "noQuest": 6,
                     "type": "",
                     "birthWeight": 7.66,
                     "starSign": "Gemini",
                     "mothersMaidenName": "Duffman",
-                    "notes": ""
+                    "notes": "[[Omar Da Ogar]] is found in [[Worlds#F3_-_Deepwater_Docks|Deepwater Docks]]. He gives quests which upon completing increases {{Icons|Message Bottle|text=Message Bottle}}s Gain Rate for [[Island Expeditions]]."
                 },
                 "quests": {
                     "Helping Omar": <ItemQuestModel>{
@@ -14203,13 +14203,13 @@ export const initNpcRepo = () => {
         new NpcBase("Tired Mole", <NpcModel>{
                 "head": <NpcHeadModel>{
                     "location": "Unknown",
-                    "world": "Unknown",
+                    "world": "Smolderin' Plateau",
                     "noQuest": 0,
                     "type": "Unknown",
                     "birthWeight": 3.91,
                     "starSign": "Capricorn",
                     "mothersMaidenName": "Kalleg",
-                    "notes": " "
+                    "notes": ""
                 },
                 "quests": {
                     "Establishing Order among Molekind": <CustomQuestModel>{
@@ -14347,10 +14347,10 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Monolith", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
-                    "noQuest": 0,
-                    "type": "Unknown",
+                    "location": "Flamboyant Bayou",
+                    "world": "Hyperion Nebula",
+                    "noQuest": 3,
+                    "type": "",
                     "birthWeight": 2.77,
                     "starSign": "Aquarius",
                     "mothersMaidenName": "Sawyer",
@@ -14483,10 +14483,10 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Royal Worm", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
-                    "noQuest": 0,
-                    "type": "Unknown",
+                    "location": "urm Highway",
+                    "world": "Hyperion Nebula",
+                    "noQuest": 9,
+                    "type": "",
                     "birthWeight": 1.1,
                     "starSign": "Scorpio",
                     "mothersMaidenName": "Mills",
@@ -14884,9 +14884,9 @@ export const initNpcRepo = () => {
                     "world": "Unknown",
                     "noQuest": 0,
                     "type": "Unknown",
-                    "birthWeight": 1.55,
-                    "starSign": "Gemini",
-                    "mothersMaidenName": "Hancock",
+                    "birthWeight": 2.7,
+                    "starSign": "Scorpio",
+                    "mothersMaidenName": "Ventotla",
                     "notes": " "
                 },
                 "quests": {},

@@ -1,1 +1,123 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "Marble": {
+            "details": {
+                "Name": "Marble",
+                "RespawnTime": 600,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 800,
+                "ExpType": 1,
+                "Defence": 2000000,
+                "MoveSPEED": 0,
+                "Damages": [0, 1],
+                "DefFor0": 0.22
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "CardsF29", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+                {"item": "DropTable4", "quantity": 2, "chance": 0.013, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "Fish13": {
+            "details": {
+                "Name": "Equinox Fish",
+                "RespawnTime": 86400,
+                "MonsterHPTotal": 750000,
+                "SpecialType": "a",
+                "ExpGiven": 12000,
+                "ExpType": 0,
+                "Defence": 600,
+                "MoveSPEED": 3,
+                "Damages": [1000, 1],
+                "DefFor0": 1223.26
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "FishEquinox": {
+            "details": {
+                "Name": "Equinox Fish",
+                "RespawnTime": 0,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 1750,
+                "ExpType": 4,
+                "Defence": 1000000,
+                "MoveSPEED": 0,
+                "Damages": [6, 1],
+                "DefFor0": 2.67
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "Tree11": {
+            "details": {
+                "Name": "Equinox Willow",
+                "RespawnTime": 0,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 6000,
+                "ExpType": 3,
+                "Defence": 1500000,
+                "MoveSPEED": 0,
+                "Damages": [0, 1],
+                "DefFor0": 0.22
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "CardsF25", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+                {"item": "DropTable28", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "Bug11": {
+            "details": {
+                "Name": "Dream Particulate",
+                "RespawnTime": 0,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 3500,
+                "ExpType": 6,
+                "Defence": 1100000,
+                "MoveSPEED": 0,
+                "Damages": [6, 1],
+                "DefFor0": 2.67
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "CardsF27", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+                {"item": "DropTable26", "quantity": 1, "chance": 1e-08, "questLink": "N/A"}
+            ],
+            "mapData": null
+        }
+    },
+    "changes": {
+        "BugNest3": {"details": {"RespawnTime": [86400, 8640000]}},
+        "BugNest7": {"details": {"RespawnTime": [86400, 8640000]}},
+        "BugNest4": {"details": {"RespawnTime": [86400, 8640000]}},
+        "BugNest8": {"details": {"RespawnTime": [86400, 8640000]}},
+        "BugNest5": {"details": {"RespawnTime": [86400, 8640000]}},
+        "BugNest2": {"details": {"RespawnTime": [86400, 8640000]}},
+        "skele2": {
+            "drops": {
+                "1": [
+                    {"item": "SnowC5", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
+                    {"item": "SnowC5", "quantity": 1, "chance": 0.05, "questLink": "N/A"}
+                ],
+                "2": [" ", {"item": "Quest78", "quantity": 1, "chance": 0.001, "questLink": "N/A"}]
+            }
+        },
+        "BugNest9": {"details": {"RespawnTime": [86400, 8640000]}},
+        "BugNest6": {"details": {"RespawnTime": [86400, 8640000]}},
+        "BugNest10": {"details": {"RespawnTime": [86400, 8640000]}},
+        "BugNest1": {"details": {"RespawnTime": [86400, 8640000]}}
+    }
+}

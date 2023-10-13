@@ -1952,6 +1952,11 @@ export const initSourceRepo = () => {
                 "recipeFrom": [<SourceModel>{"wikiName": "[[Tasks/Unlocks|Task Unlocks Tab 3]]", "txtName": "Task Unlocks Tab 3"}],
                 "questAss": []
             }),
+        new SourcesBase("Trophy20", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Smithing]]", "txtName": "Smithing"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
         new SourcesBase("EquipmentSmithingTabs4", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Smithing]]", "txtName": "Smithing"}],
                 "recipeFrom": [],
@@ -3280,6 +3285,7 @@ export const initSourceRepo = () => {
                     <SourceModel>{"wikiName": "[[Lustre]]", "txtName": "Lustre"},
                     <SourceModel>{"wikiName": "[[Starfire]]", "txtName": "Starfire"},
                     <SourceModel>{"wikiName": "[[Dreadlo]]", "txtName": "Dreadlo"},
+                    <SourceModel>{"wikiName": "[[Marble]]", "txtName": "Marble"},
                     <SourceModel>{"wikiName": "[[Godshard]]", "txtName": "Godshard"},
                     <SourceModel>{"wikiName": "[[Oak Tree]]", "txtName": "Oak Tree"},
                     <SourceModel>{"wikiName": "[[Birch Tree]]", "txtName": "Birch Tree"},
@@ -3294,9 +3300,11 @@ export const initSourceRepo = () => {
                     <SourceModel>{"wikiName": "[[Cubed Tree]]", "txtName": "Cubed Tree"},
                     <SourceModel>{"wikiName": "[[Maple Tree]]", "txtName": "Maple Tree"},
                     <SourceModel>{"wikiName": "[[Dandelioli Tree]]", "txtName": "Dandelioli Tree"},
+                    <SourceModel>{"wikiName": "[[Equinox Willow]]", "txtName": "Equinox Willow"},
                     <SourceModel>{"wikiName": "[[Small Fish]]", "txtName": "Small Fish"},
                     <SourceModel>{"wikiName": "[[Medium Fish]]", "txtName": "Medium Fish"},
                     <SourceModel>{"wikiName": "[[Large Fish]]", "txtName": "Large Fish"},
+                    <SourceModel>{"wikiName": "[[Equinox Fish]]", "txtName": "Equinox Fish"},
                     <SourceModel>{"wikiName": "[[Goldfish]]", "txtName": "Goldfish"},
                     <SourceModel>{"wikiName": "[[Hermit Can]]", "txtName": "Hermit Can"},
                     <SourceModel>{"wikiName": "[[Jellyfish]]", "txtName": "Jellyfish"},
@@ -3309,6 +3317,7 @@ export const initSourceRepo = () => {
                     <SourceModel>{"wikiName": "[[Shellfish]]", "txtName": "Shellfish"},
                     <SourceModel>{"wikiName": "[[Jumbo Shrimp]]", "txtName": "Jumbo Shrimp"},
                     <SourceModel>{"wikiName": "[[Caulifish]]", "txtName": "Caulifish"},
+                    <SourceModel>{"wikiName": "[[Equinox Fish]]", "txtName": "Equinox Fish"},
                     <SourceModel>{"wikiName": "[[Fly Nest]]", "txtName": "Fly Nest"},
                     <SourceModel>{"wikiName": "[[Butterfly Bar]]", "txtName": "Butterfly Bar"},
                     <SourceModel>{"wikiName": "[[Sentient Bowl]]", "txtName": "Sentient Bowl"},
@@ -3329,6 +3338,7 @@ export const initSourceRepo = () => {
                     <SourceModel>{"wikiName": "[[Fairy]]", "txtName": "Fairy"},
                     <SourceModel>{"wikiName": "[[Scarab]]", "txtName": "Scarab"},
                     <SourceModel>{"wikiName": "[[Dust Mote]]", "txtName": "Dust Mote"},
+                    <SourceModel>{"wikiName": "[[Dream Particulate]]", "txtName": "Dream Particulate"},
                     <SourceModel>{"wikiName": "[[Blobfish]]", "txtName": "Blobfish"},
                     <SourceModel>{"wikiName": "[[DropTable1]]", "txtName": "DropTable1"},
                     <SourceModel>{"wikiName": "[[DropTable2]]", "txtName": "DropTable2"},
@@ -3563,7 +3573,8 @@ export const initSourceRepo = () => {
                     <SourceModel>{"wikiName": "[[Void]]", "txtName": "Void"},
                     <SourceModel>{"wikiName": "[[Lustre]]", "txtName": "Lustre"},
                     <SourceModel>{"wikiName": "[[Starfire]]", "txtName": "Starfire"},
-                    <SourceModel>{"wikiName": "[[Dreadlo]]", "txtName": "Dreadlo"}
+                    <SourceModel>{"wikiName": "[[Dreadlo]]", "txtName": "Dreadlo"},
+                    <SourceModel>{"wikiName": "[[Marble]]", "txtName": "Marble"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -3654,6 +3665,7 @@ export const initSourceRepo = () => {
                     <SourceModel>{"wikiName": "[[Small Fish]]", "txtName": "Small Fish"},
                     <SourceModel>{"wikiName": "[[Medium Fish]]", "txtName": "Medium Fish"},
                     <SourceModel>{"wikiName": "[[Large Fish]]", "txtName": "Large Fish"},
+                    <SourceModel>{"wikiName": "[[Equinox Fish]]", "txtName": "Equinox Fish"},
                     <SourceModel>{"wikiName": "[[Goldfish]]", "txtName": "Goldfish"},
                     <SourceModel>{"wikiName": "[[Hermit Can]]", "txtName": "Hermit Can"},
                     <SourceModel>{"wikiName": "[[Jellyfish]]", "txtName": "Jellyfish"},
@@ -3665,7 +3677,8 @@ export const initSourceRepo = () => {
                     <SourceModel>{"wikiName": "[[Icefish]]", "txtName": "Icefish"},
                     <SourceModel>{"wikiName": "[[Shellfish]]", "txtName": "Shellfish"},
                     <SourceModel>{"wikiName": "[[Jumbo Shrimp]]", "txtName": "Jumbo Shrimp"},
-                    <SourceModel>{"wikiName": "[[Caulifish]]", "txtName": "Caulifish"}
+                    <SourceModel>{"wikiName": "[[Caulifish]]", "txtName": "Caulifish"},
+                    <SourceModel>{"wikiName": "[[Equinox Fish]]", "txtName": "Equinox Fish"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -3856,7 +3869,8 @@ export const initSourceRepo = () => {
                     <SourceModel>{"wikiName": "[[Biggole Mole]]", "txtName": "Biggole Mole"},
                     <SourceModel>{"wikiName": "[[Kattlecruk]]", "txtName": "Kattlecruk"},
                     <SourceModel>{"wikiName": "[[Chaotic Kattlecruk]]", "txtName": "Chaotic Kattlecruk"},
-                    <SourceModel>{"wikiName": "[[Dust Mote]]", "txtName": "Dust Mote"}
+                    <SourceModel>{"wikiName": "[[Dust Mote]]", "txtName": "Dust Mote"},
+                    <SourceModel>{"wikiName": "[[Dream Particulate]]", "txtName": "Dream Particulate"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -3875,7 +3889,8 @@ export const initSourceRepo = () => {
         new SourcesBase("DropTable28", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[Crystal Capybara]]", "txtName": "Crystal Capybara"},
-                    <SourceModel>{"wikiName": "[[Dandelioli Tree]]", "txtName": "Dandelioli Tree"}
+                    <SourceModel>{"wikiName": "[[Dandelioli Tree]]", "txtName": "Dandelioli Tree"},
+                    <SourceModel>{"wikiName": "[[Equinox Willow]]", "txtName": "Equinox Willow"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -5614,6 +5629,11 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("SnowC5", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Bloodbone]]", "txtName": "Bloodbone"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("Quest78", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Bloodbone]]", "txtName": "Bloodbone"}],
                 "recipeFrom": [],
                 "questAss": []
@@ -7837,7 +7857,10 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("CardsF29", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Dreadlo]]", "txtName": "Dreadlo"}],
+                "sources": [
+                    <SourceModel>{"wikiName": "[[Dreadlo]]", "txtName": "Dreadlo"},
+                    <SourceModel>{"wikiName": "[[Marble]]", "txtName": "Marble"}
+                ],
                 "recipeFrom": [],
                 "questAss": []
             }),
@@ -7910,7 +7933,10 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("CardsF25", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Dandelioli Tree]]", "txtName": "Dandelioli Tree"}],
+                "sources": [
+                    <SourceModel>{"wikiName": "[[Dandelioli Tree]]", "txtName": "Dandelioli Tree"},
+                    <SourceModel>{"wikiName": "[[Equinox Willow]]", "txtName": "Equinox Willow"}
+                ],
                 "recipeFrom": [],
                 "questAss": []
             }),
@@ -7986,7 +8012,10 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("CardsF27", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Dust Mote]]", "txtName": "Dust Mote"}],
+                "sources": [
+                    <SourceModel>{"wikiName": "[[Dust Mote]]", "txtName": "Dust Mote"},
+                    <SourceModel>{"wikiName": "[[Dream Particulate]]", "txtName": "Dream Particulate"}
+                ],
                 "recipeFrom": [],
                 "questAss": []
             }),
@@ -12781,6 +12810,11 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
+        new SourcesBase("Marble", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Mining]]", "txtName": "Mining"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
         new SourcesBase("StarfireBar", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Forging]]", "txtName": "Forging"}],
                 "recipeFrom": [],
@@ -12792,6 +12826,11 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("GodshardBar", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Forging]]", "txtName": "Forging"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("MarbleBar", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Forging]]", "txtName": "Forging"}],
                 "recipeFrom": [],
                 "questAss": []
@@ -12817,6 +12856,11 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("Tree10", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Choppin]]", "txtName": "Choppin"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("Tree11", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Choppin]]", "txtName": "Choppin"}],
                 "recipeFrom": [],
                 "questAss": []
@@ -12861,6 +12905,11 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
+        new SourcesBase("Fish13", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Fishing]]", "txtName": "Fishing"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
         new SourcesBase("Bug2", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Catching]]", "txtName": "Catching"}],
                 "recipeFrom": [],
@@ -12872,6 +12921,11 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("Bug10", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Catching]]", "txtName": "Catching"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("Bug11", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Catching]]", "txtName": "Catching"}],
                 "recipeFrom": [],
                 "questAss": []

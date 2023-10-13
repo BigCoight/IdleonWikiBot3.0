@@ -911,7 +911,8 @@ export const initEnemyTableRepo = () => {
         new EnemyTableBase("skele2", <EnemyTableModel>{
                 "drops": [
                     <CoinDropModel>{"item": "COIN", "quantity": 800, "chance": 0.5, "questLink": "N/A"},
-                    <ItemDropModel>{"item": "SnowC5", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
+                    <ItemDropModel>{"item": "SnowC5", "quantity": 1, "chance": 0.05, "questLink": "N/A"},
+                    <ItemDropModel>{"item": "Quest78", "quantity": 1, "chance": 0.001, "questLink": "N/A"},
                     <CardDropModel>{"item": "CardsE13", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                     <SubTableDropModel>{"item": "DropTable16", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
                 ]
@@ -1785,6 +1786,13 @@ export const initEnemyTableRepo = () => {
                     <SubTableDropModel>{"item": "DropTable4", "quantity": 2, "chance": 0.013, "questLink": "N/A"}
                 ]
             }),
+        new EnemyTableBase("Marble", <EnemyTableModel>{
+                "drops": [
+                    <CoinDropModel>{"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                    <CardDropModel>{"item": "CardsF29", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+                    <SubTableDropModel>{"item": "DropTable4", "quantity": 2, "chance": 0.013, "questLink": "N/A"}
+                ]
+            }),
         new EnemyTableBase("Godshard", <EnemyTableModel>{
                 "drops": [
                     <CoinDropModel>{"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
@@ -1882,6 +1890,13 @@ export const initEnemyTableRepo = () => {
                     <SubTableDropModel>{"item": "DropTable28", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
                 ]
             }),
+        new EnemyTableBase("Tree11", <EnemyTableModel>{
+                "drops": [
+                    <CoinDropModel>{"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                    <CardDropModel>{"item": "CardsF25", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+                    <SubTableDropModel>{"item": "DropTable28", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
+                ]
+            }),
         new EnemyTableBase("BirchTree2", <EnemyTableModel>{
                 "drops": [
                     <CoinDropModel>{"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
@@ -1907,6 +1922,12 @@ export const initEnemyTableRepo = () => {
                 ]
             }),
         new EnemyTableBase("FishBig", <EnemyTableModel>{
+                "drops": [
+                    <CoinDropModel>{"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                    <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+                ]
+            }),
+        new EnemyTableBase("FishEquinox", <EnemyTableModel>{
                 "drops": [
                     <CoinDropModel>{"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
                     <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
@@ -1979,6 +2000,12 @@ export const initEnemyTableRepo = () => {
                 ]
             }),
         new EnemyTableBase("Fish12", <EnemyTableModel>{
+                "drops": [
+                    <CoinDropModel>{"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                    <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+                ]
+            }),
+        new EnemyTableBase("Fish13", <EnemyTableModel>{
                 "drops": [
                     <CoinDropModel>{"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
                     <SubTableDropModel>{"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
@@ -2113,6 +2140,13 @@ export const initEnemyTableRepo = () => {
                     <CoinDropModel>{"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
                     <CardDropModel>{"item": "CardsF27", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
                     <SubTableDropModel>{"item": "DropTable26", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
+                ]
+            }),
+        new EnemyTableBase("Bug11", <EnemyTableModel>{
+                "drops": [
+                    <CoinDropModel>{"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                    <CardDropModel>{"item": "CardsF27", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+                    <SubTableDropModel>{"item": "DropTable26", "quantity": 1, "chance": 1e-08, "questLink": "N/A"}
                 ]
             }),
         new EnemyTableBase("SoulCard1", <EnemyTableModel>{

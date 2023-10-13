@@ -25,7 +25,6 @@ class WeeklyBossRepo(Repository[WeeklyBoss]):
 		for n, boss in enumerate(data):
 			tasks = [int(boss[x]) for x in range(1, 4)]
 			possibleTasks = list(map(WeeklyTaskRepo.getList, tasks))
-			print(possibleTasks)
 			toAdd = WeeklyBoss(
 				name = boss[0],
 				possibleTasks = possibleTasks,

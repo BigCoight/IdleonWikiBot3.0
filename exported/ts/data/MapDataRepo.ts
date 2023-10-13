@@ -728,9 +728,9 @@ export const initMapDataRepo = () => {
                 "portalRequirements": [0]
             }),
         new MapDataBase(120, <MapDataModel>{
-                "enemy": "Z",
+                "enemy": "ram",
                 "world": "Frostbite Tundra",
-                "map": <MapNameModel>{"intName": "Z", "name": "Z", "id": 120},
+                "map": <MapNameModel>{"intName": "ySnowD3", "name": "Equinox Valley", "id": 120},
                 "portalRequirements": [0]
             }),
         new MapDataBase(121, <MapDataModel>{

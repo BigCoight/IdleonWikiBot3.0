@@ -5332,11 +5332,27 @@
             "detRecipeTotals": [{"item": "SnowC3", "quantity": 60000}, {"item": "SnowC4a", "quantity": 3}]
         }
     },
+    "Trophy20": {
+        "intID": "Trophy20",
+        "recipe": [{"item": "Trophy2", "quantity": 75}],
+        "levelReqToCraft": 1,
+        "expGiven": 1,
+        "no": 47,
+        "tab": 3,
+        "sellPrice": 58275,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "Trophy2", "quantity": 75}
+            ],
+            "detRecipeTotals": [{"item": "Trophy2", "quantity": 75}]
+        }
+    },
     "EquipmentSmithingTabs4": {
         "intID": "EquipmentSmithingTabs4",
         "recipe": [
-            {"item": "VoidBar", "quantity": 1200},
-            {"item": "Soul4", "quantity": 7500},
+            {"item": "VoidBar", "quantity": 1000},
+            {"item": "Soul4", "quantity": 2500},
             {"item": "Critter6A", "quantity": 10},
             {"item": "Refinery3", "quantity": 400}
         ],
@@ -5344,18 +5360,18 @@
         "expGiven": 1500000,
         "no": 48,
         "tab": 3,
-        "sellPrice": 7742530,
+        "sellPrice": 6327530,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "VoidBar", "quantity": 1200},
-                {"indent": 0, "item": "Soul4", "quantity": 7500},
+                {"indent": 0, "item": "VoidBar", "quantity": 1000},
+                {"indent": 0, "item": "Soul4", "quantity": 2500},
                 {"indent": 0, "item": "Critter6A", "quantity": 10},
                 {"indent": 0, "item": "Refinery3", "quantity": 400}
             ],
             "detRecipeTotals": [
-                {"item": "VoidBar", "quantity": 1200},
-                {"item": "Soul4", "quantity": 7500},
+                {"item": "VoidBar", "quantity": 1000},
+                {"item": "Soul4", "quantity": 2500},
                 {"item": "Critter6A", "quantity": 10},
                 {"item": "Refinery3", "quantity": 400}
             ]

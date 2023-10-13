@@ -655,7 +655,7 @@ export const initNpcRepo = () => {
                 "quests": {
                     "A noob's first swing": <ItemQuestModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Care to give it a try? I'd do it myself but I wouldn't want to embarass a beginner like you! <br> QUEST:Chop down that Tree and collect 10 Oak Logs!",
+                        "DialogueText": "Care to give it a try? I'd do it myself but I wouldn't want to embarass a beginner like you! <br> QUEST:Collect 10 Oak Logs!",
                         "NextIndex": 4,
                         "Name": "A noob's first swing",
                         "ConsumeItems": true,
@@ -673,7 +673,7 @@ export const initNpcRepo = () => {
                     },
                     "A noob's 2nd first swing": <ItemQuestModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "See how your tree over there is a tree and mine here is... well not a tree anymore? Please make yours a bit more like mine. <br> QUEST:Turn the tree into the absence of a tree and get 100 Oak Logs.",
+                        "DialogueText": "See how your tree over there is a tree and mine here is... well not a tree anymore? Please make yours a bit more like mine. <br> QUEST:Collect 100 Oak Logs.",
                         "NextIndex": 7,
                         "Name": "A noob's 2nd first swing",
                         "ConsumeItems": false,
@@ -687,7 +687,7 @@ export const initNpcRepo = () => {
                     },
                     "It's Just a Plank, Bro!": <ItemQuestModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Hit tree with sharp hammer. Make gravity in tree go brrrr. <br> QUEST:Bring 1000 logs... you should come back to this quest later once you have a higher Log Carry Capacity!",
+                        "DialogueText": "Hit tree with sharp hammer. Make gravity in tree go brrrr. <br> QUEST:Bring 1000 logs. You'll need a large Log Carry Cap.",
                         "NextIndex": 10,
                         "Name": "It's Just a Plank, Bro!",
                         "ConsumeItems": false,
@@ -704,7 +704,7 @@ export const initNpcRepo = () => {
                     },
                     "Exotic Pranks... I mean Logs!": <ItemQuestModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Actually before you take off can ya get me some exotic logs? If you get a MASSIVE highscore in the minigame rare logs will come out! Go on try getting one! <br> QUEST: Get a Forest Log by earning a choppin' highscore of 150!",
+                        "DialogueText": "Actually before you take off can ya get me some exotic logs? There's a 1 in a billion chance of getting one from this tree! <br> QUEST: Get a Forest Log from a different tree found at the end of the world.",
                         "NextIndex": 14,
                         "Name": "Exotic Pranks... I mean Logs!",
                         "ConsumeItems": false,
@@ -732,7 +732,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Care to give it a try? I'd do it myself but I wouldn't want to embarass a beginner like you! <br> QUEST:Chop down that Tree and collect 10 Oak Logs!",
+                        "DialogueText": "Care to give it a try? I'd do it myself but I wouldn't want to embarass a beginner like you! <br> QUEST:Collect 10 Oak Logs!",
                         "NextIndex": 4,
                         "Name": "A noob's first swing"
                     },
@@ -750,7 +750,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "See how your tree over there is a tree and mine here is... well not a tree anymore? Please make yours a bit more like mine. <br> QUEST:Turn the tree into the absence of a tree and get 100 Oak Logs.",
+                        "DialogueText": "See how your tree over there is a tree and mine here is... well not a tree anymore? Please make yours a bit more like mine. <br> QUEST:Collect 100 Oak Logs.",
                         "NextIndex": 7,
                         "Name": "A noob's 2nd first swing"
                     },
@@ -768,7 +768,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Hit tree with sharp hammer. Make gravity in tree go brrrr. <br> QUEST:Bring 1000 logs... you should come back to this quest later once you have a higher Log Carry Capacity!",
+                        "DialogueText": "Hit tree with sharp hammer. Make gravity in tree go brrrr. <br> QUEST:Bring 1000 logs. You'll need a large Log Carry Cap.",
                         "NextIndex": 10,
                         "Name": "It's Just a Plank, Bro!"
                     },
@@ -792,7 +792,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Actually before you take off can ya get me some exotic logs? If you get a MASSIVE highscore in the minigame rare logs will come out! Go on try getting one! <br> QUEST: Get a Forest Log by earning a choppin' highscore of 150!",
+                        "DialogueText": "Actually before you take off can ya get me some exotic logs? There's a 1 in a billion chance of getting one from this tree! <br> QUEST: Get a Forest Log from a different tree found at the end of the world.",
                         "NextIndex": 14,
                         "Name": "Exotic Pranks... I mean Logs!"
                     },
@@ -1859,7 +1859,7 @@ export const initNpcRepo = () => {
                 "quests": {
                     "The Hungry Stowaway": <ItemQuestModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Well come on now I aint gonna give you part of my stash here for nothin'. This is a picnic basket not a charity house! Bring me something and maybe we can fix up a deal... <br> QUEST:Buy and bring 20 Nomwiches from the Town Shop.",
+                        "DialogueText": "Well come on now I aint gonna give you part of my stash here for nothin'. This is a picnic basket not a charity house! Bring me something and maybe we can fix up a deal... <br> QUEST:Bring a Nomwich buy them from the Shop in town.",
                         "NextIndex": 7,
                         "Name": "The Hungry Stowaway",
                         "ConsumeItems": true,
@@ -1873,7 +1873,7 @@ export const initNpcRepo = () => {
                         "QuestName": "Picnic Stowaway1",
                         "Difficulty": 2,
                         "note": <NoteModel>{"note": ""},
-                        "ItemReq": [<ComponentModel>{"item": "FoodHealth1", "quantity": 20}]
+                        "ItemReq": [<ComponentModel>{"item": "FoodHealth1", "quantity": 1}]
                     },
                     "Beating Up Frogs for some Sauce": <ItemQuestModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
@@ -2114,7 +2114,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
-                        "DialogueText": "Well come on now I aint gonna give you part of my stash here for nothin'. This is a picnic basket not a charity house! Bring me something and maybe we can fix up a deal... <br> QUEST:Buy and bring 20 Nomwiches from the Town Shop.",
+                        "DialogueText": "Well come on now I aint gonna give you part of my stash here for nothin'. This is a picnic basket not a charity house! Bring me something and maybe we can fix up a deal... <br> QUEST:Bring a Nomwich buy them from the Shop in town.",
                         "NextIndex": 7,
                         "Name": "The Hungry Stowaway"
                     },
@@ -2595,7 +2595,7 @@ export const initNpcRepo = () => {
                 "quests": {
                     "A Pig and his Stamps": <CustomQuestModel>{
                         "Type": QuestTypeEnum.Custom,
-                        "DialogueText": "Tell you what if you find out who ran off with my Stamps I think I may be able to set up a business with you! <br> QUEST:Find out who stole the Stamp Collection",
+                        "DialogueText": "Find who stole my Stamps and I can do business with you! <br> QUEST:Find out who stole the Stamp Collection they're in the Frog map...",
                         "NextIndex": 6,
                         "Name": "A Pig and his Stamps",
                         "ConsumeItems": false,
@@ -2642,7 +2642,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.Custom,
-                        "DialogueText": "Tell you what if you find out who ran off with my Stamps I think I may be able to set up a business with you! <br> QUEST:Find out who stole the Stamp Collection",
+                        "DialogueText": "Find who stole my Stamps and I can do business with you! <br> QUEST:Find out who stole the Stamp Collection they're in the Frog map...",
                         "NextIndex": 6,
                         "Name": "A Pig and his Stamps"
                     },

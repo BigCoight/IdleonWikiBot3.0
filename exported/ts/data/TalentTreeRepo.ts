@@ -64,7 +64,7 @@ export const initTalentTreeRepo = () => {
                     },
                     "Sharpened Axe": <TalentModel>{
                         "name": "Sharpened Axe",
-                        "description": "Increases Base Weapon Power by {. This contributes to your total damage.",
+                        "description": "Increases Base Weapon Power by {. This increases damage!!",
                         "x1": 0.25,
                         "x2": 0,
                         "funcX": "add",
@@ -969,7 +969,7 @@ export const initTalentTreeRepo = () => {
                     },
                     "Sharpened Axe": <TalentModel>{
                         "name": "Sharpened Axe",
-                        "description": "Increases Base Weapon Power by {. This contributes to your total damage.",
+                        "description": "Increases Base Weapon Power by {. This increases damage!!",
                         "x1": 0.25,
                         "x2": 0,
                         "funcX": "add",
@@ -2418,7 +2418,7 @@ export const initTalentTreeRepo = () => {
                     },
                     "Sharpened Axe": <TalentModel>{
                         "name": "Sharpened Axe",
-                        "description": "Increases Base Weapon Power by {. This contributes to your total damage.",
+                        "description": "Increases Base Weapon Power by {. This increases damage!!",
                         "x1": 0.25,
                         "x2": 0,
                         "funcX": "add",
@@ -3854,7 +3854,7 @@ export const initTalentTreeRepo = () => {
                     },
                     "Sharpened Axe": <TalentModel>{
                         "name": "Sharpened Axe",
-                        "description": "Increases Base Weapon Power by {. This contributes to your total damage.",
+                        "description": "Increases Base Weapon Power by {. This increases damage!!",
                         "x1": 0.25,
                         "x2": 0,
                         "funcX": "add",
@@ -5824,6 +5824,19 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Drop Rate Per Diff",
                         "skillIndex": 655,
+                        "activeData": undefined
+                    },
+                    "Dreamer Damage": <TalentModel>{
+                        "name": "Dreamer Damage",
+                        "description": "+{% Damage per Equinox Dream cloud completed",
+                        "x1": 5,
+                        "x2": 100,
+                        "funcX": "decay",
+                        "y1": 0,
+                        "y2": 0,
+                        "funcY": "txt",
+                        "lvlUpText": "+{% Dmg Per Dream Complete",
+                        "skillIndex": 656,
                         "activeData": undefined
                     }
                 }

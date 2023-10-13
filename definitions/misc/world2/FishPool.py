@@ -8,6 +8,7 @@ class PoolType(str, IdleonEnum, metaclass = CheckIn):
 	FishSmall = "FishSmall"
 	FishMed = "FishMed"
 	FishBig = "FishBig"
+	FishEquinox = "FishEquinox"
 
 
 class FishPool(IdleonModel):

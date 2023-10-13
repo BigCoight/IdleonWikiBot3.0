@@ -1975,7 +1975,7 @@
                 "repoSource": "NpcRepo",
                 "key": "Picnic Stowaway@The Hungry Stowaway",
                 "name": "The Hungry Stowaway Requirements",
-                "amount": 20,
+                "amount": 1,
                 "type": "quest"
             }
         ],
@@ -15379,14 +15379,14 @@
                 "repoSource": "RecipeRepo",
                 "key": "EquipmentSmithingTabs4",
                 "name": "Anvil Tab 4 Recipe",
-                "amount": 1200,
+                "amount": 1000,
                 "type": "recipe"
             },
             {
                 "repoSource": "RecipeRepo",
                 "key": "EquipmentSmithingTabs4",
                 "name": "Anvil Tab 4 Detailed Recipe",
-                "amount": 1200,
+                "amount": 1000,
                 "type": "detRecipe"
             },
             {
@@ -16527,14 +16527,14 @@
                 "repoSource": "RecipeRepo",
                 "key": "EquipmentSmithingTabs4",
                 "name": "Anvil Tab 4 Recipe",
-                "amount": 7500,
+                "amount": 2500,
                 "type": "recipe"
             },
             {
                 "repoSource": "RecipeRepo",
                 "key": "EquipmentSmithingTabs4",
                 "name": "Anvil Tab 4 Detailed Recipe",
-                "amount": 7500,
+                "amount": 2500,
                 "type": "detRecipe"
             },
             {
@@ -16872,6 +16872,40 @@
         ],
         "typeGen": "cFood",
         "type": "Boost Food"
+    },
+    "Trophy2": {
+        "uses": [
+            {
+                "repoSource": "RecipeRepo",
+                "key": "Trophy20",
+                "name": "Luckier Lad Recipe",
+                "amount": 75,
+                "type": "recipe"
+            },
+            {
+                "repoSource": "RecipeRepo",
+                "key": "Trophy20",
+                "name": "Luckier Lad Detailed Recipe",
+                "amount": 75,
+                "type": "detRecipe"
+            },
+            {
+                "repoSource": "RecipeRepo",
+                "key": "EquipmentPendant30",
+                "name": "The Divine Scarf Recipe",
+                "amount": 2,
+                "type": "recipe"
+            },
+            {
+                "repoSource": "RecipeRepo",
+                "key": "EquipmentPendant30",
+                "name": "The Divine Scarf Detailed Recipe",
+                "amount": 2,
+                "type": "detRecipe"
+            }
+        ],
+        "typeGen": "aTrophy",
+        "type": "Trophy"
     },
     "EquipmentHats39": {
         "uses": [
@@ -23316,26 +23350,6 @@
         "typeGen": "aPendant",
         "type": "Pendant"
     },
-    "Trophy2": {
-        "uses": [
-            {
-                "repoSource": "RecipeRepo",
-                "key": "EquipmentPendant30",
-                "name": "The Divine Scarf Recipe",
-                "amount": 2,
-                "type": "recipe"
-            },
-            {
-                "repoSource": "RecipeRepo",
-                "key": "EquipmentPendant30",
-                "name": "The Divine Scarf Detailed Recipe",
-                "amount": 2,
-                "type": "detRecipe"
-            }
-        ],
-        "typeGen": "aTrophy",
-        "type": "Trophy"
-    },
     "DesertB2": {
         "uses": [
             {
@@ -24048,6 +24062,58 @@
         ],
         "typeGen": "bCraft",
         "type": "Monster Drop"
+    },
+    "Marble": {
+        "uses": [
+            {
+                "repoSource": "BubbleRepo",
+                "key": "Vials@Marble Mocha",
+                "name": "Vials: Marble Mocha",
+                "amount": "Lots",
+                "type": "vial"
+            }
+        ],
+        "typeGen": "bOre",
+        "type": "Ore"
+    },
+    "Tree11": {
+        "uses": [
+            {
+                "repoSource": "BubbleRepo",
+                "key": "Vials@Willow Sippy",
+                "name": "Vials: Willow Sippy",
+                "amount": "Lots",
+                "type": "vial"
+            }
+        ],
+        "typeGen": "bLog",
+        "type": "Log"
+    },
+    "Fish13": {
+        "uses": [
+            {
+                "repoSource": "BubbleRepo",
+                "key": "Vials@Shinyfin Stew",
+                "name": "Vials: Shinyfin Stew",
+                "amount": "Lots",
+                "type": "vial"
+            }
+        ],
+        "typeGen": "dFish",
+        "type": "Fish"
+    },
+    "Bug11": {
+        "uses": [
+            {
+                "repoSource": "BubbleRepo",
+                "key": "Vials@Dreamy Drink",
+                "name": "Vials: Dreamy Drink",
+                "amount": "Lots",
+                "type": "vial"
+            }
+        ],
+        "typeGen": "dBugs",
+        "type": "Bug"
     },
     "EquipmentToolsHatchet3": {
         "uses": [

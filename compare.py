@@ -20,6 +20,8 @@ from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
 from repositories.misc.TaskDescriptionsRepo import TaskDescriptionRepo
 from repositories.misc.TaskShopDescRepo import TaskShopDescRepo
+from repositories.misc.weeklyboss.WeeklyActionRepo import WeeklyActionRepo
+from repositories.misc.weeklyboss.WeeklyBossRepo import WeeklyBossRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
 from repositories.misc.world2.BubbleRepo import BubbleRepo
 from repositories.misc.world2.FishPoolRepo import FishPoolRepo
@@ -53,7 +55,7 @@ from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
 newV = IdleonReader("191", True)
-oldV = IdleonReader("190", True)
+oldV = IdleonReader("190a", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)
@@ -115,3 +117,6 @@ GamingSuperbitsRepo.compareVersions(oldV, newV)
 CompanionRepo.compareVersions(oldV, newV)
 
 AtomColliderRepo.compareVersions(oldV, newV)
+
+WeeklyBossRepo.compareVersions(oldV, newV)
+WeeklyActionRepo.compareVersions(oldV, newV)

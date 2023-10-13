@@ -5040,7 +5040,8 @@
         },
         "drops": [
             {"item": "COIN", "quantity": 800, "chance": 0.5, "questLink": "N/A"},
-            {"item": "SnowC5", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
+            {"item": "SnowC5", "quantity": 1, "chance": 0.05, "questLink": "N/A"},
+            {"item": "Quest78", "quantity": 1, "chance": 0.001, "questLink": "N/A"},
             {"item": "CardsE13", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
             {"item": "DropTable16", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
         ],
@@ -7485,6 +7486,37 @@
         "navigation": null,
         "bossData": null
     },
+    "Marble": {
+        "details": {
+            "Name": "Marble",
+            "AFKtype": "Mining",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 22,
+            "MonsterOffsetY": 38,
+            "HeightOfMonster": 30,
+            "MonsterMoving": 0,
+            "MovingFrame": 0,
+            "RespawnTime": 600,
+            "DeathFrame": 1,
+            "MonsterHPTotal": 5,
+            "Type": "oreType",
+            "SpecialType": "",
+            "ExpGiven": 800,
+            "ExpType": 1,
+            "Defence": 2000000,
+            "MoveSPEED": 0,
+            "Damages": [0, 1],
+            "DefFor0": 0.22
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF29", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+            {"item": "DropTable4", "quantity": 2, "chance": 0.013, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
     "OakTree": {
         "details": {
             "Name": "Oak Tree",
@@ -7888,6 +7920,37 @@
         "navigation": null,
         "bossData": null
     },
+    "Tree11": {
+        "details": {
+            "Name": "Equinox Willow",
+            "AFKtype": "Choppin",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 0,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 5,
+            "RespawnTime": 0,
+            "DeathFrame": 13,
+            "MonsterHPTotal": 5,
+            "Type": "treeType",
+            "SpecialType": "",
+            "ExpGiven": 6000,
+            "ExpType": 3,
+            "Defence": 1500000,
+            "MoveSPEED": 0,
+            "Damages": [0, 1],
+            "DefFor0": 0.22
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF25", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+            {"item": "DropTable28", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
     "FishSmall": {
         "details": {
             "Name": "Small Fish",
@@ -7976,6 +8039,36 @@
             "ExpGiven": 1750,
             "ExpType": 4,
             "Defence": 2000000,
+            "MoveSPEED": 0,
+            "Damages": [6, 1],
+            "DefFor0": 2.67
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "FishEquinox": {
+        "details": {
+            "Name": "Equinox Fish",
+            "AFKtype": "Fishing",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 50,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 1,
+            "RespawnTime": 0,
+            "DeathFrame": 2,
+            "MonsterHPTotal": 5,
+            "Type": "fishType",
+            "SpecialType": "",
+            "ExpGiven": 1750,
+            "ExpType": 4,
+            "Defence": 1000000,
             "MoveSPEED": 0,
             "Damages": [6, 1],
             "DefFor0": 2.67
@@ -8348,6 +8441,36 @@
         "navigation": null,
         "bossData": null
     },
+    "Fish13": {
+        "details": {
+            "Name": "Equinox Fish",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 48,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 11,
+            "MonsterHPTotal": 750000,
+            "Type": "fishType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
     "BugNest1": {
         "details": {
             "Name": "Fly Nest",
@@ -8358,7 +8481,7 @@
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
             "MovingFrame": 51,
-            "RespawnTime": 86400,
+            "RespawnTime": 8640000,
             "DeathFrame": 0,
             "MonsterHPTotal": 999999999,
             "Type": "monsterType",
@@ -8388,7 +8511,7 @@
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
             "MovingFrame": 67,
-            "RespawnTime": 86400,
+            "RespawnTime": 8640000,
             "DeathFrame": 1,
             "MonsterHPTotal": 999999999,
             "Type": "monsterType",
@@ -8418,7 +8541,7 @@
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
             "MovingFrame": 59,
-            "RespawnTime": 86400,
+            "RespawnTime": 8640000,
             "DeathFrame": 2,
             "MonsterHPTotal": 999999999,
             "Type": "monsterType",
@@ -8448,7 +8571,7 @@
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
             "MovingFrame": 63,
-            "RespawnTime": 86400,
+            "RespawnTime": 8640000,
             "DeathFrame": 3,
             "MonsterHPTotal": 999999999,
             "Type": "monsterType",
@@ -8478,7 +8601,7 @@
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
             "MovingFrame": 106,
-            "RespawnTime": 86400,
+            "RespawnTime": 8640000,
             "DeathFrame": 4,
             "MonsterHPTotal": 999999999,
             "Type": "monsterType",
@@ -8508,7 +8631,7 @@
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
             "MovingFrame": 112,
-            "RespawnTime": 86400,
+            "RespawnTime": 8640000,
             "DeathFrame": 5,
             "MonsterHPTotal": 999999999,
             "Type": "monsterType",
@@ -8538,7 +8661,7 @@
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
             "MovingFrame": 157,
-            "RespawnTime": 86400,
+            "RespawnTime": 8640000,
             "DeathFrame": 6,
             "MonsterHPTotal": 999999999,
             "Type": "monsterType",
@@ -8568,7 +8691,7 @@
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
             "MovingFrame": 112,
-            "RespawnTime": 86400,
+            "RespawnTime": 8640000,
             "DeathFrame": 7,
             "MonsterHPTotal": 999999999,
             "Type": "monsterType",
@@ -8598,7 +8721,7 @@
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
             "MovingFrame": 205,
-            "RespawnTime": 86400,
+            "RespawnTime": 8640000,
             "DeathFrame": 8,
             "MonsterHPTotal": 999999999,
             "Type": "monsterType",
@@ -8628,7 +8751,7 @@
             "HeightOfMonster": 100,
             "MonsterMoving": 0,
             "MovingFrame": 207,
-            "RespawnTime": 86400,
+            "RespawnTime": 8640000,
             "DeathFrame": 9,
             "MonsterHPTotal": 999999999,
             "Type": "monsterType",
@@ -8959,6 +9082,37 @@
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
             {"item": "CardsF27", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "DropTable26", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Bug11": {
+        "details": {
+            "Name": "Dream Particulate",
+            "AFKtype": "Catching",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 50,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 1,
+            "RespawnTime": 0,
+            "DeathFrame": 10,
+            "MonsterHPTotal": 5,
+            "Type": "bugType",
+            "SpecialType": "",
+            "ExpGiven": 3500,
+            "ExpType": 6,
+            "Defence": 1100000,
+            "MoveSPEED": 0,
+            "Damages": [6, 1],
+            "DefFor0": 2.67
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF27", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+            {"item": "DropTable26", "quantity": 1, "chance": 1e-08, "questLink": "N/A"}
         ],
         "mapData": null,
         "navigation": null,

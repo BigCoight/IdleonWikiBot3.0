@@ -860,7 +860,8 @@
     "skele2": {
         "drops": [
             {"item": "COIN", "quantity": 800, "chance": 0.5, "questLink": "N/A"},
-            {"item": "SnowC5", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
+            {"item": "SnowC5", "quantity": 1, "chance": 0.05, "questLink": "N/A"},
+            {"item": "Quest78", "quantity": 1, "chance": 0.001, "questLink": "N/A"},
             {"item": "CardsE13", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
             {"item": "DropTable16", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
         ]
@@ -1726,6 +1727,13 @@
             {"item": "DropTable4", "quantity": 2, "chance": 0.013, "questLink": "N/A"}
         ]
     },
+    "Marble": {
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF29", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+            {"item": "DropTable4", "quantity": 2, "chance": 0.013, "questLink": "N/A"}
+        ]
+    },
     "Godshard": {
         "drops": [
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
@@ -1823,6 +1831,13 @@
             {"item": "DropTable28", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
         ]
     },
+    "Tree11": {
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF25", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+            {"item": "DropTable28", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
+        ]
+    },
     "BirchTree2": {
         "drops": [
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
@@ -1848,6 +1863,12 @@
         ]
     },
     "FishBig": {
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ]
+    },
+    "FishEquinox": {
         "drops": [
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
             {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
@@ -1920,6 +1941,12 @@
         ]
     },
     "Fish12": {
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ]
+    },
+    "Fish13": {
         "drops": [
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
             {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
@@ -2054,6 +2081,13 @@
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
             {"item": "CardsF27", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
             {"item": "DropTable26", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
+        ]
+    },
+    "Bug11": {
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF27", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+            {"item": "DropTable26", "quantity": 1, "chance": 1e-08, "questLink": "N/A"}
         ]
     },
     "SoulCard1": {

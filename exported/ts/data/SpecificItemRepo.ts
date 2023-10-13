@@ -115,6 +115,14 @@ export const initSpecificItemRepo = () => {
                 "Type": "Ore",
                 "description": "Smelt down 5000 Ores into 1 Bar at the Forge. Smelting will take 60000 Seconds per Bar using Forge Slot 1. "
             }),
+        new BaseItemBase("Marble", <OreItemModel>{
+                "internalName": "Marble",
+                "displayName": "Marble Ore",
+                "sellPrice": 500,
+                "typeGen": TypeGenEnum.bOre,
+                "Type": "Ore",
+                "description": "Smelt down 10000 Ores into 1 Bar at the Forge. Smelting will take 100000 Seconds per Bar using Forge Slot 1. "
+            }),
         new BaseItemBase("CopperBar", <BaseItemModel>{
                 "internalName": "CopperBar",
                 "displayName": "Copper Bar",
@@ -181,6 +189,13 @@ export const initSpecificItemRepo = () => {
         new BaseItemBase("GodshardBar", <BaseItemModel>{
                 "internalName": "GodshardBar",
                 "displayName": "Godshard Bar",
+                "sellPrice": 1,
+                "typeGen": TypeGenEnum.bBar,
+                "Type": "Bar"
+            }),
+        new BaseItemBase("MarbleBar", <BaseItemModel>{
+                "internalName": "MarbleBar",
+                "displayName": "Marble Bar",
                 "sellPrice": 1,
                 "typeGen": TypeGenEnum.bBar,
                 "Type": "Bar"
@@ -324,6 +339,13 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.bLog,
                 "Type": "Log"
             }),
+        new BaseItemBase("Tree11", <BaseItemModel>{
+                "internalName": "Tree11",
+                "displayName": "Willow Logs",
+                "sellPrice": 500,
+                "typeGen": TypeGenEnum.bLog,
+                "Type": "Log"
+            }),
         new BaseItemBase("Leaf1", <BaseItemModel>{
                 "internalName": "Leaf1",
                 "displayName": "Grass Leaf",
@@ -463,6 +485,14 @@ export const initSpecificItemRepo = () => {
                 "Type": "Fish",
                 "description": "Astonishingly, despite its unthreatening exterior of cauliflower and bread, this creature sits atop the food chain according to leading IdleOn Oceanographers. At least, based on currently explored seas... "
             }),
+        new BaseItemBase("Fish13", <DescItemModel>{
+                "internalName": "Fish13",
+                "displayName": "Equinox Fish",
+                "sellPrice": 1000,
+                "typeGen": TypeGenEnum.dFish,
+                "Type": "Fish",
+                "description": "Straight from the Equinox Valley river, the scales shimmer and shine in an almost impossible way. "
+            }),
         new BaseItemBase("Bug1", <DescItemModel>{
                 "internalName": "Bug1",
                 "displayName": "Fly",
@@ -517,7 +547,7 @@ export const initSpecificItemRepo = () => {
                 "sellPrice": 70,
                 "typeGen": TypeGenEnum.dBugs,
                 "Type": "Bug",
-                "description": "It's a bee and it's working. As per the Worker Bee Union Act of 35e4, I am barred from making any pun or joke about them. "
+                "description": "It's a bee and it's working. As per the Worker Bee Union Act of 1977, I am barred from making any pun or joke about them. "
             }),
         new BaseItemBase("Bug8", <DescItemModel>{
                 "internalName": "Bug8",
@@ -542,6 +572,14 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.dBugs,
                 "Type": "Bug",
                 "description": "Wait, is this actually just a piece of dust? I mean it's classified as a bug but like, I mean... the classifiers must get it wrong sometimes right? "
+            }),
+        new BaseItemBase("Bug11", <DescItemModel>{
+                "internalName": "Bug11",
+                "displayName": "Dream Particulate",
+                "sellPrice": 320,
+                "typeGen": TypeGenEnum.dBugs,
+                "Type": "Bug",
+                "description": "It's a fluttering piece of solid dream. This thing right here could really do some damage if only dreams were real and not made up by the powers that be... "
             }),
         new BaseItemBase("Critter1", <DescItemModel>{
                 "internalName": "Critter1",
@@ -6774,6 +6812,27 @@ export const initSpecificItemRepo = () => {
                 "Defence": 1,
                 "miscUp1": "100% Cheese",
                 "miscUp2": "17% Gravity",
+                "Upgrade_Slots_Left": 3,
+                "Skill": "",
+                "Skill_Power": 0
+            }),
+        new BaseItemBase("EquipmentRingsChat11", <ArmourItemModel>{
+                "internalName": "EquipmentRingsChat11",
+                "displayName": "Equinox Ring",
+                "sellPrice": 2500,
+                "typeGen": TypeGenEnum.aChatRingMTX,
+                "Type": "Chat Ring",
+                "lvReqToCraft": 55,
+                "lvReqToEquip": 15,
+                "Class": ClassTypeEnum.All,
+                "Weapon_Power": 5,
+                "STR": 20,
+                "AGI": 20,
+                "WIS": 20,
+                "LUK": 20,
+                "Defence": 10,
+                "miscUp1": "10% All Stats",
+                "miscUp2": "00",
                 "Upgrade_Slots_Left": 3,
                 "Skill": "",
                 "Skill_Power": 0
@@ -17539,6 +17598,27 @@ export const initSpecificItemRepo = () => {
                 "Skill": "",
                 "Skill_Power": 0
             }),
+        new BaseItemBase("Trophy20", <ArmourItemModel>{
+                "internalName": "Trophy20",
+                "displayName": "Luckier Lad",
+                "sellPrice": 777,
+                "typeGen": TypeGenEnum.aTrophy,
+                "Type": "Trophy",
+                "lvReqToCraft": 1,
+                "lvReqToEquip": 1,
+                "Class": ClassTypeEnum.All,
+                "Weapon_Power": 0,
+                "STR": 0,
+                "AGI": 0,
+                "WIS": 0,
+                "LUK": 50,
+                "Defence": 0,
+                "miscUp1": "50% Drop Chance",
+                "miscUp2": "5% Luk",
+                "Upgrade_Slots_Left": 0,
+                "Skill": "",
+                "Skill_Power": 0
+            }),
         new BaseItemBase("EquipmentTools1", <ToolItemModel>{
                 "internalName": "EquipmentTools1",
                 "displayName": "Junk Pickaxe",
@@ -20529,6 +20609,14 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.dQuest,
                 "Type": "Event Box",
                 "description": "Hold down to fast forward a day, restocking shops and triggering various daily rewards and systems. "
+            }),
+        new BaseItemBase("Quest78", <DescItemModel>{
+                "internalName": "Quest78",
+                "displayName": "Equinox Mirror",
+                "sellPrice": 1,
+                "typeGen": TypeGenEnum.dQuest,
+                "Type": "Teleporter",
+                "description": "Hold down to enter the Equinox Valley map. You can later teleport there from the map once you unlock Dreams "
             }),
         new BaseItemBase("EquipmentSmithingTabs2", <DescItemModel>{
                 "internalName": "EquipmentSmithingTabs2",
@@ -25274,7 +25362,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 9
                 },
-                "dropChance": 0.002
+                "dropChance": 1e-08
             }),
         new BaseItemBase("CardsC9", <CardItemModel>{
                 "internalName": "CardsC9",
@@ -26320,7 +26408,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 9
                 },
-                "dropChance": 5e-06
+                "dropChance": 1e-08
             }),
         new BaseItemBase("CardsF26", <CardItemModel>{
                 "internalName": "CardsF26",
@@ -26352,7 +26440,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 19
                 },
-                "dropChance": 2e-05
+                "dropChance": 1e-08
             }),
         new BaseItemBase("CardsF28", <CardItemModel>{
                 "internalName": "CardsF28",
@@ -26384,7 +26472,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 3
                 },
-                "dropChance": 3e-05
+                "dropChance": 1e-08
             }),
         new BaseItemBase("CardsF30", <CardItemModel>{
                 "internalName": "CardsF30",

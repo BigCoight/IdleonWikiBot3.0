@@ -1,20 +1,60 @@
 {
     "new": {},
     "changes": {
+        "Beginner": {
+            "talents": {
+                "Sharpened Axe": {
+                    "description": [
+                        "Increases Base Weapon Power by {. This contributes to your total damage.",
+                        "Increases Base Weapon Power by {. This increases damage!!"
+                    ]
+                }
+            }
+        },
+        "Calm Basics": {
+            "talents": {
+                "Sharpened Axe": {
+                    "description": [
+                        "Increases Base Weapon Power by {. This contributes to your total damage.",
+                        "Increases Base Weapon Power by {. This increases damage!!"
+                    ]
+                }
+            }
+        },
+        "Rage Basics": {
+            "talents": {
+                "Sharpened Axe": {
+                    "description": [
+                        "Increases Base Weapon Power by {. This contributes to your total damage.",
+                        "Increases Base Weapon Power by {. This increases damage!!"
+                    ]
+                }
+            }
+        },
         "Special Talent 4": {
             "talents": {
-                "Boss Battle Spillover": {
-                    "name": [" ", "Boss Battle Spillover"],
-                    "description": [" ", "+{% Drop Rate for each difficulty of weekly boss battle defeated."],
-                    "x1": [" ", 25],
+                "Dreamer Damage": {
+                    "name": [" ", "Dreamer Damage"],
+                    "description": [" ", "+{% Damage per Equinox Dream cloud completed"],
+                    "x1": [" ", 5],
                     "x2": [" ", 100],
                     "funcX": [" ", "decay"],
                     "y1": [" ", 0],
                     "y2": [" ", 0],
                     "funcY": [" ", "txt"],
-                    "lvlUpText": [" ", "+{% Drop Rate Per Diff"],
-                    "skillIndex": [" ", 655],
+                    "lvlUpText": [" ", "+{% Dmg Per Dream Complete"],
+                    "skillIndex": [" ", 656],
                     "activeData": [" ", null]
+                }
+            }
+        },
+        "Savvy Basics": {
+            "talents": {
+                "Sharpened Axe": {
+                    "description": [
+                        "Increases Base Weapon Power by {. This contributes to your total damage.",
+                        "Increases Base Weapon Power by {. This increases damage!!"
+                    ]
                 }
             }
         }

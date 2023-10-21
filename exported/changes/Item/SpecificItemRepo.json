@@ -1,80 +1,147 @@
 {
     "new": {
-        "Marble": {
-            "displayName": "Marble Ore",
-            "sellPrice": 500,
-            "Type": "Ore",
-            "description": "Smelt down 10000 Ores into 1 Bar at the Forge. Smelting will take 100000 Seconds per Bar using Forge Slot 1. "
-        },
-        "Fish13": {
-            "displayName": "Equinox Fish",
-            "sellPrice": 1000,
-            "Type": "Fish",
-            "description": "Straight from the Equinox Valley river, the scales shimmer and shine in an almost impossible way. "
-        },
-        "Tree11": {"displayName": "Willow Logs", "sellPrice": 500, "Type": "Log"},
-        "EquipmentRingsChat11": {
-            "displayName": "Equinox Ring",
-            "sellPrice": 2500,
-            "Type": "Chat Ring",
-            "lvReqToCraft": 55,
-            "lvReqToEquip": 15,
-            "Class": "All",
-            "Weapon_Power": 5,
-            "STR": 20,
-            "AGI": 20,
-            "WIS": 20,
-            "LUK": 20,
-            "Defence": 10,
-            "miscUp1": "10% All Stats",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 3,
-            "Skill": "",
-            "Skill_Power": 0
-        },
-        "Bug11": {
-            "displayName": "Dream Particulate",
-            "sellPrice": 320,
-            "Type": "Bug",
-            "description": "It's a fluttering piece of solid dream. This thing right here could really do some damage if only dreams were real and not made up by the powers that be... "
-        },
-        "Quest78": {
-            "displayName": "Equinox Mirror",
+        "CardsY18": {
+            "displayName": "Falloween Pumpkin Card",
             "sellPrice": 1,
-            "Type": "Teleporter",
-            "description": "Hold down to enter the Equinox Valley map. You can later teleport there from the map once you unlock Dreams "
+            "Type": "Card",
+            "cardData": {
+                "cardID": "Y18",
+                "perTier": 3,
+                "effect": "+{ Star Talent Pts (Passive)",
+                "bonus": 4,
+                "order": 19
+            },
+            "dropChance": 1
         },
-        "Trophy20": {
-            "displayName": "Luckier Lad",
-            "sellPrice": 777,
-            "Type": "Trophy",
-            "lvReqToCraft": 1,
+        "EquipmentHats85": {
+            "displayName": "Bedsheet with Holes",
+            "sellPrice": 1,
+            "Type": "Premium Helmet",
+            "lvReqToCraft": 5,
             "lvReqToEquip": 1,
             "Class": "All",
             "Weapon_Power": 0,
-            "STR": 0,
+            "STR": 1,
+            "AGI": 1,
+            "WIS": 1,
+            "LUK": 1,
+            "Defence": 0,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentHats87": {
+            "displayName": "Glublin Mask",
+            "sellPrice": 1,
+            "Type": "Premium Helmet",
+            "lvReqToCraft": 5,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 1,
+            "AGI": 1,
+            "WIS": 1,
+            "LUK": 1,
+            "Defence": 0,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentHats88": {
+            "displayName": "Bloque Mask",
+            "sellPrice": 1,
+            "Type": "Premium Helmet",
+            "lvReqToCraft": 5,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 1,
+            "AGI": 1,
+            "WIS": 1,
+            "LUK": 1,
+            "Defence": 0,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentHats86": {
+            "displayName": "Carrotman Mask",
+            "sellPrice": 1,
+            "Type": "Premium Helmet",
+            "lvReqToCraft": 5,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 1,
+            "AGI": 1,
+            "WIS": 1,
+            "LUK": 1,
+            "Defence": 0,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentHats89": {
+            "displayName": "Borzoi Topper",
+            "sellPrice": 1,
+            "Type": "Premium Helmet",
+            "lvReqToCraft": 5,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 1,
+            "AGI": 1,
+            "WIS": 1,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentNametag9": {
+            "displayName": "Falloween Nametag",
+            "sellPrice": 1,
+            "Type": "Nametag",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 10,
             "AGI": 0,
             "WIS": 0,
-            "LUK": 50,
+            "LUK": 0,
             "Defence": 0,
-            "miscUp1": "50% Drop Chance",
-            "miscUp2": "5% Luk",
+            "miscUp1": "25% Mining Xp Gain",
+            "miscUp2": "3% Skill Afk Gain",
             "Upgrade_Slots_Left": 0,
             "Skill": "",
             "Skill_Power": 0
         },
-        "MarbleBar": {"displayName": "Marble Bar", "sellPrice": 1, "Type": "Bar"}
+        "Quest79": {
+            "displayName": "Falloween Treat",
+            "sellPrice": 1,
+            "Type": "Event Box",
+            "description": "Hold to open! Contains a random Falloween Event goodie, including 3 limited time Monster Masks, check Patch Notes in Discord or Steam for info! Also, if you open 500 Treats you'll get the Falloween Event NAMETAG! "
+        }
     },
     "changes": {
-        "Bug7": {
+        "Quest77": {"Type": ["Event Box", "Usable"]},
+        "Quest76": {
+            "Type": ["Event Box", "Usable"],
             "description": [
-                "It's a bee and it's working. As per the Worker Bee Union Act of 35e4, I am barred from making any pun or joke about them. ",
-                "It's a bee and it's working. As per the Worker Bee Union Act of 1977, I am barred from making any pun or joke about them. "
+                "Hold down to change your daily reset time by 15 minutes. If this item is on the left side of the inventory, it'll DECREASE by 15 minutes. If it is on the right side, it'll INCREASE by 15 minutes. ",
+                "Hold down to change your daily reset time by 15 minutes. If this item is on the left side of the inventory, your daily reset will be 15 minutes LATER. If it's on the right side, your daily reset will be 15 minutes EARLIER. "
             ]
-        },
-        "CardsF25": {"dropChance": [5e-06, 1e-08]},
-        "CardsF27": {"dropChance": [2e-05, 1e-08]},
-        "CardsC8": {"dropChance": [0.002, 1e-08]},
-        "CardsF29": {"dropChance": [3e-05, 1e-08]}
+        }
     }
 }

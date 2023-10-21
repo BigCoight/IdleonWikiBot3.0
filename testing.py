@@ -2,8 +2,8 @@
 # oldV = IdleonReader("156", True)
 # NpcRepo.initialise(newV.codeReader)
 from helpers.CodeReader import IdleonReader
-from repositories.misc.world2.FishPoolRepo import FishPoolRepo
+from repositories.misc.weeklyboss.WeeklyShopRepo import WeeklyShopRepo
 
-newV = IdleonReader("191", True)
+newV = IdleonReader("192", True)
 
-FishPoolRepo.initialise(newV.codeReader)
+WeeklyShopRepo.initialise(newV.codeReader)

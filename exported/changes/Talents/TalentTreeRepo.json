@@ -1,59 +1,32 @@
 {
     "new": {},
     "changes": {
-        "Beginner": {
-            "talents": {
-                "Sharpened Axe": {
-                    "description": [
-                        "Increases Base Weapon Power by {. This contributes to your total damage.",
-                        "Increases Base Weapon Power by {. This increases damage!!"
-                    ]
-                }
-            }
-        },
-        "Calm Basics": {
-            "talents": {
-                "Sharpened Axe": {
-                    "description": [
-                        "Increases Base Weapon Power by {. This contributes to your total damage.",
-                        "Increases Base Weapon Power by {. This increases damage!!"
-                    ]
-                }
-            }
-        },
-        "Rage Basics": {
-            "talents": {
-                "Sharpened Axe": {
-                    "description": [
-                        "Increases Base Weapon Power by {. This contributes to your total damage.",
-                        "Increases Base Weapon Power by {. This increases damage!!"
-                    ]
-                }
-            }
-        },
         "Special Talent 4": {
             "talents": {
-                "Dreamer Damage": {
-                    "name": [" ", "Dreamer Damage"],
-                    "description": [" ", "+{% Damage per Equinox Dream cloud completed"],
-                    "x1": [" ", 5],
-                    "x2": [" ", 100],
-                    "funcX": [" ", "decay"],
-                    "y1": [" ", 0],
-                    "y2": [" ", 0],
-                    "funcY": [" ", "txt"],
-                    "lvlUpText": [" ", "+{% Dmg Per Dream Complete"],
-                    "skillIndex": [" ", 656],
-                    "activeData": [" ", null]
+                "Boss Battle Spillover": {
+                    "description": [
+                        "+{% Drop Rate for each difficulty of weekly boss battle defeated.",
+                        "+{% Drop Rate for each difficulty of weekly boss battle defeated this week."
+                    ]
                 }
             }
         },
-        "Savvy Basics": {
+        "Elemental Sorcerer": {
             "talents": {
-                "Sharpened Axe": {
+                "Lightning Barrage": {
                     "description": [
-                        "Increases Base Weapon Power by {. This contributes to your total damage.",
-                        "Increases Base Weapon Power by {. This increases damage!!"
+                        "Your next attack casts a lightning strike, dealing {% dmg to up to } mobs",
+                        "Your next attack casts a lightning strike, dealing {% dmg to up to } mobs. You MUST have a wand equipped to cast."
+                    ]
+                }
+            }
+        },
+        "Mage": {
+            "talents": {
+                "Energy Bolt": {
+                    "description": [
+                        "Your next basic attack strikes the Targeted Enemy for {% Damage",
+                        "Your next basic attack strikes the Targeted Enemy for {% Damage. You MUST have a wand equipped to cast."
                     ]
                 }
             }

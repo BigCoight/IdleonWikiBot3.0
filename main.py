@@ -50,6 +50,11 @@ from repositories.misc.StorageOrderRepo import StorageOrderRepo
 from repositories.misc.TaskDescriptionsRepo import TaskDescriptionRepo
 from repositories.misc.TaskShopDescRepo import TaskShopDescRepo
 from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
+from repositories.misc.equinox.DreamChallengeRepo import DreamChallengeRepo
+from repositories.misc.equinox.DreamUpgradeRepo import DreamUpgradeRepo
+from repositories.misc.weeklyboss.WeeklyActionRepo import WeeklyActionRepo
+from repositories.misc.weeklyboss.WeeklyBossRepo import WeeklyBossRepo
+from repositories.misc.weeklyboss.WeeklyShopRepo import WeeklyShopRepo
 from repositories.misc.world1.BribeRepo import BribeRepo
 from repositories.misc.world2.BubbleRepo import BubbleRepo
 from repositories.misc.world2.FishPoolRepo import FishPoolRepo
@@ -88,7 +93,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("191", steam = True)
+idleonReader = IdleonReader("192", steam = True)
 
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
@@ -192,6 +197,13 @@ IslandInfoRepo.initialise(codeReader)
 SlabItemSortRepo.initialise(codeReader)
 
 CompanionRepo.initialise(codeReader)
+
+WeeklyBossRepo.initialise(codeReader)
+WeeklyActionRepo.initialise(codeReader)
+WeeklyShopRepo.initialise(codeReader)
+
+DreamChallengeRepo.initialise(codeReader)
+DreamUpgradeRepo.initialise(codeReader)
 
 ItemRepo.exportWikiMult()
 NpcRepo.exportWikiMult()

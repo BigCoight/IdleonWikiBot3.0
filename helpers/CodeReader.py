@@ -179,4 +179,8 @@ class IdleonReader:
 		self.codeReader.addSection("WeeklyACTION = function ()", "WeeklyAction")
 		self.codeReader.addSection("WeeklySHOP = function ()", "WeeklyShop")
 
+		# Equinox
+		self.codeReader.addSection("DreamChallenge = function ()", "DreamChallenge")
+		self.codeReader.addSection("DreamUpg = function ()", "DreamUpg")
+
 		self.codeReader.readCode()

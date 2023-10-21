@@ -1,52 +1,132 @@
 {
     "new": {},
     "changes": {
+        "Falloween Pumpkin": {
+            "quests": {
+                "The Spookyness": {
+                    "DialogueText": [
+                        "Falloween is meant to be scary and what's scarier than death right? Go kill some monsters! <br> QUEST:Defeat monsters without having AUTO turned on.",
+                        "Falloween is meant to be scary and what's scarier than death right? Go kill some monsters! <br> QUEST:Defeat monsters AFK gains don't count."
+                    ],
+                    "Rewards": {"0": [" ", {"item": "Quest79", "quantity": 10}]}
+                },
+                "The Horroriness": {
+                    "DialogueText": [
+                        "Hmm still not scared eh? Well let's see if you can stomach the sheer terror of a RECYCLED QUEST! <br> QUEST:Defeat monsters without having AUTO turned on.",
+                        "Hmm still not scared eh? Well let's see if you can stomach the sheer terror of a RECYCLED QUEST! <br> QUEST:Defeat monsters AFK gains don't count."
+                    ],
+                    "Rewards": {"0": [" ", {"item": "Quest79", "quantity": 10}]}
+                },
+                "The Afterparty": {"Rewards": {"0": [" ", {"item": "Quest79", "quantity": 10}]}},
+                "The Scaryness": {"Rewards": {"0": [" ", {"item": "Quest79", "quantity": 10}]}},
+                "The Booeyness": {
+                    "Rewards": {"0": [" ", {"item": "Quest79", "quantity": 10}]},
+                    "CustomArray": {
+                        "0": [
+                            {
+                                "desc": "Say 'Boo' to People:",
+                                "finalV": 200,
+                                "type": "GreaterEqual",
+                                "startV": 0
+                            },
+                            {
+                                "desc": "Say 'Boo' to People:",
+                                "finalV": 120,
+                                "type": "GreaterEqual",
+                                "startV": 0
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "Scripticus": {
+            "quests": {
+                "Can't somebody else do it?": {
+                    "DialogueText": [
+                        "No real gamer does everything for themself! Go create a 2nd character! QUEST:Reach Lv 5 then create a 2nd character! Use them to gather materials for you while you play on your main character!!",
+                        "No real gamer does everything themself! <br> QUEST:Reach Lv 5 then create a 2nd character! They gather resources WHILE you play on your 1st character!!"
+                    ],
+                    "CustomArray": {
+                        "0": [
+                            {"desc": "Swap to 2nd Character:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                            {"desc": "Claim AFK on 2nd Char:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                        ]
+                    }
+                },
+                "The Choice is Yours!": {
+                    "DialogueText": [
+                        "Did you get all of that? I'll add a Hint to your codex about Talent Points if you ever forget. Now go spend those points! <br> MAIN QUEST:Spend 5 Talent Points",
+                        "I'll add a Hint to your codex if you want more info. Now go spend those pts! <br> MAIN QUEST:Spend 5 Talent Points"
+                    ]
+                },
+                "Hardcore Gamer Status, Here I Come!": {
+                    "DialogueText": [
+                        "Speaking of quests I'm the main quest giver and here comes your first mission! <br> MAIN QUEST:Go to the right and defeat 5 green spores.",
+                        "Here's your first quest! <br> MAIN QUEST:Go to the right and defeat 5 green spores."
+                    ]
+                },
+                "Gear Up, Gamer!": {
+                    "CustomArray": {
+                        "1": [
+                            {"desc": "Buy Tape from Shop:", "finalV": 5, "type": "GreaterEqual", "startV": 0},
+                            {"desc": "Buy Tape from Shop:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                        ]
+                    }
+                },
+                "Mr. Worldwide": {
+                    "DialogueText": [
+                        "Now lets find you some tougher monsters! Defeat enough spores to unlock the next map. Can't have a promising player like you stuck in one place! <br> MAIN QUEST:Reach map 2",
+                        "Now lets find you some tougher monsters! <br> MAIN QUEST:Defeat Green Mushrooms and reach the next map!"
+                    ]
+                },
+                "Certified Swinger, of Pickaxes of course!": {
+                    "DialogueText": [
+                        "Go check out that portal on the left. There's a cheerful goblin who will show you some new gameplay! I haven't actually seen him in a while but I bet he is as happy as I remember!  <br> MAIN QUEST:Get Glumlee's Certification. He's in the Left Portal!",
+                        "You need some ores to make better equiment...  <br> MAIN QUEST:Go through the LEFT portal to start mining and do Glumlee's quests to get the Certificate!"
+                    ]
+                },
+                "The Smithing Grind": {
+                    "DialogueText": [
+                        "Now then use what you learned to get the materials needed to craft some new Equipment at the Anvil! Go do that while I go get this certificate framed... or maybe I should get it laminated...  <br> MAIN QUEST:Craft Farmer Brim and Orange Tee",
+                        "Now use those ores to craft better equipment! You'll also need some logs from the tree in the Mushroom map... <br> MAIN QUEST:Craft Farmer Brim and Orange Tee"
+                    ]
+                }
+            }
+        },
+        "Glumlee": {
+            "quests": {
+                "Literally Burning your Money": {
+                    "DialogueText": [
+                        "Final task now. Go to the forge click the Yellow Arrow tab in the top right and buy some Upgrades. These are Permanent and are shared between all your characters.  <br> QUEST: Upgrade the forge 3 times",
+                        "Final task now. Go to the forge and but some permanent upgrades using your coins!  <br> QUEST: Upgrade the forge 2 times"
+                    ]
+                }
+            }
+        },
         "Mr Pigibank": {
             "quests": {
                 "A Pig and his Stamps": {
                     "DialogueText": [
-                        "Tell you what if you find out who ran off with my Stamps I think I may be able to set up a business with you! <br> QUEST:Find out who stole the Stamp Collection",
-                        "Find who stole my Stamps and I can do business with you! <br> QUEST:Find out who stole the Stamp Collection they're in the Frog map..."
-                    ]
-                }
-            }
-        },
-        "Woodsman": {
-            "quests": {
-                "A noob's first swing": {
-                    "DialogueText": [
-                        "Care to give it a try? I'd do it myself but I wouldn't want to embarass a beginner like you! <br> QUEST:Chop down that Tree and collect 10 Oak Logs!",
-                        "Care to give it a try? I'd do it myself but I wouldn't want to embarass a beginner like you! <br> QUEST:Collect 10 Oak Logs!"
-                    ]
-                },
-                "It's Just a Plank, Bro!": {
-                    "DialogueText": [
-                        "Hit tree with sharp hammer. Make gravity in tree go brrrr. <br> QUEST:Bring 1000 logs... you should come back to this quest later once you have a higher Log Carry Capacity!",
-                        "Hit tree with sharp hammer. Make gravity in tree go brrrr. <br> QUEST:Bring 1000 logs. You'll need a large Log Carry Cap."
-                    ]
-                },
-                "A noob's 2nd first swing": {
-                    "DialogueText": [
-                        "See how your tree over there is a tree and mine here is... well not a tree anymore? Please make yours a bit more like mine. <br> QUEST:Turn the tree into the absence of a tree and get 100 Oak Logs.",
-                        "See how your tree over there is a tree and mine here is... well not a tree anymore? Please make yours a bit more like mine. <br> QUEST:Collect 100 Oak Logs."
-                    ]
-                },
-                "Exotic Pranks... I mean Logs!": {
-                    "DialogueText": [
-                        "Actually before you take off can ya get me some exotic logs? If you get a MASSIVE highscore in the minigame rare logs will come out! Go on try getting one! <br> QUEST: Get a Forest Log by earning a choppin' highscore of 150!",
-                        "Actually before you take off can ya get me some exotic logs? There's a 1 in a billion chance of getting one from this tree! <br> QUEST: Get a Forest Log from a different tree found at the end of the world."
-                    ]
-                }
-            }
-        },
-        "Picnic Stowaway": {
-            "quests": {
-                "The Hungry Stowaway": {
-                    "DialogueText": [
-                        "Well come on now I aint gonna give you part of my stash here for nothin'. This is a picnic basket not a charity house! Bring me something and maybe we can fix up a deal... <br> QUEST:Buy and bring 20 Nomwiches from the Town Shop.",
-                        "Well come on now I aint gonna give you part of my stash here for nothin'. This is a picnic basket not a charity house! Bring me something and maybe we can fix up a deal... <br> QUEST:Bring a Nomwich buy them from the Shop in town."
+                        "Find who stole my Stamps and I can do business with you! <br> QUEST:Find out who stole the Stamp Collection they're in the Frog map...",
+                        "Find who stole my Stamps and I can do business with you! <br> QUEST:Buy a stamp from the town shop"
                     ],
-                    "ItemReq": {"0": [{"item": "FoodHealth1", "quantity": 20}, {"item": "FoodHealth1", "quantity": 1}]}
+                    "CustomArray": {
+                        "0": [
+                            {"desc": "Stamp Thief Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                            {"desc": "Buy Stamp from Shop:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                        ]
+                    }
+                }
+            }
+        },
+        "Promotheus": {
+            "quests": {
+                "I'm Ready, Promotion!": {
+                    "DialogueText": [
+                        "Good thing for that too because it looks like you could use a promotion what with you being a Beginner and all that! Come talk to me once you're level 10.",
+                        "Hang on you aren't ready for a promotion. Come talk to me once you're level 10."
+                    ]
                 }
             }
         }

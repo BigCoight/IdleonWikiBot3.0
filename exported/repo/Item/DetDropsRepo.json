@@ -538,6 +538,7 @@
             {"source": "shovelY", "quantity": 69, "chance": 0.5},
             {"source": "springEvent1", "quantity": 69, "chance": 0.5},
             {"source": "springEvent2", "quantity": 69, "chance": 0.5},
+            {"source": "fallEvent1", "quantity": 69, "chance": 0.5},
             {"source": "Copper", "quantity": 0, "chance": 0},
             {"source": "Iron", "quantity": 0, "chance": 0},
             {"source": "Gold", "quantity": 0, "chance": 0},
@@ -2878,7 +2879,8 @@
             {"source": "ChestB4", "quantity": 1, "chance": 0.23},
             {"source": "ChestC4", "quantity": 1, "chance": 0.45},
             {"source": "EasterEvent2", "quantity": 1, "chance": 0.3},
-            {"source": "springEvent2", "quantity": 1, "chance": 0.2}
+            {"source": "springEvent2", "quantity": 1, "chance": 0.2},
+            {"source": "fallEvent1", "quantity": 1, "chance": 0.2}
         ]
     },
     "Timecandy1": {
@@ -5967,7 +5969,8 @@
     "CardsY2": {
         "sources": [
             {"source": "springEvent1", "quantity": 1, "chance": 0},
-            {"source": "springEvent2", "quantity": 1, "chance": 0}
+            {"source": "springEvent2", "quantity": 1, "chance": 0},
+            {"source": "fallEvent1", "quantity": 1, "chance": 0}
         ]
     },
     "Quest71": {"sources": [
@@ -5979,9 +5982,12 @@
     "EquipmentHats38": {"sources": [
         {"source": "springEvent2", "quantity": 1, "chance": 0.001}
     ]},
-    "EquipmentHats32": {"sources": [
-        {"source": "springEvent2", "quantity": 1, "chance": 0.001}
-    ]},
+    "EquipmentHats32": {
+        "sources": [
+            {"source": "springEvent2", "quantity": 1, "chance": 0.001},
+            {"source": "fallEvent1", "quantity": 1, "chance": 0.0007}
+        ]
+    },
     "EquipmentHats56": {"sources": [
         {"source": "springEvent2", "quantity": 1, "chance": 0.001}
     ]},
@@ -5993,6 +5999,24 @@
     ]},
     "ResetCompletedS": {"sources": [
         {"source": "springEvent2", "quantity": 1, "chance": 0.001}
+    ]},
+    "Timecandy8": {"sources": [
+        {"source": "fallEvent1", "quantity": 1, "chance": 0.1}
+    ]},
+    "EquipmentHats85": {"sources": [
+        {"source": "fallEvent1", "quantity": 1, "chance": 0.001}
+    ]},
+    "EquipmentHats86": {"sources": [
+        {"source": "fallEvent1", "quantity": 1, "chance": 0.001}
+    ]},
+    "EquipmentHats87": {"sources": [
+        {"source": "fallEvent1", "quantity": 1, "chance": 0.001}
+    ]},
+    "EquipmentHats88": {"sources": [
+        {"source": "fallEvent1", "quantity": 1, "chance": 0.001}
+    ]},
+    "EquipmentHats31": {"sources": [
+        {"source": "fallEvent1", "quantity": 1, "chance": 0.0007}
     ]},
     "CardsC1": {"sources": [
         {"source": "Copper", "quantity": 1, "chance": 0.0002}

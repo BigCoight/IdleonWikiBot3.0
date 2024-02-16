@@ -71,21 +71,21 @@
         "Type": "Ore",
         "description": "Smelt down 1000 Ores into 1 Bar at the Forge. Smelting will take 20000 Seconds per Bar using Forge Slot 1. "
     },
-    "Godshard": {
-        "internalName": "Godshard",
-        "displayName": "Godshard Ore",
-        "sellPrice": 250,
-        "typeGen": "bOre",
-        "Type": "Ore",
-        "description": "Smelt down 5000 Ores into 1 Bar at the Forge. Smelting will take 60000 Seconds per Bar using Forge Slot 1. "
-    },
     "Marble": {
         "internalName": "Marble",
         "displayName": "Marble Ore",
         "sellPrice": 500,
         "typeGen": "bOre",
         "Type": "Ore",
-        "description": "Smelt down 10000 Ores into 1 Bar at the Forge. Smelting will take 100000 Seconds per Bar using Forge Slot 1. "
+        "description": "Smelt down 4000 Ores into 1 Bar at the Forge. Smelting will take 30000 Seconds per Bar using Forge Slot 1. "
+    },
+    "Godshard": {
+        "internalName": "Godshard",
+        "displayName": "Godshard Ore",
+        "sellPrice": 250,
+        "typeGen": "bOre",
+        "Type": "Ore",
+        "description": "Smelt down 15000 Ores into 1 Bar at the Forge. Smelting will take 50000 Seconds per Bar using Forge Slot 1. "
     },
     "CopperBar": {
         "internalName": "CopperBar",
@@ -212,6 +212,14 @@
         "Type": "Barrel",
         "description": "Increases Extra Bar chance by 40% for the Slot it's in. 50% chance to be consumed when a bar is forged. "
     },
+    "OilBarrel7": {
+        "internalName": "OilBarrel7",
+        "displayName": "Plasma Barrel",
+        "sellPrice": 2000000000,
+        "typeGen": "cOil",
+        "Type": "Barrel",
+        "description": "Increases Extra Bar chance by 60% for the Slot it's in. 30% chance to be consumed when a bar is forged. "
+    },
     "OakTree": {
         "internalName": "OakTree",
         "displayName": "Oak Logs",
@@ -310,6 +318,20 @@
         "typeGen": "bLog",
         "Type": "Log"
     },
+    "Tree12": {
+        "internalName": "Tree12",
+        "displayName": "Bamboo Logs",
+        "sellPrice": 500,
+        "typeGen": "bLog",
+        "Type": "Log"
+    },
+    "Tree13": {
+        "internalName": "Tree13",
+        "displayName": "Effervescent Logs",
+        "sellPrice": 500,
+        "typeGen": "bLog",
+        "Type": "Log"
+    },
     "Leaf1": {
         "internalName": "Leaf1",
         "displayName": "Grass Leaf",
@@ -341,6 +363,13 @@
     "Leaf5": {
         "internalName": "Leaf5",
         "displayName": "Magma Leaf",
+        "sellPrice": 100,
+        "typeGen": "bLeaf",
+        "Type": "Leaf"
+    },
+    "Leaf6": {
+        "internalName": "Leaf6",
+        "displayName": "Spirit Leaf",
         "sellPrice": 100,
         "typeGen": "bLeaf",
         "Type": "Leaf"
@@ -545,6 +574,22 @@
         "Type": "Bug",
         "description": "It's a fluttering piece of solid dream. This thing right here could really do some damage if only dreams were real and not made up by the powers that be... "
     },
+    "Bug12": {
+        "internalName": "Bug12",
+        "displayName": "Ladybug",
+        "sellPrice": 320,
+        "typeGen": "dBugs",
+        "Type": "Bug",
+        "description": "The black polkadot pattern is there to scare away predators. Fortunately for you, you're not scared of black dots! "
+    },
+    "Bug13": {
+        "internalName": "Bug13",
+        "displayName": "Firefly",
+        "sellPrice": 320,
+        "typeGen": "dBugs",
+        "Type": "Bug",
+        "description": "As you gaze upon the firefly's majesty, you simply CANNOT BELIEVE YOUR EYEEES. "
+    },
     "Critter1": {
         "internalName": "Critter1",
         "displayName": "Froge",
@@ -743,7 +788,7 @@
         "sellPrice": 50,
         "typeGen": "dSouls",
         "Type": "Soul",
-        "description": "Don't judge it, you'd be mad too if someone squished YOU into that weirdo lookin' pattern! "
+        "description": "Don't judge their expression, you'd be mad too if someone squished YOU into that weirdo lookin' pattern! "
     },
     "Soul6": {
         "internalName": "Soul6",
@@ -752,6 +797,14 @@
         "typeGen": "dSouls",
         "Type": "Soul",
         "description": "He be oozin' and cruisin' and ain't worried 'bout nothin' "
+    },
+    "Soul7": {
+        "internalName": "Soul7",
+        "displayName": "Breezy Soul",
+        "sellPrice": 70,
+        "typeGen": "dSouls",
+        "Type": "Soul",
+        "description": "Calm thoughts, wavy clouds, he just wanna fly. "
     },
     "EquipmentHats1": {
         "internalName": "EquipmentHats1",
@@ -1422,6 +1475,48 @@
         "miscUp1": "30% Total Damage",
         "miscUp2": "10% Drop Chance",
         "Upgrade_Slots_Left": 10,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats105": {
+        "internalName": "EquipmentHats105",
+        "displayName": "Marbiglass Headdress",
+        "sellPrice": 1,
+        "typeGen": "aHelmet",
+        "Type": "Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 360,
+        "Class": "All",
+        "Weapon_Power": 14,
+        "STR": 58,
+        "AGI": 58,
+        "WIS": 58,
+        "LUK": 58,
+        "Defence": 175,
+        "miscUp1": "12% All Stats",
+        "miscUp2": "30% Money",
+        "Upgrade_Slots_Left": 10,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats106": {
+        "internalName": "EquipmentHats106",
+        "displayName": "Crown of the Gods",
+        "sellPrice": 1,
+        "typeGen": "aHelmet",
+        "Type": "Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 510,
+        "Class": "All",
+        "Weapon_Power": 18,
+        "STR": 65,
+        "AGI": 65,
+        "WIS": 65,
+        "LUK": 65,
+        "Defence": 210,
+        "miscUp1": "15% Drop Chance",
+        "miscUp2": "15% Multikill Per Tier",
+        "Upgrade_Slots_Left": 11,
         "Skill": "",
         "Skill_Power": 0
     },
@@ -2328,6 +2423,48 @@
         "Speed": 10,
         "Reach": 96
     },
+    "EquipmentPunching10": {
+        "internalName": "EquipmentPunching10",
+        "displayName": "Pentastud Slapper",
+        "sellPrice": 7800,
+        "typeGen": "aWeapon",
+        "Type": "Fisticuff",
+        "lvReqToCraft": 10,
+        "lvReqToEquip": 360,
+        "Class": "Beginner",
+        "Weapon_Power": 75,
+        "STR": 0,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 65,
+        "Defence": 0,
+        "miscUp1": "25% Total Damage",
+        "miscUp2": "60% Money",
+        "Upgrade_Slots_Left": 6,
+        "Speed": 10,
+        "Reach": 96
+    },
+    "EquipmentPunching11": {
+        "internalName": "EquipmentPunching11",
+        "displayName": "Mittens of the Gods",
+        "sellPrice": 7800,
+        "typeGen": "aWeapon",
+        "Type": "Fisticuff",
+        "lvReqToCraft": 10,
+        "lvReqToEquip": 510,
+        "Class": "Beginner",
+        "Weapon_Power": 90,
+        "STR": 0,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 82,
+        "Defence": 0,
+        "miscUp1": "120% Total Damage",
+        "miscUp2": "40% Drop Chance",
+        "Upgrade_Slots_Left": 7,
+        "Speed": 10,
+        "Reach": 96
+    },
     "TestObj1": {
         "internalName": "TestObj1",
         "displayName": "Wooden Spear",
@@ -2537,6 +2674,48 @@
         "Upgrade_Slots_Left": 6,
         "Speed": 8,
         "Reach": 116
+    },
+    "EquipmentSword8": {
+        "internalName": "EquipmentSword8",
+        "displayName": "Elegant Spear",
+        "sellPrice": 26000,
+        "typeGen": "aWeapon",
+        "Type": "Spear",
+        "lvReqToCraft": 50,
+        "lvReqToEquip": 375,
+        "Class": "Warrior",
+        "Weapon_Power": 97,
+        "STR": 65,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "25% Total Damage",
+        "miscUp2": "30% Money",
+        "Upgrade_Slots_Left": 6,
+        "Speed": 8,
+        "Reach": 116
+    },
+    "EquipmentSword9": {
+        "internalName": "EquipmentSword9",
+        "displayName": "Godbreaker",
+        "sellPrice": 26000,
+        "typeGen": "aWeapon",
+        "Type": "Spear",
+        "lvReqToCraft": 50,
+        "lvReqToEquip": 525,
+        "Class": "Warrior",
+        "Weapon_Power": 112,
+        "STR": 80,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "60% Total Damage",
+        "miscUp2": "20% Drop Rate",
+        "Upgrade_Slots_Left": 7,
+        "Speed": 9,
+        "Reach": 132
     },
     "TestObj4": {
         "internalName": "TestObj4",
@@ -2916,6 +3095,48 @@
         "Speed": 9,
         "Reach": 340
     },
+    "EquipmentBows13": {
+        "internalName": "EquipmentBows13",
+        "displayName": "Spine Tingler Sniper",
+        "sellPrice": 15000,
+        "typeGen": "aWeapon",
+        "Type": "Bow",
+        "lvReqToCraft": 22,
+        "lvReqToEquip": 375,
+        "Class": "Archer",
+        "Weapon_Power": 95,
+        "STR": 30,
+        "AGI": 52,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "25% Total Damage",
+        "miscUp2": "30% Money",
+        "Upgrade_Slots_Left": 6,
+        "Speed": 9,
+        "Reach": 350
+    },
+    "EquipmentBows14": {
+        "internalName": "EquipmentBows14",
+        "displayName": "Spine Tingler Sniper",
+        "sellPrice": 15000,
+        "typeGen": "aWeapon",
+        "Type": "Bow",
+        "lvReqToCraft": 22,
+        "lvReqToEquip": 525,
+        "Class": "Archer",
+        "Weapon_Power": 110,
+        "STR": 37,
+        "AGI": 70,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "60% Total Damage",
+        "miscUp2": "20% Drop Rate",
+        "Upgrade_Slots_Left": 7,
+        "Speed": 10,
+        "Reach": 370
+    },
     "EquipmentWands1": {
         "internalName": "EquipmentWands1",
         "displayName": "Gnarled Wand",
@@ -3116,7 +3337,7 @@
         "Class": "Mage",
         "Weapon_Power": 94,
         "STR": 0,
-        "AGI": 6,
+        "AGI": 23,
         "WIS": 54,
         "LUK": 0,
         "Defence": 0,
@@ -3125,6 +3346,48 @@
         "Upgrade_Slots_Left": 6,
         "Speed": 8,
         "Reach": 300
+    },
+    "EquipmentWands12": {
+        "internalName": "EquipmentWands12",
+        "displayName": "Staff of the Undead Plague",
+        "sellPrice": 200,
+        "typeGen": "aWeapon",
+        "Type": "Wand",
+        "lvReqToCraft": 22,
+        "lvReqToEquip": 375,
+        "Class": "Mage",
+        "Weapon_Power": 108,
+        "STR": 0,
+        "AGI": 30,
+        "WIS": 70,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "25% Total Damage",
+        "miscUp2": "30% Money",
+        "Upgrade_Slots_Left": 6,
+        "Speed": 8,
+        "Reach": 310
+    },
+    "EquipmentWands13": {
+        "internalName": "EquipmentWands13",
+        "displayName": "Staff of the Undead Plague",
+        "sellPrice": 200,
+        "typeGen": "aWeapon",
+        "Type": "Wand",
+        "lvReqToCraft": 22,
+        "lvReqToEquip": 525,
+        "Class": "Mage",
+        "Weapon_Power": 125,
+        "STR": 0,
+        "AGI": 40,
+        "WIS": 80,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "60% Total Damage",
+        "miscUp2": "20% Drop Chance",
+        "Upgrade_Slots_Left": 7,
+        "Speed": 9,
+        "Reach": 330
     },
     "EquipmentWands4": {
         "internalName": "EquipmentWands4",
@@ -3903,6 +4166,48 @@
         "Skill": "",
         "Skill_Power": 0
     },
+    "EquipmentShirts37": {
+        "internalName": "EquipmentShirts37",
+        "displayName": "Marbiglass Tunic",
+        "sellPrice": 200,
+        "typeGen": "aShirt",
+        "Type": "Shirt",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 350,
+        "Class": "All",
+        "Weapon_Power": 10,
+        "STR": 45,
+        "AGI": 45,
+        "WIS": 45,
+        "LUK": 45,
+        "Defence": 150,
+        "miscUp1": "8% All Stats",
+        "miscUp2": "20% Money",
+        "Upgrade_Slots_Left": 9,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentShirts38": {
+        "internalName": "EquipmentShirts38",
+        "displayName": "Robe of the Gods",
+        "sellPrice": 200,
+        "typeGen": "aShirt",
+        "Type": "Shirt",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 500,
+        "Class": "All",
+        "Weapon_Power": 15,
+        "STR": 60,
+        "AGI": 60,
+        "WIS": 60,
+        "LUK": 60,
+        "Defence": 220,
+        "miscUp1": "30% Drop Chance",
+        "miscUp2": "10% Multikill Per Tier",
+        "Upgrade_Slots_Left": 10,
+        "Skill": "",
+        "Skill_Power": 0
+    },
     "EquipmentPants1": {
         "internalName": "EquipmentPants1",
         "displayName": "Torn Jeans",
@@ -4467,6 +4772,48 @@
         "miscUp1": "6% Mob Respawn",
         "miscUp2": "6% Total Damage",
         "Upgrade_Slots_Left": 9,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentPants29": {
+        "internalName": "EquipmentPants29",
+        "displayName": "Spiked Leggings of the Divine",
+        "sellPrice": 200,
+        "typeGen": "aPants",
+        "Type": "Pants",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 350,
+        "Class": "All",
+        "Weapon_Power": 7,
+        "STR": 50,
+        "AGI": 50,
+        "WIS": 50,
+        "LUK": 50,
+        "Defence": 140,
+        "miscUp1": "7% All Stats",
+        "miscUp2": "15% Money",
+        "Upgrade_Slots_Left": 9,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentPants30": {
+        "internalName": "EquipmentPants30",
+        "displayName": "Spiked Leggings of the Divine",
+        "sellPrice": 200,
+        "typeGen": "aPants",
+        "Type": "Pants",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 500,
+        "Class": "All",
+        "Weapon_Power": 10,
+        "STR": 55,
+        "AGI": 55,
+        "WIS": 55,
+        "LUK": 55,
+        "Defence": 190,
+        "miscUp1": "25% Drop Chance",
+        "miscUp2": "8% Multikill Per Tier",
+        "Upgrade_Slots_Left": 10,
         "Skill": "",
         "Skill_Power": 0
     },
@@ -5223,6 +5570,48 @@
         "miscUp1": "15% Drop Chance",
         "miscUp2": "8% Total Damage",
         "Upgrade_Slots_Left": 8,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentShoes37": {
+        "internalName": "EquipmentShoes37",
+        "displayName": "Devious Slippers of the Divine",
+        "sellPrice": 200,
+        "typeGen": "aShoes",
+        "Type": "Shoes",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 350,
+        "Class": "All",
+        "Weapon_Power": 5,
+        "STR": 43,
+        "AGI": 43,
+        "WIS": 43,
+        "LUK": 43,
+        "Defence": 100,
+        "miscUp1": "7% All Stats",
+        "miscUp2": "20% Money",
+        "Upgrade_Slots_Left": 8,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentShoes38": {
+        "internalName": "EquipmentShoes38",
+        "displayName": "Devious Slippers of the Divine",
+        "sellPrice": 200,
+        "typeGen": "aShoes",
+        "Type": "Shoes",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 500,
+        "Class": "All",
+        "Weapon_Power": 5,
+        "STR": 57,
+        "AGI": 57,
+        "WIS": 57,
+        "LUK": 57,
+        "Defence": 100,
+        "miscUp1": "30% Drop Chance",
+        "miscUp2": "7% Multikill Per Tier",
+        "Upgrade_Slots_Left": 9,
         "Skill": "",
         "Skill_Power": 0
     },
@@ -8070,6 +8459,81 @@
             "i12": 0
         }
     },
+    "StampA40": {
+        "internalName": "StampA40",
+        "displayName": "Void Sword Stamp",
+        "sellPrice": 1,
+        "typeGen": "aStamp",
+        "Type": "Combat Stamp",
+        "description": "",
+        "bonus": "+{ Base Damage",
+        "ID": 40,
+        "stampData": {
+            "effect": "BaseDmg",
+            "function": "add",
+            "x1": 12,
+            "x2": 0,
+            "upgradeInterval": 10,
+            "material": {"item": "SpiA2"},
+            "startV": 20000,
+            "mCostExp": 10,
+            "startingCost": 2500000000,
+            "cCostExp": 1.36,
+            "i10": 0,
+            "upgradeText": "{} Base Damage",
+            "i12": 0
+        }
+    },
+    "StampA41": {
+        "internalName": "StampA41",
+        "displayName": "Void Axe Stamp",
+        "sellPrice": 1,
+        "typeGen": "aStamp",
+        "Type": "Combat Stamp",
+        "description": "",
+        "bonus": "+{% Total Damage",
+        "ID": 41,
+        "stampData": {
+            "effect": "PctDmg",
+            "function": "decay",
+            "x1": 35,
+            "x2": 200,
+            "upgradeInterval": 15,
+            "material": {"item": "Tree12"},
+            "startV": 25000,
+            "mCostExp": 10,
+            "startingCost": 66000000000,
+            "cCostExp": 1.36,
+            "i10": 0,
+            "upgradeText": "{}% Total Damage",
+            "i12": 0
+        }
+    },
+    "StampA42": {
+        "internalName": "StampA42",
+        "displayName": "Captalist Stats Stamp",
+        "sellPrice": 1,
+        "typeGen": "aStamp",
+        "Type": "Combat Stamp",
+        "description": "",
+        "bonus": "+{% All Stats",
+        "ID": 42,
+        "stampData": {
+            "effect": "AllStatPct",
+            "function": "decay",
+            "x1": 5,
+            "x2": 100,
+            "upgradeInterval": 10,
+            "material": {"item": "Bug13"},
+            "startV": 40000,
+            "mCostExp": 10,
+            "startingCost": 2200000000000,
+            "cCostExp": 1.36,
+            "i10": 0,
+            "upgradeText": "{}% All Stats",
+            "i12": 0
+        }
+    },
     "StampB1": {
         "internalName": "StampB1",
         "displayName": "Pickaxe Stamp",
@@ -9245,6 +9709,181 @@
             "i12": 0
         }
     },
+    "StampB48": {
+        "internalName": "StampB48",
+        "displayName": "Crop Evo Stamp",
+        "sellPrice": 4000,
+        "typeGen": "aStamp",
+        "Type": "Skills Stamp",
+        "description": "",
+        "bonus": "+{% Crop Evolution Chance",
+        "ID": 48,
+        "stampData": {
+            "effect": "CropEvo",
+            "function": "add",
+            "x1": 5,
+            "x2": 0,
+            "upgradeInterval": 5,
+            "material": {"item": "Fish9"},
+            "startV": 12000,
+            "mCostExp": 10,
+            "startingCost": 1e+11,
+            "cCostExp": 1.37,
+            "i10": 0,
+            "upgradeText": "{}% Crop Evolution Chance",
+            "i12": 0
+        }
+    },
+    "StampB49": {
+        "internalName": "StampB49",
+        "displayName": "Sneaky Peeky Stamp",
+        "sellPrice": 4000,
+        "typeGen": "aStamp",
+        "Type": "Skills Stamp",
+        "description": "",
+        "bonus": "+{% Sneaking EXP Gain",
+        "ID": 49,
+        "stampData": {
+            "effect": "SneakExp",
+            "function": "decay",
+            "x1": 50,
+            "x2": 150,
+            "upgradeInterval": 8,
+            "material": {"item": "SpiA4"},
+            "startV": 20000,
+            "mCostExp": 10,
+            "startingCost": 5e+10,
+            "cCostExp": 1.37,
+            "i10": 0,
+            "upgradeText": "{}% Sneaking EXP gain",
+            "i12": 0
+        }
+    },
+    "StampB50": {
+        "internalName": "StampB50",
+        "displayName": "Jade Mint Stamp",
+        "sellPrice": 4000,
+        "typeGen": "aStamp",
+        "Type": "Skills Stamp",
+        "description": "",
+        "bonus": "+{% Jade Coin Gain",
+        "ID": 50,
+        "stampData": {
+            "effect": "JadeCoin",
+            "function": "add",
+            "x1": 0.5,
+            "x2": 0,
+            "upgradeInterval": 10,
+            "material": {"item": "Spi2b"},
+            "startV": 15,
+            "mCostExp": 7,
+            "startingCost": 2e+10,
+            "cCostExp": 1.37,
+            "i10": 0,
+            "upgradeText": "{}% Jade Coin gain",
+            "i12": 0
+        }
+    },
+    "StampB51": {
+        "internalName": "StampB51",
+        "displayName": "Summoner Stone Stamp",
+        "sellPrice": 4000,
+        "typeGen": "aStamp",
+        "Type": "Skills Stamp",
+        "description": "",
+        "bonus": "+{% Summoning EXP Gain",
+        "ID": 51,
+        "stampData": {
+            "effect": "SummonExp",
+            "function": "decay",
+            "x1": 50,
+            "x2": 150,
+            "upgradeInterval": 8,
+            "material": {"item": "Soul7"},
+            "startV": 8000,
+            "mCostExp": 10,
+            "startingCost": 5e+10,
+            "cCostExp": 1.37,
+            "i10": 0,
+            "upgradeText": "{}% Summoning EXP gain",
+            "i12": 0
+        }
+    },
+    "StampB52": {
+        "internalName": "StampB52",
+        "displayName": "White Essence Stamp",
+        "sellPrice": 4000,
+        "typeGen": "aStamp",
+        "Type": "Skills Stamp",
+        "description": "",
+        "bonus": "+{% White Essence Gain",
+        "ID": 52,
+        "stampData": {
+            "effect": "WhiteEss",
+            "function": "add",
+            "x1": 1,
+            "x2": 0,
+            "upgradeInterval": 8,
+            "material": {"item": "Bug12"},
+            "startV": 15000,
+            "mCostExp": 10,
+            "startingCost": 6e+10,
+            "cCostExp": 1.37,
+            "i10": 0,
+            "upgradeText": "{}% White Essence Gain gain",
+            "i12": 0
+        }
+    },
+    "StampB53": {
+        "internalName": "StampB53",
+        "displayName": "Triad Essence Stamp",
+        "sellPrice": 4000,
+        "typeGen": "aStamp",
+        "Type": "Skills Stamp",
+        "description": "",
+        "bonus": "+{% G, Y, B Essence Gain",
+        "ID": 53,
+        "stampData": {
+            "effect": "123Ess",
+            "function": "add",
+            "x1": 1,
+            "x2": 0,
+            "upgradeInterval": 8,
+            "material": {"item": "Fish12"},
+            "startV": 8000,
+            "mCostExp": 10,
+            "startingCost": 8e+11,
+            "cCostExp": 1.37,
+            "i10": 0,
+            "upgradeText": "{}% G Y and B Essence gain",
+            "i12": 0
+        }
+    },
+    "StampB54": {
+        "internalName": "StampB54",
+        "displayName": "Dark Triad Essence Stamp",
+        "sellPrice": 4000,
+        "typeGen": "aStamp",
+        "Type": "Skills Stamp",
+        "description": "",
+        "bonus": "+{% P, R, C Essence Gain",
+        "ID": 54,
+        "stampData": {
+            "effect": "456Ess",
+            "function": "add",
+            "x1": 1,
+            "x2": 0,
+            "upgradeInterval": 8,
+            "material": {"item": "Tree13"},
+            "startV": 45000,
+            "mCostExp": 10,
+            "startingCost": 1.2e+13,
+            "cCostExp": 1.37,
+            "i10": 0,
+            "upgradeText": "{}% P R and C Essence gain",
+            "i12": 0
+        }
+    },
     "StampC1": {
         "internalName": "StampC1",
         "displayName": "Questin Stamp",
@@ -9472,77 +10111,77 @@
     },
     "StampC10": {
         "internalName": "StampC10",
-        "displayName": "Blank",
-        "sellPrice": 1,
+        "displayName": "Forge Stamp",
+        "sellPrice": 1000000000000,
         "typeGen": "aStamp",
         "Type": "Misc Stamp",
         "description": "",
-        "bonus": "+{",
+        "bonus": "+{% Forge Max Capacity",
         "ID": 10,
         "stampData": {
-            "effect": "BaseDmg",
-            "function": "add",
-            "x1": 30,
-            "x2": 0,
+            "effect": "ForgeCap",
+            "function": "decay",
+            "x1": 120,
+            "x2": 250,
             "upgradeInterval": 10,
-            "material": {"item": "Copper"},
-            "startV": 25,
-            "mCostExp": 6,
-            "startingCost": 50,
+            "material": {"item": "Godshard"},
+            "startV": 250,
+            "mCostExp": 8,
+            "startingCost": 5000000000000,
             "cCostExp": 1.3,
             "i10": 0,
-            "upgradeText": "{} Base HP",
-            "i12": 3
+            "upgradeText": "{}% Forge Capacity",
+            "i12": 0
         }
     },
     "StampC11": {
         "internalName": "StampC11",
-        "displayName": "Blank",
-        "sellPrice": 1,
+        "displayName": "Vendor Stamp",
+        "sellPrice": 100000,
         "typeGen": "aStamp",
         "Type": "Misc Stamp",
         "description": "",
-        "bonus": "+{",
+        "bonus": "+{% Shop Stock Quantity",
         "ID": 11,
         "stampData": {
-            "effect": "BaseDmg",
-            "function": "add",
-            "x1": 30,
-            "x2": 0,
+            "effect": "ShopQty",
+            "function": "decay",
+            "x1": 35,
+            "x2": 100,
             "upgradeInterval": 10,
-            "material": {"item": "Copper"},
-            "startV": 25,
-            "mCostExp": 6,
-            "startingCost": 50,
-            "cCostExp": 1.3,
+            "material": {"item": "CraftMat3"},
+            "startV": 100,
+            "mCostExp": 10,
+            "startingCost": 30000,
+            "cCostExp": 1.5,
             "i10": 0,
-            "upgradeText": "{} Base HP",
+            "upgradeText": "{}% Higher Shop QTY",
             "i12": 3
         }
     },
     "StampC12": {
         "internalName": "StampC12",
-        "displayName": "Blank",
-        "sellPrice": 1,
+        "displayName": "Sigil Stamp",
+        "sellPrice": 700000000,
         "typeGen": "aStamp",
         "Type": "Misc Stamp",
         "description": "",
-        "bonus": "+{",
+        "bonus": "+{% Sigil Charge rate",
         "ID": 12,
         "stampData": {
-            "effect": "BaseDmg",
-            "function": "add",
-            "x1": 30,
-            "x2": 0,
-            "upgradeInterval": 10,
-            "material": {"item": "Copper"},
-            "startV": 25,
+            "effect": "SigilCharge",
+            "function": "decay",
+            "x1": 40,
+            "x2": 150,
+            "upgradeInterval": 12,
+            "material": {"item": "SnowA4"},
+            "startV": 2000,
             "mCostExp": 6,
-            "startingCost": 50,
-            "cCostExp": 1.3,
+            "startingCost": 1000000,
+            "cCostExp": 1.32,
             "i10": 0,
-            "upgradeText": "{} Base HP",
-            "i12": 3
+            "upgradeText": "{}% Sigil Charge rate",
+            "i12": 0
         }
     },
     "StampC13": {
@@ -9795,6 +10434,31 @@
             "i12": 0
         }
     },
+    "StampC23": {
+        "internalName": "StampC23",
+        "displayName": "Atomic Stamp",
+        "sellPrice": 1,
+        "typeGen": "aStamp",
+        "Type": "Misc Stamp",
+        "description": "",
+        "bonus": "+{% Lower Atom Upgrade Costs",
+        "ID": 23,
+        "stampData": {
+            "effect": "AtomCost",
+            "function": "decay",
+            "x1": 20,
+            "x2": 80,
+            "upgradeInterval": 8,
+            "material": {"item": "SpiA3"},
+            "startV": 2500,
+            "mCostExp": 5,
+            "startingCost": 25000000,
+            "cCostExp": 1.52,
+            "i10": 0,
+            "upgradeText": "{}% lower Atom upgrade costs",
+            "i12": 0
+        }
+    },
     "StoneWe": {
         "internalName": "StoneWe",
         "displayName": "Easter Weapon Stone",
@@ -9884,6 +10548,15 @@
         "Type": "Upgrade",
         "description": "Drag onto any Weapon to apply. +7 Weapon Power, +6 Main Stat. Success Chance; 60% Uses up 1 item slots. WARNING:Slots are used up even if the Upgrade fails! ",
         "tier": "SK"
+    },
+    "StoneW8": {
+        "internalName": "StoneW8",
+        "displayName": "Weapon Upgrade Stone VI",
+        "sellPrice": 600000000,
+        "typeGen": "dStone",
+        "Type": "Upgrade",
+        "description": "Drag onto any Weapon to apply. +8 Weapon Power, +7 Main Stat. Success Chance; 75% Uses up 1 item slots. WARNING:Slots are used up even if the Upgrade fails! ",
+        "tier": "VI"
     },
     "StoneAe": {
         "internalName": "StoneAe",
@@ -9984,6 +10657,15 @@
         "description": "Drag onto any Armor to apply. +1 Weapon Power, +13 Defence, +8 Main Stat. Success Chance; 60% Uses up 1 item slots. WARNING:Slots are used up even if the Upgrade fails! ",
         "tier": "SK"
     },
+    "StoneA7": {
+        "internalName": "StoneA7",
+        "displayName": "Armor Upgrade Stone VI",
+        "sellPrice": 45000000,
+        "typeGen": "dStone",
+        "Type": "Upgrade",
+        "description": "Drag onto any Armor to apply. +1 Weapon Power, +15 Defence, +10 Main Stat. Success Chance; 75% Uses up 1 item slots. WARNING:Slots are used up even if the Upgrade fails! ",
+        "tier": "VI"
+    },
     "StoneTe": {
         "internalName": "StoneTe",
         "displayName": "Easter Tool Upgrade Stone",
@@ -10064,6 +10746,15 @@
         "Type": "Upgrade",
         "description": "Drag onto any Tool to apply. +8 Tool Skill Power, +9 Main Stat. Success Chance; 60% Uses up 1 item slots. WARNING:Slots are used up even if the Upgrade fails! ",
         "tier": "SK"
+    },
+    "StoneT7": {
+        "internalName": "StoneT7",
+        "displayName": "Tool Upgrade Stone VI",
+        "sellPrice": 30000000,
+        "typeGen": "dStone",
+        "Type": "Upgrade",
+        "description": "Drag onto any Tool to apply. +8 Tool Skill Power, +12 Main Stat. Success Chance; 75% Uses up 1 item slots. WARNING:Slots are used up even if the Upgrade fails! ",
+        "tier": "VI"
     },
     "StoneHelm1": {
         "internalName": "StoneHelm1",
@@ -10816,6 +11507,36 @@
         "order": 25,
         "level": 1
     },
+    "InvStorage26": {
+        "internalName": "InvStorage26",
+        "displayName": "Storage Chest 26",
+        "sellPrice": 100000000000000000,
+        "typeGen": "aStorageChest",
+        "Type": "Storage",
+        "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
+        "order": 26,
+        "level": 1
+    },
+    "InvStorage27": {
+        "internalName": "InvStorage27",
+        "displayName": "Storage Chest 27",
+        "sellPrice": 2500000000000000000,
+        "typeGen": "aStorageChest",
+        "Type": "Storage",
+        "description": "Hold down to permanently add +9 Slots to your Storage Chest. Can only be used once.",
+        "order": 27,
+        "level": 1
+    },
+    "InvStorage28": {
+        "internalName": "InvStorage28",
+        "displayName": "Storage Chest 28",
+        "sellPrice": 7000000000000000000000,
+        "typeGen": "aStorageChest",
+        "Type": "Storage",
+        "description": "Hold down to permanently add +10 Slots to your Storage Chest. Can only be used once.",
+        "order": 28,
+        "level": 1
+    },
     "InvStorage31": {
         "internalName": "InvStorage31",
         "displayName": "Storage Chest 90",
@@ -10964,6 +11685,16 @@
         "Type": "Storage",
         "description": "Hold down to permanently add +4 Slots to your Storage Chest. Can only be used once.",
         "order": 103,
+        "level": 1
+    },
+    "InvStorageD": {
+        "internalName": "InvStorageD",
+        "displayName": "Woodlin Chest",
+        "sellPrice": 1000,
+        "typeGen": "aStorageChest",
+        "Type": "Storage",
+        "description": "Hold down to permanently add +4 Slots to your Storage Chest. Can only be used once.",
+        "order": 104,
         "level": 1
     },
     "Line1": {
@@ -11565,6 +12296,94 @@
         "typeGen": "dQuest",
         "Type": "Bits",
         "description": "Bits "
+    },
+    "W6item0": {
+        "internalName": "W6item0",
+        "displayName": "Strung Jewels",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Sail Treasure",
+        "description": "Jade "
+    },
+    "W6item1": {
+        "internalName": "W6item1",
+        "displayName": "Strung Jewels",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Sail Treasure",
+        "description": "Sail Treasure "
+    },
+    "W6item2": {
+        "internalName": "W6item2",
+        "displayName": "Strung Jewels",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Sail Treasure",
+        "description": "Sail Treasure "
+    },
+    "W6item3": {
+        "internalName": "W6item3",
+        "displayName": "Strung Jewels",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Sail Treasure",
+        "description": "Sail Treasure "
+    },
+    "W6item4": {
+        "internalName": "W6item4",
+        "displayName": "Strung Jewels",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Sail Treasure",
+        "description": "Sail Treasure "
+    },
+    "W6item5": {
+        "internalName": "W6item5",
+        "displayName": "Strung Jewels",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Sail Treasure",
+        "description": "Sail Treasure "
+    },
+    "W6item6": {
+        "internalName": "W6item6",
+        "displayName": "Strung Jewels",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Sail Treasure",
+        "description": "Sail Treasure "
+    },
+    "W6item7": {
+        "internalName": "W6item7",
+        "displayName": "Strung Jewels",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Sail Treasure",
+        "description": "Sail Treasure "
+    },
+    "W6item8": {
+        "internalName": "W6item8",
+        "displayName": "Strung Jewels",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Sail Treasure",
+        "description": "Sail Treasure "
+    },
+    "W6item9": {
+        "internalName": "W6item9",
+        "displayName": "Strung Jewels",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Sail Treasure",
+        "description": "Sail Treasure "
+    },
+    "W6item10": {
+        "internalName": "W6item10",
+        "displayName": "Strung Jewels",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Sail Treasure",
+        "description": "Sail Treasure "
     },
     "Ladle": {
         "internalName": "Ladle",
@@ -13189,6 +14008,134 @@
         "typeGen": "bCraft",
         "Type": "Monster Drop",
         "description": "Perfect for an Eating Challenge! "
+    },
+    "SpiA1": {
+        "internalName": "SpiA1",
+        "displayName": "Leafy Droplet",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "It's more of a gel than a liquid, but strangely when you pull the leaf out it loses its rigidity. "
+    },
+    "SpiA2": {
+        "internalName": "SpiA2",
+        "displayName": "Rice Cake",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "A single slice of a rice cake. Despite seemingly being made of 90 percent air, some people really enjoy these. "
+    },
+    "SpiA2b": {
+        "internalName": "SpiA2b",
+        "displayName": "Stacked Rice Cake",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "A single slice of a rice cake, but with another single slice of rice cake attached underneath the first single slice of rice! There's also a single slice of orange sauce, if you can call liquid a slice. Want me to say slice again? "
+    },
+    "SpiA3": {
+        "internalName": "SpiA3",
+        "displayName": "Bamboo",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "You stole this from a hard working water spirit... but carrying bamboo is not what water is meant to do, so it had it coming, that silly water! "
+    },
+    "SpiA4": {
+        "internalName": "SpiA4",
+        "displayName": "Leafy Horn",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "You took the baby troll's beloved horn, but you didn't even have the decency to ask first? I guess MANNERS isn't a skill in Worlds 1 to 5 huh... "
+    },
+    "SpiA5": {
+        "internalName": "SpiA5",
+        "displayName": "Wooden Aortic Mass",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "It sits motionless, unbeating, blood not being pumped. It's made of wood, so this doesn't come as a surprise. "
+    },
+    "SpiB1": {
+        "internalName": "SpiB1",
+        "displayName": "Leafy Branch",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "Eleven leaves, one branch. If we had 14 more branches, and took off 3 leaves from each branch, how many seconds in total would be wasted figuring out how many leaves there are? 15, cuz there are 120 leaves. "
+    },
+    "SpiB2": {
+        "internalName": "SpiB2",
+        "displayName": "Light Lantern",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "I think it says... OTL? One Time Lucky? But I want to be lucky MORE than once... better wipe out some more lantern spirits! "
+    },
+    "SpiB2b": {
+        "internalName": "SpiB2b",
+        "displayName": "Dark Lantern",
+        "sellPrice": 1500000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "Oh NO! I know what THAT means, thats AWFUL!! That puts the light lantern in context, thats for sure... "
+    },
+    "SpiB3": {
+        "internalName": "SpiB3",
+        "displayName": "Troll Flower",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "Now I know what you're thinking, and yes it is indeed part of its head and not a hat. "
+    },
+    "SpiB4": {
+        "internalName": "SpiB4",
+        "displayName": "Chopped Leek",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "Wow ok this is way more gruesome with context than without... "
+    },
+    "SpiC1": {
+        "internalName": "SpiC1",
+        "displayName": "Shattered Ceramic",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "I'm falllling to pieeeeceesssss, yeahhh... "
+    },
+    "SpiC2": {
+        "internalName": "SpiC2",
+        "displayName": "Eviscerated Chunk",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "Ouch! I don't think we have a big enough bandaid for the poor fella! "
+    },
+    "SpiD1": {
+        "internalName": "SpiD1",
+        "displayName": "Royal Yolk",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "Sometimes it's fun to poke at the yellow outisde and watch the yellow insides ooze out... "
+    },
+    "SpiD2": {
+        "internalName": "SpiD2",
+        "displayName": "Royal Fabric",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "Now I know what you're thinking, and yes it is indeed part of its elegant hat and not part of its head. "
+    },
+    "SpiD3": {
+        "internalName": "SpiD3",
+        "displayName": "Royal Headpiece",
+        "sellPrice": 150000,
+        "typeGen": "bCraft",
+        "Type": "Monster Drop",
+        "description": "It shines bright and true, to signify how dope n' epic ninjas are, heck yea. "
     },
     "ObolHyper0": {
         "internalName": "ObolHyper0",
@@ -15672,6 +16619,24 @@
         "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Ores, Bars, Barrels",
         "level": 150
     },
+    "MaxCapBagMi10": {
+        "internalName": "MaxCapBagMi10",
+        "displayName": "Gargantuan Mining Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 25000: Ores, Bars, Barrels",
+        "level": 350
+    },
+    "MaxCapBagMi11": {
+        "internalName": "MaxCapBagMi11",
+        "displayName": "Herculean Mining Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 30000: Ores, Bars, Barrels",
+        "level": 500
+    },
     "MaxCapBagT1": {
         "internalName": "MaxCapBagT1",
         "displayName": "Miniature Choppin Pouch",
@@ -15761,6 +16726,24 @@
         "Type": "Carry Bag",
         "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Logs, Leaves",
         "level": 150
+    },
+    "MaxCapBagT10": {
+        "internalName": "MaxCapBagT10",
+        "displayName": "Gargantuan Chopping Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 25000: Logs, Leaves",
+        "level": 350
+    },
+    "MaxCapBagT11": {
+        "internalName": "MaxCapBagT11",
+        "displayName": "Herculean Chopping Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 30000: Logs, Leaves",
+        "level": 500
     },
     "MaxCapBag6": {
         "internalName": "MaxCapBag6",
@@ -15852,6 +16835,24 @@
         "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Health Food, Boost Food, Golden Food",
         "level": 150
     },
+    "MaxCapBagF10": {
+        "internalName": "MaxCapBagF10",
+        "displayName": "Gargantuan Food Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 25000: Health Food, Boost Food, Golden Food",
+        "level": 350
+    },
+    "MaxCapBagF11": {
+        "internalName": "MaxCapBagF11",
+        "displayName": "Herculean Food Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 30000: Health Food, Boost Food, Golden Food",
+        "level": 500
+    },
     "MaxCapBagM1": {
         "internalName": "MaxCapBagM1",
         "displayName": "Mini Materials Pouch",
@@ -15941,6 +16942,24 @@
         "Type": "Carry Bag",
         "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Monster Parts, Smithing Production Items",
         "level": 150
+    },
+    "MaxCapBagM11": {
+        "internalName": "MaxCapBagM11",
+        "displayName": "Gargantuan Matty Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 25000: Monster Parts, Smithing Production Items",
+        "level": 350
+    },
+    "MaxCapBagM12": {
+        "internalName": "MaxCapBagM12",
+        "displayName": "Herculean Matty Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 30000: Monster Parts, Smithing Production Items",
+        "level": 500
     },
     "MaxCapBagFi0": {
         "internalName": "MaxCapBagFi0",
@@ -16032,6 +17051,24 @@
         "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Fish",
         "level": 150
     },
+    "MaxCapBagFi10": {
+        "internalName": "MaxCapBagFi10",
+        "displayName": "Gargantuan Fish Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 25000: Fish",
+        "level": 350
+    },
+    "MaxCapBagFi11": {
+        "internalName": "MaxCapBagFi11",
+        "displayName": "Herculean Fish Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 30000: Fish",
+        "level": 500
+    },
     "MaxCapBagB0": {
         "internalName": "MaxCapBagB0",
         "displayName": "Miniature Bug Pouch",
@@ -16122,6 +17159,24 @@
         "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Bugs",
         "level": 150
     },
+    "MaxCapBagB10": {
+        "internalName": "MaxCapBagB10",
+        "displayName": "Gargantuan Bug Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 25000: Bugs",
+        "level": 350
+    },
+    "MaxCapBagB11": {
+        "internalName": "MaxCapBagB11",
+        "displayName": "Herculean Bug Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 30000: Bugs",
+        "level": 500
+    },
     "MaxCapBagTr0": {
         "internalName": "MaxCapBagTr0",
         "displayName": "Cramped Critter Pouch",
@@ -16203,6 +17258,24 @@
         "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Critters",
         "level": 150
     },
+    "MaxCapBagTr9": {
+        "internalName": "MaxCapBagTr9",
+        "displayName": "Gargantuan Critta Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 25000: Critters",
+        "level": 350
+    },
+    "MaxCapBagTr10": {
+        "internalName": "MaxCapBagTr10",
+        "displayName": "Herculean Critta Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 30000: Critters",
+        "level": 500
+    },
     "MaxCapBagS0": {
         "internalName": "MaxCapBagS0",
         "displayName": "Cramped Soul Pouch",
@@ -16283,6 +17356,24 @@
         "Type": "Carry Bag",
         "description": "Hold down on this bag to increase the Carry Capacity of the following items to 20000: Souls",
         "level": 150
+    },
+    "MaxCapBagS9": {
+        "internalName": "MaxCapBagS9",
+        "displayName": "Gargantuan Soul Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 25000: Souls",
+        "level": 350
+    },
+    "MaxCapBagS10": {
+        "internalName": "MaxCapBagS10",
+        "displayName": "Herculean Soul Pouch",
+        "sellPrice": 200,
+        "typeGen": "aCarryBag",
+        "Type": "Carry Bag",
+        "description": "Hold down on this bag to increase the Carry Capacity of the following items to 30000: Souls",
+        "level": 500
     },
     "Key1": {
         "internalName": "Key1",
@@ -17824,6 +18915,50 @@
         "Skill_Power": 42,
         "Speed": 7
     },
+    "EquipmentTools14": {
+        "internalName": "EquipmentTools14",
+        "displayName": "Marbiglass Pickaxe",
+        "sellPrice": 200,
+        "typeGen": "aPick",
+        "Type": "Pickaxe",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 80,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 42,
+        "AGI": 20,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 30,
+        "miscUp1": "25% Mining Efficincy",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 6,
+        "Skill": "Mining",
+        "Skill_Power": 51,
+        "Speed": 7
+    },
+    "EquipmentTools15": {
+        "internalName": "EquipmentTools15",
+        "displayName": "Destroyer of the Mollo Gomme",
+        "sellPrice": 200,
+        "typeGen": "aPick",
+        "Type": "Pickaxe",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 100,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 55,
+        "AGI": 25,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 35,
+        "miscUp1": "35% Mining Efficincy",
+        "miscUp2": "10% Drop Chance",
+        "Upgrade_Slots_Left": 7,
+        "Skill": "Mining",
+        "Skill_Power": 62,
+        "Speed": 8
+    },
     "EquipmentTools10": {
         "internalName": "EquipmentTools10",
         "displayName": "Poopy Pickaxe",
@@ -18090,7 +19225,7 @@
     },
     "EquipmentToolsHatchet9": {
         "internalName": "EquipmentToolsHatchet9",
-        "displayName": "Dreadlo Eviscerator",
+        "displayName": "Dreadlo Hatchet",
         "sellPrice": 200,
         "typeGen": "aHatchet",
         "Type": "Hatchet",
@@ -18110,14 +19245,14 @@
         "Skill_Power": 40,
         "Speed": 7
     },
-    "EquipmentToolsHatchet10": {
-        "internalName": "EquipmentToolsHatchet10",
-        "displayName": "Annihilator of the Yggdrasil",
+    "EquipmentToolsHatchet12": {
+        "internalName": "EquipmentToolsHatchet12",
+        "displayName": "Marbiglass Hatchet",
         "sellPrice": 200,
         "typeGen": "aHatchet",
         "Type": "Hatchet",
         "lvReqToCraft": 15,
-        "lvReqToEquip": 80,
+        "lvReqToEquip": 75,
         "Class": "All",
         "Weapon_Power": 0,
         "STR": 5,
@@ -18125,11 +19260,33 @@
         "WIS": 40,
         "LUK": 5,
         "Defence": 0,
-        "miscUp1": "",
+        "miscUp1": "5% Chop Efficiency",
         "miscUp2": "00",
         "Upgrade_Slots_Left": 6,
         "Skill": "Choppin",
         "Skill_Power": 50,
+        "Speed": 8
+    },
+    "EquipmentToolsHatchet10": {
+        "internalName": "EquipmentToolsHatchet10",
+        "displayName": "Annihilator of the Yggdrasil",
+        "sellPrice": 200,
+        "typeGen": "aHatchet",
+        "Type": "Hatchet",
+        "lvReqToCraft": 15,
+        "lvReqToEquip": 90,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 8,
+        "AGI": 8,
+        "WIS": 50,
+        "LUK": 8,
+        "Defence": 0,
+        "miscUp1": "12% Chop Efficiency",
+        "miscUp2": "10% Drop Chance",
+        "Upgrade_Slots_Left": 7,
+        "Skill": "Choppin",
+        "Skill_Power": 62,
         "Speed": 8
     },
     "EquipmentToolsHatchet11": {
@@ -18374,6 +19531,50 @@
         "Skill_Power": 60,
         "Speed": 7
     },
+    "FishingRod11": {
+        "internalName": "FishingRod11",
+        "displayName": "Marbiglass Rod",
+        "sellPrice": 10000,
+        "typeGen": "aFishingRod",
+        "Type": "Fishing Rod",
+        "lvReqToCraft": 15,
+        "lvReqToEquip": 75,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 50,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "5% Fishin Efficincy",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 6,
+        "Skill": "Fishing",
+        "Skill_Power": 72,
+        "Speed": 7
+    },
+    "FishingRod12": {
+        "internalName": "FishingRod12",
+        "displayName": "Angler of the Iliunne",
+        "sellPrice": 10000,
+        "typeGen": "aFishingRod",
+        "Type": "Fishing Rod",
+        "lvReqToCraft": 15,
+        "lvReqToEquip": 90,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 75,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "12% Fishin Efficincy",
+        "miscUp2": "10% Drop Chance",
+        "Upgrade_Slots_Left": 7,
+        "Skill": "Fishing",
+        "Skill_Power": 85,
+        "Speed": 8
+    },
     "CatchingNet1": {
         "internalName": "CatchingNet1",
         "displayName": "Bug Net",
@@ -18594,6 +19795,50 @@
         "Skill_Power": 65,
         "Speed": 7
     },
+    "CatchingNet11": {
+        "internalName": "CatchingNet11",
+        "displayName": "Marbiglass Netting",
+        "sellPrice": 17000,
+        "typeGen": "aBugNet",
+        "Type": "Bug Catching Net",
+        "lvReqToCraft": 1,
+        "lvReqToEquip": 80,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 15,
+        "AGI": 32,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "5% Catch Efficincy",
+        "miscUp2": "15% Money",
+        "Upgrade_Slots_Left": 6,
+        "Skill": "Catching",
+        "Skill_Power": 78,
+        "Speed": 7
+    },
+    "CatchingNet12": {
+        "internalName": "CatchingNet12",
+        "displayName": "Wrangler of the Qoxzul",
+        "sellPrice": 17000,
+        "typeGen": "aBugNet",
+        "Type": "Bug Catching Net",
+        "lvReqToCraft": 1,
+        "lvReqToEquip": 95,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 20,
+        "AGI": 45,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "12% Catch Efficincy",
+        "miscUp2": "10% Drop Chance",
+        "Upgrade_Slots_Left": 7,
+        "Skill": "Catching",
+        "Skill_Power": 92,
+        "Speed": 8
+    },
     "TrapBoxSet1": {
         "internalName": "TrapBoxSet1",
         "displayName": "Cardboard Traps",
@@ -18796,7 +20041,7 @@
     },
     "TrapBoxSet8": {
         "internalName": "TrapBoxSet8",
-        "displayName": "Egalitarian Royal Traps",
+        "displayName": "Egalitarian Traps",
         "sellPrice": 6,
         "typeGen": "aTrap",
         "Type": "Trap Box Set",
@@ -18814,6 +20059,66 @@
         "Upgrade_Slots_Left": 4,
         "Skill": "Trapping",
         "Skill_Power": 55,
+        "Speed": 4,
+        "trapBoxData": [
+            {"time": 1200, "qtyX": 2, "expX": 0, "shinyX": 4},
+            {"time": 3600, "qtyX": 4, "expX": 0, "shinyX": 8},
+            {"time": 36000, "qtyX": 21, "expX": 0, "shinyX": 38},
+            {"time": 144000, "qtyX": 70, "expX": 0, "shinyX": 125},
+            {"time": 576000, "qtyX": 250, "expX": 0, "shinyX": 375},
+            {"time": 2419000, "qtyX": 550, "expX": 0, "shinyX": 1150}
+        ]
+    },
+    "TrapBoxSet9": {
+        "internalName": "TrapBoxSet9",
+        "displayName": "Forbidden Traps",
+        "sellPrice": 6,
+        "typeGen": "aTrap",
+        "Type": "Trap Box Set",
+        "lvReqToCraft": 1,
+        "lvReqToEquip": 90,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 0,
+        "AGI": 56,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "15% Money",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "Trapping",
+        "Skill_Power": 67,
+        "Speed": 4,
+        "trapBoxData": [
+            {"time": 1200, "qtyX": 2, "expX": 0, "shinyX": 4},
+            {"time": 3600, "qtyX": 4, "expX": 0, "shinyX": 8},
+            {"time": 36000, "qtyX": 21, "expX": 0, "shinyX": 38},
+            {"time": 144000, "qtyX": 70, "expX": 0, "shinyX": 125},
+            {"time": 576000, "qtyX": 250, "expX": 0, "shinyX": 375},
+            {"time": 2419000, "qtyX": 550, "expX": 0, "shinyX": 1150}
+        ]
+    },
+    "TrapBoxSet10": {
+        "internalName": "TrapBoxSet10",
+        "displayName": "Containment of the Zrgyios",
+        "sellPrice": 6,
+        "typeGen": "aTrap",
+        "Type": "Trap Box Set",
+        "lvReqToCraft": 1,
+        "lvReqToEquip": 120,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 0,
+        "AGI": 80,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "4% All Afk Gain",
+        "miscUp2": "10% Drop Chance",
+        "Upgrade_Slots_Left": 6,
+        "Skill": "Trapping",
+        "Skill_Power": 80,
         "Speed": 4,
         "trapBoxData": [
             {"time": 1200, "qtyX": 2, "expX": 0, "shinyX": 4},
@@ -19031,6 +20336,52 @@
         "Speed": 9,
         "maxCharge": 3000
     },
+    "WorshipSkull10": {
+        "internalName": "WorshipSkull10",
+        "displayName": "Cultist Skull",
+        "sellPrice": 100,
+        "typeGen": "aSkull",
+        "Type": "Worship Skull",
+        "lvReqToCraft": 3000,
+        "lvReqToEquip": 90,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 0,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "15% Money",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "Worship",
+        "Skill_Power": 55,
+        "Speed": 9,
+        "maxCharge": 3000
+    },
+    "WorshipSkull11": {
+        "internalName": "WorshipSkull11",
+        "displayName": "Crystal Skull of Esquire Vnoze",
+        "sellPrice": 100,
+        "typeGen": "aSkull",
+        "Type": "Worship Skull",
+        "lvReqToCraft": 3000,
+        "lvReqToEquip": 120,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 0,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "4% All Afk Gain",
+        "miscUp2": "10% Drop Chance",
+        "Upgrade_Slots_Left": 6,
+        "Skill": "Worship",
+        "Skill_Power": 55,
+        "Speed": 10,
+        "maxCharge": 3000
+    },
     "DNAgun0": {
         "internalName": "DNAgun0",
         "displayName": "Sappy DNA Splicer",
@@ -19230,6 +20581,22 @@
         "typeGen": "cFood",
         "Type": "Health Food",
         "description": "Auto-Used when your health goes below 50%. Restores 12500 HP. Has a 20 second Cooldown. "
+    },
+    "FoodHealth16": {
+        "internalName": "FoodHealth16",
+        "displayName": "Raw Nigiri",
+        "sellPrice": 70000,
+        "typeGen": "cFood",
+        "Type": "Health Food",
+        "description": "Auto-Used when your health goes below 50%. Restores 20000 HP. Has a 20 second Cooldown. "
+    },
+    "FoodHealth17": {
+        "internalName": "FoodHealth17",
+        "displayName": "Dumpling",
+        "sellPrice": 500000,
+        "typeGen": "cFood",
+        "Type": "Health Food",
+        "description": "Auto-Used when your health goes below 50%. Restores 40000 HP. Has a 20 second Cooldown. "
     },
     "FoodHealth5": {
         "internalName": "FoodHealth5",
@@ -19690,6 +21057,24 @@
         "description": "Claiming AFK gives Sailing AFK time [% chance.. Golden foods are never consumed.",
         "goldenFoodData": {"effect": "Claiming AFK gives Sailing AFK time [% chance.", "amount": 23}
     },
+    "FoodG11": {
+        "internalName": "FoodG11",
+        "displayName": "Golden Nigiri",
+        "sellPrice": 100,
+        "typeGen": "cFood",
+        "Type": "Golden Food",
+        "description": "Increases Class EXP gain. Golden foods are never consumed.",
+        "goldenFoodData": {"effect": "Increases Class EXP gain by [%.", "amount": 40}
+    },
+    "FoodG12": {
+        "internalName": "FoodG12",
+        "displayName": "Golden Dumpling",
+        "sellPrice": 100,
+        "typeGen": "cFood",
+        "Type": "Golden Food",
+        "description": "Claiming all AFK Gains rate. Golden foods are never consumed.",
+        "goldenFoodData": {"effect": "Claiming all AFK Gains rate by [%.", "amount": 4}
+    },
     "ButterBar": {
         "internalName": "ButterBar",
         "displayName": "Butter Bar",
@@ -19851,6 +21236,14 @@
         "Type": "Quest Item",
         "description": "What have they done to ya BobJoe? "
     },
+    "BoneJoePickle": {
+        "internalName": "BoneJoePickle",
+        "displayName": "BoneJoePickle",
+        "sellPrice": 4000000000000,
+        "typeGen": "dQuest",
+        "Type": "Quest Item",
+        "description": "He cackles, he spooks, and he... multiplies miniboss HP by 1.10x!? And he STACKS with other BoneJoePickles??! "
+    },
     "Quest1": {
         "internalName": "Quest1",
         "displayName": "Mining Certificate",
@@ -19890,6 +21283,14 @@
         "typeGen": "dQuest",
         "Type": "Quest Item",
         "description": "Restores power to the Magma Portal in the galaxy town, allowing travel to World 5! "
+    },
+    "Crystal5": {
+        "internalName": "Crystal5",
+        "displayName": "Spirit Diamond",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Quest Item",
+        "description": "Restores power to the Spirit Portal in the magma rivertown, allowing travel to World 6! "
     },
     "PeanutS": {
         "internalName": "PeanutS",
@@ -20595,6 +21996,30 @@
         "Type": "Event Box",
         "description": "Hold to open! Contains a random Falloween Event goodie, including 3 limited time Monster Masks, check Patch Notes in Discord or Steam for info! Also, if you open 500 Treats you'll get the Falloween Event NAMETAG! "
     },
+    "Quest80": {
+        "internalName": "Quest80",
+        "displayName": "Crop Transfer Ticket",
+        "sellPrice": 100000000000000,
+        "typeGen": "dQuest",
+        "Type": "Usable",
+        "description": "Drop this on the Legumulyte (found deep in Bamboo Forest "
+    },
+    "Quest81": {
+        "internalName": "Quest81",
+        "displayName": "Compost Bag",
+        "sellPrice": 100,
+        "typeGen": "dQuest",
+        "Type": "Farm Compost",
+        "description": "Hold down instantly gain 4 Hours of Farming Progress! "
+    },
+    "Quest82": {
+        "internalName": "Quest82",
+        "displayName": "Summoner Stone",
+        "sellPrice": 100,
+        "typeGen": "dQuest",
+        "Type": "Summoner Stone",
+        "description": "Hold down instantly gain 4 Hours of Summoning Essence Generation! "
+    },
     "EquipmentSmithingTabs2": {
         "internalName": "EquipmentSmithingTabs2",
         "displayName": "Anvil Tab 2",
@@ -20634,6 +22059,14 @@
         "typeGen": "dQuest",
         "Type": "Anvil Expansion",
         "description": "Unlocks the 6th tab of craftable items for all anvils! "
+    },
+    "EquipmentSmithingTabs7": {
+        "internalName": "EquipmentSmithingTabs7",
+        "displayName": "Anvil Tab 7",
+        "sellPrice": 1,
+        "typeGen": "dQuest",
+        "Type": "Anvil Expansion",
+        "description": "Unlocks the 7th tab of craftable items for all anvils! "
     },
     "EquipmentStatues1": {
         "internalName": "EquipmentStatues1",
@@ -20881,9 +22314,39 @@
         "sellPrice": 10,
         "typeGen": "dStatueStone",
         "Type": "Statue",
-        "description": "This statue does not actually function as a boat, and will sink as youd expect a large piece of stone would. ",
+        "description": "This statue does not actually function as a boat, and will sink immediately, as youd expect a large piece of stone would. ",
         "bonus": "%Sailing Spd",
         "statueData": {"name": "Boat", "effect": "%@Sailing Spd", "dk": 160, "bonus": 0.5}
+    },
+    "EquipmentStatues26": {
+        "internalName": "EquipmentStatues26",
+        "displayName": "Compost Statue",
+        "sellPrice": 10,
+        "typeGen": "dStatueStone",
+        "Type": "Statue",
+        "description": "This statue looks exactly like the Compost pot in the Floating Gardens of the Spirit Valley town. ",
+        "bonus": "%Farming Exp",
+        "statueData": {"name": "Compost", "effect": "%@Farming Exp", "dk": 75, "bonus": 0.4}
+    },
+    "EquipmentStatues27": {
+        "internalName": "EquipmentStatues27",
+        "displayName": "Stealth Statue",
+        "sellPrice": 10,
+        "typeGen": "dStatueStone",
+        "Type": "Statue",
+        "description": "This statue was crafted in the image and likeness of the legendary Gray Fox. The resemblance to your meager stick figure bodies is purely coincidental. ",
+        "bonus": "%Stealth",
+        "statueData": {"name": "Stealth", "effect": "%@Stealth", "dk": 185, "bonus": 0.3}
+    },
+    "EquipmentStatues28": {
+        "internalName": "EquipmentStatues28",
+        "displayName": "Essence Statue",
+        "sellPrice": 10,
+        "typeGen": "dStatueStone",
+        "Type": "Statue",
+        "description": "This statue, despite being a grey brownish colour, actually helps generate white essence. It's weird and quirkly like that... ",
+        "bonus": "%White Ess",
+        "statueData": {"name": "Essence", "effect": "%@White Ess", "dk": 160, "bonus": 0.6}
     },
     "PureWater": {
         "internalName": "PureWater",
@@ -20943,7 +22406,7 @@
     },
     "DungWeaponPunchA1": {
         "internalName": "DungWeaponPunchA1",
-        "displayName": "Boxing Gloves",
+        "displayName": "Boxing Gloves I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -20964,7 +22427,7 @@
     },
     "DungWeaponPunchA2": {
         "internalName": "DungWeaponPunchA2",
-        "displayName": "Boxing Gloves",
+        "displayName": "Boxing Gloves II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -20985,7 +22448,7 @@
     },
     "DungWeaponPunchA3": {
         "internalName": "DungWeaponPunchA3",
-        "displayName": "Boxing Gloves",
+        "displayName": "Boxing Gloves III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21006,7 +22469,7 @@
     },
     "DungWeaponPunchA4": {
         "internalName": "DungWeaponPunchA4",
-        "displayName": "Boxing Gloves",
+        "displayName": "Boxing Gloves IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21027,7 +22490,7 @@
     },
     "DungWeaponPunchA5": {
         "internalName": "DungWeaponPunchA5",
-        "displayName": "Boxing Gloves",
+        "displayName": "Boxing Gloves V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21048,7 +22511,7 @@
     },
     "DungWeaponPunchB1": {
         "internalName": "DungWeaponPunchB1",
-        "displayName": "The Stingers",
+        "displayName": "The Stingers I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21069,7 +22532,7 @@
     },
     "DungWeaponPunchB2": {
         "internalName": "DungWeaponPunchB2",
-        "displayName": "The Stingers",
+        "displayName": "The Stingers II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21090,7 +22553,7 @@
     },
     "DungWeaponPunchB3": {
         "internalName": "DungWeaponPunchB3",
-        "displayName": "The Stingers",
+        "displayName": "The Stingers III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21111,7 +22574,7 @@
     },
     "DungWeaponPunchB4": {
         "internalName": "DungWeaponPunchB4",
-        "displayName": "The Stingers",
+        "displayName": "The Stingers IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21132,7 +22595,7 @@
     },
     "DungWeaponPunchB5": {
         "internalName": "DungWeaponPunchB5",
-        "displayName": "The Stingers",
+        "displayName": "The Stingers V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21153,7 +22616,7 @@
     },
     "DungWeaponPunchC1": {
         "internalName": "DungWeaponPunchC1",
-        "displayName": "Bandage Wraps",
+        "displayName": "Bandage Wraps I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21174,7 +22637,7 @@
     },
     "DungWeaponPunchC2": {
         "internalName": "DungWeaponPunchC2",
-        "displayName": "Bandage Wraps",
+        "displayName": "Bandage Wraps II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21195,7 +22658,7 @@
     },
     "DungWeaponPunchC3": {
         "internalName": "DungWeaponPunchC3",
-        "displayName": "Bandage Wraps",
+        "displayName": "Bandage Wraps III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21216,7 +22679,7 @@
     },
     "DungWeaponPunchC4": {
         "internalName": "DungWeaponPunchC4",
-        "displayName": "Bandage Wraps",
+        "displayName": "Bandage Wraps IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21237,7 +22700,7 @@
     },
     "DungWeaponPunchC5": {
         "internalName": "DungWeaponPunchC5",
-        "displayName": "Bandage Wraps",
+        "displayName": "Bandage Wraps V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21258,7 +22721,7 @@
     },
     "DungWeaponPunchD1": {
         "internalName": "DungWeaponPunchD1",
-        "displayName": "Uninflated Glove",
+        "displayName": "Uninflated Glove I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21279,7 +22742,7 @@
     },
     "DungWeaponPunchD2": {
         "internalName": "DungWeaponPunchD2",
-        "displayName": "Uninflated Glove",
+        "displayName": "Uninflated Glove II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21300,7 +22763,7 @@
     },
     "DungWeaponPunchD3": {
         "internalName": "DungWeaponPunchD3",
-        "displayName": "Uninflated Glove",
+        "displayName": "Uninflated Glove III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21321,7 +22784,7 @@
     },
     "DungWeaponPunchD4": {
         "internalName": "DungWeaponPunchD4",
-        "displayName": "Uninflated Glove",
+        "displayName": "Uninflated Glove IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21342,7 +22805,7 @@
     },
     "DungWeaponPunchD5": {
         "internalName": "DungWeaponPunchD5",
-        "displayName": "Uninflated Glove",
+        "displayName": "Uninflated Glove V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21363,7 +22826,7 @@
     },
     "DungWeaponPunchE1": {
         "internalName": "DungWeaponPunchE1",
-        "displayName": "Eclectic Ordeal",
+        "displayName": "Eclectic Ordeal I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21384,7 +22847,7 @@
     },
     "DungWeaponPunchE2": {
         "internalName": "DungWeaponPunchE2",
-        "displayName": "Eclectic Ordeal",
+        "displayName": "Eclectic Ordeal II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21405,7 +22868,7 @@
     },
     "DungWeaponPunchE3": {
         "internalName": "DungWeaponPunchE3",
-        "displayName": "Eclectic Ordeal",
+        "displayName": "Eclectic Ordeal III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21426,7 +22889,7 @@
     },
     "DungWeaponPunchE4": {
         "internalName": "DungWeaponPunchE4",
-        "displayName": "Eclectic Ordeal",
+        "displayName": "Eclectic Ordeal IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21447,7 +22910,7 @@
     },
     "DungWeaponPunchE5": {
         "internalName": "DungWeaponPunchE5",
-        "displayName": "Eclectic Ordeal",
+        "displayName": "Eclectic Ordeal V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21468,7 +22931,7 @@
     },
     "DungWeaponPunchF1": {
         "internalName": "DungWeaponPunchF1",
-        "displayName": "Eclectic Ordeal",
+        "displayName": "Eclectic Ordeal I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21489,7 +22952,7 @@
     },
     "DungWeaponPunchF2": {
         "internalName": "DungWeaponPunchF2",
-        "displayName": "Eclectic Ordeal",
+        "displayName": "Eclectic Ordeal II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21510,7 +22973,7 @@
     },
     "DungWeaponPunchF3": {
         "internalName": "DungWeaponPunchF3",
-        "displayName": "Eclectic Ordeal",
+        "displayName": "Eclectic Ordeal III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21531,7 +22994,7 @@
     },
     "DungWeaponPunchF4": {
         "internalName": "DungWeaponPunchF4",
-        "displayName": "Eclectic Ordeal",
+        "displayName": "Eclectic Ordeal IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21552,7 +23015,7 @@
     },
     "DungWeaponPunchF5": {
         "internalName": "DungWeaponPunchF5",
-        "displayName": "Eclectic Ordeal",
+        "displayName": "Eclectic Ordeal V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Fisticuff",
@@ -21573,7 +23036,7 @@
     },
     "DungWeaponSwordA1": {
         "internalName": "DungWeaponSwordA1",
-        "displayName": "Wooden Spear",
+        "displayName": "Wooden Spear I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21594,7 +23057,7 @@
     },
     "DungWeaponSwordA2": {
         "internalName": "DungWeaponSwordA2",
-        "displayName": "Wooden Spear",
+        "displayName": "Wooden Spear II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21615,7 +23078,7 @@
     },
     "DungWeaponSwordA3": {
         "internalName": "DungWeaponSwordA3",
-        "displayName": "Wooden Spear",
+        "displayName": "Wooden Spear III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21636,7 +23099,7 @@
     },
     "DungWeaponSwordA4": {
         "internalName": "DungWeaponSwordA4",
-        "displayName": "Wooden Spear",
+        "displayName": "Wooden Spear IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21657,7 +23120,7 @@
     },
     "DungWeaponSwordA5": {
         "internalName": "DungWeaponSwordA5",
-        "displayName": "Wooden Spear",
+        "displayName": "Wooden Spear V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21678,7 +23141,7 @@
     },
     "DungWeaponSwordB1": {
         "internalName": "DungWeaponSwordB1",
-        "displayName": "Steel Axe",
+        "displayName": "Steel Axe I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21699,7 +23162,7 @@
     },
     "DungWeaponSwordB2": {
         "internalName": "DungWeaponSwordB2",
-        "displayName": "Steel Axe",
+        "displayName": "Steel Axe II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21720,7 +23183,7 @@
     },
     "DungWeaponSwordB3": {
         "internalName": "DungWeaponSwordB3",
-        "displayName": "Steel Axe",
+        "displayName": "Steel Axe III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21741,7 +23204,7 @@
     },
     "DungWeaponSwordB4": {
         "internalName": "DungWeaponSwordB4",
-        "displayName": "Steel Axe",
+        "displayName": "Steel Axe IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21762,7 +23225,7 @@
     },
     "DungWeaponSwordB5": {
         "internalName": "DungWeaponSwordB5",
-        "displayName": "Steel Axe",
+        "displayName": "Steel Axe V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21783,7 +23246,7 @@
     },
     "DungWeaponSwordC1": {
         "internalName": "DungWeaponSwordC1",
-        "displayName": "Royal Bayonet",
+        "displayName": "Royal Bayonet I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21804,7 +23267,7 @@
     },
     "DungWeaponSwordC2": {
         "internalName": "DungWeaponSwordC2",
-        "displayName": "Royal Bayonet",
+        "displayName": "Royal Bayonet II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21825,7 +23288,7 @@
     },
     "DungWeaponSwordC3": {
         "internalName": "DungWeaponSwordC3",
-        "displayName": "Royal Bayonet",
+        "displayName": "Royal Bayonet III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21846,7 +23309,7 @@
     },
     "DungWeaponSwordC4": {
         "internalName": "DungWeaponSwordC4",
-        "displayName": "Royal Bayonet",
+        "displayName": "Royal Bayonet IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21867,7 +23330,7 @@
     },
     "DungWeaponSwordC5": {
         "internalName": "DungWeaponSwordC5",
-        "displayName": "Royal Bayonet",
+        "displayName": "Royal Bayonet V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21888,7 +23351,7 @@
     },
     "DungWeaponSwordD1": {
         "internalName": "DungWeaponSwordD1",
-        "displayName": "Enforced Slasher",
+        "displayName": "Enforced Slasher I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21909,7 +23372,7 @@
     },
     "DungWeaponSwordD2": {
         "internalName": "DungWeaponSwordD2",
-        "displayName": "Enforced Slasher",
+        "displayName": "Enforced Slasher II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21930,7 +23393,7 @@
     },
     "DungWeaponSwordD3": {
         "internalName": "DungWeaponSwordD3",
-        "displayName": "Enforced Slasher",
+        "displayName": "Enforced Slasher III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21951,7 +23414,7 @@
     },
     "DungWeaponSwordD4": {
         "internalName": "DungWeaponSwordD4",
-        "displayName": "Enforced Slasher",
+        "displayName": "Enforced Slasher IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21972,7 +23435,7 @@
     },
     "DungWeaponSwordD5": {
         "internalName": "DungWeaponSwordD5",
-        "displayName": "Enforced Slasher",
+        "displayName": "Enforced Slasher V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -21993,7 +23456,7 @@
     },
     "DungWeaponSwordE1": {
         "internalName": "DungWeaponSwordE1",
-        "displayName": "The Ice Breaker",
+        "displayName": "The Ice Breaker I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -22014,7 +23477,7 @@
     },
     "DungWeaponSwordE2": {
         "internalName": "DungWeaponSwordE2",
-        "displayName": "The Ice Breaker",
+        "displayName": "The Ice Breaker II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -22035,7 +23498,7 @@
     },
     "DungWeaponSwordE3": {
         "internalName": "DungWeaponSwordE3",
-        "displayName": "The Ice Breaker",
+        "displayName": "The Ice Breaker III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -22056,7 +23519,7 @@
     },
     "DungWeaponSwordE4": {
         "internalName": "DungWeaponSwordE4",
-        "displayName": "The Ice Breaker",
+        "displayName": "The Ice Breaker IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -22077,7 +23540,7 @@
     },
     "DungWeaponSwordE5": {
         "internalName": "DungWeaponSwordE5",
-        "displayName": "The Ice Breaker",
+        "displayName": "The Ice Breaker V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -22098,7 +23561,7 @@
     },
     "DungWeaponSwordF1": {
         "internalName": "DungWeaponSwordF1",
-        "displayName": "Deuscythe",
+        "displayName": "Deuscythe I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -22119,7 +23582,7 @@
     },
     "DungWeaponSwordF2": {
         "internalName": "DungWeaponSwordF2",
-        "displayName": "Deuscythe",
+        "displayName": "Deuscythe II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -22140,7 +23603,7 @@
     },
     "DungWeaponSwordF3": {
         "internalName": "DungWeaponSwordF3",
-        "displayName": "Deuscythe",
+        "displayName": "Deuscythe III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -22161,7 +23624,7 @@
     },
     "DungWeaponSwordF4": {
         "internalName": "DungWeaponSwordF4",
-        "displayName": "Deuscythe",
+        "displayName": "Deuscythe IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -22182,7 +23645,7 @@
     },
     "DungWeaponSwordF5": {
         "internalName": "DungWeaponSwordF5",
-        "displayName": "Deuscythe",
+        "displayName": "Deuscythe V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Spear",
@@ -22203,7 +23666,7 @@
     },
     "DungWeaponBowA1": {
         "internalName": "DungWeaponBowA1",
-        "displayName": "Wooden Bow",
+        "displayName": "Wooden Bow I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22224,7 +23687,7 @@
     },
     "DungWeaponBowA2": {
         "internalName": "DungWeaponBowA2",
-        "displayName": "Wooden Bow",
+        "displayName": "Wooden Bow II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22245,7 +23708,7 @@
     },
     "DungWeaponBowA3": {
         "internalName": "DungWeaponBowA3",
-        "displayName": "Wooden Bow",
+        "displayName": "Wooden Bow III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22266,7 +23729,7 @@
     },
     "DungWeaponBowA4": {
         "internalName": "DungWeaponBowA4",
-        "displayName": "Wooden Bow",
+        "displayName": "Wooden Bow IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22287,7 +23750,7 @@
     },
     "DungWeaponBowA5": {
         "internalName": "DungWeaponBowA5",
-        "displayName": "Wooden Bow",
+        "displayName": "Wooden Bow V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22308,7 +23771,7 @@
     },
     "DungWeaponBowB1": {
         "internalName": "DungWeaponBowB1",
-        "displayName": "Birch Longbow",
+        "displayName": "Birch Longbow I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22329,7 +23792,7 @@
     },
     "DungWeaponBowB2": {
         "internalName": "DungWeaponBowB2",
-        "displayName": "Birch Longbow",
+        "displayName": "Birch Longbow II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22350,7 +23813,7 @@
     },
     "DungWeaponBowB3": {
         "internalName": "DungWeaponBowB3",
-        "displayName": "Birch Longbow",
+        "displayName": "Birch Longbow III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22371,7 +23834,7 @@
     },
     "DungWeaponBowB4": {
         "internalName": "DungWeaponBowB4",
-        "displayName": "Birch Longbow",
+        "displayName": "Birch Longbow IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22392,7 +23855,7 @@
     },
     "DungWeaponBowB5": {
         "internalName": "DungWeaponBowB5",
-        "displayName": "Birch Longbow",
+        "displayName": "Birch Longbow V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22413,7 +23876,7 @@
     },
     "DungWeaponBowC1": {
         "internalName": "DungWeaponBowC1",
-        "displayName": "Spiked Menace",
+        "displayName": "Spiked Menace I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22434,7 +23897,7 @@
     },
     "DungWeaponBowC2": {
         "internalName": "DungWeaponBowC2",
-        "displayName": "Spiked Menace",
+        "displayName": "Spiked Menace II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22455,7 +23918,7 @@
     },
     "DungWeaponBowC3": {
         "internalName": "DungWeaponBowC3",
-        "displayName": "Spiked Menace",
+        "displayName": "Spiked Menace III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22476,7 +23939,7 @@
     },
     "DungWeaponBowC4": {
         "internalName": "DungWeaponBowC4",
-        "displayName": "Spiked Menace",
+        "displayName": "Spiked Menace IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22497,7 +23960,7 @@
     },
     "DungWeaponBowC5": {
         "internalName": "DungWeaponBowC5",
-        "displayName": "Spiked Menace",
+        "displayName": "Spiked Menace V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22518,7 +23981,7 @@
     },
     "DungWeaponBowD1": {
         "internalName": "DungWeaponBowD1",
-        "displayName": "Pharoah Bow",
+        "displayName": "Pharoah Bow I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22539,7 +24002,7 @@
     },
     "DungWeaponBowD2": {
         "internalName": "DungWeaponBowD2",
-        "displayName": "Pharoah Bow",
+        "displayName": "Pharoah Bow II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22560,7 +24023,7 @@
     },
     "DungWeaponBowD3": {
         "internalName": "DungWeaponBowD3",
-        "displayName": "Pharoah Bow",
+        "displayName": "Pharoah Bow III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22581,7 +24044,7 @@
     },
     "DungWeaponBowD4": {
         "internalName": "DungWeaponBowD4",
-        "displayName": "Pharoah Bow",
+        "displayName": "Pharoah Bow IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22602,7 +24065,7 @@
     },
     "DungWeaponBowD5": {
         "internalName": "DungWeaponBowD5",
-        "displayName": "Pharoah Bow",
+        "displayName": "Pharoah Bow V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22623,7 +24086,7 @@
     },
     "DungWeaponBowE1": {
         "internalName": "DungWeaponBowE1",
-        "displayName": "Blizzard Bow",
+        "displayName": "Blizzard Bow I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22644,7 +24107,7 @@
     },
     "DungWeaponBowE2": {
         "internalName": "DungWeaponBowE2",
-        "displayName": "Blizzard Bow",
+        "displayName": "Blizzard Bow II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22665,7 +24128,7 @@
     },
     "DungWeaponBowE3": {
         "internalName": "DungWeaponBowE3",
-        "displayName": "Blizzard Bow",
+        "displayName": "Blizzard Bow III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22686,7 +24149,7 @@
     },
     "DungWeaponBowE4": {
         "internalName": "DungWeaponBowE4",
-        "displayName": "Blizzard Bow",
+        "displayName": "Blizzard Bow IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22707,7 +24170,7 @@
     },
     "DungWeaponBowE5": {
         "internalName": "DungWeaponBowE5",
-        "displayName": "Blizzard Bow",
+        "displayName": "Blizzard Bow V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22728,7 +24191,7 @@
     },
     "DungWeaponBowF1": {
         "internalName": "DungWeaponBowF1",
-        "displayName": "Blackhole Bow",
+        "displayName": "Blackhole Bow I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22749,7 +24212,7 @@
     },
     "DungWeaponBowF2": {
         "internalName": "DungWeaponBowF2",
-        "displayName": "Blackhole Bow",
+        "displayName": "Blackhole Bow II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22770,7 +24233,7 @@
     },
     "DungWeaponBowF3": {
         "internalName": "DungWeaponBowF3",
-        "displayName": "Blackhole Bow",
+        "displayName": "Blackhole Bow III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22791,7 +24254,7 @@
     },
     "DungWeaponBowF4": {
         "internalName": "DungWeaponBowF4",
-        "displayName": "Blackhole Bow",
+        "displayName": "Blackhole Bow IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22812,7 +24275,7 @@
     },
     "DungWeaponBowF5": {
         "internalName": "DungWeaponBowF5",
-        "displayName": "Blackhole Bow",
+        "displayName": "Blackhole Bow V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Bow",
@@ -22833,7 +24296,7 @@
     },
     "DungWeaponWandA1": {
         "internalName": "DungWeaponWandA1",
-        "displayName": "Gnarled Wand",
+        "displayName": "Gnarled Wand I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -22854,7 +24317,7 @@
     },
     "DungWeaponWandA2": {
         "internalName": "DungWeaponWandA2",
-        "displayName": "Gnarled Wand",
+        "displayName": "Gnarled Wand II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -22875,7 +24338,7 @@
     },
     "DungWeaponWandA3": {
         "internalName": "DungWeaponWandA3",
-        "displayName": "Gnarled Wand",
+        "displayName": "Gnarled Wand III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -22896,7 +24359,7 @@
     },
     "DungWeaponWandA4": {
         "internalName": "DungWeaponWandA4",
-        "displayName": "Gnarled Wand",
+        "displayName": "Gnarled Wand IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -22917,7 +24380,7 @@
     },
     "DungWeaponWandA5": {
         "internalName": "DungWeaponWandA5",
-        "displayName": "Gnarled Wand",
+        "displayName": "Gnarled Wand V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -22938,7 +24401,7 @@
     },
     "DungWeaponWandB1": {
         "internalName": "DungWeaponWandB1",
-        "displayName": "Quarterstaff",
+        "displayName": "Quarterstaff I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -22959,7 +24422,7 @@
     },
     "DungWeaponWandB2": {
         "internalName": "DungWeaponWandB2",
-        "displayName": "Quarterstaff",
+        "displayName": "Quarterstaff II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -22980,7 +24443,7 @@
     },
     "DungWeaponWandB3": {
         "internalName": "DungWeaponWandB3",
-        "displayName": "Quarterstaff",
+        "displayName": "Quarterstaff III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23001,7 +24464,7 @@
     },
     "DungWeaponWandB4": {
         "internalName": "DungWeaponWandB4",
-        "displayName": "Quarterstaff",
+        "displayName": "Quarterstaff IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23022,7 +24485,7 @@
     },
     "DungWeaponWandB5": {
         "internalName": "DungWeaponWandB5",
-        "displayName": "Quarterstaff",
+        "displayName": "Quarterstaff V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23043,7 +24506,7 @@
     },
     "DungWeaponWandC1": {
         "internalName": "DungWeaponWandC1",
-        "displayName": "Starlight",
+        "displayName": "Starlight I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23064,7 +24527,7 @@
     },
     "DungWeaponWandC2": {
         "internalName": "DungWeaponWandC2",
-        "displayName": "Starlight",
+        "displayName": "Starlight II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23085,7 +24548,7 @@
     },
     "DungWeaponWandC3": {
         "internalName": "DungWeaponWandC3",
-        "displayName": "Starlight",
+        "displayName": "Starlight III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23106,7 +24569,7 @@
     },
     "DungWeaponWandC4": {
         "internalName": "DungWeaponWandC4",
-        "displayName": "Starlight",
+        "displayName": "Starlight IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23127,7 +24590,7 @@
     },
     "DungWeaponWandC5": {
         "internalName": "DungWeaponWandC5",
-        "displayName": "Starlight",
+        "displayName": "Starlight V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23148,7 +24611,7 @@
     },
     "DungWeaponWandD1": {
         "internalName": "DungWeaponWandD1",
-        "displayName": "Crows Nest",
+        "displayName": "Crows Nest I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23169,7 +24632,7 @@
     },
     "DungWeaponWandD2": {
         "internalName": "DungWeaponWandD2",
-        "displayName": "Crows Nest",
+        "displayName": "Crows Nest II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23190,7 +24653,7 @@
     },
     "DungWeaponWandD3": {
         "internalName": "DungWeaponWandD3",
-        "displayName": "Crows Nest",
+        "displayName": "Crows Nest III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23211,7 +24674,7 @@
     },
     "DungWeaponWandD4": {
         "internalName": "DungWeaponWandD4",
-        "displayName": "Crows Nest",
+        "displayName": "Crows Nest IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23232,7 +24695,7 @@
     },
     "DungWeaponWandD5": {
         "internalName": "DungWeaponWandD5",
-        "displayName": "Crows Nest",
+        "displayName": "Crows Nest V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23253,7 +24716,7 @@
     },
     "DungWeaponWandE1": {
         "internalName": "DungWeaponWandE1",
-        "displayName": "Spriggly Storm",
+        "displayName": "Spriggly Storm I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23274,7 +24737,7 @@
     },
     "DungWeaponWandE2": {
         "internalName": "DungWeaponWandE2",
-        "displayName": "Spriggly Storm",
+        "displayName": "Spriggly Storm II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23295,7 +24758,7 @@
     },
     "DungWeaponWandE3": {
         "internalName": "DungWeaponWandE3",
-        "displayName": "Spriggly Storm",
+        "displayName": "Spriggly Storm III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23316,7 +24779,7 @@
     },
     "DungWeaponWandE4": {
         "internalName": "DungWeaponWandE4",
-        "displayName": "Spriggly Storm",
+        "displayName": "Spriggly Storm IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23337,7 +24800,7 @@
     },
     "DungWeaponWandE5": {
         "internalName": "DungWeaponWandE5",
-        "displayName": "Spriggly Storm",
+        "displayName": "Spriggly Storm V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23358,7 +24821,7 @@
     },
     "DungWeaponWandF1": {
         "internalName": "DungWeaponWandF1",
-        "displayName": "Grey Gatsby",
+        "displayName": "Grey Gatsby I",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23379,7 +24842,7 @@
     },
     "DungWeaponWandF2": {
         "internalName": "DungWeaponWandF2",
-        "displayName": "Grey Gatsby",
+        "displayName": "Grey Gatsby II",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23400,7 +24863,7 @@
     },
     "DungWeaponWandF3": {
         "internalName": "DungWeaponWandF3",
-        "displayName": "Grey Gatsby",
+        "displayName": "Grey Gatsby III",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23421,7 +24884,7 @@
     },
     "DungWeaponWandF4": {
         "internalName": "DungWeaponWandF4",
-        "displayName": "Grey Gatsby",
+        "displayName": "Grey Gatsby IV",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -23442,7 +24905,7 @@
     },
     "DungWeaponWandF5": {
         "internalName": "DungWeaponWandF5",
-        "displayName": "Grey Gatsby",
+        "displayName": "Grey Gatsby V",
         "sellPrice": 1,
         "typeGen": "aWeapon",
         "Type": "Wand",
@@ -24234,6 +25697,14 @@
         "Type": "Obol Stack",
         "description": "Hold down and 1 hyper obol will drop at your feet! YOU MUST BE IN WORLD 2 TOWN TO USE THIS! This way you can trash other obols incase you're out of space! "
     },
+    "GemP30": {
+        "internalName": "GemP30",
+        "displayName": "Sand of Time",
+        "sellPrice": 100,
+        "typeGen": "dQuest",
+        "Type": "Time Sand",
+        "description": "Hold down instantly gain 6 Hours of Sneaking Progress! Applies to all your ninja twins, so it doesn't matter who uses this. "
+    },
     "EquipmentHats31": {
         "internalName": "EquipmentHats31",
         "displayName": "Smitty's Bubble Blowing Hat",
@@ -24804,6 +26275,321 @@
     "EquipmentHats89": {
         "internalName": "EquipmentHats89",
         "displayName": "Borzoi Topper",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats90": {
+        "internalName": "EquipmentHats90",
+        "displayName": "Straw Hat",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats91": {
+        "internalName": "EquipmentHats91",
+        "displayName": "Wig Bandana",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats92": {
+        "internalName": "EquipmentHats92",
+        "displayName": "Funky Hat",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats93": {
+        "internalName": "EquipmentHats93",
+        "displayName": "Reinforced Headband",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats94": {
+        "internalName": "EquipmentHats94",
+        "displayName": "Shogun Helmet",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats95": {
+        "internalName": "EquipmentHats95",
+        "displayName": "Gilded Headband",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats96": {
+        "internalName": "EquipmentHats96",
+        "displayName": "Bamboo Hat",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats97": {
+        "internalName": "EquipmentHats97",
+        "displayName": "Festive Beast Mask",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats98": {
+        "internalName": "EquipmentHats98",
+        "displayName": "Heiress Headdress",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats99": {
+        "internalName": "EquipmentHats99",
+        "displayName": "Spirited Mane",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats100": {
+        "internalName": "EquipmentHats100",
+        "displayName": "Fiery Mane",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats101": {
+        "internalName": "EquipmentHats101",
+        "displayName": "Guardian Mane",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats102": {
+        "internalName": "EquipmentHats102",
+        "displayName": "Fanned Blossomage",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats103": {
+        "internalName": "EquipmentHats103",
+        "displayName": "Dainty Brim",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "miscUp1": "",
+        "miscUp2": "00",
+        "Upgrade_Slots_Left": 5,
+        "Skill": "",
+        "Skill_Power": 0
+    },
+    "EquipmentHats104": {
+        "internalName": "EquipmentHats104",
+        "displayName": "Charcoal Hat",
         "sellPrice": 1,
         "typeGen": "aHelmetMTX",
         "Type": "Premium Helmet",
@@ -25677,7 +27463,7 @@
             "perTier": 10,
             "effect": "+{% Choppin Away Gains",
             "bonus": 2.5,
-            "order": 4
+            "order": 5
         },
         "dropChance": 0.0001
     },
@@ -26120,7 +27906,7 @@
             "perTier": 10,
             "effect": "+{% Choppin Speed",
             "bonus": 6,
-            "order": 5
+            "order": 6
         },
         "dropChance": 0.0001
     },
@@ -26136,7 +27922,7 @@
             "perTier": 3,
             "effect": "+{ Starting Pts in Worship",
             "bonus": 6,
-            "order": 27
+            "order": 32
         },
         "dropChance": 1
     },
@@ -26152,7 +27938,7 @@
             "perTier": 4,
             "effect": "+{% Shiny Critter Chance",
             "bonus": 5,
-            "order": 20
+            "order": 25
         },
         "dropChance": 1
     },
@@ -26168,7 +27954,7 @@
             "perTier": 4,
             "effect": "+{% EXP from monsters",
             "bonus": 1.25,
-            "order": 21
+            "order": 26
         },
         "dropChance": 1
     },
@@ -26184,7 +27970,7 @@
             "perTier": 5,
             "effect": "+{% Shiny Critter Chance",
             "bonus": 6,
-            "order": 22
+            "order": 27
         },
         "dropChance": 1
     },
@@ -26200,7 +27986,7 @@
             "perTier": 6,
             "effect": "+{% Skill AFK gain rate",
             "bonus": 1,
-            "order": 23
+            "order": 28
         },
         "dropChance": 1
     },
@@ -26216,7 +28002,7 @@
             "perTier": 10,
             "effect": "+{% Total Catching Efficiency",
             "bonus": 7,
-            "order": 14
+            "order": 17
         },
         "dropChance": 0.00025
     },
@@ -26232,7 +28018,7 @@
             "perTier": 10,
             "effect": "+{% Catching Away Gains",
             "bonus": 2.5,
-            "order": 15
+            "order": 18
         },
         "dropChance": 0.00025
     },
@@ -26248,7 +28034,7 @@
             "perTier": 4,
             "effect": "+{% Max Charge",
             "bonus": 7,
-            "order": 28
+            "order": 33
         },
         "dropChance": 1
     },
@@ -26264,7 +28050,7 @@
             "perTier": 5,
             "effect": "+{% Charge Rate",
             "bonus": 5,
-            "order": 29
+            "order": 34
         },
         "dropChance": 1
     },
@@ -26280,7 +28066,7 @@
             "perTier": 10,
             "effect": "+{% Choppin Speed",
             "bonus": 7,
-            "order": 7
+            "order": 8
         },
         "dropChance": 4e-05
     },
@@ -26296,7 +28082,7 @@
             "perTier": 10,
             "effect": "+{% Total Choppin Efficiency",
             "bonus": 8,
-            "order": 6
+            "order": 7
         },
         "dropChance": 1e-05
     },
@@ -26312,7 +28098,7 @@
             "perTier": 10,
             "effect": "+{% Total Catching Efficiency",
             "bonus": 8,
-            "order": 16
+            "order": 19
         },
         "dropChance": 5e-05
     },
@@ -26328,7 +28114,7 @@
             "perTier": 10,
             "effect": "+{% Catching Speed",
             "bonus": 4,
-            "order": 17
+            "order": 20
         },
         "dropChance": 2e-05
     },
@@ -26360,7 +28146,7 @@
             "perTier": 7,
             "effect": "+{% Trapping Efficiency",
             "bonus": 7,
-            "order": 24
+            "order": 29
         },
         "dropChance": 1
     },
@@ -26376,7 +28162,7 @@
             "perTier": 9,
             "effect": "+{% Trapping EXP",
             "bonus": 8,
-            "order": 25
+            "order": 30
         },
         "dropChance": 1
     },
@@ -26392,7 +28178,7 @@
             "perTier": 12,
             "effect": "+{% Shiny Critter Chance",
             "bonus": 8,
-            "order": 26
+            "order": 31
         },
         "dropChance": 1
     },
@@ -26408,7 +28194,7 @@
             "perTier": 8,
             "effect": "+{% Total Fishing Efficiency",
             "bonus": 8,
-            "order": 10
+            "order": 13
         },
         "dropChance": 0.001
     },
@@ -26424,7 +28210,7 @@
             "perTier": 10,
             "effect": "+{% Fishing Speed",
             "bonus": 4,
-            "order": 11
+            "order": 14
         },
         "dropChance": 0.0004
     },
@@ -26440,7 +28226,7 @@
             "perTier": 10,
             "effect": "+{% Fishing EXP",
             "bonus": 10,
-            "order": 12
+            "order": 15
         },
         "dropChance": 0.0001
     },
@@ -26456,7 +28242,7 @@
             "perTier": 10,
             "effect": "+{% Fishing Away Gains",
             "bonus": 3,
-            "order": 13
+            "order": 16
         },
         "dropChance": 2.5e-05
     },
@@ -26472,7 +28258,7 @@
             "perTier": 12,
             "effect": "+{% Choppin Away Gains",
             "bonus": 3,
-            "order": 8
+            "order": 9
         },
         "dropChance": 1e-05
     },
@@ -26488,7 +28274,7 @@
             "perTier": 15,
             "effect": "+{% Choppin Speed",
             "bonus": 8,
-            "order": 9
+            "order": 10
         },
         "dropChance": 1e-08
     },
@@ -26504,7 +28290,7 @@
             "perTier": 12,
             "effect": "+{% Total Catching Efficiency",
             "bonus": 10,
-            "order": 18
+            "order": 21
         },
         "dropChance": 2e-05
     },
@@ -26520,7 +28306,7 @@
             "perTier": 15,
             "effect": "+{% Catching Away Gains",
             "bonus": 3,
-            "order": 19
+            "order": 22
         },
         "dropChance": 1e-08
     },
@@ -26536,7 +28322,7 @@
             "perTier": 7,
             "effect": "+{% Max Charge",
             "bonus": 10,
-            "order": 30
+            "order": 35
         },
         "dropChance": 1
     },
@@ -26568,7 +28354,7 @@
             "perTier": 15,
             "effect": "+{% Fishing EXP",
             "bonus": 15,
-            "order": 31
+            "order": 37
         },
         "dropChance": 0.001
     },
@@ -26584,7 +28370,7 @@
             "perTier": 18,
             "effect": "+{% Total Fishing Efficiency",
             "bonus": 12,
-            "order": 32
+            "order": 38
         },
         "dropChance": 0.0004
     },
@@ -26600,7 +28386,7 @@
             "perTier": 24,
             "effect": "+{% Fishing Away Gains",
             "bonus": 3.5,
-            "order": 33
+            "order": 39
         },
         "dropChance": 0.0001
     },
@@ -26616,9 +28402,105 @@
             "perTier": 30,
             "effect": "+{% Fishing Speed",
             "bonus": 7,
-            "order": 34
+            "order": 40
         },
         "dropChance": 2.5e-05
+    },
+    "CardsF34": {
+        "internalName": "CardsF34",
+        "displayName": "Bamboo Logs Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "F34",
+            "category": "Hard Resources",
+            "perTier": 15,
+            "effect": "+{% Total Choppin Efficiency",
+            "bonus": 10,
+            "order": 11
+        },
+        "dropChance": 1
+    },
+    "CardsF35": {
+        "internalName": "CardsF35",
+        "displayName": "Effervescent Logs Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "F35",
+            "category": "Hard Resources",
+            "perTier": 15,
+            "effect": "+{% Choppin Away Gains",
+            "bonus": 4,
+            "order": 12
+        },
+        "dropChance": 1
+    },
+    "CardsF36": {
+        "internalName": "CardsF36",
+        "displayName": "Breezy Soul Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "F36",
+            "category": "Hard Resources",
+            "perTier": 7,
+            "effect": "+{% Charge Rate",
+            "bonus": 7,
+            "order": 36
+        },
+        "dropChance": 1
+    },
+    "CardsF37": {
+        "internalName": "CardsF37",
+        "displayName": "Ladybug Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "F37",
+            "category": "Hard Resources",
+            "perTier": 15,
+            "effect": "+{% Total Catching Efficiency",
+            "bonus": 5,
+            "order": 23
+        },
+        "dropChance": 5e-06
+    },
+    "CardsF38": {
+        "internalName": "CardsF38",
+        "displayName": "Firefly Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "F38",
+            "category": "Hard Resources",
+            "perTier": 15,
+            "effect": "+{% Catching Speed",
+            "bonus": 5,
+            "order": 24
+        },
+        "dropChance": 1e-06
+    },
+    "CardsF39": {
+        "internalName": "CardsF39",
+        "displayName": "Godshard Ore Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "F39",
+            "category": "Hard Resources",
+            "perTier": 400,
+            "effect": "+{% Forge Cap and SPD (Passive)",
+            "bonus": 30,
+            "order": 4
+        },
+        "dropChance": 2e-06
     },
     "CardsG1": {
         "internalName": "CardsG1",
@@ -27066,7 +28948,247 @@
             "bonus": 3,
             "order": 14
         },
-        "dropChance": 0.008
+        "dropChance": 0.006
+    },
+    "CardsI1": {
+        "internalName": "CardsI1",
+        "displayName": "Sprout Spirit Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I1",
+            "category": "Spirited Valley",
+            "perTier": 50,
+            "effect": "+{% Total Damage",
+            "bonus": 5,
+            "order": 1
+        },
+        "dropChance": 2.5e-05
+    },
+    "CardsI2": {
+        "internalName": "CardsI2",
+        "displayName": "Ricecake Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I2",
+            "category": "Spirited Valley",
+            "perTier": 60,
+            "effect": "+{% DEF from Equips (Passive)",
+            "bonus": 3,
+            "order": 2
+        },
+        "dropChance": 2e-05
+    },
+    "CardsI3": {
+        "internalName": "CardsI3",
+        "displayName": "River Spirit Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I3",
+            "category": "Spirited Valley",
+            "perTier": 75,
+            "effect": "+{% All Stat",
+            "bonus": 1.5,
+            "order": 3
+        },
+        "dropChance": 1.5e-05
+    },
+    "CardsI4": {
+        "internalName": "CardsI4",
+        "displayName": "Baby Troll Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I4",
+            "category": "Spirited Valley",
+            "perTier": 85,
+            "effect": "+{% Sneaking EXP (Passive)",
+            "bonus": 3,
+            "order": 4
+        },
+        "dropChance": 1e-05
+    },
+    "CardsI5": {
+        "internalName": "CardsI5",
+        "displayName": "Woodlin Spirit Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I5",
+            "category": "Spirited Valley",
+            "perTier": 100,
+            "effect": "+{% Multikill per tier",
+            "bonus": 3,
+            "order": 5
+        },
+        "dropChance": 8e-06
+    },
+    "CardsI6": {
+        "internalName": "CardsI6",
+        "displayName": "Bamboo Spirit Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I6",
+            "category": "Spirited Valley",
+            "perTier": 150,
+            "effect": "+{% Summoning EXP (Passive)",
+            "bonus": 3,
+            "order": 6
+        },
+        "dropChance": 6e-06
+    },
+    "CardsI7": {
+        "internalName": "CardsI7",
+        "displayName": "Lantern Spirit Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I7",
+            "category": "Spirited Valley",
+            "perTier": 170,
+            "effect": "+{% Farming EXP (Passive)",
+            "bonus": 2,
+            "order": 7
+        },
+        "dropChance": 5e-06
+    },
+    "CardsI8": {
+        "internalName": "CardsI8",
+        "displayName": "Mama Troll Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I8",
+            "category": "Spirited Valley",
+            "perTier": 200,
+            "effect": "+{% Skill AFK gain rate",
+            "bonus": 2,
+            "order": 8
+        },
+        "dropChance": 3e-06
+    },
+    "CardsI9": {
+        "internalName": "CardsI9",
+        "displayName": "Leek Spirit Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I9",
+            "category": "Spirited Valley",
+            "perTier": 250,
+            "effect": "+{% Jade Coin gain (Passive)",
+            "bonus": 4,
+            "order": 9
+        },
+        "dropChance": 2e-06
+    },
+    "CardsI10": {
+        "internalName": "CardsI10",
+        "displayName": "Ceramic Spirit Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I10",
+            "category": "Spirited Valley",
+            "perTier": 400,
+            "effect": "+{% Cooking Spd Multi (Passive)",
+            "bonus": 5,
+            "order": 10
+        },
+        "dropChance": 1e-06
+    },
+    "CardsI11": {
+        "internalName": "CardsI11",
+        "displayName": "Skydoggie Spirit Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I11",
+            "category": "Spirited Valley",
+            "perTier": 500,
+            "effect": "+{ Base LUK",
+            "bonus": 20,
+            "order": 11
+        },
+        "dropChance": 8e-07
+    },
+    "CardsI12": {
+        "internalName": "CardsI12",
+        "displayName": "Royal Egg Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I12",
+            "category": "Spirited Valley",
+            "perTier": 900,
+            "effect": "+{% Fighting AFK (Passive)",
+            "bonus": 1,
+            "order": 12
+        },
+        "dropChance": 6e-07
+    },
+    "CardsI13": {
+        "internalName": "CardsI13",
+        "displayName": "Minichief Spirit Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I13",
+            "category": "Spirited Valley",
+            "perTier": 1300,
+            "effect": "+{% Total Drop Rate",
+            "bonus": 8,
+            "order": 13
+        },
+        "dropChance": 5e-07
+    },
+    "CardsI14": {
+        "internalName": "CardsI14",
+        "displayName": "Samurai Guardian Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I14",
+            "category": "Spirited Valley",
+            "perTier": 2500,
+            "effect": "+{% All AFK Gains(Passive)",
+            "bonus": 1.5,
+            "order": 14
+        },
+        "dropChance": 4e-07
+    },
+    "CardsI15": {
+        "internalName": "CardsI15",
+        "displayName": "Spirit Diamond Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "I15",
+            "category": "Spirited Valley",
+            "perTier": 5000,
+            "effect": "+{% Sneaking Stealth (Passive)",
+            "bonus": 4,
+            "order": 15
+        },
+        "dropChance": 0.002
     },
     "CardsX0": {
         "internalName": "CardsX0",
@@ -28030,7 +30152,7 @@
     },
     "CardsZ18": {
         "internalName": "CardsZ18",
-        "displayName": "Kattlecruk Card",
+        "displayName": "Kattlekruk Card",
         "sellPrice": 1,
         "typeGen": "dCard",
         "Type": "Card",
@@ -28046,7 +30168,7 @@
     },
     "CardsZ19": {
         "internalName": "CardsZ19",
-        "displayName": "Chaotic Kattlecruk Card",
+        "displayName": "Chaotic Kattlekruk Card",
         "sellPrice": 1,
         "typeGen": "dCard",
         "Type": "Card",
@@ -28062,7 +30184,7 @@
     },
     "CardsZ20": {
         "internalName": "CardsZ20",
-        "displayName": "Sacrilegious Kattlecruk Card",
+        "displayName": "Sacrilegious Kattlekruk Card",
         "sellPrice": 1,
         "typeGen": "dCard",
         "Type": "Card",
@@ -28075,5 +30197,53 @@
             "order": 22
         },
         "dropChance": 0.0008
+    },
+    "CardsZ21": {
+        "internalName": "CardsZ21",
+        "displayName": "Emperor Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "Z21",
+            "category": "Bosses",
+            "perTier": 6,
+            "effect": "+{% Total Drop Rate",
+            "bonus": 12,
+            "order": 23
+        },
+        "dropChance": 1
+    },
+    "CardsZ22": {
+        "internalName": "CardsZ22",
+        "displayName": "Chaotic Emperor Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "Z22",
+            "category": "Bosses",
+            "perTier": 9,
+            "effect": "+{% Total Damage (Passive)",
+            "bonus": 5,
+            "order": 24
+        },
+        "dropChance": 1
+    },
+    "CardsZ23": {
+        "internalName": "CardsZ23",
+        "displayName": "Sovereign Emperor Card",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "Type": "Card",
+        "cardData": {
+            "cardID": "Z23",
+            "category": "Bosses",
+            "perTier": 13,
+            "effect": "+{% Multikill per tier",
+            "bonus": 12,
+            "order": 25
+        },
+        "dropChance": 1
     }
 }

@@ -1,0 +1,17 @@
+__NOCACHE__
+{{#cargo_query:tables=DropTables
+ |fields=CONCAT("[[", DropSourceEntity, "]]")=DropSourceEntity
+ |where=TableName HOLDS "{{PAGENAME}}" AND DropSourceEntity NOT LIKE "{{PAGENAME}}"
+ |group by=DropTables.DropSourceEntity
+ |order by=`DropSourceEntity` ASC
+ |default=
+ |intro=This is a Rare Droptable for:
+ |outro=To see monster specific droprates, visit the specified source page.
+ |limit=100
+ |offset=0
+ |format=ul
+ |columns=1
+}}
+{{DropTable/head}}
+{{DropTable|Spirit Leaf|0.5|3|tablename=DropTable33|tabletype=Rare}}
+{{DropTable/append|SuperDropTable6|0.006|1}}

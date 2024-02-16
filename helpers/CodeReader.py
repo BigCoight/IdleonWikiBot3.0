@@ -183,4 +183,19 @@ class IdleonReader:
 		self.codeReader.addSection("DreamChallenge = function ()", "DreamChallenge")
 		self.codeReader.addSection("DreamUpg = function ()", "DreamUpg")
 
+		# Bonus Maps
+		self.codeReader.addSection("IDforETCbonus = function ()", "IdEctBonus")
+		self.codeReader.addSection("IDforCardBonus = function ()", "IdCardBonus")
+		self.codeReader.addSection("IDforCardSETbonus = function ()", "IdCardSetBonus")
+
+		# World 6
+		self.codeReader.addSection("SummonUPG = function ()", "SummonUpgrades")
+		self.codeReader.addSection("NinjaUpg = function ()", "NinjaUpgrades")
+		self.codeReader.addSection("JadeUpg = function ()", "JadeUpgrades")
+		self.codeReader.addSection("MarketInfo = function ()", "MarketInfo")
+		self.codeReader.addSection("SeedInfo = function ()", "SeedInfo")
+		self.codeReader.addSection("SummonEnemies = function ()", "SummonEnemies")
+		self.codeReader.addSection("SummonUnits = function ()", "SummonUnits")
+		self.codeReader.addSection("NjEQ = function ()", "NinjaItems")
+
 		self.codeReader.readCode()

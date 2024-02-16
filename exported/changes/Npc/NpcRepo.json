@@ -1,134 +1,96 @@
 {
-    "new": {},
-    "changes": {
-        "Falloween Pumpkin": {
+    "new": {
+        "Lafu Shi": {
             "quests": {
-                "The Spookyness": {
-                    "DialogueText": [
-                        "Falloween is meant to be scary and what's scarier than death right? Go kill some monsters! <br> QUEST:Defeat monsters without having AUTO turned on.",
-                        "Falloween is meant to be scary and what's scarier than death right? Go kill some monsters! <br> QUEST:Defeat monsters AFK gains don't count."
+                "Seed Planting": {
+                    "Type": "Custom",
+                    "DialogueText": "Lets begin with farming! Start by planting a seed. <br> MAIN QUEST:Go to the compost bag select a seed then click the empty land plot.",
+                    "Name": "Seed Planting",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 1,
+                    "Rewards": [{"item": "Quest81", "quantity": 3}],
+                    "Difficulty": 1,
+                    "CustomArray": [{"desc": "Seed planted:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                },
+                "Visiting the Farmer's Market": {
+                    "Type": "Custom",
+                    "DialogueText": "Wait for the seed to grow or use the Compost I just gave you and then collect the crops that grow and spend them at the market! <br> MAIN QUEST:Grow apples pick apples spend apples to buy more land!",
+                    "Name": "Visiting the Farmer's Market",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "Quest81", "quantity": 4}, {"item": "GemP30", "quantity": 2}],
+                    "Difficulty": 1,
+                    "CustomArray": [
+                        {"desc": "Apples Picked:", "finalV": 2, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "Land Plots Purchased:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                    ]
+                },
+                "Climbing the Ninja Hotel": {
+                    "Type": "Custom",
+                    "DialogueText": "We do a bit of Sneaking at the abandoned hotel go check it out to the right! <br> MAIN QUEST:Embrace Sneaking culture and Sneak your way up the hotel!",
+                    "Name": "Climbing the Ninja Hotel",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "Quest81", "quantity": 2}, {"item": "GemP30", "quantity": 3}],
+                    "Difficulty": 1,
+                    "CustomArray": [
+                        {"desc": "Find Jade Coins:", "finalV": 100, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "Upg Looting Ambition:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "Find n Equip Nunchaku:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                    ]
+                },
+                "Emporium Investing": {
+                    "Type": "Custom",
+                    "DialogueText": "Now to put that Jade to good use! MAIN QUEST:Purchase something from the Jade Emporium. These bonuses are MAJOR big time awesome!!",
+                    "Name": "Emporium Investing",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 1,
+                    "Rewards": [{"item": "Quest81", "quantity": 3}, {"item": "GemP30", "quantity": 2}],
+                    "Difficulty": 1,
+                    "CustomArray": [{"desc": "Emporium Purchases:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                },
+                "Summoning Debut": {
+                    "Type": "Custom",
+                    "DialogueText": "See that table to the right? Go there and find an opponent! <br> MAIN QUEST:Win a Summoning Match. Your slime army should come out victorious if you place them correctly!",
+                    "Name": "Summoning Debut",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 1,
+                    "Rewards": [{"item": "Quest82", "quantity": 2}],
+                    "Difficulty": 1,
+                    "CustomArray": [
+                        {
+                            "desc": "Open Summoner's Table:",
+                            "finalV": 1,
+                            "type": "GreaterEqual",
+                            "startV": 0
+                        },
+                        {"desc": "Win a Match:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                    ]
+                },
+                "Essence Juicing": {
+                    "Type": "Custom",
+                    "DialogueText": "Now the final task... upgrading your Summoning Slime Army! <br> MAIN QUEST:Click the white Summoning Stone on the pillar and spend your essence.",
+                    "Name": "Essence Juicing",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 1,
+                    "Rewards": [
+                        {"item": "Quest81", "quantity": 2},
+                        {"item": "GemP30", "quantity": 1},
+                        {"item": "Quest82", "quantity": 2}
                     ],
-                    "Rewards": {"0": [" ", {"item": "Quest79", "quantity": 10}]}
-                },
-                "The Horroriness": {
-                    "DialogueText": [
-                        "Hmm still not scared eh? Well let's see if you can stomach the sheer terror of a RECYCLED QUEST! <br> QUEST:Defeat monsters without having AUTO turned on.",
-                        "Hmm still not scared eh? Well let's see if you can stomach the sheer terror of a RECYCLED QUEST! <br> QUEST:Defeat monsters AFK gains don't count."
-                    ],
-                    "Rewards": {"0": [" ", {"item": "Quest79", "quantity": 10}]}
-                },
-                "The Afterparty": {"Rewards": {"0": [" ", {"item": "Quest79", "quantity": 10}]}},
-                "The Scaryness": {"Rewards": {"0": [" ", {"item": "Quest79", "quantity": 10}]}},
-                "The Booeyness": {
-                    "Rewards": {"0": [" ", {"item": "Quest79", "quantity": 10}]},
-                    "CustomArray": {
-                        "0": [
-                            {
-                                "desc": "Say 'Boo' to People:",
-                                "finalV": 200,
-                                "type": "GreaterEqual",
-                                "startV": 0
-                            },
-                            {
-                                "desc": "Say 'Boo' to People:",
-                                "finalV": 120,
-                                "type": "GreaterEqual",
-                                "startV": 0
-                            }
-                        ]
-                    }
-                }
-            }
-        },
-        "Scripticus": {
-            "quests": {
-                "Can't somebody else do it?": {
-                    "DialogueText": [
-                        "No real gamer does everything for themself! Go create a 2nd character! QUEST:Reach Lv 5 then create a 2nd character! Use them to gather materials for you while you play on your main character!!",
-                        "No real gamer does everything themself! <br> QUEST:Reach Lv 5 then create a 2nd character! They gather resources WHILE you play on your 1st character!!"
-                    ],
-                    "CustomArray": {
-                        "0": [
-                            {"desc": "Swap to 2nd Character:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
-                            {"desc": "Claim AFK on 2nd Char:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                        ]
-                    }
-                },
-                "The Choice is Yours!": {
-                    "DialogueText": [
-                        "Did you get all of that? I'll add a Hint to your codex about Talent Points if you ever forget. Now go spend those points! <br> MAIN QUEST:Spend 5 Talent Points",
-                        "I'll add a Hint to your codex if you want more info. Now go spend those pts! <br> MAIN QUEST:Spend 5 Talent Points"
-                    ]
-                },
-                "Hardcore Gamer Status, Here I Come!": {
-                    "DialogueText": [
-                        "Speaking of quests I'm the main quest giver and here comes your first mission! <br> MAIN QUEST:Go to the right and defeat 5 green spores.",
-                        "Here's your first quest! <br> MAIN QUEST:Go to the right and defeat 5 green spores."
-                    ]
-                },
-                "Gear Up, Gamer!": {
-                    "CustomArray": {
-                        "1": [
-                            {"desc": "Buy Tape from Shop:", "finalV": 5, "type": "GreaterEqual", "startV": 0},
-                            {"desc": "Buy Tape from Shop:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                        ]
-                    }
-                },
-                "Mr. Worldwide": {
-                    "DialogueText": [
-                        "Now lets find you some tougher monsters! Defeat enough spores to unlock the next map. Can't have a promising player like you stuck in one place! <br> MAIN QUEST:Reach map 2",
-                        "Now lets find you some tougher monsters! <br> MAIN QUEST:Defeat Green Mushrooms and reach the next map!"
-                    ]
-                },
-                "Certified Swinger, of Pickaxes of course!": {
-                    "DialogueText": [
-                        "Go check out that portal on the left. There's a cheerful goblin who will show you some new gameplay! I haven't actually seen him in a while but I bet he is as happy as I remember!  <br> MAIN QUEST:Get Glumlee's Certification. He's in the Left Portal!",
-                        "You need some ores to make better equiment...  <br> MAIN QUEST:Go through the LEFT portal to start mining and do Glumlee's quests to get the Certificate!"
-                    ]
-                },
-                "The Smithing Grind": {
-                    "DialogueText": [
-                        "Now then use what you learned to get the materials needed to craft some new Equipment at the Anvil! Go do that while I go get this certificate framed... or maybe I should get it laminated...  <br> MAIN QUEST:Craft Farmer Brim and Orange Tee",
-                        "Now use those ores to craft better equipment! You'll also need some logs from the tree in the Mushroom map... <br> MAIN QUEST:Craft Farmer Brim and Orange Tee"
+                    "Difficulty": 1,
+                    "CustomArray": [
+                        {"desc": "Buy Summon Upgrades:", "finalV": 3, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "Win 2nd Match:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
                     ]
                 }
             }
         },
-        "Glumlee": {
-            "quests": {
-                "Literally Burning your Money": {
-                    "DialogueText": [
-                        "Final task now. Go to the forge click the Yellow Arrow tab in the top right and buy some Upgrades. These are Permanent and are shared between all your characters.  <br> QUEST: Upgrade the forge 3 times",
-                        "Final task now. Go to the forge and but some permanent upgrades using your coins!  <br> QUEST: Upgrade the forge 2 times"
-                    ]
-                }
-            }
-        },
-        "Mr Pigibank": {
-            "quests": {
-                "A Pig and his Stamps": {
-                    "DialogueText": [
-                        "Find who stole my Stamps and I can do business with you! <br> QUEST:Find out who stole the Stamp Collection they're in the Frog map...",
-                        "Find who stole my Stamps and I can do business with you! <br> QUEST:Buy a stamp from the town shop"
-                    ],
-                    "CustomArray": {
-                        "0": [
-                            {"desc": "Stamp Thief Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
-                            {"desc": "Buy Stamp from Shop:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                        ]
-                    }
-                }
-            }
-        },
-        "Promotheus": {
-            "quests": {
-                "I'm Ready, Promotion!": {
-                    "DialogueText": [
-                        "Good thing for that too because it looks like you could use a promotion what with you being a Beginner and all that! Come talk to me once you're level 10.",
-                        "Hang on you aren't ready for a promotion. Come talk to me once you're level 10."
-                    ]
-                }
-            }
-        }
-    }
+        "Woodlin Elder": {"quests": {}},
+        "Potti": {"quests": {}},
+        "Hoov": {"quests": {}},
+        "Tribal Shaman": {"quests": {}},
+        "Legumulyte": {"quests": {}}
+    },
+    "changes": {}
 }

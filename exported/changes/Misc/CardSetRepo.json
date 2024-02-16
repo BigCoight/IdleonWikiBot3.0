@@ -1,1 +1,21 @@
-{"new": {}, "changes": {}}
+{
+    "new": {},
+    "changes": {
+        "Smolderin' Plateau": {
+            "bonus": ["{% more Dungeon Credits", "{% Multikill Per Tier"],
+            "scaling": [5, 6],
+            "image": ["CardSet7.png", "CardSet9.png"]
+        },
+        "Dungeons": {
+            "bonus": ["{% Dmg, Drop, and EXP", "{% more Dungeon Credits"],
+            "scaling": [6, 5],
+            "image": ["CardSet26.png", "CardSet7.png"]
+        },
+        "Bosses": {
+            "bonus": ["{% Drop Rate", "{% Dmg, Drop, and EXP"],
+            "scaling": [7, 6],
+            "image": ["CardSet25.png", "CardSet26.png"]
+        },
+        "Event": {"scaling": [5, 7]}
+    }
+}

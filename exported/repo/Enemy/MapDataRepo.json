@@ -131,10 +131,16 @@
         "map": {"intName": "TreeInteriorC", "name": "Where the Branches End", "id": 31},
         "portalRequirements": [0]
     },
+    "Godshard": {
+        "enemy": "Godshard",
+        "world": "Blunder Hills",
+        "map": {"intName": "MininggF", "name": "Motherlode Pit", "id": 32},
+        "portalRequirements": [0]
+    },
     "Z": {
         "enemy": "Z",
         "world": "Blunder Hills",
-        "map": {"intName": "MininggF", "name": "Tunnel Closed", "id": 32},
+        "map": {"intName": "NOTHINGLOL", "name": "How Did u get here", "id": 33},
         "portalRequirements": [0]
     },
     "poopD": {
@@ -405,78 +411,162 @@
         "enemy": "w5a1",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaA1", "name": "Naut Sake Perimeter", "id": 201},
-        "portalRequirements": [25000]
+        "portalRequirements": [15000]
     },
     "w5a2": {
         "enemy": "w5a2",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaA2", "name": "Niagrilled Falls", "id": 202},
-        "portalRequirements": [30000]
+        "portalRequirements": [25000]
     },
     "w5a3": {
         "enemy": "w5a3",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaA3", "name": "The Killer Roundabout", "id": 203},
-        "portalRequirements": [50000]
+        "portalRequirements": [40000]
     },
     "w5a4": {
         "enemy": "w5a4",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaA4", "name": "Cracker Jack Lake", "id": 204},
-        "portalRequirements": [75000]
+        "portalRequirements": [50000]
     },
     "w5a5": {
         "enemy": "w5a5",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaA5", "name": "The Great Molehill", "id": 205},
-        "portalRequirements": [125000]
+        "portalRequirements": [75000]
     },
     "w5b1": {
         "enemy": "w5b1",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaB1", "name": "Erruption River", "id": 206},
-        "portalRequirements": [300000]
+        "portalRequirements": [100000]
     },
     "w5b2": {
         "enemy": "w5b2",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaB2", "name": "Mount Doomish", "id": 207},
-        "portalRequirements": [500000]
+        "portalRequirements": [200000]
     },
     "w5b3": {
         "enemy": "w5b3",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaB3", "name": "OJ Bay", "id": 208},
-        "portalRequirements": [1000000]
+        "portalRequirements": [300000]
     },
     "w5b4": {
         "enemy": "w5b4",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaB4", "name": "Lampar Lake", "id": 209},
-        "portalRequirements": [2000000]
+        "portalRequirements": [450000]
     },
     "w5b5": {
         "enemy": "w5b5",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaB5", "name": "Spitfire River", "id": 210},
-        "portalRequirements": [3000000]
+        "portalRequirements": [600000]
     },
     "w5b6": {
         "enemy": "w5b6",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaB6", "name": "Miner Mole Outskirts", "id": 211},
-        "portalRequirements": [6000000]
+        "portalRequirements": [1000000]
     },
     "w5c1": {
         "enemy": "w5c1",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaC1", "name": "Crawly Catacombs", "id": 212},
-        "portalRequirements": [10000000]
+        "portalRequirements": [3000000]
     },
     "w5c2": {
         "enemy": "w5c2",
         "world": "Smolderin' Plateau",
         "map": {"intName": "wLavaC2", "name": "The Worm Nest", "id": 213},
         "portalRequirements": [60000]
+    },
+    "w6a1": {
+        "enemy": "w6a1",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritA1", "name": "Gooble Goop Creek", "id": 251},
+        "portalRequirements": [30000]
+    },
+    "w6a2": {
+        "enemy": "w6a2",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritA2", "name": "Picnic Bridgeways", "id": 252},
+        "portalRequirements": [50000]
+    },
+    "w6a3": {
+        "enemy": "w6a3",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritA3", "name": "Irrigation Station", "id": 253},
+        "portalRequirements": [100000]
+    },
+    "w6a4": {
+        "enemy": "w6a4",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritA4", "name": "Troll Playground", "id": 254},
+        "portalRequirements": [250000]
+    },
+    "w6a5": {
+        "enemy": "w6a5",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritA5", "name": "Edge of the Valley", "id": 255},
+        "portalRequirements": [400000]
+    },
+    "w6b1": {
+        "enemy": "w6b1",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritB1", "name": "Bamboo Laboredge", "id": 256},
+        "portalRequirements": [1100000]
+    },
+    "w6b2": {
+        "enemy": "w6b2",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritB2", "name": "Lightway Path", "id": 257},
+        "portalRequirements": [3200000]
+    },
+    "w6b3": {
+        "enemy": "w6b3",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritB3", "name": "Troll Broodnest", "id": 258},
+        "portalRequirements": [8000000]
+    },
+    "w6b4": {
+        "enemy": "w6b4",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritB4", "name": "Above the Clouds", "id": 259},
+        "portalRequirements": [12000000]
+    },
+    "w6c1": {
+        "enemy": "w6c1",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritC1", "name": "Sleepy Skyline", "id": 260},
+        "portalRequirements": [25000000]
+    },
+    "w6c2": {
+        "enemy": "w6c2",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritC2", "name": "Dozey Dogpark", "id": 261},
+        "portalRequirements": [70000000]
+    },
+    "w6d1": {
+        "enemy": "w6d1",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritD1", "name": "Yolkrock Basin", "id": 262},
+        "portalRequirements": [100000000]
+    },
+    "w6d2": {
+        "enemy": "w6d2",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritD2", "name": "Chieftain Stairway", "id": 263},
+        "portalRequirements": [150000000]
+    },
+    "w6d3": {
+        "enemy": "w6d3",
+        "world": "Spirited Valley",
+        "map": {"intName": "vSpiritD3", "name": "Emperor's Castle Doorstep", "id": 264},
+        "portalRequirements": [100]
     }
 }

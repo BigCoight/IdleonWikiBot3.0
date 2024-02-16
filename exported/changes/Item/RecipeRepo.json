@@ -1,16 +1,488 @@
 {
-    "new": {},
-    "changes": {
-        "EquipmentPunching2": {"levelReqToCraft": [6, 4]},
-        "MaxCapBag8": {"levelReqToCraft": [7, 5]},
-        "EquipmentPunching1": {
-            "recipe": {"1": [{"item": "CraftMat3", "quantity": 5}, {"item": "CraftMat3", "quantity": 1}]},
-            "sellPrice": [16, 4]
+    "new": {
+        "EquipmentSmithingTabs7": {
+            "recipe": [{"item": "FillerMaterial", "quantity": 1}, {"item": "FillerMaterial", "quantity": 1}],
+            "levelReqToCraft": 78,
+            "expGiven": 1000000,
+            "no": 48,
+            "tab": 6,
+            "sellPrice": 8
         },
-        "EquipmentToolsHatchet3": {"levelReqToCraft": [4, 3]},
-        "EquipmentPants1": {"levelReqToCraft": [4, 2]},
-        "MaxCapBag1": {"levelReqToCraft": [5, 3]},
-        "MaxCapBag7": {"levelReqToCraft": [6, 3]},
-        "MaxCapBagM2": {"levelReqToCraft": [8, 6]}
+        "MaxCapBagFi11": {
+            "recipe": [{"item": "Fish12", "quantity": 5000000}],
+            "levelReqToCraft": 69,
+            "expGiven": 1000000,
+            "no": 38,
+            "tab": 6,
+            "sellPrice": 6275000000
+        },
+        "EquipmentToolsHatchet12": {
+            "recipe": [
+                {"item": "EquipmentToolsHatchet9", "quantity": 1},
+                {"item": "Tree11", "quantity": 3000000}
+            ],
+            "levelReqToCraft": 70,
+            "expGiven": 1000000,
+            "no": 11,
+            "tab": 6,
+            "sellPrice": 1554636450
+        },
+        "MaxCapBagM12": {
+            "recipe": [
+                {"item": "SpiD2", "quantity": 3000000},
+                {"item": "SpiD1", "quantity": 1000000},
+                {"item": "SpiB2b", "quantity": 5000}
+            ],
+            "levelReqToCraft": 78,
+            "expGiven": 1000000,
+            "no": 46,
+            "tab": 6,
+            "sellPrice": 607500000000
+        },
+        "MaxCapBagTr9": {
+            "recipe": [{"item": "Critter9", "quantity": 1500000}, {"item": "Refinery2", "quantity": 300000}],
+            "levelReqToCraft": 69,
+            "expGiven": 1000000,
+            "no": 18,
+            "tab": 6,
+            "sellPrice": 150000000
+        },
+        "EquipmentBows14": {
+            "recipe": [
+                {"item": "EquipmentBows13", "quantity": 1},
+                {"item": "Tree13", "quantity": 10000000},
+                {"item": "GodshardBar", "quantity": 150000}
+            ],
+            "levelReqToCraft": 78,
+            "expGiven": 1000000,
+            "no": 31,
+            "tab": 6,
+            "sellPrice": 965498230000
+        },
+        "EquipmentPants29": {
+            "recipe": [
+                {"item": "EquipmentPants27", "quantity": 1},
+                {"item": "SpiA1", "quantity": 5000000},
+                {"item": "MarbleBar", "quantity": 10000}
+            ],
+            "levelReqToCraft": 67,
+            "expGiven": 1000000,
+            "no": 3,
+            "tab": 6,
+            "sellPrice": 781500209100
+        },
+        "EquipmentShoes38": {
+            "recipe": [
+                {"item": "EquipmentShoes37", "quantity": 1},
+                {"item": "Bug13", "quantity": 10000000},
+                {"item": "SpiB3", "quantity": 10000000},
+                {"item": "GodshardBar", "quantity": 100000}
+            ],
+            "levelReqToCraft": 72,
+            "expGiven": 1000000,
+            "no": 28,
+            "tab": 6,
+            "sellPrice": 1574050234000
+        },
+        "MaxCapBagB10": {
+            "recipe": [{"item": "Bug11", "quantity": 2000000}],
+            "levelReqToCraft": 68,
+            "expGiven": 1000000,
+            "no": 16,
+            "tab": 6,
+            "sellPrice": 640000000
+        },
+        "EquipmentSword9": {
+            "recipe": [
+                {"item": "EquipmentSword8", "quantity": 1},
+                {"item": "Tree13", "quantity": 10000000},
+                {"item": "GodshardBar", "quantity": 150000}
+            ],
+            "levelReqToCraft": 78,
+            "expGiven": 1000000,
+            "no": 30,
+            "tab": 6,
+            "sellPrice": 935518919910
+        },
+        "MaxCapBagM11": {
+            "recipe": [
+                {"item": "SpiA1", "quantity": 3000000},
+                {"item": "SpiA3", "quantity": 1200000},
+                {"item": "SpiA2b", "quantity": 1000}
+            ],
+            "levelReqToCraft": 69,
+            "expGiven": 1000000,
+            "no": 22,
+            "tab": 6,
+            "sellPrice": 630150000000
+        },
+        "EquipmentHats105": {
+            "recipe": [
+                {"item": "EquipmentHats83", "quantity": 1},
+                {"item": "Tree11", "quantity": 3000000},
+                {"item": "MarbleBar", "quantity": 15000}
+            ],
+            "levelReqToCraft": 65,
+            "expGiven": 1000000,
+            "no": 1,
+            "tab": 6,
+            "sellPrice": 1526139650
+        },
+        "CatchingNet12": {
+            "recipe": [
+                {"item": "CatchingNet11", "quantity": 1},
+                {"item": "Bug13", "quantity": 5000000},
+                {"item": "GodshardBar", "quantity": 40000}
+            ],
+            "levelReqToCraft": 71,
+            "expGiven": 1000000,
+            "no": 39,
+            "tab": 6,
+            "sellPrice": 2314016050
+        },
+        "WorshipSkull11": {
+            "recipe": [
+                {"item": "WorshipSkull10", "quantity": 1},
+                {"item": "Soul7", "quantity": 5000000},
+                {"item": "GodshardBar", "quantity": 50000}
+            ],
+            "levelReqToCraft": 73,
+            "expGiven": 1000000,
+            "no": 43,
+            "tab": 6,
+            "sellPrice": 587238650
+        },
+        "MaxCapBagS9": {
+            "recipe": [{"item": "Soul6", "quantity": 2000000}, {"item": "Refinery3", "quantity": 125000}],
+            "levelReqToCraft": 69,
+            "expGiven": 1000000,
+            "no": 20,
+            "tab": 6,
+            "sellPrice": 152500000
+        },
+        "CatchingNet11": {
+            "recipe": [{"item": "CatchingNet10", "quantity": 1}, {"item": "Bug11", "quantity": 2000000}],
+            "levelReqToCraft": 71,
+            "expGiven": 1000000,
+            "no": 15,
+            "tab": 6,
+            "sellPrice": 713976050
+        },
+        "EquipmentShirts38": {
+            "recipe": [
+                {"item": "EquipmentShirts37", "quantity": 1},
+                {"item": "Tree13", "quantity": 10000000},
+                {"item": "SpiC1", "quantity": 10000000},
+                {"item": "GodshardBar", "quantity": 120000}
+            ],
+            "levelReqToCraft": 74,
+            "expGiven": 1000000,
+            "no": 26,
+            "tab": 6,
+            "sellPrice": 1525210551200
+        },
+        "WorshipSkull10": {
+            "recipe": [
+                {"item": "WorshipSkull9", "quantity": 1},
+                {"item": "Soul6", "quantity": 3000000},
+                {"item": "Refinery3", "quantity": 125000}
+            ],
+            "levelReqToCraft": 73,
+            "expGiven": 1000000,
+            "no": 19,
+            "tab": 6,
+            "sellPrice": 237188650
+        },
+        "EquipmentTools14": {
+            "recipe": [{"item": "EquipmentTools9", "quantity": 1}, {"item": "MarbleBar", "quantity": 7500}],
+            "levelReqToCraft": 70,
+            "expGiven": 1000000,
+            "no": 9,
+            "tab": 6,
+            "sellPrice": 83633740
+        },
+        "MaxCapBagF11": {
+            "recipe": [
+                {"item": "FoodHealth16", "quantity": 10000000},
+                {"item": "FoodG11", "quantity": 30000}
+            ],
+            "levelReqToCraft": 80,
+            "expGiven": 1000000,
+            "no": 45,
+            "tab": 6,
+            "sellPrice": 700003000000
+        },
+        "TrapBoxSet10": {
+            "recipe": [
+                {"item": "TrapBoxSet9", "quantity": 1},
+                {"item": "Critter2A", "quantity": 25000},
+                {"item": "GodshardBar", "quantity": 50000}
+            ],
+            "levelReqToCraft": 75,
+            "expGiven": 1000000,
+            "no": 41,
+            "tab": 6,
+            "sellPrice": 84164613
+        },
+        "EquipmentHats106": {
+            "recipe": [
+                {"item": "EquipmentHats105", "quantity": 1},
+                {"item": "Fish12", "quantity": 10000000},
+                {"item": "SpiD2", "quantity": 10000000},
+                {"item": "GodshardBar", "quantity": 150000}
+            ],
+            "levelReqToCraft": 75,
+            "expGiven": 1000000,
+            "no": 25,
+            "tab": 6,
+            "sellPrice": 1514076289650
+        },
+        "EquipmentTools15": {
+            "recipe": [
+                {"item": "EquipmentTools14", "quantity": 1},
+                {"item": "SpiD1", "quantity": 5000000},
+                {"item": "GodshardBar", "quantity": 10000}
+            ],
+            "levelReqToCraft": 73,
+            "expGiven": 1000000,
+            "no": 33,
+            "tab": 6,
+            "sellPrice": 750083643740
+        },
+        "MaxCapBagS10": {
+            "recipe": [{"item": "Soul7", "quantity": 5000000}],
+            "levelReqToCraft": 72,
+            "expGiven": 1000000,
+            "no": 44,
+            "tab": 6,
+            "sellPrice": 350000000
+        },
+        "MaxCapBagF10": {
+            "recipe": [{"item": "FoodHealth17", "quantity": 2000000}, {"item": "FoodG12", "quantity": 500}],
+            "levelReqToCraft": 68,
+            "expGiven": 1000000,
+            "no": 21,
+            "tab": 6,
+            "sellPrice": 1000000050000
+        },
+        "MaxCapBagFi10": {
+            "recipe": [{"item": "Fish10", "quantity": 2000000}],
+            "levelReqToCraft": 68,
+            "expGiven": 1000000,
+            "no": 14,
+            "tab": 6,
+            "sellPrice": 410000000
+        },
+        "FishingRod12": {
+            "recipe": [
+                {"item": "FishingRod11", "quantity": 1},
+                {"item": "Fish11", "quantity": 5000000},
+                {"item": "GodshardBar", "quantity": 30000}
+            ],
+            "levelReqToCraft": 68,
+            "expGiven": 1000000,
+            "no": 37,
+            "tab": 6,
+            "sellPrice": 3046448659
+        },
+        "EquipmentPants30": {
+            "recipe": [
+                {"item": "EquipmentPants29", "quantity": 1},
+                {"item": "Soul7", "quantity": 10000000},
+                {"item": "SpiB4", "quantity": 10000000},
+                {"item": "GodshardBar", "quantity": 100000}
+            ],
+            "levelReqToCraft": 73,
+            "expGiven": 1000000,
+            "no": 27,
+            "tab": 6,
+            "sellPrice": 2282200309100
+        },
+        "MaxCapBagB11": {
+            "recipe": [{"item": "Bug13", "quantity": 5000000}],
+            "levelReqToCraft": 80,
+            "expGiven": 1000000,
+            "no": 40,
+            "tab": 6,
+            "sellPrice": 1600000000
+        },
+        "EquipmentPunching10": {
+            "recipe": [
+                {"item": "EquipmentPunching9", "quantity": 1},
+                {"item": "Bug11", "quantity": 10000000},
+                {"item": "SpiA2b", "quantity": 10000}
+            ],
+            "levelReqToCraft": 70,
+            "expGiven": 1000000,
+            "no": 5,
+            "tab": 6,
+            "sellPrice": 3004951327900
+        },
+        "MaxCapBagMi11": {
+            "recipe": [{"item": "Godshard", "quantity": 5000000}],
+            "levelReqToCraft": 69,
+            "expGiven": 1000000,
+            "no": 34,
+            "tab": 6,
+            "sellPrice": 1250000000
+        },
+        "TrapBoxSet9": {
+            "recipe": [
+                {"item": "TrapBoxSet8", "quantity": 1},
+                {"item": "Critter5A", "quantity": 1000},
+                {"item": "Refinery2", "quantity": 250000}
+            ],
+            "levelReqToCraft": 73,
+            "expGiven": 1000000,
+            "no": 17,
+            "tab": 6,
+            "sellPrice": 34114613
+        },
+        "MaxCapBagMi10": {
+            "recipe": [{"item": "Marble", "quantity": 2000000}],
+            "levelReqToCraft": 67,
+            "expGiven": 1000000,
+            "no": 10,
+            "tab": 6,
+            "sellPrice": 1000000000
+        },
+        "EquipmentSword8": {
+            "recipe": [
+                {"item": "EquipmentSword7", "quantity": 1},
+                {"item": "Bug12", "quantity": 1000000},
+                {"item": "SpiA3", "quantity": 4000000}
+            ],
+            "levelReqToCraft": 67,
+            "expGiven": 1000000,
+            "no": 6,
+            "tab": 6,
+            "sellPrice": 930518769910
+        },
+        "MaxCapBagT10": {
+            "recipe": [{"item": "Tree12", "quantity": 2000000}],
+            "levelReqToCraft": 67,
+            "expGiven": 1000000,
+            "no": 12,
+            "tab": 6,
+            "sellPrice": 1000000000
+        },
+        "MaxCapBagT11": {
+            "recipe": [{"item": "Tree13", "quantity": 5000000}],
+            "levelReqToCraft": 69,
+            "expGiven": 1000000,
+            "no": 36,
+            "tab": 6,
+            "sellPrice": 2500000000
+        },
+        "EquipmentBows13": {
+            "recipe": [
+                {"item": "EquipmentBows12", "quantity": 1},
+                {"item": "Bug12", "quantity": 1000000},
+                {"item": "SpiA4", "quantity": 4000000}
+            ],
+            "levelReqToCraft": 67,
+            "expGiven": 1000000,
+            "no": 7,
+            "tab": 6,
+            "sellPrice": 960498080000
+        },
+        "EquipmentWands13": {
+            "recipe": [
+                {"item": "EquipmentWands12", "quantity": 1},
+                {"item": "Tree13", "quantity": 10000000},
+                {"item": "GodshardBar", "quantity": 150000}
+            ],
+            "levelReqToCraft": 78,
+            "expGiven": 1000000,
+            "no": 32,
+            "tab": 6,
+            "sellPrice": 955499071200
+        },
+        "EquipmentPunching11": {
+            "recipe": [
+                {"item": "EquipmentPunching10", "quantity": 1},
+                {"item": "SpiB2b", "quantity": 1000000},
+                {"item": "Refinery3", "quantity": 1000000},
+                {"item": "GodshardBar", "quantity": 1000000}
+            ],
+            "levelReqToCraft": 80,
+            "expGiven": 1000000,
+            "no": 29,
+            "tab": 6,
+            "sellPrice": 4505052327900
+        },
+        "EquipmentToolsHatchet10": {
+            "recipe": [
+                {"item": "EquipmentToolsHatchet12", "quantity": 1},
+                {"item": "SpiD2", "quantity": 10000000},
+                {"item": "Tree13", "quantity": 10000000},
+                {"item": "GodshardBar", "quantity": 30000}
+            ],
+            "levelReqToCraft": 73,
+            "expGiven": 1000000,
+            "no": 35,
+            "tab": 6,
+            "sellPrice": 1506554666450
+        },
+        "EquipmentWands12": {
+            "recipe": [
+                {"item": "EquipmentWands11", "quantity": 1},
+                {"item": "Bug12", "quantity": 1000000},
+                {"item": "SpiA5", "quantity": 4000000}
+            ],
+            "levelReqToCraft": 67,
+            "expGiven": 1000000,
+            "no": 8,
+            "tab": 6,
+            "sellPrice": 950498921200
+        },
+        "FishingRod11": {
+            "recipe": [{"item": "FishingRod10", "quantity": 1}, {"item": "Fish9", "quantity": 2000000}],
+            "levelReqToCraft": 71,
+            "expGiven": 1000000,
+            "no": 13,
+            "tab": 6,
+            "sellPrice": 271418659
+        },
+        "EquipmentShirts37": {
+            "recipe": [
+                {"item": "EquipmentShirts36", "quantity": 1},
+                {"item": "Fish10", "quantity": 2000000},
+                {"item": "MarbleBar", "quantity": 10000}
+            ],
+            "levelReqToCraft": 66,
+            "expGiven": 1000000,
+            "no": 2,
+            "tab": 6,
+            "sellPrice": 20210431200
+        },
+        "EquipmentShoes37": {
+            "recipe": [
+                {"item": "EquipmentShoes36", "quantity": 1},
+                {"item": "Tree12", "quantity": 2500000},
+                {"item": "MarbleBar", "quantity": 10000}
+            ],
+            "levelReqToCraft": 68,
+            "expGiven": 1000000,
+            "no": 4,
+            "tab": 6,
+            "sellPrice": 70850134000
+        }
+    },
+    "changes": {
+        "EquipmentSmithingTabs6": {
+            "recipe": {
+                "1": [" ", {"item": "Tree10", "quantity": 2000000}],
+                "3": [" ", {"item": "KrukPart2", "quantity": 10}],
+                "0": [" ", {"item": "DreadloBar", "quantity": 8500}],
+                "2": [" ", {"item": "Bug9", "quantity": 1000000}]
+            },
+            "sellPrice": [12, 700018500]
+        },
+        "FillerMaterial": {"levelReqToCraft": [75, 78], "no": [36, 47], "tab": [5, 6]},
+        "EquipmentShirts6": {
+            "recipe": {"2": [" ", {"item": "SnowC2", "quantity": 100000}]},
+            "sellPrice": [85508218, 75508218]
+        }
     }
 }

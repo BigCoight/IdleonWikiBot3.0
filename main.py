@@ -50,6 +50,9 @@ from repositories.misc.StorageOrderRepo import StorageOrderRepo
 from repositories.misc.TaskDescriptionsRepo import TaskDescriptionRepo
 from repositories.misc.TaskShopDescRepo import TaskShopDescRepo
 from repositories.misc.TaskUnlocksRepo import TaskUnlocksRepo
+from repositories.misc.bonusmap.CardBonusRepo import CardBonusRepo
+from repositories.misc.bonusmap.CardSetBonusRepo import CardSetBonusRepo
+from repositories.misc.bonusmap.EctBonusRepo import EctBonusRepo
 from repositories.misc.equinox.DreamChallengeRepo import DreamChallengeRepo
 from repositories.misc.equinox.DreamUpgradeRepo import DreamUpgradeRepo
 from repositories.misc.weeklyboss.WeeklyActionRepo import WeeklyActionRepo
@@ -86,6 +89,14 @@ from repositories.misc.world5.GamingUpgradeRepo import GamingUpgradeRepo
 from repositories.misc.world5.GodInfoRepo import GodInfoRepo
 from repositories.misc.world5.IslandInfoRepo import IslandInfoRepo
 from repositories.misc.world5.SlabItemSortRepo import SlabItemSortRepo
+from repositories.misc.world6.JadeUpgradeRepo import JadeUpgradeRepo
+from repositories.misc.world6.MarketInfoRepo import MarketInfoRepo
+from repositories.misc.world6.NinjaItemRepo import NinjaItemRepo
+from repositories.misc.world6.NinjaUpgradeRepo import NinjaUpgradeRepo
+from repositories.misc.world6.SeedInfoRepo import SeedInfoRepo
+from repositories.misc.world6.SummonEnemyRepo import SummonEnemyRepo
+from repositories.misc.world6.SummonUnitRepo import SummonUnitRepo
+from repositories.misc.world6.SummonUpgradeRepo import SummonUpgradeRepo
 from repositories.npc.NPCNoteRepo import NpcNoteRepo
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
 from repositories.npc.NpcRepo import NpcRepo
@@ -93,7 +104,7 @@ from repositories.npc.QuestNameRepo import QuestNameRepo
 from repositories.talents.TalentNameRepo import TalentNameRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-idleonReader = IdleonReader("192", steam = True)
+idleonReader = IdleonReader("200", steam = True)
 
 # idleonReader = IdleonReader("123b", False)
 codeReader = idleonReader.codeReader
@@ -204,6 +215,20 @@ WeeklyShopRepo.initialise(codeReader)
 
 DreamChallengeRepo.initialise(codeReader)
 DreamUpgradeRepo.initialise(codeReader)
+
+EctBonusRepo.initialise(codeReader)
+CardBonusRepo.initialise(codeReader)
+CardSetBonusRepo.initialise(codeReader)
+
+# World 6
+SummonUpgradeRepo.initialise(codeReader)
+NinjaUpgradeRepo.initialise(codeReader)
+JadeUpgradeRepo.initialise(codeReader)
+MarketInfoRepo.initialise(codeReader)
+SeedInfoRepo.initialise(codeReader)
+SummonEnemyRepo.initialise(codeReader)
+SummonUnitRepo.initialise(codeReader)
+NinjaItemRepo.initialise(codeReader)
 
 ItemRepo.exportWikiMult()
 NpcRepo.exportWikiMult()

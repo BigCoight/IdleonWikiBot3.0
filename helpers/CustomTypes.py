@@ -12,6 +12,8 @@ class Integer(int):
 	def validate(cls, v):
 		if isinstance(v, int):
 			return v
+		if isinstance(v, float) and v.is_integer():
+			return int(v)
 		try:
 			return validateInteger(v)
 		except ValueError:

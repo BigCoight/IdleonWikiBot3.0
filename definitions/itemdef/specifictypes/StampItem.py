@@ -67,7 +67,7 @@ class StampItem(BonusItem):
 			return "FILLER"
 		s, t = cls.stampType(item)
 		descs = StampDescriptionRepo.get(s)
-		return descs.descriptions[t-1]
+		return descs.descriptions[t - 1]
 
 	@classmethod
 	def getDesc(cls, item: Union[ConsumableItem, QuestItem]) -> str:
@@ -78,6 +78,7 @@ class StampItem(BonusItem):
 
 	@classmethod
 	def fromItemDetails(cls, item: QuestItem) -> BaseItem:
+		# print(item.sellPrice)
 		stampData = item.desc_line1.split(",")
 		t, i = cls.stampType(item)
 		return StampItem(

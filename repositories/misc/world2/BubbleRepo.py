@@ -2,12 +2,18 @@ import re
 from typing import List
 
 from definitions.component.ComponentFactory import ComponentFactory
-from definitions.misc.world2.Bubble import Bubble
+from definitions.misc.world2.Bubble import Bubble, Cauldron
 from helpers.HelperFunctions import replaceUnderscores, reAll
+from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.master.Repository import Repository
 
 
-class BubbleRepo(Repository[Bubble]):
+class BubbleRepo(Repository[Cauldron]):
+
+	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		ItemDetailRepo.initialise(cls.codeReader, log)
+
 	@classmethod
 	def getCategory(cls) -> str:
 		return "Worlds/2"
@@ -43,7 +49,8 @@ class BubbleRepo(Repository[Bubble]):
 						bubbleReq.append(ComponentFactory.getComponent(bubData[i], bubData[j]))
 						continue
 					bubbleReq.append(ComponentFactory.getComponent(bubData[i], -1))
-				cls.add(bubData[0], Bubble(
+
+				toAdd = Bubble(
 					cauldron = bubbleNames[n],
 					name = bubData[0],
 					x1 = bubData[1],
@@ -52,4 +59,12 @@ class BubbleRepo(Repository[Bubble]):
 					description = bubData[9],
 					requirements = bubbleReq.copy(),
 					bonusKey = bubData[-1]
-				))
+				)
+
+				cls.addToCauldron(bubbleNames[n], toAdd)
+
+	@classmethod
+	def addToCauldron(cls, cauldron: str, bubble: Bubble):
+		if not cls.contains(cauldron):
+			cls.add(cauldron, Cauldron(bubbles = []))
+		cls.get(cauldron).bubbles.append(bubble)

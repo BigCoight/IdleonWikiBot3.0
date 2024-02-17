@@ -434,7 +434,6 @@ class Repository(Generic[T], ABC):
 			return set(cls.__subclasses__()).union(
 				[s for c in cls.__subclasses__() for s in all_subclasses(c)])
 
-		# print(all_subclasses(IdleonModel))
 		for subclass in all_subclasses(IdleonModel):
 			tsRepr = subclass.toTsInterface()
 			name = subclass.__name__[0].lower() + subclass.__name__[1:] + "Model"

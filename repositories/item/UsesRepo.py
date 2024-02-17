@@ -56,17 +56,18 @@ class UsesRepo(Repository[Uses]):
 					type = "detRecipe"))
 
 		# Bubbles
-		for bubName, bubble in BubbleRepo.items():
-			bubType = "vial" if bubble.cauldron == "Vials" else "bubble"
-			name = "" if bubble.cauldron == "Vials" else " Bubble"
-			for component in bubble.requirements:
-				if isinstance(component, (Component, QtylessComponent)):
-					cls.addToUses(component.item, Use(
-						repoSource = "BubbleRepo",
-						key = f"{bubble.cauldron}@{bubName}",
-						name = f"{bubble.cauldron}: {bubble.name}{name}",
-						amount = "Lots",
-						type = bubType))
+		for cauldName, bubbles in BubbleRepo.items():
+			for bubble in bubbles.bubbles:
+				bubType = "vial" if bubble.cauldron == "Vials" else "bubble"
+				name = "" if bubble.cauldron == "Vials" else " Bubble"
+				for component in bubble.requirements:
+					if isinstance(component, (Component, QtylessComponent)):
+						cls.addToUses(component.item, Use(
+							repoSource = "BubbleRepo",
+							key = f"{bubble.cauldron}@{bubble.name}",
+							name = f"{bubble.cauldron}: {bubble.name}{name}",
+							amount = "Lots",
+							type = bubType))
 
 		for item, stamp in SpecificItemRepo.items():
 			if isinstance(stamp, StampItem):

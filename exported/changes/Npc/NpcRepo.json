@@ -1,8 +1,64 @@
 {
     "new": {
-        "Potti": {"quests": {}},
+        "Woodlin Elder": {
+            "quests": {
+                "Portal Issues": {
+                    "Type": "Custom",
+                    "DialogueText": "Go ahead and try it won't matter. QUEST:Defeat 400000 Woodlin Spirits to open the portal business as usual forget this Elder chump!",
+                    "Name": "Portal Issues",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "Gfoodcoupon", "quantity": 800}],
+                    "Difficulty": 2,
+                    "CustomArray": [{"desc": "Woodlin Kills:", "finalV": 400000, "type": "GreaterEqual", "startV": 0}]
+                },
+                "Big Lock Picking": {
+                    "Type": "Custom",
+                    "DialogueText": "However. Do this again and your worth will be proven. <br> QUEST:Defeat 400000 Woodlin Spirits on a 2nd character that must be what the big lock is all about!",
+                    "Name": "Big Lock Picking",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 3,
+                    "Rewards": [
+                        {"item": "ExpBalloon3", "quantity": 6},
+                        {"item": "GemP30", "quantity": 3},
+                        {"item": "Quest81", "quantity": 4}
+                    ],
+                    "Difficulty": 3,
+                    "CustomArray": [{"desc": "2nd Char Unlock:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                },
+                "Fiddy": {
+                    "Type": "Custom",
+                    "DialogueText": "Enough portal talk. Let's test your dedication further. <br> QUEST:Defeat exactly 50 Woodlin Spirits. Stand on the top right platform to lock in your killcount. Killcount resets if incorrect.",
+                    "Name": "Fiddy",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "Gfoodcoupon", "quantity": 1500}],
+                    "Difficulty": 1,
+                    "CustomArray": [{"desc": "50 Exactly:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                },
+                "Hunned Fiddy": {
+                    "Type": "Custom",
+                    "DialogueText": "Let's test your dedication even further. <br> QUEST:Defeat exactly 150 Woodlin Spirits. Stand on the top right platform to lock in your killcount. Killcount resets if incorrect.",
+                    "Name": "Hunned Fiddy",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "Gfoodcoupon", "quantity": 2500}],
+                    "Difficulty": 4,
+                    "CustomArray": [{"desc": "150 Exactly:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                },
+                "Triple Tre": {
+                    "Type": "Custom",
+                    "DialogueText": "One final test. Third time's the charm. <br> QUEST:Defeat exactly 333 Woodlin Spirits. Stand on the top right platform to lock in your killcount. Killcount resets if incorrect.",
+                    "Name": "Triple Tre",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "Gfoodcoupon", "quantity": 4000}],
+                    "Difficulty": 7,
+                    "CustomArray": [{"desc": "333 Exactly:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                }
+            }
+        },
         "Tribal Shaman": {"quests": {}},
-        "Hoov": {"quests": {}},
         "Lafu Shi": {
             "quests": {
                 "Seed Planting": {
@@ -89,8 +145,107 @@
                 }
             }
         },
+        "Sussy Gene": {
+            "quests": {
+                "Goofin' Around": {
+                    "Type": "Custom",
+                    "DialogueText": "Three things tough stuff gonna freak you out maybe... <br> QUEST:Have a Summoning Match last 2 minutes or more Spawn 10 bloomies in a single match and Spawn 1000 slimes across all matches.",
+                    "Name": "Goofin' Around",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "StampB53", "quantity": 1}, {"item": "Gfoodcoupon", "quantity": 1500}],
+                    "Difficulty": 3,
+                    "CustomArray": [
+                        {"desc": "1st Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "2nd Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "3rd Thing:", "finalV": 1000, "type": "GreaterEqual", "startV": 0}
+                    ]
+                },
+                "Messin' Around": {
+                    "Type": "Custom",
+                    "DialogueText": "Ok like do these things now. <br> QUEST:Have 1000 mana in a Summoning Match at once get you and your opponent down to just 1 hp each and spawn 8 Vrumbies from a single card.",
+                    "Name": "Messin' Around",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "StampB51", "quantity": 1}, {"item": "Gfoodcoupon", "quantity": 2500}],
+                    "Difficulty": 5,
+                    "CustomArray": [
+                        {"desc": "1st Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "2nd Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "3rd Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                    ]
+                },
+                "Loiterin' Around": {
+                    "Type": "Custom",
+                    "DialogueText": "Last things listen up. <br> QUEST:Have a Regalis familiar in your sanctuary play 7 special units in a row (non grey slimes) have a summoning match last 5 minutes or more.",
+                    "Name": "Loiterin' Around",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [
+                        {"item": "StampA41", "quantity": 1},
+                        {"item": "SpiA2b", "quantity": 2500},
+                        {"item": "Gfoodcoupon", "quantity": 3000}
+                    ],
+                    "Difficulty": 8,
+                    "CustomArray": [
+                        {"desc": "1st Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "2nd Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                        {"desc": "3rd Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                    ]
+                }
+            }
+        },
+        "Potti": {"quests": {}},
         "Legumulyte": {"quests": {}},
-        "Woodlin Elder": {"quests": {}}
+        "Hoov": {
+            "quests": {
+                "Sneak Dropout": {
+                    "Type": "Custom",
+                    "DialogueText": "So yeh I'm thinkin' infiltratin' that old abandoned Ninja Castle in town is the play but like shiee I ain't doin' that myself ya feel? <br> QUEST:Reach Lv 10 in your Sneaking Skill",
+                    "Name": "Sneak Dropout",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "StampB48", "quantity": 1}, {"item": "GemP30", "quantity": 1}],
+                    "Difficulty": 1,
+                    "CustomArray": [{"desc": "Sneaking LV:", "finalV": 10, "type": "GreaterEqual", "startV": 0}]
+                },
+                "Stealth Check 1 2 3": {
+                    "Type": "Custom",
+                    "DialogueText": "Look man I'll totally join you just lemme peep those stats see if you good enough for my caliber. <br> QUEST:Have a total Stealth of 10420 on you Ninja Twin. Check Skill Info to see your ninja twin's Stealth amount.",
+                    "Name": "Stealth Check 1 2 3",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "StampA40", "quantity": 1}, {"item": "Gfoodcoupon", "quantity": 300}],
+                    "Difficulty": 3,
+                    "CustomArray": [{
+                        "desc": "Ninja Twin Stealth:",
+                        "finalV": 10420,
+                        "type": "GreaterEqual",
+                        "startV": 0
+                    }]
+                },
+                "Sneak Registration": {
+                    "Type": "Custom",
+                    "DialogueText": "Now where'd I put them last time I used them... while I look for my charms how 'bout you go level a bit yea?. <br> QUEST:Reach Sneaking Lv 40",
+                    "Name": "Sneak Registration",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "GemP30", "quantity": 1}, {"item": "Gfoodcoupon", "quantity": 1000}],
+                    "Difficulty": 5,
+                    "CustomArray": [{"desc": "Sneaking LV:", "finalV": 40, "type": "GreaterEqual", "startV": 0}]
+                },
+                "Sneak Graduate": {
+                    "Type": "Custom",
+                    "DialogueText": "Lemme just finish this last bite I'll be right with you. <br> QUEST:He won't be right with you he's obviously ducking. Just go reach Sneaking Lv 80 continue without him you already got his stamps lmao",
+                    "Name": "Sneak Graduate",
+                    "ConsumeItems": false,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "InvStorageN", "quantity": 1}, {"item": "Gfoodcoupon", "quantity": 1500}],
+                    "Difficulty": 8,
+                    "CustomArray": [{"desc": "Sneaking LV:", "finalV": 80, "type": "GreaterEqual", "startV": 0}]
+                }
+            }
+        }
     },
     "changes": {}
 }

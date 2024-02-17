@@ -200,6 +200,9 @@ class IdleonModel(BaseModel):
 		"""
 		return ""
 
+	def useCompareKeyName(self) -> bool:
+		return False
+
 	def sortKey(self) -> str:
 		"""
 
@@ -318,7 +321,7 @@ class IdleonModel(BaseModel):
 
 	def _getDifList(self, me, other, ignored: Set[str] = set()) -> Dict[str, any]:
 		if isinstance(me[0], IdleonModel) and me[0].compareKey():
-			return self._getDifListIdleon(me, other, ignored)
+			return self._getDifListIdleon(me, other, ignored, me[0].useCompareKeyName())
 		res = {}
 		len1 = len(me)
 		len2 = len(other)
@@ -356,7 +359,8 @@ class IdleonModel(BaseModel):
 			return {}
 		return res
 
-	def _getDifListIdleon(self, me, other, ignored: Set[str] = set()) -> Dict[str, any]:
+	def _getDifListIdleon(self, me, other, ignored: Set[str] = set(), useCompareKeyName: bool = False) -> Dict[
+		str, any]:
 		meD = {x.compareKey(): {"model": x, "index": str(n)} for n, x in enumerate(me)}
 		otherD = {x.compareKey(): {"model": x, "index": str(n)} for n, x in enumerate(other)}
 
@@ -366,35 +370,38 @@ class IdleonModel(BaseModel):
 		sameItems = keys1.intersection(keys2)
 		newItems = keys2 - keys1
 		for key in sameItems:
+
+			diffKey = meD[key]["index"] if not useCompareKeyName else key
+
 			if meD[key]["model"] == otherD[key]["model"]:
 				continue
 			if key in ignored:
 				continue
 			if isinstance(meD[key]["model"], IdleonModel) and meD[key]["model"].shouldCompare():
-				diffs[meD[key]["index"]] = meD[key]["model"].compare(otherD[key]["model"], ignored)
+				diffs[diffKey] = meD[key]["model"].compare(otherD[key]["model"], ignored)
 				continue
 			if isinstance(meD[key]["model"], list):
-				diffs[meD[key]["index"]] = self._getDifList(meD[key]["model"], otherD[key]["model"], ignored)
+				diffs[diffKey] = self._getDifList(meD[key]["model"], otherD[key]["model"], ignored)
 				continue
 			if isinstance(meD[key]["model"], dict):
-				diffs[meD[key]["index"]] = self._getDifDict(meD[key]["model"], otherD[key]["model"], ignored)
+				diffs[diffKey] = self._getDifDict(meD[key]["model"], otherD[key]["model"], ignored)
 				continue
-			diffs[meD[key]["index"]] = (meD[key]["model"], otherD[key]["model"])
+			diffs[diffKey] = (meD[key]["model"], otherD[key]["model"])
 
 		for key in newItems:
+			diffKey = otherD[key]["index"] if not useCompareKeyName else key
 			if isinstance(otherD[key]["model"], IdleonModel) and otherD[key]["model"].shouldCompare():
 				toAdd = otherD[key]["model"].toDict(ignored)
-				diffs[otherD[key]["index"]] = {}
+				diffs[diffKey] = {}
 				for atr, val in toAdd.items():
 					if isinstance(val, list):
-						diffs[otherD[key]["index"]][atr] = []
+						diffs[diffKey][atr] = []
 						for elem in val:
-							diffs[otherD[key]["index"]][atr].append((" ", elem))
+							diffs[diffKey][atr].append((" ", elem))
 						continue
-					diffs[otherD[key]["index"]][atr] = (" ", val)
+					diffs[diffKey][atr] = (" ", val)
 				continue
-			diffs[otherD[key]["index"]] = (" ", otherD[key]["model"])
-
+			diffs[diffKey] = (" ", otherD[key]["model"])
 		if not any(diffs.values()):
 			return {}
 		return diffs
@@ -482,8 +489,12 @@ class TSEncoder(json.JSONEncoder):
 			else:
 				return "{}"
 		elif isinstance(o, IdleonModel):
-			type_str = f"<{o.__class__.__name__}Model>"
+			parents = type(o).__bases__
+			for parent in parents:
+				if issubclass(parent, IdleonModel):
+					self.needToImport.add(f"{parent.__name__}Model")
 			self.needToImport.add(f"{o.__class__.__name__}Model")
+			type_str = f"<{o.__class__.__name__}Model>"
 			if o:
 				output = [f"{json.dumps(k)}: {self.encode(v)}" for k, v in o]
 				if self._put_on_single_line(output):

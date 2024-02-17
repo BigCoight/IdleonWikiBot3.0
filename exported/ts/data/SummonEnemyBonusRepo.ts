@@ -1,3 +1,4 @@
+import { IdleonModelModel } from '../model/idleonModelModel';
 import { SummonEnemyBonusModel } from '../model/summonEnemyBonusModel';
 
 export class SummonEnemyBonusBase { constructor(public index: number, public data: SummonEnemyBonusModel) { } }

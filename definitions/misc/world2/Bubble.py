@@ -18,7 +18,14 @@ class Bubble(IdleonModel):
 	requirements: List[ComponentBase]
 	bonusKey: str
 
-	def sortKey(self) -> str:
-		return self.cauldron
-
 	_removeUnderscores = validator("description", allow_reuse = True)(replaceUnderscores)
+
+	def compareKey(self) -> str:
+		return self.name
+
+	def useCompareKeyName(self) -> bool:
+		return True
+
+
+class Cauldron(IdleonModel):
+	bubbles: List[Bubble]

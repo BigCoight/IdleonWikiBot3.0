@@ -1,3 +1,4 @@
+import { BaseNinjaItemModel } from '../model/baseNinjaItemModel';
 import { NinjaItemModel } from '../model/ninjaItemModel';
 import { NinjaItemTypeEnum } from '../enum/ninjaItemTypeEnum';
 import { NinjaPristineCharmModel } from '../model/ninjaPristineCharmModel';

@@ -9179,26 +9179,26 @@
         "recipe": [
             {"item": "DreadloBar", "quantity": 8500},
             {"item": "Tree10", "quantity": 2000000},
-            {"item": "Bug9", "quantity": 1000000},
+            {"item": "Bug10", "quantity": 1000000},
             {"item": "KrukPart2", "quantity": 10}
         ],
         "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 24,
         "tab": 5,
-        "sellPrice": 700018500,
+        "sellPrice": 820018500,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "DreadloBar", "quantity": 8500},
                 {"indent": 0, "item": "Tree10", "quantity": 2000000},
-                {"indent": 0, "item": "Bug9", "quantity": 1000000},
+                {"indent": 0, "item": "Bug10", "quantity": 1000000},
                 {"indent": 0, "item": "KrukPart2", "quantity": 10}
             ],
             "detRecipeTotals": [
                 {"item": "DreadloBar", "quantity": 8500},
                 {"item": "Tree10", "quantity": 2000000},
-                {"item": "Bug9", "quantity": 1000000},
+                {"item": "Bug10", "quantity": 1000000},
                 {"item": "KrukPart2", "quantity": 10}
             ]
         }
@@ -9811,13 +9811,13 @@
         "recipe": [
             {"item": "EquipmentPunching9", "quantity": 1},
             {"item": "Bug11", "quantity": 10000000},
-            {"item": "SpiA2b", "quantity": 10000}
+            {"item": "SpiA2b", "quantity": 5000}
         ],
         "levelReqToCraft": 70,
         "expGiven": 1000000,
         "no": 5,
         "tab": 6,
-        "sellPrice": 3004951327900,
+        "sellPrice": 3004201327900,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
@@ -9843,11 +9843,11 @@
                 {"indent": 1, "item": "KrukPart2", "quantity": 4},
                 {"indent": 1, "item": "LavaC2", "quantity": 20000000},
                 {"indent": 0, "item": "Bug11", "quantity": 10000000},
-                {"indent": 0, "item": "SpiA2b", "quantity": 10000}
+                {"indent": 0, "item": "SpiA2b", "quantity": 5000}
             ],
             "detRecipeTotals": [
                 {"item": "Bug11", "quantity": 10000000},
-                {"item": "SpiA2b", "quantity": 10000},
+                {"item": "SpiA2b", "quantity": 5000},
                 {"item": "KrukPart", "quantity": 100},
                 {"item": "KrukPart2", "quantity": 4},
                 {"item": "LavaC2", "quantity": 20000000},
@@ -10766,7 +10766,7 @@
         "intID": "EquipmentPunching11",
         "recipe": [
             {"item": "EquipmentPunching10", "quantity": 1},
-            {"item": "SpiB2b", "quantity": 1000000},
+            {"item": "SpiB2b", "quantity": 100000},
             {"item": "Refinery3", "quantity": 1000000},
             {"item": "GodshardBar", "quantity": 1000000}
         ],
@@ -10774,7 +10774,7 @@
         "expGiven": 1000000,
         "no": 29,
         "tab": 6,
-        "sellPrice": 4505052327900,
+        "sellPrice": 3154302327900,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
@@ -10801,17 +10801,17 @@
                 {"indent": 2, "item": "KrukPart2", "quantity": 4},
                 {"indent": 2, "item": "LavaC2", "quantity": 20000000},
                 {"indent": 1, "item": "Bug11", "quantity": 10000000},
-                {"indent": 1, "item": "SpiA2b", "quantity": 10000},
-                {"indent": 0, "item": "SpiB2b", "quantity": 1000000},
+                {"indent": 1, "item": "SpiA2b", "quantity": 5000},
+                {"indent": 0, "item": "SpiB2b", "quantity": 100000},
                 {"indent": 0, "item": "Refinery3", "quantity": 1000000},
                 {"indent": 0, "item": "GodshardBar", "quantity": 1000000}
             ],
             "detRecipeTotals": [
-                {"item": "SpiB2b", "quantity": 1000000},
+                {"item": "SpiB2b", "quantity": 100000},
                 {"item": "Refinery3", "quantity": 1000000},
                 {"item": "GodshardBar", "quantity": 1000000},
                 {"item": "Bug11", "quantity": 10000000},
-                {"item": "SpiA2b", "quantity": 10000},
+                {"item": "SpiA2b", "quantity": 5000},
                 {"item": "KrukPart", "quantity": 100},
                 {"item": "KrukPart2", "quantity": 4},
                 {"item": "LavaC2", "quantity": 20000000},
@@ -11455,30 +11455,20 @@
             ]
         }
     },
-    "MaxCapBagM12": {
-        "intID": "MaxCapBagM12",
-        "recipe": [
-            {"item": "SpiD2", "quantity": 3000000},
-            {"item": "SpiD1", "quantity": 1000000},
-            {"item": "SpiB2b", "quantity": 5000}
-        ],
-        "levelReqToCraft": 78,
+    "MaxCapBagTr10": {
+        "intID": "MaxCapBagTr10",
+        "recipe": [{"item": "Critter5", "quantity": 5555555}],
+        "levelReqToCraft": 74,
         "expGiven": 1000000,
-        "no": 46,
+        "no": 42,
         "tab": 6,
-        "sellPrice": 607500000000,
+        "sellPrice": 127777765,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "SpiD2", "quantity": 3000000},
-                {"indent": 0, "item": "SpiD1", "quantity": 1000000},
-                {"indent": 0, "item": "SpiB2b", "quantity": 5000}
+                {"indent": 0, "item": "Critter5", "quantity": 5555555}
             ],
-            "detRecipeTotals": [
-                {"item": "SpiD2", "quantity": 3000000},
-                {"item": "SpiD1", "quantity": 1000000},
-                {"item": "SpiB2b", "quantity": 5000}
-            ]
+            "detRecipeTotals": [{"item": "Critter5", "quantity": 5555555}]
         }
     },
     "WorshipSkull11": {
@@ -11573,6 +11563,32 @@
             "detRecipeTotals": [
                 {"item": "FoodHealth16", "quantity": 10000000},
                 {"item": "FoodG11", "quantity": 30000}
+            ]
+        }
+    },
+    "MaxCapBagM12": {
+        "intID": "MaxCapBagM12",
+        "recipe": [
+            {"item": "SpiD2", "quantity": 3000000},
+            {"item": "SpiD1", "quantity": 1000000},
+            {"item": "SpiB2b", "quantity": 5000}
+        ],
+        "levelReqToCraft": 78,
+        "expGiven": 1000000,
+        "no": 46,
+        "tab": 6,
+        "sellPrice": 607500000000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "SpiD2", "quantity": 3000000},
+                {"indent": 0, "item": "SpiD1", "quantity": 1000000},
+                {"indent": 0, "item": "SpiB2b", "quantity": 5000}
+            ],
+            "detRecipeTotals": [
+                {"item": "SpiD2", "quantity": 3000000},
+                {"item": "SpiD1", "quantity": 1000000},
+                {"item": "SpiB2b", "quantity": 5000}
             ]
         }
     },

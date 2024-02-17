@@ -141,7 +141,7 @@ class SpecificItemRepo(Repository[BaseItem]):
 			return True
 		if data.displayName in {"Filler", "FILLER", "Blank"}:
 			return True
-		if data.Type in ["Dungeon Evaporate", "Spice"]:
+		if data.Type in ["Dungeon Evaporate", "Spice", "Sail Treasure"]:
 			return True
 		return False
 

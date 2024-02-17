@@ -1,11 +1,6 @@
 {
     "new": {},
     "changes": {
-        "Smolderin' Plateau": {
-            "bonus": ["{% more Dungeon Credits", "{% Multikill Per Tier"],
-            "scaling": [5, 6],
-            "image": ["CardSet7.png", "CardSet9.png"]
-        },
         "Dungeons": {
             "bonus": ["{% Dmg, Drop, and EXP", "{% more Dungeon Credits"],
             "scaling": [6, 5],
@@ -16,6 +11,11 @@
             "scaling": [7, 6],
             "image": ["CardSet25.png", "CardSet26.png"]
         },
-        "Event": {"scaling": [5, 7]}
+        "Event": {"scaling": [5, 7]},
+        "Spirited Valley": {
+            "bonus": ["{% more Dungeon Credits", "{% Multikill Per Tier"],
+            "scaling": [5, 6],
+            "image": ["CardSet7.png", "CardSet9.png"]
+        }
     }
 }

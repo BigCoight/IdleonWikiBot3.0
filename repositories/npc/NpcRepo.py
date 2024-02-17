@@ -11,7 +11,7 @@ from definitions.questdef.Npc import Npc
 from definitions.questdef.Quest import ExpReward, CoinReward, RecipeReward, TalentReward
 from helpers.CodeReader import IdleonReader
 from helpers.Constants import Constants
-from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, isRecipe, isTalent
+from helpers.HelperFunctions import formatStr, replaceUnderscores, strToArray, isRecipe, isTalent, ignoreWorld6
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.master.Repository import Repository
@@ -164,5 +164,5 @@ class NpcRepo(Repository[Npc]):
 	@classmethod
 	def _ignore(cls, name: str, data: Npc) -> bool:
 		if name in {"FillerNPC", "Game Message", "Unmade Character", "Omar Da Ogar", "Mecha Pete", "Fillerz"}:
-			return True
+			return True or ignoreWorld6(name)
 		return False

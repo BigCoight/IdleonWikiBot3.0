@@ -2,6 +2,7 @@ import re
 from typing import List, Set
 
 import numpy as np
+from pywikibot import Site, Page
 
 from helpers.Constants import Constants
 
@@ -175,6 +176,12 @@ def replaceUnderscores(val: str) -> str:
 
 def wrap(v: str) -> str:
 	return f"[[{v}]]"
+
+
+def ignoreWorld6(siteName) -> bool:
+	website = Site()
+	wikiPage = Page(website, siteName)
+	return not wikiPage.exists()
 
 
 def strToArray(v: str, repU = False) -> List[str]:

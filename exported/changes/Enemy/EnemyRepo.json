@@ -1,5 +1,46 @@
 {
     "new": {
+        "Boss6A": {
+            "details": {
+                "Name": "Emperor",
+                "RespawnTime": 86400,
+                "MonsterHPTotal": 2e+14,
+                "SpecialType": "a",
+                "ExpGiven": 12000,
+                "ExpType": 0,
+                "Defence": 600,
+                "MoveSPEED": 3,
+                "Damages": [1000, 1],
+                "DefFor0": 1223.26
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 1000000, "chance": 1, "questLink": "N/A"},
+                {"item": "KrukPart", "quantity": 1, "chance": 0.04, "questLink": "N/A"},
+                {"item": "CardsZ18", "quantity": 1, "chance": 0.0008, "questLink": "N/A"},
+                {"item": "EquipmentPendant29", "quantity": 1, "chance": 1e-05, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "Tree13": {
+            "details": {
+                "Name": "Effervescent Eucalyptus",
+                "RespawnTime": 0,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 32000,
+                "ExpType": 3,
+                "Defence": 125000000,
+                "MoveSPEED": 0,
+                "Damages": [0, 1],
+                "DefFor0": 0.22
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "CardsF25", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+                {"item": "DropTable28", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
         "w6a3": {
             "details": {
                 "Name": "River Spirit",
@@ -22,300 +63,9 @@
             ],
             "mapData": {
                 "enemy": "w6a3",
-                "world": "World6",
+                "world": "Spirited Valley",
                 "map": {"intName": "vSpiritA3", "name": "Irrigation Station", "id": 253},
                 "portalRequirements": [100000]
-            }
-        },
-        "Bug13": {
-            "details": {
-                "Name": "Firefly",
-                "RespawnTime": 0,
-                "MonsterHPTotal": 5,
-                "SpecialType": "",
-                "ExpGiven": 20000,
-                "ExpType": 6,
-                "Defence": 150000000,
-                "MoveSPEED": 0,
-                "Damages": [6, 1],
-                "DefFor0": 2.67
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "CardsF38", "quantity": 1, "chance": 1e-06, "questLink": "N/A"},
-                {"item": "DropTable30", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
-            ],
-            "mapData": null
-        },
-        "Boss6B": {
-            "details": {
-                "Name": "Chaotic Emperor",
-                "RespawnTime": 86400,
-                "MonsterHPTotal": 7.5e+16,
-                "SpecialType": "a",
-                "ExpGiven": 12000,
-                "ExpType": 0,
-                "Defence": 600,
-                "MoveSPEED": 3,
-                "Damages": [1000, 1],
-                "DefFor0": 1223.26
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 5000000, "chance": 1, "questLink": "N/A"},
-                {"item": "KrukPart", "quantity": 1, "chance": 0.1, "questLink": "N/A"},
-                {"item": "KrukPart2", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
-                {"item": "EquipmentPendant29", "quantity": 1, "chance": 3.5e-05, "questLink": "N/A"}
-            ],
-            "mapData": null
-        },
-        "w6a2": {
-            "details": {
-                "Name": "Ricecake",
-                "RespawnTime": 63,
-                "MonsterHPTotal": 4500000000,
-                "SpecialType": "",
-                "ExpGiven": 3400000,
-                "ExpType": 0,
-                "Defence": 60000,
-                "MoveSPEED": 4,
-                "Damages": [70000, 1],
-                "DefFor0": 56487.3
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 72000, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SpiA2", "quantity": 1, "chance": 0.15, "questLink": "N/A"},
-                {"item": "SpiA2b", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
-                {"item": "SmithingRecipes6", "quantity": 5, "chance": 6e-07, "questLink": "N/A"},
-                {"item": "CardsI2", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
-                {"item": "DropTable29", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
-            ],
-            "mapData": {
-                "enemy": "w6a2",
-                "world": "World6",
-                "map": {"intName": "vSpiritA2", "name": "Picnic Bridgeways", "id": 252},
-                "portalRequirements": [50000]
-            }
-        },
-        "Boss6A": {
-            "details": {
-                "Name": "Emperor",
-                "RespawnTime": 86400,
-                "MonsterHPTotal": 2e+14,
-                "SpecialType": "a",
-                "ExpGiven": 12000,
-                "ExpType": 0,
-                "Defence": 600,
-                "MoveSPEED": 3,
-                "Damages": [1000, 1],
-                "DefFor0": 1223.26
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 1000000, "chance": 1, "questLink": "N/A"},
-                {"item": "KrukPart", "quantity": 1, "chance": 0.04, "questLink": "N/A"},
-                {"item": "CardsZ18", "quantity": 1, "chance": 0.0008, "questLink": "N/A"},
-                {"item": "EquipmentPendant29", "quantity": 1, "chance": 1e-05, "questLink": "N/A"}
-            ],
-            "mapData": null
-        },
-        "w6b4": {
-            "details": {
-                "Name": "Leek Spirit",
-                "RespawnTime": 51,
-                "MonsterHPTotal": 6.1e+11,
-                "SpecialType": "",
-                "ExpGiven": 36000000,
-                "ExpType": 0,
-                "Defence": 500000,
-                "MoveSPEED": 3,
-                "Damages": [180000, 1],
-                "DefFor0": 123970
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 175000, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SpiB4", "quantity": 1, "chance": 0.13, "questLink": "N/A"},
-                {"item": "CardsI9", "quantity": 1, "chance": 2e-06, "questLink": "N/A"},
-                {"item": "SmithingRecipes6", "quantity": 26, "chance": 2.5e-07, "questLink": "N/A"},
-                {"item": "DropTable30", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
-            ],
-            "mapData": {
-                "enemy": "w6b4",
-                "world": "World6",
-                "map": {"intName": "vSpiritB4", "name": "Above the Clouds", "id": 259},
-                "portalRequirements": [12000000]
-            }
-        },
-        "w6c1": {
-            "details": {
-                "Name": "Ceramic Spirit",
-                "RespawnTime": 50,
-                "MonsterHPTotal": 1.25e+12,
-                "SpecialType": "",
-                "ExpGiven": 54000000,
-                "ExpType": 0,
-                "Defence": 650000,
-                "MoveSPEED": 3,
-                "Damages": [250000, 1],
-                "DefFor0": 162569
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 200000, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SpiC1", "quantity": 1, "chance": 0.12, "questLink": "N/A"},
-                {"item": "CardsI10", "quantity": 1, "chance": 1e-06, "questLink": "N/A"},
-                {"item": "SmithingRecipes6", "quantity": 25, "chance": 2.5e-07, "questLink": "N/A"},
-                {"item": "DropTable31", "quantity": 1, "chance": 0.0033, "questLink": "N/A"}
-            ],
-            "mapData": {
-                "enemy": "w6c1",
-                "world": "World6",
-                "map": {"intName": "vSpiritC1", "name": "Sleepy Skyline", "id": 260},
-                "portalRequirements": [25000000]
-            }
-        },
-        "BugNest11": {
-            "details": {
-                "Name": "Equinox Nest",
-                "RespawnTime": 8640000,
-                "MonsterHPTotal": 999999999,
-                "SpecialType": "",
-                "ExpGiven": 2,
-                "ExpType": 6,
-                "Defence": 1,
-                "MoveSPEED": 0,
-                "Damages": [6, 1],
-                "DefFor0": 2.67
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
-            ],
-            "mapData": null
-        },
-        "Tree12": {
-            "details": {
-                "Name": "Bamboo",
-                "RespawnTime": 0,
-                "MonsterHPTotal": 5,
-                "SpecialType": "",
-                "ExpGiven": 15000,
-                "ExpType": 3,
-                "Defence": 25000000,
-                "MoveSPEED": 0,
-                "Damages": [0, 1],
-                "DefFor0": 0.22
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "CardsF25", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
-                {"item": "DropTable28", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
-            ],
-            "mapData": null
-        },
-        "w6a5": {
-            "details": {
-                "Name": "Woodlin Spirit",
-                "RespawnTime": 57,
-                "MonsterHPTotal": 42000000000,
-                "SpecialType": "",
-                "ExpGiven": 9200000,
-                "ExpType": 0,
-                "Defence": 130000,
-                "MoveSPEED": 3,
-                "Damages": [110000, 1],
-                "DefFor0": 82398
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 98500, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SpiA5", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
-                {"item": "InvStorageD", "quantity": 1, "chance": 5e-07, "questLink": "N/A"},
-                {"item": "CardsI5", "quantity": 1, "chance": 8e-06, "questLink": "N/A"},
-                {"item": "DropTable29", "quantity": 1, "chance": 0.0037, "questLink": "N/A"}
-            ],
-            "mapData": {
-                "enemy": "w6a5",
-                "world": "World6",
-                "map": {"intName": "vSpiritA5", "name": "Edge of the Valley", "id": 255},
-                "portalRequirements": [400000]
-            }
-        },
-        "w6b3": {
-            "details": {
-                "Name": "Mama Troll",
-                "RespawnTime": 53,
-                "MonsterHPTotal": 3.7e+11,
-                "SpecialType": "",
-                "ExpGiven": 27500000,
-                "ExpType": 0,
-                "Defence": 400000,
-                "MoveSPEED": 5,
-                "Damages": [160000, 1],
-                "DefFor0": 112459
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 160000, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SpiB3", "quantity": 1, "chance": 0.13, "questLink": "N/A"},
-                {"item": "CardsI8", "quantity": 1, "chance": 3e-06, "questLink": "N/A"},
-                {"item": "SmithingRecipes6", "quantity": 27, "chance": 3.4e-07, "questLink": "N/A"},
-                {"item": "DropTable30", "quantity": 1, "chance": 0.0029, "questLink": "N/A"}
-            ],
-            "mapData": {
-                "enemy": "w6b3",
-                "world": "World6",
-                "map": {"intName": "vSpiritB3", "name": "Troll Broodnest", "id": 258},
-                "portalRequirements": [8000000]
-            }
-        },
-        "w6a1": {
-            "details": {
-                "Name": "Sprout Spirit",
-                "RespawnTime": 65,
-                "MonsterHPTotal": 3000000000,
-                "SpecialType": "",
-                "ExpGiven": 2400000,
-                "ExpType": 0,
-                "Defence": 50000,
-                "MoveSPEED": 5,
-                "Damages": [60000, 1],
-                "DefFor0": 49629.3
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 65000, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SpiA1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
-                {"item": "CardsI1", "quantity": 1, "chance": 2.5e-05, "questLink": "N/A"},
-                {"item": "SmithingRecipes6", "quantity": 4, "chance": 2e-08, "questLink": "N/A"},
-                {"item": "DropTable29", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
-            ],
-            "mapData": {
-                "enemy": "w6a1",
-                "world": "World6",
-                "map": {"intName": "vSpiritA1", "name": "Gooble Goop Creek", "id": 251},
-                "portalRequirements": [30000]
-            }
-        },
-        "w6a4": {
-            "details": {
-                "Name": "Baby Troll",
-                "RespawnTime": 58,
-                "MonsterHPTotal": 2e+10,
-                "SpecialType": "",
-                "ExpGiven": 7000000,
-                "ExpType": 0,
-                "Defence": 90000,
-                "MoveSPEED": 6,
-                "Damages": [100000, 1],
-                "DefFor0": 76109.7
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 89000, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SpiA4", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
-                {"item": "CardsI4", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
-                {"item": "SmithingRecipes6", "quantity": 7, "chance": 4e-07, "questLink": "N/A"},
-                {"item": "DropTable29", "quantity": 1, "chance": 0.0034, "questLink": "N/A"}
-            ],
-            "mapData": {
-                "enemy": "w6a4",
-                "world": "World6",
-                "map": {"intName": "vSpiritA4", "name": "Troll Playground", "id": 254},
-                "portalRequirements": [250000]
             }
         },
         "w6c2": {
@@ -343,35 +93,145 @@
             ],
             "mapData": {
                 "enemy": "w6c2",
-                "world": "World6",
+                "world": "Spirited Valley",
                 "map": {"intName": "vSpiritC2", "name": "Dozey Dogpark", "id": 261},
                 "portalRequirements": [70000000]
             }
         },
-        "w6d1": {
+        "w6d2": {
             "details": {
-                "Name": "Royal Egg",
-                "RespawnTime": 48,
-                "MonsterHPTotal": 3e+12,
+                "Name": "Minichief Spirit",
+                "RespawnTime": 47,
+                "MonsterHPTotal": 5.5e+12,
                 "SpecialType": "",
-                "ExpGiven": 120000000,
+                "ExpGiven": 180000000,
                 "ExpType": 0,
-                "Defence": 1000000,
-                "MoveSPEED": 3,
-                "Damages": [400000, 1],
-                "DefFor0": 239194
+                "Defence": 1500000,
+                "MoveSPEED": 5,
+                "Damages": [500000, 1],
+                "DefFor0": 287155
             },
             "drops": [
-                {"item": "COIN", "quantity": 350000, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SpiD1", "quantity": 1, "chance": 0.11, "questLink": "N/A"},
-                {"item": "CardsI12", "quantity": 1, "chance": 6e-07, "questLink": "N/A"},
-                {"item": "DropTable32", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
+                {"item": "COIN", "quantity": 400000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SpiD2", "quantity": 1, "chance": 0.11, "questLink": "N/A"},
+                {"item": "CardsI13", "quantity": 1, "chance": 5e-07, "questLink": "N/A"},
+                {"item": "SmithingRecipes6", "quantity": 24, "chance": 1e-07, "questLink": "N/A"},
+                {"item": "DropTable32", "quantity": 1, "chance": 0.0035, "questLink": "N/A"}
             ],
             "mapData": {
-                "enemy": "w6d1",
-                "world": "World6",
-                "map": {"intName": "vSpiritD1", "name": "Yolkrock Basin", "id": 262},
-                "portalRequirements": [100000000]
+                "enemy": "w6d2",
+                "world": "Spirited Valley",
+                "map": {"intName": "vSpiritD2", "name": "Chieftain Stairway", "id": 263},
+                "portalRequirements": [150000000]
+            }
+        },
+        "w6a2": {
+            "details": {
+                "Name": "Ricecake",
+                "RespawnTime": 63,
+                "MonsterHPTotal": 4500000000,
+                "SpecialType": "",
+                "ExpGiven": 3400000,
+                "ExpType": 0,
+                "Defence": 60000,
+                "MoveSPEED": 4,
+                "Damages": [70000, 1],
+                "DefFor0": 56487.3
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 72000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SpiA2", "quantity": 1, "chance": 0.15, "questLink": "N/A"},
+                {"item": "SpiA2b", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes6", "quantity": 5, "chance": 6e-07, "questLink": "N/A"},
+                {"item": "CardsI2", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
+                {"item": "DropTable29", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w6a2",
+                "world": "Spirited Valley",
+                "map": {"intName": "vSpiritA2", "name": "Picnic Bridgeways", "id": 252},
+                "portalRequirements": [50000]
+            }
+        },
+        "w6a1": {
+            "details": {
+                "Name": "Sprout Spirit",
+                "RespawnTime": 65,
+                "MonsterHPTotal": 3000000000,
+                "SpecialType": "",
+                "ExpGiven": 2400000,
+                "ExpType": 0,
+                "Defence": 50000,
+                "MoveSPEED": 5,
+                "Damages": [60000, 1],
+                "DefFor0": 49629.3
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 65000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SpiA1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
+                {"item": "CardsI1", "quantity": 1, "chance": 2.5e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes6", "quantity": 4, "chance": 2e-08, "questLink": "N/A"},
+                {"item": "DropTable29", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w6a1",
+                "world": "Spirited Valley",
+                "map": {"intName": "vSpiritA1", "name": "Gooble Goop Creek", "id": 251},
+                "portalRequirements": [30000]
+            }
+        },
+        "w6c1": {
+            "details": {
+                "Name": "Ceramic Spirit",
+                "RespawnTime": 50,
+                "MonsterHPTotal": 1.25e+12,
+                "SpecialType": "",
+                "ExpGiven": 54000000,
+                "ExpType": 0,
+                "Defence": 650000,
+                "MoveSPEED": 3,
+                "Damages": [250000, 1],
+                "DefFor0": 162569
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 200000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SpiC1", "quantity": 1, "chance": 0.12, "questLink": "N/A"},
+                {"item": "CardsI10", "quantity": 1, "chance": 1e-06, "questLink": "N/A"},
+                {"item": "SmithingRecipes6", "quantity": 25, "chance": 2.5e-07, "questLink": "N/A"},
+                {"item": "DropTable31", "quantity": 1, "chance": 0.0033, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w6c1",
+                "world": "Spirited Valley",
+                "map": {"intName": "vSpiritC1", "name": "Sleepy Skyline", "id": 260},
+                "portalRequirements": [25000000]
+            }
+        },
+        "w6b4": {
+            "details": {
+                "Name": "Leek Spirit",
+                "RespawnTime": 51,
+                "MonsterHPTotal": 6.1e+11,
+                "SpecialType": "",
+                "ExpGiven": 36000000,
+                "ExpType": 0,
+                "Defence": 500000,
+                "MoveSPEED": 3,
+                "Damages": [180000, 1],
+                "DefFor0": 123970
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 175000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SpiB4", "quantity": 1, "chance": 0.13, "questLink": "N/A"},
+                {"item": "CardsI9", "quantity": 1, "chance": 2e-06, "questLink": "N/A"},
+                {"item": "SmithingRecipes6", "quantity": 26, "chance": 2.5e-07, "questLink": "N/A"},
+                {"item": "DropTable30", "quantity": 1, "chance": 0.0031, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w6b4",
+                "world": "Spirited Valley",
+                "map": {"intName": "vSpiritB4", "name": "Above the Clouds", "id": 259},
+                "portalRequirements": [12000000]
             }
         },
         "Boss6C": {
@@ -418,144 +278,59 @@
             ],
             "mapData": null
         },
-        "BugNest13": {
+        "w6a4": {
             "details": {
-                "Name": "Firefly Nest",
-                "RespawnTime": 8640000,
-                "MonsterHPTotal": 999999999,
+                "Name": "Baby Troll",
+                "RespawnTime": 58,
+                "MonsterHPTotal": 2e+10,
                 "SpecialType": "",
-                "ExpGiven": 2,
-                "ExpType": 6,
-                "Defence": 1,
-                "MoveSPEED": 0,
-                "Damages": [6, 1],
-                "DefFor0": 2.67
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
-            ],
-            "mapData": null
-        },
-        "Bug12": {
-            "details": {
-                "Name": "Ladybug",
-                "RespawnTime": 0,
-                "MonsterHPTotal": 5,
-                "SpecialType": "",
-                "ExpGiven": 7500,
-                "ExpType": 6,
-                "Defence": 25000000,
-                "MoveSPEED": 0,
-                "Damages": [6, 1],
-                "DefFor0": 2.67
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "CardsF37", "quantity": 1, "chance": 5e-06, "questLink": "N/A"},
-                {"item": "DropTable29", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
-            ],
-            "mapData": null
-        },
-        "w6b2": {
-            "details": {
-                "Name": "Lantern Spirit",
-                "RespawnTime": 54,
-                "MonsterHPTotal": 2.5e+11,
-                "SpecialType": "",
-                "ExpGiven": 19000000,
+                "ExpGiven": 7000000,
                 "ExpType": 0,
-                "Defence": 300000,
+                "Defence": 90000,
                 "MoveSPEED": 6,
-                "Damages": [140000, 1],
-                "DefFor0": 100678
+                "Damages": [100000, 1],
+                "DefFor0": 76109.7
             },
             "drops": [
-                {"item": "COIN", "quantity": 145000, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SpiB2", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
-                {"item": "SpiB2b", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
-                {"item": "SmithingRecipes6", "quantity": 28, "chance": 5e-09, "questLink": "N/A"},
-                {"item": "CardsI7", "quantity": 1, "chance": 5e-06, "questLink": "N/A"},
-                {"item": "DropTable30", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
+                {"item": "COIN", "quantity": 89000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SpiA4", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
+                {"item": "CardsI4", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes6", "quantity": 7, "chance": 4e-07, "questLink": "N/A"},
+                {"item": "DropTable29", "quantity": 1, "chance": 0.0034, "questLink": "N/A"}
             ],
             "mapData": {
-                "enemy": "w6b2",
-                "world": "World6",
-                "map": {"intName": "vSpiritB2", "name": "Lightway Path", "id": 257},
-                "portalRequirements": [3200000]
+                "enemy": "w6a4",
+                "world": "Spirited Valley",
+                "map": {"intName": "vSpiritA4", "name": "Troll Playground", "id": 254},
+                "portalRequirements": [250000]
             }
         },
-        "w6d2": {
+        "w6b3": {
             "details": {
-                "Name": "Minichief Spirit",
-                "RespawnTime": 47,
-                "MonsterHPTotal": 5.5e+12,
+                "Name": "Mama Troll",
+                "RespawnTime": 53,
+                "MonsterHPTotal": 3.7e+11,
                 "SpecialType": "",
-                "ExpGiven": 180000000,
+                "ExpGiven": 27500000,
                 "ExpType": 0,
-                "Defence": 1500000,
+                "Defence": 400000,
                 "MoveSPEED": 5,
-                "Damages": [500000, 1],
-                "DefFor0": 287155
+                "Damages": [160000, 1],
+                "DefFor0": 112459
             },
             "drops": [
-                {"item": "COIN", "quantity": 400000, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SpiD2", "quantity": 1, "chance": 0.11, "questLink": "N/A"},
-                {"item": "CardsI13", "quantity": 1, "chance": 5e-07, "questLink": "N/A"},
-                {"item": "SmithingRecipes6", "quantity": 24, "chance": 1e-07, "questLink": "N/A"},
-                {"item": "DropTable32", "quantity": 1, "chance": 0.0035, "questLink": "N/A"}
+                {"item": "COIN", "quantity": 160000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SpiB3", "quantity": 1, "chance": 0.13, "questLink": "N/A"},
+                {"item": "CardsI8", "quantity": 1, "chance": 3e-06, "questLink": "N/A"},
+                {"item": "SmithingRecipes6", "quantity": 27, "chance": 3.4e-07, "questLink": "N/A"},
+                {"item": "DropTable30", "quantity": 1, "chance": 0.0029, "questLink": "N/A"}
             ],
             "mapData": {
-                "enemy": "w6d2",
-                "world": "World6",
-                "map": {"intName": "vSpiritD2", "name": "Chieftain Stairway", "id": 263},
-                "portalRequirements": [150000000]
+                "enemy": "w6b3",
+                "world": "Spirited Valley",
+                "map": {"intName": "vSpiritB3", "name": "Troll Broodnest", "id": 258},
+                "portalRequirements": [8000000]
             }
-        },
-        "w6b1": {
-            "details": {
-                "Name": "Bamboo Spirit",
-                "RespawnTime": 55,
-                "MonsterHPTotal": 1.3e+11,
-                "SpecialType": "",
-                "ExpGiven": 15100000,
-                "ExpType": 0,
-                "Defence": 200000,
-                "MoveSPEED": 5,
-                "Damages": [125000, 1],
-                "DefFor0": 91639.1
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 130000, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SpiB1", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
-                {"item": "CardsI6", "quantity": 1, "chance": 6e-06, "questLink": "N/A"},
-                {"item": "DropTable30", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
-            ],
-            "mapData": {
-                "enemy": "w6b1",
-                "world": "World6",
-                "map": {"intName": "vSpiritB1", "name": "Bamboo Laboredge", "id": 256},
-                "portalRequirements": [1100000]
-            }
-        },
-        "BugNest12": {
-            "details": {
-                "Name": "Ladybug Nest",
-                "RespawnTime": 8640000,
-                "MonsterHPTotal": 999999999,
-                "SpecialType": "",
-                "ExpGiven": 2,
-                "ExpType": 6,
-                "Defence": 1,
-                "MoveSPEED": 0,
-                "Damages": [6, 1],
-                "DefFor0": 2.67
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
-            ],
-            "mapData": null
         },
         "Crystal5": {
             "details": {
@@ -581,6 +356,197 @@
             ],
             "mapData": null
         },
+        "w6b1": {
+            "details": {
+                "Name": "Bamboo Spirit",
+                "RespawnTime": 55,
+                "MonsterHPTotal": 1.3e+11,
+                "SpecialType": "",
+                "ExpGiven": 15100000,
+                "ExpType": 0,
+                "Defence": 200000,
+                "MoveSPEED": 5,
+                "Damages": [125000, 1],
+                "DefFor0": 91639.1
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 130000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SpiB1", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
+                {"item": "CardsI6", "quantity": 1, "chance": 6e-06, "questLink": "N/A"},
+                {"item": "DropTable30", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w6b1",
+                "world": "Spirited Valley",
+                "map": {"intName": "vSpiritB1", "name": "Bamboo Laboredge", "id": 256},
+                "portalRequirements": [1100000]
+            }
+        },
+        "Bug12": {
+            "details": {
+                "Name": "Ladybug",
+                "RespawnTime": 0,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 7500,
+                "ExpType": 6,
+                "Defence": 25000000,
+                "MoveSPEED": 0,
+                "Damages": [6, 1],
+                "DefFor0": 2.67
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "CardsF37", "quantity": 1, "chance": 5e-06, "questLink": "N/A"},
+                {"item": "DropTable29", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "Bug13": {
+            "details": {
+                "Name": "Firefly",
+                "RespawnTime": 0,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 20000,
+                "ExpType": 6,
+                "Defence": 150000000,
+                "MoveSPEED": 0,
+                "Damages": [6, 1],
+                "DefFor0": 2.67
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "CardsF38", "quantity": 1, "chance": 1e-06, "questLink": "N/A"},
+                {"item": "DropTable30", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "Boss6B": {
+            "details": {
+                "Name": "Chaotic Emperor",
+                "RespawnTime": 86400,
+                "MonsterHPTotal": 7.5e+16,
+                "SpecialType": "a",
+                "ExpGiven": 12000,
+                "ExpType": 0,
+                "Defence": 600,
+                "MoveSPEED": 3,
+                "Damages": [1000, 1],
+                "DefFor0": 1223.26
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 5000000, "chance": 1, "questLink": "N/A"},
+                {"item": "KrukPart", "quantity": 1, "chance": 0.1, "questLink": "N/A"},
+                {"item": "KrukPart2", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
+                {"item": "EquipmentPendant29", "quantity": 1, "chance": 3.5e-05, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "BugNest11": {
+            "details": {
+                "Name": "Equinox Nest",
+                "RespawnTime": 8640000,
+                "MonsterHPTotal": 999999999,
+                "SpecialType": "",
+                "ExpGiven": 2,
+                "ExpType": 6,
+                "Defence": 1,
+                "MoveSPEED": 0,
+                "Damages": [6, 1],
+                "DefFor0": 2.67
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "w6a5": {
+            "details": {
+                "Name": "Woodlin Spirit",
+                "RespawnTime": 57,
+                "MonsterHPTotal": 42000000000,
+                "SpecialType": "",
+                "ExpGiven": 9200000,
+                "ExpType": 0,
+                "Defence": 130000,
+                "MoveSPEED": 3,
+                "Damages": [110000, 1],
+                "DefFor0": 82398
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 98500, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SpiA5", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
+                {"item": "InvStorageD", "quantity": 1, "chance": 5e-07, "questLink": "N/A"},
+                {"item": "CardsI5", "quantity": 1, "chance": 8e-06, "questLink": "N/A"},
+                {"item": "DropTable29", "quantity": 1, "chance": 0.0037, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w6a5",
+                "world": "Spirited Valley",
+                "map": {"intName": "vSpiritA5", "name": "Edge of the Valley", "id": 255},
+                "portalRequirements": [400000]
+            }
+        },
+        "BugNest12": {
+            "details": {
+                "Name": "Ladybug Nest",
+                "RespawnTime": 8640000,
+                "MonsterHPTotal": 999999999,
+                "SpecialType": "",
+                "ExpGiven": 2,
+                "ExpType": 6,
+                "Defence": 1,
+                "MoveSPEED": 0,
+                "Damages": [6, 1],
+                "DefFor0": 2.67
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "Tree12": {
+            "details": {
+                "Name": "Bamboo",
+                "RespawnTime": 0,
+                "MonsterHPTotal": 5,
+                "SpecialType": "",
+                "ExpGiven": 15000,
+                "ExpType": 3,
+                "Defence": 25000000,
+                "MoveSPEED": 0,
+                "Damages": [0, 1],
+                "DefFor0": 0.22
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "CardsF25", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+                {"item": "DropTable28", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
+        "BugNest13": {
+            "details": {
+                "Name": "Firefly Nest",
+                "RespawnTime": 8640000,
+                "MonsterHPTotal": 999999999,
+                "SpecialType": "",
+                "ExpGiven": 2,
+                "ExpType": 6,
+                "Defence": 1,
+                "MoveSPEED": 0,
+                "Damages": [6, 1],
+                "DefFor0": 2.67
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+                {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
+            ],
+            "mapData": null
+        },
         "w6d3": {
             "details": {
                 "Name": "Samurai Guardian",
@@ -603,38 +569,105 @@
             ],
             "mapData": {
                 "enemy": "w6d3",
-                "world": "World6",
+                "world": "Spirited Valley",
                 "map": {"intName": "vSpiritD3", "name": "Emperor's Castle Doorstep", "id": 264},
                 "portalRequirements": [100]
             }
         },
-        "Tree13": {
+        "w6d1": {
             "details": {
-                "Name": "Effervescent Eucalyptus",
-                "RespawnTime": 0,
-                "MonsterHPTotal": 5,
+                "Name": "Royal Egg",
+                "RespawnTime": 48,
+                "MonsterHPTotal": 3e+12,
                 "SpecialType": "",
-                "ExpGiven": 32000,
-                "ExpType": 3,
-                "Defence": 125000000,
-                "MoveSPEED": 0,
-                "Damages": [0, 1],
-                "DefFor0": 0.22
+                "ExpGiven": 120000000,
+                "ExpType": 0,
+                "Defence": 1000000,
+                "MoveSPEED": 3,
+                "Damages": [400000, 1],
+                "DefFor0": 239194
             },
             "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "CardsF25", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
-                {"item": "DropTable28", "quantity": 1, "chance": 0.0089, "questLink": "N/A"}
+                {"item": "COIN", "quantity": 350000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SpiD1", "quantity": 1, "chance": 0.11, "questLink": "N/A"},
+                {"item": "CardsI12", "quantity": 1, "chance": 6e-07, "questLink": "N/A"},
+                {"item": "DropTable32", "quantity": 1, "chance": 0.0028, "questLink": "N/A"}
             ],
-            "mapData": null
+            "mapData": {
+                "enemy": "w6d1",
+                "world": "Spirited Valley",
+                "map": {"intName": "vSpiritD1", "name": "Yolkrock Basin", "id": 262},
+                "portalRequirements": [100000000]
+            }
+        },
+        "w6b2": {
+            "details": {
+                "Name": "Lantern Spirit",
+                "RespawnTime": 54,
+                "MonsterHPTotal": 2.5e+11,
+                "SpecialType": "",
+                "ExpGiven": 19000000,
+                "ExpType": 0,
+                "Defence": 300000,
+                "MoveSPEED": 6,
+                "Damages": [140000, 1],
+                "DefFor0": 100678
+            },
+            "drops": [
+                {"item": "COIN", "quantity": 145000, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SpiB2", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
+                {"item": "SpiB2b", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
+                {"item": "SmithingRecipes6", "quantity": 28, "chance": 5e-09, "questLink": "N/A"},
+                {"item": "CardsI7", "quantity": 1, "chance": 5e-06, "questLink": "N/A"},
+                {"item": "DropTable30", "quantity": 1, "chance": 0.0025, "questLink": "N/A"}
+            ],
+            "mapData": {
+                "enemy": "w6b2",
+                "world": "Spirited Valley",
+                "map": {"intName": "vSpiritB2", "name": "Lightway Path", "id": 257},
+                "portalRequirements": [3200000]
+            }
         }
     },
     "changes": {
+        "Boss5B": {"details": {"Name": ["Chaotic Kattlecruk", "Chaotic Kattlekruk"]}},
+        "w5b6": {"mapData": {"portalRequirements": {"0": [6000000, 1000000]}}},
+        "w5b5": {"mapData": {"portalRequirements": {"0": [3000000, 600000]}}},
+        "w5a1": {"mapData": {"portalRequirements": {"0": [25000, 15000]}}},
+        "w5c1": {"mapData": {"portalRequirements": {"0": [10000000, 3000000]}}},
+        "w5b4": {"mapData": {"portalRequirements": {"0": [2000000, 450000]}}},
+        "w5b1": {"mapData": {"portalRequirements": {"0": [300000, 100000]}}},
+        "Marble": {
+            "drops": {
+                "2": [
+                    {"item": "DropTable4", "quantity": 2, "chance": 0.013, "questLink": "N/A"},
+                    {"item": "DropTable4", "quantity": 2, "chance": 0.014, "questLink": "N/A"}
+                ]
+            }
+        },
+        "w5a4": {"mapData": {"portalRequirements": {"0": [75000, 50000]}}},
+        "Tree11": {"details": {"ExpGiven": [6000, 8500], "Defence": [1500000, 4200000]}},
+        "Crystal4": {
+            "drops": {
+                "1": [
+                    {"item": "CardsH14", "quantity": 1, "chance": 0.008, "questLink": "N/A"},
+                    {"item": "CardsH14", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
+                ]
+            }
+        },
+        "Boss5A": {"details": {"Name": ["Kattlecruk", "Kattlekruk"]}},
+        "w5a3": {"mapData": {"portalRequirements": {"0": [50000, 40000]}}},
+        "w5a2": {"mapData": {"portalRequirements": {"0": [30000, 25000]}}},
+        "Boss5C": {"details": {"Name": ["Sacrilegious Kattlecruk", "Sacrilegious Kattlekruk"]}},
+        "w5b3": {"mapData": {"portalRequirements": {"0": [1000000, 300000]}}},
+        "Bug11": {"details": {"Defence": [1100000, 6000000]}},
+        "w5a5": {"mapData": {"portalRequirements": {"0": [125000, 75000]}}},
+        "w5b2": {"mapData": {"portalRequirements": {"0": [500000, 200000]}}},
         "Godshard": {
             "details": {"ExpGiven": [1250, 1600], "Defence": [20000000, 40000000]},
             "drops": {
-                "2": [" ", {"item": "DropTable4", "quantity": 2, "chance": 0.015, "questLink": "N/A"}],
-                "1": [" ", {"item": "CardsF39", "quantity": 1, "chance": 2e-06, "questLink": "N/A"}]
+                "1": [" ", {"item": "CardsF39", "quantity": 1, "chance": 2e-06, "questLink": "N/A"}],
+                "2": [" ", {"item": "DropTable4", "quantity": 2, "chance": 0.015, "questLink": "N/A"}]
             },
             "mapData": [
                 null,
@@ -645,39 +678,6 @@
                     "portalRequirements": [0]
                 }
             ]
-        },
-        "w5a2": {"mapData": {"portalRequirements": {"0": [30000, 25000]}}},
-        "w5b2": {"mapData": {"portalRequirements": {"0": [500000, 200000]}}},
-        "w5b1": {"mapData": {"portalRequirements": {"0": [300000, 100000]}}},
-        "Bug11": {"details": {"Defence": [1100000, 6000000]}},
-        "Boss5B": {"details": {"Name": ["Chaotic Kattlecruk", "Chaotic Kattlekruk"]}},
-        "w5b5": {"mapData": {"portalRequirements": {"0": [3000000, 600000]}}},
-        "Boss5A": {"details": {"Name": ["Kattlecruk", "Kattlekruk"]}},
-        "w5a5": {"mapData": {"portalRequirements": {"0": [125000, 75000]}}},
-        "w5a1": {"mapData": {"portalRequirements": {"0": [25000, 15000]}}},
-        "w5b3": {"mapData": {"portalRequirements": {"0": [1000000, 300000]}}},
-        "Boss5C": {"details": {"Name": ["Sacrilegious Kattlecruk", "Sacrilegious Kattlekruk"]}},
-        "Crystal4": {
-            "drops": {
-                "1": [
-                    {"item": "CardsH14", "quantity": 1, "chance": 0.008, "questLink": "N/A"},
-                    {"item": "CardsH14", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
-                ]
-            }
-        },
-        "w5c1": {"mapData": {"portalRequirements": {"0": [10000000, 3000000]}}},
-        "Marble": {
-            "drops": {
-                "2": [
-                    {"item": "DropTable4", "quantity": 2, "chance": 0.013, "questLink": "N/A"},
-                    {"item": "DropTable4", "quantity": 2, "chance": 0.014, "questLink": "N/A"}
-                ]
-            }
-        },
-        "w5a3": {"mapData": {"portalRequirements": {"0": [50000, 40000]}}},
-        "w5b4": {"mapData": {"portalRequirements": {"0": [2000000, 450000]}}},
-        "w5b6": {"mapData": {"portalRequirements": {"0": [6000000, 1000000]}}},
-        "Tree11": {"details": {"ExpGiven": [6000, 8500], "Defence": [1500000, 4200000]}},
-        "w5a4": {"mapData": {"portalRequirements": {"0": [75000, 50000]}}}
+        }
     }
 }

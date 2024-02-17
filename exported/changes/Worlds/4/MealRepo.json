@@ -1,13 +1,5 @@
 {
     "new": {
-        "Plumpcakes": {
-            "name": "Plumpcakes",
-            "cookingReq": 6000000000000000,
-            "bonusQty": 6,
-            "bonusText": "+{% Total Damage",
-            "description": "Ohhh, they're called 'plump'cakes because they're dummy thicc can I get an amen!",
-            "bonusKey": "TotDmg"
-        },
         "Large Pohayoh": {
             "name": "Large Pohayoh",
             "cookingReq": 6000000000000,
@@ -16,45 +8,13 @@
             "description": "Aye lad if thah ain't tha larjes' fookin' poh'ay'oh eyev evah seen wih me own eyes!",
             "bonusKey": "zSummonExp"
         },
-        "Frazzleberry": {
-            "name": "Frazzleberry",
-            "cookingReq": 1000000000000,
-            "bonusQty": 2,
-            "bonusText": "+{% Sneaking EXP",
-            "description": "Big. Blue. Beautiful. Boing. Boat. Broom. Balls. Backgammon. Bort.",
-            "bonusKey": "zSneakExp"
-        },
-        "Burned Marshmallow": {
-            "name": "Burned Marshmallow",
-            "cookingReq": 90000000000000,
-            "bonusQty": 10,
-            "bonusText": "+{% Meal Cooking Speed",
-            "description": "IMPORTANT, this bonus DOUBLES at Farming Lv 50. Triples at Farming Lv 100, and so on!",
-            "bonusKey": "zMealFarm"
-        },
-        "Seasoned Marrow": {
-            "name": "Seasoned Marrow",
-            "cookingReq": 350000000000,
-            "bonusQty": 3,
-            "bonusText": "+{% Farming EXP",
-            "description": "You ate all the edible stuff around the bone? Why not try the stuff inside the bone!",
-            "bonusKey": "zFarmExp"
-        },
-        "Yumi Peachring": {
-            "name": "Yumi Peachring",
-            "cookingReq": 800000000000000,
-            "bonusQty": 2,
-            "bonusText": "+{% All Golden Food bonus",
-            "description": "Don't disrespect the ring. All hail the ring.",
-            "bonusKey": "zGoldFood"
-        },
-        "Misterloin Steak": {
-            "name": "Misterloin Steak",
-            "cookingReq": 1700000000000,
+        "Plumpcakes": {
+            "name": "Plumpcakes",
+            "cookingReq": 6000000000000000,
             "bonusQty": 6,
-            "bonusText": "+{% Jade gain from Sneaking",
-            "description": "Make sure to paint on the grill marks to really give it that extra taste!",
-            "bonusKey": "zJade"
+            "bonusText": "+{% Total Damage",
+            "description": "Ohhh, they're called 'plump'cakes because they're dummy thicc can I get an amen!",
+            "bonusKey": "TotDmg"
         },
         "Sticky Bun": {
             "name": "Sticky Bun",
@@ -71,6 +31,46 @@
             "bonusText": "+{% Crop Evolution Chance",
             "description": "It's the greatest meal ever! Bonus DOUBLES at Summoning Lv 50, Triples at 100, etc",
             "bonusKey": "zCropEvoSumm"
+        },
+        "Seasoned Marrow": {
+            "name": "Seasoned Marrow",
+            "cookingReq": 350000000000,
+            "bonusQty": 3,
+            "bonusText": "+{% Farming EXP",
+            "description": "You ate all the edible stuff around the bone? Why not try the stuff inside the bone!",
+            "bonusKey": "zFarmExp"
+        },
+        "Misterloin Steak": {
+            "name": "Misterloin Steak",
+            "cookingReq": 1700000000000,
+            "bonusQty": 6,
+            "bonusText": "+{% Jade gain from Sneaking",
+            "description": "Make sure to paint on the grill marks to really give it that extra taste!",
+            "bonusKey": "zJade"
+        },
+        "Yumi Peachring": {
+            "name": "Yumi Peachring",
+            "cookingReq": 800000000000000,
+            "bonusQty": 2,
+            "bonusText": "+{% All Golden Food bonus",
+            "description": "Don't disrespect the ring. All hail the ring.",
+            "bonusKey": "zGoldFood"
+        },
+        "Burned Marshmallow": {
+            "name": "Burned Marshmallow",
+            "cookingReq": 90000000000000,
+            "bonusQty": 10,
+            "bonusText": "+{% Meal Cooking Speed",
+            "description": "IMPORTANT, this bonus DOUBLES at Farming Lv 50. Triples at Farming Lv 100, and so on!",
+            "bonusKey": "zMealFarm"
+        },
+        "Frazzleberry": {
+            "name": "Frazzleberry",
+            "cookingReq": 1000000000000,
+            "bonusQty": 2,
+            "bonusText": "+{% Sneaking EXP",
+            "description": "Big. Blue. Beautiful. Boing. Boat. Broom. Balls. Backgammon. Bort.",
+            "bonusKey": "zSneakExp"
         },
         "Head Chef Geustloaf": {
             "name": "Head Chef Geustloaf",
@@ -90,6 +90,12 @@
         }
     },
     "changes": {
+        "Turkey a la Thank": {
+            "description": [
+                "Do I smell gratitude? Oh, no that's colonialization...",
+                "Do I smell gratitude? Oh, no, that's colonialization..."
+            ]
+        },
         "Sausy Sausage": {
             "description": [
                 "Plump innit! Would go great with some mommy milk!",
@@ -100,12 +106,6 @@
             "description": [
                 "The white part is called Curd. Welp, time to recategorize this as an educational game!",
                 "The white part is called Curd! Hmm, time to recategorize this as an educational game!"
-            ]
-        },
-        "Turkey a la Thank": {
-            "description": [
-                "Do I smell gratitude? Oh, no that's colonialization...",
-                "Do I smell gratitude? Oh, no, that's colonialization..."
             ]
         }
     }

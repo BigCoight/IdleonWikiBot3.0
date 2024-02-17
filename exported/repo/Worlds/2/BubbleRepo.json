@@ -256,7 +256,7 @@
         "x2": 60,
         "func": "decay",
         "description": "The effect STR has on Damage is increased by +{%",
-        "requirements": [{"item": "W6item1", "quantity": 10000}, {"liquidNo": "3", "quantity": 5}],
+        "requirements": [{"item": "W6item1", "quantity": 100}, {"liquidNo": "3", "quantity": 5}],
         "bonusKey": "W6"
     },
     "Endgame Eff I": {
@@ -276,7 +276,7 @@
         "x2": 60,
         "func": "decay",
         "description": "+{% STR for every 500 Tome Completion Points above 1000. NOTE: The tome is coming in an upcoming weekly update!",
-        "requirements": [{"item": "W6item8", "quantity": 100}, {"liquidNo": "4", "quantity": 6}],
+        "requirements": [{"item": "W6item8", "quantity": 500}, {"liquidNo": "4", "quantity": 6}],
         "bonusKey": "W8"
     },
     "Essence Boost": {
@@ -286,7 +286,7 @@
         "x2": 60,
         "func": "decay",
         "description": "+{% Yellow Essence Gain. This bonus doesn't increase based on anything!",
-        "requirements": [{"item": "Bug12", "quantity": 50}, {"liquidNo": "3", "quantity": 5}],
+        "requirements": [{"item": "Bug12", "quantity": 1500}, {"liquidNo": "3", "quantity": 5}],
         "bonusKey": "Y7"
     },
     "Crop Chapter": {
@@ -296,7 +296,7 @@
         "x2": 50,
         "func": "decay",
         "description": "+{% Crop Evolution chance for every 500 Tome Completion Points above 1000.",
-        "requirements": [{"item": "W6item10", "quantity": 150}, {"liquidNo": "4", "quantity": 6}],
+        "requirements": [{"item": "W6item10", "quantity": 1500}, {"liquidNo": "4", "quantity": 6}],
         "bonusKey": "W10AllCharz"
     },
     "Swift Steppin": {
@@ -556,7 +556,7 @@
         "x2": 60,
         "func": "decay",
         "description": "The effect AGI has on Damage is increased by +{%",
-        "requirements": [{"item": "W6item0", "quantity": 10000}, {"liquidNo": "3", "quantity": 5}],
+        "requirements": [{"item": "W6item0", "quantity": 25000}, {"liquidNo": "3", "quantity": 5}],
         "bonusKey": "A6"
     },
     "Endgame Eff Ii": {
@@ -566,7 +566,7 @@
         "x2": 60,
         "func": "decay",
         "description": "+{ Catching and Trapping Power. This bonus increases based on every 10 Class LVs you are above 500.",
-        "requirements": [{"item": "W6item3", "quantity": 100}, {"liquidNo": "4", "quantity": 6}],
+        "requirements": [{"item": "W6item3", "quantity": 150}, {"liquidNo": "4", "quantity": 6}],
         "bonusKey": "A8"
     },
     "Tome Agility": {
@@ -576,7 +576,7 @@
         "x2": 60,
         "func": "decay",
         "description": "+{% AGI for every 500 Tome Completion Points above 1000. NOTE: The tome is coming in an upcoming weekly update!",
-        "requirements": [{"item": "Bug13", "quantity": 250}, {"liquidNo": "4", "quantity": 6}],
+        "requirements": [{"item": "Bug13", "quantity": 750}, {"liquidNo": "4", "quantity": 6}],
         "bonusKey": "A9"
     },
     "Stealth Chapter": {
@@ -586,7 +586,7 @@
         "x2": 50,
         "func": "decay",
         "description": "+{% Stealth (the stat that lowers dedection rate in Sneaking) for every 500 Tome Completion Points above 1000.",
-        "requirements": [{"item": "W6item5", "quantity": 150}, {"liquidNo": "4", "quantity": 6}],
+        "requirements": [{"item": "W6item5", "quantity": 250}, {"liquidNo": "4", "quantity": 6}],
         "bonusKey": "A10AllCharz"
     },
     "Stable Jenius": {
@@ -846,7 +846,7 @@
         "x2": 60,
         "func": "decay",
         "description": "The effect WIS has on Damage is increased by +{%",
-        "requirements": [{"item": "W6item6", "quantity": 10000}, {"liquidNo": "3", "quantity": 5}],
+        "requirements": [{"item": "W6item6", "quantity": 500}, {"liquidNo": "3", "quantity": 5}],
         "bonusKey": "M6"
     },
     "Endgame Eff Iii": {
@@ -856,7 +856,7 @@
         "x2": 60,
         "func": "decay",
         "description": "+{ Choppin and Worship Power. This bonus increases based on every 10 Class LVs you are above 500.",
-        "requirements": [{"item": "W6item7", "quantity": 250}, {"liquidNo": "3", "quantity": 5}],
+        "requirements": [{"item": "W6item7", "quantity": 950}, {"liquidNo": "3", "quantity": 5}],
         "bonusKey": "M7"
     },
     "Tome Wisdom": {
@@ -866,7 +866,7 @@
         "x2": 60,
         "func": "decay",
         "description": "+{% WIS for every 500 Tome Completion Points above 1000. NOTE: The tome is coming in an upcoming weekly update!",
-        "requirements": [{"item": "W6item4", "quantity": 200}, {"liquidNo": "4", "quantity": 6}],
+        "requirements": [{"item": "W6item4", "quantity": 150}, {"liquidNo": "4", "quantity": 6}],
         "bonusKey": "M9"
     },
     "Essence Chapter": {
@@ -876,7 +876,7 @@
         "x2": 50,
         "func": "decay",
         "description": "+{% All Essence Gain for every 500 Tome Completion Points above 1000.",
-        "requirements": [{"item": "W6item0", "quantity": 200}, {"liquidNo": "4", "quantity": 6}],
+        "requirements": [{"item": "W6item0", "quantity": 250000}, {"liquidNo": "4", "quantity": 6}],
         "bonusKey": "M10AllCharz"
     },
     "Lotto Skills": {
@@ -1136,7 +1136,7 @@
         "x2": 70,
         "func": "decay",
         "description": "+{% Crop Evolution chance for EVERY map you unlock in world 6, across all characters! Total bonus: $",
-        "requirements": [{"item": "SpiA5", "quantity": 5000}, {"liquidNo": "3", "quantity": 5}],
+        "requirements": [{"item": "SpiA5", "quantity": 1000}, {"liquidNo": "3", "quantity": 5}],
         "bonusKey": "Y6"
     },
     "Hinge Buster": {
@@ -1146,7 +1146,7 @@
         "x2": 70,
         "func": "decay",
         "description": "Your ninja twins do +{% more damage to doors! Knock knock, let 'em in, let 'em in!",
-        "requirements": [{"item": "W6item2", "quantity": 200}, {"liquidNo": "4", "quantity": 5}],
+        "requirements": [{"item": "W6item2", "quantity": 120}, {"liquidNo": "4", "quantity": 5}],
         "bonusKey": "Y8"
     },
     "Ninja Looter": {
@@ -1156,7 +1156,7 @@
         "x2": 60,
         "func": "decayMulti",
         "description": "{x Item Find chance for your ninja twin while sneaking!",
-        "requirements": [{"item": "W6item9", "quantity": 200}, {"liquidNo": "4", "quantity": 6}],
+        "requirements": [{"item": "W6item9", "quantity": 1200}, {"liquidNo": "4", "quantity": 6}],
         "bonusKey": "Y9ACTIVE"
     },
     "Lo Cost Mo Jade": {
@@ -1166,7 +1166,7 @@
         "x2": 40,
         "func": "decay",
         "description": "The Jade Cost of 'Currency Conduit' scales {% slower, making it cheaper, allowing you to buy it more and get more JADE!",
-        "requirements": [{"item": "SpiD1", "quantity": 250}, {"liquidNo": "4", "quantity": 6}],
+        "requirements": [{"item": "SpiD1", "quantity": 2500}, {"liquidNo": "4", "quantity": 6}],
         "bonusKey": "Y10"
     },
     "Copper Corona": {

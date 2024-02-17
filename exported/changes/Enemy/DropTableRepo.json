@@ -1,16 +1,17 @@
 {
     "new": {
-        "DropTable30": {
+        "DropTable29": {
             "drops": [
                 {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
-                {"item": "EquipmentStatues27", "quantity": 1, "chance": 0.008, "questLink": "N/A"},
-                {"item": "FoodG11", "quantity": 1, "chance": 0.0063, "questLink": "N/A"},
-                {"item": "StampB49", "quantity": 1, "chance": 0.00017, "questLink": "N/A"},
+                {"item": "FoodG12", "quantity": 1, "chance": 0.004, "questLink": "N/A"},
+                {"item": "StampB52", "quantity": 1, "chance": 0.00013, "questLink": "N/A"},
+                {"item": "EquipmentStatues26", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
+                {"item": "StampB50", "quantity": 1, "chance": 0.00025, "questLink": "N/A"},
                 {"item": "Quest24", "quantity": 8, "chance": 0.5, "questLink": "Mutton4"},
                 {"item": "Quest22", "quantity": 3, "chance": 0.2, "questLink": "Mutton4"},
                 {"item": "SuperDropTable6", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
             ],
-            "subTable": "DropTable30"
+            "subTable": "DropTable29"
         },
         "SuperDropTable6": {
             "drops": [
@@ -31,6 +32,26 @@
             ],
             "subTable": "DropTable32"
         },
+        "DropTable33": {
+            "drops": [
+                {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
+                {"item": "Leaf6", "quantity": 3, "chance": 0.5, "questLink": "N/A"},
+                {"item": "SuperDropTable6", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
+            ],
+            "subTable": "DropTable33"
+        },
+        "DropTable30": {
+            "drops": [
+                {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
+                {"item": "EquipmentStatues27", "quantity": 1, "chance": 0.008, "questLink": "N/A"},
+                {"item": "FoodG11", "quantity": 1, "chance": 0.0063, "questLink": "N/A"},
+                {"item": "StampB49", "quantity": 1, "chance": 0.00017, "questLink": "N/A"},
+                {"item": "Quest24", "quantity": 8, "chance": 0.5, "questLink": "Mutton4"},
+                {"item": "Quest22", "quantity": 3, "chance": 0.2, "questLink": "Mutton4"},
+                {"item": "SuperDropTable6", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
+            ],
+            "subTable": "DropTable30"
+        },
         "DropTable31": {
             "drops": [
                 {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
@@ -41,27 +62,6 @@
                 {"item": "SuperDropTable6", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
             ],
             "subTable": "DropTable31"
-        },
-        "DropTable33": {
-            "drops": [
-                {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
-                {"item": "Leaf6", "quantity": 3, "chance": 0.5, "questLink": "N/A"},
-                {"item": "SuperDropTable6", "quantity": 1, "chance": 0.006, "questLink": "N/A"}
-            ],
-            "subTable": "DropTable33"
-        },
-        "DropTable29": {
-            "drops": [
-                {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
-                {"item": "FoodG12", "quantity": 1, "chance": 0.004, "questLink": "N/A"},
-                {"item": "StampB52", "quantity": 1, "chance": 0.00013, "questLink": "N/A"},
-                {"item": "EquipmentStatues26", "quantity": 1, "chance": 0.01, "questLink": "N/A"},
-                {"item": "StampB50", "quantity": 1, "chance": 0.00025, "questLink": "N/A"},
-                {"item": "Quest24", "quantity": 8, "chance": 0.5, "questLink": "Mutton4"},
-                {"item": "Quest22", "quantity": 3, "chance": 0.2, "questLink": "Mutton4"},
-                {"item": "SuperDropTable6", "quantity": 1, "chance": 0.005, "questLink": "N/A"}
-            ],
-            "subTable": "DropTable29"
         }
     },
     "changes": {}

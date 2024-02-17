@@ -2,6 +2,7 @@ from typing import Set
 
 from definitions.collections.Enemy import Enemy
 from helpers.CodeReader import IdleonReader
+from helpers.HelperFunctions import ignoreWorld6
 from repositories.enemies.BossDetailRepo import BossDetailRepo
 from repositories.enemies.DropTableRepo import DropTableRepo
 from repositories.enemies.EnemyDetailsRepo import EnemyDetailsRepo
@@ -76,4 +77,4 @@ class EnemyRepo(Repository[Enemy]):
 			return True
 		if data.mapData is None or data.navigation is None:
 			return True
-		return EnemyDetailsRepo._ignore(name, data.details)
+		return EnemyDetailsRepo._ignore(name, data.details) or ignoreWorld6(cls.getWikiName(name))

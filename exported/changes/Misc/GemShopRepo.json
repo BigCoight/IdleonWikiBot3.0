@@ -1,17 +1,5 @@
 {
     "new": {
-        "Quest81": {
-            "section": "Blank",
-            "name": "Quest81",
-            "mtxName": "Compost Bag",
-            "itemDisplayName": "Compost Bag",
-            "desc": "Gives you a Compost Bag usable item. Use it in your player inventory to instantly get 6 hours of Farming growth for all your crops, instantly! This item restocks each day.",
-            "cost": 155,
-            "no": 150,
-            "maxPurchases": 9,
-            "qty": 1,
-            "costIncrement": 0
-        },
         "GemP29": {
             "section": "Blank",
             "name": "GemP29",
@@ -23,6 +11,30 @@
             "maxPurchases": 3,
             "qty": 0,
             "costIncrement": 70
+        },
+        "GemP32": {
+            "section": "Blank",
+            "name": "GemP32",
+            "mtxName": "Life Refill",
+            "itemDisplayName": "",
+            "desc": "Refills 1 life in Summoning, so you can give that battle you're stuck on one more try without waiting! This restocks every day.",
+            "cost": 75,
+            "no": 140,
+            "maxPurchases": 12,
+            "qty": 0,
+            "costIncrement": 12
+        },
+        "Quest81": {
+            "section": "Blank",
+            "name": "Quest81",
+            "mtxName": "Compost Bag",
+            "itemDisplayName": "Compost Bag",
+            "desc": "Gives you a Compost Bag usable item. Use it in your player inventory to instantly get 6 hours of Farming growth for all your crops, instantly! This item restocks each day.",
+            "cost": 155,
+            "no": 150,
+            "maxPurchases": 9,
+            "qty": 1,
+            "costIncrement": 0
         },
         "GemP27": {
             "section": "Blank",
@@ -36,6 +48,18 @@
             "qty": 0,
             "costIncrement": 40
         },
+        "GemP31": {
+            "section": "Blank",
+            "name": "GemP31",
+            "mtxName": "Instagrow Generator",
+            "itemDisplayName": "",
+            "desc": "Each purchase gives +2 daily crop instagrows every day you log in, forever. Also, each purchase gives +20% additional chance for +1 crop when fully grown.",
+            "cost": 610,
+            "no": 139,
+            "maxPurchases": 8,
+            "qty": 0,
+            "costIncrement": 50
+        },
         "GemP30": {
             "section": "Blank",
             "name": "GemP30",
@@ -47,18 +71,6 @@
             "maxPurchases": 6,
             "qty": 1,
             "costIncrement": 0
-        },
-        "GemP32": {
-            "section": "Blank",
-            "name": "GemP32",
-            "mtxName": "Life Refill",
-            "itemDisplayName": "",
-            "desc": "Refills 1 life in Summoning, so you can give that battle you're stuck on one more try without waiting! This restocks every day.",
-            "cost": 75,
-            "no": 140,
-            "maxPurchases": 12,
-            "qty": 0,
-            "costIncrement": 12
         },
         "GemP28": {
             "section": "Blank",
@@ -83,18 +95,6 @@
             "maxPurchases": 9,
             "qty": 1,
             "costIncrement": 0
-        },
-        "GemP31": {
-            "section": "Blank",
-            "name": "GemP31",
-            "mtxName": "Instagrow Generator",
-            "itemDisplayName": "",
-            "desc": "Each purchase gives +2 daily crop instagrows every day you log in, forever. Also, each purchase gives +20% additional chance for +1 crop when fully grown.",
-            "cost": 610,
-            "no": 139,
-            "maxPurchases": 8,
-            "qty": 0,
-            "costIncrement": 50
         }
     },
     "changes": {"GemP7": {"maxPurchases": [3, 4]}}

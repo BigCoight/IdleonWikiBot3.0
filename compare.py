@@ -54,10 +54,18 @@ from repositories.misc.world5.GamingUpgradeRepo import GamingUpgradeRepo
 from repositories.misc.world5.GodInfoRepo import GodInfoRepo
 from repositories.misc.world5.IslandInfoRepo import IslandInfoRepo
 from repositories.misc.world5.SlabItemSortRepo import SlabItemSortRepo
+from repositories.misc.world6.JadeUpgradeRepo import JadeUpgradeRepo
+from repositories.misc.world6.MarketInfoRepo import MarketInfoRepo
+from repositories.misc.world6.NinjaItemRepo import NinjaItemRepo
+from repositories.misc.world6.NinjaUpgradeRepo import NinjaUpgradeRepo
+from repositories.misc.world6.SeedInfoRepo import SeedInfoRepo
+from repositories.misc.world6.SummonEnemyRepo import SummonEnemyRepo
+from repositories.misc.world6.SummonUnitRepo import SummonUnitRepo
+from repositories.misc.world6.SummonUpgradeRepo import SummonUpgradeRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("193cb3", True)
+newV = IdleonReader("200", True)
 oldV = IdleonReader("192", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
@@ -128,3 +136,13 @@ WeeklyShopRepo.compareVersions(oldV, newV)
 
 DreamChallengeRepo.compareVersions(oldV, newV)
 DreamUpgradeRepo.compareVersions(oldV, newV)
+
+# World 6
+SummonUpgradeRepo.compareVersions(oldV, newV)
+NinjaUpgradeRepo.compareVersions(oldV, newV)
+JadeUpgradeRepo.compareVersions(oldV, newV)
+MarketInfoRepo.compareVersions(oldV, newV)
+SeedInfoRepo.compareVersions(oldV, newV)
+SummonEnemyRepo.compareVersions(oldV, newV)
+SummonUnitRepo.compareVersions(oldV, newV)
+NinjaItemRepo.compareVersions(oldV, newV)

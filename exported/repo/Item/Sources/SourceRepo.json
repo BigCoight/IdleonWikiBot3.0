@@ -745,6 +745,14 @@
     "FillerMaterial": {
         "sources": [
             {"wikiName": "[[Smithing]]", "txtName": "Smithing"},
+            {"wikiName": "[[Emperor]]", "txtName": "Emperor"},
+            {"wikiName": "[[Emperor]]", "txtName": "Emperor"},
+            {"wikiName": "[[Chaotic Emperor]]", "txtName": "Chaotic Emperor"},
+            {"wikiName": "[[Chaotic Emperor]]", "txtName": "Chaotic Emperor"},
+            {"wikiName": "[[Chaotic Emperor]]", "txtName": "Chaotic Emperor"},
+            {"wikiName": "[[Sovereign Emperor]]", "txtName": "Sovereign Emperor"},
+            {"wikiName": "[[Sovereign Emperor]]", "txtName": "Sovereign Emperor"},
+            {"wikiName": "[[Sovereign Emperor]]", "txtName": "Sovereign Emperor"},
             {"wikiName": "[[Fishing]]", "txtName": "Fishing"}
         ],
         "recipeFrom": [],
@@ -4000,7 +4008,7 @@
         "recipeFrom": [],
         "questAss": []
     },
-    "MaxCapBagM12": {
+    "MaxCapBagTr10": {
         "sources": [
             {"wikiName": "[[Smithing]]", "txtName": "Smithing"}
         ],
@@ -4022,6 +4030,13 @@
         "questAss": []
     },
     "MaxCapBagF11": {
+        "sources": [
+            {"wikiName": "[[Smithing]]", "txtName": "Smithing"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "MaxCapBagM12": {
         "sources": [
             {"wikiName": "[[Smithing]]", "txtName": "Smithing"}
         ],
@@ -4889,9 +4904,7 @@
         "sources": [
             {"wikiName": "[[Crystal Capybara]]", "txtName": "Crystal Capybara"},
             {"wikiName": "[[Dandelioli Tree]]", "txtName": "Dandelioli Tree"},
-            {"wikiName": "[[Equinox Willow]]", "txtName": "Equinox Willow"},
-            {"wikiName": "[[Bamboo]]", "txtName": "Bamboo"},
-            {"wikiName": "[[Effervescent Eucalyptus]]", "txtName": "Effervescent Eucalyptus"}
+            {"wikiName": "[[Equinox Willow]]", "txtName": "Equinox Willow"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -4911,6 +4924,7 @@
             {"wikiName": "[[River Spirit]]", "txtName": "River Spirit"},
             {"wikiName": "[[Baby Troll]]", "txtName": "Baby Troll"},
             {"wikiName": "[[Woodlin Spirit]]", "txtName": "Woodlin Spirit"},
+            {"wikiName": "[[Bamboo]]", "txtName": "Bamboo"},
             {"wikiName": "[[Ladybug]]", "txtName": "Ladybug"}
         ],
         "recipeFrom": [],
@@ -4932,7 +4946,8 @@
         "sources": [
             {"wikiName": "[[Crystal Brighton]]", "txtName": "Crystal Brighton"},
             {"wikiName": "[[Ceramic Spirit]]", "txtName": "Ceramic Spirit"},
-            {"wikiName": "[[Skydoggie Spirit]]", "txtName": "Skydoggie Spirit"}
+            {"wikiName": "[[Skydoggie Spirit]]", "txtName": "Skydoggie Spirit"},
+            {"wikiName": "[[Effervescent Eucalyptus]]", "txtName": "Effervescent Eucalyptus"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -7827,10 +7842,7 @@
         "sources": [
             {"wikiName": "[[Kattlekruk]]", "txtName": "Kattlekruk"},
             {"wikiName": "[[Chaotic Kattlekruk]]", "txtName": "Chaotic Kattlekruk"},
-            {"wikiName": "[[Sacrilegious Kattlekruk]]", "txtName": "Sacrilegious Kattlekruk"},
-            {"wikiName": "[[Emperor]]", "txtName": "Emperor"},
-            {"wikiName": "[[Chaotic Emperor]]", "txtName": "Chaotic Emperor"},
-            {"wikiName": "[[Sovereign Emperor]]", "txtName": "Sovereign Emperor"}
+            {"wikiName": "[[Sacrilegious Kattlekruk]]", "txtName": "Sacrilegious Kattlekruk"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -7847,10 +7859,7 @@
         "sources": [
             {"wikiName": "[[Kattlekruk]]", "txtName": "Kattlekruk"},
             {"wikiName": "[[Chaotic Kattlekruk]]", "txtName": "Chaotic Kattlekruk"},
-            {"wikiName": "[[Sacrilegious Kattlekruk]]", "txtName": "Sacrilegious Kattlekruk"},
-            {"wikiName": "[[Emperor]]", "txtName": "Emperor"},
-            {"wikiName": "[[Chaotic Emperor]]", "txtName": "Chaotic Emperor"},
-            {"wikiName": "[[Sovereign Emperor]]", "txtName": "Sovereign Emperor"}
+            {"wikiName": "[[Sacrilegious Kattlekruk]]", "txtName": "Sacrilegious Kattlekruk"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -7874,9 +7883,7 @@
     "KrukPart2": {
         "sources": [
             {"wikiName": "[[Chaotic Kattlekruk]]", "txtName": "Chaotic Kattlekruk"},
-            {"wikiName": "[[Sacrilegious Kattlekruk]]", "txtName": "Sacrilegious Kattlekruk"},
-            {"wikiName": "[[Chaotic Emperor]]", "txtName": "Chaotic Emperor"},
-            {"wikiName": "[[Sovereign Emperor]]", "txtName": "Sovereign Emperor"}
+            {"wikiName": "[[Sacrilegious Kattlekruk]]", "txtName": "Sacrilegious Kattlekruk"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -7958,7 +7965,11 @@
     },
     "SpiA2b": {
         "sources": [
-            {"wikiName": "[[Ricecake]]", "txtName": "Ricecake"}
+            {"wikiName": "[[Ricecake]]", "txtName": "Ricecake"},
+            {
+                "wikiName": "[[Sussy Gene#Loiterin' Around|Loiterin' Around]]",
+                "txtName": "Sussy Gene: Loiterin' Around"
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -8113,6 +8124,28 @@
     "Line9": {
         "sources": [
             {"wikiName": "[[Skydoggie Spirit]]", "txtName": "Skydoggie Spirit"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "FoodPotGr4": {
+        "sources": [
+            {"wikiName": "[[Skydoggie Spirit]]", "txtName": "Skydoggie Spirit"},
+            {
+                "wikiName": "[[Vendors#Outer World Town|Outer World Town Vendors]]",
+                "txtName": "Outer World Town Vendor"
+            }
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "FoodHealth17": {
+        "sources": [
+            {"wikiName": "[[Skydoggie Spirit]]", "txtName": "Skydoggie Spirit"},
+            {
+                "wikiName": "[[Vendors#Spirit Village|Spirit Village Vendors]]",
+                "txtName": "Spirit Village Vendor"
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -11309,16 +11342,6 @@
         "recipeFrom": [],
         "questAss": []
     },
-    "FoodPotGr4": {
-        "sources": [
-            {
-                "wikiName": "[[Vendors#Outer World Town|Outer World Town Vendors]]",
-                "txtName": "Outer World Town Vendor"
-            }
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
     "FoodPotRe4": {
         "sources": [
             {
@@ -11470,16 +11493,6 @@
         "questAss": []
     },
     "FoodHealth16": {
-        "sources": [
-            {
-                "wikiName": "[[Vendors#Spirit Village|Spirit Village Vendors]]",
-                "txtName": "Spirit Village Vendor"
-            }
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "FoodHealth17": {
         "sources": [
             {
                 "wikiName": "[[Vendors#Spirit Village|Spirit Village Vendors]]",
@@ -11806,7 +11819,8 @@
             {"wikiName": "[[SuperDropTable2]]", "txtName": "SuperDropTable2"},
             {"wikiName": "[[SuperDropTable3]]", "txtName": "SuperDropTable3"},
             {"wikiName": "[[SuperDropTable4]]", "txtName": "SuperDropTable4"},
-            {"wikiName": "[[SuperDropTable5]]", "txtName": "SuperDropTable5"}
+            {"wikiName": "[[SuperDropTable5]]", "txtName": "SuperDropTable5"},
+            {"wikiName": "[[SuperDropTable6]]", "txtName": "SuperDropTable6"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -12647,6 +12661,13 @@
         "recipeFrom": [],
         "questAss": []
     },
+    "StoneZ4": {
+        "sources": [
+            {"wikiName": "[[SuperDropTable6]]", "txtName": "SuperDropTable6"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
     "Secretstone": {
         "sources": [],
         "recipeFrom": [],
@@ -13121,6 +13142,10 @@
             {
                 "wikiName": "[[Lord of the Hunt#Small Stingers, Big Owie|Small Stingers, Big Owie]]",
                 "txtName": "Lord of the Hunt: Small Stingers, Big Owie"
+            },
+            {
+                "wikiName": "[[Woodlin Elder#Big Lock Picking|Big Lock Picking]]",
+                "txtName": "Woodlin Elder: Big Lock Picking"
             },
             {"wikiName": "[[Guild Giftbox]]", "txtName": "Guild Giftbox"}
         ],
@@ -14172,8 +14197,7 @@
             {
                 "wikiName": "[[Worldo#Can't Guard if you're Dead!|Can't Guard if you're Dead!]]",
                 "txtName": "Worldo: Can't Guard if you're Dead!"
-            },
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -14215,7 +14239,8 @@
             {
                 "wikiName": "[[Royal Worm#Bossin' the Boss|Bossin' the Boss]]",
                 "txtName": "Royal Worm: Bossin' the Boss"
-            }
+            },
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -14415,8 +14440,7 @@
             {
                 "wikiName": "[[Falloween Pumpkin#The Afterparty|The Afterparty]]",
                 "txtName": "Falloween Pumpkin: The Afterparty"
-            },
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -14756,6 +14780,43 @@
                 "wikiName": "[[Royal Worm#Royal Bidding|Royal Bidding]]",
                 "txtName": "Royal Worm: Royal Bidding"
             },
+            {
+                "wikiName": "[[Hoov#Stealth Check 1 2 3|Stealth Check 1 2 3]]",
+                "txtName": "Hoov: Stealth Check 1 2 3"
+            },
+            {
+                "wikiName": "[[Hoov#Sneak Registration|Sneak Registration]]",
+                "txtName": "Hoov: Sneak Registration"
+            },
+            {
+                "wikiName": "[[Hoov#Sneak Graduate|Sneak Graduate]]",
+                "txtName": "Hoov: Sneak Graduate"
+            },
+            {
+                "wikiName": "[[Woodlin Elder#Portal Issues|Portal Issues]]",
+                "txtName": "Woodlin Elder: Portal Issues"
+            },
+            {"wikiName": "[[Woodlin Elder#Fiddy|Fiddy]]", "txtName": "Woodlin Elder: Fiddy"},
+            {
+                "wikiName": "[[Woodlin Elder#Hunned Fiddy|Hunned Fiddy]]",
+                "txtName": "Woodlin Elder: Hunned Fiddy"
+            },
+            {
+                "wikiName": "[[Woodlin Elder#Triple Tre|Triple Tre]]",
+                "txtName": "Woodlin Elder: Triple Tre"
+            },
+            {
+                "wikiName": "[[Sussy Gene#Goofin' Around|Goofin' Around]]",
+                "txtName": "Sussy Gene: Goofin' Around"
+            },
+            {
+                "wikiName": "[[Sussy Gene#Messin' Around|Messin' Around]]",
+                "txtName": "Sussy Gene: Messin' Around"
+            },
+            {
+                "wikiName": "[[Sussy Gene#Loiterin' Around|Loiterin' Around]]",
+                "txtName": "Sussy Gene: Loiterin' Around"
+            },
             {"wikiName": "[[Arcade]]", "txtName": "Arcade"}
         ],
         "recipeFrom": [],
@@ -14783,6 +14844,10 @@
                 "wikiName": "[[Lafu Shi#Essence Juicing|Essence Juicing]]",
                 "txtName": "Lafu Shi: Essence Juicing"
             },
+            {
+                "wikiName": "[[Woodlin Elder#Big Lock Picking|Big Lock Picking]]",
+                "txtName": "Woodlin Elder: Big Lock Picking"
+            },
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
@@ -14806,6 +14871,15 @@
                 "wikiName": "[[Lafu Shi#Essence Juicing|Essence Juicing]]",
                 "txtName": "Lafu Shi: Essence Juicing"
             },
+            {"wikiName": "[[Hoov#Sneak Dropout|Sneak Dropout]]", "txtName": "Hoov: Sneak Dropout"},
+            {
+                "wikiName": "[[Hoov#Sneak Registration|Sneak Registration]]",
+                "txtName": "Hoov: Sneak Registration"
+            },
+            {
+                "wikiName": "[[Woodlin Elder#Big Lock Picking|Big Lock Picking]]",
+                "txtName": "Woodlin Elder: Big Lock Picking"
+            },
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
@@ -14822,6 +14896,63 @@
                 "txtName": "Lafu Shi: Essence Juicing"
             },
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "StampB48": {
+        "sources": [
+            {"wikiName": "[[Hoov#Sneak Dropout|Sneak Dropout]]", "txtName": "Hoov: Sneak Dropout"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "StampA40": {
+        "sources": [
+            {
+                "wikiName": "[[Hoov#Stealth Check 1 2 3|Stealth Check 1 2 3]]",
+                "txtName": "Hoov: Stealth Check 1 2 3"
+            }
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "InvStorageN": {
+        "sources": [
+            {
+                "wikiName": "[[Hoov#Sneak Graduate|Sneak Graduate]]",
+                "txtName": "Hoov: Sneak Graduate"
+            }
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "StampB53": {
+        "sources": [
+            {
+                "wikiName": "[[Sussy Gene#Goofin' Around|Goofin' Around]]",
+                "txtName": "Sussy Gene: Goofin' Around"
+            }
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "StampB51": {
+        "sources": [
+            {
+                "wikiName": "[[Sussy Gene#Messin' Around|Messin' Around]]",
+                "txtName": "Sussy Gene: Messin' Around"
+            }
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "StampA41": {
+        "sources": [
+            {
+                "wikiName": "[[Sussy Gene#Loiterin' Around|Loiterin' Around]]",
+                "txtName": "Sussy Gene: Loiterin' Around"
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -14980,6 +15111,13 @@
         "recipeFrom": [],
         "questAss": []
     },
+    "CardPack7": {
+        "sources": [
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
     "GemP11": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
@@ -15044,21 +15182,42 @@
         "recipeFrom": [],
         "questAss": []
     },
-    "EquipmentHats89": {
+    "EquipmentRings34": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
         "questAss": []
     },
-    "Quest77": {
+    "EquipmentRings32": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
         "questAss": []
     },
-    "Quest76": {
+    "EquipmentRings31": {
+        "sources": [
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "EquipmentRings33": {
+        "sources": [
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "GemP25": {
+        "sources": [
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "EquipmentPendant28": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],

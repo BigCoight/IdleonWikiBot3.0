@@ -66,5 +66,9 @@ class Constants:
 	gemShopSections = [
 		["Hats", "Chat Rings", "Blank", "Blank", "Blank", "Blank"],
 		["Time Candy", "Inventory & Storage", "Dailies N' Resets", "Cards", "Goods & Services", "Limited Specials"],
-		["Premium Stones", "World 1&2", "World 3", "World 4", "World 5", "Blank"]
+		["Premium Stones", "World 1&2", "World 3", "World 4", "World 5", "World 6"]
 	]
+
+	ninjaFloors = 11
+
+	labInserts = 4

@@ -28,14 +28,14 @@ class SummonEnemyRepo(Repository[SummonEnemy]):
 		for i in range(numEnemies):
 			toAdd = SummonEnemy(
 				enemyId = data[0][i],
-				damage = data[1][i],
-				health = data[2][i],
-				x4 = data[3][i],
+				xOff = data[1][i],
+				yOff = data[2][i],
+				width = data[3][i],
 				territoryName = replaceUnderscores(data[4][i]),
 				bonusId = data[5][i],
 				bonus = SummonEnemyBonusRepo.getList(int(data[5][i]) - 1) if data[5][i] != "_" else None,
-				x8 = data[7][i],
-				x9 = data[8][i],
+				bonusQty = data[7][i],
+				difficulty = data[8][i],
 			)
 			cls.addList(toAdd)
 			if cls.contains(toAdd.enemyId): continue

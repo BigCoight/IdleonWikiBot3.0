@@ -3,12 +3,12 @@ from helpers.CustomTypes import Numeric
 
 
 class SummonUnit(IdleonModel):
-	x1: int
-	x2: Numeric
-	x3: int
-	x4: int
-	x5: int
-	x6: int
-	x7: int
-	x8: int
-	x9: Numeric
+	height: int
+	speed: Numeric
+	colRadius: int
+	qtyText: int
+	minQty: int
+	maxQty: int
+	baseCost: int
+	baseHp: int
+	baseDamage: Numeric

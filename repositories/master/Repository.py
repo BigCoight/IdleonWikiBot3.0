@@ -456,9 +456,11 @@ class Repository(Generic[T], ABC):
 		path = cls._getPath("ts/data", "ts", noCat = True)
 		tsData = ""
 		imports = set()
+
 		if not cls.listRepository:
 			tsData += cls.getFirstElement().toTsClass(False)
 			className = cls.getFirstElement().getHighestClass().__name__
+			imports.add(f"{className}Model")
 			tsData += "\n\n\n\n"
 			tsData += f"export const init{cls.__name__} = () => ""{\n    return [    \n"
 			for n, (atr, val) in enumerate(cls.items()):
@@ -471,6 +473,7 @@ class Repository(Generic[T], ABC):
 		else:
 			tsData += cls.getList(0).toTsClass(True)
 			className = cls.getFirstElement().getHighestClass().__name__
+			imports.add(f"{className}Model")
 			tsData += "\n\n\n\n"
 			tsData += f"export const init{cls.__name__} = () => ""{\n    return [    \n"
 			for n, val in enumerate(cls.listRepository):

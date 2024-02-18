@@ -5,13 +5,13 @@ from helpers.CustomTypes import Numeric, Integer
 class NinjaUpgrade(IdleonModel):
 	screenX: int
 	screenY: int
-	x1: int
-	x2: int
+	width: int
+	height: int
 	name: str
-	x3: int | str
+	bonusPerLvl: int | str
 	bonus: str
-	x6: Integer
-	x7: Numeric
-	x8: int
-	x9: int
-	x10: int
+	costBase: Integer
+	costExponent: Numeric
+	unlockId: int
+	iconX: int
+	iconY: int

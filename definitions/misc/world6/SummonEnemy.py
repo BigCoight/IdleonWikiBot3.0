@@ -7,11 +7,11 @@ from helpers.CustomTypes import Integer
 
 class SummonEnemy(IdleonModel):
 	enemyId: str
-	damage: Integer
-	health: int
-	x4: int
+	xOff: Integer
+	yOff: int
+	width: int
 	territoryName: str
 	bonusId: int | str
 	bonus: Optional[SummonEnemyBonus]
-	x8: int | str
-	x9: int | str
+	bonusQty: int | str
+	difficulty: int | str

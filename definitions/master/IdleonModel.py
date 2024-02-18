@@ -489,10 +489,10 @@ class TSEncoder(json.JSONEncoder):
 			else:
 				return "{}"
 		elif isinstance(o, IdleonModel):
-			parents = type(o).__bases__
-			for parent in parents:
-				if issubclass(parent, IdleonModel):
-					self.needToImport.add(f"{parent.__name__}Model")
+			# parents = type(o).__bases__
+			# for parent in parents:
+			# 	if issubclass(parent, IdleonModel) and not parent == IdleonModel:
+			# 		self.needToImport.add(f"{parent.__name__}Model")
 			self.needToImport.add(f"{o.__class__.__name__}Model")
 			type_str = f"<{o.__class__.__name__}Model>"
 			if o:

@@ -228,7 +228,10 @@
                 "x2": 60,
                 "func": "decay",
                 "description": "When claiming AFK Gains, +{% chance to gain an equal amount of time for Gaming progress!",
-                "requirements": [{"item": "SailTr9", "quantity": 100}, {"liquidNo": "3", "quantity": 6}],
+                "requirements": [
+                    {"sailTreasureNo": "9", "quantity": 100},
+                    {"liquidNo": "3", "quantity": 6}
+                ],
                 "bonusKey": "W3ACTIVE"
             },
             {
@@ -248,7 +251,10 @@
                 "x2": 50,
                 "func": "decay",
                 "description": "+{% Total Damage per 250 STR, but only for warriors! No triple dipping into AGI and WIS! Also this, but for beginners with LUK!",
-                "requirements": [{"item": "SailTr20", "quantity": 150}, {"liquidNo": "3", "quantity": 6}],
+                "requirements": [
+                    {"sailTreasureNo": "20", "quantity": 150},
+                    {"liquidNo": "3", "quantity": 6}
+                ],
                 "bonusKey": "W5"
             },
             {
@@ -258,7 +264,7 @@
                 "x2": 60,
                 "func": "decay",
                 "description": "The effect STR has on Damage is increased by +{%",
-                "requirements": [{"item": "W6item1", "quantity": 100}, {"liquidNo": "3", "quantity": 5}],
+                "requirements": [{"cropId": "3", "quantity": 100}, {"liquidNo": "3", "quantity": 5}],
                 "bonusKey": "W6"
             },
             {
@@ -278,7 +284,7 @@
                 "x2": 60,
                 "func": "decay",
                 "description": "+{% STR for every 500 Tome Completion Points above 1000. NOTE: The tome is coming in an upcoming weekly update!",
-                "requirements": [{"item": "W6item8", "quantity": 500}, {"liquidNo": "4", "quantity": 6}],
+                "requirements": [{"soulId": "0", "quantity": 500}, {"liquidNo": "4", "quantity": 6}],
                 "bonusKey": "W8"
             },
             {
@@ -298,7 +304,7 @@
                 "x2": 50,
                 "func": "decay",
                 "description": "+{% Crop Evolution chance for every 500 Tome Completion Points above 1000.",
-                "requirements": [{"item": "W6item10", "quantity": 1500}, {"liquidNo": "4", "quantity": 6}],
+                "requirements": [{"soulId": "0", "quantity": 1500}, {"liquidNo": "4", "quantity": 6}],
                 "bonusKey": "W10AllCharz"
             }
         ]
@@ -532,7 +538,10 @@
                 "x2": 60,
                 "func": "decay",
                 "description": "When claiming AFK Gains, +{% chance to gain an equal amount of time for Sailing progress!",
-                "requirements": [{"item": "SailTr11", "quantity": 100}, {"liquidNo": "3", "quantity": 6}],
+                "requirements": [
+                    {"sailTreasureNo": "11", "quantity": 100},
+                    {"liquidNo": "3", "quantity": 6}
+                ],
                 "bonusKey": "A3ACTIVE"
             },
             {
@@ -552,7 +561,10 @@
                 "x2": 50,
                 "func": "decay",
                 "description": "+{% Total Damage per 250 AGI, but only for archers! No triple dipping into STR and WIS!",
-                "requirements": [{"item": "SailTr24", "quantity": 150}, {"liquidNo": "3", "quantity": 6}],
+                "requirements": [
+                    {"sailTreasureNo": "24", "quantity": 150},
+                    {"liquidNo": "3", "quantity": 6}
+                ],
                 "bonusKey": "A5"
             },
             {
@@ -562,7 +574,7 @@
                 "x2": 60,
                 "func": "decay",
                 "description": "The effect AGI has on Damage is increased by +{%",
-                "requirements": [{"item": "W6item0", "quantity": 25000}, {"liquidNo": "3", "quantity": 5}],
+                "requirements": [{"quantity": 25000}, {"liquidNo": "3", "quantity": 5}],
                 "bonusKey": "A6"
             },
             {
@@ -582,7 +594,7 @@
                 "x2": 60,
                 "func": "decay",
                 "description": "+{ Catching and Trapping Power. This bonus increases based on every 10 Class LVs you are above 500.",
-                "requirements": [{"item": "W6item3", "quantity": 150}, {"liquidNo": "4", "quantity": 6}],
+                "requirements": [{"cropId": "46", "quantity": 150}, {"liquidNo": "4", "quantity": 6}],
                 "bonusKey": "A8"
             },
             {
@@ -602,7 +614,7 @@
                 "x2": 50,
                 "func": "decay",
                 "description": "+{% Stealth (the stat that lowers dedection rate in Sneaking) for every 500 Tome Completion Points above 1000.",
-                "requirements": [{"item": "W6item5", "quantity": 250}, {"liquidNo": "4", "quantity": 6}],
+                "requirements": [{"cropId": "99", "quantity": 250}, {"liquidNo": "4", "quantity": 6}],
                 "bonusKey": "A10AllCharz"
             }
         ]
@@ -836,7 +848,10 @@
                 "x2": 100,
                 "func": "decay",
                 "description": "+{% Divinity EXP Gain",
-                "requirements": [{"item": "SailTr13", "quantity": 15}, {"liquidNo": "3", "quantity": 6}],
+                "requirements": [
+                    {"sailTreasureNo": "13", "quantity": 15},
+                    {"liquidNo": "3", "quantity": 6}
+                ],
                 "bonusKey": "M3ACTIVE"
             },
             {
@@ -856,7 +871,10 @@
                 "x2": 50,
                 "func": "decay",
                 "description": "+{% Total Damage per 250 WIS, but only for mages! No triple dipping into STR and AGI!",
-                "requirements": [{"item": "SailTr28", "quantity": 200}, {"liquidNo": "3", "quantity": 6}],
+                "requirements": [
+                    {"sailTreasureNo": "28", "quantity": 200},
+                    {"liquidNo": "3", "quantity": 6}
+                ],
                 "bonusKey": "M5"
             },
             {
@@ -866,7 +884,7 @@
                 "x2": 60,
                 "func": "decay",
                 "description": "The effect WIS has on Damage is increased by +{%",
-                "requirements": [{"item": "W6item6", "quantity": 500}, {"liquidNo": "3", "quantity": 5}],
+                "requirements": [{"soulId": "0", "quantity": 500}, {"liquidNo": "3", "quantity": 5}],
                 "bonusKey": "M6"
             },
             {
@@ -876,7 +894,7 @@
                 "x2": 60,
                 "func": "decay",
                 "description": "+{ Choppin and Worship Power. This bonus increases based on every 10 Class LVs you are above 500.",
-                "requirements": [{"item": "W6item7", "quantity": 950}, {"liquidNo": "3", "quantity": 5}],
+                "requirements": [{"soulId": "0", "quantity": 950}, {"liquidNo": "3", "quantity": 5}],
                 "bonusKey": "M7"
             },
             {
@@ -896,7 +914,7 @@
                 "x2": 60,
                 "func": "decay",
                 "description": "+{% WIS for every 500 Tome Completion Points above 1000. NOTE: The tome is coming in an upcoming weekly update!",
-                "requirements": [{"item": "W6item4", "quantity": 150}, {"liquidNo": "4", "quantity": 6}],
+                "requirements": [{"cropId": "72", "quantity": 150}, {"liquidNo": "4", "quantity": 6}],
                 "bonusKey": "M9"
             },
             {
@@ -906,7 +924,7 @@
                 "x2": 50,
                 "func": "decay",
                 "description": "+{% All Essence Gain for every 500 Tome Completion Points above 1000.",
-                "requirements": [{"item": "W6item0", "quantity": 250000}, {"liquidNo": "4", "quantity": 6}],
+                "requirements": [{"quantity": 250000}, {"liquidNo": "4", "quantity": 6}],
                 "bonusKey": "M10AllCharz"
             }
         ]
@@ -1130,7 +1148,10 @@
                 "x2": 60,
                 "func": "decayMulti",
                 "description": "{x higher bonus than displayed from the Minor Link bonus of the deity you're linked to in Divinity. AKA bigger god passive!",
-                "requirements": [{"item": "SailTr1", "quantity": 50}, {"liquidNo": "3", "quantity": 5}],
+                "requirements": [
+                    {"sailTreasureNo": "1", "quantity": 50},
+                    {"liquidNo": "3", "quantity": 5}
+                ],
                 "bonusKey": "Y2ACTIVE"
             },
             {
@@ -1190,7 +1211,7 @@
                 "x2": 70,
                 "func": "decay",
                 "description": "Your ninja twins do +{% more damage to doors! Knock knock, let 'em in, let 'em in!",
-                "requirements": [{"item": "W6item2", "quantity": 120}, {"liquidNo": "4", "quantity": 5}],
+                "requirements": [{"cropId": "60", "quantity": 120}, {"liquidNo": "4", "quantity": 5}],
                 "bonusKey": "Y8"
             },
             {
@@ -1200,7 +1221,7 @@
                 "x2": 60,
                 "func": "decayMulti",
                 "description": "{x Item Find chance for your ninja twin while sneaking!",
-                "requirements": [{"item": "W6item9", "quantity": 1200}, {"liquidNo": "4", "quantity": 6}],
+                "requirements": [{"soulId": "0", "quantity": 1200}, {"liquidNo": "4", "quantity": 6}],
                 "bonusKey": "Y9ACTIVE"
             },
             {

@@ -1,5 +1,4 @@
 from definitions.collections.Item import Item
-from helpers.HelperFunctions import ignoreWorld6
 from repositories.item.AnvilRepo import AnvilRepo
 from repositories.item.DetDropsRepo import DetDropsRepo
 from repositories.item.RecipeRepo import RecipeRepo
@@ -60,7 +59,7 @@ class ItemRepo(Repository[Item]):
 
 	@classmethod
 	def _ignore(cls, name: str, data: Item) -> bool:
-		return SpecificItemRepo._ignore(name, data.item) or ignoreWorld6(cls.getWikiName(name))
+		return SpecificItemRepo._ignore(name, data.item)
 
 	@classmethod
 	def getWikiName(cls, name: str) -> str:

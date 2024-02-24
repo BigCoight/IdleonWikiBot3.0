@@ -1,251 +1,64 @@
 {
-    "new": {
-        "Woodlin Elder": {
+    "new": {},
+    "changes": {
+        "Scripticus": {
             "quests": {
-                "Portal Issues": {
-                    "Type": "Custom",
-                    "DialogueText": "Go ahead and try it won't matter. QUEST:Defeat 400000 Woodlin Spirits to open the portal business as usual forget this Elder chump!",
-                    "Name": "Portal Issues",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "Gfoodcoupon", "quantity": 800}],
-                    "Difficulty": 2,
-                    "CustomArray": [{"desc": "Woodlin Kills:", "finalV": 400000, "type": "GreaterEqual", "startV": 0}]
+                "The Choice is Yours!": {},
+                "Mr. Worldwide": {
+                    "Rewards": {"2": [{"item": "Experience0", "quantity": 25}, {"item": "Experience0", "quantity": 5}]}
                 },
-                "Big Lock Picking": {
-                    "Type": "Custom",
-                    "DialogueText": "However. Do this again and your worth will be proven. <br> QUEST:Defeat 400000 Woodlin Spirits on a 2nd character that must be what the big lock is all about!",
-                    "Name": "Big Lock Picking",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 3,
-                    "Rewards": [
-                        {"item": "ExpBalloon3", "quantity": 6},
-                        {"item": "GemP30", "quantity": 3},
-                        {"item": "Quest81", "quantity": 4}
-                    ],
-                    "Difficulty": 3,
-                    "CustomArray": [{"desc": "2nd Char Unlock:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
-                },
-                "Fiddy": {
-                    "Type": "Custom",
-                    "DialogueText": "Enough portal talk. Let's test your dedication further. <br> QUEST:Defeat exactly 50 Woodlin Spirits. Stand on the top right platform to lock in your killcount. Killcount resets if incorrect.",
-                    "Name": "Fiddy",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "Gfoodcoupon", "quantity": 1500}],
-                    "Difficulty": 1,
-                    "CustomArray": [{"desc": "50 Exactly:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
-                },
-                "Hunned Fiddy": {
-                    "Type": "Custom",
-                    "DialogueText": "Let's test your dedication even further. <br> QUEST:Defeat exactly 150 Woodlin Spirits. Stand on the top right platform to lock in your killcount. Killcount resets if incorrect.",
-                    "Name": "Hunned Fiddy",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "Gfoodcoupon", "quantity": 2500}],
-                    "Difficulty": 4,
-                    "CustomArray": [{"desc": "150 Exactly:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
-                },
-                "Triple Tre": {
-                    "Type": "Custom",
-                    "DialogueText": "One final test. Third time's the charm. <br> QUEST:Defeat exactly 333 Woodlin Spirits. Stand on the top right platform to lock in your killcount. Killcount resets if incorrect.",
-                    "Name": "Triple Tre",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "Gfoodcoupon", "quantity": 4000}],
-                    "Difficulty": 7,
-                    "CustomArray": [{"desc": "333 Exactly:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
-                }
-            }
-        },
-        "Tribal Shaman": {"quests": {}},
-        "Lafu Shi": {
-            "quests": {
-                "Seed Planting": {
-                    "Type": "Custom",
-                    "DialogueText": "Lets begin with farming! Start by planting a seed. <br> MAIN QUEST:Go to the compost bag select a seed then click the empty land plot.",
-                    "Name": "Seed Planting",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 1,
-                    "Rewards": [{"item": "Quest81", "quantity": 3}],
-                    "Difficulty": 1,
-                    "CustomArray": [{"desc": "Seed planted:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
-                },
-                "Visiting the Farmer's Market": {
-                    "Type": "Custom",
-                    "DialogueText": "Wait for the seed to grow or use the Compost I just gave you and then collect the crops that grow and spend them at the market! <br> MAIN QUEST:Grow apples pick apples spend apples to buy more land!",
-                    "Name": "Visiting the Farmer's Market",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "Quest81", "quantity": 4}, {"item": "GemP30", "quantity": 2}],
-                    "Difficulty": 1,
-                    "CustomArray": [
-                        {"desc": "Apples Picked:", "finalV": 2, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "Land Plots Purchased:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                    ]
-                },
-                "Climbing the Ninja Hotel": {
-                    "Type": "Custom",
-                    "DialogueText": "We do a bit of Sneaking at the abandoned hotel go check it out to the right! <br> MAIN QUEST:Embrace Sneaking culture and Sneak your way up the hotel!",
-                    "Name": "Climbing the Ninja Hotel",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "Quest81", "quantity": 2}, {"item": "GemP30", "quantity": 3}],
-                    "Difficulty": 1,
-                    "CustomArray": [
-                        {"desc": "Find Jade Coins:", "finalV": 100, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "Upg Looting Ambition:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "Find n Equip Nunchaku:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                    ]
-                },
-                "Emporium Investing": {
-                    "Type": "Custom",
-                    "DialogueText": "Now to put that Jade to good use! MAIN QUEST:Purchase something from the Jade Emporium. These bonuses are MAJOR big time awesome!!",
-                    "Name": "Emporium Investing",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 1,
-                    "Rewards": [{"item": "Quest81", "quantity": 3}, {"item": "GemP30", "quantity": 2}],
-                    "Difficulty": 1,
-                    "CustomArray": [{"desc": "Emporium Purchases:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
-                },
-                "Summoning Debut": {
-                    "Type": "Custom",
-                    "DialogueText": "See that table to the right? Go there and find an opponent! <br> MAIN QUEST:Win a Summoning Match. Your slime army should come out victorious if you place them correctly!",
-                    "Name": "Summoning Debut",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 1,
-                    "Rewards": [{"item": "Quest82", "quantity": 2}],
-                    "Difficulty": 1,
-                    "CustomArray": [
-                        {
-                            "desc": "Open Summoner's Table:",
-                            "finalV": 1,
-                            "type": "GreaterEqual",
-                            "startV": 0
-                        },
-                        {"desc": "Win a Match:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
-                    ]
-                },
-                "Essence Juicing": {
-                    "Type": "Custom",
-                    "DialogueText": "Now the final task... upgrading your Summoning Slime Army! <br> MAIN QUEST:Click the white Summoning Stone on the pillar and spend your essence.",
-                    "Name": "Essence Juicing",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 1,
-                    "Rewards": [
-                        {"item": "Quest81", "quantity": 2},
-                        {"item": "GemP30", "quantity": 1},
-                        {"item": "Quest82", "quantity": 2}
-                    ],
-                    "Difficulty": 1,
-                    "CustomArray": [
-                        {"desc": "Buy Summon Upgrades:", "finalV": 3, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "Win 2nd Match:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                "Gear Up, Gamer!": {"Rewards": {"2": [" ", {"item": "rtt0", "quantity": 3}]}},
+                "The Unoccupied Picnic": {
+                    "DialogueText": [
+                        "You see I has a picnic and I forget the darn basket! There wasn't in it other than a jar of Golden Jam that I need back!  <br> MAIN QUEST:Retrieve the Golden Jam from the Picnic in Froggy Fields",
+                        "Wait wait you're still a BEGINNER??? <br> MAIN QUEST:Select a new class from Promotheus. He's in the Bean map it's after Frogs..."
                     ]
                 }
             }
         },
         "Sussy Gene": {
             "quests": {
-                "Goofin' Around": {
-                    "Type": "Custom",
-                    "DialogueText": "Three things tough stuff gonna freak you out maybe... <br> QUEST:Have a Summoning Match last 2 minutes or more Spawn 10 bloomies in a single match and Spawn 1000 slimes across all matches.",
-                    "Name": "Goofin' Around",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "StampB53", "quantity": 1}, {"item": "Gfoodcoupon", "quantity": 1500}],
-                    "Difficulty": 3,
-                    "CustomArray": [
-                        {"desc": "1st Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "2nd Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "3rd Thing:", "finalV": 1000, "type": "GreaterEqual", "startV": 0}
-                    ]
-                },
                 "Messin' Around": {
-                    "Type": "Custom",
-                    "DialogueText": "Ok like do these things now. <br> QUEST:Have 1000 mana in a Summoning Match at once get you and your opponent down to just 1 hp each and spawn 8 Vrumbies from a single card.",
-                    "Name": "Messin' Around",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "StampB51", "quantity": 1}, {"item": "Gfoodcoupon", "quantity": 2500}],
-                    "Difficulty": 5,
-                    "CustomArray": [
-                        {"desc": "1st Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "2nd Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "3rd Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                    "DialogueText": [
+                        "Ok like do these things now. <br> QUEST:Have 1000 mana in a Summoning Match at once get you and your opponent down to just 1 hp each and spawn 8 Vrumbies from a single card.",
+                        "Ok like do these things now. <br> QUEST:Have 2500 mana in a Summoning Match at once get you and your opponent down to just 1 hp each and spawn 8 Vrumbies from a single card."
                     ]
                 },
-                "Loiterin' Around": {
-                    "Type": "Custom",
-                    "DialogueText": "Last things listen up. <br> QUEST:Have a Regalis familiar in your sanctuary play 7 special units in a row (non grey slimes) have a summoning match last 5 minutes or more.",
-                    "Name": "Loiterin' Around",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [
-                        {"item": "StampA41", "quantity": 1},
-                        {"item": "SpiA2b", "quantity": 2500},
-                        {"item": "Gfoodcoupon", "quantity": 3000}
-                    ],
-                    "Difficulty": 8,
-                    "CustomArray": [
-                        {"desc": "1st Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "2nd Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
-                        {"desc": "3rd Thing:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                "Goofin' Around": {
+                    "DialogueText": [
+                        "Three things tough stuff gonna freak you out maybe... <br> QUEST:Have a Summoning Match last 2 minutes or more Spawn 10 bloomies in a single match and Spawn 1000 slimes across all matches.",
+                        "Three things tough stuff gonna freak you out maybe... <br> QUEST:Have a Summoning Match last 2 minutes or more Spawn 5 bloomies in a single match and Spawn 1000 slimes across all matches."
                     ]
                 }
             }
         },
-        "Potti": {"quests": {}},
-        "Legumulyte": {"quests": {}},
         "Hoov": {
             "quests": {
-                "Sneak Dropout": {
-                    "Type": "Custom",
-                    "DialogueText": "So yeh I'm thinkin' infiltratin' that old abandoned Ninja Castle in town is the play but like shiee I ain't doin' that myself ya feel? <br> QUEST:Reach Lv 10 in your Sneaking Skill",
-                    "Name": "Sneak Dropout",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "StampB48", "quantity": 1}, {"item": "GemP30", "quantity": 1}],
-                    "Difficulty": 1,
-                    "CustomArray": [{"desc": "Sneaking LV:", "finalV": 10, "type": "GreaterEqual", "startV": 0}]
-                },
                 "Stealth Check 1 2 3": {
-                    "Type": "Custom",
-                    "DialogueText": "Look man I'll totally join you just lemme peep those stats see if you good enough for my caliber. <br> QUEST:Have a total Stealth of 10420 on you Ninja Twin. Check Skill Info to see your ninja twin's Stealth amount.",
-                    "Name": "Stealth Check 1 2 3",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "StampA40", "quantity": 1}, {"item": "Gfoodcoupon", "quantity": 300}],
-                    "Difficulty": 3,
-                    "CustomArray": [{
-                        "desc": "Ninja Twin Stealth:",
-                        "finalV": 10420,
-                        "type": "GreaterEqual",
-                        "startV": 0
-                    }]
-                },
-                "Sneak Registration": {
-                    "Type": "Custom",
-                    "DialogueText": "Now where'd I put them last time I used them... while I look for my charms how 'bout you go level a bit yea?. <br> QUEST:Reach Sneaking Lv 40",
-                    "Name": "Sneak Registration",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "GemP30", "quantity": 1}, {"item": "Gfoodcoupon", "quantity": 1000}],
-                    "Difficulty": 5,
-                    "CustomArray": [{"desc": "Sneaking LV:", "finalV": 40, "type": "GreaterEqual", "startV": 0}]
-                },
-                "Sneak Graduate": {
-                    "Type": "Custom",
-                    "DialogueText": "Lemme just finish this last bite I'll be right with you. <br> QUEST:He won't be right with you he's obviously ducking. Just go reach Sneaking Lv 80 continue without him you already got his stamps lmao",
-                    "Name": "Sneak Graduate",
-                    "ConsumeItems": false,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "InvStorageN", "quantity": 1}, {"item": "Gfoodcoupon", "quantity": 1500}],
-                    "Difficulty": 8,
-                    "CustomArray": [{"desc": "Sneaking LV:", "finalV": 80, "type": "GreaterEqual", "startV": 0}]
+                    "DialogueText": [
+                        "Look man I'll totally join you just lemme peep those stats see if you good enough for my caliber. <br> QUEST:Have a total Stealth of 10420 on you Ninja Twin. Check Skill Info to see your ninja twin's Stealth amount.",
+                        "Look man I'll totally join you just lemme peep those stats see if you good enough for my caliber. <br> QUEST:Have a total Stealth of 10420 on your Ninja Twin. Check Skill Info to see your ninja twin's Stealth amount."
+                    ]
+                }
+            }
+        },
+        "Promotheus": {
+            "quests": {
+                "Three Right Answers": {
+                    "InventorySpacesNeeded": [2, 3],
+                    "Rewards": {"0": [" ", {"item": "Quest5", "quantity": 1}]}
+                }
+            }
+        },
+        "Stiltzcho": {
+            "quests": {
+                "Investigator by Day, Prankster by Night": {
+                    "DialogueText": [
+                        "Go get me some carrots and logs so I can make a little carrot mannequin for you to prank him with and I'll have the report ready when you return! <br> QUEST:Gather carrots from the Vegetable Grove as well as some logs.",
+                        "Go get me some carrots and logs so I can make a little carrot mannequin for you to prank him with! <br> QUEST:Gather carrots from the next map after this one as well as some logs from the Beans map."
+                    ]
                 }
             }
         }
-    },
-    "changes": {}
+    }
 }

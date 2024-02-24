@@ -195,19 +195,19 @@
         "gpBaseCost": 30,
         "gpIncrease": 90
     },
-    "Wait A Minute": {
-        "name": "Wait A Minute",
-        "xPos": 296,
+    "Skilley Skillet": {
+        "name": "Skilley Skillet",
+        "xPos": 232,
         "yPos": 137,
-        "bonus": "+{% Nothing Yet",
-        "x1": 1,
-        "x2": 0,
-        "func": "add",
-        "maxLevel": 0,
-        "reqIndex": 16,
+        "bonus": "+{% Skill EXP for all skills",
+        "x1": 30,
+        "x2": 120,
+        "func": "decay",
+        "maxLevel": 200,
+        "reqIndex": 13,
         "reqLevel": 5,
-        "gpBaseCost": 20,
-        "gpIncrease": 80
+        "gpBaseCost": 40,
+        "gpIncrease": 150
     },
     "Craps": {
         "name": "Craps",
@@ -236,5 +236,19 @@
         "reqLevel": 8,
         "gpBaseCost": 30,
         "gpIncrease": 90
+    },
+    "Wait A Minute": {
+        "name": "Wait A Minute",
+        "xPos": 296,
+        "yPos": 137,
+        "bonus": "+{% Nothing Yet",
+        "x1": 1,
+        "x2": 0,
+        "func": "add",
+        "maxLevel": 0,
+        "reqIndex": 16,
+        "reqLevel": 5,
+        "gpBaseCost": 20,
+        "gpIncrease": 80
     }
 }

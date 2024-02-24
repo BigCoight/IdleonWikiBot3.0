@@ -66,36 +66,34 @@
     },
     "EquipmentHats1": {
         "intID": "EquipmentHats1",
-        "recipe": [{"item": "Grasslands1", "quantity": 4}, {"item": "Copper", "quantity": 5}],
+        "recipe": [{"item": "Grasslands1", "quantity": 4}],
         "levelReqToCraft": 1,
         "expGiven": 6,
         "no": 5,
         "tab": 1,
-        "sellPrice": 27,
+        "sellPrice": 12,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "Grasslands1", "quantity": 4},
-                {"indent": 0, "item": "Copper", "quantity": 5}
+                {"indent": 0, "item": "Grasslands1", "quantity": 4}
             ],
-            "detRecipeTotals": [{"item": "Grasslands1", "quantity": 4}, {"item": "Copper", "quantity": 5}]
+            "detRecipeTotals": [{"item": "Grasslands1", "quantity": 4}]
         }
     },
     "EquipmentShirts1": {
         "intID": "EquipmentShirts1",
-        "recipe": [{"item": "Grasslands1", "quantity": 6}, {"item": "OakTree", "quantity": 3}],
+        "recipe": [{"item": "Copper", "quantity": 5}],
         "levelReqToCraft": 1,
         "expGiven": 8,
         "no": 6,
         "tab": 1,
-        "sellPrice": 24,
+        "sellPrice": 15,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "Grasslands1", "quantity": 6},
-                {"indent": 0, "item": "OakTree", "quantity": 3}
+                {"indent": 0, "item": "Copper", "quantity": 5}
             ],
-            "detRecipeTotals": [{"item": "Grasslands1", "quantity": 6}, {"item": "OakTree", "quantity": 3}]
+            "detRecipeTotals": [{"item": "Copper", "quantity": 5}]
         }
     },
     "EquipmentPants1": {
@@ -706,17 +704,20 @@
         "expGiven": 15,
         "no": 37,
         "tab": 1,
-        "sellPrice": 199,
+        "sellPrice": 190,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentShirts1", "quantity": 1},
-                {"indent": 1, "item": "Grasslands1", "quantity": 6},
-                {"indent": 1, "item": "OakTree", "quantity": 3},
+                {"indent": 1, "item": "Copper", "quantity": 5},
                 {"indent": 0, "item": "Grasslands1", "quantity": 25},
                 {"indent": 0, "item": "OakTree", "quantity": 50}
             ],
-            "detRecipeTotals": [{"item": "Grasslands1", "quantity": 31}, {"item": "OakTree", "quantity": 53}]
+            "detRecipeTotals": [
+                {"item": "Grasslands1", "quantity": 25},
+                {"item": "OakTree", "quantity": 50},
+                {"item": "Copper", "quantity": 5}
+            ]
         }
     },
     "EquipmentPendant10": {
@@ -1115,21 +1116,19 @@
         "expGiven": 30,
         "no": 54,
         "tab": 1,
-        "sellPrice": 604,
+        "sellPrice": 595,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentShirts1", "quantity": 1},
-                {"indent": 1, "item": "Grasslands1", "quantity": 6},
-                {"indent": 1, "item": "OakTree", "quantity": 3},
+                {"indent": 1, "item": "Copper", "quantity": 5},
                 {"indent": 0, "item": "Grasslands4", "quantity": 40},
                 {"indent": 0, "item": "BirchTree", "quantity": 100}
             ],
             "detRecipeTotals": [
                 {"item": "Grasslands4", "quantity": 40},
                 {"item": "BirchTree", "quantity": 100},
-                {"item": "Grasslands1", "quantity": 6},
-                {"item": "OakTree", "quantity": 3}
+                {"item": "Copper", "quantity": 5}
             ]
         }
     },
@@ -1144,21 +1143,19 @@
         "expGiven": 60,
         "no": 55,
         "tab": 1,
-        "sellPrice": 599,
+        "sellPrice": 590,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentShirts16", "quantity": 1},
                 {"indent": 0, "item": "EquipmentShirts1", "quantity": 1},
-                {"indent": 1, "item": "Grasslands1", "quantity": 6},
-                {"indent": 1, "item": "OakTree", "quantity": 3},
+                {"indent": 1, "item": "Copper", "quantity": 5},
                 {"indent": 0, "item": "CraftMat1", "quantity": 150}
             ],
             "detRecipeTotals": [
                 {"item": "EquipmentShirts16", "quantity": 1},
                 {"item": "CraftMat1", "quantity": 150},
-                {"item": "Grasslands1", "quantity": 6},
-                {"item": "OakTree", "quantity": 3}
+                {"item": "Copper", "quantity": 5}
             ]
         }
     },
@@ -1174,35 +1171,32 @@
         "expGiven": 120,
         "no": 56,
         "tab": 1,
-        "sellPrice": 2924,
+        "sellPrice": 2825,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentShirts1", "quantity": 5},
-                {"indent": 1, "item": "Grasslands1", "quantity": 30},
-                {"indent": 1, "item": "OakTree", "quantity": 15},
+                {"indent": 1, "item": "Copper", "quantity": 25},
                 {"indent": 0, "item": "EquipmentShirts2", "quantity": 2},
                 {"indent": 1, "item": "EquipmentShirts1", "quantity": 2},
-                {"indent": 2, "item": "Grasslands1", "quantity": 12},
-                {"indent": 2, "item": "OakTree", "quantity": 6},
+                {"indent": 2, "item": "Copper", "quantity": 10},
                 {"indent": 1, "item": "Grasslands1", "quantity": 50},
                 {"indent": 1, "item": "OakTree", "quantity": 100},
                 {"indent": 0, "item": "EquipmentShirts25", "quantity": 2},
                 {"indent": 1, "item": "EquipmentShirts1", "quantity": 2},
-                {"indent": 2, "item": "Grasslands1", "quantity": 12},
-                {"indent": 2, "item": "OakTree", "quantity": 6},
+                {"indent": 2, "item": "Copper", "quantity": 10},
                 {"indent": 1, "item": "Grasslands4", "quantity": 80},
                 {"indent": 1, "item": "BirchTree", "quantity": 200},
                 {"indent": 0, "item": "EquipmentShirts24", "quantity": 2},
                 {"indent": 1, "item": "EquipmentShirts16", "quantity": 2},
                 {"indent": 1, "item": "EquipmentShirts1", "quantity": 2},
-                {"indent": 2, "item": "Grasslands1", "quantity": 12},
-                {"indent": 2, "item": "OakTree", "quantity": 6},
+                {"indent": 2, "item": "Copper", "quantity": 10},
                 {"indent": 1, "item": "CraftMat1", "quantity": 300}
             ],
             "detRecipeTotals": [
-                {"item": "Grasslands1", "quantity": 116},
-                {"item": "OakTree", "quantity": 133},
+                {"item": "Copper", "quantity": 55},
+                {"item": "Grasslands1", "quantity": 50},
+                {"item": "OakTree", "quantity": 100},
                 {"item": "Grasslands4", "quantity": 80},
                 {"item": "BirchTree", "quantity": 200},
                 {"item": "EquipmentShirts16", "quantity": 2},
@@ -1619,7 +1613,7 @@
     "FillerMaterial": {
         "intID": "FillerMaterial",
         "recipe": [{"item": "FillerMaterial", "quantity": 1}, {"item": "FillerMaterial", "quantity": 1}],
-        "levelReqToCraft": 78,
+        "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 47,
         "tab": 6,
@@ -9647,7 +9641,7 @@
             {"item": "Tree11", "quantity": 3000000},
             {"item": "MarbleBar", "quantity": 15000}
         ],
-        "levelReqToCraft": 65,
+        "levelReqToCraft": 70,
         "expGiven": 1000000,
         "no": 1,
         "tab": 6,
@@ -9690,7 +9684,7 @@
             {"item": "Fish10", "quantity": 2000000},
             {"item": "MarbleBar", "quantity": 10000}
         ],
-        "levelReqToCraft": 66,
+        "levelReqToCraft": 71,
         "expGiven": 1000000,
         "no": 2,
         "tab": 6,
@@ -9731,7 +9725,7 @@
             {"item": "SpiA1", "quantity": 5000000},
             {"item": "MarbleBar", "quantity": 10000}
         ],
-        "levelReqToCraft": 67,
+        "levelReqToCraft": 72,
         "expGiven": 1000000,
         "no": 3,
         "tab": 6,
@@ -9772,7 +9766,7 @@
             {"item": "Tree12", "quantity": 2500000},
             {"item": "MarbleBar", "quantity": 10000}
         ],
-        "levelReqToCraft": 68,
+        "levelReqToCraft": 73,
         "expGiven": 1000000,
         "no": 4,
         "tab": 6,
@@ -9813,7 +9807,7 @@
             {"item": "Bug11", "quantity": 10000000},
             {"item": "SpiA2b", "quantity": 5000}
         ],
-        "levelReqToCraft": 70,
+        "levelReqToCraft": 75,
         "expGiven": 1000000,
         "no": 5,
         "tab": 6,
@@ -9873,7 +9867,7 @@
             {"item": "Bug12", "quantity": 1000000},
             {"item": "SpiA3", "quantity": 4000000}
         ],
-        "levelReqToCraft": 67,
+        "levelReqToCraft": 72,
         "expGiven": 1000000,
         "no": 6,
         "tab": 6,
@@ -9948,7 +9942,7 @@
             {"item": "Bug12", "quantity": 1000000},
             {"item": "SpiA4", "quantity": 4000000}
         ],
-        "levelReqToCraft": 67,
+        "levelReqToCraft": 72,
         "expGiven": 1000000,
         "no": 7,
         "tab": 6,
@@ -10023,7 +10017,7 @@
             {"item": "Bug12", "quantity": 1000000},
             {"item": "SpiA5", "quantity": 4000000}
         ],
-        "levelReqToCraft": 67,
+        "levelReqToCraft": 72,
         "expGiven": 1000000,
         "no": 8,
         "tab": 6,
@@ -10094,7 +10088,7 @@
     "EquipmentTools14": {
         "intID": "EquipmentTools14",
         "recipe": [{"item": "EquipmentTools9", "quantity": 1}, {"item": "MarbleBar", "quantity": 7500}],
-        "levelReqToCraft": 70,
+        "levelReqToCraft": 75,
         "expGiven": 1000000,
         "no": 9,
         "tab": 6,
@@ -10149,7 +10143,7 @@
     "MaxCapBagMi10": {
         "intID": "MaxCapBagMi10",
         "recipe": [{"item": "Marble", "quantity": 2000000}],
-        "levelReqToCraft": 67,
+        "levelReqToCraft": 72,
         "expGiven": 1000000,
         "no": 10,
         "tab": 6,
@@ -10168,7 +10162,7 @@
             {"item": "EquipmentToolsHatchet9", "quantity": 1},
             {"item": "Tree11", "quantity": 3000000}
         ],
-        "levelReqToCraft": 70,
+        "levelReqToCraft": 75,
         "expGiven": 1000000,
         "no": 11,
         "tab": 6,
@@ -10224,7 +10218,7 @@
     "MaxCapBagT10": {
         "intID": "MaxCapBagT10",
         "recipe": [{"item": "Tree12", "quantity": 2000000}],
-        "levelReqToCraft": 67,
+        "levelReqToCraft": 72,
         "expGiven": 1000000,
         "no": 12,
         "tab": 6,
@@ -10240,7 +10234,7 @@
     "FishingRod11": {
         "intID": "FishingRod11",
         "recipe": [{"item": "FishingRod10", "quantity": 1}, {"item": "Fish9", "quantity": 2000000}],
-        "levelReqToCraft": 71,
+        "levelReqToCraft": 76,
         "expGiven": 1000000,
         "no": 13,
         "tab": 6,
@@ -10299,7 +10293,7 @@
     "MaxCapBagFi10": {
         "intID": "MaxCapBagFi10",
         "recipe": [{"item": "Fish10", "quantity": 2000000}],
-        "levelReqToCraft": 68,
+        "levelReqToCraft": 73,
         "expGiven": 1000000,
         "no": 14,
         "tab": 6,
@@ -10315,7 +10309,7 @@
     "CatchingNet11": {
         "intID": "CatchingNet11",
         "recipe": [{"item": "CatchingNet10", "quantity": 1}, {"item": "Bug11", "quantity": 2000000}],
-        "levelReqToCraft": 71,
+        "levelReqToCraft": 76,
         "expGiven": 1000000,
         "no": 15,
         "tab": 6,
@@ -10372,7 +10366,7 @@
     "MaxCapBagB10": {
         "intID": "MaxCapBagB10",
         "recipe": [{"item": "Bug11", "quantity": 2000000}],
-        "levelReqToCraft": 68,
+        "levelReqToCraft": 73,
         "expGiven": 1000000,
         "no": 16,
         "tab": 6,
@@ -10392,7 +10386,7 @@
             {"item": "Critter5A", "quantity": 1000},
             {"item": "Refinery2", "quantity": 250000}
         ],
-        "levelReqToCraft": 73,
+        "levelReqToCraft": 78,
         "expGiven": 1000000,
         "no": 17,
         "tab": 6,
@@ -10439,7 +10433,7 @@
     "MaxCapBagTr9": {
         "intID": "MaxCapBagTr9",
         "recipe": [{"item": "Critter9", "quantity": 1500000}, {"item": "Refinery2", "quantity": 300000}],
-        "levelReqToCraft": 69,
+        "levelReqToCraft": 74,
         "expGiven": 1000000,
         "no": 18,
         "tab": 6,
@@ -10460,7 +10454,7 @@
             {"item": "Soul6", "quantity": 3000000},
             {"item": "Refinery3", "quantity": 125000}
         ],
-        "levelReqToCraft": 73,
+        "levelReqToCraft": 78,
         "expGiven": 1000000,
         "no": 19,
         "tab": 6,
@@ -10507,7 +10501,7 @@
     "MaxCapBagS9": {
         "intID": "MaxCapBagS9",
         "recipe": [{"item": "Soul6", "quantity": 2000000}, {"item": "Refinery3", "quantity": 125000}],
-        "levelReqToCraft": 69,
+        "levelReqToCraft": 74,
         "expGiven": 1000000,
         "no": 20,
         "tab": 6,
@@ -10524,7 +10518,7 @@
     "MaxCapBagF10": {
         "intID": "MaxCapBagF10",
         "recipe": [{"item": "FoodHealth17", "quantity": 2000000}, {"item": "FoodG12", "quantity": 500}],
-        "levelReqToCraft": 68,
+        "levelReqToCraft": 73,
         "expGiven": 1000000,
         "no": 21,
         "tab": 6,
@@ -10545,7 +10539,7 @@
             {"item": "SpiA3", "quantity": 1200000},
             {"item": "SpiA2b", "quantity": 1000}
         ],
-        "levelReqToCraft": 69,
+        "levelReqToCraft": 74,
         "expGiven": 1000000,
         "no": 22,
         "tab": 6,
@@ -10572,7 +10566,7 @@
             {"item": "SpiD2", "quantity": 10000000},
             {"item": "GodshardBar", "quantity": 150000}
         ],
-        "levelReqToCraft": 75,
+        "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 25,
         "tab": 6,
@@ -10623,7 +10617,7 @@
             {"item": "SpiC1", "quantity": 10000000},
             {"item": "GodshardBar", "quantity": 120000}
         ],
-        "levelReqToCraft": 74,
+        "levelReqToCraft": 79,
         "expGiven": 1000000,
         "no": 26,
         "tab": 6,
@@ -10672,7 +10666,7 @@
             {"item": "SpiB4", "quantity": 10000000},
             {"item": "GodshardBar", "quantity": 100000}
         ],
-        "levelReqToCraft": 73,
+        "levelReqToCraft": 78,
         "expGiven": 1000000,
         "no": 27,
         "tab": 6,
@@ -10721,7 +10715,7 @@
             {"item": "SpiB3", "quantity": 10000000},
             {"item": "GodshardBar", "quantity": 100000}
         ],
-        "levelReqToCraft": 72,
+        "levelReqToCraft": 77,
         "expGiven": 1000000,
         "no": 28,
         "tab": 6,
@@ -10770,7 +10764,7 @@
             {"item": "Refinery3", "quantity": 1000000},
             {"item": "GodshardBar", "quantity": 1000000}
         ],
-        "levelReqToCraft": 80,
+        "levelReqToCraft": 85,
         "expGiven": 1000000,
         "no": 29,
         "tab": 6,
@@ -10837,7 +10831,7 @@
             {"item": "Tree13", "quantity": 10000000},
             {"item": "GodshardBar", "quantity": 150000}
         ],
-        "levelReqToCraft": 78,
+        "levelReqToCraft": 83,
         "expGiven": 1000000,
         "no": 30,
         "tab": 6,
@@ -10917,7 +10911,7 @@
             {"item": "Tree13", "quantity": 10000000},
             {"item": "GodshardBar", "quantity": 150000}
         ],
-        "levelReqToCraft": 78,
+        "levelReqToCraft": 83,
         "expGiven": 1000000,
         "no": 31,
         "tab": 6,
@@ -10997,7 +10991,7 @@
             {"item": "Tree13", "quantity": 10000000},
             {"item": "GodshardBar", "quantity": 150000}
         ],
-        "levelReqToCraft": 78,
+        "levelReqToCraft": 83,
         "expGiven": 1000000,
         "no": 32,
         "tab": 6,
@@ -11077,7 +11071,7 @@
             {"item": "SpiD1", "quantity": 5000000},
             {"item": "GodshardBar", "quantity": 10000}
         ],
-        "levelReqToCraft": 73,
+        "levelReqToCraft": 82,
         "expGiven": 1000000,
         "no": 33,
         "tab": 6,
@@ -11137,7 +11131,7 @@
     "MaxCapBagMi11": {
         "intID": "MaxCapBagMi11",
         "recipe": [{"item": "Godshard", "quantity": 5000000}],
-        "levelReqToCraft": 69,
+        "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 34,
         "tab": 6,
@@ -11158,7 +11152,7 @@
             {"item": "Tree13", "quantity": 10000000},
             {"item": "GodshardBar", "quantity": 30000}
         ],
-        "levelReqToCraft": 73,
+        "levelReqToCraft": 82,
         "expGiven": 1000000,
         "no": 35,
         "tab": 6,
@@ -11221,7 +11215,7 @@
     "MaxCapBagT11": {
         "intID": "MaxCapBagT11",
         "recipe": [{"item": "Tree13", "quantity": 5000000}],
-        "levelReqToCraft": 69,
+        "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 36,
         "tab": 6,
@@ -11241,7 +11235,7 @@
             {"item": "Fish11", "quantity": 5000000},
             {"item": "GodshardBar", "quantity": 30000}
         ],
-        "levelReqToCraft": 68,
+        "levelReqToCraft": 82,
         "expGiven": 1000000,
         "no": 37,
         "tab": 6,
@@ -11305,7 +11299,7 @@
     "MaxCapBagFi11": {
         "intID": "MaxCapBagFi11",
         "recipe": [{"item": "Fish12", "quantity": 5000000}],
-        "levelReqToCraft": 69,
+        "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 38,
         "tab": 6,
@@ -11325,7 +11319,7 @@
             {"item": "Bug13", "quantity": 5000000},
             {"item": "GodshardBar", "quantity": 40000}
         ],
-        "levelReqToCraft": 71,
+        "levelReqToCraft": 82,
         "expGiven": 1000000,
         "no": 39,
         "tab": 6,
@@ -11407,7 +11401,7 @@
             {"item": "Critter2A", "quantity": 25000},
             {"item": "GodshardBar", "quantity": 50000}
         ],
-        "levelReqToCraft": 75,
+        "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 41,
         "tab": 6,
@@ -11458,7 +11452,7 @@
     "MaxCapBagTr10": {
         "intID": "MaxCapBagTr10",
         "recipe": [{"item": "Critter5", "quantity": 5555555}],
-        "levelReqToCraft": 74,
+        "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 42,
         "tab": 6,
@@ -11478,7 +11472,7 @@
             {"item": "Soul7", "quantity": 5000000},
             {"item": "GodshardBar", "quantity": 50000}
         ],
-        "levelReqToCraft": 73,
+        "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 43,
         "tab": 6,
@@ -11530,7 +11524,7 @@
     "MaxCapBagS10": {
         "intID": "MaxCapBagS10",
         "recipe": [{"item": "Soul7", "quantity": 5000000}],
-        "levelReqToCraft": 72,
+        "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 44,
         "tab": 6,
@@ -11573,7 +11567,7 @@
             {"item": "SpiD1", "quantity": 1000000},
             {"item": "SpiB2b", "quantity": 5000}
         ],
-        "levelReqToCraft": 78,
+        "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 46,
         "tab": 6,
@@ -11595,7 +11589,7 @@
     "EquipmentSmithingTabs7": {
         "intID": "EquipmentSmithingTabs7",
         "recipe": [{"item": "FillerMaterial", "quantity": 1}, {"item": "FillerMaterial", "quantity": 1}],
-        "levelReqToCraft": 78,
+        "levelReqToCraft": 80,
         "expGiven": 1000000,
         "no": 48,
         "tab": 6,

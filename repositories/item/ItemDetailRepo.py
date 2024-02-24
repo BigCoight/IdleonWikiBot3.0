@@ -14,57 +14,60 @@ from repositories.master.Repository import Repository
 
 class ItemDetailRepo(Repository[CommonItem]):
 
-    @classmethod
-    def getCategory(cls) -> str:
-        return "Item"
+	@classmethod
+	def getCategory(cls) -> str:
+		return "Item"
 
-    @classmethod
-    def parse(cls, value) -> CommonItem:
-        return CommonItem.parse_obj(value)
+	@classmethod
+	def parse(cls, value) -> CommonItem:
+		return CommonItem.parse_obj(value)
 
-    @classmethod
-    def getSections(cls) -> List[str]:
-        return [f"Items{i}" for i in range(Constants.numItemSections)]
+	@classmethod
+	def getSections(cls) -> List[str]:
+		return [f"Items{i}" for i in range(Constants.numItemSections)]
 
-    @classmethod
-    def generateRepo(cls) -> None:
+	@classmethod
+	def generateRepo(cls) -> None:
 
-        itemTypes: Dict[str, Type[CommonItem]] = {
-            'Item': CommonItem,
-            'Quest': QuestItem,
-            'Equip': EquipItem,
-            'Consumable': ConsumableItem,
-        }
+		itemTypes: Dict[str, Type[CommonItem]] = {
+			'Item': CommonItem,
+			'Quest': QuestItem,
+			'Equip': EquipItem,
+			'Consumable': ConsumableItem,
+		}
 
-        reNames = r'.\.addNew(.*?)\("(.*?)", .\)'
-        reData = r'.\..\.(\S*?) = ?"?(.*?)"?\)'
-        for j in range(len(cls.getSections())):
-            itemText = formatStr(cls.getSection(j), ["\n", "  "])
-            itemData = re.split(reNames, itemText)
-            for i in range(0, len(itemData), 3):
-                if data := re.findall(reData, itemData[i]):
-                    itemName = itemData[i + 2]
-                    itemType = itemData[i + 1]
-                    item = {}
-                    for atr, val in data:
-                        item[atr] = formatStr(val, replaceUnderscores=True)
-                    item["internalID"] = itemName
-                    item["Type"] = string.capwords(item["Type"])
-                    cls.add(itemName, itemTypes[itemType].parse_obj(item))
+		reNames = r'.\.addNew(.*?)\("(.*?)", .\)'
+		reData = r'.\..\.(\S*?) = ?(?:"(.*?)"\)|(.*?)\))'
+		for j in range(len(cls.getSections())):
+			itemText = formatStr(cls.getSection(j), ["\n", "  "])
+			itemData = re.split(reNames, itemText)
+			for i in range(0, len(itemData), 3):
+				if data := re.findall(reData, itemData[i]):
+					itemName = itemData[i + 2]
+					itemType = itemData[i + 1]
+					item = {}
+					for atr, val1, val2 in data:
+						if val1:
+							item[atr] = formatStr(val1, replaceUnderscores = True)
+						else:
+							item[atr] = formatStr(val2, replaceUnderscores = True)
+					item["internalID"] = itemName
+					item["Type"] = string.capwords(item["Type"])
+					cls.add(itemName, itemTypes[itemType].parse_obj(item))
 
-    @classmethod
-    def isItemOfTypeGen(cls, item: str, typeGen: TypeGen) -> bool:
-        if not cls.contains(item):
-            return False
-        return cls.get(item).typeGen == typeGen
+	@classmethod
+	def isItemOfTypeGen(cls, item: str, typeGen: TypeGen) -> bool:
+		if not cls.contains(item):
+			return False
+		return cls.get(item).typeGen == typeGen
 
-    @classmethod
-    def getDisplayName(cls, name: str) -> str:
-        if item := cls.get(name):
-            return item.displayName
-        print(f"{name} not found in ItemRepo!!!")
-        return ""
+	@classmethod
+	def getDisplayName(cls, name: str) -> str:
+		if item := cls.get(name):
+			return item.displayName
+		print(f"{name} not found in ItemRepo!!!")
+		return ""
 
-    @classmethod
-    def getWikiName(cls, name: str) -> str:
-        return cls.getDisplayName(name)
+	@classmethod
+	def getWikiName(cls, name: str) -> str:
+		return cls.getDisplayName(name)

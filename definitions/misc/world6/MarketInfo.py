@@ -11,4 +11,4 @@ class MarketInfo(IdleonModel):
 	costExponent: Numeric
 	cropReq: int
 	maxLvl: int
-	bonusPerLvl: int
+	bonusPerLvl: Numeric

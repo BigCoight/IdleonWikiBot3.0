@@ -3,7 +3,7 @@ from typing import List
 
 from definitions.common.DropTypes import Drop, ItemDrop
 from definitions.enemy.DropTable import DropTable
-from helpers.HelperFunctions import formatStr, getFromArrayArray, ignoreWorld6
+from helpers.HelperFunctions import formatStr, getFromArrayArray
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.item.SpecificItemRepo import SpecificItemRepo
 from repositories.master.Repository import Repository
@@ -127,7 +127,3 @@ class DropTableRepo(Repository[DropTable]):
 			chance = 0.029 * (1 + 1 / 20),
 			questLink = "N/A",
 		))
-
-	@classmethod
-	def _ignore(cls, name: str, data: DropTable) -> bool:
-		return ignoreWorld6(name)

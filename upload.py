@@ -8,8 +8,8 @@ from repositories.npc.NpcRepo import NpcRepo
 # loginManager = ClientLoginManager()
 # loginManager.login()
 
-newV = IdleonReader("200", True)
-oldV = IdleonReader("191", True)
+newV = IdleonReader("201", True)
+oldV = IdleonReader("192", True)
 upload = True
 
 # ItemRepo.initialise(oldV.codeReader, log = False)
@@ -32,4 +32,4 @@ ItemRepo.upload(not upload)
 EnemyRepo.upload(not upload)
 NpcRepo.upload(not upload)
 DropTableRepo.upload(not upload)
-# RecipeRepo.upload(not upload)
+RecipeRepo.upload(not upload)

@@ -7,8 +7,8 @@ from definitions.component.JadeComponent import JadeComponent
 from definitions.component.LiquidComponent import LiquidComponent
 from definitions.component.MealComponent import MealComponent
 from definitions.component.SailTeasureComponent import SailTreasureComponent
-from definitions.component.SoulComponent import SoulComponent
 from definitions.component.SpiceComponent import SpiceComponent
+from definitions.component.SummonComponent import SummonComponent
 from helpers.CustomTypes import Integer
 
 
@@ -38,7 +38,7 @@ class ComponentFactory:
 			if typ == "Crop":
 				return CropComponent(cropId = num, quantity = quantity)
 			if typ == "Summon":
-				return SoulComponent(soulId = num, quantity = quantity)
+				return SummonComponent(summonId = num, quantity = quantity)
 		if part[0:6] == "Liquid":
 			return LiquidComponent(liquidNo = part[6:], quantity = quantity)
 		if part[0:5] == "Spice":

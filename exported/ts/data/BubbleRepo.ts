@@ -5,8 +5,8 @@ import { CropComponentModel } from '../model/cropComponentModel';
 import { JadeComponentModel } from '../model/jadeComponentModel';
 import { LiquidComponentModel } from '../model/liquidComponentModel';
 import { SailTreasureComponentModel } from '../model/sailTreasureComponentModel';
-import { SoulComponentModel } from '../model/soulComponentModel';
 import { SpiceComponentModel } from '../model/spiceComponentModel';
+import { SummonComponentModel } from '../model/summonComponentModel';
 
 export class CauldronBase { constructor(public id: string, public data: CauldronModel) { } }
 
@@ -299,7 +299,7 @@ export const initBubbleRepo = () => {
                         "x2": 60,
                         "func": "decay",
                         "description": "+{% STR for every 500 Tome Completion Points above 1000. NOTE: The tome is coming in an upcoming weekly update!",
-                        "requirements": [<SoulComponentModel>{"soulId": "0", "quantity": 500}, <LiquidComponentModel>{"liquidNo": "4", "quantity": 6}],
+                        "requirements": [<SummonComponentModel>{"summonId": "0", "quantity": 500}, <LiquidComponentModel>{"liquidNo": "4", "quantity": 6}],
                         "bonusKey": "W8"
                     },
                     <BubbleModel>{
@@ -319,7 +319,7 @@ export const initBubbleRepo = () => {
                         "x2": 50,
                         "func": "decay",
                         "description": "+{% Crop Evolution chance for every 500 Tome Completion Points above 1000.",
-                        "requirements": [<SoulComponentModel>{"soulId": "0", "quantity": 1500}, <LiquidComponentModel>{"liquidNo": "4", "quantity": 6}],
+                        "requirements": [<SummonComponentModel>{"summonId": "0", "quantity": 1500}, <LiquidComponentModel>{"liquidNo": "4", "quantity": 6}],
                         "bonusKey": "W10AllCharz"
                     }
                 ]
@@ -899,7 +899,7 @@ export const initBubbleRepo = () => {
                         "x2": 60,
                         "func": "decay",
                         "description": "The effect WIS has on Damage is increased by +{%",
-                        "requirements": [<SoulComponentModel>{"soulId": "0", "quantity": 500}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 5}],
+                        "requirements": [<SummonComponentModel>{"summonId": "0", "quantity": 500}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 5}],
                         "bonusKey": "M6"
                     },
                     <BubbleModel>{
@@ -909,7 +909,7 @@ export const initBubbleRepo = () => {
                         "x2": 60,
                         "func": "decay",
                         "description": "+{ Choppin and Worship Power. This bonus increases based on every 10 Class LVs you are above 500.",
-                        "requirements": [<SoulComponentModel>{"soulId": "0", "quantity": 950}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 5}],
+                        "requirements": [<SummonComponentModel>{"summonId": "0", "quantity": 950}, <LiquidComponentModel>{"liquidNo": "3", "quantity": 5}],
                         "bonusKey": "M7"
                     },
                     <BubbleModel>{
@@ -1236,7 +1236,7 @@ export const initBubbleRepo = () => {
                         "x2": 60,
                         "func": "decayMulti",
                         "description": "{x Item Find chance for your ninja twin while sneaking!",
-                        "requirements": [<SoulComponentModel>{"soulId": "0", "quantity": 1200}, <LiquidComponentModel>{"liquidNo": "4", "quantity": 6}],
+                        "requirements": [<SummonComponentModel>{"summonId": "0", "quantity": 1200}, <LiquidComponentModel>{"liquidNo": "4", "quantity": 6}],
                         "bonusKey": "Y9ACTIVE"
                     },
                     <BubbleModel>{

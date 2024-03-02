@@ -1,25 +1,30 @@
 {
-    "new": {},
+    "new": {
+        "Critter11A": {
+            "displayName": "Tottoise",
+            "sellPrice": 3,
+            "Type": "Critter",
+            "description": "He out here livin' his best life! No he doesn't look familiar, you're just being silly. Very silly. "
+        },
+        "Critter11": {
+            "displayName": "Tuttle",
+            "sellPrice": 80,
+            "Type": "Critter",
+            "description": "He jammin' to the beat! "
+        }
+    },
     "changes": {
-        "WorshipSkull11": {"lvReqToCraft": [3000, 4200], "Skill_Power": [55, 70], "maxCharge": [3000, 4200]},
-        "Quest5": {
-            "displayName": ["Picnic Stowaway's Jam", "Class Certificate"],
-            "description": [
-                "It's a fake jar filled with springs! The best way to crack a joke with your friends at their expense! ",
-                "Proof that you selected a class! You're on your way to the top, this is just the beginning! "
-            ]
-        },
-        "FoodG12": {
-            "description": [
-                "Claiming all AFK Gains rate. Golden foods are never consumed.",
-                "Increases all AFK Gains rate. Golden foods are never consumed."
-            ],
-            "goldenFoodData": {"effect": ["Claiming all AFK Gains rate by [%.", "Increases all AFK Gains rate by [%."]}
-        },
-        "EquipmentBows14": {"miscUp2": ["20% Drop Rate", "20% Drop Chance"]},
-        "CardsF34": {"dropChance": [1, 1e-08]},
-        "WorshipSkull10": {"lvReqToCraft": [3000, 3600], "Skill_Power": [55, 63], "maxCharge": [3000, 3600]},
-        "CardsF35": {"dropChance": [1, 1e-08]},
-        "EquipmentSword9": {"miscUp2": ["20% Drop Rate", "20% Drop Chance"]}
+        "CardsF35": {"dropChance": [1e-08, 4e-08]},
+        "CardsF34": {"dropChance": [1e-08, 4e-08]},
+        "InvStorageN": {"displayName": ["Woodlin Chest", "Ninja Chest"]},
+        "EquipmentNametag3": {
+            "displayName": ["Golden Nametag", "Balling Nametag"],
+            "Weapon_Power": [3, 0],
+            "STR": [5, 0],
+            "AGI": [5, 0],
+            "WIS": [5, 0],
+            "LUK": [5, 40],
+            "Defence": [20, 0]
+        }
     }
 }

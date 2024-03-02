@@ -150,6 +150,7 @@ class IdleonReader:
 		self.codeReader.addSection("SigilDesc = function ()", "SigilDesc")
 		self.codeReader.addSection("SkullShopDesc = function ()", "SkullShop")
 		self.codeReader.addSection("MapName = function ()", "MapInternal")
+		self.codeReader.addSection("MapDetails = function ", "MapDetails")
 
 		self.codeReader.addSection("AtomInfo = function ()", "AtomInfo")
 

@@ -1885,7 +1885,7 @@
                 "x2": 0,
                 "func": "add",
                 "description": "+{% Farming Speed, so the plants grow faster. Makes sense, plants do get energy from the dumbest things...",
-                "requirements": [{"item": "SpiA2", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+                "requirements": [{"item": "SpiA2", "quantity": -1}, {"liquidNo": "4", "quantity": -1}],
                 "bonusKey": "6FarmSpd"
             },
             {
@@ -1895,7 +1895,7 @@
                 "x2": 0,
                 "func": "add",
                 "description": "+{% White Essence gain, and before you make an angry rant, male ladybugs were also used to flavor this vial!",
-                "requirements": [{"item": "Bug12", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+                "requirements": [{"item": "Bug12", "quantity": -1}, {"liquidNo": "4", "quantity": -1}],
                 "bonusKey": "6WhiteEss"
             },
             {
@@ -1905,7 +1905,7 @@
                 "x2": 0,
                 "func": "add",
                 "description": "+{% Farming Crop Evolution chance. I guess like, the fishbits mutate with the crops? Idk I'm not a planterman.",
-                "requirements": [{"item": "Fish12", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+                "requirements": [{"item": "Fish12", "quantity": -1}, {"liquidNo": "4", "quantity": -1}],
                 "bonusKey": "6FarmEvo"
             },
             {
@@ -1915,7 +1915,7 @@
                 "x2": 0,
                 "func": "add",
                 "description": "+{% Ninja Untying rate. I wonder if bomb diffusers drink tea before going to work?",
-                "requirements": [{"item": "SpiB1", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+                "requirements": [{"item": "SpiB1", "quantity": -1}, {"liquidNo": "4", "quantity": -1}],
                 "bonusKey": "6Untie"
             },
             {
@@ -1925,7 +1925,7 @@
                 "x2": 0,
                 "func": "add",
                 "description": "+{% Cooking Speed, but multiplicative so it stacks big time with the other 892,314 cooking bonuses you have!",
-                "requirements": [{"item": "Bug13", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+                "requirements": [{"item": "Bug13", "quantity": -1}, {"liquidNo": "4", "quantity": -1}],
                 "bonusKey": "6CookSpd"
             },
             {
@@ -1935,7 +1935,7 @@
                 "x2": 0,
                 "func": "add",
                 "description": "+{% Total Skill efficiency, but not multiplicative so that it drowns in the sea of bonuses you already have.",
-                "requirements": [{"item": "GodshardBar", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+                "requirements": [{"item": "GodshardBar", "quantity": -1}, {"liquidNo": "4", "quantity": -1}],
                 "bonusKey": "6SkillEff"
             },
             {
@@ -1945,7 +1945,7 @@
                 "x2": 0,
                 "func": "add",
                 "description": "+{% Sneaking EXP gain. Something about it makes you feel light on your feet, as if u just wanna fly...",
-                "requirements": [{"item": "Soul7", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+                "requirements": [{"item": "Soul7", "quantity": -1}, {"liquidNo": "4", "quantity": -1}],
                 "bonusKey": "6SneakEXP"
             },
             {
@@ -1955,7 +1955,7 @@
                 "x2": 0,
                 "func": "add",
                 "description": "+{% Summoning EXP gain. No, the horn doesn't contribute to the flavor, just the fleshy bits inside.",
-                "requirements": [{"item": "SpiC2", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+                "requirements": [{"item": "SpiC2", "quantity": -1}, {"liquidNo": "4", "quantity": -1}],
                 "bonusKey": "6SummEXP"
             },
             {
@@ -1965,7 +1965,7 @@
                 "x2": 0,
                 "func": "add",
                 "description": "+{% Farming EXP gain, but dont drink too much since Eucalyptus oil is toxic IRL no joke fr fr search it or just take my word.",
-                "requirements": [{"item": "Tree13", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+                "requirements": [{"item": "Tree13", "quantity": -1}, {"liquidNo": "4", "quantity": -1}],
                 "bonusKey": "6FarmEXP"
             },
             {
@@ -1975,8 +1975,18 @@
                 "x2": 0,
                 "func": "add",
                 "description": "+{% Jade Gain in Sneaking. Congratulations btw on trekking through World 6 like that what a journey!",
-                "requirements": [{"item": "SpiD3", "quantity": -1}, {"liquidNo": "3", "quantity": -1}],
+                "requirements": [{"item": "SpiD3", "quantity": -1}, {"liquidNo": "4", "quantity": -1}],
                 "bonusKey": "6Jade"
+            },
+            {
+                "cauldron": "Vials",
+                "name": "Turtle Tisane",
+                "x1": 4,
+                "x2": 0,
+                "func": "add",
+                "description": "+{% Artifact find chance, Sigil SPD, Cooking SPD, and Construction Build rate. All MULTIPLICATIVE! A very special vial indeed...",
+                "requirements": [{"item": "Critter11", "quantity": -1}, {"liquidNo": "4", "quantity": -1}],
+                "bonusKey": "6turtle"
             }
         ]
     },

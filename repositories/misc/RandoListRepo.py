@@ -9,7 +9,7 @@ from helpers.HelperFunctions import strToArray
 from repositories.master.Repository import Repository
 
 
-class RandoListDescriptions(int, IdleonEnum, metaclass=CheckIn):
+class RandoListDescriptions(int, IdleonEnum, metaclass = CheckIn):
 	monstersInGrasslands = auto()
 	monstersInDesert = auto()
 	noItemsRemoveFromAnvTab1 = auto()
@@ -108,6 +108,12 @@ class RandoListDescriptions(int, IdleonEnum, metaclass=CheckIn):
 	dk16 = auto()
 	dk17 = auto()
 	dk18 = auto()
+	dk19 = auto()
+	dk20 = auto()
+	dk21 = auto()
+	dk22 = auto()
+	dk23 = auto()
+	dk24 = auto()
 
 
 class RandoListRepo(Repository[RandoList]):
@@ -127,14 +133,14 @@ class RandoListRepo(Repository[RandoList]):
 		for n, lst in enumerate(lsts):
 			if lst[0]:
 				if " " in lst[0]:
-					cls.addList(RandoList(elements=lst[0].split(" ")))
-					cls.add(RandoListDescriptions(n + 1).name, RandoList(elements=lst[0].split(" ")))
+					cls.addList(RandoList(elements = lst[0].split(" ")))
+					cls.add(RandoListDescriptions(n + 1).name, RandoList(elements = lst[0].split(" ")))
 				else:
-					cls.addList(RandoList(elements=list(lst[0])))
-					cls.add(RandoListDescriptions(n + 1).name, RandoList(elements=list(lst[0])))
+					cls.addList(RandoList(elements = list(lst[0])))
+					cls.add(RandoListDescriptions(n + 1).name, RandoList(elements = list(lst[0])))
 			else:
-				cls.addList(RandoList(elements=strToArray(lst[1])))
-				cls.add(RandoListDescriptions(n + 1).name, RandoList(elements=strToArray(lst[1])))
+				cls.addList(RandoList(elements = strToArray(lst[1])))
+				cls.add(RandoListDescriptions(n + 1).name, RandoList(elements = strToArray(lst[1])))
 
 	@classmethod
 	def get(cls, key: RandoListDescriptions) -> Optional[RandoList]:

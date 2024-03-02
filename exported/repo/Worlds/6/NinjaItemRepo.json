@@ -179,6 +179,15 @@
         "x1": 80,
         "x2": 3
     },
+    "NjWep8": {
+        "internalId": "NjWep8",
+        "itemTypeId": 1,
+        "itemType": "Weapon",
+        "itemId": 1,
+        "name": "Spiral Nunchaku",
+        "x1": 110,
+        "x2": 4
+    },
     "NjWep1": {
         "internalId": "NjWep1",
         "itemTypeId": 1,
@@ -213,6 +222,33 @@
         "itemId": 2,
         "name": "Damascus Kunai",
         "x1": 28,
+        "x2": 0
+    },
+    "NjGl0": {
+        "internalId": "NjGl0",
+        "itemTypeId": 1,
+        "itemType": "Weapon",
+        "itemId": 0,
+        "name": "Leather Gloves",
+        "x1": 5,
+        "x2": 0
+    },
+    "NjGl1": {
+        "internalId": "NjGl1",
+        "itemTypeId": 1,
+        "itemType": "Weapon",
+        "itemId": 0,
+        "name": "Chainmail Gloves",
+        "x1": 7,
+        "x2": 0
+    },
+    "NjGl2": {
+        "internalId": "NjGl2",
+        "itemTypeId": 1,
+        "itemType": "Weapon",
+        "itemId": 0,
+        "name": "Thundergloves",
+        "x1": 10,
         "x2": 0
     },
     "NjTr0": {
@@ -379,41 +415,41 @@
         "internalId": "NjTr16",
         "itemTypeId": 2,
         "itemType": "Trinket",
-        "itemId": 2,
-        "name": "Item Name",
-        "x1": 1,
-        "bonus": "Item Desc",
-        "x3": 200
+        "itemId": 16,
+        "name": "Lotus Flower",
+        "x1": 25,
+        "bonus": "All other Ninjas on same floor get +{% Stealth",
+        "x3": 700
     },
     "NjTr17": {
         "internalId": "NjTr17",
         "itemTypeId": 2,
         "itemType": "Trinket",
-        "itemId": 2,
-        "name": "Item Name",
-        "x1": 1,
-        "bonus": "Item Desc",
-        "x3": 200
+        "itemId": 17,
+        "name": "Rosaries",
+        "x1": 35,
+        "bonus": "Gives you }x Total Stealth",
+        "x3": 1700
     },
     "NjTr18": {
         "internalId": "NjTr18",
         "itemTypeId": 2,
         "itemType": "Trinket",
-        "itemId": 2,
-        "name": "Item Name",
-        "x1": 1,
-        "bonus": "Item Desc",
+        "itemId": 18,
+        "name": "Gold Dagger",
+        "x1": 5,
+        "bonus": "If in Inventory, all ninjas get +{% Nunchaku Damage. Doesn't stack with other Gold Daggers",
         "x3": 200
     },
     "NjTr19": {
         "internalId": "NjTr19",
         "itemTypeId": 2,
         "itemType": "Trinket",
-        "itemId": 2,
-        "name": "Item Name",
-        "x1": 1,
-        "bonus": "Item Desc",
-        "x3": 200
+        "itemId": 19,
+        "name": "Black Belt",
+        "x1": 20,
+        "bonus": "+{% Sneaking EXP and Jade coins. If there are no other ninjas on floor, this bonus is tripled.",
+        "x3": 400
     },
     "NjTrP0": {
         "internalId": "NjTrP0",
@@ -554,5 +590,45 @@
         "x1": 40,
         "desc": "Hold down to add this Pristine Charm to your collection in the Lobby. Click it there to see its bonus.",
         "bonus": "}x Jade Coin gain"
+    },
+    "NjTrP14": {
+        "internalId": "NjTrP14",
+        "itemTypeId": 3,
+        "itemType": "PristineCharm",
+        "itemId": 14,
+        "name": "Gumm Stick",
+        "x1": 50,
+        "desc": "Hold down to add this Pristine Charm to your collection in the Lobby. Click it there to see its bonus.",
+        "bonus": "+{% Golden Food bonus"
+    },
+    "NjTrP15": {
+        "internalId": "NjTrP15",
+        "itemTypeId": 3,
+        "itemType": "PristineCharm",
+        "itemId": 15,
+        "name": "Lolly Flower",
+        "x1": 25,
+        "desc": "Hold down to add this Pristine Charm to your collection in the Lobby. Click it there to see its bonus.",
+        "bonus": "+{% Printer Output"
+    },
+    "NjTrP16": {
+        "internalId": "NjTrP16",
+        "itemTypeId": 3,
+        "itemType": "PristineCharm",
+        "itemId": 16,
+        "name": "Gumball Necklace",
+        "x1": 40,
+        "desc": "Hold down to add this Pristine Charm to your collection in the Lobby. Click it there to see its bonus.",
+        "bonus": "}x Money from Monsters"
+    },
+    "NjTrP17": {
+        "internalId": "NjTrP17",
+        "itemTypeId": 3,
+        "itemType": "PristineCharm",
+        "itemId": 17,
+        "name": "Liqorice Rolle",
+        "x1": 25,
+        "desc": "Hold down to add this Pristine Charm to your collection in the Lobby. Click it there to see its bonus.",
+        "bonus": "}x Bigger Bonuses of Non Misc Stamps"
     }
 }

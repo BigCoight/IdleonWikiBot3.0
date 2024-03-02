@@ -24,7 +24,7 @@ export const initWeeklyActionRepo = () => {
         new WeeklyActionBase(2, <WeeklyActionModel>{
                 "actionType": ActionTypeEnum.Buff,
                 "desc": "You tell the others of a new technique, so every ATTACK in the future deals {% more damage",
-                "scaling": 0.5,
+                "scaling": 0,
                 "max": 60,
                 "key": "b"
             }),
@@ -59,7 +59,7 @@ export const initWeeklyActionRepo = () => {
         new WeeklyActionBase(7, <WeeklyActionModel>{
                 "actionType": ActionTypeEnum.Attack,
                 "desc": "Dual wielding the next characters weapon, you deal { damage, but the next char can't choose ATTACK.",
-                "scaling": 1.5,
+                "scaling": 1,
                 "max": 1500,
                 "key": "f"
             }),
@@ -73,14 +73,14 @@ export const initWeeklyActionRepo = () => {
         new WeeklyActionBase(9, <WeeklyActionModel>{
                 "actionType": ActionTypeEnum.Attack,
                 "desc": "You just start randomly grabbing weapons, dealing { damage, but the next 2 chars can't choose ATTACK.",
-                "scaling": 1.5,
+                "scaling": 1,
                 "max": 2500,
                 "key": "f"
             }),
         new WeeklyActionBase(10, <WeeklyActionModel>{
                 "actionType": ActionTypeEnum.Buff,
                 "desc": "You cast a gross but effective fog, increasing all damage by %, but the next char can't choose BUFF.",
-                "scaling": 1.5,
+                "scaling": 1,
                 "max": 120,
                 "key": "h"
             }),

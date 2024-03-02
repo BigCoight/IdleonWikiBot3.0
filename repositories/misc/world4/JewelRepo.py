@@ -4,9 +4,15 @@ from definitions.component.ComponentFactory import ComponentFactory
 from definitions.misc.world4.Jewel import Jewel
 from helpers.HelperFunctions import getFromSplitArray
 from repositories.master.Repository import Repository
+from repositories.misc.world4.MealRepo import MealRepo
 
 
 class JewelRepo(Repository[Jewel]):
+
+	@classmethod
+	def initDependencies(cls, log = True) -> None:
+		MealRepo.initialise(cls.codeReader, log)
+
 	@classmethod
 	def getCategory(cls) -> str:
 		return "Worlds/4"

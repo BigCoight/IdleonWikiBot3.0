@@ -72,3 +72,31 @@ class Constants:
 	ninjaFloors = 11
 
 	labInserts = 4
+
+	territoryNiceNames = [
+		"Grasslands",
+		"Jungle",
+		"Encroaching Forest",
+		"Tree Interior",
+		"Stinky Sewers",
+		"Desert Oasis",
+		"Beach Docks",
+		"Coarse Mountains",
+		"Twilight Desert",
+		"The Crypt",
+		"Frosty Peaks",
+		"Tundra Outback",
+		"Crystal Caverns",
+		"Pristalle Lake",
+		"Arena",
+		"Nebulon Mantle",
+		"Starfield Skies",
+		"Shores Of Eternity",
+		"Molten Bay",
+		"Smokey Lake",
+		"Wurm Catacombs",
+		"Spirit Fields",
+		"Bamboo Forest",
+		"Lullaby Airways",
+		"Dharma Mesa",
+	]

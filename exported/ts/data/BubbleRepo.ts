@@ -49,8 +49,8 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Power Cauldron",
                         "name": "Wyoming Blood",
-                        "x1": 23.5,
-                        "x2": 1.5,
+                        "x1": 23,
+                        "x2": 1,
                         "func": "bigBase",
                         "description": "Multi-Ore mining chance is increased by +{%, and your max Multi-Ore chance is 300% instead of 100%.",
                         "requirements": [<ComponentModel>{"item": "Bug1", "quantity": 30}, <LiquidComponentModel>{"liquidNo": "1", "quantity": 3}],
@@ -79,8 +79,8 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Power Cauldron",
                         "name": "Sploosh Sploosh",
-                        "x1": 23.5,
-                        "x2": 1.5,
+                        "x1": 23,
+                        "x2": 1,
                         "func": "bigBase",
                         "description": "Multi-Fish fishing chance is increased by +{%, and your max Multi-Fish chance is 300% instead of 100%.",
                         "requirements": [<ComponentModel>{"item": "Fish2", "quantity": 100}, <LiquidComponentModel>{"liquidNo": "1", "quantity": 4}],
@@ -99,7 +99,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Power Cauldron",
                         "name": "Fmj",
-                        "x1": 0.5,
+                        "x1": 0,
                         "x2": 0,
                         "func": "add",
                         "description": "+{% more defence from Equipment. Also, +1 base Def per Class LV, up to +{.",
@@ -130,7 +130,7 @@ export const initBubbleRepo = () => {
                         "cauldron": "Power Cauldron",
                         "name": "Call Me Bob",
                         "x1": 25,
-                        "x2": 2.5,
+                        "x2": 2,
                         "func": "bigBase",
                         "description": "+{% Construction EXP Gain. Also gives +50% Bug-Fixing speed if your username is LavaFlame2.",
                         "requirements": [<ComponentModel>{"item": "SnowA3", "quantity": 120}, <LiquidComponentModel>{"liquidNo": "2", "quantity": 3}],
@@ -179,7 +179,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Power Cauldron",
                         "name": "Multorange",
-                        "x1": 1.4,
+                        "x1": 1,
                         "x2": 30,
                         "func": "decayMulti",
                         "description": "The following orange bubbles give {x higher bonus than displayed: 1st, 3rd, 5th, 8th, 15th",
@@ -399,8 +399,8 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Quicc Cauldron",
                         "name": "Bug]",
-                        "x1": 23.5,
-                        "x2": 1.5,
+                        "x1": 23,
+                        "x2": 1,
                         "func": "bigBase",
                         "description": "Multi-Bug catching chance is increased by +{%, and your max Multi-Bug chance is 300% instead of 100%.",
                         "requirements": [<ComponentModel>{"item": "Bug3", "quantity": 70}, <LiquidComponentModel>{"liquidNo": "1", "quantity": 4}],
@@ -489,7 +489,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Quicc Cauldron",
                         "name": "Premigreen",
-                        "x1": 1.4,
+                        "x1": 1,
                         "x2": 30,
                         "func": "decayMulti",
                         "description": "The following green bubbles give {x higher bonus than displayed: 1st, 7th, 10th, 13th, 15th",
@@ -669,8 +669,8 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "High-IQ Cauldron",
                         "name": "Molto Loggo",
-                        "x1": 23.5,
-                        "x2": 1.5,
+                        "x1": 23,
+                        "x2": 1,
                         "func": "bigBase",
                         "description": "Multi-Log chop chance is increased by +{%, and your max Multi-Log chance is now 300% instead of 100%.",
                         "requirements": [<ComponentModel>{"item": "IronBar", "quantity": 21}, <LiquidComponentModel>{"liquidNo": "1", "quantity": 3}],
@@ -749,7 +749,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "High-IQ Cauldron",
                         "name": "Call Me Pope",
-                        "x1": 2.4,
+                        "x1": 2,
                         "x2": 70,
                         "func": "decayMulti",
                         "description": "{x Worship Charge rate per hour. Also, {x Max Worship Charge! You bouta go super with all that charge... just sayin'",
@@ -799,7 +799,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "High-IQ Cauldron",
                         "name": "Severapurple",
-                        "x1": 1.4,
+                        "x1": 1,
                         "x2": 30,
                         "func": "decayMulti",
                         "description": "The following purple bubbles give {x higher bonus than displayed: 1st, 3rd, 5th, 13th, 15th",
@@ -989,7 +989,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Kazam Cauldron",
                         "name": "Prowesessary",
-                        "x1": 1.5,
+                        "x1": 1,
                         "x2": 60,
                         "func": "decayMulti",
                         "description": "The Prowess Bonus for every skill is multiplied by {. Prowess lowers the Efficiency needed to get multiple QTY per drop from resources.",
@@ -1029,8 +1029,8 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Kazam Cauldron",
                         "name": "Grind Time",
-                        "x1": 9.7,
-                        "x2": 0.3,
+                        "x1": 9,
+                        "x2": 0,
                         "func": "bigBase",
                         "description": "+{% Class EXP. The go-to active bubble for anyone who wants to reach max level faster and finally start playing the game!",
                         "requirements": [<LiquidComponentModel>{"liquidNo": "1", "quantity": 50}, <LiquidComponentModel>{"liquidNo": "2", "quantity": 25}],
@@ -1119,7 +1119,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Kazam Cauldron",
                         "name": "Diamond Chef",
-                        "x1": 0.3,
+                        "x1": 0,
                         "x2": 13,
                         "func": "decayMulti",
                         "description": "{x faster Meal and Fire Kitchen Speeds for every Meal at Lv 11+. This is when the meal plate becomes Diamond Blue, just so you know!",
@@ -1159,7 +1159,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Kazam Cauldron",
                         "name": "Big P",
-                        "x1": 0.5,
+                        "x1": 0,
                         "x2": 60,
                         "func": "decayMulti",
                         "description": "{x higher bonus than displayed from the Minor Link bonus of the deity you're linked to in Divinity. AKA bigger god passive!",
@@ -1232,7 +1232,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Kazam Cauldron",
                         "name": "Ninja Looter",
-                        "x1": 0.5,
+                        "x1": 0,
                         "x2": 60,
                         "func": "decayMulti",
                         "description": "{x Item Find chance for your ninja twin while sneaking!",
@@ -1316,7 +1316,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Vials",
                         "name": "Skinny 0 Cal",
-                        "x1": 2.5,
+                        "x1": 2,
                         "x2": 0,
                         "func": "add",
                         "description": "+{% chance to get double points when depositing statues. So like... if you deposit one statue, it might count as one! Or two.",
@@ -1406,7 +1406,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Vials",
                         "name": "Tail Time",
-                        "x1": 0.5,
+                        "x1": 0,
                         "x2": 0,
                         "func": "add",
                         "description": "+{ Weapon Power. This is gonna be OP in later worlds I can already tell.",
@@ -1596,7 +1596,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Vials",
                         "name": "Snow Slurry",
-                        "x1": 0.5,
+                        "x1": 0,
                         "x2": 0,
                         "func": "add",
                         "description": "+{% Printer sample size. My my there are a lot of these 'sample size' bonuses in the game... too many...",
@@ -1746,7 +1746,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Vials",
                         "name": "Pearl Seltzer",
-                        "x1": 0.5,
+                        "x1": 0,
                         "x2": 0,
                         "func": "add",
                         "description": "+{% All Stats. If you don't know what all stats means by now, you've prolly got bigger problems than not knowing what all stats means.",
@@ -1886,7 +1886,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Vials",
                         "name": "Dreamy Drink",
-                        "x1": 3.5,
+                        "x1": 3,
                         "x2": 0,
                         "func": "add",
                         "description": "Shrines charge +{% faster, so this way they charge faster, compared to like if bonus this wasn't oven you of out hot eat the food.",
@@ -1926,7 +1926,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Vials",
                         "name": "Greenleaf Tea",
-                        "x1": 1.5,
+                        "x1": 1,
                         "x2": 0,
                         "func": "add",
                         "description": "+{% Ninja Untying rate. I wonder if bomb diffusers drink tea before going to work?",
@@ -1966,7 +1966,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Vials",
                         "name": "Gibbed Drink",
-                        "x1": 3.5,
+                        "x1": 3,
                         "x2": 0,
                         "func": "add",
                         "description": "+{% Summoning EXP gain. No, the horn doesn't contribute to the flavor, just the fleshy bits inside.",
@@ -1976,7 +1976,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Vials",
                         "name": "Ded Sap",
-                        "x1": 3.5,
+                        "x1": 3,
                         "x2": 0,
                         "func": "add",
                         "description": "+{% Farming EXP gain, but dont drink too much since Eucalyptus oil is toxic IRL no joke fr fr search it or just take my word.",
@@ -1986,7 +1986,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Vials",
                         "name": "Royale Cola",
-                        "x1": 3.5,
+                        "x1": 3,
                         "x2": 0,
                         "func": "add",
                         "description": "+{% Jade Gain in Sneaking. Congratulations btw on trekking through World 6 like that what a journey!",

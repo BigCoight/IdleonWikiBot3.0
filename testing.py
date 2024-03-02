@@ -2,9 +2,9 @@
 # oldV = IdleonReader("156", True)
 # NpcRepo.initialise(newV.codeReader)
 from helpers.CodeReader import IdleonReader
-from repositories.misc.world2.BubbleRepo import BubbleRepo
+from repositories.misc.world1.BribeRepo import BribeRepo
 
-newV = IdleonReader("200", True)
-oldV = IdleonReader("192", True)
+newV = IdleonReader("202", True)
+oldV = IdleonReader("201", True)
 
-BubbleRepo.compareVersions(oldV, newV)
+BribeRepo.compareVersions(oldV, newV)

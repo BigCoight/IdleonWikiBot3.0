@@ -1,11 +1,11 @@
 {
     "new": {
-        "The Onyx Lantern": {
-            "name": "The Onyx Lantern",
+        "The Winz Lantern": {
+            "name": "The Winz Lantern",
             "baseBonus": 10,
-            "baseFindChance": 4000,
-            "qtyBonus": 30,
-            "bonus": "Onyx Statues now give 2.30x their bonus, instead of just 2.0x!",
+            "baseFindChance": 50000,
+            "qtyBonus": 25,
+            "bonus": "All Winner Bonuses from Summoning are 1.25x Bigger!",
             "ancientBonus": "The artifact's main bonus is doubled!",
             "ancientBonusQty": 1,
             "eldritchBonus": "The artifact's main bonus is tripled!",
@@ -13,12 +13,12 @@
             "sovereignBonus": "The artifact's main bonus is quadrupled!",
             "sovereignBonusQty": 1
         },
-        "The Winz Lantern": {
-            "name": "The Winz Lantern",
+        "The Onyx Lantern": {
+            "name": "The Onyx Lantern",
             "baseBonus": 10,
-            "baseFindChance": 50000,
-            "qtyBonus": 25,
-            "bonus": "All Winner Bonuses from Summoning are 1.25x Bigger!",
+            "baseFindChance": 4000,
+            "qtyBonus": 30,
+            "bonus": "Onyx Statues now give 2.30x their bonus, instead of just 2.0x!",
             "ancientBonus": "The artifact's main bonus is doubled!",
             "ancientBonusQty": 1,
             "eldritchBonus": "The artifact's main bonus is tripled!",
@@ -41,19 +41,39 @@
         }
     },
     "changes": {
+        "Chilled Yarn": {
+            "bonus": [
+                "All the Sigils in alchemy give 2x their displayed bonus.",
+                "All the Sigils in alchemy give 2x their displayed bonus. Ancient will give 3x, not 4x, just FYI"
+            ],
+            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
+            "sovereignBonusQty": [null, 1]
+        },
+        "Causticolumn": {
+            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
+            "sovereignBonusQty": [null, 1]
+        },
         "Silver Ankh": {
             "sovereignBonus": [null, "75% chance for +1 box when completing post office orders!"],
             "sovereignBonusQty": [null, 75]
         },
-        "Crystal Steak": {
+        "Gummy Orb": {
             "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
             "sovereignBonusQty": [null, 1]
         },
-        "Ashen Urn": {
-            "sovereignBonus": [null, "Applies up to character level 800 instead!"],
-            "sovereignBonusQty": [null, 600]
+        "Emerald Relic": {
+            "sovereignBonus": [null, "Get 1.90x more gold bars from converting!"],
+            "sovereignBonusQty": [null, 110]
         },
-        "Maneki Kat": {
+        "Fury Relic": {
+            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
+            "sovereignBonusQty": [null, 1]
+        },
+        "Genie Lamp": {
+            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
+            "sovereignBonusQty": [null, 1]
+        },
+        "Ruble Cuble": {
             "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
             "sovereignBonusQty": [null, 1]
         },
@@ -61,11 +81,39 @@
             "sovereignBonus": [null, "All shrines level up +300% faster!"],
             "sovereignBonusQty": [null, 300]
         },
-        "Frost Relic": {
+        "Dreamcatcher": {
             "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
             "sovereignBonusQty": [null, 1]
         },
-        "Ruble Cuble": {
+        "Maneki Kat": {
+            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
+            "sovereignBonusQty": [null, 1]
+        },
+        "Crystal Steak": {
+            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
+            "sovereignBonusQty": [null, 1]
+        },
+        "Fauxory Tusk": {
+            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
+            "sovereignBonusQty": [null, 1]
+        },
+        "Triagulon": {
+            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
+            "sovereignBonusQty": [null, 1]
+        },
+        "Arrowhead": {
+            "sovereignBonus": [null, "1.70x higher chance to get rare chests!"],
+            "sovereignBonusQty": [null, 70]
+        },
+        "10 AD Tablet": {
+            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
+            "sovereignBonusQty": [null, 1]
+        },
+        "Opera Mask": {
+            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
+            "sovereignBonusQty": [null, 1]
+        },
+        "Jade Rock": {
             "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
             "sovereignBonusQty": [null, 1]
         },
@@ -77,43 +125,7 @@
             "sovereignBonus": [null, "Samples grow by 5% for 80 days instead!"],
             "sovereignBonusQty": [null, 3]
         },
-        "Emerald Relic": {
-            "sovereignBonus": [null, "Get 1.90x more gold bars from converting!"],
-            "sovereignBonusQty": [null, 110]
-        },
-        "Fury Relic": {
-            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
-            "sovereignBonusQty": [null, 1]
-        },
-        "Trilobite Rock": {
-            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
-            "sovereignBonusQty": [null, 1]
-        },
-        "Arrowhead": {
-            "sovereignBonus": [null, "1.70x higher chance to get rare chests!"],
-            "sovereignBonusQty": [null, 70]
-        },
-        "Weatherbook": {
-            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
-            "sovereignBonusQty": [null, 1]
-        },
-        "Opera Mask": {
-            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
-            "sovereignBonusQty": [null, 1]
-        },
-        "Billcye Tri": {
-            "sovereignBonus": [null, "75% chance for +1 box when completing post office orders!"],
-            "sovereignBonusQty": [null, 75]
-        },
-        "Cloud Urn": {
-            "sovereignBonus": [null, "80% chance for +1 box when completing post office orders!"],
-            "sovereignBonusQty": [null, 80]
-        },
-        "Genie Lamp": {
-            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
-            "sovereignBonusQty": [null, 1]
-        },
-        "Gummy Orb": {
+        "Frost Relic": {
             "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
             "sovereignBonusQty": [null, 1]
         },
@@ -121,33 +133,17 @@
             "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
             "sovereignBonusQty": [null, 1]
         },
-        "Triagulon": {
+        "Ashen Urn": {
+            "sovereignBonus": [null, "Applies up to character level 800 instead!"],
+            "sovereignBonusQty": [null, 600]
+        },
+        "Weatherbook": {
             "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
             "sovereignBonusQty": [null, 1]
         },
-        "Amberite": {
-            "sovereignBonus": [null, "Affects +3 additional bubbles per day!"],
-            "sovereignBonusQty": [null, 3]
-        },
-        "Chilled Yarn": {
-            "bonus": [
-                "All the Sigils in alchemy give 2x their displayed bonus.",
-                "All the Sigils in alchemy give 2x their displayed bonus. Ancient will give 3x, not 4x, just FYI"
-            ],
-            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
-            "sovereignBonusQty": [null, 1]
-        },
-        "Fauxory Tusk": {
-            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
-            "sovereignBonusQty": [null, 1]
-        },
-        "Causticolumn": {
-            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
-            "sovereignBonusQty": [null, 1]
-        },
-        "Dreamcatcher": {
-            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
-            "sovereignBonusQty": [null, 1]
+        "Cloud Urn": {
+            "sovereignBonus": [null, "80% chance for +1 box when completing post office orders!"],
+            "sovereignBonusQty": [null, 80]
         },
         "The True Lantern": {
             "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
@@ -157,13 +153,17 @@
             "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
             "sovereignBonusQty": [null, 1]
         },
-        "Jade Rock": {
+        "Trilobite Rock": {
             "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
             "sovereignBonusQty": [null, 1]
         },
-        "10 AD Tablet": {
-            "sovereignBonus": [null, "The artifact's main bonus is quadrupled!"],
-            "sovereignBonusQty": [null, 1]
+        "Amberite": {
+            "sovereignBonus": [null, "Affects +3 additional bubbles per day!"],
+            "sovereignBonusQty": [null, 3]
+        },
+        "Billcye Tri": {
+            "sovereignBonus": [null, "75% chance for +1 box when completing post office orders!"],
+            "sovereignBonusQty": [null, 75]
         }
     }
 }

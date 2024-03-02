@@ -18,11 +18,13 @@ class BribeRepo(Repository[Bribe]):
 	def generateRepo(cls) -> None:
 		data = getFromSplitArray(cls.getSection())
 		for bribe in data:
-			cls.add(replaceUnderscores(bribe[0]), Bribe(
+			toAdd = Bribe(
 				name = replaceUnderscores(bribe[0]),
 				desc = replaceUnderscores(bribe[1]),
 				cost = bribe[2],
 				type = replaceUnderscores(bribe[3]),
 				intName = replaceUnderscores(bribe[4]),
 				amount = bribe[5]
-			))
+			)
+			cls.add(replaceUnderscores(bribe[0]), toAdd)
+			cls.addList(toAdd)

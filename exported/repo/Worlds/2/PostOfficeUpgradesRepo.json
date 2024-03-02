@@ -16,7 +16,7 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "fightAFK",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Critical Chance",
@@ -24,10 +24,10 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "critchance",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Locally Sourced Organs": {
         "name": "Locally Sourced Organs",
@@ -42,11 +42,11 @@
             },
             {
                 "bonus": "% Max HP",
-                "x1": 0.1,
+                "x1": 0,
                 "x2": 0,
                 "func": "add",
                 "bonusKey": "pctHP",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Faster Respawns",
@@ -54,10 +54,10 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "SelfHeal",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Magician Starterpack": {
         "name": "Magician Starterpack",
@@ -72,11 +72,11 @@
             },
             {
                 "bonus": "% Max MP",
-                "x1": 0.1,
+                "x1": 0,
                 "x2": 0,
                 "func": "add",
                 "bonusKey": "pctMP",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Faster Cooldowns",
@@ -84,17 +84,17 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "cooldown",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Box of Unwanted Stats": {
         "name": "Box of Unwanted Stats",
         "bonuses": [
             {
                 "bonus": "Base Accuracy",
-                "x1": 0.25,
+                "x1": 0,
                 "x2": 0,
                 "func": "add",
                 "bonusKey": "acc",
@@ -102,11 +102,11 @@
             },
             {
                 "bonus": "Base Defence",
-                "x1": 0.3,
+                "x1": 0,
                 "x2": 0,
                 "func": "add",
                 "bonusKey": "def",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Monster EXP",
@@ -114,10 +114,10 @@
                 "x2": 170,
                 "func": "decay",
                 "bonusKey": "monsterExp",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Dwarven Supplies": {
         "name": "Dwarven Supplies",
@@ -136,7 +136,7 @@
                 "x2": 150,
                 "func": "decay",
                 "bonusKey": "MinProw",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Mining AFK Gain",
@@ -144,10 +144,10 @@
                 "x2": 175,
                 "func": "decay",
                 "bonusKey": "MinAFK",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Blacksmith Box": {
         "name": "Blacksmith Box",
@@ -166,7 +166,7 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "ProdSpd",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% to Craft +1 Slot",
@@ -174,10 +174,10 @@
                 "x2": 150,
                 "func": "decay",
                 "bonusKey": "OneSlot",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Taped Up Timber": {
         "name": "Taped Up Timber",
@@ -196,7 +196,7 @@
                 "x2": 150,
                 "func": "decay",
                 "bonusKey": "ChopProw",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Choppin AFK Gain",
@@ -204,10 +204,10 @@
                 "x2": 175,
                 "func": "decay",
                 "bonusKey": "ChopAFK",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Carepack From Mum": {
         "name": "Carepack From Mum",
@@ -226,7 +226,7 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "HealthFoodEffect",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Boost Food Effect",
@@ -234,10 +234,10 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "PowerFoodEffect",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Sealed Fishheads": {
         "name": "Sealed Fishheads",
@@ -256,7 +256,7 @@
                 "x2": 150,
                 "func": "decay",
                 "bonusKey": "FishProw",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Fishin AFK Gain",
@@ -264,10 +264,10 @@
                 "x2": 175,
                 "func": "decay",
                 "bonusKey": "FishAFK",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Potion Package": {
         "name": "Potion Package",
@@ -286,18 +286,18 @@
                 "x2": 150,
                 "func": "decay",
                 "bonusKey": "AlchEXP",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "Cranium Cook Time",
-                "x1": 0.1,
+                "x1": 0,
                 "x2": 0,
                 "func": "add",
                 "bonusKey": "CookTime",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Bug Hunting Supplies": {
         "name": "Bug Hunting Supplies",
@@ -316,7 +316,7 @@
                 "x2": 150,
                 "func": "decay",
                 "bonusKey": "CatchProw",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Catchin AFK Gain",
@@ -324,10 +324,10 @@
                 "x2": 175,
                 "func": "decay",
                 "bonusKey": "CatchAFK",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Non Predatory Loot Box": {
         "name": "Non Predatory Loot Box",
@@ -342,11 +342,11 @@
             },
             {
                 "bonus": "LUK",
-                "x1": 0.25,
+                "x1": 0,
                 "x2": 0,
                 "func": "add",
                 "bonusKey": "LUK",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Crystal Mob Spawn",
@@ -354,10 +354,10 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "CrystalSpawn",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Deaths Storage Unit": {
         "name": "Deaths Storage Unit",
@@ -376,7 +376,7 @@
                 "x2": 150,
                 "func": "decay",
                 "bonusKey": "12b",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Total Damage",
@@ -384,10 +384,10 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "12c",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Utilitarian Capsule": {
         "name": "Utilitarian Capsule",
@@ -406,7 +406,7 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "13b",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Cash from Mobs",
@@ -414,10 +414,10 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "13c",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Lazzzy Lootcrate": {
         "name": "Lazzzy Lootcrate",
@@ -436,7 +436,7 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "14b",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% AFK Cash if 36hr+",
@@ -444,10 +444,10 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "14c",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Science Spare Parts": {
         "name": "Science Spare Parts",
@@ -466,7 +466,7 @@
                 "x2": 150,
                 "func": "decay",
                 "bonusKey": "15b",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "Base LUK",
@@ -474,10 +474,10 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "15c",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Trapping Lockbox": {
         "name": "Trapping Lockbox",
@@ -496,7 +496,7 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "16b",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Critters Trapped",
@@ -504,17 +504,17 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "16c",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Construction Container": {
         "name": "Construction Container",
         "bonuses": [
             {
                 "bonus": "% Base Build Rate",
-                "x1": 0.25,
+                "x1": 0,
                 "x2": 0,
                 "func": "add",
                 "bonusKey": "17a",
@@ -526,18 +526,18 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "17b",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% Construction EXP",
-                "x1": 0.5,
+                "x1": 0,
                 "x2": 0,
                 "func": "add",
                 "bonusKey": "17c",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Crate of the Creator": {
         "name": "Crate of the Creator",
@@ -556,7 +556,7 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "18b",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "Starting Worship Pts",
@@ -564,10 +564,10 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "18c",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Chefs Essentials": {
         "name": "Chefs Essentials",
@@ -586,7 +586,7 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "19b",
-                "investmentReq": 24.9
+                "investmentReq": 24
             },
             {
                 "bonus": "% for 2x Ladle Drop",
@@ -594,10 +594,10 @@
                 "x2": 200,
                 "func": "decay",
                 "bonusKey": "19c",
-                "investmentReq": 99.9
+                "investmentReq": 99
             }
         ],
-        "maxLevel": 400.1
+        "maxLevel": 400
     },
     "Myriad Crate": {
         "name": "Myriad Crate",
@@ -616,7 +616,7 @@
                 "x2": 20000,
                 "func": "decay",
                 "bonusKey": "20b",
-                "investmentReq": 99.9
+                "investmentReq": 99
             },
             {
                 "bonus": "% All Skills exp",
@@ -624,7 +624,7 @@
                 "x2": 20000,
                 "func": "decay",
                 "bonusKey": "20c",
-                "investmentReq": 299.9
+                "investmentReq": 299
             }
         ],
         "maxLevel": 100000
@@ -642,11 +642,11 @@
             },
             {
                 "bonus": "AGI",
-                "x1": 0.2,
+                "x1": 0,
                 "x2": 0,
                 "func": "add",
                 "bonusKey": "21b",
-                "investmentReq": 49.9
+                "investmentReq": 49
             },
             {
                 "bonus": "% Total Damage",
@@ -654,10 +654,10 @@
                 "x2": 400,
                 "func": "decay",
                 "bonusKey": "21c",
-                "investmentReq": 199.9
+                "investmentReq": 199
             }
         ],
-        "maxLevel": 800.1
+        "maxLevel": 800
     },
     "Box of Gosh": {
         "name": "Box of Gosh",
@@ -672,11 +672,11 @@
             },
             {
                 "bonus": "WIS",
-                "x1": 0.2,
+                "x1": 0,
                 "x2": 0,
                 "func": "add",
                 "bonusKey": "22b",
-                "investmentReq": 49.9
+                "investmentReq": 49
             },
             {
                 "bonus": "% Divinity Gain",
@@ -684,10 +684,10 @@
                 "x2": 400,
                 "func": "decay",
                 "bonusKey": "22c",
-                "investmentReq": 199.9
+                "investmentReq": 199
             }
         ],
-        "maxLevel": 800.1
+        "maxLevel": 800
     },
     "Gaming Lootcrate": {
         "name": "Gaming Lootcrate",
@@ -702,11 +702,11 @@
             },
             {
                 "bonus": "STR",
-                "x1": 0.2,
+                "x1": 0,
                 "x2": 0,
                 "func": "add",
                 "bonusKey": "23b",
-                "investmentReq": 49.9
+                "investmentReq": 49
             },
             {
                 "bonus": "% Total Damage",
@@ -714,9 +714,9 @@
                 "x2": 400,
                 "func": "decay",
                 "bonusKey": "23c",
-                "investmentReq": 199.9
+                "investmentReq": 199
             }
         ],
-        "maxLevel": 800.1
+        "maxLevel": 800
     }
 }

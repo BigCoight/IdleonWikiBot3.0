@@ -282,10 +282,6 @@ class Repository(Generic[T], ABC):
 				res = bold(atr)
 				res += cls._writeChangelog(val, indent + 1)
 				return res
-			# if isinstance(val, IdleonModel):
-			# 	res = bold(atr)
-			# 	res += cls._writeChangelog(val.toDict(), indent + 1)
-			# 	return res
 			if isinstance(val, list):
 				res = bold(atr)
 				newChanges = {f"{n}": v for n, v in enumerate(val)}

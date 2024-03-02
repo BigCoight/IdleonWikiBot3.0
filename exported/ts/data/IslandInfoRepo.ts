@@ -13,7 +13,7 @@ export const initIslandInfoRepo = () => {
                 "relic2": -1,
                 "relic3": -1,
                 "unlockQty": 10,
-                "cloudsUnlocked": 1.2,
+                "cloudsUnlocked": 1,
                 "xYPointer": "0,0",
                 "expPerTrip": 2,
                 "artifactsPerIsland": 4
@@ -25,7 +25,7 @@ export const initIslandInfoRepo = () => {
                 "relic2": -1,
                 "relic3": -1,
                 "unlockQty": 200,
-                "cloudsUnlocked": 3.5,
+                "cloudsUnlocked": 3,
                 "xYPointer": "43,304",
                 "expPerTrip": 6,
                 "artifactsPerIsland": 3
@@ -85,7 +85,7 @@ export const initIslandInfoRepo = () => {
                 "relic2": -1,
                 "relic3": -1,
                 "unlockQty": 400000,
-                "cloudsUnlocked": 7.8,
+                "cloudsUnlocked": 7,
                 "xYPointer": "479,309",
                 "expPerTrip": 85,
                 "artifactsPerIsland": 2
@@ -109,7 +109,7 @@ export const initIslandInfoRepo = () => {
                 "relic2": -1,
                 "relic3": -1,
                 "unlockQty": 8000000,
-                "cloudsUnlocked": 9.11,
+                "cloudsUnlocked": 9,
                 "xYPointer": "625,219",
                 "expPerTrip": 300,
                 "artifactsPerIsland": 1

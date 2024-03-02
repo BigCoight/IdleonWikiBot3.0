@@ -1,13 +1,51 @@
 {
     "new": {
-        "NjGl2": {
-            "internalId": "NjGl2",
+        "NjGl1": {
+            "internalId": "NjGl1",
             "itemTypeId": 1,
             "itemType": "Weapon",
             "itemId": 0,
-            "name": "Thundergloves",
-            "x1": 10,
+            "name": "Chainmail Gloves",
+            "x1": 7,
             "x2": 0
+        },
+        "NjTrP16": {
+            "internalId": "NjTrP16",
+            "itemTypeId": 3,
+            "itemType": "PristineCharm",
+            "itemId": 16,
+            "name": "Gumball Necklace",
+            "x1": 40,
+            "desc": "Hold down to add this Pristine Charm to your collection in the Lobby. Click it there to see its bonus.",
+            "bonus": "}x Money from Monsters"
+        },
+        "NjWep8": {
+            "internalId": "NjWep8",
+            "itemTypeId": 1,
+            "itemType": "Weapon",
+            "itemId": 1,
+            "name": "Spiral Nunchaku",
+            "x1": 110,
+            "x2": 4
+        },
+        "NjGl0": {
+            "internalId": "NjGl0",
+            "itemTypeId": 1,
+            "itemType": "Weapon",
+            "itemId": 0,
+            "name": "Leather Gloves",
+            "x1": 5,
+            "x2": 0
+        },
+        "NjTrP15": {
+            "internalId": "NjTrP15",
+            "itemTypeId": 3,
+            "itemType": "PristineCharm",
+            "itemId": 15,
+            "name": "Lolly Flower",
+            "x1": 25,
+            "desc": "Hold down to add this Pristine Charm to your collection in the Lobby. Click it there to see its bonus.",
+            "bonus": "+{% Printer Output"
         },
         "NjTrP17": {
             "internalId": "NjTrP17",
@@ -29,55 +67,26 @@
             "desc": "Hold down to add this Pristine Charm to your collection in the Lobby. Click it there to see its bonus.",
             "bonus": "+{% Golden Food bonus"
         },
-        "NjGl1": {
-            "internalId": "NjGl1",
+        "NjGl2": {
+            "internalId": "NjGl2",
             "itemTypeId": 1,
             "itemType": "Weapon",
             "itemId": 0,
-            "name": "Chainmail Gloves",
-            "x1": 7,
+            "name": "Thundergloves",
+            "x1": 10,
             "x2": 0
-        },
-        "NjGl0": {
-            "internalId": "NjGl0",
-            "itemTypeId": 1,
-            "itemType": "Weapon",
-            "itemId": 0,
-            "name": "Leather Gloves",
-            "x1": 5,
-            "x2": 0
-        },
-        "NjWep8": {
-            "internalId": "NjWep8",
-            "itemTypeId": 1,
-            "itemType": "Weapon",
-            "itemId": 1,
-            "name": "Spiral Nunchaku",
-            "x1": 110,
-            "x2": 4
-        },
-        "NjTrP15": {
-            "internalId": "NjTrP15",
-            "itemTypeId": 3,
-            "itemType": "PristineCharm",
-            "itemId": 15,
-            "name": "Lolly Flower",
-            "x1": 25,
-            "desc": "Hold down to add this Pristine Charm to your collection in the Lobby. Click it there to see its bonus.",
-            "bonus": "+{% Printer Output"
-        },
-        "NjTrP16": {
-            "internalId": "NjTrP16",
-            "itemTypeId": 3,
-            "itemType": "PristineCharm",
-            "itemId": 16,
-            "name": "Gumball Necklace",
-            "x1": 40,
-            "desc": "Hold down to add this Pristine Charm to your collection in the Lobby. Click it there to see its bonus.",
-            "bonus": "}x Money from Monsters"
         }
     },
     "changes": {
+        "NjTr18": {
+            "itemId": [2, 18],
+            "name": ["Item Name", "Gold Dagger"],
+            "x1": [1, 5],
+            "bonus": [
+                "Item Desc",
+                "If in Inventory, all ninjas get +{% Nunchaku Damage. Doesn't stack with other Gold Daggers"
+            ]
+        },
         "NjTr16": {
             "itemId": [2, 16],
             "name": ["Item Name", "Lotus Flower"],
@@ -91,15 +100,6 @@
             "x1": [1, 35],
             "bonus": ["Item Desc", "Gives you }x Total Stealth"],
             "x3": [200, 1700]
-        },
-        "NjTr18": {
-            "itemId": [2, 18],
-            "name": ["Item Name", "Gold Dagger"],
-            "x1": [1, 5],
-            "bonus": [
-                "Item Desc",
-                "If in Inventory, all ninjas get +{% Nunchaku Damage. Doesn't stack with other Gold Daggers"
-            ]
         },
         "NjTr19": {
             "itemId": [2, 19],

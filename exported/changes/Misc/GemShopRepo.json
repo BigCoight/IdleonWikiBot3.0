@@ -12,6 +12,18 @@
             "qty": 1,
             "costIncrement": 0
         },
+        "EquipmentCape0": {
+            "section": "Limited Specials",
+            "name": "EquipmentCape0",
+            "mtxName": "Random Cape",
+            "itemDisplayName": "Angel Wings",
+            "desc": "Gives you a random cape, it could be any one of them currently in IdleOn! There are 14 possibilities, including the ones from special bundles!",
+            "cost": 1400,
+            "no": 87,
+            "maxPurchases": 1,
+            "qty": 0,
+            "costIncrement": 0
+        },
         "EquipmentNametag3": {
             "section": "Limited Specials",
             "name": "EquipmentNametag3",
@@ -35,30 +47,9 @@
             "maxPurchases": 6,
             "qty": 1,
             "costIncrement": 0
-        },
-        "EquipmentCape0": {
-            "section": "Limited Specials",
-            "name": "EquipmentCape0",
-            "mtxName": "Random Cape",
-            "itemDisplayName": "Angel Wings",
-            "desc": "Gives you a random cape, it could be any one of them currently in IdleOn! There are 14 possibilities, including the ones from special bundles!",
-            "cost": 1400,
-            "no": 87,
-            "maxPurchases": 1,
-            "qty": 0,
-            "costIncrement": 0
         }
     },
     "changes": {
-        "GemQ18": {
-            "desc": [
-                "Use this on a 4 star card to upgrade it to 5 stars! It works like 4 star cardifiers do, you get to choose which card gets upgraded, no randomness involved!! Yippie!!!",
-                "10% OFF NORMAL PRICE! Use this on a 4 star card to upgrade it to 5 stars! It works like 4 star cardifiers do, you get to choose which card gets upgraded!"
-            ],
-            "cost": [485, 437],
-            "no": [93, 92],
-            "maxPurchases": [9, 8]
-        },
         "EquipmentRingsChat3": {
             "section": ["Chat Rings", "Limited Specials"],
             "no": [31, 89],
@@ -69,6 +60,15 @@
                 "Gives you a Compost Bag usable item. Use it in your player inventory to instantly get 6 hours of Farming growth for all your crops, instantly! This item restocks each day.",
                 "Gives you a Compost Bag usable item. Use it in your player inventory to instantly get 4 hours of Farming growth for all your crops, instantly! This item restocks each day."
             ]
+        },
+        "GemQ18": {
+            "desc": [
+                "Use this on a 4 star card to upgrade it to 5 stars! It works like 4 star cardifiers do, you get to choose which card gets upgraded, no randomness involved!! Yippie!!!",
+                "10% OFF NORMAL PRICE! Use this on a 4 star card to upgrade it to 5 stars! It works like 4 star cardifiers do, you get to choose which card gets upgraded!"
+            ],
+            "cost": [485, 437],
+            "no": [93, 92],
+            "maxPurchases": [9, 8]
         },
         "GemP11": {
             "section": ["Goods & Services", "Limited Specials"],
@@ -81,12 +81,6 @@
             "no": [79, 93],
             "maxPurchases": [100000, 5]
         },
-        "Quest82": {
-            "desc": [
-                "Gives you a Summoner Stone usable item Use it in your player inventory to instantly get 6 hours of Summoning Essence, instantly! This item restocks each day.",
-                "Gives you a Summoner Stone usable item Use it in your player inventory to instantly get 4 hours of Summoning Essence, instantly! This item restocks each day."
-            ]
-        },
         "GemP13": {
             "section": ["Goods & Services", "Limited Specials"],
             "desc": [
@@ -96,6 +90,12 @@
             "cost": [1250, 962],
             "no": [81, 94],
             "maxPurchases": [100000, 6]
+        },
+        "Quest82": {
+            "desc": [
+                "Gives you a Summoner Stone usable item Use it in your player inventory to instantly get 6 hours of Summoning Essence, instantly! This item restocks each day.",
+                "Gives you a Summoner Stone usable item Use it in your player inventory to instantly get 4 hours of Summoning Essence, instantly! This item restocks each day."
+            ]
         }
     }
 }

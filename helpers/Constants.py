@@ -69,7 +69,9 @@ class Constants:
 		["Premium Stones", "World 1&2", "World 3", "World 4", "World 5", "World 6"]
 	]
 
+	ninjaInfo = 12
 	ninjaFloors = 11
+	ninjaJadeOrder = 1
 
 	labInserts = 4
 

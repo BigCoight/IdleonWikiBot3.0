@@ -198,5 +198,6 @@ class IdleonReader:
 		self.codeReader.addSection("SummonEnemies = function ()", "SummonEnemies")
 		self.codeReader.addSection("SummonUnits = function ()", "SummonUnits")
 		self.codeReader.addSection("NjEQ = function ()", "NinjaItems")
+		self.codeReader.addSection("NinjaInfo = function ()", "NinjaInfo")
 
 		self.codeReader.readCode()

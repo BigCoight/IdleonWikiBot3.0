@@ -7597,7 +7597,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 20,
                     "mCostExp": 5,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} Base Damage",
                     "i12": 3
@@ -7622,7 +7622,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 7,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} Base HP",
                     "i12": 3
@@ -7647,7 +7647,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 7,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} Base MP",
                     "i12": 0
@@ -7672,7 +7672,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 15,
                     "mCostExp": 6,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{}% Total Damage",
                     "i12": 3
@@ -7697,7 +7697,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} Base Accuracy",
                     "i12": 3
@@ -7722,7 +7722,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 50,
                     "mCostExp": 7,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} Base Defence",
                     "i12": 3
@@ -7747,7 +7747,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 50,
                     "mCostExp": 6,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} Base Damage",
                     "i12": 6
@@ -7772,7 +7772,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 50,
                     "mCostExp": 6,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{}% Critical Damage",
                     "i12": 6
@@ -7797,7 +7797,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 50,
                     "mCostExp": 7,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} STR",
                     "i12": 3
@@ -7822,7 +7822,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 4,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{}% Total Damage",
                     "i12": 5
@@ -7847,7 +7847,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1,
                     "mCostExp": 4,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} AGI",
                     "i12": 0
@@ -7872,7 +7872,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} Base HP",
                     "i12": 6
@@ -7897,7 +7897,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 20,
                     "mCostExp": 5,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{} WIS",
                     "i12": 3
@@ -7922,7 +7922,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 75,
-                    "cCostExp": 1,
+                    "cCostExp": 1.32,
                     "i10": 0,
                     "upgradeText": "{} Base MP",
                     "i12": 2
@@ -7947,7 +7947,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1,
                     "mCostExp": 2,
                     "startingCost": 300,
-                    "cCostExp": 1,
+                    "cCostExp": 1.38,
                     "i10": 0,
                     "upgradeText": "{} LUK",
                     "i12": 6
@@ -7972,7 +7972,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 75,
                     "mCostExp": 7,
                     "startingCost": 2000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.33,
                     "i10": 0,
                     "upgradeText": "{} Base Damage",
                     "i12": 0
@@ -7997,7 +7997,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 100,
                     "mCostExp": 10,
                     "startingCost": 5000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.36,
                     "i10": 0,
                     "upgradeText": "{} Base Accuracy",
                     "i12": 0
@@ -8022,7 +8022,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 2500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} Base Move Speed",
                     "i12": 0
@@ -8047,7 +8047,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1,
                     "mCostExp": 2,
                     "startingCost": 3000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{}% Total Damage",
                     "i12": 0
@@ -8072,7 +8072,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 10,
                     "mCostExp": 7,
                     "startingCost": 10000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} STR",
                     "i12": 0
@@ -8097,7 +8097,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 2200,
-                    "cCostExp": 1,
+                    "cCostExp": 1.305,
                     "i10": 0,
                     "upgradeText": "{} Base Defence",
                     "i12": 0
@@ -8122,7 +8122,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 30,
                     "mCostExp": 7,
                     "startingCost": 10000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} STR",
                     "i12": 0
@@ -8147,7 +8147,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 3,
                     "mCostExp": 5,
                     "startingCost": 10000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.34,
                     "i10": 0,
                     "upgradeText": "{}% Boss Damage",
                     "i12": 0
@@ -8172,7 +8172,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 50,
                     "mCostExp": 7,
                     "startingCost": 1550,
-                    "cCostExp": 1,
+                    "cCostExp": 1.36,
                     "i10": 0,
                     "upgradeText": "{} Base WIS",
                     "i12": 0
@@ -8197,7 +8197,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 75,
                     "mCostExp": 7,
                     "startingCost": 15000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.33,
                     "i10": 0,
                     "upgradeText": "{} Base Damage",
                     "i12": 0
@@ -8222,7 +8222,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 150,
                     "mCostExp": 5,
                     "startingCost": 10000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.32,
                     "i10": 0,
                     "upgradeText": "{}% Total Damage",
                     "i12": 0
@@ -8247,7 +8247,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 100,
                     "mCostExp": 7,
                     "startingCost": 25000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.39,
                     "i10": 0,
                     "upgradeText": "{} Base LUK",
                     "i12": 0
@@ -8272,7 +8272,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 2,
                     "mCostExp": 2,
                     "startingCost": 2000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.36,
                     "i10": 0,
                     "upgradeText": "{} All Stats",
                     "i12": 0
@@ -8297,7 +8297,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 6,
                     "startingCost": 2000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.43,
                     "i10": 0,
                     "upgradeText": "{} Base Damage",
                     "i12": 0
@@ -8322,7 +8322,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 6,
                     "startingCost": 3000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.47,
                     "i10": 0,
                     "upgradeText": "{}% Total Damage",
                     "i12": 0
@@ -8347,7 +8347,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 6,
                     "startingCost": 1500000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.4,
                     "i10": 0,
                     "upgradeText": "{} Base Accuracy",
                     "i12": 0
@@ -8372,7 +8372,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 6,
                     "startingCost": 1000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.4,
                     "i10": 0,
                     "upgradeText": "{} Base HP",
                     "i12": 0
@@ -8397,7 +8397,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1000,
                     "mCostExp": 10,
                     "startingCost": 100000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.4,
                     "i10": 0,
                     "upgradeText": "{} Base STR",
                     "i12": 0
@@ -8422,7 +8422,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1000,
                     "mCostExp": 10,
                     "startingCost": 100000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.4,
                     "i10": 0,
                     "upgradeText": "{} Base AGI",
                     "i12": 0
@@ -8447,7 +8447,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 150,
                     "mCostExp": 7,
                     "startingCost": 100000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.4,
                     "i10": 0,
                     "upgradeText": "{} Base WIS",
                     "i12": 0
@@ -8472,7 +8472,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1000,
                     "mCostExp": 10,
                     "startingCost": 100000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.4,
                     "i10": 0,
                     "upgradeText": "{} Base LUK",
                     "i12": 0
@@ -8497,7 +8497,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1000,
                     "mCostExp": 10,
                     "startingCost": 200000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.43,
                     "i10": 0,
                     "upgradeText": "{}% Total Damage",
                     "i12": 0
@@ -8522,7 +8522,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 250,
                     "mCostExp": 10,
                     "startingCost": 10000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.43,
                     "i10": 0,
                     "upgradeText": "{}% Drop Rate",
                     "i12": 0
@@ -8547,7 +8547,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 5,
                     "mCostExp": 2,
                     "startingCost": 25000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.36,
                     "i10": 0,
                     "upgradeText": "{} All Stats",
                     "i12": 0
@@ -8572,7 +8572,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 20000,
                     "mCostExp": 10,
                     "startingCost": 2500000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.36,
                     "i10": 0,
                     "upgradeText": "{} Base Damage",
                     "i12": 0
@@ -8597,7 +8597,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25000,
                     "mCostExp": 10,
                     "startingCost": 66000000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.36,
                     "i10": 0,
                     "upgradeText": "{}% Total Damage",
                     "i12": 0
@@ -8622,7 +8622,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 40000,
                     "mCostExp": 10,
                     "startingCost": 2200000000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.36,
                     "i10": 0,
                     "upgradeText": "{}% All Stats",
                     "i12": 0
@@ -8647,7 +8647,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 7,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 1,
                     "upgradeText": "{} Mining Efficiency",
                     "i12": 0
@@ -8672,7 +8672,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 3,
                     "upgradeText": "{} Choppin Efficiency",
                     "i12": 0
@@ -8697,7 +8697,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 2,
                     "upgradeText": "{}% Anvil Production Spd",
                     "i12": 0
@@ -8722,7 +8722,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 1,
                     "upgradeText": "{} Mining Carry Cap",
                     "i12": 0
@@ -8747,7 +8747,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1,
                     "mCostExp": 3,
                     "startingCost": 10000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 1,
                     "upgradeText": "{}% Multi Ore Chance",
                     "i12": 0
@@ -8772,7 +8772,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 3,
                     "upgradeText": "{} Choppin Carry Cap",
                     "i12": 0
@@ -8797,7 +8797,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1,
                     "mCostExp": 3,
                     "startingCost": 20000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 3,
                     "upgradeText": "{}% Multi Log Chance",
                     "i12": 0
@@ -8822,7 +8822,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1,
                     "mCostExp": 2,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 2,
                     "upgradeText": "{} Material Carry Cap",
                     "i12": 0
@@ -8847,7 +8847,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 80,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 1,
                     "upgradeText": "{}% Mining Exp",
                     "i12": 0
@@ -8872,7 +8872,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1,
                     "mCostExp": 2,
                     "startingCost": 35000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.4,
                     "i10": -1,
                     "upgradeText": "{} Mining Efficiency",
                     "i12": 0
@@ -8897,7 +8897,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 80,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 3,
                     "upgradeText": "{}% Choppin Exp",
                     "i12": 0
@@ -8922,7 +8922,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1,
                     "mCostExp": 2,
                     "startingCost": 50000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.36,
                     "i10": 3,
                     "upgradeText": "{} Choppin Efficiency",
                     "i12": 0
@@ -8947,7 +8947,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 40,
                     "mCostExp": 6,
                     "startingCost": 800,
-                    "cCostExp": 1,
+                    "cCostExp": 1.29,
                     "i10": -1,
                     "upgradeText": "{}% Alch Speed",
                     "i12": 0
@@ -8972,7 +8972,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 40,
                     "mCostExp": 6,
                     "startingCost": 1250,
-                    "cCostExp": 1,
+                    "cCostExp": 1.28,
                     "i10": 5,
                     "upgradeText": "{}% Alch Exp",
                     "i12": 0
@@ -8997,7 +8997,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 60,
                     "mCostExp": 6,
                     "startingCost": 1000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": -1,
                     "upgradeText": "{}% Liquid Spd",
                     "i12": 0
@@ -9022,7 +9022,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 4,
                     "startingCost": 2500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": -1,
                     "upgradeText": "{} Liquid Cap",
                     "i12": 0
@@ -9047,7 +9047,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 50,
                     "mCostExp": 6,
                     "startingCost": 1000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.32,
                     "i10": 4,
                     "upgradeText": "{} Fishing Efficiency",
                     "i12": 0
@@ -9072,7 +9072,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 55,
                     "mCostExp": 9,
                     "startingCost": 1500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.33,
                     "i10": 4,
                     "upgradeText": "{}% Fishing Exp",
                     "i12": 0
@@ -9097,7 +9097,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 50,
                     "mCostExp": 6,
                     "startingCost": 1000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 6,
                     "upgradeText": "{} Catching Efficiency",
                     "i12": 0
@@ -9122,7 +9122,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 40,
                     "mCostExp": 10,
                     "startingCost": 1500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.33,
                     "i10": 6,
                     "upgradeText": "{}% Catching Exp",
                     "i12": 0
@@ -9147,7 +9147,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 35,
                     "mCostExp": 7,
                     "startingCost": 1000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 4,
                     "upgradeText": "{}% Fish Carry Cap",
                     "i12": 0
@@ -9172,7 +9172,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 30,
                     "mCostExp": 6,
                     "startingCost": 1500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 4,
                     "upgradeText": "{}% Multifish Chance",
                     "i12": 0
@@ -9197,7 +9197,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 35,
                     "mCostExp": 7,
                     "startingCost": 1000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 6,
                     "upgradeText": "{}% Bug Carry Cap",
                     "i12": 0
@@ -9222,7 +9222,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 45,
                     "mCostExp": 6,
                     "startingCost": 1500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 6,
                     "upgradeText": "{}% Multibug Chance",
                     "i12": 0
@@ -9247,7 +9247,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 100,
                     "mCostExp": 5,
                     "startingCost": 7500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 7,
                     "upgradeText": "{} Trapping Efficiency",
                     "i12": 0
@@ -9272,7 +9272,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 125,
                     "mCostExp": 6,
                     "startingCost": 10000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 7,
                     "upgradeText": "{}% Shiny Chance",
                     "i12": 0
@@ -9297,7 +9297,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 150,
                     "mCostExp": 6,
                     "startingCost": 12500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 7,
                     "upgradeText": "{}% Trapping Exp",
                     "i12": 0
@@ -9322,7 +9322,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 7,
                     "startingCost": 15000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 7,
                     "upgradeText": "{}% Shiny Chance",
                     "i12": 0
@@ -9347,7 +9347,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 100,
                     "mCostExp": 5,
                     "startingCost": 10000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 8,
                     "upgradeText": "{}% Building Spd",
                     "i12": 0
@@ -9372,7 +9372,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 100,
                     "mCostExp": 6,
                     "startingCost": 10000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{}% Sample Size",
                     "i12": 0
@@ -9397,7 +9397,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 20,
                     "mCostExp": 5,
                     "startingCost": 15000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 8,
                     "upgradeText": "{}% Construction Exp",
                     "i12": 0
@@ -9422,7 +9422,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 2500,
                     "mCostExp": 12,
                     "startingCost": 50000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.5,
                     "i10": 0,
                     "upgradeText": "{}% Sample Size",
                     "i12": 0
@@ -9447,7 +9447,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 45,
                     "mCostExp": 6,
                     "startingCost": 7500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 9,
                     "upgradeText": "{} Worship Efficiency",
                     "i12": 0
@@ -9472,7 +9472,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 2,
                     "mCostExp": 5,
                     "startingCost": 15000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 9,
                     "upgradeText": "{}% Charging Speed",
                     "i12": 0
@@ -9497,7 +9497,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 150,
                     "mCostExp": 6,
                     "startingCost": 10000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 9,
                     "upgradeText": "{}% Max Charge",
                     "i12": 0
@@ -9522,7 +9522,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 100,
                     "mCostExp": 3,
                     "startingCost": 6000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 9,
                     "upgradeText": "{} Starting TD Pts",
                     "i12": 0
@@ -9547,7 +9547,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 5,
                     "startingCost": 1000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{}% Meal Cooking Spd",
                     "i12": 0
@@ -9572,7 +9572,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 5,
                     "startingCost": 1000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{}% New Recipe Spd",
                     "i12": 0
@@ -9597,7 +9597,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 5,
                     "startingCost": 1000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{} Cooking Efficiency",
                     "i12": 0
@@ -9622,7 +9622,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 5,
                     "startingCost": 1000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.4,
                     "i10": 0,
                     "upgradeText": "{}% Breeding EXP",
                     "i12": 0
@@ -9647,7 +9647,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 5,
                     "startingCost": 1000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.4,
                     "i10": 0,
                     "upgradeText": "{}% New Pet Chance",
                     "i12": 0
@@ -9672,7 +9672,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 5,
                     "startingCost": 1000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{}% Lab EXP",
                     "i12": 0
@@ -9697,7 +9697,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1000,
                     "mCostExp": 5,
                     "startingCost": 500000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{}% Sailing Speed",
                     "i12": 0
@@ -9722,7 +9722,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 500,
                     "mCostExp": 8,
                     "startingCost": 500000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{}% Gaming EXP",
                     "i12": 0
@@ -9747,7 +9747,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1000,
                     "mCostExp": 10,
                     "startingCost": 500000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{}% Divinity EXP",
                     "i12": 0
@@ -9772,7 +9772,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 500,
                     "mCostExp": 8,
                     "startingCost": 800000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{} All Efficiency",
                     "i12": 0
@@ -9790,14 +9790,14 @@ export const initSpecificItemRepo = () => {
                 "stampData": <StampDataModel>{
                     "effect": "FishEffPerLv",
                     "function": "decay",
-                    "x1": 0,
+                    "x1": 0.2,
                     "x2": 20,
                     "upgradeInterval": 2,
                     "material": <QtylessComponentModel>{"item": "Fish5"},
                     "startV": 250,
                     "mCostExp": 10,
                     "startingCost": 800000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{}% Fishing Eff Per Fishing Lv",
                     "i12": 0
@@ -9821,8 +9821,8 @@ export const initSpecificItemRepo = () => {
                     "material": <QtylessComponentModel>{"item": "Fish9"},
                     "startV": 12000,
                     "mCostExp": 10,
-                    "startingCost": 100000000000,
-                    "cCostExp": 1,
+                    "startingCost": 1e+11,
+                    "cCostExp": 1.37,
                     "i10": 0,
                     "upgradeText": "{}% Crop Evolution Chance",
                     "i12": 0
@@ -9846,8 +9846,8 @@ export const initSpecificItemRepo = () => {
                     "material": <QtylessComponentModel>{"item": "SpiA4"},
                     "startV": 20000,
                     "mCostExp": 10,
-                    "startingCost": 50000000000,
-                    "cCostExp": 1,
+                    "startingCost": 5e+10,
+                    "cCostExp": 1.37,
                     "i10": 0,
                     "upgradeText": "{}% Sneaking EXP gain",
                     "i12": 0
@@ -9865,14 +9865,14 @@ export const initSpecificItemRepo = () => {
                 "stampData": <StampDataModel>{
                     "effect": "JadeCoin",
                     "function": "add",
-                    "x1": 0,
+                    "x1": 0.5,
                     "x2": 0,
                     "upgradeInterval": 10,
                     "material": <QtylessComponentModel>{"item": "SpiA2b"},
                     "startV": 15,
                     "mCostExp": 7,
-                    "startingCost": 20000000000,
-                    "cCostExp": 1,
+                    "startingCost": 2e+10,
+                    "cCostExp": 1.37,
                     "i10": 0,
                     "upgradeText": "{}% Jade Coin gain",
                     "i12": 0
@@ -9896,8 +9896,8 @@ export const initSpecificItemRepo = () => {
                     "material": <QtylessComponentModel>{"item": "Soul7"},
                     "startV": 8000,
                     "mCostExp": 10,
-                    "startingCost": 50000000000,
-                    "cCostExp": 1,
+                    "startingCost": 5e+10,
+                    "cCostExp": 1.37,
                     "i10": 0,
                     "upgradeText": "{}% Summoning EXP gain",
                     "i12": 0
@@ -9921,8 +9921,8 @@ export const initSpecificItemRepo = () => {
                     "material": <QtylessComponentModel>{"item": "Bug12"},
                     "startV": 15000,
                     "mCostExp": 10,
-                    "startingCost": 60000000000,
-                    "cCostExp": 1,
+                    "startingCost": 6e+10,
+                    "cCostExp": 1.37,
                     "i10": 0,
                     "upgradeText": "{}% White Essence Gain gain",
                     "i12": 0
@@ -9946,8 +9946,8 @@ export const initSpecificItemRepo = () => {
                     "material": <QtylessComponentModel>{"item": "Fish12"},
                     "startV": 8000,
                     "mCostExp": 10,
-                    "startingCost": 800000000000,
-                    "cCostExp": 1,
+                    "startingCost": 8e+11,
+                    "cCostExp": 1.37,
                     "i10": 0,
                     "upgradeText": "{}% G Y and B Essence gain",
                     "i12": 0
@@ -9971,8 +9971,8 @@ export const initSpecificItemRepo = () => {
                     "material": <QtylessComponentModel>{"item": "Tree13"},
                     "startV": 45000,
                     "mCostExp": 10,
-                    "startingCost": 12000000000000,
-                    "cCostExp": 1,
+                    "startingCost": 1.2e+13,
+                    "cCostExp": 1.37,
                     "i10": 0,
                     "upgradeText": "{}% P R and C Essence gain",
                     "i12": 0
@@ -9997,7 +9997,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 30,
                     "mCostExp": 6,
                     "startingCost": 500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.32,
                     "i10": 0,
                     "upgradeText": "{}% Quest EXP",
                     "i12": 3
@@ -10022,7 +10022,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 1,
                     "mCostExp": 3,
                     "startingCost": 4000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.28,
                     "i10": 0,
                     "upgradeText": "{}% All Carry Cap",
                     "i12": 3
@@ -10047,7 +10047,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 35,
                     "mCostExp": 8,
                     "startingCost": 800,
-                    "cCostExp": 1,
+                    "cCostExp": 1.31,
                     "i10": 0,
                     "upgradeText": "{}% Spawn Chance",
                     "i12": 3
@@ -10072,7 +10072,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 30,
                     "mCostExp": 6,
                     "startingCost": 1500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.33,
                     "i10": 0,
                     "upgradeText": "{}% ball gain rate",
                     "i12": 3
@@ -10095,9 +10095,9 @@ export const initSpecificItemRepo = () => {
                     "upgradeInterval": 10,
                     "material": <QtylessComponentModel>{"item": "Fish1"},
                     "startV": 50,
-                    "mCostExp": 6,
+                    "mCostExp": 6.5,
                     "startingCost": 1000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.33,
                     "i10": 0,
                     "upgradeText": "{}% HP Food Effect",
                     "i12": 3
@@ -10122,7 +10122,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 50,
                     "mCostExp": 8,
                     "startingCost": 1500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.305,
                     "i10": 0,
                     "upgradeText": "{}% Boost Food Effect",
                     "i12": 3
@@ -10147,7 +10147,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 2,
                     "mCostExp": 4,
                     "startingCost": 3000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{}% Gold Food Effect",
                     "i12": 3
@@ -10172,7 +10172,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 100,
                     "mCostExp": 15,
                     "startingCost": 1000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.32,
                     "i10": 0,
                     "upgradeText": "{}hr Max Claim Time",
                     "i12": 3
@@ -10197,7 +10197,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 1200,
-                    "cCostExp": 1,
+                    "cCostExp": 1.31,
                     "i10": 0,
                     "upgradeText": "{}% Card Drop Rate",
                     "i12": 3
@@ -10222,7 +10222,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 250,
                     "mCostExp": 8,
                     "startingCost": 5000000000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{}% Forge Capacity",
                     "i12": 0
@@ -10247,7 +10247,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 100,
                     "mCostExp": 10,
                     "startingCost": 30000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.5,
                     "i10": 0,
                     "upgradeText": "{}% Higher Shop QTY",
                     "i12": 3
@@ -10272,7 +10272,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 2000,
                     "mCostExp": 6,
                     "startingCost": 1000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.32,
                     "i10": 0,
                     "upgradeText": "{}% Sigil Charge rate",
                     "i12": 0
@@ -10297,7 +10297,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 50,
                     "mCostExp": 10,
                     "startingCost": 2000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.4,
                     "i10": 0,
                     "upgradeText": "{} Talent 1 Pts",
                     "i12": 3
@@ -10322,7 +10322,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 8,
                     "startingCost": 4000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{} Talent 2 Pts",
                     "i12": 3
@@ -10347,7 +10347,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 20,
                     "mCostExp": 4,
                     "startingCost": 40000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.35,
                     "i10": 0,
                     "upgradeText": "{} Talent 3 Pts",
                     "i12": 3
@@ -10372,7 +10372,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 2,
                     "mCostExp": 3,
                     "startingCost": 300000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.4,
                     "i10": 0,
                     "upgradeText": "{} Talent 4 Pts",
                     "i12": 3
@@ -10397,7 +10397,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 25,
                     "mCostExp": 6,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} Talent 5 Pts",
                     "i12": 3
@@ -10422,7 +10422,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 20,
                     "mCostExp": 4,
                     "startingCost": 50,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{} Star Talent Pts",
                     "i12": 3
@@ -10447,7 +10447,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 100,
                     "mCostExp": 3,
                     "startingCost": 10000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{}% Base Overkill",
                     "i12": 3
@@ -10472,7 +10472,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 125,
                     "mCostExp": 5,
                     "startingCost": 12500,
-                    "cCostExp": 1,
+                    "cCostExp": 1.3,
                     "i10": 0,
                     "upgradeText": "{}% Faster Books",
                     "i12": 3
@@ -10497,7 +10497,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 200,
                     "mCostExp": 5,
                     "startingCost": 1000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.6,
                     "i10": 0,
                     "upgradeText": "{}% more DNA",
                     "i12": 0
@@ -10522,7 +10522,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 250,
                     "mCostExp": 5,
                     "startingCost": 25000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.52,
                     "i10": 0,
                     "upgradeText": "{}% faster refinery",
                     "i12": 0
@@ -10547,7 +10547,7 @@ export const initSpecificItemRepo = () => {
                     "startV": 2500,
                     "mCostExp": 5,
                     "startingCost": 25000000,
-                    "cCostExp": 1,
+                    "cCostExp": 1.52,
                     "i10": 0,
                     "upgradeText": "{}% lower Atom upgrade costs",
                     "i12": 0
@@ -22227,7 +22227,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "A stone statue that isnt actually fast because its made of stone and stone can't move. Give this to the Statue Man in return for some bonus stats ",
                 "bonus": "%Move Speed",
-                "statueData": <StatueDataModel>{"name": "Speed", "effect": "%@Move Speed", "dk": 65, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Speed", "effect": "%@Move Speed", "dk": 65, "bonus": 0.1}
             }),
         new BaseItemBase("EquipmentStatues3", <StatueItemModel>{
                 "internalName": "EquipmentStatues3",
@@ -22237,7 +22237,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "A stone statue that resembles some sort of double edged scythe. Give this to the Statue Man in return for some bonus stats ",
                 "bonus": "Mining Power",
-                "statueData": <StatueDataModel>{"name": "Mining", "effect": "@Mining Power", "dk": 280, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Mining", "effect": "@Mining Power", "dk": 280, "bonus": 0.3}
             }),
         new BaseItemBase("EquipmentStatues4", <StatueItemModel>{
                 "internalName": "EquipmentStatues4",
@@ -22267,7 +22267,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "A stone statue named after the catch phrase of a very fast and very not real red car. Give this to the Statue Man in return for some bonus stats ",
                 "bonus": "%Crit Damage",
-                "statueData": <StatueDataModel>{"name": "Kachow", "effect": "%@Crit Damage", "dk": -15, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Kachow", "effect": "%@Crit Damage", "dk": -15, "bonus": 0.4}
             }),
         new BaseItemBase("EquipmentStatues7", <StatueItemModel>{
                 "internalName": "EquipmentStatues7",
@@ -22277,7 +22277,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "A stone statue named in a world where the name Jack doesn't exist. Give this to the Statue Man in return for some bonus stats ",
                 "bonus": "Choppin Power",
-                "statueData": <StatueDataModel>{"name": "Lumberbob", "effect": "@Choppin Power", "dk": 90, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Lumberbob", "effect": "@Choppin Power", "dk": 90, "bonus": 0.3}
             }),
         new BaseItemBase("EquipmentStatues8", <StatueItemModel>{
                 "internalName": "EquipmentStatues8",
@@ -22297,7 +22297,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "What's that, statue? You want to... take me by the hand and lead me to the land? With that land pecifically being the one that you understand? ",
                 "bonus": "Fishing Power",
-                "statueData": <StatueDataModel>{"name": "Oceanman", "effect": "@Fishing Power", "dk": 115, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Oceanman", "effect": "@Fishing Power", "dk": 115, "bonus": 0.3}
             }),
         new BaseItemBase("EquipmentStatues10", <StatueItemModel>{
                 "internalName": "EquipmentStatues10",
@@ -22307,7 +22307,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "It takes a true artist to make a realistic statue like this one. He captured the flying aspect of those stone flies perfectly! ",
                 "bonus": "Catchin Power",
-                "statueData": <StatueDataModel>{"name": "Ol Reliable", "effect": "@Catchin Power", "dk": 45, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Ol Reliable", "effect": "@Catchin Power", "dk": 45, "bonus": 0.3}
             }),
         new BaseItemBase("EquipmentStatues11", <StatueItemModel>{
                 "internalName": "EquipmentStatues11",
@@ -22317,7 +22317,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "I haven't read a book since middle school, so I'm just assuming this is what they look like. ",
                 "bonus": "%Class Exp",
-                "statueData": <StatueDataModel>{"name": "Exp", "effect": "%@Class Exp", "dk": 0, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Exp", "effect": "%@Class Exp", "dk": 0, "bonus": 0.1}
             }),
         new BaseItemBase("EquipmentStatues12", <StatueItemModel>{
                 "internalName": "EquipmentStatues12",
@@ -22327,7 +22327,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "A little monument to the efforts of a most devious coyote, whose dreams were always just out of reach, and whose head often felt the crushing blow of defeat. ",
                 "bonus": "%Product Spd",
-                "statueData": <StatueDataModel>{"name": "Anvil", "effect": "%@Product Spd", "dk": 165, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Anvil", "effect": "%@Product Spd", "dk": 165, "bonus": 0.5}
             }),
         new BaseItemBase("EquipmentStatues13", <StatueItemModel>{
                 "internalName": "EquipmentStatues13",
@@ -22337,7 +22337,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "They used to tie women to these things and throw them into the ocean to see if they were a witch. If they were, they'd use all the water in the ocean to upgrade the cauldron and thus not drown! Not sure what happened if they werent. ",
                 "bonus": "%Alchemy Exp",
-                "statueData": <StatueDataModel>{"name": "Cauldron", "effect": "%@Alchemy Exp", "dk": 280, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Cauldron", "effect": "%@Alchemy Exp", "dk": 280, "bonus": 0.5}
             }),
         new BaseItemBase("EquipmentStatues14", <StatueItemModel>{
                 "internalName": "EquipmentStatues14",
@@ -22347,7 +22347,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "This statue is beautiful! Well, at least to me. ",
                 "bonus": "%Crit Chance",
-                "statueData": <StatueDataModel>{"name": "Beholder", "effect": "%@Crit Chance", "dk": 300, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Beholder", "effect": "%@Crit Chance", "dk": 300, "bonus": 0.2}
             }),
         new BaseItemBase("EquipmentStatues15", <StatueItemModel>{
                 "internalName": "EquipmentStatues15",
@@ -22357,7 +22357,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "This statue was created by shooting a target statue into a stationary arrow statue. ",
                 "bonus": "%Accuracy",
-                "statueData": <StatueDataModel>{"name": "Bullseye", "effect": "%@Accuracy", "dk": 110, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Bullseye", "effect": "%@Accuracy", "dk": 110, "bonus": 0.8}
             }),
         new BaseItemBase("EquipmentStatues16", <StatueItemModel>{
                 "internalName": "EquipmentStatues16",
@@ -22367,7 +22367,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "It's more of an open container than a box, really. ",
                 "bonus": "Trappin Power",
-                "statueData": <StatueDataModel>{"name": "Box", "effect": "@Trappin Power", "dk": 180, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Box", "effect": "@Trappin Power", "dk": 180, "bonus": 0.3}
             }),
         new BaseItemBase("EquipmentStatues17", <StatueItemModel>{
                 "internalName": "EquipmentStatues17",
@@ -22377,7 +22377,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "A statue of the soul. ",
                 "bonus": "Worship Power",
-                "statueData": <StatueDataModel>{"name": "Twosoul", "effect": "@Worship Power", "dk": 260, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Twosoul", "effect": "@Worship Power", "dk": 260, "bonus": 0.3}
             }),
         new BaseItemBase("EquipmentStatues18", <StatueItemModel>{
                 "internalName": "EquipmentStatues18",
@@ -22387,7 +22387,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "The sculptor got so fed up with people misinterpreting his previous statues, he felt the need to spell this one out. ",
                 "bonus": "%Skill Exp",
-                "statueData": <StatueDataModel>{"name": "Ehexpee", "effect": "%@Skill Exp", "dk": 69, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Ehexpee", "effect": "%@Skill Exp", "dk": 69, "bonus": 0.1}
             }),
         new BaseItemBase("EquipmentStatues19", <StatueItemModel>{
                 "internalName": "EquipmentStatues19",
@@ -22397,7 +22397,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "The end result of someone trying to cut a slab in half with a ceramic saw, and then leaving early after they saw me watching them in the bushes, writing down what they were doing in this description. ",
                 "bonus": "%Cons Exp",
-                "statueData": <StatueDataModel>{"name": "Seesaw", "effect": "%@Cons Exp", "dk": 13, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Seesaw", "effect": "%@Cons Exp", "dk": 13, "bonus": 0.5}
             }),
         new BaseItemBase("EquipmentStatues20", <StatueItemModel>{
                 "internalName": "EquipmentStatues20",
@@ -22417,7 +22417,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "This statue makes me really hungry... but for some reason it inspires me to cook rather than giving higher food bonuses. ",
                 "bonus": "%Cooking Exp",
-                "statueData": <StatueDataModel>{"name": "Mutton", "effect": "%@Cooking Exp", "dk": 0, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Mutton", "effect": "%@Cooking Exp", "dk": 0, "bonus": 0.3}
             }),
         new BaseItemBase("EquipmentStatues22", <StatueItemModel>{
                 "internalName": "EquipmentStatues22",
@@ -22427,7 +22427,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "This statue somehow boosts the effectiveness of pets getting it on... ",
                 "bonus": "%Breeding Exp",
-                "statueData": <StatueDataModel>{"name": "Egg", "effect": "%@Breeding Exp", "dk": 25, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Egg", "effect": "%@Breeding Exp", "dk": 25, "bonus": 0.4}
             }),
         new BaseItemBase("EquipmentStatues23", <StatueItemModel>{
                 "internalName": "EquipmentStatues23",
@@ -22437,7 +22437,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "This statue makes you do more damage. Nothing fancy. ",
                 "bonus": "%Damage",
-                "statueData": <StatueDataModel>{"name": "Battleaxe", "effect": "%@Damage", "dk": 300, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Battleaxe", "effect": "%@Damage", "dk": 300, "bonus": 0.2}
             }),
         new BaseItemBase("EquipmentStatues24", <StatueItemModel>{
                 "internalName": "EquipmentStatues24",
@@ -22457,7 +22457,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "This statue does not actually function as a boat, and will sink immediately, as youd expect a large piece of stone would. ",
                 "bonus": "%Sailing Spd",
-                "statueData": <StatueDataModel>{"name": "Boat", "effect": "%@Sailing Spd", "dk": 160, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Boat", "effect": "%@Sailing Spd", "dk": 160, "bonus": 0.5}
             }),
         new BaseItemBase("EquipmentStatues26", <StatueItemModel>{
                 "internalName": "EquipmentStatues26",
@@ -22467,7 +22467,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "This statue looks exactly like the Compost pot in the Floating Gardens of the Spirit Valley town. ",
                 "bonus": "%Farming Exp",
-                "statueData": <StatueDataModel>{"name": "Compost", "effect": "%@Farming Exp", "dk": 75, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Compost", "effect": "%@Farming Exp", "dk": 75, "bonus": 0.4}
             }),
         new BaseItemBase("EquipmentStatues27", <StatueItemModel>{
                 "internalName": "EquipmentStatues27",
@@ -22477,7 +22477,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "This statue was crafted in the image and likeness of the legendary Gray Fox. The resemblance to your meager stick figure bodies is purely coincidental. ",
                 "bonus": "%Stealth",
-                "statueData": <StatueDataModel>{"name": "Stealth", "effect": "%@Stealth", "dk": 185, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Stealth", "effect": "%@Stealth", "dk": 185, "bonus": 0.3}
             }),
         new BaseItemBase("EquipmentStatues28", <StatueItemModel>{
                 "internalName": "EquipmentStatues28",
@@ -22487,7 +22487,7 @@ export const initSpecificItemRepo = () => {
                 "Type": "Statue",
                 "description": "This statue, despite being a grey brownish colour, actually helps generate white essence. It's weird and quirkly like that... ",
                 "bonus": "%White Ess",
-                "statueData": <StatueDataModel>{"name": "Essence", "effect": "%@White Ess", "dk": 160, "bonus": 0}
+                "statueData": <StatueDataModel>{"name": "Essence", "effect": "%@White Ess", "dk": 160, "bonus": 0.6}
             }),
         new BaseItemBase("PureWater", <DescItemModel>{
                 "internalName": "PureWater",
@@ -26763,7 +26763,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 12,
                     "order": 1
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsA1", <CardItemModel>{
                 "internalName": "CardsA1",
@@ -26779,7 +26779,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 2
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsA2", <CardItemModel>{
                 "internalName": "CardsA2",
@@ -26795,7 +26795,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 10,
                     "order": 3
                 },
-                "dropChance": 0
+                "dropChance": 0.007
             }),
         new BaseItemBase("CardsA3", <CardItemModel>{
                 "internalName": "CardsA3",
@@ -26811,7 +26811,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 7,
                     "order": 4
                 },
-                "dropChance": 0
+                "dropChance": 9.7e-05
             }),
         new BaseItemBase("CardsA4", <CardItemModel>{
                 "internalName": "CardsA4",
@@ -26827,7 +26827,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 5
                 },
-                "dropChance": 0
+                "dropChance": 9.5e-05
             }),
         new BaseItemBase("CardsA5", <CardItemModel>{
                 "internalName": "CardsA5",
@@ -26843,7 +26843,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 1,
                     "order": 6
                 },
-                "dropChance": 0
+                "dropChance": 9.4e-05
             }),
         new BaseItemBase("CardsA6", <CardItemModel>{
                 "internalName": "CardsA6",
@@ -26859,7 +26859,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 7
                 },
-                "dropChance": 0
+                "dropChance": 9e-05
             }),
         new BaseItemBase("CardsA7", <CardItemModel>{
                 "internalName": "CardsA7",
@@ -26875,7 +26875,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 8
                 },
-                "dropChance": 0
+                "dropChance": 8.6e-05
             }),
         new BaseItemBase("CardsA8", <CardItemModel>{
                 "internalName": "CardsA8",
@@ -26891,7 +26891,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 9
                 },
-                "dropChance": 0
+                "dropChance": 8e-05
             }),
         new BaseItemBase("CardsA9", <CardItemModel>{
                 "internalName": "CardsA9",
@@ -26907,7 +26907,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 10
                 },
-                "dropChance": 0
+                "dropChance": 0.0025
             }),
         new BaseItemBase("CardsA10", <CardItemModel>{
                 "internalName": "CardsA10",
@@ -26923,7 +26923,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 10,
                     "order": 11
                 },
-                "dropChance": 0
+                "dropChance": 6e-05
             }),
         new BaseItemBase("CardsA11", <CardItemModel>{
                 "internalName": "CardsA11",
@@ -26939,7 +26939,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 1,
                     "order": 12
                 },
-                "dropChance": 0
+                "dropChance": 5e-05
             }),
         new BaseItemBase("CardsA12", <CardItemModel>{
                 "internalName": "CardsA12",
@@ -26955,7 +26955,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 13
                 },
-                "dropChance": 0
+                "dropChance": 6e-05
             }),
         new BaseItemBase("CardsA13", <CardItemModel>{
                 "internalName": "CardsA13",
@@ -26971,7 +26971,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 14
                 },
-                "dropChance": 0
+                "dropChance": 5e-05
             }),
         new BaseItemBase("CardsA14", <CardItemModel>{
                 "internalName": "CardsA14",
@@ -26987,7 +26987,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 15
                 },
-                "dropChance": 0
+                "dropChance": 0.01
             }),
         new BaseItemBase("CardsA15", <CardItemModel>{
                 "internalName": "CardsA15",
@@ -27003,7 +27003,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 1,
                     "order": 3
                 },
-                "dropChance": 0
+                "dropChance": 0.0015
             }),
         new BaseItemBase("CardsA16", <CardItemModel>{
                 "internalName": "CardsA16",
@@ -27019,7 +27019,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 16
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsB1", <CardItemModel>{
                 "internalName": "CardsB1",
@@ -27115,7 +27115,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 1,
                     "order": 6
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsB7", <CardItemModel>{
                 "internalName": "CardsB7",
@@ -27131,7 +27131,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 7
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsB8", <CardItemModel>{
                 "internalName": "CardsB8",
@@ -27163,7 +27163,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 9
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsB10", <CardItemModel>{
                 "internalName": "CardsB10",
@@ -27179,7 +27179,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 10
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsB11", <CardItemModel>{
                 "internalName": "CardsB11",
@@ -27195,7 +27195,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 11
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsB12", <CardItemModel>{
                 "internalName": "CardsB12",
@@ -27227,7 +27227,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 13
                 },
-                "dropChance": 0
+                "dropChance": 0.008
             }),
         new BaseItemBase("CardsB14", <CardItemModel>{
                 "internalName": "CardsB14",
@@ -27307,7 +27307,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 5
                 },
-                "dropChance": 0
+                "dropChance": 0.0004
             }),
         new BaseItemBase("CardsC5", <CardItemModel>{
                 "internalName": "CardsC5",
@@ -27323,7 +27323,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 6
                 },
-                "dropChance": 0
+                "dropChance": 0.00029
             }),
         new BaseItemBase("CardsC6", <CardItemModel>{
                 "internalName": "CardsC6",
@@ -27339,7 +27339,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 7
                 },
-                "dropChance": 0
+                "dropChance": 0.01
             }),
         new BaseItemBase("CardsC7", <CardItemModel>{
                 "internalName": "CardsC7",
@@ -27355,7 +27355,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 8
                 },
-                "dropChance": 0
+                "dropChance": 0.00017
             }),
         new BaseItemBase("CardsC8", <CardItemModel>{
                 "internalName": "CardsC8",
@@ -27371,7 +27371,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 9
                 },
-                "dropChance": 0
+                "dropChance": 1e-08
             }),
         new BaseItemBase("CardsC9", <CardItemModel>{
                 "internalName": "CardsC9",
@@ -27387,7 +27387,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 10
                 },
-                "dropChance": 0
+                "dropChance": 0.0018
             }),
         new BaseItemBase("CardsC10", <CardItemModel>{
                 "internalName": "CardsC10",
@@ -27403,7 +27403,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 11
                 },
-                "dropChance": 0
+                "dropChance": 0.0016
             }),
         new BaseItemBase("CardsC11", <CardItemModel>{
                 "internalName": "CardsC11",
@@ -27419,7 +27419,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 12
                 },
-                "dropChance": 0
+                "dropChance": 0.00022
             }),
         new BaseItemBase("CardsC12", <CardItemModel>{
                 "internalName": "CardsC12",
@@ -27435,7 +27435,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 13
                 },
-                "dropChance": 0
+                "dropChance": 0.00018
             }),
         new BaseItemBase("CardsC13", <CardItemModel>{
                 "internalName": "CardsC13",
@@ -27494,7 +27494,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 2
                 },
-                "dropChance": 0
+                "dropChance": 6e-05
             }),
         new BaseItemBase("CardsD2", <CardItemModel>{
                 "internalName": "CardsD2",
@@ -27542,7 +27542,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 1
                 },
-                "dropChance": 0
+                "dropChance": 6e-05
             }),
         new BaseItemBase("CardsD5", <CardItemModel>{
                 "internalName": "CardsD5",
@@ -27558,7 +27558,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 6
                 },
-                "dropChance": 0
+                "dropChance": 0.00012
             }),
         new BaseItemBase("CardsD6", <CardItemModel>{
                 "internalName": "CardsD6",
@@ -27574,7 +27574,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 7
                 },
-                "dropChance": 0
+                "dropChance": 0.00013
             }),
         new BaseItemBase("CardsD7", <CardItemModel>{
                 "internalName": "CardsD7",
@@ -27603,10 +27603,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Hard Resources",
                     "perTier": 10,
                     "effect": "+{% Choppin Away Gains",
-                    "bonus": 2,
+                    "bonus": 2.5,
                     "order": 5
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsD9", <CardItemModel>{
                 "internalName": "CardsD9",
@@ -27622,7 +27622,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 10
                 },
-                "dropChance": 0
+                "dropChance": 0.00014
             }),
         new BaseItemBase("CardsD10", <CardItemModel>{
                 "internalName": "CardsD10",
@@ -27638,7 +27638,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 9
                 },
-                "dropChance": 0
+                "dropChance": 0.00014
             }),
         new BaseItemBase("CardsD11", <CardItemModel>{
                 "internalName": "CardsD11",
@@ -27654,7 +27654,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 8
                 },
-                "dropChance": 0
+                "dropChance": 0.0014
             }),
         new BaseItemBase("CardsD12", <CardItemModel>{
                 "internalName": "CardsD12",
@@ -27784,7 +27784,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 1
                 },
-                "dropChance": 0
+                "dropChance": 0.01
             }),
         new BaseItemBase("CardsE1", <CardItemModel>{
                 "internalName": "CardsE1",
@@ -27800,7 +27800,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 7,
                     "order": 2
                 },
-                "dropChance": 0
+                "dropChance": 0.01
             }),
         new BaseItemBase("CardsE2", <CardItemModel>{
                 "internalName": "CardsE2",
@@ -27816,7 +27816,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 9,
                     "order": 3
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsE3", <CardItemModel>{
                 "internalName": "CardsE3",
@@ -27832,7 +27832,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 7,
                     "order": 4
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsE4", <CardItemModel>{
                 "internalName": "CardsE4",
@@ -27845,10 +27845,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Frostbite Tundra",
                     "perTier": 15,
                     "effect": "+{% Total HP",
-                    "bonus": 3,
+                    "bonus": 3.5,
                     "order": 5
                 },
-                "dropChance": 0
+                "dropChance": 0.01
             }),
         new BaseItemBase("CardsE5", <CardItemModel>{
                 "internalName": "CardsE5",
@@ -27864,7 +27864,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 6
                 },
-                "dropChance": 0
+                "dropChance": 0.01
             }),
         new BaseItemBase("CardsE6", <CardItemModel>{
                 "internalName": "CardsE6",
@@ -27880,7 +27880,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 7,
                     "order": 7
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsE7", <CardItemModel>{
                 "internalName": "CardsE7",
@@ -27896,7 +27896,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 8
                 },
-                "dropChance": 0
+                "dropChance": 0.01
             }),
         new BaseItemBase("CardsE8", <CardItemModel>{
                 "internalName": "CardsE8",
@@ -27912,7 +27912,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 7,
                     "order": 9
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsE9", <CardItemModel>{
                 "internalName": "CardsE9",
@@ -27928,7 +27928,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 10
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsE10", <CardItemModel>{
                 "internalName": "CardsE10",
@@ -27941,10 +27941,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Frostbite Tundra",
                     "perTier": 17,
                     "effect": "+{% Total Drop Rate",
-                    "bonus": 3,
+                    "bonus": 3.5,
                     "order": 11
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsE11", <CardItemModel>{
                 "internalName": "CardsE11",
@@ -27960,7 +27960,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 12
                 },
-                "dropChance": 0
+                "dropChance": 0.01
             }),
         new BaseItemBase("CardsE12", <CardItemModel>{
                 "internalName": "CardsE12",
@@ -27976,7 +27976,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 1,
                     "order": 14
                 },
-                "dropChance": 0
+                "dropChance": 0.01
             }),
         new BaseItemBase("CardsE13", <CardItemModel>{
                 "internalName": "CardsE13",
@@ -27992,7 +27992,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 15
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsE14", <CardItemModel>{
                 "internalName": "CardsE14",
@@ -28008,7 +28008,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 13
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsE15", <CardItemModel>{
                 "internalName": "CardsE15",
@@ -28024,7 +28024,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 16
                 },
-                "dropChance": 0
+                "dropChance": 0.008
             }),
         new BaseItemBase("CardsF1", <CardItemModel>{
                 "internalName": "CardsF1",
@@ -28049,7 +28049,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 6,
                     "order": 6
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsF3", <CardItemModel>{
                 "internalName": "CardsF3",
@@ -28094,7 +28094,7 @@ export const initSpecificItemRepo = () => {
                     "category": "Hard Resources",
                     "perTier": 4,
                     "effect": "+{% EXP from monsters",
-                    "bonus": 1,
+                    "bonus": 1.25,
                     "order": 26
                 },
                 "dropChance": 1
@@ -28145,7 +28145,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 7,
                     "order": 17
                 },
-                "dropChance": 0
+                "dropChance": 0.00025
             }),
         new BaseItemBase("CardsF9", <CardItemModel>{
                 "internalName": "CardsF9",
@@ -28158,10 +28158,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Hard Resources",
                     "perTier": 10,
                     "effect": "+{% Catching Away Gains",
-                    "bonus": 2,
+                    "bonus": 2.5,
                     "order": 18
                 },
-                "dropChance": 0
+                "dropChance": 0.00025
             }),
         new BaseItemBase("CardsF10", <CardItemModel>{
                 "internalName": "CardsF10",
@@ -28209,7 +28209,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 7,
                     "order": 8
                 },
-                "dropChance": 0
+                "dropChance": 4e-05
             }),
         new BaseItemBase("CardsF13", <CardItemModel>{
                 "internalName": "CardsF13",
@@ -28225,7 +28225,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 7
                 },
-                "dropChance": 0
+                "dropChance": 1e-05
             }),
         new BaseItemBase("CardsF14", <CardItemModel>{
                 "internalName": "CardsF14",
@@ -28241,7 +28241,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 19
                 },
-                "dropChance": 0
+                "dropChance": 5e-05
             }),
         new BaseItemBase("CardsF15", <CardItemModel>{
                 "internalName": "CardsF15",
@@ -28257,7 +28257,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 20
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsF16", <CardItemModel>{
                 "internalName": "CardsF16",
@@ -28273,7 +28273,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 2
                 },
-                "dropChance": 0
+                "dropChance": 3e-05
             }),
         new BaseItemBase("CardsF17", <CardItemModel>{
                 "internalName": "CardsF17",
@@ -28337,7 +28337,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 13
                 },
-                "dropChance": 0
+                "dropChance": 0.001
             }),
         new BaseItemBase("CardsF21", <CardItemModel>{
                 "internalName": "CardsF21",
@@ -28353,7 +28353,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 14
                 },
-                "dropChance": 0
+                "dropChance": 0.0004
             }),
         new BaseItemBase("CardsF22", <CardItemModel>{
                 "internalName": "CardsF22",
@@ -28369,7 +28369,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 10,
                     "order": 15
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsF23", <CardItemModel>{
                 "internalName": "CardsF23",
@@ -28385,7 +28385,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 16
                 },
-                "dropChance": 0
+                "dropChance": 2.5e-05
             }),
         new BaseItemBase("CardsF24", <CardItemModel>{
                 "internalName": "CardsF24",
@@ -28401,7 +28401,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 9
                 },
-                "dropChance": 0
+                "dropChance": 1e-05
             }),
         new BaseItemBase("CardsF25", <CardItemModel>{
                 "internalName": "CardsF25",
@@ -28417,7 +28417,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 10
                 },
-                "dropChance": 0
+                "dropChance": 1e-08
             }),
         new BaseItemBase("CardsF26", <CardItemModel>{
                 "internalName": "CardsF26",
@@ -28433,7 +28433,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 10,
                     "order": 21
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsF27", <CardItemModel>{
                 "internalName": "CardsF27",
@@ -28449,7 +28449,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 22
                 },
-                "dropChance": 0
+                "dropChance": 1e-08
             }),
         new BaseItemBase("CardsF28", <CardItemModel>{
                 "internalName": "CardsF28",
@@ -28481,7 +28481,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 3
                 },
-                "dropChance": 0
+                "dropChance": 1e-08
             }),
         new BaseItemBase("CardsF30", <CardItemModel>{
                 "internalName": "CardsF30",
@@ -28497,7 +28497,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 15,
                     "order": 37
                 },
-                "dropChance": 0
+                "dropChance": 0.001
             }),
         new BaseItemBase("CardsF31", <CardItemModel>{
                 "internalName": "CardsF31",
@@ -28513,7 +28513,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 12,
                     "order": 38
                 },
-                "dropChance": 0
+                "dropChance": 0.0004
             }),
         new BaseItemBase("CardsF32", <CardItemModel>{
                 "internalName": "CardsF32",
@@ -28526,10 +28526,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Hard Resources",
                     "perTier": 24,
                     "effect": "+{% Fishing Away Gains",
-                    "bonus": 3,
+                    "bonus": 3.5,
                     "order": 39
                 },
-                "dropChance": 0
+                "dropChance": 0.0001
             }),
         new BaseItemBase("CardsF33", <CardItemModel>{
                 "internalName": "CardsF33",
@@ -28545,7 +28545,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 7,
                     "order": 40
                 },
-                "dropChance": 0
+                "dropChance": 2.5e-05
             }),
         new BaseItemBase("CardsF34", <CardItemModel>{
                 "internalName": "CardsF34",
@@ -28561,7 +28561,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 10,
                     "order": 11
                 },
-                "dropChance": 0
+                "dropChance": 4e-08
             }),
         new BaseItemBase("CardsF35", <CardItemModel>{
                 "internalName": "CardsF35",
@@ -28577,7 +28577,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 12
                 },
-                "dropChance": 0
+                "dropChance": 4e-08
             }),
         new BaseItemBase("CardsF36", <CardItemModel>{
                 "internalName": "CardsF36",
@@ -28609,7 +28609,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 23
                 },
-                "dropChance": 0
+                "dropChance": 5e-06
             }),
         new BaseItemBase("CardsF38", <CardItemModel>{
                 "internalName": "CardsF38",
@@ -28625,7 +28625,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 24
                 },
-                "dropChance": 0
+                "dropChance": 1e-06
             }),
         new BaseItemBase("CardsF39", <CardItemModel>{
                 "internalName": "CardsF39",
@@ -28641,7 +28641,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 30,
                     "order": 4
                 },
-                "dropChance": 0
+                "dropChance": 2e-06
             }),
         new BaseItemBase("CardsG1", <CardItemModel>{
                 "internalName": "CardsG1",
@@ -28657,7 +28657,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 1
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG2", <CardItemModel>{
                 "internalName": "CardsG2",
@@ -28673,7 +28673,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 2
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG3", <CardItemModel>{
                 "internalName": "CardsG3",
@@ -28689,7 +28689,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 3
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG4", <CardItemModel>{
                 "internalName": "CardsG4",
@@ -28705,7 +28705,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 15,
                     "order": 4
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG5", <CardItemModel>{
                 "internalName": "CardsG5",
@@ -28721,7 +28721,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 12,
                     "order": 6
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG6", <CardItemModel>{
                 "internalName": "CardsG6",
@@ -28737,7 +28737,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 5
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG7", <CardItemModel>{
                 "internalName": "CardsG7",
@@ -28753,7 +28753,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 7
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG8", <CardItemModel>{
                 "internalName": "CardsG8",
@@ -28766,10 +28766,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Hyperion Nebula",
                     "perTier": 23,
                     "effect": "+{ Weapon Power",
-                    "bonus": 2,
+                    "bonus": 2.5,
                     "order": 8
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG9", <CardItemModel>{
                 "internalName": "CardsG9",
@@ -28785,7 +28785,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 12,
                     "order": 9
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG10", <CardItemModel>{
                 "internalName": "CardsG10",
@@ -28798,10 +28798,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Hyperion Nebula",
                     "perTier": 26,
                     "effect": "+{% Multikill per tier",
-                    "bonus": 1,
+                    "bonus": 1.5,
                     "order": 10
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG11", <CardItemModel>{
                 "internalName": "CardsG11",
@@ -28817,7 +28817,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 12,
                     "order": 11
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG12", <CardItemModel>{
                 "internalName": "CardsG12",
@@ -28830,10 +28830,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Hyperion Nebula",
                     "perTier": 28,
                     "effect": "+{% Critical Chance (Passive)",
-                    "bonus": 1,
+                    "bonus": 1.5,
                     "order": 12
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG13", <CardItemModel>{
                 "internalName": "CardsG13",
@@ -28846,10 +28846,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Hyperion Nebula",
                     "perTier": 30,
                     "effect": "+{% All Stat",
-                    "bonus": 0,
+                    "bonus": 0.5,
                     "order": 13
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsG14", <CardItemModel>{
                 "internalName": "CardsG14",
@@ -28865,7 +28865,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 14
                 },
-                "dropChance": 0
+                "dropChance": 0.008
             }),
         new BaseItemBase("CardsH1", <CardItemModel>{
                 "internalName": "CardsH1",
@@ -28881,7 +28881,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 1
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH2", <CardItemModel>{
                 "internalName": "CardsH2",
@@ -28897,7 +28897,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 2
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH3", <CardItemModel>{
                 "internalName": "CardsH3",
@@ -28913,7 +28913,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 6,
                     "order": 3
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH4", <CardItemModel>{
                 "internalName": "CardsH4",
@@ -28929,7 +28929,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 4
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH5", <CardItemModel>{
                 "internalName": "CardsH5",
@@ -28945,7 +28945,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 6,
                     "order": 5
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH6", <CardItemModel>{
                 "internalName": "CardsH6",
@@ -28961,7 +28961,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 7,
                     "order": 6
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH7", <CardItemModel>{
                 "internalName": "CardsH7",
@@ -28977,7 +28977,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 1,
                     "order": 7
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH8", <CardItemModel>{
                 "internalName": "CardsH8",
@@ -28990,10 +28990,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Smolderin' Plateau",
                     "perTier": 60,
                     "effect": "+{% Total Damage",
-                    "bonus": 4,
+                    "bonus": 4.5,
                     "order": 8
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH9", <CardItemModel>{
                 "internalName": "CardsH9",
@@ -29009,7 +29009,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 9
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH10", <CardItemModel>{
                 "internalName": "CardsH10",
@@ -29025,7 +29025,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 15,
                     "order": 10
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH11", <CardItemModel>{
                 "internalName": "CardsH11",
@@ -29041,7 +29041,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 6,
                     "order": 11
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH12", <CardItemModel>{
                 "internalName": "CardsH12",
@@ -29057,7 +29057,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 12
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH13", <CardItemModel>{
                 "internalName": "CardsH13",
@@ -29073,7 +29073,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 1,
                     "order": 13
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsH14", <CardItemModel>{
                 "internalName": "CardsH14",
@@ -29089,7 +29089,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 14
                 },
-                "dropChance": 0
+                "dropChance": 0.006
             }),
         new BaseItemBase("CardsI1", <CardItemModel>{
                 "internalName": "CardsI1",
@@ -29105,7 +29105,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 1
                 },
-                "dropChance": 0
+                "dropChance": 2.5e-05
             }),
         new BaseItemBase("CardsI2", <CardItemModel>{
                 "internalName": "CardsI2",
@@ -29121,7 +29121,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 2
                 },
-                "dropChance": 0
+                "dropChance": 2e-05
             }),
         new BaseItemBase("CardsI3", <CardItemModel>{
                 "internalName": "CardsI3",
@@ -29134,10 +29134,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Spirited Valley",
                     "perTier": 75,
                     "effect": "+{% All Stat",
-                    "bonus": 1,
+                    "bonus": 1.5,
                     "order": 3
                 },
-                "dropChance": 0
+                "dropChance": 1.5e-05
             }),
         new BaseItemBase("CardsI4", <CardItemModel>{
                 "internalName": "CardsI4",
@@ -29153,7 +29153,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 4
                 },
-                "dropChance": 0
+                "dropChance": 1e-05
             }),
         new BaseItemBase("CardsI5", <CardItemModel>{
                 "internalName": "CardsI5",
@@ -29169,7 +29169,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 5
                 },
-                "dropChance": 0
+                "dropChance": 8e-06
             }),
         new BaseItemBase("CardsI6", <CardItemModel>{
                 "internalName": "CardsI6",
@@ -29185,7 +29185,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 6
                 },
-                "dropChance": 0
+                "dropChance": 6e-06
             }),
         new BaseItemBase("CardsI7", <CardItemModel>{
                 "internalName": "CardsI7",
@@ -29201,7 +29201,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 7
                 },
-                "dropChance": 0
+                "dropChance": 5e-06
             }),
         new BaseItemBase("CardsI8", <CardItemModel>{
                 "internalName": "CardsI8",
@@ -29217,7 +29217,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 8
                 },
-                "dropChance": 0
+                "dropChance": 3e-06
             }),
         new BaseItemBase("CardsI9", <CardItemModel>{
                 "internalName": "CardsI9",
@@ -29233,7 +29233,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 9
                 },
-                "dropChance": 0
+                "dropChance": 2e-06
             }),
         new BaseItemBase("CardsI10", <CardItemModel>{
                 "internalName": "CardsI10",
@@ -29249,7 +29249,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 10
                 },
-                "dropChance": 0
+                "dropChance": 1e-06
             }),
         new BaseItemBase("CardsI11", <CardItemModel>{
                 "internalName": "CardsI11",
@@ -29265,7 +29265,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 20,
                     "order": 11
                 },
-                "dropChance": 0
+                "dropChance": 8e-07
             }),
         new BaseItemBase("CardsI12", <CardItemModel>{
                 "internalName": "CardsI12",
@@ -29281,7 +29281,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 1,
                     "order": 12
                 },
-                "dropChance": 0
+                "dropChance": 6e-07
             }),
         new BaseItemBase("CardsI13", <CardItemModel>{
                 "internalName": "CardsI13",
@@ -29297,7 +29297,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 13
                 },
-                "dropChance": 0
+                "dropChance": 5e-07
             }),
         new BaseItemBase("CardsI14", <CardItemModel>{
                 "internalName": "CardsI14",
@@ -29310,10 +29310,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Spirited Valley",
                     "perTier": 2500,
                     "effect": "+{% All AFK Gains(Passive)",
-                    "bonus": 1,
+                    "bonus": 1.5,
                     "order": 14
                 },
-                "dropChance": 0
+                "dropChance": 4e-07
             }),
         new BaseItemBase("CardsI15", <CardItemModel>{
                 "internalName": "CardsI15",
@@ -29329,7 +29329,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 15
                 },
-                "dropChance": 0
+                "dropChance": 0.002
             }),
         new BaseItemBase("CardsX0", <CardItemModel>{
                 "internalName": "CardsX0",
@@ -29345,7 +29345,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 1
                 },
-                "dropChance": 0
+                "dropChance": 0.004
             }),
         new BaseItemBase("CardsX1", <CardItemModel>{
                 "internalName": "CardsX1",
@@ -29361,7 +29361,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 2
                 },
-                "dropChance": 0
+                "dropChance": 0.0025
             }),
         new BaseItemBase("CardsX2", <CardItemModel>{
                 "internalName": "CardsX2",
@@ -29374,10 +29374,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Dungeons",
                     "perTier": 2,
                     "effect": "+{ Base Dungeon Damage",
-                    "bonus": 1,
+                    "bonus": 1.5,
                     "order": 3
                 },
-                "dropChance": 0
+                "dropChance": 0.0025
             }),
         new BaseItemBase("CardsX3", <CardItemModel>{
                 "internalName": "CardsX3",
@@ -29393,7 +29393,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 15,
                     "order": 7
                 },
-                "dropChance": 0
+                "dropChance": 0.04
             }),
         new BaseItemBase("CardsX4", <CardItemModel>{
                 "internalName": "CardsX4",
@@ -29457,7 +29457,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 20,
                     "order": 6
                 },
-                "dropChance": 0
+                "dropChance": 0.004
             }),
         new BaseItemBase("CardsX6", <CardItemModel>{
                 "internalName": "CardsX6",
@@ -29473,7 +29473,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 11
                 },
-                "dropChance": 0
+                "dropChance": 0.005
             }),
         new BaseItemBase("CardsX7", <CardItemModel>{
                 "internalName": "CardsX7",
@@ -29489,7 +29489,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 12
                 },
-                "dropChance": 0
+                "dropChance": 0.008
             }),
         new BaseItemBase("CardsX8", <CardItemModel>{
                 "internalName": "CardsX8",
@@ -29505,7 +29505,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 15
                 },
-                "dropChance": 0
+                "dropChance": 0.0025
             }),
         new BaseItemBase("CardsX9", <CardItemModel>{
                 "internalName": "CardsX9",
@@ -29521,7 +29521,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 6,
                     "order": 13
                 },
-                "dropChance": 0
+                "dropChance": 0.0025
             }),
         new BaseItemBase("CardsX10", <CardItemModel>{
                 "internalName": "CardsX10",
@@ -29537,7 +29537,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 16
                 },
-                "dropChance": 0
+                "dropChance": 0.0025
             }),
         new BaseItemBase("CardsX11", <CardItemModel>{
                 "internalName": "CardsX11",
@@ -29553,7 +29553,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 4,
                     "order": 17
                 },
-                "dropChance": 0
+                "dropChance": 0.02
             }),
         new BaseItemBase("CardsX12", <CardItemModel>{
                 "internalName": "CardsX12",
@@ -29601,7 +29601,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 6,
                     "order": 4
                 },
-                "dropChance": 0
+                "dropChance": 0.0025
             }),
         new BaseItemBase("CardsX15", <CardItemModel>{
                 "internalName": "CardsX15",
@@ -29614,10 +29614,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Dungeons",
                     "perTier": 3,
                     "effect": "+{% Dungeon Credits",
-                    "bonus": 2,
+                    "bonus": 2.5,
                     "order": 5
                 },
-                "dropChance": 0
+                "dropChance": 0.0025
             }),
         new BaseItemBase("CardsX16", <CardItemModel>{
                 "internalName": "CardsX16",
@@ -29633,7 +29633,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 10,
                     "order": 14
                 },
-                "dropChance": 0
+                "dropChance": 0.07
             }),
         new BaseItemBase("CardsX17", <CardItemModel>{
                 "internalName": "CardsX17",
@@ -29649,7 +29649,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 20
                 },
-                "dropChance": 0
+                "dropChance": 0.017
             }),
         new BaseItemBase("CardsX18", <CardItemModel>{
                 "internalName": "CardsX18",
@@ -29665,7 +29665,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 15,
                     "order": 21
                 },
-                "dropChance": 0
+                "dropChance": 0.02
             }),
         new BaseItemBase("CardsX19", <CardItemModel>{
                 "internalName": "CardsX19",
@@ -29713,7 +29713,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 1
                 },
-                "dropChance": 0
+                "dropChance": 0.05
             }),
         new BaseItemBase("CardsY1", <CardItemModel>{
                 "internalName": "CardsY1",
@@ -29761,7 +29761,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 4
                 },
-                "dropChance": 0
+                "dropChance": 0.05
             }),
         new BaseItemBase("CardsY4", <CardItemModel>{
                 "internalName": "CardsY4",
@@ -29809,7 +29809,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 8
                 },
-                "dropChance": 0
+                "dropChance": 0.05
             }),
         new BaseItemBase("CardsY7", <CardItemModel>{
                 "internalName": "CardsY7",
@@ -29825,7 +29825,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 9
                 },
-                "dropChance": 0
+                "dropChance": 0.05
             }),
         new BaseItemBase("CardsY8", <CardItemModel>{
                 "internalName": "CardsY8",
@@ -29873,7 +29873,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 13
                 },
-                "dropChance": 0
+                "dropChance": 0.03
             }),
         new BaseItemBase("CardsY11", <CardItemModel>{
                 "internalName": "CardsY11",
@@ -29889,7 +29889,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 1,
                     "order": 14
                 },
-                "dropChance": 0
+                "dropChance": 0.05
             }),
         new BaseItemBase("CardsY12", <CardItemModel>{
                 "internalName": "CardsY12",
@@ -29921,7 +29921,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 2,
                     "order": 12
                 },
-                "dropChance": 0
+                "dropChance": 0.03
             }),
         new BaseItemBase("CardsY14", <CardItemModel>{
                 "internalName": "CardsY14",
@@ -30017,7 +30017,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 10,
                     "order": 1
                 },
-                "dropChance": 0
+                "dropChance": 0.03
             }),
         new BaseItemBase("CardsZ1", <CardItemModel>{
                 "internalName": "CardsZ1",
@@ -30033,7 +30033,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 2
                 },
-                "dropChance": 0
+                "dropChance": 0.03
             }),
         new BaseItemBase("CardsZ2", <CardItemModel>{
                 "internalName": "CardsZ2",
@@ -30046,10 +30046,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Bosses",
                     "perTier": 1.5,
                     "effect": "+{% Skill AFK gain rate",
-                    "bonus": 2,
+                    "bonus": 2.5,
                     "order": 4
                 },
-                "dropChance": 0
+                "dropChance": 0.04
             }),
         new BaseItemBase("CardsZ3", <CardItemModel>{
                 "internalName": "CardsZ3",
@@ -30065,7 +30065,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 9
                 },
-                "dropChance": 0
+                "dropChance": 5e-07
             }),
         new BaseItemBase("CardsZ4", <CardItemModel>{
                 "internalName": "CardsZ4",
@@ -30078,10 +30078,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Bosses",
                     "perTier": 1.5,
                     "effect": "+{% Fighting AFK gain rate",
-                    "bonus": 2,
+                    "bonus": 2.5,
                     "order": 5
                 },
-                "dropChance": 0
+                "dropChance": 0.02
             }),
         new BaseItemBase("CardsZ5", <CardItemModel>{
                 "internalName": "CardsZ5",
@@ -30126,10 +30126,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Bosses",
                     "perTier": 1.5,
                     "effect": "+{% Skill EXP",
-                    "bonus": 3,
+                    "bonus": 3.75,
                     "order": 10
                 },
-                "dropChance": 0
+                "dropChance": 0.016
             }),
         new BaseItemBase("CardsZ8", <CardItemModel>{
                 "internalName": "CardsZ8",
@@ -30145,7 +30145,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 13
                 },
-                "dropChance": 0
+                "dropChance": 0.007
             }),
         new BaseItemBase("CardsZ9", <CardItemModel>{
                 "internalName": "CardsZ9",
@@ -30161,7 +30161,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 5,
                     "order": 14
                 },
-                "dropChance": 0
+                "dropChance": 0.004
             }),
         new BaseItemBase("CardsZ10", <CardItemModel>{
                 "internalName": "CardsZ10",
@@ -30177,7 +30177,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 6,
                     "order": 17
                 },
-                "dropChance": 0
+                "dropChance": 0.004
             }),
         new BaseItemBase("CardsZ11", <CardItemModel>{
                 "internalName": "CardsZ11",
@@ -30193,7 +30193,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 10,
                     "order": 18
                 },
-                "dropChance": 0
+                "dropChance": 0.002
             }),
         new BaseItemBase("CardsZ12", <CardItemModel>{
                 "internalName": "CardsZ12",
@@ -30209,7 +30209,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 12,
                     "order": 12
                 },
-                "dropChance": 0
+                "dropChance": 0.2
             }),
         new BaseItemBase("CardsZ13", <CardItemModel>{
                 "internalName": "CardsZ13",
@@ -30225,7 +30225,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 6,
                     "order": 16
                 },
-                "dropChance": 0
+                "dropChance": 0.2
             }),
         new BaseItemBase("CardsZ14", <CardItemModel>{
                 "internalName": "CardsZ14",
@@ -30241,7 +30241,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 3,
                     "order": 6
                 },
-                "dropChance": 0
+                "dropChance": 0.02
             }),
         new BaseItemBase("CardsZ15", <CardItemModel>{
                 "internalName": "CardsZ15",
@@ -30257,7 +30257,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 15,
                     "order": 11
                 },
-                "dropChance": 0
+                "dropChance": 0.02
             }),
         new BaseItemBase("CardsZ16", <CardItemModel>{
                 "internalName": "CardsZ16",
@@ -30270,10 +30270,10 @@ export const initSpecificItemRepo = () => {
                     "category": "Bosses",
                     "perTier": 12,
                     "effect": "+{% All Stat",
-                    "bonus": 1,
+                    "bonus": 1.5,
                     "order": 15
                 },
-                "dropChance": 0
+                "dropChance": 0.002
             }),
         new BaseItemBase("CardsZ17", <CardItemModel>{
                 "internalName": "CardsZ17",
@@ -30289,7 +30289,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 7,
                     "order": 19
                 },
-                "dropChance": 0
+                "dropChance": 0.003
             }),
         new BaseItemBase("CardsZ18", <CardItemModel>{
                 "internalName": "CardsZ18",
@@ -30305,7 +30305,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 6,
                     "order": 20
                 },
-                "dropChance": 0
+                "dropChance": 0.0008
             }),
         new BaseItemBase("CardsZ19", <CardItemModel>{
                 "internalName": "CardsZ19",
@@ -30321,7 +30321,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 8,
                     "order": 21
                 },
-                "dropChance": 0
+                "dropChance": 0.0008
             }),
         new BaseItemBase("CardsZ20", <CardItemModel>{
                 "internalName": "CardsZ20",
@@ -30337,7 +30337,7 @@ export const initSpecificItemRepo = () => {
                     "bonus": 18,
                     "order": 22
                 },
-                "dropChance": 0
+                "dropChance": 0.0008
             }),
         new BaseItemBase("CardsZ21", <CardItemModel>{
                 "internalName": "CardsZ21",

@@ -515,7 +515,7 @@ export const initCardRepo = () => {
                 "category": "Frostbite Tundra",
                 "perTier": 15,
                 "effect": "+{% Total HP",
-                "bonus": 3,
+                "bonus": 3.5,
                 "order": 5
             }),
         new CardDataBase("snowball", <CardDataModel>{
@@ -563,7 +563,7 @@ export const initCardRepo = () => {
                 "category": "Frostbite Tundra",
                 "perTier": 17,
                 "effect": "+{% Total Drop Rate",
-                "bonus": 3,
+                "bonus": 3.5,
                 "order": 11
             }),
         new CardDataBase("eye", <CardDataModel>{
@@ -643,7 +643,7 @@ export const initCardRepo = () => {
                 "category": "Hard Resources",
                 "perTier": 10,
                 "effect": "+{% Choppin Away Gains",
-                "bonus": 2,
+                "bonus": 2.5,
                 "order": 5
             }),
         new CardDataBase("Tree7", <CardDataModel>{
@@ -747,7 +747,7 @@ export const initCardRepo = () => {
                 "category": "Hard Resources",
                 "perTier": 10,
                 "effect": "+{% Catching Away Gains",
-                "bonus": 2,
+                "bonus": 2.5,
                 "order": 18
             }),
         new CardDataBase("Bug7", <CardDataModel>{
@@ -811,7 +811,7 @@ export const initCardRepo = () => {
                 "category": "Hard Resources",
                 "perTier": 4,
                 "effect": "+{% EXP from monsters",
-                "bonus": 1,
+                "bonus": 1.25,
                 "order": 26
             }),
         new CardDataBase("CritterCard6", <CardDataModel>{
@@ -915,7 +915,7 @@ export const initCardRepo = () => {
                 "category": "Hard Resources",
                 "perTier": 24,
                 "effect": "+{% Fishing Away Gains",
-                "bonus": 3,
+                "bonus": 3.5,
                 "order": 39
             }),
         new CardDataBase("Fish12", <CardDataModel>{
@@ -987,7 +987,7 @@ export const initCardRepo = () => {
                 "category": "Hyperion Nebula",
                 "perTier": 23,
                 "effect": "+{ Weapon Power",
-                "bonus": 2,
+                "bonus": 2.5,
                 "order": 8
             }),
         new CardDataBase("w4b5", <CardDataModel>{
@@ -1003,7 +1003,7 @@ export const initCardRepo = () => {
                 "category": "Hyperion Nebula",
                 "perTier": 26,
                 "effect": "+{% Multikill per tier",
-                "bonus": 1,
+                "bonus": 1.5,
                 "order": 10
             }),
         new CardDataBase("w4c2", <CardDataModel>{
@@ -1019,7 +1019,7 @@ export const initCardRepo = () => {
                 "category": "Hyperion Nebula",
                 "perTier": 28,
                 "effect": "+{% Critical Chance (Passive)",
-                "bonus": 1,
+                "bonus": 1.5,
                 "order": 12
             }),
         new CardDataBase("w4c4", <CardDataModel>{
@@ -1027,7 +1027,7 @@ export const initCardRepo = () => {
                 "category": "Hyperion Nebula",
                 "perTier": 30,
                 "effect": "+{% All Stat",
-                "bonus": 0,
+                "bonus": 0.5,
                 "order": 13
             }),
         new CardDataBase("Crystal3", <CardDataModel>{
@@ -1099,7 +1099,7 @@ export const initCardRepo = () => {
                 "category": "Smolderin' Plateau",
                 "perTier": 60,
                 "effect": "+{% Total Damage",
-                "bonus": 4,
+                "bonus": 4.5,
                 "order": 8
             }),
         new CardDataBase("w5b4", <CardDataModel>{
@@ -1171,7 +1171,7 @@ export const initCardRepo = () => {
                 "category": "Spirited Valley",
                 "perTier": 75,
                 "effect": "+{% All Stat",
-                "bonus": 1,
+                "bonus": 1.5,
                 "order": 3
             }),
         new CardDataBase("w6a4", <CardDataModel>{
@@ -1259,7 +1259,7 @@ export const initCardRepo = () => {
                 "category": "Spirited Valley",
                 "perTier": 2500,
                 "effect": "+{% All AFK Gains(Passive)",
-                "bonus": 1,
+                "bonus": 1.5,
                 "order": 14
             }),
         new CardDataBase("Crystal5", <CardDataModel>{
@@ -1291,7 +1291,7 @@ export const initCardRepo = () => {
                 "category": "Dungeons",
                 "perTier": 2,
                 "effect": "+{ Base Dungeon Damage",
-                "bonus": 1,
+                "bonus": 1.5,
                 "order": 3
             }),
         new CardDataBase("frogR", <CardDataModel>{
@@ -1307,7 +1307,7 @@ export const initCardRepo = () => {
                 "category": "Dungeons",
                 "perTier": 3,
                 "effect": "+{% Dungeon Credits",
-                "bonus": 2,
+                "bonus": 2.5,
                 "order": 5
             }),
         new CardDataBase("frogGG", <CardDataModel>{
@@ -1483,7 +1483,7 @@ export const initCardRepo = () => {
                 "category": "Bosses",
                 "perTier": 1.5,
                 "effect": "+{% Skill AFK gain rate",
-                "bonus": 2,
+                "bonus": 2.5,
                 "order": 4
             }),
         new CardDataBase("wolfB", <CardDataModel>{
@@ -1491,7 +1491,7 @@ export const initCardRepo = () => {
                 "category": "Bosses",
                 "perTier": 1.5,
                 "effect": "+{% Fighting AFK gain rate",
-                "bonus": 2,
+                "bonus": 2.5,
                 "order": 5
             }),
         new CardDataBase("wolfC", <CardDataModel>{
@@ -1531,7 +1531,7 @@ export const initCardRepo = () => {
                 "category": "Bosses",
                 "perTier": 1.5,
                 "effect": "+{% Skill EXP",
-                "bonus": 3,
+                "bonus": 3.75,
                 "order": 10
             }),
         new CardDataBase("Boss2C", <CardDataModel>{
@@ -1571,7 +1571,7 @@ export const initCardRepo = () => {
                 "category": "Bosses",
                 "perTier": 12,
                 "effect": "+{% All Stat",
-                "bonus": 1,
+                "bonus": 1.5,
                 "order": 15
             }),
         new CardDataBase("mini4a", <CardDataModel>{

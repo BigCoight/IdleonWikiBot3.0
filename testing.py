@@ -2,9 +2,9 @@
 # oldV = IdleonReader("156", True)
 # NpcRepo.initialise(newV.codeReader)
 from helpers.CodeReader import IdleonReader
-from repositories.misc.world4.LabBonusRepo import LabBonusRepo
+from repositories.misc.MapPortalsRepo import MapPortalsRepo
 
-newV = IdleonReader("202", True)
+newV = IdleonReader("203", True)
 oldV = IdleonReader("201", True)
 
-LabBonusRepo.initialise(newV.codeReader)
+MapPortalsRepo.initialise(newV.codeReader)

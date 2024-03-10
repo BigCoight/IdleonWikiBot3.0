@@ -7,4 +7,4 @@ from helpers.CustomTypes import Integer
 class MapInfo(IdleonModel):
 	id: Integer
 	portalRequirements: List[Integer]
-# maxOnScreen: List[Integer]
+	maxOnScreen: Integer

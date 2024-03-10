@@ -298,7 +298,7 @@ export const initTaskShopDescRepo = () => {
                 "text2": "BonusPerLv",
                 "extraStr": "Blank420q",
                 "icon": "TaskSc4",
-                "bonusPerLevel": 0
+                "bonusPerLevel": 0.5
             }),
         new TaskShopDescBase(21, <TaskShopDescModel>{
                 "descLine1": "Unlocks recipe to craft Chizoar }.",

@@ -15,7 +15,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": "filler",
                 "bonus": "Desc",
                 "costBase": 10000,
-                "costExponent": 1,
+                "costExponent": 1.1,
                 "unlockId": 0,
                 "iconX": 308,
                 "iconY": 17
@@ -29,7 +29,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": "filler",
                 "bonus": "Desc",
                 "costBase": 10000,
-                "costExponent": 1,
+                "costExponent": 1.1,
                 "unlockId": 0,
                 "iconX": 403,
                 "iconY": 17
@@ -43,7 +43,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 3,
                 "bonus": "+{% bonus Sneaking EXP gain.",
                 "costBase": 8500,
-                "costExponent": 1,
+                "costExponent": 1.12,
                 "unlockId": 8,
                 "iconX": 557,
                 "iconY": 17
@@ -57,7 +57,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 1,
                 "bonus": "Desc",
                 "costBase": 10000,
-                "costExponent": 1,
+                "costExponent": 1.1,
                 "unlockId": 0,
                 "iconX": 863,
                 "iconY": 16
@@ -71,7 +71,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 1,
                 "bonus": "+{% action speed. So instead of actions taking an hour, it's under an hour!",
                 "costBase": 48000,
-                "costExponent": 1,
+                "costExponent": 1.35,
                 "unlockId": 2,
                 "iconX": 474,
                 "iconY": 89
@@ -85,7 +85,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 4,
                 "bonus": "+{% Door Damage and Untie Rate.",
                 "costBase": 17500,
-                "costExponent": 1,
+                "costExponent": 1.25,
                 "unlockId": 15,
                 "iconX": 715,
                 "iconY": 89
@@ -99,7 +99,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 1,
                 "bonus": "Raise the max LV of Shuriken found to +{, also increases rarity of Shuriken found.",
                 "costBase": 1000000000,
-                "costExponent": 1,
+                "costExponent": 1.63,
                 "unlockId": 0,
                 "iconX": 93,
                 "iconY": 123
@@ -113,7 +113,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 1,
                 "bonus": "Raise the max LV of Kunai found to +{, also increases rarity of Kunai found.",
                 "costBase": 10000,
-                "costExponent": 1,
+                "costExponent": 1.45,
                 "unlockId": 12,
                 "iconX": 308,
                 "iconY": 117
@@ -127,7 +127,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 1,
                 "bonus": "+{% bonus Jade Coins found per Sneaking LV",
                 "costBase": 1250,
-                "costExponent": 1,
+                "costExponent": 1.1,
                 "unlockId": 14,
                 "iconX": 618,
                 "iconY": 117
@@ -141,7 +141,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": "filler",
                 "bonus": "Desc",
                 "costBase": 10000,
-                "costExponent": 1,
+                "costExponent": 1.1,
                 "unlockId": 9,
                 "iconX": 803,
                 "iconY": 117
@@ -155,7 +155,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 1,
                 "bonus": "Raise the max LV of Gloves found to +{, also increases rarity of Gloves found.",
                 "costBase": 10000000,
-                "costExponent": 1,
+                "costExponent": 1.55,
                 "unlockId": 11,
                 "iconX": 93,
                 "iconY": 214
@@ -169,7 +169,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 1,
                 "bonus": "Raise the max LV of Charms found to +{, also increases rarity of Charms found.",
                 "costBase": 250000,
-                "costExponent": 1,
+                "costExponent": 1.43,
                 "unlockId": 7,
                 "iconX": 234,
                 "iconY": 214
@@ -183,7 +183,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 1,
                 "bonus": "Raise the max LV of Nunchaku found to +{, also increases rarity of Nunchaku found.",
                 "costBase": 350,
-                "costExponent": 1,
+                "costExponent": 1.43,
                 "unlockId": 13,
                 "iconX": 371,
                 "iconY": 214
@@ -197,7 +197,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 1,
                 "bonus": "+{ Stealth per Sneaking Lv. Stealth is what lowers detection rate.",
                 "costBase": 50,
-                "costExponent": 1,
+                "costExponent": 1.08,
                 "unlockId": 0,
                 "iconX": 494,
                 "iconY": 214
@@ -211,7 +211,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 1,
                 "bonus": "Successfully sneaking now has a small chance of finding items. }x Item Find Chance.",
                 "costBase": 80,
-                "costExponent": 1,
+                "costExponent": 1.3,
                 "unlockId": 13,
                 "iconX": 618,
                 "iconY": 214
@@ -225,7 +225,7 @@ export const initNinjaUpgradeRepo = () => {
                 "bonusPerLvl": 2,
                 "bonus": "When detected, getting Knocked Out lasts for {% less time.",
                 "costBase": 3650,
-                "costExponent": 1,
+                "costExponent": 1.5,
                 "unlockId": 14,
                 "iconX": 715,
                 "iconY": 214

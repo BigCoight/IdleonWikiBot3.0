@@ -21,7 +21,7 @@ export const initJewelRepo = () => {
                     <SpiceComponentModel>{"spiceNo": "0", "quantity": 200}
                 ],
                 "name": "Amethyst Rhinestone",
-                "bonusGiven": 1
+                "bonusGiven": 1.5
             }),
         new JewelBase(1, <JewelModel>{
                 "x": 164,
@@ -35,7 +35,7 @@ export const initJewelRepo = () => {
                     <SpiceComponentModel>{"spiceNo": "1", "quantity": 200}
                 ],
                 "name": "Purple Navette",
-                "bonusGiven": 0
+                "bonusGiven": 0.5
             }),
         new JewelBase(2, <JewelModel>{
                 "x": 163,

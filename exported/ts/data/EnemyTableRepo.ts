@@ -499,7 +499,7 @@ export const initEnemyTableRepo = () => {
                     <ItemDropModel>{"item": "Quest41", "quantity": 1, "chance": 1, "questLink": "N/A"},
                     <SubTableDropModel>{"item": "DropTable1", "quantity": 2, "chance": 1, "questLink": "N/A"},
                     <SubTableDropModel>{"item": "DropTable2", "quantity": 1, "chance": 1, "questLink": "N/A"},
-                    <SubTableDropModel>{"item": "DropTable3", "quantity": 0, "chance": 1, "questLink": "N/A"}
+                    <SubTableDropModel>{"item": "DropTable3", "quantity": 0.5, "chance": 1, "questLink": "N/A"}
                 ]
             }),
         new EnemyTableBase("poopBig", <EnemyTableModel>{

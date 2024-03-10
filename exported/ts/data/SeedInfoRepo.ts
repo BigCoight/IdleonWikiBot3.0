@@ -12,8 +12,8 @@ export const initSeedInfoRepo = () => {
                 "cropIdMin": 0,
                 "cropIdMax": 20,
                 "lvlReq": 1,
-                "nextCropChance": 0,
-                "nextCropDecay": 0
+                "nextCropChance": 0.3,
+                "nextCropDecay": 0.75
             }),
         new SeedInfoBase(1, <SeedInfoModel>{
                 "name": "EARTHY",
@@ -21,8 +21,8 @@ export const initSeedInfoRepo = () => {
                 "cropIdMin": 21,
                 "cropIdMax": 45,
                 "lvlReq": 10,
-                "nextCropChance": 0,
-                "nextCropDecay": 0
+                "nextCropChance": 0.12,
+                "nextCropDecay": 0.63
             }),
         new SeedInfoBase(2, <SeedInfoModel>{
                 "name": "BULBO",
@@ -30,8 +30,8 @@ export const initSeedInfoRepo = () => {
                 "cropIdMin": 46,
                 "cropIdMax": 60,
                 "lvlReq": 25,
-                "nextCropChance": 0,
-                "nextCropDecay": 0
+                "nextCropChance": 0.04,
+                "nextCropDecay": 0.3
             }),
         new SeedInfoBase(3, <SeedInfoModel>{
                 "name": "SUSHI",
@@ -39,8 +39,8 @@ export const initSeedInfoRepo = () => {
                 "cropIdMin": 61,
                 "cropIdMax": 83,
                 "lvlReq": 50,
-                "nextCropChance": 0,
-                "nextCropDecay": 0
+                "nextCropChance": 0.01,
+                "nextCropDecay": 0.4
             }),
         new SeedInfoBase(4, <SeedInfoModel>{
                 "name": "MUSHIE",
@@ -48,8 +48,8 @@ export const initSeedInfoRepo = () => {
                 "cropIdMin": 84,
                 "cropIdMax": 106,
                 "lvlReq": 80,
-                "nextCropChance": 0,
-                "nextCropDecay": 0
+                "nextCropChance": 0.003,
+                "nextCropDecay": 0.2
             }),
         new SeedInfoBase(5, <SeedInfoModel>{
                 "name": "GLASSY",
@@ -57,8 +57,8 @@ export const initSeedInfoRepo = () => {
                 "cropIdMin": 107,
                 "cropIdMax": 119,
                 "lvlReq": 120,
-                "nextCropChance": 0,
-                "nextCropDecay": 0
+                "nextCropChance": 0.0005,
+                "nextCropDecay": 0.05
             })    
 ]
 }

@@ -24,7 +24,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "fightAFK",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Critical Chance",
@@ -32,10 +32,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "critchance",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Locally Sourced Organs", <PostOfficeUpgradesModel>{
                 "name": "Locally Sourced Organs",
@@ -50,11 +50,11 @@ export const initPostOfficeUpgradesRepo = () => {
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Max HP",
-                        "x1": 0,
+                        "x1": 0.1,
                         "x2": 0,
                         "func": "add",
                         "bonusKey": "pctHP",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Faster Respawns",
@@ -62,10 +62,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "SelfHeal",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Magician Starterpack", <PostOfficeUpgradesModel>{
                 "name": "Magician Starterpack",
@@ -80,11 +80,11 @@ export const initPostOfficeUpgradesRepo = () => {
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Max MP",
-                        "x1": 0,
+                        "x1": 0.1,
                         "x2": 0,
                         "func": "add",
                         "bonusKey": "pctMP",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Faster Cooldowns",
@@ -92,17 +92,17 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "cooldown",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Box of Unwanted Stats", <PostOfficeUpgradesModel>{
                 "name": "Box of Unwanted Stats",
                 "bonuses": [
                     <PostOfficeUpgradeModel>{
                         "bonus": "Base Accuracy",
-                        "x1": 0,
+                        "x1": 0.25,
                         "x2": 0,
                         "func": "add",
                         "bonusKey": "acc",
@@ -110,11 +110,11 @@ export const initPostOfficeUpgradesRepo = () => {
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "Base Defence",
-                        "x1": 0,
+                        "x1": 0.3,
                         "x2": 0,
                         "func": "add",
                         "bonusKey": "def",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Monster EXP",
@@ -122,10 +122,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 170,
                         "func": "decay",
                         "bonusKey": "monsterExp",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Dwarven Supplies", <PostOfficeUpgradesModel>{
                 "name": "Dwarven Supplies",
@@ -144,7 +144,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 150,
                         "func": "decay",
                         "bonusKey": "MinProw",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Mining AFK Gain",
@@ -152,10 +152,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 175,
                         "func": "decay",
                         "bonusKey": "MinAFK",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Blacksmith Box", <PostOfficeUpgradesModel>{
                 "name": "Blacksmith Box",
@@ -174,7 +174,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "ProdSpd",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% to Craft +1 Slot",
@@ -182,10 +182,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 150,
                         "func": "decay",
                         "bonusKey": "OneSlot",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Taped Up Timber", <PostOfficeUpgradesModel>{
                 "name": "Taped Up Timber",
@@ -204,7 +204,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 150,
                         "func": "decay",
                         "bonusKey": "ChopProw",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Choppin AFK Gain",
@@ -212,10 +212,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 175,
                         "func": "decay",
                         "bonusKey": "ChopAFK",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Carepack From Mum", <PostOfficeUpgradesModel>{
                 "name": "Carepack From Mum",
@@ -234,7 +234,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "HealthFoodEffect",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Boost Food Effect",
@@ -242,10 +242,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "PowerFoodEffect",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Sealed Fishheads", <PostOfficeUpgradesModel>{
                 "name": "Sealed Fishheads",
@@ -264,7 +264,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 150,
                         "func": "decay",
                         "bonusKey": "FishProw",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Fishin AFK Gain",
@@ -272,10 +272,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 175,
                         "func": "decay",
                         "bonusKey": "FishAFK",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Potion Package", <PostOfficeUpgradesModel>{
                 "name": "Potion Package",
@@ -294,18 +294,18 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 150,
                         "func": "decay",
                         "bonusKey": "AlchEXP",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "Cranium Cook Time",
-                        "x1": 0,
+                        "x1": 0.1,
                         "x2": 0,
                         "func": "add",
                         "bonusKey": "CookTime",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Bug Hunting Supplies", <PostOfficeUpgradesModel>{
                 "name": "Bug Hunting Supplies",
@@ -324,7 +324,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 150,
                         "func": "decay",
                         "bonusKey": "CatchProw",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Catchin AFK Gain",
@@ -332,10 +332,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 175,
                         "func": "decay",
                         "bonusKey": "CatchAFK",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Non Predatory Loot Box", <PostOfficeUpgradesModel>{
                 "name": "Non Predatory Loot Box",
@@ -350,11 +350,11 @@ export const initPostOfficeUpgradesRepo = () => {
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "LUK",
-                        "x1": 0,
+                        "x1": 0.25,
                         "x2": 0,
                         "func": "add",
                         "bonusKey": "LUK",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Crystal Mob Spawn",
@@ -362,10 +362,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "CrystalSpawn",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Deaths Storage Unit", <PostOfficeUpgradesModel>{
                 "name": "Deaths Storage Unit",
@@ -384,7 +384,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 150,
                         "func": "decay",
                         "bonusKey": "12b",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Total Damage",
@@ -392,10 +392,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "12c",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Utilitarian Capsule", <PostOfficeUpgradesModel>{
                 "name": "Utilitarian Capsule",
@@ -414,7 +414,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "13b",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Cash from Mobs",
@@ -422,10 +422,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "13c",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Lazzzy Lootcrate", <PostOfficeUpgradesModel>{
                 "name": "Lazzzy Lootcrate",
@@ -444,7 +444,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "14b",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% AFK Cash if 36hr+",
@@ -452,10 +452,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "14c",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Science Spare Parts", <PostOfficeUpgradesModel>{
                 "name": "Science Spare Parts",
@@ -474,7 +474,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 150,
                         "func": "decay",
                         "bonusKey": "15b",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "Base LUK",
@@ -482,10 +482,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "15c",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Trapping Lockbox", <PostOfficeUpgradesModel>{
                 "name": "Trapping Lockbox",
@@ -504,7 +504,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "16b",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Critters Trapped",
@@ -512,17 +512,17 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "16c",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Construction Container", <PostOfficeUpgradesModel>{
                 "name": "Construction Container",
                 "bonuses": [
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Base Build Rate",
-                        "x1": 0,
+                        "x1": 0.25,
                         "x2": 0,
                         "func": "add",
                         "bonusKey": "17a",
@@ -534,18 +534,18 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "17b",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Construction EXP",
-                        "x1": 0,
+                        "x1": 0.5,
                         "x2": 0,
                         "func": "add",
                         "bonusKey": "17c",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Crate of the Creator", <PostOfficeUpgradesModel>{
                 "name": "Crate of the Creator",
@@ -564,7 +564,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "18b",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "Starting Worship Pts",
@@ -572,10 +572,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "18c",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Chefs Essentials", <PostOfficeUpgradesModel>{
                 "name": "Chefs Essentials",
@@ -594,7 +594,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "19b",
-                        "investmentReq": 24
+                        "investmentReq": 24.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% for 2x Ladle Drop",
@@ -602,10 +602,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 200,
                         "func": "decay",
                         "bonusKey": "19c",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     }
                 ],
-                "maxLevel": 400
+                "maxLevel": 400.1
             }),
         new PostOfficeUpgradesBase("Myriad Crate", <PostOfficeUpgradesModel>{
                 "name": "Myriad Crate",
@@ -624,7 +624,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 20000,
                         "func": "decay",
                         "bonusKey": "20b",
-                        "investmentReq": 99
+                        "investmentReq": 99.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% All Skills exp",
@@ -632,7 +632,7 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 20000,
                         "func": "decay",
                         "bonusKey": "20c",
-                        "investmentReq": 299
+                        "investmentReq": 299.9
                     }
                 ],
                 "maxLevel": 100000
@@ -650,11 +650,11 @@ export const initPostOfficeUpgradesRepo = () => {
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "AGI",
-                        "x1": 0,
+                        "x1": 0.2,
                         "x2": 0,
                         "func": "add",
                         "bonusKey": "21b",
-                        "investmentReq": 49
+                        "investmentReq": 49.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Total Damage",
@@ -662,10 +662,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 400,
                         "func": "decay",
                         "bonusKey": "21c",
-                        "investmentReq": 199
+                        "investmentReq": 199.9
                     }
                 ],
-                "maxLevel": 800
+                "maxLevel": 800.1
             }),
         new PostOfficeUpgradesBase("Box of Gosh", <PostOfficeUpgradesModel>{
                 "name": "Box of Gosh",
@@ -680,11 +680,11 @@ export const initPostOfficeUpgradesRepo = () => {
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "WIS",
-                        "x1": 0,
+                        "x1": 0.2,
                         "x2": 0,
                         "func": "add",
                         "bonusKey": "22b",
-                        "investmentReq": 49
+                        "investmentReq": 49.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Divinity Gain",
@@ -692,10 +692,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 400,
                         "func": "decay",
                         "bonusKey": "22c",
-                        "investmentReq": 199
+                        "investmentReq": 199.9
                     }
                 ],
-                "maxLevel": 800
+                "maxLevel": 800.1
             }),
         new PostOfficeUpgradesBase("Gaming Lootcrate", <PostOfficeUpgradesModel>{
                 "name": "Gaming Lootcrate",
@@ -710,11 +710,11 @@ export const initPostOfficeUpgradesRepo = () => {
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "STR",
-                        "x1": 0,
+                        "x1": 0.2,
                         "x2": 0,
                         "func": "add",
                         "bonusKey": "23b",
-                        "investmentReq": 49
+                        "investmentReq": 49.9
                     },
                     <PostOfficeUpgradeModel>{
                         "bonus": "% Total Damage",
@@ -722,10 +722,10 @@ export const initPostOfficeUpgradesRepo = () => {
                         "x2": 400,
                         "func": "decay",
                         "bonusKey": "23c",
-                        "investmentReq": 199
+                        "investmentReq": 199.9
                     }
                 ],
-                "maxLevel": 800
+                "maxLevel": 800.1
             })    
 ]
 }

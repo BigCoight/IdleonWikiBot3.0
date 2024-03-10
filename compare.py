@@ -65,8 +65,8 @@ from repositories.misc.world6.SummonUpgradeRepo import SummonUpgradeRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("202", True)
-oldV = IdleonReader("201", True)
+newV = IdleonReader("203", True)
+oldV = IdleonReader("202", True)
 
 SpecificItemRepo.compareVersions(oldV, newV)
 EnemyRepo.compareVersions(oldV, newV)

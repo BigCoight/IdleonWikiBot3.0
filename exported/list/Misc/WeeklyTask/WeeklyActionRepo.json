@@ -16,7 +16,7 @@
     {
         "actionType": "Buff",
         "desc": "You tell the others of a new technique, so every ATTACK in the future deals {% more damage",
-        "scaling": 0,
+        "scaling": 0.5,
         "max": 60,
         "key": "b"
     },
@@ -51,7 +51,7 @@
     {
         "actionType": "Attack",
         "desc": "Dual wielding the next characters weapon, you deal { damage, but the next char can't choose ATTACK.",
-        "scaling": 1,
+        "scaling": 1.5,
         "max": 1500,
         "key": "f"
     },
@@ -65,14 +65,14 @@
     {
         "actionType": "Attack",
         "desc": "You just start randomly grabbing weapons, dealing { damage, but the next 2 chars can't choose ATTACK.",
-        "scaling": 1,
+        "scaling": 1.5,
         "max": 2500,
         "key": "f"
     },
     {
         "actionType": "Buff",
         "desc": "You cast a gross but effective fog, increasing all damage by %, but the next char can't choose BUFF.",
-        "scaling": 1,
+        "scaling": 1.5,
         "max": 120,
         "key": "h"
     },

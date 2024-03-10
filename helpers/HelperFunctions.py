@@ -76,7 +76,7 @@ def getFrom4dArray(v: str) -> List[List[List[List[str]]]]:
 		subSubSections = [wrap(x) for x in re.split(r",?],?],\[\[", subSection)]
 		mid = []
 		for subSubSection in subSubSections:
-			subSubSubSection = [wrap(x) for x in re.split(r",?],\[", subSubSection)]
+			subSubSubSection = [wrap(x) for x in re.split(r",?], ?\[", subSubSection)]
 			inner = []
 			for subSubSubSection in subSubSubSection:
 				inner.append(strToArray(subSubSubSection))

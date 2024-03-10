@@ -23,7 +23,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Checkout Refresh Speed",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery1", "quantity": 6}, <ComponentModel>{"item": "Critter1", "quantity": 100}],
                 "maxLvl": 101,
-                "costInc": 1,
+                "costInc": 1.18,
                 "bonusInc": [5, 30],
                 "misc": 201
             }),
@@ -33,7 +33,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Multikill Bonus",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery2", "quantity": 10}, <ComponentModel>{"item": "Soul1", "quantity": 200}],
                 "maxLvl": 51,
-                "costInc": 1,
+                "costInc": 1.23,
                 "bonusInc": [2, 50],
                 "misc": 51
             }),
@@ -53,7 +53,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +2 Storage Chest Slots @ +{ more Storage Chest Slots",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery2", "quantity": 25}, <ComponentModel>{"item": "OakTree", "quantity": 500}],
                 "maxLvl": 25,
-                "costInc": 1,
+                "costInc": 1.27,
                 "bonusInc": [2, 30],
                 "misc": 25
             }),
@@ -63,7 +63,7 @@ export const initBuildingRepo = () => {
                 "bonus": " -10% Resource Cost @ -{% more Resource Cost",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery3", "quantity": 20}, <ComponentModel>{"item": "Bug4", "quantity": 500}],
                 "maxLvl": 60,
-                "costInc": 1,
+                "costInc": 1.106,
                 "bonusInc": [1, 30],
                 "misc": 60
             }),
@@ -73,7 +73,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Extra critters from all traps",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery3", "quantity": 30}, <ComponentModel>{"item": "Critter3A", "quantity": 5}],
                 "maxLvl": 15,
-                "costInc": 1,
+                "costInc": 1.95,
                 "bonusInc": [10, 1],
                 "misc": 50
             }),
@@ -93,8 +93,8 @@ export const initBuildingRepo = () => {
                 "bonus": " Upgrade costs for atoms are {% cheaper (Increases every 10 lvs).",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery6", "quantity": 10}, <ComponentModel>{"item": "LavaB2", "quantity": 25}],
                 "maxLvl": 200,
-                "costInc": 1,
-                "bonusInc": [0, 0],
+                "costInc": 1.14,
+                "bonusInc": [0.1, 0.1],
                 "misc": 200
             }),
         new BuildingBase(9, <BuildingModel>{
@@ -103,8 +103,8 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Damage @ +}% Lower Upgrade Costs in Worship",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery1", "quantity": 2}, <ComponentModel>{"item": "Blank", "quantity": 0}],
                 "maxLvl": 50,
-                "costInc": 1,
-                "bonusInc": [15, 1],
+                "costInc": 1.365,
+                "bonusInc": [15, 1.4],
                 "misc": 130
             }),
         new BuildingBase(10, <BuildingModel>{
@@ -113,8 +113,8 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Damage @ +}% Lower Upgrade Costs in Worship",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery1", "quantity": 4}, <ComponentModel>{"item": "Critter1", "quantity": 50}],
                 "maxLvl": 50,
-                "costInc": 1,
-                "bonusInc": [20, 1],
+                "costInc": 1.33,
+                "bonusInc": [20, 1.5],
                 "misc": 130
             }),
         new BuildingBase(11, <BuildingModel>{
@@ -123,8 +123,8 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Damage @ +}% Lower Upgrade Costs in Worship",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery2", "quantity": 4}, <ComponentModel>{"item": "IronBar", "quantity": 30}],
                 "maxLvl": 50,
-                "costInc": 1,
-                "bonusInc": [25, 1],
+                "costInc": 1.276,
+                "bonusInc": [25, 1.6],
                 "misc": 130
             }),
         new BuildingBase(12, <BuildingModel>{
@@ -133,8 +133,8 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Range @ +}% Lower Upgrade Costs in Worship",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery2", "quantity": 7}, <ComponentModel>{"item": "BirchTree", "quantity": 200}],
                 "maxLvl": 50,
-                "costInc": 1,
-                "bonusInc": [1, 1],
+                "costInc": 1.246,
+                "bonusInc": [1.5, 1.6],
                 "misc": 130
             }),
         new BuildingBase(13, <BuildingModel>{
@@ -143,8 +143,8 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Damage @ +}% Lower Upgrade Costs in Worship",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery3", "quantity": 5}, <ComponentModel>{"item": "Critter3", "quantity": 200}],
                 "maxLvl": 50,
-                "costInc": 1,
-                "bonusInc": [30, 1],
+                "costInc": 1.23,
+                "bonusInc": [30, 1.7],
                 "misc": 130
             }),
         new BuildingBase(14, <BuildingModel>{
@@ -153,8 +153,8 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Range @ +}% Lower Upgrade Costs in Worship",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery3", "quantity": 9}, <ComponentModel>{"item": "Bug5", "quantity": 300}],
                 "maxLvl": 50,
-                "costInc": 1,
-                "bonusInc": [4, 1],
+                "costInc": 1.222,
+                "bonusInc": [4, 1.7],
                 "misc": 130
             }),
         new BuildingBase(15, <BuildingModel>{
@@ -163,8 +163,8 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Spawn Rate @ +}% Lower Upgrade Costs in Worship",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery4", "quantity": 7}, <ComponentModel>{"item": "Dementia", "quantity": 200}],
                 "maxLvl": 50,
-                "costInc": 1,
-                "bonusInc": [3, 1],
+                "costInc": 1.22,
+                "bonusInc": [3, 1.6],
                 "misc": 130
             }),
         new BuildingBase(16, <BuildingModel>{
@@ -173,8 +173,8 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Damage @ +}% Lower Upgrade Costs in Worship",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery5", "quantity": 10}, <ComponentModel>{"item": "GalaxyA1", "quantity": 600}],
                 "maxLvl": 50,
-                "costInc": 1,
-                "bonusInc": [15, 1],
+                "costInc": 1.21,
+                "bonusInc": [15, 1.6],
                 "misc": 130
             }),
         new BuildingBase(17, <BuildingModel>{
@@ -183,8 +183,8 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Range @ +}% Lower Upgrade Costs in Worship",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery6", "quantity": 20}, <ComponentModel>{"item": "LavaA1", "quantity": 5000}],
                 "maxLvl": 50,
-                "costInc": 1,
-                "bonusInc": [0, 0],
+                "costInc": 1.4,
+                "bonusInc": [0.7, 0.8],
                 "misc": 130
             }),
         new BuildingBase(18, <BuildingModel>{
@@ -193,7 +193,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Level Up Rate",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery1", "quantity": 2}, <ComponentModel>{"item": "Blank", "quantity": 0}],
                 "maxLvl": 100,
-                "costInc": 1,
+                "costInc": 1.16,
                 "bonusInc": [10, 30],
                 "misc": 200
             }),
@@ -203,7 +203,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Level Up Rate",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery1", "quantity": 5}, <ComponentModel>{"item": "Soul1", "quantity": 30}],
                 "maxLvl": 100,
-                "costInc": 1,
+                "costInc": 1.15,
                 "bonusInc": [10, 30],
                 "misc": 200
             }),
@@ -213,7 +213,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Level Up Rate",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery2", "quantity": 4}, <ComponentModel>{"item": "GoldBar", "quantity": 25}],
                 "maxLvl": 100,
-                "costInc": 1,
+                "costInc": 1.13,
                 "bonusInc": [10, 30],
                 "misc": 200
             }),
@@ -223,7 +223,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Level Up Rate",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery2", "quantity": 7}, <ComponentModel>{"item": "JungleTree", "quantity": 300}],
                 "maxLvl": 100,
-                "costInc": 1,
+                "costInc": 1.115,
                 "bonusInc": [10, 30],
                 "misc": 200
             }),
@@ -233,7 +233,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Level Up Rate",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery3", "quantity": 5}, <ComponentModel>{"item": "Soul3", "quantity": 50}],
                 "maxLvl": 100,
-                "costInc": 1,
+                "costInc": 1.11,
                 "bonusInc": [10, 30],
                 "misc": 200
             }),
@@ -243,7 +243,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Level Up Rate",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery3", "quantity": 10}, <ComponentModel>{"item": "Bug6", "quantity": 100}],
                 "maxLvl": 100,
-                "costInc": 1,
+                "costInc": 1.106,
                 "bonusInc": [10, 30],
                 "misc": 200
             }),
@@ -253,7 +253,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Level Up Rate",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery4", "quantity": 12}, <ComponentModel>{"item": "Void", "quantity": 200}],
                 "maxLvl": 100,
-                "costInc": 1,
+                "costInc": 1.106,
                 "bonusInc": [10, 30],
                 "misc": 200
             }),
@@ -263,7 +263,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Level Up Rate",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery5", "quantity": 14}, <ComponentModel>{"item": "Tree7", "quantity": 350}],
                 "maxLvl": 100,
-                "costInc": 1,
+                "costInc": 1.1,
                 "bonusInc": [10, 30],
                 "misc": 200
             }),
@@ -273,7 +273,7 @@ export const initBuildingRepo = () => {
                 "bonus": " +{% Level Up Rate",
                 "lvlUpReq": [<ComponentModel>{"item": "Refinery6", "quantity": 10}, <ComponentModel>{"item": "SnowC4a", "quantity": 1}],
                 "maxLvl": 100,
-                "costInc": 1,
+                "costInc": 1.09,
                 "bonusInc": [10, 30],
                 "misc": 200
             })    

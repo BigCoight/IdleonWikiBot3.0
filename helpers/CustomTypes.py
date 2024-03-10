@@ -20,7 +20,7 @@ class Integer(int):
 			return Integer(validateInteger(v))
 		except ValueError:
 			try:
-				return Integer(float(v))
+				return float(v)
 			except ValueError:
 				return -1
 

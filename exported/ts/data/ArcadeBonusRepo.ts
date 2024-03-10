@@ -16,7 +16,7 @@ export const initArcadeBonusRepo = () => {
             }),
         new ArcadeBonusBase(1, <ArcadeBonusModel>{
                 "effect": "+{ Base Defence",
-                "x1": 0,
+                "x1": 0.2,
                 "x2": 0,
                 "func": "add",
                 "type": "",
@@ -144,7 +144,7 @@ export const initArcadeBonusRepo = () => {
             }),
         new ArcadeBonusBase(17, <ArcadeBonusModel>{
                 "effect": "+{ Weapon Power",
-                "x1": 0,
+                "x1": 0.07,
                 "x2": 0,
                 "func": "add",
                 "type": "",

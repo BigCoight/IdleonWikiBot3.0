@@ -92,7 +92,7 @@ export const initLabBonusRepo = () => {
                 "y": 326,
                 "range": 90,
                 "bonusOn": 1,
-                "bonusOff": 1,
+                "bonusOff": 1.5,
                 "name": "Spelunker Obol",
                 "description": "1.50x higher effects from all active Jewels within the Mainframe, and gives you +50% rememberance of the game Idle Skilling. @ This bonus always has a 80px connection range no matter what!"
             }),

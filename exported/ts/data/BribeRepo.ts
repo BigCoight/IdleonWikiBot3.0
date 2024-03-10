@@ -68,7 +68,7 @@ export const initBribeRepo = () => {
                 "cost": 222222,
                 "type": "afk",
                 "intName": "AfkDoubleEXP",
-                "amount": 2
+                "amount": 2.2
             }),
         new BribeBase(8, <BribeModel>{
                 "name": "Tagged Indicators",
@@ -84,7 +84,7 @@ export const initBribeRepo = () => {
                 "cost": 55000,
                 "type": "smithing",
                 "intName": "OilConsume",
-                "amount": 0
+                "amount": 0.2
             }),
         new BribeBase(10, <BribeModel>{
                 "name": "Five Aces in the Deck",
@@ -177,7 +177,7 @@ export const initBribeRepo = () => {
         new BribeBase(21, <BribeModel>{
                 "name": "Glitched Acc Formula",
                 "desc": "Boosts Total Accuracy by +2%",
-                "cost": 300000000,
+                "cost": 3e+08,
                 "type": "pigbank",
                 "intName": "TotalAcc",
                 "amount": 2
@@ -185,7 +185,7 @@ export const initBribeRepo = () => {
         new BribeBase(22, <BribeModel>{
                 "name": "Firewalled Defence",
                 "desc": "Boosts Total Defence by +2%",
-                "cost": 700000000,
+                "cost": 7e+08,
                 "type": "pigbank",
                 "intName": "TotalDef",
                 "amount": 2
@@ -193,7 +193,7 @@ export const initBribeRepo = () => {
         new BribeBase(23, <BribeModel>{
                 "name": "Bottomless Bags",
                 "desc": "Boosts Carry Capacity by +5%",
-                "cost": 1200000000,
+                "cost": 1.2e+09,
                 "type": "pigbank",
                 "intName": "CarryCap",
                 "amount": 5
@@ -201,7 +201,7 @@ export const initBribeRepo = () => {
         new BribeBase(24, <BribeModel>{
                 "name": "AFKeylogging",
                 "desc": "Boosts Skill AFK Gains Rate by +2%.",
-                "cost": 20000000000,
+                "cost": 2e+10,
                 "type": "afk",
                 "intName": "SkillAFK",
                 "amount": 2
@@ -209,7 +209,7 @@ export const initBribeRepo = () => {
         new BribeBase(25, <BribeModel>{
                 "name": "Guild GP Hack",
                 "desc": "Logging in each day now contributes 30 GP to your guild, instead of 20.",
-                "cost": 2500000000,
+                "cost": 2.5e+09,
                 "type": "afk",
                 "intName": "Guild2",
                 "amount": 10
@@ -233,7 +233,7 @@ export const initBribeRepo = () => {
         new BribeBase(28, <BribeModel>{
                 "name": "Godlier Creation",
                 "desc": "The Godly Creation talent now gives up to +12 Stat bonus, instead of up to +4",
-                "cost": 12121212121212,
+                "cost": 1.21212e+13,
                 "type": "smithing",
                 "intName": "GodlyCreation",
                 "amount": 1
@@ -241,7 +241,7 @@ export const initBribeRepo = () => {
         new BribeBase(29, <BribeModel>{
                 "name": "Fishermaster",
                 "desc": "+25% Fishing EXP, and +15% Fishing Efficiency, now and forever.",
-                "cost": 251500000000,
+                "cost": 2.515e+11,
                 "type": "fish",
                 "intName": "FishingStats",
                 "amount": 1
@@ -249,7 +249,7 @@ export const initBribeRepo = () => {
         new BribeBase(30, <BribeModel>{
                 "name": "Muscles on Muscles",
                 "desc": "Boosts Total Damage by +2%",
-                "cost": 20000000000000000,
+                "cost": 2e+16,
                 "type": "pigbank",
                 "intName": "TotalDmgB",
                 "amount": 2
@@ -257,7 +257,7 @@ export const initBribeRepo = () => {
         new BribeBase(31, <BribeModel>{
                 "name": "Bottle Service",
                 "desc": "Bottles, used to buy maps to new islands, wash up at the docks +10% more often.",
-                "cost": 40000000000000,
+                "cost": 4e+13,
                 "type": "fish",
                 "intName": "BottleMore",
                 "amount": 10
@@ -265,7 +265,7 @@ export const initBribeRepo = () => {
         new BribeBase(32, <BribeModel>{
                 "name": "Star Scraper",
                 "desc": "Get +33 Star Talent points, right now, for all characters, no questions asked.",
-                "cost": 3300000000000000,
+                "cost": 3.3e+15,
                 "type": "pigbank",
                 "intName": "StarTalz",
                 "amount": 33
@@ -281,7 +281,7 @@ export const initBribeRepo = () => {
         new BribeBase(34, <BribeModel>{
                 "name": "Artifact Pilfering",
                 "desc": "Boosts Artifact find chance by a pleasantly large +20%",
-                "cost": 300000000000000000,
+                "cost": 3e+17,
                 "type": "world5",
                 "intName": "New1",
                 "amount": 20
@@ -289,7 +289,7 @@ export const initBribeRepo = () => {
         new BribeBase(35, <BribeModel>{
                 "name": "Forge Cap Smuggling",
                 "desc": "Boosts Forge Capacity by a smoking hot 1.30x",
-                "cost": 4400000000000000000,
+                "cost": 4.4e+18,
                 "type": "smithing",
                 "intName": "New2",
                 "amount": 30
@@ -297,7 +297,7 @@ export const initBribeRepo = () => {
         new BribeBase(36, <BribeModel>{
                 "name": "Gold from Lead",
                 "desc": "Boosts all Golden Food bonuses by +10%",
-                "cost": 71000000000000000000,
+                "cost": 7.1e+19,
                 "type": "pigbank",
                 "intName": "New3",
                 "amount": 10
@@ -305,7 +305,7 @@ export const initBribeRepo = () => {
         new BribeBase(37, <BribeModel>{
                 "name": "Nugget Fabrication",
                 "desc": "Boosts the rate at which the Shovel generates Nuggets in Gaming by +20%",
-                "cost": 350000000000000000000,
+                "cost": 3.5e+20,
                 "type": "world5",
                 "intName": "New4",
                 "amount": 20
@@ -313,7 +313,7 @@ export const initBribeRepo = () => {
         new BribeBase(38, <BribeModel>{
                 "name": "Divine PTS Miscounting",
                 "desc": "Boosts Divinity PTS gain rate by +30%",
-                "cost": 5000000000000000000000,
+                "cost": 5e+21,
                 "type": "world5",
                 "intName": "New5",
                 "amount": 30
@@ -321,7 +321,7 @@ export const initBribeRepo = () => {
         new BribeBase(39, <BribeModel>{
                 "name": "Loot Table Tampering",
                 "desc": "All items from Random Event Bosses are 1.20x more likely to drop than before.",
-                "cost": 99999999999999991611392,
+                "cost": 1e+23,
                 "type": "pigbank",
                 "intName": "New6",
                 "amount": 20

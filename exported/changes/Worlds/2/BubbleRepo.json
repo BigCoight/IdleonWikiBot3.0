@@ -1,53 +1,14 @@
 {
     "new": {},
     "changes": {
-        "Vials": {
+        "Power Cauldron": {
             "bubbles": {
-                "Ladybug Serum": {
-                    "requirements": {"1": [{"liquidNo": "3", "quantity": -1}, {"liquidNo": "4", "quantity": -1}]}
-                },
-                "Greenleaf Tea": {
-                    "requirements": {"1": [{"liquidNo": "3", "quantity": -1}, {"liquidNo": "4", "quantity": -1}]}
-                },
-                "Firefly Grog": {
-                    "requirements": {"1": [{"liquidNo": "3", "quantity": -1}, {"liquidNo": "4", "quantity": -1}]}
-                },
-                "Royale Cola": {
-                    "requirements": {"1": [{"liquidNo": "3", "quantity": -1}, {"liquidNo": "4", "quantity": -1}]}
-                },
-                "Ded Sap": {
-                    "requirements": {"1": [{"liquidNo": "3", "quantity": -1}, {"liquidNo": "4", "quantity": -1}]}
-                },
-                "Refreshment": {
-                    "requirements": {"1": [{"liquidNo": "3", "quantity": -1}, {"liquidNo": "4", "quantity": -1}]}
-                },
-                "Ricecakorade": {
-                    "requirements": {"1": [{"liquidNo": "3", "quantity": -1}, {"liquidNo": "4", "quantity": -1}]}
-                },
-                "Gibbed Drink": {
-                    "requirements": {"1": [{"liquidNo": "3", "quantity": -1}, {"liquidNo": "4", "quantity": -1}]}
-                },
-                "Flavorgil": {
-                    "requirements": {"1": [{"liquidNo": "3", "quantity": -1}, {"liquidNo": "4", "quantity": -1}]}
-                },
-                "Dabar Special": {
-                    "requirements": {"1": [{"liquidNo": "3", "quantity": -1}, {"liquidNo": "4", "quantity": -1}]}
-                },
-                "Turtle Tisane": {
-                    "cauldron": [" ", "Vials"],
-                    "name": [" ", "Turtle Tisane"],
-                    "x1": [" ", 4],
-                    "x2": [" ", 0],
-                    "func": [" ", "add"],
+                "Carpenter": {
+                    "x1": [2, 5],
                     "description": [
-                        " ",
-                        "+{% Artifact find chance, Sigil SPD, Cooking SPD, and Construction Build rate. All MULTIPLICATIVE! A very special vial indeed..."
-                    ],
-                    "requirements": [
-                        [" ", {"item": "Critter11", "quantity": -1}],
-                        [" ", {"liquidNo": "4", "quantity": -1}]
-                    ],
-                    "bonusKey": [" ", "6turtle"]
+                        "+{% Build Speed per Construction Level.",
+                        "+{% Build Speed per Construction Level. Not affected by 'Warriors Rule' bubble."
+                    ]
                 }
             }
         }

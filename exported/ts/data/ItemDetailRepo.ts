@@ -11451,7 +11451,7 @@ export const initItemDetailRepo = () => {
         new CommonItemBase("StampC10", <QuestItemModel>{
                 "internalID": "StampC10",
                 "displayName": "Forge Stamp",
-                "sellPrice": 1000000000000,
+                "sellPrice": 1e+12,
                 "typeGen": TypeGenEnum.aStamp,
                 "ID": 2009,
                 "Type": "Stamp",
@@ -14140,7 +14140,7 @@ export const initItemDetailRepo = () => {
         new CommonItemBase("InvStorage26", <EquipItemModel>{
                 "internalID": "InvStorage26",
                 "displayName": "Storage Chest 26",
-                "sellPrice": 100000000000000000,
+                "sellPrice": 1e+17,
                 "typeGen": TypeGenEnum.aStorageChest,
                 "ID": 25,
                 "Type": "Storage",
@@ -14164,7 +14164,7 @@ export const initItemDetailRepo = () => {
         new CommonItemBase("InvStorage27", <EquipItemModel>{
                 "internalID": "InvStorage27",
                 "displayName": "Storage Chest 27",
-                "sellPrice": 2500000000000000000,
+                "sellPrice": 2.5e+18,
                 "typeGen": TypeGenEnum.aStorageChest,
                 "ID": 26,
                 "Type": "Storage",
@@ -14188,7 +14188,7 @@ export const initItemDetailRepo = () => {
         new CommonItemBase("InvStorage28", <EquipItemModel>{
                 "internalID": "InvStorage28",
                 "displayName": "Storage Chest 28",
-                "sellPrice": 7000000000000000000000,
+                "sellPrice": 7e+21,
                 "typeGen": TypeGenEnum.aStorageChest,
                 "ID": 27,
                 "Type": "Storage",
@@ -29457,7 +29457,7 @@ export const initItemDetailRepo = () => {
         new CommonItemBase("BoneJoePickle", <QuestItemModel>{
                 "internalID": "BoneJoePickle",
                 "displayName": "BoneJoePickle",
-                "sellPrice": 4000000000000,
+                "sellPrice": 4e+12,
                 "typeGen": TypeGenEnum.dQuest,
                 "ID": 0,
                 "Type": "Quest Item",
@@ -31072,7 +31072,7 @@ export const initItemDetailRepo = () => {
         new CommonItemBase("Quest80", <QuestItemModel>{
                 "internalID": "Quest80",
                 "displayName": "Crop Transfer Ticket",
-                "sellPrice": 100000000000000,
+                "sellPrice": 1e+14,
                 "typeGen": TypeGenEnum.dQuest,
                 "ID": 0,
                 "Type": "Usable",

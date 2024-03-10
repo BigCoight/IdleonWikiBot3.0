@@ -19,7 +19,7 @@ export const initSummonUnitRepo = () => {
             }),
         new SummonUnitBase(1, <SummonUnitModel>{
                 "height": 41,
-                "speed": 5,
+                "speed": 5.3,
                 "colRadius": 16,
                 "qtyText": 0,
                 "minQty": 1,
@@ -30,7 +30,7 @@ export const initSummonUnitRepo = () => {
             }),
         new SummonUnitBase(2, <SummonUnitModel>{
                 "height": 38,
-                "speed": 1,
+                "speed": 1.5,
                 "colRadius": 22,
                 "qtyText": 2,
                 "minQty": 1,
@@ -70,7 +70,7 @@ export const initSummonUnitRepo = () => {
                 "maxQty": 3,
                 "baseCost": 15,
                 "baseHp": 8,
-                "baseDamage": 0
+                "baseDamage": 0.75
             })    
 ]
 }

@@ -30,7 +30,7 @@ export const initWeeklyBossRepo = () => {
                     }
                 ],
                 "health": 200,
-                "healthMult": 2,
+                "healthMult": 2.6,
                 "x": 440,
                 "y": 90,
                 "xOff": 0
@@ -58,7 +58,7 @@ export const initWeeklyBossRepo = () => {
                     }
                 ],
                 "health": 250,
-                "healthMult": 2,
+                "healthMult": 2.8,
                 "x": 442,
                 "y": 95,
                 "xOff": -5
@@ -86,7 +86,7 @@ export const initWeeklyBossRepo = () => {
                     }
                 ],
                 "health": 300,
-                "healthMult": 2,
+                "healthMult": 2.7,
                 "x": 434,
                 "y": 105,
                 "xOff": -15
@@ -114,7 +114,7 @@ export const initWeeklyBossRepo = () => {
                     }
                 ],
                 "health": 400,
-                "healthMult": 2,
+                "healthMult": 2.5,
                 "x": 443,
                 "y": 100,
                 "xOff": -10
@@ -142,7 +142,7 @@ export const initWeeklyBossRepo = () => {
                     }
                 ],
                 "health": 100,
-                "healthMult": 3,
+                "healthMult": 3.7,
                 "x": 440,
                 "y": 95,
                 "xOff": -5
@@ -170,7 +170,7 @@ export const initWeeklyBossRepo = () => {
                     }
                 ],
                 "health": 600,
-                "healthMult": 2,
+                "healthMult": 2.3,
                 "x": 441,
                 "y": 91,
                 "xOff": -1
@@ -198,7 +198,7 @@ export const initWeeklyBossRepo = () => {
                     }
                 ],
                 "health": 1000,
-                "healthMult": 1,
+                "healthMult": 1.9,
                 "x": 440,
                 "y": 101,
                 "xOff": -11
@@ -254,7 +254,7 @@ export const initWeeklyBossRepo = () => {
                     }
                 ],
                 "health": 350,
-                "healthMult": 2,
+                "healthMult": 2.6,
                 "x": 439,
                 "y": 105,
                 "xOff": -15

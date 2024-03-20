@@ -200,4 +200,7 @@ class IdleonReader:
 		self.codeReader.addSection("NjEQ = function ()", "NinjaItems")
 		self.codeReader.addSection("NinjaInfo = function ()", "NinjaInfo")
 
+		# Tomb
+		self.codeReader.addSection("Tome = function ()", "TombInfo")
+
 		self.codeReader.readCode()

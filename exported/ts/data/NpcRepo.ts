@@ -255,9 +255,9 @@ export const initNpcRepo = () => {
                     "world": "Unknown",
                     "noQuest": 0,
                     "type": "Unknown",
-                    "birthWeight": 3,
+                    "birthWeight": 2.98,
                     "starSign": "Cancer",
-                    "mothersMaidenName": "Miller",
+                    "mothersMaidenName": "Ventotla",
                     "notes": " "
                 },
                 "quests": {},
@@ -276,9 +276,9 @@ export const initNpcRepo = () => {
                     "world": "Unknown",
                     "noQuest": 0,
                     "type": "Unknown",
-                    "birthWeight": 4.4,
-                    "starSign": "Pisces",
-                    "mothersMaidenName": "Mills",
+                    "birthWeight": 8.87,
+                    "starSign": "Scorpio",
+                    "mothersMaidenName": "Weiss",
                     "notes": " "
                 },
                 "quests": {},
@@ -650,7 +650,7 @@ export const initNpcRepo = () => {
                     "birthWeight": 9.32,
                     "starSign": "eo",
                     "mothersMaidenName": "Thompson",
-                    "notes": "The [[Woodsman]] is found in [[Worlds#G2 - Spore Meadows|Spore Meadows]], the first zone to the right of the starting town, located next to an oak tree with a stump next to him.$$NEWLINE$$$$NEWLINE$$His quests focus on improving the player's capabilities in the [[File:Choppin Skill Icon.png]] [[Choppin]] Skill. $$NEWLINE$$$$NEWLINE$$His final quest awards the {{CraftReq|Woodsman Token}}."
+                    "notes": "'''Requires Lv. 5 [[Choppin]] for the NPC to appear'''. The [[Woodsman]] is found in [[Worlds#G2 - Spore Meadows|Spore Meadows]], the first zone to the right of the starting town, located next to an oak tree with a stump next to him.$$NEWLINE$$$$NEWLINE$$His quests focus on improving the player's capabilities in the [[File:Choppin Skill Icon.png]] [[Choppin]] Skill. $$NEWLINE$$$$NEWLINE$$His final quest awards the {{CraftReq|Woodsman Token}}."
                 },
                 "quests": {
                     "A noob's first swing": <ItemQuestModel>{
@@ -939,11 +939,11 @@ export const initNpcRepo = () => {
                             <CustomReqModel>{"desc": "Orange Tee Crafted:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
                         ]
                     },
-                    "The Unoccupied Picnic": <ItemQuestModel>{
+                    "Warrior, Archer or Mage?": <ItemQuestModel>{
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
                         "DialogueText": "Wait wait you're still a BEGINNER??? <br> MAIN QUEST:Select a new class from Promotheus. He's in the Bean map it's after Frogs...",
                         "NextIndex": 27,
-                        "Name": "The Unoccupied Picnic",
+                        "Name": "Warrior, Archer or Mage?",
                         "ConsumeItems": true,
                         "InventorySpacesNeeded": 1,
                         "NoSpaceIndex": 50,
@@ -954,9 +954,7 @@ export const initNpcRepo = () => {
                         ],
                         "QuestName": "Scripticus8",
                         "Difficulty": 4,
-                        "note": <NoteModel>{
-                            "note": "There are '''TWO''' {{CraftReq|Golden Jam}} items. You want the {{CraftReq|Golden Jam (Quest)}} item for this."
-                        },
+                        "note": <NoteModel>{"note": " "},
                         "ItemReq": [<ComponentModel>{"item": "Quest5", "quantity": 1}]
                     },
                     "Stiltzcho, the Leaf Scout": <ItemQuestModel>{
@@ -1218,7 +1216,7 @@ export const initNpcRepo = () => {
                         "Type": QuestTypeEnum.ItemsAndSpaceRequired,
                         "DialogueText": "Wait wait you're still a BEGINNER??? <br> MAIN QUEST:Select a new class from Promotheus. He's in the Bean map it's after Frogs...",
                         "NextIndex": 27,
-                        "Name": "The Unoccupied Picnic"
+                        "Name": "Warrior, Archer or Mage?"
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
@@ -14873,9 +14871,9 @@ export const initNpcRepo = () => {
                     "noQuest": 0,
                     "type": "Unknown",
                     "birthWeight": 8.71,
-                    "starSign": "Libra",
-                    "mothersMaidenName": "Illingsworth",
-                    "notes": " "
+                    "starSign": "ibra",
+                    "mothersMaidenName": "llingsworth",
+                    "notes": ""
                 },
                 "quests": {
                     "Seed Planting": <CustomQuestModel>{
@@ -15116,14 +15114,14 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Hoov", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
+                    "location": "Picnic Bridgeways",
+                    "world": "Spirited Valley",
                     "noQuest": 0,
                     "type": "Unknown",
                     "birthWeight": 5.55,
                     "starSign": "Sagittarius",
                     "mothersMaidenName": "Ashwoon",
-                    "notes": " "
+                    "notes": ""
                 },
                 "quests": {
                     "Sneak Dropout": <CustomQuestModel>{
@@ -15293,14 +15291,14 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Woodlin Elder", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
+                    "location": "dge of the Valley",
+                    "world": "Spirited Valley",
                     "noQuest": 0,
                     "type": "Unknown",
                     "birthWeight": 2.81,
                     "starSign": "Taurus",
                     "mothersMaidenName": "Hancock",
-                    "notes": " "
+                    "notes": ""
                 },
                 "quests": {
                     "Portal Issues": <CustomQuestModel>{
@@ -15485,14 +15483,14 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Tribal Shaman", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
+                    "location": "Bamboo Laboredge",
+                    "world": "Spirited Valley",
                     "noQuest": 0,
                     "type": "Unknown",
                     "birthWeight": 2.54,
                     "starSign": "Virgo",
                     "mothersMaidenName": "Soukup",
-                    "notes": " "
+                    "notes": ""
                 },
                 "quests": {},
                 "dialogue": [
@@ -15524,14 +15522,14 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Sussy Gene", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
+                    "location": "Above the Clouds",
+                    "world": "Spirited Valley",
                     "noQuest": 0,
                     "type": "Unknown",
                     "birthWeight": 6.52,
                     "starSign": "Gemini",
                     "mothersMaidenName": "Soloman",
-                    "notes": " "
+                    "notes": ""
                 },
                 "quests": {
                     "Goofin' Around": <CustomQuestModel>{
@@ -15673,14 +15671,14 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Legumulyte", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
+                    "location": "Troll Broodnest",
+                    "world": "Spirited Valley",
                     "noQuest": 0,
                     "type": "Unknown",
                     "birthWeight": 8.61,
                     "starSign": "Scorpio",
                     "mothersMaidenName": "Tiernan",
-                    "notes": " "
+                    "notes": ""
                 },
                 "quests": {},
                 "dialogue": [
@@ -15700,14 +15698,14 @@ export const initNpcRepo = () => {
             }),
         new NpcBase("Potti", <NpcModel>{
                 "head": <NpcHeadModel>{
-                    "location": "Unknown",
-                    "world": "Unknown",
+                    "location": "Sleepy Skyline",
+                    "world": "Spirited Valley",
                     "noQuest": 0,
                     "type": "Unknown",
                     "birthWeight": 6.14,
-                    "starSign": "Leo",
+                    "starSign": "eo",
                     "mothersMaidenName": "Dugelman",
-                    "notes": " "
+                    "notes": ""
                 },
                 "quests": {},
                 "dialogue": [
@@ -15737,9 +15735,9 @@ export const initNpcRepo = () => {
                     "world": "Unknown",
                     "noQuest": 0,
                     "type": "Unknown",
-                    "birthWeight": 4.75,
-                    "starSign": "Capricorn",
-                    "mothersMaidenName": "Anderson",
+                    "birthWeight": 5.47,
+                    "starSign": "Aries",
+                    "mothersMaidenName": "Orwig",
                     "notes": " "
                 },
                 "quests": {},

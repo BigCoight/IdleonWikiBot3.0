@@ -1,7 +1,7 @@
 from helpers.CodeReader import IdleonReader
 from repositories.npc.NpcHeadRepo import NpcHeadRepo
 
-idleonReader = IdleonReader("201", steam = True)
+idleonReader = IdleonReader("204", steam = True)
 codeReader = idleonReader.codeReader
 
 # WikiSetRepo.initialise(codeReader, True)

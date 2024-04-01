@@ -1,3 +1,5 @@
+from pywikibot.login import ClientLoginManager
+
 from helpers.CodeReader import IdleonReader
 from repositories.collections.EnemyRepo import EnemyRepo
 from repositories.collections.ItemRepo import ItemRepo
@@ -5,10 +7,10 @@ from repositories.enemies.DropTableRepo import DropTableRepo
 from repositories.item.RecipeRepo import RecipeRepo
 from repositories.npc.NpcRepo import NpcRepo
 
-# loginManager = ClientLoginManager()
-# loginManager.login()
+loginManager = ClientLoginManager()
+loginManager.login()
 
-newV = IdleonReader("204", True)
+newV = IdleonReader("205", True)
 oldV = IdleonReader("202", True)
 upload = True
 

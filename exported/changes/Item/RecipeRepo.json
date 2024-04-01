@@ -1,1 +1,63 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "EquipmentHats107": {
+            "recipe": [
+                {"item": "EquipmentHats25", "quantity": 1},
+                {"item": "LavaA1", "quantity": 1000},
+                {"item": "LavaA1b", "quantity": 1}
+            ],
+            "levelReqToCraft": 75,
+            "expGiven": 1000000,
+            "no": 34,
+            "tab": 5,
+            "sellPrice": 15150500
+        },
+        "FoodG13": {
+            "recipe": [
+                {"item": "FoodG4", "quantity": 1},
+                {"item": "FoodG10", "quantity": 1},
+                {"item": "GalaxyC1b", "quantity": 1},
+                {"item": "DesertC2b", "quantity": 10}
+            ],
+            "levelReqToCraft": 80,
+            "expGiven": 1000000,
+            "no": 47,
+            "tab": 6,
+            "sellPrice": 4800
+        },
+        "EquipmentRings36": {
+            "recipe": [{"item": "EquipmentRings18", "quantity": 1}, {"item": "SpiD3", "quantity": 10000000}],
+            "levelReqToCraft": 76,
+            "expGiven": 1000000,
+            "no": 23,
+            "tab": 6,
+            "sellPrice": 1500000000001
+        },
+        "EquipmentRings35": {
+            "recipe": [
+                {"item": "EquipmentRings28", "quantity": 1},
+                {"item": "EquipmentRings29", "quantity": 1},
+                {"item": "Crystal5", "quantity": 25},
+                {"item": "KrukPart2", "quantity": 10}
+            ],
+            "levelReqToCraft": 75,
+            "expGiven": 1000000,
+            "no": 36,
+            "tab": 5,
+            "sellPrice": 111225
+        },
+        "EquipmentShoes39": {
+            "recipe": [
+                {"item": "EquipmentShoes33", "quantity": 1},
+                {"item": "EquipmentShoes31", "quantity": 1},
+                {"item": "LavaB4", "quantity": 50000}
+            ],
+            "levelReqToCraft": 75,
+            "expGiven": 1000000,
+            "no": 35,
+            "tab": 5,
+            "sellPrice": 3594115000
+        }
+    },
+    "changes": {"FillerMaterial": {"levelReqToCraft": [80, 85], "no": [47, 24]}}
+}

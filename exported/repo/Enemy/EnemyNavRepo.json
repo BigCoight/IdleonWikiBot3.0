@@ -750,13 +750,20 @@
     },
     "Boss4C": {
         "prev": "Boss4B",
+        "next": "mini5a",
+        "hasCrystal": true,
+        "crystalName": null,
+        "hasCard": true
+    },
+    "mini5a": {
+        "prev": "Boss4C",
         "next": "Boss5A",
         "hasCrystal": true,
         "crystalName": null,
         "hasCard": true
     },
     "Boss5A": {
-        "prev": "Boss4C",
+        "prev": "mini5a",
         "next": "Boss5B",
         "hasCrystal": true,
         "crystalName": null,
@@ -771,13 +778,20 @@
     },
     "Boss5C": {
         "prev": "Boss5B",
+        "next": "mini6a",
+        "hasCrystal": true,
+        "crystalName": null,
+        "hasCard": true
+    },
+    "mini6a": {
+        "prev": "Boss5C",
         "next": "Boss6A",
         "hasCrystal": true,
         "crystalName": null,
         "hasCard": true
     },
     "Boss6A": {
-        "prev": "Boss5C",
+        "prev": "mini6a",
         "next": "Boss6B",
         "hasCrystal": true,
         "crystalName": null,

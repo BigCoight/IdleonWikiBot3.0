@@ -1613,9 +1613,9 @@
     "FillerMaterial": {
         "intID": "FillerMaterial",
         "recipe": [{"item": "FillerMaterial", "quantity": 1}, {"item": "FillerMaterial", "quantity": 1}],
-        "levelReqToCraft": 80,
+        "levelReqToCraft": 85,
         "expGiven": 1000000,
-        "no": 47,
+        "no": 24,
         "tab": 6,
         "sellPrice": 8,
         "recipeFrom": [],
@@ -9634,6 +9634,127 @@
             ]
         }
     },
+    "EquipmentHats107": {
+        "intID": "EquipmentHats107",
+        "recipe": [
+            {"item": "EquipmentHats25", "quantity": 1},
+            {"item": "LavaA1", "quantity": 1000},
+            {"item": "LavaA1b", "quantity": 1}
+        ],
+        "levelReqToCraft": 75,
+        "expGiven": 1000000,
+        "no": 34,
+        "tab": 5,
+        "sellPrice": 15150500,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentHats25", "quantity": 1},
+                {"indent": 0, "item": "LavaA1", "quantity": 1000},
+                {"indent": 0, "item": "LavaA1b", "quantity": 1}
+            ],
+            "detRecipeTotals": [
+                {"item": "EquipmentHats25", "quantity": 1},
+                {"item": "LavaA1", "quantity": 1000},
+                {"item": "LavaA1b", "quantity": 1}
+            ]
+        }
+    },
+    "EquipmentShoes39": {
+        "intID": "EquipmentShoes39",
+        "recipe": [
+            {"item": "EquipmentShoes33", "quantity": 1},
+            {"item": "EquipmentShoes31", "quantity": 1},
+            {"item": "LavaB4", "quantity": 50000}
+        ],
+        "levelReqToCraft": 75,
+        "expGiven": 1000000,
+        "no": 35,
+        "tab": 5,
+        "sellPrice": 3594115000,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentShoes33", "quantity": 1},
+                {"indent": 1, "item": "EquipmentShoes32", "quantity": 4},
+                {"indent": 1, "item": "EquipmentShoes24", "quantity": 1},
+                {"indent": 2, "item": "EquipmentShoes22", "quantity": 1},
+                {"indent": 3, "item": "EquipmentShoes5", "quantity": 1},
+                {"indent": 4, "item": "Critter1A", "quantity": 3},
+                {"indent": 4, "item": "DementiaBar", "quantity": 500},
+                {"indent": 3, "item": "Bug6", "quantity": 60000},
+                {"indent": 3, "item": "VoidBar", "quantity": 725},
+                {"indent": 3, "item": "PureWater2", "quantity": 4},
+                {"indent": 2, "item": "GalaxyA2", "quantity": 120000},
+                {"indent": 2, "item": "LustreBar", "quantity": 2000},
+                {"indent": 0, "item": "EquipmentShoes31", "quantity": 1},
+                {"indent": 1, "item": "EquipmentShoes30", "quantity": 4},
+                {"indent": 1, "item": "EquipmentShoes24", "quantity": 1},
+                {"indent": 2, "item": "EquipmentShoes22", "quantity": 1},
+                {"indent": 3, "item": "EquipmentShoes5", "quantity": 1},
+                {"indent": 4, "item": "Critter1A", "quantity": 3},
+                {"indent": 4, "item": "DementiaBar", "quantity": 500},
+                {"indent": 3, "item": "Bug6", "quantity": 60000},
+                {"indent": 3, "item": "VoidBar", "quantity": 725},
+                {"indent": 3, "item": "PureWater2", "quantity": 4},
+                {"indent": 2, "item": "GalaxyA2", "quantity": 120000},
+                {"indent": 2, "item": "LustreBar", "quantity": 2000},
+                {"indent": 0, "item": "LavaB4", "quantity": 50000}
+            ],
+            "detRecipeTotals": [
+                {"item": "LavaB4", "quantity": 50000},
+                {"item": "EquipmentShoes32", "quantity": 4},
+                {"item": "EquipmentShoes30", "quantity": 4},
+                {"item": "GalaxyA2", "quantity": 240000},
+                {"item": "LustreBar", "quantity": 4000},
+                {"item": "Bug6", "quantity": 120000},
+                {"item": "VoidBar", "quantity": 1450},
+                {"item": "PureWater2", "quantity": 8},
+                {"item": "Critter1A", "quantity": 6},
+                {"item": "DementiaBar", "quantity": 1000}
+            ]
+        }
+    },
+    "EquipmentRings35": {
+        "intID": "EquipmentRings35",
+        "recipe": [
+            {"item": "EquipmentRings28", "quantity": 1},
+            {"item": "EquipmentRings29", "quantity": 1},
+            {"item": "Crystal5", "quantity": 25},
+            {"item": "KrukPart2", "quantity": 10}
+        ],
+        "levelReqToCraft": 75,
+        "expGiven": 1000000,
+        "no": 36,
+        "tab": 5,
+        "sellPrice": 111225,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentRings28", "quantity": 1},
+                {"indent": 1, "item": "EquipmentRings13", "quantity": 1},
+                {"indent": 1, "item": "MidnightCookie", "quantity": 30},
+                {"indent": 1, "item": "PureWater2", "quantity": 20},
+                {"indent": 1, "item": "Refinery3", "quantity": 400},
+                {"indent": 0, "item": "EquipmentRings29", "quantity": 1},
+                {"indent": 1, "item": "EquipmentRings13", "quantity": 1},
+                {"indent": 1, "item": "EquipmentKeychain24", "quantity": 1},
+                {"indent": 1, "item": "PureWater2", "quantity": 20},
+                {"indent": 1, "item": "Refinery3", "quantity": 400},
+                {"indent": 0, "item": "Crystal5", "quantity": 25},
+                {"indent": 0, "item": "KrukPart2", "quantity": 10}
+            ],
+            "detRecipeTotals": [
+                {"item": "Crystal5", "quantity": 25},
+                {"item": "KrukPart2", "quantity": 10},
+                {"item": "EquipmentRings13", "quantity": 2},
+                {"item": "MidnightCookie", "quantity": 30},
+                {"item": "PureWater2", "quantity": 40},
+                {"item": "Refinery3", "quantity": 800},
+                {"item": "EquipmentKeychain24", "quantity": 1}
+            ]
+        }
+    },
     "EquipmentHats105": {
         "intID": "EquipmentHats105",
         "recipe": [
@@ -10556,6 +10677,23 @@
                 {"item": "SpiA3", "quantity": 1200000},
                 {"item": "SpiA2b", "quantity": 1000}
             ]
+        }
+    },
+    "EquipmentRings36": {
+        "intID": "EquipmentRings36",
+        "recipe": [{"item": "EquipmentRings18", "quantity": 1}, {"item": "SpiD3", "quantity": 10000000}],
+        "levelReqToCraft": 76,
+        "expGiven": 1000000,
+        "no": 23,
+        "tab": 6,
+        "sellPrice": 1500000000001,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "EquipmentRings18", "quantity": 1},
+                {"indent": 0, "item": "SpiD3", "quantity": 10000000}
+            ],
+            "detRecipeTotals": [{"item": "EquipmentRings18", "quantity": 1}, {"item": "SpiD3", "quantity": 10000000}]
         }
     },
     "EquipmentHats106": {
@@ -11583,6 +11721,35 @@
                 {"item": "SpiD2", "quantity": 3000000},
                 {"item": "SpiD1", "quantity": 1000000},
                 {"item": "SpiB2b", "quantity": 5000}
+            ]
+        }
+    },
+    "FoodG13": {
+        "intID": "FoodG13",
+        "recipe": [
+            {"item": "FoodG4", "quantity": 1},
+            {"item": "FoodG10", "quantity": 1},
+            {"item": "GalaxyC1b", "quantity": 1},
+            {"item": "DesertC2b", "quantity": 10}
+        ],
+        "levelReqToCraft": 80,
+        "expGiven": 1000000,
+        "no": 47,
+        "tab": 6,
+        "sellPrice": 4800,
+        "recipeFrom": [],
+        "detailedRecipe": {
+            "detRecipe": [
+                {"indent": 0, "item": "FoodG4", "quantity": 1},
+                {"indent": 0, "item": "FoodG10", "quantity": 1},
+                {"indent": 0, "item": "GalaxyC1b", "quantity": 1},
+                {"indent": 0, "item": "DesertC2b", "quantity": 10}
+            ],
+            "detRecipeTotals": [
+                {"item": "FoodG4", "quantity": 1},
+                {"item": "FoodG10", "quantity": 1},
+                {"item": "GalaxyC1b", "quantity": 1},
+                {"item": "DesertC2b", "quantity": 10}
             ]
         }
     },

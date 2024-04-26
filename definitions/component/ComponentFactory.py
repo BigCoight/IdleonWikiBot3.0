@@ -18,15 +18,15 @@ class ComponentFactory:
 	hardCodedComponents = {
 		"W6item0": ["Jade", ""],
 		"W6item1": ["Crop", "3"],
-		"W6item2": ["Crop", "60"],
+		"W6item2": ["Crop", "30"],
 		"W6item3": ["Crop", "46"],
 		"W6item4": ["Crop", "72"],
 		"W6item5": ["Crop", "99"],
 		"W6item6": ["Summon", "0"],
-		"W6item7": ["Summon", "0"],
-		"W6item8": ["Summon", "0"],
-		"W6item9": ["Summon", "0"],
-		"W6item10": ["Summon", "0"],
+		"W6item7": ["Summon", "1"],
+		"W6item8": ["Summon", "2"],
+		"W6item9": ["Summon", "3"],
+		"W6item10": ["Summon", "4"],
 	}
 
 	@classmethod

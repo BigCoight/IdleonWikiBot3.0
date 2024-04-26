@@ -13591,6 +13591,70 @@
             }
         ]
     },
+    "Spirit Sungmin": {
+        "head": {
+            "location": "Unknown",
+            "world": "Unknown",
+            "noQuest": 0,
+            "type": "Unknown",
+            "birthWeight": 1.03,
+            "starSign": "Taurus",
+            "mothersMaidenName": "Norquist",
+            "notes": " "
+        },
+        "quests": {
+            "Mind, Body, Soul, Tasks": {
+                "Type": "ItemsAndSpaceRequired",
+                "DialogueText": "Before I bestow upon you my tasks I must ensure your preparedness... <br> QUEST:Kills some mobs and gather monster parts to show you're ready for the World 6 tasks!",
+                "NextIndex": 4,
+                "Name": "Mind, Body, Soul, Tasks",
+                "ConsumeItems": true,
+                "InventorySpacesNeeded": 2,
+                "NoSpaceIndex": 3,
+                "Rewards": [{"item": "GemP30", "quantity": 2}, {"item": "Quest81", "quantity": 2}],
+                "QuestName": "Spirit Sungmin1",
+                "Difficulty": 5,
+                "note": " ",
+                "ItemReq": [
+                    {"item": "SpiA1", "quantity": 2500},
+                    {"item": "SpiA2", "quantity": 1000},
+                    {"item": "SpiA3", "quantity": 500}
+                ]
+            }
+        },
+        "dialogue": [
+            {
+                "Type": "NoQuest",
+                "DialogueText": "Traveler your arrival is a pleasure. Please consider yourself home.",
+                "NextIndex": 1,
+                "Name": ""
+            },
+            {
+                "Type": "NoQuest",
+                "DialogueText": "I am sure you are familiar with my passion for tasks my bretheren abroad share the same ambitions.",
+                "NextIndex": 2,
+                "Name": ""
+            },
+            {
+                "Type": "ItemsAndSpaceRequired",
+                "DialogueText": "Before I bestow upon you my tasks I must ensure your preparedness... <br> QUEST:Kills some mobs and gather monster parts to show you're ready for the World 6 tasks!",
+                "NextIndex": 4,
+                "Name": "Mind, Body, Soul, Tasks"
+            },
+            {
+                "Type": "NoQuest",
+                "DialogueText": "Please clear your inventory.",
+                "NextIndex": 2,
+                "Name": ""
+            },
+            {
+                "Type": "NoQuest",
+                "DialogueText": "You are ready complete my tasks at your own pace.",
+                "NextIndex": 9999,
+                "Name": ""
+            }
+        ]
+    },
     "Rift Ripper": {
         "head": {
             "location": "The Untraveled Octopath",

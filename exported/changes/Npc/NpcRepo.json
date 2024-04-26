@@ -1,1 +1,23 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "Spirit Sungmin": {
+            "quests": {
+                "Mind, Body, Soul, Tasks": {
+                    "Type": "ItemsAndSpaceRequired",
+                    "DialogueText": "Before I bestow upon you my tasks I must ensure your preparedness... <br> QUEST:Kills some mobs and gather monster parts to show you're ready for the World 6 tasks!",
+                    "Name": "Mind, Body, Soul, Tasks",
+                    "ConsumeItems": true,
+                    "InventorySpacesNeeded": 2,
+                    "Rewards": [{"item": "GemP30", "quantity": 2}, {"item": "Quest81", "quantity": 2}],
+                    "Difficulty": 5,
+                    "ItemReq": [
+                        {"item": "SpiA1", "quantity": 2500},
+                        {"item": "SpiA2", "quantity": 1000},
+                        {"item": "SpiA3", "quantity": 500}
+                    ]
+                }
+            }
+        }
+    },
+    "changes": {}
+}

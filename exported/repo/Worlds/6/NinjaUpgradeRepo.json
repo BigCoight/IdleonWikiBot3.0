@@ -1,16 +1,30 @@
 {
-    "Name": {
+    "": {
         "screenX": 382,
         "screenY": 45,
         "width": 21,
         "height": 11,
-        "name": "Name",
-        "bonusPerLvl": "filler",
-        "bonus": "Desc",
-        "costBase": 10000,
-        "costExponent": 1.1,
+        "name": "",
+        "bonusPerLvl": 1,
+        "bonus": "",
+        "costBase": 40000000,
+        "costExponent": 1.35,
         "unlockId": 0,
         "iconX": 308,
+        "iconY": 17
+    },
+    "Way of Bargain": {
+        "screenX": 477,
+        "screenY": 45,
+        "width": 39,
+        "height": 44,
+        "name": "Way of Bargain",
+        "bonusPerLvl": 1,
+        "bonus": "Decreases the cost of all Ninja Knowledge upgrades by {%.",
+        "costBase": 100000000,
+        "costExponent": 1.13,
+        "unlockId": 0,
+        "iconX": 403,
         "iconY": 17
     },
     "Respect for the Art": {
@@ -26,6 +40,20 @@
         "unlockId": 8,
         "iconX": 557,
         "iconY": 17
+    },
+    "Mastery Loot": {
+        "screenX": 746,
+        "screenY": 47,
+        "width": 97,
+        "height": 43,
+        "name": "Mastery Loot",
+        "bonusPerLvl": 1,
+        "bonus": "Raise the max LV of all items found by +{ per Mastery you are currently on.",
+        "costBase": 10000000,
+        "costExponent": 1.8,
+        "unlockId": 0,
+        "iconX": 843,
+        "iconY": 16
     },
     "Way of Haste": {
         "screenX": 549,
@@ -55,16 +83,16 @@
         "iconX": 715,
         "iconY": 89
     },
-    "Shuriken Sensei": {
+    "Gemstone Pilfer": {
         "screenX": 122,
         "screenY": 196,
         "width": 16,
         "height": 18,
-        "name": "Shuriken Sensei",
+        "name": "Gemstone Pilfer",
         "bonusPerLvl": 1,
-        "bonus": "Raise the max LV of Shuriken found to +{, also increases rarity of Shuriken found.",
-        "costBase": 1000000000,
-        "costExponent": 1.63,
+        "bonus": "Raise the max LV of Gemstones found to +{, counting as more for collection when used",
+        "costBase": 40000000,
+        "costExponent": 1.35,
         "unlockId": 0,
         "iconX": 93,
         "iconY": 123
@@ -95,6 +123,20 @@
         "costExponent": 1.1,
         "unlockId": 14,
         "iconX": 618,
+        "iconY": 117
+    },
+    "Name": {
+        "screenX": 877,
+        "screenY": 91,
+        "width": 31,
+        "height": 69,
+        "name": "Name",
+        "bonusPerLvl": "filler",
+        "bonus": "Desc",
+        "costBase": 10000,
+        "costExponent": 1.1,
+        "unlockId": 9,
+        "iconX": 803,
         "iconY": 117
     },
     "Glove Ingenuity": {

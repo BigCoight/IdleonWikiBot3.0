@@ -48,7 +48,7 @@ class Constants:
 		"Souls": ["Souls"],
 	}
 
-	COLNAMES = ["Dewdrop", "Sandstone", "Chillsnap", "Astro", "NYI", "NYI", "NYI", "NYI", "NYI"]
+	COLNAMES = ["Dewdrop", "Sandstone", "Chillsnap", "Astro", "Molten", "Whimsical", "NYI", "NYI", "NYI"]
 
 	newLine = "<!--\n-->"
 

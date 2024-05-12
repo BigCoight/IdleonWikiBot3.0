@@ -7,10 +7,12 @@ class NinjaItemType(IdleonEnum):
 	Weapon = "Weapon"
 	Trinket = "Trinket"
 	PristineCharm = "PristineCharm"
+	Gemstone = "Gemstone"
 
 	@staticmethod
 	def fromInt(val: int):
-		return [NinjaItemType.Item, NinjaItemType.Weapon, NinjaItemType.Trinket, NinjaItemType.PristineCharm][val]
+		return [NinjaItemType.Item, NinjaItemType.Weapon, NinjaItemType.Trinket, NinjaItemType.PristineCharm,
+		        NinjaItemType.Gemstone][val]
 
 
 class BaseNinjaItem(IdleonModel):

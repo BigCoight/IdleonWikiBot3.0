@@ -104,7 +104,6 @@
             {
                 "enemies": [
                     {"enemy": "jarSand", "qty": 15, "platform": 3, "baseScore": 250},
-                    {"enemy": "FishSmall", "qty": 1, "platform": 5, "baseScore": 630},
                     {"enemy": "jarSand", "qty": 4, "platform": 0, "baseScore": 250}
                 ]
             },
@@ -114,24 +113,14 @@
                     {"enemy": "mimicA", "qty": 8, "platform": 3, "baseScore": 250}
                 ]
             },
-            {
-                "enemies": [
-                    {"enemy": "coconut", "qty": 12, "platform": 3, "baseScore": 250},
-                    {"enemy": "PalmTree", "qty": 1, "platform": 4, "baseScore": 790}
-                ]
-            },
+            {"enemies": [{"enemy": "coconut", "qty": 12, "platform": 3, "baseScore": 250}]},
             {
                 "enemies": [
                     {"enemy": "sandcastle", "qty": 16, "platform": 3, "baseScore": 200},
                     {"enemy": "coconut", "qty": 8, "platform": 0, "baseScore": 500}
                 ]
             },
-            {
-                "enemies": [
-                    {"enemy": "shovelR", "qty": 17, "platform": 3, "baseScore": 200},
-                    {"enemy": "Plat", "qty": 1, "platform": 2, "baseScore": 95}
-                ]
-            },
+            {"enemies": [{"enemy": "shovelR", "qty": 17, "platform": 3, "baseScore": 200}]},
             {"enemies": [{"enemy": "pincermin", "qty": 18, "platform": 3, "baseScore": 175}]},
             {
                 "enemies": [
@@ -140,12 +129,7 @@
                     {"enemy": "sandcastle", "qty": 7, "platform": 0, "baseScore": 500}
                 ]
             },
-            {
-                "enemies": [
-                    {"enemy": "steak", "qty": 14, "platform": 3, "baseScore": 250},
-                    {"enemy": "FishSmall", "qty": 1, "platform": 5, "baseScore": 630}
-                ]
-            },
+            {"enemies": [{"enemy": "steak", "qty": 14, "platform": 3, "baseScore": 250}]},
             {
                 "enemies": [
                     {"enemy": "moonman", "qty": 16, "platform": 3, "baseScore": 230},
@@ -156,7 +140,6 @@
             {
                 "enemies": [
                     {"enemy": "snailZ", "qty": 18, "platform": 3, "baseScore": 175},
-                    {"enemy": "Void", "qty": 1, "platform": 2, "baseScore": 95},
                     {"enemy": "moonman", "qty": 6, "platform": 3, "baseScore": 200}
                 ]
             },
@@ -344,6 +327,315 @@
                     {"enemy": "w4c2", "qty": 6, "platform": 0, "baseScore": 865},
                     {"enemy": "w4c4", "qty": 20, "platform": 0, "baseScore": 665},
                     {"enemy": "mini4a", "qty": 1, "platform": 0, "baseScore": 700}
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Molten",
+        "map": 202,
+        "node": 10,
+        "colMap": 215,
+        "keyCost": 10,
+        "infoX": 103,
+        "infoY": 10,
+        "bronzeScore": 800000,
+        "silverScore": 3000000,
+        "goldScore": 7000000,
+        "bronzeNode": 1,
+        "silverNode": 1,
+        "goldNode": 2,
+        "bronzeX": 900,
+        "silverX": 1020,
+        "goldX": 400,
+        "waves": [
+            {
+                "enemies": [
+                    {"enemy": "w5a1", "qty": 8, "platform": 1, "baseScore": 973},
+                    {"enemy": "w5a1", "qty": 14, "platform": 2, "baseScore": 592}
+                ]
+            },
+            {"enemies": [{"enemy": "w5a1", "qty": 13, "platform": 0, "baseScore": 1245}]},
+            {
+                "enemies": [
+                    {"enemy": "w5a1", "qty": 10, "platform": 3, "baseScore": 261},
+                    {"enemy": "w5a1", "qty": 15, "platform": 2, "baseScore": 592}
+                ]
+            },
+            {"enemies": [{"enemy": "w5a1", "qty": 20, "platform": 2, "baseScore": 592}]},
+            {
+                "enemies": [
+                    {"enemy": "w5a1", "qty": 5, "platform": 0, "baseScore": 1245},
+                    {"enemy": "w5a1", "qty": 8, "platform": 1, "baseScore": 973},
+                    {"enemy": "w5a1", "qty": 10, "platform": 2, "baseScore": 592},
+                    {"enemy": "w5a1", "qty": 8, "platform": 3, "baseScore": 261}
+                ]
+            },
+            {
+                "enemies": [
+                    {"enemy": "w5a2", "qty": 8, "platform": 1, "baseScore": 973},
+                    {"enemy": "w5a2", "qty": 14, "platform": 2, "baseScore": 592}
+                ]
+            },
+            {"enemies": [{"enemy": "w5a2", "qty": 20, "platform": 2, "baseScore": 592}]},
+            {"enemies": [{"enemy": "w5a2", "qty": 13, "platform": 0, "baseScore": 1245}]},
+            {
+                "enemies": [
+                    {"enemy": "w5a2", "qty": 10, "platform": 3, "baseScore": 261},
+                    {"enemy": "w5a2", "qty": 15, "platform": 2, "baseScore": 592}
+                ]
+            },
+            {
+                "enemies": [
+                    {"enemy": "w5a2", "qty": 5, "platform": 0, "baseScore": 1245},
+                    {"enemy": "w5a2", "qty": 8, "platform": 1, "baseScore": 973},
+                    {"enemy": "w5a2", "qty": 10, "platform": 2, "baseScore": 592},
+                    {"enemy": "w5a2", "qty": 8, "platform": 3, "baseScore": 261}
+                ]
+            },
+            {
+                "enemies": [
+                    {"enemy": "w5a3", "qty": 8, "platform": 1, "baseScore": 973},
+                    {"enemy": "w5a3", "qty": 14, "platform": 2, "baseScore": 592}
+                ]
+            },
+            {"enemies": [{"enemy": "w5a3", "qty": 13, "platform": 0, "baseScore": 1245}]},
+            {
+                "enemies": [
+                    {"enemy": "w5a3", "qty": 10, "platform": 3, "baseScore": 261},
+                    {"enemy": "w5a3", "qty": 15, "platform": 2, "baseScore": 592}
+                ]
+            },
+            {"enemies": [{"enemy": "w5a3", "qty": 20, "platform": 2, "baseScore": 592}]},
+            {
+                "enemies": [
+                    {"enemy": "w5a3", "qty": 5, "platform": 0, "baseScore": 1245},
+                    {"enemy": "w5a3", "qty": 8, "platform": 1, "baseScore": 973},
+                    {"enemy": "w5a3", "qty": 10, "platform": 2, "baseScore": 592},
+                    {"enemy": "w5a3", "qty": 8, "platform": 3, "baseScore": 261}
+                ]
+            },
+            {
+                "enemies": [
+                    {"enemy": "w5a4", "qty": 8, "platform": 1, "baseScore": 973},
+                    {"enemy": "w5a4", "qty": 14, "platform": 2, "baseScore": 592}
+                ]
+            },
+            {"enemies": [{"enemy": "w5a4", "qty": 13, "platform": 0, "baseScore": 1245}]},
+            {
+                "enemies": [
+                    {"enemy": "w5a4", "qty": 10, "platform": 3, "baseScore": 261},
+                    {"enemy": "w5a4", "qty": 15, "platform": 2, "baseScore": 592}
+                ]
+            },
+            {"enemies": [{"enemy": "w5a4", "qty": 20, "platform": 2, "baseScore": 592}]},
+            {
+                "enemies": [
+                    {"enemy": "w5a4", "qty": 5, "platform": 0, "baseScore": 1245},
+                    {"enemy": "w5a4", "qty": 8, "platform": 1, "baseScore": 973},
+                    {"enemy": "w5a4", "qty": 10, "platform": 2, "baseScore": 592},
+                    {"enemy": "w5a4", "qty": 8, "platform": 3, "baseScore": 261}
+                ]
+            },
+            {"enemies": [{"enemy": "w5a5", "qty": 13, "platform": 0, "baseScore": 1245}]},
+            {
+                "enemies": [
+                    {"enemy": "w5a5", "qty": 8, "platform": 1, "baseScore": 973},
+                    {"enemy": "w5a5", "qty": 14, "platform": 2, "baseScore": 592}
+                ]
+            },
+            {
+                "enemies": [
+                    {"enemy": "w5a5", "qty": 10, "platform": 3, "baseScore": 261},
+                    {"enemy": "w5a5", "qty": 15, "platform": 2, "baseScore": 592}
+                ]
+            },
+            {"enemies": [{"enemy": "w5a5", "qty": 20, "platform": 2, "baseScore": 592}]},
+            {
+                "enemies": [
+                    {"enemy": "w5a1", "qty": 5, "platform": 0, "baseScore": 1245},
+                    {"enemy": "w5a2", "qty": 8, "platform": 1, "baseScore": 973},
+                    {"enemy": "w5a4", "qty": 8, "platform": 1, "baseScore": 973},
+                    {"enemy": "w5a3", "qty": 10, "platform": 2, "baseScore": 592},
+                    {"enemy": "w5a5", "qty": 10, "platform": 2, "baseScore": 592},
+                    {"enemy": "w5a4", "qty": 8, "platform": 3, "baseScore": 261},
+                    {"enemy": "mini5a", "qty": 1, "platform": 2, "baseScore": 592}
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Whimsical",
+        "map": 252,
+        "node": 9,
+        "colMap": 265,
+        "keyCost": 30,
+        "infoX": 139,
+        "infoY": 536,
+        "bronzeScore": 5000000,
+        "silverScore": 20000000,
+        "goldScore": 40000000,
+        "bronzeNode": 0,
+        "silverNode": 1,
+        "goldNode": 2,
+        "bronzeX": 590,
+        "silverX": 470,
+        "goldX": 400,
+        "waves": [
+            {
+                "enemies": [
+                    {"enemy": "w6a1", "qty": 8, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a1", "qty": 14, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a1", "qty": 13, "platform": 0, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a1", "qty": 10, "platform": 2, "baseScore": 600},
+                    {"enemy": "w6a1", "qty": 15, "platform": 1, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a1", "qty": 20, "platform": 2, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a1", "qty": 5, "platform": 0, "baseScore": 600},
+                    {"enemy": "w6a1", "qty": 8, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a1", "qty": 10, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {
+                "enemies": [
+                    {"enemy": "w6a2", "qty": 8, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a2", "qty": 14, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a2", "qty": 13, "platform": 0, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a2", "qty": 10, "platform": 2, "baseScore": 600},
+                    {"enemy": "w6a2", "qty": 15, "platform": 1, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a2", "qty": 20, "platform": 2, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a2", "qty": 5, "platform": 0, "baseScore": 600},
+                    {"enemy": "w6a2", "qty": 8, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a2", "qty": 10, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a3", "qty": 15, "platform": 2, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a3", "qty": 13, "platform": 2, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a3", "qty": 10, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a3", "qty": 15, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a3", "qty": 20, "platform": 2, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a3", "qty": 15, "platform": 2, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a1", "qty": 15, "platform": 0, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a1", "qty": 13, "platform": 0, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a1", "qty": 10, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a1", "qty": 15, "platform": 0, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a1", "qty": 20, "platform": 0, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a1", "qty": 15, "platform": 0, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a2", "qty": 15, "platform": 1, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a2", "qty": 13, "platform": 1, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a2", "qty": 10, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a2", "qty": 15, "platform": 1, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a2", "qty": 20, "platform": 1, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a2", "qty": 20, "platform": 1, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a3", "qty": 15, "platform": 2, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a3", "qty": 13, "platform": 2, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a3", "qty": 10, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a3", "qty": 15, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a3", "qty": 20, "platform": 2, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a3", "qty": 20, "platform": 2, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a4", "qty": 8, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a4", "qty": 14, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a4", "qty": 13, "platform": 0, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a4", "qty": 10, "platform": 2, "baseScore": 600},
+                    {"enemy": "w6a4", "qty": 15, "platform": 1, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a4", "qty": 20, "platform": 2, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a4", "qty": 5, "platform": 0, "baseScore": 600},
+                    {"enemy": "w6a4", "qty": 8, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a4", "qty": 10, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {
+                "enemies": [
+                    {"enemy": "w6a2", "qty": 8, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a2", "qty": 14, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a2", "qty": 13, "platform": 0, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a2", "qty": 10, "platform": 2, "baseScore": 600},
+                    {"enemy": "w6a2", "qty": 15, "platform": 1, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a2", "qty": 20, "platform": 2, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a2", "qty": 5, "platform": 0, "baseScore": 600},
+                    {"enemy": "w6a2", "qty": 8, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a2", "qty": 10, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a3", "qty": 15, "platform": 2, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a3", "qty": 13, "platform": 2, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a3", "qty": 10, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a3", "qty": 15, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a3", "qty": 20, "platform": 2, "baseScore": 600}]},
+            {"enemies": [{"enemy": "w6a3", "qty": 20, "platform": 2, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a5", "qty": 8, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a4", "qty": 14, "platform": 2, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a2", "qty": 13, "platform": 1, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "w6a3", "qty": 10, "platform": 2, "baseScore": 600},
+                    {"enemy": "w6a5", "qty": 15, "platform": 1, "baseScore": 600}
+                ]
+            },
+            {"enemies": [{"enemy": "w6a4", "qty": 20, "platform": 2, "baseScore": 600}]},
+            {
+                "enemies": [
+                    {"enemy": "mini6a", "qty": 1, "platform": 0, "baseScore": 600},
+                    {"enemy": "w6a1", "qty": 8, "platform": 1, "baseScore": 600},
+                    {"enemy": "w6a3", "qty": 10, "platform": 2, "baseScore": 600},
+                    {"enemy": "w6a5", "qty": 10, "platform": 2, "baseScore": 600}
                 ]
             }
         ]

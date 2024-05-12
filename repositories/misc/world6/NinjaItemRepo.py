@@ -75,6 +75,17 @@ class NinjaItemRepo(Repository[BaseNinjaItem]):
 					bonus = data[4],
 					x3 = data[5],
 				)
+			elif ninjaItemType == NinjaItemType.Gemstone:
+				toAdd = NinjaTrinket(
+					internalId = internalId,
+					itemTypeId = data[0],
+					itemType = ninjaItemType,
+					itemId = data[1],
+					name = data[2],
+					x1 = data[3],
+					bonus = data[4],
+					x3 = data[5],
+				)
 			elif ninjaItemType == NinjaItemType.PristineCharm:
 				toAdd = NinjaPristineCharm(
 					internalId = internalId,

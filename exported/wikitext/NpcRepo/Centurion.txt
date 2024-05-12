@@ -45,10 +45,34 @@ Completing his first quest (Down The Mimic Hole!) gives the player the ability t
 {{Quest|name=Colosseum GDQ
 |text=Complete the three colosseums with lots of Time Remaining after beating all waves.
 |difficulty=6
-|requirements=1st Colosseum: > 180, 2nd Colosseum: > 170, 3rd Colosseum: > 160
+|requirements=1st Colosseum: > 180, 2nd Colosseum: > 180, 3rd Colosseum: > 180
 |consumed=No
 |rewards=1x{{CraftReq|12 HR Time Candy}}, 30x{{CraftReq|Gem}}, {{Coindisplay|100000}}
 |notes=The numbers are how many seconds you must have remaining for each colosseum.
+}}
+{{Quest|name=Centurio Rank
+|text=Complete the Astro Colosseum within World 4
+|difficulty=6
+|requirements=Win W4 Colosseum: > 1
+|consumed=No
+|rewards=1x{{CraftReq|12 HR Time Candy}}, 5x{{CraftReq|Holy Pearl}}
+|notes= 
+}}
+{{Quest|name=Legatus Rank
+|text=Complete the Molten Colosseum within World 5
+|difficulty=7
+|requirements=Win W5 Colosseum: > 1
+|consumed=No
+|rewards=1x{{CraftReq|24 HR Time Candy}}, 6x{{CraftReq|Holy Pearl}}, 8x{{CraftReq|Divinity Pearl}}
+|notes= 
+}}
+{{Quest|name=Glorious Gladiator
+|text=Complete the Whimsical Colosseum within World 6
+|difficulty=9
+|requirements=Win W6 Colosseum: > 1
+|consumed=No
+|rewards=1x{{CraftReq|Gladiator}}
+|notes= 
 }}
 |}
 {{dialogue/head}}
@@ -75,5 +99,15 @@ Completing his first quest (Down The Mimic Hole!) gives the player the ability t
 {{dialogue/row|text=Please clear some space all promotions come with rewards!}}
 {{dialogue/row|text=Huh...}}
 {{dialogue/row|text=You know maybe you're the one to finally do it... <br> Return at Class Lv. 130}}
-{{dialogue/row|text=So you think you can do it? Well you'll have to come back in a future update to find out.}}
+{{dialogue/row|text=Well well well the Optio rank has returned from their unrelated adventures.}}
+{{dialogue/row|text=Only three ranks separate you from Ordinary Optio and Glorious Gladiator.}}
+{{dialogue/row|text=The rank of Centurio is granted to those who enter the Colosseum of the stars and exit victorious. <br> QUEST:Complete the Astro Colosseum within World 4|quest=Centurio Rank}}
+{{dialogue/row|text=Please clear some space all promotions come with rewards!}}
+{{dialogue/row|text=Well done you may call yourself Centurio amongst the other combatants...}}
+{{dialogue/row|text=The rank of Legatus is granted to anyone powerful enough to best the magma mobs of the Smoldering Plateau colosseum and live. <br> QUEST:Complete the Molten Colosseum within World 5|quest=Legatus Rank}}
+{{dialogue/row|text=Please clear some space all promotions come with rewards!}}
+{{dialogue/row|text=Well done you may call yourself Legatus amongst the other combatants...}}
+{{dialogue/row|text=The rank of Glorious Gladiator belongs only to those brave enough to challenge every colosseum and strong enough to conquer them all. QUEST:Complete the Whimsical Colosseum within World 6|quest=Glorious Gladiator}}
+{{dialogue/row|text=Please clear some space all promotions come with rewards!}}
+{{dialogue/row|text=I am in awe of your accomplishment he who has achieved the rank of Glorious Gladiator! You are amongst the most legendary combatants to ever grace the colosseums.}}
 |}

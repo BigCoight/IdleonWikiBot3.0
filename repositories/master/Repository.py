@@ -1,5 +1,6 @@
 import difflib
 import os.path
+import re
 from abc import ABC, abstractmethod
 from copy import deepcopy
 from enum import Enum
@@ -146,10 +147,13 @@ class Repository(Generic[T], ABC):
 		return True
 
 	@classmethod
-	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True,
+	                    upload = False):
 		"""
 
 		Args:
+		    upload:
+		    upload:
 		    useIgnore:
 		    useIgnore: to use the classes ignore method when comparing
 			v1: The version that is "Old"
@@ -199,12 +203,23 @@ class Repository(Generic[T], ABC):
 		changeName = cls._getPath("changes", "json")
 		with open(changeName, mode = "w", encoding = 'utf-8') as outfile:
 			outfile.write(CompactJSONEncoder(indent = 4).encode(out))
-		cls._writeChangesWiki(out)
+		output = cls._writeChangesWiki(out)
 
 		if len(new) == 0 and len(changes) == 0:
 			return
 
+		if upload:
+			website = Site()
+			cls._upload(website, cls._getChangelogPath(), output)
+
 		printYellow(f"Compared {cls.__name__} with {len(new)} new items and {len(changes)} changes")
+
+	@classmethod
+	def _getChangelogPath(cls) -> str:
+		repoName = cls.__name__.removesuffix("Repo")
+		changeLogName = re.sub(r'([a-z](?=[A-Z])|[A-Z](?=[A-Z][a-z]))', r'\1 ', repoName)
+		version = cls.codeReader.version
+		return f"Changelog/{version}/{changeLogName}"
 
 	@classmethod
 	def _writeChangesWiki(cls, differences):
@@ -263,6 +278,8 @@ class Repository(Generic[T], ABC):
 
 		with open(cls._getPath("wikitext/_changes", "txt"), mode = 'w', encoding = 'utf-8') as infile:
 			infile.write(res)
+
+		return res
 
 	@classmethod
 	def _writeChangelog(cls, changes, indent = 0):

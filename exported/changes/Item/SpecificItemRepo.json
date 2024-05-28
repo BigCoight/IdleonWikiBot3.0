@@ -1,35 +1,48 @@
 {
     "new": {
-        "Quest85": {
-            "displayName": "Anniversary Box",
+        "EquipmentCape15": {
+            "displayName": "Giant Nightshade",
             "sellPrice": 1,
-            "Type": "Event Box",
-            "description": "IdleOn is 3 years old! Hold down to open this box and celebrate! Contains a random Anniversary goodie, from event cards to foods! ALSO, if you open a total of 500 Boxes, you'll get a limited edition Anniversary event NAMETAG! "
-        },
-        "EquipmentNametag10": {
-            "displayName": "3rd Anniversary IdleOn Nametag",
-            "sellPrice": 1,
-            "Type": "Nametag",
+            "Type": "Cape",
             "lvReqToCraft": 55,
             "lvReqToEquip": 1,
             "Class": "All",
-            "Weapon_Power": 3,
-            "STR": 3,
-            "AGI": 3,
-            "WIS": 3,
-            "LUK": 3,
-            "Defence": 3,
-            "miscUp1": "3% All Afk Gain",
-            "miscUp2": "3% Drop Chance",
+            "Weapon_Power": 5,
+            "STR": 2,
+            "AGI": 2,
+            "WIS": 2,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "15% Xp From Monsters",
+            "miscUp2": "00",
             "Upgrade_Slots_Left": 0,
             "Skill": "",
             "Skill_Power": 0
         },
-        "EquipmentHats108": {
-            "displayName": "3rd Anniversary Ice Cream Topper",
+        "EquipmentHats109": {
+            "displayName": "Husky Hat",
             "sellPrice": 1,
-            "Type": "Helmet",
+            "Type": "Premium Helmet",
             "lvReqToCraft": 5,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 1,
+            "AGI": 1,
+            "WIS": 1,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentNametag11": {
+            "displayName": "Nightshade Nametag",
+            "sellPrice": 1,
+            "Type": "Nametag",
+            "lvReqToCraft": 55,
             "lvReqToEquip": 1,
             "Class": "All",
             "Weapon_Power": 2,
@@ -37,13 +50,41 @@
             "AGI": 0,
             "WIS": 0,
             "LUK": 0,
-            "Defence": 5,
-            "miscUp1": "4% Xp From Monsters",
-            "miscUp2": "3% Drop Chance",
-            "Upgrade_Slots_Left": 3,
+            "Defence": 1,
+            "miscUp1": "4% All Afk Gain",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
             "Skill": "",
             "Skill_Power": 0
         }
     },
-    "changes": {}
+    "changes": {
+        "EquipmentHats18": {"Defence": [9, 10]},
+        "StampA7": {"stampData": {"startV": [50, 15]}},
+        "InvBag103": {"level": [20, 1]},
+        "MaxCapBagM3": {"level": [20, 13]},
+        "InvBag109": {"level": [65, 1]},
+        "StoneA2": {
+            "description": [
+                "Drag onto any Armor to apply. +2 Defence, +2 Random Stat. Success Chance; 80% Uses up 1 slots only if Successful ",
+                "Drag onto any Armor to apply. +3 Defence, +2 Random Stat. Success Chance; 80% Uses up 1 slots only if Successful "
+            ]
+        },
+        "EquipmentHats17": {"Defence": [5, 7]},
+        "StampA3": {"sellPrice": [2500, 1500], "stampData": {"startV": [25, 12]}},
+        "StoneA3": {
+            "description": [
+                "Drag onto any Armor to apply. +3 Defence, +4 Random Stat. Success Chance; 50% Uses up 1 slots only if Successful ",
+                "Drag onto any Armor to apply. +4 Defence, +4 Random Stat. Success Chance; 50% Uses up 1 slots only if Successful "
+            ]
+        },
+        "StampA5": {"sellPrice": [250, 100]},
+        "StampA1": {"stampData": {"startV": [20, 4]}},
+        "StampA6": {"sellPrice": [800, 400], "stampData": {"startV": [50, 15]}},
+        "EquipmentShirts23": {"Class": ["Archer", "All"]},
+        "EquipmentHats1": {"Defence": [2, 3]},
+        "EquipmentHats15": {"Defence": [4, 5]},
+        "SmithingHammerChisel": {"sellPrice": [800, 400]},
+        "StampA2": {"stampData": {"startV": [25, 10]}}
+    }
 }

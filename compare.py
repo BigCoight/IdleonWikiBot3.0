@@ -1,3 +1,5 @@
+from pywikibot.login import ClientLoginManager
+
 from helpers.CodeReader import IdleonReader
 from repositories.arcade.ArcadeBonusRepo import ArcadeBonusRepo
 from repositories.collections.EnemyRepo import EnemyRepo
@@ -65,84 +67,24 @@ from repositories.misc.world6.SummonUpgradeRepo import SummonUpgradeRepo
 from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
-newV = IdleonReader("206", True)
-oldV = IdleonReader("205", True)
+newV = IdleonReader("2.09", True)
+oldV = IdleonReader("2.08", True)
 
-SpecificItemRepo.compareVersions(oldV, newV)
-EnemyRepo.compareVersions(oldV, newV)
-DropTableRepo.compareVersions(oldV, newV)
-NpcRepo.compareVersions(oldV, newV)
-RecipeRepo.compareVersions(oldV, newV)
-BubbleRepo.compareVersions(oldV, newV)
-TalentTreeRepo.compareVersions(oldV, newV)
-PostOfficeUpgradesRepo.compareVersions(oldV, newV)
-PostOfficeRepo.compareVersions(oldV, newV)
-VendorRepo.compareVersions(oldV, newV)
-PrayerRepo.compareVersions(oldV, newV)
-GemShopRepo.compareVersions(oldV, newV)
-BuildingRepo.compareVersions(oldV, newV)
-ShrineRepo.compareVersions(oldV, newV)
-RefineryCostRepo.compareVersions(oldV, newV)
-BribeRepo.compareVersions(oldV, newV)
-ConstellationsRepo.compareVersions(oldV, newV)
-DungEnemyRepo.compareVersions(oldV, newV)
-DungItemRepo.compareVersions(oldV, newV)
-AchievementRepo.compareVersions(oldV, newV)
-GuildBonusRepo.compareVersions(oldV, newV)
-AnvilRepo.compareVersions(oldV, newV)
+repos = [SpecificItemRepo, EnemyRepo, DropTableRepo, NpcRepo, RecipeRepo, BubbleRepo, TalentTreeRepo,
+         PostOfficeUpgradesRepo, PostOfficeRepo, VendorRepo, PrayerRepo, GemShopRepo, BuildingRepo, ShrineRepo,
+         RefineryCostRepo, BribeRepo, ConstellationsRepo, DungEnemyRepo, DungItemRepo, AchievementRepo, GuildBonusRepo,
+         AnvilRepo, ArenaBonusRepo, ChipRepo, InfiniteTerritoryRepo, JewelRepo, LabBonusRepo, MealRepo, PetGeneRepo,
+         PetStatRepo, PetUpgradeRepo, TerritoryFightRepo, BossDetailRepo, CardSetRepo, FishPoolRepo, TrapBoxRepo,
+         ArcadeBonusRepo, SigilRepo, TaskShopDescRepo, TaskDescriptionRepo, ColosseumRepo, ArtifactRepo,
+         CaptainBonusRepo, DivinityStyleRepo, GamingBoxRepo, GamingUpgradeRepo, GodInfoRepo, IslandInfoRepo,
+         SlabItemSortRepo, GamingSuperbitsRepo, CompanionRepo, AtomColliderRepo, WeeklyBossRepo, WeeklyActionRepo,
+         WeeklyShopRepo, DreamChallengeRepo, DreamUpgradeRepo, SummonUpgradeRepo, NinjaUpgradeRepo, JadeUpgradeRepo,
+         MarketInfoRepo, SeedInfoRepo, SummonEnemyRepo, SummonUnitRepo, NinjaItemRepo]
 
-ArenaBonusRepo.compareVersions(oldV, newV)
-ChipRepo.compareVersions(oldV, newV)
-InfiniteTerritoryRepo.compareVersions(oldV, newV)
+upload = True
+if upload:
+	loginManager = ClientLoginManager()
+	loginManager.login()
 
-JewelRepo.compareVersions(oldV, newV)
-LabBonusRepo.compareVersions(oldV, newV)
-MealRepo.compareVersions(oldV, newV)
-
-PetGeneRepo.compareVersions(oldV, newV)
-PetStatRepo.compareVersions(oldV, newV)
-PetUpgradeRepo.compareVersions(oldV, newV)
-
-TerritoryFightRepo.compareVersions(oldV, newV)
-BossDetailRepo.compareVersions(oldV, newV)
-CardSetRepo.compareVersions(oldV, newV)
-FishPoolRepo.compareVersions(oldV, newV)
-TrapBoxRepo.compareVersions(oldV, newV)
-ArcadeBonusRepo.compareVersions(oldV, newV)
-SigilRepo.compareVersions(oldV, newV)
-
-TaskShopDescRepo.compareVersions(oldV, newV)
-TaskDescriptionRepo.compareVersions(oldV, newV)
-ColosseumRepo.compareVersions(oldV, newV)
-
-ArtifactRepo.compareVersions(oldV, newV)
-CaptainBonusRepo.compareVersions(oldV, newV)
-DivinityStyleRepo.compareVersions(oldV, newV)
-GamingBoxRepo.compareVersions(oldV, newV)
-GamingUpgradeRepo.compareVersions(oldV, newV)
-GodInfoRepo.compareVersions(oldV, newV)
-IslandInfoRepo.compareVersions(oldV, newV)
-SlabItemSortRepo.compareVersions(oldV, newV)
-GamingSuperbitsRepo.compareVersions(oldV, newV)
-
-CompanionRepo.compareVersions(oldV, newV)
-
-AtomColliderRepo.compareVersions(oldV, newV)
-
-WeeklyBossRepo.compareVersions(oldV, newV)
-WeeklyActionRepo.compareVersions(oldV, newV)
-
-WeeklyShopRepo.compareVersions(oldV, newV)
-
-DreamChallengeRepo.compareVersions(oldV, newV)
-DreamUpgradeRepo.compareVersions(oldV, newV)
-
-# World 6
-SummonUpgradeRepo.compareVersions(oldV, newV)
-NinjaUpgradeRepo.compareVersions(oldV, newV)
-JadeUpgradeRepo.compareVersions(oldV, newV)
-MarketInfoRepo.compareVersions(oldV, newV)
-SeedInfoRepo.compareVersions(oldV, newV)
-SummonEnemyRepo.compareVersions(oldV, newV)
-SummonUnitRepo.compareVersions(oldV, newV)
-NinjaItemRepo.compareVersions(oldV, newV)
+for repo in repos:
+	repo.compareVersions(oldV, newV, upload = upload)

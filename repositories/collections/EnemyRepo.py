@@ -53,7 +53,8 @@ class EnemyRepo(Repository[Enemy]):
 		return cls.get(name).details.Name
 
 	@classmethod
-	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True,
+	                    upload = False):
 		return super().compareVersions(v1, v2, ignored = {
 			"bossData",
 			"navigation",
@@ -67,8 +68,7 @@ class EnemyRepo(Repository[Enemy]):
 			"MovingFrame",
 			"DeathFrame",
 			"Type",
-		},
-		                               useIgnore = False)
+		}, useIgnore = False, upload = upload)
 
 	@classmethod
 	def _ignore(cls, name: str, data: Enemy) -> bool:

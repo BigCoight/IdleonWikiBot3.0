@@ -125,8 +125,15 @@ class SpecificItemRepo(Repository[BaseItem]):
 		return cls.getDisplayName(name)
 
 	@classmethod
-	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True):
-		return super().compareVersions(v1, v2, {"category", "internalName", "typeGen"})
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True,
+	                    upload = False):
+		return super().compareVersions(v1, v2, {"category", "internalName", "typeGen"}, upload = upload)
+
+	@classmethod
+	def _getChangelogPath(cls) -> str:
+		changeLogName = "Items"
+		version = cls.codeReader.version
+		return f"Changelog/{version}/{changeLogName}"
 
 	@classmethod
 	def _ignore(cls, name: str, data: BaseItem) -> bool:
@@ -193,3 +200,5 @@ class SpecificItemRepo(Repository[BaseItem]):
 
 		with open(cls._getPath("wikitext/_changes", "txt"), mode = 'w') as infile:
 			infile.write(res)
+
+		return res

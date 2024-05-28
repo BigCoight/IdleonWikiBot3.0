@@ -157,9 +157,10 @@ class NpcRepo(Repository[Npc]):
 		return name in cls.questToName
 
 	@classmethod
-	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True,
+	                    upload = False):
 		return super().compareVersions(v1, v2, ignored = {"head", "QuestName", "CustomType", "note", "NextIndex",
-		                                                  "dialogue", "NoSpaceIndex"})
+		                                                  "dialogue", "NoSpaceIndex"}, upload = upload)
 
 	@classmethod
 	def _ignore(cls, name: str, data: Npc) -> bool:

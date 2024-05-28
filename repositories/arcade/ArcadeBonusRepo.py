@@ -28,10 +28,12 @@ class ArcadeBonusRepo(Repository[ArcadeBonus]):
 			cls.addList(toAdd)
 
 	@classmethod
-	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True):
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True,
+	                    upload = False):
 		"""
 
 		Args:
+		 upload:
 		 useIgnore:
 			v1: The version that is "Old"
 			v2: The version that is "New"

@@ -1,23 +1,197 @@
 {
-    "new": {
-        "Spirit Sungmin": {
+    "new": {},
+    "changes": {
+        "Town Marble": {
             "quests": {
-                "Mind, Body, Soul, Tasks": {
-                    "Type": "ItemsAndSpaceRequired",
-                    "DialogueText": "Before I bestow upon you my tasks I must ensure your preparedness... <br> QUEST:Kills some mobs and gather monster parts to show you're ready for the World 6 tasks!",
-                    "Name": "Mind, Body, Soul, Tasks",
-                    "ConsumeItems": true,
-                    "InventorySpacesNeeded": 2,
-                    "Rewards": [{"item": "GemP30", "quantity": 2}, {"item": "Quest81", "quantity": 2}],
-                    "Difficulty": 5,
-                    "ItemReq": [
-                        {"item": "SpiA1", "quantity": 2500},
-                        {"item": "SpiA2", "quantity": 1000},
-                        {"item": "SpiA3", "quantity": 500}
+                "Visualizing the Sculpture Within...": {
+                    "DialogueText": [
+                        "Could you be the one to craft me into the formation I was destined to asssume? <br> QUEST:Sculpt this marble into a statue worthy of the gods.",
+                        "Could thou be the one to craft me into the formation I was destined to asssume? <br> QUEST:Buy the Sculpting Tools from the Town Shop!"
+                    ]
+                }
+            }
+        },
+        "Dog Bone (NPC)": {
+            "quests": {
+                "Why he Die???": {
+                    "DialogueText": [
+                        "Figure oOOoout hoOOow I died and I'll give yoOOOoou a key sOooo yoOooo can visit oooOOOur main installment behind that doooOOOor! QUEST:Defeat Board Monsters below until you find out how ghostie here died",
+                        "Figure oOOoout hoOOow I died and I'll give yoOOOoou a key sOooo yoOooo can gooOooo behind that doooOOOor! QUEST:Defeat Board Monsters below until you find the 3 Bones then return"
+                    ],
+                    "ItemReq": {"0": [{"item": "Quest12", "quantity": 10}, {"item": "Quest12", "quantity": 3}]}
+                }
+            }
+        },
+        "Postboy Pablob": {
+            "quests": {
+                "Signed, Sealed and Lost in the Post": {
+                    "DialogueText": [
+                        "Hmm I do have an opening for a new Order Manager but that's a very demanding job! Prove to me that you'd be up to the task and I'll hire you. <br> QUEST:Craft some Empty Boxes from Anvil Tab 2",
+                        "Hmm I do have an opening for a new Order Manager but that's a very demanding job! Prove to me that you'd be up to the task and I'll hire you. <br> QUEST:Craft 5 Empty Boxes from Anvil Tab 2"
+                    ]
+                }
+            }
+        },
+        "Promotheus": {
+            "quests": {
+                "I'm Ready, Promotion!": {
+                    "DialogueText": [
+                        "Hang on you aren't ready for a promotion. Come talk to me once you're level 10.",
+                        "Hang on are you actually ready for a promotion? Come talk to me once you're level 10."
+                    ]
+                }
+            }
+        },
+        "Glumlee": {
+            "quests": {
+                "Learning to Smelt": {
+                    "DialogueText": [
+                        "Now go to that forge and drag the ores into the 1st slot. Also drag the Oil Barrel I gave you into the 2nd slot. It'll speed things up. QUEST:Smelt a Copper Bar",
+                        "Now go to that forge and drag the ores into the 1st slot. Also drag the Oil Barrel I gave you into the 2nd slot. It'll speed things up. QUEST:Smelt a Copper Bar at the Forge"
+                    ],
+                    "Rewards": {}
+                },
+                "Learning to Swing": {
+                    "DialogueText": [
+                        "Go mine some ores and read this while you do. Mining Efficiency is your main stat here. It is boosted by your STR stat as well as your Mining Power which comes from pickaxes and other equipment! <br> QUEST:Mine 2 Copper Ore",
+                        "Go mine some ores and repeat after me. Mining Efficiency is boosted by STR and also Mining Power from pickaxes. <br> QUEST:Mine 2 Copper Ore."
+                    ]
+                },
+                "Literally Burning your Money": {
+                    "DialogueText": [
+                        "Final task now. Go to the forge and but some permanent upgrades using your coins!  <br> QUEST: Upgrade the forge 2 times",
+                        "Final task now. Go to the forge and buy some permanent upgrades using your coins!  <br> QUEST: Go to the Forge and buy 2 upgrades"
+                    ]
+                }
+            }
+        },
+        "Cowbo Jones": {
+            "quests": {
+                "Commence Criminal Crimes!": {
+                    "Rewards": {
+                        "1": [
+                            {"item": "Experience0", "quantity": 25000},
+                            {"item": "Experience0", "quantity": 100000}
+                        ]
+                    }
+                },
+                "Three Vials? Those are Rookie Numbers!": {
+                    "Rewards": {
+                        "0": [
+                            {"item": "Experience0", "quantity": 10000},
+                            {"item": "Experience0", "quantity": 50000}
+                        ]
+                    }
+                },
+                "The Grind Begins...?": {
+                    "Rewards": {
+                        "1": [
+                            {"item": "Experience0", "quantity": 9000},
+                            {"item": "Experience0", "quantity": 50000}
+                        ]
+                    }
+                },
+                "Bake Him Away, Toys": {
+                    "Rewards": {
+                        "1": [
+                            {"item": "Experience0", "quantity": 15000},
+                            {"item": "Experience0", "quantity": 55000}
+                        ]
+                    }
+                },
+                "No Country for One Character": {
+                    "Rewards": {
+                        "1": [
+                            {"item": "Experience0", "quantity": 17500},
+                            {"item": "Experience0", "quantity": 70000}
+                        ]
+                    }
+                },
+                "The Notorious B.O.B": {
+                    "Rewards": {
+                        "2": [
+                            {"item": "Experience0", "quantity": 10000},
+                            {"item": "Experience0", "quantity": 90000}
+                        ]
+                    }
+                },
+                "Say Goodbye to your Dubloon!": {
+                    "Rewards": {
+                        "2": [
+                            {"item": "Experience0", "quantity": 3500},
+                            {"item": "Experience0", "quantity": 80000}
+                        ]
+                    }
+                },
+                "The Hatless Howerhouse!": {
+                    "Rewards": {
+                        "1": [
+                            {"item": "Experience0", "quantity": 15000},
+                            {"item": "Experience0", "quantity": 65000}
+                        ]
+                    }
+                }
+            }
+        },
+        "Walupiggy": {
+            "quests": {
+                "Treasure Hunt 1": {
+                    "DialogueText": [
+                        "WAHAHAHAHA! <br> QUEST:Complete the 1st Treasure Hunt! You need to go to the Legends of IdleOn youtube channel to find the clues to follow to complete this!",
+                        "WAHAHAHAHA! <br> QUEST:Complete the 1st Treasure Hunt! You need to go to the official IdleOn youtube channel to find the clues to follow to complete this!"
+                    ]
+                },
+                "Treasure Hunt 2": {
+                    "DialogueText": [
+                        "WAHAHAHAHA! <br> QUEST:Complete the 2nd Treasure Hunt! Clues are at the Legends of Idleon youtube channel remember!",
+                        "WAHAHAHAHA! <br> QUEST:Complete the 2nd Treasure Hunt! Clues are at the official IdleOn youtube channel remember!"
+                    ]
+                },
+                "Treasure Hunt 3": {
+                    "DialogueText": [
+                        "WAHAHAHAHA! <br> QUEST:Complete the 3rd Treasure Hunt! Clues are on the Legends of Idleon youtube channel!",
+                        "WAHAHAHAHA! <br> QUEST:Complete the 3rd Treasure Hunt! Clues are on the official IdleOn youtube channel!"
+                    ]
+                }
+            }
+        },
+        "Scripticus": {
+            "quests": {
+                "Stiltzcho, the Leaf Scout": {
+                    "DialogueText": [
+                        "Get past the Frogs and Beans and talk to the Leaf NPC they might know who stole the Town Gem! <br> QUEST:Get a scouting report from Stiltzcho the Leaf NPC in the slime map after beans!",
+                        "Maybe he knows who stole the Town's Crystal? <br> QUEST:Complete Stiltzcho's Quests. Or just ignore him and keep going to the boss room!"
+                    ],
+                    "Rewards": {}
+                },
+                "The Smithing Grind": {},
+                "The Choice is Yours!": {
+                    "DialogueText": [
+                        "I'll add a Hint to your codex if you want more info. Now go spend those pts! <br> MAIN QUEST:Spend 5 Talent Points",
+                        "I'll add a Hint to your codex if you want more info. Now go spend those points! <br> MAIN QUEST:Spend 5 Talent Points"
+                    ]
+                },
+                "Certified Swinger, of Pickaxes of course!": {
+                    "DialogueText": [
+                        "You need some ores to make better equiment...  <br> MAIN QUEST:Go through the LEFT portal to start mining and do Glumlee's quests to get the Certificate!",
+                        "You need more DEFENCE which you can get from crafting armor with ores!  <br> MAIN QUEST:Go to the Left portal to start mining and do Glumlee's 3 quests!"
+                    ]
+                },
+                "Warrior, Archer or Mage?": {
+                    "DialogueText": [
+                        "Wait wait you're still a BEGINNER??? <br> MAIN QUEST:Select a new class from Promotheus. He's in the Bean map it's after Frogs...",
+                        "Wait forget the errands... you're still a BEGINNER??? <br> MAIN QUEST:Select a new class from Promotheus. He's in the Bean map after Frogs!"
+                    ],
+                    "InventorySpacesNeeded": [1, 2],
+                    "Rewards": {"1": [" ", {"item": "MaxCapBagM3", "quantity": 1}]}
+                },
+                "Gear Up, Gamer!": {
+                    "DialogueText": [
+                        "Let's get you a better weapon those bare fists can only slap so hard! Try making some boxing gloves over at the anvil!  <br> MAIN QUEST:Buy some Tape from the Shop and then make some gloves",
+                        "Let's craft a weapon those bare fists can only slap so hard!  <br> MAIN QUEST:Buy some Tape from the Shop and then make some gloves at the Anvil"
                     ]
                 }
             }
         }
-    },
-    "changes": {}
+    }
 }

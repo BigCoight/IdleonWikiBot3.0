@@ -9817,10 +9817,6 @@ export const initSourceRepo = () => {
                     <SourceModel>{
                         "wikiName": "[[Vendors#Blunder Hills|Blunder Hills Vendors]]",
                         "txtName": "Blunder Hills Vendor"
-                    },
-                    <SourceModel>{
-                        "wikiName": "[[Glumlee#Learning to Smelt|Learning to Smelt]]",
-                        "txtName": "Glumlee: Learning to Smelt"
                     }
                 ],
                 "recipeFrom": [],
@@ -11896,6 +11892,16 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
+        new SourcesBase("MaxCapBagM3", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{
+                        "wikiName": "[[Scripticus#Warrior, Archer or Mage?|Warrior, Archer or Mage?]]",
+                        "txtName": "Scripticus: Warrior, Archer or Mage?"
+                    }
+                ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
         new SourcesBase("Quest5", <SourcesModel>{
                 "sources": [
                     <SourceModel>{
@@ -11912,16 +11918,6 @@ export const initSourceRepo = () => {
                 ]
             }),
         new SourcesBase("InvBag3", <SourcesModel>{
-                "sources": [
-                    <SourceModel>{
-                        "wikiName": "[[Scripticus#Stiltzcho, the Leaf Scout|Stiltzcho, the Leaf Scout]]",
-                        "txtName": "Scripticus: Stiltzcho, the Leaf Scout"
-                    }
-                ],
-                "recipeFrom": [],
-                "questAss": []
-            }),
-        new SourcesBase("MaxCapBagM3", <SourcesModel>{
                 "sources": [
                     <SourceModel>{
                         "wikiName": "[[Scripticus#Stiltzcho, the Leaf Scout|Stiltzcho, the Leaf Scout]]",

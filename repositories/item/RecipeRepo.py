@@ -143,8 +143,9 @@ class RecipeRepo(Repository[Recipe]):
 		return {"recipe"}
 
 	@classmethod
-	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True):
-		return super().compareVersions(v1, v2, {"detailedRecipe", "recipeFrom", 'intID'})
+	def compareVersions(cls, v1: IdleonReader, v2: IdleonReader, ignored: Set[str] = set(), useIgnore = True,
+	                    upload = False):
+		return super().compareVersions(v1, v2, {"detailedRecipe", "recipeFrom", 'intID'}, upload = upload)
 
 	@classmethod
 	def _getOldData(cls, item: str, data: Any):

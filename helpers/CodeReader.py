@@ -203,4 +203,6 @@ class IdleonReader:
 		# Tomb
 		self.codeReader.addSection("Tome = function ()", "TombInfo")
 
+		self.codeReader.addSection("Owlz = function ()", "Owlz")
+
 		self.codeReader.readCode()

@@ -1,90 +1,24 @@
 {
     "new": {
-        "EquipmentCape15": {
-            "displayName": "Giant Nightshade",
-            "sellPrice": 1,
-            "Type": "Cape",
-            "lvReqToCraft": 55,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 5,
-            "STR": 2,
-            "AGI": 2,
-            "WIS": 2,
-            "LUK": 0,
-            "Defence": 0,
-            "miscUp1": "15% Xp From Monsters",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 0,
-            "Skill": "",
-            "Skill_Power": 0
-        },
-        "EquipmentHats109": {
-            "displayName": "Husky Hat",
-            "sellPrice": 1,
-            "Type": "Premium Helmet",
-            "lvReqToCraft": 5,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 1,
-            "AGI": 1,
-            "WIS": 1,
-            "LUK": 0,
-            "Defence": 0,
-            "miscUp1": "",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 5,
-            "Skill": "",
-            "Skill_Power": 0
-        },
-        "EquipmentNametag11": {
-            "displayName": "Nightshade Nametag",
+        "EquipmentNametag12": {
+            "displayName": "Megafeather Nametag",
             "sellPrice": 1,
             "Type": "Nametag",
             "lvReqToCraft": 55,
             "lvReqToEquip": 1,
             "Class": "All",
-            "Weapon_Power": 2,
-            "STR": 0,
-            "AGI": 0,
-            "WIS": 0,
-            "LUK": 0,
-            "Defence": 1,
-            "miscUp1": "4% All Afk Gain",
+            "Weapon_Power": 5,
+            "STR": 10,
+            "AGI": 10,
+            "WIS": 10,
+            "LUK": 10,
+            "Defence": 0,
+            "miscUp1": "20% Damage Multi",
             "miscUp2": "00",
             "Upgrade_Slots_Left": 0,
             "Skill": "",
             "Skill_Power": 0
         }
     },
-    "changes": {
-        "EquipmentHats18": {"Defence": [9, 10]},
-        "StampA7": {"stampData": {"startV": [50, 15]}},
-        "InvBag103": {"level": [20, 1]},
-        "MaxCapBagM3": {"level": [20, 13]},
-        "InvBag109": {"level": [65, 1]},
-        "StoneA2": {
-            "description": [
-                "Drag onto any Armor to apply. +2 Defence, +2 Random Stat. Success Chance; 80% Uses up 1 slots only if Successful ",
-                "Drag onto any Armor to apply. +3 Defence, +2 Random Stat. Success Chance; 80% Uses up 1 slots only if Successful "
-            ]
-        },
-        "EquipmentHats17": {"Defence": [5, 7]},
-        "StampA3": {"sellPrice": [2500, 1500], "stampData": {"startV": [25, 12]}},
-        "StoneA3": {
-            "description": [
-                "Drag onto any Armor to apply. +3 Defence, +4 Random Stat. Success Chance; 50% Uses up 1 slots only if Successful ",
-                "Drag onto any Armor to apply. +4 Defence, +4 Random Stat. Success Chance; 50% Uses up 1 slots only if Successful "
-            ]
-        },
-        "StampA5": {"sellPrice": [250, 100]},
-        "StampA1": {"stampData": {"startV": [20, 4]}},
-        "StampA6": {"sellPrice": [800, 400], "stampData": {"startV": [50, 15]}},
-        "EquipmentShirts23": {"Class": ["Archer", "All"]},
-        "EquipmentHats1": {"Defence": [2, 3]},
-        "EquipmentHats15": {"Defence": [4, 5]},
-        "SmithingHammerChisel": {"sellPrice": [800, 400]},
-        "StampA2": {"stampData": {"startV": [25, 10]}}
-    }
+    "changes": {}
 }

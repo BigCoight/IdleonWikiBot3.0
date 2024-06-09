@@ -260,9 +260,9 @@ export const initMapDataRepo = () => {
                 "portalRequirements": [0]
             }),
         new MapDataBase(42, <MapDataModel>{
-                "enemy": "Z",
+                "enemy": "Nothing",
                 "world": "Blunder Hills",
-                "map": <MapNameModel>{"intName": "Z", "name": "Z", "id": 42},
+                "map": <MapNameModel>{"intName": "GrasslandsG", "name": "Grand Owl Perch", "id": 42},
                 "portalRequirements": [0]
             }),
         new MapDataBase(43, <MapDataModel>{

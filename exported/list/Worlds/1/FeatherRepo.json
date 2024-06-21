@@ -5,7 +5,8 @@
         "x2": 1.1,
         "x3": 100,
         "bonus1": "{/sec",
-        "bonus2": "Generates +1 feather per second"
+        "bonus2": "Generates +1 feather per second",
+        "x4": 0
     },
     {
         "name": "Bonuses of Orion",
@@ -13,7 +14,8 @@
         "x2": 25,
         "x3": 1000,
         "bonus1": "+{% Class XP",
-        "bonus2": "Gain a permanent bonus for outside this map! This upgrade never resets..."
+        "bonus2": "Gain a permanent bonus for outside this map! This upgrade never resets...",
+        "x4": 0
     },
     {
         "name": "Feather Multiplier",
@@ -21,7 +23,8 @@
         "x2": 1.11,
         "x3": 2500,
         "bonus1": "+{ Base DMG",
-        "bonus2": "Boosts feather generation by +5%"
+        "bonus2": "Boosts feather generation by +5%",
+        "x4": 0
     },
     {
         "name": "Feather Cheapener",
@@ -29,7 +32,8 @@
         "x2": 1.16,
         "x3": 30000,
         "bonus1": "+{% Total DMG",
-        "bonus2": "All feather upgrades are 10% cheaper"
+        "bonus2": "All feather upgrades are 10% cheaper",
+        "x4": 0
     },
     {
         "name": "Feather Restart",
@@ -37,7 +41,8 @@
         "x2": 14,
         "x3": 750000,
         "bonus1": "+{% Skill XP",
-        "bonus2": "Reset almost all Upgrades and Feathers. Generate {x Feathers"
+        "bonus2": "Reset almost all Upgrades and Feathers. Generate {x Feathers",
+        "x4": 0
     },
     {
         "name": "Super Feather Production",
@@ -45,7 +50,8 @@
         "x2": 1.12,
         "x3": 1e+07,
         "bonus1": "+{% Drop Rate",
-        "bonus2": "Generates +5 feathers per second"
+        "bonus2": "Generates +5 feathers per second",
+        "x4": 0
     },
     {
         "name": "Shiny Feathers",
@@ -53,7 +59,8 @@
         "x2": 1.4,
         "x3": 2.5e+08,
         "bonus1": "+{ All Stat",
-        "bonus2": "Rare chance for a Shiny Feather, each one gives +1% feather generation"
+        "bonus2": "Rare chance for a Shiny Feather, each one gives +1% feather generation",
+        "x4": 0
     },
     {
         "name": "Super Feather Cheapener",
@@ -61,7 +68,8 @@
         "x2": 1.27,
         "x3": 5e+09,
         "bonus1": "{",
-        "bonus2": "All feather upgrades are 20% cheaper"
+        "bonus2": "All feather upgrades are 20% cheaper",
+        "x4": 0
     },
     {
         "name": "The Great Mega Reset",
@@ -69,6 +77,187 @@
         "x2": 20,
         "x3": 1e+11,
         "bonus1": "Nah",
-        "bonus2": "Reset almost everything. Gain a permanent Megafeather"
+        "bonus2": "Reset almost everything. Gain a permanent Megafeather",
+        "x4": 0
+    },
+    {
+        "name": "tasty Fishbait",
+        "x1": 4,
+        "x2": 1.06,
+        "x3": 100,
+        "bonus1": "{/minute",
+        "bonus2": "Catch { Fish every 30 seconds",
+        "x4": 10
+    },
+    {
+        "name": "Quick Reeling",
+        "x1": 150,
+        "x2": 1.2,
+        "x3": 500,
+        "bonus1": "+{% Fish Efficiency",
+        "bonus2": "Bluefin fishing speed is ]x Faster",
+        "x4": 5
+    },
+    {
+        "name": "Shiny Lure",
+        "x1": 500,
+        "x2": 3.5,
+        "x3": 2500,
+        "bonus1": "+{ Defence",
+        "bonus2": "Catch Shiny Fish at a rate of {%/hr",
+        "x4": 50
+    },
+    {
+        "name": "Bonuses from Poppy",
+        "x1": 10000,
+        "x2": 3,
+        "x3": 30000,
+        "bonus1": "+{% Fishing XP",
+        "bonus2": "Gain a permanent bonus for outside this map!",
+        "x4": 10
+    },
+    {
+        "name": "fishy discount",
+        "x1": 30000,
+        "x2": 1.13,
+        "x3": 250000,
+        "bonus1": "+{% Accuracy",
+        "bonus2": "All fish upgrades are ~% cheaper",
+        "x4": 10
+    },
+    {
+        "name": "Juicy Worm",
+        "x1": 150000,
+        "x2": 1.07,
+        "x3": 3e+06,
+        "bonus1": "+{% Total DMG",
+        "bonus2": "Catch +{ more Bluefin Fish each time",
+        "x4": 50
+    },
+    {
+        "name": "Fisheroo Reset",
+        "x1": 4e+07,
+        "x2": 20,
+        "x3": 2.5e+07,
+        "bonus1": "+{% AFK Gains",
+        "bonus2": "Reset all upgrades and fish for bonuses!",
+        "x4": 1
+    },
+    {
+        "name": "Fishing Buddy",
+        "x1": 1.2e+09,
+        "x2": 7.5,
+        "x3": 6e+08,
+        "bonus1": "+{% Cash",
+        "bonus2": "Recruit a new Bluefin fisherman!",
+        "x4": 1
+    },
+    {
+        "name": "Lightning Quickness",
+        "x1": 6e+08,
+        "x2": 1.12,
+        "x3": 4e+09,
+        "bonus1": "Nah",
+        "bonus2": "Shiny fishing speed is ]x faster",
+        "x4": 5
+    },
+    {
+        "name": "Fisheroo Investing",
+        "x1": 7.5e+09,
+        "x2": 1.7,
+        "x3": 1.4e+10,
+        "bonus1": "Nah",
+        "bonus2": "Next Fisheroo Reset gives +{ more pts!",
+        "x4": 1
+    },
+    {
+        "name": "Mutlihook Fishing",
+        "x1": 2e+10,
+        "x2": 1.12,
+        "x3": 8e+10,
+        "bonus1": "Nah",
+        "bonus2": "Catch +{ more Bluefin Fish each time",
+        "x4": 200
+    },
+    {
+        "name": "Greatest Catch",
+        "x1": 1.5e+12,
+        "x2": 15,
+        "x3": 4e+11,
+        "bonus1": "Nah",
+        "bonus2": "Reset it all. Gain a permanent Megafish",
+        "x4": 5
+    },
+    {
+        "name": "Super Yummy bait",
+        "x1": 1,
+        "x2": 1.15,
+        "x3": -1,
+        "bonus1": "+{% Accuracy",
+        "bonus2": "Catch +{ more Bluefin Fish each time",
+        "x4": 100
+    },
+    {
+        "name": "Bonus Catching",
+        "x1": 1,
+        "x2": 1.1,
+        "x3": -1,
+        "bonus1": "+{% Total DMG",
+        "bonus2": "+?% chance for extra shiny catches",
+        "x4": 700
+    },
+    {
+        "name": "Bluefin Frenzy",
+        "x1": 1,
+        "x2": 1.2,
+        "x3": -1,
+        "bonus1": "+{% AFK Gains",
+        "bonus2": "Boosts the amount of Bluefin Fish caught by +{%",
+        "x4": 8
+    },
+    {
+        "name": "Fishy Reductions",
+        "x1": 4,
+        "x2": 1.15,
+        "x3": -1,
+        "bonus1": "+{% Cash",
+        "bonus2": "All bluefin fish upgrades are ~% cheaper",
+        "x4": 15
+    },
+    {
+        "name": "Super Tarbait",
+        "x1": 2,
+        "x2": 1.15,
+        "x3": -1,
+        "bonus1": "Nah",
+        "bonus2": "Catch Tartar Fish ]x faster",
+        "x4": 5
+    },
+    {
+        "name": "Tarrific Resets",
+        "x1": 3,
+        "x2": 2,
+        "x3": -1,
+        "bonus1": "Nah",
+        "bonus2": "Next Fisheroo Reset gives +{ more pts to spend!",
+        "x4": 1
+    },
+    {
+        "name": "Mongo Multipliers",
+        "x1": 2,
+        "x2": 1.1,
+        "x3": -1,
+        "bonus1": "Nah",
+        "bonus2": "Multipliers in Shiny Fishing show up ?% more often!",
+        "x4": 30
+    },
+    {
+        "name": "King Worm",
+        "x1": 5,
+        "x2": 1.2,
+        "x3": -1,
+        "bonus1": "Nah",
+        "bonus2": "Catch +{ more Bluefin Fish every 100 seconds",
+        "x4": 1000
     }
 ]

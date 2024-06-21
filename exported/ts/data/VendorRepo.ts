@@ -432,6 +432,13 @@ export const initVendorRepo = () => {
                         "quantity": 2,
                         "no": 20,
                         "purchasePrice": 800
+                    },
+                    <VendorModel>{
+                        "vendor": "YumYum Grotto",
+                        "item": "Quest87",
+                        "quantity": 1,
+                        "no": 21,
+                        "purchasePrice": 40000
                     }
                 ]
             }),

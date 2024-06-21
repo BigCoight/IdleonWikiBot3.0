@@ -7725,6 +7725,27 @@ export const initSpecificItemRepo = () => {
                 "Skill": "",
                 "Skill_Power": 0
             }),
+        new BaseItemBase("EquipmentCape16", <ArmourItemModel>{
+                "internalName": "EquipmentCape16",
+                "displayName": "Timeless Watch",
+                "sellPrice": 1,
+                "typeGen": TypeGenEnum.aCape,
+                "Type": "Cape",
+                "lvReqToCraft": 55,
+                "lvReqToEquip": 1,
+                "Class": ClassTypeEnum.All,
+                "Weapon_Power": 20,
+                "STR": 50,
+                "AGI": 50,
+                "WIS": 50,
+                "LUK": 50,
+                "Defence": 0,
+                "miscUp1": "40% All Afk Gain",
+                "miscUp2": "00",
+                "Upgrade_Slots_Left": 0,
+                "Skill": "",
+                "Skill_Power": 0
+            }),
         new BaseItemBase("StampA1", <StampItemModel>{
                 "internalName": "StampA1",
                 "displayName": "Sword Stamp",
@@ -18298,6 +18319,27 @@ export const initSpecificItemRepo = () => {
                 "Skill": "",
                 "Skill_Power": 0
             }),
+        new BaseItemBase("EquipmentNametag13", <ArmourItemModel>{
+                "internalName": "EquipmentNametag13",
+                "displayName": "Timeless Nametag",
+                "sellPrice": 1,
+                "typeGen": TypeGenEnum.aNametag,
+                "Type": "Nametag",
+                "lvReqToCraft": 55,
+                "lvReqToEquip": 1,
+                "Class": ClassTypeEnum.All,
+                "Weapon_Power": 5,
+                "STR": 10,
+                "AGI": 10,
+                "WIS": 10,
+                "LUK": 10,
+                "Defence": 0,
+                "miscUp1": "40% Damage Multi",
+                "miscUp2": "00",
+                "Upgrade_Slots_Left": 0,
+                "Skill": "",
+                "Skill_Power": 0
+            }),
         new BaseItemBase("EquipmentKeychain0", <KeychainItemModel>{
                 "internalName": "EquipmentKeychain0",
                 "displayName": "Simple Key Chain",
@@ -22595,6 +22637,14 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.dQuest,
                 "Type": "Usable",
                 "description": "Summons the Hoopulyte who will challenge you to a game of Hoops, as long as you haven't already seen them today. "
+            }),
+        new BaseItemBase("Quest87", <DescItemModel>{
+                "internalName": "Quest87",
+                "displayName": "Secret Map",
+                "sellPrice": 10000,
+                "typeGen": TypeGenEnum.dQuest,
+                "Type": "Usable",
+                "description": "Hold down on this item while standing in the secret location to teleport to The Oasis... "
             }),
         new BaseItemBase("EquipmentSmithingTabs2", <DescItemModel>{
                 "internalName": "EquipmentSmithingTabs2",

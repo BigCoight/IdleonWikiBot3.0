@@ -1,3 +1,5 @@
+from typing import Optional
+
 from definitions.master.IdleonModel import IdleonModel
 from helpers.CustomTypes import Numeric
 
@@ -9,3 +11,4 @@ class Feather(IdleonModel):
 	x3: Numeric
 	bonus1: str
 	bonus2: str
+	x4: Optional[Numeric] = None

@@ -20942,13 +20942,7 @@
             "Skill": "",
             "Skill_Power": 0
         },
-        "sources": {
-            "sources": [
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-            ],
-            "recipeFrom": [],
-            "questAss": []
-        },
+        "sources": null,
         "notes": null,
         "recipe": null,
         "vendors": null,
@@ -22109,6 +22103,37 @@
         "detDrops": null,
         "slabSort": null,
         "itemSet": "Giant"
+    },
+    "EquipmentCape16": {
+        "item": {
+            "internalName": "EquipmentCape16",
+            "displayName": "Timeless Watch",
+            "sellPrice": 1,
+            "typeGen": "aCape",
+            "Type": "Cape",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 20,
+            "STR": 50,
+            "AGI": 50,
+            "WIS": 50,
+            "LUK": 50,
+            "Defence": 0,
+            "miscUp1": "40% All Afk Gain",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null,
+        "slabSort": null,
+        "itemSet": null
     },
     "StampA1": {
         "item": {
@@ -40783,13 +40808,7 @@
             "Type": "Obol Stack",
             "description": "Hold down and 1 square hyper obol will drop at your feet! YOU MUST BE IN WORLD 2 TOWN TO USE THIS! This way you can trash other obols incase you're out of space! "
         },
-        "sources": {
-            "sources": [
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-            ],
-            "recipeFrom": [],
-            "questAss": []
-        },
+        "sources": null,
         "notes": null,
         "recipe": null,
         "vendors": null,
@@ -52282,13 +52301,7 @@
             "Skill": "",
             "Skill_Power": 0
         },
-        "sources": {
-            "sources": [
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-            ],
-            "recipeFrom": [],
-            "questAss": []
-        },
+        "sources": null,
         "notes": null,
         "recipe": null,
         "vendors": null,
@@ -52576,19 +52589,44 @@
             "Skill": "",
             "Skill_Power": 0
         },
-        "sources": {
-            "sources": [
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-            ],
-            "recipeFrom": [],
-            "questAss": []
-        },
+        "sources": null,
         "notes": null,
         "recipe": null,
         "vendors": null,
         "anvilProduction": null,
         "detDrops": null,
         "slabSort": {"item": {"item": "EquipmentNametag12"}, "order": 584},
+        "itemSet": null
+    },
+    "EquipmentNametag13": {
+        "item": {
+            "internalName": "EquipmentNametag13",
+            "displayName": "Timeless Nametag",
+            "sellPrice": 1,
+            "typeGen": "aNametag",
+            "Type": "Nametag",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 5,
+            "STR": 10,
+            "AGI": 10,
+            "WIS": 10,
+            "LUK": 10,
+            "Defence": 0,
+            "miscUp1": "40% Damage Multi",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "sources": null,
+        "notes": null,
+        "recipe": null,
+        "vendors": null,
+        "anvilProduction": null,
+        "detDrops": null,
+        "slabSort": null,
         "itemSet": null
     },
     "EquipmentKeychain0": {
@@ -53396,7 +53434,6 @@
         },
         "sources": {
             "sources": [
-                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
                 {"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
                 {
                     "wikiName": "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
@@ -64613,7 +64650,13 @@
             "Type": "Usable",
             "description": "Hold down on this item to change elite class within your class. Divine Knight to Blood Berserker, Beast Master to Siege Breaker, etc. "
         },
-        "sources": null,
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
         "notes": null,
         "recipe": null,
         "vendors": null,
@@ -67668,7 +67711,13 @@
             "Type": "Usable",
             "description": "Hold down to fast forward a day, restocking shops and triggering various daily rewards and systems. "
         },
-        "sources": null,
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
         "notes": "<table class='wikitable' style='max-width:30%'>$$NEWLINE$$<caption>Things Triggered by Golden Pocketwatch$$NEWLINE$$<tr><td>+1 Day to [[Sailing#Artifacts|Gold Relic Artifact]] and Minibosses Time to respawn ([[Dilapidated Slush]], [[Mutated Mush]])</td></tr>$$NEWLINE$$<tr><td>Trapper Drone Traps ''(If they're ready to collect)'' Auto-collect and Gilded Stamp from [[The Rift#Rift Bonuses|The Rift's Bonuses]]</td></tr>$$NEWLINE$$<tr><td>[[Atom Collider|Atom Collider's Boron and Hydrogen Atoms Bonuses]] Reset</td></tr>$$NEWLINE$$<tr><td>[[Misc Items|Event's Daily Boxes]] Cap ''(If ongoing)'' Reset</td></tr>$$NEWLINE$$<tr><td>[[Guilds#Daily Guild Tasks|Daily Guild Tasks]] Reset</td></tr>$$NEWLINE$$<tr><td>[[Dr Defecaus]] and [[Secrets#The Crypt|Boops]] Daily Respawn Reset</td></tr>$$NEWLINE$$<tr><td>Guaranteed Crystal Spawns ([[Alchemy#Sigils|Shiny Beacon Sigil]], [[Achievements|Smolderin Plateau's The Plateauourist Achievement]], [[Tasks/Hyperion Nebula#Merit Shop|Hyperion Nebula's Merit Shop Upgrade]])</td></tr>$$NEWLINE$$<tr><td>[[Island Expeditions]]' Daily Message Bottles, Trash from Trash Island and Crystal Mobs Spawn from Crystal Island</td></tr>$$NEWLINE$$<tr><td>[[Laboratory#Jewels|Sapphire Pyramite Jewel's Kitchen Upgrades]] and [[Laboratory#Nodes|No Bubble Left Behind Node]] Reset</td></tr>$$NEWLINE$$<tr><td>[[Alchemy/Vials|Vial Discover Attempts]] Reset</td></tr>$$NEWLINE$$<tr><td>Daily Reclaimable Quests, such as [[Picnic Stowaway]]'s</td></tr>$$NEWLINE$$<tr><td>[[Random Events]] Daily Reset</td></tr>$$NEWLINE$$<tr><td>[[Weekly Battles]] Attempt Reset, if available</td></tr>$$NEWLINE$$<tr><td>[[Sailing#Captains|Sailing Captains]] Restock</td></tr>$$NEWLINE$$<tr><td>[[Vendors]] Items Restock</td></tr>$$NEWLINE$$<tr><td>[[Post Office]] Orders Reset</td></tr>$$NEWLINE$$<tr><td>[[Consumables#Account Consumables|Daily Boss Keys and Colosseum Tickets]] from NPCs</td></tr>$$NEWLINE$$<tr><td>[[Gaming#Imports|Gaming Import's Immortal Snail]] +Daily Mail</td></tr>$$NEWLINE$$<tr><td>[[Breeding|Breeding's 100 Spice Claims]] from Territories Reset</td></tr>$$NEWLINE$$<tr><td>[[Secrets#Spikes_Minigame|Spikes Minigame]] Reset</td></tr>$$NEWLINE$$</table>$$NEWLINE$$<sup>Thanks to Francis",
         "recipe": null,
         "vendors": null,
@@ -67980,6 +68029,39 @@
             "quantity": 1,
             "no": 23,
             "purchasePrice": 400
+        }],
+        "anvilProduction": null,
+        "detDrops": null,
+        "slabSort": null,
+        "itemSet": null
+    },
+    "Quest87": {
+        "item": {
+            "internalName": "Quest87",
+            "displayName": "Secret Map",
+            "sellPrice": 10000,
+            "typeGen": "dQuest",
+            "Type": "Usable",
+            "description": "Hold down on this item while standing in the secret location to teleport to The Oasis... "
+        },
+        "sources": {
+            "sources": [
+                {
+                    "wikiName": "[[Vendors#YumYum Grotto|YumYum Grotto Vendors]]",
+                    "txtName": "YumYum Grotto Vendor"
+                }
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
+        "notes": null,
+        "recipe": null,
+        "vendors": [{
+            "vendor": "YumYum Grotto",
+            "item": "Quest87",
+            "quantity": 1,
+            "no": 21,
+            "purchasePrice": 40000
         }],
         "anvilProduction": null,
         "detDrops": null,
@@ -75558,7 +75640,13 @@
             "Type": "Obol Stack",
             "description": "Hold down and 1 hyper obol will drop at your feet! YOU MUST BE IN WORLD 2 TOWN TO USE THIS! This way you can trash other obols incase you're out of space! "
         },
-        "sources": null,
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
         "notes": "{{Sources/datarow|Item=Hyper DMG Obol}}{{Sources/datarow|Item=Hyper Pyre Obol}}{{Sources/datarow|Item=Hyper Six Obol}}{{Sources/datarow|Item=Hyper Skull Obol}}",
         "recipe": null,
         "vendors": null,
@@ -76483,7 +76571,13 @@
             "Skill": "",
             "Skill_Power": 0
         },
-        "sources": null,
+        "sources": {
+            "sources": [
+                {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            ],
+            "recipeFrom": [],
+            "questAss": []
+        },
         "notes": null,
         "recipe": null,
         "vendors": null,

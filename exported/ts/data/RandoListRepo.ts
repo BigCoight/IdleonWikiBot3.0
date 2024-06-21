@@ -1875,7 +1875,7 @@ export const initRandoListRepo = () => {
             }),
         new RandoListBase(61, <RandoListModel>{
                 "elements": [
-                    "Orion_the_Great_Owl_v2.1;NEW_UPDATE_PATCH_NOTES_@_*Orion_the_Great_Horned_Owl_and_his_Feather_Enterprise_has_been_added!_Find_him_in_World_1,_follow_the_Hoots_from_town_to_his_birch_tree_abode!_@_*Generate_feathers_and_spend_them_on_upgrades_to_the_Feather_Enterprise,_and_bonuses_outside_of_feathers_like_Class_EXP,_Drop_Rate,_Damage,_and_more!_@_*New_Limited_Time_Gemshop_items_added,_go_check_them_out!_One_of_them_is_FREE,_just_like_always!_@_*Get_crackin'_on_those_Feathers,_you'll_need_a_LOT_to_earn_your_first_megafeather!_Have_fun!;*Le",
+                    "Poppy's_Fisheroo_v2.1;NEW_UPDATE_PATCH_NOTES_@_*Poppy_the_Kangaroo_Mouse_and_her_Fisheroo_Pool_has_been_added!_Find_her_in_World_2_using_the_new_map,_buy_it_in_the_Town_Shop!_@_*Catch_fish_and_spend_them_on_upgrades_to_help_catch_even_more_fish_for_Poppy,_and_bonuses_outside_of_fish_like_Fish_EXP,_Fish_Efficiency,_AFK_Gains,_Cash_from_Mobs,_and_more!_@_*New_Limited_Time_Gemshop_items_added,_go_check_them_out!_One_of_them_is_FREE,_which_is_like_honestly_crazy_is_this_the_first_time_there's_been_a_freebie_in_the_gemshop?!_@_*MEGAFISH_@_*Next_update_will_not_be_another_idler_type_game._Cry_tear_of_sadness_or_joy,_or_don't_cry_at_all,_big_girls_don't_cry.;*Le",
                     "Monde",
                     "6",
                     "est",

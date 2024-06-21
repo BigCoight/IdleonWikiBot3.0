@@ -10252,6 +10252,16 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
+        new SourcesBase("Quest87", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{
+                        "wikiName": "[[Vendors#YumYum Grotto|YumYum Grotto Vendors]]",
+                        "txtName": "YumYum Grotto Vendor"
+                    }
+                ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
         new SourcesBase("Line1", <SourcesModel>{
                 "sources": [
                     <SourceModel>{
@@ -14144,35 +14154,23 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("EquipmentNametag12", <SourcesModel>{
+        new SourcesBase("EquipmentHats82", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("GemP35", <SourcesModel>{
+        new SourcesBase("Quest77", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("EquipmentRings31", <SourcesModel>{
+        new SourcesBase("ClassSwapB", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("EquipmentNametag3", <SourcesModel>{
+        new SourcesBase("GemP25", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
-                "recipeFrom": [],
-                "questAss": []
-            }),
-        new SourcesBase("EquipmentKeychain20", <SourcesModel>{
-                "sources": [
-                    <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
-                    <SourceModel>{"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
-                    <SourceModel>{
-                        "wikiName": "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
-                        "txtName": "Dungeons: Flurbo Shop"
-                    }
-                ],
                 "recipeFrom": [],
                 "questAss": []
             }),
@@ -14886,6 +14884,17 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("EquipmentKeychain19", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
+                    <SourceModel>{
+                        "wikiName": "[[Dungeons#Loot Rolls|Dungeon Loot Rolls]]",
+                        "txtName": "Dungeons: Flurbo Shop"
+                    }
+                ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("EquipmentKeychain20", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[Dungeons#Flurbo Shop|Flurbo Shop]]", "txtName": "Dungeons: Flurbo Shop"},
                     <SourceModel>{

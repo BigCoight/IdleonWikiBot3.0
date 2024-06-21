@@ -79,7 +79,7 @@ export const initMapPortalsRepo = () => {
         new MapInfoBase(70, <MapInfoModel>{"id": 70, "portalRequirements": [0], "maxOnScreen": 1}),
         new MapInfoBase(71, <MapInfoModel>{"id": 71, "portalRequirements": [0], "maxOnScreen": 1}),
         new MapInfoBase(72, <MapInfoModel>{"id": 72, "portalRequirements": [0], "maxOnScreen": 1}),
-        new MapInfoBase(73, <MapInfoModel>{"id": 73, "portalRequirements": [0], "maxOnScreen": 0}),
+        new MapInfoBase(73, <MapInfoModel>{"id": 73, "portalRequirements": [0], "maxOnScreen": 1}),
         new MapInfoBase(74, <MapInfoModel>{"id": 74, "portalRequirements": [0], "maxOnScreen": 0}),
         new MapInfoBase(75, <MapInfoModel>{"id": 75, "portalRequirements": [0], "maxOnScreen": 0}),
         new MapInfoBase(76, <MapInfoModel>{"id": 76, "portalRequirements": [0], "maxOnScreen": 0}),

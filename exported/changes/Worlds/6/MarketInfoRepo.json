@@ -1,1 +1,29 @@
-{"new": {}, "changes": {}}
+{
+    "new": {
+        "RANK BOOST": {
+            "name": "RANK BOOST",
+            "bonus": "Plots earn +{% more Rank XP when a crop is collected",
+            "cropId": 84,
+            "cropIdIncrement": 0.11,
+            "cost": 30,
+            "costExponent": 1.2,
+            "cropReq": 80,
+            "maxLvl": 500,
+            "bonusPerLvl": 3
+        }
+    },
+    "changes": {
+        "EXP GMO": {"cost": [70, 60], "cropReq": [65, 57]},
+        "OG FERTILIZER": {"cropReq": [50, 48]},
+        "MORE BEENZ": {"cropReq": [59, 53]},
+        "LAND RANK": {
+            "bonus": [
+                "Nothing yet. These nuts, so true.",
+                "Each plot now gets Rank XP when a crop is collected."
+            ],
+            "cost": [100, 80],
+            "cropReq": [71, 61],
+            "maxLvl": [500, 1]
+        }
+    }
+}

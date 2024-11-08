@@ -4246,6 +4246,10 @@
             {"wikiName": "[[Emperor]]", "txtName": "Emperor"},
             {"wikiName": "[[Chaotic Emperor]]", "txtName": "Chaotic Emperor"},
             {"wikiName": "[[Sovereign Emperor]]", "txtName": "Sovereign Emperor"},
+            {"wikiName": "[[Demon Hound]]", "txtName": "Demon Hound"},
+            {"wikiName": "[[Gloomie Mushroom]]", "txtName": "Gloomie Mushroom"},
+            {"wikiName": "[[Guardian Golem]]", "txtName": "Guardian Golem"},
+            {"wikiName": "[[Curious Crystal Slime]]", "txtName": "Curious Crystal Slime"},
             {
                 "wikiName": "[[Colosseum/Dewdrop#Bronze Chest|Dewdrop Bronze Chest]]",
                 "txtName": "Colosseum: Dewdrop Bronze Chest"
@@ -4367,6 +4371,10 @@
             {"wikiName": "[[Dreadlo]]", "txtName": "Dreadlo"},
             {"wikiName": "[[Marble]]", "txtName": "Marble"},
             {"wikiName": "[[Godshard]]", "txtName": "Godshard"},
+            {"wikiName": "[[Motherlode]]", "txtName": "Motherlode"},
+            {"wikiName": "[[Fractalfly]]", "txtName": "Fractalfly"},
+            {"wikiName": "[[Evertree]]", "txtName": "Evertree"},
+            {"wikiName": "[[Trench Fish]]", "txtName": "Trench Fish"},
             {"wikiName": "[[Oak Tree]]", "txtName": "Oak Tree"},
             {"wikiName": "[[Birch Tree]]", "txtName": "Birch Tree"},
             {"wikiName": "[[Jungle Tree]]", "txtName": "Jungle Tree"},
@@ -4400,6 +4408,7 @@
             {"wikiName": "[[Jumbo Shrimp]]", "txtName": "Jumbo Shrimp"},
             {"wikiName": "[[Caulifish]]", "txtName": "Caulifish"},
             {"wikiName": "[[Equinox Fish]]", "txtName": "Equinox Fish"},
+            {"wikiName": "[[Trench Fish]]", "txtName": "Trench Fish"},
             {"wikiName": "[[Fly Nest]]", "txtName": "Fly Nest"},
             {"wikiName": "[[Butterfly Bar]]", "txtName": "Butterfly Bar"},
             {"wikiName": "[[Sentient Bowl]]", "txtName": "Sentient Bowl"},
@@ -4413,6 +4422,7 @@
             {"wikiName": "[[Equinox Nest]]", "txtName": "Equinox Nest"},
             {"wikiName": "[[Ladybug Nest]]", "txtName": "Ladybug Nest"},
             {"wikiName": "[[Firefly Nest]]", "txtName": "Firefly Nest"},
+            {"wikiName": "[[Fractal Nest]]", "txtName": "Fractal Nest"},
             {"wikiName": "[[Flies]]", "txtName": "Flies"},
             {"wikiName": "[[Butterflies]]", "txtName": "Butterflies"},
             {"wikiName": "[[Sentient Cereal]]", "txtName": "Sentient Cereal"},
@@ -4672,7 +4682,11 @@
             {"wikiName": "[[Starfire]]", "txtName": "Starfire"},
             {"wikiName": "[[Dreadlo]]", "txtName": "Dreadlo"},
             {"wikiName": "[[Marble]]", "txtName": "Marble"},
-            {"wikiName": "[[Godshard]]", "txtName": "Godshard"}
+            {"wikiName": "[[Godshard]]", "txtName": "Godshard"},
+            {"wikiName": "[[Motherlode]]", "txtName": "Motherlode"},
+            {"wikiName": "[[Fractalfly]]", "txtName": "Fractalfly"},
+            {"wikiName": "[[Evertree]]", "txtName": "Evertree"},
+            {"wikiName": "[[Trench Fish]]", "txtName": "Trench Fish"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -4778,7 +4792,8 @@
             {"wikiName": "[[Shellfish]]", "txtName": "Shellfish"},
             {"wikiName": "[[Jumbo Shrimp]]", "txtName": "Jumbo Shrimp"},
             {"wikiName": "[[Caulifish]]", "txtName": "Caulifish"},
-            {"wikiName": "[[Equinox Fish]]", "txtName": "Equinox Fish"}
+            {"wikiName": "[[Equinox Fish]]", "txtName": "Equinox Fish"},
+            {"wikiName": "[[Trench Fish]]", "txtName": "Trench Fish"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -5236,6 +5251,7 @@
             {"wikiName": "[[Equinox Nest]]", "txtName": "Equinox Nest"},
             {"wikiName": "[[Ladybug Nest]]", "txtName": "Ladybug Nest"},
             {"wikiName": "[[Firefly Nest]]", "txtName": "Firefly Nest"},
+            {"wikiName": "[[Fractal Nest]]", "txtName": "Fractal Nest"},
             {
                 "wikiName": "[[Omar Da Ogar#Helping Omar|Helping Omar]]",
                 "txtName": "Omar Da Ogar: Helping Omar"
@@ -8354,7 +8370,10 @@
     },
     "SpiD3": {
         "sources": [
-            {"wikiName": "[[Samurai Guardian]]", "txtName": "Samurai Guardian"}
+            {"wikiName": "[[Samurai Guardian]]", "txtName": "Samurai Guardian"},
+            {"wikiName": "[[Demon Hound]]", "txtName": "Demon Hound"},
+            {"wikiName": "[[Guardian Golem]]", "txtName": "Guardian Golem"},
+            {"wikiName": "[[Curious Crystal Slime]]", "txtName": "Curious Crystal Slime"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -8369,6 +8388,20 @@
     "Line14": {
         "sources": [
             {"wikiName": "[[Samurai Guardian]]", "txtName": "Samurai Guardian"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "CardsH15": {
+        "sources": [
+            {"wikiName": "[[Gloomie Mushroom]]", "txtName": "Gloomie Mushroom"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "EquipmentStatues29": {
+        "sources": [
+            {"wikiName": "[[Gloomie Mushroom]]", "txtName": "Gloomie Mushroom"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -10072,8 +10105,7 @@
     },
     "EquipmentHats38": {
         "sources": [
-            {"wikiName": "[[Spring Splendor]]", "txtName": "Spring Splendor"},
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            {"wikiName": "[[Spring Splendor]]", "txtName": "Spring Splendor"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -10244,7 +10276,11 @@
     },
     "CardsF39": {
         "sources": [
-            {"wikiName": "[[Godshard]]", "txtName": "Godshard"}
+            {"wikiName": "[[Godshard]]", "txtName": "Godshard"},
+            {"wikiName": "[[Motherlode]]", "txtName": "Motherlode"},
+            {"wikiName": "[[Fractalfly]]", "txtName": "Fractalfly"},
+            {"wikiName": "[[Evertree]]", "txtName": "Evertree"},
+            {"wikiName": "[[Trench Fish]]", "txtName": "Trench Fish"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -12740,7 +12776,8 @@
             {
                 "wikiName": "[[Royal Worm#Normie Bidding|Normie Bidding]]",
                 "txtName": "Royal Worm: Normie Bidding"
-            }
+            },
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -14411,7 +14448,8 @@
             {
                 "wikiName": "[[Royal Worm#Royal Bidding|Royal Bidding]]",
                 "txtName": "Royal Worm: Royal Bidding"
-            }
+            },
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
         "questAss": []
@@ -14819,8 +14857,7 @@
             {
                 "wikiName": "[[Royal Worm#Bossin' the Boss|Bossin' the Boss]]",
                 "txtName": "Royal Worm: Bossin' the Boss"
-            },
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+            }
         ],
         "recipeFrom": [],
         "questAss": []
@@ -15463,49 +15500,14 @@
         "recipeFrom": [],
         "questAss": []
     },
-    "EquipmentHats46": {
+    "Quest90": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
         "questAss": []
     },
-    "EquipmentHats47": {
-        "sources": [
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "EquipmentHats48": {
-        "sources": [
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "Ht": {
-        "sources": [
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "EquipmentHats49": {
-        "sources": [
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "EquipmentHats50": {
-        "sources": [
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "EquipmentHats35": {
+    "Blank": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
@@ -15555,13 +15557,6 @@
         "questAss": []
     },
     "EquipmentRingsChat9": {
-        "sources": [
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "Blank": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
@@ -15688,21 +15683,7 @@
         "recipeFrom": [],
         "questAss": []
     },
-    "GemP36": {
-        "sources": [
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "EquipmentHats82": {
-        "sources": [
-            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
-        ],
-        "recipeFrom": [],
-        "questAss": []
-    },
-    "Quest77": {
+    "GemP25": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
@@ -15716,7 +15697,7 @@
         "recipeFrom": [],
         "questAss": []
     },
-    "GemP25": {
+    "EquipmentPendant31": {
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
@@ -15748,6 +15729,13 @@
         "sources": [
             {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"},
             {"wikiName": "[[Guild Giftbox]]", "txtName": "Guild Giftbox"}
+        ],
+        "recipeFrom": [],
+        "questAss": []
+    },
+    "Ht": {
+        "sources": [
+            {"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
         ],
         "recipeFrom": [],
         "questAss": []

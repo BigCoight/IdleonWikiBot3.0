@@ -1895,7 +1895,7 @@
         ],
         "mapData": null,
         "navigation": {
-            "prev": "w5c2",
+            "prev": "caveB",
             "next": "Blank",
             "hasCrystal": false,
             "crystalName": "Crystal4",
@@ -4968,7 +4968,7 @@
         },
         "navigation": {
             "prev": "w5c1",
-            "next": "Crystal4",
+            "next": "caveB",
             "hasCrystal": true,
             "crystalName": "Crystal4",
             "hasCard": true
@@ -5594,6 +5594,133 @@
             "crystalName": "Crystal5",
             "hasCard": true
         },
+        "bossData": null
+    },
+    "caveA": {
+        "details": {
+            "Name": "Demon Hound",
+            "AFKtype": "Fighting",
+            "MonsterFace": 89,
+            "MonsterOffsetX": 34,
+            "MonsterOffsetY": 52,
+            "HeightOfMonster": 75,
+            "MonsterMoving": 1,
+            "MovingFrame": 9,
+            "RespawnTime": 45,
+            "DeathFrame": 16,
+            "MonsterHPTotal": 25000000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 10000,
+            "ExpType": 0,
+            "Defence": 10,
+            "MoveSPEED": 6,
+            "Damages": [100000, 1],
+            "DefFor0": 76109.7
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+            {"item": "SpiD3", "quantity": 1, "chance": 0, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "caveB": {
+        "details": {
+            "Name": "Gloomie Mushroom",
+            "AFKtype": "Fighting",
+            "MonsterFace": 90,
+            "MonsterOffsetX": 34,
+            "MonsterOffsetY": 49,
+            "HeightOfMonster": 107,
+            "MonsterMoving": 1,
+            "MovingFrame": 10,
+            "RespawnTime": 50,
+            "DeathFrame": 22,
+            "MonsterHPTotal": 2500000000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 2800000,
+            "ExpType": 0,
+            "Defence": 10,
+            "MoveSPEED": 3,
+            "Damages": [10000, 1],
+            "DefFor0": 10638.1
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsH15", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
+            {"item": "EquipmentStatues29", "quantity": 1, "chance": 1e-05, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": {
+            "prev": "w5c2",
+            "next": "Crystal4",
+            "hasCrystal": true,
+            "crystalName": "Crystal4",
+            "hasCard": true
+        },
+        "bossData": null
+    },
+    "caveC": {
+        "details": {
+            "Name": "Guardian Golem",
+            "AFKtype": "Fighting",
+            "MonsterFace": 89,
+            "MonsterOffsetX": 34,
+            "MonsterOffsetY": 49,
+            "HeightOfMonster": 95,
+            "MonsterMoving": 1,
+            "MovingFrame": 10,
+            "RespawnTime": 45,
+            "DeathFrame": 22,
+            "MonsterHPTotal": 1e+13,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 10000,
+            "ExpType": 0,
+            "Defence": 10,
+            "MoveSPEED": 2,
+            "Damages": [100000, 1],
+            "DefFor0": 76109.7
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+            {"item": "SpiD3", "quantity": 1, "chance": 0, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "caveD": {
+        "details": {
+            "Name": "Curious Crystal Slime",
+            "AFKtype": "Fighting",
+            "MonsterFace": 89,
+            "MonsterOffsetX": 34,
+            "MonsterOffsetY": 49,
+            "HeightOfMonster": 90,
+            "MonsterMoving": 1,
+            "MovingFrame": 10,
+            "RespawnTime": 45,
+            "DeathFrame": 22,
+            "MonsterHPTotal": 10000000,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 10000,
+            "ExpType": 0,
+            "Defence": 10,
+            "MoveSPEED": 3,
+            "Damages": [100000, 1],
+            "DefFor0": 76109.7
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+            {"item": "SpiD3", "quantity": 1, "chance": 0, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
         "bossData": null
     },
     "mushR": {
@@ -8449,8 +8576,39 @@
         },
         "drops": [
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-            {"item": "CardsF29", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
+            {"item": "CardsF29", "quantity": 1, "chance": 0, "questLink": "N/A"},
             {"item": "DropTable4", "quantity": 2, "chance": 0.014, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Motherlode": {
+        "details": {
+            "Name": "Motherlode",
+            "AFKtype": "Mining",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 22,
+            "MonsterOffsetY": 38,
+            "HeightOfMonster": 194,
+            "MonsterMoving": 0,
+            "MovingFrame": 0,
+            "RespawnTime": 600,
+            "DeathFrame": 1,
+            "MonsterHPTotal": 5,
+            "Type": "oreType",
+            "SpecialType": "",
+            "ExpGiven": 150,
+            "ExpType": 1,
+            "Defence": 30000,
+            "MoveSPEED": 0,
+            "Damages": [0, 1],
+            "DefFor0": 0.22
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF39", "quantity": 1, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable4", "quantity": 2, "chance": 1e-08, "questLink": "N/A"}
         ],
         "mapData": null,
         "navigation": null,
@@ -8952,6 +9110,37 @@
         "navigation": null,
         "bossData": null
     },
+    "MotherlodeTREE": {
+        "details": {
+            "Name": "Evertree",
+            "AFKtype": "Choppin",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 0,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 6,
+            "RespawnTime": 0,
+            "DeathFrame": 16,
+            "MonsterHPTotal": 5,
+            "Type": "treeType",
+            "SpecialType": "",
+            "ExpGiven": 32000,
+            "ExpType": 3,
+            "Defence": 30000,
+            "MoveSPEED": 0,
+            "Damages": [0, 1],
+            "DefFor0": 0.22
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF39", "quantity": 1, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable4", "quantity": 2, "chance": 1e-08, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
     "FishSmall": {
         "details": {
             "Name": "Small Fish",
@@ -9077,6 +9266,37 @@
         "drops": [
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
             {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "MotherlodeFISH": {
+        "details": {
+            "Name": "Trench Fish",
+            "AFKtype": "Fishing",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 50,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 1,
+            "RespawnTime": 0,
+            "DeathFrame": 2,
+            "MonsterHPTotal": 5,
+            "Type": "fishType",
+            "SpecialType": "",
+            "ExpGiven": 1750,
+            "ExpType": 4,
+            "Defence": 30000,
+            "MoveSPEED": 0,
+            "Damages": [6, 1],
+            "DefFor0": 2.67
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF39", "quantity": 1, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable4", "quantity": 2, "chance": 1e-08, "questLink": "N/A"}
         ],
         "mapData": null,
         "navigation": null,
@@ -9472,6 +9692,36 @@
         "navigation": null,
         "bossData": null
     },
+    "Fish14": {
+        "details": {
+            "Name": "Trench Fish",
+            "AFKtype": "Fighting",
+            "MonsterFace": 4,
+            "MonsterOffsetX": 42,
+            "MonsterOffsetY": 28,
+            "HeightOfMonster": 48,
+            "MonsterMoving": 1,
+            "MovingFrame": 4,
+            "RespawnTime": 86400,
+            "DeathFrame": 11,
+            "MonsterHPTotal": 750000,
+            "Type": "fishType",
+            "SpecialType": "a",
+            "ExpGiven": 12000,
+            "ExpType": 0,
+            "Defence": 600,
+            "MoveSPEED": 3,
+            "Damages": [1000, 1],
+            "DefFor0": 1223.26
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
     "BugNest1": {
         "details": {
             "Name": "Fly Nest",
@@ -9835,6 +10085,36 @@
     "BugNest13": {
         "details": {
             "Name": "Firefly Nest",
+            "AFKtype": "Fighting",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 30,
+            "HeightOfMonster": 100,
+            "MonsterMoving": 0,
+            "MovingFrame": 207,
+            "RespawnTime": 8640000,
+            "DeathFrame": 11,
+            "MonsterHPTotal": 999999999,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 2,
+            "ExpType": 6,
+            "Defence": 1,
+            "MoveSPEED": 0,
+            "Damages": [6, 1],
+            "DefFor0": 2.67
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "BugNest14": {
+        "details": {
+            "Name": "Fractal Nest",
             "AFKtype": "Fighting",
             "MonsterFace": 0,
             "MonsterOffsetX": 32,
@@ -10266,6 +10546,37 @@
             {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
             {"item": "CardsF38", "quantity": 1, "chance": 1e-06, "questLink": "N/A"},
             {"item": "DropTable30", "quantity": 1, "chance": 0.015, "questLink": "N/A"}
+        ],
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Bug14": {
+        "details": {
+            "Name": "Fractalfly",
+            "AFKtype": "Catching",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 32,
+            "MonsterOffsetY": 50,
+            "HeightOfMonster": 150,
+            "MonsterMoving": 0,
+            "MovingFrame": 1,
+            "RespawnTime": 0,
+            "DeathFrame": 10,
+            "MonsterHPTotal": 5,
+            "Type": "bugType",
+            "SpecialType": "",
+            "ExpGiven": 150,
+            "ExpType": 6,
+            "Defence": 30000,
+            "MoveSPEED": 0,
+            "Damages": [6, 1],
+            "DefFor0": 2.67
+        },
+        "drops": [
+            {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
+            {"item": "CardsF39", "quantity": 1, "chance": 0, "questLink": "N/A"},
+            {"item": "DropTable4", "quantity": 2, "chance": 1e-08, "questLink": "N/A"}
         ],
         "mapData": null,
         "navigation": null,
@@ -11366,6 +11677,87 @@
             "map": {"intName": "GrasslandaTown", "name": "Blunder Hills", "id": 0},
             "portalRequirements": [1, 0]
         },
+        "navigation": null,
+        "bossData": null
+    },
+    "Bravery_Monument": {
+        "details": {
+            "Name": "Bravery",
+            "AFKtype": "PayingRespect",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 22,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 180,
+            "MonsterMoving": 0,
+            "MovingFrame": 0,
+            "RespawnTime": 1,
+            "DeathFrame": 1,
+            "MonsterHPTotal": 42,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 69,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 0,
+            "Damages": [0, 0],
+            "DefFor0": 0.22
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Justice_Monument": {
+        "details": {
+            "Name": "Justice",
+            "AFKtype": "PayingRespect",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 22,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 180,
+            "MonsterMoving": 0,
+            "MovingFrame": 0,
+            "RespawnTime": 1,
+            "DeathFrame": 1,
+            "MonsterHPTotal": 42,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 69,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 0,
+            "Damages": [0, 0],
+            "DefFor0": 0.22
+        },
+        "drops": null,
+        "mapData": null,
+        "navigation": null,
+        "bossData": null
+    },
+    "Wisdom_Monument": {
+        "details": {
+            "Name": "Wisdom",
+            "AFKtype": "PayingRespect",
+            "MonsterFace": 0,
+            "MonsterOffsetX": 22,
+            "MonsterOffsetY": 32,
+            "HeightOfMonster": 180,
+            "MonsterMoving": 0,
+            "MovingFrame": 0,
+            "RespawnTime": 1,
+            "DeathFrame": 1,
+            "MonsterHPTotal": 42,
+            "Type": "monsterType",
+            "SpecialType": "",
+            "ExpGiven": 69,
+            "ExpType": 0,
+            "Defence": 1,
+            "MoveSPEED": 0,
+            "Damages": [0, 0],
+            "DefFor0": 0.22
+        },
+        "drops": null,
+        "mapData": null,
         "navigation": null,
         "bossData": null
     }

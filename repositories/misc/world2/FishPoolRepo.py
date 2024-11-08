@@ -27,6 +27,7 @@ class FishPoolRepo(Repository[FishPool]):
 		fishPoolData = formatStr(cls.getSection(), ["\n", "  "])
 		for name, fishPool in re.findall(reDropTables, fishPoolData):
 			pool = getFromArrayArray(fishPool)
+			print(name)
 			pool[3].insert(0, "0")
 			for i in range(4):
 				toAdd = FishPool(

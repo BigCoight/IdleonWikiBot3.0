@@ -45,6 +45,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 0},
             {"source": "Marble", "quantity": 2, "chance": 0},
             {"source": "Godshard", "quantity": 2, "chance": 0},
+            {"source": "Motherlode", "quantity": 2, "chance": 0},
+            {"source": "Bug14", "quantity": 2, "chance": 0},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 0},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 0},
             {"source": "Crystal0", "quantity": 1, "chance": 0},
             {"source": "OakTree", "quantity": 1, "chance": 0},
             {"source": "BirchTree", "quantity": 1, "chance": 0},
@@ -96,6 +100,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 0},
             {"source": "Marble", "quantity": 2, "chance": 0},
             {"source": "Godshard", "quantity": 2, "chance": 0},
+            {"source": "Motherlode", "quantity": 2, "chance": 0},
+            {"source": "Bug14", "quantity": 2, "chance": 0},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 0},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 0},
             {"source": "Crystal0", "quantity": 1, "chance": 0},
             {"source": "OakTree", "quantity": 1, "chance": 0},
             {"source": "BirchTree", "quantity": 1, "chance": 0},
@@ -150,6 +158,7 @@
             {"source": "Fish11", "quantity": 1, "chance": 0},
             {"source": "Fish12", "quantity": 1, "chance": 0},
             {"source": "Fish13", "quantity": 1, "chance": 0},
+            {"source": "Fish14", "quantity": 1, "chance": 0},
             {"source": "Crystal1", "quantity": 1, "chance": 0},
             {"source": "PalmTree", "quantity": 2, "chance": 0},
             {"source": "Bug1", "quantity": 1, "chance": 0},
@@ -199,6 +208,7 @@
             {"source": "Fish11", "quantity": 1, "chance": 0},
             {"source": "Fish12", "quantity": 1, "chance": 0},
             {"source": "Fish13", "quantity": 1, "chance": 0},
+            {"source": "Fish14", "quantity": 1, "chance": 0},
             {"source": "Crystal1", "quantity": 1, "chance": 0},
             {"source": "PalmTree", "quantity": 2, "chance": 0},
             {"source": "Bug1", "quantity": 1, "chance": 0},
@@ -589,6 +599,10 @@
             {"source": "Boss6A", "quantity": 1000000, "chance": 1},
             {"source": "Boss6B", "quantity": 5000000, "chance": 1},
             {"source": "Boss6C", "quantity": 20000000, "chance": 1},
+            {"source": "caveA", "quantity": 500000, "chance": 0},
+            {"source": "caveB", "quantity": 500000, "chance": 0},
+            {"source": "caveC", "quantity": 500000, "chance": 0},
+            {"source": "caveD", "quantity": 500000, "chance": 0},
             {"source": "ChestA1", "quantity": 100, "chance": 1},
             {"source": "ChestB1", "quantity": 400, "chance": 1},
             {"source": "ChestC1", "quantity": 1250, "chance": 1},
@@ -638,6 +652,10 @@
             {"source": "Dreadlo", "quantity": 0, "chance": 0},
             {"source": "Marble", "quantity": 0, "chance": 0},
             {"source": "Godshard", "quantity": 0, "chance": 0},
+            {"source": "Motherlode", "quantity": 0, "chance": 0},
+            {"source": "Bug14", "quantity": 0, "chance": 0},
+            {"source": "MotherlodeTREE", "quantity": 0, "chance": 0},
+            {"source": "MotherlodeFISH", "quantity": 0, "chance": 0},
             {"source": "OakTree", "quantity": 0, "chance": 0},
             {"source": "BirchTree", "quantity": 0, "chance": 0},
             {"source": "JungleTree", "quantity": 0, "chance": 0},
@@ -671,6 +689,7 @@
             {"source": "Fish11", "quantity": 0, "chance": 0},
             {"source": "Fish12", "quantity": 0, "chance": 0},
             {"source": "Fish13", "quantity": 0, "chance": 0},
+            {"source": "Fish14", "quantity": 0, "chance": 0},
             {"source": "BugNest1", "quantity": 0, "chance": 0},
             {"source": "BugNest2", "quantity": 0, "chance": 0},
             {"source": "BugNest3", "quantity": 0, "chance": 0},
@@ -684,6 +703,7 @@
             {"source": "BugNest11", "quantity": 0, "chance": 0},
             {"source": "BugNest12", "quantity": 0, "chance": 0},
             {"source": "BugNest13", "quantity": 0, "chance": 0},
+            {"source": "BugNest14", "quantity": 0, "chance": 0},
             {"source": "Bug1", "quantity": 0, "chance": 0},
             {"source": "Bug2", "quantity": 0, "chance": 0},
             {"source": "Bug3", "quantity": 0, "chance": 0},
@@ -1030,6 +1050,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 7.8e-05},
             {"source": "Marble", "quantity": 2, "chance": 8.4e-05},
             {"source": "Godshard", "quantity": 2, "chance": 9e-05},
+            {"source": "Motherlode", "quantity": 2, "chance": 6e-11},
+            {"source": "Bug14", "quantity": 2, "chance": 6e-11},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 6e-11},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 6e-11},
             {"source": "Crystal0", "quantity": 1, "chance": 0.003},
             {"source": "OakTree", "quantity": 1, "chance": 4.8e-05},
             {"source": "BirchTree", "quantity": 1, "chance": 5.1e-05},
@@ -1084,7 +1108,11 @@
             {"source": "Starfire", "quantity": 10, "chance": 0.0022},
             {"source": "Dreadlo", "quantity": 10, "chance": 0.0026},
             {"source": "Marble", "quantity": 10, "chance": 0.0028},
-            {"source": "Godshard", "quantity": 10, "chance": 0.003}
+            {"source": "Godshard", "quantity": 10, "chance": 0.003},
+            {"source": "Motherlode", "quantity": 10, "chance": 2e-09},
+            {"source": "Bug14", "quantity": 10, "chance": 2e-09},
+            {"source": "MotherlodeTREE", "quantity": 10, "chance": 2e-09},
+            {"source": "MotherlodeFISH", "quantity": 10, "chance": 2e-09}
         ]
     },
     "FoodPotOr2": {
@@ -1289,6 +1317,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 0.00039},
             {"source": "Marble", "quantity": 2, "chance": 0.00042},
             {"source": "Godshard", "quantity": 2, "chance": 0.00045},
+            {"source": "Motherlode", "quantity": 2, "chance": 3e-10},
+            {"source": "Bug14", "quantity": 2, "chance": 3e-10},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 3e-10},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 3e-10},
             {"source": "ChestA1", "quantity": 1, "chance": 0.09}
         ]
     },
@@ -1306,6 +1338,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 0.00039},
             {"source": "Marble", "quantity": 2, "chance": 0.00042},
             {"source": "Godshard", "quantity": 2, "chance": 0.00045},
+            {"source": "Motherlode", "quantity": 2, "chance": 3e-10},
+            {"source": "Bug14", "quantity": 2, "chance": 3e-10},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 3e-10},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 3e-10},
             {"source": "Crystal0", "quantity": 1, "chance": 0.015},
             {"source": "OakTree", "quantity": 1, "chance": 0.00024},
             {"source": "BirchTree", "quantity": 1, "chance": 0.000255},
@@ -1334,7 +1370,11 @@
             {"source": "Starfire", "quantity": 2, "chance": 0.00297},
             {"source": "Dreadlo", "quantity": 2, "chance": 0.00351},
             {"source": "Marble", "quantity": 2, "chance": 0.00378},
-            {"source": "Godshard", "quantity": 2, "chance": 0.00405}
+            {"source": "Godshard", "quantity": 2, "chance": 0.00405},
+            {"source": "Motherlode", "quantity": 2, "chance": 2.7e-09},
+            {"source": "Bug14", "quantity": 2, "chance": 2.7e-09},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 2.7e-09},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 2.7e-09}
         ]
     },
     "StampB11": {
@@ -1350,7 +1390,11 @@
             {"source": "Starfire", "quantity": 2, "chance": 9.9e-06},
             {"source": "Dreadlo", "quantity": 2, "chance": 1.17e-05},
             {"source": "Marble", "quantity": 2, "chance": 1.26e-05},
-            {"source": "Godshard", "quantity": 2, "chance": 1.35e-05}
+            {"source": "Godshard", "quantity": 2, "chance": 1.35e-05},
+            {"source": "Motherlode", "quantity": 2, "chance": 9e-12},
+            {"source": "Bug14", "quantity": 2, "chance": 9e-12},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 9e-12},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 9e-12}
         ]
     },
     "StampA13": {
@@ -1366,7 +1410,11 @@
             {"source": "Starfire", "quantity": 2, "chance": 1.65e-06},
             {"source": "Dreadlo", "quantity": 2, "chance": 1.95e-06},
             {"source": "Marble", "quantity": 2, "chance": 2.1e-06},
-            {"source": "Godshard", "quantity": 2, "chance": 2.25e-06}
+            {"source": "Godshard", "quantity": 2, "chance": 2.25e-06},
+            {"source": "Motherlode", "quantity": 2, "chance": 1.5e-12},
+            {"source": "Bug14", "quantity": 2, "chance": 1.5e-12},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 1.5e-12},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 1.5e-12}
         ]
     },
     "ObolBronze3": {
@@ -1382,7 +1430,11 @@
             {"source": "Starfire", "quantity": 2, "chance": 1.2705e-05},
             {"source": "Dreadlo", "quantity": 2, "chance": 1.5015e-05},
             {"source": "Marble", "quantity": 2, "chance": 1.617e-05},
-            {"source": "Godshard", "quantity": 2, "chance": 1.7325e-05}
+            {"source": "Godshard", "quantity": 2, "chance": 1.7325e-05},
+            {"source": "Motherlode", "quantity": 2, "chance": 1.155e-11},
+            {"source": "Bug14", "quantity": 2, "chance": 1.155e-11},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 1.155e-11},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 1.155e-11}
         ]
     },
     "Leaf1": {
@@ -1504,6 +1556,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 2.34e-08},
             {"source": "Marble", "quantity": 2, "chance": 2.52e-08},
             {"source": "Godshard", "quantity": 2, "chance": 2.7e-08},
+            {"source": "Motherlode", "quantity": 2, "chance": 1.8e-14},
+            {"source": "Bug14", "quantity": 2, "chance": 1.8e-14},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 1.8e-14},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 1.8e-14},
             {"source": "Crystal0", "quantity": 1, "chance": 9e-07},
             {"source": "OakTree", "quantity": 1, "chance": 1.44e-08},
             {"source": "BirchTree", "quantity": 1, "chance": 1.53e-08},
@@ -1554,6 +1610,7 @@
             {"source": "Fish11", "quantity": 1, "chance": 2.16e-08},
             {"source": "Fish12", "quantity": 1, "chance": 2.16e-08},
             {"source": "Fish13", "quantity": 1, "chance": 2.16e-08},
+            {"source": "Fish14", "quantity": 1, "chance": 2.16e-08},
             {"source": "Crystal1", "quantity": 1, "chance": 9e-07},
             {"source": "PalmTree", "quantity": 2, "chance": 2.7e-08},
             {"source": "Bug1", "quantity": 1, "chance": 2.7e-08},
@@ -1732,6 +1789,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 5.46e-06},
             {"source": "Marble", "quantity": 2, "chance": 5.88e-06},
             {"source": "Godshard", "quantity": 2, "chance": 6.3e-06},
+            {"source": "Motherlode", "quantity": 2, "chance": 4.2e-12},
+            {"source": "Bug14", "quantity": 2, "chance": 4.2e-12},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 4.2e-12},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 4.2e-12},
             {"source": "Crystal0", "quantity": 1, "chance": 0.00021},
             {"source": "OakTree", "quantity": 1, "chance": 3.36e-06},
             {"source": "BirchTree", "quantity": 1, "chance": 3.57e-06},
@@ -1782,6 +1843,7 @@
             {"source": "Fish11", "quantity": 1, "chance": 6.48e-06},
             {"source": "Fish12", "quantity": 1, "chance": 6.48e-06},
             {"source": "Fish13", "quantity": 1, "chance": 6.48e-06},
+            {"source": "Fish14", "quantity": 1, "chance": 6.48e-06},
             {"source": "Crystal1", "quantity": 1, "chance": 0.00027},
             {"source": "PalmTree", "quantity": 2, "chance": 8.1e-06},
             {"source": "Bug1", "quantity": 1, "chance": 8.1e-06},
@@ -1960,6 +2022,10 @@
             {"source": "Dreadlo", "quantity": 7246200, "chance": 7.8e-06},
             {"source": "Marble", "quantity": 7246200, "chance": 8.4e-06},
             {"source": "Godshard", "quantity": 7246200, "chance": 9e-06},
+            {"source": "Motherlode", "quantity": 7246200, "chance": 6e-12},
+            {"source": "Bug14", "quantity": 7246200, "chance": 6e-12},
+            {"source": "MotherlodeTREE", "quantity": 7246200, "chance": 6e-12},
+            {"source": "MotherlodeFISH", "quantity": 7246200, "chance": 6e-12},
             {"source": "Crystal0", "quantity": 3623100, "chance": 0.0003},
             {"source": "OakTree", "quantity": 3623100, "chance": 4.8e-06},
             {"source": "BirchTree", "quantity": 3623100, "chance": 5.1e-06},
@@ -2011,6 +2077,10 @@
             {"source": "Dreadlo", "quantity": 724900, "chance": 7.8e-06},
             {"source": "Marble", "quantity": 724900, "chance": 8.4e-06},
             {"source": "Godshard", "quantity": 724900, "chance": 9e-06},
+            {"source": "Motherlode", "quantity": 724900, "chance": 6e-12},
+            {"source": "Bug14", "quantity": 724900, "chance": 6e-12},
+            {"source": "MotherlodeTREE", "quantity": 724900, "chance": 6e-12},
+            {"source": "MotherlodeFISH", "quantity": 724900, "chance": 6e-12},
             {"source": "Crystal0", "quantity": 362450, "chance": 0.0003},
             {"source": "OakTree", "quantity": 362450, "chance": 4.8e-06},
             {"source": "BirchTree", "quantity": 362450, "chance": 5.1e-06},
@@ -2070,6 +2140,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 7.8e-06},
             {"source": "Marble", "quantity": 2, "chance": 8.4e-06},
             {"source": "Godshard", "quantity": 2, "chance": 9e-06},
+            {"source": "Motherlode", "quantity": 2, "chance": 6e-12},
+            {"source": "Bug14", "quantity": 2, "chance": 6e-12},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 6e-12},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 6e-12},
             {"source": "Crystal0", "quantity": 1, "chance": 0.0003},
             {"source": "OakTree", "quantity": 1, "chance": 4.8e-06},
             {"source": "BirchTree", "quantity": 1, "chance": 5.1e-06},
@@ -2120,6 +2194,7 @@
             {"source": "Fish11", "quantity": 1, "chance": 1.08e-05},
             {"source": "Fish12", "quantity": 1, "chance": 1.08e-05},
             {"source": "Fish13", "quantity": 1, "chance": 1.08e-05},
+            {"source": "Fish14", "quantity": 1, "chance": 1.08e-05},
             {"source": "Crystal1", "quantity": 1, "chance": 0.00045},
             {"source": "PalmTree", "quantity": 2, "chance": 1.35e-05},
             {"source": "Bug1", "quantity": 1, "chance": 1.35e-05},
@@ -2272,6 +2347,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 3.9e-05},
             {"source": "Marble", "quantity": 2, "chance": 4.2e-05},
             {"source": "Godshard", "quantity": 2, "chance": 4.5e-05},
+            {"source": "Motherlode", "quantity": 2, "chance": 3e-11},
+            {"source": "Bug14", "quantity": 2, "chance": 3e-11},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 3e-11},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 3e-11},
             {"source": "Crystal0", "quantity": 1, "chance": 0.0015},
             {"source": "OakTree", "quantity": 1, "chance": 2.4e-05},
             {"source": "BirchTree", "quantity": 1, "chance": 2.55e-05},
@@ -2328,6 +2407,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 2.457e-06},
             {"source": "Marble", "quantity": 2, "chance": 2.646e-06},
             {"source": "Godshard", "quantity": 2, "chance": 2.835e-06},
+            {"source": "Motherlode", "quantity": 2, "chance": 1.89e-12},
+            {"source": "Bug14", "quantity": 2, "chance": 1.89e-12},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 1.89e-12},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 1.89e-12},
             {"source": "Crystal0", "quantity": 1, "chance": 9.45e-05},
             {"source": "OakTree", "quantity": 1, "chance": 1.512e-06},
             {"source": "BirchTree", "quantity": 1, "chance": 1.6065e-06},
@@ -2383,6 +2466,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 2.5389e-06},
             {"source": "Marble", "quantity": 2, "chance": 2.7342e-06},
             {"source": "Godshard", "quantity": 2, "chance": 2.9295e-06},
+            {"source": "Motherlode", "quantity": 2, "chance": 1.953e-12},
+            {"source": "Bug14", "quantity": 2, "chance": 1.953e-12},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 1.953e-12},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 1.953e-12},
             {"source": "Crystal0", "quantity": 1, "chance": 9.765e-05},
             {"source": "OakTree", "quantity": 1, "chance": 1.5624e-06},
             {"source": "BirchTree", "quantity": 1, "chance": 1.66005e-06},
@@ -2438,6 +2525,10 @@
             {"source": "Dreadlo", "quantity": 2, "chance": 2.3751e-06},
             {"source": "Marble", "quantity": 2, "chance": 2.5578e-06},
             {"source": "Godshard", "quantity": 2, "chance": 2.7405e-06},
+            {"source": "Motherlode", "quantity": 2, "chance": 1.827e-12},
+            {"source": "Bug14", "quantity": 2, "chance": 1.827e-12},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 1.827e-12},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 1.827e-12},
             {"source": "Crystal0", "quantity": 1, "chance": 9.135e-05},
             {"source": "OakTree", "quantity": 1, "chance": 1.4616e-06},
             {"source": "BirchTree", "quantity": 1, "chance": 1.55295e-06},
@@ -2493,6 +2584,10 @@
             {"source": "Dreadlo", "quantity": 4, "chance": 6.63e-05},
             {"source": "Marble", "quantity": 4, "chance": 7.14e-05},
             {"source": "Godshard", "quantity": 4, "chance": 7.65e-05},
+            {"source": "Motherlode", "quantity": 4, "chance": 5.1e-11},
+            {"source": "Bug14", "quantity": 4, "chance": 5.1e-11},
+            {"source": "MotherlodeTREE", "quantity": 4, "chance": 5.1e-11},
+            {"source": "MotherlodeFISH", "quantity": 4, "chance": 5.1e-11},
             {"source": "Crystal0", "quantity": 2, "chance": 0.00255},
             {"source": "OakTree", "quantity": 2, "chance": 4.08e-05},
             {"source": "BirchTree", "quantity": 2, "chance": 4.335e-05},
@@ -2543,6 +2638,7 @@
             {"source": "Fish11", "quantity": 3, "chance": 5.04e-05},
             {"source": "Fish12", "quantity": 3, "chance": 5.04e-05},
             {"source": "Fish13", "quantity": 3, "chance": 5.04e-05},
+            {"source": "Fish14", "quantity": 3, "chance": 5.04e-05},
             {"source": "Crystal1", "quantity": 3, "chance": 0.0021},
             {"source": "PalmTree", "quantity": 6, "chance": 6.3e-05},
             {"source": "Bug1", "quantity": 3, "chance": 6.3e-05},
@@ -2766,6 +2862,7 @@
             {"source": "Fish11", "quantity": 1, "chance": 7.2e-05},
             {"source": "Fish12", "quantity": 1, "chance": 7.2e-05},
             {"source": "Fish13", "quantity": 1, "chance": 7.2e-05},
+            {"source": "Fish14", "quantity": 1, "chance": 7.2e-05},
             {"source": "Crystal1", "quantity": 1, "chance": 0.003},
             {"source": "PalmTree", "quantity": 2, "chance": 9e-05},
             {"source": "Bug1", "quantity": 1, "chance": 9e-05},
@@ -2953,7 +3050,8 @@
             {"source": "Fish10", "quantity": 1, "chance": 1.2e-05},
             {"source": "Fish11", "quantity": 1, "chance": 1.2e-05},
             {"source": "Fish12", "quantity": 1, "chance": 1.2e-05},
-            {"source": "Fish13", "quantity": 1, "chance": 1.2e-05}
+            {"source": "Fish13", "quantity": 1, "chance": 1.2e-05},
+            {"source": "Fish14", "quantity": 1, "chance": 1.2e-05}
         ]
     },
     "EquipmentStatues10": {
@@ -2975,7 +3073,8 @@
             {"source": "Fish10", "quantity": 1, "chance": 0.001224},
             {"source": "Fish11", "quantity": 1, "chance": 0.001224},
             {"source": "Fish12", "quantity": 1, "chance": 0.001224},
-            {"source": "Fish13", "quantity": 1, "chance": 0.001224}
+            {"source": "Fish13", "quantity": 1, "chance": 0.001224},
+            {"source": "Fish14", "quantity": 1, "chance": 0.001224}
         ]
     },
     "EquipmentHats27": {
@@ -2997,7 +3096,8 @@
             {"source": "Fish10", "quantity": 1, "chance": 1.2e-06},
             {"source": "Fish11", "quantity": 1, "chance": 1.2e-06},
             {"source": "Fish12", "quantity": 1, "chance": 1.2e-06},
-            {"source": "Fish13", "quantity": 1, "chance": 1.2e-06}
+            {"source": "Fish13", "quantity": 1, "chance": 1.2e-06},
+            {"source": "Fish14", "quantity": 1, "chance": 1.2e-06}
         ]
     },
     "Leaf2": {
@@ -3205,6 +3305,7 @@
             {"source": "Fish11", "quantity": 1, "chance": 3.6e-05},
             {"source": "Fish12", "quantity": 1, "chance": 3.6e-05},
             {"source": "Fish13", "quantity": 1, "chance": 3.6e-05},
+            {"source": "Fish14", "quantity": 1, "chance": 3.6e-05},
             {"source": "Crystal1", "quantity": 1, "chance": 0.0015},
             {"source": "PalmTree", "quantity": 2, "chance": 4.5e-05},
             {"source": "Bug1", "quantity": 1, "chance": 4.5e-05},
@@ -3259,6 +3360,7 @@
             {"source": "Fish11", "quantity": 1, "chance": 1.134e-06},
             {"source": "Fish12", "quantity": 1, "chance": 1.134e-06},
             {"source": "Fish13", "quantity": 1, "chance": 1.134e-06},
+            {"source": "Fish14", "quantity": 1, "chance": 1.134e-06},
             {"source": "Crystal1", "quantity": 1, "chance": 4.725e-05},
             {"source": "PalmTree", "quantity": 2, "chance": 1.4175e-06},
             {"source": "Bug1", "quantity": 1, "chance": 1.4175e-06},
@@ -3312,6 +3414,7 @@
             {"source": "Fish11", "quantity": 1, "chance": 1.89e-06},
             {"source": "Fish12", "quantity": 1, "chance": 1.89e-06},
             {"source": "Fish13", "quantity": 1, "chance": 1.89e-06},
+            {"source": "Fish14", "quantity": 1, "chance": 1.89e-06},
             {"source": "Crystal1", "quantity": 1, "chance": 7.875e-05},
             {"source": "PalmTree", "quantity": 2, "chance": 2.3625e-06},
             {"source": "Bug1", "quantity": 1, "chance": 2.3625e-06},
@@ -3365,6 +3468,7 @@
             {"source": "Fish11", "quantity": 1, "chance": 2.1924e-06},
             {"source": "Fish12", "quantity": 1, "chance": 2.1924e-06},
             {"source": "Fish13", "quantity": 1, "chance": 2.1924e-06},
+            {"source": "Fish14", "quantity": 1, "chance": 2.1924e-06},
             {"source": "Crystal1", "quantity": 1, "chance": 9.135e-05},
             {"source": "PalmTree", "quantity": 2, "chance": 2.7405e-06},
             {"source": "Bug1", "quantity": 1, "chance": 2.7405e-06},
@@ -4824,7 +4928,11 @@
             {"source": "Starfire", "quantity": 2, "chance": 0.011},
             {"source": "Dreadlo", "quantity": 2, "chance": 0.013},
             {"source": "Marble", "quantity": 2, "chance": 0.014},
-            {"source": "Godshard", "quantity": 2, "chance": 0.015}
+            {"source": "Godshard", "quantity": 2, "chance": 0.015},
+            {"source": "Motherlode", "quantity": 2, "chance": 1e-08},
+            {"source": "Bug14", "quantity": 2, "chance": 1e-08},
+            {"source": "MotherlodeTREE", "quantity": 2, "chance": 1e-08},
+            {"source": "MotherlodeFISH", "quantity": 2, "chance": 1e-08}
         ]
     },
     "DropTable5": {
@@ -4905,7 +5013,8 @@
             {"source": "Fish10", "quantity": 1, "chance": 0.012},
             {"source": "Fish11", "quantity": 1, "chance": 0.012},
             {"source": "Fish12", "quantity": 1, "chance": 0.012},
-            {"source": "Fish13", "quantity": 1, "chance": 0.012}
+            {"source": "Fish13", "quantity": 1, "chance": 0.012},
+            {"source": "Fish14", "quantity": 1, "chance": 0.012}
         ]
     },
     "DropTable11": {
@@ -5172,7 +5281,8 @@
             {"source": "BugNest10", "quantity": 2, "chance": 0},
             {"source": "BugNest11", "quantity": 2, "chance": 0},
             {"source": "BugNest12", "quantity": 2, "chance": 0},
-            {"source": "BugNest13", "quantity": 2, "chance": 0}
+            {"source": "BugNest13", "quantity": 2, "chance": 0},
+            {"source": "BugNest14", "quantity": 2, "chance": 0}
         ]
     },
     "CardsA2": {"sources": [
@@ -6307,9 +6417,14 @@
     "CardsI13": {"sources": [
         {"source": "w6d2", "quantity": 1, "chance": 5e-07}
     ]},
-    "SpiD3": {"sources": [
-        {"source": "w6d3", "quantity": 1, "chance": 0.1}
-    ]},
+    "SpiD3": {
+        "sources": [
+            {"source": "w6d3", "quantity": 1, "chance": 0.1},
+            {"source": "caveA", "quantity": 1, "chance": 0},
+            {"source": "caveC", "quantity": 1, "chance": 0},
+            {"source": "caveD", "quantity": 1, "chance": 0}
+        ]
+    },
     "CardsI14": {"sources": [
         {"source": "w6d3", "quantity": 1, "chance": 4e-07}
     ]},
@@ -6328,6 +6443,12 @@
             {"source": "Boss6C", "quantity": 1, "chance": 0.0004}
         ]
     },
+    "CardsH15": {"sources": [
+        {"source": "caveB", "quantity": 1, "chance": 5e-05}
+    ]},
+    "EquipmentStatues29": {"sources": [
+        {"source": "caveB", "quantity": 1, "chance": 1e-05}
+    ]},
     "OakTree": {"sources": [
         {"source": "ChestA1", "quantity": 40, "chance": 0.6}
     ]},
@@ -6841,12 +6962,18 @@
     "CardsF29": {
         "sources": [
             {"source": "Dreadlo", "quantity": 1, "chance": 3e-05},
-            {"source": "Marble", "quantity": 1, "chance": 1e-08}
+            {"source": "Marble", "quantity": 1, "chance": 0}
         ]
     },
-    "CardsF39": {"sources": [
-        {"source": "Godshard", "quantity": 1, "chance": 2e-06}
-    ]},
+    "CardsF39": {
+        "sources": [
+            {"source": "Godshard", "quantity": 1, "chance": 2e-06},
+            {"source": "Motherlode", "quantity": 1, "chance": 0},
+            {"source": "Bug14", "quantity": 1, "chance": 0},
+            {"source": "MotherlodeTREE", "quantity": 1, "chance": 0},
+            {"source": "MotherlodeFISH", "quantity": 1, "chance": 0}
+        ]
+    },
     "CardsC4": {"sources": [
         {"source": "OakTree", "quantity": 1, "chance": 0.0004}
     ]},

@@ -505,13 +505,20 @@
     },
     "w5c2": {
         "prev": "w5c1",
+        "next": "caveB",
+        "hasCrystal": true,
+        "crystalName": "Crystal4",
+        "hasCard": true
+    },
+    "caveB": {
+        "prev": "w5c2",
         "next": "Crystal4",
         "hasCrystal": true,
         "crystalName": "Crystal4",
         "hasCard": true
     },
     "Crystal4": {
-        "prev": "w5c2",
+        "prev": "caveB",
         "next": "Blank",
         "hasCrystal": false,
         "crystalName": "Crystal4",

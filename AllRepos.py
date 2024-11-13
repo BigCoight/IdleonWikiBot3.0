@@ -19,6 +19,7 @@ from repositories.misc.GemShopRepo import GemShopRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
 from repositories.misc.TaskDescriptionsRepo import TaskDescriptionRepo
 from repositories.misc.TaskShopDescRepo import TaskShopDescRepo
+from repositories.misc.TomeRepo import TomeRepo
 from repositories.misc.equinox.DreamChallengeRepo import DreamChallengeRepo
 from repositories.misc.equinox.DreamUpgradeRepo import DreamUpgradeRepo
 from repositories.misc.weeklyboss.WeeklyActionRepo import WeeklyActionRepo
@@ -75,4 +76,4 @@ AllRepos = [SpecificItemRepo, EnemyRepo, DropTableRepo, NpcRepo, RecipeRepo, Bub
             CaptainBonusRepo, DivinityStyleRepo, GamingBoxRepo, GamingUpgradeRepo, GodInfoRepo, IslandInfoRepo,
             SlabItemSortRepo, GamingSuperbitsRepo, CompanionRepo, AtomColliderRepo, WeeklyBossRepo, WeeklyActionRepo,
             WeeklyShopRepo, DreamChallengeRepo, DreamUpgradeRepo, SummonUpgradeRepo, NinjaUpgradeRepo, JadeUpgradeRepo,
-            MarketInfoRepo, SeedInfoRepo, SummonEnemyRepo, SummonUnitRepo, NinjaItemRepo, FeatherRepo]
+            MarketInfoRepo, SeedInfoRepo, SummonEnemyRepo, SummonUnitRepo, NinjaItemRepo, FeatherRepo, TomeRepo]

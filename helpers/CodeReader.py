@@ -201,8 +201,14 @@ class IdleonReader:
 		self.codeReader.addSection("NinjaInfo = function ()", "NinjaInfo")
 
 		# Tomb
-		self.codeReader.addSection("Tome = function ()", "TombInfo")
+		self.codeReader.addSection("Tome = function ()", "TomeInfo")
 
 		self.codeReader.addSection("Owlz = function ()", "Owlz")
+
+		# Hole
+		self.codeReader.addSection("HolesBuildings = function ()", "HoleBuilding")
+		self.codeReader.addSection("CosmoUpgrades = function ()", "CosmoUpgrades")
+		self.codeReader.addSection("LampWishes = function ()", "LampWishes")
+		self.codeReader.addSection("HolesInfo = function ()", "HoleInfo")
 
 		self.codeReader.readCode()

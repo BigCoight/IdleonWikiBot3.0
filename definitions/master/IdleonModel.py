@@ -180,13 +180,24 @@ class IdleonModel(BaseModel):
 		return res
 
 	@classmethod
-	def fromList(cls, data: List[any]) -> IdleonModel:
+	def fromList(cls, data: List[any], ignore: Set = {}) -> IdleonModel:
 		reqKeys = cls.reqFields()
 		keys = cls.__fields__.keys()
+		if ignore:
+			keysN = []
+			dataN = []
+			for key, val in zip(keys, data):
+				if val not in ignore:
+					keysN.append(key)
+					dataN.append(val)
+		else:
+			keysN = keys
+			dataN = data
+
 		if not (len(reqKeys) <= len(data) <= len(keys)):
 			raise ValueError(f"Error in creating {cls.__name__}:\n"
 			                 f" Length of data keys ({len(data)}) not in range (Required, Total) ({len(reqKeys)}, {len(keys)})")
-		return cls.parse_obj({key: val for key, val in zip(keys, data)})
+		return cls.parse_obj({key: val for key, val in zip(keysN, dataN)})
 
 	def shouldCompare(self) -> bool:
 		return True

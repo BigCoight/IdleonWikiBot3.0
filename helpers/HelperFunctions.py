@@ -6,7 +6,7 @@ from pywikibot import Site, Page
 
 from helpers.Constants import Constants
 
-reAll = r'[ a-zA-Z0-_\'n()@,#!$+{/}%:.~\-&\|/\*]'
+reAll = r'[ a-zA-Z0-_\'n()@,#!$+{/}%:.~\-&\|/\*\u4E00-\u9FFF]'
 
 
 def getFromSplitArray(v: str, replaceUnderscores: bool = True) -> List[List[str]]:

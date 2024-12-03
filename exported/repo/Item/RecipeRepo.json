@@ -98,19 +98,19 @@
     },
     "EquipmentPants1": {
         "intID": "EquipmentPants1",
-        "recipe": [{"item": "Grasslands2", "quantity": 6}, {"item": "CopperBar", "quantity": 3}],
+        "recipe": [{"item": "Grasslands2", "quantity": 6}, {"item": "CraftMat1", "quantity": 10}],
         "levelReqToCraft": 2,
         "expGiven": 14,
         "no": 7,
         "tab": 1,
-        "sellPrice": 51,
+        "sellPrice": 60,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "Grasslands2", "quantity": 6},
-                {"indent": 0, "item": "CopperBar", "quantity": 3}
+                {"indent": 0, "item": "CraftMat1", "quantity": 10}
             ],
-            "detRecipeTotals": [{"item": "Grasslands2", "quantity": 6}, {"item": "CopperBar", "quantity": 3}]
+            "detRecipeTotals": [{"item": "Grasslands2", "quantity": 6}, {"item": "CraftMat1", "quantity": 10}]
         }
     },
     "EquipmentShoes9": {
@@ -181,71 +181,51 @@
     },
     "MaxCapBag7": {
         "intID": "MaxCapBag7",
-        "recipe": [{"item": "OakTree", "quantity": 150}, {"item": "CraftMat5", "quantity": 30}],
+        "recipe": [{"item": "OakTree", "quantity": 150}],
         "levelReqToCraft": 3,
         "expGiven": 18,
         "no": 12,
         "tab": 1,
-        "sellPrice": 660,
+        "sellPrice": 300,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "OakTree", "quantity": 150},
-                {"indent": 0, "item": "CraftMat5", "quantity": 30}
+                {"indent": 0, "item": "OakTree", "quantity": 150}
             ],
-            "detRecipeTotals": [{"item": "OakTree", "quantity": 150}, {"item": "CraftMat5", "quantity": 30}]
+            "detRecipeTotals": [{"item": "OakTree", "quantity": 150}]
         }
     },
     "EquipmentHats15": {
         "intID": "EquipmentHats15",
-        "recipe": [
-            {"item": "Grasslands2", "quantity": 15},
-            {"item": "OakTree", "quantity": 10},
-            {"item": "CraftMat1", "quantity": 10}
-        ],
+        "recipe": [{"item": "Grasslands2", "quantity": 30}],
         "levelReqToCraft": 4,
         "expGiven": 15,
         "no": 13,
         "tab": 1,
-        "sellPrice": 125,
+        "sellPrice": 150,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
-                {"indent": 0, "item": "Grasslands2", "quantity": 15},
-                {"indent": 0, "item": "OakTree", "quantity": 10},
-                {"indent": 0, "item": "CraftMat1", "quantity": 10}
+                {"indent": 0, "item": "Grasslands2", "quantity": 30}
             ],
-            "detRecipeTotals": [
-                {"item": "Grasslands2", "quantity": 15},
-                {"item": "OakTree", "quantity": 10},
-                {"item": "CraftMat1", "quantity": 10}
-            ]
+            "detRecipeTotals": [{"item": "Grasslands2", "quantity": 30}]
         }
     },
     "EquipmentPunching2": {
         "intID": "EquipmentPunching2",
-        "recipe": [
-            {"item": "CopperBar", "quantity": 20},
-            {"item": "OakTree", "quantity": 75},
-            {"item": "CraftMat5", "quantity": 20}
-        ],
+        "recipe": [{"item": "CopperBar", "quantity": 20}, {"item": "CraftMat5", "quantity": 20}],
         "levelReqToCraft": 4,
         "expGiven": 19,
         "no": 14,
         "tab": 1,
-        "sellPrice": 530,
+        "sellPrice": 380,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "CopperBar", "quantity": 20},
-                {"indent": 0, "item": "OakTree", "quantity": 75},
                 {"indent": 0, "item": "CraftMat5", "quantity": 20}
             ],
-            "detRecipeTotals": [
-                {"item": "CopperBar", "quantity": 20},
-                {"item": "OakTree", "quantity": 75},
-                {"item": "CraftMat5", "quantity": 20}
-            ]
+            "detRecipeTotals": [{"item": "CopperBar", "quantity": 20}, {"item": "CraftMat5", "quantity": 20}]
         }
     },
     "MaxCapBag8": {
@@ -253,54 +233,42 @@
         "recipe": [
             {"item": "FoodHealth1", "quantity": 75},
             {"item": "FoodHealth3", "quantity": 25},
-            {"item": "OakTree", "quantity": 60},
             {"item": "CopperBar", "quantity": 15}
         ],
         "levelReqToCraft": 5,
         "expGiven": 22,
         "no": 15,
         "tab": 1,
-        "sellPrice": 550,
+        "sellPrice": 430,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "FoodHealth1", "quantity": 75},
                 {"indent": 0, "item": "FoodHealth3", "quantity": 25},
-                {"indent": 0, "item": "OakTree", "quantity": 60},
                 {"indent": 0, "item": "CopperBar", "quantity": 15}
             ],
             "detRecipeTotals": [
                 {"item": "FoodHealth1", "quantity": 75},
                 {"item": "FoodHealth3", "quantity": 25},
-                {"item": "OakTree", "quantity": 60},
                 {"item": "CopperBar", "quantity": 15}
             ]
         }
     },
     "MaxCapBagM2": {
         "intID": "MaxCapBagM2",
-        "recipe": [
-            {"item": "CraftMat5", "quantity": 80},
-            {"item": "Grasslands2", "quantity": 40},
-            {"item": "Grasslands3", "quantity": 30}
-        ],
+        "recipe": [{"item": "CraftMat5", "quantity": 80}, {"item": "Grasslands2", "quantity": 50}],
         "levelReqToCraft": 6,
         "expGiven": 25,
         "no": 16,
         "tab": 1,
-        "sellPrice": 1370,
+        "sellPrice": 1210,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "CraftMat5", "quantity": 80},
-                {"indent": 0, "item": "Grasslands2", "quantity": 40},
-                {"indent": 0, "item": "Grasslands3", "quantity": 30}
+                {"indent": 0, "item": "Grasslands2", "quantity": 50}
             ],
-            "detRecipeTotals": [
-                {"item": "CraftMat5", "quantity": 80},
-                {"item": "Grasslands2", "quantity": 40},
-                {"item": "Grasslands3", "quantity": 30}
-            ]
+            "detRecipeTotals": [{"item": "CraftMat5", "quantity": 80}, {"item": "Grasslands2", "quantity": 50}]
         }
     },
     "EquipmentHats17": {
@@ -987,13 +955,13 @@
         "expGiven": 400,
         "no": 49,
         "tab": 1,
-        "sellPrice": 9128,
+        "sellPrice": 9155,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentPants1", "quantity": 3},
                 {"indent": 1, "item": "Grasslands2", "quantity": 18},
-                {"indent": 1, "item": "CopperBar", "quantity": 9},
+                {"indent": 1, "item": "CraftMat1", "quantity": 30},
                 {"indent": 0, "item": "Forest2", "quantity": 275},
                 {"indent": 0, "item": "BirchTree", "quantity": 700}
             ],
@@ -1001,7 +969,7 @@
                 {"item": "Forest2", "quantity": 275},
                 {"item": "BirchTree", "quantity": 700},
                 {"item": "Grasslands2", "quantity": 18},
-                {"item": "CopperBar", "quantity": 9}
+                {"item": "CraftMat1", "quantity": 30}
             ]
         }
     },
@@ -1012,19 +980,19 @@
         "expGiven": 400,
         "no": 50,
         "tab": 1,
-        "sellPrice": 1553,
+        "sellPrice": 1580,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentPants1", "quantity": 3},
                 {"indent": 1, "item": "Grasslands2", "quantity": 18},
-                {"indent": 1, "item": "CopperBar", "quantity": 9},
+                {"indent": 1, "item": "CraftMat1", "quantity": 30},
                 {"indent": 0, "item": "Iron", "quantity": 200}
             ],
             "detRecipeTotals": [
                 {"item": "Iron", "quantity": 200},
                 {"item": "Grasslands2", "quantity": 18},
-                {"item": "CopperBar", "quantity": 9}
+                {"item": "CraftMat1", "quantity": 30}
             ]
         }
     },
@@ -1563,14 +1531,14 @@
         "expGiven": 1,
         "no": 69,
         "tab": 1,
-        "sellPrice": 20256,
+        "sellPrice": 20310,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentPants15", "quantity": 2},
                 {"indent": 1, "item": "EquipmentPants1", "quantity": 6},
                 {"indent": 2, "item": "Grasslands2", "quantity": 36},
-                {"indent": 2, "item": "CopperBar", "quantity": 18},
+                {"indent": 2, "item": "CraftMat1", "quantity": 60},
                 {"indent": 1, "item": "Forest2", "quantity": 550},
                 {"indent": 1, "item": "BirchTree", "quantity": 1400},
                 {"indent": 0, "item": "Fish1", "quantity": 500}
@@ -1580,7 +1548,7 @@
                 {"item": "Forest2", "quantity": 550},
                 {"item": "BirchTree", "quantity": 1400},
                 {"item": "Grasslands2", "quantity": 36},
-                {"item": "CopperBar", "quantity": 18}
+                {"item": "CraftMat1", "quantity": 60}
             ]
         }
     },
@@ -1591,14 +1559,14 @@
         "expGiven": 1,
         "no": 70,
         "tab": 1,
-        "sellPrice": 4606,
+        "sellPrice": 4660,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentPants18", "quantity": 2},
                 {"indent": 1, "item": "EquipmentPants1", "quantity": 6},
                 {"indent": 2, "item": "Grasslands2", "quantity": 36},
-                {"indent": 2, "item": "CopperBar", "quantity": 18},
+                {"indent": 2, "item": "CraftMat1", "quantity": 60},
                 {"indent": 1, "item": "Iron", "quantity": 400},
                 {"indent": 0, "item": "Bug1", "quantity": 500}
             ],
@@ -1606,7 +1574,7 @@
                 {"item": "Bug1", "quantity": 500},
                 {"item": "Iron", "quantity": 400},
                 {"item": "Grasslands2", "quantity": 36},
-                {"item": "CopperBar", "quantity": 18}
+                {"item": "CraftMat1", "quantity": 60}
             ]
         }
     },
@@ -2003,13 +1971,12 @@
         "expGiven": 3300,
         "no": 5,
         "tab": 2,
-        "sellPrice": 46590,
+        "sellPrice": 46140,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentPunching2", "quantity": 3},
                 {"indent": 1, "item": "CopperBar", "quantity": 60},
-                {"indent": 1, "item": "OakTree", "quantity": 225},
                 {"indent": 1, "item": "CraftMat5", "quantity": 60},
                 {"indent": 0, "item": "CraftMat3", "quantity": 5000},
                 {"indent": 0, "item": "ToiletTree", "quantity": 2000}
@@ -2018,7 +1985,6 @@
                 {"item": "CraftMat3", "quantity": 5000},
                 {"item": "ToiletTree", "quantity": 2000},
                 {"item": "CopperBar", "quantity": 60},
-                {"item": "OakTree", "quantity": 225},
                 {"item": "CraftMat5", "quantity": 60}
             ]
         }
@@ -3627,14 +3593,13 @@
         "expGiven": 500000,
         "no": 65,
         "tab": 2,
-        "sellPrice": 103229,
+        "sellPrice": 102779,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentPunching3", "quantity": 1},
                 {"indent": 1, "item": "EquipmentPunching2", "quantity": 3},
                 {"indent": 2, "item": "CopperBar", "quantity": 60},
-                {"indent": 2, "item": "OakTree", "quantity": 225},
                 {"indent": 2, "item": "CraftMat5", "quantity": 60},
                 {"indent": 1, "item": "CraftMat3", "quantity": 5000},
                 {"indent": 1, "item": "ToiletTree", "quantity": 2000},
@@ -3658,7 +3623,6 @@
                 {"item": "TreeInterior1b", "quantity": 3},
                 {"item": "Fish4", "quantity": 1400},
                 {"item": "CopperBar", "quantity": 60},
-                {"item": "OakTree", "quantity": 225},
                 {"item": "CraftMat5", "quantity": 60},
                 {"item": "GoldBar", "quantity": 250},
                 {"item": "PureWater", "quantity": 8},
@@ -4074,14 +4038,13 @@
         "expGiven": 3,
         "no": 5,
         "tab": 3,
-        "sellPrice": 15143180,
+        "sellPrice": 15142280,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
                 {"indent": 0, "item": "EquipmentPunching3", "quantity": 2},
                 {"indent": 1, "item": "EquipmentPunching2", "quantity": 6},
                 {"indent": 2, "item": "CopperBar", "quantity": 120},
-                {"indent": 2, "item": "OakTree", "quantity": 450},
                 {"indent": 2, "item": "CraftMat5", "quantity": 120},
                 {"indent": 1, "item": "CraftMat3", "quantity": 10000},
                 {"indent": 1, "item": "ToiletTree", "quantity": 4000},
@@ -4092,7 +4055,6 @@
                 {"item": "CraftMat3", "quantity": 10000},
                 {"item": "ToiletTree", "quantity": 4000},
                 {"item": "CopperBar", "quantity": 120},
-                {"item": "OakTree", "quantity": 450},
                 {"item": "CraftMat5", "quantity": 120}
             ]
         }
@@ -5508,7 +5470,7 @@
         "expGiven": 1200000,
         "no": 53,
         "tab": 3,
-        "sellPrice": 65829560,
+        "sellPrice": 65827760,
         "recipeFrom": [],
         "detailedRecipe": {
             "detRecipe": [
@@ -5516,7 +5478,6 @@
                 {"indent": 1, "item": "EquipmentPunching3", "quantity": 4},
                 {"indent": 2, "item": "EquipmentPunching2", "quantity": 12},
                 {"indent": 3, "item": "CopperBar", "quantity": 240},
-                {"indent": 3, "item": "OakTree", "quantity": 900},
                 {"indent": 3, "item": "CraftMat5", "quantity": 240},
                 {"indent": 2, "item": "CraftMat3", "quantity": 20000},
                 {"indent": 2, "item": "ToiletTree", "quantity": 8000},
@@ -5541,7 +5502,6 @@
                 {"item": "Soul1", "quantity": 1000},
                 {"item": "DementiaBar", "quantity": 350},
                 {"item": "CopperBar", "quantity": 240},
-                {"item": "OakTree", "quantity": 900},
                 {"item": "CraftMat5", "quantity": 240}
             ]
         }

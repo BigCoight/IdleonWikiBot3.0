@@ -1232,7 +1232,7 @@ export const initBubbleRepo = () => {
                     <BubbleModel>{
                         "cauldron": "Kazam Cauldron",
                         "name": "Ninja Looter",
-                        "x1": 0.5,
+                        "x1": 0.3,
                         "x2": 60,
                         "func": "decayMulti",
                         "description": "{x Item Find chance for your ninja twin while sneaking!",
@@ -2083,8 +2083,8 @@ export const initBubbleRepo = () => {
                         "x1": 1,
                         "x2": 1,
                         "func": "1",
-                        "description": "Gives a redeemable talent point for the 2nd Talent Tab. Applies to all characters. Also, this item's cost will never reset, never ever ever!",
-                        "requirements": [<LiquidComponentModel>{"liquidNo": "1", "quantity": 3}, <LiquidComponentModel>{"liquidNo": "2", "quantity": 1}],
+                        "description": "Gives a redeemable talent point for the 2nd Talent",
+                        "requirements": [<LiquidComponentModel>{"liquidNo": "1", "quantity": 1}, <LiquidComponentModel>{"liquidNo": "2", "quantity": 3}],
                         "bonusKey": "0"
                     },
                     <BubbleModel>{
@@ -2173,8 +2173,8 @@ export const initBubbleRepo = () => {
                         "x1": 1,
                         "x2": 1,
                         "func": "1",
-                        "description": "Gives a redeemable talent point for the 3rd Talent Tab. Applies to all characters. This item's cost will reset every 50,000,000 years.",
-                        "requirements": [<LiquidComponentModel>{"liquidNo": "3", "quantity": 3}],
+                        "description": "Gives a redeemable talent point for the 3rd Talent",
+                        "requirements": [<LiquidComponentModel>{"liquidNo": "3", "quantity": 4}],
                         "bonusKey": "0"
                     }
                 ]

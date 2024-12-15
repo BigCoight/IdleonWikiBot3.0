@@ -2,9 +2,8 @@
 # oldV = IdleonReader("156", True)
 # NpcRepo.initialise(newV.codeReader)
 from helpers.CodeReader import IdleonReader
-from repositories.misc.MapPortalsRepo import MapPortalsRepo
+from repositories.misc.world5.hole.AmplifierStoneRepo import AmplifierStoneRepo
 
-newV = IdleonReader("203", True)
-oldV = IdleonReader("201", True)
+newV = IdleonReader("2.23", True)
 
-MapPortalsRepo.initialise(newV.codeReader)
+AmplifierStoneRepo.initialise(newV.codeReader)

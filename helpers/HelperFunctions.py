@@ -36,6 +36,36 @@ def getFromSplitArray(v: str, replaceUnderscores: bool = True) -> List[List[str]
 	return newList
 
 
+def getFromMixedArray(v: str, replaceUnderscores: bool = True) -> List[List[str]]:
+	"""
+	Converts a section into a list of strings based upon the exportation of an array represented as
+	"0 1 2 3 4 5 6 7 8 9".split(" ")
+	Args:
+		v:
+
+	Returns:
+
+	"""
+	section = formatStr(v, )  # ["  ", "\n"]
+	subSections = re.findall(fr'"(.*?)"\.split|\[(.*?)\],?', section)
+	newSections = []
+	for subSec in subSections:
+		if subSec[0]:
+			if subSec[0].count(" ") > subSec[0].count(";"):
+				newSections.append(subSec[0].split(" "))
+			else:
+				newSections.append(subSec[0].split(";"))
+		else:
+			newSections.append(strToArray(subSec[1], replaceUnderscores))
+	newList = []
+	for subSection in newSections:
+		internalList = []
+		for i in range(len(subSection)):
+			internalList.append(formatStr(subSection[i], replaceUnderscores = replaceUnderscores))
+		newList.append(internalList[:])
+	return newList
+
+
 def getFromSplit(v: str) -> List[str]:
 	"""
 	Converts a section into a list of strings based upon the exportation of an array represented as

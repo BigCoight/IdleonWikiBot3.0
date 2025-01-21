@@ -849,7 +849,11 @@ export const initNpcRepo = () => {
                         "ConsumeItems": false,
                         "InventorySpacesNeeded": 1,
                         "NoSpaceIndex": 10,
-                        "Rewards": [<CoinRewardModel>{"item": "", "quantity": 150}, <ComponentModel>{"item": "rtt0", "quantity": 3}],
+                        "Rewards": [
+                            <ComponentModel>{"item": "EquipmentHats7", "quantity": 1},
+                            <CoinRewardModel>{"item": "", "quantity": 150},
+                            <ComponentModel>{"item": "rtt0", "quantity": 3}
+                        ],
                         "QuestName": "Scripticus3",
                         "Difficulty": 1,
                         "note": <NoteModel>{
@@ -976,18 +980,15 @@ export const initNpcRepo = () => {
                         "InventorySpacesNeeded": 2,
                         "NoSpaceIndex": 40,
                         "Rewards": [
-                            <ComponentModel>{"item": "InvBag3", "quantity": 1},
                             <ComponentModel>{"item": "rtt0", "quantity": 10},
+                            <ComponentModel>{"item": "ExpBalloon1", "quantity": 2},
                             <ExpRewardModel>{"item": "Experience0", "quantity": 2500}
                         ],
                         "QuestName": "Scripticus10",
                         "Difficulty": 2,
                         "note": <NoteModel>{"note": " "},
                         "CustomType": "Scripticus10",
-                        "CustomArray": [
-                            <CustomReqModel>{"desc": "Reach Boss Room:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
-                            <CustomReqModel>{"desc": "Portals Unlocked:", "finalV": 7, "type": "GreaterEqual", "startV": 0}
-                        ]
+                        "CustomArray": [<CustomReqModel>{"desc": "Boss Room Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
                     },
                     "The Bigger they are, the Bigger they Fall!": <CustomQuestModel>{
                         "Type": QuestTypeEnum.Custom,
@@ -1125,7 +1126,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
-                        "DialogueText": "Dont forget to equip your Boxing Gloves it'll give you more power!",
+                        "DialogueText": "Equip that Red Headband reward it'll give you more power!",
                         "NextIndex": 13,
                         "Name": ""
                     },
@@ -1240,7 +1241,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "You may not remember this but when you hit the ground you knocked off the Orange Gem powering the town's portal! If we're gonna get you back to being a Top Gamer that crystal needs to be returned!",
-                        "NextIndex": 39,
+                        "NextIndex": 31,
                         "Name": ""
                     },
                     <DialogueLineModel>{
@@ -2691,7 +2692,7 @@ export const initNpcRepo = () => {
                         "Rewards": [
                             <ComponentModel>{"item": "Quest5", "quantity": 1},
                             <ComponentModel>{"item": "ResetCompleted", "quantity": 3},
-                            <ComponentModel>{"item": "StoneW1", "quantity": 1}
+                            <ComponentModel>{"item": "ResetFrag", "quantity": 9}
                         ],
                         "QuestName": "Promotheus2",
                         "Difficulty": 1,
@@ -3505,8 +3506,8 @@ export const initNpcRepo = () => {
                 "dialogue": [
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
-                        "DialogueText": "Hallo! Welcome to tha Jungle yeees come raight in!",
-                        "NextIndex": 1,
+                        "DialogueText": "Hallo! Welcome to tha Jungle. I am pleased to make your aquaintance! QUEST:Go complete Scripticus' quests until he asks you for Foreign Aid... ok this isn't really a quest but Stiltzcho wont wanna talk to you until you do that!",
+                        "NextIndex": 0,
                         "Name": ""
                     },
                     <DialogueLineModel>{
@@ -13264,12 +13265,6 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "Bruh what even ARE you...? Ain't never saw that class you got there is that even legit?",
-                        "NextIndex": 6,
-                        "Name": ""
-                    },
-                    <DialogueLineModel>{
-                        "Type": QuestTypeEnum.NoQuest,
-                        "DialogueText": "Bruh wait what even ARE you...? Ain't never saw that class you got there where'd you get it?? I sure didn't give it to you...",
                         "NextIndex": -1,
                         "Name": ""
                     }

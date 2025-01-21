@@ -5,8 +5,8 @@
 |x1=3
 |x2=30
 |form2=bigBase
-|y1=108
-|y2=2
+|y1=160
+|y2=1
 |cooldown=12
 |actiontime=0.8
 |manacost=20
@@ -15,8 +15,8 @@
 |name=Axe Hurl
 |textArr=Throws axe in a downward arc, which deals (Table 1)% dmg to up to (Table 2) monsters.
 |form1=bigBase
-|x1=200
-|x2=3
+|x1=150
+|x2=1
 |form2=intervalAdd
 |y1=2
 |y2=50
@@ -52,7 +52,7 @@
 }}
 {{Talent
 |name=Monster Decimator
-|textArr=There is a (Table 1)% chance for a monster kill to be counted for double.
+|textArr=There is a (Table 1)% chance for a monster kill to be counted as double for opening portals and killcount.
 |form1=decay
 |x1=100
 |x2=50
@@ -97,10 +97,10 @@
 }}
 {{Talent
 |name=Worming Undercover
-|textArr=(Table 1)% chance
-|form1=9.3
-|x1=-1
-|x2=-1
+|textArr=(Table 1)% chance to wake the sleeper agent worm within the fish, letting you instantly catch
+|form1=bigBase
+|x1=9.3
+|x2=0.7
 |cooldown=15
 |actiontime=1.5
 |manacost=15

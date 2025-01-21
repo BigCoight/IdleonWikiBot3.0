@@ -1217,7 +1217,7 @@
             {
                 "cauldron": "Kazam Cauldron",
                 "name": "Ninja Looter",
-                "x1": 0.3,
+                "x1": 0.5,
                 "x2": 60,
                 "func": "decayMulti",
                 "description": "{x Item Find chance for your ninja twin while sneaking!",
@@ -2068,8 +2068,8 @@
                 "x1": 1,
                 "x2": 1,
                 "func": "1",
-                "description": "Gives a redeemable talent point for the 2nd Talent",
-                "requirements": [{"liquidNo": "1", "quantity": 1}, {"liquidNo": "2", "quantity": 3}],
+                "description": "Gives a redeemable talent point for the 2nd Talent Tab. Applies to all characters. Also, this item's cost will never reset, never ever ever!",
+                "requirements": [{"liquidNo": "1", "quantity": 3}, {"liquidNo": "2", "quantity": 1}],
                 "bonusKey": "0"
             },
             {
@@ -2158,8 +2158,8 @@
                 "x1": 1,
                 "x2": 1,
                 "func": "1",
-                "description": "Gives a redeemable talent point for the 3rd Talent",
-                "requirements": [{"liquidNo": "3", "quantity": 4}],
+                "description": "Gives a redeemable talent point for the 3rd Talent Tab. Applies to all characters. This item's cost will reset every 50,000,000 years.",
+                "requirements": [{"liquidNo": "3", "quantity": 3}],
                 "bonusKey": "0"
             }
         ]

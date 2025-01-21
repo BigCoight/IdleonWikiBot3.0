@@ -576,12 +576,12 @@ export const initTomeRepo = () => {
                 "desc": undefined
             }),
         new TomeBase(71, <TomeModel>{
-                "name": "Total Career Summoning Wins 膛",
-                "keyQty": 160,
+                "name": "Best Endless Summoning Round 膛",
+                "keyQty": 100,
                 "scalingType": TomeScalingEnum.decay,
-                "totalVal": 500,
+                "totalVal": 200,
                 "decimalDisplay": undefined,
-                "desc": "Rack up those wins! Endless Summoning wins count for this too, of course!"
+                "desc": "No, this isn't out yet. It's on the Weekly Update Roadmap though!"
             }),
         new TomeBase(72, <TomeModel>{
                 "name": "Ninja Floors Unlocked",

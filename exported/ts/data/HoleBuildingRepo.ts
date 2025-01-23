@@ -464,7 +464,7 @@ export const initHoleBuildingRepo = () => {
                 "baseCost": 10,
                 "costCalcType": false,
                 "desc": "+15% All Skill Efficiency, and +10% All Skill EXP gain per Undying Hive Layer you've destroyed!",
-                "order": 35
+                "order": 61
             }),
         new HoleBuildingBase(51, <HoleBuildingModel>{
                 "name": "Rift Guy",
@@ -473,7 +473,7 @@ export const initHoleBuildingRepo = () => {
                 "baseCost": 10,
                 "costCalcType": false,
                 "desc": "Hey bet you weren't expecting to see me here, huh? Well, that's just how it goes with me, it's in my blood. It's how I roll. Go ahead, create me. Or don't, I'll keep being me.",
-                "order": 8
+                "order": 35
             }),
         new HoleBuildingBase(52, <HoleBuildingModel>{
                 "name": "DNA Rock Tumbler",
@@ -482,7 +482,7 @@ export const initHoleBuildingRepo = () => {
                 "baseCost": 10,
                 "costCalcType": false,
                 "desc": "Gives you a +60% chance to get an additional Grey Gene when trashing a pet for every Power of 10 Gravel you have. @ Total Bonus: +{% Chance for extra Gene",
-                "order": 21
+                "order": 8
             }),
         new HoleBuildingBase(53, <HoleBuildingModel>{
                 "name": "Final Ballad of the Snail",
@@ -491,7 +491,7 @@ export const initHoleBuildingRepo = () => {
                 "baseCost": 10,
                 "costCalcType": false,
                 "desc": "Gives you a 1.04x higher success chance when leveling up Snail for every Power of 10 Trebel Notes you have. @ Total Bonus: {x Snail success chance",
-                "order": 30
+                "order": 21
             }),
         new HoleBuildingBase(54, <HoleBuildingModel>{
                 "name": "Noise Reduction Therapy",
@@ -500,7 +500,7 @@ export const initHoleBuildingRepo = () => {
                 "baseCost": 10,
                 "costCalcType": false,
                 "desc": "Gives you a multiplicative 1.20x Stealth bonus for all ninjas for every Power of 10 Quaver Notes you have. @ Total Bonus: {x Stealth",
-                "order": 9
+                "order": 30
             }),
         new HoleBuildingBase(55, <HoleBuildingModel>{
                 "name": "Tune of Artifaction",
@@ -509,7 +509,7 @@ export const initHoleBuildingRepo = () => {
                 "baseCost": 10,
                 "costCalcType": false,
                 "desc": "Gives you +10% Artifact Find Chance for every Power of 10 Natural Notes you have. @ Total Bonus: +{% Artifact Find Chance",
-                "order": 51
+                "order": 9
             }),
         new HoleBuildingBase(56, <HoleBuildingModel>{
                 "name": "Heavy Redstone Seasoning",
@@ -518,7 +518,7 @@ export const initHoleBuildingRepo = () => {
                 "baseCost": 10,
                 "costCalcType": false,
                 "desc": "Gives you a multiplicative 1.30x Cooking Speed bonus for every Power of 10 Redstone you have. @ Total Bonus: {x Cooking Speed",
-                "order": 36
+                "order": 51
             }),
         new HoleBuildingBase(57, <HoleBuildingModel>{
                 "name": "True Golden Edge",
@@ -527,7 +527,7 @@ export const initHoleBuildingRepo = () => {
                 "baseCost": 10,
                 "costCalcType": false,
                 "desc": "Gives all your players +20% Damage for every Power of 10 Golddust you have. @ Total Bonus: +{% Damage",
-                "order": 22
+                "order": 36
             }),
         new HoleBuildingBase(58, <HoleBuildingModel>{
                 "name": "Loadin' some 'Lode",
@@ -536,7 +536,7 @@ export const initHoleBuildingRepo = () => {
                 "baseCost": 12,
                 "costCalcType": true,
                 "desc": "Gives +5 Bucket Fill Rate per Power of 10 Motherlode Ore mined. You have mined # so far! @ Total Bonus: +{/hr Bucket Fill Rate",
-                "order": 10
+                "order": 22
             }),
         new HoleBuildingBase(59, <HoleBuildingModel>{
                 "name": "Hiring the Hounds from Beyond",
@@ -545,7 +545,7 @@ export const initHoleBuildingRepo = () => {
                 "baseCost": 30,
                 "costCalcType": true,
                 "desc": "Gives +10 B.F.R. per 100 hounds defeated in best runs of each class. 尬  Beginner:!, Warrior:#, Archer:$, Mage:% @ Total Bonus: +{/hr Bucket Fill Rate",
-                "order": 31
+                "order": 10
             }),
         new HoleBuildingBase(60, <HoleBuildingModel>{
                 "name": "Triple Tap Tinkle",
@@ -554,6 +554,15 @@ export const initHoleBuildingRepo = () => {
                 "baseCost": 10,
                 "costCalcType": false,
                 "desc": "Ringing the Bell now has another +30% chance of giving +2 LV to a bonus instead of just +1 LV. Also, there's a new +20% chance of giving +3 LV instead of +2 or +1!",
+                "order": 31
+            }),
+        new HoleBuildingBase(61, <HoleBuildingModel>{
+                "name": "Compound Interest",
+                "squareImageType": 2,
+                "costType": SedimentTypeEnum.Gravel,
+                "baseCost": 600,
+                "costCalcType": false,
+                "desc": "You start with +1 more Court Coins every Power of 2 HRs of AFK time at the Justice Monument! So 2Hrs you get +1 coin, 4Hrs you get +2 coins, 8Hrs you get +3 coins, and so on!",
                 "order": 11
             })    
 ]

@@ -1101,14 +1101,14 @@ export const initAchievementRepo = () => {
         new AchievementBase(156, <AchievementModel>{
                 "name": "Hairy Ice Comb",
                 "qty": 3000,
-                "desc": "Manually loot 1000 floof poofs, melty cubes, and moustache comb stacks -- AFK claiming doesn't count.",
+                "desc": "Manually loot 1000 floof poofs, then 1000 melty cubes, then 1000 moustache combs. So 3000 in total!",
                 "rewards": "*Frosty Peaks BG &for Title Screen",
                 "world": "Frostbite Tundra"
             }),
         new AchievementBase(157, <AchievementModel>{
                 "name": "Giant Slayer",
                 "qty": 25,
-                "desc": "Defeat 5 Giant Mobs of each type Bloque, Mamooth, Snowman, Penguin, Thermister. Do it in that monster order.",
+                "desc": "Defeat 5 Giant Mobs of each type Bloque, Mamooth, Snowman, Penguin, then Thermister, IN THAT ORDER. So 25 in total!.",
                 "rewards": "*Tundra Outback BG &for Title Screen",
                 "world": "Frostbite Tundra"
             }),
@@ -2627,7 +2627,7 @@ export const initAchievementRepo = () => {
         new AchievementBase(374, <AchievementModel>{
                 "name": "This, is, Summoning!",
                 "qty": 1,
-                "desc": "Survive for 200 seconds in the Endless Summoning Mode, which isn't out yet.",
+                "desc": "Survive for 200 seconds in The Gambit cavern, which isn't out yet.",
                 "rewards": "*1.05x All Essence &Gain",
                 "world": "Spirited Valley"
             }),

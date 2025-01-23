@@ -133,7 +133,7 @@
         "x2": 10,
         "func": "intervalAdd",
         "type": "",
-        "lvlUpText": "+{ Talent Pt"
+        "lvlUpText": "+1 Pt per 10 LVs"
     },
     "Bonus 17": {
         "effect": "+{ Weapon Power",
@@ -302,5 +302,21 @@
         "func": "decay",
         "type": "%",
         "lvlUpText": "+{% EXP"
+    },
+    "Bonus 38": {
+        "effect": "+{% Villager XP multi",
+        "x1": 40,
+        "x2": 100,
+        "func": "decay",
+        "type": "%",
+        "lvlUpText": "+{% XP multi"
+    },
+    "Bonus 39": {
+        "effect": "+{% Gold Ball Gain",
+        "x1": 1,
+        "x2": 0,
+        "func": "add",
+        "type": "%",
+        "lvlUpText": "+{% Balls"
     }
 }

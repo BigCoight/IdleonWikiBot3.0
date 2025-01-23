@@ -849,11 +849,7 @@ export const initNpcRepo = () => {
                         "ConsumeItems": false,
                         "InventorySpacesNeeded": 1,
                         "NoSpaceIndex": 10,
-                        "Rewards": [
-                            <ComponentModel>{"item": "EquipmentHats7", "quantity": 1},
-                            <CoinRewardModel>{"item": "", "quantity": 150},
-                            <ComponentModel>{"item": "rtt0", "quantity": 3}
-                        ],
+                        "Rewards": [<CoinRewardModel>{"item": "", "quantity": 150}, <ComponentModel>{"item": "rtt0", "quantity": 3}],
                         "QuestName": "Scripticus3",
                         "Difficulty": 1,
                         "note": <NoteModel>{
@@ -873,14 +869,18 @@ export const initNpcRepo = () => {
                         "ConsumeItems": false,
                         "InventorySpacesNeeded": 3,
                         "NoSpaceIndex": 14,
-                        "Rewards": [<ComponentModel>{"item": "InvBag1", "quantity": 1}, <ExpRewardModel>{"item": "Experience0", "quantity": 5}],
+                        "Rewards": [<ComponentModel>{"item": "InvBag1", "quantity": 1}, <ExpRewardModel>{"item": "Experience0", "quantity": 15}],
                         "QuestName": "Scripticus4",
                         "Difficulty": 3,
                         "note": <NoteModel>{
                             "note": "Map 2 is the third Grasslands zone, [[Worlds#G3 - Froggy Fields|Froggy Fields]]."
                         },
                         "CustomType": "Scripticus4",
-                        "CustomArray": [<CustomReqModel>{"desc": "Reach map 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                        "CustomArray": [
+                            <CustomReqModel>{"desc": "Reach map 2:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                            <CustomReqModel>{"desc": "Equip Boxing Gloves:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                            <CustomReqModel>{"desc": "Use Teleport in MAP:", "finalV": 1, "type": "GreaterEqual", "startV": 0}
+                        ]
                     },
                     "The Choice is Yours!": <CustomQuestModel>{
                         "Type": QuestTypeEnum.Custom,
@@ -890,7 +890,7 @@ export const initNpcRepo = () => {
                         "ConsumeItems": false,
                         "InventorySpacesNeeded": 0,
                         "NoSpaceIndex": 18,
-                        "Rewards": [<ComponentModel>{"item": "Timecandy1", "quantity": 2}, <CoinRewardModel>{"item": "", "quantity": 280}],
+                        "Rewards": [<ComponentModel>{"item": "Timecandy1", "quantity": 1}, <CoinRewardModel>{"item": "", "quantity": 480}],
                         "QuestName": "Scripticus5",
                         "Difficulty": 1,
                         "note": <NoteModel>{"note": ""},
@@ -980,15 +980,18 @@ export const initNpcRepo = () => {
                         "InventorySpacesNeeded": 2,
                         "NoSpaceIndex": 40,
                         "Rewards": [
+                            <ComponentModel>{"item": "InvBag3", "quantity": 1},
                             <ComponentModel>{"item": "rtt0", "quantity": 10},
-                            <ComponentModel>{"item": "ExpBalloon1", "quantity": 2},
                             <ExpRewardModel>{"item": "Experience0", "quantity": 2500}
                         ],
                         "QuestName": "Scripticus10",
                         "Difficulty": 2,
                         "note": <NoteModel>{"note": " "},
                         "CustomType": "Scripticus10",
-                        "CustomArray": [<CustomReqModel>{"desc": "Boss Room Found:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                        "CustomArray": [
+                            <CustomReqModel>{"desc": "Reach Boss Room:", "finalV": 1, "type": "GreaterEqual", "startV": 0},
+                            <CustomReqModel>{"desc": "Portals Unlocked:", "finalV": 7, "type": "GreaterEqual", "startV": 0}
+                        ]
                     },
                     "The Bigger they are, the Bigger they Fall!": <CustomQuestModel>{
                         "Type": QuestTypeEnum.Custom,
@@ -1126,7 +1129,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
-                        "DialogueText": "Equip that Red Headband reward it'll give you more power!",
+                        "DialogueText": "Dont forget to equip your Boxing Gloves it'll give you more power!",
                         "NextIndex": 13,
                         "Name": ""
                     },
@@ -1241,7 +1244,7 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "You may not remember this but when you hit the ground you knocked off the Orange Gem powering the town's portal! If we're gonna get you back to being a Top Gamer that crystal needs to be returned!",
-                        "NextIndex": 31,
+                        "NextIndex": 39,
                         "Name": ""
                     },
                     <DialogueLineModel>{
@@ -2692,7 +2695,7 @@ export const initNpcRepo = () => {
                         "Rewards": [
                             <ComponentModel>{"item": "Quest5", "quantity": 1},
                             <ComponentModel>{"item": "ResetCompleted", "quantity": 3},
-                            <ComponentModel>{"item": "ResetFrag", "quantity": 9}
+                            <ComponentModel>{"item": "StoneW1", "quantity": 1}
                         ],
                         "QuestName": "Promotheus2",
                         "Difficulty": 1,
@@ -2808,7 +2811,7 @@ export const initNpcRepo = () => {
                     },
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
-                        "DialogueText": "That's a great choice! You should go talk to Grasslands Gary in town now get yourself some Class Recipes to match your choice! <br> And don't forget to come back here on new characters to pick the other classes!",
+                        "DialogueText": "That's a great choice! I'm curious to see which class you pick on your next character... you'll see what I mean!",
                         "NextIndex": 12,
                         "Name": ""
                     },
@@ -3506,8 +3509,8 @@ export const initNpcRepo = () => {
                 "dialogue": [
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
-                        "DialogueText": "Hallo! Welcome to tha Jungle. I am pleased to make your aquaintance! QUEST:Go complete Scripticus' quests until he asks you for Foreign Aid... ok this isn't really a quest but Stiltzcho wont wanna talk to you until you do that!",
-                        "NextIndex": 0,
+                        "DialogueText": "Hallo! Welcome to tha Jungle yeees come raight in!",
+                        "NextIndex": 1,
                         "Name": ""
                     },
                     <DialogueLineModel>{
@@ -4872,7 +4875,7 @@ export const initNpcRepo = () => {
                         "QuestName": "Speccius1",
                         "Difficulty": 3,
                         "note": <NoteModel>{"note": ""},
-                        "ItemReq": [<ComponentModel>{"item": "FoodHealth6", "quantity": 130}, <ComponentModel>{"item": "DesertA3", "quantity": 150}]
+                        "ItemReq": [<ComponentModel>{"item": "FoodHealth6", "quantity": 100}, <ComponentModel>{"item": "DesertA3", "quantity": 50}]
                     },
                     "Specialization Station": <CustomQuestModel>{
                         "Type": QuestTypeEnum.Custom,
@@ -13265,6 +13268,106 @@ export const initNpcRepo = () => {
                     <DialogueLineModel>{
                         "Type": QuestTypeEnum.NoQuest,
                         "DialogueText": "Bruh what even ARE you...? Ain't never saw that class you got there is that even legit?",
+                        "NextIndex": 6,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Bruh wait what even ARE you...? Ain't never saw that class you got there where'd you get it?? I sure didn't give it to you...",
+                        "NextIndex": -1,
+                        "Name": ""
+                    }
+                ]
+            }),
+        new NpcBase("Masterius", <NpcModel>{
+                "head": <NpcHeadModel>{
+                    "location": "Unknown",
+                    "world": "Unknown",
+                    "noQuest": 0,
+                    "type": "Unknown",
+                    "birthWeight": 4.35,
+                    "starSign": "Virgo",
+                    "mothersMaidenName": "Moody",
+                    "notes": " "
+                },
+                "quests": {
+                    "Mastering the Vibe Check": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "You seem tense... perhaps not yet ready for Master Class responsibilities. <br> QUEST:Prove yourself by following your inner voice.",
+                        "NextIndex": 3,
+                        "Name": "Mastering the Vibe Check",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 0,
+                        "NoSpaceIndex": 2,
+                        "Rewards": [<CoinRewardModel>{"item": "", "quantity": 750000000}],
+                        "QuestName": "Masterius1",
+                        "Difficulty": 5,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Masterius1",
+                        "CustomArray": [<CustomReqModel>{"desc": "Inner Voice Followed:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    },
+                    "Mastering the Class": <CustomQuestModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "",
+                        "NextIndex": 5,
+                        "Name": "Mastering the Class",
+                        "ConsumeItems": false,
+                        "InventorySpacesNeeded": 0,
+                        "NoSpaceIndex": 4,
+                        "Rewards": [<CoinRewardModel>{"item": "", "quantity": 150964823}],
+                        "QuestName": "Masterius2",
+                        "Difficulty": 5,
+                        "note": <NoteModel>{"note": " "},
+                        "CustomType": "Masterius2",
+                        "CustomArray": [<CustomReqModel>{"desc": "Select a Master Class:", "finalV": 1, "type": "GreaterEqual", "startV": 0}]
+                    }
+                },
+                "dialogue": [
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Greetings. You sure took your time!",
+                        "NextIndex": 1,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "But worry not for what is time but something to be taken?",
+                        "NextIndex": 2,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "You seem tense... perhaps not yet ready for Master Class responsibilities. <br> QUEST:Prove yourself by following your inner voice.",
+                        "NextIndex": 3,
+                        "Name": "Mastering the Vibe Check"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Ahhh mastery of ones self does not come easily yet you have done just that!. I can tell you are ready. Speak to me once more and accept your master class.",
+                        "NextIndex": 4,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.Custom,
+                        "DialogueText": "",
+                        "NextIndex": 5,
+                        "Name": "Mastering the Class"
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Peace be with you fellow master!",
+                        "NextIndex": 5,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Wait a minute you're... you're one of THOSE classes... <br> Sorry I don't engage with your kind...",
+                        "NextIndex": 6,
+                        "Name": ""
+                    },
+                    <DialogueLineModel>{
+                        "Type": QuestTypeEnum.NoQuest,
+                        "DialogueText": "Bruh wait what even ARE you...? Ain't never saw that class you got there where'd you get it?? I sure didn't give it to you...",
                         "NextIndex": -1,
                         "Name": ""
                     }

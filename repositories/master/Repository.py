@@ -32,7 +32,7 @@ class Repository(Generic[T], ABC):
 	listRepository: List[T]
 
 	@classmethod
-	def initialise(cls, codeReader: CodeReader, log: bool = True) -> None:
+	def initialise(cls, codeReader: CodeReader, log: bool = True, export: bool = True) -> None:
 		if cls.__dict__.get("codeReader"):
 			if cls.codeReader.version == codeReader.version:
 				return
@@ -49,7 +49,9 @@ class Repository(Generic[T], ABC):
 		cls.generateTSRepo()
 		if log:
 			printGreen(f"Generated {cls.__name__}'s repo with {len(cls.repository)} Items")
-		cls._export()
+
+		if export:
+			cls._export()
 
 	@classmethod
 	def getSections(cls) -> List[str]:
@@ -168,9 +170,9 @@ class Repository(Generic[T], ABC):
 		cr1 = v1.codeReader
 		cr2 = v2.codeReader
 
-		cls.initialise(cr1, False)
+		cls.initialise(cr1, False, False)
 		repo1 = deepcopy(cls.repository)
-		cls.initialise(cr2, False)
+		cls.initialise(cr2, False, False)
 		repo2 = deepcopy(cls.repository)
 		key1 = set(repo1.keys())
 		key2 = set(repo2.keys())

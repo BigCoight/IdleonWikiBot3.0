@@ -1,68 +1,70 @@
 {
     "new": {},
     "changes": {
-        "Beast Master": {
+        "Archer": {
             "talents": {
-                "Nacho Party": {"activeData": {"manaCost": [18, 125]}},
-                "Ballista": {"activeData": {"manaCost": [22, 150]}},
-                "Whale Wallop": {"activeData": {"manaCost": [25, 250]}},
-                "Boar Rush": {"activeData": {"manaCost": [16, 100]}}
-            }
-        },
-        "Barbarian": {"talents": {"Bear Swipe": {"activeData": {"manaCost": [15, 20]}}}},
-        "Divine Knight": {"talents": {"Knightly Disciple": {"activeData": {"manaCost": [15, 150]}}}},
-        "Bubonic Conjuror": {
-            "talents": {
-                "Chemical Warfare": {"activeData": {"manaCost": [16, 200]}},
-                "Tampered Injection": {"activeData": {"manaCost": [15, 60]}},
-                "Flatulent Spirit": {"activeData": {"manaCost": [17, 150]}},
-                "Raise Dead": {"activeData": {"manaCost": [9, 80]}}
-            }
-        },
-        "Siege Breaker": {
-            "talents": {
-                "Firebomb": {"activeData": {"manaCost": [16, 120]}},
-                "Cannonball": {"activeData": {"manaCost": [22, 70]}},
-                "Suppressing Fire": {"activeData": {"manaCost": [22, 65]}}
-            }
-        },
-        "Hunter": {
-            "talents": {
-                "360 Noscope": {"activeData": {"manaCost": [25, 35]}},
-                "Bear Trap": {"activeData": {"manaCost": [20, 30]}}
-            }
-        },
-        "Squire": {
-            "talents": {
-                "Bricky Skin": {"activeData": {"manaCost": [20, 60]}},
-                "Shockwave Slash": {"activeData": {"manaCost": [15, 35]}},
-                "Daggerang": {"activeData": {"manaCost": [15, 50]}}
-            }
-        },
-        "Blood Berserker": {"talents": {"Serrated Swipe": {"activeData": {"manaCost": [15, 25]}}}},
-        "Voidwalker": {"talents": {"Void Radius": {"activeData": {"manaCost": [5, 200]}}}},
-        "Elemental Sorcerer": {
-            "talents": {
-                "Meteor Shower": {"activeData": {"manaCost": [50, 250]}},
-                "Polytheism": {
-                    "description": [
-                        "Link to 2nd God based on Talents Lv. Stand under Omniphau God to De-Level.",
-                        "Get power of a 2nd God! It's based on Talent LV. Stand under Omniphau God to De-Level."
-                    ]
+                "Piercing Arrow": {
+                    "activeData": {"cooldown": [15, 5]},
+                    "x1": [110, 125],
+                    "y1": [2, 5],
+                    "y2": [40, 50]
                 }
             }
         },
-        "Shaman": {
+        "Calm Basics": {
             "talents": {
-                "Auspicious Aura": {"activeData": {"manaCost": [30, 75]}},
-                "Sizzling Skull": {"activeData": {"manaCost": [17, 30]}}
+                "Mana Booster": {
+                    "description": ["Increases Max MP by {", "Increases Max MP by {, which is used to cast Class Attacks"]
+                }
             }
         },
+        "Savvy Basics": {
+            "talents": {
+                "Mana Booster": {
+                    "description": ["Increases Max MP by {", "Increases Max MP by {, which is used to cast Class Attacks"]
+                }
+            }
+        },
+        "Barbarian": {"talents": {"Bear Swipe": {"activeData": {"cooldown": [12, 8]}}}},
+        "Rage Basics": {
+            "talents": {
+                "Mana Booster": {
+                    "description": ["Increases Max MP by {", "Increases Max MP by {, which is used to cast Class Attacks"]
+                }
+            }
+        },
+        "Hunter": {"talents": {"360 Noscope": {"activeData": {"cooldown": [30, 20]}}}},
+        "Mage": {
+            "talents": {
+                "Energy Bolt": {"x1": [160, 200], "x2": [2, 3.5]},
+                "You're Next": {"y1": [25, 35], "y2": [0.5, 1], "x2": [70, 25]},
+                "Mini Fireball": {"activeData": {"cooldown": [10, 6]}, "x1": [120, 130], "x2": [1, 1.5]}
+            }
+        },
+        "Bowman": {
+            "talents": {
+                "Homing Arrows": {"activeData": {"cooldown": [20, 15]}},
+                "Magic Shortbow": {"activeData": {"cooldown": [7, 6]}}
+            }
+        },
+        "Warrior": {
+            "talents": {
+                "Whirl": {"activeData": {"cooldown": [6, 5]}, "y1": [3, 5], "y2": [24, 40]},
+                "Power Strike": {"activeData": {"cooldown": [4, 3]}}
+            }
+        },
+        "Death Bringer": {"talents": {"Graveyard Shift": {"activeData": {"cooldown": [305, 310]}}}},
         "Wizard": {
             "talents": {
-                "Tornado": {"activeData": {"manaCost": [15, 40]}},
-                "Mana Is Life": {"activeData": {"manaCost": [12, 25]}},
-                "Floor Is Lava": {"activeData": {"manaCost": [17, 30]}}
+                "Floor Is Lava": {"activeData": {"cooldown": [13, 11]}},
+                "Tornado": {"activeData": {"cooldown": [25, 20]}}
+            }
+        },
+        "Beginner": {
+            "talents": {
+                "Mana Booster": {
+                    "description": ["Increases Max MP by {", "Increases Max MP by {, which is used to cast Class Attacks"]
+                }
             }
         }
     }

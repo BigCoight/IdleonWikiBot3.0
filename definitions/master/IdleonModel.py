@@ -300,8 +300,19 @@ class IdleonModel(BaseModel):
 		diffs = {}
 		d1 = self.__dict__
 		d2 = other.__dict__
-		keys = d1.keys()
+
+		keys1 = set(d1.keys())
+		keys2 = set(d2.keys())
+		keys = keys1.union(keys2)
+
 		for key in keys:
+			if key not in keys2:
+				diffs[key] = (d1[key], "")
+				continue
+			if key not in keys1:
+				diffs[key] = ("", d2[key])
+				continue
+
 			if d1[key] == d2[key]:
 				continue
 			if key in ignored:

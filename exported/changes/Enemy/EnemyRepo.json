@@ -1,255 +1,464 @@
 {
-    "new": {
-        "Fish14": {
-            "details": {
-                "Name": "Trench Fish",
-                "RespawnTime": 86400,
-                "MonsterHPTotal": 750000,
-                "SpecialType": "a",
-                "ExpGiven": 12000,
-                "ExpType": 0,
-                "Defence": 600,
-                "MoveSPEED": 3,
-                "Damages": [1000, 1],
-                "DefFor0": 1223.26
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "DropTable9", "quantity": 1, "chance": 0.012, "questLink": "N/A"}
-            ],
-            "mapData": null
+    "new": {},
+    "changes": {
+        "mushR": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 6, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 15, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
         },
-        "BugNest14": {
-            "details": {
-                "Name": "Fractal Nest",
-                "RespawnTime": 8640000,
-                "MonsterHPTotal": 999999999,
-                "SpecialType": "",
-                "ExpGiven": 2,
-                "ExpType": 6,
-                "Defence": 1,
-                "MoveSPEED": 0,
-                "Damages": [6, 1],
-                "DefFor0": 2.67
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "Grasslands2", "quantity": 2, "chance": 0, "questLink": "N/A"}
-            ],
-            "mapData": null
+        "snailZ": {
+            "details": {"Defence": [400, 200]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 370, "chance": 0.35, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 670, "chance": 0.35, "questLink": "N/A"}
+                ]
+            }
+        },
+        "pincermin": {
+            "details": {"MonsterHPTotal": [15500, 11500], "Defence": [225, 80]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 270, "chance": 0.38, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 460, "chance": 0.38, "questLink": "N/A"}
+                ]
+            }
+        },
+        "bloque": {
+            "details": {"Defence": [900, 425]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 450, "chance": 0.41, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 830, "chance": 0.41, "questLink": "N/A"}
+                ]
+            }
+        },
+        "mamoth": {
+            "details": {"Defence": [1050, 550]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 455, "chance": 0.39, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 865, "chance": 0.39, "questLink": "N/A"}
+                ]
+            }
+        },
+        "stache": {
+            "details": {"Defence": [775, 350]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 430, "chance": 0.43, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 800, "chance": 0.43, "questLink": "N/A"}
+                ]
+            }
+        },
+        "plank": {
+            "details": {"DefFor0": [2, 8.9], "Damages": {"0": [5, 15]}},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 90, "chance": 0.37, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 290, "chance": 0.37, "questLink": "N/A"}
+                ]
+            }
+        },
+        "glass": {
+            "details": {"Defence": [1700, 1250]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 515, "chance": 0.34, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 955, "chance": 0.34, "questLink": "N/A"}
+                ]
+            }
+        },
+        "slimeG": {
+            "details": {"DefFor0": [2, 0.5], "Defence": [2, 4], "Damages": {"0": [5, 2]}},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 16, "chance": 0.44, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 110, "chance": 0.44, "questLink": "N/A"}
+                ]
+            }
+        },
+        "moonman": {
+            "details": {"MonsterHPTotal": [26500, 25000], "Defence": [330, 150]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 325, "chance": 0.35, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 555, "chance": 0.35, "questLink": "N/A"}
+                ]
+            }
+        },
+        "jarSand": {
+            "details": {"MonsterHPTotal": [2000, 1400], "Defence": [60, 20]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 120, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 310, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
         },
         "caveA": {
-            "details": {
-                "Name": "Demon Hound",
-                "RespawnTime": 45,
-                "MonsterHPTotal": 25000000,
-                "SpecialType": "",
-                "ExpGiven": 10000,
-                "ExpType": 0,
-                "Defence": 10,
-                "MoveSPEED": 6,
-                "Damages": [100000, 1],
-                "DefFor0": 76109.7
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
-                {"item": "SpiD3", "quantity": 1, "chance": 0, "questLink": "N/A"}
-            ],
-            "mapData": null
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"}
+                ]
+            }
         },
-        "Wisdom_Monument": {
-            "details": {
-                "Name": "Wisdom",
-                "RespawnTime": 1,
-                "MonsterHPTotal": 42,
-                "SpecialType": "",
-                "ExpGiven": 69,
-                "ExpType": 0,
-                "Defence": 1,
-                "MoveSPEED": 0,
-                "Damages": [0, 0],
-                "DefFor0": 0.22
-            },
-            "drops": null,
-            "mapData": null
+        "demonP": {
+            "details": {"Defence": [4325, 4225]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 860, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1660, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
         },
-        "Motherlode": {
-            "details": {
-                "Name": "Motherlode",
-                "RespawnTime": 600,
-                "MonsterHPTotal": 5,
-                "SpecialType": "",
-                "ExpGiven": 150,
-                "ExpType": 1,
-                "Defence": 30000,
-                "MoveSPEED": 0,
-                "Damages": [0, 1],
-                "DefFor0": 0.22
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "CardsF39", "quantity": 1, "chance": 0, "questLink": "N/A"},
-                {"item": "DropTable4", "quantity": 2, "chance": 1e-08, "questLink": "N/A"}
-            ],
-            "mapData": null
+        "thermostat": {
+            "details": {"Defence": [1500, 1100]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 510, "chance": 0.35, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 920, "chance": 0.35, "questLink": "N/A"}
+                ]
+            }
         },
-        "caveB": {
-            "details": {
-                "Name": "Gloomie Mushroom",
-                "RespawnTime": 50,
-                "MonsterHPTotal": 2500000000,
-                "SpecialType": "",
-                "ExpGiven": 2800000,
-                "ExpType": 0,
-                "Defence": 10,
-                "MoveSPEED": 3,
-                "Damages": [10000, 1],
-                "DefFor0": 10638.1
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
-                {"item": "CardsH15", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
-                {"item": "EquipmentStatues29", "quantity": 1, "chance": 1e-05, "questLink": "N/A"}
-            ],
-            "mapData": null
+        "w4b4": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 2000, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 2500, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
         },
-        "caveD": {
-            "details": {
-                "Name": "Curious Crystal Slime",
-                "RespawnTime": 45,
-                "MonsterHPTotal": 10000000,
-                "SpecialType": "",
-                "ExpGiven": 10000,
-                "ExpType": 0,
-                "Defence": 10,
-                "MoveSPEED": 3,
-                "Damages": [100000, 1],
-                "DefFor0": 76109.7
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
-                {"item": "SpiD3", "quantity": 1, "chance": 0, "questLink": "N/A"}
-            ],
-            "mapData": null
+        "ram": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 900, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1500, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
         },
-        "MotherlodeTREE": {
-            "details": {
-                "Name": "Evertree",
-                "RespawnTime": 0,
-                "MonsterHPTotal": 5,
-                "SpecialType": "",
-                "ExpGiven": 32000,
-                "ExpType": 3,
-                "Defence": 30000,
-                "MoveSPEED": 0,
-                "Damages": [0, 1],
-                "DefFor0": 0.22
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "CardsF39", "quantity": 1, "chance": 0, "questLink": "N/A"},
-                {"item": "DropTable4", "quantity": 2, "chance": 1e-08, "questLink": "N/A"}
-            ],
-            "mapData": null
+        "rockG": {"details": {"MonsterHPTotal": [3000, 600]}},
+        "penguin": {
+            "details": {"Defence": [1350, 950]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 490, "chance": 0.36, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 880, "chance": 0.36, "questLink": "N/A"}
+                ]
+            }
         },
-        "Bug14": {
-            "details": {
-                "Name": "Fractalfly",
-                "RespawnTime": 0,
-                "MonsterHPTotal": 5,
-                "SpecialType": "",
-                "ExpGiven": 150,
-                "ExpType": 6,
-                "Defence": 30000,
-                "MoveSPEED": 0,
-                "Damages": [6, 1],
-                "DefFor0": 2.67
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "CardsF39", "quantity": 1, "chance": 0, "questLink": "N/A"},
-                {"item": "DropTable4", "quantity": 2, "chance": 1e-08, "questLink": "N/A"}
-            ],
-            "mapData": null
+        "snowball": {
+            "details": {"Defence": [1200, 750]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 470, "chance": 0.37, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 870, "chance": 0.37, "questLink": "N/A"}
+                ]
+            }
         },
-        "Justice_Monument": {
-            "details": {
-                "Name": "Justice",
-                "RespawnTime": 1,
-                "MonsterHPTotal": 42,
-                "SpecialType": "",
-                "ExpGiven": 69,
-                "ExpType": 0,
-                "Defence": 1,
-                "MoveSPEED": 0,
-                "Damages": [0, 0],
-                "DefFor0": 0.22
-            },
-            "drops": null,
-            "mapData": null
-        },
-        "Bravery_Monument": {
-            "details": {
-                "Name": "Bravery",
-                "RespawnTime": 1,
-                "MonsterHPTotal": 42,
-                "SpecialType": "",
-                "ExpGiven": 69,
-                "ExpType": 0,
-                "Defence": 1,
-                "MoveSPEED": 0,
-                "Damages": [0, 0],
-                "DefFor0": 0.22
-            },
-            "drops": null,
-            "mapData": null
+        "carrotO": {
+            "details": {"DefFor0": [2, 4.59], "Defence": [4, 6], "Damages": {"0": [5, 9]}},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 40, "chance": 0.41, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 200, "chance": 0.41, "questLink": "N/A"}
+                ]
+            }
         },
         "caveC": {
-            "details": {
-                "Name": "Guardian Golem",
-                "RespawnTime": 45,
-                "MonsterHPTotal": 1e+13,
-                "SpecialType": "",
-                "ExpGiven": 10000,
-                "ExpType": 0,
-                "Defence": 10,
-                "MoveSPEED": 2,
-                "Damages": [100000, 1],
-                "DefFor0": 76109.7
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
-                {"item": "SpiD3", "quantity": 1, "chance": 0, "questLink": "N/A"}
-            ],
-            "mapData": null
-        },
-        "MotherlodeFISH": {
-            "details": {
-                "Name": "Trench Fish",
-                "RespawnTime": 0,
-                "MonsterHPTotal": 5,
-                "SpecialType": "",
-                "ExpGiven": 1750,
-                "ExpType": 4,
-                "Defence": 30000,
-                "MoveSPEED": 0,
-                "Damages": [6, 1],
-                "DefFor0": 2.67
-            },
-            "drops": [
-                {"item": "COIN", "quantity": 0, "chance": 0, "questLink": "N/A"},
-                {"item": "CardsF39", "quantity": 1, "chance": 0, "questLink": "N/A"},
-                {"item": "DropTable4", "quantity": 2, "chance": 1e-08, "questLink": "N/A"}
-            ],
-            "mapData": null
-        }
-    },
-    "changes": {
-        "Marble": {
             "drops": {
-                "1": [
-                    {"item": "CardsF29", "quantity": 1, "chance": 1e-08, "questLink": "N/A"},
-                    {"item": "CardsF29", "quantity": 1, "chance": 0, "questLink": "N/A"}
+                "0": [
+                    {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"}
+                ]
+            }
+        },
+        "branch": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 170, "chance": 0.3, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 270, "chance": 0.3, "questLink": "N/A"}
+                ]
+            }
+        },
+        "snakeB": {
+            "details": {"Defence": [1900, 1500]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 535, "chance": 0.32, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 985, "chance": 0.32, "questLink": "N/A"}
+                ]
+            }
+        },
+        "coconut": {
+            "details": {"MonsterHPTotal": [10000, 5000], "Defence": [145, 45]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 250, "chance": 0.43, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 400, "chance": 0.43, "questLink": "N/A"}
+                ]
+            }
+        },
+        "w4a3": {
+            "details": {"Defence": [3800, 3600]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 730, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1430, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
+        },
+        "sheep": {
+            "details": {"Defence": [550, 250]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 400, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 730, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
+        },
+        "w4b5": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 2500, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 2700, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
+        },
+        "w4a2": {
+            "details": {"Defence": [3300, 2700]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 660, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1260, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
+        },
+        "flake": {
+            "details": {"Defence": [650, 300]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 420, "chance": 0.46, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 770, "chance": 0.46, "questLink": "N/A"}
+                ]
+            }
+        },
+        "mushG": {
+            "details": {"DefFor0": [0, 0.22], "MonsterHPTotal": [10, 15], "Damages": {"0": [1, 0]}},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 3, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 5, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
+        },
+        "frogBIG": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 150, "chance": 0.35, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 350, "chance": 0.35, "questLink": "N/A"}
+                ]
+            }
+        },
+        "frogG": {
+            "details": {"DefFor0": [2, 0.22], "MonsterHPTotal": [25, 40], "Damages": {"0": [5, 0]}},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 6, "chance": 0.48, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 35, "chance": 0.48, "questLink": "N/A"}
+                ]
+            }
+        },
+        "beanG": {
+            "details": {"DefFor0": [2.67, 0.22], "Damages": {"0": [6, 0]}},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 10, "chance": 0.46, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 70, "chance": 0.46, "questLink": "N/A"}
+                ]
+            },
+            "mapData": {"portalRequirements": {"1": [1500, 500]}}
+        },
+        "caveB": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"}
+                ]
+            }
+        },
+        "goblinG": {
+            "details": {"DefFor0": [2, 7.4], "Defence": [5, 7], "Damages": {"0": [5, 13]}},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 60, "chance": 0.39, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 250, "chance": 0.39, "questLink": "N/A"}
+                ]
+            }
+        },
+        "crabcake": {
+            "details": {"MonsterHPTotal": [6500, 3500], "Defence": [120, 30]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 180, "chance": 0.45, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 380, "chance": 0.45, "questLink": "N/A"}
+                ]
+            }
+        },
+        "speaker": {
+            "details": {"Defence": [2150, 1800]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 570, "chance": 0.3, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1020, "chance": 0.3, "questLink": "N/A"}
+                ]
+            }
+        },
+        "mimicA": {
+            "details": {"MonsterHPTotal": [4000, 2200], "Defence": [80, 25]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 150, "chance": 0.47, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 350, "chance": 0.47, "questLink": "N/A"}
+                ]
+            }
+        },
+        "sandgiant": {
+            "details": {"Defence": [365, 170]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 340, "chance": 0.34, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 610, "chance": 0.34, "questLink": "N/A"}
+                ]
+            }
+        },
+        "sandcastle": {
+            "details": {"MonsterHPTotal": [12500, 8500], "Defence": [170, 60]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 260, "chance": 0.4, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 430, "chance": 0.4, "questLink": "N/A"}
+                ]
+            }
+        },
+        "mushP": {
+            "details": {"Defence": [2800, 2000]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 600, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1100, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
+        },
+        "caveD": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"}
+                ]
+            }
+        },
+        "snakeG": {
+            "details": {"Defence": [3, 5]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 25, "chance": 0.43, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 150, "chance": 0.43, "questLink": "N/A"}
+                ]
+            }
+        },
+        "mushW": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 40, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 440, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
+        },
+        "steak": {
+            "details": {"MonsterHPTotal": [23000, 20000], "Defence": [300, 125]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 310, "chance": 0.36, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 520, "chance": 0.36, "questLink": "N/A"}
+                ]
+            }
+        },
+        "acorn": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 200, "chance": 0.3, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 300, "chance": 0.3, "questLink": "N/A"}
+                ]
+            }
+        },
+        "ratB": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 350, "chance": 0.3, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 550, "chance": 0.3, "questLink": "N/A"}
+                ]
+            }
+        },
+        "w4b1": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 1300, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 2100, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
+        },
+        "rockB": {"details": {"MonsterHPTotal": [3000, 1000]}},
+        "poopSmall": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 280, "chance": 0.3, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 480, "chance": 0.3, "questLink": "N/A"}
+                ]
+            }
+        },
+        "w4b2": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 1050, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1850, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
+        },
+        "w4b3": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 1600, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 2300, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
+        },
+        "skele2": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 800, "chance": 0.5, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 2500, "chance": 0.5, "questLink": "N/A"}
+                ]
+            }
+        },
+        "eye": {
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 575, "chance": 0.28, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 1075, "chance": 0.28, "questLink": "N/A"}
+                ]
+            }
+        },
+        "potato": {
+            "details": {"MonsterHPTotal": [18500, 14000], "Defence": [260, 100]},
+            "drops": {
+                "0": [
+                    {"item": "COIN", "quantity": 300, "chance": 0.37, "questLink": "N/A"},
+                    {"item": "COIN", "quantity": 490, "chance": 0.37, "questLink": "N/A"}
                 ]
             }
         }

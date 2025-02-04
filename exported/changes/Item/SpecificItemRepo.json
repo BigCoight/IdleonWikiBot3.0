@@ -1,92 +1,16 @@
 {
-    "new": {
-        "Fish14": {
-            "displayName": "Trench fish",
-            "sellPrice": 100,
-            "Type": "Currency",
-            "description": "You shouldnt be seeing this... "
-        },
-        "EquipmentStatues29": {
-            "displayName": "Dragon Warrior Statue",
-            "sellPrice": 10,
-            "Type": "Statue",
-            "description": "It somehow boosts the bonuses given by all other statues!!! You don't understand what that means? It's ok, I didn't get it the first time either... ",
-            "bonus": "%Statues Bonus",
-            "statueData": {"name": "Dragon", "effect": "%@Statues Bonus", "dk": 270, "bonus": 0.2}
-        },
-        "Quest90": {
-            "displayName": "Blinding Lantern",
-            "sellPrice": 100,
-            "Type": "Usable",
-            "description": "Hold down instantly gain 2 Hours of all Cavern progress and Villager exp gain! "
-        },
-        "Motherlode": {
-            "displayName": "Motherlode Ore",
-            "sellPrice": 100,
-            "Type": "Currency",
-            "description": "You shouldnt be seeing this... "
-        },
-        "Quest89": {
-            "displayName": "Event Point",
-            "sellPrice": 1,
-            "Type": "Usable",
-            "description": "Hold down on this item to get 1 Event Point! Spend these at the Event NPC in town for permanent bonuses, and don't worry, unspent points are saved for next event! "
-        },
-        "Bug14": {
-            "displayName": "Fractal Fly",
-            "sellPrice": 100,
-            "Type": "Currency",
-            "description": "You shouldnt be seeing this... "
-        },
-        "MotherlodeTREE": {
-            "displayName": "Everlog",
-            "sellPrice": 100,
-            "Type": "Currency",
-            "description": "You shouldnt be seeing this... "
-        },
-        "Quest88": {
-            "displayName": "Golden Oyster",
-            "sellPrice": 100,
-            "Type": "Event Box",
-            "description": "Hold down to get a random special reward! Event Points do not expire, you keep all unspent Event Points for next event! "
-        },
-        "CardsH15": {
-            "displayName": "Gloomie Mushroom Card",
-            "sellPrice": 1,
-            "Type": "Card",
-            "cardData": {
-                "cardID": "H15",
-                "perTier": 5000,
-                "effect": "+{% Villager EXP (Passive)",
-                "bonus": 4,
-                "order": 14
-            },
-            "dropChance": 5e-05
-        },
-        "EquipmentHats110": {
-            "displayName": "Yellow Beanie",
-            "sellPrice": 1,
-            "Type": "Premium Helmet",
-            "lvReqToCraft": 5,
-            "lvReqToEquip": 1,
-            "Class": "All",
-            "Weapon_Power": 0,
-            "STR": 1,
-            "AGI": 1,
-            "WIS": 1,
-            "LUK": 1,
-            "Defence": 0,
-            "miscUp1": "",
-            "miscUp2": "00",
-            "Upgrade_Slots_Left": 5,
-            "Skill": "",
-            "Skill_Power": 0
-        }
-    },
+    "new": {},
     "changes": {
-        "CardsF29": {"dropChance": [1e-08, 0]},
-        "CardsF39": {"dropChance": [2e-06, 0]},
-        "EquipmentStatues25": {"statueData": {"dk": [160, 210]}},
-        "CardsH14": {"cardData": {"order": [14, 15]}}
+        "MaxCapBagM5": {"level": [40, 35]},
+        "MaxCapBagM3": {"level": [13, 7]},
+        "BobJoePickle": {"sellPrice": [40000, 10000]},
+        "MaxCapBagM4": {"level": [30, 20]},
+        "MaxCapBagM2": {"level": [10, 5]},
+        "CraftMat1": {
+            "description": [
+                "It's basically string cheese, but without the cheese. CRAFT THESE IN THE 'PRODUCE' TAB IN ANVIL! ",
+                "It's like string cheese, but without cheese. GET THESE FROM THE 'PRODUCE' TAB HERE IN THE ANVIL! "
+            ]
+        }
     }
 }

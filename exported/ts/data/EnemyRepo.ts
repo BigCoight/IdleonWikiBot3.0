@@ -2093,19 +2093,19 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 4,
                     "RespawnTime": 35,
                     "DeathFrame": 12,
-                    "MonsterHPTotal": 10,
+                    "MonsterHPTotal": 15,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 2,
                     "ExpType": 0,
                     "Defence": 1,
                     "MoveSPEED": 4,
-                    "Damages": [1, 1],
-                    "DefFor0": 0
+                    "Damages": [0, 1],
+                    "DefFor0": 0.22
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 3, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 5, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Grasslands1", "quantity": 1, "chance": 0.22, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA0", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "FoodHealth1", "quantity": 3, "chance": 0.005, "questLink": "N/A"},
@@ -2143,19 +2143,19 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 5,
                     "RespawnTime": 40,
                     "DeathFrame": 12,
-                    "MonsterHPTotal": 25,
+                    "MonsterHPTotal": 40,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 10,
                     "ExpType": 0,
                     "Defence": 1,
                     "MoveSPEED": 4,
-                    "Damages": [5, 1],
-                    "DefFor0": 2
+                    "Damages": [0, 1],
+                    "DefFor0": 0.22
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 6, "chance": 0.48, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 35, "chance": 0.48, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Grasslands2", "quantity": 1, "chance": 0.21, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA2", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Quest3", "quantity": 1, "chance": 0.5, "questLink": "Picnic_Stowaway2"},
@@ -2201,12 +2201,12 @@ export const initEnemyRepo = () => {
                     "ExpType": 0,
                     "Defence": 2,
                     "MoveSPEED": 4,
-                    "Damages": [6, 1],
-                    "DefFor0": 2.67
+                    "Damages": [0, 1],
+                    "DefFor0": 0.22
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 10, "chance": 0.46, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 70, "chance": 0.46, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Grasslands3", "quantity": 1, "chance": 0.2, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA3", "quantity": 1, "chance": 9.7e-05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "StoneA2", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
@@ -2219,7 +2219,7 @@ export const initEnemyRepo = () => {
                     "enemy": "beanG",
                     "world": "Blunder Hills",
                     "map": <MapNameModel>{"intName": "GrasslandsC", "name": "Valley Of The Beans", "id": 14},
-                    "portalRequirements": [40, 1500]
+                    "portalRequirements": [40, 500]
                 },
                 "navigation": <EnemyNavModel>{
                     "prev": "frogG",
@@ -2247,14 +2247,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 26,
                     "ExpType": 0,
-                    "Defence": 2,
+                    "Defence": 4,
                     "MoveSPEED": 4,
-                    "Damages": [5, 1],
-                    "DefFor0": 2
+                    "Damages": [2, 1],
+                    "DefFor0": 0.5
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 16, "chance": 0.44, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 110, "chance": 0.44, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Jungle1", "quantity": 1, "chance": 0.19, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA4", "quantity": 1, "chance": 9.5e-05, "questLink": "N/A"},
                         <RecipeDropModel>{"item": "SmithingRecipes1", "quantity": 43, "chance": 3e-05, "questLink": "N/A"},
@@ -2296,14 +2296,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 36,
                     "ExpType": 0,
-                    "Defence": 3,
+                    "Defence": 5,
                     "MoveSPEED": 8,
                     "Damages": [5, 1],
                     "DefFor0": 2
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 25, "chance": 0.43, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 150, "chance": 0.43, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Jungle2", "quantity": 1, "chance": 0.18, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA5", "quantity": 1, "chance": 9.4e-05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "FoodHealth2", "quantity": 3, "chance": 0.005, "questLink": "N/A"},
@@ -2346,14 +2346,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 46,
                     "ExpType": 0,
-                    "Defence": 4,
+                    "Defence": 6,
                     "MoveSPEED": 6,
-                    "Damages": [5, 1],
-                    "DefFor0": 2
+                    "Damages": [9, 1],
+                    "DefFor0": 4.59
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 40, "chance": 0.41, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 200, "chance": 0.41, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Jungle3", "quantity": 1, "chance": 0.17, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA6", "quantity": 1, "chance": 9e-05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "FoodHealth2", "quantity": 4, "chance": 0.006, "questLink": "N/A"},
@@ -2393,14 +2393,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 60,
                     "ExpType": 0,
-                    "Defence": 5,
+                    "Defence": 7,
                     "MoveSPEED": 4,
-                    "Damages": [5, 1],
-                    "DefFor0": 2
+                    "Damages": [13, 1],
+                    "DefFor0": 7.4
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 60, "chance": 0.39, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 250, "chance": 0.39, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Forest1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA7", "quantity": 1, "chance": 8.6e-05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "StoneHelm1", "quantity": 1, "chance": 0.00015, "questLink": "N/A"},
@@ -2442,12 +2442,12 @@ export const initEnemyRepo = () => {
                     "ExpType": 0,
                     "Defence": 6,
                     "MoveSPEED": 3,
-                    "Damages": [5, 1],
-                    "DefFor0": 2
+                    "Damages": [15, 1],
+                    "DefFor0": 8.9
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 90, "chance": 0.37, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 290, "chance": 0.37, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Forest2", "quantity": 1, "chance": 0.15, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA8", "quantity": 1, "chance": 8e-05, "questLink": "N/A"},
                         <RecipeDropModel>{"item": "SmithingRecipes1", "quantity": 48, "chance": 3e-05, "questLink": "N/A"},
@@ -2495,7 +2495,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 150, "chance": 0.35, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 350, "chance": 0.35, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Forest3", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA9", "quantity": 1, "chance": 7e-05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "StampA10", "quantity": 1, "chance": 3e-05, "questLink": "N/A"},
@@ -2544,7 +2544,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 170, "chance": 0.3, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 270, "chance": 0.3, "questLink": "N/A"},
                         <ItemDropModel>{"item": "TreeInterior1", "quantity": 1, "chance": 0.21, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA12", "quantity": 1, "chance": 6e-05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "TreeInterior1b", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
@@ -2591,7 +2591,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 200, "chance": 0.3, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 300, "chance": 0.3, "questLink": "N/A"},
                         <ItemDropModel>{"item": "TreeInterior2", "quantity": 1, "chance": 0.23, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA13", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
                         <SubTableDropModel>{"item": "DropTable3c", "quantity": 1, "chance": 0.0065, "questLink": "N/A"}
@@ -2636,7 +2636,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 40, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 440, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Quest15", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "TreeInterior1b", "quantity": 1, "chance": 7.5e-05, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA16", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
@@ -2683,7 +2683,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 280, "chance": 0.3, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 480, "chance": 0.3, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Sewers1", "quantity": 1, "chance": 0.24, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA10", "quantity": 1, "chance": 6e-05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Sewers1b", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
@@ -2733,7 +2733,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 350, "chance": 0.3, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 550, "chance": 0.3, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Sewers2", "quantity": 1, "chance": 0.19, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA11", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Quest14", "quantity": 1, "chance": 0.1, "questLink": "TP_Pete2"},
@@ -2813,7 +2813,7 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 0,
                     "RespawnTime": 55,
                     "DeathFrame": 1,
-                    "MonsterHPTotal": 3000,
+                    "MonsterHPTotal": 600,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 150,
@@ -2842,7 +2842,7 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 0,
                     "RespawnTime": 55,
                     "DeathFrame": 1,
-                    "MonsterHPTotal": 3000,
+                    "MonsterHPTotal": 1000,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 150,
@@ -2900,19 +2900,19 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 5,
                     "RespawnTime": 50,
                     "DeathFrame": 15,
-                    "MonsterHPTotal": 2000,
+                    "MonsterHPTotal": 1400,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 150,
                     "ExpType": 0,
-                    "Defence": 60,
+                    "Defence": 20,
                     "MoveSPEED": 5,
                     "Damages": [15, 1],
                     "DefFor0": 8.9
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 120, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 310, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertA1", "quantity": 1, "chance": 0.22, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsB1", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentHats9", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
@@ -2947,19 +2947,19 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 9,
                     "RespawnTime": 50,
                     "DeathFrame": 19,
-                    "MonsterHPTotal": 4000,
+                    "MonsterHPTotal": 2200,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 180,
                     "ExpType": 0,
-                    "Defence": 80,
+                    "Defence": 25,
                     "MoveSPEED": 4,
                     "Damages": [20, 1],
                     "DefFor0": 12.82
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 150, "chance": 0.47, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 350, "chance": 0.47, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertA2", "quantity": 1, "chance": 0.212, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GoldricP1", "quantity": 1, "chance": 0.1, "questLink": "Goldric3"},
                         <CardDropModel>{"item": "CardsB2", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
@@ -2995,19 +2995,19 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 6,
                     "RespawnTime": 40,
                     "DeathFrame": 12,
-                    "MonsterHPTotal": 6500,
+                    "MonsterHPTotal": 3500,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 210,
                     "ExpType": 0,
-                    "Defence": 120,
+                    "Defence": 30,
                     "MoveSPEED": 4,
                     "Damages": [25, 1],
                     "DefFor0": 17.12
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 180, "chance": 0.45, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 380, "chance": 0.45, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertA3", "quantity": 1, "chance": 0.205, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsB3", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertA3b", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
@@ -3042,19 +3042,19 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 15,
                     "RespawnTime": 40,
                     "DeathFrame": 26,
-                    "MonsterHPTotal": 10000,
+                    "MonsterHPTotal": 5000,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 240,
                     "ExpType": 0,
-                    "Defence": 145,
+                    "Defence": 45,
                     "MoveSPEED": 4,
                     "Damages": [35, 1],
                     "DefFor0": 26.12
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 250, "chance": 0.43, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 400, "chance": 0.43, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertB1", "quantity": 1, "chance": 0.2, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GoldricP2", "quantity": 1, "chance": 0.075, "questLink": "Goldric3"},
                         <CardDropModel>{"item": "CardsB4", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
@@ -3089,19 +3089,19 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 9,
                     "RespawnTime": 40,
                     "DeathFrame": 19,
-                    "MonsterHPTotal": 12500,
+                    "MonsterHPTotal": 8500,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 265,
                     "ExpType": 0,
-                    "Defence": 170,
+                    "Defence": 60,
                     "MoveSPEED": 3,
                     "Damages": [45, 1],
                     "DefFor0": 35.69
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 260, "chance": 0.4, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 430, "chance": 0.4, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertB2", "quantity": 1, "chance": 0.19, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GoldricP3", "quantity": 1, "chance": 0.05, "questLink": "Goldric3"},
                         <CardDropModel>{"item": "CardsB5", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
@@ -3135,19 +3135,19 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 4,
                     "RespawnTime": 50,
                     "DeathFrame": 13,
-                    "MonsterHPTotal": 15500,
+                    "MonsterHPTotal": 11500,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 290,
                     "ExpType": 0,
-                    "Defence": 225,
+                    "Defence": 80,
                     "MoveSPEED": 5,
                     "Damages": [55, 1],
                     "DefFor0": 45.72
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 270, "chance": 0.38, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 460, "chance": 0.38, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertB3", "quantity": 1, "chance": 0.18, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsB6", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <RecipeDropModel>{
@@ -3186,19 +3186,19 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 7,
                     "RespawnTime": 40,
                     "DeathFrame": 17,
-                    "MonsterHPTotal": 18500,
+                    "MonsterHPTotal": 14000,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 310,
                     "ExpType": 0,
-                    "Defence": 260,
+                    "Defence": 100,
                     "MoveSPEED": 6,
                     "Damages": [70, 1],
                     "DefFor0": 61.42
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 300, "chance": 0.37, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 490, "chance": 0.37, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertB4", "quantity": 1, "chance": 0.17, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsB7", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <SubTableDropModel>{"item": "DropTable7", "quantity": 1, "chance": 0.0039, "questLink": "N/A"}
@@ -3231,19 +3231,19 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 7,
                     "RespawnTime": 40,
                     "DeathFrame": 14,
-                    "MonsterHPTotal": 23000,
+                    "MonsterHPTotal": 20000,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 350,
                     "ExpType": 0,
-                    "Defence": 300,
+                    "Defence": 125,
                     "MoveSPEED": 5,
                     "Damages": [80, 1],
                     "DefFor0": 72.24
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 310, "chance": 0.36, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 520, "chance": 0.36, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertC1", "quantity": 1, "chance": 0.18, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsB8", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <SubTableDropModel>{"item": "DropTable8", "quantity": 1, "chance": 0.0032, "questLink": "N/A"}
@@ -3276,19 +3276,19 @@ export const initEnemyRepo = () => {
                     "MovingFrame": 7,
                     "RespawnTime": 40,
                     "DeathFrame": 16,
-                    "MonsterHPTotal": 26500,
+                    "MonsterHPTotal": 25000,
                     "Type": EnemyTypeEnum.monsterType,
                     "SpecialType": "",
                     "ExpGiven": 380,
                     "ExpType": 0,
-                    "Defence": 330,
+                    "Defence": 150,
                     "MoveSPEED": 4,
                     "Damages": [90, 1],
                     "DefFor0": 83.29
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 325, "chance": 0.35, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 555, "chance": 0.35, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertC2", "quantity": 1, "chance": 0.165, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertC2b", "quantity": 1, "chance": 0.0005, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsB9", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
@@ -3329,14 +3329,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 410,
                     "ExpType": 0,
-                    "Defence": 365,
+                    "Defence": 170,
                     "MoveSPEED": 3,
                     "Damages": [110, 1],
                     "DefFor0": 105.96
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 340, "chance": 0.34, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 610, "chance": 0.34, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertC3", "quantity": 1, "chance": 0.152, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsB10", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <RecipeDropModel>{"item": "SmithingRecipes2", "quantity": 58, "chance": 1.7e-05, "questLink": "N/A"},
@@ -3375,14 +3375,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 460,
                     "ExpType": 0,
-                    "Defence": 400,
+                    "Defence": 200,
                     "MoveSPEED": 4,
                     "Damages": [125, 1],
                     "DefFor0": 123.37
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 370, "chance": 0.35, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 670, "chance": 0.35, "questLink": "N/A"},
                         <ItemDropModel>{"item": "DesertC4", "quantity": 1, "chance": 0.14, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsB11", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentPendant14", "quantity": 1, "chance": 2e-06, "questLink": "N/A"},
@@ -3421,14 +3421,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 620,
                     "ExpType": 0,
-                    "Defence": 550,
+                    "Defence": 250,
                     "MoveSPEED": 4,
                     "Damages": [135, 1],
                     "DefFor0": 135.14
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 400, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 730, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowA1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE0", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentStatues16", "quantity": 1, "chance": 0.0002, "questLink": "N/A"},
@@ -3468,14 +3468,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 700,
                     "ExpType": 0,
-                    "Defence": 650,
+                    "Defence": 300,
                     "MoveSPEED": 4,
                     "Damages": [160, 1],
                     "DefFor0": 165
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 420, "chance": 0.46, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 770, "chance": 0.46, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowA2", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE1", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "StampB7", "quantity": 1, "chance": 6e-05, "questLink": "N/A"},
@@ -3515,14 +3515,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 800,
                     "ExpType": 0,
-                    "Defence": 775,
+                    "Defence": 350,
                     "MoveSPEED": 4,
                     "Damages": [190, 1],
                     "DefFor0": 201.51
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 430, "chance": 0.43, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 800, "chance": 0.43, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowA3", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE2", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "FoodPotGr3", "quantity": 1, "chance": 0.002, "questLink": "N/A"},
@@ -3569,7 +3569,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 900, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1500, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowA4", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE14", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentRings23", "quantity": 1, "chance": 1e-06, "questLink": "N/A"},
@@ -3609,14 +3609,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 940,
                     "ExpType": 0,
-                    "Defence": 900,
+                    "Defence": 425,
                     "MoveSPEED": 4,
                     "Damages": [220, 1],
                     "DefFor0": 238.55
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 450, "chance": 0.41, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 830, "chance": 0.41, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowB1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE3", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentStatues19", "quantity": 1, "chance": 0.0002, "questLink": "N/A"},
@@ -3656,14 +3656,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 1030,
                     "ExpType": 0,
-                    "Defence": 1050,
+                    "Defence": 550,
                     "MoveSPEED": 3,
                     "Damages": [260, 1],
                     "DefFor0": 288.51
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 455, "chance": 0.39, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 865, "chance": 0.39, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowB2", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE4", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowB2a", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
@@ -3704,14 +3704,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 1130,
                     "ExpType": 0,
-                    "Defence": 1200,
+                    "Defence": 750,
                     "MoveSPEED": 6,
                     "Damages": [300, 1],
                     "DefFor0": 338.94
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 470, "chance": 0.37, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 870, "chance": 0.37, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowB5", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE5", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "StampB10", "quantity": 1, "chance": 2.5e-05, "questLink": "N/A"},
@@ -3752,14 +3752,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 1250,
                     "ExpType": 0,
-                    "Defence": 1350,
+                    "Defence": 950,
                     "MoveSPEED": 4,
                     "Damages": [340, 1],
                     "DefFor0": 389.66
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 490, "chance": 0.36, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 880, "chance": 0.36, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowB3", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE6", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentStatues16", "quantity": 1, "chance": 0.0003, "questLink": "N/A"},
@@ -3798,14 +3798,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 1370,
                     "ExpType": 0,
-                    "Defence": 1500,
+                    "Defence": 1100,
                     "MoveSPEED": 4,
                     "Damages": [380, 1],
                     "DefFor0": 440.57
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 510, "chance": 0.35, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 920, "chance": 0.35, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowB4", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE7", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "StampB12", "quantity": 1, "chance": 1e-05, "questLink": "N/A"},
@@ -3851,14 +3851,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 1570,
                     "ExpType": 0,
-                    "Defence": 1700,
+                    "Defence": 1250,
                     "MoveSPEED": 4,
                     "Damages": [450, 1],
                     "DefFor0": 529.74
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 515, "chance": 0.34, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 955, "chance": 0.34, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowC1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE8", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentStatues17", "quantity": 1, "chance": 0.0003, "questLink": "N/A"},
@@ -3897,14 +3897,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 1690,
                     "ExpType": 0,
-                    "Defence": 1900,
+                    "Defence": 1500,
                     "MoveSPEED": 6,
                     "Damages": [550, 1],
                     "DefFor0": 657.19
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 535, "chance": 0.32, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 985, "chance": 0.32, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowC2", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE9", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentStatues19", "quantity": 1, "chance": 0.0003, "questLink": "N/A"},
@@ -3943,14 +3943,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 1780,
                     "ExpType": 0,
-                    "Defence": 2150,
+                    "Defence": 1800,
                     "MoveSPEED": 4,
                     "Damages": [650, 1],
                     "DefFor0": 784.24
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 570, "chance": 0.3, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1020, "chance": 0.3, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowC3", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE10", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "FoodHealth9", "quantity": 1, "chance": 0.007, "questLink": "N/A"},
@@ -3996,7 +3996,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 575, "chance": 0.28, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1075, "chance": 0.28, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowC4", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE11", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowC4a", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
@@ -4064,14 +4064,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 2350,
                     "ExpType": 0,
-                    "Defence": 2800,
+                    "Defence": 2000,
                     "MoveSPEED": 4,
                     "Damages": [1250, 1],
                     "DefFor0": 1530.76
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 600, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1100, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GalaxyA1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentShoes30", "quantity": 1, "chance": 6e-06, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsG1", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
@@ -4110,14 +4110,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 3000,
                     "ExpType": 0,
-                    "Defence": 3300,
+                    "Defence": 2700,
                     "MoveSPEED": 4,
                     "Damages": [1500, 1],
                     "DefFor0": 1833.33
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 660, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1260, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GalaxyA2", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GalaxyA2b", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Line12", "quantity": 1, "chance": 2.2e-06, "questLink": "N/A"},
@@ -4158,14 +4158,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 4000,
                     "ExpType": 0,
-                    "Defence": 3800,
+                    "Defence": 3600,
                     "MoveSPEED": 4,
                     "Damages": [1750, 1],
                     "DefFor0": 2131.33
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 730, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1430, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GalaxyA3", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentShoes32", "quantity": 1, "chance": 6e-06, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsG3", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
@@ -4204,14 +4204,14 @@ export const initEnemyRepo = () => {
                     "SpecialType": "",
                     "ExpGiven": 4800,
                     "ExpType": 0,
-                    "Defence": 4325,
+                    "Defence": 4225,
                     "MoveSPEED": 3,
                     "Damages": [2200, 1],
                     "DefFor0": 2657.12
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 860, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1660, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GalaxyA4", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentRings24", "quantity": 1, "chance": 4e-06, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsG4", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
@@ -4257,7 +4257,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 1050, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1850, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GalaxyB1", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Weight3", "quantity": 1, "chance": 1.9e-06, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsG6", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
@@ -4303,7 +4303,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 1300, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 2100, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GalaxyB2", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <ItemDropModel>{"item": "StampA29", "quantity": 1, "chance": 3.8e-06, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsG5", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
@@ -4349,7 +4349,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 1600, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 2300, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GalaxyB3", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <ItemDropModel>{"item": "InvStorageS", "quantity": 1, "chance": 3.8e-06, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsG7", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
@@ -4396,7 +4396,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 2000, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 2500, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GalaxyB4", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentRings25", "quantity": 1, "chance": 4e-06, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsG8", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
@@ -4442,7 +4442,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 2500, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 2700, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "GalaxyB5", "quantity": 1, "chance": 0.16, "questLink": "N/A"},
                         <ItemDropModel>{"item": "InvStorage23", "quantity": 1, "chance": 1e-06, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsG9", "quantity": 1, "chance": 2e-05, "questLink": "N/A"},
@@ -5927,7 +5927,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SpiD3", "quantity": 1, "chance": 0, "questLink": "N/A"}
                     ]
                 },
@@ -5959,7 +5959,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsH15", "quantity": 1, "chance": 5e-05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "EquipmentStatues29", "quantity": 1, "chance": 1e-05, "questLink": "N/A"}
                     ]
@@ -5998,7 +5998,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SpiD3", "quantity": 1, "chance": 0, "questLink": "N/A"}
                     ]
                 },
@@ -6030,7 +6030,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 500000, "chance": 0, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 1, "chance": 0, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SpiD3", "quantity": 1, "chance": 0, "questLink": "N/A"}
                     ]
                 },
@@ -6062,7 +6062,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 6, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 15, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Grasslands4", "quantity": 1, "chance": 0.2, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsA1", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
                         <SubTableDropModel>{"item": "DropTable1", "quantity": 1, "chance": 0.0052, "questLink": "N/A"}
@@ -6185,7 +6185,7 @@ export const initEnemyRepo = () => {
                 },
                 "drops": <EnemyTableModel>{
                     "drops": [
-                        <CoinDropModel>{"item": "COIN", "quantity": 800, "chance": 0.5, "questLink": "N/A"},
+                        <CoinDropModel>{"item": "COIN", "quantity": 2500, "chance": 0.5, "questLink": "N/A"},
                         <ItemDropModel>{"item": "SnowC5", "quantity": 1, "chance": 0.05, "questLink": "N/A"},
                         <ItemDropModel>{"item": "Quest78", "quantity": 1, "chance": 0.001, "questLink": "N/A"},
                         <CardDropModel>{"item": "CardsE13", "quantity": 1, "chance": 0.0001, "questLink": "N/A"},
@@ -6257,13 +6257,13 @@ export const initEnemyRepo = () => {
                     "exp": 10000,
                     "keys": 1,
                     "attacks": [
-                        <BossAttackModel>{"name": "Fireball", "damage": 20},
-                        <BossAttackModel>{"name": "Stomp", "damage": 40},
-                        <BossAttackModel>{"name": "Rock Spikes", "damage": 30},
-                        <BossAttackModel>{"name": "Spike Traps", "damage": 28},
-                        <BossAttackModel>{"name": "Sword Swing", "damage": 30},
+                        <BossAttackModel>{"name": "Fireball", "damage": 29},
+                        <BossAttackModel>{"name": "Stomp", "damage": 50},
+                        <BossAttackModel>{"name": "Rock Spikes", "damage": 32},
+                        <BossAttackModel>{"name": "Spike Traps", "damage": 35},
+                        <BossAttackModel>{"name": "Sword Swing", "damage": 40},
                         <BossAttackModel>{"name": "Uppercut", "damage": 100},
-                        <BossAttackModel>{"name": "Rocketfist", "damage": 100}
+                        <BossAttackModel>{"name": "Rocketfist", "damage": 35}
                     ]
                 }
             }),

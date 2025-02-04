@@ -23,15 +23,15 @@ He introduces the player to the basics of completing quests, fighting monsters, 
 |difficulty=1
 |requirements=Craft Boxing Gloves: > 1, Buy Tape from Shop: > 1
 |consumed=No
-|rewards={{Coindisplay|150}}, 3x{{CraftReq|Bottled Town Teleport}}
+|rewards={{Coindisplay|30}}, 20 Class Experience
 |notes=f you've accidentally sold the {{CraftReq|Crimson String}}, you can reclaim it from the quest codex.
 }}
 {{Quest|name=Mr. Worldwide
-|text=Defeat Green Mushrooms and reach the next map!
+|text=Defeat Green Mushrooms and reach the next map! Teleport back here using the MAP button after!
 |difficulty=3
 |requirements=Reach map 2: > 1, Equip Boxing Gloves: > 1, Use Teleport in MAP: > 1
 |consumed=No
-|rewards=1x{{CraftReq|Inventory Bag A}}, 15 Class Experience
+|rewards=1x{{CraftReq|Inventory Bag A}}, 125 Class Experience
 |notes=Map 2 is the third Grasslands zone, [[Worlds#G3 - Froggy Fields|Froggy Fields]].
 }}
 {{Quest|name=The Choice is Yours!
@@ -39,7 +39,7 @@ He introduces the player to the basics of completing quests, fighting monsters, 
 |difficulty=1
 |requirements=Spend Talent Points: > 5
 |consumed=No
-|rewards=1x{{CraftReq|1 HR Time Candy}}, {{Coindisplay|480}}
+|rewards=1x{{CraftReq|Mini Materials Pouch}}, {{Coindisplay|50}}
 |notes=
 }}
 {{Quest|name=Certified Swinger, of Pickaxes of course!
@@ -61,9 +61,9 @@ He introduces the player to the basics of completing quests, fighting monsters, 
 {{Quest|name=Warrior, Archer or Mage?
 |text=Select a new class from Promotheus. He's in the Bean map after Frogs!
 |difficulty=4
-|requirements=1x{{CraftReq|Class Certificate}}
-|consumed=Yes
-|rewards=1x{{CraftReq|Inventory Bag B}}, 1x{{CraftReq|Small Material Pouch}}, {{Coindisplay|500}}
+|requirements=Reach Map 3: > 1, Get a Class: > 1, Buy Upgrades: > 25
+|consumed=No
+|rewards=1x{{CraftReq|Inventory Bag B}}, 1x{{CraftReq|Small Material Pouch}}, {{Coindisplay|100}}
 |notes= 
 }}
 {{Quest|name=Stiltzcho, the Leaf Scout
@@ -75,7 +75,7 @@ He introduces the player to the basics of completing quests, fighting monsters, 
 |notes=
 }}
 {{Quest|name=What Lies at the Heart of the Forest
-|text=Reach the Boss Room located in the Forest Camp past the Carrotmen and Glublin maps!
+|text=Reach the Boss Room. It's a long way from home...
 |difficulty=2
 |requirements=Reach Boss Room: > 1, Portals Unlocked: > 7
 |consumed=No
@@ -121,11 +121,11 @@ He introduces the player to the basics of completing quests, fighting monsters, 
 {{dialogue/row|text=You don't enough inventory space buddy!}}
 {{dialogue/row|text=Dont forget to equip your Boxing Gloves it'll give you more power!}}
 {{dialogue/row|text=Once you equip that Red Headband you'll be looking like a real street fighter! Or like some sort of 'grass-platform' fighter at least!}}
-{{dialogue/row|text=Now lets find you some tougher monsters! <br> MAIN QUEST:Defeat Green Mushrooms and reach the next map!|quest=Mr. Worldwide}}
+{{dialogue/row|text=Now lets find you some tougher monsters! <br> MAIN QUEST:Defeat Green Mushrooms and reach the next map! Teleport back here using the MAP button after!|quest=Mr. Worldwide}}
 {{dialogue/row|text=You don't enough inventory space buddy! Clear 3 spaces for your rewards.}}
 {{dialogue/row|text=You seem a bit beat up! Try spending some Talent Points if you haven't already!}}
 {{dialogue/row|text=You get 3 talent points every time you level up!}}
-{{dialogue/row|text=I'll add a Hint to your codex if you want more info. Now go spend those points! <br> MAIN QUEST:Spend 5 Talent Points|quest=The Choice is Yours!}}
+{{dialogue/row|text=You get 3 talent points every time you level up... Now go spend those points! <br> MAIN QUEST:Spend 5 Talent Points|quest=The Choice is Yours!}}
 {{dialogue/row|text=You've got a full inventory use the storage chest to clear up some space!}}
 {{dialogue/row|text=Oh... wow. Those were uhh interesting choices. I think you're gonna need some more power to have a fighting chance against those froggies.}}
 {{dialogue/row|text=You need more DEFENCE which you can get from crafting armor with ores!  <br> MAIN QUEST:Go to the Left portal to start mining and do Glumlee's 3 quests!|quest=Certified Swinger, of Pickaxes of course!}}
@@ -133,7 +133,7 @@ He introduces the player to the basics of completing quests, fighting monsters, 
 {{dialogue/row|text=Great I'll go ahead and take that! I've been trying to pass his class for 3 years but I'm literally incapable of doing anything other than wiggling around and talking so I always fail his tests.}}
 {{dialogue/row|text=Now use those ores to craft better equipment! You'll also need some logs from the tree in the Mushroom map... <br> MAIN QUEST:Craft Farmer Brim and Orange Tee|quest=The Smithing Grind}}
 {{dialogue/row|text=All suited up and ready for the next quest eh? Alright! Wait no actually not alright. I need to go run some errands first why don't you help me with them?}}
-{{dialogue/row|text=Wait forget the errands... you're still a BEGINNER??? <br> MAIN QUEST:Select a new class from Promotheus. He's in the Bean map after Frogs!|quest=Warrior, Archer or Mage?}}
+{{dialogue/row|text=Wait... you're still a BEGINNER??? <br> MAIN QUEST:Select a new class from Promotheus. He's in the Bean map after Frogs!|quest=Warrior, Archer or Mage?}}
 {{dialogue/row|text=You've got a full inventory player use the storage chest to clear up some space!}}
 {{dialogue/row|text=WOAH look at you all classed up and ready to go! Blue didn't suit you anyway.}}
 {{dialogue/row|text=So anyway...}}
@@ -147,14 +147,14 @@ He introduces the player to the basics of completing quests, fighting monsters, 
 {{dialogue/row|text=Oh well at least Smmffephhzcho did a good job with the report. According to his findings you'll need to go into the Encroaching Forest several maps past the Jungle.}}
 {{dialogue/row|text=Whoopsies!}}
 {{dialogue/row|text=I've never actually been that far away from town... In fact no one here has and I don't think any of them are about to change that!}}
-{{dialogue/row|text=But you've come a long way since that epic fall from gamer grace so why don't you go check it out for yourself? Come back when you know more about the place! <br> MAIN QUEST:Reach the Boss Room located in the Forest Camp past the Carrotmen and Glublin maps!|quest=What Lies at the Heart of the Forest}}
+{{dialogue/row|text=You've come a long way since that epic fall from grace. I think it's time you FIGHT THE WORLD BOSS! MAIN QUEST:Reach the Boss Room. It's a long way from home...|quest=What Lies at the Heart of the Forest}}
 {{dialogue/row|text=You need 2 more inventory space to get the rewards!}}
 {{dialogue/row|text=Forest villagers have the gem thief locked up and are using it as a tourist attraction? That's uh... oddly convenient. I guess that's what happens when a developer tries to put context behind a QoL feature haha.}}
 {{dialogue/row|text=Well it's all up to you now! Go defeat that thief and take back our Town Crystal! <br> MAIN QUEST: Defeat Amarok the boss of World 1. You'll need to do the Quest from Dog Bone the tiki ghost to get Boss Keys...|quest=The Bigger they are, the Bigger they Fall!}}
 {{dialogue/row|text=You need more inventory space to get the rewards!}}
 {{dialogue/row|text=Lets goooo!!! Just tap on our Builder Bird to restore power to the portal. Finally I can start sending letters to all my relatives in the other worlds! I can't wait to tell them how epic I was at teaching you everything you know!}}
-{{dialogue/row|text=Of course there's still plenty for you to do around here in Blunder Hills if you get bored! So many NPCs to help cards to collect tasks to complete...}}
-{{dialogue/row|text=In fact there are so many things left to do that I'm willing to put my most prized posession on the line that you'll never be able to do everything!}}
+{{dialogue/row|text=Talk to the Builder Bird go to World 2! You can come back here any time you like! In fact there are a few more things here in Blunder Hills left to do... <br> Return at Lv. 50}}
+{{dialogue/row|text=In fact there are so many things left to do that I'm willing to bet you a TROPHY that you'll never be able to do everything!}}
 {{dialogue/row|text=Go make me the 3 Blunderhill Tokens of Completion and you can have my Blunder Hero Trophy! Here's the token recipes. You'll find all their ingredients just from doing everything that this World has to offer! <br> QUEST: Get the tokens and get given the Trophy!|quest=Champion of the Grasslands}}
 {{dialogue/row|text=Wow you seriously did all of that? Here's my tro... wait you don't have any inventory space! I guess that means you have to do EVERYTHING AGAIN HAHAHA!!! <br> Nah just kidding clear a space and talk to me again.}}
 {{dialogue/row|text=Wow I never thought someone would care enough about the first world to do everything! It feels like just yesterday I signed you up into the Game's Database... to think I'm now giving you the highest honor in all of Blunder Hills! You're one heckin' sick gamer wear this trophy with pride!}}

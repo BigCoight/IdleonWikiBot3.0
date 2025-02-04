@@ -8545,16 +8545,8 @@ export const initSourceRepo = () => {
                     <SourceModel>{"wikiName": "[[Spring Splendor]]", "txtName": "Spring Splendor"},
                     <SourceModel>{"wikiName": "[[DropTable13]]", "txtName": "DropTable13"},
                     <SourceModel>{
-                        "wikiName": "[[Scripticus#The Choice is Yours!|The Choice is Yours!]]",
-                        "txtName": "Scripticus: The Choice is Yours!"
-                    },
-                    <SourceModel>{
                         "wikiName": "[[Scripticus#Can't somebody else do it?|Can't somebody else do it?]]",
                         "txtName": "Scripticus: Can't somebody else do it?"
-                    },
-                    <SourceModel>{
-                        "wikiName": "[[Picnic Stowaway#The Hungry Stowaway|The Hungry Stowaway]]",
-                        "txtName": "Picnic Stowaway: The Hungry Stowaway"
                     },
                     <SourceModel>{"wikiName": "[[Desert Davey#U Cool?|U Cool?]]", "txtName": "Desert Davey: U Cool?"},
                     <SourceModel>{
@@ -9990,10 +9982,6 @@ export const initSourceRepo = () => {
                     },
                     <SourceModel>{"wikiName": "[[DropTable2]]", "txtName": "DropTable2"},
                     <SourceModel>{"wikiName": "[[DropTable3]]", "txtName": "DropTable3"},
-                    <SourceModel>{
-                        "wikiName": "[[Scripticus#Gear Up, Gamer!|Gear Up, Gamer!]]",
-                        "txtName": "Scripticus: Gear Up, Gamer!"
-                    },
                     <SourceModel>{
                         "wikiName": "[[Scripticus#What Lies at the Heart of the Forest|What Lies at the Heart of the Forest]]",
                         "txtName": "Scripticus: What Lies at the Heart of the Forest"
@@ -11882,33 +11870,12 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("EquipmentTools1", <SourcesModel>{
-                "sources": [
-                    <SourceModel>{
-                        "wikiName": "[[Scripticus#Certified Swinger, of Pickaxes of course!|Certified Swinger, of Pickaxes of course!]]",
-                        "txtName": "Scripticus: Certified Swinger, of Pickaxes of course!"
-                    }
-                ],
-                "recipeFrom": [],
-                "questAss": []
-            }),
-        new SourcesBase("Quest1", <SourcesModel>{
-                "sources": [
-                    <SourceModel>{
-                        "wikiName": "[[Glumlee#Literally Burning your Money|Literally Burning your Money]]",
-                        "txtName": "Glumlee: Literally Burning your Money"
-                    }
-                ],
-                "recipeFrom": [],
-                "questAss": [
-                    <SourceModel>{
-                        "wikiName": "[[Scripticus#Certified Swinger, of Pickaxes of course!|Certified Swinger, of Pickaxes of course!]]",
-                        "txtName": "Scripticus: Certified Swinger, of Pickaxes of course!"
-                    }
-                ]
-            }),
         new SourcesBase("MaxCapBagM1", <SourcesModel>{
                 "sources": [
+                    <SourceModel>{
+                        "wikiName": "[[Scripticus#The Choice is Yours!|The Choice is Yours!]]",
+                        "txtName": "Scripticus: The Choice is Yours!"
+                    },
                     <SourceModel>{
                         "wikiName": "[[Scripticus#The Smithing Grind|The Smithing Grind]]",
                         "txtName": "Scripticus: The Smithing Grind"
@@ -11916,6 +11883,30 @@ export const initSourceRepo = () => {
                 ],
                 "recipeFrom": [],
                 "questAss": []
+            }),
+        new SourcesBase("EquipmentTools1", <SourcesModel>{
+                "sources": [
+                    <SourceModel>{
+                        "wikiName": "[[Scripticus#Certified Swinger, of Pickaxes of course!|Certified Swinger, of Pickaxes of course!]]",
+                        "txtName": "Scripticus: Certified Swinger, of Pickaxes of course!"
+                    },
+                    <SourceModel>{
+                        "wikiName": "[[Glumlee#Literally Burning your Money|Literally Burning your Money]]",
+                        "txtName": "Glumlee: Literally Burning your Money"
+                    }
+                ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("Quest1", <SourcesModel>{
+                "sources": [],
+                "recipeFrom": [],
+                "questAss": [
+                    <SourceModel>{
+                        "wikiName": "[[Scripticus#Certified Swinger, of Pickaxes of course!|Certified Swinger, of Pickaxes of course!]]",
+                        "txtName": "Scripticus: Certified Swinger, of Pickaxes of course!"
+                    }
+                ]
             }),
         new SourcesBase("InvBag2", <SourcesModel>{
                 "sources": [
@@ -11936,21 +11927,6 @@ export const initSourceRepo = () => {
                 ],
                 "recipeFrom": [],
                 "questAss": []
-            }),
-        new SourcesBase("Quest5", <SourcesModel>{
-                "sources": [
-                    <SourceModel>{
-                        "wikiName": "[[Promotheus#Three Right Answers|Three Right Answers]]",
-                        "txtName": "Promotheus: Three Right Answers"
-                    }
-                ],
-                "recipeFrom": [],
-                "questAss": [
-                    <SourceModel>{
-                        "wikiName": "[[Scripticus#Warrior, Archer or Mage?|Warrior, Archer or Mage?]]",
-                        "txtName": "Scripticus: Warrior, Archer or Mage?"
-                    }
-                ]
             }),
         new SourcesBase("InvBag3", <SourcesModel>{
                 "sources": [

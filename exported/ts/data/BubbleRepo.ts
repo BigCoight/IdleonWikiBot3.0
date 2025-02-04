@@ -462,7 +462,7 @@ export const initBubbleRepo = () => {
                         "x1": 5,
                         "x2": 1,
                         "func": "bigBase",
-                        "description": "+{ Talent Points for EACH tab, but just for Archers! NOTE: Doesn't affect Master Class",
+                        "description": "+{ Talent Points for EACH tab, but just for Archers! Oh, and also for the SECRET class... NOTE: Doesn't affect Master Class",
                         "requirements": [<ComponentModel>{"item": "Bug6", "quantity": 120}, <LiquidComponentModel>{"liquidNo": "2", "quantity": 2}],
                         "bonusKey": "TalArchers"
                     },

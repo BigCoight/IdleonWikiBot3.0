@@ -1,6 +1,6 @@
 import re
 
-ver = "2.26"
+ver = "2.27"
 
 re_big_list = re.compile(r'var bigList=\{.*?\},')
 re_parse = re.compile(r"..\.parse\('\{.*?\),")

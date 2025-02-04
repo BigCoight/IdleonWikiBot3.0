@@ -13,13 +13,13 @@ export const initBossDetailRepo = () => {
                 "exp": 10000,
                 "keys": 1,
                 "attacks": [
-                    <BossAttackModel>{"name": "Fireball", "damage": 20},
-                    <BossAttackModel>{"name": "Stomp", "damage": 40},
-                    <BossAttackModel>{"name": "Rock Spikes", "damage": 30},
-                    <BossAttackModel>{"name": "Spike Traps", "damage": 28},
-                    <BossAttackModel>{"name": "Sword Swing", "damage": 30},
+                    <BossAttackModel>{"name": "Fireball", "damage": 29},
+                    <BossAttackModel>{"name": "Stomp", "damage": 50},
+                    <BossAttackModel>{"name": "Rock Spikes", "damage": 32},
+                    <BossAttackModel>{"name": "Spike Traps", "damage": 35},
+                    <BossAttackModel>{"name": "Sword Swing", "damage": 40},
                     <BossAttackModel>{"name": "Uppercut", "damage": 100},
-                    <BossAttackModel>{"name": "Rocketfist", "damage": 100}
+                    <BossAttackModel>{"name": "Rocketfist", "damage": 35}
                 ]
             }),
         new BossDetailsBase("wolfB", <BossDetailsModel>{

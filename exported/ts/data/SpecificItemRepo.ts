@@ -12831,7 +12831,7 @@ export const initSpecificItemRepo = () => {
                 "sellPrice": 3,
                 "typeGen": TypeGenEnum.bCraft,
                 "Type": "Material",
-                "description": "It's basically string cheese, but without the cheese. CRAFT THESE IN THE 'PRODUCE' TAB IN ANVIL! "
+                "description": "It's like string cheese, but without cheese. GET THESE FROM THE 'PRODUCE' TAB HERE IN THE ANVIL! "
             }),
         new BaseItemBase("CraftMat2", <DescItemModel>{
                 "internalName": "CraftMat2",
@@ -17272,7 +17272,7 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.aCarryBag,
                 "Type": "Carry Bag",
                 "description": "Hold down on this bag to increase the Carry Capacity of the following items to 50: Monster Parts, Smithing Production Items",
-                "level": 10
+                "level": 5
             }),
         new BaseItemBase("MaxCapBagM3", <CarryBagItemModel>{
                 "internalName": "MaxCapBagM3",
@@ -17281,7 +17281,7 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.aCarryBag,
                 "Type": "Carry Bag",
                 "description": "Hold down on this bag to increase the Carry Capacity of the following items to 100: Monster Parts, Smithing Production Items",
-                "level": 13
+                "level": 7
             }),
         new BaseItemBase("MaxCapBagM4", <CarryBagItemModel>{
                 "internalName": "MaxCapBagM4",
@@ -17290,7 +17290,7 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.aCarryBag,
                 "Type": "Carry Bag",
                 "description": "Hold down on this bag to increase the Carry Capacity of the following items to 250: Monster Parts, Smithing Production Items",
-                "level": 30
+                "level": 20
             }),
         new BaseItemBase("MaxCapBagM5", <CarryBagItemModel>{
                 "internalName": "MaxCapBagM5",
@@ -17299,7 +17299,7 @@ export const initSpecificItemRepo = () => {
                 "typeGen": TypeGenEnum.aCarryBag,
                 "Type": "Carry Bag",
                 "description": "Hold down on this bag to increase the Carry Capacity of the following items to 500: Monster Parts, Smithing Production Items",
-                "level": 40
+                "level": 35
             }),
         new BaseItemBase("MaxCapBagM6", <CarryBagItemModel>{
                 "internalName": "MaxCapBagM6",
@@ -22034,7 +22034,7 @@ export const initSpecificItemRepo = () => {
         new BaseItemBase("BobJoePickle", <DescItemModel>{
                 "internalName": "BobJoePickle",
                 "displayName": "BobJoePickle",
-                "sellPrice": 40000,
+                "sellPrice": 10000,
                 "typeGen": TypeGenEnum.dQuest,
                 "Type": "Quest Item",
                 "description": "He was one of the good ones... Alas he is now just a pickle. Good for scaring a cat though! "

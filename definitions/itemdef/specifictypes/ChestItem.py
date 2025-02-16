@@ -21,9 +21,15 @@ class ChestItem(DescItem):
 			sellPrice = item.sellPrice,
 			typeGen = item.typeGen,
 			Type = item.Type,
-			order = StorageOrderRepo.get(item.internalID).order + 1,
+			order = cls.getOrder(item),
 			description = cls.getDesc(item),
 			level = item.lvReqToEquip, )
+
+	@classmethod
+	def getOrder(cls, item: EquipItem) -> int:
+		if StorageOrderRepo.contains(item.internalID):
+			return StorageOrderRepo.get(item.internalID).order + 1
+		return -1
 
 	@classmethod
 	def getDesc(cls, item: EquipItem) -> str:

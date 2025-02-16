@@ -336,7 +336,8 @@ export const initSourceRepo = () => {
         new SourcesBase("EquipmentShoes7", <SourcesModel>{
                 "sources": [
                     <SourceModel>{"wikiName": "[[Smithing]]", "txtName": "Smithing"},
-                    <SourceModel>{"wikiName": "[[Slime|Recipe from Slime]]", "txtName": "Slime"}
+                    <SourceModel>{"wikiName": "[[Slime|Recipe from Slime]]", "txtName": "Slime"},
+                    <SourceModel>{"wikiName": "[[Glunko The Massive]]", "txtName": "Glunko The Massive"}
                 ],
                 "recipeFrom": [<SourceModel>{"wikiName": "[[Slime]]", "txtName": "Slime"}],
                 "questAss": []
@@ -3455,6 +3456,7 @@ export const initSourceRepo = () => {
                     <SourceModel>{"wikiName": "[[Boop]]", "txtName": "Boop"},
                     <SourceModel>{"wikiName": "[[Baba Yaga]]", "txtName": "Baba Yaga"},
                     <SourceModel>{"wikiName": "[[Dr Defecaus]]", "txtName": "Dr Defecaus"},
+                    <SourceModel>{"wikiName": "[[Glunko The Massive]]", "txtName": "Glunko The Massive"},
                     <SourceModel>{"wikiName": "[[Amarok]]", "txtName": "Amarok"},
                     <SourceModel>{"wikiName": "[[Chaotic Amarok]]", "txtName": "Chaotic Amarok"},
                     <SourceModel>{"wikiName": "[[Radiant Amarok]]", "txtName": "Radiant Amarok"},
@@ -3969,6 +3971,7 @@ export const initSourceRepo = () => {
                     <SourceModel>{"wikiName": "[[Gigafrog]]", "txtName": "Gigafrog"},
                     <SourceModel>{"wikiName": "[[Baba Yaga]]", "txtName": "Baba Yaga"},
                     <SourceModel>{"wikiName": "[[Dr Defecaus]]", "txtName": "Dr Defecaus"},
+                    <SourceModel>{"wikiName": "[[Glunko The Massive]]", "txtName": "Glunko The Massive"},
                     <SourceModel>{"wikiName": "[[Amarok]]", "txtName": "Amarok"},
                     <SourceModel>{"wikiName": "[[Chaotic Amarok]]", "txtName": "Chaotic Amarok"},
                     <SourceModel>{"wikiName": "[[Radiant Amarok]]", "txtName": "Radiant Amarok"},
@@ -4667,7 +4670,12 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("Jungle1", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Slime]]", "txtName": "Slime"}],
+                "sources": [
+                    <SourceModel>{"wikiName": "[[Slime]]", "txtName": "Slime"},
+                    <SourceModel>{"wikiName": "[[Glunko The Massive]]", "txtName": "Glunko The Massive"},
+                    <SourceModel>{"wikiName": "[[Glunko The Massive]]", "txtName": "Glunko The Massive"},
+                    <SourceModel>{"wikiName": "[[Glunko The Massive]]", "txtName": "Glunko The Massive"}
+                ],
                 "recipeFrom": [],
                 "questAss": []
             }),
@@ -5053,6 +5061,16 @@ export const initSourceRepo = () => {
                         "txtName": "TP Pete: Fired for BS Reasons!"
                     }
                 ],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("CardsZ26", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Glunko The Massive]]", "txtName": "Glunko The Massive"}],
+                "recipeFrom": [],
+                "questAss": []
+            }),
+        new SourcesBase("EquipmentPendant32", <SourcesModel>{
+                "sources": [<SourceModel>{"wikiName": "[[Glunko The Massive]]", "txtName": "Glunko The Massive"}],
                 "recipeFrom": [],
                 "questAss": []
             }),
@@ -8521,12 +8539,18 @@ export const initSourceRepo = () => {
                 "questAss": []
             }),
         new SourcesBase("EquipmentCape9", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Giant Rose]]", "txtName": "Giant Rose"}],
+                "sources": [
+                    <SourceModel>{"wikiName": "[[Giant Rose]]", "txtName": "Giant Rose"},
+                    <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                ],
                 "recipeFrom": [],
                 "questAss": []
             }),
         new SourcesBase("EquipmentCape10", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Giant Rose]]", "txtName": "Giant Rose"}],
+                "sources": [
+                    <SourceModel>{"wikiName": "[[Giant Rose]]", "txtName": "Giant Rose"},
+                    <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
+                ],
                 "recipeFrom": [],
                 "questAss": []
             }),
@@ -11386,7 +11410,8 @@ export const initSourceRepo = () => {
                     <SourceModel>{
                         "wikiName": "[[Royal Worm#Normie Bidding|Normie Bidding]]",
                         "txtName": "Royal Worm: Normie Bidding"
-                    }
+                    },
+                    <SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}
                 ],
                 "recipeFrom": [],
                 "questAss": []
@@ -14123,22 +14148,12 @@ export const initSourceRepo = () => {
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("EquipmentHats112", <SourcesModel>{
+        new SourcesBase("EquipmentPendant33", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
                 "recipeFrom": [],
                 "questAss": []
             }),
-        new SourcesBase("EquipmentPendant31", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
-                "recipeFrom": [],
-                "questAss": []
-            }),
-        new SourcesBase("EquipmentRings34", <SourcesModel>{
-                "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
-                "recipeFrom": [],
-                "questAss": []
-            }),
-        new SourcesBase("GemP35", <SourcesModel>{
+        new SourcesBase("ClassSwapB", <SourcesModel>{
                 "sources": [<SourceModel>{"wikiName": "[[Gem Shop]]", "txtName": "Gem Shop"}],
                 "recipeFrom": [],
                 "questAss": []

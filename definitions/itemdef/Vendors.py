@@ -29,7 +29,7 @@ class Vendor(IdleonModel):
 		return ItemDetailRepo.getDisplayName(self.item)
 
 	def __str__(self) -> str:
-		res = f"{self.quantity}x " + "{{CraftReq|"
+		res = f"{self.quantity}x " + "{{ItemDisplay|"
 		res += self.getItemDisplayName() + "}}"
 		return res
 

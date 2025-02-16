@@ -138,7 +138,7 @@
         "Effect": "Ore",
         "Trigger": "0",
         "Amount": 2,
-        "Cooldown": 50
+        "Cooldown": 15
     },
     "Iron": {
         "internalID": "Iron",
@@ -159,7 +159,7 @@
         "Effect": "Ore",
         "Trigger": "0",
         "Amount": 4,
-        "Cooldown": 150
+        "Cooldown": 30
     },
     "Gold": {
         "internalID": "Gold",
@@ -180,7 +180,7 @@
         "Effect": "Ore",
         "Trigger": "0",
         "Amount": 7,
-        "Cooldown": 350
+        "Cooldown": 60
     },
     "Plat": {
         "internalID": "Plat",
@@ -201,7 +201,7 @@
         "Effect": "Ore",
         "Trigger": "0",
         "Amount": 16,
-        "Cooldown": 1000
+        "Cooldown": 200
     },
     "Dementia": {
         "internalID": "Dementia",
@@ -222,7 +222,7 @@
         "Effect": "Ore",
         "Trigger": "0",
         "Amount": 40,
-        "Cooldown": 1500
+        "Cooldown": 400
     },
     "Void": {
         "internalID": "Void",
@@ -243,7 +243,7 @@
         "Effect": "Ore",
         "Trigger": "0",
         "Amount": 100,
-        "Cooldown": 2500
+        "Cooldown": 750
     },
     "Lustre": {
         "internalID": "Lustre",
@@ -264,7 +264,7 @@
         "Effect": "Ore",
         "Trigger": "0",
         "Amount": 250,
-        "Cooldown": 5000
+        "Cooldown": 1300
     },
     "Starfire": {
         "internalID": "Starfire",
@@ -285,7 +285,7 @@
         "Effect": "Ore",
         "Trigger": "0",
         "Amount": 500,
-        "Cooldown": 10000
+        "Cooldown": 2000
     },
     "Dreadlo": {
         "internalID": "Dreadlo",
@@ -306,7 +306,7 @@
         "Effect": "Ore",
         "Trigger": "0",
         "Amount": 1000,
-        "Cooldown": 20000
+        "Cooldown": 3100
     },
     "Marble": {
         "internalID": "Marble",
@@ -327,7 +327,7 @@
         "Effect": "Ore",
         "Trigger": "0",
         "Amount": 4000,
-        "Cooldown": 30000
+        "Cooldown": 6000
     },
     "Godshard": {
         "internalID": "Godshard",
@@ -348,7 +348,7 @@
         "Effect": "Ore",
         "Trigger": "0",
         "Amount": 15000,
-        "Cooldown": 50000
+        "Cooldown": 15000
     },
     "Motherlode": {
         "internalID": "Motherlode",
@@ -2088,24 +2088,24 @@
     },
     "EquipmentHatsBeg1": {
         "internalID": "EquipmentHatsBeg1",
-        "displayName": "Ice Cream Sunday",
+        "displayName": "Ice Cream Sundae",
         "sellPrice": 200,
-        "typeGen": "aHelmet",
+        "typeGen": "aHelmetMTX",
         "ID": 24,
-        "Type": "Helmet",
+        "Type": "Premium Helmet",
         "lvReqToCraft": 25,
         "lvReqToEquip": 30,
-        "Class": "Beginner",
+        "Class": "All",
         "Speed": 0,
         "Reach": 0,
         "Weapon_Power": 0,
         "STR": 0,
         "AGI": 0,
-        "WIS": 6,
-        "LUK": 0,
-        "Defence": 5,
-        "UQ1txt": "% GOLD FOOD EFFECT",
-        "UQ1val": 10,
+        "WIS": 0,
+        "LUK": 10,
+        "Defence": 2,
+        "UQ1txt": "% MONEY",
+        "UQ1val": 25,
         "UQ2txt": "0",
         "UQ2val": 0,
         "Upgrade_Slots_Left": 5
@@ -7019,13 +7019,13 @@
         "Speed": 0,
         "Reach": 0,
         "Weapon_Power": 0,
-        "STR": 1,
-        "AGI": 1,
-        "WIS": 1,
+        "STR": 2,
+        "AGI": 2,
+        "WIS": 2,
         "LUK": 2,
         "Defence": 0,
         "UQ1txt": "% MONEY",
-        "UQ1val": 5,
+        "UQ1val": 15,
         "UQ2txt": "0",
         "UQ2val": 0,
         "Upgrade_Slots_Left": 3
@@ -8032,10 +8032,10 @@
         "WIS": 12,
         "LUK": 0,
         "Defence": 0,
-        "UQ1txt": "0",
-        "UQ1val": 0,
-        "UQ2txt": "0",
-        "UQ2val": 0,
+        "UQ1txt": "% TOTAL DAMAGE",
+        "UQ1val": 20,
+        "UQ2txt": "% DROP CHANCE",
+        "UQ2val": 5,
         "Upgrade_Slots_Left": 4
     },
     "EquipmentPendant18": {
@@ -8201,7 +8201,7 @@
         "LUK": 0,
         "Defence": 0,
         "UQ1txt": "% TOTAL DAMAGE",
-        "UQ1val": 15,
+        "UQ1val": 27,
         "UQ2txt": "% MOB RESPAWN",
         "UQ2val": 3,
         "Upgrade_Slots_Left": 3
@@ -8218,14 +8218,14 @@
         "Class": "All",
         "Speed": 0,
         "Reach": 0,
-        "Weapon_Power": 7,
+        "Weapon_Power": 8,
         "STR": 0,
         "AGI": 0,
         "WIS": 0,
         "LUK": 0,
         "Defence": 0,
         "UQ1txt": "% TOTAL DAMAGE",
-        "UQ1val": 20,
+        "UQ1val": 40,
         "UQ2txt": "% MOB RESPAWN",
         "UQ2val": 5,
         "Upgrade_Slots_Left": 4
@@ -8372,6 +8372,54 @@
         "UQ1val": 30,
         "UQ2txt": "% MOB RESPAWN",
         "UQ2val": 20,
+        "Upgrade_Slots_Left": 0
+    },
+    "EquipmentPendant32": {
+        "internalID": "EquipmentPendant32",
+        "displayName": "Slimy Necklace",
+        "sellPrice": 1,
+        "typeGen": "aPendant",
+        "ID": 3,
+        "Type": "Pendant",
+        "lvReqToCraft": 17,
+        "lvReqToEquip": 5,
+        "Class": "All",
+        "Speed": 0,
+        "Reach": 0,
+        "Weapon_Power": 1,
+        "STR": 2,
+        "AGI": 2,
+        "WIS": 2,
+        "LUK": 0,
+        "Defence": 1,
+        "UQ1txt": "% TOTAL DAMAGE",
+        "UQ1val": 15,
+        "UQ2txt": "0",
+        "UQ2val": 0,
+        "Upgrade_Slots_Left": 2
+    },
+    "EquipmentPendant33": {
+        "internalID": "EquipmentPendant33",
+        "displayName": "Emerald Bling Pendant",
+        "sellPrice": 1,
+        "typeGen": "aPendant",
+        "ID": 3,
+        "Type": "Pendant",
+        "lvReqToCraft": 17,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Speed": 0,
+        "Reach": 0,
+        "Weapon_Power": 0,
+        "STR": 10,
+        "AGI": 10,
+        "WIS": 10,
+        "LUK": 10,
+        "Defence": 0,
+        "UQ1txt": "% BONUS MONEY",
+        "UQ1val": 200,
+        "UQ2txt": "0",
+        "UQ2val": 0,
         "Upgrade_Slots_Left": 0
     },
     "EquipmentRings1": {
@@ -14894,6 +14942,30 @@
         "sellPrice": 1000,
         "typeGen": "aStorageChest",
         "ID": 105,
+        "Type": "Storage",
+        "lvReqToCraft": 16,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Speed": 0,
+        "Reach": 10,
+        "Weapon_Power": 0,
+        "STR": 0,
+        "AGI": 0,
+        "WIS": 0,
+        "LUK": 0,
+        "Defence": 0,
+        "UQ1txt": "0",
+        "UQ1val": 0,
+        "UQ2txt": "0",
+        "UQ2val": 0,
+        "Upgrade_Slots_Left": 0
+    },
+    "InvStorageL": {
+        "internalID": "InvStorageL",
+        "displayName": "Valenslime Chest",
+        "sellPrice": 1000,
+        "typeGen": "aStorageChest",
+        "ID": 106,
         "Type": "Storage",
         "lvReqToCraft": 16,
         "lvReqToEquip": 1,
@@ -25435,6 +25507,30 @@
         "UQ2val": 15,
         "Upgrade_Slots_Left": 0
     },
+    "EquipmentNametag16": {
+        "internalID": "EquipmentNametag16",
+        "displayName": "Lovely Day Nametag",
+        "sellPrice": 1,
+        "typeGen": "aNametag",
+        "ID": 16,
+        "Type": "Nametag",
+        "lvReqToCraft": 55,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Speed": 0,
+        "Reach": 0,
+        "Weapon_Power": 10,
+        "STR": 8,
+        "AGI": 8,
+        "WIS": 8,
+        "LUK": 0,
+        "Defence": 25,
+        "UQ1txt": "% DAMAGE BONUS",
+        "UQ1val": 60,
+        "UQ2txt": "% MONEY",
+        "UQ2val": 200,
+        "Upgrade_Slots_Left": 0
+    },
     "EquipmentKeychain0": {
         "internalID": "EquipmentKeychain0",
         "displayName": "Simple Key Chain",
@@ -31036,7 +31132,7 @@
         "ID": 0,
         "Type": "Event Item",
         "lvReqToCraft": 15,
-        "desc_line1": "Hold down on a letter to spawn a Valentslime, or turn these in each day to the Loveulyte for a reward!",
+        "desc_line1": "Hold down on a letter to spawn a Valenslime!",
         "desc_line2": "Filler",
         "desc_line3": "Filler",
         "desc_line4": "Filler",
@@ -31053,7 +31149,7 @@
         "ID": 0,
         "Type": "Quest Item",
         "lvReqToCraft": 15,
-        "desc_line1": "Hold down to open a random reward like Gems and Cards! There's a 1 in 700 chance for a special ROSE CAPE, and there are 3 different roses! Also if you're unlucky, you're GUARANTEED to get a rose every 650 boxes!",
+        "desc_line1": "Hold down to open a random reward! Possibilites include Gems, exclusive hats, event food, event cards, and more!",
         "desc_line2": "Filler",
         "desc_line3": "Filler",
         "desc_line4": "Filler",
@@ -38662,6 +38758,30 @@
         "UQ2val": 0,
         "Upgrade_Slots_Left": 5
     },
+    "EquipmentHats113": {
+        "internalID": "EquipmentHats113",
+        "displayName": "Pink Beanie",
+        "sellPrice": 1,
+        "typeGen": "aHelmetMTX",
+        "ID": 120,
+        "Type": "Premium Helmet",
+        "lvReqToCraft": 5,
+        "lvReqToEquip": 1,
+        "Class": "All",
+        "Speed": 0,
+        "Reach": 0,
+        "Weapon_Power": 0,
+        "STR": 1,
+        "AGI": 1,
+        "WIS": 1,
+        "LUK": 0,
+        "Defence": 0,
+        "UQ1txt": "% XP FROM MONSTERS",
+        "UQ1val": 5,
+        "UQ2txt": "0",
+        "UQ2val": 0,
+        "Upgrade_Slots_Left": 5
+    },
     "CardsA0": {
         "internalID": "CardsA0",
         "displayName": "CardsA0",
@@ -42615,6 +42735,23 @@
         "Type": "Card",
         "lvReqToCraft": 2,
         "desc_line1": "mini6a",
+        "desc_line2": "Filler",
+        "desc_line3": "Filler",
+        "desc_line4": "Filler",
+        "desc_line5": "Filler",
+        "desc_line6": "Filler",
+        "desc_line7": "Filler",
+        "desc_line8": "Filler"
+    },
+    "CardsZ26": {
+        "internalID": "CardsZ26",
+        "displayName": "DONTFILL",
+        "sellPrice": 1,
+        "typeGen": "dCard",
+        "ID": 0,
+        "Type": "Card",
+        "lvReqToCraft": 2,
+        "desc_line1": "slimeB",
         "desc_line2": "Filler",
         "desc_line3": "Filler",
         "desc_line4": "Filler",

@@ -12,5 +12,5 @@ class FlurboShop(IdleonModel):
 
 	def writeWiki(self, newLine = True, ignoreZero = True) -> str:
 		item = ItemDetailRepo.getDisplayName(self.intId)
-		craftRec = "{{CraftReq|" + item + "}}"
+		craftRec = "{{ItemDisplay|" + item + "}}"
 		return f"|{craftRec} || {self.description} || {self.cost} || {self.noPurchases}\n|-"

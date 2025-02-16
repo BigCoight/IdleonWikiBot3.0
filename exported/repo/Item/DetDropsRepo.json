@@ -24,6 +24,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 0},
             {"source": "babayaga", "quantity": 0.5, "chance": 0},
             {"source": "poopBig", "quantity": 2, "chance": 0},
+            {"source": "slimeB", "quantity": 2, "chance": 0},
             {"source": "wolfA", "quantity": 2, "chance": 0},
             {"source": "wolfB", "quantity": 4, "chance": 0},
             {"source": "wolfC", "quantity": 2, "chance": 0},
@@ -79,6 +80,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 0},
             {"source": "babayaga", "quantity": 0.5, "chance": 0},
             {"source": "poopBig", "quantity": 2, "chance": 0},
+            {"source": "slimeB", "quantity": 2, "chance": 0},
             {"source": "wolfA", "quantity": 2, "chance": 0},
             {"source": "wolfB", "quantity": 4, "chance": 0},
             {"source": "wolfC", "quantity": 2, "chance": 0},
@@ -500,6 +502,7 @@
             {"source": "poopD", "quantity": 1, "chance": 0.99},
             {"source": "babayaga", "quantity": 800, "chance": 1},
             {"source": "poopBig", "quantity": 1, "chance": 0},
+            {"source": "slimeB", "quantity": 500, "chance": 1},
             {"source": "wolfA", "quantity": 500, "chance": 1},
             {"source": "wolfB", "quantity": 500, "chance": 1},
             {"source": "wolfC", "quantity": 500, "chance": 1},
@@ -615,9 +618,9 @@
             {"source": "ChestB3", "quantity": 40000, "chance": 1},
             {"source": "ChestC3", "quantity": 100000, "chance": 1},
             {"source": "ChestD3", "quantity": 5000, "chance": 1},
-            {"source": "ChestA4", "quantity": 8000000, "chance": 1},
-            {"source": "ChestB4", "quantity": 30000000, "chance": 1},
-            {"source": "ChestC4", "quantity": 60000000, "chance": 1},
+            {"source": "ChestA4", "quantity": 800000, "chance": 1},
+            {"source": "ChestB4", "quantity": 1500000, "chance": 1},
+            {"source": "ChestC4", "quantity": 4000000, "chance": 1},
             {"source": "ChestD4", "quantity": 5000, "chance": 1},
             {"source": "ChestA5", "quantity": 8000000, "chance": 1},
             {"source": "ChestB5", "quantity": 8000000, "chance": 1},
@@ -629,7 +632,7 @@
             {"source": "ChestD6", "quantity": 5000, "chance": 1},
             {"source": "ghost", "quantity": 10, "chance": 0.5},
             {"source": "xmasEvent", "quantity": 10, "chance": 0.5},
-            {"source": "slimeR", "quantity": 69, "chance": 0.5},
+            {"source": "slimeR", "quantity": 10, "chance": 0.5},
             {"source": "loveEvent", "quantity": 69, "chance": 0.5},
             {"source": "loveEvent2", "quantity": 69, "chance": 0.5},
             {"source": "loveEvent3", "quantity": 69, "chance": 0.5},
@@ -738,6 +741,7 @@
             {"source": "frogBIG", "quantity": 39, "chance": 2.5e-07},
             {"source": "babayaga", "quantity": 19.5, "chance": 5e-05},
             {"source": "poopBig", "quantity": 78, "chance": 5e-05},
+            {"source": "slimeB", "quantity": 78, "chance": 5e-05},
             {"source": "wolfA", "quantity": 78, "chance": 5e-05},
             {"source": "wolfB", "quantity": 156, "chance": 5e-05},
             {"source": "wolfC", "quantity": 78, "chance": 5e-05},
@@ -848,6 +852,7 @@
             {"source": "frogBIG", "quantity": 6, "chance": 0.0025},
             {"source": "babayaga", "quantity": 3, "chance": 0.5},
             {"source": "poopBig", "quantity": 12, "chance": 0.5},
+            {"source": "slimeB", "quantity": 12, "chance": 0.5},
             {"source": "wolfA", "quantity": 12, "chance": 0.5},
             {"source": "wolfB", "quantity": 24, "chance": 0.5},
             {"source": "wolfC", "quantity": 12, "chance": 0.5},
@@ -1029,6 +1034,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 2.5e-05},
             {"source": "babayaga", "quantity": 0.5, "chance": 0.005},
             {"source": "poopBig", "quantity": 2, "chance": 0.005},
+            {"source": "slimeB", "quantity": 2, "chance": 0.005},
             {"source": "wolfA", "quantity": 2, "chance": 0.005},
             {"source": "wolfB", "quantity": 4, "chance": 0.005},
             {"source": "wolfC", "quantity": 2, "chance": 0.005},
@@ -1143,6 +1149,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 0.00025},
             {"source": "babayaga", "quantity": 0.5, "chance": 0.05},
             {"source": "poopBig", "quantity": 2, "chance": 0.05},
+            {"source": "slimeB", "quantity": 2, "chance": 0.05},
             {"source": "wolfA", "quantity": 2, "chance": 0.05},
             {"source": "wolfB", "quantity": 4, "chance": 0.05},
             {"source": "wolfC", "quantity": 2, "chance": 0.05},
@@ -1193,6 +1200,7 @@
             {"source": "frogBIG", "quantity": 15, "chance": 0.0021},
             {"source": "babayaga", "quantity": 7.5, "chance": 0.42},
             {"source": "poopBig", "quantity": 30, "chance": 0.42},
+            {"source": "slimeB", "quantity": 30, "chance": 0.42},
             {"source": "wolfA", "quantity": 30, "chance": 0.42},
             {"source": "wolfB", "quantity": 60, "chance": 0.42},
             {"source": "wolfC", "quantity": 30, "chance": 0.42},
@@ -1209,6 +1217,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 0.0006},
             {"source": "babayaga", "quantity": 0.5, "chance": 0.12},
             {"source": "poopBig", "quantity": 2, "chance": 0.12},
+            {"source": "slimeB", "quantity": 2, "chance": 0.12},
             {"source": "wolfA", "quantity": 2, "chance": 0.12},
             {"source": "wolfB", "quantity": 4, "chance": 0.12},
             {"source": "wolfC", "quantity": 2, "chance": 0.12},
@@ -1228,6 +1237,7 @@
             {"source": "frogBIG", "quantity": 10, "chance": 0.00125},
             {"source": "babayaga", "quantity": 5, "chance": 0.25},
             {"source": "poopBig", "quantity": 20, "chance": 0.25},
+            {"source": "slimeB", "quantity": 20, "chance": 0.25},
             {"source": "wolfA", "quantity": 20, "chance": 0.25},
             {"source": "wolfB", "quantity": 40, "chance": 0.25},
             {"source": "wolfC", "quantity": 20, "chance": 0.25},
@@ -1242,6 +1252,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 0.00015},
             {"source": "babayaga", "quantity": 0.5, "chance": 0.03},
             {"source": "poopBig", "quantity": 2, "chance": 0.03},
+            {"source": "slimeB", "quantity": 2, "chance": 0.03},
             {"source": "wolfA", "quantity": 2, "chance": 0.03},
             {"source": "wolfB", "quantity": 4, "chance": 0.03},
             {"source": "wolfC", "quantity": 2, "chance": 0.03},
@@ -1260,6 +1271,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 5.775e-06},
             {"source": "babayaga", "quantity": 0.5, "chance": 0.001155},
             {"source": "poopBig", "quantity": 2, "chance": 0.001155},
+            {"source": "slimeB", "quantity": 2, "chance": 0.001155},
             {"source": "wolfA", "quantity": 2, "chance": 0.001155},
             {"source": "wolfB", "quantity": 4, "chance": 0.001155},
             {"source": "wolfC", "quantity": 2, "chance": 0.001155},
@@ -1535,6 +1547,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 7.5e-09},
             {"source": "babayaga", "quantity": 0.5, "chance": 1.5e-06},
             {"source": "poopBig", "quantity": 2, "chance": 1.5e-06},
+            {"source": "slimeB", "quantity": 2, "chance": 1.5e-06},
             {"source": "wolfA", "quantity": 2, "chance": 1.5e-06},
             {"source": "wolfB", "quantity": 4, "chance": 1.5e-06},
             {"source": "wolfC", "quantity": 2, "chance": 1.5e-06},
@@ -1768,6 +1781,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 1.75e-06},
             {"source": "babayaga", "quantity": 0.5, "chance": 0.00035},
             {"source": "poopBig", "quantity": 2, "chance": 0.00035},
+            {"source": "slimeB", "quantity": 2, "chance": 0.00035},
             {"source": "wolfA", "quantity": 2, "chance": 0.00035},
             {"source": "wolfB", "quantity": 4, "chance": 0.00035},
             {"source": "wolfC", "quantity": 2, "chance": 0.00035},
@@ -2001,6 +2015,7 @@
             {"source": "frogBIG", "quantity": 3623100, "chance": 2.5e-06},
             {"source": "babayaga", "quantity": 1811550, "chance": 0.0005},
             {"source": "poopBig", "quantity": 7246200, "chance": 0.0005},
+            {"source": "slimeB", "quantity": 7246200, "chance": 0.0005},
             {"source": "wolfA", "quantity": 7246200, "chance": 0.0005},
             {"source": "wolfB", "quantity": 14492400, "chance": 0.0005},
             {"source": "wolfC", "quantity": 7246200, "chance": 0.0005},
@@ -2056,6 +2071,7 @@
             {"source": "frogBIG", "quantity": 362450, "chance": 2.5e-06},
             {"source": "babayaga", "quantity": 181225, "chance": 0.0005},
             {"source": "poopBig", "quantity": 724900, "chance": 0.0005},
+            {"source": "slimeB", "quantity": 724900, "chance": 0.0005},
             {"source": "wolfA", "quantity": 724900, "chance": 0.0005},
             {"source": "wolfB", "quantity": 1449800, "chance": 0.0005},
             {"source": "wolfC", "quantity": 724900, "chance": 0.0005},
@@ -2124,6 +2140,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 2.5e-06},
             {"source": "babayaga", "quantity": 0.5, "chance": 0.0005},
             {"source": "poopBig", "quantity": 2, "chance": 0.0005},
+            {"source": "slimeB", "quantity": 2, "chance": 0.0005},
             {"source": "wolfA", "quantity": 2, "chance": 0.0005},
             {"source": "wolfB", "quantity": 4, "chance": 0.0005},
             {"source": "wolfC", "quantity": 2, "chance": 0.0005},
@@ -2331,6 +2348,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 1.25e-05},
             {"source": "babayaga", "quantity": 0.5, "chance": 0.0025},
             {"source": "poopBig", "quantity": 2, "chance": 0.0025},
+            {"source": "slimeB", "quantity": 2, "chance": 0.0025},
             {"source": "wolfA", "quantity": 2, "chance": 0.0025},
             {"source": "wolfB", "quantity": 4, "chance": 0.0025},
             {"source": "wolfC", "quantity": 2, "chance": 0.0025},
@@ -2391,6 +2409,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 7.875e-07},
             {"source": "babayaga", "quantity": 0.5, "chance": 0.0001575},
             {"source": "poopBig", "quantity": 2, "chance": 0.0001575},
+            {"source": "slimeB", "quantity": 2, "chance": 0.0001575},
             {"source": "wolfA", "quantity": 2, "chance": 0.0001575},
             {"source": "wolfB", "quantity": 4, "chance": 0.0001575},
             {"source": "wolfC", "quantity": 2, "chance": 0.0001575},
@@ -2450,6 +2469,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 8.1375e-07},
             {"source": "babayaga", "quantity": 0.5, "chance": 0.00016275},
             {"source": "poopBig", "quantity": 2, "chance": 0.00016275},
+            {"source": "slimeB", "quantity": 2, "chance": 0.00016275},
             {"source": "wolfA", "quantity": 2, "chance": 0.00016275},
             {"source": "wolfB", "quantity": 4, "chance": 0.00016275},
             {"source": "wolfC", "quantity": 2, "chance": 0.00016275},
@@ -2509,6 +2529,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 7.6125e-07},
             {"source": "babayaga", "quantity": 0.5, "chance": 0.00015225},
             {"source": "poopBig", "quantity": 2, "chance": 0.00015225},
+            {"source": "slimeB", "quantity": 2, "chance": 0.00015225},
             {"source": "wolfA", "quantity": 2, "chance": 0.00015225},
             {"source": "wolfB", "quantity": 4, "chance": 0.00015225},
             {"source": "wolfC", "quantity": 2, "chance": 0.00015225},
@@ -2568,6 +2589,7 @@
             {"source": "frogBIG", "quantity": 2, "chance": 2.125e-05},
             {"source": "babayaga", "quantity": 1, "chance": 0.00425},
             {"source": "poopBig", "quantity": 4, "chance": 0.00425},
+            {"source": "slimeB", "quantity": 4, "chance": 0.00425},
             {"source": "wolfA", "quantity": 4, "chance": 0.00425},
             {"source": "wolfB", "quantity": 8, "chance": 0.00425},
             {"source": "wolfC", "quantity": 4, "chance": 0.00425},
@@ -4914,6 +4936,7 @@
             {"source": "frogBIG", "quantity": 1, "chance": 0.005},
             {"source": "babayaga", "quantity": 0.5, "chance": 1},
             {"source": "poopBig", "quantity": 2, "chance": 1},
+            {"source": "slimeB", "quantity": 2, "chance": 1},
             {"source": "wolfA", "quantity": 2, "chance": 1},
             {"source": "wolfB", "quantity": 4, "chance": 1},
             {"source": "wolfC", "quantity": 2, "chance": 1},
@@ -5238,7 +5261,7 @@
         {"source": "mushG", "quantity": 1, "chance": 0.22}
     ]},
     "CardsA0": {"sources": [
-        {"source": "mushG", "quantity": 1, "chance": 0.0001}
+        {"source": "mushG", "quantity": 1, "chance": 0.001}
     ]},
     "EquipmentShirts16": {"sources": [
         {"source": "mushG", "quantity": 1, "chance": 0.00035}
@@ -5250,7 +5273,7 @@
         {"source": "mushR", "quantity": 1, "chance": 0.2}
     ]},
     "CardsA1": {"sources": [
-        {"source": "mushR", "quantity": 1, "chance": 0.0001}
+        {"source": "mushR", "quantity": 1, "chance": 0.001}
     ]},
     "Quest15": {"sources": [
         {"source": "mushW", "quantity": 1, "chance": 1e-05}
@@ -5291,7 +5314,7 @@
         ]
     },
     "CardsA2": {"sources": [
-        {"source": "frogG", "quantity": 1, "chance": 0.0001}
+        {"source": "frogG", "quantity": 1, "chance": 0.001}
     ]},
     "Quest3": {"sources": [
         {"source": "frogG", "quantity": 1, "chance": 0.5}
@@ -5309,7 +5332,7 @@
         {"source": "beanG", "quantity": 1, "chance": 0.2}
     ]},
     "CardsA3": {"sources": [
-        {"source": "beanG", "quantity": 1, "chance": 9.7e-05}
+        {"source": "beanG", "quantity": 1, "chance": 0.001}
     ]},
     "StoneA2": {
         "sources": [
@@ -5321,11 +5344,16 @@
     "EquipmentHats25": {"sources": [
         {"source": "beanG", "quantity": 1, "chance": 3.5e-05}
     ]},
-    "Jungle1": {"sources": [
-        {"source": "slimeG", "quantity": 1, "chance": 0.19}
-    ]},
+    "Jungle1": {
+        "sources": [
+            {"source": "slimeG", "quantity": 1, "chance": 0.19},
+            {"source": "slimeB", "quantity": 25, "chance": 1},
+            {"source": "slimeB", "quantity": 25, "chance": 1},
+            {"source": "slimeB", "quantity": 25, "chance": 1}
+        ]
+    },
     "CardsA4": {"sources": [
-        {"source": "slimeG", "quantity": 1, "chance": 9.5e-05}
+        {"source": "slimeG", "quantity": 1, "chance": 0.0395}
     ]},
     "OilBarrel2": {"sources": [
         {"source": "slimeG", "quantity": 10, "chance": 0.0003}
@@ -5334,7 +5362,7 @@
         {"source": "snakeG", "quantity": 1, "chance": 0.18}
     ]},
     "CardsA5": {"sources": [
-        {"source": "snakeG", "quantity": 1, "chance": 9.4e-05}
+        {"source": "snakeG", "quantity": 1, "chance": 0.0294}
     ]},
     "Quest7": {"sources": [
         {"source": "snakeG", "quantity": 1, "chance": 0.2}
@@ -5349,7 +5377,7 @@
         {"source": "carrotO", "quantity": 1, "chance": 0.17}
     ]},
     "CardsA6": {"sources": [
-        {"source": "carrotO", "quantity": 1, "chance": 9e-05}
+        {"source": "carrotO", "quantity": 1, "chance": 0.019}
     ]},
     "EquipmentBows4": {"sources": [
         {"source": "carrotO", "quantity": 1, "chance": 4e-05}
@@ -5358,7 +5386,7 @@
         {"source": "goblinG", "quantity": 1, "chance": 0.16}
     ]},
     "CardsA7": {"sources": [
-        {"source": "goblinG", "quantity": 1, "chance": 8.6e-05}
+        {"source": "goblinG", "quantity": 1, "chance": 0.0186}
     ]},
     "StoneHelm1": {"sources": [
         {"source": "goblinG", "quantity": 1, "chance": 0.00015}
@@ -5367,7 +5395,7 @@
         {"source": "plank", "quantity": 1, "chance": 0.15}
     ]},
     "CardsA8": {"sources": [
-        {"source": "plank", "quantity": 1, "chance": 8e-05}
+        {"source": "plank", "quantity": 1, "chance": 0.018}
     ]},
     "Quest12": {"sources": [
         {"source": "plank", "quantity": 1, "chance": 0.3}
@@ -5379,7 +5407,7 @@
         {"source": "frogBIG", "quantity": 1, "chance": 0.14}
     ]},
     "CardsA9": {"sources": [
-        {"source": "frogBIG", "quantity": 1, "chance": 7e-05}
+        {"source": "frogBIG", "quantity": 1, "chance": 0.007}
     ]},
     "StampA10": {"sources": [
         {"source": "frogBIG", "quantity": 1, "chance": 3e-05}
@@ -5474,6 +5502,15 @@
     ]},
     "EquipmentTools10": {"sources": [
         {"source": "poopBig", "quantity": 1, "chance": 0.01}
+    ]},
+    "CardsZ26": {"sources": [
+        {"source": "slimeB", "quantity": 1, "chance": 0.99}
+    ]},
+    "EquipmentPendant32": {"sources": [
+        {"source": "slimeB", "quantity": 1, "chance": 1}
+    ]},
+    "EquipmentShoes7": {"sources": [
+        {"source": "slimeB", "quantity": 1, "chance": 0.3}
     ]},
     "Crystal1": {"sources": [
         {"source": "wolfA", "quantity": 1, "chance": 1}

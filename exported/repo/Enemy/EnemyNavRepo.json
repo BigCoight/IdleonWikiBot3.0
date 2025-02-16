@@ -629,8 +629,15 @@
         "crystalName": "Crystal5",
         "hasCard": true
     },
-    "babayaga": {
+    "slimeB": {
         "prev": null,
+        "next": "babayaga",
+        "hasCrystal": true,
+        "crystalName": null,
+        "hasCard": true
+    },
+    "babayaga": {
+        "prev": "slimeB",
         "next": "poopBig",
         "hasCrystal": true,
         "crystalName": null,

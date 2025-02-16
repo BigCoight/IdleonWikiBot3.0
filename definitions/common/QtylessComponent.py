@@ -1,5 +1,4 @@
 from definitions.master.IdleonModel import IdleonModel
-from helpers.CustomTypes import Integer
 from repositories.item.ItemDetailRepo import ItemDetailRepo
 
 
@@ -11,7 +10,7 @@ class QtylessComponent(IdleonModel):
 	item: str
 
 	def __str__(self) -> str:
-		res = "{{CraftReq|"
+		res = "{{ItemDisplay|"
 		res += ItemDetailRepo.getDisplayName(self.item)
 		return res + "}}"
 

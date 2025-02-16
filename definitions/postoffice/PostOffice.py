@@ -15,7 +15,7 @@ class Part(IdleonModel):
 
 	def __str__(self) -> str:
 		res = f"{self.base}x"
-		res += "{{CraftReq|" + ItemDetailRepo.getDisplayName(self.item) + "}} "
+		res += "{{ItemDisplay|" + ItemDetailRepo.getDisplayName(self.item) + "}} "
 		res += f"inc: {self.increment}"
 		return res
 

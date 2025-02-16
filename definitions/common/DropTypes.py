@@ -38,12 +38,11 @@ class Drop(IdleonModel):
 		res += f"|special=({displayed})"
 		return res
 
-
 	def __str__(self) -> str:
 		res = ""
 		if self.quantity != 1:
 			res += f"{self.quantity}x "
-		res += "{{CraftReq|"
+		res += "{{ItemDisplay|"
 		res += SpecificItemRepo.getDisplayName(self.item) + "}}"
 		res += f" ({formatFloat(self.chance)})"
 		return res
@@ -140,7 +139,7 @@ class RecipeDrop(Drop):
 		tab = int(self.item[-1]) - 1
 		index = int(self.quantity)
 		item = ItemDetailRepo.getDisplayName(RecipeRepo.getItemAtIndex(tab, index))
-		res = "{{CraftReq|" + item + "}}"
+		res = "{{ItemDisplay|" + item + "}}"
 		return f"{res} Recipe" + f" ({formatFloat(self.chance)})"
 
 

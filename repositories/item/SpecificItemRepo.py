@@ -70,7 +70,7 @@ class SpecificItemRepo(Repository[BaseItem]):
 				cls.add(name, BaseItem.fromItemDetails(item))
 			elif item.typeGen in {TypeGen.aHelmet, TypeGen.aPants, TypeGen.aShoes, TypeGen.aShirt,
 			                      TypeGen.aChatRingMTX, TypeGen.aTrophy, TypeGen.aPendant, TypeGen.aHelmetMTX,
-			                      TypeGen.aRing, TypeGen.aCape, TypeGen.aNametag}:
+			                      TypeGen.aRing, TypeGen.aCape, TypeGen.aNametag, TypeGen.aGown}:
 				cls.add(name, ArmourItem.fromItemDetails(item))
 			elif item.typeGen == TypeGen.aWeapon:
 				cls.add(name, WeaponItem.fromItemDetails(item))

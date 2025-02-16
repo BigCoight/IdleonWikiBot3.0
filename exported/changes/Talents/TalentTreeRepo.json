@@ -1,69 +1,59 @@
 {
     "new": {},
     "changes": {
-        "Archer": {
+        "Special Talent 3": {
             "talents": {
-                "Piercing Arrow": {
-                    "activeData": {"cooldown": [15, 5]},
-                    "x1": [110, 125],
-                    "y1": [2, 5],
-                    "y2": [40, 50]
+                "Toilet Paper Postage": {
+                    "name": [" ", "Toilet Paper Postage"],
+                    "description": [" ", "Stamps giving Skill Efficiency will give {x higher bonuses."],
+                    "x1": [" ", 0.7],
+                    "x2": [" ", 100],
+                    "funcX": [" ", "decayMulti"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", "+{X Higher Bonus"],
+                    "skillIndex": [" ", 625],
+                    "activeData": [" ", null]
                 }
             }
         },
-        "Calm Basics": {
+        "Beast Master": {
             "talents": {
-                "Mana Booster": {
-                    "description": ["Increases Max MP by {", "Increases Max MP by {, which is used to cast Class Attacks"]
+                "I Dream Of Peace And Egg": {
+                    "description": [
+                        "{% Chance to get 1 egg per 10 hrs of AFK claims, up to 100 hrs. Candy wont work here.",
+                        "{% Chance to get 3 eggs per 10 hrs of AFK claims, up to 100 hrs. Candy wont work here."
+                    ]
                 }
             }
         },
-        "Savvy Basics": {
+        "Special Talent 1": {
             "talents": {
-                "Mana Booster": {
-                    "description": ["Increases Max MP by {", "Increases Max MP by {, which is used to cast Class Attacks"]
-                }
-            }
-        },
-        "Barbarian": {"talents": {"Bear Swipe": {"activeData": {"cooldown": [12, 8]}}}},
-        "Rage Basics": {
-            "talents": {
-                "Mana Booster": {
-                    "description": ["Increases Max MP by {", "Increases Max MP by {, which is used to cast Class Attacks"]
-                }
-            }
-        },
-        "Hunter": {"talents": {"360 Noscope": {"activeData": {"cooldown": [30, 20]}}}},
-        "Mage": {
-            "talents": {
-                "Energy Bolt": {"x1": [160, 200], "x2": [2, 3.5]},
-                "You're Next": {"y1": [25, 35], "y2": [0.5, 1], "x2": [70, 25]},
-                "Mini Fireball": {"activeData": {"cooldown": [10, 6]}, "x1": [120, 130], "x2": [1, 1.5]}
-            }
-        },
-        "Bowman": {
-            "talents": {
-                "Homing Arrows": {"activeData": {"cooldown": [20, 15]}},
-                "Magic Shortbow": {"activeData": {"cooldown": [7, 6]}}
-            }
-        },
-        "Warrior": {
-            "talents": {
-                "Whirl": {"activeData": {"cooldown": [6, 5]}, "y1": [3, 5], "y2": [24, 40]},
-                "Power Strike": {"activeData": {"cooldown": [4, 3]}}
-            }
-        },
-        "Death Bringer": {"talents": {"Graveyard Shift": {"activeData": {"cooldown": [305, 310]}}}},
-        "Wizard": {
-            "talents": {
-                "Floor Is Lava": {"activeData": {"cooldown": [13, 11]}},
-                "Tornado": {"activeData": {"cooldown": [25, 20]}}
-            }
-        },
-        "Beginner": {
-            "talents": {
-                "Mana Booster": {
-                    "description": ["Increases Max MP by {", "Increases Max MP by {, which is used to cast Class Attacks"]
+                "Studious Quester": {
+                    "description": [
+                        "Each Completed Quest gives +0.10% All Skill efficiency. Total bonus caps at +{%",
+                        "Each Completed Quest on any character gives +0.10% All Skill efficiency. Total bonus caps at +{%"
+                    ]
+                },
+                "Quest Chungus": {
+                    "description": [
+                        "Each Completed Quest gives +1 LUK. Total bonus caps at +{ LUK",
+                        "Each Completed Quest on any character gives +1 LUK. Total bonus caps at +{ LUK"
+                    ]
+                },
+                "Quest Kapow!": {
+                    "name": [" ", "Quest Kapow!"],
+                    "description": [" ", "Each Completed Quest on any character gives +1% Damage, up to a total of +{% Damage"],
+                    "x1": [" ", 5],
+                    "x2": [" ", 0],
+                    "funcX": [" ", "add"],
+                    "y1": [" ", 0],
+                    "y2": [" ", 0],
+                    "funcY": [" ", "txt"],
+                    "lvlUpText": [" ", "+{% Damage Cap"],
+                    "skillIndex": [" ", 658],
+                    "activeData": [" ", null]
                 }
             }
         }

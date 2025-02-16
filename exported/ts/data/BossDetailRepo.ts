@@ -8,9 +8,9 @@ export class BossDetailsBase { constructor(public id: string, public data: BossD
 export const initBossDetailRepo = () => {
     return [    
         new BossDetailsBase("wolfA", <BossDetailsModel>{
-                "health": 20000,
+                "health": 30000,
                 "defence": 5,
-                "exp": 10000,
+                "exp": 15000,
                 "keys": 1,
                 "attacks": [
                     <BossAttackModel>{"name": "Fireball", "damage": 29},

@@ -14,7 +14,7 @@ class Component(ComponentBase):
 		res = ""
 		if self.quantity != -1:
 			res += f"{self.quantity}x"
-		res += "{{CraftReq|"
+		res += "{{ItemDisplay|"
 		res += ItemDetailRepo.getDisplayName(self.item)
 		return res + "}}"
 

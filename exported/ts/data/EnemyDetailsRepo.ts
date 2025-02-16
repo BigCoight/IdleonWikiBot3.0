@@ -1685,8 +1685,8 @@ export const initEnemyDetailsRepo = () => {
                 "ExpType": 0,
                 "Defence": 25,
                 "MoveSPEED": 4,
-                "Damages": [20, 1],
-                "DefFor0": 12.82
+                "Damages": [22, 1],
+                "DefFor0": 14.57
             }),
         new EnemyDetailsBase("crabcake", <EnemyDetailsModel>{
                 "Name": "Crabcake",
@@ -1706,8 +1706,8 @@ export const initEnemyDetailsRepo = () => {
                 "ExpType": 0,
                 "Defence": 30,
                 "MoveSPEED": 4,
-                "Damages": [25, 1],
-                "DefFor0": 17.12
+                "Damages": [28, 1],
+                "DefFor0": 19.75
             }),
         new EnemyDetailsBase("coconut", <EnemyDetailsModel>{
                 "Name": "Mafioso",
@@ -1727,8 +1727,8 @@ export const initEnemyDetailsRepo = () => {
                 "ExpType": 0,
                 "Defence": 45,
                 "MoveSPEED": 4,
-                "Damages": [35, 1],
-                "DefFor0": 26.12
+                "Damages": [38, 1],
+                "DefFor0": 28.94
             }),
         new EnemyDetailsBase("sandcastle", <EnemyDetailsModel>{
                 "Name": "Sand Castle",
@@ -1748,8 +1748,8 @@ export const initEnemyDetailsRepo = () => {
                 "ExpType": 0,
                 "Defence": 60,
                 "MoveSPEED": 3,
-                "Damages": [45, 1],
-                "DefFor0": 35.69
+                "Damages": [52, 1],
+                "DefFor0": 42.67
             }),
         new EnemyDetailsBase("pincermin", <EnemyDetailsModel>{
                 "Name": "Pincermin",
@@ -1769,8 +1769,8 @@ export const initEnemyDetailsRepo = () => {
                 "ExpType": 0,
                 "Defence": 80,
                 "MoveSPEED": 5,
-                "Damages": [55, 1],
-                "DefFor0": 45.72
+                "Damages": [60, 1],
+                "DefFor0": 50.87
             }),
         new EnemyDetailsBase("potato", <EnemyDetailsModel>{
                 "Name": "Mashed Potato",
@@ -1809,10 +1809,10 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 350,
                 "ExpType": 0,
-                "Defence": 125,
+                "Defence": 150,
                 "MoveSPEED": 5,
-                "Damages": [80, 1],
-                "DefFor0": 72.24
+                "Damages": [100, 1],
+                "DefFor0": 94.54
             }),
         new EnemyDetailsBase("moonman", <EnemyDetailsModel>{
                 "Name": "Moonmoon",
@@ -1830,10 +1830,10 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 380,
                 "ExpType": 0,
-                "Defence": 150,
+                "Defence": 185,
                 "MoveSPEED": 4,
-                "Damages": [90, 1],
-                "DefFor0": 83.29
+                "Damages": [120, 1],
+                "DefFor0": 117.54
             }),
         new EnemyDetailsBase("sandgiant", <EnemyDetailsModel>{
                 "Name": "Sand Giant",
@@ -1851,10 +1851,10 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 410,
                 "ExpType": 0,
-                "Defence": 170,
+                "Defence": 230,
                 "MoveSPEED": 3,
-                "Damages": [110, 1],
-                "DefFor0": 105.96
+                "Damages": [140, 1],
+                "DefFor0": 141.06
             }),
         new EnemyDetailsBase("snailZ", <EnemyDetailsModel>{
                 "Name": "Snelbie",
@@ -1872,10 +1872,10 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 460,
                 "ExpType": 0,
-                "Defence": 200,
+                "Defence": 250,
                 "MoveSPEED": 4,
-                "Damages": [125, 1],
-                "DefFor0": 123.37
+                "Damages": [155, 1],
+                "DefFor0": 158.98
             }),
         new EnemyDetailsBase("sheep", <EnemyDetailsModel>{
                 "Name": "Sheepie",
@@ -1893,10 +1893,10 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 620,
                 "ExpType": 0,
-                "Defence": 250,
+                "Defence": 290,
                 "MoveSPEED": 4,
-                "Damages": [135, 1],
-                "DefFor0": 135.14
+                "Damages": [155, 1],
+                "DefFor0": 158.98
             }),
         new EnemyDetailsBase("flake", <EnemyDetailsModel>{
                 "Name": "Frost Flake",
@@ -1914,10 +1914,10 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 700,
                 "ExpType": 0,
-                "Defence": 300,
+                "Defence": 330,
                 "MoveSPEED": 4,
-                "Damages": [160, 1],
-                "DefFor0": 165
+                "Damages": [170, 1],
+                "DefFor0": 177.1
             }),
         new EnemyDetailsBase("stache", <EnemyDetailsModel>{
                 "Name": "Sir Stache",
@@ -1935,10 +1935,10 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 800,
                 "ExpType": 0,
-                "Defence": 350,
+                "Defence": 360,
                 "MoveSPEED": 4,
-                "Damages": [190, 1],
-                "DefFor0": 201.51
+                "Damages": [195, 1],
+                "DefFor0": 207.65
             }),
         new EnemyDetailsBase("ram", <EnemyDetailsModel>{
                 "Name": "Dedotated Ram",
@@ -3587,7 +3587,7 @@ export const initEnemyDetailsRepo = () => {
                 "HeightOfMonster": 92,
                 "MonsterMoving": 1,
                 "MovingFrame": 6,
-                "RespawnTime": 86400,
+                "RespawnTime": 80400,
                 "DeathFrame": 15,
                 "MonsterHPTotal": 150000,
                 "Type": EnemyTypeEnum.monsterType,
@@ -3595,9 +3595,30 @@ export const initEnemyDetailsRepo = () => {
                 "ExpGiven": 1750,
                 "ExpType": 0,
                 "Defence": 300,
-                "MoveSPEED": 4,
+                "MoveSPEED": 6,
                 "Damages": [400, 20],
                 "DefFor0": 466.07
+            }),
+        new EnemyDetailsBase("slimeB", <EnemyDetailsModel>{
+                "Name": "Glunko The Massive",
+                "AFKtype": AFKTypeEnum.Fighting,
+                "MonsterFace": 24,
+                "MonsterOffsetX": 22,
+                "MonsterOffsetY": 38,
+                "HeightOfMonster": 90,
+                "MonsterMoving": 1,
+                "MovingFrame": 10,
+                "RespawnTime": 1200,
+                "DeathFrame": 22,
+                "MonsterHPTotal": 10000,
+                "Type": EnemyTypeEnum.monsterType,
+                "SpecialType": "a",
+                "ExpGiven": 1000,
+                "ExpType": 0,
+                "Defence": 5,
+                "MoveSPEED": 3,
+                "Damages": [100, 1],
+                "DefFor0": 94.54
             }),
         new EnemyDetailsBase("babaHour", <EnemyDetailsModel>{
                 "Name": "Biggie Hours",
@@ -4686,7 +4707,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 2,
                 "ExpType": 3,
-                "Defence": 20,
+                "Defence": 10,
                 "MoveSPEED": 0,
                 "Damages": [0, 1],
                 "DefFor0": 0.22
@@ -4707,7 +4728,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 6,
                 "ExpType": 3,
-                "Defence": 80,
+                "Defence": 40,
                 "MoveSPEED": 0,
                 "Damages": [0, 1],
                 "DefFor0": 0.22
@@ -4728,7 +4749,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 12,
                 "ExpType": 3,
-                "Defence": 250,
+                "Defence": 120,
                 "MoveSPEED": 0,
                 "Damages": [0, 1],
                 "DefFor0": 0.22
@@ -4749,7 +4770,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 20,
                 "ExpType": 3,
-                "Defence": 600,
+                "Defence": 400,
                 "MoveSPEED": 0,
                 "Damages": [0, 1],
                 "DefFor0": 0.22
@@ -4770,7 +4791,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 32,
                 "ExpType": 3,
-                "Defence": 1250,
+                "Defence": 1000,
                 "MoveSPEED": 0,
                 "Damages": [0, 1],
                 "DefFor0": 0.22
@@ -4833,7 +4854,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 150,
                 "ExpType": 3,
-                "Defence": 16000,
+                "Defence": 15000,
                 "MoveSPEED": 0,
                 "Damages": [0, 1],
                 "DefFor0": 0.22
@@ -5736,7 +5757,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 2,
                 "ExpType": 6,
-                "Defence": 40,
+                "Defence": 10,
                 "MoveSPEED": 0,
                 "Damages": [6, 1],
                 "DefFor0": 2.67
@@ -5757,7 +5778,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 6,
                 "ExpType": 6,
-                "Defence": 400,
+                "Defence": 80,
                 "MoveSPEED": 0,
                 "Damages": [6, 1],
                 "DefFor0": 2.67
@@ -5778,7 +5799,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 10,
                 "ExpType": 6,
-                "Defence": 2000,
+                "Defence": 400,
                 "MoveSPEED": 0,
                 "Damages": [6, 1],
                 "DefFor0": 2.67
@@ -5799,7 +5820,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 20,
                 "ExpType": 6,
-                "Defence": 6000,
+                "Defence": 2000,
                 "MoveSPEED": 0,
                 "Damages": [6, 1],
                 "DefFor0": 2.67
@@ -5820,7 +5841,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 40,
                 "ExpType": 6,
-                "Defence": 15000,
+                "Defence": 7500,
                 "MoveSPEED": 0,
                 "Damages": [6, 1],
                 "DefFor0": 2.67
@@ -5841,7 +5862,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 75,
                 "ExpType": 6,
-                "Defence": 35000,
+                "Defence": 15000,
                 "MoveSPEED": 0,
                 "Damages": [6, 1],
                 "DefFor0": 2.67
@@ -5862,7 +5883,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 150,
                 "ExpType": 6,
-                "Defence": 100000,
+                "Defence": 30000,
                 "MoveSPEED": 0,
                 "Damages": [6, 1],
                 "DefFor0": 2.67
@@ -5883,7 +5904,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 300,
                 "ExpType": 6,
-                "Defence": 250000,
+                "Defence": 100000,
                 "MoveSPEED": 0,
                 "Damages": [6, 1],
                 "DefFor0": 2.67
@@ -5904,7 +5925,7 @@ export const initEnemyDetailsRepo = () => {
                 "SpecialType": "",
                 "ExpGiven": 550,
                 "ExpType": 6,
-                "Defence": 500000,
+                "Defence": 300000,
                 "MoveSPEED": 0,
                 "Damages": [6, 1],
                 "DefFor0": 2.67

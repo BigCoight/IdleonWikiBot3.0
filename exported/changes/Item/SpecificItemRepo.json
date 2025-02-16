@@ -1,16 +1,229 @@
 {
-    "new": {},
-    "changes": {
-        "MaxCapBagM5": {"level": [40, 35]},
-        "MaxCapBagM3": {"level": [13, 7]},
-        "BobJoePickle": {"sellPrice": [40000, 10000]},
-        "MaxCapBagM4": {"level": [30, 20]},
-        "MaxCapBagM2": {"level": [10, 5]},
-        "CraftMat1": {
-            "description": [
-                "It's basically string cheese, but without the cheese. CRAFT THESE IN THE 'PRODUCE' TAB IN ANVIL! ",
-                "It's like string cheese, but without cheese. GET THESE FROM THE 'PRODUCE' TAB HERE IN THE ANVIL! "
-            ]
+    "new": {
+        "CardsZ26": {
+            "displayName": "Glunko The Massive Card",
+            "sellPrice": 1,
+            "Type": "Card",
+            "cardData": {
+                "cardID": "Z26",
+                "perTier": 2,
+                "effect": "+{ Weapon Power",
+                "bonus": 2,
+                "order": 1
+            },
+            "dropChance": 0.99
+        },
+        "EquipmentPendant32": {
+            "displayName": "Slimy Necklace",
+            "sellPrice": 1,
+            "Type": "Pendant",
+            "lvReqToCraft": 17,
+            "lvReqToEquip": 5,
+            "Class": "All",
+            "Weapon_Power": 1,
+            "STR": 2,
+            "AGI": 2,
+            "WIS": 2,
+            "LUK": 0,
+            "Defence": 1,
+            "miscUp1": "15% Total Damage",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 2,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentNametag16": {
+            "displayName": "Lovely Day Nametag",
+            "sellPrice": 1,
+            "Type": "Nametag",
+            "lvReqToCraft": 55,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 10,
+            "STR": 8,
+            "AGI": 8,
+            "WIS": 8,
+            "LUK": 0,
+            "Defence": 25,
+            "miscUp1": "60% Damage Bonus",
+            "miscUp2": "200% Money",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentPendant33": {
+            "displayName": "Emerald Bling Pendant",
+            "sellPrice": 1,
+            "Type": "Pendant",
+            "lvReqToCraft": 17,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 10,
+            "AGI": 10,
+            "WIS": 10,
+            "LUK": 10,
+            "Defence": 0,
+            "miscUp1": "200% Bonus Money",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 0,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "EquipmentHats113": {
+            "displayName": "Pink Beanie",
+            "sellPrice": 1,
+            "Type": "Premium Helmet",
+            "lvReqToCraft": 5,
+            "lvReqToEquip": 1,
+            "Class": "All",
+            "Weapon_Power": 0,
+            "STR": 1,
+            "AGI": 1,
+            "WIS": 1,
+            "LUK": 0,
+            "Defence": 0,
+            "miscUp1": "5% Xp From Monsters",
+            "miscUp2": "00",
+            "Upgrade_Slots_Left": 5,
+            "Skill": "",
+            "Skill_Power": 0
+        },
+        "InvStorageL": {
+            "displayName": "Valenslime Chest",
+            "sellPrice": 1000,
+            "Type": "Storage",
+            "description": "Hold down to permanently add +16 Slots to your Storage Chest. Can only be used once.",
+            "order": -1,
+            "level": 1
         }
+    },
+    "changes": {
+        "EquipmentPendant17": {"miscUp2": ["00", "5% Drop Chance"], "miscUp1": ["", "20% Total Damage"]},
+        "CardsA5": {"dropChance": [9.4e-05, 0.0294]},
+        "CardsZ2": {"cardData": {"order": [4, 5]}, "dropChance": [0.04, 0.045]},
+        "CardsZ0": {"cardData": {"order": [1, 2]}},
+        "CardsZ23": {"cardData": {"order": [27, 28]}},
+        "Gold": {
+            "description": [
+                "Smelt down 7 Ores into 1 Bar at the Forge. Smelting will take 350 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 7 Ores into 1 Bar at the Forge. Smelting will take 60 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "Quest40": {
+            "description": [
+                "Hold down to open a random reward like Gems and Cards! There's a 1 in 700 chance for a special ROSE CAPE, and there are 3 different roses! Also if you're unlucky, you're GUARANTEED to get a rose every 650 boxes! ",
+                "Hold down to open a random reward! Possibilites include Gems, exclusive hats, event food, event cards, and more! "
+            ]
+        },
+        "CardsZ3": {"cardData": {"order": [9, 10]}},
+        "CardsZ8": {"cardData": {"order": [13, 14]}},
+        "CardsZ17": {"cardData": {"order": [19, 20]}},
+        "CardsZ9": {"cardData": {"order": [14, 15]}},
+        "CardsZ15": {"cardData": {"order": [11, 12]}},
+        "CardsA1": {"dropChance": [0.0001, 0.001]},
+        "CardsZ14": {"cardData": {"order": [6, 7]}},
+        "CardsZ13": {"cardData": {"order": [16, 17]}},
+        "CardsZ16": {"cardData": {"order": [15, 16]}},
+        "CardsZ22": {"cardData": {"order": [26, 27]}},
+        "CardsZ7": {"cardData": {"order": [10, 11]}},
+        "Lustre": {
+            "description": [
+                "Smelt down 250 Ores into 1 Bar at the Forge. Smelting will take 5000 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 250 Ores into 1 Bar at the Forge. Smelting will take 1300 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "Void": {
+            "description": [
+                "Smelt down 100 Ores into 1 Bar at the Forge. Smelting will take 2500 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 100 Ores into 1 Bar at the Forge. Smelting will take 750 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "CardsZ24": {"cardData": {"order": [20, 21]}},
+        "Marble": {
+            "description": [
+                "Smelt down 4000 Ores into 1 Bar at the Forge. Smelting will take 30000 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 4000 Ores into 1 Bar at the Forge. Smelting will take 6000 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "Iron": {
+            "description": [
+                "Smelt down 4 Ores into 1 Bar at the Forge. Smelting will take 150 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 4 Ores into 1 Bar at the Forge. Smelting will take 30 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "CardsA3": {"dropChance": [9.7e-05, 0.001]},
+        "Dementia": {
+            "description": [
+                "Smelt down 40 Ores into 1 Bar at the Forge. Smelting will take 1500 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 40 Ores into 1 Bar at the Forge. Smelting will take 400 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "CardsZ4": {"cardData": {"order": [5, 6]}},
+        "Dreadlo": {
+            "description": [
+                "Smelt down 1000 Ores into 1 Bar at the Forge. Smelting will take 20000 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 1000 Ores into 1 Bar at the Forge. Smelting will take 3100 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "CardsZ1": {"cardData": {"order": [2, 3]}},
+        "CardsZ12": {"cardData": {"order": [12, 13]}},
+        "Copper": {
+            "description": [
+                "Smelt down 2 Ores into 1 Bar at the Forge. Smelting will take 50 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 2 Ores into 1 Bar at the Forge. Smelting will take 15 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "CardsZ21": {"cardData": {"order": [25, 26]}},
+        "CardsA15": {"cardData": {"order": [3, 4]}},
+        "Godshard": {
+            "description": [
+                "Smelt down 15000 Ores into 1 Bar at the Forge. Smelting will take 50000 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 15000 Ores into 1 Bar at the Forge. Smelting will take 15000 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "EquipmentPendant25": {"Weapon_Power": [7, 8], "miscUp1": ["20% Total Damage", "40% Total Damage"]},
+        "CardsZ5": {"cardData": {"order": [7, 8]}},
+        "EquipmentPendant24": {"miscUp1": ["15% Total Damage", "27% Total Damage"]},
+        "CardsA6": {"dropChance": [9e-05, 0.019]},
+        "CardsA4": {"dropChance": [9.5e-05, 0.0395]},
+        "CardsZ19": {"cardData": {"order": [22, 23]}},
+        "CardsA7": {"dropChance": [8.6e-05, 0.0186]},
+        "CardsZ20": {"cardData": {"order": [23, 24]}},
+        "CardsZ11": {"cardData": {"order": [18, 19]}},
+        "EquipmentShoes7": {"WIS": [1, 2], "AGI": [1, 2], "miscUp1": ["5% Money", "15% Money"], "STR": [1, 2]},
+        "Plat": {
+            "description": [
+                "Smelt down 16 Ores into 1 Bar at the Forge. Smelting will take 1000 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 16 Ores into 1 Bar at the Forge. Smelting will take 200 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "CardsA8": {"dropChance": [8e-05, 0.018]},
+        "Starfire": {
+            "description": [
+                "Smelt down 500 Ores into 1 Bar at the Forge. Smelting will take 10000 Seconds per Bar using Forge Slot 1. ",
+                "Smelt down 500 Ores into 1 Bar at the Forge. Smelting will take 2000 Seconds per Bar using Forge Slot 1. "
+            ]
+        },
+        "CardsZ18": {"cardData": {"order": [21, 22]}},
+        "CardsZ25": {"cardData": {"order": [24, 25]}},
+        "EquipmentHatsBeg1": {
+            "WIS": [6, 0],
+            "Class": ["Beginner", "All"],
+            "Type": ["Helmet", "Premium Helmet"],
+            "miscUp1": ["10% Gold Food Effect", "25% Money"],
+            "Defence": [5, 2],
+            "displayName": ["Ice Cream Sunday", "Ice Cream Sundae"],
+            "LUK": [0, 10]
+        },
+        "CardsA0": {"dropChance": [0.0001, 0.001]},
+        "CardsZ10": {"cardData": {"order": [17, 18]}},
+        "Quest39": {
+            "description": [
+                "Hold down on a letter to spawn a Valentslime, or turn these in each day to the Loveulyte for a reward! ",
+                "Hold down on a letter to spawn a Valenslime! "
+            ]
+        },
+        "CardsZ6": {"cardData": {"order": [8, 9]}}
     }
 }

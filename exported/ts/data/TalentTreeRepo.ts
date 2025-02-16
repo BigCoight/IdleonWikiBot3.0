@@ -3979,7 +3979,7 @@ export const initTalentTreeRepo = () => {
                     },
                     "I Dream Of Peace And Egg": <TalentModel>{
                         "name": "I Dream Of Peace And Egg",
-                        "description": "{% Chance to get 1 egg per 10 hrs of AFK claims, up to 100 hrs. Candy wont work here.",
+                        "description": "{% Chance to get 3 eggs per 10 hrs of AFK claims, up to 100 hrs. Candy wont work here.",
                         "x1": 100,
                         "x2": 80,
                         "funcX": "decay",
@@ -5507,22 +5507,22 @@ export const initTalentTreeRepo = () => {
                         "skillIndex": 657,
                         "activeData": undefined
                     },
-                    "Beginner Best Class": <TalentModel>{
-                        "name": "Beginner Best Class",
-                        "description": "+1 Base Weapon Power every 10 Lvs of your best Beginner. Caps at +{.",
-                        "x1": 1,
+                    "Quest Kapow!": <TalentModel>{
+                        "name": "Quest Kapow!",
+                        "description": "Each Completed Quest on any character gives +1% Damage, up to a total of +{% Damage",
+                        "x1": 5,
                         "x2": 0,
                         "funcX": "add",
                         "y1": 0,
                         "y2": 0,
                         "funcY": "txt",
-                        "lvlUpText": "+{ Weapon Pow Cap",
-                        "skillIndex": 616,
+                        "lvlUpText": "+{% Damage Cap",
+                        "skillIndex": 658,
                         "activeData": undefined
                     },
                     "Studious Quester": <TalentModel>{
                         "name": "Studious Quester",
-                        "description": "Each Completed Quest gives +0.10% All Skill efficiency. Total bonus caps at +{%",
+                        "description": "Each Completed Quest on any character gives +0.10% All Skill efficiency. Total bonus caps at +{%",
                         "x1": 0.4,
                         "x2": 0,
                         "funcX": "add",
@@ -5535,7 +5535,7 @@ export const initTalentTreeRepo = () => {
                     },
                     "Quest Chungus": <TalentModel>{
                         "name": "Quest Chungus",
-                        "description": "Each Completed Quest gives +1 LUK. Total bonus caps at +{ LUK",
+                        "description": "Each Completed Quest on any character gives +1 LUK. Total bonus caps at +{ LUK",
                         "x1": 4,
                         "x2": 0,
                         "funcX": "add",
@@ -5636,17 +5636,17 @@ export const initTalentTreeRepo = () => {
                         "skillIndex": 624,
                         "activeData": undefined
                     },
-                    "Toilet Paper Postage": <TalentModel>{
-                        "name": "Toilet Paper Postage",
-                        "description": "Stamps giving Skill Efficiency will give {x higher bonuses.",
-                        "x1": 0.7,
-                        "x2": 100,
-                        "funcX": "decayMulti",
+                    "Beginner Best Class": <TalentModel>{
+                        "name": "Beginner Best Class",
+                        "description": "+1 Base Weapon Power every 10 Lvs of your best Beginner. Caps at +{.",
+                        "x1": 1,
+                        "x2": 0,
+                        "funcX": "add",
                         "y1": 0,
                         "y2": 0,
                         "funcY": "txt",
-                        "lvlUpText": "+{X Higher Bonus",
-                        "skillIndex": 625,
+                        "lvlUpText": "+{ Weapon Pow Cap",
+                        "skillIndex": 616,
                         "activeData": undefined
                     },
                     "Exp Converter": <TalentModel>{
@@ -5963,6 +5963,19 @@ export const initTalentTreeRepo = () => {
                         "funcY": "txt",
                         "lvlUpText": "+{% Crit Chance",
                         "skillIndex": 645,
+                        "activeData": undefined
+                    },
+                    "Toilet Paper Postage": <TalentModel>{
+                        "name": "Toilet Paper Postage",
+                        "description": "Stamps giving Skill Efficiency will give {x higher bonuses.",
+                        "x1": 0.7,
+                        "x2": 100,
+                        "funcX": "decayMulti",
+                        "y1": 0,
+                        "y2": 0,
+                        "funcY": "txt",
+                        "lvlUpText": "+{X Higher Bonus",
+                        "skillIndex": 625,
                         "activeData": undefined
                     },
                     "Filthy Damage": <TalentModel>{

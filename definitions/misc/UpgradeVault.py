@@ -1,13 +1,13 @@
 from typing import Optional
 
 from definitions.master.IdleonModel import IdleonModel
-from helpers.CustomTypes import Integer
+from helpers.CustomTypes import Integer, Numeric
 
 
 class UpgradeVault(IdleonModel):
     name: str
     base_cost: Integer
-    scaling_factor: float
+    scaling_factor: Numeric
     x1: Integer  # Unknown purpose, was previously 'position'
     unlock_req: Integer  # Field at index 4
     value: Integer

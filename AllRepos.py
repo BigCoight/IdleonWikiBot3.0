@@ -16,6 +16,7 @@ from repositories.misc.ColosseumRepo import ColosseumRepo
 from repositories.misc.CompanionRepo import CompanionRepo
 from repositories.misc.ConstellationsRepo import ConstellationsRepo
 from repositories.misc.GemShopRepo import GemShopRepo
+from repositories.misc.GrimoireUpgradeRepo import GrimoireUpgradeRepo
 from repositories.misc.GuildBonusRepo import GuildBonusRepo
 from repositories.misc.TaskDescriptionsRepo import TaskDescriptionRepo
 from repositories.misc.TaskShopDescRepo import TaskShopDescRepo
@@ -69,7 +70,7 @@ from repositories.npc.NpcRepo import NpcRepo
 from repositories.talents.TalentTreeRepo import TalentTreeRepo
 
 AllRepos = [SpecificItemRepo, EnemyRepo, DropTableRepo, NpcRepo, RecipeRepo, BubbleRepo, TalentTreeRepo,
-            UpgradeVaultRepo, PostOfficeUpgradesRepo, PostOfficeRepo, VendorRepo, PrayerRepo, GemShopRepo, BuildingRepo, ShrineRepo,
+            UpgradeVaultRepo, GrimoireUpgradeRepo, PostOfficeUpgradesRepo, PostOfficeRepo, VendorRepo, PrayerRepo, GemShopRepo, BuildingRepo, ShrineRepo,
             RefineryCostRepo, BribeRepo, ConstellationsRepo, DungEnemyRepo, DungItemRepo, AchievementRepo,
             GuildBonusRepo,
             AnvilRepo, ArenaBonusRepo, ChipRepo, InfiniteTerritoryRepo, JewelRepo, LabBonusRepo, MealRepo, PetGeneRepo,
